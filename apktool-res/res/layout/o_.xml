@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="#00bcd4" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/popRecyclerView" n0:layout_width="match_parent" n0:layout_height="300.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginStart="10.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n0:id="@id/scroll_layout" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="match_parent" n0:layout_height="300.0dp" n0:layout_margin="10.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/popRecyclerView"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/sg" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="conditions: " n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/sg" n0:id="@id/currentConditions" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:hint="conditions" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/sg" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="records: " n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/sg" n0:id="@id/recordTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

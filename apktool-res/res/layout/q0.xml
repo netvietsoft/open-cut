@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/legacy_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <RelativeLayout n0:id="@id/toolbar" n0:background="@android:color/white" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:elevation="4.0dp">
+            <ImageButton n0:id="@id/back_button" n0:background="?kvb" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@android:drawable/ic_menu_close_clear_cancel" n0:layout_centerVertical="true" n0:layout_alignParentStart="true" />
+            <TextView n0:textSize="18.0sp" n0:textStyle="bold" n0:textColor="@android:color/black" n0:id="@id/tiktok_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="TikTok" n0:layout_centerInParent="true" />
+        </RelativeLayout>
+        <FrameLayout n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0">
+            <WebView n0:id="@id/webview" n0:background="@android:color/white" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            <FrameLayout n0:id="@id/loading_layout" n0:background="@android:color/white" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent">
+                <ProgressBar n0:layout_gravity="center" n0:id="@id/loading_progress" n0:layout_width="48.0dp" n0:layout_height="48.0dp" />
+            </FrameLayout>
+        </FrameLayout>
+        <TextView n0:id="@id/title_text" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" />
+    </LinearLayout>
+    <FrameLayout n0:id="@id/iab_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/sg" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:gravity="center_vertical" n0:id="@id/bottomNavBar" n0:background="@color/APKTOOL_RENAMED_0x7f06047d" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="60.0dp" n0:paddingHorizontal="16.0dp" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/ivClose" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/mga" n0:layout_alignParentStart="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/ww" n0:gravity="center" n0:id="@id/tvEditPrompt" n0:background="@drawable/ks1" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:layout_marginTop="2.0dp" n0:text="@string/k86" n0:drawablePadding="4.0dp" n0:layout_centerHorizontal="true" n0:drawableStart="@drawable/nwm" n0:paddingHorizontal="16.0dp" />
+        <ImageView n0:id="@id/ivConfirm" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/mgb" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.vega.ui.widget.RoundFrameLayout n0:id="@id/dataPanelLayout" n0:background="@color/APKTOOL_RENAMED_0x7f06047d" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:i9="12.0dp" n2:i-="12.0dp" n2:layout_constraintBottom_toTopOf="@id/bottomNavBar" n2:layout_constraintHeight_percent="0.251"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/adjustBaseLineView" n0:focusableInTouchMode="true" n0:layout_width="match_parent" n0:layout_height="0.00999999dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/mainContentLayout" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toTopOf="@id/dataPanelLayout" n4:layout_constraintTop_toBottomOf="@id/adjustBaseLineView"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

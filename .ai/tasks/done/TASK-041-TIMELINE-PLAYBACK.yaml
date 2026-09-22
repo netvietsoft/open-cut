@@ -1,0 +1,21 @@
+task_id: "TASK-041-TIMELINE-PLAYBACK"
+phase: "P1 - Playback Smoothness, Timeline Parity & Multi-Track Stability"
+title: "Khắc Phục Xung Đột Scrubber Timeline, Giới Hạn Tọa Độ Kéo Thả PIP Overlay và Độc Lập Điểm Cắt In/Out Split Clip"
+assigned_to:
+  - "Agent 3 (Frontend / Android)"
+  - "Agent 7 (Fixer)"
+status: "DONE"
+started_at: "2026-09-22T11:40:00+07:00"
+completed_at: "2026-09-22T11:46:00+07:00"
+priority: "HIGH"
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/model/MediaItem.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/video/VideoEditorComponent.java"
+acceptance_criteria:
+  - "Khắc phục lỗi V4 & V11: Ngăn chặn race condition giữa playback timer và thao tác vuốt/kéo timeline của người dùng, sử dụng instance scrubResetRunnable duy nhất và cờ isUserScrubbing chuẩn xác - HOÀN THÀNH"
+  - "Khắc phục lỗi V10: Sửa lỗi chuyển đổi delta pixel sang relative ratio trong PipDragTouchListener, giới hạn Clamp X/Y không cho PIP bị kéo lệch bay khỏi màn hình - HOÀN THÀNH"
+  - "Khắc phục lỗi X6: Thêm trimInSec và trimOutSec độc lập cho MediaItem, tính toán điểm chia cắt split clip chính xác theo playhead/thời lượng thực tế - HOÀN THÀNH"
+  - "Tuân thủ nghiêm ngặt Luật 12 AGENTS.md (chú thích song ngữ EN + VN) - HOÀN THÀNH"
+verification_results:
+  - "Manual Build APK pass 100%: build\\manual_build\\nextai_opencut_signed.apk"
+  - "D8 DEX compilation pass with named static inner classes"

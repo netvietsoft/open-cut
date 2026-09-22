@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/recommend_grid_view_layout" n0:background="@drawable/lw3" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ViewStub n0:id="@id/song_info_layout_stub" n0:layout="@layout/lk6" n0:inflatedId="@id/song_info_layout" n0:layout_width="match_parent" n0:layout_height="72.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/music_wave_preview_view_stub" n0:layout="@layout/lk-" n0:inflatedId="@id/music_wave_preview_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="@dimen/rr" n0:layout_marginTop="@dimen/rt" n0:layout_marginRight="@dimen/rr" n0:layout_marginBottom="@dimen/rr" n0:layout_marginHorizontal="@dimen/rr" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/song_info_layout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

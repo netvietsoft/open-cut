@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.edit.base.favorite.FavoriteView n0:id="@id/itemContainer" n0:padding="3.5dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="66.0dp" n0:layout_height="86.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/image_root" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/uj"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.lvui.widget.MaterialDraweeView n0:id="@id/image" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:i1="8.0dp" />
+    </com.vega.lvui.view.MaterialSelectableLayout>
+    <com.vega.ui.TipsViewRoot n0:id="@id/effect_tips" n0:padding="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintLeft_toLeftOf="@id/image_root" n2:layout_constraintTop_toTopOf="@id/image_root" n2:kel="24.0dp" n2:kem="@layout/l_n" n2:kev="24.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/loading" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="@id/image_root" n3:layout_constraintLeft_toLeftOf="@id/image_root" n3:layout_constraintRight_toRightOf="@id/image_root" n3:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n3:lottie_autoPlay="true" n3:lottie_fileName="lv_loading_s.json" n3:lottie_loop="true" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/error" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="@id/image_root" n4:layout_constraintLeft_toLeftOf="@id/image_root" n4:layout_constraintRight_toRightOf="@id/image_root" n4:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" n0:scaleType="centerInside" />
+    </FrameLayout>
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060617" n0:gravity="center" n0:id="@id/text" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="2.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="2.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.vipmaterial.VipBadgeBackgroundView n0:id="@id/vip_badge_background" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="4.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintTop_toTopOf="parent" n7:kml="small"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/is_support_web_effect" n0:background="@drawable/q38" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n8:layout_constraintBottom_toBottomOf="@id/image_root" n8:layout_constraintEnd_toEndOf="@id/image_root"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</com.vega.edit.base.favorite.FavoriteView>

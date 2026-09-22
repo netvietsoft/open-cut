@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f0805b8" n0:paddingBottom="30.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="6.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/top_bar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ml" n0:gravity="center_vertical" n0:id="@id/task_center_title" n0:visibility="gone" n0:clickable="false" n0:layout_width="0.0dp" n0:layout_height="16.0dp" n0:text="@string/n1p" n0:layout_weight="1.0" n0:layout_marginStart="4.0dp" n1:k1i="medium" />
+        <FrameLayout n0:id="@id/current_task_info" n0:layout_width="0.0dp" n0:layout_height="16.0dp" n0:layout_weight="1.0" n0:layout_marginEnd="8.0dp" />
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/text_expand_layout" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:clickable="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="12.0dp" n0:paddingEnd="10.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:gravity="center_vertical" n0:id="@id/task_count_info" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:text="1/4" n1:k1i="regular" />
+            <ImageView n0:id="@id/task_expand_icon" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/l3l" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/task_info_list_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginEnd="10.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/top_bar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

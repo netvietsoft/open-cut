@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/llFilterContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.StrongButton n0:textSize="16.0dp" n0:textColor="@color/knt" n0:id="@id/resetOption" n0:background="@drawable/lqt" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/qex" n0:layout_weight="1.0" />
+    <Space n0:layout_width="8.0dp" n0:layout_height="match_parent" />
+    <com.vega.ui.StrongButton n0:textSize="16.0dp" n0:textColor="@color/knt" n0:id="@id/submitOption" n0:background="@drawable/lyx" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/lz6" n0:layout_weight="1.0" />
+</LinearLayout>

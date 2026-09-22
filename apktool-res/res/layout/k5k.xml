@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/delete_icon" n0:layout_width="70.0dp" n0:layout_height="0.0dp" n0:layout_marginTop="30.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0812a2" n0:scaleType="centerCrop" n0:tint="@color/sg" n1:layout_constraintDimensionRatio="H,1:1" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/draft_delete_tips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="15.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/lac" n0:textAlignment="center" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/delete_icon"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.StrongButton n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/mDeleteDraftAffirm" n0:background="@drawable/qpm" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="15.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/lg-" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/draft_delete_tips"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/knv" n0:gravity="center" n0:id="@id/mDeleteDraftCancel" n0:background="@drawable/qps" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="@dimen/pz" n0:layout_marginRight="30.0dp" n0:layout_marginBottom="@dimen/py" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toBottomOf="@id/mDeleteDraftAffirm" n4:kr3="button"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

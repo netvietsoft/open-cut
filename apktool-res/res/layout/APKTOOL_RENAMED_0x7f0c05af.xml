@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/cl_property_header" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" layout="@layout/lns"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/property_refresh_layout" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_behavior="@string/appbar_scrolling_view_behavior" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/cl_property_header"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.refresh.RefreshHeaderView n0:layout_width="match_parent" n0:layout_height="60.0dp" />
+        <ScrollView n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:fillViewport="true" n0:overScrollMode="never">
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <include n0:id="@id/property_cameo_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="80.0dp" layout="@layout/lnm" />
+                <com.vega.main.cloud.widget.CloudHomeGuideCardView n0:id="@id/cloudHomeGuideView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginVertical="4.0dp" />
+                <include layout="@layout/lnp" />
+                <include layout="@layout/lno" />
+                <include layout="@layout/lny" />
+                <include layout="@layout/lne" />
+                <View n0:id="@id/p_page_divide" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="72.0dp" />
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <FrameLayout n0:id="@id/p_create_view" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="2.0dp" n0:layout_marginEnd="6.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/lnv" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_gravity="bottom" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.libsticker.view.TouchCoordinatorLayout n0:layout_gravity="bottom" n0:id="@id/edit_water_word_layout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout n0:orientation="vertical" n0:id="@id/appBarLayout" n0:background="@null" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:elevation="0.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.google.android.material.appbar.CollapsingToolbarLayout n0:id="@id/toolBarLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap">
+                <View n0:id="@id/varHeightMaxView" n0:layout_width="match_parent" n0:layout_height="0.0dp" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/title_layout" n0:background="@drawable/loa" n0:layout_width="match_parent" n0:layout_height="48.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mn" n0:id="@id/tv_subtitle_cancel" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ns_" n0:includeFontPadding="false" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mn" n0:id="@id/tv_subtitle_done" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nty" n0:includeFontPadding="false" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/no" n0:gravity="center" n0:id="@id/tv_subtitle_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/nti" n0:includeFontPadding="false" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/tv_subtitle_done" n1:layout_constraintStart_toEndOf="@id/tv_subtitle_cancel" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mn" n0:id="@id/bt_subtitle_done" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rnr" n0:includeFontPadding="false" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+                <ImageView n0:id="@id/iv_subtitle_done" n0:padding="14.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f081605" n0:layout_marginEnd="2.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                <View n0:id="@id/subtitle_panel_divider" n0:background="@color/kw" n0:layout_width="0.0dp" n0:layout_height="0.5dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root" n0:background="@color/APKTOOL_RENAMED_0x7f060020" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/rvSubtitleListWithWaterWord" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:overScrollMode="never" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <View n0:id="@id/delete_bottom_mask" n0:background="@drawable/l3b" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="98.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="@id/delete_bottom_mask" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/delete_bottom_mask"
+              xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <com.vega.ui.StrongButton n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f060074" n0:gravity="center" n0:id="@id/delete_filler_words_btn" n0:paddingTop="9.0dp" n0:paddingBottom="9.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:layout_marginBottom="2.0dp" n0:paddingStart="24.0dp" n0:paddingEnd="24.0dp" n0:layout_marginVertical="2.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:k1i="medium" n4:k1j="body_1" />
+                <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/vipView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="2.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:kml="small" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@color/APKTOOL_RENAMED_0x7f060020" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <View n0:id="@id/bottomDivider" n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="0.5dp" n5:layout_constraintBottom_toTopOf="@id/ll_subtitle_menu_water" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+              xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            <LinearLayout n0:gravity="center_horizontal" n0:orientation="horizontal" n0:id="@id/ll_subtitle_menu_water" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="68.0dp" n0:paddingHorizontal="16.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent"
+              xmlns:n6="http://schemas.android.com/apk/res-auto">
+                <androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/ll_menu_autoDetect" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0">
+                    <ImageView n0:id="@id/auto_detect_icon" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="15.0dp" n0:src="@drawable/mnt" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+                    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/auto_detect_vip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" n0:layout_marginStart="18.0dp" n6:layout_constraintBottom_toBottomOf="@id/auto_detect_icon" n6:layout_constraintStart_toStartOf="@id/auto_detect_icon" n6:kml="small" n6:kmm="mix" />
+                    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/no" n0:id="@id/auto_detect_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/ntf" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/auto_detect_icon" n6:k1i="medium" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/ll_menu_delete" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0">
+                    <ImageView n0:id="@id/iv_subtitle_trash" n0:layout_width="25.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="15.0dp" n0:src="@drawable/mnr" />
+                    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/no" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/ntp" n6:k1i="medium" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.vega.libsticker.view.TouchCoordinatorLayout>
+</FrameLayout>

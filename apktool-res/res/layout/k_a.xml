@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="start|center" n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingVertical="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.MarqueeTextView n0:textColor="@color/mp" n0:ellipsize="marquee" n0:gravity="start|center" n0:id="@id/text" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="loading" n0:singleLine="true" n0:includeFontPadding="false" n0:layout_marginStart="6.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/driver" n2:layout_constraintHorizontal_bias="0.0" n2:layout_constraintHorizontal_chainStyle="packed" n2:layout_constraintStart_toEndOf="@id/icon" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintWidth_default="wrap" n2:k1i="regular"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/driver" n0:background="@color/c8" n0:visibility="gone" n0:clickable="false" n0:layout_width="0.5dp" n0:layout_height="8.0dp" n0:layout_marginStart="8.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/retry" n3:layout_constraintStart_toEndOf="@id/text" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:gravity="start|center" n0:id="@id/retry" n0:visibility="gone" n0:clickable="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/njb" n0:drawablePadding="3.0dp" n0:drawableStart="@drawable/mcx" n0:textAlignment="viewStart" n0:layout_marginStart="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/driver" n4:layout_constraintTop_toTopOf="parent" n4:k1i="regular"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

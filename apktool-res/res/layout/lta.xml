@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:focusable="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="@dimen/qz" n1:cardElevation="0.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/banner_text" n0:focusable="false" n0:layout_width="match_parent" n0:layout_height="150.0dp" n0:src="@drawable/l09" n0:scaleType="fitCenter" n0:adjustViewBounds="true" n0:maxHeight="150.0dp" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

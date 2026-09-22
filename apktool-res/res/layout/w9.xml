@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="#ff000000" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ScrollView n0:id="@id/air_setting_s" n0:background="#ff000000" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toTopOf="@id/air_setting_ll" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.nativesettings.airdebug.AirConfigUIGroup n0:orientation="vertical" n0:id="@id/debug_root" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/air_setting_ll" n0:background="#ff000000" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/air_setting_s"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:id="@id/tool_url" n0:paddingLeft="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/openHttpsServer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Restart HTTP Server" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/sendHttpRequest" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="Send HTTP Request" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/openHttpServer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="Restart HTTPS Server" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/sendHttpsRequest" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="Send HTTPS Request" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/openWsServer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="Restart Ws_Server" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/openWsClient" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="Open Ws_Client" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/openWssServer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="Restart Wss_Server" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/openWssClient" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="Open Wss_Client" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/openWssServerOne" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="Restart Wss_Server_1" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:id="@id/openWssClientOne" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="Open Wss_Client_1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

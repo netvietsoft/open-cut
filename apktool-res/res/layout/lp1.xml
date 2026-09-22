@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundLinearLayout n0:orientation="horizontal" n0:background="@drawable/ltf" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingHorizontal="8.0dp" n1:i1="24.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.ui.widget.CircleImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_visual_style" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:scaleType="centerCrop" n1:APKTOOL_RENAMED_0x7f04031d="@color/knt" n1:APKTOOL_RENAMED_0x7f04031e="1.1999817dp" />
+    <com.vega.ui.widget.CircleImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_voice_effect" n0:background="#ecf0f5" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:scaleType="centerCrop" n1:APKTOOL_RENAMED_0x7f04031d="@color/knt" n1:APKTOOL_RENAMED_0x7f04031e="1.1999817dp" />
+    <LinearLayout n0:layout_gravity="center_vertical" n0:id="@id/ll_ratio" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <com.vega.ui.widget.RoundCornerTextView2 n0:layout_gravity="center_vertical" n0:id="@id/divider_dot" n0:background="@drawable/ltg" n0:layout_width="2.0dp" n0:layout_height="2.0dp" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp" n1:i1="1.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060516" n0:id="@id/tv_ratio" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:k1i="medium" />
+    </LinearLayout>
+</com.vega.ui.widget.RoundLinearLayout>

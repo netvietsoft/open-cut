@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#80edf0fd" n0:id="@id/inspire_song_list_tv" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/ee" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_goneMarginTop="65.0dp" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_space_refresh_p" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pw7" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toBottomOf="@id/inspire_song_list_tv" n2:layout_constraintStart_toEndOf="@id/inspire_song_list_tv" n2:layout_constraintTop_toTopOf="@id/inspire_song_list_tv"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/inspire_song_list" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n3:layout_constraintTop_toBottomOf="@id/inspire_song_list_tv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/loadingView" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginTop="63.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/inspire_song_list_tv" n4:layout_constraintVertical_chainStyle="packed" n4:lottie_autoPlay="true" n4:lottie_loop="true"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivErrorIcon" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginTop="48.0dp" n0:src="@drawable/pw5" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/inspire_song_list_tv"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/mp" n0:id="@id/tv_progress" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/o6y" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/loadingView" n6:k1i="bold"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

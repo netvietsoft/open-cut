@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kqt" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/btn_close_cut" n0:background="@drawable/m40" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="21.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/btn_finish_cut" n0:background="@drawable/ntp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginEnd="21.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tv_music_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_marginStart="20.0dp" n0:layout_marginEnd="20.0dp" n3:layout_constraintBottom_toBottomOf="@id/btn_close_cut" n3:layout_constraintEnd_toStartOf="@id/btn_finish_cut" n3:layout_constraintStart_toEndOf="@id/btn_close_cut" n3:layout_constraintTop_toTopOf="@id/btn_close_cut"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/tv_selected_time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="20.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/btn_close_cut"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n0:id="@id/music_wave_layout" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginTop="10.0dp" n5:layout_constraintTop_toBottomOf="@id/tv_selected_time"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <View n0:background="@drawable/kqu" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginStart="22.0dp" n0:layout_marginEnd="22.0dp" />
+        <com.vega.audio.widget.AudioCutView n0:id="@id/music_wave_preview_content" n0:layout_width="match_parent" n0:layout_height="28.0dp" n0:layout_centerVertical="true" />
+        <ImageView n0:id="@id/leftoffset_ic" n0:layout_width="2.0dp" n0:layout_height="match_parent" n0:src="@drawable/kay" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+    </RelativeLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_v" n0:id="@id/tv_max_duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="50.0dp" n0:layout_marginStart="20.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/music_wave_layout"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

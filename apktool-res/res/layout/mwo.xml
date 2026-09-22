@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_dialog_formula_result_0" n0:layout_width="302.0dp" n0:layout_height="420.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/frameLayout" n0:background="@color/kv_" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/formula_effect_layout" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/formula_preview" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitCenter" n0:contentDescription="Preview image with formula effect only" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/loading_layout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center" n0:id="@id/lottie_loading" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginBottom="12.0dp" n1:layout_constraintBottom_toTopOf="@id/create_formula_tip" n1:layout_constraintEnd_toEndOf="@id/create_formula_tip" n1:layout_constraintStart_toStartOf="@id/create_formula_tip" n1:lottie_fileName="loading_white.json" n1:lottie_loop="true" />
+            <TextView n0:textSize="12.0dp" n0:textColor="@color/kwg" n0:id="@id/create_formula_tip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sxc" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <TextView n0:textSize="12.0dp" n0:textColor="@color/kvy" n0:gravity="center" n0:id="@id/cancel" n0:background="@drawable/q7z" n0:layout_width="56.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="24.0dp" n0:text="@string/sne" n1:layout_constraintEnd_toEndOf="@id/create_formula_tip" n1:layout_constraintStart_toStartOf="@id/create_formula_tip" n1:layout_constraintTop_toBottomOf="@id/create_formula_tip" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <FrameLayout n0:id="@id/formula_effect_layout" n0:background="@color/kor" n0:layout_width="0.0dp" n0:layout_height="118.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/frameLayout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center" n0:id="@id/formula_effect_list" n0:layout_width="match_parent" n0:layout_height="62.0dp" n0:paddingStart="12.0dp" n0:paddingEnd="0.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

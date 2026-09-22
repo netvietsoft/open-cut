@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/recycleColor" n0:background="@android:color/transparent" n0:fadingEdgeLength="15.0dp" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f07046a" n0:layout_height="362.0dp" n0:overScrollMode="never" n0:requiresFadingEdge="vertical" />
+    <com.xt.retouch.makeuppen.view.ColorSelectView n0:id="@id/color_select" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="-6.5dp" />
+</merge>

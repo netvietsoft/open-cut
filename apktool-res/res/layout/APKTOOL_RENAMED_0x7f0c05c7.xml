@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.recorder.view.LvCameraView n0:id="@id/camera_view" n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:APKTOOL_RENAMED_0x7f04051c="@drawable/mri" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kts="@array/f" n1:ktt="@array/g"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/camera_window_container" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="@dimen/mx">
+        <SurfaceView n0:id="@id/surface_view" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <View n0:id="@id/bottomMask" n0:background="@drawable/lpw" n0:layout_width="match_parent" n0:layout_height="266.0dp" n1:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <View n0:id="@id/fl_front_increase_light" n0:background="#fffbe6c7" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/sg" n0:layout_gravity="center_horizontal" n0:id="@id/focus_lock_tip" n0:background="@drawable/k0i" n0:paddingTop="5.0dp" n0:paddingBottom="5.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="80.0dp" n0:text="@string/n_" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" />
+</com.vega.recorder.view.LvCameraView>

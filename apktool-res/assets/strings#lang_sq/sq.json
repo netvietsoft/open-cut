@@ -1,0 +1,1893 @@
+{
+    "name": "sq",
+    "currency": {
+        "Standard": "{0} ¤",
+        "StandardNoCurrency": "# ##0,00",
+        "compact": {
+            "short": "{0} ¤",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "{0}-{1} ¤"
+			},
+			"approximately": {
+				"short": "≈{0} ¤"
+			},
+			"atLeast": {
+				"short": "≥{0} ¤"
+			},
+			"atMost": {
+				"short": "≤{0} ¤"
+			}
+		},
+        "currencyList": {
+            "AED": {
+                "symbol": {
+                    "value": "AED"
+                },
+                "displayName": {
+                    "other": "dirhamë të Emirateve të Bashkuara Arabe",
+                    "one": "dirham i Emirateve të Bashkuara Arabe"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN"
+                },
+                "displayName": {
+                    "other": "afganë afganë",
+                    "one": "afgan afgan"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "AFN"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "Lekë"
+                },
+                "displayName": {
+                    "other": "lekë shqiptar",
+                    "one": "lek shqiptar"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD"
+                },
+                "displayName": {
+                    "other": "drami armene",
+                    "one": "drami armene"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "AMD"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG"
+                },
+                "displayName": {
+                    "other": "gilderë antilianë holandezë",
+                    "one": "gilder antilian holandez"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA"
+                },
+                "displayName": {
+                    "other": "kuanza angole",
+                    "one": "kuanzë angole"
+                },
+                "symbol-alt-narrow": {
+                    "value": "AOA"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS"
+                },
+                "displayName": {
+                    "other": "peso argjentinase",
+                    "one": "peso argjentinase"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ARS"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "A$"
+                },
+                "displayName": {
+                    "other": "dollarë australianë",
+                    "one": "dollar australian"
+                },
+                "symbol-alt-narrow": {
+                    "value": "A$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG"
+                },
+                "displayName": {
+                    "other": "florinë arubanë",
+                    "one": "florin aruban"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN"
+                },
+                "displayName": {
+                    "other": "manata azerbajxhanase",
+                    "one": "manatë azerbajxhanase"
+                },
+                "symbol-alt-narrow": {
+                    "value": "AZN"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM"
+                },
+                "displayName": {
+                    "other": "marka të Bosnjë-Hercegovinës [të shkëmbyeshme]",
+                    "one": "markë e Bosnjë-Hercegovinës [e shkëmbyeshme]"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BAM"
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD"
+                },
+                "displayName": {
+                    "other": "dollarë barbadianë",
+                    "one": "dollar barbadian"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BBD"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT"
+                },
+                "displayName": {
+                    "other": "taka bangladeshi",
+                    "one": "takë bangladeshi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BDT"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN"
+                },
+                "displayName": {
+                    "other": "leva bullgare",
+                    "one": "levë bullgare"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD"
+                },
+                "displayName": {
+                    "other": "dinarë bahreini",
+                    "one": "dinar bahreini"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF"
+                },
+                "displayName": {
+                    "other": "franga burundiane",
+                    "one": "frangë burundiane"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD"
+                },
+                "displayName": {
+                    "other": "dollarë bermude",
+                    "one": "dollar bermude"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BMD"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND"
+                },
+                "displayName": {
+                    "other": "dollarë brunei",
+                    "one": "dollar brunei"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BND"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB"
+                },
+                "displayName": {
+                    "other": "bolivianë të Bolivisë",
+                    "one": "bolivian i Bolivisë"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BOB"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "BRL"
+                },
+                "displayName": {
+                    "other": "realë brazilianë",
+                    "one": "real brazilian"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BRL"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD"
+                },
+                "displayName": {
+                    "other": "dollarë bahamezë",
+                    "one": "dollar bahamez"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BSD"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN"
+                },
+                "displayName": {
+                    "other": "ngultrumë butanezë",
+                    "one": "ngultrum butanez"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP"
+                },
+                "displayName": {
+                    "other": "pula botsuane",
+                    "one": "pulë botsuane"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BWP"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN"
+                },
+                "displayName": {
+                    "other": "rubla bjelloruse",
+                    "one": "rubël bjelloruse"
+                },
+                "digits": 2
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR"
+                },
+                "displayName": {
+                    "other": "rubla bjelloruse (2000–2016)",
+                    "one": "rubël bjelloruse (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD"
+                },
+                "displayName": {
+                    "other": "dollarë belize",
+                    "one": "dollar belize"
+                },
+                "symbol-alt-narrow": {
+                    "value": "BZD"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "dollarë kanadezë",
+                    "one": "dollar kanadez"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CAD"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF"
+                },
+                "displayName": {
+                    "other": "franga kongole",
+                    "one": "frangë kongole"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF"
+                },
+                "displayName": {
+                    "other": "franga zvicerane",
+                    "one": "frangë zvicerane"
+                },
+                "digits": 2
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP"
+                },
+                "displayName": {
+                    "other": "peso kiliane",
+                    "one": "peso kiliane"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CLP"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH"
+                },
+                "displayName": {
+                    "other": "juanë kinezë (për treg të jashtëm)",
+                    "one": "juan kinez (për treg të jashtëm)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "juanë kinezë",
+                    "one": "juan kinez"
+                },
+                "symbol-alt-narrow": {
+                    "value": "CNY"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP"
+                },
+                "displayName": {
+                    "other": "peso kolumbiane",
+                    "one": "peso kolumbiane"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "COP"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC"
+                },
+                "displayName": {
+                    "other": "kolonë kostarikanë",
+                    "one": "kolon kostarikan"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CRC"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC"
+                },
+                "displayName": {
+                    "other": "peso kubaneze e shkëmbyeshme",
+                    "one": "peso kubaneze e shkëmbyeshme"
+                },
+                "symbol-alt-narrow": {
+                    "value": "CUC"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP"
+                },
+                "displayName": {
+                    "other": "peso kubaneze",
+                    "one": "peso kubaneze"
+                },
+                "symbol-alt-narrow": {
+                    "value": "CUP"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE"
+                },
+                "displayName": {
+                    "other": "eskudo të Kepit të Gjelbër",
+                    "one": "eskudo e Kepit të Gjelbër"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK"
+                },
+                "displayName": {
+                    "other": "koruna çeke",
+                    "one": "korunë çeke"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CZK"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF"
+                },
+                "displayName": {
+                    "other": "franga xhibutiane",
+                    "one": "frangë xhibutiane"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK"
+                },
+                "displayName": {
+                    "other": "korona daneze",
+                    "one": "koronë daneze"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "DKK"
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP"
+                },
+                "displayName": {
+                    "other": "peso dominikane",
+                    "one": "peso dominikane"
+                },
+                "symbol-alt-narrow": {
+                    "value": "DOP"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD"
+                },
+                "displayName": {
+                    "other": "dinarë algjerianë",
+                    "one": "dinar algjerian"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP"
+                },
+                "displayName": {
+                    "other": "sterlina egjiptiane",
+                    "one": "sterlinë egjiptiane"
+                },
+                "symbol-alt-narrow": {
+                    "value": "EGP"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN"
+                },
+                "displayName": {
+                    "other": "nakfa eritreje",
+                    "one": "nakfë eritreje"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB"
+                },
+                "displayName": {
+                    "other": "bira etiopiane",
+                    "one": "birë etiopiane"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "euro",
+                    "one": "euro"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD"
+                },
+                "displayName": {
+                    "other": "dollarë fixhi",
+                    "one": "dollar fixhi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "FJD"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP"
+                },
+                "displayName": {
+                    "other": "stërlina të Ishujve Falkland",
+                    "one": "stërlinë e Ishujve Falkland"
+                },
+                "symbol-alt-narrow": {
+                    "value": "FKP"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "sterlina britanike",
+                    "one": "sterlinë britanike"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GBP"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL"
+                },
+                "displayName": {
+                    "other": "lari gjeorgjiane",
+                    "one": "lari gjeorgjian"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GEL"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS"
+                },
+                "displayName": {
+                    "other": "sejda ganeze",
+                    "one": "sejdë ganeze"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP"
+                },
+                "displayName": {
+                    "other": "sterlina gjibraltari",
+                    "one": "sterlinë gjibraltari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GIP"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD"
+                },
+                "displayName": {
+                    "other": "dalasë gambianë",
+                    "one": "dalas gambian"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF"
+                },
+                "displayName": {
+                    "other": "franga guineje",
+                    "one": "frangë guineje"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "GNF"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ"
+                },
+                "displayName": {
+                    "other": "kuecalë guatemalas",
+                    "one": "kuecal guatemalas"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GTQ"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD"
+                },
+                "displayName": {
+                    "other": "dollarë guajanezë",
+                    "one": "dollar guajanez"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "GYD"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "dollarë hong-kongu",
+                    "one": "dollar hong-kongu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL"
+                },
+                "displayName": {
+                    "other": "lempira hondurase",
+                    "one": "lempirë hondurase"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HNL"
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK"
+                },
+                "displayName": {
+                    "other": "kuna kroate",
+                    "one": "kunë kroate"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HRK"
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG"
+                },
+                "displayName": {
+                    "other": "gurdë haitianë",
+                    "one": "gurd haitian"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF"
+                },
+                "displayName": {
+                    "other": "forinta hungareze",
+                    "one": "forintë hungareze"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "HUF"
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR"
+                },
+                "displayName": {
+                    "other": "rupi indoneziane",
+                    "one": "rupi indoneziane"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "IDR"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "shekelë izrealit",
+                    "one": "shekel izrealit"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ILS"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "rupi indiane",
+                    "one": "rupi indiane"
+                },
+                "symbol-alt-narrow": {
+                    "value": "INR"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD"
+                },
+                "displayName": {
+                    "other": "dinarë irakianë",
+                    "one": "dinar irakian"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR"
+                },
+                "displayName": {
+                    "other": "rialë iranianë",
+                    "one": "rial iranian"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK"
+                },
+                "displayName": {
+                    "other": "korona islandeze",
+                    "one": "koronë islandeze"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "ISK"
+                }
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD"
+                },
+                "displayName": {
+                    "other": "dollarë xhamajkanë",
+                    "one": "dollar xhamajkan"
+                },
+                "symbol-alt-narrow": {
+                    "value": "JMD"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD"
+                },
+                "displayName": {
+                    "other": "dinarë jordanezë",
+                    "one": "dinar jordanez"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "JP¥"
+                },
+                "displayName": {
+                    "other": "jenë japonezë",
+                    "one": "jen japonez"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "JPY"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES"
+                },
+                "displayName": {
+                    "other": "shilinga keniane",
+                    "one": "shilingë keniane"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS"
+                },
+                "displayName": {
+                    "other": "soma kirgize",
+                    "one": "somë kirgize"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR"
+                },
+                "displayName": {
+                    "other": "rialë kamboxhianë",
+                    "one": "rial kamboxhian"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KHR"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF"
+                },
+                "displayName": {
+                    "other": "franga komore",
+                    "one": "frangë komore"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "KMF"
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW"
+                },
+                "displayName": {
+                    "other": "uonë koreano-veriorë",
+                    "one": "uon koreano-verior"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "KPW"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "uonë koreano-jugorë",
+                    "one": "uon koreano-jugor"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "KRW"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD"
+                },
+                "displayName": {
+                    "other": "dinarë kuvajtianë",
+                    "one": "dinar kuvajtian"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD"
+                },
+                "displayName": {
+                    "other": "dollarë të Ishujve Kajman",
+                    "one": "dollar i Ishujve Kajman"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KYD"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT"
+                },
+                "displayName": {
+                    "other": "tenga kazake",
+                    "one": "tengë kazake"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KZT"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK"
+                },
+                "displayName": {
+                    "other": "kipa laosi",
+                    "one": "kipë laosi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "LAK"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP"
+                },
+                "displayName": {
+                    "other": "sterlina libaneze",
+                    "one": "sterlinë libaneze"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "LBP"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR"
+                },
+                "displayName": {
+                    "other": "rupi sri-lanke",
+                    "one": "rupi sri-lanke"
+                },
+                "symbol-alt-narrow": {
+                    "value": "LKR"
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD"
+                },
+                "displayName": {
+                    "other": "dollarë liberianë",
+                    "one": "dollar liberian"
+                },
+                "symbol-alt-narrow": {
+                    "value": "LRD"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL"
+                },
+                "displayName": {
+                    "other": "lota lesotiane",
+                    "one": "lotë lesotiane"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL"
+                },
+                "displayName": {
+                    "other": "lita lituaneze",
+                    "one": "litë lituaneze"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt"
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL"
+                },
+                "displayName": {
+                    "other": "lata letoneze",
+                    "one": "latë letoneze"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls"
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD"
+                },
+                "displayName": {
+                    "other": "dinarë libianë",
+                    "one": "dinar libian"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD"
+                },
+                "displayName": {
+                    "other": "dirhamë marokenë",
+                    "one": "dirham maroken"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL"
+                },
+                "displayName": {
+                    "other": "leu moldave",
+                    "one": "leu moldave"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA"
+                },
+                "displayName": {
+                    "other": "arierë malagezë",
+                    "one": "arier malagez"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "MGA"
+                }
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD"
+                },
+                "displayName": {
+                    "other": "denarë maqedonas",
+                    "one": "denar maqedonas"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK"
+                },
+                "displayName": {
+                    "other": "kiata mianmari",
+                    "one": "kiatë mianmari"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "MMK"
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT"
+                },
+                "displayName": {
+                    "other": "tugrika mongole",
+                    "one": "tugrikë mongole"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "MNT"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP"
+                },
+                "displayName": {
+                    "other": "pataka të Makaos",
+                    "one": "patakë e Makaos"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO"
+                },
+                "displayName": {
+                    "other": "ugija mauritane (1973–2017)",
+                    "one": "ugijë mauritane (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU"
+                },
+                "displayName": {
+                    "other": "ugija mauritane",
+                    "one": "ugijë mauritane"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR"
+                },
+                "displayName": {
+                    "other": "rupi mauritiane",
+                    "one": "rupi mauritiane"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "MUR"
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR"
+                },
+                "displayName": {
+                    "other": "rufi maldivi",
+                    "one": "rufi maldivi"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK"
+                },
+                "displayName": {
+                    "other": "kuaça malaviane",
+                    "one": "kuaçë malaviane"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "peso meksikane",
+                    "one": "peso meksikane"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR"
+                },
+                "displayName": {
+                    "other": "ringitë malajzianë",
+                    "one": "ringit malajzian"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MYR"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN"
+                },
+                "displayName": {
+                    "other": "metikalë mozambiku",
+                    "one": "metikal mozambiku"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD"
+                },
+                "displayName": {
+                    "other": "dollarë namibie",
+                    "one": "dollar namibie"
+                },
+                "symbol-alt-narrow": {
+                    "value": "NAD"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN"
+                },
+                "displayName": {
+                    "other": "naira nigeriane",
+                    "one": "nairë nigeriane"
+                },
+                "symbol-alt-narrow": {
+                    "value": "NGN"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO"
+                },
+                "displayName": {
+                    "other": "kordoba nikaraguane",
+                    "one": "kordobë nikaraguane"
+                },
+                "symbol-alt-narrow": {
+                    "value": "NIO"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK"
+                },
+                "displayName": {
+                    "other": "korona norvegjeze",
+                    "one": "koronë norvegjeze"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NOK"
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR"
+                },
+                "displayName": {
+                    "other": "rupi nepaleze",
+                    "one": "rupi nepaleze"
+                },
+                "symbol-alt-narrow": {
+                    "value": "NPR"
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "dollarë të Zelandës së Re",
+                    "one": "dollar i Zelandës së Re"
+                },
+                "symbol-alt-narrow": {
+                    "value": "NZD"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR"
+                },
+                "displayName": {
+                    "other": "rialë omani",
+                    "one": "rial omani"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB"
+                },
+                "displayName": {
+                    "other": "balboa panameze",
+                    "one": "balboa panameze"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN"
+                },
+                "displayName": {
+                    "other": "sola peruane",
+                    "one": "solë peruane"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK"
+                },
+                "displayName": {
+                    "other": "kina të Guinesë së Re-Papua",
+                    "one": "kinë e Guinesë së Re-Papua"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP"
+                },
+                "displayName": {
+                    "other": "peso filipinase",
+                    "one": "peso filipinase"
+                },
+                "symbol-alt-narrow": {
+                    "value": "PHP"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR"
+                },
+                "displayName": {
+                    "other": "rupi pakistaneze",
+                    "one": "rupi pakistaneze"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "PKR"
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN"
+                },
+                "displayName": {
+                    "other": "zllota polake",
+                    "one": "zllotë polake"
+                },
+                "symbol-alt-narrow": {
+                    "value": "PLN"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG"
+                },
+                "displayName": {
+                    "other": "guaranë paraguaianë",
+                    "one": "guaran paraguaian"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "PYG"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR"
+                },
+                "displayName": {
+                    "other": "rialë katari",
+                    "one": "rial katari"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON"
+                },
+                "displayName": {
+                    "other": "leu rumune",
+                    "one": "leu rumune"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RON"
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD"
+                },
+                "displayName": {
+                    "other": "dinarë serbë",
+                    "one": "dinar serb"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB"
+                },
+                "displayName": {
+                    "other": "rubla ruse",
+                    "one": "rubël ruse"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RUB"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF"
+                },
+                "displayName": {
+                    "other": "franga ruandeze",
+                    "one": "frangë ruandeze"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RWF"
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR"
+                },
+                "displayName": {
+                    "other": "rialë sauditë",
+                    "one": "rial saudit"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD"
+                },
+                "displayName": {
+                    "other": "dollarë të Ishujve Solomonë",
+                    "one": "dollar i Ishujve Solomonë"
+                },
+                "symbol-alt-narrow": {
+                    "value": "SBD"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR"
+                },
+                "displayName": {
+                    "other": "rupi të Ishujve Sishelë",
+                    "one": "rupi e Ishujve Sishelë"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG"
+                },
+                "displayName": {
+                    "other": "sterlina sudaneze",
+                    "one": "sterlinë sudaneze"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK"
+                },
+                "displayName": {
+                    "other": "korona suedeze",
+                    "one": "koronë suedeze"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "SEK"
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD"
+                },
+                "displayName": {
+                    "other": "dollarë singapori",
+                    "one": "dollar singapori"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP"
+                },
+                "displayName": {
+                    "other": "sterlina e Ishullit të Shën-Helenës",
+                    "one": "sterlinë e Ishullit të Shën-Helenës"
+                },
+                "symbol-alt-narrow": {
+                    "value": "SHP"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE"
+                },
+                "displayName": {
+                    "other": "leonë të Sierra-Leones",
+                    "one": "leon i Sierra-Leones"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL"
+                },
+                "displayName": {
+                    "other": "leonë të Sierra-Leones (1964—2022)",
+                    "one": "leon i Sierra-Leones (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS"
+                },
+                "displayName": {
+                    "other": "shilinga somaleze",
+                    "one": "shilingë somaleze"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD"
+                },
+                "displayName": {
+                    "other": "dollarë surinamezë",
+                    "one": "dollar surinamez"
+                },
+                "symbol-alt-narrow": {
+                    "value": "SRD"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP"
+                },
+                "displayName": {
+                    "other": "sterlina sudanezo-jugore",
+                    "one": "sterlinë sudanezo-jugore"
+                },
+                "symbol-alt-narrow": {
+                    "value": "SSP"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD"
+                },
+                "displayName": {
+                    "other": "dobra të Sao-Tomes dhe Prinsipes (1977–2017)",
+                    "one": "dobër e Sao-Tomes dhe Prinsipes (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN"
+                },
+                "displayName": {
+                    "other": "dobra të Sao-Tomes dhe Prinsipes",
+                    "one": "dobër e Sao-Tomes dhe Prinsipes"
+                },
+                "symbol-alt-narrow": {
+                    "value": "STN"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP"
+                },
+                "displayName": {
+                    "other": "sterlina siriane",
+                    "one": "sterlinë siriane"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "SYP"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL"
+                },
+                "displayName": {
+                    "other": "lilangenë suazilande",
+                    "one": "lilangen suazilande"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "฿"
+                },
+                "displayName": {
+                    "other": "bata tajlandeze",
+                    "one": "batë tajlandeze"
+                },
+                "symbol-alt-narrow": {
+                    "value": "THB"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS"
+                },
+                "displayName": {
+                    "other": "somona taxhike",
+                    "one": "somonë taxhike"
+                }
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT"
+                },
+                "displayName": {
+                    "other": "manata turkmene",
+                    "one": "manatë turkmene"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND"
+                },
+                "displayName": {
+                    "other": "dinarë tunizianë",
+                    "one": "dinar tunizian"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP"
+                },
+                "displayName": {
+                    "other": "panga tongane",
+                    "one": "pangë tongane"
+                },
+                "symbol-alt-narrow": {
+                    "value": "TOP"
+                }
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY"
+                },
+                "displayName": {
+                    "other": "lira turke",
+                    "one": "lirë turke"
+                },
+                "symbol-alt-narrow": {
+                    "value": "TRY"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD"
+                },
+                "displayName": {
+                    "other": "dollarë të Trinidadit dhe Tobagos",
+                    "one": "dollar i Trinidadit dhe Tobagos"
+                },
+                "symbol-alt-narrow": {
+                    "value": "TTD"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "dollarë tajvanezë",
+                    "one": "dollar tajvanez"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "TWD"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS"
+                },
+                "displayName": {
+                    "other": "shilinga tanzanie",
+                    "one": "shilingë tanzanie"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH"
+                },
+                "displayName": {
+                    "other": "rivni ukrainase",
+                    "one": "rivni ukrainase"
+                },
+                "symbol-alt-narrow": {
+                    "value": "UAH"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX"
+                },
+                "displayName": {
+                    "other": "shilinga ugandeze",
+                    "one": "shilingë ugandeze"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "US$"
+                },
+                "displayName": {
+                    "other": "dollarë amerikanë",
+                    "one": "dollar amerikan"
+                },
+                "symbol-alt-narrow": {
+                    "value": "USD"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU"
+                },
+                "displayName": {
+                    "other": "peso uruguaiane",
+                    "one": "peso uruguaiane"
+                },
+                "symbol-alt-narrow": {
+                    "value": "UYU"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS"
+                },
+                "displayName": {
+                    "other": "soma uzbeke",
+                    "one": "somë uzbeke"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF"
+                },
+                "displayName": {
+                    "other": "bolivarë venezuelian (2008–2018)",
+                    "one": "bolivar venezuelian (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs"
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES"
+                },
+                "displayName": {
+                    "other": "bolivarë venezuelas",
+                    "one": "bolivar venezuelas"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "donga vietnameze",
+                    "one": "dongë vietnameze"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "VND"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV"
+                },
+                "displayName": {
+                    "other": "vatu vanuatuje",
+                    "one": "vatu vanuatuje"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST"
+                },
+                "displayName": {
+                    "other": "tala samoane",
+                    "one": "talë samoane"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA"
+                },
+                "displayName": {
+                    "other": "franga kamerunase",
+                    "one": "frangë kamerunase"
+                },
+                "digits": 0
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "dollarë të Karaibeve Lindore",
+                    "one": "dollar i Karaibeve Lindore"
+                },
+                "symbol-alt-narrow": {
+                    "value": "XCD"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA"
+                },
+                "displayName": {
+                    "other": "franga të Bregut të Fildishtë",
+                    "one": "frangë e Bregut të Fildishtë"
+                },
+                "digits": 0
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF"
+                },
+                "displayName": {
+                    "other": "franga franceze të Polinezisë",
+                    "one": "frangë franceze e Polinezisë"
+                },
+                "digits": 0
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "¤"
+                },
+                "displayName": {
+                    "other": "(njësi të panjohura valutore)",
+                    "one": "(njësi e panjohur valutore)"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER"
+                },
+                "displayName": {
+                    "other": "rialë jemeni",
+                    "one": "rial jemeni"
+                },
+                "digits": 0
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR"
+                },
+                "displayName": {
+                    "other": "randë afrikano-jugorë",
+                    "one": "rand afrikano-jugor"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZAR"
+                }
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW"
+                },
+                "displayName": {
+                    "other": "kuaça zambiku",
+                    "one": "kuaçë zambiku"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZMW"
+                }
+            }
+        }
+    }
+}

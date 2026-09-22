@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/mediaThumbnailIv" n0:layout_width="64.0dp" n0:layout_height="64.0dp" n0:layout_marginTop="5.0dp" n0:layout_marginEnd="5.0dp" />
+    <View n0:layout_gravity="start|bottom" n0:background="@drawable/k6h" n0:layout_width="64.0dp" n0:layout_height="48.0dp" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:layout_gravity="end|top" n0:id="@id/deselectedIv" n0:paddingBottom="6.0dp" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="2.0dp" n0:src="@drawable/yj" n0:paddingStart="6.0dp" n0:layout_marginEnd="2.0dp" n1:kr3="button"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_gravity="end|bottom" n0:id="@id/totalTimeTv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="5.0dp" n0:layout_marginEnd="11.0dp" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:layout_gravity="center" n0:id="@id/editIcon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/y0" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

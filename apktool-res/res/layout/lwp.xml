@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat n0:orientation="vertical" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="end|center" n0:orientation="horizontal" n0:id="@id/undoRedoGroup" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="40.0dp">
+        <com.vega.ui.AlphaButton n0:id="@id/textUndo" n0:padding="8.0dp" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/mlx" n0:alpha="0.5" n0:layout_marginStart="8.0dp" />
+        <com.vega.ui.AlphaButton n0:id="@id/textRedo" n0:padding="8.0dp" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/mml" n0:alpha="0.5" n0:layout_marginEnd="8.0dp" />
+    </LinearLayout>
+    <com.vega.edit.base.widget.TextPanelCoordinatorLayout n0:layout_gravity="bottom" n0:id="@id/textPanelCoordinatorLayout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout n0:id="@id/appBarLayout" n0:background="@null" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:elevation="0.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.google.android.material.appbar.CollapsingToolbarLayout n0:id="@id/toolBarLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap">
+                <View n0:id="@id/varHeightMaxView" n0:layout_width="match_parent" n0:layout_height="0.0dp" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/cl_panel_text" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <FrameLayout n0:id="@id/panel_input_text_container" n0:background="@drawable/pc5" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                    <com.vega.ui.widget.ExpandEditText n0:textColorHighlight="#33fccf15" n0:textColorHint="#66ffffff" n0:gravity="center_vertical" n0:id="@id/etTextContent" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:maxHeight="95.0dp" n0:minHeight="36.0dp" n0:hint="@string/l8m" n0:maxLength="300" n0:shadowRadius="10.0" n0:inputType="textMultiLine" n0:imeOptions="flagNoExtractUi" n0:paddingStart="12.0dp" n0:paddingEnd="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n0:paddingVertical="8.0dp" style="@style/ug" />
+                </FrameLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_panel_text_bottom" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/panel_input_text_container">
+                    <com.vega.ui.AlphaButton n0:id="@id/btnBack" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/o21" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/tabRv" />
+                    <ImageView n0:id="@id/btnSwitch" n0:visibility="gone" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/qd1" n0:scaleType="center" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" />
+                    <androidx.recyclerview.widget.RecyclerView n0:id="@id/tabRv" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:layout_marginStart="@dimen/cu" n1:layout_constraintEnd_toStartOf="@id/btnOk" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                    <com.vega.lvui.widget.TabIndicator n0:id="@id/tabIndicator" n0:layout_width="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="@id/tabRv" n1:layout_constraintStart_toStartOf="@id/tabRv" style="@style/u_" />
+                    <View n0:id="@id/tabGradientMask" n0:background="@drawable/k8r" n0:layout_width="72.0dp" n0:layout_height="48.0dp" n0:scaleType="center" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/tabRv" />
+                    <com.vega.ui.AlphaButton n0:id="@id/btnOk" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginLeft="@dimen/cu" n0:layout_marginRight="@dimen/cu" n0:src="@drawable/APKTOOL_RENAMED_0x7f081f0b" n0:scaleType="center" n0:layout_marginHorizontal="@dimen/cu" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/tabRv" n1:layout_constraintTop_toTopOf="@id/tabRv" />
+                    <View n0:id="@id/dividerLine" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.vega.ui.widget.DisableScrollViewPager n0:id="@id/viewPager" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/viewPager2" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.DisableTouchConsumeMaskView n0:id="@id/colorPickerMask" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.edit.base.widget.TextPanelCoordinatorLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

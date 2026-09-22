@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="192.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:id="@id/card_image_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:cardBackgroundColor="@android:color/transparent" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp" n1:layout_constraintDimensionRatio="192:256" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_cover" n0:tag="402:64741" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:actualImageScaleType="centerCrop" n1:placeholderImage="@color/kr" />
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/placeholder_loading_anim" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:lottie_loop="true" />
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/pb" n0:ellipsize="end" n0:layout_gravity="start|bottom" n0:id="@id/tv_duration" n0:tag="402:64745" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n0:text="00:45" n0:maxLines="1" n0:shadowColor="#26000000" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="4.0" n0:fontFamily="sans-serif-medium" n0:layout_marginStart="12.0dp" n1:kks="21.0dp" />
+        <FrameLayout n0:layout_gravity="end|bottom" n0:id="@id/fl_add_to_project" n0:tag="402:64746" n0:background="@drawable/fl" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginEnd="48.0dp" n0:clipToOutline="true">
+            <ImageView n0:layout_gravity="center" n0:id="@id/iv_add_to_project" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/m6l" n0:scaleType="centerInside" />
+        </FrameLayout>
+        <FrameLayout n0:layout_gravity="end|bottom" n0:id="@id/fl_download" n0:tag="402:64742" n0:background="@drawable/fl" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginEnd="8.0dp" n0:clipToOutline="true">
+            <ImageView n0:layout_gravity="center" n0:id="@id/iv_download" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/m6m" n0:scaleType="centerInside" />
+        </FrameLayout>
+        <View n0:id="@id/recover_loading_bg" n0:background="#66000000" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/recover_loading" n0:visibility="gone" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="lv_loading_white_new.json" n1:lottie_loop="true" />
+        <com.vega.theme.text.VegaTextView n0:textColor="#ffffff" n0:layout_gravity="center" n0:id="@id/recover_progress" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="48.0dp" n1:k1i="medium" />
+        <com.vega.ui.widget.RoundCornerTextView2 n0:textColor="#ffffff" n0:layout_gravity="start|top" n0:id="@id/tv_placeholder_progress" n0:background="#33000000" n0:paddingLeft="6.0dp" n0:paddingTop="4.0dp" n0:paddingRight="6.0dp" n0:paddingBottom="4.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:paddingHorizontal="6.0dp" n0:paddingVertical="4.0dp" n1:i1="8.0dp" n1:k1i="medium" n1:k1j="body_1" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingBottom="12.5dp" n0:layout_width="wrap_content" n0:layout_height="70.0dp" n0:minWidth="68.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/ivIcon" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="12.5dp" n1:APKTOOL_RENAMED_0x7f040448="0.2" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center|bottom" n0:id="@id/ttvTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:APKTOOL_RENAMED_0x7f040448="0.2" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/selected_line" n0:background="@drawable/lrm" n0:layout_width="18.0dp" n0:layout_height="4.0dp" n0:layout_marginBottom="2.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/mark_view" n0:tag="mark_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:translationY="6.0dp" n4:layout_constraintBottom_toTopOf="@id/ivIcon" n4:layout_constraintEnd_toEndOf="@id/ivIcon" n4:layout_constraintStart_toEndOf="@id/ivIcon" n4:kml="small" n4:kmm="mix"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_red_dot" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:src="@drawable/ohp" n5:layout_constraintStart_toEndOf="@id/ivIcon" n5:layout_constraintTop_toTopOf="@id/ivIcon"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

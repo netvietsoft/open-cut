@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/aiEffectLayout" n0:focusable="true" n0:visibility="visible" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/userGuideContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <androidx.fragment.app.FragmentContainerView n0:layout_gravity="bottom" n0:id="@id/promptEditContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <androidx.fragment.app.FragmentContainerView n0:layout_gravity="bottom" n0:id="@id/intensityEditContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+</FrameLayout>

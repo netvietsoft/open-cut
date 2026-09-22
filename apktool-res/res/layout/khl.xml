@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/out_painting_result_panel_rv" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="match_parent" n0:layout_height="84.0dp" n0:layout_marginTop="16.0dp" n0:paddingHorizontal="12.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="horizontal" n0:id="@id/bottom_layout" n0:paddingTop="8.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="34.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent">
+            <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/result_panel_regenerate" n0:layout_width="wrap_content" n0:layout_height="64.0dp">
+                <com.vega.ui.AlphaButton n0:id="@id/ivIcon" n0:padding="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:src="@drawable/mkb" n2:APKTOOL_RENAMED_0x7f040448="0.2" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <com.vega.ui.TintTextView n0:textSize="11.0sp" n0:textColor="@drawable/l7t" n0:gravity="center|top" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="72.0dp" n0:minWidth="50.0dp" n0:text="@string/nsx" n0:maxLines="2" n0:breakStrategy="balanced" n2:APKTOOL_RENAMED_0x7f040448="0.2" n2:k1i="medium" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/result_panel_reedit" n0:layout_width="wrap_content" n0:layout_height="64.0dp" n0:layout_marginStart="32.0dp">
+                <com.vega.ui.AlphaButton n0:padding="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:src="@drawable/mka" n2:APKTOOL_RENAMED_0x7f040448="0.2" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <com.vega.ui.TintTextView n0:textSize="11.0sp" n0:textColor="@drawable/l7t" n0:gravity="center|top" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="72.0dp" n0:minWidth="50.0dp" n0:text="@string/nsp" n0:maxLines="2" n0:breakStrategy="balanced" n2:APKTOOL_RENAMED_0x7f040448="0.2" n2:k1i="medium" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/result_panel_save" n0:layout_width="wrap_content" n0:layout_height="64.0dp" n0:layout_marginStart="32.0dp">
+                <com.vega.ui.AlphaButton n0:padding="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:src="@drawable/m1q" n2:APKTOOL_RENAMED_0x7f040448="0.2" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <com.vega.ui.TintTextView n0:textSize="11.0sp" n0:textColor="@drawable/l7t" n0:gravity="center|top" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="72.0dp" n0:minWidth="50.0dp" n0:text="@string/nvg" n0:maxLines="2" n0:breakStrategy="balanced" n2:APKTOOL_RENAMED_0x7f040448="0.2" n2:k1i="medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root_container" n0:tag="layout/xt_shape_full_layout2_0" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/full_edit_panel" n0:layout_width="match_parent" n0:layout_height="69.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.colorpick.ColorSelectView n0:id="@id/colorSelectLayout" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

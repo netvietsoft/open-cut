@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/rootView" n0:background="@color/APKTOOL_RENAMED_0x7f06047c" n0:paddingTop="8.0dp" n0:paddingBottom="24.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/flow_export_share" n0:layout_width="match_parent" n0:layout_height="52.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_export_share" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/mp1" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/constraint_export_share_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toEndOf="@id/iv_export_share" n1:layout_constraintTop_toTopOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#fffafbff" n0:id="@id/tv_export_share" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kh4" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_export_share_list" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/exportBtn" n0:background="@drawable/khn" n0:descendantFocusability="blocksDescendants" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="24.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/flow_export_share"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/export_iv" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/oxt" n0:scaleType="centerInside" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/export_tv" n2:layout_constraintHorizontal_chainStyle="packed" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/x3" n0:gravity="center" n0:id="@id/export_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qy-" n0:layout_marginStart="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/export_iv" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

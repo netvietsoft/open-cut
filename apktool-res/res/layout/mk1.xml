@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="68.0dp" n0:layout_height="84.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/presenter_picture_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f0812ba" n0:padding="2.0dp" n0:layout_width="68.0dp" n0:layout_height="68.0dp" n1:actualImageScaleType="centerInside" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:roundAsCircle="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.digitalhuman.customize.view.CustomizedItemStatusView n0:id="@id/customize_status_view" n0:padding="26.5dp" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_margin="4.0dp" n2:layout_constraintBottom_toBottomOf="@id/presenter_picture_view" n2:layout_constraintEnd_toEndOf="@id/presenter_picture_view" n2:layout_constraintStart_toStartOf="@id/presenter_picture_view" n2:layout_constraintTop_toTopOf="@id/presenter_picture_view"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:layout_width="68.0dp" n0:layout_height="68.0dp" n3:layout_constraintBottom_toBottomOf="@id/presenter_picture_view" n3:layout_constraintEnd_toEndOf="@id/presenter_picture_view" n3:layout_constraintStart_toStartOf="@id/presenter_picture_view" n3:layout_constraintTop_toTopOf="@id/presenter_picture_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:id="@id/presenter_loading_view" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n3:lottie_autoPlay="true" n3:lottie_loop="true" />
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:id="@id/presenter_retry_view" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/odn" n0:scaleType="centerCrop" />
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:id="@id/presenter_preview" n0:visibility="gone" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:src="@drawable/ou0" />
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="8.0sp" n0:textStyle="bold" n0:textColor="@color/ml" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tv_left_time" n0:background="@drawable/APKTOOL_RENAMED_0x7f080986" n0:layout_width="wrap_content" n0:layout_height="12.0dp" n0:maxWidth="42.0dp" n0:singleLine="true" n0:paddingStart="3.0dp" n0:paddingEnd="3.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.widget.MarqueeVegaTextView n0:textSize="8.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tv_digital_human_benefit_tag" n0:visibility="gone" n0:fadingEdge="none" n0:layout_width="wrap_content" n0:layout_height="12.0dp" n0:maxWidth="42.0dp" n0:text="@string/p8x" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:paddingStart="3.0dp" n0:paddingEnd="3.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintWidth_max="48.0dp"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="11.0dp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/tv_presenter_name" n0:layout_width="wrap_content" n0:layout_height="14.0dp" n0:layout_marginBottom="3.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

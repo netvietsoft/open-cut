@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/clContainer" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/groupCurveSpeedEdit" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <RelativeLayout n0:id="@id/rlTitleBar" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="9.0dp" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_z" n0:id="@id/duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pcx" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_z" n0:id="@id/tvSrcDuration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginStart="4.0dp" n0:layout_toEndOf="@id/duration" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:id="@id/tvDstDuration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:drawablePadding="4.0dp" n0:layout_centerVertical="true" n0:drawableStart="@drawable/o07" n0:layout_marginStart="4.0dp" n0:layout_toEndOf="@id/tvSrcDuration" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clAddPoint" n0:background="@drawable/APKTOOL_RENAMED_0x7f08054c" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:alpha="0.25" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true">
+                <ImageView n0:id="@id/ivAddPoint" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/obx" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:id="@id/tvManageBeat" n0:paddingTop="3.0dp" n0:paddingBottom="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="126.0dp" n0:text="@string/lhl" n0:paddingStart="3.0dp" n0:paddingEnd="8.0dp" n0:layout_marginStart="2.0dp" n0:paddingVertical="3.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toEndOf="@id/ivAddPoint" n1:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.vega.ui.AlphaButton n0:id="@id/ivPlay" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/llCurve" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:paddingBottom="10.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:maxHeight="240.0dp" n0:animateLayoutChanges="true" n2:layout_constraintBottom_toTopOf="@id/spinnerView" n2:layout_constraintTop_toBottomOf="@id/rlTitleBar"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_gravity="center_horizontal" n0:id="@id/tvCurrentSpeed" n0:layout_width="wrap_content" n0:layout_height="17.0dp" n0:layout_marginTop="3.0dp" n0:minWidth="10.0dp" />
+            <com.vega.edit.video.view.CurveSpeedView n0:layout_gravity="center" n0:id="@id/curveSpeedView" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+        <com.vega.ui.SelectableTextView n0:id="@id/spinnerView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n3:layout_constraintBottom_toTopOf="@id/cbCurveSpeedEdit" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.PanelBottomBar n0:id="@id/cbCurveSpeedEdit" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12059f" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent"
+          xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tvReset" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qex" n0:drawablePadding="@dimen/ai" n0:drawableStart="@drawable/och" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        </com.vega.ui.PanelBottomBar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/groupCurveSpeedList" n0:layout_width="match_parent" n0:layout_height="160.0dp">
+        <com.vega.ui.PanelBottomBar n0:id="@id/cbCurveSpeed" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/lfi" n5:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.MaterialRecycleView n0:id="@id/rvCurveSpeed" n0:layout_width="match_parent" n0:layout_height="wrap_content" n6:layout_constraintBottom_toTopOf="@id/cbCurveSpeed" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.widget.LoadingView n0:id="@id/loading" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n7:layout_constraintBottom_toTopOf="@id/cbCurveSpeed" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n8:layout_constraintBottom_toTopOf="@id/cbCurveSpeed" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="parent" layout="@layout/lwu"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

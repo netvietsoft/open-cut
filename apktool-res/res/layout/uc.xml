@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/smart_cut_icon_ai_voiceover" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qrg" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="@id/smart_cut_ai_voiceover_tip" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/smart_cut_text_ai_voiceover"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="16.0dp" n0:textColor="#ffffff" n0:id="@id/smart_cut_text_ai_voiceover" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/pqb" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="8.0dp" n2:layout_constraintStart_toEndOf="@id/smart_cut_icon_ai_voiceover" n2:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f1304a5"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/business_mark_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" n3:c2="smart_edit_ai_voiceover" n3:APKTOOL_RENAMED_0x7f0404ef="smart_edit_ai_voiceover" n3:layout_constraintBottom_toBottomOf="@id/smart_cut_text_ai_voiceover" n3:layout_constraintStart_toEndOf="@id/smart_cut_text_ai_voiceover" n3:layout_constraintTop_toTopOf="@id/smart_cut_text_ai_voiceover" n3:kml="small" n3:kmm="mix" n3:ktj="aigc"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textColor="#80edf0fd" n0:id="@id/smart_cut_ai_voiceover_tip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:maxWidth="280.0dp" n0:text="@string/pqd" n0:fontFamily="CapCut Sans Text" n4:layout_constraintStart_toStartOf="@id/smart_cut_text_ai_voiceover" n4:layout_constraintTop_toBottomOf="@id/smart_cut_text_ai_voiceover"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <CheckBox n0:layout_gravity="end|center" n0:id="@id/smart_cut_switch_ai_voiceover" n0:background="@android:color/transparent" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="false" n0:button="@drawable/l1c" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" n5:layout_constraintBottom_toBottomOf="@id/smart_cut_ai_voiceover_tip" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="@id/smart_cut_text_ai_voiceover"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/smart_cut_rv_ai_voiceover" n0:visibility="gone" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="8.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/smart_cut_ai_voiceover_tip"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/smart_cut_rv_ai_voiceover_prompt_cl" n0:background="@drawable/lvy" n0:padding="12.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:minHeight="96.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/smart_cut_rv_ai_voiceover"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <com.vega.audio.view.textcreate.TextCreateScrollView n0:id="@id/topic_input" n0:fadingEdge="vertical" n0:fadingEdgeLength="50.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:requiresFadingEdge="vertical" n7:kno="124.0dp">
+            <com.vega.theme.VegaEditText n0:textSize="16.0sp" n0:textColorHint="@color/l_" n0:gravity="start|top" n0:id="@id/fragment_ai_music_home_promote_input_text" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="72.0dp" n0:hint="@string/pqe" n0:overScrollMode="always" n7:k1i="regular" />
+        </com.vega.audio.view.textcreate.TextCreateScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

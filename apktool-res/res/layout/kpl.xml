@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/aiDigitalHumanContainer" n0:background="@drawable/kol" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:layout_marginLeft="4.0dp" n0:layout_marginRight="4.0dp" n0:layout_marginHorizontal="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/imageHumanAvatar" n0:layout_width="24.0dp" n0:layout_height="25.0dp" n0:contentDescription="digital human image" n1:placeholderImage="@drawable/p6m" n1:roundBottomLeft="true" n1:roundBottomRight="false" n1:roundTopLeft="true" n1:roundTopRight="false" n1:roundedCornerRadius="6.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="16.0dp" n0:textColor="#ffffff" n0:gravity="center_vertical" n0:id="@id/textHumanName" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" />
+</LinearLayout>

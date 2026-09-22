@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/search_filter" n0:layout_width="match_parent" n0:layout_height="16.0dp" n1:layout_constraintBottom_toBottomOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:gravity="center" n0:layout_gravity="center" n0:id="@id/result_title" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/qjt" n0:layout_marginStart="18.0dp" n1:layout_constraintLeft_toLeftOf="parent" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@drawable/l7m" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/select_filter_tv" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/l_z" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/p_f" n0:layout_marginEnd="18.0dp" n1:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundConstraintLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f08060e" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:i7="0.0dp" n1:i8="0.0dp" n1:i9="12.0dp" n1:i-="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.edit.view.AIEffectCardNewFrameworkView n0:id="@id/preview_cover_view" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:gm="true" n1:i1="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/preview_vip_tag" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="12.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kml="small" n1:kmm="mix" />
+    <ImageView n0:id="@id/preview_result_tag_icon" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/me6" n0:layout_marginEnd="12.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/preview_usage_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent">
+        <ImageView n0:id="@id/preview_hot_icon" n0:background="@drawable/nip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <TextView n0:textSize="11.0sp" n0:textColor="#ffffff" n0:id="@id/preview_usage_text" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:shadowColor="#99000000" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="2.0" n0:layout_marginStart="4.0dp" />
+    </LinearLayout>
+</com.vega.ui.widget.RoundConstraintLayout>

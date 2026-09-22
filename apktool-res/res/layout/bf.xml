@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_root" n0:background="@color/qj" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/tv_ai_writer_dismiss" n0:layout_width="17.0dp" n0:layout_height="17.0dp" n0:layout_marginTop="14.0dp" n0:src="@drawable/ppb" n0:layout_marginEnd="18.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ai_writer_iv" n0:background="@drawable/mce" n0:layout_width="27.0dp" n0:layout_height="27.0dp" n0:layout_marginTop="44.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="24.0dp" n0:textStyle="bold" n0:textColor="@color/q1" n0:id="@id/ai_writer_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="14.0dp" n0:text="@string/msj" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/ai_writer_iv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_ask_ai_anything" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="17.0dp" n0:layout_marginTop="48.0dp" n0:layout_marginRight="17.0dp" n0:layout_marginHorizontal="17.0dp" n4:layout_constraintTop_toBottomOf="@id/ai_writer_title"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_ai_script" n0:background="@drawable/APKTOOL_RENAMED_0x7f080492" n0:layout_width="21.0dp" n0:layout_height="21.0dp" n0:layout_marginTop="2.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/q1" n0:id="@id/tv_ask_ai_anything" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n-0" n0:layout_marginStart="16.0dp" n4:layout_constraintStart_toEndOf="@id/iv_ai_script" n4:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/q2" n0:id="@id/tv_ask_ai_anything_description" n0:layout_width="295.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/n-i" n0:layout_marginEnd="16.0dp" n4:layout_constraintStart_toStartOf="@id/tv_ask_ai_anything" n4:layout_constraintTop_toBottomOf="@id/tv_ask_ai_anything" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_improve_your_writing" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="17.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="17.0dp" n0:layout_marginHorizontal="17.0dp" n5:layout_constraintTop_toBottomOf="@id/cl_ask_ai_anything"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_ai_tts" n0:background="@drawable/APKTOOL_RENAMED_0x7f080493" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="2.0dp" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/q1" n0:id="@id/tv_improve_your_writing" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n-1" n0:layout_marginStart="16.0dp" n5:layout_constraintStart_toEndOf="@id/iv_ai_tts" n5:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/q2" n0:ellipsize="end" n0:id="@id/tv_improve_your_writing_description" n0:layout_width="295.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/n-j" n0:maxLines="3" n5:layout_constraintStart_toStartOf="@id/tv_improve_your_writing" n5:layout_constraintTop_toBottomOf="@id/tv_improve_your_writing" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/q1" n0:gravity="center" n0:id="@id/tv_try_now" n0:background="@drawable/kma" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="40.0dp" n0:layout_marginBottom="21.0dp" n0:text="@string/mgg" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintTop_toBottomOf="@id/cl_improve_your_writing" n6:k1i="medium"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

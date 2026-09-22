@@ -1,0 +1,1582 @@
+{
+    "name": "es-US",
+    "currency": {
+		"pattern": "#,##0.###",
+        "Standard": "¤{0}",
+        "StandardNoCurrency": "#,##0.00",
+        "compact": {
+            "short": "¤{0}",
+            "shortNoSymbol": "¤ {0}"
+        },
+		"range": {
+            "between": {
+                "short": "¤{0} a {1}"
+            },
+            "approximately": {
+                "short": "~¤{0}"
+            },
+            "atLeast": {
+                "short": "Más de ¤{0}"
+            },
+            "atMost": {
+                "short": "≤¤{0}"
+            }
+        },
+        "currencyList": {
+            "ADP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AED": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AFA": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AMD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "florines de las Antillas Neerlandesas",
+                    "one": "florín de las Antillas Neerlandesas"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AOK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AON": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AOR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ARA": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AZM": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BAD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "takas bangladesíes",
+                    "one": "taka bangladesí"
+                }
+            },
+            "BEC": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BEL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BGL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BIF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BMD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dólares de Bermudas",
+                    "one": "dólar de Bermudas"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BOV": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BRB": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BRC": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BRE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BRN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BRR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "gultrums bultaneses",
+                    "one": "ngultrum butanés"
+                }
+            },
+            "BUK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BYB": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BZD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CHE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CHW": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CLF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CLP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "COU": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CSD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CSK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DDM": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DKK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ECS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ECV": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ESA": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ESB": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "birres",
+                    "one": "birr"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "EUR",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GEK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GHC": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GNS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GQE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GWE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GWP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HRD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "gourdes haitianos",
+                    "one": "gourde haitiano"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IRR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ISK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "JMD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KYD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "one": "tenge kazajo"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kips laosianos",
+                    "one": "kip laosiano"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LTT": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LUC": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LUL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LVR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MAD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MAF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MGF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MKD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MLF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MRU": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MTP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kwachas malauíes",
+                    "one": "kwacha malauí"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MXP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MXV": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MZM": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NIC": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "córdobas nicaragüenses",
+                    "one": "córdoba nicaragüense"
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PAB": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PEI": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PES": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLZ": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RHD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RUB": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SDD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SLL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SOS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SRD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "STN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "THB",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TJR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TMT": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TOP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TPE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TRY": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "UAH": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "UAK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "UGS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "USD": {
+                "symbol": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "UYI": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "UYP": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "UYW": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "VEB": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "VND",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dongs vietnamitas",
+                    "one": "dong vietnamita"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "WST": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "francos CFA de África central",
+                    "one": "franco CFA de África central"
+                }
+            },
+            "XAG": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XBA": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XBB": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XBC": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XBD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XEU": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XFU": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XPD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XPF": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XPT": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XRE": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XTS": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "XXX": {
+                "displayName": {
+                    "one": "(unidad de moneda desconocida)"
+                }
+            },
+            "YDD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "YUD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "YUM": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "YUN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZAL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZAR": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZMW": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kwachas zambianos",
+                    "one": "kwacha zambiano"
+                },
+                "symbol-alt-narrow": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZRN": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZRZ": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZWL": {
+                "symbol": {
+                    "shortUseNoSymbol": 1
+                }
+            }
+        }
+    }
+}

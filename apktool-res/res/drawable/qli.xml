@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <vector android:height="16.0dp" android:width="16.0dp" android:viewportWidth="16.0" android:viewportHeight="16.0">
+            <path android:fillColor="#b2d5e6" android:pathData="M4.195,7.528C3.935,7.789 3.935,8.211 4.195,8.471L9.959,14.236C10.09,14.366 10.301,14.366 10.431,14.236L10.902,13.764C11.032,13.634 11.032,13.423 10.902,13.293L5.609,8L10.902,2.707C11.032,2.577 11.032,2.366 10.902,2.236L10.431,1.764C10.301,1.634 10.09,1.634 9.959,1.764L4.195,7.528Z" android:fillAlpha="0.25" />
+        </vector>
+    </item>
+    <item android:state_enabled="true">
+        <vector android:height="16.0dp" android:width="16.0dp" android:viewportWidth="16.0" android:viewportHeight="16.0">
+            <path android:fillColor="#fafbff" android:pathData="M4.195,7.528C3.935,7.789 3.935,8.211 4.195,8.471L9.959,14.236C10.09,14.366 10.301,14.366 10.431,14.236L10.902,13.764C11.032,13.634 11.032,13.423 10.902,13.293L5.609,8L10.902,2.707C11.032,2.577 11.032,2.366 10.902,2.236L10.431,1.764C10.301,1.634 10.09,1.634 9.959,1.764L4.195,7.528Z" />
+        </vector>
+    </item>
+    <item android:state_pressed="true">
+        <vector android:height="16.0dp" android:width="16.0dp" android:viewportWidth="16.0" android:viewportHeight="16.0">
+            <path android:fillColor="#b2d5e6" android:pathData="M4.195,7.528C3.935,7.789 3.935,8.211 4.195,8.471L9.959,14.236C10.09,14.366 10.301,14.366 10.431,14.236L10.902,13.764C11.032,13.634 11.032,13.423 10.902,13.293L5.609,8L10.902,2.707C11.032,2.577 11.032,2.366 10.902,2.236L10.431,1.764C10.301,1.634 10.09,1.634 9.959,1.764L4.195,7.528Z" android:fillAlpha="0.25" />
+        </vector>
+    </item>
+    <item android:state_pressed="false">
+        <vector android:height="16.0dp" android:width="16.0dp" android:viewportWidth="16.0" android:viewportHeight="16.0">
+            <path android:fillColor="#fafbff" android:pathData="M4.195,7.528C3.935,7.789 3.935,8.211 4.195,8.471L9.959,14.236C10.09,14.366 10.301,14.366 10.431,14.236L10.902,13.764C11.032,13.634 11.032,13.423 10.902,13.293L5.609,8L10.902,2.707C11.032,2.577 11.032,2.366 10.902,2.236L10.431,1.764C10.301,1.634 10.09,1.634 9.959,1.764L4.195,7.528Z" />
+        </vector>
+    </item>
+</selector>

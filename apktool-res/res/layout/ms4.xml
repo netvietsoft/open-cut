@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="1.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/template_image" n0:layout_width="70.0dp" n0:layout_height="70.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:gravity="center" n0:layout_gravity="center_vertical" n0:id="@id/template_info" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/share_btn" n2:layout_constraintHorizontal_weight="1.0" n2:layout_constraintStart_toEndOf="@id/template_image" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textStyle="bold" n0:gravity="center" n0:id="@id/share_btn" n0:layout_width="60.0dp" n0:layout_height="40.0dp" n0:text="@string/t22" n0:layout_marginEnd="20.0dp" n0:layout_alignParentEnd="true" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

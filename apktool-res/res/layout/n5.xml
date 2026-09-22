@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/layoutRoot" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/guideFragment" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <View n0:layout_gravity="bottom" n0:id="@id/bottomPanelStub" n0:background="@color/APKTOOL_RENAMED_0x7f060479" n0:layout_width="match_parent" n0:layout_height="0.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/btnClose" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="44.0dp" n0:src="@drawable/n0u" n0:layout_marginStart="6.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="end" n0:id="@id/btnRight" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="44.0dp" n0:layout_marginEnd="6.0dp" />
+    <com.vega.gallery.ui.HalfScreenGalleryScrollContainer n0:id="@id/halfScreenGalleryScrollContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <include n0:id="@id/categorySelectView" layout="@layout/k83" />
+        <androidx.fragment.app.FragmentContainerView n0:id="@id/galleryFragmentView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.gallery.ui.HalfScreenGalleryScrollContainer>
+    <FrameLayout n0:id="@id/previewContainer" n0:background="@color/APKTOOL_RENAMED_0x7f060533" n0:paddingTop="44.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</FrameLayout>

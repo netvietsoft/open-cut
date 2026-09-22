@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/knt" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/o1o" android:bottom="162.0dp" />
+</layer-list>

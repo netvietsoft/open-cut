@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.property.optional.ui.common.view.PropertyCategoryLayout n0:id="@id/creatives_tabs" n0:layout_width="match_parent" n0:layout_height="56.0dp" n1:layout_constraintTop_toTopOf="parent" n1:tabIndicatorFullWidth="false" n1:tabIndicatorHeight="0.0dp" n1:tabMinWidth="0.0dp" n1:tabMode="scrollable" n1:tabPaddingEnd="8.0dp" n1:tabPaddingStart="0.0dp" n1:tabSelectedTextColor="#090c14" n1:tabTextColor="#b2141d2d"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/property_creatives_header_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/creatives_tabs"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/lng" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.viewpager2.widget.ViewPager2 n0:id="@id/property_creatives_vp" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/property_creatives_header_container"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/property_creatives_login_layout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <FrameLayout n0:layout_gravity="center_vertical" n0:id="@id/login_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

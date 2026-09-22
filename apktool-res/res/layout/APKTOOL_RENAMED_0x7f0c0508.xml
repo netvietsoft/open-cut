@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/commonExportRoot" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.DominantColorBlurBackgroundView n0:id="@id/backgroundView" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kp_="0.0" n1:kqk="#0e0e11"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/fullscreenBackgroundView" n0:background="@color/d" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:alpha="0.0" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.Toolbar n0:id="@id/toolBar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:contentInsetEnd="0.0dp" n3:contentInsetStart="0.0dp" n3:layout_collapseMode="pin" n3:layout_constraintTop_toTopOf="parent" n3:kre="@style/el"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/APKTOOL_RENAMED_0x7f0c0c37" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView n0:id="@id/sv_fragment_common_export_page" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="88.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <include n0:layout_width="match_parent" n0:layout_height="wrap_content" layout="@layout/APKTOOL_RENAMED_0x7f0c0c2e" />
+    </ScrollView>
+    <FrameLayout n0:id="@id/bottomFragmentContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" n5:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <include n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" layout="@layout/k5_"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

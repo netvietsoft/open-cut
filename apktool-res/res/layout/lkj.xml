@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#ccffffff" n0:id="@id/tv_tip_drag_music" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l22" n0:layout_marginStart="20.0dp" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.audio.library.MusicWavePreview n0:id="@id/music_wave_preview" n0:layout_width="match_parent" n0:layout_height="24.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:_7="0.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/music_bg" n0:background="@drawable/p08" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#ccffffff" n0:id="@id/tv_current_position" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n0:layout_marginStart="20.0dp" n4:layout_constraintBottom_toBottomOf="@id/music_bg" n4:layout_constraintStart_toStartOf="@id/music_bg" n4:layout_constraintTop_toTopOf="@id/music_bg"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/music_playhead" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c5b" n0:layout_width="1.5dp" n0:layout_height="30.0dp" n0:layout_marginStart="0.0dp" n5:layout_constraintBottom_toBottomOf="@id/music_wave_preview" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="@id/music_wave_preview"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

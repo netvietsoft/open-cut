@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.sticker.view.gesture.SelectFrameLayout n0:id="@id/watermark_select_frame_layout" n0:tag="select_frame_layout" n0:visibility="invisible" n0:layout_width="110.0dp" n0:layout_height="110.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.edit.base.sticker.view.gesture.NormalButton n0:layout_gravity="start|bottom" n0:id="@id/delete_watermark" n0:background="@android:color/transparent" n0:padding="3.0dp" n0:layout_width="32.0dp" n0:layout_height="33.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081f18" />
+    </com.vega.edit.base.sticker.view.gesture.SelectFrameLayout>
+</FrameLayout>

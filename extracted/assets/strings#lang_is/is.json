@@ -1,0 +1,2409 @@
+{
+    "name": "is",
+    "currency": {
+        "Standard": "{0} ¤",
+        "StandardNoCurrency": "#.##0,00",
+        "compact": {
+            "short": "{0} ¤",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "{0}–{1} ¤"
+			},
+			"approximately": {
+				"short": "≈{0} ¤"
+			},
+			"atLeast": {
+				"short": "{0} ¤+"
+			},
+			"atMost": {
+				"short": "≤{0} ¤"
+			}
+		},
+        "currencyList": {
+            "ADP": {
+                "symbol": {
+                    "value": "ADP"
+                },
+                "displayName": {
+                    "other": "Andorrskur peseti"
+                },
+                "digits": 0
+            },
+            "AED": {
+                "symbol": {
+                    "value": "AED"
+                },
+                "displayName": {
+                    "other": "arabísk dírhöm",
+                    "one": "arabískt dírham"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN"
+                },
+                "displayName": {
+                    "other": "afganar",
+                    "one": "afgani"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL"
+                },
+                "displayName": {
+                    "other": "albönsk lek",
+                    "one": "albanskt lek"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD"
+                },
+                "displayName": {
+                    "other": "armensk drömm",
+                    "one": "armenskt dramm"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG"
+                },
+                "displayName": {
+                    "other": "hollensk Antillugyllini",
+                    "one": "hollenskt Antillugyllini"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA"
+                },
+                "displayName": {
+                    "other": "angólskar kvönsur",
+                    "one": "angólsk kvansa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz"
+                }
+            },
+            "ARA": {
+                "symbol": {
+                    "value": "ARA"
+                },
+                "displayName": {
+                    "other": "Argentine Austral"
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "value": "ARP"
+                },
+                "displayName": {
+                    "other": "Argentískur pesi (1983–1985)"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS"
+                },
+                "displayName": {
+                    "other": "argentínskir pesar",
+                    "one": "argentínskur pesi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "value": "ATS"
+                },
+                "displayName": {
+                    "other": "Austurrískur skildingur"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "AUD"
+                },
+                "displayName": {
+                    "other": "ástralskir dalir",
+                    "one": "ástralskur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "AU$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG"
+                },
+                "displayName": {
+                    "other": "arúbanskar flórínur",
+                    "one": "arúbönsk flórína"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN"
+                },
+                "displayName": {
+                    "other": "asersk manöt",
+                    "one": "aserskt manat"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM"
+                },
+                "displayName": {
+                    "other": "skiptanleg Bosníu og Hersegóvínu-mörk",
+                    "one": "skiptanlegt Bosníu og Hersegóvínu-mark"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM"
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD"
+                },
+                "displayName": {
+                    "other": "barbadoskir dalir",
+                    "one": "barbadoskur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT"
+                },
+                "displayName": {
+                    "other": "bangladesskar tökur",
+                    "one": "bangladessk taka"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF"
+                },
+                "displayName": {
+                    "other": "Belgískur franki"
+                }
+            },
+            "BGL": {
+                "symbol": {
+                    "value": "BGL"
+                },
+                "displayName": {
+                    "other": "Lef"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN"
+                },
+                "displayName": {
+                    "other": "búlgörsk lef",
+                    "one": "búlgarskt lef"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD"
+                },
+                "displayName": {
+                    "other": "bareinskir denarar",
+                    "one": "bareinskur denari"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF"
+                },
+                "displayName": {
+                    "other": "búrúndískir frankar",
+                    "one": "búrúndískur franki"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD"
+                },
+                "displayName": {
+                    "other": "Bermúdadalir",
+                    "one": "Bermúdadalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND"
+                },
+                "displayName": {
+                    "other": "brúneiskir dalir",
+                    "one": "brúneiskur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB"
+                },
+                "displayName": {
+                    "other": "bólivíanar",
+                    "one": "bólivíani"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs"
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "value": "BOP"
+                },
+                "displayName": {
+                    "other": "Bólivískur pesi"
+                }
+            },
+            "BOV": {
+                "symbol": {
+                    "value": "BOV"
+                },
+                "displayName": {
+                    "other": "Bolivian Mvdol"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "BRL"
+                },
+                "displayName": {
+                    "other": "brasilísk ríöl",
+                    "one": "brasilískt ríal"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD"
+                },
+                "displayName": {
+                    "other": "Bahamadalir",
+                    "one": "Bahamadalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN"
+                },
+                "displayName": {
+                    "other": "bútönsk núltrum",
+                    "one": "bútanskt núltrum"
+                }
+            },
+            "BUK": {
+                "symbol": {
+                    "value": "BUK"
+                },
+                "displayName": {
+                    "other": "Búrmverskt kjat"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP"
+                },
+                "displayName": {
+                    "other": "botsvanskar púlur",
+                    "one": "botsvönsk púla"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN"
+                },
+                "displayName": {
+                    "other": "hvítrússneskar rúblur",
+                    "one": "hvítrússnesk rúbla"
+                },
+                "digits": 2
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR"
+                },
+                "displayName": {
+                    "other": "hvítrússneskar rúblur (2000–2016)",
+                    "one": "hvítrússnesk rúbla (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD"
+                },
+                "displayName": {
+                    "other": "belískir dalir",
+                    "one": "belískur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CAD"
+                },
+                "displayName": {
+                    "other": "Kanadadalir",
+                    "one": "Kanadadalur"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF"
+                },
+                "displayName": {
+                    "other": "kongóskir frankar",
+                    "one": "kongóskur franki"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF"
+                },
+                "displayName": {
+                    "other": "svissneskir frankar",
+                    "one": "svissneskur franki"
+                },
+                "digits": 2
+            },
+            "CLF": {
+                "symbol": {
+                    "value": "CLF"
+                },
+                "displayName": {
+                    "other": "Chilean Unidades de Fomento"
+                },
+                "digits": 4
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP"
+                },
+                "displayName": {
+                    "other": "síleskir pesar",
+                    "one": "síleskur pesi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH"
+                },
+                "displayName": {
+                    "other": "kínversk júön (utan heimalands)",
+                    "one": "kínverskt júan (utan heimalands)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "kínversk júön",
+                    "one": "kínverskt júan"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP"
+                },
+                "displayName": {
+                    "other": "kólumbískir pesar",
+                    "one": "kólumbískur pesi"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC"
+                },
+                "displayName": {
+                    "other": "kostarísk kólon",
+                    "one": "kostarískt kólon"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CSK": {
+                "symbol": {
+                    "value": "CSK"
+                },
+                "displayName": {
+                    "other": "Tékknesk króna, eldri"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC"
+                },
+                "displayName": {
+                    "other": "kúbverskir skiptanlegir pesar",
+                    "one": "kúbverskur skiptanlegur pesi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP"
+                },
+                "displayName": {
+                    "other": "kúbverskir pesar",
+                    "one": "kúbverskur pesi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE"
+                },
+                "displayName": {
+                    "other": "grænhöfðeyskir skútar",
+                    "one": "grænhöfðeyskur skúti"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP"
+                },
+                "displayName": {
+                    "other": "Kýpverskt pund"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK"
+                },
+                "displayName": {
+                    "other": "tékkneskar krónur",
+                    "one": "tékknesk króna"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč"
+                }
+            },
+            "DDM": {
+                "symbol": {
+                    "value": "DDM"
+                },
+                "displayName": {
+                    "other": "Austurþýskt mark"
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM"
+                },
+                "displayName": {
+                    "other": "Þýskt mark"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF"
+                },
+                "displayName": {
+                    "other": "djíbútískir frankar",
+                    "one": "djíbútískur franki"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK"
+                },
+                "displayName": {
+                    "other": "danskar krónur",
+                    "one": "dönsk króna"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr."
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP"
+                },
+                "displayName": {
+                    "other": "dóminískir pesar",
+                    "one": "dóminískur pesi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD"
+                },
+                "displayName": {
+                    "other": "alsírskir denarar",
+                    "one": "alsírskur denari"
+                }
+            },
+            "ECS": {
+                "symbol": {
+                    "value": "ECS"
+                },
+                "displayName": {
+                    "other": "Ecuador Sucre"
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "value": "EEK"
+                },
+                "displayName": {
+                    "other": "eistneskar krónur",
+                    "one": "eistnesk króna"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP"
+                },
+                "displayName": {
+                    "other": "egypsk pund",
+                    "one": "egypskt pund"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN"
+                },
+                "displayName": {
+                    "other": "erítreskar nökfur",
+                    "one": "erítresk nakfa"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP"
+                },
+                "displayName": {
+                    "other": "Spænskur peseti"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB"
+                },
+                "displayName": {
+                    "other": "eþíópísk birr",
+                    "one": "eþíópískt birr"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "EUR"
+                },
+                "displayName": {
+                    "other": "evrur",
+                    "one": "evra"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "value": "FIM"
+                },
+                "displayName": {
+                    "other": "Finnskt mark"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD"
+                },
+                "displayName": {
+                    "other": "fídjískir dalir",
+                    "one": "fídjískur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP"
+                },
+                "displayName": {
+                    "other": "falklensk pund",
+                    "one": "falklenskt pund"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF"
+                },
+                "displayName": {
+                    "other": "Franskur franki"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "GBP"
+                },
+                "displayName": {
+                    "other": "sterlingspund"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL"
+                },
+                "displayName": {
+                    "other": "georgískir larar",
+                    "one": "georgískur lari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS"
+                },
+                "displayName": {
+                    "other": "ganverskir sedar",
+                    "one": "ganverskur sedi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP"
+                },
+                "displayName": {
+                    "other": "Gíbraltarspund"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD"
+                },
+                "displayName": {
+                    "other": "gambískir dalasar",
+                    "one": "gambískur dalasi"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF"
+                },
+                "displayName": {
+                    "other": "Gíneufrankar",
+                    "one": "Gíneufranki"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG"
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "value": "GRD"
+                },
+                "displayName": {
+                    "other": "Drakma"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ"
+                },
+                "displayName": {
+                    "other": "gvatemölsk kvesöl",
+                    "one": "gvatemalskt kvesal"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q"
+                }
+            },
+            "GWE": {
+                "symbol": {
+                    "value": "GWE"
+                },
+                "displayName": {
+                    "other": "Portúgalskur, gíneskur skúti"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD"
+                },
+                "displayName": {
+                    "other": "gvæjanskir dalir",
+                    "one": "gvæjanskur dalur"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "Hong Kong-dalir",
+                    "one": "Hong Kong-dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL"
+                },
+                "displayName": {
+                    "other": "hondúrskar lempírur",
+                    "one": "hondúrsk lempíra"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L"
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK"
+                },
+                "displayName": {
+                    "other": "króatískar kúnur",
+                    "one": "króatísk kúna"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn"
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG"
+                },
+                "displayName": {
+                    "other": "haítískir gúrdar",
+                    "one": "haítískur gúrdi"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF"
+                },
+                "displayName": {
+                    "other": "ungverskar fórintur",
+                    "one": "ungversk fórinta"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft"
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR"
+                },
+                "displayName": {
+                    "other": "indónesískar rúpíur",
+                    "one": "indónesísk rúpía"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp"
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "value": "IEP"
+                },
+                "displayName": {
+                    "other": "Írskt pund"
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "value": "ILP"
+                },
+                "displayName": {
+                    "other": "Ísraelskt pund"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "nýir ísraelskir siklar",
+                    "one": "nýr ísraelskur sikill"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "INR"
+                },
+                "displayName": {
+                    "other": "indverskar rúpíur",
+                    "one": "indversk rúpía"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD"
+                },
+                "displayName": {
+                    "other": "írakskir denarar",
+                    "one": "írakskur denari"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR"
+                },
+                "displayName": {
+                    "other": "írönsk ríöl",
+                    "one": "íranskt ríal"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "kr."
+                },
+                "displayName": {
+                    "other": "íslenskar krónur",
+                    "one": "íslensk króna"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr."
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "value": "ITL"
+                },
+                "displayName": {
+                    "other": "Ítölsk líra"
+                },
+                "digits": 0
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD"
+                },
+                "displayName": {
+                    "other": "jamaískir dalir",
+                    "one": "jamaískur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD"
+                },
+                "displayName": {
+                    "other": "jórdanskir denarar",
+                    "one": "jórdanskur denari"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "JP¥"
+                },
+                "displayName": {
+                    "other": "japönsk jen",
+                    "one": "japanskt jen"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES"
+                },
+                "displayName": {
+                    "other": "kenískir skildingar",
+                    "one": "kenískur skildingur"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS"
+                },
+                "displayName": {
+                    "other": "kirgisk som",
+                    "one": "kirgiskt som"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR"
+                },
+                "displayName": {
+                    "other": "kambódísk ríöl",
+                    "one": "kambódískt ríal"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF"
+                },
+                "displayName": {
+                    "other": "kómoreyskir frankar",
+                    "one": "kómoreyskur franki"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF"
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW"
+                },
+                "displayName": {
+                    "other": "norðurkóresk vonn",
+                    "one": "norðurkóreskt vonn"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "KRW"
+                },
+                "displayName": {
+                    "other": "suðurkóresk vonn",
+                    "one": "suðurkóreskt vonn"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD"
+                },
+                "displayName": {
+                    "other": "kúveiskir denarar",
+                    "one": "kúveiskur denari"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD"
+                },
+                "displayName": {
+                    "other": "caymaneyskir dalir",
+                    "one": "caymaneyskur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT"
+                },
+                "displayName": {
+                    "other": "kasöksk tengi",
+                    "one": "kasakst tengi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK"
+                },
+                "displayName": {
+                    "other": "laosk kip",
+                    "one": "laoskt kip"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP"
+                },
+                "displayName": {
+                    "other": "líbönsk pund",
+                    "one": "líbanskt pund"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR"
+                },
+                "displayName": {
+                    "other": "srílanskar rúpíur",
+                    "one": "srílönsk rúpía"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD"
+                },
+                "displayName": {
+                    "other": "líberískir dalir",
+                    "one": "líberískur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL"
+                },
+                "displayName": {
+                    "other": "lesótóskir lótar",
+                    "one": "lesótóskur lóti"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL"
+                },
+                "displayName": {
+                    "other": "litháísk lít",
+                    "one": "litháískt lít"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt"
+                }
+            },
+            "LTT": {
+                "symbol": {
+                    "value": "LTT"
+                },
+                "displayName": {
+                    "other": "Lithuanian Talonas"
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "value": "LUF"
+                },
+                "displayName": {
+                    "other": "Lúxemborgarfranki"
+                },
+                "digits": 0
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL"
+                },
+                "displayName": {
+                    "other": "lettnesk löt",
+                    "one": "lettneskt lat"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls"
+                }
+            },
+            "LVR": {
+                "symbol": {
+                    "value": "LVR"
+                },
+                "displayName": {
+                    "other": "Lettnesk rúbla"
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD"
+                },
+                "displayName": {
+                    "other": "líbískir denarar",
+                    "one": "líbískur denari"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD"
+                },
+                "displayName": {
+                    "other": "marokkósk dírhöm",
+                    "one": "marokkóskt dírham"
+                }
+            },
+            "MAF": {
+                "symbol": {
+                    "value": "MAF"
+                },
+                "displayName": {
+                    "other": "Marokkóskur franki"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL"
+                },
+                "displayName": {
+                    "other": "moldavísk lei",
+                    "one": "moldavískt lei"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA"
+                },
+                "displayName": {
+                    "other": "Madagaskararjarar",
+                    "one": "Madagaskararjari"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar"
+                }
+            },
+            "MGF": {
+                "symbol": {
+                    "value": "MGF"
+                },
+                "displayName": {
+                    "other": "Madagaskur franki"
+                },
+                "digits": 0
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD"
+                },
+                "displayName": {
+                    "other": "makedónskir denarar",
+                    "one": "makedónskur denari"
+                }
+            },
+            "MLF": {
+                "symbol": {
+                    "value": "MLF"
+                },
+                "displayName": {
+                    "other": "Malískur franki"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK"
+                },
+                "displayName": {
+                    "other": "mjanmörsk kjöt",
+                    "one": "mjanmarskt kjat"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K"
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT"
+                },
+                "displayName": {
+                    "other": "mongólskir túríkar",
+                    "one": "mongólskur túríkur"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP"
+                },
+                "displayName": {
+                    "other": "makaóskar patökur",
+                    "one": "makaósk pataka"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO"
+                },
+                "displayName": {
+                    "other": "máritanskar úgíur (1973–2017)",
+                    "one": "máritönsk úgía (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU"
+                },
+                "displayName": {
+                    "other": "máritanskar úgíur",
+                    "one": "máritönsk úgía"
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "value": "MTL"
+                },
+                "displayName": {
+                    "other": "Meltnesk líra"
+                }
+            },
+            "MTP": {
+                "symbol": {
+                    "value": "MTP"
+                },
+                "displayName": {
+                    "other": "Maltneskt pund"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR"
+                },
+                "displayName": {
+                    "other": "máritískar rúpíur",
+                    "one": "máritísk rúpía"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR"
+                },
+                "displayName": {
+                    "other": "maldíveyskar rúpíur",
+                    "one": "maldíveysk rúpía"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK"
+                },
+                "displayName": {
+                    "other": "malavískar kvökur",
+                    "one": "malavísk kvaka"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MXN"
+                },
+                "displayName": {
+                    "other": "mexíkóskir pesar",
+                    "one": "mexíkóskur pesi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MXP": {
+                "symbol": {
+                    "value": "MXP"
+                },
+                "displayName": {
+                    "other": "Mexíkóskur silfurpesi (1861–1992)"
+                }
+            },
+            "MXV": {
+                "symbol": {
+                    "value": "MXV"
+                },
+                "displayName": {
+                    "other": "Mexíkóskur pesi, UDI"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR"
+                },
+                "displayName": {
+                    "other": "malasísk ringit",
+                    "one": "malasískt ringit"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM"
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "value": "MZE"
+                },
+                "displayName": {
+                    "other": "Mósambískur skúti"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN"
+                },
+                "displayName": {
+                    "other": "mósambísk metiköl",
+                    "one": "mósambískt metikal"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD"
+                },
+                "displayName": {
+                    "other": "namibískir dalir",
+                    "one": "namibískur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN"
+                },
+                "displayName": {
+                    "other": "nígerískar nærur",
+                    "one": "nígerísk næra"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIC": {
+                "symbol": {
+                    "value": "NIC"
+                },
+                "displayName": {
+                    "other": "Níkaragskar kordóvur (1988–1991)",
+                    "one": "Níkarögsk kordóva (1988–1991)"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO"
+                },
+                "displayName": {
+                    "other": "níkaragskar kordóvur",
+                    "one": "níkarögsk kordóva"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "value": "NLG"
+                },
+                "displayName": {
+                    "other": "Hollenskt gyllini"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK"
+                },
+                "displayName": {
+                    "other": "norskar krónur",
+                    "one": "norsk króna"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr."
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR"
+                },
+                "displayName": {
+                    "other": "nepalskar rúpíur",
+                    "one": "nepölsk rúpía"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZD"
+                },
+                "displayName": {
+                    "other": "nýsjálenskir dalir",
+                    "one": "nýsjálenskur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR"
+                },
+                "displayName": {
+                    "other": "ómönsk ríöl",
+                    "one": "ómanskt ríal"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB"
+                },
+                "displayName": {
+                    "other": "balbóar",
+                    "one": "balbói"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN"
+                },
+                "displayName": {
+                    "other": "perúsk sól",
+                    "one": "perúskt sól"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK"
+                },
+                "displayName": {
+                    "other": "papúskar kínur",
+                    "one": "papúsk kína"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP"
+                },
+                "displayName": {
+                    "other": "filippseyskir pesar",
+                    "one": "filippseyskur pesi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR"
+                },
+                "displayName": {
+                    "other": "pakistanskar rúpíur",
+                    "one": "pakistönsk rúpía"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN"
+                },
+                "displayName": {
+                    "other": "pólsk slot",
+                    "one": "pólskt slot"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł"
+                }
+            },
+            "PLZ": {
+                "symbol": {
+                    "value": "PLZ"
+                },
+                "displayName": {
+                    "other": "Slot"
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "value": "PTE"
+                },
+                "displayName": {
+                    "other": "Portúgalskur skúti"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG"
+                },
+                "displayName": {
+                    "other": "paragvæsk gvaraní",
+                    "one": "paragvæskt gvaraní"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR"
+                },
+                "displayName": {
+                    "other": "katörsk ríöl",
+                    "one": "katarskt ríal"
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "value": "ROL"
+                },
+                "displayName": {
+                    "other": "Rúmenskt lei (1952–2006)"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON"
+                },
+                "displayName": {
+                    "other": "rúmensk lei",
+                    "one": "rúmenskt lei"
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei"
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD"
+                },
+                "displayName": {
+                    "other": "serbneskir denarar",
+                    "one": "serbneskur denari"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB"
+                },
+                "displayName": {
+                    "other": "rússneskar rúblur",
+                    "one": "rússnesk rúbla"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "value": "RUR"
+                },
+                "displayName": {
+                    "other": "Rússnesk rúbla (1991–1998)"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF"
+                },
+                "displayName": {
+                    "other": "rúandskir frankar",
+                    "one": "rúandskur franki"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF"
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR"
+                },
+                "displayName": {
+                    "other": "sádiarabísk ríöl",
+                    "one": "sádiarabískt ríal"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD"
+                },
+                "displayName": {
+                    "other": "salómonseyskir dalir",
+                    "one": "salómonseyskur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR"
+                },
+                "displayName": {
+                    "other": "Seychellesrúpíur",
+                    "one": "Seychellesrúpía"
+                }
+            },
+            "SDD": {
+                "symbol": {
+                    "value": "SDD"
+                },
+                "displayName": {
+                    "other": "Súdanskur denari"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG"
+                },
+                "displayName": {
+                    "other": "súdönsk pund",
+                    "one": "súdanskt pund"
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "value": "SDP"
+                },
+                "displayName": {
+                    "other": "Súdanskt pund (1957–1998)"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK"
+                },
+                "displayName": {
+                    "other": "sænskar krónur",
+                    "one": "sænsk króna"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr."
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD"
+                },
+                "displayName": {
+                    "other": "singapúrskir dalir",
+                    "one": "singapúrskur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP"
+                },
+                "displayName": {
+                    "other": "helensk pund",
+                    "one": "helenskt pund"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "value": "SIT"
+                },
+                "displayName": {
+                    "other": "Slóvenskur dalur"
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "value": "SKK"
+                },
+                "displayName": {
+                    "other": "Slóvakísk króna"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE"
+                },
+                "displayName": {
+                    "other": "síerraleónskar ljónur",
+                    "one": "síerraleónsk ljóna"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL"
+                },
+                "displayName": {
+                    "other": "síerraleónskar ljónur (1964—2022)",
+                    "one": "síerraleónsk ljóna (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS"
+                },
+                "displayName": {
+                    "other": "sómalískir skildingar",
+                    "one": "sómalískur skildingur"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD"
+                },
+                "displayName": {
+                    "other": "Súrínamdalir",
+                    "one": "Súrínamdalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "value": "SRG"
+                },
+                "displayName": {
+                    "other": "Suriname Guilder"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP"
+                },
+                "displayName": {
+                    "other": "suðursúdönsk pund",
+                    "one": "suðursúdanskt pund"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD"
+                },
+                "displayName": {
+                    "other": "Saó Tóme og Prinsípe-dóbrur (1977–2017)",
+                    "one": "Saó Tóme og Prinsípe-dóbra (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN"
+                },
+                "displayName": {
+                    "other": "Saó Tóme og Prinsípe-dóbrur",
+                    "one": "Saó Tóme og Prinsípe-dóbra"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db"
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "value": "SUR"
+                },
+                "displayName": {
+                    "other": "Soviet Rouble"
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "value": "SVC"
+                },
+                "displayName": {
+                    "other": "El Salvador Colon"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP"
+                },
+                "displayName": {
+                    "other": "sýrlensk pund",
+                    "one": "sýrlenskt pund"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL"
+                },
+                "displayName": {
+                    "other": "svasílenskir lílangenar",
+                    "one": "svasílenskur lílangeni"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "THB"
+                },
+                "displayName": {
+                    "other": "taílensk böt",
+                    "one": "taílenskt bat"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJR": {
+                "symbol": {
+                    "value": "TJR"
+                },
+                "displayName": {
+                    "other": "Tadsjiksk rúbla"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS"
+                },
+                "displayName": {
+                    "other": "tadsjikskir sómónar",
+                    "one": "tadsjikskur sómóni"
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "value": "TMM"
+                },
+                "displayName": {
+                    "other": "Túrkmenskt manat (1993–2009)"
+                },
+                "digits": 0
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT"
+                },
+                "displayName": {
+                    "other": "túrkmensk manöt",
+                    "one": "túrkmenskt manat"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND"
+                },
+                "displayName": {
+                    "other": "túniskir denarar",
+                    "one": "túniskur denari"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP"
+                },
+                "displayName": {
+                    "other": "Tongapöngur",
+                    "one": "Tongapanga"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TPE": {
+                "symbol": {
+                    "value": "TPE"
+                },
+                "displayName": {
+                    "other": "Tímorskur skúti"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL"
+                },
+                "displayName": {
+                    "other": "Tyrknesk líra (1922–2005)"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY"
+                },
+                "displayName": {
+                    "other": "tyrkneskar lírur",
+                    "one": "tyrknesk líra"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD"
+                },
+                "displayName": {
+                    "other": "Trínidad og Tóbagó-dalir",
+                    "one": "Trínidad og Tóbagó-dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "TWD"
+                },
+                "displayName": {
+                    "other": "taívanskir dalir",
+                    "one": "taívanskur dalur"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS"
+                },
+                "displayName": {
+                    "other": "tansanískir skildingar",
+                    "one": "tansanískur skildingur"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH"
+                },
+                "displayName": {
+                    "other": "úkraínskar hrinjur",
+                    "one": "úkraínsk hrinja"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UAK": {
+                "symbol": {
+                    "value": "UAK"
+                },
+                "displayName": {
+                    "other": "Ukrainian Karbovanetz"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX"
+                },
+                "displayName": {
+                    "other": "úgandskir skildingar",
+                    "one": "úgandskur skildingur"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "USD"
+                },
+                "displayName": {
+                    "other": "Bandaríkjadalir",
+                    "one": "Bandaríkjadalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "value": "USN"
+                },
+                "displayName": {
+                    "other": "Bandaríkjadalur (næsta dag)"
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "value": "USS"
+                },
+                "displayName": {
+                    "other": "Bandaríkjadalur (sama dag)"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU"
+                },
+                "displayName": {
+                    "other": "úrúgvæskir pesar",
+                    "one": "úrúgvæskur pesi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS"
+                },
+                "displayName": {
+                    "other": "úsbeksk súm",
+                    "one": "úsbekskt súm"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEB": {
+                "symbol": {
+                    "value": "VEB"
+                },
+                "displayName": {
+                    "other": "Bolívar í Venesúela (1871–2008)"
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF"
+                },
+                "displayName": {
+                    "other": "venesúelskir bólívarar (2008–2018)",
+                    "one": "venesúelskur bólívari (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs"
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES"
+                },
+                "displayName": {
+                    "other": "venesúelskir bólívarar",
+                    "one": "venesúelskur bólívari"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "VND"
+                },
+                "displayName": {
+                    "other": "víetnömsk dong",
+                    "one": "víetnamskt dong"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV"
+                },
+                "displayName": {
+                    "other": "vanúatúsk vatú",
+                    "one": "vanúatúskt vatú"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST"
+                },
+                "displayName": {
+                    "other": "Samóatölur",
+                    "one": "Samóatala"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA"
+                },
+                "displayName": {
+                    "other": "miðafrískir frankar",
+                    "one": "miðafrískur franki"
+                },
+                "digits": 0
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "austurkarabískir dalir",
+                    "one": "austurkarabískur dalur"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR"
+                },
+                "displayName": {
+                    "other": "Sérstök dráttarréttindi"
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "value": "XFO"
+                },
+                "displayName": {
+                    "other": "Franskur gullfranki"
+                }
+            },
+            "XFU": {
+                "symbol": {
+                    "value": "XFU"
+                },
+                "displayName": {
+                    "other": "Franskur franki, UIC"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA"
+                },
+                "displayName": {
+                    "other": "vesturafrískir frankar",
+                    "one": "vesturafrískur franki"
+                },
+                "digits": 0
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF"
+                },
+                "displayName": {
+                    "other": "pólinesískir frankar",
+                    "one": "pólinesískur franki"
+                },
+                "digits": 0
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "¤"
+                },
+                "displayName": {
+                    "other": "(óþekktur gjaldmiðill)",
+                    "one": "(óþekkt mynteining gjaldmiðils)"
+                }
+            },
+            "YDD": {
+                "symbol": {
+                    "value": "YDD"
+                },
+                "displayName": {
+                    "other": "Jemenskur denari"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER"
+                },
+                "displayName": {
+                    "other": "jemensk ríöl",
+                    "one": "jemenskt ríal"
+                },
+                "digits": 0
+            },
+            "YUM": {
+                "symbol": {
+                    "value": "YUM"
+                },
+                "displayName": {
+                    "other": "Júgóslavneskur denari"
+                }
+            },
+            "ZAL": {
+                "symbol": {
+                    "value": "ZAL"
+                },
+                "displayName": {
+                    "other": "Rand (viðskipta)"
+                }
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR"
+                },
+                "displayName": {
+                    "other": "suðurafrísk rönd",
+                    "one": "suðurafrískt rand"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R"
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK"
+                },
+                "displayName": {
+                    "other": "Zambian Kwacha (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW"
+                },
+                "displayName": {
+                    "other": "sambískar kvökur",
+                    "one": "sambísk kvaka"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK"
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD"
+                },
+                "displayName": {
+                    "other": "Simbabveskur dalur"
+                },
+                "digits": 0
+            }
+        }
+    }
+}

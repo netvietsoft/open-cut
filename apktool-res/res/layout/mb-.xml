@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:tag="layout/xt_slider_container_0" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="22.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/textContainer" n0:layout_width="63.0dp" n0:layout_height="16.0dp" n0:layout_marginStart="30.0dp" n1:layout_constraintBottom_toBottomOf="@id/slider" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toLeftOf="@id/slider" n1:layout_constraintTop_toTopOf="@id/slider"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:layout_gravity="center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView n0:textColor="@color/ktx" n0:gravity="center" n0:id="@id/sliderName" n0:layout_width="38.0dp" n0:layout_height="match_parent" n0:maxLines="1" n0:shadowColor="@color/kvf" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="1.5" n1:autoSizeMaxTextSize="11.0dp" n1:autoSizeMinTextSize="6.0dp" n1:bp="1.0dp" n1:autoSizeTextType="uniform" />
+            <TextView n0:textSize="11.0dp" n0:textColor="@color/ktx" n0:id="@id/sliderValue" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:shadowColor="@color/kvf" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="1.5" n0:layout_marginStart="5.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.xt.retouch.baseui.view.SliderBubble n0:id="@id/sliderBubble" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="10.0dp" n2:layout_constraintBottom_toTopOf="@id/slider" n2:layout_constraintLeft_toLeftOf="@id/slider"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/slider" n0:layout_width="225.0dp" n0:layout_height="match_parent" n0:layout_marginStart="30.0dp" n0:layout_marginEnd="43.0dp" n0:elevation="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/textContainer" n3:kko="@color/kta" n3:kkt="@color/ktz" n3:APKTOOL_RENAMED_0x7f0406dd="100" n3:kn4="0" n3:kte="@string/APKTOOL_RENAMED_0x7f123e7c"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

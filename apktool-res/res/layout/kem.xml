@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundConstraintLayout n0:id="@id/card_root" n0:background="@android:color/white" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n1:i1="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/card_cover" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:scaleType="centerCrop" n0:contentDescription="@null" n1:actualImageScaleType="centerCrop" n1:layout_constraintDimensionRatio="16:9" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/card_text_container" n0:padding="12.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/card_cover">
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="#000000" n0:ellipsize="end" n0:id="@id/page_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:maxLines="2" n0:lineHeight="25.0dp" n1:k1i="bold" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#5b616d" n0:ellipsize="end" n0:id="@id/page_subtitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:maxLines="2" n0:lineHeight="24.0dp" n1:k1i="regular" />
+    </LinearLayout>
+</com.vega.ui.widget.RoundConstraintLayout>

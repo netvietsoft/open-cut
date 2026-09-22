@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center_vertical" n0:id="@id/video_time_line" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:text="@string/nvt" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.track.HorizontalScrollContainer n0:id="@id/video_capture_scroll_container" n0:layout_width="match_parent" n0:layout_height="85.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/video_time_line"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.track.TimeRulerScroller n0:id="@id/timeRulerScroller" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent">
+            <com.vega.edit.base.multitrack.TrackFlexibleRuler n0:id="@id/timeRuler" n0:layout_width="match_parent" n0:layout_height="13.0dp" />
+        </com.vega.ui.track.TimeRulerScroller>
+        <View n0:background="#1ae5ecff" n0:layout_width="match_parent" n0:layout_height="60.0dp" n0:layout_marginTop="8.0dp" n2:layout_constraintTop_toBottomOf="@id/timeRulerScroller" />
+        <com.vega.edit.video.view.FrameScroller n0:id="@id/video_capture_frame_scroller" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:splitMotionEvents="false" n2:layout_constraintTop_toBottomOf="@id/timeRulerScroller">
+            <com.vega.edit.video.view.MultiTrackLayout n0:layout_gravity="center_vertical" n0:id="@id/multiTrack" n0:layout_width="wrap_content" n0:layout_height="60.0dp" n2:i1="8.0dp" n2:APKTOOL_RENAMED_0x7f0405b3="false" n2:APKTOOL_RENAMED_0x7f0405ba="false" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        </com.vega.edit.video.view.FrameScroller>
+        <ImageView n0:id="@id/iv_cover_play_head" n0:background="@drawable/p6v" n0:layout_width="6.0dp" n0:layout_height="68.0dp" n0:layout_marginTop="4.0dp" n0:scaleType="centerCrop" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/timeRulerScroller" />
+    </com.vega.ui.track.HorizontalScrollContainer>
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="#66e5e9fa" n0:gravity="center_vertical" n0:id="@id/track_tips" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:text="@string/nvu" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/video_capture_scroll_container" n3:k1i="regular"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/capture_btn" n0:background="@drawable/kuh" n0:paddingLeft="24.0dp" n0:paddingRight="24.0dp" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="4.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f121add" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/ota" n0:layout_marginHorizontal="16.0dp" n0:paddingHorizontal="24.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/track_tips" n4:k1i="medium" n4:k1j="sub_title"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/left_mask" n0:background="@drawable/k7t" n0:layout_width="50.0dp" n0:layout_height="85.0dp" n5:layout_constraintBottom_toBottomOf="@id/video_capture_scroll_container" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="@id/video_capture_scroll_container"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/right_mask" n0:background="@drawable/lq_" n0:layout_width="50.0dp" n0:layout_height="85.0dp" n6:layout_constraintBottom_toBottomOf="@id/video_capture_scroll_container" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="@id/video_capture_scroll_container"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:id="@id/smart_pack_tab_item" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:id="@id/smart_pack_tab" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:layout_marginBottom="15.0dp" n0:layout_marginVertical="15.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f1301dd"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/broll_vip_group" n0:clipChildren="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="@id/smart_pack_tab" n2:layout_constraintStart_toStartOf="@id/smart_pack_tab"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="start|bottom" n0:id="@id/iv_smart_pack_vip_flag" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </FrameLayout>
+    <View n0:id="@id/tab_item_indicator" n0:background="@color/APKTOOL_RENAMED_0x7f0605c8" n0:visibility="invisible" n0:layout_width="30.0dp" n0:layout_height="2.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

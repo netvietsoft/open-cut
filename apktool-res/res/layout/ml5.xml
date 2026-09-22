@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n0:tag="layout/xt_activity_template_debug_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="left" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp">
+        <TextView n0:textColor="#000000" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:text="Default template parameters are shown below" />
+        <TextView n0:textColorHighlight="#cccccc" n0:id="@id/default_template_config" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:textIsSelectable="true" />
+        <TextView n0:textColor="#000000" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:text="Preset parameters are shown below" />
+        <EditText n0:gravity="start" n0:id="@id/template_config" n0:layout_width="match_parent" n0:layout_height="240.0dp" />
+        <Button n0:id="@id/template_clear_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="Clear all preset parameters" />
+        <Button n0:id="@id/template_confirm_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="Confirm current preset parameters" n0:onClick="onClickToLynxDebug" />
+    </LinearLayout>
+</ScrollView>

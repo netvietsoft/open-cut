@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_sticker_bubble_layout_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bubbleBg" n0:background="@drawable/APKTOOL_RENAMED_0x7f0831ed" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/edit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/copy" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <View n0:background="@drawable/r14" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070502" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070502" />
+            <TextView n0:textSize="@dimen/APKTOOL_RENAMED_0x7f070503" n0:textColor="#4a4a4a" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/saj" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/copy" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/toTop" n2:layout_constraintStart_toEndOf="@id/edit" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <View n0:background="@drawable/r13" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070502" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070502" />
+            <TextView n0:textSize="@dimen/APKTOOL_RENAMED_0x7f070503" n0:textColor="#4a4a4a" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t5k" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/toTop" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/toBottom" n3:layout_constraintStart_toEndOf="@id/copy" n3:layout_constraintTop_toTopOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <View n0:background="@drawable/r15" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070502" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070502" />
+            <TextView n0:textSize="@dimen/APKTOOL_RENAMED_0x7f070503" n0:textColor="#4a4a4a" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t6m" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/toBottom" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/toTop" n4:layout_constraintTop_toTopOf="parent"
+          xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <View n0:background="@drawable/r12" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070502" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070502" />
+            <TextView n0:textSize="@dimen/APKTOOL_RENAMED_0x7f070503" n0:textColor="#4a4a4a" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t6l" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/arrow" n0:background="@drawable/APKTOOL_RENAMED_0x7f0831e8" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070500" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704ff" />
+</FrameLayout>

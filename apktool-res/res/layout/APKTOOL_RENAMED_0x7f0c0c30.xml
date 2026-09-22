@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cover_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/image" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginLeft="3.0dp" n0:layout_marginTop="3.0dp" n0:layout_marginRight="3.0dp" n0:layout_marginBottom="3.0dp" n0:layout_marginHorizontal="3.0dp" n0:layout_marginVertical="3.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="0.74:1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:roundedCornerRadius="6.0dp" n1:roundingBorderColor="#00cae0" n1:roundingBorderWidth="1.0dp" />
+        <FrameLayout n0:id="@id/fl_select_index" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="@id/image" n1:layout_constraintTop_toTopOf="@id/image">
+            <com.vega.theme.text.VegaTextView n0:textSize="11.0sp" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/select_index" n0:background="@drawable/k-r" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="23.0dp" n0:includeFontPadding="false" n0:layout_marginStart="23.0dp" n0:layout_marginEnd="6.0dp" />
+        </FrameLayout>
+        <View n0:id="@id/mask_view" n0:background="@drawable/k-q" n0:layout_width="0.0dp" n0:layout_height="20.0dp" n0:layout_marginBottom="3.0dp" n0:layout_marginStart="3.0dp" n0:layout_marginEnd="3.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="@color/knt" n0:id="@id/duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="7.0dp" n0:layout_marginRight="7.0dp" n0:layout_marginBottom="5.0dp" n0:layout_marginHorizontal="7.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:k1j="headline" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/cover_container" n2:layout_constraintEnd_toEndOf="@id/cover_container" n2:layout_constraintStart_toStartOf="@id/cover_container" n2:layout_constraintTop_toTopOf="@id/cover_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:id="@id/presenter_loading_view" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n2:lottie_autoPlay="false" n2:lottie_loop="true" />
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:id="@id/presenter_retry_view" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/mp" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/cover_container" n3:k1i="medium" n3:k1j="body_2"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

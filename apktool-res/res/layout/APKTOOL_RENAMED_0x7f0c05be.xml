@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@android:color/black" n0:paddingTop="14.0dp" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/no_task_tips" n0:layout_width="297.0dp" n0:layout_height="133.0dp" n0:layout_marginTop="250.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/no_task" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:src="@drawable/p2k" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f130534" />
+        <com.vega.theme.text.VegaTextView n0:gravity="center_horizontal" n0:id="@id/no_task_title" n0:layout_width="match_parent" n0:layout_height="21.0dp" n0:layout_marginTop="6.0dp" n0:text="@string/q-c" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/no_task" style="@style/APKTOOL_RENAMED_0x7f130534" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/v0" n0:ellipsize="end" n0:gravity="center_horizontal" n0:layout_width="match_parent" n0:layout_height="46.0dp" n0:layout_marginTop="2.0dp" n0:text="@string/q-b" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/no_task_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/collection_list" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="610.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/recyclerMain" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/collect_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/config_aggregation_publish" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805c3" n0:focusable="true" n0:visibility="invisible" n0:clickable="true" n0:layout_width="328.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="718.0dp" n0:layout_marginBottom="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@drawable/qkg" n0:gravity="center_vertical" n0:id="@id/config_aggregation_publish_text" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:text="@string/q-z" n0:textAllCaps="false" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/root_view" n0:background="@drawable/kvz" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/flModelPoseContainer" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/generate_layout" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/generate_layout" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.subscriptionapi.swidget.BusinessCreditsBar n0:id="@id/credits_bar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toTopOf="@id/btn_generate" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/btn_time" n0:background="@drawable/k1g" n0:visibility="gone" n0:layout_width="78.0dp" n0:layout_height="44.0dp" n2:layout_constraintBottom_toBottomOf="@id/btn_generate" n2:layout_constraintStart_toStartOf="parent">
+            <ImageView n0:id="@id/select" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081fdd" n0:layout_marginStart="10.0dp" n0:layout_marginVertical="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/ml" n0:layout_gravity="center" n0:id="@id/tv_time" n0:layout_width="wrap_content" n0:layout_height="21.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/n8l" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp" n0:layout_marginVertical="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/select" n2:layout_constraintTop_toTopOf="parent" n2:k1i="bold" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/btn_generate" n0:background="@drawable/pi_" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginStart="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/btn_time" n2:layout_goneMarginStart="0.0dp">
+            <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/om_" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#000000" n0:id="@id/tv_generate" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n7s" n0:layout_marginStart="4.0dp" n2:k1i="bold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/pen_bar" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/pen" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f0704ad" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704ad" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/erase" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f0704ad" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704ad" n1:layout_constraintBottom_toBottomOf="@id/erase" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="@id/erase" />
+        <View n0:id="@id/line" n0:background="@color/ktx" n0:layout_width="1.0dp" n0:layout_height="25.0dp" n0:layout_marginLeft="7.0dp" n0:layout_marginRight="7.0dp" n0:alpha="0.2" n1:layout_constraintBottom_toBottomOf="@id/pen" n1:layout_constraintLeft_toRightOf="@id/pen" n1:layout_constraintRight_toLeftOf="@id/erase" n1:layout_constraintTop_toTopOf="@id/pen" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704b0" n0:textColor="@color/kos" n0:id="@id/tv_pen_name" n0:layout_width="wrap_content" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704b1" n2:layout_constraintBottom_toTopOf="@id/select_point" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/pen_bar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/select_point" n0:background="@drawable/r8i" n0:visibility="invisible" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f0704bb" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704bb" n0:layout_marginTop="5.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/tv_pen_name"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</merge>

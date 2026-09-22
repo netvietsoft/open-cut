@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:padding="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_gravity="center" n0:paddingLeft="6.0dp" n0:paddingRight="6.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingHorizontal="6.0dp">
+        <com.vega.theme.text.VegaTextView n0:textColor="#b2141d2d" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/knt" n0:drawableEnd="@drawable/q1_" n1:k1i="medium"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <View n0:layout_gravity="end|top" n0:id="@id/red_dot" n0:background="@drawable/mng" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="2.0dp" n0:translationX="4.0dp" n0:translationY="-2.0dp" />
+    </FrameLayout>
+</FrameLayout>

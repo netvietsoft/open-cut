@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/root_view" n0:background="@drawable/pc5" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/tabRv" n0:background="@drawable/pc5" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:paddingStart="8.0dp" n0:layout_marginEnd="48.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tab_title" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:text="Photo to avatar" n0:layout_marginStart="48.0dp" n0:layout_marginEnd="48.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.lvui.widget.TabIndicator n0:id="@id/tabIndicator" n0:layout_width="0.0dp" n3:layout_constraintBottom_toBottomOf="@id/tabRv" n3:layout_constraintEnd_toEndOf="@id/tabRv" n3:layout_constraintStart_toStartOf="@id/tabRv" style="@style/u_"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <View n0:layout_gravity="end" n0:id="@id/tab_shadow" n0:background="@drawable/APKTOOL_RENAMED_0x7f080985" n0:layout_width="12.0dp" n0:layout_height="48.0dp" n0:layout_marginBottom="38.0dp" n0:layout_marginEnd="48.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_back" n0:padding="14.0dp" n0:layout_width="52.0dp" n0:layout_height="48.0dp" n0:src="@drawable/l5n" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/btn_confirm" n0:padding="14.0dp" n0:visibility="gone" n0:layout_width="52.0dp" n0:layout_height="48.0dp" n0:src="@drawable/mi5" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="parent"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/divider_view" n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:layout_width="0.0dp" n0:layout_height="0.5dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/tabRv"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.VegaCheckBox n0:textSize="12.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/cb_apply_all" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:button="@drawable/qm-" n0:text="@string/rsh" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" n0:layout_marginStart="16.0dp" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/tabRv"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/viewPager2" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="8.0dp" n9:layout_constrainedHeight="true" n9:layout_constraintBottom_toTopOf="@id/btn_next" n9:layout_constraintTop_toBottomOf="@id/cb_apply_all"
+          xmlns:n9="http://schemas.android.com/apk/res-auto" />
+        <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n10:layout_constraintBottom_toBottomOf="parent" n10:layout_constraintEnd_toEndOf="parent" n10:layout_constraintStart_toStartOf="parent" n10:layout_constraintTop_toTopOf="parent" layout="@layout/lwu"
+          xmlns:n10="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.widget.LoadingView n0:id="@id/loadingView" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n11:layout_constraintBottom_toBottomOf="parent" n11:layout_constraintEnd_toEndOf="parent" n11:layout_constraintStart_toStartOf="parent" n11:layout_constraintTop_toTopOf="parent"
+          xmlns:n11="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/btn_next" n0:background="@drawable/lxg" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/qn2" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n12:layout_constraintBottom_toBottomOf="parent" n12:layout_constraintEnd_toEndOf="parent" n12:layout_constraintStart_toStartOf="parent" n12:k1g="display"
+          xmlns:n12="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n0:id="@id/credits_container" n0:background="@drawable/kd7" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="45.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="16.0dp" n13:layout_constraintBottom_toBottomOf="parent" n13:layout_constraintEnd_toEndOf="parent" n13:layout_constraintStart_toStartOf="parent"
+          xmlns:n13="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

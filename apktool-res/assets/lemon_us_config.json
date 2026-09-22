@@ -1,0 +1,133 @@
+{
+  "adn_init_conf": {
+    "723": {
+      "app_id": "1",
+      "app_key": "",
+      "custom_type": "1",
+      "init_class_name": "com.bd.adhubsdk.mediation.adapter.splashsdk.SplashSdkCustomConfig",
+      "splash_class_name": "com.bd.adhubsdk.mediation.adapter.splashsdk.SplashSdkCustomSplash",
+      "unit": "1.0"
+    }
+  },
+  "app_abtest": {
+    "app_ab_params": "{\"mediation_settings\":null,\"config_settings\":null,\"waterfall_settings\":null,\"sdk_libra\":null,\"media_libra\":\"\"}"
+  },
+  "app_common_config": {
+    "event_batch_size": 50,
+    "event_routine_interval": 60000,
+    "event_send_type": 0
+  },
+  "app_log_url": "mediation.pangle.io/service/2/app_log/",
+  "break_request_times": 0,
+  "country": "US",
+  "ecpm_calc_ad_count": 3,
+  "ecpm_expired_time": 432000,
+  "ecpm_precision_level": "0",
+  "etag": "324afafbeb92859ac62055ea61c13c34;1741089292885;1741089292890;71.18.96.10;;0.0000000000;0.0000000000;US;4781756;",
+  "if_enable_label": 0,
+  "max_age": 3600000,
+  "poor_network_config": {
+    "fetch_ad_type": 0
+  },
+  "rit_conf": [
+    {
+      "adn_rit_conf": [
+        {
+          "ad_expired_time": 14400000,
+          "adn_name": "723",
+          "adn_slot_id": "10050002",
+          "custom_adn_name": "Splash_ADN",
+          "customer_adapter_json": "",
+          "exchange_rate": "1",
+          "if_is_ready": 1,
+          "if_pre_request": 0,
+          "if_reuse_ads": 0,
+          "load_sort": -299,
+          "origin_type": 2,
+          "req_bidding_type": 100,
+          "req_biding_type": 100,
+          "show_sort": -299,
+          "slot_cpm": "500.00000",
+          "sub_adtype": 0
+        }
+      ],
+      "bidding_flow_time_metrics_rate": 100,
+      "cache_time_out": 4000,
+      "layer_time_out": 3000,
+      "look_time": 5000,
+      "look_type": 1,
+      "multilevel_after_p": 1,
+      "multilevel_time_out": 2000,
+      "pick_mode": 0,
+      "pre_load_sort_control": 0,
+      "pre_show_sort_control": 0,
+      "refresh_max_retry": 10,
+      "refresh_time": 0,
+      "req_type": 0,
+      "rit_id": 100005311,
+      "rit_type": 3,
+      "time_min": 0,
+      "token_timeout": 100,
+      "total_time_out": 3000,
+      "version": "20241029134544860",
+      "waterfall_abtest": {
+        "experiment_detail_id_timestamp": "1740627269",
+        "if_enable_optimize": 0,
+        "waterfall_ab_params": "{\"mediation_settings\":null,\"config_settings\":null,\"waterfall_settings\":null,\"sdk_libra\":null,\"media_libra\":\"\"}"
+      },
+      "waterfall_id": 54606,
+      "waterfall_timing_mode": 0
+    },
+    {
+      "adn_rit_conf": [
+        {
+          "ad_expired_time": 14400000,
+          "adn_name": "723",
+          "adn_slot_id": "10050002",
+          "custom_adn_name": "Splash_ADN",
+          "customer_adapter_json": "",
+          "exchange_rate": "1",
+          "if_is_ready": 1,
+          "if_pre_request": 0,
+          "if_reuse_ads": 0,
+          "load_sort": -299,
+          "origin_type": 2,
+          "req_bidding_type": 100,
+          "req_biding_type": 100,
+          "show_sort": -299,
+          "slot_cpm": "0.00000",
+          "sub_adtype": 0
+        }
+      ],
+      "bidding_flow_time_metrics_rate": 100,
+      "cache_time_out": 4000,
+      "layer_time_out": 3000,
+      "look_time": 5000,
+      "look_type": 1,
+      "multilevel_after_p": 1,
+      "multilevel_time_out": 2000,
+      "pick_mode": 0,
+      "pre_load_sort_control": 0,
+      "pre_show_sort_control": 0,
+      "refresh_max_retry": 10,
+      "refresh_time": 0,
+      "req_type": 0,
+      "rit_id": 100003205,
+      "rit_type": 3,
+      "time_min": 0,
+      "token_timeout": 100,
+      "total_time_out": 3000,
+      "version": "20241029134600118",
+      "waterfall_abtest": {
+        "experiment_detail_id_timestamp": "1740627269",
+        "if_enable_optimize": 0,
+        "waterfall_ab_params": "{\"mediation_settings\":null,\"config_settings\":null,\"waterfall_settings\":null,\"sdk_libra\":null,\"media_libra\":\"\"}"
+      },
+      "waterfall_id": 53225,
+      "waterfall_timing_mode": 0
+    }
+  ],
+  "state_code": 20000,
+  "transparent_params": "{\"version\":0,\"media_id\":5016358}",
+  "url": "mediation.pangle.io"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/ai_model_choose_panel_mask" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/ai_model_choose_panel_content" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed" n1:layout_constraintVertical_weight="1.0"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/ai_model_choose_panel_content" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/ai_model_choose_panel_mask"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/ai_model_choose_panel_indicator" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/ib" n2:layout_constraintBottom_toTopOf="@id/ai_model_choose_panel_list" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_chainStyle="spread" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/ai_model_choose_panel_list" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="22.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ai_model_choose_panel_indicator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

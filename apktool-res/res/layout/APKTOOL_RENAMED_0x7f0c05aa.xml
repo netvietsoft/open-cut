@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/cloud_space_layout" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.property.optional.ui.common.view.PropertyListEmptyView n0:id="@id/space_list_empty" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/space_loading" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" layout="@layout/ln3"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/space_list_refresh" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="8.0dp" n3:layout_behavior="@string/appbar_scrolling_view_behavior" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.refresh.RefreshHeaderView n0:layout_width="match_parent" n0:layout_height="60.0dp" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/space_list_rv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <androidx.core.widget.NestedScrollView n0:id="@id/no_login_scroll_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:fillViewport="true" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/no_login_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="mp" parent="@style/APKTOOL_RENAMED_0x7f1300c5" />
+    <style name="mw" parent="@style/APKTOOL_RENAMED_0x7f1300c6" />
+    <style name="APKTOOL_RENAMED_0x7f1300c5" parent="@style/n9">
+        <item name="g7">?android:colorError</item>
+    </style>
+    <style name="APKTOOL_RENAMED_0x7f1300c6" parent="@style/n-">
+        <item name="g7">?android:colorError</item>
+    </style>
+    <style name="n_" parent="@style/ot">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="p0" parent="@style/n_" />
+    <style name="df" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="hg" parent="@android:style/Widget">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:stateListAnimator">@animator/n</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="mbridge_transparent_common_activity_style" parent="@style/mbridge_common_activity_style">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="mbridge_transparent_theme" parent="@style/mbridge_reward_theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:paddingBottom="32.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.scroll.HorizontalRecyclerView n0:id="@id/template_music_sv" n0:focusable="true" n0:focusableInTouchMode="true" n0:visibility="gone" n0:clickable="true" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:isScrollContainer="false" />
+    <androidx.recyclerview.widget.RecyclerView n0:orientation="vertical" n0:id="@id/music_list_rv" n0:focusable="true" n0:focusableInTouchMode="true" n0:clickable="true" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="32.0dp" n0:isScrollContainer="false" n0:layout_marginStart="-20.0dp" n0:layout_marginEnd="-15.0dp" n1:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

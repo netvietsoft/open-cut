@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_fragment_image_enhance_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/bottom" n0:background="@color/ku-" n0:layout_width="match_parent" n0:layout_height="18.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/panel" n0:background="@color/ku-" n0:layout_width="match_parent" n0:layout_height="168.0dp" n2:layout_constraintBottom_toTopOf="@id/bottom" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout n0:gravity="center" n0:layout_width="match_parent" n0:layout_height="120.0dp" n2:layout_constraintTop_toBottomOf="@id/top_layout">
+            <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/hd_layout" n0:layout_width="60.0dp" n0:layout_height="wrap_content">
+                <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_hd_option" n0:background="@drawable/APKTOOL_RENAMED_0x7f08310b" n0:padding="15.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/rca" />
+                <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="@color/kqx" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_hd_option" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/sof" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/hd_plus_layout" n0:layout_width="60.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="24.0dp" n0:layout_toEndOf="@id/hd_layout">
+                <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_hd_plus_option" n0:background="@drawable/APKTOOL_RENAMED_0x7f08310b" n0:padding="12.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/rcb" />
+                <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="@color/kqx" n0:gravity="center" n0:id="@id/tv_hd_plus_option" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/soe" />
+            </LinearLayout>
+            <ImageView n0:layout_width="wrap_content" n0:layout_height="12.0dp" n0:layout_marginTop="-4.0dp" n0:src="@drawable/r5m" n0:scaleType="fitEnd" n0:layout_alignTop="@id/hd_layout" n0:layout_marginEnd="-8.0dp" n0:layout_alignEnd="@id/hd_layout" />
+            <ImageView n0:layout_width="wrap_content" n0:layout_height="12.0dp" n0:layout_marginTop="-4.0dp" n0:src="@drawable/r5m" n0:scaleType="fitEnd" n0:layout_alignTop="@id/hd_plus_layout" n0:layout_marginEnd="-8.0dp" n0:layout_alignEnd="@id/hd_plus_layout" />
+        </RelativeLayout>
+        <FrameLayout n0:id="@id/top_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n2:layout_constraintTop_toTopOf="parent">
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end" n0:id="@id/iv_confirm_top" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/r2b" n0:contentDescription="@string/swe" n0:layout_marginEnd="2.0dp" />
+            <View n0:layout_gravity="bottom" n0:background="@color/ksd" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kqx" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/top_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/so4" n0:fontFamily="sans-serif-medium" />
+        </FrameLayout>
+        <FrameLayout n0:id="@id/bottom_layout" n0:layout_width="match_parent" n0:layout_height="44.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kqx" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/bottom_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/so4" n0:fontFamily="sans-serif-medium" />
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="start|center" n0:id="@id/iv_cancel" n0:padding="4.0dp" n0:layout_width="@dimen/gu" n0:layout_height="@dimen/gu" n0:src="@drawable/rpu" n0:layout_marginStart="4.0dp" />
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:id="@id/iv_confirm" n0:padding="4.0dp" n0:layout_width="@dimen/gu" n0:layout_height="@dimen/gu" n0:src="@drawable/APKTOOL_RENAMED_0x7f0831f0" n0:layout_marginEnd="4.0dp" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="60.0dp" n3:layout_constraintBottom_toTopOf="@id/panel"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:gravity="center" n0:id="@id/iv_preview" n0:padding="10.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_margin="8.0dp" n0:src="@drawable/rs5" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

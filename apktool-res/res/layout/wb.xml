@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:id="@id/smart_pack_tab_item" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:id="@id/tab_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:layout_marginBottom="15.0dp" n0:layout_marginVertical="15.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f1301dd"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/tab_indicator" n0:background="#00cae0" n0:visibility="invisible" n0:layout_width="30.0dp" n0:layout_height="2.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

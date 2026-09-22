@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/sg" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="end" n0:id="@id/msg0" n0:layout_width="267.0dp" n0:layout_height="48.0dp" n0:src="@drawable/mne" n0:layout_marginStart="110.0dp" n0:layout_marginEnd="16.0dp" />
+    <ImageView n0:layout_gravity="start" n0:id="@id/msg1" n0:layout_width="match_parent" n0:layout_height="24.0dp" n0:layout_marginTop="16.0dp" n0:src="@drawable/mnf" n0:scaleType="fitXY" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+    <ImageView n0:layout_gravity="start" n0:id="@id/msg2" n0:layout_width="match_parent" n0:layout_height="24.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/mnf" n0:scaleType="fitXY" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+    <ImageView n0:layout_gravity="start" n0:id="@id/msg3" n0:layout_width="171.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/mnf" n0:scaleType="fitXY" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+</LinearLayout>

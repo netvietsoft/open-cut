@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_material_list" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ProgressBar n0:layout_gravity="center_horizontal" n0:id="@id/pb_remote_material_loading" n0:visibility="visible" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginTop="395.0dp" n0:indeterminateDrawable="@drawable/p7e" n0:indeterminateDuration="500" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" style="?android:progressBarStyle"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.ContentTextView n0:textSize="14.0dp" n0:textColor="@color/zc" n0:layout_gravity="center_horizontal" n0:id="@id/tv_remote_material_load_failed" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="400.0dp" n0:text="@string/qnn" n0:drawablePadding="10.0dp" n0:drawableStart="@drawable/odn" n0:layout_marginStart="70.0dp" n0:layout_marginEnd="70.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

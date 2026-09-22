@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clTextWrap" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_above="@id/previewControlBar" n0:layout_below="@id/headRoot"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.cutsameedit.biz.edit.text.gesture.InfoStickerEditorGestureLayout n0:id="@id/frameRoot" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.gesture.EventFunnelLayout n0:id="@id/cutsame_sticker_event_funnel" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.edit.base.sticker.view.InfoStickerEditorView n0:id="@id/cutsameInfoStickerEditorView" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <include layout="@layout/l6a" />
+        </com.vega.edit.base.sticker.view.InfoStickerEditorView>
+    </com.vega.ui.gesture.EventFunnelLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/rootAdjustMoreMode" n0:layout_width="wrap_content" n0:layout_height="match_parent" style="@style/uj"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center" n0:id="@id/ivAdjustMoreDirection" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/o7d" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060466" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tvAdjustMoreMode" n0:focusable="true" n0:layout_width="106.0dp" n0:layout_height="match_parent" n0:layout_margin="1.5dp" n0:minHeight="36.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:paddingStart="6.0dp" n0:paddingEnd="6.0dp" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/ivAdjustMoreModeVip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="4.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kml="small"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</com.vega.lvui.view.MaterialSelectableLayout>

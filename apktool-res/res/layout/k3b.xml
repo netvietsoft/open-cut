@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:background="@drawable/lw0" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/add_close" n0:padding="10.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nll" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/llContent" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="22.0sp" n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="24.0dp" n0:text="@string/lqv" n0:layout_marginHorizontal="24.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#b2141d2d" n0:gravity="start" n0:id="@id/content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="24.0dp" n0:text="@string/lqu" n0:layout_marginHorizontal="24.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/buttonContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/llContent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.StrongButton n0:textSize="16.0sp" n0:textColor="#090c14" n0:id="@id/add_promote" n0:background="@drawable/qls" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/lqq" n0:layout_marginHorizontal="16.0dp" />
+        <com.vega.ui.StrongButton n0:textSize="16.0sp" n0:textColor="#090c14" n0:id="@id/add_template" n0:background="@drawable/qls" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/lqs" n0:layout_marginHorizontal="16.0dp" />
+        <com.vega.ui.StrongButton n0:textSize="16.0sp" n0:textColor="#090c14" n0:id="@id/add_tutorial" n0:background="@drawable/qls" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/lqt" n0:layout_marginHorizontal="16.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/add_share" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/lqr" n0:layout_marginHorizontal="16.0dp" n3:kr3="none" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

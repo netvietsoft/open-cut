@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:background="@drawable/kv5" n0:paddingTop="30.0dp" n0:layout_width="266.0dp" n0:layout_height="wrap_content" n0:paddingStart="30.0dp" n0:paddingEnd="30.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/sg" n0:gravity="center_horizontal" n0:id="@id/clip_confirm_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <com.vega.theme.VegaCheckBox n0:textColor="#8015293c" n0:id="@id/clip_confirm_check_show_next" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:button="@drawable/l3i" n0:text="@string/pzs" n0:paddingStart="6.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/clip_confirm_confirm_btn" n0:background="@drawable/kv6" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="20.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/v0" n0:gravity="center" n0:id="@id/clip_confirm_cancel_btn" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="6.0dp" />
+</LinearLayout>

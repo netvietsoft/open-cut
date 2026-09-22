@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xt.retouch.baseui.view.SquareConstraintLayout n0:tag="layout/xt_text_font_item_layout2_0" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="12.0dp" n0:layout_marginEnd="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.RoundImageView n0:id="@id/textTemplateCover" n0:tag="binding_1" n0:background="@drawable/q8q" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:APKTOOL_RENAMED_0x7f0407f5="4.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:tag="binding_2" n0:background="@drawable/r-j" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:layout_width="15.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/r6-" n0:layout_marginEnd="3.0dp" />
+    </FrameLayout>
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_retry" n0:tag="binding_3" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/q8r" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:tag="binding_4" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f07052e" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f07052e" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f07052d" n0:src="@drawable/APKTOOL_RENAMED_0x7f0831b7" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f07052d" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/loading" n0:tag="binding_5" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:lottie_loop="true"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:tag="binding_6" n0:background="@drawable/rku" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</com.xt.retouch.baseui.view.SquareConstraintLayout>

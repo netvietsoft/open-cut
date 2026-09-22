@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:cardBackgroundColor="#25262b" n1:cardCornerRadius="12.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="8.0dp" n0:paddingEnd="12.0dp">
+            <androidx.cardview.widget.CardView n0:id="@id/ai_effect_icon_card" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n1:cardCornerRadius="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ai_effect_icon" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:placeholderImage="@drawable/APKTOOL_RENAMED_0x7f080451" />
+            </androidx.cardview.widget.CardView>
+            <TextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:ellipsize="end" n0:id="@id/ai_effect_text" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="2" n0:includeFontPadding="false" n0:fontFamily="sans-serif-medium" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/ai_effect_edit_btn" n1:layout_constraintStart_toEndOf="@id/ai_effect_icon_card" n1:layout_constraintTop_toTopOf="parent" />
+            <FrameLayout n0:id="@id/ai_effect_edit_btn" n0:background="@drawable/APKTOOL_RENAMED_0x7f080603" n0:focusable="true" n0:clickable="true" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                <ImageView n0:layout_gravity="center" n0:id="@id/ai_effect_edit_icon" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/me0" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

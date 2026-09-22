@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.tux.input.TuxTextView n0:gravity="center" n0:layout_gravity="center" n0:id="@id/title_tv" n0:focusable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" />
+    <ScrollView n0:scrollbarThumbVertical="@drawable/pu" n0:scrollbarAlwaysDrawVerticalTrack="false" n0:scrollbarStyle="outsideInset" n0:id="@id/scrollview" n0:scrollbars="vertical" n0:fadingEdge="none" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="18.0dp" n0:scrollbarFadeDuration="0" n0:fadeScrollbars="false" n0:overScrollMode="never">
+        <com.bytedance.tux.input.TuxTextView n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/content_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>

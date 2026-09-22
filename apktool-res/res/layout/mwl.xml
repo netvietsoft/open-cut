@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/q75" n0:padding="20.0dp" n0:layout_width="279.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@color/kxw" n0:layout_gravity="center_horizontal" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <TextView n0:textSize="14.0dp" n0:textColor="@color/kwg" n0:layout_gravity="center_horizontal" n0:id="@id/tv_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" />
+    <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/ko7" n0:gravity="center" n0:id="@id/tv_confirm" n0:background="@color/ks3" n0:layout_width="match_parent" n0:layout_height="42.0dp" n0:layout_marginTop="24.0dp" />
+    <TextView n0:textSize="14.0dp" n0:textColor="#b3f6f7fe" n0:gravity="center" n0:id="@id/tv_cancel" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:layout_marginTop="8.0dp" />
+</LinearLayout>

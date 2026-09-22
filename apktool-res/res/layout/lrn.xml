@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/split_play" n0:background="@drawable/mmo" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_marginStart="13.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/_6" n0:id="@id/tv_duration_start" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n0:layout_marginStart="7.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/split_play" n2:layout_constraintTop_toTopOf="parent" style="@style/bu"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/_6" n0:id="@id/tv_duration_end" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="17.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" style="@style/bu"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/split_seek_progress" n0:layout_width="0.0dp" n0:layout_height="30.0dp" n0:paddingStart="5.0dp" n0:paddingEnd="5.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/tv_duration_end" n4:layout_constraintStart_toEndOf="@id/tv_duration_start" n4:layout_constraintTop_toTopOf="parent" n4:ksu="@color/APKTOOL_RENAMED_0x7f060634"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</merge>

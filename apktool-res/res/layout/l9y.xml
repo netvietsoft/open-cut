@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/transcriptEditLayoutEdit" n0:background="@color/APKTOOL_RENAMED_0x7f06001d" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.dock.DockGroupView n0:id="@id/tseBottomDocker" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/dockerMask" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/tseBottomDocker" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/tseBottomDocker"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/partSeekBarContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.adeditor.scriptvideo.widget.PartSeekBar n0:id="@id/partSeekBar" n0:paddingTop="2.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:APKTOOL_RENAMED_0x7f0404a0="true" n3:kko="#4dffffff" n3:kkp="#e8e8e8" n3:kkq="#4dffffff" n3:kkr="8.0dp" n3:kkt="#1a1a1a" n3:kkx="2.0dp" n3:kq_="#8f8f8f" n3:krk="#ffffff" n3:krl="5.0dp" n3:krm="1.5dp" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/scriptParagraphRV" n0:focusableInTouchMode="true" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="70.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/partSeekBarContainer"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.RoundFrameLayout n0:id="@id/tseDockPanelContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:animateLayoutChanges="true" n5:i9="12.0dp" n5:i-="12.0dp" n5:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

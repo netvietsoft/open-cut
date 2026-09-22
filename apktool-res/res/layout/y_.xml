@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="top" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:elevation="100.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/debug_status_bar_view" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/print_info_view" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:text="debug" n0:alpha="0.5" n0:layout_marginEnd="100.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toBottomOf="@id/debug_status_bar_view"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

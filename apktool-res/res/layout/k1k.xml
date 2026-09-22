@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/common_editor_container" n0:fitsSystemWindows="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.commonedit.commoneditor.nativeimpl.CommonEditorTopBar n0:id="@id/top_bar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.commoneditor.nativeimpl.CommonEditorInputView n0:id="@id/input_text" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginHorizontal="12.0dp" n2:layout_constraintBottom_toBottomOf="@id/suggestion_gesture_layout" n2:layout_constraintTop_toBottomOf="@id/top_bar" n2:layout_goneMarginBottom="14.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.commoneditor.nativeimpl.CommonEditorRewriteView n0:id="@id/rewrite_text" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n3:layout_constraintBottom_toBottomOf="@id/input_text" n3:layout_constraintTop_toTopOf="@id/input_text"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.commoneditor.nativeimpl.CommonEditorBottomMaskView n0:id="@id/bottom_mask_view" n0:layout_width="match_parent" n0:layout_height="160.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.commoneditor.nativeimpl.CommonEditorWordCountView n0:id="@id/word_count_view" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:layout_marginEnd="12.0dp" n5:layout_constraintBottom_toTopOf="@id/suggestion_gesture_layout" n5:layout_constraintEnd_toEndOf="@id/suggestion_gesture_layout"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.commoneditor.nativeimpl.CommonEditorGestureLayout n0:id="@id/suggestion_gesture_layout" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="36.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <com.vega.commonedit.commoneditor.nativeimpl.CommonEditorSuggestTool n0:id="@id/suggestion_tool" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="12.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+    </com.vega.commonedit.commoneditor.nativeimpl.CommonEditorGestureLayout>
+    <com.vega.commonedit.commoneditor.nativeimpl.CommonEditorLoadingBar n0:id="@id/loading_bar" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

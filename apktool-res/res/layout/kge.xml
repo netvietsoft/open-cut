@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_elements_panel_container" n0:background="@drawable/APKTOOL_RENAMED_0x7f080619" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:outlineProvider="background" n0:clipToOutline="true">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_top_bar" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="8.0dp" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/ll_tabs" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                <TextView n0:textSize="14.0sp" n0:textStyle="normal" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/tv_tab_trending" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:text="@string/krt" n0:fontFamily="sans-serif-medium" n0:paddingStart="0.0dp" n0:paddingEnd="8.0dp" />
+                <TextView n0:textSize="14.0sp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/tv_tab_my_elements" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:text="My Elements" n0:fontFamily="sans-serif-medium" n0:paddingHorizontal="8.0dp" />
+            </LinearLayout>
+            <FrameLayout n0:id="@id/fl_done_container" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                <ImageView n0:id="@id/iv_right_action_gradient" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/od4" />
+                <ImageView n0:id="@id/iv_done" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/nz-" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView n0:textSize="14.0sp" n0:textColor="#cc00cae0" n0:gravity="center_vertical" n0:id="@id/tv_apply_hint" n0:background="@drawable/kqk" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="50.0dp" n0:text="@string/krs" n0:paddingHorizontal="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/cl_top_bar"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_elements" n0:paddingLeft="12.5dp" n0:paddingRight="12.5dp" n0:paddingBottom="105.0dp" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:paddingHorizontal="12.5dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tv_apply_hint"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/layout_empty_state" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:paddingHorizontal="16.0dp" n4:layout_constraintBottom_toTopOf="@id/cl_bottom_action" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/cl_top_bar" n4:layout_constraintVertical_bias="0.4"
+          xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <TextView n0:textSize="20.0sp" n0:textStyle="bold" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/tv_empty_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Create your own AI elements" />
+            <TextView n0:textSize="14.0sp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/tv_empty_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxWidth="275.0dp" n0:text="Pick up some reference, write down your prompt, and create your own style." />
+            <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/btn_empty_create" n0:background="@drawable/kz4" n0:paddingLeft="20.0dp" n0:paddingRight="20.0dp" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="28.0dp" n0:minWidth="168.0dp" n0:paddingHorizontal="20.0dp">
+                <ImageView n0:id="@id/iv_empty_create_icon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08162e" />
+                <TextView n0:textSize="16.0sp" n0:textStyle="normal" n0:textColor="#ffffff" n0:id="@id/tv_empty_create" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12077e" n0:fontFamily="sans-serif-medium" n0:layout_marginStart="4.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_bottom_action" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto">
+            <View n0:id="@id/v_bottom_gradient_mask" n0:background="@drawable/ksl" n0:layout_width="match_parent" n0:layout_height="29.0dp" n5:layout_constraintBottom_toTopOf="@id/ll_create_style_container" />
+            <LinearLayout n0:orientation="vertical" n0:id="@id/ll_create_style_container" n0:background="#262626" n0:paddingLeft="16.0dp" n0:paddingTop="8.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp" n5:layout_constraintBottom_toBottomOf="parent">
+                <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/btn_create_style" n0:background="@drawable/kz4" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:paddingHorizontal="12.0dp">
+                    <ImageView n0:id="@id/iv_create_style_icon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08162e" />
+                    <TextView n0:textSize="16.0sp" n0:textStyle="normal" n0:textColor="#ffffff" n0:id="@id/tv_create_style" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12077e" n0:fontFamily="sans-serif-medium" n0:layout_marginStart="4.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" layout="@layout/lwu"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.widget.LoadingView n0:id="@id/loadingView" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <RelativeLayout n0:paddingLeft="16.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+      xmlns:n0="http://schemas.android.com/apk/res/android">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/left_icon" n0:paddingRight="6.0dp" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:layout_alignParentTop="true" n0:layout_centerVertical="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#ccffffff" n0:gravity="center_vertical" n0:id="@id/title_text" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:layout_toRightOf="@id/left_icon" n0:layout_alignParentTop="true" n0:layout_centerVertical="true" />
+        <com.vega.theme.VegaCheckBox n0:layout_gravity="end|center" n0:id="@id/menu_switch" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="9.0dp" n0:layout_marginRight="16.0dp" n0:checked="true" n0:button="@drawable/l1z" n0:track="@drawable/qlp" n0:layout_alignParentEnd="true" />
+        <ImageView n0:id="@id/menu_arrow" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:layout_marginRight="12.0dp" n0:src="@drawable/qpv" n0:layout_alignParentTop="true" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="15.0dp" n0:textColor="#ccffffff" n0:gravity="center_vertical" n0:id="@id/subtitle_text" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:layout_marginLeft="100.0dp" n0:layout_marginRight="16.0dp" n0:singleLine="true" />
+    </RelativeLayout>
+</merge>

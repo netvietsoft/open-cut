@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/view_panel_bg" n0:background="@color/_0" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/con_check_progress" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c49" n0:layout_width="160.0dp" n0:layout_height="wrap_content" n0:minHeight="160.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="@id/view_panel_bg" n1:layout_constraintStart_toStartOf="@id/view_panel_bg" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_cancel" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/l46" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/progress_loading" n0:layout_width="38.0dp" n0:layout_height="38.0dp" n0:layout_marginTop="42.0dp" n1:layout_constraintEnd_toEndOf="@id/con_check_progress" n1:layout_constraintStart_toStartOf="@id/con_check_progress" n1:layout_constraintTop_toTopOf="parent" n1:lottie_autoPlay="true" n1:lottie_fileName="lv_loading.json" n1:lottie_loop="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tv_tips" n0:paddingTop="25.0dp" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:lineHeight="20.0dp" n1:layout_constraintTop_toBottomOf="@id/progress_loading" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/ll_check_success" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0818e0" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:paddingTop="24.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/quq" n0:lineHeight="20.0dp" />
+        <com.vega.theme.VegaButton n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/btn_pass_finish" n0:background="@drawable/lxg" n0:layout_width="206.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="98.0dp" n0:text="@string/ls8" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

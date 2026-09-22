@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/template_cover" n0:layout_width="90.0dp" n0:layout_height="90.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="20.0dp" n0:scaleType="centerCrop" n0:layout_centerVertical="true" n0:layout_marginStart="15.0dp" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="vertical" n0:id="@id/template_info_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="16.0dp" n0:layout_centerVertical="true" n0:layout_toEndOf="@id/template_cover">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605f8" n0:ellipsize="end" n0:id="@id/template_name" n0:layout_width="156.0dp" n0:layout_height="wrap_content" n0:singleLine="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605f7" n0:id="@id/template_duration" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605f7" n0:id="@id/template_segment_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605f7" n0:id="@id/template_use_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605f7" n0:id="@id/template_like_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/bound" n0:background="@drawable/krz" n0:visibility="gone" n0:layout_width="38.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="18.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12051f" n0:layout_marginEnd="20.0dp" n0:layout_alignParentEnd="true" />
+    <ImageView n0:id="@id/template_select" n0:padding="5.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/pxx" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    <View n0:id="@id/mask" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="130.0dp" n0:layout_centerVertical="true" />
+</RelativeLayout>

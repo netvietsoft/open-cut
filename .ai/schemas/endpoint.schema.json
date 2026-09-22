@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EndpointSchema",
+  "type": "object",
+  "required": ["endpoint_id", "method", "path", "called_by", "classification", "confidence"],
+  "properties": {
+    "endpoint_id": {"type": "string"},
+    "method": {"type": "string", "enum": ["GET", "POST", "PUT", "DELETE", "PATCH"]},
+    "path": {"type": "string"},
+    "domain": {"type": "string"},
+    "called_by": {"type": "array", "items": {"type": "string"}},
+    "request_schema": {"type": "string"},
+    "response_schema": {"type": "string"},
+    "authentication": {"type": "object"},
+    "classification": {"type": "string", "enum": ["OBSERVED", "INFERRED", "NEW_DESIGN"]},
+    "confidence": {"type": "number"},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_fragment_business_cover_template_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@drawable/q7w" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704ca">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/xt_iv_cover_template_confirm" n0:padding="14.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/rs_" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/xt_iv_cover_template_clear" n0:paddingTop="14.0dp" n0:paddingBottom="14.0dp" n0:visibility="gone" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/rto" n0:paddingStart="16.0dp" n0:paddingEnd="12.0dp" n0:paddingVertical="14.0dp" n2:layout_constraintBottom_toBottomOf="@id/xt_rv_template_title_container" n2:layout_constraintEnd_toStartOf="@id/xt_rv_template_title_container" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/xt_rv_template_title_container"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/xt_rv_template_title_container" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n3:layout_constraintEnd_toStartOf="@id/xt_iv_cover_template_confirm" n3:layout_constraintStart_toEndOf="@id/xt_iv_cover_template_clear" n3:layout_constraintTop_toTopOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/xt_vp_template_category_item_list" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/xt_iv_cover_template_confirm"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n0:id="@id/fail_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintTop_toTopOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto">
+            <com.xt.retouch.baseui.AutoLottieAnimationView n0:layout_gravity="center" n0:id="@id/loading" n0:visibility="gone" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n5:lottie_fileName="xt_lv_loading_white.json" n5:lottie_loop="true" />
+            <TextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_load_failed" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="56.0dp" n0:text="@string/srh" />
+            <LinearLayout n0:layout_gravity="center" n0:orientation="horizontal" n0:id="@id/ll_retry_root" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                <ImageView n0:id="@id/iv_retry" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08360c" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" />
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kqx" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/srg" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

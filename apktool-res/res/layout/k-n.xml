@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="@dimen/rn" n0:textColor="@color/ml" n0:background="@drawable/krd" n0:paddingLeft="@dimen/rc" n0:paddingTop="@dimen/ra" n0:paddingRight="@dimen/rc" n0:paddingBottom="@dimen/ra" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/n6n" n0:layout_marginStart="6.0dp" n0:paddingHorizontal="@dimen/rc" n0:paddingVertical="@dimen/ra" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="@dimen/rn" n0:textColor="@color/ml" n0:background="@drawable/krd" n0:paddingLeft="@dimen/rc" n0:paddingTop="@dimen/ra" n0:paddingRight="@dimen/rc" n0:paddingBottom="@dimen/ra" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/n6k" n0:layout_marginEnd="6.0dp" n0:paddingHorizontal="@dimen/rc" n0:paddingVertical="@dimen/ra" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.palette.view.panel.quality.view.VideoQualitySlideBar n0:id="@id/sb_quality_compare" n0:layout_width="wrap_content" n0:layout_height="match_parent" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

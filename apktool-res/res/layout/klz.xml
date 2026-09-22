@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.StateViewGroupLayoutV3 n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/refreshLayout" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:kx1="true" n1:kyo="false" n1:kyp="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.MaterialRecycleView n0:id="@id/recyclerView" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.scwang.smartrefresh.layout.footer.FalsifyFooter n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.vega.ui.widget.StateViewGroupLayoutV3>

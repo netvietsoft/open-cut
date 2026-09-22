@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edward.agent.view.markdown.ViewSpanContainer n0:id="@id/content_span" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <com.vega.edward.agent.view.LoadingTextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:id="@id/content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:lineSpacingMultiplier="1.34" n0:textIsSelectable="true" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="400" n1:APKTOOL_RENAMED_0x7f0405bb="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </com.vega.edward.agent.view.markdown.ViewSpanContainer>
+</FrameLayout>

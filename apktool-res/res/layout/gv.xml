@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/root" n0:background="@drawable/pj" n0:paddingBottom="30.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/btn_close" n0:background="@drawable/lrp" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="10.0dp" n0:src="@drawable/m5x" n0:layout_marginEnd="10.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/img_auto_backup" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintDimensionRatio="16:9" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:roundBottomEnd="false" n2:kur="false" n2:roundTopLeft="true" n2:roundTopRight="true" n2:roundedCornerRadius="12.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#801c283d" n0:id="@id/tips_auto_backup" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="16.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@color/ml" n0:gravity="center_horizontal" n0:id="@id/header_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/i3" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/img_auto_backup"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/nx" n0:gravity="center_horizontal" n0:id="@id/header_desc" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="24.0dp" n0:text="@string/i2" n0:layout_marginHorizontal="24.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/header_title"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/agree_multi_device_auto_backup" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:paddingStart="21.0dp" n0:paddingEnd="21.0dp" n6:layout_constraintTop_toBottomOf="@id/header_desc"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.VegaCheckBox n0:gravity="center" n0:id="@id/checkBox" n0:paddingLeft="2.0dp" n0:paddingTop="2.0dp" n0:paddingRight="2.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="true" n0:button="@drawable/qlj" n0:paddingHorizontal="2.0dp" n0:paddingVertical="2.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/l_" n0:id="@id/userTermsLink" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/i0" n0:layout_marginStart="6.0dp" />
+    </LinearLayout>
+    <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textColor="@color/l-" n0:id="@id/btn_confirm" n0:background="@drawable/kwq" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/i4" n0:layout_marginHorizontal="16.0dp" n7:layout_constraintTop_toBottomOf="@id/agree_multi_device_auto_backup"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

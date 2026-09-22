@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="16.0dp" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundCornerImageView n0:id="@id/import_reference_video_bg_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f080483" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:_5="8.0dp" n1:klh="8.0dp" n1:ktn="8.0dp" n1:kuf="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.RoundConstraintLayout n0:id="@id/import_reference_video_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:i1="8.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/import_reference_cover_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitCenter" />
+    </com.vega.ui.widget.RoundConstraintLayout>
+    <TextView n0:textSize="10.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/reference_video_label" n0:background="@drawable/APKTOOL_RENAMED_0x7f080484" n0:paddingTop="1.0dp" n0:paddingBottom="1.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:text="@string/oc3" n0:includeFontPadding="false" n0:paddingStart="4.0dp" n0:paddingEnd="4.0dp" n0:layout_marginStart="5.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/reference_video_replace_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/m0b" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/reference_video_replace_text" n4:layout_constraintHorizontal_chainStyle="packed" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/reference_video_replace_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/oc5" n0:layout_marginStart="4.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toEndOf="@id/reference_video_replace_icon" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/import_reference_video_btn" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/m0a" n6:layout_constraintBottom_toTopOf="@id/import_reference_video_content" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" n6:layout_constraintVertical_chainStyle="packed"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/import_reference_video_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n7:layout_constraintBottom_toTopOf="@id/import_reference_video_desc" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/import_reference_video_btn"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="11.0dp" n0:textColor="#66e5e9fa" n0:id="@id/import_reference_video_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/import_reference_video_content"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/import_group" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n9:constraint_referenced_ids="import_reference_video_btn,import_reference_video_content,import_reference_video_desc"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/replace_group" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n10:constraint_referenced_ids="reference_video_label,import_reference_video_layout,reference_video_replace_icon,reference_video_replace_text"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

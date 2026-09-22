@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/select_bottom_layout" n0:background="@color/si" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textColorHint="#80edf0fd" n0:ellipsize="end" n0:gravity="center_vertical" n0:id="@id/prompt_text" n0:background="@drawable/p8m" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:layout_marginTop="16.0dp" n0:singleLine="true" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/ptm" n0:paddingStart="8.0dp" n0:paddingEnd="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+    <FrameLayout n0:id="@id/selectedMediaLy" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="84.0dp">
+        <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center_vertical" n0:id="@id/selectedMediaRv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="1.0dp" />
+    </FrameLayout>
+    <com.vega.ui.MarqueeStrongButton n0:textColor="@color/l-" n0:ellipsize="marquee" n0:layout_gravity="end" n0:id="@id/sb_media_select_done" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginTop="14.0dp" n0:layout_marginBottom="18.0dp" n0:minWidth="70.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:paddingHorizontal="10.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

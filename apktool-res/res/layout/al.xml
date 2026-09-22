@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cover" n0:background="@drawable/APKTOOL_RENAMED_0x7f081279" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:layout_marginTop="4.0dp" n0:scaleType="centerCrop" n0:layout_marginEnd="10.0dp" n0:outlineProvider="background" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/mask" n0:background="@color/s" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/cover" n2:layout_constraintEnd_toEndOf="@id/cover" n2:layout_constraintStart_toStartOf="@id/cover" n2:layout_constraintTop_toTopOf="@id/cover"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/tv_duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="@id/cover" n3:layout_constraintEnd_toEndOf="@id/cover" n3:layout_constraintStart_toStartOf="@id/cover" n3:layout_constraintTop_toTopOf="@id/cover"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:layout_gravity="end|top" n0:id="@id/btn_remove" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f081273" n0:paddingStart="2.0dp" n0:paddingEnd="2.0dp" n0:layout_marginEnd="4.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

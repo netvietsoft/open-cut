@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/flRootContainer" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/llContainer" n0:background="@drawable/te" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="100.0dp" n0:minWidth="160.0dp" n0:layout_marginStart="100.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center_vertical" n0:id="@id/llCustomize" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:minWidth="160.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/p2i" n0:layout_marginStart="12.0dp" />
+            <TextView n0:textSize="12.0sp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/_0" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_vertical" n0:id="@id/llReplace" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:minWidth="160.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/tx" n0:layout_marginStart="12.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l3" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_vertical" n0:id="@id/llCrop" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:minWidth="160.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/tq" n0:layout_marginStart="12.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lr" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_vertical" n0:id="@id/llVolume" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:minWidth="160.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/tz" n0:layout_marginStart="12.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rab" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_vertical" n0:id="@id/llDelete" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:minWidth="160.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/tr" n0:layout_marginStart="12.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ls" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View n0:id="@id/vArrow" n0:background="@drawable/tu" n0:layout_width="20.0dp" n0:layout_height="7.0dp" n0:layout_marginStart="12.0dp" n2:layout_constraintStart_toStartOf="@id/llContainer" n2:layout_constraintTop_toBottomOf="@id/llContainer"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

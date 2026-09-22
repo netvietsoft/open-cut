@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/v_gallery_header_divider" n0:background="@color/APKTOOL_RENAMED_0x7f06063c" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:alpha="0.8" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center_horizontal" n0:id="@id/drag_indicator" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:src="@drawable/mst" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:ellipsize="end" n0:gravity="center" n0:id="@id/add_item_text" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:maxWidth="150.0dp" n0:text="@string/phc" n0:maxLines="1" n0:layout_marginStart="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/drag_indicator" n3:k1i="medium"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/mn" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tv_media_type" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:maxWidth="80.0dp" n0:text="@string/gx" n0:maxLines="1" n0:lineSpacingExtra="5.0dp" n0:layout_marginEnd="4.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/iv_media_type_arrow" n4:layout_constraintTop_toBottomOf="@id/drag_indicator" n4:k1i="medium"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_media_type_arrow" n0:paddingTop="5.0dp" n0:paddingBottom="5.0dp" n0:layout_width="14.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08050e" n0:layout_marginEnd="16.0dp" n0:paddingVertical="5.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toStartOf="@id/tv_recent_project" n5:layout_constraintTop_toBottomOf="@id/drag_indicator"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/mn" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tv_recent_project" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:maxWidth="80.0dp" n0:maxLines="1" n0:lineSpacingExtra="5.0dp" n0:layout_marginEnd="4.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toStartOf="@id/iv_recent_project_arrow" n6:layout_constraintTop_toBottomOf="@id/drag_indicator" n6:k1i="medium"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_recent_project_arrow" n0:paddingTop="5.0dp" n0:paddingBottom="5.0dp" n0:layout_width="14.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08050e" n0:layout_marginEnd="16.0dp" n0:paddingVertical="5.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintTop_toBottomOf="@id/drag_indicator"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

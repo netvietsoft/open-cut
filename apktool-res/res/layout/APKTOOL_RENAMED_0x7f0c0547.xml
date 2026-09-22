@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/feed_player_container" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/guideLineSearch" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_begin="0.0dp" />
+        <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/guideLineBottom" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_end="0.0dp" />
+        <FrameLayout n0:id="@id/feed_play_frame_layout_preview" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/guideLineBottom" n1:layout_constraintTop_toTopOf="@id/guideLineSearch">
+            <com.vega.libmedia.widget.ScaleAdaptFrameLayout n0:gravity="center" n0:layout_gravity="center" n0:id="@id/feed_play_frame_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            <com.vega.libmedia.videoview.TextureVideoView n0:gravity="center" n0:layout_gravity="center" n0:id="@id/feedPrePlaySurface" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        </FrameLayout>
+        <FrameLayout n0:id="@id/feed_preCover_frame_layout_preview" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="@id/guideLineBottom" n1:layout_constraintTop_toTopOf="@id/guideLineSearch">
+            <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/feedPreCover" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitCenter" n1:actualImageScaleType="fitCenter" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.feedx.main.ui.preview.FeedVideoCtrlLayout n0:id="@id/feed_video_ctrl_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

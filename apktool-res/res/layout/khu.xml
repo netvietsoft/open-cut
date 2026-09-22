@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/cl_half_status" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/icon_container" n0:layout_width="42.0dp" n0:layout_height="42.0dp" n0:layout_marginTop="11.0dp" n0:scaleType="centerCrop" n1:layout_constraintBottom_toTopOf="@id/ll_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed" n1:layout_goneMarginStart="6.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/la_loading_view" n0:background="@drawable/kv2" n0:layout_width="42.0dp" n0:layout_height="42.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="ad_script_loading/ai_loop_whiteBackground_b.json" n1:lottie_imageAssetsFolder="ad_script_loading/images" n1:lottie_loop="true" />
+        <ImageView n0:id="@id/iv_loading_failed" n0:visibility="gone" n0:layout_width="42.0dp" n0:layout_height="42.0dp" n0:src="@drawable/mhg" />
+    </FrameLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/ll_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="19.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/icon_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/ww" n0:id="@id/vtv_main_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o6s" n2:k1i="bold" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060204" n0:id="@id/vtv_desc_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/d6" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ww" n0:id="@id/vtv_btn" n0:background="@drawable/kk3" n0:paddingLeft="16.0dp" n0:paddingTop="9.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="9.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="9.0dp" n2:k1i="medium" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

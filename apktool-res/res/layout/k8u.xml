@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/watermark_edit_guide_view" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="108.0dp" n0:layout_height="38.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/editWatermarkBackground" n0:layout_width="100.0dp" n0:layout_height="30.0dp" n0:src="@drawable/n00" n0:scaleType="fitXY" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/editWaterMarkButtonRight" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/poe" n0:layout_marginStart="2.0dp" n2:layout_constraintBottom_toBottomOf="@id/editWatermarkBackground" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/editWatermarkBackground" n2:layout_constraintTop_toTopOf="@id/editWatermarkBackground"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

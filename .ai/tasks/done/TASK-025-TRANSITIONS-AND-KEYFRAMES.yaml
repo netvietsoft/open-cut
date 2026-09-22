@@ -1,0 +1,43 @@
+id: TASK-025-TRANSITIONS-AND-KEYFRAMES
+title: "Triển Khai Hệ Thống Chuyển Cảnh Giữa Các Clip (Transitions Engine '⧎' / '⚡') Và Khung Hình Chính (Keyframe Engine '◆')"
+status: done
+assignee: "Agent 0, Agent 1, Agent 3, Agent 6, Agent 10, Agent 11, Agent 12"
+created_at: "2026-09-18T21:48:00Z"
+completed_at: "2026-09-18T22:45:00Z"
+priority: CRITICAL
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/EffectRegistry.java"
+  - "TASK_LOG.md"
+  - "UPDATETODOS.md"
+  - "PROJECT_MEMORY.md"
+  - "Docs/Changelog/CHANGELOG.md"
+  - ".ai/**"
+requirements:
+  - "1. Nút Chuyển Cảnh '⧎' / '⚡' Trên Timeline: Giữa mỗi 2 clip kế tiếp trên timelineClipsRow, chèn một nút chuyển cảnh bo tròn. Khi bấm vào, mở showTransitionDialog(). [HOÀN THÀNH 100%]"
+  - "2. Hộp Thoại Chuyển Cảnh (Transition Dialog): 10 hiệu ứng chuẩn CapCut (Dissolve, Fade to Black, Flash White, Slide Left, Slide Right, Zoom In, Zoom Out, Light Leak, Glitch RGB, Strobe Beat) + SeekBar thời lượng 0.1s - 2.0s + Áp dụng cho tất cả. [HOÀN THÀNH 100%]"
+  - "3. Nút Khung Hình Chính '◆' Cạnh Nút Play: Bổ sung btnKeyframeToggle trên playerBar hiển thị '+◆' (thêm) hoặc '-◆' (xóa nếu playhead trùng điểm keyframe). [HOÀN THÀNH 100%]"
+  - "4. Dữ Liệu & Hiển Thị Keyframe: Lưu mảng KeyframePoint trên từng clip (timeMs, scale, transX, transY, rotation, opacity), vẽ các chấm đỏ '◆' trên thẻ clip ở đúng mốc thời gian. [HOÀN THÀNH 100%]"
+  - "5. Thuật Toán Nội Suy Tuyến Tính (Lerp): Trong vòng lặp render video / slideshow, tự động tính toán tỷ lệ scale, tọa độ và độ mờ giữa 2 keyframe kẹp giữa. [HOÀN THÀNH 100%]"
+  - "6. Pro Audio Suite: Bộ thanh trượt âm lượng 0% - 1000% Boost, các nút nhanh (Mute, 100%, 200%, 500%, 1000%), thanh trượt Fade In/Out 0.0s - 5.0s. [HOÀN THÀNH 100%]"
+  - "7. Hoạt ảnh clip (Clip Animations In/Out/Combo): 10 hiệu ứng chuyên nghiệp. [HOÀN THÀNH 100%]"
+  - "8. Thao tác clip: Nhân bản (Duplicate) thêm clip vào timeline, Độ mờ (Opacity) 0-100% thời gian thực. [HOÀN THÀNH 100%]"
+  - "9. Cử chỉ timeline: Thu phóng dải filmstrip hai ngón tay (Pinch-to-zoom). [HOÀN THÀNH 100%]"
+  - "10. Kiểm thử và xác thực thực tế 100% trên thiết bị thật Samsung Galaxy A50s (192.168.1.3:36903) và chụp ảnh minh chứng. [HOÀN THÀNH 100%]"
+verification:
+  status: "VERIFIED_PHYSICAL_DEVICE"
+  device: "Samsung Galaxy A50s (SM-A507FN, Android 11, 1080x2340)"
+  test_time: "2026-09-18T22:45:00Z"
+  screenshots:
+    - "design/screenshots/parity100/phase17_keyframe_added.png (Keyframe Engine +◆/-◆ & Red Diamond Marker ◆)"
+    - "design/screenshots/parity100/phase17_volume_suite.png (Pro Audio Suite 0-1000% Boost & Fade In/Out)"
+    - "design/screenshots/parity100/phase17_vol_500.png (Quick Pill 500% Volume Boost applied)"
+    - "design/screenshots/parity100/phase17_subtools_revealed.png (Clip Subtools Ribbon)"
+    - "design/screenshots/parity100/phase17_anim_dialog.png (10 Clip Animations Dialog)"
+    - "design/screenshots/parity100/phase17_anim_applied.png (Clip Animation badge ✨ applied to Clip 1)"
+    - "design/screenshots/parity100/phase17_trans_dialog_verified.png (10 Inter-Clip Transitions Dialog with 0.5s SeekBar & Apply-to-all)"
+    - "design/screenshots/parity100/phase17_trans_applied.png (Transition Button turned to Cyan ⚡ pill & White Flash preview)"
+    - "design/screenshots/parity100/phase17_duplicate_applied.png (Duplicate Clip 3 created, timeline updated to 00:08)"
+    - "design/screenshots/parity100/phase17_opacity_dialog.png (Opacity 0-100% slider dialog)"
+    - "design/screenshots/parity100/phase17_opacity_50.png (Opacity adjusted to 50%)"
+    - "design/screenshots/parity100/phase17_opacity_done.png (Opacity 50% applied to Clip 3)"

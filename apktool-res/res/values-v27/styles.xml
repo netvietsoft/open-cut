@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="qu" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:navigationBarColor">@color/knt</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="bottomSheetStyle">@style/APKTOOL_RENAMED_0x7f130165</item>
+    </style>
+    <style name="de" parent="@style/Theme.AppCompat">
+        <item name="android:windowBackground">@color/APKTOOL_RENAMED_0x7f060534</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/APKTOOL_RENAMED_0x7f060634</item>
+        <item name="android:navigationBarColor">@color/APKTOOL_RENAMED_0x7f060534</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="mbridge_transparent_common_activity_style" parent="@style/mbridge_common_activity_style" />
+</resources>

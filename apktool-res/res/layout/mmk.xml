@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n0:tag="layout/xt_adv_fragment_style_sub_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panel_container" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.xt.retouch.baseui.colorpick.ColorSelectView n0:id="@id/colors_recyclerview" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="59.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/slider_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintTop_toBottomOf="@id/colors_recyclerview"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n0:orientation="vertical" n0:id="@id/label_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="100.0dp" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout n0:orientation="vertical" n0:id="@id/slider_container" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/label_container" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View n0:layout_width="match_parent" n0:layout_height="44.0dp" n3:layout_constraintTop_toBottomOf="@id/slider_layout"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

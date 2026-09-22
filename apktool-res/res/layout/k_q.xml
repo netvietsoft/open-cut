@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_gravity="bottom" n0:id="@id/select_bottom_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/selectedMediaLy" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.edit.aigenerator.v3.page.view.AIPaintingIntroducePanel n0:id="@id/ai_painting_introduce_panel" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="12.0dp" n0:elevation="8.0dp" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintBottom_toTopOf="@id/select_layout_main_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_goneMarginBottom="50.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.widget.RoundConstraintLayout n0:orientation="vertical" n0:id="@id/select_layout_main_content" n0:background="@color/h" n0:paddingBottom="46.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:i9="12.0dp" n2:i-="12.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/selectedMediaRv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintTop_toTopOf="parent" />
+            <com.vega.subscriptionapi.swidget.BusinessCreditsBar n0:id="@id/creditsBar" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintTop_toBottomOf="@id/selectedMediaRv" />
+            <include n0:id="@id/generate_btn_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintTop_toBottomOf="@id/creditsBar" layout="@layout/kga" />
+            <LinearLayout n0:id="@id/vip_layout" n0:paddingBottom="36.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:elevation="3.0dp" n2:layout_constraintBottom_toBottomOf="@id/generate_btn_layout" n2:layout_constraintRight_toRightOf="@id/generate_btn_layout">
+                <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:kml="large" n2:kmm="button" />
+            </LinearLayout>
+        </com.vega.ui.widget.RoundConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:background="@drawable/lgk" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.ui.widget.RoundCornerImageView n0:id="@id/iv_bind_email_pic_head" n0:layout_width="280.0dp" n0:layout_height="158.0dp" n1:klh="16.0dp" n1:kuf="16.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <androidx.appcompat.widget.LinearLayoutCompat n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="24.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginHorizontal="24.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="18.0sp" n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center_horizontal" n0:id="@id/tv_bind_email_title" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="231.0dp" n0:layout_height="wrap_content" n0:paddingHorizontal="8.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#b3141d2d" n0:gravity="center" n0:id="@id/tv_bind_email_content" n0:layout_width="231.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n2:kks="20.0dp"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tv_bind_email_confirm" n0:background="@drawable/krb" n0:layout_width="231.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="12.0dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+    <ImageView n0:layout_gravity="end|top" n0:id="@id/iv_bind_email_close" n0:padding="8.0dp" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/m74" />
+</FrameLayout>

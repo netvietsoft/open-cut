@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/APKTOOL_RENAMED_0x7f0601dc" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/cloud_material_more_rl_rename" n0:paddingTop="5.0dp" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <ImageView n0:id="@id/cloud_material_more_iv_rename" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/p7m" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+        <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:id="@id/cloud_material_more_tv_rename" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qdc" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_toEndOf="@id/cloud_material_more_iv_rename" n1:kr3="none"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <View n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginTop="34.0dp" />
+</LinearLayout>

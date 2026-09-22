@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/quick_action_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="#fafbff" n0:ellipsize="end" n0:id="@id/tv_quick_action_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/k0o" n0:maxLines="1" n0:layout_marginHorizontal="16.0dp" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.view.ScrollListenerView n0:id="@id/qa_scrollview" n0:scrollbars="none" n0:fadingEdge="horizontal" n0:fadingEdgeLength="15.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:fillViewport="true" n0:requiresFadingEdge="horizontal" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp">
+        <LinearLayout n0:orientation="horizontal" n0:id="@id/qa_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </com.vega.edit.view.ScrollListenerView>
+</LinearLayout>

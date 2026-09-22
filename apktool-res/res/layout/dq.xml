@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_gravity="center" n0:background="@drawable/kd_" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="128.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:layout_gravity="center_horizontal" n0:background="@drawable/ir" n0:layout_width="90.0dp" n0:layout_height="90.0dp" n0:layout_marginTop="20.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/smart_pack_progress_lottie"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.AILoadingAnimBallView n0:layout_gravity="center_horizontal" n0:id="@id/smart_pack_progress_lottie" n0:layout_width="42.0dp" n0:layout_height="42.0dp" n0:layout_marginTop="27.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mv" n0:gravity="center" n0:layout_gravity="bottom" n0:id="@id/dialog_digital_human_tts_loading_tips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" n0:text="@string/pe" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:layout_gravity="end|top" n0:id="@id/iv_close" n0:padding="12.0dp" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/l5o" />
+</FrameLayout>

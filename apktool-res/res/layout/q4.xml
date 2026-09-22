@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/informationTitle" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <com.vega.ui.AlphaButton n0:id="@id/ivClose" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/nku" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/APKTOOL_RENAMED_0x7f1204ce" n0:maxEms="9" n0:singleLine="true" n0:includeFontPadding="false" />
+    </FrameLayout>
+    <com.vega.cloud.upload.view.UploadListRecycleView n0:id="@id/mUploadingListView" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never" />
+</LinearLayout>

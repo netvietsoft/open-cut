@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_root" n0:background="@drawable/klt" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/btn_ai_music_close" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="10.0dp" n0:src="@drawable/nko" n0:layout_marginEnd="10.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="22.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/tv_title" n0:paddingTop="24.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/ey" n2:layout_constraintBottom_toTopOf="@id/tv_description" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:k1i="bold"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/tv_description" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginRight="24.0dp" n0:layout_marginBottom="12.0dp" n0:text="@string/ex" n0:layout_marginHorizontal="24.0dp" n3:layout_constraintBottom_toTopOf="@id/tv_intro_words_info" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/er" n4:layout_constraintStart_toStartOf="@id/tv_bridge" n4:layout_constraintTop_toTopOf="@id/tv_intro_words_info"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/tv_intro_words_info" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/es" n5:layout_constraintBottom_toTopOf="@id/tv_verse_words_info" n5:layout_constraintEnd_toEndOf="@id/tv_verse_words_info" n5:layout_constraintStart_toStartOf="@id/tv_verse_words_info"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/tv_verse_words_info" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/ea" n6:layout_constraintBottom_toTopOf="@id/tv_prechorus_words_info" n6:layout_constraintEnd_toEndOf="@id/tv_prechorus_words_info" n6:layout_constraintStart_toStartOf="@id/tv_prechorus_words_info"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ev" n7:layout_constraintStart_toStartOf="@id/tv_bridge" n7:layout_constraintTop_toTopOf="@id/tv_prechorus_words_info"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/tv_prechorus_words_info" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/ew" n8:layout_constraintBottom_toTopOf="@id/tv_chorus_words_info" n8:layout_constraintEnd_toEndOf="@id/tv_chorus_words_info" n8:layout_constraintStart_toStartOf="@id/tv_chorus_words_info"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ez" n9:layout_constraintStart_toStartOf="@id/tv_bridge" n9:layout_constraintTop_toTopOf="@id/tv_verse_words_info"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/tv_chorus_words_info" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/eq" n10:layout_constraintBottom_toTopOf="@id/tv_outro_words_info" n10:layout_constraintEnd_toEndOf="@id/tv_outro_words_info" n10:layout_constraintStart_toStartOf="@id/tv_outro_words_info"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ep" n11:layout_constraintStart_toStartOf="@id/tv_bridge" n11:layout_constraintTop_toTopOf="@id/tv_chorus_words_info"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/en" n12:layout_constraintStart_toStartOf="@id/tv_bridge" n12:layout_constraintTop_toTopOf="@id/tv_outro_words_info"
+      xmlns:n12="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/tv_outro_words_info" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/eo" n13:layout_constraintBottom_toTopOf="@id/tv_bridge_info" n13:layout_constraintEnd_toEndOf="@id/tv_bridge_info" n13:layout_constraintStart_toStartOf="@id/tv_bridge_info"
+      xmlns:n13="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/tv_bridge_info" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="45.0dp" n0:text="@string/eu" n0:layout_marginEnd="19.0dp" n14:layout_constraintBottom_toBottomOf="parent" n14:layout_constraintEnd_toEndOf="parent" n14:layout_constraintStart_toEndOf="@id/tv_bridge"
+      xmlns:n14="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/tv_bridge" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/et" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="19.0dp" n15:layout_constraintEnd_toStartOf="@id/tv_bridge_info" n15:layout_constraintStart_toStartOf="parent" n15:layout_constraintTop_toTopOf="@id/tv_bridge_info" n15:k1i="bold"
+      xmlns:n15="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

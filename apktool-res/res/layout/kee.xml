@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="14.0dp" n0:layout_marginVertical="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_tips_state" n0:layout_width="5.0dp" n0:layout_height="5.0dp" n0:src="@drawable/l_u" n0:scaleType="center" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#b2141d2d" n0:gravity="start|center" n0:id="@id/vtv_tips_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/ocg" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/iv_tips_state" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

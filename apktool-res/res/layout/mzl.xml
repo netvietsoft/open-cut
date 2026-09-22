@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_plugin_alpha_layer_by_immersive_edit_0" n0:background="@color/kuf" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/title_bar" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/kqx" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sbq" n0:fontFamily="sans-serif-medium" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/confirm" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginRight="2.0dp" n0:src="@drawable/r2b" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/divide_line" n0:background="@color/ktk" n0:layout_width="match_parent" n0:layout_height="0.5dp" n2:layout_constraintTop_toBottomOf="@id/title_bar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="92.0dp" n3:layout_constraintTop_toBottomOf="@id/divide_line"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/alpha_slider" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="40.0dp" n0:layout_marginEnd="40.0dp" n3:APKTOOL_RENAMED_0x7f040545="8.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:kko="@color/kvx" n3:kkt="@color/ktz" n3:APKTOOL_RENAMED_0x7f0406dd="100" n3:kn4="0" n3:kn-="16" n3:kar="2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_width="match_parent" n0:layout_height="236.0dp" n0:src="@drawable/jt" n0:scaleType="fitXY" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ai_moment_home2_add_task" n0:background="@drawable/jp" n0:layout_width="match_parent" n0:layout_height="88.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="90.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/aa" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0sp" n0:textStyle="bold" n0:textColor="@color/sg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q7a" n0:layout_marginStart="4.0dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_moment_home2_task_list" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/ai_moment_home2_add_task"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sa" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_moment_home2_task_list_icon" n0:layout_width="144.0dp" n0:layout_height="match_parent" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/j4" n0:layout_marginEnd="8.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView n0:id="@id/ai_moment_play_style_task_card" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n0:outlineSpotShadowColor="@color/_i" n4:cardBackgroundColor="@color/knt" n4:cardCornerRadius="16.0dp" n4:cardElevation="20.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/ai_moment_home2_task_list"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <include n0:id="@id/ai_moment_play_style_task" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" layout="@layout/wo" />
+    </androidx.cardview.widget.CardView>
+    <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="12.0dp" n0:text="@string/si" n0:layout_marginHorizontal="12.0dp" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/ai_moment_play_style_task_card"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

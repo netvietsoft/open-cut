@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_activity_producer_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/title_bar" layout="@layout/APKTOOL_RENAMED_0x7f0c1566" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/bottom_nav_layout" n0:layout_width="match_parent" n0:layout_height="50.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textStyle="bold" n0:textColor="@color/kot" n0:gravity="center" n0:id="@id/tab_category" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:text="@string/t7e" n0:layout_weight="1.0" />
+        <TextView n0:textStyle="bold" n0:textColor="@color/kro" n0:gravity="center" n0:id="@id/tab_pending_item" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:text="@string/t7f" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <View n0:background="@color/kss" n0:layout_width="match_parent" n0:layout_height="0.5dp" n2:layout_constraintBottom_toTopOf="@id/bottom_nav_layout" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toTopOf="@id/bottom_nav_layout" n3:layout_constraintTop_toBottomOf="@id/title_bar"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

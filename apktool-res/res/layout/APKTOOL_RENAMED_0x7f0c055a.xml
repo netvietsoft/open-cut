@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root_container" n0:background="@drawable/k04" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="22.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/all_tools_title_tv" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:text="@string/okw" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/all_tools_close_btn" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/n3w" n0:layout_marginEnd="6.0dp" n2:layout_constraintBottom_toBottomOf="@id/all_tools_title_tv" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/all_tools_title_tv"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.biz.homepage.view.widget.DownEmptyRecyclerView n0:id="@id/all_tools_rv" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="16.0dp" n3:layout_constraintBottom_toTopOf="@id/all_tools_creation_view" n3:layout_constraintTop_toBottomOf="@id/all_tools_title_tv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.main.home.creation.HomeCreationNewProjectView n0:id="@id/all_tools_creation_view" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginHorizontal="16.0dp" n4:cardCornerRadius="12.0dp" n4:cardElevation="0.0dp" n4:APKTOOL_RENAMED_0x7f04056d="8.0dp" n4:APKTOOL_RENAMED_0x7f04056f="20.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:k1r="16.0dp"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

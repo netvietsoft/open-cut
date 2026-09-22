@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/content" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextureView n0:id="@id/feedPrePlaySurface" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/feedPreCover" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitCenter" n1:actualImageScaleType="fitCenter"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_play" n0:visibility="gone" n0:layout_width="66.0dp" n0:layout_height="66.0dp" n0:src="@drawable/pma" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/loading" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n0:scaleType="centerCrop" n0:layout_centerInParent="true" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:lottie_autoPlay="true" n3:lottie_fileName="lv_loading.json" n3:lottie_loop="true"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/gestureContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/bottom_tip_layout" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#b2b8bd" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:text="@string/ll5" />
+    <ImageView n0:background="@drawable/ofp" n0:layout_width="wrap_content" n0:layout_height="15.0dp" n0:layout_marginTop="1.0dp" n0:layout_marginStart="4.0dp" />
+</LinearLayout>

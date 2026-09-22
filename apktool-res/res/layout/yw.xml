@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:background="@color/knt" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="30.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/rcp" n0:layout_marginHorizontal="30.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/guide_message" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/q13" n0:layout_marginHorizontal="30.0dp" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/confirm_relate_course" n0:background="@drawable/qpm" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/ldk" n0:layout_marginHorizontal="30.0dp" n1:kr3="none"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/cancel" n0:background="@drawable/qps" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="@dimen/pz" n0:layout_marginRight="30.0dp" n0:layout_marginBottom="@dimen/py" n0:text="@string/ljw" n0:layout_marginHorizontal="30.0dp" n2:kr3="none"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

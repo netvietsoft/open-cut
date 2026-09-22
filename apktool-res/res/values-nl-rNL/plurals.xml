@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">Kan %d item niet uploaden. AutoCut gaat verder.</item>
+        <item quantity="other">Kan %d items niet uploaden. AutoCut gaat verder.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">Bijlage: %d bestand</item>
+        <item quantity="other">Bijlage: %d bestanden</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">%1$d credit nodig.</item>
+        <item quantity="other">%1$d credits nodig.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">Je hebt nog %1$d credit.</item>
+        <item quantity="other">Je hebt nog %1$d credits.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">Je gratis credits worden in mindering gebracht. Nog %d credit nodig.</item>
+        <item quantity="other">Je gratis credits worden in mindering gebracht. Nog %d credits nodig.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">%1$d credit nodig.</item>
+        <item quantity="other">%1$d credits nodig.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">Je hebt nog %1$d credit. Koop credits om door te gaan.</item>
+        <item quantity="other">Je hebt nog %1$d credits. Koop credits om door te gaan.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">%1$d credit nodig.</item>
+        <item quantity="other">%1$d credits nodig.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">Je hebt nog %1$d credit. Upgrade om credits te krijgen.</item>
+        <item quantity="other">Je hebt nog %1$d credits. Upgrade om credits te krijgen.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">Er wordt %d credit verbruikt</item>
+        <item quantity="other">Er worden %d credits verbruikt</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">Je gratis credits worden in mindering gebracht. Nog %d credit nodig.</item>
+        <item quantity="other">Je gratis credits worden in mindering gebracht. Nog %d credits nodig.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">%d sjabloon aanbevolen</item>
+        <item quantity="other">%d sjablonen aanbevolen</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">%d video gegenereerd</item>
+        <item quantity="other">"%d video's gegenereerd"</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">Je kunt automatische ondertitels en automatische songtekst %d keer per maand gratis gebruiken als je bent ingelogd. De gratis gebruiken wordt aan het begin van elke maand weer aangevuld. Er wordt telkens 1 gebruik in mindering gebracht.</item>
+        <item quantity="other">Je kunt automatische ondertitels en automatische songtekst %d keer per maand gratis gebruiken als je bent ingelogd. De gratis gebruiken wordt aan het begin van elke maand weer aangevuld. Er wordt telkens 1 gebruik in mindering gebracht.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%d gebruik/maand</item>
+        <item quantity="other">%d gebruiken/maand</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">%d woord verwijderen</item>
+        <item quantity="other">%d woorden verwijderen</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%d markering</item>
+        <item quantity="other">%d markeringen</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">%d stopwoord gevonden</item>
+        <item quantity="other">%d stopwoorden gevonden</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">Selecteer maximaal tot %d item</item>
+        <item quantity="other">Selecteer maximaal tot %d items</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">Geschatte wachttijd in de wachtrij: %d s</item>
+        <item quantity="other">Geschatte wachttijd in de wachtrij: %d s</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">Nog ongeveer %d uur</item>
+        <item quantity="other">Nog ongeveer %d uur</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">Nog ongeveer %d min.</item>
+        <item quantity="other">Nog ongeveer %d min.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">Nog ongeveer %d s</item>
+        <item quantity="other">Nog ongeveer %d s</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">Audioresultaat (%d)</item>
+        <item quantity="other">Audioresultaten (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">Bestandsresultaat (%d)</item>
+        <item quantity="other">Bestandsresultaten (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">Generatieresultaat (%d)</item>
+        <item quantity="other">Generatieresultaten (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">Bijlage: %d afbeelding</item>
+        <item quantity="other">Bijlage: %d afbeeldingen</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">Bijlage: %d video</item>
+        <item quantity="other">"Bijlage: %d video's"</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">Afbeeldingsresultaat (%d)</item>
+        <item quantity="other">Afbeeldingsresultaten (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">Videoresultaat (%d)</item>
+        <item quantity="other">Videoresultaten (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">%1$d AI-teksteffect toepassen... %2$d%%</item>
+        <item quantity="other">%1$d AI-teksteffecten toepassen... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">%d asset toepassen op alle clips</item>
+        <item quantity="other">%d assets toepassen op alle clips</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">%d asset geselecteerd</item>
+        <item quantity="other">%d assets geselecteerd</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">%d dag Ultra</item>
+        <item quantity="other">%d dagen Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d teken</item>
+        <item quantity="other">%d tekens</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">Selecteer maximaal %d teken</item>
+        <item quantity="other">Selecteer maximaal %d tekens</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">%d clip is niet gelicentieerd voor commercieel gebruik</item>
+        <item quantity="other">%d clips zijn niet gelicentieerd voor commercieel gebruik</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">%d lettertype is niet gelicentieerd voor commercieel gebruik</item>
+        <item quantity="other">%d lettertypen zijn niet gelicentieerd voor commercieel gebruik</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">%d geluid is niet gelicentieerd voor commercieel gebruik</item>
+        <item quantity="other">%d geluiden zijn niet gelicentieerd voor commercieel gebruik</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">%d clip is niet gelicentieerd voor commercieel gebruik en kan niet worden vervangen</item>
+        <item quantity="other">%d clips zijn niet gelicentieerd voor commercieel gebruik en kunnen niet worden vervangen</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">%d lettertype is niet gelicentieerd voor commercieel gebruik en kan niet worden vervangen</item>
+        <item quantity="other">%d lettertypen zijn niet gelicentieerd voor commercieel gebruik en kunnen niet worden vervangen</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">%d geluid is niet gelicentieerd voor commercieel gebruik en kan niet worden vervangen</item>
+        <item quantity="other">%d geluiden zijn niet gelicentieerd voor commercieel gebruik en kunnen niet worden vervangen</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">%d sticker is niet gelicentieerd voor commercieel gebruik en kan niet worden vervangen</item>
+        <item quantity="other">%d stickers zijn niet gelicentieerd voor commercieel gebruik en kunnen niet worden vervangen</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">%d sticker is niet gelicentieerd voor commercieel gebruik</item>
+        <item quantity="other">%d stickers zijn niet gelicentieerd voor commercieel gebruik</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">%d reactie verwijderen?</item>
+        <item quantity="other">%d reacties verwijderen?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">Je hebt %d account geselecteerd. Alleen jij en de persoon die je beperkt zien de reacties van die persoon.</item>
+        <item quantity="other">Je hebt %d accounts geselecteerd. Alleen jij en de personen die je beperkt zien de reacties van die personen.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">%d account beperken?</item>
+        <item quantity="other">%d accounts beperken?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagen</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">Je hebt %s nieuw makersbericht</item>
+        <item quantity="other">Je hebt %s nieuwe makersberichten</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">%d dag verlopen</item>
+        <item quantity="other">%d dagen verlopen</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">Je gebruikt een Pro-functie. %d gratis gebruik resterend. Abonneer je op Pro voor onbeperkt gebruik.</item>
+        <item quantity="other">Je gebruikt een Pro-functie. %d gratis gebruiken resterend. Abonneer je op Pro voor onbeperkt gebruik.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">Je gebruikt een Standard-functie. %d gratis gebruik resterend. Abonneer je op Standard voor onbeperkt gebruik.</item>
+        <item quantity="other">Je gebruikt een Standard-functie. %d gratis gebruiken resterend. Abonneer je op Standard voor onbeperkt gebruik.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">Je gebruikt een Pro-functie. %d gratis gebruik resterend deze maand. Abonneer je op Pro voor onbeperkt gebruik.</item>
+        <item quantity="other">Je gebruikt een Pro-functie. %d gratis gebruiken resterend deze maand. Abonneer je op Pro voor onbeperkt gebruik.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">Je gebruikt een Standard-functie. %d gratis gebruik resterend deze maand. Abonneer je op Standard voor onbeperkt gebruik.</item>
+        <item quantity="other">Je gebruikt een Standard-functie. %d gratis gebruiken resterend deze maand. Abonneer je op Standard voor onbeperkt gebruik.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d dag gratis</item>
+        <item quantity="other">%d dagen gratis</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">%1$s na %2$d week</item>
+        <item quantity="other">%1$s na %2$d weken</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">Je hebt %d gratis gebruik van Pro-sjablonen per maand.</item>
+        <item quantity="other">Je hebt %d gratis gebruiken van Pro-sjablonen per maand.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">%d gratis gebruik</item>
+        <item quantity="other">%d gratis gebruiken</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">Probeer %d dag gratis</item>
+        <item quantity="other">Probeer %d dagen gratis</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">%d probleem met muziekauteursrechten</item>
+        <item quantity="other">%d problemen met muziekauteursrechten</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">%d tekst geselecteerd</item>
+        <item quantity="other">%d teksten geselecteerd</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">%d clip geselecteerd</item>
+        <item quantity="other">%d clips geselecteerd</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">Geniet van %1$d dag onbeperkt gratis exporteren of upgrade voor volledig onbeperkt exporteren in hoge resolutie.</item>
+        <item quantity="other">Geniet van %1$d dagen onbeperkt gratis exporteren of upgrade voor volledig onbeperkt exporteren in hoge resolutie.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">Exporteer %d keer gratis in in 1080p</item>
+        <item quantity="other">Exporteer %d keer gratis in in 1080p</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">Nog %d gratis export in 1080p. Upgrade om onbeperkt te exporteren met hoge resoluties.</item>
+        <item quantity="other">Nog %d gratis exports in 1080p. Upgrade om onbeperkt te exporteren met hoge resoluties.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">Nog %d gratis export in 1080p deze maand. Upgrade om onbeperkt te exporteren in hoge resoluties.</item>
+        <item quantity="other">Nog %d gratis exports in 1080p deze maand. Upgrade om onbeperkt te exporteren in hoge resoluties.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">%d credit nodig.</item>
+        <item quantity="other">%d credits nodig.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">Je hebt nog %d credit.</item>
+        <item quantity="other">Je hebt nog %d credits.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">Er loopt %1$d generatie. Upgrade naar Pro om tot %2$d generaties tegelijk uit te voeren.</item>
+        <item quantity="other">Er lopen %1$d generaties. Upgrade naar Pro om tot %2$d generaties tegelijk uit te voeren.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">Exporteren zonder watermerk (%d gebruik resterend)</item>
+        <item quantity="other">Exporteren zonder watermerk (%d gebruiken resterend)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">%d gratis gebruik over. Geen credits nodig.</item>
+        <item quantity="other">%d gratis gebruiken over. Geen credits nodig.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">Je geselecteerde item wordt verwijderd en blijft %d dagen in de Prullenbak.</item>
+        <item quantity="other">Je geselecteerde items worden verwijderd en blijven %d dagen in de Prullenbak.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">Een van de geselecteerde items is naar de ruimte geüpload. Toch verwijderen?</item>
+        <item quantity="other">Sommige geselecteerde items zijn naar de ruimte geüpload. Toch verwijderen?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">Je geselecteerde item wordt verwijderd en naar de Prullenbak verplaatst.</item>
+        <item quantity="other">Je geselecteerde items worden verwijderd en naar de Prullenbak verplaatst.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">%d gebruik</item>
+        <item quantity="other">%d gebruiken</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">De leeftijd berekend op basis van de ingevoerde geboortedatum is %d jaar en lijkt onjuist te zijn. Voer je echte geboortedatum in.</item>
+        <item quantity="other">De leeftijd berekend op basis van de ingevoerde geboortedatum is %d jaar en lijkt onjuist te zijn. Voer je echte geboortedatum in.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">Inclusief 1 gratis gebruik van eerdere aankopen en %d extra gratis gebruik voor Pro</item>
+        <item quantity="other">Inclusief 1 gratis gebruik van eerdere aankopen en %d extra gratis gebruiken voor Pro</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">Pro krijgt %d gratis gebruik</item>
+        <item quantity="other">Pro krijgt %d gratis gebruiken</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">"De avatars die je hebt gemaakt met video's zijn nu permanent geldig. Abonneer je op Pro en krijg %d gratis aanpassing."</item>
+        <item quantity="other">"De avatars die je hebt gemaakt met video's zijn nu permanent geldig. Abonneer je op Pro en krijg %d gratis aanpassingen."</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">Het toepassen van dit effect kost %d credit.</item>
+        <item quantity="other">Het toepassen van dit effect kost %d credits.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">Je hebt nu %d credit beschikbaar.</item>
+        <item quantity="other">Je hebt nu %d credits beschikbaar.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">%d markering</item>
+        <item quantity="other">%d markeringen</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">AI-effect toepassen... %s uur resterend</item>
+        <item quantity="other">AI-effect toepassen... %s uur resterend</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">AI-effect toepassen... %s minuut resterend</item>
+        <item quantity="other">AI-effect toepassen... %s minuten resterend</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">Het Pro-effect %1$s is toegepast op het huidige item. Opnieuw toepassen ervan op het nieuwe item kost %2$d credit.</item>
+        <item quantity="other">Het Pro-effect %1$s is toegepast op het huidige item. Opnieuw toepassen ervan op het nieuwe item kost %2$d credits.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">%1$d gratis gebruik wordt in mindering gebracht. Je hebt nu %2$d gratis gebruik.</item>
+        <item quantity="other">%1$d gratis gebruik wordt in mindering gebracht. Je hebt nu %2$d gratis gebruiken.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">%1$d Pro-gebruik wordt in mindering gebracht. Je hebt nu %2$d Pro-gebruik.</item>
+        <item quantity="other">%1$d Pro-gebruik wordt in mindering gebracht. Je hebt nu %2$d Pro-gebruiken.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">Dit model ondersteunt slechts %d referentieafbeelding</item>
+        <item quantity="other">Dit model ondersteunt tot %d referentieafbeeldingen</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">Voeg minimaal %d referentieafbeelding toe om dit model te gebruiken</item>
+        <item quantity="other">Voeg minimaal %d referentieafbeeldingen toe om dit model te gebruiken</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">Dit model ondersteunt slechts %d referentievideo</item>
+        <item quantity="other">"Dit model ondersteunt tot %d referentievideo's"</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">Voeg minimaal %d referentievideo toe om dit model te gebruiken</item>
+        <item quantity="other">"Voeg minimaal %d referentievideo's toe om dit model te gebruiken"</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">Selecteer %d foto</item>
+        <item quantity="other">"Selecteer %d foto's"</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">%d materiaal toegevoegd</item>
+        <item quantity="other">%d materialen toegevoegd</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">%d creatie resterend</item>
+        <item quantity="other">%d creaties resterend</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">%d ontgrendeling resterend</item>
+        <item quantity="other">%d ontgrendelingen resterend</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">%d trefwoord gemarkeerd. Je kunt ook handmatig selecteren.</item>
+        <item quantity="other">%d trefwoorden gemarkeerd. Je kunt ook handmatig selecteren.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">%d clip verwijderen</item>
+        <item quantity="other">%d clips verwijderen</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">%d stopwoord geïdentificeerd. Je kunt ook handmatig selecteren.</item>
+        <item quantity="other">%d stopwoorden geïdentificeerd. Je kunt ook handmatig selecteren.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">%d trefwoord gemarkeerd</item>
+        <item quantity="other">%d trefwoorden gemarkeerd</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">%d foto exporteren...</item>
+        <item quantity="other">"%d foto's exporteren..."</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">Kies tot %d houding</item>
+        <item quantity="other">Kies tot %d houdingen</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">Je mediabestand wordt geüpload</item>
+        <item quantity="other">Je mediabestanden worden geüpload</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">%d lid</item>
+        <item quantity="other">%d leden</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">Upload %d project naar de ruimte om opslagruimte vrij te maken op je apparaat. Je kunt deze projecten bewerken in de mobiele app, desktopapp of online editor.</item>
+        <item quantity="other">Upload %d projecten naar de ruimte om opslagruimte vrij te maken op je apparaat. Je kunt deze projecten bewerken in de mobiele app, desktopapp of online editor.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">Upload %d mediabestand in je projecten naar de ruimte. Je kunt dit bestand op elk apparaat gebruiken zonder het opnieuw te uploaden.</item>
+        <item quantity="other">Upload %d mediabestanden in je projecten naar de ruimte. Je kunt deze bestanden op elk apparaat gebruiken zonder ze opnieuw te uploaden.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">Je hebt een project om te herstellen</item>
+        <item quantity="other">Je hebt projecten om te herstellen</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">Project hersteld</item>
+        <item quantity="other">Projecten hersteld</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">Kan %d functie niet toepassen</item>
+        <item quantity="other">Kan %d functies niet toepassen</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">%d functie wordt toegepast</item>
+        <item quantity="other">%d functies worden toegepast</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">Pro-effect toepassen?</item>
+        <item quantity="other">Pro-effecten toepassen?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">Er is %1$d Pro-effect toegepast op het huidige item. Opnieuw toepassen ervan op het nieuwe item kost %2$d credits.</item>
+        <item quantity="other">Er zijn %1$d Pro-effecten toegepast op het huidige item. Opnieuw toepassen ervan op het nieuwe item kost %2$d credits.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">Er is %1$d Pro-effect toegepast op het huidige item. Er wordt %2$d gratis gebruik in mindering gebracht om het opnieuw toe te passen op het nieuwe item. Er worden geen credits verbruikt.</item>
+        <item quantity="other">Er zijn %1$d Pro-effecten toegepast op het huidige item. Er worden %2$d gratis gebruik in mindering gebracht om ze opnieuw toe te passen op het nieuwe item. Er worden geen credits verbruikt.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">Er is %1$d Pro-effect toegepast op het huidige item. Je hebt %2$d credits nodig om het opnieuw toe te passen op het nieuwe item.</item>
+        <item quantity="other">Er zijn %1$d Pro-effecten toegepast op het huidige item. Je hebt %2$d credits nodig om ze opnieuw toe te passen op het nieuwe item.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">Er zijn %1$d Pro-effecten toegepast op het huidige item. Opnieuw toepassen ervan op het nieuwe item kost %2$d gratis gebruik en %3$d credits.</item>
+        <item quantity="other">Er zijn %1$d Pro-effecten toegepast op het huidige item. Opnieuw toepassen ervan op het nieuwe item kost %2$d gratis gebruiken en %3$d credits.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">%d clip ontbreekt. Herstel deze op je telefoon of vervang deze.</item>
+        <item quantity="other">%d clips ontbreken. Herstel ze op je telefoon of vervang ze.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">Voer maximaal %d teken in</item>
+        <item quantity="other">Voer maximaal %d tekens in</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagen</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">Item verwijderen?</item>
+        <item quantity="other">Items verwijderen?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">Naar de Prullenbak verplaatste items worden hier weergegeven en worden na %d dag verwijderd.</item>
+        <item quantity="other">Naar de Prullenbak verplaatste items worden hier weergegeven en worden na %d dagen verwijderd.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">%d item downloaden...</item>
+        <item quantity="other">%d items downloaden...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">%d item uploaden...</item>
+        <item quantity="other">%d items uploaden...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">Dit item wordt definitief verwijderd en kan niet worden hersteld.</item>
+        <item quantity="other">Deze items worden definitief verwijderd en kunnen niet worden hersteld.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">Item verplaatst</item>
+        <item quantity="other">Items verplaatst</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">Je hebt nog %d dag gratis exporteren beschikbaar.</item>
+        <item quantity="other">Je hebt nog %d dagen gratis exporteren beschikbaar.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">Gefeliciteerd! Je hebt %d maandelijks gratis gebruik ontvangen om te exporteren zonder watermerk.</item>
+        <item quantity="other">Gefeliciteerd! Je hebt %d maandelijkse gratis gebruiken ontvangen om te exporteren zonder watermerk.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">Je hebt nog %d gratis gebruik om te exporteren zonder watermerk.</item>
+        <item quantity="other">Je hebt nog %d gratis gebruiken om te exporteren zonder watermerk.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">Gefeliciteerd! Je hebt %d gratis gebruik ontvangen om te exporteren zonder watermerk.</item>
+        <item quantity="other">Gefeliciteerd! Je hebt %d gratis gebruiken ontvangen om te exporteren zonder watermerk.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">%d gebruik</item>
+        <item quantity="other">%d gebruiken</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">%d credit korting voor nieuwkomers. Bij overschrijding worden meer credits verbruikt.</item>
+        <item quantity="other">%d credits korting voor nieuwkomers. Bij overschrijding worden meer credits verbruikt.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">Nog %d credit nodig om deze functie toe te passen</item>
+        <item quantity="other">Nog %d credits nodig om deze functie toe te passen</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">De clip mag niet langer zijn dan %d seconde</item>
+        <item quantity="other">De clip mag niet langer zijn dan %d seconden</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">Je hebt nog %d credit.</item>
+        <item quantity="other">Je hebt nog %d credits.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">Het toepassen van {$benefit_name$} verbruikt {$credit_amount$} credit.</item>
+        <item quantity="other">Het toepassen van {$benefit_name$} verbruikt {$credit_amount$} credits.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">Het toepassen van deze functie verbruikt %d credit.</item>
+        <item quantity="other">Het toepassen van deze functie verbruikt %d credits.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">Het gebruik van dit sjabloon verbruikt %d credit.</item>
+        <item quantity="other">Het gebruik van dit sjabloon verbruikt %d credits.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">Het wordt permanent verwijderd en kan niet worden hersteld.</item>
+        <item quantity="other">Ze worden permanent verwijderd en kunnen niet worden hersteld.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">Dit item verwijderen?</item>
+        <item quantity="other">Deze items verwijderen?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">%1$d \"%1$s\" project</item>
+        <item quantity="other">%1$d \"%1$s\" projecten</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">%d item naar de Prullenbak verplaatst</item>
+        <item quantity="other">%d items naar de Prullenbak verplaatst</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">%d item toegevoegd aan Favorieten</item>
+        <item quantity="other">%d items toegevoegd aan Favorieten</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">%d item verwijderd uit Favorieten</item>
+        <item quantity="other">%d items verwijderd uit Favorieten</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">Dit is een gratis ruimte, deze kan maximaal %1$d leden hebben. Er kan nog %2$s lid voor worden uitgenodigd.</item>
+        <item quantity="other">Dit is een gratis ruimte, deze kan maximaal %1$d leden hebben. Er kunnen nog %2$s leden voor worden uitgenodigd.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">%d gebruik/maand</item>
+        <item quantity="other">%d gebruiken/maand</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d gebruik/dag</item>
+        <item quantity="other">%d gebruiken/dag</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d gebruik/week</item>
+        <item quantity="other">%d gebruiken/week</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">{price} na {number} maand</item>
+        <item quantity="other">{price} na {number} maanden</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">%1$s na %2$d maand</item>
+        <item quantity="other">%1$s na %2$d maanden</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">{price} na {number} jaar</item>
+        <item quantity="other">{price} na {number} jaar</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">%1$s na %2$d jaar</item>
+        <item quantity="other">%1$s na %2$d jaar</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">Er is %d lid in deze ruimte.</item>
+        <item quantity="other">Er zijn %d leden in deze ruimte.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">Je kunt nog %1$d lid uitnodigen.</item>
+        <item quantity="other">Je kunt nog %1$d leden uitnodigen.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">%1$d zetel in gebruik.</item>
+        <item quantity="other">%1$d zetels in gebruik.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">%d-daagse gratis proefperiode starten</item>
+        <item quantity="other">%d-daagse gratis proefperiode starten</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">%d credit nodig.</item>
+        <item quantity="other">%d credits nodig.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">Je hebt nog %d credit.</item>
+        <item quantity="other">Je hebt nog %d credits.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">%1$s/%2$s project uploaden</item>
+        <item quantity="other">%1$s/%2$s projecten uploaden</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"Er is %d andere clip gekoppeld aan dit mediabestand. Deze ook vervangen?
+Het bestand wordt automatisch ingekort tot de originele duur."</item>
+        <item quantity="other">"Er zijn %d andere clips gekoppeld aan dit mediabestand. Allemaal vervangen?
+Het bestand wordt automatisch ingekort tot de originele duur."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">Je kunt nog %d afbeelding uploaden</item>
+        <item quantity="other">Je kunt nog %d afbeeldingen uploaden</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">%d segment om bij te werken</item>
+        <item quantity="other">%d segmenten om bij te werken</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">Je kunt nog %1$d afbeelding en %2$s selecteren</item>
+        <item quantity="other">Je kunt nog %1$d afbeeldingen en %2$s selecteren</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(max. %d s)</item>
+        <item quantity="other">(max. %d s)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d video</item>
+        <item quantity="other">"%d video's"</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">Je kunt nog %d afbeelding selecteren</item>
+        <item quantity="other">Je kunt nog %d afbeeldingen selecteren</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">Je kunt nog %d video selecteren</item>
+        <item quantity="other">"Je kunt nog %d video's selecteren"</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(max. %d s)</item>
+        <item quantity="other">(max. %d s)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">In wachtrij... Nog ongeveer %d min.</item>
+        <item quantity="other">In wachtrij... Nog ongeveer %d min.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">Gebruik van verkort de wachttijd · %d resterend</item>
+        <item quantity="other">Gebruiken van verkort de wachttijd · %d resterend</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">In wachtrij... Nog ongeveer %d s.</item>
+        <item quantity="other">In wachtrij... Nog ongeveer %d s.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">In snelle wachtrij met Pro... Nog ongeveer %d min.</item>
+        <item quantity="other">In snelle wachtrij met Pro... Nog ongeveer %d min.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">%d item geselecteerd</item>
+        <item quantity="other">%d items geselecteerd</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">%d project</item>
+        <item quantity="other">%d projecten</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">%d project geselecteerd</item>
+        <item quantity="other">%d projecten geselecteerd</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">Veel mensen gebruiken deze functie momenteel. Je geschatte wachttijd is %d minuut.</item>
+        <item quantity="other">Veel mensen gebruiken deze functie momenteel. Je geschatte wachttijd is %d minuten.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">Opnieuw genereren verbruikt %d credit.</item>
+        <item quantity="other">Opnieuw genereren verbruikt %d credits.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">Opnieuw genereren met het nieuwe item verbruikt %d credit.</item>
+        <item quantity="other">Opnieuw genereren met het nieuwe item verbruikt %d credits.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">%d clip toegevoegd</item>
+        <item quantity="other">%d clips toegevoegd</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">Selecteer %d item</item>
+        <item quantity="other">Selecteer %d items</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">%d video gegenereerd voor jou</item>
+        <item quantity="other">"%d video's gegenereerd voor jou"</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">Je kunt alleen audio korter dan %d minuut scheiden</item>
+        <item quantity="other">Je kunt alleen audio korter dan %d minuten scheiden</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">Je kunt de ruimte binnen %d dag herstellen.</item>
+        <item quantity="other">Je kunt de ruimte binnen %d dagen herstellen.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">Er wordt %d video gegenereerd. Probeer het later opnieuw.</item>
+        <item quantity="other">"Er worden %d video's gegenereerd. Probeer het later opnieuw."</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">Upgrade om deze functie met %d credit te gebruiken</item>
+        <item quantity="other">Upgrade om deze functie met %d credits te gebruiken</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">Je hebt nog maar %d zetel over in deze ruimte.</item>
+        <item quantity="other">Je hebt nog maar %d zetels over in deze ruimte.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">%d element gebruikt</item>
+        <item quantity="other">%d elementen gebruikt</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">%d item geselecteerd</item>
+        <item quantity="other">%d items geselecteerd</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">Selecteer %d item</item>
+        <item quantity="other">Selecteer %d items</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">%d ondertitel</item>
+        <item quantity="other">%d ondertitels</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">%d functie wordt toegepast. Probeer het later opnieuw.</item>
+        <item quantity="other">%d functies worden toegepast. Probeer het later opnieuw.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">%d gratis gebruik resterend. Abonneer je op Standard om de functie te gebruiken met credits.</item>
+        <item quantity="other">%d gratis gebruiken resterend. Abonneer je op Standard om de functie te gebruiken met credits.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">%d gratis gebruik resterend. Abonneer je op Pro om de functie te gebruiken met credits.</item>
+        <item quantity="other">%d gratis gebruiken resterend. Abonneer je op Pro om de functie te gebruiken met credits.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">%d gratis gebruik resterend. Abonneer je op Ultra om de functie te gebruiken met credits.</item>
+        <item quantity="other">%d gratis gebruiken resterend. Abonneer je op Ultra om de functie te gebruiken met credits.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">Dit verbruikt %1$d credit. %2$s</item>
+        <item quantity="other">Dit verbruikt %1$d credits. %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">Je hebt nog %d credit</item>
+        <item quantity="other">Je hebt nog %d credits</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">Neem Ultra om het te gebruiken met %d credit</item>
+        <item quantity="other">Neem Ultra om het te gebruiken met %d credits</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">Abonneer je op Pro om deze functie te gebruiken met %d credit.</item>
+        <item quantity="other">Abonneer je op Pro om deze functie te gebruiken met %d credits.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">Abonneer je op Standard om deze functie te gebruiken met %d credit.</item>
+        <item quantity="other">Abonneer je op Standard om deze functie te gebruiken met %d credits.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">Je kunt maximaal %1$d stem opslaan.</item>
+        <item quantity="other">Je kunt maximaal %1$d stemmen opslaan.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">Kan de spraak niet verbeteren in een clip langer dan %1$d minuut</item>
+        <item quantity="other">Kan de spraak niet verbeteren in een clip langer dan %1$d minuten</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">Selecteer %d item voor optimale resultaten</item>
+        <item quantity="other">Selecteer %d items voor optimale resultaten</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">Wordt verlengd voor %1$s voor de eerste %2$d maand, daarna %3$s.</item>
+        <item quantity="other">Wordt verlengd voor %1$s voor de eerste %2$d maanden, daarna %3$s.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">Wordt verlengd voor %1$s voor het eerste %2$d jaar, daarna %3$s.</item>
+        <item quantity="other">Wordt verlengd voor %1$s voor de eerste %2$d jaar, daarna %3$s.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">Je hebt %d wijziging aangebracht. Spraak genereren en lipbewegingen synchroniseren?</item>
+        <item quantity="other">Je hebt %d wijzigingen aangebracht. Spraak genereren en lipbewegingen synchroniseren?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">%d keer resterend</item>
+        <item quantity="other">%d keer resterend</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">Er is %d stille clip.</item>
+        <item quantity="other">Er zijn %d stille clips.</item>
+    </plurals>
+</resources>

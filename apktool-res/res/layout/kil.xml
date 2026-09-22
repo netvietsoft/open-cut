@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.gallery.ui.HalfScreenGalleryScrollContainer n0:id="@id/halfScreenGalleryScrollContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <include n0:id="@id/categorySelectView" layout="@layout/k83" />
+        <FrameLayout n0:id="@id/albumHeaderTabsContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/galleryFragmentView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</com.vega.gallery.ui.HalfScreenGalleryScrollContainer>

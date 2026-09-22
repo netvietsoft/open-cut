@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.image.edit.view.ImageStateConstraintLayout n0:background="@color/f" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.image.edit.panel.filter.ImageEditFilterPagerLayout n0:id="@id/top_tab_layout" n0:layout_width="match_parent" n0:layout_height="155.0dp" />
+    <com.vega.ui.widget.TextRulerViewV2 n0:id="@id/slider_ruler_view" n0:tag="content" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="42.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintTop_toBottomOf="@id/top_tab_layout"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</com.vega.image.edit.view.ImageStateConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:drawable="@drawable/lgc" android:left="-3.0dp" android:top="-3.0dp" android:right="-3.0dp" />
+            <item android:drawable="@android:color/transparent" />
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:drawable="@android:color/transparent" />
+        </layer-list>
+    </item>
+</selector>

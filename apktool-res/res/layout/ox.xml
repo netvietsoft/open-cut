@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/fl_root" n0:background="#202020" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <SurfaceView n0:id="@id/sv_single_play" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <RelativeLayout n0:gravity="center" n0:id="@id/rl_retake_material" n0:background="@drawable/k2l" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="52.0dp" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/tv_replace_material" n1:layout_constraintHorizontal_weight="0.36" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/tv_retake_material_icon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/oc-" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qfz" n0:maxLines="2" n0:layout_marginStart="8.0dp" n0:layout_toEndOf="@id/tv_retake_material_icon" />
+    </RelativeLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/x3" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tv_replace_material" n0:background="@drawable/krj" n0:paddingLeft="6.0dp" n0:paddingTop="3.0dp" n0:paddingRight="6.0dp" n0:paddingBottom="3.0dp" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/lbs" n0:maxLines="2" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="6.0dp" n0:paddingVertical="3.0dp" n2:layout_constraintBottom_toBottomOf="@id/rl_retake_material" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHorizontal_weight="0.64" n2:layout_constraintStart_toEndOf="@id/rl_retake_material" n2:layout_constraintTop_toTopOf="@id/rl_retake_material"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaCheckBox n0:textColor="@android:color/white" n0:gravity="center_vertical" n0:id="@id/cb_save_material" n0:paddingLeft="6.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:checked="false" n0:button="@drawable/l2l" n0:text="@string/qgd" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.recorder.widget.AlphaRecordButton n0:id="@id/btn_single_play_back" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082551" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

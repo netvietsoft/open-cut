@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:padding="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_cover" n0:background="#262626" n0:layout_width="0.0dp" n0:layout_height="120.0dp" n0:scaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/view_generating_overlay" n0:background="@drawable/APKTOOL_RENAMED_0x7f080615" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/iv_cover" n2:layout_constraintEnd_toEndOf="@id/iv_cover" n2:layout_constraintStart_toStartOf="@id/iv_cover" n2:layout_constraintTop_toTopOf="@id/iv_cover"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/view_generating_border" n0:background="@drawable/APKTOOL_RENAMED_0x7f080614" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="@id/iv_cover" n3:layout_constraintEnd_toEndOf="@id/iv_cover" n3:layout_constraintStart_toStartOf="@id/iv_cover" n3:layout_constraintTop_toTopOf="@id/iv_cover"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_generating_loading" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n4:layout_constraintBottom_toBottomOf="@id/iv_cover" n4:layout_constraintEnd_toEndOf="@id/iv_cover" n4:layout_constraintStart_toStartOf="@id/iv_cover" n4:layout_constraintTop_toTopOf="@id/iv_cover"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/view_selected_border" n0:background="@drawable/APKTOOL_RENAMED_0x7f080616" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n5:layout_constraintBottom_toBottomOf="@id/iv_cover" n5:layout_constraintEnd_toEndOf="@id/iv_cover" n5:layout_constraintStart_toStartOf="@id/iv_cover" n5:layout_constraintTop_toTopOf="@id/iv_cover"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_selected_check" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08162d" n6:layout_constraintBottom_toBottomOf="@id/iv_cover" n6:layout_constraintEnd_toEndOf="@id/iv_cover" n6:layout_constraintStart_toStartOf="@id/iv_cover" n6:layout_constraintTop_toTopOf="@id/iv_cover"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

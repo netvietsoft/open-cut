@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:kr3="list_in_black"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#fafbff" n0:ellipsize="end" n0:id="@id/tv_option_name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="14.0dp" n0:layout_marginBottom="14.0dp" n0:text="test" n0:maxLines="1" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/iv_option_check" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <ImageView n0:id="@id/iv_option_check" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/mf7" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <View n0:background="#29ffffff" n0:layout_width="0.0dp" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+</com.vega.ui.state.pressed.PressedStateConstraintLayout>

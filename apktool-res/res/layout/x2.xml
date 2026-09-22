@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ll_author_info_new" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:minHeight="36.0dp" n0:layout_weight="1.0" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintEnd_toStartOf="@id/ll_collection_info_new" n1:layout_constraintHorizontal_chainStyle="packed" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/sVAuthorAvatar_new" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n1:roundedCornerRadius="8.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:id="@id/tvAuthorName_new" n0:focusable="true" n0:focusableInTouchMode="true" n0:fadingEdge="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ll_collection_info_new" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:minHeight="36.0dp" n0:layout_weight="1.0" n0:layout_marginEnd="12.0dp" n2:layout_constraintEnd_toStartOf="@id/llBusinessInfo_new" n2:layout_constraintStart_toEndOf="@id/ll_author_info_new"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/nph" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:id="@id/tvAuthorCollection_new" n0:focusable="true" n0:focusableInTouchMode="true" n0:fadingEdge="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ltk" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/llBusinessInfo_new" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:minHeight="36.0dp" n0:layout_weight="1.0" n0:layout_marginEnd="16.0dp" n3:layout_constraintEnd_toStartOf="@id/cl_vip_info_new" n3:layout_constraintStart_toEndOf="@id/ll_collection_info_new"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_business_copyright_info_new" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/nq6" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:id="@id/tv_business_copyright_info_new" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_weight="1.0" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="4.0dp" />
+        <ImageView n0:id="@id/iv_close_business_copyright_info_new" n0:background="@drawable/m9r" n0:visibility="gone" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="7.0dp" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_vip_info_new" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:minHeight="36.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintEnd_toEndOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/vip_info_line_new" n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:layout_width="0.5dp" n0:layout_height="28.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/iv_vip_info_new" n0:background="@drawable/olp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:paddingStart="3.0dp" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toTopOf="@id/tv_vip_info_new" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:layout_constraintVertical_chainStyle="packed" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:id="@id/tv_vip_info_new" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:drawableEnd="@drawable/APKTOOL_RENAMED_0x7f082284" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/iv_vip_info_new" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

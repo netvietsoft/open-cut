@@ -1,0 +1,17 @@
+task_id: "TASK-037-ENGINE-HONEST-FALLBACK"
+phase: "P0 - Engine Integrity & Honest Fallback"
+title: "Xử Lý Trung Thực Fallback JNI Native Engine, Bổ Sung 7 Symbol JNI Còn Thiếu & Chống Nuốt Ngoại Lệ"
+assigned_to:
+  - "Agent 3 (Frontend / Android)"
+  - "Agent 7 (Fixer)"
+status: "COMPLETED"
+completed_at: "2026-09-22T10:55:00+07:00"
+priority: "HIGH"
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/MiddleBridgeJni.java"
+  - "apps/android/app/src/main/cpp/native-lib.cpp"
+acceptance_criteria:
+  - "Khắc phục triệt để lỗi N7: Không nuốt lỗi trả về true giả dối trong MiddleBridgeJni.java"
+  - "Khắc phục triệt để lỗi B4: Đồng bộ 7 JNI symbols giữa Java và C++ native-lib.cpp"
+  - "Khắc phục lỗi N4: Null-check kết quả GetStringUTFChars trong native-lib.cpp"
+  - "Bảo đảm toàn bộ hàm/lớp có chú thích song ngữ EN + VN theo Luật 12 AGENTS.md"

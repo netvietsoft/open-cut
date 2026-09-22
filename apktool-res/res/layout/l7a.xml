@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/promote_layout" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:minHeight="52.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n0:layout_marginVertical="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.VegaCheckBox n0:id="@id/cb_promote_select" n0:background="@null" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:button="@drawable/qnp" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/promote_text_container" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:baselineAligned="true" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/promote_discount_text" n2:layout_constraintStart_toEndOf="@id/cb_promote_select" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#fffafbff" n0:id="@id/promote_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p_9" n0:layout_marginStart="12.0dp" />
+        <ImageView n0:id="@id/promote_info" n0:background="?android:selectableItemBackgroundBorderless" n0:focusable="true" n0:clickable="true" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/o95" n0:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/promote_discount_text" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.widget.VideoGestureLayout n0:id="@id/video_gesture_layout" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.commonedit.digitalhuman.panel.view.DigitalHumanOptionFrameView n0:id="@id/option_frame_view" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.edit.base.widget.VideoGestureLayout>
+</FrameLayout>

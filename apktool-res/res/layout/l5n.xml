@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/lv_timer_panel_extra" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/timer_mask" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:layout_gravity="bottom" n0:id="@id/lv_timer_panel" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+</FrameLayout>

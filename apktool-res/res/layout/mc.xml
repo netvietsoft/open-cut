@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/cl_enterprise_group_create_layout" n0:background="@android:color/white" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/top_bar" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:id="@id/btn_group_create_close" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m6d" />
+        <TextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/APKTOOL_RENAMED_0x7f121f12" n0:singleLine="true" n0:includeFontPadding="false" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/enterprise_create_group_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/top_bar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:ellipsize="end" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f121f2e" n0:singleLine="true" n0:layout_marginHorizontal="16.0dp" />
+            <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp">
+                <EditText n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/_3" n0:textColorHint="#6618334e" n0:id="@id/et_enterprise_group_name" n0:background="@drawable/l55" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:hint="@string/APKTOOL_RENAMED_0x7f121f0e" n0:singleLine="true" n0:maxLength="12" n0:textCursorDrawable="@drawable/qbb" n0:paddingStart="16.0dp" n0:paddingEnd="40.0dp" n0:layout_marginHorizontal="16.0dp" />
+                <ImageView n0:layout_gravity="end|center" n0:id="@id/iv_cloud_clear_text" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/l5i" n0:layout_marginEnd="32.0dp" />
+            </FrameLayout>
+            <View n0:background="@color/fx" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" />
+            <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:ellipsize="end" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f121f28" n0:singleLine="true" n0:layout_marginHorizontal="16.0dp" />
+            <TextView n0:textSize="12.0dp" n0:textColor="#8015293c" n0:id="@id/tv_space_usage" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" />
+            <RelativeLayout n0:id="@id/rl_share_space_left_storage_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="11.0dp" n0:minHeight="48.0dp">
+                <TextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:ellipsize="end" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f121f29" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="4.0dp" n0:layout_toStartOf="@id/rb_share_space_left_storage" n0:layout_alignParentStart="true" />
+                <ImageView n0:id="@id/rb_share_space_left_storage" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/mts" n0:scaleType="fitXY" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout n0:id="@id/rl_specify_space_storage_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="48.0dp">
+                <TextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:ellipsize="end" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f121f33" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="4.0dp" n0:layout_toStartOf="@id/rb_specify_space_storage" n0:layout_alignParentStart="true" />
+                <ImageView n0:id="@id/rb_specify_space_storage" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/mo8" n0:scaleType="fitXY" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <FrameLayout n0:id="@id/fl_enterprise_specify_space_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp">
+                <EditText n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/_3" n0:layout_gravity="center_vertical" n0:id="@id/et_enterprise_specify_space" n0:background="@drawable/l55" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:singleLine="true" n0:inputType="number" n0:textCursorDrawable="@drawable/qbb" n0:paddingStart="16.0dp" n0:paddingEnd="40.0dp" n0:layout_marginHorizontal="16.0dp" n0:autofillHints="" />
+                <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="end|center" n0:orientation="horizontal" n0:id="@id/ll_enterprise_space_unit_container" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginEnd="32.0dp">
+                    <TextView n0:textColor="#8015293c" n0:layout_gravity="center_vertical" n0:id="@id/tv_enterprise_space_unit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f121f18" n0:layout_marginEnd="2.0dp" />
+                    <ImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_enterprise_space_unit_drop_down" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/l6n" n0:scaleType="fitXY" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <com.vega.ui.StrongButton n0:enabled="false" n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:layout_gravity="bottom" n0:id="@id/tv_enterprise_create_group" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c7e" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="24.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f121f0f" n0:layout_marginHorizontal="16.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

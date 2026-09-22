@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/container" n0:tag="layout/xt_layer_thumbnail_layout_0" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.RoundImageView n0:layout_gravity="center" n0:id="@id/iv_image" n0:background="@drawable/rmi" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:scaleType="centerInside" n1:i_="4.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:layout_gravity="center" n0:id="@id/select_border" n0:background="@drawable/r7x" n0:layout_width="48.0dp" n0:layout_height="48.0dp" />
+    <FrameLayout n0:layout_gravity="center_horizontal" n0:id="@id/disable_drag_mask" n0:background="@drawable/q77" n0:visibility="gone" n0:layout_width="48.0dp" n0:layout_height="48.0dp">
+        <TextView n0:textSize="7.0sp" n0:textColor="#fafbff" n0:gravity="center" n0:layout_gravity="center" n0:background="@drawable/q78" n0:layout_width="42.0dp" n0:layout_height="42.0dp" n0:text="@string/toq" />
+    </FrameLayout>
+</FrameLayout>

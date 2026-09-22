@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="60.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/main_ic" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/pr6" n0:scaleType="fitCenter" n0:layout_centerHorizontal="true" />
+    <ImageView n0:id="@id/bottom_end_ic" n0:visibility="gone" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginBottom="-2.0dp" n0:src="@drawable/qei" n0:layout_alignBottom="@id/main_ic" n0:layout_marginEnd="-2.0dp" n0:layout_alignEnd="@id/main_ic" />
+    <ImageView n0:id="@id/top_end_ic" n0:visibility="gone" n0:layout_width="38.0dp" n0:layout_height="12.0dp" n0:src="@drawable/pt6" n0:layout_alignTop="@id/main_ic" n0:translationX="19.0dp" n0:translationY="-4.0dp" n0:layout_alignEnd="@id/main_ic" />
+    <com.vega.subscriptionapi.swidget.TeamsMarkView n0:id="@id/iv_teams_mark" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_alignTop="@id/main_ic" n0:translationX="19.0dp" n0:translationY="-4.0dp" n0:layout_alignEnd="@id/main_ic" n1:kml="small"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:ellipsize="none" n0:gravity="center|top" n0:id="@id/text" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:singleLine="true" n0:includeFontPadding="false" n0:layout_below="@id/main_ic" n0:layout_centerHorizontal="true" />
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_plugin_flip_layer_by_immersive_edit_0" n0:background="@color/kuf" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/title_bar" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/kqx" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sx8" n0:fontFamily="sans-serif-medium" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/confirm" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginRight="2.0dp" n0:src="@drawable/r2b" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/divide_line" n0:background="@color/ktk" n0:layout_width="match_parent" n0:layout_height="0.5dp" n2:layout_constraintTop_toBottomOf="@id/title_bar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/rotate_container" n0:layout_width="match_parent" n0:layout_height="94.0dp" n3:layout_constraintTop_toBottomOf="@id/divide_line"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0sp" n0:textColor="@color/ks4" n0:gravity="center" n0:id="@id/rotate_horizontal" n0:background="@drawable/APKTOOL_RENAMED_0x7f0831c6" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="24.0dp" n0:text="@string/t5f" n0:maxLines="1" n0:layout_weight="1.0" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="12.0dp" n3:autoSizeMaxTextSize="12.0sp" n3:autoSizeMinTextSize="6.0sp" n3:bp="1.0sp" n3:autoSizeTextType="uniform" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0sp" n0:textColor="@color/ks4" n0:gravity="center" n0:id="@id/rotate_vertical" n0:background="@drawable/APKTOOL_RENAMED_0x7f0831c6" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="24.0dp" n0:text="@string/t6n" n0:layout_weight="1.0" n0:layout_marginEnd="16.0dp" n3:autoSizeMaxTextSize="12.0sp" n3:autoSizeMinTextSize="6.0sp" n3:bp="1.0sp" n3:autoSizeTextType="uniform" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

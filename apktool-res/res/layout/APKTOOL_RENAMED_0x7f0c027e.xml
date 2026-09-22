@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_gravity="bottom" n0:id="@id/panel_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toTopOf="@id/docker_view"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.image.edit.dock.ImageEditDockGroupView n0:id="@id/docker_view" n0:background="@color/er" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/ai_chat_edit_view" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.image.edit.dock.ImageAIChatEditView n0:id="@id/ai_chat_edit_view" n0:background="@color/er" n0:layout_width="wrap_content" n0:layout_height="66.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/dock_mask_view" n0:background="@color/er" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:alpha="0.4" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/docker_view"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:layout_gravity="bottom" n0:id="@id/panel_extra_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/panel_detail_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="66.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" layout="@layout/k-m"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

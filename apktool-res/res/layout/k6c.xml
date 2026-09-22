@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/feed_back_layout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <ImageView n0:id="@id/ic_survey_feedback" n0:background="@drawable/nhp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:gravity="center" n0:id="@id/tv_survey_feedback" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/ic_survey_feedback" />
+</androidx.constraintlayout.widget.ConstraintLayout>

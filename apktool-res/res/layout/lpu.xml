@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaTextButton n0:textSize="14.0dp" n0:textStyle="normal" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/search_history_bottom_item" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <ImageView n0:id="@id/icon" n0:visibility="gone" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:layout_marginStart="4.0dp" />
+</LinearLayout>

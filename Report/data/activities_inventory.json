@@ -1,0 +1,4686 @@
+[
+  {
+    "name": "com.vega.launcher.precondition.DeeplinkActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/ka",
+    "launch_mode": "singleTop",
+    "orientation": "",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "capcut://"
+        ]
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "capcut1380://"
+        ]
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "capcut1760://"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.vega.launcher.precondition.ApplinksHandlerActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/ka",
+    "launch_mode": "singleTop",
+    "orientation": "",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "https://",
+          "://www.capcut.com"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.vega.launcher.init.core.NotifyActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/kc",
+    "launch_mode": "singleTask",
+    "orientation": "",
+    "intent_filters": [
+      {
+        "actions": [
+          "com.ss.android.sdk.snssdk3006"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "snssdk3006://"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.vega.main.MainActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/vo",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.MAIN"
+        ],
+        "categories": [
+          "android.intent.category.LAUNCHER"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.vega.launcher.precondition.LoadingDialogActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/kc",
+    "launch_mode": "singleTop",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.launcher.safemode.SafeModeWebActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.launcher.precondition.ImportFontsShareActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/kv",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.SEND"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.vega.launcher.precondition.ShareFromOutsideActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": [
+      {
+        "actions": [
+          "com.lemon.lvoverseas.action.SEND"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.vega.launcher.precondition.EditShareActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.SEND",
+          "android.intent.action.SEND_MULTIPLE"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      },
+      {
+        "actions": [
+          "com.lemon.lvoverseas.action.COMMON_EDIT"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.vega.launcher.precondition.UploadShareActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.SEND",
+          "android.intent.action.SEND_MULTIPLE"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.vega.launcher.precondition.RemoveBackgroundShareActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.SEND"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.vega.launcher.precondition.RetouchShareActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.SEND",
+          "android.intent.action.SEND_MULTIPLE"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.vega.main.home.toolpage.capture.VideoCaptureMiddleWareActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.videocapture.VideoCaptureEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.core.popmanager.PopMockSwitchActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.homepage.UserActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/fy",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.follow.ui.FollowActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/tr",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.main.ui.preview.SingleFeedPreviewBridgeActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/ym",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.main.ui.preview.TransparentSingleFeedPreviewBridgeActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/fv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.main.ui.preview.SingleFeedPreviewActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/yl",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.util.GotoDraftEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/wk",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.main.ui.preview.MultiFeedPreviewActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/v-",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.information.ui.FeedAvatarActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.information.ui.FeedAvatarCropActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/s9",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.information.ui.FeedUserEditDescriptionActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.information.ui.FeedUserEditUniqueIDActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.information.ui.FeedUserEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.information.ui.InstagramAuthActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.information.ui.ThirdPartyProfileActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.recommend.FeedRecommendActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "singleTask",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.homepage.black.BlackListActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/fj",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.main.ui.preview.VideoPreviewActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.material.FeedInspirationInterActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/vb",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.homepage.account.AccountManagerActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/x",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.message.ui.MessageDetailActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/ve",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.message.ui.MessageActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/ve",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.main.team.TeamTemplateActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedx.nativefeed.FeedContainerActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/k",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.web.WebActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.web.TransWebActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.web.ResearchActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.web.OuterWebActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.web.photo.PreviewPhotoActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.home.ui.RetouchDeeplinkActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/kc",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.home.ui.AIModelDeeplinkActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.tutorial.FunctionTutorialActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.xigua.TrainWorkSelectActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.home.SelectPhotoActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.LynxActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.TransLynxActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.FullScreenLynxActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.RetouchLynxActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.home.ui.AIPaintingDeeplinkActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.appwidget.response.WRetouchResponseActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.appwidget.response.WRemoveBgResponseActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.appwidget.response.WNewProjectResponseActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.appwidget.response.WCameraResponseActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.appwidget.response.WClickDraft1ResponseActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.appwidget.response.WClickDraft2ResponseActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.appwidget.response.WClickDraft3ResponseActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.appwidget.response.WidgetResponseActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.pop.test.TestPopCenterActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.appwidget.response.BaseTemplateWidgetResponseActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.localdraft.SelectDraftForTopicActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.localdraft.SelectDraftForTeamActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.localdraft.IMSelectDraftActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.localdraft.SelectDraftActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vege.genai.history.GenAiHistoryActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13001e",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vege.genai.main.activity.GenAiMainActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vege.genai.main.activity.GenAiTemplateActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vege.genai.preview.PreviewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vege.genai.preview.AiCommonPreviewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.MediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.ScriptVideoMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.VoiceoverAlbumActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/fj",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.CC4BAlbumActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.RetouchAIModelGalleryActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.RetouchMultiSelectPhotoActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.MultimodalSearchAlbumActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.TemplateGenMediaSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.AutoCutAgentGenMediaSelectActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.TemplateGenGuideMediaSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1301b5",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.CollageSelectMediaActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.ImageEditPhotoSelectActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.QualityEnhanceMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.BgRemoveMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.AiImageInterpretationMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.NewDigitalHumansMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.NewVideoTranslateMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.NewLipSyncMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.EditPilotMediaSelectActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.VideoCaptureMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.ModelDressUpMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.ImageEditMediaSelectToolActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.AIClipperMediaSelectToolActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.CoverEditToolMediaSelectActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.GalleryMediaProjectSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.ImageEditMediaSelectHomeActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.SmartAdsMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.TextExtractionMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.GenAIMediaSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.AiCommonSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.MaterialPreviewActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.digitalportraitimpl.DigitalPortraitActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.digitalportraitimpl.property.PropertyPortraitActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.digitalportraitimpl.view.AiEffectEditPortraitActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.export.edit.view.ExportActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.export.edit.view.ImageExportActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.exort.template.TemplateExportActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.export.template.view.TemplateExportActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.adproduce.TemplateCreationActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.export.business.BusinessExportActivity",
+    "category": "Export & Publishing",
+    "exported": false,
+    "theme": "@style/e",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.export.edit.view.share.join.JoinTemplateAndTutorialActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.export.retouch.view.RetouchTemplateExportActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ad.view.FullScreenNativeAdActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ad.view.AdToolActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.vega.ug.ui.DiversionPCActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.vega.ug.ui.NoLoginDiversionPCActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.vega.ug.ui.ExternalDiversionConfirmActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/sr",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.unifyagent.AiLabAgentChatActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/qm",
+    "launch_mode": "singleTask",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.trendsagent.AiLabTrendsAgentChatActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/qm",
+    "launch_mode": "singleTask",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.trendsagent.AiTrendsTemplateUserInputActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.common.edit.DraftPreviewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/_",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.common.utils.ExportDialogActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.demo.TemplateListDemoActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.demo.DocumentFilePickerDemoActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.feedback.AiLabFeedbackActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.feedback.AiLabFeedbackHistoryActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.feedback.MeegoStoryPickerActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.unifyagent.preview.AiLabAgentUniversalPreviewActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.unifyagent.preview.userasset.UserAssetPreviewActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/Theme.AppCompat.NoActionBar",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.unifyagent.share.AiLabAgentShareActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/Theme.AppCompat.Light.NoActionBar",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ailabagent.common.history.HistoryActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13001f",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.EditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.editpage.activity.EditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.livephoto.activity.LiveEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.video.view.VideoFrameAdjustActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTop",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.outpainting.activity.VideoFrameAdjustNewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTop",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.image.view.edits.crop.ImageCropActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTop",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.video.view.ReplaceVideoSelectActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.TextToVideoEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.TextToVideoReplaceActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.ttv.edit.TextToVideoAddActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.TextToVideoRecordActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.digitalhuman.digital.template.intelligent.detail.DigitalHumanTemplateFeedActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.image.edit.main.view.ImageEditActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.image.edit.canvasedit.partialadjust.ImageEditPartialAdjustActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aiclipper.panel.aiedit.AiEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13001a",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aiclipper.panel.aiedit.AiEditActivityV2",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13001b",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.activity.AiChatEditSelectMediaActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.materialgeneration.preview.MaterialGenerationReferencePreviewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.materialgeneration.preview.MaterialGenerationAudioTrimActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.image.edit.component.debug.viewer.ImageDraftViewerActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.publish.template.publish.view.TemplatePublishActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.publish.template.publish.view.PublishSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.publish.template.publish.view.TeamTemplatePublishEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.publish.template.publish.view.SelectTutorialMaterialActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.publish.template.publish.view.ManageTutorialMaterialActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.publish.aipost.preview.view.AIPostPreviewActivity",
+    "category": "Export & Publishing",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTask",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.templatepublish.musicreplace.ReplaceMusicActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/up",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.multicutsame.smartvlog.view.activity.SmartVlogPreviewActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/ys",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.multicutsame.view.MultiCutSamePreviewActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.multitemplate.view.MultiTemplateSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sn",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.activity.AiGenerateResultReportActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/kb",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.activity.LiteEditorActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/up",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.select.view.CutSameSelectMediaActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.select.view.CutSameSelectMediaWithoutSelectMediaActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.select.view.CutSameQuickShootActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.activity.CutSameReplaceMediaActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.activity.CutSameLoadDraftActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/wk",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.activity.RecordSamePreviewActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/up",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.retouch.template.RetouchReplacePhotoActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.retouch.RetouchTemplateImageGalleryActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.retouch.RetouchEditorImageGalleryActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.template.mediaselect.ScriptTemplateMediaSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.marketingscript.mediaselect.addselect.MarketingScriptAddSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.marketingscript.mediaselect.metainfo.MetaInfoInputActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "singleTop",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.smarttemplate.mediaselect.SmartTemplateSelectMediaActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.smarttemplate.mediaselect.addselect.SmartTemplateAddSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.home.HomeAiEffectMediaSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/sm",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.activity.DraftMediaSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.aiworkflow.view.FlexActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "singleTop",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libcutsame.aiworkflow.view.ImagePreviewActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aigc.ImageTemplatePreviewActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/up",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.share.bdopen.BdEntryActivity",
+    "category": "Export & Publishing",
+    "exported": true,
+    "theme": "@style/Theme.AppCompat.NoActionBar",
+    "launch_mode": "singleInstance",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.share.lemon8.BackFromLemon8Activity",
+    "category": "Export & Publishing",
+    "exported": true,
+    "theme": "@style/Theme.AppCompat.NoActionBar",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.share.bdopen.ProxyActivity",
+    "category": "Export & Publishing",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.tencent.connect.common.AssistActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.nativesettings.SettingCloneActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.nativesettings.personal.PersonalSettingActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.nativesettings.BaseNewDeveloperActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.nativesettings.language.AppLanguageChooseActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.nativesettings.region.AppRegionChooseActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.nativesettings.SettingActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.faceuassist.FaceuAssistMainActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": true,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedback.myfeedback.MyFeedbackActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedback.FeedbackTagActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/tk",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.nativesettings.privacy.TermsPoliciesActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "@style/tk",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.feedback.FeedbackActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13018d",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.MainCameraSelectActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.LvRecordActivity",
+    "category": "Camera & Video Recording",
+    "exported": true,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": [
+      {
+        "actions": [
+          "record_sdk_action"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.vega.recorder.LVSinglePlayActivity",
+    "category": "Camera & Video Recording",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.scan.ScanActivity",
+    "category": "Camera & Video Recording",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.media.player.LocalVideoPlayerActivity",
+    "category": "Camera & Video Recording",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.effect.props.view.GreenScreenMediaActivity",
+    "category": "Camera & Video Recording",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.view.selector.SelectorPreviewActivity",
+    "category": "Camera & Video Recording",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.view.digitalhuman.DigitalPicturePreviewActivity",
+    "category": "Camera & Video Recording",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.WrapperActivity",
+    "category": "Camera & Video Recording",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.view.prompt.edit.RecorderPromptDraftActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recorder.view.prompt.edit.RecorderPromptEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aicreator.ui.activity.AiStoryVoiceOverSelectActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "singleTop",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.part.AdPartEditMySceneActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.part.AdPartPromptActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.part.AdPartMyScenePreviewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.maker.crop.AdCropActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.voiceover.VoiceoverEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.component.view.AdComponentEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.debug.SmartAdDebugActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.maker.AdMakerActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.smartad.preview.SmartAdPreviewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.smartad.preview.MultiSmartAdPreviewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.adscript.view.AdScriptLoadingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.scripttovideo.ScriptToVideoLoadingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.scriptvideo.CapcutScriptVideoEditorActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.scriptvideo.gallery.ScriptVideoMediaSelectActivityV2",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cutsameedit.biz.smartvlog.compose.SmartVlogLoadingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cutsameedit.biz.template.compose.loading.LoadingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cutsameedit.biz.marketingscript.business.BusinessVideoLoadingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cutsameedit.biz.textstart.TextStartLoadingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTop",
+    "orientation": "fullSensor",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cutsameedit.biz.digitalhuman.loading.DigitalHumanTemplateLoadingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTop",
+    "orientation": "fullSensor",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.commonedit.commoneditor.CommonEditorMainActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.commonedit.commoneditor.nativeimpl.CommonEditorMainActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recordedit.ui.AdCubeVideoPreviewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/d2",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.recordedit.ui.CameraPreviewEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/d2",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.activity.CutSameEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "singleTask",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.activity.ScriptVideoCutActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "singleTask",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.alive.ExportNotificationDispatchActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aigenerator.activity.AIPaintingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aigenerator.activity.AIPaintingIntroActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aitranslator.activity.AITranslatorMainActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aitranslator.activity.AITranslatorTaskListActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aitranslator.activity.AITranslatorAuthRecordActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aitranslator.activity.AITranslatorResultPreviewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.outpainting.activity.AIExpandActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTop",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aivideodriver.view.AiVideoDriverSelectMediaActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.aivideodriver.view.DigitalHumanFamilyPictureGalleryActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.account.view.LoginActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/ua",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.account.LoginWithAtmosphereActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/ub",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.neoaccount.impl.step.auth.NeoAccountAuthActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.neoaccount.impl.process.firstlogin.FirstLoginActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.neoaccount.impl.test.NeoLoginTestActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.neoaccount.impl.step.birthday.ThirdBirthdayProxyActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.facebook.FacebookActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304c9",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.account.BirthdayActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/cp",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.account.LaunchBirthdayActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/cp",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.account.TiktokEntryActivity",
+    "category": "User Account, Login & Profile",
+    "exported": true,
+    "theme": "@style/cp",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "capcutlogintt://oauthresponse"
+        ]
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "https://www.capcut.com/tt-login/oauthresponse"
+        ]
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "https://www.capcut.net/imlv/thirdparty-auth-redirect"
+        ]
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "https://www.capcut.net/imlv/inhouse/thirdparty-auth-redirect"
+        ]
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "awfobz8zx3rodolu://response.bridge.tiktok.com"
+        ]
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "aw889s25wozf8s7e://response.bridge.tiktok.com"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.lemon.account.ToolCountryLoginActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.account.email.AccountLoginActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.account.DialogContainerActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/sr",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.account.email.EmailBindActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/fj",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.account.email.PasswordActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "@style/fj",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libsticker.view.text.font.FontManageActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/cp",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libsticker.view.text.font.myfont.view.AiFontGenerateActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/cp",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.cloud.preview.CloudFilePreviewActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.preview.PropertyFilePreviewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.creatives.preview.CreativesPreviewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTop",
+    "orientation": "userPortrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.upload.view.UploadListActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.upload.view.SelectDraftToLoadActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.group.view.GroupManagerActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.review.ShareReviewActivity",
+    "category": "Export & Publishing",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.cloud.view.CloudGroupMaterialsActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.autobackup.setting.SpaceSettingActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.brand.preview.CloudBrandEffectPreviewActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.enterprise.view.EnterpriseCreateGroupActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.enterprise.view.EnterpriseManageGroupActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.enterprise.view.EnterpriseGroupMemberManageActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.enterprise.view.EnterpriseGroupMemberAddActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304d7",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.mydrafts.MyAllDraftActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.cloud.PropertyCloudListActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.search.activity.PropertySearchActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.media.activity.PropertyMediaActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.favorites.activity.PropertyFavoriteActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.trash.activity.PropertyTrashActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.transfer.activity.PropertyTransferActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.album.PropertyLocalAlbumActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.main.aimoment.AiMomentDraftUpActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.near.CaptainTransferDraftActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/ra",
+    "launch_mode": "singleTop",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.sharedraft.activity.ResumeSharedDraftActivity",
+    "category": "Export & Publishing",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.mainpage.CloudDraftManagerActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.upload.SelectMaterialToUploadActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.group.view.GroupMemberListActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.brand.CloudBrandKitActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.cloud.activity.CloudFolderActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.property.optional.ui.home.CloudSpaceActivity",
+    "category": "Cloud Storage & Cloud Draft",
+    "exported": false,
+    "theme": "@style/vo",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.business.ad.view.HotStartSplashAdActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "singleTop",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.business.ad.view.AdInterceptActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/fs",
+    "launch_mode": "singleTop",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.subscription.widget.ComposeSubscribeActivity",
+    "category": "Payment Wall, VIP & Commerce",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.subscription.deeplink.SubscribeOutsideStubActivity",
+    "category": "Payment Wall, VIP & Commerce",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.texttovideo.main.ui.TextToVideoHomeV2Activity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.texttovideo.main.ui.TextToVideoHomeV3Activity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.texttovideo.main.ui.ToneCloneArticleEditActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edward.agent.videoplayer.VideoPlayerActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "fullSensor",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.audio.tone.clonetone.CloneToneActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.audio.textstart.recorder.AudioRecorderActivity",
+    "category": "Camera & Video Recording",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTop",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.audio.lipsync.RealHumanPicturePreviewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.audio.dubbing.page.AIDubbingActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.audio.lipsync.view.DigitalHumanLipPictureGalleryActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edit.cover.view.activity.CoverSelectActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.splitscreen.SplitScreenActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.audio.musicimport.extract.ExtractGalleryMusicActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/s7",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.audio.library.AddAudioActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.audio.library.CheckAudioActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aicreator.debug.AiCreatorDebugActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aicreator.loading.AiCreatorLoadingActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aicreator.editor.AiCreatorAIGCImagePreviewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aicreator.preview.AiCreatorResultListActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aicreator.tasklist.AiCreatorTaskListActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aicreator.style.AiCreatorStylePreviewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aicreator.tasklist.AiStoryCreatorTaskListActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.home.AiMomentHomeActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.home2.AiMomentHome2Activity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.feedback.AiMomentFeedbackSelectActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.gallery.AiMomentGalleryActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.tasklist2.AiMomentTaskListNewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.gallery.highlight.AiMomentHighlightCutActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.multipreview.AiMomentMultiplePreviewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.loading.AiMomentLoadingActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.gallery.AiMomentGuideVideoPreViewActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.aimoment.style.AiMomentStyleVideoPreViewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/Theme.AppCompat.NoActionBar",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.modeldressup.picturedressing.choosemodel.ChooseModelActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.modeldressup.picturedressing.result.ModelDressingResultActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.modeldressup.picturedressing.history.ModelDressingHistoryActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.smartads.ui.preview.SmartAdsV2PreviewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.smartads.ui.loading.SmartAdsLoadingActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.smartads.ui.history.SmartAdsHistoryActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.libdeveloper.nativesettings.DeveloperActivity",
+    "category": "Settings & Feedback",
+    "exported": true,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.adeditor.scriptvideo.OverdubToneRecordActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.commonedit.digitalhuman.preview.DigitalPreviewActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/kv",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.commonedit.digitalhuman.customize.upload.CustomizedProgressActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/AppCompatNoActionBarTheme",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.commonedit.digitalhuman.customize.gallery.DigitalHumanCustomizeGalleryActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.commonedit.digitalhuman.picture.gallery.DigitalHumanPictureGalleryActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.audio.tone.tts.debug.ToneDebugActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.edward.templatecore.editor.edit.MinimalEditorActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.GalleryActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/te",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.ui.SingleImageGalleryActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.ui.SingleVideoGalleryActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.ui.SelectMediaGalleryActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.ui.BottomSheetAlbumActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/ka",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.ui.SimpleMediaPreviewActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vd",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.main.MainMediaActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/yn",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.gallery.ui.MultiImageSelectActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/vc",
+    "launch_mode": "standard",
+    "orientation": "locked",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.safemode.ui.SafeModeActivity",
+    "category": "Other Utilities",
+    "exported": true,
+    "theme": "@style/xw",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lemon.safemode.mock.SafeModeMockActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTask",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.edit.EditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13045b",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.edit.design.stickercenter.MaterialCenterActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13047d",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.edit.design.stickercenter.albumdetail.AlbumDetailActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13047d",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.edit.design.cutout.CutoutActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f130479",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.edit.design.cutout.CutoutPicEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f130479",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.edit.design.cutout.piceditor.PicCutoutActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f130479",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.edit.design.cutout.common.CommonCutoutActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f130479",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.edit.design.cutout.aipadding.AiPaddingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f130479",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.edit.aigc.loading.AIGCLoadingActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f130479",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.applauncher.core.NotifyActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13047a",
+    "launch_mode": "singleInstance",
+    "orientation": "",
+    "intent_filters": [
+      {
+        "actions": [
+          "com.ss.android.sdk.snssdk2515"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      },
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "snssdk2515://"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.xt.retouch.export.impl.aigc.AiImageExportActivity",
+    "category": "AI Agent & Generative AI",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.gallery.refactor.GalleryActivity2",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13047a",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.gallery.refactor.PermissionActivity",
+    "category": "Media Picker & Gallery",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f130482",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.avatar.AvatarCropActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.TemplateChooseTopicActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.TemplateTopicActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.TemplateSearchActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.TemplateDetailActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/b7",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.SharePanelActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "@style/b7",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.UserHomeActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.MessageCenterActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.TemplateFeedActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.FollowActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.ProfileActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.ProfileEditActivity",
+    "category": "Video & Photo Editor",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.CreatorCourseActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.feed.impl.DataCenterActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.aimodel.impl.AiModelActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.web.WebActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.web.UserAgreementWebActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.debug.DevModelActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.debug.TemplateDebugActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.aiposter.impl.retouch.AIPosterActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.draftbox.ui.DraftBoxActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.settings.SettingsActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.settings.account.AccountAndSafeActivity",
+    "category": "User Account, Login & Profile",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.settings.dev.DevModelActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.settings.clipboard.ClipboardSettingsActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.settings.haptic.HapticFeedbackPreferenceActivity",
+    "category": "Templates & Social Feed",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.settings.bcswitch.BCSwitchActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lm.components.announce.view.AnnounceActivity",
+    "category": "Other Utilities",
+    "exported": true,
+    "theme": "@style/APKTOOL_RENAMED_0x7f130463",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.subscribe.impl.ui.SubscribeDetailActivity",
+    "category": "Payment Wall, VIP & Commerce",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.lynx.impl.LynxActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": [
+      {
+        "actions": [
+          "com.xt.retouch.lynx.impl.LynxActivity"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.xt.retouch.lynx.impl.common.container.LynxCommonActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.lynx.impl.common.container.LynxCommonTransparentActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f13047c",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.beautyAllProducer.ProducerActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.xt.retouch.lynx.api.LynxActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.vega.ug.push.notification.activity.PushNotificationActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/rz",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lm.components.lynx.debug.DebugToolActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/vm",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lm.components.lynx.debug.JSONViewerActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/Theme.AppCompat.Light",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lm.components.permission.PermissionProxyActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/wr",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.lm.components.permission.PermissionGuideActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/wr",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.pipo.common.ability.wallet.PIPOWalletDispatcherActivity",
+    "category": "Other Utilities",
+    "exported": true,
+    "theme": "",
+    "launch_mode": "singleTask",
+    "orientation": "",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "pipohybridsdk3006://pipopay/ewallet/webview"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.bytedance.hybrid.spark.page.SparkActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.ttadn.activity.TTLandingPageActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_landing_page",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.ttadn.activity.TTIABHostActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_landing_page",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.ttadn.activity.TTWebsiteActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_privacy_landing_page",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.ttadn.activity.AboutThisAdActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.ttadn.activity.TikTokPrivacyPolicyActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.ttadn.activity.TikTokReportActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.gmtcommerce.iab.impl.ui.AdWebSparkActivity",
+    "category": "Payment Wall, VIP & Commerce",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.gmtcommerce.iab.impl.history.AdWebHistoryActivity",
+    "category": "Payment Wall, VIP & Commerce",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.ss.android.ugc.aweme.rich.reward.ui.RewardAdActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.ss.android.ShowDialogActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar.Fullscreen",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.bdturing.twiceverify.TwiceVerifyWebActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f130558",
+    "launch_mode": "singleTop",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "net.openid.appauth.AuthorizationManagementActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/b8",
+    "launch_mode": "singleTask",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "net.openid.appauth.RedirectUriReceiverActivity",
+    "category": "Other Utilities",
+    "exported": true,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "com.lemon.lvoverseas://"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.bytedance.pipo.iapsolution.iap.TransparentActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/df",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.ss.android.deviceregister.AActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.facebook.CustomTabMainActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.facebook.CustomTabActivity",
+    "category": "Other Utilities",
+    "exported": true,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": [
+      {
+        "actions": [
+          "android.intent.action.VIEW"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT",
+          "android.intent.category.BROWSABLE"
+        ],
+        "data": [
+          "fbconnect://cct.com.lemon.lvoverseas"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.bytedance.push.notification.PushActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/ry",
+    "launch_mode": "singleTask",
+    "orientation": "behind",
+    "intent_filters": [
+      {
+        "actions": [
+          "com.lemon.lvoverseas.pushsdk.action"
+        ],
+        "categories": [
+          "android.intent.category.DEFAULT"
+        ],
+        "data": []
+      }
+    ]
+  },
+  {
+    "name": "com.bytedance.bdinstall.migrate.MigrateDetectorActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bd_hub_splash_sdk.SplashPrivacyPolicyActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bd_hub_splash_sdk.SplashAboutThisAdActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.android.billingclient.api.ProxyBillingActivity",
+    "category": "Payment Wall, VIP & Commerce",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.android.billingclient.api.ProxyBillingActivityV2",
+    "category": "Payment Wall, VIP & Commerce",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.adview.AppLovinFullscreenActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.NoTitleBar.Fullscreen",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.adview.AppLovinFullscreenImmersiveActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.NoTitleBar",
+    "launch_mode": "singleTop",
+    "orientation": "behind",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.sdk.AppLovinWebViewActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerDetailActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerMultiAdActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerAdUnitsListActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerAdUnitDetailActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerCmpNetworksListActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerTcfInfoListActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerTcfStringActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerTestModeNetworkActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerUnifiedFlowActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.mediation.MaxDebuggerWaterfallSegmentsActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b5",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.creative.MaxCreativeDebuggerActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b0",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/APKTOOL_RENAMED_0x7f1304b0",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.google.android.gms.common.api.GoogleApiActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "androidx.compose.ui.tooling.PreviewActivity",
+    "category": "Other Utilities",
+    "exported": true,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.google.android.gms.ads.AdActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.google.android.gms.ads.OutOfContextTestingActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.google.android.gms.ads.NotificationHandlerActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "singleTask",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.facebook.ads.AudienceNetworkActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vungle.ads.internal.ui.VungleActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTop",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTCeilingLandingPageActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_landing_page",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_landing_page",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_landing_page",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTDelegateActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_privacy_landing_page",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_app_open_ad_no_animation",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_full_screen_new",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_full_screen_new",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_full_screen_new",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_full_screen_new",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_full_screen_interaction",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_full_screen_interaction",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.sdk.openadsdk.activity.TTAdActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/tt_full_screen_new",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.mtesttools.act.TestToolMainActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "singleTask",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.mtesttools.act.AdnMainActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.mtesttools.act.SelectTestModeAdnActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.mtesttools.act.AdnDetailActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.mtesttools.act.AdRitDetailActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.mtesttools.act.AdSlotDetailActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.mtesttools.act.ShowConfigDataActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.mtesttools.act.SettingsDetailActivity",
+    "category": "Settings & Feedback",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  },
+  {
+    "name": "com.bytedance.praisedialoglib.ui.PraiseDialogActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/w0",
+    "launch_mode": "singleTask",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/db",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.mbridge.msdk.activity.MBCommonActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@style/mbridge_transparent_common_activity_style",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.mbridge.msdk.out.LoadingActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.mbridge.msdk.reward.player.MBRewardVideoActivity",
+    "category": "Other Utilities",
+    "exported": false,
+    "theme": "@android:style/Theme.Translucent.NoTitleBar",
+    "launch_mode": "standard",
+    "orientation": "",
+    "intent_filters": []
+  },
+  {
+    "name": "com.vega.launcher.precondition.PreInstallConfirmActivity",
+    "category": "Main Navigation & Bootstrap",
+    "exported": false,
+    "theme": "@style/de",
+    "launch_mode": "standard",
+    "orientation": "portrait",
+    "intent_filters": []
+  }
+]

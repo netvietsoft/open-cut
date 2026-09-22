@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginEnd="@dimen/rp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="vertical" n0:id="@id/container" n0:layout_width="wrap_content" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+        <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/canvasRatioIv" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="3.5dp" n0:scaleType="fitCenter" />
+        <com.vega.ui.TintTextView n0:textSize="11.0dp" n0:gravity="center_horizontal" n0:id="@id/canvasRatio" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:minWidth="60.0dp" n0:text="@string/ogq" n1:k1i="medium" n1:k1j="body_3" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/modal_content_list" n0:paddingLeft="8.0dp" n0:paddingTop="12.0dp" n0:paddingRight="8.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:minWidth="188.0dp" n0:paddingHorizontal="8.0dp" n0:paddingVertical="12.0dp">
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/row_input_modal_auto" n0:background="@drawable/k5q" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:paddingHorizontal="8.0dp">
+            <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n9m" n0:scaleType="fitCenter" n0:importantForAccessibility="no" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/k9d" n0:maxLines="1" n0:layout_weight="1.0" n0:layout_marginStart="8.0dp" n1:k1i="medium"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <ImageView n0:id="@id/iv_input_modal_check_auto" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/n9o" n0:importantForAccessibility="no" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/row_input_modal_video" n0:background="@drawable/k5q" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:paddingHorizontal="8.0dp">
+            <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n9p" n0:scaleType="fitCenter" n0:importantForAccessibility="no" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/k9f" n0:maxLines="1" n0:layout_weight="1.0" n0:layout_marginStart="8.0dp" n2:k1i="medium"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <ImageView n0:id="@id/iv_input_modal_check_video" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/n9o" n0:importantForAccessibility="no" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/row_input_modal_image" n0:background="@drawable/k5q" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:paddingHorizontal="8.0dp">
+            <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n9n" n0:scaleType="fitCenter" n0:importantForAccessibility="no" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/k9e" n0:maxLines="1" n0:layout_weight="1.0" n0:layout_marginStart="8.0dp" n3:k1i="medium"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <ImageView n0:id="@id/iv_input_modal_check_image" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/n9o" n0:importantForAccessibility="no" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

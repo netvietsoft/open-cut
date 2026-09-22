@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/text_group" n0:background="@drawable/k2e" n0:paddingLeft="12.0dp" n0:paddingTop="12.0dp" n0:paddingRight="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingHorizontal="12.0dp" n0:paddingVertical="12.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/icon" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/n12" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/tip_text" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:includeFontPadding="false" n0:layout_weight="1.0" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="8.0dp" n0:textFontWeight="400" n1:k1i="regular" n1:k1j="body_1" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kb" n0:gravity="center_vertical" n0:id="@id/got_it_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="36.0dp" n0:text="@string/ods" n0:includeFontPadding="false" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="4.0dp" n0:textFontWeight="500" n1:k1i="medium" n1:k1j="body_1" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

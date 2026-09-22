@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateConstraintLayout n0:id="@id/userLikeGroup" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:kr3="button"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <ImageView n0:id="@id/userLike" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/ply" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:gravity="center|top" n0:id="@id/userLikeText" n0:layout_width="50.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="-5.0dp" n0:text="  " n0:singleLine="true" n0:includeFontPadding="false" n0:shadowColor="@color/_q" n0:shadowDx="0.0" n0:shadowDy="1.0" n0:shadowRadius="2.0" n0:layout_below="@id/userLike" n1:layout_constraintTop_toBottomOf="@id/userLike" n1:k1i="medium" />
+</com.vega.ui.state.pressed.PressedStateConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bg_layout" n0:layout_width="188.0dp" n0:layout_height="wrap_content" n0:minHeight="186.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/image_edit_enhance_icon" n0:paddingTop="16.0dp" n0:layout_width="80.0dp" n0:layout_height="70.0dp" n0:layout_marginTop="20.0dp" n0:src="@drawable/pvf" n0:scaleType="centerCrop" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:gravity="center_horizontal" n0:id="@id/image_enhance_progress" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" n0:text="Generating 0%" n0:layout_marginStart="@dimen/re" n0:layout_marginEnd="@dimen/re" n2:layout_constraintBottom_toTopOf="@id/image_enhance_process_cancel" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/image_edit_enhance_icon" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/image_enhance_process_cancel" n0:background="@drawable/pve" n0:layout_width="140.0dp" n0:layout_height="32.0dp" n0:layout_marginTop="15.0dp" n0:layout_marginBottom="24.0dp" n0:text="@string/o2t" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:k1i="medium"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="#fafbff" n0:id="@id/trending_title" n0:paddingLeft="16.0dp" n0:paddingTop="16.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/kbl" n0:includeFontPadding="false" n0:paddingHorizontal="16.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/material_recommend_recycler_view" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingHorizontal="16.0dp" n2:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/trending_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

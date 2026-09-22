@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/kzr" n0:layout_width="match_parent" n0:layout_height="52.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="52.0dp">
+        <ImageView n0:id="@id/p_others_item_icon" n0:layout_width="22.0dp" n0:layout_height="22.0dp" n0:layout_centerVertical="true" />
+        <LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="16.0dp" n0:layout_toStartOf="@id/p_others_item_count" n0:layout_toEndOf="@id/p_others_item_icon">
+            <LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/p_others_item_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_weight="1.0" n0:layout_marginEnd="4.0dp" />
+                <ImageView n0:layout_gravity="center_vertical" n0:id="@id/p_others_item_icon_behind" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:src="@drawable/p4t" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView n0:id="@id/p_others_item_arrow" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/p4n" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:id="@id/p_others_item_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginEnd="4.0dp" n0:layout_toStartOf="@id/p_others_item_arrow" />
+    </RelativeLayout>
+</LinearLayout>

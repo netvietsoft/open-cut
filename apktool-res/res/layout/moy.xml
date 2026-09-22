@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/root_panel" n0:background="@color/kw0" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <FrameLayout n0:id="@id/banner_name_ll" n0:background="@drawable/q6u" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintBottom_toTopOf="@id/colorAdjustContainer" n1:layout_constraintStart_toStartOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/ks4" n0:layout_gravity="center" n0:id="@id/panel_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sp_" n0:fontFamily="sans-serif-medium" />
+            <FrameLayout n0:layout_gravity="end" n0:id="@id/root_confirmBtn" n0:layout_width="65.0dp" n0:layout_height="match_parent">
+                <ImageView n0:layout_gravity="end|center" n0:id="@id/confirmBtn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/r57" n0:layout_marginEnd="18.0dp" />
+            </FrameLayout>
+        </FrameLayout>
+        <androidx.fragment.app.FragmentContainerView n0:id="@id/colorAdjustContainer" n0:background="@color/koh" n0:layout_width="match_parent" n0:layout_height="286.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.fragment.app.FragmentContainerView n0:id="@id/bg_root_panel_fragment_container" n0:layout_width="match_parent" n0:layout_height="330.0dp" n3:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

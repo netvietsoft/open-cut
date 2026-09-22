@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/groupSmartMusicMatch" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:id="@id/tvSmartMusicMatchTitle" n0:layout_marginTop="18.0dp" n0:layout_marginBottom="2.0dp" n0:text="@string/q4b" n0:layout_marginStart="15.0dp" n1:layout_constraintBottom_toTopOf="@id/tvSmartMusicMatchContent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed" n1:layout_goneMarginBottom="18.0dp" style="@style/APKTOOL_RENAMED_0x7f130534"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_e" n0:id="@id/tvSmartMusicMatchContent" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="18.0dp" n0:text="@string/rtx" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="94.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/tvSmartMusicMatchTitle"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaCheckBox n0:layout_gravity="end|center" n0:id="@id/switchSmartMusicMatch" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="false" n0:button="@drawable/qo6" n0:track="@drawable/qlp" n0:layout_marginEnd="15.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

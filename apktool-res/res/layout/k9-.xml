@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.view.TriangleView n0:layout_gravity="center_horizontal" n0:id="@id/triangle_view_top" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="6.0dp" n0:rotation="180.0" />
+    <androidx.cardview.widget.CardView n0:id="@id/recommend_card_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:cardBackgroundColor="@color/j" n1:cardCornerRadius="8.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/triangle_view_top"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/recommend_opt_gif" n0:layout_width="176.0dp" n0:layout_height="100.0dp" n1:layout_constraintBottom_toTopOf="@id/recommend_opt_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <include n0:id="@id/recommend_opt_timer" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginEnd="4.0dp" n1:layout_constraintEnd_toEndOf="@id/recommend_opt_gif" n1:layout_constraintTop_toTopOf="@id/recommend_opt_gif" layout="@layout/k99" />
+            <ImageView n0:id="@id/recommend_go_btn" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082b43" n0:layout_marginEnd="8.0dp" n1:layout_constraintBottom_toBottomOf="@id/recommend_opt_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/recommend_opt_content" />
+            <TextView n0:textSize="14.0dp" n0:textColor="#ccffffff" n0:ellipsize="end" n0:id="@id/recommend_opt_content" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Use Retouch to become width on click" n0:maxLines="4" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/recommend_go_btn" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/recommend_opt_gif" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <com.vega.edit.base.view.TriangleView n0:layout_gravity="center_horizontal" n0:id="@id/triangle_view_bottom" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="6.0dp" />
+</LinearLayout>

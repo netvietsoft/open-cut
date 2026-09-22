@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/propertyMaterialContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.cloud.widget.tablayout.AnchorTabLayout n0:id="@id/property_material_tabs" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n1:layout_constraintEnd_toStartOf="@id/property_material_view_all" n1:layout_constraintHorizontal_chainStyle="spread_inside" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:tabIndicator="@null" n1:tabMinWidth="0.0dp" n1:tabMode="scrollable" n1:tabPaddingEnd="0.0dp" n1:tabPaddingStart="0.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="@drawable/p8s" n0:layout_width="16.0dp" n0:layout_height="40.0dp" n2:layout_constraintBottom_toBottomOf="@id/property_material_tabs" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/property_material_tabs"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="@drawable/p8t" n0:layout_width="32.0dp" n0:layout_height="40.0dp" n3:layout_constraintBottom_toBottomOf="@id/property_material_tabs" n3:layout_constraintEnd_toStartOf="@id/property_material_view_all" n3:layout_constraintTop_toTopOf="@id/property_material_tabs"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:id="@id/property_material_view_all" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n-h" n0:drawablePadding="4.0dp" n0:drawableEnd="@drawable/p4n" n0:layout_marginEnd="16.0dp" n0:textFontWeight="400" n4:layout_constraintBottom_toBottomOf="@id/property_material_tabs" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/property_material_tabs" n4:layout_constraintTop_toTopOf="@id/property_material_tabs"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.viewpager2.widget.ViewPager2 n0:id="@id/property_material_pager" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n5:layout_constraintTop_toBottomOf="@id/property_material_tabs"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@drawable/lgm" n0:layout_width="match_parent" n0:layout_height="431.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_back" n0:paddingLeft="10.0dp" n0:paddingTop="10.0dp" n0:paddingRight="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="14.0dp" n0:src="@drawable/l22" n0:layout_marginStart="6.0dp" n0:paddingHorizontal="10.0dp" n0:paddingVertical="10.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center_horizontal" n0:id="@id/header_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/iw" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/more_setting_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n3:layout_constraintTop_toBottomOf="@id/header_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout n0:id="@id/network_setting_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:id="@id/tv_network_setting" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/is" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" />
+            <LinearLayout n0:gravity="end|center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_toEndOf="@id/tv_network_setting">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:ellipsize="end" n0:id="@id/tv_network_type" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" />
+                <ImageView n0:id="@id/iv_network_arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08112e" n0:layout_centerVertical="true" n0:layout_marginStart="6.0dp" n0:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/file_size_limit_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:id="@id/tv_file_size_limit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ir" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" />
+            <ImageView n0:id="@id/iv_file_size_arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08112e" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:ellipsize="end" n0:gravity="end" n0:id="@id/tv_file_size_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginEnd="6.0dp" n0:layout_toStartOf="@id/iv_file_size_arrow" n0:layout_toEndOf="@id/tv_file_size_limit" />
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/file_range_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:id="@id/tv_file_range" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/iu" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" />
+            <ImageView n0:id="@id/iv_file_range_arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08112e" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:ellipsize="end" n0:id="@id/tv_curr_file_range" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginEnd="6.0dp" n0:layout_toStartOf="@id/iv_file_range_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

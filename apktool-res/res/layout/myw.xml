@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/q90" n0:layout_width="176.0dp" n0:layout_height="wrap_content">
+        <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center_horizontal" n0:id="@id/ivLoading" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginTop="24.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:lottie_autoPlay="true" n1:lottie_fileName="loading.json" n1:lottie_loop="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/tvBottomContext" n0:layout_width="144.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f124446" n0:maxLines="2" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:autoSizeMaxTextSize="12.0dp" n2:autoSizeMinTextSize="8.0dp" n2:bp="1.0dp" n2:autoSizeTextType="uniform" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ivLoading"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0sp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/progress" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tvBottomContext"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#95959d" n0:id="@id/tvCancel" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="24.0dp" n0:text="@string/t-k" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/progress"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_cancel" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/rr4" n0:layout_marginEnd="4.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

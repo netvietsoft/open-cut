@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextAI OpenCut — Hệ Thống Quản Trị Trung Tâm (Port 6033)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-container" id="app">
+    <!-- Sidebar Navigation / Thanh Điều Hướng Bên -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo">
+          <div class="logo-icon">▲</div>
+          <div class="logo-text">
+            <h2>NextAI</h2>
+            <span>OpenCut Admin v2.1</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="sidebar-menu">
+        <div class="menu-group-label">TỔNG QUAN HỆ THỐNG</div>
+        <a href="#/dashboard/overview" class="menu-item active" data-route="dashboard">
+          <span class="icon">📊</span>
+          <span class="label">Bảng Điều Khiển</span>
+        </a>
+
+        <div class="menu-group-label">NGƯỜI DÙNG & THIẾT BỊ</div>
+        <a href="#/users/management" class="menu-item" data-route="users">
+          <span class="icon">👥</span>
+          <span class="label">Quản Lý Người Dùng</span>
+        </a>
+        <a href="#/devices/inventory" class="menu-item" data-route="devices">
+          <span class="icon">📱</span>
+          <span class="label">Thiết Bị Đăng Ký</span>
+        </a>
+
+        <div class="menu-group-label">NỘI DUNG & TÀI NGUYÊN</div>
+        <a href="#/templates/curation" class="menu-item" data-route="templates">
+          <span class="icon">🎬</span>
+          <span class="label">Mẫu Video (CutSame)</span>
+        </a>
+        <a href="#/assets/cloudflare" class="menu-item" data-route="assets">
+          <span class="icon">☁️</span>
+          <span class="label">Kho Tệp (Cloudflare R2)</span>
+        </a>
+
+        <div class="menu-group-label">AI COPILOT & DOANH THU</div>
+        <a href="#/ai/prompts" class="menu-item" data-route="ai-prompts">
+          <span class="icon">🤖</span>
+          <span class="label">AI Prompts & MCP</span>
+        </a>
+        <a href="#/commerce/pricing" class="menu-item" data-route="commerce">
+          <span class="icon">💳</span>
+          <span class="label">Gói Giá & Paywall A/B</span>
+        </a>
+        <a href="/api-docs" target="_blank" class="menu-item api-docs-link">
+          <span class="icon">📖</span>
+          <span class="label">Swagger API Docs ↗</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="server-status">
+          <span class="status-dot"></span>
+          <span>Port 6033: ONLINE</span>
+        </div>
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Chuyển đổi giao diện Sáng / Tối">
+          <span id="themeIcon">☀️</span>
+          <span id="themeLabel">Giao diện Sáng</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area / Vùng Nội Dung Chính -->
+    <main class="main-content">
+      <!-- Top Navigation Bar / Thanh Header Trên -->
+      <header class="top-navbar">
+        <div class="header-left">
+          <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+          <div class="breadcrumb" id="breadcrumb">
+            <span class="parent-route">Trang Chủ</span> / <span class="child-route" id="breadcrumbChild">Bảng Điều Khiển</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="admin-badge">
+            <span class="badge-dot"></span>
+            <span>Admin Root</span>
+          </div>
+          <div class="user-profile">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Avatar" class="avatar">
+            <span class="username">Quản Trị Viên</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dynamic Route Container / Khung Chứa Nội Dung Động -->
+      <section class="content-body" id="routeContent">
+        <!-- Will be rendered dynamically via app.js / Sẽ được nạp động qua JavaScript -->
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal Component for Create/Edit / Cửa Sổ Modal Thêm/Sửa Dữ Liệu -->
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle">Tiêu Đề Modal</h3>
+        <button id="modalCloseBtn" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Form injected here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast / Thông Báo Tự Động -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

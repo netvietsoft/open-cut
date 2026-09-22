@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_fragment_erasure_pen_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.InterceptConstraintLayout n0:id="@id/wholePanel" n0:tag="binding_1" n0:background="@color/kw0" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <include n0:id="@id/pen_container" n0:layout_width="0.0dp" n0:layout_height="@dimen/it" n1:layout_constraintBottom_toTopOf="@id/erasure_container" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" layout="@layout/mwf" />
+        <include n0:id="@id/erasure_container" n0:layout_width="0.0dp" n0:layout_height="@dimen/is" n1:layout_constraintBottom_toTopOf="@id/bottom_bar" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" layout="@layout/mwd" />
+        <include n0:id="@id/bottom_bar" n0:layout_width="0.0dp" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070513" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" layout="@layout/mwe" />
+        <include n0:id="@id/ai_erasure" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="@dimen/ey" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" layout="@layout/mn5" />
+    </com.xt.retouch.baseui.view.InterceptConstraintLayout>
+    <com.xt.retouch.edit.base.view.DisplayPenView n0:id="@id/displayPenView" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/iu" />
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/loading" n0:tag="binding_2" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:lottie_fileName="loading_white.json" n2:lottie_loop="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/frame_pen_tips" n0:tag="binding_3" n0:layout_width="195.0dp" n0:layout_height="190.0dp" n0:layout_marginTop="148.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:lottie_fileName="loading_frame_pen.json" n3:lottie_loop="false"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

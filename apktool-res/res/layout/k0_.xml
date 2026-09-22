@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/common_editor_container" n0:background="?APKTOOL_RENAMED_0x7f0403e5" n0:fitsSystemWindows="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/btn_back" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="10.0dp" n0:src="?bt" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/btn_undo" n0:padding="4.0dp" n0:clickable="false" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="?k1t" n0:layout_marginEnd="8.0dp" n2:layout_constraintBottom_toBottomOf="@id/btn_back" n2:layout_constraintEnd_toStartOf="@id/btn_redo" n2:layout_constraintTop_toTopOf="@id/btn_back"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/btn_redo" n0:padding="4.0dp" n0:clickable="false" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="?ktw" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="@id/btn_back" n3:layout_constraintEnd_toStartOf="@id/btn_finish" n3:layout_constraintTop_toTopOf="@id/btn_back"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="?a0" n0:gravity="center" n0:id="@id/btn_finish" n0:background="?aj" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:text="@string/lb5" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="12.0dp" n0:textFontWeight="600" n4:layout_constraintBottom_toBottomOf="@id/btn_back" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="@id/btn_back" n4:k1i="medium"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.commoneditor.CommonEditorInputView n0:id="@id/input_text" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginLeft="20.0dp" n0:layout_marginTop="44.0dp" n0:layout_marginRight="20.0dp" n0:layout_marginHorizontal="20.0dp" n5:layout_constraintBottom_toTopOf="@id/suggestion_tool" n5:layout_constraintTop_toTopOf="parent" n5:layout_goneMarginBottom="16.0dp"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.TextInputSampleView n0:textSize="14.0sp" n0:textColor="?ku3" n0:id="@id/content_sample" n0:background="@drawable/qdv" n0:paddingLeft="12.0dp" n0:paddingTop="4.0dp" n0:paddingRight="12.0dp" n0:paddingBottom="4.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingHorizontal="12.0dp" n0:paddingVertical="4.0dp" n6:layout_constraintStart_toStartOf="@id/input_text" n6:layout_constraintTop_toTopOf="@id/input_text"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.commoneditor.CommonEditorRewriteView n0:id="@id/rewrite_text" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="44.0dp" n7:layout_constraintBottom_toTopOf="@id/rewrite_word_count_view" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.commoneditor.CommonEditorWordCountView n0:id="@id/rewrite_word_count_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="10.0dp" n8:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.commoneditor.CommonEditorSuggestTool n0:id="@id/suggestion_tool" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

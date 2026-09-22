@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lg_" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:id="@id/tv_model_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintEnd_toStartOf="@id/tv_model_indicator" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" n1:k1j="sub_title"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#801c283d" n0:id="@id/tv_model_desc" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/tv_model_indicator" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_model_title" n2:k1i="regular" n2:k1j="body_2"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/tv_model_indicator" n0:visibility="invisible" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

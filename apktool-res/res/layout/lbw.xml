@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:id="@id/shareOverseaRoot" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/copyLinkOverseaBtn" n0:layout_width="60.0dp" n0:layout_height="88.0dp">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/qy7" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="60.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1218e8" n0:maxLines="2" n0:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/teamShareBtnOversea" n0:layout_width="60.0dp" n0:layout_height="88.0dp">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/pqa" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="60.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/m_u" n0:maxLines="2" n0:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/insBtn" n0:layout_width="60.0dp" n0:layout_height="88.0dp">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/lum" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="60.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/msx" n0:maxLines="2" n0:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/whatsAppBtn" n0:layout_width="60.0dp" n0:layout_height="88.0dp">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/lup" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="60.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/rck" n0:maxLines="2" n0:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/faceBookBtn" n0:layout_width="60.0dp" n0:layout_height="88.0dp">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/lul" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="60.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f121273" n0:maxLines="2" n0:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/otherBtn" n0:visibility="gone" n0:layout_width="60.0dp" n0:layout_height="88.0dp">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/ps7" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/qtq" n0:singleLine="false" />
+    </LinearLayout>
+</LinearLayout>

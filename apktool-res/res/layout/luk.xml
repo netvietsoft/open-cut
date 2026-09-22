@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:gravity="center" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/imageView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.ui.widget.ItemLoadingView n0:id="@id/loadingView" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n0:layout_centerInParent="true" />
+    <ImageView n0:id="@id/failedView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" n0:layout_centerInParent="true" />
+</RelativeLayout>

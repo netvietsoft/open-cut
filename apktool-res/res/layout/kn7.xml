@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/model_image" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:placeholderImage="@drawable/llo" n1:roundedCornerRadius="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/image_is_checked" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="5.0dp" n0:src="@drawable/pmk" n0:layout_marginEnd="5.0dp" n2:layout_constraintEnd_toEndOf="@id/model_image" n2:layout_constraintTop_toTopOf="@id/model_image"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

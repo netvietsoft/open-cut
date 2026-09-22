@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ad_credit_view" n0:background="@drawable/lab" n0:layout_width="match_parent" n0:layout_height="44.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_translation_shadow" n0:background="@drawable/nu_" n0:layout_width="155.0dp" n0:layout_height="80.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/s-" n0:id="@id/iv_template_cost" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mc7" n0:layout_marginStart="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/s-" n0:id="@id/iv_template_cost_num" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="34" n0:layout_marginStart="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toEndOf="@id/iv_template_cost" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.rollingtv.RollingTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/s-" n0:gravity="center" n0:layout_gravity="center|bottom" n0:id="@id/rolling_tv_credit_left_num" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="0" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/s-" n0:id="@id/iv_credit_left" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mc3" n0:layout_marginEnd="4.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toStartOf="@id/rolling_tv_credit_left_num" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/lottieView_credit_logo" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:translationX="7.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toStartOf="@id/iv_credit_left" n6:layout_constraintTop_toTopOf="parent" n6:lottie_autoPlay="false" n6:lottie_fileName="credit_lightning.json" n6:lottie_loop="false"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

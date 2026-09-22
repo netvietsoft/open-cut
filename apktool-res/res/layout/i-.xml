@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/ldh" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/close" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/tt_to_edit_dialog_close_icon" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/video_cover" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="32.0dp" n0:layout_marginRight="24.0dp" n0:scaleType="centerInside" n0:adjustViewBounds="true" n0:maxWidth="218.0dp" n0:maxHeight="218.0dp" n0:layout_marginHorizontal="24.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:roundedCornerRadius="4.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#46464c" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="24.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f123185" n0:paddingStart="24.0dp" n0:paddingEnd="24.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/video_cover"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

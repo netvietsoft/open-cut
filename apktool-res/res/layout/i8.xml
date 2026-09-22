@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/qgm" n0:paddingLeft="24.0dp" n0:paddingTop="24.0dp" n0:paddingRight="24.0dp" n0:paddingBottom="12.0dp" n0:layout_width="279.0dp" n0:layout_height="wrap_content" n0:paddingHorizontal="24.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.ContentTextView n0:textSize="14.0sp" n0:textColor="@color/mm" n0:id="@id/content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:lineSpacingExtra="@dimen/pa" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.StrongButton n0:textSize="16.0sp" n0:textColor="@color/l-" n0:id="@id/confirm" n0:background="@drawable/qpo" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="20.0dp" n3:layout_constraintTop_toBottomOf="@id/content"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="16.0sp" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/cancel" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/confirm" n4:kr3="button"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

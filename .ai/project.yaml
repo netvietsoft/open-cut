@@ -1,0 +1,69 @@
+project:
+  name: NextAI-OpenCut
+  version: 2.1.0-reconstruction
+  status: development
+  brand: NextAI / NextAITechnology
+  package_name: com.nextai.opencut
+  port: 6033
+
+stack:
+  mobile:
+    platform: android
+    languages:
+      - kotlin
+      - java
+      - cpp
+    ui_framework: jetpack-compose-multiplatform
+    layout_engine: yoga-flexbox
+    dynamic_ui: lynx
+    agent_core: kotlin-multiplatform-kmp
+    native_engine: middlebridge-cpp20
+  backend:
+    runtime: nodejs-20
+    language: typescript
+    worker: golang
+    port: 6033
+  database:
+    relational: postgresql-16
+    local_mock: sqlite3
+    cache: redis-7
+  storage:
+    provider: cloudflare-r2
+  ai:
+    protocol: model-context-protocol-mcp
+    streaming: server-sent-events-sse
+
+commands:
+  install: npm install
+  build: npm run build
+  lint: npm run lint
+  test: npm test
+  test_playwright: npx playwright test tests/playwright/admin_cms.spec.ts
+
+git:
+  default_branch: main
+  use_worktree: true
+
+ai:
+  max_fix_cycles: 5
+  require_task_id: true
+  require_review: true
+  require_security_review: true
+  dual_comment_required: true
+
+design:
+  require_gate_for_ui_changes: true
+  require_human_approval: true
+  require_visual_qa: true
+  designer_can_modify_production_ui: false
+  implementation_owner: frontend
+  artifact_root: design/
+  state_root: .ai/design/
+
+reconstruction:
+  parity_gate:
+    behavior: 0.95
+    ui: 0.95
+    api: 1.00
+    data: 0.98
+    critical_features_must_pass: true

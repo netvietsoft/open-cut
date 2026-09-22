@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lar" n0:padding="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:minHeight="192.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:id="@id/edit_info_cover_card" n0:layout_width="90.0dp" n0:layout_height="160.0dp" n0:elevation="0.0dp" n1:cardCornerRadius="8.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_bias="0.0"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/edit_info_cover" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <View n0:background="#66000000" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <TextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="#b3f6f7fe" n0:gravity="center" n0:layout_gravity="bottom" n0:id="@id/edit_info_cover_mask" n0:background="#33000000" n0:paddingTop="3.0dp" n0:paddingBottom="3.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/qj8" n0:paddingStart="4.0dp" n0:paddingEnd="4.0dp" />
+    </androidx.cardview.widget.CardView>
+    <com.vega.templatepublish.widget.BackEditText n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:textColorHint="#757580" n0:id="@id/edit_info_name" n0:background="@null" n0:saveEnabled="false" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:hint="@string/l8l" n0:imeOptions="actionDone" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toTopOf="@id/edit_info_desc" n2:layout_constraintEnd_toStartOf="@id/edit_info_cover_card" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_bias="0.13" n2:layout_constraintVertical_chainStyle="packed"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.templatepublish.widget.BackEditText n0:textSize="12.0dp" n0:textColor="#b2f6f7fe" n0:textColorHint="#757580" n0:gravity="top" n0:id="@id/edit_info_desc" n0:background="@null" n0:saveEnabled="false" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="12.0dp" n0:hint="@string/APKTOOL_RENAMED_0x7f121066" n0:inputType="textMultiLine" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toTopOf="@id/edit_info_hashtag" n3:layout_constraintEnd_toStartOf="@id/edit_info_cover_card" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/edit_info_name"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#b2f6f7fe" n0:gravity="center" n0:id="@id/edit_info_hashtag" n0:background="@drawable/k23" n0:padding="6.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/moh" n0:includeFontPadding="false" n0:drawableStart="@drawable/mp5" n0:layout_marginEnd="8.0dp" n4:APKTOOL_RENAMED_0x7f040478="#b2f6f7fe" n4:layout_constraintBottom_toBottomOf="@id/topGuideLine" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/topGuideLine" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintGuide_begin="160.0dp" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textColor="@color/_r" n0:id="@id/title_tips" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n6:layout_constraintBottom_toTopOf="@id/edit_info_tag_state_container" n6:layout_constraintTop_toBottomOf="@id/edit_info_hashtag"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.StateViewGroupLayout n0:id="@id/edit_info_tag_state_container" n0:focusable="true" n0:focusableInTouchMode="true" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n7:layout_constrainedHeight="true" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintTop_toBottomOf="@id/title_tips" n7:layout_constraintVertical_bias="0.0"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="vertical" n0:tag="content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp">
+            <View n0:id="@id/edit_info_tag_divider" n0:background="#29ffffff" n0:layout_width="match_parent" n0:layout_height="1.0dp" />
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/edit_info_tag_list" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.vega.ui.widget.StateViewGroupLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

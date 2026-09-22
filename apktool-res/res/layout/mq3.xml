@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_graffiti_pen_text_font_layout_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/graffiti_pen_text_font_panel" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/textFontGroupList" n0:layout_width="match_parent" n0:layout_height="45.0dp" n0:overScrollMode="never" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <androidx.viewpager2.widget.ViewPager2 n0:orientation="horizontal" n0:id="@id/textFontViewPager" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/textFontGroupList"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/textFontRetryLayout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="44.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toBottomOf="@id/textFontGroupList"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <TextView n0:textSize="12.0dp" n0:textColor="#99dedfd9" n0:id="@id/textView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ti8" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+            <ImageView n0:id="@id/imageView2" n0:layout_width="11.0dp" n0:layout_height="11.0dp" n0:src="@drawable/rgl" n0:layout_marginStart="5.0dp" n3:layout_constraintBottom_toBottomOf="@id/textView" n3:layout_constraintStart_toEndOf="@id/textView" n3:layout_constraintTop_toTopOf="@id/textView" />
+            <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/text_template_loading" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:lottie_fileName="loading_white.json" n3:lottie_loop="true" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

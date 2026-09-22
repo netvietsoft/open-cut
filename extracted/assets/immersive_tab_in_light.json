@@ -1,0 +1,394 @@
+{
+  "v": "5.6.9",
+  "fr": 60,
+  "ip": 0,
+  "op": 271,
+  "w": 72,
+  "h": 72,
+  "nm": "Button body",
+  "ddd": 0,
+  "assets": [
+    {
+      "id": "image_0",
+      "w": 72,
+      "h": 72,
+      "u": "",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAAAABAAAAAQBPJcTWAAAAJHpUWHRDcmVhdG9yAAAImXNMyU9KVXBMK0ktUnBNS0tNLikGAEF6Bs5qehXFAAADbElEQVR4nO2bUW4TMRCG/9kskCqLMFIq5XE5AXAC0hPQnoBygsIJ2p6gcIKGExBO0NyAcgPzFilBWMpus6G7OzyUQtMkcgC7dit/j04yY32yx7u2AwQCgYA7aN0vCpGK8/M8JWJhs0N/QxnHslBDaTOHVlCStLsVsA+ga7Mj/wyRjIDDfDLqWQm/6gMhUjErs30Ab2wkNg6RjGrs5Pno1GjYZY1CpOJHmZ8w+JnJZDeAipi2TEqKljXOymz/FsoBAFETnzRFJzUVcEFQkrS7uC3TajmCyvLYVLAFQTWwZyq4Q7pCpEZW2zlBQgjBwLaJwK6ZnWe7JuLMCSrL+DbWnaVQxE9NxFlapO8CzPTYRJw7KwjAIxNB7rIgIwRBGoIgDUGQhiBIQxCkIQjSEARpiC3GVhHoAwDUhJdgTi3msoY1QRzHz/Nf+8VN0XkXVdUBM7+ylc8WtqbYp6ub6YUayrPJaDdieg4iufpn/mFFEBF/X9ae56PT6WT0hIFDG3lt4KRIF9n4gOP4CYCBi/x/g7NVrFBDOc3GW0z02udp53yZLyajHjcaW0QXK55vOBcE/CniRLwDQLnuz1W8EHTJ2eRbH+xXAfdKEAA0CEZPRv8X7wRVTEY2203hlaCN1uYeiA9c9+MqNt/F1qYpOunFaSh3XfflOk4FXVySyPa4LN8A8Obe0VWcCUqSdndW5ccAUhvxI9AXM3FuGCFSsZG0jyrgxOYWSAXum4hjZQQxU7qsvflwc3dWZkewPJ2IqDedjAYmYtkaQd1Wa/P3OX9TdNKNpH1CzMewX2sG9xutt6aCWatBNfHnjaTdJ2LFZbkNk2KIJJjlfBPLmulDkY0HU4yNpbJdpLeZ175Iq0OBcfjgXtJTSt7Y+5oXz0FaiCQ3GluFGkqTo2MdvHqSXsWlHBe5vRdERD1XcoBbIKhmdrqR5r2gZlxKl/m9F+SaIEhDEKQhCNIQBGkIgjQEQRqCIA1BkIb5P7PEsXTUD2+ZE1SoofT5poULFqYYOX45vI5SSrrMvyDofly+82cUkfNz+gVBSilV1vDiGkpEeO+6Dys3jO+1Np/FET46vL7bn2bjHUe5f7NymT/PR6fubn7R+wdx8vrm8y6y1pFDU3RSVFU3Qv1i1aGgAVQE+lqB+0U2HljKEQgEAoFAIHDJT6buIHPw9oF0AAAAAElFTkSuQmCC",
+      "e": 1
+    },
+    {
+      "id": "image_1",
+      "w": 72,
+      "h": 72,
+      "u": "",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAAAABAAAAAQBPJcTWAAAAJHpUWHRDcmVhdG9yAAAImXNMyU9KVXBMK0ktUnBNS0tNLikGAEF6Bs5qehXFAAACNElEQVR4nO3ZvW7TUBgG4PcjtuO/VEaKpYy5hIzZSDZGRsYyMnIH7RXAHXAJZc1E2GAiY5litkArYYTrGtvNYaEoDVb5SZzkNO+z2Z/Oj14l5xwdA0RERERERERERERERERERERERERERER3S2PbE9gk0wt7ju09bLgHcZkl8bbns1NML+w5fvuL47eV0wqndtDp/k07qXleO8EOOl0py/cAgut3AplYhjeM4+jWX9K92me3C66uBlgIBwAUVO97mZz8qeleBGQ3ilcCTCpKA7cVvryt7V4s0lmWZQ33YCTz+SEAe6ncMy0vKPN0VNV2LwICgDJLYsNy3wlwWFHuW5aLIk/fLBe0XKQdv30C4NG6+xXgKE3Oj5fe6eXnjjStq/+m4d9f3Nn2YpH+F1mZ9BaftQvIRlbfCVgkgmFEN17VNliNbL99JMCDNXcbl0qOi4uzquMAEdFWaLlIm17YM0Q9h0h3rR0rNWka/pPFc5CWATmtcAqlunX0rYBhlpyPr5/1OwcFnW5d4VTRLqAsnkUQiTY1nrGpgdZJNRrD5RvCG/43QKWixb8XoOkaBPxaqF+jMiR5cZmcPVvHONreB82LdGY1nQ+APK4o903T/VoW6dtVx9E2IAAo8stTo+l9lKq7IUG/aXqjokhnq4yhdUAAUObpxLBcEWCwVLIh+FTk6XiV/rUPCADKPB1XhBQrw3i66gfCOxEQ8FtIcalkmH/7fLrtee0c228PgqBbvf0TEWnmBwFxqEKb07M2AAAAAElFTkSuQmCC",
+      "e": 1
+    }
+  ],
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 2,
+      "nm": "Button body black.png",
+      "cl": "png",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": [
+                  0.833
+                ],
+                "y": [
+                  0.833
+                ]
+              },
+              "o": {
+                "x": [
+                  0.167
+                ],
+                "y": [
+                  0.167
+                ]
+              },
+              "t": 0,
+              "s": [
+                100
+              ]
+            },
+            {
+              "i": {
+                "x": [
+                  0.833
+                ],
+                "y": [
+                  0.833
+                ]
+              },
+              "o": {
+                "x": [
+                  0.167
+                ],
+                "y": [
+                  0.167
+                ]
+              },
+              "t": 10,
+              "s": [
+                0
+              ]
+            },
+            {
+              "i": {
+                "x": [
+                  0.833
+                ],
+                "y": [
+                  0.833
+                ]
+              },
+              "o": {
+                "x": [
+                  0.167
+                ],
+                "y": [
+                  0.167
+                ]
+              },
+              "t": 220,
+              "s": [
+                0
+              ]
+            },
+            {
+              "t": 240,
+              "s": [
+                100
+              ]
+            }
+          ],
+          "ix": 11
+        },
+        "r": {
+          "a": 0,
+          "k": 0,
+          "ix": 10
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            35.75,
+            36,
+            0
+          ],
+          "ix": 2
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            36,
+            36,
+            0
+          ],
+          "ix": 1
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ],
+          "ix": 6
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 769,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 2,
+      "ty": 2,
+      "nm": "Switch corner mark black.png",
+      "cl": "png",
+      "refId": "image_1",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 0,
+          "k": 100,
+          "ix": 11
+        },
+        "r": {
+          "a": 0,
+          "k": 0,
+          "ix": 10
+        },
+        "p": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": 0.21,
+                "y": 1
+              },
+              "o": {
+                "x": 0.2,
+                "y": 0.045
+              },
+              "t": 0,
+              "s": [
+                36,
+                36,
+                0
+              ],
+              "to": [
+                -6,
+                -5.083,
+                0
+              ],
+              "ti": [
+                6,
+                5.083,
+                0
+              ]
+            },
+            {
+              "i": {
+                "x": 0.21,
+                "y": 0.21
+              },
+              "o": {
+                "x": 0.2,
+                "y": 0.2
+              },
+              "t": 20,
+              "s": [
+                0,
+                5.5,
+                0
+              ],
+              "to": [
+                0,
+                0,
+                0
+              ],
+              "ti": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "i": {
+                "x": 0.21,
+                "y": 1
+              },
+              "o": {
+                "x": 0.2,
+                "y": 0.042
+              },
+              "t": 220,
+              "s": [
+                0,
+                5.5,
+                0
+              ],
+              "to": [
+                6,
+                5.083,
+                0
+              ],
+              "ti": [
+                -6,
+                -5.083,
+                0
+              ]
+            },
+            {
+              "t": 240,
+              "s": [
+                36,
+                36,
+                0
+              ]
+            }
+          ],
+          "ix": 2
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            36,
+            36,
+            0
+          ],
+          "ix": 1
+        },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": [
+                  0.21,
+                  0.21,
+                  0.21
+                ],
+                "y": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "o": {
+                "x": [
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "y": [
+                  0.045,
+                  0.045,
+                  0
+                ]
+              },
+              "t": 0,
+              "s": [
+                100,
+                100,
+                100
+              ]
+            },
+            {
+              "i": {
+                "x": [
+                  0.21,
+                  0.21,
+                  0.21
+                ],
+                "y": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "o": {
+                "x": [
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "y": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "t": 20,
+              "s": [
+                172,
+                172,
+                100
+              ]
+            },
+            {
+              "i": {
+                "x": [
+                  0.21,
+                  0.21,
+                  0.21
+                ],
+                "y": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "o": {
+                "x": [
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "y": [
+                  0.042,
+                  0.042,
+                  0
+                ]
+              },
+              "t": 220,
+              "s": [
+                172,
+                172,
+                100
+              ]
+            },
+            {
+              "t": 240,
+              "s": [
+                100,
+                100,
+                100
+              ]
+            }
+          ],
+          "ix": 6
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 769,
+      "st": 0,
+      "bm": 0
+    }
+  ],
+  "markers": []
+}

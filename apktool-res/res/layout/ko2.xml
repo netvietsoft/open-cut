@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/recommend_grid_view_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/view_icon_placeholder" n0:background="@drawable/km_" n0:layout_width="56.0dp" n0:layout_height="56.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/la_loading" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n2:layout_constraintBottom_toBottomOf="@id/view_icon_placeholder" n2:layout_constraintEnd_toEndOf="@id/view_icon_placeholder" n2:layout_constraintStart_toStartOf="@id/view_icon_placeholder" n2:layout_constraintTop_toTopOf="@id/view_icon_placeholder" n2:lottie_autoPlay="true" n2:lottie_fileName="circle_loading_w.json" n2:lottie_loop="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_failed" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/mju" n3:layout_constraintBottom_toBottomOf="@id/view_icon_placeholder" n3:layout_constraintEnd_toEndOf="@id/view_icon_placeholder" n3:layout_constraintStart_toStartOf="@id/view_icon_placeholder" n3:layout_constraintTop_toTopOf="@id/view_icon_placeholder"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/view_text_placeholder" n0:background="@drawable/knl" n0:layout_width="200.0dp" n0:layout_height="14.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="24.0dp" n4:layout_constraintBottom_toTopOf="@id/view_text_placeholder2" n4:layout_constraintStart_toEndOf="@id/view_icon_placeholder" n4:layout_constraintTop_toTopOf="parent" n4:layout_constraintVertical_chainStyle="packed"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/view_text_placeholder2" n0:background="@drawable/knl" n0:layout_width="100.0dp" n0:layout_height="14.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="24.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintStart_toEndOf="@id/view_icon_placeholder" n5:layout_constraintTop_toBottomOf="@id/view_text_placeholder"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#66e5e9fa" n0:id="@id/tv_failed_tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qns" n0:layout_marginStart="12.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toEndOf="@id/view_icon_placeholder" n6:layout_constraintTop_toTopOf="parent" n6:k1i="medium"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

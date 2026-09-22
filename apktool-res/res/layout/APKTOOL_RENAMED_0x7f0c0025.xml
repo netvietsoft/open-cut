@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.tux.widget.RadiusLayout n0:id="@id/radius_layout" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.tux.sheet.TuxSheetContainer n0:id="@id/sheet_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.bytedance.tux.sheet.TuxSheetNavBarContainer n0:id="@id/sheet_nav_bar_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <ViewStub n0:id="@id/sheet_content_stub" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_below="@id/sheet_nav_bar_container" />
+        <com.bytedance.tux.sheet.sheet.TuxSheetHandle n0:id="@id/sheet_handle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_alignParentTop="true" n0:layout_centerHorizontal="true" />
+    </com.bytedance.tux.sheet.TuxSheetContainer>
+</com.bytedance.tux.widget.RadiusLayout>

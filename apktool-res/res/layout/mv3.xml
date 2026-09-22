@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_commom_retry_0" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/layout_loading" n0:layout_width="wrap_content" n0:layout_height="76.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+        <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/loading" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:lottie_fileName="loading.json" n1:lottie_loop="true" />
+        <TextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="240.0dp" n0:text="@string/srh" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/layout_retry" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+        <ImageView n0:id="@id/iv_retry" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08360c" n0:contentDescription="@string/srg" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/kxq" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="223.0dp" n0:text="@string/srg" n0:layout_marginStart="12.0dp" n1:layout_constraintStart_toEndOf="@id/iv_retry" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_item_skin_color_0" n0:layout_width="56.0dp" n0:layout_height="72.0dp" n0:layout_marginStart="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.SimpleRoundImageView n0:id="@id/item_pic" n0:background="@color/kui" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:ks8="2.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="9.0dp" n0:textColor="@color/kxw" n0:id="@id/item_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="2.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:tag="binding_1" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/rae" n0:scaleType="centerCrop" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/select_icon" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/rep" />
+    <com.xt.retouch.baseui.AutoLottieAnimationView n0:id="@id/loading" n0:tag="binding_2" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:lottie_fileName="loading_white.json" n4:lottie_loop="true"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_top_right_icon" n0:background="@drawable/r-j" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="15.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/r6-" n0:layout_marginEnd="3.0dp" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:id="@id/iv_limit_free" n0:visibility="gone" n0:layout_width="25.0dp" n0:layout_height="10.0dp" n0:layout_marginTop="2.0dp" n0:src="@drawable/rlj" n0:layout_marginEnd="2.0dp" />
+    </FrameLayout>
+    <TextView n0:textSize="8.0dp" n0:textColor="@android:color/black" n0:layout_gravity="end|top" n0:id="@id/tv_limit_free" n0:background="@drawable/q81" n0:paddingLeft="2.0dp" n0:paddingRight="2.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/to0" n0:layout_marginEnd="2.0dp" n0:paddingHorizontal="2.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

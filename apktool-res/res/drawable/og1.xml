@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ogj" android:state_activated="true" />
+    <item android:state_selected="true" android:drawable="@drawable/og5" />
+    <item android:drawable="@drawable/og3" />
+</selector>

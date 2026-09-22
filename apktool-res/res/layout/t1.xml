@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/voice_customize_container" n0:visibility="visible" n0:layout_width="300.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginStart="10.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/rvMusic"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <TextView n0:textSize="12.0dp" n0:textColor="#808289" n0:id="@id/voice_customize_string" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/_3" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <TextView n0:textSize="12.0dp" n0:textColor="#00cae0" n0:id="@id/voice_customize_string_next" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/_1" n0:layout_marginStart="3.0dp" n1:layout_constraintStart_toEndOf="@id/voice_customize_string" n1:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

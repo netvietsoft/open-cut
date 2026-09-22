@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_search_panel_container" n0:tag="layout/xt_fragment_sticker_search_0" n0:background="@color/kor" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_search_result" n0:background="@color/kw0" n0:visibility="invisible" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:overScrollMode="never" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_hot_words_container" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070507" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/rv_search_hot_words" n0:visibility="visible" n0:layout_width="0.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="8.0dp" n0:overScrollMode="never" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_copyright_container" n0:background="@color/kpo" n0:visibility="invisible" n0:clickable="true" n0:layout_width="0.0dp" n0:layout_height="56.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/kra" n0:ellipsize="end" n0:gravity="start" n0:id="@id/tv_author_name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/t57" n0:singleLine="true" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="10.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/iv_author" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.SimpleRoundImageView n0:id="@id/iv_author" n0:layout_width="34.0dp" n0:layout_height="34.0dp" n0:scaleType="fitCenter" n0:layout_marginEnd="20.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:ks8="4.0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ll_network_error" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/csl_hot_words_container"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_network_error_loading" n0:background="@drawable/rja" n0:layout_width="12.0dp" n0:layout_height="12.0dp" />
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/kra" n0:layout_gravity="center_vertical" n0:id="@id/tv_network_error" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t5-" n0:layout_marginStart="6.0dp" />
+    </LinearLayout>
+    <com.xt.retouch.baseui.AutoLottieAnimationView n0:id="@id/lottie_loading" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/csl_hot_words_container" n5:lottie_fileName="loading_white.json" n5:lottie_loop="true"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

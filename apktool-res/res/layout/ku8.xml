@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.edit.base.favorite.FavoriteView n0:id="@id/parent" n0:layout_width="match_parent" n0:layout_height="wrap_content" style="@style/u0"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.widget.MaterialDraweeView n0:layout_gravity="center" n0:id="@id/image" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_margin="8.0dp" n1:actualImageScaleType="fitCenter" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/itemLoadingView" n0:background="@drawable/k8z" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintDimensionRatio="1:1" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:id="@id/loadingView" n0:layout_width="20.0dp" n0:layout_height="20.0dp" />
+    </FrameLayout>
+    <ImageView n0:id="@id/itemErrorView" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:src="@drawable/odn" n0:scaleType="center" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:id="@id/vip_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="3.0dp" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toTopOf="@id/parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:kml="small" />
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:layout_gravity="center_vertical" n0:id="@id/vip_material_label" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="1.0dp" n4:k1i="bold" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="8.0dp" n0:textColor="@color/knt" n0:id="@id/royalty_free_label" n0:background="@drawable/lrh" n0:paddingLeft="2.0dp" n0:paddingTop="1.0dp" n0:paddingRight="2.0dp" n0:paddingBottom="1.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f122f54" n0:paddingHorizontal="2.0dp" n0:paddingVertical="1.0dp" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/unDownloadView" n0:background="@drawable/kgn" n0:padding="3.0dp" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_margin="3.0dp" n0:src="@drawable/mnj" n0:scaleType="fitCenter" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</com.vega.edit.base.favorite.FavoriteView>

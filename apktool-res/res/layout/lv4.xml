@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="-10.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/dragTimeLayout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="46.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/tvDragStartTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n1:layout_constraintEnd_toStartOf="@id/tvDragTimeDivider" n1:layout_constraintHorizontal_chainStyle="packed" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/tvDragTimeDivider" n0:background="@drawable/APKTOOL_RENAMED_0x7f08090e" n0:layout_width="1.0dp" n0:layout_height="4.0dp" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp" n2:layout_constraintBottom_toBottomOf="@id/tvDragStartTime" n2:layout_constraintEnd_toStartOf="@id/tvDragEndTime" n2:layout_constraintStart_toEndOf="@id/tvDragStartTime" n2:layout_constraintTop_toTopOf="@id/tvDragStartTime"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#66e5e9fa" n0:id="@id/tvDragEndTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/tvDragTimeDivider" n3:layout_constraintTop_toTopOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.ui.SeekBarSliderView n0:id="@id/svProgressBar" n0:layout_width="match_parent" n0:layout_height="8.0dp" n0:layout_marginBottom="2.0dp" n4:APKTOOL_RENAMED_0x7f0404f1="true" n4:kko="@color/_r" n4:kkt="@color/APKTOOL_RENAMED_0x7f060486"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.ColorSelectView n0:id="@id/csvTextColor" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_marginTop="8.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/uf"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/textStartSpace" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="24.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/sliderStartSpace" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="14.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/sliderEndSpace" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginEnd="24.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvShadowOpacity" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/rob" n5:layout_constraintStart_toEndOf="@id/textStartSpace" n5:layout_constraintTop_toBottomOf="@id/csvTextColor" style="@style/yo"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svShadowAlpha" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n6:APKTOOL_RENAMED_0x7f04046d="false" n6:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n6:APKTOOL_RENAMED_0x7f040549="10.0dp" n6:APKTOOL_RENAMED_0x7f0405b7="true" n6:layout_constraintEnd_toStartOf="@id/sliderEndSpace" n6:layout_constraintStart_toEndOf="@id/sliderStartSpace" n6:layout_constraintTop_toBottomOf="@id/tvShadowOpacity" n6:kkt="@color/APKTOOL_RENAMED_0x7f060639" n6:kkx="4.0dp" n6:kp6="true" n6:ksr="4.0dp"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvShadowBlur" n0:layout_height="wrap_content" n0:text="@string/mlj" n7:layout_constraintStart_toEndOf="@id/textStartSpace" n7:layout_constraintTop_toBottomOf="@id/svShadowAlpha" style="@style/yo"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svShadowSmoothing" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n8:APKTOOL_RENAMED_0x7f04046d="false" n8:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n8:APKTOOL_RENAMED_0x7f040549="10.0dp" n8:APKTOOL_RENAMED_0x7f0405b7="true" n8:layout_constraintEnd_toStartOf="@id/sliderEndSpace" n8:layout_constraintStart_toEndOf="@id/sliderStartSpace" n8:layout_constraintTop_toBottomOf="@id/tvShadowBlur" n8:kkt="@color/APKTOOL_RENAMED_0x7f060639" n8:kkx="4.0dp" n8:kp6="true" n8:ksr="4.0dp"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvShadowDistance" n0:layout_height="wrap_content" n0:text="@string/ljf" n9:layout_constraintStart_toEndOf="@id/textStartSpace" n9:layout_constraintTop_toBottomOf="@id/svShadowSmoothing" style="@style/yo"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svShadowDistance" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n10:APKTOOL_RENAMED_0x7f04046d="false" n10:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n10:APKTOOL_RENAMED_0x7f040549="10.0dp" n10:APKTOOL_RENAMED_0x7f0405b7="true" n10:layout_constraintEnd_toStartOf="@id/sliderEndSpace" n10:layout_constraintStart_toEndOf="@id/sliderStartSpace" n10:layout_constraintTop_toBottomOf="@id/tvShadowDistance" n10:kkt="@color/APKTOOL_RENAMED_0x7f060639" n10:kkx="4.0dp" n10:kp6="true" n10:ksr="4.0dp"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvShadowAngle" n0:layout_height="wrap_content" n0:text="@string/g_" n11:layout_constraintStart_toEndOf="@id/textStartSpace" n11:layout_constraintTop_toBottomOf="@id/svShadowDistance" style="@style/yo"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svShadowAngle" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n12:APKTOOL_RENAMED_0x7f04046d="false" n12:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n12:APKTOOL_RENAMED_0x7f040549="10.0dp" n12:APKTOOL_RENAMED_0x7f0405b7="true" n12:layout_constraintEnd_toStartOf="@id/sliderEndSpace" n12:layout_constraintStart_toEndOf="@id/sliderStartSpace" n12:layout_constraintTop_toBottomOf="@id/tvShadowAngle" n12:kkt="@color/APKTOOL_RENAMED_0x7f060639" n12:kkx="4.0dp" n12:kp6="true" n12:ksr="4.0dp"
+      xmlns:n12="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/groupSliders" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n13:constraint_referenced_ids="tvShadowOpacity, svShadowAlpha, tvShadowBlur, svShadowSmoothing, tvShadowDistance, svShadowDistance, tvShadowAngle, svShadowAngle"
+      xmlns:n13="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

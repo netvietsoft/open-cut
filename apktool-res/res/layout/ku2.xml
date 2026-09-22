@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.lvui.view.MaterialSelectableLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" style="@style/ui"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundCornerImageView n0:id="@id/cover" n0:background="#000000" n0:layout_width="36.0dp" n0:layout_height="44.0dp" n0:scaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:_5="6.0dp" n1:klh="6.0dp" n1:ktn="6.0dp" n1:kuf="6.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="@color/mu" n0:gravity="center" n0:id="@id/ai_clipper_item_num" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805de" n0:paddingLeft="3.5dp" n0:paddingRight="3.5dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="14.0dp" n0:layout_marginTop="3.5dp" n0:minWidth="14.0dp" n0:layout_marginStart="3.5dp" n0:paddingHorizontal="3.5dp" n2:layout_constraintStart_toStartOf="@id/cover" n2:layout_constraintTop_toTopOf="@id/cover" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</com.vega.lvui.view.MaterialSelectableLayout>

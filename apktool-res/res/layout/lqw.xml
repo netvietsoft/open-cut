@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/result_root_view" n0:padding="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="#fafbff" n0:id="@id/title_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12255f" n0:includeFontPadding="false" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:orientation="vertical" n0:id="@id/hot_key_rv" n0:paddingTop="12.0dp" n0:focusable="true" n0:focusableInTouchMode="true" n0:clickable="true" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/title_tv"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/llPurchaseNew" n0:background="@drawable/kjl" n0:paddingTop="2.0dp" n0:paddingBottom="2.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:layout_marginEnd="5.0dp" n0:paddingVertical="2.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="center_vertical" n0:id="@id/iconPurchase" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp" n1:kml="small" n1:kr0="vip"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#f6e6fd" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center_vertical" n0:id="@id/tvPurchaseNew" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="200.0dp" n0:text="@string/l54" n0:maxLines="1" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="4.0dp" n0:textFontWeight="600" />
+    <View n0:id="@id/lineDivider" n0:background="@color/nn" n0:layout_width="0.5dp" n0:layout_height="7.0dp" />
+    <TextView n0:textSize="10.0dp" n0:textColor="#f6e6fd" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center_vertical" n0:id="@id/tvVipUnlockTimes" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="200.0dp" n0:maxLines="1" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp" n0:textFontWeight="600" />
+</LinearLayout>

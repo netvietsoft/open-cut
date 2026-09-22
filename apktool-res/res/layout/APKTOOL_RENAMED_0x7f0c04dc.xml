@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.aigenerator.fragment.common.view.AIEffectTopInsetSpacerView n0:id="@id/top_inset_spacer" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/showcase_panel_container" n0:background="@drawable/APKTOOL_RENAMED_0x7f08060d" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/top_inset_spacer"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/showcase_top_handle" n0:background="@drawable/APKTOOL_RENAMED_0x7f080613" n0:layout_width="32.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="12.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/showcase_top_bar" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/showcase_top_handle">
+            <ImageView n0:id="@id/showcase_back" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="52.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m4l" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textColor="#fafbff" n0:ellipsize="end" n0:gravity="center" n0:id="@id/showcase_title_text" n0:paddingLeft="44.0dp" n0:paddingRight="44.0dp" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="Kenouji" n0:maxLines="1" n0:paddingHorizontal="44.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:k1i="bold" n2:k1j="headline" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.core.widget.NestedScrollView n0:id="@id/showcase_content_container" n0:paddingBottom="12.0dp" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toTopOf="@id/showcase_bottom_action_view" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/showcase_top_bar">
+            <LinearLayout n0:orientation="vertical" n0:background="@drawable/APKTOOL_RENAMED_0x7f0806de" n0:padding="1.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <include n0:id="@id/preview_card_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" layout="@layout/kgd" />
+                <include n0:id="@id/showcase_brief_section" n0:layout_width="match_parent" n0:layout_height="wrap_content" layout="@layout/kgu" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.vega.edit.aigenerator.view.AIShowcaseBottomActionView n0:id="@id/showcase_bottom_action_view" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:elevation="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/panel_ai_painting_v3_home_edit_container" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/top_inset_spacer"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

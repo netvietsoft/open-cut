@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panelRoot" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:animateLayoutChanges="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panelManageArea" n0:background="@drawable/pc5" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panelTopBar" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:layout_constraintTop_toTopOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ww" n0:id="@id/vtvPanelTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o80" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <com.vega.ui.TintTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:id="@id/ttvDone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o8p" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View n0:id="@id/splitOne" n0:background="@color/APKTOOL_RENAMED_0x7f06063e" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintTop_toBottomOf="@id/panelTopBar" />
+        <com.vega.ui.MaterialRecycleView n0:id="@id/recycleView" n0:layout_width="wrap_content" n0:layout_height="92.0dp" n1:layout_constrainedWidth="true" n1:layout_constraintBottom_toTopOf="@id/splitTwo" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/splitOne" />
+        <View n0:id="@id/splitTwo" n0:background="@color/APKTOOL_RENAMED_0x7f06063e" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toTopOf="@id/panelOpBar" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panelOpBar" n0:layout_width="wrap_content" n0:layout_height="68.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent">
+            <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/ttvRename" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o9l" n0:drawableTop="@drawable/ou_" n0:layout_marginEnd="135.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/ttvDelete" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/ttvDelete" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o8l" n0:drawableTop="@drawable/nhy" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/ttvRename" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:kr3="none"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/container" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_figure" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="134.0dp" />
+        <com.vega.ui.widget.TextRulerViewV2 n0:id="@id/slider_ruler_view" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="42.0dp" n0:layout_marginEnd="16.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060512" n0:id="@id/ttvSavePreset" n0:background="@drawable/ll6" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:text="@string/o9p" n0:drawablePadding="6.0dp" n0:drawableStart="@drawable/ou6" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+</com.vega.ui.state.pressed.PressedStateStateViewGroupLayout>

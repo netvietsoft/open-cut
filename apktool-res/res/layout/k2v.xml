@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/image_container" n0:background="@drawable/kaj" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.cardview.widget.CardView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:cardCornerRadius="5.0dp" n1:cardElevation="0.0dp">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="46.0dp" n0:layout_height="46.0dp">
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cut_same_img" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+                <ImageView n0:id="@id/imageMask" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@color/_l" n0:scaleType="centerCrop" n0:layout_centerInParent="true" />
+                <com.vega.theme.text.VegaTextView n0:textSize="13.0dp" n0:textColor="@color/knt" n0:id="@id/time_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/sp" n0:id="@id/media_index" n0:background="@drawable/kbx" n0:paddingLeft="3.0dp" n0:paddingRight="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingHorizontal="3.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

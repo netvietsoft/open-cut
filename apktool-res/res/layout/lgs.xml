@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_bulb" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginBottom="198.0dp" n0:src="@drawable/m9l" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/v_left_line" n0:background="@color/_v" n0:layout_width="77.0dp" n0:layout_height="1.0dp" n0:layout_marginLeft="9.0dp" n0:layout_marginRight="9.0dp" n2:layout_constraintBottom_toBottomOf="@id/iv_bulb" n2:layout_constraintEnd_toStartOf="@id/iv_bulb" n2:layout_constraintTop_toTopOf="@id/iv_bulb"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/v_right_line" n0:background="@color/_v" n0:layout_width="77.0dp" n0:layout_height="1.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n3:layout_constraintBottom_toBottomOf="@id/iv_bulb" n3:layout_constraintStart_toEndOf="@id/iv_bulb" n3:layout_constraintTop_toTopOf="@id/iv_bulb"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_e" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tv_export_tip" n0:layout_width="275.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/rzq" n0:maxLines="2" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/iv_bulb"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/tips_group" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:constraint_referenced_ids="iv_bulb,v_left_line,v_right_line,tv_export_tip"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="94.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/k6q" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

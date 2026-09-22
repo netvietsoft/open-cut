@@ -1,0 +1,51 @@
+{
+    "name": "de-CH",
+    "currency": {
+        "pattern": "# ##0.###",
+        "Standard": "¤ {0};¤ -{0}",
+        "StandardNoCurrency": "# ##0.00",
+		"compact": {
+            "short": "{0} ¤",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "{0}–{1} ¤"
+			},
+			"approximately": {
+				"short": "≈{0} ¤"
+			},
+			"atLeast": {
+				"short": "{0}+ ¤"
+			},
+			"atMost": {
+				"short": "≤{0} ¤"
+			}
+		},
+        "currencyList": {
+            "BYN": {
+                "displayName": {
+                    "other": "Weissrussische Rubel",
+                    "one": "Weissrussischer Rubel"
+                }
+            },
+            "BYR": {
+                "displayName": {
+                    "other": "Weissrussische Rubel (2000–2016)",
+                    "one": "Weissrussischer Rubel (2000–2016)"
+                }
+            },
+            "EUR": {
+                "symbol-alt-narrow": {
+                    "value": "EUR"
+                }
+            },
+            "STN": {
+                "displayName": {
+                    "other": "São-toméischer Dobra (2018)",
+                    "one": "São-toméischer Dobra (2018)"
+                }
+            }
+        }
+    }
+}

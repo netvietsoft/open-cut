@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="40.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="10.0dp" n0:text="@string/rvh" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/rightArrow" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/od5" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/retouchText" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginRight="2.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12351d" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintRight_toLeftOf="@id/rightArrow" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginRight="4.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082b8f" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintRight_toLeftOf="@id/retouchText" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

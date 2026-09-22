@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:padding="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center" n0:id="@id/icMenu" n0:background="@drawable/oey" n0:layout_width="16.0dp" n0:layout_height="16.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:layout_gravity="center" n0:id="@id/tvMenu" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qg1" n0:layout_marginStart="8.0dp" />
+</LinearLayout>

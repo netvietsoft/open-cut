@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundFrameLayout n0:background="#1a336680" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:i9="8.0dp" n1:i-="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <TextureView n0:id="@id/banner_item_texture_view" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/banner_item_image_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitXY" />
+</com.vega.ui.widget.RoundFrameLayout>

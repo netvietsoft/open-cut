@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="80.0dp" n0:layout_height="126.0dp" n0:layout_marginStart="2.0dp" n0:layout_marginEnd="2.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/cover_container" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c3a" n0:layout_width="72.0dp" n0:layout_height="98.0dp" n0:layout_marginTop="4.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/loading_img" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f082004" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/xj" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/ksk" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/loading_img" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/loading_container" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c3a" n0:visibility="gone" n0:layout_width="72.0dp" n0:layout_height="98.0dp" n0:layout_marginTop="4.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/loading_lottie" n0:visibility="gone" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n2:lottie_autoPlay="true" n2:lottie_fileName="smart_ads_load_more.json" n2:lottie_imageAssetsFolder="images/" n2:lottie_loop="true" />
+        <TextView n0:textSize="10.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06051a" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/mzj" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

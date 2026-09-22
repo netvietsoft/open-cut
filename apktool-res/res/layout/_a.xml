@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/reward_ad_count_down_container" n0:background="@drawable/mse" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="@dimen/r4" n0:layout_marginEnd="@dimen/r1"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.tux.input.TuxTextView n0:textColor="?kw" n0:ellipsize="end" n0:gravity="start" n0:layout_gravity="start|center" n0:id="@id/reward_ad_count_down_tv" n0:background="?l4" n0:paddingTop="@dimen/sq" n0:paddingBottom="@dimen/sq" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="2" n0:paddingStart="@dimen/r3" n0:paddingEnd="@dimen/r3" style="@style/t8" />
+</FrameLayout>

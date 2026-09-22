@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:id="@id/rlImageRoot" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <FrameLayout n0:id="@id/imageView" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp">
+            <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center_vertical" n0:id="@id/cralView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:scaleType="centerCrop" />
+            <ImageView n0:id="@id/cralViewMask" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@color/_l" n0:scaleType="centerCrop" />
+        </FrameLayout>
+        <ImageView n0:layout_gravity="center" n0:id="@id/editLock" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/o6s" n0:scaleType="centerCrop" n0:layout_marginStart="9.0dp" n0:layout_marginEnd="15.0dp" />
+        <TextView n0:textSize="10.0dp" n0:textColor="@color/_e" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/tvOrder" n0:layout_width="16.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="8.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/gd" n0:ellipsize="end" n0:gravity="center|bottom" n0:layout_gravity="center|bottom" n0:id="@id/tvTime" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:maxLines="2" />
+        <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/tvText" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="2" n0:layout_weight="1.0" n0:layout_marginEnd="4.0dp" n0:paddingVertical="10.0dp" />
+        <com.vega.cutsameedit.view.TemplateSlotStateView n0:layout_gravity="center_vertical" n0:id="@id/stateView" n0:layout_width="22.0dp" n0:layout_height="22.0dp" n0:layout_marginEnd="4.0dp" />
+        <com.vega.ui.widget.SolidCircleView n0:id="@id/relationLabel" n0:visibility="gone" n0:layout_width="4.0dp" n0:layout_height="4.0dp" n0:layout_marginEnd="4.0dp" n1:g0="@color/sg"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:id="@id/tvIndexLabel" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="0.0dp" />
+    </LinearLayout>
+</FrameLayout>

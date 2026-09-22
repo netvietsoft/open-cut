@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/template_author_info_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="10.0dp" n0:textColor="@color/kxw" n0:id="@id/author_title" n0:padding="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:shadowColor="#66000000" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="3.0" />
+    <com.xt.retouch.baseui.view.RoundImageView n0:id="@id/author_avatar" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n1:APKTOOL_RENAMED_0x7f04031d="#f6f6fe" n1:APKTOOL_RENAMED_0x7f04031e="0.5dp" n1:APKTOOL_RENAMED_0x7f0405bc="true" n1:APKTOOL_RENAMED_0x7f0405bd="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="10.0dp" n0:textColor="@color/kxw" n0:ellipsize="end" n0:id="@id/author_name" n0:padding="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="89.0dp" n0:maxLines="1" n0:shadowColor="#66000000" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="3.0" n0:layout_marginStart="4.0dp" />
+</LinearLayout>

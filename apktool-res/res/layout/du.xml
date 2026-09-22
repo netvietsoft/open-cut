@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/keg" n0:paddingBottom="20.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ivHandle" n0:layout_width="32.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="10.0dp" n0:src="@drawable/n19" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textColor="#fafbff" n0:id="@id/tvTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/nzw" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ivHandle" n2:k1i="bold"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_close" n0:padding="10.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nlj" n0:layout_marginEnd="6.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toBottomOf="@id/ivHandle"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout n0:id="@id/coordinatorLayout" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="match_parent" n0:layout_height="620.0dp" n0:paddingHorizontal="12.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/tvTitle"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.appbar.AppBarLayout n0:id="@id/appBarLayout" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:elevation="0.0dp">
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_scrollFlags="scroll">
+                <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clYourCameo" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp">
+                    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#fafbff" n0:id="@id/tvYourCameoTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nz0" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:k1i="medium" />
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#80edf0fd" n0:id="@id/tvEdit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l3b" n4:layout_constraintBottom_toBottomOf="@id/tvYourCameoTitle" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="@id/tvYourCameoTitle" n4:k1i="medium" />
+                    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/ll_create_digital" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tvYourCameoTitle">
+                        <FrameLayout n0:background="@drawable/ked" n0:layout_width="76.0dp" n0:layout_height="76.0dp">
+                            <ImageView n0:layout_gravity="center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/ot7" />
+                        </FrameLayout>
+                        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#b3f6f7fe" n0:gravity="center" n0:id="@id/tvCreate" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/nwu" n4:k1i="medium" />
+                    </LinearLayout>
+                    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/business_mark" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:layout_constraintEnd_toEndOf="@id/ll_create_digital" n4:layout_constraintTop_toTopOf="@id/ll_create_digital" n4:kml="medium" n4:kmm="mix" />
+                    <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/rvPersonalCameo" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="100.0dp" n0:layout_marginTop="12.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tvYourCameoTitle" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#fafbff" n0:id="@id/tvLibraryTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp" n0:text="@string/ny1" n4:k1i="medium" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/rvCategory" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n4:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n4:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.viewpager2.widget.ViewPager2 n0:id="@id/vpPublicCameo" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/llPublicLoading" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+                <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/ivPublicLoadingLogo" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n4:lottie_autoPlay="true" n4:lottie_fileName="cc_loading_w.json" n4:lottie_loop="true" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#66e5e9fa" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/mzj" n4:k1i="medium" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/llLoading" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:paddingHorizontal="16.0dp" n5:layout_constraintBottom_toBottomOf="@id/coordinatorLayout" n5:layout_constraintTop_toBottomOf="@id/tvTitle"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/ivLoadingLogo" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n5:lottie_autoPlay="true" n5:lottie_fileName="cc_loading_w.json" n5:lottie_loop="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#66e5e9fa" n0:id="@id/tvLoading" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/mzj" n5:k1i="medium" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

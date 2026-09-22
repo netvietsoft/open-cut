@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/sb_media_bottom_bar" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_template_slot_list" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottom_action_row" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/rv_template_slot_list"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mm" n0:id="@id/tv_template_slot_tip" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/m8x" n0:maxLines="2" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="@id/sb_media_select_done" n2:layout_constraintEnd_toStartOf="@id/sb_media_select_done" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/sb_media_select_done" n2:k1i="medium" />
+        <com.vega.ui.StrongButton n0:textSize="14.0sp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/sb_media_select_done" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:text="@string/lj-" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:k1i="medium" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

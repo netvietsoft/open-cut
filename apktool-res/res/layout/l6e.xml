@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:paddingLeft="4.0dp" n0:paddingRight="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingHorizontal="4.0dp"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="vertical" n0:background="@drawable/qui" n0:padding="2.5dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.vega.ui.widget.RoundFrameLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" app:i1="8.0dp">
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/style_item_image" n0:background="@drawable/quh" n0:layout_width="96.0dp" n0:layout_height="48.0dp" app:roundedCornerRadius="8.0dp" />
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/style_item_gif" n0:background="@drawable/qug" n0:visibility="gone" n0:layout_width="88.0dp" n0:layout_height="117.0dp" app:roundedCornerRadius="13.0dp" />
+            </com.vega.ui.widget.RoundFrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.vega.aimoment.widget.RecordLoadingView n0:id="@id/style_image_loading_view" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_centerHorizontal="true" n0:layout_centerVertical="true" />
+    <ImageView n0:id="@id/style_image_loading_retry" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/odd" n0:layout_centerHorizontal="true" n0:layout_centerVertical="true" />
+</RelativeLayout>

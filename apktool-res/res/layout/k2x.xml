@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:minWidth="100.0dp" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_menu" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#46464c" n0:id="@id/tv_menu" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/na" n0:layout_marginStart="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/iv_menu" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_mark" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:kml="small"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

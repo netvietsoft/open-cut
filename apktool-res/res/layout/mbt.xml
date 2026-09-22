@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/edit_btn" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="8.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="10.0sp" n0:textColor="@color/ku8" n0:gravity="center" n0:id="@id/btn_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="2" n2:nf="true" n2:autoSizeMaxTextSize="10.0dp" n2:autoSizeMinTextSize="6.0dp" n2:bp="1.0dp" n2:autoSizeTextType="uniform" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/edit_btn"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

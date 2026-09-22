@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/_3" />
+                    <corners android:radius="13.0dp" />
+                    <padding android:left="1.0dp" android:top="1.0dp" android:right="1.0dp" android:bottom="1.0dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <corners android:radius="13.0dp" />
+                    <solid android:color="@color/knt" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="false">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/APKTOOL_RENAMED_0x7f060638" />
+                    <corners android:radius="13.0dp" />
+                    <padding android:left="1.0dp" android:top="1.0dp" android:right="1.0dp" android:bottom="1.0dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <corners android:radius="13.0dp" />
+                    <solid android:color="@color/knt" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

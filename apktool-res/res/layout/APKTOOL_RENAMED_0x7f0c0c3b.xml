@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/log" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:maxWidth="150.0dp" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="14.0dp" n0:textColor="@color/mn" n0:ellipsize="end" n0:id="@id/keyword_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:maxWidth="110.0dp" n0:singleLine="true" n0:layout_marginStart="8.0dp" n0:layout_marginVertical="4.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/delete_keyword" n0:padding="6.0dp" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/l5k" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="2.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/keyword_content" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

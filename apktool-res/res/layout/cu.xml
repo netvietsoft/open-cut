@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kv_" n0:paddingLeft="24.0dp" n0:paddingTop="32.0dp" n0:paddingRight="24.0dp" n0:paddingBottom="32.0dp" n0:layout_width="266.0dp" n0:layout_height="wrap_content" n0:paddingHorizontal="24.0dp" n0:paddingVertical="32.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:background="@drawable/ir" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:id="@id/icon_container" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:layout_marginTop="11.0dp" n0:scaleType="centerCrop" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_chainStyle="packed" n2:layout_goneMarginStart="6.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/la_loading_view" n0:background="@drawable/kv2" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n2:lottie_autoPlay="true" n2:lottie_fileName="ad_script_loading/ai_loop_whiteBackground_b.json" n2:lottie_imageAssetsFolder="ad_script_loading/images" n2:lottie_loop="true" />
+        <ImageView n0:id="@id/iv_success_icon_view" n0:visibility="gone" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m_9" />
+    </LinearLayout>
+    <TextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:id="@id/tv_process" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="23.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/icon_container"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textColor="#80edf0fd" n0:id="@id/tv_process_des" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tv_process"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaTextButton n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/cancel_btn" n0:background="@drawable/iu" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:layout_marginTop="24.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/tv_process_des"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

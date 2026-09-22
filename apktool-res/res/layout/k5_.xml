@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.SupportSeekBarRelativeLayout n0:id="@id/rlFullscreenController" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clFullscreenController" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:alpha="0.0">
+        <com.vega.ui.AlphaButton n0:layout_gravity="center" n0:id="@id/btFullscreenBack" n0:paddingLeft="15.0dp" n0:paddingTop="10.0dp" n0:paddingRight="15.0dp" n0:paddingBottom="10.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="44.0dp" n0:src="@drawable/mpt" n0:paddingHorizontal="15.0dp" n0:paddingVertical="10.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/fullscreen_play_pause_btn" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n0:src="@drawable/mpz" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:id="@id/tvDragStartTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="26.0dp" n0:text="@string/uqg" n0:layout_marginEnd="6.0dp" n3:layout_constraintBottom_toTopOf="@id/svProgressBar" n3:layout_constraintEnd_toStartOf="@id/tvDragTimeDivider" n3:k1i="regular"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/tvDragTimeDivider" n0:background="@color/l_" n0:layout_width="1.0dp" n0:layout_height="4.0dp" n4:layout_constraintBottom_toBottomOf="@id/tvDragStartTime" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/tvDragStartTime"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/l_" n0:id="@id/tvDragEndTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="26.0dp" n0:text="@string/uqg" n0:layout_marginStart="6.0dp" n5:layout_constraintBottom_toTopOf="@id/svProgressBar" n5:layout_constraintStart_toEndOf="@id/tvDragTimeDivider" n5:k1i="regular"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.Group n0:id="@id/dragGroup" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:constraint_referenced_ids="tvDragStartTime,tvDragTimeDivider,tvDragEndTime"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.SeekBarSliderView n0:id="@id/svProgressBar" n0:layout_width="match_parent" n0:layout_height="8.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="64.0dp" n0:layout_marginHorizontal="16.0dp" n7:APKTOOL_RENAMED_0x7f0404f1="true" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:kko="@color/_r" n7:kkt="@color/APKTOOL_RENAMED_0x7f060486"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.vega.ui.SupportSeekBarRelativeLayout>

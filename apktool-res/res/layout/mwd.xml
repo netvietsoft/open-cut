@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_erase_container_0" n0:background="@color/kor" n0:layout_width="match_parent" n0:layout_height="@dimen/is"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.ItemView n0:id="@id/normal_erasure" n0:tag="binding_1" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_eraser_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="50.0dp">
+            <com.xt.retouch.baseui.view.ItemView n0:id="@id/ai_eraser" n0:tag="binding_2" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <View n0:background="@drawable/rlj" n0:layout_width="25.0dp" n0:layout_height="10.0dp" n0:layout_marginStart="31.5dp" n1:layout_constraintStart_toStartOf="@id/ai_eraser" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

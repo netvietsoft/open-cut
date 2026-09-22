@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginRight="10.0dp">
+        <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/l4o" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/s3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q61" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp">
+        <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/l4g" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/s3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lsr" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="10.0dp">
+        <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/l4d" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/s3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qfg" />
+    </LinearLayout>
+</LinearLayout>

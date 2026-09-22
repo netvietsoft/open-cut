@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/container" n0:fitsSystemWindows="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout n0:id="@id/coordinator" n0:fitsSystemWindows="false" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <View n0:id="@id/touch_outside" n0:focusable="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:soundEffectsEnabled="false" n0:importantForAccessibility="no" />
+        <com.bytedance.tux.widget.FlexLayout n0:id="@id/root_layout" n0:fitsSystemWindows="true" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <FrameLayout n0:id="@id/shadow_layout" n1:APKTOOL_RENAMED_0x7f040607="100% - 16dp" n1:APKTOOL_RENAMED_0x7f04060b="50%" n1:_q="wrap_content" n1:_3="min(match_parent - 32dp, 420dp)"
+              xmlns:n1="http://schemas.android.com/apk/res-auto">
+                <com.bytedance.tux.widget.RadiusLayout n0:id="@id/radius_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:i1="36.0dp">
+                    <com.bytedance.tux.sheet.intro.internal.TuxPanelContentLayout n0:orientation="vertical" n0:id="@id/content_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+                    <FrameLayout n0:layout_gravity="end|top" n0:id="@id/close_icon_layout" n0:paddingTop="24.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingEnd="24.0dp">
+                        <com.bytedance.tux.icon.TuxCloseIconView n0:id="@id/close_icon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                    </FrameLayout>
+                </com.bytedance.tux.widget.RadiusLayout>
+            </FrameLayout>
+        </com.bytedance.tux.widget.FlexLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

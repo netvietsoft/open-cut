@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f060021" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:id="@id/hsl_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/mpx" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/iv_close_hsl" n0:layout_width="19.0dp" n0:layout_height="13.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/pvj" n0:layout_marginEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.widget.ColorPalette n0:id="@id/color_palette" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="28.0dp" n3:layout_constraintTop_toBottomOf="@id/hsl_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="#fafbff" n0:id="@id/hue_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:text="@string/lx3" n0:layout_marginStart="15.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/color_palette"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:id="@id/hue_value" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="0" n0:layout_marginEnd="15.0dp" n5:layout_constraintBottom_toBottomOf="@id/hue_tv" n5:layout_constraintEnd_toEndOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.TextRulerViewV2 n0:id="@id/hue_bar" n0:layout_width="match_parent" n0:layout_height="30.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/hue_tv"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="#fafbff" n0:id="@id/saturation_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/qgz" n0:layout_marginStart="15.0dp" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/hue_bar"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:id="@id/saturation_value" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="0" n0:layout_marginEnd="15.0dp" n8:layout_constraintBottom_toBottomOf="@id/saturation_tv" n8:layout_constraintEnd_toEndOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.TextRulerViewV2 n0:id="@id/saturation_bar" n0:layout_width="match_parent" n0:layout_height="30.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toBottomOf="@id/saturation_tv"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="#fafbff" n0:id="@id/brightness_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/pdq" n0:layout_marginStart="15.0dp" n10:layout_constraintStart_toStartOf="parent" n10:layout_constraintTop_toBottomOf="@id/saturation_bar"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:id="@id/brightness_value" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="0" n0:layout_marginEnd="15.0dp" n11:layout_constraintBottom_toBottomOf="@id/brightness_tv" n11:layout_constraintEnd_toEndOf="parent"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.TextRulerViewV2 n0:id="@id/lightness_bar" n0:layout_width="match_parent" n0:layout_height="30.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" n12:layout_constraintEnd_toEndOf="parent" n12:layout_constraintStart_toStartOf="parent" n12:layout_constraintTop_toBottomOf="@id/brightness_tv"
+      xmlns:n12="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tv_reset_hsl" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="10.0dp" n0:text="@string/qex" n0:drawablePadding="6.0dp" n0:layout_marginStart="15.0dp" n13:layout_constraintBottom_toBottomOf="parent" n13:layout_constraintStart_toStartOf="parent" n13:layout_constraintTop_toBottomOf="@id/lightness_bar"
+      xmlns:n13="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

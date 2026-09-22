@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="132.0dp" n0:layout_marginLeft="2.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="2.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginHorizontal="2.0dp" n0:layout_marginVertical="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/presenter_picture_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f0812b8" n0:padding="4.0dp" n0:layout_width="match_parent" n0:layout_height="110.0dp" />
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="110.0dp">
+        <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:id="@id/presenter_loading_view" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n1:lottie_autoPlay="true" n1:klw="@color/knt" n1:lottie_loop="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:id="@id/presenter_retry_view" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/wz" n0:ellipsize="marquee" n0:gravity="center" n0:layout_gravity="bottom" n0:id="@id/presenter_name_tv" n0:paddingLeft="4.0dp" n0:paddingRight="4.0dp" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:singleLine="true" n0:paddingHorizontal="4.0dp" />
+</FrameLayout>

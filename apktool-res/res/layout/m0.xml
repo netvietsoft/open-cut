@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@android:color/white" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/top_bar" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:id="@id/alBtn_member_list_close" n0:padding="10.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nmk" n0:layout_marginStart="6.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/title_tx" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/mjh" n0:singleLine="true" n0:includeFontPadding="false" n1:k1i="bold" n1:k1j="headline" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ff" n0:layout_gravity="end|center" n0:id="@id/role_info_text" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/moz" n0:layout_marginEnd="16.0dp" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/infoContainer" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/top_bar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:gravity="start|center" n0:id="@id/member_count_info_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintTop_toTopOf="parent">
+            <LinearLayout n0:gravity="start|center" n0:orientation="horizontal" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" n2:layout_constraintTop_toTopOf="parent">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:gravity="start|center" n0:id="@id/member_count_info" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_member_options" n0:visibility="gone" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:layout_marginStart="4.0dp" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/pro_warning_info" n0:background="@drawable/ksv" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" n2:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView n0:id="@id/ic_warning" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/pou" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <com.vega.theme.text.VegaTextView n0:textColor="@color/mm" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/oy5" n0:layout_marginStart="12.0dp" n0:textFontWeight="500" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/ic_warning" n2:layout_constraintTop_toTopOf="parent" n2:k1i="medium" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/member_list_recycler" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:overScrollMode="never" n2:layout_constraintBottom_toTopOf="@id/member_list_exit_layout" n2:layout_constraintTop_toBottomOf="@id/member_count_info_container" />
+        <LinearLayout n0:gravity="top" n0:orientation="vertical" n0:id="@id/member_list_exit_layout" n0:paddingLeft="20.0dp" n0:paddingTop="8.0dp" n0:paddingRight="20.0dp" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="20.0dp" n2:layout_constraintBottom_toBottomOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/member_list_invite_btn" n0:background="@drawable/kwq" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12216d" n0:fontFamily="sans-serif-medium" n2:k1i="medium" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/member_list_exit_btn" n0:background="@drawable/kwm" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/l83" n0:fontFamily="sans-serif-medium" n2:k1i="medium" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/btn_subscribe" n0:background="@drawable/kwm" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12216e" n0:fontFamily="sans-serif-medium" n2:k1i="medium" />
+            <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/mo" n0:gravity="center" n0:id="@id/tv_invitation_limit" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/ox9" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:id="@id/loadingContainer" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toBottomOf="@id/top_bar"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="other">%d item tidak dapat diunggah. AutoCut tetap berlanjut.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="other">Lampiran: %d file</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="other">Diperlukan %1$d kredit.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="other">Anda memiliki sisa %1$d kredit.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="other">Kredit gratis Anda akan dipotong. Butuh %d kredit lagi.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="other">Diperlukan %1$d kredit.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="other">Anda memiliki sisa %1$d kredit. Beli kredit agar dapat melanjutkan.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="other">Diperlukan %1$d kredit.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="other">Anda memiliki sisa %1$d kredit. Tingkatkan agar bisa mendapatkan kredit.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="other">%d kredit akan digunakan</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="other">Kredit gratis Anda akan dipotong. Butuh %d kredit lagi.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="other">%d template direkomendasikan</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="other">%d video dihasilkan</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="other">Anda dapat menggunakan keterangan otomatis dan lirik otomatis secara gratis sebanyak %d kali per bulan saat Anda sudah masuk. Penggunaan gratis akan diperpanjang setiap awal bulan. 1 penggunaan akan dipotong setiap kali Anda menggunakan keterangan otomatis dan lirik otomatis.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="other">%d penggunaan/bulan</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="other">Hapus %d kata</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="other">%d sorotan</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="other">Ditemukan %d kata pengisi</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="other">Pilih hingga %d item</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="other">Perkiraan waktu tunggu dalam antrean: %d detik</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="other">Sekitar %d jam lagi</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="other">Sekitar %d menit lagi</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="other">Sekitar %d detik lagi</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="other">Hasil audio (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="other">Hasil file (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="other">Hasil pembuatan (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="other">Lampiran: %d gambar</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="other">Lampiran: %d video</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="other">Hasil gambar (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="other">Hasil video (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="other">Menerapkan %1$d efek teks AI… %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="other">Terapkan %d aset ke semua klip</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="other">%d aset dipilih</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="other">Ultra selama %d hari</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="other">%d karakter</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="other">Pilih tidak lebih dari %d karakter</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="other">%d klip tidak memiliki lisensi untuk penggunaan komersial</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="other">%d font tidak memiliki lisensi untuk penggunaan komersial</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="other">%d suara tidak memiliki lisensi untuk penggunaan komersial</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="other">%d klip tidak memiliki lisensi untuk penggunaan komersial dan tidak dapat diganti</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="other">%d font tidak memiliki lisensi untuk penggunaan komersial dan tidak dapat diganti</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="other">%d suara tidak memiliki lisensi untuk penggunaan komersial dan tidak dapat diganti</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="other">%d stiker tidak memiliki lisensi untuk penggunaan komersial dan tidak dapat diganti</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="other">%d stiker tidak memiliki lisensi untuk penggunaan komersial</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="other">Hapus %d komentar?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="other">Anda memilih %d akun. Hanya Anda dan orang yang Anda batasi yang akan melihat komentarnya.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="other">Batasi %d akun?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="other">%d hari</item>
+    </plurals>
+    <plurals name="kg">
+        <item quantity="other">%d penggunaan gratis</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="other">Anda memiliki %s pesan baru dari kreator</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="other">Sudah kedaluwarsa selama %d hari</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="other">Anda sedang menggunakan fitur Pro. Tersisa %d penggunaan gratis. Gabung Pro untuk penggunaan tanpa batas.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="other">Anda sedang menggunakan fitur Standar. Tersisa %d penggunaan gratis. Gabung dengan Standar untuk penggunaan tanpa batas.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="other">Anda sedang menggunakan fitur Pro. Tersisa %d penggunaan gratis bulan ini. Gabung Pro untuk penggunaan tanpa batas.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="other">Anda sedang menggunakan fitur Standar. Tersisa %d penggunaan gratis bulan ini. Gabung dengan Standar untuk penggunaan tanpa batas.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="other">%d hari gratis</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="other">%1$s setelah %2$d minggu</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="other">Anda mendapatkan %d penggunaan gratis template Pro dalam sebulan.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="other">%d penggunaan gratis</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="other">Coba gratis selama %d hari</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="other">%d masalah hak cipta musik</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="other">%d teks dipilih</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_popup_title">
+        <item quantity="other">Klaim Dreamina Basic gratis Anda selama %d hari</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_success_popup_desc">
+        <item quantity="other">Akses Dreamina Basic Anda selama %d hari kini sudah aktif.</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_to_claim_profile_banner">
+        <item quantity="other">Klaim akses Dreamina Basic Anda selama %d hari</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="other">%d klip dipilih</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="other">Nikmati ekspor gratis tanpa batas selama %1$d hari atau cukup tingkatkan untuk menikmati ekspor resolusi tinggi penuh tanpa batas.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="other">Ekspor dalam resolusi 1080p sebanyak %d kali secara gratis</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="other">Sisa %d ekspor gratis dalam 1080p. Tingkatkan dan nikmati ekspor resolusi tinggi tanpa batas.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="other">Sisa %d ekspor gratis dalam resolusi 1080p bulan ini. Tingkatkan dan nikmati ekspor resolusi tinggi tanpa batas.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="other">Diperlukan %d kredit.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="other">Anda memiliki %d sisa kredit.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="other">%1$d pembuatan sedang berlangsung. Tingkatkan ke Pro agar dapat menghasilkan hingga %2$d sekaligus.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="other">Ekspor tanpa tanda air (sisa %d kali penggunaan)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="other">Sisa %d penggunaan gratis. Tidak perlu kredit.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="other">Item yang Anda pilih akan dihapus dan tetap berada di Sampah selama %d hari.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="other">Beberapa item yang dipilih telah diunggah ke ruang. Tetap hapus?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="other">Item yang Anda pilih akan dihapus dan dipindahkan ke Sampah.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="other">%d penggunaan</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="other">Usia yang dihitung dari tanggal lahir yang Anda masukkan adalah %d tahun dan tampaknya salah. Masukkan tanggal lahir Anda yang sebenarnya.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="other">Termasuk 1 penggunaan gratis dari pembelian sebelumnya dan %d penggunaan gratis tambahan untuk Pro</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="other">Pro mendapatkan %d penggunaan gratis</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="other">Avatar yang Anda buat dengan video sekarang berlaku secara permanen. Gabung Pro dan dapatkan %d penyesuaian gratis.</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="other">Menerapkan efek ini akan menggunakan %d kredit.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="other">Anda sekarang memiliki %d kredit yang tersedia.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="other">%d sorotan</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="other">Menerapkan efek AI… %s jam tersisa</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="other">Menerapkan efek AI… %s menit tersisa</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="other">Efek Pro, %1$s, telah diterapkan pada item saat ini. Menerapkannya lagi ke item baru akan menggunakan %2$d kredit.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="other">%1$d penggunaan gratis akan dipotong. Sekarang Anda memiliki %2$d penggunaan gratis.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="other">%1$d penggunaan Pro akan dipotong. Sekarang Anda memiliki %2$d penggunaan Pro.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="other">Model ini hanya mendukung %d gambar referensi</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="other">Tambahkan minimal %d gambar referensi agar dapat menggunakan model ini</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="other">Model ini hanya mendukung %d video referensi</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="other">Tambahkan minimal %d video referensi agar dapat menggunakan model ini</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="other">Pilih %d foto</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="other">%d materi ditambahkan</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="other">Sisa %d pembuatan</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="other">Sisa %d buka kunci</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="other">%d kata kunci disorot. Anda juga dapat memilih secara manual.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="other">Hapus %d klip</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="other">%d kata pengisi teridentifikasi. Anda juga dapat memilih secara manual.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="other">%d kata kunci disorot</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="other">Mengekspor %d foto…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="other">Pilih hingga %d pose</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="other">File media Anda sedang diunggah</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="other">%d anggota</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="other">Unggah %d proyek ke ruang untuk mengosongkan penyimpanan perangkat Anda. Proyek ini dapat diedit di aplikasi seluler, aplikasi desktop, atau editor online.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="other">Unggah %d file media di proyek Anda ke ruang. Anda dapat menggunakan file ini di perangkat mana pun tanpa perlu mengunggahnya lagi.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="other">Anda memiliki proyek untuk dipulihkan</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="other">Proyek dipulihkan</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="other">%d fitur tidak dapat diterapkan</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="other">Menerapkan %d fitur</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="other">Terapkan efek Pro?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="other">%1$d efek Pro telah diterapkan pada item saat ini. Untuk menerapkannya lagi ke item baru, Anda harus menggunakan %2$d kredit.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="other">%1$d efek Pro telah diterapkan pada item saat ini. %2$d penggunaan gratis akan dipotong untuk menerapkannya lagi ke item baru. Tidak ada kredit yang akan digunakan.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="other">%1$d efek Pro telah diterapkan pada item saat ini. Anda memerlukan %2$d kredit untuk menerapkannya lagi pada item baru.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="other">%1$d efek Pro telah diterapkan pada item saat ini. Untuk menerapkannya lagi ke item baru, Anda harus menggunakan %2$d penggunaan gratis dan %3$d kredit.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="other">%d klip hilang. Pulihkan di ponsel Anda atau ganti klip tersebut.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="other">Masukkan maksimum %d karakter</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="other">%d hari</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="other">Hapus item?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="other">Item yang dipindahkan ke Sampah akan muncul di sini dan dihapus setelah %d hari.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="other">Mengunduh %d item…</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="other">Mengunggah %d item…</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="other">Item ini akan dihapus secara permanen dan tidak dapat dipulihkan.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="other">Item dipindahkan</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="other">Anda masih memiliki %d hari ekspor gratis yang tersedia.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="other">Selamat! Anda mendapatkan %d penggunaan gratis bulanan untuk mengekspor tanpa tanda air.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="other">Anda masih memiliki %d penggunaan gratis untuk mengekspor tanpa tanda air.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="other">Selamat! Anda mendapatkan %d penggunaan gratis untuk mengekspor tanpa tanda air.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="other">%d penggunaan</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="other">Diskon %d kredit untuk pengguna pertama. Jika melebihi batas, akan lebih banyak kredit yang digunakan.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="other">Diperlukan %d kredit lagi untuk menerapkan fitur ini</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="other">Durasi klip tidak boleh lebih dari %d detik</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="other">Anda memiliki %d sisa kredit.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="other">Menerapkan {$benefit_name$} akan menggunakan {$credit_amount$} kredit.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="other">Menerapkan fitur ini akan menggunakan %d kredit.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="other">Menggunakan template ini akan menghabiskan %d kredit.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="other">Item akan dihapus secara permanen dan tidak dapat dipulihkan.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="other">Hapus item tersebut?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="other">%1$d proyek \"%1$s\"</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="other">%d item dipindahkan ke Sampah</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="other">%d item ditambahkan ke Favorit</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="other">%d item dihapus dari Favorit</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="other">Ini adalah ruang gratis dan dapat memiliki hingga %1$d anggota. %2$s anggota lagi dapat diundang ke ruang ini.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="other">%d penggunaan/bulan</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="other">%d penggunaan/hari</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="other">%d penggunaan/minggu</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="other">{price} setelah {number} bulan</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="other">%1$s setelah %2$d bulan</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="other">{price} setelah {number} tahun</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="other">%1$s setelah %2$d tahun</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="other">Ada %d anggota di ruang ini.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="other">Anda masih dapat mengundang %1$d anggota.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="other">%1$d kursi terisi.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="other">Mulai uji coba gratis selama %d hari</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="other">Diperlukan %d kredit.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="other">Anda memiliki %d sisa kredit.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="other">Mengunggah %1$s/%2$s proyek</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="other">"%d klip lainnya ditautkan ke file media ini. Ganti semuanya?
+File akan dipangkas secara otomatis agar sesuai dengan durasi aslinya."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="other">Anda dapat mengunggah %d gambar lagi</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="other">%d segmen akan diperbarui</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="other">Anda masih dapat memilih %1$d gambar dan %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="other">(maks. %d detik)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="other">%d video</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="other">Anda masih dapat memilih %d gambar</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="other">Anda masih dapat memilih %d video</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="other">(maks. %d detik)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="other">Dalam antrean… Sekitar %d menit lagi.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="other">Kurangi waktu tunggu</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="other">Dalam antrean… Sekitar %d detik lagi.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="other">Dalam antrean cepat dengan Pro… Sekitar %d menit lagi.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="other">%d item</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="other">%d item dipilih</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="other">%d proyek</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="other">%d proyek dipilih</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="other">Fitur ini sedang digunakan oleh banyak orang. Perkiraan waktu tunggu Anda adalah %d menit.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="other">Tindakan menghasilkan lagi akan menggunakan %d kredit.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="other">Menghasilkan lagi dengan item baru akan menggunakan %d kredit.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="other">%d klip ditambahkan</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="other">Pilih %d item</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="other">Menghasilkan %d video untuk Anda</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="other">Anda hanya dapat memisahkan audio yang berdurasi kurang dari %d menit</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="other">Anda dapat memulihkan ruang tersebut dalam waktu %d hari.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="other">%d video sedang dihasilkan. Coba lagi nanti.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="other">Tingkatkan agar dapat menggunakan fitur ini dengan %d kredit</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="other">Anda hanya memiliki %d kursi tersisa di ruang ini.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="other">%d elemen digunakan</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="other">%d item dipilih</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="other">Pilih %d item</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="other">%d keterangan</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="other">%d item</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="other">%d fitur sedang diterapkan. Coba lagi nanti.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="other">Tersisa %d penggunaan gratis. Gabung dengan Standar agar dapat menggunakannya dengan kredit.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="other">Sisa %d penggunaan gratis. Gabung dengan Pro agar dapat menggunakannya dengan kredit.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="other">Tersisa %d penggunaan gratis. Dapatkan Ultra untuk menggunakan kredit.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="other">Ini akan menggunakan %1$d kredit. %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="other">Anda memiliki %d sisa kredit.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="other">Dapatkan Ultra untuk menggunakan %d kredit</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="other">Gabung dengan Pro agar dapat menggunakan fitur ini dengan %d kredit.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="other">Gabung dengan Standar agar dapat menggunakan fitur ini dengan %d kredit.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="other">Anda dapat menyimpan maksimum %1$d suara.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="other">Tidak bisa menyempurnakan suara dalam klip berdurasi lebih dari %1$d menit</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="other">Pilih %d item untuk mendapatkan hasil yang optimal</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="other">Diperpanjang dengan biaya %1$s untuk %2$d bulan pertama, kemudian %3$s.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="other">Diperpanjang dengan biaya %1$s untuk %2$d tahun pertama, kemudian %3$s.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="other">Anda telah membuat %d pembaruan. Hasilkan ucapan dan sinkronkan gerakan bibir?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="other">%d waktu tersisa</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="other">Ada %d klip tanpa suara.</item>
+    </plurals>
+</resources>

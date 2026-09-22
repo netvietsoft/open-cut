@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/cloud_folder_iv_close" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m6d" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/cloud_folder_iv_select" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/p4s" n2:layout_constraintBottom_toBottomOf="@id/cloud_folder_iv_close" n2:layout_constraintEnd_toStartOf="@id/cloud_folder_iv_more" n2:layout_constraintTop_toTopOf="@id/cloud_folder_iv_close"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/cloud_folder_iv_more" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/p4q" n0:layout_marginEnd="6.0dp" n3:layout_constraintBottom_toBottomOf="@id/cloud_folder_iv_close" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="@id/cloud_folder_iv_close"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="@color/fi" n0:ellipsize="end" n0:gravity="center" n0:id="@id/cloud_folder_tv_title" n0:paddingLeft="96.0dp" n0:paddingRight="96.0dp" n0:layout_width="wrap_content" n0:layout_height="22.0dp" n0:text="@string/qmu" n0:singleLine="true" n0:includeFontPadding="false" n0:paddingHorizontal="96.0dp" n4:layout_constraintBottom_toBottomOf="@id/cloud_folder_iv_close" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/cloud_folder_iv_close"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n0:id="@id/cloud_state_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintTop_toBottomOf="@id/cloud_folder_iv_close"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.main.cloud.widget.CloudHomeBannerView n0:id="@id/cloud_upload_banner" n0:layout_width="match_parent" n0:layout_height="40.0dp" />
+        <com.vega.main.cloud.widget.CloudHomeBannerView n0:id="@id/cloud_move_banner" n0:layout_width="match_parent" n0:layout_height="40.0dp" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/cloud_draft_space_fl_root" android:layout_width="match_parent" android:layout_height="0.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintTop_toBottomOf="@id/cloud_state_container"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.cloud.upload.view.CloudUploadFloatingView n0:id="@id/upload_floating_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_cloud_draft_batch_select_title" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="50.0dp" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:id="@id/alBtn_cloud_draft_batch_select_close" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/nku" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/fi" n0:ellipsize="end" n0:layout_gravity="center" n0:id="@id/tv_cloud_draft_batch_select_title" n0:layout_width="wrap_content" n0:layout_height="22.0dp" n0:maxEms="12" n0:singleLine="true" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="center" n0:orientation="horizontal" n0:background="@drawable/l_f" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:layout_marginBottom="20.0dp" n0:minHeight="68.0dp" n0:paddingStart="12.0dp" n0:paddingEnd="6.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n0:elevation="4.0dp" n0:paddingVertical="8.0dp">
+        <com.vega.ui.widget.RoundFrameLayout n0:id="@id/iv_cover_layout" n0:background="@drawable/k_7" n0:padding="0.5dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n1:i1="4.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_cover" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitXY" />
+        </com.vega.ui.widget.RoundFrameLayout>
+        <TextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/tv_message" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="4" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/tv_action" n2:layout_constraintStart_toEndOf="@id/iv_cover_layout" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#00cae0" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_action" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="16.0dp" n0:textFontWeight="500" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/iv_close" n3:layout_constraintTop_toTopOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/iv_close" n0:padding="10.0dp" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/l_g" n0:scaleType="centerInside" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

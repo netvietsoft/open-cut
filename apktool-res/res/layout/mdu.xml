@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/xt_watermark_fragment_content_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/xt_watermark_fragment_content_list" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include n0:layout_width="match_parent" n0:layout_height="match_parent" layout="@layout/mda" />
+</androidx.constraintlayout.widget.ConstraintLayout>

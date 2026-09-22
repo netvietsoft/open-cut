@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/waveGroupView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.image.edit.speech.VolumeVisualizerView n0:id="@id/waveformView" n0:layout_width="0.0dp" n0:layout_height="21.0dp" n0:layout_marginLeft="44.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginRight="44.0dp" n0:layout_marginHorizontal="44.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed" />
+        <View n0:id="@id/leftMask" n0:background="@drawable/lf3" n0:layout_width="24.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="@id/waveformView" n1:layout_constraintTop_toTopOf="parent" />
+        <View n0:id="@id/rightMask" n0:background="@drawable/lf4" n0:layout_width="24.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="@id/waveformView" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:id="@id/closeButton" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081f01" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/transcribing_loading_view" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/listeningText" n3:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="16.0sp" n0:textColor="#b3f6f7fe" n0:id="@id/listeningText" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Listening" n0:layout_marginStart="8.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toEndOf="@id/transcribing_loading_view" n3:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:id="@id/confirmButton" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/o00" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

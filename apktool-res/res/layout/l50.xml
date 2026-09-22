@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/layoutApplyToAll" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toTopOf="@id/stateView" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/layoutApplyToAll" n2:kr3="none"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.UpdateParentHeightRecycleView n0:id="@id/recyclerView" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.ui.state.pressed.PressedStateStateViewGroupLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

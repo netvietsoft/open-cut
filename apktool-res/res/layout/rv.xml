@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/uk" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/recycler_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <View n0:id="@id/divider_line" n0:background="#25262b" n0:layout_width="match_parent" n0:layout_height="8.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/tv_cancel" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" />
+</LinearLayout>

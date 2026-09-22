@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/APKTOOL_RENAMED_0x7f0831e2" android:layout_width="279.0dp" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.xt.retouch.baseui.view.BaseImageView android:layout_gravity="end|top" android:id="@id/ic_cancel" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="6.0dp" android:src="@drawable/rst" android:layout_marginEnd="6.0dp" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18.0dp" android:textStyle="bold" android:textColor="#1b1f33" android:gravity="center" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/rid" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="#5c6080" android:gravity="center" android:id="@id/tv_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="24.0dp" android:text="@string/rie" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+            <TextView android:textSize="16.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/q-d" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="@string/ric" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+            <TextView android:textSize="16.0dp" android:textColor="#b3111a2c" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/q83" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="6.0dp" android:layout_marginBottom="24.0dp" android:text="@string/rib" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_gravity="start|center" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.view.FixedRecyclerView n0:id="@id/subList" n0:paddingLeft="4.0dp" n0:paddingTop="4.0dp" n0:paddingRight="4.0dp" n0:paddingBottom="4.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingHorizontal="4.0dp" n0:paddingVertical="4.0dp" />
+    <com.vega.theme.text.VegaTextView n0:layout_gravity="start|center" n0:id="@id/startMask" n0:background="@drawable/lbs" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="match_parent" n0:rotation="180.0" />
+    <com.vega.theme.text.VegaTextView n0:layout_gravity="end|center" n0:id="@id/endMask" n0:background="@drawable/lbs" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="match_parent" />
+</FrameLayout>

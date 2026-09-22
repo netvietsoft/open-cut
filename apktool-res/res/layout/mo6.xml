@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_fragment_eliminate_0" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:background="@color/kor" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/recycler" n1:layout_constraintTop_toTopOf="@id/recycler"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/recycler" n0:layout_width="match_parent" n0:layout_height="127.0dp" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f070513" n0:layout_marginStart="@dimen/iq" n0:layout_marginEnd="@dimen/iq" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

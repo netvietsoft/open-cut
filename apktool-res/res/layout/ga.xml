@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@drawable/lgm" n0:paddingBottom="30.0dp" n0:layout_width="match_parent" n0:layout_height="431.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center_horizontal" n0:id="@id/header_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/ih" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:gravity="center_horizontal" n0:id="@id/header_desc" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="24.0dp" n0:text="@string/ib" n0:layout_marginHorizontal="24.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/header_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/space_setting_content_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n3:layout_constraintTop_toBottomOf="@id/header_desc"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout n0:id="@id/backup_device_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:id="@id/tv_auto_backup_device" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/h_" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" />
+            <LinearLayout n0:gravity="end|center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_toEndOf="@id/tv_auto_backup_device">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:ellipsize="end" n0:id="@id/tv_auto_backup_device_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" />
+                <ImageView n0:id="@id/iv_auto_backup_device_arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08112e" n0:layout_centerVertical="true" n0:layout_marginStart="6.0dp" n0:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/backup_space_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:id="@id/tv_auto_backup_space" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/iz" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" />
+            <ImageView n0:id="@id/iv_auto_backup_space_arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08112e" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:ellipsize="end" n0:gravity="end" n0:id="@id/tv_auto_backup_space_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginEnd="6.0dp" n0:layout_toStartOf="@id/iv_auto_backup_space_arrow" n0:layout_toEndOf="@id/tv_auto_backup_space" />
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/more_settings_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_toStartOf="@id/tv_auto_backup_more_settings_desc">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:id="@id/tv_auto_backup_more_settings" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/iv" />
+            </LinearLayout>
+            <ImageView n0:id="@id/iv_auto_backup_more_settings_arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08112e" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:ellipsize="end" n0:id="@id/tv_auto_backup_more_settings_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/it" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginEnd="6.0dp" n0:layout_toStartOf="@id/iv_auto_backup_more_settings_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textColor="@color/mk" n0:id="@id/btn_disable_auto_backup" n0:background="@drawable/kws" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/ia" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/btn_enable_auto_backup" n4:layout_constraintHorizontal_chainStyle="spread" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaButton n0:enabled="false" n0:textSize="16.0dp" n0:textColor="@color/l-" n0:id="@id/btn_enable_auto_backup" n0:background="@drawable/kwq" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/iq" n0:layout_marginEnd="16.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toEndOf="@id/btn_disable_auto_backup"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

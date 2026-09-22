@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_item_eliminate_0" n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_gravity="center" n0:id="@id/frame" n0:layout_width="@dimen/ip" n0:layout_height="@dimen/ip" n0:layout_marginStart="@dimen/io" n0:layout_marginEnd="@dimen/io" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center|top" n0:id="@id/icon" n0:layout_width="@dimen/in" n0:layout_height="@dimen/in" />
+        <TextView n0:textSize="10.0dp" n0:textColor="@color/kr2" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center|bottom" n0:id="@id/text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="1" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

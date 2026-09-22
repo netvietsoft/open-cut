@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f0812b8" n0:padding="4.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="#00cae0" n0:id="@id/tv_selected_feature" n0:background="@drawable/APKTOOL_RENAMED_0x7f080577" n0:paddingTop="1.0dp" n0:paddingBottom="1.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Featured" n0:paddingStart="5.0dp" n0:paddingEnd="5.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/tv_title" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:id="@id/loading" n0:tag="loading" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:paddingTop="5.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/mediaThumbnailIv" n0:layout_width="59.0dp" n0:layout_height="59.0dp" n1:roundedCornerRadius="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:layout_gravity="end|top" n0:id="@id/deselectedIv" n0:paddingBottom="14.0dp" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginTop="-4.0dp" n0:src="@drawable/qzs" n0:scaleType="centerInside" n0:paddingStart="16.0dp" n0:paddingEnd="0.0dp" n0:layout_marginEnd="-4.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_gravity="end|bottom" n0:id="@id/totalTimeTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="3.0dp" n0:layout_marginEnd="9.0dp" />
+</FrameLayout>

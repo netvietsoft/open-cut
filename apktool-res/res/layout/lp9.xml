@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:background="@drawable/lmx" n0:layout_width="160.0dp" n0:layout_height="160.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/ivShopLoading" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="45.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:lottie_autoPlay="true" n1:lottie_fileName="lv_loading.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/tvShopLoading" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="25.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ivShopLoading"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivShopClose" n0:background="@drawable/p6c" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

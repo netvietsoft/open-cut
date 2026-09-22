@@ -1,0 +1,3077 @@
+{
+    "name": "ko",
+    "currency": {
+        "Standard": "¤{0}",
+        "StandardNoCurrency": "#,##0.00",
+        "compact": {
+            "short": "¤{0}",
+            "shortNoSymbol": "¤ {0}",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "¤{0}~{1}"
+			},
+			"approximately": {
+				"short": "≈¤{0}"
+			},
+			"atLeast": {
+				"short": "¤{0}+"
+			},
+			"atMost": {
+				"short": "≤¤{0}"
+			}
+		},
+        "currencyList": {
+            "ADP": {
+                "symbol": {
+                    "value": "ADP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "안도라 페세타"
+                },
+                "digits": 0
+            },
+            "AED": {
+                "symbol": {
+                    "value": "AED",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아랍에미리트 디르함"
+                }
+            },
+            "AFA": {
+                "symbol": {
+                    "value": "AFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아프가니 (1927–2002)"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아프가니스탄 아프가니"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "알바니아 레크"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아르메니아 드람"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "네덜란드령 안틸레스 길더"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "앙골라 콴자"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AOK": {
+                "symbol": {
+                    "value": "AOK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "앙골라 콴자 (1977–1990)"
+                }
+            },
+            "AON": {
+                "symbol": {
+                    "value": "AON",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "앙골라 신콴자 (1990–2000)"
+                }
+            },
+            "AOR": {
+                "symbol": {
+                    "value": "AOR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "앙골라 재조정 콴자 (1995–1999)"
+                }
+            },
+            "ARA": {
+                "symbol": {
+                    "value": "ARA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아르헨티나 오스트랄"
+                }
+            },
+            "ARL": {
+                "symbol": {
+                    "value": "ARL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아르헨티나 페소 레이 (1970–1983)"
+                }
+            },
+            "ARM": {
+                "symbol": {
+                    "value": "ARM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아르헨티나 페소 (18810–1970)"
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "value": "ARP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아르헨티나 페소 (1983–1985)"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아르헨티나 페소"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "value": "ATS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "호주 실링"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "AU$"
+                },
+                "displayName": {
+                    "other": "호주 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "AU$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아루바 플로린"
+                }
+            },
+            "AZM": {
+                "symbol": {
+                    "value": "AZM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아제르바이젠 마나트(1993–2006)"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아제르바이잔 마나트"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAD": {
+                "symbol": {
+                    "value": "BAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "보스니아-헤르체고비나 디나르"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "보스니아-헤르체고비나 태환 마르크"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BAN": {
+                "symbol": {
+                    "value": "BAN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "보스니아-헤르체고비나 신디나르 (1994–1997)"
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "바베이도스 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "방글라데시 타카"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEC": {
+                "symbol": {
+                    "value": "BEC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "벨기에 프랑 (태환)"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "벨기에 프랑"
+                }
+            },
+            "BEL": {
+                "symbol": {
+                    "value": "BEL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "벨기에 프랑 (금융)"
+                }
+            },
+            "BGL": {
+                "symbol": {
+                    "value": "BGL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "불가리아 동전 렛"
+                }
+            },
+            "BGM": {
+                "symbol": {
+                    "value": "BGM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "불가리아 사회주의자 렛"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "불가리아 레프"
+                }
+            },
+            "BGO": {
+                "symbol": {
+                    "value": "BGO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "불가리아 렛 (1879–1952)"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "바레인 디나르"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "부룬디 프랑"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "버뮤다 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "부루나이 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "볼리비아 볼리비아노"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BOL": {
+                "symbol": {
+                    "value": "BOL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "볼리비아 볼리비아노 (1863–1963)"
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "value": "BOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "볼리비아노 페소"
+                }
+            },
+            "BOV": {
+                "symbol": {
+                    "value": "BOV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "볼리비아노 Mvdol(기금)"
+                }
+            },
+            "BRB": {
+                "symbol": {
+                    "value": "BRB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "볼리비아노 크루제이루 노보 (1967–1986)"
+                }
+            },
+            "BRC": {
+                "symbol": {
+                    "value": "BRC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "브라질 크루자두"
+                }
+            },
+            "BRE": {
+                "symbol": {
+                    "value": "BRE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "브라질 크루제이루 (1990–1993)"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$"
+                },
+                "displayName": {
+                    "other": "브라질 레알"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BRN": {
+                "symbol": {
+                    "value": "BRN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "브라질 크루자두 노보"
+                }
+            },
+            "BRR": {
+                "symbol": {
+                    "value": "BRR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "브라질 크루제이루"
+                }
+            },
+            "BRZ": {
+                "symbol": {
+                    "value": "BRZ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "브라질 크루제이루 (1942–1967)"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "바하마 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "부탄 눌투눔"
+                }
+            },
+            "BUK": {
+                "symbol": {
+                    "value": "BUK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "버마 차트"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "보츠와나 풀라"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BYB": {
+                "symbol": {
+                    "value": "BYB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "벨라루스 신권 루블 (1994–1999)"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "벨라루스 루블"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р."
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "벨라루스 루블 (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "벨리즈 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "캐나다 달러"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "콩고 프랑"
+                }
+            },
+            "CHE": {
+                "symbol": {
+                    "value": "CHE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "유로 (WIR)"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "스위스 프랑"
+                },
+                "digits": 2
+            },
+            "CHW": {
+                "symbol": {
+                    "value": "CHW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "프랑 (WIR)"
+                }
+            },
+            "CLE": {
+                "symbol": {
+                    "value": "CLE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "칠레 에스쿠도"
+                }
+            },
+            "CLF": {
+                "symbol": {
+                    "value": "CLF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "칠레 (UF)"
+                },
+                "digits": 4
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "칠레 페소"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "중국 위안화(역외)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "중국 위안화"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "콜롬비아 페소"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "COU": {
+                "symbol": {
+                    "value": "COU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "콜롬비아 실가 단위"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "코스타리카 콜론"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CSD": {
+                "symbol": {
+                    "value": "CSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "고 세르비아 디나르"
+                }
+            },
+            "CSK": {
+                "symbol": {
+                    "value": "CSK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "체코슬로바키아 동전 코루나"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "쿠바 태환 페소"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "쿠바 페소"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "카보베르데 에스쿠도"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "싸이프러스 파운드"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "체코 코루나"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DDM": {
+                "symbol": {
+                    "value": "DDM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "동독 오스트마르크"
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "독일 마르크"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "지부티 프랑"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "덴마크 크로네"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "도미니카 페소"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "알제리 디나르"
+                }
+            },
+            "ECS": {
+                "symbol": {
+                    "value": "ECS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "에쿠아도르 수크레"
+                }
+            },
+            "ECV": {
+                "symbol": {
+                    "value": "ECV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "에콰도르 (UVC)"
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "value": "EEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "에스토니아 크룬"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "이집트 파운드"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "에리트리아 나크파"
+                }
+            },
+            "ESA": {
+                "symbol": {
+                    "value": "ESA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "스페인 페세타(예금)"
+                }
+            },
+            "ESB": {
+                "symbol": {
+                    "value": "ESB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "스페인 페세타(변환 예금)"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "스페인 페세타"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "에티오피아 비르"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "유로"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "value": "FIM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "핀란드 마르카"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "피지 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "포클랜드제도 파운드"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "프랑스 프랑"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "영국 파운드"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEK": {
+                "symbol": {
+                    "value": "GEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "그루지야 지폐 라리트"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "조지아 라리"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHC": {
+                "symbol": {
+                    "value": "GHC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "가나 시디 (1979–2007)"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "가나 세디"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "지브롤터 파운드"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "감비아 달라시"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "기니 프랑"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GNS": {
+                "symbol": {
+                    "value": "GNS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "기니 시리"
+                }
+            },
+            "GQE": {
+                "symbol": {
+                    "value": "GQE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "적도 기니 에쿨 (Ekwele)"
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "value": "GRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "그리스 드라크마"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "과테말라 케트살"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GWE": {
+                "symbol": {
+                    "value": "GWE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "포르투갈령 기니 에스쿠도"
+                }
+            },
+            "GWP": {
+                "symbol": {
+                    "value": "GWP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "기네비쏘 페소"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "가이아나 달러"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "홍콩 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "온두라스 렘피라"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HRD": {
+                "symbol": {
+                    "value": "HRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "크로아티아 디나르"
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "크로아티아 쿠나"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아이티 구르드"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "헝가리 포린트"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "인도네시아 루피아"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "value": "IEP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아일랜드 파운드"
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "value": "ILP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "이스라엘 파운드"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "이스라엘 신권 세켈"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "인도 루피"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "이라크 디나르"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "이란 리얄"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "아이슬란드 크로나"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "value": "ITL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "이탈리아 리라"
+                },
+                "digits": 0
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "자메이카 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "요르단 디나르"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "JP¥"
+                },
+                "displayName": {
+                    "other": "일본 엔화"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "케냐 실링"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "키르기스스탄 솜"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "캄보디아 리엘"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "코모르 프랑"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "조선 민주주의 인민 공화국 원"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRH": {
+                "symbol": {
+                    "value": "KRH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "대한민국 환 (1953–1962)"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "원"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "쿠웨이트 디나르"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "케이맨 제도 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "카자흐스탄 텡게"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "라오스 키프"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "레바논 파운드"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "스리랑카 루피"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "라이베리아 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "레소토 로티"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "리투아니아 리타"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LTT": {
+                "symbol": {
+                    "value": "LTT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "룩셈부르크 타로나"
+                }
+            },
+            "LUC": {
+                "symbol": {
+                    "value": "LUC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "룩셈부르크 변환 프랑"
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "value": "LUF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "룩셈부르크 프랑"
+                },
+                "digits": 0
+            },
+            "LUL": {
+                "symbol": {
+                    "value": "LUL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "룩셈부르크 재정 프랑"
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "라트비아 라트"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LVR": {
+                "symbol": {
+                    "value": "LVR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "라트비아 루블"
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "리비아 디나르"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "모로코 디르함"
+                }
+            },
+            "MAF": {
+                "symbol": {
+                    "value": "MAF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "모로코 프랑"
+                }
+            },
+            "MCF": {
+                "symbol": {
+                    "value": "MCF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "모나코 프랑"
+                }
+            },
+            "MDC": {
+                "symbol": {
+                    "value": "MDC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "몰도바 쿠폰"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "몰도바 레이"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "마다가스카르 아리아리"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MGF": {
+                "symbol": {
+                    "value": "MGF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "마다가스카르 프랑"
+                },
+                "digits": 0
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "마케도니아 디나르"
+                }
+            },
+            "MLF": {
+                "symbol": {
+                    "value": "MLF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "말리 프랑"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "미얀마 키얏"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "몽골 투그릭"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "마카오 파타카"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "모리타니 우기야 (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "모리타니 우기야"
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "value": "MTL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "몰타 리라"
+                }
+            },
+            "MTP": {
+                "symbol": {
+                    "value": "MTP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "몰타 파운드"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "모리셔스 루피"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "몰디브 제도 루피아"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "말라위 콰차"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "멕시코 페소"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MXP": {
+                "symbol": {
+                    "value": "MXP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "멕시코 실버 페소 (1861–1992)"
+                }
+            },
+            "MXV": {
+                "symbol": {
+                    "value": "MXV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "멕시코 (UDI)"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "말레이시아 링깃"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "value": "MZE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "모잠비크 에스쿠도"
+                }
+            },
+            "MZM": {
+                "symbol": {
+                    "value": "MZM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "고 모잠비크 메티칼"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "모잠비크 메티칼"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "나미비아 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "나이지리아 나이라"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIC": {
+                "symbol": {
+                    "value": "NIC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "니카라과 코르도바 오로(1988~1991)"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "니카라과 코르도바"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "value": "NLG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "네델란드 길더"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "노르웨이 크로네"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "네팔 루피"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "뉴질랜드 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "오만 리알"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "파나마 발보아"
+                }
+            },
+            "PEI": {
+                "symbol": {
+                    "value": "PEI",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "페루 인티"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "페루 솔"
+                }
+            },
+            "PES": {
+                "symbol": {
+                    "value": "PES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "페루 솔 (1863–1965)"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "파푸아뉴기니 키나"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "필리핀 페소"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "파키스탄 루피"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "폴란드 즈워티"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLZ": {
+                "symbol": {
+                    "value": "PLZ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "폴란드 즐로티 (1950–1995)"
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "value": "PTE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "포르투갈 에스쿠도"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "파라과이 과라니"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "카타르 리얄"
+                }
+            },
+            "RHD": {
+                "symbol": {
+                    "value": "RHD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "로디지아 달러"
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "value": "ROL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "루마니아 레이"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "루마니아 레우"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "세르비아 디나르"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "러시아 루블"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "value": "RUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "러시아 루블 (1991–1998)"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "르완다 프랑"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "사우디아라비아 리얄"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "솔로몬 제도 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "세이셸 루피"
+                }
+            },
+            "SDD": {
+                "symbol": {
+                    "value": "SDD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "수단 디나르"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "수단 파운드"
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "value": "SDP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "고 수단 파운드"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "스웨덴 크로나"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "싱가포르 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "세인트헬레나 파운드"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "value": "SIT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "슬로베니아 톨라르"
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "value": "SKK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "슬로바키아 코루나"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "시에라리온 리온"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "시에라리온 리온(1964~2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "소말리아 실링"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "수리남 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "value": "SRG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "수리남 길더"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "남수단 파운드"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "상투메 프린시페 도브라 (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "상투메 프린시페 도브라"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "value": "SUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "소련 루블"
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "value": "SVC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "엘살바도르 콜론"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "시리아 파운드"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "스와질란드 릴랑게니"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "THB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "태국 바트"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJR": {
+                "symbol": {
+                    "value": "TJR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "타지키스탄 루블"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "타지키스탄 소모니"
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "value": "TMM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "투르크메니스탄 마나트 (1993–2009)"
+                },
+                "digits": 0
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "투르크메니스탄 마나트"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "튀니지 디나르"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "통가 파앙가"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TPE": {
+                "symbol": {
+                    "value": "TPE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "티모르 에스쿠도"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "터키 리라(1922~2005)"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "터키 리라"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "트리니다드 토바고 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "신 타이완 달러"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "탄자니아 실링"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "우크라이나 그리브나"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UAK": {
+                "symbol": {
+                    "value": "UAK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "우크라이나 카보바네츠"
+                }
+            },
+            "UGS": {
+                "symbol": {
+                    "value": "UGS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "우간다 실링 (1966–1987)"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "우간다 실링"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "US$"
+                },
+                "displayName": {
+                    "other": "미국 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "value": "USN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "미국 달러(다음날)"
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "value": "USS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "미국 달러(당일)"
+                }
+            },
+            "UYI": {
+                "symbol": {
+                    "value": "UYI",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "우루과이 페소 (UI)"
+                },
+                "digits": 0
+            },
+            "UYP": {
+                "symbol": {
+                    "value": "UYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "우루과이 페소 (1975–1993)"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "우루과이 페소"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "우즈베키스탄 숨"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEB": {
+                "symbol": {
+                    "value": "VEB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "베네주엘라 볼리바르 (1871–2008)"
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "베네수엘라 볼리바르 (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "베네수엘라 볼리바르"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "베트남 동"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VNN": {
+                "symbol": {
+                    "value": "VNN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "베트남 동 (1978–1985)"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "바누아투 바투"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "서 사모아 탈라"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "중앙아프리카 CFA 프랑"
+                },
+                "digits": 0
+            },
+            "XAG": {
+                "symbol": {
+                    "value": "XAG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "은화"
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "value": "XAU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "금"
+                }
+            },
+            "XBA": {
+                "symbol": {
+                    "value": "XBA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "유르코 (유럽 회계 단위)"
+                }
+            },
+            "XBB": {
+                "symbol": {
+                    "value": "XBB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "유럽 통화 동맹"
+                }
+            },
+            "XBC": {
+                "symbol": {
+                    "value": "XBC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "유럽 계산 단위 (XBC)"
+                }
+            },
+            "XBD": {
+                "symbol": {
+                    "value": "XBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "유럽 계산 단위 (XBD)"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "동카리브 달러"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "특별인출권"
+                }
+            },
+            "XEU": {
+                "symbol": {
+                    "value": "XEU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "유럽 환율 단위"
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "value": "XFO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "프랑스 프랑 (Gold)"
+                }
+            },
+            "XFU": {
+                "symbol": {
+                    "value": "XFU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "프랑스 프랑 (UIC)"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "서아프리카 CFA 프랑"
+                },
+                "digits": 0
+            },
+            "XPD": {
+                "symbol": {
+                    "value": "XPD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "팔라듐"
+                }
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "CFP 프랑"
+                },
+                "digits": 0
+            },
+            "XPT": {
+                "symbol": {
+                    "value": "XPT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "백금"
+                }
+            },
+            "XRE": {
+                "symbol": {
+                    "value": "XRE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "RINET 기금"
+                }
+            },
+            "XTS": {
+                "symbol": {
+                    "value": "XTS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "테스트 통화 코드"
+                }
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "¤"
+                },
+                "displayName": {
+                    "other": "(알 수 없는 통화 단위)"
+                }
+            },
+            "YDD": {
+                "symbol": {
+                    "value": "YDD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "예멘 디나르"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "예멘 리알"
+                },
+                "digits": 0
+            },
+            "YUD": {
+                "symbol": {
+                    "value": "YUD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "유고슬라비아 동전 디나르"
+                }
+            },
+            "YUM": {
+                "symbol": {
+                    "value": "YUM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "유고슬라비아 노비 디나르"
+                }
+            },
+            "YUN": {
+                "symbol": {
+                    "value": "YUN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "유고슬라비아 전환 디나르"
+                }
+            },
+            "ZAL": {
+                "symbol": {
+                    "value": "ZAL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "남아프리카 랜드 (금융)"
+                }
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "남아프리카 랜드"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "쟘비아 콰쳐 (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "잠비아 콰차"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZRN": {
+                "symbol": {
+                    "value": "ZRN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "자이르 신권 자이르"
+                }
+            },
+            "ZRZ": {
+                "symbol": {
+                    "value": "ZRZ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "자이르 자이르"
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "짐바브웨 달러"
+                },
+                "digits": 0
+            },
+            "ZWL": {
+                "symbol": {
+                    "value": "ZWL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "짐바브웨 달러 (2009)"
+                }
+            },
+            "ZWR": {
+                "symbol": {
+                    "value": "ZWR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "짐바브웨 달러 (2008)"
+                }
+            }
+        }
+    }
+}

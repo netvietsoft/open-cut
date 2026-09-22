@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@drawable/APKTOOL_RENAMED_0x7f0812a9" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/ll_share_group" n0:layout_width="match_parent" n0:layout_height="104.5dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:layout_marginHorizontal="10.0dp" n1:layout_constraintBottom_toTopOf="@id/ll_options_group" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/tv_line" n0:visibility="gone" n0:layout_width="85.0dp" n0:layout_height="wrap_content" n0:text="@string/mrg" n0:drawableTop="@drawable/APKTOOL_RENAMED_0x7f081ef4" n0:drawablePadding="8.0dp" />
+        <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/tv_whatsapp" n0:visibility="gone" n0:layout_width="85.0dp" n0:layout_height="wrap_content" n0:text="@string/rck" n0:drawableTop="@drawable/po6" n0:drawablePadding="8.0dp" />
+        <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/tv_facebook" n0:visibility="gone" n0:layout_width="85.0dp" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f121273" n0:drawableTop="@drawable/neb" n0:drawablePadding="8.0dp" />
+        <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/tv_copy_link_top" n0:visibility="gone" n0:layout_width="85.0dp" n0:layout_height="wrap_content" n0:text="@string/lcp" n0:maxLines="1" n0:includeFontPadding="false" n0:drawableTop="@drawable/nta" n0:drawablePadding="8.0dp" />
+    </LinearLayout>
+    <View n0:id="@id/space_line_one" n0:background="@color/APKTOOL_RENAMED_0x7f06063b" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="1.0dp" n2:layout_constraintBottom_toTopOf="@id/ll_options_group"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/ll_options_group" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="103.5dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:layout_marginHorizontal="10.0dp" n3:layout_constraintBottom_toTopOf="@id/space_line_two" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/tv_copy_link_bottom" n0:visibility="gone" n0:layout_width="85.0dp" n0:layout_height="wrap_content" n0:text="@string/lcp" n0:maxLines="1" n0:drawableTop="@drawable/nta" n0:drawablePadding="8.0dp" />
+    </LinearLayout>
+    <View n0:id="@id/space_line_two" n0:background="@color/APKTOOL_RENAMED_0x7f06063b" n0:layout_width="match_parent" n0:layout_height="1.0dp" n4:layout_constraintBottom_toTopOf="@id/cancelBtn"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="16.0dp" n0:textColor="@color/_u" n0:gravity="center" n0:id="@id/cancelBtn" n0:paddingBottom="10.0dp" n0:layout_width="match_parent" n0:layout_height="70.5dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

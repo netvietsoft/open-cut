@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/playerContent" n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/fl_ttv_container" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.libmedia.videoview.TextureVideoView n0:gravity="center" n0:layout_gravity="center" n0:id="@id/textureView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </FrameLayout>
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cover" n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitCenter" />
+    <FrameLayout n0:id="@id/fl_external_container_2" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintBottom_toTopOf="@id/fl_external_container" n2:layout_constraintEnd_toEndOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_external_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <include layout="@layout/lu3" />
+    <include layout="@layout/lu7" />
+    <include layout="@layout/lu8" />
+    <com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="match_parent" n4:kr3="none"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_back_full_screen" n0:visibility="gone" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m6x" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

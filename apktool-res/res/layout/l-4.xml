@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:orientation="horizontal" n0:background="#e5edff" n0:layout_width="match_parent" n0:layout_height="42.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/iv_uploading_relativeLayout" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/iv_uploading_anim" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_centerVertical="true" n1:lottie_autoPlay="true" n1:lottie_fileName="cloud_upload_banner_icon.json" n1:lottie_loop="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_uploading" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/l6y" n0:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/sg" n0:ellipsize="marquee" n0:id="@id/tv_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginStart="5.0dp" n0:layout_marginEnd="5.0dp" n0:layout_toStartOf="@id/ll_item_upload_count_bar" n0:layout_toEndOf="@id/iv_uploading_relativeLayout" />
+    <LinearLayout n0:id="@id/ll_item_upload_count_bar" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#2668ff" n0:gravity="center" n0:id="@id/suspend_all_btn" n0:layout_width="wrap_content" n0:layout_height="26.0dp" n0:text="@string/la8" n0:textAllCaps="false" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#757580" n0:gravity="center" n0:id="@id/cancel_all_btn" n0:layout_width="wrap_content" n0:layout_height="26.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:textAllCaps="false" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" />
+    </LinearLayout>
+</RelativeLayout>

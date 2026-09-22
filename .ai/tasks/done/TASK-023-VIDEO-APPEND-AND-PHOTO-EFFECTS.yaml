@@ -1,0 +1,23 @@
+id: TASK-023-VIDEO-APPEND-AND-PHOTO-EFFECTS
+title: "Khắc Phục Thêm Video Tiếp Trong Video Editor & Hoàn Thiện Toàn Bộ Hiệu Ứng Photo Editor"
+status: completed
+completed_at: "2026-09-18T19:33:00Z"
+assignee: "Agent 0, Agent 3, Agent 6, Agent 11, Agent 12"
+created_at: "2026-09-18T18:35:00Z"
+priority: CRITICAL
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/EffectRegistry.java"
+  - "TASK_LOG.md"
+  - "UPDATETODOS.md"
+  - "PROJECT_MEMORY.md"
+  - "Docs/Changelog/CHANGELOG.md"
+  - ".ai/**"
+requirements:
+  - "1. Sửa chức năng Thêm Clip Tiếp (Append Video Clip): Khi bấm nút '+' trên timeline hoặc 'Lớp phủ', ứng dụng mở Media Picker ở chế độ thêm nối tiếp (Append mode), không xóa clips hiện tại, ghép nối clip mới vào sau clip đang chọn, cập nhật Timeline Filmstrip, và cho phép chuyển clip tự động khi phát hết clip."
+  - "2. Sửa nút đóng picker 'X': Khi đang ở chế độ thêm clip tiếp mà bấm 'X' thì quay lại Video Editor thay vì thoát ra Trang chủ."
+  - "3. Khắc phục triệt để các chuỗi tham số hiệu ứng giữa MainActivity và EffectRegistry: Hỗ trợ đầy đủ alias cho Facetune & Meitu (teeth_whitening / whitening, eye_brightening / brighten_eyes, lipstick_tint / lipstick, meitu_bling / bling_bling, slim_legs), FaceApp (smile, youth / youth_18, hair / volumetric_hair), SnapEdit (sunset, aurora, bluesky / blue_sky)."
+  - "4. Bổ sung hiệu ứng Kéo Dài Chân (Meitu Leg Extension) và Cọ Xóa AI (SnapEdit Inpaint Erase) thực tế lên Bitmap trên canvas."
+  - "5. Hiển thị trạng thái kích hoạt (Active State) trực quan cho các nút hiệu ứng (đổi màu nền sang Cyan #00E5FF và chữ đen khi đang BẬT)."
+  - "6. Bổ sung thêm các bộ lọc 3D LUTs điện ảnh (Cinema Gold, Fuji Film, Soft Rose, Moody Dark)."
+  - "7. Kiểm thử trực tiếp 100% trên thiết bị thật Samsung Galaxy A50s (192.168.1.3:36903)."

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/ad_title_creative_btn_layout" n0:background="#f4f5f7" n0:layout_width="match_parent" n0:layout_height="45.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:layout_marginBottom="2.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:gravity="center_vertical" n0:id="@id/tt_ad_logo" n0:visibility="gone" n0:layout_width="15.0dp" n0:layout_height="15.0dp" n0:layout_centerVertical="true" />
+    <TextView n0:textSize="18.0sp" n0:ellipsize="end" n0:gravity="center_vertical" n0:id="@id/tv_listitem_ad_title" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginLeft="5.0dp" n0:text="content description" n0:singleLine="true" n0:maxLength="14" n0:layout_toLeftOf="@id/btn_listitem_creative" n0:layout_toRightOf="@id/tt_ad_logo" n0:layout_centerVertical="true" />
+    <Button n0:textSize="14.0sp" n0:textColor="#3399cc" n0:gravity="center" n0:id="@id/btn_listitem_creative" n0:background="@drawable/tt_btn_bg_creative" n0:padding="3.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginLeft="3.0dp" n0:layout_marginRight="8.0dp" n0:text="Download immediately" n0:layout_alignParentRight="true" n0:layout_centerVertical="true" n0:layout_marginStart="3.0dp" n0:layout_marginEnd="8.0dp" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

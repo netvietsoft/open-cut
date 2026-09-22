@@ -1,0 +1,236 @@
+{
+  "categories": [
+    {
+      "category_id": "quick_operation",
+      "title": "Quick actions",
+      "tools": [
+        {
+          "tool_id": "captions",
+          "name": "Auto captions",
+          "description": "",
+          "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_07042ce0d5b96772bacb12a89d58424f.png",
+          "url": "capcut://editor/create?click=1&enter_from=subtitle&component=infoSticker_addSubtitle",
+          "middle_page_url": "",
+          "ab_id_list": [],
+          "ab_id_list_black": [],
+          "report_name": "subtitle",
+          "is_new": false,
+          "extra": {},
+          "extra_v2": ""
+        },
+        {
+          "tool_id": "prompter",
+          "name": "Teleprompter",
+          "description": "",
+          "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_a12c8bb46d2cdd7eff94789a5654d35b.png",
+          "url": "capcut://edit/camera_shoot?enter_from=teleprompter&type=prompt",
+          "middle_page_url": "",
+          "ab_id_list": [],
+          "ab_id_list_black": [],
+          "report_name": "set_prompt",
+          "is_new": false,
+          "extra": {},
+          "extra_v2": ""
+        },
+        {
+          "tool_id": "camera",
+          "name": "Camera",
+          "description": "",
+          "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_34c1ff1ce5af6037014783140136eeed.png",
+          "url": "capcut://edit/camera_shoot?enter_from=camera&type=camera",
+          "middle_page_url": "",
+          "ab_id_list": [],
+          "ab_id_list_black": [],
+          "report_name": "shoot_entrance",
+          "is_new": false,
+          "extra": {},
+          "extra_v2": ""
+        },
+        {
+          "tool_id": "adjust_speed",
+          "name": "Adjust speed",
+          "description": "",
+          "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_95c879acf25fe1613f915a8b9b0484f4.png",
+          "url": "capcut://editor/create?click=1&enter_from=home&component=video_speed_normal",
+          "middle_page_url": "",
+          "ab_id_list": [],
+          "ab_id_list_black": [],
+          "report_name": "adjust_speed",
+          "is_new": false,
+          "extra": {},
+          "extra_v2": ""
+        },
+        {
+          "tool_id": "audio_record",
+          "name": "Recording",
+          "description": "",
+          "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_e8c18f4970b2c2430e937a480819222b.png",
+          "url": "capcut://editor/create?click=1&enter_from=home&component=audio_record",
+          "middle_page_url": "",
+          "ab_id_list": [],
+          "ab_id_list_black": [],
+          "report_name": "audio_record",
+          "is_new": false,
+          "extra": {},
+          "extra_v2": ""
+        }
+      ]
+    },
+    {
+      "category_id": "ai_tools",
+      "title": "AI tools",
+      "tools": [
+        {
+          "tool_id": "autocut",
+          "name": "AutoCut",
+          "description": "",
+          "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_820094f4512b77c764d216a0fb2bb103.png",
+          "url": "capcut://template/smart_recommend?enter_from=user&tab_name=edit&show_material=false&show_cloud_material=false&tool_card_title=AutoCut",
+          "middle_page_url": "",
+          "ab_id_list": [],
+          "ab_id_list_black": [],
+          "report_name": "intelligent_edit",
+          "is_new": false,
+          "extra": {},
+          "extra_v2": ""
+        }
+      ]
+    },
+    {
+      "category_id": "photo_editing",
+      "title": "Photo editing",
+      "tools": [
+        {
+          "tool_id": "photo_editor",
+          "name": "Photo editor",
+          "description": "",
+          "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_9cb4e08f2b08800afc4ec01b2fc022e4.png",
+          "url": "capcut://retouch/tool?enter_from=edit_tool",
+          "middle_page_url": "",
+          "ab_id_list": [],
+          "ab_id_list_black": [
+            71613101
+          ],
+          "report_name": "image_edit",
+          "is_new": false,
+          "extra": {},
+          "extra_v2": ""
+        },
+        {
+          "tool_id": "remove_background",
+          "name": "Remove background",
+          "description": "",
+          "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_12e117612b38b3c916f67c107b87e9e5.png",
+          "url": "capcut://retouch/4b?tab_name=remove_background&enter_from=edit_tool_background_remove",
+          "middle_page_url": "",
+          "ab_id_list": [],
+          "ab_id_list_black": [],
+          "report_name": "edit_tool_background_remove",
+          "is_new": false,
+          "extra": {},
+          "extra_v2": ""
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "tool_id": "autocut",
+      "name": "AutoCut",
+      "description": "",
+      "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_820094f4512b77c764d216a0fb2bb103.png",
+      "url": "capcut://template/smart_recommend?enter_from=user&tab_name=edit&show_material=false&show_cloud_material=false&tool_card_title=AutoCut",
+      "middle_page_url": "",
+      "ab_id_list": [],
+      "ab_id_list_black": [],
+      "report_name": "intelligent_edit",
+      "is_new": false,
+      "extra": {},
+      "extra_v2": ""
+    },
+    {
+      "tool_id": "captions",
+      "name": "Auto captions",
+      "description": "",
+      "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_07042ce0d5b96772bacb12a89d58424f.png",
+      "url": "capcut://editor/create?click=1&enter_from=subtitle&component=infoSticker_addSubtitle",
+      "middle_page_url": "",
+      "ab_id_list": [],
+      "ab_id_list_black": [],
+      "report_name": "subtitle",
+      "is_new": false,
+      "extra": {},
+      "extra_v2": ""
+    },
+    {
+      "tool_id": "photo_editor",
+      "name": "Photo editor",
+      "description": "",
+      "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_9cb4e08f2b08800afc4ec01b2fc022e4.png",
+      "url": "capcut://retouch/tool?enter_from=edit_tool",
+      "middle_page_url": "",
+      "ab_id_list": [],
+      "ab_id_list_black": [],
+      "report_name": "image_edit",
+      "is_new": false,
+      "extra": {},
+      "extra_v2": ""
+    },
+    {
+      "tool_id": "camera",
+      "name": "Camera",
+      "description": "",
+      "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_34c1ff1ce5af6037014783140136eeed.png",
+      "url": "capcut://edit/camera_shoot?enter_from=camera&type=camera",
+      "middle_page_url": "",
+      "ab_id_list": [],
+      "ab_id_list_black": [],
+      "report_name": "shoot_entrance",
+      "is_new": false,
+      "extra": {},
+      "extra_v2": ""
+    },
+    {
+      "tool_id": "adjust_speed",
+      "name": "Adjust speed",
+      "description": "",
+      "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_95c879acf25fe1613f915a8b9b0484f4.png",
+      "url": "capcut://editor/create?click=1&enter_from=home&component=video_speed_normal",
+      "middle_page_url": "",
+      "ab_id_list": [],
+      "ab_id_list_black": [],
+      "report_name": "adjust_speed",
+      "is_new": false,
+      "extra": {},
+      "extra_v2": ""
+    },
+    {
+      "tool_id": "prompter",
+      "name": "Teleprompter",
+      "description": "",
+      "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_a12c8bb46d2cdd7eff94789a5654d35b.png",
+      "url": "capcut://edit/camera_shoot?enter_from=teleprompter&type=prompt",
+      "middle_page_url": "",
+      "ab_id_list": [],
+      "ab_id_list_black": [],
+      "report_name": "set_prompt",
+      "is_new": false,
+      "extra": {},
+      "extra_v2": ""
+    },
+    {
+      "tool_id": "all_tools",
+      "name": "All tools",
+      "description": "",
+      "icon": "https://lf16-beecdn.ibytedtos.com/obj/ies-fe-bee-sg/bee_prod/biz_49/tos_6df529a4cf9f6aeef5b858e508fb3d9a.png",
+      "url": "capcut://homepage/all_tools?enter_from=home",
+      "middle_page_url": "",
+      "ab_id_list": [],
+      "ab_id_list_black": [],
+      "report_name": "all_tools",
+      "is_new": false,
+      "extra": {},
+      "extra_v2": ""
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704a9">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/item_icon" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f0704aa" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704aa" n0:layout_marginTop="4.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <Space n0:id="@id/space" n0:layout_width="4.0dp" n0:layout_height="4.0dp" n2:layout_constraintBottom_toTopOf="@id/item_icon" n2:layout_constraintStart_toEndOf="@id/item_icon"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.baseui.view.BlingBlingTip n0:textSize="9.0dp" n0:textStyle="bold" n0:id="@id/item_new" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="16.0dp" n0:text="@string/tv5" n3:layout_constraintEnd_toEndOf="@id/space" n3:layout_constraintTop_toTopOf="@id/space"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:id="@id/item_vip" n0:visibility="gone" n0:layout_width="15.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/r6-" n0:scaleType="centerInside" n0:layout_marginEnd="3.0dp" n4:layout_constraintEnd_toEndOf="@id/space" n4:layout_constraintTop_toTopOf="@id/space"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="8.0dp" n0:textColor="@android:color/black" n0:id="@id/tv_limit_free" n0:background="@drawable/q81" n0:paddingLeft="2.0dp" n0:paddingRight="2.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/to0" n0:layout_marginEnd="2.0dp" n0:paddingHorizontal="2.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704b0" n0:textStyle="bold" n0:textColor="@color/ks4" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/item_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="4.0dp" n0:layout_marginRight="4.0dp" n0:maxWidth="68.0dp" n0:minWidth="50.0dp" n0:maxLines="2" n0:layout_marginHorizontal="4.0dp" n6:nf="true" n6:autoSizeMaxTextSize="13.0dp" n6:autoSizeMinTextSize="8.0dp" n6:bp="1.0dp" n6:autoSizeTextType="uniform"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <View n0:layout_gravity="center_horizontal" n0:id="@id/item_point" n0:background="@drawable/r8i" n0:visibility="invisible" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f0704bb" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704bb" n0:layout_marginTop="5.0dp" />
+</merge>

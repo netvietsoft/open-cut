@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/mRlRoot" n0:background="@color/knt" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateButton n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/btnConfirm" n0:background="@drawable/lhx" n0:layout_width="206.0dp" n0:layout_height="40.0dp" n0:layout_marginBottom="30.0dp" n0:text="@string/qrx" n0:layout_alignParentBottom="true" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_3" n0:gravity="center_horizontal" n0:id="@id/tvContent" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginBottom="20.0dp" n2:layout_constraintBottom_toTopOf="@id/btnConfirm" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tvTitle" n2:layout_goneMarginTop="36.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center_horizontal" n0:id="@id/tvTitle" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="30.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.dialog.recorder.AlphaButton n0:id="@id/ivClose" n0:background="@drawable/p-2" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

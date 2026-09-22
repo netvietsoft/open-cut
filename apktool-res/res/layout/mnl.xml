@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_component_portrait_default_panel_0" n0:background="@color/kw0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:background="@color/ks1" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f07045e" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f070513" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center_vertical" n0:id="@id/plugin_item_list" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:overScrollMode="never" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

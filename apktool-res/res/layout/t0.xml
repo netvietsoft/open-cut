@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_digital_edit" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/anim_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:lottie_autoPlay="true" n1:lottie_fileName="ad_maker_ripple_circle_anim.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ad_maker_digital_icon" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="7.0dp" n0:scaleType="centerCrop" n2:roundAsCircle="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.adeditor.maker.view.AdMakerGradientView n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="7.0dp" n3:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="8.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="7.0dp" n0:layout_marginRight="7.0dp" n0:layout_marginBottom="13.0dp" n0:text="@string/li6" n0:layout_marginHorizontal="7.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

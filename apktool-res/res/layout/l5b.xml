@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:padding="30.0dp" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/tv_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/qvg" n0:lineHeight="22.0dp" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_3" n0:id="@id/tv_tips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/q9x" n0:lineHeight="20.0dp" n2:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_tips_img" n0:layout_width="match_parent" n0:layout_height="274.0dp" n0:layout_marginTop="20.0dp" n3:layout_constraintTop_toBottomOf="@id/tv_tips"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.LoadingView n0:id="@id/loading_view" n0:visibility="gone" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n4:layout_constraintBottom_toBottomOf="@id/iv_tips_img" n4:layout_constraintEnd_toEndOf="@id/iv_tips_img" n4:layout_constraintStart_toStartOf="@id/iv_tips_img" n4:layout_constraintTop_toTopOf="@id/iv_tips_img"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.StrongButton n0:textSize="14.0dp" n0:gravity="center" n0:id="@id/btn_confirm" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="20.0dp" n0:text="@string/rtf" n5:layout_constraintTop_toBottomOf="@id/iv_tips_img" n5:k1i="bold"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

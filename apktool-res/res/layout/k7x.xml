@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/rootView" n0:background="@color/e3" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/informationTitle" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <com.vega.ui.AlphaButton n0:id="@id/ivClose" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m67" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/kmc" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/l5a" n0:maxEms="9" n0:singleLine="true" n0:includeFontPadding="false" />
+        <View n0:layout_gravity="bottom" n0:id="@id/SplitLine" n0:background="@color/APKTOOL_RENAMED_0x7f060639" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/informationTitle">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center_horizontal" n0:id="@id/avatar" n0:layout_width="70.0dp" n0:layout_height="70.0dp" n0:layout_marginTop="24.0dp" n1:kr3="button" n1:roundAsCircle="true"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/eu" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/avatarTips" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:text="@string/luo" n2:kr3="button"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/nicknameFl" n0:layout_width="match_parent" n0:layout_height="70.0dp" n0:layout_marginTop="25.0dp" n3:kr3="list"
+              xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kmc" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qn8" n0:layout_marginStart="15.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kme" n0:ellipsize="end" n0:layout_gravity="end|center" n0:id="@id/nicknameEdit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="180.0dp" n0:maxLines="1" n0:layout_marginEnd="45.0dp" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n3x" n0:layout_marginEnd="15.0dp" />
+                <View n0:layout_gravity="bottom" n0:background="@color/ev" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/lvNumFl" n0:layout_width="match_parent" n0:layout_height="70.0dp" n4:kr3="list"
+              xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kmc" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/k4-" n0:layout_marginStart="15.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kme" n0:ellipsize="end" n0:layout_gravity="end|center" n0:id="@id/lvNumEdit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="180.0dp" n0:maxLines="1" n0:layout_marginEnd="45.0dp" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n3x" n0:layout_marginEnd="15.0dp" />
+                <View n0:layout_gravity="bottom" n0:background="@color/ev" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/genderFl" n0:layout_width="match_parent" n0:layout_height="70.0dp" n5:kr3="list"
+              xmlns:n5="http://schemas.android.com/apk/res-auto">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kmc" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mmm" n0:layout_marginStart="15.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kme" n0:ellipsize="end" n0:layout_gravity="end|center" n0:id="@id/genderEdit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="180.0dp" n0:maxLines="1" n0:layout_marginEnd="45.0dp" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n3x" n0:layout_marginEnd="15.0dp" />
+                <View n0:layout_gravity="bottom" n0:background="@color/ev" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" />
+                <FrameLayout n0:id="@id/description_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/descriptionFl" n0:layout_width="match_parent" n0:layout_height="70.0dp" n6:kr3="list"
+              xmlns:n6="http://schemas.android.com/apk/res-auto">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kmc" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qvm" n0:layout_marginStart="15.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kme" n0:ellipsize="end" n0:layout_gravity="end|center" n0:id="@id/descriptionEdit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="180.0dp" n0:maxLines="1" n0:layout_marginEnd="45.0dp" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n3x" n0:layout_marginEnd="15.0dp" />
+                <View n0:layout_gravity="bottom" n0:background="@color/ev" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/studentStatusFl" n0:layout_width="match_parent" n0:layout_height="70.0dp" n7:kr3="list"
+              xmlns:n7="http://schemas.android.com/apk/res-auto">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kmc" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kap" n0:layout_marginStart="15.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kme" n0:ellipsize="end" n0:layout_gravity="end|center" n0:id="@id/studentStatusEdit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="180.0dp" n0:maxLines="1" n0:layout_marginEnd="45.0dp" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n3x" n0:layout_marginEnd="15.0dp" />
+                <View n0:layout_gravity="bottom" n0:background="@color/ev" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/kmf" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="28.0dp" n0:layout_marginBottom="12.0dp" n0:text="@string/q5b" n0:layout_marginStart="15.0dp" n8:k1i="medium"
+              xmlns:n8="http://schemas.android.com/apk/res-auto" />
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/linkTiktokFl" n0:layout_width="match_parent" n0:layout_height="70.0dp" n9:kr3="list"
+              xmlns:n9="http://schemas.android.com/apk/res-auto">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kmc" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/k1i" n0:layout_marginStart="15.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kme" n0:ellipsize="end" n0:layout_gravity="end|center" n0:id="@id/tv_tiktok_username" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="180.0dp" n0:maxLines="1" n0:layout_marginEnd="45.0dp" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n3x" n0:layout_marginEnd="15.0dp" />
+                <View n0:layout_gravity="bottom" n0:background="@color/ev" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/linkInstagramFl" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="70.0dp" n10:kr3="list"
+              xmlns:n10="http://schemas.android.com/apk/res-auto">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kmc" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/msx" n0:layout_marginStart="15.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kme" n0:ellipsize="end" n0:layout_gravity="end|center" n0:id="@id/tv_instagram_username" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="180.0dp" n0:maxLines="1" n0:layout_marginEnd="45.0dp" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n3x" n0:layout_marginEnd="15.0dp" />
+                <View n0:layout_gravity="bottom" n0:background="@color/ev" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/linkYoutubeFl" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="70.0dp" n11:kr3="list"
+              xmlns:n11="http://schemas.android.com/apk/res-auto">
+                <LinearLayout n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kmc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqe" n0:layout_marginStart="15.0dp" />
+                    <ImageView n0:id="@id/youtube_guide_badge" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0837ef" />
+                </LinearLayout>
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kme" n0:ellipsize="end" n0:layout_gravity="end|center" n0:id="@id/tv_youtube_username" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="180.0dp" n0:maxLines="1" n0:layout_marginEnd="45.0dp" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n3x" n0:layout_marginEnd="15.0dp" />
+                <View n0:layout_gravity="bottom" n0:background="@color/ev" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View n0:id="@id/mongolia" n0:background="@color/_y" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/changeNicknameFl" n0:background="@color/t4" n0:layout_width="match_parent" n0:layout_height="64.0dp" n0:layout_marginBottom="-64.0dp" n0:layout_alignParentBottom="true" n0:alpha="0.0">
+        <com.vega.theme.VegaEditText n0:textSize="14.0dp" n0:textColor="@color/t2" n0:textColorHint="@color/t3" n0:layout_gravity="center_vertical" n0:id="@id/changeNicknameEt" n0:background="@null" n0:layout_width="220.0dp" n0:layout_height="match_parent" n0:hint="@string/qc_" n0:singleLine="true" n0:maxLength="20" n0:layout_marginStart="12.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/t5" n0:gravity="center" n0:layout_gravity="end|center" n0:id="@id/changeNicknameTv" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:text="@string/l_e" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/t7" n0:layout_gravity="end|center" n0:id="@id/changeNicknameNumTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="58.0dp" />
+        <ImageView n0:layout_gravity="end|center" n0:id="@id/changeNicknameIv" n0:visibility="invisible" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/ott" n0:layout_marginEnd="103.0dp" />
+    </FrameLayout>
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/progress_loading" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n0:scaleType="centerCrop" n0:layout_centerInParent="true" n12:lottie_autoPlay="true" n12:lottie_fileName="lv_loading.json" n12:lottie_loop="true"
+      xmlns:n12="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

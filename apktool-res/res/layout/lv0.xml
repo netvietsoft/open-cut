@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/previewEditor" n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="126.0dp" n0:layoutDirection="locale">
+        <RelativeLayout n0:id="@id/selectMaterialLayout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <FrameLayout n0:id="@id/pageContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_alignParentBottom="true" n0:layout_alignParentStart="true" n0:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.vega.cutsameedit.dock.view.FlavorTemplateDockGroupView n0:id="@id/msdBottomDocker" n0:background="@color/APKTOOL_RENAMED_0x7f060454" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+</LinearLayout>

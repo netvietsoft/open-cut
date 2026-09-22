@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/pc5" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/btn_right" n0:padding="@dimen/p7" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/mjq" n0:layout_marginEnd="2.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ww" n0:gravity="center" n0:id="@id/vtv_title" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:text="@string/omw" n2:layout_constraintBottom_toBottomOf="@id/btn_right" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="@id/btn_right" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/divider_line" n0:background="@color/APKTOOL_RENAMED_0x7f060639" n0:layout_width="match_parent" n0:layout_height="0.5dp" n3:layout_constraintTop_toBottomOf="@id/vtv_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_generate_tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/mjv" n4:layout_constraintBottom_toTopOf="@id/vtv_generate_tips" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/divider_line" n4:layout_constraintVertical_chainStyle="packed"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="#b2f6f7fe" n0:gravity="center" n0:id="@id/vtv_generate_tips" n0:paddingLeft="40.0dp" n0:paddingRight="40.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/omz" n0:paddingHorizontal="40.0dp" n5:layout_constraintBottom_toTopOf="@id/btn_generate" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/iv_generate_tips"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessCreditsBar n0:id="@id/credits_bar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginHorizontal="16.0dp" n6:layout_constraintBottom_toTopOf="@id/btn_generate"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/btn_generate" n0:background="@drawable/ljk" n0:paddingTop="11.0dp" n0:paddingBottom="11.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginHorizontal="16.0dp" n0:paddingVertical="11.0dp" n7:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_icon_left" n0:background="@drawable/o-y" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toStartOf="@id/tv_generate" n7:layout_constraintHorizontal_chainStyle="packed" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:id="@id/tv_generate" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/omy" n0:layout_marginStart="6.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toEndOf="@id/iv_icon_left" n7:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

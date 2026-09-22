@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView n0:id="@id/mMagnifierCard" n0:layout_width="140.0dp" n0:layout_height="140.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginStart="12.0dp" n1:cardCornerRadius="4.0dp" n1:cardElevation="4.0dp" n1:cardPreventCornerOverlap="false"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <SurfaceView n0:id="@id/mMagnifierPreview" n0:background="@drawable/k85" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <ImageView n0:layout_gravity="center" n0:id="@id/iv_magnifier_flag" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/k86" />
+</androidx.cardview.widget.CardView>

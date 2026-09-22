@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_item_root" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingVertical="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ai_icon" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constrainedWidth="true" n1:layout_constraintBottom_toTopOf="@id/ai_text" n1:layout_constraintDimensionRatio="3:4" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_e" n0:ellipsize="end" n0:gravity="start" n0:id="@id/ai_text" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxLines="2" n0:lineSpacingMultiplier="1.2" n2:layout_constrainedWidth="true" n2:layout_constraintEnd_toEndOf="@id/ai_icon" n2:layout_constraintStart_toStartOf="@id/ai_icon" n2:layout_constraintTop_toBottomOf="@id/ai_icon"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#e6e6e6" n0:gravity="center" n0:id="@id/ai_copy" n0:background="@drawable/_3" n0:paddingLeft="6.0dp" n0:paddingTop="6.0dp" n0:paddingRight="6.0dp" n0:paddingBottom="6.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/lbe" n0:singleLine="true" n0:paddingHorizontal="6.0dp" n0:paddingVertical="6.0dp" n3:layout_constrainedWidth="true" n3:layout_constraintEnd_toEndOf="@id/ai_icon" n3:layout_constraintHorizontal_bias="0.0" n3:layout_constraintStart_toStartOf="@id/ai_icon" n3:layout_constraintTop_toBottomOf="@id/ai_text"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

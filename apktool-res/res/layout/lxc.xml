@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_alignParentLeft="true" n0:layout_alignParentStart="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/applovin_native_icon_view" style="@style/yp">
+        <ImageView n0:id="@id/applovin_native_icon_image_view" style="@style/yp" />
+    </FrameLayout>
+    <LinearLayout n0:layout_gravity="center_vertical" n0:orientation="vertical" n0:id="@id/applovin_native_ad_content_linear_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="4.0dp" n0:layout_marginRight="4.0dp" n0:layout_marginHorizontal="4.0dp">
+        <RelativeLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <TextView n0:id="@id/applovin_native_title_text_view" n0:layout_marginBottom="1.0dp" n0:layout_toLeftOf="@id/applovin_native_options_view" n0:layout_alignParentLeft="true" n0:paddingEnd="28.0dp" n0:layout_toStartOf="@id/applovin_native_options_view" n0:layout_alignParentStart="true" style="@style/APKTOOL_RENAMED_0x7f1304c5" />
+            <FrameLayout n0:id="@id/applovin_native_options_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_alignParentRight="true" n0:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <TextView style="@style/APKTOOL_RENAMED_0x7f1304ba" />
+            <TextView n0:id="@id/applovin_native_advertiser_text_view" style="@style/APKTOOL_RENAMED_0x7f1304bb" />
+        </LinearLayout>
+        <TextView n0:id="@id/applovin_native_body_text_view" style="@style/APKTOOL_RENAMED_0x7f1304bb" />
+    </LinearLayout>
+</LinearLayout>

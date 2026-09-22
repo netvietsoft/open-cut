@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/dialog_container" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="21.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/top_indicator" n0:background="@drawable/nx7" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="6.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textColor="@color/mk" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="17.0dp" n0:text="@string/kwf" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/top_indicator" n2:k1i="bold" n2:k1j="headline"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/mm" n0:id="@id/content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="19.0dp" n0:text="@string/kwd" n0:lineSpacingExtra="6.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaCheckBox n0:textSize="16.0sp" n0:textColor="@color/mm" n0:gravity="center_vertical" n0:id="@id/radio_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/kwe" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/content" style="@style/APKTOOL_RENAMED_0x7f1304a7"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaButton n0:textSize="16.0sp" n0:textColor="@color/l-" n0:gravity="center" n0:id="@id/btn_positive" n0:background="@drawable/kto" n0:paddingBottom="1.0dp" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/kwc" n0:textAllCaps="false" n0:elevation="0.0dp" n0:stateListAnimator="@null" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/radio_btn" n5:k1i="medium"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

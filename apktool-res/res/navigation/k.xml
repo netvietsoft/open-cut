@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/ai_painting_nav" app:kz0="@id/ai_first_level_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="firstLevelFragment" android:name="com.vega.edit.aigenerator.fragment.list.AIFirstLevelFragment" android:id="@id/ai_first_level_fragment">
+        <action android:id="@id/action_first_to_second_dialog" app:APKTOOL_RENAMED_0x7f040444="@id/ai_second_level_dialog_fragment" app:kra="@id/ai_first_level_fragment" />
+        <action android:id="@id/action_first_to_showcase" app:APKTOOL_RENAMED_0x7f040444="@id/ai_showcase_dialog" />
+    </fragment>
+    <dialog android:label="secondLevelDialog" android:name="com.vega.edit.aigenerator.fragment.list.AISecondLevelDialogFragment" android:id="@id/ai_second_level_dialog_fragment">
+        <action android:id="@id/action_second_dialog_to_showcase" app:APKTOOL_RENAMED_0x7f040444="@id/ai_showcase_dialog" />
+    </dialog>
+    <dialog android:label="aiShowcaseDialog" android:name="com.vega.edit.aigenerator.fragment.list.AIShowcaseDialogFragment" android:id="@id/ai_showcase_dialog">
+        <action android:id="@id/action_showcase_to_multi_reference_dialog" app:APKTOOL_RENAMED_0x7f040444="@id/ai_multi_reference_fragment" app:APKTOOL_RENAMED_0x7f0404b0="@anim/kp" app:APKTOOL_RENAMED_0x7f0404b8="@anim/kq" />
+        <action android:id="@id/action_showcase_to_multi_frame_dialog" app:APKTOOL_RENAMED_0x7f040444="@id/ai_multi_frame_fragment" app:APKTOOL_RENAMED_0x7f0404b0="@anim/kp" app:APKTOOL_RENAMED_0x7f0404b8="@anim/kq" />
+        <action android:id="@id/action_showcase_to_legacy_reference_dialog" app:APKTOOL_RENAMED_0x7f040444="@id/ai_legacy_reference_fragment" app:APKTOOL_RENAMED_0x7f0404b0="@anim/kp" app:APKTOOL_RENAMED_0x7f0404b8="@anim/kq" />
+        <action android:id="@id/action_showcase_to_headtail_reference_dialog" app:APKTOOL_RENAMED_0x7f040444="@id/ai_headtail_reference_fragment" app:APKTOOL_RENAMED_0x7f0404b0="@anim/kp" app:APKTOOL_RENAMED_0x7f0404b8="@anim/kq" />
+    </dialog>
+    <dialog android:label="aiMultiFrameFragment" android:name="com.vega.edit.aigenerator.fragment.promptedit.multiframe.AIMultiFramesDialogFragment" android:id="@id/ai_multi_frame_fragment" />
+    <dialog android:label="aiMultiReferenceFragment" android:name="com.vega.edit.aigenerator.fragment.promptedit.multireference.MultiReferencePromptFragment" android:id="@id/ai_multi_reference_fragment" />
+    <dialog android:label="aiSingleReferenceFragment" android:name="com.vega.edit.aigenerator.fragment.promptedit.legacy.LegacyReferencePromptFragment" android:id="@id/ai_legacy_reference_fragment" />
+    <dialog android:label="aiHeadTailReferenceFragment" android:name="com.vega.edit.aigenerator.fragment.promptedit.headtailframe.HeadTailReferencePromptFragment" android:id="@id/ai_headtail_reference_fragment">
+        <action android:id="@id/action_headtail_reference_to_headtail_generate_image_dialog" app:APKTOOL_RENAMED_0x7f040444="@id/ai_headtail_generate_image_fragment" app:APKTOOL_RENAMED_0x7f0404b0="@anim/kp" app:APKTOOL_RENAMED_0x7f0404b8="@anim/kq" />
+    </dialog>
+    <dialog android:label="aiHeadTailGenerateImageFragment" android:name="com.vega.edit.aigenerator.fragment.promptedit.headtailframe.HeadTailGenerateImageDialogFragment" android:id="@id/ai_headtail_generate_image_fragment" />
+    <dialog android:label="aiExecutionGenerateDialog" android:name="com.vega.edit.aigenerator.fragment.execution.AIEffectGenerateDialogFragment" android:id="@id/ai_execution_generate_dialog_fragment" />
+</navigation>

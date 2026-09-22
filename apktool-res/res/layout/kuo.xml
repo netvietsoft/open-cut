@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="2.0dp" n0:layout_height="32.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/image" n0:visibility="gone" n0:layout_width="62.0dp" n0:layout_height="30.0dp" />
+    <ImageView n0:id="@id/ivFontConner" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" />
+    <com.vega.theme.text.VegaTextView n0:id="@id/text" n0:visibility="gone" n0:layout_width="56.0dp" n0:layout_height="wrap_content" />
+    <com.vega.theme.text.VegaTextView n0:id="@id/error" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <com.vega.ui.widget.ItemLoadingView n0:id="@id/loading" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" />
+    <View n0:layout_gravity="center" n0:background="#484e52" n0:layout_width="1.5dp" n0:layout_height="32.0dp" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="93.0dp" n0:layout_height="93.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundFrameLayout n0:layout_gravity="center|bottom" n0:background="@drawable/k6u" n0:layout_width="88.0dp" n0:layout_height="88.0dp" n1:i7="8.0dp" n1:i8="8.0dp" n1:i9="8.0dp" n1:i-="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/aiGenLoading" n0:layout_width="88.0dp" n0:layout_height="88.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="history_item_loading.json" n1:lottie_loop="true" />
+    </com.vega.ui.widget.RoundFrameLayout>
+</FrameLayout>

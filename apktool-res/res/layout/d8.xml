@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/k2p" n0:paddingTop="30.0dp" n0:paddingBottom="15.0dp" n0:layout_width="266.0dp" n0:layout_height="wrap_content" n0:paddingStart="30.0dp" n0:paddingEnd="30.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/sg" n0:id="@id/dialog_group_invitation_tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q-g" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_3" n0:id="@id/dialog_group_invitation_tv_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n2:layout_constraintTop_toBottomOf="@id/dialog_group_invitation_tv_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/dialog_group_invitation_btn_ok" n0:background="@drawable/kwq" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="20.0dp" n0:text="@string/mvf" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/dialog_group_invitation_tv_content"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/fi" n0:gravity="center" n0:id="@id/dialog_group_invitation_btn_cancel" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginTop="4.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120581" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toBottomOf="@id/dialog_group_invitation_btn_ok"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

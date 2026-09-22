@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/chat_preview_panel" n0:background="@color/f" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/line_bottom" n0:background="@color/a3" n0:layout_width="0.0dp" n0:layout_height="0.5dp" n1:layout_constraintBottom_toTopOf="@id/panel_detail_container" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <HorizontalScrollView n0:id="@id/preview_scroll" n0:scrollbars="none" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:overScrollMode="never" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintBottom_toTopOf="@id/line_bottom" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="center" n0:orientation="horizontal" n0:id="@id/preview_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panel_detail_container" n0:background="#18191c" n0:layout_width="match_parent" n0:layout_height="66.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:id="@id/bn_cancel" n0:padding="12.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/n7c" n0:layout_marginStart="12.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lkz" n0:textAlignment="center" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:k1g="text" n3:k1i="medium" n3:k1j="body_1" />
+        <com.vega.ui.AlphaButton n0:id="@id/bn_apply" n0:padding="12.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/n7d" n0:layout_marginEnd="12.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

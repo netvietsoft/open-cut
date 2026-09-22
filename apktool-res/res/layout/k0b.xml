@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/login_container" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/login_tips" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/ma-" n0:layout_marginStart="40.0dp" n0:layout_marginEnd="40.0dp" n1:layout_constraintBottom_toTopOf="@id/login_btn_rv" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/login_btn_rv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="40.0dp" n0:layout_marginEnd="40.0dp" n2:layout_constrainedWidth="true" n2:layout_constraintBottom_toTopOf="@id/login_protocol" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/login_tips"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/login_protocol" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/mvy" n0:layout_marginStart="40.0dp" n0:layout_marginEnd="40.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/login_btn_rv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

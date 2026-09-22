@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/layout_record" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:minWidth="109.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/lvAnim" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:lottie_autoPlay="false" n1:lottie_loop="false"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="12.0sp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/tvNormal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qa9" n0:drawablePadding="4.0dp" n0:layout_centerInParent="true" n0:drawableStart="@drawable/m-5" />
+</RelativeLayout>

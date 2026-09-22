@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="center_horizontal" n0:background="@drawable/q92" n0:layout_width="160.0dp" n0:layout_height="118.0dp" n0:layout_marginTop="288.0dp">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_cancel" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/rmg" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/lottie_view" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="24.0dp" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:lottie_autoPlay="true" n2:lottie_fileName="loading_white.json" n2:lottie_loop="true"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="13.0dp" n0:textColor="#ffffff" n0:id="@id/tv_message" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1244ba" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/lottie_view"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

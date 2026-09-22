@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n1:i1="10.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_cover" n0:layout_width="52.0dp" n0:layout_height="52.0dp" n1:actualImageScaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <View n0:id="@id/mask_view" n0:background="@color/s" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <View n0:id="@id/select_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f080cf6" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+</com.vega.ui.widget.RoundConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:layout_gravity="center" n0:id="@id/item_tab" n0:paddingLeft="@dimen/cu" n0:paddingRight="@dimen/cu" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:paddingHorizontal="@dimen/cu" style="@style/vk" />
+    <ImageView n0:layout_gravity="center" n0:id="@id/item_img" n0:layout_width="16.0dp" n0:layout_height="15.0dp" n0:layout_marginLeft="@dimen/cu" n0:layout_marginRight="@dimen/cu" n0:layout_marginHorizontal="@dimen/cu" />
+    <com.vega.ui.TipsViewRoot n0:layout_gravity="end|top" n0:id="@id/newFuncTip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n1:kel="10.0dp" n1:kem="@layout/mka" n1:kev="16.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

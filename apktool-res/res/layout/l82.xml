@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/menu_content" n0:background="@drawable/lbb" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constrainedHeight="true" n1:layout_constraintBottom_toTopOf="@id/menu_arrow" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_bias="0.0" n1:layout_constraintVertical_chainStyle="packed"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:id="@id/delete_btn" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/py9" n0:paddingStart="18.0dp" n0:paddingEnd="18.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:id="@id/copy_btn" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/py7" n0:paddingStart="18.0dp" n0:paddingEnd="18.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <View n0:background="#ff808080" n0:layout_width="1.0dp" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/copy_btn" n1:layout_constraintStart_toEndOf="@id/delete_btn" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:id="@id/menu_arrow" n0:layout_width="14.0dp" n0:layout_height="7.0dp" n0:src="@drawable/qbv" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/menu_content"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

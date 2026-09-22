@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:padding="4.0dp" n0:layout_width="80.0dp" n0:layout_height="106.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/k5d" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/load_more_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <ImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/n99" />
+            <TextView n0:textSize="10.0dp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q5n" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/load_retry_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <ImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/odz" />
+            <TextView n0:textSize="10.0dp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q5n" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/load_more_loading_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.airbnb.lottie.LottieAnimationView n0:id="@id/loading_anim" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginBottom="8.0dp" n1:lottie_fileName="business_load_more_loading.json" n1:lottie_loop="true" />
+            <TextView n0:textSize="10.0dp" n0:textColor="#99ffffff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q5n" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

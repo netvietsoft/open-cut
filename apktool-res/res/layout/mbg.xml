@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root_container" n0:tag="layout/xt_shape_fragment_layout2_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/shape_fragment_layout" n0:background="#1c1d21" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="@dimen/APKTOOL_RENAMED_0x7f070513" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704dd">
+            <TextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/shape_tv" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/ssv" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" />
+            <TextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/style_tv" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/ssy" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" />
+            <View n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" />
+            <ImageView n0:layout_gravity="center" n0:id="@id/shape_go_edit" n0:tag="binding_1" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/r2b" />
+        </LinearLayout>
+        <View n0:id="@id/divider_line" n0:background="@color/ktk" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toTopOf="@id/view_pager_contianer" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+        <LinearLayout n0:orientation="vertical" n0:id="@id/shape_resource_panel" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d7">
+            <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center" n0:id="@id/shape_bar" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704dd" n0:overScrollMode="never" n0:paddingStart="4.0dp" />
+            <FrameLayout n0:layout_gravity="center" n0:id="@id/view_pager_contianer" n0:tag="binding_2" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d6">
+                <androidx.viewpager2.widget.ViewPager2 n0:orientation="horizontal" n0:id="@id/shape_view_pager" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f0704d9" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f0704d9" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/shape_operate_panel" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d7">
+            <LinearLayout n0:layout_width="wrap_content" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704dd">
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/fill_tv" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/ssp" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n0:layout_marginStart="4.0dp" />
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/stroke_tv" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/ssw" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" />
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/opacity_tv" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/ssx" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" />
+            </LinearLayout>
+            <FrameLayout n0:id="@id/shape_style_opera_panel_container" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d6" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n0:id="@id/fail_layout" n0:tag="binding_3" n0:layout_width="match_parent" n0:layout_height="264.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.AutoLottieAnimationView n0:layout_gravity="center" n0:id="@id/loading" n0:tag="binding_4" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n2:lottie_loop="true" />
+        <TextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:layout_gravity="center" n0:tag="binding_5" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="56.0dp" n0:text="@string/srh" />
+        <LinearLayout n0:layout_gravity="center" n0:orientation="horizontal" n0:tag="binding_6" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <ImageView n0:id="@id/iv_retry" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08360c" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" />
+            <TextView n0:textSize="12.0dp" n0:textColor="@color/kqx" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/srg" />
+        </LinearLayout>
+    </FrameLayout>
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/palette_panel" n0:layout_width="match_parent" n0:layout_height="408.5dp" n3:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/picker_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.xt.retouch.baseui.colorpick.RingColorPreviewView n0:id="@id/color_preview_view" n0:visibility="gone" n0:layout_width="100.0dp" n0:layout_height="100.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

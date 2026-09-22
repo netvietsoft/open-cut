@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.VegaCheckBox n0:id="@id/mock_settings_crash" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Settings crash (mock_settings_crash)" />
+    <com.vega.theme.VegaCheckBox n0:id="@id/mock_local_ab_crash" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Local AB crash (mock_local_ab_crash)" />
+    <com.vega.theme.VegaCheckBox n0:id="@id/mock_file_crash" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="File crash (mock_file_crash)" />
+    <com.vega.theme.VegaCheckBox n0:id="@id/mock_local_data_crash" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Local data crash (mock_crash_must_fix_by_offline_strategy)" />
+    <LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <Button n0:id="@id/reset" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Reset" n0:layout_weight="1.0" />
+        <Button n0:id="@id/confirm" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Confirm" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <Button n0:id="@id/open_safe_mode" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Enable safe mode" />
+</LinearLayout>

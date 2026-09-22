@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="#ff000000" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextureView n0:layout_gravity="center" n0:id="@id/creatives_preview_texture" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <ImageView n0:layout_gravity="center" n0:id="@id/creatives_preview_play" n0:background="@drawable/lrn" n0:padding="14.0dp" n0:layout_width="65.0dp" n0:layout_height="65.0dp" n0:src="@drawable/qaq" n0:contentDescription="@null" />
+    <LinearLayout n0:layout_gravity="center|bottom" n0:orientation="horizontal" n0:id="@id/creatives_preview_time" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="35.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="20.0dp" n0:textColor="@color/knt" n0:id="@id/creatives_preview_current_time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:shadowColor="@color/_u" n0:shadowDx="3.0" n0:shadowDy="3.0" n0:shadowRadius="4.0" />
+        <com.vega.theme.text.VegaTextView n0:textSize="20.0dp" n0:textColor="@color/_g" n0:id="@id/creatives_preview_total_time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:shadowColor="@color/_u" n0:shadowDx="3.0" n0:shadowDy="3.0" n0:shadowRadius="4.0" />
+    </LinearLayout>
+</FrameLayout>

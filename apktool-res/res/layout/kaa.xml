@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="59.0dp" n0:layout_height="90.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:layout_gravity="center" n0:id="@id/cv_icon" n0:layout_width="56.0dp" n0:layout_height="56.0dp" n0:layout_margin="1.5dp" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="2.0dp" n1:cardElevation="0.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/icon" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/mol" />
+    </androidx.cardview.widget.CardView>
+    <com.vega.ui.widget.ItemLoadingView n0:id="@id/loading_view" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n2:layout_constraintBottom_toBottomOf="@id/cv_icon" n2:layout_constraintEnd_toEndOf="@id/cv_icon" n2:layout_constraintStart_toStartOf="@id/cv_icon" n2:layout_constraintTop_toTopOf="@id/cv_icon"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/error_view" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" n3:layout_constraintBottom_toBottomOf="@id/cv_icon" n3:layout_constraintEnd_toEndOf="@id/cv_icon" n3:layout_constraintStart_toStartOf="@id/cv_icon" n3:layout_constraintTop_toTopOf="@id/cv_icon"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="1.5dp" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:kml="small"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_goto_adjust" n0:background="@drawable/lv3" n0:visibility="gone" n0:layout_width="59.0dp" n0:layout_height="59.0dp" n5:layout_constraintDimensionRatio="1:1" n5:layout_constraintLeft_toLeftOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:id="@id/adjust_image" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m_s" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/name" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n6:layout_constraintEnd_toEndOf="@id/cv_icon" n6:layout_constraintStart_toStartOf="@id/cv_icon" n6:layout_constraintTop_toBottomOf="@id/cv_icon"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

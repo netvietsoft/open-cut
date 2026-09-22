@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="80.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/upload_type_icon" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/q1x" n0:layout_alignParentTop="true" n0:layout_centerHorizontal="true" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/upload_type_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/rwy" n0:layout_below="@id/upload_type_icon" n0:layout_centerHorizontal="true" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/duration_label_container" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/duration_icon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/oya" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/ml" n0:id="@id/duration_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f122646" n0:layout_marginStart="8.0dp" n1:layout_constraintStart_toEndOf="@id/duration_icon" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mp" n0:id="@id/duration_description" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/ppl" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/duration_icon" n1:layout_constraintTop_toBottomOf="@id/duration_label" n1:k1i="regular" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/duration_list" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/duration_label_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

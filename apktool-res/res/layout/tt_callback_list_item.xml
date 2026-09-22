@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="#fff" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/callback_layout" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_callback_color_selector" n0:gravity="center_vertical" n0:id="@id/callback_name" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginLeft="12.0dp" n0:layout_weight="1.0" />
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/right_arrow" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginRight="12.0dp" n0:src="@drawable/tt_arrow_selector" />
+    </LinearLayout>
+    <View n0:background="#ebebeb" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" />
+    <RelativeLayout n0:id="@id/callback_info_layout" n0:background="#fafafa" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <TextView n0:textSize="13.0sp" n0:textColor="@color/tt_color_333" n0:id="@id/callback_content" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:lineSpacingExtra="8.0dp" n0:textIsSelectable="true" />
+        <View n0:background="#ebebeb" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="80.0dp" n0:layout_marginEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/image_area" n0:layout_width="62.0dp" n0:layout_height="62.0dp">
+        <com.xt.retouch.baseui.view.RoundImageView n0:layout_gravity="center" n0:id="@id/item_icon" n0:layout_width="62.0dp" n0:layout_height="62.0dp" n0:scaleType="fitXY" n1:APKTOOL_RENAMED_0x7f04040d="@dimen/es" n1:APKTOOL_RENAMED_0x7f04040e="@dimen/es" n1:jk="@dimen/es" n1:jl="@dimen/es"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/select_bg" n0:background="@drawable/q56" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/effectRetry" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/rla" n0:scaleType="centerInside" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/selectedIcon" n0:visibility="gone" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/rdo" />
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="10.0dp" n0:textColor="@color/ktl" n0:ellipsize="marquee" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/itemTitle" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="45.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:singleLine="true" />
+</LinearLayout>

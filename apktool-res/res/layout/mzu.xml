@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="#ff0000" n0:layout_width="390.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="14.0dp" n0:textColor="@color/kor" n0:gravity="center_horizontal" n0:id="@id/tv_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="Select region" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <RadioGroup n0:orientation="vertical" n0:id="@id/radiogroup1" n0:layout_width="150.0dp" n0:layout_height="wrap_content" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/normal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Default (from central platform)" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/cn" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="cn|China" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/us_il" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="us_il|Illinois, USA" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/us_tx" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="us_tx|Texas, USA" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/us" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="us|USA" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/jp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="jp|Japan" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/kr" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="kr|South Korea" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/ca" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="ca|Canada" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/gb" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="gb|UK" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/de" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="de|Germany" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/fr" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="fr|France" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/nl" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="nl|Netherlands" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/se" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="se|Sweden" />
+    </RadioGroup>
+    <View n0:background="#ffffff" n0:layout_width="1.0dp" n0:layout_height="match_parent" n3:layout_constraintStart_toEndOf="@id/radiogroup1" n3:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <RadioGroup n0:orientation="vertical" n0:id="@id/radiogroup2" n0:layout_width="120.0dp" n0:layout_height="wrap_content" n4:layout_constraintStart_toEndOf="@id/radiogroup1" n4:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/it" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="it|Italy" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/es" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="es|Spain" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/ru" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="ru|Russia" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/pl" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="pl|Poland" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/br" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="br|Brazil" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/mx" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="mx|Mexico" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/ar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="ar|Argentina" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/au" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="au|Australia" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/sa" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="sa|Saudi Arabia" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/tr" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="tr|Turkey" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/il" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="il|Israel" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/ae" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="ae|UAE" />
+    </RadioGroup>
+    <View n0:background="#ffffff" n0:layout_width="1.0dp" n0:layout_height="match_parent" n5:layout_constraintStart_toEndOf="@id/radiogroup2" n5:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <RadioGroup n0:orientation="vertical" n0:id="@id/radiogroup3" n0:layout_width="120.0dp" n0:layout_height="wrap_content" n6:layout_constraintStart_toEndOf="@id/radiogroup2" n6:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/vn" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="vn|Vietnam" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/id" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="id|Indonesia" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/th" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="th|Thailand" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/tw" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="tw|Taiwan, China" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/ph" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="ph|Philippines" />
+        <RadioButton n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704c7" n0:id="@id/my" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="my|Malaysia" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

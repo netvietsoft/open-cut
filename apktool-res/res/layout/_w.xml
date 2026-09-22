@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.ugc.aweme.rich.reward.view.CustomScrollChildLinearLayout n0:orientation="vertical" n0:id="@id/reward_ad_bottom_info_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="@dimen/r3" n0:paddingEnd="@dimen/r3"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/reward_ad_bottom_info_header_container" n0:layout_width="match_parent" n0:layout_height="32.0dp">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/reward_ad_bottom_info_avatar" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n1:actualImageScaleType="centerCrop" n1:roundAsCircle="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.bytedance.tux.input.TuxTextView n0:textColor="?kw" n0:id="@id/reward_ad_bottom_info_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="@dimen/sq" style="@style/t1" />
+    </LinearLayout>
+    <com.bytedance.tux.input.TuxTextView n0:textColor="?kw" n0:ellipsize="end" n0:id="@id/reward_ad_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/sq" n0:maxLines="4" style="@style/t6" />
+    <com.bytedance.ies.ugc.aweme.rich.ui.RichTagView n0:id="@id/reward_ad_sponsored_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/sq" n0:layout_marginBottom="@dimen/sq" />
+</com.ss.android.ugc.aweme.rich.reward.view.CustomScrollChildLinearLayout>

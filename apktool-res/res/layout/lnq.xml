@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:id="@id/p_drafts_loading_card" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/loading_item1" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" n1:layout_constraintEnd_toStartOf="@id/loading_item2" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <View n0:id="@id/loading_item_view1" n0:background="@drawable/APKTOOL_RENAMED_0x7f080ca5" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintDimensionRatio="H,1:1" n1:layout_constraintTop_toTopOf="parent" />
+            <View n0:background="@drawable/k_-" n0:layout_width="83.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="9.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/loading_item_view1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/loading_item2" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" n0:layout_marginStart="8.0dp" n2:layout_constraintEnd_toStartOf="@id/loading_item3" n2:layout_constraintStart_toStartOf="@id/loading_item1" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <View n0:id="@id/loading_item_view2" n0:background="@drawable/APKTOOL_RENAMED_0x7f080ca5" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintDimensionRatio="H,1:1" n2:layout_constraintTop_toTopOf="parent" />
+            <View n0:background="@drawable/k_-" n0:layout_width="83.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="9.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/loading_item_view2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/loading_item3" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" n0:layout_marginStart="8.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="@id/loading_item2" n3:layout_constraintTop_toTopOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <View n0:id="@id/loading_item_view3" n0:background="@drawable/APKTOOL_RENAMED_0x7f080ca5" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintDimensionRatio="H,1:1" n3:layout_constraintTop_toTopOf="parent" />
+            <View n0:background="@drawable/k_-" n0:layout_width="83.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="9.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/loading_item_view3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</merge>

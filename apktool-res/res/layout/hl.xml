@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lmx" n0:layout_width="200.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageButton n0:id="@id/ivClose" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08194e" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/ivLoading" n0:layout_width="40.0dp" n0:layout_height="30.0dp" n0:layout_marginTop="40.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:lottie_autoPlay="true" n2:lottie_fileName="lv_loading.json" n2:lottie_loop="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:gravity="center" n0:id="@id/progressText" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:layout_marginStart="25.0dp" n0:layout_marginEnd="25.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/ivLoading"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ProgressBar n0:layout_gravity="center_horizontal" n0:id="@id/progressBar" n0:layout_width="0.0dp" n0:layout_height="1.0dp" n0:layout_marginTop="12.0dp" n0:max="100" n0:progressDrawable="@drawable/lmv" n0:layout_marginStart="25.0dp" n0:layout_marginEnd="25.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/progressText" style="?android:progressBarStyleHorizontal"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/_r" n0:gravity="center" n0:id="@id/progressTips" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/mg8" n0:layout_marginStart="25.0dp" n0:layout_marginEnd="25.0dp" n5:layout_constraintBottom_toTopOf="@id/btnConfirm" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/progressBar"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.StrongButton n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/btnConfirm" n0:background="@drawable/lma" n0:layout_width="88.0dp" n0:layout_height="33.0dp" n0:layout_marginBottom="24.0dp" n0:text="@string/nz-" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/progressTips"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

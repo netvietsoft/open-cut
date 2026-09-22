@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:gravity="center" n0:layout_gravity="center" n0:id="@id/mbridge_choice_frl" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/mbridge_lv_iv_bg" n0:background="@drawable/mbridge_order_layout_list_bg" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+    <HorizontalScrollView n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <LinearLayout n0:gravity="center" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.mbridge.msdk.video.dynview.ordercamp.AblGridView n0:gravity="center" n0:id="@id/mbridge_order_view_h_lv" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:stretchMode="spacingWidthUniform" n0:numColumns="auto_fit" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <RelativeLayout n0:id="@id/mbridge_native_order_camp_controller" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp">
+        <com.mbridge.msdk.dycreator.baseview.cusview.MBridgeDyImageView n0:id="@id/mbridge_iv_link" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:src="@drawable/mbridge_reward_notice" n0:layout_centerVertical="true" />
+        <com.mbridge.msdk.widget.FeedBackButton n0:textSize="11.0sp" n0:textColor="@color/mbridge_white" n0:gravity="center" n0:id="@id/mbridge_native_order_camp_feed_btn" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="25.0dp" n0:text="@string/mbridge_cm_feedback_btn_text" n0:layout_alignTop="@id/mbridge_iv_link" n0:layout_toEndOf="@id/mbridge_iv_link" />
+        <com.mbridge.msdk.dycreator.baseview.cusview.MBridgeDyImageView n0:id="@id/mbridge_order_view_iv_close" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:src="@drawable/mbridge_reward_close" n0:layout_alignParentRight="true" n0:contentDescription="closeButton" />
+        <com.mbridge.msdk.dycreator.baseview.cusview.MBridgeTextView n0:textSize="12.0sp" n0:textColor="@color/mbridge_reward_white" n0:gravity="center" n0:id="@id/mbridge_tv_reward_status" n0:background="@drawable/mbridge_reward_video_time_count_num_bg" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="25.0dp" n0:layout_marginLeft="5.0dp" n0:text="@string/mbridge_reward_video_view_reward_time_complete" n0:layout_alignTop="@id/mbridge_iv_link" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_toEndOf="@id/mbridge_native_order_camp_feed_btn" />
+    </RelativeLayout>
+    <ImageView n0:id="@id/mbridge_iv_logo" n0:layout_width="50.0dp" n0:layout_height="18.0dp" n0:layout_marginLeft="13.0dp" n0:layout_marginTop="13.0dp" n0:layout_marginRight="13.0dp" n0:layout_marginBottom="5.0dp" n0:src="@drawable/mbridge_reward_end_pager_logo" n0:layout_alignParentBottom="true" n0:layout_centerHorizontal="true" n0:layout_marginStart="13.0dp" n0:layout_marginEnd="13.0dp" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/keg" n0:paddingBottom="40.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/ivHandle" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/n19" />
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nw8" n0:layout_centerInParent="true" n1:k1i="bold"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <FrameLayout n0:id="@id/fl_record_text_content" n0:background="@drawable/keh" n0:layout_width="match_parent" n0:layout_height="200.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="22.0sp" n0:textColor="#fafbff" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_prompt_text" n0:paddingLeft="16.0dp" n0:paddingTop="20.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="20.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp" n0:paddingVertical="20.0dp" n2:k1i="bold"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:gravity="center" n0:layout_gravity="center" n0:orientation="vertical" n0:id="@id/ll_loading_state" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView n0:id="@id/lav_loading" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n3:lottie_autoPlay="true" n3:lottie_fileName="cc_loading_w.json" n3:lottie_loop="true"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#66fafbff" n0:id="@id/tv_loading_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/ngz" n4:k1i="medium"
+              xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/ll_error_state" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                <com.vega.theme.text.VegaTextView n0:textSize="22.0sp" n0:textColor="#fafbff" n0:id="@id/tv_error_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nxt" n5:k1i="bold"
+                  xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/new" n0:layout_marginStart="4.0dp" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ll_retry_button" n0:background="@drawable/ld8" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="20.0dp" n0:paddingHorizontal="12.0dp">
+                <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/oa2" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nwg" n0:layout_marginStart="4.0dp" n6:k1i="medium"
+                  xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout n0:layout_gravity="center_horizontal" n0:id="@id/fl_record_button" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:layout_marginTop="40.0dp">
+        <View n0:id="@id/recordButtonOuter" n0:background="@drawable/lpm" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.vega.ui.widget.CircleProgressView n0:id="@id/cpv_recordingProgress" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n7:cs="#00cae0" n7:cw="#33ffffff" n7:kat="4.0dp"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <View n0:layout_gravity="center" n0:id="@id/recordButtonInner" n0:background="@drawable/lpl" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="6.0dp" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/iv_stop_icon" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/lpu" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#ffffff" n0:layout_gravity="center_horizontal" n0:id="@id/tv_record_button_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/nw9" n8:k1i="medium"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

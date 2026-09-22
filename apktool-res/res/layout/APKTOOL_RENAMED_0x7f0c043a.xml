@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kw2" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:paddingStart="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/draft_edit_pc_sv" n0:layout_width="64.0dp" n0:layout_height="64.0dp" n0:layout_marginTop="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/draft_edit_pc_close_btn" n0:padding="8.0dp" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/nkv" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#b3111a2c" n0:id="@id/draft_edit_pc_tips_tv" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/ll2" n0:layout_marginStart="8.0dp" n3:layout_constraintEnd_toStartOf="@id/draft_edit_pc_close_btn" n3:layout_constraintStart_toEndOf="@id/draft_edit_pc_sv" n3:layout_constraintTop_toTopOf="@id/draft_edit_pc_sv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:id="@id/draft_edit_pc_btn" n0:background="@drawable/qsl" n0:paddingTop="3.0dp" n0:paddingBottom="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ll0" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" n0:layout_marginStart="8.0dp" n4:layout_constraintBottom_toBottomOf="@id/draft_edit_pc_sv" n4:layout_constraintStart_toEndOf="@id/draft_edit_pc_sv"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="88.0dp" n0:layout_height="88.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.cux.skeleton.CuxShimmerLayout n0:layout_gravity="center" n0:id="@id/preview_item_shimmer_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:kv5="45.0" n1:kv8="@color/knt" n1:APKTOOL_RENAMED_0x7f040845="80.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/preview_item_image" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n1:actualImageScaleType="centerCrop" n1:placeholderImage="@drawable/knt" n1:roundedCornerRadius="8.0dp" />
+    </com.bytedance.cux.skeleton.CuxShimmerLayout>
+    <TextView n0:textSize="12.0sp" n0:textColor="#d9ffffff" n0:layout_gravity="center" n0:id="@id/preview_item_progress" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:fontFamily="sans-serif-medium" />
+</FrameLayout>

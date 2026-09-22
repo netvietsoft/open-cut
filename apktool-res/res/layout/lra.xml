@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView n0:layout_width="192.0dp" n0:layout_height="wrap_content" n1:cardBackgroundColor="@color/j" n1:cardCornerRadius="12.0dp" n1:cardElevation="0.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_media_type_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mn" n0:gravity="center" n0:id="@id/tv_media_type" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:text="@string/n46" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <View n0:id="@id/view_divider_line" n0:background="@color/ky" n0:layout_width="match_parent" n0:layout_height="@dimen/rm" n1:layout_constraintTop_toBottomOf="@id/tv_media_type" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv" n0:layout_width="192.0dp" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/view_divider_line" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n0:id="@id/scroll_root" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.theme.VegaEditText n0:enabled="true" n0:textSize="16.0sp" n0:textColor="@color/ml" n0:textColorHint="@color/l_" n0:gravity="start|top" n0:id="@id/content_show" n0:background="@drawable/lfy" n0:paddingLeft="12.0dp" n0:paddingTop="12.0dp" n0:paddingRight="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="143.0dp" n0:hint="@string/ovw" n0:inputType="textMultiLine" n0:fadeScrollbars="true" n0:overScrollMode="always" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="12.0dp" n0:paddingVertical="12.0dp" />
+        <com.vega.theme.VegaCheckBox n0:textSize="12.0dp" n0:textColor="@color/knt" n0:gravity="center_vertical" n0:id="@id/cb_auto_subtitle" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:button="@drawable/qm-" n0:text="@string/nne" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" n0:layout_marginStart="16.0dp" />
+        <FrameLayout n0:id="@id/material_bar_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="20.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/material_title_container" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:id="@id/material_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nmj" n0:lineSpacingExtra="4.0sp" n1:k1i="medium"
+                  xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="end" n0:id="@id/material_show_type" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:ellipsize="end" n0:gravity="end" n0:id="@id/show_type" n0:layout_width="200.0dp" n0:layout_height="wrap_content" n0:maxLines="1" />
+                <com.vega.ui.AlphaButton n0:gravity="center_vertical" n0:layout_gravity="center_vertical" n0:id="@id/material_arrow" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/qdq" />
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/material_list_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tone_title"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/material_list" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/expand_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <FrameLayout n0:id="@id/tone_bar_container" n0:layout_width="match_parent" n0:layout_height="20.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+                <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/tone_title_container" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:id="@id/tone_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nn1" n0:lineSpacingExtra="4.0sp" />
+                    <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center_vertical" n0:id="@id/tone_free_hint" n0:padding="3.0dp" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0817bd" n0:layout_marginStart="5.0dp" />
+                </LinearLayout>
+                <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="end" n0:id="@id/tone_more_btn" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+                    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:gravity="center_vertical" n0:id="@id/more_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qkm" />
+                    <com.vega.ui.AlphaButton n0:gravity="center_vertical" n0:layout_gravity="center_vertical" n0:id="@id/more_arrow" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/qdq" />
+                </LinearLayout>
+            </FrameLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_tone_list_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tone_title"
+              xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <com.vega.ui.MaterialRecycleView n0:id="@id/rv_tone_list" n0:layout_width="0.0dp" n0:layout_height="68.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+                <TextView n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_tone_failed_tip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f081f22" n0:text="@string/qnn" n0:drawablePadding="10.0dp" n0:drawableStart="@drawable/odn" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+                <com.vega.ui.widget.LoadingView n0:id="@id/lv_tone_loading" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <FrameLayout n0:id="@id/avatar_bar_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="20.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+                <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/avatar_title_container" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:id="@id/avatar_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nnc" n0:lineSpacingExtra="4.0sp" />
+                </LinearLayout>
+                <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="end" n0:id="@id/avatar_more_btn" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+                    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:gravity="center_vertical" n0:id="@id/avatar_more_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qkm" />
+                    <com.vega.ui.AlphaButton n0:gravity="center_vertical" n0:layout_gravity="center_vertical" n0:id="@id/avatar_more_arrow" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/qdq" />
+                </LinearLayout>
+            </FrameLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_avatar_list_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tone_title"
+              xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_avatar_list" n0:layout_width="0.0dp" n0:layout_height="86.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+                <TextView n0:textColor="@color/APKTOOL_RENAMED_0x7f0605ff" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_avatar_failed_tip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f081f22" n0:text="@string/qnn" n0:drawablePadding="10.0dp" n0:drawableStart="@drawable/odn" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+                <com.vega.ui.widget.LoadingView n0:id="@id/lv_avatar_loading" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/model_type_title_container" n0:layout_width="match_parent" n0:layout_height="20.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center_vertical" n0:id="@id/model_type" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ovc" n0:lineSpacingExtra="4.0sp" />
+            <androidx.appcompat.widget.AppCompatImageView n0:id="@id/model_usage_hint" n0:padding="3.0dp" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0817bd" n0:layout_marginStart="5.0dp" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_lip_model" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" />
+        <include n0:layout_width="match_parent" n0:layout_height="61.0dp" n0:layout_marginTop="12.0dp" layout="@layout/k43" />
+        <com.vega.edit.digitalhuman.digital.loopy.view.DigitalHumanExpandBtn n0:id="@id/btn_expand" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="24.0dp" n0:minHeight="20.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="20.0dp" />
+    </LinearLayout>
+</ScrollView>

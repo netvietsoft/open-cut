@@ -1,0 +1,37 @@
+id: TASK-019-CAPCUT-REAL-EFFECTS-ASSETS-INTEGRATION
+title: "Tích Hợp & Vận Hành Toàn Bộ Kho Tài Nguyên Hiệu Ứng Gốc CapCut (Shaders, AmazingFeature, FaceReshape, Matting, Audio, Textures)"
+status: done
+assignee: "Agent 0, Agent 1, Agent 3, Agent 6, Agent 11, Agent 12"
+created_at: "2026-09-18T11:58:00Z"
+completed_at: "2026-09-18T12:20:00Z"
+priority: CRITICAL
+files_allowed:
+  - "apps/android/app/src/main/assets/**"
+  - "apps/android/app/src/main/res/raw/**"
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/EffectRegistry.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/MiddleBridgeJni.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java"
+  - "apps/android/app/build_apk.ps1"
+  - "design/screenshots/capcut_assets/**"
+  - ".ai/**"
+  - "TASK_LOG.md"
+  - "UPDATETODOS.md"
+  - "PROJECT_MEMORY.md"
+requirements:
+  - "1. Rà soát và giải nén/sao chép các gói tài nguyên hiệu ứng gốc từ extracted/assets và apktool-res/res/raw vào app bundle: Chroma_V1370 (chromakey shaders), FaceReshape_V2 (distortion matrices), mattingBlend/koutu.json, spin/hexagon GLSL shaders, audio MP3, text animation textures."
+  - "2. Cập nhật EffectRegistry.java ánh xạ đầy đủ danh mục hiệu ứng tài nguyên gốc CapCut kèm đường dẫn asset và metadata song ngữ."
+  - "3. Nâng cấp build_apk.ps1 đóng gói thư mục assets/ và res/raw/ vào signed APK với forward-slash zip structure chuẩn Android."
+  - "4. Cập nhật MainActivity.java hiển thị và áp dụng các hiệu ứng tài nguyên gốc CapCut này trong ngăn kéo Hiệu ứng, Khóa phông, Làm đẹp, Âm thanh và Văn bản."
+  - "5. Biên dịch APK, cài đặt lên thiết bị Android, chạy kiểm thử thực tế và chụp ảnh minh chứng nghiệm thu (10 ảnh chụp màn hình kiểm thử)."
+evidence:
+  - "design/screenshots/capcut_assets/01_home_screen.png"
+  - "design/screenshots/capcut_assets/02_editor_main.png"
+  - "design/screenshots/capcut_assets/03_effects_drawer_default.png"
+  - "design/screenshots/capcut_assets/04_capcut_tabs_scrolled.png"
+  - "design/screenshots/capcut_assets/05_capcut_native_effects_active.png"
+  - "design/screenshots/capcut_assets/06_spin_effect_applied.png"
+  - "design/screenshots/capcut_assets/07_cutout_drawer.png"
+  - "design/screenshots/capcut_assets/07_capcut_chroma_v1370_applied.png"
+  - "design/screenshots/capcut_assets/08_capcut_facereshape_applied.png"
+  - "design/screenshots/capcut_assets/09_music_dialog.png"
+  - "design/screenshots/capcut_assets/10_capcut_audio_added_timeline.png"

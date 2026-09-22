@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/bottomViewTipLayout" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/bottomViewIcon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/bottomViewTip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="104.0dp" n0:text="@string/qce" n0:maxLines="1" n0:layout_marginStart="4.0dp" n1:k1i="medium"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/topViewTipLayout" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/topViewIcon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/topViewTip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="139.0dp" n0:text="@string/qce" n0:maxLines="1" n0:layout_marginStart="4.0dp" n2:k1i="medium"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/switchRefreshLayout" n0:background="@drawable/kjx" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginStart="40.0dp" n0:layout_marginEnd="40.0dp">
+        <ImageView n0:layout_gravity="center_vertical" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/ng-" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pvm" n0:layout_marginStart="4.0dp" n3:k1i="medium"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</FrameLayout>

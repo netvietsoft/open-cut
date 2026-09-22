@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="other">%d ခုကို အပ်လုဒ်တင်၍ မရပါ။ AutoCut ဆက်လုပ်နေသည်။</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="other">ပူးတွဲပါဖိုင်- %d ဖိုင်</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="other">ခရက်ဒစ် %1$d ခု လိုအပ်သည်။</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="other">သင့်တွင် ခရက်ဒစ် %1$d ခု ကျန်သည်။</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="other">သင့်အခမဲ့ခရက်ဒစ်များကို နုတ်ယူပါမည်။ နောက်ထပ်ခရက်ဒစ် %d ခု လိုသည်။</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="other">ခရက်ဒစ် %1$d ခု လိုအပ်သည်။</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="other">သင့်တွင် ခရက်ဒစ် %1$d ခု ကျန်သည်။ ဆက်လုပ်ရန် ခရက်ဒစ်များဝယ်ပါ။</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="other">ခရက်ဒစ် %1$d ခု လိုအပ်သည်။</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="other">သင့်တွင် ခရက်ဒစ် %1$d ခု ကျန်သည်။ ခရက်ဒစ်များ ရရှိရန် အဆင့်မြှင့်ပါ။</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="other">ခရက်ဒစ် %d ခု ကုန်ပါမည်</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="other">သင့်အခမဲ့ခရက်ဒစ်များကို နုတ်ယူပါမည်။ နောက်ထပ်ခရက်ဒစ် %d ခု လိုသည်။</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="other">နမူနာပုံစံ %d ခုကို အကြံပြုထားသည်</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="other">ဗီဒီယို %d ပုဒ် ထုတ်ပေးထားသည်</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="other">အကောင့်ဝင်ထားသည့်အခါ အော်တိုစာတန်းများနှင့် အော်တိုသီချင်းစာသားများကို တစ်လလျှင် %d ကြိမ် အခမဲ့ အသုံးပြုနိုင်သည်။ အခမဲ့အသုံးပြုခွင့် အရေအတွက်သည် လစဉ် လအစတွင် ပြန်စပါသည်။ တစ်ကြိမ်လျှင် အသုံးပြုခွင့် 1 ကြိမ် နုတ်ယူပါမည်။</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="other">တစ်လလျှင် %d ကြိမ် သုံးခွင့်</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="other">စကားလုံး %d လုံးကို ဖျက်ပါ</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="other">အသားပေးဖော်ပြမှု %d ခု</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="other">အဖြည့်စကားလုံး %d လုံးကို တွေ့ထားသည်</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="other">%d ခုအထိ ရွေးချယ်ပါ</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="other">တန်းစီစာရင်းတွင် ခန့်မှန်းစောင့်ဆိုင်းချိန်- %d စက္ကန့်</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="other">%d နာရီခန့် ကျန်သည်</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="other">%d မိနစ်ခန့် ကျန်သည်</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="other">%d စက္ကန့်ခန့် ကျန်သည်</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="other">အော်ဒီယိုရလဒ် (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="other">ဖိုင်ရလဒ် (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="other">ထုတ်ပေးမှုရလဒ် (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="other">ပူးတွဲပါဖိုင်- ရုပ်ပုံ %d ပုံ</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="other">ပူးတွဲပါဖိုင်- ဗီဒီယို %d ခု</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="other">ရုပ်ပုံရလဒ် (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="other">ဗီဒီယိုရလဒ် (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="other">AI စာသားပြုလုပ်ချက် %1$d ခုကို အသုံးပြုနေသည်... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="other">ပစ္စည်း %d ခုကို အပိုင်းတိုအားလုံးတွင် သုံးမည်</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="other">ပစ္စည်း %d ခု ရွေးချယ်ထားသည်</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="other">%d ရက်စာ Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="other">ဇာတ်ကောင် %d ခု</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="other">အများဆုံး ဇာတ်ကောင် %d ခု ရွေးချယ်ပါ</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="other">ဗီဒီယိုအပိုင်းတို %d ခုကို လုပ်ငန်းအသုံးပြုရန်အတွက် လိုင်စင်ထုတ်ပေးမထားပါ</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="other">ဖောင့် %d ခုကို လုပ်ငန်းအသုံးပြုရန်အတွက် လိုင်စင်ထုတ်ပေးမထားပါ</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="other">အသံ %d ခုကို လုပ်ငန်းအသုံးပြုရန်အတွက် လိုင်စင်ထုတ်ပေးမထားပါ</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="other">ဗီဒီယိုအပိုင်းတို %d ခုကို လုပ်ငန်းအသုံးပြုရန်အတွက် လိုင်စင်ထုတ်ပေးမထား၍ အစားထိုးမရနိုင်ပါ</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="other">ဖောင့် %d ခုကို လုပ်ငန်းအသုံးပြုရန်အတွက် လိုင်စင်ထုတ်ပေးမထား၍ အစားထိုးမရနိုင်ပါ</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="other">အသံ %d ခုကို လုပ်ငန်းအသုံးပြုရန်အတွက် လိုင်စင်ထုတ်ပေးမထား၍ အစားထိုးမရနိုင်ပါ</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="other">စတစ်ကာ %d ခုကို လုပ်ငန်းအသုံးပြုရန်အတွက် လိုင်စင်ထုတ်ပေးမထား၍ အစားထိုးမရနိုင်ပါ</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="other">စတစ်ကာ %d ခုကို ခုကို လုပ်ငန်းအသုံးပြုရန်အတွက် လိုင်စင်ထုတ်ပေးမထားပါ</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="other">မှတ်ချက် %d ခုကို ဖျက်မလား။</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="other">အကောင့် %d ခုကို သင်ရွေးချယ်ထားသည်။ သင်နှင့် သင်တားမြစ်ထားသူများသာ ၎င်းတို့၏ မှတ်ချက်များကို မြင်ရမည်။</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="other">အကောင့် %d ခုကို တားမြစ်မလား။</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="other">%d ရက်</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="other">သင့်တွင် ဖန်တီးရှင်မက်ဆေ့ချ်အသစ် %s စောင် ရှိသည်</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="other">သက်တမ်းကုန်သွားသည်မှာ %d ရက်ရှိပြီ</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="other">Pro လုပ်ဆောင်ချက်ကို သုံးနေသည်။ အခမဲ့သုံးခွင့် %d ကြိမ် ကျန်သည်။ အကန့်အသတ်မရှိ သုံးနိုင်ရန် Pro တွင် ပါဝင်ပါ။</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="other">သင်သည် Standard လုပ်ဆောင်ချက်ကို သုံးနေသည်။ အခမဲ့သုံးခွင့် %d ကြိမ် ကျန်သည်။ အကန့်အသတ်မရှိ သုံးနိုင်ရန် Standard တွင် ပါဝင်ပါ။</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="other">Pro လုပ်ဆောင်ချက်ကို သုံးနေသည်။ ယခုလအတွက် အခမဲ့သုံးခွင့် %d ကြိမ် ကျန်သည်။ အကန့်အသတ်မရှိ သုံးနိုင်ရန် Pro တွင် ပါဝင်ပါ။</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="other">သင်သည် Standard လုပ်ဆောင်ချက်ကို သုံးနေသည်။ ယခုလအတွက် အခမဲ့သုံးခွင့် %d ကြိမ် ကျန်သည်။ အကန့်အသတ်မရှိ သုံးနိုင်ရန် Standard တွင် ပါဝင်ပါ။</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="other">%d ရက် အခမဲ့</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="other">%2$d ပတ်ကြာပြီးနောက် %1$s</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="other">Pro နမူနာပုံစံများကို တစ်လလျှင် အခမဲ့သုံးခွင့် %d ကြိမ် ရထားသည်။</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="other">အခမဲ့သုံးခွင့် %d ကြိမ်</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="other">%d ရက် အခမဲ့စမ်းသုံးကြည့်ပါ</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="other">တေးဂီတမူပိုင်ခွင့် ပြဿနာ %d ခု</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="other">စာသား %d ခုကို ရွေးထားသည်</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="other">ဗီဒီယိုအပိုင်းတို %d ခု ရွေးချယ်ထားသည်</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="other">အကန့်အသတ်မရှိ အခမဲ့ထုတ်သိမ်းခွင့် %1$d ရက် ရယူပါ သို့မဟုတ် ရီဆိုလူးရှင်းမြင့်ဖြင့် အကန့်အသတ်မရှိ အပြည့်အဝထုတ်သိမ်းခွင့်ရရှိရန် အဆင့်မြှင့်ရုံမြှင့်လိုက်ပါ။</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="other">1080p ဖြင့် %d ကြိမ် အခမဲ့ထုတ်သိမ်းပါ</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="other">1080p ဖြင့် အခမဲ့ထုတ်သိမ်းခွင့် %d ကြိမ် ကျန်သည်။ အကန့်အသတ်မရှိ ရီဆိုလူးရှင်းမြင့် ထုတ်သိမ်းခွင့်ကို ခံစားရန် အဆင့်မြှင့်ပါ။</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="other">ယခုလတွင် 1080p ဖြင့် အခမဲ့ထုတ်သိမ်းခွင့် %d ကြိမ် ကျန်သည်။ ရီဆိုလူးရှင်းမြင့်ဖြင့် အကန့်အသတ်မရှိ ထုတ်သိမ်းခွင့်ကို ရရှိရန် အဆင့်မြှင့်ပါ။</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="other">ခရက်ဒစ် %d ခု လိုအပ်သည်။</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="other">ခရက်ဒစ် %d ခု ကျန်သည်။</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="other">%1$d ခု ထုတ်ပေးနေသည်။ တစ်ကြိမ်လျှင် %2$d ခုအထိ ထုတ်နိုင်ရန် Pro သို့ အဆင့်မြှင့်ပါ။</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="other">‌ရေစာမပါဘဲ ထုတ်သိမ်းရန် (သုံးခွင့် %d ကြိမ် ကျန်သည်)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="other">အခမဲ့သုံးခွင့် %d ကြိမ် ကျန်သည်။ ခရက်ဒစ် မလိုအပ်ပါ။</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="other">သင်ရွေးချယ်ထားသည့် ပစ္စည်းများကို ဖျက်ပြီး အမှိုက်ပုံးထဲတွင် %d ရက်ကြာ ထားရှိပါမည်။</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="other">ရွေးချယ်ထားသည့် ပစ္စည်းအချို့ကို နေရာလွတ်သို့ အပ်လုဒ်တင်ထားသည်။ မည်သို့ပင်ဖြစ်စေ ဖျက်မလား။</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="other">သင်ရွေးချယ်ထားသည့် ပစ္စည်းများကို ဖျက်ပြီး အမှိုက်ပုံးထဲသို့ ရွှေ့ပါမည်။</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="other">%d ကြိမ် သုံးခွင့်</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="other">သင်ထည့်သွင်းသည့် မွေးသက္ကရာဇ်မှ တွက်ချက်ထားသော အသက်သည် %d နှစ်ဖြစ်ပြီး မှားနေပုံရသည်။ သင်၏ တကယ့် မွေးသက္ကရာဇ်ကို ထည့်ပါ။</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="other">ယခင်ဝယ်ယူမှုများမှ အခမဲ့သုံးခွင့် 1 ကြိမ်နှင့် Pro အတွက် အပိုအခမဲ့သုံးခွင့် %d ကြိမ် ပါဝင်သည်</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="other">Pro တွင် အခမဲ့သုံးခွင့် %d ကြိမ် ရသည်</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="other">ဗီဒီယိုများဖြင့် သင်ဖန်တီးထားသည့် ကိုယ်စားပြုပုံများကို ယခုရာသက်ပန်သုံးနိုင်သည်။ Pro တွင် ပါဝင်ပြီး အခမဲ့စိတ်ကြိုက်ပြင်ခွင့် %d ကြိမ် ရယူပါ။</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="other">ဤပြုလုပ်ချက်ကို သုံးလျှင် ခရက်ဒစ် %d ခုကို သုံးပါမည်။</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="other">ယခု သင့်တွင် ခရက်ဒစ် %d ခု ရှိသည်။</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="other">ဟိုက်လိုက် %d ခု</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="other">AI ပြုလုပ်ချက်ကို အသုံးပြုနေသည်… %s နာရီ ကျန်သည်</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="other">AI ပြုလုပ်ချက်ကို အသုံးပြုနေသည်… %s မိနစ် ကျန်သည်</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="other">Pro ပြုလုပ်ချက် %1$s ကို လက်ရှိ ပစ္စည်းတွင် သုံးထားသည်။ ၎င်းကို ပစ္စည်းသစ်တွင် ထပ်မံ၍ သုံးခြင်းက ခရက်ဒစ် %2$d ခုကို သုံးစွဲပါမည်</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="other">အခမဲ့ အသုံးပြုခွင့် %1$d ကြိမ်ကို နုတ်ဖြတ်သွားပါမည်။ ယခု သင့်တွင် အခမဲ့ အသုံးပြုခွင့် %2$d ကြိမ် ရှိသည်။</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="other">Pro အသုံးပြုခွင့် %1$d ကြိမ်ကို နုတ်ဖြတ်သွားပါမည်။ ယခု သင့်တွင် Pro အသုံးပြုခွင့် %2$d ကြိမ် ရှိသည်။</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="other">ဤမော်ဒယ်သည် ရည်ညွှန်းရုပ်ပုံ %d ပုံအထိ ပံ့ပိုးသည်</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="other">ဤမော်ဒယ်ကိုသုံးရန် ရည်ညွှန်းရုပ်ပုံ အနည်းဆုံး %d ပုံ ထည့်ပါ</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="other">ဤမော်ဒယ်သည် ရည်ညွှန်းဗီဒီယို %d ခုအထိ ပံ့ပိုးသည်</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="other">ဤမော်ဒယ်ကိုသုံးရန် ရည်ညွှန်းဗီဒီယို အနည်းဆုံး %d ခု ထည့်ပါ</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="other">ဓာတ်ပုံ %d ပုံ ရွေးချယ်ပါ</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="other">ပစ္စည်း %d ခုကို ထည့်ထားသည်</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="other">ဖန်တီးမှု %d ကြိမ် ကျန်သည်</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="other">လော့ခ်ဖွင့်ခွင့် %d ကြိမ် ကျန်သည်</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="other">‌သော့ချက်စကားလုံး %d လုံးကို အသားပေးဖော်ပြထားသည်။ သင်သည် ကိုယ်တိုင်လည်း ရွေးနိုင်သည်။</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="other">အပိုင်းတို %d ခုကို ဖျက်မည်</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="other">အဖြည့်စကားလုံး %d လုံးကို ခွဲခြားရွေးထုတ်ထားသည်။ သင်သည် ကိုယ်တိုင်လည်း ရွေးနိုင်သည်။</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="other">‌သော့ချက်စကားလုံး %d လုံးကို ကောက်နုတ်ဖော်ပြထားသည်</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="other">ဓာတ်ပုံ %d ပုံကို ထုတ်သိမ်းနေသည်…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="other">ကိုယ်နေဟန်ထား %d ခုအထိ ရွေးပါ</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="other">သင့်မီဒီယာဖိုင်များကို အပ်လုဒ်တင်နေပါသည်</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="other">အဖွဲ့ဝင် %d ဦး</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="other">သင့်စက် သိုလှောင်မှုကို ရှင်းလင်းရန် ပရောဂျက် %d ခုကို နေရာလွတ်သို့ အပ်လုဒ်တင်ပါ။ သင်သည် မိုဘိုင်းအက်ပ်၊ ဒက်ခ်စတော့ အက်ပ် သို့မဟုတ် အွန်လိုင်း တည်းဖြတ်ကိရိယာဖြင့် ဤပရောဂျက်များကို တည်းဖြတ်နိုင်ပါသည်။</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="other">သင့်ပရောဂျက်များရှိ မီဒီယာဖိုင် %d ဖိုင်ကို နေရာလွတ်သို့ အပ်လုဒ်တင်ပါ။ သင်သည် ထိုဖိုင်များကို ထပ်မံ၍ အပ်လုဒ်တင်စရာမလိုဘဲ မည်သည့်စက်တွင်မဆို အသုံးပြုနိုင်သည်။</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="other">သင့်တွင် ပြန်လည်ရယူရန် ပရောဂျက်များ ရှိသည်</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="other">ပရောဂျက်ကို ပြန်လည်ရယူပြီးပါပြီ</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="other">လုပ်ဆောင်ချက် %d ခုကို သုံး၍မရပါ</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="other">လုပ်ဆောင်ချက် %d ခုကို သုံးနေသည်</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="other">Pro ပြုလုပ်ချက်များကို သုံးမလား။</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="other">Pro ပြုလုပ်ချက် %1$d ခုကို လက်ရှိပစ္စည်းတွင် သုံးထားသည်။ ၎င်းတို့ကို ပစ္စည်းသစ်တွင် ထပ်မံ၍ သုံးစွဲခြင်းသည် ခရက်ဒစ် %2$d ခုကို သုံးစွဲပါမည်။</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="other">Pro ပြုလုပ်ချက် %1$d ခုကို လက်ရှိပစ္စည်းတွင် သုံးထားသည်။ ၎င်းတို့ကို ပစ္စည်းသစ်တွင် ထပ်မံ၍ သုံးရန် အခမဲ့ သုံးစွဲခွင့် %2$d ကြိမ်ကို နုတ်ဖြတ်သွားပါမည်။ ခရက်ဒစ်များကို သုံးစွဲမည် မဟုတ်ပါ။</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="other">Pro ပြုလုပ်ချက် %1$d ခုကို လက်ရှိပစ္စည်းတွင် သုံးထားသည်။ ၎င်းတို့ကို ပစ္စည်းသစ်တွင် ထပ်မံ၍ အသုံးပြုရန် ခရက်ဒစ် %2$d ခု လိုအပ်သည်။</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="other">Pro ပြုလုပ်ချက် %1$d ခုကို လက်ရှိပစ္စည်းတွင် သုံးထားသည်။ ၎င်းတို့ကို ပစ္စည်းသစ်တွင် ထပ်မံ၍ သုံးစွဲခြင်းသည် အခမဲ့ အသုံးပြုခွင့် %2$d ကြိမ်အပြင် ခရက်ဒစ် %3$d ခုကို သုံးစွဲပါမည်။</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="other">အပိုင်းတို %d ခု ပျောက်နေသည်။ သင့်ဖုန်းတွင် ၎င်းတို့ကို ပြန်လည်ရယူပါ သို့မဟုတ် အစားထိုးပါ။</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="other">အက္ခရာလုံးရေ %d လုံးထက် မကျော်ဘဲ ထည့်သွင်းပါ</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="other">%d ရက်</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="other">ပစ္စည်းများကို ဖျက်မလား။</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="other">အမှိုက်ပုံးထဲရွှေ့လိုက်သောပစ္စည်းများသည် ဤနေရာတွင်ပေါ်နေမည်ဖြစ်ပြီး ရက် %d အကြာတွင် ဖျက်ပစ်ပါမည်။</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="other">ပစ္စည်း %d ခုကို ဒေါင်းလုဒ်လုပ်နေသည်…</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="other">ပစ္စည်း %d ခုကို အပ်လုဒ်တင်နေသည်…</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="other">ဤပစ္စည်းများကို အပြီးတိုင် ဖျက်ပစ်မည်ဖြစ်ပြီး ပြန်လည်မရယူနိုင်ပါ။</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="other">ပစ္စည်းရွှေ့လိုက်ပြီးဖြစ်သည်</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="other">သင့်တွင် အခမဲ့ထုတ်သိမ်းခွင့် %d ရက် ရှိသေးသည်။</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="other">ဂုဏ်ယူပါသည်။ ရေစာမပါဘဲ ထုတ်သိမ်းရန် လစဉ် အခမဲ့သုံးခွင့် %d ကြိမ် ရထားပါသည်။</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="other">ရေစာမပါဘဲ ထုတ်သိမ်းရန် အခမဲ့သုံးခွင့် %d ကြိမ် ကျန်သေးသည်။</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="other">ဂုဏ်ယူပါသည်။ ရေစာမပါဘဲ ထုတ်သိမ်းရန် အခမဲ့သုံးခွင့် %d ကြိမ် ရထားပါသည်။</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="other">အသုံးပြုမှု %d ကြိမ်</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="other">ပထမဆုံးအကြိမ် သုံးစွဲသူများအတွက် ခရက်ဒစ် %d ခု လျှော့ဈေး။ သတ်မှတ်ချက် ကျော်သွားလျှင် ခရက်ဒစ်ပိုကုန်မည်။</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="other">ဤလုပ်ဆောင်ချက်ကို သုံးရန် ခရက်ဒစ် %d ခု ထပ်လိုသည်</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="other">အပိုင်းတိုသည် %d စက္ကန့်ထက် မကျော်ရပါ</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="other">သင့်တွင် ခရက်ဒစ် %d ခု ကျန်သည်။</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="other">{$benefit_name$} ကို သုံးလျှင် ခရက်ဒစ် {$credit_amount$} သုံးစွဲပါမည်။</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="other">ဤလုပ်ဆောင်ချက်ကိုသုံးလျှင် ခရက်ဒစ် %d ခု ကုန်ပါမည်။</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="other">ဤနမူနာပုံစံကို သုံးလျှင် ခရက်ဒစ် %d ခု ကုန်ပါမည်။</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="other">၎င်းတို့ကို အပြီးတိုင် ဖျက်မည်ဖြစ်ပြီး ပြန်လည်မရယူနိုင်ပါ။</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="other">ဤပစ္စည်းများကို ဖျက်မလား။</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="other">“%1$s” ပရောဂျက် %1$d ခု</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="other">ပစ္စည်း %d ခုကို အမှိုက်ပုံးသို့ ရွှေ့ထားသည်</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="other">ပစ္စည်း %d ခုကို အကြိုက်ဆုံးများသို့ ထည့်ထားသည်</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="other">အကြိုက်ဆုံးများမှ ဖယ်ရှားထားသည့် ပစ္စည်း %d ခု</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="other">၎င်းသည် အခမဲ့ နေရာလွတ်တစ်ခုဖြစ်ပြီး ၎င်းတွင် အဖွဲ့ဝင် %1$d ဦးအထိ ရှိနိုင်သည်။ ၎င်းသို့ နောက်ထပ် အဖွဲ့ဝင် %2$s ဦးကို ဖိတ်ခေါ်နိုင်သည်။</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="other">တစ်လလျှင် %d ကြိမ် သုံးခွင့်</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="other">တစ်ရက်လျှင် %d ကြိမ် သုံးခွင့်</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="other">တစ်ပတ်လျှင် %d ကြိမ် သုံးခွင့်</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="other">{number} လကြာပြီးနောက် {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="other">%2$d လကြာပြီးနောက် %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="other">{number} နှစ်ပြီးနောက် {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="other">%2$d နှစ်ကြာပြီးနောက် %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="other">ဤနေရာလွတ်တွင် အဖွဲ့ဝင် %d ဦး ရှိသည်။</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="other">သင်သည် အဖွဲ့ဝင် %1$d ဦးကို ဖိတ်ခေါ်နိုင်ဆဲ ဖြစ်သည်။</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="other">ခွဲတမ်း %1$d ခုကို ယူထားသည်။</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="other">%d ရက် အခမဲ့ အစမ်းစသုံးပါ</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="other">ခရက်ဒစ် %d ခု လိုအပ်သည်။</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="other">ခရက်ဒစ် %d ခု ကျန်သည်။</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="other">ပရောဂျက် %1$s/%2$s ခုကို အပ်လုဒ်တင်နေသည်</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="other">"အခြားအပိုင်းတို %dခုကို ဤမီဒီယာဖိုင်နှင့် ချိတ်ဆက်ထားသည်။ ၎င်းတို့အားလုံးကို အစားထိုးမလား။
+မူရင်းကြာချိန်နှင့် ကိုက်ညီစေရန် ဖိုင်ကို အလိုအလျောက် တိဖြတ်ပါမည်။"</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="other">နောက်ထပ်ရုပ်ပုံ %d ပုံကို အပ်လုဒ်တင်နိုင်သည်</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="other">အပ်ဒိတ်လုပ်ရန် အပိုင်း %d ပိုင်း</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="other">ရုပ်ပုံ %1$d ပုံနှင့် %2$s ကို ဆက်လက်ရွေးချယ်နိုင်သည်</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="other">(အများဆုံး %d စက္ကန့်)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="other">ဗီဒီယို %d ခု</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="other">ရုပ်ပုံ %d ပုံကို ဆက်လက်ရွေးချယ်နိုင်သည်</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="other">ဗီဒီယို %d ခုကို ဆက်လက်ရွေးချယ်နိုင်သည်</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="other">(အများဆုံး %d စက္ကန့်)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="other">တန်းစီနေသည်... %d မိနစ်ခန့် လိုသေးသည်။</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="other">စောင့်ဆိုင်းချိန် လျှော့ချမည်</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="other">တန်းစီနေသည်... %d စက္ကန့်ခန့် လိုသေးသည်။</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="other">Pro ဖြင့် အမြန်တန်းစီနေသည်... %d မိနစ်ခန့် လိုသေးသည်။</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="other">ပစ္စည်း %d ခု</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="other">ပစ္စည်း %d ခုကို ရွေးထားသည်</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="other">ပရောဂျက် %d ခု</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="other">ပရောဂျက် %d ခုကို ရွေးထားသည်</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="other">လူအများကြီးက ဤလုပ်ဆောင်ချက်ကို ယခု အသုံးပြုနေပါသည်။ သင်၏ ခန့်မှန်းစောင့်ဆိုင်းချိန်သည် %d မိနစ် ဖြစ်သည်။</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="other">ထပ်ထုတ်လျှင် ခရက်ဒစ် %d ခု ကုန်ပါမည်။</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="other">ပစ္စည်းအသစ်ထည့်၍ ထပ်ထုတ်လျှင် ခရက်ဒစ် %d ခု ကုန်မည်။</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="other">အပိုင်းတို %d ခု ထည့်လိုက်ပြီ</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="other">ပစ္စည်း %d ခု ရွေးပါ</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="other">သင့်အတွက် ဗီဒီယို %d ခု ထုတ်ထားသည်</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="other">%d မိနစ်အောက် အော်ဒီယိုကိုသာ ခွဲထုတ်နိုင်သည်</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="other">သင်သည် နေရာလွတ်ကို ရက် %d အတွင်း ပြန်လည်ရယူနိုင်သည်။</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="other">ဗီဒီယို %d ခုကို ထုတ်နေသည်။ နောက်မှ ထပ်မံကြိုးစားပါ။</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="other">ဤလုပ်ဆောင်ချက်ကို ခရက်ဒစ် %d ခုဖြင့် သုံးရန် အဆင့်မြှင့်ပါ</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="other">သင်၏ ဤနေရာလွတ်တွင် နေရာ %d ခုသာ ကျန်ရှိသည်။</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="other">အစိတ်အပိုင်း %d ခု သုံးထားသည်</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="other">ပစ္စည်း %d ခုကို ရွေးထားသည်</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="other">ပစ္စည်း %d ခုကို ရွေးပါ</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="other">%d စာတန်းများ</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="other">ပစ္စည်း %d ခု</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="other">လုပ်ဆောင်ချက် %d ခုကို သုံးနေပါသည်။ နောက်မှ ထပ်မံကြိုးစားပါ။</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="other">အခမဲ့သုံးခွင့် %d ကြိမ် ကျန်သည်။ ခရက်ဒစ်များဖြင့် အသုံးပြုရန် Standard တွင် ပါဝင်ပါ။</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="other">အခမဲ့သုံးခွင့် %d ကြိမ် ကျန်သည်။ ၎င်းကို ခရက်ဒစ်များဖြင့် အသုံးပြုရန် Pro တွင် ပါဝင်ပါ။</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="other">အခမဲ့ သုံးခွင့် %d ကြိမ် ကျန်သည်။ ခရက်ဒစ်များဖြင့် သုံးရန် Ultra ကို ရယူပါ။</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="other">ခရက်ဒစ် %1$d ခု ကုန်မည်။ %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="other">ခရက်ဒစ် %d ခု ကျန်သည်။</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="other">ခရက်ဒစ် %d ခုဖြင့် Ultra သုံးခွင့်ရယူပါ</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="other">ဤလုပ်ဆောင်ချက်ကို ခရက်ဒစ် %d ခုဖြင့် သုံးရန် Pro တွင် ပါဝင်ပါ။</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="other">ဤလုပ်ဆောင်ချက်ကို ခရက်ဒစ် %d ခုဖြင့် သုံးရန် Standard တွင် ပါဝင်ပါ။</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="other">သင်သည် အသံ %1$d ခုထက်ပို၍ မသိမ်းဆည်းနိုင်ပါ။</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="other">အပိုင်းတိုတစ်ခုတွင် အသံကို %1$d မိနစ်ထက်ပိုကြာအောင် အရည်အသွေးမြှင့်၍မရနိုင်ပါ</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="other">အကောင်းဆုံးရလဒ်များကို ရရှိရန် ပစ္စည်း %d ခု ရွေးချယ်ပါ</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="other">ပထမ %2$d လအတွက် %1$s၊ ထို့နောက်တွင် %3$s ဖြင့် သက်တမ်းတိုးသည်။</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="other">ပထမ %2$d နှစ်အတွက် %1$s၊ ထို့နောက်တွင် %3$s ဖြင့် သက်တမ်းတိုးသည်။</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="other">သင် အပ်ဒိတ် %d ခု လုပ်ထားသည်။ စကားပြောကိုထုတ်ပြီး နှုတ်ခမ်းလှုပ်ရှားမှုများကို ချိန်ကိုက်မလား။</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="other">%d ကြိမ် ကျန်သည်</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="other">အသံတိတ် အပိုင်းတို %d ခု ရှိသည်။</item>
+    </plurals>
+</resources>

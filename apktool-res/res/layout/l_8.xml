@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/root_container" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_background" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:actualImageScaleType="fitCenter"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_cover" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/lottie_animation" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="center" n2:lottie_autoPlay="true" n2:lottie_fileName="image_ai_function_loading.json" n2:lottie_loop="true" n2:klb="0.5"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:layout_gravity="center" n0:orientation="vertical" n0:id="@id/loading_container" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/tv_loading_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" n3:k1i="bold"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#ffffff" n0:id="@id/btn_retry" n0:background="@drawable/lxs" n0:paddingLeft="24.0dp" n0:paddingTop="12.0dp" n0:paddingRight="24.0dp" n0:paddingBottom="12.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="@dimen/re" n0:text="@string/o2a" n0:drawablePadding="@dimen/ra" n0:drawableStart="@drawable/APKTOOL_RENAMED_0x7f081655" n0:paddingHorizontal="24.0dp" n0:paddingVertical="12.0dp" n4:k1i="medium"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:id="@id/btn_minimize" n0:background="@drawable/lxs" n0:paddingLeft="24.0dp" n0:paddingTop="12.0dp" n0:paddingRight="24.0dp" n0:paddingBottom="12.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n0:text="@string/o2w" n0:paddingHorizontal="24.0dp" n0:paddingVertical="12.0dp" n5:k1i="medium"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:id="@id/btn_cancel" n0:background="@drawable/lxs" n0:paddingLeft="24.0dp" n0:paddingTop="12.0dp" n0:paddingRight="24.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:paddingHorizontal="24.0dp" n0:paddingVertical="12.0dp" n6:k1i="medium"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</FrameLayout>

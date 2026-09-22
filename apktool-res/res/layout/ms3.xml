@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/item_main" n0:tag="layout/xt_item_face_retake_0" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="45.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/effect_item" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/item_cover" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nez" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="10.0sp" n0:textColor="@color/ktx" n0:ellipsize="end" n0:gravity="center" n0:id="@id/item_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="70.0dp" n0:minHeight="24.0dp" n0:maxLines="2" n0:textFontWeight="400" n1:autoSizeMaxTextSize="12.0dp" n1:autoSizeMinTextSize="8.0dp" n1:bp="1.0px" n1:autoSizeTextType="uniform" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/item_cover" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/fallback_item" n0:background="@color/kui" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/effect_item" n2:layout_constraintEnd_toEndOf="@id/effect_item" n2:layout_constraintStart_toStartOf="@id/effect_item" n2:layout_constraintTop_toTopOf="@id/effect_item"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/item_retry" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/rae" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/item_loading" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:lottie_fileName="loading_white.json" n2:lottie_loop="true" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

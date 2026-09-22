@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/album_iv_ad_content" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.theme.text.VegaTextView n0:textSize="8.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/album_tv_banner_ad_tag" n0:background="@drawable/kro" n0:layout_width="18.0dp" n0:layout_height="14.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120075" n0:layout_marginStart="8.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/album_iv_close" n0:background="@color/_d" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginEnd="8.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:background="@drawable/r1" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

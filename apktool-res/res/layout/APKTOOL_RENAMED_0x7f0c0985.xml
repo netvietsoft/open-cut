@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:id="@id/effectTips" n0:paddingLeft="@dimen/cu" n0:paddingRight="@dimen/cu" n0:focusable="true" n0:clickable="true" n0:clipChildren="false" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:paddingHorizontal="@dimen/cu"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:id="@id/tab" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f1301dd"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="8.0dp" n0:textColor="@color/knt" n0:id="@id/tv_free" n0:background="@drawable/luc" n0:paddingLeft="3.0dp" n0:paddingTop="1.0dp" n0:paddingRight="3.0dp" n0:paddingBottom="1.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pal" n0:layout_marginStart="2.0dp" n0:paddingHorizontal="3.0dp" n0:paddingVertical="1.0dp" n2:layout_constraintBottom_toBottomOf="@id/tab" n2:layout_constraintStart_toEndOf="@id/tab" n2:layout_constraintTop_toTopOf="@id/tab"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/bmv_ai_tips_flag" n0:visibility="gone" n0:clipChildren="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:layout_marginStart="20.0dp" n3:c2="vc_ai_clone_tone" n3:APKTOOL_RENAMED_0x7f0404ef="vc_ai_clone_tone" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:kml="small" n3:kmm="normal" n3:ktj="aigc"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

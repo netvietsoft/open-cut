@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/gmt_reward_endcard_force_countdown_container" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/gmt_reward_endcard_force_countdown_content" n0:background="@drawable/msd" n0:layout_width="@dimen/sk" n0:layout_height="28.0dp" n0:paddingStart="@dimen/sq" n0:paddingEnd="@dimen/sq">
+        <com.bytedance.tux.input.TuxTextView n0:textColor="?kw" n0:gravity="center" n0:id="@id/gmt_reward_endcard_force_countdown_text" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="10s" style="@style/t8" />
+    </LinearLayout>
+</FrameLayout>

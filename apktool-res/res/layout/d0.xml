@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/q3-" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120d46" />
+    <View n0:background="@color/_b" n0:layout_width="match_parent" n0:layout_height="1.0px" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_preview_language" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <com.vega.theme.text.VegaTextView n0:textSize="8.0sp" n0:textColor="#6618334e" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="44.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="44.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/lok" n0:lineHeight="12.0dp" />
+    <View n0:background="@color/_b" n0:layout_width="match_parent" n0:layout_height="1.0px" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/cancel" n0:layout_width="match_parent" n0:layout_height="50.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120d45" />
+</LinearLayout>

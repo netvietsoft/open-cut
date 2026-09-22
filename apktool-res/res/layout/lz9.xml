@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="@integer/k_" n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/APKTOOL_RENAMED_0x7f0c0f25" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/mtrl_calendar_main_pane" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+        <FrameLayout n0:id="@id/mtrl_calendar_frame" n0:paddingLeft="@dimen/wt" n0:paddingRight="@dimen/wt" n0:paddingBottom="@dimen/ws" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" n0:paddingStart="@dimen/wt" n0:paddingEnd="@dimen/wt" />
+        <include n0:layout_width="match_parent" n0:layout_height="@dimen/wq" layout="@layout/lz8" />
+    </LinearLayout>
+</LinearLayout>

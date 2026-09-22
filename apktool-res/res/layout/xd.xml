@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/choose_source_layout" n0:background="@drawable/lob" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ww" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l5k" n1:layout_constraintBottom_toTopOf="@id/divider_line_select_lan" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/back" n0:layout_width="52.0dp" n0:layout_height="48.0dp" n0:src="@drawable/nw4" n0:scaleType="centerInside" n0:layout_marginStart="4.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/divider_line_select_lan" n0:background="@color/APKTOOL_RENAMED_0x7f06063e" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="48.0dp" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/option_list" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/divider_line_select_lan"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

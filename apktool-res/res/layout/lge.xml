@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panel_eye_correct" n0:background="@drawable/pc5" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="200.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panel_title" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f122ba2" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/close" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/nin" n0:layout_marginEnd="@dimen/p_" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <View n0:background="@color/_m" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/content_container" n0:layout_width="match_parent" n0:layout_height="60.0dp" n0:layout_marginTop="8.0dp" n2:layout_constraintTop_toBottomOf="@id/panel_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122ba7" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/vip_badge_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toBottomOf="@id/title" n2:layout_constraintStart_toEndOf="@id/title" n2:layout_constraintTop_toTopOf="@id/title" n2:kml="small" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="11.0dp" n0:textColor="#edf0fd" n0:id="@id/content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122ba8" n0:alpha="0.5" n2:layout_constraintStart_toStartOf="@id/title" n2:layout_constraintTop_toBottomOf="@id/title" />
+        <CheckBox n0:id="@id/switchCB" n0:background="@android:color/transparent" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="false" n0:button="@drawable/l1b" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.theme.VegaCheckBox n0:textSize="12.0dp" n0:textColor="#fafbff" n0:id="@id/applyToAllCheckBox" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="30.0dp" n0:button="@drawable/m3p" n0:text="@string/APKTOOL_RENAMED_0x7f122b9c" n0:drawablePadding="6.0dp" n0:paddingStart="@dimen/p9" n0:layout_marginStart="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/content_container"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

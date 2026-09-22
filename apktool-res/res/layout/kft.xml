@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/feedPreLoadingBg" n0:background="#1a000000" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/feedPreLoadingAnim" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:lottie_fileName="lv_loading.json" n2:lottie_loop="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/feedPrePlayBtn" n0:background="@drawable/lls" n0:padding="14.0dp" n0:visibility="gone" n0:layout_width="54.0dp" n0:layout_height="54.0dp" n0:src="@drawable/otf" n0:scaleType="centerInside" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <include layout="@layout/k7l" />
+</merge>

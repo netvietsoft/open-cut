@@ -1,0 +1,1068 @@
+{
+  "enable": true,
+  "list": [
+    {
+      "conditions": [
+        []
+      ],
+      "key": "sso",
+      "tags": [
+        "barrier",
+        "no_effect_other_popup",
+        "ignore_privacy"
+      ]
+    },
+    {
+      "conditions": [],
+      "key": "popup_privacy",
+      "tags": [
+        "barrier",
+        "no_effect_other_popup"
+      ]
+    },
+    {
+      "conditions": [
+        []
+      ],
+      "key": "deeplink",
+      "tags": [
+        "user_intent",
+        "ignore_privacy"
+      ]
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "deeplink"
+          }
+        ]
+      ],
+      "key": "idfa",
+      "tags": [
+        "ignore_privacy"
+      ]
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "new_user_acceptance",
+      "tags": [
+        "user_intent"
+      ]
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "popup_question",
+      "tags": [
+        "ignore_privacy"
+      ]
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "splash_screen",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "unsafe_pkg_modal",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "cold_boot_resource_alert",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "hotboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "hotboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "app_open_ad",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "logout"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          }
+        ]
+      ],
+      "key": "age_gate_alert",
+      "tags": [
+        "login"
+      ]
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          }
+        ]
+      ],
+      "key": "age_gate",
+      "tags": [
+        "login_only_bind"
+      ]
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "hotboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "ins_passwd_share",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "hotboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "disable": true,
+      "key": "token_share",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "page_depend",
+            "value": "main_tab_edit"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "pro_purchase",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          },
+          {
+            "type": "stage",
+            "value": "coldboot"
+          }
+        ]
+      ],
+      "key": "bind_ttam",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "subscription_act_modal",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "post_incentive_diversion_modal",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 1,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_template"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "normal"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "template_tab_operation_guide_modal",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 1,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_template"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "normal"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "template_tab_inactive_user",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 1,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_template"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "normal"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "template_tab_new_user_guide_modal",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 1,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_template"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "normal"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "creator_hot_template_modal",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "normal"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "push_open_modal",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "creator_sign_alert",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "prompt_creator_login_alert",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "template_creator_login_alert",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "creator_login_alert",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 1,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 1,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ],
+        [
+          {
+            "type": "stage",
+            "value": "normal"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "bind_email_guide",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "login_status_change"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "login_status_change"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "bind_third_email_guide",
+      "tags": [
+        "login"
+      ]
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "login"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_popup_stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "vip_subscription_open_screen",
+      "tags": []
+    },
+    {
+      "conditions": [
+        []
+      ],
+      "key": "article_video",
+      "tags": []
+    },
+    {
+      "conditions": [
+        []
+      ],
+      "key": "article_video_guide",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "page_depend",
+            "value": "main_tab_template",
+            "value_type": ""
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "feed_guide_old",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "page_depend",
+            "value": "main_tab_template",
+            "value_type": ""
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "tutorial_guide_old",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          }
+        ]
+      ],
+      "key": "template_resume",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          }
+        ]
+      ],
+      "key": "photo_template_resume",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "login_status",
+            "value": "logout"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          },
+          {
+            "max_count": 0,
+            "min_count": 0,
+            "type": "pre_allow_popup",
+            "value": "popup_question"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "guide_login",
+      "tags": [
+        "logout_only_bind"
+      ]
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "startup"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "splash_subscribe_guide",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "page_depend",
+            "value": "main_tab_edit"
+          }
+        ]
+      ],
+      "key": "youtube_guide",
+      "tags": [
+        "login_only_bind"
+      ]
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          }
+        ]
+      ],
+      "key": "ug_fission_activity",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "max_count": 0,
+            "type": "pre_allow_tags",
+            "value": "user_intent"
+          }
+        ]
+      ],
+      "key": "ug_bind_email_guide",
+      "tags": []
+    },
+    {
+      "conditions": [
+        [
+          {
+            "type": "stage",
+            "value": "coldboot"
+          },
+          {
+            "type": "page_depend",
+            "value": "main_tab_.*",
+            "value_type": "regex"
+          }
+        ]
+      ],
+      "key": "tab_bar_bubble",
+      "tags": []
+    }
+  ],
+  "wait_duration": {
+    "coldboot": 2000,
+    "default": 1000
+  }
+}

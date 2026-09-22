@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_width="wrap_content" n0:layout_height="14.0dp" n0:layout_marginEnd="4.0dp">
+        <com.vega.feedx.main.ui.view.ClipArchImageView n0:id="@id/iv_avatar_3" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:layout_marginStart="24.0dp" n1:placeholderImage="@drawable/nft" n1:roundAsCircle="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.feedx.main.ui.view.ClipArchImageView n0:id="@id/iv_avatar_2" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:layout_marginStart="12.0dp" n2:placeholderImage="@drawable/nft" n2:roundAsCircle="true"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_avatar_1" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n3:placeholderImage="@drawable/nft" n3:roundAsCircle="true"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#ccffffff" n0:id="@id/tv_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:includeFontPadding="false" />
+</LinearLayout>

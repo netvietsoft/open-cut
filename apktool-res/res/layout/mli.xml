@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:orientation="vertical" n0:id="@id/root_layout" n0:tag="layout/xt_activity_layout_webview_0" n0:background="@color/kwe" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/web_title" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <com.xt.retouch.web.ui.AlphaButton n0:layout_gravity="center_vertical" n0:id="@id/iv_web_close" n0:layout_width="46.0dp" n0:layout_height="46.0dp" n0:layout_marginLeft="5.0dp" n0:src="@drawable/r2z" />
+        <com.xt.retouch.web.ui.AlphaButton n0:layout_gravity="center_vertical" n0:id="@id/iv_web_back" n0:background="@drawable/rfj" n0:visibility="gone" n0:layout_width="46.0dp" n0:layout_height="46.0dp" n0:layout_marginLeft="55.0dp" />
+        <TextView n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_web_title" n0:layout_width="wrap_content" n0:layout_height="56.0dp" n0:maxEms="12" n0:singleLine="true" n0:includeFontPadding="false" style="@style/APKTOOL_RENAMED_0x7f130481" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="end|center" n0:id="@id/iv_web_share" n0:layout_width="72.0dp" n0:layout_height="44.0dp" n0:layout_marginEnd="12.0dp">
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/ic_share" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/r5w" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <TextView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t3c" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/ic_share" n2:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f130492"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <FrameLayout n0:id="@id/js_webview_container" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/web_title" />
+    <ProgressBar n0:id="@id/head_progress" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginTop="-1.0dp" n0:max="100" n0:indeterminateOnly="false" n0:progressDrawable="@drawable/r82" n0:layout_below="@id/web_title" style="?android:progressBarStyleHorizontal" />
+    <TextView n0:textSize="14.0dp" n0:textColor="@color/kro" n0:gravity="center" n0:id="@id/tv_reloading" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t6w" n0:layout_centerInParent="true" style="@style/APKTOOL_RENAMED_0x7f130481" />
+    <ProgressBar n0:id="@id/web_loading" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:indeterminateDrawable="@drawable/rkm" n0:layout_centerInParent="true" />
+    <View n0:id="@id/mBgFadeView" n0:background="#2d2f2f" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.xt.retouch.web.ui.MenuChooseLayout n0:id="@id/mMenuChooseLayout" n0:background="@android:color/white" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true" />
+    <include n0:id="@id/storage_tip" n0:visibility="gone" layout="@layout/mz1" />
+    <include n0:id="@id/camera_tip" n0:visibility="gone" layout="@layout/mvc" />
+    <include n0:id="@id/new_year_loading" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" layout="@layout/my8" />
+    <FrameLayout n0:id="@id/test_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</RelativeLayout>

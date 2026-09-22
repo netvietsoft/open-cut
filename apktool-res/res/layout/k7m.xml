@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/reviewLl" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="150.0dp" n1:layout_constraintBottom_toBottomOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:id="@id/copyTidBtn" n0:background="@color/_y" n0:padding="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="12.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1231ca" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:id="@id/copyUidBtn" n0:background="@color/_y" n0:padding="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="12.0dp" n0:text="@string/rx4" />
+</LinearLayout>

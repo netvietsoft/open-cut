@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/mediaContainer" n0:tag="layout/xt_item_photo_0" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="1.0dp" n0:layout_marginEnd="1.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.gallery.refactor.view.HeightEqualWidthImageView2 n0:layout_gravity="center" n0:id="@id/ivCover" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="110.0dp" n0:scaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:tag="binding_1" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginBottom="4.0dp" n0:src="@drawable/rg8" n0:layout_marginEnd="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/frame_is_added" n0:background="@color/kor" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="10.0dp" n0:textColor="@color/kn_" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="4.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginRight="4.0dp" n0:layout_marginBottom="2.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f123e7b" n0:layout_marginHorizontal="4.0dp" n0:layout_marginVertical="2.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

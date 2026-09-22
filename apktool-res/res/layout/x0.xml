@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:kr3="none"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.bytedance.common.utility.view.DrawableCenterTextView n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:tag="button" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:includeFontPadding="false" />
+    <com.vega.ui.widget.ItemLoadingView n0:tag="loading" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" />
+</com.vega.ui.state.pressed.PressedStateStateViewGroupLayout>

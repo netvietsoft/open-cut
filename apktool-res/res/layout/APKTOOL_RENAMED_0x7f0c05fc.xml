@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@android:color/black" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView n0:id="@id/advancedGroup" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:divider="@drawable/APKTOOL_RENAMED_0x7f080591" n0:showDividers="beginning|middle" n0:dividerPadding="16.0dp">
+            <com.vega.publish.template.publish.widget.AdvanceSwitchItemView n0:id="@id/autoFillGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:APKTOOL_RENAMED_0x7f04036e="true" n1:APKTOOL_RENAMED_0x7f0403e6="@string/lo_" n1:kex="@string/APKTOOL_RENAMED_0x7f120d6e"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <com.vega.publish.template.publish.widget.AdvanceSwitchItemView n0:id="@id/supportDynamicSlotsGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:APKTOOL_RENAMED_0x7f04036e="true" n2:APKTOOL_RENAMED_0x7f0403e6="@string/qss" n2:kex="@string/q4o"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.vega.publish.template.publish.widget.AdvanceSwitchItemView n0:id="@id/replaceMusicGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:APKTOOL_RENAMED_0x7f04036e="true" n3:APKTOOL_RENAMED_0x7f0403e6="@string/APKTOOL_RENAMED_0x7f1231ec" n3:kex="@string/gh"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <com.vega.publish.template.publish.widget.AdvanceSwitchItemView n0:id="@id/addFilterEffectGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:APKTOOL_RENAMED_0x7f04036e="true" n4:APKTOOL_RENAMED_0x7f0403e6="@string/l4b" n4:kex="@string/l7l"
+              xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <com.vega.publish.template.publish.widget.AdvanceCommonItemView n0:id="@id/templateTypeGroup" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:APKTOOL_RENAMED_0x7f04036e="true" n5:APKTOOL_RENAMED_0x7f0403e6="@string/q2b" n5:kex="@string/ryk"
+              xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            <com.vega.publish.template.publish.widget.AdvanceSwitchItemView n0:id="@id/keepVideoVoiceGroup" n0:layout_width="match_parent" n0:layout_height="wrap_content" n6:APKTOOL_RENAMED_0x7f04036e="true" n6:APKTOOL_RENAMED_0x7f0403e6="@string/qrc" n6:kex="@string/mwq"
+              xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            <com.vega.publish.template.publish.widget.AdvanceSwitchItemView n0:id="@id/allowUnlockTemplateGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n7:APKTOOL_RENAMED_0x7f0403e6="@string/lm4" n7:kex="@string/lm2"
+              xmlns:n7="http://schemas.android.com/apk/res-auto" />
+            <com.vega.publish.template.publish.widget.AdvanceSwitchItemView n0:id="@id/bvtGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n8:APKTOOL_RENAMED_0x7f0403e6="@string/p_0" n8:kaj="@string/p_j" n8:kex="@string/p_1"
+              xmlns:n8="http://schemas.android.com/apk/res-auto" />
+            <com.vega.publish.template.publish.widget.AdvanceSwitchItemView n0:id="@id/prePublishVideoGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n9:APKTOOL_RENAMED_0x7f04036e="true" n9:APKTOOL_RENAMED_0x7f0403e6="@string/kh7" n9:kex="@string/kh8"
+              xmlns:n9="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include n0:id="@id/templateSelectGroup" n0:visibility="gone" layout="@layout/k1g" />
+</FrameLayout>

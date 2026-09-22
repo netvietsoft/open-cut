@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/topic_icon_container" n0:background="@drawable/lve" n0:layout_width="82.0dp" n0:layout_height="82.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/topic_icon" n0:layout_width="40.0dp" n0:layout_height="40.0dp" />
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/loading_lottie" n0:visibility="gone" n0:layout_width="76.0dp" n0:layout_height="76.0dp" n0:scaleType="centerCrop" n1:lottie_autoPlay="true" n1:lottie_fileName="swipe_loading/data.json" n1:lottie_imageAssetsFolder="swipe_loading/images" n1:lottie_loop="true" />
+    </FrameLayout>
+    <com.vega.edit.aiclipper.panel.aiedit.ui.TagImageView n0:id="@id/topic_tag" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="3.0dp" n2:layout_constraintBottom_toBottomOf="@id/topic_icon_container" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604a5" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/topic_name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/topic_tag" n3:k1i="medium"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

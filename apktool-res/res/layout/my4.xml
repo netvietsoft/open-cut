@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:tag="layout/xt_layout_model_panel_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/tab_bar" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="44.0dp" n0:layout_marginRight="44.0dp" n0:layout_marginHorizontal="44.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <TextView n0:textSize="16.0dp" n0:textColor="@color/ktw" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/main_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ree" />
+            <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="10.0dp" n0:textColor="@color/kpf" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ref" n0:maxLines="2" n1:nf="true" n1:autoSizeMaxTextSize="10.0dp" n1:autoSizeMinTextSize="6.0dp" n1:bp="1.0dp" n1:autoSizeTextType="uniform" />
+        </LinearLayout>
+        <FrameLayout n0:id="@id/btn_container" n0:layout_width="44.0dp" n0:layout_height="match_parent" n2:layout_constraintEnd_toEndOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center" n0:id="@id/check_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/mhq" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/model_panel_recycle_view" n0:layout_width="match_parent" n0:layout_height="425.0dp" n0:layout_marginTop="10.0dp" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" />
+</LinearLayout>

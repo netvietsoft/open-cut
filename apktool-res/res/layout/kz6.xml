@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/item_top_divide" n0:layout_width="match_parent" n0:layout_height="12.0dp" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/item_space_view" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/item_space_info_layout" n0:layout_width="match_parent" n0:layout_height="60.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.ui.widget.RoundFrameLayout n0:id="@id/item_space_icon" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n1:i7="8.0dp" n1:i8="8.0dp" n1:i9="8.0dp" n1:i-="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/tv_item_space" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            </com.vega.ui.widget.RoundFrameLayout>
+            <LinearLayout n0:orientation="vertical" n0:id="@id/item_space_detail_view" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/iv_check_state" n2:layout_constraintStart_toEndOf="@id/item_space_icon" n2:layout_constraintTop_toTopOf="parent"
+              xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:ellipsize="end" n0:id="@id/item_space_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="251.0dp" n0:maxLines="1" />
+                <FrameLayout n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:layout_marginTop="2.0dp">
+                    <LinearLayout n0:orientation="horizontal" n0:id="@id/item_storage_info_view_place" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                        <View n0:background="@drawable/p0" n0:layout_width="80.0dp" n0:layout_height="14.0dp" />
+                        <View n0:background="@drawable/p0" n0:layout_width="60.0dp" n0:layout_height="14.0dp" n0:layout_marginStart="8.0dp" />
+                    </LinearLayout>
+                    <LinearLayout n0:orientation="horizontal" n0:id="@id/item_storage_info_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:ellipsize="middle" n0:id="@id/item_space_size" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="251.0dp" n0:singleLine="true" />
+                        <View n0:layout_gravity="center_vertical" n0:id="@id/item_space_divide" n0:background="@color/mo" n0:layout_width="1.0dp" n0:layout_height="10.0dp" n0:layout_marginStart="8.0dp" />
+                        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:ellipsize="end" n0:id="@id/item_space_member" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="251.0dp" n0:maxLines="1" n0:layout_marginStart="8.0dp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <ImageView n0:id="@id/iv_check_state" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/nof" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View n0:id="@id/item_line" n0:background="@color/ne" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/auto_backup_change_folder_view" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <ImageView n0:id="@id/item_space_folder_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/o0e" n0:layout_marginStart="16.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/item_space_folder_name"
+              xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/mo" n0:ellipsize="end" n0:id="@id/item_space_folder_name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="16.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toStartOf="@id/item_space_folder_change" n5:layout_constraintStart_toEndOf="@id/item_space_folder_icon" n5:layout_constraintTop_toTopOf="parent"
+              xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            <ImageView n0:id="@id/ic_space_arrow" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/o0d" n0:layout_marginEnd="16.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="parent"
+              xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:id="@id/item_space_folder_change" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n8e" n0:layout_marginEnd="32.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintTop_toTopOf="parent"
+              xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <View n0:id="@id/item_bottom_divide" n0:layout_width="match_parent" n0:layout_height="12.0dp" />
+</LinearLayout>

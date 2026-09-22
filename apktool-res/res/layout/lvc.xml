@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/access_public_view" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginEnd="40.0dp" n0:layout_alignParentStart="true">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1218fe" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#8015293c" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1218e1" />
+        </LinearLayout>
+        <ImageView n0:id="@id/iv_public_check_state" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/oh-" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/access_space_view" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginEnd="40.0dp" n0:layout_alignParentStart="true">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1218f5" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#8015293c" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1218fb" />
+        </LinearLayout>
+        <ImageView n0:id="@id/iv_space_check_state" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/oh-" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

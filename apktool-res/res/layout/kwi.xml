@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="74.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/add_item_image_root" n0:layout_width="match_parent" n0:layout_height="82.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/ic_add_item" n0:background="@drawable/nwl" n0:layout_width="62.0dp" n0:layout_height="62.0dp" n0:layout_centerInParent="true" />
+        <ImageView n0:id="@id/ic_ai_writer_template" n0:background="@drawable/may" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:layout_alignTop="@id/ic_add_item" n0:layout_marginEnd="2.0dp" n0:layout_alignEnd="@id/ic_add_item" />
+    </RelativeLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#ff878787" n0:id="@id/tvIndexLabel" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lmp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/add_item_image_root"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

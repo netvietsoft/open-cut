@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_select_target_root" n0:background="@color/s3" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="364.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/vDividerCover" n0:background="@color/a3" n0:layout_width="0.0dp" n0:layout_height="0.5dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/tvTargetFromAlbum"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.track.HorizontalScrollContainer n0:id="@id/hscCoverFrameContainer" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="60.0dp" n2:layout_constraintBottom_toTopOf="@id/tips_text" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tvTargetFromAlbum" n2:layout_constraintVertical_chainStyle="packed"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.edit.base.adjust.view.colormatch.ColorMatchFrameView n0:id="@id/cmfFrameView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.ui.track.HorizontalScrollContainer>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/_r" n0:gravity="center" n0:id="@id/tips_text" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="14.0dp" n0:text="@string/ncq" n0:paddingHorizontal="16.0dp" n3:layout_constraintBottom_toTopOf="@id/bt_target_image" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/hscCoverFrameContainer"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.StrongButton n0:textSize="14.0sp" n0:id="@id/bt_target_image" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="20.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122b80" n0:paddingStart="24.0dp" n0:paddingEnd="24.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tips_text"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivPlayHead" n0:background="@drawable/p6v" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="70.0dp" n0:scaleType="centerCrop" n5:layout_constraintBottom_toBottomOf="@id/hscCoverFrameContainer" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="@id/hscCoverFrameContainer"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/groupCoverFrame" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:constraint_referenced_ids="hscCoverFrameContainer,ivPlayHead"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/glCenterGuideline" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n7:layout_constraintGuide_percent="0.5"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tvTargetFromFrame" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginTop="34.0dp" n0:text="@string/ry7" n0:layout_marginEnd="18.0dp" n8:layout_constraintEnd_toStartOf="@id/glCenterGuideline" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivCoverFromFrameSelected" n0:background="@drawable/kz1" n0:layout_width="22.0dp" n0:layout_height="3.0dp" n0:layout_marginTop="6.0dp" n9:layout_constraintBottom_toBottomOf="@id/tvTargetFromFrame" n9:layout_constraintEnd_toEndOf="@id/tvTargetFromFrame" n9:layout_constraintStart_toStartOf="@id/tvTargetFromFrame"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tvTargetFromAlbum" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginTop="34.0dp" n0:text="@string/mrm" n0:layout_marginStart="18.0dp" n10:layout_constraintStart_toEndOf="@id/glCenterGuideline" n10:layout_constraintTop_toTopOf="parent"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

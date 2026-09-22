@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/dock_layout" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:visibility="gone" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="70.0dp" n1:layout_constraintBottom_toBottomOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <include n0:id="@id/gen_again" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toStartOf="@id/gen_edit_params" n1:layout_constraintHorizontal_chainStyle="spread" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" layout="@layout/kn6" />
+    <include n0:id="@id/gen_edit_params" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toStartOf="@id/download" n1:layout_constraintStart_toEndOf="@id/gen_again" n1:layout_constraintTop_toTopOf="parent" layout="@layout/kn6" />
+    <include n0:id="@id/download" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toStartOf="@id/publish" n1:layout_constraintStart_toEndOf="@id/gen_edit_params" n1:layout_constraintTop_toTopOf="parent" layout="@layout/kn6" />
+    <include n0:id="@id/publish" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toStartOf="@id/report" n1:layout_constraintStart_toEndOf="@id/download" n1:layout_constraintTop_toTopOf="parent" layout="@layout/kn6" />
+    <include n0:id="@id/report" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/publish" n1:layout_constraintTop_toTopOf="parent" layout="@layout/kn6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

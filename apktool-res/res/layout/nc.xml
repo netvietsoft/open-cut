@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060576" n0:gravity="center" n0:id="@id/feed_tag_title" n0:background="@color/APKTOOL_RENAMED_0x7f060568" n0:layout_width="match_parent" n0:layout_height="50.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1212b0" n1:layout_constraintBottom_toBottomOf="@id/feed_tag_back" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/feed_tag_back"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/feed_tag_back" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m6e" n0:scaleType="centerInside" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/feedback_reply_message" n0:visibility="gone" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/nho" n3:layout_constraintBottom_toBottomOf="@id/feed_tag_title" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="@id/feed_tag_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:layout_gravity="end|center" n0:id="@id/feedback_message_reddot" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginEnd="6.0dp" n4:layout_constraintEnd_toEndOf="@id/feedback_reply_message" n4:layout_constraintTop_toTopOf="@id/feedback_reply_message"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/title_line" n0:background="@color/APKTOOL_RENAMED_0x7f060638" n0:layout_width="match_parent" n0:layout_height="1.0dp" n5:layout_constraintTop_toBottomOf="@id/feed_tag_title"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/APKTOOL_RENAMED_0x7f060567" n0:id="@id/feed_tag_tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/q0o" n0:layout_marginStart="25.0dp" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/title_line"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.OverScrollDecor n0:layout_width="match_parent" n0:layout_height="0.0dp" n7:layout_constrainedHeight="true" n7:layout_constraintBottom_toTopOf="@id/feed_tag_suggestions" n7:layout_constraintTop_toBottomOf="@id/feed_tag_tips"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.VerticalRecyclerView n0:id="@id/feed_tag_list" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="15.0dp" />
+    </com.vega.ui.widget.OverScrollDecor>
+    <View n0:background="@color/APKTOOL_RENAMED_0x7f060563" n0:layout_width="match_parent" n0:layout_height="1.0dp" n8:layout_constraintBottom_toTopOf="@id/feed_tag_suggestions" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateLinearLayout n0:gravity="center" n0:id="@id/feed_tag_suggestions" n0:layout_width="match_parent" n0:layout_height="50.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent" n9:kr3="button"
+      xmlns:n9="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/o3z" />
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/APKTOOL_RENAMED_0x7f060564" n0:gravity="center" n0:id="@id/feed_tag_suggest" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:text="@string/q9u" n0:layout_marginStart="10.0dp" />
+    </com.vega.ui.state.pressed.PressedStateLinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

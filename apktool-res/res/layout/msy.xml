@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="76.0dp" n0:layout_height="76.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:layout_width="match_parent" n0:layout_height="match_parent" n1:cardBackgroundColor="@color/kw0" n1:cardCornerRadius="@dimen/APKTOOL_RENAMED_0x7f0703bd" n1:cardElevation="0.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.colorstyle.impl.global.view.ColorCardItemView n0:id="@id/color_card_view" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+    <ImageView n0:id="@id/ivSelectedBg" n0:background="@drawable/q_d" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:translationZ="200.0dp" />
+    <FrameLayout n0:id="@id/error" n0:background="#e5222222" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/ri9" n0:scaleType="centerInside" />
+    </FrameLayout>
+</FrameLayout>

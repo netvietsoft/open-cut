@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/center_vertical_guide_line" n0:layout_width="wrap_content" n0:layout_height="match_parent" n1:layout_constraintGuide_percent="0.5"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/video_type_title" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q0" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/auto_recognize_btn" n0:background="@drawable/j3" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:text="@string/qz" n0:layout_marginEnd="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="@id/center_vertical_guide_line" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/video_type_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:gravity="center" n0:id="@id/multi_select_btn" n0:background="@drawable/j3" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:text="@string/q3" n0:layout_marginStart="4.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="@id/center_vertical_guide_line" n4:layout_constraintTop_toBottomOf="@id/video_type_title"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="@drawable/m4z" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginEnd="12.0dp" n5:layout_constraintBottom_toBottomOf="@id/multi_select_btn" n5:layout_constraintEnd_toEndOf="@id/multi_select_btn" n5:layout_constraintTop_toTopOf="@id/multi_select_btn"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lmm" n0:layout_width="279.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/privacy_title" n0:paddingLeft="24.5dp" n0:paddingRight="24.5dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:paddingHorizontal="24.5dp" n1:layout_constraintBottom_toTopOf="@id/privacy_content_view" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n0:id="@id/privacy_content_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:maxHeight="400.0dp" n2:layout_constraintBottom_toTopOf="@id/privacy_confirm" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/privacy_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_f" n0:gravity="start" n0:id="@id/privacy_content" n0:paddingLeft="24.0dp" n0:paddingRight="24.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="24.0dp" n0:lineHeight="21.0dp" />
+    </ScrollView>
+    <com.vega.theme.VegaButton n0:textSize="16.0sp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/privacy_confirm" n0:background="@drawable/qoo" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_margin="24.0dp" n0:textAllCaps="false" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/privacy_content_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

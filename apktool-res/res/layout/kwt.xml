@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:minWidth="30.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/lite_music_panel_tab_text" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:includeFontPadding="false" />
+    <View n0:layout_gravity="center|bottom" n0:id="@id/lite_music_panel_tab_indicator" n0:background="#ff00cfe8" n0:visibility="gone" n0:layout_width="30.0dp" n0:layout_height="2.0dp" />
+</FrameLayout>

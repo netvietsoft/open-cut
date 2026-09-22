@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root_view" n0:background="@color/APKTOOL_RENAMED_0x7f060534" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/mCloseSetting" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:layout_marginTop="44.0dp" n0:src="@drawable/m6e" n0:scaleType="centerInside" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kr3="button"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="@color/mk" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ob5" n2:layout_constraintBottom_toBottomOf="@id/mCloseSetting" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/mCloseSetting" n2:k1i="bold"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toBottomOf="@id/mCloseSetting"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="vertical" n0:background="@color/APKTOOL_RENAMED_0x7f060534" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center_vertical" n0:id="@id/tvAccountSettings" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/ob1" n0:paddingHorizontal="16.0dp" n3:k1i="bold" />
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/flEditProfile" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l5a" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/flManageAccount" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:gravity="center_vertical" n0:id="@id/tvManagerAccount" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:text="@string/k9" n3:layout_constraintBottom_toTopOf="@id/tvWarningAccount" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:k1i="medium" />
+                <ImageView n0:id="@id/ivWarningAccountRedDot" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pox" n0:layout_marginStart="4.0dp" n3:layout_constraintBottom_toBottomOf="@id/tvManagerAccount" n3:layout_constraintStart_toEndOf="@id/tvManagerAccount" n3:layout_constraintTop_toTopOf="@id/tvManagerAccount" />
+                <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" n3:layout_constraintBottom_toBottomOf="@id/tvManagerAccount" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="@id/tvManagerAccount" />
+                <View n0:id="@id/bgWarningAccount" n0:background="@drawable/ltj" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:paddingHorizontal="16.0dp" n3:layout_constraintBottom_toBottomOf="@id/tvWarningAccount" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="@id/tvWarningAccount" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#090c14" n0:id="@id/tvWarningAccount" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:clickable="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:layout_marginBottom="14.0dp" n0:text="@string/o_l" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/tvWarningAccountLink" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tvManagerAccount" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#00cae0" n0:id="@id/tvWarningAccountLink" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/o_k" n0:maxLines="3" n0:paddingEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="@id/tvWarningAccount" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="@id/tvWarningAccount" n3:k1i="medium" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/flBlockedUsers" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rxj" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <View n0:id="@id/lineAccountSettings" n0:background="@color/kz" n0:layout_width="match_parent" n0:layout_height="6.0dp" n0:layout_marginTop="12.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center_vertical" n0:id="@id/tvPreferenceSettings" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/ob4" n0:paddingHorizontal="16.0dp" n3:k1i="bold" />
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/fl_switch_language" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="@dimen/rr" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/jy" n3:k1i="medium" />
+                <com.vega.theme.text.VegaTextView n0:textColor="@color/mo" n0:layout_gravity="end|center" n0:id="@id/tv_switch_language" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:drawablePadding="4.0dp" n3:APKTOOL_RENAMED_0x7f040472="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <FrameLayout n0:id="@id/segment_footer" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12047c" n3:k1i="medium" />
+                <com.vega.theme.VegaCheckBox n0:layout_gravity="end|center" n0:id="@id/epilogueSwitch" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="true" n0:button="@drawable/l1b" n0:track="@drawable/qlp" />
+            </FrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/space_setting_item" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nhn" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/tv_personal" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:id="@id/tv_personal_note" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qvo" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <View n0:background="@color/kz" n0:layout_width="match_parent" n0:layout_height="6.0dp" n0:layout_marginTop="12.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/mk" n0:gravity="center_vertical" n0:id="@id/tvSupportAndAbout" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/ob2" n0:paddingHorizontal="16.0dp" n3:k1i="bold" style="@style/APKTOOL_RENAMED_0x7f1304a5" />
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/tv_subscribe_invitation" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kyx" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/tv_feedback" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1212ab" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+                <View n0:layout_gravity="end|center" n0:id="@id/feedback_reddot" n0:visibility="gone" n0:layout_width="5.0dp" n0:layout_height="5.0dp" n0:layout_marginEnd="45.0dp" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/mSettingAgreement" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rxe" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/mPrivacyCenter" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:id="@id/mPrivacyCenterText" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o_m" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/mSettingPrivacy" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qxh" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/mSettingTermsPolicies" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ra8" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/fl_settings_guidelines" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/k4_" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <include layout="@layout/klg" />
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/clearCache" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ltj" n3:k1i="medium" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:layout_gravity="end|center" n0:id="@id/cacheSizeTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <FrameLayout n0:id="@id/newEpilogue" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ley" />
+                <CheckBox n0:layout_gravity="end|center" n0:id="@id/epilogueSwitchNew" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="true" n0:button="@drawable/l1b" n0:track="@drawable/qlp" />
+            </FrameLayout>
+            <FrameLayout n0:id="@id/flSettingVersion" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ryx" n3:k1i="medium" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:layout_gravity="end|center" n0:id="@id/mSettingVersion" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+            </FrameLayout>
+            <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/fl_ad_network_preference" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n3:kr3="list">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kkg" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            <FrameLayout n0:id="@id/flDeveloper" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lim" n3:k1i="medium" />
+                <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+            </FrameLayout>
+            <View n0:layout_width="match_parent" n0:layout_height="16.0dp" />
+            <com.vega.theme.VegaButton n0:textColor="@color/mk" n0:id="@id/btnSwitchAccount" n0:background="@drawable/kj9" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/m0x" n0:textAllCaps="false" n0:layout_marginHorizontal="16.0dp" />
+            <com.vega.theme.VegaButton n0:textColor="@color/mk" n0:id="@id/btnSignOut" n0:background="@drawable/kj9" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/mbk" n0:textAllCaps="false" n0:layout_marginHorizontal="16.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mm" n0:id="@id/versionWithIds" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="34.0dp" n0:textAlignment="center" />
+            <Space n0:layout_width="match_parent" n0:layout_height="54.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

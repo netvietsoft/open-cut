@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/rl_ai_writer" n0:background="@drawable/lv4" n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="-6.0dp" n0:layout_below="@id/iv_limit_free" n1:ks8="30.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/ic_ai_writer_limit_free" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginStart="14.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/qa" n0:id="@id/tv_ai_writer_limit_free" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lp" n0:layout_toRightOf="@id/ic_ai_writer_limit_free" n0:layout_centerVertical="true" n0:layout_marginStart="5.0dp" n0:layout_marginEnd="12.0dp" />
+    </RelativeLayout>
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_limit_free" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="-24.0dp" n0:layout_toEndOf="@id/rl_ai_writer" n2:kml="small"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/root" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layoutDirection="ltr"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/content_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <FrameLayout n0:layout_gravity="center" n0:id="@id/content_layout" n0:clipChildren="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_below="@id/arrow_top_img" />
+        <ImageView n0:id="@id/arrow_top_img" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="6.0dp" n0:src="@drawable/m3j" n0:layout_centerHorizontal="true" n0:rotation="180.0" />
+        <ImageView n0:id="@id/arrow_bottom_img" n0:layout_width="20.0dp" n0:layout_height="6.0dp" n0:src="@drawable/m3j" n0:layout_below="@id/content_layout" n0:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

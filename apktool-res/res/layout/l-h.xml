@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/layout_tool_display_title" n0:paddingBottom="12.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center_vertical" n0:id="@id/iv_tool_display_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:scaleType="fitXY" n0:layout_marginEnd="8.0dp" />
+        <TextView n0:textSize="16.0dp" n0:textColor="#801c283d" n0:gravity="center_vertical" n0:layout_gravity="center_vertical" n0:id="@id/tv_tool_display_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:fontFamily="CapCut Sans Text" n0:paddingEnd="8.0dp" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#090c14" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="16.0dp" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

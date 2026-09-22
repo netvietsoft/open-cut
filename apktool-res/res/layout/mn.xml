@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/activity_aipainting_v2_root" n0:background="#0a0a0a" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/titleBar" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/ivBack" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m65" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout n0:id="@id/toolBar" n0:visibility="gone" n0:clipChildren="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <RelativeLayout n0:id="@id/tvPostTemplate_container" n0:clipChildren="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="8.0dp">
+                <com.vega.ui.TintTextView n0:id="@id/tvPostTemplate" n0:background="@drawable/kpu" n0:paddingLeft="16.0dp" n0:paddingTop="4.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/khh" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/n5r" n0:paddingHorizontal="16.0dp" n0:paddingVertical="4.0dp" />
+                <ImageView n0:id="@id/post_template_new" n0:layout_width="26.0dp" n0:layout_height="12.0dp" n0:layout_marginTop="-6.0dp" n0:src="@drawable/n5s" n0:layout_alignTop="@id/tvPostTemplate" n0:layout_alignEnd="@id/tvPostTemplate" />
+            </RelativeLayout>
+            <com.vega.ui.TintTextView n0:id="@id/tvSaveImage" n0:background="@drawable/kpu" n0:paddingLeft="16.0dp" n0:paddingTop="4.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qg2" n0:drawableStart="@drawable/px7" n0:layout_marginEnd="5.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="4.0dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ivPictureContent" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp" n2:actualImageScaleType="fitCenter" n2:layout_constraintBottom_toTopOf="@id/fcBodyfragmentContainer" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/titleBar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/fake_water_mark" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="20.0dp" n0:src="@drawable/m1c" n3:layout_constraintStart_toStartOf="@id/ivPictureContent" n3:layout_constraintTop_toTopOf="@id/ivPictureContent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivContrastPictures" n0:padding="8.0dp" n0:visibility="gone" n0:layout_width="42.0dp" n0:layout_height="42.0dp" n0:layout_marginBottom="9.0dp" n0:src="@drawable/qm1" n0:layout_marginEnd="5.0dp" n4:layout_constraintBottom_toBottomOf="@id/ivPictureContent" n4:layout_constraintEnd_toEndOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="@drawable/pc5" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:layout_constrainedHeight="true" n5:layout_constrainedWidth="true" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/ivPictureContent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.aigenerator.fragment.HomeToolAIPaintingBodyFragmentV2" n0:id="@id/fcBodyfragmentContainer" n0:paddingTop="24.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n6:layout_constraintBottom_toBottomOf="@id/glBottom"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/glBottom" n0:layout_width="match_parent" n0:layout_height="wrap_content" n7:layout_constraintBottom_toTopOf="@id/llBottom" n7:layout_goneMarginBottom="68.0dp"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/llBottom" n0:background="@drawable/pc5" n0:paddingBottom="8.0dp" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <com.vega.subscriptionapi.swidget.BusinessCreditsBar n0:id="@id/creditsBar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="40.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+        <include layout="@layout/kga" />
+    </LinearLayout>
+    <FrameLayout n0:id="@id/flEditFragmentContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintStart_toStartOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

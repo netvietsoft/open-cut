@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/itemContainer" n0:layout_width="67.0dp" n0:layout_height="84.0dp" style="@style/uj"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/image_container" n0:layout_width="67.0dp" n0:layout_height="84.0dp" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.lvui.widget.MaterialDraweeView n0:id="@id/image" n0:background="@drawable/k54" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/mol" n1:i1="8.0dp" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/resetImage" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/l0j" n0:scaleType="center" />
+        <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:id="@id/itemLoadingView" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/itemErrorView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="center" n0:id="@id/itemName" n0:background="@drawable/lg1" n0:layout_width="match_parent" n0:layout_height="18.0dp" n0:layout_marginTop="6.0dp" n0:singleLine="true" n2:layout_constraintBottom_toBottomOf="@id/image_container" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</com.vega.lvui.view.MaterialSelectableLayout>

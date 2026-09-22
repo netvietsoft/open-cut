@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="0.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/guideline_top" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_begin="4.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/guideline_end" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <FrameLayout n0:id="@id/image_container" n0:layout_width="68.0dp" n0:layout_height="68.0dp" n2:layout_constraintEnd_toEndOf="@id/guideline_end" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/guideline_top"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.cardview.widget.CardView n0:layout_gravity="center" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="4.0dp" n2:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n2:cardCornerRadius="8.0dp" n2:cardElevation="0.0dp">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:background="#1ae5ecff" n0:layout_width="match_parent" n0:layout_height="match_parent">
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cut_same_img" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+                <ImageView n0:id="@id/imageMask" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@color/_l" n0:scaleType="centerCrop" n0:layout_centerInParent="true" />
+                <com.vega.theme.text.VegaTextView n0:textSize="13.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/time_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <ImageView n0:id="@id/edit_image" n0:background="@drawable/oir" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <ImageView n0:id="@id/shoot_img" n0:background="@drawable/nv5" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <ImageView n0:id="@id/iv_material_detect_unqualified" n0:background="@drawable/k9r" n0:padding="15.0dp" n0:visibility="gone" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:src="@drawable/okr" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="#8cffffff" n0:gravity="center" n0:id="@id/media_index" n0:background="@drawable/kbz" n0:layout_width="wrap_content" n0:layout_height="13.0dp" n0:layout_marginTop="8.0dp" n0:minWidth="13.0dp" n0:shadowColor="#66000000" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="4.0" n0:layout_marginStart="8.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+    <ImageView n0:id="@id/ivDelete" n0:paddingBottom="8.0dp" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/nwh" n0:paddingStart="8.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n4:layout_constraintEnd_toEndOf="@id/guideline_end" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/image_container"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.SolidCircleView n0:id="@id/relationLabel" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n4:g0="@color/sg" n4:layout_constraintBottom_toBottomOf="@id/tvIndexLabel" n4:layout_constraintRight_toLeftOf="@id/tvIndexLabel" n4:layout_constraintTop_toTopOf="@id/tvIndexLabel" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

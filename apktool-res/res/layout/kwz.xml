@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="80.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_folder_item_image" n0:layout_width="64.0dp" n0:layout_height="64.0dp" n0:scaleType="centerCrop" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_folder_item_select" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/p4m" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/iv_folder_item_select" n3:layout_constraintStart_toEndOf="@id/iv_folder_item_image" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:id="@id/tv_folder_item_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:textFontWeight="500" n3:k1i="medium" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:id="@id/tv_folder_item_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:orientation="horizontal" n0:id="@id/LanguageChooseBar" n0:background="@drawable/APKTOOL_RENAMED_0x7f080fc5" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <com.vega.ui.state.pressed.PressedStateImageView n0:gravity="center_vertical" n0:id="@id/iv_back" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:src="@drawable/m6d" n1:kr3="button"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/jy" n0:layout_centerInParent="true" />
+        <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f060538" n0:gravity="center_vertical" n0:id="@id/tv_done" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/l_e" n0:layout_marginEnd="15.0dp" n0:layout_alignParentEnd="true" n2:kr3="button"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <com.vega.ui.widget.FadingEdgeScrollView n0:background="@color/APKTOOL_RENAMED_0x7f060534" n0:fadingEdgeLength="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="1.0dp" n0:requiresFadingEdge="vertical">
+        <LinearLayout n0:orientation="vertical" n0:id="@id/ll_region" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </com.vega.ui.widget.FadingEdgeScrollView>
+</LinearLayout>

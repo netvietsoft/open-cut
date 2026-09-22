@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:layout_gravity="center" n0:orientation="vertical" n0:id="@id/ll_base_container" n0:tag="layout/xt_item_layer_common_plugin_0" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="68.0dp" n0:minWidth="66.0dp" n0:paddingHorizontal="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:gravity="center" n0:id="@id/icon_layout" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="5.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center" n0:id="@id/base_icon" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="center" />
+        <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center" n0:id="@id/lottie_switch" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:ax="false" />
+    </FrameLayout>
+    <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="10.0sp" n0:textStyle="bold" n0:textColor="@color/ktw" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/base_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="43.0dp" n0:maxWidth="72.0dp" n0:maxLines="2" n2:nf="true" n2:autoSizeMaxTextSize="10.0sp" n2:autoSizeMinTextSize="8.0sp" n2:bp="1.0sp" n2:autoSizeTextType="uniform" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/guideline" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintGuide_percent="0.5"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:gravity="center" n0:id="@id/icon_layout_2" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="15.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/icon_limit_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:layout_constraintBottom_toTopOf="@id/icon_layout_2" n5:layout_constraintEnd_toEndOf="@id/icon_layout_2" n5:layout_constraintStart_toEndOf="@id/icon_layout_2" n5:layout_constraintTop_toTopOf="@id/icon_layout_2"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_limit_ai" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="10.0dp" n0:layout_marginTop="7.0dp" n0:src="@drawable/r5j" n0:scaleType="fitStart" n0:layout_marginStart="12.0dp" n6:layout_constraintStart_toEndOf="@id/guideline" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

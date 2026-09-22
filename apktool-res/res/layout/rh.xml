@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/digital_human_panel" n0:background="@drawable/APKTOOL_RENAMED_0x7f080255" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:backgroundTint="#151517"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.tabs.TabLayout n0:id="@id/tab_layout" n0:layout_width="match_parent" n0:layout_height="50.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:tabGravity="fill" n1:tabIndicator="@null" n1:tabMinWidth="0.0dp" n1:tabMode="scrollable" n1:tabPaddingEnd="12.0dp" n1:tabPaddingStart="16.0dp" n1:tabRippleColor="@null" n1:tabSelectedTextColor="#fafbff" n1:tabTextAppearance="@style/si" n1:tabTextColor="#80edf0fd"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.viewpager.widget.ViewPager n0:id="@id/view_pager" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toTopOf="@id/ll_title" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tab_layout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/ll_title" n0:paddingLeft="16.0dp" n0:paddingTop="10.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="38.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="92.0dp" n0:paddingHorizontal="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:id="@id/close_btn" n0:background="@drawable/tj" n0:padding="13.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/tf" n0:tint="@color/knt" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#fafbff" n0:gravity="center" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/li5" n0:layout_weight="1.0" />
+        <com.vega.ui.AlphaButton n0:id="@id/confirm_btn" n0:background="@drawable/tj" n0:padding="13.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/th" n0:tint="@color/knt" />
+    </LinearLayout>
+    <View n0:id="@id/panelOverlay" n0:background="#99151517" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/secondPanelContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:animateLayoutChanges="true" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

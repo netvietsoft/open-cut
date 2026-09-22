@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/ml" n0:id="@id/topic_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/po0" n0:drawablePadding="8.0dp" n0:drawableStart="@drawable/oy4" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/topic_list" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/topic_label"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/topic_input_container" n0:background="@drawable/lvy" n0:padding="12.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:minHeight="96.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/topic_list"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.audio.view.textcreate.TextCreateScrollView n0:id="@id/topic_input" n0:fadingEdge="vertical" n0:fadingEdgeLength="50.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:requiresFadingEdge="vertical" n3:kno="124.0dp">
+            <com.vega.theme.VegaEditText n0:textSize="16.0sp" n0:textColorHint="@color/l_" n0:gravity="top" n0:id="@id/topic_edit_text" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="72.0dp" n0:hint="@string/po2" n0:overScrollMode="always" n3:k1i="regular" />
+        </com.vega.audio.view.textcreate.TextCreateScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

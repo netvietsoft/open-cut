@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.lvui.view.MaterialSelectableLayout n0:background="#ff282828" n0:layout_width="76.0dp" n0:layout_height="76.0dp" style="@style/u1"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/flRecognizeAnimIcon" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.lvui.widget.MaterialDraweeView n0:layout_gravity="center" n0:id="@id/ivRecognizeAnimIcon" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:i1="8.0dp" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="end|top" n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="@dimen/n9" n1:kml="small" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/ivRecognizeAnimItemError" n0:background="@drawable/APKTOOL_RENAMED_0x7f0804c9" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_constraintBottom_toBottomOf="@id/flRecognizeAnimIcon" n2:layout_constraintEnd_toEndOf="@id/flRecognizeAnimIcon" n2:layout_constraintStart_toStartOf="@id/flRecognizeAnimIcon" n2:layout_constraintTop_toTopOf="@id/flRecognizeAnimIcon"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/odn" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/ivRecognizeAnimItemMagnifier" n0:background="@color/APKTOOL_RENAMED_0x7f060025" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintBottom_toBottomOf="@id/flRecognizeAnimIcon" n3:layout_constraintEnd_toEndOf="@id/flRecognizeAnimIcon" n3:layout_constraintStart_toStartOf="@id/flRecognizeAnimIcon" n3:layout_constraintTop_toTopOf="@id/flRecognizeAnimIcon"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/o3t" />
+    </FrameLayout>
+</com.vega.lvui.view.MaterialSelectableLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.cux.skeleton.CuxShimmerLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/content_recyclerview" n0:padding="16.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/skeletonRecyclerView" n0:padding="16.0dp" n0:visibility="gone" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.image.edit.template.view.panel.ImageTemplateListStatusView n0:id="@id/statusView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</com.bytedance.cux.skeleton.CuxShimmerLayout>

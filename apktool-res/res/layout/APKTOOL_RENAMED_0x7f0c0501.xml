@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/cloud_draft_space_fl_root" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:layout_gravity="center" n0:orientation="vertical" n0:id="@id/spaceLoading" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/spaceLoadingLottie" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="lv_loading_b.json" n1:lottie_loop="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#b4111a2c" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/nqb" />
+    </LinearLayout>
+    <com.vega.property.optional.ui.common.view.PropertyListEmptyView n0:id="@id/space_error_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</FrameLayout>

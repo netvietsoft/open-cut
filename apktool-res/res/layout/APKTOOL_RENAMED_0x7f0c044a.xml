@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/selectMaterialLayout" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_v" n0:id="@id/tv_select_material_placeholder" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qoz" n0:layout_centerInParent="true" />
+    <com.vega.cutsameedit.view.CutSameSelectMaterialView n0:id="@id/smSelectMaterial" n0:scrollbars="none" n0:layout_width="wrap_content" n0:layout_height="96.0dp" n0:layout_centerInParent="true" n0:overScrollMode="never" n1:kos="edit"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

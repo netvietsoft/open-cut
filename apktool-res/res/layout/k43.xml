@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_digital_human_auto_pack_switcher" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nnf" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" n1:k1j="body_1"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <CheckBox n0:id="@id/cb_auto_pack_switcher" n0:background="@android:color/transparent" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="false" n0:button="@drawable/l1b" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

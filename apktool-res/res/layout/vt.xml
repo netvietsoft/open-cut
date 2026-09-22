@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805f3" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:id="@id/tvTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:text="@string/oeh" n1:layout_constraintEnd_toStartOf="@id/ivConfirm" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="bold" n1:k1j="body_1"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivConfirm" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f081606" n0:layout_marginEnd="8.0dp" n2:layout_constraintBottom_toBottomOf="@id/tvTitle" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/tvTitle"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/dividing_line" n0:background="@color/ky" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginTop="15.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tvTitle"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rvEmotions" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginHorizontal="12.0dp" n0:layout_marginVertical="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/dividing_line"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

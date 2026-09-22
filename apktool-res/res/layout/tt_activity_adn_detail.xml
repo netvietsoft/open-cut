@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="#fff" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tt_activity_base_header" />
+    <ScrollView n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_999" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="16.0dp" n0:text="Acess Detail Info" />
+            <View n0:background="#ebebeb" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" />
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="80.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp">
+                <View n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="App ID" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_666" n0:layout_gravity="center_vertical" n0:id="@id/app_id" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" />
+                <View n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+            </LinearLayout>
+            <View n0:background="#ebebeb" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" />
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="80.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp">
+                <View n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="App Key" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_666" n0:layout_gravity="center_vertical" n0:id="@id/app_key" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="2.7.0.0" />
+                <View n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+            </LinearLayout>
+            <View n0:background="#ebebeb" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" />
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="80.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp">
+                <View n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="AdHub Sdk Version" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_666" n0:layout_gravity="center_vertical" n0:id="@id/msdk_version" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="2.7.0.0" />
+                <View n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+            </LinearLayout>
+            <View n0:background="#ebebeb" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" />
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp">
+                <View n0:layout_width="match_parent" n0:layout_height="12.0dp" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="ADN SDK Version" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_666" n0:layout_gravity="center_vertical" n0:id="@id/adn_version" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:drawableLeft="@drawable/tt_alert_selector" n0:drawablePadding="8.0dp" />
+                <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_999" n0:id="@id/adn_no_fit" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="The current ADN SDK version is not within the recommended version range." />
+                <View n0:layout_width="match_parent" n0:layout_height="12.0dp" />
+            </LinearLayout>
+            <View n0:background="#ebebeb" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" />
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp">
+                <View n0:layout_width="match_parent" n0:layout_height="12.0dp" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Adapter" />
+                <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_666" n0:layout_gravity="center_vertical" n0:id="@id/adapter_version" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:drawableLeft="@drawable/tt_alert_selector" n0:drawablePadding="8.0dp" />
+                <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_999" n0:id="@id/adapter_no_fit" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="The current Adapter version is not within the recommended version range" />
+                <View n0:layout_width="match_parent" n0:layout_height="12.0dp" />
+            </LinearLayout>
+            <View n0:background="#ebebeb" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

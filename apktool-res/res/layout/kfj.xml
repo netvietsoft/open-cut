@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/guideline" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_end="88.0dp"
+      xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n2:textSize="14.0dp" n2:textColor="@color/knt" n2:id="@id/title" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:layout_marginTop="16.0dp" n2:layout_marginStart="24.0dp" n3:layout_constraintBottom_toTopOf="@id/content" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res/android" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n4:id="@id/title_qa" n4:visibility="invisible" n4:layout_width="15.0dp" n4:layout_height="15.0dp" n4:src="@drawable/qz_" n4:layout_marginStart="5.0dp" n5:layout_constraintBottom_toBottomOf="@id/title" n5:layout_constraintLeft_toRightOf="@id/title" n5:layout_constraintTop_toTopOf="@id/title"
+      xmlns:n4="http://schemas.android.com/apk/res/android" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n6:textSize="12.0dp" n6:textColor="#80bdd1db" n6:id="@id/content" n6:layout_width="0.0dp" n6:layout_height="wrap_content" n6:layout_marginTop="6.0dp" n6:layout_marginStart="24.0dp" n7:layout_constraintBottom_toTopOf="@id/summary" n7:layout_constraintEnd_toStartOf="@id/guideline" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/title" n7:layout_goneMarginBottom="16.0dp"
+      xmlns:n6="http://schemas.android.com/apk/res/android" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n8:textSize="12.0dp" n8:id="@id/summary" n8:visibility="gone" n8:layout_width="0.0dp" n8:layout_height="wrap_content" n8:layout_marginTop="6.0dp" n8:layout_marginBottom="16.0dp" n8:layout_marginStart="24.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toStartOf="@id/guideline" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toBottomOf="@id/content" n9:layout_goneMarginTop="6.0dp"
+      xmlns:n8="http://schemas.android.com/apk/res/android" xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaCheckBox n10:id="@id/checkbox" n10:layout_width="45.0dp" n10:layout_height="30.0dp" n10:button="@drawable/l1z" n10:track="@drawable/qlp" n10:layout_marginEnd="24.0dp" n11:layout_constraintBottom_toBottomOf="parent" n11:layout_constraintEnd_toEndOf="parent" n11:layout_constraintTop_toTopOf="parent"
+      xmlns:n10="http://schemas.android.com/apk/res/android" xmlns:n11="http://schemas.android.com/apk/res-auto" />
+</merge>

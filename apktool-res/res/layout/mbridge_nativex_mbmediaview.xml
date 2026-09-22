@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/mbridge_rl_mediaview_root" n0:background="#000000" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/mbridge_ll_playerview_container" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_centerInParent="true" />
+    <com.mbridge.msdk.videocommon.view.MyImageView n0:id="@id/mbridge_my_big_img" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:scaleType="fitXY" n0:layout_centerInParent="true" />
+    <RelativeLayout n0:gravity="center" n0:id="@id/mbridge_nativex_webview_layout" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.mbridge.msdk.nativex.view.WindVaneWebViewForNV n0:id="@id/mbridge_nativex_webview_layout_webview" n0:background="#ff0000" n0:visibility="invisible" n0:clickable="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_centerInParent="true" n0:layout_centerHorizontal="true" n0:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ProgressBar n0:id="@id/mbridge_native_pb" n0:visibility="gone" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+</RelativeLayout>

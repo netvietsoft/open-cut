@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_graffiti_pen_text_style_shadow_fragment_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ScrollView n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panel_container" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/textPenColorSelectLayout" n0:background="@color/kot" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto">
+                <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/btn_remove_color" n0:layout_width="38.0dp" n0:layout_height="38.0dp" n0:src="@drawable/rab" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="@id/colorPickerButton" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/colorPickerButton" />
+                <com.xt.retouch.edit.base.view.ColorSelectViewForPanel n0:id="@id/textPenPickColorView" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginStart="3.0dp" />
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/textPenColorList" n0:fadingEdgeLength="10.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never" n0:requiresFadingEdge="horizontal" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center_vertical" n0:id="@id/transparency_container" n0:layout_width="match_parent" n0:layout_height="45.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/textPenColorSelectLayout"
+              xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kwt" n0:gravity="start" n0:id="@id/transparency_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="@dimen/APKTOOL_RENAMED_0x7f070546" n0:text="@string/uku" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f070533" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" />
+                <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/transparency_slider" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" n2:APKTOOL_RENAMED_0x7f04043d="1" n2:kko="@color/kta" n2:kkt="@color/ktz" n2:APKTOOL_RENAMED_0x7f0406dd="100" n2:kn4="1" n2:kte="@string/APKTOOL_RENAMED_0x7f12447c" n2:kar="2" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center_vertical" n0:id="@id/blur_container" n0:layout_width="match_parent" n0:layout_height="45.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/transparency_container"
+              xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kwt" n0:gravity="start" n0:id="@id/blur_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="@dimen/APKTOOL_RENAMED_0x7f070546" n0:text="@string/thw" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f070533" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" />
+                <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/blur_slider" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" n3:APKTOOL_RENAMED_0x7f04043d="100" n3:kko="@color/kta" n3:kkt="@color/ktz" n3:APKTOOL_RENAMED_0x7f0406dd="100" n3:kn4="0" n3:kte="@string/APKTOOL_RENAMED_0x7f12447c" n3:kar="2" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center_vertical" n0:id="@id/distance_container" n0:layout_width="match_parent" n0:layout_height="45.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/blur_container"
+              xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kwt" n0:gravity="start" n0:id="@id/distance_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="@dimen/APKTOOL_RENAMED_0x7f070546" n0:text="@string/ss4" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f070533" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" />
+                <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/distance_slider" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" n4:APKTOOL_RENAMED_0x7f04043d="100" n4:kko="@color/kta" n4:kkt="@color/ktz" n4:APKTOOL_RENAMED_0x7f0406dd="100" n4:kn4="0" n4:kte="@string/APKTOOL_RENAMED_0x7f12447c" n4:kar="2" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center_vertical" n0:id="@id/angle_container" n0:layout_width="match_parent" n0:layout_height="45.0dp" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/distance_container"
+              xmlns:n5="http://schemas.android.com/apk/res-auto">
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kwt" n0:gravity="start" n0:id="@id/angle_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="@dimen/APKTOOL_RENAMED_0x7f070546" n0:text="@string/ss0" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f070533" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" />
+                <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/angle_slider" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" n5:APKTOOL_RENAMED_0x7f04043d="-25" n5:kko="@color/kta" n5:kkt="@color/ktz" n5:APKTOOL_RENAMED_0x7f0406dd="180" n5:kn4="-180" n5:kte="@string/APKTOOL_RENAMED_0x7f12447c" n5:kar="2" />
+            </LinearLayout>
+            <View n0:layout_width="match_parent" n0:layout_height="40.0dp" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/angle_container"
+              xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

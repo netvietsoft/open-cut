@@ -1,0 +1,19 @@
+id: TASK-014
+title: Tái dựng và Hoàn thiện Lõi Chỉnh sửa Video và các chức năng con/cháu (Video Editing Core & Sub-tools Parity)
+assigned_agent: Agent 3 (Frontend/Android)
+status: ready
+created_at: 2026-09-18T09:55:00Z
+scope:
+  files_allowed:
+    - apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java
+    - apps/android/app/src/main/java/com/nextai/opencut/domain/model/**
+acceptance_criteria:
+  - Bấm "Chỉnh sửa" mở Ribbon tầng 2 chứa đầy đủ các công cụ con chuẩn CapCut: Tách, Tốc độ, Hoạt ảnh, Xóa, Âm lượng, Cắt, Đảo ngược, Đóng băng.
+  - Chức năng "Tách" (Split): Chia clip đang chọn tại vị trí con trỏ playhead thành 2 clip độc lập, hiển thị ngay trên timeline filmstrip.
+  - Chức năng "Xóa" (Delete): Xóa clip đang được chọn, tự động tính lại tổng thời lượng và cập nhật filmstrip.
+  - Chức năng "Tốc độ" (Speed): Hiển thị thanh chọn tốc độ (0.5x, 1x, 1.5x, 2x), thay đổi thời lượng clip tương ứng.
+  - Chức năng "Âm lượng" (Volume): Hiển thị thanh trượt SeekBar âm lượng từ 0% đến 200%, cập nhật nhãn âm lượng.
+  - Chức năng "Tỷ lệ" (Ratio): Chuyển đổi khung hình canvas 9:16, 16:9, 1:1, 4:5 thực sự trên giao diện preview.
+verification:
+  test_type: automated_acceptance_and_instrumented
+  runner: scripts/test_acceptance_runner.ps1

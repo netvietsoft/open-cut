@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundCornerTextView2 n0:id="@id/slot_selected_border" n0:visibility="gone" n0:layout_width="68.0dp" n0:layout_height="68.0dp" n1:c7="@color/mk" n1:c-="4.0dp" n1:i1="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.RoundFrameLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="4.0dp" n2:i1="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent">
+            <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/slot_cover" n0:background="@color/l8" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:scaleType="centerCrop" />
+            <com.vega.ui.widget.RoundFrameLayout n0:layout_gravity="start|top" n0:id="@id/slot_index_container" n0:background="#6a6f7e4d" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginStart="6.0dp" n2:i1="4.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="#80ffffff" n0:gravity="center" n0:id="@id/slot_index" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:shadowRadius="2.0" n0:fontFamily="Albert Sans" n2:k1i="medium" />
+            </com.vega.ui.widget.RoundFrameLayout>
+        </com.vega.ui.widget.RoundFrameLayout>
+        <FrameLayout n0:id="@id/slot_delete" n0:visibility="gone" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_gravity="end|top" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081273" n0:scaleType="fitXY" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

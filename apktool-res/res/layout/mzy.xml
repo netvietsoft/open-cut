@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/kxw" n0:layout_width="268.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_close" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/r0n" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/mark_icon" n0:layout_width="208.0dp" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="10.0dp" n0:scaleType="center" n2:layout_constraintBottom_toBottomOf="@id/iv_close" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintTop_toTopOf="@id/iv_close"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.RoundImageView n0:id="@id/iv_image" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:src="@color/kr1" n0:scaleType="centerCrop" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n3:i_="5.0dp" n3:layout_constraintDimensionRatio="h,238:136" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/iv_close"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@color/ko7" n0:id="@id/tv_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:maxLines="1" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/iv_image"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_content_container" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <ScrollView n0:id="@id/sv_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent">
+            <TextView n0:textSize="12.0dp" n0:textColor="@color/ko7" n0:id="@id/tv_content" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:lineHeight="17.0dp" />
+        </ScrollView>
+        <ImageView n0:id="@id/iv_content_mask" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:src="@drawable/r0o" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_confirm_button_container" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/csl_content_container"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/tv_confirm" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:text="@string/tmw" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

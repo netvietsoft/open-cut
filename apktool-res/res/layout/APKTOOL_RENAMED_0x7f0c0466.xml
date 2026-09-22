@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="6.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/topView" n0:layout_width="match_parent" n0:layout_height="200.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="25.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/inspirationTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/pvu" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/topView"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/inspirationTvContent" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/pvt" n0:fontFamily="sans-serif-medium" n0:textFontWeight="500" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/inspirationTitle"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

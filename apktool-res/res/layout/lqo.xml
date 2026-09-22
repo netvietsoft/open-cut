@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:id="@id/digitalHumanPresenterContainer" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/dgPresenterLoading" n0:background="@drawable/lu8" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="20.0dp">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center_vertical" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="6.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="ad_script_loading/ai_loop_whiteBackground_b.json" n1:lottie_imageAssetsFolder="ad_script_loading/images" n1:lottie_loop="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="start|center" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qdi" n0:layout_marginEnd="2.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="start|center" n0:layout_gravity="center_vertical" n0:id="@id/dgPresenterLoadingProgress" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="" n0:layout_marginStart="2.0dp" n0:layout_marginEnd="8.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/dgPresenterFailed" n0:background="@drawable/lu8" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="20.0dp">
+        <ImageView n0:layout_gravity="start|center" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/ojk" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="6.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="start|center" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ljo" n0:layout_marginEnd="4.0dp" />
+        <View n0:layout_gravity="center_vertical" n0:background="@color/APKTOOL_RENAMED_0x7f06063a" n0:layout_width="1.0dp" n0:layout_height="10.0dp" />
+        <ImageView n0:layout_gravity="center_vertical" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/oi_" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="8.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/dgPresenterSuccessed" n0:background="@drawable/lu8" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="20.0dp">
+        <ImageView n0:layout_gravity="start|center" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/o4b" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="6.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="start|center" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/li-" n0:layout_marginEnd="4.0dp" />
+        <View n0:layout_gravity="center_vertical" n0:background="@color/APKTOOL_RENAMED_0x7f06063a" n0:layout_width="1.0dp" n0:layout_height="10.0dp" />
+    </LinearLayout>
+</LinearLayout>

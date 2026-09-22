@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/srl_classics_arrow" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginRight="20.0dp" n0:layout_toLeftOf="@id/srl_classics_title" n0:layout_centerVertical="true" n0:contentDescription="@android:string/untitled" n0:layout_marginEnd="20.0dp" n0:layout_toStartOf="@id/srl_classics_title" />
+    <ImageView n0:id="@id/srl_classics_progress" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginRight="20.0dp" n0:layout_toLeftOf="@id/srl_classics_title" n0:layout_centerVertical="true" n0:contentDescription="@android:string/untitled" n0:layout_marginEnd="20.0dp" n0:layout_toStartOf="@id/srl_classics_title" />
+    <TextView n0:textSize="15.0sp" n0:textColor="#666666" n0:id="@id/srl_classics_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q7s" n0:maxLines="1" n0:layout_centerInParent="true" />
+</merge>

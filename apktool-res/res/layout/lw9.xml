@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f081274" n0:paddingTop="20.0dp" n0:paddingBottom="34.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/selected_medias" n0:layout_width="match_parent" n0:layout_height="64.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.SemiBoldTextView n0:enabled="false" n0:textSize="14.0dp" n0:textColor="@color/zx" n0:gravity="center" n0:id="@id/btn_next" n0:background="@drawable/APKTOOL_RENAMED_0x7f081276" n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:minWidth="90.0dp" n0:minHeight="36.0dp" n0:text="@string/kf9" n0:layout_marginEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toBottomOf="@id/selected_medias"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/kgd" n0:layout_marginHorizontal="16.0dp" n3:layout_constrainedWidth="true" n3:layout_constraintEnd_toStartOf="@id/btn_next" n3:layout_constraintHorizontal_bias="0.0" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="@id/btn_next"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

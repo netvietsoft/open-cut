@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/constraint" n0:layout_width="match_parent" n0:layout_height="300.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/cancel" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kr3="none"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qj4" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c8" n0:id="@id/done" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/l46" n0:text="@string/l53" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:k1i="bold"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/materialSelectTip" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="48.0dp" n0:text="@string/qj6" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toBottomOf="@id/title"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.publish.template.publish.widget.MaterialSelectRecyclerView n0:id="@id/materialSelectView" n0:layout_width="wrap_content" n0:layout_height="100.0dp" n0:layout_marginTop="20.0dp" n5:layout_constraintLeft_toLeftOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toBottomOf="@id/materialSelectTip"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaCheckBox n0:textSize="12.0dp" n0:id="@id/cbAllSelect" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="27.0dp" n0:text="@string/qj1" n6:layout_constraintLeft_toLeftOf="parent" n6:layout_constraintRight_toRightOf="parent" n6:layout_constraintTop_toBottomOf="@id/materialSelectView" style="@style/APKTOOL_RENAMED_0x7f1304aa"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

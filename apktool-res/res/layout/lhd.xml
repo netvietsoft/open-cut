@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.image.edit.panel.element.ImageEditElementNestParent n0:id="@id/elements_panel_root" n0:background="@color/er" n0:layout_width="match_parent" n0:layout_height="346.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.image.edit.view.ImageEditTextTabListView n0:id="@id/rv_panel_tab" n0:layout_width="0.0dp" n0:layout_height="53.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n1:layout_constraintEnd_toStartOf="@id/iv_panel_confirm" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/iv_panel_confirm" n0:paddingTop="14.0dp" n0:paddingBottom="13.0dp" n0:layout_width="46.0dp" n0:layout_height="53.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082eb4" n0:paddingStart="10.0dp" n0:paddingEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.lvui.widget.TabIndicator n0:id="@id/tab_indicator" n0:layout_width="0.0dp" n0:layout_height="2.0dp" n3:APKTOOL_RENAMED_0x7f040594="@color/APKTOOL_RENAMED_0x7f0605c8" n3:layout_constraintBottom_toBottomOf="@id/rv_panel_tab" n3:layout_constraintEnd_toEndOf="@id/rv_panel_tab" n3:layout_constraintStart_toStartOf="@id/rv_panel_tab"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/divider_line" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n4:layout_constraintBottom_toBottomOf="@id/rv_panel_tab" n4:layout_constraintLeft_toLeftOf="@id/rv_panel_tab" n4:layout_constraintRight_toRightOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_text_input_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/rv_panel_tab"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.DisableScrollViewPager n0:id="@id/vp_elements_panel" n0:background="@color/er" n0:layout_width="match_parent" n0:layout_height="0.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintTop_toBottomOf="@id/fl_text_input_container"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/group_panel_header" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n7:constraint_referenced_ids="rv_panel_tab,tab_indicator,divider_line,iv_panel_confirm"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</com.vega.image.edit.panel.element.ImageEditElementNestParent>

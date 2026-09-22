@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/_v" n0:gravity="center_vertical" n0:id="@id/enterprise_searchView" n0:background="@drawable/p_7" n0:layout_width="270.0dp" n0:layout_height="32.0dp" n0:layout_marginTop="20.5dp" n0:text="@string/mr9" n0:drawablePadding="8.0dp" n0:drawableStart="@drawable/ofu" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="15.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ll_enterprise_filter" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginTop="20.5dp" n0:paddingHorizontal="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/enterprise_searchView" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/nh1" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l_z" n0:includeFontPadding="false" n0:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout n0:id="@id/enterprise_material_tabs" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="7.0dp" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/enterprise_searchView" n3:tabIndicatorHeight="0.0dp" n3:tabMaxWidth="200.0dp" n3:tabMinWidth="20.0dp" n3:tabMode="scrollable" n3:tabPaddingEnd="15.0dp" n3:tabPaddingStart="15.0dp" n3:tabRippleColor="@color/APKTOOL_RENAMED_0x7f060634" n3:tabSelectedTextColor="@color/knt" n3:tabTextColor="@color/_v"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.viewpager2.widget.ViewPager2 n0:id="@id/enterprise_material_view_pager" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="7.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/enterprise_material_tabs"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/zc" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/enterprise_remote_material_load_failed" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qnn" n0:drawablePadding="10.0dp" n0:drawableStart="@drawable/odn" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/enterpriseMaterialResultProgress" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" n6:lottie_autoPlay="true" n6:lottie_fileName="lv_loading.json" n6:lottie_loop="true"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_enterprise_filter_container" n0:background="@color/_y" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/enterprise_searchView"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="end|top" n0:id="@id/rv_enterprise_filter" n0:background="@drawable/lyq" n0:layout_width="212.0dp" n0:layout_height="179.0dp" n0:layout_marginTop="70.0dp" n0:layout_marginEnd="16.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

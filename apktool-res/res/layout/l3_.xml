@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/cl_filter_container" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/_3" n0:id="@id/tv_layout_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/lw0" n0:layout_marginHorizontal="16.0dp" n0:textFontWeight="500" />
+    <RadioGroup n0:orientation="horizontal" n0:id="@id/rg_layout_select_view" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintTop_toBottomOf="@id/tv_layout_title"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.IconRadioButton n0:id="@id/btn_linear" n0:background="@drawable/kwb" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:layout_weight="1.0" n0:drawableStart="@drawable/nm6" n0:layout_marginEnd="6.0dp" />
+        <com.vega.ui.widget.IconRadioButton n0:id="@id/btn_grid" n0:background="@drawable/kwb" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:layout_weight="1.0" n0:drawableStart="@drawable/nm5" n0:layout_marginStart="6.0dp" />
+    </RadioGroup>
+    <View n0:layout_width="match_parent" n0:layout_height="24.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/_3" n0:id="@id/tv_filter" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/oa-" n0:layout_marginHorizontal="16.0dp" n0:textFontWeight="500" />
+    <com.vega.property.optional.ui.common.view.FilterMaxHeightRecyclerView n0:id="@id/rv_filter_list" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:layout_marginBottom="20.0dp" n0:layout_marginHorizontal="10.0dp" />
+</LinearLayout>

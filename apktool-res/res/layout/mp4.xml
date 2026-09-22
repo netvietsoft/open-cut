@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_fragment_material_size_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/panel_height" n0:background="@color/kuf" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/iv_confirm"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_list" n0:paddingLeft="9.0dp" n0:paddingTop="6.0dp" n0:paddingRight="9.0dp" n0:paddingBottom="6.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:paddingHorizontal="9.0dp" n0:paddingVertical="6.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/v_divide" n0:background="#1affffff" n0:layout_width="0.0dp" n0:layout_height="1.0dp" n3:layout_constraintBottom_toTopOf="@id/rv_list" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_confirm" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/r8e" n4:layout_constraintBottom_toTopOf="@id/v_divide" n4:layout_constraintEnd_toEndOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ssb" n5:layout_constraintBottom_toBottomOf="@id/iv_confirm" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="@id/iv_confirm"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

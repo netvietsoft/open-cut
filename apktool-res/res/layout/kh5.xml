@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/selectedFg" n0:background="@drawable/mq3" n0:layout_width="68.0dp" n0:layout_height="68.0dp" />
+    <androidx.cardview.widget.CardView n0:layout_gravity="center" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:layout_marginStart="0.0dp" n0:layout_marginEnd="0.0dp" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/placeholder" n0:background="#2a2b2e" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/mediaThumbnailIv" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <TextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="#8cffffff" n0:gravity="center" n0:id="@id/media_index" n0:background="@drawable/ltv" n0:visibility="gone" n0:layout_width="13.0dp" n0:layout_height="13.0dp" n0:layout_marginTop="4.0dp" n0:shadowColor="#66000000" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="4.0" n0:layout_marginStart="4.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+    <com.vega.ui.state.pressed.PressedStateImageView n0:layout_gravity="end|top" n0:id="@id/deselectedIv" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n0:layout_marginTop="-5.0dp" n0:src="@drawable/qzs" n0:scaleType="centerInside" n0:layout_marginEnd="-5.0dp" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

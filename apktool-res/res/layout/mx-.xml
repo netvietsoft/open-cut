@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/effectItem" n0:tag="layout/xt_layout_item_filter_0" n0:layout_width="54.0dp" n0:layout_height="70.0dp" n0:layout_marginStart="3.0dp" n0:layout_marginEnd="3.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.RoundLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n1:APKTOOL_RENAMED_0x7f0407f5="6.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/filterImg" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.xt.retouch.baseui.view.RoundLayout>
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/downloadImg" n0:tag="binding_1" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/q_g" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/loading" n0:tag="binding_2" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:lottie_autoPlay="true" n3:lottie_loop="true"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:tag="binding_3" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/rad" n0:scaleType="centerCrop" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:id="@id/down" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/filterLabelBg" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="15.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.MarqueeTextView n0:textSize="10.0sp" n0:textColor="@android:color/white" n0:gravity="center" n0:id="@id/filterLabel" n0:tag="binding_4" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:textAlignment="center" n7:layout_constraintBottom_toBottomOf="@id/filterLabelBg" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:tag="binding_5" n0:background="@drawable/r-j" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:layout_width="15.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/r6-" n0:layout_marginEnd="3.0dp" />
+    </FrameLayout>
+    <View n0:id="@id/select_bg" n0:tag="binding_6" n0:background="@drawable/q8j" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

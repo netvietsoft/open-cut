@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:ellipsize="end" n0:gravity="center" n0:id="@id/jumpAwemeTips" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="110.0dp" n0:text="@string/l-p" n0:paddingHorizontal="16.0dp" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/exportTrialProTip" n0:background="@drawable/lae" n0:padding="8.0dp" n0:paddingBottom="20.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:layout_marginBottom="62.0dp" n0:layout_marginHorizontal="10.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0sp" n0:textColor="#ffffff" n0:id="@id/freeExportTrialText" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/iv_mark_view" n2:layout_constraintTop_toTopOf="parent" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_mark_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="@id/freeExportTrialText" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/freeExportTrialText" n2:kml="small" n2:kr0="vip" />
+        <TextView n0:textSize="12.0dp" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/joinProBtn" n0:background="@drawable/laf" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="wrap_content" n0:layout_height="22.0dp" n0:layout_marginTop="2.0dp" n0:text="@string/kcp" n0:layout_marginEnd="22.0dp" n0:paddingHorizontal="8.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toBottomOf="@id/freeExportTrialText" />
+        <ImageView n0:id="@id/closeCardBtn" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/nk4" n0:layout_marginStart="8.0dp" n2:layout_constraintBottom_toBottomOf="@id/joinProBtn" n2:layout_constraintStart_toEndOf="@id/joinProBtn" n2:layout_constraintTop_toTopOf="@id/joinProBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

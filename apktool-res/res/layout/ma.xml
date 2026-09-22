@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="44.0dp">
+        <com.vega.ui.AlphaButton n0:id="@id/brandKitBack" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/p4o" n0:layout_marginStart="6.0dp" />
+        <LinearLayout n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f121a17" n0:singleLine="true" n1:k1i="bold" n1:k1j="headline"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:id="@id/brandKitHelpIcon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/l5c" n0:layout_marginStart="4.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/tabLayout_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.vega.cloud.widget.tablayout.AnchorTabLayout n0:id="@id/atl_tabs" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:paddingHorizontal="16.0dp" n2:layout_constraintTop_toTopOf="parent" n2:kn9="44.0dp" n2:tabIndicatorColor="#090c14" n2:tabIndicatorFullWidth="false" n2:tabMode="scrollable" n2:tabPaddingEnd="12.0dp" n2:tabPaddingStart="12.0dp" n2:tabSelectedTextColor="#090c14" n2:tabTextAppearance="@style/APKTOOL_RENAMED_0x7f130512" n2:tabTextColor="#b2141d2d"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <androidx.viewpager2.widget.ViewPager2 n0:id="@id/vp_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="12.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/atl_tabs"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout n0:id="@id/cloud_brand_kit_fragment_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <FrameLayout n0:id="@id/loadingContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/kcj" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:gravity="center" n0:id="@id/nick_name_text" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="30.0dp" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/manager_layout" n0:layout_width="match_parent" n0:layout_height="64.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:id="@id/manager_text" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/q_h" n0:layout_weight="1.0" />
+        <ImageView n0:id="@id/manager_check" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/nob" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/helper_layout" n0:layout_width="match_parent" n0:layout_height="64.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:id="@id/helper_text" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/q_f" n0:layout_weight="1.0" />
+        <ImageView n0:id="@id/helper_check" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/nob" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/member_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="64.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:id="@id/member_text" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/q_d" n0:layout_weight="1.0" />
+        <ImageView n0:id="@id/member_check" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/nob" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/remove_from_group" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c7c" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="29.0dp" n0:text="@string/qdv" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+</LinearLayout>

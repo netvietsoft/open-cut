@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/n32" />
+    <item android:gravity="end|top">
+        <shape android:shape="oval">
+            <solid android:color="@color/APKTOOL_RENAMED_0x7f060620" />
+            <size android:height="6.0dp" android:width="6.0dp" />
+        </shape>
+    </item>
+</layer-list>

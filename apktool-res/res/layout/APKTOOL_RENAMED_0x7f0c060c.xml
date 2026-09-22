@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@drawable/lcl" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/knt" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="10.0dp" n0:text="@string/l24" n1:layout_constraintBottom_toTopOf="@id/record_timer_track" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.recorder.widget.RecordTimerTrackLayout n0:id="@id/record_timer_track" n0:layout_width="match_parent" n0:layout_height="85.0dp" n0:layout_marginBottom="10.0dp" n2:layout_constraintBottom_toTopOf="@id/btn_start_record"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0sp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="center" n0:id="@id/btn_start_record" n0:background="@drawable/lcm" n0:layout_width="168.0dp" n0:layout_height="40.0dp" n0:layout_marginBottom="15.0dp" n0:text="@string/q7h" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:kr3="button"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

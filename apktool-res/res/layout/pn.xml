@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/cloud_space_layout" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/title_layout" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_p_base_back" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/p4o" n0:layout_marginStart="6.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:id="@id/tv_p_base_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n88" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="bold" />
+        <ImageView n0:id="@id/img_add" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/ptn" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.property.optional.ui.common.view.PropertyListEmptyView n0:id="@id/space_list_empty" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <include n0:id="@id/space_loading" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintTop_toBottomOf="@id/title_layout" layout="@layout/ln3"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/space_list_refresh" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="8.0dp" n3:layout_behavior="@string/appbar_scrolling_view_behavior" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toBottomOf="@id/title_layout"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.refresh.RefreshHeaderView n0:layout_width="match_parent" n0:layout_height="60.0dp" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/space_list_rv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

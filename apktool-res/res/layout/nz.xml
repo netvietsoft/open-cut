@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/export_root" n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/mainBackground" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:scaleType="centerCrop" n1:layout_constraintDimensionRatio="3:4" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.DominantColorBlurBackgroundView n0:id="@id/blurBg" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:APKTOOL_RENAMED_0x7f04049d="false" n2:APKTOOL_RENAMED_0x7f0404f8="255" n2:APKTOOL_RENAMED_0x7f0404f9="0.3" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:knt="0.35"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/topContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:fillViewport="true" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/topContainer"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <FrameLayout n0:id="@id/mainContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+            <FrameLayout n0:id="@id/container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="40.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/mainContainer" />
+            <LinearLayout n0:orientation="vertical" n0:id="@id/new_result_page" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent">
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0c045e" />
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0c0460" />
+                <include layout="@layout/APKTOOL_RENAMED_0x7f0c045c" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <FrameLayout n0:id="@id/fullFragmentContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/mask" n0:background="@color/_y" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:layout_gravity="center|bottom" n0:id="@id/publish_template_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="200.0dp" n6:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/export_link_container" n0:layout_width="match_parent" n0:layout_height="match_parent" n7:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fragmentContainerAccount" n0:layout_width="match_parent" n0:layout_height="match_parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

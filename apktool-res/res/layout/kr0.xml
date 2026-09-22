@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/itemContainer" n0:layout_width="76.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:background="@drawable/ky8" n0:padding="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <FrameLayout n0:background="@drawable/ky6" n0:layout_width="68.0dp" n0:layout_height="68.0dp">
+            <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/itemImage" n0:background="@drawable/ky4" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:scaleType="centerCrop" n1:actualImageScaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:roundedCornerRadius="8.0dp"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="end|top" n0:id="@id/businessMarkView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="4.0dp" n2:kml="small" n2:kmm="mix" n2:kmn="light"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@drawable/qn4" n0:ellipsize="end" n0:gravity="center" n0:id="@id/itemTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:maxLines="2" />
+</LinearLayout>

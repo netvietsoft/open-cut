@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_fragment_bg_mix_feat_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/panel" n0:background="@color/ku-" n0:layout_width="match_parent" n0:layout_height="@dimen/ew" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="horizontal" n0:id="@id/tab_container" n0:layout_width="match_parent" n0:layout_height="48.0dp" />
+        <View n0:background="@color/ksd" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/resource_pager" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </LinearLayout>
+    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:id="@id/iv_confirm" n0:visibility="gone" n0:layout_width="@dimen/hx" n0:layout_height="@dimen/hx" n0:layout_marginTop="@dimen/hw" n0:src="@drawable/r2b" n0:contentDescription="@string/swe" n0:layout_marginEnd="2.0dp" n2:layout_constraintEnd_toEndOf="@id/panel" n2:layout_constraintTop_toTopOf="@id/panel"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/cutout_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toTopOf="@id/panel" n3:layout_constraintEnd_toEndOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/rly" n0:layout_marginEnd="8.0dp" />
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/kxw" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tw_" />
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/cutout_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

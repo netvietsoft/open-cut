@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:layout_marginVertical="6.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/coverContainer" n0:padding="4.0dp" n0:layout_width="match_parent" n0:layout_height="115.0dp">
+        <View n0:id="@id/coverBackgroundView" n0:background="@drawable/k6m" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/firstCoverImage" n0:layout_width="40.0dp" n0:layout_height="53.0dp" n0:layout_marginStart="6.0dp" n1:layout_constraintBottom_toBottomOf="@id/coverBackgroundView" n1:layout_constraintStart_toStartOf="@id/coverBackgroundView" n1:layout_constraintTop_toTopOf="@id/coverBackgroundView" n1:roundBottomLeft="true" n1:roundBottomRight="true" n1:roundTopLeft="true" n1:roundTopRight="true" n1:roundedCornerRadius="6.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/lastCoverImage" n0:layout_width="40.0dp" n0:layout_height="53.0dp" n0:layout_marginEnd="6.0dp" n2:layout_constraintBottom_toBottomOf="@id/coverBackgroundView" n2:layout_constraintEnd_toEndOf="@id/coverBackgroundView" n2:layout_constraintTop_toTopOf="@id/coverBackgroundView" n2:roundBottomLeft="true" n2:roundBottomRight="true" n2:roundTopLeft="true" n2:roundTopRight="true" n2:roundedCornerRadius="6.0dp"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/editLayout" n0:background="@drawable/k9_" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/om3" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#ffffff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/riw" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="500" n3:k1i="medium"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0sp" n0:textColor="#ffffff" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/nameText" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="88.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="400" n4:k1i="regular"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

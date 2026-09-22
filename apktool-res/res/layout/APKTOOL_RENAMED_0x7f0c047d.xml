@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_feed_label" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.feedx.util.EdgeTransparentView n0:id="@id/labelRecyclerViewLayoutEdge" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="34.0dp" n1:APKTOOL_RENAMED_0x7f040483="left|right" n1:APKTOOL_RENAMED_0x7f040484="10.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.scroll.OverScrollLayout n0:id="@id/labelRecyclerViewLayout" n0:layout_width="match_parent" n0:layout_height="34.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kp-="35.0dp">
+            <com.vega.ui.widget.scroll.HorizontalRecyclerView n0:id="@id/labelRecyclerView" n0:layout_width="match_parent" n0:layout_height="34.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </com.vega.ui.widget.scroll.OverScrollLayout>
+    </com.vega.feedx.util.EdgeTransparentView>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/feedBusinessBtn" n0:background="@drawable/kin" n0:visibility="gone" n0:layout_width="279.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="@id/labelRecyclerViewLayoutEdge" n2:layout_constraintTop_toBottomOf="@id/labelRecyclerViewLayoutEdge"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/ic_feed_more_btn" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/ne9" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:ellipsize="end" n0:id="@id/tv_feed_more_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ocp" n0:layout_marginStart="8.0dp" n2:k1i="medium" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:gravity="center" n0:id="@id/layoutRoot" n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_above="@id/bottomBarRoot" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.gesture.VideoEditorGestureLayout n0:id="@id/editPreviewRoot" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <com.vega.edit.view.VideoBitmapPreviewView n0:id="@id/previewView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            <com.vega.edit.view.CenterMaskView n0:id="@id/maskView" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:f-="@color/knt" n1:APKTOOL_RENAMED_0x7f040395="2.0dp" n1:APKTOOL_RENAMED_0x7f040396="99" />
+            <ImageView n0:layout_gravity="center" n0:id="@id/previewStart" n0:background="@drawable/lrn" n0:padding="18.0dp" n0:visibility="gone" n0:layout_width="65.0dp" n0:layout_height="65.0dp" n0:src="@drawable/qaq" />
+        </com.vega.ui.gesture.VideoEditorGestureLayout>
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/cutSameTip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="18.0dp" n0:layout_marginEnd="18.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottomBarRoot" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/editSelectFrameRoot" n0:layout_width="match_parent" n0:layout_height="130.0dp" n2:layout_constraintBottom_toTopOf="@id/backBarRoot"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <com.vega.edit.view.SingleSelectFrameView n0:id="@id/editSelectFrame" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="22.0dp" n2:layout_constraintTop_toTopOf="parent" />
+            <com.vega.theme.text.VegaTextView n0:id="@id/editVideoDuration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="13.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/editSelectFrame" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout n0:id="@id/backBarRoot" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/cancelEdit" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/qzf" n3:kr3="button" />
+            <FrameLayout n0:id="@id/confirmContainer" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true">
+                <com.vega.ui.state.pressed.PressedStateButton n0:textSize="14.0dp" n0:textColor="@color/knt" n0:layout_gravity="center_vertical" n0:id="@id/select_next_step" n0:background="@drawable/qkc" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:minWidth="0.0dp" n0:minHeight="0.0dp" n0:text="@string/lz6" n0:paddingHorizontal="16.0dp" />
+                <com.vega.ui.state.pressed.PressedStateImageView n0:layout_gravity="center_vertical" n0:id="@id/doneEdit" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/l_t" n0:scaleType="center" n3:kr3="none" />
+            </FrameLayout>
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/vj" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/cutSameBottomTip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerVertical="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="18.0dp" n0:layout_marginEnd="18.0dp" n0:layout_toStartOf="@id/confirmContainer" n0:layout_toEndOf="@id/cancelEdit" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

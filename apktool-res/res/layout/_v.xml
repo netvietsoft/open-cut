@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/reward_ad_bottom_carousel_container" n0:paddingBottom="@dimen/sq" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="@dimen/r3" n0:paddingEnd="@dimen/r3"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/reward_ad_carousel_dot_indicator" n0:layout_width="match_parent" n0:layout_height="@dimen/r8" n0:layout_marginBottom="@dimen/sq" n1:layout_constraintBottom_toTopOf="@id/reward_ad_bottom_carousel_flag_container" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.ss.android.ugc.aweme.rich.reward.ui.carousel.CarouselDotIndicatorView n0:layout_gravity="center" n0:id="@id/reward_ad_carousel_dot_indicator_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/reward_ad_bottom_carousel_flag_container" n0:layout_width="0.0dp" n0:layout_height="@dimen/r6" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.bytedance.tux.icon.TuxIconView n0:id="@id/reward_ad_bottom_carousel_flag_icon" n0:layout_width="@dimen/r3" n0:layout_height="@dimen/r3" n0:layout_marginStart="@dimen/sl" n2:k0b="?kw" />
+        <com.bytedance.tux.input.TuxTextView n0:textColor="?kw" n0:id="@id/reward_ad_bottom_carousel_flag_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f070165" style="@style/t9" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

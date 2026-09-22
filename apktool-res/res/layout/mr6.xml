@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/recommend_size_item" n0:tag="layout/xt_item_background_recommend_size_0" n0:layout_width="56.0dp" n0:layout_height="match_parent" n0:layout_marginStart="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/icon_recommend_size" n0:layout_width="@dimen/j0" n0:layout_height="@dimen/j0" n1:layout_constraintBottom_toTopOf="@id/text_recommend_size" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="10.0sp" n0:textColor="@color/kxw" n0:ellipsize="none" n0:gravity="center_horizontal" n0:id="@id/text_recommend_size" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:maxLines="2" n0:singleLine="false" n0:inputType="textMultiLine" n2:autoSizeMaxTextSize="10.0sp" n2:autoSizeMinTextSize="5.0sp" n2:bp="1.0sp" n2:autoSizeTextType="uniform" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/icon_recommend_size"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

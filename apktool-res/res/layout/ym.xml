@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/tab_bg_view" n0:background="@drawable/lck" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/tab_dot_indicator" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/tab_content" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toTopOf="@id/tab_dot_indicator" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/tab_dot_indicator" n0:background="@drawable/APKTOOL_RENAMED_0x7f081015" n0:visibility="gone" n0:layout_width="4.0dp" n0:layout_height="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

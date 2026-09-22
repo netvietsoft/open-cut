@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.audio.widget.MusicImportTab n0:id="@id/musicImportTab" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n1:APKTOOL_RENAMED_0x7f0405a2="@color/y1" n1:APKTOOL_RENAMED_0x7f0405a4="full" n1:APKTOOL_RENAMED_0x7f0405a5="@color/APKTOOL_RENAMED_0x7f060638"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <ImageButton n0:id="@id/add_music_first_level_favorite" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:src="@drawable/sk" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/add_music_import_music" n1:layout_constraintHorizontal_weight="1.0" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <ImageButton n0:id="@id/add_music_import_music" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:src="@drawable/r6" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintHorizontal_weight="1.0" n1:layout_constraintStart_toEndOf="@id/add_music_first_level_favorite" n1:layout_constraintTop_toTopOf="parent" />
+</com.vega.audio.widget.MusicImportTab>

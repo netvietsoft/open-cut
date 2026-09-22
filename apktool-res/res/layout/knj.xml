@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="80.0dp" n0:layout_height="80.0dp" n0:layout_marginEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_gravity="start|bottom" n0:background="@drawable/_4" n0:layout_width="72.0dp" n0:layout_height="72.0dp" n0:clipToOutline="true">
+        <ImageView n0:id="@id/feedback_attachment_cover" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/pv0" n0:scaleType="centerCrop" n0:adjustViewBounds="true" />
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/feedback_attachment_file_info" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp">
+            <TextView n0:textSize="11.0sp" n0:textStyle="bold" n0:textColor="#007aff" n0:id="@id/feedback_attachment_file_ext" n0:background="@drawable/APKTOOL_RENAMED_0x7f080665" n0:paddingTop="2.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" />
+            <TextView n0:textSize="11.0sp" n0:textStyle="bold" n0:textColor="#111827" n0:ellipsize="end" n0:gravity="center" n0:id="@id/feedback_attachment_file_name" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxLines="2" />
+        </LinearLayout>
+        <ImageView n0:layout_gravity="center" n0:id="@id/feedback_attachment_play" n0:visibility="gone" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/pmc" n0:contentDescription="@null" />
+    </FrameLayout>
+    <ImageView n0:layout_gravity="end|top" n0:id="@id/feedback_attachment_delete" n0:background="@drawable/_5" n0:padding="6.0dp" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/mge" n0:scaleType="center" n0:tint="#344054" n0:contentDescription="@null" n0:elevation="2.0dp" />
+</FrameLayout>

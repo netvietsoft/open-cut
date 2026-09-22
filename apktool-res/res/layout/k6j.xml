@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/replicateNextVideoGuide" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="62.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/ivReplicateGuide" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="11.0dp" n0:src="@drawable/oqa" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_gravity="center_horizontal" n0:id="@id/tvReplicateGuide" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qn6" />
+</LinearLayout>

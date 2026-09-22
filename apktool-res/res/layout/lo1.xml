@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="vertical" n0:background="@color/j" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center" n0:id="@id/iv_warning" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/por" n1:kd8="@color/l_"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/ml" n0:gravity="center" n0:paddingLeft="40.0dp" n0:paddingRight="40.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/nbx" n0:paddingHorizontal="40.0dp" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/mp" n0:gravity="center" n0:paddingLeft="40.0dp" n0:paddingRight="40.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/nbw" n0:paddingHorizontal="40.0dp" n3:k1i="medium"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaTextButton n0:textSize="14.0sp" n0:textColor="@color/ml" n0:gravity="center" n0:id="@id/btn_try_again" n0:background="@drawable/k1h" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/nbv" n0:textAllCaps="false" n0:paddingHorizontal="16.0dp" />
+</LinearLayout>

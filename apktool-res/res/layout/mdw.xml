@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ScrollView n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/xt_watermark_full_screen_setting_layout" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/xt_watermark_slider_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto">
+                <LinearLayout n0:orientation="horizontal" n0:id="@id/xt_watermark_full_screen_switch_layout" n0:layout_width="match_parent" n0:layout_height="52.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                    <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:layout_gravity="center_vertical" n0:id="@id/xt_watermark_full_screen_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uoe" n0:layout_weight="1.0" />
+                    <Switch n0:layout_gravity="center_vertical" n0:id="@id/xt_watermark_full_screen_switch" n0:layout_width="44.0dp" n0:layout_height="24.0dp" n0:checked="false" n0:thumb="@drawable/r-z" n0:track="@drawable/r-b" />
+                </LinearLayout>
+                <LinearLayout n0:orientation="vertical" n0:id="@id/xt_watermark_label_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/xt_watermark_full_screen_switch_layout">
+                    <TextView n0:textSize="12.0dp" n0:textColor="@color/kxq" n0:gravity="left|center" n0:id="@id/xt_watermark_tv_scale" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:maxWidth="100.0dp" n0:text="@string/uog" n0:maxLines="1" n1:layout_constraintStart_toStartOf="parent" />
+                    <TextView n0:textSize="12.0dp" n0:textColor="@color/kxq" n0:gravity="left|center" n0:id="@id/xt_watermark_tv_space" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:maxWidth="100.0dp" n0:text="@string/uof" n0:maxLines="1" n1:layout_constraintStart_toStartOf="parent" />
+                    <TextView n0:textSize="12.0dp" n0:textColor="@color/kxq" n0:gravity="left|center" n0:id="@id/xt_watermark_tv_rotate" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:maxWidth="100.0dp" n0:text="@string/uoh" n0:maxLines="1" n1:layout_constraintStart_toStartOf="parent" />
+                    <TextView n0:textSize="12.0dp" n0:textColor="@color/kxq" n0:gravity="left|center" n0:id="@id/xt_watermark_tv_intertwine" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:maxWidth="100.0dp" n0:text="@string/uod" n0:maxLines="1" n1:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+                <LinearLayout n0:orientation="vertical" n0:id="@id/xt_watermark_slider_container" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="8.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/xt_watermark_label_container" n1:layout_constraintTop_toBottomOf="@id/xt_watermark_full_screen_switch_layout">
+                    <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_watermark_slider_scale" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:layout_marginTop="14.0dp" n0:layout_marginBottom="14.0dp" n1:APKTOOL_RENAMED_0x7f040545="8.0dp" n1:kko="@color/kvc" n1:kkt="@color/kw4" n1:APKTOOL_RENAMED_0x7f0406dd="200" n1:kn4="20" n1:kn-="16" n1:kar="2" />
+                    <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_watermark_slider_space" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:layout_marginTop="14.0dp" n0:layout_marginBottom="14.0dp" n1:APKTOOL_RENAMED_0x7f040545="8.0dp" n1:kko="@color/kvc" n1:kkt="@color/kw4" n1:APKTOOL_RENAMED_0x7f0406dd="300" n1:kn4="0" n1:kn-="16" n1:kar="2" />
+                    <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_watermark_slider_rotate" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:layout_marginTop="14.0dp" n0:layout_marginBottom="14.0dp" n1:APKTOOL_RENAMED_0x7f040545="8.0dp" n1:kko="@color/kvc" n1:kkt="@color/kw4" n1:APKTOOL_RENAMED_0x7f0406dd="180" n1:kn4="-180" n1:kn-="16" n1:kar="2" />
+                    <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_watermark_slider_intertwine" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:layout_marginTop="14.0dp" n0:layout_marginBottom="14.0dp" n1:APKTOOL_RENAMED_0x7f040545="8.0dp" n1:kko="@color/kvc" n1:kkt="@color/kw4" n1:APKTOOL_RENAMED_0x7f0406dd="100" n1:kn4="0" n1:kn-="16" n1:kar="2" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View n0:layout_width="match_parent" n0:layout_height="44.0dp" n2:layout_constraintTop_toBottomOf="@id/xt_watermark_slider_layout"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ic_record_edit_back" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="2.0dp" n0:src="@drawable/xu" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/y1" n0:gravity="center" n0:id="@id/text_save" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qgc" n0:layout_marginEnd="10.0dp" n2:layout_constraintBottom_toBottomOf="@id/ic_record_edit_back" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/ic_record_edit_back"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.cardview.widget.CardView n0:textSize="16.0dp" n0:id="@id/ly_edit_content" n0:background="#f6f6f6" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n3:cardCornerRadius="8.0dp" n3:cardElevation="0.0dp" n3:layout_constraintBottom_toTopOf="@id/keyboardPlaceholderView" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/ic_record_edit_back"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ScrollView n0:id="@id/edittext_scroll_view" n0:background="@color/APKTOOL_RENAMED_0x7f06022c" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never">
+            <com.vega.adeditorapi.view.LimitInputExpandEditText n0:textSize="16.0dp" n0:textColor="@color/u9" n0:textColorHighlight="#66fccf15" n0:textColorHint="@color/wj" n0:gravity="start|top" n0:id="@id/editContentTv" n0:background="@null" n0:paddingTop="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:hint="@string/lua" n0:textSelectHandleLeft="@drawable/qkv" n0:textSelectHandleRight="@drawable/qkd" n0:textSelectHandle="@drawable/qka" n0:textCursorDrawable="@drawable/qbc" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+    <View n0:id="@id/keyboardPlaceholderView" n0:layout_width="0.0dp" n0:layout_height="@dimen/tm" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

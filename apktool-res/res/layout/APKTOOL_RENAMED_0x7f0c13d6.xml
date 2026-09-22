@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_fragment_palette_0" n0:background="@color/kw0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/kot" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="24.0dp">
+        <com.xt.retouch.baseui.view.RoundLayout n0:id="@id/paletteTouchArea" n0:layout_width="match_parent" n0:layout_height="140.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" n1:layout_constraintTop_toTopOf="parent" n1:APKTOOL_RENAMED_0x7f0407f5="4.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <View n0:background="@drawable/APKTOOL_RENAMED_0x7f0831e5" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/paletteTouchArea" n2:layout_constraintEnd_toEndOf="@id/paletteTouchArea" n2:layout_constraintStart_toStartOf="@id/paletteTouchArea" n2:layout_constraintTop_toTopOf="@id/paletteTouchArea"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/hueView" n0:tag="binding_1" n0:layout_width="0.0dp" n0:layout_height="2.0dp" n3:layout_constraintBottom_toBottomOf="@id/hueTouchArea" n3:layout_constraintEnd_toEndOf="@id/hueTouchArea" n3:layout_constraintStart_toStartOf="@id/hueTouchArea" n3:layout_constraintTop_toTopOf="@id/hueTouchArea"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/hueTouchArea" n0:tag="binding_2" n0:layout_width="match_parent" n0:layout_height="18.0dp" n0:layout_marginTop="15.0dp" n0:layout_marginStart="25.0dp" n0:layout_marginEnd="25.0dp" n4:layout_constraintTop_toBottomOf="@id/paletteTouchArea"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.edit.base.view.ColorView n0:id="@id/hueThumb" n0:tag="binding_3" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n5:j1="@color/kxw" n5:j2="1.0dp" n5:APKTOOL_RENAMED_0x7f0405e0="true" n5:layout_constraintBottom_toBottomOf="@id/hueTouchArea" n5:layout_constraintEnd_toEndOf="@id/hueTouchArea" n5:layout_constraintStart_toStartOf="@id/hueTouchArea" n5:layout_constraintTop_toTopOf="@id/hueTouchArea" n5:k1a="0.0dp"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.edit.base.view.ColorView n0:id="@id/addToPref" n0:tag="binding_4" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:layout_marginTop="30.0dp" n0:layout_marginStart="16.0dp" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/hueView"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:tag="binding_5" n0:padding="6.5dp" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/rlu" n7:layout_constraintBottom_toBottomOf="@id/addToPref" n7:layout_constraintEnd_toEndOf="@id/addToPref" n7:layout_constraintStart_toStartOf="@id/addToPref" n7:layout_constraintTop_toTopOf="@id/addToPref"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/prefColorList" n0:tag="binding_6" n0:fadingEdgeLength="10.0dp" n0:layout_width="0.0dp" n0:layout_height="45.0dp" n0:overScrollMode="never" n0:requiresFadingEdge="horizontal" n8:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toEndOf="@id/addToPref" n8:layout_constraintTop_toTopOf="@id/addToPref"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        <Button n0:textSize="14.0sp" n0:textColor="@color/ks4" n0:id="@id/paletteDone" n0:background="@drawable/q6h" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:layout_marginBottom="34.0dp" n0:text="@string/tms" n0:layout_marginStart="25.0dp" n0:layout_marginEnd="25.0dp" n9:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.xt.retouch.baseui.colorpick.ColorPreviewViewV2 n0:layout_gravity="center_horizontal" n0:id="@id/pickView" n0:tag="binding_7" n0:layout_width="31.0dp" n0:layout_height="52.0dp" n0:layout_marginTop="70.0dp" />
+</FrameLayout>

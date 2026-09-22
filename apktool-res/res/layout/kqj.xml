@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundLinearLayout n0:orientation="vertical" n0:background="@color/nr" n0:paddingLeft="8.0dp" n0:paddingTop="5.0dp" n0:paddingRight="8.0dp" n0:paddingBottom="5.0dp" n0:layout_width="120.0dp" n0:layout_height="72.0dp" n0:layout_marginBottom="8.0dp" n0:paddingHorizontal="8.0dp" n0:paddingVertical="5.0dp" n1:i1="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mm" n0:ellipsize="end" n0:id="@id/file_name" n0:layout_width="wrap_content" n0:layout_height="0.0dp" n0:maxLines="2" n0:layout_weight="1.0" n1:k1i="medium" />
+    <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="bottom" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp">
+        <com.vega.ui.widget.RoundCornerImageView n0:id="@id/file_type_icon" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:importantForAccessibility="no" n1:_5="2.0dp" n1:klh="2.0dp" n1:ktn="2.0dp" n1:kuf="2.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mo" n0:id="@id/file_extension" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" n1:k1i="medium" />
+    </LinearLayout>
+</com.vega.ui.widget.RoundLinearLayout>

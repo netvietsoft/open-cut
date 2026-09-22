@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/kcz" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginHorizontal="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateTextView n0:id="@id/copyBtn" n0:text="@string/lbd" n1:kr3="list" style="@style/APKTOOL_RENAMED_0x7f1304d2"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateRelativeLayout n0:id="@id/stickBtn" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <View style="@style/APKTOOL_RENAMED_0x7f13052d" />
+        <com.vega.theme.text.VegaTextView n0:text="@string/q77" style="@style/APKTOOL_RENAMED_0x7f1304d2" />
+    </com.vega.ui.state.pressed.PressedStateRelativeLayout>
+    <com.vega.ui.state.pressed.PressedStateRelativeLayout n0:id="@id/stickCancelBtn" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:kr3="button"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <View style="@style/APKTOOL_RENAMED_0x7f13052d" />
+        <com.vega.theme.text.VegaTextView n0:text="@string/APKTOOL_RENAMED_0x7f12058e" style="@style/APKTOOL_RENAMED_0x7f1304d2" />
+    </com.vega.ui.state.pressed.PressedStateRelativeLayout>
+    <com.vega.ui.state.pressed.PressedStateRelativeLayout n0:id="@id/deleteBtn" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:kr3="button"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <View style="@style/APKTOOL_RENAMED_0x7f13052d" />
+        <com.vega.theme.text.VegaTextView n0:text="@string/lg-" style="@style/APKTOOL_RENAMED_0x7f1304d2" />
+    </com.vega.ui.state.pressed.PressedStateRelativeLayout>
+    <com.vega.ui.state.pressed.PressedStateRelativeLayout n0:id="@id/reportBtn" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:kr3="list"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <View style="@style/APKTOOL_RENAMED_0x7f13052d" />
+        <com.vega.theme.text.VegaTextView n0:text="@string/qeo" style="@style/APKTOOL_RENAMED_0x7f1304d2" />
+    </com.vega.ui.state.pressed.PressedStateRelativeLayout>
+    <com.vega.ui.state.pressed.PressedStateRelativeLayout n0:id="@id/manageBtn" n0:layout_width="match_parent" n0:layout_height="wrap_content" n6:kr3="list"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <View style="@style/APKTOOL_RENAMED_0x7f13052d" />
+        <com.vega.theme.text.VegaTextView n0:text="@string/kwk" style="@style/APKTOOL_RENAMED_0x7f1304d2" />
+    </com.vega.ui.state.pressed.PressedStateRelativeLayout>
+    <View n0:background="#f2f2f3" n0:layout_width="match_parent" n0:layout_height="8.0dp" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:id="@id/cancelBtn" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n7:kr3="list" style="@style/APKTOOL_RENAMED_0x7f1304d1"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

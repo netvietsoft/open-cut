@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">Hindi ma-upload ang %d item. Magpapatuloy ang AutoCut.</item>
+        <item quantity="other">Hindi ma-upload ang %d (na) item. Magpapatuloy ang AutoCut.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">Attachment:%d file</item>
+        <item quantity="other">Attachment:%d (na) file</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">Kailangan ng %1$d credit.</item>
+        <item quantity="other">Kailangan ng %1$d (na) credit.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">May %1$d credit ka na lang</item>
+        <item quantity="other">May %1$d (na) credit ka na lang</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">Ibabawas ang mga libreng credit mo. Kailangan mo pa ng %d credit.</item>
+        <item quantity="other">Ibabawas ang mga libreng credit mo. Kailangan mo pa ng %d (na) credit.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">Kailangan ng %1$d credit.</item>
+        <item quantity="other">Kailangan ng %1$d (na) credit.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">May %1$d credit ka na lang. Bumili ng mga credit para magpatuloy.</item>
+        <item quantity="other">May %1$d (na) credit ka na lang. Bumili ng mga credit para magpatuloy.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">Kailangan ng %1$d credit.</item>
+        <item quantity="other">Kailangan ng %1$d (na) credit.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">May %1$d credit ka na lang. Mag-upgrade para makakuha ng mga credit.</item>
+        <item quantity="other">May %1$d (na) credit ka na lang. Mag-upgrade para makakuha ng mga credit.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">%d credit ang magagamit</item>
+        <item quantity="other">%d (na) credit ang magagamit</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">Ibabawas ang mga libreng credit mo. Kailangan mo pa ng %d credit.</item>
+        <item quantity="other">Ibabawas ang mga libreng credit mo. Kailangan mo pa ng %d (na) credit.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">%d template ang inirerekomenda</item>
+        <item quantity="other">%d (na) template ang inirerekomenda</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">%d video ang nabuo</item>
+        <item quantity="other">%d (na) video ang nabuo</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">Pwede mong gamitin ang mga auto caption at auto lyric nang libre %d beses kada buwan, kapag naka-sign in ka. Magre-renew ang mga libreng paggamit sa simula ng bawat buwan. 1 paggamit ang mababawas sa bawat pagkakataon.</item>
+        <item quantity="other">Pwede mong gamitin ang mga auto caption at auto lyric nang libre %d (na) beses kada buwan, kapag naka-sign in ka. Magre-renew ang mga libreng paggamit sa simula ng bawat buwan. 1 paggamit ang mababawas sa bawat pagkakataon.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%d paggamit/buwan</item>
+        <item quantity="other">%d (na) paggamit/buwan</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">I-delete ang %d salita</item>
+        <item quantity="other">I-delete ang %d (na) salita</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%d highlight</item>
+        <item quantity="other">%d (na) highlight</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">May nakitang %d salitang walang kabuluhan</item>
+        <item quantity="other">May nakitang %d (na) salitang walang kabuluhan</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">Pumili ng hanggang %d item</item>
+        <item quantity="other">Pumili ng hanggang %d (na) item</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">Tinatayang oras ng paghihintay sa pila: %ds</item>
+        <item quantity="other">Tinatayang oras ng paghihintay sa pila: %ds</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">Mga %d oras ang natitira</item>
+        <item quantity="other">Mga %d (na) oras ang natitira</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">Mga %d min ang natitira</item>
+        <item quantity="other">Mga %d min ang natitira</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">Mga %ds ang natitira</item>
+        <item quantity="other">Mga %ds ang natitira</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">Resultang audio (%d)</item>
+        <item quantity="other">Mga resultang audio (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">Resultang file (%d)</item>
+        <item quantity="other">Mga resultang file (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">Resulta ng pagbuo (%d)</item>
+        <item quantity="other">Mga resulta ng pagbuo (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">Attachment: %d larawan</item>
+        <item quantity="other">Attachment: %d (na) larawan</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">Attachment: %d video</item>
+        <item quantity="other">Attachment: %d (na) video</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">Resultang larawan (%d)</item>
+        <item quantity="other">Mga resultang larawan (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">Resultang video (%d)</item>
+        <item quantity="other">Mga resultang video (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">Inilalapat ang %1$d AI na text effect... %2$d%%</item>
+        <item quantity="other">Inilalapat ang %1$d (na) AI na text effect... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">Ilapat ang %d asset sa lahat ng clip</item>
+        <item quantity="other">Ilapat ang %d (na) asset sa lahat ng clip</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">%d asset ang napili</item>
+        <item quantity="other">%d (na) asset ang napili</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">%d araw na Ultra</item>
+        <item quantity="other">%d (na) araw na Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d character</item>
+        <item quantity="other">%d (na) character</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">Pumili ng hindi lalampas sa %d character</item>
+        <item quantity="other">Pumili ng hindi lalampas sa %d (na) character</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">%d clip ang walang lisensya para sa komersyal na paggamit</item>
+        <item quantity="other">%d (na) clip ang walang lisensya para sa komersyal na paggamit</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">%d font ang walang lisensya para sa komersyal na paggamit</item>
+        <item quantity="other">%d (na) font ang walang lisensya para sa komersyal na paggamit</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">%d tunog ang walang lisensya para sa komersyal na paggamit</item>
+        <item quantity="other">%d (na) tunog ang walang lisensya para sa komersyal na paggamit</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">%d clip ang walang lisensya para sa komersyal na paggamit at hindi ito mapapalitan</item>
+        <item quantity="other">%d (na) clip ang walang lisensya para sa komersyal na paggamit at hindi ito mapapalitan</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">%d font ang walang lisensya para sa komersyal na paggamit at hindi ito mapapalitan</item>
+        <item quantity="other">%d (na) font ang walang lisensya para sa komersyal na paggamit at hindi ito mapapalitan</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">%d tunog ang walang lisensya para sa komersyal na paggamit at hindi ito mapapalitan</item>
+        <item quantity="other">%d (na) tunog ang walang lisensya para sa komersyal na paggamit at hindi ito mapapalitan</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">%d sticker ang walang lisensya para sa komersyal na paggamit at hindi ito mapapalitan</item>
+        <item quantity="other">%d (na) sticker ang walang lisensya para sa komersyal na paggamit at hindi ito mapapalitan</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">%d sticker ang walang lisensya para sa komersyal na paggamit</item>
+        <item quantity="other">%d (na) sticker ang walang lisensya para sa komersyal na paggamit</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">Ide-delete ba ang %d komento?</item>
+        <item quantity="other">Ide-delete ba ang %d (na) komento?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">Pinili mo ang %d account. Tanging ikaw at ang mga taong hinihigpitan mo ang makakakita ng kanilang mga komento.</item>
+        <item quantity="other">Pinili mo ang %d (na) account. Tanging ikaw at ang mga taong hinihigpitan mo ang makakakita ng kanilang mga komento.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">Hihigpitan ba ang %d account?</item>
+        <item quantity="other">Hihigpitan ba ang %d (na) account?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">%d araw</item>
+        <item quantity="other">%d (na) araw</item>
+    </plurals>
+    <plurals name="kg">
+        <item quantity="one">%d libreng paggamit</item>
+        <item quantity="other">%d (na) libreng paggamit</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">Mayroon kang %s bagong mensahe sa creator</item>
+        <item quantity="other">Mayroon kang %s (na) bagong mensahe sa creator</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">%d araw nang expired</item>
+        <item quantity="other">%d (na) araw nang expired</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">Gumagamit ka ng feature ng Pro. May %d libreng paggamit na natitira. Sumali sa Pro para sa unlimited na paggamit.</item>
+        <item quantity="other">Gumagamit ka ng feature ng Pro. May %d (na) libreng paggamit na natitira. Sumali sa Pro para sa unlimited na paggamit.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">Gumagamit ka ng feature ng Standard. May %d libreng paggamit na natitira. Sumali sa Standard para sa unlimited na paggamit.</item>
+        <item quantity="other">Gumagamit ka ng feature ng Standard. May %d (na) libreng paggamit na natitira. Sumali sa Standard para sa unlimited na paggamit.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">Gumagamit ka ng feature ng Pro. May %d libreng paggamit na natitira sa buwang ito. Sumali sa Pro para sa unlimited na paggamit.</item>
+        <item quantity="other">Gumagamit ka ng feature ng Pro. May %d (na) libreng paggamit na natitira sa buwang ito. Sumali sa Pro para sa unlimited na paggamit.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">Gumagamit ka ng feature ng Standard. May %d libreng paggamit na natitira ngayong buwan. Sumali sa Standard para sa unlimited na paggamit.</item>
+        <item quantity="other">Gumagamit ka ng feature ng Standard. May %d (na) libreng paggamit na natitira ngayong buwan. Sumali sa Standard para sa unlimited na paggamit.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d araw na libre</item>
+        <item quantity="other">%d (na) araw na libre</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">%1$s pagkatapos ng %2$d linggo</item>
+        <item quantity="other">%1$s pagkatapos ng %2$d (na) linggo</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">Mayroon kang %d libreng paggamit ng mga template ng Pro sa isang buwan.</item>
+        <item quantity="other">Mayroon kang %d (na) libreng paggamit ng mga template ng Pro sa isang buwan.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">%d libreng paggamit</item>
+        <item quantity="other">%d (na) libreng paggamit</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">Subukan sa loob ng %d araw nang libre</item>
+        <item quantity="other">Subukan sa loob ng %d (na) araw nang libre</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">%d isyu sa copyright ng musika</item>
+        <item quantity="other">%d (na) isyu sa copyright ng musika</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">%d text ang napili</item>
+        <item quantity="other">%d (na) text ang napili</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_popup_title">
+        <item quantity="one">I-claim ang %d libreng araw mo ng Dreamina Basic</item>
+        <item quantity="other">I-claim ang %d (na) libreng araw mo ng Dreamina Basic</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_success_popup_desc">
+        <item quantity="one">Aktibo na ngayon ang %d araw na access mo sa Dreamina Basic.</item>
+        <item quantity="other">Aktibo na ngayon ang %d (na) araw na access mo sa Dreamina Basic.</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_to_claim_profile_banner">
+        <item quantity="one">I-claim ang %d araw na access mo sa Dreamina Basic</item>
+        <item quantity="other">I-claim ang %d (na) araw na access mo sa Dreamina Basic</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">%d clip ang pinili</item>
+        <item quantity="other">%d (na) clip ang pinili</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">I-enjoy ang %1$d araw ng unlimited na libreng pag-export, o mag-upgrade na lang para sa ganap na unlimited na high-res na pag-export.</item>
+        <item quantity="other">I-enjoy ang %1$d (na) araw ng unlimited na libreng pag-export, o mag-upgrade na lang para sa ganap na unlimited na high-res na pag-export.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">I-export sa 1080p nang %d beses nang libre</item>
+        <item quantity="other">I-export sa 1080p nang %d (na) beses nang libre</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">%d libreng pag-export sa 1080p ang natitira. Mag-upgrade para i-enjoy ang unlimited na pag-export sa mataas na resolusyon.</item>
+        <item quantity="other">%d (na) libreng pag-export sa 1080p ang natitira. Mag-upgrade para i-enjoy ang unlimited na pag-export sa mataas na resolusyon.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">%d libreng pag-export sa 1080p ang natitira ngayong buwan. Mag-upgrade para i-enjoy ang unlimited na pag-export sa mataas na resolusyon.</item>
+        <item quantity="other">%d (na) libreng pag-export sa 1080p ang natitira ngayong buwan. Mag-upgrade para i-enjoy ang unlimited na pag-export sa mataas na resolusyon.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">Kailangan ng %d credit.</item>
+        <item quantity="other">Kailangan ng %d (na) credit.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">Mayroon ka pang %d credit.</item>
+        <item quantity="other">Mayroon ka pang %d (na) credit.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">Isinasagawa ang %1$d pagbuo. Mag-upgrade sa Pro para bumuo ng hanggang %2$d nang sabay-sabay.</item>
+        <item quantity="other">Isinasagawa ang %1$d (na) pagbuo. Mag-upgrade sa Pro para bumuo ng hanggang %2$d nang sabay-sabay.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">I-export nang walang watermark (May %d paggamit)</item>
+        <item quantity="other">I-export nang walang watermark (May %d (na) paggamit pa)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">May %d libreng paggamit pa. Hindi kailangan ng credit.</item>
+        <item quantity="other">May %d (na) libreng paggamit pa. Hindi kailangan ng credit.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">Ide-delete ang napili mong item at mananatili ito sa Trash sa loob ng %d (na) araw.</item>
+        <item quantity="other">Ide-delete ang napili mong mga item at mananatili ito sa Trash sa loob ng %d (na) araw.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">Na-upload sa space ang isa sa mga piniling item. I-delete pa rin?</item>
+        <item quantity="other">Na-upload sa space ang ilang piniling item. I-delete pa rin?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">Ide-delete at ililipat sa Trash ang napili mong item.</item>
+        <item quantity="other">Ide-delete at ililipat sa Trash ang napili mong mga item.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">%d paggamit</item>
+        <item quantity="other">%d (na) paggamit</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">%d taong gulang ang edad na nakalkula mula sa petsa ng kapanganak na inilagay mo at mukhang mali ito. Ilagay ang totoo mong petsa ng kapanganakan.</item>
+        <item quantity="other">%d (na) taong gulang ang edad na nakalkula mula sa petsa ng kapanganak na inilagay mo at mukhang mali ito. Ilagay ang totoo mong petsa ng kapanganakan.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">May kasamang 1 libreng paggamit mula sa mga nakaraang pagbili at %d karagdagang libreng paggamit para sa Pro</item>
+        <item quantity="other">May kasamang 1 libreng paggamit mula sa mga nakaraang pagbili at %d (na) karagdagang libreng paggamit para sa Pro</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">Makakakuha ang Pro ng %d libreng paggamit</item>
+        <item quantity="other">Makakakuha ang Pro ng %d (na) libreng paggamit</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">Permanente nang valid ngayon ang mga avatar na ginawa mo gamit ang mga video. Sumali sa Pro at makakuha ng %d libreng pag-customize.</item>
+        <item quantity="other">Permanente nang valid ngayon ang mga avatar na ginawa mo gamit ang mga video. Sumali sa Pro at makakuha ng %d (na) libreng pag-customize.</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">Kapag inilapat ang effect na ito, gagamit ng %d credit.</item>
+        <item quantity="other">Kapag inilapat ang effect na ito, gagamit ng %d (na) credit.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">Mayroon ka na ngayong %d credit na available.</item>
+        <item quantity="other">Mayroon ka na ngayong %d (na) credit na available.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">%d highlight</item>
+        <item quantity="other">%d (na) highlight</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">Inilalapat ang AI na effect… %s oras ang natitira</item>
+        <item quantity="other">Inilalapat ang AI na effect… %s (na) oras ang natitira</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">Inilalapat ang AI na effect… %s minuto ang natitira</item>
+        <item quantity="other">Inilalapat ang AI na effect… %s (na) minuto ang natitira</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">Inilapat sa kasalukuyang item ang effect ng Pro na %1$s. %2$d credit ang magagamit sa paglalapat ulit nito sa bagong item.</item>
+        <item quantity="other">Inilapat sa kasalukuyang item ang Pro effect na %1$s. Gagamit ng %2$d (na) credit ang paglapat ulit nito sa bagong item.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">%1$d libreng paggamit ang ibabawas. Mayroon kang %2$d libreng paggamit ngayon.</item>
+        <item quantity="other">%1$d libreng paggamit ang ibabawas. Mayroon kang %2$d (na) libreng paggamit ngayon.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">%1$d paggamit ng Pro ang ibabawas. Mayroon kang %2$d paggamit ng Pro ngayon.</item>
+        <item quantity="other">%1$d paggamit ng Pro ang ibabawas. Mayroon kang %2$d (na) paggamit ng Pro ngayon.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">%d reference na larawan lang ang sinusuportahan ng model na ito</item>
+        <item quantity="other">Hanggang %d (na) reference na larawan ang sinusuportahan ng model na ito</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">Magdagdag ng hindi bababa sa %d reference na larawan para magamit ang model na ito</item>
+        <item quantity="other">Magdagdag ng hindi bababa sa %d (na) reference na larawan para magamit ang model na ito</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">%d reference na video lang ang sinusuportahan ng model na ito</item>
+        <item quantity="other">Hanggang %d (na) reference na video ang sinusuportahan ng model na ito</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">Magdagdag ng hindi bababa sa %d reference na video para magamit ang model na ito</item>
+        <item quantity="other">Magdagdag ng hindi bababa sa %d (na) reference na video para magamit ang model na ito</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">Pumili ng %d litrato</item>
+        <item quantity="other">Pumili ng %d (na) litrato</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">%d materyal ang naidagdag</item>
+        <item quantity="other">%d (na) materyal ang naidagdag</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">%d paggawa ang natitira</item>
+        <item quantity="other">%d (na) paggawa ang natitira</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">%d pag-unlock na lang</item>
+        <item quantity="other">%d (na) pag-unlock na lang</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">%d keyword ang na-highlight. Pwede ka ring manual na pumili.</item>
+        <item quantity="other">%d (na) keyword ang na-highlight. Pwede ka ring manual na pumili.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">Mag-delete ng %d clip</item>
+        <item quantity="other">Mag-delete ng %d (na) clip</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">%d salitang walang kabuluhan ang natukoy. Pwede ka ring manual na pumili.</item>
+        <item quantity="other">%d (na) salitang walang kabuluhan ang natukoy. Pwede ka ring manual na pumili.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">%d keyword ang na-highlight</item>
+        <item quantity="other">%d (na) keyword ang na-highlight</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">Ine-export ang %d larawan…</item>
+        <item quantity="other">Ine-export ang %d (na) larawan…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">Pumili ng hanggang %d pose</item>
+        <item quantity="other">Pumili ng hanggang %d (na) pose</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">Ina-upload ang media file mo</item>
+        <item quantity="other">Ina-upload ang mga media file mo</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">%d miyembro</item>
+        <item quantity="other">%d (na) miyembro</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">Mag-upload ng %d proyekto sa space para mabakante ang storage ng device mo. Pwede mong i-edit ang mga proyektong ito sa mobile app, desktop app, o online editor.</item>
+        <item quantity="other">Mag-upload ng %d na proyekto sa space para mabakante ang storage ng device mo. Pwede mong i-edit ang mga proyektong ito sa mobile app, desktop app, o online editor.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">Mag-upload ng %d media file sa mga proyekto sa space mo. Pwede mong gamitin ang file na ito sa anumang device nang hindi nag-a-upload ulit.</item>
+        <item quantity="other">Mag-upload ng %d na media file sa mga proyekto sa space mo. Pwede mong gamitin ang mga file na ito sa anumang device nang hindi nag-a-upload ulit.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">May proyekto kang ire-recover</item>
+        <item quantity="other">May mga proyekto kang ire-recover</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">Proyektong na-recover</item>
+        <item quantity="other">Mga proyektong na-recover</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">Hindi mailapat ang %d feature</item>
+        <item quantity="other">Hindi mailapat ang %d (na) feature</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">Inilalapat ang %d feature</item>
+        <item quantity="other">Inilalapat ang %d (na) feature</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">Ilapat ang effect ng Pro?</item>
+        <item quantity="other">Ilapat ang mga effect ng Pro?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">%1$d Pro mga effect ang inilapat sa kasalukuyang item. Gagamit ng %2$d credit ang paglalapat ulit nito sa bagong item.</item>
+        <item quantity="other">%1$d Pro mga effect ang inilapat sa kasalukuyang item. Gagamit ng %2$d credit ang paglalapat ulit ng mga ito sa bagong item.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">%1$d Pro effect ang nailapat sa kasalukuyang item. %2$d libreng paggamit ang ibabawas para mailapat ulit ito sa bagong item. Walang nagamit na credit.</item>
+        <item quantity="other">%1$d Pro mga effect ang nailapat sa kasalukuyang item. %2$d libreng paggamit ang ibabawas para mailapat ulit ang mga ito sa bagong item. Walang nagamit na credit.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">%1$d Pro effect ang nailapat sa kasalukuyang item. Kailangan mo ng %2$d credit para mailapat ulit ito sa bagong item.</item>
+        <item quantity="other">%1$d Pro mga effect ang nailapat sa kasalukuyang item. Kailangan mo ng %2$d credit para mailapat ulit ang mga ito sa bagong item.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">%1$d Pro effect ang nailapat sa kasalukuyang item. Gagamit ng %2$d libreng paggamit at %3$d credit ang paglalapat ulit ng mga ito sa bagong item.</item>
+        <item quantity="other">%1$d Pro mga effect ang nailapat sa kasalukuyang item. Gagamit ng %2$d libreng paggamit at %3$d credit ang paglalapat ulit ng mga ito sa bagong item.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">%d clip ang nawawala. I-restore ito sa telepono mo o palitan ito.</item>
+        <item quantity="other">%d (na) clip ang nawawala. I-restore ang mga ito sa telepono mo o palitan ang mga ito.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">Maglagay ng hindi lalampas sa %d character</item>
+        <item quantity="other">Maglagay ng hindi lalampas sa %d (na) character</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">%d araw</item>
+        <item quantity="other">%d (na) araw</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">I-delete ang item?</item>
+        <item quantity="other">I-delete ang mga item?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">Makikita rito ang mga item na inilipat sa Trash at ide-delete matapos ang %d araw.</item>
+        <item quantity="other">Makikita rito ang mga item na inilipat sa Trash at ide-delete matapos ang %d (na) araw.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">Dina-download ang %d item…</item>
+        <item quantity="other">Dina-download ang %d (na) item…</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">Ina-upload ang %d item…</item>
+        <item quantity="other">Ina-upload ang %d (na) item…</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">Permanenteng ide-delete ang item na ito at hindi ito mare-restore.</item>
+        <item quantity="other">Permanenteng ide-delete ang mga item na ito at hindi mare-restore ang mga ito.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">Item na inilipat</item>
+        <item quantity="other">Mga item na inilipat</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">Mayroon ka pang %d araw ng libreng pag-export na available.</item>
+        <item quantity="other">Mayroon ka pang %d (na) araw ng libreng pag-export na available.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">Congratulations! Nakakuha ka ng %d buwanang libreng paggamit para mag-export nang walang watermark.</item>
+        <item quantity="other">Congratulations! Nakakuha ka ng %d (na) buwanang libreng paggamit para mag-export nang walang watermark.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">Mayroon ka pang %d libreng paggamit para mag-export nang walang watermark.</item>
+        <item quantity="other">Mayroon ka pang %d (na) libreng paggamit para mag-export nang walang watermark.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">Congratulations! Nakakuha ka ng %d libreng paggamit para mag-export nang walang watermark.</item>
+        <item quantity="other">Congratulations! Nakakuha ka ng %d (na) libreng paggamit para mag-export nang walang watermark.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">%d paggamit</item>
+        <item quantity="other">%d (na) paggamit</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">%d credit na diskwento para sa mga first timer. Mas maraming credit ang magagamit kung lumampas.</item>
+        <item quantity="other">%d (na) credit na diskwento para sa mga first timer. Mas maraming credit ang magagamit kung lumampas.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">%d credit pa ang kailangan para mailapat ang feature na ito</item>
+        <item quantity="other">%d (na) credit pa ang kailangan para mailapat ang feature na ito</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">Hindi dapat lumampas sa %d segundo ang clip</item>
+        <item quantity="other">Hindi dapat lumampas sa %d (na) segundo ang clip</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">Mayroon kang natitirang %d credit.</item>
+        <item quantity="other">Mayroon kang natitirang %d (na) credit.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">Kapag inilapat ang {$benefit_name$}, magagamit ang {$credit_amount$} credit.</item>
+        <item quantity="other">Kapag inilapat ang {$benefit_name$}, magagamit ang {$credit_amount$} (na) credit.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">Kapag inilapat ang feature na ito, %d credit ang makokonsumo.</item>
+        <item quantity="other">Kapag inilapat ang feature na ito, %d (na) credit ang makokonsumo.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">Kapag ginamit ang template na ito, gagamit ng %d credit.</item>
+        <item quantity="other">Kapag ginamit ang template na ito, gagamit ng %d (na) credit.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">Permanente na itong made-delete at hindi na mare-recover.</item>
+        <item quantity="other">Permanente nang made-delete ang mga ito at hindi na mare-recover.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">I-delete ang item na ito?</item>
+        <item quantity="other">I-delete ang mga item na iyon?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">%1$d “%1$s” na proyekto</item>
+        <item quantity="other">%1$d (na) “%1$s” na proyekto</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">%d item ang inilipat sa Trash</item>
+        <item quantity="other">%d (na) item ang inilipat sa Trash</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">%d item ang idinagdag sa Mga Paborito</item>
+        <item quantity="other">%d (na) item ang idinagdag sa Mga Paborito</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">%d item ang inalis sa Mga Paborito</item>
+        <item quantity="other">%d (na) item ang inalis sa Mga Paborito</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">Libreng space ito at pwede itong magkaroon ng hanggang %1$d (na) miyembro. Pwedeng mag-imbita dito ng %2$s pang miyembro.</item>
+        <item quantity="other">Libreng space ito at pwede itong magkaroon ng hanggang %1$d (na) miyembro. Pwedeng mag-imbita dito ng %2$s pang miyembro.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">%d paggamit/buwan</item>
+        <item quantity="other">%d (na) paggamit/buwan</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d paggamit/araw</item>
+        <item quantity="other">%d (na) paggamit/araw</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d paggamit/linggo</item>
+        <item quantity="other">%d (na) paggamit/linggo</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">{price} pagkalipas ng {number} buwan</item>
+        <item quantity="other">{price} pagkalipas ng {number} (na) buwan</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">%1$s pagkatapos ng %2$d buwan</item>
+        <item quantity="other">%1$s pagkatapos ng %2$d (na) buwan</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">{price} pagkalipas ng {number} taon</item>
+        <item quantity="other">{price} pagkalipas ng {number} (na) taon</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">%1$s pagkatapos ng %2$d taon</item>
+        <item quantity="other">%1$s pagkatapos ng %2$d (na) taon</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">May %d miyembro sa space na ito.</item>
+        <item quantity="other">May %d (na) miyembro sa space na ito.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">Pwede ka pang mag-imbita ng %1$d miyembro.</item>
+        <item quantity="other">Pwede ka pang mag-imbita ng %1$d (na) miyembro.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">%1$d quota ang nakuha na.</item>
+        <item quantity="other">%1$d (na) quota ang nakuha na.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">Simulan ang %d araw na libreng trial</item>
+        <item quantity="other">Simulan ang %d (na) araw na libreng trial</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">Kailangan ng %d credit.</item>
+        <item quantity="other">Kailangan ng %d (na) credit.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">Mayroon ka pang %d credit.</item>
+        <item quantity="other">Mayroon ka pang %d (na) credit.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">Ina-upload ang %1$s/%2$s proyekto</item>
+        <item quantity="other">Ina-upload ang %1$s/%2$s (na) projekto</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"May %d ibang clip na naka-link sa media file na ito. Palitan din ito?
+Awtomatikong iti-trim ang file para magkasya sa orihinal na tagal."</item>
+        <item quantity="other">"May %d (na) ibang clip na naka-link sa media file na ito. Palitan itong lahat?
+Awtomatikong iti-trim ang file para magkasya sa orihinal na tagal."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">Pwede kang mag-upload ng %d pang larawan</item>
+        <item quantity="other">Pwede kang mag-upload ng %d pang larawan</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">%d segment ang ia-update</item>
+        <item quantity="other">%d (na) segment ang ia-update</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">Pwede ka pa ring pumili ng %1$d larawan at %2$s</item>
+        <item quantity="other">Pwede ka pa ring pumili ng %1$d (na) larawan at %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(max na %ds)</item>
+        <item quantity="other">(max na %ds)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d video</item>
+        <item quantity="other">%d (na) video</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">Pwede ka pa ring pumili ng %d larawan</item>
+        <item quantity="other">Pwede ka pa ring pumili ng %d (na) larawan</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">Pwede ka pa ring pumili ng %d video</item>
+        <item quantity="other">Pwede ka pa ring pumili ng %d (na) video</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(max na %ds)</item>
+        <item quantity="other">(max na %ds)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">Nasa pila... Halos %d min na lang.</item>
+        <item quantity="other">Nasa pila... Halos %d (na) min na lang.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">Bawasan ang oras ng paghihintay</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">Nasa pila... Halos %ds na lang.</item>
+        <item quantity="other">Nasa pila... Halos %ds na lang.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">Nasa mabilis na pila gamit ang Pro... Halos %d min na lang.</item>
+        <item quantity="other">Nasa mabilis na pila gamit ang Pro... Halos %d (na) min na lang.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d (na) item</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">%d item ang pinili</item>
+        <item quantity="other">%d (na) item ang pinili</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">%d proyekto</item>
+        <item quantity="other">%d (na) proyekto</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">%d proyekto ang pinili</item>
+        <item quantity="other">%d (na) proyekto ang pinili</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">Maraming tao ang gumagamit ng feature na ito ngayon. %d minuto ang iyong tinatayang oras ng paghihintay.</item>
+        <item quantity="other">Maraming tao ang gumagamit ng feature na ito ngayon. %d (na) minuto ang iyong tinatayang oras ng paghihintay.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">Kapag bumuo ulit, %d credit ang makokonsumo.</item>
+        <item quantity="other">Kapag bumuo ulit, %d (na) credit ang makokonsumo.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">Kapag bumuo ulit gamit ang bagong item, gagamit ng %d credit.</item>
+        <item quantity="other">Kapag bumuo ulit gamit ang bagong item, gagamit ng %d (na) credit.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">%d clip ang naidagdag</item>
+        <item quantity="other">%d (na) clip ang naidagdag</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">Pumili ng %d item</item>
+        <item quantity="other">Pumili ng %d (na) item</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">Nakabuo ng %d video para sa iyo</item>
+        <item quantity="other">Nakabuo ng %d (na) video para sa iyo</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">Pwede ka lang maghiwalay ng audio na wala pang %d minuto</item>
+        <item quantity="other">Pwede ka lang maghiwalay ng audio na wala pang %d (na) minuto</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">Pwede mong i-restore ang space sa loob ng %d araw.</item>
+        <item quantity="other">Pwede mong i-restore ang space sa loob ng %d (na) araw.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">May %d video na binubuo. Subukan ulit mamaya.</item>
+        <item quantity="other">May %d (na) video na binubuo. Subukan ulit mamaya.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">Mag-upgrade para magamit ang feature na ito gamit ang %d credit</item>
+        <item quantity="other">Mag-upgrade para magamit ang feature na ito gamit ang %d (na) credit</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">May %d seat ka na lang sa space na ito.</item>
+        <item quantity="other">May %d (na) seat ka na lang sa space na ito.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">%d element ang nagamit</item>
+        <item quantity="other">%d (na) element ang nagamit</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">%d item ang pinili</item>
+        <item quantity="other">%d (na) item ang pinili</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">Pumili ng %d item</item>
+        <item quantity="other">Pumili ng %d (na) item</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">%d caption</item>
+        <item quantity="other">%d (na) caption</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d (na) item</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">%d feature ang inilalapat. Subukan ulit sa ibang pagkakataon.</item>
+        <item quantity="other">%d (na) feature ang inilalapat. Subukan ulit sa ibang pagkakataon.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">%d libreng paggamit ang natitira. Sumali sa Standard para gamitin ito gamit ang mga credit.</item>
+        <item quantity="other">%d (na) libreng paggamit ang natitira. Sumali sa Standard para gamitin ito gamit ang mga credit.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">%d libreng paggamit ang natitira. Sumali sa Pro para gamitin ito gamit ang mga credit.</item>
+        <item quantity="other">%d (na) libreng paggamit ang natitira. Sumali sa Pro para gamitin ito gamit ang mga credit.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">%d libreng paggamit ang natitira. Kunin ang Ultra para magamit ito kapag may mga credit ka.</item>
+        <item quantity="other">%d (na) libreng paggamit ang natitira. Kunin ang Ultra para magamit ito kapag may mga credit ka.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">Gagamit ito ng %1$d credit. %2$s</item>
+        <item quantity="other">Gagamit ito ng %1$d (na) credit. %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">Mayroon ka pang %d credit.</item>
+        <item quantity="other">Mayroon ka pang %d (na) credit.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">Kunin ang Ultra para magamit ito kapag may %d credit ka</item>
+        <item quantity="other">Kunin ang Ultra para magamit ito kapag may %d (na) credit ka</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">Sumali sa Pro para gamitin ito para sa %d credit.</item>
+        <item quantity="other">Sumali sa Pro para gamitin ito para sa %d (na) credit.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">Sumali sa Standard para gamitin ang feature na ito gamit ang %d credit.</item>
+        <item quantity="other">Sumali sa Standard para gamitin ang feature na ito gamit ang %d (na) credit.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">Pwede kang mag-save ng hindi hihigit sa %1$d na boses.</item>
+        <item quantity="other">Hindi ka pwedeng mag-save ng higit sa %1$d (na) boses.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">Hindi ma-enhance ang boses sa isang clip na mas mahaba sa %1$d minuto</item>
+        <item quantity="other">Hindi ma-enhance ang boses sa isang clip na mas mahaba sa %1$d na minuto</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">Pumili ng %d item para sa mga pinakamagandang resulta</item>
+        <item quantity="other">Pumili ng %d (na) item para sa mga pinakamagandang resulta</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">Magre-renew sa halagang %1$s para sa unang %2$d buwan, pagkatapos ay %3$s.</item>
+        <item quantity="other">Magre-renew sa halagang %1$s para sa unang %2$d (na) buwan, pagkatapos ay %3$s.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">Magre-renew sa halagang %1$s para sa unang %2$d taon, pagkatapos ay %3$s.</item>
+        <item quantity="other">Magre-renew sa halagang %1$s para sa unang %2$d (na) taon, pagkatapos ay %3$s.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">Nakagawa ka ng %d update. Bumuo ng speech at i-sync ang mga paggalaw ng bibig?</item>
+        <item quantity="other">Nakagawa ka ng %d (na) update. Bumuo ng speech at i-sync ang mga paggalaw ng bibig?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">%d beses ang natitira</item>
+        <item quantity="other">%d (na) beses ang natitira</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">May %d tahimik na clip.</item>
+        <item quantity="other">May %d (na) tahimik na clip.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.biz.homepage.view.HomeNestScrollConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="68.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.localdraft.widget.DraftMultiRecycleView n0:id="@id/draft_rv" n0:background="@drawable/kfv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="18.0dp" n0:layout_marginEnd="18.0dp" n0:nestedScrollingEnabled="false" n0:clipToOutline="true" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/all_container" n0:background="@drawable/kpe" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="0.0dp" n0:layout_marginEnd="18.0dp" n0:paddingHorizontal="12.0dp" n2:layout_constraintBottom_toBottomOf="@id/draft_rv" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/draft_rv"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/all_draft_btn_tv" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n0:paddingEnd="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/all_draft_btn_iv" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/all_draft_btn_iv" n0:background="@drawable/m2h" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/all_draft_btn_tv" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.biz.homepage.view.HomeNestScrollConstraintLayout>

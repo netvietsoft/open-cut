@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:id="@id/month_navigation_bar" n0:paddingTop="@dimen/w7" n0:paddingBottom="@dimen/w5" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0">
+        <com.google.android.material.button.MaterialButton n0:gravity="start|center" n0:layout_gravity="start" n0:id="@id/month_navigation_fragment_toggle" n0:layout_width="wrap_content" n0:layout_height="@dimen/w6" n0:insetTop="0.0dp" n0:insetBottom="0.0dp" n1:APKTOOL_RENAMED_0x7f040574="@drawable/peq" n1:APKTOOL_RENAMED_0x7f04057a="textEnd" n1:APKTOOL_RENAMED_0x7f04057d="4.0dp" style="?km4"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton n0:gravity="center" n0:id="@id/month_navigation_previous" n0:layout_width="@dimen/yt" n0:layout_height="@dimen/w6" n0:insetTop="0.0dp" n0:insetBottom="0.0dp" n0:contentDescription="@string/qkg" n2:APKTOOL_RENAMED_0x7f040574="@drawable/peo" style="?km1"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.google.android.material.button.MaterialButton n0:gravity="center" n0:id="@id/month_navigation_next" n0:layout_width="@dimen/yt" n0:layout_height="@dimen/w6" n0:insetTop="0.0dp" n0:insetBottom="0.0dp" n0:contentDescription="@string/qkf" n3:APKTOOL_RENAMED_0x7f040574="@drawable/pen" style="?km1"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

@@ -1,0 +1,932 @@
+{
+  "signature": "3",
+  "strategy_set": {
+    "guard_fuse": {
+      "api_strategy_map": [
+        {
+          "api_ids": [
+            100000,
+            100001,
+            100002,
+            100004,
+            100005,
+            100006,
+            100007,
+            100008,
+            100009,
+            100010,
+            100011,
+            100012
+          ],
+          "strategies": [
+            "location_manager"
+          ]
+        },
+        {
+          "api_ids": [
+            100016,
+            100913,
+            240015,
+            102601,
+            102600,
+            240004,
+            240016,
+            102021,
+            102062,
+            102000,
+            102001,
+            102012,
+            101601,
+            102016,
+            101900,
+            101600,
+            102017,
+            101602,
+            102003,
+            102004,
+            101200,
+            102002,
+            101701,
+            101700,
+            102015,
+            101500,
+            101400,
+            100703,
+            100700,
+            100017,
+            100018,
+            100015,
+            100014,
+            102500,
+            102501,
+            102502,
+            102503,
+            102504,
+            102103,
+            102100,
+            102102,
+            102101,
+            102105,
+            102104,
+            100403,
+            100502,
+            100500,
+            100503,
+            100400,
+            100501,
+            100401,
+            100206,
+            100101,
+            100200,
+            100100,
+            100201,
+            100011,
+            100007,
+            100010,
+            100004,
+            100009,
+            100000,
+            100012,
+            100005,
+            100003,
+            100002,
+            100001,
+            102300,
+            102302,
+            102301,
+            101100,
+            101000,
+            100901,
+            100902,
+            100903,
+            100904,
+            100905,
+            100906,
+            100907,
+            100908,
+            100911,
+            100912,
+            100909,
+            100900,
+            100910,
+            100913,
+            101305,
+            101310,
+            101309,
+            101304,
+            101308,
+            102900,
+            103000,
+            100702
+          ],
+          "strategies": [
+            "sensitive_api"
+          ]
+        },
+        {
+          "api_ids": [
+            102600,
+            102601
+          ],
+          "strategies": [
+            "location_permission"
+          ]
+        }
+      ],
+      "const_pool": {
+        "location_region": {
+          "value": ["sg","my","vn","id","th","ph","kh","jp","pk","bd","br","mx","tr","sa","eg","ar","ng","co","ua","ae","za","ru","ca","gb","fr","de","it","es","nl","pl","be","se","at","ch","no","cz","iq","dz","ma","jo","kw","lb","tn","qa","ly","om","ye","bh"],
+          "type": "string_array"
+        },
+        "location_apis": {
+          "value": [
+            100000,
+            100001,
+            100002,
+            100004,
+            100005,
+            100006,
+            100007,
+            100008,
+            100009,
+            100010,
+            100011,
+            100012
+          ],
+          "type": "int_array"
+        },
+        "fuse_apis": {
+          "value": [
+            101000,
+            101100,
+            101700,
+            101701,
+            101400,
+            101500,
+            101600,
+            101601,
+            101602,
+            101900,
+            102000,
+            102001,
+            101200,
+            102002,
+            100012,
+            100900,
+            100901,
+            100902,
+            100903,
+            100904,
+            100905,
+            100906,
+            100907,
+            100908,
+            100909,
+            100910,
+            100911,
+            100912
+          ],
+          "type": "int_array"
+        },
+        "permission_apis": {
+          "value": [
+            102600,
+            102601
+          ],
+          "type": "int_array"
+        },
+        "location_permissions": {
+          "value": [
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION",
+            "android.permission.ACCESS_BACKGROUND_LOCATION"
+          ],
+          "type": "string_array"
+        }
+      },
+      "strategy_select_break": false,
+      "rule_exec_break": true,
+      "policies": {
+        "disable_for_not_consent": {
+          "title": "location_region_limit",
+          "cel": "is_not_consent == true",
+          "conf": {
+            "action": "fuse",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          }
+        },
+        "location_region_limit": {
+          "title": "location_region_limit",
+          "cel": "user_region out location_region",
+          "conf": {
+            "action": "fuse",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          }
+        },
+        "location_permission_region_limit": {
+          "title": "location_permission_region_limit",
+          "cel": "user_region out location_region && parameter(\"permissions\", api_params, location_permissions)",
+          "conf": {
+            "action": "modify",
+            "fuse_result": {
+              "permissions": [
+                "android.permission.ACCESS_COARSE_LOCATION",
+                "android.permission.ACCESS_FINE_LOCATION",
+                "android.permission.ACCESS_BACKGROUND_LOCATION"
+              ]
+            },
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          }
+        }
+      },
+      "strategies": {
+        "location_manager": {
+          "rules": [
+            "location_region_limit"
+          ]
+        },
+        "location_permission": {
+          "rules": [
+            "location_permission_region_limit"
+          ]
+        },
+        "sensitive_api": {
+          "rules": [
+            "disable_for_not_consent"
+          ]
+        }
+      },
+      "strategy_map": {
+        "rules": [
+          {
+            "title": "location_manager",
+            "conf": {
+              "strategy": "location_manager"
+            },
+            "cel": "api_id in location_apis"
+          },
+          {
+            "title": "location_permission",
+            "conf": {
+              "strategy": "location_permission"
+            },
+            "cel": "api_id in permission_apis"
+          }
+        ]
+      }
+    },
+    "guard": {
+      "const_pool": {
+        "read_clipboard_apis": {
+          "value": [
+            101801,
+            101803,
+            101804,
+            101805,
+            101806,
+            101809
+          ],
+          "type": "int_array"
+        },
+        "not_consent_disable_apis": {
+          "value": [
+            101301,
+            101302,
+            101304,
+            101305,
+            101306,
+            101307,
+            101308,
+            101309,
+            102301,
+            102013,
+            102500,
+            102501,
+            102502,
+            101809,
+            100700,
+            100701,
+            100702,
+            100703,
+            102600,
+            102601,
+            103000,
+            103001,
+            103002,
+            103003,
+            104000,
+            102003,
+            102004
+          ],
+          "type": "int_array"
+        },
+        "email_known_scene": {
+          "value":  [
+            "com.ss.android.ugc.aweme.account.login.v2.ui.SignUpOrLoginActivity",
+            "com.ss.android.ugc.aweme.account.login.auth.I18nSignUpActivity"
+          ],
+          "type": "string_array"
+        },
+        "phone_known_scene": {
+          "value":  [
+            "com.ss.android.ugc.aweme.account.login.v2.ui.SignUpOrLoginActivity",
+            "com.ss.android.ugc.aweme.live.LivePlayActivity",
+            "com.ss.android.ugc.aweme.ecommerce.combinepayment.ordersubmit.OrderSubmitActivity",
+            "com.ss.android.ugc.aweme.host.TikTokHostActivity",
+            "com.ss.android.ugc.aweme.account.ui.BindOrModifyPhoneActivity",
+            "com.ss.android.ugc.aweme.search.pages.core.ui.activity.SearchResultActivity",
+            "com.ss.android.ugc.aweme.account.unbind.UnbindPhoneOrEmailActivity",
+            "com.ss.android.ugc.aweme.account.login.v2.base.CommonFlowActivity",
+            "com.ss.android.ugc.aweme.detail.ui.DetailActivity"
+          ],
+          "type": "string_array"
+        },
+        "pair_release_apis": {
+          "value": [
+            100101,
+            100106,
+            100201,
+            100205,
+            100401,
+            100404,
+            100403,
+            100405,
+            100501,
+            100503,
+            100103
+          ],
+          "type": "int_array"
+        }
+      },
+      "strategy_select_break": false,
+      "rule_exec_break": false,
+      "policies": {
+        "fuse_api_anyway": {
+          "title": "fuse_api_anyway",
+          "cel": "true",
+          "conf": {
+            "action": "report",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          }
+        },
+        "location_auto_request_interval_limit": {
+          "title": "location_auto_request_interval_limit",
+          "conf": {
+            "action": "report",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          },
+          "cel": "frequency(\"location\")"
+        },
+        "pair_not_close": {
+          "title": "pair_not_close",
+          "conf": {
+            "action": "report",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          },
+          "cel": "is_pair_not_close == true"
+        },
+        "pair_delay_close": {
+          "title": "pair_delay_close",
+          "conf": {
+            "action": "report",
+            "upload_params": {
+              "filter_extra_info": true,
+              "upload_alog": true
+            }
+          },
+          "cel": "is_pair_delay_close == true"
+        },
+        "disable_when_app_background": {
+          "title": "disable_when_app_background",
+          "conf": {
+            "action": "report",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          },
+          "cel": "is_background(2)"
+        },
+        "disable_pair_when_app_background": {
+          "title": "disable_pair_when_app_background",
+          "conf": {
+            "action": "report",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          },
+          "cel": "is_background(2) && api_id out pair_release_apis && is_pair_not_close == false && is_pair_delay_close == false && has_floating_window = false"
+        },
+        "disable_for_not_consent": {
+          "title": "disable_for_not_consent",
+          "conf": {
+            "action": "report",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          },
+          "cel": "is_not_consent == true"
+        },
+        "disable_for_guest_mode": {
+          "title": "disable_for_guest_mode",
+          "conf": {
+            "action": "report",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          },
+          "cel": "is_guest_mode == true"
+        },
+        "disable_anyway": {
+          "title": "disable_anyway",
+          "conf": {
+            "action": "report",
+            "upload_params": {
+              "upload_alog": true,
+              "filter_extra_info": true
+            }
+          },
+          "cel": "true"
+        },
+        "is_email": {
+          "title": "is_email",
+          "conf": {
+            "action": "report"
+          },
+          "cel": "top_page out email_known_scene && is_match_with([user_input], [\"^[a-zA-Z0-9.\\\\-_+]{2,32}@[a-zA-Z0-9.\\\\-_]{2,32}\\\\.[A-Za-z]{2,4}$\"], true)"
+        },
+        "is_phone_number": {
+          "title": "is_phone_number",
+          "conf": {
+            "action": "report"
+          },
+          "cel": "top_page out phone_known_scene && is_match_with([user_input], [\"^\\\\d{6,13}$\"], true)"
+        }
+      },
+      "strategies": {
+        "fuse_anyway": {
+          "rules": [
+            "fuse_api_anyway"
+          ]
+        },
+        "pair": {
+          "rules": [
+            "pair_not_close",
+            "pair_delay_close",
+            "disable_pair_when_app_background"
+          ]
+        },
+        "location": {
+          "rules": [
+            "disable_for_not_consent",
+            "disable_for_guest_mode"
+          ]
+        },
+        "disable_when_not_consent": {
+          "rules": [
+            "disable_for_not_consent"
+          ]
+        },
+        "location_manager": {
+          "rules": [
+            "disable_when_app_background"
+          ]
+        },
+        "frequency_for_location": {
+          "rules": [
+            "location_auto_request_interval_limit"
+          ]
+        },
+        "read_clipboard": {
+          "rules": [
+            "disable_anyway"
+          ]
+        },
+        "location_permission": {
+          "rules": [
+            "disable_for_not_consent",
+            "disable_for_guest_mode"
+          ]
+        },
+        "ui": {
+          "rules": [
+            "is_phone_number",
+            "is_email"
+          ]
+        }
+      },
+      "strategy_map": {
+        "keys": [
+          "data_types",
+          "api_id"
+        ],
+        "rules": [
+          {
+            "title": "fuse_anyway",
+            "conf": {
+              "strategy": "fuse_anyway"
+            },
+            "cel": "api_id in fuse_apis"
+          },
+          {
+            "title": "disable_when_not_consent",
+            "conf": {
+              "strategy": "disable_when_not_consent"
+            },
+            "cel": "api_id in not_consent_disable_apis"
+          },
+          {
+            "title": "pair",
+            "conf": {
+              "strategy": "pair"
+            },
+            "cel": "\"video\" in data_types || \"audio\" in data_types "
+          },
+          {
+            "title": "location",
+            "conf": {
+              "strategy": "location"
+            },
+            "cel": "\"location\" in data_types && api_id != 102301"
+          },
+          {
+            "title": "location_manager",
+            "conf": {
+              "strategy": "location_manager"
+            },
+            "cel": "api_id in location_apis"
+          },
+          {
+            "title": "frequency_for_location",
+            "conf": {
+              "strategy": "frequency_for_location"
+            },
+            "cel": "api_id in [200000, 200001, 200002, 200004]"
+          },
+          {
+            "title": "location_permission",
+            "conf": {
+              "strategy": "location_permission"
+            },
+            "cel": "api_id in permission_apis && parameter(\"permissions\", api_params, location_permissions)"
+          },
+          {
+            "title": "ui",
+            "conf": {
+              "strategy": "ui"
+            },
+            "cel": "api_id == 104000"
+          }
+        ]
+      }
+    },
+    "bpea": {
+      "policies": {
+        "disable_in_background": {
+          "title": "disable_in_background",
+          "conf": {
+            "action": "mark",
+            "reason": "disable when app in background"
+          },
+          "cel": "is_background(2)"
+        },
+        "disable_for_not_consent": {
+          "title": "disable_for_not_consent",
+          "conf": {
+            "action": "mark",
+            "reason": "disable when privacy is not consent!"
+          },
+          "cel": "is_not_consent == true"
+        },
+        "disable_in_guest_mode": {
+          "title": "disable_in_guest_mode",
+          "conf": {
+            "action": "mark",
+            "reason": "disable in guest mode"
+          },
+          "cel": "is_guest_mode == true"
+        },
+        "disable_in_kids_mode": {
+          "title": "disable_in_kids_mode",
+          "conf": {
+            "action": "mark",
+            "reason": "disable in kids mode"
+          },
+          "cel": "is_kids_mode == true"
+        },
+        "location_region_limit": {
+          "title": "location_region_limit",
+          "conf": {
+            "action": "mark",
+            "reason": "disable when region is out of white list"
+          },
+          "cel": "user_region out location_region"
+        },
+        "monitor_escape": {
+          "title": "monitor_escape",
+          "conf": {
+            "action": "pass",
+            "reason": "case not config"
+          },
+          "cel": "true"
+        }
+      },
+      "strategies": {
+        "locationSDK_common": {
+          "rules": [
+            "disable_in_kids_mode",
+            "disable_in_guest_mode",
+            "disable_for_not_consent",
+            "disable_in_background",
+            "location_region_limit"
+          ]
+        },
+        "monitor_escape": {
+          "rules": [
+            "monitor_escape"
+          ]
+        }
+      },
+      "strategy_map": {
+        "keys": [
+          "sdk_name"
+        ],
+        "rules": [
+          {
+            "title": "locationSDK",
+            "conf": {
+              "strategy": "locationSDK_common"
+            },
+            "cel": "\"locationSDK\" == sdk_name"
+          },
+          {
+            "title": "monitor_escape",
+            "conf": {
+              "strategy": "monitor_escape"
+            },
+            "cel": "true"
+          }
+        ]
+      }
+    },
+    "network": {
+      "const_pool": {
+        "http_param_keys": {
+          "value": [
+            "uid_tt",
+            "uid_tt_ss",
+            "sid_tt",
+            "sid_guard",
+            "sessionid",
+            "sessionid_ss",
+            "x-tt-token"
+          ],
+          "type": "string_array"
+        },
+        "network_request_apis": {
+          "value": [
+            400001,
+            400101,
+            400203
+          ],
+          "type": "int_array"
+        },
+        "content_types": {
+          "value": [
+            "application",
+            "text"
+          ],
+          "type": "string_array"
+        },
+        "content_sub_types": {
+          "value": [
+            "json",
+            "x-www-form-urlencoded",
+            "plain"
+          ],
+          "type": "string_array"
+        },
+        "request_body_regex": {
+          "value": [
+            "\"city_info\":|\"city_name\":|\"latitude\":|\"longitude\":|\"iccid\":|\"MEID\":|\"ssid\":|\"openudid\":|\"age\":|\"gender\":|\"mail\":|\"oaid\":|\"birthday\":|\"imsi\":|\"phone\":|\"serial\":|\"mac_address\":|\"gps\""
+          ],
+          "type": "string_array"
+        },
+        "response_body_regex": {
+          "value": [
+            "p1.ipstatp.com|pic.compgoo.com|gcdn.giikin.com|cdn.meshopstore.com|btw.xkilshop.top|us01-analysis.ymcart.com|zobju.com|www.hihonor.com|iortkty.com|poueep.com|eog-shopping.com"
+          ],
+          "type": "string_array"
+        },
+        "third_party_allow_domains": {
+          "value": [
+            "tiktokv.com",
+            "tiktokcdn.com",
+            "byteoversea.com",
+            "sgsnssdk.com",
+            "isnssdk.com",
+            "ibyteimg.com",
+            "ibytedtos.com",
+            "tiktok.com",
+            "xzcs3zlph.com"
+          ],
+          "type": "string_array"
+        }
+      },
+      "strategy_select_break": false,
+      "rule_exec_break": false,
+      "policies": {
+        "guard_http_param": {
+          "title": "guard_http_param",
+          "cel": "is_equal_with(query_keys, http_param_keys, true) || is_equal_with(header_keys, http_param_keys, true) || is_equal_with(cookie_keys, http_param_keys, true)",
+          "conf": {
+            "action": "report"
+          }
+        },
+        "guard_request_body_param": {
+          "title": "guard_request_body_param",
+          "cel": "is_sample_rate(0.001) && content_type in content_types && content_sub_type in content_sub_types && is_match_with([content], request_body_regex, true)",
+          "conf": {
+            "action": "report"
+          }
+        },
+        "guard_third_pairt_request": {
+          "title": "guard_third_pairt_request",
+          "cel": "true",
+          "conf": {
+            "action": "report"
+          }
+        },
+        "guard_response_content": {
+          "title": "guard_response_content",
+          "cel": "is_sample_rate(0.001) && res_content_type in content_types && res_content_sub_type in content_sub_types && is_match_with([res_content], response_body_regex, true)",
+          "conf": {
+            "action": "report"
+          }
+        }
+      },
+      "strategies": {
+        "http": {
+          "rules": [
+            "guard_http_param"
+          ]
+        },
+        "request_body": {
+          "rules": [
+            "guard_request_body_param"
+          ]
+        },
+        "third_pairt": {
+          "rules": [
+            "guard_third_pairt_request"
+          ]
+        },
+        "test_env": {
+          "rules": [
+            "guard_response_content"
+          ]
+        }
+      },
+      "strategy_map": {
+        "keys": [
+          "api_id",
+          "scheme",
+          "domain",
+          "is_test_env"
+        ],
+        "rules": [
+          {
+            "title": "http",
+            "conf": {
+              "strategy": "http"
+            },
+            "cel": "api_id in network_request_apis && scheme == \"http\""
+          },
+          {
+            "title": "request_body",
+            "conf": {
+              "strategy": "request_body"
+            },
+            "cel": "api_id in network_request_apis"
+          },
+          {
+            "title": "third_pairt",
+            "conf": {
+              "strategy": "third_pairt"
+            },
+            "cel": "api_id in [400001] && is_test_env == true && !(domain endwith third_party_allow_domains)"
+          },
+          {
+            "title": "test_env",
+            "conf": {
+              "strategy": "test_env"
+            },
+            "cel": "api_id in network_request_apis && is_test_env == true"
+          }
+        ]
+      }
+    },
+    "network_fuse": {
+      "const_pool": {
+        "kids_mode_remove_param_keys": {
+          "value": [
+            "uoo",
+            "idfa",
+            "webcast_language",
+            "webcast_locale",
+            "content_language",
+            "allow_sell_data",
+            "longitude",
+            "webcast_sdk_version",
+            "gaid",
+            "gps_access",
+            "address_book_access",
+            "city",
+            "city_name",
+            "latitude",
+            "ad_personality_mode",
+            "search_source",
+            "show_location",
+            "mac_address",
+            "google_aid",
+            "android_id",
+            "bid_ad_params",
+            "ad_user_agent",
+            "ssid",
+            "openudid",
+            "idfv",
+            "vid",
+            "clientudid"
+          ],
+          "type": "string_array"
+        }
+      },
+      "strategy_select_break": false,
+      "rule_exec_break": false,
+      "policies": {
+        "kids_mode_remove_param": {
+          "title": "kids_mode_remove_param",
+          "cel": "true",
+          "conf": {
+            "action": "modify",
+            "check_modify_config_hit": true,
+            "modify_config": {
+              "query": {
+                "remove": "$kids_mode_remove_param_keys"
+              },
+              "cookie": {
+                "remove": "$kids_mode_remove_param_keys"
+              },
+              "header": {
+                "remove": "$kids_mode_remove_param_keys"
+              }
+            }
+          }
+        }
+      },
+      "strategies": {
+        "kids_mode_param": {
+          "rules": [
+            "kids_mode_remove_param"
+          ]
+        }
+      },
+      "strategy_map": {
+        "keys": [
+          "api_id",
+          "is_kids_mode"
+        ],
+        "rules": [
+          {
+            "title": "kids_mode_param",
+            "conf": {
+              "strategy": "kids_mode_param"
+            },
+            "cel": "is_kids_mode == true && api_id in network_request_apis"
+          }
+        ]
+      }
+    }
+  }
+}

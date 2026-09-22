@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center" n0:id="@id/iv_color_select" n0:layout_width="56.0dp" n0:layout_height="56.0dp" n0:src="@drawable/rbz" n0:scaleType="fitXY"
+      xmlns:n0="http://schemas.android.com/apk/res/android" />
+    <com.xt.retouch.baseui.view.BaseImageView n1:layout_gravity="center" n1:id="@id/iv_go_palette" n1:layout_width="32.0dp" n1:layout_height="32.0dp" n1:src="@drawable/rco" n1:scaleType="fitXY"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <com.xt.retouch.edit.base.view.ColorView n2:layout_gravity="center" n2:id="@id/color_selected" n2:visibility="gone" n2:layout_width="45.0dp" n2:layout_height="45.0dp" n2:layout_marginStart="5.0dp" n3:APKTOOL_RENAMED_0x7f04058f="@drawable/rs1"
+      xmlns:n2="http://schemas.android.com/apk/res/android" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n4:layout_gravity="center" n4:id="@id/divided_view" n4:background="#4ddedfd9" n4:visibility="gone" n4:layout_width="0.5dp" n4:layout_height="26.0dp" n4:layout_marginLeft="5.0dp" n4:layout_marginRight="5.0dp"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</merge>

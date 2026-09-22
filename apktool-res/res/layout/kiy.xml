@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/cloud_home_banner_layout" n0:background="@drawable/kqh" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mu" n0:id="@id/tv_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/h8" n0:layout_marginHorizontal="16.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/kb" n0:id="@id/tv_open_auto_backup" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/h3" n0:layout_below="@id/tv_desc" n0:layout_marginEnd="16.0dp" n0:layout_toStartOf="@id/btn_close" />
+    <ImageView n0:id="@id/btn_close" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:src="@drawable/m5x" n0:layout_below="@id/tv_desc" n0:layout_marginEnd="18.0dp" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

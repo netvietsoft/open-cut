@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/cl_ai_transition" n0:background="@drawable/kny" n0:layout_width="match_parent" n0:layout_height="700.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/top_layout" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/top_title" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/zx" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+        <com.vega.ui.AlphaButton n0:id="@id/btn_history" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/mgt" n0:scaleType="center" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaButton n0:id="@id/btn_back" n0:visibility="gone" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08053c" n0:scaleType="center" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaButton n0:id="@id/btn_confirm" n0:paddingTop="14.0dp" n0:paddingBottom="14.0dp" n0:layout_width="46.0dp" n0:layout_height="match_parent" n0:src="@drawable/APKTOOL_RENAMED_0x7f082eb4" n0:paddingStart="10.0dp" n0:paddingEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.utils.widget.ImageFilterButton n0:id="@id/iv_close_history" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:paddingTop="13.0dp" n0:visibility="gone" n0:layout_width="46.0dp" n0:layout_height="33.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/m1o" n0:scaleType="centerInside" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/divider" n2:layout_constraintEnd_toEndOf="@id/top_layout" n2:layout_constraintStart_toStartOf="@id/top_layout" n2:layout_constraintTop_toBottomOf="@id/top_layout" style="@style/APKTOOL_RENAMED_0x7f1301de"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.view.DualFrameSelectorView n0:id="@id/frame_selector_view" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintBottom_toTopOf="@id/cl_bottom" n3:layout_constraintTop_toBottomOf="@id/divider"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_status" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toTopOf="@id/cl_bottom" n4:layout_constraintTop_toBottomOf="@id/divider"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/kh0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_bottom" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" n0:paddingHorizontal="16.0dp" n5:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.subscriptionapi.swidget.BusinessCreditsBar n0:id="@id/creditsBar" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n5:layout_constraintBottom_toTopOf="@id/ai_transition_bottom_generate" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaButton n0:id="@id/btn_reset" n0:background="@drawable/APKTOOL_RENAMED_0x7f080481" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/mjj" n0:scaleType="centerInside" n0:layout_marginEnd="12.0dp" n5:layout_constraintBottom_toBottomOf="@id/ai_transition_bottom_generate" n5:layout_constraintEnd_toStartOf="@id/ai_transition_bottom_generate" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="@id/ai_transition_bottom_generate" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_transition_bottom_generate" n0:background="@drawable/knz" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toEndOf="@id/btn_reset">
+            <com.vega.theme.text.VegaTextView n0:enabled="true" n0:textSize="16.0dp" n0:textColor="@color/sg" n0:gravity="center" n0:layout_gravity="center_vertical" n0:id="@id/tv_generate" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/hb" n0:maxLines="1" n0:drawablePadding="4.0dp" n0:layout_centerInParent="true" n0:drawableStart="@drawable/APKTOOL_RENAMED_0x7f0815dd" n0:layout_alignParentStart="true" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" n5:k1i="medium" />
+            <com.airbnb.lottie.LottieAnimationView n0:id="@id/la_generate_loading_view" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" n5:lottie_autoPlay="true" n5:lottie_fileName="circle_loading_b.json" n5:lottie_loop="true" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_history" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintTop_toBottomOf="@id/divider"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/khj" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

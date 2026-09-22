@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_sticker_frame_layout_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:layout_gravity="center_vertical" n0:id="@id/leftBtn" n0:layout_width="@dimen/je" n0:layout_height="@dimen/je" />
+    <View n0:layout_gravity="center_horizontal" n0:id="@id/topBtn" n0:layout_width="@dimen/je" n0:layout_height="@dimen/je" />
+    <View n0:layout_gravity="end|center" n0:id="@id/rightBtn" n0:layout_width="@dimen/je" n0:layout_height="@dimen/je" />
+    <View n0:layout_gravity="center|bottom" n0:id="@id/bottomBtn" n0:layout_width="@dimen/je" n0:layout_height="@dimen/je" />
+    <View n0:layout_gravity="start|top" n0:id="@id/cancel" n0:background="@drawable/r1x" n0:layout_width="@dimen/je" n0:layout_height="@dimen/je" />
+    <View n0:layout_gravity="end|top" n0:id="@id/edit" n0:background="@drawable/r1y" n0:layout_width="@dimen/je" n0:layout_height="@dimen/je" />
+    <View n0:layout_gravity="start|bottom" n0:id="@id/mirror" n0:background="@drawable/r1z" n0:layout_width="@dimen/je" n0:layout_height="@dimen/je" />
+    <View n0:layout_gravity="end|bottom" n0:id="@id/rotate" n0:background="@drawable/r1a" n0:layout_width="@dimen/je" n0:layout_height="@dimen/je" />
+</FrameLayout>

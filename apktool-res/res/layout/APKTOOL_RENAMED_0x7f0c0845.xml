@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_lyric_anim" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:id="@id/vtv_lyric_anim_title" n0:paddingTop="19.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f122bb3" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" n1:k1j="body_1"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#80edf0fd" n0:id="@id/vtv_lyric_anim_more" n0:paddingLeft="16.0dp" n0:paddingTop="19.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f122bb4" n0:drawablePadding="2.0dp" n0:drawableEnd="@drawable/APKTOOL_RENAMED_0x7f081f3c" n0:paddingHorizontal="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/view_item_space" n0:layout_width="match_parent" n0:layout_height="90.0dp" n3:layout_constraintTop_toBottomOf="@id/vtv_lyric_anim_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.MaterialRecycleView n0:orientation="horizontal" n0:id="@id/rv_lyric_anim" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="@id/view_item_space" n4:layout_constraintTop_toTopOf="@id/view_item_space"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_lyric_anim_status" n0:layout_width="match_parent" n0:layout_height="0.0dp" n5:layout_constraintBottom_toBottomOf="@id/view_item_space" n5:layout_constraintEnd_toEndOf="@id/view_item_space" n5:layout_constraintStart_toStartOf="@id/view_item_space" n5:layout_constraintTop_toTopOf="@id/view_item_space"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:id="@id/ilv_lyric_anim_loading" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/iv_lyric_anim_retry" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/m2_" n5:layout_constraintBottom_toTopOf="@id/tv_lyric_anim_retry" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" n5:layout_constraintVertical_chainStyle="packed" />
+        <TextView n0:textSize="12.0sp" n0:gravity="center" n0:id="@id/tv_lyric_anim_retry" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/qnm" n0:layout_centerHorizontal="true" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/iv_lyric_anim_retry" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

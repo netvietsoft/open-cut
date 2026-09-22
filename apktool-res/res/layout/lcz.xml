@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView n0:orientation="vertical" n0:id="@id/scrollView" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <FrameLayout n0:id="@id/layoutTextStyleSync" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.Group n0:id="@id/groupApplyStyleToAll" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:constraint_referenced_ids="layoutTextStyleSync"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="horizontal" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <com.vega.ui.MaterialRecycleView n0:id="@id/rvTextStyles" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n3:zh="true" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toTopOf="parent"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View n0:id="@id/vDividerStyles" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="10.0dp" n4:layout_constraintEnd_toEndOf="parent"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <HorizontalScrollView n0:id="@id/hsvStyleItems" n0:scrollbars="none" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+            <RadioGroup n0:orientation="horizontal" n0:id="@id/rgStyleItemsGroup" n0:paddingLeft="@dimen/cu" n0:paddingTop="7.5dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="7.5dp" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:paddingHorizontal="@dimen/cu">
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbColorBlending" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/mhu" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbTextColor" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:checked="true" n0:button="@null" n0:text="@string/APKTOOL_RENAMED_0x7f1231f6" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbBrandColor" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/APKTOOL_RENAMED_0x7f12052b" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbTextStrokeColor" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/APKTOOL_RENAMED_0x7f1231f7" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbTextLuminance" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/mnp" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbTextBgColor" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/qmy" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbTextShadowColor" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/q1u" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbTextCurve" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/APKTOOL_RENAMED_0x7f1227d5" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbTextArrangement" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/APKTOOL_RENAMED_0x7f120461" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbTextBoldItalic" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/APKTOOL_RENAMED_0x7f120517" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+                <com.vega.theme.VegaRadioButton n0:id="@id/rbTextConvertCase" n0:paddingLeft="@dimen/cu" n0:paddingTop="5.0dp" n0:paddingRight="@dimen/cu" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:button="@null" n0:text="@string/n40" n0:paddingHorizontal="@dimen/cu" style="@style/APKTOOL_RENAMED_0x7f1301dd" />
+            </RadioGroup>
+        </HorizontalScrollView>
+        <com.vega.ui.widget.WrapCurrentItemHeightViewPager n0:id="@id/vpStyleItems" n0:paddingBottom="43.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

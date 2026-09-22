@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/seekBar_layout" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060204" n0:id="@id/tv_adjustable_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/msg" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1g="text" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.RoundFrameLayout n0:id="@id/adjustable_seekbar_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n2:i1="38.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_adjustable_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <SeekBar n0:id="@id/adjustable_seekbar" n0:background="@null" n0:duplicateParentState="true" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:maxHeight="32.0dp" n0:max="100" n0:progressDrawable="@drawable/ej" n0:thumb="@null" n0:paddingStart="0.0dp" n0:paddingEnd="0.0dp" style="?android:progressBarStyleHorizontal" />
+    </com.vega.ui.widget.RoundFrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/tv_progress_value" n0:focusable="false" n0:clickable="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="0" n0:paddingEnd="10.0dp" n3:layout_constraintBottom_toBottomOf="@id/adjustable_seekbar_layout" n3:layout_constraintEnd_toEndOf="@id/adjustable_seekbar_layout" n3:layout_constraintHorizontal_bias="0.0" n3:layout_constraintTop_toTopOf="@id/adjustable_seekbar_layout" n3:k1i="bold"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

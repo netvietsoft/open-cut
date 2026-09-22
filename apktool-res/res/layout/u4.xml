@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_edit_edit_area" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/high_light_clip_list" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="118.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.aiclipper.ui.AIClipperCuttingView n0:id="@id/high_light_preview" n0:layout_width="0.0dp" n0:layout_height="56.0dp" n0:layout_marginLeft="20.0dp" n0:layout_marginRight="20.0dp" n0:layout_marginBottom="110.0dp" n0:layout_marginHorizontal="20.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/l_" n0:id="@id/empty_tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/na7" n3:layout_constraintBottom_toBottomOf="@id/high_light_preview" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="@id/high_light_clip_list"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

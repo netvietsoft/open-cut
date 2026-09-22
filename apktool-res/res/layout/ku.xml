@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/top_background" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="0.0dp" />
+    <com.bytedance.tux.widget.RadiusLayout n0:id="@id/radius_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <RelativeLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <com.bytedance.tux.navigation.TuxNavBar n0:id="@id/bar_nb" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+                <FrameLayout n0:id="@id/frame_layout_fl" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/bar_nb" />
+                <com.bytedance.tux.status.loading.TuxProgressiveLoading n0:id="@id/progress_pl" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignTop="@id/frame_layout_fl" />
+                <com.bytedance.tux.status.TuxStatusView n0:id="@id/status_view_sv" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/bar_nb" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.bytedance.tux.widget.RadiusLayout>
+</LinearLayout>

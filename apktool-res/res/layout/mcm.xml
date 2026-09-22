@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_sticker_center_footer_layout_0" n0:layout_width="match_parent" n0:layout_height="100.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="12.0dp" n0:textColor="@color/kv4" n0:layout_gravity="center" n0:id="@id/text" n0:background="@android:color/white" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/twp" />
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center" n0:id="@id/loading" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n1:lottie_fileName="loading_white.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

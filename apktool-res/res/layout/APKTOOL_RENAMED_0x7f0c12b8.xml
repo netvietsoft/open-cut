@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.edit.base.sticker.view.gesture.SelectFrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.sticker.view.gesture.NormalButton n0:layout_gravity="end|top" n0:id="@id/delete" n0:background="@android:color/transparent" n0:padding="3.0dp" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/mzl" />
+    <com.vega.edit.base.sticker.view.gesture.NormalButton n0:id="@id/edit_btn" n0:background="@android:color/transparent" n0:padding="3.0dp" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/mzm" />
+</com.vega.edit.base.sticker.view.gesture.SelectFrameLayout>

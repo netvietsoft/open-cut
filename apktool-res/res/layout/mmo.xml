@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:padding="@dimen/e1" n0:layout_width="match_parent" n0:layout_height="@dimen/ej"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.RoundImageView n0:id="@id/guide_clothes_img" n0:layout_width="78.0dp" n0:layout_height="52.0dp" n0:src="@drawable/mta" n1:i_="4.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/try_tip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="150.0dp" n0:text="@string/rer" n0:maxLines="1" n0:layout_marginStart="8.0dp" n2:nf="true" n2:autoSizeMaxTextSize="14.0dp" n2:autoSizeMinTextSize="6.0dp" n2:bp="1.0dp" n2:autoSizeTextType="uniform" n2:layout_constraintStart_toEndOf="@id/guide_clothes_img" n2:layout_constraintTop_toTopOf="@id/guide_clothes_img"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/kvk" n0:gravity="center" n0:id="@id/applyBtn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:maxWidth="60.0dp" n0:text="@string/rep" n0:maxLines="1" n0:layout_marginEnd="8.0dp" n3:ne="60.0dp" n3:nf="true" n3:autoSizeMaxTextSize="14.0dp" n3:autoSizeMinTextSize="6.0dp" n3:bp="1.0dp" n3:autoSizeTextType="uniform" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knh" n0:gravity="center" n0:id="@id/dismissBtn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:maxWidth="60.0dp" n0:text="@string/req" n0:maxLines="1" n0:layout_marginEnd="16.0dp" n4:ne="60.0dp" n4:nf="true" n4:autoSizeMaxTextSize="14.0dp" n4:autoSizeMinTextSize="6.0dp" n4:bp="1.0dp" n4:autoSizeTextType="uniform" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/applyBtn"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/mRlRoot" n0:background="@color/knt" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center_horizontal" n0:id="@id/tvTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="32.0dp" n0:layout_marginStart="30.0dp" n0:layout_marginEnd="30.0dp" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toBottomOf="@id/llContent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/llContent" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="40.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp" n2:layout_constraintBottom_toTopOf="@id/btnConfirm" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/tvTitle" n2:layout_goneMarginTop="32.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.VegaEditText n0:textSize="14.0dp" n0:textColor="@color/_3" n0:id="@id/editText" n0:background="@null" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:singleLine="true" n0:lineSpacingExtra="@dimen/pa" n0:inputType="number" />
+        <View n0:id="@id/divider" n0:background="@color/_3" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginTop="5.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#ea8943" n0:id="@id/editText_tips" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" />
+    </LinearLayout>
+    <com.vega.ui.state.pressed.PressedStateButton n0:enabled="false" n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/btnConfirm" n0:background="@drawable/qnl" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginBottom="30.0dp" n0:text="@string/q9y" n0:layout_alignParentBottom="true" n0:inputType="textCapWords" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/llContent" n3:kr3="button"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tv_disable_confirm" n0:background="@drawable/ksi" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n0:text="@string/q9y" n4:layout_constraintBottom_toBottomOf="@id/btnConfirm" n4:layout_constraintEnd_toEndOf="@id/btnConfirm" n4:layout_constraintStart_toStartOf="@id/btnConfirm" n4:layout_constraintTop_toTopOf="@id/btnConfirm"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageButton n0:id="@id/ibClose" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/p6d" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toTopOf="parent" n5:kr3="button"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

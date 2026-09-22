@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/banner_image_area" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="40.0dp" />
+    <com.bytedance.tux.input.TuxTextLayoutView n0:layout_gravity="center_horizontal" n0:id="@id/banner_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:layout_marginStart="28.0dp" n0:layout_marginEnd="28.0dp" />
+    <com.bytedance.tux.input.TuxTextLayoutView n0:layout_gravity="center_horizontal" n0:id="@id/banner_sub_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="28.0dp" n0:layout_marginEnd="28.0dp" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/banner_item_area" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="28.0dp" n0:layout_marginEnd="28.0dp" />
+    <Space n0:id="@id/bottom_space" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/dialog_framelayout" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center" n0:id="@id/loading" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/pck" />
+    <androidx.cardview.widget.CardView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:cardCornerRadius="6.0dp" n1:cardPreventCornerOverlap="false" n1:cardUseCompatPadding="false"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.bytedance.bdturing.VerifyWebView n0:id="@id/verify_webview" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <RelativeLayout n0:layout_gravity="center" n0:id="@id/view_feedback" n0:background="#ffffffff" n0:visibility="gone" n0:layout_width="300.0dp" n0:layout_height="304.0dp">
+            <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:background="#00000000" n0:layout_width="match_parent" n0:layout_height="match_parent">
+                <TextView n0:textSize="14.0sp" n0:textColor="#ff999999" n0:id="@id/text_feedback_content" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginTop="128.0dp" n0:text="" />
+                <Button n0:textSize="14.0sp" n0:id="@id/btn_feedback" n0:background="@drawable/qpy" n0:paddingLeft="2.0dp" n0:paddingRight="2.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginTop="20.0dp" n0:minWidth="60.0dp" n0:text="feedback" n0:textAllCaps="false" />
+            </LinearLayout>
+            <TextView n0:textSize="17.0sp" n0:textStyle="bold" n0:textColor="#ff222222" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="16.0dp" n0:text="Feedback" />
+            <Button n0:id="@id/btn_feedback_close" n0:background="@mipmap/l" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="8.0dp" n0:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

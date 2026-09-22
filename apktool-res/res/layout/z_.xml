@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:background="@drawable/APKTOOL_RENAMED_0x7f08126e" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="horizontal" n0:paddingTop="23.0dp" n0:paddingBottom="13.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/btn_close" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f081272" />
+        <com.vega.ui.widget.SemiBoldTextView n0:textSize="17.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/khu" n0:layout_weight="1.0" />
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/btn_done" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/l-_" />
+    </LinearLayout>
+    <com.vega.cutsameedit.biz.marketingscript.mediaselect.metainfo.MyScrollView n0:id="@id/scroll_view" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <TextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/title_product_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/kho" n1:layout_constraintBottom_toTopOf="@id/product_name" n1:layout_constraintStart_toStartOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <EditText n0:textSize="14.0dp" n0:textColor="#fafbff" n0:textColorHint="#66eef4ff" n0:id="@id/product_name" n0:background="@drawable/APKTOOL_RENAMED_0x7f081281" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" n0:hint="@string/khn" n0:maxLines="1" n0:inputType="text" n0:textCursorDrawable="@drawable/APKTOOL_RENAMED_0x7f08127e" n2:layout_constraintBottom_toTopOf="@id/title_sell_points"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <TextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/title_sell_points" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/khl" n3:layout_constraintBottom_toTopOf="@id/sell_points" n3:layout_constraintStart_toStartOf="parent"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <EditText n0:textSize="14.0dp" n0:textColor="#fafbff" n0:textColorHint="#66eef4ff" n0:gravity="top" n0:id="@id/sell_points" n0:background="@drawable/APKTOOL_RENAMED_0x7f081281" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" n0:minHeight="118.0dp" n0:hint="@string/khm" n0:maxLines="3" n0:minLines="2" n0:textCursorDrawable="@drawable/APKTOOL_RENAMED_0x7f08127e" n4:layout_constraintBottom_toTopOf="@id/title_brand_name"
+              xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/recommended_sell_points" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginEnd="12.0dp" n5:layout_constraintBottom_toBottomOf="@id/sell_points"
+              xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            <View n0:id="@id/shadow" n0:background="@drawable/APKTOOL_RENAMED_0x7f081284" n0:layout_width="24.0dp" n0:layout_height="0.0dp" n0:layout_marginEnd="12.0dp" n6:layout_constraintBottom_toBottomOf="@id/recommended_sell_points" n6:layout_constraintEnd_toEndOf="@id/sell_points" n6:layout_constraintTop_toTopOf="@id/recommended_sell_points"
+              xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            <TextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/title_brand_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/kg-" n7:layout_constraintBottom_toTopOf="@id/brand_name" n7:layout_constraintStart_toStartOf="parent"
+              xmlns:n7="http://schemas.android.com/apk/res-auto" />
+            <EditText n0:textSize="14.0dp" n0:textColor="#fafbff" n0:textColorHint="#66eef4ff" n0:gravity="top" n0:id="@id/brand_name" n0:background="@drawable/APKTOOL_RENAMED_0x7f081281" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" n0:hint="@string/APKTOOL_RENAMED_0x7f1209fd" n0:maxLines="1" n0:inputType="text" n0:textCursorDrawable="@drawable/APKTOOL_RENAMED_0x7f08127e" n8:layout_constraintBottom_toTopOf="@id/title_target_audience"
+              xmlns:n8="http://schemas.android.com/apk/res-auto" />
+            <TextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/title_target_audience" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/khs" n9:layout_constraintBottom_toTopOf="@id/target_audience" n9:layout_constraintStart_toStartOf="parent"
+              xmlns:n9="http://schemas.android.com/apk/res-auto" />
+            <EditText n0:textSize="14.0dp" n0:textColor="#fafbff" n0:textColorHint="#66eef4ff" n0:gravity="top" n0:id="@id/target_audience" n0:background="@drawable/APKTOOL_RENAMED_0x7f081281" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" n0:hint="@string/kht" n0:maxLines="2" n0:minLines="2" n0:textCursorDrawable="@drawable/APKTOOL_RENAMED_0x7f08127e" n10:layout_constraintBottom_toTopOf="@id/title_price"
+              xmlns:n10="http://schemas.android.com/apk/res-auto" />
+            <TextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/title_price" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/kg_" n11:layout_constraintBottom_toTopOf="@id/price" n11:layout_constraintStart_toStartOf="parent"
+              xmlns:n11="http://schemas.android.com/apk/res-auto" />
+            <EditText n0:textSize="14.0dp" n0:textColor="#fafbff" n0:textColorHint="#66eef4ff" n0:gravity="top" n0:id="@id/price" n0:background="@drawable/APKTOOL_RENAMED_0x7f081281" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" n0:hint="@string/khk" n0:maxLines="1" n0:inputType="numberDecimal" n0:textCursorDrawable="@drawable/APKTOOL_RENAMED_0x7f08127e" n12:layout_constraintBottom_toTopOf="@id/title_discount_activity"
+              xmlns:n12="http://schemas.android.com/apk/res-auto" />
+            <TextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/title_discount_activity" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/khp" n13:layout_constraintBottom_toTopOf="@id/discount_activity" n13:layout_constraintStart_toStartOf="parent"
+              xmlns:n13="http://schemas.android.com/apk/res-auto" />
+            <EditText n0:textSize="14.0dp" n0:textColor="#fafbff" n0:textColorHint="#66eef4ff" n0:gravity="top" n0:id="@id/discount_activity" n0:background="@drawable/APKTOOL_RENAMED_0x7f081281" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="64.0dp" n0:hint="@string/khq" n0:maxLines="1" n0:inputType="text" n0:textCursorDrawable="@drawable/APKTOOL_RENAMED_0x7f08127e" n14:layout_constraintBottom_toBottomOf="parent"
+              xmlns:n14="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.vega.cutsameedit.biz.marketingscript.mediaselect.metainfo.MyScrollView>
+</LinearLayout>

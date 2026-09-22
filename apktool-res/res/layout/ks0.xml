@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="45.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/ll_container" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="45.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:gravity="start|center" n0:id="@id/tv_title" n0:layout_width="86.0dp" n0:layout_height="57.0dp" n0:layout_marginTop="7.5dp" n0:text="@string/kh" n0:maxLines="2" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="13.0dp" />
+        <com.vega.ui.SliderView n0:id="@id/sv_slider" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:layout_width="0.0dp" n0:layout_height="57.0dp" n0:layout_marginTop="7.5dp" n0:layout_weight="1.0" n0:layout_marginEnd="14.0dp" n0:paddingHorizontal="10.0dp" n1:APKTOOL_RENAMED_0x7f0404f1="true" n1:kpt="true" n1:kp6="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

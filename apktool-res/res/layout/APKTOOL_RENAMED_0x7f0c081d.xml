@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="64.0dp" n0:layout_height="80.0dp" n0:paddingVertical="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/icon_view" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kd8="@color/APKTOOL_RENAMED_0x7f06050f"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06050f" n0:gravity="center" n0:id="@id/title_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxWidth="64.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/icon_view"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

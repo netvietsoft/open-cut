@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:background="@drawable/lf6" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.ui.widget.RoundCornerImageView n0:layout_width="match_parent" n0:layout_height="142.0dp" n0:src="@drawable/p62" n1:klh="4.0dp" n1:kuf="4.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/sg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/l7h" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#cc000000" n0:gravity="center" n0:layout_width="206.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12045b" n2:kks="20.0dp"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/rate" n0:background="@drawable/kr5" n0:layout_width="206.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="20.0dp" n0:text="@string/qzf" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#99000000" n0:id="@id/give_feedback" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp" n0:layout_marginBottom="20.0dp" n0:text="@string/q9u" />
+    </LinearLayout>
+    <ImageView n0:layout_gravity="end|top" n0:id="@id/close" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/ouz" n0:layout_marginEnd="8.0dp" />
+</FrameLayout>

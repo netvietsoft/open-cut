@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/brandCategoryExpandLayout" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginLeft="6.0dp" n0:layout_marginRight="6.0dp" n0:paddingEnd="8.0dp" n0:layout_marginHorizontal="6.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:id="@id/brandCategoryExpandIcon" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/l5d" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#161722" n0:ellipsize="end" n0:gravity="center" n0:id="@id/cloudBrandCategorySize" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="300.0dp" n0:lines="1" n0:includeFontPadding="false" n0:layout_marginStart="6.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/brandCategoryExpandIcon" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:id="@id/brandCategoryHelpIcon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/l5c" n0:layout_marginStart="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toEndOf="@id/cloudBrandCategorySize" n3:layout_constraintTop_toTopOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rvCloudBrandFile" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <FrameLayout n0:id="@id/cloudBrandCategoryMoreLayout" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <com.vega.theme.text.VegaTextView n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/cloudBrandCategoryLoadMore" n0:background="@drawable/ksu" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f121a3f" n0:drawablePadding="4.0dp" n0:drawableEnd="@drawable/l5b" n0:layout_marginVertical="4.0dp" n0:paddingHorizontal="16.0dp" />
+        </FrameLayout>
+        <com.vega.ui.widget.ItemLoadingView n0:gravity="center" n0:layout_gravity="center" n0:id="@id/cloudBrandCategoryLoading" n0:tag="loading" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="10.0dp" n0:layout_marginTop="18.0dp" n0:layout_marginBottom="18.0dp" n0:layout_marginVertical="18.0dp" />
+    </FrameLayout>
+</LinearLayout>

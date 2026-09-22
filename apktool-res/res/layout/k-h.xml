@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/fl_insta_snap_root" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/ll_insta_snap_popup" n0:layout_width="240.0dp" n0:layout_height="wrap_content" n0:alpha="0.0">
+        <com.vega.ui.widget.RoundFrameLayout n0:layout_gravity="center" n0:background="#ebffe357" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:i1="12.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <TextView n0:textSize="14.0dp" n0:textColor="#000000" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q1_" />
+        </com.vega.ui.widget.RoundFrameLayout>
+        <ImageView n0:layout_width="20.0dp" n0:layout_height="7.0dp" n0:src="@drawable/ohx" n0:layout_marginStart="12.0dp" />
+    </LinearLayout>
+</FrameLayout>

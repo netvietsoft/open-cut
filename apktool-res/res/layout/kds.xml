@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.favorite.FavoriteView n0:id="@id/itemContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/u3"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/image" n0:background="@drawable/k69" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:src="@drawable/mol" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/none_icon" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:src="@drawable/ok_" n0:scaleType="centerInside" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.widget.MarqueeTextView n0:textSize="12.0dp" n0:textColor="#fafbff" n0:ellipsize="end" n0:id="@id/marque_tone_clone_name" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="1" n0:scrollHorizontally="true" n0:singleLine="true" n0:includeFontPadding="false" n0:marqueeRepeatLimit="marquee_forever" n0:fontFamily="sans-serif-medium" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="@id/none_icon" n1:layout_constraintStart_toEndOf="@id/none_icon" n1:layout_constraintTop_toTopOf="@id/none_icon" />
+    </com.vega.edit.base.favorite.FavoriteView>
+</androidx.constraintlayout.widget.ConstraintLayout>

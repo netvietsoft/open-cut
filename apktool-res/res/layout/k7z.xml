@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:orientation="vertical" n0:id="@id/rootView" n0:background="@color/e3" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/informationTitle" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <com.vega.ui.AlphaButton n0:id="@id/ivClose" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m67" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/kmc" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/kd-" n0:maxEms="9" n0:singleLine="true" n0:includeFontPadding="false" />
+        <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/br" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="right" n0:id="@id/confirm" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/lz6" n0:maxEms="9" n0:singleLine="true" n0:includeFontPadding="false" n0:layout_marginEnd="20.0dp" n1:kr3="none"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <View n0:layout_gravity="bottom" n0:id="@id/SplitLine" n0:background="@color/APKTOOL_RENAMED_0x7f060639" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+    </FrameLayout>
+    <RelativeLayout n0:id="@id/changeLvNumFl" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_below="@id/informationTitle">
+        <FrameLayout n0:id="@id/block" n0:layout_width="match_parent" n0:layout_height="73.0dp">
+            <com.vega.theme.VegaEditText n0:textSize="14.0dp" n0:textColor="@color/bs" n0:textColorHint="@color/bt" n0:layout_gravity="center_vertical" n0:id="@id/changeLvNumEt" n0:background="@null" n0:layout_width="300.0dp" n0:layout_height="match_parent" n0:hint="@string/APKTOOL_RENAMED_0x7f122edd" n0:singleLine="true" n0:maxLength="16" n0:layout_marginStart="20.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/bu" n0:layout_gravity="end|center" n0:id="@id/changeLvNumTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="20.0dp" />
+            <ImageView n0:layout_gravity="end|center" n0:id="@id/changeLvNumIv" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/ott" n0:layout_marginEnd="65.0dp" />
+            <View n0:layout_gravity="bottom" n0:id="@id/SplitLine2" n0:background="@color/ev" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginLeft="15.0dp" n0:layout_marginRight="15.0dp" n0:layout_marginHorizontal="15.0dp" />
+        </FrameLayout>
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/el" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/rvp" n0:layout_below="@id/block" n0:layout_marginStart="20.0dp" />
+    </RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/progress_loading" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n0:scaleType="centerCrop" n0:layout_centerInParent="true" n2:lottie_autoPlay="true" n2:lottie_fileName="lv_loading.json" n2:lottie_loop="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

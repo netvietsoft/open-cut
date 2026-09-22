@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/groupAdvance" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="52.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/team_template_divider" n0:background="@color/APKTOOL_RENAMED_0x7f060639" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:id="@id/tvTemplateAdvance" n0:text="@string/n-" n0:layout_marginStart="15.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f130534"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/newFuncBot" n0:background="@drawable/l_z" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:layout_marginStart="6.0dp" n3:layout_constraintBottom_toBottomOf="@id/tvTemplateAdvance" n3:layout_constraintLeft_toRightOf="@id/tvTemplateAdvance" n3:layout_constraintTop_toTopOf="@id/tvTemplateAdvance"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_enter_config" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/mtm" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

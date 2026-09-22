@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_gravity="bottom" n0:id="@id/dialogRoot" n0:background="@color/_d" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/contentRoot" n0:background="@drawable/k0a" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:outlineProvider="background" n0:clipToOutline="true">
+        <ImageView n0:id="@id/guideImage" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:src="@drawable/k0y" n0:scaleType="centerCrop" n1:layout_constraintDimensionRatio="h,375:211" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/closeBtn" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/niz" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kr3="button"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="22.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/titleText" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="24.0dp" n0:text="@string/kdx" n0:includeFontPadding="false" n0:lineSpacingMultiplier="1.25" n0:letterSpacing="0.013" n0:layout_marginHorizontal="24.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/guideImage" n3:k1i="bold"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/y8" n0:gravity="start" n0:id="@id/tipsText" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="24.0dp" n0:text="@string/kdw" n0:includeFontPadding="false" n0:lineSpacingMultiplier="1.5" n0:letterSpacing="0.002" n0:layout_marginHorizontal="24.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/titleText"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tryNow" n0:background="@drawable/k0z" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="46.0dp" n0:text="@string/kdv" n0:includeFontPadding="false" n0:letterSpacing="0.002" n0:layout_marginHorizontal="16.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/tipsText" n5:kr3="button" n5:k1i="medium"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

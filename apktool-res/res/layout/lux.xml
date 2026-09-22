@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805a4" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/input_layout_material" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <FrameLayout n0:layout_gravity="start|bottom" n0:id="@id/input_material_container" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:layout_marginStart="16.0dp" />
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="start|top" n0:id="@id/input_material_delete" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/mbj" n0:layout_marginStart="48.0dp" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/input_text_container" n0:clipChildren="true" n0:clipToPadding="true" n0:layout_width="match_parent" n0:layout_height="52.0dp">
+        <com.vega.theme.VegaEditText n0:textSize="16.0sp" n0:textColor="@color/ml" n0:textColorHint="@color/l_" n0:gravity="start|top" n0:id="@id/tv_agent_input_text" n0:background="@null" n0:paddingTop="16.0dp" n0:paddingBottom="0.0dp" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:includeFontPadding="false" n0:overScrollMode="never" n0:textCursorDrawable="@drawable/lye" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n0:lineHeight="24.0dp" n1:k1i="regular" n1:k1j="sub_title"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/agent_record_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="52.0dp">
+            <View n0:id="@id/av_agent_record_loading" n0:background="@drawable/APKTOOL_RENAMED_0x7f081f25" n0:layout_width="18.0dp" n0:layout_height="18.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/l_" n0:id="@id/tv_agent_record_status" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="6.0dp" n2:k1i="medium" n2:k1j="sub_title"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_agent_input_add" n0:padding="6.0dp" n0:visibility="visible" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/mba" n0:layout_marginStart="12.0dp" />
+        <Space n0:layout_width="0.0dp" n0:layout_height="1.0dp" n0:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_agent_input_voice" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/mbf" n0:contentDescription="@null" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_agent_input_send" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/mbd" n0:contentDescription="@null" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="12.0dp" />
+    </LinearLayout>
+</LinearLayout>

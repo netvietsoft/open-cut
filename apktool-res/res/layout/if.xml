@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingLeft="20.0dp" n0:paddingTop="20.0dp" n0:paddingRight="20.0dp" n0:layout_width="300.0dp" n0:layout_height="wrap_content" n0:paddingHorizontal="20.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:id="@id/label_birthday" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Birthday:" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:id="@id/text_birthday" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:inputType="text" n2:layout_constraintStart_toEndOf="@id/label_birthday" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:id="@id/label_nickname" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="Nickname (optional)" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/label_birthday"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <EditText n0:id="@id/editor_nickname" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:hint="Enter nickname (optional)" n0:inputType="text" n4:layout_constraintBottom_toBottomOf="@id/label_nickname" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/label_nickname" n4:layout_constraintTop_toTopOf="@id/label_nickname"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

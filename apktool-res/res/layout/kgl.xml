@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:layout_gravity="end|center" n0:orientation="horizontal" n0:id="@id/ai_creation_credits_container" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805e4" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_ai_creation_credits_icon" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/m1p" />
+    <com.vega.ui.rollingtv.RollingTextView n0:textSize="14.0sp" n0:textColor="@color/mk" n0:gravity="center_vertical" n0:id="@id/tv_ai_creation_credits_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" />
+    <View n0:id="@id/view_ai_creation_credits_separator" n0:background="@color/kv" n0:layout_width="0.5dp" n0:layout_height="8.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" />
+    <TextView n0:textSize="14.0sp" n0:textColor="@color/mk" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tv_ai_creation_credits_upgrade" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/cx" n0:maxLines="1" n0:includeFontPadding="false" />
+</LinearLayout>

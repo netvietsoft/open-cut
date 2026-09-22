@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="5.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.GroupNameSelectorLayout n0:id="@id/groupSelector" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.ColorSelectView n0:id="@id/csvTextColor" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="0.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/groupSelector" style="@style/uf"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Barrier n0:id="@id/bTextBarrierBrandStyle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:barrierDirection="end" n3:barrierMargin="14.0dp" n3:constraint_referenced_ids="tvFontSizeDesc,tvTextAlphaDesc"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvFontSizeDesc" n0:text="@string/mkc" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toBottomOf="@id/svFontSizeDesc" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/svFontSizeDesc" style="@style/yo"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svFontSizeDesc" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginEnd="14.0dp" n5:APKTOOL_RENAMED_0x7f04046d="false" n5:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toEndOf="@id/bTextBarrierBrandStyle" n5:layout_constraintTop_toBottomOf="@id/csvTextColor" n5:kkt="@color/APKTOOL_RENAMED_0x7f060639" n5:kp6="true"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvTextAlphaDesc" n0:text="@string/rob" n0:layout_marginStart="16.0dp" n6:layout_constraintBottom_toBottomOf="@id/svTextAlpha" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="@id/svTextAlpha" style="@style/yo"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svTextAlpha" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:layout_marginEnd="14.0dp" n7:APKTOOL_RENAMED_0x7f04046d="false" n7:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toEndOf="@id/bTextBarrierBrandStyle" n7:layout_constraintTop_toBottomOf="@id/svFontSizeDesc" n7:kkt="@color/APKTOOL_RENAMED_0x7f060639" n7:kp6="true"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_e" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/tvNoMoreEffect" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f120532" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/groupSelector"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.CollectionLoginView n0:id="@id/colorBrandTikTokLogin" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintLeft_toLeftOf="parent" n9:layout_constraintRight_toRightOf="parent" n9:layout_constraintTop_toTopOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/header_root" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/author_info_container" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_goneMarginBottom="4.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/author_avatar" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n1:roundAsCircle="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060462" n0:ellipsize="end" n0:id="@id/author_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="122.0dp" n0:singleLine="true" n0:layout_marginStart="4.0dp" style="@style/bu" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/export_group" n0:background="@drawable/k76" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/lv1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/export_left_shadow" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c56" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="36.0dp" n3:layout_constraintBottom_toBottomOf="@id/ivExport" n3:layout_constraintEnd_toStartOf="@id/ivExport" n3:layout_constraintTop_toTopOf="@id/ivExport"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/export_shadow" n0:background="@color/sg" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="@id/export_left_shadow" n4:layout_constraintEnd_toEndOf="@id/ivExport" n4:layout_constraintStart_toStartOf="@id/ivExport" n4:layout_constraintTop_toTopOf="@id/export_left_shadow"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/exportTrialMarkView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n5:layout_constraintEnd_toEndOf="@id/export_group" n5:layout_constraintTop_toTopOf="parent" n5:kml="small" n5:kmm="button" n5:kwv="true"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="9.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/ivExportLabel" n0:background="@drawable/k77" n0:visibility="invisible" n0:layout_width="49.0dp" n0:layout_height="16.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginEnd="4.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

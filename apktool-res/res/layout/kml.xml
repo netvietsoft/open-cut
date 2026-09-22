@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@drawable/kti" n0:layout_width="100.0dp" n0:layout_height="100.0dp" n0:layout_marginEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:layout_gravity="center" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <ImageView n0:layout_gravity="center" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/m_q" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/create_scene_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ld-" />
+    </LinearLayout>
+</FrameLayout>

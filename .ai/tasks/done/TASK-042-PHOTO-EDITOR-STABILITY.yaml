@@ -1,0 +1,19 @@
+task_id: "TASK-042-PHOTO-EDITOR-STABILITY"
+phase: "P1 - Photo Editor Stability, OOM Protection, Pivot Contrast & Honest Feedback"
+title: "Khắc Phục Lỗi Báo Thành Công Sai Khi Lưu Ảnh, Ngăn Ngừa OOM Trên Main Thread, Xử Lý Điểm Chuẩn Pivot Contrast và Cập Nhật Landmark Đúng Hướng"
+assigned_to:
+  - "Agent 3 (Frontend / Android)"
+  - "Agent 7 (Fixer)"
+status: "RUNNING"
+started_at: "2026-09-22T11:57:00+07:00"
+priority: "HIGH"
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/photo/PhotoEditorComponent.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/photo/PhotoFilterController.java"
+acceptance_criteria:
+  - "Khắc phục lỗi P1: Sửa khối catch trong saveCurrentPhoto() để báo lỗi chân thực khi ngoại lệ xảy ra, loại bỏ toast thành công giả dối, và dùng OpenCutFileProvider cho intent mở ảnh"
+  - "Khắc phục lỗi P2: Chuyển decode bitmap và nén lưu file ảnh sang background Executor, cập nhật giao diện thông qua mainHandler an toàn"
+  - "Khắc phục lỗi P3: Chủ động gọi recycle() cho các intermediate Bitmap trong các preview effect và xoay/lật ảnh để giải phóng bộ nhớ, phòng ngừa OutOfMemoryError"
+  - "Khắc phục lỗi P6: Sửa ma trận ColorMatrix contrast quanh pivot trung tâm 127.5f trong PhotoFilterController để tránh cháy trắng hoặc tối đen toàn ảnh"
+  - "Khắc phục lỗi P7: Làm mới landmark và xóa basePreEffectBitmap khi xoay/lật ảnh để các hiệu ứng chân dung tính toán chính xác"
+  - "Tuân thủ nghiêm ngặt Luật 12 AGENTS.md (chú thích song ngữ EN + VN)"

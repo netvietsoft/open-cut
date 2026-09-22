@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:background="@drawable/kcj" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundCornerImageView n0:id="@id/header_image" n0:layout_width="match_parent" n0:layout_height="211.0dp" n0:src="@drawable/n1f" n0:scaleType="centerCrop" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:klh="16.0dp" n1:kuf="16.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/header_image"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="vertical" n0:id="@id/title_description_container" n0:paddingLeft="24.0dp" n0:paddingRight="24.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="24.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="22.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/tv_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/pu7" n0:lineSpacingExtra="5.5dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textStyle="normal" n0:textColor="#b2141d2d" n0:id="@id/tv_description" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/pu6" n0:lineSpacingExtra="6.0dp" />
+        </LinearLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/email_invitation_input_container" n0:paddingLeft="24.0dp" n0:paddingTop="24.0dp" n0:paddingRight="24.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="24.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/title_description_container">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="normal" n0:textColor="#090c14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pu-" />
+            <com.vega.cloud.view.CloudTagInputView n0:id="@id/email_input_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:minHeight="44.0dp" />
+            <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/email_invite_limit_message_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp">
+                <androidx.appcompat.widget.AppCompatImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/ncp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textStyle="normal" n0:textColor="#ff303d" n0:id="@id/email_invite_limit_message" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:lineSpacingExtra="6.0dp" n0:layout_marginStart="4.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.vega.theme.VegaButton n0:textSize="16.0sp" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/btn_send_invitation" n0:background="@drawable/kgt" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12275c" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/email_invitation_input_container" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/btn_close" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nco" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

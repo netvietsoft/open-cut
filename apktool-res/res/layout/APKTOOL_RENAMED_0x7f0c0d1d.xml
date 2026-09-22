@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/promote_layout" n0:layout_width="match_parent" n0:layout_height="@dimen/rb"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.VegaCheckBox n0:id="@id/cb_promote_select" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginVertical="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f1304a8"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ml" n0:ellipsize="end" n0:gravity="center_vertical" n0:id="@id/promote_text" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:text="@string/p_9" n0:maxLines="2" n0:includeFontPadding="false" n0:layout_marginEnd="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/promote_discount_text" n2:layout_constraintStart_toEndOf="@id/cb_promote_select" n2:layout_constraintTop_toTopOf="parent" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/promote_discount_text" n0:background="@drawable/lmj" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p_3" n0:paddingStart="4.0dp" n0:paddingEnd="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/promote_info" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/promote_info" n0:paddingTop="14.0dp" n0:paddingBottom="14.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/n2t" n0:scaleType="center" n0:paddingStart="8.0dp" n0:paddingEnd="16.0dp" n0:paddingVertical="14.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

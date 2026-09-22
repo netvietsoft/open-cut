@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/quick_panel_container" n0:background="@drawable/lop" n0:paddingTop="6.0dp" n0:paddingBottom="6.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingVertical="6.0dp">
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/quick_panel_loading_container" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/quick_panel_loading" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="cc_loading_w.json" n1:lottie_loop="true" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#66e5e9fa" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/mzj" n1:k1i="medium" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/quick_panel_error_container" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/kee" n2:kd8="#66e5e9fa" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#66e5e9fa" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/k7z" n2:k1i="medium" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#ccfafbff" n0:gravity="center" n0:id="@id/quick_panel_retry_btn" n0:background="@drawable/loq" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/qce" n0:paddingHorizontal="16.0dp" n2:k1i="medium" />
+        </LinearLayout>
+        <include n0:id="@id/quick_panel_create_btn" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintTop_toTopOf="parent" layout="@layout/ky5"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/quick_panel_list" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:overScrollMode="never" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/quick_panel_create_btn"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

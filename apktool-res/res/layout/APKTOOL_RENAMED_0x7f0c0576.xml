@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@android:color/black" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ivCoverPreview" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:actualImageScaleType="fitCenter"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/layoutCoverPreviewTopBar" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/ivCoverPreviewBack" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m64" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kr3="none"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.state.pressed.PressedStateConstraintLayout n0:id="@id/groupCoverPreviewMusic" n0:background="@drawable/ka1" n0:focusable="true" n0:clickable="true" n0:layout_width="148.0dp" n0:layout_height="36.0dp" n3:layout_constraintBottom_toBottomOf="@id/ivCoverPreviewBack" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="@id/ivCoverPreviewBack"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:id="@id/ivCoverPreviewMusicIcon" n0:background="@drawable/opq" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginStart="6.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/viewCoverPreviewMusicSeparate" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+            <View n0:id="@id/viewCoverPreviewMusicSeparate" n0:background="@drawable/APKTOOL_RENAMED_0x7f08090e" n0:layout_width="1.0dp" n0:layout_height="4.0dp" n0:layout_marginStart="26.0dp" n0:layout_marginEnd="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/tvCoverPreviewMusicTitle" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+            <com.vega.ui.widget.MarqueeTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@android:color/white" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tvCoverPreviewMusicTitle" n0:focusable="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/kx_" n0:maxLines="1" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/flCoverPreviewMusicFlagContainer" n3:layout_constraintStart_toEndOf="@id/viewCoverPreviewMusicSeparate" n3:layout_constraintTop_toTopOf="parent" n3:layout_goneMarginEnd="6.0dp" />
+            <FrameLayout n0:id="@id/flCoverPreviewMusicFlagContainer" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="6.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/tvCoverPreviewMusicTitle" n3:layout_constraintTop_toTopOf="parent">
+                <com.airbnb.lottie.LottieAnimationView n0:id="@id/lottieCoverPreviewMusicPlaying" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n3:lottie_autoPlay="true" n3:lottie_fileName="lite_music_playing.json" n3:lottie_loop="true" />
+            </FrameLayout>
+        </com.vega.ui.state.pressed.PressedStateConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:id="@id/flCoverPreviewMusicPanelContainer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</FrameLayout>

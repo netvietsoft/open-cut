@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center" n0:layout_gravity="center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="20.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.CardItemLoadingView n0:id="@id/card_lottie" n0:layout_width="20.0dp" n0:layout_height="match_parent" n0:layout_marginEnd="7.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#6618334e" n0:gravity="center" n0:id="@id/card_text" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/mz5" n0:includeFontPadding="false" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_in_painting_loading_panel" n0:background="#262626" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="329.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/in_painting_loading_panel_close" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="14.0dp" n0:layout_marginBottom="14.0dp" n0:src="@drawable/l5n" n0:scaleType="fitCenter" n0:layout_marginEnd="16.0dp" n0:layout_marginVertical="14.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:id="@id/in_painting_loading_panel_title" n0:paddingTop="18.0dp" n0:paddingBottom="18.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ogf" n0:paddingVertical="18.0dp" n2:layout_constraintBottom_toBottomOf="@id/in_painting_loading_panel_close" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/in_painting_loading_panel_close"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/in_painting_loading_panel_divide" n0:background="#29ffffff" n0:layout_width="match_parent" n0:layout_height="0.5dp" n3:layout_constraintTop_toBottomOf="@id/in_painting_loading_panel_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" n0:paddingVertical="4.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/in_painting_loading_panel_divide"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.AILoadingAnimBallView n0:id="@id/in_painting_loading_panel_sd" n0:layout_width="42.0dp" n0:layout_height="42.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintHorizontal_chainStyle="packed" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:layout_constraintVertical_chainStyle="packed" />
+        <View n0:background="@drawable/ir" n0:layout_width="90.0dp" n0:layout_height="90.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:layout_constraintVertical_chainStyle="packed" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/in_painting_loading_panel_vt" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/in_painting_loading_panel_sd" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#80edf0fd" n0:id="@id/in_painting_loading_panel_vt_detail" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/oly" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/in_painting_loading_panel_vt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

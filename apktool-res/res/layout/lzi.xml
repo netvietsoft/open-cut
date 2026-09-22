@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/lz1" />
+    <FrameLayout n0:id="@id/mtrl_calendar_selection_frame" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center_horizontal" n0:id="@id/mtrl_calendar_year_selector_frame" n0:scrollbars="none" n0:layout_width="wrap_content" n0:layout_height="match_parent" />
+        <LinearLayout n0:orientation="vertical" n0:id="@id/mtrl_calendar_day_selector_frame" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+            <include layout="@layout/lzh" />
+            <include layout="@layout/lz2" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

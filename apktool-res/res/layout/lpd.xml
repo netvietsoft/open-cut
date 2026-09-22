@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:layout_gravity="center_horizontal" n0:orientation="horizontal" n0:background="@drawable/ltn" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:ellipsize="marquee" n0:id="@id/tv_select_music" n0:paddingTop="5.0dp" n0:paddingBottom="5.0dp" n0:focusable="true" n0:focusableInTouchMode="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="116.0dp" n0:text="@string/m7" n0:scrollHorizontally="true" n0:singleLine="true" n0:shadowColor="#2e161823" n0:shadowDx="0.0" n0:shadowDy="1.0" n0:shadowRadius="2.0" n0:drawablePadding="6.0dp" n0:marqueeRepeatLimit="marquee_forever" n0:drawableStart="@drawable/pdf" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n1:kr3="button"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/music_divide_line" n0:background="#19ffffff" n0:layout_width="1.0dp" n0:layout_height="match_parent" n0:layout_marginStart="-1.0dp" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/btn_delete_music" n0:paddingTop="7.0dp" n0:paddingBottom="7.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/pj9" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

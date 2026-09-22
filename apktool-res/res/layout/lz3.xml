@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/lzh" />
+    <View n0:background="?g_" n0:layout_width="match_parent" n0:layout_height="1.0dp" />
+    <include layout="@layout/lz2" />
+</LinearLayout>

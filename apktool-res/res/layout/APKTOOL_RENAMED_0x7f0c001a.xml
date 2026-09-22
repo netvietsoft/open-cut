@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/container" n0:fitsSystemWindows="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout n0:id="@id/coordinator" n0:fitsSystemWindows="false" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <View n0:id="@id/touch_outside" n0:focusable="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:soundEffectsEnabled="false" n0:importantForAccessibility="no" />
+        <com.bytedance.tux.widget.RadiusLayout n0:id="@id/radius_layout" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+            <com.bytedance.tux.widget.WindowInsetsFrameLayout n0:id="@id/window_insets_layout" n0:fitsSystemWindows="true" n0:layout_width="match_parent" n0:layout_height="match_parent">
+                <com.bytedance.tux.widget.ScrollableContentWithNavBarLayout n0:id="@id/sheet_content" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            </com.bytedance.tux.widget.WindowInsetsFrameLayout>
+        </com.bytedance.tux.widget.RadiusLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

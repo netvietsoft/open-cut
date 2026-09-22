@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="12.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/text_group" n0:background="@drawable/k2g" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="7.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:layout_width="160.0dp" n0:layout_height="wrap_content" n0:text="@string/pvq" n0:lineHeight="18.199982dp" />
+        <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/mtf" n0:layout_marginStart="12.0dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ImageView n0:id="@id/triangle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/mt0" n0:layout_marginStart="8.0dp" n2:layout_constraintBottom_toTopOf="@id/text_group" n2:layout_constraintStart_toStartOf="@id/text_group"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

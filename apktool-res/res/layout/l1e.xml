@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_panel_tone_clone" n0:background="@color/APKTOOL_RENAMED_0x7f06047a" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/tone_clone_title_bar" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/fl_manage" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:paddingHorizontal="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/vtv_manage" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p5a" n1:k1i="medium" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:layout_gravity="center" n0:id="@id/vtv_manage_done" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p42" n1:k1i="medium" />
+        </FrameLayout>
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:id="@id/tv_tone_clone_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p7y" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/iv_ok" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/ppb" n0:paddingHorizontal="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ccffffff" n0:gravity="center" n0:id="@id/vtv_manage_done_new" n0:paddingLeft="15.0dp" n0:paddingRight="15.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/p42" n0:paddingHorizontal="15.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+        <View n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/tone_clone_title_bar" n2:kr3="none"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_tone_clone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="16.0dp" n3:layout_constraintBottom_toTopOf="@id/cl_bottom_bar" n3:layout_constraintTop_toBottomOf="@id/tone_clone_title_bar"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_bottom_bar" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/tone_clone_confirm_bar" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@drawable/lid" n0:gravity="center" n0:id="@id/tone_clone_confirm" n0:background="@drawable/lcb" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122a7c" n0:paddingStart="24.0dp" n0:paddingEnd="24.0dp" n4:layout_constraintBottom_toTopOf="@id/tone_clone_legal" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+            <include n0:id="@id/tone_clone_legal" layout="@layout/l1i" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include layout="@layout/ltu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:background="@drawable/APKTOOL_RENAMED_0x7f0831e2" n0:paddingLeft="30.0dp" n0:paddingRight="30.0dp" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/tv_title_keep_epilogue" n0:paddingLeft="30.0dp" n0:paddingRight="30.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="30.0dp" n0:text="@string/lah" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/l-" n0:gravity="center" n0:id="@id/tvKeepEpilogue" n0:background="@drawable/qpo" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="20.0dp" n0:text="@string/mwl" n0:layout_marginStart="3.0dp" n0:layout_marginEnd="3.0dp" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_title_keep_epilogue" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="16.0dp" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/tvDeleteEpilogue" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="@dimen/pz" n0:layout_marginBottom="@dimen/py" n0:text="@string/l7e" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="@id/tvKeepEpilogue" n3:layout_constraintRight_toRightOf="@id/tvKeepEpilogue" n3:layout_constraintTop_toBottomOf="@id/tvKeepEpilogue" n3:kr3="button"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

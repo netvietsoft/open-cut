@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_action_like" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/omz" />
+    <ImageView n0:id="@id/iv_action_dislike" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/omv" n0:layout_marginStart="5.0dp" />
+    <ImageView n0:id="@id/iv_action_regenerate" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/omb" n0:layout_marginStart="5.0dp" />
+    <ImageView n0:id="@id/iv_action_refer" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/oma" n0:layout_marginStart="5.0dp" />
+    <ImageView n0:id="@id/iv_action_download" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/omw" n0:layout_marginStart="5.0dp" />
+    <ImageView n0:id="@id/iv_action_post" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:src="@drawable/q1w" n0:layout_marginStart="9.0dp" n0:layout_marginVertical="4.0dp" />
+</LinearLayout>

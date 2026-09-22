@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_middle_page_filter_fragment_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/editFilterContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/editPanel" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f07045e" n1:layout_constraintTop_toTopOf="parent">
+            <com.xt.retouch.baseui.view.NoInterceptDownHorizontalScrollView n0:orientation="horizontal" n0:id="@id/horizontal_auto_scroll_view" n0:background="@color/kor" n0:visibility="visible" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f07045e" n0:overScrollMode="never" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                <LinearLayout n0:layout_gravity="top" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="27.0dp">
+                    <RelativeLayout n0:layout_gravity="top" n0:id="@id/filter_list_container" n0:descendantFocusability="blocksDescendants" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp">
+                        <androidx.recyclerview.widget.RecyclerView n0:id="@id/selectedFilterList" n0:layout_width="wrap_content" n0:layout_height="72.0dp" />
+                    </RelativeLayout>
+                    <View n0:layout_gravity="center_vertical" n0:id="@id/div_item" n0:background="@color/ktk" n0:layout_width="0.5dp" n0:layout_height="44.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="10.0dp" />
+                    <RelativeLayout n0:layout_gravity="center_vertical" n0:descendantFocusability="blocksDescendants" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp">
+                        <androidx.recyclerview.widget.RecyclerView n0:id="@id/editPanelItemList" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.xt.retouch.baseui.view.NoInterceptDownHorizontalScrollView>
+            <View n0:background="@drawable/r9m" n0:layout_width="12.0dp" n0:layout_height="70.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

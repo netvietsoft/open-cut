@@ -1,0 +1,3814 @@
+{
+    "name": "ga",
+    "currency": {
+        "Standard": "¤{0}",
+        "StandardNoCurrency": "#,##0.00",
+        "compact": {
+            "short": "¤{0}",
+            "shortNoSymbol": "¤ {0}",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "¤ {0}–{1}"
+			},
+			"approximately": {
+				"short": "~¤ {0}"
+			},
+			"atLeast": {
+				"short": "¤ {0}+"
+			},
+			"atMost": {
+				"short": "≤¤ {0}"
+			}
+		},
+        "currencyList": {
+            "ADP": {
+                "symbol": {
+                    "value": "ADP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peseta Andóra",
+                    "one": "pheseta Andóra",
+                    "two": "pheseta Andóra",
+                    "few": "pheseta Andóra",
+                    "many": "bpeseta Andóra"
+                },
+                "digits": 0
+            },
+            "AED": {
+                "symbol": {
+                    "value": "AED",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dirham Aontas na nÉimíríochtaí Arabacha",
+                    "one": "dirham Aontas na nÉimíríochtaí Arabacha",
+                    "two": "dhirham Aontas na nÉimíríochtaí Arabacha",
+                    "few": "dhirham Aontas na nÉimíríochtaí Arabacha",
+                    "many": "ndirham Aontas na nÉimíríochtaí Arabacha"
+                }
+            },
+            "AFA": {
+                "symbol": {
+                    "value": "AFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Afgainí (1927–2002)"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "afghani na hAfganastáine",
+                    "one": "afghani na hAfganastáine",
+                    "two": "afghani na hAfganastáine",
+                    "few": "afghani na hAfganastáine",
+                    "many": "n-afghani na hAfganastáine"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALK": {
+                "symbol": {
+                    "value": "ALK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lek na hAlbáine (1946–1965)",
+                    "one": "lek na hAlbáine (1946–1965)",
+                    "two": "lek na hAlbáine (1946–1965)",
+                    "few": "lek na hAlbáine (1946–1965)",
+                    "many": "lek na hAlbáine (1946–1965)"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Lek na hAlbáine",
+                    "one": "lek na hAlbáine",
+                    "two": "lek na hAlbáine",
+                    "few": "lek na hAlbáine",
+                    "many": "lek na hAlbáine"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dram na hAirméine",
+                    "one": "dram na hAirméine",
+                    "two": "dhram na hAirméine",
+                    "few": "dhram na hAirméine",
+                    "many": "ndram na hAirméine"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "gildear Aintillí na hÍsiltíre",
+                    "one": "ghildear Aintillí na hÍsiltíre",
+                    "two": "ghildear Aintillí na hÍsiltíre",
+                    "few": "ghildear Aintillí na hÍsiltíre",
+                    "many": "ngildear Aintillí na hÍsiltíre"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kwanza Angóla",
+                    "one": "kwanza Angóla",
+                    "two": "kwanza Angóla",
+                    "few": "kwanza Angóla",
+                    "many": "kwanza Angóla"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AOK": {
+                "symbol": {
+                    "value": "AOK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kwanza Angólach (1977–1990)"
+                }
+            },
+            "AON": {
+                "symbol": {
+                    "value": "AON",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kwanza Nua Angólach (1990–2000)"
+                }
+            },
+            "AOR": {
+                "symbol": {
+                    "value": "AOR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kwanza Reajustado Angólach (1995–1999)"
+                }
+            },
+            "ARA": {
+                "symbol": {
+                    "value": "ARA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Austral Airgintíneach"
+                }
+            },
+            "ARM": {
+                "symbol": {
+                    "value": "ARM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso na hAirgintíne (1881–1970)",
+                    "one": "pheso na hAirgintíne (1881–1970)",
+                    "two": "pheso na hAirgintíne (1881–1970)",
+                    "few": "pheso na hAirgintíne (1881–1970)",
+                    "many": "bpeso na hAirgintíne (1881–1970)"
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "value": "ARP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso na hAirgintíne (1983–1985)",
+                    "one": "pheso na hAirgintíne (1983–1985)",
+                    "two": "pheso na hAirgintíne (1983–1985)",
+                    "few": "pheso na hAirgintíne (1983–1985)",
+                    "many": "bpeso na hAirgintíne (1983–1985)"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso na hAirgintíne",
+                    "one": "pheso na hAirgintíne",
+                    "two": "pheso na hAirgintíne",
+                    "few": "pheso na hAirgintíne",
+                    "many": "bpeso na hAirgintíne"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "value": "ATS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Scilling Ostarach",
+                    "one": "Scilling Ostarach",
+                    "two": "Scilling Ostarach",
+                    "few": "Scilling Ostarach",
+                    "many": "Scilling Ostarach"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "A$"
+                },
+                "displayName": {
+                    "other": "dollar na hAstráile",
+                    "one": "dollar na hAstráile",
+                    "two": "dhollar na hAstráile",
+                    "few": "dhollar na hAstráile",
+                    "many": "ndollar na hAstráile"
+                },
+                "symbol-alt-narrow": {
+                    "value": "A$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "flóirín Arúba",
+                    "one": "fhlóirín Arúba",
+                    "two": "fhlóirín Arúba",
+                    "few": "fhlóirín Arúba",
+                    "many": "bhflóirín Arúba"
+                }
+            },
+            "AZM": {
+                "symbol": {
+                    "value": "AZM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "manat na hAsarbaiseáine (1993–2006)",
+                    "one": "mhanat na hAsarbaiseáine (1993–2006)",
+                    "two": "mhanat na hAsarbaiseáine (1993–2006)",
+                    "few": "mhanat na hAsarbaiseáine (1993–2006)",
+                    "many": "manat na hAsarbaiseáine (1993–2006)"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "manat na hAsarbaiseáine",
+                    "one": "mhanat na hAsarbaiseáine",
+                    "two": "mhanat na hAsarbaiseáine",
+                    "few": "mhanat na hAsarbaiseáine",
+                    "many": "manat na hAsarbaiseáine"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAD": {
+                "symbol": {
+                    "value": "BAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Dínear Bhoisnia-Heirseagaivéin (1992–1994)"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "marg inmhalartaithe na Boisnia-Heirseagaivéine",
+                    "one": "mharg inmhalartaithe na Boisnia-Heirseagaivéine",
+                    "two": "mharg inmhalartaithe na Boisnia-Heirseagaivéine",
+                    "few": "mharg inmhalartaithe na Boisnia-Heirseagaivéine",
+                    "many": "marg inmhalartaithe na Boisnia-Heirseagaivéine"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar Bharbadós",
+                    "one": "dollar Bharbadós",
+                    "two": "dhollar Bharbadós",
+                    "few": "dhollar Bharbadós",
+                    "many": "ndollar Bharbadós"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "taka na Banglaidéise",
+                    "one": "taka na Banglaidéise",
+                    "two": "thaka na Banglaidéise",
+                    "few": "thaka na Banglaidéise",
+                    "many": "dtaka na Banglaidéise"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEC": {
+                "symbol": {
+                    "value": "BEC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Beilgeach (inathraithe)",
+                    "one": "Franc Beilgeach (inathraithe)",
+                    "two": "Franc Beilgeach (inathraithe)",
+                    "few": "Franc Beilgeach (inathraithe)",
+                    "many": "Franc Beilgeach (inathraithe)"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Beilgeach"
+                }
+            },
+            "BEL": {
+                "symbol": {
+                    "value": "BEL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Beilgeach (airgeadúil)",
+                    "one": "Franc Beilgeach (airgeadúil)",
+                    "two": "Franc Beilgeach (airgeadúil)",
+                    "few": "Franc Beilgeach (airgeadúil)",
+                    "many": "Franc Beilgeach (airgeadúil)"
+                }
+            },
+            "BGL": {
+                "symbol": {
+                    "value": "BGL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lev crua na Bulgáire",
+                    "one": "lev crua na Bulgáire",
+                    "two": "lev chrua na Bulgáire",
+                    "few": "lev chrua na Bulgáire",
+                    "many": "lev chrua na Bulgáire"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lev na Bulgáire",
+                    "one": "lev na Bulgáire",
+                    "two": "lev na Bulgáire",
+                    "few": "lev na Bulgáire",
+                    "many": "lev na Bulgáire"
+                }
+            },
+            "BGO": {
+                "symbol": {
+                    "value": "BGO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lev na Bulgáire (1879–1952)",
+                    "one": "lev na Bulgáire (1879–1952)",
+                    "two": "lev na Bulgáire (1879–1952)",
+                    "few": "lev na Bulgáire (1879–1952)",
+                    "many": "lev na Bulgáire (1879–1952)"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Bhairéin",
+                    "one": "dinar Bhairéin",
+                    "two": "dhinar Bhairéin",
+                    "few": "dhinar Bhairéin",
+                    "many": "ndinar Bhairéin"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc na Burúine",
+                    "one": "fhranc na Burúine",
+                    "two": "fhranc na Burúine",
+                    "few": "fhranc na Burúine",
+                    "many": "bhfranc na Burúine"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar Bheirmiúda",
+                    "one": "dollar Bheirmiúda",
+                    "two": "dhollar Bheirmiúda",
+                    "few": "dhollar Bheirmiúda",
+                    "many": "ndollar Bheirmiúda"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar Bhrúiné",
+                    "one": "dollar Bhrúiné",
+                    "two": "dhollar Bhrúiné",
+                    "few": "dhollar Bhrúiné",
+                    "many": "ndollar Bhrúiné"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "boliviano",
+                    "one": "bholiviano",
+                    "two": "bholiviano",
+                    "few": "bholiviano",
+                    "many": "mboliviano"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "value": "BOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso na Bolaive",
+                    "one": "pheso na Bolaive",
+                    "two": "pheso na Bolaive",
+                    "few": "pheso na Bolaive",
+                    "many": "bpeso na Bolaive"
+                }
+            },
+            "BOV": {
+                "symbol": {
+                    "value": "BOV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "mvdol na Bolaive",
+                    "one": "mvdol na Bolaive",
+                    "two": "mvdol na Bolaive",
+                    "few": "mvdol na Bolaive",
+                    "many": "mvdol na Bolaive"
+                }
+            },
+            "BRB": {
+                "symbol": {
+                    "value": "BRB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "cruzeiro nua na Brasaíle (1967–1986)",
+                    "one": "chruzeiro nua na Brasaíle (1967–1986)",
+                    "two": "chruzeiro nua na Brasaíle (1967–1986)",
+                    "few": "chruzeiro nua na Brasaíle (1967–1986)",
+                    "many": "gcruzeiro nua na Brasaíle (1967–1986)"
+                }
+            },
+            "BRC": {
+                "symbol": {
+                    "value": "BRC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "cruzado na Brasaíle (1986–1989)",
+                    "one": "chruzado na Brasaíle (1986–1989)",
+                    "two": "chruzado na Brasaíle (1986–1989)",
+                    "few": "chruzado na Brasaíle (1986–1989)",
+                    "many": "gcruzado na Brasaíle (1986–1989)"
+                }
+            },
+            "BRE": {
+                "symbol": {
+                    "value": "BRE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "cruzeiro na Brasaíle (1990–1993)",
+                    "one": "chruzeiro na Brasaíle (1990–1993)",
+                    "two": "chruzeiro na Brasaíle (1990–1993)",
+                    "few": "chruzeiro na Brasaíle (1990–1993)",
+                    "many": "gcruzeiro na Brasaíle (1990–1993)"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$"
+                },
+                "displayName": {
+                    "other": "real na Brasaíle",
+                    "one": "real na Brasaíle",
+                    "two": "real na Brasaíle",
+                    "few": "real na Brasaíle",
+                    "many": "real na Brasaíle"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BRN": {
+                "symbol": {
+                    "value": "BRN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "cruzado nua na Brasaíle (1989–1990)",
+                    "one": "chruzado nua na Brasaíle (1989–1990)",
+                    "two": "chruzado nua na Brasaíle (1989–1990)",
+                    "few": "chruzado nua na Brasaíle (1989–1990)",
+                    "many": "gcruzado nua na Brasaíle (1989–1990)"
+                }
+            },
+            "BRR": {
+                "symbol": {
+                    "value": "BRR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "cruzeiro na Brasaíle (1993–1994)",
+                    "one": "chruzeiro na Brasaíle (1993–1994)",
+                    "two": "chruzeiro na Brasaíle (1993–1994)",
+                    "few": "chruzeiro na Brasaíle (1993–1994)",
+                    "many": "gcruzeiro na Brasaíle (1993–1994)"
+                }
+            },
+            "BRZ": {
+                "symbol": {
+                    "value": "BRZ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "cruzeiro na Brasaíle (1942–1967)",
+                    "one": "chruzeiro na Brasaíle (1942–1967)",
+                    "two": "chruzeiro na Brasaíle (1942–1967)",
+                    "few": "chruzeiro na Brasaíle (1942–1967)",
+                    "many": "gcruzeiro na Brasaíle (1942–1967)"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar na mBahámaí",
+                    "one": "dollar na mBahámaí",
+                    "two": "dhollar na mBahámaí",
+                    "few": "dhollar na mBahámaí",
+                    "many": "ndollar na mBahámaí"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ngultrum na Bútáine",
+                    "one": "ngultrum na Bútáine",
+                    "two": "ngultrum na Bútáine",
+                    "few": "ngultrum na Bútáine",
+                    "many": "ngultrum na Bútáine"
+                }
+            },
+            "BUK": {
+                "symbol": {
+                    "value": "BUK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kyat Bhurma",
+                    "one": "kyat Bhurma",
+                    "two": "kyat Bhurma",
+                    "few": "kyat Bhurma",
+                    "many": "kyat Bhurma"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "pula na Botsuáine",
+                    "one": "phula na Botsuáine",
+                    "two": "phula na Botsuáine",
+                    "few": "phula na Botsuáine",
+                    "many": "bpula na Botsuáine"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BYB": {
+                "symbol": {
+                    "value": "BYB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúbal nua na Bealarúise (1994–1999)",
+                    "one": "rúbal nua na Bealarúise (1994–1999)",
+                    "two": "rúbal nua na Bealarúise (1994–1999)",
+                    "few": "rúbal nua na Bealarúise (1994–1999)",
+                    "many": "rúbal nua na Bealarúise (1994–1999)"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúbal na Bealarúise",
+                    "one": "rúbal na Bealarúise",
+                    "two": "rúbal na Bealarúise",
+                    "few": "rúbal na Bealarúise",
+                    "many": "rúbal na Bealarúise"
+                },
+                "digits": 2
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúbal na Bealarúise (2000–2016)",
+                    "one": "rúbal na Bealarúise (2000–2016)",
+                    "two": "rúbal na Bealarúise (2000–2016)",
+                    "few": "rúbal na Bealarúise (2000–2016)",
+                    "many": "rúbal na Bealarúise (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar na Beilíse",
+                    "one": "dollar na Beilíse",
+                    "two": "dhollar na Beilíse",
+                    "few": "dhollar na Beilíse",
+                    "many": "ndollar na Beilíse"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "dollar Cheanada",
+                    "one": "dollar Cheanada",
+                    "two": "dhollar Cheanada",
+                    "few": "dhollar Cheanada",
+                    "many": "ndollar Cheanada"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc an Chongó",
+                    "one": "fhranc an Chongó",
+                    "two": "fhranc an Chongó",
+                    "few": "fhranc an Chongó",
+                    "many": "bhfranc an Chongó"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc na hEilvéise",
+                    "one": "fhranc na hEilvéise",
+                    "two": "fhranc na hEilvéise",
+                    "few": "fhranc na hEilvéise",
+                    "many": "bhfranc na hEilvéise"
+                },
+                "digits": 2
+            },
+            "CLE": {
+                "symbol": {
+                    "value": "CLE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "escudo na Sile",
+                    "one": "escudo na Sile",
+                    "two": "escudo na Sile",
+                    "few": "escudo na Sile",
+                    "many": "n-escudo na Sile"
+                }
+            },
+            "CLF": {
+                "symbol": {
+                    "value": "CLF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Unidades de Fomento na Sile"
+                },
+                "digits": 4
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso na Sile",
+                    "one": "pheso na Sile",
+                    "two": "pheso na Sile",
+                    "few": "pheso na Sile",
+                    "many": "bpeso na Sile"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Yuan na Síne (seachairgeadra)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "yuan na Síne",
+                    "one": "yuan na Síne",
+                    "two": "yuan na Síne",
+                    "few": "yuan na Síne",
+                    "many": "yuan na Síne"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso na Colóime",
+                    "one": "pheso na Colóime",
+                    "two": "pheso na Colóime",
+                    "few": "pheso na Colóime",
+                    "many": "bpeso na Colóime"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "colón Chósta Ríce",
+                    "one": "cholón Chósta Ríce",
+                    "two": "cholón Chósta Ríce",
+                    "few": "cholón Chósta Ríce",
+                    "many": "gcolón Chósta Ríce"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CSD": {
+                "symbol": {
+                    "value": "CSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar na Seirbia (2002–2006)",
+                    "one": "dinar na Seirbia (2002–2006)",
+                    "two": "dhinar na Seirbia (2002–2006)",
+                    "few": "dhinar na Seirbia (2002–2006)",
+                    "many": "ndinar na Seirbia (2002–2006)"
+                }
+            },
+            "CSK": {
+                "symbol": {
+                    "value": "CSK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "koruna crua na Seicslóvaice",
+                    "one": "koruna chrua na Seicslóvaice",
+                    "two": "koruna chrua na Seicslóvaice",
+                    "few": "koruna chrua na Seicslóvaice",
+                    "many": "koruna chrua na Seicslóvaice"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso inmhalartaithe Chúba",
+                    "one": "pheso inmhalartaithe Chúba",
+                    "two": "pheso inmhalartaithe Chúba",
+                    "few": "pheso inmhalartaithe Chúba",
+                    "many": "bpeso inmhalartaithe Chúba"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Chúba",
+                    "one": "pheso Chúba",
+                    "two": "pheso Chúba",
+                    "few": "pheso Chúba",
+                    "many": "bpeso Chúba"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "escudo Rinn Verde",
+                    "one": "escudo Rinn Verde",
+                    "two": "escudo Rinn Verde",
+                    "few": "escudo Rinn Verde",
+                    "many": "n-escudo Rinn Verde"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt na Cipire",
+                    "one": "phunt na Cipire",
+                    "two": "phunt na Cipire",
+                    "few": "phunt na Cipire",
+                    "many": "bpunt na Cipire"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "koruna Phoblacht na Seice",
+                    "one": "koruna Phoblacht na Seice",
+                    "two": "koruna Phoblacht na Seice",
+                    "few": "koruna Phoblacht na Seice",
+                    "many": "koruna Phoblacht na Seice"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DDM": {
+                "symbol": {
+                    "value": "DDM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Ostmark na hOirGhearmáine",
+                    "one": "Ostmark na hOirGhearmáine",
+                    "two": "Ostmark na hOirGhearmáine",
+                    "few": "Ostmark na hOirGhearmáine",
+                    "many": "Ostmark na hOirGhearmáine"
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Deutsche Mark"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Djibouti",
+                    "one": "fhranc Djibouti",
+                    "two": "fhranc Djibouti",
+                    "few": "fhranc Djibouti",
+                    "many": "bhfranc Djibouti"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "coróin na Danmhairge",
+                    "one": "choróin na Danmhairge",
+                    "two": "choróin na Danmhairge",
+                    "few": "choróin na Danmhairge",
+                    "many": "gcoróin na Danmhairge"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso na Poblachta Doiminicí",
+                    "one": "pheso na Poblachta Doiminicí",
+                    "two": "pheso na Poblachta Doiminicí",
+                    "few": "pheso na Poblachta Doiminicí",
+                    "many": "bpeso na Poblachta Doiminicí"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar na hAilgéire",
+                    "one": "dinar na hAilgéire",
+                    "two": "dhinar na hAilgéire",
+                    "few": "dhinar na hAilgéire",
+                    "many": "ndinar na hAilgéire"
+                }
+            },
+            "ECS": {
+                "symbol": {
+                    "value": "ECS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Sucre Eacuadóir"
+                }
+            },
+            "ECV": {
+                "symbol": {
+                    "value": "ECV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Unidad de Valor Constante (UVC) Eacuadóir"
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "value": "EEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kroon na hEastóine"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt na hÉigipte",
+                    "one": "phunt na hÉigipte",
+                    "two": "phunt na hÉigipte",
+                    "few": "phunt na hÉigipte",
+                    "many": "bpunt na hÉigipte"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "nakfa na hEiritré",
+                    "one": "nakfa na hEiritré",
+                    "two": "nakfa na hEiritré",
+                    "few": "nakfa na hEiritré",
+                    "many": "nakfa na hEiritré"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peseta na Spáinne",
+                    "one": "pheseta na Spáinne",
+                    "two": "pheseta na Spáinne",
+                    "few": "pheseta na Spáinne",
+                    "many": "bpeseta na Spáinne"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "birr na hAetóipe",
+                    "one": "bhirr na hAetóipe",
+                    "two": "bhirr na hAetóipe",
+                    "few": "bhirr na hAetóipe",
+                    "many": "mbirr na hAetóipe"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "euro",
+                    "one": "euro",
+                    "two": "euro",
+                    "few": "euro",
+                    "many": "euro"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "value": "FIM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Markka Fionnlannach"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar Fhidsí",
+                    "one": "dollar Fhidsí",
+                    "two": "dhollar Fhidsí",
+                    "few": "dhollar Fhidsí",
+                    "many": "ndollar Fhidsí"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt Oileáin Fháclainne",
+                    "one": "phunt Oileáin Fháclainne",
+                    "two": "phunt Oileáin Fháclainne",
+                    "few": "phunt Oileáin Fháclainne",
+                    "many": "bpunt Oileáin Fháclainne"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Francach",
+                    "one": "Franc Francach",
+                    "two": "Franc Francach",
+                    "few": "Franc Francach",
+                    "many": "Franc Francach"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "punt steirling",
+                    "one": "phunt steirling",
+                    "two": "phunt steirling",
+                    "few": "phunt steirling",
+                    "many": "bpunt steirling"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEK": {
+                "symbol": {
+                    "value": "GEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kupon Larit na Grúise"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lari na Seoirsia",
+                    "one": "lari na Seoirsia",
+                    "two": "lari na Seoirsia",
+                    "few": "lari na Seoirsia",
+                    "many": "lari na Seoirsia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHC": {
+                "symbol": {
+                    "value": "GHC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "cedi Ghána (1979–2007)",
+                    "one": "chedi Ghána (1979–2007)",
+                    "two": "chedi Ghána (1979–2007)",
+                    "few": "chedi Ghána (1979–2007)",
+                    "many": "gcedi Ghána (1979–2007)"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "cedi Ghána",
+                    "one": "chedi Ghána",
+                    "two": "chedi Ghána",
+                    "few": "chedi Ghána",
+                    "many": "gcedi Ghána"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt Ghiobráltar",
+                    "one": "phunt Ghiobráltar",
+                    "two": "phunt Ghiobráltar",
+                    "few": "phunt Ghiobráltar",
+                    "many": "bpunt Ghiobráltar"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dalasi na Gaimbia",
+                    "one": "dalasi na Gaimbia",
+                    "two": "dhalasi na Gaimbia",
+                    "few": "dhalasi na Gaimbia",
+                    "many": "ndalasi na Gaimbia"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc na Guine",
+                    "one": "fhranc na Guine",
+                    "two": "fhranc na Guine",
+                    "few": "fhranc na Guine",
+                    "many": "bhfranc na Guine"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GNS": {
+                "symbol": {
+                    "value": "GNS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Syli Guine"
+                }
+            },
+            "GQE": {
+                "symbol": {
+                    "value": "GQE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Ekwele Guineana na Guine Meánchriosaí",
+                    "one": "Ekwele Guineana na Guine Meánchiorclaí",
+                    "two": "Ekwele Guineana na Guine Meánchiorclaí",
+                    "few": "Ekwele Guineana na Guine Meánchiorclaí",
+                    "many": "Ekwele Guineana na Guine Meánchiorclaí"
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "value": "GRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Drachma Gréagach"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "quetzal Ghuatamala",
+                    "one": "quetzal Ghuatamala",
+                    "two": "quetzal Ghuatamala",
+                    "few": "quetzal Ghuatamala",
+                    "many": "quetzal Ghuatamala"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GWE": {
+                "symbol": {
+                    "value": "GWE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Escudo na Guine Portaingéalaí"
+                }
+            },
+            "GWP": {
+                "symbol": {
+                    "value": "GWP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Peso Guine-Bhissau"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar na Guáine",
+                    "one": "dollar na Guáine",
+                    "two": "dhollar na Guáine",
+                    "few": "dhollar na Guáine",
+                    "many": "ndollar na Guáine"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "dollar Hong Cong",
+                    "one": "dollar Hong Cong",
+                    "two": "dhollar Hong Cong",
+                    "few": "dhollar Hong Cong",
+                    "many": "ndollar Hong Cong"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lempira Hondúras",
+                    "one": "lempira Hondúras",
+                    "two": "lempira Hondúras",
+                    "few": "lempira Hondúras",
+                    "many": "lempira Hondúras"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HRD": {
+                "symbol": {
+                    "value": "HRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Dínear na Cróite"
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kuna na Cróite",
+                    "one": "kuna na Cróite",
+                    "two": "kuna na Cróite",
+                    "few": "kuna na Cróite",
+                    "many": "kuna na Cróite"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "gourde Háítí",
+                    "one": "ghourde Háítí",
+                    "two": "ghourde Háítí",
+                    "few": "ghourde Háítí",
+                    "many": "ngourde Háítí"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "forint na hUngáire",
+                    "one": "fhorint na hUngáire",
+                    "two": "fhorint na hUngáire",
+                    "few": "fhorint na hUngáire",
+                    "many": "bhforint na hUngáire"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rupiah na hIndinéise",
+                    "one": "rupiah na hIndinéise",
+                    "two": "rupiah na hIndinéise",
+                    "few": "rupiah na hIndinéise",
+                    "many": "rupiah na hIndinéise"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "value": "IEP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Punt Éireannach"
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "value": "ILP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Punt Iosraelach"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "seiceal nua Iosrael",
+                    "one": "seiceal nua Iosrael",
+                    "two": "sheiceal nua Iosrael",
+                    "few": "sheiceal nua Iosrael",
+                    "many": "seiceal nua Iosrael"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "rúipí na hIndia",
+                    "one": "rúipí na hIndia",
+                    "two": "rúipí na hIndia",
+                    "few": "rúipí na hIndia",
+                    "many": "rúipí na hIndia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar na hIaráice",
+                    "one": "dinar na hIaráice",
+                    "two": "dhinar na hIaráice",
+                    "few": "dhinar na hIaráice",
+                    "many": "ndinar na hIaráice"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rial na hIaráine",
+                    "one": "rial na hIaráine",
+                    "two": "rial na hIaráine",
+                    "few": "rial na hIaráine",
+                    "many": "rial na hIaráine"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "króna na hÍoslainne",
+                    "one": "króna na hÍoslainne",
+                    "two": "króna na hÍoslainne",
+                    "few": "króna na hÍoslainne",
+                    "many": "króna na hÍoslainne"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "value": "ITL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lira na hIodáile",
+                    "one": "lira na hIodáile",
+                    "two": "lira na hIodáile",
+                    "few": "lira na hIodáile",
+                    "many": "lira na hIodáile"
+                },
+                "digits": 0
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar na hIamáice",
+                    "one": "dollar na hIamáice",
+                    "two": "dhollar na hIamáice",
+                    "few": "dhollar na hIamáice",
+                    "many": "ndollar na hIamáice"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar na hIordáine",
+                    "one": "dinar na hIordáine",
+                    "two": "dhinar na hIordáine",
+                    "few": "dhinar na hIordáine",
+                    "many": "ndinar na hIordáine"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "¥"
+                },
+                "displayName": {
+                    "other": "yen na Seapáine",
+                    "one": "yen na Seapáine",
+                    "two": "yen na Seapáine",
+                    "few": "yen na Seapáine",
+                    "many": "yen na Seapáine"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "scilling na Céinia",
+                    "one": "scilling na Céinia",
+                    "two": "scilling na Céinia",
+                    "few": "scilling na Céinia",
+                    "many": "scilling na Céinia"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "som na Cirgeastáine",
+                    "one": "som na Cirgeastáine",
+                    "two": "shom na Cirgeastáine",
+                    "few": "shom na Cirgeastáine",
+                    "many": "som na Cirgeastáine"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "riel na Cambóide",
+                    "one": "riel na Cambóide",
+                    "two": "riel na Cambóide",
+                    "few": "riel na Cambóide",
+                    "many": "riel na Cambóide"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Oileáin Chomóra",
+                    "one": "fhranc Oileáin Chomóra",
+                    "two": "fhranc Oileáin Chomóra",
+                    "few": "fhranc Oileáin Chomóra",
+                    "many": "bhfranc Oileáin Chomóra"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "won na Cóiré Thuaidh",
+                    "one": "won na Cóiré Thuaidh",
+                    "two": "won na Cóiré Thuaidh",
+                    "few": "won na Cóiré Thuaidh",
+                    "many": "won na Cóiré Thuaidh"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "won na Cóiré Theas",
+                    "one": "won na Cóiré Theas",
+                    "two": "won na Cóiré Theas",
+                    "few": "won na Cóiré Theas",
+                    "many": "won na Cóiré Theas"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Chuáit",
+                    "one": "dinar Chuáit",
+                    "two": "dhinar Chuáit",
+                    "few": "dhinar Chuáit",
+                    "many": "ndinar Chuáit"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar Oileáin Cayman",
+                    "one": "dollar Oileáin Cayman",
+                    "two": "dhollar Oileáin Cayman",
+                    "few": "dhollar Oileáin Cayman",
+                    "many": "ndollar Oileáin Cayman"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "tenge na Casacstáine",
+                    "one": "tenge na Casacstáine",
+                    "two": "thenge na Casacstáine",
+                    "few": "thenge na Casacstáine",
+                    "many": "dtenge na Casacstáine"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kip Laos",
+                    "one": "kip Laos",
+                    "two": "kip Laos",
+                    "few": "kip Laos",
+                    "many": "kip Laos"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt na Liobáine",
+                    "one": "phunt na Liobáine",
+                    "two": "phunt na Liobáine",
+                    "few": "phunt na Liobáine",
+                    "many": "bpunt na Liobáine"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúipí Shrí Lanca",
+                    "one": "rúipí Shrí Lanca",
+                    "two": "rúipí Shrí Lanca",
+                    "few": "rúipí Shrí Lanca",
+                    "many": "rúipí Shrí Lanca"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar na Libéire",
+                    "one": "dollar na Libéire",
+                    "two": "dhollar na Libéire",
+                    "few": "dhollar na Libéire",
+                    "many": "ndollar na Libéire"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "loti Leosóta",
+                    "one": "loti Leosóta",
+                    "two": "Loti Leosóta",
+                    "few": "loti Leosóta",
+                    "many": "loti Leosóta"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "litas na Liotuáine",
+                    "one": "litas na Liotuáine",
+                    "two": "litas na Liotuáine",
+                    "few": "litas na Liotuáine",
+                    "many": "litas na Liotuáine"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LTT": {
+                "symbol": {
+                    "value": "LTT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Talonas Liotuánach"
+                }
+            },
+            "LUC": {
+                "symbol": {
+                    "value": "LUC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Inmhalartach Lucsamburgach"
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "value": "LUF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Lucsamburg"
+                },
+                "digits": 0
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lats na Laitvia",
+                    "one": "lats na Laitvia",
+                    "two": "lats na Laitvia",
+                    "few": "lats na Laitvia",
+                    "many": "lats na Laitvia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LVR": {
+                "symbol": {
+                    "value": "LVR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Rúbal Laitviach",
+                    "one": "Rúbal Laitviach",
+                    "two": "Rúbal Laitviach",
+                    "few": "Rúbal Laitviach",
+                    "many": "Rúbal Laitviach"
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar na Libia",
+                    "one": "dinar na Libia",
+                    "two": "dhinar na Libia",
+                    "few": "dhinar na Libia",
+                    "many": "ndinar na Libia"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dirham Mharacó",
+                    "one": "dirham Mharacó",
+                    "two": "dhirham Mharacó",
+                    "few": "dhirham Mharacó",
+                    "many": "ndirham Mharacó"
+                }
+            },
+            "MAF": {
+                "symbol": {
+                    "value": "MAF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Mharacó",
+                    "one": "fhranc Mharacó",
+                    "two": "fhranc Mharacó",
+                    "few": "fhranc Mharacó",
+                    "many": "bhfranc Mharacó"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "leu na Moldóive",
+                    "one": "leu na Moldóive",
+                    "two": "leu na Moldóive",
+                    "few": "leu na Moldóive",
+                    "many": "leu na Moldóive"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ariary Mhadagascar",
+                    "one": "ariary Mhadagascar",
+                    "two": "ariary Mhadagascar",
+                    "few": "ariary Mhadagascar",
+                    "many": "n-ariary Mhadagascar"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MGF": {
+                "symbol": {
+                    "value": "MGF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Madagascar"
+                },
+                "digits": 0
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "denar na Macadóine",
+                    "one": "denar na Macadóine",
+                    "two": "dhenar na Macadóine",
+                    "few": "dhenar na Macadóine",
+                    "many": "ndenar na Macadóine"
+                }
+            },
+            "MLF": {
+                "symbol": {
+                    "value": "MLF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Mhailí"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kyat Mhaenmar",
+                    "one": "kyat Mhaenmar",
+                    "two": "kyat Mhaenmar",
+                    "few": "kyat Mhaenmar",
+                    "many": "kyat Mhaenmar"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "tugrik na Mongóile",
+                    "one": "tugrik na Mongóile",
+                    "two": "thugrik na Mongóile",
+                    "few": "thugrik na Mongóile",
+                    "many": "dtugrik na Mongóile"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "pataca Mhacao",
+                    "one": "phataca Mhacao",
+                    "two": "phataca Mhacao",
+                    "few": "phataca Mhacao",
+                    "many": "bpataca Mhacao"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ouguiya na Máratáine (1973–2017)",
+                    "one": "ouguiya na Máratáine (1973–2017)",
+                    "two": "ouguiya na Máratáine (1973–2017)",
+                    "few": "ouguiya na Máratáine (1973–2017)",
+                    "many": "n-ouguiya na Máratáine (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ouguiya na Máratáine",
+                    "one": "ouguiya na Máratáine",
+                    "two": "ouguiya na Máratáine",
+                    "few": "ouguiya na Máratáine",
+                    "many": "n-ouguiya na Máratáine"
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "value": "MTL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lira Mhálta",
+                    "one": "lira Mhálta",
+                    "two": "lira Mhálta",
+                    "few": "lira Mhálta",
+                    "many": "lira Mhálta"
+                }
+            },
+            "MTP": {
+                "symbol": {
+                    "value": "MTP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt Mhálta",
+                    "one": "phunt Mhálta",
+                    "two": "phunt Mhálta",
+                    "few": "phunt Mhálta",
+                    "many": "bpunt Mhálta"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúipí Oileán Mhuirís",
+                    "one": "rúipí Oileán Mhuirís",
+                    "two": "rúipí Oileán Mhuirís",
+                    "few": "rúipí Oileán Mhuirís",
+                    "many": "rúipí Oileán Mhuirís"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MVP": {
+                "symbol": {
+                    "value": "MVP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúipí Oileáin Mhaildíve",
+                    "one": "rúipí Oileáin Mhaildíve",
+                    "two": "rúipí Oileáin Mhaildíve",
+                    "few": "rúipí Oileáin Mhaildíve",
+                    "many": "rúipí Oileáin Mhaildíve"
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rufiyaa Oileáin Mhaildíve",
+                    "one": "rufiyaa Oileáin Mhaildíve",
+                    "two": "rufiyaa Oileáin Mhaildíve",
+                    "few": "rufiyaa Oileáin Mhaildíve",
+                    "many": "rufiyaa Oileáin Mhaildíve"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kwacha na Maláive",
+                    "one": "kwacha na Maláive",
+                    "two": "kwacha na Maláive",
+                    "few": "kwacha na Maláive",
+                    "many": "kwacha na Maláive"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "peso Mheicsiceo",
+                    "one": "pheso Mheicsiceo",
+                    "two": "pheso Mheicsiceo",
+                    "few": "pheso Mheicsiceo",
+                    "many": "bpeso Mheicsiceo"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MXP": {
+                "symbol": {
+                    "value": "MXP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso airgid Mheicsiceo (1861–1992)",
+                    "one": "pheso airgid Mheicsiceo (1861–1992)",
+                    "two": "pheso airgid Mheicsiceo (1861–1992)",
+                    "few": "pheso airgid Mheicsiceo (1861–1992)",
+                    "many": "bpeso airgid Mheicsiceo (1861–1992)"
+                }
+            },
+            "MXV": {
+                "symbol": {
+                    "value": "MXV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Unidad de Inversion (UDI) Meicsiceo",
+                    "one": "Unidad de Inversion (UDI) Meicsiceo",
+                    "two": "Unidad de Inversion (UDI) Meicsiceo",
+                    "few": "Unidad de Inversion (UDI) Meicsiceo",
+                    "many": "Unidad de Inversion (UDI) Meicsiceo"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ringgit na Malaeisia",
+                    "one": "ringgit na Malaeisia",
+                    "two": "ringgit na Malaeisia",
+                    "few": "ringgit na Malaeisia",
+                    "many": "ringgit na Malaeisia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "value": "MZE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Escudo Mósaimbíce"
+                }
+            },
+            "MZM": {
+                "symbol": {
+                    "value": "MZM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Metical Mósaimbíce"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "metical Mhósaimbíc",
+                    "one": "mhetical Mhósaimbíc",
+                    "two": "mhetical Mhósaimbíc",
+                    "few": "mhetical Mhósaimbíc",
+                    "many": "metical Mhósaimbíc"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar na Namaibe",
+                    "one": "dollar na Namaibe",
+                    "two": "dhollar na Namaibe",
+                    "few": "dhollar na Namaibe",
+                    "many": "ndollar na Namaibe"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "naira na Nigéire",
+                    "one": "naira na Nigéire",
+                    "two": "naira na Nigéire",
+                    "few": "naira na Nigéire",
+                    "many": "naira na Nigéire"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIC": {
+                "symbol": {
+                    "value": "NIC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "córdoba Nicearagua (1988–1991)",
+                    "one": "chórdoba Nicearagua (1988–1991)",
+                    "two": "chórdoba Nicearagua (1988–1991)",
+                    "few": "chórdoba Nicearagua (1988–1991)",
+                    "many": "gcórdoba Nicearagua (1988–1991)"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "córdoba Nicearagua",
+                    "one": "chórdoba Nicearagua",
+                    "two": "chórdoba Nicearagua",
+                    "few": "chórdoba Nicearagua",
+                    "many": "gcórdoba Nicearagua"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "value": "NLG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Guilder Ísiltíreach"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "coróin na hIorua",
+                    "one": "choróin na hIorua",
+                    "two": "choróin na hIorua",
+                    "few": "choróin na hIorua",
+                    "many": "gcoróin na hIorua"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúipí Neipeal",
+                    "one": "rúipí Neipeal",
+                    "two": "rúipí Neipeal",
+                    "few": "rúipí Neipeal",
+                    "many": "rúipí Neipeal"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "dollar na Nua-Shéalainne",
+                    "one": "dollar na Nua-Shéalainne",
+                    "two": "dhollar na Nua-Shéalainne",
+                    "few": "dhollar na Nua-Shéalainne",
+                    "many": "ndollar na Nua-Shéalainne"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rial Óman",
+                    "one": "rial Óman",
+                    "two": "rial Óman",
+                    "few": "rial Óman",
+                    "many": "rial Óman"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "balboa Phanama",
+                    "one": "bhalboa Phanama",
+                    "two": "bhalboa Phanama",
+                    "few": "bhalboa Phanama",
+                    "many": "mbalboa Phanama"
+                }
+            },
+            "PEI": {
+                "symbol": {
+                    "value": "PEI",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Inti Pheiriú"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Sol Pheiriú",
+                    "one": "sol Pheiriú",
+                    "two": "shol Pheiriú",
+                    "few": "sol Pheiriú",
+                    "many": "sol Pheiriú"
+                }
+            },
+            "PES": {
+                "symbol": {
+                    "value": "PES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "sol Pheiriú (1863–1965)",
+                    "one": "sol Pheiriú (1863–1965)",
+                    "two": "shol Pheiriú (1863–1965)",
+                    "few": "shol Pheiriú (1863–1965)",
+                    "many": "sol Pheiriú (1863–1965)"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kina Nua-Ghuine Phapua",
+                    "one": "kina Nua-Ghuine Phapua",
+                    "two": "kina Nua-Ghuine Phapua",
+                    "few": "kina Nua-Ghuine Phapua",
+                    "many": "kina Nua-Ghuine Phapua"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "₱"
+                },
+                "displayName": {
+                    "other": "peso na nOileán Filipíneach",
+                    "one": "pheso na nOileán Filipíneach",
+                    "two": "pheso na nOileán Filipíneach",
+                    "few": "pheso na nOileán Filipíneach",
+                    "many": "bpeso na nOileán Filipíneach"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúipí na Pacastáine",
+                    "one": "rúipí na Pacastáine",
+                    "two": "rúipí na Pacastáine",
+                    "few": "rúipí na Pacastáine",
+                    "many": "rúipí na Pacastáine"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "zloty na Polainne",
+                    "one": "zloty na Polainne",
+                    "two": "zloty na Polainne",
+                    "few": "zloty na Polainne",
+                    "many": "zloty na Polainne"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLZ": {
+                "symbol": {
+                    "value": "PLZ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Zloty Polannach (1950–1995)"
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "value": "PTE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "escudo na Portaingéile",
+                    "one": "escudo na Portaingéile",
+                    "two": "escudo na Portaingéile",
+                    "few": "escudo na Portaingéile",
+                    "many": "n-escudo na Portaingéile"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "guaraní Pharagua",
+                    "one": "ghuaraní Pharagua",
+                    "two": "ghuaraní Pharagua",
+                    "few": "ghuaraní Pharagua",
+                    "many": "nguaraní Pharagua"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "riyal Chatar",
+                    "one": "riyal Chatar",
+                    "two": "riyal Chatar",
+                    "few": "riyal Chatar",
+                    "many": "riyal Chatar"
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "value": "ROL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "leu na Rómáine (1952–2006)",
+                    "one": "leu na Rómáine (1952–2006)",
+                    "two": "leu na Rómáine (1952–2006)",
+                    "few": "leu na Rómáine (1952–2006)",
+                    "many": "leu na Rómáine (1952–2006)"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "leu na Rómáine",
+                    "one": "leu na Rómáine",
+                    "two": "leu na Rómáine",
+                    "few": "leu na Rómáine",
+                    "many": "leu na Rómáine"
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar na Seirbia",
+                    "one": "dinar na Seirbia",
+                    "two": "dhinar na Seirbia",
+                    "few": "dhinar na Seirbia",
+                    "many": "ndinar na Seirbia"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúbal na Rúise",
+                    "one": "rúbal na Rúise",
+                    "two": "rúbal na Rúise",
+                    "few": "rúbal na Rúise",
+                    "many": "rúbal na Rúise"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "value": "RUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúbal na Rúise (1991–1998)",
+                    "one": "rúbal na Rúise (1991–1998)",
+                    "two": "rúbal na Rúise (1991–1998)",
+                    "few": "rúbal na Rúise (1991–1998)",
+                    "many": "rúbal na Rúise (1991–1998)"
+                },
+                "symbol-alt-narrow": {
+                    "value": "р."
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Ruanda",
+                    "one": "fhranc Ruanda",
+                    "two": "fhranc Ruanda",
+                    "few": "fhranc Ruanda",
+                    "many": "bhfranc Ruanda"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "riyal na hAraibe Sádaí",
+                    "one": "riyal na hAraibe Sádaí",
+                    "two": "riyal na hAraibe Sádaí",
+                    "few": "riyal na hAraibe Sádaí",
+                    "many": "riyal na hAraibe Sádaí"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar Oileáin Sholomón",
+                    "one": "dollar Oileáin Sholomón",
+                    "two": "dhollar Oileáin Sholomón",
+                    "few": "dhollar Oileáin Sholomón",
+                    "many": "ndollar Oileáin Sholomón"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúipí na Séiséal",
+                    "one": "rúipí na Séiséal",
+                    "two": "rúipí na Séiséal",
+                    "few": "rúipí na Séiséal",
+                    "many": "rúipí na Séiséal"
+                }
+            },
+            "SDD": {
+                "symbol": {
+                    "value": "SDD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar na Súdáine (1992–2007)",
+                    "one": "dinar na Súdáine (1992–2007)",
+                    "two": "dhinar na Súdáine (1992–2007)",
+                    "few": "dhinar na Súdáine (1992–2007)",
+                    "many": "ndinar na Súdáine (1992–2007)"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt na Súdáine",
+                    "one": "phunt na Súdáine",
+                    "two": "phunt na Súdáine",
+                    "few": "phunt na Súdáine",
+                    "many": "bpunt na Súdáine"
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "value": "SDP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt na Súdáine (1957–1998)",
+                    "one": "phunt na Súdáine (1957–1998)",
+                    "two": "phunt na Súdáine (1957–1998)",
+                    "few": "phunt na Súdáine (1957–1998)",
+                    "many": "bpunt na Súdáine (1957–1998)"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "coróin na Sualainne",
+                    "one": "choróin na Sualainne",
+                    "two": "choróin na Sualainne",
+                    "few": "choróin na Sualainne",
+                    "many": "gcoróin na Sualainne"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar Shingeapór",
+                    "one": "dollar Shingeapór",
+                    "two": "dhollar Shingeapór",
+                    "few": "dhollar Shingeapór",
+                    "many": "ndollar Shingeapór"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt San Héilin",
+                    "one": "phunt San Héilin",
+                    "two": "phunt San Héilin",
+                    "few": "phunt San Héilin",
+                    "many": "bpunt San Héilin"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "value": "SIT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "tolar na Slóivéine",
+                    "one": "tolar na Slóivéine",
+                    "two": "tholar na Slóivéine",
+                    "few": "tholar na Slóivéine",
+                    "many": "dtolar na Slóivéine"
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "value": "SKK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "koruna na Slóvaice",
+                    "one": "koruna na Slóvaice",
+                    "two": "koruna na Slóvaice",
+                    "few": "koruna na Slóvaice",
+                    "many": "koruna na Slóvaice"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "leone Shiarra Leon",
+                    "one": "leone Shiarra Leon",
+                    "two": "leone Shiarra Leon",
+                    "few": "leone Shiarra Leon",
+                    "many": "leone Shiarra Leon"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "leone Shiarra Leon (1964—2022)",
+                    "one": "leone Shiarra Leon (1964—2022)",
+                    "two": "leone Shiarra Leon (1964—2022)",
+                    "few": "leone Shiarra Leon (1964—2022)",
+                    "many": "leone Shiarra Leon (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "scilling na Somáile",
+                    "one": "scilling na Somáile",
+                    "two": "scilling na Somáile",
+                    "few": "scilling na Somáile",
+                    "many": "scilling na Somáile"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar Shuranam",
+                    "one": "dollar Shuranam",
+                    "two": "dhollar Shuranam",
+                    "few": "dhollar Shuranam",
+                    "many": "ndollar Shuranam"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "value": "SRG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "gildear Shuranam",
+                    "one": "ghildear Shuranam",
+                    "two": "ghildear Shuranam",
+                    "few": "ghildear Shuranam",
+                    "many": "ngildear Shuranam"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt na Súdáine Theas",
+                    "one": "phunt na Súdáine Theas",
+                    "two": "phunt na Súdáine Theas",
+                    "few": "phunt na Súdáine Theas",
+                    "many": "bpunt na Súdáine Theas"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dobra São Tomé agus Príncipe (1977–2017)",
+                    "one": "dobra São Tomé agus Príncipe (1977–2017)",
+                    "two": "dhobra São Tomé agus Príncipe (1977–2017)",
+                    "few": "dhobra São Tomé agus Príncipe (1977–2017)",
+                    "many": "ndobra São Tomé agus Príncipe (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dobra São Tomé agus Príncipe",
+                    "one": "dobra São Tomé agus Príncipe",
+                    "two": "dhobra São Tomé agus Príncipe",
+                    "few": "dhobra São Tomé agus Príncipe",
+                    "many": "ndobra São Tomé agus Príncipe"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "value": "SUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúbal an Aontais Shóivéadaigh",
+                    "one": "rúbal an Aontais Shóivéadaigh",
+                    "two": "rúbal an Aontais Shóivéadaigh",
+                    "few": "rúbal an Aontais Shóivéadaigh",
+                    "many": "rúbal an Aontais Shóivéadaigh"
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "value": "SVC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "colón na Salvadóire",
+                    "one": "cholón na Salvadóire",
+                    "two": "cholón na Salvadóire",
+                    "few": "cholón na Salvadóire",
+                    "many": "gcolón na Salvadóire"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "punt na Siria",
+                    "one": "phunt na Siria",
+                    "two": "phunt na Siria",
+                    "few": "phunt na Siria",
+                    "many": "bpunt na Siria"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lilangeni na Suasalainne",
+                    "one": "lilangeni na Suasalainne",
+                    "two": "lilangeni na Suasalainne",
+                    "few": "lilangeni na Suasalainne",
+                    "many": "lilangeni na Suasalainne"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "฿"
+                },
+                "displayName": {
+                    "other": "baht na Téalainne",
+                    "one": "bhaht na Téalainne",
+                    "two": "bhaht na Téalainne",
+                    "few": "bhaht na Téalainne",
+                    "many": "mbaht na Téalainne"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJR": {
+                "symbol": {
+                    "value": "TJR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Rúbal na Táidsíceastáine"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "somoni na Táidsíceastáine",
+                    "one": "somoni na Táidsíceastáine",
+                    "two": "shomoni na Táidsíceastáine",
+                    "few": "shomoni na Táidsíceastáine",
+                    "many": "somoni na Táidsíceastáine"
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "value": "TMM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Manat na Tuircméanastáine (1993–2009)"
+                },
+                "digits": 0
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "manat na Tuircméanastáine",
+                    "one": "mhanat na Tuircméanastáine",
+                    "two": "mhanat na Tuircméanastáine",
+                    "few": "mhanat na Tuircméanastáine",
+                    "many": "manat na Tuircméanastáine"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar na Túinéise",
+                    "one": "dinar na Túinéise",
+                    "two": "dhinar na Túinéise",
+                    "few": "dhinar na Túinéise",
+                    "many": "ndinar na Túinéise"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "paʻanga Thonga",
+                    "one": "phaʻanga Thonga",
+                    "two": "phaʻanga Thonga",
+                    "few": "phaʻanga Thonga",
+                    "many": "bpaʻanga Thonga"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TPE": {
+                "symbol": {
+                    "value": "TPE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Escudo Tíomóir"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lira na Tuirce (1922–2005)",
+                    "one": "lira na Tuirce (1922–2005)",
+                    "two": "lira na Tuirce (1922–2005)",
+                    "few": "lira na Tuirce (1922–2005)",
+                    "many": "lira na Tuirce (1922–2005)"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lira na Tuirce",
+                    "one": "lira na Tuirce",
+                    "two": "lira na Tuirce",
+                    "few": "lira na Tuirce",
+                    "many": "lira na Tuirce"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar Oileán na Tríonóide agus Tobága",
+                    "one": "dollar Oileán na Tríonóide agus Tobága",
+                    "two": "dhollar Oileán na Tríonóide agus Tobága",
+                    "few": "dhollar Oileán na Tríonóide agus Tobága",
+                    "many": "ndollar Oileán na Tríonóide agus Tobága"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "dollar nua na Téaváine",
+                    "one": "dollar nua na Téaváine",
+                    "two": "dhollar nua na Téaváine",
+                    "few": "dhollar nua na Téaváine",
+                    "many": "ndollar nua na Téaváine"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "scilling na Tansáine",
+                    "one": "scilling na Tansáine",
+                    "two": "scilling na Tansáine",
+                    "few": "scilling na Tansáine",
+                    "many": "scilling na Tansáine"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "hryvnia na hÚcráine",
+                    "one": "hryvnia na hÚcráine",
+                    "two": "hryvnia na hÚcráine",
+                    "few": "hryvnia na hÚcráine",
+                    "many": "hryvnia na hÚcráine"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UAK": {
+                "symbol": {
+                    "value": "UAK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Karbovanets Úcránach"
+                }
+            },
+            "UGS": {
+                "symbol": {
+                    "value": "UGS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Scilling Uganda (1966–1987)"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "scilling Uganda",
+                    "one": "scilling Uganda",
+                    "two": "scilling Uganda",
+                    "few": "scilling Uganda",
+                    "many": "scilling Uganda"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "$"
+                },
+                "displayName": {
+                    "other": "dollar S.A.M.",
+                    "one": "dollar S.A.M.",
+                    "two": "dhollar S.A.M.",
+                    "few": "dhollar S.A.M.",
+                    "many": "ndollar S.A.M."
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "value": "USN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar S.A.M. (an chéad lá eile)",
+                    "one": "dollar S.A.M. (an chéad lá eile)",
+                    "two": "dhollar S.A.M. (an chéad lá eile)",
+                    "few": "dhollar S.A.M. (an chéad lá eile)",
+                    "many": "ndollar S.A.M. (an chéad lá eile)"
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "value": "USS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dollar S.A.M. (an lá céanna)",
+                    "one": "dollar S.A.M. (an lá céanna)",
+                    "two": "dhollar S.A.M. (an lá céanna)",
+                    "few": "dhollar S.A.M. (an lá céanna)",
+                    "many": "ndollar S.A.M. (an lá céanna)"
+                }
+            },
+            "UYP": {
+                "symbol": {
+                    "value": "UYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Uragua (1975–1993)",
+                    "one": "pheso Uragua (1975–1993)",
+                    "two": "pheso Uragua (1975–1993)",
+                    "few": "pheso Uragua (1975–1993)",
+                    "many": "bpeso Uragua (1975–1993)"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Uragua",
+                    "one": "pheso Uragua",
+                    "two": "pheso Uragua",
+                    "few": "pheso Uragua",
+                    "many": "bpeso Uragua"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "sum na hÚisbéiceastáine",
+                    "one": "sum na hÚisbéiceastáine",
+                    "two": "shum na hÚisbéiceastáine",
+                    "few": "shum na hÚisbéiceastáine",
+                    "many": "sum na hÚisbéiceastáine"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEB": {
+                "symbol": {
+                    "value": "VEB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bolívar Veiniséala (1871–2008)",
+                    "one": "bholívar Veiniséala (1871–2008)",
+                    "two": "bholívar Veiniséala (1871–2008)",
+                    "few": "bholívar Veiniséala (1871–2008)",
+                    "many": "mbolívar Veiniséala (1871–2008)"
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bolívar Veiniséala (2008–2018)",
+                    "one": "bholívar Veiniséala (2008–2018)",
+                    "two": "bholívar Veiniséala (2008–2018)",
+                    "few": "bholívar Veiniséala (2008–2018)",
+                    "many": "mbolívar Veiniséala (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bolívar Veiniséala",
+                    "one": "bholívar Veiniséala",
+                    "two": "bholívar Veiniséala",
+                    "few": "bholívar Veiniséala",
+                    "many": "mbolívar Veiniséala"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "Dong Vítneam",
+                    "one": "dong Vítneam",
+                    "two": "dhong Vítneam",
+                    "few": "dhong Vítneam",
+                    "many": "ndong Vítneam"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VNN": {
+                "symbol": {
+                    "value": "VNN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dong Vítneam (1978–1985)",
+                    "one": "dong Vítneam (1978–1985)",
+                    "two": "dhong Vítneam (1978–1985)",
+                    "few": "dhong Vítneam (1978–1985)",
+                    "many": "ndong Vítneam (1978–1985)"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "vatu Vanuatú",
+                    "one": "vatu Vanuatú",
+                    "two": "vatu Vanuatú",
+                    "few": "vatu Vanuatú",
+                    "many": "vatu Vanuatú"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "tala Shamó",
+                    "one": "tala Shamó",
+                    "two": "thala Shamó",
+                    "few": "thala Shamó",
+                    "many": "dtala Shamó"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc CFA na hAfraice Láir",
+                    "one": "fhranc CFA na hAfraice Láir",
+                    "two": "fhranc CFA na hAfraice Láir",
+                    "few": "fhranc CFA na hAfraice Láir",
+                    "many": "bhfranc CFA na hAfraice Láir"
+                },
+                "digits": 0
+            },
+            "XAG": {
+                "symbol": {
+                    "value": "XAG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "unsaí troí airgid",
+                    "one": "unsa troí airgid",
+                    "two": "unsa troí airgid",
+                    "few": "unsaí troí airgid",
+                    "many": "unsaí troí airgid"
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "value": "XAU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "unsaí troí óir",
+                    "one": "unsa troí óir",
+                    "two": "unsa troí óir",
+                    "few": "unsaí troí óir",
+                    "many": "unsaí troí óir"
+                }
+            },
+            "XBA": {
+                "symbol": {
+                    "value": "XBA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Aonad Ilchodach Eorpach"
+                }
+            },
+            "XBB": {
+                "symbol": {
+                    "value": "XBB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Aonad Airgeadaíochta Eorpach"
+                }
+            },
+            "XBC": {
+                "symbol": {
+                    "value": "XBC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Aonad Cuntais Eorpach (XBC)"
+                }
+            },
+            "XBD": {
+                "symbol": {
+                    "value": "XBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Aonad Cuntais Eorpach (XBD)"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "dollar na Cairibe Thoir",
+                    "one": "dollar na Cairibe Thoir",
+                    "two": "dhollar na Cairibe Thoir",
+                    "few": "dhollar na Cairibe Thoir",
+                    "many": "ndollar na Cairibe Thoir"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Cearta Speisialta Tarraingthe"
+                }
+            },
+            "XEU": {
+                "symbol": {
+                    "value": "XEU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Aonad Airgeadra Eorpach"
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "value": "XFO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Ór Francach"
+                }
+            },
+            "XFU": {
+                "symbol": {
+                    "value": "XFU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "UIC-Franc Francach"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc CFA Iarthar na hAfraice",
+                    "one": "fhranc CFA Iarthar na hAfraice",
+                    "two": "fhranc CFA Iarthar na hAfraice",
+                    "few": "fhranc CFA Iarthar na hAfraice",
+                    "many": "bhfranc CFA Iarthar na hAfraice"
+                },
+                "digits": 0
+            },
+            "XPD": {
+                "symbol": {
+                    "value": "XPD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "unsaí troí pallaidiam",
+                    "one": "unsa troí pallaidiam",
+                    "two": "unsa troí pallaidiam",
+                    "few": "unsaí troí pallaidiam",
+                    "many": "unsaí troí pallaidiam"
+                }
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc CFP",
+                    "one": "fhranc CFP",
+                    "two": "fhranc CFP",
+                    "few": "fhranc CFP",
+                    "many": "bhfranc CFP"
+                },
+                "digits": 0
+            },
+            "XPT": {
+                "symbol": {
+                    "value": "XPT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "unsaí troí platanaim",
+                    "one": "unsa troí platanaim",
+                    "two": "unsa troí platanaim",
+                    "few": "unsaí troí platanaim",
+                    "many": "unsaí troí platanaim"
+                }
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "XXX",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "(airgeadra anaithnid)",
+                    "one": "(airgeadra anaithnid)",
+                    "two": "(airgeadra anaithnid)",
+                    "few": "(airgeadra anaithnid)",
+                    "many": "(airgeadra anaithnid)"
+                }
+            },
+            "YDD": {
+                "symbol": {
+                    "value": "YDD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Dínear Éimin"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rial Éimin",
+                    "one": "rial Éimin",
+                    "two": "rial Éimin",
+                    "few": "rial Éimin",
+                    "many": "rial Éimin"
+                },
+                "digits": 0
+            },
+            "YUD": {
+                "symbol": {
+                    "value": "YUD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Dínear Crua Iúgslavach (1966–1990)"
+                }
+            },
+            "YUM": {
+                "symbol": {
+                    "value": "YUM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Dínear Nua Iúgslavach (1994–2002)"
+                }
+            },
+            "YUN": {
+                "symbol": {
+                    "value": "YUN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Dínear Inathraithe Iúgslavach",
+                    "one": "Dínear Inathraithe Iúgslavach",
+                    "two": "Dínear Inathraithe Iúgslavach",
+                    "few": "Dínear Inathraithe Iúgslavach",
+                    "many": "Dínear Inathraithe Iúgslavach"
+                }
+            },
+            "ZAL": {
+                "symbol": {
+                    "value": "ZAL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Rand na hAfraice Theas (airgeadúil)"
+                }
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rand na hAfraice Theas",
+                    "one": "rand na hAfraice Theas",
+                    "two": "rand na hAfraice Theas",
+                    "few": "rand na hAfraice Theas",
+                    "many": "rand na hAfraice Theas"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kwacha Saimbiach (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kwacha na Saimbia",
+                    "one": "kwacha na Saimbia",
+                    "two": "kwacha na Saimbia",
+                    "few": "kwacha na Saimbia",
+                    "many": "kwacha na Saimbia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZRN": {
+                "symbol": {
+                    "value": "ZRN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Zaire Nua Sáíreach"
+                }
+            },
+            "ZRZ": {
+                "symbol": {
+                    "value": "ZRZ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Zaire Sáíreach"
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Dollar Siombábach (1980–2008)"
+                },
+                "digits": 0
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:gravity="bottom" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/preview_cover" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constrainedHeight="true" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/control_bar_cover" n0:layout_width="match_parent" n0:layout_height="56.0dp" n2:layout_constrainedHeight="true" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/loading_content" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/loading_animation" n0:visibility="visible" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginStart="16.0dp" n3:layout_constraintEnd_toStartOf="@id/loading_msg" n3:layout_constraintHorizontal_chainStyle="packed" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:lottie_autoPlay="true" n3:lottie_loop="true"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:id="@id/loading_msg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="1" n0:includeFontPadding="false" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="16.0dp" n4:autoSizeMinTextSize="5.0dp" n4:autoSizeTextType="uniform" n4:layout_constrainedWidth="true" n4:layout_constraintBottom_toBottomOf="@id/loading_animation" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/loading_animation" n4:layout_constraintTop_toTopOf="@id/loading_animation" n4:k1f="true"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#66e5e9fa" n0:gravity="center|top" n0:id="@id/loading_tip" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:maxLines="2" n0:layout_marginStart="36.0dp" n0:layout_marginEnd="36.0dp" n5:autoSizeMinTextSize="5.0dp" n5:autoSizeTextType="uniform" n5:layout_constraintTop_toBottomOf="@id/loading_animation" n5:k1f="true"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/error_icon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="20.0dp" n0:src="@drawable/oj_" n0:layout_marginStart="16.0dp" n6:layout_constraintEnd_toStartOf="@id/error_msg" n6:layout_constraintHorizontal_chainStyle="packed" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" n6:layout_constraintVertical_chainStyle="packed"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#ffffff" n0:id="@id/error_msg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="1" n0:includeFontPadding="false" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="16.0dp" n7:autoSizeMinTextSize="5.0dp" n7:autoSizeTextType="uniform" n7:layout_constrainedWidth="true" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toEndOf="@id/error_icon" n7:layout_constraintTop_toTopOf="@id/error_icon" n7:k1f="true"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#66e5e9fa" n0:ellipsize="marquee" n0:gravity="center|top" n0:id="@id/error_tip" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="56.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="56.0dp" n0:text="@string/pmv" n0:maxLines="2" n0:marqueeRepeatLimit="marquee_forever" n8:autoSizeMinTextSize="5.0dp" n8:autoSizeTextType="uniform" n8:layout_constraintTop_toBottomOf="@id/error_icon" n8:k1f="true"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/btn_retry" n0:background="@drawable/k7s" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="31.0dp" n0:minWidth="60.0dp" n0:minHeight="36.0dp" n0:text="@string/pk7" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent"
+          xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

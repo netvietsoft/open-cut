@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_layout_illuminate_slide_0" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/illuminate_sliders" n0:tag="binding_1" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/slide_color_container" n0:tag="binding_2" n0:layout_width="match_parent" n0:layout_height="44.0dp">
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="@color/kqt" n0:gravity="center" n0:id="@id/color_tip" n0:layout_width="82.0dp" n0:layout_height="wrap_content" n0:text="@string/tax" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/color_slide" n0:tag="binding_3" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginStart="82.0dp" n0:layout_marginEnd="60.0dp" n2:APKTOOL_RENAMED_0x7f04046d="false" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kko="@color/kta" n2:kkt="@color/ktz" n2:kte="@string/tax"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/slide_soft_container" n0:tag="binding_4" n0:layout_width="match_parent" n0:layout_height="44.0dp">
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="@color/kqt" n0:gravity="center" n0:id="@id/soft_tip" n0:layout_width="82.0dp" n0:layout_height="wrap_content" n0:text="@string/tay" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/soft_slide" n0:tag="binding_5" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginStart="82.0dp" n0:layout_marginEnd="60.0dp" n4:APKTOOL_RENAMED_0x7f04046d="false" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:kko="@color/kta" n4:kkt="@color/ktz" n4:kte="@string/teg"
+              xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/slide_intensity_container" n0:tag="binding_6" n0:layout_width="match_parent" n0:layout_height="44.0dp">
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="@color/kqt" n0:gravity="center" n0:id="@id/intensity_tip" n0:layout_width="82.0dp" n0:layout_height="wrap_content" n0:text="@string/teg" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+              xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/intensity_slide" n0:tag="binding_7" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginStart="82.0dp" n0:layout_marginEnd="60.0dp" n6:APKTOOL_RENAMED_0x7f04046d="false" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" n6:kko="@color/kta" n6:kkt="@color/ktz" n6:kte="@string/teg"
+              xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/slide_specular_container" n0:tag="binding_8" n0:layout_width="match_parent" n0:layout_height="44.0dp">
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="@color/kqt" n0:gravity="center" n0:id="@id/specular_tip" n0:layout_width="82.0dp" n0:layout_height="wrap_content" n0:text="@string/tog" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+              xmlns:n7="http://schemas.android.com/apk/res-auto" />
+            <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/specular_slide" n0:tag="binding_9" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginStart="82.0dp" n0:layout_marginEnd="60.0dp" n8:APKTOOL_RENAMED_0x7f04046d="false" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="parent" n8:kko="@color/kta" n8:kkt="@color/ktz" n8:kte="@string/teg"
+              xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <ImageView n0:layout_gravity="end|bottom" n0:tag="binding_10" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:contentDescription="Whether other sliders are displayed" n0:layout_marginEnd="8.0dp" />
+</FrameLayout>

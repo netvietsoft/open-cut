@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:orientation="vertical" n0:layout_width="80.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/rlImageRoot" n0:background="@drawable/APKTOOL_RENAMED_0x7f080bb5" n0:padding="4.0dp" n0:layout_width="80.0dp" n0:layout_height="80.0dp">
+        <RelativeLayout n0:background="@drawable/k8p" n0:padding="5.0dp" n0:layout_width="72.0dp" n0:layout_height="72.0dp" n0:layout_centerInParent="true">
+            <androidx.cardview.widget.CardView n0:layout_width="match_parent" n0:layout_height="match_parent" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp"
+              xmlns:n1="http://schemas.android.com/apk/res-auto">
+                <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/cralView" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@color/km6" n0:scaleType="centerInside" />
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:layout_gravity="center" n0:id="@id/sticker_tv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" />
+                <ImageView n0:id="@id/cralViewMask" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@color/_l" n0:scaleType="centerCrop" n0:layout_centerInParent="true" />
+            </androidx.cardview.widget.CardView>
+            <com.vega.cutsameedit.view.TemplateSlotStateView n0:id="@id/stateView" n0:layout_width="22.0dp" n0:layout_height="22.0dp" n0:layout_alignParentTop="true" n0:layout_alignParentStart="true" />
+            <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_alignParentTop="true" n0:layout_alignParentEnd="true" n2:kml="small" n2:kmm="normal"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/gd" n0:ellipsize="end" n0:gravity="center|bottom" n0:layout_gravity="center|bottom" n0:id="@id/tvTime" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:maxLines="2" n0:layout_alignParentBottom="true" n0:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.vega.ui.widget.SolidCircleView n0:id="@id/relationLabel" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="4.0dp" n0:layout_below="@id/rlImageRoot" n0:layout_centerHorizontal="true" n3:g0="@color/sg"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:id="@id/tvIndexLabel" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="0.0dp" />
+</RelativeLayout>

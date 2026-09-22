@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f06001b" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/knt" n0:id="@id/tab_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/qtn" n0:layout_marginStart="20.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/updating_music_has_music" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="20.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tab_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/updating_view" n0:layout_width="16.0dp" n0:layout_height="13.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintHorizontal_chainStyle="packed" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:lottie_autoPlay="true" n2:lottie_fileName="lv_loading.json" n2:lottie_loop="true" />
+        <com.vega.theme.text.VegaTextView n0:textColor="#e6e6e6" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f123186" n0:layout_marginStart="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/updating_view" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/songDetailRv" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toBottomOf="@id/updating_music_has_music"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/vgSongListError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="100.0dp" n0:paddingStart="70.0dp" n0:paddingEnd="70.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/ivSongListError" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/odn" n0:scaleType="centerCrop" />
+        <com.vega.ui.ContentTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:gravity="center_vertical" n0:layout_gravity="center_vertical" n0:id="@id/tvSongListError" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qnn" n0:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/ll_no_music" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="38.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/tab_title"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_width="58.0dp" n0:layout_height="52.0dp" n0:src="@drawable/o_5" n0:scaleType="centerCrop" />
+        <com.vega.ui.ContentTextView n0:textSize="12.0dp" n0:textColor="@color/_e" n0:gravity="center" n0:id="@id/tt_no_music_tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="22.0dp" n0:text="@string/qpf" n0:paddingStart="20.0dp" n0:paddingEnd="20.0dp" n0:layout_marginStart="30.0dp" n0:layout_marginEnd="35.0dp" />
+        <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/xq" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_empty_go_tt_settings" n0:background="@drawable/ks3" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/qs7" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/emptyView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="200.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120574" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tvGrantedPermissionsError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="200.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120574" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/updating_music_no_music" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="100.0dp" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/ivLoading" n0:layout_width="34.0dp" n0:layout_height="25.0dp" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="parent" n8:lottie_autoPlay="true" n8:lottie_fileName="lv_loading.json" n8:lottie_loop="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:layout_marginTop="15.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f123186" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/ivLoading" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView n0:id="@id/vsLoginTikTokRoot" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n9:layout_constraintTop_toBottomOf="@id/tab_title"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

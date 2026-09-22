@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:layout_gravity="center" n0:id="@id/ll_creation_new" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.main.home.creation.HomeCreationNewProjectView n0:id="@id/creation_view" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="8.0dp" n1:cardCornerRadius="12.0dp" n1:cardElevation="0.0dp" n1:APKTOOL_RENAMED_0x7f04043a="@color/zs" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/image_creation_view" n1:layout_constraintHorizontal_weight="63.0" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.main.home.creation.HomeCreationNewProjectView n0:id="@id/image_creation_view" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginEnd="16.0dp" n2:cardCornerRadius="12.0dp" n2:cardElevation="0.0dp" n2:APKTOOL_RENAMED_0x7f04043a="@color/zs" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHorizontal_weight="37.0" n2:layout_constraintStart_toEndOf="@id/creation_view" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

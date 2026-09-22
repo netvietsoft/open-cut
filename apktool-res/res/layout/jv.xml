@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_gravity="center" n0:background="@drawable/kds" n0:padding="24.0dp" n0:layout_width="280.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ff" n0:gravity="center_horizontal" n0:id="@id/tv_dialog_simple_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/q_q" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:layout_gravity="center_horizontal" n0:orientation="horizontal" n0:id="@id/ll_next_notification" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="21.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_dialog_simple_content"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_notification_check" n0:background="@drawable/k_k" n0:layout_width="16.0dp" n0:layout_height="16.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ff" n0:layout_gravity="center_vertical" n0:id="@id/tv_notification_check" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qpl" n0:layout_marginStart="7.0dp" />
+        </LinearLayout>
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tv_dialog_simple_confirm" n0:background="@drawable/qpo" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="20.0dp" n0:text="@string/lz6" n0:paddingHorizontal="10.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/ll_next_notification"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

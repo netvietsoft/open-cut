@@ -1,0 +1,3155 @@
+{
+    "name": "ru",
+    "currency": {
+		"pattern": "# ##0,###",
+        "Standard": "{0} ¤",
+        "StandardNoCurrency": "# ##0,00",
+        "compact": {
+            "short": "{0} ¤",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "{0}–{1} ¤"
+			},
+			"approximately": {
+				"short": "~{0} ¤"
+			},
+			"atLeast": {
+				"short": "Более {0} ¤"
+			},
+			"atMost": {
+				"short": "≤{0} ¤"
+			}
+		},
+        "currencyList": {
+            "ADP": {
+                "symbol": {
+                    "value": "ADP"
+                },
+                "displayName": {
+                    "other": "андоррских песет",
+                    "one": "андоррская песета",
+                    "few": "андоррские песеты",
+                    "many": "андоррских песет"
+                },
+                "digits": 0
+            },
+            "AED": {
+                "symbol": {
+                    "value": "AED"
+                },
+                "displayName": {
+                    "other": "дирхама ОАЭ",
+                    "one": "дирхам ОАЭ",
+                    "few": "дирхама ОАЭ",
+                    "many": "дирхамов ОАЭ"
+                }
+            },
+            "AFA": {
+                "symbol": {
+                    "value": "AFA"
+                },
+                "displayName": {
+                    "other": "Афгани (1927–2002)"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN"
+                },
+                "displayName": {
+                    "other": "афгани"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL"
+                },
+                "displayName": {
+                    "other": "албанского лека",
+                    "one": "албанский лек",
+                    "few": "албанских лека",
+                    "many": "албанских леков"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD"
+                },
+                "displayName": {
+                    "other": "армянского драма",
+                    "one": "армянский драм",
+                    "few": "армянских драма",
+                    "many": "армянских драмов"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG"
+                },
+                "displayName": {
+                    "other": "нидерландского антильского гульдена",
+                    "one": "нидерландский антильский гульден",
+                    "few": "нидерландских антильских гульдена",
+                    "many": "нидерландских антильских гульденов"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA"
+                },
+                "displayName": {
+                    "other": "ангольской кванзы",
+                    "one": "ангольская кванза",
+                    "few": "ангольские кванзы",
+                    "many": "ангольских кванз"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz"
+                }
+            },
+            "AOK": {
+                "symbol": {
+                    "value": "AOK"
+                },
+                "displayName": {
+                    "other": "ангольских кванз (1977–1991)",
+                    "one": "ангольских кванз (1977–1991)",
+                    "few": "ангольские кванзы (1977–1991)",
+                    "many": "ангольских кванз (1977–1991)"
+                }
+            },
+            "AON": {
+                "symbol": {
+                    "value": "AON"
+                },
+                "displayName": {
+                    "other": "Ангольская новая кванза (1990–2000)"
+                }
+            },
+            "AOR": {
+                "symbol": {
+                    "value": "AOR"
+                },
+                "displayName": {
+                    "other": "ангольских кванз реюстадо (1995–1999)",
+                    "one": "ангольских кванз реюстадо (1995–1999)",
+                    "few": "ангольские кванзы реюстадо (1995–1999)",
+                    "many": "ангольских кванз реюстадо (1995–1999)"
+                }
+            },
+            "ARA": {
+                "symbol": {
+                    "value": "ARA"
+                },
+                "displayName": {
+                    "other": "Аргентинский аустрал"
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "value": "ARP"
+                },
+                "displayName": {
+                    "other": "Аргентинское песо (1983–1985)"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS"
+                },
+                "displayName": {
+                    "other": "аргентинского песо",
+                    "one": "аргентинский песо",
+                    "few": "аргентинских песо",
+                    "many": "аргентинских песо"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "value": "ATS"
+                },
+                "displayName": {
+                    "other": "Австрийский шиллинг"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "A$"
+                },
+                "displayName": {
+                    "other": "австралийского доллара",
+                    "one": "австралийский доллар",
+                    "few": "австралийских доллара",
+                    "many": "австралийских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "A$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG"
+                },
+                "displayName": {
+                    "other": "арубанского флорина",
+                    "one": "арубанский флорин",
+                    "few": "арубанских флорина",
+                    "many": "арубанских флоринов"
+                }
+            },
+            "AZM": {
+                "symbol": {
+                    "value": "AZM"
+                },
+                "displayName": {
+                    "other": "Старый азербайджанский манат"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN"
+                },
+                "displayName": {
+                    "other": "азербайджанского маната",
+                    "one": "азербайджанский манат",
+                    "few": "азербайджанских маната",
+                    "many": "азербайджанских манатов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAD": {
+                "symbol": {
+                    "value": "BAD"
+                },
+                "displayName": {
+                    "other": "Динар Боснии и Герцеговины"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM"
+                },
+                "displayName": {
+                    "other": "конвертируемой марки Боснии и Герцеговины",
+                    "one": "конвертируемая марка Боснии и Герцеговины",
+                    "few": "конвертируемые марки Боснии и Герцеговины",
+                    "many": "конвертируемых марок Боснии и Герцеговины"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM"
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD"
+                },
+                "displayName": {
+                    "other": "барбадосского доллара",
+                    "one": "барбадосский доллар",
+                    "few": "барбадосских доллара",
+                    "many": "барбадосских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT"
+                },
+                "displayName": {
+                    "other": "бангладешской таки",
+                    "one": "бангладешская така",
+                    "few": "бангладешские таки",
+                    "many": "бангладешских так"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEC": {
+                "symbol": {
+                    "value": "BEC"
+                },
+                "displayName": {
+                    "other": "Бельгийский франк (конвертируемый)"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF"
+                },
+                "displayName": {
+                    "other": "Бельгийский франк"
+                }
+            },
+            "BEL": {
+                "symbol": {
+                    "value": "BEL"
+                },
+                "displayName": {
+                    "other": "Бельгийский франк (финансовый)"
+                }
+            },
+            "BGL": {
+                "symbol": {
+                    "value": "BGL"
+                },
+                "displayName": {
+                    "other": "Лев"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN"
+                },
+                "displayName": {
+                    "other": "болгарского лева",
+                    "one": "болгарский лев",
+                    "few": "болгарских лева",
+                    "many": "болгарских левов"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD"
+                },
+                "displayName": {
+                    "other": "бахрейнского динара",
+                    "one": "бахрейнский динар",
+                    "few": "бахрейнских динара",
+                    "many": "бахрейнских динаров"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF"
+                },
+                "displayName": {
+                    "other": "бурундийского франка",
+                    "one": "бурундийский франк",
+                    "few": "бурундийских франка",
+                    "many": "бурундийских франков"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD"
+                },
+                "displayName": {
+                    "other": "бермудского доллара",
+                    "one": "бермудский доллар",
+                    "few": "бермудских доллара",
+                    "many": "бермудских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND"
+                },
+                "displayName": {
+                    "other": "брунейского доллара",
+                    "one": "брунейский доллар",
+                    "few": "брунейских доллара",
+                    "many": "брунейских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB"
+                },
+                "displayName": {
+                    "other": "боливийского боливиано",
+                    "one": "боливийский боливиано",
+                    "few": "боливийских боливиано",
+                    "many": "боливийских боливиано"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs"
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "value": "BOP"
+                },
+                "displayName": {
+                    "other": "Боливийское песо"
+                }
+            },
+            "BOV": {
+                "symbol": {
+                    "value": "BOV"
+                },
+                "displayName": {
+                    "other": "Боливийский мвдол"
+                }
+            },
+            "BRB": {
+                "symbol": {
+                    "value": "BRB"
+                },
+                "displayName": {
+                    "other": "Бразильский новый крузейро (1967–1986)"
+                }
+            },
+            "BRC": {
+                "symbol": {
+                    "value": "BRC"
+                },
+                "displayName": {
+                    "other": "Бразильское крузадо"
+                }
+            },
+            "BRE": {
+                "symbol": {
+                    "value": "BRE"
+                },
+                "displayName": {
+                    "other": "Бразильский крузейро (1990–1993)"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$"
+                },
+                "displayName": {
+                    "other": "бразильского реала",
+                    "one": "бразильский реал",
+                    "few": "бразильских реала",
+                    "many": "бразильских реалов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BRN": {
+                "symbol": {
+                    "value": "BRN"
+                },
+                "displayName": {
+                    "other": "Бразильское новое крузадо"
+                }
+            },
+            "BRR": {
+                "symbol": {
+                    "value": "BRR"
+                },
+                "displayName": {
+                    "other": "Бразильский крузейро"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD"
+                },
+                "displayName": {
+                    "other": "багамского доллара",
+                    "one": "багамский доллар",
+                    "few": "багамских доллара",
+                    "many": "багамских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN"
+                },
+                "displayName": {
+                    "other": "бутанского нгултрума",
+                    "one": "бутанский нгултрум",
+                    "few": "бутанских нгултрума",
+                    "many": "бутанских нгултрумов"
+                }
+            },
+            "BUK": {
+                "symbol": {
+                    "value": "BUK"
+                },
+                "displayName": {
+                    "other": "Джа"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP"
+                },
+                "displayName": {
+                    "other": "ботсванской пулы",
+                    "one": "ботсванская пула",
+                    "few": "ботсванские пулы",
+                    "many": "ботсванских пул"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P"
+                }
+            },
+            "BYB": {
+                "symbol": {
+                    "value": "BYB"
+                },
+                "displayName": {
+                    "other": "Белорусский рубль (1994–1999)"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN"
+                },
+                "displayName": {
+                    "other": "белорусского рубля",
+                    "one": "белорусский рубль",
+                    "few": "белорусских рубля",
+                    "many": "белорусских рублей"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р."
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR"
+                },
+                "displayName": {
+                    "other": "белорусского рубля (2000–2016)",
+                    "one": "белорусский рубль (2000–2016)",
+                    "few": "белорусских рубля (2000–2016)",
+                    "many": "белорусских рублей (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD"
+                },
+                "displayName": {
+                    "other": "белизского доллара",
+                    "one": "белизский доллар",
+                    "few": "белизских доллара",
+                    "many": "белизских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "канадского доллара",
+                    "one": "канадский доллар",
+                    "few": "канадских доллара",
+                    "many": "канадских долларов"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF"
+                },
+                "displayName": {
+                    "other": "конголезского франка",
+                    "one": "конголезский франк",
+                    "few": "конголезских франка",
+                    "many": "конголезских франков"
+                }
+            },
+            "CHE": {
+                "symbol": {
+                    "value": "CHE"
+                },
+                "displayName": {
+                    "other": "WIR евро"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF"
+                },
+                "displayName": {
+                    "other": "швейцарского франка",
+                    "one": "швейцарский франк",
+                    "few": "швейцарских франка",
+                    "many": "швейцарских франков"
+                },
+                "digits": 2
+            },
+            "CHW": {
+                "symbol": {
+                    "value": "CHW"
+                },
+                "displayName": {
+                    "other": "WIR франк"
+                }
+            },
+            "CLF": {
+                "symbol": {
+                    "value": "CLF"
+                },
+                "displayName": {
+                    "other": "Условная расчетная единица Чили"
+                },
+                "digits": 4
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP"
+                },
+                "displayName": {
+                    "other": "чилийского песо",
+                    "one": "чилийский песо",
+                    "few": "чилийских песо",
+                    "many": "чилийских песо"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH"
+                },
+                "displayName": {
+                    "other": "китайского офшорного юаня",
+                    "one": "китайский офшорный юань",
+                    "few": "китайских офшорных юаня",
+                    "many": "китайских офшорных юаней"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "китайского юаня",
+                    "one": "китайский юань",
+                    "few": "китайских юаня",
+                    "many": "китайских юаней"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP"
+                },
+                "displayName": {
+                    "other": "колумбийского песо",
+                    "one": "колумбийский песо",
+                    "few": "колумбийских песо",
+                    "many": "колумбийских песо"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "COU": {
+                "symbol": {
+                    "value": "COU"
+                },
+                "displayName": {
+                    "other": "Единица реальной стоимости Колумбии"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC"
+                },
+                "displayName": {
+                    "other": "костариканского колона",
+                    "one": "костариканский колон",
+                    "few": "костариканских колона",
+                    "many": "костариканских колонов"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CSD": {
+                "symbol": {
+                    "value": "CSD"
+                },
+                "displayName": {
+                    "other": "Старый Сербский динар"
+                }
+            },
+            "CSK": {
+                "symbol": {
+                    "value": "CSK"
+                },
+                "displayName": {
+                    "other": "Чехословацкая твердая крона"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC"
+                },
+                "displayName": {
+                    "other": "кубинского конвертируемого песо",
+                    "one": "кубинский конвертируемый песо",
+                    "few": "кубинских конвертируемых песо",
+                    "many": "кубинских конвертируемых песо"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP"
+                },
+                "displayName": {
+                    "other": "кубинского песо",
+                    "one": "кубинский песо",
+                    "few": "кубинских песо",
+                    "many": "кубинских песо"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE"
+                },
+                "displayName": {
+                    "other": "эскудо Кабо-Верде"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP"
+                },
+                "displayName": {
+                    "other": "Кипрский фунт"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK"
+                },
+                "displayName": {
+                    "other": "чешской кроны",
+                    "one": "чешская крона",
+                    "few": "чешские кроны",
+                    "many": "чешских крон"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč"
+                }
+            },
+            "DDM": {
+                "symbol": {
+                    "value": "DDM"
+                },
+                "displayName": {
+                    "other": "Восточногерманская марка"
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM"
+                },
+                "displayName": {
+                    "other": "Немецкая марка"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF"
+                },
+                "displayName": {
+                    "other": "франка Джибути",
+                    "one": "франк Джибути",
+                    "few": "франка Джибути",
+                    "many": "франков Джибути"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK"
+                },
+                "displayName": {
+                    "other": "датской кроны",
+                    "one": "датская крона",
+                    "few": "датские кроны",
+                    "many": "датских крон"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP"
+                },
+                "displayName": {
+                    "other": "доминиканского песо",
+                    "one": "доминиканский песо",
+                    "few": "доминиканских песо",
+                    "many": "доминиканских песо"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD"
+                },
+                "displayName": {
+                    "other": "алжирского динара",
+                    "one": "алжирский динар",
+                    "few": "алжирских динара",
+                    "many": "алжирских динаров"
+                }
+            },
+            "ECS": {
+                "symbol": {
+                    "value": "ECS"
+                },
+                "displayName": {
+                    "other": "Эквадорский сукре"
+                }
+            },
+            "ECV": {
+                "symbol": {
+                    "value": "ECV"
+                },
+                "displayName": {
+                    "other": "Постоянная единица стоимости Эквадора"
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "value": "EEK"
+                },
+                "displayName": {
+                    "other": "Эстонская крона"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP"
+                },
+                "displayName": {
+                    "other": "египетского фунта",
+                    "one": "египетский фунт",
+                    "few": "египетских фунта",
+                    "many": "египетских фунтов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN"
+                },
+                "displayName": {
+                    "other": "эритрейской накфы",
+                    "one": "эритрейская накфа",
+                    "few": "эритрейские накфы",
+                    "many": "эритрейских накф"
+                }
+            },
+            "ESA": {
+                "symbol": {
+                    "value": "ESA"
+                },
+                "displayName": {
+                    "other": "Испанская песета (А)"
+                }
+            },
+            "ESB": {
+                "symbol": {
+                    "value": "ESB"
+                },
+                "displayName": {
+                    "other": "Испанская песета (конвертируемая)"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP"
+                },
+                "displayName": {
+                    "other": "Испанская песета"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB"
+                },
+                "displayName": {
+                    "other": "эфиопского быра",
+                    "one": "эфиопский быр",
+                    "few": "эфиопских быра",
+                    "many": "эфиопских быров"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "евро"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "value": "FIM"
+                },
+                "displayName": {
+                    "other": "Финская марка"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD"
+                },
+                "displayName": {
+                    "other": "доллара Фиджи",
+                    "one": "доллар Фиджи",
+                    "few": "доллара Фиджи",
+                    "many": "долларов Фиджи"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP"
+                },
+                "displayName": {
+                    "other": "фунта Фолклендских островов",
+                    "one": "фунт Фолклендских островов",
+                    "few": "фунта Фолклендских островов",
+                    "many": "фунтов Фолклендских островов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF"
+                },
+                "displayName": {
+                    "other": "Французский франк"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "британского фунта стерлингов",
+                    "one": "британский фунт стерлингов",
+                    "few": "британских фунта стерлингов",
+                    "many": "британских фунтов стерлингов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEK": {
+                "symbol": {
+                    "value": "GEK"
+                },
+                "displayName": {
+                    "other": "Грузинский купон"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL"
+                },
+                "displayName": {
+                    "other": "грузинского лари",
+                    "one": "грузинский лари",
+                    "few": "грузинских лари",
+                    "many": "грузинских лари"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ლ"
+                }
+            },
+            "GHC": {
+                "symbol": {
+                    "value": "GHC"
+                },
+                "displayName": {
+                    "other": "Ганский седи (1979–2007)"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS"
+                },
+                "displayName": {
+                    "other": "ганского седи",
+                    "one": "ганский седи",
+                    "few": "ганских седи",
+                    "many": "ганских седи"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP"
+                },
+                "displayName": {
+                    "other": "гибралтарского фунта",
+                    "one": "гибралтарский фунт",
+                    "few": "гибралтарских фунта",
+                    "many": "гибралтарских фунтов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD"
+                },
+                "displayName": {
+                    "other": "гамбийского даласи",
+                    "one": "гамбийский даласи",
+                    "few": "гамбийских даласи",
+                    "many": "гамбийских даласи"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF"
+                },
+                "displayName": {
+                    "other": "гвинейского франка",
+                    "one": "гвинейский франк",
+                    "few": "гвинейских франка",
+                    "many": "гвинейских франков"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG"
+                }
+            },
+            "GNS": {
+                "symbol": {
+                    "value": "GNS"
+                },
+                "displayName": {
+                    "other": "Гвинейская сили"
+                }
+            },
+            "GQE": {
+                "symbol": {
+                    "value": "GQE"
+                },
+                "displayName": {
+                    "other": "Эквеле экваториальной Гвинеи"
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "value": "GRD"
+                },
+                "displayName": {
+                    "other": "Греческая драхма"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ"
+                },
+                "displayName": {
+                    "other": "гватемальского кетсаля",
+                    "one": "гватемальский кетсаль",
+                    "few": "гватемальских кетсаля",
+                    "many": "гватемальских кетсалей"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q"
+                }
+            },
+            "GWE": {
+                "symbol": {
+                    "value": "GWE"
+                },
+                "displayName": {
+                    "other": "Эскудо Португальской Гвинеи"
+                }
+            },
+            "GWP": {
+                "symbol": {
+                    "value": "GWP"
+                },
+                "displayName": {
+                    "other": "Песо Гвинеи-Бисау"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD"
+                },
+                "displayName": {
+                    "other": "гайанского доллара",
+                    "one": "гайанский доллар",
+                    "few": "гайанских доллара",
+                    "many": "гайанских долларов"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "гонконгского доллара",
+                    "one": "гонконгский доллар",
+                    "few": "гонконгских доллара",
+                    "many": "гонконгских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL"
+                },
+                "displayName": {
+                    "other": "гондурасской лемпиры",
+                    "one": "гондурасская лемпира",
+                    "few": "гондурасские лемпиры",
+                    "many": "гондурасских лемпир"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L"
+                }
+            },
+            "HRD": {
+                "symbol": {
+                    "value": "HRD"
+                },
+                "displayName": {
+                    "other": "Хорватский динар"
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK"
+                },
+                "displayName": {
+                    "other": "хорватской куны",
+                    "one": "хорватская куна",
+                    "few": "хорватские куны",
+                    "many": "хорватских кун"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn"
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG"
+                },
+                "displayName": {
+                    "other": "гаитянского гурда",
+                    "one": "гаитянский гурд",
+                    "few": "гаитянских гурда",
+                    "many": "гаитянских гурдов"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF"
+                },
+                "displayName": {
+                    "other": "венгерского форинта",
+                    "one": "венгерский форинт",
+                    "few": "венгерских форинта",
+                    "many": "венгерских форинтов"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft"
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR"
+                },
+                "displayName": {
+                    "other": "индонезийской рупии",
+                    "one": "индонезийская рупия",
+                    "few": "индонезийские рупии",
+                    "many": "индонезийских рупий"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp"
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "value": "IEP"
+                },
+                "displayName": {
+                    "other": "Ирландский фунт"
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "value": "ILP"
+                },
+                "displayName": {
+                    "other": "Израильский фунт"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "нового израильского шекеля",
+                    "one": "новый израильский шекель",
+                    "few": "новых израильских шекеля",
+                    "many": "новых израильских шекелей"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "индийской рупии",
+                    "one": "индийская рупия",
+                    "few": "индийские рупии",
+                    "many": "индийских рупий"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD"
+                },
+                "displayName": {
+                    "other": "иракского динара",
+                    "one": "иракский динар",
+                    "few": "иракских динара",
+                    "many": "иракских динаров"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR"
+                },
+                "displayName": {
+                    "other": "иранского риала",
+                    "one": "иранский риал",
+                    "few": "иранских риала",
+                    "many": "иранских риалов"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK"
+                },
+                "displayName": {
+                    "other": "исландской кроны",
+                    "one": "исландская крона",
+                    "few": "исландские кроны",
+                    "many": "исландских крон"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "value": "ITL"
+                },
+                "displayName": {
+                    "other": "Итальянская лира"
+                },
+                "digits": 0
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD"
+                },
+                "displayName": {
+                    "other": "ямайского доллара",
+                    "one": "ямайский доллар",
+                    "few": "ямайских доллара",
+                    "many": "ямайских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD"
+                },
+                "displayName": {
+                    "other": "иорданского динара",
+                    "one": "иорданский динар",
+                    "few": "иорданских динара",
+                    "many": "иорданских динаров"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "¥"
+                },
+                "displayName": {
+                    "other": "японской иены",
+                    "one": "японская иена",
+                    "few": "японские иены",
+                    "many": "японских иен"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES"
+                },
+                "displayName": {
+                    "other": "кенийского шиллинга",
+                    "one": "кенийский шиллинг",
+                    "few": "кенийских шиллинга",
+                    "many": "кенийских шиллингов"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS"
+                },
+                "displayName": {
+                    "other": "киргизского сома",
+                    "one": "киргизский сом",
+                    "few": "киргизских сома",
+                    "many": "киргизских сомов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR"
+                },
+                "displayName": {
+                    "other": "камбоджийского риеля",
+                    "one": "камбоджийский риель",
+                    "few": "камбоджийских риеля",
+                    "many": "камбоджийских риелей"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF"
+                },
+                "displayName": {
+                    "other": "коморского франка",
+                    "one": "коморский франк",
+                    "few": "коморских франка",
+                    "many": "коморских франков"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF"
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW"
+                },
+                "displayName": {
+                    "other": "северокорейской воны",
+                    "one": "северокорейская вона",
+                    "few": "северокорейские воны",
+                    "many": "северокорейских вон"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "южнокорейской воны",
+                    "one": "южнокорейская вона",
+                    "few": "южнокорейские воны",
+                    "many": "южнокорейских вон"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD"
+                },
+                "displayName": {
+                    "other": "кувейтского динара",
+                    "one": "кувейтский динар",
+                    "few": "кувейтских динара",
+                    "many": "кувейтских динаров"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD"
+                },
+                "displayName": {
+                    "other": "доллара Островов Кайман",
+                    "one": "доллар Островов Кайман",
+                    "few": "доллара Островов Кайман",
+                    "many": "долларов Островов Кайман"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT"
+                },
+                "displayName": {
+                    "other": "казахского тенге",
+                    "one": "казахский тенге",
+                    "few": "казахских тенге",
+                    "many": "казахских тенге"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK"
+                },
+                "displayName": {
+                    "other": "лаосского кипа",
+                    "one": "лаосский кип",
+                    "few": "лаосских кипа",
+                    "many": "лаосских кипов"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP"
+                },
+                "displayName": {
+                    "other": "ливанского фунта",
+                    "one": "ливанский фунт",
+                    "few": "ливанских фунта",
+                    "many": "ливанских фунтов"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR"
+                },
+                "displayName": {
+                    "other": "шри-ланкийской рупии",
+                    "one": "шри-ланкийская рупия",
+                    "few": "шри-ланкийские рупии",
+                    "many": "шри-ланкийских рупий"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD"
+                },
+                "displayName": {
+                    "other": "либерийского доллара",
+                    "one": "либерийский доллар",
+                    "few": "либерийских доллара",
+                    "many": "либерийских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL"
+                },
+                "displayName": {
+                    "other": "лоти"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL"
+                },
+                "displayName": {
+                    "other": "литовского лита",
+                    "one": "литовский лит",
+                    "few": "литовских лита",
+                    "many": "литовских литов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt"
+                }
+            },
+            "LTT": {
+                "symbol": {
+                    "value": "LTT"
+                },
+                "displayName": {
+                    "other": "Литовский талон"
+                }
+            },
+            "LUC": {
+                "symbol": {
+                    "value": "LUC"
+                },
+                "displayName": {
+                    "other": "Конвертируемый франк Люксембурга"
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "value": "LUF"
+                },
+                "displayName": {
+                    "other": "Люксембургский франк"
+                },
+                "digits": 0
+            },
+            "LUL": {
+                "symbol": {
+                    "value": "LUL"
+                },
+                "displayName": {
+                    "other": "Финансовый франк Люксембурга"
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL"
+                },
+                "displayName": {
+                    "other": "латвийского лата",
+                    "one": "латвийский лат",
+                    "few": "латвийских лата",
+                    "many": "латвийских латов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls"
+                }
+            },
+            "LVR": {
+                "symbol": {
+                    "value": "LVR"
+                },
+                "displayName": {
+                    "other": "Латвийский рубль"
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD"
+                },
+                "displayName": {
+                    "other": "ливийского динара",
+                    "one": "ливийский динар",
+                    "few": "ливийских динара",
+                    "many": "ливийских динаров"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD"
+                },
+                "displayName": {
+                    "other": "марокканского дирхама",
+                    "one": "марокканский дирхам",
+                    "few": "марокканских дирхама",
+                    "many": "марокканских дирхамов"
+                }
+            },
+            "MAF": {
+                "symbol": {
+                    "value": "MAF"
+                },
+                "displayName": {
+                    "other": "Марокканский франк"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL"
+                },
+                "displayName": {
+                    "other": "молдавского лея",
+                    "one": "молдавский лей",
+                    "few": "молдавских лея",
+                    "many": "молдавских леев"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA"
+                },
+                "displayName": {
+                    "other": "малагасийского ариари",
+                    "one": "малагасийский ариари",
+                    "few": "малагасийских ариари",
+                    "many": "малагасийских ариари"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar"
+                }
+            },
+            "MGF": {
+                "symbol": {
+                    "value": "MGF"
+                },
+                "displayName": {
+                    "other": "Малагасийский франк"
+                },
+                "digits": 0
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD"
+                },
+                "displayName": {
+                    "other": "македонского денара",
+                    "one": "македонский денар",
+                    "few": "македонских денара",
+                    "many": "македонских денаров"
+                }
+            },
+            "MLF": {
+                "symbol": {
+                    "value": "MLF"
+                },
+                "displayName": {
+                    "other": "Малийский франк"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK"
+                },
+                "displayName": {
+                    "other": "мьянманского кьята",
+                    "one": "мьянманский кьят",
+                    "few": "мьянманских кьята",
+                    "many": "мьянманских кьятов"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K"
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT"
+                },
+                "displayName": {
+                    "other": "монгольского тугрика",
+                    "one": "монгольский тугрик",
+                    "few": "монгольских тугрика",
+                    "many": "монгольских тугриков"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP"
+                },
+                "displayName": {
+                    "other": "патаки Макао",
+                    "one": "патака Макао",
+                    "few": "патаки Макао",
+                    "many": "патак Макао"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO"
+                },
+                "displayName": {
+                    "other": "мавританской угии (1973–2017)",
+                    "one": "мавританская угия (1973–2017)",
+                    "few": "мавританские угии (1973–2017)",
+                    "many": "мавританских угий (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU"
+                },
+                "displayName": {
+                    "other": "мавританской угии",
+                    "one": "мавританская угия",
+                    "few": "мавританские угии",
+                    "many": "мавританских угий"
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "value": "MTL"
+                },
+                "displayName": {
+                    "other": "Мальтийская лира"
+                }
+            },
+            "MTP": {
+                "symbol": {
+                    "value": "MTP"
+                },
+                "displayName": {
+                    "other": "Мальтийский фунт"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR"
+                },
+                "displayName": {
+                    "other": "маврикийской рупии",
+                    "one": "маврикийская рупия",
+                    "few": "маврикийские рупии",
+                    "many": "маврикийских рупий"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR"
+                },
+                "displayName": {
+                    "other": "мальдивской руфии",
+                    "one": "мальдивская руфия",
+                    "few": "мальдивские руфии",
+                    "many": "мальдивских руфий"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK"
+                },
+                "displayName": {
+                    "other": "малавийской квачи",
+                    "one": "малавийская квача",
+                    "few": "малавийские квачи",
+                    "many": "малавийских квач"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "мексиканского песо",
+                    "one": "мексиканский песо",
+                    "few": "мексиканских песо",
+                    "many": "мексиканских песо"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MXP": {
+                "symbol": {
+                    "value": "MXP"
+                },
+                "displayName": {
+                    "other": "Мексиканское серебряное песо (1861–1992)"
+                }
+            },
+            "MXV": {
+                "symbol": {
+                    "value": "MXV"
+                },
+                "displayName": {
+                    "other": "Мексиканская пересчетная единица (UDI)"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR"
+                },
+                "displayName": {
+                    "other": "малайзийского ринггита",
+                    "one": "малайзийский ринггит",
+                    "few": "малайзийских ринггита",
+                    "many": "малайзийских ринггитов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM"
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "value": "MZE"
+                },
+                "displayName": {
+                    "other": "Мозамбикское эскудо"
+                }
+            },
+            "MZM": {
+                "symbol": {
+                    "value": "MZM"
+                },
+                "displayName": {
+                    "other": "Старый мозамбикский метикал"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN"
+                },
+                "displayName": {
+                    "other": "мозамбикского метикала",
+                    "one": "мозамбикский метикал",
+                    "few": "мозамбикских метикала",
+                    "many": "мозамбикских метикалов"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD"
+                },
+                "displayName": {
+                    "other": "доллара Намибии",
+                    "one": "доллар Намибии",
+                    "few": "доллара Намибии",
+                    "many": "долларов Намибии"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN"
+                },
+                "displayName": {
+                    "other": "нигерийской найры",
+                    "one": "нигерийская найра",
+                    "few": "нигерийские найры",
+                    "many": "нигерийских найр"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIC": {
+                "symbol": {
+                    "value": "NIC"
+                },
+                "displayName": {
+                    "other": "Никарагуанская кордоба (1988–1991)"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO"
+                },
+                "displayName": {
+                    "other": "никарагуанской кордобы",
+                    "one": "никарагуанская кордоба",
+                    "few": "никарагуанские кордобы",
+                    "many": "никарагуанских кордоб"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "value": "NLG"
+                },
+                "displayName": {
+                    "other": "Нидерландский гульден"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK"
+                },
+                "displayName": {
+                    "other": "норвежской кроны",
+                    "one": "норвежская крона",
+                    "few": "норвежские кроны",
+                    "many": "норвежских крон"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR"
+                },
+                "displayName": {
+                    "other": "непальской рупии",
+                    "one": "непальская рупия",
+                    "few": "непальские рупии",
+                    "many": "непальских рупий"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "новозеландского доллара",
+                    "one": "новозеландский доллар",
+                    "few": "новозеландских доллара",
+                    "many": "новозеландских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR"
+                },
+                "displayName": {
+                    "other": "оманского риала",
+                    "one": "оманский риал",
+                    "few": "оманских риала",
+                    "many": "оманских риалов"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB"
+                },
+                "displayName": {
+                    "other": "панамского бальбоа",
+                    "one": "панамский бальбоа",
+                    "few": "панамских бальбоа",
+                    "many": "панамских бальбоа"
+                }
+            },
+            "PEI": {
+                "symbol": {
+                    "value": "PEI"
+                },
+                "displayName": {
+                    "other": "Перуанское инти"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN"
+                },
+                "displayName": {
+                    "other": "перуанского соля",
+                    "one": "перуанский соль",
+                    "few": "перуанских соля",
+                    "many": "перуанских солей"
+                }
+            },
+            "PES": {
+                "symbol": {
+                    "value": "PES"
+                },
+                "displayName": {
+                    "other": "перуанского соля (1863–1965)",
+                    "one": "перуанский соль (1863–1965)",
+                    "few": "перуанских соля (1863–1965)",
+                    "many": "перуанских солей (1863–1965)"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK"
+                },
+                "displayName": {
+                    "other": "кины Папуа – Новой Гвинеи",
+                    "one": "кина Папуа – Новой Гвинеи",
+                    "few": "кины Папуа – Новой Гвинеи",
+                    "many": "кин Папуа – Новой Гвинеи"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP"
+                },
+                "displayName": {
+                    "other": "филиппинского песо",
+                    "one": "филиппинский песо",
+                    "few": "филиппинских песо",
+                    "many": "филиппинских песо"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR"
+                },
+                "displayName": {
+                    "other": "пакистанской рупии",
+                    "one": "пакистанская рупия",
+                    "few": "пакистанские рупии",
+                    "many": "пакистанских рупий"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN"
+                },
+                "displayName": {
+                    "other": "польского злотого",
+                    "one": "польский злотый",
+                    "few": "польских злотых",
+                    "many": "польских злотых"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł"
+                }
+            },
+            "PLZ": {
+                "symbol": {
+                    "value": "PLZ"
+                },
+                "displayName": {
+                    "other": "Злотый"
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "value": "PTE"
+                },
+                "displayName": {
+                    "other": "Португальское эскудо"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG"
+                },
+                "displayName": {
+                    "other": "парагвайского гуарани",
+                    "one": "парагвайский гуарани",
+                    "few": "парагвайских гуарани",
+                    "many": "парагвайских гуарани"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR"
+                },
+                "displayName": {
+                    "other": "катарского риала",
+                    "one": "катарский риал",
+                    "few": "катарских риала",
+                    "many": "катарских риалов"
+                }
+            },
+            "RHD": {
+                "symbol": {
+                    "value": "RHD"
+                },
+                "displayName": {
+                    "other": "Родезийский доллар"
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "value": "ROL"
+                },
+                "displayName": {
+                    "other": "Старый Румынский лей"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON"
+                },
+                "displayName": {
+                    "other": "румынского лея",
+                    "one": "румынский лей",
+                    "few": "румынских лея",
+                    "many": "румынских леев"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L"
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD"
+                },
+                "displayName": {
+                    "other": "сербского динара",
+                    "one": "сербский динар",
+                    "few": "сербских динара",
+                    "many": "сербских динаров"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "₽"
+                },
+                "displayName": {
+                    "other": "российского рубля",
+                    "one": "российский рубль",
+                    "few": "российских рубля",
+                    "many": "российских рублей"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "value": "р."
+                },
+                "displayName": {
+                    "other": "Российский рубль (1991–1998)"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF"
+                },
+                "displayName": {
+                    "other": "франка Руанды",
+                    "one": "франк Руанды",
+                    "few": "франка Руанды",
+                    "many": "франков Руанды"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF"
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR"
+                },
+                "displayName": {
+                    "other": "саудовского рияла",
+                    "one": "саудовский риял",
+                    "few": "саудовских рияла",
+                    "many": "саудовских риялов"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD"
+                },
+                "displayName": {
+                    "other": "доллара Соломоновых Островов",
+                    "one": "доллар Соломоновых Островов",
+                    "few": "доллара Соломоновых Островов",
+                    "many": "долларов Соломоновых Островов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR"
+                },
+                "displayName": {
+                    "other": "сейшельской рупии",
+                    "one": "сейшельская рупия",
+                    "few": "сейшельские рупии",
+                    "many": "сейшельских рупий"
+                }
+            },
+            "SDD": {
+                "symbol": {
+                    "value": "SDD"
+                },
+                "displayName": {
+                    "other": "Суданский динар"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG"
+                },
+                "displayName": {
+                    "other": "суданского фунта",
+                    "one": "суданский фунт",
+                    "few": "суданских фунта",
+                    "many": "суданских фунтов"
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "value": "SDP"
+                },
+                "displayName": {
+                    "other": "Старый суданский фунт"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK"
+                },
+                "displayName": {
+                    "other": "шведской кроны",
+                    "one": "шведская крона",
+                    "few": "шведские кроны",
+                    "many": "шведских крон"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD"
+                },
+                "displayName": {
+                    "other": "сингапурского доллара",
+                    "one": "сингапурский доллар",
+                    "few": "сингапурских доллара",
+                    "many": "сингапурских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP"
+                },
+                "displayName": {
+                    "other": "фунта острова Святой Елены",
+                    "one": "фунт острова Святой Елены",
+                    "few": "фунта острова Святой Елены",
+                    "many": "фунтов острова Святой Елены"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "value": "SIT"
+                },
+                "displayName": {
+                    "other": "Словенский толар"
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "value": "SKK"
+                },
+                "displayName": {
+                    "other": "Словацкая крона"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE"
+                },
+                "displayName": {
+                    "other": "леоне"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL"
+                },
+                "displayName": {
+                    "other": "леоне (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS"
+                },
+                "displayName": {
+                    "other": "сомалийского шиллинга",
+                    "one": "сомалийский шиллинг",
+                    "few": "сомалийских шиллинга",
+                    "many": "сомалийских шиллингов"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD"
+                },
+                "displayName": {
+                    "other": "суринамского доллара",
+                    "one": "суринамский доллар",
+                    "few": "суринамских доллара",
+                    "many": "суринамских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "value": "SRG"
+                },
+                "displayName": {
+                    "other": "Суринамский гульден"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP"
+                },
+                "displayName": {
+                    "other": "южносуданского фунта",
+                    "one": "южносуданский фунт",
+                    "few": "южносуданских фунта",
+                    "many": "южносуданских фунтов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD"
+                },
+                "displayName": {
+                    "other": "добры Сан-Томе и Принсипи (1977–2017)",
+                    "one": "добра Сан-Томе и Принсипи (1977–2017)",
+                    "few": "добры Сан-Томе и Принсипи (1977–2017)",
+                    "many": "добр Сан-Томе и Принсипи (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN"
+                },
+                "displayName": {
+                    "other": "добры Сан-Томе и Принсипи",
+                    "one": "добра Сан-Томе и Принсипи",
+                    "few": "добры Сан-Томе и Принсипи",
+                    "many": "добр Сан-Томе и Принсипи"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db"
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "value": "SUR"
+                },
+                "displayName": {
+                    "other": "Рубль СССР"
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "value": "SVC"
+                },
+                "displayName": {
+                    "other": "Сальвадорский колон"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP"
+                },
+                "displayName": {
+                    "other": "сирийского фунта",
+                    "one": "сирийский фунт",
+                    "few": "сирийских фунта",
+                    "many": "сирийских фунтов"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL"
+                },
+                "displayName": {
+                    "other": "свазилендского лилангени",
+                    "one": "свазилендский лилангени",
+                    "few": "свазилендских лилангени",
+                    "many": "свазилендских лилангени"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "฿"
+                },
+                "displayName": {
+                    "other": "таиландского бата",
+                    "one": "таиландский бат",
+                    "few": "таиландских бата",
+                    "many": "таиландских батов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJR": {
+                "symbol": {
+                    "value": "TJR"
+                },
+                "displayName": {
+                    "other": "Таджикский рубль"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS"
+                },
+                "displayName": {
+                    "other": "таджикского сомони",
+                    "one": "таджикский сомони",
+                    "few": "таджикских сомони",
+                    "many": "таджикских сомони"
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "value": "TMM"
+                },
+                "displayName": {
+                    "other": "Туркменский манат"
+                },
+                "digits": 0
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "ТМТ"
+                },
+                "displayName": {
+                    "other": "нового туркменского маната",
+                    "one": "новый туркменский манат",
+                    "few": "новых туркменских маната",
+                    "many": "новых туркменских манатов"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND"
+                },
+                "displayName": {
+                    "other": "тунисского динара",
+                    "one": "тунисский динар",
+                    "few": "тунисских динара",
+                    "many": "тунисских динаров"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP"
+                },
+                "displayName": {
+                    "other": "тонганской паанги",
+                    "one": "тонганская паанга",
+                    "few": "тонганские паанги",
+                    "many": "тонганских паанг"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TPE": {
+                "symbol": {
+                    "value": "TPE"
+                },
+                "displayName": {
+                    "other": "Тиморское эскудо"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL"
+                },
+                "displayName": {
+                    "other": "турецкой лиры (1922–2005)",
+                    "one": "турецкая лира (1922–2005)",
+                    "few": "турецкие лиры (1922–2005)",
+                    "many": "турецких лир (1922–2005)"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY"
+                },
+                "displayName": {
+                    "other": "турецкой лиры",
+                    "one": "турецкая лира",
+                    "few": "турецкие лиры",
+                    "many": "турецких лир"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD"
+                },
+                "displayName": {
+                    "other": "доллара Тринидада и Тобаго",
+                    "one": "доллар Тринидада и Тобаго",
+                    "few": "доллара Тринидада и Тобаго",
+                    "many": "долларов Тринидада и Тобаго"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "нового тайваньского доллара",
+                    "one": "новый тайваньский доллар",
+                    "few": "новых тайваньских доллара",
+                    "many": "новых тайваньских долларов"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS"
+                },
+                "displayName": {
+                    "other": "танзанийского шиллинга",
+                    "one": "танзанийский шиллинг",
+                    "few": "танзанийских шиллинга",
+                    "many": "танзанийских шиллингов"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "₴"
+                },
+                "displayName": {
+                    "other": "украинской гривны",
+                    "one": "украинская гривна",
+                    "few": "украинские гривны",
+                    "many": "украинских гривен"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UAK": {
+                "symbol": {
+                    "value": "UAK"
+                },
+                "displayName": {
+                    "other": "Карбованец (украинский)"
+                }
+            },
+            "UGS": {
+                "symbol": {
+                    "value": "UGS"
+                },
+                "displayName": {
+                    "other": "Старый угандийский шиллинг"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX"
+                },
+                "displayName": {
+                    "other": "угандийского шиллинга",
+                    "one": "угандийский шиллинг",
+                    "few": "угандийских шиллинга",
+                    "many": "угандийских шиллингов"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "$"
+                },
+                "displayName": {
+                    "other": "доллара США",
+                    "one": "доллар США",
+                    "few": "доллара США",
+                    "many": "долларов США"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "value": "USN"
+                },
+                "displayName": {
+                    "other": "Доллар США следующего дня"
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "value": "USS"
+                },
+                "displayName": {
+                    "other": "Доллар США текущего дня"
+                }
+            },
+            "UYI": {
+                "symbol": {
+                    "value": "UYI"
+                },
+                "displayName": {
+                    "other": "Уругвайский песо (индекс инфляции)"
+                },
+                "digits": 0
+            },
+            "UYP": {
+                "symbol": {
+                    "value": "UYP"
+                },
+                "displayName": {
+                    "other": "Уругвайское старое песо (1975–1993)"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU"
+                },
+                "displayName": {
+                    "other": "уругвайского песо",
+                    "one": "уругвайский песо",
+                    "few": "уругвайских песо",
+                    "many": "уругвайских песо"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS"
+                },
+                "displayName": {
+                    "other": "узбекского сума",
+                    "one": "узбекский сум",
+                    "few": "узбекских сума",
+                    "many": "узбекских сумов"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEB": {
+                "symbol": {
+                    "value": "VEB"
+                },
+                "displayName": {
+                    "other": "Венесуэльский боливар (1871–2008)"
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF"
+                },
+                "displayName": {
+                    "other": "венесуэльского боливара (2008–2018)",
+                    "one": "венесуэльский боливар (2008–2018)",
+                    "few": "венесуэльских боливара (2008–2018)",
+                    "many": "венесуэльских боливаров (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs"
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES"
+                },
+                "displayName": {
+                    "other": "венесуэльского боливара",
+                    "one": "венесуэльский боливар",
+                    "few": "венесуэльских боливара",
+                    "many": "венесуэльских боливаров"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "вьетнамского донга",
+                    "one": "вьетнамский донг",
+                    "few": "вьетнамских донга",
+                    "many": "вьетнамских донгов"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV"
+                },
+                "displayName": {
+                    "other": "вату Вануату"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST"
+                },
+                "displayName": {
+                    "other": "самоанской талы",
+                    "one": "самоанская тала",
+                    "few": "самоанские талы",
+                    "many": "самоанских тал"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA"
+                },
+                "displayName": {
+                    "other": "франка КФА ВЕАС",
+                    "one": "франк КФА ВЕАС",
+                    "few": "франка КФА ВЕАС",
+                    "many": "франков КФА ВЕАС"
+                },
+                "digits": 0
+            },
+            "XAG": {
+                "symbol": {
+                    "value": "XAG"
+                },
+                "displayName": {
+                    "other": "Серебро"
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "value": "XAU"
+                },
+                "displayName": {
+                    "other": "Золото"
+                }
+            },
+            "XBA": {
+                "symbol": {
+                    "value": "XBA"
+                },
+                "displayName": {
+                    "other": "Европейская составная единица"
+                }
+            },
+            "XBB": {
+                "symbol": {
+                    "value": "XBB"
+                },
+                "displayName": {
+                    "other": "Европейская денежная единица"
+                }
+            },
+            "XBC": {
+                "symbol": {
+                    "value": "XBC"
+                },
+                "displayName": {
+                    "other": "расчетная единица европейского валютного соглашения (XBC)"
+                }
+            },
+            "XBD": {
+                "symbol": {
+                    "value": "XBD"
+                },
+                "displayName": {
+                    "other": "расчетная единица европейского валютного соглашения (XBD)"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "восточно-карибского доллара",
+                    "one": "восточно-карибский доллар",
+                    "few": "восточно-карибских доллара",
+                    "many": "восточно-карибских долларов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR"
+                },
+                "displayName": {
+                    "other": "СДР (специальные права заимствования)"
+                }
+            },
+            "XEU": {
+                "symbol": {
+                    "value": "XEU"
+                },
+                "displayName": {
+                    "other": "ЭКЮ (единица европейской валюты)"
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "value": "XFO"
+                },
+                "displayName": {
+                    "other": "Французский золотой франк"
+                }
+            },
+            "XFU": {
+                "symbol": {
+                    "value": "XFU"
+                },
+                "displayName": {
+                    "other": "Французский UIC-франк"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA"
+                },
+                "displayName": {
+                    "other": "франка КФА ВСЕАО",
+                    "one": "франк КФА ВСЕАО",
+                    "few": "франка КФА ВСЕАО",
+                    "many": "франков КФА ВСЕАО"
+                },
+                "digits": 0
+            },
+            "XPD": {
+                "symbol": {
+                    "value": "XPD"
+                },
+                "displayName": {
+                    "other": "Палладий"
+                }
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF"
+                },
+                "displayName": {
+                    "other": "французского тихоокеанского франка",
+                    "one": "французский тихоокеанский франк",
+                    "few": "французских тихоокеанских франка",
+                    "many": "французских тихоокеанских франков"
+                },
+                "digits": 0
+            },
+            "XPT": {
+                "symbol": {
+                    "value": "XPT"
+                },
+                "displayName": {
+                    "other": "Платина"
+                }
+            },
+            "XRE": {
+                "symbol": {
+                    "value": "XRE"
+                },
+                "displayName": {
+                    "other": "единица RINET-фондов"
+                }
+            },
+            "XTS": {
+                "symbol": {
+                    "value": "XTS"
+                },
+                "displayName": {
+                    "other": "тестовый валютный код"
+                }
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "XXXX"
+                },
+                "displayName": {
+                    "other": "единицы неизвестной валюты",
+                    "one": "единица неизвестной валюты",
+                    "few": "единицы неизвестной валюты",
+                    "many": "единиц неизвестной валюты"
+                }
+            },
+            "YDD": {
+                "symbol": {
+                    "value": "YDD"
+                },
+                "displayName": {
+                    "other": "Йеменский динар"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER"
+                },
+                "displayName": {
+                    "other": "йеменского риала",
+                    "one": "йеменский риал",
+                    "few": "йеменских риала",
+                    "many": "йеменских риалов"
+                },
+                "digits": 0
+            },
+            "YUD": {
+                "symbol": {
+                    "value": "YUD"
+                },
+                "displayName": {
+                    "other": "Югославский твердый динар"
+                }
+            },
+            "YUM": {
+                "symbol": {
+                    "value": "YUM"
+                },
+                "displayName": {
+                    "other": "Югославский новый динар"
+                }
+            },
+            "YUN": {
+                "symbol": {
+                    "value": "YUN"
+                },
+                "displayName": {
+                    "other": "Югославский динар"
+                }
+            },
+            "ZAL": {
+                "symbol": {
+                    "value": "ZAL"
+                },
+                "displayName": {
+                    "other": "Южноафриканский рэнд (финансовый)"
+                }
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR"
+                },
+                "displayName": {
+                    "other": "южноафриканского рэнда",
+                    "one": "южноафриканский рэнд",
+                    "few": "южноафриканских рэнда",
+                    "many": "южноафриканских рэндов"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R"
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK"
+                },
+                "displayName": {
+                    "other": "замбийской квачи (1968–2012)",
+                    "one": "замбийская квача (1968–2012)",
+                    "few": "замбийские квачи (1968–2012)",
+                    "many": "замбийских квач (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW"
+                },
+                "displayName": {
+                    "other": "замбийской квачи",
+                    "one": "замбийская квача",
+                    "few": "замбийские квачи",
+                    "many": "замбийских квач"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK"
+                }
+            },
+            "ZRN": {
+                "symbol": {
+                    "value": "ZRN"
+                },
+                "displayName": {
+                    "other": "Новый заир"
+                }
+            },
+            "ZRZ": {
+                "symbol": {
+                    "value": "ZRZ"
+                },
+                "displayName": {
+                    "other": "Заир"
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD"
+                },
+                "displayName": {
+                    "other": "Доллар Зимбабве"
+                },
+                "digits": 0
+            },
+            "ZWL": {
+                "symbol": {
+                    "value": "ZWL"
+                },
+                "displayName": {
+                    "other": "Доллар Зимбабве (2009)"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.VegaCheckBox n0:textSize="14.0dp" n0:id="@id/checkbox" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginTop="4.0dp" n0:checked="true" n0:button="@drawable/qml" n0:layout_marginEnd="4.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/x3" n0:id="@id/checkBoxTextView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="217.0dp" n0:includeFontPadding="false" n0:layout_marginStart="8.0dp" n0:lineHeight="16.0dp" />
+</LinearLayout>

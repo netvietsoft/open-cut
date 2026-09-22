@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="85.0dp" n0:layoutDirection="ltr"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:background="@drawable/lcn" n0:layout_width="match_parent" n0:layout_height="45.0dp" n0:layout_centerInParent="true" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" />
+    <com.vega.recorder.widget.RecordTimerWaveView n0:id="@id/timer_music_wave" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_centerVertical="true" n0:layout_marginStart="26.0dp" n0:layout_marginEnd="34.0dp" />
+    <com.vega.recorder.widget.RecordTimerTrackMask n0:id="@id/timer_track_mask" n0:layout_width="wrap_content" n0:layout_height="45.0dp" n0:layout_centerInParent="true" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_r" n0:id="@id/tv_time_start" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_above="@id/timer_track_mask" n0:layout_alignStart="@id/timer_track_mask" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_r" n0:id="@id/tv_time_end" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_above="@id/timer_track_mask" n0:layout_alignEnd="@id/timer_track_mask" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/tv_time_cur" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_above="@id/timer_track_mask" n0:layout_alignEnd="@id/timer_track_mask" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_r" n0:id="@id/tv_start" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:text="@string/q7g" n0:layout_below="@id/timer_track_mask" n0:layout_alignStart="@id/timer_track_mask" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_r" n0:id="@id/tv_end" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:text="@string/l7d" n0:layout_below="@id/timer_track_mask" n0:layout_alignEnd="@id/timer_track_mask" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.lm.components.lynx.debug.widget.SplitLayout n0:orientation="horizontal" n0:id="@id/splitLayout" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/menuContainer" n1:layout_constraintTop_toTopOf="parent" n1:APKTOOL_RENAMED_0x7f04086d="0.25"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.lm.components.lynx.debug.widget.SplitLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:APKTOOL_RENAMED_0x7f04086d="0.5">
+            <com.lm.components.lynx.debug.widget.AdapterRecyclerView n0:id="@id/typeView" n0:padding="8.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            <com.lm.components.lynx.debug.widget.AdapterRecyclerView n0:id="@id/categoryView" n0:padding="8.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        </com.lm.components.lynx.debug.widget.SplitLayout>
+        <com.lm.components.lynx.debug.widget.AdapterRecyclerView n0:id="@id/filterView" n0:padding="8.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.lm.components.lynx.debug.widget.SplitLayout>
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/menuContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/splitLayout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n0:id="@id/allSelect" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/mb2" n0:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+        <Button n0:id="@id/reverseSelect" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/mcx" n0:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+        <Button n0:textColor="@color/dq" n0:id="@id/clear" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/mb6" n0:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

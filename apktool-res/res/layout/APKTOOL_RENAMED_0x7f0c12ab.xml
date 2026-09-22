@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:gravity="center" n0:id="@id/tvAiTemplate" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/ryn" n0:lines="2" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintBottom_toTopOf="@id/groupProtocol" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

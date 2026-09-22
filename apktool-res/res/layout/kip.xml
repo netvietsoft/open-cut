@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="28.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/textGroup" n0:background="@drawable/kpc" n0:layout_width="wrap_content" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ww" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tvTipFunction" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="204.0dp" n0:singleLine="true" n0:layout_marginStart="28.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/ivClose" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" n1:k1j="body_2" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ww" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tvTipCount" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="204.0dp" n0:singleLine="true" n0:layout_marginStart="28.0dp" n0:layout_marginEnd="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/ivClose" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" n1:k1j="body_2" />
+        <ImageView n0:id="@id/ivClose" n0:padding="5.0dp" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/m2y" n0:layout_marginEnd="2.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.ui.widget.CircleProgressView n0:id="@id/circleProgressView" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginStart="8.0dp" n2:cs="@color/knt" n2:cw="@color/_m" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kat="2.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivFailRemind" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:src="@drawable/m2z" n3:layout_constraintEnd_toEndOf="@id/circleProgressView" n3:layout_constraintTop_toTopOf="@id/circleProgressView"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivFinishRemind" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/m2a" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tvCircleCount" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:letterSpacing="0.01" n5:layout_constraintBottom_toBottomOf="@id/circleProgressView" n5:layout_constraintEnd_toEndOf="@id/circleProgressView" n5:layout_constraintStart_toStartOf="@id/circleProgressView" n5:layout_constraintTop_toTopOf="@id/circleProgressView" n5:k1i="medium" n5:k1j="body_1"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

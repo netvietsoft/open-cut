@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/previewFeedVideoInfo" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/us_mask" n0:background="#80000000" n0:layout_width="match_parent" n0:layout_height="80.0dp" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/us_mask_top" n0:background="@drawable/lex" n0:layout_width="match_parent" n0:layout_height="180.0dp" n2:layout_constraintBottom_toTopOf="@id/us_mask"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/guideline" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintGuide_begin="16.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/guidelineV" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:layout_constraintGuide_end="7.0dp"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/preview_replicate_mask" n0:background="@drawable/APKTOOL_RENAMED_0x7f082b7e" n0:layout_width="match_parent" n0:layout_height="0.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintTop_toTopOf="@id/feedOperationContainer"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/preview_bottom_mask" n0:background="@drawable/p67" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="270.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/preview_top_mask" n0:background="@drawable/p7v" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="120.0dp" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/userLikeContainer" n0:paddingTop="2.0dp" n0:paddingBottom="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="6.0dp" n8:layout_constraintBottom_toTopOf="@id/commentContainer" n8:layout_constraintEnd_toEndOf="@id/guidelineV"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/commentContainer" n0:paddingBottom="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n9:layout_constraintBottom_toTopOf="@id/favoriteContainer" n9:layout_constraintEnd_toEndOf="@id/guidelineV" n9:layout_goneMarginBottom="12.0dp"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/favoriteContainer" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="0.0dp" n10:layout_constraintBottom_toTopOf="@id/userReplicateContainer" n10:layout_constraintEnd_toEndOf="@id/guidelineV"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/userReplicateContainer" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n11:layout_constraintBottom_toTopOf="@id/userForwardContainer" n11:layout_constraintEnd_toEndOf="parent"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/userForwardContainer" n0:layout_width="50.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="10.0dp" n12:layout_constraintBottom_toTopOf="@id/cl_feedInfo" n12:layout_constraintEnd_toEndOf="@id/guidelineV"
+      xmlns:n12="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/inspirationListContainer" n0:layout_width="36.0dp" n0:layout_height="40.0dp" n0:layout_marginBottom="10.0dp" n0:layout_marginEnd="5.0dp" n13:layout_constraintBottom_toTopOf="@id/cl_feedInfo" n13:layout_constraintEnd_toEndOf="@id/guidelineV"
+      xmlns:n13="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/spaceContainer" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n14:layout_constraintBottom_toTopOf="@id/userCutSameContainer" n14:layout_constraintEnd_toEndOf="@id/guidelineV"
+      xmlns:n14="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/teamForwardContainer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/segmentPlayViewContainer" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n15:layout_constraintBottom_toTopOf="@id/userCollectContainer" n15:layout_constraintEnd_toEndOf="parent" n15:layout_constraintStart_toStartOf="parent"
+      xmlns:n15="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/feedOperationContainer" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="51.0dp" n16:layout_constraintBottom_toBottomOf="@id/author_info_container" n16:layout_constraintStart_toStartOf="@id/guideline" n16:layout_goneMarginBottom="2.0dp"
+      xmlns:n16="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/author_info_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="-3.0dp" n0:layout_marginStart="16.0dp" n17:layout_constraintBottom_toTopOf="@id/barrier_author_info"
+      xmlns:n17="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/author_info_container_on_control_area" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" n18:layout_constraintBottom_toTopOf="@id/userLikeContainer" n18:layout_constraintEnd_toEndOf="@id/guidelineV"
+      xmlns:n18="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Barrier n0:id="@id/barrier_author_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n19:barrierDirection="top" n19:constraint_referenced_ids="feedTitleContainer,replicateTemplateGroup"
+      xmlns:n19="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/feedTitleContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n20:layout_constraintBottom_toTopOf="@id/barrier"
+      xmlns:n20="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/replicateTemplateGroup" n0:visibility="gone" n0:layout_width="260.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:maxWidth="260.0dp" n21:layout_constraintBottom_toTopOf="@id/barrier" n21:layout_constraintStart_toStartOf="@id/guideline"
+      xmlns:n21="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/knt" n0:gravity="bottom" n0:id="@id/collectionOfSameStyle" n0:paddingTop="2.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/qc7" n0:includeFontPadding="false" n0:lineSpacingExtra="8.0dp" n0:paddingVertical="2.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="start" n0:id="@id/originTemplate" n0:background="@drawable/k_b" n0:paddingLeft="4.0dp" n0:paddingTop="2.0dp" n0:paddingRight="4.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:maxWidth="120.0dp" n0:minWidth="56.0dp" n0:singleLine="true" n0:includeFontPadding="false" n0:drawablePadding="4.0dp" n0:lineSpacingExtra="8.0dp" n0:drawableStart="@drawable/orv" n0:layout_marginStart="4.0dp" n0:paddingHorizontal="4.0dp" n0:paddingVertical="2.0dp" />
+    </LinearLayout>
+    <FrameLayout n0:id="@id/cl_feedInfo" n0:paddingTop="1.0dp" n0:paddingBottom="1.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="14.0dp" n0:layout_marginEnd="16.0dp" n0:paddingVertical="1.0dp" n22:layout_constraintBottom_toTopOf="@id/userPurchaseNewContainer" n22:layout_constraintStart_toStartOf="parent" n22:layout_goneMarginBottom="14.0dp"
+      xmlns:n22="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/seek_bar_container" n0:layout_width="match_parent" n0:layout_height="250.0dp" n0:layout_marginBottom="8.0dp" n0:alpha="1.0" n23:layout_constraintBottom_toTopOf="@id/userCollectContainer" n23:layout_constraintEnd_toEndOf="parent" n23:layout_constraintStart_toStartOf="parent"
+      xmlns:n23="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/userPurchaseTopContainer" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n24:layout_constraintBottom_toTopOf="@id/feedOperationContainer" n24:layout_constraintStart_toStartOf="@id/guideline"
+      xmlns:n24="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/userPurchaseNewContainer" n0:background="@drawable/kjl" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n25:layout_constraintBottom_toTopOf="@id/userCutSameContainer" n25:layout_constraintStart_toStartOf="@id/guideline"
+      xmlns:n25="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Barrier n0:id="@id/barrier" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n26:barrierDirection="top" n26:constraint_referenced_ids="cl_feedInfo,userCutSameContainer"
+      xmlns:n26="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:gravity="center" n0:id="@id/userCutSameContainer" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n27:layout_constraintBottom_toBottomOf="parent" n27:layout_constraintEnd_toEndOf="parent" n27:layout_constraintStart_toEndOf="@id/userCollectContainer"
+      xmlns:n27="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/userCollectContainer" n0:layout_width="103.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n28:layout_constraintBottom_toBottomOf="parent" n28:layout_constraintStart_toStartOf="@id/guideline"
+      xmlns:n28="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/topTipsContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/bottomHotAnchorContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n29:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n29="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

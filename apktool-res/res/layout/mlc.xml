@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:orientation="vertical" n0:tag="layout/xt_activity_dev_model_0" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/title_bar" layout="@layout/APKTOOL_RENAMED_0x7f0c1566" />
+    <ScrollView n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="@dimen/APKTOOL_RENAMED_0x7f07055c">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <TextView n0:tag="binding_1" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_2" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_4" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_5" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_6" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_7" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_8" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_10" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_11" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_12" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_13" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_15" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <TextView n0:tag="binding_16" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/userInfoLayout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp">
+                <TextView n0:tag="binding_17" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:textIsSelectable="true" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                <TextView n0:id="@id/hasUserUploadTemplatePermission" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:textIsSelectable="true" n0:layout_marginStart="5.0dp" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            </LinearLayout>
+            <TextView n0:id="@id/bokehStatus" n0:tag="binding_18" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="25.0dp" style="@style/APKTOOL_RENAMED_0x7f130490" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/force_bokeh_down_sampling" n0:tag="binding_19" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Force blur room downsampling" />
+            <Button n0:id="@id/anywheredoor_switch" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1237f4" />
+            <Button n0:id="@id/file_explorer_btn" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="File browser" n0:onClick="onClickToLynxDebug" />
+            <Button n0:id="@id/inner_model_explorer_btn" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="Browse built-in model files" />
+            <Button n0:id="@id/model_explorer_btn" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="Browse distributed model files" />
+            <Button n0:id="@id/reset_new_user_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="Click to reset new user" n0:onClick="onResetNewUser" />
+            <Button n0:id="@id/reset_new_user_guide_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="Click to reset new user guide (will reset new user)" n0:onClick="onResetNewUserGuide" />
+            <Button n0:id="@id/template_debug_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="Template parameter change" n0:onClick="onClickToLynxDebug" />
+            <Button n0:id="@id/load_hotfix_patch" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Load patch" n0:onClick="onClickLoadPatch" />
+            <Button n0:id="@id/open_web_debug_page" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Open web test page" n0:onClick="onClickOpenWebDebugPage" />
+            <Button n0:id="@id/open_web_debug_page2" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Open web test page 2" n0:onClick="onClickOpenWebDebugPage2" />
+            <EditText n0:id="@id/web_debug_page_url" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:hint="Enter the URL or DeepLink of the web test page to open" />
+            <Button n0:id="@id/open_web_debug_page3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Open the web test page or DeepLink of the above link" n0:onClick="onClickOpenWebDebugPage3" />
+            <Button n0:id="@id/region_control" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Switch country/region" n0:onClick="onClickRegionControl" />
+            <Button n0:id="@id/timon_debug_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="Open Timon test tool" n0:onClick="onClickToHeliosDebug" />
+            <Button n0:id="@id/bpea_debug_btn" n0:tag="binding_20" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="Open BPEA test tool" n0:onClick="onClickToBpeaDebug" />
+            <LinearLayout n0:orientation="vertical" n0:id="@id/jigsaw_tool_layout" n0:padding="5.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                <TextView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sjb" />
+                <TextView n0:id="@id/icon_gen_progress" n0:tag="binding_21" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                <Button n0:id="@id/btn_gen_jigsaw_icon" n0:tag="binding_22" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tn6" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/apply_color_curve_debug" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Open curve preset tool" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/apply_Portrait_template_always_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Apply portrait preset always fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_Portrait_template_always_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Generate portrait preset always fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_template_always_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Generate template always fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_image_random_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Batch save images randomly fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_jigsaw_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Save collage randomly fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_image_always_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Batch save images always fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_draft_random_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Batch save drafts randomly fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_draft_always_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Batch save drafts always fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_single_image_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Save image randomly fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_single_portfolio_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Save artwork randomly fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_video_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Save video randomly fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/debug_save_atlas" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Debug portfolio save, repeat save 100 times" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/push_scene_log" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="push_scene_log" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bigDataSizeGroup" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/save_big_data" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_margin="8.0dp" n0:text="Drafts + portfolio max space (MB):" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+                  xmlns:n1="http://schemas.android.com/apk/res-auto" />
+                <EditText n0:textSize="14.0dp" n0:gravity="center" n0:id="@id/bigDataEdit" n0:background="#1d000000" n0:layout_width="100.0dp" n0:layout_height="0.0dp" n0:singleLine="true" n0:inputType="number" n2:layout_constraintBottom_toBottomOf="@id/save_big_data" n2:layout_constraintStart_toEndOf="@id/save_big_data" n2:layout_constraintTop_toTopOf="@id/save_big_data"
+                  xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/remaining_space_group" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/remaining_space_data" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_margin="8.0dp" n0:text="Simulate disk free space (MB):" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+                  xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <EditText n0:textSize="14.0dp" n0:gravity="center" n0:id="@id/remaining_space_edit" n0:background="#1d000000" n0:layout_width="100.0dp" n0:layout_height="0.0dp" n0:singleLine="true" n0:inputType="number" n4:layout_constraintBottom_toBottomOf="@id/remaining_space_data" n4:layout_constraintStart_toEndOf="@id/remaining_space_data" n4:layout_constraintTop_toTopOf="@id/remaining_space_data"
+                  xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/auxiliary_line_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/auxiliary_line_data" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_margin="8.0dp" n0:text="@string/r_j" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+                  xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                <EditText n0:textSize="14.0dp" n0:gravity="center" n0:id="@id/auxiliary_line_edit" n0:background="#1d000000" n0:layout_width="100.0dp" n0:layout_height="0.0dp" n0:singleLine="true" n0:inputType="number" n6:layout_constraintBottom_toBottomOf="@id/auxiliary_line_data" n6:layout_constraintStart_toEndOf="@id/auxiliary_line_data" n6:layout_constraintTop_toTopOf="@id/auxiliary_line_data"
+                  xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/auxiliary_line_out_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/auxiliary_line_out_data" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_margin="8.0dp" n0:text="@string/r_0" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+                  xmlns:n7="http://schemas.android.com/apk/res-auto" />
+                <EditText n0:textSize="14.0dp" n0:gravity="center" n0:id="@id/auxiliary_line_out_edit" n0:background="#1d000000" n0:layout_width="100.0dp" n0:layout_height="0.0dp" n0:singleLine="true" n0:inputType="number" n8:layout_constraintBottom_toBottomOf="@id/auxiliary_line_out_data" n8:layout_constraintStart_toEndOf="@id/auxiliary_line_out_data" n8:layout_constraintTop_toTopOf="@id/auxiliary_line_out_data"
+                  xmlns:n8="http://schemas.android.com/apk/res-auto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/pickFrameConfigGroup" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp">
+                <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/tv_frame_config" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="Keyframe max count and sparsity threshold:" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toTopOf="parent"
+                  xmlns:n9="http://schemas.android.com/apk/res-auto" />
+                <EditText n0:textSize="14.0dp" n0:gravity="center" n0:id="@id/max_frame_config" n0:background="#1d000000" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:singleLine="true" n0:layout_weight="1.0" n0:inputType="number" n0:layout_marginEnd="10.0dp" />
+                <EditText n0:textSize="14.0dp" n0:gravity="center" n0:id="@id/max_step_config" n0:background="#1d000000" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:singleLine="true" n0:layout_weight="1.0" n0:inputType="number" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/portfolio_save_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Portfolio save image randomly fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/atlas_restore_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Portfolio restore randomly fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/atlas_copy_error" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Portfolio random copy fails" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/print_debug_json" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Output debug json" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/open_go_beauty_all_producer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/tom" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/force_vip" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/tn5" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/force_subscribe_enabled" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/tn3" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/force_subscribe_disabled" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/tn2" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/force_upload_template_permission" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/tn4" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/debug_mode" n0:tag="binding_23" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/tnh" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/force_vega_open_upload" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/ulj" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/force_replace_image_fail" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/t7s" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/force_suit_save_image_fail" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/t7t" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/auxiliary_line" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/r_i" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/force_show_score_guide_dialog_switch" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/sie" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/dynamic_load_so" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/sai" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/show_splash_ad_load_toast" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="ad debug mode" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/ad_test_tools" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="Ad test tool" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/splash_ad_load_timeout_debug_limit" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/t42" />
+            <androidx.appcompat.widget.AppCompatTextView n0:id="@id/subscribe_tip" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/sig" />
+            <androidx.appcompat.widget.AppCompatSpinner n0:id="@id/subscribe_spinner" n0:background="#1d000000" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/ai_portrait_switch" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/sd5" />
+            <LinearLayout n0:orientation="vertical" n0:id="@id/url_user_defined_config" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp">
+                <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/open_url_user_defined_config" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1240ae" />
+                <EditText n0:textSize="16.0sp" n0:id="@id/url_user_defined" n0:background="#1d000000" n0:layout_width="match_parent" n0:layout_height="20.0dp" n0:singleLine="true" />
+            </LinearLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat n0:id="@id/mock_template_id_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <TextView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t13" />
+                <EditText n0:textSize="16.0sp" n0:id="@id/et_mock_template_id" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:maxLines="1" n0:inputType="text" n0:autofillHints="Test scenario uses current template ID" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat n0:id="@id/mock_pop_up_scene" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <TextView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t12" />
+                <EditText n0:textSize="16.0sp" n0:id="@id/et_mock_pop_up_scene" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:maxLines="1" n0:inputType="text" n0:autofillHints="Editor page popup test scene" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <Button n0:id="@id/go_beauty_all_producer" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:text="@string/tn7" />
+            <androidx.appcompat.widget.AppCompatToggleButton n0:id="@id/devkit_toggle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:textOn="@string/szu" n0:textOff="@string/szu" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout n0:id="@id/container" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="@dimen/APKTOOL_RENAMED_0x7f07055c" />
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/panelFullScreenContainer" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clSurfaceContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <ImageView n0:id="@id/vBackgroundHintBottom" n0:background="@drawable/qvv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="w,1125:1239" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/vBackgroundHintTop" n0:background="@drawable/qvw" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintDimensionRatio="w,1125:132" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/fullScreenControlView" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <View n0:id="@id/vBackground" n0:background="@drawable/kfg" n0:layout_width="0.0dp" n0:layout_height="80.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.AlphaButton n0:id="@id/ivFullScreenPlay" n0:background="@drawable/qw_" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toBottomOf="@id/pbFullScreenProgress" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintTop_toTopOf="@id/pbFullScreenProgress"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="12.0dp" n0:textColor="#ccffffff" n0:gravity="center" n0:id="@id/tvFullScreenPlayTime" n0:layout_width="35.0dp" n0:layout_height="17.0dp" n0:layout_marginStart="10.0dp" n5:layout_constraintBottom_toBottomOf="@id/pbFullScreenProgress" n5:layout_constraintLeft_toRightOf="@id/ivFullScreenPlay" n5:layout_constraintTop_toTopOf="@id/pbFullScreenProgress"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.FloatSliderView n0:id="@id/pbFullScreenProgress" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n6:APKTOOL_RENAMED_0x7f040502="true" n6:APKTOOL_RENAMED_0x7f040544="@color/sg" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toStartOf="@id/tvFullScreenSumTime" n6:layout_constraintStart_toEndOf="@id/tvFullScreenPlayTime" n6:kko="@color/APKTOOL_RENAMED_0x7f0605c3" n6:kkt="#33ffffff"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="12.0dp" n0:textColor="#ccffffff" n0:gravity="center" n0:id="@id/tvFullScreenSumTime" n0:layout_width="35.0dp" n0:layout_height="17.0dp" n0:layout_marginEnd="16.0dp" n7:layout_constraintBottom_toBottomOf="@id/pbFullScreenProgress" n7:layout_constraintRight_toLeftOf="@id/ivFullScreenClose" n7:layout_constraintTop_toTopOf="@id/pbFullScreenProgress"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.AlphaButton n0:id="@id/ivFullScreenClose" n0:background="@drawable/qw0" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginEnd="16.0dp" n8:layout_constraintBottom_toBottomOf="@id/pbFullScreenProgress" n8:layout_constraintRight_toRightOf="parent" n8:layout_constraintTop_toTopOf="@id/pbFullScreenProgress"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:id="@id/ivBack" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="52.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="44.0dp" n0:src="@drawable/qyq" n0:paddingVertical="8.0dp" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toTopOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

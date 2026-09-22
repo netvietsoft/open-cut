@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundConstraintLayout n0:background="#cc000000" n0:paddingLeft="6.0dp" n0:paddingTop="4.0dp" n0:paddingRight="6.0dp" n0:paddingBottom="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingHorizontal="6.0dp" n0:paddingVertical="4.0dp" n1:ks8="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/render_status_icon" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/sh" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/render_status_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:includeFontPadding="false" n0:layout_marginStart="6.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toEndOf="@id/render_status_icon" n1:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/render_retry_icon" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="6.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toEndOf="@id/render_status_text" n1:layout_constraintTop_toTopOf="parent">
+        <View n0:background="#1fffffff" n0:layout_width="1.0dp" n0:layout_height="10.0dp" />
+        <ImageView n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/sg" n0:layout_marginStart="6.0dp" />
+    </LinearLayout>
+</com.vega.ui.widget.RoundConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerInParent="true" n0:layoutDirection="ltr"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.view.ScrollListenerView n0:orientation="horizontal" n0:id="@id/scrollView" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="60.0dp" n0:scaleType="centerCrop" n0:layout_centerInParent="true">
+        <LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.vega.edit.view.ItemFrameView n0:id="@id/itemFrameView" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginLeft="60.0dp" n0:layout_marginRight="60.0dp" />
+        </LinearLayout>
+    </com.vega.edit.view.ScrollListenerView>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerInParent="true">
+        <View n0:layout_gravity="center_vertical" n0:id="@id/ivRight" n0:background="@color/_d" n0:layout_width="60.0dp" n0:layout_height="62.0dp" />
+        <View n0:id="@id/vFrameCover" n0:background="@drawable/k1l" n0:layout_width="0.0dp" n0:layout_height="64.0dp" n0:layout_weight="1.0" />
+        <View n0:id="@id/ivLeft" n0:background="@color/_d" n0:layout_width="60.0dp" n0:layout_height="62.0dp" />
+    </LinearLayout>
+    <ImageView n0:id="@id/ivProgressLine" n0:layout_width="2.0dp" n0:layout_height="70.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f080a9e" n0:layout_centerVertical="true" n0:layout_marginStart="60.0dp" />
+</RelativeLayout>

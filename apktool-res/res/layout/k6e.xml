@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <View n0:background="@color/_7" n0:layout_width="match_parent" n0:layout_height="0.6dp"
+      xmlns:n0="http://schemas.android.com/apk/res/android" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/commentInputContainer" n1:background="@drawable/kxw" n1:paddingTop="8.0dp" n1:paddingBottom="8.0dp" n1:layout_width="match_parent" n1:layout_height="wrap_content" n1:layout_marginTop="11.0dp" n1:minHeight="36.0dp" n1:paddingStart="12.0dp" n1:paddingEnd="0.0dp" n1:layout_marginStart="16.0dp" n1:layout_toStartOf="@id/sendBtnIcon" n1:layout_alignParentStart="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <com.vega.theme.VegaEditText n1:textSize="15.0dp" n1:textColorHint="@color/fz" n1:id="@id/commentText" n1:background="@null" n1:padding="0.0dp" n1:layout_width="match_parent" n1:layout_height="20.0dp" n1:hint="@string/ly7" n1:includeFontPadding="false" />
+        <FrameLayout n1:id="@id/commentVideoCoverContainer" n1:background="@drawable/kxd" n1:visibility="gone" n1:layout_width="56.0dp" n1:layout_height="56.0dp" n1:layout_marginTop="12.0dp" n1:clipToOutline="true">
+            <androidx.appcompat.widget.AppCompatImageView n1:id="@id/commentVideoCover" n1:layout_width="match_parent" n1:layout_height="match_parent" n1:scaleType="centerCrop" />
+            <androidx.appcompat.widget.AppCompatImageView n1:layout_gravity="center" n1:layout_width="16.0dp" n1:layout_height="16.0dp" n1:src="@drawable/pma" n1:alpha="0.0" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.vega.ui.state.pressed.PressedStateImageButton n2:layout_gravity="center" n2:id="@id/sendBtnIcon" n2:background="@null" n2:paddingTop="15.0dp" n2:paddingBottom="9.0dp" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:src="@drawable/nfs" n2:layout_alignBottom="@id/commentInputContainer" n2:paddingStart="20.0dp" n2:paddingEnd="16.0dp" n2:layout_alignParentEnd="true" n3:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res/android" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n4:id="@id/inputEmojiList" n4:layout_width="wrap_content" n4:layout_height="wrap_content" n4:layout_marginTop="6.0dp" n4:layout_below="@id/commentInputContainer"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</merge>

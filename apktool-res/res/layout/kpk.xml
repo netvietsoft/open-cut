@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/aiArtStyleContainer" n0:background="@drawable/kol" n0:layout_width="wrap_content" n0:layout_height="24.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_width="24.0dp" n0:layout_height="24.0dp">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/imageStylePreview" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:contentDescription="art style preview" n1:placeholderImage="@drawable/p6n" n1:roundBottomLeft="true" n1:roundBottomRight="true" n1:roundTopLeft="true" n1:roundTopRight="true" n1:roundedCornerRadius="6.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/imageStyleOverlay" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f080516" n0:contentDescription="art style preview bg" />
+    </FrameLayout>
+    <TextView n0:textSize="16.0dp" n0:textColor="#ffffff" n0:gravity="center_vertical" n0:id="@id/textStyleName" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" />
+</LinearLayout>

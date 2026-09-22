@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.vega.ui.AlphaButton n0:id="@id/iv_close" n0:padding="10.0dp" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginTop="34.0dp" n0:src="@drawable/n6l" n0:layout_marginStart="12.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n2:id="@id/media_container" n2:layout_width="200.0dp" n2:layout_height="200.0dp" n2:layout_marginTop="120.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/iv_close"
+      xmlns:n2="http://schemas.android.com/apk/res/android" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n4:textSize="18.0dp" n4:textColor="#ffffffff" n4:gravity="center" n4:id="@id/tv_title" n4:layout_width="wrap_content" n4:layout_height="wrap_content" n4:layout_marginTop="16.0dp" n5:layout_constraintBottom_toTopOf="@id/tv_desc" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/media_container" n5:k1i="medium"
+      xmlns:n4="http://schemas.android.com/apk/res/android" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n6:textSize="14.0dp" n6:textColor="#aaffffff" n6:gravity="center" n6:id="@id/tv_desc" n6:layout_width="wrap_content" n6:layout_height="wrap_content" n6:layout_marginTop="8.0dp" n7:layout_constraintBottom_toTopOf="@id/btn_add_photo" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n6="http://schemas.android.com/apk/res/android" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n8:gravity="center_vertical" n8:orientation="horizontal" n8:id="@id/btn_add_photo" n8:background="@drawable/k4a" n8:paddingTop="12.0dp" n8:paddingBottom="12.0dp" n8:layout_width="wrap_content" n8:layout_height="wrap_content" n8:layout_marginTop="16.0dp" n8:paddingStart="20.0dp" n8:paddingEnd="20.0dp" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toBottomOf="@id/tv_desc"
+      xmlns:n8="http://schemas.android.com/apk/res/android" xmlns:n9="http://schemas.android.com/apk/res-auto">
+        <ImageView n8:layout_width="15.0dp" n8:layout_height="15.0dp" n8:src="@drawable/n7t" n8:layout_marginEnd="8.0dp" />
+        <com.vega.theme.text.VegaTextView n8:textSize="16.0dp" n8:textColor="#ff000000" n8:id="@id/tv_add_photo" n8:layout_width="wrap_content" n8:layout_height="wrap_content" n8:text="@string/o13" n9:k1i="medium" />
+    </LinearLayout>
+</merge>

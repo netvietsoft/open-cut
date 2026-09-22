@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_compose_rv_item_0" n0:background="#25262b" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="1.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/image" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+    <ProgressBar n0:layout_gravity="center" n0:id="@id/loading" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:scaleType="fitCenter" n0:indeterminate="true" n0:indeterminateDrawable="@drawable/p7j" style="?android:progressBarStyleLarge" />
+    <ImageView n0:layout_gravity="center" n0:id="@id/error" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/q_j" n0:scaleType="fitCenter" />
+    <ImageView n0:layout_gravity="end|top" n0:id="@id/select_btn" n0:background="@drawable/q_z" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginEnd="8.0dp" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/click_exit" n0:background="@color/s7" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/filer_zone" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/filer_zone" n0:background="#181818" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="500.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/filter_close" n0:padding="9.0dp" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/l5n" n0:layout_marginStart="9.0dp" n2:layout_constraintBottom_toBottomOf="@id/tv_fragment_head" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/tv_fragment_head" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tv_fragment_head" n0:paddingTop="14.0dp" n0:paddingBottom="14.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rmu" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <androidx.core.widget.NestedScrollView n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:fillViewport="true" n2:layout_constraintBottom_toTopOf="@id/btn_reset" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_fragment_head">
+            <LinearLayout n0:orientation="vertical" n0:id="@id/list_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" />
+        </androidx.core.widget.NestedScrollView>
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/btn_reset" n0:background="@drawable/lhk" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n0:layout_marginBottom="50.0dp" n0:text="@string/qe1" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintHorizontal_weight="1.0" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toLeftOf="@id/btn_ok" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/btn_ok" n0:background="@drawable/lhl" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n0:text="@string/lay" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="@id/btn_reset" n2:layout_constraintHorizontal_weight="2.0" n2:layout_constraintLeft_toRightOf="@id/btn_reset" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="@id/btn_reset" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

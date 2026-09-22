@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/root_state_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:kr3="none"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <FrameLayout n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/presenter_recycler_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="6.0dp" n0:layout_marginRight="6.0dp" n0:layout_marginHorizontal="6.0dp" />
+        <com.vega.commonedit.digitalhuman.panel.view.PanelStatusComponent n0:id="@id/status_view" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <include n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" layout="@layout/k45" />
+    </FrameLayout>
+</com.vega.ui.state.pressed.PressedStateStateViewGroupLayout>

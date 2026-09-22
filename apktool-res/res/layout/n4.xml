@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/rootView" n0:background="@color/f" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/editMaskLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/editMaskView" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <View n0:id="@id/secondEditMaskView" n0:background="#151517" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView n0:id="@id/closeGenAIIcon" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nk2" n0:scaleType="center" n0:layout_marginStart="6.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/historyTaskIcon" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/n3t" n0:scaleType="center" n0:layout_marginEnd="6.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/historyTaskTipIcon" n0:visibility="gone" n0:layout_width="4.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/n3q" n0:layout_marginEnd="8.0dp" n4:layout_constraintEnd_toEndOf="@id/historyTaskIcon" n4:layout_constraintTop_toTopOf="@id/historyTaskIcon"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.HighlightGradientTextView n0:textSize="25.0sp" n0:textColor="#fafbff" n0:gravity="center_vertical" n0:id="@id/welcomeTitleView" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:lineSpacingMultiplier="1.2" n0:fontFamily="CapCut Sans Text" n0:paddingHorizontal="16.0dp" n5:layout_constraintBottom_toTopOf="@id/genAIEditView" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/closeGenAIIcon" n5:layout_constraintVertical_bias="0.5" n5:k1i="bold"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:orientation="vertical" n0:id="@id/rvPromptSug" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n6:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n6:layout_constraintBottom_toTopOf="@id/genAIEditView" n6:layout_constraintEnd_toEndOf="@id/genAIEditView" n6:layout_constraintStart_toStartOf="@id/genAIEditView"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vege.genai.main.view.GenAIEditView n0:id="@id/genAIEditView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/bottomPanelLayout" n0:background="@drawable/lto" n0:padding="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="300.0dp" n8:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/functionTypeListLayout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="start|top" n0:id="@id/functionTypeListView" n0:background="@drawable/k1o" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n0:elevation="16.0dp" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/genAiFloatingViewLayout" n0:tag="genAiFloatingViewLayout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vege.genai.main.view.ImagePreview n0:id="@id/imagePreviewContainer" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vege.genai.main.view.ReferenceVideoPreviewView n0:id="@id/referenceVideoPreviewContainer" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vege.genai.aieffect.view.AIEffectTemplatePreviewView n0:id="@id/aiEffectTemplatePreviewView" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragmentContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

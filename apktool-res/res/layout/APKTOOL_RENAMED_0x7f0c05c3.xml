@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clRootView" n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f080d6e" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="44.0dp">
+        <LinearLayout n0:gravity="center" n0:id="@id/topBanner" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp" n0:paddingHorizontal="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/lcg" n0:layout_weight="1.0" n0:layout_marginStart="42.0dp" />
+            <ImageView n0:id="@id/ivClose" n0:padding="5.0dp" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/nlk" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rvRecommendMusic" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="30.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/topBanner"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/chip_container" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:paddingHorizontal="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/chip_leading_icon" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <com.bytedance.tux.input.TuxTextView n0:ellipsize="end" n0:id="@id/chip_label_text" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="4.0dp" n0:layout_marginRight="4.0dp" n0:maxLines="1" n0:textAlignment="center" n0:layout_marginHorizontal="4.0dp" />
+    <FrameLayout n0:id="@id/chip_trailing_icon" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/push_notification_style_root_layout" n0:background="@color/em" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_centerVertical="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/im_notification_container" n0:paddingLeft="15.0dp" n0:paddingTop="5.0dp" n0:paddingRight="15.0dp" n0:paddingBottom="5.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="15.0dp" n0:paddingVertical="5.0dp">
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/push_notification_header" n0:paddingBottom="1.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <ImageView n0:id="@id/push_notification_header_icon" n0:layout_width="13.0dp" n0:layout_height="13.0dp" n0:layout_marginLeft="3.0dp" n0:src="@drawable/status_icon" n0:scaleType="centerCrop" />
+            <TextView n0:textSize="11.0sp" n0:textColor="@color/en" n0:ellipsize="end" n0:id="@id/push_notification_header_app_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="5.0dp" n0:maxLines="1" />
+        </LinearLayout>
+        <RelativeLayout n0:layout_gravity="center_vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <FrameLayout n0:id="@id/push_notification_left_pic" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:layout_centerVertical="true">
+                <ImageView n0:id="@id/push_notification_small_picture" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/status_icon" n0:scaleType="fitEnd" n0:layout_centerVertical="true" n0:layout_alignParentStart="true" />
+                <LinearLayout n0:layout_width="match_parent" n0:layout_height="match_parent">
+                    <ImageView n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_weight="4.0" />
+                    <ImageView n0:layout_gravity="bottom" n0:id="@id/push_notification_app_icon" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:src="@drawable/status_icon" n0:scaleType="fitEnd" n0:layout_weight="1.0" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_toRightOf="@id/push_notification_left_pic" n0:layout_centerVertical="true" n0:layout_marginStart="8.0dp">
+                <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/eo" n0:ellipsize="end" n0:id="@id/push_notification_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:maxLines="1" />
+                <TextView n0:textColor="@color/en" n0:ellipsize="end" n0:id="@id/push_notification_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="1.5dp" n0:maxLines="2" n0:lineSpacingMultiplier="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

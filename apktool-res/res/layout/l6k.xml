@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/popup_root" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/popup_bg" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <LinearLayout n0:layout_gravity="center|bottom" n0:orientation="vertical" n0:id="@id/popup_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <FrameLayout n0:layout_gravity="center_horizontal" n0:id="@id/popup_top_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <com.bytedance.hybrid.spark.view.RadiusLayout n0:id="@id/popup_inner_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

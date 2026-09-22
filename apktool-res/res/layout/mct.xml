@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_sticker_view_page_layout_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.edit.design.stickercenter.PullRefreshView n0:layout_gravity="center" n0:id="@id/pageView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.xt.edit.design.stickercenter.StickerNetErrorLayout n0:id="@id/sticker_net_error_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</FrameLayout>

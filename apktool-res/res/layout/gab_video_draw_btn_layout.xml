@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/gab_video_ad_cover_center_layout_draw" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="34.0px" n0:textColor="@color/tt_white" n0:gravity="center" n0:layout_gravity="center_vertical" n0:id="@id/gab_video_ad_button_draw" n0:background="@drawable/tt_ad_cover_btn_draw_begin_bg" n0:padding="2.0dp" n0:visibility="gone" n0:layout_width="580.0px" n0:layout_height="98.0px" n0:layout_marginTop="20.0dp" n0:layout_centerHorizontal="true" />
+    <TextView n0:textSize="34.0px" n0:textColor="@color/tt_white" n0:ellipsize="end" n0:id="@id/gab_video_ad_replay" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="60.0px" n0:text="Click to replay" n0:maxLines="1" n0:layout_below="@id/gab_video_ad_button_draw" n0:layout_centerHorizontal="true" />
+</RelativeLayout>

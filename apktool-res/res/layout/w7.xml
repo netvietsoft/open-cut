@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ailabagent.unifyagent.history.VisibilityAwareConstraintLayout n0:id="@id/iv_root" n0:background="@drawable/APKTOOL_RENAMED_0x7f0804b8" n0:layout_width="44.0dp" n0:layout_height="44.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_icon" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:actualImageScaleType="center" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:placeholderImage="@drawable/m1j" n1:placeholderImageScaleType="center"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/red_dot" n0:background="@drawable/APKTOOL_RENAMED_0x7f0804b9" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginEnd="4.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</com.vega.ailabagent.unifyagent.history.VisibilityAwareConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/pc5" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/back_view" n0:padding="8.0dp" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/l24" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="@id/title_text_view" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/title_text_view"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/title_text_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/rm5" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/confirm_btn" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp" n0:src="@drawable/ntp" n0:scaleType="center" n0:layout_marginHorizontal="8.0dp" n3:layout_constraintBottom_toBottomOf="@id/title_text_view" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="@id/title_text_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/divide_line" n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="15.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/title_text_view"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.ScrollTextView n0:id="@id/prompt_text_view" n0:paddingLeft="20.0dp" n0:paddingTop="12.0dp" n0:paddingRight="20.0dp" n0:paddingBottom="12.0dp" n0:fadingEdge="vertical" n0:fadingEdgeLength="30.0dp" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="16.0dp" n0:fadeScrollbars="true" n0:requiresFadingEdge="vertical" n0:layout_marginHorizontal="16.0dp" n0:paddingHorizontal="20.0dp" n0:paddingVertical="12.0dp" n5:layout_constraintBottom_toTopOf="@id/recorder_panel" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/divide_line"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/recorder_panel" n0:layout_width="match_parent" n0:layout_height="wrap_content" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

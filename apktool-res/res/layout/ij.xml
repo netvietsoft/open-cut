@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/tone_clone_intro_root" n0:background="@drawable/qe1" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/tone_clone_intro_anim" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintDimensionRatio="H,16:9" n1:layout_constraintTop_toTopOf="parent" n1:lottie_autoPlay="true" n1:lottie_fileName="lv_loading.json" n1:lottie_loop="false"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/tone_clone_intro_img" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintDimensionRatio="H,16:9" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:id="@id/tone_clone_intro_close" n0:background="@drawable/qe0" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="13.0dp" n0:layout_marginEnd="12.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="22.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/tone_clone_support_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/p66" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tone_clone_intro_anim"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="14.0dp" n0:textColor="#b3f6f7fe" n0:id="@id/tone_clone_des_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/p5q" n0:paddingStart="24.0dp" n0:paddingEnd="24.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/tone_clone_support_tv"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tone_clone_try_btn" n0:background="@drawable/li_" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/p5l" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintTop_toBottomOf="@id/tone_clone_des_tv"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

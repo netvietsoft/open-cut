@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="34.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/beta_iv" n0:layout_width="wrap_content" n0:layout_height="12.0dp" n0:src="@drawable/nzg" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/deepseek_iv" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="12.0dp" n0:src="@drawable/nw6" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/vip_badge_View" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="22.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:kml="small"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kfh" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginTop="6.0dp" n0:paddingEnd="12.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/target_iv" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:scaleType="centerInside" n0:layout_marginStart="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <View n0:id="@id/shadow_view" n0:background="@drawable/is" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="10.0dp" n0:layout_marginStart="6.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ml" n0:ellipsize="end" n0:id="@id/target_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nm0" n0:maxLines="1" n0:layout_marginStart="4.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toEndOf="@id/target_iv" n4:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

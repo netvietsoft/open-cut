@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="#eff4fa" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:id="@id/generatingVideoCv" n0:layout_width="200.0dp" n0:layout_height="200.0dp" n1:cardBackgroundColor="@android:color/transparent" n1:cardCornerRadius="1000.0dp" n1:cardElevation="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextureView n0:id="@id/generatingVideoContent" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/generating_cover_view" n0:background="#eff4fa" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+    <com.vega.theme.text.VegaTextView n0:textSize="36.0dp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/progress_view" n0:layout_width="wrap_content" n0:layout_height="43.0dp" n0:includeFontPadding="false" n0:elevation="10.0dp" n2:layout_constraintBottom_toTopOf="@id/edit_generating_text" n2:layout_constraintEnd_toEndOf="@id/generatingVideoCv" n2:layout_constraintStart_toStartOf="@id/generatingVideoCv" n2:layout_constraintTop_toTopOf="@id/generatingVideoCv" n2:layout_constraintVertical_chainStyle="packed" n2:k1g="display" n2:k1i="bold"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#801c283d" n0:gravity="center" n0:id="@id/edit_generating_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/nyb" n0:includeFontPadding="false" n0:elevation="10.0dp" n3:layout_constraintBottom_toBottomOf="@id/generatingVideoCv" n3:layout_constraintEnd_toEndOf="@id/generatingVideoCv" n3:layout_constraintStart_toStartOf="@id/generatingVideoCv" n3:layout_constraintTop_toBottomOf="@id/progress_view" n3:k1g="text" n3:k1i="medium" n3:k1j="sub_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

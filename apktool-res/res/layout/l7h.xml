@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.TipsViewRoot n0:id="@id/effectTips" n0:layout_width="wrap_content" n0:layout_height="match_parent" n1:APKTOOL_RENAMED_0x7f040986="true" n1:kel="10.0dp" n1:kem="@layout/mkx" n1:keq="7.0dp" n1:kev="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:id="@id/tab" n0:paddingLeft="@dimen/cu" n0:paddingRight="@dimen/cu" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:paddingHorizontal="@dimen/cu" style="@style/vk" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/tab_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_toRightOf="@id/tab" n0:layout_centerVertical="true" n0:layout_marginStart="-8.0dp" n1:kml="small" />
+    <ImageView n0:id="@id/yellowGuide" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="11.0dp" n0:src="@drawable/lg9" n0:layout_alignParentRight="true" n0:layout_marginStart="10.0dp" n0:layout_alignParentEnd="true" />
+</com.vega.ui.TipsViewRoot>

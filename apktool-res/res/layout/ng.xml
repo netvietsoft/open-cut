@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/s3" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/rl_title" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.ui.AlphaButton n0:id="@id/iv_close_font_manage" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="13.0dp" n0:layout_marginBottom="13.0dp" n0:src="@drawable/nk0" n0:layout_marginStart="16.0dp" n0:layout_marginVertical="13.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#ccffffff" n0:ellipsize="end" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="88.0dp" n0:text="@string/mw7" n0:maxLines="1" n0:layout_centerInParent="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06061f" n0:ellipsize="end" n0:id="@id/tv_save_font_manage" n0:background="@drawable/k88" n0:paddingLeft="8.0dp" n0:paddingTop="3.0dp" n0:paddingRight="8.0dp" n0:paddingBottom="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="96.0dp" n0:text="@string/qgc" n0:maxLines="1" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" n0:paddingHorizontal="8.0dp" n0:paddingVertical="3.0dp" />
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout n0:id="@id/tl_font_manage" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:tabGravity="fill" n1:tabIndicator="@drawable/njb" n1:tabIndicatorColor="@color/y1" n1:tabIndicatorFullWidth="false" n1:tabMode="fixed" n1:tabPaddingBottom="0.0dp" n1:tabPaddingTop="12.0dp" n1:tabSelectedTextColor="@color/knt" n1:tabTextColor="#99ffffff"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.viewpager2.widget.ViewPager2 n0:id="@id/vp_font_manage" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="10.0dp" />
+</LinearLayout>

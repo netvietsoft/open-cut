@@ -1,0 +1,2783 @@
+{
+    "name": "he",
+    "currency": {
+        "Standard": "‏¤{0};‏-¤{0}",
+		"StandardNoSymbol": "‏{0} ¤;‏-{0} ¤",
+        "StandardNoCurrency": "#,##0.00",
+        "compact": {
+            "short": "‏¤{0};‏-¤{0}",
+            "shortNoSymbol": "‏{0} ¤;‏-{0} ¤",
+            "long": "‏{0} {1};‏-{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "{0} ¤ – {1} ¤"
+			},
+			"approximately": {
+				"short": "~{0} ¤"
+			},
+			"atLeast": {
+				"short": "≥{0} ¤"
+			},
+			"atMost": {
+				"short": "≤{0} ¤"
+			}
+		},
+        "currencyList": {
+            "ADP": {
+                "symbol": {
+                    "value": "ADP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פזטה אנדורית"
+                },
+                "digits": 0
+            },
+            "AED": {
+                "symbol": {
+                    "value": "AED",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דירהם של איחוד הנסיכויות הערביות"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "אפגני אפגני"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לק אלבני"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דראם ארמני"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "גילדר של האנטילים ההולנדיים"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קואנזה אנגולי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "AON": {
+                "symbol": {
+                    "value": "AON",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קואנזה חדש אנגולי (1990–2000)"
+                }
+            },
+            "AOR": {
+                "symbol": {
+                    "value": "AOR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קואנזה רג׳וסטדו אנגולי (1995–1999)"
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "value": "ARP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פזו ארגנטינאי (1983–1985)"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסו ארגנטינאי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "value": "ATS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "שילינג אוסטרי"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "A$"
+                },
+                "displayName": {
+                    "other": "דולר אוסטרלי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "A$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פלורין של ארובה"
+                }
+            },
+            "AZM": {
+                "symbol": {
+                    "value": "AZM",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מנאט אזרביג׳אני (1993–2006)"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מאנאט אזרבייג׳ני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAD": {
+                "symbol": {
+                    "value": "BAD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר של בוסניה־הרצגובינה"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מארק סחיר של בוסניה והרצגובינה"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר ברבדיאני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "טאקה בנגלדשי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEC": {
+                "symbol": {
+                    "value": "BEC",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק בלגי (בר המרה)"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק בלגי"
+                }
+            },
+            "BGL": {
+                "symbol": {
+                    "value": "BGL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לב בולגרי ישן"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לב בולגרי"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר בחרייני"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק בורונדי"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר ברמודה"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר ברוניי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "בוליביאנו"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "value": "BOP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פזו בוליבי"
+                }
+            },
+            "BRB": {
+                "symbol": {
+                    "value": "BRB",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קרוזיארו חדש ברזילאי (1967–1986)"
+                }
+            },
+            "BRC": {
+                "symbol": {
+                    "value": "BRC",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קרוזדו ברזילאי"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$"
+                },
+                "displayName": {
+                    "other": "ריאל ברזילאי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר בהאמי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "נגולטרום בהוטני"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פולה בוטסואני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רובל בלרוסי"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רובל בלרוסי (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר בליזי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "דולר קנדי"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק קונגולזי"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק שוויצרי"
+                },
+                "digits": 2
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסו צ׳ילאני"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "יואן סיני (CNH)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "‎CN¥‎"
+                },
+                "displayName": {
+                    "other": "יואן סיני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסו קולומביאני"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קולון קוסטה־ריקני"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CSD": {
+                "symbol": {
+                    "value": "CSD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר סרבי ישן"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסו קובני להמרה"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסו קובני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "אסקודו כף ורדה"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה קפריסאית"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קורונה צ׳כית"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "DDM": {
+                "symbol": {
+                    "value": "DDM",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מרק מזרח גרמני"
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מרק גרמני"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק ג׳יבוטי"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "כתר דני"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסו דומיניקני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר אלג׳ירי"
+                }
+            },
+            "ECS": {
+                "symbol": {
+                    "value": "ECS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "סוקר אקואדורי"
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "value": "EEK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קרון אסטוני"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה מצרית"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "נאקפה אריתראי"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסטה ספרדי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ביר אתיופי"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "אירו"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "value": "FIM",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מרק פיני"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר פיג׳י"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה של איי פוקלנד"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק צרפתי"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "לירה שטרלינג"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לארי גאורגי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "סדי גאני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פאונד גיברלטר"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דלסי גמבי"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק גינאי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "value": "GRD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דרכמה"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קצאל גואטמלי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "GWP": {
+                "symbol": {
+                    "value": "GWP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פזו גינאי"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר גיאני"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "דולר הונג קונגי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "למפירה הונדורי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קונה קרואטי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "גורד האיטי"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פורינט הונגרי"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רופיות אינדונזיות",
+                    "one": "רופיה אינדונזית",
+                    "two": "רופיות אינדונזיות"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "value": "IEP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה אירית"
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "value": "ל״י",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה ישראלית"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪",
+					"shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ש\"ח",
+                    "one": "שקל חדש",
+                    "two": "ש\"ח"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪",
+					"shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "רופי הודי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר עיראקי"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ריאל איראני"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "כתר איסלנדי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "value": "ITL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה איטלקית"
+                },
+                "digits": 0
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר ג׳מייקני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר ירדני"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "¥"
+                },
+                "displayName": {
+                    "other": "ין יפני"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "שילינג קנייתי"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "סום קירגיזי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ריל קמבודי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק קומורואי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "וון צפון קוריאני"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "וון דרום קוריאני"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר כוויתי"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר קיימני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "טנגה קזחסטני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קיפ לאי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירות לבנוניות",
+                    "one": "לירה לבנונית",
+                    "two": "לירות לבנוניות"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רופי סרי לנקי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר ליברי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לוטי לסותי"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ליטא ליטאי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "value": "LUF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק לוקסמבורגי"
+                },
+                "digits": 0
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לט לטבי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר לובי"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דירהם מרוקאי"
+                }
+            },
+            "MAF": {
+                "symbol": {
+                    "value": "MAF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק מרוקאי"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לאו מולדובני"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "אריארי מלגשי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "MGF": {
+                "symbol": {
+                    "value": "MGF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק מדגסקארי"
+                },
+                "digits": 0
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר מקדוני"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קיאט מיאנמרי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "טוגרוג מונגולי"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פטקה של מקאו"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "אואוגויה מאוריטני (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "אואוגויה מאוריטני"
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "value": "MTL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה מלטית"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רופי מאוריציני"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רופיות מלדיביות",
+                    "one": "רופיה מלדיבית",
+                    "two": "רופיות מלדיביות"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קואצ׳ה מלאווי"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "פסו מקסיקני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MXP": {
+                "symbol": {
+                    "value": "MXP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסו מקסיקני (1861 – 1992)",
+                    "one": "פסו מקסיקני (1861 – 1992)",
+                    "two": "פסו מקסיקני (1861 – 1992)"
+                }
+            },
+            "MXV": {
+                "symbol": {
+                    "value": "MXV",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "יחידות השקעות מקסיקניות",
+                    "one": "יחידת השקעות מקסיקנית",
+                    "two": "יחידות השקעות מקסיקניות"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רינגיט מלזי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "value": "MZE",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "אסקודואים מוזמביקיים",
+                    "one": "אסקודו מוזמביקי",
+                    "two": "אסקודואים מוזמביקיים",
+                    "many": "אסקודו מוזמביקי"
+                }
+            },
+            "MZM": {
+                "symbol": {
+                    "value": "MZM",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מטיקל"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מטיקל מוזמביני"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר נמיבי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "נאירה ניגרי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIC": {
+                "symbol": {
+                    "value": "NIC",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קורדובות (1988–1991)",
+                    "one": "קורדובה (1988–1991)",
+                    "two": "קורדובות (1988–1991)"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קורדובה ניקרגואה"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "value": "NLG",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "גילדן הולנדי"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "כתר נורווגי"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רופי נפאלי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "דולר ניו זילנדי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ריאל עומאני"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "בלבואה פנמי"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "סול פרואני"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קינה של פפואה גינאה החדשה"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסו פיליפיני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רופי פקיסטני"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "זלוטי פולני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "value": "PTE",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "אסקודו פורטוגלי"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "גוארני פרגוואי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ריאל קטארי"
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "value": "ROL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לאו רומני ישן"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לאו רומני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר סרבי"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רובל רוסי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "value": "RUR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רובל רוסי (1991 – 1998)"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק רואנדי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ריאל סעודי"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר איי שלמה"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רופי סיישלי"
+                }
+            },
+            "SDD": {
+                "symbol": {
+                    "value": "SDD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר סודני"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה סודנית"
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "value": "SDP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה סודנית (1957–1998)"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "כתר שוודי"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר סינגפורי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פאונד סנט הלני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "value": "SIT",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "טולאר סלובני"
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "value": "SKK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קורונה סלובקי"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ליאון סיירה לאוני"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ליאון סיירה לאוני - 1964-2022"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "שילינג סומלי"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר סורינאמי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "value": "SRG",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "גילדר סורינאמי"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה דרום-סודנית"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דוברה של סן טומה ופרינסיפה (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דוברה של סאו טומה ופרינסיפה"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "value": "SUR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "רובל סובייטי"
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "value": "SVC",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קולונים סלבדוריים",
+                    "one": "קולון סלבדורי",
+                    "two": "קולונים סלבדוריים",
+                    "many": "קולון סלבדורי"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירות סוריות",
+                    "one": "לירה סורית",
+                    "two": "לירות סוריות"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לילנגני סווזילנדי"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "฿"
+                },
+                "displayName": {
+                    "other": "בהט תאילנדי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "סומוני טג׳קיסטני"
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "value": "TMM",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מנאט טורקמאני"
+                },
+                "digits": 0
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "מאנאט טורקמני"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר טוניסאי"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פאנגה טונגי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TPE": {
+                "symbol": {
+                    "value": "TPE",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "אסקודו טימוראי"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירה טורקית"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "לירות טורקיות חדשות",
+                    "one": "לירה טורקית חדשה",
+                    "two": "לירות טורקיות חדשות"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר טרינידדי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "דולר טייוואני חדש"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "שילינג טנזני"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "הריבנה אוקראיני"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UGS": {
+                "symbol": {
+                    "value": "UGS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "שילינג אוגנדי (1966 – 1987)"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "שילינג אוגנדי"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "$"
+                },
+                "displayName": {
+                    "other": "דולר אמריקאי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "value": "USN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר אמריקאי (היום הבא)"
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "value": "USS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר אמריקאי (היום הזה)"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פסו אורוגוואי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "סום אוזבקי"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEB": {
+                "symbol": {
+                    "value": "VEB",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "בוליבר ונצואלי (1871–2008)"
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "בוליבר ונצואלי (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "בוליבר ונצואלי"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "דונג וייטנאמי"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ואטו של ונואטו"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "טאלה סמואי"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק CFA מרכז אפריקני"
+                },
+                "digits": 0
+            },
+            "XAG": {
+                "symbol": {
+                    "value": "XAG",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "כסף"
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "value": "XAU",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "זהב"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "דולר מזרח קריבי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "זכויות משיכה מיוחדות"
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "value": "XFO",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק זהב"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק CFA מערב אפריקני"
+                },
+                "digits": 0
+            },
+            "XPD": {
+                "symbol": {
+                    "value": "XPD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פלדיום"
+                }
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פרנק פולינזיה הצרפתית"
+                },
+                "digits": 0
+            },
+            "XPT": {
+                "symbol": {
+                    "value": "XPT",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "פלטינה"
+                }
+            },
+            "XTS": {
+                "symbol": {
+                    "value": "XTS",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "סימון למטרות בדיקה"
+                }
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "¤"
+                },
+                "displayName": {
+                    "other": "(מטבע שאינו ידוע)",
+                    "one": "(מטבע שאינו ידוע)",
+                    "two": "(מטבע שאינו ידוע)"
+                }
+            },
+            "YDD": {
+                "symbol": {
+                    "value": "YDD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דינר תימני"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ריאל תימני"
+                },
+                "digits": 0
+            },
+            "ZAL": {
+                "symbol": {
+                    "value": "ZAL",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ראנד דרום אפריקאי (כספי)"
+                }
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ראנד דרום אפריקאי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קוואצ׳ה זמבית (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "קוואצ׳ה זמבי"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "ZRN": {
+                "symbol": {
+                    "value": "ZRN",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "זאיר חדש"
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD",
+                    "shortUseNoSymbol": 1,
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "דולר זימבבואי"
+                },
+                "digits": 0
+            }
+        }
+    }
+}

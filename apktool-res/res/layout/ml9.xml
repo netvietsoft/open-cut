@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_adjust_group_tab_with_divider_0" n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="@color/ktn" n0:gravity="start|center" n0:layout_gravity="start|center" n0:id="@id/tv_group_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <View n0:layout_gravity="end|center" n0:background="@color/kto" n0:layout_width="1.0dp" n0:layout_height="16.0dp" />
+</FrameLayout>

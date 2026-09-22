@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/item_root_layout" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/ivSelectedBg" n0:layout_width="56.0dp" n0:layout_height="56.0dp" style="@style/uj">
+        <com.vega.lvui.widget.MaterialDraweeView n0:id="@id/image" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/pc0" n1:i1="8.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginEnd="4.0dp" n2:layout_constraintEnd_toEndOf="@id/image" n2:layout_constraintTop_toTopOf="@id/image" n2:kml="small" n2:kmm="mix"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n0:id="@id/loading" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toTopOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n3:lottie_autoPlay="true" n3:lottie_fileName="lv_loading_s.json" n3:lottie_loop="true" />
+        </FrameLayout>
+        <FrameLayout n0:id="@id/error" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toTopOf="parent"
+          xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" n0:scaleType="centerInside" />
+        </FrameLayout>
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/llAdjustParams" n0:background="@drawable/pxm" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n5:layout_constraintDimensionRatio="1:1" n5:layout_constraintLeft_toLeftOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toTopOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:id="@id/iv_adjust_effect" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m_r" />
+            <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tv_adjust_effect" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/l6d" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+    </com.vega.lvui.view.MaterialSelectableLayout>
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/gn" n0:gravity="center" n0:id="@id/tv_name" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="2.0dp" n0:layout_marginTop="6.5dp" n0:layout_marginRight="2.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n6:k1i="medium" n6:k1j="body_3"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

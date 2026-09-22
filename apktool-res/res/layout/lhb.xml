@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root_view" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/bg_remove_rv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="20.0dp" n0:paddingStart="14.0dp" n0:layout_marginVertical="20.0dp" n1:layout_constraintBottom_toTopOf="@id/brush_size" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/brush_size" n0:paddingBottom="8.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintBottom_toTopOf="@id/tv_reset" n2:layout_constraintTop_toBottomOf="@id/bg_remove_rv"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/ml" n0:id="@id/brush_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f120541" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ns" n0:id="@id/brush_size_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.widget.TextRulerViewV2 n0:id="@id/brush_size_ruler" n0:layout_width="0.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="3.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/brush_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604fd" n0:gravity="center_vertical" n0:id="@id/tv_reset" n0:background="@drawable/lqr" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:text="@string/ol-" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/pvw" n0:layout_marginStart="16.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/brush_size" n3:k1i="medium"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

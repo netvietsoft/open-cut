@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="vertical" n0:background="@drawable/lt6" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:maxHeight="76.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center" n0:id="@id/select_audio_type_icon" n0:layout_width="24.0dp" n0:layout_height="24.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="@color/ml" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/select_audio_type_text" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="3.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="5.0dp" n0:layout_marginEnd="5.0dp" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

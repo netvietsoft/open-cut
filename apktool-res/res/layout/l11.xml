@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/filter_panel_bar" n0:background="@drawable/lcj" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="@color/ml" n0:id="@id/filter_panel_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p03" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+        <com.vega.ui.AlphaButton n0:id="@id/iv_close" n0:padding="10.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nk_" n0:layout_marginEnd="6.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/filter_tag_list" n0:background="@color/APKTOOL_RENAMED_0x7f060021" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="44.0dp" n0:layout_marginBottom="89.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/bottom_bar" n0:background="@color/APKTOOL_RENAMED_0x7f060021" n0:layout_width="match_parent" n0:layout_height="89.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <Button n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@drawable/lc0" n0:id="@id/reset_filter_btn" n0:background="@drawable/ljp" n0:layout_width="92.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/p07" n0:textAllCaps="false" n0:layout_marginStart="16.0dp" />
+        <Button n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@drawable/lcg" n0:id="@id/confirm_filter_btn" n0:background="@drawable/ljo" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/p04" n0:textAllCaps="false" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

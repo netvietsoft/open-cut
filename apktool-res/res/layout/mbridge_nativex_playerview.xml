@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/mbridge_native_rl_root" n0:background="#000000" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextureView n0:id="@id/mbridge_textureview" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <ImageView n0:id="@id/mbridge_iv_pause" n0:visibility="gone" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/mbridge_nativex_pause" n0:scaleType="fitXY" n0:layout_centerInParent="true" />
+    <ProgressBar n0:id="@id/mbridge_progress" n0:layout_width="match_parent" n0:layout_height="2.0dp" n0:progressDrawable="@drawable/mbridge_nativex_play_progress" n0:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+    <ImageView n0:id="@id/mbridge_iv_sound" n0:background="@drawable/mbridge_nativex_sound_bg" n0:padding="5.0dp" n0:visibility="gone" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_marginLeft="5.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/mbridge_nativex_sound_open" n0:layout_alignParentLeft="true" n0:layout_alignParentBottom="true" />
+    <ImageView n0:id="@id/mbridge_iv_sound_animation" n0:background="@drawable/mbridge_nativex_sound_bg" n0:padding="5.0dp" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginRight="5.0dp" n0:layout_marginBottom="5.0dp" n0:src="@drawable/mbridge_nativex_sound_animation" n0:layout_alignRight="@id/mbridge_textureview" n0:layout_alignBottom="@id/mbridge_textureview" />
+    <com.mbridge.msdk.videocommon.view.MyImageView n0:id="@id/mbridge_iv_playend_pic" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+    <View n0:id="@id/mbridge_view_cover" n0:background="#4d000000" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <ImageView n0:id="@id/mbridge_iv_play" n0:visibility="gone" n0:layout_width="53.0dp" n0:layout_height="53.0dp" n0:src="@drawable/mbridge_nativex_play" n0:scaleType="fitXY" n0:layout_centerInParent="true" />
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/mbridge_ll_loading" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_centerInParent="true">
+        <ProgressBar n0:layout_width="60.0dp" n0:layout_height="60.0dp" style="?android:progressBarStyleLarge" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/rlImageRoot" n0:layout_width="82.0dp" n0:layout_height="82.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.cardview.widget.CardView n0:layout_width="64.0dp" n0:layout_height="64.0dp" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="2.0dp" n1:cardElevation="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cralView" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+        <ImageView n0:id="@id/ivLock" n0:background="@drawable/qzv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView n0:layout_width="64.0dp" n0:layout_height="64.0dp" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="2.0dp" n1:cardElevation="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:id="@id/cralViewMask" n0:layout_width="64.0dp" n0:layout_height="64.0dp" n0:src="@color/_l" n0:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tvTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tvText" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="2" n0:textAlignment="center" n0:paddingStart="9.0dp" n0:paddingEnd="9.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#191919" n0:gravity="center" n0:id="@id/tvSubHint" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c6b" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="9.0dp" n0:text="@string/qv7" n0:maxLines="1" n1:layout_constraintStart_toStartOf="parent" />
+        <ImageView n0:id="@id/cralViewCover" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginBottom="13.0dp" n0:src="@drawable/ogp" n0:layout_marginEnd="13.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="9.0dp" n0:paddingEnd="9.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/rlImageRoot"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.SolidCircleView n0:id="@id/relationLabel" n0:visibility="gone" n0:layout_width="4.0dp" n0:layout_height="4.0dp" n0:layout_marginEnd="4.0dp" n2:g0="@color/sg" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:id="@id/tvIndexLabel" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_below="@id/rlImageRoot" n0:layout_centerHorizontal="true" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

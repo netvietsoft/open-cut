@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="62.0dp" n0:layout_marginRight="62.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#f6f4f4" n0:id="@id/content" n0:background="@drawable/lrs" n0:paddingLeft="16.0dp" n0:paddingTop="16.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

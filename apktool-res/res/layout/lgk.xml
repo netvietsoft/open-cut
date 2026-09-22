@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f060021" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tv_reset" n0:paddingTop="13.0dp" n0:layout_width="wrap_content" n0:layout_height="33.0dp" n0:text="@string/qex" n0:singleLine="true" n0:drawablePadding="6.0dp" n0:drawableStart="@drawable/och" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:id="@id/adjustPanelTitle" n0:paddingTop="13.0dp" n0:layout_width="wrap_content" n0:layout_height="33.0dp" n0:text="@string/l6d" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/iv_close" n0:paddingTop="13.0dp" n0:layout_width="46.0dp" n0:layout_height="33.0dp" n0:src="@drawable/ppb" n0:scaleType="centerInside" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/adjustDivider" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="13.0dp" n4:layout_constraintTop_toBottomOf="@id/adjustPanelTitle"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_params" n0:paddingBottom="20.0dp" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toTopOf="@id/bottom_bar" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintHeight_max="@dimen/lg" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/adjustDivider"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/shadow_view" n0:background="@drawable/bq" n0:layout_width="match_parent" n0:layout_height="30.0dp" n6:layout_constraintBottom_toTopOf="@id/bottom_bar"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="180.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent" layout="@layout/lwu"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.PanelBottomBar n0:id="@id/bottom_bar" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/l6d" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/panelResetBtn" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qex" n0:drawablePadding="@dimen/ai" n0:drawableStart="@drawable/och" n0:layout_marginStart="16.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="parent" />
+    </com.vega.ui.PanelBottomBar>
+</androidx.constraintlayout.widget.ConstraintLayout>

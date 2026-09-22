@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/ldo" n0:paddingLeft="30.0dp" n0:paddingRight="30.0dp" n0:paddingBottom="6.0dp" n0:layout_width="266.0dp" n0:layout_height="wrap_content" n0:paddingHorizontal="30.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#000000" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="30.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1218d8" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#cc000000" n0:layout_gravity="center_horizontal" n0:id="@id/tv_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/check_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp">
+        <ImageView n0:id="@id/iv_check" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08255a" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#99000000" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1218dc" n0:layout_marginStart="12.0dp" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/tv_confirm" n0:background="@drawable/ldp" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1218d6" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#99000000" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/tv_cancel" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginTop="4.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.image.edit.view.ImageStateConstraintLayout n0:id="@id/category_tab_layout" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/btn_reset" n0:layout_width="44.0dp" n0:layout_height="34.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082b83" n0:scaleType="center" n0:alpha="0.7" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="@id/rv_top_tab" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/rv_top_tab"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/view_split" n0:background="@color/knt" n0:layout_width="1.0dp" n0:layout_height="14.0dp" n0:alpha="0.2" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toBottomOf="@id/rv_top_tab" n2:layout_constraintStart_toEndOf="@id/btn_reset" n2:layout_constraintTop_toTopOf="@id/rv_top_tab"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.image.edit.view.ImageEditTextTabListView n0:id="@id/rv_top_tab" n0:layout_width="0.0dp" n0:layout_height="34.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginStart="8.0dp" n3:layout_constraintBottom_toTopOf="@id/view_pager_category" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/view_split" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.image.edit.view.ImageHorizontalViewPager n0:id="@id/view_pager_category" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/rv_top_tab"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</com.vega.image.edit.view.ImageStateConstraintLayout>

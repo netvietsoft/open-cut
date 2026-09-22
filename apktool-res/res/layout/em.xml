@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="14.0sp" n0:textColor="@color/sg" n0:gravity="start" n0:id="@id/tip_view_root" n0:background="@drawable/k2a" n0:padding="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="240.0dp" n0:text="@string/n5h" />
+    <ImageView n0:id="@id/indicator" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/o96" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <LinearLayout android:orientation="vertical" android:id="@id/artStyleSelectorContainer" android:background="#25262b" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp" app:layout_constraintBottom_toBottomOf="parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textSize="14.0dp" android:textColor="#fafbff" android:id="@id/artStyleTextSelectorTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="9.0dp" android:text="@string/m83" android:fontFamily="CapCut Sans Text" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerViewArtStyle" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    </LinearLayout>
+</merge>

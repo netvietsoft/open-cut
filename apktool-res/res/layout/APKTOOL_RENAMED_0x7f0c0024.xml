@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.tux.widget.RadiusLayout n0:id="@id/radius_layout" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.tux.sheet.TuxSheetContainer n0:id="@id/select_sheet_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.bytedance.tux.navigation.TuxNavBar n0:id="@id/select_nav_bar" n0:layout_width="match_parent" n0:layout_height="52.0dp" />
+        <androidx.recyclerview.widget.RecyclerView n0:scrollbarThumbVertical="@drawable/pu" n0:scrollbarStyle="outsideInset" n0:id="@id/select_recycler_view" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:scrollbars="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_below="@id/select_nav_bar" n0:fadeScrollbars="false" />
+        <LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="12.0dp" n0:layout_alignBottom="@id/select_recycler_view" n0:layout_marginHorizontal="16.0dp" n0:layout_marginVertical="12.0dp">
+            <com.bytedance.tux.button.TuxButton n0:id="@id/vice_button" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" n0:layout_marginEnd="8.0dp" />
+            <com.bytedance.tux.button.TuxButton n0:id="@id/select_button" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" />
+        </LinearLayout>
+    </com.bytedance.tux.sheet.TuxSheetContainer>
+</com.bytedance.tux.widget.RadiusLayout>

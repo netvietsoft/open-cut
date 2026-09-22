@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/d" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager2.widget.ViewPager2 n0:id="@id/ai_moment_highlight_viewpager" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="13.0dp" n1:layout_constraintBottom_toTopOf="@id/ai_moment_highlight_play" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="17.0sp" n0:textColor="@color/ml" n0:id="@id/ai_moment_highlight_current" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="11.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/ai_moment_highlight_viewpager"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ai_moment_highlight_close" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginBottom="46.0dp" n0:src="@drawable/i4" n0:layout_marginStart="20.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ai_moment_highlight_confirm" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/i5" n0:layout_marginEnd="20.0dp" n4:layout_constraintBottom_toBottomOf="@id/ai_moment_highlight_close" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="@id/ai_moment_highlight_close"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ai_moment_highlight_btn" n0:background="@drawable/ktu" n0:paddingLeft="6.0dp" n0:paddingRight="6.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:paddingHorizontal="6.0dp" n5:layout_constraintBottom_toTopOf="@id/ai_moment_highlight_close" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/ai_moment_highlight_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/i6" />
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/ml" n0:id="@id/ai_moment_highlight_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rf" n0:layout_marginStart="2.0dp" />
+    </LinearLayout>
+    <com.vega.aimoment.gallery.highlight.AiMomentCuttingView n0:id="@id/ai_moment_highlight_cut_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:layout_marginStart="20.0dp" n0:layout_marginEnd="20.0dp" n6:layout_constraintBottom_toTopOf="@id/ai_moment_highlight_btn" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ai_moment_highlight_play" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginBottom="13.0dp" n0:src="@drawable/i8" n7:layout_constraintBottom_toTopOf="@id/ai_moment_highlight_cut_view" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0sp" n0:textColor="@color/ml" n0:id="@id/ai_moment_highlight_now_time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n8:layout_constraintBottom_toBottomOf="@id/ai_moment_highlight_play" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="@id/ai_moment_highlight_play"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0sp" n0:textColor="@color/mp" n0:id="@id/ai_moment_highlight_total_time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n9:layout_constraintBottom_toBottomOf="@id/ai_moment_highlight_now_time" n9:layout_constraintStart_toEndOf="@id/ai_moment_highlight_now_time" n9:layout_constraintTop_toTopOf="@id/ai_moment_highlight_now_time"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0sp" n0:textColor="@color/mp" n0:id="@id/ai_moment_highlight_choice_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="16.0dp" n10:layout_constraintBottom_toBottomOf="@id/ai_moment_highlight_play" n10:layout_constraintEnd_toEndOf="parent" n10:layout_constraintTop_toTopOf="@id/ai_moment_highlight_play"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

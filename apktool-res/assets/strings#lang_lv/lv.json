@@ -1,0 +1,2414 @@
+{
+    "name": "lv",
+    "currency": {
+		"pattern": "## ##0,###",
+        "Standard": "{0} ¤",
+        "StandardNoCurrency": "# ##0,00",
+        "compact": {
+            "short": "{0} ¤",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "{0}–{1} ¤"
+			},
+			"approximately": {
+				"short": "~{0} ¤"
+			},
+			"atLeast": {
+				"short": "≥{0} ¤"
+			},
+			"atMost": {
+				"short": "≤{0} ¤"
+			}
+		},
+        "currencyList": {
+            "AED": {
+                "symbol": {
+                    "value": "AED"
+                },
+                "displayName": {
+                    "other": "AAE dirhēmi",
+                    "zero": "AAE dirhēmi",
+                    "one": "AAE dirhēms"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN"
+                },
+                "displayName": {
+                    "other": "Afganistānas afgāni",
+                    "zero": "Afganistānas afgāni",
+                    "one": "Afganistānas afgāns"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL"
+                },
+                "displayName": {
+                    "other": "Albānijas leki",
+                    "zero": "Albānijas leki",
+                    "one": "Albānijas leks"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD"
+                },
+                "displayName": {
+                    "other": "Armēnijas drami",
+                    "zero": "Armēnijas drami",
+                    "one": "Armēnijas drams"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG"
+                },
+                "displayName": {
+                    "other": "Nīderlandes Antiļu guldeņi",
+                    "zero": "Nīderlandes Antiļu guldeņi",
+                    "one": "Nīderlandes Antiļu guldenis"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA"
+                },
+                "displayName": {
+                    "other": "Angolas kvanzas",
+                    "zero": "Angolas kvanzas",
+                    "one": "Angolas kvanza"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS"
+                },
+                "displayName": {
+                    "other": "Argentīnas peso"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "value": "ATS"
+                },
+                "displayName": {
+                    "other": "Austrijas šiliņš"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "AU$"
+                },
+                "displayName": {
+                    "other": "Austrālijas dolāri",
+                    "zero": "Austrālijas dolāri",
+                    "one": "Austrālijas dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "AU$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG"
+                },
+                "displayName": {
+                    "other": "Arubas guldeņi",
+                    "zero": "Arubas guldeņi",
+                    "one": "Arubas guldenis"
+                }
+            },
+            "AZM": {
+                "symbol": {
+                    "value": "AZM"
+                },
+                "displayName": {
+                    "other": "Azerbaidžānas manati (1993–2006)",
+                    "zero": "Azerbaidžānas manati (1993–2006)",
+                    "one": "Azerbaidžānas manats (1993–2006)"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN"
+                },
+                "displayName": {
+                    "other": "Azerbaidžānas manati",
+                    "zero": "Azerbaidžānas manati",
+                    "one": "Azerbaidžānas manats"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM"
+                },
+                "displayName": {
+                    "other": "Bosnijas un Hercogovinas konvertējamās markas",
+                    "zero": "Bosnijas un Hercogovinas konvertējamās markas",
+                    "one": "Bosnijas un Hercogovinas konvertējamā marka"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM"
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD"
+                },
+                "displayName": {
+                    "other": "Barbadosas dolāri",
+                    "zero": "Barbadosas dolāri",
+                    "one": "Barbadosas dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT"
+                },
+                "displayName": {
+                    "other": "Bangladešas takas",
+                    "zero": "Bangladešas takas",
+                    "one": "Bangladešas taka"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF"
+                },
+                "displayName": {
+                    "other": "Beļģijas franki",
+                    "zero": "Beļģijas franki",
+                    "one": "Beļģijas franks"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN"
+                },
+                "displayName": {
+                    "other": "Bulgārijas levas",
+                    "zero": "Bulgārijas levas",
+                    "one": "Bulgārijas leva"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD"
+                },
+                "displayName": {
+                    "other": "Bahreinas dināri",
+                    "zero": "Bahreinas dināri",
+                    "one": "Bahreinas dinārs"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF"
+                },
+                "displayName": {
+                    "other": "Burundi franki",
+                    "zero": "Burundi franki",
+                    "one": "Burundi franks"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD"
+                },
+                "displayName": {
+                    "other": "Bermudu dolāri",
+                    "zero": "Bermudu dolāri",
+                    "one": "Bermudu dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND"
+                },
+                "displayName": {
+                    "other": "Brunejas dolāri",
+                    "zero": "Brunejas dolāri",
+                    "one": "Brunejas dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB"
+                },
+                "displayName": {
+                    "other": "Bolīvijas boliviano"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$"
+                },
+                "displayName": {
+                    "other": "Brazīlijas reāli",
+                    "zero": "Brazīlijas reāli",
+                    "one": "Brazīlijas reāls"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD"
+                },
+                "displayName": {
+                    "other": "Bahamu dolāri",
+                    "zero": "Bahamu dolāri",
+                    "one": "Bahamu dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN"
+                },
+                "displayName": {
+                    "other": "Butānas ngultrumi",
+                    "zero": "Butānas ngultrumi",
+                    "one": "Butānas ngultrums"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP"
+                },
+                "displayName": {
+                    "other": "Botsvanas pulas",
+                    "zero": "Botsvanas pulas",
+                    "one": "Botsvanas pula"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN"
+                },
+                "displayName": {
+                    "other": "Baltkrievijas rubeļi",
+                    "zero": "Baltkrievijas rubeļi",
+                    "one": "Baltkrievijas rubelis"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р."
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR"
+                },
+                "displayName": {
+                    "other": "Baltkrievijas rubeļi (2000–2016)",
+                    "zero": "Baltkrievijas rubeļi (2000–2016)",
+                    "one": "Baltkrievijas rubelis (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD"
+                },
+                "displayName": {
+                    "other": "Belizas dolāri",
+                    "zero": "Belizas dolāri",
+                    "one": "Belizas dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "Kanādas dolāri",
+                    "zero": "Kanādas dolāri",
+                    "one": "Kanādas dolārs"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF"
+                },
+                "displayName": {
+                    "other": "KDR franki",
+                    "zero": "KDR franki",
+                    "one": "KDR franks"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF"
+                },
+                "displayName": {
+                    "other": "Šveices franki",
+                    "zero": "Šveices franki",
+                    "one": "Šveices franks"
+                },
+                "digits": 2
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP"
+                },
+                "displayName": {
+                    "other": "Čīles peso"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH"
+                },
+                "displayName": {
+                    "other": "Ķīnas juaņas (ofšors)",
+                    "zero": "Ķīnas juaņa (ofšors)",
+                    "one": "Ķīnas juaņa (ofšors)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "Ķīnas juaņi",
+                    "zero": "Ķīnas juaņi",
+                    "one": "Ķīnas juaņs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP"
+                },
+                "displayName": {
+                    "other": "Kolumbijas peso"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "COU": {
+                "symbol": {
+                    "value": "COU"
+                },
+                "displayName": {
+                    "other": "Kolumbijas reāls"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC"
+                },
+                "displayName": {
+                    "other": "Kostarikas koloni",
+                    "zero": "Kostarikas koloni",
+                    "one": "Kostarikas kolons"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC"
+                },
+                "displayName": {
+                    "other": "Kubas konvertējamie peso",
+                    "zero": "Kubas konvertējamie peso",
+                    "one": "Kubas konvertējamais peso"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP"
+                },
+                "displayName": {
+                    "other": "Kubas peso"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE"
+                },
+                "displayName": {
+                    "other": "Kaboverdes eskudo"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP"
+                },
+                "displayName": {
+                    "other": "Kipras mārciņa"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK"
+                },
+                "displayName": {
+                    "other": "Čehijas kronas",
+                    "zero": "Čehijas kronas",
+                    "one": "Čehijas krona"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč"
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM"
+                },
+                "displayName": {
+                    "other": "Vācijas marka"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF"
+                },
+                "displayName": {
+                    "other": "Džibutijas franki",
+                    "zero": "Džibutijas franki",
+                    "one": "Džibutijas franks"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK"
+                },
+                "displayName": {
+                    "other": "Dānijas kronas",
+                    "zero": "Dānijas kronas",
+                    "one": "Dānijas krona"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP"
+                },
+                "displayName": {
+                    "other": "Dominikānas peso"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD"
+                },
+                "displayName": {
+                    "other": "Alžīrijas dināri",
+                    "zero": "Alžīrijas dināri",
+                    "one": "Alžīrijas dinārs"
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "value": "EEK"
+                },
+                "displayName": {
+                    "other": "Igaunijas krona"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP"
+                },
+                "displayName": {
+                    "other": "Ēģiptes mārciņas",
+                    "zero": "Ēģiptes mārciņas",
+                    "one": "Ēģiptes mārciņa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN"
+                },
+                "displayName": {
+                    "other": "Eritrejas nakfas",
+                    "zero": "Eritrejas nakfas",
+                    "one": "Eritrejas nakfa"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP"
+                },
+                "displayName": {
+                    "other": "Spānijas peseta"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB"
+                },
+                "displayName": {
+                    "other": "Etiopijas biri",
+                    "zero": "Etiopijas biri",
+                    "one": "Etiopijas birs"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "eiro"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "value": "FIM"
+                },
+                "displayName": {
+                    "other": "Somijas marka"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD"
+                },
+                "displayName": {
+                    "other": "Fidži dolāri",
+                    "zero": "Fidži dolāri",
+                    "one": "Fidži dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP"
+                },
+                "displayName": {
+                    "other": "Folklenda Salu mārciņas",
+                    "zero": "Folklenda Salu mārciņas",
+                    "one": "Folklenda Salu mārciņa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF"
+                },
+                "displayName": {
+                    "other": "Francijas franks"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "Lielbritānijas mārciņas",
+                    "zero": "Lielbritānijas mārciņas",
+                    "one": "Lielbritānijas mārciņa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL"
+                },
+                "displayName": {
+                    "other": "Gruzijas lari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS"
+                },
+                "displayName": {
+                    "other": "Ganas sedi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GHS"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP"
+                },
+                "displayName": {
+                    "other": "Gibraltāra mārciņas",
+                    "zero": "Gibraltāra mārciņas",
+                    "one": "Gibraltāra mārciņa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD"
+                },
+                "displayName": {
+                    "other": "Gambijas dalasi"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF"
+                },
+                "displayName": {
+                    "other": "Gvinejas franki",
+                    "zero": "Gvinejas franki",
+                    "one": "Gvinejas franks"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG"
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "value": "GRD"
+                },
+                "displayName": {
+                    "other": "Grieķijas drahma"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ"
+                },
+                "displayName": {
+                    "other": "Gvatemalas ketsali",
+                    "zero": "Gvatemalas ketsali",
+                    "one": "Gvatemalas ketsals"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD"
+                },
+                "displayName": {
+                    "other": "Gajānas dolāri",
+                    "zero": "Gajānas dolāri",
+                    "one": "Gajānas dolārs"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "Honkongas dolāri",
+                    "zero": "Honkongas dolāri",
+                    "one": "Honkongas dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL"
+                },
+                "displayName": {
+                    "other": "Hondurasas lempīras",
+                    "zero": "Hondurasas lempīras",
+                    "one": "Hondurasas lempīra"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L"
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK"
+                },
+                "displayName": {
+                    "other": "Horvātijas kunas",
+                    "zero": "Horvātijas kunas",
+                    "one": "Horvātijas kuna"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn"
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG"
+                },
+                "displayName": {
+                    "other": "Haiti gurdi",
+                    "zero": "Haiti gurdi",
+                    "one": "Haiti gurds"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF"
+                },
+                "displayName": {
+                    "other": "Ungārijas forinti",
+                    "zero": "Ungārijas forinti",
+                    "one": "Ungārijas forints"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft"
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR"
+                },
+                "displayName": {
+                    "other": "Indonēzijas rūpijas",
+                    "zero": "Indonēzijas rūpijas",
+                    "one": "Indonēzijas rūpija"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp"
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "value": "IEP"
+                },
+                "displayName": {
+                    "other": "Īrijas mārciņa"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "Izraēlas šekeļi",
+                    "zero": "Izraēlas šekeļi",
+                    "one": "Izraēlas šekelis"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "Indijas rūpijas",
+                    "zero": "Indijas rūpijas",
+                    "one": "Indijas rūpija"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD"
+                },
+                "displayName": {
+                    "other": "Irākas dināri",
+                    "zero": "Irākas dināri",
+                    "one": "Irākas dinārs"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR"
+                },
+                "displayName": {
+                    "other": "Irānas riāli",
+                    "zero": "Irānas riāli",
+                    "one": "Irānas riāls"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK"
+                },
+                "displayName": {
+                    "other": "Islandes kronas",
+                    "zero": "Islandes kronas",
+                    "one": "Islandes krona"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "value": "ITL"
+                },
+                "displayName": {
+                    "other": "Itālijas lira"
+                },
+                "digits": 0
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD"
+                },
+                "displayName": {
+                    "other": "Jamaikas dolāri",
+                    "zero": "Jamaikas dolāri",
+                    "one": "Jamaikas dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD"
+                },
+                "displayName": {
+                    "other": "Jordānas dināri",
+                    "zero": "Jordānas dināri",
+                    "one": "Jordānas dinārs"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "¥"
+                },
+                "displayName": {
+                    "other": "Japānas jenas",
+                    "zero": "Japānas jenas",
+                    "one": "Japānas jena"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES"
+                },
+                "displayName": {
+                    "other": "Kenijas šiliņi",
+                    "zero": "Kenijas šiliņi",
+                    "one": "Kenijas šiliņš"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS"
+                },
+                "displayName": {
+                    "other": "Kirgizstānas somi",
+                    "zero": "Kirgizstānas somi",
+                    "one": "Kirgizstānas soms"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR"
+                },
+                "displayName": {
+                    "other": "Kambodžas rieli",
+                    "zero": "Kambodžas rieli",
+                    "one": "Kambodžas riels"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF"
+                },
+                "displayName": {
+                    "other": "Komoru franki",
+                    "zero": "Komoru franki",
+                    "one": "Komoru franks"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF"
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW"
+                },
+                "displayName": {
+                    "other": "Ziemeļkorejas vonas",
+                    "zero": "Ziemeļkorejas vonas",
+                    "one": "Ziemeļkorejas vona"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "Dienvidkorejas vonas",
+                    "zero": "Dienvidkorejas vonas",
+                    "one": "Dienvidkorejas vona"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD"
+                },
+                "displayName": {
+                    "other": "Kuveitas dināri",
+                    "zero": "Kuveitas dināri",
+                    "one": "Kuveitas dinārs"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD"
+                },
+                "displayName": {
+                    "other": "Kaimanu salu dolāri",
+                    "zero": "Kaimanu salu dolāri",
+                    "one": "Kaimanu salu dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT"
+                },
+                "displayName": {
+                    "other": "Kazahstānas tenges",
+                    "zero": "Kazahstānas tenges",
+                    "one": "Kazahstānas tenge"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK"
+                },
+                "displayName": {
+                    "other": "Laosas kipi",
+                    "zero": "Laosas kipi",
+                    "one": "Laosas kips"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP"
+                },
+                "displayName": {
+                    "other": "Libānas mārciņas",
+                    "zero": "Libānas mārciņas",
+                    "one": "Libānas mārciņa"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR"
+                },
+                "displayName": {
+                    "other": "Šrilankas rūpijas",
+                    "zero": "Šrilankas rūpijas",
+                    "one": "Šrilankas rūpija"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD"
+                },
+                "displayName": {
+                    "other": "Libērijas dolāri",
+                    "zero": "Libērijas dolāri",
+                    "one": "Libērijas dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL"
+                },
+                "displayName": {
+                    "other": "Lesoto loti"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL"
+                },
+                "displayName": {
+                    "other": "Lietuvas liti",
+                    "zero": "Lietuvas liti",
+                    "one": "Lietuvas lits"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt"
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "value": "LUF"
+                },
+                "displayName": {
+                    "other": "Luksemburgas franks"
+                },
+                "digits": 0
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "Ls"
+                },
+                "displayName": {
+                    "other": "Latvijas lati",
+                    "zero": "Latvijas lati",
+                    "one": "Latvijas lats"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls"
+                }
+            },
+            "LVR": {
+                "symbol": {
+                    "value": "LVR"
+                },
+                "displayName": {
+                    "other": "Latvijas rublis"
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD"
+                },
+                "displayName": {
+                    "other": "Lībijas dināri",
+                    "zero": "Lībijas dināri",
+                    "one": "Lībijas dinārs"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD"
+                },
+                "displayName": {
+                    "other": "Marokas dirhēmi",
+                    "zero": "Marokas dirhēmi",
+                    "one": "Marokas dirhēms"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL"
+                },
+                "displayName": {
+                    "other": "Moldovas lejas",
+                    "zero": "Moldovas lejas",
+                    "one": "Moldovas leja"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA"
+                },
+                "displayName": {
+                    "other": "Madagaskaras ariari"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar"
+                }
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD"
+                },
+                "displayName": {
+                    "other": "Maķedonijas denāri",
+                    "zero": "Maķedonijas denāri",
+                    "one": "Maķedonijas denārs"
+                }
+            },
+            "MLF": {
+                "symbol": {
+                    "value": "MLF"
+                },
+                "displayName": {
+                    "other": "CFA (Āfrikas) franks"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK"
+                },
+                "displayName": {
+                    "other": "Mjanmas kjati",
+                    "zero": "Mjanmas kjati",
+                    "one": "Mjanmas kjats"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K"
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT"
+                },
+                "displayName": {
+                    "other": "Mongolijas tugriki",
+                    "zero": "Mongolijas tugriki",
+                    "one": "Mongolijas tugriks"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP"
+                },
+                "displayName": {
+                    "other": "Makao patakas",
+                    "zero": "Makao patakas",
+                    "one": "Makao pataka"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO"
+                },
+                "displayName": {
+                    "other": "Mauritānijas ugijas (1973–2017)",
+                    "zero": "Mauritānijas ugijas (1973–2017)",
+                    "one": "Mauritānijas ugija (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU"
+                },
+                "displayName": {
+                    "other": "Mauritānijas ugijas",
+                    "zero": "Mauritānijas ugijas",
+                    "one": "Mauritānijas ugija"
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "value": "MTL"
+                },
+                "displayName": {
+                    "other": "Maltas lira"
+                }
+            },
+            "MTP": {
+                "symbol": {
+                    "value": "MTP"
+                },
+                "displayName": {
+                    "other": "Maltas mārciņa"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR"
+                },
+                "displayName": {
+                    "other": "Maurīcijas rūpijas",
+                    "zero": "Maurīcijas rūpijas",
+                    "one": "Maurīcijas rūpija"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR"
+                },
+                "displayName": {
+                    "other": "Maldīvijas rūfijas",
+                    "zero": "Maldīvijas rūfijas",
+                    "one": "Maldīvijas rūfija"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK"
+                },
+                "displayName": {
+                    "other": "Malāvijas kvačas",
+                    "zero": "Malāvijas kvačas",
+                    "one": "Malāvijas kvača"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "Meksikas peso"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR"
+                },
+                "displayName": {
+                    "other": "Malaizijas ringiti",
+                    "zero": "Malaizijas ringiti",
+                    "one": "Malaizijas ringits"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM"
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "value": "MZE"
+                },
+                "displayName": {
+                    "other": "Mozambikas eskudo"
+                }
+            },
+            "MZM": {
+                "symbol": {
+                    "value": "MZM"
+                },
+                "displayName": {
+                    "other": "Mozambikas vecie metikali",
+                    "zero": "Mozambikas vecie metikali",
+                    "one": "Mozambikas vecais metikals"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN"
+                },
+                "displayName": {
+                    "other": "Mozambikas metikali",
+                    "zero": "Mozambikas metikali",
+                    "one": "Mozambikas metikals"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD"
+                },
+                "displayName": {
+                    "other": "Namībijas dolāri",
+                    "zero": "Namībijas dolāri",
+                    "one": "Namībijas dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN"
+                },
+                "displayName": {
+                    "other": "Nigērijas nairas",
+                    "zero": "Nigērijas nairas",
+                    "one": "Nigērijas naira"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO"
+                },
+                "displayName": {
+                    "other": "Nikaragvas kordobas",
+                    "zero": "Nikaragvas kordobas",
+                    "one": "Nikaragvas kordoba"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "value": "NLG"
+                },
+                "displayName": {
+                    "other": "Nīderlandes guldenis"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK"
+                },
+                "displayName": {
+                    "other": "Norvēģijas kronas",
+                    "zero": "Norvēģijas kronas",
+                    "one": "Norvēģijas krona"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR"
+                },
+                "displayName": {
+                    "other": "Nepālas rūpijas",
+                    "zero": "Nepālas rūpijas",
+                    "one": "Nepālas rūpija"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "Jaunzēlandes dolāri",
+                    "zero": "Jaunzēlandes dolāri",
+                    "one": "Jaunzēlandes dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR"
+                },
+                "displayName": {
+                    "other": "Omānas riāli",
+                    "zero": "Omānas riāli",
+                    "one": "Omānas riāls"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB"
+                },
+                "displayName": {
+                    "other": "Panamas balboa"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN"
+                },
+                "displayName": {
+                    "other": "Peru soli",
+                    "zero": "Peru soli",
+                    "one": "Peru sols"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK"
+                },
+                "displayName": {
+                    "other": "Papua-Jaungvinejas kinas",
+                    "zero": "Papua-Jaungvinejas kinas",
+                    "one": "Papua-Jaungvinejas kina"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP"
+                },
+                "displayName": {
+                    "other": "Filipīnu peso"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR"
+                },
+                "displayName": {
+                    "other": "Pakistānas rūpijas",
+                    "zero": "Pakistānas rūpijas",
+                    "one": "Pakistānas rūpija"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN"
+                },
+                "displayName": {
+                    "other": "Polijas zloti",
+                    "zero": "Polijas zloti",
+                    "one": "Polijas zlots"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł"
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "value": "PTE"
+                },
+                "displayName": {
+                    "other": "Portugāles eskudo"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG"
+                },
+                "displayName": {
+                    "other": "Paragvajas guarani"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR"
+                },
+                "displayName": {
+                    "other": "Kataras riāli",
+                    "zero": "Kataras riāli",
+                    "one": "Kataras riāls"
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "value": "ROL"
+                },
+                "displayName": {
+                    "other": "Rumānijas vecās levas",
+                    "zero": "Rumānijas vecās levas",
+                    "one": "Rumānijas vecā leva"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON"
+                },
+                "displayName": {
+                    "other": "Rumānijas lejas",
+                    "zero": "Rumānijas lejas",
+                    "one": "Rumānijas leja"
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei"
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD"
+                },
+                "displayName": {
+                    "other": "Serbijas dināri",
+                    "zero": "Serbijas dināri",
+                    "one": "Serbijas dinārs"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB"
+                },
+                "displayName": {
+                    "other": "Krievijas rubļi",
+                    "zero": "Krievijas rubļi",
+                    "one": "Krievijas rublis"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF"
+                },
+                "displayName": {
+                    "other": "Ruandas franki",
+                    "zero": "Ruandas franki",
+                    "one": "Ruandas franks"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF"
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR"
+                },
+                "displayName": {
+                    "other": "Saūda riāli",
+                    "zero": "Saūda riāli",
+                    "one": "Saūda riāls"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD"
+                },
+                "displayName": {
+                    "other": "Zālamana Salu dolāri",
+                    "zero": "Zālamana Salu dolāri",
+                    "one": "Zālamana Salu dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR"
+                },
+                "displayName": {
+                    "other": "Seišelu salu rūpijas",
+                    "zero": "Seišelu salu rūpijas",
+                    "one": "Seišelu salu rūpija"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG"
+                },
+                "displayName": {
+                    "other": "Sudānas mārciņas",
+                    "zero": "Sudānas mārciņas",
+                    "one": "Sudānas mārciņa"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK"
+                },
+                "displayName": {
+                    "other": "Zviedrijas kronas",
+                    "zero": "Zviedrijas kronas",
+                    "one": "Zviedrijas krona"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD"
+                },
+                "displayName": {
+                    "other": "Singapūras dolāri",
+                    "zero": "Singapūras dolāri",
+                    "one": "Singapūras dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP"
+                },
+                "displayName": {
+                    "other": "Sv.Helēnas salas mārciņas",
+                    "zero": "Sv.Helēnas salas mārciņas",
+                    "one": "Sv.Helēnas salas mārciņa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "value": "SIT"
+                },
+                "displayName": {
+                    "other": "Slovēnijas tolars"
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "value": "SKK"
+                },
+                "displayName": {
+                    "other": "Slovakijas krona"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE"
+                },
+                "displayName": {
+                    "other": "Sjerraleones leones",
+                    "zero": "Sjerraleones leones",
+                    "one": "Sjerraleones leone"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL"
+                },
+                "displayName": {
+                    "other": "Sjerraleones leones (1964—2022)",
+                    "zero": "Sjerraleones leones (1964—2022)",
+                    "one": "Sjerraleones leone (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS"
+                },
+                "displayName": {
+                    "other": "Somālijas šiliņi",
+                    "zero": "Somālijas šiliņi",
+                    "one": "Somālijas šiliņš"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD"
+                },
+                "displayName": {
+                    "other": "Surinamas dolāri",
+                    "zero": "Surinamas dolāri",
+                    "one": "Surinamas dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "value": "SRG"
+                },
+                "displayName": {
+                    "other": "Surinamas guldenis"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP"
+                },
+                "displayName": {
+                    "other": "Dienvidsudānas mārciņas",
+                    "zero": "Dienvidsudānas mārciņas",
+                    "one": "Dienvidsudānas mārciņa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD"
+                },
+                "displayName": {
+                    "other": "Santome un Prinsipi dobras (1977–2017)",
+                    "zero": "Santome un Prinsipi dobras (1977–2017)",
+                    "one": "Santome un Prinsipi dobra (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN"
+                },
+                "displayName": {
+                    "other": "Santome un Prinsipi dobras",
+                    "zero": "Santome un Prinsipi dobras",
+                    "one": "Santome un Prinsipi dobra"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db"
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "value": "SVC"
+                },
+                "displayName": {
+                    "other": "Salvadoras kolons"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP"
+                },
+                "displayName": {
+                    "other": "Sīrijas mārciņas",
+                    "zero": "Sīrijas mārciņas",
+                    "one": "Sīrijas mārciņa"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL"
+                },
+                "displayName": {
+                    "other": "Svazilendas lilangeni"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "฿"
+                },
+                "displayName": {
+                    "other": "Taizemes bāti",
+                    "zero": "Taizemes bāti",
+                    "one": "Taizemes bāts"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS"
+                },
+                "displayName": {
+                    "other": "Tadžikistānas somoni",
+                    "zero": "Tadžikistānas somoni",
+                    "one": "Tadžikistānas somons"
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "value": "TMM"
+                },
+                "displayName": {
+                    "other": "Turkmenistānas manati (1993–2009)",
+                    "zero": "Turkmenistānas manati (1993–2009)",
+                    "one": "Turkmenistānas manats (1993–2009)"
+                },
+                "digits": 0
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT"
+                },
+                "displayName": {
+                    "other": "Turkmenistānas manati",
+                    "zero": "Turkmenistānas manati",
+                    "one": "Turkmenistānas manats"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND"
+                },
+                "displayName": {
+                    "other": "Tunisijas dināri",
+                    "zero": "Tunisijas dināri",
+                    "one": "Tunisijas dinārs"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP"
+                },
+                "displayName": {
+                    "other": "Tongas paangas",
+                    "zero": "Tongas paangas",
+                    "one": "Tongas paanga"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL"
+                },
+                "displayName": {
+                    "other": "Turcijas liras (1922–2005)",
+                    "zero": "Turcijas liras (1922–2005)",
+                    "one": "Turcijas lira (1922–2005)"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY"
+                },
+                "displayName": {
+                    "other": "Turcijas liras",
+                    "zero": "Turcijas liras",
+                    "one": "Turcijas lira"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD"
+                },
+                "displayName": {
+                    "other": "Trinidādas un Tobāgo dolāri",
+                    "zero": "Trinidādas un Tobāgo dolāri",
+                    "one": "Trinidādas un Tobāgo dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "Taivānas jaunie dolāri",
+                    "zero": "Taivānas jaunie dolāri",
+                    "one": "Taivānas jaunais dolārs"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS"
+                },
+                "displayName": {
+                    "other": "Tanzānijas šiliņi",
+                    "zero": "Tanzānijas šiliņi",
+                    "one": "Tanzānijas šiliņš"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH"
+                },
+                "displayName": {
+                    "other": "Ukrainas grivnas",
+                    "zero": "Ukrainas grivnas",
+                    "one": "Ukrainas grivna"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX"
+                },
+                "displayName": {
+                    "other": "Ugandas šiliņi",
+                    "zero": "Ugandas šiliņi",
+                    "one": "Ugandas šiliņš"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "$"
+                },
+                "displayName": {
+                    "other": "ASV dolāri",
+                    "zero": "ASV dolāri",
+                    "one": "ASV dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU"
+                },
+                "displayName": {
+                    "other": "Urugvajas peso"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS"
+                },
+                "displayName": {
+                    "other": "Uzbekistānas sumi",
+                    "zero": "Uzbekistānas sumi",
+                    "one": "Uzbekistānas sums"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEB": {
+                "symbol": {
+                    "value": "VEB"
+                },
+                "displayName": {
+                    "other": "Venecuēlas bolivāri (1871–2008)",
+                    "zero": "Venecuēlas bolivāri (1871–2008)",
+                    "one": "Venecuēlas bolivārs (1871–2008)"
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF"
+                },
+                "displayName": {
+                    "other": "Venecuēlas bolivāri (2008–2018)",
+                    "zero": "Venecuēlas bolivāri (2008–2018)",
+                    "one": "Venecuēlas bolivārs (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs"
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES"
+                },
+                "displayName": {
+                    "other": "Venecuēlas bolivāri",
+                    "zero": "Venecuēlas bolivāri",
+                    "one": "Venecuēlas bolivārs"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "Vjetnamas dongi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV"
+                },
+                "displayName": {
+                    "other": "Vanuatu vatu"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST"
+                },
+                "displayName": {
+                    "other": "Samoa talas",
+                    "zero": "Samoa talas",
+                    "one": "Samoa tala"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA"
+                },
+                "displayName": {
+                    "other": "Centrālāfrikas CFA franki",
+                    "zero": "Centrālāfrikas CFA franki",
+                    "one": "Centrālāfrikas CFA franks"
+                },
+                "digits": 0
+            },
+            "XAG": {
+                "symbol": {
+                    "value": "XAG"
+                },
+                "displayName": {
+                    "other": "sudrabs"
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "value": "XAU"
+                },
+                "displayName": {
+                    "other": "zelts"
+                }
+            },
+            "XBA": {
+                "symbol": {
+                    "value": "XBA"
+                },
+                "displayName": {
+                    "other": "Eiropas norēķinu vienības EURCO",
+                    "zero": "Eiropas norēķinu vienības EURCO",
+                    "one": "Eiropas norēķinu vienība EURCO"
+                }
+            },
+            "XBB": {
+                "symbol": {
+                    "value": "XBB"
+                },
+                "displayName": {
+                    "other": "Eiropas naudas vienība"
+                }
+            },
+            "XBC": {
+                "symbol": {
+                    "value": "XBC"
+                },
+                "displayName": {
+                    "other": "Eiropas norēķinu vienības (XBC)",
+                    "zero": "Eiropas norēķinu vienības (XBC)",
+                    "one": "Eiropas norēķinu vienība (XBC)"
+                }
+            },
+            "XBD": {
+                "symbol": {
+                    "value": "XBD"
+                },
+                "displayName": {
+                    "other": "Eiropas norēķinu vienības (XBD)",
+                    "zero": "Eiropas norēķinu vienības (XBD)",
+                    "one": "Eiropas norēķinu vienība (XBD)"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "Austrumkarību dolāri",
+                    "zero": "Austrumkarību dolāri",
+                    "one": "Austrumkarību dolārs"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR"
+                },
+                "displayName": {
+                    "other": "Speciālās aizņēmuma tiesības"
+                }
+            },
+            "XEU": {
+                "symbol": {
+                    "value": "XEU"
+                },
+                "displayName": {
+                    "other": "Eiropas norēķinu vienība"
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "value": "XFO"
+                },
+                "displayName": {
+                    "other": "Francijas zelta franks"
+                }
+            },
+            "XFU": {
+                "symbol": {
+                    "value": "XFU"
+                },
+                "displayName": {
+                    "other": "Francijas UIC franks"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA"
+                },
+                "displayName": {
+                    "other": "Rietumāfrikas CFA franki",
+                    "zero": "Rietumāfrikas CFA franki",
+                    "one": "Rietumāfrikas CFA franks"
+                },
+                "digits": 0
+            },
+            "XPD": {
+                "symbol": {
+                    "value": "XPD"
+                },
+                "displayName": {
+                    "other": "pallādijs"
+                }
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF"
+                },
+                "displayName": {
+                    "other": "CFP franki",
+                    "zero": "CFP franki",
+                    "one": "CFP franks"
+                },
+                "digits": 0
+            },
+            "XPT": {
+                "symbol": {
+                    "value": "XPT"
+                },
+                "displayName": {
+                    "other": "platīns"
+                }
+            },
+            "XTS": {
+                "symbol": {
+                    "value": "XTS"
+                },
+                "displayName": {
+                    "other": "testa valūtas kods",
+                    "zero": "testa valūtas kods",
+                    "one": "testa valūtas kods"
+                }
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "¤"
+                },
+                "displayName": {
+                    "other": "(nezināma valūta)",
+                    "zero": "(nezināma valūta)",
+                    "one": "(nezināma valūta)"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER"
+                },
+                "displayName": {
+                    "other": "Jemenas riāli",
+                    "zero": "Jemenas riāli",
+                    "one": "Jemenas riāls"
+                },
+                "digits": 0
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR"
+                },
+                "displayName": {
+                    "other": "Dienvidāfrikas rendi",
+                    "zero": "Dienvidāfrikas rendi",
+                    "one": "Dienvidāfrikas rends"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R"
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK"
+                },
+                "displayName": {
+                    "other": "Zambijas kvačas (1968–2012)",
+                    "zero": "Zambijas kvačas (1968–2012)",
+                    "one": "Zambijas kvača (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW"
+                },
+                "displayName": {
+                    "other": "Zambijas kvačas",
+                    "zero": "Zambijas kvačas",
+                    "one": "Zambijas kvača"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK"
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD"
+                },
+                "displayName": {
+                    "other": "Zimbabves dolārs"
+                },
+                "digits": 0
+            },
+            "ZWL": {
+                "symbol": {
+                    "value": "ZWL"
+                },
+                "displayName": {
+                    "other": "Zimbabves dollāri (2009)",
+                    "zero": "Zimbabves dollāri (2009)",
+                    "one": "Zimbabves dollārs (2009)"
+                }
+            }
+        }
+    }
+}

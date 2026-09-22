@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="other">%d個のアイテムをアップロードできませんでした。自動カットを続行します。</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="other">添付：%d個のファイル</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="other">%1$dクレジットが必要です。</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="other">残り%1$dクレジットです。</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="other">無料クレジットが消費されます。あと%dクレジットが必要です。</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="other">%1$dクレジットが必要です。</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="other">残り%1$dクレジットです。続行するにはクレジットを購入してください。</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="other">%1$dクレジットが必要です。</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="other">残り%1$dクレジットです。クレジットを獲得するにはアップグレードしてください。</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="other">%dクレジットが消費されます</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="other">無料クレジットが消費されます。あと%dクレジットが必要です。</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="other">%d個のおすすめテンプレート</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="other">%d個の作成済み動画</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="other">自動キャプションおよび自動歌詞は、ログイン状態で毎月%d回無料で利用できます。無料使用回数は毎月初めに更新されます。毎回1回分が差し引かれます。</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="other">%d回使用/月</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="other">%d単語を削除</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="other">%d個のハイライト</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="other">%d個のつなぎ言葉が見つかりました</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="other">最大%d個のアイテムを選択</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="other">キューの推定待ち時間：%d秒</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="other">およそ%d時間で終了</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="other">およそ%d分で終了</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="other">およそ%d秒で終了</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="other">オーディオの結果（%d）</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="other">ファイルの結果（%d）</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="other">生成の結果（%d）</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="other">添付：%d枚の画像</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="other">添付：%d本の動画</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="other">画像の結果（%d）</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="other">動画の結果（%d）</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="other">%1$d個のAIテキストエフェクトを適用中… %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="other">%d個のアセットをすべてのクリップに適用</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="other">%d個のアセットを選択済み</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="other">%d日間のUltra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="other">%d個のキャラクター</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="other">%d個以下のキャラクターを選択してください</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="other">%d個のクリップは商用利用が許可されていません</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="other">%d個のフォントは商用利用が許可されていません</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="other">%d個のサウンドは商用利用が許可されていません</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="other">%d個のクリップは商用利用が許可されていないので置き換えできません</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="other">%d個のフォントは商用利用が許可されていないので置き換えできません</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="other">%d個のサウンドは商用利用が許可されていないので置き換えできません</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="other">%d個のステッカーは商用利用が許可されていないので置き換えできません</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="other">%d個のステッカーは商用利用が許可されていません</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="other">%d件のコメントを削除しますか？</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="other">%d個のアカウントを選択しました。あなたとあなたが選択した人だけがコメントを見ることができます。</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="other">%d個のアカウントを制限しますか？</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="other">%d日間</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="other">%s件の新しいクリエイターメッセージがあります</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="other">%d日間期限切れ</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="other">Pro機能を使用しています。あと%d回無料で使用できます。Proに加入すると無制限に使用できます。</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="other">スタンダード機能を使用しています。あと%d回無料で使用できます。スタンダードに加入すると無制限に使用できます。</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="other">Pro機能を使用しています。今月あと%d回無料で使用できます。Proに加入すると無制限に使用できます。</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="other">スタンダード機能を使用しています。今月あと%d回無料で使用できます。スタンダードに加入すると無制限に使用できます。</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="other">%d日間無料</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="other">%2$d週間後に%1$s</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="other">Proテンプレートの無料使用（月%d回分）を獲得しました。</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="other">%d回の無料使用</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="other">無料で%d日お試し</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="other">%d件の楽曲の著作権に関する問題</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="other">%dテキストが選択されました</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="other">%d個のクリップを選択済み</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="other">無制限の無料エクスポートを%1$d日間ご利用いただけます。または、完全無制限の高解像度エクスポートのためにアップグレードしてください。</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="other">1080pのエクスポートが%d回無料</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="other">1080pでの無料エクスポートはあと%d回です。アップグレードすると、高解像度エクスポートを無制限に使用できます。</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="other">今月1080pで無料エクスポートできるのは、あと%d回です。アップグレードすると、高解像度エクスポートを無制限に使用できます。</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="other">%dクレジットが必要です。</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="other">残り%dクレジットです。</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="other">%1$d個を生成中です。一度に最大%2$d個を生成するには、Proにアップグレードしてください。</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="other">透かしなしでエクスポート（残り%d回）</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="other">残りの無料使用回数は%d回です。クレジットは不要です。</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="other">選択したアイテムは削除され、%d日間はゴミ箱で保管されます。</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="other">選択したアイテムの一部がスペースにアップロードされています。削除しますか？</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="other">選択したアイテムは削除されてゴミ箱へ移動されます。</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="other">%d回使用</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="other">あなたが入力した生年月日から計算された年齢は%d歳であり、正しくないようです。本当の生年月日を入力してください。</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="other">過去の購入の無料使用1回分と、Proの追加無料使用%d回分を含みます</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="other">Proなら%d回無料で使用できます</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="other">動画で作成したアバターが永続的に有効になりました。Proに加入すると%d回無料でカスタマイズできます。</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="other">このエフェクトを適用するには%dクレジットを使用します。</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="other">現在、%dクレジット使用できます。</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="other">%d個のハイライト</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="other">AIエフェクトを適用中…残り%s時間</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="other">AIエフェクトを適用中…残り%s分</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="other">Proエフェクト%1$sが現在のアイテムに適用されました。新しいアイテムに再度適用すると、%2$dクレジットが消費されます。</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="other">%1$d回の無料分が消費されます。現在%2$d回無料で使用できます。</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="other">%1$d 回のPro使用分が消費されます。現在%2$d回Proが使用できます。</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="other">このモデルが対応している参照画像は%d枚までです</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="other">このモデルを使用するには少なくとも%d枚の参照画像を追加してください</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="other">このモデルが対応している参照動画は%d本までです</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="other">このモデルを使用するには少なくとも%d本の参照動画を追加してください</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="other">%d枚の写真を選択</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="other">%d個の素材が追加されました</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="other">あと%d回作成できます</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="other">あと%d回ロック解除できます</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="other">%d個のキーワードがハイライトされました。手動で選択することもできます。</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="other">%d個のクリップを削除</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="other">%d個のつなぎ言葉が認識されました。手動で選択することもできます。</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="other">%d個のハイライトされたキーワード</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="other">%d枚の写真をエクスポート中…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="other">選択できるポーズは最大%d個です</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="other">メディアファイルをアップロード中です</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="other">メンバー%d人</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="other">%d個のプロジェクトをスペースにアップロードして、デバイスのストレージを解放します。これらのプロジェクトは、モバイルアプリ、デスクトップアプリ、オンラインエディターで編集できます。</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="other">プロジェクト内の%d個のメディアファイルをスペースにアップロードします。これらのファイルは、再アップロードせずにどのデバイスでも使用できます。</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="other">復元できるプロジェクトがあります</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="other">プロジェクトが復元されました</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="other">%d個の機能を適用できませんでした</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="other">%d個の機能を適用中</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="other">Proエフェクトを適用しますか？</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="other">現在のアイテムには%1$d個のProエフェクトが適用されています。新しいアイテムに再度適用すると、%2$dクレジットが消費されます。</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="other">現在のアイテムには%1$d個のProエフェクトが適用されています。新しいアイテムに再度適用するには、%2$d回の無料回数が消費されます。クレジットは消費されません。</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="other">現在のアイテムには%1$d個のProエフェクトが適用されています。新しいアイテムに再度適用するには、%2$dクレジットが必要です。</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="other">現在のアイテムには%1$d個のProエフェクトが適用されています。新しいアイテムに再度適用すると、%2$d回の無料回数と%3$dクレジットが消費されます。</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="other">%dクリップが不足しています。携帯電話で復元するか置き換えてください。</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="other">%d文字以内で入力してください</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="other">%d日間</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="other">アイテムを削除しますか？</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="other">ゴミ箱に移動されたアイテムはここに表示され、%d日後に削除されます。</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="other">%d個のアイテムをダウンロード中…</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="other">%d個のアイテムをアップロード中...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="other">これらのアイテムは完全に削除されて、復元できなくなります。</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="other">アイテムが移動されました</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="other">あと%d日無料でエクスポートできます。</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="other">おめでとうございます！透かしなしでのエクスポートの無料使用（月%d回分）を獲得しました。</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="other">透かしなしでのエクスポートの無料使用があと%d回分あります。</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="other">おめでとうございます！透かしなしでのエクスポートの無料使用（%d回分）を獲得しました。</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="other">%d回使用</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="other">初回%dクレジットオフです。超過分は、追加のクレジットが消費されます。</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="other">この機能を適用するには、あと%dクレジット必要です</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="other">クリップは%d秒以下にしてください</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="other">残り%dクレジットです。</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="other">{$benefit_name$}を適用すると、{$credit_amount$}クレジットが消費されます。</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="other">この機能を適用するには%dクレジットが消費されます。</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="other">このテンプレートを使用すると、%dクレジットが消費されます。</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="other">完全に削除され、復元することはできなくなります。</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="other">項目を削除しますか？</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="other">%1$d件の「%1$s」プロジェクト</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="other">%d個のアイテムをゴミ箱に移動しました</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="other">%d個のアイテムをセーブ済みに追加しました</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="other">%d個のアイテムがセーブ済みから削除されました</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="other">これは無料のスペースで、%1$d人までメンバーを持つことができます。あと%2$s人メンバーを招待できます。</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="other">%d回使用/月</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="other">%d回使用/日</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="other">%d回使用/週</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="other">{number}か月後に{price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="other">%2$dか月後に%1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="other">{number}年後に{price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="other">%2$d年後に%1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="other">このスペースには%d人のメンバーがいます。</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="other">あとメンバー%1$d人を招待できます。</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="other">%1$dシートが確保されています。</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="other">%d日間の無料体験を開始</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="other">%dクレジットが必要です。</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="other">残り%dクレジットです。</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="other">%1$s/%2$sプロジェクトをアップロード中</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="other">"%d個の他のクリップが、このメディアファイルにリンクされています。すべて置き換えますか？
+元の継続時間に収まるように、ファイルが自動的にトリミングされます。"</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="other">アップロードできる画像はあと%d枚です</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="other">%dセグメントの更新対象</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="other">あと%1$d枚の画像と%2$sを選択できます</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="other">（最大%d秒）</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="other">%d本の動画</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="other">あと%d枚の画像を選択できます</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="other">あと%d本の動画を選択できます</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="other">（最大%d秒）</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="other">待機中… 残りおよそ約%d分です。</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="other">待ち時間を短縮</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="other">待機中… 残りおよそ%d秒です。</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="other">Proで高速待機中… 残りおよそ%d分です。</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="other">%d個のアイテム</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="other">%d個のアイテムを選択しました</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="other">%d個のプロジェクト</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="other">%d個のプロジェクトを選択しました</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="other">現在、多くの人がこの機能を使用しています。推定待ち時間は%d分です。</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="other">再度生成するには%dクレジットが消費されます。</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="other">新しいアイテムで再度生成すると、%dクレジットが消費されます。</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="other">%d個のクリップが追加されました</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="other">%d個のアイテムを選択</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="other">%d本の動画を生成しました</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="other">%d分未満のオーディオのみ分解できます</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="other">%d日以内であればスペースを復元できます。</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="other">%d本の動画を生成中です。後ほどもう一度お試しください。</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="other">アップグレードして、この機能を%dクレジットで使用しましょう</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="other">このスペースには%dシートしか残っていません。</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="other">%d個の要素が使用されました</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="other">%d個のアイテムを選択しました</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="other">%d個のアイテムを選択</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="other">%dのキャプション</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="other">%d個のアイテム</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="other">%d個の機能が適用されています。後ほどもう一度お試しください。</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="other">%d回の無料使用が残っています。スタンダードに加入するとクレジットで使用できます。</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="other">%d回の無料使用が残っています。Proに加入するとクレジットで使用できます。</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="other">%d回分の無料使用回数が残っています。クレジットでこの機能を使うには、Ultraに加入してください。</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="other">これには%1$dクレジットが消費されます。%2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="other">残り%dクレジットです。</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="other">Ultraに加入して%dクレジットでこの機能を使用</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="other">Proに加入すると%dクレジットでこの機能を使用できます。</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="other">スタンダードに加入すると%dクレジットでこの機能を使用できます。</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="other">保存できる音声は%1$d個までです。</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="other">%1$d分より長いクリップの音声は加工できません</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="other">最適な結果を得るには%d個のアイテムを選択します</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="other">最初の%2$dか月間は%1$sで更新できます（それ以降は%3$s）。</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="other">最初の%2$d年間は%1$sで更新できます（それ以降は%3$s）。</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="other">%d個更新しました。音声を生成して唇の動きを同期させますか？</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="other">残り%d回</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="other">%d個の無音のクリップがあります。</item>
+    </plurals>
+</resources>

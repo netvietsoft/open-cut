@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/email_login_nav_graph" app:kz0="@id/loginFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.lemon.account.sms.SmsLoginFragment" android:id="@id/loginFragment">
+        <action android:id="@id/actionRegister" app:APKTOOL_RENAMED_0x7f040444="@id/registerFragment" />
+        <action android:id="@id/actionVerify" app:APKTOOL_RENAMED_0x7f040444="@id/verifyFragment" />
+    </fragment>
+    <fragment android:name="com.lemon.account.sms.SmsRegisterFragment" android:id="@id/registerFragment">
+        <action android:id="@id/actionVerify" app:APKTOOL_RENAMED_0x7f040444="@id/verifyFragment" />
+    </fragment>
+    <fragment android:name="com.lemon.account.email.VerifyCodeFragment" android:id="@id/verifyFragment">
+        <action android:id="@id/actionAgeGate" app:APKTOOL_RENAMED_0x7f040444="@id/ageGateFragment" />
+        <action android:id="@id/actionRegister" app:APKTOOL_RENAMED_0x7f040444="@id/registerFragment" />
+        <action android:id="@id/actionNickName" app:APKTOOL_RENAMED_0x7f040444="@id/nickNameFragment" />
+    </fragment>
+    <fragment android:name="com.lemon.account.email.SetBirthdayFragment" android:id="@id/ageGateFragment">
+        <action android:id="@id/actionNickName" app:APKTOOL_RENAMED_0x7f040444="@id/nickNameFragment" />
+    </fragment>
+    <fragment android:name="com.lemon.account.email.SetNickNameFragment" android:id="@id/nickNameFragment" />
+</navigation>

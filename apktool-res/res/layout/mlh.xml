@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:orientation="vertical" n0:id="@id/root_layout" n0:tag="layout/xt_activity_layout_user_agreement_0" n0:background="@color/kwe" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/web_title" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <com.xt.retouch.web.ui.AlphaButton n0:layout_gravity="center_vertical" n0:id="@id/iv_web_close" n0:layout_width="46.0dp" n0:layout_height="46.0dp" n0:layout_marginLeft="5.0dp" n0:src="@drawable/r5x" />
+        <com.xt.retouch.web.ui.AlphaButton n0:layout_gravity="center_vertical" n0:id="@id/iv_web_back" n0:background="@drawable/r5v" n0:visibility="gone" n0:layout_width="46.0dp" n0:layout_height="46.0dp" n0:layout_marginLeft="55.0dp" />
+        <androidx.appcompat.widget.AppCompatTextView n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_web_title" n0:layout_width="wrap_content" n0:layout_height="56.0dp" n0:maxLines="1" n0:singleLine="true" n0:includeFontPadding="false" n1:autoSizeMaxTextSize="15.0sp" n1:autoSizeMinTextSize="8.0sp" n1:bp="1.0sp" n1:autoSizeTextType="uniform" style="@style/APKTOOL_RENAMED_0x7f130481"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/js_webview_container" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/web_title" />
+    <ProgressBar n0:id="@id/head_progress" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginTop="-1.0dp" n0:max="100" n0:indeterminateOnly="false" n0:progressDrawable="@drawable/r82" n0:layout_below="@id/web_title" style="?android:progressBarStyleHorizontal" />
+    <TextView n0:textSize="14.0dp" n0:textColor="@color/kro" n0:gravity="center" n0:id="@id/tv_reloading" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t6w" n0:layout_centerInParent="true" style="@style/APKTOOL_RENAMED_0x7f130481" />
+    <ProgressBar n0:id="@id/web_loading" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:indeterminateDrawable="@drawable/rkm" n0:layout_centerInParent="true" />
+    <FrameLayout n0:id="@id/test_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</RelativeLayout>

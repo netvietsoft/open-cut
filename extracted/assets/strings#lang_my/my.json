@@ -1,0 +1,2309 @@
+{
+    "name": "my",
+    "currency": {
+        "Standard": "¤{0}",
+		"StandardNoSymbol": "{0} ¤",
+        "StandardNoCurrency": "#,##0.00",
+        "compact": {
+            "short": "¤{0}",
+			"shortNoSymbol": "{0} ¤",
+            "long": "{1} {0}"
+        },
+		"range": {
+			"between": {
+				"short": "{0} - {1} ¤"
+			},
+			"approximately": {
+				"short": "~{0} ¤"
+			},
+			"atLeast": {
+				"short": "{0} ¤ နှင့်အထက်"
+			},
+			"atMost": {
+				"short": "≤ {0} ¤"
+			}
+		},
+        "currencyList": {
+            "AED": {
+                "symbol": {
+                    "value": "AED",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အာရပ်စော်ဘွားများ ပြည်ထောင်စု ဒါဟမ်း"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အာဖဂန် အာဖဂါနီ"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အယ်ဘေးနီးယား လီခ်"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အာမေးနီးယား ဒရမ်"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "NAf",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "နယ်သာလန် အန်တီလန် ဂင်းဒါး"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အန်ဂိုလာ ကွမ်ဇာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "value": "ARP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အာဂျင်တီးနား ပီဆို (၁၉၈၃–၁၉၈၅)"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အာဂျင်တီးနား ပီဆို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "A$"
+                },
+                "displayName": {
+                    "other": "ဩစတြေးလျ ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "A$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "Afl",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အရူးဗာ ဖလိုရင်း"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အဇာဘိုင်ဂျန် မာနတ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘော့စနီးယားနှင့် ဟာဇီဂိုဘီးနားမတ်က်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘာဘေးဒိုးစ် ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bds$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘင်္ဂလားဒေ့ရှ် တာကာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘယ်လ်ဂျီယမ် ဖရန့်"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘူလ်ဂေးရီးယား လက်ဖ်"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘာရိန်း ဒီနား"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘူရွန်ဒီ ဖရန့်"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘာမြူဒါ ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘရူနိုင်း ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘိုလီးဗီးယား ဘိုလီးဗီယားနို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "value": "BOP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘိုလီးဘီးယား ပီဆို"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$"
+                },
+                "displayName": {
+                    "other": "ဘရာဇီး ရီးယဲ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘဟားမား ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "B$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘူတန် အံဂါလ်ထရန်"
+                }
+            },
+            "BUK": {
+                "symbol": {
+                    "value": "BUK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဗမာ ကျပ်"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘော့ဆွာနာ ပုလ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BYB": {
+                "symbol": {
+                    "value": "BYB",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘီလာရုစ် ရူဘယ်အသစ် (၁၉၉၄–၁၉၉၉)"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘီလာရုစ် ရူဘယ်"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р."
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘီလာရုဇ် ရူဘယ် (၂၀၀၀–၂၀၁၆)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဘလိဇ် ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "ကနေဒါ ဒေါ်လာ"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကွန်ဂို ဖရန့်"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆွစ် ဖရန့်"
+                },
+                "digits": 2
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ချီလီ ပီဆို"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "တရုတ် ယွမ် (ဟောင်ကောင်)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "တရုတ် ယွမ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကိုလံဘီယာ ပီဆို"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကို့စတာရီကာ ကိုလွန်"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "နိုင်ငံခြားငွေလဲလှယ်နိုင်သော ကျူးဘားပီဆို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကျူးဘား ပီဆို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကိတ်ပ်ဗာဒီ အက်စ်ခူဒို"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆိုက်ပရက်စ် ပေါင်"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ချက် ခိုရိုနာ"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂျာမဏီ မတ်"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂျီဘူတီ ဖရန့်"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဒိန်းမတ် ခရိုဏာ"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဒိုမီနီကန် ပီဆို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အယ်လ်ဂျီးရီးယား ဒီနာ"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အီဂျစ် ပေါင်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အီရီထရီးယား နာ့ခ်ဖာ"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "စပိန် ပယ်စေးတာ"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အီသီယိုးပီးယား ဘီးယာ"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "ယူရို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဖီဂျီ ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဖော့ကလန်ကျွန်းစု ပေါင်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ပြင်သစ် ဖရန့်"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "ဗြိတိသျှ ပေါင်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂျော်ဂျီယာ လားရီ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂါနာ ဆဲဒီ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂျီဘရော်လ်တာ ပေါင်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂမ်ဘီယာ ဒါလာစီ"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂီနီရာ ဖရန့်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂွါတီမာလာ ခက်ဇော်လ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂိုင်ယာနာ ဒေါ်လာ"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "ဟောင်ကောင် ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဟွန်ဒူးရပ်စ် လမ်းပီရာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ခရိုအေးရှား ခူးနာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "G",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဟေတီဂူးအော်ဒ်"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဟန်ဂေရီယံ ဖော်ရင့်တ်"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အင်ဒိုနီးရှား ရူပီးယား"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "value": "ILP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အစ္စရေး ပေါင်"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "အစ္စရေး ရှဲကလ်အသစ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "အိန္ဒိယ ရူပီး"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အီရတ် ဒီနာ"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အီရန် ရီအော်လ်"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အိုက်စလန် ခရိုဏာ"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂျမေကာ ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဂျော်ဒန် ဒီနာ"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "JP¥"
+                },
+                "displayName": {
+                    "other": "ဂျပန် ယန်း"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကင်ညာ သျှီလင်"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကာဂျစ္စတန် ဆော်မ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကမ္ဘောဒီးယား ရီးယဲ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကိုမိုရိုစ် ဖရန့်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မြောက်ကိုရီးယား ဝမ်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "တောင်ကိုရီးယား ဝမ်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကူဝိတ် ဒီနာ"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကေမန် ကျွန်းစု ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကာဇက်စတန် ထိန်ဂျီ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "လာအို ကစ်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "လက်ဘနွန် ပေါင်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "သီရိလင်္ကာ ရူပီး"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "လိုက်ဘေးရီးယား ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "လီဆိုသို လိုတီစ်"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "လစ်သူယေးနီးယားလီတားစ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "လတ်ဗီးယားလတ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "လစ်ဗျား ဒိုင်နာ"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မိုရိုကို ဒရမ်"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မောလ်ဒိုဗာ လယ်အို"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မာလာဂါစီ အရီရရီ"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မက်ဆီဒိုးနီးယား ဒီနာ"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မြန်မာ ကျပ်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "MMK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မွန်ဂိုးလီးယား ထူးဂရခ်"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မကာအို ပါတားကား"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မော်ရီတေးနီးယား အူဂီးယာ (၁၉၇၃–၂၀၁၇)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မော်ရီတေးနီးယန်း အူဂီးယာ"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မောရစ်ရှ ရူပီး"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မော်လ်ဒိုက် ရူးဖီရာ"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မာလာဝီ ခွါးချာ"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "မက်ကဆီကို ပီဆို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မလေးရှား ရင်းဂစ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "မိုဇမ်ဘစ် မက်တီခယ်လ်"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "နမီးဘီးယား ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "နိုင်ဂျီးရီးယား နိုင်းရာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "နီကာရာဂွါ ခိုးဒိုဘာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "နော်ဝေ ခရိုဏာ"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "နီပေါ ရူပီး"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "နယူးဇီလန် ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အိုမန်နီ ရီရယ်"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "B/."
+                },
+                "displayName": {
+                    "other": "ပနားမား ဘလျဘိုးအာ"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ပီရူး ဆိုးလ်"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ပါပူအာ နယူးဂီနီ ခီးနာ"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဖိလစ်ပိုင် ပီဆို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ပါကစ္စတန် ရူပီး"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ပိုလန် ဇလော့တီ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ပါရာဂွေး ဂွါးအ်နီး"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကာတာရီ ရီရယ်"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ရိုမေးနီးယား လယ်အို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆားဘီးယား ဒယ်နား"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ရုရှ ရူဘယ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "value": "RUR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ရုရှ ရူဘယ် (၁၉၉၁–၁၉၉၈)"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ရဝန်ဒါ ဖရန့်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆော်ဒီအာရေးဗီးယား ရီယော်လ်"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆော်လမွန်ကျွန်းစု ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆေးရှဲ ရူပီး"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆူဒန် ပေါင်"
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "value": "SDP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆူဒန် ပေါင်အဟောင်း"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆွီဒင် ခရိုဏာ"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "စင်္ကာပူ ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "စိန့်ဟယ်လယ်နာ ပေါင်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆီယာရာလီယွန်း လီအိုနီ"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆီယာရာလီယွန်း လီအိုနီ (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆိုမာလီ သျှီလင်"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆူရီနမ်း ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "တောင်ဆူဒန် ပေါင်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆောင်တူမေးနှင့် ပရင်စီပီ ဒိုဘရာ"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆောင်တူမေးနှင့် ပရင်စီပီ ဒိုဘရာစ် (၂၀၁၈)"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "value": "SUR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆိုဗီယက် ရူဗယ်"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆီးရီးယား ပေါင်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆွာဇီလန် လီလန်းဂီနီ"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "฿"
+                },
+                "displayName": {
+                    "other": "ထိုင်း ဘတ်"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "တာဂျစ်ကစ္စတန် ဆိုမိုနီ"
+                }
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "တာ့ခ်မင်နစ္စတန် မာနတ်"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "တူနီးရှား ဒိုင်နာ"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "တွန်ဂါ ဗန်ဂါ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ရှေးဟောင်းတူရကီ လိုင်ရာ"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "တူရကီ လိုင်ရာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TT$"
+                },
+                "displayName": {
+                    "other": "ထရီနီဒတ်နှင့် တိုဘက်ဂို ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "ထိုင်ဝမ် ဒေါ်လာအသစ်"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "တန်ဇန်းနီးယား သျှီလင်"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ယူကရိန်း ဟီရီဗင်းညား"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ယူဂန္ဒာ သျှီလင်"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "US$"
+                },
+                "displayName": {
+                    "other": "အမေရိကန် ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "value": "USN",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အမေရိကန် ဒေါ်လာ (နောက်နေ့)"
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "value": "USS",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အမေရိကန် ဒေါ်လာ (တနေ့တည်း)"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဥရုဂွေး ပီဆို"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဥဇဘက်ကစ္စတန် ဆော်မ်"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဗင်နီဇွဲလား ဘိုလီဗာ (၂၀၀၈–၂၀၁၈)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဗင်နီဇွဲလန်း ဘိုလီဗာ"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "ဗီယက်နမ် ဒေါင်"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဗနွားတူ ဗားထူ"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဆမိုအား ထားလာ"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ကင်မရွန်း ဖရန့်"
+                },
+                "digits": 0
+            },
+            "XAG": {
+                "symbol": {
+                    "value": "XAG",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ငွေ"
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "value": "XAU",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ရွှေ"
+                }
+            },
+            "XBB": {
+                "symbol": {
+                    "value": "XBB",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဥရောပငွေကြေးစံနစ်"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "အရှေ့ကာရစ်ဘီယံ ဒေါ်လာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အထူးထုတ်ယူခွင့်"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "အနောက် အာဖရိက [CFA] ဖရန့်"
+                },
+                "digits": 0
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "[CFP] ဖရန့်"
+                },
+                "digits": 0
+            },
+            "XPT": {
+                "symbol": {
+                    "value": "XPT",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ပလက်တီနမ်"
+                }
+            },
+            "XTS": {
+                "symbol": {
+                    "value": "XTS",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "စမ်းသပ် ငွေကြေး ကုဒ်"
+                }
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "¤"
+                },
+                "displayName": {
+                    "other": "(မသိသို့မဟုတ်မရှိသောငွေကြေး)"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ယီမင်နီ ရီရယ်"
+                },
+                "digits": 0
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "တောင်အာဖရိက ရန်း"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဇင်ဘာဘွေ ခွါးချာ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD",
+                    "standardUseNoSymbol": 1,
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ဇင်ဘာဘွေ ဒေါ်လာ"
+                },
+                "digits": 0
+            }
+        }
+    }
+}

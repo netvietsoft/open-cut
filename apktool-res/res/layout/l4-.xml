@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/beauty_layout" n0:background="@color/ca" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <com.vega.ui.widget.SliderSeekbarView n0:layout_gravity="center_horizontal" n0:id="@id/beauty_seekbar" n0:visibility="invisible" n0:layout_width="220.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n1:kzn="@color/APKTOOL_RENAMED_0x7f060634" n1:kzr="@color/APKTOOL_RENAMED_0x7f0605c8" n1:kzs="@color/APKTOOL_RENAMED_0x7f060637"
+                  xmlns:n1="http://schemas.android.com/apk/res-auto" />
+                <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center_horizontal" n0:id="@id/beauty_list" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="5.0dp" n0:layout_marginRight="5.0dp" n0:layout_marginBottom="19.0dp" n0:layout_marginHorizontal="5.0dp" />
+            </LinearLayout>
+            <com.vega.ui.widget.LoadingView n0:layout_gravity="center" n0:id="@id/loading_view" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" />
+            <include n0:layout_gravity="center" n0:id="@id/loading_fail" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" layout="@layout/lwu" />
+        </FrameLayout>
+        <View n0:background="@color/q7" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+        <RelativeLayout n0:gravity="center_vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/q-" n0:gravity="center" n0:id="@id/reset" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginLeft="15.0dp" n0:text="@string/qex" n0:layout_centerVertical="true" n0:layout_marginStart="15.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/q-" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1204de" n0:layout_centerInParent="true" />
+            <ImageView n0:id="@id/confirm" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginRight="8.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08054d" n0:layout_marginEnd="8.0dp" n0:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

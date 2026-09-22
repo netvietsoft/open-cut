@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="#1c1d21" n0:paddingLeft="16.0dp" n0:paddingTop="16.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="28.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/xt_prompt_container" n0:background="@drawable/q6l" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="120.0dp">
+        <EditText n0:textSize="16.0dp" n0:textColor="#fafbff" n0:textColorHint="#66e5e9fa" n0:gravity="top" n0:id="@id/xt_et_input_prompt" n0:background="@null" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:hint="@string/tsv" n0:layout_weight="1.0" n0:lineSpacingExtra="6.0dp" />
+        <ImageView n0:layout_gravity="bottom" n0:id="@id/xt_iv_input_prompt_quotation" n0:background="@drawable/mig" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" />
+    </LinearLayout>
+    <FrameLayout n0:id="@id/xt_cutout_inpaint_benefits_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <FrameLayout n0:id="@id/xt_iv_common_cutout_confirm" n0:background="@drawable/q82" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="44.0dp">
+        <LinearLayout n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <FrameLayout n0:layout_gravity="center" n0:id="@id/xt_ai_logo_ball_bg_shadow" n0:background="@drawable/q5s" n0:layout_width="40.0dp" n0:layout_height="40.0dp">
+                <ImageView n0:layout_gravity="center" n0:id="@id/xt_common_ic_generate_btn_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/rl1" />
+            </FrameLayout>
+            <TextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_gravity="center" n0:id="@id/xt_common_tv_generate_btn_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uko" n0:alpha="0.3" n0:layout_marginStart="2.0dp" />
+        </LinearLayout>
+        <FrameLayout n0:layout_gravity="end|top" n0:id="@id/business_mark" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="-6.0dp" />
+    </FrameLayout>
+</LinearLayout>

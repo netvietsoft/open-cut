@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="76.0dp" n0:layout_height="120.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/bg_selected" n0:background="@drawable/APKTOOL_RENAMED_0x7f0806b6" n0:layout_width="76.0dp" n0:layout_height="100.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.cardview.widget.CardView n0:id="@id/cv_container" n0:layout_width="72.0dp" n0:layout_height="96.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginBottom="2.0dp" n0:layout_marginVertical="2.0dp" n2:cardCornerRadius="8.0dp" n2:cardElevation="0.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_cover" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n2:actualImageScaleType="centerCrop" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#b2f6f7fe" n0:gravity="center_vertical" n0:layout_gravity="end|bottom" n0:id="@id/tv_duration" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:layout_marginBottom="4.0dp" n0:singleLine="true" n0:layout_marginEnd="4.0dp" n0:textFontWeight="500" />
+        <com.vega.ui.widget.CircleProgressView n0:layout_gravity="center" n0:id="@id/circle_progress_view" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_margin="3.5dp" n2:cs="@color/knt" n2:cw="@color/APKTOOL_RENAMED_0x7f06045e" n2:ks8="12.0dp" n2:kat="4.0dp" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/iv_retry" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/odo" n0:scaleType="center" />
+    </androidx.cardview.widget.CardView>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textStyle="bold" n0:textColor="#fafbff" n0:gravity="center_vertical" n0:layout_gravity="end|bottom" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:layout_marginLeft="2.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginRight="2.0dp" n0:singleLine="true" n0:layout_marginHorizontal="2.0dp" n0:textFontWeight="700" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/cv_container"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

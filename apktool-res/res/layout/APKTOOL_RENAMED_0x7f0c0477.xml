@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:ellipsize="none" n0:gravity="center_vertical" n0:id="@id/fake_template_tips" n0:background="@drawable/p7l" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:maxWidth="327.0dp" n0:singleLine="true" n0:drawablePadding="6.0dp" n0:marqueeRepeatLimit="marquee_forever" n0:drawableStart="@drawable/nej" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" n0:layout_marginStart="23.0dp" n0:layout_marginEnd="23.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/marquee_tips_grandient_view" n0:background="@drawable/pdh" n0:visibility="gone" n0:layout_width="30.0dp" n0:layout_height="32.0dp" n0:layout_marginEnd="8.0dp" n2:layout_constraintRight_toRightOf="@id/fake_template_tips" n2:layout_constraintTop_toTopOf="@id/fake_template_tips"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/viewStub_copyright_group" n0:background="@drawable/APKTOOL_RENAMED_0x7f082acb" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:visibility="gone" n0:layout="@layout/APKTOOL_RENAMED_0x7f0c046d" n0:inflatedId="@id/copyright_group" n0:layout_width="match_parent" n0:layout_height="32.0dp" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="93.0dp" n0:layout_marginRight="24.0dp" n0:layout_marginHorizontal="24.0dp" n0:paddingHorizontal="8.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_replace_music_tip" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="96.0dp" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/mediaSelectedContainer" n0:tag="layout/xt_item_media_selected2_0" n0:layout_width="70.0dp" n0:layout_height="70.0dp" n0:layout_marginStart="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.gallery.refactor.view.HeightEqualWidthImageView2 n0:layout_gravity="center" n0:id="@id/ivCover" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/delete" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/rt7" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

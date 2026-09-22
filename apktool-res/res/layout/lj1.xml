@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060074" n0:gravity="center" n0:id="@id/btn_create_new" n0:background="@drawable/qlx" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="32.0dp" n0:layout_marginTop="32.0dp" n0:layout_marginRight="32.0dp" n0:text="@string/okj" n0:textAllCaps="false" n0:layout_marginHorizontal="32.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@android:color/white" n0:gravity="center" n0:id="@id/btn_edit_more" n0:background="@drawable/lt2" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="32.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="32.0dp" n0:text="@string/ok0" n0:textAllCaps="false" n0:layout_marginHorizontal="32.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/btn_create_new" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

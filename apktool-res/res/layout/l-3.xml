@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="120.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateConstraintLayout n0:id="@id/draft_grid_view_layout" n0:background="@color/knt" n0:paddingTop="6.0dp" n0:layout_width="match_parent" n0:layout_height="110.0dp" n0:paddingStart="15.0dp" n0:paddingEnd="15.0dp">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ivDraftSnapshot" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.business.BusinessLabelView n0:id="@id/businessLabel" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/ly-" n0:layout_marginStart="4.0dp" n2:layout_constraintStart_toStartOf="@id/ivDraftSnapshot" n2:layout_constraintTop_toTopOf="@id/ivDraftSnapshot"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_retry" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/plk" n3:layout_constraintBottom_toBottomOf="@id/ivDraftSnapshot" n3:layout_constraintEnd_toEndOf="@id/ivDraftSnapshot" n3:layout_constraintStart_toStartOf="@id/ivDraftSnapshot" n3:layout_constraintTop_toTopOf="@id/ivDraftSnapshot"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/ivPayIcon" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/mv4" n4:layout_constraintBottom_toBottomOf="@id/ivDraftSnapshot" n4:layout_constraintEnd_toEndOf="@id/ivDraftSnapshot"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/ivDelete" n0:background="@drawable/nkt" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toTopOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="#fffcfc" n0:gravity="center" n0:id="@id/ivTypeTips" n0:background="@drawable/les" n0:paddingLeft="4.0dp" n0:paddingTop="2.0dp" n0:paddingRight="4.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/l31" n0:layout_marginStart="4.0dp" n0:paddingHorizontal="4.0dp" n0:paddingVertical="2.0dp" n6:layout_constraintLeft_toLeftOf="@id/ivDraftSnapshot" n6:layout_constraintTop_toTopOf="@id/ivDraftSnapshot"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06059a" n0:ellipsize="end" n0:id="@id/tvName" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_marginStart="14.0dp" n0:layout_marginEnd="5.0dp" n7:layout_constraintLeft_toRightOf="@id/ivDraftSnapshot" n7:layout_constraintRight_toLeftOf="@id/ivDelete" n7:layout_constraintTop_toTopOf="@id/ivDraftSnapshot"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="11.0dp" n0:textColor="#7f7f80" n0:ellipsize="end" n0:id="@id/tvUpdateTime" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:singleLine="true" n0:layout_marginStart="14.0dp" n0:layout_marginEnd="5.0dp" n8:layout_constraintLeft_toRightOf="@id/ivDraftSnapshot" n8:layout_constraintRight_toLeftOf="@id/ivDelete" n8:layout_constraintTop_toBottomOf="@id/tvName" n8:kr3="none"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ff" n0:id="@id/tvPackSize" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="14.0dp" n9:layout_constraintBottom_toBottomOf="@id/ivDraftSnapshot" n9:layout_constraintLeft_toRightOf="@id/ivDraftSnapshot"
+          xmlns:n9="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/view_item_cloud_draft_upload_line" n0:background="@color/ff" n0:layout_width="1.0dp" n0:layout_height="12.0dp" n0:layout_marginStart="5.0dp" n10:layout_constraintBottom_toBottomOf="@id/tvPackSize" n10:layout_constraintLeft_toRightOf="@id/tvPackSize" n10:layout_constraintTop_toTopOf="@id/tvPackSize"
+          xmlns:n10="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ff" n0:id="@id/tvDuration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="5.0dp" n11:layout_constraintBottom_toBottomOf="@id/view_item_cloud_draft_upload_line" n11:layout_constraintLeft_toRightOf="@id/view_item_cloud_draft_upload_line" n11:layout_constraintTop_toTopOf="@id/view_item_cloud_draft_upload_line"
+          xmlns:n11="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/view_item_cloud_draft_upload_line_2" n0:background="@color/ff" n0:visibility="gone" n0:layout_width="1.0dp" n0:layout_height="12.0dp" n0:layout_marginStart="5.0dp" n12:layout_constraintBottom_toBottomOf="@id/tvPackSize" n12:layout_constraintLeft_toRightOf="@id/tvDuration" n12:layout_constraintTop_toTopOf="@id/tvPackSize"
+          xmlns:n12="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ff" n0:id="@id/tvSegmentSize" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="5.0dp" n13:layout_constraintBottom_toBottomOf="@id/tvPackSize" n13:layout_constraintLeft_toRightOf="@id/view_item_cloud_draft_upload_line_2" n13:layout_constraintTop_toTopOf="@id/tvPackSize"
+          xmlns:n13="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ff" n0:id="@id/upload_speed_status" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n14:layout_constraintBottom_toBottomOf="@id/tvPackSize" n14:layout_constraintRight_toRightOf="parent" n14:layout_constraintTop_toTopOf="@id/tvPackSize"
+          xmlns:n14="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ff" n0:id="@id/upload_watting_status" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/raj" n0:singleLine="true" n15:layout_constraintBottom_toBottomOf="@id/tvPackSize" n15:layout_constraintRight_toRightOf="parent" n15:layout_constraintTop_toTopOf="@id/tvPackSize"
+          xmlns:n15="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:gravity="center_vertical" n0:id="@id/ll_upload_failed" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n16:layout_constraintBottom_toBottomOf="@id/tvPackSize" n16:layout_constraintRight_toRightOf="parent" n16:layout_constraintTop_toTopOf="@id/tvPackSize"
+          xmlns:n16="http://schemas.android.com/apk/res-auto">
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#ff303d" n0:id="@id/tv_upload_failed" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nb2" n0:layout_marginStart="8.0dp" />
+            <ImageView n0:id="@id/iv_upload_failed" n0:background="@drawable/pop" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:layout_marginStart="3.0dp" />
+        </LinearLayout>
+    </com.vega.ui.state.pressed.PressedStateConstraintLayout>
+    <com.vega.ui.SliderView n0:id="@id/progress" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="3.0dp" n17:kko="@color/y1" n17:kkt="@color/y4" n17:ko_="false"
+      xmlns:n17="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

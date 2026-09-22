@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/m_-" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <Space n0:id="@id/title_holder" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/iv_close" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="52.0dp" n0:layout_height="44.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f080586" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" n2:layout_constraintBottom_toBottomOf="@id/title_holder" n2:layout_constraintStart_toStartOf="@id/title_holder" n2:layout_constraintTop_toTopOf="@id/title_holder"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/noh" n0:drawablePadding="8.0dp" n3:layout_constraintBottom_toBottomOf="@id/title_holder" n3:layout_constraintEnd_toEndOf="@id/title_holder" n3:layout_constraintStart_toStartOf="@id/title_holder" n3:layout_constraintTop_toTopOf="@id/title_holder"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/container" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/title_holder"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/rootView" n0:background="@drawable/qpa" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n1:layout_constraintBottom_toTopOf="@id/groupRecyclerView" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/stroke" n0:background="@drawable/k2n" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="6.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/tv_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="32.0dp" n0:layout_marginTop="17.0dp" n0:layout_marginRight="32.0dp" n0:text="@string/oao" n0:layout_marginHorizontal="32.0dp" n1:k1i="bold" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:gravity="center" n0:id="@id/tv_description" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="32.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="32.0dp" n0:text="@string/oyp" n0:layout_marginHorizontal="32.0dp" n0:textFontWeight="400" n1:kks="15.599976dp" n1:k1h="15.599976dp" />
+        <View n0:id="@id/padding" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="3.0dp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/groupRecyclerView" n0:paddingLeft="16.0dp" n0:paddingTop="8.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="16.0dp" n0:overScrollMode="never" n0:paddingHorizontal="16.0dp" n2:layout_constraintBottom_toTopOf="@id/btn_confirm" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHeight_default="wrap" n2:layout_constraintHeight_max="620.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textColor="@color/l-" n0:gravity="center" n0:id="@id/btn_confirm" n0:background="@drawable/kwq" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/oxq" n0:textAllCaps="false" n0:fontFamily="sans-serif-medium" n0:layout_marginHorizontal="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:k1i="medium"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/music_collections_full_selector" n0:background="#80000000" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundFrameLayout n0:id="@id/top_background" n0:background="#101010" n0:clickable="true" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:i7="16.0dp" n1:i8="16.0dp" n1:layout_constraintBottom_toBottomOf="@id/collections_full_selector" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#ffffff" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ga" n0:fontFamily="@string/ql7" n0:layout_marginStart="12.0dp" n2:layout_constraintBottom_toTopOf="@id/collections_full_selector" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/collapse" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/oop" n0:layout_marginEnd="12.0dp" n3:layout_constraintBottom_toBottomOf="@id/title" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="@id/title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/collections_full_selector" n0:paddingBottom="4.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="42.0dp" n0:overScrollMode="never" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

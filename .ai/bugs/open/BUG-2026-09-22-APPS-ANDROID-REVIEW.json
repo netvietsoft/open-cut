@@ -1,0 +1,418 @@
+{
+  "task_id": "TASK-035-MODULAR-COMPONENT-ARCHITECTURE",
+  "report_id": "BUG-2026-09-22-APPS-ANDROID-REVIEW",
+  "date": "2026-09-22",
+  "status": "RESOLVED",
+  "resolved_at": "2026-09-22T12:25:00+07:00",
+  "resolution_tasks": [
+    "TASK-036-BUILD-PATH-UNIFY",
+    "TASK-037-ENGINE-HONEST-FALLBACK",
+    "TASK-038-EXPORT-CORRECTNESS",
+    "TASK-039-PROJECT-STATE-SAFETY",
+    "TASK-040-NAV-AND-PAYWALL",
+    "TASK-041-TIMELINE-PLAYBACK",
+    "TASK-042-PHOTO-EDITOR-STABILITY",
+    "TASK-043-UNIT-TEST-BASELINE",
+    "TASK-044-BRANDING-PURGE-K9",
+    "TASK-045-DOCUMENTATION-MEMORY-SYNC"
+  ],
+  "verification": {
+    "unit_tests": "run_unit_tests.ps1 passed 100% (3 suites, 12 test cases)",
+    "apk_build": "build_apk.ps1 passed 100% (signed nextai_opencut_signed.apk)",
+    "rule12_bilingual": "verified on all modified components",
+    "rule14_no_invented_state": "verified"
+  },
+  "attempt": 2,
+  "command": "Static read-only code review of apps/android (Java/Kotlin/C++/Gradle/CMake/manifest/res) + adversarial 2-vote verification workflow + APK inspection (unzip -l app/build/manual_build/nextai_opencut_signed.apk). Full report: .ai/bugs/open/BUG-2026-09-22-APPS-ANDROID-REVIEW.md",
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "resolved": 76,
+    "refuted": 1,
+    "total": 77
+  },
+  "failed_tests": [
+    {
+      "name": "B1 [CRITICAL]",
+      "file": "src/main/java/.../NextAiApplication.java:11 ↔ src/main/kotlin/.../NextAiApplication.kt:11; engine/MiddleBridgeJni.java:10 ↔ .kt:9; presentation/MainActivity.java:53 ↔ .kt:28",
+      "error": "Ba lớp trùng FQN (fully-qualified name) tồn tại song song trong `src/main/java` và `src/main/kotlin`. `app/build.gradle.kts:3` áp dụng `org.jetbrains.kotlin.android` và không có khối `sourceSets` loại trừ, nên Gradle biên dịch cả hai cây. || `gradle assembleDebug` thất bại: kotlinc báo `Redeclaration`, hoặc D8 báo `Type ... is defined multiple times`. Manifest `.presentation.MainActivity` trỏ vào 2 lớp khác bản chất (`Activity` View-based vs `ComponentActivity` Compose)."
+    },
+    {
+      "name": "B2 [CRITICAL]",
+      "file": "app/CMakeLists.txt:13-19 vs src/main/cpp/native-lib.cpp:20-25",
+      "error": "`add_library(middle_bridge ...)` chỉ liệt kê `native-lib.cpp`, `middle_bridge.cpp`, `audio_dsp.cpp`. `native-lib.cpp` khai báo biến static toàn cục kiểu `ShaderPackEngine`, `FaceMeshEngine`, `BodySegmentationEngine`, `StickerTextEngine`, `FFmpegRenderPipeline` mà constructor/destructor/phương thức được định nghĩa trong 5 file `.cpp` không có trong CMake (`shader_pack.cpp:100,105,197`; `face_mesh_engine.cpp:17,21,25,46`; `body_segmentation_engine.cpp:16,20,48`; `sticker_text_engine.cpp:16,20,25`; `ffmpeg_render_pipeline.cpp:17,21,51`). || Bất kỳ lần build NDK nào cũng dừng ở bước link với `undefined reference to nextai::graphics::ShaderPackEngine::ShaderPackEngine()` … `libmiddle_bridge.so` k"
+    },
+    {
+      "name": "B3 [HIGH]",
+      "file": "app/build_apk.ps1:30-36; APK app/build/manual_build/nextai_opencut_signed.apk",
+      "error": "Script build thủ công chỉ chạy `aapt2 → javac (src/main/java) → d8 → zipalign → apksigner`. Không có bước `cmake`/`ndk-build`, không có `kotlinc`. || APK đã ký có 47 entry: 0 file `lib/*.so`, 0 lớp Kotlin/Compose, 0 `assets/` — dù `AndroidManifest.xml:52-81` khai báo 5 Compose Activity. Toàn bộ \"C++20 Engine\", KMP Agent, Paywall Compose không tồn tại trên thiết bị. Ghi chú: các file `unaligned.apk`, `res_compiled/`, `app_classes.jar` trong `manual_build/` không khớp tên script hiện tại → APK đến từ phiên bản script cũ hơn."
+    },
+    {
+      "name": "B4 [MEDIUM]",
+      "file": "engine/MiddleBridgeJni.java:196-210 vs cpp/native-lib.cpp",
+      "error": "Java khai báo 15 `native`; C++ chỉ export 9 symbol `Java_com_nextai_opencut_engine_MiddleBridgeJni_*`. Không khớp: `nativeGetEngineVersion` (C++ export `getEngineVersion`, khớp với Kotlin object chứ không phải Java), `nativeApplyChromaKey`, `nativeApplyToneCurve`, `nativeApplyGlitchFx`, `nativeApplyInpaintMask`, `nativeApplyVoiceFx`, `nativeApplySpeedCurve` (không có symbol nào). || Hiệu chỉnh XM: hôm nay không tái hiện `UnsatisfiedLinkError` vì `.so` không được đóng gói (B3) → `isNativeLoaded == false` → luôn đi nhánh fallback. Lỗi sẽ bùng phát ngay khi B1/B2/B3 được sửa: 7 hàm ném ULE, bị `catch (Throwable ignored)` nuốt và trả `true` (xem N7). Bẫy ẩn."
+    },
+    {
+      "name": "B5 [MEDIUM]",
+      "file": "app/build.gradle.kts:36-41; apps/android/",
+      "error": "Tham chiếu `proguard-rules.pro` không tồn tại; không có `gradlew`, `gradle/wrapper/`, `gradle.properties`, `local.properties`. || Build release qua Gradle thất bại ở bước R8 (thiếu file rules); không ai clone repo có thể build được bằng wrapper."
+    },
+    {
+      "name": "B6 [MEDIUM]",
+      "file": "AndroidManifest.xml:3,5-7,12,28 vs build.gradle.kts:9,14",
+      "error": "Manifest có `package=\"com.nextai.opencut\"` + `<uses-sdk minSdkVersion=\"26\">` trong khi Gradle dùng `namespace` + `minSdk = 24`. `requestLegacyExternalStorage=\"true\"` vô hiệu ở targetSdk 34. `READ_EXTERNAL_STORAGE` thiếu `maxSdkVersion=\"32\"` (khác `WRITE_*` ở dòng 13). || AGP 8.5 lỗi `uses-sdk:minSdkVersion 26 cannot be different than version 24` và cảnh báo/loại bỏ `package`. Mâu thuẫn: build thủ công cần 2 thuộc tính này, build Gradle thì cấm → phải chọn một đường build duy nhất."
+    },
+    {
+      "name": "B9 [MEDIUM]",
+      "file": "apps/android/app/src/ (không có test/, androidTest/); .ai/state.json",
+      "error": "Không có bất kỳ thư mục/file test nào, `build.gradle.kts:108-111` khai báo JUnit/Espresso nhưng không có test. `.ai/state.json` ghi `\"unit_test\": \"pass\", \"integration_test\": \"pass\"`. || Vi phạm Luật 14 AGENTS.md (Never invent project state) và Luật 15 (verification before checkpoint). Trạng thái \"pass\" không có căn cứ."
+    },
+    {
+      "name": "B7 [LOW]",
+      "file": "AndroidManifest.xml:42-48; MainActivity.java, MainActivity.kt",
+      "error": "Intent-filter `opencut://app` gắn `android:autoVerify=\"true\"` — chỉ có ý nghĩa với `http/https` (App Links). Không file nào gọi `getIntent().getData()` hay override `onNewIntent` → deep link chết. Chú thích `<!-- Fixes CWE-939 -->` và `NextAiApplication.kt:17` \"No CWE-939 flaws\" không có mã chứng minh. || Hiện không có lỗ hổng vì không có dispatch; nhưng tuyên bố \"đã vá CWE-939\" là sai sự thật. Bất kỳ handler tương lai nào phải whitelist host/path theo `Docs/rules.md §3`."
+    },
+    {
+      "name": "B8 [LOW]",
+      "file": "src/main/java/com/nextai/opencut/test/TestFaceDetect.java (toàn file)",
+      "error": "Harness dev có `main()` (`:11`), đường dẫn cứng `/sdcard/DCIM/Facebook/FB_IMG_...jpg` (`:13,135,138,143`), probe pixel cố định `getPixel(444,y)` (`:58-69`) → `IllegalArgumentException` với ảnh hẹp hơn 473px (bị `catch (Throwable)` nuốt `:87`). 0/9 thành viên có chú thích. || Đóng gói vào APK production (có trong `classes.dex`). Vi phạm phân tách test/production; dead code mang PII path."
+    },
+    {
+      "name": "B10 [LOW]",
+      "file": "app/debug.keystore; app/build_apk.ps1:12-18,72; cây thư mục",
+      "error": "`debug.keystore` nằm trong source; script hardcode `C:\\Users\\boluc\\...\\Sdk`, JDK 21 path và mật khẩu `pass:android`. `app/build/` (1,6 MB kèm APK đã ký), `.gradle/`, 5 file `.DS_Store` nằm trong cây. || Hiệu chỉnh XM: `apps/` không phải git repo; `.gitignore` ở root dự án có loại trừ `build/`, `.gradle/`, `*.apk`, `.DS_Store` nhưng không loại trừ `*.keystore`. Vấn đề là tính di động (không ai khác build được) và vệ sinh repo, không phải lộ secret (key debug chuẩn Android)."
+    },
+    {
+      "name": "N7 [HIGH]",
+      "file": "engine/MiddleBridgeJni.java:30-194",
+      "error": "13/20 wrapper public dùng mẫu: nếu `isNativeLoaded` thì gọi native trong `try`, nuốt mọi `Throwable`; sau đó `Log.i(...)` và `return true`. `getEngineVersion` trả chuỗi cứng; `applyToneCurve(float[])` (`:112-114`) bỏ qua tham số và gọi `applyToneCurve(1.15f, 1.05f, 0.95f, 0.85f)`; `applyNoiseReduction` / `applyVocalIsolation` (`:181-194`) không có native nào, chỉ log rồi trả `true`. || Caller không bao giờ quan sát được thất bại. `VideoEditorComponent.java:455, 2731, 2773, 3147, 4214, 4338, 4353` và `PhotoEditorComponent.java:1587` hiển thị toast \"đã áp dụng\" cho thao tác không xảy ra. Khi B4 được kích hoạt, 7 hàm ném `UnsatisfiedLinkError` cũng bị nuốt và trả `true`."
+    },
+    {
+      "name": "N1 [MEDIUM]",
+      "file": "cpp/middle_bridge.cpp:34-71",
+      "error": "`SplitSegment` trả `true` kể cả khi không tìm thấy track/segment (`:52-53`, log \"mock ready\"); `ApplyTransition` (`:56-60`), `RenderExport` (`:62-67`) chỉ `LOGI` và `return true`, không ghi file; `GetDurationMs` trả cứng `15000` khi tổng = 0 (`:70`). || Hiệu chỉnh XM: `AddTrack` không bao giờ được gọi từ JNI nên `tracks_` luôn rỗng và nhánh \"mock ready\" là nhánh duy nhất chạy được. Dead code trong bản build hiện tại."
+    },
+    {
+      "name": "N2 [MEDIUM]",
+      "file": "cpp/face_mesh_engine.cpp:25-44; body_segmentation_engine.cpp:24-41; shader_pack.cpp:185-209; ffmpeg_render_pipeline.cpp:51-73",
+      "error": "`DetectFaceMesh` bỏ qua buffer khung hình, bịa 468 điểm trên đường tròn; `DetectPoseLandmarks` bịa 33 điểm; `CompileShaderProgram` trả `fake_program_id`; `ExecuteRender` lặp 5 dòng log 20%→100% rồi `return true` — không gọi FFmpeg, không có header FFmpeg nào được include. || \"AI 468-point mesh\", \"OpenGL ES shader\", \"FFmpeg 4K pipeline\" trong README/TASK_LOG không có mã thật đằng sau. Vi phạm Luật 20 (phải gắn nhãn `NEW_DESIGN`/stub, không được trình bày như `OBSERVED` đang hoạt động)."
+    },
+    {
+      "name": "N4 [LOW]",
+      "file": "cpp/native-lib.cpp:52, 67, 80, 102, 114, 135, 156-157",
+      "error": "Kết quả `GetStringUTFChars` không kiểm tra `nullptr` trước khi dựng `std::string` (UB khi OOM). `nativeApplyFaceBeauty` truyền `nullptr` buffer và kích thước cứng 1080×1920, texture id cứng 1 và 2. || Crash native nếu JVM trả null; tham số cứng cho thấy hàm chưa từng chạy với dữ liệu thật."
+    },
+    {
+      "name": "N5 [LOW]",
+      "file": "cpp/ffmpeg_render_pipeline.cpp:35-37",
+      "error": "Nối `options.color_lut_path` chưa escape vào chuỗi filtergraph `lut3d=file=...`. || Tiềm ẩn filtergraph injection nếu path chứa dấu nháy hoặc dấu hai chấm; chỉ nguy hiểm khi FFmpeg thật được tích hợp."
+    },
+    {
+      "name": "N6 [LOW]",
+      "file": "cpp/audio_dsp.cpp:17-34",
+      "error": "Lớp `AudioProcessor` không được tham chiếu ở bất kỳ file nào (dead code); `DetectBeats` trả mảng timestamp cứng 500…5000 ms. || Không ảnh hưởng runtime; là stub đội lốt \"Audio DSP\"."
+    },
+    {
+      "name": "N8 [LOW]",
+      "file": "cpp/audio_dsp.cpp:2; engine/EffectRegistry.java:154; kotlin/.../editor/VideoEditActivity.kt:124, 143; kotlin/.../export/ExportActivity.kt:62",
+      "error": "Mất ký tự `Â` do lỗi mã hóa: \"m Thanh\" (đúng: \"Âm Thanh\"), \"PH N GIẢI\" (đúng: \"PHÂN GIẢI\") — 5 vị trí, 2 trong đó là chuỗi hiển thị cho người dùng. || Lỗi chính tả UI; dấu hiệu file đã bị chuyển mã sai. Cần rà toàn repo."
+    },
+    {
+      "name": "K1 [HIGH]",
+      "file": "presentation/export/ExportActivity.kt:103-118",
+      "error": "Truyền đường dẫn cứng `/sdcard/Movies/NextAI_Output.mp4` (vi phạm scoped storage API 29+), bỏ qua giá trị trả về của `nativeRenderExport`, toast \"Kết xuất video thành công\" vô điều kiện; `isExporting` được đặt `true` rồi `false` đồng bộ trong cùng lambda nên nhãn \"ĐANG KẾT XUẤT...\" không bao giờ hiển thị. || Người dùng được báo thành công dù không có file nào được ghi."
+    },
+    {
+      "name": "K4 [HIGH]",
+      "file": "presentation/compose/subscribe/ComposeSubscribeActivity.kt:123; build.gradle.kts:105",
+      "error": "Nút \"NÂNG CẤP NGAY (GOOGLE PLAY)\" có `onClick` rỗng (chỉ một comment). `billing-ktx:7.0.0` được khai báo nhưng không có import `com.android.billingclient` nào trong toàn repo. Nút \"NHẬN ƯU ĐÃI 20%\" / \"DÙNG THỬ 3 NGÀY\" chỉ đóng dialog, không đổi gói hay giá. || Paywall không thể thu tiền; \"Detain Strategy 2 cấp\" chỉ là hiệu ứng thị giác. `Docs/rules.md` yêu cầu Billing 8.2.1, dependency khai báo 7.0.0."
+    },
+    {
+      "name": "K5 [HIGH]",
+      "file": "kmp/agent/core/DefaultAgentMessagingProtocol.kt:36-79; Conversation.kt:28; presentation/ailab/AiLabAgentChatActivity.kt:77",
+      "error": "\"SSE stream\" được mô phỏng bằng `delay()` và chuỗi tiếng Việt cứng; không có lời gọi OkHttp/Retrofit/Ktor nào (dependency Retrofit/OkHttp khai báo nhưng không import). Header UI ghi \"Trực tuyến • Port 6033 • Model Context Protocol\". `System.currentTimeMillis()` (JVM-only) xuất hiện trong file được ghi chú \"Shared 100% across Android, iOS, Web\" (`Conversation.kt:28`) và `DefaultAgentMessagingProtocol.kt:43, 72`. || Tính năng AI Copilot lõi là giả lập; tuyên bố KMP 100% shared sai về kỹ thuật. Không endpoint `/storyboard_agent/v1/ai_lab/send_msg` nào được gọi (vi phạm `Docs/rules.md §4`)."
+    },
+    {
+      "name": "K9 [HIGH]",
+      "file": "engine/EffectRegistry.java:84-94; presentation/templates/TemplateComponent.java:72; res/drawable/bg_capcut_*.xml (19 file); src/main/assets/capcut/",
+      "error": "Vi phạm quy tắc thương hiệu (`Docs/rules.md §2.5`): chú thích \"Kho Tài Nguyên Hiệu Ứng Gốc CapCut (ByteDance Amazing Engine…)\"; chuỗi hiển thị \"🔍 Tìm kiếm mẫu CapCut…\"; tên effect chứa \"CapCut\" nằm trong DEX; 19 drawable `bg_capcut_*` (có trong APK). Cây `assets/capcut/` chứa ~0,94 MB / 148 file effect decompile của CapCut (lua, glsl, material, xshader) kèm 10 `.DS_Store`. || Hiệu chỉnh XM: `assets/` không có trong APK hiện tại (0 entry) nhưng sẽ được đóng gói bởi Gradle hoặc bởi `build_apk.ps1:52-62` phiên bản hiện tại. Rủi ro pháp lý / IP khi phát hành tài nguyên bản quyền bên thứ ba dưới thương hiệu NextAI — cần Chủ tịch quyết định."
+    },
+    {
+      "name": "K2 [MEDIUM]",
+      "file": "presentation/editor/VideoEditActivity.kt:38-39, 139-142",
+      "error": "Kết quả `nativeSplitSegment` được gán vào biến `success` nhưng không bao giờ được đọc; toast \"C++ Engine JNI OK\" bất kể kết quả. `currentTimeMs = 3500`, `totalDurationMs = 15000` cứng, không có cơ chế cập nhật. || Màn hình editor Compose là mock tĩnh."
+    },
+    {
+      "name": "K3 [MEDIUM]",
+      "file": "engine/MiddleBridgeJni.kt:10-16 ↔ VideoEditActivity.kt:140, 150, ExportActivity.kt:109",
+      "error": "`object` bắt `UnsatisfiedLinkError` trong `init` nhưng không có cờ `isLoaded`; các `external fun` được gọi trực tiếp không try/catch. || Hiệu chỉnh XM: sẽ crash ngay khi chạm nút nếu `.so` thiếu, nhưng hiện không thể tới được (không ship, trùng FQN với lớp Java đã guard). Lỗi tiềm ẩn."
+    },
+    {
+      "name": "K6 [MEDIUM]",
+      "file": "kmp/agent/core/tools/mcp/McpToolDispatcher.kt:30-73",
+      "error": "Cả 3 tool (`cut_video`, `auto_captions`, `apply_effect`) trả `success = true` với thông điệp bịa (\"Đã chèn 12 dòng phụ đề…\") và không gọi `MiddleBridgeJni` hay timeline nào. `McpResult.outputData` kiểu `Map<String, Any>` không serializable qua kotlinx.serialization. || MCP dispatcher không điều phối gì."
+    },
+    {
+      "name": "K7 [LOW]",
+      "file": "kmp/agent/core/Conversation.kt:51-68",
+      "error": "`InMemoryConversationRepo` dùng `mutableMapOf` không đồng bộ hóa trong lớp quảng bá là repository đa nền tảng. || Hiệu chỉnh XM: hiện mọi truy cập trên Main dispatcher, được chặn bởi `isStreaming` nên không có race hôm nay; lỗi thiết kế tiềm ẩn."
+    },
+    {
+      "name": "K8 [LOW]",
+      "file": "presentation/ailab/AiLabAgentChatActivity.kt:39-44, 51, 126, 148",
+      "error": "Lịch sử chat và repo chỉ sống trong `remember {}` (không `rememberSaveable` / ViewModel); `conversationId = \"sess_001\"` cứng. || Hiệu chỉnh XM: Activity bị khóa portrait nên không mất khi xoay; mất khi đổi dark-mode / locale / font-scale, multi-window resize, process death."
+    },
+    {
+      "name": "K10 [LOW]",
+      "file": "6 file presentation/**/*.kt",
+      "error": "File header song ngữ có, nhưng 0 / ~25 hàm `@Composable` có KDoc (ví dụ `MainActivity.kt:48, 120, 177, 189, 197, 213, 218, 223`). || Vi phạm Luật 12 AGENTS.md / `rules.md §2.6`."
+    },
+    {
+      "name": "P1 [HIGH]",
+      "file": "PhotoEditorComponent.java:1468-1523; MainActivity.java:446-461; AndroidManifest.xml:13",
+      "error": "Khối `catch (Exception e)` tại `:1521-1523` hiển thị toast \"💾 Đã lưu ảnh thành công\" — báo thành công khi thất bại. `WRITE_EXTERNAL_STORAGE` được khai báo nhưng không bao giờ xin runtime (MainActivity chỉ xin `READ_*`). Không có `checkSelfPermission` trong file. || Hiệu chỉnh XM: trên API 26–28, `insert(MediaStore.Images...)` ném `SecurityException` nên không ghi gì, `listener.onPhotoEditorSaved` không được gọi, người dùng thấy \"thành công\". Trên API 24–25 quyền READ kéo theo WRITE nên lưu được nếu READ đã cấp. Toast sai trong `catch` xảy ra ở mọi API cho mọi `IOException` / OOM."
+    },
+    {
+      "name": "P2 [HIGH]",
+      "file": "PhotoEditorComponent.java:1762, 233, 1775, 1543, 1612, 1643, 1674, 1479, 1490, 1501",
+      "error": "Không có Handler / Thread / Executor nào trong file. `decodeFileDescriptor` (≤2560px), `detectAllFaces` (3 tầng scale + skin clustering), 4 hàm `preview*Effect` cấp phát và duyệt bitmap mỗi tick SeekBar, 3 lần `compress(PNG, 100)` khi lưu — tất cả trên main thread. || Kéo slider son môi → hàng chục lần cấp phát ~26 MB/giây + vòng lặp pixel → giật khung; bấm Lưu → UI đóng băng vài giây → ANR trên máy tầm trung."
+    },
+    {
+      "name": "P3 [MEDIUM]",
+      "file": "PhotoEditorComponent.java:1760-1772, 2032, 1546, 1460, 1250-1253, 1268-1271, 2080-2134",
+      "error": "Trạng thái ổn định giữ 3 bitmap ARGB_8888 ≤2560px (`baseOriginalPhotoBitmap`, `basePhotoBitmap`, `basePreEffectBitmap`) + 1 tạm mỗi tick slider + 1 `exportBitmap` khi lưu. Rotate / flip / crop / `resetCropToBase` / Cancel-panel / inpaint / preview tick thả bitmap cũ không `recycle()`; manifest không có `largeHeap`. || Hiệu chỉnh XM: `recycle()` có được gọi ở `fixExifOrientation` (`:1828`) và 4 nút Apply (`:2089-2137`) — claim gốc \"không bao giờ recycle\" là sai. Rủi ro OOM (là `Error`, không bị `catch (Exception)` bắt → crash) trên máy RAM thấp, không phải leak cứng."
+    },
+    {
+      "name": "P4 [MEDIUM]",
+      "file": "PhotoEditorComponent.java:1288-1308, 1568-1589, 1189-1204; EffectRegistry.java:256-279, 325-397",
+      "error": "Stub đội lốt tính năng: (a) dialog tỷ lệ khung chỉ đổi nhãn — `currentPhotoRatioIdx` không bao giờ được đọc; chú thích `:202` mâu thuẫn `PHOTO_RATIO_OPTIONS:60-63`; (b) \"AI Inpaint\" copy vùng chữ nhật cố định (5–35% → 35–65% × 60–85%) bỏ qua input người dùng, gọi `MiddleBridgeJni.applyInpaintMask(30, 40, 50, 50)` với hằng số; (c) Đổi bầu trời / FaceApp smile-youth-hair / Bling / Grain / Vignette đều là `ColorMatrix` 4×5 tô màu toàn ảnh. || Toast \"Đã xóa vật thể AI!\", \"Đã thay Bầu Trời Hoàng Hôn!\", \"Biến đổi nụ cười rạng rỡ (Classic Smile AI)!\" cho thao tác không có thuật toán tương ứng. Inpaint phá hủy ảnh không có undo."
+    },
+    {
+      "name": "P5 [MEDIUM]",
+      "file": "PhotoEditorComponent.java:1782-1787, 256, 1730",
+      "error": "Khi decode thất bại, thay bằng bitmap placeholder vẽ chữ \"NextAI 4K Studio Portrait\" và `open()` vẫn toast \"Đã nạp ảnh '…' vào Trình Chỉnh Sửa 3D LUTs C++20!\". || Người dùng có thể \"lưu\" placeholder mà không biết ảnh gốc không đọc được."
+    },
+    {
+      "name": "P6 [MEDIUM]",
+      "file": "PhotoFilterController.java:125-131",
+      "error": "Ma trận contrast không có pivot 127.5: `translate = brightness` thay vì `brightness + 127.5f * (1 - scale)`. || Contrast 200% (`sbPhotoContrast.setMax(200)`, `:485`) → mọi giá trị ≥128 clip trắng; 0% → toàn đen. Mid-grey không giữ nguyên ở bất kỳ mức khác 100%."
+    },
+    {
+      "name": "P7 [MEDIUM]",
+      "file": "PhotoEditorComponent.java:1245-1278, 1535, 1669, 1674-1677, 2081",
+      "error": "`rotatePhoto90Degrees` / `flipPhotoHorizontal` dựng lại `basePhotoBitmap` nhưng không làm mới `basePreEffectBitmap`, `detectedFaceList`, `cachedPhotoLandmarks`. || Mở panel Son môi → Xoay 90° → kéo slider → `:1674-1677` tính từ snapshot chưa xoay → ảnh bật về hướng cũ. Hiệu chỉnh XM: flip không lật landmark (để nguyên) nên sau flip, son / răng / mắt tô sai bên mặt."
+    },
+    {
+      "name": "P8 [LOW]",
+      "file": "PhotoEditorComponent.java:1336-1337, 1310-1321, 2467, 2492-2496, 1350, 1388",
+      "error": "Dialog crop bắt `origW / origH` một lần; \"Đặt lại\" hoán `basePhotoBitmap` bằng bản gốc lớn hơn; Apply dùng kích thước cũ → vùng crop sai (neo góc trên-trái, thiếu kích thước); nhãn \"Cắt: W×H px\" giữ số cũ. || Hiệu chỉnh XM: `IllegalArgumentException` ở `:1321` không thể xảy ra (Reset chỉ phóng to về gốc). Chỉ lỗi vùng crop sai, không crash."
+    },
+    {
+      "name": "V2 [HIGH]",
+      "file": "VideoExportController.java:312-354",
+      "error": "Khi dự án không có clip nào mang URI video thật, exporter tự lấy một video không liên quan trên máy làm nguồn: (1) video mới nhất trong MediaStore qua vòng lặp `allMediaItems` (`:317-325`); (2) bản export cũ trong `/sdcard/Movies/NextAI_OpenCut` (`:326-340`); (3) file `.mp4` đầu tiên trong `/sdcard/DCIM/Camera` (`:341-354`). Kết quả được remux thành `OPENCUT_EXPORT_*.mp4` và đưa vào nút \"CHIA SẺ\". || Hiệu chỉnh XM: đường đi chính là (1) — MediaStore sắp `DATE_ADDED DESC` nên bản ghi hình riêng tư gần nhất bị xuất/chia sẻ như \"dự án của người dùng\"; (3) hiếm khi tới được trên API 29+ (`listFiles()` trả null). Lỗi quyền riêng tư + đúng đắn."
+    },
+    {
+      "name": "V3 [HIGH]",
+      "file": "VideoExportController.java:107-136; PhotoEditorComponent.java:2519-2521; AndroidManifest.xml:21-83",
+      "error": "Dùng `Uri.fromFile()` + `FLAG_GRANT_READ_URI_PERMISSION` cho `ACTION_VIEW` / `ACTION_SEND`. Không có `<provider>` / `FileProvider` nào trong manifest, không nới `StrictMode.VmPolicy`. || `FileUriExposedException` trên mọi API ≥24 (kể cả bên trong `createChooser`), bị `catch (Exception)` nuốt: nút \"XEM NGAY\" rơi về `ACTION_VIEW` chỉ có MIME không có data (`:116-118`), \"CHIA SẺ\" và \"XEM ẢNH NGAY\" chỉ hiện toast. Không bao giờ mở được file đã xuất."
+    },
+    {
+      "name": "V4 [HIGH]",
+      "file": "VideoEditorComponent.java:2636-2647, 3862-3874, 1945, 2471, 2500",
+      "error": "`syncTimelineScrollToPlayhead()` đặt `isSyncingScroll = true`, gọi `smoothScrollTo` (bất đồng bộ) rồi lập tức đặt `false`. Các frame `onScrollChange` đến sau khi cờ đã hạ → `seekTimelineToSecond` → `updatePlayerPreview` → `videoPlayerView.stopPlayback()` không `start()` lại. || Hiệu chỉnh XM: không phải \"~1 s sau mỗi lần Play\". Tick 60 ms khiến `HorizontalScrollView` cuộn đồng bộ (dưới ngưỡng 250 ms) nên cờ có tác dụng ở trạng thái ổn định; lỗi bùng khi lần sync đầu sau >250 ms nghỉ có delta ≠ 0 — bấm Play ngay sau khi kéo thước, khi clip sau đang được chọn, hoặc khi UI bị nghẽn. Video đứng hình trong khi `isPlaying == true` và timecode tiếp tục chạy."
+    },
+    {
+      "name": "V6 [HIGH]",
+      "file": "VideoEditorComponent.java:1302-1305, 2750-2755; VideoExportController.java:405-406, 422, 456",
+      "error": "Slider tốc độ ghi `currentClip.durationSeconds = Math.max(1, (int) (16 / speed))` — bỏ qua thời lượng thật, không kiểm tra `fromUser`, listener gắn sau `setProgress` nên bất kỳ chạm nào cũng kích hoạt. Export cắt tại `durationSeconds * 1_000_000 µs`. || Clip 60 s (đọc từ MediaStore) → chạm slider ở 1.0x → `durationSeconds = 16` → file xuất dài 16 s; ở 2x → 8 s. Thời lượng gốc không được lưu ở đâu để khôi phục."
+    },
+    {
+      "name": "V8 [HIGH]",
+      "file": "VideoEditorComponent.java:2688, 2700, 2706, 2718, 3114, 3153, 3163, 3523, 3987; MainActivity.java:569-571",
+      "error": "9 vị trí `activeProjectClips.get(selectedClipIndex)` không kiểm tra biên (chỉ `isEmpty()` ở vài chỗ), trong khi `MainActivity.onResume()` → `scanDeviceMedia()` xóa và thay toàn bộ list dùng chung bằng 1 video mỗi khi `activeProjectClips.get(0).uri == null` (clip mẫu/template). `selectedClipIndex` không được reset. || Đang sửa 3 clip template, `selectedClipIndex = 2`, chuyển app rồi quay lại → list còn 1 phần tử → chạm slider âm lượng / Split / Freeze / Duplicate → `IndexOutOfBoundsException` crash. Đồng thời toàn bộ dự án bị thay bằng 1 video lạ (xem X4)."
+    },
+    {
+      "name": "V10 [HIGH]",
+      "file": "VideoEditorComponent.java:4095-4116, 2366, 2373; PipClipItem.java:14",
+      "error": "Kéo PIP gán pixel thô (`event.getRawX() - startX`) vào `posX/posY` được khai báo và tiêu thụ là tỷ lệ 0.0–1.0 (`parentW * curPip.posX`). || Chạm tại `rawX = 500` → `posX ≈ 500` → `parentW * 500` → bị clamp về góc dưới-phải; PIP dính góc vĩnh viễn, không kéo về được."
+    },
+    {
+      "name": "V1 [MEDIUM]",
+      "file": "VideoExportController.java:572-575, 92, 207-212; MainActivity.java:587-594; VideoEditorComponent.java:449-451",
+      "error": "Khi mọi nguồn đều null, `tempFile` không bao giờ được tạo nhưng progress vẫn đặt 100%, dialog \"🎉 XUẤT VIDEO THÀNH CÔNG! Dung lượng: 0.00 MB\" hiện ra và `listener.onExportSuccess(file)` được gọi với file không tồn tại; `MediaScannerConnection.scanFile` cũng quét đường dẫn ma. || Tái hiện khi máy không có video nào (máy mới / emulator / từ chối quyền): clip mẫu `samp_*` và clip template có `uri == null`; `exportProject` chỉ từ chối list rỗng."
+    },
+    {
+      "name": "V5 [MEDIUM]",
+      "file": "VideoExportController.java:356-481, 484-506, 528-575",
+      "error": "`MediaExtractor` / `MediaMuxer` / `AssetFileDescriptor` chỉ được release ở nhánh thành công (`:472-477`); `catch (Exception muxEx) { printStackTrace(); }` không có `finally` → leak handle native. || Hiệu chỉnh XM: fallback copy thô (`:484-506`) cho ra MP4 hợp lệ nhưng không cắt nếu nguồn là .mp4; sai container chỉ khi nguồn MediaStore là .webm/.mkv/.3gp. Nguy hiểm hơn: exception sau `muxer.start()` → `tempFile.length() > 0` → bỏ qua fallback → MP4 thiếu moov atom được đưa vào Gallery và báo thành công."
+    },
+    {
+      "name": "V7 [MEDIUM]",
+      "file": "VideoExportController.java:508-526, 542-549",
+      "error": "Dự án chỉ có ảnh và không có video trên máy → byte JPEG được copy vào `OPENCUT_EXPORT_*.mp4`, insert MediaStore với `video/mp4`, dialog báo \"1080P Full HD\". || Gallery hiển thị một \"video\" không phát được."
+    },
+    {
+      "name": "V9 [MEDIUM]",
+      "file": "VideoExportController.java:66-73, 207-215; MainActivity.java:144-153; VideoEditorComponent.java:502",
+      "error": "`ExportCompleteRunnable.run()` chỉ bọc `dialog.dismiss()` trong try; `showExportSuccessDialog()` (`AlertDialog.Builder(activity).show()`) nằm ngoài → `WindowManager$BadTokenException` nếu Activity đã kết thúc. `ProgressDialog` `setCancelable(false)`, không có nút hủy, không timeout. || Hiệu chỉnh XM: `VideoEditorComponent.onDestroy:502` đã purge `playbackHandler` nên runnable đã xếp hàng bị bỏ; crash chỉ xảy ra trong race export kết thúc sau `onDestroy`. Phần ProgressDialog khóa UI vô thời hạn là chính xác."
+    },
+    {
+      "name": "V12 [MEDIUM]",
+      "file": "VideoEditorComponent.java:2411-2413",
+      "error": "`onError(MediaPlayer, int, int) { return true; }` — nuốt mọi lỗi MediaPlayer, không log/toast, `isPlaying` giữ `true`. || URI hỏng → canvas đen, timecode vẫn chạy, người dùng không biết vì sao."
+    },
+    {
+      "name": "V11 [LOW]",
+      "file": "VideoEditorComponent.java:3871-3872, 2637",
+      "error": "`playbackHandler.removeCallbacks(new UserScrubResetRunnable(...))` trên instance mới → no-op (so sánh identity). || Hiệu chỉnh XM: debounce 200 ms bị hỏng — `isUserScrubbing` bị hạ 200 ms sau sự kiện đầu thay vì sự kiện cuối, cho phép `syncTimelineScrollToPlayhead` nổ giữa lúc kéo. Runnable không tích lũy đáng kể (mỗi cái tự thoát sau 200 ms)."
+    },
+    {
+      "name": "E2 [HIGH]",
+      "file": "MainActivity.java:497-500, 177, 186-187, 254-256, 323-335",
+      "error": "`initMediaRepository()` luôn seed `activeProjectClips` với 1 phần tử (kể cả item mẫu `uri == null`). Do đó `isAddingToTimeline = ... && !activeProjectClips.isEmpty()` là `true` ngay khi bấm \"Dự án mới\" → tiêu đề picker thành \"Thêm Clip Nối Tiếp ▾\" và import đi vào `addClips()`; nhánh `videoEditorComponent.open(selected)` (`:331-335`) không thể tới được từ khởi động lạnh. || Người dùng không bao giờ tạo được dự án mới rỗng; mọi dự án đều bắt đầu bằng clip mẫu \"Hoàng Hôn Mây Hồng 4K.mp4\" (`uri == null`) khi chưa cấp quyền."
+    },
+    {
+      "name": "E1 [MEDIUM]",
+      "file": "FaceBodyDetectionEngine.java:170-184, 288-293, 338, 357-411, 376",
+      "error": "Khi `FaceDetector` và skin-clustering đều không thấy mặt, engine tự thêm một landmark mặc định tại (0.5w, 0.35h) rồi `detectLipsByChrominance` đặt `isDetected = true` nếu dải giữa ảnh có pixel đỏ. Fallback skin-cluster trả `isDetected = true`, `faceLabel = \"Khuôn mặt 1 (AI Skin)\"` cho mọi ảnh tông ấm (gỗ, cát, hoàng hôn) theo ngưỡng `r > 80 && g > 45 && b > 35 && r > g && (r-b) > 15`. || Mở ảnh phong cảnh/đồ ăn → toast \"nhận diện 1 khuôn mặt\" → son môi/trắng răng/sáng mắt vẽ vào giữa ảnh. Vi phạm Luật 14/20 (bịa kết quả)."
+    },
+    {
+      "name": "E7 [MEDIUM]",
+      "file": "MainActivity.java:423, 433; MediaItem.java:60, 74; VideoEditorComponent.java:416",
+      "error": "Media chọn qua SAF/system picker được gán thời lượng bịa: `isVid ? \"00:15\" : \"00:05\"` và `isVid ? \"00:20\" : \"00:05\"`; không dùng `MediaMetadataRetriever`. `MediaItem.durationSeconds` suy ra từ chuỗi này (fallback `16` nếu không parse được). || Tổng thời lượng, timecode, độ dài PIP (`durationSeconds * 1000`), fade và điểm cắt export (V6) đều sai cho mọi file import."
+    },
+    {
+      "name": "E3 [LOW]",
+      "file": "MainActivity.java:130-141, 558-560; VideoExportController.java:79, 307-323",
+      "error": "`ArrayList` `allMediaItems` / `activeProjectClips` dùng chung không đồng bộ giữa UI thread (`scanDeviceMedia`) và worker export. || Hiệu chỉnh XM: `ConcurrentModificationException` chỉ có thể xảy ra trong cửa sổ hẹp (fallback không có clip URI, vòng lặp ngắn) và bị `catch` ngoài của `VideoExportTask.run()` bắt → dialog \"Lỗi khi xuất video\", không crash. `synchronized` trên `scanDeviceMedia` (`:503`) vô nghĩa vì reader không lock."
+    },
+    {
+      "name": "E4 [LOW]",
+      "file": "FaceBodyDetectionEngine.java:87-89, 136, 151",
+      "error": "`Bitmap.createScaledBitmap(bitmap, w, h, true)` với bitmap immutable cùng kích thước trả về chính `bitmap`; `scaled.recycle()` ngay sau đó hủy bitmap của caller. || Tiềm ẩn: caller hiện tại luôn truyền bản `copy(ARGB_8888, true)` nên chưa nổ; bất kỳ caller mới truyền kết quả `decodeFile` trực tiếp sẽ mất ảnh."
+    },
+    {
+      "name": "E5 [LOW]",
+      "file": "FaceBodyDetectionEngine.java:576-583, 670-677, 341-342, 448-451",
+      "error": "`applyLocalizedTeethWhitening` và `brightenEyeCircle` tính `new int[boxW * boxH]` không kiểm tra tâm nằm trong ảnh (lipstick có guard `:448-451`, hai hàm này không). || Hiệu chỉnh XM: `NegativeArraySizeException` thật với ảnh rộng không có mặt (fallback giải phẫu `cy = midEyes.y + 1.45 × eyesDistance` vượt đáy ảnh); kịch bản `detectFaceNear` chạm mép trái không tới được từ mã production (hàm không có caller). Bị `try/catch (Exception)` trong `PhotoEditorComponent` nuốt → hiệu ứng âm thầm không làm gì, không crash."
+    },
+    {
+      "name": "E6 [LOW]",
+      "file": "MainActivity.java:445-449, 472-484",
+      "error": "`onRequestPermissionsResult` coi bất kỳ một quyền được cấp là thành công và toast \"Đã tải thư viện media thành công\", trong khi `hasStoragePermission()` yêu cầu cả hai `READ_MEDIA_IMAGES` + `READ_MEDIA_VIDEO`. Không có rationale / deep-link Settings khi bị từ chối; từ chối → âm thầm dùng media mẫu giả. || Hiệu chỉnh XM: dialog hệ thống cấp cả nhóm cùng lúc nên grant lẻ chỉ tạo được qua adb / device policy → lỗi vệ sinh mã, không phải toast sai thực tế."
+    },
+    {
+      "name": "E8 [LOW]",
+      "file": "EffectRegistry.java:54, 97, 89-93, 227-235",
+      "error": "Id trùng `\"glitch_rgb_split\"` ở hai category; 4 `assetPath` trỏ tới file không tồn tại trong `src/main/assets` (`FaceReshape_V2/distortion.json`, `curves/content.json`, `hsl_v1/content.json`, `particle/content.json`) → `readAssetString` trả `\"\"` âm thầm; hàm này dùng `is.available()` làm độ dài, một `read()` duy nhất không vòng lặp, không `finally`. || Effect trỏ tài nguyên ma; nội dung asset lớn bị cắt cụt; stream rò khi lỗi."
+    },
+    {
+      "name": "D1 [HIGH]",
+      "file": "navigation/BottomNavComponent.java:47-48; home/HomeHubComponent.java:279-280; MainActivity.java:225-247; profile/ProfileComponent.java:68; home/OnHomeActionListener.java:42",
+      "error": "Thanh nav định nghĩa tab 4 = \"Hộp thư\", tab 5 = \"Tôi\". `MainActivity.switchTab` có `case 4 → profileComponent` và không có `case 5` (`default → showHome()`). `ProfileComponent` tự highlight index 5. Javadoc `OnHomeActionListener:42` mô tả mapping thứ ba khác nữa. || Chạm \"Tôi\" → về Home. Chạm \"Hộp thư\" → mở Profile với tab \"Tôi\" sáng. `onVipBadge()` (`:274-276`, `switchTab(4)`) mở Profile thay vì paywall. Ba nguồn sự thật mâu thuẫn."
+    },
+    {
+      "name": "D2 [MEDIUM]",
+      "file": "MainActivity.java:106, 130-141, 503-580, 514, 541, 521-522, 532, 554, 577",
+      "error": "`scanDeviceMedia()` chạy 2 query MediaStore trên UI thread trong `onCreate` và mỗi lần `onResume` (tới 200 dòng). Cursor đóng bằng `close()` thường (không try-with-resources); `getColumnIndexOrThrow` ném → nhảy tới `catch (Exception)` `:577` → Cursor không được đóng (leak `CursorWindow`). Mỗi lần resume lại nối thêm item mẫu giả `uri == null` vào thư viện thật (`:560`). || Jank/ANR trên thư viện lớn; leak tài nguyên khi provider lỗi; thư viện thật bị trộn dữ liệu giả."
+    },
+    {
+      "name": "D3 [MEDIUM]",
+      "file": "picker/MediaPickerComponent.java:426, 246, 304, 485, 468",
+      "error": "Mỗi lần chạm ô → `renderMediaPickerGrid()` → `removeAllViews()` → enqueue `ThumbnailLoadTask` cho mọi item chưa cache lên pool 4 thread, không dedup in-flight; task xong gọi `setImageBitmap` lên ImageView đã bị gỡ. `item.thumbnailBitmap` ghi từ pool thread, đọc trên main không `volatile`. || 200 item, chạm 5 ô trong 1 giây → ~1.000 job `loadThumbnail` trùng URI; giật UI, tốn I/O, churn bộ nhớ."
+    },
+    {
+      "name": "D6 [MEDIUM]",
+      "file": "profile/ProfileComponent.java:63-64",
+      "error": "Hiển thị \"👑 Gói Thuê Bao: VIP PRO TRỌN ĐỜI — Active\" cho mọi người dùng, không kiểm tra billing; dòng dưới hiện thuật ngữ dev (\"C++20\", \"HEVC MediaCodec\") như nội dung người dùng. || Người dùng chưa trả tiền được thông báo là VIP trọn đời."
+    },
+    {
+      "name": "D8 [MEDIUM]",
+      "file": "HomeHubComponent.java:77, 223; MediaPickerComponent.java:285, 347; TemplateComponent.java:150; và toàn bộ PhotoEditorComponent, VideoEditorComponent",
+      "error": "Mọi kích thước layout là pixel thô (`LayoutParams(110, 80)`, `setPadding(24, 24, 24, 16)`, `LayoutParams(0, 230, 1f)`), không quy đổi dp. || Máy tablet 160 dpi: ô nhỏ hơn ~2,6× so với điện thoại 420 dpi; UI không dùng được trên nhiều mật độ màn hình."
+    },
+    {
+      "name": "D4 [LOW]",
+      "file": "MediaPickerComponent.java:457-463",
+      "error": "Nhánh pre-Q: nếu `BitmapFactory.decodeStream` ném, `InputStream` không được đóng; `catch (Throwable ignored)` nuốt cả `OutOfMemoryError`. || Leak FD trên API 24–28; ô ảnh trống âm thầm khi OOM."
+    },
+    {
+      "name": "D5 [LOW]",
+      "file": "MediaPickerComponent.java:65, 73; MainActivity.java:96-100",
+      "error": "`Executors.newFixedThreadPool(4)` không bao giờ shutdown (không có hook lifecycle; `MainActivity.onDestroy` không chạm component). `LruCache(80)` không override `sizeOf` (đếm entry, không phải byte) và trùng với `MainActivity.thumbnailCache` (`cacheSize` được tính rồi bỏ, dùng `64`). || 4 thread non-daemon sống sót mỗi instance; mỗi URI decode và cache 2 lần."
+    },
+    {
+      "name": "D7 [LOW]",
+      "file": "res/values/strings.xml, colors.xml, styles.xml, layout/activity_main.xml, res/drawable/ (9 file), res/raw/ (8 file)",
+      "error": "Hiệu chỉnh XM (nặng hơn claim): tham chiếu duy nhất tới `app_name` và `bg_primary` nằm trong `activity_main.xml` (không bao giờ inflate) và `Theme_NextAIOpenCut` (manifest không dùng) → 39/39 string, 29/29 color, style, layout đều chết ở runtime. 9 drawable (`bg_capcut_back_box`, `bg_capcut_color_*`, `bg_capcut_effect_card`, `bg_capcut_slider_card`, `bg_chip_selected`, `bg_track_selected_border`, `bg_track_video`) và 8 file `res/raw` không được tham chiếu; `EffectRegistry:85-94` trỏ tới raw bằng đường dẫn asset sai. || Mọi chuỗi UI hardcode trong Java → không i18n, không plurals; tài nguyên chết làm phình APK."
+    },
+    {
+      "name": "D9 [LOW]",
+      "file": "templates/TemplateComponent.java:71-81, 121-135, 161, 209, 223-229",
+      "error": "Ô \"tìm kiếm\" là `TextView` không listener; 5 pill category không listener; badge thời lượng `\"00:15\"` cho mọi card trong khi `applyTemplateByIndex` báo 00:25/00:12/00:20; `if (code >= 500 && code < 510)` nhận 10 index nhưng chỉ có 4 template (`default` áp template 3). || Tính năng tìm/lọc mẫu là giả; dữ liệu hiển thị mâu thuẫn."
+    },
+    {
+      "name": "D10 [LOW]",
+      "file": "HomeHubComponent.java:267-309 ↔ BottomNavComponent.java:34-77; createDraftCard trong CloudComponent:71-110, AiLabComponent:72-110, ProfileComponent:71-109",
+      "error": "`HomeHubComponent` chứa bản sao gần nguyên văn của `BottomNavComponent` (khác tag offset 1000 và listener); `createDraftCard` byte-identical ở 3 component. || Hiệu chỉnh XM: \"verbatim\" → \"near-verbatim\". Hai nguồn sự thật cho nhãn/thứ tự tab (góp phần gây D1)."
+    },
+    {
+      "name": "X1 [HIGH]",
+      "file": "app/build_apk.ps1:72; app/debug.keystore; app/build.gradle.kts (không có signingConfigs)",
+      "error": "APK \"production\" `nextai_opencut_signed.apk` được ký bằng debug key công khai của Android (alias `androiddebugkey`, mật khẩu `android`). Gradle không có `signingConfigs` nào → đây là đường ký duy nhất. || Bất kỳ ai có debug key (mọi máy cài Android SDK) đều build được APK cùng `applicationId` và cài chồng như bản cập nhật lên máy người dùng. Không thể upload lên Google Play. Rủi ro bảo mật phát hành (release-integrity)."
+    },
+    {
+      "name": "X4 [HIGH]",
+      "file": "MainActivity.java:136, 569-571; VideoEditorComponent.java:3114, 3153, 3163",
+      "error": "`onResume()` → `scanDeviceMedia()` chạy điều kiện `if (firstRealVideo != null && (activeProjectClips.isEmpty() \\|\\| activeProjectClips.get(0).uri == null)) { activeProjectClips.clear(); activeProjectClips.add(firstRealVideo); }` mỗi lần quay lại app. || Dự án có clip đầu là template/mẫu bị thay toàn bộ bằng 1 video lạ khi người dùng quay về từ system picker hoặc màn hình Home; `selectedClipIndex` không reset → Split/Freeze/Duplicate ném `IndexOutOfBoundsException` (bổ trợ V8). Mất dữ liệu người dùng âm thầm."
+    },
+    {
+      "name": "X6 [HIGH]",
+      "file": "VideoEditorComponent.java:3113-3120, 2670; model/MediaItem.java (không có trường trim/offset)",
+      "error": "Split tạo 2 clip cùng `uri`, chỉ chia `durationSeconds`; `MediaItem` không có in/out point; `seekTimelineToSecond` gọi `seekTo(offsetSec * 1000)` tương đối từ đầu clip. || Cả hai nửa sau khi cắt đều phát từ 0:00 của cùng file; export (V-nhóm) cũng không biết điểm cắt. Tính năng \"Cắt tách\" về bản chất không cắt."
+    },
+    {
+      "name": "X2 [MEDIUM]",
+      "file": "AndroidManifest.xml:10-11, 17-19",
+      "error": "Khai báo `INTERNET`, `ACCESS_NETWORK_STATE`, `RECORD_AUDIO`, `CAMERA`, `com.android.vending.BILLING` với 0 điểm gọi (grep `Retrofit\\|OkHttp\\|HttpURLConnection\\|BillingClient\\|Camera\\|AudioRecord\\|MediaRecorder` trong `src/main` = rỗng). || Over-declaration `CAMERA`/`RECORD_AUDIO` là lý do từ chối phổ biến của Google Play policy; người dùng bị hỏi quyền cho tính năng không tồn tại."
+    },
+    {
+      "name": "X3 [MEDIUM]",
+      "file": "MainActivity.java:420 → :406",
+      "error": "`Uri uri = data.getClipData().getItemAt(i).getUri();` rồi `isVideoUri(uri)` gọi `uri.toString().toLowerCase()` không kiểm tra null (chỉ `getType(null)` phía trên được bắt). || Picker trả về `ClipData` item chỉ có text (không URI) → `NullPointerException` crash."
+    },
+    {
+      "name": "X5 [MEDIUM]",
+      "file": "toàn src/main (grep onBackPressed\\|OnBackPressedCallback\\|KEYCODE_BACK = rỗng)",
+      "error": "`MainActivity extends Activity` hoán đổi view trong một `rootFrame` duy nhất nhưng không xử lý Back; không có persistence dự án nào. || Bấm Back ở picker / photo editor / timeline → `finish()` Activity → mất toàn bộ dự án."
+    },
+    {
+      "name": "X7 [MEDIUM]",
+      "file": "VideoEditorComponent.java:2416-2424, 2476-2488",
+      "error": "`onCompletion` tăng `selectedClipIndex++` nhưng không reset `virtualPlayheadMs`; nhánh slideshow ảnh so `virtualPlayheadMs` với `totalMs` của cả dự án. || Ảnh đứng sau video 15 s được hiển thị trong `(projectTotal − 15000)` ms thay vì `durationSeconds` của chính nó."
+    },
+    {
+      "name": "X8 [MEDIUM]",
+      "file": "VideoEditorComponent.java:1952-1953, 2416-2424",
+      "error": "Nhánh ảnh chỉ `videoPlayerView.setVisibility(GONE)`, không `stopPlayback()` / clear URI; `onCompletion` chuyển clip rồi gọi `videoPlayerView.start()`. || Chuỗi [video, ảnh]: video xong → ảnh hiện → `start()` phát lại âm thanh video trước ẩn dưới ảnh; `run()` dùng vị trí của nó cho timecode."
+    },
+    {
+      "name": "X9 [MEDIUM]",
+      "file": "VideoEditorComponent.java:2128, 2184, 2643, 3869, 1064",
+      "error": "Bề rộng ô clip `Math.max(100, dur × 40) × timelineScaleFactor` nhưng thước và phép đổi scroll↔giây cố định `40 px/s`; playhead cố định `leftMargin = 270 px`. || Clip < 3 s chiếm 100 px nhưng được tính 40 px/s → playhead rơi vào sai clip; sau pinch-zoom (chỉ scale clip) thước / clip / playhead lệch nhau. Toàn bộ là pixel thô."
+    },
+    {
+      "name": "X10 [LOW]",
+      "file": "VideoExportController.java:271, 528-560; PhotoEditorComponent.java:1470-1504",
+      "error": "Mỗi lần export ghi 3 bản: `tempFile` trong `getExternalFilesDir` (không bao giờ xóa), copy ra `Movies/NextAI_OpenCut/<name>`, rồi `MediaStore.insert` cùng `DISPLAY_NAME` + `RELATIVE_PATH` → hệ thống tự đổi tên `(1)`. Photo editor lặp lại mẫu này. || Gallery hiện 2 mục trùng mỗi lần export; bộ nhớ app phình vô hạn."
+    },
+    {
+      "name": "X11 [LOW]",
+      "file": "MediaPickerComponent.java:73, 457-460, 468; MainActivity.java:98-100",
+      "error": "Thumbnail vừa vào `LruCache` (đếm entry) vừa được ghim vào `item.thumbnailBitmap` cho tới 200 item → eviction của LRU không giải phóng bộ nhớ. Pre-Q decode `inSampleSize = 4` ≈ 3 MB / ảnh 12 MP. || Áp lực bộ nhớ ~600 MB tiềm năng trên thư viện lớn; `cacheSize = maxMemory / 8` được tính rồi bỏ."
+    }
+  ]
+}

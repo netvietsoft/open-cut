@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/rz" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_gravity="center_horizontal" n0:id="@id/banner_ad_view_container" n0:background="@android:color/white" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0">
+        <FrameLayout n0:id="@id/ad_view_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true">
+            <FrameLayout n0:id="@id/native_ad_view_container" n0:background="@android:color/white" n0:layout_width="@dimen/mn" n0:layout_height="@dimen/mm" n0:layout_centerInParent="true" />
+            <FrameLayout n0:id="@id/mrec_ad_view_container" n0:background="@android:color/white" n0:layout_width="@dimen/mn" n0:layout_height="@dimen/mm" n0:layout_centerInParent="true" />
+        </FrameLayout>
+        <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_below="@id/ad_view_container" n0:layout_alignParentBottom="true">
+            <Button n0:id="@id/show_mrec_button" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="MREC" />
+            <Button n0:id="@id/show_native_button" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Native" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/ad_controls_view" n0:background="@android:color/white" n0:paddingLeft="8.0dp" n0:paddingTop="4.0dp" n0:paddingRight="8.0dp" n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="8.0dp" n0:paddingVertical="4.0dp">
+        <RelativeLayout n0:orientation="horizontal" n0:id="@id/banner_control_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginVertical="4.0dp">
+            <com.applovin.impl.mediation.debugger.ui.testmode.AdControlButton n0:id="@id/banner_control_button" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070076" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070075" />
+            <TextView n0:id="@id/banner_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:text="Banner" n0:layout_toRightOf="@id/banner_control_button" n0:layout_centerInParent="true" n0:layout_marginStart="8.0dp" n0:layout_toEndOf="@id/banner_control_button" />
+            <Switch n0:id="@id/native_banner_switch" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:thumb="@drawable/applovin_mediation_debugger_switch_thumb" n0:text="Test Native" n0:layout_alignParentRight="true" n0:layout_centerInParent="true" n0:track="@drawable/applovin_mediation_debugger_switch_track" n0:switchPadding="8.0dp" n0:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout n0:orientation="horizontal" n0:id="@id/mrec_control_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginVertical="4.0dp">
+            <com.applovin.impl.mediation.debugger.ui.testmode.AdControlButton n0:id="@id/mrec_control_button" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070076" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070075" />
+            <TextView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:text="MREC" n0:layout_toRightOf="@id/mrec_control_button" n0:layout_centerInParent="true" n0:layout_marginStart="8.0dp" n0:layout_toEndOf="@id/mrec_control_button" />
+            <Switch n0:id="@id/native_mrec_switch" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:thumb="@drawable/applovin_mediation_debugger_switch_thumb" n0:text="Test Native" n0:layout_alignParentRight="true" n0:layout_centerInParent="true" n0:track="@drawable/applovin_mediation_debugger_switch_track" n0:switchPadding="8.0dp" n0:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout n0:orientation="horizontal" n0:id="@id/interstitial_control_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginVertical="4.0dp">
+            <com.applovin.impl.mediation.debugger.ui.testmode.AdControlButton n0:id="@id/interstitial_control_button" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070076" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070075" />
+            <TextView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:text="Interstitial" n0:layout_toRightOf="@id/interstitial_control_button" n0:layout_centerInParent="true" n0:layout_marginStart="8.0dp" n0:layout_toEndOf="@id/interstitial_control_button" />
+        </RelativeLayout>
+        <RelativeLayout n0:orientation="horizontal" n0:id="@id/app_open_ad_control_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginVertical="4.0dp">
+            <com.applovin.impl.mediation.debugger.ui.testmode.AdControlButton n0:id="@id/app_open_ad_control_button" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070076" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070075" />
+            <TextView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:text="App Open" n0:layout_toRightOf="@id/app_open_ad_control_button" n0:layout_centerInParent="true" n0:layout_marginStart="8.0dp" n0:layout_toEndOf="@id/app_open_ad_control_button" />
+        </RelativeLayout>
+        <RelativeLayout n0:orientation="horizontal" n0:id="@id/rewarded_control_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginVertical="4.0dp">
+            <com.applovin.impl.mediation.debugger.ui.testmode.AdControlButton n0:id="@id/rewarded_control_button" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070076" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070075" />
+            <TextView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:text="Rewarded" n0:layout_toRightOf="@id/rewarded_control_button" n0:layout_centerInParent="true" n0:layout_marginStart="8.0dp" n0:layout_toEndOf="@id/rewarded_control_button" />
+        </RelativeLayout>
+        <RelativeLayout n0:orientation="horizontal" n0:id="@id/native_control_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginVertical="4.0dp">
+            <com.applovin.impl.mediation.debugger.ui.testmode.AdControlButton n0:id="@id/native_control_button" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070076" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070075" />
+            <TextView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:text="Native" n0:layout_toRightOf="@id/native_control_button" n0:layout_centerInParent="true" n0:layout_marginStart="8.0dp" n0:layout_toEndOf="@id/native_control_button" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

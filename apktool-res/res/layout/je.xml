@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root_layout" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="66.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/image_edit_icon_view" n0:padding="2.0dp" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n1:APKTOOL_RENAMED_0x7f040448="0.2" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/image_edit_red_dot" n0:background="@drawable/oac" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:translationX="2.0dp" n0:translationY="-2.0dp" n2:layout_constraintEnd_toEndOf="@id/image_edit_icon_view" n2:layout_constraintTop_toTopOf="@id/image_edit_icon_view"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/image_edit_indicator_view" n0:background="@drawable/m7g" n0:visibility="gone" n0:layout_width="18.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="9.0dp" n3:layout_constraintEnd_toEndOf="@id/image_edit_icon_view" n3:layout_constraintStart_toStartOf="@id/image_edit_icon_view" n3:layout_constraintTop_toBottomOf="@id/image_edit_icon_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/image_edit_icon_view" n4:k2c="true"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@color/mp" n0:gravity="center|top" n0:id="@id/image_edit_title_tv" n0:layout_width="match_parent" n0:layout_height="14.0dp" n0:text="Filters" n0:breakStrategy="balanced" n4:APKTOOL_RENAMED_0x7f040448="0.2" n4:k1i="medium" />
+    </com.vega.ui.TextWordAdaptLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

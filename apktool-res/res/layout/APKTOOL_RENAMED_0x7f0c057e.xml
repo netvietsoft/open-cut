@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/listTopContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/refresh_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/listTopContainer">
+        <com.vega.ui.refresh.RefreshHeaderView n0:id="@id/refresh_header" n0:layout_width="match_parent" n0:layout_height="60.0dp" />
+        <com.vega.ui.widget.FadingEdgeRecyclerView n0:id="@id/list_layout" n0:fadingEdgeLength="4.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:requiresFadingEdge="vertical" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:background="@color/APKTOOL_RENAMED_0x7f06027d" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/listTopContainer" n1:kr3="none"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

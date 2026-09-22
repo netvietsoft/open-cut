@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/llayout_root" n0:background="#242424" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/reportTypeRv" n0:paddingTop="64.0dp" n0:paddingBottom="64.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:layout_gravity="top" n0:id="@id/reportTitle" n0:layout_width="match_parent" n0:layout_height="64.0dp" n0:text="@string/qep" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/_4" n0:gravity="center" n0:layout_gravity="bottom" n0:id="@id/reportCancel" n0:layout_width="match_parent" n0:layout_height="54.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" />
+    <View n0:layout_gravity="bottom" n0:background="@color/APKTOOL_RENAMED_0x7f060639" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginBottom="64.0dp" n1:layout_constraintBottom_toBottomOf="@id/reportTypeRv"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

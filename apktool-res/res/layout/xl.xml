@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="@android:color/white" n0:paddingLeft="?android:listPreferredItemPaddingLeft" n0:paddingRight="?android:listPreferredItemPaddingRight" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="?android:listPreferredItemHeight" n0:paddingStart="?android:listPreferredItemPaddingStart" n0:paddingEnd="?android:listPreferredItemPaddingEnd"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/imageView" n0:paddingRight="?android:listPreferredItemPaddingRight" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:layout_alignParentLeft="true" n0:layout_centerVertical="true" n0:contentDescription="@string/APKTOOL_RENAMED_0x7f120449" n0:paddingEnd="?android:listPreferredItemPaddingEnd" n0:layout_alignParentStart="true" />
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:layout_toLeftOf="@id/detailImageView" n0:layout_toRightOf="@id/imageView" n0:layout_centerVertical="true" n0:layout_toStartOf="@id/detailImageView" n0:layout_toEndOf="@id/imageView" n0:layout_marginVertical="8.0dp">
+        <TextView n0:textAppearance="?android:textAppearanceListItem" n0:textSize="@dimen/l_" n0:textColor="@android:color/primary_text_light" n0:id="@android:id/text1" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <TextView n0:textAppearance="?android:textAppearanceListItem" n0:textSize="@dimen/l_" n0:textColor="@android:color/secondary_text_light" n0:id="@android:id/text2" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_below="@android:id/text1" n0:layout_alignLeft="@android:id/text1" n0:layout_alignStart="@android:id/text1" />
+    </RelativeLayout>
+    <ImageView n0:id="@id/detailImageView" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_alignParentRight="true" n0:layout_centerVertical="true" n0:contentDescription="@string/APKTOOL_RENAMED_0x7f120449" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+id: TASK-015
+title: Tái dựng và Hoàn thiện Trình Chỉnh sửa Ảnh 3D LUTs và các chức năng con/cháu (Photo Editor Core Parity)
+assigned_agent: Agent 3 (Frontend/Android)
+status: ready
+created_at: 2026-09-18T09:55:00Z
+scope:
+  files_allowed:
+    - apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java
+acceptance_criteria:
+  - Tỷ lệ khung hình (Aspect Ratio): Người dùng có thể chuyển đổi kích thước khung Canvas giữa 3:4, 1:1, 4:5, 9:16, 16:9 với hiệu ứng co giãn khung hình thực tế.
+  - Bộ lọc 3D LUTs: Áp dụng ColorMatrix thực tế lên Bitmap ảnh (Portra 400, Cyberpunk, Teal Orange, Noir B&W, Vintage 90s), biến đổi màu ảnh tức thì.
+  - Tùy chỉnh màu (Adjust): Mở thanh trượt SeekBar điều chỉnh Độ sáng (Brightness), Độ tương phản (Contrast), Độ bão hòa (Saturation) và biến đổi Bitmap theo giá trị SeekBar.
+  - Làm đẹp & Xóa phông: Vẽ các điểm mesh và viền dạ quang neon lên Bitmap thực tế.
+  - Lưu ảnh: Xuất tệp Bitmap đã chỉnh sửa vào thư viện ảnh máy với thông báo đường dẫn rõ ràng.
+verification:
+  test_type: automated_acceptance_and_instrumented
+  runner: scripts/test_acceptance_runner.ps1

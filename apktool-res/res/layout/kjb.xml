@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundLinearLayout n0:orientation="vertical" n0:id="@id/contentRoot" n0:background="@color/vo" n0:paddingBottom="8.0dp" n0:layout_width="192.0dp" n0:layout_height="wrap_content" n1:i1="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#f6f7fe" n0:ellipsize="end" n0:gravity="center_vertical" n0:id="@id/tvSelectTip" n0:layout_width="match_parent" n0:layout_height="32.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/n46" n0:maxLines="1" n0:layout_marginHorizontal="16.0dp" n1:k1i="medium" />
+    <View n0:id="@id/divider" n0:background="@color/APKTOOL_RENAMED_0x7f06045a" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+</com.vega.ui.widget.RoundLinearLayout>

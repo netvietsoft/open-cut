@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/main_activity_header_layout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="@dimen/sg"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/home_my_icon" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/n_1" n0:scaleType="center" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/home_my_dot" n0:background="@drawable/l_y" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="3.0dp" n0:layout_marginEnd="3.0dp" n2:layout_constraintEnd_toEndOf="@id/home_my_icon" n2:layout_constraintTop_toTopOf="@id/home_my_icon"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.RadiusLayout n0:gravity="center_vertical" n0:layout_gravity="start|center" n0:orientation="horizontal" n0:id="@id/radical_pro_layout" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="6.0dp" n3:i1="8.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toEndOf="@id/home_my_icon" n3:layout_constraintTop_toTopOf="parent" n3:layout_goneMarginStart="16.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="start|center" n0:layout_gravity="start|center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.vega.ui.state.pressed.PressedStateImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/oqm" />
+            <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:gravity="start|center" n0:layout_gravity="start|center" n0:id="@id/radical_pro_text" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="150.0dp" n0:text="@string/mpm" n0:singleLine="true" n0:includeFontPadding="false" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+    </com.vega.ui.widget.RadiusLayout>
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/home_pro_icon" n0:visibility="gone" n0:layout_width="52.0dp" n0:layout_height="28.0dp" n0:src="@drawable/oqm" n0:scaleType="center" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/main_activity_new_edit_search" n4:layout_constraintTop_toTopOf="parent" n4:kr3="icon"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="end|center" n0:id="@id/home_pro_icon_free_trial" n0:background="@drawable/n4c" n0:visibility="gone" n0:layout_width="133.0dp" n0:layout_height="20.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toStartOf="@id/main_activity_new_edit_search" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.MarqueeTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/marquee_tv_pro" n0:focusable="true" n0:layout_width="86.0dp" n0:layout_height="wrap_content" n0:maxWidth="86.0dp" n0:text="@string/mlk" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginEnd="4.0dp" />
+    </LinearLayout>
+    <ImageView n0:id="@id/logoIv" n0:visibility="gone" n0:layout_width="106.0dp" n0:layout_height="20.0dp" n0:src="@drawable/o1o" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toEndOf="@id/home_my_icon" n6:layout_constraintTop_toTopOf="parent" n6:layout_goneMarginStart="8.0dp"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/btnNewProV2Layout" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginEnd="24.0dp" n7:i1="8.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toStartOf="@id/main_activity_new_edit_search" n7:layout_constraintHorizontal_bias="0.0" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.RadiusLayout n0:gravity="center_vertical" n0:layout_gravity="start|center" n0:orientation="horizontal" n0:id="@id/btnNewProV2Layout_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n7:i1="8.0dp">
+            <LinearLayout n0:gravity="start|center" n0:layout_gravity="start|center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/btn_new_pro_v2_icon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/oqm" n0:layout_marginEnd="10.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:gravity="start|center" n0:layout_gravity="start|center" n0:id="@id/btn_new_pro_v2_txt" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n0:lines="1" n0:layout_weight="1.0" n0:layout_marginEnd="10.0dp" n7:k1g="text" n7:k1h="13.0dp" n7:k1i="medium" />
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/right_icon" n0:visibility="gone" n0:layout_width="18.0dp" n0:layout_height="match_parent" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp" />
+            </LinearLayout>
+        </com.vega.ui.widget.RadiusLayout>
+    </FrameLayout>
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/main_activity_header_setting" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/mwn" n0:scaleType="center" n0:layout_marginEnd="8.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toStartOf="@id/new_pro_ic_view" n8:layout_constraintTop_toTopOf="parent" n8:kr3="icon"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/new_pro_ic_view" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="20.0dp" n0:src="@drawable/oqm" n0:scaleType="centerCrop" n0:layout_marginEnd="16.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintTop_toTopOf="parent" n9:kr3="icon"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/settings_red_dot" n0:visibility="gone" n0:layout_width="5.0dp" n0:layout_height="5.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginEnd="6.0dp" n10:layout_constraintEnd_toEndOf="@id/main_activity_header_setting" n10:layout_constraintTop_toTopOf="@id/main_activity_header_setting"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/main_activity_header_message" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/omr" n0:scaleType="center" n11:layout_constraintBottom_toBottomOf="parent" n11:layout_constraintEnd_toStartOf="@id/main_activity_header_setting" n11:layout_constraintTop_toTopOf="parent"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/main_activity_new_user_tutorial" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/mvy" n0:scaleType="center" n12:layout_constraintBottom_toBottomOf="parent" n12:layout_constraintEnd_toStartOf="@id/main_activity_header_message" n12:layout_constraintTop_toTopOf="parent" n12:kr3="icon"
+      xmlns:n12="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/main_activity_new_edit_search" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/mvt" n0:scaleType="center" n13:layout_constraintBottom_toBottomOf="parent" n13:layout_constraintEnd_toStartOf="@id/main_activity_new_user_tutorial" n13:layout_constraintTop_toTopOf="parent" n13:kr3="icon"
+      xmlns:n13="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/main_activity_user_research" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/plb" n0:layout_marginEnd="10.0dp" n14:layout_constraintBottom_toBottomOf="parent" n14:layout_constraintEnd_toStartOf="@id/main_activity_new_edit_search" n14:layout_constraintTop_toTopOf="parent"
+      xmlns:n14="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060596" n0:gravity="center" n0:id="@id/importDraft" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rl2" n0:layout_marginStart="16.0dp" n15:layout_constraintBottom_toBottomOf="parent" n15:layout_constraintStart_toEndOf="@id/logoIv" n15:layout_constraintTop_toTopOf="parent"
+      xmlns:n15="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_subscribe_container" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n16:layout_constraintBottom_toBottomOf="parent" n16:layout_constraintStart_toStartOf="parent" n16:layout_constraintTop_toTopOf="parent" n16:layout_goneMarginStart="20.0dp"
+      xmlns:n16="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_subscribe_with_text_container" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="18.0dp" n17:layout_constraintBottom_toBottomOf="parent" n17:layout_constraintEnd_toStartOf="@id/main_activity_new_edit_search" n17:layout_constraintStart_toStartOf="parent" n17:layout_constraintTop_toTopOf="parent" n17:layout_goneMarginStart="20.0dp"
+      xmlns:n17="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

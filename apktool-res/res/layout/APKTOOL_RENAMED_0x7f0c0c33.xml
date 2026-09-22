@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/view_bg_selected" n0:background="@drawable/mq7" n0:layout_width="83.0dp" n0:layout_height="83.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/image" n0:layout_width="75.0dp" n0:layout_height="75.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:roundedCornerRadius="8.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_foreground" n0:background="@drawable/k-m" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="@id/image" n3:layout_constraintEnd_toEndOf="@id/image" n3:layout_constraintStart_toStartOf="@id/image" n3:layout_constraintTop_toTopOf="@id/image"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ProgressBar n0:layout_gravity="center" n0:id="@id/loadingView" n0:layout_width="35.0dp" n0:layout_height="35.0dp" n0:indeterminateDrawable="@drawable/mk4" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/iv_warning" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/por" n3:kd8="@color/l_" />
+    </FrameLayout>
+    <ImageView n0:id="@id/reportButton" n0:padding="2.0dp" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginBottom="4.0dp" n0:src="@drawable/oct" n0:alpha="0.8" n0:layout_marginEnd="4.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:background="#f3f4f6" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:baselineAligned="false"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+        <View n0:background="#1f2f45" n0:layout_width="1.0dp" n0:layout_height="16.0dp" n0:alpha="0.2" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#1f2f45" n0:id="@id/tv_role_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pu9" n0:fontFamily="sans-serif" n0:layout_marginStart="6.0dp" n0:letterSpacing="0.0019" />
+    </LinearLayout>
+    <LinearLayout n0:layout_gravity="end|center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <ImageView n0:id="@id/iv_dropdown_arrow" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/o0_" n0:alpha="0.7" n0:layout_marginStart="8.0dp" n1:kd8="#16161d"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

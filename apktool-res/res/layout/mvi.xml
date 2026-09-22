@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_clone_info_tip_0" n0:background="@color/kor" n0:layout_width="wrap_content" n0:layout_height="@dimen/gu"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="14.0dp" n0:id="@id/tip" n0:tag="binding_1" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:text="@string/svp" n0:layout_marginStart="20.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:tag="binding_2" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginEnd="5.0dp" n2:layout_constraintBottom_toBottomOf="@id/tip" n2:layout_constraintEnd_toStartOf="@id/tip" n2:layout_constraintTop_toTopOf="@id/tip"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:layout_width="15.0dp" n0:layout_height="6.0dp" n0:layout_marginBottom="18.0dp" n0:src="@drawable/r6-" n0:layout_marginStart="8.0dp" n3:layout_constraintBottom_toBottomOf="@id/tip" n3:layout_constraintStart_toEndOf="@id/tip" n3:layout_constraintTop_toTopOf="@id/tip"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

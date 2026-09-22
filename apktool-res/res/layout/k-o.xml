@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.image.edit.gesture.ImageEditStickerEditorView n0:id="@id/infoStickerEditorView" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_centerInParent="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:layout_gravity="center|bottom" n0:tag="tvVideoTrackingTip" n0:visibility="gone" n0:clickable="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="35.0dp" n0:text="@string/q0v" />
+    <include layout="@layout/l6a" />
+</com.vega.image.edit.gesture.ImageEditStickerEditorView>

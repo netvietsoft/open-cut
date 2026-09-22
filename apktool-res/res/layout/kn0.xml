@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/kkm" n0:paddingTop="14.0dp" n0:paddingBottom="14.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <TextView n0:textSize="15.0sp" n0:textStyle="bold" n0:textColor="#111827" n0:ellipsize="end" n0:id="@id/feedback_history_item_description" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="2" n0:layout_weight="1.0" />
+        <TextView n0:textSize="12.0sp" n0:id="@id/feedback_history_item_status" n0:paddingTop="5.0dp" n0:paddingBottom="5.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="12.0dp" />
+    </LinearLayout>
+    <TextView n0:textSize="12.0sp" n0:textColor="#667085" n0:ellipsize="middle" n0:id="@id/feedback_history_item_conversation" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxLines="1" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp">
+        <TextView n0:textSize="12.0sp" n0:textColor="#98a2b3" n0:id="@id/feedback_history_item_attachments" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" />
+        <TextView n0:textSize="12.0sp" n0:textColor="#98a2b3" n0:id="@id/feedback_history_item_time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

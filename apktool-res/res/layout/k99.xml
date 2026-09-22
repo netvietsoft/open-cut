@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:background="@drawable/p-o" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:paddingStart="4.0dp" n0:paddingEnd="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="10.0dp" n0:textColor="#ccffffff" n0:id="@id/recommend_opt_timer_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="3s" />
+    <View n0:id="@id/line" n0:background="#33ffffff" n0:layout_width="1.0dp" n0:layout_height="5.0dp" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp" />
+    <ImageView n0:id="@id/recommend_opt_close" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/p9-" />
+</LinearLayout>

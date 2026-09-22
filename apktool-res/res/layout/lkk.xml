@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.viewpager.widget.ViewPager n0:id="@id/viewPager" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.tabs.TabLayout n0:id="@id/tabLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:tabIndicatorFullWidth="false" n1:tabMode="scrollable" n1:tabRippleColor="@null" n1:tabTextAppearance="@style/yy" n1:tabTextColor="@android:color/black"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</androidx.viewpager.widget.ViewPager>

@@ -1,0 +1,22 @@
+task_id: "TASK-039-PROJECT-STATE-SAFETY"
+phase: "P0 - Project State Safety & Main Flow Integrity"
+title: "Bảo Vệ Trạng Thái Dự Án, Khắc Phục Xóa Sạch Clip onResume, Tránh ANR MediaStore, Null-check ClipData và Xác Nhận Thoát Dự Án"
+assigned_to:
+  - "Agent 3 (Frontend / Android)"
+  - "Agent 7 (Fixer)"
+status: "DONE"
+started_at: "2026-09-22T11:05:00+07:00"
+completed_at: "2026-09-22T11:15:00+07:00"
+priority: "CRITICAL"
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java"
+acceptance_criteria:
+  - "Khắc phục lỗi X4: Loại bỏ logic trong onResume() tự động reset/ghi đè activeProjectClips làm mất dữ liệu của người dùng - HOÀN THÀNH"
+  - "Khắc phục lỗi E2: Nút Dự án mới tạo project trống thực sự, không tự tiện nạp clip mẫu vào timeline người dùng - HOÀN THÀNH"
+  - "Khắc phục lỗi X5: Bổ sung hộp thoại xác nhận khi người dùng nhấn phím Back từ màn hình biên tập video - HOÀN THÀNH"
+  - "Khắc phục lỗi X3: Thêm null-check nghiêm ngặt cho ClipData getItemAt().getUri() chống văng app khi pick media - HOÀN THÀNH"
+  - "Khắc phục lỗi D2: Chuyển scanDeviceMedia() sang chạy nền bất đồng bộ (executor/background thread) với try-with-resources để chống nghẽn main UI thread (ANR) và rò rỉ Cursor - HOÀN THÀNH"
+  - "Tuân thủ nghiêm ngặt Luật 12 AGENTS.md (chú thích song ngữ EN + VN) - HOÀN THÀNH"
+verification_results:
+  - "Manual Build APK pass 100%: build\\manual_build\\nextai_opencut_signed.apk"
+  - "D8 DEX compilation pass with named static inner classes"

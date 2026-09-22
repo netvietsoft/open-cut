@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:background="@drawable/kvz" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/iv_close" n0:padding="12.0dp" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:src="@drawable/nkg" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="16.0sp" n0:textColor="@android:color/white" n0:id="@id/tv_duration_title" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="12.0dp" n0:text="@string/n8k" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/duration_select_divide_line" n0:background="@color/APKTOOL_RENAMED_0x7f06063e" n0:layout_width="match_parent" n0:layout_height="0.5dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tv_duration_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0sp" n0:textColor="@android:color/darker_gray" n0:id="@id/tv_duration_subtitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/n8m" n0:layout_marginStart="16.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/duration_select_divide_line"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/rv_duration_options" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n5:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/tv_duration_subtitle"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

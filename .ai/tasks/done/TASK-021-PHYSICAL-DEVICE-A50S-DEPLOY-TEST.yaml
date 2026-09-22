@@ -1,0 +1,60 @@
+id: TASK-021-PHYSICAL-DEVICE-A50S-DEPLOY-TEST
+title: "Biên Dịch & Cài Đặt Kiểm Thử Trực Tiếp Trên Thiết Bị Vật Lý Samsung Galaxy A50s (SM-A507FN - 192.168.1.3:36903)"
+status: done
+assignee: "Agent 0, Agent 3, Agent 6, Agent 10, Agent 12"
+created_at: "2026-09-18T13:58:00Z"
+completed_at: "2026-09-18T14:45:00Z"
+priority: CRITICAL
+files_allowed:
+  - "apps/android/app/build_apk.ps1"
+  - "design/screenshots/physical_device_a50s/**"
+  - ".ai/**"
+  - "TASK_LOG.md"
+  - "UPDATETODOS.md"
+  - "PROJECT_MEMORY.md"
+requirements:
+  - "1. Kết nối không dây Wireless ADB tới thiết bị thật Samsung Galaxy A50s (SM-A507FN) tại 192.168.1.3:36903."
+  - "2. Biên dịch gói APK đã ký số mới nhất apps/android/app/build/manual_build/nextai_opencut_signed.apk chứa đầy đủ 213 tài nguyên gốc CapCut và kho tính năng phong phú từ 10 bộ decompile."
+  - "3. Cài đặt APK lên thiết bị vật lý SM-A507FN qua lệnh adb install -r."
+  - "4. Khởi chạy MainActivity trên thiết bị thật, cấp quyền bộ nhớ / lưu trữ."
+  - "5. Thực hiện kiểm thử trực quan trên màn hình thật 1080x2340 (Home Hub, Video Timeline Editor, Photo Editor, AI Lab, Templates Feed, Cloud Space, Profile)."
+  - "6. Chụp ảnh màn hình thật lưu vào design/screenshots/physical_device_a50s/ làm bằng chứng nghiệm thu."
+evidence:
+  - type: OBSERVED
+    item: "Wireless ADB Connected"
+    details: "Connected to Samsung Galaxy A50s (SM-A507FN, Android 11) at 192.168.1.3:36903 with device status confirmed"
+  - type: OBSERVED
+    item: "APK Compilation"
+    details: "Built signed release APK apps/android/app/build/manual_build/nextai_opencut_signed.apk with all C++20 libraries and native CapCut assets"
+  - type: OBSERVED
+    item: "Streamed Install & Permission Grant"
+    details: "Installed successfully via adb install -r -t, granted READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE, MANAGE_EXTERNAL_STORAGE"
+  - type: OBSERVED
+    item: "35 Physical Screen Captures"
+    path: "design/screenshots/physical_device_a50s/"
+    count: 35
+    screens:
+      - "01_home_hub.png: Home Hub with Hero New Project, 8 Quick Tiles, 3 Recent Drafts, 6 bottom tabs"
+      - "02_media_picker.png & 03_media_selected.png: Media Picker displaying user's real camera photos"
+      - "04_editor_imported.png & 05_text_applied.png: Multi-track Video Editor with user photo and kinetic title"
+      - "06_main_ribbon.png & 08_editor_main_ribbon.png: Video Editor toolbar ribbon with all editing tools"
+      - "10_ai_text_to_video_scenes_a50s.png: AI Text-to-Video storyboard generating 3 video scenes"
+      - "11_edit_submenu_a50s.png: Clip editing submenu (Split, Speed, Volume, Delete, Cutout, Beauty, Color)"
+      - "12_photo_editor_lightroom_a50s.png: Photo Editor Adobe Lightroom Pro (Tone Curve, Clarity, Dehaze, Grain)"
+      - "13_photo_editor_facetune_a50s.png: Photo Editor Facetune & Meitu (Teeth Whitening, Brighten Eyes, Slim Legs)"
+      - "14_photo_editor_snapedit_a50s.png: AI Script modal with prompt input and quick templates"
+      - "15_freeze_reverse_mask_a50s.png: Advanced video tools (Freeze Frame 3s, Reverse Playback, Video Masking)"
+      - "16_mask_drawer_a50s.png & 17_mask_drawer_opened_a50s.png: Video Masking drawer (Linear, Radial, Mirror, Invert)"
+      - "18_effects_glitch_vhs_a50s.png: Effects drawer with Glitch, VHS, and CapCut Native tabs"
+      - "19_glitch_shader_applied_a50s.png & 21_effect_applied_verified_a50s.png: GlitchCam shader applied to video canvas"
+      - "20_effect_track_timeline_a50s.png: Dedicated timeline effect track with duration block"
+      - "22_export_dialog_a50s.png: C++20 FFmpeg JNI export pipeline triggered"
+      - "23_resolution_settings_a50s.png: 4K 60fps HDR 10-bit resolution selector"
+      - "24_home_hub_returned_a50s.png: Return navigation to Home Hub"
+      - "25_pro_vip_paywall_a50s.png: Google Play Billing 8.2.1 VIP Pro paywall dialog with 2-tier detain strategy"
+      - "26_hot_templates_a50s.png: 4K AI Super Resolution upscale action"
+      - "27_templates_feed_a50s.png: Trending TikTok templates feed (CutSame) with one-tap use"
+      - "28_ai_lab_tab_a50s.png: Cloud Space tab with 4.2GB/50GB usage and team sharing"
+      - "33_ai_lab_view_a50s.png: AI Lab agent tab with AI Storyboard, Auto-Dubbing, and Face Tracking 468"
+      - "34_profile_me_view_a50s.png: Profile tab with Lifetime VIP Pro and C++20 FFmpeg Hardware Acceleration"
+      - "35_home_hub_final_a50s.png: Final verified clean return to Home Hub"

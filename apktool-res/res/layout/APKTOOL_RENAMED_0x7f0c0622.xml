@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/root_container" n0:background="@color/s7" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/searchRoot" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.edit.widget.SearchPanelCoordinatorLayout n0:id="@id/searchPanel" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout n0:id="@id/appBarLayout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:elevation="0.0dp"
+              xmlns:n1="http://schemas.android.com/apk/res-auto">
+                <com.google.android.material.appbar.CollapsingToolbarLayout n0:id="@id/blankView" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="match_parent" n0:layout_height="100.0dp" n1:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap" />
+                <View n0:id="@id/blankView2" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="200.0dp" n0:alpha="0.0" n1:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap" />
+                <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/titlePart" n0:background="@drawable/pc5" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                    <com.vega.theme.VegaEditText n0:textSize="14.0dp" n0:textColor="@color/ml" n0:textColorHint="@color/l9" n0:gravity="center_vertical" n0:id="@id/input" n0:background="@drawable/ls3" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="16.0dp" n0:maxLines="1" n0:singleLine="true" n0:includeFontPadding="false" n0:drawablePadding="8.0dp" n0:imeOptions="actionSearch|flagNoExtractUi" n0:textCursorDrawable="@drawable/k9w" n0:drawableStart="@drawable/ofu" n0:paddingStart="8.0dp" n0:paddingEnd="40.0dp" n0:layout_marginStart="16.0dp" n0:drawableTint="@color/l9" n1:layout_constraintEnd_toStartOf="@id/close" n1:layout_constraintHorizontal_weight="1.0" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/nn" n0:gravity="center" n0:id="@id/close" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/input" n1:kr3="none" />
+                    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/clear" n0:padding="8.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/l5r" n0:scaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="@id/input" n1:layout_constraintEnd_toStartOf="@id/close" n1:layout_constraintTop_toTopOf="@id/input" n1:kr3="none" />
+                    <com.google.android.material.tabs.TabLayout n0:id="@id/tabLayout" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/input" n1:tabGravity="fill" n1:tabIndicatorHeight="0.0dp" n1:tabMode="scrollable" n1:tabRippleColor="@null" n1:tabSelectedTextColor="@color/knt" n1:tabTextAppearance="@style/APKTOOL_RENAMED_0x7f13055b" n1:tabTextColor="@color/_e">
+                        <com.google.android.material.tabs.TabItem n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/ry5" />
+                        <com.google.android.material.tabs.TabItem n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/APKTOOL_RENAMED_0x7f120514" />
+                    </com.google.android.material.tabs.TabLayout>
+                    <Space n0:id="@id/video_search_space" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/input" />
+                    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/drag_handle" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="21.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toBottomOf="@id/tabLayout" n1:layout_scrollFlags="enterAlways">
+                        <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/ldm" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/contentBackground" n0:background="@drawable/pc8" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/contentPart" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_behavior="@string/appbar_scrolling_view_behavior"
+              xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <androidx.viewpager.widget.ViewPager n0:id="@id/resultViewPager" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+                <com.vega.ui.widget.LoadingView n0:id="@id/loadingView" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:layout_constraintVertical_bias="0.33" />
+                <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:layout_constraintVertical_bias="0.33" layout="@layout/lwu" />
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/sug_list" n0:background="@drawable/pc8" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.core.widget.NestedScrollView n0:id="@id/search_mid_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+              xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                    <FrameLayout n0:id="@id/search_history_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:gravity="center" n0:id="@id/hotKeyTitle" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/l40" n0:layout_marginStart="16.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/search_history_container" n4:k1i="medium" />
+                    <androidx.recyclerview.widget.RecyclerView n0:id="@id/hotKeyList" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="@id/hotKeyTitle" n4:layout_constraintTop_toBottomOf="@id/hotKeyTitle" />
+                    <androidx.constraintlayout.widget.Group n0:id="@id/hotGroup" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:constraint_referenced_ids="hotKeyTitle,hotKeyList" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.vega.edit.widget.SearchPanelCoordinatorLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

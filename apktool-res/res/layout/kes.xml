@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edward.agent.view.LoadingTextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:gravity="center_vertical" n0:id="@id/tag_name_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="VisualStyle:" n0:layout_marginEnd="8.0dp" />
+    <LinearLayout n0:id="@id/labelContainer" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView n0:gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:cardCornerRadius="6.0dp" n1:cardElevation="0.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/imageHumanAvatar" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:contentDescription="digital human image" />
+            <ImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/p_a" n0:contentDescription="art style preview bg" />
+        </androidx.cardview.widget.CardView>
+        <TextView n0:textSize="16.0dp" n0:textColor="#ffffff" n0:gravity="center_vertical" n0:id="@id/textHumanName" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_panel" n0:background="@drawable/lm9" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_close" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:src="@drawable/owq" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.ScrollTextView n0:textSize="20.0dp" n0:textColor="@color/_e" n0:id="@id/scroll_text_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="25.0dp" n0:layout_marginBottom="64.0dp" n0:layout_marginStart="@dimen/a7" n0:layout_marginEnd="@dimen/a6" n2:layout_constraintBottom_toTopOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_goneMarginBottom="25.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/container_tool" n0:layout_width="match_parent" n0:layout_height="34.0dp" n0:layout_marginLeft="19.0dp" n0:layout_marginRight="19.0dp" n0:layout_marginBottom="10.0dp" n0:layout_marginHorizontal="19.0dp" n3:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_drag" n0:padding="5.0dp" n0:layout_width="34.0dp" n0:layout_height="34.0dp" n0:src="@drawable/owr" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/iv_edit" n3:layout_constraintHorizontal_chainStyle="spread_inside" n3:layout_constraintStart_toStartOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_edit" n0:padding="5.0dp" n0:layout_width="34.0dp" n0:layout_height="34.0dp" n0:src="@drawable/ows" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/iv_setting" n3:layout_constraintStart_toEndOf="@id/iv_drag" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip_flag" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:adjustViewBounds="true" n0:layout_alignParentTop="true" n0:translationX="-8.0dp" n0:layout_alignParentEnd="true" n3:c2="prompter" n3:APKTOOL_RENAMED_0x7f0404ef="prompter" n3:layout_constraintStart_toEndOf="@id/iv_edit" n3:layout_constraintTop_toTopOf="parent" n3:kml="small" n3:kmm="mix" n3:ktj="normal_func" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_setting" n0:padding="5.0dp" n0:layout_width="34.0dp" n0:layout_height="34.0dp" n0:src="@drawable/owg" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/iv_edit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:id="@id/guide_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

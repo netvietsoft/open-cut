@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/mbridge_more_offer_ll_item" n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.mbridge.msdk.videocommon.view.RoundImageView n0:id="@id/mbridge_reward_end_card_item_iv" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:layout_marginLeft="5.0dp" n0:layout_marginRight="5.0dp" />
+    <TextView n0:textSize="9.0sp" n0:textColor="@color/mbridge_black" n0:ellipsize="end" n0:gravity="center" n0:id="@id/mbridge_reward_end_card_item_title_tv" n0:padding="2.0dp" n0:layout_width="60.0dp" n0:layout_height="15.0dp" n0:layout_marginLeft="5.0dp" n0:layout_marginRight="5.0dp" n0:maxLines="1" />
+</LinearLayout>

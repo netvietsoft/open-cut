@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/rv_tab_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp">
+            <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/rv_tab" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n1:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/replace_recommend_template_tv" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#e6e6e6" n0:gravity="center_vertical" n0:id="@id/replace_recommend_template_tv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qcf" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/APKTOOL_RENAMED_0x7f082b7d" n0:paddingEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/rv_template" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="14.0dp" n3:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.widget.StateViewGroupLayout n0:id="@id/collect_state_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="126.0dp" n0:layout_marginTop="14.0dp">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_collect_templates" n0:tag="success" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:tag="login" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:paddingStart="64.0dp" n0:paddingEnd="64.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/vh" n0:ellipsize="end" n0:gravity="center_horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/k8n" n0:maxLines="2" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/ui" n0:ellipsize="end" n0:gravity="center" n0:background="@drawable/kty" n0:paddingTop="6.0dp" n0:paddingBottom="6.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/k8m" n0:maxLines="1" n0:drawablePadding="5.3299866dp" n0:drawableStart="@drawable/APKTOOL_RENAMED_0x7f0818c0" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:tag="error" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:paddingStart="64.0dp" n0:paddingEnd="64.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/vh" n0:ellipsize="end" n0:gravity="center_horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/k8l" n0:maxLines="2" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/ui" n0:ellipsize="end" n0:gravity="center" n0:background="@drawable/kty" n0:paddingTop="6.0dp" n0:paddingBottom="6.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/k8p" n0:maxLines="1" n0:drawablePadding="5.3299866dp" n0:drawableStart="@drawable/oni" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:tag="empty" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true">
+                <ImageView n0:id="@id/iv_empty_collect" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/kw7" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+                  xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:src="@drawable/npa" n0:layout_marginStart="6.0dp" n5:layout_constraintStart_toStartOf="@id/iv_empty_collect" n5:layout_constraintTop_toTopOf="@id/iv_empty_collect"
+                  xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/vh" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/k8o" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/iv_empty_collect"
+                  xmlns:n6="http://schemas.android.com/apk/res-auto" />
+                <com.airbnb.lottie.LottieAnimationView n0:id="@id/lottie_collect_empty" n0:visibility="visible" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n7:layout_constraintStart_toStartOf="@id/iv_empty_collect" n7:layout_constraintTop_toTopOf="@id/iv_empty_collect" n7:lottie_fileName="collect_guide_long_press.json" n7:lottie_imageAssetsFolder="collectimages/" n7:lottie_loop="true"
+                  xmlns:n7="http://schemas.android.com/apk/res-auto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center" n0:orientation="vertical" n0:tag="loading" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="93.0dp" n0:minHeight="88.0dp" n0:layout_centerInParent="true">
+                <com.airbnb.lottie.LottieAnimationView n0:layout_width="32.0dp" n0:layout_height="25.0dp" n8:lottie_autoPlay="true" n8:lottie_fileName="lv_loading_white.json" n8:lottie_loop="true"
+                  xmlns:n8="http://schemas.android.com/apk/res-auto" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/tvTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:text="@string/k8q" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.vega.ui.widget.StateViewGroupLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/root" n0:layout_width="70.0dp" n0:layout_height="70.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.adeditorapi.view.RoundConstraintLayout n0:layout_gravity="center" n0:layout_width="62.0dp" n0:layout_height="62.0dp" n1:ks8="6.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/tone_type_bg" n0:background="@drawable/e2" n0:layout_width="62.0dp" n0:layout_height="62.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:background="@drawable/e4" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#d4d4d5" n0:ellipsize="end" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="35.0dp" n0:text="@string/qa_" n0:maxLines="1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </com.vega.adeditorapi.view.RoundConstraintLayout>
+</FrameLayout>

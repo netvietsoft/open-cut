@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">Δεν ήταν δυνατή η μεταφόρτωση %d στοιχείου. Το AutoCut συνεχίζει.</item>
+        <item quantity="other">Δεν ήταν δυνατή η μεταφόρτωση %d στοιχείων. Το AutoCut συνεχίζει.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">Συνημμένο: %d αρχείο</item>
+        <item quantity="other">Συνημμένο: %d αρχεία</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">Απαιτείται %1$d πόντος.</item>
+        <item quantity="other">Απαιτούνται %1$d πόντοι.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">Σας απομένει %1$d πόντος.</item>
+        <item quantity="other">Σας απομένουν %1$d πόντοι.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">Οι δωρεάν πόντοι σας θα αφαιρεθούν. Απαιτείται %d ακόμη πόντος.</item>
+        <item quantity="other">Οι δωρεάν πόντοι σας θα αφαιρεθούν. Απαιτούνται %d ακόμη πόντοι.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">Απαιτείται %1$d πόντος.</item>
+        <item quantity="other">Απαιτούνται %1$d πόντοι.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">Σας απομένει %1$d πόντος. Αγοράστε πόντους για να συνεχίσετε.</item>
+        <item quantity="other">Σας απομένουν %1$d πόντοι. Αγοράστε πόντους για να συνεχίσετε.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">Απαιτείται %1$d πόντος.</item>
+        <item quantity="other">Απαιτούνται %1$d πόντοι.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">Σας απομένει %1$d πόντος. Κάντε αναβάθμιση για περισσότερους πόντους.</item>
+        <item quantity="other">Σας απομένουν %1$d πόντοι. Κάντε αναβάθμιση για περισσότερους πόντους.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">Θα καταναλωθεί %d πόντος</item>
+        <item quantity="other">Θα καταναλωθούν %d πόντοι</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">Οι δωρεάν πόντοι σας θα αφαιρεθούν. Απαιτείται %d ακόμη πόντος.</item>
+        <item quantity="other">Οι δωρεάν πόντοι σας θα αφαιρεθούν. Απαιτούνται %d ακόμη πόντοι.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">%d προτεινόμενο πρότυπο</item>
+        <item quantity="other">%d προτεινόμενα πρότυπα</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">Δημιουργήθηκε %d βίντεο</item>
+        <item quantity="other">Δημιουργήθηκαν %d βίντεο</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">Μπορείτε να χρησιμοποιείτε τις αυτόματες λεζάντες και τους αυτόματους στίχους δωρεάν %d φορά τον μήνα όταν είστε συνδεδεμένοι. Οι δωρεάν χρήσεις θα ανανεώνονται στην αρχή κάθε μήνα. 1 χρήση θα αφαιρείται κάθε φορά.</item>
+        <item quantity="other">Μπορείτε να χρησιμοποιείτε τις αυτόματες λεζάντες και τους αυτόματους στίχους δωρεάν %d φορές τον μήνα όταν είστε συνδεδεμένοι. Οι δωρεάν χρήσεις θα ανανεώνονται στην αρχή κάθε μήνα. 1 χρήση θα αφαιρείται κάθε φορά.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%d χρήση/μήνα</item>
+        <item quantity="other">%d χρήσεις/μήνα</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">Διαγραφή %d λέξης</item>
+        <item quantity="other">Διαγραφή %d λέξεων</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%d επισήμανση</item>
+        <item quantity="other">%d επισημάνσεις</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">Βρέθηκε %d λέξη πλήρωσης</item>
+        <item quantity="other">Βρέθηκαν %d λέξεις πλήρωσης</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">Επιλέξτε έως %d στοιχείο</item>
+        <item quantity="other">Επιλέξτε έως %d στοιχεία</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">Εκτιμώμενος χρόνος αναμονής στην ουρά: %d δευτ.</item>
+        <item quantity="other">Εκτιμώμενος χρόνος αναμονής στην ουρά: %d δευτ.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">Απομένει περίπου %d ώρα</item>
+        <item quantity="other">Απομένουν περίπου %d ώρες</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">Απομένει περίπου %d λεπτό</item>
+        <item quantity="other">Απομένουν περίπου %d λεπτά</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">Απομένει περίπου %d δευτ.</item>
+        <item quantity="other">Απομένουν περίπου %d δευτ.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">Αποτέλεσμα ήχου (%d)</item>
+        <item quantity="other">Αποτελέσματα ήχου (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">Αποτέλεσμα αρχείου (%d)</item>
+        <item quantity="other">Αποτελέσματα αρχείου (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">Αποτέλεσμα δημιουργίας (%d)</item>
+        <item quantity="other">Αποτελέσματα δημιουργίας (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">Συνημμένο: %d εικόνα</item>
+        <item quantity="other">Συνημμένο: %d εικόνες</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">Συνημμένο: %d βίντεο</item>
+        <item quantity="other">Συνημμένο: %d βίντεο</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">Αποτέλεσμα εικόνας (%d)</item>
+        <item quantity="other">Αποτελέσματα εικόνας (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">Αποτέλεσμα βίντεο (%d)</item>
+        <item quantity="other">Αποτελέσματα βίντεο (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">Εφαρμογή %1$d εφέ κειμένου ΤΝ... %2$d%%</item>
+        <item quantity="other">Εφαρμογή %1$d εφέ κειμένου ΤΝ... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">Εφαρμογή %d πόρου σε όλα τα κλιπ</item>
+        <item quantity="other">Εφαρμογή %d πόρων σε όλα τα κλιπ</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">Επιλέχθηκε %d πόρος</item>
+        <item quantity="other">Επιλέχθηκαν %d πόροι</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">Ultra για %d ημέρα</item>
+        <item quantity="other">Ultra για %d ημέρες</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d χαρακτήρας</item>
+        <item quantity="other">%d χαρακτήρες</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">Επιλέξτε έως και %d χαρακτήρα</item>
+        <item quantity="other">Επιλέξτε έως και %d χαρακτήρες</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">%d κλιπ δεν έχει άδεια για εμπορική χρήση</item>
+        <item quantity="other">%d κλιπ δεν έχουν άδεια για εμπορική χρήση</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">%d γραμματοσειρά δεν έχει άδεια για εμπορική χρήση</item>
+        <item quantity="other">%d γραμματοσειρές δεν έχουν άδεια για εμπορική χρήση</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">%d ήχος δεν έχει άδεια για εμπορική χρήση</item>
+        <item quantity="other">%d ήχοι δεν έχουν άδεια για εμπορική χρήση</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">%d κλιπ δεν έχει άδεια για εμπορική χρήση και δεν μπορεί να αντικατασταθεί</item>
+        <item quantity="other">%d κλιπ δεν έχουν άδεια για εμπορική χρήση και δεν μπορούν να αντικατασταθούν</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">%d γραμματοσειρά δεν έχει άδεια για εμπορική χρήση και δεν μπορεί να αντικατασταθεί</item>
+        <item quantity="other">%d γραμματοσειρές δεν έχουν άδεια για εμπορική χρήση και δεν μπορούν να αντικατασταθούν</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">%d ήχος δεν έχει άδεια για εμπορική χρήση και δεν μπορεί να αντικατασταθεί</item>
+        <item quantity="other">%d ήχοι δεν έχουν άδεια για εμπορική χρήση και δεν μπορούν να αντικατασταθούν</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">%d αυτοκόλλητο δεν έχει άδεια για εμπορική χρήση και δεν μπορεί να αντικατασταθεί</item>
+        <item quantity="other">%d αυτοκόλλητα δεν έχουν άδεια για εμπορική χρήση και δεν μπορούν να αντικατασταθούν</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">%d αυτοκόλλητο δεν έχει άδεια για εμπορική χρήση</item>
+        <item quantity="other">%d αυτοκόλλητα δεν έχουν άδεια για εμπορική χρήση</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">Διαγραφή %d σχολίου;</item>
+        <item quantity="other">Διαγραφή %d σχολίων;</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">Επιλέξατε %d λογαριασμό. Μόνο εσείς και το άτομο που περιορίζετε θα βλέπετε τα σχόλια.</item>
+        <item quantity="other">Επιλέξατε %d λογαριασμούς. Μόνο εσείς και το άτομο που περιορίζετε θα βλέπετε τα σχόλια.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">Περιορισμός %d λογαριασμού;</item>
+        <item quantity="other">Περιορισμός %d λογαριασμών;</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">%d ημέρα</item>
+        <item quantity="other">%d ημέρες</item>
+    </plurals>
+    <plurals name="kg">
+        <item quantity="one">%d δωρεάν χρήση</item>
+        <item quantity="other">%d δωρεάν χρήσεις</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">Έχετε %s νέο μήνυμα δημιουργού</item>
+        <item quantity="other">Έχετε %s νέα μηνύματα δημιουργού</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">Έληξε πριν από %d ημέρα</item>
+        <item quantity="other">Έληξε πριν από %d ημέρες</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">Χρησιμοποιείτε μια λειτουργία Pro. Απομένει %d δωρεάν χρήση. Εγγραφείτε στο Pro για απεριόριστη χρήση.</item>
+        <item quantity="other">Χρησιμοποιείτε μια λειτουργία Pro. Απομένουν %d δωρεάν χρήσεις. Εγγραφείτε στο Pro για απεριόριστη χρήση.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">Χρησιμοποιείτε μια λειτουργία Standard. Απομένει %d δωρεάν χρήση. Εγγραφείτε στο Standard για απεριόριστη χρήση.</item>
+        <item quantity="other">Χρησιμοποιείτε μια λειτουργία Standard. Απομένουν %d δωρεάν χρήσεις. Εγγραφείτε στο Standard για απεριόριστη χρήση.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">Χρησιμοποιείτε μια λειτουργία Pro. Απομένει %d δωρεάν χρήση αυτόν τον μήνα. Εγγραφείτε στο Pro για απεριόριστη χρήση.</item>
+        <item quantity="other">Χρησιμοποιείτε μια λειτουργία Pro. Απομένουν %d δωρεάν χρήσεις αυτόν τον μήνα. Εγγραφείτε στο Pro για απεριόριστη χρήση.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">Χρησιμοποιείτε μια λειτουργία Standard. Απομένει %d δωρεάν χρήση αυτόν τον μήνα. Εγγραφείτε στο Standard για απεριόριστη χρήση.</item>
+        <item quantity="other">Χρησιμοποιείτε μια λειτουργία Standard. Απομένουν %d δωρεάν χρήσεις αυτόν τον μήνα. Εγγραφείτε στο Standard για απεριόριστη χρήση.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d ημέρα δωρεάν</item>
+        <item quantity="other">%d ημέρες δωρεάν</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">%1$s μετά από %2$d εβδομάδα</item>
+        <item quantity="other">%1$s μετά από %2$d εβδομάδες</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">Έχετε %d δωρεάν χρήση προτύπων Pro τον μήνα.</item>
+        <item quantity="other">Έχετε %d δωρεάν χρήσεις προτύπων Pro τον μήνα.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">%d δωρεάν χρήση</item>
+        <item quantity="other">%d δωρεάν χρήσεις</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">Δοκιμάστε για %d ημέρα δωρεάν</item>
+        <item quantity="other">Δοκιμάστε για %d ημέρες δωρεάν</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">%d ζήτημα πνευματικών δικαιωμάτων μουσικής</item>
+        <item quantity="other">%d ζητήματα πνευματικών δικαιωμάτων μουσικής</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">Επιλέχθηκε %d κείμενο</item>
+        <item quantity="other">Επιλέχθηκαν %d κείμενα</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_popup_title">
+        <item quantity="one">Διεκδικήστε %d ημέρα δωρεάν στο Βασικό πρόγραμμα του Dreamina</item>
+        <item quantity="other">Διεκδικήστε %d ημέρες δωρεάν στο Βασικό πρόγραμμα του Dreamina</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_success_popup_desc">
+        <item quantity="one">Η πρόσβασή σας στο Βασικό πρόγραμμα του Dreamina για %d ημέρα είναι πλέον ενεργή.</item>
+        <item quantity="other">Η πρόσβασή σας στο Βασικό πρόγραμμα του Dreamina για %d ημέρες είναι πλέον ενεργή.</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_to_claim_profile_banner">
+        <item quantity="one">Διεκδικήστε %d ημέρα πρόσβασης στο Βασικό πρόγραμμα του Dreamina</item>
+        <item quantity="other">Διεκδικήστε %d ημέρες πρόσβασης στο Βασικό πρόγραμμα του Dreamina</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">%d κλιπ επιλέχθηκε</item>
+        <item quantity="other">%d κλιπ επιλέχθηκαν</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">Απολαύστε %1$d ημέρα απεριόριστων δωρεάν εξαγωγών ή απλώς αναβαθμίστε για πλήρεις, απεριόριστες εξαγωγές υψηλής ανάλυσης.</item>
+        <item quantity="other">Απολαύστε %1$d ημέρες απεριόριστων δωρεάν εξαγωγών ή απλώς αναβαθμίστε για πλήρεις, απεριόριστες εξαγωγές υψηλής ανάλυσης.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">Εξαγωγή σε 1080p %d φορά δωρεάν</item>
+        <item quantity="other">Εξαγωγή σε 1080p %d φορές δωρεάν</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">Απομένει %d δωρεάν εξαγωγή σε 1080p. Αναβαθμίστε για να απολαμβάνετε απεριόριστες εξαγωγές υψηλής ανάλυσης.</item>
+        <item quantity="other">Απομένουν %d δωρεάν εξαγωγές σε 1080p. Αναβαθμίστε για να απολαμβάνετε απεριόριστες εξαγωγές υψηλής ανάλυσης.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">Απομένει %d δωρεάν εξαγωγή σε 1080p αυτό τον μήνα. Αναβαθμίστε για να απολαμβάνετε απεριόριστες εξαγωγές υψηλής ανάλυσης.</item>
+        <item quantity="other">Απομένουν %d δωρεάν εξαγωγές σε 1080p αυτό τον μήνα. Αναβαθμίστε για να απολαμβάνετε απεριόριστες εξαγωγές υψηλής ανάλυσης.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">Απαιτείται %d πόντος.</item>
+        <item quantity="other">Απαιτούνται %d πόντοι.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">Σας απομένει %d πόντος.</item>
+        <item quantity="other">Σας απομένουν %d πόντοι.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">Δημιουργία %1$d στοιχείου σε εξέλιξη. Αναβαθμίστε στο Pro για να δημιουργείτε έως και %2$d στοιχεία ταυτόχρονα.</item>
+        <item quantity="other">Δημιουργία %1$d στοιχείων σε εξέλιξη. Αναβαθμίστε στο Pro για να δημιουργείτε έως και %2$d στοιχεία ταυτόχρονα.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">Εξαγωγή χωρίς υδατογράφημα (απομένει %d χρήση)</item>
+        <item quantity="other">Εξαγωγή χωρίς υδατογράφημα (απομένουν %d χρήσεις)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">Απομένει %d δωρεάν χρήση. Δεν απαιτούνται πόντοι.</item>
+        <item quantity="other">Απομένουν %d δωρεάν χρήσεις. Δεν απαιτούνται πόντοι.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">Το επιλεγμένο στοιχείο σας θα διαγραφεί και θα παραμείνει στον Κάδο απορριμμάτων για %d ημέρες.</item>
+        <item quantity="other">Τα επιλεγμένα στοιχεία σας θα διαγραφούν και θα παραμείνουν στον Κάδο απορριμμάτων για %d ημέρες.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">Ένα από τα επιλεγμένα στοιχεία έχει μεταφορτωθεί στον χώρο. Διαγραφή οπωσδήποτε;</item>
+        <item quantity="other">Ορισμένα επιλεγμένα στοιχεία έχουν μεταφορτωθεί στον χώρο. Διαγραφή οπωσδήποτε;</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">Το επιλεγμένο στοιχείο σας θα διαγραφεί και θα μετακινηθεί στον Κάδο απορριμμάτων.</item>
+        <item quantity="other">Τα επιλεγμένα στοιχεία σας θα διαγραφούν και θα μετακινηθούν στον Κάδο απορριμμάτων.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">%d χρήση</item>
+        <item quantity="other">%d χρήσεις</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">Η ηλικία που υπολογίστηκε από την ημερομηνία γέννησης που εισαγάγατε είναι %d έτους και φαίνεται να είναι λάθος. Εισαγάγετε την πραγματική ημερομηνία γέννησής σας.</item>
+        <item quantity="other">Η ηλικία που υπολογίστηκε από την ημερομηνία γέννησης που εισαγάγατε είναι %d ετών και φαίνεται να είναι λάθος. Εισαγάγετε την πραγματική ημερομηνία γέννησής σας.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">Περιλαμβάνει 1 δωρεάν χρήση από προηγούμενες αγορές και %d επιπλέον δωρεάν χρήση για Pro</item>
+        <item quantity="other">Περιλαμβάνει 1 δωρεάν χρήση από προηγούμενες αγορές και %d επιπλέον δωρεάν χρήσεις για Pro</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">Το Pro εξασφαλίζει %d δωρεάν χρήση</item>
+        <item quantity="other">Το Pro εξασφαλίζει %d δωρεάν χρήσεις</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">Τα avatar που δημιουργήσατε με βίντεο έχουν πλέον μόνιμη ισχύ. Εγγραφείτε στο Pro και αποκτήστε %d δωρεάν προσαρμογή.</item>
+        <item quantity="other">Τα avatar που δημιουργήσατε με βίντεο έχουν πλέον μόνιμη ισχύ. Εγγραφείτε στο Pro και αποκτήστε %d δωρεάν προσαρμογές.</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">Για την εφαρμογή αυτού του εφέ, θα χρησιμοποιηθεί %d πόντος.</item>
+        <item quantity="other">Για την εφαρμογή αυτού του εφέ, θα χρησιμοποιηθούν %d πόντοι.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">Έχετε τώρα %d διαθέσιμο πόντο.</item>
+        <item quantity="other">Έχετε τώρα %d διαθέσιμους πόντους.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">%d επισήμανση</item>
+        <item quantity="other">%d επισημάνσεις</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">Εφαρμογή εφέ ΤΝ… Απομένει %s ώρα</item>
+        <item quantity="other">Εφαρμογή εφέ ΤΝ… Απομένουν %s ώρες</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">Εφαρμογή εφέ ΤΝ… Απομένει %s λεπτό</item>
+        <item quantity="other">Εφαρμογή εφέ ΤΝ… Απομένουν %s λεπτά</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">Το εφέ Pro %1$s εφαρμόστηκε στο τρέχον στοιχείο. Η εκ νέου εφαρμογή του στο νέο στοιχείο θα καταναλώσει %2$d πόντο.</item>
+        <item quantity="other">Το εφέ Pro %1$s εφαρμόστηκε στο τρέχον στοιχείο. Η εκ νέου εφαρμογή του στο νέο στοιχείο θα καταναλώσει %2$d πόντους.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">Θα αφαιρεθεί %1$d δωρεάν χρήση. Έχετε τώρα %2$d δωρεάν χρήση.</item>
+        <item quantity="other">Θα αφαιρεθεί %1$d δωρεάν χρήση. Έχετε τώρα %2$d δωρεάν χρήσεις.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">Θα αφαιρεθεί %1$d χρήση Pro. Έχετε τώρα %2$d χρήση Pro.</item>
+        <item quantity="other">Θα αφαιρεθεί %1$d χρήση Pro. Έχετε τώρα %2$d χρήσεις Pro.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">Αυτό το μοντέλο υποστηρίζει μόνο %d εικόνα αναφοράς</item>
+        <item quantity="other">Αυτό το μοντέλο υποστηρίζει έως %d εικόνες αναφοράς</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">Προσθέστε τουλάχιστον %d εικόνα αναφοράς για να χρησιμοποιήσετε αυτό το μοντέλο</item>
+        <item quantity="other">Προσθέστε τουλάχιστον %d εικόνες αναφοράς για να χρησιμοποιήσετε αυτό το μοντέλο</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">Αυτό το μοντέλο υποστηρίζει μόνο %d βίντεο αναφοράς</item>
+        <item quantity="other">Αυτό το μοντέλο υποστηρίζει έως %d βίντεο αναφοράς</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">Προσθέστε τουλάχιστον %d βίντεο αναφοράς για να χρησιμοποιήσετε αυτό το μοντέλο</item>
+        <item quantity="other">Προσθέστε τουλάχιστον %d βίντεο αναφοράς για να χρησιμοποιήσετε αυτό το μοντέλο</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">Επιλέξτε %d φωτογραφία</item>
+        <item quantity="other">Επιλέξτε %d φωτογραφίες</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">Προστέθηκε %d υλικό</item>
+        <item quantity="other">Προστέθηκαν %d υλικά</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">Απομένει %d δημιουργία</item>
+        <item quantity="other">Απομένουν %d δημιουργίες</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">Απομένει %d ξεκλείδωμα</item>
+        <item quantity="other">Απομένουν %d ξεκλειδώματα</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">Επισημάνθηκε %d λέξη-κλειδί. Μπορείτε επίσης να επιλέξετε μη αυτόματα.</item>
+        <item quantity="other">Επισημάνθηκαν %d λέξεις-κλειδιά. Μπορείτε επίσης να επιλέξετε μη αυτόματα.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">Διαγραφή %d κλιπ</item>
+        <item quantity="other">Διαγραφή %d κλιπ</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">Αναγνωρίστηκε %d λέξη πλήρωσης. Μπορείτε επίσης να επιλέξετε μη αυτόματα.</item>
+        <item quantity="other">Αναγνωρίστηκαν %d λέξεις πλήρωσης. Μπορείτε επίσης να επιλέξετε μη αυτόματα.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">Επισήμανση σε %d λέξη-κλειδί</item>
+        <item quantity="other">Επισήμανση σε %d λέξεις-κλειδιά</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">Εξαγωγή %d φωτογραφίας…</item>
+        <item quantity="other">Εξαγωγή %d φωτογραφιών…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">Επιλέξτε έως %d πόζα</item>
+        <item quantity="other">Επιλέξτε έως %d πόζες</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">Το αρχείο μέσων σας μεταφορτώνεται</item>
+        <item quantity="other">Τα αρχεία μέσων σας μεταφορτώνονται</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">%d μέλος</item>
+        <item quantity="other">%d μέλη</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">Μεταφορτώστε %d έργο στον χώρο για να ελευθερώσετε αποθηκευτικό χώρο στη συσκευή σας. Μπορείτε να επεξεργάζεστε αυτό το έργο σε εφαρμογή για κινητά, εφαρμογή για σταθερό υπολογιστή ή σε διαδικτυακό πρόγραμμα επεξεργασίας.</item>
+        <item quantity="other">Μεταφορτώστε %d έργα στον χώρο για να ελευθερώσετε αποθηκευτικό χώρο στη συσκευή σας. Μπορείτε να επεξεργάζεστε αυτά τα έργα σε εφαρμογή για κινητά, εφαρμογή για σταθερό υπολογιστή ή σε διαδικτυακό πρόγραμμα επεξεργασίας.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">Μεταφορτώστε %d αρχείο μέσων στα έργα σας στον χώρο. Μπορείτε να χρησιμοποιείτε αυτό το αρχείο σε οποιαδήποτε συσκευή χωρίς να το μεταφορτώσετε ξανά.</item>
+        <item quantity="other">Μεταφορτώστε %d αρχεία μέσων στα έργα σας στον χώρο. Μπορείτε να χρησιμοποιείτε αυτά τα αρχεία σε οποιαδήποτε συσκευή χωρίς να τα μεταφορτώσετε ξανά.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">Έχετε ένα έργο για ανάκτηση</item>
+        <item quantity="other">Έχετε έργα για ανάκτηση</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">Το έργο ανακτήθηκε</item>
+        <item quantity="other">Τα έργα ανακτήθηκαν</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">Δεν ήταν δυνατή η εφαρμογή %d λειτουργίας</item>
+        <item quantity="other">Δεν ήταν δυνατή η εφαρμογή %d λειτουργιών</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">Εφαρμογή %d λειτουργίας</item>
+        <item quantity="other">Εφαρμογή %d λειτουργιών</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">Εφαρμογή εφέ Pro;</item>
+        <item quantity="other">Εφαρμογή εφέ Pro;</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">%1$d εφέ Pro εφαρμόστηκε στο τρέχον στοιχείο. Η εκ νέου εφαρμογή του στο νέο στοιχείο θα καταναλώσει %2$d πόντους.</item>
+        <item quantity="other">%1$d εφέ Pro εφαρμόστηκαν στο τρέχον στοιχείο. Η εκ νέου εφαρμογή τους στο νέο στοιχείο θα καταναλώσει %2$d πόντους.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">%1$d εφέ Pro εφαρμόστηκε στο τρέχον στοιχείο. %2$d δωρεάν χρήση θα αφαιρεθεί για την εκ νέου εφαρμογή του στο νέο στοιχείο. Δε θα καταναλωθούν πόντοι.</item>
+        <item quantity="other">%1$d εφέ Pro εφαρμόστηκαν στο τρέχον στοιχείο. %2$d δωρεάν χρήσεις θα αφαιρεθούν για την εκ νέου εφαρμογή τους στο νέο στοιχείο. Δε θα καταναλωθούν πόντοι.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">%1$d εφέ Pro εφαρμόστηκε στο τρέχον στοιχείο. Χρειάζεστε %2$d πόντους για να το εφαρμόσετε ξανά στο νέο στοιχείο.</item>
+        <item quantity="other">%1$d εφέ Pro εφαρμόστηκαν στο τρέχον στοιχείο. Χρειάζεστε %2$d πόντους για να τα εφαρμόσετε ξανά στο νέο στοιχείο.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">%1$d εφέ Pro εφαρμόστηκαν στο τρέχον στοιχείο. Η εκ νέου εφαρμογή τους στο νέο στοιχείο θα καταναλώσει %2$d δωρεάν χρήση και %3$d πόντους.</item>
+        <item quantity="other">%1$d εφέ Pro εφαρμόστηκαν στο τρέχον στοιχείο. Η εκ νέου εφαρμογή τους στο νέο στοιχείο θα καταναλώσει %2$d δωρεάν χρήσεις και %3$d πόντους.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">%d κλιπ λείπει. Επαναφέρετέ το στο τηλέφωνό σας ή αντικαταστήστε το.</item>
+        <item quantity="other">%d κλιπ λείπουν. Επαναφέρετέ τα στο τηλέφωνό σας ή αντικαταστήστε τα.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">Εισαγάγετε έως και %d χαρακτήρα</item>
+        <item quantity="other">Εισαγάγετε έως και %d χαρακτήρες</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">%d ημέρα</item>
+        <item quantity="other">%d ημέρες</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">Να διαγραφεί το στοιχείο;</item>
+        <item quantity="other">Να διαγραφούν τα στοιχεία;</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">Τα αντικείμενα που μετακινούνται στον Κάδο απορριμμάτων θα εμφανίζονται εδώ και θα διαγράφονται μετά από %d ημέρα.</item>
+        <item quantity="other">Τα αντικείμενα που μετακινούνται στον Κάδο απορριμμάτων θα εμφανίζονται εδώ και θα διαγράφονται μετά από %d ημέρες.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">Λήψη %d στοιχείου...</item>
+        <item quantity="other">Λήψη %d στοιχείων...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">Μεταφόρτωση %d στοιχείου...</item>
+        <item quantity="other">Μεταφόρτωση %d στοιχείων...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">Αυτό το στοιχείο θα διαγραφεί μόνιμα και δε θα μπορεί να ανακτηθεί.</item>
+        <item quantity="other">Αυτά τα στοιχεία θα διαγραφούν μόνιμα και δε θα μπορούν να ανακτηθούν.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">Το στοιχείο μετακινήθηκε</item>
+        <item quantity="other">Τα στοιχεία μετακινήθηκαν</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">Έχετε ακόμα %d διαθέσιμη ημέρα για δωρεάν εξαγωγή.</item>
+        <item quantity="other">Έχετε ακόμα %d διαθέσιμες ημέρες για δωρεάν εξαγωγή.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">Συγχαρητήρια! Λάβατε %d δωρεάν μηνιαία χρήση για εξαγωγή χωρίς υδατογράφημα.</item>
+        <item quantity="other">Συγχαρητήρια! Λάβατε %d δωρεάν μηνιαίες χρήσεις για εξαγωγή χωρίς υδατογράφημα.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">Έχετε ακόμα %d δωρεάν χρήση για εξαγωγή χωρίς υδατογράφημα.</item>
+        <item quantity="other">Έχετε ακόμα %d δωρεάν χρήσεις για εξαγωγή χωρίς υδατογράφημα.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">Συγχαρητήρια! Λάβατε %d δωρεάν χρήση για εξαγωγή χωρίς υδατογράφημα.</item>
+        <item quantity="other">Συγχαρητήρια! Λάβατε %d δωρεάν χρήσεις για εξαγωγή χωρίς υδατογράφημα.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">%d χρήση</item>
+        <item quantity="other">%d χρήσεις</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">Έκπτωση %d πόντου ως προσφορά για την πρώτη φορά. Περισσότεροι πόντοι καταναλώνονται σε περίπτωση υπέρβασης.</item>
+        <item quantity="other">Έκπτωση %d πόντων ως προσφορά για την πρώτη φορά. Περισσότεροι πόντοι καταναλώνονται σε περίπτωση υπέρβασης.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">Χρειάζεται %d επιπλέον πόντος για εφαρμογή αυτής της λειτουργίας</item>
+        <item quantity="other">Χρειάζονται %d επιπλέον πόντοι για εφαρμογή αυτής της λειτουργίας</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">Το κλιπ δεν πρέπει να υπερβαίνει το %d δευτερόλεπτο</item>
+        <item quantity="other">Το κλιπ δεν πρέπει να υπερβαίνει τα %d δευτερόλεπτα</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">Σας απομένει %d πόντος.</item>
+        <item quantity="other">Σας απομένουν %d πόντοι.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">Η εφαρμογή της λειτουργίας {$benefit_name$} θα καταναλώσει {$credit_amount$} πόντο.</item>
+        <item quantity="other">Η εφαρμογή της λειτουργίας {$benefit_name$} θα καταναλώσει {$credit_amount$} πόντους.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">Η εφαρμογή αυτής της λειτουργίας θα καταναλώσει %d πόντο.</item>
+        <item quantity="other">Η εφαρμογή αυτής της λειτουργίας θα καταναλώσει %d πόντους.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">Η χρήση αυτού του προτύπου θα καταναλώσει %d πόντο.</item>
+        <item quantity="other">Η χρήση αυτού του προτύπου θα καταναλώσει %d πόντους.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">Θα διαγραφεί οριστικά και δεν είναι δυνατή η ανάκτησή του.</item>
+        <item quantity="other">Θα διαγραφούν οριστικά και δεν είναι δυνατή η ανάκτησή τους.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">Διαγραφή αυτού του στοιχείου;</item>
+        <item quantity="other">Διαγραφή αυτών των στοιχείων;</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">Έργο %1$d \"%1$s\"</item>
+        <item quantity="other">Έργα %1$d \"%1$s\"</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">%d στοιχείο μετακινήθηκε στον Κάδο απορριμμάτων</item>
+        <item quantity="other">%d στοιχεία μετακινήθηκαν στον Κάδο απορριμμάτων</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">%d στοιχείο προστέθηκε στα Αγαπημένα</item>
+        <item quantity="other">%d στοιχεία προστέθηκαν στα Αγαπημένα</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">%d στοιχείο αφαιρέθηκε από τα Αγαπημένα</item>
+        <item quantity="other">%d στοιχεία αφαιρέθηκαν από τα Αγαπημένα</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">Αυτός είναι ένας δωρεάν χώρος και μπορεί να έχει έως και %1$d μέλη. Μπορεί να προσκληθεί άλλο %2$s μέλος σε αυτόν.</item>
+        <item quantity="other">Αυτός είναι ένας δωρεάν χώρος και μπορεί να έχει έως και %1$d μέλη. Μπορούν να προσκληθούν άλλα %2$s μέλη σε αυτόν.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">%d χρήση/μήνα</item>
+        <item quantity="other">%d χρήσεις/μήνα</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d χρήση/ημέρα</item>
+        <item quantity="other">%d χρήσεις/ημέρα</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d χρήση/εβδομάδα</item>
+        <item quantity="other">%d χρήσεις/εβδομάδα</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">{price} μετά από {number} μήνα</item>
+        <item quantity="other">{price} μετά από {number} μήνες</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">%1$s μετά από %2$d μήνα</item>
+        <item quantity="other">%1$s μετά από %2$d μήνες</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">{price} μετά από {number} έτος</item>
+        <item quantity="other">{price} μετά από {number} έτη</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">%1$s μετά από %2$d έτος</item>
+        <item quantity="other">%1$s μετά από %2$d έτη</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">Υπάρχει %d μέλος σε αυτόν τον χώρο.</item>
+        <item quantity="other">Υπάρχουν %d μέλη σε αυτόν τον χώρο.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">Μπορείτε να προσκαλέσετε ακόμα %1$d μέλος.</item>
+        <item quantity="other">Μπορείτε να προσκαλέσετε ακόμα %1$d μέλη.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">%1$d θέση είναι κατειλημμένη.</item>
+        <item quantity="other">%1$d θέσεις είναι κατειλημμένες.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">Έναρξη δωρεάν δοκιμής %d ημέρας</item>
+        <item quantity="other">Έναρξη δωρεάν δοκιμής %d ημερών</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">Απαιτείται %d πόντος.</item>
+        <item quantity="other">Απαιτούνται %d πόντοι.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">Σας απομένει %d πόντος.</item>
+        <item quantity="other">Σας απομένουν %d πόντοι.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">Γίνεται μεταφόρτωση %1$s/%2$s έργου</item>
+        <item quantity="other">Γίνεται μεταφόρτωση %1$s/%2$s έργων</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"%d άλλο κλιπ είναι συνδεδεμένο με αυτό το αρχείο μέσων. Να γίνει αντικατάσταση και αυτού;
+Το αρχείο θα περικοπεί αυτόματα για να αντιστοιχεί στην αρχική διάρκεια."</item>
+        <item quantity="other">"%d άλλα κλιπ είναι συνδεδεμένα με αυτό το αρχείο μέσων. Να αντικατασταθούν όλα;
+Το αρχείο θα περικοπεί αυτόματα για να αντιστοιχεί στην αρχική διάρκεια."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">Μπορείτε να μεταφορτώσετε %d ακόμη εικόνα</item>
+        <item quantity="other">Μπορείτε να μεταφορτώσετε %d ακόμη εικόνες</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">%d τμήμα προς ενημέρωση</item>
+        <item quantity="other">%d τμήματα προς ενημέρωση</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">Μπορείτε να επιλέξετε ακόμη %1$d εικόνα και %2$s</item>
+        <item quantity="other">Μπορείτε να επιλέξετε ακόμη %1$d εικόνες και %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(μέγιστο %d δευτ.)</item>
+        <item quantity="other">(μέγιστο %d δευτ.)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d βίντεο</item>
+        <item quantity="other">%d βίντεο</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">Μπορείτε να επιλέξετε ακόμη %d εικόνα</item>
+        <item quantity="other">Μπορείτε να επιλέξετε ακόμη %d εικόνες</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">Μπορείτε να επιλέξετε ακόμη %d βίντεο</item>
+        <item quantity="other">Μπορείτε να επιλέξετε ακόμη %d βίντεο</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(μέγιστο %d δευτ.)</item>
+        <item quantity="other">(μέγιστο %d δευτ.)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">Σε ουρά... Απομένει περίπου %d λεπτό.</item>
+        <item quantity="other">Σε ουρά... Απομένουν περίπου %d λεπτά.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">Μειώστε τον χρόνο αναμονής · Απομένει %d χρήση</item>
+        <item quantity="other">Μειώστε τον χρόνο αναμονής · Απομένουν %d χρήσεις</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">Σε ουρά... Απομένει περίπου %d δευτ.</item>
+        <item quantity="other">Σε ουρά... Απομένουν περίπου %d δευτ.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">Σε γρήγορη ουρά με το Pro... Απομένει περίπου %d λεπτό.</item>
+        <item quantity="other">Σε γρήγορη ουρά με το Pro... Απομένουν περίπου %d λεπτά.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">%d στοιχείο</item>
+        <item quantity="other">%d στοιχεία</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">Επιλέχθηκε %d στοιχείο</item>
+        <item quantity="other">Επιλέχθηκαν %d στοιχεία</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">%d έργο</item>
+        <item quantity="other">%d έργα</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">Επιλέχθηκε %d έργο</item>
+        <item quantity="other">Επιλέχθηκαν %d έργα</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">Πολλά άτομα χρησιμοποιούν αυτήν τη λειτουργία τώρα. Ο εκτιμώμενος χρόνος αναμονής είναι %d λεπτό.</item>
+        <item quantity="other">Πολλά άτομα χρησιμοποιούν αυτήν τη λειτουργία τώρα. Ο εκτιμώμενος χρόνος αναμονής είναι %d λεπτά.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">Η εκ νέου δημιουργία θα καταναλώσει %d πόντο.</item>
+        <item quantity="other">Η εκ νέου δημιουργία θα καταναλώσει %d πόντους.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">Η εκ νέου δημιουργία με το νέο στοιχείο θα καταναλώσει %d πόντο.</item>
+        <item quantity="other">Η εκ νέου δημιουργία με το νέο στοιχείο θα καταναλώσει %d πόντους.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">%d κλιπ προστέθηκε</item>
+        <item quantity="other">%d κλιπ προστέθηκαν</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">Επιλέξτε %d στοιχείο</item>
+        <item quantity="other">Επιλέξτε %d στοιχεία</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">Δημιουργήθηκε %d βίντεο για εσάς</item>
+        <item quantity="other">Δημιουργήθηκαν %d βίντεο για εσάς</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">Μπορείτε να διαχωρίσετε μόνο ήχο που διαρκεί λιγότερο από %d λεπτό</item>
+        <item quantity="other">Μπορείτε να διαχωρίσετε μόνο ήχο που διαρκεί λιγότερο από %d λεπτά</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">Μπορείτε να επαναφέρετε τον χώρο εντός %d ημέρας.</item>
+        <item quantity="other">Μπορείτε να επαναφέρετε τον χώρο εντός %d ημερών.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">Δημιουργείται %d βίντεο. Δοκιμάστε ξανά αργότερα.</item>
+        <item quantity="other">Δημιουργούνται %d βίντεο. Δοκιμάστε ξανά αργότερα.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">Κάντε αναβάθμιση για να χρησιμοποιήσετε αυτή τη δυνατότητα με %d πόντο</item>
+        <item quantity="other">Κάντε αναβάθμιση για να χρησιμοποιήσετε αυτή τη δυνατότητα με %d πόντους</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">Σας απομένει μόνο %d θέση σε αυτόν τον χώρο.</item>
+        <item quantity="other">Σας απομένουν μόνο %d θέσεις σε αυτόν τον χώρο.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">Χρησιμοποιήθηκε %d στοιχείο</item>
+        <item quantity="other">Χρησιμοποιήθηκαν %d στοιχεία</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">Επιλέχθηκε %d στοιχείο</item>
+        <item quantity="other">Επιλέχθηκαν %d στοιχεία</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">Επιλέξτε %d στοιχείο</item>
+        <item quantity="other">Επιλέξτε %d στοιχεία</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">%d λεζάντα</item>
+        <item quantity="other">%d λεζάντες</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">%d αντικείμενο</item>
+        <item quantity="other">%d αντικείμενα</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">Εφαρμόζεται %d λειτουργία. Δοκιμάστε ξανά αργότερα.</item>
+        <item quantity="other">Εφαρμόζονται %d λειτουργίες. Δοκιμάστε ξανά αργότερα.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">Απομένει %d δωρεάν χρήση. Εγγραφείτε στο Standard για χρήση με πόντους.</item>
+        <item quantity="other">Απομένουν %d δωρεάν χρήσεις. Εγγραφείτε στο Standard για χρήση με πόντους.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">Απομένει %d δωρεάν χρήση. Εγγραφείτε στο Pro για χρήση με πόντους.</item>
+        <item quantity="other">Απομένουν %d δωρεάν χρήσεις. Εγγραφείτε στο Pro για χρήση με πόντους.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">Απομένει %d δωρεάν χρήση. Εγγραφείτε στο Ultra για χρήση με πόντους.</item>
+        <item quantity="other">Απομένουν %d δωρεάν χρήσεις. Εγγραφείτε στο Ultra για χρήση με πόντους.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">Θα καταναλωθεί %1$d πόντος. %2$s</item>
+        <item quantity="other">Θα καταναλωθούν %1$d πόντοι. %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">Σας απομένει %d πόντος.</item>
+        <item quantity="other">Σας απομένουν %d πόντοι.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">Εγγραφείτε στο Ultra για χρήση με %d πόντο</item>
+        <item quantity="other">Εγγραφείτε στο Ultra για χρήση με %d πόντους</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">Εγγραφείτε στο Pro για να χρησιμοποιήσετε αυτήν τη λειτουργία με %d πόντο.</item>
+        <item quantity="other">Εγγραφείτε στο Pro για να χρησιμοποιήσετε αυτήν τη λειτουργία με %d πόντους.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">Εγγραφείτε στο Standard για να χρησιμοποιήσετε αυτή τη λειτουργία με %d πόντο.</item>
+        <item quantity="other">Εγγραφείτε στο Standard για να χρησιμοποιήσετε αυτή τη λειτουργία με %d πόντους.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">Μπορείτε να αποθηκεύσετε έως %1$d φωνή.</item>
+        <item quantity="other">Μπορείτε να αποθηκεύσετε έως %1$d φωνές.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">Δεν είναι δυνατή η βελτίωση της φωνής σε κλιπ με διάρκεια μεγαλύτερη από %1$d λεπτό</item>
+        <item quantity="other">Δεν είναι δυνατή η βελτίωση της φωνής σε κλιπ με διάρκεια μεγαλύτερη από %1$d λεπτά</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">Επιλέξτε %d στοιχείο για βέλτιστα αποτελέσματα</item>
+        <item quantity="other">Επιλέξτε %d στοιχεία για βέλτιστα αποτελέσματα</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">Ανανεώνεται με %1$s για τον πρώτο %2$d μήνα και στη συνέχεια με %3$s.</item>
+        <item quantity="other">Ανανεώνεται με %1$s για τους πρώτους %2$d μήνες και στη συνέχεια με %3$s.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">Ανανεώνεται με %1$s για το πρώτο %2$d έτος και στη συνέχεια με %3$s.</item>
+        <item quantity="other">Ανανεώνεται με %1$s για τα πρώτα %2$d έτη και στη συνέχεια με %3$s.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">Έχετε κάνει %d ενημέρωση. Δημιουργία ομιλίας και συγχρονισμός κινήσεων χειλιών;</item>
+        <item quantity="other">Έχετε κάνει %d ενημερώσεις. Δημιουργία ομιλίας και συγχρονισμός κινήσεων χειλιών;</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">Απομένει %d φορά</item>
+        <item quantity="other">Απομένουν %d φορές</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">Υπάρχει %d βουβό κλιπ.</item>
+        <item quantity="other">Υπάρχουν %d βουβά κλιπ.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.lemon.lvoverseas" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <instrumentation android:name="com.bytedance.common.component.CommonInstrumentation" android:targetPackage="com.lemon.lvoverseas" android:targetProcesses="com.lemon.lvoverseas:smp"/>
+    <queries>
+        <package android:name="com.lemon.faceuassist"/>
+        <package android:name="com.bd.nproject"/>
+        <package android:name="com.bd.nproject.private"/>
+        <package android:name="com.google.android.apps.photos"/>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.tencent.mobileqq"/>
+        <package android:name="com.ss.android.article.video"/>
+        <package android:name="com.ss.android.ugc.aweme"/>
+        <package android:name="com.ss.android.article.news"/>
+        <package android:name="com.tencent.mobileqqi"/>
+        <package android:name="com.tencent.qqlite"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.linkedin.android"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="world.social.group.video.share"/>
+        <package android:name="com.google.android.youtube"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.zing.zalo"/>
+        <package android:name="com.zhiliaoapp.musically.go"/>
+        <package android:name="com.snapchat.android"/>
+        <package android:name="com.nc.tiktok.usmain"/>
+        <package android:name="com.xt.retouch"/>
+        <package android:name="com.xt.retouchoversea"/>
+        <provider android:authorities="com.lemon.faceuassist.provider"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <package android:name="com.android.vending"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.samsung.android.mapsagent"/>
+        <package android:name="com.huawei.appmarket"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+            <data android:mimeType="vnd.android.cursor.dir/event"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:path="tel:"/>
+        </intent>
+        <package android:name="com.zhiliaoapp.musically"/>
+        <package android:name="com.ss.android.ugc.trill"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.oplus.cosa"/>
+        <package android:name="com.coloros.gamespace"/>
+        <package android:name="com.coloros.ocs.opencapabilityservice"/>
+        <package android:name="com.oplus.ocs"/>
+        <package android:name="com.tencent.android.qqdownloader"/>
+        <package android:name="com.qihoo.appstore"/>
+        <package android:name="com.baidu.appsearch"/>
+        <package android:name="com.xiaomi.market"/>
+        <package android:name="com.wandoujia.phoenix2"/>
+        <package android:name="com.dragon.android.pandaspace"/>
+        <package android:name="com.pp.assistant"/>
+        <package android:name="com.oppo.market"/>
+        <package android:name="com.heytap.market"/>
+        <package android:name="com.bbk.appstore"/>
+        <package android:name="com.sec.android.app.samsungapps"/>
+        <package android:name="com.lenovo.leos.appstore"/>
+        <package android:name="zte.com.market"/>
+        <package android:name="com.hiapk.marketpho"/>
+        <package android:name="com.yingyonghui.market"/>
+        <package android:name="com.mappn.gfan"/>
+        <package android:name="com.hiapk.marketpho"/>
+        <package android:name="cn.goapk.market"/>
+        <package android:name="com.yulong.android.coolmart"/>
+        <package android:name="com.coolapk.market"/>
+        <package android:name="com.gionee.aora.market"/>
+        <package android:name="com.coolapk.market"/>
+        <package android:name="com.smartisan.appstore"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-feature android:glEsVersion="0x30000" android:required="true"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <meta-data android:name="com.google.android.gms.ads.INTEGRATION_MANAGER" android:value="webview"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="com.orange.update.permission.READ_ATTRIBUTION"/>
+    <permission android:label="Preinstall Attribution Info" android:name="com.lemon.lvoverseas.permission.PREINSTALL_ATTRIBUTION_INFO" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <permission android:name="com.lemon.lvoverseas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.lemon.lvoverseas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:allowNativeHeapPointerTagging="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:enableOnBackInvokedCallback="false" android:fullBackupContent="@xml/l" android:hardwareAccelerated="true" android:icon="@drawable/APKTOOL_RENAMED_0x7f0804d9" android:label="@string/APKTOOL_RENAMED_0x7f1214ef" android:largeHeap="true" android:name="com.vega.launcher.ScaffoldApplication" android:networkSecurityConfig="@xml/z" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/cp">
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        <uses-native-library android:name="libOpenCL.so" android:required="false"/>
+        <uses-native-library android:name="libGLES_mali.so" android:required="false"/>
+        <uses-native-library android:name="libmali.so" android:required="false"/>
+        <uses-native-library android:name="libPVROCL.so" android:required="false"/>
+        <uses-native-library android:name="libpocl.so" android:required="false"/>
+        <uses-native-library android:name="libOpenCL-pixel.so" android:required="false"/>
+        <uses-native-library android:name="libcdsprpc.so" android:required="false"/>
+        <uses-native-library android:name="libcdsprpc_system.so" android:required="false"/>
+        <uses-native-library android:name="libadsprpc.so" android:required="false"/>
+        <uses-native-library android:name="libadsprpc_system.so" android:required="false"/>
+        <uses-native-library android:name="libneuronusdk_adapter.mtk.so" android:required="false"/>
+        <uses-native-library android:name="libapuwareutils_v2.mtk.so" android:required="false"/>
+        <uses-native-library android:name="libapuwarehmp.mtk.so" android:required="false"/>
+        <uses-native-library android:name="libapuwareapusys_v2.mtk.so" android:required="false"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.vega.launcher.precondition.DeeplinkActivity" android:theme="@style/ka">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="capcut"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="capcut1380"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="capcut1760"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.vega.launcher.precondition.ApplinksHandlerActivity" android:theme="@style/ka">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="www.capcut.com"/>
+                <data android:pathPrefix="/redirect"/>
+            </intent-filter>
+        </activity>
+        <activity android:autoRemoveFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.vega.launcher.init.core.NotifyActivity" android:taskAffinity="com.vega.push" android:theme="@style/kc">
+            <intent-filter>
+                <action android:name="com.ss.android.sdk.snssdk3006"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="snssdk3006"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.vega.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing">
+            <layout android:minHeight="550.0dp" android:minWidth="300.0dp"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.vega.launcher.precondition.PreInstallConfirmActivity" android:screenOrientation="portrait" android:targetActivity="com.vega.main.MainActivity" android:theme="@style/de"/>
+        <service android:exported="false" android:name="com.vega.launcher.start.task.BackgroundMemoryRestartService" android:process=":memopt"/>
+        <service android:exported="true" android:name="com.ss.android.message.NotifyService" android:process=":push">
+            <intent-filter>
+                <action android:name="com.ss.android.message.action.PUSH_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.ss.android.message.log.LogService" android:process=":push"/>
+        <activity android:autoRemoveFromRecents="true" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.vega.launcher.precondition.LoadingDialogActivity" android:theme="@style/kc"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.launcher.safemode.SafeModeWebActivity" android:process=":safemode" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="windowParams" android:value="1,2,0,0,0,0,0,0,480"/>
+        <meta-data android:name="SS_VERSION_NAME" android:value="19.4.0"/>
+        <meta-data android:name="SS_VERSION_CODE" android:value="19400300"/>
+        <meta-data android:name="UPDATE_VERSION_CODE" android:value="19400300"/>
+        <meta-data android:name="EasyGoClient" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-8563181921274308~3003233985"/>
+        <meta-data android:name="google_analytics_default_allow_analytics_storage" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_storage" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_user_data" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="false"/>
+        <meta-data android:name="com.coloros.ocs.hyper.AUTH_CODE" android:value="ATBFAiEAwFmuqCH3yUE2laFVaIX8jtN375owfiFqd2/xAtIs5sYCIDnQV6CyfE5mRFSzMm5QzR7sGHbKiyoa0OsZPOVdPuwUcG7W5GAAAAA="/>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:icon="@drawable/qq1" android:label="@string/p9t" android:launchMode="singleTask" android:name="com.vega.launcher.precondition.ImportFontsShareActivity" android:screenOrientation="behind" android:theme="@style/kv">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+                <data android:mimeType="*/otf"/>
+                <data android:pathPattern=".*\\.ttf"/>
+                <data android:pathPattern=".*\\.otf"/>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:icon="@drawable/qq5" android:label="@string/p9q" android:launchMode="singleTask" android:name="com.vega.launcher.precondition.ShareFromOutsideActivity" android:screenOrientation="behind" android:theme="@style/vo">
+            <intent-filter>
+                <action android:name="com.lemon.lvoverseas.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <meta-data android:name="enter_launch" android:value="share_import_to_capcut"/>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:icon="@drawable/qq5" android:label="@string/p9q" android:launchMode="singleTask" android:name="com.vega.launcher.precondition.EditShareActivity" android:screenOrientation="behind" android:theme="@style/vo">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.lemon.lvoverseas.action.COMMON_EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <meta-data android:name="enter_launch" android:value="share_import_to_capcut"/>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:icon="@drawable/qqi" android:label="@string/p92" android:launchMode="singleTask" android:name="com.vega.launcher.precondition.UploadShareActivity" android:screenOrientation="behind" android:theme="@style/vo">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <meta-data android:name="enter_launch" android:value="share_save_to_capcut"/>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:icon="@drawable/qq6" android:label="@string/p9b" android:launchMode="singleTask" android:name="com.vega.launcher.precondition.RemoveBackgroundShareActivity" android:screenOrientation="behind" android:theme="@style/vo">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <meta-data android:name="enter_launch" android:value="share_remove_background"/>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:icon="@drawable/qq7" android:label="@string/p9f" android:launchMode="singleTask" android:name="com.vega.launcher.precondition.RetouchShareActivity" android:screenOrientation="behind" android:theme="@style/vo">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <meta-data android:name="enter_launch" android:value="share_retouch"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="com.vega.main.home.toolpage.capture.VideoCaptureMiddleWareActivity" android:screenOrientation="behind" android:theme="@style/ka" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="com.vega.edit.videocapture.VideoCaptureEditActivity" android:screenOrientation="behind" android:theme="@style/ka" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="com.vega.core.popmanager.PopMockSwitchActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.homepage.UserActivity" android:screenOrientation="behind" android:theme="@style/fy" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.follow.ui.FollowActivity" android:screenOrientation="behind" android:theme="@style/tr" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.main.ui.preview.SingleFeedPreviewBridgeActivity" android:screenOrientation="behind" android:theme="@style/ym" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.main.ui.preview.TransparentSingleFeedPreviewBridgeActivity" android:screenOrientation="behind" android:theme="@style/fv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.main.ui.preview.SingleFeedPreviewActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/yl" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.vega.feedx.util.GotoDraftEditActivity" android:theme="@style/wk"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.main.ui.preview.MultiFeedPreviewActivity" android:screenOrientation="behind" android:theme="@style/v-" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.information.ui.FeedAvatarActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.information.ui.FeedAvatarCropActivity" android:screenOrientation="behind" android:theme="@style/s9" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.information.ui.FeedUserEditDescriptionActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.information.ui.FeedUserEditUniqueIDActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.information.ui.FeedUserEditActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.information.ui.InstagramAuthActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.information.ui.ThirdPartyProfileActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTask" android:name="com.vega.feedx.recommend.FeedRecommendActivity" android:theme="@style/fs" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.homepage.black.BlackListActivity" android:screenOrientation="behind" android:theme="@style/fj" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.main.ui.preview.VideoPreviewActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.vega.feedx.material.FeedInspirationInterActivity" android:screenOrientation="behind" android:theme="@style/vb"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.homepage.account.AccountManagerActivity" android:screenOrientation="behind" android:theme="@style/x" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.vega.feedx.message.ui.MessageDetailActivity" android:screenOrientation="portrait" android:theme="@style/ve" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.vega.feedx.message.ui.MessageActivity" android:screenOrientation="portrait" android:theme="@style/ve" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.main.team.TeamTemplateActivity" android:screenOrientation="behind" android:theme="@style/ka" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedx.nativefeed.FeedContainerActivity" android:screenOrientation="portrait" android:theme="@style/k" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.web.WebActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.web.TransWebActivity" android:screenOrientation="behind" android:theme="@style/ka" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.web.ResearchActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.web.OuterWebActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.web.photo.PreviewPhotoActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:exported="false" android:name="com.vega.main.home.ui.RetouchDeeplinkActivity" android:theme="@style/kc"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.main.home.ui.AIModelDeeplinkActivity"/>
+        <provider android:authorities="com.lemon.lvoverseas.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/m"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.main.tutorial.FunctionTutorialActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.main.xigua.TrainWorkSelectActivity" android:screenOrientation="behind" android:theme="@style/vd" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.main.home.SelectPhotoActivity" android:screenOrientation="behind" android:theme="@style/vd" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.main.LynxActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.main.TransLynxActivity" android:screenOrientation="behind" android:theme="@style/ka" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.main.FullScreenLynxActivity" android:screenOrientation="behind" android:theme="@style/kv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.main.RetouchLynxActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="false" android:name="com.vega.main.home.ui.AIPaintingDeeplinkActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <receiver android:exported="false" android:label="@string/p90" android:name="com.vega.main.appwidget.LargeWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/s"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/p90" android:name="com.vega.main.appwidget.MiddleWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/w"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/p90" android:name="com.vega.main.appwidget.provider.MiniToolWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/y"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/p9n" android:name="com.vega.main.appwidget.RetouchWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/e"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/p9c" android:name="com.vega.main.appwidget.RemoveBackgroundWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/d"/>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.main.appwidget.response.WRetouchResponseActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="enter_launch" android:value="HomeScreenRetouchWidget_small"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.main.appwidget.response.WRemoveBgResponseActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="enter_launch" android:value="HomeScreenRemoveBackgroundWidget_small"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.main.appwidget.response.WNewProjectResponseActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.main.appwidget.response.WCameraResponseActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="enter_launch" android:value="widget_camera"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.main.appwidget.response.WClickDraft1ResponseActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="enter_launch" android:value="HomeScreenToolWidget_large"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.main.appwidget.response.WClickDraft2ResponseActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="enter_launch" android:value="HomeScreenToolWidget_large"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.main.appwidget.response.WClickDraft3ResponseActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="enter_launch" android:value="HomeScreenToolWidget_large"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.main.appwidget.response.WidgetResponseActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.main.pop.test.TestPopCenterActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <receiver android:exported="false" android:name="com.vega.main.appwidget.provider.MiddleTemplateWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/v"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.vega.main.appwidget.provider.MiniTemplateWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/x"/>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.vega.main.appwidget.response.BaseTemplateWidgetResponseActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.localdraft.SelectDraftForTopicActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.localdraft.SelectDraftForTeamActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.localdraft.IMSelectDraftActivity" android:screenOrientation="behind" android:theme="@style/kv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.localdraft.SelectDraftActivity" android:screenOrientation="behind" android:theme="@style/kv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTop" android:name="com.vege.genai.history.GenAiHistoryActivity" android:screenOrientation="portrait" android:theme="@style/APKTOOL_RENAMED_0x7f13001e"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.vege.genai.main.activity.GenAiMainActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.vege.genai.main.activity.GenAiTemplateActivity" android:screenOrientation="portrait" android:theme="@style/ka"/>
+        <activity android:launchMode="singleTop" android:name="com.vege.genai.preview.PreviewActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:launchMode="singleTop" android:name="com.vege.genai.preview.AiCommonPreviewActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.MediaSelectActivity" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.ScriptVideoMediaSelectActivity" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.VoiceoverAlbumActivity" android:screenOrientation="behind" android:theme="@style/fj"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.CC4BAlbumActivity" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.RetouchAIModelGalleryActivity" android:screenOrientation="locked" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.RetouchMultiSelectPhotoActivity" android:screenOrientation="locked" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.MultimodalSearchAlbumActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.TemplateGenMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.AutoCutAgentGenMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.TemplateGenGuideMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/APKTOOL_RENAMED_0x7f1301b5"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.CollageSelectMediaActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.ImageEditPhotoSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.QualityEnhanceMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.BgRemoveMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.AiImageInterpretationMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.NewDigitalHumansMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.NewVideoTranslateMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.NewLipSyncMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.EditPilotMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.VideoCaptureMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.ModelDressUpMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.ImageEditMediaSelectToolActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.AIClipperMediaSelectToolActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.CoverEditToolMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.GalleryMediaProjectSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.ImageEditMediaSelectHomeActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.SmartAdsMediaSelectActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.TextExtractionMediaSelectActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.GenAIMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.AiCommonSelectActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.MaterialPreviewActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.vega.digitalportraitimpl.DigitalPortraitActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.vega.digitalportraitimpl.property.PropertyPortraitActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.vega.digitalportraitimpl.view.AiEffectEditPortraitActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.export.edit.view.ExportActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.export.edit.view.ImageExportActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.exort.template.TemplateExportActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.export.template.view.TemplateExportActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.lemon.adproduce.TemplateCreationActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.export.business.BusinessExportActivity" android:screenOrientation="behind" android:theme="@style/e"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.export.edit.view.share.join.JoinTemplateAndTutorialActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.export.retouch.view.RetouchTemplateExportActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:exported="false" android:name="com.vega.ad.view.FullScreenNativeAdActivity" android:theme="@style/fs"/>
+        <activity android:exported="false" android:name="com.vega.ad.view.AdToolActivity" android:theme="@style/fs"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:exported="false" android:name="com.lemon.vega.ug.ui.DiversionPCActivity" android:theme="@style/ka" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:exported="false" android:name="com.lemon.vega.ug.ui.NoLoginDiversionPCActivity" android:theme="@style/ka" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:excludeFromRecents="true" android:exported="false" android:name="com.lemon.vega.ug.ui.ExternalDiversionConfirmActivity" android:noHistory="true" android:theme="@style/sr"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.vega.ailabagent.unifyagent.AiLabAgentChatActivity" android:screenOrientation="userPortrait" android:theme="@style/qm" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.vega.ailabagent.trendsagent.AiLabTrendsAgentChatActivity" android:screenOrientation="userPortrait" android:theme="@style/qm" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.trendsagent.AiTrendsTemplateUserInputActivity" android:screenOrientation="userPortrait" android:theme="@style/ka" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.common.edit.DraftPreviewActivity" android:screenOrientation="userPortrait" android:theme="@style/_" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.common.utils.ExportDialogActivity" android:screenOrientation="userPortrait" android:theme="@style/ka" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.demo.TemplateListDemoActivity" android:screenOrientation="userPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.demo.DocumentFilePickerDemoActivity" android:screenOrientation="userPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.feedback.AiLabFeedbackActivity" android:screenOrientation="userPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.feedback.AiLabFeedbackHistoryActivity" android:screenOrientation="userPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.feedback.MeegoStoryPickerActivity" android:screenOrientation="userPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.unifyagent.preview.AiLabAgentUniversalPreviewActivity" android:screenOrientation="userPortrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.unifyagent.preview.userasset.UserAssetPreviewActivity" android:screenOrientation="userPortrait" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.unifyagent.share.AiLabAgentShareActivity" android:screenOrientation="userPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.ailabagent.common.history.HistoryActivity" android:screenOrientation="userPortrait" android:theme="@style/APKTOOL_RENAMED_0x7f13001f" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.edit.EditActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.edit.editpage.activity.EditActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.edit.livephoto.activity.LiveEditActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:launchMode="singleTop" android:name="com.vega.edit.video.view.VideoFrameAdjustActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:launchMode="singleTop" android:name="com.vega.edit.outpainting.activity.VideoFrameAdjustNewActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:launchMode="singleTop" android:name="com.vega.edit.image.view.edits.crop.ImageCropActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.edit.video.view.ReplaceVideoSelectActivity" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.edit.TextToVideoEditActivity" android:screenOrientation="behind" android:theme="@style/kv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.edit.TextToVideoReplaceActivity" android:screenOrientation="behind" android:theme="@style/vd" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.ttv.edit.TextToVideoAddActivity" android:screenOrientation="behind" android:theme="@style/vd" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.edit.TextToVideoRecordActivity" android:screenOrientation="behind" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.edit.digitalhuman.digital.template.intelligent.detail.DigitalHumanTemplateFeedActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.image.edit.main.view.ImageEditActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.image.edit.canvasedit.partialadjust.ImageEditPartialAdjustActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTop" android:name="com.vega.edit.aiclipper.panel.aiedit.AiEditActivity" android:screenOrientation="portrait" android:theme="@style/APKTOOL_RENAMED_0x7f13001a" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTop" android:name="com.vega.edit.aiclipper.panel.aiedit.AiEditActivityV2" android:screenOrientation="portrait" android:theme="@style/APKTOOL_RENAMED_0x7f13001b" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.activity.AiChatEditSelectMediaActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.edit.materialgeneration.preview.MaterialGenerationReferencePreviewActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.edit.materialgeneration.preview.MaterialGenerationAudioTrimActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="false" android:name="com.vega.image.edit.component.debug.viewer.ImageDraftViewerActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.publish.template.publish.view.TemplatePublishActivity" android:screenOrientation="behind" android:theme="@style/kv" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.publish.template.publish.view.PublishSelectActivity" android:screenOrientation="behind" android:theme="@style/vd" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.publish.template.publish.view.TeamTemplatePublishEditActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.publish.template.publish.view.SelectTutorialMaterialActivity" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.publish.template.publish.view.ManageTutorialMaterialActivity" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.publish.aipost.preview.view.AIPostPreviewActivity" android:screenOrientation="locked" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.vega.templatepublish.musicreplace.ReplaceMusicActivity" android:screenOrientation="behind" android:theme="@style/up"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.multicutsame.smartvlog.view.activity.SmartVlogPreviewActivity" android:screenOrientation="portrait" android:theme="@style/ys"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.multicutsame.view.MultiCutSamePreviewActivity" android:screenOrientation="portrait" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.multitemplate.view.MultiTemplateSelectActivity" android:screenOrientation="portrait" android:theme="@style/sn"/>
+        <activity android:exported="false" android:name="com.vega.libcutsame.activity.AiGenerateResultReportActivity" android:screenOrientation="portrait" android:theme="@style/kb"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.vega.libcutsame.activity.LiteEditorActivity" android:screenOrientation="portrait" android:theme="@style/up"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.libcutsame.select.view.CutSameSelectMediaActivity" android:screenOrientation="portrait" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.libcutsame.select.view.CutSameSelectMediaWithoutSelectMediaActivity" android:screenOrientation="locked" android:theme="@style/fs"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.libcutsame.select.view.CutSameQuickShootActivity" android:screenOrientation="portrait" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.libcutsame.activity.CutSameReplaceMediaActivity" android:screenOrientation="portrait" android:theme="@style/sm"/>
+        <activity android:name="com.vega.libcutsame.activity.CutSameLoadDraftActivity" android:theme="@style/wk"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.vega.libcutsame.activity.RecordSamePreviewActivity" android:screenOrientation="portrait" android:theme="@style/up"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.retouch.template.RetouchReplacePhotoActivity" android:screenOrientation="locked" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.retouch.RetouchTemplateImageGalleryActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.retouch.RetouchEditorImageGalleryActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.libcutsame.template.mediaselect.ScriptTemplateMediaSelectActivity" android:screenOrientation="locked" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.libcutsame.marketingscript.mediaselect.addselect.MarketingScriptAddSelectActivity" android:screenOrientation="locked" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.vega.libcutsame.marketingscript.mediaselect.metainfo.MetaInfoInputActivity" android:screenOrientation="locked" android:theme="@style/fs"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.libcutsame.smarttemplate.mediaselect.SmartTemplateSelectMediaActivity" android:screenOrientation="portrait" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.libcutsame.smarttemplate.mediaselect.addselect.SmartTemplateAddSelectActivity" android:screenOrientation="locked" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.libcutsame.home.HomeAiEffectMediaSelectActivity" android:screenOrientation="portrait" android:theme="@style/sm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.libcutsame.activity.DraftMediaSelectActivity" android:screenOrientation="behind" android:theme="@style/vd" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.vega.libcutsame.aiworkflow.view.FlexActivity" android:screenOrientation="locked" android:theme="@style/fs" android:windowSoftInputMode="stateAlwaysVisible|adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.libcutsame.aiworkflow.view.ImagePreviewActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.aigc.ImageTemplatePreviewActivity" android:screenOrientation="portrait" android:theme="@style/up" android:windowSoftInputMode="adjustNothing"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.vega.share.third.ShareOtherReceiver"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="com.vega.share.bdopen.BdEntryActivity" android:screenOrientation="behind" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.vega.share.lemon8.BackFromLemon8Activity" android:screenOrientation="behind" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.vega.share.bdopen.ProxyActivity" android:theme="@style/fs"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider163543514909045" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.nativesettings.SettingCloneActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.nativesettings.personal.PersonalSettingActivity" android:screenOrientation="behind" android:theme="@style/kv" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.nativesettings.BaseNewDeveloperActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.nativesettings.language.AppLanguageChooseActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.nativesettings.region.AppRegionChooseActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.nativesettings.SettingActivity" android:screenOrientation="behind" android:theme="@style/kv" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:name="com.lemon.faceuassist.FaceuAssistMainActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:exported="false" android:name="com.vega.feedback.myfeedback.MyFeedbackActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedback.FeedbackTagActivity" android:screenOrientation="behind" android:theme="@style/tk"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.nativesettings.privacy.TermsPoliciesActivity" android:screenOrientation="behind" android:theme="@style/tk"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.feedback.FeedbackActivity" android:theme="@style/APKTOOL_RENAMED_0x7f13018d" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <service android:name="com.vega.recorder.service.prompt.FloatPromptService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.recorder.MainCameraSelectActivity" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:name="com.vega.recorder.LvRecordActivity" android:screenOrientation="portrait" android:theme="@style/kv">
+            <intent-filter>
+                <action android:name="record_sdk_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vega.recorder.LVSinglePlayActivity" android:screenOrientation="portrait" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.recorder.scan.ScanActivity" android:screenOrientation="portrait" android:theme="@style/vo"/>
+        <activity android:name="com.vega.recorder.media.player.LocalVideoPlayerActivity" android:screenOrientation="portrait" android:theme="@style/kv"/>
+        <activity android:name="com.vega.recorder.effect.props.view.GreenScreenMediaActivity" android:screenOrientation="portrait" android:theme="@style/kv"/>
+        <activity android:name="com.vega.recorder.view.selector.SelectorPreviewActivity" android:screenOrientation="portrait" android:theme="@style/kv"/>
+        <activity android:name="com.vega.recorder.view.digitalhuman.DigitalPicturePreviewActivity" android:screenOrientation="portrait" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.recorder.WrapperActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.recorder.view.prompt.edit.RecorderPromptDraftActivity" android:resizeableActivity="true" android:screenOrientation="locked" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.recorder.view.prompt.edit.RecorderPromptEditActivity" android:resizeableActivity="true" android:screenOrientation="locked" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.vega.aicreator.ui.activity.AiStoryVoiceOverSelectActivity" android:theme="@style/ka"/>
+        <activity android:name="com.vega.adeditor.part.AdPartEditMySceneActivity"/>
+        <activity android:name="com.vega.adeditor.part.AdPartPromptActivity"/>
+        <activity android:name="com.vega.adeditor.part.AdPartMyScenePreviewActivity"/>
+        <activity android:name="com.vega.adeditor.maker.crop.AdCropActivity"/>
+        <activity android:name="com.vega.adeditor.voiceover.VoiceoverEditActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.vega.adeditor.component.view.AdComponentEditActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.vega.adeditor.debug.SmartAdDebugActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.adeditor.maker.AdMakerActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.adeditor.smartad.preview.SmartAdPreviewActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.adeditor.smartad.preview.MultiSmartAdPreviewActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.adeditor.adscript.view.AdScriptLoadingActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.adeditor.scripttovideo.ScriptToVideoLoadingActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.adeditor.scriptvideo.CapcutScriptVideoEditorActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.adeditor.scriptvideo.gallery.ScriptVideoMediaSelectActivityV2" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:launchMode="singleTop" android:name="com.vega.cutsameedit.biz.smartvlog.compose.SmartVlogLoadingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.vega.cutsameedit.biz.template.compose.loading.LoadingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.vega.cutsameedit.biz.marketingscript.business.BusinessVideoLoadingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.cutsameedit.biz.textstart.TextStartLoadingActivity" android:screenOrientation="fullSensor"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.cutsameedit.biz.digitalhuman.loading.DigitalHumanTemplateLoadingActivity" android:screenOrientation="fullSensor"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.commonedit.commoneditor.CommonEditorMainActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.commonedit.commoneditor.nativeimpl.CommonEditorMainActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.vega.recordedit.ui.AdCubeVideoPreviewActivity" android:screenOrientation="portrait" android:theme="@style/d2" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.vega.recordedit.ui.CameraPreviewEditActivity" android:screenOrientation="portrait" android:theme="@style/d2" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTask" android:name="com.vega.edit.activity.CutSameEditActivity" android:theme="@style/fs"/>
+        <activity android:launchMode="singleTask" android:name="com.vega.edit.activity.ScriptVideoCutActivity" android:theme="@style/fs"/>
+        <activity android:name="com.vega.edit.alive.ExportNotificationDispatchActivity" android:theme="@style/fs"/>
+        <activity android:exported="false" android:name="com.vega.edit.aigenerator.activity.AIPaintingActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:exported="false" android:name="com.vega.edit.aigenerator.activity.AIPaintingIntroActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.vega.edit.aitranslator.activity.AITranslatorMainActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:exported="false" android:name="com.vega.edit.aitranslator.activity.AITranslatorTaskListActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:exported="false" android:name="com.vega.edit.aitranslator.activity.AITranslatorAuthRecordActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:exported="false" android:name="com.vega.edit.aitranslator.activity.AITranslatorResultPreviewActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:launchMode="singleTop" android:name="com.vega.edit.outpainting.activity.AIExpandActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.edit.aivideodriver.view.AiVideoDriverSelectMediaActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.edit.aivideodriver.view.DigitalHumanFamilyPictureGalleryActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <service android:name="com.vega.edit.service.LogicDispatchService"/>
+        <activity android:label="@string/rll" android:launchMode="singleTask" android:name="com.lemon.account.view.LoginActivity" android:screenOrientation="portrait" android:theme="@style/ua"/>
+        <activity android:label="@string/rll" android:launchMode="singleTask" android:name="com.lemon.account.LoginWithAtmosphereActivity" android:screenOrientation="portrait" android:theme="@style/ub"/>
+        <activity android:exported="false" android:name="com.lemon.neoaccount.impl.step.auth.NeoAccountAuthActivity" android:theme="@style/kv"/>
+        <activity android:exported="false" android:name="com.lemon.neoaccount.impl.process.firstlogin.FirstLoginActivity" android:screenOrientation="portrait" android:theme="@style/kv" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:exported="false" android:label="StepTestActivity" android:name="com.lemon.neoaccount.impl.test.NeoLoginTestActivity"/>
+        <activity android:exported="false" android:label="BirthdayStepTestActivity" android:name="com.lemon.neoaccount.impl.step.birthday.ThirdBirthdayProxyActivity"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/APKTOOL_RENAMED_0x7f121275"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/APKTOOL_RENAMED_0x7f121276"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="" android:name="com.facebook.FacebookActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304c9"/>
+        <activity android:name="com.lemon.account.BirthdayActivity" android:theme="@style/cp"/>
+        <activity android:name="com.lemon.account.LaunchBirthdayActivity" android:theme="@style/cp"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.lemon.account.TiktokEntryActivity" android:screenOrientation="portrait" android:theme="@style/cp">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="oauthresponse" android:scheme="capcutlogintt"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.capcut.com" android:path="/tt-login/oauthresponse" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.capcut.net" android:path="/imlv/thirdparty-auth-redirect" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.capcut.net" android:path="/imlv/inhouse/thirdparty-auth-redirect" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="response.bridge.tiktok.com" android:scheme="awfobz8zx3rodolu"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="response.bridge.tiktok.com" android:scheme="aw889s25wozf8s7e"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/rll" android:launchMode="singleTask" android:name="com.lemon.account.ToolCountryLoginActivity" android:screenOrientation="portrait" android:theme="@style/kv"/>
+        <activity android:name="com.lemon.account.email.AccountLoginActivity" android:screenOrientation="portrait" android:theme="@style/kv" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.lemon.account.DialogContainerActivity" android:theme="@style/sr"/>
+        <activity android:name="com.lemon.account.email.EmailBindActivity" android:screenOrientation="portrait" android:theme="@style/fj" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.lemon.account.email.PasswordActivity" android:screenOrientation="portrait" android:theme="@style/fj" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.vega.libsticker.view.text.font.FontManageActivity" android:screenOrientation="behind" android:theme="@style/cp"/>
+        <activity android:launchMode="singleTop" android:name="com.vega.libsticker.view.text.font.myfont.view.AiFontGenerateActivity" android:screenOrientation="behind" android:theme="@style/cp"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="standard" android:name="com.vega.main.cloud.preview.CloudFilePreviewActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.property.optional.ui.preview.PropertyFilePreviewActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vega.property.creatives.preview.CreativesPreviewActivity" android:screenOrientation="userPortrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.vega.cloud.upload.view.UploadListActivity" android:screenOrientation="portrait" android:theme="@style/vo"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.cloud.upload.view.SelectDraftToLoadActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.cloud.group.view.GroupManagerActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.cloud.review.ShareReviewActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.main.cloud.view.CloudGroupMaterialsActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.cloud.autobackup.setting.SpaceSettingActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.cloud.brand.preview.CloudBrandEffectPreviewActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.cloud.enterprise.view.EnterpriseCreateGroupActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.cloud.enterprise.view.EnterpriseManageGroupActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.cloud.enterprise.view.EnterpriseGroupMemberManageActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.cloud.enterprise.view.EnterpriseGroupMemberAddActivity" android:screenOrientation="portrait" android:theme="@style/APKTOOL_RENAMED_0x7f1304d7" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.property.optional.ui.mydrafts.MyAllDraftActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.property.optional.ui.cloud.PropertyCloudListActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.property.optional.ui.search.activity.PropertySearchActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.property.optional.ui.media.activity.PropertyMediaActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.vega.property.optional.ui.favorites.activity.PropertyFavoriteActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.property.optional.ui.trash.activity.PropertyTrashActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.property.optional.ui.transfer.activity.PropertyTransferActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.property.optional.ui.album.PropertyLocalAlbumActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.main.aimoment.AiMomentDraftUpActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.vega.near.CaptainTransferDraftActivity" android:screenOrientation="portrait" android:theme="@style/ra" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.cloud.sharedraft.activity.ResumeSharedDraftActivity" android:screenOrientation="portrait" android:theme="@style/ka" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.vega.cloud.mainpage.CloudDraftManagerActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.cloud.upload.SelectMaterialToUploadActivity" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.cloud.group.view.GroupMemberListActivity" android:screenOrientation="portrait" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.cloud.brand.CloudBrandKitActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.cloud.activity.CloudFolderActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.property.optional.ui.home.CloudSpaceActivity" android:screenOrientation="behind" android:theme="@style/vo" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.vega.business.ad.view.HotStartSplashAdActivity" android:theme="@style/fs"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.vega.business.ad.view.AdInterceptActivity" android:theme="@style/fs"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+        <activity android:exported="false" android:name="com.vega.subscription.widget.ComposeSubscribeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.vega.subscription.deeplink.SubscribeOutsideStubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize|smallestScreenSize" android:name="com.vega.texttovideo.main.ui.TextToVideoHomeV2Activity" android:screenOrientation="locked" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize|smallestScreenSize" android:name="com.vega.texttovideo.main.ui.TextToVideoHomeV3Activity" android:screenOrientation="locked" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize|smallestScreenSize" android:name="com.vega.texttovideo.main.ui.ToneCloneArticleEditActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.vega.edward.agent.videoplayer.VideoPlayerActivity" android:screenOrientation="fullSensor" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="com.vega.audio.tone.clonetone.CloneToneActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTop" android:name="com.vega.audio.textstart.recorder.AudioRecorderActivity" android:screenOrientation="locked" android:theme="@style/kv" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.vega.audio.lipsync.RealHumanPicturePreviewActivity" android:screenOrientation="portrait" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="com.vega.audio.dubbing.page.AIDubbingActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.vega.audio.lipsync.view.DigitalHumanLipPictureGalleryActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:exported="false" android:name="com.vega.edit.cover.view.activity.CoverSelectActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:exported="false" android:name="com.vega.splitscreen.SplitScreenActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:name="com.vega.audio.musicimport.extract.ExtractGalleryMusicActivity" android:screenOrientation="behind" android:theme="@style/s7"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTop" android:name="com.vega.audio.library.AddAudioActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="com.vega.audio.library.CheckAudioActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aicreator.debug.AiCreatorDebugActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aicreator.loading.AiCreatorLoadingActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aicreator.editor.AiCreatorAIGCImagePreviewActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aicreator.preview.AiCreatorResultListActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTask" android:name="com.vega.aicreator.tasklist.AiCreatorTaskListActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aicreator.style.AiCreatorStylePreviewActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTask" android:name="com.vega.aicreator.tasklist.AiStoryCreatorTaskListActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTask" android:name="com.vega.aimoment.home.AiMomentHomeActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTask" android:name="com.vega.aimoment.home2.AiMomentHome2Activity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTask" android:name="com.vega.aimoment.feedback.AiMomentFeedbackSelectActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aimoment.gallery.AiMomentGalleryActivity" android:screenOrientation="behind" android:theme="@style/vd" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aimoment.tasklist2.AiMomentTaskListNewActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aimoment.gallery.highlight.AiMomentHighlightCutActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aimoment.multipreview.AiMomentMultiplePreviewActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aimoment.loading.AiMomentLoadingActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aimoment.gallery.AiMomentGuideVideoPreViewActivity" android:screenOrientation="behind" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.aimoment.style.AiMomentStyleVideoPreViewActivity" android:screenOrientation="behind" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.modeldressup.picturedressing.choosemodel.ChooseModelActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.modeldressup.picturedressing.result.ModelDressingResultActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.modeldressup.picturedressing.history.ModelDressingHistoryActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.smartads.ui.preview.SmartAdsV2PreviewActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.smartads.ui.loading.SmartAdsLoadingActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.smartads.ui.history.SmartAdsHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatNoActionBarTheme"/>
+        <meta-data android:name="JS_VERSION_CODE" android:value="58"/>
+        <meta-data android:name="SUPPORT_NIGHTMODE" android:value="false"/>
+        <service android:exported="false" android:name="com.lm.components.push.internal.MessageHandler">
+            <intent-filter>
+                <action android:name="com.ss.android.message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.fcm.message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.adm.message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.umeng.message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.hw.message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.mz.message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.oppo.message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.vivo.message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.aliyun.message"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:name="com.vega.libdeveloper.nativesettings.DeveloperActivity" android:screenOrientation="behind" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.adeditor.scriptvideo.OverdubToneRecordActivity" android:screenOrientation="behind" android:theme="@style/vd"/>
+        <activity android:name="com.vega.commonedit.digitalhuman.preview.DigitalPreviewActivity" android:screenOrientation="portrait" android:theme="@style/kv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:name="com.vega.commonedit.digitalhuman.customize.upload.CustomizedProgressActivity" android:screenOrientation="locked" android:theme="@style/AppCompatNoActionBarTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.commonedit.digitalhuman.customize.gallery.DigitalHumanCustomizeGalleryActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.commonedit.digitalhuman.picture.gallery.DigitalHumanPictureGalleryActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:name="com.vega.audio.tone.tts.debug.ToneDebugActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.vega.edward.templatecore.editor.edit.MinimalEditorActivity"/>
+        <activity android:name="com.vega.gallery.GalleryActivity" android:screenOrientation="portrait" android:theme="@style/te"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.ui.SingleImageGalleryActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.ui.SingleVideoGalleryActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.ui.SelectMediaGalleryActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.ui.BottomSheetAlbumActivity" android:screenOrientation="locked" android:theme="@style/ka"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.ui.SimpleMediaPreviewActivity" android:screenOrientation="locked" android:theme="@style/vd"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.main.MainMediaActivity" android:screenOrientation="locked" android:theme="@style/yn"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.vega.gallery.ui.MultiImageSelectActivity" android:screenOrientation="locked" android:theme="@style/vc" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.lemon.safemode.ui.SafeModeActivity" android:process=":safemode" android:screenOrientation="portrait" android:theme="@style/xw" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.lemon.safemode.mock.SafeModeMockActivity"/>
+        <service android:name="com.vega.alive.service.KeepAliveService"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.vega.alive.service.NewKeepAliveService"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="c2f1e56b87f257275fbf44a1fc067e0b"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:launchMode="standard" android:name="com.xt.edit.EditActivity" android:screenOrientation="portrait" android:theme="@style/APKTOOL_RENAMED_0x7f13045b" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.edit.design.stickercenter.MaterialCenterActivity" android:theme="@style/APKTOOL_RENAMED_0x7f13047d"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.edit.design.stickercenter.albumdetail.AlbumDetailActivity" android:theme="@style/APKTOOL_RENAMED_0x7f13047d"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.edit.design.cutout.CutoutActivity" android:theme="@style/APKTOOL_RENAMED_0x7f130479"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.edit.design.cutout.CutoutPicEditActivity" android:theme="@style/APKTOOL_RENAMED_0x7f130479"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.edit.design.cutout.piceditor.PicCutoutActivity" android:theme="@style/APKTOOL_RENAMED_0x7f130479"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:launchMode="singleTask" android:name="com.xt.edit.design.cutout.common.CommonCutoutActivity" android:screenOrientation="portrait" android:theme="@style/APKTOOL_RENAMED_0x7f130479"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:launchMode="singleTask" android:name="com.xt.edit.design.cutout.aipadding.AiPaddingActivity" android:screenOrientation="portrait" android:theme="@style/APKTOOL_RENAMED_0x7f130479"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:launchMode="singleTask" android:name="com.xt.edit.aigc.loading.AIGCLoadingActivity" android:screenOrientation="portrait" android:theme="@style/APKTOOL_RENAMED_0x7f130479"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="com.xt.retouch.applauncher.core.NotifyActivity" android:theme="@style/APKTOOL_RENAMED_0x7f13047a">
+            <intent-filter>
+                <action android:name="com.ss.android.sdk.snssdk2515"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="snssdk2515"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="firebase_data_collection_default_enabled" android:value="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:launchMode="singleTask" android:name="com.xt.retouch.export.impl.aigc.AiImageExportActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.gallery.refactor.GalleryActivity2" android:screenOrientation="portrait" android:theme="@style/APKTOOL_RENAMED_0x7f13047a"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.gallery.refactor.PermissionActivity" android:theme="@style/APKTOOL_RENAMED_0x7f130482"/>
+        <activity android:name="com.xt.retouch.feed.impl.avatar.AvatarCropActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.TemplateChooseTopicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.TemplateTopicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.TemplateSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.TemplateDetailActivity" android:theme="@style/b7" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.SharePanelActivity" android:theme="@style/b7" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.UserHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.MessageCenterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.TemplateFeedActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.FollowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.ProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.ProfileEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.CreatorCourseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.xt.retouch.feed.impl.DataCenterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.aimodel.impl.AiModelActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.web.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.web.UserAgreementWebActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.debug.DevModelActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xt.retouch.debug.TemplateDebugActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.xt.retouch.aiposter.impl.retouch.AIPosterActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.draftbox.ui.DraftBoxActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.settings.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.settings.account.AccountAndSafeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.settings.dev.DevModelActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.settings.clipboard.ClipboardSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.settings.haptic.HapticFeedbackPreferenceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.settings.bcswitch.BCSwitchActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.lm.components.announce.view.AnnounceActivity" android:theme="@style/APKTOOL_RENAMED_0x7f130463"/>
+        <activity android:name="com.xt.retouch.subscribe.impl.ui.SubscribeDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="false" android:name="com.xt.retouch.lynx.impl.LynxActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="com.xt.retouch.lynx.impl.LynxActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xt.retouch.lynx.impl.common.container.LynxCommonActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.xt.retouch.lynx.impl.common.container.LynxCommonTransparentActivity" android:theme="@style/APKTOOL_RENAMED_0x7f13047c"/>
+        <activity android:name="com.xt.retouch.beautyAllProducer.ProducerActivity"/>
+        <activity android:exported="false" android:name="com.xt.retouch.lynx.api.LynxActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:name="com.bytedance.vega.ug.appwidget.callback.AppWidgetInstallReceiver" android:permission="android.permission.BIND_APPWIDGET"/>
+        <service android:name="com.lm.components.push.MainProcessWsChannelService"/>
+        <service android:name="com.lm.components.push.MainRedBadgePushProcessService"/>
+        <service android:name="com.bytedance.vega.ug.push.alive.instr.service.MainProcessService" android:stopWithTask="true"/>
+        <service android:name="com.bytedance.vega.ug.push.alive.instr.service.PushProcessService" android:process=":push" android:stopWithTask="true"/>
+        <receiver android:exported="false" android:name="com.bytedance.vega.ug.push.notification.NotificationButtonClickBroadcastReceiver"/>
+        <receiver android:exported="false" android:name="com.bytedance.vega.ug.push.notification.NotificationDeleteBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.lemon.lvoverseas.vage.pushnotification.delete.action"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bytedance.vega.ug.push.notification.activity.PushNotificationActivity" android:screenOrientation="behind" android:theme="@style/rz"/>
+        <provider android:authorities="com.lemon.lvoverseas.depths.i18n.account.provider.smp" android:enabled="true" android:exported="true" android:name="com.bytedance.android.push.depths.i18n.account.smp.SmpDepthsI18nAccountStubProvider" android:process=":smp" android:syncable="true">
+            <meta-data android:name="android.content.ContactDirectory" android:value="true"/>
+        </provider>
+        <service android:enabled="true" android:exported="true" android:name="com.bytedance.android.push.depths.i18n.account.smp.SmpDepthsI18nAccountSyncService" android:process=":smp">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/h"/>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.bytedance.android.push.depths.i18n.account.smp.SmpDepthsI18nAccountAuthenticatorService" android:process=":smp">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/g"/>
+        </service>
+        <provider android:authorities="com.lemon.lvoverseas.depths.i18n.account.provider.push" android:enabled="true" android:exported="true" android:name="com.bytedance.android.push.depths.i18n.account.push.PushDepthsI18nAccountStubProvider" android:process=":push" android:syncable="true">
+            <meta-data android:name="android.content.ContactDirectory" android:value="true"/>
+        </provider>
+        <service android:enabled="true" android:exported="true" android:name="com.bytedance.android.push.depths.i18n.account.push.PushDepthsI18nAccountSyncService" android:process=":push">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/c"/>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.bytedance.android.push.depths.i18n.account.push.PushDepthsI18nAccountAuthenticatorService" android:process=":push">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/b"/>
+        </service>
+        <provider android:authorities="com.lemon.lvoverseas.depths.i18n.account.provider.main" android:enabled="true" android:exported="true" android:name="com.bytedance.android.push.depths.i18n.account.main.MainDepthsI18nAccountStubProvider" android:syncable="true">
+            <meta-data android:name="android.content.ContactDirectory" android:value="true"/>
+        </provider>
+        <service android:enabled="true" android:exported="true" android:name="com.bytedance.android.push.depths.i18n.account.main.MainDepthsI18nAccountSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/u"/>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.bytedance.android.push.depths.i18n.account.main.MainDepthsI18nAccountAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/t"/>
+        </service>
+        <service android:exported="false" android:name="com.bytedance.vega.ug.push.process.service.CrossProcessServiceForMain"/>
+        <service android:exported="false" android:name="com.bytedance.vega.ug.push.process.service.CrossProcessServiceForPush" android:process=":push"/>
+        <service android:exported="false" android:name="com.bytedance.vega.ug.push.process.service.CrossProcessServiceForSmp" android:process=":smp"/>
+        <service android:name="com.bytedance.vega.ug.push.process.service.MainProcessEventService" android:stopWithTask="true"/>
+        <activity android:label="@string/APKTOOL_RENAMED_0x7f1215b7" android:name="com.lm.components.lynx.debug.DebugToolActivity" android:screenOrientation="portrait" android:theme="@style/vm" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:label="JSON Viewer" android:name="com.lm.components.lynx.debug.JSONViewerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.lm.components.permission.PermissionProxyActivity" android:theme="@style/wr"/>
+        <activity android:name="com.lm.components.permission.PermissionGuideActivity" android:theme="@style/wr"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.bytedance.pipo.common.ability.wallet.PIPOWalletDispatcherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pipopay" android:path="/ewallet/webview" android:scheme="pipohybridsdk3006"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.bytedance.hybrid.spark.page.SparkActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.ttadn.activity.TTLandingPageActivity" android:theme="@style/tt_landing_page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.ttadn.activity.TTIABHostActivity" android:theme="@style/tt_landing_page"/>
+        <activity android:launchMode="standard" android:name="com.bytedance.sdk.ttadn.activity.TTWebsiteActivity" android:screenOrientation="portrait" android:theme="@style/tt_privacy_landing_page"/>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.bytedance.sdk.ttadn.activity.AboutThisAdActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.bytedance.sdk.ttadn.activity.TikTokPrivacyPolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.bytedance.sdk.ttadn.activity.TikTokReportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bytedance.gmtcommerce.iab.impl.ui.AdWebSparkActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.bytedance.gmtcommerce.iab.impl.history.AdWebHistoryActivity" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="com.lemon.lvoverseas.apm" android:exported="false" android:name="com.bytedance.apm.battery.dao.MonitorContentProvider"/>
+        <provider android:authorities="com.lemon.lvoverseas.apm6" android:exported="false" android:name="com.bytedance.apm.util.MultiProcessSharedPreferences"/>
+        <service android:exported="false" android:name="com.bytedance.memory.upload.MemoryUploadService" android:process=":apm_memory_upload"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.ss.android.ugc.aweme.rich.reward.ui.RewardAdActivity" android:screenOrientation="behind"/>
+        <activity android:name="com.ss.android.ShowDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <provider android:authorities="com.lemon.lvoverseas.TicketGuardProvider" android:exported="false" android:name="com.bytedance.android.sdk.ticketguard.TicketGuardProvider"/>
+        <receiver android:exported="false" android:name="com.bytedance.ies.xelement.defaultimpl.player.impl.plugin.mediasession.MediaSessionReceiver"/>
+        <service android:name="com.bytedance.ies.xelement.defaultimpl.player.impl.plugin.mediasession.session.MediaSessionService"/>
+        <activity android:launchMode="singleTop" android:multiprocess="true" android:name="com.bytedance.bdturing.twiceverify.TwiceVerifyWebActivity" android:theme="@style/APKTOOL_RENAMED_0x7f130558" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="net.openid.appauth.AuthorizationManagementActivity" android:theme="@style/b8"/>
+        <activity android:exported="true" android:name="net.openid.appauth.RedirectUriReceiverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.lemon.lvoverseas"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bytedance.pipo.iapsolution.iap.TransparentActivity" android:screenOrientation="portrait" android:theme="@style/df"/>
+        <activity android:name="com.ss.android.deviceregister.AActivity"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.bytedance.applog.collector.Collector"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.lemon.lvoverseas" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.bytedance.common.wschannel.server.WsChannelService" android:process=":push" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.bytedance.common.wschannel.client.WsClientService" android:stopWithTask="true"/>
+        <provider android:authorities="com.lemon.lvoverseas.WsChannelMultiProcessSharedProvider" android:exported="false" android:name="com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bytedance.push.notification.PushActivity" android:screenOrientation="behind" android:theme="@style/ry">
+            <intent-filter>
+                <action android:name="com.lemon.lvoverseas.pushsdk.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.ss.android.push.DefaultReceiver"/>
+        <service android:name="com.ss.android.push.DefaultService"/>
+        <service android:exported="false" android:name="com.ss.android.newmedia.redbadge.RedbadgeHandler">
+            <intent-filter>
+                <action android:name="com.ss.android.redbadge.message"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ss.android.newmedia.redbadge.RedBadgePushProcessService"/>
+        <activity android:name="com.bytedance.bdinstall.migrate.MigrateDetectorActivity"/>
+        <provider android:authorities="com.lemon.lvoverseas.bdinstall.provider" android:exported="false" android:name="com.bytedance.bdinstall.BDInstallProvider"/>
+        <provider android:authorities="com.lemon.lvoverseas.push.SHARE_PROVIDER_AUTHORITY" android:exported="false" android:name="com.ss.android.pushmanager.setting.PushMultiProcessSharedProvider"/>
+        <provider android:authorities="com.lemon.lvoverseas.push.settings" android:exported="false" android:name="com.bytedance.push.settings.storage.PushProvider"/>
+        <activity android:name="com.bd_hub_splash_sdk.SplashPrivacyPolicyActivity"/>
+        <activity android:name="com.bd_hub_splash_sdk.SplashAboutThisAdActivity"/>
+        <service android:exported="false" android:name="com.fcm.service.SSGcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.fcm.service.FcmRegistrationJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.functions.ktx.FirebaseFunctionsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.ktx.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/q"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <provider android:authorities="com.lemon.lvoverseas.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="8.2.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.lemon.lvoverseas.applovininitprovider" android:exported="false" android:initOrder="101" android:name="com.applovin.sdk.AppLovinInitProvider"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenImmersiveActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.sdk.AppLovinWebViewActivity"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerDetailActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerUnifiedFlowActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.mediation.MaxDebuggerWaterfallSegmentsActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b5"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.creative.MaxCreativeDebuggerActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b0"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" android:theme="@style/APKTOOL_RENAMED_0x7f1304b0"/>
+        <service android:exported="false" android:name="com.applovin.impl.adview.activity.FullscreenAdService" android:stopWithTask="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enableOnBackInvokedCallback="false" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.lemon.lvoverseas.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.lemon.lvoverseas.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/m" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/o" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/n" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/m" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.lemon.lvoverseas.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/kd"/>
+        <provider android:authorities="com.lemon.lvoverseas.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.vungle.ads.internal.ui.VungleActivity"/>
+        <provider android:authorities="com.lemon.lvoverseas.vungle-provider" android:exported="false" android:initOrder="102" android:name="com.vungle.ads.VungleProvider"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <meta-data android:name="com.bytedance.sdk.pangle.version" android:value="7.1.6.4"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTCeilingLandingPageActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" android:theme="@style/tt_landing_page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" android:theme="@style/tt_landing_page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity" android:theme="@style/tt_landing_page"/>
+        <activity android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" android:screenOrientation="portrait" android:theme="@style/tt_privacy_landing_page"/>
+        <service android:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity" android:theme="@style/tt_app_open_ad_no_animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity" android:theme="@style/tt_full_screen_interaction"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity" android:theme="@style/tt_full_screen_interaction"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTAdActivity" android:theme="@style/tt_full_screen_new"/>
+        <provider android:authorities="com.lemon.lvoverseas.auth_token.SHARE_PROVIDER_AUTHORITY" android:exported="false" android:name="com.ss.android.token.AuthTokenMultiProcessSharedProvider"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" android:process=":downloader">
+            <intent-filter>
+                <action android:name="com.ss.android.socialbase.downloader.remote"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService" android:stopWithTask="true"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.DownloadService" android:stopWithTask="true"/>
+        <service android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService" android:stopWithTask="true"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" android:stopWithTask="true"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <activity android:launchMode="singleTask" android:name="com.bytedance.mtesttools.act.TestToolMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bytedance.mtesttools.act.AdnMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bytedance.mtesttools.act.SelectTestModeAdnActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bytedance.mtesttools.act.AdnDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bytedance.mtesttools.act.AdRitDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bytedance.mtesttools.act.AdSlotDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bytedance.mtesttools.act.ShowConfigDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bytedance.mtesttools.act.SettingsDetailActivity" android:screenOrientation="portrait"/>
+        <uses-library android:name="com.oppo.hyberboost.unit.sdk" android:required="false"/>
+        <activity android:launchMode="singleTask" android:name="com.bytedance.praisedialoglib.ui.PraiseDialogActivity" android:theme="@style/w0"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/db"/>
+        <activity android:configChanges="keyboard|orientation" android:exported="false" android:name="com.mbridge.msdk.activity.MBCommonActivity" android:theme="@style/mbridge_transparent_common_activity_style"/>
+        <activity android:name="com.mbridge.msdk.out.LoadingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.mbridge.msdk.foundation.same.broadcast.NetWorkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base,df_commerce,df_common,df_edit,df_pitaya,df_resources,df_ship1,df_ship2,df_ship3,df_ship4,df_template"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@com.lemon.lvoverseas.df_common:xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

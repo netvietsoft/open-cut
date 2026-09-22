@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/v_bg" n0:background="#80000000" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kw3" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="40.0dp">
+        <FrameLayout n0:id="@id/top_bar" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.vega.ui.AlphaButton n0:id="@id/btn_add_member_close" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m6d" />
+            <TextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/APKTOOL_RENAMED_0x7f121f09" n0:singleLine="true" n0:includeFontPadding="false" />
+        </FrameLayout>
+        <View n0:background="@color/fx" n0:layout_width="match_parent" n0:layout_height="0.5dp" n2:layout_constraintTop_toBottomOf="@id/top_bar"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/infoContainer" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toBottomOf="@id/top_bar"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/fl_search_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n3:layout_constraintTop_toTopOf="parent">
+                <FrameLayout n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+                    <EditText n0:textSize="15.0dp" n0:textStyle="bold" n0:textColor="@color/_3" n0:textColorHint="#6618334e" n0:id="@id/et_filter" n0:background="@drawable/kwh" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:hint="@string/APKTOOL_RENAMED_0x7f121f14" n0:singleLine="true" n0:textCursorDrawable="@drawable/qbb" n0:paddingStart="16.0dp" n0:paddingEnd="30.0dp" />
+                    <ImageView n0:layout_gravity="end|center" n0:id="@id/iv_cloud_search_or_clear" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/l5_" n0:layout_marginEnd="8.0dp" />
+                </FrameLayout>
+                <TextView n0:textStyle="bold" n0:textColor="#090c14" n0:layout_gravity="center_vertical" n0:id="@id/tv_exit_search_mode" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:layout_marginStart="10.0dp" />
+            </LinearLayout>
+            <TextView n0:textStyle="bold" n0:textColor="#757580" n0:ellipsize="end" n0:id="@id/tv_member_count" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="18.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="8.0dp" n0:maxLines="1" n0:singleLine="true" n0:layout_marginHorizontal="16.0dp" n3:layout_constraintTop_toBottomOf="@id/fl_search_container" />
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_member_list" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="8.0dp" n0:overScrollMode="never" n3:layout_constraintBottom_toTopOf="@id/ll_member_operation_container" n3:layout_constraintTop_toBottomOf="@id/tv_member_count" />
+            <LinearLayout n0:gravity="top" n0:orientation="horizontal" n0:id="@id/ll_member_operation_container" n0:paddingLeft="20.0dp" n0:paddingTop="8.0dp" n0:paddingRight="20.0dp" n0:layout_width="match_parent" n0:layout_height="81.0dp" n0:paddingHorizontal="20.0dp" n3:layout_constraintBottom_toBottomOf="parent">
+                <com.vega.ui.StrongButton n0:enabled="false" n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/sb_add_member" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c7e" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f121f10" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout n0:id="@id/loadingContainer" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/top_bar"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

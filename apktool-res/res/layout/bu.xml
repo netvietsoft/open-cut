@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/rename_root" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/rename_sheet" n0:background="@drawable/kkv" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <View n0:layout_gravity="center_horizontal" n0:background="@drawable/kkr" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" />
+        <TextView n0:textAppearance="?kck" n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/rename_title" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/k95" />
+        <FrameLayout n0:background="@drawable/kku" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <EditText n0:textAppearance="?kck" n0:textSize="16.0dp" n0:textColor="#090c14" n0:id="@id/rename_input" n0:background="@null" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:singleLine="true" n0:maxLength="50" n0:inputType="text" n0:paddingStart="12.0dp" n0:paddingEnd="84.0dp" n0:importantForAutofill="no" />
+            <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="end" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:paddingEnd="4.0dp">
+                <TextView n0:textAppearance="?kcn" n0:textSize="12.0dp" n0:textColor="#801c283d" n0:id="@id/rename_counter" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                <ImageView n0:id="@id/rename_clear" n0:padding="6.0dp" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/mgf" n0:contentDescription="@null" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView n0:textAppearance="?kck" n0:textSize="16.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/rename_confirm" n0:background="@drawable/kkt" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/k94" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+</FrameLayout>

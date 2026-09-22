@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/srl_favorite_template_fragment" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_behavior="@string/appbar_scrolling_view_behavior" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.refresh.RefreshHeaderView n0:layout_width="match_parent" n0:layout_height="60.0dp" />
+        <FrameLayout n0:id="@id/fragment_container_favorite_template" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.vega.property.optional.ui.common.view.PropertyListEmptyView n0:id="@id/plev_favorite_template" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

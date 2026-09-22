@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingLeft="6.0dp" n0:paddingRight="6.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:paddingHorizontal="6.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/sl_emotion" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="@dimen/uy" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/uj"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/ww" n0:gravity="center" n0:id="@id/vtv_emotion" n0:paddingLeft="14.0dp" n0:paddingTop="4.0dp" n0:paddingRight="14.0dp" n0:paddingBottom="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="36.0dp" n0:paddingHorizontal="14.0dp" n0:paddingVertical="4.0dp" n1:k1i="medium" />
+    </com.vega.lvui.view.MaterialSelectableLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_status_view" n0:background="@drawable/lcf" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/sl_emotion" n2:layout_constraintEnd_toEndOf="@id/sl_emotion" n2:layout_constraintStart_toStartOf="@id/sl_emotion" n2:layout_constraintTop_toTopOf="@id/sl_emotion"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/lav_loading" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:lottie_autoPlay="true" n2:lottie_fileName="circle_loading_w.json" n2:lottie_loop="true" />
+        <ImageView n0:id="@id/iv_retry" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/ncr" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

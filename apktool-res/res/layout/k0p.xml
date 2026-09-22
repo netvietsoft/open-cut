@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/cloud_home_banner_layout" n0:background="#e5edff" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/iv_banner_tips_icon_relativeLayout" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/iv_banner_tips_icon_anim" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_centerVertical="true" n1:lottie_autoPlay="true" n1:lottie_fileName="cloud_upload_banner_icon.json" n1:lottie_loop="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_banner_tips_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/fi" n0:ellipsize="marquee" n0:id="@id/tv_banner_text" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n0:layout_toStartOf="@id/tv_goto_detail" n0:layout_toEndOf="@id/iv_banner_tips_icon_relativeLayout" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#2668ff" n0:id="@id/tv_goto_detail" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lil" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+    <ImageView n0:id="@id/iv_cloud_banner_close" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/l6w" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

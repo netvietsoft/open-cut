@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="start|bottom" n0:id="@id/iv_undownload" n0:background="@drawable/nmb" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginBottom="6.0dp" n0:layout_marginStart="6.0dp" />
+    <com.vega.main.widget.DownloadProcessView n0:layout_gravity="start|bottom" n0:id="@id/download_process" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginBottom="6.0dp" n0:layout_marginStart="6.0dp" />
+</merge>

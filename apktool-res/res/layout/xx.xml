@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/web_activity_group_container" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/tob_bg_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f08054b" n0:layout_width="match_parent" n0:layout_height="8.0dp" />
+    <com.bytedance.bdturing.VerifyWebView n0:id="@id/bdturing_webview" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</LinearLayout>

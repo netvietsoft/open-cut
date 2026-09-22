@@ -1,0 +1,35 @@
+id: TASK-027-PIP-CHROMA-CURVESPEED-SMARTCUTOUT
+title: "Triển Khai Lớp Phủ Đa Tầng (PIP Overlay), Khóa Phông Nâng Cao (Chroma Key Advanced), Tốc Độ Đường Cong (Custom Bezier Curve Speed), Tách Nền AI (Smart Cutout) và Lọc Ồn DSP"
+status: done
+assignee: "Agent 0, Agent 1, Agent 3, Agent 6, Agent 10, Agent 11, Agent 12"
+created_at: "2026-09-18T22:50:00Z"
+completed_at: "2026-09-18T23:45:00Z"
+priority: CRITICAL
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/EffectRegistry.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/MiddleBridgeJni.java"
+  - "TASK_LOG.md"
+  - "UPDATETODOS.md"
+  - "PROJECT_MEMORY.md"
+  - "Docs/Changelog/CHANGELOG.md"
+  - ".ai/**"
+requirements:
+  - "1. Lớp Phủ Đa Tầng (PIP Multi-Track Overlay): Nút 'Lớp phủ' (toolOverlay) trong thanh công cụ chính cho phép chọn video/ảnh nạp vào dải PIP Track hiển thị song song bên dưới Main Track; Canvas Player hỗ trợ hiển thị PIP thu nhỏ ở góc hoặc đè lên video chính kèm chế độ hòa trộn (Normal, Screen, Multiply, Overlay)."
+  - "2. Khóa Phông Nâng Cao (Advanced Chroma Key): Mở rộng ngăn kéo Khóa Phông với Ống hút màu tùy biến (Color Pipette) chọn màu bất kỳ từ màn hình + Thanh trượt Cường độ (Intensity 0-100) + Thanh trượt Bóng (Shadow 0-100) + Khử lem màu (Spill Reduction)."
+  - "3. Tốc Độ Đường Cong Bezier (Custom Curve Speed 0.1x - 100x): Nâng cấp ngăn kéo Tốc độ với 2 tab 'Bình thường' (0.1x - 100x) và 'Uốn cong' (Curve) chứa 6 Presets CapCut (Tùy chỉnh, Montage, Bullet Time, Hero, Flash In, Jump Cut) kèm tương tác đồ thị Bezier."
+  - "4. Tách Nền AI Thông Minh (Smart Cutout / AI Matting): Nhận diện chân dung người tự động tách phông trong 1 chạm + 4 kiểu Viền sáng nét (Neon Stroke, Dot Dash, Glow, Drop Shadow)."
+  - "5. Lọc Ồn DSP & Tách Giọng Nói (Noise Reduction & Vocal Isolation): Nút 'Giảm ồn' trong menu Âm thanh kích hoạt bộ lọc âm DSP khử tạp âm nền + 'Tách giọng nói' (Tách Vocal / Tách Nhạc nền)."
+  - "6. Chú thích song ngữ EN + VN cho 100% hàm, class và mã nguồn mới."
+  - "7. Kiểm thử và xác thực thực tế 100% trên thiết bị vật lý Samsung Galaxy A50s (192.168.1.3:36903) và chụp ảnh minh chứng."
+verification:
+  status: "VERIFIED"
+  device: "Samsung Galaxy A50s (SM-A507FN, Android 11, 1080x2340)"
+  screenshots_directory: "design/screenshots/parity100/"
+  screenshots:
+    - "design/screenshots/parity100/phase18_pip_added.png: PIP Multi-Track Overlay with interactive blend mode dialog (Normal, Screen, Multiply, Overlay) and timeline track"
+    - "design/screenshots/parity100/phase18_chroma_advanced.png: Advanced Chroma Key with Color Pipette, Spill Reduction slider at 78%, and color swatches"
+    - "design/screenshots/parity100/phase18_smart_cutout_stroke.png: 1-Tap Smart Cutout AI Matting with Neon Stroke, Dot Dash, Glow, and Shadow pills"
+    - "design/screenshots/parity100/phase18_curve_speed.png: Custom Bezier Curve Speed graph with interactive spline and Montage preset"
+    - "design/screenshots/parity100/phase18_audio_dsp_vocal.png: DSP Noise Reduction dialog with 4 intensity levels (Off, Low 30%, Medium 60%, Strong 100%)"
+    - "design/screenshots/parity100/phase18_vocal_isolation.png: AI Vocal Isolation dialog (Original, Vocal Only, Instrumental Only)"

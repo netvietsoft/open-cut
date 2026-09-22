@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.tux.widget.RadiusLayout n0:id="@id/radius_layout" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.bytedance.tux.input.TuxTextView n0:gravity="center" n0:id="@id/actionsheet_title" n0:focusable="true" n0:focusableInTouchMode="true" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+        <androidx.core.widget.NestedScrollView n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <LinearLayout n0:orientation="vertical" n0:id="@id/actionsheet_actiongroups_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</com.bytedance.tux.widget.RadiusLayout>

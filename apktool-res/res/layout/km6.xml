@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.view.AIEffectCardNewFrameworkView n0:id="@id/ai_effect_cover_view" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="128.0dp" n1:jw="@drawable/APKTOOL_RENAMED_0x7f080602" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/ai_effect_usage_label_ly" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:layout_marginStart="6.0dp" n2:layout_constraintBottom_toBottomOf="@id/ai_effect_cover_view" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/ic_hot_label" n0:background="@drawable/nip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="0.5dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#fafbff" n0:layout_gravity="center_vertical" n0:id="@id/ai_effect_usage" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:includeFontPadding="false" n0:shadowColor="#4d000000" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="2.0" n2:k1i="medium" />
+    </LinearLayout>
+    <View n0:id="@id/mask_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f080601" n0:layout_width="0.0dp" n0:layout_height="26.0dp" n3:layout_constraintBottom_toBottomOf="@id/ai_effect_cover_view" n3:layout_constraintEnd_toEndOf="@id/ai_effect_cover_view" n3:layout_constraintStart_toStartOf="@id/ai_effect_cover_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="#80edf0fd" n0:ellipsize="end" n0:gravity="start|center" n0:id="@id/effect_title" n0:layout_width="0.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="4.0dp" n0:maxLines="1" n4:layout_constraintEnd_toEndOf="@id/mask_view" n4:layout_constraintStart_toStartOf="@id/mask_view" n4:layout_constraintTop_toBottomOf="@id/mask_view" n4:k1g="text" n4:k1i="medium"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/preview_result_tag_icon" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/me6" n0:layout_marginEnd="6.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

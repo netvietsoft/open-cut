@@ -1,0 +1,36 @@
+{
+    "name": "zh-Hans-SG",
+    "currency": {
+		"pattern": "#,##0.###",
+        "compact": {
+            "long": "{0}{1}"
+        },
+        "currencyList": {
+            "ANG": {
+                "displayName": {
+                    "other": "荷兰安的列斯盾"
+                }
+            },
+            "CNY": {
+                "symbol-alt-narrow": {
+					"value": "CN¥"
+				}
+            },
+            "NIO": {
+                "displayName": {
+                    "other": "尼加拉瓜科多巴"
+                }
+            },
+            "SGD": {
+                "symbol-alt-narrow": {
+					"value": "S$"
+				}
+            },
+            "XAG": {
+                "displayName": {
+                    "other": "白银"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,3122 @@
+{
+    "name": "th",
+    "currency": {
+        "Standard": "¤{0}",
+        "StandardNoCurrency": "#,##0.00",
+        "compact": {
+            "short": "¤{0}",
+            "shortNoSymbol": "¤ {0}",
+            "long": "{0}{1}"
+        },
+		"range": {
+			"between": {
+				"short": "¤ {0}-{1}"
+			},
+			"approximately": {
+				"short": "~¤ {0}"
+			},
+			"atLeast": {
+				"short": "¤ {0}+"
+			},
+			"atMost": {
+				"short": "≤¤ {0}"
+			}
+		},
+        "currencyList": {
+            "ADP": {
+                "symbol": {
+                    "value": "ADP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปเซตาอันดอร์รา"
+                },
+                "digits": 0
+            },
+            "AED": {
+                "symbol": {
+                    "value": "AED",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เดอร์แฮมสหรัฐอาหรับเอมิเรตส์"
+                }
+            },
+            "AFA": {
+                "symbol": {
+                    "value": "AFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "อัฟกานีอัฟกานิสถาน (1927–2002)"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "อัฟกานิอัฟกานิสถาน"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เลกแอลเบเนีย"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "แดรมอาร์เมเนีย"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กิลเดอร์เนเธอร์แลนด์แอนทิลลิส"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กวานซาแองโกลา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "AOK": {
+                "symbol": {
+                    "value": "AOK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กวานซาแองโกลา (1977–1990)"
+                }
+            },
+            "AON": {
+                "symbol": {
+                    "value": "AON",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "นิวกวานซาแองโกลา (1990–2000)"
+                }
+            },
+            "AOR": {
+                "symbol": {
+                    "value": "AOR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กวานซารีจัสทาโดแองโกลา (1995–1999)"
+                }
+            },
+            "ARA": {
+                "symbol": {
+                    "value": "ARA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ออสตรัลอาร์เจนตินา"
+                }
+            },
+            "ARL": {
+                "symbol": {
+                    "value": "ARL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซเลย์อาร์เจนตินา (1970–1983)"
+                }
+            },
+            "ARM": {
+                "symbol": {
+                    "value": "ARM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซอาร์เจนตินา (1881–1970)"
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "value": "ARP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซอาร์เจนตินา (1983–1985)"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซอาร์เจนตินา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "value": "ATS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ชิลลิงออสเตรีย"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "AU$"
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ออสเตรเลีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "AU$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟลอรินอารูบา"
+                }
+            },
+            "AZM": {
+                "symbol": {
+                    "value": "AZM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "มานัตอาเซอร์ไบจาน (1993–2006)"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "มานัตอาเซอร์ไบจาน"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAD": {
+                "symbol": {
+                    "value": "BAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์บอสเนีย-เฮอร์เซโกวีนา"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "มาร์กบอสเนีย-เฮอร์เซโกวีนา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BAN": {
+                "symbol": {
+                    "value": "BAN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์ใหม่บอสเนีย-เฮอร์เซโกวีนา (1994–1997)"
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์บาร์เบโดส"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ตากาบังกลาเทศ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEC": {
+                "symbol": {
+                    "value": "BEC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์เบลเยียม (เปลี่ยนแปลงได้)"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์เบลเยียม"
+                }
+            },
+            "BEL": {
+                "symbol": {
+                    "value": "BEL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์เบลเยียม (การเงิน)"
+                }
+            },
+            "BGL": {
+                "symbol": {
+                    "value": "BGL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฮาร์ดเลฟบัลแกเรีย"
+                }
+            },
+            "BGM": {
+                "symbol": {
+                    "value": "BGM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โซเชียลลิสต์เลฟบัลแกเรีย"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เลฟบัลแกเรีย"
+                }
+            },
+            "BGO": {
+                "symbol": {
+                    "value": "BGO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เลฟบัลเกเรีย (1879–1952)"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์บาห์เรน"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์บุรุนดี"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์เบอร์มิวดา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์บรูไน"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โบลิเวียโนโบลิเวีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BOL": {
+                "symbol": {
+                    "value": "BOL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โบลิเวียโนโบลิเวีย (1863–1963)"
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "value": "BOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซโบลิเวีย"
+                }
+            },
+            "BOV": {
+                "symbol": {
+                    "value": "BOV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "มฟดอลโบลิเวีย"
+                }
+            },
+            "BRB": {
+                "symbol": {
+                    "value": "BRB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ครูเซโรโนโวบราซิล (1967–1986)"
+                }
+            },
+            "BRC": {
+                "symbol": {
+                    "value": "BRC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ครูซาโดบราซิล"
+                }
+            },
+            "BRE": {
+                "symbol": {
+                    "value": "BRE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ครูเซโรบราซิล (1990–1993)"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$"
+                },
+                "displayName": {
+                    "other": "เรียลบราซิล"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BRN": {
+                "symbol": {
+                    "value": "BRN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ครูซาโดโนโวบราซิล"
+                }
+            },
+            "BRR": {
+                "symbol": {
+                    "value": "BRR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ครูเซโรบราซิล"
+                }
+            },
+            "BRZ": {
+                "symbol": {
+                    "value": "BRZ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ครูเซโรบราซิล (1942–1967)"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์บาฮามาส"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เอ็งกุลตรัมภูฏาน"
+                }
+            },
+            "BUK": {
+                "symbol": {
+                    "value": "BUK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "จ๊าดพม่า"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปูลาบอตสวานา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BYB": {
+                "symbol": {
+                    "value": "BYB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "นิวรูเบิลเบลารุส (1994–1999)"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูเบิลเบลารุส"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р."
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูเบิลเบลารุส (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์เบลีซ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "ดอลลาร์แคนาดา"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์คองโก"
+                }
+            },
+            "CHE": {
+                "symbol": {
+                    "value": "CHE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ยูโรดับเบิลยูไออาร์"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์สวิส"
+                },
+                "digits": 2
+            },
+            "CHW": {
+                "symbol": {
+                    "value": "CHW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์ดับเบิลยูไออาร์"
+                }
+            },
+            "CLE": {
+                "symbol": {
+                    "value": "CLE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เอสคูโดชิลี"
+                }
+            },
+            "CLF": {
+                "symbol": {
+                    "value": "CLF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟูเมนโตชิลี"
+                },
+                "digits": 4
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซชิลี"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "หยวน"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "หยวนจีน"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซโคลอมเบีย"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "COU": {
+                "symbol": {
+                    "value": "COU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "วาเลอร์เรียลโคลอมเบีย"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โกลองคอสตาริกา"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CSD": {
+                "symbol": {
+                    "value": "CSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์เซอร์เบียเก่า"
+                }
+            },
+            "CSK": {
+                "symbol": {
+                    "value": "CSK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฮาร์ดโครูนาเช็กโกสโลวัก"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซคิวบา (แปลงสภาพ)"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซคิวบา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เอสคูโดเคปเวิร์ด"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์ไซปรัส"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โครูนาสาธารณรัฐเช็ก"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DDM": {
+                "symbol": {
+                    "value": "DDM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "มาร์กเยอรมันตะวันออก"
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "มาร์กเยอรมัน"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์จิบูตี"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โครนเดนมาร์ก"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซโดมินิกัน"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์แอลจีเรีย"
+                }
+            },
+            "ECS": {
+                "symbol": {
+                    "value": "ECS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ซูเกรเอกวาดอร์"
+                }
+            },
+            "ECV": {
+                "symbol": {
+                    "value": "ECV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "วาเลอร์คอนสแตนต์เอกวาดอร์"
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "value": "EEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ครูนเอสโตเนีย"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์อียิปต์"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "แนกฟาเอริเทรีย"
+                }
+            },
+            "ESA": {
+                "symbol": {
+                    "value": "ESA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปเซตาสเปน (บัญชีเอ)"
+                }
+            },
+            "ESB": {
+                "symbol": {
+                    "value": "ESB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปเซตาสเปน (บัญชีที่เปลี่ยนแปลงได้)"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปเซตาสเปน"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เบอรร์เอธิโอเปีย"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "ยูโร"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "value": "FIM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "มาร์กกาฟินแลนด์"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ฟิจิ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์หมู่เกาะฟอล์กแลนด์"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์ฝรั่งเศส"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "ปอนด์สเตอร์ลิง (สหราชอาณาจักร)"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEK": {
+                "symbol": {
+                    "value": "GEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "คูปอนลาริตจอร์เจีย"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลารีจอร์เจีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHC": {
+                "symbol": {
+                    "value": "GHC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เซดีกานา (1979–2007)"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เซดีกานา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์ยิบรอลตาร์"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดาลาซีแกมเบีย"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์กินี"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GNS": {
+                "symbol": {
+                    "value": "GNS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ไซลีกินี"
+                }
+            },
+            "GQE": {
+                "symbol": {
+                    "value": "GQE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เอ็กเวเลอิเควทอเรียลกินี"
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "value": "GRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดรัชมากรีก"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เควตซัลกัวเตมาลา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GWE": {
+                "symbol": {
+                    "value": "GWE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เอสคูโดกินีโปรตุเกส"
+                }
+            },
+            "GWP": {
+                "symbol": {
+                    "value": "GWP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซกินี-บิสเซา"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์กายอานา"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ฮ่องกง"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เลมปิราฮอนดูรัส"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HRD": {
+                "symbol": {
+                    "value": "HRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์โครเอเชีย"
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "คูนาโครเอเชีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กูร์ดเฮติ"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟอรินต์ฮังการี"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูเปียห์อินโดนีเซีย"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "value": "IEP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์ไอริช"
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "value": "ILP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์อิสราเอล"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "นิวเชเกลอิสราเอล"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "รูปีอินเดีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์อิรัก"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เรียลอิหร่าน"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โครนาไอซ์แลนด์"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "value": "ITL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลีราอิตาลี"
+                },
+                "digits": 0
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์จาเมกา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์จอร์แดน"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "¥"
+                },
+                "displayName": {
+                    "other": "เยนญี่ปุ่น"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ชิลลิงเคนยา"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ซอมคีร์กีซสถาน"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เรียลกัมพูชา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์คอโมโรส"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "วอนเกาหลีเหนือ"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRH": {
+                "symbol": {
+                    "value": "KRH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฮวานเกาหลีใต้ (1953–1962)"
+                }
+            },
+            "KRO": {
+                "symbol": {
+                    "value": "KRO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "วอนเกาหลีใต้ (1945–1953)"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "วอนเกาหลีใต้"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์คูเวต"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์หมู่เกาะเคย์แมน"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เทงเจคาซัคสถาน"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กีบลาว"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์เลบานอน"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูปีศรีลังกา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ไลบีเรีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โลตีเลโซโท"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลีตัสลิทัวเนีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LTT": {
+                "symbol": {
+                    "value": "LTT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ทาโลนัสลิทัวเนีย"
+                }
+            },
+            "LUC": {
+                "symbol": {
+                    "value": "LUC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "คอนเวอร์ทิเบิลฟรังก์ลักเซมเบิร์ก"
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "value": "LUF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์ลักเซมเบิร์ก"
+                },
+                "digits": 0
+            },
+            "LUL": {
+                "symbol": {
+                    "value": "LUL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ไฟแนลเชียลฟรังก์ลักเซมเบิร์ก"
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลัตส์ลัตเวีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LVR": {
+                "symbol": {
+                    "value": "LVR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูเบิลลัตเวีย"
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์ลิเบีย"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีแรห์มโมร็อกโก"
+                }
+            },
+            "MAF": {
+                "symbol": {
+                    "value": "MAF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์โมร็อกโก"
+                }
+            },
+            "MCF": {
+                "symbol": {
+                    "value": "MCF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์โมนาโก"
+                }
+            },
+            "MDC": {
+                "symbol": {
+                    "value": "MDC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "บัตรปันส่วนมอลโดวา"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลิวมอลโดวา"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "อาเรียรีมาลากาซี"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MGF": {
+                "symbol": {
+                    "value": "MGF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์มาดากัสการ์"
+                },
+                "digits": 0
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์มาซิโดเนีย"
+                }
+            },
+            "MKN": {
+                "symbol": {
+                    "value": "MKN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์มาซิโดเนีย (1992–1993)"
+                }
+            },
+            "MLF": {
+                "symbol": {
+                    "value": "MLF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์มาลี"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "จ๊าตพม่า"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ทูกริกมองโกเลีย"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปาตากามาเก๊า"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "อูกียามอริเตเนีย (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "อูกียามอริเตเนีย"
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "value": "MTL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลีรามอลตา"
+                }
+            },
+            "MTP": {
+                "symbol": {
+                    "value": "MTP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์มอลตา"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูปีมอริเชียส"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูฟิยามัลดีฟส์"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ควาชามาลาวี"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "เปโซเม็กซิโก"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MXP": {
+                "symbol": {
+                    "value": "MXP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เงินเปโซเม็กซิโก (1861–1992)"
+                }
+            },
+            "MXV": {
+                "symbol": {
+                    "value": "MXV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ยูนิแดด ดี อินเวอร์ชั่น เม็กซิโก"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ริงกิตมาเลเซีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "value": "MZE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เอสคูโดโมซัมบิก"
+                }
+            },
+            "MZM": {
+                "symbol": {
+                    "value": "MZM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เมติคัลโมซัมบิกเก่า"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เมติคัลโมซัมบิก"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์นามิเบีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ไนราไนจีเรีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIC": {
+                "symbol": {
+                    "value": "NIC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "คอร์โดบานิการากัว"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กอร์โดบานิการากัว"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "value": "NLG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กิลเดอร์เนเธอร์แลนด์"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โครนนอร์เวย์"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูปีเนปาล"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "ดอลลาร์นิวซีแลนด์"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เรียลโอมาน"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "บัลบัวปานามา"
+                }
+            },
+            "PEI": {
+                "symbol": {
+                    "value": "PEI",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "อินตีเปรู"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ซอลเปรู"
+                }
+            },
+            "PES": {
+                "symbol": {
+                    "value": "PES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ซอลเปรู(1863–1965)"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กีนาปาปัวนิวกินี"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซฟิลิปปินส์"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูปีปากีสถาน"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ซลอตีโปแลนด์"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLZ": {
+                "symbol": {
+                    "value": "PLZ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ซลอตีโปแลนด์ (1950–1995)"
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "value": "PTE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เอสคูโดโปรตุเกส"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กวารานีปารากวัย"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เรียลกาตาร์"
+                }
+            },
+            "RHD": {
+                "symbol": {
+                    "value": "RHD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์โรดีเซีย"
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "value": "ROL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลิวโรมาเนียเก่า"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลิวโรมาเนีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์เซอร์เบีย"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูเบิลรัสเซีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "value": "RUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูเบิลรัสเซีย (1991–1998)"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์รวันดา"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ริยัลซาอุดีอาระเบีย"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์หมู่เกาะโซโลมอน"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูปีเซเชลส์"
+                }
+            },
+            "SDD": {
+                "symbol": {
+                    "value": "SDD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์ซูดานเก่า"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์ซูดาน"
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "value": "SDP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์ซูดานเก่า"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โครนาสวีเดน"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์สิงคโปร์"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์เซนต์เฮเลนา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "value": "SIT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ทอลาร์สโลวีเนีย"
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "value": "SKK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โครูนาสโลวัก"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลีโอนเซียร์ราลีโอน"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลีโอนเซียร์ราลีโอน (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ชิลลิงโซมาเลีย"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ซูรินาเม"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "value": "SRG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กิลเดอร์ซูรินาเม"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์ซูดานใต้"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอบราเซาตูเมและปรินซิปี (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอบราเซาตูเมและปรินซิปี"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "value": "SUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูเบิลโซเวียต"
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "value": "SVC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โคลอนเอลซัลวาดอร์"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ปอนด์ซีเรีย"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลิลันเจนีสวาซิ"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "฿"
+                },
+                "displayName": {
+                    "other": "บาทไทย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJR": {
+                "symbol": {
+                    "value": "TJR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รูเบิลทาจิกิสถาน"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โซโมนิทาจิกิสถาน"
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "value": "TMM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "มานัตเติร์กเมนิสถาน (1993–2009)"
+                },
+                "digits": 0
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "มานัตเติร์กเมนิสถาน"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์ตูนิเซีย"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "พาแองกาตองกา"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TPE": {
+                "symbol": {
+                    "value": "TPE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เอสคูโดติมอร์"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลีราตุรกีเก่า"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ลีราตุรกี"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ตรินิแดดและโตเบโก"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ไต้หวันใหม่"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ชิลลิงแทนซาเนีย"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฮรีฟเนียยูเครน"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UAK": {
+                "symbol": {
+                    "value": "UAK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "คาร์โบวาเนตซ์ยูเครน"
+                }
+            },
+            "UGS": {
+                "symbol": {
+                    "value": "UGS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ชิลลิงยูกันดา (1966–1987)"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ชิลลิงยูกันดา"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "US$"
+                },
+                "displayName": {
+                    "other": "ดอลลาร์สหรัฐ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "value": "USN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์สหรัฐ (วันถัดไป)"
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "value": "USS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์สหรัฐ (วันเดียวกัน)"
+                }
+            },
+            "UYI": {
+                "symbol": {
+                    "value": "UYI",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซเอนยูนิแดดเซสอินเด็กซาแดสอุรุกวัย"
+                },
+                "digits": 0
+            },
+            "UYP": {
+                "symbol": {
+                    "value": "UYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซอุรุกวัย (1975–1993)"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เปโซอุรุกวัย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ซอมอุซเบกิสถาน"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEB": {
+                "symbol": {
+                    "value": "VEB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โบลิวาร์เวเนซุเอลา (1871–2008)"
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โบลิวาร์เวเนซุเอลา"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โบลีวาร์แห่งเวเนซุเอลา"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "ดองเวียดนาม"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VNN": {
+                "symbol": {
+                    "value": "VNN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดองเวียดนาม (1978–1985)"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "วาตูวานูอาตู"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ทาลาซามัว"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์เซฟาธนาคารรัฐแอฟริกากลาง"
+                },
+                "digits": 0
+            },
+            "XAG": {
+                "symbol": {
+                    "value": "XAG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เงิน"
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "value": "XAU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ทอง"
+                }
+            },
+            "XBA": {
+                "symbol": {
+                    "value": "XBA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "หน่วยคอมโพสิตยุโรป"
+                }
+            },
+            "XBB": {
+                "symbol": {
+                    "value": "XBB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "หน่วยโมเนทารียุโรป"
+                }
+            },
+            "XBC": {
+                "symbol": {
+                    "value": "XBC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "หน่วยบัญชียุโรป [XBC]"
+                }
+            },
+            "XBD": {
+                "symbol": {
+                    "value": "XBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "หน่วยบัญชียุโรป [XBD]"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "ดอลลาร์แคริบเบียนตะวันออก"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "สิทธิถอนเงินพิเศษ"
+                }
+            },
+            "XEU": {
+                "symbol": {
+                    "value": "XEU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "หน่วยสกุลเงินยุโรป"
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "value": "XFO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์ทองฝรั่งเศส"
+                }
+            },
+            "XFU": {
+                "symbol": {
+                    "value": "XFU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์ยูไอซีฝรั่งเศส"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์เซฟาธนาคารกลางรัฐแอฟริกาตะวันตก"
+                },
+                "digits": 0
+            },
+            "XPD": {
+                "symbol": {
+                    "value": "XPD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "พัลเลเดียม"
+                }
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฟรังก์ซีเอฟพี"
+                },
+                "digits": 0
+            },
+            "XPT": {
+                "symbol": {
+                    "value": "XPT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "แพลตินัม"
+                }
+            },
+            "XRE": {
+                "symbol": {
+                    "value": "XRE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "กองทุนไรเน็ต"
+                }
+            },
+            "XSU": {
+                "symbol": {
+                    "value": "XSU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ซูเกร"
+                }
+            },
+            "XTS": {
+                "symbol": {
+                    "value": "XTS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "รหัสทดสอบสกุลเงิน"
+                }
+            },
+            "XUA": {
+                "symbol": {
+                    "value": "XUA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "หน่วยบัญชี เอดีบี"
+                }
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "XXX",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "(ไม่ทราบชื่อสกุลเงิน)"
+                }
+            },
+            "YDD": {
+                "symbol": {
+                    "value": "YDD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์เยเมน"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "เรียลเยเมน"
+                },
+                "digits": 0
+            },
+            "YUD": {
+                "symbol": {
+                    "value": "YUD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ฮาร์ดดีนาร์ยูโกสลาเวีย"
+                }
+            },
+            "YUM": {
+                "symbol": {
+                    "value": "YUM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "โนวิย์ดีนาร์ยูโกสลาเวีย"
+                }
+            },
+            "YUN": {
+                "symbol": {
+                    "value": "YUN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "คอนเวอร์ทิเบิลดีนาร์ยูโกสลาเวีย"
+                }
+            },
+            "YUR": {
+                "symbol": {
+                    "value": "YUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดีนาร์ปฏิรูปยูโกสลาเวีย (1992–1993)"
+                }
+            },
+            "ZAL": {
+                "symbol": {
+                    "value": "ZAL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "แรนด์แอฟริกาใต้ (การเงิน)"
+                }
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "แรนด์แอฟริกาใต้"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ควาชาแซมเบีย (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ควาชาแซมเบีย"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZRN": {
+                "symbol": {
+                    "value": "ZRN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "นิวแซร์คองโก"
+                }
+            },
+            "ZRZ": {
+                "symbol": {
+                    "value": "ZRZ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "แซร์คองโก"
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ซิมบับเว"
+                },
+                "digits": 0
+            },
+            "ZWL": {
+                "symbol": {
+                    "value": "ZWL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ซิมบับเว (2009)"
+                }
+            },
+            "ZWR": {
+                "symbol": {
+                    "value": "ZWR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ดอลลาร์ซิมบับเว (2008)"
+                }
+            }
+        }
+    }
+}

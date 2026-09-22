@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottom_layout" n0:background="@color/APKTOOL_RENAMED_0x7f06001b" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/selectedMediaLy" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="64.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="16.0dp" n0:paddingStart="5.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center_vertical" n0:id="@id/selectedMediaRv" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.vega.ui.StrongButton n0:enabled="false" n0:textSize="14.0dp" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/sb_media_select_done" n0:background="@drawable/l6b" n0:paddingLeft="16.0dp" n0:paddingTop="4.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="13.0dp" n0:minHeight="36.0dp" n0:text="@string/mr" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toBottomOf="@id/selectedMediaLy" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textColor="#fafbff" n0:id="@id/tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/oiv" n0:layout_marginHorizontal="16.0dp" n3:layout_constrainedWidth="true" n3:layout_constraintBottom_toBottomOf="@id/sb_media_select_done" n3:layout_constraintEnd_toStartOf="@id/sb_media_select_done" n3:layout_constraintHorizontal_bias="0.0" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="@id/sb_media_select_done"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

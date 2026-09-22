@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingLeft="16.0dp" n0:paddingTop="8.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp" n0:paddingVertical="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cover" n0:layout_width="72.0dp" n0:layout_height="72.0dp" n1:actualImageScaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:placeholderImage="@color/ks"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:ellipsize="end" n0:id="@id/name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n0:layout_marginStart="12.0dp" n2:layout_constraintBottom_toTopOf="@id/updateTime" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/cover" n2:layout_constraintTop_toTopOf="@id/cover" n2:layout_constraintVertical_chainStyle="packed"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:ellipsize="end" n0:id="@id/updateTime" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:maxLines="1" n0:layout_marginStart="12.0dp" n3:layout_constraintBottom_toTopOf="@id/duration" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/cover" n3:layout_constraintTop_toBottomOf="@id/name"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:id="@id/duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginStart="12.0dp" n4:layout_constraintBottom_toBottomOf="@id/cover" n4:layout_constraintStart_toEndOf="@id/cover" n4:layout_constraintTop_toBottomOf="@id/updateTime"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/dot" n0:background="@drawable/kv1" n0:layout_width="2.0dp" n0:layout_height="2.0dp" n0:layout_marginStart="6.0dp" n5:layout_constraintBottom_toBottomOf="@id/duration" n5:layout_constraintStart_toEndOf="@id/duration" n5:layout_constraintTop_toTopOf="@id/duration"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:ellipsize="end" n0:id="@id/size" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintBaseline_toBaselineOf="@id/duration" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toEndOf="@id/dot"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/font_multi_category_stateView" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout n0:id="@id/bar_container" n0:background="@color/r4" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout n0:id="@id/appbarLayout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:elevation="0.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/appbarConstraintLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="@dimen/cu" n1:layout_scrollFlags="scroll|enterAlways">
+                <include n0:id="@id/manager_layout" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" layout="@layout/l8q" />
+                <include n0:id="@id/business_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintStart_toEndOf="@id/manager_layout" n1:layout_constraintTop_toTopOf="parent" layout="@layout/l75" />
+                <include n0:id="@id/searchLayout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintStart_toEndOf="@id/business_layout" n1:layout_constraintTop_toTopOf="@id/tabRv" layout="@layout/l5x" />
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/tabRv" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:paddingStart="0.0dp" n0:paddingEnd="@dimen/cu" n0:layout_marginStart="10.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/searchLayout" n1:layout_constraintTop_toTopOf="parent" />
+                <View n0:id="@id/gradientMask" n0:background="@drawable/lzw" n0:layout_width="48.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/tabRv" />
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/second_category_rv" n0:paddingBottom="12.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toBottomOf="@id/tabRv" />
+                <View n0:id="@id/dividerLine" n0:background="@color/a3" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager n0:id="@id/viewPager" n0:visibility="gone" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/viewPager2" n0:visibility="gone" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" layout="@layout/lwu"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.LoadingView n0:id="@id/loadingView" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/loadingEmpty" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" layout="@layout/lrr"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="22.0dp" n0:textColor="@color/sg" n0:id="@id/fillEmailTips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="66.0dp" n0:text="@string/rb_" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaEditText n0:textSize="16.0dp" n0:textColor="#16161d" n0:textColorHint="#a9adb5" n0:gravity="center_vertical" n0:id="@id/emailEt" n0:background="@drawable/k8e" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="16.0dp" n0:hint="@string/l72" n0:inputType="textEmailAddress" n0:paddingStart="16.0dp" n0:paddingEnd="40.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/fillEmailTips"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/clearEmail" n0:visibility="invisible" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="@id/emailEt" n3:layout_constraintEnd_toEndOf="@id/emailEt" n3:layout_constraintTop_toTopOf="@id/emailEt"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="end|center" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/m_p" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textColor="#ff6663" n0:id="@id/errorEmailTips" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n4:layout_constraintStart_toStartOf="@id/emailEt" n4:layout_constraintTop_toBottomOf="@id/emailEt"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaButton n0:enabled="false" n0:textColor="@color/gk" n0:id="@id/fillEmailContinueBtn" n0:background="@drawable/k8c" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120f4d" n0:textAllCaps="false" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/errorEmailTips"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="horizontal" n0:id="@id/llAllowEdm" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/fillEmailContinueBtn"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.VegaCheckBox n0:layout_gravity="top" n0:id="@id/cbAllowEdm" n0:layout_width="wrap_content" n0:layout_height="wrap_content" style="@style/APKTOOL_RENAMED_0x7f1304a7" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#801c283d" n0:layout_gravity="center_vertical" n0:id="@id/tvAllowEdm" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lqn" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#801c283d" n0:gravity="center" n0:layout_gravity="center|bottom" n0:id="@id/registerTipsTv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:includeFontPadding="false" n0:layout_marginStart="40.0dp" n0:layout_marginEnd="40.0dp" n0:lineHeight="16.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/llAllowEdm"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <HorizontalScrollView n0:id="@id/horizontalScrollView" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="wrap_content" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="horizontal" n0:id="@id/emailDomainContainer" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:paddingHorizontal="16.0dp" />
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

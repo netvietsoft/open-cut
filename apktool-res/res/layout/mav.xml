@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:orientation="vertical" n0:background="@android:color/black" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center" n0:id="@id/lottieIcon" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f0704af" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704af" />
+    <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="10.0dp" n0:textColor="@color/ks4" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/lottieItemText" n0:layout_width="wrap_content" n0:layout_height="14.0dp" />
+    <View n0:layout_gravity="center" n0:id="@id/lottieItemPoint" n0:background="@drawable/r8j" n0:visibility="invisible" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f0704bb" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704bb" n0:layout_marginTop="5.0dp" />
+</merge>

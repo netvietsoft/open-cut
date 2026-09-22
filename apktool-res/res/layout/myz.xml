@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/loading_layout" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070455" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070454"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center" n0:id="@id/lottie_loading" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n1:lottie_fileName="loading_white.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

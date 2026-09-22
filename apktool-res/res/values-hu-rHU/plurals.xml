@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">%d elem feltöltése nem sikerült. Az AutoCut folytatódik.</item>
+        <item quantity="other">%d elem feltöltése nem sikerült. Az AutoCut folytatódik.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">Melléklet: %d fájl</item>
+        <item quantity="other">Melléklet: %d fájl</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">%1$d kredit szükséges.</item>
+        <item quantity="other">%1$d kredit szükséges.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">%1$d kredited maradt.</item>
+        <item quantity="other">%1$d kredited maradt.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">Az ingyenes kreditjeid levonásra kerülnek. %d további kredit szükséges.</item>
+        <item quantity="other">Az ingyenes kreditjeid levonásra kerülnek. %d további kredit szükséges.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">%1$d kredit szükséges.</item>
+        <item quantity="other">%1$d kredit szükséges.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">%1$d kredited maradt. Vásárolj krediteket a folytatáshoz.</item>
+        <item quantity="other">%1$d kredited maradt. Vásárolj krediteket a folytatáshoz.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">%1$d kredit szükséges.</item>
+        <item quantity="other">%1$d kredit szükséges.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">%1$d kredited maradt. Bővíts, hogy krediteket szerezz.</item>
+        <item quantity="other">%1$d kredited maradt. Bővíts, hogy krediteket szerezz.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">%d kredit kerül felhasználásra</item>
+        <item quantity="other">%d kredit kerül felhasználásra</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">Az ingyenes kreditjeid levonásra kerülnek. %d további kredit szükséges.</item>
+        <item quantity="other">Az ingyenes kreditjeid levonásra kerülnek. %d további kredit szükséges.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">%d javasolt sablon</item>
+        <item quantity="other">%d javasolt sablon</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">%d videó generálása megtörtént</item>
+        <item quantity="other">%d videó generálása megtörtént</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">Az automatikus feliratokat és automatikus dalszövegeket havonta %d alkalommal ingyenesen használhatod, ha be vagy jelentkezve. Az ingyenes használatok minden hónap elején megújulnak. Minden alkalommal 1 használat kerül levonásra.</item>
+        <item quantity="other">Az automatikus feliratokat és automatikus dalszövegeket havonta %d alkalommal ingyenesen használhatod, ha be vagy jelentkezve. Az ingyenes használatok minden hónap elején megújulnak. Minden alkalommal 1 használat kerül levonásra.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%d használat/hónap</item>
+        <item quantity="other">%d használat/hónap</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">%d szó törlése</item>
+        <item quantity="other">%d szó törlése</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%d kiemelés</item>
+        <item quantity="other">%d kiemelés</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">%d töltelékszót találtunk</item>
+        <item quantity="other">%d töltelékszót találtunk</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">Válassz ki legfeljebb %d elemet</item>
+        <item quantity="other">Válassz ki legfeljebb %d elemet</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">Becsült várakozási idő a sorban: %d mp</item>
+        <item quantity="other">Becsült várakozási idő a sorban: %d mp</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">Körülbelül %d óra van hátra</item>
+        <item quantity="other">Körülbelül %d óra van hátra</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">Körülbelül %d perc van hátra</item>
+        <item quantity="other">Körülbelül %d perc van hátra</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">Körülbelül %d mp van hátra</item>
+        <item quantity="other">Körülbelül %d mp van hátra</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">Hang eredménye (%d)</item>
+        <item quantity="other">Hang eredményei (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">Fájl eredménye (%d)</item>
+        <item quantity="other">Fájl eredményei (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">Generálás eredménye (%d)</item>
+        <item quantity="other">Generálás eredményei (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">Melléklet: %d kép</item>
+        <item quantity="other">Melléklet: %d kép</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">Melléklet: %d videó</item>
+        <item quantity="other">Melléklet: %d videó</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">Képtalálat (%d)</item>
+        <item quantity="other">Képtalálatok (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">Videótalálat (%d)</item>
+        <item quantity="other">Videótalálatok (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">%1$d MI-szövegeffekt alkalmazása… %2$d%%</item>
+        <item quantity="other">%1$d MI-szövegeffekt alkalmazása… %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">%d erőforrás alkalmazása az összes klipre</item>
+        <item quantity="other">%d erőforrás alkalmazása az összes klipre</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">%d erőforrás kiválasztva</item>
+        <item quantity="other">%d erőforrás kiválasztva</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">%d napos Ultra</item>
+        <item quantity="other">%d napos Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d karakter</item>
+        <item quantity="other">%d karakter</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">Legfeljebb %d karaktert válassz ki</item>
+        <item quantity="other">Legfeljebb %d karaktert válassz ki</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">%d klip kereskedelmi felhasználása nem engedélyezett</item>
+        <item quantity="other">%d klip kereskedelmi felhasználása nem engedélyezett</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">%d betűtípus kereskedelmi felhasználása nem engedélyezett</item>
+        <item quantity="other">%d betűtípus kereskedelmi felhasználása nem engedélyezett</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">%d hang kereskedelmi felhasználása nem engedélyezett</item>
+        <item quantity="other">%d hang kereskedelmi felhasználása nem engedélyezett</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">%d nem helyettesíthető klip kereskedelmi felhasználása nem engedélyezett</item>
+        <item quantity="other">%d nem helyettesíthető klip kereskedelmi felhasználása nem engedélyezett</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">%d nem helyettesíthető betűtípus kereskedelmi felhasználása nem engedélyezett</item>
+        <item quantity="other">%d nem helyettesíthető betűtípus kereskedelmi felhasználása nem engedélyezett</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">%d nem helyettesíthető hang kereskedelmi felhasználása nem engedélyezett</item>
+        <item quantity="other">%d nem helyettesíthető hang kereskedelmi felhasználása nem engedélyezett</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">%d nem helyettesíthető matrica kereskedelmi felhasználása nem engedélyezett</item>
+        <item quantity="other">%d nem helyettesíthető matrica kereskedelmi felhasználása nem engedélyezett</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">%d matrica kereskedelmi felhasználása nem engedélyezett</item>
+        <item quantity="other">%d matrica kereskedelmi felhasználása nem engedélyezett</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">%d hozzászólás törlése?</item>
+        <item quantity="other">%d hozzászólás törlése?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">%d fiókot választottál ki. Csak te és az általad a korlátozásban beállított személy láthatja a hozzászólásaikat.</item>
+        <item quantity="other">%d fiókot választottál ki. Csak te és az általad a korlátozásban beállított személy láthatja a hozzászólásaikat.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">Korlátozol %d fiókot?</item>
+        <item quantity="other">Korlátozol %d fiókot?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">%d nap</item>
+        <item quantity="other">%d nap</item>
+    </plurals>
+    <plurals name="kg">
+        <item quantity="one">%d ingyenes használat</item>
+        <item quantity="other">%d ingyenes használat</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">%s új alkotói üzeneted van</item>
+        <item quantity="other">%s új alkotói üzeneted van</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">%d napja lejárt</item>
+        <item quantity="other">%d napja lejárt</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">Pro-funkciót használsz. %d ingyenes használat maradt. Csatlakozz a Próhoz a korlátlan használathoz.</item>
+        <item quantity="other">Pro-funkciót használsz. %d ingyenes használat maradt. Csatlakozz a Próhoz a korlátlan használathoz.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">Standard-funkciót használsz. %d ingyenes használat maradt. Csatlakozz a Standardhoz a korlátlan használathoz.</item>
+        <item quantity="other">Standard-funkciót használsz. %d ingyenes használat maradt. Csatlakozz a Standardhoz a korlátlan használathoz.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">Pro-funkciót használsz. %d ingyenes használat maradt ebben a hónapban. Csatlakozz a Próhoz a korlátlan használathoz.</item>
+        <item quantity="other">Pro-funkciót használsz. %d ingyenes használat maradt ebben a hónapban. Csatlakozz a Próhoz a korlátlan használathoz.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">Standard-funkciót használsz. %d ingyenes használat maradt ebben a hónapban. Csatlakozz a Standardhoz a korlátlan használathoz.</item>
+        <item quantity="other">Standard-funkciót használsz. %d ingyenes használat maradt ebben a hónapban. Csatlakozz a Standardhoz a korlátlan használathoz.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d nap ingyen</item>
+        <item quantity="other">%d nap ingyen</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">%1$s %2$d hét után</item>
+        <item quantity="other">%1$s %2$d hét után</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">Havonta %d alkalommal ingyenesen használhatod a Pro-sablonokat.</item>
+        <item quantity="other">Havonta %d alkalommal ingyenesen használhatod a Pro-sablonokat.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">%d ingyenes használat</item>
+        <item quantity="other">%d ingyenes használat</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">Próbáld ki %d napig ingyen</item>
+        <item quantity="other">Próbáld ki %d napig ingyen</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">%d zenei szerzői jogi probléma</item>
+        <item quantity="other">%d zenei szerzői jogi probléma</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">%d szöveg van kiválasztva</item>
+        <item quantity="other">%d szöveg van kiválasztva</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_popup_title">
+        <item quantity="one">Igényeld a(z) %d ingyenes nap Dreamina Alapot</item>
+        <item quantity="other">Igényeld a(z) %d ingyenes nap Dreamina Alapot</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_success_popup_desc">
+        <item quantity="one">A(z) %d napos Dreamina Alap-hozzáférésed mostantól aktív.</item>
+        <item quantity="other">A(z) %d napos Dreamina Alap-hozzáférésed mostantól aktív.</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_to_claim_profile_banner">
+        <item quantity="one">Igényeld a(z) %d napos Dreamina Alap-hozzáférésed</item>
+        <item quantity="other">Igényeld a(z) %d napos Dreamina Alap-hozzáférésed</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">%d klip van kiválasztva</item>
+        <item quantity="other">%d klip van kiválasztva</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">Élvezd %1$d napig a korlátlan ingyenes exportálást, vagy egyszerűen bővíts a teljesen korlátlan exportáláshoz nagy felbontásban.</item>
+        <item quantity="other">Élvezd %1$d napig a korlátlan ingyenes exportálást, vagy egyszerűen bővíts a teljesen korlátlan exportáláshoz nagy felbontásban.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">1080p felbontású exportálás %d alkalommal ingyen</item>
+        <item quantity="other">1080p felbontású exportálás %d alkalommal ingyen</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">%d ingyenes exportálás maradt 1080p-ben. Bővíts, hogy korlátlanul élvezhesd a nagy felbontású exportot.</item>
+        <item quantity="other">%d ingyenes exportálás maradt 1080p-ben. Bővíts, hogy korlátlanul élvezhesd a nagy felbontású exportot.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">%d 1080p felbontású ingyenes exportálás maradt ebben a hónapban. Bővíts, hogy korlátlanul élvezhesd a nagy felbontású exportot.</item>
+        <item quantity="other">%d 1080p felbontású ingyenes exportálás maradt ebben a hónapban. Bővíts, hogy korlátlanul élvezhesd a nagy felbontású exportot.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">%d kredit szükséges.</item>
+        <item quantity="other">%d kredit szükséges.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">%d kredited maradt.</item>
+        <item quantity="other">%d kredited maradt.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">%1$d generálás folyamatban. Frissíts a Pro-verzióra akár %2$d egyidejű generáláshoz.</item>
+        <item quantity="other">%1$d generálás folyamatban. Frissíts a Pro-verzióra akár %2$d egyidejű generáláshoz.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">Exportálás vízjel nélkül (%d használat maradt)</item>
+        <item quantity="other">Exportálás vízjel nélkül (%d használat maradt)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">%d ingyenes használat maradt. Nincs szükség kreditre.</item>
+        <item quantity="other">%d ingyenes használat maradt. Nincs szükség kreditre.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">A kiválasztott elem törlődik, és %d napig a Lomtárban marad.</item>
+        <item quantity="other">A kiválasztott elemek törlődnek, és %d napig a Lomtárban maradnak.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">Az egyik kiválasztott elem fel van töltve a tárba. Biztos törlöd?</item>
+        <item quantity="other">Egyes kiválasztott elemek fel vannak töltve a tárba. Biztos törlöd?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">A kiválasztott elem törlődik, és átkerül a Lomtárba.</item>
+        <item quantity="other">A kiválasztott elemek törlődnek, és átkerülnek a Lomtárba.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">%d használat</item>
+        <item quantity="other">%d használat</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">Az általad megadott születési dátum alapján számított életkor %d év és hibásnak tűnik. Add meg a valódi születési dátumodat.</item>
+        <item quantity="other">Az általad megadott születési dátum alapján számított életkor %d év és hibásnak tűnik. Add meg a valódi születési dátumodat.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">1 ingyenes használatot tartalmaz a korábbi vásárlásokból és %d extra ingyenes használatot a Próhoz</item>
+        <item quantity="other">1 ingyenes használatot tartalmaz a korábbi vásárlásokból és %d extra ingyenes használatot a Próhoz</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">A Próhoz %d ingyenes használat jár</item>
+        <item quantity="other">A Próhoz %d ingyenes használat jár</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">A videókkal létrehozott avatárok mostantól tartósan érvényesek. Csatlakozz a Próhoz, és %d ingyenes testreszabást kapsz.</item>
+        <item quantity="other">A videókkal létrehozott avatárok mostantól tartósan érvényesek. Csatlakozz a Próhoz, és %d ingyenes testreszabást kapsz.</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">Ennek az effektnek az alkalmazása %d kreditet használ fel.</item>
+        <item quantity="other">Ennek az effektnek az alkalmazása %d kreditet használ fel.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">Most már %d kredit áll rendelkezésedre.</item>
+        <item quantity="other">Most már %d kredit áll rendelkezésedre.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">%d kiemelés</item>
+        <item quantity="other">%d kiemelés</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">MI-effekt alkalmazása… %s óra maradt</item>
+        <item quantity="other">MI-effekt alkalmazása… %s óra maradt</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">MI-effekt alkalmazása… %s perc maradt</item>
+        <item quantity="other">MI-effekt alkalmazása… %s perc maradt</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">%1$s Pro-effektet alkalmaztál a jelenlegi elemre. Az újbóli alkalmazása az új elemre %2$d kreditet fog felhasználni.</item>
+        <item quantity="other">%1$s Pro-effektet alkalmaztál a jelenlegi elemre. Az újbóli alkalmazása az új elemre %2$d kreditet fog felhasználni.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">%1$d ingyenes felhasználást levonunk. Jelenleg %2$d ingyenes felhasználásod van.</item>
+        <item quantity="other">%1$d ingyenes felhasználást levonunk. Jelenleg %2$d ingyenes felhasználásod van.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">%1$d Pro-felhasználást levonunk. Jelenleg %2$d Pro-felhasználásod van.</item>
+        <item quantity="other">%1$d Pro-felhasználást levonunk. Jelenleg %2$d Pro-felhasználásod van.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">Ez a modell csak %d referenciaképet támogat</item>
+        <item quantity="other">Ez a modell csak %d referenciaképet támogat</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">A modell használatához adj hozzá legalább %d referenciaképet</item>
+        <item quantity="other">A modell használatához adj hozzá legalább %d referenciaképet</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">Ez a modell csak %d referenciavideót támogat</item>
+        <item quantity="other">Ez a modell csak %d referenciavideót támogat</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">A modell használatához adj hozzá legalább %d referenciavideót</item>
+        <item quantity="other">A modell használatához adj hozzá legalább %d referenciavideót</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">Válassz ki %d fotót</item>
+        <item quantity="other">Válassz ki %d fotót</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">%d anyag hozzáadva</item>
+        <item quantity="other">%d anyag hozzáadva</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">%d létrehozási lehetőség maradt</item>
+        <item quantity="other">%d létrehozási lehetőség maradt</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">%d feloldás maradt</item>
+        <item quantity="other">%d feloldás maradt</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">%d kulcsszó kiemelve. Kézileg is kiválaszthatod.</item>
+        <item quantity="other">%d kulcsszó kiemelve. Kézileg is kiválaszthatod.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">%d klip törlése</item>
+        <item quantity="other">%d klip törlése</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">%d töltelékszó kiemelve. Kézileg is kiválaszthatod.</item>
+        <item quantity="other">%d töltelékszó kiemelve. Kézileg is kiválaszthatod.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">%d kulcsszó kiemelve</item>
+        <item quantity="other">%d kulcsszó kiemelve</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">%d fotó exportálása…</item>
+        <item quantity="other">%d fotó exportálása…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">Válassz ki legfeljebb %d pózt</item>
+        <item quantity="other">Válassz ki legfeljebb %d pózt</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">A médiafájlod feltöltése folyamatban van</item>
+        <item quantity="other">A médiafájljaid feltöltése folyamatban van</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">%d tag</item>
+        <item quantity="other">%d tag</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">Tölts fel %d projektet a tárba, hogy tárhelyet szabadíts fel az eszközödön. Ezeket a projekteket a mobilalkalmazásban, az asztali alkalmazásban vagy az online szerkesztőben is szerkesztheted.</item>
+        <item quantity="other">Tölts fel %d projektet a tárba, hogy tárhelyet szabadíts fel az eszközödön. Ezeket a projekteket a mobilalkalmazásban, az asztali alkalmazásban vagy az online szerkesztőben is szerkesztheted.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">Tölts fel %d médiafájlt a projektjeidből a tárba. Ezeket a fájlokat bármilyen eszközön használhatod, anélkül, hogy újra fel kellene töltened.</item>
+        <item quantity="other">Tölts fel %d médiafájlt a projektjeidből a tárba. Ezeket a fájlokat bármilyen eszközön használhatod, anélkül, hogy újra fel kellene töltened.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">Van egy helyreállítandó projekted</item>
+        <item quantity="other">Helyreállítandó projektjeid vannak</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">A projekt helyreállítva</item>
+        <item quantity="other">A projektek helyreállítva</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">Nem sikerült alkalmazni %d funkciót</item>
+        <item quantity="other">Nem sikerült alkalmazni %d funkciót</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">%d funkció alkalmazása</item>
+        <item quantity="other">%d funkció alkalmazása</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">Alkalmazod a Pro-effektet?</item>
+        <item quantity="other">Alkalmazod a Pro-effekteket?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">%1$d Pro-effektet alkalmaztál a jelenlegi elemre. Az újbóli alkalmazása az új elemre %2$d kreditet fog felhasználni.</item>
+        <item quantity="other">%1$d Pro-effektet alkalmaztál a jelenlegi elemre. Az újbóli alkalmazásuk az új elemre %2$d kreditet fog felhasználni.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">%1$d Pro-effektet alkalmaztál a jelenlegi elemre. %2$d ingyenes használati lehetőséget vonunk le az újbóli alkalmazásáért az új elemre. Ez nem használ fel kreditet.</item>
+        <item quantity="other">%1$d Pro-effektet alkalmaztál a jelenlegi elemre. %2$d ingyenes használati lehetőséget vonunk le az újbóli alkalmazásukért az új elemre. Ez nem használ fel kreditet.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">%1$d Pro-effektet alkalmaztál a jelenlegi elemre. %2$d kreditre van szükséged ahhoz, hogy újra alkalmazd az új elemre.</item>
+        <item quantity="other">%1$d Pro-effektet alkalmaztál a jelenlegi elemre. %2$d kreditre van szükséged ahhoz, hogy újra alkalmazd őket az új elemre.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">%1$d Pro-effektet alkalmaztál a jelenlegi elemre. Az újbóli alkalmazásuk az új elemre %2$d ingyenes használati lehetőséget és %3$d kreditet fog felhasználni.</item>
+        <item quantity="other">%1$d Pro-effektet alkalmaztál a jelenlegi elemre. Az újbóli alkalmazásuk az új elemre %2$d ingyenes használati lehetőséget és %3$d kreditet fog felhasználni.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">%d klip hiányzik. Állítsd helyre a telefonodon, vagy cseréld ki.</item>
+        <item quantity="other">%d klip hiányzik. Állítsd helyre őket a telefonodon, vagy cseréld ki.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">Legfeljebb %d karaktert írj be</item>
+        <item quantity="other">Legfeljebb %d karaktert írj be</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">%d nap</item>
+        <item quantity="other">%d nap</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">Törlöd az elemet?</item>
+        <item quantity="other">Törlöd az elemeket?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">A Lomtárba áthelyezett elemek itt jelennek meg, és %d nap után törlődnek.</item>
+        <item quantity="other">A Lomtárba áthelyezett elemek itt jelennek meg, és %d nap után törlődnek.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">%d elem letöltése...</item>
+        <item quantity="other">%d elem letöltése...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">%d elem feltöltése...</item>
+        <item quantity="other">%d elem feltöltése...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">Ez az elem véglegesen törlődik, és nem állítható vissza.</item>
+        <item quantity="other">Ezek az elemek véglegesen törlődnek, és nem állíthatók helyre.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">Elem áthelyezve</item>
+        <item quantity="other">Elemek áthelyezve</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">Még mindig rendelkezésedre áll %d napi ingyenes exportálás.</item>
+        <item quantity="other">Még mindig rendelkezésedre áll %d napi ingyenes exportálás.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">Gratulálunk! Havi %d ingyenes használatot kaptál vízjel nélküli exportáláshoz.</item>
+        <item quantity="other">Gratulálunk! Havi %d ingyenes használatot kaptál vízjel nélküli exportáláshoz.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">Még mindig van %d ingyenes használatod vízjel nélküli exportáláshoz.</item>
+        <item quantity="other">Még mindig van %d ingyenes használatod vízjel nélküli exportáláshoz.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">Gratulálunk! %d ingyenes használatot kaptál vízjel nélküli exportáláshoz.</item>
+        <item quantity="other">Gratulálunk! %d ingyenes használatot kaptál vízjel nélküli exportáláshoz.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">%d használat</item>
+        <item quantity="other">%d felhasználás</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">%d kredit kedvezmény az első alkalommal. Túllépés esetén további kreditek kerülnek felhasználásra.</item>
+        <item quantity="other">%d kredit kedvezmény az első alkalommal. Túllépés esetén további kreditek kerülnek felhasználásra.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">A funkció alkalmazásához további %d kredit szükséges</item>
+        <item quantity="other">A funkció alkalmazásához további %d kredit szükséges</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">A klip nem haladhatja meg a(z) %d másodpercet</item>
+        <item quantity="other">A klip nem haladhatja meg a(z) %d másodpercet</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">%d kredited maradt.</item>
+        <item quantity="other">%d kredited maradt.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">A(z) {$benefit_name$} alkalmazása {$credit_amount$} kreditet használ fel.</item>
+        <item quantity="other">A(z) {$benefit_name$} alkalmazása {$credit_amount$} kreditet használ fel.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">Ennek a funkciónak az alkalmazása %d kreditet használ fel.</item>
+        <item quantity="other">Ennek a funkciónak az alkalmazása %d kreditet használ fel.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">Ennek a sablonnak a használata %d kreditet használ fel.</item>
+        <item quantity="other">Ennek a sablonnak a használata %d kreditet használ fel.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">Véglegesen törölve lesz, és nem állítható helyre.</item>
+        <item quantity="other">Véglegesen törölve lesznek, és nem állíthatók helyre.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">Törlöd ezt az elemet?</item>
+        <item quantity="other">Törlöd ezeket az elemeket?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">%1$d „%1$s”-projekt</item>
+        <item quantity="other">%1$d „%1$s”-projekt</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">%d elem áthelyezve a Lomtárba</item>
+        <item quantity="other">%d elem áthelyezve a Lomtárba</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">%d elem hozzáadva a Kedvencekhez</item>
+        <item quantity="other">%d elem hozzáadva a Kedvencekhez</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">%d elem eltávolítva a Kedvencek közül</item>
+        <item quantity="other">%d elem eltávolítva a Kedvencek közül</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">Ez egy ingyenes tár, és legfeljebb %1$d tagja lehet. Még %2$s tagot hívhatsz meg.</item>
+        <item quantity="other">Ez egy ingyenes tár, és legfeljebb %1$d tagja lehet. Még %2$s tagot hívhatsz meg.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">%d használat/hónap</item>
+        <item quantity="other">%d használat/hónap</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d használat/nap</item>
+        <item quantity="other">%d használat/nap</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d használat/hét</item>
+        <item quantity="other">%d használat/hét</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">{price} {number} hónap után</item>
+        <item quantity="other">{price} {number} hónap után</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">%1$s %2$d hónap után</item>
+        <item quantity="other">%1$s %2$d hónap után</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">{price} {number} év után</item>
+        <item quantity="other">{price} {number} év után</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">%1$s %2$d év után</item>
+        <item quantity="other">%1$s %2$d év után</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">Ennek a tárnak %d tagja van.</item>
+        <item quantity="other">Ennek a tárnak %d tagja van.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">Meghívhatsz még %1$d tagot.</item>
+        <item quantity="other">Meghívhatsz még %1$d tagot.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">%1$d hely foglalt.</item>
+        <item quantity="other">%1$d hely foglalt.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">%d napos ingyenes próbaidőszak indítása</item>
+        <item quantity="other">%d napos ingyenes próbaidőszak indítása</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">%d kredit szükséges.</item>
+        <item quantity="other">%d kredit szükséges.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">%d kredited maradt.</item>
+        <item quantity="other">%d kredited maradt.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">%1$s/%2$s projekt feltöltése</item>
+        <item quantity="other">%1$s/%2$s projekt feltöltése</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"%d másik klip kapcsolódik ehhez a médiafájlhoz. Szeretnéd ezt is cserélni?
+A fájl automatikusan az eredeti időtartamra lesz vágva."</item>
+        <item quantity="other">"%d másik klip kapcsolódik ehhez a médiafájlhoz. Szeretnéd ezt is cserélni?
+A fájl automatikusan az eredeti időtartamra lesz vágva."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">Még %d képet tölthetsz fel</item>
+        <item quantity="other">Még %d képet tölthetsz fel</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">%d frissítendő szegmens</item>
+        <item quantity="other">%d frissítendő szegmens</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">Még kiválaszthatsz %1$d képet és %2$s</item>
+        <item quantity="other">Még kiválaszthatsz %1$d képet és %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(max %d mp)</item>
+        <item quantity="other">(max %d mp)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d videót</item>
+        <item quantity="other">%d videót</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">Még kiválaszthatsz %d képet</item>
+        <item quantity="other">Még kiválaszthatsz %d képet</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">Még kiválaszthatsz %d videót</item>
+        <item quantity="other">Még kiválaszthatsz %d videót</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(max %d mp)</item>
+        <item quantity="other">(max %d mp)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">Sorban… Körülbelül %d perc van hátra.</item>
+        <item quantity="other">Sorban… Körülbelül %d perc van hátra.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">Várakozási idő csökkentése · %d használat maradt</item>
+        <item quantity="other">Várakozási idő csökkentése · %d használat maradt</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">Sorban… Körülbelül %d mp van hátra.</item>
+        <item quantity="other">Sorban… Körülbelül %d mp van hátra.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">Gyors sorban a Próval… Körülbelül %d perc van hátra.</item>
+        <item quantity="other">Gyors sorban a Próval… Körülbelül %d perc van hátra.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">%d elem</item>
+        <item quantity="other">%d elem</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">%d kiválasztott elem</item>
+        <item quantity="other">%d kiválasztott elem</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">%d projekt</item>
+        <item quantity="other">%d projekt</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">%d projekt kiválasztva</item>
+        <item quantity="other">%d projekt kiválasztva</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">Jelenleg sokan használják ezt a funkciót. A becsült várakozási idő %d perc.</item>
+        <item quantity="other">Jelenleg sokan használják ezt a funkciót. A becsült várakozási idő %d perc.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">Az újbóli generálás %d kreditet használ fel.</item>
+        <item quantity="other">Az újbóli generálás %d kreditet használ fel.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">Az új elemmel való újbóli generálás %d kreditet használ fel.</item>
+        <item quantity="other">Az új elemmel való újbóli generálás %d kreditet használ fel.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">%d klip hozzáadva</item>
+        <item quantity="other">%d klip hozzáadva</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">Válassz ki %d elemet</item>
+        <item quantity="other">Válassz ki %d elemet</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">%d videót generált neked</item>
+        <item quantity="other">%d videót generált neked</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">Csak %d percnél rövidebb hangot lehet szétválasztani</item>
+        <item quantity="other">Csak %d percnél rövidebb hangot lehet szétválasztani</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">A tárat %d napon belül helyreállíthatod.</item>
+        <item quantity="other">A tárat %d napon belül helyreállíthatod.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">%d videó generálása folyamatban van. Próbálkozz újra később.</item>
+        <item quantity="other">%d videó generálása folyamatban van. Próbálkozz újra később.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">Bővíts, hogy %d kreditért használhasd ezt a funkciót</item>
+        <item quantity="other">Bővíts, hogy %d kreditért használhasd ezt a funkciót</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">Már csak %d férőhely maradt ebben a tárban.</item>
+        <item quantity="other">Már csak %d férőhely maradt ebben a tárban.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">%d elem felhasználva</item>
+        <item quantity="other">%d elem felhasználva</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">%d kiválasztott elem</item>
+        <item quantity="other">%d kiválasztott elem</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">Válassz ki %d elemet</item>
+        <item quantity="other">Válassz ki %d elemet</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">%d felirat</item>
+        <item quantity="other">%d felirat</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">%d elem</item>
+        <item quantity="other">%d elem</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">%d funkció alkalmazása folyamatban van. Próbálkozz újra később.</item>
+        <item quantity="other">%d funkció alkalmazása folyamatban van. Próbálkozz újra később.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">%d ingyenes felhasználásod maradt. Csatlakozz a Standardhoz, hogy kreditekkel használhasd.</item>
+        <item quantity="other">%d ingyenes felhasználásod maradt. Csatlakozz a Standardhoz, hogy kreditekkel használhasd.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">%d ingyenes felhasználásod maradt. Csatlakozz a Próhoz, hogy kreditekkel használhasd.</item>
+        <item quantity="other">%d ingyenes felhasználásod maradt. Csatlakozz a Próhoz, hogy kreditekkel használhasd.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">%d ingyenes használat maradt. Szerezd meg az Ultrát, hogy kreditekkel használhasd.</item>
+        <item quantity="other">%d ingyenes használat maradt. Szerezd meg az Ultrát, hogy kreditekkel használhasd.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">Ez %1$d kreditet használ fel. %2$s</item>
+        <item quantity="other">Ez %1$d kreditet használ fel. %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">%d kredited maradt.</item>
+        <item quantity="other">%d kredited maradt.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">Szerezd meg az Ultrát, hogy %d kredittel használhasd</item>
+        <item quantity="other">Szerezd meg az Ultrát, hogy %d kredittel használhasd</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">Csatlakozz a Próhoz e funkció használatához %d kreditért.</item>
+        <item quantity="other">Csatlakozz a Próhoz e funkció használatához %d kreditért.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">Csatlakozz a Standardhoz e funkció használatához %d kreditért.</item>
+        <item quantity="other">Csatlakozz a Standardhoz e funkció használatához %d kreditért.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">Legfeljebb %1$d beszédhangot menthetsz el.</item>
+        <item quantity="other">Legfeljebb %1$d beszédhangot menthetsz el.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">Nem lehet a beszédhangot %1$d percnél hosszabb klipben javítani</item>
+        <item quantity="other">Nem lehet a beszédhangot %1$d percnél hosszabb klipben javítani</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">Az optimális eredmény érdekében válassz ki %d elemet</item>
+        <item quantity="other">Az optimális eredmény érdekében válassz ki %d elemet</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">%1$s-ért újul meg az első %2$d hónapban, majd %3$s-ért.</item>
+        <item quantity="other">%1$s-ért újul meg az első %2$d hónapban, majd %3$s-ért.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">%1$s-ért újul meg az első %2$d évben, majd %3$s-ért.</item>
+        <item quantity="other">%1$s-ért újul meg az első %2$d évben, majd %3$s-ért.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">%d frissítést hajtottál végre. Szeretnél beszédet generálni és szinkronizálni az ajakmozgásokat?</item>
+        <item quantity="other">%d frissítést hajtottál végre. Szeretnél beszédet generálni és szinkronizálni az ajakmozgásokat?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">%d alkalom maradt</item>
+        <item quantity="other">%d alkalom maradt</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">%d néma klip van.</item>
+        <item quantity="other">%d néma klip van.</item>
+    </plurals>
+</resources>

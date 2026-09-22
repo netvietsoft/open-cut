@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/export_pc_guide_banner_content" n0:layout_width="match_parent" n0:layout_height="56.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/export_pc_guide_banner_container" n0:background="@drawable/khe" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textStyle="bold|italic" n0:gravity="start" n0:id="@id/export_pc_guide_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="253.0dp" n0:layout_marginStart="24.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/arrowIcon" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/nd6" n0:layout_marginEnd="26.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

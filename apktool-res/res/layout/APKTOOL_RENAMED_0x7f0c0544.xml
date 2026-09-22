@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/rootLayout" n0:tag="topInset" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/loading" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n0:layout_marginBottom="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.OverScrollViewPagerLayout n0:id="@id/viewPagerLayout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.feedx.main.ui.view.SwipeLimitedVerticalViewPager n0:id="@id/viewPager" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.ui.widget.OverScrollViewPagerLayout>
+    <FrameLayout n0:id="@id/template_subscribe_resource_container" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/replicateNextVideoGuide" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="62.0dp" n3:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/ivReplicateGuide" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="11.0dp" n0:src="@drawable/oqa" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_gravity="center_horizontal" n0:id="@id/tvReplicateGuide" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qn6" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#fafbff" n0:id="@id/tip_drag_down_to_refresh" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="22.0dp" n0:text="@string/pvi" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:k1i="medium"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <include n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" layout="@layout/APKTOOL_RENAMED_0x7f0c047f"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/refresh_page_viewgroup" n0:visibility="gone" n0:layout_width="48.0dp" n0:layout_height="30.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" n6:lottie_autoPlay="true" n6:lottie_fileName="feed_refresh_loading.json" n6:lottie_loop="true"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/feedTopBgView" n0:background="@drawable/kja" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="240.0dp" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/searchViewStub" n0:layout_width="match_parent" n0:layout_height="50.0dp" n0:layout_marginStart="48.0dp" n0:layout_marginEnd="16.0dp" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

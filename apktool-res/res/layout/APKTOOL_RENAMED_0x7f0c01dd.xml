@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.aiclipper.ui.AiEditTitleBar n0:id="@id/title_bar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:h4="@string/pp1" n1:layout_constraintTop_toTopOf="parent" n1:kex="@string/ppd" n1:ke3="cancel_confirm"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <SurfaceView n0:id="@id/player_view" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toTopOf="@id/player_control_area" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/title_bar" n2:layout_constraintVertical_weight="1.0"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.gesture.PreviewOperationLayout n0:id="@id/operation_layout" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="@id/player_view" n3:layout_constraintEnd_toEndOf="@id/player_view" n3:layout_constraintStart_toStartOf="@id/player_view" n3:layout_constraintTop_toTopOf="@id/player_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/preview_ui_layout" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="@id/player_view" n4:layout_constraintEnd_toEndOf="@id/player_view" n4:layout_constraintStart_toStartOf="@id/player_view" n4:layout_constraintTop_toTopOf="@id/player_view"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.aiclipper.panel.aiedit.base.AiEditClickView n0:id="@id/ai_edit_click_view" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n5:layout_constraintBottom_toTopOf="@id/player_control_area" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/title_bar" n5:layout_constraintVertical_weight="1.0"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/music_stub" n0:layout="@layout/ln-" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginBottom="13.0dp" n0:layout_marginStart="16.0dp" n6:layout_constraintBottom_toBottomOf="@id/player_view" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/space_seekbar_top" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="13.0dp" n7:layout_constraintBottom_toBottomOf="@id/player_view" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SeekBarSliderView n0:id="@id/seekBar" n0:layout_width="match_parent" n0:layout_height="30.0dp" n8:APKTOOL_RENAMED_0x7f0404f1="true" n8:APKTOOL_RENAMED_0x7f0404f2="0.0dp" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="@id/space_seekbar_top" n8:kko="@color/_m" n8:kkt="@color/APKTOOL_RENAMED_0x7f06001f" n8:kkv="17.0dp" n8:kvr="4.0dp"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/player_control_area" n0:background="@color/APKTOOL_RENAMED_0x7f060478" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n9:layout_constraintBottom_toTopOf="@id/content_layout" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="11.0sp" n0:textColor="@color/l_" n0:gravity="center" n0:id="@id/tvPlayTime" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginTop="13.0dp" n0:layout_marginBottom="13.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginVertical="13.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toTopOf="parent" n9:k1i="medium" n9:k1j="body_3" />
+        <com.vega.ui.AlphaButton n0:id="@id/ivPlay" n0:padding="5.0dp" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:src="@drawable/g4" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaButton n0:id="@id/text_toggle_button" n0:visibility="gone" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:src="@drawable/qrv" n0:layout_marginEnd="10.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toStartOf="@id/ivPrevious" n9:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaButton n0:id="@id/ivNext" n0:padding="5.0dp" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:src="@drawable/g5" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="5.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaButton n0:id="@id/ivPrevious" n0:padding="5.0dp" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:src="@drawable/g6" n0:layout_marginEnd="5.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toStartOf="@id/ivNext" n9:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView n0:id="@id/content_layout" n0:layout_width="match_parent" n0:layout_height="287.0dp" n0:fillViewport="true" n10:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/line_view" n0:background="@color/APKTOOL_RENAMED_0x7f060639" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.5dp" n11:layout_constraintBottom_toTopOf="@id/high_light_edit_area"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.aiclipper.ui.SmartEditDockGroupView n0:id="@id/high_light_edit_area" n0:layout_width="0.0dp" n0:layout_height="70.0dp" n12:layout_constraintBottom_toBottomOf="parent" n12:layout_constraintEnd_toEndOf="parent" n12:layout_constraintStart_toStartOf="parent"
+      xmlns:n12="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.RoundFrameLayout n0:id="@id/high_panel_group_view" n0:clipChildren="false" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:animateLayoutChanges="true" n13:i9="12.0dp" n13:i-="12.0dp" n13:layout_constraintBottom_toBottomOf="parent" n13:layout_constraintEnd_toEndOf="parent" n13:layout_constraintStart_toStartOf="parent"
+      xmlns:n13="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/extraContainer" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="0.0dp" n14:layout_constraintBottom_toBottomOf="parent" n14:layout_constraintEnd_toEndOf="parent" n14:layout_constraintStart_toStartOf="parent" n14:layout_constraintTop_toTopOf="parent"
+      xmlns:n14="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_edit_input_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <View n0:id="@id/ai_edit_mask" n0:background="@color/u" n0:focusable="true" n0:visibility="visible" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" n15:layout_constraintBottom_toTopOf="@id/ai_edit_input_inner_layout"
+          xmlns:n15="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_edit_input_inner_layout" n0:background="@drawable/kb4" n0:visibility="visible" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="8.0dp" n16:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n16="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:id="@id/ai_edit_confirm" n0:paddingLeft="8.0dp" n0:paddingTop="9.0dp" n0:paddingRight="8.0dp" n0:paddingBottom="9.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="10.0dp" n0:src="@drawable/md_" n0:paddingHorizontal="8.0dp" n0:paddingVertical="9.0dp" n16:layout_constraintBottom_toBottomOf="parent" n16:layout_constraintEnd_toEndOf="parent" />
+            <com.vega.ui.widget.ExpandEditText n0:textSize="14.0dp" n0:textColor="#fafbff" n0:textColorHint="#a9a9a9" n0:gravity="start|center" n0:id="@id/ai_edit_input" n0:background="@drawable/kb3" n0:paddingLeft="12.0dp" n0:paddingTop="9.0dp" n0:paddingRight="12.0dp" n0:paddingBottom="9.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="10.0dp" n0:maxHeight="72.0dp" n0:hint="@string/l8m" n0:textDirection="locale" n0:layout_marginEnd="4.0dp" n0:layout_marginVertical="10.0dp" n0:paddingHorizontal="12.0dp" n0:paddingVertical="9.0dp" n16:layout_constraintBottom_toBottomOf="parent" n16:layout_constraintEnd_toStartOf="@id/ai_edit_confirm" n16:layout_constraintStart_toStartOf="parent" n16:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/panel_mask_view" n0:background="@color/u" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

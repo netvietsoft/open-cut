@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/ls_" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ivTopLine" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/of_" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/tvActivityTopic" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ivTopLine" n2:k1i="bold"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/llSelectDraft_ug_activity" n0:background="@drawable/ld9" n0:layout_width="match_parent" n0:layout_height="72.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toTopOf="@id/llCreateDraft_ug_activity" n3:layout_constraintTop_toBottomOf="@id/tvActivityTopic"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:id="@id/ivSelectDraft" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/pkt" n0:layout_marginStart="20.0dp" n3:layout_constraintStart_toStartOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/sg" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tvSelectDraft" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f121fde" n0:layout_marginStart="12.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/llCreateDraft_ug_activity" n0:background="@drawable/ld9" n0:layout_width="match_parent" n0:layout_height="72.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="20.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/llSelectDraft_ug_activity"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:id="@id/ivCreateDraft" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/pks" n0:layout_marginStart="20.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/sg" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tvCreateDraft" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/om-" n0:layout_marginStart="12.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

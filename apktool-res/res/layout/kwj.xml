@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="56.0dp" n0:layout_height="80.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/add_tag" n0:background="@drawable/APKTOOL_RENAMED_0x7f081f0c" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/space_ai" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginStart="4.0dp" n2:layout_constraintStart_toEndOf="@id/add_tag" n2:layout_constraintTop_toBottomOf="@id/add_tag"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ic_ai_writer_template" n0:background="@drawable/maz" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="-3.0dp" n3:layout_constraintBottom_toTopOf="@id/space_ai" n3:layout_constraintEnd_toStartOf="@id/space_ai"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

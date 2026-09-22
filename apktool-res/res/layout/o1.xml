@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/multi_cut_same_preview_root" n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/header_root" layout="@layout/l8w" />
+    <SurfaceView n0:id="@id/preview_surface" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="15.0dp" n1:layout_constraintBottom_toTopOf="@id/template_list_container" n1:layout_constraintTop_toBottomOf="@id/header_root"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <include n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/preview_surface" n2:layout_constraintEnd_toEndOf="@id/preview_surface" n2:layout_constraintStart_toStartOf="@id/preview_surface" n2:layout_constraintTop_toTopOf="@id/preview_surface" layout="@layout/lm5"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/play_btn" n0:background="#66000000" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="15.0dp" n3:layout_constraintBottom_toTopOf="@id/template_list_container" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/nv-" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/loading_fail_tip" n0:background="@color/sg" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="15.0dp" n4:layout_constraintBottom_toTopOf="@id/template_list_container" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textColor="#b2f6f7fe" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/loading_fail_tip_tv" n0:background="@drawable/k-i" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="43.0dp" n0:layout_marginRight="43.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1231e1" n0:layout_marginHorizontal="43.0dp" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/template_list_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintTop_toBottomOf="@id/preview_surface"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/fl_vip_float_toast" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" layout="@layout/lv6"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

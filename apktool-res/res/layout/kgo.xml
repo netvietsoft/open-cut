@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f0805e6" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/iv_close" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:layout_marginTop="25.0dp" n0:src="@drawable/m6d" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kr3="button"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/retry_view" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="0.0dp" n0:text="@string/mzh" n0:drawablePadding="8.0dp" n0:drawableStart="@drawable/ody" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout n0:id="@id/coordinator" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/iv_close"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <com.google.android.material.appbar.AppBarLayout n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:fadingEdge="none" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:elevation="0.0dp" n3:layout_behavior="com.google.android.material.appbar.AppBarLayout$Behavior">
+                <com.vega.theme.text.VegaTextView n0:textSize="22.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:id="@id/video_cnt_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="16.0dp" n3:layout_scrollFlags="scroll" />
+                <com.vega.aicreator.preview.ExpandTextView n0:textSize="14.0dp" n0:textColor="#090c14" n0:id="@id/video_list_description" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:lineSpacingExtra="5.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n3:gd="@string/b2" n3:ge="#090c14" n3:APKTOOL_RENAMED_0x7f0404ba="@string/b3" n3:APKTOOL_RENAMED_0x7f0404bb="#090c14" n3:layout_scrollFlags="scroll" n3:knv="300" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_video_list" n0:paddingBottom="30.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="12.0dp" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" n3:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/coordinator" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

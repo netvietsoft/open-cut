@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="22.0dp" n0:textColor="@color/sg" n0:id="@id/createPwdTips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="66.0dp" n0:text="@string/ld9" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaEditText n0:textSize="16.0dp" n0:textColor="#16161d" n0:textColorHint="#a9adb5" n0:gravity="center_vertical" n0:id="@id/pwdEt" n0:background="@drawable/k8e" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="16.0dp" n0:hint="@string/l77" n0:inputType="textPassword" n0:paddingStart="16.0dp" n0:paddingEnd="40.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/createPwdTips"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/pwdEyeSwitch" n0:visibility="invisible" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="@id/pwdEt" n3:layout_constraintEnd_toEndOf="@id/pwdEt" n3:layout_constraintTop_toTopOf="@id/pwdEt"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:id="@id/icEye" n0:background="@drawable/neq" n0:layout_width="16.0dp" n0:layout_height="16.0dp" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#46464c" n0:id="@id/pwdMustTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/uqx" n4:layout_constraintStart_toStartOf="@id/pwdEt" n4:layout_constraintTop_toBottomOf="@id/pwdEt"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/pwdCheckIv" n0:background="@drawable/l2s" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="10.0dp" n5:layout_constraintStart_toStartOf="@id/pwdMustTv" n5:layout_constraintTop_toBottomOf="@id/pwdMustTv"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="#a9adb5" n0:id="@id/pwdCheckTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/moi" n0:layout_marginStart="8.0dp" n6:layout_constraintBottom_toBottomOf="@id/pwdCheckIv" n6:layout_constraintStart_toEndOf="@id/pwdCheckIv" n6:layout_constraintTop_toTopOf="@id/pwdCheckIv"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaButton n0:enabled="false" n0:textColor="@color/gk" n0:id="@id/pwdConfirm" n0:background="@drawable/k8c" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="30.0dp" n0:text="@string/la8" n0:textAllCaps="false" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/pwdCheckIv"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

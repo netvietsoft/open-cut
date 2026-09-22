@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateConstraintLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f080fc5" n0:layout_width="match_parent" n0:layout_height="52.5dp" n1:kr3="list"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/_3" n0:gravity="center_vertical" n0:id="@id/tv_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="15.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <ImageView n0:id="@id/iv_chosen" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f0818ea" n0:layout_marginEnd="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_goneMarginEnd="15.0dp" />
+</com.vega.ui.state.pressed.PressedStateConstraintLayout>

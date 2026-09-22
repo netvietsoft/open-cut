@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">Ei voitu ladata %d kohdetta. AutoCut jatkaa.</item>
+        <item quantity="other">Ei voitu ladata %d kohdetta. AutoCut jatkaa.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">Liite: %d tiedosto</item>
+        <item quantity="other">Liite: %d tiedostoa</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">%1$d krediitti tarvitaan.</item>
+        <item quantity="other">%1$d krediittiä tarvitaan.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">Sinulla on %1$d krediitti jäljellä.</item>
+        <item quantity="other">Sinulla on %1$d krediittiä jäljellä.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">Ilmaisia krediittejäsi vähennetään. %d lisäkrediitti tarvitaan.</item>
+        <item quantity="other">Ilmaisia krediittejäsi vähennetään. %d lisäkrediittiä tarvitaan.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">%1$d krediitti tarvitaan.</item>
+        <item quantity="other">%1$d krediittiä tarvitaan.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">Sinulla on %1$d krediitti jäljellä. Voit jatkaa ostamalla krediittejä.</item>
+        <item quantity="other">Sinulla on %1$d krediittiä jäljellä. Voit jatkaa ostamalla krediittejä.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">%1$d krediitti tarvitaan.</item>
+        <item quantity="other">%1$d krediittiä tarvitaan.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">Sinulla on %1$d krediitti jäljellä. Saat lisää krediittejä päivittämällä.</item>
+        <item quantity="other">Sinulla on %1$d krediittiä jäljellä. Saat lisää krediittejä päivittämällä.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">%d krediitti käytetään</item>
+        <item quantity="other">%d krediittiä käytetään</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">Ilmaisia krediittejäsi vähennetään. %d lisäkrediitti tarvitaan.</item>
+        <item quantity="other">Ilmaisia krediittejäsi vähennetään. %d lisäkrediittiä tarvitaan.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">%d suositeltu malli</item>
+        <item quantity="other">%d suositeltua mallia</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">%d video luotu</item>
+        <item quantity="other">%d videota luotu</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">Voit käyttää automaattisia tekstityksiä ja sanoituksia ilmaiseksi %d kerran kuukaudessa. Käyttökertojen määrä uusiutuu joka kuukauden alussa. Joka kerralla vähennetään yksi käyttökerta.</item>
+        <item quantity="other">Voit käyttää automaattisia tekstityksiä ja sanoituksia ilmaiseksi %d kertaa kuukaudessa. Käyttökertojen määrä uusiutuu joka kuukauden alussa. Joka kerralla vähennetään yksi käyttökerta.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%d käyttökerta kuukaudessa</item>
+        <item quantity="other">%d käyttökertaa kuukaudessa</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">Poista %d sana</item>
+        <item quantity="other">Poista %d sanaa</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%d kohokohta</item>
+        <item quantity="other">%d kohokohtaa</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">%d täytesana löydetty</item>
+        <item quantity="other">%d täytesanaa löydetty</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">Valitse enintään %d kohde</item>
+        <item quantity="other">Valitse enintään %d kohdetta</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">Arvioitu jonotusaika: %d s</item>
+        <item quantity="other">Arvioitu jonotusaika: %d s</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">Noin %d h jäljellä</item>
+        <item quantity="other">Noin %d h jäljellä</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">Noin %d min jäljellä</item>
+        <item quantity="other">Noin %d min jäljellä</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">Noin %d s jäljellä</item>
+        <item quantity="other">Noin %d s jäljellä</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">Äänitulos (%d)</item>
+        <item quantity="other">Äänitulokset (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">Tiedostotulos (%d)</item>
+        <item quantity="other">Tiedostotulokset (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">Luomistulos (%d)</item>
+        <item quantity="other">Luomistulokset (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">Liite: %d kuva</item>
+        <item quantity="other">Liite: %d kuvaa</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">Liite: %d video</item>
+        <item quantity="other">Liite: %d videota</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">Luotu kuva (%d)</item>
+        <item quantity="other">Luodut kuvat (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">Luotu video (%d)</item>
+        <item quantity="other">Luodut videot (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">Käytetään %1$d tekoälytekstitehostetta… %2$d %%</item>
+        <item quantity="other">Käytetään %1$d tekoälytekstitehostetta… %2$d %%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">Käytä %d resurssia kaikkiin leikkeisiin</item>
+        <item quantity="other">Käytä %d resurssia kaikkiin leikkeisiin</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">%d resurssi valittu</item>
+        <item quantity="other">%d resurssia valittu</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">%d päivän Ultra</item>
+        <item quantity="other">%d päivän Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d hahmo</item>
+        <item quantity="other">%d hahmoa</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">Valitse enintään %d hahmo</item>
+        <item quantity="other">Valitse enintään %d hahmoa</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">%d leike ei ole lisensoitu kaupalliseen käyttöön</item>
+        <item quantity="other">%d leikettä ei ole lisensoitu kaupalliseen käyttöön</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">%d fontti ei ole lisensoitu kaupalliseen käyttöön</item>
+        <item quantity="other">%d fonttia ei ole lisensoitu kaupalliseen käyttöön</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">%d ääni ei ole lisensoitu kaupalliseen käyttöön</item>
+        <item quantity="other">%d ääntä ei ole lisensoitu kaupalliseen käyttöön</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">%d leike ei ole lisensoitu kaupalliseen käyttöön eikä sitä voi korvata</item>
+        <item quantity="other">%d leikettä ei ole lisensoitu kaupalliseen käyttöön eikä niitä voi korvata</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">%d fontti ei ole lisensoitu kaupalliseen käyttöön eikä sitä voi korvata</item>
+        <item quantity="other">%d fonttia ei ole lisensoitu kaupalliseen käyttöön eikä niitä voi korvata</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">%d ääni ei ole lisensoitu kaupalliseen käyttöön eikä sitä voi korvata</item>
+        <item quantity="other">%d ääntä ei ole lisensoitu kaupalliseen käyttöön eikä niitä voi korvata</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">%d tarra ei ole lisensoitu kaupalliseen käyttöön eikä sitä voi korvata</item>
+        <item quantity="other">%d tarraa ei ole lisensoitu kaupalliseen käyttöön eikä niitä voi korvata</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">%d tarra ei ole lisensoitu kaupalliseen käyttöön</item>
+        <item quantity="other">%d tarraa ei ole lisensoitu kaupalliseen käyttöön</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">Poistetaanko %d kommentti?</item>
+        <item quantity="other">Poistetaanko %d kommenttia?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">Valitsit %d tilin. Vain sinä ja rajoittamasi henkilö näkevät kommentit.</item>
+        <item quantity="other">Valitsit %d tiliä. Vain sinä ja rajoittamasi henkilöt näkevät kommentit.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">Rajoitetaanko %d tili?</item>
+        <item quantity="other">Rajoitetaanko %d tiliä?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">%d päivä</item>
+        <item quantity="other">%d päivää</item>
+    </plurals>
+    <plurals name="kg">
+        <item quantity="one">%d ilmainen käyttökerta</item>
+        <item quantity="other">%d ilmaista käyttökertaa</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">Sinulla on %s uusi sisällönluojan viesti</item>
+        <item quantity="other">Sinulla on %s uutta sisällönluojan viestiä</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">Päättynyt %d päivä sitten</item>
+        <item quantity="other">Päättynyt %d päivää sitten</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">Käytät Pro-ominaisuutta. Sinulla on jäljellä %d maksuton käyttökerta. Liity Pro-jäseneksi käyttääksesi rajattomasti.</item>
+        <item quantity="other">Käytät Pro-ominaisuutta. Sinulla on jäljellä %d maksutonta käyttökertaa. Liity Pro-jäseneksi käyttääksesi rajattomasti.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">Käytät perustason ominaisuutta. Sinulla on %d ilmainen käyttökerta jäljellä. Liity perustason jäseneksi, niin saat rajoittamattoman käyttöoikeuden.</item>
+        <item quantity="other">Käytät perustason ominaisuutta. Sinulla on %d ilmaista käyttökertaa jäljellä. Liity perustason jäseneksi, niin saat rajoittamattoman käyttöoikeuden.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">Käytät Pro-ominaisuutta. Sinulla on jäljellä %d maksuton käyttökerta tässä kuussa. Liity Pro-jäseneksi käyttääksesi rajattomasti.</item>
+        <item quantity="other">Käytät Pro-ominaisuutta. Sinulla on jäljellä %d maksutonta käyttökertaa tässä kuussa. Liity Pro-jäseneksi käyttääksesi rajattomasti.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">Käytät perustason ominaisuutta. Sinulla on jäljellä %d ilmainen käyttökerta tässä kuussa. Liity perustason jäseneksi, niin saat rajoittamattoman käyttöoikeuden.</item>
+        <item quantity="other">Käytät perustason ominaisuutta. Sinulla on jäljellä %d ilmaista käyttökertaa tässä kuussa. Liity perustason jäseneksi, niin saat rajoittamattoman käyttöoikeuden.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d päivä ilmaiseksi</item>
+        <item quantity="other">%d päivää ilmaiseksi</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">%1$s %2$d viikon kuluttua</item>
+        <item quantity="other">%1$s %2$d viikon kuluttua</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">Voit käyttää Pro-malleja ilmaiseksi %d kerran kuukaudessa.</item>
+        <item quantity="other">Voit käyttää Pro-malleja ilmaiseksi %d kertaa kuukaudessa.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">%d ilmainen käyttökerta</item>
+        <item quantity="other">%d ilmaista käyttökertaa</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">Kokeile %d päivä ilmaiseksi</item>
+        <item quantity="other">Kokeile %d päivää ilmaiseksi</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">%d musiikin tekijänoikeusongelma</item>
+        <item quantity="other">%d musiikin tekijänoikeusongelmaa</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">%d teksti valittu</item>
+        <item quantity="other">%d tekstiä valittu</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_popup_title">
+        <item quantity="one">Lunasta %d maksuton päivä Dreaminan perustason tilausta</item>
+        <item quantity="other">Lunasta %d maksutonta päivää Dreaminan perustason tilausta</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_claim_success_popup_desc">
+        <item quantity="one">Dreaminan perustason %d päivän käyttöoikeus on nyt aktiivinen.</item>
+        <item quantity="other">Dreamina perustason %d päivän käyttöoikeus on nyt aktiivinen.</item>
+    </plurals>
+    <plurals name="cc_x_dreamina_m10n_to_claim_profile_banner">
+        <item quantity="one">Lunasta Dreaminan perustason käyttöoikeus %d päiväksi</item>
+        <item quantity="other">Lunasta Dreaminan perustason käyttöoikeus %d päiväksi</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">%d leike valittu</item>
+        <item quantity="other">%d leikettä valittu</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">Vie %1$d päivä rajattomasti maksutta. Voit myös päivittää, jolloin voit viedä rajattomasti suurella tarkkuudella.</item>
+        <item quantity="other">Vie %1$d päivää rajattomasti maksutta. Voit myös päivittää, jolloin voit viedä rajattomasti suurella tarkkuudella.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">Vie tarkkuudella 1 080 p %d kerran ilmaiseksi</item>
+        <item quantity="other">Vie tarkkuudella 1 080 p %d kertaa ilmaiseksi</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">%d ilmainen vienti tarkkuudella 1080p jäljellä. Päivitä ja nauti rajoittamattomista vienneistä suurella tarkkuudella.</item>
+        <item quantity="other">%d ilmaista vientiä tarkkuudella 1080p jäljellä. Päivitä ja nauti rajoittamattomista vienneistä suurella tarkkuudella.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">%d ilmainen vienti tarkkuudella 1080p jäljellä tässä kuussa. Päivitä ja nauti rajoittamattomista vienneistä suurella tarkkuudella.</item>
+        <item quantity="other">%d ilmaista vientiä tarkkuudella 1080p jäljellä tässä kuussa. Päivitä ja nauti rajoittamattomista vienneistä suurella tarkkuudella.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">%d krediitti tarvitaan.</item>
+        <item quantity="other">%d krediittiä tarvitaan.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">Sinulla on %d krediitti jäljellä.</item>
+        <item quantity="other">Sinulla on %d krediittiä jäljellä.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">%1$d luonti on käynnissä. Päivitä Pro-versioon, niin voit luoda jopa %2$d kerralla.</item>
+        <item quantity="other">%1$d luontia on käynnissä. Päivitä Pro-versioon, niin voit luoda jopa %2$d kerralla.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">Vie ilman vesileimaa (%d käyttökerta jäljellä)</item>
+        <item quantity="other">Vie ilman vesileimaa (%d käyttökerta jäljellä)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">%d ilmaista käyttökertaa jäljellä. Krediittejä ei tarvita.</item>
+        <item quantity="other">%d ilmaista käyttökertaa jäljellä. Krediittejä ei tarvita.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">Valitsemasi kohde poistetaan ja se säilyy roskakorissa %d päivää.</item>
+        <item quantity="other">Valitsemasi kohteet poistetaan ja ne säilyvät roskakorissa %d päivää.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">Yksi valituista kohteista on ladattu tilaan. Jatketaanko poistoa?</item>
+        <item quantity="other">Jotkin valitut kohteet on ladattu tilaan. Jatketaanko poistoa?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">Valitsemasi kohde poistetaan ja siirretään roskakoriin.</item>
+        <item quantity="other">Valitsemasi kohteet poistetaan ja siirretään roskakoriin.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">%d käyttökerta</item>
+        <item quantity="other">%d käyttökertaa</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">Antamastasi syntymäpäivästä laskettu ikä on %d vuotta, ja näyttää siltä, että se on virheellinen. Anna todellinen syntymäaikasi.</item>
+        <item quantity="other">Antamastasi syntymäpäivästä laskettu ikä on %d vuotta, ja näyttää siltä, että se on virheellinen. Anna todellinen syntymäaikasi.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">Sisältää yhden ilmaisen käyttökerran edellisten ostojen perusteella ja Pron %d ylimääräisen ilmaisen käyttökerran</item>
+        <item quantity="other">Sisältää yhden ilmaisen käyttökerran edellisten ostojen perusteella ja Pron %d ylimääräistä ilmaista käyttökertaa</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">Pro tarjoaa %d ilmaisen käyttökerran</item>
+        <item quantity="other">Pro tarjoaa %d ilmaista käyttökertaa</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">Voit nyt käyttää videoiden avulla luomiasi avatareja ikuisesti. Liity Pro-jäseneksi, niin saat %d ilmaisen muokkausoikeuden.</item>
+        <item quantity="other">Voit nyt käyttää videoiden avulla luomiasi avatareja ikuisesti. Liity Pro-jäseneksi, niin saat %d ilmaista muokkausoikeutta.</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">Tämän tehosteen käyttäminen kuluttaa %d krediitin.</item>
+        <item quantity="other">Tämän tehosteen käyttäminen kuluttaa %d krediittiä.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">Sinulla on nyt %d krediitti käytettävissäsi.</item>
+        <item quantity="other">Sinulla on nyt %d krediittiä käytettävissäsi.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">%d kohokohta</item>
+        <item quantity="other">%d kohokohtaa</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">Tekoälytehostetta otetaan käyttöön… vielä %s tunti</item>
+        <item quantity="other">Tekoälytehostetta otetaan käyttöön… vielä %s tuntia</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">Tekoälytehostetta otetaan käyttöön… vielä %s minuutti</item>
+        <item quantity="other">Tekoälytehostetta otetaan käyttöön… vielä %s minuuttia</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">Pro-tehostetta %1$s on käytetty tämänhetkiseen kohteeseen. Sen uudelleenkäyttö uuteen kohteeseen kuluttaa %2$d krediittiä.</item>
+        <item quantity="other">Nykyiseen kohteeseen on käytetty Pro-tehostetta %1$s. Sen käyttäminen uudelleen uuteen kohteeseen kuluttaa %2$d krediittiä.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">%1$d ilmainen käyttökerta vähennetään. Sinulla on %2$d ilmainen käyttökerta jäljellä.</item>
+        <item quantity="other">%1$d ilmainen käyttökerta vähennetään. Sinulla on %2$d ilmaista käyttökertaa jäljellä.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">%1$d Pro-käyttökerta vähennetään. Sinulla on %2$d Pro-käyttökerta jäljellä.</item>
+        <item quantity="other">%1$d Pro-käyttökerta vähennetään. Sinulla on %2$d Pro-käyttökertaa jäljellä.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">Tämä malli tukee vain %d referenssikuvaa</item>
+        <item quantity="other">Tämä malli tukee yhteensä %d referenssikuvaa</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">Lisää vähintään %d referenssikuva, jotta voit käyttää tätä mallia</item>
+        <item quantity="other">Lisää vähintään %d referenssikuvaa, jotta voit käyttää tätä mallia</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">Tämä malli tukee vain %d referenssivideota</item>
+        <item quantity="other">Tämä malli tukee yhteensä %d referenssivideota</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">Lisää vähintään %d referenssivideo, jotta voit käyttää tätä mallia</item>
+        <item quantity="other">Lisää vähintään %d referenssivideota, jotta voit käyttää tätä mallia</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">Valitse %d kuva</item>
+        <item quantity="other">Valitse %d kuvaa</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">%d materiaali lisätty</item>
+        <item quantity="other">%d materiaalia lisätty</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">%d luontikerta jäljellä</item>
+        <item quantity="other">%d luontikertaa jäljellä</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">%d lukitun mallin avaus jäljellä</item>
+        <item quantity="other">%d lukitun mallin avausta jäljellä</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">%d hakusana korostettu. Voit myös tehdä valinnat manuaalisesti.</item>
+        <item quantity="other">%d hakusanaa korostettu. Voit myös tehdä valinnat manuaalisesti.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">Poista %d leike</item>
+        <item quantity="other">Poista %d leikettä</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">%d täytesana tunnistettu. Voit myös tehdä valinnat manuaalisesti.</item>
+        <item quantity="other">%d täytesanaa tunnistettu. Voit myös tehdä valinnat manuaalisesti.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">%d hakusana korostettu</item>
+        <item quantity="other">%d hakusanaa korostettu</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">Viedään %d kuva…</item>
+        <item quantity="other">Viedään %d kuvaa…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">Valitse enintään %d asento</item>
+        <item quantity="other">Valitse enintään %d asentoa</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">Mediatiedostoasi ladataan</item>
+        <item quantity="other">Mediatiedostojasi ladataan</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">%d jäsen</item>
+        <item quantity="other">%d jäsentä</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">Lataa %d projekti tilaan vapauttaaksesi laitteesi tallennustilaa. Voit muokata näitä projekteja mobiilisovelluksessa, työpöytäsovelluksessa tai verkkoeditorissa.</item>
+        <item quantity="other">Lataa %d projektia tilaan vapauttaaksesi laitteesi tallennustilaa. Voit muokata näitä projekteja mobiilisovelluksessa, työpöytäsovelluksessa tai verkkoeditorissa.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">Lataa %d mediatiedosto projekteistasi tilaan. Voit käyttää tätä tiedostoa millä tahansa laitteella lataamatta sitä uudelleen.</item>
+        <item quantity="other">Lataa %d mediatiedostoa projekteistasi tilaan. Voit käyttää näitä tiedostoja millä tahansa laitteella lataamatta niitä uudelleen.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">Sinulla on palautettava projekti</item>
+        <item quantity="other">Sinulla on palautettavia projekteja</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">Projekti on palautettu</item>
+        <item quantity="other">Projektit on palautettu</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">%d ominaisuutta ei voit ottaa käyttöön</item>
+        <item quantity="other">%d ominaisuutta ei voit ottaa käyttöön</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">Lisätään %d ominaisuus</item>
+        <item quantity="other">Lisätään %d ominaisuutta</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">Käytetäänkö Pro-tehostetta?</item>
+        <item quantity="other">Käytetäänkö Pro-tehosteita?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">Nykyiseen kohteeseen on käytetty %1$d Pro-tehostetta. Sen käyttäminen uudelleen uuteen kohteeseen kuluttaa %2$d krediittiä.</item>
+        <item quantity="other">Nykyiseen kohteeseen on käytetty %1$d Pro-tehostetta. Niiden käyttäminen uudelleen uuteen kohteeseen kuluttaa %2$d krediittiä.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">Nykyiseen kohteeseen on käytetty %1$d Pro-tehostetta. Sen käyttämisestä uuteen kohteeseen vähennetään %2$d ilmainen käyttökerta. Krediittejä ei kuluteta.</item>
+        <item quantity="other">Nykyiseen kohteeseen on käytetty %1$d Pro-tehostetta. Niiden käyttämisestä uuteen kohteeseen vähennetään %2$d ilmaista käyttökertaa. Krediittejä ei kuluteta.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">Nykyiseen kohteeseen on käytetty %1$d Pro-tehostetta. Tarvitset %2$d krediittiä, jotta voit käyttää sitä uudelleen uuteen kohteeseen.</item>
+        <item quantity="other">Nykyiseen kohteeseen on käytetty %1$d Pro-tehostetta. Tarvitset %2$d krediittiä, jotta voit käyttää niitä uudelleen uuteen kohteeseen.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">Nykyiseen kohteeseen on käytetty %1$d Pro-tehostetta. Niiden käyttäminen uudelleen uuteen kohteeseen kuluttaa %2$d ilmaisen käyttökerran ja %3$d krediittiä.</item>
+        <item quantity="other">Nykyiseen kohteeseen on käytetty %1$d Pro-tehostetta. Niiden käyttäminen uudelleen uuteen kohteeseen kuluttaa %2$d ilmaista käyttökertaa ja %3$d krediittiä.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">%d leike puuttuu. Palauta se puhelimellesi tai korvaa se.</item>
+        <item quantity="other">%d leikettä puuttuu. Palauta ne puhelimellesi tai korvaa ne.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">Kirjoita enintään %d merkki</item>
+        <item quantity="other">Kirjoita enintään %d merkkiä</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">%d päivä</item>
+        <item quantity="other">%d päivää</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">Poistetaanko kohde?</item>
+        <item quantity="other">Poistetaanko kohteet?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">Roskakoriin siirretyt kohteet tulevat näkyviin tänne, ja ne poistetaan %d päivän kuluttua.</item>
+        <item quantity="other">Roskakoriin siirretyt kohteet tulevat näkyviin tänne, ja ne poistetaan %d päivän kuluttua.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">Ladataan %d kohdetta...</item>
+        <item quantity="other">Ladataan %d kohdetta...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">Ladataan %d kohdetta...</item>
+        <item quantity="other">Ladataan %d kohdetta...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">Tämä kohde poistetaan pysyvästi, eikä sitä voi palauttaa.</item>
+        <item quantity="other">Nämä kohteet poistetaan pysyvästi, eikä niitä voi palauttaa.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">Kohde siirretty</item>
+        <item quantity="other">Kohteet siirretty</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">Käytettävissäsi on vielä %d päivä, jonka aikana voit viedä projekteja ilmaiseksi.</item>
+        <item quantity="other">Käytettävissäsi on vielä %d päivää, joiden aikana voit viedä projekteja ilmaiseksi.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">Onnittelut! Voit nyt viedä ilmaiseksi %d kerran joka kuukausi ilman vesileimaa.</item>
+        <item quantity="other">Onnittelut! Voit nyt viedä ilmaiseksi %d kertaa joka kuukausi ilman vesileimaa.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">Voit viedä ilmaiseksi vielä %d kerran ilman vesileimaa.</item>
+        <item quantity="other">Voit viedä ilmaiseksi vielä %d kertaa ilman vesileimaa.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">Onnittelut! Voit nyt viedä ilmaiseksi %d kerran ilman vesileimaa.</item>
+        <item quantity="other">Onnittelut! Voit nyt viedä ilmaiseksi %d kertaa ilman vesileimaa.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">%d käyttökerta</item>
+        <item quantity="other">%d käyttökertaa</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">%d krediitti alennusta ensikertalaisille. Lisää krediittejä kulutetaan, jos tämä ylitetään.</item>
+        <item quantity="other">%dkrediittiä alennusta ensikertalaisille. Lisää krediittejä kulutetaan, jos tämä ylitetään.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">%d krediitti vaaditaan lisää tämän ominaisuuden käyttämiseen</item>
+        <item quantity="other">%d krediittiä vaaditaan lisää tämän ominaisuuden käyttämiseen</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">Leikkeen pituus saa olla enintään %d sekunti</item>
+        <item quantity="other">Leikkeen pituus saa olla enintään %d sekuntia</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">Sinulla on %d krediitti jäljellä.</item>
+        <item quantity="other">Sinulla on %d krediittiä jäljellä.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">Edun {$benefit_name$} käyttäminen kuluttaa {$credit_amount$} krediitin.</item>
+        <item quantity="other">Edun {$benefit_name$} käyttäminen kuluttaa {$credit_amount$} krediittiä.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">Tämän ominaisuuden käyttäminen kuluttaa %d krediitin.</item>
+        <item quantity="other">Tämän ominaisuuden käyttäminen kuluttaa %d krediittiä.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">Tämän mallin käyttäminen kuluttaa %d krediitin.</item>
+        <item quantity="other">Tämän mallin käyttäminen kuluttaa %d krediittiä.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">Se poistetaan pysyvästi, eikä sitä voi palauttaa.</item>
+        <item quantity="other">Ne poistetaan pysyvästi, eikä niitä voi palauttaa.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">Poistetaanko tämä kohde?</item>
+        <item quantity="other">Poistetaanko nämä kohteet?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">%1$d %1$s-projekti</item>
+        <item quantity="other">%1$d %1$s-projektia</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">%d kohde siirretty roskakoriin</item>
+        <item quantity="other">%d kohdetta siirretty roskakoriin</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">%d kohde lisätty Suosikkeihin</item>
+        <item quantity="other">%d kohdetta lisätty Suosikkeihin</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">%d kohde poistettu Suosikeista</item>
+        <item quantity="other">%d kohdetta poistettu Suosikeista</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">Tämä on ilmainen tila, ja siinä voi olla enintään %1$d jäsentä. Siihen voi kutsua %2$s jäsenen lisää.</item>
+        <item quantity="other">Tämä on ilmainen tila, ja siinä voi olla enintään %1$d jäsentä. Siihen voi kutsua %2$s jäsentä lisää.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">%d käyttökerta kuukaudessa</item>
+        <item quantity="other">%d käyttökertaa kuukaudessa</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d käyttökerta päivässä</item>
+        <item quantity="other">%d käyttökertaa päivässä</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d käyttökerta viikossa</item>
+        <item quantity="other">%d käyttökertaa viikossa</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">{price} {number} kuukauden jälkeen</item>
+        <item quantity="other">{price} {number} kuukauden jälkeen</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">%1$s %2$d kuukauden kuluttua</item>
+        <item quantity="other">%1$s %2$d kuukauden kuluttua</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">{price} {number} vuoden jälkeen</item>
+        <item quantity="other">{price} {number} vuoden jälkeen</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">%1$s %2$d vuoden kuluttua</item>
+        <item quantity="other">%1$s %2$d vuoden kuluttua</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">Tässä tilassa on %d jäsen.</item>
+        <item quantity="other">Tässä tilassa on %d jäsentä.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">Voit kutsua vielä %1$d jäsenen.</item>
+        <item quantity="other">Voit kutsua vielä %1$d jäsentä.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">%1$d paikka on käytössä.</item>
+        <item quantity="other">%1$d paikkaa on käytössä.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">Aloita %d päivän ilmainen kokeilu</item>
+        <item quantity="other">Aloita %d päivän ilmainen kokeilu</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">Kuluttaa %d krediitin.</item>
+        <item quantity="other">Kuluttaa %d krediittiä.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">Sinulla on %d krediitti jäljellä.</item>
+        <item quantity="other">Sinulla on %d krediittiä jäljellä.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">Valitse %1$s/%2$s projekti</item>
+        <item quantity="other">Ladataan %1$s/%2$s projektia</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"%d muu leike on linkitetty tähän mediatiedostoon. Korvataanko sekin?
+Tiedosto trimmataan automaattisesti alkuperäisen keston mukaiseksi."</item>
+        <item quantity="other">"%d muuta leikettä on linkitetty tähän mediatiedostoon. Korvataanko ne kaikki?
+Tiedosto trimmataan automaattisesti alkuperäisen keston mukaiseksi."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">Voit ladata vielä %d kuvan</item>
+        <item quantity="other">Voit ladata vielä %d kuvaa</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">%d päivitettävä segmentti</item>
+        <item quantity="other">%d päivitettävää segmenttiä</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">Voit valita vielä %1$d kuvan ja %2$s</item>
+        <item quantity="other">Voit valita vielä %1$d kuvaa ja %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(enint. %d s)</item>
+        <item quantity="other">(enint. %d s)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d videon</item>
+        <item quantity="other">%d videota</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">Voit valita vielä %d kuvan</item>
+        <item quantity="other">Voit valita vielä %d kuvaa</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">Voit valita vielä %d videon</item>
+        <item quantity="other">Voit valita vielä %d videota</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(enint. %d s)</item>
+        <item quantity="other">(enint. %d s)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">Jonossa... Noin %d min jäljellä.</item>
+        <item quantity="other">Jonossa... Noin %d min jäljellä.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">Lyhennä odotusaikaa · %d käyttökerta jäljellä</item>
+        <item quantity="other">Lyhennä odotusaikaa · %d käyttökertaa jäljellä</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">Jonossa... Noin %d s jäljellä.</item>
+        <item quantity="other">Jonossa... Noin %d s jäljellä.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">Olet nopeassa jonossa Prolla... Noin %d min jäljellä.</item>
+        <item quantity="other">Olet nopeassa jonossa Prolla... Noin %d min jäljellä.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">%d tuote</item>
+        <item quantity="other">%d tuotetta</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">%d kohde valittu</item>
+        <item quantity="other">%d kohdetta valittu</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">%d projekti</item>
+        <item quantity="other">%d projektia</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">%d projekti valittu</item>
+        <item quantity="other">%d projektia valittu</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">Monet käyttävät tätä ominaisuutta juuri nyt. Arvioitu odotusaikasi: %d min.</item>
+        <item quantity="other">Monet käyttävät tätä ominaisuutta juuri nyt. Arvioitu odotusaikasi: %d min.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">Uudelleenluonti kuluttaa %d krediitin.</item>
+        <item quantity="other">Uudelleenluonti kuluttaa %d krediittiä.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">Uudelleenluominen uuden kohteen kanssa kuluttaa %d krediitin.</item>
+        <item quantity="other">Uudelleenluominen uuden kohteen kanssa kuluttaa %d krediittiä.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">%d leike lisätty</item>
+        <item quantity="other">%d leikettä lisätty</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">Valitse %d kohde</item>
+        <item quantity="other">Valitse %d kohdetta</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">Sinulle luotiin %d video</item>
+        <item quantity="other">Sinulle luotiin %d videota</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">Voit erottaa vain alle %d minuutin kestäviä ääniä</item>
+        <item quantity="other">Voit erottaa vain alle %d minuuttia kestäviä ääniä</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">Voit palauttaa tilan %d päivän kuluessa.</item>
+        <item quantity="other">Voit palauttaa tilan %d päivän kuluessa.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">%d videota luodaan. Yritä myöhemmin uudelleen.</item>
+        <item quantity="other">%d videota luodaan. Yritä myöhemmin uudelleen.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">Päivitä, niin voit käyttää tätä toimintoa %d krediitillä</item>
+        <item quantity="other">Päivitä, niin voit käyttää tätä toimintoa %d krediitillä</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">Tässä tilassa on vain %d paikka jäljellä.</item>
+        <item quantity="other">Tässä tilassa on vain %d paikkaa jäljellä.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">%d elementti käytetty</item>
+        <item quantity="other">%d elementtiä käytetty</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">%d kohde valittu</item>
+        <item quantity="other">%d kohdetta valittu</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">Valitse %d kohde</item>
+        <item quantity="other">Valitse %d kohdetta</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">%d tekstitys</item>
+        <item quantity="other">%d tekstitystä</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">%d tuote</item>
+        <item quantity="other">%d tuotetta</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">%d ominaisuutta otetaan käyttöön. Yritä myöhemmin uudelleen.</item>
+        <item quantity="other">%d ominaisuutta otetaan käyttöön. Yritä myöhemmin uudelleen.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">%d ilmainen käyttökerta jäljellä. Liity perustason jäseneksi käyttääksesi ominaisuutta krediiteillä.</item>
+        <item quantity="other">%d ilmaista käyttökertaa jäljellä. Liity perustason jäseneksi käyttääksesi ominaisuutta krediiteillä.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">%d ilmainen käyttökerta jäljellä. Liity Pro-jäseneksi käyttääksesi ominaisuutta krediiteillä.</item>
+        <item quantity="other">%d ilmaista käyttökertaa jäljellä. Liity Pro-jäseneksi käyttääksesi ominaisuutta krediiteillä.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">%d ilmainen käyttökerta jäljellä. Tilaa Ultra, niin voit hyödyntää krediittejä.</item>
+        <item quantity="other">%d ilmaista käyttökertaa jäljellä. Tilaa Ultra, niin voit hyödyntää krediittejä.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">Tähän kuluu %1$d krediitti. %2$s</item>
+        <item quantity="other">Tähän kuluu %1$d krediittiä. %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">Sinulla on %d krediitti jäljellä.</item>
+        <item quantity="other">Sinulla on %d krediittiä jäljellä.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">Hanki Ultra, niin voit käyttää tätä %d krediitillä</item>
+        <item quantity="other">Hanki Ultra, niin voit käyttää tätä %d krediitillä</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">Liity Pro-jäseneksi käyttääksesi sitä %d krediitillä.</item>
+        <item quantity="other">Liity Pro-jäseneksi käyttääksesi sitä %d krediitillä.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">Tee perustason tilaus käyttääksesi tätä ominaisuutta %d krediitillä.</item>
+        <item quantity="other">Tee perustason tilaus käyttääksesi tätä ominaisuutta %d krediitillä.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">Voit tallentaa enintään %1$d ääntä.</item>
+        <item quantity="other">Voi tallentaa enintään %1$d ääntä.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">Ääntä ei voi parantaa leikkeessä, jonka kesto on yli %1$d minuutti</item>
+        <item quantity="other">Ääntä ei voi parantaa leikkeessä, jonka kesto on yli %1$d minuuttia</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">Valitse %d kohde optimaalisia tuloksia varten</item>
+        <item quantity="other">Valitse %d kohdetta optimaalisia tuloksia varten</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">Uusiutuu hintaan %1$s ensimmäiseltä %2$d kuukaudelta, minkä jälkeen hinta on %3$s.</item>
+        <item quantity="other">Uusiutuu hintaan %1$s ensimmäiseltä %2$d kuukaudelta, minkä jälkeen hinta on %3$s.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">Uusiutuu hintaan %1$s ensimmäiseltä %2$d vuodelta, minkä jälkeen hinta on %3$s.</item>
+        <item quantity="other">Uusiutuu hintaan %1$s ensimmäiseltä %2$d vuodelta, minkä jälkeen hinta on %3$s.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">Olet tehnyt %d päivityksen. Haluatko luoda puhetta ja synkronoida huultenliikkeet?</item>
+        <item quantity="other">Olet tehnyt %d päivitystä. Haluatko luoda puhetta ja synkronoida huultenliikkeet?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">%d aikaa jäljellä</item>
+        <item quantity="other">%d aikaa jäljellä</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">%d äänetön leike.</item>
+        <item quantity="other">%d äänetöntä leikettä.</item>
+    </plurals>
+</resources>

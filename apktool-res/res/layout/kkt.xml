@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingLeft="4.0dp" n0:paddingRight="4.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="80.0dp" n0:layout_height="wrap_content" n0:paddingHorizontal="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/bg_view" n0:background="@drawable/lsv" n0:layout_width="64.0dp" n0:layout_height="64.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ic_feature" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:src="@drawable/oja" n2:layout_constraintBottom_toBottomOf="@id/bg_view" n2:layout_constraintEnd_toEndOf="@id/bg_view" n2:layout_constraintStart_toStartOf="@id/bg_view" n2:layout_constraintTop_toTopOf="@id/bg_view"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/tv_feature" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:maxLines="3" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/bg_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_feature_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="14.0dp" n4:layout_constraintEnd_toEndOf="@id/bg_view" n4:layout_constraintTop_toTopOf="@id/bg_view" n4:kml="small"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

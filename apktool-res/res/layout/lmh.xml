@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.edit.view.SubVideoFrameLayout n0:id="@id/sub_video_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_centerInParent="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.sticker.view.gesture.SelectFrameLayout n0:id="@id/select_sub_video_view" n0:visibility="invisible" n0:layout_width="110.0dp" n0:layout_height="110.0dp">
+        <com.vega.edit.base.sticker.view.gesture.NormalButton n0:id="@id/delete" n0:background="@android:color/transparent" n0:padding="3.0dp" n0:layout_width="32.0dp" n0:layout_height="33.0dp" n0:src="@drawable/qb8" />
+        <com.vega.edit.base.sticker.view.gesture.NormalButton n0:layout_gravity="end|top" n0:id="@id/edit" n0:background="@android:color/transparent" n0:padding="3.0dp" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/qcq" />
+        <com.vega.edit.base.sticker.view.gesture.NormalButton n0:layout_gravity="start|bottom" n0:id="@id/copy" n0:background="@android:color/transparent" n0:padding="3.0dp" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/qck" />
+        <com.vega.edit.base.sticker.view.gesture.NormalButton n0:layout_gravity="start|bottom" n0:id="@id/flip" n0:background="@android:color/transparent" n0:padding="3.0dp" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/k0v" />
+        <com.vega.edit.base.sticker.view.gesture.ScaleButton n0:layout_gravity="end|bottom" n0:id="@id/scale" n0:background="@android:color/transparent" n0:padding="3.0dp" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/qci" />
+    </com.vega.edit.base.sticker.view.gesture.SelectFrameLayout>
+</com.vega.edit.view.SubVideoFrameLayout>

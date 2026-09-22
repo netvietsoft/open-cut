@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0813d5" />
+    <TextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/pvh" />
+    <TextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/pvg" />
+    <TextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:id="@id/tv_retry" n0:background="@drawable/mp-" n0:paddingLeft="20.0dp" n0:paddingTop="12.0dp" n0:paddingRight="20.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/pvf" n0:paddingHorizontal="20.0dp" n0:paddingVertical="12.0dp" />
+</LinearLayout>

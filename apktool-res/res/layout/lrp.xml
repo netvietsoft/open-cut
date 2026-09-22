@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ly_cover" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_cover" n0:layout_width="88.0dp" n0:layout_height="88.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="16.0dp" n0:scaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout n0:id="@id/layout_upload" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n1:layout_constraintBottom_toBottomOf="@id/iv_cover" n1:layout_constraintEnd_toEndOf="@id/iv_cover" n1:layout_constraintStart_toStartOf="@id/iv_cover" n1:layout_constraintTop_toTopOf="@id/iv_cover">
+            <com.vega.main.widget.DownloadProcessView n0:id="@id/start_share_upload_process" n0:layout_width="40.0dp" n0:layout_height="40.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:layout_gravity="center" n0:id="@id/tv_upload_progress" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+            <ImageView n0:layout_gravity="center" n0:id="@id/iv_upload_refresh" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082325" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/share_review_name_layout" n0:layout_width="0.0dp" n0:layout_height="56.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ly_cover"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:id="@id/tv_name_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/m_o" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/tv_name_value" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#8015293c" n0:ellipsize="middle" n0:gravity="end" n0:id="@id/tv_name_value" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="108.0dp" n0:singleLine="true" n0:layout_marginEnd="6.0dp" n2:layout_constraintBottom_toBottomOf="@id/arrow_right" n2:layout_constraintEnd_toStartOf="@id/arrow_right" n2:layout_constraintTop_toTopOf="@id/arrow_right" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/arrow_right" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n2:layout_constraintBottom_toBottomOf="@id/tv_name_title" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/tv_name_title" n2:srcCompat="@drawable/oel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/share_review_access_layout" n0:layout_width="0.0dp" n0:layout_height="56.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/share_review_name_layout"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:id="@id/access_name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/m_a" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/access_value" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#8015293c" n0:ellipsize="middle" n0:gravity="end" n0:id="@id/access_value" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_marginEnd="6.0dp" n3:layout_constraintBottom_toBottomOf="@id/access_arrow_right" n3:layout_constraintEnd_toStartOf="@id/access_arrow_right" n3:layout_constraintTop_toTopOf="@id/access_arrow_right" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/access_arrow_right" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n3:layout_constraintBottom_toBottomOf="@id/access_name" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="@id/access_name" n3:srcCompat="@drawable/oel" />
+        <ImageView n0:id="@id/iv_access_switch" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="24.0dp" n0:src="@drawable/oh6" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/start_share_more_setting_layout" n0:layout_width="0.0dp" n0:layout_height="56.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/share_review_access_layout"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:id="@id/tv_more_setting_name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1218f8" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/more_setting_arrow_right" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n4:layout_constraintBottom_toBottomOf="@id/tv_more_setting_name" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="@id/tv_more_setting_name" n4:srcCompat="@drawable/oel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/start_share_divide" n0:background="@color/fy" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="12.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n5:layout_constraintTop_toBottomOf="@id/start_share_more_setting_layout"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center_vertical" n0:id="@id/share_to_friend_tv" n0:layout_width="wrap_content" n0:layout_height="52.0dp" n0:layout_marginTop="12.0dp" n0:text="@string/m_s" n0:layout_marginStart="16.0dp" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/start_share_divide"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/review_help" n0:visibility="gone" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082b9c" n7:layout_constraintBottom_toBottomOf="@id/share_to_friend_tv" n7:layout_constraintStart_toEndOf="@id/share_to_friend_tv" n7:layout_constraintTop_toTopOf="@id/share_to_friend_tv"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/tv_review_help_bottom" n0:visibility="gone" n0:layout_width="13.0dp" n0:layout_height="7.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082b9d" n8:layout_constraintBottom_toTopOf="@id/review_help" n8:layout_constraintEnd_toEndOf="@id/review_help" n8:layout_constraintStart_toStartOf="@id/review_help"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="#ccc2cfd6" n0:id="@id/tv_review_help_tv" n0:background="@drawable/lq-" n0:paddingLeft="16.0dp" n0:paddingTop="16.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="16.0dp" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/m_r" n0:layout_marginStart="39.0dp" n0:layout_marginEnd="12.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="16.0dp" n9:layout_constraintBottom_toTopOf="@id/tv_review_help_bottom" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="@id/share_to_friend_tv"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:paddingTop="6.0dp" n0:layout_width="wrap_content" n0:layout_height="98.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n10:layout_constraintStart_toStartOf="parent" n10:layout_constraintTop_toBottomOf="@id/share_to_friend_tv"
+      xmlns:n10="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/lbw" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/review_shareSv_prod" n0:paddingTop="6.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n11:layout_constraintStart_toStartOf="parent" n11:layout_constraintTop_toBottomOf="@id/share_to_friend_tv"
+      xmlns:n11="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/l3c" />
+    </LinearLayout>
+    <View n0:id="@id/allMask" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

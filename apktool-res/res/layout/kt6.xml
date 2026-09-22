@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.edit.base.favorite.FavoriteView n0:gravity="center_horizontal" n0:orientation="vertical" n0:layout_width="56.0dp" n0:layout_height="75.0dp" style="@style/uj"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.widget.MaterialDraweeView n0:id="@id/image" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:scaleType="centerCrop" n1:i1="@dimen/APKTOOL_RENAMED_0x7f0700c5" n1:layout_constraintDimensionRatio="H,56:75" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/loading" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:elevation="10.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:layout_width="20.0dp" n0:layout_height="11.0dp" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/error" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:elevation="10.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="4.0dp" n0:src="@drawable/odn" n0:scaleType="centerInside" />
+    </FrameLayout>
+    <LinearLayout n0:id="@id/vip_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="3.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:kml="small" />
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:layout_gravity="center_vertical" n0:id="@id/vip_material_label" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="1.0dp" n4:k1i="bold" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/guideline_web_effect" n0:layout_width="wrap_content" n0:layout_height="1.0dp" n5:layout_constraintGuide_percent="0.75"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/is_support_web_effect" n0:background="@drawable/mrh" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n6:layout_constraintBottom_toBottomOf="@id/guideline_web_effect" n6:layout_constraintEnd_toEndOf="@id/text"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="9.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060612" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/text" n0:background="@drawable/pxp" n0:padding="3.0dp" n0:focusable="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:elevation="10.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</com.vega.edit.base.favorite.FavoriteView>

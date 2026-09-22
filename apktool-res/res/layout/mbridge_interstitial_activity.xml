@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="@color/mbridge_interstitial_white" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.mbridge.msdk.mbsignalcommon.windvane.WindVaneWebView n0:id="@id/mbridge_interstitial_wv" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <ProgressBar n0:id="@id/mbridge_interstitial_pb" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+    <ImageView n0:id="@id/mbridge_interstitial_iv_close" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_margin="10.0dp" n0:src="@drawable/mbridge_interstitial_close" n0:scaleType="centerInside" n0:layout_alignParentRight="true" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

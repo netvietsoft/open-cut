@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="20.0dp" n0:paddingBottom="10.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/tv_select_tips" n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingVertical="4.0dp" n0:lineHeight="20.0dp" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_e" n0:id="@id/tv_select_sub_tips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingEnd="4.0dp" n0:lineHeight="17.0dp" n2:layout_constraintTop_toBottomOf="@id/tv_select_tips"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.publish.template.publish.widget.MaterialSelectView n0:id="@id/materialSelectView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tv_select_sub_tips"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.VegaCheckBox n0:id="@id/cb_all_select" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="28.0dp" n0:maxWidth="150.0dp" n0:text="@string/qj1" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/materialSelectView" n4:layout_constraintWidth_percent="0.35" style="@style/APKTOOL_RENAMED_0x7f1304ac"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/col_more_config" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:paddingEnd="16.0dp" n5:layout_constraintBottom_toBottomOf="@id/cb_all_select" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="@id/cb_all_select"
+          xmlns:n5="http://schemas.android.com/apk/res-auto">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tv_more_config" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/qkq" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintStart_toStartOf="parent" />
+            <ImageView n0:id="@id/iv_more_config_arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/nat" n0:layout_marginStart="4.0dp" n5:layout_constraintBottom_toBottomOf="@id/tv_more_config" n5:layout_constraintStart_toEndOf="@id/tv_more_config" n5:layout_constraintTop_toTopOf="@id/tv_more_config" />
+            <ImageView n0:id="@id/iv_more_config_guide" n0:layout_width="5.0dp" n0:layout_height="5.0dp" n0:src="@drawable/n15" n5:layout_constraintStart_toEndOf="@id/tv_more_config" n5:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/btn_next" n0:background="@drawable/lxg" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:text="@string/mny" n0:includeFontPadding="false" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="10.0dp" n6:layout_constraintBottom_toBottomOf="@id/cb_all_select" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="@id/cb_all_select" n6:k1i="bold"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/q-" n0:id="@id/btn_set_intelligent" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="150.0dp" n0:text="@string/q1m" n0:drawableEnd="@drawable/n95" n0:layout_marginEnd="16.0dp" n7:layout_constraintBottom_toBottomOf="@id/cb_all_select" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintTop_toTopOf="@id/cb_all_select"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.widget.SolidCircleView n0:id="@id/dot_set_intelligent" n0:visibility="gone" n0:layout_width="5.0dp" n0:layout_height="5.0dp" n0:layout_marginEnd="10.0dp" n8:g0="#f2c921" n8:layout_constraintEnd_toEndOf="@id/btn_set_intelligent" n8:layout_constraintTop_toTopOf="@id/btn_set_intelligent"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

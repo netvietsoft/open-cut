@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="center_horizontal" n0:tag="layout/xt_layout_login_remind_banner_0" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/q94" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:alpha="0.9" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent">
+        <TextView n0:textSize="13.0dp" n0:textColor="#dedfd9" n0:id="@id/login_remind_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t6i" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/login_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/rd0" n0:contentDescription="@string/t6z" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

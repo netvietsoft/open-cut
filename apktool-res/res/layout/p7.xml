@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/informationTitle" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <com.vega.ui.AlphaButton n0:id="@id/ivClose" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/nku" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/s4" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:maxWidth="245.0dp" n0:text="@string/qj9" n0:maxEms="9" n0:singleLine="true" n0:includeFontPadding="false" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#b4111a2c" n0:gravity="center" n0:layout_gravity="end" n0:id="@id/select_all" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:maxWidth="80.0dp" n0:text="@string/qj1" n0:maxLines="2" n0:layout_marginEnd="15.0dp" />
+    </FrameLayout>
+    <LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp">
+        <RelativeLayout n0:id="@id/draftMode" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0">
+            <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/draft_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l31" n0:layout_centerInParent="true" />
+            <View n0:id="@id/draft_line" n0:background="@color/mk" n0:layout_width="match_parent" n0:layout_height="2.0dp" n0:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/templateMode" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0">
+            <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/template_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1231ad" n0:layout_centerInParent="true" />
+            <View n0:id="@id/template_line" n0:background="@color/mk" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="2.0dp" n0:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/textMode" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0">
+            <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/text_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mf2" n0:layout_centerInParent="true" />
+            <View n0:id="@id/text_line" n0:background="@color/mk" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="2.0dp" n0:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/scriptMode" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0">
+            <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/script_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qij" n0:layout_centerInParent="true" />
+            <View n0:id="@id/script_line" n0:background="@color/mk" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="2.0dp" n0:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View n0:background="#19000000" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+    <com.vega.property.optional.ui.common.view.PropertyListEmptyView n0:id="@id/select_draft_empty_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/mNonEmptyDraft" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="16.0dp" n0:layout_marginRight="5.0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/mDraftGridView" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/backup_frame_layout" n0:layout_width="match_parent" n0:layout_height="62.0dp">
+            <LinearLayout n0:gravity="center_vertical" n0:id="@id/upload_to_folder_btn" n0:background="@drawable/leu" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginStart="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+              xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <com.vega.ui.widget.MarqueeTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/fi" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/upload_to_folder_text" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="130.0dp" n0:layout_height="match_parent" n0:text="@string/rw3" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="12.0dp" />
+                <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/ntf" n0:layout_marginEnd="12.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+            <com.vega.theme.text.VegaTextView n0:enabled="false" n0:textSize="14.0dp" n0:textColor="#331b3d5f" n0:gravity="center_vertical" n0:id="@id/backup_btn" n0:background="@drawable/ler" n0:paddingLeft="24.0dp" n0:paddingRight="24.0dp" n0:clickable="false" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:text="@string/lw1" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="24.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

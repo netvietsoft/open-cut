@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView n0:layout_width="279.0dp" n0:layout_height="535.0dp" n1:cardCornerRadius="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/u1" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.ui.StrongButton n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/btnTryNow" n0:background="@drawable/qpq" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:layout_margin="24.0dp" n0:text="@string/ro5" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="24.0dp" n0:text="@string/q3l" n1:layout_constraintBottom_toTopOf="@id/btnTryNow" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/guide_image" n0:layout_width="298.0dp" n0:layout_height="0.0dp" n0:layout_marginBottom="24.0dp" n0:scaleType="centerCrop" n1:layout_constraintBottom_toTopOf="@id/title" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaButton n0:id="@id/btnClose" n0:padding="8.0dp" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:srcCompat="@drawable/oun" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

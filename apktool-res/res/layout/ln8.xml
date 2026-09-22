@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView n0:background="@drawable/lw0" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:cardBackgroundColor="#ffffff" n1:cardCornerRadius="16.0dp" n1:cardElevation="0.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/container" n0:background="@drawable/lts" n0:paddingBottom="24.0dp" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_push_page_head" n0:background="@color/knt" n0:paddingTop="4.0dp" n0:paddingBottom="17.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:id="@id/btn_back" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m6f" n0:layout_marginStart="18.0dp" n1:layout_constraintBottom_toBottomOf="@id/tv_choose_title" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/tv_choose_title" />
+            <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textColor="@color/sg" n0:id="@id/tv_choose_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="bold" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toBottomOf="@id/cl_push_page_head">
+            <androidx.core.widget.NestedScrollView n0:id="@id/scroll_view_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                <LinearLayout n0:orientation="vertical" n0:id="@id/select_list_container" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp" n1:layout_constraintTop_toTopOf="parent" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/collections_horizontal_selector" n0:layout_width="0.0dp" n0:layout_height="64.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/collections_horizontal_selector_expand_shadow" n0:layout_width="64.0dp" n0:layout_height="0.0dp" n0:src="@drawable/kxl" n2:layout_constraintBottom_toBottomOf="@id/collections_horizontal_selector" n2:layout_constraintEnd_toEndOf="@id/collections_horizontal_selector" n2:layout_constraintTop_toTopOf="@id/collections_horizontal_selector"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/collections_horizontal_selector_expand" n0:padding="4.0dp" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/oon" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="@id/collections_horizontal_selector" n3:layout_constraintEnd_toEndOf="@id/collections_horizontal_selector" n3:layout_constraintTop_toTopOf="@id/collections_horizontal_selector"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.DisableScrollViewPager n0:id="@id/vp_fragment_content" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/collections_horizontal_selector"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/view_stub_music_collections_full_selector" n0:layout="@layout/lkx" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

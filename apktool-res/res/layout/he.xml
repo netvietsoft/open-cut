@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/ls_" n0:layout_width="match_parent" n0:layout_height="221.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ivTopLine" n0:layout_width="36.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="9.0dp" n0:src="@drawable/of_" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/tvTopic" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="11.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ivTopLine"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/llSelectDraft" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="16.0dp" n3:layout_constraintBottom_toTopOf="@id/llCreateDraft" n3:layout_constraintTop_toBottomOf="@id/tvTopic"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:id="@id/ivSelectDraft" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0822d5" n0:layout_marginStart="20.0dp" n3:layout_constraintStart_toStartOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/sg" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tvSelectDraft" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rxo" n0:layout_marginStart="12.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/llCreateDraft" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toTopOf="@id/cancelLine" n4:layout_constraintTop_toBottomOf="@id/llSelectDraft"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:id="@id/ivCreateDraft" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0822d4" n0:layout_marginStart="20.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/sg" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tvCreateDraft" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qnf" n0:layout_marginStart="12.0dp" />
+    </LinearLayout>
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/tvCancel" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintTop_toBottomOf="@id/cancelLine" n5:kr3="none"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/cancelLine" n0:background="#e5e5e6" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginTop="6.0dp" n6:layout_constraintBottom_toTopOf="@id/tvCancel" n6:layout_constraintTop_toBottomOf="@id/llCreateDraft"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

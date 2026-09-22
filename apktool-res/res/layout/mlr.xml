@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.ies.xelement.banner.BannerViewPager n0:layout_gravity="center" n0:id="@id/bannerViewPager" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <LinearLayout n0:gravity="center" n0:layout_gravity="bottom" n0:orientation="horizontal" n0:id="@id/circleIndicator" n0:padding="10.0dp" n0:clickable="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+</FrameLayout>

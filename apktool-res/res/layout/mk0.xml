@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="63.0dp" n0:layout_height="84.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:padding="3.5dp" n0:layout_width="63.0dp" n0:layout_height="63.0dp" n0:src="@drawable/lb3" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/presenter_picture_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f0812ba" n0:padding="3.5dp" n0:layout_width="63.0dp" n0:layout_height="63.0dp" n2:actualImageScaleType="centerInside" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:roundAsCircle="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:layout_width="63.0dp" n0:layout_height="63.0dp" n3:layout_constraintBottom_toBottomOf="@id/presenter_picture_view" n3:layout_constraintEnd_toEndOf="@id/presenter_picture_view" n3:layout_constraintStart_toStartOf="@id/presenter_picture_view" n3:layout_constraintTop_toTopOf="@id/presenter_picture_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:padding="4.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/oq3" />
+    </FrameLayout>
+    <TextView n0:textSize="11.0dp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/tv_presenter_name" n0:layout_width="wrap_content" n0:layout_height="14.0dp" n0:layout_marginBottom="3.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122cd4" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

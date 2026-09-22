@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/loading" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:lottie_autoPlay="true" n1:lottie_fileName="loading.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center" n0:id="@id/error" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="start|center" n0:id="@id/icon_error_retry" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/r6q" n0:scaleType="centerInside" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0sp" n0:textColor="@color/kqt" n0:layout_gravity="center_vertical" n0:id="@id/textView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f124493" n0:layout_marginStart="8.0dp" n2:autoSizeMaxTextSize="12.0sp" n2:autoSizeMinTextSize="6.0sp" n2:bp="1.0sp" n2:autoSizeTextType="uniform" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView n0:textSize="12.0dp" n0:textColor="@color/kxw" n0:layout_gravity="center" n0:id="@id/start_request" n0:background="@drawable/q_s" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1238de" n0:paddingStart="34.0dp" n0:paddingEnd="34.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textColor="#66e5e9fa" n0:id="@id/empty_list" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1238dd" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

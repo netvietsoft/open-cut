@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n0:foreground="@drawable/if"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundCornerImageView n0:id="@id/ai_moment_item_banner_bg" n0:background="@color/c" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitXY" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:_5="16.0dp" n1:klh="16.0dp" n1:ktn="16.0dp" n1:kuf="16.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ai_moment_item_banner_cover" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginStart="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/ai_moment_item_banner_detail" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/mo" n0:id="@id/ai_moment_item_banner_detail_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08112d" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView n0:textSize="16.0sp" n0:textColor="@color/mk" n0:ellipsize="marquee" n0:id="@id/ai_moment_item_banner_title" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="3.0dp" n0:scrollHorizontally="true" n0:singleLine="true" n0:freezesText="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="12.0dp" n4:layout_constraintEnd_toStartOf="@id/ai_moment_item_banner_detail" n4:layout_constraintStart_toEndOf="@id/ai_moment_item_banner_cover" n4:layout_constraintTop_toTopOf="@id/ai_moment_item_banner_cover"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0sp" n0:textColor="@color/mm" n0:ellipsize="end" n0:id="@id/ai_moment_item_banner_subtitle" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n5:layout_constraintBottom_toBottomOf="@id/ai_moment_item_banner_cover" n5:layout_constraintEnd_toEndOf="@id/ai_moment_item_banner_title" n5:layout_constraintStart_toStartOf="@id/ai_moment_item_banner_title" n5:layout_constraintTop_toBottomOf="@id/ai_moment_item_banner_title"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout n0:background="@color/APKTOOL_RENAMED_0x7f060547" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout n0:id="@id/ai_appbar" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <View n0:id="@id/ai_empty_view" n0:layout_width="match_parent" n0:layout_height="252.0dp" n1:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_root" n0:background="@drawable/_2" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f060466" n0:gravity="center" n0:id="@id/ai_title" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/qwj" n2:layout_constrainedWidth="true" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/ai_cancel" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/mch" n2:layout_constraintBottom_toBottomOf="@id/ai_title" n2:layout_constraintEnd_toStartOf="@id/ai_title" n2:layout_constraintHorizontal_bias="0.0" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/ai_title" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/ai_rv" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constrainedWidth="true" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ai_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

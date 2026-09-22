@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/APKTOOL_RENAMED_0x7f0605b9" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/informationTitle" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <com.vega.ui.AlphaButton n0:id="@id/ivClose" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m68" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605bc" n0:ellipsize="end" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/q0p" n0:maxEms="9" n0:singleLine="true" n0:includeFontPadding="false" />
+        <com.vega.ui.TintTextView n0:layout_gravity="end" n0:id="@id/confirm" n0:layout_width="50.0dp" n0:layout_height="26.0dp" n0:layout_marginTop="12.0dp" n0:text="@string/q9y" n0:layout_marginEnd="8.0dp" style="@style/APKTOOL_RENAMED_0x7f130535" />
+    </FrameLayout>
+    <HorizontalScrollView n0:layout_width="wrap_content" n0:layout_height="60.0dp" n0:layout_marginLeft="20.0dp" n0:layout_marginRight="20.0dp">
+        <RelativeLayout n0:layout_width="wrap_content" n0:layout_height="60.0dp">
+            <RadioGroup n0:orientation="horizontal" n0:id="@id/selectHomeMode" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checkedButton="@id/draftMode" n0:layout_centerVertical="true" n0:layout_alignParentStart="true">
+                <com.vega.ui.state.pressed.PressedStateRadioButton n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@drawable/l7c" n0:id="@id/draftMode" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:button="@null" n0:text="@string/l31" n0:drawableBottom="@drawable/ksp" n0:drawablePadding="8.0dp" n0:layout_marginEnd="14.0dp" n1:kr3="button"
+                  xmlns:n1="http://schemas.android.com/apk/res-auto" />
+                <com.vega.ui.state.pressed.PressedStateRadioButton n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@drawable/l7c" n0:id="@id/templateMode" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:button="@null" n0:text="@string/APKTOOL_RENAMED_0x7f1231ad" n0:drawableBottom="@drawable/ksp" n0:drawablePadding="8.0dp" n0:layout_marginStart="14.0dp" n0:layout_marginEnd="14.0dp" n2:kr3="button"
+                  xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <com.vega.ui.state.pressed.PressedStateRadioButton n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@drawable/l7c" n0:id="@id/camera_draft_mode" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:button="@null" n0:text="@string/q2s" n0:drawableBottom="@drawable/ksp" n0:drawablePadding="8.0dp" n0:layout_marginStart="14.0dp" n0:layout_marginEnd="14.0dp" n3:kr3="button"
+                  xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <com.vega.ui.state.pressed.PressedStateRadioButton n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@drawable/l7c" n0:id="@id/ad_maker_draft_mode" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:button="@null" n0:text="@string/n7" n0:drawableBottom="@drawable/ksp" n0:drawablePadding="8.0dp" n0:layout_marginStart="14.0dp" n0:layout_marginEnd="14.0dp" n4:kr3="button"
+                  xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <com.vega.ui.state.pressed.PressedStateRadioButton n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@drawable/l7c" n0:id="@id/ad_maker_scene_lib_mode" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:button="@null" n0:text="@string/qii" n0:drawableBottom="@drawable/ksp" n0:drawablePadding="8.0dp" n0:layout_marginStart="14.0dp" n0:layout_marginEnd="14.0dp" n5:kr3="button"
+                  xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                <com.vega.ui.state.pressed.PressedStateRadioButton n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@drawable/l7c" n0:id="@id/chatMode" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:button="@null" n0:text="@string/APKTOOL_RENAMED_0x7f1205ae" n0:drawableBottom="@drawable/ksp" n0:drawablePadding="8.0dp" n0:layout_marginStart="14.0dp" n6:kr3="button"
+                  xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            </RadioGroup>
+        </RelativeLayout>
+    </HorizontalScrollView>
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/mEmptyDraft" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="94.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="13.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605a2" n0:gravity="center" n0:id="@id/emptyDraftTipsOne" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/l4x" n0:singleLine="true" n0:layout_weight="1.0" />
+        <com.vega.theme.text.VegaTextView n0:textSize="13.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605a2" n0:gravity="center" n0:id="@id/emptyDraftTipsTwo" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mnv" n0:singleLine="true" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/mEmptyDraftTips" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="94.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="13.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605a2" n0:gravity="center" n0:id="@id/mEmptyDraftTipsText" n0:layout_width="wrap_content" n0:layout_height="0.0dp" n0:layout_marginTop="10.0dp" n0:text="@string/l4x" n0:singleLine="true" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/mNonEmptyDraft" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="5.0dp" n0:layout_marginRight="5.0dp">
+        <com.vega.localdraft.widget.DraftRecyclerView n0:id="@id/mDraftGridView" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" n0:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

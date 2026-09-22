@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateRelativeLayout n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:kr3="list"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/avatar" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginStart="16.0dp" n1:kr3="button" n1:roundAsCircle="true" />
+    <com.vega.ui.state.pressed.PressedStateLinearLayout n0:id="@id/titleRL" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="10.0dp" n0:layout_toStartOf="@id/like" n0:layout_toEndOf="@id/avatar" n1:kr3="button">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#8015293c" n0:ellipsize="end" n0:id="@id/name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="200.0dp" n0:maxLines="1" n0:maxEms="14" n0:maxLength="14" n1:k1i="regular" />
+        <com.vega.theme.text.VegaTextView n0:textSize="8.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center_vertical" n0:layout_gravity="center_vertical" n0:id="@id/isAuthor" n0:background="@drawable/kxb" n0:paddingLeft="4.0dp" n0:paddingTop="2.0dp" n0:paddingRight="4.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120475" n0:layout_marginStart="4.0dp" n0:layout_toEndOf="@id/name" />
+    </com.vega.ui.state.pressed.PressedStateLinearLayout>
+    <com.vega.feedx.main.ui.preview.us.FeedContentTextView n0:textColor="#090c14" n0:id="@id/content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_below="@id/titleRL" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="64.0dp" n0:layout_toEndOf="@id/avatar" />
+    <View n0:background="#1f073247" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="6.0dp" n0:layout_below="@id/content" />
+</com.vega.ui.state.pressed.PressedStateRelativeLayout>

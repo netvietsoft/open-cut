@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/export_top_panel" n0:layout_width="match_parent" n0:layout_height="50.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/close_export" n0:background="@drawable/m64" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:layout_marginStart="10.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#16161d" n0:id="@id/topTittle" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerHorizontal="true" n0:layout_centerVertical="true" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/title_bar_right_tv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/APKTOOL_RENAMED_0x7f1231b5" n0:paddingStart="0.0dp" n0:paddingEnd="30.0dp" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/recordingRl" n0:layout_width="60.0dp" n0:layout_height="60.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/m_5" />
+    <androidx.cardview.widget.CardView n0:id="@id/cv_record_clip" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="24.0dp" n1:cardElevation="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:layout_gravity="center" n0:layout_width="48.0dp" n0:layout_height="48.0dp">
+            <com.airbnb.lottie.LottieAnimationView n0:id="@id/lottie_anim_view" n0:background="@drawable/kv2" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:lottie_autoPlay="true" n1:lottie_fileName="ad_script_loading_small/data.json" n1:lottie_imageAssetsFolder="ad_script_loading_small/images" n1:lottie_loop="true" />
+            <View n0:id="@id/view_normal" n0:background="@drawable/lrg" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+    <View n0:id="@id/view_shape" n0:background="@drawable/mq8" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

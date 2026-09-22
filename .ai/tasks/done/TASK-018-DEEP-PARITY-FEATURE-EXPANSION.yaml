@@ -1,0 +1,24 @@
+id: TASK-018-DEEP-PARITY-FEATURE-EXPANSION
+title: "Tái Lập & Hoàn Thiện Triệt Để Các Phân Hệ Menu & Công Cụ Con/Cháu Chuẩn CapCut V2.1"
+status: done
+assignee: "Agent 0, Agent 1, Agent 3, Agent 6, Agent 11, Agent 12"
+created_at: "2026-09-18T11:20:00Z"
+priority: CRITICAL
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java"
+  - "apps/android/app/src/main/res/**"
+  - "scripts/**"
+  - "design/screenshots/expansion/**"
+  - ".ai/**"
+  - "TASK_LOG.md"
+  - "UPDATETODOS.md"
+  - "PROJECT_MEMORY.md"
+requirements:
+  - "1. Khóa phông & Xóa nền: Bảng điều khiển Chroma Key chọn màu (Xanh lá #00FF00, Xanh dương #0000FF), Sliders Cường độ/Bóng, áp dụng hiệu ứng thực lên video & photo canvas."
+  - "2. Phụ đề AI: Hộp thoại tạo phụ đề tiếng Việt/Anh, sinh subtitle blocks kèm timestamp trên timeline Subtitle Track, hiển thị Text Overlay chạy khớp Playhead."
+  - "3. Giọng đọc AI (TTS): Tích hợp android.speech.tts.TextToSpeech, chọn giọng Nam/Nữ tiếng Việt & Jessica US, chỉnh tốc độ/cao độ, phát tiếng ra loa và thêm track Voiceover."
+  - "4. Text to Video AI: Hộp thoại nhập kịch bản prompt, phân rã storyboard phân cảnh, nạp dự án mới vào Video Editor."
+  - "5. Mẫu Hot: Tab Mẫu tương tác với các thể loại Xu hướng/Beat Sync/Vlog, nút Sử Dụng Mẫu mở Media Picker thay thế clip theo nhịp điệu."
+  - "6. Thu mặt thon gọn: Sliders Slim Face, Smooth Skin, Big Eyes, Nose, Teeth Whitening kết nối Face Mesh 468 điểm và MiddleBridgeJni."
+  - "7. Video Editor Âm thanh, Văn bản, Hiệu ứng: Ngăn kéo Âm thanh nạp track nhạc vào timeline; Ngăn kéo Văn bản thêm chữ, font chữ, đổi màu, overlay lên video; Ngăn kéo Hiệu ứng áp dụng C++ Shader và tạo khối Effect Block."
+  - "8. Kiểm thử 100% trên thiết bị vật lý Samsung Galaxy Note 10 Lite (192.168.1.7:45893), chụp ảnh minh chứng và xuất biên bản nghiệm thu."

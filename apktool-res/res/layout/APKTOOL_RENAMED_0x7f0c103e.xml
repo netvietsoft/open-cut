@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/hsl_panel_root" n0:background="@color/APKTOOL_RENAMED_0x7f060021" n0:paddingBottom="32.0dp" n0:layout_width="match_parent" n0:layout_height="260.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:id="@id/hsl_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/mpx" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tv_reset_hsl" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:text="@string/qex" n0:drawablePadding="6.0dp" n0:drawableStart="@drawable/och" n0:layout_marginStart="16.0dp" n2:layout_constraintBottom_toBottomOf="@id/hsl_title" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/hsl_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/iv_close_hsl" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/nk5" n0:layout_marginEnd="16.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.widget.ColorPalette n0:id="@id/color_palette" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="28.0dp" n4:layout_constraintTop_toBottomOf="@id/hsl_title"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/hue_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lx3" n5:layout_constraintBottom_toBottomOf="@id/hue_bar" n5:layout_constraintStart_toStartOf="@id/saturation_tv"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.ColorSeekBar n0:id="@id/hue_bar" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp" n6:layout_constraintEnd_toEndOf="@id/saturation_bar" n6:layout_constraintStart_toStartOf="@id/saturation_bar" n6:layout_constraintTop_toTopOf="@id/color_palette"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/saturation_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qgz" n0:layout_marginStart="32.0dp" n0:layout_marginEnd="6.0dp" n7:layout_constraintBottom_toBottomOf="@id/saturation_bar" n7:layout_constraintEnd_toStartOf="@id/saturation_bar" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.ColorSeekBar n0:id="@id/saturation_bar" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="45.0dp" n0:layout_marginEnd="18.0dp" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toEndOf="@id/saturation_tv" n8:layout_constraintTop_toTopOf="@id/hue_bar"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/brightness_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mym" n9:layout_constraintBottom_toBottomOf="@id/lightness_bar" n9:layout_constraintStart_toStartOf="@id/saturation_tv"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.ColorSeekBar n0:id="@id/lightness_bar" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="45.0dp" n10:layout_constraintEnd_toEndOf="@id/saturation_bar" n10:layout_constraintStart_toStartOf="@id/saturation_bar" n10:layout_constraintTop_toTopOf="@id/saturation_bar"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

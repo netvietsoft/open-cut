@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:id="@id/create_entrance_layout" n0:tag="layout/xt_layout_export_create_entrance_0" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="10.0dp" n0:textColor="@color/ko7" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/go_jigsaw_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/se-" n0:drawableTop="@drawable/rbc" n0:drawablePadding="8.0dp" n0:layout_weight="1.0" />
+    <TextView n0:textSize="10.0dp" n0:textColor="@color/ko7" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/go_edit_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sj3" n0:drawableTop="@drawable/rbb" n0:drawablePadding="8.0dp" n0:layout_weight="1.0" />
+    <TextView n0:textSize="10.0dp" n0:textColor="@color/ko7" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/go_batch_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/se8" n0:drawableTop="@drawable/rbv" n0:drawablePadding="8.0dp" n0:layout_weight="1.0" />
+    <TextView n0:textSize="10.0dp" n0:textColor="@color/ko7" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/go_video_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f123bad" n0:drawableTop="@drawable/rw7" n0:drawablePadding="8.0dp" n0:layout_weight="1.0" />
+    <TextView n0:textSize="10.0dp" n0:textColor="@color/ko7" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/csl_turn_video" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sfd" n0:drawableTop="@drawable/rbj" n0:drawablePadding="8.0dp" n0:layout_weight="1.0" />
+    <View n0:id="@id/fake_view" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="2.0" />
+</LinearLayout>

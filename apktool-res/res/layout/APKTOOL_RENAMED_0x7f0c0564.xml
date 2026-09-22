@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/manage_container" n0:background="@color/APKTOOL_RENAMED_0x7f060535" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <View n0:background="@drawable/k3a" n0:layout_width="match_parent" n0:layout_height="2.0dp" n1:layout_constraintTop_toTopOf="@id/delete_draft_view" />
+    <LinearLayout n0:gravity="bottom" n0:orientation="vertical" n0:id="@id/delete_draft_view" n0:layout_width="match_parent" n0:layout_height="50.0dp" n0:layout_marginBottom="10.0dp" n1:layout_constraintBottom_toTopOf="@id/export_draft_tv" n1:layout_goneMarginBottom="34.0dp">
+        <com.vega.ui.AlphaButton n0:layout_gravity="center" n0:id="@id/delete_draft_iv" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/mu_" />
+        <com.vega.theme.text.VegaTextView n0:textSize="9.0dp" n0:textStyle="bold" n0:textColor="@drawable/mvk" n0:layout_gravity="center_horizontal" n0:id="@id/delete_draft_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lg-" />
+    </LinearLayout>
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="11.0dp" n0:textColor="@color/rm" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/export_draft_tv" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="150.0dp" n0:layout_marginBottom="10.0dp" n0:text="@string/l8_" n1:layout_constraintBottom_toBottomOf="parent" n1:kr3="button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

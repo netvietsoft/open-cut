@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center" n0:id="@id/close_btn" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nx2" n0:scaleType="center" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="22.0sp" n0:textStyle="bold" n0:textColor="#090c14" n0:id="@id/title_tv" n0:paddingTop="24.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/content_list" n0:paddingLeft="24.0dp" n0:paddingRight="24.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="24.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/title_tv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.RoundCornerTextView n0:gravity="center" n0:id="@id/confirm_btn" n0:background="#fe2a54" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="33.0dp" n0:layout_marginHorizontal="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/content_list" n4:_6="8.0dp" n4:_8="8.0dp" n4:kt7="8.0dp" n4:kt8="8.0dp"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

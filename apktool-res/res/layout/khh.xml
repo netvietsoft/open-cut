@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="64.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <com.vega.subscriptionapi.swidget.BusinessCreditsBar n0:id="@id/bottom_credits_bar" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:APKTOOL_RENAMED_0x7f040536="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout n0:paddingTop="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <LinearLayout n0:orientation="vertical" n0:id="@id/bottom_single_edit_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <com.vega.ui.widget.IconTextButton n0:textSize="16.0sp" n0:textColor="@color/a" n0:id="@id/btn_single_edit" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/n2_" n0:textAllCaps="false" n0:textFontWeight="700" n2:APKTOOL_RENAMED_0x7f04057d="4.0dp" n2:APKTOOL_RENAMED_0x7f040582="@drawable/me1" n2:k1i="bold" n2:k1j="sub_title" style="@style/u-"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottom_edit_generate_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/btn_edit" n0:background="@drawable/ks0" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/btn_generate" n3:layout_constraintHorizontal_weight="120.0" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+              xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <ImageView n0:id="@id/btn_edit_icon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/p5w" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/btn_edit_text" n3:layout_constraintHorizontal_chainStyle="packed" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#fafbff" n0:id="@id/btn_edit_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n2_" n0:layout_marginStart="6.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/btn_edit_icon" n3:layout_constraintTop_toTopOf="parent" n3:k1i="medium" n3:k1j="sub_title" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/btn_generate" n0:background="@drawable/k1e" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginStart="12.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintHorizontal_weight="241.0" n4:layout_constraintStart_toEndOf="@id/btn_edit" n4:layout_constraintTop_toTopOf="parent"
+              xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <ImageView n0:id="@id/btn_generate_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pji" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/btn_generate_text" n4:layout_constraintHorizontal_chainStyle="packed" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@android:color/black" n0:id="@id/btn_generate_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mmy" n0:layout_marginStart="6.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/btn_generate_icon" n4:layout_constraintTop_toTopOf="parent" n4:k1i="bold" n4:k1j="sub_title" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/bottom_single_generate_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/k1e" n0:layout_width="match_parent" n0:layout_height="44.0dp">
+                <ImageView n0:id="@id/btn_single_generate_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pji" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toStartOf="@id/btn_single_generate_text" n5:layout_constraintHorizontal_chainStyle="packed" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+                  xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@android:color/black" n0:id="@id/btn_single_generate_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mmy" n0:layout_marginStart="6.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toEndOf="@id/btn_single_generate_icon" n6:layout_constraintTop_toTopOf="parent"
+                  xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <View n0:id="@id/bottom_safe_area_spacer" n0:layout_width="match_parent" n0:layout_height="8.0dp" />
+</LinearLayout>

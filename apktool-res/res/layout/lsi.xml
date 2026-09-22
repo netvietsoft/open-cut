@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateConstraintLayout n0:layout_width="match_parent" n0:layout_height="50.0dp" n1:kr3="list"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060561" n0:gravity="center_vertical" n0:id="@id/terms_policies_item_text" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginStart="25.0dp" n1:layout_constrainedHeight="true" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/terms_policies_item_arrow" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/terms_policies_item_arrow" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081796" n0:tint="@color/APKTOOL_RENAMED_0x7f060562" n0:layout_marginEnd="25.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+</com.vega.ui.state.pressed.PressedStateConstraintLayout>

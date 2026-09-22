@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/ObjectLockedTip" n0:background="@drawable/lro" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="40.0dp" n0:layout_marginTop="130.0dp" n0:layout_marginRight="40.0dp" n0:minHeight="26.0dp" n0:text="@string/lu5" n0:layout_marginHorizontal="40.0dp" n0:paddingHorizontal="8.0dp" n1:layout_constrainedWidth="true" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottom" n0:background="@color/zv" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="260.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.track.HorizontalScrollContainer n0:id="@id/videoFramesContainer" n0:layout_width="0.0dp" n0:layout_height="60.0dp" n0:layout_marginTop="22.0dp" n0:layout_marginBottom="52.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent">
+            <com.vega.edit.view.SingleVideoFrameView n0:id="@id/selectVideoFrame" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        </com.vega.ui.track.HorizontalScrollContainer>
+        <View n0:id="@id/ivPlayHead" n0:background="@color/knt" n0:layout_width="2.0dp" n0:layout_height="70.0dp" n0:scaleType="centerCrop" n2:layout_constraintBottom_toBottomOf="@id/videoFramesContainer" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/videoFramesContainer" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_r" n0:gravity="center" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/mxt" n2:layout_constraintTop_toBottomOf="@id/ivPlayHead" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/a0" n0:gravity="center" n0:id="@id/tvConfirm" n0:background="@drawable/la7" n0:paddingLeft="24.0dp" n0:paddingRight="24.0dp" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="56.0dp" n0:text="@string/q7e" n0:paddingHorizontal="24.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ivPlayHead" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

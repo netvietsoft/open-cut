@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/close_btn" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/l46" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/generated_image_view" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="16.0dp" n0:src="@drawable/pqn" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="17.0dp" n2:layout_constraintBottom_toTopOf="@id/regenerate_btn" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/close_btn"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/center_vertical_guide_line" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintGuide_percent="0.5"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <Button n0:textSize="14.0dp" n0:textColor="#fafbff" n0:id="@id/regenerate_btn" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/be" n0:textAllCaps="false" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="5.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="@id/center_vertical_guide_line" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <Button n0:textSize="14.0dp" n0:textColor="#090c14" n0:id="@id/use_this_btn" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/b9" n0:textAllCaps="false" n0:layout_marginStart="5.0dp" n0:layout_marginEnd="17.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="@id/center_vertical_guide_line"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

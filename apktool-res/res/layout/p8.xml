@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:layout_width="match_parent" n0:layout_height="150.0px" />
+    <RadioGroup android:layout_gravity="right" android:orientation="horizontal" android:id="@id/radio_group" android:layout_width="match_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RadioButton android:id="@id/radio_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open" android:onClick="onOpenButtonClicked" />
+        <RadioButton android:id="@id/radio_close" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Close" android:onClick="onCloseButtonClicked" />
+    </RadioGroup>
+    <com.vega.theme.VegaButton n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Upload setting" n0:onClick="onUploadClicked" />
+    <com.vega.theme.text.VegaTextView n0:id="@id/toskeyView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="toskey=" />
+    <com.vega.theme.VegaButton n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Copy tosKey" n0:onClick="onCopyClicked" />
+    <View n0:layout_width="match_parent" n0:layout_height="150.0px" />
+    <com.vega.theme.VegaEditText n0:id="@id/toskeyInput" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:hint="Please enter the toskey you need to clone" />
+    <com.vega.theme.VegaButton n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Apply toskey" n0:onClick="onApplyClicked" />
+</LinearLayout>

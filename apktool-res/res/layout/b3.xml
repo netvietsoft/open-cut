@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/root" n0:background="@drawable/lgm" n0:paddingBottom="30.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/header_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="28.0dp" n0:text="@string/jk" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:gravity="center" n0:id="@id/header_desc" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/header_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ic_sms" n0:background="@drawable/kj2" n0:paddingLeft="10.0dp" n0:paddingTop="10.0dp" n0:paddingRight="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:src="@drawable/o0r" n0:layout_marginStart="16.0dp" n0:paddingHorizontal="10.0dp" n0:paddingVertical="10.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/header_desc"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/tv_sms_update_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12040d" n0:layout_marginStart="12.0dp" n4:layout_constraintStart_toEndOf="@id/ic_sms" n4:layout_constraintTop_toTopOf="@id/ic_sms"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:id="@id/tv_sms_update_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/i-" n0:layout_marginStart="12.0dp" n5:layout_constraintStart_toEndOf="@id/ic_sms" n5:layout_constraintTop_toBottomOf="@id/tv_sms_update_title"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ic_computer" n0:background="@drawable/kj2" n0:paddingLeft="10.0dp" n0:paddingTop="10.0dp" n0:paddingRight="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:src="@drawable/ns4" n0:layout_marginStart="16.0dp" n0:paddingHorizontal="10.0dp" n0:paddingVertical="10.0dp" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/ic_sms"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/tv_computer_update_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/i_" n0:layout_marginStart="12.0dp" n7:layout_constraintStart_toEndOf="@id/ic_sms" n7:layout_constraintTop_toTopOf="@id/ic_computer"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:id="@id/tv_computer_update_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12040e" n0:layout_marginStart="12.0dp" n8:layout_constraintStart_toEndOf="@id/ic_sms" n8:layout_constraintTop_toBottomOf="@id/tv_computer_update_title"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_computer_update" n0:layout_width="317.0dp" n0:layout_height="210.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginEnd="16.0dp" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toEndOf="@id/ic_sms" n9:layout_constraintTop_toBottomOf="@id/tv_computer_update_desc"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

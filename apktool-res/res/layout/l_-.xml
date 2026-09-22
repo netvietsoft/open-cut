@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/template_advance_entrance" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:ellipsize="end" n0:gravity="start" n0:id="@id/template_advance_entrance_title" n0:layout_width="0.0dp" n0:text="@string/k12" n0:maxLines="1" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="20.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/arrow" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f130534"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/mtm" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

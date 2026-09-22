@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/text_edit_root_layout" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_panel_text" n0:background="@color/r2" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/tabRv" n0:paddingLeft="@dimen/cu" n0:paddingRight="@dimen/cu" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:paddingHorizontal="@dimen/cu" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/btnOk" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.lvui.widget.TabIndicator n0:id="@id/tabIndicator" n0:layout_width="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="@id/tabRv" n1:layout_constraintStart_toStartOf="@id/tabRv" style="@style/u_" />
+        <com.vega.ui.AlphaButton n0:id="@id/btnOk" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/o21" n0:scaleType="centerInside" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/tabRv" />
+        <View n0:id="@id/dividerLine" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.ui.widget.DisableScrollViewPager n0:id="@id/viewPager" n0:background="@color/r2" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/cl_panel_text"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.DisableTouchConsumeMaskView n0:id="@id/colorPickerMask" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:background="@color/sg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="14.0dp" n0:paddingEnd="14.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/tab_item_iv" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:layout_gravity="center_vertical" n0:id="@id/tab_item_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:includeFontPadding="false" n0:layout_marginStart="5.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/tab_item_iv" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/indicator" n0:background="@drawable/lf-" n0:visibility="invisible" n0:layout_width="28.0dp" n0:layout_height="2.0dp" n0:layout_marginTop="9.0dp" n3:layout_constraintEnd_toEndOf="@id/tab_item_tv" n3:layout_constraintStart_toStartOf="@id/tab_item_tv" n3:layout_constraintTop_toBottomOf="@id/tab_item_tv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f080fee" n0:layout_width="80.0dp" n0:layout_height="100.0dp" n0:clipToOutline="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/historyImage" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:roundedCornerRadius="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/historyLoadingAnim" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n2:roundedCornerRadius="8.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:layout_gravity="center" n0:id="@id/iv_image_fail" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/prw" />
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/contentView" n0:background="@drawable/lwl" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ivClose" n0:padding="10.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/l5n" n0:scaleType="fitXY" n0:layout_marginStart="2.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivConfirm" n0:padding="10.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/l88" n0:scaleType="fitXY" n0:layout_marginEnd="5.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.SemiBoldTextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="@color/ww" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tvTitle" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:text="@string/lpx" n0:maxLines="1" n3:layout_constraintEnd_toStartOf="@id/ivConfirm" n3:layout_constraintStart_toEndOf="@id/ivClose" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/bgEditPrompt" n0:background="@drawable/kg5" n0:layout_width="match_parent" n0:layout_height="122.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tvTitle"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <EditText n0:textSize="14.0dp" n0:textColor="@color/knt" n0:textColorHint="@color/vi" n0:ellipsize="end" n0:gravity="center_vertical" n0:id="@id/etTheme" n0:background="@null" n0:layout_width="0.0dp" n0:layout_height="20.0dp" n0:layout_margin="12.0dp" n0:hint="@string/log" n0:maxLines="1" n0:singleLine="true" n0:textCursorDrawable="@drawable/k5l" n5:layout_constraintEnd_toEndOf="@id/bgEditPrompt" n5:layout_constraintStart_toStartOf="@id/bgEditPrompt" n5:layout_constraintTop_toTopOf="@id/bgEditPrompt"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/promptEditDivider" n0:background="@color/APKTOOL_RENAMED_0x7f06045a" n0:layout_width="0.0dp" n0:layout_height="0.5dp" n0:layout_margin="12.0dp" n6:layout_constraintEnd_toEndOf="@id/bgEditPrompt" n6:layout_constraintStart_toStartOf="@id/bgEditPrompt" n6:layout_constraintTop_toBottomOf="@id/etTheme"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <EditText n0:textSize="14.0dp" n0:textColor="@color/knt" n0:textColorHint="@color/vi" n0:ellipsize="end" n0:gravity="start|top" n0:id="@id/etScreenInfo" n0:background="@null" n0:layout_width="0.0dp" n0:layout_height="54.0dp" n0:layout_margin="12.0dp" n0:hint="@string/lo1" n0:minLines="3" n0:inputType="textMultiLine" n0:textCursorDrawable="@drawable/k5l" n7:layout_constraintEnd_toEndOf="@id/bgEditPrompt" n7:layout_constraintStart_toStartOf="@id/bgEditPrompt" n7:layout_constraintTop_toBottomOf="@id/promptEditDivider"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.SemiBoldTextView n0:textSize="14.0dp" n0:textColor="@color/ww" n0:id="@id/tvDurationTitle" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="19.0dp" n0:layout_marginTop="24.0dp" n0:text="@string/lo7" n0:layout_marginStart="16.0dp" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/bgEditPrompt"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rvDuration" n0:paddingBottom="8.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" n9:layout_constraintTop_toBottomOf="@id/tvDurationTitle"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.SemiBoldTextView n0:textColor="@color/vj" n0:gravity="center_vertical" n0:id="@id/tvMore" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/lo8" n0:drawablePadding="2.0dp" n0:drawableEnd="@drawable/qk8" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n10:layout_constraintBottom_toBottomOf="parent" n10:layout_constraintStart_toStartOf="parent" n10:layout_constraintTop_toBottomOf="@id/rvDuration"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

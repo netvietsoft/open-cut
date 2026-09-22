@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/content" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ViewStub n0:id="@id/viewSub_layout_fake_feed_player_container" n0:layout="@layout/k6v" n0:inflatedId="@id/feed_player_container_bg" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/viewStub_layout_feed_survey_background" n0:layout="@layout/k7r" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/player_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/info_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <ViewStub n0:id="@id/viewStub_layout_feed_survey" n0:layout="@layout/k7q" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintTop_toBottomOf="@id/feed_player_container_bg"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/viewStub_layout_feed_survey_bottom_tip" n0:layout="@layout/k7s" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/viewStub_layout_feed_back_survey" n0:layout="@layout/k6c" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

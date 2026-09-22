@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <View n0:id="@id/share_ins_bg" n0:background="@drawable/lus" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="14.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/shareAweme"
+      xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n2:id="@id/main_ic" n2:layout_width="30.0dp" n2:layout_height="30.0dp" n2:src="@drawable/pr6" n2:layout_marginStart="18.0dp" n3:layout_constraintBottom_toBottomOf="@id/share_ins_bg" n3:layout_constraintHorizontal_chainStyle="packed" n3:layout_constraintStart_toStartOf="@id/share_ins_bg" n3:layout_constraintTop_toTopOf="@id/share_ins_bg"
+      xmlns:n2="http://schemas.android.com/apk/res/android" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n4:textSize="14.0dp" n4:textStyle="bold" n4:textColor="@color/knt" n4:gravity="center" n4:id="@id/ins_text" n4:layout_width="wrap_content" n4:layout_height="wrap_content" n4:text="@string/qg6" n4:layout_marginStart="16.0dp" n5:layout_constraintBottom_toBottomOf="@id/share_ins_bg" n5:layout_constraintStart_toEndOf="@id/main_ic" n5:layout_constraintTop_toTopOf="@id/share_ins_bg"
+      xmlns:n4="http://schemas.android.com/apk/res/android" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n6:id="@id/share_ins_group" n6:visibility="gone" n6:layout_width="wrap_content" n6:layout_height="wrap_content" n7:constraint_referenced_ids="share_ins_bg,main_ic,share_ins_small_ic,ins_text"
+      xmlns:n6="http://schemas.android.com/apk/res/android" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</merge>

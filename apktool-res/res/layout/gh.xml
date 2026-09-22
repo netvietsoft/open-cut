@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:background="@drawable/APKTOOL_RENAMED_0x7f08095e" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:background="@drawable/let" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="10.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="26.0dp" n0:text="@string/ms0" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:minHeight="40.0dp" n0:layout_marginStart="32.0dp" n0:layout_marginEnd="32.0dp">
+        <ImageView n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/p1g" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#16161d" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qg_" n0:layout_marginStart="16.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:minHeight="40.0dp" n0:layout_marginStart="32.0dp" n0:layout_marginEnd="32.0dp">
+        <ImageView n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/p1f" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#16161d" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/k4" n0:layout_marginStart="16.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:minHeight="40.0dp" n0:layout_marginStart="32.0dp" n0:layout_marginEnd="32.0dp">
+        <ImageView n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/p1h" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#16161d" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q1g" n0:layout_marginStart="16.0dp" />
+    </LinearLayout>
+    <com.vega.ui.StrongButton n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/btn_next" n0:background="@drawable/kwq" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="32.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="30.0dp" n0:text="@string/q_i" n0:layout_marginHorizontal="16.0dp" />
+</LinearLayout>

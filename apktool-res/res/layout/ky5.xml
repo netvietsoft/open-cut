@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/create_portrait_layout" n0:paddingLeft="12.0dp" n0:paddingTop="12.0dp" n0:paddingRight="12.0dp" n0:paddingBottom="12.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="58.0dp" n0:paddingHorizontal="12.0dp" n0:paddingVertical="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/iv_create_bg" n0:background="@drawable/lon" n0:layout_width="match_parent" n0:layout_height="40.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_create_icon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/ot7" n0:layout_marginStart="12.0dp" n2:layout_constraintBottom_toBottomOf="@id/iv_create_bg" n2:layout_constraintStart_toStartOf="@id/iv_create_bg" n2:layout_constraintTop_toTopOf="@id/iv_create_bg" n2:kd8="#99fafbff"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#99fafbff" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/nwu" n0:layout_marginStart="8.0dp" n3:layout_constraintBottom_toBottomOf="@id/iv_create_bg" n3:layout_constraintEnd_toEndOf="@id/iv_create_bg" n3:layout_constraintStart_toEndOf="@id/iv_create_icon" n3:layout_constraintTop_toTopOf="@id/iv_create_bg"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

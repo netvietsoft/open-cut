@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="60.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:id="@id/cvAiFaceCoverStyleRoot" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ivAiFaceCoverStyleIcon" n0:padding="2.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/mol" n1:roundedCornerRadius="8.0dp" />
+    </androidx.cardview.widget.CardView>
+    <ImageView n0:id="@id/ivAiFaceCoverStyleSelectedBg" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:src="@drawable/mn2" n2:layout_constraintDimensionRatio="1:1" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tvAiFaceCoverStyleName" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.5dp" n0:layout_marginBottom="8.0dp" n0:scrollHorizontally="true" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="@id/cvAiFaceCoverStyleRoot" n3:layout_constraintStart_toStartOf="@id/cvAiFaceCoverStyleRoot" n3:layout_constraintTop_toBottomOf="@id/cvAiFaceCoverStyleRoot"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/flAiFaceCoverStyleLoading" n0:background="#e5222222" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="@id/cvAiFaceCoverStyleRoot" n4:layout_constraintLeft_toLeftOf="@id/cvAiFaceCoverStyleRoot" n4:layout_constraintRight_toRightOf="@id/cvAiFaceCoverStyleRoot" n4:layout_constraintTop_toTopOf="@id/cvAiFaceCoverStyleRoot"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n4:lottie_autoPlay="true" n4:lottie_fileName="lv_loading_s.json" n4:lottie_loop="true" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/flAiFaceCoverStyleError" n0:background="#e5222222" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n5:layout_constraintBottom_toBottomOf="@id/cvAiFaceCoverStyleRoot" n5:layout_constraintLeft_toLeftOf="@id/cvAiFaceCoverStyleRoot" n5:layout_constraintRight_toRightOf="@id/cvAiFaceCoverStyleRoot" n5:layout_constraintTop_toTopOf="@id/cvAiFaceCoverStyleRoot"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" n0:scaleType="centerInside" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:background="@color/si" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/selectedMediaLy" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="84.0dp">
+        <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center_vertical" n0:id="@id/selectedMediaRv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="1.0dp" />
+        <View n0:layout_gravity="bottom" n0:background="@color/APKTOOL_RENAMED_0x7f06063c" n0:layout_width="match_parent" n0:layout_height="1.0dp" />
+    </FrameLayout>
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="70.0dp">
+        <com.vega.ui.StrongButton n0:textColor="@drawable/quw" n0:layout_gravity="end|center" n0:id="@id/one_click_edit" n0:background="@drawable/lx4" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:minWidth="70.0dp" n0:text="@string/qre" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_toStartOf="@id/edit" />
+        <com.vega.ui.StrongButton n0:layout_gravity="end|center" n0:id="@id/edit" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:minWidth="70.0dp" n0:text="@string/import_editing" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

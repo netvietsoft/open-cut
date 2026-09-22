@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/autoShareTemplateViewGroup" n0:layout_width="match_parent" n0:layout_height="@dimen/rb"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.VegaCheckBox n0:id="@id/autoShareTemplateQuestionCheckbox" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:checked="false" n0:button="@null" n0:layout_marginStart="16.0dp" n0:layout_marginVertical="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f1304a8"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@drawable/qo-" n0:gravity="center_vertical" n0:id="@id/post_content" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/q1y" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toBottomOf="@id/autoShareTemplateQuestionCheckbox" n2:layout_constraintStart_toEndOf="@id/autoShareTemplateQuestionCheckbox" n2:layout_constraintTop_toTopOf="@id/autoShareTemplateQuestionCheckbox" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/autoShareTemplateQuestion" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m5-" n3:layout_constraintBottom_toBottomOf="@id/autoShareTemplateQuestionCheckbox" n3:layout_constraintStart_toEndOf="@id/post_content" n3:layout_constraintTop_toTopOf="@id/autoShareTemplateQuestionCheckbox"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/autoShareTemplateEdit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="@id/autoShareTemplateQuestionCheckbox" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="@id/autoShareTemplateQuestionCheckbox"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q1q" n4:k1i="medium" />
+        <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082ba4" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

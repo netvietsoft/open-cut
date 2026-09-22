@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="horizontal" n0:id="@id/groupProtocol" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="33.0dp" n0:layout_marginRight="33.0dp" n0:layout_marginBottom="24.0dp" n0:layout_marginHorizontal="33.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.VegaCheckBox n0:layout_gravity="center_vertical" n0:id="@id/cbProtocol" n0:layout_width="wrap_content" n0:layout_height="wrap_content" style="@style/APKTOOL_RENAMED_0x7f1304aa" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#66e5e9fa" n0:layout_gravity="center_vertical" n0:id="@id/tvProtocol" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ltp" />
+</LinearLayout>

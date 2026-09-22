@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center_vertical" n0:id="@id/anim_live" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n1:lottie_autoPlay="false" n1:klc="@raw/live_white" n1:kld="2"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604da" n0:ellipsize="marquee" n0:layout_gravity="center_vertical" n0:id="@id/tv_live" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mzb" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:paddingEnd="2.0dp" />
+</LinearLayout>

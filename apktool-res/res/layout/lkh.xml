@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="72.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#ccffffff" n0:id="@id/tv_tip_drag_music" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/l22" n0:layout_marginStart="20.0dp" />
+    <com.vega.audio.library.MusicWavePreview n0:layout_gravity="bottom" n0:id="@id/music_wave_preview" n0:layout_width="match_parent" n0:layout_height="24.0dp" n0:layout_marginBottom="18.0dp" />
+    <View n0:id="@id/music_bg" n0:background="#cc101010" n0:layout_width="86.0dp" n0:layout_height="30.0dp" n0:layout_marginTop="27.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#ccffffff" n0:id="@id/tv_current_position" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="34.0dp" n0:text="@string/uqg" n0:layout_marginStart="20.0dp" />
+    <View n0:id="@id/music_playhead" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c5b" n0:layout_width="1.5dp" n0:layout_height="30.0dp" n0:layout_marginTop="27.0dp" n0:layout_marginStart="86.0dp" />
+</merge>

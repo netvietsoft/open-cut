@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center_horizontal" n0:layout_width="150.0dp" n0:layout_height="150.0dp" n0:layout_marginTop="97.0dp" n0:alpha="0.4" n1:lottie_autoPlay="true" n1:lottie_fileName="load_error.json"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="17.0dp" n0:textColor="#662d2f2f" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:text="@string/umh" />
+    <TextView n0:textSize="15.0dp" n0:textColor="#662d2f2f" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:text="@string/tvj" />
+    <TextView n0:textSize="15.0dp" n0:textColor="@android:color/white" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/load" n0:background="@drawable/q72" n0:layout_width="204.0dp" n0:layout_height="42.0dp" n0:layout_marginTop="150.0dp" n0:text="@string/su8" />
+</merge>

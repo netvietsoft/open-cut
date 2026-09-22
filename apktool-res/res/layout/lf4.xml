@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/container" n0:background="@drawable/pc5" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="258.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/toolBar" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/q-" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o_" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/confirm" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/ntp" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <View n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/content" n0:layout_width="match_parent" n0:layout_height="214.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/toolBar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.VegaCheckBox n0:textSize="14.0sp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060466" n0:id="@id/applyToAll" n0:paddingTop="2.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:checked="false" n0:button="@drawable/qmt" n0:text="@string/pk" n0:layout_centerVertical="true" n0:paddingStart="8.0dp" n0:layout_alignParentStart="true" n0:stateListAnimator="@null" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/recycleView" n0:layout_width="wrap_content" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/applyToAll" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar n0:id="@id/loading" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:indeterminateDrawable="@drawable/mk2" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/toolBar"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/error" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="64.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/toolBar" layout="@layout/lwu"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

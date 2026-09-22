@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/mRlRoot" n0:background="@drawable/lmx" n0:layout_width="160.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/progress_loading" n0:layout_width="35.0dp" n0:layout_height="25.0dp" n0:layout_marginTop="42.0dp" n0:scaleType="centerCrop" n0:layout_centerHorizontal="true" n1:lottie_autoPlay="true" n1:lottie_fileName="lv_loading.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:gravity="center_horizontal" n0:id="@id/tvBottomContext" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="15.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="15.0dp" n0:layout_marginBottom="12.0dp" n0:layout_below="@id/progress_loading" n0:layout_centerHorizontal="true" n0:layout_marginHorizontal="15.0dp" />
+    <com.vega.ui.AlphaButton n0:id="@id/ivClose" n0:background="@drawable/p7h" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_alignParentTop="true" n0:layout_alignParentEnd="true" />
+    <View n0:id="@id/line" n0:background="@color/_m" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_below="@id/tvBottomContext" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_e" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tv_tips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="12.0dp" n0:maxLines="2" n0:lines="2" n0:includeFontPadding="false" n0:layout_below="@id/line" n0:layout_centerHorizontal="true" n0:layout_marginHorizontal="12.0dp" />
+    <com.vega.ui.StrongButton n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/btnConfirm" n0:background="@drawable/lma" n0:layout_width="88.0dp" n0:layout_height="33.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="24.0dp" n0:text="@string/nz-" n0:layout_below="@id/tv_tips" n0:layout_centerHorizontal="true" />
+</RelativeLayout>

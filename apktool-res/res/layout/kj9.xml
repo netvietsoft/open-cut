@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="center_horizontal" n0:background="@color/APKTOOL_RENAMED_0x7f06001b" n0:focusable="true" n0:fitsSystemWindows="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <Space n0:id="@id/title_holder" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/close" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="52.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m_2" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" n2:layout_constraintBottom_toBottomOf="@id/title_holder" n2:layout_constraintStart_toStartOf="@id/title_holder" n2:layout_constraintTop_toTopOf="@id/title_holder"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:layout_width="300.0dp" n0:layout_height="140.0dp" n0:src="@drawable/l45" n0:scaleType="fitXY" n3:layout_constraintBottom_toBottomOf="@id/animation" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="@id/animation"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.AILoadingAnimBallView n0:id="@id/animation" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n4:layout_constraintBottom_toTopOf="@id/progress" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:layout_constraintVertical_chainStyle="packed"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/progress" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:paddingStart="50.0dp" n0:paddingEnd="50.0dp" n5:layout_constraintBottom_toTopOf="@id/time" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/animation" n5:k1i="bold"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:paddingStart="50.0dp" n0:paddingEnd="50.0dp" n6:layout_constraintBottom_toTopOf="@id/description" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/progress"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/description" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/p5u" n0:paddingStart="50.0dp" n0:paddingEnd="50.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/time"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

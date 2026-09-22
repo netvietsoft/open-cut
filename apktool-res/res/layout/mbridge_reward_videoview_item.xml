@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@color/mbridge_reward_black" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:keepScreenOn="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.mbridge.msdk.playercommon.PlayerView n0:id="@id/mbridge_vfpv" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.mbridge.msdk.dycreator.baseview.cusview.MBridgeBaitClickView n0:id="@id/mbridge_animation_click_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.mbridge.msdk.dycreator.baseview.rewardpopview.MBAcquireRewardPopView n0:id="@id/mbridge_reward_popview" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.mbridge.msdk.dycreator.baseview.cusview.SoundImageView n0:layout_gravity="bottom" n0:id="@id/mbridge_sound_switch" n0:visibility="visible" n0:layout_width="35.0dp" n0:layout_height="35.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginBottom="10.0dp" />
+    <TextView n0:textSize="11.0dp" n0:gravity="center" n0:layout_gravity="right|bottom" n0:id="@id/mbridge_tv_flag" n0:background="@color/mbridge_color_999999" n0:paddingLeft="3.0dp" n0:paddingRight="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="AD" />
+    <ProgressBar n0:layout_gravity="bottom" n0:id="@id/mbridge_video_progress_bar" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="4.0dp" n0:progressDrawable="@drawable/mbridge_reward_video_progressbar_bg" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <com.mbridge.msdk.dycreator.baseview.cusview.MBridgeSegmentsProgressBar n0:layout_gravity="bottom" n0:id="@id/mbridge_reward_segment_progressbar" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <RelativeLayout n0:layout_gravity="end" n0:orientation="horizontal" n0:id="@id/mbridge_top_control" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="10.0dp">
+        <ImageView n0:gravity="center" n0:id="@id/mbridge_iv_link" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="35.0dp" n0:src="@drawable/mbridge_reward_notice" n0:layout_alignParentLeft="true" n0:layout_marginStart="10.0dp" n0:layout_alignParentStart="true" />
+        <com.mbridge.msdk.widget.FeedBackButton n0:id="@id/mbridge_native_endcard_feed_btn" n0:paddingLeft="5.0dp" n0:paddingRight="5.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:text="@string/mbridge_cm_feedback_btn_text" n0:layout_toRightOf="@id/mbridge_iv_link" n0:layout_centerVertical="true" n0:layout_toEndOf="@id/mbridge_iv_link" />
+        <TextView n0:textSize="12.0sp" n0:textColor="@color/mbridge_reward_white" n0:gravity="center" n0:id="@id/mbridge_tv_count" n0:background="@drawable/mbridge_reward_video_time_count_num_bg" n0:visibility="visible" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_marginLeft="5.0dp" n0:layout_toRightOf="@id/mbridge_native_endcard_feed_btn" n0:layout_centerVertical="true" n0:layout_marginStart="5.0dp" n0:layout_toEndOf="@id/mbridge_native_endcard_feed_btn" />
+        <ImageView n0:layout_gravity="end" n0:id="@id/mbridge_rl_playing_close" n0:layout_width="35.0dp" n0:layout_height="35.0dp" n0:src="@drawable/mbridge_reward_close" n0:contentDescription="closeButton" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

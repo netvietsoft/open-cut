@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/previewControlBar" n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="52.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.SeekBarSliderView n0:id="@id/sbSliderView" n0:layout_width="match_parent" n0:layout_height="16.0dp" n1:APKTOOL_RENAMED_0x7f0404f1="true" n1:APKTOOL_RENAMED_0x7f0405ae="true" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kko="@color/knt" n1:kkt="#33ffffff" n1:kkv="12.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="48.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0sp" n0:textColor="@color/knt" n0:id="@id/tvStartTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n0:layout_marginStart="16.0dp" n0:textFontWeight="600" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <View n0:id="@id/v_sp_line" n0:background="@color/m_" n0:layout_width="1.0dp" n0:layout_height="4.0dp" n0:layout_marginStart="6.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintLeft_toRightOf="@id/tvStartTime" n2:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="12.0sp" n0:textColor="@color/m_" n0:id="@id/tvEndTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n0:layout_marginStart="6.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintLeft_toRightOf="@id/v_sp_line" n2:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/ivStartButton" n0:background="@drawable/ps_" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

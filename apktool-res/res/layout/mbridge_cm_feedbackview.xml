@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="#73000000" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:layout_gravity="center" n0:background="@drawable/mbridge_cm_feedback_dialog_view_bg" n0:layout_width="300.0dp" n0:layout_height="wrap_content" n0:layout_margin="@dimen/u3">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="270.0dp" n0:layout_centerInParent="true">
+            <RelativeLayout n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0">
+                <TextView n0:textSize="@dimen/u_" n0:textStyle="bold" n0:textColor="@color/mbridge_black" n0:gravity="center" n0:id="@id/mbridge_video_common_alertview_titleview" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:text="用户反馈" n0:singleLine="true" n0:textAllCaps="false" />
+                <Button n0:textSize="@dimen/u7" n0:textColor="@color/mbridge_black" n0:gravity="center" n0:id="@id/mbridge_video_common_alertview_confirm_button" n0:background="@null" n0:paddingLeft="1.0dp" n0:paddingRight="13.0dp" n0:layout_width="@dimen/u4" n0:layout_height="wrap_content" n0:text="x" n0:layout_alignParentRight="true" n0:paddingStart="1.0dp" n0:paddingEnd="13.0dp" n0:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <ScrollView n0:id="@id/mbridge_video_common_alertview_contentview_scrollview" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="5.0" n0:layout_below="@id/mbridge_video_common_alertview_titleview">
+                <LinearLayout n0:orientation="horizontal" n0:id="@id/mbridge_video_common_alertview_contentview" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            </ScrollView>
+            <LinearLayout n0:gravity="center" n0:layout_gravity="center" n0:orientation="horizontal" n0:background="@drawable/mbridge_cm_feedback_dialog_view_bg" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" n0:layout_below="@id/mbridge_video_common_alertview_contentview_scrollview">
+                <Button n0:textSize="@dimen/u7" n0:textColor="@color/mbridge_white" n0:gravity="center" n0:id="@id/mbridge_video_common_alertview_cancel_button" n0:background="@drawable/mbridge_cm_feedback_choice_btn_bg_pressed" n0:layout_width="match_parent" n0:layout_height="@dimen/u4" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:text="提交" n0:textAllCaps="false" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+            </LinearLayout>
+            <Button n0:textSize="@dimen/u7" n0:textColor="@color/mbridge_cm_feedback_dialog_chice_bg_pressed" n0:id="@id/mbridge_video_common_alertview_private_action_button" n0:background="@null" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:text="Mintegral隐私政策" n0:layout_weight="1.0" n0:textAllCaps="false" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

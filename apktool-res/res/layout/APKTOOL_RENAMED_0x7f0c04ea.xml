@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/panelContainerMask" n0:background="@color/fz" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/musicPanelContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true" n0:layout_alignParentStart="true" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

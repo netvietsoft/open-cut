@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:background="@drawable/ko_" n0:paddingTop="0.0dp" n0:paddingBottom="0.0dp" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/ailab_chip_icon_container" n0:layout_width="20.0dp" n0:layout_height="20.0dp">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ailab_chip_icon" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </FrameLayout>
+    <TextView n0:textSize="14.0dp" n0:textColor="#090c14" n0:id="@id/ailab_chip_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp" n0:textFontWeight="500" />
+    <TextView n0:textSize="16.0dp" n0:textColor="#661f2f45" n0:id="@id/ailab_chip_arrow" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="→" n0:layout_marginStart="4.0dp" />
+</LinearLayout>

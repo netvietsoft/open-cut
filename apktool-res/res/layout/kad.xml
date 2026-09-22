@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:padding="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060617" n0:gravity="start|center" n0:id="@id/tv_index" n0:layout_width="24.0dp" n0:layout_height="wrap_content" />
+        <com.vega.theme.VegaEditText n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06050b" n0:textColorHint="@color/APKTOOL_RENAMED_0x7f060617" n0:id="@id/edt_subtitle" n0:background="@null" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:hint="@string/l8m" n0:layout_weight="1.0" n0:textCursorDrawable="@drawable/qba" />
+        <ImageView n0:id="@id/iv_delete" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/o0k" n0:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <View n0:layout_gravity="center_vertical" n0:id="@id/transparent_mask_view" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</FrameLayout>

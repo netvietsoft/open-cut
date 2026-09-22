@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/dialogRoot" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/videoContainerRoot" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="17.5dp" n1:layout_constraintBottom_toTopOf="@id/btnApply" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/videoContainer" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/video_bottom_mask" n0:background="@drawable/APKTOOL_RENAMED_0x7f080b3d" n0:layout_width="match_parent" n0:layout_height="320.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/userAvatar_left" n0:visibility="visible" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginStart="16.0dp" n3:layout_constraintBottom_toTopOf="@id/tvDescription" n3:layout_constraintStart_toStartOf="parent" n3:kr3="button" n3:roundAsCircle="true"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="start" n0:id="@id/tvName" n0:layout_width="0.0dp" n0:layout_height="24.0dp" n0:maxLines="1" n0:layout_marginStart="4.0dp" n4:layout_constraintStart_toEndOf="@id/userAvatar_left" n4:layout_constraintTop_toBottomOf="@id/userAvatar_left" n4:layout_constraintTop_toTopOf="@id/userAvatar_left"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="14.0dp" n0:textColor="@color/q-" n0:ellipsize="end" n0:gravity="start" n0:id="@id/tvDescription" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n0:maxLines="2" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="102.0dp" n0:lineHeight="18.0dp" n5:layout_constraintBottom_toTopOf="@id/labelRecyclerView" n5:layout_constraintStart_toStartOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/btnCollect" n0:background="@drawable/qlv" n0:layout_width="103.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="42.0dp" n0:maxLines="1" n0:drawablePadding="5.0dp" n0:drawableStart="@drawable/nv8" n0:paddingStart="22.0dp" n0:layout_marginStart="16.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:kr3="button"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/btnApply" n0:background="@drawable/lic" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n7:layout_constraintBottom_toBottomOf="@id/btnCollect" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toEndOf="@id/btnCollect" n7:layout_constraintTop_toTopOf="@id/btnCollect"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/inedit_template_use_iv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/pwh" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toStartOf="@id/inedit_template_use_btn" n7:layout_constraintHorizontal_chainStyle="packed" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:id="@id/inedit_template_use_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q-x" n0:textAllCaps="false" n0:stateListAnimator="@null" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toEndOf="@id/inedit_template_use_iv" n7:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/labelRecyclerView" n0:layout_width="match_parent" n0:layout_height="18.0dp" n0:layout_marginBottom="34.0dp" n0:layout_marginStart="14.0dp" n8:layout_constraintBottom_toTopOf="@id/btnApply" n8:layout_constraintStart_toStartOf="@id/userAvatar_left"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/segmentPlayView" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:layout_marginBottom="40.0dp" n9:layout_constraintBottom_toTopOf="@id/userAvatar_left" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto">
+        <com.vega.commonedit.template.widget.InEditPreviewSegmentPlayScroller n0:layout_gravity="center_vertical" n0:id="@id/segmentPlayScroller" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="12.0dp" />
+        <View n0:layout_gravity="center" n0:background="@drawable/llt" n0:layout_width="3.0dp" n0:layout_height="match_parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

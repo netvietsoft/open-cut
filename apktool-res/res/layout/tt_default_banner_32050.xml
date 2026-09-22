@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bd.adhubsdk.api.nativeAd.BDAHNativeAdFrameLayout n0:layout_gravity="center_horizontal" n0:id="@id/bdah_container" n0:background="@color/tt_colors_white" n0:layout_width="320.0dp" n0:layout_height="50.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/bdah_layout" n0:layout_width="320.0dp" n0:layout_height="50.0dp">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_blur" n0:layout_width="320.0dp" n0:layout_height="50.0dp" n0:scaleType="centerCrop" />
+        <View n0:id="@id/view_blur_cover" n0:background="#80000000" n0:layout_width="320.0dp" n0:layout_height="50.0dp" />
+        <RelativeLayout n0:id="@id/rl_banner_container" n0:layout_width="320.0dp" n0:layout_height="50.0dp">
+            <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/media_view" n0:layout_width="38.0dp" n0:layout_height="38.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:scaleType="fitCenter" n0:layout_alignParentLeft="true" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp" />
+            <com.bd.adhubsdk.api.nativeAd.BDAHNativeAdMediaView n0:id="@id/media_view_fb" n0:visibility="visible" n0:layout_width="1.0dp" n0:layout_height="1.0dp" n0:layout_alignParentLeft="true" />
+            <TextView n0:textSize="13.0dp" n0:textStyle="bold" n0:textColor="@color/tt_colors_white" n0:ellipsize="end" n0:id="@id/tv_banner_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="2.0dp" n0:layout_marginTop="6.0dp" n0:maxWidth="150.0dp" n0:singleLine="true" n0:layout_toEndOf="@id/media_view" n0:lineHeight="18.0dp" />
+            <TextView n0:textSize="8.0sp" n0:textColor="#aeaeae" n0:id="@id/tv_ad" n0:background="@drawable/tt_ad_round_bg" n0:paddingLeft="4.0dp" n0:paddingTop="2.0dp" n0:paddingRight="4.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="4.0dp" n0:layout_marginTop="8.0dp" n0:text="AD" n0:layout_toRightOf="@id/tv_banner_title" n0:paddingHorizontal="4.0dp" n0:paddingVertical="2.0dp" />
+            <TextView n0:textSize="12.0dp" n0:textColor="#aeaeae" n0:ellipsize="end" n0:id="@id/tv_banner_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="2.0dp" n0:layout_marginTop="2.0dp" n0:maxWidth="180.0dp" n0:singleLine="true" n0:layout_below="@id/tv_banner_title" n0:layout_toEndOf="@id/media_view" n0:lineHeight="16.0dp" />
+            <Button n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/tt_colors_white" n0:ellipsize="end" n0:id="@id/btn_creative" n0:background="@drawable/tt_banner_btn_bg" n0:paddingLeft="5.0dp" n0:paddingTop="2.0dp" n0:paddingRight="5.0dp" n0:paddingBottom="2.0dp" n0:layout_width="60.0dp" n0:layout_height="wrap_content" n0:layout_marginRight="16.0dp" n0:minHeight="25.0dp" n0:maxLines="2" n0:layout_alignParentRight="true" n0:layout_centerInParent="true" n0:paddingHorizontal="5.0dp" n0:paddingVertical="2.0dp" />
+        </RelativeLayout>
+    </FrameLayout>
+</com.bd.adhubsdk.api.nativeAd.BDAHNativeAdFrameLayout>

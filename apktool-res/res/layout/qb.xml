@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="#f0f0f0" n0:padding="16.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp">
+        <TextView n0:textSize="20.0sp" n0:textStyle="bold" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Template List Demo" n0:layout_weight="1.0" />
+        <Button n0:id="@id/btn_close" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Close" />
+    </LinearLayout>
+    <com.vega.edward.agent.templatelist.TemplateListView n0:id="@id/template_list_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+</LinearLayout>

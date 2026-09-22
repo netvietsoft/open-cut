@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/container_guide" n0:background="@color/m9" n0:paddingTop="16.0dp" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_gallery_portraits_guide_info" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/n0a" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/ml" n0:id="@id/tv_gallery_portraits_guide_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/m3t" n0:includeFontPadding="false" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constrainedWidth="true" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/iv_gallery_portraits_guide_info" n1:layout_constraintTop_toTopOf="@id/iv_gallery_portraits_guide_info" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/kc" n0:gravity="center" n0:id="@id/tv_gallery_portraits_guide_got" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="4.0dp" n0:text="@string/m3u" n0:layout_marginEnd="16.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toBottomOf="@id/tv_gallery_portraits_guide_info" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.ui.widget.FadingEdgeRecyclerView n0:id="@id/rv_gallery_portraits" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/container_guide"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/empty_gallery_portraits_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <ImageView n0:id="@id/empty_gallery_portraits_iv" n0:layout_width="96.0dp" n0:layout_height="96.0dp" n0:src="@drawable/n0z" n3:layout_constraintBottom_toTopOf="@id/empty_gallery_portraits_title_tv" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:layout_constraintVertical_chainStyle="packed"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="16.0dp" n0:textColor="@color/ml" n0:id="@id/empty_gallery_portraits_title_tv" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="4.0dp" n0:text="@string/m3r" n0:paddingHorizontal="16.0dp" n4:layout_constraintBottom_toTopOf="@id/empty_gallery_portraits_desc_tv" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/empty_gallery_portraits_iv"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:id="@id/empty_gallery_portraits_desc_tv" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/m3q" n0:paddingHorizontal="16.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/empty_gallery_portraits_title_tv"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

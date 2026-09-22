@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout n0:id="@id/cl_panel_tone_select" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout n0:id="@id/appBarLayout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:elevation="0.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n0:orientation="vertical" n0:id="@id/topBarLinearLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/search_header_layout" n0:background="@drawable/p5b" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="52.0dp">
+                    <com.vega.gallery.ui.SearchTextSwitcher n0:id="@id/input" n0:background="@drawable/ls3" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/iv_confirm_search" n1:layout_constraintHorizontal_weight="1.0" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kpq="true" />
+                    <com.vega.ui.AlphaButton n0:id="@id/iv_confirm_search" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081f8c" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout n0:orientation="vertical" n0:id="@id/ai_dubbing_top_container" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent">
+                    <FrameLayout n0:layout_width="match_parent" n0:layout_height="48.0dp">
+                        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t0" n1:k1i="medium" />
+                        <ImageView n0:layout_gravity="end|center" n0:id="@id/ai_dubbing_tone_confirm" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/ntp" n0:layout_marginEnd="12.0dp" />
+                    </FrameLayout>
+                    <View n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/appbarConstraintLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="@dimen/cu" n1:layout_scrollFlags="scroll|enterAlways">
+                    <ImageView n0:id="@id/iv_back" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/or0" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout n0:orientation="horizontal" n0:id="@id/search_container" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                        <com.vega.ui.AlphaButton n0:id="@id/search_button" n0:background="@drawable/qb2" n0:padding="6.0dp" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/mrc" n0:scaleType="fitCenter" />
+                    </LinearLayout>
+                    <ImageView n0:id="@id/business_filter_button" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m9u" n0:scaleType="fitCenter" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="@id/search_container" n1:layout_constraintStart_toEndOf="@id/search_container" n1:layout_constraintTop_toTopOf="@id/search_container" />
+                    <View n0:layout_gravity="center_vertical" n0:id="@id/search_divider" n0:background="#1affffff" n0:layout_width="0.5dp" n0:layout_height="11.5dp" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="@id/business_filter_button" n1:layout_constraintStart_toEndOf="@id/business_filter_button" n1:layout_constraintTop_toTopOf="@id/business_filter_button" />
+                    <com.vega.edit.base.view.FixedRecyclerView n0:id="@id/tabRv" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n1:layout_constraintEnd_toStartOf="@id/iv_tone_confirm_in_tab_line" n1:layout_constraintStart_toEndOf="@id/search_divider" n1:layout_constraintTop_toTopOf="parent" n1:layout_goneMarginEnd="12.0dp" />
+                    <com.vega.lvui.widget.TabIndicator n0:id="@id/tabIndicator" n0:layout_width="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="@id/tabRv" n1:layout_constraintStart_toStartOf="@id/tabRv" style="@style/u_" />
+                    <View n0:layout_gravity="end" n0:id="@id/tab_shadow" n0:background="@drawable/lc3" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="40.0dp" n1:layout_constraintBottom_toBottomOf="@id/iv_tone_confirm_in_tab_line" n1:layout_constraintEnd_toStartOf="@id/iv_tone_confirm_in_tab_line" n1:layout_constraintTop_toTopOf="@id/iv_tone_confirm_in_tab_line" />
+                    <ImageView n0:id="@id/iv_tone_confirm_in_tab_line" n0:padding="10.0dp" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/ntp" n0:layout_marginEnd="2.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_title_manage" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:layout_constraintTop_toTopOf="parent">
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p5a" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ccffffff" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/vtv_manage_done" n0:paddingLeft="15.0dp" n0:paddingRight="15.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/p42" n0:paddingHorizontal="15.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:k1i="medium" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <View n0:id="@id/dividerLine" n0:visibility="gone" style="@style/APKTOOL_RENAMED_0x7f1301de" />
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.vega.ui.widget.NestedScrollableHost n0:id="@id/fl_tone_container" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <androidx.viewpager2.widget.ViewPager2 n0:id="@id/viewPager2" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        </com.vega.ui.widget.NestedScrollableHost>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include n0:id="@id/bottomApplyToAll" layout="@layout/x5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

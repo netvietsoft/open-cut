@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/first_level_top_handle" n0:background="@drawable/APKTOOL_RENAMED_0x7f080613" n0:layout_width="32.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="12.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ml" n0:id="@id/top_bar_title" n0:paddingLeft="8.0dp" n0:paddingTop="11.0dp" n0:paddingRight="8.0dp" n0:paddingBottom="11.0dp" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="20.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12176e" n0:textAlignment="center" n0:paddingHorizontal="8.0dp" n0:paddingVertical="11.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/first_level_top_handle" n2:k1i="bold" n2:k1j="headline"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/vertical_category_rv" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:overScrollMode="never" n0:nestedScrollingEnabled="true" n3:layout_constraintBottom_toTopOf="@id/bottom_inset_spacer" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/top_bar_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.StateViewGroupLayoutV3 n0:id="@id/page_state_ly" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toTopOf="@id/bottom_inset_spacer" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/top_bar_title"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/page_loading_view" n0:tag="loading" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true">
+            <com.vega.ui.widget.LoadingView n0:id="@id/page_loading_icon_view" n0:layout_width="35.0dp" n0:layout_height="28.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/mzj" />
+        </LinearLayout>
+        <include n0:id="@id/page_error_view" n0:tag="error" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" layout="@layout/wv" />
+        <include n0:id="@id/page_empty_view" n0:tag="empty" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerInParent="true" n0:layout_centerVertical="true" layout="@layout/vv" />
+    </com.vega.ui.widget.StateViewGroupLayoutV3>
+    <View n0:id="@id/bottom_inset_spacer" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

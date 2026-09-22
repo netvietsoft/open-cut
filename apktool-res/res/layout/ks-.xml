@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/rlImageRoot" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:maxWidth="82.0dp" n0:minWidth="62.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:id="@id/cralViewRoot" n0:layout_width="62.0dp" n0:layout_height="62.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cralView" n0:background="@color/_j" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_centerInParent="true" />
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/loadingView" n0:visibility="invisible" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="lv_loading_s.json" n1:lottie_loop="true" />
+        <View n0:layout_gravity="bottom" n0:id="@id/bgInnerTitle" n0:background="@color/vf" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="14.0dp" />
+        <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:ellipsize="marquee" n0:gravity="center" n0:layout_gravity="bottom" n0:id="@id/tvInnerTitle" n0:focusable="true" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="14.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" />
+        <ImageView n0:id="@id/cralViewMask" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@color/_l" n0:scaleType="centerCrop" n0:layout_centerInParent="true" />
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/playState" n0:visibility="invisible" n0:layout_width="65.0dp" n0:layout_height="65.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/ot0" n0:layout_marginStart="8.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:id="@id/editText" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ng" n0:maxLines="2" n3:APKTOOL_RENAMED_0x7f04047b="@drawable/m_s" n3:layout_constraintBottom_toBottomOf="@id/cralViewRoot" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="@id/cralViewRoot"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/ai" n0:id="@id/tvIndexLabel" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="@id/cralViewRoot" n4:layout_constraintRight_toRightOf="@id/cralViewRoot" n4:layout_constraintTop_toBottomOf="@id/cralViewRoot"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

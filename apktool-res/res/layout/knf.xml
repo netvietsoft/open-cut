@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="end" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#090c14" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kuk" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="16.0dp" n0:textColor="#090c14" n0:id="@id/tv_subtitle" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/kt3" n0:lineSpacingMultiplier="1.34" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n0:letterSpacing="0.01" n0:textFontWeight="400" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ailabagent.autocut.results.AutoCutResultListView n0:id="@id/autocut_result_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tv_subtitle"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/layout_message_interaction_tool" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="16.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/autocut_result_view" layout="@layout/k_b"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

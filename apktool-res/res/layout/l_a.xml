@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/groupImageTemplateMusic" n0:background="@drawable/lar" n0:paddingLeft="16.0dp" n0:paddingTop="16.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="16.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="6.0dp" n0:minHeight="52.0dp" n0:layout_marginHorizontal="16.0dp" n0:layout_marginVertical="6.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ivMusicEntryIcon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/oxh" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/musicEntryTextContainer"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/musicEntryTextContainer" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="12.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/ivMusicEntryArrow" n2:layout_constraintStart_toEndOf="@id/ivMusicEntryIcon" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:ellipsize="end" n0:id="@id/tvMusicEntryTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/kx_" n0:maxLines="1" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#80ffffff" n0:ellipsize="end" n0:id="@id/tvMusicEntrySubtitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/kyn" n0:maxLines="2" />
+    </LinearLayout>
+    <ImageView n0:id="@id/ivMusicEntryArrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081796" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

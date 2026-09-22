@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.audio.library.MusicWavePreview n0:id="@id/music_wave_preview" n0:layout_width="match_parent" n0:layout_height="22.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="#991c1d21" n0:layout_width="0.0dp" n0:layout_height="22.0dp" n2:layout_constraintBottom_toBottomOf="@id/music_wave_preview" n2:layout_constraintEnd_toStartOf="@id/music_playhead" n2:layout_constraintStart_toStartOf="@id/music_wave_preview" n2:layout_constraintTop_toTopOf="@id/music_wave_preview"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/mv" n0:id="@id/tv_current_position" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n0:layout_marginStart="8.0dp" n3:layout_constraintBottom_toBottomOf="@id/music_bg" n3:layout_constraintStart_toStartOf="@id/music_wave_preview" n3:layout_constraintTop_toTopOf="@id/music_bg" n3:k1i="medium" n3:k1j="body_3"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/music_playhead" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c5b" n0:layout_width="1.5dp" n0:layout_height="22.0dp" n0:layout_marginStart="86.0dp" n4:layout_constraintBottom_toBottomOf="@id/music_wave_preview" n4:layout_constraintStart_toStartOf="@id/music_wave_preview" n4:layout_constraintTop_toTopOf="@id/music_wave_preview"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/music_bg" n0:background="@drawable/p09" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

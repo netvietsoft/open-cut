@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.vega.edit.inpainting.view.InPaintingPromptPanel n0:layout_gravity="bottom" n0:id="@id/in_painting_prompt_panel" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.inpainting.view.InPaintingLoadingPanel n2:layout_gravity="bottom" n2:id="@id/in_painting_loading_panel" n2:layout_width="match_parent" n2:layout_height="wrap_content" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res/android" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.inpainting.view.InPaintingResultPanel n4:layout_gravity="bottom" n4:id="@id/in_painting_result_panel" n4:layout_width="match_parent" n4:layout_height="wrap_content" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res/android" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</merge>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.image.view.edits.crop.ImageAIRatioFragment" n0:id="@id/fragment_out_painting_ratio" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/generating_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="10.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n2:layout_constraintTop_toBottomOf="@id/fragment_out_painting_ratio"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:enabled="true" n0:id="@id/reset_btn_layout" n0:background="@drawable/k_e" n0:layout_width="0.0dp" n0:layout_height="42.0dp" n0:layout_marginRight="16.0dp" n0:layout_weight="0.33">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#33dee3f7" n0:id="@id/reset_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12239e" n0:layout_marginStart="15.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            <ImageView n0:id="@id/reset_btn_iv" n0:layout_width="15.0dp" n0:layout_height="15.0dp" n0:layout_marginRight="2.0dp" n0:src="@drawable/ik" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintRight_toLeftOf="@id/reset_btn" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:enabled="true" n0:id="@id/generating_layout_confirm" n0:layout_width="0.0dp" n0:layout_height="42.0dp" n0:layout_weight="0.66">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/a" n0:id="@id/generating_layout_confirm_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ogw" n0:maxLines="1" n0:layout_marginStart="20.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:k1i="bold" n2:k1j="sub_title" />
+            <ImageView n0:id="@id/generating_layout_confirm_iv" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/n55" n0:layout_marginEnd="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintRight_toLeftOf="@id/generating_layout_confirm_tv" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <FrameLayout n0:layout_width="100.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="18.0dp" n3:layout_constraintEnd_toEndOf="@id/generating_layout" n3:layout_constraintTop_toBottomOf="@id/fragment_out_painting_ratio"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="end|top" n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:kml="small" n3:kmm="mix" n3:kmo="edit" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

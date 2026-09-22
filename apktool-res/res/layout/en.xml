@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/indicator" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <View n0:id="@id/indicatorDot" n0:background="@drawable/k2h" n0:layout_width="18.0dp" n0:layout_height="18.0dp" />
+        <View n0:id="@id/indicatorLine" n0:background="@color/c3" n0:layout_width="2.0dp" n0:layout_height="31.0dp" n0:layout_marginTop="-9.0dp" n0:layout_below="@id/indicatorDot" n0:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/tip_view_root" n0:background="@drawable/k2x" n0:padding="15.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="-0.5dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/s3" n0:id="@id/tvGuideTips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/luq" />
+    </LinearLayout>
+</LinearLayout>

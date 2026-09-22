@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/presenter_recycler_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="6.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="6.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginHorizontal="6.0dp" n0:layout_marginVertical="8.0dp" />
+    <com.vega.commonedit.digitalhuman.panel.view.PanelStatusComponent n0:id="@id/status_view" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingStart="16.0dp" n0:paddingEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/srl_creatives_tab" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_behavior="@string/appbar_scrolling_view_behavior" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.refresh.RefreshHeaderView n0:layout_width="match_parent" n0:layout_height="60.0dp" />
+        <com.vega.cloud.view.fastscroll.FastScrollRecyclerView n0:id="@id/rv_creatives_list" n0:paddingTop="8.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never" n1:APKTOOL_RENAMED_0x7f0404de="true" n1:APKTOOL_RENAMED_0x7f0404df="2000" n1:APKTOOL_RENAMED_0x7f0404e3="44.0dp" n1:APKTOOL_RENAMED_0x7f0404e4="8.0dp" n1:APKTOOL_RENAMED_0x7f0404e5="135.0dp" n1:APKTOOL_RENAMED_0x7f0404e6="#ff000000" n1:APKTOOL_RENAMED_0x7f0404e7="14.0dp" n1:APKTOOL_RENAMED_0x7f0404e8="font_metrics" n1:APKTOOL_RENAMED_0x7f0404e9="false" n1:APKTOOL_RENAMED_0x7f0404ea="48.0dp" n1:APKTOOL_RENAMED_0x7f0404eb="40.0dp" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <androidx.core.widget.NestedScrollView n0:id="@id/creatives_empty_scroll_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:fillViewport="true" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.property.optional.ui.common.view.PropertyListEmptyView n0:id="@id/plev_creatives" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </androidx.core.widget.NestedScrollView>
+    <com.vega.property.optional.ui.common.view.PropertyLoadingView n0:id="@id/plv_creatives_loading_view" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

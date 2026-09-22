@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:orientation="vertical" n0:layout_width="64.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/rlImageRoot" n0:background="@drawable/APKTOOL_RENAMED_0x7f080bb5" n0:padding="4.0dp" n0:layout_width="64.0dp" n0:layout_height="80.0dp">
+        <RelativeLayout n0:layout_width="56.0dp" n0:layout_height="72.0dp" n0:layout_centerInParent="true">
+            <androidx.cardview.widget.CardView n0:layout_width="match_parent" n0:layout_height="match_parent" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp"
+              xmlns:n1="http://schemas.android.com/apk/res-auto">
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cralView" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@color/km6" n0:scaleType="centerCrop" n0:layout_centerInParent="true" />
+                <View n0:background="@drawable/lbo" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+                <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tvIndexLabel" n0:background="@drawable/k74" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="15.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginStart="4.0dp" />
+                <ImageView n0:layout_gravity="right" n0:id="@id/tvAILabel" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/pl7" n0:layout_marginEnd="4.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/gd" n0:ellipsize="end" n0:gravity="center|bottom" n0:layout_gravity="center|bottom" n0:id="@id/tvTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:maxLines="2" n0:layout_alignParentBottom="true" n0:layout_centerHorizontal="true" />
+                <ImageView n0:id="@id/cralViewMask" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@color/_l" n0:scaleType="centerCrop" n0:layout_centerInParent="true" />
+            </androidx.cardview.widget.CardView>
+            <com.vega.cutsameedit.view.TemplateSlotStateView n0:id="@id/stateView" n0:layout_width="22.0dp" n0:layout_height="22.0dp" n0:layout_marginTop="4.0dp" n0:layout_alignParentTop="true" n0:layout_marginEnd="4.0dp" n0:layout_alignParentEnd="true" />
+            <ImageView n0:id="@id/iv_empty_slot" n0:background="@color/fh" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/ncz" n0:scaleType="center" />
+            <com.airbnb.lottie.LottieAnimationView n0:id="@id/lottie_lite_video_playing" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_centerInParent="true" n2:lottie_autoPlay="true" n2:lottie_fileName="music_playing.json" n2:lottie_loop="true"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <androidx.appcompat.widget.AppCompatImageView n0:id="@id/lite_video_edit" n0:visibility="gone" n0:layout_width="22.0dp" n0:layout_height="22.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081f13" n0:layout_centerInParent="true" />
+            <androidx.cardview.widget.CardView n0:layout_width="match_parent" n0:layout_height="match_parent" n3:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n3:cardCornerRadius="7.5dp" n3:cardElevation="0.0dp"
+              xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <com.airbnb.lottie.LottieAnimationView n0:id="@id/auto_slicing_selected" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitXY" n0:layout_centerInParent="true" n3:lottie_loop="true" />
+                <com.airbnb.lottie.LottieAnimationView n0:id="@id/auto_slicing_unselected" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitXY" n0:layout_centerInParent="true" n3:lottie_loop="true" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.vega.ui.widget.SolidCircleView n0:id="@id/relationLabel" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="4.0dp" n0:layout_below="@id/rlImageRoot" n0:layout_centerHorizontal="true" n4:g0="@color/sg"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

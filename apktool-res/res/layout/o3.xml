@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/myfeed_content" n0:fitsSystemWindows="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/myfeed_top" n0:layout_width="match_parent" n0:layout_height="50.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:layout_gravity="center_vertical" n0:id="@id/tv_web_back" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m6h" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/_3" n0:layout_gravity="center" n0:id="@id/tv_web_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qmt" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/recycler_view" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toTopOf="@id/myfeed_bottom" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHorizontal_bias="0.0" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/myfeed_top" n2:layout_constraintVertical_bias="0.0"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/myfeed_title_line" n0:background="@color/APKTOOL_RENAMED_0x7f060638" n0:layout_width="match_parent" n0:layout_height="0.5dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/myfeed_top"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/myfeed_bottom" n0:background="#f5f5f5" n0:layout_width="match_parent" n0:layout_height="86.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.VegaButton n0:textColor="@color/sg" n0:id="@id/continue_feedback_btn" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c71" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="12.0dp" n0:text="@string/lbo" n0:textAllCaps="false" n0:stateListAnimator="@null" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

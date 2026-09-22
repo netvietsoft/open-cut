@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/p_classify_item_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:id="@id/p_classify_item_view_all" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n2:layout_constraintEnd_toEndOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n-h" n0:layout_marginEnd="4.0dp" />
+        <ImageView n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/p4n" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

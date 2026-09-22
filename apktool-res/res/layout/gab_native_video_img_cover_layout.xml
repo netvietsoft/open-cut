@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/gab_native_video_img_cover" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/gab_native_video_img_id" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n0:layout_centerInParent="true" />
+    <ImageView n0:id="@id/gab_native_video_play" n0:background="@drawable/tt_new_play_video" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" />
+</RelativeLayout>

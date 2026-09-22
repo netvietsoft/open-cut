@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_redirect_component_layout_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/panel" n0:background="@color/kot" n0:layout_width="match_parent" n0:layout_height="90.0dp">
+        <LinearLayout n0:layout_gravity="center" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="18.0dp" n0:textColor="@color/kxw" n0:layout_gravity="center_horizontal" n0:id="@id/tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:layout_gravity="center_horizontal" n0:id="@id/counter_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Automatically jump after 3s" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

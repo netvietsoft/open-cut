@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kca" n0:layout_width="279.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:id="@id/dialog_action_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b3111a2c" n0:gravity="center" n0:id="@id/dialog_action_desc" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="24.0dp" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/dialog_action_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/dialog_action_ok" n0:background="@drawable/kcb" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="24.0dp" n0:layout_marginHorizontal="24.0dp" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/dialog_action_desc"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b3111a2c" n0:id="@id/dialog_action_cancel" n0:padding="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kv4" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toBottomOf="@id/dialog_action_ok"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

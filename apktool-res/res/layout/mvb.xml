@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/undoRedoBar" n0:tag="layout/xt_layout_business_template_top_0" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/undo" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/rrj" n0:layout_marginStart="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/redo" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/rrt" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/undo"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/show_all_layer" n0:tag="binding_1" n0:paddingTop="26.0dp" n0:paddingBottom="26.0dp" n0:layout_width="54.0dp" n0:layout_height="44.0dp" n0:scaleType="center" n0:paddingStart="18.0dp" n0:paddingEnd="18.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:gravity="center" n0:id="@id/compare_btn_area" n0:visibility="gone" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginEnd="10.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:gravity="center" n0:layout_gravity="center" n0:id="@id/compare_btn" n0:visibility="visible" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/rs4" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

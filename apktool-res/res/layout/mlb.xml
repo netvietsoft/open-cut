@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_activity_cutout_pic_editor_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView n0:name="com.xt.edit.picture.PictureFragment" n0:id="@id/fragment_picture" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f070513" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/shared_mask" n0:background="@color/APKTOOL_RENAMED_0x7f0607cd" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f070513" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.SharedImageView n0:id="@id/shared_image_view" n0:background="#00cc0000" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f070513" n3:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/gestureViewContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.xt.retouch.baseui.view.InterceptConstraintLayout n0:id="@id/wholePanel" n0:background="@color/kor" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="260.0dp" n4:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/bottom_bar" n0:layout_width="match_parent" n0:layout_height="@dimen/hy" n4:layout_constraintTop_toTopOf="parent">
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="start|top" n0:id="@id/iv_cancel" n0:tag="binding_1" n0:padding="4.0dp" n0:visibility="gone" n0:layout_width="@dimen/hx" n0:layout_height="@dimen/hx" n0:layout_marginTop="@dimen/hw" n0:src="@drawable/rmd" n0:contentDescription="@string/sne" n0:layout_marginStart="@dimen/hv" />
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:id="@id/iv_confirm" n0:tag="binding_2" n0:padding="4.0dp" n0:layout_width="@dimen/hx" n0:layout_height="@dimen/hx" n0:layout_marginTop="@dimen/hw" n0:src="@drawable/r2b" n0:contentDescription="@string/swe" n0:layout_marginEnd="@dimen/hu" />
+            <TextView n0:textSize="@dimen/hz" n0:textColor="@color/kso" n0:gravity="center" n0:layout_gravity="center|top" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/so_" />
+        </FrameLayout>
+        <View n0:id="@id/divide_line" n0:background="@color/ktk" n0:layout_width="match_parent" n0:layout_height="0.5dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/bottom_bar" />
+        <ScrollView n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="2.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/divide_line">
+            <LinearLayout n0:orientation="vertical" n0:tag="binding_3" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <include n0:id="@id/item_panel" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" layout="@layout/mno" />
+                <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/sliderContainer" n0:tag="binding_4" n0:background="@color/ksq" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n4:layout_constraintBottom_toTopOf="@id/wholePanel">
+                    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/featherSliderContainer" n0:tag="binding_5" n0:layout_width="match_parent" n0:layout_height="40.0dp" n4:layout_constraintTop_toTopOf="parent">
+                        <TextView n0:textSize="12.0dp" n0:textColor="@color/ks4" n0:id="@id/tvPaintFeather" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="20.5dp" n0:text="@string/txc" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toLeftOf="@id/featherSliderView" n4:layout_constraintTop_toTopOf="parent" />
+                        <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/featherSliderView" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="@dimen/hh" n0:layout_marginEnd="@dimen/hg" n4:APKTOOL_RENAMED_0x7f04043d="0" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:kko="@color/ksr" n4:APKTOOL_RENAMED_0x7f0406dd="100" n4:kn4="1" n4:kte="@string/tw_" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/alphaSliderContainer" n0:tag="binding_6" n0:layout_width="match_parent" n0:layout_height="40.0dp" n4:layout_constraintTop_toBottomOf="@id/featherSliderContainer">
+                        <TextView n0:textSize="12.0dp" n0:textColor="@color/ks4" n0:id="@id/tvPaintAlpha" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="20.5dp" n0:text="@string/txy" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toLeftOf="@id/alphaSliderView" n4:layout_constraintTop_toTopOf="parent" />
+                        <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/alphaSliderView" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="@dimen/hh" n0:layout_marginEnd="@dimen/hg" n4:APKTOOL_RENAMED_0x7f04043d="0" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:kko="@color/ks4" n4:APKTOOL_RENAMED_0x7f0406dd="100" n4:kn4="1" n4:kte="@string/tw_" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/sizeSliderContainer" n0:layout_width="match_parent" n0:layout_height="40.0dp" n4:layout_constraintTop_toBottomOf="@id/alphaSliderContainer">
+                        <TextView n0:textSize="12.0dp" n0:textColor="@color/ks4" n0:id="@id/tvPaintSize" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="15.0dp" n0:text="@string/txd" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toLeftOf="@id/sliderView" n4:layout_constraintTop_toTopOf="parent" />
+                        <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/sliderView" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="@dimen/hh" n0:layout_marginEnd="@dimen/hg" n4:APKTOOL_RENAMED_0x7f04043d="0" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:kko="@color/ks4" n4:APKTOOL_RENAMED_0x7f0406dd="100" n4:kte="@string/tw_" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <View n0:layout_width="match_parent" n0:layout_height="44.0dp" />
+            </LinearLayout>
+        </ScrollView>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="44.0dp" n4:layout_constraintBottom_toBottomOf="parent">
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/reset_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:src="@drawable/ro8" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.xt.retouch.baseui.view.InterceptConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:tag="binding_7" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toTopOf="@id/wholePanel"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <include n0:id="@id/preview_layout" layout="@layout/mnp" />
+        <ImageButton n0:id="@id/undo" n0:tag="binding_8" n0:background="@null" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:layout_marginBottom="5.0dp" n0:src="@drawable/r44" n0:minWidth="0.0dp" n0:minHeight="0.0dp" n0:layout_marginStart="5.0dp" n5:layout_constraintStart_toStartOf="parent" />
+        <ImageButton n0:id="@id/redo" n0:tag="binding_9" n0:background="@null" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:layout_marginBottom="5.0dp" n0:src="@drawable/ri4" n0:minWidth="0.0dp" n0:minHeight="0.0dp" n5:layout_constraintStart_toEndOf="@id/undo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.xt.retouch.baseui.view.SliderBubble n0:id="@id/sliderValueBubble" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="44.0dp" n6:layout_constraintBottom_toTopOf="@id/wholePanel" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.SliderBubble n0:id="@id/bubble" n0:layout_width="match_parent" n0:layout_height="wrap_content" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.edit.base.view.DisplayPenView n0:id="@id/displayPenView" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f07047b" />
+    <com.xt.edit.design.cutout.CutoutGuideLayout n0:id="@id/guide_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

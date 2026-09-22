@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/image_edit_ai_remove_root" n0:background="@color/f" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="top" n0:orientation="horizontal" n0:id="@id/ai_remove_mode_container" n0:paddingLeft="24.0dp" n0:paddingTop="16.0dp" n0:paddingRight="24.0dp" n0:paddingBottom="20.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="24.0dp">
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/ai_remove_mode_smart" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+            <ImageView n0:id="@id/ai_remove_mode_smart_icon" n0:duplicateParentState="true" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/qk0" n0:scaleType="centerInside" />
+            <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604ea" n0:gravity="center" n0:id="@id/ai_remove_mode_smart_text" n0:duplicateParentState="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/k-7" n0:maxLines="2" n0:includeFontPadding="false" n0:textAlignment="center" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/ai_remove_mode_brush" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+            <ImageView n0:id="@id/ai_remove_mode_brush_icon" n0:duplicateParentState="true" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/qkj" n0:scaleType="centerInside" />
+            <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604ea" n0:gravity="center" n0:id="@id/ai_remove_mode_brush_text" n0:duplicateParentState="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/k-4" n0:maxLines="2" n0:includeFontPadding="false" n0:textAlignment="center" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/ai_remove_mode_box" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+            <ImageView n0:id="@id/ai_remove_mode_box_icon" n0:duplicateParentState="true" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/qki" n0:scaleType="centerInside" />
+            <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604ea" n0:gravity="center" n0:id="@id/ai_remove_mode_box_text" n0:duplicateParentState="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/k-3" n0:maxLines="2" n0:includeFontPadding="false" n0:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/entity_segmentation_tag_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/entity_segmentation_tag_list" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/ai_remove_brush_size_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp">
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/ml" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/k-5" n0:layout_weight="1.0" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:id="@id/ai_remove_brush_size_value" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.vega.ui.widget.TextRulerViewV2 n0:id="@id/ai_remove_brush_size_ruler" n0:paddingTop="10.0dp" n0:layout_width="match_parent" n0:layout_height="30.0dp" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginHorizontal="16.0dp">
+        <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ai_remove_generate" n0:background="@drawable/kt5" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:baselineAligned="false" n0:paddingVertical="12.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/mjl" n0:layout_marginEnd="4.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/b" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o02" n1:k1i="bold" />
+        </LinearLayout>
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/ai_remove_business_mark" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintEnd_toEndOf="@id/ai_remove_generate" n2:layout_constraintTop_toTopOf="@id/ai_remove_generate"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include n0:id="@id/panel_detail_container" n0:layout_width="match_parent" n0:layout_height="66.0dp" layout="@layout/k-m" />
+</LinearLayout>

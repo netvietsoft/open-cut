@@ -1,0 +1,51 @@
+{
+  "decide_dispatch_domains": [
+    "https://feed-api.capcutapi.com/lv/v1/edit/get_config",
+    "https://feed-api.capcutapi.com/lv/v1/replicate/get_collections",
+    "https://mon.byteoversea.com/monitor_browser/collect/batch"
+  ],
+  "ttp_domain_symbols": [
+    "us.capcut.com",
+    "capcutapi.us",
+    "capcutcdn-us.com",
+    "capcutw.us",
+    "pipopayment.us",
+    "tiktokv.us",
+    "tiktokw.us",
+    "tiktokcdn-us.com"
+  ],
+  "intercept_enable": {
+    "static": {
+      "out_build_enable": false,
+      "non_out_build_enable": false
+    },
+    "dynamic": {
+      "out_build_enable": false,
+      "non_out_build_enable": false
+    }
+  },
+  "allow_domain": {
+    "out_build": [
+    ],
+    "non_out_build": [
+      "https://log.byteoversea.net/service/2/app_log_test/",
+      "https://log.byteoversea.com/service/2/app_log/",
+      "https://tt-passport16-normal-sg.capcutapi.com/passport/app/region_alert/",
+      "https://tt-passport16-normal-sg.capcutapi.com/passport/mobile/send_code/v1/",
+      "https://tt-passport16-normal-sg.capcutapi.com/passport/app/region/",
+      "https://tt-passport16-normal-sg.capcutapi.com/passport/mobile/sms_login_only/",
+      "https://tt-passport16-normal-sg.capcutapi.com/passport/user/login/",
+      "https://tt-passport16-normal-sg.capcutapi.com/passport/app/auth_broadcast/",
+      "https://feed-api.capcutapi.com/lv/v1/rick_control/check_risk",
+      "https://mediation-sg.pangle.io/api/ad/union/mediation/config/",
+      "https://mediation-sg.pangle.io/api/ad/union/mediation/exchange/",
+      "https://mediation-sg.pangle.io/api/ad/union/mediation/reward_video/reward/",
+      "https://log-mva.isnssdk.com/service/2/app_log/",
+      "https://log.sgsnssdk.com/service/2/app_log/",
+      "https://api16-log-sg.pangle.io/service/2/app_log/",
+      "https://api16-access-wf-sg.pangle.io/ssdk/sd/token",
+      "https://api16-access-wf-sg.pangle.io/ssdk/v2/r",
+      "https://api16-access-wf-sg.pangle.io/api/ad/union/sdk/stats/batch/"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="#181818" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.Group n0:id="@id/videoPlayer" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:constraint_referenced_ids="ivVideoController,totalTime,sliderBar,currentTime"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/videoSurface" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:constraint_referenced_ids="svPlayer"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextureView n0:id="@id/svPlayer" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="0.0dp" n0:layout_marginBottom="8.0dp" n3:layout_constraintBottom_toTopOf="@id/ivVideoController" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivVideoController" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/mmo" n0:layoutDirection="ltr" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toTopOf="@id/guideVideo" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/sliderBar" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp" n0:layoutDirection="ltr" n0:layout_marginHorizontal="8.0dp" n5:layout_constraintBottom_toBottomOf="@id/ivVideoController" n5:layout_constraintEnd_toStartOf="@id/totalTime" n5:layout_constraintStart_toEndOf="@id/currentTime" n5:layout_constraintTop_toTopOf="@id/ivVideoController" n5:kko="@color/APKTOOL_RENAMED_0x7f0605c8" n5:kkt="#33ffffff"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@android:color/white" n0:id="@id/totalTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n0:includeFontPadding="false" n0:layoutDirection="ltr" n0:layout_marginEnd="15.0dp" n6:layout_constraintBottom_toBottomOf="@id/ivVideoController" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="@id/ivVideoController"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@android:color/white" n0:id="@id/currentTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n0:includeFontPadding="false" n0:layoutDirection="ltr" n0:layout_marginStart="10.0dp" n7:layout_constraintBottom_toBottomOf="@id/ivVideoController" n7:layout_constraintStart_toEndOf="@id/ivVideoController" n7:layout_constraintTop_toTopOf="@id/ivVideoController"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/guideVideo" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n8:layout_constraintGuide_end="270.0dp" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_select_editable_material" n0:background="#0a0a0a" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintTop_toBottomOf="@id/guideVideo"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_set_intelligent_effect" n0:background="#0a0a0a" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n10:layout_constraintBottom_toBottomOf="parent" n10:layout_constraintTop_toBottomOf="@id/guideVideo"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/ll_select_replaceable_material" n0:background="#0a0a0a" n0:layout_width="match_parent" n0:layout_height="0.0dp" n11:layout_constraintBottom_toBottomOf="parent" n11:layout_constraintTop_toBottomOf="@id/guideVideo"
+      xmlns:n11="http://schemas.android.com/apk/res-auto">
+        <HorizontalScrollView n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="48.0dp" n11:layout_constraintTop_toTopOf="@id/guideVideo">
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/ll_replace_material_tab" n0:layout_width="wrap_content" n0:layout_height="48.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@drawable/qkw" n0:gravity="center" n0:id="@id/tv_tab_video" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:text="@string/pwn" n0:paddingHorizontal="16.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@drawable/qkw" n0:gravity="center" n0:id="@id/tv_tab_text" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/APKTOOL_RENAMED_0x7f1231f6" n0:paddingHorizontal="16.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@drawable/qkw" n0:gravity="center" n0:id="@id/tv_tab_sub_video" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/qve" n0:paddingHorizontal="16.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@drawable/qkw" n0:gravity="center" n0:id="@id/tv_tab_sticker" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/q79" n0:paddingHorizontal="16.0dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View n0:background="@color/APKTOOL_RENAMED_0x7f06063c" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/viewpager_replaceable_material" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/cloud_home_banner_layout" n0:background="#e5edff" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:id="@id/warning_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+        <ImageView n0:id="@id/warning_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08052c" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#cc000000" n0:id="@id/warning_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#2668ff" n0:id="@id/warning_ok" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="16.0dp" n0:layout_below="@id/warning_layout" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#8015293c" n0:id="@id/warning_cancel" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="16.0dp" n0:layout_below="@id/warning_layout" n0:layout_marginEnd="16.0dp" n0:layout_toStartOf="@id/warning_ok" />
+</RelativeLayout>

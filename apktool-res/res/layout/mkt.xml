@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageView n0:layout_gravity="center" n0:id="@id/copyrightView" n0:background="@drawable/las" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/qzj" n0:scaleType="center" n0:alpha="0.0"
+      xmlns:n0="http://schemas.android.com/apk/res/android" />
+    <ImageView n1:layout_gravity="center" n1:id="@id/nonCopyrightView" n1:background="@drawable/las" n1:visibility="gone" n1:layout_width="match_parent" n1:layout_height="match_parent" n1:src="@drawable/qao" n1:scaleType="center"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <com.airbnb.lottie.LottieAnimationView n2:id="@id/loadingView" n2:background="@drawable/las" n2:visibility="gone" n2:layout_width="match_parent" n2:layout_height="match_parent" n3:lottie_autoPlay="true" n3:lottie_fileName="image_viewer_loading.json" n3:lottie_loop="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n4:id="@id/lockView" n4:visibility="gone" n4:layout_width="match_parent" n4:layout_height="match_parent" n4:src="@drawable/o6k"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</merge>

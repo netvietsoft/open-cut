@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/mask" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@drawable/lm-" n0:paddingLeft="25.0dp" n0:paddingRight="25.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="270.0dp" n0:paddingHorizontal="25.0dp">
+        <com.vega.ui.widget.SettingSeekBar n0:id="@id/settingSpeedBar" n0:layout_width="match_parent" n0:layout_height="54.0dp" n0:layout_marginTop="14.0dp" n0:layout_marginBottom="14.0dp" n1:APKTOOL_RENAMED_0x7f0404ac="@string/APKTOOL_RENAMED_0x7f12128e" n1:layout_constraintBottom_toTopOf="@id/settingSizeBar" n1:layout_constraintTop_toTopOf="parent" n1:kz1="@color/_z" n1:kz2="12.0dp" n1:kz8="@string/q3a" n1:kei="@string/APKTOOL_RENAMED_0x7f122fcc" n1:ke0="@color/knt" n1:ke1="12.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.widget.SettingSeekBar n0:id="@id/settingSizeBar" n0:layout_width="match_parent" n0:layout_height="54.0dp" n0:layout_marginBottom="14.0dp" n2:APKTOOL_RENAMED_0x7f0404ac="@string/APKTOOL_RENAMED_0x7f1204ef" n2:layout_constraintBottom_toTopOf="@id/settingColorTv" n2:layout_constraintTop_toBottomOf="@id/settingSpeedBar" n2:kz1="@color/_z" n2:kz2="12.0dp" n2:kz8="@string/q3b" n2:kei="@string/mkb" n2:ke0="@color/knt" n2:ke1="12.0dp"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="center_vertical" n0:id="@id/settingColorTv" n0:layout_width="50.0dp" n0:layout_height="54.0dp" n0:text="@string/mkv" n0:maxLines="2" n0:includeFontPadding="false" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/settingSizeBar"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.ColorSelectView n0:id="@id/settingColorSelectView" n0:layout_width="0.0dp" n0:layout_marginStart="36.0dp" n4:layout_constraintBottom_toBottomOf="@id/settingColorTv" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/settingColorTv" n4:layout_constraintTop_toTopOf="@id/settingColorTv" style="@style/uf"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

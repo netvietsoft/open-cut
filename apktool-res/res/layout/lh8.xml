@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="#ff151517" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.image.edit.canvasedit.partialadjust.panel.ImageEditPartialAdjustListView n0:id="@id/adjust_list_view" n0:layout_width="match_parent" n0:layout_height="95.0dp" n0:layout_marginTop="20.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.TextRulerViewV2 n0:id="@id/adjust_ruler_view" n0:tag="content" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="42.0dp" n0:layout_marginTop="20.0dp" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/adjust_list_view"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/panel_detail_container" n0:layout_width="match_parent" n0:layout_height="66.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" layout="@layout/k-m"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

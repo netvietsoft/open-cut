@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_centerInParent="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/network_error_icon" n0:layout_width="61.0dp" n0:layout_height="60.0dp" n0:src="@drawable/ng0" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#6618334e" n0:id="@id/network_error_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/nsl" n0:paddingStart="32.0dp" n0:paddingEnd="32.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#090c14" n0:id="@id/retry_button" n0:background="@drawable/kjr" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="30.0dp" n0:text="@string/qfa" n0:drawableStart="@drawable/o6z" n0:paddingStart="24.0dp" n0:paddingEnd="24.0dp" />
+</LinearLayout>

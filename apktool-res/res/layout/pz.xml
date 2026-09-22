@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.recorder.widget.SliderConstraintLayout n0:id="@id/cl_root" n0:background="@drawable/lm2" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/left_line" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_begin="16.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/right_line" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintGuide_end="16.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_close" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/ow0" n0:layout_marginStart="2.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="22.0sp" n0:textColor="@color/ml" n0:id="@id/tv_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/kdl" n4:layout_constraintEnd_toStartOf="@id/right_line" n4:layout_constraintStart_toEndOf="@id/left_line" n4:layout_constraintTop_toBottomOf="@id/iv_close" n4:k1i="bold" n4:k1j="large_title"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.cardview.widget.CardView n0:id="@id/cv_new_prompt" n0:layout_width="0.0dp" n0:layout_height="116.0dp" n0:layout_marginTop="20.0dp" n5:cardBackgroundColor="#ff2f3036" n5:cardCornerRadius="16.0dp" n5:cardElevation="12.0dp" n5:layout_constraintEnd_toStartOf="@id/right_line" n5:layout_constraintStart_toEndOf="@id/left_line" n5:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <ImageView n0:id="@id/iv_new_prompt" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/oqp" n0:layout_marginEnd="8.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="20.0sp" n0:textColor="@color/ml" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tv_new_prompt" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kdo" n0:maxLines="1" n0:includeFontPadding="false" n5:k1i="bold" n5:k1j="title_2" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/ml" n0:id="@id/tv_prompt_draft_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/kc2" n6:layout_constraintStart_toEndOf="@id/left_line" n6:layout_constraintTop_toBottomOf="@id/cv_new_prompt" n6:k1i="medium" n6:k1j="sub_title"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_prompt_draft" n0:paddingBottom="12.0dp" n0:visibility="gone" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="16.0dp" n0:overScrollMode="never" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/tv_prompt_draft_title"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/ll_no_line" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="80.0dp" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/tv_prompt_draft_title"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_no_line" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n0:src="@drawable/oqh" />
+        <TextView n0:textSize="14.0sp" n0:textColor="#b3f6f7ee" n0:id="@id/tv_no_line_tip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/kc9" n0:includeFontPadding="false" />
+    </LinearLayout>
+</com.vega.recorder.widget.SliderConstraintLayout>

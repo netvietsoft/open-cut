@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="37.0dp" n0:layout_height="37.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center" n0:id="@id/ivAiFaceCoverFaceThumb" n0:background="@drawable/APKTOOL_RENAMED_0x7f08062d" n0:layout_width="34.0dp" n0:layout_height="34.0dp" n0:scaleType="centerCrop" n0:clipToOutline="true" />
+    <View n0:layout_gravity="center" n0:id="@id/vAiFaceCoverFaceSelectedBorder" n0:background="@drawable/APKTOOL_RENAMED_0x7f08062b" n0:visibility="gone" n0:layout_width="37.0dp" n0:layout_height="37.0dp" />
+    <ImageView n0:layout_gravity="end|bottom" n0:id="@id/ivAiFaceCoverFaceChecked" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/mfg" />
+</FrameLayout>

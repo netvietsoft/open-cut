@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="100.0dp" n0:layout_height="178.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/feed_item_cover_mask" n0:background="@color/c-" n0:visibility="gone" n0:layout_width="100.0dp" n0:layout_height="178.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/feed_item_iv_cover" n0:layout_width="100.0dp" n0:layout_height="178.0dp" n0:scaleType="centerCrop" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_feed_item_video" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="@id/feed_item_iv_cover" n3:layout_constraintEnd_toEndOf="@id/feed_item_iv_cover" n3:layout_constraintStart_toStartOf="@id/feed_item_iv_cover" n3:layout_constraintTop_toTopOf="@id/feed_item_iv_cover"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

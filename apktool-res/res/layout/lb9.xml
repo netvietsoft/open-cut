@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/recommend_music_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/nl8" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tvSearch" n0:background="@drawable/qb1" n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/nl7" n0:drawablePadding="2.0dp" n0:drawableStart="@drawable/opk" n0:paddingStart="8.0dp" n0:paddingEnd="10.0dp" n0:layout_marginEnd="13.0dp" n0:layout_alignParentEnd="true" n0:paddingVertical="4.0dp" n2:layout_constraintHorizontal_chainStyle="packed"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="48.0dp" n3:kr3="none"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/musicRv" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        </com.vega.ui.state.pressed.PressedStateStateViewGroupLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

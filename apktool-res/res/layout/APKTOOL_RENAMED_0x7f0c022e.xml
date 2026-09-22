@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_gravity="bottom" n0:id="@id/dialogRoot" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/contentRoot" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.ui.widget.RadiusLayout n0:id="@id/imageContainer" n0:layout_width="match_parent" n0:layout_height="210.0dp" n1:i3="16.0dp" n1:i5="16.0dp" n1:layout_constraintBottom_toTopOf="@id/textRoot" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:background="@drawable/pwl" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        </com.vega.ui.widget.RadiusLayout>
+        <ImageView n0:id="@id/dialog_close_button" n0:layout_width="@dimen/rb" n0:layout_height="@dimen/rb" n0:src="@drawable/nky" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/textRoot" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/imageContainer"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <TextView n0:textSize="22.0sp" n0:textStyle="bold" n0:textColor="#090c14" n0:id="@id/dialog_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/ru" n0:lineSpacingExtra="3.0sp" n0:layout_marginStart="@dimen/rw" n0:layout_marginEnd="@dimen/rw" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+            <ScrollView n0:id="@id/scroll_text" n0:layout_width="match_parent" n0:layout_height="168.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="12.0dp" n3:layout_constraintBottom_toTopOf="@id/dialog_confirm" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/dialog_title">
+                <TextView n0:textSize="16.0sp" n0:textColor="#b3141d2d" n0:ellipsize="end" n0:id="@id/dialog_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:lineSpacingExtra="6.0sp" n0:layout_marginStart="@dimen/rw" n0:layout_marginEnd="@dimen/rw" n3:layout_constraintBottom_toTopOf="@id/dialog_confirm" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintHeight_default="wrap" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/dialog_title" />
+            </ScrollView>
+            <View n0:background="@drawable/ms-" n0:layout_width="match_parent" n0:layout_height="10.0dp" n3:layout_constraintBottom_toBottomOf="@id/scroll_text" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" />
+            <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/dialog_confirm" n0:background="@drawable/kpg" n0:layout_width="match_parent" n0:layout_height="@dimen/rb" n0:layout_marginBottom="@dimen/re" n0:lineSpacingExtra="3.0sp" n0:layout_marginStart="@dimen/rr" n0:layout_marginEnd="@dimen/rr" n3:layout_constraintBottom_toTopOf="@id/dialog_bottom_space" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" />
+            <Space n0:id="@id/dialog_bottom_space" n0:layout_width="match_parent" n0:layout_height="34.0dp" n3:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

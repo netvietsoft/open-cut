@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/bottom_container" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="13.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/focus_ratio_tv" n0:background="@drawable/k0j" n0:focusable="true" n0:clickable="true" n0:layout_width="35.0dp" n0:layout_height="35.0dp" n0:layout_marginBottom="55.0dp" n1:layout_constraintBottom_toTopOf="@id/btn_shutter" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/ly_time_tip" n0:background="@drawable/lpv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:layout_marginBottom="19.0dp" n2:layout_constraintBottom_toTopOf="@id/btn_shutter" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/im_recording_tips" n0:background="@drawable/APKTOOL_RENAMED_0x7f082b6c" n0:layout_width="7.0dp" n0:layout_height="7.0dp" n0:layout_marginStart="10.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_gravity="center_vertical" n0:id="@id/tv_recording_tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="10.0dp" />
+    </LinearLayout>
+    <com.vega.recorder.widget.CameraTypeView n0:id="@id/camera_type_view" n0:layout_width="match_parent" n0:layout_height="40.0dp" n3:layout_constraintBottom_toTopOf="@id/record_btn_location" n3:layout_constraintTop_toBottomOf="@id/focus_ratio_tv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/record_props" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="@id/record_btn_location" n4:layout_constraintEnd_toStartOf="@id/record_beauty" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/record_btn_location"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.recorder.widget.AlphaRecordButton n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/p-5" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qyx" n0:shadowColor="#80000000" n0:shadowRadius="6.0" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/record_beauty" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="@id/record_btn_location" n5:layout_constraintEnd_toStartOf="@id/record_btn_location" n5:layout_constraintStart_toEndOf="@id/record_props" n5:layout_constraintTop_toTopOf="@id/record_btn_location"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.recorder.widget.AlphaRecordButton n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/p-r" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1204de" n0:shadowColor="#80000000" n0:shadowRadius="6.0" />
+    </LinearLayout>
+    <com.vega.commonedit.record.ShutterButton n0:id="@id/btn_shutter" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:layout_constraintBottom_toBottomOf="@id/record_btn_location" n6:layout_constraintEnd_toEndOf="@id/record_btn_location" n6:layout_constraintStart_toStartOf="@id/record_btn_location" n6:layout_constraintTop_toTopOf="@id/record_btn_location"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/record_btn_location" n0:layout_width="70.0dp" n0:layout_height="70.0dp" n0:layout_marginBottom="80.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.recorder.widget.AlphaRecordButton n0:id="@id/btn_video_delete" n0:background="@drawable/ljy" n0:visibility="gone" n0:layout_width="@dimen/mq" n0:layout_height="@dimen/mq" n0:layout_marginBottom="8.0dp" n0:layout_marginEnd="10.0dp" n8:layout_constraintBottom_toBottomOf="@id/record_btn_location" n8:layout_constraintRight_toLeftOf="@id/btn_video_finish" n8:layout_constraintTop_toTopOf="@id/record_btn_location"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.recorder.widget.AlphaRecordButton n0:id="@id/btn_video_finish" n0:background="@drawable/ljc" n0:visibility="gone" n0:layout_width="@dimen/mq" n0:layout_height="@dimen/mq" n0:layout_marginBottom="8.0dp" n0:layout_marginEnd="20.0dp" n9:layout_constraintBottom_toBottomOf="@id/record_btn_location" n9:layout_constraintRight_toRightOf="parent" n9:layout_constraintTop_toTopOf="@id/record_btn_location"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

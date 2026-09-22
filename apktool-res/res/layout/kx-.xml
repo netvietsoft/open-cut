@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="4.0dp" n0:layout_marginRight="4.0dp" n0:minWidth="56.0dp" n0:layout_marginHorizontal="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/item_img" n0:background="@drawable/APKTOOL_RENAMED_0x7f08058a" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="4.0dp" n0:scaleType="centerInside" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="#b2f6f7fe" n0:gravity="center_horizontal" n0:id="@id/item" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/item_img" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_right_arrow" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="2.0dp" n0:src="@drawable/n1s" n3:layout_constraintBottom_toBottomOf="@id/item" n3:layout_constraintLeft_toRightOf="@id/item"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/label" n0:background="@drawable/ma3" n0:visibility="gone" n0:layout_width="6.0dp" n0:layout_height="6.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TipsViewRoot n0:id="@id/try_adjust_view" n0:layout_width="16.0dp" n0:layout_height="10.0dp" n0:layout_marginBottom="9.0dp" n5:layout_constraintBottom_toBottomOf="@id/item" n5:layout_constraintEnd_toEndOf="parent" n5:APKTOOL_RENAMED_0x7f040986="true" n5:kel="10.0dp" n5:kem="@layout/mka" n5:kev="16.0dp"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:layout_constraintEnd_toEndOf="@id/item_img" n6:layout_constraintTop_toTopOf="@id/item_img" n6:kml="small" n6:kmm="mix"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_pc_icon" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="12.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/otn" n0:scaleType="fitEnd" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/loading" n0:background="#e5222222" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:elevation="10.0dp" n8:layout_constraintBottom_toBottomOf="@id/item_img" n8:layout_constraintEnd_toEndOf="@id/item_img" n8:layout_constraintStart_toStartOf="@id/item_img" n8:layout_constraintTop_toTopOf="@id/item_img"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:layout_width="20.0dp" n0:layout_height="11.0dp" />
+    </FrameLayout>
+    <ImageView n0:id="@id/iv_retry" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odp" n9:layout_constraintBottom_toBottomOf="@id/item_img" n9:layout_constraintEnd_toEndOf="@id/item_img" n9:layout_constraintStart_toStartOf="@id/item_img" n9:layout_constraintTop_toTopOf="@id/item_img"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

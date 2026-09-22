@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundFrameLayout n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingVertical="12.0dp" n1:i1="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_clip_img" n0:layout_width="64.0dp" n0:layout_height="80.0dp" n0:scaleType="centerCrop" />
+    <View n0:background="@drawable/m_e" n0:layout_width="64.0dp" n0:layout_height="80.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_gravity="center|bottom" n0:id="@id/tv_clip_duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="6.0dp" n1:k1i="bold" />
+    <CheckBox n0:enabled="false" n0:layout_gravity="end|top" n0:id="@id/cb_clip_select" n0:background="@drawable/kv-" n0:clickable="false" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginTop="4.0dp" n0:button="@null" n0:layout_marginEnd="4.0dp" />
+</com.vega.ui.widget.RoundFrameLayout>

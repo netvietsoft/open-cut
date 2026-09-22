@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:layout_width="150.0dp" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_presenter_preview" n0:layout_width="150.0dp" n0:layout_height="300.0dp" n1:actualImageScaleType="centerCrop" />
+        <TextView n0:textSize="18.0dp" n0:textColor="#fafbff" n0:layout_gravity="center_horizontal" n0:id="@id/tv_presenter_preview_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" />
+        <Button n0:layout_gravity="center_horizontal" n0:id="@id/btn_presenter_preview_close" n0:background="@drawable/ouj" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:layout_marginTop="24.0dp" n1:layout_constraintTop_toBottomOf="@id/cl_presenter_preview_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

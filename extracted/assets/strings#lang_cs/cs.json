@@ -1,0 +1,3738 @@
+{
+    "name": "cs",
+    "currency": {
+        "Standard": "{0} ¤",
+        "StandardNoCurrency": "# ##0,00",
+        "compact": {
+            "short": "{0} ¤",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "{0} až {1} ¤"
+			},
+			"approximately": {
+				"short": "~{0} ¤"
+			},
+			"atLeast": {
+				"short": "≥{0} ¤"
+			},
+			"atMost": {
+				"short": "≤{0} ¤"
+			}
+		},
+        "currencyList": {
+            "ADP": {
+                "symbol": {
+                    "value": "ADP"
+                },
+                "displayName": {
+                    "other": "andorrských peset",
+                    "one": "andorrská peseta",
+                    "few": "andorrské pesety",
+                    "many": "andorrské pesety"
+                },
+                "digits": 0
+            },
+            "AED": {
+                "symbol": {
+                    "value": "AED"
+                },
+                "displayName": {
+                    "other": "SAE dirhamů",
+                    "one": "SAE dirham",
+                    "few": "SAE dirhamy",
+                    "many": "SAE dirhamu"
+                }
+            },
+            "AFA": {
+                "symbol": {
+                    "value": "AFA"
+                },
+                "displayName": {
+                    "other": "afghánských afghánů (1927–2002)",
+                    "one": "afghánský afghán (1927–2002)",
+                    "few": "afghánské afghány (1927–2002)",
+                    "many": "afghánského afghánu (1927–2002)"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN"
+                },
+                "displayName": {
+                    "other": "afghánských afghánů",
+                    "one": "afghánský afghán",
+                    "few": "afghánské afghány",
+                    "many": "afghánského afghánu"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALK": {
+                "symbol": {
+                    "value": "ALK"
+                },
+                "displayName": {
+                    "other": "albánských leků (1946–1965)",
+                    "one": "albánský lek (1946–1965)",
+                    "few": "albánské leky (1946–1965)",
+                    "many": "albánského leku (1946–1965)"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL"
+                },
+                "displayName": {
+                    "other": "albánských leků",
+                    "one": "albánský lek",
+                    "few": "albánské leky",
+                    "many": "albánského leku"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD"
+                },
+                "displayName": {
+                    "other": "arménských dramů",
+                    "one": "arménský dram",
+                    "few": "arménské dramy",
+                    "many": "arménského dramu"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG"
+                },
+                "displayName": {
+                    "other": "nizozemskoantilských guldenů",
+                    "one": "nizozemskoantilský gulden",
+                    "few": "nizozemskoantilské guldeny",
+                    "many": "nizozemskoantilského guldenu"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA"
+                },
+                "displayName": {
+                    "other": "angolských kwanz",
+                    "one": "angolská kwanza",
+                    "few": "angolské kwanzy",
+                    "many": "angolské kwanzy"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz"
+                }
+            },
+            "AOK": {
+                "symbol": {
+                    "value": "AOK"
+                },
+                "displayName": {
+                    "other": "angolských kwanz (1977–1991)",
+                    "one": "angolská kwanza (1977–1991)",
+                    "few": "angolské kwanzy (1977–1991)",
+                    "many": "angolské kwanzy (1977–1991)"
+                }
+            },
+            "AON": {
+                "symbol": {
+                    "value": "AON"
+                },
+                "displayName": {
+                    "other": "angolských kwanz (1990–2000)",
+                    "one": "angolská kwanza (1990–2000)",
+                    "few": "angolské kwanzy (1990–2000)",
+                    "many": "angolské kwanzy (1990–2000)"
+                }
+            },
+            "AOR": {
+                "symbol": {
+                    "value": "AOR"
+                },
+                "displayName": {
+                    "other": "angolských kwanz (1995–1999)",
+                    "one": "angolská nový kwanza (1995–1999)",
+                    "few": "angolská kwanza (1995–1999)",
+                    "many": "angolské kwanzy (1995–1999)"
+                }
+            },
+            "ARA": {
+                "symbol": {
+                    "value": "ARA"
+                },
+                "displayName": {
+                    "other": "argentinských australů",
+                    "one": "argentinský austral",
+                    "few": "argentinské australy",
+                    "many": "argentinského australu"
+                }
+            },
+            "ARL": {
+                "symbol": {
+                    "value": "ARL"
+                },
+                "displayName": {
+                    "other": "argentinských pes ley (1970–1983)",
+                    "one": "argentinské peso ley (1970–1983)",
+                    "few": "argentinská pesa ley (1970–1983)",
+                    "many": "argentinského pesa ley (1970–1983)"
+                }
+            },
+            "ARM": {
+                "symbol": {
+                    "value": "ARM"
+                },
+                "displayName": {
+                    "other": "argentinských pes (1881–1970)",
+                    "one": "argentinské peso (1881–1970)",
+                    "few": "argentinská pesa (1881–1970)",
+                    "many": "argentinského pesa (1881–1970)"
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "value": "ARP"
+                },
+                "displayName": {
+                    "other": "argentinských pes (1983–1985)",
+                    "one": "argentinské peso (1983–1985)",
+                    "few": "argentinská pesa (1983–1985)",
+                    "many": "argentinského pesa (1983–1985)"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS"
+                },
+                "displayName": {
+                    "other": "argentinských pes",
+                    "one": "argentinské peso",
+                    "few": "argentinská pesa",
+                    "many": "argentinského pesa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "value": "ATS"
+                },
+                "displayName": {
+                    "other": "rakouských šilinků",
+                    "one": "rakouský šilink",
+                    "few": "rakouské šilinky",
+                    "many": "rakouského šilinku"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "AU$"
+                },
+                "displayName": {
+                    "other": "australských dolarů",
+                    "one": "australský dolar",
+                    "few": "australské dolary",
+                    "many": "australského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "AU$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG"
+                },
+                "displayName": {
+                    "other": "arubských zlatých",
+                    "one": "arubský zlatý",
+                    "few": "arubské zlaté",
+                    "many": "arubského zlatého"
+                }
+            },
+            "AZM": {
+                "symbol": {
+                    "value": "AZM"
+                },
+                "displayName": {
+                    "other": "ázerbájdžánských manatů (1993–2006)",
+                    "one": "ázerbájdžánský manat (1993–2006)",
+                    "few": "ázerbájdžánské manaty (1993–2006)",
+                    "many": "ázerbájdžánského manatu (1993–2006)"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN"
+                },
+                "displayName": {
+                    "other": "ázerbájdžánských manatů",
+                    "one": "ázerbájdžánský manat",
+                    "few": "ázerbájdžánské manaty",
+                    "many": "ázerbájdžánského manatu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAD": {
+                "symbol": {
+                    "value": "BAD"
+                },
+                "displayName": {
+                    "other": "bosenských dinárů (1992–1994)",
+                    "one": "bosenský dinár (1992–1994)",
+                    "few": "bosenské dináry (1992–1994)",
+                    "many": "bosenského dináru (1992–1994)"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM"
+                },
+                "displayName": {
+                    "other": "bosenských konvertibilních marek",
+                    "one": "bosenská konvertibilní marka",
+                    "few": "bosenské konvertibilní marky",
+                    "many": "bosenské konvertibilní marky"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM"
+                }
+            },
+            "BAN": {
+                "symbol": {
+                    "value": "BAN"
+                },
+                "displayName": {
+                    "other": "bosenských nových dinárů (1994–1997)",
+                    "one": "bosenský nový dinár (1994–1997)",
+                    "few": "bosenské nové dináry (1994–1997)",
+                    "many": "bosenského nového dináru (1994–1997)"
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD"
+                },
+                "displayName": {
+                    "other": "barbadoských dolarů",
+                    "one": "barbadoský dolar",
+                    "few": "barbadoské dolary",
+                    "many": "barbadoského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT"
+                },
+                "displayName": {
+                    "other": "bangladéšských tak",
+                    "one": "bangladéšská taka",
+                    "few": "bangladéšské taky",
+                    "many": "bangladéšské taky"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEC": {
+                "symbol": {
+                    "value": "BEC"
+                },
+                "displayName": {
+                    "other": "belgických konvertibilních franků",
+                    "one": "belgický konvertibilní frank",
+                    "few": "belgické konvertibilní franky",
+                    "many": "belgického konvertibilního franku"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF"
+                },
+                "displayName": {
+                    "other": "belgických franků",
+                    "one": "belgický frank",
+                    "few": "belgické franky",
+                    "many": "belgického franku"
+                }
+            },
+            "BEL": {
+                "symbol": {
+                    "value": "BEL"
+                },
+                "displayName": {
+                    "other": "belgických finančních franků",
+                    "one": "belgický finanční frank",
+                    "few": "belgické finanční franky",
+                    "many": "belgického finančního franku"
+                }
+            },
+            "BGL": {
+                "symbol": {
+                    "value": "BGL"
+                },
+                "displayName": {
+                    "other": "bulharských tvrdých leva",
+                    "one": "bulharský tvrdý leva",
+                    "few": "bulharské tvrdé leva",
+                    "many": "bulharského tvrdého leva"
+                }
+            },
+            "BGM": {
+                "symbol": {
+                    "value": "BGM"
+                },
+                "displayName": {
+                    "other": "bulharských socialistických leva",
+                    "one": "bulharský socialistický leva",
+                    "few": "bulharské socialistické leva",
+                    "many": "bulharského socialistického leva"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN"
+                },
+                "displayName": {
+                    "other": "bulharských leva",
+                    "one": "bulharský leva",
+                    "few": "bulharské leva",
+                    "many": "bulharského leva"
+                }
+            },
+            "BGO": {
+                "symbol": {
+                    "value": "BGO"
+                },
+                "displayName": {
+                    "other": "bulharských leva (1879–1952)",
+                    "one": "bulharský lev (1879–1952)",
+                    "few": "bulharské leva (1879–1952)",
+                    "many": "bulharského leva (1879–1952)"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD"
+                },
+                "displayName": {
+                    "other": "bahrajnských dinárů",
+                    "one": "bahrajnský dinár",
+                    "few": "bahrajnské dináry",
+                    "many": "bahrajnského dináru"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF"
+                },
+                "displayName": {
+                    "other": "burundských franků",
+                    "one": "burundský frank",
+                    "few": "burundské franky",
+                    "many": "burundského franku"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD"
+                },
+                "displayName": {
+                    "other": "bermudských dolarů",
+                    "one": "bermudský dolar",
+                    "few": "bermudské dolary",
+                    "many": "bermudského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND"
+                },
+                "displayName": {
+                    "other": "brunejských dolarů",
+                    "one": "brunejský dolar",
+                    "few": "brunejské dolary",
+                    "many": "brunejského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB"
+                },
+                "displayName": {
+                    "other": "bolivijských bolivianos",
+                    "one": "bolivijský boliviano",
+                    "few": "bolivijské bolivianos",
+                    "many": "bolivijského boliviana"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs"
+                }
+            },
+            "BOL": {
+                "symbol": {
+                    "value": "BOL"
+                },
+                "displayName": {
+                    "other": "bolivijských bolivianos (1863–1963)",
+                    "one": "bolivijský boliviano (1863–1963)",
+                    "few": "bolivijské bolivianos (1863–1963)",
+                    "many": "bolivijského boliviana (1863–1963)"
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "value": "BOP"
+                },
+                "displayName": {
+                    "other": "bolivijských pes",
+                    "one": "bolivijské peso",
+                    "few": "bolivijská pesa",
+                    "many": "bolivijského pesa"
+                }
+            },
+            "BOV": {
+                "symbol": {
+                    "value": "BOV"
+                },
+                "displayName": {
+                    "other": "bolivijských mvdolů",
+                    "one": "bolivijský mvdol",
+                    "few": "bolivijské mvdoly",
+                    "many": "bolivijského mvdolu"
+                }
+            },
+            "BRB": {
+                "symbol": {
+                    "value": "BRB"
+                },
+                "displayName": {
+                    "other": "brazilských nových cruzeir (1967–1986)",
+                    "one": "brazilské nové cruzeiro (1967–1986)",
+                    "few": "brazilská nová cruzeira (1967–1986)",
+                    "many": "brazilského nového cruzeira (1967–1986)"
+                }
+            },
+            "BRC": {
+                "symbol": {
+                    "value": "BRC"
+                },
+                "displayName": {
+                    "other": "brazilských cruzad (1986–1989)",
+                    "one": "brazilské cruzado (1986–1989)",
+                    "few": "brazilská cruzada (1986–1989)",
+                    "many": "brazilského cruzada (1986–1989)"
+                }
+            },
+            "BRE": {
+                "symbol": {
+                    "value": "BRE"
+                },
+                "displayName": {
+                    "other": "brazilských cruzeir (1990–1993)",
+                    "one": "brazilské cruzeiro (1990–1993)",
+                    "few": "brazilská cruzeira (1990–1993)",
+                    "many": "brazilského cruzeira (1990–1993)"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$"
+                },
+                "displayName": {
+                    "other": "brazilských realů",
+                    "one": "brazilský real",
+                    "few": "brazilské realy",
+                    "many": "brazilského realu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BRN": {
+                "symbol": {
+                    "value": "BRN"
+                },
+                "displayName": {
+                    "other": "brazilských nových cruzad (1989–1990)",
+                    "one": "brazilské nové cruzado (1989–1990)",
+                    "few": "brazilská nová cruzada (1989–1990)",
+                    "many": "brazilského nového cruzada (1989–1990)"
+                }
+            },
+            "BRR": {
+                "symbol": {
+                    "value": "BRR"
+                },
+                "displayName": {
+                    "other": "brazilských cruzeir (1993–1994)",
+                    "one": "brazilské cruzeiro (1993–1994)",
+                    "few": "brazilská cruzeira (1993–1994)",
+                    "many": "brazilského cruzeira (1993–1994)"
+                }
+            },
+            "BRZ": {
+                "symbol": {
+                    "value": "BRZ"
+                },
+                "displayName": {
+                    "other": "brazilských cruzeir (1942–1967)",
+                    "one": "brazilské cruzeiro (1942–1967)",
+                    "few": "brazilská cruzeira (1942–1967)",
+                    "many": "brazilského cruzeira (1942–1967)"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD"
+                },
+                "displayName": {
+                    "other": "bahamských dolarů",
+                    "one": "bahamský dolar",
+                    "few": "bahamské dolary",
+                    "many": "bahamského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN"
+                },
+                "displayName": {
+                    "other": "bhútánských ngultrumů",
+                    "one": "bhútánský ngultrum",
+                    "few": "bhútánské ngultrumy",
+                    "many": "bhútánského ngultrumu"
+                }
+            },
+            "BUK": {
+                "symbol": {
+                    "value": "BUK"
+                },
+                "displayName": {
+                    "other": "barmských kyatů",
+                    "one": "barmský kyat",
+                    "few": "barmské kyaty",
+                    "many": "barmského kyatu"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP"
+                },
+                "displayName": {
+                    "other": "botswanských pul",
+                    "one": "botswanská pula",
+                    "few": "botswanské puly",
+                    "many": "botswanské puly"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P"
+                }
+            },
+            "BYB": {
+                "symbol": {
+                    "value": "BYB"
+                },
+                "displayName": {
+                    "other": "běloruských rublů (1994–1999)",
+                    "one": "běloruský rubl (1994–1999)",
+                    "few": "běloruské rubly (1994–1999)",
+                    "many": "běloruského rublu (1994–1999)"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN"
+                },
+                "displayName": {
+                    "other": "běloruských rublů",
+                    "one": "běloruský rubl",
+                    "few": "běloruské rubly",
+                    "many": "běloruského rublu"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р."
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR"
+                },
+                "displayName": {
+                    "other": "běloruských rublů (2000–2016)",
+                    "one": "běloruský rubl (2000–2016)",
+                    "few": "běloruské rubly (2000–2016)",
+                    "many": "běloruského rublu (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD"
+                },
+                "displayName": {
+                    "other": "belizských dolarů",
+                    "one": "belizský dolar",
+                    "few": "belizské dolary",
+                    "many": "belizského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "kanadských dolarů",
+                    "one": "kanadský dolar",
+                    "few": "kanadské dolary",
+                    "many": "kanadského dolaru"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF"
+                },
+                "displayName": {
+                    "other": "konžských franků",
+                    "one": "konžský frank",
+                    "few": "konžské franky",
+                    "many": "konžského franku"
+                }
+            },
+            "CHE": {
+                "symbol": {
+                    "value": "CHE"
+                },
+                "displayName": {
+                    "other": "švýcarských WIR-eur",
+                    "one": "švýcarské WIR-euro",
+                    "few": "švýcarská WIR-eura",
+                    "many": "švýcarského WIR-eura"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF"
+                },
+                "displayName": {
+                    "other": "švýcarských franků",
+                    "one": "švýcarský frank",
+                    "few": "švýcarské franky",
+                    "many": "švýcarského franku"
+                },
+                "digits": 2
+            },
+            "CHW": {
+                "symbol": {
+                    "value": "CHW"
+                },
+                "displayName": {
+                    "other": "švýcarských WIR-franků",
+                    "one": "švýcarský WIR-frank",
+                    "few": "švýcarské WIR-franky",
+                    "many": "švýcarského WIR-franku"
+                }
+            },
+            "CLE": {
+                "symbol": {
+                    "value": "CLE"
+                },
+                "displayName": {
+                    "other": "chilských escud",
+                    "one": "chilské escudo",
+                    "few": "chilská escuda",
+                    "many": "chilského escuda"
+                }
+            },
+            "CLF": {
+                "symbol": {
+                    "value": "CLF"
+                },
+                "displayName": {
+                    "other": "chilských účetních jednotek (UF)",
+                    "one": "chilská účetní jednotka (UF)",
+                    "few": "chilské účetní jednotky (UF)",
+                    "many": "chilské účetní jednotky (UF)"
+                },
+                "digits": 4
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP"
+                },
+                "displayName": {
+                    "other": "chilských pes",
+                    "one": "chilské peso",
+                    "few": "chilská pesa",
+                    "many": "chilského pesa"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH"
+                },
+                "displayName": {
+                    "other": "čínských jüanů (offshore)",
+                    "one": "čínský jüan (offshore)",
+                    "few": "čínské jüany (offshore)",
+                    "many": "čínského jüanu (offshore)"
+                }
+            },
+            "CNX": {
+                "symbol": {
+                    "value": "CNX"
+                },
+                "displayName": {
+                    "other": "čínských dolarů ČLB",
+                    "one": "čínský dolar ČLB",
+                    "few": "čínské dolary ČLB",
+                    "many": "čínského dolaru ČLB"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "čínských jüanů",
+                    "one": "čínský jüan",
+                    "few": "čínské jüany",
+                    "many": "čínského jüanu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP"
+                },
+                "displayName": {
+                    "other": "kolumbijských pes",
+                    "one": "kolumbijské peso",
+                    "few": "kolumbijská pesa",
+                    "many": "kolumbijského pesa"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "COU": {
+                "symbol": {
+                    "value": "COU"
+                },
+                "displayName": {
+                    "other": "kolumbijských jednotek reálné hodnoty",
+                    "one": "kolumbijská jednotka reálné hodnoty",
+                    "few": "kolumbijské jednotky reálné hodnoty",
+                    "many": "kolumbijské jednotky reálné hodnoty"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC"
+                },
+                "displayName": {
+                    "other": "kostarických colónů",
+                    "one": "kostarický colón",
+                    "few": "kostarické colóny",
+                    "many": "kostarického colónu"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CSD": {
+                "symbol": {
+                    "value": "CSD"
+                },
+                "displayName": {
+                    "other": "srbských dinárů (2002–2006)",
+                    "one": "srbský dinár (2002–2006)",
+                    "few": "srbské dináry (2002–2006)",
+                    "many": "srbského dináru (2002–2006)"
+                }
+            },
+            "CSK": {
+                "symbol": {
+                    "value": "Kčs"
+                },
+                "displayName": {
+                    "other": "československých korun",
+                    "one": "československá koruna",
+                    "few": "československé koruny",
+                    "many": "československé koruny"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC"
+                },
+                "displayName": {
+                    "other": "kubánských konvertibilních pes",
+                    "one": "kubánské konvertibilní peso",
+                    "few": "kubánská konvertibilní pesa",
+                    "many": "kubánského konvertibilního pesa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP"
+                },
+                "displayName": {
+                    "other": "kubánských pes",
+                    "one": "kubánské peso",
+                    "few": "kubánská pesa",
+                    "many": "kubánského pesa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE"
+                },
+                "displayName": {
+                    "other": "kapverdských escud",
+                    "one": "kapverdské escudo",
+                    "few": "kapverdská escuda",
+                    "many": "kapverdského escuda"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP"
+                },
+                "displayName": {
+                    "other": "kyperských liber",
+                    "one": "kyperská libra",
+                    "few": "kyperské libry",
+                    "many": "kyperské libry"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "Kč"
+                },
+                "displayName": {
+                    "other": "korun českých",
+                    "one": "koruna česká",
+                    "few": "koruny české",
+                    "many": "koruny české"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč"
+                }
+            },
+            "DDM": {
+                "symbol": {
+                    "value": "DDM"
+                },
+                "displayName": {
+                    "other": "východoněmeckých marek",
+                    "one": "východoněmecká marka",
+                    "few": "východoněmecké marky",
+                    "many": "východoněmecké marky"
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM"
+                },
+                "displayName": {
+                    "other": "německých marek",
+                    "one": "německá marka",
+                    "few": "německé marky",
+                    "many": "německé marky"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF"
+                },
+                "displayName": {
+                    "other": "džibutských franků",
+                    "one": "džibutský frank",
+                    "few": "džibutské franky",
+                    "many": "džibutského franku"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK"
+                },
+                "displayName": {
+                    "other": "dánských korun",
+                    "one": "dánská koruna",
+                    "few": "dánské koruny",
+                    "many": "dánské koruny"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP"
+                },
+                "displayName": {
+                    "other": "dominikánských pes",
+                    "one": "dominikánské peso",
+                    "few": "dominikánská pesa",
+                    "many": "dominikánského pesa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD"
+                },
+                "displayName": {
+                    "other": "alžírských dinárů",
+                    "one": "alžírský dinár",
+                    "few": "alžírské dináry",
+                    "many": "alžírského dináru"
+                }
+            },
+            "ECS": {
+                "symbol": {
+                    "value": "ECS"
+                },
+                "displayName": {
+                    "other": "ekvádorských sucre",
+                    "one": "ekvádorský sucre",
+                    "few": "ekvádorské sucre",
+                    "many": "ekvádorského sucre"
+                }
+            },
+            "ECV": {
+                "symbol": {
+                    "value": "ECV"
+                },
+                "displayName": {
+                    "other": "ekvádorských jednotek konstantní hodnoty",
+                    "one": "ekvádorská jednotka konstantní hodnoty",
+                    "few": "ekvádorské jednotky konstantní hodnoty",
+                    "many": "ekvádorské jednotky konstantní hodnoty"
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "value": "EEK"
+                },
+                "displayName": {
+                    "other": "estonských korun",
+                    "one": "estonská koruna",
+                    "few": "estonské koruny",
+                    "many": "estonské koruny"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP"
+                },
+                "displayName": {
+                    "other": "egyptských liber",
+                    "one": "egyptská libra",
+                    "few": "egyptské libry",
+                    "many": "egyptské libry"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN"
+                },
+                "displayName": {
+                    "other": "eritrejských nakf",
+                    "one": "eritrejská nakfa",
+                    "few": "eritrejské nakfy",
+                    "many": "eritrejské nakfy"
+                }
+            },
+            "ESA": {
+                "symbol": {
+                    "value": "ESA"
+                },
+                "displayName": {
+                    "other": "španělských peset („A“ účet)",
+                    "one": "španělská peseta („A“ účet)",
+                    "few": "španělské pesety („A“ účet)",
+                    "many": "španělské pesety („A“ účet)"
+                }
+            },
+            "ESB": {
+                "symbol": {
+                    "value": "ESB"
+                },
+                "displayName": {
+                    "other": "španělských peset (konvertibilní účet)",
+                    "one": "španělská peseta (konvertibilní účet)",
+                    "few": "španělské pesety (konvertibilní účet)",
+                    "many": "španělské pesety (konvertibilní účet)"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP"
+                },
+                "displayName": {
+                    "other": "španělských peset",
+                    "one": "španělská peseta",
+                    "few": "španělské pesety",
+                    "many": "španělské pesety"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB"
+                },
+                "displayName": {
+                    "other": "etiopských birrů",
+                    "one": "etiopský birr",
+                    "few": "etiopské birry",
+                    "many": "etiopského birru"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "eur",
+                    "one": "euro",
+                    "few": "eura",
+                    "many": "eura"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "value": "FIM"
+                },
+                "displayName": {
+                    "other": "finských marek",
+                    "one": "finská marka",
+                    "few": "finské marky",
+                    "many": "finské marky"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD"
+                },
+                "displayName": {
+                    "other": "fidžijských dolarů",
+                    "one": "fidžijský dolar",
+                    "few": "fidžijské dolary",
+                    "many": "fidžijského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP"
+                },
+                "displayName": {
+                    "other": "falklandských liber",
+                    "one": "falklandská libra",
+                    "few": "falklandské libry",
+                    "many": "falklandské libry"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF"
+                },
+                "displayName": {
+                    "other": "francouzských franků",
+                    "one": "francouzský frank",
+                    "few": "francouzské franky",
+                    "many": "francouzského franku"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "britských liber",
+                    "one": "britská libra",
+                    "few": "britské libry",
+                    "many": "britské libry"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEK": {
+                "symbol": {
+                    "value": "GEK"
+                },
+                "displayName": {
+                    "other": "gruzínských kuponových lari",
+                    "one": "gruzínské kuponové lari",
+                    "few": "gruzínské kuponové lari",
+                    "many": "gruzínského kuponového lari"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL"
+                },
+                "displayName": {
+                    "other": "gruzínských lari",
+                    "one": "gruzínské lari",
+                    "few": "gruzínské lari",
+                    "many": "gruzínského lari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHC": {
+                "symbol": {
+                    "value": "GHC"
+                },
+                "displayName": {
+                    "other": "ghanských cedi (1979–2007)",
+                    "one": "ghanský cedi (1979–2007)",
+                    "few": "ghanské cedi (1979–2007)",
+                    "many": "ghanského cedi (1979–2007)"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS"
+                },
+                "displayName": {
+                    "other": "ghanských cedi",
+                    "one": "ghanský cedi",
+                    "few": "ghanské cedi",
+                    "many": "ghanského cedi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP"
+                },
+                "displayName": {
+                    "other": "gibraltarských liber",
+                    "one": "gibraltarská libra",
+                    "few": "gibraltarské libry",
+                    "many": "gibraltarské libry"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD"
+                },
+                "displayName": {
+                    "other": "gambijských dalasi",
+                    "one": "gambijský dalasi",
+                    "few": "gambijské dalasi",
+                    "many": "gambijského dalasi"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF"
+                },
+                "displayName": {
+                    "other": "guinejských franků",
+                    "one": "guinejský frank",
+                    "few": "guinejské franky",
+                    "many": "guinejského franku"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG"
+                }
+            },
+            "GNS": {
+                "symbol": {
+                    "value": "GNS"
+                },
+                "displayName": {
+                    "other": "guinejských syli",
+                    "one": "guinejský syli",
+                    "few": "guinejské syli",
+                    "many": "guinejského syli"
+                }
+            },
+            "GQE": {
+                "symbol": {
+                    "value": "GQE"
+                },
+                "displayName": {
+                    "other": "rovníkovoguinejských ekwele",
+                    "one": "rovníkovoguinejský ekwele",
+                    "few": "rovníkovoguinejské ekwele",
+                    "many": "rovníkovoguinejského ekwele"
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "value": "GRD"
+                },
+                "displayName": {
+                    "other": "řeckých drachem",
+                    "one": "řecká drachma",
+                    "few": "řecké drachmy",
+                    "many": "řecké drachmy"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ"
+                },
+                "displayName": {
+                    "other": "guatemalských quetzalů",
+                    "one": "guatemalský quetzal",
+                    "few": "guatemalské quetzaly",
+                    "many": "guatemalského quetzalu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q"
+                }
+            },
+            "GWE": {
+                "symbol": {
+                    "value": "GWE"
+                },
+                "displayName": {
+                    "other": "portugalskoguinejských escud",
+                    "one": "portugalskoguinejské escudo",
+                    "few": "portugalskoguinejská escuda",
+                    "many": "portugalskoguinejského escuda"
+                }
+            },
+            "GWP": {
+                "symbol": {
+                    "value": "GWP"
+                },
+                "displayName": {
+                    "other": "guinejsko-bissauských pes",
+                    "one": "guinejsko-bissauské peso",
+                    "few": "guinejsko-bissauská pesa",
+                    "many": "guinejsko-bissauského pesa"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD"
+                },
+                "displayName": {
+                    "other": "guyanských dolarů",
+                    "one": "guyanský dolar",
+                    "few": "guyanské dolary",
+                    "many": "guyanského dolaru"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "hongkongských dolarů",
+                    "one": "hongkongský dolar",
+                    "few": "hongkongské dolary",
+                    "many": "hongkongského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL"
+                },
+                "displayName": {
+                    "other": "honduraských lempir",
+                    "one": "honduraská lempira",
+                    "few": "honduraské lempiry",
+                    "many": "honduraské lempiry"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L"
+                }
+            },
+            "HRD": {
+                "symbol": {
+                    "value": "HRD"
+                },
+                "displayName": {
+                    "other": "chorvatských dinárů",
+                    "one": "chorvatský dinár",
+                    "few": "chorvatské dináry",
+                    "many": "chorvatského dináru"
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK"
+                },
+                "displayName": {
+                    "other": "chorvatských kun",
+                    "one": "chorvatská kuna",
+                    "few": "chorvatské kuny",
+                    "many": "chorvatské kuny"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn"
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG"
+                },
+                "displayName": {
+                    "other": "haitských gourde",
+                    "one": "haitský gourde",
+                    "few": "haitské gourde",
+                    "many": "haitského gourde"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF"
+                },
+                "displayName": {
+                    "other": "maďarských forintů",
+                    "one": "maďarský forint",
+                    "few": "maďarské forinty",
+                    "many": "maďarského forintu"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft"
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR"
+                },
+                "displayName": {
+                    "other": "indonéských rupií",
+                    "one": "indonéská rupie",
+                    "few": "indonéské rupie",
+                    "many": "indonéské rupie"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp"
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "value": "IEP"
+                },
+                "displayName": {
+                    "other": "irských liber",
+                    "one": "irská libra",
+                    "few": "irské libry",
+                    "many": "irské libry"
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "value": "ILP"
+                },
+                "displayName": {
+                    "other": "izraelských liber",
+                    "one": "izraelská libra",
+                    "few": "izraelské libry",
+                    "many": "izraelské libry"
+                }
+            },
+            "ILR": {
+                "symbol": {
+                    "value": "ILR"
+                },
+                "displayName": {
+                    "other": "izraelských šekelů (1980–1985)",
+                    "one": "izraelský šekel (1980–1985)",
+                    "few": "izraelské šekely (1980–1985)",
+                    "many": "izraelského šekelu (1980–1985)"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "ILS"
+                },
+                "displayName": {
+                    "other": "izraelských nových šekelů",
+                    "one": "izraelský nový šekel",
+                    "few": "izraelské nové šekely",
+                    "many": "izraelského nového šekelu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "INR"
+                },
+                "displayName": {
+                    "other": "indických rupií",
+                    "one": "indická rupie",
+                    "few": "indické rupie",
+                    "many": "indické rupie"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD"
+                },
+                "displayName": {
+                    "other": "iráckých dinárů",
+                    "one": "irácký dinár",
+                    "few": "irácké dináry",
+                    "many": "iráckého dináru"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR"
+                },
+                "displayName": {
+                    "other": "íránských rijálů",
+                    "one": "íránský rijál",
+                    "few": "íránské rijály",
+                    "many": "íránského rijálu"
+                },
+                "digits": 0
+            },
+            "ISJ": {
+                "symbol": {
+                    "value": "ISJ"
+                },
+                "displayName": {
+                    "other": "islandských korun (1918–1981)",
+                    "one": "islandská koruna (1918–1981)",
+                    "few": "islandské koruny (1918–1981)",
+                    "many": "islandské koruny (1918–1981)"
+                }
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK"
+                },
+                "displayName": {
+                    "other": "islandských korun",
+                    "one": "islandská koruna",
+                    "few": "islandské koruny",
+                    "many": "islandské koruny"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "value": "ITL"
+                },
+                "displayName": {
+                    "other": "italských lir",
+                    "one": "italská lira",
+                    "few": "italské liry",
+                    "many": "italské liry"
+                },
+                "digits": 0
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD"
+                },
+                "displayName": {
+                    "other": "jamajských dolarů",
+                    "one": "jamajský dolar",
+                    "few": "jamajské dolary",
+                    "many": "jamajského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD"
+                },
+                "displayName": {
+                    "other": "jordánských dinárů",
+                    "one": "jordánský dinár",
+                    "few": "jordánské dináry",
+                    "many": "jordánského dináru"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "JP¥"
+                },
+                "displayName": {
+                    "other": "japonských jenů",
+                    "one": "japonský jen",
+                    "few": "japonské jeny",
+                    "many": "japonského jenu"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES"
+                },
+                "displayName": {
+                    "other": "keňských šilinků",
+                    "one": "keňský šilink",
+                    "few": "keňské šilinky",
+                    "many": "keňského šilinku"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS"
+                },
+                "displayName": {
+                    "other": "kyrgyzských somů",
+                    "one": "kyrgyzský som",
+                    "few": "kyrgyzské somy",
+                    "many": "kyrgyzského somu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR"
+                },
+                "displayName": {
+                    "other": "kambodžských rielů",
+                    "one": "kambodžský riel",
+                    "few": "kambodžské riely",
+                    "many": "kambodžského rielu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF"
+                },
+                "displayName": {
+                    "other": "komorských franků",
+                    "one": "komorský frank",
+                    "few": "komorské franky",
+                    "many": "komorského franku"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF"
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW"
+                },
+                "displayName": {
+                    "other": "severokorejských wonů",
+                    "one": "severokorejský won",
+                    "few": "severokorejské wony",
+                    "many": "severokorejského wonu"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRH": {
+                "symbol": {
+                    "value": "KRH"
+                },
+                "displayName": {
+                    "other": "jihokorejských hwanů (1953–1962)",
+                    "one": "jihokorejský hwan (1953–1962)",
+                    "few": "jihokorejské hwany (1953–1962)",
+                    "many": "jihokorejského hwanu (1953–1962)"
+                }
+            },
+            "KRO": {
+                "symbol": {
+                    "value": "KRO"
+                },
+                "displayName": {
+                    "other": "jihokorejských wonů (1945–1953)",
+                    "one": "jihokorejský won (1945–1953)",
+                    "few": "jihokorejské wony (1945–1953)",
+                    "many": "jihokorejského wonu (1945–1953)"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "jihokorejských wonů",
+                    "one": "jihokorejský won",
+                    "few": "jihokorejské wony",
+                    "many": "jihokorejského wonu"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD"
+                },
+                "displayName": {
+                    "other": "kuvajtských dinárů",
+                    "one": "kuvajtský dinár",
+                    "few": "kuvajtské dináry",
+                    "many": "kuvajtského dináru"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD"
+                },
+                "displayName": {
+                    "other": "kajmanských dolarů",
+                    "one": "kajmanský dolar",
+                    "few": "kajmanské dolary",
+                    "many": "kajmanského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT"
+                },
+                "displayName": {
+                    "other": "kazašských tenge",
+                    "one": "kazašské tenge",
+                    "few": "kazašské tenge",
+                    "many": "kazašského tenge"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK"
+                },
+                "displayName": {
+                    "other": "laoských kipů",
+                    "one": "laoský kip",
+                    "few": "laoské kipy",
+                    "many": "laoského kipu"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP"
+                },
+                "displayName": {
+                    "other": "libanonských liber",
+                    "one": "libanonská libra",
+                    "few": "libanonské libry",
+                    "many": "libanonské libry"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR"
+                },
+                "displayName": {
+                    "other": "srílanských rupií",
+                    "one": "srílanská rupie",
+                    "few": "srílanské rupie",
+                    "many": "srílanské rupie"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD"
+                },
+                "displayName": {
+                    "other": "liberijských dolarů",
+                    "one": "liberijský dolar",
+                    "few": "liberijské dolary",
+                    "many": "liberijského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL"
+                },
+                "displayName": {
+                    "other": "lesothských maloti",
+                    "one": "lesothský loti",
+                    "few": "lesothské maloti",
+                    "many": "lesothského loti"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL"
+                },
+                "displayName": {
+                    "other": "litevských litů",
+                    "one": "litevský litas",
+                    "few": "litevské lity",
+                    "many": "litevského litu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt"
+                }
+            },
+            "LTT": {
+                "symbol": {
+                    "value": "LTT"
+                },
+                "displayName": {
+                    "other": "litevských talonů",
+                    "one": "litevský talonas",
+                    "few": "litevské talony",
+                    "many": "litevského talonu"
+                }
+            },
+            "LUC": {
+                "symbol": {
+                    "value": "LUC"
+                },
+                "displayName": {
+                    "other": "lucemburských konvertibilních franků",
+                    "one": "lucemburský konvertibilní frank",
+                    "few": "lucemburské konvertibilní franky",
+                    "many": "lucemburského konvertibilního franku"
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "value": "LUF"
+                },
+                "displayName": {
+                    "other": "lucemburských franků",
+                    "one": "lucemburský frank",
+                    "few": "lucemburské franky",
+                    "many": "lucemburského franku"
+                },
+                "digits": 0
+            },
+            "LUL": {
+                "symbol": {
+                    "value": "LUL"
+                },
+                "displayName": {
+                    "other": "lucemburských finančních franků",
+                    "one": "lucemburský finanční frank",
+                    "few": "lucemburské finanční franky",
+                    "many": "lucemburského finančního franku"
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL"
+                },
+                "displayName": {
+                    "other": "lotyšských latů",
+                    "one": "lotyšský lat",
+                    "few": "lotyšské laty",
+                    "many": "lotyšského latu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls"
+                }
+            },
+            "LVR": {
+                "symbol": {
+                    "value": "LVR"
+                },
+                "displayName": {
+                    "other": "lotyšských rublů",
+                    "one": "lotyšský rubl",
+                    "few": "lotyšské rubly",
+                    "many": "lotyšského rublu"
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD"
+                },
+                "displayName": {
+                    "other": "libyjských dinárů",
+                    "one": "libyjský dinár",
+                    "few": "libyjské dináry",
+                    "many": "libyjského dináru"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD"
+                },
+                "displayName": {
+                    "other": "marockých dinárů",
+                    "one": "marocký dinár",
+                    "few": "marocké dináry",
+                    "many": "marockého dináru"
+                }
+            },
+            "MAF": {
+                "symbol": {
+                    "value": "MAF"
+                },
+                "displayName": {
+                    "other": "marockých franků",
+                    "one": "marocký frank",
+                    "few": "marocké franky",
+                    "many": "marockého franku"
+                }
+            },
+            "MCF": {
+                "symbol": {
+                    "value": "MCF"
+                },
+                "displayName": {
+                    "other": "monackých franků",
+                    "one": "monacký frank",
+                    "few": "monacké franky",
+                    "many": "monackého franku"
+                }
+            },
+            "MDC": {
+                "symbol": {
+                    "value": "MDC"
+                },
+                "displayName": {
+                    "other": "moldavských kuponů",
+                    "one": "moldavský kupon",
+                    "few": "moldavské kupony",
+                    "many": "moldavského kuponu"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL"
+                },
+                "displayName": {
+                    "other": "moldavských lei",
+                    "one": "moldavský leu",
+                    "few": "moldavské lei",
+                    "many": "moldavského leu"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA"
+                },
+                "displayName": {
+                    "other": "madagaskarských ariary",
+                    "one": "madagaskarský ariary",
+                    "few": "madagaskarské ariary",
+                    "many": "madagaskarského ariary"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar"
+                }
+            },
+            "MGF": {
+                "symbol": {
+                    "value": "MGF"
+                },
+                "displayName": {
+                    "other": "madagaskarských franků",
+                    "one": "madagaskarský frank",
+                    "few": "madagaskarské franky",
+                    "many": "madagaskarského franku"
+                },
+                "digits": 0
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD"
+                },
+                "displayName": {
+                    "other": "makedonských denárů",
+                    "one": "makedonský denár",
+                    "few": "makedonské denáry",
+                    "many": "makedonského denáru"
+                }
+            },
+            "MKN": {
+                "symbol": {
+                    "value": "MKN"
+                },
+                "displayName": {
+                    "other": "makedonských denárů (1992–1993)",
+                    "one": "makedonský denár (1992–1993)",
+                    "few": "makedonské denáry (1992–1993)",
+                    "many": "makedonského denáru (1992–1993)"
+                }
+            },
+            "MLF": {
+                "symbol": {
+                    "value": "MLF"
+                },
+                "displayName": {
+                    "other": "malijských franků",
+                    "one": "malijský frank",
+                    "few": "malijské franky",
+                    "many": "malijského franku"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK"
+                },
+                "displayName": {
+                    "other": "myanmarských kyatů",
+                    "one": "myanmarský kyat",
+                    "few": "myanmarské kyaty",
+                    "many": "myanmarského kyatu"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K"
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT"
+                },
+                "displayName": {
+                    "other": "mongolských tugriků",
+                    "one": "mongolský tugrik",
+                    "few": "mongolské tugriky",
+                    "many": "mongolského tugriku"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP"
+                },
+                "displayName": {
+                    "other": "macajských patac",
+                    "one": "macajská pataca",
+                    "few": "macajské patacy",
+                    "many": "macajské patacy"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO"
+                },
+                "displayName": {
+                    "other": "mauritánských ouguiyí (1973–2017)",
+                    "one": "mauritánská ouguiya (1973–2017)",
+                    "few": "mauritánské ouguiye (1973–2017)",
+                    "many": "mauritánské ouguiye (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU"
+                },
+                "displayName": {
+                    "other": "mauritánských ouguiyí",
+                    "one": "mauritánská ouguiya",
+                    "few": "mauritánské ouguiye",
+                    "many": "mauritánské ouguiye"
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "value": "MTL"
+                },
+                "displayName": {
+                    "other": "maltských lir",
+                    "one": "maltská lira",
+                    "few": "maltské liry",
+                    "many": "maltské liry"
+                }
+            },
+            "MTP": {
+                "symbol": {
+                    "value": "MTP"
+                },
+                "displayName": {
+                    "other": "maltských liber",
+                    "one": "maltská libra",
+                    "few": "maltské libry",
+                    "many": "maltské libry"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR"
+                },
+                "displayName": {
+                    "other": "mauricijských rupií",
+                    "one": "mauricijská rupie",
+                    "few": "mauricijské rupie",
+                    "many": "mauricijské rupie"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "MVP": {
+                "symbol": {
+                    "value": "MVP"
+                },
+                "displayName": {
+                    "other": "maledivských rupií (1947–1981)",
+                    "one": "maledivská rupie (1947–1981)",
+                    "few": "maledivské rupie (1947–1981)",
+                    "many": "maledivské rupie (1947–1981)"
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR"
+                },
+                "displayName": {
+                    "other": "maledivských rupií",
+                    "one": "maledivská rupie",
+                    "few": "maledivské rupie",
+                    "many": "maledivské rupie"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK"
+                },
+                "displayName": {
+                    "other": "malawijských kwach",
+                    "one": "malawijská kwacha",
+                    "few": "malawijské kwachy",
+                    "many": "malawijské kwachy"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "mexických pes",
+                    "one": "mexické peso",
+                    "few": "mexická pesa",
+                    "many": "mexického pesa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MXP": {
+                "symbol": {
+                    "value": "MXP"
+                },
+                "displayName": {
+                    "other": "mexických stříbrných pes (1861–1992)",
+                    "one": "mexické stříbrné peso (1861–1992)",
+                    "few": "mexická stříbrná pesa (1861–1992)",
+                    "many": "mexického stříbrného pesa (1861–1992)"
+                }
+            },
+            "MXV": {
+                "symbol": {
+                    "value": "MXV"
+                },
+                "displayName": {
+                    "other": "mexických investičních jednotek",
+                    "one": "mexická investiční jednotka",
+                    "few": "mexické investiční jednotky",
+                    "many": "mexické investiční jednotky"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR"
+                },
+                "displayName": {
+                    "other": "malajsijských ringgitů",
+                    "one": "malajsijský ringgit",
+                    "few": "malajsijské ringgity",
+                    "many": "malajsijského ringgitu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM"
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "value": "MZE"
+                },
+                "displayName": {
+                    "other": "mosambických escud",
+                    "one": "mosambický escudo",
+                    "few": "mosambická escuda",
+                    "many": "mosambického escuda"
+                }
+            },
+            "MZM": {
+                "symbol": {
+                    "value": "MZM"
+                },
+                "displayName": {
+                    "other": "mosambických meticalů (1980–2006)",
+                    "one": "mosambický metical (1980–2006)",
+                    "few": "mosambické meticaly (1980–2006)",
+                    "many": "mosambického meticalu (1980–2006)"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN"
+                },
+                "displayName": {
+                    "other": "mozambických meticalů",
+                    "one": "mozambický metical",
+                    "few": "mozambické meticaly",
+                    "many": "mozambického meticalu"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD"
+                },
+                "displayName": {
+                    "other": "namibijských dolarů",
+                    "one": "namibijský dolar",
+                    "few": "namibijské dolary",
+                    "many": "namibijského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN"
+                },
+                "displayName": {
+                    "other": "nigerijských nair",
+                    "one": "nigerijská naira",
+                    "few": "nigerijské nairy",
+                    "many": "nigerijské nairy"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIC": {
+                "symbol": {
+                    "value": "NIC"
+                },
+                "displayName": {
+                    "other": "nikaragujských córdob (1988–1991)",
+                    "one": "nikaragujská córdoba (1988–1991)",
+                    "few": "nikaragujské córdoby (1988–1991)",
+                    "many": "nikaragujské córdoby (1988–1991)"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO"
+                },
+                "displayName": {
+                    "other": "nikaragujských córdob",
+                    "one": "nikaragujská córdoba",
+                    "few": "nikaragujské córdoby",
+                    "many": "nikaragujské córdoby"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "value": "NLG"
+                },
+                "displayName": {
+                    "other": "nizozemských guldenů",
+                    "one": "nizozemský gulden",
+                    "few": "nizozemské guldeny",
+                    "many": "nizozemského guldenu"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK"
+                },
+                "displayName": {
+                    "other": "norských korun",
+                    "one": "norská koruna",
+                    "few": "norské koruny",
+                    "many": "norské koruny"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR"
+                },
+                "displayName": {
+                    "other": "nepálských rupií",
+                    "one": "nepálská rupie",
+                    "few": "nepálské rupie",
+                    "many": "nepálské rupie"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "novozélandských dolarů",
+                    "one": "novozélandský dolar",
+                    "few": "novozélandské dolary",
+                    "many": "novozélandského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR"
+                },
+                "displayName": {
+                    "other": "ománských rijálů",
+                    "one": "ománský rijál",
+                    "few": "ománské rijály",
+                    "many": "ománského rijálu"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB"
+                },
+                "displayName": {
+                    "other": "panamských balboí",
+                    "one": "panamská balboa",
+                    "few": "panamské balboy",
+                    "many": "panamské balboy"
+                }
+            },
+            "PEI": {
+                "symbol": {
+                    "value": "PEI"
+                },
+                "displayName": {
+                    "other": "peruánských inti",
+                    "one": "peruánská inti",
+                    "few": "peruánské inti",
+                    "many": "peruánské inti"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN"
+                },
+                "displayName": {
+                    "other": "peruánských solů",
+                    "one": "peruánský sol",
+                    "few": "peruánské soly",
+                    "many": "peruánského solu"
+                }
+            },
+            "PES": {
+                "symbol": {
+                    "value": "PES"
+                },
+                "displayName": {
+                    "other": "peruánských solů (1863–1965)",
+                    "one": "peruánský sol (1863–1965)",
+                    "few": "peruánské soly (1863–1965)",
+                    "many": "peruánského solu (1863–1965)"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK"
+                },
+                "displayName": {
+                    "other": "papuánských nových kin",
+                    "one": "papuánská nová kina",
+                    "few": "papuánské nové kiny",
+                    "many": "papuánské nové kiny"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP"
+                },
+                "displayName": {
+                    "other": "filipínských pes",
+                    "one": "filipínské peso",
+                    "few": "filipínská pesa",
+                    "many": "filipínského pesa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR"
+                },
+                "displayName": {
+                    "other": "pákistánských rupií",
+                    "one": "pákistánská rupie",
+                    "few": "pákistánské rupie",
+                    "many": "pákistánské rupie"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs"
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN"
+                },
+                "displayName": {
+                    "other": "polských zlotých",
+                    "one": "polský zlotý",
+                    "few": "polské zloté",
+                    "many": "polského zlotého"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł"
+                }
+            },
+            "PLZ": {
+                "symbol": {
+                    "value": "PLZ"
+                },
+                "displayName": {
+                    "other": "polských zlotých (1950–1995)",
+                    "one": "polský zlotý (1950–1995)",
+                    "few": "polské zloté (1950–1995)",
+                    "many": "polského zlotého (1950–1995)"
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "value": "PTE"
+                },
+                "displayName": {
+                    "other": "portugalských escud",
+                    "one": "portugalské escudo",
+                    "few": "portugalská escuda",
+                    "many": "portugalského escuda"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG"
+                },
+                "displayName": {
+                    "other": "paraguajských guarani",
+                    "one": "paraguajské guarani",
+                    "few": "paraguajská guarani",
+                    "many": "paraguajského guarani"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR"
+                },
+                "displayName": {
+                    "other": "katarských rijálů",
+                    "one": "katarský rijál",
+                    "few": "katarské rijály",
+                    "many": "katarského rijálu"
+                }
+            },
+            "RHD": {
+                "symbol": {
+                    "value": "RHD"
+                },
+                "displayName": {
+                    "other": "rhodéských dolarů",
+                    "one": "rhodéský dolar",
+                    "few": "rhodéské dolary",
+                    "many": "rhodéského dolaru"
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "value": "ROL"
+                },
+                "displayName": {
+                    "other": "rumunských lei (1952–2006)",
+                    "one": "rumunské leu (1952–2006)",
+                    "few": "rumunské lei (1952–2006)",
+                    "many": "rumunského leu (1952–2006)"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON"
+                },
+                "displayName": {
+                    "other": "rumunských lei",
+                    "one": "rumunský leu",
+                    "few": "rumunské lei",
+                    "many": "rumunského leu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L"
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD"
+                },
+                "displayName": {
+                    "other": "srbských dinárů",
+                    "one": "srbský dinár",
+                    "few": "srbské dináry",
+                    "many": "srbského dináru"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB"
+                },
+                "displayName": {
+                    "other": "ruských rublů",
+                    "one": "ruský rubl",
+                    "few": "ruské rubly",
+                    "many": "ruského rublu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "value": "RUR"
+                },
+                "displayName": {
+                    "other": "ruských rublů (1991–1998)",
+                    "one": "ruský rubl (1991–1998)",
+                    "few": "ruské rubly (1991–1998)",
+                    "many": "ruského rublu (1991–1998)"
+                },
+                "symbol-alt-narrow": {
+                    "value": "р."
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF"
+                },
+                "displayName": {
+                    "other": "rwandských franků",
+                    "one": "rwandský frank",
+                    "few": "rwandské franky",
+                    "many": "rwandského franku"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF"
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR"
+                },
+                "displayName": {
+                    "other": "saúdských rijálů",
+                    "one": "saúdský rijál",
+                    "few": "saúdské rijály",
+                    "many": "saúdského rijálu"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD"
+                },
+                "displayName": {
+                    "other": "šalamounských dolarů",
+                    "one": "šalamounský dolar",
+                    "few": "šalamounské dolary",
+                    "many": "šalamounského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR"
+                },
+                "displayName": {
+                    "other": "seychelských rupií",
+                    "one": "seychelská rupie",
+                    "few": "seychelské rupie",
+                    "many": "seychelské rupie"
+                }
+            },
+            "SDD": {
+                "symbol": {
+                    "value": "SDD"
+                },
+                "displayName": {
+                    "other": "súdánských dinárů (1992–2007)",
+                    "one": "súdánský dinár (1992–2007)",
+                    "few": "súdánské dináry (1992–2007)",
+                    "many": "súdánského dináru (1992–2007)"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG"
+                },
+                "displayName": {
+                    "other": "súdánských liber",
+                    "one": "súdánská libra",
+                    "few": "súdánské libry",
+                    "many": "súdánské libry"
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "value": "SDP"
+                },
+                "displayName": {
+                    "other": "súdánských liber (1957–1998)",
+                    "one": "súdánská libra (1957–1998)",
+                    "few": "súdánské libry (1957–1998)",
+                    "many": "súdánské libry (1957–1998)"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK"
+                },
+                "displayName": {
+                    "other": "švédských korun",
+                    "one": "švédská koruna",
+                    "few": "švédské koruny",
+                    "many": "švédské koruny"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr"
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD"
+                },
+                "displayName": {
+                    "other": "singapurských dolarů",
+                    "one": "singapurský dolar",
+                    "few": "singapurské dolary",
+                    "many": "singapurského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP"
+                },
+                "displayName": {
+                    "other": "svatohelenských liber",
+                    "one": "svatohelenská libra",
+                    "few": "svatohelenské libry",
+                    "many": "svatohelenské libry"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "value": "SIT"
+                },
+                "displayName": {
+                    "other": "slovinských tolarů",
+                    "one": "slovinský tolar",
+                    "few": "slovinské tolary",
+                    "many": "slovinského tolaru"
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "value": "SKK"
+                },
+                "displayName": {
+                    "other": "slovenských korun",
+                    "one": "slovenská koruna",
+                    "few": "slovenské koruny",
+                    "many": "slovenské koruny"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE"
+                },
+                "displayName": {
+                    "other": "sierro-leonských leone",
+                    "one": "sierro-leonský leone",
+                    "few": "sierro-leonské leone",
+                    "many": "sierro-leonského leone"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL"
+                },
+                "displayName": {
+                    "other": "sierro-leonských leone (1964—2022)",
+                    "one": "sierro-leonský leone (1964—2022)",
+                    "few": "sierro-leonské leone (1964—2022)",
+                    "many": "sierro-leonského leone (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS"
+                },
+                "displayName": {
+                    "other": "somálských šilinků",
+                    "one": "somálský šilink",
+                    "few": "somálské šilinky",
+                    "many": "somálského šilinku"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD"
+                },
+                "displayName": {
+                    "other": "surinamských dolarů",
+                    "one": "surinamský dolar",
+                    "few": "surinamské dolary",
+                    "many": "surinamského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "value": "SRG"
+                },
+                "displayName": {
+                    "other": "surinamských zlatých",
+                    "one": "surinamský zlatý",
+                    "few": "surinamské zlaté",
+                    "many": "surinamského zlatého"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP"
+                },
+                "displayName": {
+                    "other": "jihosúdánských liber",
+                    "one": "jihosúdánská libra",
+                    "few": "jihosúdánské libry",
+                    "many": "jihosúdánské libry"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD"
+                },
+                "displayName": {
+                    "other": "svatotomášských dober (1977–2017)",
+                    "one": "svatotomášská dobra (1977–2017)",
+                    "few": "svatotomášské dobry (1977–2017)",
+                    "many": "svatotomášské dobry (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN"
+                },
+                "displayName": {
+                    "other": "svatotomášských dober",
+                    "one": "svatotomášská dobra",
+                    "few": "svatotomášské dobry",
+                    "many": "svatotomášské dobry"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db"
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "value": "SUR"
+                },
+                "displayName": {
+                    "other": "sovětských rublů",
+                    "one": "sovětský rubl",
+                    "few": "sovětské rubly",
+                    "many": "sovětského rublu"
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "value": "SVC"
+                },
+                "displayName": {
+                    "other": "salvadorských colónů",
+                    "one": "salvadorský colón",
+                    "few": "salvadorské colóny",
+                    "many": "salvadorského colónu"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP"
+                },
+                "displayName": {
+                    "other": "syrských liber",
+                    "one": "syrská libra",
+                    "few": "syrské libry",
+                    "many": "syrské libry"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL"
+                },
+                "displayName": {
+                    "other": "svazijských emalangeni",
+                    "one": "svazijský lilangeni",
+                    "few": "svazijské emalangeni",
+                    "many": "svazijského lilangeni"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "THB"
+                },
+                "displayName": {
+                    "other": "thajských bahtů",
+                    "one": "thajský baht",
+                    "few": "thajské bahty",
+                    "many": "thajského bahtu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJR": {
+                "symbol": {
+                    "value": "TJR"
+                },
+                "displayName": {
+                    "other": "tádžických rublů",
+                    "one": "tádžický rubl",
+                    "few": "tádžické rubly",
+                    "many": "tádžického rublu"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS"
+                },
+                "displayName": {
+                    "other": "tádžických somoni",
+                    "one": "tádžické somoni",
+                    "few": "tádžická somoni",
+                    "many": "tádžického somoni"
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "value": "TMM"
+                },
+                "displayName": {
+                    "other": "turkmenských manatů (1993–2009)",
+                    "one": "turkmenský manat (1993–2009)",
+                    "few": "turkmenské manaty (1993–2009)",
+                    "many": "turkmenského manatu (1993–2009)"
+                },
+                "digits": 0
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT"
+                },
+                "displayName": {
+                    "other": "turkmenských manatů",
+                    "one": "turkmenský manat",
+                    "few": "turkmenské manaty",
+                    "many": "turkmenského manatu"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND"
+                },
+                "displayName": {
+                    "other": "tuniských dinárů",
+                    "one": "tuniský dinár",
+                    "few": "tuniské dináry",
+                    "many": "tuniského dináru"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP"
+                },
+                "displayName": {
+                    "other": "tonžských paang",
+                    "one": "tonžská paanga",
+                    "few": "tonžské paangy",
+                    "many": "tonžské paangy"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TPE": {
+                "symbol": {
+                    "value": "TPE"
+                },
+                "displayName": {
+                    "other": "timorských escud",
+                    "one": "timorské escudo",
+                    "few": "timorská escuda",
+                    "many": "timorského escuda"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL"
+                },
+                "displayName": {
+                    "other": "tureckých lir (1922–2005)",
+                    "one": "turecká lira (1922–2005)",
+                    "few": "turecké liry (1922–2005)",
+                    "many": "turecké liry (1922–2005)"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY"
+                },
+                "displayName": {
+                    "other": "tureckých lir",
+                    "one": "turecká lira",
+                    "few": "turecké liry",
+                    "many": "turecké liry"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD"
+                },
+                "displayName": {
+                    "other": "trinidadských dolarů",
+                    "one": "trinidadský dolar",
+                    "few": "trinidadské dolary",
+                    "many": "trinidadského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "tchajwanských dolarů",
+                    "one": "tchajwanský dolar",
+                    "few": "tchajwanské dolary",
+                    "many": "tchajwanského dolaru"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS"
+                },
+                "displayName": {
+                    "other": "tanzanských šilinků",
+                    "one": "tanzanský šilink",
+                    "few": "tanzanské šilinky",
+                    "many": "tanzanského šilinku"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH"
+                },
+                "displayName": {
+                    "other": "ukrajinských hřiven",
+                    "one": "ukrajinská hřivna",
+                    "few": "ukrajinské hřivny",
+                    "many": "ukrajinské hřivny"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UAK": {
+                "symbol": {
+                    "value": "UAK"
+                },
+                "displayName": {
+                    "other": "ukrajinských karbovanců",
+                    "one": "ukrajinský karbovanec",
+                    "few": "ukrajinské karbovance",
+                    "many": "ukrajinského karbovance"
+                }
+            },
+            "UGS": {
+                "symbol": {
+                    "value": "UGS"
+                },
+                "displayName": {
+                    "other": "ugandských šilinků (1966–1987)",
+                    "one": "ugandský šilink (1966–1987)",
+                    "few": "ugandské šilinky (1966–1987)",
+                    "many": "ugandského šilinku (1966–1987)"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX"
+                },
+                "displayName": {
+                    "other": "ugandských šilinků",
+                    "one": "ugandský šilink",
+                    "few": "ugandské šilinky",
+                    "many": "ugandského šilinku"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "US$"
+                },
+                "displayName": {
+                    "other": "amerických dolarů",
+                    "one": "americký dolar",
+                    "few": "americké dolary",
+                    "many": "amerického dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "value": "USN"
+                },
+                "displayName": {
+                    "other": "amerických dolarů (příští den)",
+                    "one": "americký dolar (příští den)",
+                    "few": "americké dolary (příští den)",
+                    "many": "amerického dolaru (příští den)"
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "value": "USS"
+                },
+                "displayName": {
+                    "other": "amerických dolarů (týž den)",
+                    "one": "americký dolar (týž den)",
+                    "few": "americké dolary (týž den)",
+                    "many": "amerického dolaru (týž den)"
+                }
+            },
+            "UYI": {
+                "symbol": {
+                    "value": "UYI"
+                },
+                "displayName": {
+                    "other": "uruguayských pes (v indexovaných jednotkách)",
+                    "one": "uruguayské peso (v indexovaných jednotkách)",
+                    "few": "uruguayská pesa (v indexovaných jednotkách)",
+                    "many": "uruguayského pesa (v indexovaných jednotkách)"
+                },
+                "digits": 0
+            },
+            "UYP": {
+                "symbol": {
+                    "value": "UYP"
+                },
+                "displayName": {
+                    "other": "uruguayských pes (1975–1993)",
+                    "one": "uruguayské peso (1975–1993)",
+                    "few": "uruguayská pesa (1975–1993)",
+                    "many": "uruguayského pesa (1975–1993)"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU"
+                },
+                "displayName": {
+                    "other": "uruguayských pes",
+                    "one": "uruguayské peso",
+                    "few": "uruguayská pesa",
+                    "many": "uruguayského pesa"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS"
+                },
+                "displayName": {
+                    "other": "uzbeckých sumů",
+                    "one": "uzbecký sum",
+                    "few": "uzbecké sumy",
+                    "many": "uzbeckého sumu"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEB": {
+                "symbol": {
+                    "value": "VEB"
+                },
+                "displayName": {
+                    "other": "venezuelských bolívarů (1871–2008)",
+                    "one": "venezuelský bolívar (1871–2008)",
+                    "few": "venezuelské bolívary (1871–2008)",
+                    "many": "venezuelského bolívaru (1871–2008)"
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF"
+                },
+                "displayName": {
+                    "other": "venezuelských bolívarů (2008–2018)",
+                    "one": "venezuelský bolívar (2008–2018)",
+                    "few": "venezuelské bolívary (2008–2018)",
+                    "many": "venezuelského bolívaru (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs"
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES"
+                },
+                "displayName": {
+                    "other": "venezuelských bolívarů",
+                    "one": "venezuelský bolívar",
+                    "few": "venezuelské bolívary",
+                    "many": "venezuelského bolívaru"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "VND"
+                },
+                "displayName": {
+                    "other": "vietnamských dongů",
+                    "one": "vietnamský dong",
+                    "few": "vietnamské dongy",
+                    "many": "vietnamského dongu"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VNN": {
+                "symbol": {
+                    "value": "VNN"
+                },
+                "displayName": {
+                    "other": "vietnamských dongů (1978–1985)",
+                    "one": "vietnamský dong (1978–1985)",
+                    "few": "vietnamské dongy (1978–1985)",
+                    "many": "vietnamského dongu (1978–1985)"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV"
+                },
+                "displayName": {
+                    "other": "vanuatských vatu",
+                    "one": "vanuatský vatu",
+                    "few": "vanuatské vatu",
+                    "many": "vanuatského vatu"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST"
+                },
+                "displayName": {
+                    "other": "samojských tal",
+                    "one": "samojská tala",
+                    "few": "samojské taly",
+                    "many": "samojské taly"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA"
+                },
+                "displayName": {
+                    "other": "CFA/BEAC franků",
+                    "one": "CFA/BEAC frank",
+                    "few": "CFA/BEAC franky",
+                    "many": "CFA/BEAC franku"
+                },
+                "digits": 0
+            },
+            "XAG": {
+                "symbol": {
+                    "value": "XAG"
+                },
+                "displayName": {
+                    "other": "trojských uncí stříbra",
+                    "one": "trojská unce stříbra",
+                    "few": "trojské unce stříbra",
+                    "many": "trojské unce stříbra"
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "value": "XAU"
+                },
+                "displayName": {
+                    "other": "trojských uncí zlata",
+                    "one": "trojská unce zlata",
+                    "few": "trojské unce zlata",
+                    "many": "trojské unce zlata"
+                }
+            },
+            "XBA": {
+                "symbol": {
+                    "value": "XBA"
+                },
+                "displayName": {
+                    "other": "evropských smíšených jednotek",
+                    "one": "evropská smíšená jednotka",
+                    "few": "evropské smíšené jednotky",
+                    "many": "evropské smíšené jednotky"
+                }
+            },
+            "XBB": {
+                "symbol": {
+                    "value": "XBB"
+                },
+                "displayName": {
+                    "other": "evropských peněžních jednotek",
+                    "one": "evropská peněžní jednotka",
+                    "few": "evropské peněžní jednotky",
+                    "many": "evropské peněžní jednotky"
+                }
+            },
+            "XBC": {
+                "symbol": {
+                    "value": "XBC"
+                },
+                "displayName": {
+                    "other": "evropských jednotek účtu 9 (XBC)",
+                    "one": "evropská jednotka účtu 9 (XBC)",
+                    "few": "evropské jednotky účtu 9 (XBC)",
+                    "many": "evropské jednotky účtu 9 (XBC)"
+                }
+            },
+            "XBD": {
+                "symbol": {
+                    "value": "XBD"
+                },
+                "displayName": {
+                    "other": "evropských jednotek účtu 17 (XBD)",
+                    "one": "evropská jednotka účtu 17 (XBD)",
+                    "few": "evropské jednotky účtu 17 (XBD)",
+                    "many": "evropské jednotky účtu 17 (XBD)"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "východokaribských dolarů",
+                    "one": "východokaribský dolar",
+                    "few": "východokaribské dolary",
+                    "many": "východokaribského dolaru"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR"
+                },
+                "displayName": {
+                    "other": "SDR"
+                }
+            },
+            "XEU": {
+                "symbol": {
+                    "value": "ECU"
+                },
+                "displayName": {
+                    "other": "ECU",
+                    "one": "ECU",
+                    "few": "ECU",
+                    "many": "ECU"
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "value": "XFO"
+                },
+                "displayName": {
+                    "other": "francouzských zlatých franků",
+                    "one": "francouzský zlatý frank",
+                    "few": "francouzské zlaté franky",
+                    "many": "francouzského zlatého franku"
+                }
+            },
+            "XFU": {
+                "symbol": {
+                    "value": "XFU"
+                },
+                "displayName": {
+                    "other": "francouzských UIC franků",
+                    "one": "francouzský UIC frank",
+                    "few": "francouzské UIC franky",
+                    "many": "francouzského UIC franku"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA"
+                },
+                "displayName": {
+                    "other": "CFA/BCEAO franků",
+                    "one": "CFA/BCEAO frank",
+                    "few": "CFA/BCEAO franky",
+                    "many": "CFA/BCEAO franku"
+                },
+                "digits": 0
+            },
+            "XPD": {
+                "symbol": {
+                    "value": "XPD"
+                },
+                "displayName": {
+                    "other": "trojských uncí palladia",
+                    "one": "trojská unce palladia",
+                    "few": "trojské unce palladia",
+                    "many": "trojské unce palladia"
+                }
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF"
+                },
+                "displayName": {
+                    "other": "CFP franků",
+                    "one": "CFP frank",
+                    "few": "CFP franky",
+                    "many": "CFP franku"
+                },
+                "digits": 0
+            },
+            "XPT": {
+                "symbol": {
+                    "value": "XPT"
+                },
+                "displayName": {
+                    "other": "trojských uncí platiny",
+                    "one": "trojská unce platiny",
+                    "few": "trojské unce platiny",
+                    "many": "trojské unce platiny"
+                }
+            },
+            "XRE": {
+                "symbol": {
+                    "value": "XRE"
+                },
+                "displayName": {
+                    "other": "kód fondů RINET"
+                }
+            },
+            "XSU": {
+                "symbol": {
+                    "value": "XSU"
+                },
+                "displayName": {
+                    "other": "sucre"
+                }
+            },
+            "XTS": {
+                "symbol": {
+                    "value": "XTS"
+                },
+                "displayName": {
+                    "other": "kódů zvlášť vyhrazených pro testovací účely",
+                    "one": "kód zvlášť vyhrazený pro testovací účely",
+                    "few": "kódy zvlášť vyhrazené pro testovací účely",
+                    "many": "kódu zvlášť vyhrazeného pro testovací účely"
+                }
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "XXX"
+                },
+                "displayName": {
+                    "other": "neznámá měna"
+                }
+            },
+            "YDD": {
+                "symbol": {
+                    "value": "YDD"
+                },
+                "displayName": {
+                    "other": "jemenských dinárů",
+                    "one": "jemenský dinár",
+                    "few": "jemenské dináry",
+                    "many": "jemenského dináru"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER"
+                },
+                "displayName": {
+                    "other": "jemenských rijálů",
+                    "one": "jemenský rijál",
+                    "few": "jemenské rijály",
+                    "many": "jemenského rijálu"
+                },
+                "digits": 0
+            },
+            "YUD": {
+                "symbol": {
+                    "value": "YUD"
+                },
+                "displayName": {
+                    "other": "jugoslávských dinárů (1966–1990)",
+                    "one": "jugoslávský dinár (1966–1990)",
+                    "few": "jugoslávské dináry (1966–1990)",
+                    "many": "jugoslávského dináru (1966–1990)"
+                }
+            },
+            "YUM": {
+                "symbol": {
+                    "value": "YUM"
+                },
+                "displayName": {
+                    "other": "jugoslávských nových dinárů (1994–2002)",
+                    "one": "jugoslávský nový dinár (1994–2002)",
+                    "few": "jugoslávské nové dináry (1994–2002)",
+                    "many": "jugoslávského nového dináru (1994–2002)"
+                }
+            },
+            "YUN": {
+                "symbol": {
+                    "value": "YUN"
+                },
+                "displayName": {
+                    "other": "jugoslávských konvertibilních dinárů (1990–1992)",
+                    "one": "jugoslávský konvertibilní dinár (1990–1992)",
+                    "few": "jugoslávské konvertibilní dináry (1990–1992)",
+                    "many": "jugoslávského konvertibilního dináru (1990–1992)"
+                }
+            },
+            "YUR": {
+                "symbol": {
+                    "value": "YUR"
+                },
+                "displayName": {
+                    "other": "jugoslávských reformovaných dinárů (1992–1993)",
+                    "one": "jugoslávský reformovaný dinár (1992–1993)",
+                    "few": "jugoslávské reformované dináry (1992–1993)",
+                    "many": "jugoslávského reformovaného dináru (1992–1993)"
+                }
+            },
+            "ZAL": {
+                "symbol": {
+                    "value": "ZAL"
+                },
+                "displayName": {
+                    "other": "jihoafrických finančních randů",
+                    "one": "jihoafrický finanční rand",
+                    "few": "jihoafrické finanční randy",
+                    "many": "jihoafrického finančního randu"
+                }
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR"
+                },
+                "displayName": {
+                    "other": "jihoafrických randů",
+                    "one": "jihoafrický rand",
+                    "few": "jihoafrické randy",
+                    "many": "jihoafrického randu"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R"
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK"
+                },
+                "displayName": {
+                    "other": "zambijských kwach (1968–2012)",
+                    "one": "zambijská kwacha (1968–2012)",
+                    "few": "zambijské kwachy (1968–2012)",
+                    "many": "zambijské kwachy (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW"
+                },
+                "displayName": {
+                    "other": "zambijských kwach",
+                    "one": "zambijská kwacha",
+                    "few": "zambijské kwachy",
+                    "many": "zambijské kwachy"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK"
+                }
+            },
+            "ZRN": {
+                "symbol": {
+                    "value": "ZRN"
+                },
+                "displayName": {
+                    "other": "zairských nových zairů (1993–1998)",
+                    "one": "zairský nový zaire (1993–1998)",
+                    "few": "zairské nové zairy (1993–1998)",
+                    "many": "zairského nového zairu (1993–1998)"
+                }
+            },
+            "ZRZ": {
+                "symbol": {
+                    "value": "ZRZ"
+                },
+                "displayName": {
+                    "other": "zairských zairů (1971–1993)",
+                    "one": "zairský zaire (1971–1993)",
+                    "few": "zairské zairy (1971–1993)",
+                    "many": "zairského zairu (1971–1993)"
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD"
+                },
+                "displayName": {
+                    "other": "zimbabwských dolarů (1980–2008)",
+                    "one": "zimbabwský dolar (1980–2008)",
+                    "few": "zimbabwské dolary (1980–2008)",
+                    "many": "zimbabwského dolaru (1980–2008)"
+                },
+                "digits": 0
+            },
+            "ZWL": {
+                "symbol": {
+                    "value": "ZWL"
+                },
+                "displayName": {
+                    "other": "zimbabwských dolarů (2009)",
+                    "one": "zimbabwský dolar (2009)",
+                    "few": "zimbabwské dolary (2009)",
+                    "many": "zimbabwského dolaru (2009)"
+                }
+            },
+            "ZWR": {
+                "symbol": {
+                    "value": "ZWR"
+                },
+                "displayName": {
+                    "other": "zimbabwských dolarů (2008)",
+                    "one": "zimbabwský dolar (2008)",
+                    "few": "zimbabwské dolary (2008)",
+                    "many": "zimbabwského dolaru (2008)"
+                }
+            }
+        }
+    }
+}

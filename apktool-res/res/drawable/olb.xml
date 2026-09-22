@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <layer-list>
+            <item android:drawable="@drawable/old" />
+        </layer-list>
+    </item>
+    <item android:state_enabled="false">
+        <layer-list>
+            <item android:drawable="@drawable/olc" />
+        </layer-list>
+    </item>
+</selector>

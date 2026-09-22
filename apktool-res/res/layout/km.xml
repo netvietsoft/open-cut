@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.tux.widget.FlexLayout n0:id="@id/status_view_flex_layout" n0:paddingLeft="48.0dp" n0:paddingRight="48.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/top_margin_view" n0:layout_width="wrap_content" n0:layout_height="0.0dp" n1:_q="this.tag==0?         (0.4*parent.height-(icon_iv.visible?114dp:(banner_iv.visible?222dp:42dp)))         :(this.tag==1?         (0.4*parent.height-0.4*(title_tv.height+message_tv.height+button.height+52dp))         :0.5*(parent.height-icon_iv.height-banner_iv.height-illustration_iv.height-title_tv.height-message_tv.height-bottom_margin.height         -((icon_iv.visible||banner_iv.visible||illustration_iv.visible)?16dp:0dp)-(title_tv.visible?8dp:0dp)))"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.bytedance.tux.icon.TuxIconView n0:id="@id/icon_iv" n0:visibility="gone" n0:layout_width="72.0dp" n0:layout_height="72.0dp" n0:contentDescription="@null" n2:APKTOOL_RENAMED_0x7f04060b="50%" n2:_1="prev.bottom"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/banner_iv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:contentDescription="@null" n3:APKTOOL_RENAMED_0x7f04060b="50%" n3:_q="180dp" n3:_1="prev.bottom"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/illustration_iv" n0:visibility="gone" n0:layout_width="130.0dp" n0:layout_height="96.0dp" n0:contentDescription="@null" n4:APKTOOL_RENAMED_0x7f04060b="50%" n4:_1="prev.bottom"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.bytedance.tux.input.TuxTextView n0:gravity="center" n0:id="@id/title_tv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:APKTOOL_RENAMED_0x7f04060b="50%" n5:_1="prev.bottom+((icon_iv.visible||banner_iv.visible||illustration_iv.visible)?16dp:0dp)"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.bytedance.tux.input.TuxTextView n0:gravity="center" n0:id="@id/message_tv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:APKTOOL_RENAMED_0x7f04060b="50%" n6:_1="prev.bottom+(title_tv.visible?8dp:0dp)"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/bottom_margin" n0:layout_width="wrap_content" n0:layout_height="0.0dp" n7:_q="top_margin_view.tag==2?         (parent.height>parent.width?120dp:0dp)         :0dp"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.bytedance.tux.button.TuxButton n0:id="@id/button" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n8:APKTOOL_RENAMED_0x7f04060b="50%" n8:_1="top_margin_view.tag==0?70%+42dp:(         top_margin_view.tag==1?message_tv.bottom+24dp:(parent.height-48dp-this.height))" n8:_3="top_margin_view.tag==1?wrap_content:parent.width"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</com.bytedance.tux.widget.FlexLayout>

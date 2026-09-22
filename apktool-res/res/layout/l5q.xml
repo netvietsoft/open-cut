@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center_horizontal" n0:id="@id/item_container" n0:paddingLeft="@dimen/co" n0:paddingTop="12.0dp" n0:paddingRight="@dimen/co" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="@dimen/co" n0:paddingVertical="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_move_btn" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/qx0" n0:scaleType="centerInside" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.widget.clipedittext.EditModeClipEditText n0:textColorHighlight="#66fccf15" n0:id="@id/tv_paragraph_content" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:textSelectHandleLeft="@drawable/qkv" n0:textSelectHandleRight="@drawable/qkd" n0:textSelectHandle="@drawable/qka" n0:textCursorDrawable="@drawable/qbc" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n2:layout_constraintEnd_toStartOf="@id/iv_move_btn" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:k1j="long_form_script"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/delete_paragraph_btn" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/qxt" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

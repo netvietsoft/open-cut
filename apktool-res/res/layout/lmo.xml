@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/containerView" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundConstraintLayout n0:id="@id/video_view_ly" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:i1="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.gallery.preview.cloud.videoplayer.TTVideoView n0:id="@id/video_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.aimoment.widget.AiMomentSeekBarSliderView n0:id="@id/sliderView" n0:layout_width="match_parent" n0:layout_height="36.0dp" n1:APKTOOL_RENAMED_0x7f0404f1="true" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:kko="@color/APKTOOL_RENAMED_0x7f0605c8" n1:kkt="#444444" n1:kkx="1.0dp" n1:ksr="1.0dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/timeView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="32.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/current" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toStartOf="@id/tvDragTimeDivider" n1:layout_constraintHorizontal_chainStyle="packed" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <View n0:id="@id/tvDragTimeDivider" n0:background="@color/kqz" n0:layout_width="1.0dp" n0:layout_height="4.0dp" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp" n1:layout_constraintBottom_toBottomOf="@id/current" n1:layout_constraintEnd_toStartOf="@id/end" n1:layout_constraintStart_toEndOf="@id/current" n1:layout_constraintTop_toTopOf="@id/current" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#66e5e9fa" n0:id="@id/end" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/tvDragTimeDivider" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.vega.ui.widget.RoundConstraintLayout>
+    <ImageView n0:id="@id/playView" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/otf" n2:layout_constraintBottom_toBottomOf="@id/video_view_ly" n2:layout_constraintEnd_toEndOf="@id/video_view_ly" n2:layout_constraintStart_toStartOf="@id/video_view_ly" n2:layout_constraintTop_toTopOf="@id/video_view_ly"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.RoundConstraintLayout n0:id="@id/loadingView" n0:background="#ff262626" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:i1="16.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <include n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" layout="@layout/lww" />
+    </com.vega.ui.widget.RoundConstraintLayout>
+    <com.vega.ui.widget.RoundConstraintLayout n0:id="@id/tx_retry" n0:background="#ff262626" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n4:i1="16.0dp"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <include n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" layout="@layout/APKTOOL_RENAMED_0x7f0c0463" />
+    </com.vega.ui.widget.RoundConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

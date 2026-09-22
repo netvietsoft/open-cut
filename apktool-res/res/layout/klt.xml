@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/image_color_curves_panel_root" n0:background="@color/APKTOOL_RENAMED_0x7f060021" n0:visibility="invisible" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="412.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:id="@id/tv_color_curves_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/o0z" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/iv_close_color_curves" n0:layout_width="19.0dp" n0:layout_height="13.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/pvj" n0:layout_marginEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/line" n0:background="#29ffffff" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="12.0dp" n3:layout_constraintTop_toBottomOf="@id/tv_color_curves_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <RadioGroup n0:orientation="horizontal" n0:id="@id/rg_color_curves" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/line"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <RadioButton n0:id="@id/rb_color_curves_lightness" n0:background="@drawable/qou" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:checked="true" n0:button="@null" n0:layout_marginHorizontal="10.0dp" />
+        <RadioButton n0:id="@id/rb_color_curves_red" n0:background="@drawable/qov" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:checked="false" n0:button="@null" n0:layout_marginHorizontal="10.0dp" />
+        <RadioButton n0:id="@id/rb_color_curves_green" n0:background="@drawable/qot" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:checked="false" n0:button="@null" n0:layout_marginHorizontal="10.0dp" />
+        <RadioButton n0:id="@id/rb_color_curves_blue" n0:background="@drawable/qos" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:checked="false" n0:button="@null" n0:layout_marginHorizontal="10.0dp" />
+    </RadioGroup>
+    <ImageView n0:id="@id/iv_color_curves_background" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginLeft="20.0dp" n0:layout_marginTop="15.0dp" n0:layout_marginRight="20.0dp" n0:layout_marginBottom="33.0dp" n0:src="@drawable/np_" n0:scaleType="fitXY" n0:layout_marginHorizontal="20.0dp" n5:layout_constraintBottom_toTopOf="@id/tv_reset_color_curves" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/rg_color_curves"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.adjust.view.colorcurves.ColorCurvesView n0:id="@id/color_curves_view" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="7.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="25.0dp" n0:layout_marginHorizontal="12.0dp" n6:layout_constraintBottom_toTopOf="@id/tv_reset_color_curves" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/rg_color_curves"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_e" n0:id="@id/tv_color_curves_coordinate" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="15.0dp" n7:layout_constraintBottom_toTopOf="@id/tv_reset_color_curves" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/tv_reset_color_curves" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_marginBottom="10.0dp" n0:text="@string/qex" n0:drawablePadding="6.0dp" n0:drawableStart="@drawable/och" n0:layout_marginStart="15.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintStart_toStartOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

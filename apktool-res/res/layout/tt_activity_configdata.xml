@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="#fff" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <Button n0:layout_gravity="center_horizontal" n0:id="@id/btn_data_content" n0:layout_width="200.0dp" n0:layout_height="wrap_content" n0:text="click to copy" />
+    <ScrollView n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <TextView n0:id="@id/tv_data_content" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:textIsSelectable="true" />
+    </ScrollView>
+</LinearLayout>

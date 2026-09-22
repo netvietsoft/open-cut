@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:background="@drawable/APKTOOL_RENAMED_0x7f08036d" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:minWidth="52.0dp" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:id="@id/tv_mode_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="1" n0:includeFontPadding="false" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_mode_arrow" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0804b3" n0:scaleType="center" n0:importantForAccessibility="no" n0:layout_marginStart="4.0dp" />
+</LinearLayout>

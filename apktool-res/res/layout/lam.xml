@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/mtrl_calendar_text_input_frame" n0:paddingLeft="@dimen/wt" n0:paddingTop="@dimen/w_" n0:paddingRight="@dimen/wt" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout n0:id="@id/mtrl_picker_text_input_date" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:hint="@string/qlm" n0:inputType="date" n0:imeOptions="flagNoExtractUi" />
+    </com.google.android.material.textfield.TextInputLayout>
+</FrameLayout>

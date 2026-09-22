@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/backBtn" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08053c" n0:layout_marginHorizontal="12.0dp" n1:layout_constraintBottom_toBottomOf="@id/tabLayout" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/tabLayout"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/tabLayout" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n2:layout_constraintEnd_toStartOf="@id/closeBtn" n2:layout_constraintStart_toEndOf="@id/backBtn" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/tabRv" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.vega.lvui.widget.TabIndicator n0:id="@id/tabIndicator" n0:layout_width="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/tabRv" n2:layout_constraintEnd_toEndOf="@id/tabRv" n2:layout_constraintStart_toStartOf="@id/tabRv" style="@style/u_" />
+        <View n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n2:layout_constraintBottom_toBottomOf="@id/tabIndicator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:id="@id/closeBtn" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:src="@drawable/l5n" n0:layout_marginHorizontal="12.0dp" n3:layout_constraintBottom_toBottomOf="@id/tabLayout" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/tabLayout" n3:layout_constraintTop_toTopOf="@id/tabLayout"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/mp" n0:id="@id/tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="12.0dp" n0:text="@string/nbs" n0:layout_marginHorizontal="12.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tabLayout" n4:k1g="text" n4:k1i="regular" n4:k1j="body_2"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.viewpager2.widget.ViewPager2 n0:id="@id/viewPager2" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginTop="12.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/tips"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" layout="@layout/lwu"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.LoadingView n0:id="@id/loadingView" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/loadingEmpty" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="parent" layout="@layout/lrr"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/retryButton" n0:background="@drawable/k3_" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="40.0dp" n0:layout_marginStart="30.0dp" n0:layout_marginEnd="30.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <ImageView n0:id="@id/retryIcon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:srcCompat="@drawable/odn" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#ffffff" n0:id="@id/retryText" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="10.0dp" n0:text="@string/qfa" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toEndOf="@id/retryIcon" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#afafb6" n0:id="@id/doneButton" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="30.0dp" n0:text="@string/lj-" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/retryButton"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

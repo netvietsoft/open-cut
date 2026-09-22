@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:tag="layout/xt_fragment_business_panel_sub_jigsaw_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_ratios" n0:paddingTop="6.0dp" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:overScrollMode="never" />
+    <androidx.viewpager2.widget.ViewPager2 n0:id="@id/vp_jigsaw_list" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</LinearLayout>

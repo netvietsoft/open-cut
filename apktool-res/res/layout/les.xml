@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clRoot" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.view.ExpandCoordinatorLayout n0:id="@id/expandCoordinatorLayout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout n0:id="@id/appBarLayout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:elevation="0.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.google.android.material.appbar.CollapsingToolbarLayout n0:id="@id/toolBarLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap">
+                <View n0:id="@id/varHeightMaxView" n0:layout_width="match_parent" n0:layout_height="0.0dp" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clAppbarLayout" n0:background="@drawable/pc5" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent">
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/tabRv" n0:layout_width="0.0dp" n0:layout_height="47.0dp" n0:layout_marginStart="@dimen/cu" n1:layout_constraintEnd_toStartOf="@id/newBtnOk" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                <com.vega.lvui.widget.TabIndicator n0:id="@id/tabIndicator" n0:layout_width="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="@id/tabRv" n1:layout_constraintStart_toStartOf="@id/tabRv" style="@style/u_" />
+                <com.vega.ui.AlphaButton n0:id="@id/newBtnOk" n0:paddingTop="14.0dp" n0:paddingBottom="13.0dp" n0:layout_width="46.0dp" n0:layout_height="47.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082eb4" n0:paddingStart="10.0dp" n0:paddingEnd="16.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                <com.vega.ui.AlphaButton n0:id="@id/btnOk2" n0:visibility="gone" n0:layout_width="46.0dp" n0:layout_height="47.0dp" n0:src="@drawable/o21" n0:scaleType="centerInside" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                <View n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toBottomOf="@id/tabRv" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_title_manage" n0:background="@drawable/pc5" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:layout_constraintTop_toTopOf="parent">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p5a" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ccffffff" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/vtv_manage_done" n0:paddingLeft="15.0dp" n0:paddingRight="15.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/p42" n0:paddingHorizontal="15.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:k1i="medium" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.vega.ui.NoScrollViewPager n0:id="@id/viewPager" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/clAppbarLayout"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/viewPager2" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_behavior="@string/appbar_scrolling_view_behavior" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/clAppbarLayout"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </com.vega.edit.base.view.ExpandCoordinatorLayout>
+    <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" layout="@layout/lwu"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.LoadingView n0:id="@id/loadingView" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n0:layout_centerInParent="true" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.view.BusinessBottomBarView n0:id="@id/business_bottom_bar_view" n0:background="#fa242424" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="36.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

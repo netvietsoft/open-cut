@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:focusable="true" n0:clickable="true" n0:layout_width="266.0dp" n0:layout_height="wrap_content" n0:minWidth="266.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/_3" n0:gravity="center_horizontal" n0:id="@id/compress_tip_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="30.0dp" n0:text="@string/qx7" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.ContentTextView n0:textSize="14.0dp" n0:textColor="@color/_3" n0:id="@id/dialog_tips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1213af" n0:lineSpacingExtra="@dimen/pa" n0:breakStrategy="high_quality" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/compress_tip_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.StrongButton n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/btnCompressKnown" n0:background="@drawable/qpm" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginBottom="30.0dp" n0:text="@string/mwh" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/dialog_tips"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/knv" n0:gravity="center" n0:id="@id/ivCompressTipsClose" n0:background="@drawable/qps" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="@dimen/pz" n0:layout_marginRight="30.0dp" n0:layout_marginBottom="@dimen/py" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/btnCompressKnown"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

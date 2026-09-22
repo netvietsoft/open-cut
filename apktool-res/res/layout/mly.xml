@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_activity_common_cutout_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView n0:name="com.xt.edit.picture.PictureFragment" n0:id="@id/fragment_picture" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f070513" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/shared_mask" n0:background="@color/ksh" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.SharedImageView n0:id="@id/shared_image_view" n0:background="@color/ksh" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitCenter" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/gesture_view_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/cutout_fragment_container" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

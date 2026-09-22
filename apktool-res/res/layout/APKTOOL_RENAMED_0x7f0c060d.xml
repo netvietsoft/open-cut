@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingLeft="6.0dp" n0:paddingRight="6.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:paddingHorizontal="6.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_close" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/fw" n0:scaleType="centerInside" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/ll_actions" n0:layout_width="wrap_content" n0:layout_height="match_parent" n2:layout_constraintEnd_toEndOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="start" n0:id="@id/iv_arrow_up" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m4y" />
+    <LinearLayout n0:orientation="vertical" n0:background="@drawable/ke2" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textStyle="bold" n0:textColor="#8015293c" n0:id="@id/tv_title" n0:paddingTop="18.0dp" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Content Feedback" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_dislike_options" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <ImageView n0:layout_gravity="start" n0:id="@id/iv_arrow_down" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m33" />
+</LinearLayout>

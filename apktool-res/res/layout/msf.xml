@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_item_effect_item_0" n0:background="@color/kui" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070465" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070464"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_icon" n0:background="@color/kui" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/select_view" n0:background="#00000000" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/select_icon" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/rep" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center" n0:id="@id/iv_retry" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/reo" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center" n0:id="@id/download_retry" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:src="@drawable/rae" n0:scaleType="centerCrop" />
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center" n0:id="@id/loading" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n1:lottie_fileName="loading_white.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatTextView n0:textColor="@color/ktx" n0:gravity="center" n0:layout_gravity="center|bottom" n0:id="@id/tv_name" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:maxLines="1" n2:autoSizeMaxTextSize="9.0sp" n2:autoSizeMinTextSize="6.0sp" n2:bp="1.0sp" n2:autoSizeTextType="uniform"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:layout_gravity="end|top" n0:id="@id/fl_top_right_icon" n0:background="@drawable/r-j" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="15.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/r6-" n0:scaleType="centerInside" n0:layout_marginEnd="3.0dp" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:id="@id/iv_limit_free" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:src="@drawable/rlj" n0:scaleType="centerInside" n0:layout_marginEnd="2.0dp" />
+    </FrameLayout>
+    <TextView n0:textSize="8.0dp" n0:textColor="@android:color/black" n0:layout_gravity="end|top" n0:id="@id/tv_limit_free" n0:background="@drawable/q81" n0:paddingLeft="2.0dp" n0:paddingRight="2.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/to0" n0:layout_marginEnd="2.0dp" n0:paddingHorizontal="2.0dp" />
+</FrameLayout>

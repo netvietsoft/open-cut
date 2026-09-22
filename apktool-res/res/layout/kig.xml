@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@color/APKTOOL_RENAMED_0x7f0604d9" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/fl_gallery_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_crop_layout" n0:background="@color/rj" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottomRL" n0:layout_width="0.0dp" n0:layout_height="50.0dp" n0:layout_alignParentBottom="true" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:id="@id/close" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m6s" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <com.vega.theme.VegaButton n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/r0" n0:id="@id/confirm" n0:background="@color/rj" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:text="@string/lz6" n0:inputType="textCapWords" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.vega.feedx.information.widge.AvatarCropView n0:id="@id/avatarCropIv" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginBottom="50.0dp" n0:scaleType="center" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

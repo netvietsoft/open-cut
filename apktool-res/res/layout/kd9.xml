@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:layout_marginStart="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#801c283d" n0:id="@id/scene_list_subtitle" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="24.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/scene_list_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

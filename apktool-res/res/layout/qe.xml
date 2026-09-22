@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/bottom_tab" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <Button n0:id="@id/btn_control_panel" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Operation area" n0:layout_weight="1.0" />
+        <Button n0:textColor="#00d" n0:id="@id/btn_log_panel" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Log" n0:layout_weight="1.0" />
+        <Button n0:textColor="#099" n0:id="@id/btn_status_panel" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Status" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toTopOf="@id/bottom_tab" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_bias="0.0"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <GridLayout n0:id="@id/control_panel" n0:paddingLeft="8.0dp" n0:paddingTop="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:columnCount="12" n0:paddingHorizontal="8.0dp">
+            <TextView n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Pre-check:" n0:layout_columnSpan="12" n0:layout_columnWeight="1.0" />
+            <Button n0:id="@id/btn_check_step" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Equipment ban check" n0:layout_columnSpan="12" n0:layout_columnWeight="1.0" />
+            <GridLayout n0:background="#3a0a" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:columnCount="12" n0:layout_columnSpan="12" n0:layout_columnWeight="1.0">
+                <TextView n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Three-party authorization:" n0:layout_columnSpan="12" n0:layout_columnWeight="1.0" />
+                <Button n0:id="@id/btn_tt_auth" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Tiktok Authorization" n0:layout_columnSpan="6" n0:layout_columnWeight="6.0" />
+                <Button n0:id="@id/btn_gg_auth" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Google Authorization" n0:layout_columnSpan="6" n0:layout_columnWeight="6.0" />
+                <Button n0:id="@id/btn_fb_auth" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Facebook Authorization" n0:layout_columnSpan="6" n0:layout_columnWeight="6.0" />
+                <Button n0:id="@id/btn_aweme_auth" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="TikTok Authorization (Not Supported)" n0:layout_columnSpan="6" n0:layout_columnWeight="6.0" />
+                <TextView n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Third-party login:" n0:layout_columnSpan="12" n0:layout_columnWeight="1.0" />
+                <Button n0:id="@id/btn_tt_login" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Tiktok Log in" n0:layout_columnSpan="6" n0:layout_columnWeight="6.0" />
+                <Button n0:id="@id/btn_gg_login" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Google Log in" n0:layout_columnSpan="6" n0:layout_columnWeight="6.0" />
+                <Button n0:id="@id/btn_fb_login" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Facebook Log in" n0:layout_columnSpan="6" n0:layout_columnWeight="6.0" />
+                <TextView n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Tri-party registration:" n0:layout_columnSpan="12" n0:layout_columnWeight="1.0" />
+                <Button n0:id="@id/btn_birthday_step" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Fill in the birthday." n0:layout_columnSpan="4" n0:layout_columnWeight="4.0" />
+                <Button n0:id="@id/btn_register_account" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Register new user" n0:layout_columnSpan="4" n0:layout_columnWeight="4.0" />
+                <Button n0:id="@id/btn_update_info" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Update user information" n0:layout_columnSpan="4" n0:layout_columnWeight="4.0" />
+            </GridLayout>
+            <LinearLayout n0:orientation="vertical" n0:background="#3aa0" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_columnSpan="6" n0:layout_columnWeight="6.0">
+                <TextView n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email login:" />
+                <Button n0:id="@id/btn_launch_email_process" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Test email login link" />
+                <Button n0:id="@id/btn_launch_email_login" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email login" />
+                <TextView n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email password forgotten:" />
+                <Button n0:id="@id/btn_launch_email_forget_pwd" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email password forgotten" />
+                <Button n0:id="@id/btn_launch_email_forget_pwd_verify" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email password reset verification code" />
+                <TextView n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email registration:" />
+                <Button n0:id="@id/btn_launch_email_register" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email registration code" />
+                <Button n0:id="@id/btn_launch_email_register_verify" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email registration verification code" />
+                <Button n0:id="@id/btn_launch_email_create_pwd" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email registration password setup" />
+                <Button n0:id="@id/btn_launch_email_set_birthday" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email settings birthday" />
+                <Button n0:id="@id/btn_launch_email_set_nickname" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Email settings nickname" />
+            </LinearLayout>
+            <LinearLayout n0:orientation="vertical" n0:background="#30aa" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_columnSpan="6" n0:layout_columnWeight="6.0">
+                <TextView n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="SMS login:" />
+                <Button n0:id="@id/btn_launch_sms_process" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Test SMS login link" />
+                <Button n0:enabled="true" n0:id="@id/btn_launch_sms_login" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="SMS login" />
+                <Button n0:enabled="true" n0:id="@id/btn_launch_sms_login_verify" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="SMS verification code" />
+                <TextView n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="SMS registration:" />
+                <Button n0:enabled="true" n0:id="@id/btn_launch_sms_register" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="SMS registration code dispatch" />
+                <Button n0:enabled="true" n0:id="@id/btn_launch_sms_register_verify" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="SMS registration verification code" />
+                <Button n0:enabled="true" n0:id="@id/btn_launch_sms_set_birthday" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="SMS birthday settings" />
+                <Button n0:enabled="true" n0:id="@id/btn_launch_sms_set_nickname" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="SMS settings nickname" />
+            </LinearLayout>
+            <TextView n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Others:" n0:layout_columnSpan="12" n0:layout_columnWeight="1.0" />
+            <Button n0:id="@id/btn_logout" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Log out" n0:layout_columnSpan="4" n0:layout_columnWeight="4.0" />
+            <Button n0:id="@id/btn_clear_log" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Clear logs" n0:layout_columnSpan="4" n0:layout_columnWeight="4.0" />
+            <Button n0:enabled="false" n0:id="@id/btn_update_login_status" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="Refresh login status" n0:layout_columnSpan="4" n0:layout_columnWeight="4.0" />
+        </GridLayout>
+    </ScrollView>
+    <ScrollView n0:id="@id/log_panel" n0:background="#d007" n0:paddingLeft="8.0dp" n0:paddingTop="8.0dp" n0:paddingRight="8.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:paddingHorizontal="8.0dp" n3:layout_constraintBottom_toTopOf="@id/bottom_tab" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textColor="#fff" n0:id="@id/console" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:textIsSelectable="true" />
+    </ScrollView>
+    <ScrollView n0:id="@id/status_panel" n0:background="#d077" n0:paddingLeft="8.0dp" n0:paddingTop="8.0dp" n0:paddingRight="8.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:paddingHorizontal="8.0dp" n4:layout_constraintBottom_toTopOf="@id/bottom_tab" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textColor="#fff" n0:id="@id/status_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:textIsSelectable="true" />
+    </ScrollView>
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragment_container" n0:background="#fff" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

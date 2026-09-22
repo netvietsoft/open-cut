@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/omq" android:maxLevel="0" />
+    <item android:maxLevel="1">
+        <layer-list>
+            <item android:gravity="end|top" android:drawable="@drawable/l_y" />
+            <item android:drawable="@drawable/omq" />
+        </layer-list>
+    </item>
+</level-list>

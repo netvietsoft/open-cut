@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@android:color/black" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.image.edit.template.view.detail.DetailPagerRecyclerView n0:id="@id/viewPager" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never" />
+    <FrameLayout n0:id="@id/backButton" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginStart="12.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <View n0:layout_gravity="center" n0:background="@drawable/kv0" n0:layout_width="32.0dp" n0:layout_height="32.0dp" />
+        <ImageView n0:layout_gravity="center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/m69" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

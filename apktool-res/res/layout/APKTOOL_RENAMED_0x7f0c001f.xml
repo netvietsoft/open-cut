@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.tux.widget.FlexLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n0:importantForAccessibility="noHideDescendants"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/message_ll" n0:padding="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:APKTOOL_RENAMED_0x7f04060b="50%" n1:APKTOOL_RENAMED_0x7f04060c="50%"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.bytedance.tux.status.loading.TuxDualBallView n0:layout_gravity="center_horizontal" n0:id="@id/loading_ball_view" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_margin="6.0dp" />
+        <com.bytedance.tux.input.TuxTextView n0:gravity="center_horizontal" n0:layout_gravity="center_horizontal" n0:id="@id/message_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxWidth="228.0dp" n0:minWidth="68.0dp" />
+    </LinearLayout>
+</com.bytedance.tux.widget.FlexLayout>

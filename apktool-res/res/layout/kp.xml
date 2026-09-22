@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center" n0:layout_gravity="end|center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.tux.input.TuxTextView n0:id="@id/label_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <com.bytedance.tux.icon.TuxIconView n0:id="@id/icon_iv" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n1:khh="16.0dp" n1:kh-="16.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</androidx.appcompat.widget.LinearLayoutCompat>

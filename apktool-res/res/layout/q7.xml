@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/editParentRoot" n0:background="@color/r5" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.stateui.StateUiLayout n0:id="@id/editStateUiLayout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <include layout="@layout/ltd" />
+        <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.editpage.fragment.EditPreviewFragment" n0:id="@id/previewerContainer" n0:layout_width="match_parent" n0:layout_height="300.0dp" />
+        <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.editpage.fragment.EditPlayerControlFragment" n0:id="@id/playControlContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.editpage.fragment.EditDockerFragment" n0:id="@id/dockerContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <FrameLayout n0:id="@id/galleryAddButtonContainer" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.vega.ui.AlphaTextButton n0:layout_gravity="center" n0:id="@id/ivAdd2" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="25.0dp" n0:text="@string/mrp" n0:drawableTop="@drawable/mas" n0:drawablePadding="5.0dp" />
+        </FrameLayout>
+        <FrameLayout n0:id="@id/exportBottomPanelCloseBtnContainer" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:alpha="0.0">
+            <com.vega.ui.TintTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="end" n0:layout_gravity="end" n0:id="@id/ivExport_close" n0:paddingLeft="16.0dp" n0:paddingTop="8.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="8.0dp" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:paddingHorizontal="16.0dp" n0:paddingVertical="8.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <com.vega.edit.export.view.InterceptEventFrameLayout n0:id="@id/exportBottomPanelContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.editpage.fragment.EditTrackFragment" n0:id="@id/trackContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <FrameLayout n0:id="@id/galleryContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.editpage.fragment.EditPanelFragment" n0:layout_gravity="start|bottom" n0:id="@id/panelFragmentContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <FrameLayout n0:layout_gravity="start|bottom" n0:id="@id/panelContainerExtra" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:animateLayoutChanges="true" />
+        <FrameLayout n0:layout_gravity="start|bottom" n0:id="@id/extraContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <View n0:id="@id/varHeightViewVirtualView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <View n0:id="@id/searchVarHeightMaxVirtualView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <View n0:id="@id/timelineWithPlayBarVirtual" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <include layout="@layout/dh" />
+    </com.vega.ui.stateui.StateUiLayout>
+    <ViewStub n0:layout_gravity="center|bottom" n0:id="@id/tutorial_pop_stub" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" />
+    <FrameLayout n0:id="@id/dragSelectedImageContainer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <View n0:id="@id/panelMaskView" n0:background="@color/sg" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:alpha="0.0" />
+    <LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/enterpriseCopyRightContainer" n0:background="@color/_3" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:layout_gravity="bottom" n0:id="@id/fragment_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <com.vega.edit.base.view.VipPreviewBottomLayout n0:id="@id/fl_vip_float_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <include n0:id="@id/fl_vip_float_toast" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="13.0dp" n0:layout_marginEnd="13.0dp" layout="@layout/mk7" />
+    <FrameLayout n0:id="@id/management_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <View n0:id="@id/viewDisableLayout" n0:background="#00000000" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.edit.base.view.BusinessBottomBarView n0:layout_gravity="bottom" n0:id="@id/business_bottom_bar_view" n0:background="#fa242424" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="36.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/cl_bottom_info_container" n0:background="#fa242424" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="44.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:ellipsize="end" n0:id="@id/tvAuthorName" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:maxWidth="60.0dp" n0:maxLines="1" n0:layout_marginStart="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/tvAuthorCollection" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/sVAuthorAvatar"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/sVAuthorAvatar" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n3:layout_constraintBottom_toTopOf="@id/tvAuthorName" n3:layout_constraintEnd_toEndOf="@id/tvAuthorName" n3:layout_constraintStart_toStartOf="@id/tvAuthorName" n3:layout_constraintTop_toTopOf="parent" n3:layout_constraintVertical_chainStyle="packed" n3:roundedCornerRadius="8.0dp"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:id="@id/tvAuthorCollection" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/ltk" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/tvAuthorName" n4:layout_constraintTop_toBottomOf="@id/ivAuthorCollection"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/ivAuthorCollection" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pqs" n5:layout_constraintBottom_toTopOf="@id/tvAuthorCollection" n5:layout_constraintEnd_toEndOf="@id/tvAuthorCollection" n5:layout_constraintStart_toStartOf="@id/tvAuthorCollection" n5:layout_constraintTop_toTopOf="parent" n5:layout_constraintVertical_chainStyle="packed"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_business_copyright_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent"
+          xmlns:n6="http://schemas.android.com/apk/res-auto">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clBusinessTextContainer" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="9.0dp" n6:layout_constrainedWidth="true" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toStartOf="@id/iv_close_business_copyright_info" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent">
+                <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:gravity="start" n0:id="@id/tv_business_copyright_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n6:layout_constrainedWidth="true" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/iv_business_copyright_info" />
+                <ImageView n0:id="@id/iv_business_copyright_info" n0:padding="1.0dp" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/nq6" n6:layout_constraintBottom_toTopOf="@id/tv_business_copyright_info" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintHorizontal_chainStyle="packed" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" n6:layout_constraintVertical_chainStyle="packed" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView n0:id="@id/iv_close_business_copyright_info" n0:background="@drawable/m9r" n0:visibility="gone" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_marginEnd="7.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout n0:layout_gravity="bottom" n0:id="@id/snackbarContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="70.0dp" n0:layout_marginHorizontal="16.0dp" />
+    <View n0:id="@id/view_comparing_mask" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.fragment.app.FragmentContainerView n0:layout_gravity="bottom" n0:id="@id/agentPanelContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <View n0:id="@id/videoAgentClickMask" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.aivideoagent.cc_ui.view.AgentFloatBall n0:layout_gravity="bottom" n0:id="@id/videoAgentFloatBall" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <ViewStub n0:layout_gravity="bottom" n0:id="@id/videoAgentFloatBallV2Stub" n0:layout="@layout/mke" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+</FrameLayout>

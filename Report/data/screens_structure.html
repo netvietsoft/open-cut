@@ -1,0 +1,3967 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>CapCut 19.4.0 — Cấu trúc Màn hình & Navigation Flow</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 24px; }
+  h1, h2, h3 { color: #38bdf8; }
+  .header { border-bottom: 2px solid #334155; padding-bottom: 16px; margin-bottom: 24px; }
+  .flow-card { background: #1e293b; border-radius: 8px; padding: 16px; margin-bottom: 16px; border-left: 4px solid #38bdf8; }
+  .tabs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .tab-card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 16px; }
+  .tab-card h4 { margin: 0 0 8px 0; color: #a855f7; }
+  table { width: 100%; border-collapse: collapse; margin-top: 16px; background: #1e293b; border-radius: 8px; overflow: hidden; }
+  th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #334155; font-size: 13px; }
+  th { background: #0f172a; color: #94a3b8; text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em; }
+  tr:hover { background: #243248; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 11px; font-weight: 600; }
+  .badge-exported { background: #ef444422; color: #f87171; border: 1px solid #ef444466; }
+  .badge-private { background: #10b98122; color: #34d399; border: 1px solid #10b98166; }
+  .badge-cat { background: #38bdf822; color: #38bdf8; border: 1px solid #38bdf866; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>CapCut 19.4.0 (Global) — Báo Cáo Cấu Trúc Màn Hình & Điều Hướng</h1>
+  <p>Package: <code>com.lemon.lvoverseas</code> | Version: 19.4.0 (19400300) | Tổng số Activities: 485</p>
+</div>
+
+<h2>1. Cấu Trúc Điều Hướng Gốc (Bottom Navigation Flow)</h2>
+<div class="tabs-grid">
+
+  <div class="tab-card">
+    <h4>Chỉnh sửa (Edit / Projects)</h4>
+    <p style="font-size: 13px; color: #94a3b8;"><strong>Component:</strong> <code>com.vega.main.MainActivity</code></p>
+    <p style="font-size: 13px; color: #cbd5e1;">Quản lý dự án, tạo dự án mới, Import media, Cloud sync, công cụ chỉnh sửa nhanh</p>
+  </div>
+
+  <div class="tab-card">
+    <h4>Mẫu (Templates / Feed)</h4>
+    <p style="font-size: 13px; color: #94a3b8;"><strong>Component:</strong> <code>com.vega.feedx.main.ui.LynxTemplateMainTabFragment</code></p>
+    <p style="font-size: 13px; color: #cbd5e1;">Khám phá video mẫu cộng đồng, một chạm tạo video (CutSame/AutoCut)</p>
+  </div>
+
+  <div class="tab-card">
+    <h4>AI Lab (Sáng tạo AI)</h4>
+    <p style="font-size: 13px; color: #94a3b8;"><strong>Component:</strong> <code>com.vega.ailabagent.unifyagent.AiLabAgentChatActivity</code></p>
+    <p style="font-size: 13px; color: #cbd5e1;">Trò chuyện với AI Agent, tạo kịch bản, Prompt-to-video, AI avatar, Voice clone</p>
+  </div>
+
+  <div class="tab-card">
+    <h4>Hộp công cụ (Toolbox / Property)</h4>
+    <p style="font-size: 13px; color: #94a3b8;"><strong>Component:</strong> <code>com.vega.main.home.ui.HomeTabRefreshViewContent</code></p>
+    <p style="font-size: 13px; color: #cbd5e1;">Xóa phông (Cutout), Làm mịn da (Retouch), Chỉnh sửa hàng loạt, Mẫu thông minh</p>
+  </div>
+
+  <div class="tab-card">
+    <h4>Hộp thư (Messages)</h4>
+    <p style="font-size: 13px; color: #94a3b8;"><strong>Component:</strong> <code>com.vega.feedx.message.ui.MessageActivity</code></p>
+    <p style="font-size: 13px; color: #cbd5e1;">Thông báo hệ thống, bình luận mẫu, thông báo creator, cập nhật tính năng</p>
+  </div>
+
+  <div class="tab-card">
+    <h4>Tôi (Profile / Account)</h4>
+    <p style="font-size: 13px; color: #94a3b8;"><strong>Component:</strong> <code>com.vega.feedx.information.ui.FeedUserEditActivity</code></p>
+    <p style="font-size: 13px; color: #cbd5e1;">Thông tin cá nhân, cài đặt tài khoản, quản lý gói CapCut Pro, tác phẩm đã lưu</p>
+  </div>
+
+</div>
+
+<h2>2. Danh Sách Chi Tiết Màn Hình Theo Phân Hệ Chức Năng</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Phân hệ</th>
+      <th>Activity / Screen Class</th>
+      <th>Trạng thái</th>
+      <th>Launch Mode</th>
+      <th>Deep Links & Schemes</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.DeeplinkActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTop</td>
+      <td>capcut://; capcut1380://; capcut1760://</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.ApplinksHandlerActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTop</td>
+      <td>https://, ://www.capcut.com</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.init.core.NotifyActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>snssdk3006://</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.MainActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.LoadingDialogActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.safemode.SafeModeWebActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.ImportFontsShareActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.ShareFromOutsideActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.EditShareActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.UploadShareActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.RemoveBackgroundShareActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.RetouchShareActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.home.toolpage.capture.VideoCaptureMiddleWareActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.videocapture.VideoCaptureEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.core.popmanager.PopMockSwitchActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.homepage.UserActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.follow.ui.FollowActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.feedx.main.ui.preview.SingleFeedPreviewBridgeActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.feedx.main.ui.preview.TransparentSingleFeedPreviewBridgeActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.feedx.main.ui.preview.SingleFeedPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.feedx.util.GotoDraftEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.feedx.main.ui.preview.MultiFeedPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.information.ui.FeedAvatarActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.information.ui.FeedAvatarCropActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.feedx.information.ui.FeedUserEditDescriptionActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.feedx.information.ui.FeedUserEditUniqueIDActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.feedx.information.ui.FeedUserEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.information.ui.InstagramAuthActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.information.ui.ThirdPartyProfileActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.recommend.FeedRecommendActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.homepage.black.BlackListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.feedx.main.ui.preview.VideoPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.material.FeedInspirationInterActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.homepage.account.AccountManagerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.message.ui.MessageDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.message.ui.MessageActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.feedx.main.team.TeamTemplateActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedx.nativefeed.FeedContainerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.web.WebActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.web.TransWebActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.web.ResearchActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.web.OuterWebActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.web.photo.PreviewPhotoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.home.ui.RetouchDeeplinkActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.home.ui.AIModelDeeplinkActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.tutorial.FunctionTutorialActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.xigua.TrainWorkSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.home.SelectPhotoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.LynxActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.TransLynxActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.FullScreenLynxActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.RetouchLynxActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.home.ui.AIPaintingDeeplinkActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.appwidget.response.WRetouchResponseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.appwidget.response.WRemoveBgResponseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.appwidget.response.WNewProjectResponseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.appwidget.response.WCameraResponseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.appwidget.response.WClickDraft1ResponseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.appwidget.response.WClickDraft2ResponseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.appwidget.response.WClickDraft3ResponseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.appwidget.response.WidgetResponseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.pop.test.TestPopCenterActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.appwidget.response.BaseTemplateWidgetResponseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.localdraft.SelectDraftForTopicActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.localdraft.SelectDraftForTeamActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.localdraft.IMSelectDraftActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.localdraft.SelectDraftActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vege.genai.history.GenAiHistoryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vege.genai.main.activity.GenAiMainActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vege.genai.main.activity.GenAiTemplateActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vege.genai.preview.PreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vege.genai.preview.AiCommonPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.MediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.ScriptVideoMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.VoiceoverAlbumActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.CC4BAlbumActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.RetouchAIModelGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.RetouchMultiSelectPhotoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.MultimodalSearchAlbumActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.gallery.activity.TemplateGenMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.gallery.activity.AutoCutAgentGenMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.gallery.activity.TemplateGenGuideMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.CollageSelectMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.gallery.activity.ImageEditPhotoSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.QualityEnhanceMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.BgRemoveMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.AiImageInterpretationMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.NewDigitalHumansMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.NewVideoTranslateMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.NewLipSyncMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.gallery.activity.EditPilotMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.VideoCaptureMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.ModelDressUpMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.gallery.activity.ImageEditMediaSelectToolActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.AIClipperMediaSelectToolActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.gallery.activity.CoverEditToolMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.GalleryMediaProjectSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.gallery.activity.ImageEditMediaSelectHomeActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.SmartAdsMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.TextExtractionMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.GenAIMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.AiCommonSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.activity.MaterialPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.digitalportraitimpl.DigitalPortraitActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.digitalportraitimpl.property.PropertyPortraitActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.digitalportraitimpl.view.AiEffectEditPortraitActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.export.edit.view.ExportActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.export.edit.view.ImageExportActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.exort.template.TemplateExportActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.export.template.view.TemplateExportActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.lemon.adproduce.TemplateCreationActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Export &amp; Publishing</span></td>
+      <td><code>com.vega.export.business.BusinessExportActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.export.edit.view.share.join.JoinTemplateAndTutorialActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.export.retouch.view.RetouchTemplateExportActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.ad.view.FullScreenNativeAdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.ad.view.AdToolActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.lemon.vega.ug.ui.DiversionPCActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.vega.ug.ui.NoLoginDiversionPCActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.lemon.vega.ug.ui.ExternalDiversionConfirmActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.unifyagent.AiLabAgentChatActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.trendsagent.AiLabTrendsAgentChatActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.trendsagent.AiTrendsTemplateUserInputActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.ailabagent.common.edit.DraftPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.common.utils.ExportDialogActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.demo.TemplateListDemoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.demo.DocumentFilePickerDemoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.feedback.AiLabFeedbackActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.feedback.AiLabFeedbackHistoryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.feedback.MeegoStoryPickerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.unifyagent.preview.AiLabAgentUniversalPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.unifyagent.preview.userasset.UserAssetPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.unifyagent.share.AiLabAgentShareActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.ailabagent.common.history.HistoryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.EditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.editpage.activity.EditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.livephoto.activity.LiveEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.video.view.VideoFrameAdjustActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.outpainting.activity.VideoFrameAdjustNewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.image.view.edits.crop.ImageCropActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.video.view.ReplaceVideoSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.TextToVideoEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.TextToVideoReplaceActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.ttv.edit.TextToVideoAddActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.TextToVideoRecordActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.digitalhuman.digital.template.intelligent.detail.DigitalHumanTemplateFeedActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.image.edit.main.view.ImageEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.image.edit.canvasedit.partialadjust.ImageEditPartialAdjustActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.aiclipper.panel.aiedit.AiEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.aiclipper.panel.aiedit.AiEditActivityV2</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.gallery.activity.AiChatEditSelectMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.materialgeneration.preview.MaterialGenerationReferencePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.materialgeneration.preview.MaterialGenerationAudioTrimActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.image.edit.component.debug.viewer.ImageDraftViewerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.publish.template.publish.view.TemplatePublishActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.publish.template.publish.view.PublishSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.publish.template.publish.view.TeamTemplatePublishEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.publish.template.publish.view.SelectTutorialMaterialActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.publish.template.publish.view.ManageTutorialMaterialActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Export &amp; Publishing</span></td>
+      <td><code>com.vega.publish.aipost.preview.view.AIPostPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.templatepublish.musicreplace.ReplaceMusicActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.multicutsame.smartvlog.view.activity.SmartVlogPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.multicutsame.view.MultiCutSamePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.multitemplate.view.MultiTemplateSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.activity.AiGenerateResultReportActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.libcutsame.activity.LiteEditorActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.select.view.CutSameSelectMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.select.view.CutSameSelectMediaWithoutSelectMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.select.view.CutSameQuickShootActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.activity.CutSameReplaceMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.activity.CutSameLoadDraftActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.activity.RecordSamePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.retouch.template.RetouchReplacePhotoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.retouch.RetouchTemplateImageGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.retouch.RetouchEditorImageGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.template.mediaselect.ScriptTemplateMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.marketingscript.mediaselect.addselect.MarketingScriptAddSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.marketingscript.mediaselect.metainfo.MetaInfoInputActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.smarttemplate.mediaselect.SmartTemplateSelectMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.smarttemplate.mediaselect.addselect.SmartTemplateAddSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.home.HomeAiEffectMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.activity.DraftMediaSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.aiworkflow.view.FlexActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.libcutsame.aiworkflow.view.ImagePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.aigc.ImageTemplatePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Export &amp; Publishing</span></td>
+      <td><code>com.vega.share.bdopen.BdEntryActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleInstance</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Export &amp; Publishing</span></td>
+      <td><code>com.vega.share.lemon8.BackFromLemon8Activity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Export &amp; Publishing</span></td>
+      <td><code>com.vega.share.bdopen.ProxyActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.tencent.connect.common.AssistActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.vega.nativesettings.SettingCloneActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.vega.nativesettings.personal.PersonalSettingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.vega.nativesettings.BaseNewDeveloperActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.vega.nativesettings.language.AppLanguageChooseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.vega.nativesettings.region.AppRegionChooseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.vega.nativesettings.SettingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.lemon.faceuassist.FaceuAssistMainActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedback.myfeedback.MyFeedbackActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedback.FeedbackTagActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.vega.nativesettings.privacy.TermsPoliciesActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.feedback.FeedbackActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.recorder.MainCameraSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Camera &amp; Video Recording</span></td>
+      <td><code>com.vega.recorder.LvRecordActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Camera &amp; Video Recording</span></td>
+      <td><code>com.vega.recorder.LVSinglePlayActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Camera &amp; Video Recording</span></td>
+      <td><code>com.vega.recorder.scan.ScanActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Camera &amp; Video Recording</span></td>
+      <td><code>com.vega.recorder.media.player.LocalVideoPlayerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Camera &amp; Video Recording</span></td>
+      <td><code>com.vega.recorder.effect.props.view.GreenScreenMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Camera &amp; Video Recording</span></td>
+      <td><code>com.vega.recorder.view.selector.SelectorPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Camera &amp; Video Recording</span></td>
+      <td><code>com.vega.recorder.view.digitalhuman.DigitalPicturePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Camera &amp; Video Recording</span></td>
+      <td><code>com.vega.recorder.WrapperActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.recorder.view.prompt.edit.RecorderPromptDraftActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.recorder.view.prompt.edit.RecorderPromptEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aicreator.ui.activity.AiStoryVoiceOverSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.part.AdPartEditMySceneActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.part.AdPartPromptActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.part.AdPartMyScenePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.maker.crop.AdCropActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.voiceover.VoiceoverEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.component.view.AdComponentEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.debug.SmartAdDebugActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.maker.AdMakerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.smartad.preview.SmartAdPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.smartad.preview.MultiSmartAdPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.adscript.view.AdScriptLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.scripttovideo.ScriptToVideoLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.scriptvideo.CapcutScriptVideoEditorActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.scriptvideo.gallery.ScriptVideoMediaSelectActivityV2</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.cutsameedit.biz.smartvlog.compose.SmartVlogLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.cutsameedit.biz.template.compose.loading.LoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.cutsameedit.biz.marketingscript.business.BusinessVideoLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.cutsameedit.biz.textstart.TextStartLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.cutsameedit.biz.digitalhuman.loading.DigitalHumanTemplateLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.commonedit.commoneditor.CommonEditorMainActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.commonedit.commoneditor.nativeimpl.CommonEditorMainActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.recordedit.ui.AdCubeVideoPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.recordedit.ui.CameraPreviewEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.activity.CutSameEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.activity.ScriptVideoCutActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.alive.ExportNotificationDispatchActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.aigenerator.activity.AIPaintingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.aigenerator.activity.AIPaintingIntroActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.edit.aitranslator.activity.AITranslatorMainActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.aitranslator.activity.AITranslatorTaskListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.aitranslator.activity.AITranslatorAuthRecordActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.aitranslator.activity.AITranslatorResultPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.outpainting.activity.AIExpandActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.aivideodriver.view.AiVideoDriverSelectMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.aivideodriver.view.DigitalHumanFamilyPictureGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.view.LoginActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.LoginWithAtmosphereActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.neoaccount.impl.step.auth.NeoAccountAuthActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.neoaccount.impl.process.firstlogin.FirstLoginActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.neoaccount.impl.test.NeoLoginTestActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.neoaccount.impl.step.birthday.ThirdBirthdayProxyActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.facebook.FacebookActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.BirthdayActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.LaunchBirthdayActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.TiktokEntryActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>capcutlogintt://oauthresponse; https://www.capcut.com/tt-login/oauthresponse; https://www.capcut.net/imlv/thirdparty-auth-redirect; https://www.capcut.net/imlv/inhouse/thirdparty-auth-redirect; awfobz8zx3rodolu://response.bridge.tiktok.com; aw889s25wozf8s7e://response.bridge.tiktok.com</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.ToolCountryLoginActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.email.AccountLoginActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.DialogContainerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.email.EmailBindActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.lemon.account.email.PasswordActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.libsticker.view.text.font.FontManageActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.libsticker.view.text.font.myfont.view.AiFontGenerateActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.cloud.preview.CloudFilePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.property.optional.ui.preview.PropertyFilePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.property.creatives.preview.CreativesPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.upload.view.UploadListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.upload.view.SelectDraftToLoadActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.group.view.GroupManagerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Export &amp; Publishing</span></td>
+      <td><code>com.vega.cloud.review.ShareReviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.cloud.view.CloudGroupMaterialsActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.autobackup.setting.SpaceSettingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.brand.preview.CloudBrandEffectPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.enterprise.view.EnterpriseCreateGroupActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.enterprise.view.EnterpriseManageGroupActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.enterprise.view.EnterpriseGroupMemberManageActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.enterprise.view.EnterpriseGroupMemberAddActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.property.optional.ui.mydrafts.MyAllDraftActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.property.optional.ui.cloud.PropertyCloudListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.property.optional.ui.search.activity.PropertySearchActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.property.optional.ui.media.activity.PropertyMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.property.optional.ui.favorites.activity.PropertyFavoriteActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.property.optional.ui.trash.activity.PropertyTrashActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.property.optional.ui.transfer.activity.PropertyTransferActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.property.optional.ui.album.PropertyLocalAlbumActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.main.aimoment.AiMomentDraftUpActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.near.CaptainTransferDraftActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Export &amp; Publishing</span></td>
+      <td><code>com.vega.cloud.sharedraft.activity.ResumeSharedDraftActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.cloud.mainpage.CloudDraftManagerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.upload.SelectMaterialToUploadActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.group.view.GroupMemberListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.brand.CloudBrandKitActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.cloud.activity.CloudFolderActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Cloud Storage &amp; Cloud Draft</span></td>
+      <td><code>com.vega.property.optional.ui.home.CloudSpaceActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.business.ad.view.HotStartSplashAdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.business.ad.view.AdInterceptActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Payment Wall, VIP &amp; Commerce</span></td>
+      <td><code>com.vega.subscription.widget.ComposeSubscribeActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Payment Wall, VIP &amp; Commerce</span></td>
+      <td><code>com.vega.subscription.deeplink.SubscribeOutsideStubActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.texttovideo.main.ui.TextToVideoHomeV2Activity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.texttovideo.main.ui.TextToVideoHomeV3Activity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.texttovideo.main.ui.ToneCloneArticleEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.vega.edward.agent.videoplayer.VideoPlayerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.audio.tone.clonetone.CloneToneActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Camera &amp; Video Recording</span></td>
+      <td><code>com.vega.audio.textstart.recorder.AudioRecorderActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.audio.lipsync.RealHumanPicturePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.audio.dubbing.page.AIDubbingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.audio.lipsync.view.DigitalHumanLipPictureGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edit.cover.view.activity.CoverSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.splitscreen.SplitScreenActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.audio.musicimport.extract.ExtractGalleryMusicActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.audio.library.AddAudioActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.audio.library.CheckAudioActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aicreator.debug.AiCreatorDebugActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aicreator.loading.AiCreatorLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.aicreator.editor.AiCreatorAIGCImagePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aicreator.preview.AiCreatorResultListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aicreator.tasklist.AiCreatorTaskListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aicreator.style.AiCreatorStylePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aicreator.tasklist.AiStoryCreatorTaskListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aimoment.home.AiMomentHomeActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aimoment.home2.AiMomentHome2Activity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.vega.aimoment.feedback.AiMomentFeedbackSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.aimoment.gallery.AiMomentGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aimoment.tasklist2.AiMomentTaskListNewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.aimoment.gallery.highlight.AiMomentHighlightCutActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aimoment.multipreview.AiMomentMultiplePreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aimoment.loading.AiMomentLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.aimoment.gallery.AiMomentGuideVideoPreViewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.aimoment.style.AiMomentStyleVideoPreViewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.modeldressup.picturedressing.choosemodel.ChooseModelActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.modeldressup.picturedressing.result.ModelDressingResultActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.modeldressup.picturedressing.history.ModelDressingHistoryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.smartads.ui.preview.SmartAdsV2PreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.smartads.ui.loading.SmartAdsLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.smartads.ui.history.SmartAdsHistoryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.vega.libdeveloper.nativesettings.DeveloperActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.adeditor.scriptvideo.OverdubToneRecordActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.commonedit.digitalhuman.preview.DigitalPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.commonedit.digitalhuman.customize.upload.CustomizedProgressActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.commonedit.digitalhuman.customize.gallery.DigitalHumanCustomizeGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.commonedit.digitalhuman.picture.gallery.DigitalHumanPictureGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vega.audio.tone.tts.debug.ToneDebugActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.vega.edward.templatecore.editor.edit.MinimalEditorActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.GalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.ui.SingleImageGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.ui.SingleVideoGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.ui.SelectMediaGalleryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.ui.BottomSheetAlbumActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.ui.SimpleMediaPreviewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.gallery.main.MainMediaActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.vega.gallery.ui.MultiImageSelectActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.lemon.safemode.ui.SafeModeActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.lemon.safemode.mock.SafeModeMockActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.edit.EditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.edit.design.stickercenter.MaterialCenterActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.edit.design.stickercenter.albumdetail.AlbumDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.edit.design.cutout.CutoutActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.edit.design.cutout.CutoutPicEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.edit.design.cutout.piceditor.PicCutoutActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.edit.design.cutout.common.CommonCutoutActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.edit.design.cutout.aipadding.AiPaddingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.edit.aigc.loading.AIGCLoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.xt.retouch.applauncher.core.NotifyActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleInstance</td>
+      <td>snssdk2515://</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">AI Agent &amp; Generative AI</span></td>
+      <td><code>com.xt.retouch.export.impl.aigc.AiImageExportActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.xt.retouch.gallery.refactor.GalleryActivity2</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Media Picker &amp; Gallery</span></td>
+      <td><code>com.xt.retouch.gallery.refactor.PermissionActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.avatar.AvatarCropActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.TemplateChooseTopicActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.TemplateTopicActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.TemplateSearchActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.TemplateDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.SharePanelActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.UserHomeActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.MessageCenterActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.TemplateFeedActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.FollowActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.ProfileActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Video &amp; Photo Editor</span></td>
+      <td><code>com.xt.retouch.feed.impl.ProfileEditActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.CreatorCourseActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.feed.impl.DataCenterActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.aimodel.impl.AiModelActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.web.WebActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.xt.retouch.web.UserAgreementWebActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.debug.DevModelActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.debug.TemplateDebugActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.aiposter.impl.retouch.AIPosterActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.draftbox.ui.DraftBoxActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.xt.retouch.settings.SettingsActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">User Account, Login &amp; Profile</span></td>
+      <td><code>com.xt.retouch.settings.account.AccountAndSafeActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.xt.retouch.settings.dev.DevModelActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.xt.retouch.settings.clipboard.ClipboardSettingsActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Templates &amp; Social Feed</span></td>
+      <td><code>com.xt.retouch.settings.haptic.HapticFeedbackPreferenceActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.xt.retouch.settings.bcswitch.BCSwitchActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.lm.components.announce.view.AnnounceActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Payment Wall, VIP &amp; Commerce</span></td>
+      <td><code>com.xt.retouch.subscribe.impl.ui.SubscribeDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.lynx.impl.LynxActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.lynx.impl.common.container.LynxCommonActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.lynx.impl.common.container.LynxCommonTransparentActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.beautyAllProducer.ProducerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.xt.retouch.lynx.api.LynxActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.vega.ug.push.notification.activity.PushNotificationActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.lm.components.lynx.debug.DebugToolActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.lm.components.lynx.debug.JSONViewerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.lm.components.permission.PermissionProxyActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.lm.components.permission.PermissionGuideActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.pipo.common.ability.wallet.PIPOWalletDispatcherActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>singleTask</td>
+      <td>pipohybridsdk3006://pipopay/ewallet/webview</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.hybrid.spark.page.SparkActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.ttadn.activity.TTLandingPageActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.ttadn.activity.TTIABHostActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.ttadn.activity.TTWebsiteActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.bytedance.sdk.ttadn.activity.AboutThisAdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.ttadn.activity.TikTokPrivacyPolicyActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.ttadn.activity.TikTokReportActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Payment Wall, VIP &amp; Commerce</span></td>
+      <td><code>com.bytedance.gmtcommerce.iab.impl.ui.AdWebSparkActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Payment Wall, VIP &amp; Commerce</span></td>
+      <td><code>com.bytedance.gmtcommerce.iab.impl.history.AdWebHistoryActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.ss.android.ugc.aweme.rich.reward.ui.RewardAdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.ss.android.ShowDialogActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.bdturing.twiceverify.TwiceVerifyWebActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>net.openid.appauth.AuthorizationManagementActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>net.openid.appauth.RedirectUriReceiverActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>standard</td>
+      <td>com.lemon.lvoverseas://</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.pipo.iapsolution.iap.TransparentActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.ss.android.deviceregister.AActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.facebook.CustomTabMainActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.facebook.CustomTabActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>standard</td>
+      <td>fbconnect://cct.com.lemon.lvoverseas</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.push.notification.PushActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.bdinstall.migrate.MigrateDetectorActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.bd_hub_splash_sdk.SplashPrivacyPolicyActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.bd_hub_splash_sdk.SplashAboutThisAdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.google.android.gms.auth.api.signin.internal.SignInHubActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Payment Wall, VIP &amp; Commerce</span></td>
+      <td><code>com.android.billingclient.api.ProxyBillingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Payment Wall, VIP &amp; Commerce</span></td>
+      <td><code>com.android.billingclient.api.ProxyBillingActivityV2</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.adview.AppLovinFullscreenActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.adview.AppLovinFullscreenImmersiveActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.sdk.AppLovinWebViewActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerMultiAdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerAdUnitsListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerAdUnitDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerCmpNetworksListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerTcfInfoListActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerTcfStringActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerTestModeNetworkActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerUnifiedFlowActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.mediation.MaxDebuggerWaterfallSegmentsActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.creative.MaxCreativeDebuggerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.google.android.gms.common.api.GoogleApiActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>androidx.compose.ui.tooling.PreviewActivity</code></td>
+      <td><span class="badge badge-exported">Exported</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.google.android.gms.ads.AdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.google.android.gms.ads.OutOfContextTestingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.google.android.gms.ads.NotificationHandlerActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.facebook.ads.AudienceNetworkActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.vungle.ads.internal.ui.VungleActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTop</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTCeilingLandingPageActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTDelegateActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.sdk.openadsdk.activity.TTAdActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.bytedance.mtesttools.act.TestToolMainActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.bytedance.mtesttools.act.AdnMainActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.mtesttools.act.SelectTestModeAdnActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.mtesttools.act.AdnDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.mtesttools.act.AdRitDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.mtesttools.act.AdSlotDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.mtesttools.act.ShowConfigDataActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Settings &amp; Feedback</span></td>
+      <td><code>com.bytedance.mtesttools.act.SettingsDetailActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.bytedance.praisedialoglib.ui.PraiseDialogActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>singleTask</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.google.android.play.core.common.PlayCoreDialogWrapperActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.mbridge.msdk.activity.MBCommonActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.mbridge.msdk.out.LoadingActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Other Utilities</span></td>
+      <td><code>com.mbridge.msdk.reward.player.MBRewardVideoActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td><span class="badge badge-cat">Main Navigation &amp; Bootstrap</span></td>
+      <td><code>com.vega.launcher.precondition.PreInstallConfirmActivity</code></td>
+      <td><span class="badge badge-private">Private</span></td>
+      <td>standard</td>
+      <td>-</td>
+    </tr>
+
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="top" n0:id="@id/cl_export_container" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/cl_share_publish_group" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="0.0dp" n1:layout_constraintTop_toTopOf="parent" layout="@layout/lgz"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0sp" n0:textStyle="bold" n0:textColor="@color/nr" n0:gravity="center" n0:id="@id/tag_without_watermark" n0:background="@drawable/lp2" n0:paddingLeft="6.0dp" n0:paddingRight="6.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:text="@string/ofe" n0:translationY="-8.0dp" n0:layout_marginEnd="30.0dp" n0:paddingHorizontal="6.0dp" n2:layout_constraintEnd_toEndOf="@id/cl_share_publish_group" n2:layout_constraintTop_toTopOf="@id/cl_share_publish_group" n2:k1i="bold"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.export.campaign.ExportCampaignCheckbox n0:id="@id/export_campaign_check_box" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/cl_share_publish_group"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <include n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/export_campaign_check_box" layout="@layout/l3d"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <include n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/promote_layout" layout="@layout/lod"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/sharePanel_stub" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n6:layout_constraintTop_toBottomOf="@id/replicate_container"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/bottom_banner" n0:visibility="invisible" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n7:layout_constraintDimensionRatio="H,375:56" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintHeight_min="56.0dp" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/sharePanel"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/pcGuideBanner" n0:layout="@layout/k6o" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:layout_marginTop="35.0dp" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/sharePanel"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

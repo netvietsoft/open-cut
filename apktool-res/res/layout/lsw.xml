@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/purchase_info" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/l15" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/mn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pxy" n0:layout_marginStart="4.0dp" n1:k1i="medium"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/paid_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/o1c" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/iv_vip_text" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="14.0dp" n0:text="@string/kjq" n0:layout_marginStart="2.0dp" n2:k1i="bold"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textStyle="bold" n0:textColor="@color/a" n0:id="@id/limit_free_text" n0:background="@drawable/k7z" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="12.0dp" n0:text="@string/n-3" n3:k1i="bold"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/nr" n0:gravity="center" n0:id="@id/price_text" n0:background="@drawable/kt3" n0:paddingLeft="3.0dp" n0:paddingRight="3.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="" n0:paddingHorizontal="3.0dp" n4:k1i="bold"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/ml" n0:gravity="center" n0:id="@id/paid_info_text" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" n5:k1i="medium"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</FrameLayout>

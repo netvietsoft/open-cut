@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/tik_tok_login_container" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/login_tik_tok_tips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="40.0dp" n0:layout_marginRight="40.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/peq" n1:layout_constraintBottom_toTopOf="@id/login_tik_tok_button" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/login_tik_tok_button" n0:background="@drawable/APKTOOL_RENAMED_0x7f08086d" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="40.0dp" n0:layout_marginRight="40.0dp" n0:layout_marginBottom="16.0dp" n2:layout_constraintBottom_toTopOf="@id/tik_tok_login_statement" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/login_tik_tok_tips" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/login_icon" n0:background="@drawable/o9v" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginStart="12.0dp" />
+        <com.vega.ui.TintTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_login" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12158f" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/tik_tok_login_statement" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="40.0dp" n0:layout_marginRight="40.0dp" n0:text="@string/mvy" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/login_tik_tok_button"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

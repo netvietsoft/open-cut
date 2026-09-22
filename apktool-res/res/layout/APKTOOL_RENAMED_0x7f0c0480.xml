@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="86.0dp" n0:layout_height="84.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/feedback_media_item_image" n0:layout_width="76.0dp" n0:layout_height="76.0dp" n0:layout_alignParentBottom="true" n0:layout_alignParentStart="true" n1:actualImageScaleType="centerCrop" n1:roundedCornerRadius="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/feedback_media_item_delete" n0:background="@drawable/mqa" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_alignParentTop="true" n0:translationX="1.0dp" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

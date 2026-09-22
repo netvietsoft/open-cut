@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lmm" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/tv_title" n0:paddingLeft="30.0dp" n0:paddingRight="30.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/n4" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n0:id="@id/content_view" n0:layout_width="match_parent" n0:layout_height="220.0dp" n0:layout_marginTop="8.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_d" n0:id="@id/tv_content" n0:paddingLeft="30.0dp" n0:paddingRight="30.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+    </ScrollView>
+    <com.vega.theme.VegaButton n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/btn_accept" n0:background="@drawable/qoo" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/kj" n0:layout_marginStart="33.0dp" n0:layout_marginEnd="33.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/content_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060530" n0:gravity="center" n0:id="@id/tv_manage_in_setting" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="24.0dp" n0:text="@string/mhl" n0:layout_marginStart="33.0dp" n0:layout_marginEnd="33.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/btn_accept"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

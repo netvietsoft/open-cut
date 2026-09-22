@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:clipToPadding="true" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="22.0dp" n0:textColor="@color/sg" n0:id="@id/title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="66.0dp" n0:text="@string/rb_" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b2111a2c" n0:id="@id/tip" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n2:layout_constraintTop_toBottomOf="@id/title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaEditText n0:textSize="16.0dp" n0:textColor="#16161d" n0:textColorHint="#a9adb5" n0:gravity="center_vertical" n0:id="@id/inputEdit" n0:background="@drawable/k8g" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="16.0dp" n0:hint="@string/l72" n0:inputType="textEmailAddress" n0:paddingStart="16.0dp" n0:paddingEnd="40.0dp" n3:layout_constraintTop_toBottomOf="@id/tip"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/inputErrorIcon" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:layout_marginTop="14.0dp" n0:src="@drawable/mpk" n4:layout_constraintStart_toStartOf="@id/inputEdit" n4:layout_constraintTop_toBottomOf="@id/inputEdit"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="#ff6663" n0:id="@id/inputErrorTip" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/laq" n0:layout_marginStart="16.0dp" n5:layout_constraintStart_toEndOf="@id/inputErrorIcon" n5:layout_constraintTop_toBottomOf="@id/inputEdit"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaCheckBox n0:textSize="14.0sp" n0:textColor="#111a2c" n0:layout_gravity="center_vertical" n0:id="@id/allowMail" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:checked="false" n0:button="@drawable/qk2" n0:text="@string/kw-" n0:paddingStart="8.0dp" n0:paddingEnd="0.0dp" n6:layout_constraintStart_toStartOf="@id/inputEdit" n6:layout_constraintTop_toBottomOf="@id/inputErrorTip"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/clear" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/m_p" n0:scaleType="center" n7:layout_constraintBottom_toBottomOf="@id/inputEdit" n7:layout_constraintEnd_toEndOf="@id/inputEdit" n7:layout_constraintTop_toTopOf="@id/inputEdit"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaButton n0:enabled="false" n0:textColor="@color/gk" n0:id="@id/continueBtn" n0:background="@drawable/k8c" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120f4d" n0:textAllCaps="false" n8:layout_constraintTop_toBottomOf="@id/allowMail"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/errorContinueMask" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n9:layout_constraintBottom_toBottomOf="@id/continueBtn" n9:layout_constraintEnd_toEndOf="@id/continueBtn" n9:layout_constraintStart_toStartOf="@id/continueBtn" n9:layout_constraintTop_toTopOf="@id/continueBtn"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <HorizontalScrollView n0:id="@id/horizontalScrollView" n0:visibility="gone" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="wrap_content" n10:layout_constraintEnd_toEndOf="parent" n10:layout_constraintStart_toStartOf="parent" n10:layout_constraintTop_toTopOf="parent"
+      xmlns:n10="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="horizontal" n0:id="@id/domainContainer" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:divider="@drawable/kgs" n0:showDividers="middle" n0:dividerPadding="8.0dp" />
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundFrameLayout n0:background="@color/kr" n0:layout_width="120.0dp" n0:layout_height="72.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginEnd="4.0dp" n1:i1="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.RoundCornerTextView2 n0:layout_width="120.0dp" n0:layout_height="72.0dp" n1:c7="@color/kz" n1:c-="0.5dp" n1:i1="8.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mm" n0:ellipsize="end" n0:id="@id/tv_file_name" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="5.0dp" n0:layout_marginRight="8.0dp" n0:maxLines="2" n0:layout_marginHorizontal="8.0dp" n1:k1i="medium" />
+        <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="bottom" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="18.0dp" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="5.0dp" n0:layout_marginHorizontal="8.0dp">
+            <com.vega.ui.widget.RoundCornerImageView n0:id="@id/iv_file_icon" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n1:_5="2.0dp" n1:klh="2.0dp" n1:ktn="2.0dp" n1:kuf="2.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:id="@id/tv_file_extension" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:textAllCaps="true" n0:layout_marginStart="4.0dp" n1:k1i="medium" />
+        </LinearLayout>
+    </com.vega.ui.widget.RoundFrameLayout>
+    <FrameLayout n0:id="@id/btn_remove" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="12.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="end|top" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081273" n0:scaleType="fitXY" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

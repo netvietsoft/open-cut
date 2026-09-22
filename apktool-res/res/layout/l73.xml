@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center_vertical" n0:id="@id/collage_tab_iv" n0:layout_width="13.5dp" n0:layout_height="13.5dp" n0:layout_marginRight="8.0dp" n0:src="@drawable/qyc" />
+    <TextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#b2f6f7fe" n0:layout_gravity="center_vertical" n0:id="@id/collage_tab_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o0n" />
+</LinearLayout>

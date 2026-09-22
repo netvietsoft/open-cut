@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_guide_0" n0:background="@color/kw0" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:background="@color/kot" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:alpha="0.8" />
+    <com.xt.retouch.baseui.view.BlingBlingTip n0:textSize="16.0sp" n0:id="@id/tip_new" n0:layout_width="40.0dp" n0:layout_height="20.0dp" n0:layout_marginBottom="2.0dp" n0:text="@string/tv5" n1:layout_constraintBottom_toTopOf="@id/tv" n1:layout_constraintStart_toStartOf="@id/tv"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="22.0sp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/tv" n0:layout_width="wrap_content" n0:layout_height="31.0dp" n0:layout_marginBottom="18.0dp" n0:text="Clone" n2:layout_constraintBottom_toTopOf="@id/animation_layout" n2:layout_constraintStart_toStartOf="@id/animation_layout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/space" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="22.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/animation_layout" n0:layout_width="267.0dp" n0:layout_height="416.0dp" n4:layout_constraintBottom_toBottomOf="@id/space" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/space"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_animation" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:scaleType="fitXY" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_edge_bg" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:src="@drawable/q84" n4:layout_constraintBottom_toBottomOf="@id/iv_animation" n4:layout_constraintEnd_toEndOf="@id/iv_animation" n4:layout_constraintStart_toStartOf="@id/iv_animation" n4:layout_constraintTop_toTopOf="@id/iv_animation" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_error" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/q84" />
+        <TextView n0:textSize="16.0dp" n0:textColor="@color/kp8" n0:id="@id/network_error" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/umh" n4:layout_constraintBottom_toTopOf="@id/network_error_tip" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" />
+        <TextView n0:textSize="14.0dp" n0:textColor="@color/kp8" n0:id="@id/network_error_tip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="28.0dp" n0:text="@string/tvj" n4:layout_constraintBottom_toTopOf="@id/retry_btn" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" />
+        <FrameLayout n0:id="@id/retry_btn" n0:background="@drawable/q86" n0:layout_width="160.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="60.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent">
+            <TextView n0:textSize="16.0dp" n0:textColor="@color/kxw" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f123a1d" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView n0:textSize="14.0sp" n0:textColor="@color/kxw" n0:gravity="center" n0:id="@id/btn_confirm" n0:background="@drawable/r-s" n0:layout_width="130.0dp" n0:layout_height="42.0dp" n0:layout_marginTop="19.0dp" n0:text="@string/swh" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/animation_layout"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/tab_layout" n0:tag="layout/xt_include_text_tab_layout2_0" n0:layout_width="match_parent" n0:layout_height="54.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/tab_text_library" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="13.0dp" n0:layout_gravity="center" n0:tag="binding_1" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f124491" />
+        <View n0:layout_gravity="center|bottom" n0:tag="binding_2" n0:layout_width="0.0dp" n0:layout_height="0.0dp" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/tab_text" n0:tag="binding_3" n0:layout_width="wrap_content" n0:layout_height="match_parent" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/tab_text_library" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="13.0dp" n0:layout_gravity="center" n0:tag="binding_4" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/stg" />
+        <View n0:layout_gravity="center|bottom" n0:tag="binding_5" n0:layout_width="0.0dp" n0:layout_height="0.0dp" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/tab_text_template" n0:tag="binding_6" n0:layout_width="wrap_content" n0:layout_height="match_parent" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toEndOf="@id/tab_text" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="13.0dp" n0:layout_gravity="center" n0:tag="binding_7" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/st1" />
+        <View n0:layout_gravity="center|bottom" n0:tag="binding_8" n0:layout_width="0.0dp" n0:layout_height="0.0dp" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/tab_font" n0:tag="binding_9" n0:layout_width="wrap_content" n0:layout_height="match_parent" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toEndOf="@id/tab_text_template" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="13.0dp" n0:layout_gravity="center" n0:tag="binding_10" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t-4" />
+        <View n0:layout_gravity="center|bottom" n0:tag="binding_11" n0:layout_width="0.0dp" n0:layout_height="0.0dp" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/tab_form" n0:tag="binding_12" n0:layout_width="wrap_content" n0:layout_height="match_parent" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintStart_toEndOf="@id/tab_font" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="13.0dp" n0:layout_gravity="center" n0:tag="binding_13" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/si0" />
+        <View n0:layout_gravity="center|bottom" n0:tag="binding_14" n0:layout_width="0.0dp" n0:layout_height="0.0dp" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/tab_color" n0:tag="binding_15" n0:layout_width="wrap_content" n0:layout_height="match_parent" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toEndOf="@id/tab_form" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="13.0dp" n0:layout_gravity="center" n0:tag="binding_16" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t-0" />
+        <View n0:layout_gravity="center|bottom" n0:tag="binding_17" n0:layout_width="0.0dp" n0:layout_height="0.0dp" />
+    </FrameLayout>
+    <com.xt.retouch.baseui.view.BlingBlingTip n0:textSize="10.0dp" n0:tag="binding_18" n0:layout_width="wrap_content" n0:layout_height="11.0dp" n0:layout_marginTop="3.0dp" n0:text="@string/tv5" n0:layout_marginStart="20.0dp" n7:layout_constraintStart_toStartOf="@id/tab_form" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

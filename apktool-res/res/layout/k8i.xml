@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/cloud_space_warning_bar_layout" n0:background="#fbf1c2" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_warning" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/npw" n0:layout_centerVertical="true" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/fi" n0:ellipsize="marquee" n0:id="@id/tv_warning_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp" n0:layout_toStartOf="@id/tv_goto" n0:layout_toEndOf="@id/iv_warning" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#ea8943" n0:id="@id/tv_goto" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_toStartOf="@id/iv_enter_icon" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_enter_icon" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/ncf" n0:tint="#ea8943" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

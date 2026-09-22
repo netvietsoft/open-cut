@@ -1,0 +1,1936 @@
+{
+    "name": "uz",
+    "currency": {
+		"pattern": "## ##0,###",
+        "Standard": "{0}¤",
+		"StandardNoSymbol": "{0} ¤",
+        "StandardNoCurrency": "# ##0,00",
+        "compact": {
+            "short": "{0} ¤",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "{0}–{1} ¤"
+			},
+			"approximately": {
+				"short": "~{0} ¤"
+			},
+			"atLeast": {
+				"short": "≥{0} ¤"
+			},
+			"atMost": {
+				"short": "≤{0} ¤"
+			}
+		},
+        "currencyList": {
+            "AED": {
+                "symbol": {
+                    "value": "AED",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "BAA dirhami",
+                    "one": "BAA dirhami"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Afg‘oniston afg‘oniysi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Albaniya leki"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Armaniston drami"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Niderlandiya antil guldeni"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Angola kvanzasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Argentina pesosi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "A$",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Avstraliya dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "A$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Aruba florini"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Ozarbayjon manati"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bosniya va Gertsegovina ayirboshlash markasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Barbados dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bangladesh takasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bolgariya levi"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bahrayn dinori"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Burundi franki"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bermuda dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bruney dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Boliviya bolivianosi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Braziliya reali"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bagama dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Butan ngultrumi"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Botsvana pulasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Belarus rubli"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р.",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Belarus rubli (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Beliz dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kanada dollari"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kongo franki"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Shveytsariya franki"
+                },
+                "digits": 2
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Chili pesosi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Xitoy yuani (ofshor)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Xitoy yuani"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kolumbiya pesosi"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kosta-Rika koloni"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kuba ayirboshlash pesosi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kuba pesosi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kabo-Verde eskudosi"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Chexiya kronasi"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Jibuti franki"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Daniya kronasi"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Dominikana pesosi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Jazoir dinori"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Misr funti"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Eritreya nakfasi"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP",
+					"standardUseNoSymbol": 1
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Efiopiya biri"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "yevro",
+                    "one": "yevro"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Fiji dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Folklend orollari funti"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "Angliya funt sterlingi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gruziya larisi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gana sedisi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gibraltar funti"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gambiya dalasisi"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gvineya franki"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gvatemala ketsali"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gayana dollari"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gonkong dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gonduras lempirasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Xorvatiya kunasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Gaiti gurdi"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Vengriya forinti"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Indoneziya rupiyasi"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "Isroil yangi shekeli"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "Hindiston rupiyasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Iroq dinori"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Eron riyoli"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Islandiya kronasi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Yamayka dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Iordaniya dinori",
+                    "one": "Yordaniya dinori"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "JP¥",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Yaponiya iyenasi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Keniya shillingi"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Qirg‘iziston somi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kambodja rieli"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Komor orollari franki"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Shimoliy Koreya voni"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "Janubiy Koreya voni"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kuvayt dinori"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Kayman orollari dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Qozog‘iston tengesi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Laos kipi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Livan funti"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Shri-Lanka rupiyasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Liberiya dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Lesoto lotisi"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Litva liti"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Latviya lati"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Liviya dinori"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Marokash dirhami"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Moldova leyi"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Malagasi ariarisi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Makedoniya dinori"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Myanma kyati"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Mongoliya tugriki"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Makao patakasi"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Mavritaniya uqiyasi (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Mavritaniya uqiyasi"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Mavritaniya rupiyasi"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Maldiv rupiyasi"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Malavi kvachasi"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Meksika pesosi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Malayziya ringgiti"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Mozambik metikali"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Namibiya dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Nigeriya nayrasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Nikaragua kordobasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Norvegiya kronasi"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Nepal rupiyasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Yangi Zelandiya dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Ummon riyoli"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Panama balboasi"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Peru soli"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Papua – Yangi Gvineya kinasi"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Filippin pesosi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Pokiston rupiyasi"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Polsha zlotiyi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Paragvay guaranisi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Qatar riyoli"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Ruminiya leyi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Serbiya dinori"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Rossiya rubli"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Ruanda franki"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Saudiya Arabistoni riyoli"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Solomon orollari dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Seyshel rupiyasi"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Sudan funti"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Shvetsiya kronasi"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Singapur dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Muqaddas Yelena oroli funti"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Syerra-Leone leonesi"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Syerra-Leone leonesi (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Somali shillingi"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Surinam dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Janubiy Sudan funti"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "San-Tome va Prinsipi dobrasi (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "San-Tome va Prinsipi dobrasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Suriya funti"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Svazilend lilangenisi"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "THB",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Tailand bati"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Tojikiston somoniysi"
+                }
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Turkmaniston manati"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Tunis dinori"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Tonga paangasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Turk lirasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Trinidad va Tobago dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Yangi Tayvan dollari"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Tanzaniya shillingi"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Ukraina grivnasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Uganda shillingi"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "US$",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "AQSH dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Urugvay pesosi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "soʻm",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "O‘zbekiston so‘mi"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Venesuela bolivari (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Venesuela bolivari"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "Vyetnam dongi"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Vanuatu vatusi"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Samoa talasi"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Markaziy Afrika CFA franki"
+                },
+                "digits": 0
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Sharqiy Karib dollari"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg.",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "G‘arbiy Afrika CFA franki"
+                },
+                "digits": 0
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Fransuz Polineziyasi franki"
+                },
+                "digits": 0
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "¤"
+                },
+                "displayName": {
+                    "other": "(noma’lum valyuta)",
+                    "one": "(noma’lum valyuta)"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Yaman riyoli"
+                },
+                "digits": 0
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Janubiy Afrika rendi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R",
+					"standardUseNoSymbol": 1
+                }
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW",
+					"standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Zambiya kvachasi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK",
+					"standardUseNoSymbol": 1
+                }
+            }
+        }
+    }
+}

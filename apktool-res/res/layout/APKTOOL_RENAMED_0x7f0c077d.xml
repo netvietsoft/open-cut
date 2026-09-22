@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:paddingTop="6.0dp" n0:paddingBottom="6.0dp" n0:layout_width="60.0dp" n0:layout_height="wrap_content" n0:paddingVertical="6.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_platform_icon" n0:background="@drawable/pr6" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/tv_platform_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/msx" n0:alpha="0.8" />
+</LinearLayout>

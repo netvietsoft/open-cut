@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/paletteContainer" n0:background="@drawable/qpe" n0:paddingTop="24.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.colorpick.SVPanel n0:id="@id/svPanel" n0:layout_width="match_parent" n0:layout_height="180.0dp" n0:layout_marginBottom="22.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toTopOf="@id/hueSeekBar" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.colorpick.HueSeekBar n0:id="@id/hueSeekBar" n0:layout_width="match_parent" n0:layout_height="28.0dp" n0:layout_marginBottom="20.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toTopOf="@id/paletteColorText" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#090c14" n0:id="@id/paletteColorText" n0:background="@drawable/ksx" n0:paddingLeft="16.0dp" n0:paddingTop="8.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginBottom="24.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="8.0dp" n3:layout_constraintBottom_toTopOf="@id/paletteBottomTitle" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/paletteBottomTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/divider" n0:background="#1c073247" n0:layout_width="match_parent" n0:layout_height="1.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaButton n0:id="@id/close" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:src="@drawable/m82" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/divider" />
+        <com.vega.ui.AlphaButton n0:id="@id/confirm" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:src="@drawable/m83" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toBottomOf="@id/divider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

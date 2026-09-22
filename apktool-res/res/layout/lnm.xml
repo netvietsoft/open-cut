@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="80.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lnk" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/property_entrance_avatar" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginStart="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:roundAsCircle="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#090c14" n0:ellipsize="end" n0:id="@id/property_cameo_entrance_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.5dp" n0:maxWidth="250.0dp" n0:text="@string/nwo" n0:maxLines="1" n0:layout_marginStart="8.0dp" n2:layout_constraintStart_toEndOf="@id/property_entrance_avatar" n2:layout_constraintTop_toTopOf="parent" n2:k1i="bold" n2:k1j="sub_title"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#b2141d2d" n0:ellipsize="end" n0:id="@id/property_cameo_entrance_description" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:maxWidth="250.0dp" n0:text="@string/nwn" n0:maxLines="1" n0:singleLine="true" n0:layout_marginStart="8.0dp" n3:layout_constraintStart_toEndOf="@id/property_entrance_avatar" n3:layout_constraintTop_toBottomOf="@id/property_cameo_entrance_title" n3:k1i="regular"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/property_cameo_icon" n0:background="@drawable/ow1" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginEnd="12.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

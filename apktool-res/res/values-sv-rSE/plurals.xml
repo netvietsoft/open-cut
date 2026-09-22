@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">Det gick inte att ladda upp %d artikel. AutoCut fortsätter.</item>
+        <item quantity="other">Det gick inte att ladda upp %d artiklar. AutoCut fortsätter.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">Bilaga: %d fil</item>
+        <item quantity="other">Bilaga: %d filer</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">%1$d kredit behövs.</item>
+        <item quantity="other">%1$d krediter behövs.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">Du har %1$d kredit kvar.</item>
+        <item quantity="other">Du har %1$d krediter kvar.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">Dina gratiskrediter kommer att dras av. %d kredit till behövs.</item>
+        <item quantity="other">Dina gratiskrediter kommer att dras av. %d krediter till behövs.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">%1$d kredit behövs.</item>
+        <item quantity="other">%1$d krediter behövs.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">Du har %1$d kredit kvar. Köp krediter för att fortsätta.</item>
+        <item quantity="other">Du har %1$d krediter kvar. Köp krediter för att fortsätta.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">%1$d kredit behövs.</item>
+        <item quantity="other">%1$d krediter behövs.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">Du har %1$d kredit kvar. Uppgradera för att få krediter.</item>
+        <item quantity="other">Du har %1$d krediter kvar. Uppgradera för att få krediter.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">%d kredit förbrukas</item>
+        <item quantity="other">%d krediter förbrukas</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">Dina gratiskrediter kommer att dras av. %d kredit till behövs.</item>
+        <item quantity="other">Dina gratiskrediter kommer att dras av. %d krediter till behövs.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">%d mall har rekommenderats</item>
+        <item quantity="other">%d mallar har rekommenderats</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">%d video har genererats</item>
+        <item quantity="other">%d videor har genererats</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">Du kan använda automatiska undertexter och automatiska sångtexter gratis %d gång i månaden när du är inloggad. Gratisanvändningarna förnyas i början av varje månad. En användning dras av varje gång.</item>
+        <item quantity="other">Du kan använda automatiska undertexter och automatiska sångtexter gratis %d gånger per månad när du är inloggad. De kostnadsfria användningarna förnyas i början av varje månad. En användning dras av varje gång.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%d användning/månad</item>
+        <item quantity="other">%d användningar/månad</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">Ta bort %d ord</item>
+        <item quantity="other">Ta bort %d ord</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%d markering</item>
+        <item quantity="other">%d markeringar</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">%d utfyllnadsord hittades</item>
+        <item quantity="other">%d utfyllnadsord hittades</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">Välj upp till %d artikel</item>
+        <item quantity="other">Välj upp till %d artiklar</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">Beräknad kötid: %d sek</item>
+        <item quantity="other">Beräknad kötid: %d sek</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">Ca %d timme kvar</item>
+        <item quantity="other">Ca %d timmar kvar</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">Ca %d minut kvar</item>
+        <item quantity="other">Ca %d minuter kvar</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">Ca %d sek kvar</item>
+        <item quantity="other">Ca %d sek kvar</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">Ljudresultat (%d)</item>
+        <item quantity="other">Ljudresultat (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">Filresultat (%d)</item>
+        <item quantity="other">Filresultat (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">Genereringsresultat (%d)</item>
+        <item quantity="other">Genereringsresultat (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">Bilaga: %d bild</item>
+        <item quantity="other">Bilaga: %d bilder</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">Bilaga: %d video</item>
+        <item quantity="other">Bilaga: %d videor</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">Bildresultat (%d)</item>
+        <item quantity="other">Bildresultat (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">Videoresultat (%d)</item>
+        <item quantity="other">Videoresultat (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">Använder %1$d AI-texteffekt ... %2$d %%</item>
+        <item quantity="other">Använder %1$d AI-texteffekter ... %2$d %%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">Använd %d tillgång på alla klipp</item>
+        <item quantity="other">Använd %d tillgångar på alla klipp</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">%d tillgång vald</item>
+        <item quantity="other">%d tillgångar valda</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">%d dags Ultra</item>
+        <item quantity="other">%d dagars Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d tecken</item>
+        <item quantity="other">%d tecken</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">Välj högst %d tecken</item>
+        <item quantity="other">Välj högst %d tecken</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">%d klipp är inte licensierat för kommersiell användning</item>
+        <item quantity="other">%d klipp är inte licensierade för kommersiell användning</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">%d teckensnitt är inte licensierat för kommersiell användning</item>
+        <item quantity="other">%d teckensnitt är inte licensierade för kommersiell användning</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">%d ljud är inte licensierat för kommersiell användning</item>
+        <item quantity="other">%d ljud är inte licensierade för kommersiell användning</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">%d klipp är inte licensierat för kommersiell användning och kan inte ersättas</item>
+        <item quantity="other">%d klipp är inte licensierade för kommersiell användning och kan inte ersättas</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">%d teckensnitt är inte licensierat för kommersiell användning och kan inte ersättas</item>
+        <item quantity="other">%d teckensnitt är inte licensierade för kommersiell användning och kan inte ersättas</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">%d ljud är inte licensierat för kommersiell användning och kan inte ersättas</item>
+        <item quantity="other">%d ljud är inte licensierade för kommersiell användning och kan inte ersättas</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">%d dekal är inte licensierad för kommersiell användning och kan inte ersättas</item>
+        <item quantity="other">%d dekaler är inte licensierade för kommersiell användning och kan inte ersättas</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">%d dekal är inte licensierad för kommersiell användning</item>
+        <item quantity="other">%d dekaler är inte licensierade för kommersiell användning</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">Ta bort %d kommentar?</item>
+        <item quantity="other">Ta bort %d kommentarer?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">Du har valt %d konto. Enbart du och personen du begränsar kommer att se deras kommentarer.</item>
+        <item quantity="other">Du har valt %d konton. Enbart du och personerna du begränsar kommer att se deras kommentarer.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">Begränsa %d konto?</item>
+        <item quantity="other">Begränsa %d konton?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagar</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">Du har %s nytt kreatörsmeddelande</item>
+        <item quantity="other">Du har %s nya kreatörsmeddelanden</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">Gick ut för %d dag sedan</item>
+        <item quantity="other">Gick ut för %d dagar sedan</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">Du använder en Pro-funktion. %d gratis användning återstår. Gå med i Pro för obegränsad användning.</item>
+        <item quantity="other">Du använder en Pro-funktion. %d gratis användningar återstår. Gå med i Pro för obegränsad användning.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">Du använder en Standardfunktion. %d gratis användning återstår. Skaffa Standard för obegränsad användning.</item>
+        <item quantity="other">Du använder en Standardfunktion. %d gratis användningar återstår. Skaffa Standard för obegränsad användning.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">Du använder en Pro-funktion. %d gratis användning återstår den här månaden. Gå med i Pro för obegränsad användning.</item>
+        <item quantity="other">Du använder en Pro-funktion. %d gratis användningar återstår den här månaden. Gå med i Pro för obegränsad användning.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">Du använder en Standardfunktion. %d gratis användning återstår den här månaden. Skaffa Standard för obegränsad användning.</item>
+        <item quantity="other">Du använder en Standardfunktion. %d gratis användningar återstår den här månaden. Skaffa Standard för obegränsad användning.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d dag gratis</item>
+        <item quantity="other">%d dagar gratis</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">%1$s efter %2$d vecka</item>
+        <item quantity="other">%1$s efter %2$d veckor</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">Du har fått %d gratis användning av Pro-mallar per månad.</item>
+        <item quantity="other">Du har fått %d gratis användningar av Pro-mallar per månad.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">%d kostnadsfri användning</item>
+        <item quantity="other">%d kostnadsfria användningar</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">Prova %d dag gratis</item>
+        <item quantity="other">Prova %d dagar gratis</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">%d problem med upphovsrätt för musik</item>
+        <item quantity="other">%d problem med upphovsrätt för musik</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">%d text har valts</item>
+        <item quantity="other">%d texter har valts</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">%d klipp valt</item>
+        <item quantity="other">%d klipp valda</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">Få %1$d dag med obegränsad gratis export, eller uppgradera så får du obegränsade exporter med hög upplösning.</item>
+        <item quantity="other">Få %1$d dagar med obegränsad gratis export, eller uppgradera så får du obegränsade exporter med hög upplösning.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">Exportera i 1080 px %d gång gratis</item>
+        <item quantity="other">Exportera i 1080 px %d gånger gratis</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">%d gratis export i 1080p återstår. Uppgradera för att njuta av en obegränsad högupplöst export.</item>
+        <item quantity="other">%d gratis exporter i 1080p kvar. Uppgradera för att åtnjuta obegränsad högupplöst export.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">%d gratis export i 1080p återstår den här månaden. Uppgradera för att njuta av en obegränsad högupplöst export.</item>
+        <item quantity="other">%d gratis exporter i 1080p återstår den här månaden. Uppgradera för att åtnjuta obegränsad högupplöst export.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">%d kredit behövs.</item>
+        <item quantity="other">%d krediter behövs.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">Du har %d kredit kvar.</item>
+        <item quantity="other">Du har %d krediter kvar.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">%1$d generering pågår. Uppgradera till Pro så kan du generera upp till %2$d samtidigt.</item>
+        <item quantity="other">%1$d genereringar pågår. Uppgradera till Pro så kan du generera upp till %2$d samtidigt.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">Exportera utan vattenstämpel (%d användning kvar)</item>
+        <item quantity="other">Exportera utan vattenstämpel (%d användningar kvar)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">%d gratisanvändning kvar. Inga krediter behövs.</item>
+        <item quantity="other">%d gratisanvändningar kvar. Inga krediter behövs.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">Din valda artikel tas bort och finns kvar i Papperskorgen i %d dagar.</item>
+        <item quantity="other">Dina valda artiklar tas bort och finns kvar i Papperskorgen i %d dagar.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">En av de valda artiklarna har laddats upp i utrymmet. Ta bort ändå?</item>
+        <item quantity="other">Vissa valda artiklar har laddats upp i utrymmet. Ta bort ändå?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">Din valda artikel tas bort och flyttas till Papperskorgen.</item>
+        <item quantity="other">Dina valda artiklar tas bort och flyttas till Papperskorgen.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">%d användning</item>
+        <item quantity="other">%d användningar</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">Åldern som beräknats från det födelsedatum du matade in är %d år och tycks vara felaktigt. Mata in ditt riktiga födelsedatum.</item>
+        <item quantity="other">Åldern som beräknats från det födelsedatum du matade in är %d år och tycks vara felaktigt. Mata in ditt riktiga födelsedatum.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">Inkluderar en gratis användning från tidigare köp och %d extra gratis användning för Pro</item>
+        <item quantity="other">Inkluderar en gratis användning från tidigare köp och %d extra gratis användningar för Pro</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">Pro-medlemmar får %d gratis användning</item>
+        <item quantity="other">Pro-medlemmar får %d gratis användningar</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">Avatarerna som du skapade med videor gäller nu permanent. Skaffa Pro och få %d gratis anpassning.</item>
+        <item quantity="other">Avatarerna som du skapade med videor gäller nu permanent. Skaffa Pro och få %d gratis anpassningar.</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">Att använda den här effekten förbrukar %d kredit.</item>
+        <item quantity="other">Att använda den här effekten förbrukar %d krediter.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">Du har nu %d tillgänglig kredit.</item>
+        <item quantity="other">Du har nu %d tillgängliga krediter.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">%d markering</item>
+        <item quantity="other">%d markeringar</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">Lägger till AI-effekt... %s timme återstår</item>
+        <item quantity="other">Lägger till AI-effekt... %s timmar återstår</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">Lägger till AI-effekt... %s minut återstår</item>
+        <item quantity="other">Lägger till AI-effekt... %s minuter återstår</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">Pro-effekten %1$s har använts på aktuell artikel. Att använda den igen på den nya artikeln förbrukar %2$d kredit.</item>
+        <item quantity="other">Pro-effekten %1$s har använts på aktuell artikel. Att använda den igen på den nya artikeln förbrukar %2$d krediter.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">%1$d kostnadsfri användning dras av. Du har nu %2$d kostnadsfri användning.</item>
+        <item quantity="other">%1$d kostnadsfri användning dras av. Du har nu%2$d kostnadsfria användningar.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">%1$d Pro-användning dras av. Du har nu %2$d Pro-användning.</item>
+        <item quantity="other">%1$d Pro-användning dras av. Du har nu %2$d Pro-användningar.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">Modellen har bara stöd för %d referensbild</item>
+        <item quantity="other">Modellen har stöd för upp till %d referensbilder</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">Lägg till minst %d referensbild för att använda modellen</item>
+        <item quantity="other">Lägg till minst %d referensbilder för att använda modellen</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">Modellen har bara stöd för %d referensvideo</item>
+        <item quantity="other">Modellen har stöd för upp till %d referensvideor</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">Lägg till minst %d referensvideo för att använda modellen</item>
+        <item quantity="other">Lägg till minst %d referensvideor för att använda modellen</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">Välj %d foto</item>
+        <item quantity="other">Välj %d foton</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">%d material har lagts till</item>
+        <item quantity="other">%d material har lagts till</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">%d kreation återstår</item>
+        <item quantity="other">%d kreationer återstår</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">%d upplåsning kvar</item>
+        <item quantity="other">%d upplåsningar kvar</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">%d nyckelord är markerat. Du kan också välja manuellt.</item>
+        <item quantity="other">%d nyckelord är markerade. Du kan också välja manuellt.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">Ta bort %d klipp</item>
+        <item quantity="other">Ta bort %d klipp</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">%d utfyllnadsord hittades. Du kan också välja manuellt.</item>
+        <item quantity="other">%d utfyllnadsord hittades. Du kan också välja manuellt.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">%d nyckelord markerades</item>
+        <item quantity="other">%d nyckelord markerades</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">Exporterar %d foto …</item>
+        <item quantity="other">Exporterar %d foton …</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">Välj upp till %d pose</item>
+        <item quantity="other">Välj upp till %d poser</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">Din mediafil laddas upp</item>
+        <item quantity="other">Dina mediafiler laddas upp</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">%d medlem</item>
+        <item quantity="other">%d medlemmar</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">Ladda upp %d projekt till utrymmet för att frigöra lagringsutrymme i din enhet. Du kan redigera det här projektet i mobilappen, datorappen eller online-redigeringsverktyget.</item>
+        <item quantity="other">Ladda upp %d projekt till utrymmet för att frigöra lagringsutrymmet i din enhet. Du kan redigera de här projekten i mobilappen, datorappen eller online-redigeringsverktyget.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">Ladda upp %d mediafil i dina projekt till utrymmet. Du kan använda den här filen på alla enheter utan att ladda upp den igen.</item>
+        <item quantity="other">Ladda upp %d mediafiler i dina projekt till utrymmet. Du kan använda de här filerna på alla enheter utan att ladda upp dem igen.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">Du har ett projekt att återställa</item>
+        <item quantity="other">Du har projekt att återställa</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">Projekt återställt</item>
+        <item quantity="other">Projekt återställda</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">Det gick inte att tillämpa %d funktion</item>
+        <item quantity="other">Det gick inte att tillämpa %d funktioner</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">Lägger till %d funktion</item>
+        <item quantity="other">Lägger till %d funktioner</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">Använd Pro-effekt?</item>
+        <item quantity="other">Använd Pro-effekter?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">%1$d Pro-effekt har använts till den nuvarande artikeln. Att använda den igen på den nya artikeln kommer att konsumera %2$d krediter.</item>
+        <item quantity="other">%1$d Pro-effekter har använts till den nuvarande artikeln. Att använda den igen på den nya artikeln kommer att konsumera %2$d krediter.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">%1$d Pro-effekt har använts till den nuvarande artikeln. %2$d kostnadsfri användning kommer att dras av för att använda den igen på den nya artikeln. Inga krediter kommer att konsumeras.</item>
+        <item quantity="other">%1$d Pro-effekter har använts till den nuvarande artikeln. %2$d kostnadsfria användningar kommer att dras av för att använda dem igen på den nya artikeln. Inga krediter kommer att konsumeras.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">%1$d Pro-effekt har använts på den nuvarande artikeln. Du behöver %2$d krediter för att använda den igen på den nya artikeln.</item>
+        <item quantity="other">%1$d Pro-effekter har använts på den aktuella artikeln. Du behöver %2$d krediter för att använda dem igen på den nya artikeln.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">%1$d Pro-effekter har använts till nuvarande artikel. Att använda dem igen på den nya artikeln kommer att konsumera %2$d kostnadsfri användning och %3$d krediter.</item>
+        <item quantity="other">%1$d Pro-effekter har använts till den nuvarande artikeln. Att använda dem igen på den nya artikeln kommer att konsumera %2$d kostnadsfria användningar och %3$d krediter.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">%d klipp saknas. Återställ det i din telefon eller ersätt det.</item>
+        <item quantity="other">%d klipp saknas. Återställ dem i din telefon eller ersätt dem.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">Ange inte fler än %d tecken</item>
+        <item quantity="other">Ange inte fler än %d tecken</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagar</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">Ta bort artikel?</item>
+        <item quantity="other">Ta bort artiklar?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">Artiklar som flyttats till papperskorgen visas här och tas bort efter %d dag.</item>
+        <item quantity="other">Artiklar som flyttats till papperskorgen visas här och tas bort efter %d dagar.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">Laddar ner %d artikel ...</item>
+        <item quantity="other">Laddar ner %d artiklar ...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">Laddar upp %d artikel ...</item>
+        <item quantity="other">Laddar upp %d artiklar ...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">Den här artikeln tas permanent bort och kan inte återställas.</item>
+        <item quantity="other">De här artiklarna tas permanent bort och kan inte återställas.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">Objektet har flyttats</item>
+        <item quantity="other">Objekten har flyttats</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">Du har fortfarande %d dag med gratis export tillgänglig.</item>
+        <item quantity="other">Du har fortfarande %d dagar med gratis export tillgängliga.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">Grattis! Du har fått %d gratis användningar av export utan vattenstämpel i månaden.</item>
+        <item quantity="other">Grattis! Du har fått %d gratis användningar för export utan vattenstämpel i månaden.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">Du har fortfarande %d gratis användning för export utan vattenstämpel.</item>
+        <item quantity="other">Grattis! Du har fortfarande %d gratis användningar för export utan vattenstämpel.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">Grattis! Du har fått %d gratis användning av export utan vattenstämpel.</item>
+        <item quantity="other">Grattis! Du har fått %d gratis användningar av export utan vattenstämpel.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">%d användning</item>
+        <item quantity="other">%d användningar</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">%d kredit i rabatt för förstagångsanvändare. Fler krediter förbrukas om det överskrids.</item>
+        <item quantity="other">%d krediter i rabatt för förstagångsanvändare. Fler krediter förbrukas om det överskrids.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">%d kredit till behövs för att använda den här funktionen</item>
+        <item quantity="other">%d krediter till behövs för att använda den här funktionen</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">Klippet får inte överskrida %d sekund</item>
+        <item quantity="other">Klippet får inte överskrida %d sekunder</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">Du har %d kredit kvar.</item>
+        <item quantity="other">Du har %d krediter kvar.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">Att använda {$benefit_name$} förbrukar {$credit_amount$} kredit.</item>
+        <item quantity="other">Att använda {$benefit_name$} förbrukar {$credit_amount$} krediter.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">Att tillämpa den här funktionen förbrukar %d kredit.</item>
+        <item quantity="other">Att tillämpa den här funktionen förbrukar %d krediter.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">Att använda den här mallen förbrukar %d kredit.</item>
+        <item quantity="other">Att använda den här mallen förbrukar %d krediter.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">Det kommer att tas bort permanent och kan inte återställas.</item>
+        <item quantity="other">De kommer att tas bort permanent och kan inte återställas.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">Ta bort artikeln?</item>
+        <item quantity="other">Ta bort artiklarna?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">%1$d \"%1$s\" projekt</item>
+        <item quantity="other">%1$d \"%1$s\" projekt</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">%d artikel har flyttats till papperskorgen</item>
+        <item quantity="other">%d artiklar har flyttats till papperskorgen</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">%d artikel har lagts till i favoriter</item>
+        <item quantity="other">%d artiklar har lagts till i favoriter</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">%d artikel togs bort från favoriter</item>
+        <item quantity="other">%d artiklar togs bort från favoriter</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">Det här är ett gratisutrymme och det kan ha upp till %1$d medlemmar. %2$s till medlem kan bjudas in till det.</item>
+        <item quantity="other">Det här är ett gratisutrymme och det kan ha upp till %1$d medlemmar. %2$s medlemmar till kan bjudas in till det.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">%d användning/månad</item>
+        <item quantity="other">%d användningar/månad</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d användning/dag</item>
+        <item quantity="other">%d användningar/dag</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d användning/vecka</item>
+        <item quantity="other">%d användningar/vecka</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">{price} efter {number} månad</item>
+        <item quantity="other">{price} efter {number} månader</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">%1$s efter %2$d månad</item>
+        <item quantity="other">%1$s efter %2$d månader</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">{price} efter {number} år</item>
+        <item quantity="other">{price} efter {number} år</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">%1$s efter %2$d år</item>
+        <item quantity="other">%1$s efter %2$d år</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">Det finns %d medlem i det här utrymmet.</item>
+        <item quantity="other">Det finns %d medlemmar i det här utrymmet.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">Du kan fortfarande bjuda in %1$d medlem.</item>
+        <item quantity="other">Du kan fortfarande bjuda in %1$d medlemmar.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">%1$d plats är upptagen.</item>
+        <item quantity="other">%1$d platser är upptagna.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">Starta gratis provperiod på %d dag</item>
+        <item quantity="other">Starta gratis provperiod på %d dagar</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">%d kredit behövs.</item>
+        <item quantity="other">%d krediter behövs.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">Du har %d kredit kvar.</item>
+        <item quantity="other">Du har %d krediter kvar.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">Laddar upp %1$s/%2$s projekt</item>
+        <item quantity="other">Laddar upp %1$s/%2$s projekt</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"%d annat klipp är länkat till den här mediafilen. Ersätt det också?
+Filen trimmas automatiskt för att passa originallängden."</item>
+        <item quantity="other">"%d andra klipp är länkade till den här mediafilen. Ersätt alla?
+Filen trimmas automatiskt för att passa originallängden."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">Du kan ladda upp %d bild till</item>
+        <item quantity="other">Du kan ladda upp %d bilder till</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">%d segment att uppdatera</item>
+        <item quantity="other">%d segment att uppdatera</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">Du kan fortfarande välja %1$d bild och %2$s</item>
+        <item quantity="other">Du kan fortfarande välja %1$d bilder och %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(max %d sek)</item>
+        <item quantity="other">(max %d sek)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d video</item>
+        <item quantity="other">%d videor</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">Du kan fortfarande välja %d bild</item>
+        <item quantity="other">Du kan fortfarande välja %d bilder</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">Du kan fortfarande välja %d video</item>
+        <item quantity="other">Du kan fortfarande välja %d videor</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(max %d sek)</item>
+        <item quantity="other">(max %d sek)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">I kö ... Ca %d minut kvar.</item>
+        <item quantity="other">I kö ... Ca %d minuter kvar.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">Minska väntetiden · %d användning kvar</item>
+        <item quantity="other">Minska väntetiden · %d användningar kvar</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">I kö ... Ca %d sekund kvar.</item>
+        <item quantity="other">I kö ... Ca %d sekunder kvar.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">I snabbkö med Pro ... Ca %d minut kvar.</item>
+        <item quantity="other">I snabbkö med Pro ... Ca %d minuter kvar.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">%d artikel</item>
+        <item quantity="other">%d artiklar</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">%d artikel vald</item>
+        <item quantity="other">%d artiklar valda</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">%d projekt</item>
+        <item quantity="other">%d projekt</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">%d projekt valt</item>
+        <item quantity="other">%d projekt valda</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">Många personer använder den här funktionen just nu. Din beräknade väntetid är %d minut.</item>
+        <item quantity="other">Många personer använder den här funktionen just nu. Din beräknade väntetid är %d minuter.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">Att generera igen förbrukar %d kredit.</item>
+        <item quantity="other">Att generera igen förbrukar %d krediter.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">Att generera igen med den nya artikeln förbrukar %d kredit.</item>
+        <item quantity="other">Att generera igen med den nya artikeln förbrukar %d krediter.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">%d klipp har lagts till</item>
+        <item quantity="other">%d klipp har lagts till</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">Välj %d artikel</item>
+        <item quantity="other">Välj %d artiklar</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">Genererade %d video åt dig</item>
+        <item quantity="other">Genererade %d videor åt dig</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">Du kan bara separera ljud på under %d minut</item>
+        <item quantity="other">Du kan bara separera ljud på under %d minuter</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">Du kan återställa utrymmet inom %d dag.</item>
+        <item quantity="other">Du kan återställa utrymmet inom %d dagar.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">%d video genereras. Försök igen senare.</item>
+        <item quantity="other">%d videor genereras. Försök igen senare.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">Uppgradera för att använda den här funktionen med %d kredit</item>
+        <item quantity="other">Uppgradera för att använda den här funktionen med %d krediter</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">Du har bara %d plats kvar i det här utrymmet.</item>
+        <item quantity="other">Du har bara %d platser kvar i det här utrymmet.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">%d element har använts</item>
+        <item quantity="other">%d element har använts</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">%d artikel vald</item>
+        <item quantity="other">%d artiklar valda</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">Välj %d artikel</item>
+        <item quantity="other">Välj %d artiklar</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">%d undertext</item>
+        <item quantity="other">%d undertexter</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">%d artikel</item>
+        <item quantity="other">%d artikeln</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">%d funktion tillämpas. Försök igen senare.</item>
+        <item quantity="other">%d funktioner tillämpas. Försök igen senare.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">%d gratis användning återstår. Skaffa Standard för att använda med krediter.</item>
+        <item quantity="other">%d gratis användningar återstår. Skaffa Standard för att använda med krediter.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">%d gratis användning återstår. Skaffa Pro för att använda med krediter.</item>
+        <item quantity="other">%d gratis användningar återstår. Skaffa Pro för att använda med krediter.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">%d gratisanvändning kvar. Skaffa Ultra för att använda med krediter.</item>
+        <item quantity="other">%d gratisanvändningar kvar. Skaffa Ultra för att använda med krediter.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">Detta förbrukar %1$d kredit. %2$s</item>
+        <item quantity="other">Detta förbrukar %1$d krediter. %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">Du har %d kredit kvar.</item>
+        <item quantity="other">Du har %d krediter kvar.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">Skaffa Ultra för att använda med %d kredit</item>
+        <item quantity="other">Skaffa Ultra för att använda med %d krediter</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">Gå med i Pro för att använda den här funktionen med %d kredit.</item>
+        <item quantity="other">Gå med i Pro för att använda den här funktionen med %d krediter.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">Skaffa Standard för att använda den här funktionen med %d kredit.</item>
+        <item quantity="other">Skaffa Standard för att använda den här funktionen med %d krediter.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">Du kan inte spara mer än %1$d röst.</item>
+        <item quantity="other">Du kan inte spara fler än %1$d röster.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">Det går inte att förbättra rösten i ett klipp som är längre än %1$d minut</item>
+        <item quantity="other">Det går inte att förbättra rösten i ett klipp som är längre än %1$d minuter</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">Välj %d artikel för optimala resultat</item>
+        <item quantity="other">Välj %d artiklar för optimala resultat</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">Förnyas för %1$s månad %2$d, därefter %3$s.</item>
+        <item quantity="other">Förnyas för %1$s de första %2$d månaderna, därefter %3$s.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">Förnyas för %1$s år %2$d, därefter %3$s.</item>
+        <item quantity="other">Förnyas för %1$s de första %2$d åren, därefter %3$s.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">Du har gjort %d uppdatering. Generera tal och synkronisera läpprörelser?</item>
+        <item quantity="other">Du har gjort %d uppdateringar. Generera tal och synkronisera läpprörelser?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">%d gång återstår</item>
+        <item quantity="other">%d gånger återstår</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">Det finns %d tyst klipp.</item>
+        <item quantity="other">Det finns %d tysta klipp.</item>
+    </plurals>
+</resources>

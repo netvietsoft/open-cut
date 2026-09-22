@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <EditText n0:id="@id/stop_delay" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <androidx.core.widget.NestedScrollView n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="20.0dp">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <Button n0:id="@id/sami_reading" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/sami_stop_reading" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/sami_tts" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/sami_stop_tts" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/microsoft_reading" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/microsoft_stop_reading" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/microsoft_tts" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/microsoft_stop_tts" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/sami_reading_new_engine" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/sami_stop_reading_new_engine" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/sami_tts_new_engine" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/sami_stop_tts_new_engine" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/ms_reading_new_engine" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/ms_stop_reading_new_engine" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/ms_saving_new_engine" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/ms_stop_saving_new_engine" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/test_init" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/test_sami_serial" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/test_sami_parallel" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/test_mc_serial" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+            <Button n0:id="@id/test_mc_parallel" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

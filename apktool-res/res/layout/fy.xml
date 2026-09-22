@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundConstraintLayout n0:orientation="vertical" n0:id="@id/dialog_ly" n0:background="@color/e4" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:i9="12.0dp" n1:i-="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/drag_handle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+        <View n0:layout_gravity="center_horizontal" n0:background="@drawable/ka7" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="10.0dp" />
+    </LinearLayout>
+</com.vega.ui.widget.RoundConstraintLayout>

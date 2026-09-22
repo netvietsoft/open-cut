@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_gravity="center" n0:orientation="vertical" n0:background="@color/knt" n0:padding="24.0dp" n0:layout_width="279.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="18.0sp" n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center_horizontal" n0:layout_gravity="center|top" n0:id="@id/titleTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kye" n0:lineSpacingExtra="2.0sp" />
+    <TextView n0:textSize="14.0sp" n0:textColor="#b2111a2c" n0:gravity="center_horizontal" n0:layout_gravity="center_horizontal" n0:id="@id/contentTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/kyd" n0:lineSpacingExtra="3.0sp" />
+    <TextView n0:textSize="14.0sp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/legallyAppeal" n0:background="@drawable/mt2" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:minHeight="24.0dp" n0:text="@string/kyy" n0:lineSpacingExtra="3.0sp" n0:paddingVertical="8.0dp" />
+    <TextView n0:textSize="14.0sp" n0:textColor="#b2111a2c" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/closeDialog" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/kyz" n0:lineSpacingExtra="3.0sp" n0:paddingVertical="8.0dp" />
+</LinearLayout>

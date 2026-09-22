@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@color/kw0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/banner_name_ll" n0:background="@drawable/q7r" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintBottom_toTopOf="@id/color_scroll_view" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kqx" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/title_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/snm" n0:fontFamily="sans-serif-medium" />
+        <FrameLayout n0:layout_gravity="end" n0:id="@id/root_confirmBtn" n0:layout_width="65.0dp" n0:layout_height="match_parent">
+            <ImageView n0:layout_gravity="end|center" n0:id="@id/confirmBtn" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/r57" n0:layout_marginEnd="16.0dp" />
+        </FrameLayout>
+    </FrameLayout>
+    <ScrollView n0:id="@id/color_scroll_view" n0:background="@color/ku_" n0:layout_width="match_parent" n0:layout_height="286.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="top" n0:id="@id/color_csl" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <FrameLayout n0:id="@id/auto_global_color_match_group" n0:background="@drawable/q4_" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent">
+                <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                    <ImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_margin="4.0dp" n0:src="@drawable/r5h" />
+                    <androidx.appcompat.widget.AppCompatTextView n0:textSize="16.0sp" n0:textColor="@color/kqx" n0:id="@id/improve_coloring_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="4.0dp" n0:text="@string/sm0" n0:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kqx" n0:id="@id/recent_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/sm9" n0:fontFamily="sans-serif-medium" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/auto_global_color_match_group" />
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/recent_color_card_rv" n0:layout_width="match_parent" n0:layout_height="76.0dp" n0:layout_marginTop="12.0dp" n2:layout_constraintTop_toBottomOf="@id/recent_tv" />
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kqx" n0:id="@id/picture_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/sm-" n0:fontFamily="sans-serif-medium" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/recent_color_card_rv" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/area_go_to_picture_all" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="@id/picture_tv" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/picture_tv">
+                <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="#cacace" n0:id="@id/picture_all_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sm3" n0:layout_marginEnd="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/picture_all_icon" n2:layout_constraintTop_toTopOf="parent" />
+                <ImageView n0:id="@id/picture_all_icon" n0:layout_width="10.0dp" n0:layout_height="10.0dp" n0:src="@drawable/rmu" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/photo_color_rv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:minHeight="76.0dp" n0:layout_marginStart="16.0dp" n0:nestedScrollingEnabled="false" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/picture_tv" />
+            <com.xt.retouch.colorstyle.impl.global.view.RequestRecColorLayout n0:id="@id/request_list_layout" n0:layout_width="match_parent" n0:layout_height="76.0dp" n0:layout_marginTop="12.0dp" n2:layout_constraintTop_toBottomOf="@id/picture_tv" />
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kqx" n0:id="@id/preset_color_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/sbh" n0:fontFamily="sans-serif-medium" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/photo_color_rv" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/preset_color_all_tv" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="@id/preset_color_tv" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/preset_color_tv">
+                <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="#cacace" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sm3" n0:layout_marginEnd="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/default_all_icon" n2:layout_constraintTop_toTopOf="parent" />
+                <ImageView n0:id="@id/default_all_icon" n0:layout_width="10.0dp" n0:layout_height="10.0dp" n0:src="@drawable/rmu" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/preset_color_rv" n0:layout_width="match_parent" n0:layout_height="76.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="54.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/preset_color_tv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <include n0:id="@id/layout_photo_color_all" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704cd" n3:layout_constraintBottom_toBottomOf="parent" layout="@layout/APKTOOL_RENAMED_0x7f0c153e"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/layout_preset_color_all" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704cd" n4:layout_constraintBottom_toBottomOf="parent" layout="@layout/mzq"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

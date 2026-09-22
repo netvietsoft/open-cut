@@ -1,0 +1,210 @@
+{
+    "name": "en-DE",
+    "currency": {
+        "pattern": "#.##0,###",
+        "Standard": "{0} ¤",
+		"StandardNoSymbol": "{0} ¤",
+        "StandardNoCurrency": "#.##0,00",
+		"compact": {
+            "short": "{0} ¤",
+            "shortNoSymbol": "{0} ¤"
+        },
+		"range": {
+			"between": {
+				"short": "{0}–{1} ¤"
+			},
+			"approximately": {
+				"short": "~{0} ¤"
+			},
+			"atLeast": {
+				"short": "{0}+ ¤"
+			},
+			"atMost": {
+				"short": "≤ {0} ¤"
+			}
+		},
+        "currencyList": {
+            "AFN": {
+                "displayName": {
+                    "other": "Afghan afghanis",
+                    "one": "Afghan afghani"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BMD": {
+                "displayName": {
+                    "other": "Bermudian dollars",
+                    "one": "Bermudian dollar"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                },
+                "symbol-alt-narrow": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BYB": {
+                "displayName": {
+                    "other": "Belarusian new roubles (1994–1999)",
+                    "one": "Belarusian new rouble (1994–1999)"
+                }
+            },
+            "BYN": {
+                "displayName": {
+                    "other": "Belarusian roubles",
+                    "one": "Belarusian rouble"
+                }
+            },
+            "BYR": {
+                "displayName": {
+                    "other": "Belarusian roubles (2000–2016)",
+                    "one": "Belarusian rouble (2000–2016)"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "EGP": {
+                "symbol-alt-narrow": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "ETB": {
+                "displayName": {
+                    "other": "Ethiopian birr"
+                }
+            },
+			"EUR": {
+                "displayName": {
+                    "other": "Euro",
+                    "one": "Euro"
+                }
+            },
+            "GHS": {
+                "symbol-alt-narrow": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "JPY": {
+                "symbol-alt-narrow": {
+                    "value": "JP¥",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "LBP": {
+                "symbol-alt-narrow": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "LSL": {
+                "displayName": {
+                    "other": "Lesotho maloti"
+                }
+            },
+            "LVR": {
+                "displayName": {
+                    "other": "Latvian roubles",
+                    "one": "Latvian rouble"
+                }
+            },
+            "MGA": {
+                "displayName": {
+                    "other": "Malagasy ariary"
+                }
+            },
+            "MVR": {
+                "displayName": {
+                    "other": "Maldivian rufiyaa"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "NIO": {
+                "symbol-alt-narrow": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "RUB": {
+                "displayName": {
+                    "other": "Russian roubles",
+                    "one": "Russian rouble"
+                }
+            },
+            "RUR": {
+                "displayName": {
+                    "other": "Russian roubles (1991–1998)",
+                    "one": "Russian rouble (1991–1998)"
+                }
+            },
+            "SHP": {
+                "displayName": {
+                    "other": "St Helena pounds",
+                    "one": "St Helena pound"
+                }
+            },
+            "TJR": {
+                "displayName": {
+                    "other": "Tajikistani roubles",
+                    "one": "Tajikistani rouble"
+                }
+            },
+            "TOP": {
+                "symbol-alt-narrow": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "USD": {
+                "symbol-alt-narrow": {
+                    "value": "US$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "VUV": {
+                "displayName": {
+                    "other": "Vanuatu vatu"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "standardUseNoSymbol": 1
+                }
+            }
+        }
+    }
+}

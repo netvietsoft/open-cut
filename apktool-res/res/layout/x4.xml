@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/loading_content_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:layout_gravity="center_horizontal" n0:id="@id/loading_animation_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/loading_animation" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n1:lottie_autoPlay="true" n1:lottie_loop="true" />
+            <View n0:layout_gravity="center" n0:id="@id/loading_animation_border" n0:background="@drawable/kt0" n0:layout_width="80.0dp" n0:layout_height="80.0dp" />
+        </FrameLayout>
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#ffffff" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/loading_msg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" />
+        <TextView n0:textSize="14.0dp" n0:textStyle="normal" n0:textColor="#e5e9fa" n0:gravity="center_horizontal" n0:layout_gravity="center_horizontal" n0:id="@id/tvLoadingTip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:alpha="0.4" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/btn_cancel" n0:background="@drawable/k7p" n0:paddingTop="7.5dp" n0:paddingBottom="7.5dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:minWidth="64.0dp" n0:minHeight="36.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/source_logo_text" n0:layout_width="match_parent" n0:layout_height="15.0dp" n0:layout_marginBottom="42.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="#66e5e9fa" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/muh" />
+        <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="3.0dp" n0:layout_marginRight="3.0dp" n0:src="@drawable/mjb" n0:scaleType="centerCrop" n0:layout_marginHorizontal="3.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="#66e5e9fa" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/mui" />
+    </LinearLayout>
+    <ImageView n0:id="@id/error_icon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintBottom_toTopOf="@id/error_msg" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:layout_constraintVertical_bias="0.46" n3:layout_constraintVertical_chainStyle="packed"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#66ffffff" n0:gravity="center" n0:id="@id/error_msg" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toTopOf="@id/btn_retry" n4:layout_constraintTop_toBottomOf="@id/error_icon"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/btn_retry" n0:background="@drawable/k7s" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:minWidth="88.0dp" n0:minHeight="36.0dp" n0:drawablePadding="4.0dp" n0:paddingStart="20.0dp" n0:paddingEnd="20.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/error_msg"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

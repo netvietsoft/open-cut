@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.edit.portrait.erasure.smarteraser.SmartContoursView n0:id="@id/xt_smart_eraser_section_contour" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_alignParentTop="true" n0:layout_alignParentStart="true" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/xt_smart_eraser_tool_bar_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="7.0dp" n2:layout_constraintBottom_toTopOf="@id/xt_smart_eraser_panel"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/xt_iv_smart_eraser_undo" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/r44" n0:layout_marginStart="12.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/xt_iv_smart_eraser_redo" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/ri4" n2:layout_constraintStart_toEndOf="@id/xt_iv_smart_eraser_undo" n2:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/xt_iv_smart_eraser_reset" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/r01" n2:layout_constraintStart_toEndOf="@id/xt_iv_smart_eraser_redo" n2:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.CompareView n0:id="@id/xt_smart_eraser_compare" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/rs9" n0:layout_marginEnd="15.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:id="@id/xt_smart_eraser_anim_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintBottom_toTopOf="@id/xt_smart_eraser_panel" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.ScaleLottieAnimationView n0:layout_gravity="center|top" n0:id="@id/xt_smart_eraser_star_loading" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:lottie_fileName="beauty_kira.json" n3:lottie_loop="true" />
+    </FrameLayout>
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/xt_manual_eraser_frame_pen_guide" n0:visibility="gone" n0:layout_width="195.0dp" n0:layout_height="190.0dp" n0:layout_marginTop="148.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:lottie_fileName="loading_frame_pen.json" n4:lottie_loop="false"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.edit.base.view.DisplayPenView n0:id="@id/xt_manual_eraser_display_pen_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f07047b" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/xt_smart_eraser_panel" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/xt_btn_smart_eraser_container" n0:background="#000000" n0:layout_width="match_parent" n0:layout_height="98.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent">
+            <TextView n0:enabled="false" n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="#000000" n0:gravity="center" n0:id="@id/xt_btn_smart_eraser" n0:background="@drawable/APKTOOL_RENAMED_0x7f0831e6" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginBottom="21.0dp" n0:text="@string/s7_" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" />
+            <View n0:id="@id/xt_btn_smart_eraser_gray_mask" n0:background="@color/krp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n5:layout_constraintBottom_toBottomOf="@id/xt_btn_smart_eraser" n5:layout_constraintEnd_toEndOf="@id/xt_btn_smart_eraser" n5:layout_constraintStart_toStartOf="@id/xt_btn_smart_eraser" n5:layout_constraintTop_toTopOf="@id/xt_btn_smart_eraser" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include n0:id="@id/xt_smart_eraser_control_panel" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toTopOf="@id/xt_btn_smart_eraser_container" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" layout="@layout/mzc" />
+        <include n0:id="@id/xt_smart_eraser_manual_select" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toTopOf="@id/xt_btn_smart_eraser_container" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" layout="@layout/myb" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="@android:color/white" n0:layout_width="match_parent" n0:layout_height="50.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/applovin_native_icon_and_text_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_toLeftOf="@id/applovin_native_cta_button" n0:layout_toStartOf="@id/applovin_native_cta_button" layout="@layout/lxc" />
+    <Button n0:textSize="15.0sp" n0:id="@id/applovin_native_cta_button" n0:layout_width="74.0dp" n0:layout_height="match_parent" n0:layout_alignParentRight="true" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" style="@style/APKTOOL_RENAMED_0x7f1304b9" />
+</RelativeLayout>

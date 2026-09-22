@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/qpz" n0:paddingTop="8.0dp" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center_horizontal" n0:id="@id/group_name_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lwl" n1:layout_constraintBottom_toBottomOf="@id/close" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="@id/close"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/layout_description" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="32.0dp" n0:layout_marginEnd="32.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/group_name_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#801c283d" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/tv_description" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="11.0dp" n0:textFontWeight="400" n2:kks="15.599976dp" n2:k1h="15.599976dp" />
+    </FrameLayout>
+    <androidx.cardview.widget.CardView n0:layout_gravity="center_vertical" n0:id="@id/group_header_card" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginStart="16.0dp" n3:cardCornerRadius="6.0dp" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintTop_toTopOf="@id/group_name_edit"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="23.0dp" n0:textStyle="bold" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/group_header_text" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+    <com.vega.theme.VegaEditText n0:textSize="16.0dp" n0:textColor="@color/_3" n0:id="@id/group_name_edit" n0:background="@drawable/l55" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="24.0dp" n0:singleLine="true" n0:maxLength="50" n0:textCursorDrawable="@drawable/qbb" n0:paddingStart="16.0dp" n0:paddingEnd="40.0dp" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintLeft_toRightOf="@id/group_header_card" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toBottomOf="@id/layout_description"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/cloud_clear_text" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/l5i" n0:layout_marginEnd="12.0dp" n5:layout_constraintBottom_toBottomOf="@id/group_name_edit" n5:layout_constraintEnd_toEndOf="@id/group_name_edit" n5:layout_constraintTop_toTopOf="@id/group_name_edit"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/header_color_list" n0:layout_width="match_parent" n0:layout_height="32.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="16.0dp" n0:overScrollMode="never" n0:layout_marginHorizontal="16.0dp" n6:layout_constraintTop_toBottomOf="@id/group_name_edit"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/uk" n0:gravity="center" n0:id="@id/group_ok_btn" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c7e" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/qrx" n0:layout_marginHorizontal="16.0dp" n7:layout_constraintLeft_toLeftOf="parent" n7:layout_constraintRight_toRightOf="parent" n7:layout_constraintTop_toBottomOf="@id/header_color_list"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/close" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/l51" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

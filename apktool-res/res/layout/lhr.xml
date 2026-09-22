@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/item_root_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" style="@style/uj"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/item_content_view" n0:background="#cc26272b" n0:layout_width="match_parent" n0:layout_height="66.0dp">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/vt_icon" n0:background="#0de5ecff" n0:layout_width="66.0dp" n0:layout_height="66.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:id="@id/vt_title" n0:layout_width="wrap_content" n0:layout_height="@dimen/ru" n0:layout_marginTop="@dimen/rq" n0:text="Ai Model" n0:layout_marginStart="@dimen/rp" n2:layout_constraintStart_toEndOf="@id/vt_icon" n2:layout_constraintTop_toTopOf="parent" n2:k1i="medium" n2:k1j="body_1"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_use" n0:paddingLeft="@dimen/ra" n0:paddingRight="@dimen/ra" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="@dimen/ra" n0:paddingHorizontal="@dimen/ra" n3:layout_constraintBottom_toBottomOf="@id/vt_title" n3:layout_constraintStart_toEndOf="@id/vt_title" n3:layout_constraintTop_toTopOf="@id/vt_title" n3:kml="large" n3:kmm="mix"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/kc" n0:gravity="center" n0:id="@id/vt_hot" n0:background="@color/ki" n0:paddingLeft="@dimen/ra" n0:paddingRight="@dimen/ra" n0:layout_width="wrap_content" n0:layout_height="@dimen/ru" n0:text="Hot" n0:layout_marginStart="@dimen/ra" n0:paddingHorizontal="@dimen/ra" n4:layout_constraintBottom_toBottomOf="@id/vt_title" n4:layout_constraintStart_toEndOf="@id/iv_use" n4:layout_constraintTop_toTopOf="@id/vt_title" n4:k1i="medium" n4:k1j="small_text"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/kc" n0:gravity="center" n0:id="@id/vt_hot_v2" n0:background="@color/ki" n0:paddingLeft="@dimen/ra" n0:paddingRight="@dimen/ra" n0:layout_width="wrap_content" n0:layout_height="@dimen/ru" n0:text="20s" n0:layout_marginStart="@dimen/ra" n0:paddingHorizontal="@dimen/ra" n5:layout_constraintBottom_toBottomOf="@id/vt_title" n5:layout_constraintStart_toEndOf="@id/vt_hot" n5:layout_constraintTop_toTopOf="@id/vt_title" n5:k1i="medium" n5:k1j="small_text"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/kc" n0:gravity="center" n0:id="@id/vt_consuming_time" n0:background="@color/ki" n0:paddingLeft="@dimen/ra" n0:paddingRight="@dimen/ra" n0:layout_width="wrap_content" n0:layout_height="@dimen/ru" n0:text="60s" n0:layout_marginStart="@dimen/ra" n0:paddingHorizontal="@dimen/ra" n6:layout_constraintBottom_toBottomOf="@id/vt_title" n6:layout_constraintStart_toEndOf="@id/vt_hot_v2" n6:layout_constraintTop_toTopOf="@id/vt_title" n6:k1i="medium" n6:k1j="small_text"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:id="@id/vt_desc" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/rt" n0:text="image generation model." n0:maxLines="2" n0:layout_marginStart="@dimen/rp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toEndOf="@id/vt_icon" n7:layout_constraintTop_toBottomOf="@id/vt_title" n7:k1i="regular" n7:k1j="body_2"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.vega.lvui.view.MaterialSelectableLayout>

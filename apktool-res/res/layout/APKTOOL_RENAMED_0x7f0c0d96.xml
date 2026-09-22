@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vege.genai.preview.widget.zoomimageview.ZoomImageView n0:id="@id/zoomImageView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="start|top" n0:id="@id/watermarkContainer" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <ImageView n0:id="@id/watermarkBorderView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/n00" n0:scaleType="fitXY" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/watermarkView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/n0e" n0:scaleType="fitXY" n2:layout_constraintBottom_toBottomOf="@id/watermarkBorderView" n2:layout_constraintStart_toStartOf="@id/watermarkBorderView"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/watermarkEditIcon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/poe" n0:layout_marginStart="2.0dp" n3:layout_constraintBottom_toBottomOf="@id/watermarkBorderView" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/watermarkBorderView" n3:layout_constraintTop_toTopOf="@id/watermarkBorderView"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

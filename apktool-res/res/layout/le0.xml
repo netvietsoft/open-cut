@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.edit.base.view.ExpandCoordinatorLayout n0:id="@id/expandCoordinatorLayout" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/cl_bottom_root" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.appbar.AppBarLayout n0:id="@id/appbarLayout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:elevation="0.0dp">
+            <View n0:id="@id/blankView" n0:layout_width="match_parent" n0:layout_height="100.0dp" n0:alpha="0.0" n1:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/appbarConstraintLayout" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_scrollFlags="enterAlways">
+                <com.vega.ui.AlphaTextButton n0:textSize="12.0dp" n0:textColor="@drawable/m9w" n0:gravity="center" n0:id="@id/btn_business_filter" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:text="@string/rxx" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/m9u" n0:paddingStart="@dimen/cu" n0:layout_marginStart="@dimen/cu" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/tabRv" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:paddingStart="10.0dp" n1:layout_constraintEnd_toStartOf="@id/okBtn" n1:layout_constraintStart_toEndOf="@id/btn_business_filter" n1:layout_constraintTop_toTopOf="parent" />
+                <com.vega.ui.AlphaButton n0:id="@id/okBtn" n0:padding="14.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/l2u" n1:layout_constraintBottom_toBottomOf="@id/tabRv" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/tabRv" />
+                <View n0:id="@id/divider" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/tabRv" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager n0:id="@id/viewPager" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </com.vega.edit.base.view.ExpandCoordinatorLayout>
+    <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="match_parent" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" layout="@layout/lwu"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.LoadingView n0:id="@id/loadingView" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_bottom_root" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:id="@id/ll_remove_caption" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="4.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/bt_generate_caption" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_gravity="center_vertical" n0:id="@id/ivRemoveCaptions" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/qmp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:id="@id/tvRemoveCaptions" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/nt4" n0:maxLines="2" n0:layout_weight="1.0" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <com.vega.ui.AlphaTextButton n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060074" n0:gravity="center" n0:id="@id/bt_generate_caption" n0:background="@drawable/ly3" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:text="@string/nuc" n0:textAllCaps="false" n0:layout_marginEnd="16.0dp" n0:layout_marginVertical="12.0dp" n0:paddingHorizontal="12.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/ll_remove_caption" n4:layout_constraintTop_toTopOf="parent" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkViewCompat n0:id="@id/iv_vip_flag" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:translationY="-4.0dp" n0:elevation="10.0dp" n4:c2="subtitle_recognition" n4:APKTOOL_RENAMED_0x7f0404ef="subtitle_recognition" n4:layout_constraintEnd_toEndOf="@id/bt_generate_caption" n4:layout_constraintTop_toTopOf="@id/bt_generate_caption" n4:kml="small" n4:kmm="button" n4:kmo="edit" n4:ktj="normal_func" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

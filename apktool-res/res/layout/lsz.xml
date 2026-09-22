@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/searchTemplateDetailRv" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="14.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toBottomOf="@id/input"
+      xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n2:gravity="center" n2:id="@id/searchTemplateErrorLy" n2:visibility="gone" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:layout_marginTop="15.0dp" n2:paddingStart="70.0dp" n2:paddingEnd="70.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res/android" xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n2:id="@id/searchTemplateErrorIv" n2:layout_width="20.0dp" n2:layout_height="20.0dp" n2:src="@drawable/odn" n2:scaleType="centerCrop" />
+        <com.vega.ui.ContentTextView n2:textSize="14.0dp" n2:textColor="@color/_4" n2:gravity="center_vertical" n2:layout_gravity="center_vertical" n2:id="@id/searchTemplateErrorTv" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:text="@string/qnl" n2:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline n4:orientation="horizontal" n4:id="@id/guideLine" n4:layout_width="wrap_content" n4:layout_height="wrap_content" n5:layout_constraintGuide_begin="10.0dp"
+      xmlns:n4="http://schemas.android.com/apk/res/android" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n6:textSize="14.0dp" n6:textColor="@color/APKTOOL_RENAMED_0x7f06061f" n6:gravity="center" n6:id="@id/cancel" n6:visibility="gone" n6:layout_width="wrap_content" n6:layout_height="30.0dp" n6:text="@string/APKTOOL_RENAMED_0x7f120576" n6:paddingStart="8.0dp" n6:paddingEnd="16.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toEndOf="@id/input" n7:layout_constraintTop_toTopOf="@id/guideLine" n7:kr3="none"
+      xmlns:n6="http://schemas.android.com/apk/res/android" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaEditText n8:textSize="14.0dp" n8:textColor="@color/knt" n8:textColorHint="@color/_v" n8:gravity="center_vertical" n8:id="@id/input" n8:background="@drawable/lsw" n8:visibility="gone" n8:layout_width="0.0dp" n8:layout_height="30.0dp" n8:hint="@string/mr8" n8:maxLines="1" n8:singleLine="true" n8:includeFontPadding="false" n8:drawablePadding="8.0dp" n8:imeOptions="actionSearch" n8:textCursorDrawable="@drawable/lw5" n8:drawableStart="@drawable/ofy" n8:paddingStart="8.0dp" n8:paddingEnd="31.0dp" n8:layout_marginStart="16.0dp" n8:layout_marginEnd="0.0dp" n9:layout_constraintEnd_toStartOf="@id/cancel" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toBottomOf="@id/top_bar"
+      xmlns:n8="http://schemas.android.com/apk/res/android" xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <View n10:id="@id/hideKeyBoard" n10:layout_width="match_parent" n10:layout_height="0.0dp" n10:layout_marginTop="10.0dp" n11:layout_constraintBottom_toBottomOf="parent" n11:layout_constraintTop_toBottomOf="@id/input"
+      xmlns:n10="http://schemas.android.com/apk/res/android" xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n12:id="@id/clear" n12:visibility="gone" n12:layout_width="30.0dp" n12:layout_height="30.0dp" n12:src="@drawable/nbe" n12:scaleType="centerInside" n13:layout_constraintEnd_toEndOf="@id/input" n13:layout_constraintTop_toTopOf="@id/guideLine" n13:kr3="none"
+      xmlns:n12="http://schemas.android.com/apk/res/android" xmlns:n13="http://schemas.android.com/apk/res-auto" />
+</merge>

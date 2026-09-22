@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_ratio_prompt" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/fl_business" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.outpainting.fragment.OutPaintingRatioFragment" n0:id="@id/fragment_out_painting_ratio" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toTopOf="@id/fragment_out_painting_prompt" n1:layout_constraintTop_toTopOf="parent" />
+        <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.outpainting.fragment.OutPaintingPromptFragment" n0:id="@id/fragment_out_painting_prompt" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:id="@id/fl_business" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintBottom_toTopOf="@id/rl_apply"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@drawable/l62" n0:id="@id/tvReset" n0:background="@drawable/k_e" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:text="@string/og3" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/mkz" n0:layout_marginStart="16.0dp" n3:layout_constraintBottom_toBottomOf="@id/rl_apply" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n0:id="@id/rl_apply" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:enabled="false" n0:id="@id/out_painting_generate_cl" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805c6" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginStart="8.0dp">
+            <ImageView n0:id="@id/out_painting_generate_iv" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/mc9" n0:layout_marginStart="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/out_painting_generate_tv" n4:layout_constraintHorizontal_chainStyle="packed" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#ff000000" n0:id="@id/out_painting_generate_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ogw" n0:fontFamily="sans-serif-black" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="8.0dp" n0:letterSpacing="0.0019" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/out_painting_generate_iv" n4:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip_flag" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="-4.0dp" n0:layout_alignTop="@id/out_painting_generate_cl" n0:layout_alignEnd="@id/out_painting_generate_cl" n4:kml="small" n4:kmm="button" n4:kr0="limitFree" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

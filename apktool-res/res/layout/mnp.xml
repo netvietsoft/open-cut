@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/cutout_preview_layout" n0:tag="layout/xt_cutout_preview_view_0" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <TextView n0:textSize="12.0dp" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_preview" n0:tag="binding_1" n0:background="@drawable/r9p" n0:layout_width="50.0dp" n0:layout_height="wrap_content" n0:minWidth="0.0dp" n0:minHeight="0.0dp" n0:text="@string/tby" />
+    <ImageView n0:gravity="center" n0:id="@id/iv_preview" n0:padding="10.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/rs5" n0:minWidth="0.0dp" n0:minHeight="0.0dp" n0:layout_marginEnd="8.0dp" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.tux.widget.FlexLayout n0:id="@id/toast_root_layout" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:layout_gravity="center_horizontal" n0:orientation="horizontal" n0:id="@id/toast_layout" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:APKTOOL_RENAMED_0x7f04060b="50%" n1:_1="screen.isLand>0?26dp:8dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.bytedance.tux.icon.TuxIconView n0:layout_gravity="center_vertical" n0:id="@id/icon" n0:visibility="gone" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginLeft="0.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginStart="0.0dp" n0:layout_marginEnd="8.0dp" />
+        <com.bytedance.tux.input.TuxTextLayoutView n0:gravity="start|center" n0:layout_gravity="center_vertical" n0:id="@id/message" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </LinearLayout>
+</com.bytedance.tux.widget.FlexLayout>

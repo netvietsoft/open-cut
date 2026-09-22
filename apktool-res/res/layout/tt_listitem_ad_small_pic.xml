@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.msdk.api.format.TTNativeAdView n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <RelativeLayout n0:id="@id/ad_contentPanel" n0:layout_width="match_parent" n0:layout_height="85.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginTop="10.0dp" n0:layout_marginRight="10.0dp">
+            <ImageView n0:id="@id/iv_listitem_image" n0:background="@drawable/tt_ad_cover_btn_begin_bg" n0:layout_width="100.0dp" n0:layout_height="match_parent" n0:scaleType="centerCrop" n0:layout_alignParentRight="true" n0:layout_alignParentEnd="true" />
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_toLeftOf="@id/iv_listitem_image" n0:layout_centerVertical="true" n0:layout_toStartOf="@id/iv_listitem_image">
+                <TextView n0:textSize="18.0sp" n0:textColor="@android:color/black" n0:ellipsize="end" n0:id="@id/tv_listitem_ad_desc" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="text content descripe" n0:maxLines="2" n0:lineSpacingMultiplier="1.1" />
+                <RelativeLayout n0:paddingRight="10.0dp" n0:layout_width="match_parent" n0:layout_height="30.0dp" n0:layout_marginTop="3.0dp" n0:paddingEnd="10.0dp">
+                    <ImageView n0:id="@id/iv_listitem_icon" n0:layout_width="30.0dp" n0:layout_height="match_parent" n0:layout_marginRight="10.0dp" n0:src="@drawable/tt_mute" n0:layout_alignParentLeft="true" n0:layout_centerVertical="true" n0:layout_marginEnd="10.0dp" n0:layout_alignParentStart="true" />
+                    <TextView n0:textSize="16.0sp" n0:textColor="#70000000" n0:ellipsize="end" n0:gravity="center_vertical" n0:id="@id/tv_listitem_ad_source" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:text="text title" n0:singleLine="true" n0:layout_toLeftOf="@id/iv_listitem_dislike" n0:layout_toRightOf="@id/iv_listitem_icon" n0:layout_centerVertical="true" n0:layout_toStartOf="@id/iv_listitem_dislike" n0:layout_toEndOf="@id/iv_listitem_icon" />
+                    <ImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_listitem_dislike" n0:focusable="true" n0:clickable="true" n0:layout_width="20.0dp" n0:layout_height="match_parent" n0:layout_marginLeft="10.0dp" n0:layout_alignParentRight="true" n0:layout_marginStart="10.0dp" n0:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <include n0:id="@id/ad_title_creative_btn_layout" n0:layout_width="match_parent" n0:layout_height="45.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:layout_below="@id/ad_contentPanel" layout="@layout/tt_listitem_ad_title_creative_btn_layout" />
+    </RelativeLayout>
+</com.bytedance.msdk.api.format.TTNativeAdView>

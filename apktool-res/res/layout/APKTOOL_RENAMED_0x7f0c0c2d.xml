@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:id="@id/cardCover" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:cardCornerRadius="8.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/bgCover" n0:background="#ff1c1d21" n0:layout_width="wrap_content" n0:layout_height="290.0dp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView n0:id="@id/cardTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n2:cardCornerRadius="4.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/cardCover"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/bgTitle" n0:background="#ff1c1d21" n0:layout_width="140.0dp" n0:layout_height="16.0dp" />
+    </androidx.cardview.widget.CardView>
+    <com.vega.ui.widget.RoundCornerImageView n0:background="#ff1c1d21" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="8.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/cardTitle" n3:_5="8.0dp" n3:klh="8.0dp" n3:ktn="8.0dp" n3:kuf="8.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

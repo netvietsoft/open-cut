@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="horizontal" n0:id="@id/cloud_item_bottom" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textStyle="bold" n0:textColor="@color/s8" n0:ellipsize="middle" n0:id="@id/cloud_item_folder_name" n0:paddingTop="5.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_marginEnd="16.0dp" n1:layout_constraintEnd_toStartOf="@id/btn_more" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+        <ImageView n0:id="@id/btn_more" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="5.0dp" n0:src="@drawable/onn" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/cloud_item_folder_bg" n0:background="@drawable/k57" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toTopOf="@id/cloud_item_bottom" n2:layout_constraintDimensionRatio="H,1:1" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/cloud_item_folder_cover" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_margin="17.0dp" n0:src="@drawable/nm7" n3:layout_constraintBottom_toBottomOf="@id/cloud_item_folder_bg" n3:layout_constraintDimensionRatio="H,1:1" n3:layout_constraintEnd_toEndOf="@id/cloud_item_folder_bg" n3:layout_constraintStart_toStartOf="@id/cloud_item_folder_bg" n3:layout_constraintTop_toTopOf="@id/cloud_item_folder_bg"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cloud_item_folder_cover_new" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginLeft="6.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="6.0dp" n0:layout_marginBottom="6.0dp" n0:src="@drawable/nnx" n0:layout_marginHorizontal="6.0dp" n4:layout_constraintBottom_toBottomOf="@id/cloud_item_folder_bg" n4:layout_constraintEnd_toEndOf="@id/cloud_item_folder_bg" n4:layout_constraintStart_toStartOf="@id/cloud_item_folder_bg" n4:layout_constraintTop_toTopOf="@id/cloud_item_folder_bg"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/cloud_cloud_item_iv_select" n0:background="@drawable/l54" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginEnd="6.0dp" n5:layout_constraintEnd_toEndOf="@id/cloud_item_folder_bg" n5:layout_constraintTop_toTopOf="@id/cloud_item_folder_bg"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tv_cloud_item_folder_count" n0:background="@drawable/kwf" n0:paddingLeft="4.0dp" n0:paddingRight="4.0dp" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:minWidth="16.0dp" n0:text="8" n0:paddingHorizontal="4.0dp" n6:layout_constraintBottom_toBottomOf="@id/cloud_item_folder_cover_new" n6:layout_constraintEnd_toEndOf="@id/cloud_item_folder_cover_new" n6:k1i="medium"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

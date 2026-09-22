@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/item_bg" n0:background="@drawable/kvd" n0:layout_width="match_parent" n0:layout_height="78.0dp" n0:layout_marginBottom="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/tv_avatar" n0:background="@drawable/kvc" n0:padding="8.0dp" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/o0c" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:id="@id/tv_space_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/oz9" n0:singleLine="true" n0:layout_marginStart="12.0dp" n2:layout_constraintStart_toEndOf="@id/tv_avatar" n2:layout_constraintTop_toTopOf="parent" n2:k1i="bold"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mo" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/ox5" n0:layout_marginStart="12.0dp" n3:layout_constraintStart_toEndOf="@id/tv_avatar" n3:layout_constraintTop_toBottomOf="@id/tv_space_name"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

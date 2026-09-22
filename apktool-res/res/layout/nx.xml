@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="44.0dp">
+        <ImageView n0:id="@id/back" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m6d" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/sg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kfs" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <fragment n0:name="androidx.navigation.fragment.NavHostFragment" n0:id="@id/nav_host_fragment_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" n3:APKTOOL_RENAMED_0x7f040435="true" n3:ko5="@navigation/n"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

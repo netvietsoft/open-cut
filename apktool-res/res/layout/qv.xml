@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/media_root" n0:background="@color/d" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:layout_gravity="bottom" n0:background="#1c1d21" n0:layout_width="match_parent" n0:layout_height="100.0dp" />
+    <FrameLayout n0:layout_gravity="center|top" n0:id="@id/fl_preview_container" n0:layout_width="match_parent" n0:layout_height="385.0dp">
+        <TextureView n0:id="@id/preview_texture_view" n0:layout_width="match_parent" n0:layout_height="385.0dp" n0:alpha="0.0" />
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/gallery_close_btn" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="44.0dp" n0:src="@drawable/n0u" n0:layout_marginStart="6.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/super_res_gen_gallery_top_elements" layout="@layout/l65" />
+    <com.vega.gallery.ui.HalfScreenGalleryScrollContainer n0:id="@id/super_res_gallery_scroll_container" n0:background="@drawable/qu8" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <LinearLayout n0:orientation="vertical" n0:id="@id/super_res_gallery_creatives_header_container" n0:background="@drawable/qu8" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <FrameLayout n0:layout_width="match_parent" n0:layout_height="16.0dp">
+                <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:id="@id/creatives_drag_indicator" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:src="@drawable/mst" />
+            </FrameLayout>
+            <com.google.android.material.tabs.TabLayout n0:id="@id/creatives_category_tab_layout" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:tabBackground="@color/APKTOOL_RENAMED_0x7f060634" n2:tabGravity="fill" n2:tabIndicatorAnimationDuration="300" n2:tabIndicatorAnimationMode="linear" n2:tabIndicatorColor="@color/APKTOOL_RENAMED_0x7f0605f2" n2:tabIndicatorFullWidth="true" n2:tabIndicatorHeight="2.0dp" n2:tabMaxWidth="0.0dp" n2:tabMinWidth="0.0dp" n2:tabMode="fixed" n2:tabPaddingEnd="0.0dp" n2:tabPaddingStart="0.0dp" n2:tabRippleColor="@color/APKTOOL_RENAMED_0x7f060634" n2:tabSelectedTextColor="@color/ml" n2:tabTextAppearance="@style/r8" n2:tabTextColor="@color/mn"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/creatives_folder_header_content" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+                <View n0:id="@id/creatives_gallery_header_divider" n0:background="@color/APKTOOL_RENAMED_0x7f06063c" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:alpha="0.8" n3:layout_constraintTop_toTopOf="parent"
+                  xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/creatives_source_tab_container" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/creatives_folder_name" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+                  xmlns:n4="http://schemas.android.com/apk/res-auto">
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:gravity="center" n0:id="@id/creatives_source_local_tab" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/osn" n0:maxLines="1" n4:k1i="medium" />
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mp" n0:gravity="center" n0:id="@id/creatives_source_assets_tab" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/oso" n0:maxLines="1" n0:layout_marginStart="24.0dp" n4:k1i="medium" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/mn" n0:ellipsize="end" n0:gravity="center" n0:id="@id/creatives_folder_name" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:maxWidth="120.0dp" n0:maxLines="1" n0:lineSpacingExtra="5.0dp" n0:layout_marginEnd="4.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toStartOf="@id/creatives_folder_arrow" n5:layout_constraintTop_toTopOf="parent" n5:k1i="medium"
+                  xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                <androidx.appcompat.widget.AppCompatImageView n0:id="@id/creatives_folder_arrow" n0:paddingTop="5.0dp" n0:paddingBottom="5.0dp" n0:layout_width="14.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08050e" n0:layout_marginEnd="16.0dp" n0:paddingVertical="5.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="parent"
+                  xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <include n0:id="@id/super_res_gallery_header" layout="@layout/l64" />
+        <com.vega.gallery.widget.MediaSelectFrameLayout n0:layout_gravity="center" n0:id="@id/rootView" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <androidx.fragment.app.FragmentContainerView n0:id="@id/galleryFragmentView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+            <View n0:layout_gravity="center_horizontal" n0:id="@id/divider" n0:background="#535353" n0:layout_width="1.0dp" n0:layout_height="match_parent" n0:alpha="0.0" />
+        </com.vega.gallery.widget.MediaSelectFrameLayout>
+    </com.vega.gallery.ui.HalfScreenGalleryScrollContainer>
+    <FrameLayout n0:id="@id/previewContainer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:layout_gravity="center|bottom" n0:id="@id/bottom_container" n0:background="@color/h" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="106.0dp">
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="@dimen/rr" n0:layout_marginBottom="@dimen/rw">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/selectedMediaRv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n7:layout_constraintLeft_toLeftOf="parent" n7:layout_constraintTop_toTopOf="parent"
+                  xmlns:n7="http://schemas.android.com/apk/res-auto" />
+                <View n0:id="@id/item_mask_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f08052f" n0:layout_width="56.0dp" n0:layout_height="60.0dp" n8:layout_constraintBottom_toBottomOf="@id/selectedMediaRv" n8:layout_constraintRight_toRightOf="@id/selectedMediaRv" n8:layout_constraintTop_toTopOf="@id/selectedMediaRv"
+                  xmlns:n8="http://schemas.android.com/apk/res-auto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.vega.ui.StrongButton n0:enabled="false" n0:textSize="14.0dp" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/sb_media_select_done" n0:background="@drawable/l6b" n0:paddingLeft="16.0dp" n0:paddingTop="4.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="36.0dp" n0:text="@string/o4l" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="4.0dp" n9:k1i="medium"
+              xmlns:n9="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

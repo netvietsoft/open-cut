@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:focusable="false" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.feedx.main.banner.pager.BounceBackViewPager n0:id="@id/viewPager" n0:focusable="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <RelativeLayout n0:layout_gravity="bottom" n0:focusable="false" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <LinearLayout n0:orientation="horizontal" n0:id="@id/indicatorContainer" n0:focusable="false" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>

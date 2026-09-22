@@ -1,0 +1,27 @@
+id: TASK-024-WORKSPACE-FIT-ROTATE-EXIF-CROP-RULER
+title: "Nâng Cấp Workspace Fit Toàn Màn Hình, Tự Động Xoay EXIF, Xoay 90/180/270, Cắt Cúp Tự Do Và Thước Đo Timeline Chuẩn CapCut"
+status: completed
+assignee: "Agent 0, Agent 3, Agent 6, Agent 11, Agent 12"
+created_at: "2026-09-18T20:08:00Z"
+completed_at: "2026-09-18T21:15:00Z"
+priority: CRITICAL
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/EffectRegistry.java"
+  - "TASK_LOG.md"
+  - "UPDATETODOS.md"
+  - "PROJECT_MEMORY.md"
+  - "Docs/Changelog/CHANGELOG.md"
+  - ".ai/**"
+requirements:
+  - "1. Tự động đọc EXIF Orientation khi nạp ảnh (ExifInterface): Tự động xoay ảnh về đúng chiều thẳng đứng (portrait) khi nạp từ Camera/Bộ sưu tập, loại bỏ triệt để lỗi ảnh bị nằm ngang."
+  - "2. Khắc phục Workspace Fit Full Màn: Khu vực canvas xem trước ảnh và video co giãn tự động lấp đầy vùng hiển thị tối ưu (Auto-fit viewport với tỷ lệ chuẩn), không bị co cụm thu nhỏ bất thường."
+  - "3. Tính năng Xoay 90 độ (Rotation Tool) & Lật ảnh/video (Flip Horizontal/Vertical): Bổ sung công cụ xoay 90, 180, 270, 360 độ và lật gương cho cả Trình Chỉnh Sửa Ảnh và Trình Biên Tập Video."
+  - "4. Công cụ Cắt Cúp Khung Hình Tự Do (Freeform & Preset Crop/Resize): Cho phép người dùng tùy chỉnh cắt cúp theo chiều cao, độ rộng, hoặc theo các tỷ lệ chuẩn (1:1, 9:16, 16:9, 4:3, 3:4, 2:3) bằng giao diện trực quan chuẩn CapCut."
+  - "5. Nâng cấp Thước Đo Timeline Video (CapCut Timecode Ruler): Thước đo hiển thị vạch giây (00:00, 00:01, 00:02...) kèm các vạch chia phụ mili-giây rõ nét, playhead thước đo chuẩn xác đồng bộ với độ dài video."
+  - "6. Kiểm thử 100% trên thiết bị vật lý thật Samsung Galaxy A50s (192.168.1.3:36903) và lưu trữ ảnh minh chứng."
+verification:
+  status: "PASSED_100%"
+  device: "Samsung Galaxy A50s (SM-A507FN, Android 11, 1080x2340)"
+  screenshots_count: 18
+  directory: "design/screenshots/physical_device_a50s/task024_*.png"

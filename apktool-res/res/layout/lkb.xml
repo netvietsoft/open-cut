@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:id="@id/music_wave_preview_content" n0:paddingTop="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="20.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.VegaCheckBox n0:gravity="center" n0:layout_gravity="center_vertical" n0:id="@id/switch_copyright" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:button="@drawable/ql7" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:layout_gravity="center_vertical" n0:id="@id/tv_switch_copyright" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:includeFontPadding="false" n0:layout_marginStart="10.0dp" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

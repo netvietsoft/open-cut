@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/image_root" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="56.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/ivSelectedBg" n0:layout_width="56.0dp" n0:layout_height="56.0dp" style="@style/uj">
+        <com.vega.lvui.widget.MaterialDraweeView n0:id="@id/image" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/nb4" n0:scaleType="center" n1:i1="8.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </com.vega.lvui.view.MaterialSelectableLayout>
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/gn" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tv_name" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="2.0dp" n0:layout_marginTop="6.5dp" n0:layout_marginRight="2.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122cd4" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

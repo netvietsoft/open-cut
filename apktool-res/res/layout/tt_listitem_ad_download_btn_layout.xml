@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="10.0dp" n0:layout_below="@id/ad_title_creative_btn_layout"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <Button n0:textColor="#3c93cd" n0:id="@id/btn_listitem_stop" n0:background="@drawable/tt_btn_bg_blue" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_marginRight="20.0dp" n0:text="Suspend the download" n0:layout_marginEnd="20.0dp" />
+    <Button n0:textColor="#f85959" n0:id="@id/btn_listitem_remove" n0:background="@drawable/tt_btn_bg_red" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:text="Delete the download" />
+</LinearLayout>

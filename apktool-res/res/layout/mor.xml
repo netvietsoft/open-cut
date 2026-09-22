@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/xt_erasure_bottom_panel" n0:background="@color/ku_" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.InterceptConstraintLayout n0:id="@id/xt_erasure_whole_panel" n0:background="@color/kw0" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toTopOf="@id/xt_erasure_bottom_bar">
+            <include n0:id="@id/xt_erasure_pen_container" n0:layout_width="0.0dp" n0:layout_height="@dimen/ez" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" layout="@layout/mvy" />
+        </com.xt.retouch.baseui.view.InterceptConstraintLayout>
+        <include n0:id="@id/xt_erasure_bottom_bar" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070513" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" layout="@layout/mvx" />
+    </LinearLayout>
+    <include n0:id="@id/xt_erasure_top_bar" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" layout="@layout/mvz"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.edit.base.view.DisplayPenView n0:id="@id/xt_erasure_display_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/iu" />
+    <com.xt.retouch.baseui.view.CommonLoadingView n0:id="@id/xt_erasure_loading" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

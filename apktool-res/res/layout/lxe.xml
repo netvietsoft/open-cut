@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="@android:color/white" n0:layout_width="match_parent" n0:layout_height="90.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/applovin_native_leader_icon_and_text_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_toLeftOf="@id/applovin_native_media_content_view" n0:layout_alignParentLeft="true" n0:layout_toStartOf="@id/applovin_native_media_content_view" n0:layout_alignParentStart="true">
+        <FrameLayout style="@style/uv">
+            <FrameLayout n0:id="@id/applovin_native_options_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+            <FrameLayout n0:id="@id/applovin_native_icon_view" style="@style/uv">
+                <ImageView n0:id="@id/applovin_native_icon_image_view" style="@style/uv" />
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="vertical" n0:id="@id/applovin_native_ad_content_linear_layout" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginHorizontal="8.0dp">
+            <TextView n0:id="@id/applovin_native_title_text_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="2.0dp" style="@style/APKTOOL_RENAMED_0x7f1304bf" />
+            <LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="2.0dp">
+                <TextView style="@style/APKTOOL_RENAMED_0x7f1304bd" />
+                <TextView n0:id="@id/applovin_native_advertiser_text_view" style="@style/APKTOOL_RENAMED_0x7f1304be" />
+            </LinearLayout>
+            <TextView n0:id="@id/applovin_native_body_text_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" style="@style/APKTOOL_RENAMED_0x7f1304be" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n0:id="@id/applovin_native_media_content_view" n0:layout_width="180.0dp" n0:layout_height="match_parent" n0:layout_toLeftOf="@id/applovin_native_cta_button" n0:layout_toStartOf="@id/applovin_native_cta_button" />
+    <Button n0:textSize="20.0sp" n0:id="@id/applovin_native_cta_button" n0:background="@color/rs" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="128.0dp" n0:layout_height="match_parent" n0:layout_alignParentRight="true" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" n0:paddingHorizontal="8.0dp" style="@style/APKTOOL_RENAMED_0x7f1304b9" />
+</RelativeLayout>

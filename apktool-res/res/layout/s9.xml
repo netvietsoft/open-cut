@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:paddingStart="14.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/ad_web_title_bar_start_container" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_alignParentStart="true">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/ad_web_title_bar_left" n0:background="@drawable/pqw" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:backgroundTint="#000000" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ad_web_title_bar_center_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/ad_web_title_bar_go_back" n0:background="@drawable/pqw" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginEnd="16.0dp" n0:backgroundTint="#000000" />
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <TextView n0:textSize="15.0sp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060345" n0:ellipsize="end" n0:gravity="center" n0:id="@id/ad_web_title_bar_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="160.0dp" n0:singleLine="true" />
+            <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ad_web_title_bar_sub_title_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp">
+                <androidx.appcompat.widget.AppCompatImageView n0:id="@id/ad_web_title_bar_secure_icon" n0:background="@drawable/mx7" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" />
+                <TextView n0:textSize="9.0sp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060344" n0:ellipsize="end" n0:gravity="center" n0:id="@id/ad_web_title_bar_sub_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="160.0dp" n0:singleLine="true" n0:layout_marginStart="4.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/ad_web_title_bar_go_forward" n0:background="@drawable/pqx" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginStart="16.0dp" n0:backgroundTint="#000000" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/ad_web_title_bar_end_container" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_alignParentEnd="true">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/ad_web_title_bar_end" n0:background="@drawable/psd" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:backgroundTint="#000000" />
+    </LinearLayout>
+</RelativeLayout>

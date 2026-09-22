@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@drawable/q3-" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/ll_share" n0:paddingTop="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:gravity="center" n0:id="@id/title" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="24.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#757580" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/sub_title" n0:visibility="gone" n0:layout_width="240.0dp" n0:layout_height="wrap_content" />
+        <HorizontalScrollView n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/first_line_container" n0:paddingTop="19.0dp" n0:paddingBottom="19.0dp" n0:clipChildren="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:showDividers="middle" n0:paddingVertical="19.0dp" />
+        </HorizontalScrollView>
+        <View n0:id="@id/split_line" n0:background="#e5e5e6" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="15.0dp" n0:layout_marginRight="15.0dp" />
+        <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/share_code_bar" n0:background="@drawable/kpk" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="20.0dp" n0:layout_marginEnd="20.0dp">
+            <ImageView n0:id="@id/share_code_icon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/m14" n0:contentDescription="@null" n0:layout_marginEnd="8.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#090c14" n0:id="@id/share_code_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        </LinearLayout>
+        <HorizontalScrollView n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/second_line_container" n0:paddingTop="19.0dp" n0:paddingBottom="19.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:showDividers="middle" n0:paddingVertical="19.0dp" />
+        </HorizontalScrollView>
+        <View n0:id="@id/v_share_cancel_dividing" n0:background="#e5e5e6" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/sg" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/cancel" n0:layout_width="match_parent" n0:layout_height="50.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120573" />
+    </LinearLayout>
+    <ImageView n0:layout_gravity="end" n0:id="@id/iv_top_close" n0:padding="12.0dp" n0:visibility="gone" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/oqq" />
+</FrameLayout>

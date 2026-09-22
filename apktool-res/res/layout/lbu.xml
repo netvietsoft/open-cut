@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.nested.VerticalNestedScrollParent n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragment_container_background" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragment_container_topbar" n0:layout_width="match_parent" n0:layout_height="@dimen/sh" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragment_container_creation" n0:paddingTop="8.0dp" n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="132.0dp" n3:layout_constraintTop_toBottomOf="@id/fragment_container_topbar"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragment_container_tools" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="98.0dp" n4:layout_constraintTop_toBottomOf="@id/fragment_container_creation"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragment_container_task_slot" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintTop_toBottomOf="@id/fragment_container_tools"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragment_container_docker" n0:layout_width="match_parent" n0:layout_height="200.0dp" n6:layout_constraintTop_toBottomOf="@id/fragment_container_task_slot"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragment_container_manage_menu" n0:layout_width="match_parent" n0:layout_height="wrap_content" n7:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/fragment_container_bot_banner" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n8:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</com.vega.ui.nested.VerticalNestedScrollParent>

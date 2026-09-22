@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginVertical="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/presenter_picture_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f0812b7" n0:padding="4.0dp" n0:layout_width="85.0dp" n0:layout_height="85.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:placeholderImage="@drawable/APKTOOL_RENAMED_0x7f0812b3" n1:roundAsCircle="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/l0j" n2:layout_constraintBottom_toBottomOf="@id/presenter_picture_view" n2:layout_constraintEnd_toEndOf="@id/presenter_picture_view" n2:layout_constraintStart_toStartOf="@id/presenter_picture_view" n2:layout_constraintTop_toTopOf="@id/presenter_picture_view"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="10.0dp" n0:textColor="@color/wz" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/presenter_name_tv" n0:paddingLeft="4.0dp" n0:paddingRight="4.0dp" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:layout_marginTop="2.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122cd4" n0:singleLine="true" n0:paddingHorizontal="4.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/presenter_picture_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

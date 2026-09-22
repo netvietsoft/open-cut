@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/video_quality_item" n0:paddingTop="4.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="80.0dp" n0:layout_height="100.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.AlphaButton n0:id="@id/iv_icon" n0:background="@drawable/APKTOOL_RENAMED_0x7f080588" n0:padding="12.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n1:layout_constraintBottom_toTopOf="@id/tv_name" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604e6" n0:gravity="center" n0:id="@id/tv_name" n0:paddingLeft="4.0dp" n0:paddingRight="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:maxWidth="80.0dp" n0:maxLines="3" n0:paddingHorizontal="4.0dp" n2:layout_constraintBottom_toTopOf="@id/view_applied" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/iv_icon"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/view_applied" n0:visibility="gone" n0:layout_width="2.0dp" n0:layout_height="5.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/ma5" n3:layout_constraintEnd_toEndOf="@id/tv_name" n3:layout_constraintStart_toStartOf="@id/tv_name" n3:layout_constraintTop_toBottomOf="@id/tv_name"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="@id/iv_icon" n4:layout_constraintEnd_toEndOf="@id/iv_icon" n4:layout_constraintStart_toStartOf="@id/iv_icon" n4:layout_constraintTop_toTopOf="@id/iv_icon"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="end|top" n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:kml="small" n4:kmm="mix" n4:kmo="edit" />
+    </FrameLayout>
+    <View n0:id="@id/disable_mask" n0:background="#66262626" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

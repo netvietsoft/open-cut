@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="68.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cloud_item_cover_img" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:scaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.main.widget.CloudDraftDownloadStatusView n0:id="@id/cloud_item_download_process" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n2:layout_constraintBottom_toBottomOf="@id/cloud_item_cover_img" n2:layout_constraintEnd_toEndOf="@id/cloud_item_cover_img" n2:layout_constraintStart_toStartOf="@id/cloud_item_cover_img" n2:layout_constraintTop_toTopOf="@id/cloud_item_cover_img"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/cloud_cloud_item_iv_select" n3:layout_constraintStart_toEndOf="@id/cloud_item_cover_img" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:ellipsize="end" n0:id="@id/cloud_item_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:lines="1" n3:k1i="medium" />
+            <ImageView n0:layout_gravity="center_vertical" n0:id="@id/cloud_item_edit_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/nns" n0:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#8015293c" n0:ellipsize="end" n0:id="@id/cloud_item_time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:lines="1" />
+    </LinearLayout>
+    <ImageView n0:id="@id/cloud_cloud_item_iv_select" n0:background="@drawable/l5-" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginEnd="6.0dp" n4:layout_constraintBottom_toBottomOf="@id/cloud_item_cover_img" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="@id/cloud_item_cover_img"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="end" n0:id="@id/btn_more" n0:layout_width="44.0dp" n0:layout_height="0.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:id="@id/btn_more_img" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/ono" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

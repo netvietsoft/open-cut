@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="147.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#ffcf33" n0:id="@id/tips_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/puh" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/guide_animation_view" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginBottom="5.0dp" n2:layout_constraintBottom_toTopOf="@id/tips_text" n2:layout_constraintLeft_toLeftOf="parent" n2:lottie_autoPlay="true" n2:lottie_fileName="click.json" n2:lottie_loop="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

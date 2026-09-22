@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:id="@id/bg_color_palette" n0:layout_width="46.0dp" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f07009d"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:layout_width="32.0dp" n0:layout_height="match_parent" n1:cardCornerRadius="@dimen/nl"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:id="@id/color_select_item" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/ori" n0:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+    <View n0:layout_gravity="center_vertical" n0:id="@id/color_palette_divider" n0:background="@drawable/l_m" n0:layout_width="0.5dp" n0:layout_height="20.0dp" n0:layout_marginLeft="12.0dp" />
+</LinearLayout>

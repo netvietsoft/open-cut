@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingBottom="120.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textColor="@color/knt" n0:textColorHighlight="#3300cae0" n0:id="@id/tv_origin_text" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/r0"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textColorHighlight="#3300cae0" n0:id="@id/tv_before_selected_text" n0:visibility="invisible" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" style="@style/r0"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textColorHighlight="#3300cae0" n0:id="@id/tv_selected_text" n0:visibility="invisible" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" style="@style/r0"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textColorHighlight="#3300cae0" n0:id="@id/tv_rewrite_text" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" style="@style/r0"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textColorHighlight="#3300cae0" n0:id="@id/tv_after_rewrite_text" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" style="@style/r0"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

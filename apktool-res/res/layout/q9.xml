@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/adjust_ly_root" n0:background="@color/s3" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <SurfaceView n0:id="@id/mPreview" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="15.0dp" n0:layout_marginBottom="25.0dp" n0:layout_marginStart="25.0dp" n0:layout_marginEnd="25.0dp" n1:layout_constraintBottom_toTopOf="@id/svSeekProgress" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.widget.VideoGestureLayout n0:id="@id/rlPreview" n0:clipChildren="false" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/mPreview" n2:layout_constraintEnd_toEndOf="@id/mPreview" n2:layout_constraintStart_toStartOf="@id/mPreview" n2:layout_constraintTop_toTopOf="@id/mPreview"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.edit.widget.CropAdjustRect n0:id="@id/viewCropAdjustRect" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.edit.base.widget.VideoGestureLayout>
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/_6" n0:id="@id/tvDurationStart" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="22.0dp" n0:text="@string/uqg" n0:layoutDirection="ltr" n0:layout_marginStart="15.0dp" n3:layout_constraintBottom_toTopOf="@id/rotateProgressBar" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/_6" n0:id="@id/tvDurationEnd" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="22.0dp" n0:layoutDirection="ltr" n0:layout_marginEnd="15.0dp" n4:layout_constraintBottom_toTopOf="@id/rotateProgressBar" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/svSeekProgress"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svSeekProgress" n0:paddingLeft="5.0dp" n0:paddingRight="5.0dp" n0:layout_width="0.0dp" n0:layout_height="59.0dp" n0:layoutDirection="ltr" n0:paddingStart="5.0dp" n0:paddingEnd="5.0dp" n5:layout_constraintBottom_toTopOf="@id/rotateProgressBar" n5:layout_constraintEnd_toStartOf="@id/tvDurationEnd" n5:layout_constraintStart_toEndOf="@id/tvDurationStart"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.widget.RulerProgressBar n0:id="@id/rotateProgressBar" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" n6:APKTOOL_RENAMED_0x7f040556="@color/APKTOOL_RENAMED_0x7f060540" n6:layout_constraintBottom_toTopOf="@id/ratioRecyclerView" n6:layout_constraintEnd_toEndOf="@id/tvDurationEnd" n6:layout_constraintStart_toStartOf="@id/tvDurationStart" n6:kpw="@color/knt"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/ratioRecyclerView" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" n7:layout_constraintBottom_toTopOf="@id/pbbVideoFrameCrop" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.PanelBottomBar n0:id="@id/pbbVideoFrameCrop" n0:background="@color/s3" n0:layout_width="match_parent" n0:layout_height="50.0dp" n0:text="@string/lfm" n8:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/pbbVideoFrameCropBar" n0:background="@color/APKTOOL_RENAMED_0x7f06063c" n0:layout_width="match_parent" n0:layout_height="0.5px" n9:layout_constraintBottom_toTopOf="@id/pbbVideoFrameCrop"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@drawable/qpt" n0:gravity="center" n0:id="@id/tvReset" n0:paddingLeft="20.0dp" n0:paddingRight="20.0dp" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:text="@string/qex" n0:paddingStart="20.0dp" n0:paddingEnd="20.0dp" n10:layout_constraintBottom_toBottomOf="parent" n10:layout_constraintStart_toStartOf="parent"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#66e5e9fa" n0:gravity="center" n0:id="@id/retouch_tip" n0:background="@color/sg" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:text="@string/lk6" n11:layout_constraintBottom_toTopOf="@id/pbbVideoFrameCropBar" n11:layout_constraintEnd_toEndOf="parent" n11:layout_constraintStart_toStartOf="parent" n11:layout_constraintTop_toBottomOf="@id/mPreview"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

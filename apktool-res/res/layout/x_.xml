@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/item_container" n0:background="@color/wq" n0:padding="1.5dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintDimensionRatio="H,1:1"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <ImageView n0:id="@id/item_iv_camera" n0:layout_width="20.0dp" n0:layout_height="18.0dp" n0:layout_marginTop="43.0dp" n0:src="@drawable/qle" n0:scaleType="centerInside" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@drawable/qlf" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="3.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12056d" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/item_iv_camera" />
+</androidx.constraintlayout.widget.ConstraintLayout>

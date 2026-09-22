@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/v" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/dialog_bg" n0:background="@drawable/lfo" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textStyle="bold" n0:textColor="@color/mu" n0:gravity="center" n0:id="@id/text_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="32.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="20.0dp" n0:text="@string/mds" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintBottom_toTopOf="@id/text_description" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/mw" n0:gravity="center" n0:id="@id/text_description" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="32.0dp" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintBottom_toTopOf="@id/btn_join" />
+        <com.vega.theme.VegaButton n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/x3" n0:gravity="center" n0:id="@id/btn_join" n0:background="@drawable/li2" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/mdq" n0:textAllCaps="false" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageButton n0:id="@id/btn_close" n0:background="@null" n0:padding="15.0dp" n0:layout_width="54.0dp" n0:layout_height="54.0dp" n0:src="@drawable/pno" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/dialog_bg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

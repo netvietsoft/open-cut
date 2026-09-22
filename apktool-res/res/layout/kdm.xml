@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/itemContainer" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#b2f6f7fe" n0:gravity="center_horizontal" n0:id="@id/tv_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/ka9" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/subItemContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#b2f6f7fe" n0:gravity="center" n0:id="@id/tv_subtitle" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/ka-" n0:layout_weight="1.0" />
+        <ImageView n0:id="@id/iv_arrow" n0:layout_width="10.0dp" n0:layout_height="10.0dp" n0:src="@drawable/m4p" n0:layout_marginStart="8.0dp" />
+    </LinearLayout>
+</LinearLayout>

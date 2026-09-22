@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="#fff" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/title_layout" layout="@layout/tt_activity_base_header" />
+    <ListView n0:id="@id/callback_list" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:divider="@android:color/transparent" n0:layout_below="@id/title_layout" />
+    <FrameLayout n0:id="@id/splash_container" n0:background="#000000" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root_view" n0:layout_width="match_parent" n0:layout_height="64.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/member_avatar" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/m6v" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:roundAsCircle="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:id="@id/member_name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n0:fontFamily="sans-serif-medium" n0:textDirection="locale" n0:textAlignment="viewStart" n0:layout_marginStart="12.0dp" n0:textFontWeight="500" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/permission_container" n2:layout_constraintHorizontal_weight="1.0" n2:layout_constraintStart_toEndOf="@id/member_avatar" n2:layout_constraintTop_toTopOf="parent" n2:k1i="medium"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/permission_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mo" n0:id="@id/permission_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="4.0dp" />
+        <View n0:id="@id/permission_arrow" n0:background="@drawable/nml" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

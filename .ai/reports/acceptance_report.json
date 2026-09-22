@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-09-18T03:06:20.035Z",
+  "device": "192.168.1.7:45893",
+  "device_name": "Samsung Galaxy Note 10 Lite",
+  "standard": "Development Workspace Standard V2.1 Design-Gated",
+  "total_tests": 9,
+  "passed_tests": 9,
+  "failed_tests": 0,
+  "test_cases": [
+    {
+      "test_id": "TC-01",
+      "name": "Media Import & Multi-track Filmstrip",
+      "status": "PASS",
+      "evidence": "tc1_imported_timeline.png",
+      "description": "Successfully imported video clips; Filmstrip thumbnails rendered with playhead; Total duration displayed."
+    },
+    {
+      "test_id": "TC-02",
+      "name": "Split Active Clip (Tách)",
+      "status": "PASS",
+      "evidence": "tc2_split_clip.png",
+      "description": "Active clip split into 2 independent segments at playhead position; Timeline filmstrip re-rendered."
+    },
+    {
+      "test_id": "TC-03",
+      "name": "Video Playback Speed (Tốc Độ 2.0x)",
+      "status": "PASS",
+      "evidence": "tc3_speed_2x.png",
+      "description": "Clip playback speed set to 2.0x; Segment duration reduced to 50%; Timecode counter recalculated."
+    },
+    {
+      "test_id": "TC-04",
+      "name": "Audio Volume Slider (Âm Lượng)",
+      "status": "PASS",
+      "evidence": "tc4_volume_seekbar.png",
+      "description": "Volume SeekBar dragged to boost level (>150%); Live percentage label updated synchronously."
+    },
+    {
+      "test_id": "TC-05",
+      "name": "Delete Clip from Timeline (Xóa)",
+      "status": "PASS",
+      "evidence": "tc5_delete_clip.png",
+      "description": "Selected split segment removed; Project total duration and timeline filmstrip automatically updated."
+    },
+    {
+      "test_id": "TC-06",
+      "name": "Color Grading Sliders (Chỉnh Màu)",
+      "status": "PASS",
+      "evidence": "tc6_video_adjust_sliders.png",
+      "description": "Brightness and Contrast SeekBars modified; Real-time ColorMatrixColorFilter applied to Video Canvas."
+    },
+    {
+      "test_id": "TC-07",
+      "name": "Video Canvas Aspect Ratio (16:9)",
+      "status": "PASS",
+      "evidence": "tc7_video_ratio_16_9.png",
+      "description": "Canvas frame physically resized to 16:9 horizontal format with letterboxing and aspect indicator."
+    },
+    {
+      "test_id": "TC-08",
+      "name": "Photo 1:1 Aspect Ratio & 3D LUT Noir B&W",
+      "status": "PASS",
+      "evidence": "tc8_photo_noir_1_1.png",
+      "description": "Photo Canvas dynamically resized to 1:1 square; Noir B&W ColorMatrix transformation applied to Bitmap."
+    },
+    {
+      "test_id": "TC-09",
+      "name": "Photo Sliders & Disk Storage Save",
+      "status": "PASS",
+      "evidence": "tc9_photo_saved_storage.png",
+      "description": "Photo adjusted with SeekBars and successfully saved to physical device storage: opencut_photo_1789700786602.png."
+    }
+  ]
+}

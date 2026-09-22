@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="other">មិនអាចបង្ហោះធាតុ %d បានទេ។ AutoCut បន្ត។</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="other">ឯកសារភ្ជាប់៖ ឯកសារ %d</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="other">ត្រូវការឥណទាន %1$d។</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="other">អ្នកនៅសល់ឥណទាន %1$d ទៀត។</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="other">ឥណទានឥតគិតថ្លៃរបស់អ្នកនឹងត្រូវបានកាត់។ ត្រូវការឥណទាន %d ទៀត។</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="other">ត្រូវការឥណទាន %1$d។</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="other">អ្នកនៅសល់ឥណទាន %1$d ទៀត។ សូមទិញឥណទានដើម្បីបន្ត។</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="other">ត្រូវការឥណទាន %1$d។</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="other">អ្នកនៅសល់ឥណទាន %1$d ទៀត។ សូមអាប់ហ្គ្រេដដើម្បីទទួលបានឥណទាន។</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="other">ឥណទាន %d នឹងត្រូវបានប្រើប្រាស់</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="other">ឥណទានឥតគិតថ្លៃរបស់អ្នកនឹងត្រូវបានកាត់។ ត្រូវការឥណទាន %d ទៀត។</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="other">បានណែនាំ​ទម្រង់គំរូ %d</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="other">បានបង្កើតវីដេអូ %d</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="other">អ្នក​អាច​ប្រើប្រាស់អក្សររត់ស្វ័យប្រវត្តិ​ និងទំនុកច្រៀងស្វ័យប្រវត្តិដោយ​ឥតគិត​ថ្លៃ %d ដង​ក្នុង​មួយខែ នៅ​ពេល​អ្នក​បាន​ចូល​គណនី។ ការ​ប្រើប្រាស់​ឥតគិត​ថ្លៃ​នឹង​បន្ត​ជា​ថ្មី​នៅ​រៀងរាល់​ដើមខែ។ ការ​ប្រើប្រាស់ 1 ដង​នឹង​ត្រូវ​បានកាត់​រាល់​ពេល។</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="other">ចំនួន​ប្រើប្រាស់ %d/ខែ</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="other">លុប %d ពាក្យ</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="other">ការរំលេច %d</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="other">បានរកឃើញពាក្យបំពេញ %d</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="other">ជ្រើសរើសធាតុបានរហូតដល់ %d</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="other">រយៈពេលរង់ចាំប៉ាន់ស្មានក្នុងជួរ៖ %d វិនាទី</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="other">នៅសល់ប្រហែល %d ម៉ោង</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="other">នៅសល់ប្រហែល %d នាទី</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="other">នៅសល់ប្រហែល %d វិនាទី</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="other">លទ្ធផលសំឡេង (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="other">លទ្ធផលឯកសារ (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="other">លទ្ធផលការបង្កើត (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="other">ឯកសារភ្ជាប់៖ រូបភាព %d</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="other">ឯកសារភ្ជាប់៖ វីដេអូ %d</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="other">លទ្ធផលរូបភាព (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="other">លទ្ធផលវីដេអូ (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="other">កំពុងប្រើបែបផែនអក្សរ AI ចំនួន %1$d... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="other">ប្រើទ្រព្យ %d សម្រាប់ឃ្លីបទាំងអស់</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="other">បានជ្រើសរើសទ្រព្យ %d</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="other">Ultra រយៈពេល %d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="other">%d តួអក្សរ</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="other">ជ្រើសរើសតិចជាង %d តួអក្សរ</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="other">ឃ្លីប %d មិនទទួលបានអាជ្ញាបណ្ណឱ្យប្រើលក្ខណៈពាណិជ្ជកម្មទេ</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="other">ពុម្ពអក្សរ %d មិនទទួលបានអាជ្ញាបណ្ណឱ្យប្រើលក្ខណៈពាណិជ្ជកម្មទេ</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="other">សំឡេង %d មិនទទួលបានអាជ្ញាបណ្ណឱ្យប្រើលក្ខណៈពាណិជ្ជកម្មទេ</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="other">ឃ្លីប %d មិនទទួលបានអាជ្ញាបណ្ណឱ្យប្រើលក្ខណៈពាណិជ្ជកម្មទេ និងមិនអាចជំនួសបានឡើយ</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="other">ពុម្ពអក្សរ %d មិនទទួលបានអាជ្ញាបណ្ណឱ្យប្រើលក្ខណៈពាណិជ្ជកម្មទេ និងមិនអាចជំនួសបានឡើយ</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="other">សំឡេង %d មិនទទួលបានអាជ្ញាបណ្ណឱ្យប្រើលក្ខណៈពាណិជ្ជកម្មទេ និងមិនអាចជំនួសបានឡើយ</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="other">ស្ទីគ័រ %d មិនទទួលបានអាជ្ញាបណ្ណឱ្យប្រើលក្ខណៈពាណិជ្ជកម្មទេ និងមិនអាចជំនួសបានឡើយ</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="other">ស្ទីគ័រ %d មិនទទួលបានអាជ្ញាបណ្ណឱ្យប្រើលក្ខណៈពាណិជ្ជកម្មទេ</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="other">លុបមតិ %d ឬ?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="other">អ្នកបានជ្រើសរើសគណនី %d។ មានតែអ្នក និងមនុស្សដែលអ្នកដាក់កំហិតប៉ុណ្ណោះដែលនឹងមើលឃើញមតិរបស់គាត់។</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="other">ដាក់កំហិតគណនី %d ឬ?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="other">%d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="other">អ្នកមាន​សារអ្នកបង្កើត​​ថ្មីៗ %s</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="other">បានផុតកំណត់អស់រយៈពេល %d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="other">អ្នកកំពុង​ប្រើប្រាស់​មុខងារ Pro។ នៅ​សល់​ចំនួន​ប្រើប្រាស់​ឥតគិត​ថ្លៃ %d។ ចូលរួម Pro ដើម្បី​ទទួលបាន​ចំនួនប្រើប្រាស់​គ្មាន​ដែន​កំណត់។</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="other">អ្នកកំពុង​ប្រើប្រាស់​មុខងា​រ \"ស្តង់ដា\"។ នៅសល់​ចំនួន​ប្រើប្រាស់​ឥតគិតថ្លៃ %d។ សូមចូលរួម​ \"ស្តង់ដា\" ដើម្បី​ទទួលបាន​ចំនួន​ប្រើប្រាស់​គ្មាន​ដែន​កំណត់។</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="other">អ្នកកំពុង​ប្រើប្រាស់​មុខងារ Pro។ នៅសល់​ចំនួនប្រើប្រាស់​​ឥតគិតថ្លៃ %d ​ក្នុង​ខែ​នេះ។ ចូលរួម Pro ដើម្បី​ទទួលបាន​ចំនួនប្រើប្រាស់​គ្មាន​ដែន​កំណត់។</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="other">អ្នកកំពុង​ប្រើប្រាស់​មុខងា​រ \"ស្តង់ដា\"។ នៅសល់​ចំនួន​ប្រើប្រាស់ឥតគិតថ្លៃ %d ក្នុង​ខែ​នេះ។ សូមចូលរួម​ \"ស្តង់ដា\" ដើម្បី​ទទួលបាន​ចំនួន​ប្រើប្រាស់​គ្មាន​ដែន​កំណត់។</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="other">%d ថ្ងៃឥតគិតថ្លៃ</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="other">%1$s បន្ទាប់ពី %2$d សប្ដាហ៍</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="other">អ្នកបាន​ទទួល​ការ​ប្រើប្រាស់​ទម្រង់គំរូ Pro ឥតគិត​ថ្លៃ %d ដង​ក្នុង​មួយ​ខែ។</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="other">ការប្រើឥតគិតថ្លៃ %d ដង</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="other">សាកល្បងប្រើ %d ថ្ងៃដោយឥតគិតថ្លៃ</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="other">បញ្ហា​សិទ្ធិ​អ្នកនិពន្ធតន្ត្រី %d</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="other">បាន​ជ្រើសរើស​អក្សរ %d</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="other">បាន​ជ្រើសរើស​ឃ្លីប %d</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="other">រីករាយ​ជាមួយការនាំចេញឥតគិតថ្លៃរយៈពេល %1$d ថ្ងៃ ឬគ្រាន់តែអាប់ហ្គ្រេដដើម្បីទទួលបានការនាំចេញ​ក្នុង​កម្រិតច្បាស់ខ្ពស់គ្មានដែនកំណត់ពេញលេញ។</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="other">នាំចេញក្នុងកម្រិត 1080p %d ដងដោយឥតគិតថ្លៃ</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="other">នៅ​សល់​ការ​នាំចេញ​ឥតគិតថ្លៃក្នុងកម្រិត 1080p ចំនួន %d ទៀត។ សូមអាប់ហ្គ្រេដ​ ដើម្បី​រីករាយ​ជា​មួយ​ការនាំចេញដែលមានកម្រិតច្បាស់ខ្ពស់គ្មាន​ដែន​កំណត់។</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="other">នៅសល់ការនាំចេញឥតគិតថ្លៃក្នុងកម្រិត 1080p ចំនួន %d ទៀត​ក្នុង​ខែ​នេះ។ សូម​អាប់ហ្គ្រេដ​ ដើម្បី​រីករាយ​ជា​មួយ​ការ​នាំចេញ​ដែលមាន​កម្រិតច្បាស់​ខ្ពស់​គ្មាន​ដែន​កំណត់។</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="other">ត្រូវការឥណទាន %d។</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="other">អ្នកនៅសល់ឥណទាន %d ទៀត។</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="other">ការបង្កើត %1$d កំពុងដំណើរការ។ សូមអាប់ហ្គ្រេដទៅ Pro ដើម្បីបង្កើតបានរហូតដល់ %2$d ក្នុងពេលតែមួយ។</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="other">នាំចេញដោយមិនមានរូបថ្លាព្រាលៗ (នៅសល់ចំនួនប្រើប្រាស់ %d ទៀត)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="other">នៅសល់ចំនួនប្រើប្រាស់ឥតគិតថ្លៃ %d ទៀត។ មិនត្រូវការឥណទានទេ។</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="other">ធាតុ​ដែល​បាន​ជ្រើសរើស​របស់​អ្នក​នឹង​ត្រូវ​បានលុប​ ហើយ​ស្ថិត​នៅ​ក្នុង​ធុង​សំរាម​រយៈពេល %d ថ្ងៃ។</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="other">ធាតុ​ដែល​បាន​ជ្រើសរើស​មួយចំនួន​ត្រូវបាន​បង្ហោះ​ទៅ​ទំហំផ្ទុក។ នៅតែចង់លុបមែនទេ?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="other">ធាតុ​ដែល​បាន​ជ្រើសរើស​របស់​អ្នក​នឹង​ត្រូវបាន​លុប ហើយ​ត្រូវ​បានផ្លាស់ទី​ទៅ​ធុង​សំរាម។</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="other">ចំនួន​ប្រើប្រាស់ %d</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="other">អាយុ​ដែល​បានគណនា​ពី​ថ្ងៃខែ​ឆ្នាំ​កំណើត​ដែល​អ្នកបាន​បញ្ចូល​គឺ %d ឆ្នាំ ហើយ​បង្ហាញ​ថា​មិន​ត្រឹមត្រូវ។ សូម​បញ្ចូល​ថ្ងៃខែ​ឆ្នាំកំណើតពិត​ប្រាកដ​របស់​អ្នក។</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="other">រួម​បញ្ចូលការ​ប្រើប្រាស់​ឥតគិ​តថ្លៃ 1 ដង​ពី​ការ​ទិញ​លើកមុន និង​ការ​ប្រើប្រាស់​ឥតគិត​ថ្លៃ​បន្ថែម %d ដង​សម្រាប់ Pro</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="other">Pro ទទួលបាន​ការ​ប្រើប្រាស់ឥតគិត​ថ្លៃ %d ដង</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="other">ឥឡូវនេះ រូបអវតារដែលអ្នកបានបង្កើតដោយប្រើវីដេអូមានសុពលភាពជាអចិន្ត្រៃយ៍។ ចូលរួម Pro ដើម្បីទទួលបានការប្ដូរតាមបំណងឥតគិតថ្លៃ %d។</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="other">ការ​ប្រើបែបផែននេះ​នឹង​ប្រើប្រាស់​ឥណទាន %d។</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="other">ឥឡូវនេះ អ្នក​មាន​ឥណទាន %d។</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="other">ការរំលេច %d</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="other">កំពុងដាក់ប្រើបែបផែន AI... សល់ %s ម៉ោងទៀត</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="other">កំពុងដាក់ប្រើបែបផែន AI... សល់ %s នាទីទៀត</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="other">បែបផែន Pro %1$s ត្រូវ​បានដាក់​ប្រើ​ចំពោះ​ធាតុ​បច្ចុប្បន្ន។ ការដាក់ប្រើ​បែបផែន​នេះ​ម្ដងទៀត​ចំពោះ​ធាតុ​ថ្មី​នឹង​ប្រើប្រាស់​ឥណទាន %2$d។</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="other">ការ​ប្រើប្រាស់ឥតគិត​ថ្លៃ %1$d ដងនឹង​ត្រូវ​បានកាត់​បន្ថយ។ ឥឡូវ​នេះ អ្នកមាន​ការ​ប្រើប្រាស់​ឥត​គិត​ថ្លៃ %2$d។</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="other">ការប្រើប្រាស់​ Pro នឹង​ត្រូវ​បានកាត់​បន្ថយ %1$d ដង។ ឥឡូវ​នេះ អ្នកមាន​ការ​ប្រើប្រាស់ Pro %2$d ដង។</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="other">គំរូនេះអាចប្រើរូបភាពណែនាំបានត្រឹម %d ប៉ុណ្ណោះ</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="other">បញ្ចូលរូបភាពណែនាំយ៉ាងតិច %d ដើម្បីប្រើគំរូនេះ</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="other">គំរូនេះអាចប្រើវីដេអូណែនាំបានត្រឹម %d ប៉ុណ្ណោះ</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="other">បញ្ចូលវីដេអូណែនាំយ៉ាងតិច %d ដើម្បីប្រើគំរូនេះ</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="other">ជ្រើសរើសរូបថត %d សន្លឹក</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="other">បានបញ្ចូលសម្ភារៈ %d</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="other">នៅសល់ការបង្កើត %d</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="other">នៅសល់​ការទទួលបាន %d ដង</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="other">បាន​រំលេច​ពាក្យ​គន្លឹះ %d។ អ្នក​ក៏អាច​ជ្រើសរើស​ដោយ​ផ្ទាល់ដៃ​បាន​ផងដែរ។</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="other">លុបឃ្លីប %d</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="other">បានកំណត់​អត្តសញ្ញាណពាក្យបំពេញ %d។ អ្នក​ក៏អាច​ជ្រើសរើស​ដោយផ្ទាល់ដៃ​បានផងដែរ។</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="other">បាន​រំលេច​​ពាក្យ​គន្លឹះ %d</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="other">កំពុងនាំចេញរូបថត %d សន្លឹក…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="other">ជ្រើសរើសឥរិយាបថបានរហូតដល់ %d</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="other">កំពុងបង្ហោះឯកសារមេឌៀរបស់អ្នក</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="other">សមាជិក %d នាក់</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="other">បង្ហោះគម្រោង %d ទៅទំហំផ្ទុក ដើម្បីបង្កើនទំហំផ្ទុកឧបករណ៍របស់អ្នក។ អ្នកអាចកែគម្រោងទាំងនេះនៅលើកម្មវិធីឧបករណ៍ចល័ត កម្មវិធីកុំព្យូទ័រ ឬកម្មវិធីកែលើអ៊ីនធឺណិត។</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="other">បង្ហោះឯកសារមេឌៀ %d នៅក្នុងគម្រោងរបស់អ្នកទៅទំហំផ្ទុក។ អ្នកអាចប្រើឯកសារទាំងនេះនៅលើឧបករណ៍ណាមួយដោយមិនចាំបាច់បង្ហោះម្ដងទៀត។</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="other">អ្នកមានគម្រោងមួយដែលត្រូវស្ដារ</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="other">បានស្ដារគម្រោងហើយ</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="other">មិន​អាចដាក់ប្រើ​មុខងារ %d បាន​ទេ</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="other">កំពុងដាក់ប្រើមុខងារ %d</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="other">ដាក់ប្រើ​បែបផែន Pro ឬ?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="other">បែបផែន Pro %1$d ត្រូវ​បាន​ដាក់​ប្រើ​ចំពោះ​ធាតុ​បច្ចុប្បន្ន។ ការដាក់ប្រើ​បែបផែន​ទាំងនោះ​ម្ដងទៀត​ចំពោះ​ធាតុ​ថ្មី​នឹង​ប្រើប្រាស់​ឥណទាន %2$d។</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="other">បែបផែន Pro %1$d ត្រូ​វបាន​ដាក់ប្រើ​ចំពោះ​ធាតុ​បច្ចុប្បន្ន។ ការប្រើប្រាស់​ឥត​គិតថ្លៃ %2$d នឹង​ត្រូវ​បាន​កាត់ ដើម្បី​ដាក់ប្រើ​បែបផែនទាំង​នោះ​ម្ដង​ទៀត​ចំពោះ​ធាតុ​ថ្មី។ មិនមាន​ឥណទាន​នឹង​ត្រូវបានប្រើប្រាស់​ទេ។</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="other">បែបផែន Pro %1$d ត្រូវ​បាន​ដាក់​ប្រើ​ចំពោះ​ធាតុ​បច្ចុប្បន្ន។ អ្នក​ត្រូវការ​ឥណទាន %2$d ដើម្បី​ដាក់ប្រើ​បែបផែន​ទាំង​នោះម្ដង​ទៀត​ចំពោះ​ធាតុ​ថ្មី។</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="other">បែបផែន Pro %1$d ត្រូវ​បាន​ដាក់ប្រើ​ចំពោះ​ធាតុ​បច្ចុប្បន្ន។ ការដាក់ប្រើ​បែបផែន​ទាំង​នោះ​ម្ដង​ទៀត​ចំពោះ​ធាតុ​ថ្មី​នឹង​ប្រើប្រាស់ការ​ប្រើប្រាស់​ឥត​គិត​ថ្លៃ %2$d និង​ឥណទាន %3$d។</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="other">បាត់​ %d ឃ្លីប។ ស្ដារ​ឃ្លីប​ទាំង​នោះនៅលើ​ទូរសព្ទរបស់អ្នក ឬ​ជំនួស​ឃ្លីប​ទាំង​នោះ។</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="other">បញ្ចូល​តួអង្គមិន​ឱ្យលើសពី %d នាក់</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="other">%d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="other">លុបធាតុឬ?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="other">ធាតុដែលបានផ្លាស់ទីទៅធុងសំរាមនឹងបង្ហាញនៅទីនេះ និងត្រូវបានលុបក្រោយរយៈពេល %d ថ្ងៃ។</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="other">កំពុងទាញយកធាតុ %d...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="other">កំពុងបង្ហោះធាតុ %d...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="other">ធាតុទាំងនេះនឹងត្រូវបានលុបជាអចិន្ត្រៃយ៍ និងមិនអាចស្ដារបានទេ។</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="other">បានផ្លាស់ទីធាតុ</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="other">អ្នកនៅ​តែ​មានការនាំចេញ​ឥតគិតថ្លៃ %d ដង​។</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="other">សូម​អបអរសាទរ! អ្នកបាន​ទទួល​ការ​ប្រើប្រាស់​ឥតគិតថ្លៃ​ប្រចាំខែ %d ដង ដើម្បីនាំចេញ​ដោយមិនមាន​រូបថ្លាព្រាលៗ។</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="other">អ្នកនៅ​តែ​មានការ​ប្រើប្រាស់​ឥតគិត​ថ្លៃ %d ដង ដើម្បីនាំចេញ​ដោយមិនមាន​រូបថ្លាព្រាលៗ។</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="other">សូម​អបអរសាទរ! អ្នកបាន​ទទួលការប្រើប្រាស់ឥតគិតថ្លៃ %d ដង​ ដើម្បី​នាំចេញ​ដោយមិនមាន​រូបថ្លាព្រាលៗ។</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="other">ការ​ប្រើប្រាស់ %d ដង</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="other">បញ្ចុះឥណទាន %d សម្រាប់​អ្នក​ដំបូង។ ឥណទាន​បន្ថែម​ត្រូវបានប្រើប្រាស់ ​ប្រសិនបើ​លើស។</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="other">ត្រូវការ​ឥណទានបន្ថែម %d ដើម្បី​ប្រើ​មុខងា​រនេះ</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="other">ឃ្លីប​មិន​ត្រូវ​លើស​ពី %d វិនាទី​ទេ</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="other">អ្នក​នៅ​សល់​ឥណទាន %d។</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="other">ការដាក់ប្រើ {$benefit_name$} នឹង​ប្រើប្រាស់​ឥណទាន {$credit_amount$}។</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="other">ការដាក់ប្រើ​មុខងារ​នេះ​នឹង​ប្រើប្រាស់​ឥណទាន %d។</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="other">ការប្រើ​​ទម្រង់គំរូ​នេះ​នឹង​ប្រើប្រាស់ឥណទាន %d។</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="other">num</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="other">លុបធាតុនេះឬ?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="other">គម្រោង%1$d “%1$s”</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="other">បាន​ផ្លាស់ទី​ធាតុ %d ទៅធុង​សំរាម</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="other">បានបញ្ចូល​ធាតុ %d ទៅ​ក្នុង​សំណព្វ</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="other">បានដកធាតុ %d ចេញ​ពី​សំណព្វ</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="other">នេះ​គឺ​ជា​ទំហំ​ផ្ទុក​ឥតគិត​ថ្លៃ និង​វា​អាច​មាន​សមាជិក​រហូត​ដល់ %1$d នាក់។ អាច​អញ្ជើញ​សមាជិក %2$s នាក់​ផ្សេង​ទៀត​ឱ្យចូលរួម។</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="other">ចំនួន​ប្រើប្រាស់ %d/ខែ</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="other">ចំនួនប្រើប្រាស់ %d/ថ្ងៃ</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="other">ចំនួនប្រើប្រាស់ %d/សប្ដាហ៍</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="other">{price} បន្ទាប់ពី {number} ខែ</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="other">%1$s បន្ទាប់ពី %2$d ខែ</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="other">{price} បន្ទាប់ពី {number} ឆ្នាំ</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="other">%1$s បន្ទាប់ពី %2$d ឆ្នាំ</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="other">មានសមាជិក %d នាក់​នៅក្នុងទំហំផ្ទុកនេះ។</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="other">អ្នកនៅតែ​អាច​អញ្ជើញ​សមាជិក %1$d នាក់​បាន។</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="other">%1$d កន្លែងត្រូវ​បាន​ប្រើ។</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="other">ចាប់ផ្ដើមសាកល្បងប្រើឥតគិតថ្លៃរយៈពេល %d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="other">ត្រូវការឥណទាន %d។</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="other">អ្នកនៅសល់ឥណទាន %d ទៀត។</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="other">កំពុងបង្ហោះគម្រោង %1$s/%2$s</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="other">"%d ឃ្លីប​ផ្សេង​ទៀត​ត្រូ​វបាន​ភ្ជាប់​ទៅ​ឯកសារ​មេឌៀនេះ។ ជំនួស​ឃ្លីប​ទាំងអស់​ឬ?
+ឯកសារ​នឹង​ត្រូវ​បាន​តម្រឹម​ដោយស្វ័យ​ប្រវត្តិ​ឱ្យ​ត្រូវ​នឹង​រយៈពេល​ដើម។"</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="other">អ្នកអាចបង្ហោះរូបភាពបាន %d ទៀត</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="other">%d ផ្នែកដែលត្រូវអាប់ដេត</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="other">អ្នកនៅតែអាចជ្រើសរើសរូបភាព %1$d និង %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="other">(អតិបរមា %d វិនាទី)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="other">វីដេអូ %d</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="other">អ្នកនៅតែអាចជ្រើសរើសរូបភាព %d បានដដែល</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="other">អ្នកនៅតែអាចជ្រើសរើសវីដេអូ %d បានដដែល</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="other">(អតិបរមា %d វិនាទី)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="other">នៅក្នុងជួរ... នៅសល់ប្រហែល %d នាទី។</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="other">កាត់បន្ថយពេលវេលារង់ចាំ</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="other">នៅក្នុងជួរ... នៅសល់ប្រហែល %d វិនាទី។</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="other">នៅក្នុងជួររហ័សជាមួយ Pro... នៅសល់ប្រហែល %d នាទី។</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="other">ធាតុ %d</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="other">បានជ្រើសរើសធាតុ %d</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="other">គម្រោង %d</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="other">បានជ្រើសរើសគម្រោង %d</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="other">មនុស្សជា​ច្រើន​កំពុង​ប្រើប្រាស់​មុខងា​រនេះ​នៅ​ពេលនេះ។ រយៈពេល​រង់ចាំ​ប៉ាន់ស្មានរបស់​អ្នក​​គឺ %d នាទី។</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="other">ការ​បង្កើត​ម្ដង​ទៀត​នឹង​ប្រើប្រាស់​ឥណទាន %d។</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="other">ការ​បង្កើត​ម្ដង​ទៀត​ជា​មួយ​ធាតុ​ថ្មី​នឹង​ប្រើប្រាស់​ឥណទាន %d។</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="other">បាន​បញ្ចូល​ %d ឃ្លីប</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="other">ជ្រើសរើសធាតុ %d</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="other">បាន​បង្កើតវីដេអូ %d សម្រាប់​អ្នក</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="other">អ្នក​អាច​បំបែក​សំឡេង​បាន​តែ​ក្រោម %d នាទី​ប៉ុណ្ណោះ</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="other">អ្នក​អាច​ស្ដារ​ទំហំផ្ទុក​ក្នុង​រយៈពេល %d ថ្ងៃ។</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="other">វីដេអូ %d កំពុងត្រូវបានបង្កើត។ សូម​ព្យាយាម​ម្ដង​ទៀតនៅ​ពេលក្រោយ។</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="other">អាប់ហ្គ្រេដដើម្បីប្រើមុខងារនេះដោយប្រើឥណទាន %d</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="other">អ្នកមានតែ %d កៅអីប៉ុណ្ណោះដែលនៅសល់ក្នុងបន្ទប់នេះ។</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="other">បាន​ប្រើប្រាស់​ធាតុ %d</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="other">បានជ្រើសរើសធាតុ %d</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="other">ជ្រើសរើសធាតុ %d</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="other">អក្សររត់ %d</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="other">ធាតុ %d</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="other">មុខងារ %d កំពុង​ត្រូវបានដាក់​ប្រើ។ សូម​ព្យាយាម​ម្ដ​ងទៀត​នៅ​ពេល​ក្រោយ។</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="other">នៅសល់ចំនួនប្រើប្រាស់ឥតគិតថ្លៃ %d។ ចូលរួម \"ស្ដង់ដា\" ដើម្បីប្រើវាដោយប្រើឥណទាន។</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="other">នៅសល់ចំនួនប្រើប្រាស់ឥតគិតថ្លៃ %d។ ចូលរួម Pro ដើម្បីប្រើវាដោយប្រើឥណទាន។</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="other">នៅសល់ចំនួនប្រើប្រាស់ឥតគិតថ្លៃ %d។ យក Ultra ដើម្បីប្រើដោយប្រើឥណទាន។</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="other">សកម្មភាពនេះនឹងប្រើប្រាស់ឥណទាន %1$d។ %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="other">អ្នកនៅសល់ឥណទាន %d ទៀត។</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="other">ទទួលបាន Ultra ដើម្បីប្រើជាមួយ %d ឥណទាន</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="other">ចូលរួម Pro ដើម្បីប្រើប្រាស់​មុខងារ​នេះ​ដោយប្រើ​ឥណទាន %d។</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="other">ចូលរួម \"ស្តង់ដា\" ដើម្បីប្រើប្រាស់​មុខងារនេះ​ដោយប្រើ​ឥណទាន %d។</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="other">អ្នកមិនអាចរក្សាទុកសំឡេងច្រើនជាង %1$d បានទេ។</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="other">មិនអាចកែលម្អសំឡេងនៅក្នុងឃ្លីបដែលវែងជាង %1$d នាទីបានទេ</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="other">ជ្រើសរើស​ធាតុ %d ដើម្បី​ទទួល​បានលទ្ធផល​ល្អបំផុត</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="other">បន្តជាថ្មីក្នុងតម្លៃ %1$s សម្រាប់រយៈពេល %2$d ខែដំបូង បន្ទាប់មកតម្លៃ %3$s។</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="other">បន្តជាថ្មីក្នុងតម្លៃ %1$s សម្រាប់រយៈពេល %2$d ឆ្នាំដំបូង បន្ទាប់មកតម្លៃ %3$s។</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="other">អ្នកបាន​ធ្វើការអាប់ដេត %d។ បង្កើត​ការ​និយាយ និង​ចលនា​ធ្វើ​មាត់​តាម​ឬ?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="other">នៅសល់ %d ដងទៀត</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="other">មាន​ឃ្លីប​មិនមានសំឡេង %d។</item>
+    </plurals>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/pc5" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="189.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.PanelBottomBar n0:id="@id/cbSmartMotion" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/q4z" n1:APKTOOL_RENAMED_0x7f040455="false" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/divider_1" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n2:layout_constraintTop_toBottomOf="@id/cbSmartMotion"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/ll_motion_item" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n3:layout_constraintTop_toBottomOf="@id/divider_1"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <View n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" />
+        <LinearLayout n0:orientation="vertical" n0:id="@id/ll_motion_none" n0:layout_width="59.0dp" n0:layout_height="wrap_content">
+            <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/image_none" n0:background="@drawable/lvi" n0:layout_width="59.0dp" n0:layout_height="59.0dp" n0:src="@drawable/nb4" n0:scaleType="center" n3:layout_constraintDimensionRatio="1:1" />
+            <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="@color/_4" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122cd4" />
+        </LinearLayout>
+        <View n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" />
+        <LinearLayout n0:orientation="vertical" n0:id="@id/ll_motion_dynamic" n0:layout_width="59.0dp" n0:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView n0:layout_gravity="center_horizontal" n0:id="@id/image_dynamic_root" n0:layout_width="match_parent" n0:layout_height="59.0dp" n3:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n3:cardCornerRadius="2.0dp" n3:cardElevation="0.0dp" n3:layout_constraintDimensionRatio="1:1">
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/image_dynamic" n0:padding="1.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/mol" />
+                <FrameLayout n0:id="@id/iv_motion_dynamic_adjust" n0:background="@drawable/lvh" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintDimensionRatio="1:1">
+                    <com.vega.ui.AlphaButton n0:layout_gravity="center" n0:id="@id/motion_dynamic_adjust_icon_iv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m_s" />
+                </FrameLayout>
+                <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="start|top" n0:id="@id/iv_dynamic_vip" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="1.0dp" n0:scaleType="fitStart" n3:c2="smart_motion" n3:APKTOOL_RENAMED_0x7f0404ef="smart_motion" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:kml="small" n3:kmo="edit" n3:ktj="normal_func" />
+            </androidx.cardview.widget.CardView>
+            <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:layout_gravity="center_horizontal" n0:id="@id/tv_dynamic_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/q8c" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <View n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" />
+        <LinearLayout n0:orientation="vertical" n0:id="@id/ll_motion_zoom" n0:layout_width="59.0dp" n0:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView n0:layout_gravity="center_horizontal" n0:id="@id/image_zoom_root" n0:layout_width="match_parent" n0:layout_height="59.0dp" n3:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n3:cardCornerRadius="2.0dp" n3:cardElevation="0.0dp" n3:layout_constraintDimensionRatio="1:1">
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/image_zoom" n0:padding="1.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/mol" />
+                <FrameLayout n0:id="@id/iv_motion_zoom_adjust" n0:background="@drawable/lvh" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintDimensionRatio="1:1">
+                    <com.vega.ui.AlphaButton n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m_s" />
+                </FrameLayout>
+                <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="start|top" n0:id="@id/iv_zoom_vip" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="1.0dp" n0:scaleType="fitStart" n3:c2="smart_motion" n3:APKTOOL_RENAMED_0x7f0404ef="smart_motion" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:kml="small" n3:kmo="edit" n3:ktj="normal_func" />
+            </androidx.cardview.widget.CardView>
+            <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:layout_gravity="center_horizontal" n0:id="@id/tv_zoom_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/uq1" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <View n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" />
+        <LinearLayout n0:orientation="vertical" n0:id="@id/ll_motion_rotate" n0:layout_width="59.0dp" n0:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView n0:layout_gravity="center_horizontal" n0:id="@id/image_rotate_root" n0:layout_width="match_parent" n0:layout_height="59.0dp" n3:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n3:cardCornerRadius="2.0dp" n3:cardElevation="0.0dp" n3:layout_constraintDimensionRatio="1:1">
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/image_rotate" n0:padding="1.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/mol" />
+                <FrameLayout n0:id="@id/iv_motion_rotate_adjust" n0:background="@drawable/lvh" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintDimensionRatio="1:1">
+                    <com.vega.ui.AlphaButton n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m_s" />
+                </FrameLayout>
+                <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="start|top" n0:id="@id/iv_rotate_vip" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="1.0dp" n0:scaleType="fitStart" n3:c2="smart_motion" n3:APKTOOL_RENAMED_0x7f0404ef="smart_motion" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:kml="small" n3:kmo="edit" n3:ktj="normal_func" />
+            </androidx.cardview.widget.CardView>
+            <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:layout_gravity="center_horizontal" n0:id="@id/tv_rotate_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/q1w" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <View n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" />
+        <LinearLayout n0:orientation="vertical" n0:id="@id/ll_motion_slow" n0:layout_width="59.0dp" n0:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView n0:layout_gravity="center_horizontal" n0:id="@id/image_slow_root" n0:layout_width="match_parent" n0:layout_height="59.0dp" n3:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n3:cardCornerRadius="2.0dp" n3:cardElevation="0.0dp" n3:layout_constraintDimensionRatio="1:1">
+                <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/image_slow" n0:padding="1.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/mol" />
+                <FrameLayout n0:id="@id/iv_motion_slow_adjust" n0:background="@drawable/lvh" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintDimensionRatio="1:1">
+                    <com.vega.ui.AlphaButton n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m_s" />
+                </FrameLayout>
+                <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="start|top" n0:id="@id/iv_slow_vip" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="1.0dp" n0:scaleType="fitStart" n3:c2="smart_motion" n3:APKTOOL_RENAMED_0x7f0404ef="smart_motion" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:kml="small" n3:kmo="edit" n3:ktj="normal_func" />
+            </androidx.cardview.widget.CardView>
+            <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:layout_gravity="center_horizontal" n0:id="@id/tv_slow_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/q5c" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <View n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <Space n0:layout_width="match_parent" n0:layout_height="20.0dp" n4:layout_constraintTop_toBottomOf="@id/ll_motion_item"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

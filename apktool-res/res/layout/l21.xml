@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/brainstorm_model_content" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="192.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mo" n0:id="@id/brainstorm_model_title" n0:paddingLeft="8.0dp" n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingVertical="4.0dp" n1:k1i="regular"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:orientation="vertical" n0:id="@id/brainstorm_model_list" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

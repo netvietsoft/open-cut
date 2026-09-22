@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_search_history_icon" n0:paddingTop="9.0dp" n0:paddingBottom="9.0dp" n0:layout_width="18.0dp" n0:layout_height="match_parent" n0:src="@drawable/oxs" n0:paddingVertical="9.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#090c14" n0:ellipsize="middle" n0:gravity="start|center" n0:id="@id/vtv_search_history" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp" n0:singleLine="true" n0:layout_marginHorizontal="8.0dp" n0:textFontWeight="500" n2:layout_constraintEnd_toStartOf="@id/iv_search_history_delete" n2:layout_constraintStart_toEndOf="@id/iv_search_history_icon" n2:k1i="medium" n2:k1j="body_1"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_search_history_delete" n0:paddingTop="5.0dp" n0:paddingBottom="5.0dp" n0:layout_width="16.0dp" n0:layout_height="match_parent" n0:src="@drawable/l5n" n0:tint="#b2141d2d" n0:paddingVertical="5.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

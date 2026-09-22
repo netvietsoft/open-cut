@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/fl_credit" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="wrap_content" n0:layout_height="55.25dp" n0:minWidth="64.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#ffcc00" n0:gravity="center" n0:layout_gravity="center|bottom" n0:id="@id/tv_change_credits" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="18.0dp" n0:layout_marginBottom="60.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center|bottom" n0:id="@id/iv_credit" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="11.099976dp" n0:src="@drawable/nia" />
+    <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center|top" n0:id="@id/lottieView_credit" n0:visibility="visible" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="credit_watching_ad_enter.json" n1:lottie_loop="false"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.rollingtv.RollingTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#cc894e00" n0:gravity="center" n0:layout_gravity="center|bottom" n0:id="@id/rolling_tv_credit" n0:background="@drawable/q0-" n0:visibility="gone" n0:layout_width="48.0dp" n0:layout_height="18.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#cc894e00" n0:gravity="center" n0:layout_gravity="center|bottom" n0:id="@id/tv_credit_get_bolt" n0:background="@drawable/q0-" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="18.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:text="@string/mc4" n0:layout_marginHorizontal="10.0dp" n0:paddingHorizontal="8.0dp" />
+</FrameLayout>

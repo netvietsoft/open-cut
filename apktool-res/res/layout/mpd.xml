@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/xt_ll_inpaint_cutout_bottom_panel" n0:background="@color/kr_" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <include n0:layout_width="match_parent" n0:layout_height="wrap_content" layout="@layout/APKTOOL_RENAMED_0x7f0c135d" />
+        <LinearLayout n0:layout_gravity="center_horizontal" n0:orientation="horizontal" n0:id="@id/xt_ll_common_cutout_item_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+            <LinearLayout n0:layout_gravity="center_vertical" n0:orientation="vertical" n0:id="@id/xt_common_cutout_type_pen" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+                <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/xt_iv_common_cutout_type_pen" n0:background="@drawable/q9p" n0:padding="12.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/r62" />
+                <TextView n0:textSize="10.0dp" n0:textColor="#b3f6f7fe" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/txx" />
+            </LinearLayout>
+            <LinearLayout n0:layout_gravity="center_vertical" n0:orientation="vertical" n0:id="@id/xt_common_cutout_type_eraser" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+                <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/xt_iv_common_cutout_type_eraser" n0:background="@drawable/q9p" n0:padding="12.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/r6j" />
+                <TextView n0:textSize="10.0dp" n0:textColor="#b3f6f7fe" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/sx7" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.xt.retouch.baseui.view.InterceptConstraintLayout n0:id="@id/xt_common_cutout_slide_container" n0:background="@color/kw0" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="8.0dp">
+            <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_common_cutout_pen_sliderView" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n1:APKTOOL_RENAMED_0x7f04043b="16.0dp" n1:APKTOOL_RENAMED_0x7f04043d="0" n1:APKTOOL_RENAMED_0x7f040545="8.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:kkt="#37383c" n1:kkx="4.0dp" n1:APKTOOL_RENAMED_0x7f0406dd="100" n1:kn4="1" />
+        </com.xt.retouch.baseui.view.InterceptConstraintLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/xt_ll_common_cutout_prompt" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginHorizontal="12.0dp">
+            <TextView n0:textSize="14.0dp" n0:textColor="#80edf0fd" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tek" />
+            <TextView n0:textSize="14.0dp" n0:textColor="#b2f6f7fe" n0:ellipsize="end" n0:id="@id/xt_tv_common_cutout_prompt" n0:background="@drawable/q6l" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxLines="1" n0:includeFontPadding="false" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" />
+        </LinearLayout>
+        <FrameLayout n0:id="@id/xt_cutout_inpaint_benefits_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n1:layout_constraintTop_toBottomOf="@id/xt_ll_common_cutout_prompt" />
+        <FrameLayout n0:id="@id/xt_iv_common_cutout_confirm" n0:background="@drawable/q82" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="28.0dp" n0:layout_marginHorizontal="12.0dp" n1:layout_constraintTop_toBottomOf="@id/xt_cutout_inpaint_benefits_view">
+            <LinearLayout n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                <FrameLayout n0:layout_gravity="center" n0:id="@id/xt_ai_logo_ball_bg_shadow" n0:background="@drawable/q5s" n0:layout_width="40.0dp" n0:layout_height="40.0dp">
+                    <ImageView n0:layout_gravity="center" n0:id="@id/xt_common_ic_generate_btn_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/rl1" />
+                </FrameLayout>
+                <TextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_gravity="center" n0:id="@id/xt_common_tv_generate_btn_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uko" n0:alpha="0.3" n0:layout_marginStart="2.0dp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <TextView n0:textSize="12.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/tv_common_cutout_reset_btn" n0:background="@drawable/q9s" n0:paddingTop="6.0dp" n0:paddingBottom="6.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="60.0dp" n0:text="@string/t7a" n0:maxLines="1" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BrushSizeSliderBubble n0:id="@id/xt_inpaint_slide_bubble" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.edit.base.view.DisplayPenView n0:id="@id/xt_inpaint_display_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/eb" />
+</androidx.constraintlayout.widget.ConstraintLayout>

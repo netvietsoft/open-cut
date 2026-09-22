@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.edit.view.NestedScrollListenerView n0:id="@id/scroll_root" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <FrameLayout n0:id="@id/search_history_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n0:id="@id/hot_key_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/search_history_container"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n0:id="@id/material_recommend_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/hot_key_container"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.Barrier n0:id="@id/content_barrier" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:barrierDirection="bottom" n4:constraint_referenced_ids="hot_key_container,material_recommend_container"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/place_view" n0:layout_width="match_parent" n0:layout_height="0.0dp" n5:layout_constraintTop_toBottomOf="@id/content_barrier"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.vega.edit.view.NestedScrollListenerView>

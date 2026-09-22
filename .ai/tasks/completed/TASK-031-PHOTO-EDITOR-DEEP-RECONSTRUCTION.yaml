@@ -1,0 +1,28 @@
+task_id: "TASK-031-PHOTO-EDITOR-DEEP-RECONSTRUCTION"
+title: "Tái Cấu Trúc Toàn Diện Photo Editor - Sửa Lỗi Tô Son Đỏ Cả Ảnh & Kéo Chân Dài Cả Ảnh Bằng Face & Body Detection"
+agent_role: "Agent 0 (Orchestrator) & Agent 3 (Frontend / Android) & Agent 1 (Architect)"
+status: "completed"
+created_at: "2026-09-19T12:47:00+07:00"
+completed_at: "2026-09-19T15:30:00+07:00"
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/FaceBodyDetectionEngine.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/EffectRegistry.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java"
+  - "UPDATETODOS.md"
+  - "TASK_LOG.md"
+  - "PROJECT_MEMORY.md"
+acceptance_criteria:
+  - "1. Lập bảng đối chiếu toàn diện 7 phân hệ, 42 công cụ giữa NextAI OpenCut với CapCut, Facetune, Meitu, FaceApp, SnapEdit, Lightroom Mobile (Đã hoàn thành tại photo_editor_full_feature_matrix.md)."
+  - "2. Khắc phục triệt để lỗi tô son đỏ cả ảnh: Tích hợp android.media.FaceDetector, tạo mặt nạ son môi cục bộ (Feathered RadialGradient) chỉ tác động lên môi, giữ nguyên 100% màu sắc toàn bộ bức ảnh xung quanh."
+  - "3. Khắc phục triệt để lỗi kéo chân dài cả ảnh: Áp dụng thuật toán biến dạng lưới mềm phân đoạn (Segmented Soft Mesh Warp) khóa cứng thân trên (0-60%), chỉ kéo dài cẳng chân (60-88%), neo giữ nguyên bàn chân và sàn nhà (88-100%)."
+  - "4. Triển khai làm trắng răng và làm sáng mắt cục bộ theo tọa độ khuôn mặt thực tế."
+  - "5. 100% mã nguồn có chú thích song ngữ Anh - Việt theo Luật 12 AGENTS.md."
+  - "6. Biên dịch APK và kiểm thử nghiệm thu trực tiếp trên Samsung Galaxy A50s."
+results:
+  verification: "PASSED (100%)"
+  device: "Samsung Galaxy A50s (SM-A507FN, Android 11)"
+  evidence:
+    - "design/screenshots/parity100/phase22_03_lipstick.png"
+    - "design/screenshots/parity100/phase22_04_legs.png"
+    - "design/screenshots/parity100/phase22_05_saved.png"
+    - "design/screenshots/parity100/exported_saved_photo.png"

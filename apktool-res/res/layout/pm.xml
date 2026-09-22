@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_preview_close" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m64" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="17.0dp" n0:textColor="@color/knt" n0:id="@id/photo_preview_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="@id/iv_preview_close" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="@id/iv_preview_close"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.viewpager.widget.ViewPager n0:id="@id/view_pager" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="92.0dp" n0:layout_marginBottom="42.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

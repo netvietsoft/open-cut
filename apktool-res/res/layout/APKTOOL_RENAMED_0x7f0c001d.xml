@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cell_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <View n0:id="@id/separator" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="@dimen/d6" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.bytedance.tux.icon.TuxIconView n0:id="@id/icon_iv" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="16.0dp" n2:layout_constraintHorizontal_bias="0.0" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:khh="20.0dp" n2:kh-="20.0dp"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.bytedance.tux.input.TuxTextView n0:ellipsize="end" n0:gravity="start" n0:id="@id/title_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:textAlignment="viewStart" n3:layout_constrainedWidth="true" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintHorizontal_bias="0.0" n3:layout_constraintStart_toEndOf="@id/icon_iv" n3:layout_constraintTop_toTopOf="parent" n3:layout_constraintVertical_bias="0.0"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.bytedance.tux.input.TuxTextView n0:ellipsize="end" n0:gravity="start" n0:id="@id/subtitle_tv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:textAlignment="viewStart" n4:layout_constrainedWidth="true" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintHorizontal_bias="0.0" n4:layout_constraintStart_toStartOf="@id/title_tv" n4:layout_constraintTop_toBottomOf="@id/title_tv"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.bytedance.tux.widget.ExpandableLayout n0:id="@id/expansion_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.appcompat.widget.LinearLayoutCompat>

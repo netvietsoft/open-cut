@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="45.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@drawable/qo8" n0:gravity="center" n0:id="@id/tabButton" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:button="@null" n0:includeFontPadding="false" n0:layout_centerInParent="true" n1:kr3="button"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:gravity="center" n0:id="@id/tabImage" n0:visibility="gone" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:button="@null" n0:layout_centerInParent="true" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/tabBadge" n0:background="@drawable/lzi" n0:paddingLeft="3.0dp" n0:paddingRight="3.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="-10.0dp" n0:minWidth="18.0dp" n0:minHeight="18.0dp" />
+</RelativeLayout>

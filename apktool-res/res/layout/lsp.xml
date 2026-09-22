@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/select_bottom_layout" n0:background="@color/si" n0:paddingTop="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:i9="12.0dp" n1:i-="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <FrameLayout n0:id="@id/selectedMediaLy" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="83.0dp" n0:layout_marginStart="4.0dp">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/selectedMediaRv" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/selectedMediaEmpty" n0:layout_width="match_parent" n0:layout_height="83.0dp" n0:layout_marginStart="16.0dp">
+        <ImageView n0:layout_gravity="start" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/ogo" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottomView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/knt" n0:id="@id/tv_multi_material" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/gp" n1:layout_constraintBottom_toBottomOf="@id/sb_media_select_done" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/sb_media_select_done" />
+        <com.vega.ui.MarqueeStrongButton n0:textSize="14.0sp" n0:textColor="@drawable/mll" n0:ellipsize="marquee" n0:layout_gravity="end" n0:id="@id/sb_media_select_done" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="21.0dp" n0:layout_marginBottom="21.0dp" n0:minWidth="70.0dp" n0:text="@string/qn2" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:paddingHorizontal="10.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:k1i="medium" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

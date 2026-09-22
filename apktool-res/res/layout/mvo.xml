@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/xt_ll_color_offset" n0:background="@drawable/q6p" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/ks4" n0:gravity="center" n0:id="@id/xt_tv_color_offset" n0:layout_width="66.0dp" n0:layout_height="wrap_content" n0:text="@string/tax" n0:layout_marginStart="8.0dp" />
+        <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_edit_slider_color_offset" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="60.0dp" n1:APKTOOL_RENAMED_0x7f040470="false" n1:APKTOOL_RENAMED_0x7f040545="8.0dp" n1:kko="@color/kta" n1:kkt="@color/ktz" n1:APKTOOL_RENAMED_0x7f0406dd="100" n1:kn4="0" n1:kte="@string/saj" n1:kvi="true" n1:kar="2" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/xt_ll_angle" n0:background="@drawable/q6p" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/xt_ll_color_offset"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/ks4" n0:gravity="center" n0:id="@id/xt_tv_angle" n0:layout_width="66.0dp" n0:layout_height="wrap_content" n0:text="@string/tjo" n0:layout_marginStart="8.0dp" />
+        <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_edit_slider_angle" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="60.0dp" n2:APKTOOL_RENAMED_0x7f040470="false" n2:APKTOOL_RENAMED_0x7f040545="8.0dp" n2:kko="@color/kta" n2:kkt="@color/ktz" n2:APKTOOL_RENAMED_0x7f0406dd="100" n2:kn4="0" n2:kte="@string/saj" n2:kvi="true" n2:kar="2" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/xt_ll_ambient_radius" n0:background="@drawable/q6p" n0:layout_width="match_parent" n0:layout_height="44.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/xt_ll_angle"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/ks4" n0:gravity="center" n0:id="@id/xt_tv_ambient_radius" n0:layout_width="66.0dp" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1237ee" n0:layout_marginStart="8.0dp" />
+        <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_edit_slider_ambient_radius" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="60.0dp" n3:APKTOOL_RENAMED_0x7f040470="false" n3:APKTOOL_RENAMED_0x7f040545="8.0dp" n3:kko="@color/kta" n3:kkt="@color/ktz" n3:APKTOOL_RENAMED_0x7f0406dd="100" n3:kn4="0" n3:kte="@string/saj" n3:kvi="true" n3:kar="2" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/xt_ll_exposure" n0:background="@drawable/q6p" n0:layout_width="match_parent" n0:layout_height="44.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/xt_ll_ambient_radius"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/ks4" n0:gravity="center" n0:id="@id/xt_tv_exposure" n0:layout_width="66.0dp" n0:layout_height="wrap_content" n0:text="@string/taz" n0:layout_marginStart="8.0dp" />
+        <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_edit_slider_exposure" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="60.0dp" n4:APKTOOL_RENAMED_0x7f040470="false" n4:APKTOOL_RENAMED_0x7f040545="8.0dp" n4:kko="@color/kta" n4:kkt="@color/ktz" n4:APKTOOL_RENAMED_0x7f0406dd="100" n4:kn4="0" n4:kte="@string/saj" n4:kvi="true" n4:kar="2" />
+    </LinearLayout>
+    <ImageView n0:id="@id/xt_iv_zoom_control" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081bcc" n0:layout_marginEnd="8.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

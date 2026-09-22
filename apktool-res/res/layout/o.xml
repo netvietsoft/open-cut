@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.tux.widget.FlexLayout n0:id="@id/toast_layout" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:behavior_hideable="true" n1:behavior_peekHeight="200.0dp" n1:layout_behavior="@string/APKTOOL_RENAMED_0x7f12051c"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.bytedance.tux.widget.FlexLayout n0:id="@id/content_layout" n1:APKTOOL_RENAMED_0x7f04060b="50%" n1:_q="max(wrap_content,44dp)" n1:_1="0%">
+            <FrameLayout n0:id="@id/start_slot" n1:APKTOOL_RENAMED_0x7f04060c="50%" n1:_q="min(wrap_content,32dp)" n1:_t="12dp" n1:_3="max(min(wrap_content,32dp), 28dp)" />
+            <FrameLayout n0:id="@id/end_slot" n0:layout_height="wrap_content" n0:paddingStart="12.0dp" n1:APKTOOL_RENAMED_0x7f04060c="50%" n1:_c="100%-16dp" n1:_3="min(0.4*parent.width,wrap_content)" />
+            <com.bytedance.tux.input.TuxTextView n0:id="@id/message" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:layout_height="wrap_content" n1:APKTOOL_RENAMED_0x7f04060c="50%" n1:_t="start_slot.right+4dp" n1:_c="end_slot.left-4dp" />
+            <View n0:id="@id/press_mask" n1:APKTOOL_RENAMED_0x7f040607="100%" n1:_t="0%" n1:_c="100%" n1:_1="0%" />
+        </com.bytedance.tux.widget.FlexLayout>
+    </com.bytedance.tux.widget.FlexLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

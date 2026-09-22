@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.audio.musicimport.extract.MusicExtractView n0:orientation="vertical" n0:id="@id/vgMusicExtract" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.StrongButton n0:id="@id/btnExtractMusic" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginStart="45.0dp" n0:layout_marginEnd="45.0dp" style="@style/APKTOOL_RENAMED_0x7f1304e3" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rvExtra" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="25.0dp" n1:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</com.vega.audio.musicimport.extract.MusicExtractView>

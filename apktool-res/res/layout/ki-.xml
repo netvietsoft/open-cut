@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_bottom_sticker_shop_entrance" n0:background="#fa242424" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp" n1:layout_constraintBottom_toBottomOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060462" n0:gravity="center" n0:id="@id/tv_tips_sticker_shop" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/sticker_shop_enter_btn" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="match_parent" n1:layout_constraintEnd_toEndOf="parent">
+        <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/qut" n0:layout_marginEnd="4.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/tv_sticker_shop_entrance" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#face15" n0:id="@id/tv_sticker_shop_entrance" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="4.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/right_path_ic" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/right_path_ic" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/quq" n0:layout_marginEnd="20.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/headerLayout" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:paddingHorizontal="16.0dp">
+        <ImageView n0:id="@id/btnBack" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/m69" n0:layout_centerVertical="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="@color/ml" n0:id="@id/tvTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/k_f" n0:layout_centerInParent="true" n1:k1g="text" n1:k1i="bold" n1:k1j="headline"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <com.bytedance.cux.skeleton.CuxShimmerLayout n0:id="@id/historyShimmerLayout" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0">
+        <FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/historyRecyclerView" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never" />
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/historySkeletonRecyclerView" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never" />
+            <com.vega.image.edit.template.view.panel.ImageTemplateListStatusView n0:id="@id/historyStatusView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        </FrameLayout>
+    </com.bytedance.cux.skeleton.CuxShimmerLayout>
+</merge>

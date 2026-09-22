@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/kor" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/xt_erasure_title_bar_top_margin" n0:layout_width="match_parent" n0:layout_height="27.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="@dimen/ea">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/xt_iv_erasure_title_bar_close" n0:layout_width="@dimen/g3" n0:layout_height="@dimen/g3" n0:src="@drawable/rmh" n0:scaleType="centerCrop" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/xt_iv_erasure_title_bar_save" n0:layout_width="@dimen/g3" n0:layout_height="@dimen/g3" n0:src="@drawable/r4j" n0:scaleType="centerCrop" n0:layout_marginEnd="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="12.0sp" n0:textColor="@color/ks4" n0:gravity="center" n0:id="@id/xt_tv_erasure_title_bar_go_edit" n0:background="@drawable/q63" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:text="@string/snp" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n0:layout_marginEnd="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/xt_iv_erasure_title_bar_save" n3:layout_constraintTop_toTopOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

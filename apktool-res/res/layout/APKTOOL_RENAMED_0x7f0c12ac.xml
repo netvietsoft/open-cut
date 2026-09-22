@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/rootLayout" n0:paddingTop="8.0dp" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/selectedImagesList" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="10.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaEditText n0:textSize="16.0sp" n0:textColor="@color/mk" n0:textColorHint="@color/APKTOOL_RENAMED_0x7f060075" n0:gravity="start|top" n0:id="@id/inputEditText" n0:background="@null" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:hint="@string/APKTOOL_RENAMED_0x7f1218c7" n0:maxLines="4" n0:textCursorDrawable="@drawable/APKTOOL_RENAMED_0x7f08048e" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/selectedImagesList"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/sendButton" n0:background="@drawable/ltd" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="12.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toBottomOf="@id/inputEditText"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/sendIcon" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f080515" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/generateButton" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:layout_marginTop="12.0dp" n0:foreground="@drawable/qlk" n0:paddingHorizontal="16.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toBottomOf="@id/inputEditText"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/generateIcon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/n07" n0:scaleType="center" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#090c14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/oni" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="4.0dp" n0:textFontWeight="700" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toEndOf="@id/generateIcon" n4:layout_constraintTop_toTopOf="parent" n4:k1i="bold" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

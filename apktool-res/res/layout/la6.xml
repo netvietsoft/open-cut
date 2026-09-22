@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/icon_group" n0:layout_width="@dimen/ar" n0:layout_height="@dimen/aq"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/icon" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="@dimen/ao" n0:layout_marginBottom="@dimen/ao" n0:scaleType="centerInside" n0:layout_marginStart="@dimen/ao" n0:layout_marginEnd="@dimen/ao" />
+    <ImageView n0:layout_gravity="end|bottom" n0:id="@id/right_icon" n0:visibility="gone" n0:layout_width="@dimen/au" n0:layout_height="@dimen/au" n0:layout_marginBottom="8.0dp" n0:scaleType="centerInside" n0:layout_marginEnd="8.0dp" />
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n0:padding="16.0dp" n0:scrollbars="none" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:fillViewport="true" n0:overScrollMode="never"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:divider="@drawable/l_l" n0:showDividers="middle">
+        <LinearLayout n0:orientation="vertical" n0:id="@id/duration_section" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/duration_header" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/m36" n0:textFontWeight="500" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:id="@id/duration_value" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="10.0dp" />
+            </LinearLayout>
+            <com.vega.ui.SliderView n0:id="@id/duration_slider" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:layoutDirection="ltr" n0:paddingStart="5.0dp" n0:paddingEnd="5.0dp" n1:APKTOOL_RENAMED_0x7f04046d="false" n1:APKTOOL_RENAMED_0x7f04049f="false" n1:APKTOOL_RENAMED_0x7f0404f1="true" n1:APKTOOL_RENAMED_0x7f040544="#fafbff" n1:APKTOOL_RENAMED_0x7f040547="#fafbff" n1:APKTOOL_RENAMED_0x7f040549="6.0dp" n1:APKTOOL_RENAMED_0x7f04054a="0.0dp" n1:APKTOOL_RENAMED_0x7f0405ae="true" n1:APKTOOL_RENAMED_0x7f0405b7="true" n1:kko="#00cae0" n1:kkt="#1ae5ecff" n1:kkx="4.0dp" n1:ksr="4.0dp"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/duration_range" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/aspect_ratio_section" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:id="@id/aspect_ratio_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/m-z" n0:textFontWeight="500" />
+            <HorizontalScrollView n0:id="@id/aspect_ratio_options_container" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:overScrollMode="never">
+                <LinearLayout n0:orientation="horizontal" n0:id="@id/aspect_ratio_options" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/resolution_section" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:id="@id/resolution_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/m4p" n0:textFontWeight="500" />
+            <HorizontalScrollView n0:id="@id/resolution_options_container" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:overScrollMode="never">
+                <LinearLayout n0:orientation="horizontal" n0:id="@id/resolution_options" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

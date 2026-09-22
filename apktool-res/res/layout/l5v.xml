@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/search_panel" n0:background="@drawable/pc5" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/coordinator" n1:layout_constraintTop_toTopOf="@id/coordinator"
+      xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/verticalGuideLine" n0:layout_width="wrap_content" n0:layout_height="match_parent" n1:layout_constraintGuide_begin="16.0dp" />
+        <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/barrier_help_upward" n0:layout_width="wrap_content" n0:layout_height="match_parent" n1:layout_constraintGuide_begin="10.0dp" />
+        <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/horizontalGuideLine2" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_begin="58.0dp" />
+        <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/horizontalGuideLine3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_begin="88.0dp" />
+        <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/horizontalGuideLine4" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_begin="140.0dp" />
+        <com.vega.edit.search.ScrollHandleRelativeLayout n0:id="@id/search_scroll_handle" n0:background="@drawable/pc5" n0:layout_width="match_parent" n0:layout_height="52.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06061f" n0:gravity="center" n0:id="@id/close" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120591" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" n0:layout_marginHorizontal="16.0dp" n1:kr3="none" />
+            <androidx.appcompat.widget.AppCompatEditText n0:textSize="12.0dp" n0:textColor="@color/knt" n0:textColorHint="@color/_v" n0:gravity="center_vertical" n0:id="@id/input" n0:background="@drawable/ls1" n0:layout_width="match_parent" n0:layout_height="32.0dp" n0:maxLines="1" n0:singleLine="true" n0:includeFontPadding="false" n0:drawablePadding="8.0dp" n0:layout_centerVertical="true" n0:imeOptions="actionSearch|flagNoExtractUi" n0:textCursorDrawable="@drawable/k9w" n0:drawableStart="@drawable/ofu" n0:paddingStart="8.0dp" n0:paddingEnd="40.0dp" n0:layout_marginStart="16.0dp" n0:layout_toStartOf="@id/close" />
+            <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/clear" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/nbe" n0:scaleType="centerInside" n0:layout_centerVertical="true" n0:layout_toStartOf="@id/close" n0:layout_alignEnd="@id/input" n1:kr3="none" />
+        </com.vega.edit.search.ScrollHandleRelativeLayout>
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/_e" n0:gravity="center" n0:id="@id/trendingTopic" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l40" n1:layout_constraintStart_toStartOf="@id/verticalGuideLine" n1:layout_constraintTop_toTopOf="@id/horizontalGuideLine2" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/hotRecyclerView" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="@id/verticalGuideLine" n1:layout_constraintTop_toTopOf="@id/horizontalGuideLine3" />
+        <View n0:id="@id/viewAssist" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="@id/hotRecyclerView" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.widget.CollectionButton n0:id="@id/collectBtn" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/horizontalGuideLine2" />
+        <TextView n0:id="@id/emptyTips" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:layout_marginTop="35.0dp" n0:text="@string/qpd" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/horizontalGuideLine2" />
+        <com.vega.ui.widget.LoadingView n0:id="@id/loadingView" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/horizontalGuideLine2" />
+        <androidx.constraintlayout.widget.Group n0:id="@id/hotGroup" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:constraint_referenced_ids="trendingTopic,hotRecyclerView" />
+        <androidx.constraintlayout.widget.Group n0:id="@id/resultGroup" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.Group n0:id="@id/emptyGroup" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:constraint_referenced_ids="emptyTips" />
+        <include n0:id="@id/loadingError" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/horizontalGuideLine2" layout="@layout/lwu" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/sug_list" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toBottomOf="@id/horizontalGuideLine2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.edit.widget.SearchPanelCoordinatorLayout n2:id="@id/coordinator" n2:layout_width="match_parent" n2:layout_height="match_parent"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <com.google.android.material.appbar.AppBarLayout n2:id="@id/appBarLayout" n2:background="@color/APKTOOL_RENAMED_0x7f060634" n2:layout_width="match_parent" n2:layout_height="wrap_content" n3:elevation="0.0dp"
+          xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <com.google.android.material.appbar.CollapsingToolbarLayout n2:id="@id/toolBarLayout" n2:background="@color/APKTOOL_RENAMED_0x7f060634" n2:layout_width="match_parent" n2:layout_height="0.0dp" n3:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap">
+                <View n2:id="@id/varHeightMaxView" n2:layout_width="match_parent" n2:layout_height="match_parent" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <View n2:id="@id/snapLayout" n2:layout_width="match_parent" n2:layout_height="0.0dp" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <ViewStub n2:id="@id/searchFilterLayout" n2:layout_width="match_parent" n2:layout_height="wrap_content" n2:layout_marginTop="54.0dp" n4:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.MaterialRecycleView n2:id="@id/resultRecyclerView" n2:visibility="gone" n2:layout_width="match_parent" n2:layout_height="match_parent" n2:layout_marginTop="82.0dp" n5:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <ViewStub n2:id="@id/sliderLayout" n2:layout_width="match_parent" n2:layout_height="wrap_content" n2:layout_marginTop="153.0dp" n6:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </com.vega.edit.widget.SearchPanelCoordinatorLayout>
+</merge>

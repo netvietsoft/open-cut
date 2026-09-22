@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:id="@id/tv_text" n0:text="@string/q3n" n1:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kkt="@color/APKTOOL_RENAMED_0x7f060639" style="@style/yo"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/vip_badge_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="1.0dp" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/tv_text" n2:layout_constraintTop_toTopOf="parent" n2:kml="small"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/guideline_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintGuide_begin="54.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/sv_matting_options" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginStart="20.0dp" n0:layout_toEndOf="@id/tv_text" n4:APKTOOL_RENAMED_0x7f040503="-2.0dp" n4:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n4:APKTOOL_RENAMED_0x7f040549="8.0dp" n4:APKTOOL_RENAMED_0x7f0405b7="true" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/guideline_title" n4:kkt="@color/APKTOOL_RENAMED_0x7f060639" n4:kp6="true"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

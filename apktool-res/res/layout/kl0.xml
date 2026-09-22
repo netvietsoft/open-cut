@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/industry_type" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" />
+    <com.vega.ui.widget.HasAdapterChipGroup n0:id="@id/industry_flow" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="9.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n1:fd="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

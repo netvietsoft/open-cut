@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_trending_item_root" n0:background="@drawable/lde" n0:padding="3.5dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:id="@id/cv_image_container" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:cardBackgroundColor="#1ae5ecff" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_trending_image" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+    <ImageView n0:id="@id/iv_status_icon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/me_" n2:layout_constraintBottom_toBottomOf="@id/cv_image_container" n2:layout_constraintEnd_toEndOf="@id/cv_image_container" n2:layout_constraintStart_toStartOf="@id/cv_image_container" n2:layout_constraintTop_toTopOf="@id/cv_image_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

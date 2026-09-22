@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_extend_panel_root" n0:background="@drawable/APKTOOL_RENAMED_0x7f080621" n0:layout_width="match_parent" n0:layout_height="72.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_extend_panel_content" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/ai_extend_back_btn" n0:background="@drawable/APKTOOL_RENAMED_0x7f080620" n0:focusable="true" n0:clickable="true" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/md9" />
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_extend_input_box" n0:background="@drawable/APKTOOL_RENAMED_0x7f080622" n0:focusable="true" n0:clickable="true" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:layout_marginStart="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/ai_extend_back_btn" n1:layout_constraintTop_toTopOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#66e5e9fa" n0:ellipsize="end" n0:gravity="center_vertical" n0:id="@id/ai_extend_input_text" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:text="@string/m4o" n0:singleLine="true" n0:fontFamily="CapCut Sans Text" n0:paddingStart="18.0dp" n0:paddingEnd="12.0dp" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/ai_extend_generate_btn" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <FrameLayout n0:id="@id/ai_extend_generate_btn" n0:background="@drawable/APKTOOL_RENAMED_0x7f08061c" n0:focusable="true" n0:clickable="true" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginEnd="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/mfc" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

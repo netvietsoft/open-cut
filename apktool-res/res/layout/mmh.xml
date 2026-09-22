@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_business_template_item_base_layout_0" n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:layout_gravity="center" n0:orientation="vertical" n0:id="@id/ll_base_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <com.xt.retouch.baseui.view.BaseImageView n0:gravity="center" n0:id="@id/base_icon" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f0704ad" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704ad" n0:layout_marginTop="10.0dp" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="10.0sp" n0:textColor="@color/ktx" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/base_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:maxLines="1" n1:autoSizeMaxTextSize="10.0sp" n1:autoSizeMinTextSize="8.0sp" n1:bp="1.0sp" n1:autoSizeTextType="uniform"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</FrameLayout>

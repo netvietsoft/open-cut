@@ -1,0 +1,2069 @@
+{
+    "name": "te",
+    "currency": {
+        "Standard": "¤{0}",
+        "StandardNoCurrency": "#,##0.00",
+        "compact": {
+            "short": "¤{0}",
+            "shortNoSymbol": "¤ {0}",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "¤ {0}–{1}"
+			},
+			"approximately": {
+				"short": "~¤ {0}"
+			},
+			"atLeast": {
+				"short": "¤ {0}+"
+			},
+			"atMost": {
+				"short": "≤¤ {0}"
+			}
+		},
+        "currencyList": {
+            "AED": {
+                "symbol": {
+                    "value": "AED",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "యునైటెడ్ ఆరబ్ ఎమిరేట్స్ దిరామ్‌లు",
+                    "one": "యునైటెడ్ ఆరబ్ ఎమిరేట్స్ దిరామ్"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఆఫ్ఘాన్ ఆఫ్ఘానీలు",
+                    "one": "ఆఫ్ఘాన్ ఆఫ్ఘాని"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఆల్బేనియన్ లేక్"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "అమెరికన్ డ్రామ్‌లు",
+                    "one": "అమెరికన్ డ్రామ్"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "నెదర్లాండ్స్ యాంటిల్లియన్ గిల్‌డర్‌లు",
+                    "one": "నెదర్లాండ్స్ యాంటిల్లియన్ గిల్‌డర్"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "అంగోలాన్ క్వాన్‌జా‌లు",
+                    "one": "అంగోలాన్ క్వాన్‌జా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "అర్జెంటీనా పెసోలు",
+                    "one": "అర్జెంటీనా పెసో"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "A$"
+                },
+                "displayName": {
+                    "other": "ఆస్ట్రేలియన్ డాలర్‌లు",
+                    "one": "ఆస్ట్రేలియన్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "A$"
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "అరుబన్ ఫ్లోరిన్"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "అజర్బైజాన్ మానట్‌లు",
+                    "one": "అజర్బైజాన్ మానట్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బోస్నియా-హెర్జగోవినా మార్పిడి చెయ్యగలిగే మార్క్‌లు",
+                    "one": "బోస్నియా-హెర్జగోవినా మార్పిడి చెయ్యగలిగే మార్క్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బర్బాడియన్ డాలర్‌లు",
+                    "one": "బర్బాడియన్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బాంగ్లాదేశ్ టాకాలు",
+                    "one": "బాంగ్లాదేశ్ టాకా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బల్గేరియన్ లేవ",
+                    "one": "బల్గేరియన్ లేవ్"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బహ్రెయిన్ దినార్‌లు",
+                    "one": "బహ్రెయిన్ దినార్"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బురిండియన్ ఫ్రాంక్‌లు",
+                    "one": "బురిండియన్ ఫ్రాంక్"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బెర్ముడన్ డాలర్‌లు",
+                    "one": "బెర్ముడన్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బ్రూనై డాలర్‌లు",
+                    "one": "బ్రూనై డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బొలీవియన్ బొలీవియానోలు",
+                    "one": "బొలీవియన్ బొలీవియానో"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$"
+                },
+                "displayName": {
+                    "other": "బ్రెజిలియన్ రియల్‌లు",
+                    "one": "బ్రెజిలియన్ రియల్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బహామియన్ డాలర్‌లు",
+                    "one": "బహామియన్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "భూటానీయుల గుల్‌ట్రుమ్‌లు",
+                    "one": "భూటానీయుల గుల్‌ట్రుమ్"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బోట్స్‌వానా పులాలు",
+                    "one": "బోట్స్‌వానా పులా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బెలరూసియన్ రూబల్‌లు",
+                    "one": "బెలరూసియన్ రూబల్"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р."
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బెలరూసియన్ రూబల్‌లు (2000–2016)",
+                    "one": "బెలరూసియన్ రూబల్ (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "బెలీజ్ డాలర్‌లు",
+                    "one": "బెలీజ్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$"
+                },
+                "displayName": {
+                    "other": "కెనడియన్ డాలర్‌లు",
+                    "one": "కెనడియన్ డాలర్"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$"
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కొంగోలిస్ ఫ్రాంక్‌లు",
+                    "one": "కొంగోలిస్ ఫ్రాంక్"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "స్విస్ ఫ్రాంక్‌లు",
+                    "one": "స్విస్ ఫ్రాంక్"
+                },
+                "digits": 2
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "చిలియన్ పెసోలు",
+                    "one": "చిలియన్ పెసో"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "చైనీస్ యువాన్ (ఆఫ్‌షోర్)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥"
+                },
+                "displayName": {
+                    "other": "చైనా దేశ యువాన్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కొలంబియన్ పెసోలు",
+                    "one": "కొలంబియన్ పెసో"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కోస్టా రికన్ కోలోన్‌లు",
+                    "one": "కోస్టా రికన్ కోలోన్"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "క్యూబన్ కన్వర్టబుల్ పెసోలు",
+                    "one": "క్యూబన్ కన్వర్టబుల్ పెసో"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "క్యూబన్ పెసోలు",
+                    "one": "క్యూబన్ పెసో"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కేప్ వెర్డియన్ ఎస్కుడోలు",
+                    "one": "కేప్ వెర్డియన్ ఎస్కుడో"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "చెక్ రిపబ్లిక్ కోరునాలు",
+                    "one": "చెక్ రిపబ్లిక్ కోరునా"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "జిబోటియన్ ఫ్రాంక్‌లు",
+                    "one": "జిబోటియన్ ఫ్రాంక్"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "డానిష్ క్రోనర్",
+                    "one": "డానిష్ క్రోన్"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "డోమినికన్ పెసోలు",
+                    "one": "డోమినికన్ పెసో"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "అల్జీరియన్ దీనార్‌లు",
+                    "one": "అల్జీరియన్ దీనార్"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఈజిప్షియన్ పౌండ్‌లు",
+                    "one": "ఈజిప్షియన్ పౌండ్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£"
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఎరిట్రీన్ నక్ఫా‌లు",
+                    "one": "ఎరిట్రీన్ నక్ఫా"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP",
+                    "shortUseNoSymbol": 1
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఇథియోపియన్ బర్‌లు",
+                    "one": "ఇథియోపియన్ బర్"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "యురోలు",
+                    "one": "యురొ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఫీజియన్ డాలర్‌లు",
+                    "one": "ఫీజియన్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఫాక్‌ల్యాండ్ దీవులు పౌండ్‌లు",
+                    "one": "ఫాక్‌ల్యాండ్ దీవులు పౌండ్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "బ్రిటిష్ పౌండ్‌లు",
+                    "one": "బ్రిటిష్ పౌండ్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "జార్జియన్ లారీలు",
+                    "one": "జార్జియన్ లారి"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "గానెయన్ సెడిలు",
+                    "one": "గానెయన్ సెడి"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵"
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "జిబ్రల్‌టూర్ పౌండ్‌లు",
+                    "one": "జిబ్రల్‌టూర్ పౌండ్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "గాంబియన్ దలాసిలు",
+                    "one": "గాంబియన్ దలాసి"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "గ్వినియన్ ఫ్రాంక్‌లు",
+                    "one": "గ్వినియన్ ఫ్రాంక్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "గ్యుటెమాలన్ క్వెట్‌జల్‌లు",
+                    "one": "గ్యుటెమాలన్ క్వెట్‌జల్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "గుయనియాస్ డాలర్‌లు",
+                    "one": "గుయనియాస్ డాలర్"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$"
+                },
+                "displayName": {
+                    "other": "హాంకాంగ్ డాలర్‌లు",
+                    "one": "హాంకాంగ్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$"
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "హోండురన్ లెమిపిరాలు",
+                    "one": "హోండురన్ లెమిపిరా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "క్రొయేషియన్ క్యూనాలు",
+                    "one": "క్రొయేషియన్ క్యూన"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "హైటియన్ గ్వోర్డేలు",
+                    "one": "హైటియన్ గ్వోర్డే"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "హంగేరియన్ ఫోరింట్‌లు",
+                    "one": "హంగేరియన్ ఫోరింట్"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఇండోనేషియా రూపాయలు",
+                    "one": "ఇండోనేషియా రూపాయి"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "ఇజ్రాయేలీ న్యూ షెకెల్ లు",
+                    "one": "ఇజ్రాయేలీ న్యూ షెకెల్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "భారతదేశ రూపాయలు",
+                    "one": "భారతదేశ రూపాయి"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఇరాకీ దీనార్‌లు",
+                    "one": "ఇరాకీ దీనార్"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఇరానియన్ రీయల్‌లు",
+                    "one": "ఇరానియన్ రీయల్"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఐస్లాండిక్ క్రోనర్",
+                    "one": "ఐస్లాండిక్ క్రోనా"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "జమైకన్ డాలర్‌లు",
+                    "one": "జమైకన్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "జోర్‌డానియన్ దీనార్‌లు",
+                    "one": "జోర్‌డానియన్ దీనార్"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "JP¥"
+                },
+                "displayName": {
+                    "other": "జపాను దేశ యెన్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కెన్యాన్ షిల్లింగ్‌లు",
+                    "one": "కెన్యాన్ షిల్లింగ్"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కిర్గిస్థాని సౌమ్‌లు",
+                    "one": "కిర్గిస్థాని సౌమ్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కాంబోడియన్ రీల్‌లు",
+                    "one": "కాంబోడియన్ రీల్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కొమోరియన్ ఫ్రాంక్‌లు",
+                    "one": "కొమోరియన్ ఫ్రాంక్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఉత్తర కొరియా వోన్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "దక్షిణ కొరియా వోన్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కువైట్ దీనార్‌లు",
+                    "one": "కువైట్ దీనార్"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "కేమాన్ దీవుల డాలర్‌లు",
+                    "one": "కేమాన్ దీవుల డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఖజికిస్థాన్ టెంగేలు",
+                    "one": "ఖజికిస్థాన్ టెంగే"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "లాటియన్ కిప్‌లు",
+                    "one": "లాటియన్ కిప్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "లెబనీస్ పౌండ్‌లు",
+                    "one": "లెబనీస్ పౌండ్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£"
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "శ్రీలంక రూపాయలు",
+                    "one": "శ్రీలంక రూపాయి"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "లిబేరియన్ డాలర్‌లు",
+                    "one": "లిబేరియన్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "లెసోధో లోటిలు",
+                    "one": "లెసోధో లోటి"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "లిథోనియన్ లీటై",
+                    "one": "లిథోనియన్ లీటాస్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "లాత్వియన్ లాటి",
+                    "one": "లాత్వియన్ లాట్స్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "లిబియన్ దీనార్‌లు",
+                    "one": "లిబియన్ దీనార్"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మోరోకన్ దిర్హామ్‌లు",
+                    "one": "మోరోకన్ దిర్హామ్"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మోల్‌డోవన్ లీ",
+                    "one": "మోల్‌డోవన్ ల్యూ"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మలగసీ అరియరీలు",
+                    "one": "మలగసీ అరియరీ"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మెసిడోనియన్ దినారి",
+                    "one": "మెసిడోనియన్ దినార్"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మయన్మార్ క్యాట్‌లు",
+                    "one": "మయన్మార్ క్యాట్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మంగోలియన్ టుగ్రిక్‌లు",
+                    "one": "మంగోలియన్ టుగ్రిక్"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మకనీస్ పటాకాలు",
+                    "one": "మకనీస్ పటాక"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మౌరిటానియన్ ఒగ్యియాలు (1973–2017)",
+                    "one": "మౌరిటానియన్ ఒగ్యియా (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మౌరిటానియన్ ఒగ్యియాలు",
+                    "one": "మౌరిటానియన్ ఒగ్యియా"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మారిషన్ రూపాయలు",
+                    "one": "మారిషన్ రూపాయి"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మాల్దీవియన్ రుఫియాలు",
+                    "one": "మాల్దీవియన్ రుఫియా"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మలావియన్ క్వాచాలు",
+                    "one": "మలావియన్ క్వాచా"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$"
+                },
+                "displayName": {
+                    "other": "మెక్సికన్ పెసోలు",
+                    "one": "మెక్సికన్ పెసో"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మలేషియా రింగ్గిట్‌లు",
+                    "one": "మలేషియా రింగ్గిట్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "మొజాంబికన్ మెటికల్‌లు",
+                    "one": "మొజాంబికన్ మెటికల్"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "నమిబియన్ డాలర్‌లు",
+                    "one": "నమిబియన్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "నైజీరియన్ నైరాలు",
+                    "one": "నైజీరియన్ నైరా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "నికరగ్యుయన్ కొర్‌డుబులు",
+                    "one": "నికరగ్యుయన్ కొర్‌డుబు"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "నార్వేజీయన్ క్రోనర్",
+                    "one": "నార్వేజీయన్ క్రోన్"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "నేపాలీయుల రూపాయలు",
+                    "one": "నేపాలీయుల రూపాయి"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$"
+                },
+                "displayName": {
+                    "other": "న్యూజిలాండ్ డాలర్‌లు",
+                    "one": "న్యూజిలాండ్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఒమాని రీయల్‌లు",
+                    "one": "ఒమాని రీయల్"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "పనామనియన్ బల్బోవాలు",
+                    "one": "పనామనియన్ బల్బోవ"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "పెరువియన్ సోల్‌లు",
+                    "one": "పెరువియన్ సోల్"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "పప్యూ న్యూ గ్యినియన్ కినా"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఫిలిప్పిన్ పెసోలు",
+                    "one": "ఫిలిప్పిన్ పెసో"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "పాకిస్థాన్ రూపాయలు",
+                    "one": "పాకిస్థాన్ రూపాయి"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "పోలిష్ జ్లోటీలు",
+                    "one": "పోలిష్ జ్లోటీ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "పరగ్వాయన్ గ్వారనీలు",
+                    "one": "పరగ్వాయన్ గ్వారని"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "క్వాటరి రీయల్‌లు",
+                    "one": "క్వాటరి రీయల్"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "రోమానియాన్ లీ",
+                    "one": "రోమానియాన్ లెయు"
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సెర్బియన్ దీనార్‌లు",
+                    "one": "సెర్బియన్ దీనార్"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "రష్యన్ రూబల్‌లు",
+                    "one": "రష్యన్ రూబల్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ర్వానడాన్ ఫ్రాంక్‌లు",
+                    "one": "ర్వానడాన్ ఫ్రాంక్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సౌది రియల్‌లు",
+                    "one": "సౌది రియల్"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సోలోమన్ దీవుల డాలర్‌లు",
+                    "one": "సోలోమన్ దీవుల డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సెయిచెల్లోయిస్ రూపాయలు",
+                    "one": "సెయిచెల్లోయిస్ రూపాయి"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సుడానీస్ పౌండ్‌లు",
+                    "one": "సుడానీస్ పౌండ్"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "స్వీడిష్ క్రోనర్",
+                    "one": "స్వీడిష్ క్రోనా"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సింగపూర్ డాలర్‌లు",
+                    "one": "సింగపూర్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$"
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సెయింట్ హెలెనా పౌండ్‌లు",
+                    "one": "సెయింట్ హెలెనా పౌండ్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సీయిరు లియోనియన్ లీయోన్‌లు",
+                    "one": "సీయిరు లియోనియన్ లీయోన్"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సీయిరు లియోనియన్ లీయోన్‌లు (1964—2022)",
+                    "one": "సీయిరు లియోనియన్ లీయోన్ (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సొమాలి షిల్లింగ్‌లు",
+                    "one": "సొమాలి షిల్లింగ్"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సురినామీయుల డాలర్‌లు",
+                    "one": "సురినామీయుల డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "దక్షిణ సుడానీస్ పౌండ్‌లు",
+                    "one": "దక్షిణ సుడానీస్ పౌండ్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సావో టోమ్ మరియు ప్రిన్సిపి డోబ్రాలు (1977–2017)",
+                    "one": "సావో టోమ్ మరియు ప్రిన్సిపి డోబ్రా (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సావో టోమ్ మరియు ప్రిన్సిపి డోబ్రాలు",
+                    "one": "సావో టోమ్ మరియు ప్రిన్సిపి డోబ్రా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సిరీయన్ పౌండ్‌లు",
+                    "one": "సిరీయన్ పౌండ్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "స్వాజి ఎమలాన్గేని",
+                    "one": "స్వాజి లిలాన్గేని"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "฿"
+                },
+                "displayName": {
+                    "other": "థాయ్ బాట్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "తజికిస్థాన్ సమోనీలు",
+                    "one": "తజికిస్థాన్ సమోని"
+                }
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "తుర్క్‌మెనిస్థాని మనాట్"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "తునీషియన్ దీనార్‌లు",
+                    "one": "తునీషియన్ దీనార్"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "టోంగాన్ పాంʻగా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$"
+                }
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "టర్కిస్ లీరా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ట్రినిడాడ్ మరియు టొబాగో డాలర్‌లు",
+                    "one": "ట్రినిడాడ్ మరియు టొబాగో డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$"
+                },
+                "displayName": {
+                    "other": "కొత్త తైవాన్ డాలర్‌లు",
+                    "one": "క్రొత్త తైవాన్ డాలర్"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$"
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "టాంజానియన్ షిల్లింగ్‌లు",
+                    "one": "టాంజానియన్ షిల్లింగ్"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఉక్రయినియన్ హ్రివ్‌నియాలు",
+                    "one": "ఉక్రయినియన్ హ్రివ్‌నియా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఉగాండన్ షిల్లింగ్‌లు",
+                    "one": "ఉగాండన్ షిల్లింగ్"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "$"
+                },
+                "displayName": {
+                    "other": "అమెరికా డాలర్‌లు",
+                    "one": "అమెరికా డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఉరుగ్వెయన్ పెసోలు",
+                    "one": "ఉరుగ్వెయన్ పెసో"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఉజ్‌బెకిస్తాన్ సౌమ్"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "వెనుజులా బోలివర్‌లు (2008–2018)",
+                    "one": "వెనుజులా బోలివర్ (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "వెనుజులా బోలివర్‌లు",
+                    "one": "వెనుజులా బోలివర్"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "వియత్నామీయుల డాంగ్"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "వవాటు వటూలు",
+                    "one": "వనాటు వటు"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సమోయన్ తాలా"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సెంట్రల్ ఆఫ్రికన్ సిఎఫ్‌ఎ ఫ్రాంక్‌లు",
+                    "one": "సెంట్రల్ ఆఫ్రికన్ సిఎఫ్‌ఎ ఫ్రాంక్"
+                },
+                "digits": 0
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$"
+                },
+                "displayName": {
+                    "other": "తూర్పు కరీబియన్ డాలర్‌లు",
+                    "one": "తూర్పు కరీబియన్ డాలర్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg."
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "పశ్చిమ ఆఫ్రికన్ సిఏఫ్ఏ ఫ్రాంక్‌లు",
+                    "one": "పశ్చిమ ఆఫ్రికన్ సిఏఫ్ఏ ఫ్రాంక్"
+                },
+                "digits": 0
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "సిఎఫ్‌పి ఫ్రాంక్‌లు",
+                    "one": "సిఎఫ్‌పి ఫ్రాంక్"
+                },
+                "digits": 0
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "¤"
+                },
+                "displayName": {
+                    "other": "తెలియని కరెన్సీ",
+                    "one": "తెలియని కరెన్సీ ప్రమాణం"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ఎమునీ రీయల్‌లు",
+                    "one": "ఎమునీ రీయల్"
+                },
+                "digits": 0
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "దక్షిణ ఆఫ్రికా ర్యాండ్"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R",
+                    "shortUseNoSymbol": 1
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "జాంబియన్ క్వాచా (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW",
+                    "shortUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "జాంబియన్ క్వాచాలు",
+                    "one": "జాంబియన్ క్వాచా"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK",
+                    "shortUseNoSymbol": 1
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:tag="layout/xt_fragment_zip_choose_0" n0:padding="10.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="20.0dp" n0:textColor="@color/kot" n0:id="@id/title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t_a" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/zip_recycler_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" />
+</LinearLayout>

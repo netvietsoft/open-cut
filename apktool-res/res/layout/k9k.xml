@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:background="@color/knt" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="25.0sp" n0:textStyle="bold" n0:textColor="@color/sg" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tvName" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:maxLines="2" n0:textFontWeight="700" />
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="28.0dp">
+        <com.vega.lvui.widget.MaterialDraweeView n0:layout_gravity="center" n0:id="@id/sdvCover" n0:layout_width="232.0dp" n0:layout_height="wrap_content" n1:actualImageScaleType="fitCenter" n1:i1="16.0dp" n1:failureImage="@drawable/p6p" n1:failureImageScaleType="centerCrop" n1:placeholderImage="@drawable/p6p" n1:placeholderImageScaleType="centerCrop"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n0:layout_gravity="center" n0:id="@id/flPlayer" n0:visibility="gone" n0:layout_width="232.0dp" n0:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/mm" n0:gravity="center" n0:id="@id/tvBenefitDesc" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="28.0dp" />
+    <FrameLayout n0:id="@id/flBtnLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp">
+        <com.vega.ui.StrongButton n0:textSize="16.0sp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/btnAiEffectUse" n0:background="@drawable/ktd" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="36.0dp" n0:text="@string/m3c" n0:maxLines="1" n0:textFontWeight="500" n2:k1i="medium"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="end|top" n0:id="@id/markView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="28.0dp" n3:kmm="button"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+</LinearLayout>

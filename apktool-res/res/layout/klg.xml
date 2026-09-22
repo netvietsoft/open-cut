@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/open_protocol" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:paddingHorizontal="16.0dp" n1:kr3="list"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qs4" n1:k1i="medium" />
+        <ImageView n0:layout_gravity="end|center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/qpv" />
+    </com.vega.ui.state.pressed.PressedStateFrameLayout>
+</FrameLayout>

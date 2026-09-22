@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@color/mbridge_color_cc000000" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="right" n0:id="@id/mbridge_vec_iv_close" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_margin="10.0dp" n0:src="@drawable/mbridge_reward_close_ec" />
+    <RelativeLayout n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <ImageView n0:id="@id/mbridge_vec_iv_icon" n0:layout_width="65.0dp" n0:layout_height="65.0dp" n0:layout_centerHorizontal="true" />
+        <TextView n0:textSize="18.0sp" n0:textColor="@color/mbridge_white" n0:ellipsize="end" n0:id="@id/mbridge_vec_tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="54.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="54.0dp" n0:singleLine="true" n0:layout_below="@id/mbridge_vec_iv_icon" n0:layout_centerHorizontal="true" />
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/mbridge_color_999999" n0:ellipsize="end" n0:id="@id/mbridge_vec_tv_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="54.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginRight="54.0dp" n0:singleLine="true" n0:layout_below="@id/mbridge_vec_tv_title" n0:layout_centerHorizontal="true" />
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/mbridge_white" n0:gravity="center" n0:id="@id/mbridge_vec_btn" n0:background="@drawable/mbridge_reward_shape_videoend_buttonbg" n0:layout_width="200.0dp" n0:layout_height="36.0dp" n0:layout_margin="28.0dp" n0:layout_below="@id/mbridge_vec_tv_desc" n0:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

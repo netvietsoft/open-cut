@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/split_screen_root" n0:background="@color/s3" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layoutDirection="locale"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/split_title_bar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toTopOf="@id/split_preview" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:id="@id/split_back" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/nk9" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaTextButton n0:id="@id/split_export" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginEnd="15.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/uh" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <SurfaceView n0:id="@id/split_preview" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toTopOf="@id/progress_bar" n2:layout_constraintTop_toBottomOf="@id/split_title_bar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/split_loading_view" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="@id/split_preview" n3:layout_constraintEnd_toEndOf="@id/split_preview" n3:layout_constraintStart_toStartOf="@id/split_preview" n3:layout_constraintTop_toTopOf="@id/split_preview"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.splitscreen.view.SplitScreenGestureLayout n0:id="@id/gesture_layout" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="@id/split_preview" n4:layout_constraintEnd_toEndOf="@id/split_preview" n4:layout_constraintStart_toStartOf="@id/split_preview" n4:layout_constraintTop_toTopOf="@id/split_preview"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/_4" n0:layout_gravity="center_horizontal" n0:id="@id/tvRotate" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="44.0dp" />
+    </com.vega.splitscreen.view.SplitScreenGestureLayout>
+    <com.vega.splitscreen.view.SplitScreenProgressBar n0:id="@id/progress_bar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:layoutDirection="ltr" n5:layout_constraintBottom_toTopOf="@id/msdBottomDocker" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/split_preview"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.dock.DockGroupView n0:id="@id/msdBottomDocker" n0:background="@color/APKTOOL_RENAMED_0x7f06001d" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:gravity="bottom" n0:id="@id/panelContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:animateLayoutChanges="true" n7:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

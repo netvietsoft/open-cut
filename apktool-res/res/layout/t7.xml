@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:id="@id/card_image_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:cardBackgroundColor="@android:color/transparent" n1:cardCornerRadius="12.0dp" n1:cardElevation="0.0dp" n1:layout_constraintDimensionRatio="160:213" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_cover" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:actualImageScaleType="centerCrop" />
+        <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="start|bottom" n0:orientation="horizontal" n0:paddingTop="2.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="8.0dp" n0:paddingStart="4.0dp" n0:paddingEnd="6.0dp">
+            <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_trend_icon" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n1:actualImageScaleType="centerInside" />
+            <TextView n0:textSize="11.0sp" n0:textColor="#ffffff" n0:id="@id/tv_trend_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="2.0dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#801c283d" n0:ellipsize="end" n0:id="@id/tv_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxLines="1" n0:fontFamily="sans-serif-medium" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/card_image_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

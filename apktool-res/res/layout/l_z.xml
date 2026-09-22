@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/statusContentContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginRight="24.0dp" n0:layout_marginHorizontal="24.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_bias="0.5"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/ivStatusIcon" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/ow5" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ml" n0:gravity="center" n0:id="@id/tvStatusTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/qnu" n1:k1i="medium" n1:k1j="sub_title" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mn" n0:gravity="center" n0:id="@id/tvStatusDesc" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n1:k1i="regular" n1:k1j="body_1" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ml" n0:gravity="center" n0:id="@id/tvRetry" n0:background="@drawable/k4g" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="24.0dp" n0:minWidth="107.0dp" n0:text="@string/k4j" n1:k1i="medium" n1:k1j="sub_title" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

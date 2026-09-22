@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ies.xelement.viewpager.CustomAppBarLayout n0:id="@id/app_bar_layout" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:elevation="0.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.CollapsingToolbarLayout n0:id="@id/collapsing_toolbar_layout" n0:fitsSystemWindows="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed" n1:ku8="200" n1:keb="false">
+        <androidx.appcompat.widget.Toolbar n0:id="@id/x_fold_toolbar" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="0.0dp" n0:contentInsetStart="0.0dp" n0:contentInsetEnd="0.0dp" n0:contentInsetLeft="0.0dp" n0:contentInsetRight="0.0dp" n1:contentInsetEnd="0.0dp" n1:ip="0.0dp" n1:iq="0.0dp" n1:contentInsetStart="0.0dp" n1:layout_collapseMode="pin" />
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+</com.bytedance.ies.xelement.viewpager.CustomAppBarLayout>

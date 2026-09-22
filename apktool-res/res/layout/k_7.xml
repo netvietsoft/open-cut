@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/more_setting_download_layout" n0:layout_width="wrap_content" n0:layout_height="52.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1218e3" n0:layout_centerVertical="true" n0:layout_marginEnd="40.0dp" n0:layout_alignParentStart="true" />
+        <ImageView n0:id="@id/iv_download_check_state" n0:layout_width="44.0dp" n0:layout_height="24.0dp" n0:src="@drawable/oh5" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/more_setting_comment_layout" n0:layout_width="wrap_content" n0:layout_height="52.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1218e0" n0:layout_centerVertical="true" n0:layout_marginEnd="40.0dp" n0:layout_alignParentStart="true" />
+        <ImageView n0:id="@id/iv_comment_check_state" n0:layout_width="44.0dp" n0:layout_height="24.0dp" n0:src="@drawable/oh5" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/more_setting_password_layout" n0:layout_width="wrap_content" n0:layout_height="52.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginEnd="40.0dp" n0:layout_alignParentStart="true">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1218ff" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#8015293c" n0:id="@id/tv_more_setting_password" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView n0:id="@id/iv_password_check_state" n0:layout_width="44.0dp" n0:layout_height="24.0dp" n0:src="@drawable/oh5" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

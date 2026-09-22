@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="match_parent" n0:elevation="0.0dp" n1:cardCornerRadius="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout n0:id="@id/spinner_layout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="28.0dp" />
+        <ImageView n0:id="@id/arrow_image" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f08239c" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</merge>

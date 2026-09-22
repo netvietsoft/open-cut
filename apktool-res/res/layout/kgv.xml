@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:id="@id/category_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="12.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.feedx.nativefeed.aieffect.ForceScrollRecyclerView n0:id="@id/feed_list_recycler_view" n0:layout_width="match_parent" n0:layout_height="178.0dp" n0:layout_marginTop="12.0dp" n2:layout_constraintTop_toBottomOf="@id/category_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

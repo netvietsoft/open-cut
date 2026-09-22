@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="254.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_arrow" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/nq8" n0:layout_marginStart="22.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/container" n0:background="@drawable/ky0" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/iv_arrow"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.cardview.widget.CardView n0:id="@id/video_surface_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n2:cardCornerRadius="8.0dp" n2:layout_constraintBottom_toTopOf="@id/tv_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent">
+            <TextureView n0:id="@id/video_surface_view" n0:visibility="gone" n0:layout_width="250.0dp" n0:layout_height="166.69998dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.cardview.widget.CardView>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ic_video_load_error" n0:background="@color/p" n0:visibility="gone" n0:layout_width="254.0dp" n0:layout_height="171.0dp" n2:layout_constraintBottom_toTopOf="@id/tv_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent">
+            <ImageView n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:src="@drawable/n02" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/video_loading" n0:background="@color/p" n0:layout_width="254.0dp" n0:layout_height="171.0dp" n0:layout_marginBottom="24.0dp" n2:layout_constraintBottom_toTopOf="@id/tv_content" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHorizontal_bias="0.0" n2:layout_constraintStart_toStartOf="parent">
+            <ProgressBar n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:indeterminateDrawable="@drawable/mk2" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/ml" n0:gravity="start" n0:id="@id/tv_content" n0:padding="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/oeq" n0:lineSpacingExtra="2.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:k1i="medium" n2:k1j="body_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

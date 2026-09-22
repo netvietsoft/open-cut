@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:gravity="center" n0:background="?n3" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/reward_ad_retention_container" n0:background="@drawable/msi" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="@dimen/r6" n0:paddingEnd="@dimen/r6" n0:layout_marginStart="@dimen/sn" n0:layout_marginEnd="@dimen/sn">
+        <com.bytedance.tux.input.TuxTextView n0:textColor="?nj" n0:gravity="center" n0:id="@id/reward_ad_retention_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/APKTOOL_RENAMED_0x7f070166" style="@style/t0" />
+        <com.bytedance.tux.input.TuxTextView n0:textColor="?n5" n0:gravity="center" n0:id="@id/reward_ad_retention_sub_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/r3" style="@style/t2" />
+        <com.bytedance.tux.input.TuxTextView n0:textColor="?n1" n0:gravity="center" n0:id="@id/reward_ad_retention_positive" n0:background="@drawable/msj" n0:layout_width="match_parent" n0:layout_height="@dimen/sk" n0:layout_marginTop="@dimen/r8" style="@style/t3" />
+        <com.bytedance.tux.input.TuxTextView n0:textColor="?n5" n0:gravity="center" n0:id="@id/reward_ad_retention_negative" n0:layout_width="match_parent" n0:layout_height="@dimen/sk" n0:layout_marginBottom="@dimen/so" style="@style/t4" />
+    </LinearLayout>
+    <com.bytedance.tux.icon.TuxIconView n0:id="@id/reward_ad_retention_close" n0:padding="@dimen/r0" n0:layout_width="@dimen/r_" n0:layout_height="@dimen/r_" n0:layout_alignTop="@id/reward_ad_retention_container" n0:contentDescription="@string/lvt" n0:layout_alignEnd="@id/reward_ad_retention_container" n1:k0b="?n4"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

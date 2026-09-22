@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xt.retouch.baseui.view.RoundLayout n0:id="@id/effectItem" n0:tag="layout/xt_item_effect_request_layout_v2_0" n0:layout_width="54.0dp" n0:layout_height="70.0dp" n0:layout_marginStart="2.0dp" n0:layout_marginEnd="2.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/filterImg" n0:background="@color/kui" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center" n0:id="@id/loading" n0:tag="binding_1" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n1:lottie_fileName="loading_white.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center" n0:id="@id/ic_retry" n0:tag="binding_2" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/rae" n0:scaleType="centerCrop" />
+</com.xt.retouch.baseui.view.RoundLayout>

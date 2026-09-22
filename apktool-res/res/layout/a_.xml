@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="104.0dp" n0:minHeight="100.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/v_triangle" n0:background="@drawable/px9" n0:layout_width="14.0dp" n0:layout_height="7.0dp" n0:layout_marginStart="60.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <RadioGroup n0:orientation="vertical" n0:id="@id/rg_adjust_type" n0:background="@drawable/kck" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="104.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/v_triangle"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <RadioButton n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/rb_adjust_type_normal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="17.0dp" n0:layout_marginBottom="17.0dp" n0:checked="false" n0:drawableStart="@drawable/l1g" n0:paddingStart="8.0dp" n0:paddingEnd="17.0dp" n0:layout_marginStart="10.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f1304ac" />
+        <View n0:id="@id/v_split_line" n0:background="@color/APKTOOL_RENAMED_0x7f06063c" n0:layout_width="match_parent" n0:layout_height="0.5dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/rb_adjust_type_normal" />
+        <RadioButton n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/rb_adjust_type_all" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="17.0dp" n0:layout_marginBottom="17.0dp" n0:checked="false" n0:text="@string/n-7" n0:drawableStart="@drawable/l1g" n0:paddingStart="8.0dp" n0:paddingEnd="17.0dp" n0:layout_marginStart="10.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f1304ac" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

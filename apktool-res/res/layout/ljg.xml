@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.edit.matting.singlefunc.view.SFBgNestedScrollParent n0:orientation="vertical" n0:id="@id/cl_matting_stroke" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/layout_canvas_color" n0:paddingTop="20.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <View n0:id="@id/divider" n0:background="@color/_j" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="20.0dp" />
+    <FrameLayout n0:id="@id/layout_vertical_canvas_image" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</com.vega.edit.matting.singlefunc.view.SFBgNestedScrollParent>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/tv_tip_detail" n0:layout_width="218.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:lineSpacingExtra="3.0dp" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tv_confirm" n0:background="@drawable/kgw" n0:layout_width="218.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/rvb" n0:layout_below="@id/tv_tip_detail" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_tip_detail" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textColor="@color/_-" n0:gravity="center" n0:id="@id/tv_cancel" n0:layout_width="218.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="15.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120577" n0:layout_alignParentTop="true" n0:layout_alignParentEnd="true" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/tv_confirm"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

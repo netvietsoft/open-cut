@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:orientation="horizontal" n0:id="@id/container" n0:background="@drawable/ltx" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginHorizontal="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="12.0dp" n0:textColor="@color/bc" n0:id="@id/subtitle_timeline" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="00:00" n0:layout_marginStart="8.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#ff090c14" n0:id="@id/invalid_tag" n0:background="@drawable/lo7" n0:paddingLeft="4.0dp" n0:paddingTop="2.0dp" n0:paddingRight="4.0dp" n0:paddingBottom="2.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:layout_marginStart="12.0dp" n0:layout_toEndOf="@id/subtitle_timeline" n0:paddingHorizontal="4.0dp" n0:paddingVertical="2.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/subtitle_single_list" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:overScrollMode="never" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="8.0dp" n0:layout_toEndOf="@id/invalid_tag" n0:nestedScrollingEnabled="true" n0:paddingVertical="12.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+{
+    "name": "ms-ID",
+    "currency": {
+        "pattern": "#.##0,###",
+        "StandardNoCurrency": "#.##0,00",
+        "compact": {
+            "short": "¤{0}",
+            "shortNoSymbol": "¤ {0}"
+        },
+		"range": {
+			"between": {
+				"short": "¤{0}–{1}"
+			},
+			"approximately": {
+				"short": "~¤{0}"
+			},
+			"atLeast": {
+				"short": "¤{0}+"
+			},
+			"atMost": {
+				"short": "≤¤{0}"
+			}
+		},
+        "currencyList": {
+            "IDR": {
+                "symbol-alt-narrow": {
+                    "value": "Rp"
+				}
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_item_business_cover_template_list_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/xt_rv_cover_templates" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/xt_ll_empty_view" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/re3" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center_horizontal" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n0:src="@drawable/re3" />
+        <TextView n0:textSize="12.0sp" n0:textColor="#99ffffff" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/sxz" />
+    </LinearLayout>
+    <FrameLayout n0:id="@id/fail_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.AutoLottieAnimationView n0:layout_gravity="center" n0:id="@id/loading" n0:visibility="gone" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n3:lottie_fileName="xt_lv_loading_white.json" n3:lottie_loop="true" />
+        <TextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/tv_load_failed" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="56.0dp" n0:text="@string/srh" />
+        <LinearLayout n0:layout_gravity="center" n0:orientation="horizontal" n0:id="@id/ll_retry_root" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <ImageView n0:id="@id/iv_retry" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08360c" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" />
+            <TextView n0:textSize="12.0dp" n0:textColor="@color/kqx" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/srg" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

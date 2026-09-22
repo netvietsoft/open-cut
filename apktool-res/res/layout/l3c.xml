@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:id="@id/shareProdRoot" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/copyLinkBtn" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/ohh" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1218e8" n0:singleLine="false" n0:paddingEnd="3.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/teamShareBtn" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/pqa" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center" n0:paddingLeft="3.0dp" n0:paddingRight="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/m_u" n0:paddingHorizontal="3.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/xyzShareBtn" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/ppk" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center" n0:paddingLeft="3.0dp" n0:paddingRight="3.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/q12" n0:paddingHorizontal="3.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/xyzTimeLineBtn" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+        <ImageView n0:layout_gravity="center" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/o9i" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/q14" n0:paddingStart="3.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_cover_edit_drafts" n0:paddingBottom="24.0dp" n0:scrollbars="none" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="8.0dp" n0:overScrollMode="never" />
+    <LinearLayout n0:gravity="center" n0:layout_gravity="center" n0:orientation="vertical" n0:id="@id/cover_edit_draft_empty" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <ImageView n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:src="@drawable/ncs" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ml" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/lda" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mn" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="40.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="40.0dp" n0:text="@string/ldz" n0:layout_marginHorizontal="40.0dp" />
+    </LinearLayout>
+</FrameLayout>

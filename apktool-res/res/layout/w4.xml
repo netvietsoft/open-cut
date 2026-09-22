@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/ailab_home_page_root" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/ailab_home_page_top_bar" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:paddingHorizontal="16.0dp">
+        <FrameLayout n0:layout_gravity="start" n0:id="@id/ailab_home_page_top_bar_left_container" n0:layout_width="44.0dp" n0:layout_height="44.0dp">
+            <ImageView n0:layout_gravity="center" n0:duplicateParentState="true" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/n4i" />
+        </FrameLayout>
+        <LinearLayout n0:gravity="center_vertical" n0:layout_gravity="end" n0:orientation="horizontal" n0:id="@id/ailab_home_page_top_bar_container" n0:layout_width="wrap_content" n0:layout_height="match_parent" />
+    </FrameLayout>
+    <ScrollView n0:id="@id/ailab_home_page_scroll_view" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:fillViewport="true" n0:layout_weight="1.0" n0:overScrollMode="never">
+        <LinearLayout n0:orientation="vertical" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp">
+            <com.vega.feedx.unifyagent.view.AiLabBrainstormModelSelectorView n0:id="@id/ailab_home_page_brainstorm_model_selector" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="40.0dp" />
+            <TextView n0:textSize="28.0dp" n0:typeface="serif" n0:textStyle="bold" n0:textColor="#090c14" n0:id="@id/ailab_home_page_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="40.0dp" n0:layout_marginBottom="30.0dp" n0:text="What can I create for you today?" n0:fontFamily="CapCut Sans Text" />
+            <ViewStub n0:id="@id/ailab_home_page_template_list_stub" n0:layout="@layout/w8" n0:inflatedId="@id/ailab_home_page_template_list" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" />
+            <LinearLayout n0:orientation="vertical" n0:id="@id/ailab_home_page_chip_list" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout n0:id="@id/input_box_container" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+</LinearLayout>

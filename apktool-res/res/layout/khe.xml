@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView n0:id="@id/scroller_input" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/cl_generate" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/tv_prompt_category" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/h0" n1:k1i="medium" />
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_prompt_category" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:nestedScrollingEnabled="false" />
+            <LinearLayout n0:orientation="vertical" n0:id="@id/ll_prompt_form" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="@dimen/l5">
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_prompt_form" n0:focusable="true" n0:focusableInTouchMode="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:nestedScrollingEnabled="false" />
+                <View n0:id="@id/space" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" n1:layout_constraintTop_toBottomOf="@id/rv_prompt_form" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View n0:id="@id/scroller_animate_mask" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="@id/scroller_input" n2:layout_constraintTop_toTopOf="@id/scroller_input"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="#1c1d21" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toBottomOf="@id/scroller_input"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:enabled="false" n0:id="@id/cl_generate" n0:background="@drawable/km3" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginVertical="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintTop_toBottomOf="@id/scroller_input"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:enabled="true" n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/tt" n0:gravity="center" n0:layout_gravity="center_vertical" n0:id="@id/tv_generate" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/hb" n0:maxLines="1" n0:drawablePadding="12.0dp" n0:layout_centerInParent="true" n0:drawableStart="@drawable/mg6" n0:layout_alignParentStart="true" n0:paddingHorizontal="12.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

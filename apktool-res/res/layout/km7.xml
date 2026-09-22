@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/ai_painting_v3_preview_item_image" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:actualImageScaleType="fitCenter" n1:placeholderImage="@drawable/APKTOOL_RENAMED_0x7f08045f"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/ai_painting_v3_preview_item_loading" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:lottie_autoPlay="true" n2:lottie_fileName="history_item_loading.json" n2:lottie_loop="true"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

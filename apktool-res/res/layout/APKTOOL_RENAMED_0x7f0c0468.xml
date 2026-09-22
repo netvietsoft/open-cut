@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/anchor_info_container" n0:layout_width="match_parent" n0:layout_height="53.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/userAvatar_left" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n1:layout_constraintBottom_toBottomOf="@id/feedUserName" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/feedUserName" n1:kr3="button" n1:roundAsCircle="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/_4" n0:ellipsize="end" n0:id="@id/feedUserName" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="180.0dp" n0:singleLine="true" n0:includeFontPadding="false" n0:shadowColor="@color/_l" n0:shadowDx="0.0" n0:shadowDy="1.0" n0:shadowRadius="2.0" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/userAvatar_left" n2:layout_constraintTop_toTopOf="parent" n2:kr3="button" n2:k1i="bold"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/authorRightInfoContainer" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" n3:layout_constraintBottom_toBottomOf="@id/feedUserName" n3:layout_constraintStart_toEndOf="@id/feedUserName" n3:layout_constraintTop_toTopOf="@id/feedUserName"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/creatorCertIcon" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n3:roundAsCircle="true" />
+        <View n0:id="@id/authorRightInfoDivider" n0:background="@color/_v" n0:visibility="gone" n0:layout_width="1.0dp" n0:layout_height="10.0dp" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp" />
+        <ViewStub n0:id="@id/labelAfterAuthorName" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.vega.feedx.main.widget.LottieAnimFollowButton n0:id="@id/followAuthor" n0:layout_width="wrap_content" n0:layout_height="53.0dp" n0:layout_marginStart="8.0dp" n4:layout_constraintBottom_toBottomOf="@id/feedUserName" n4:layout_constraintStart_toEndOf="@id/authorRightInfoContainer" n4:layout_constraintTop_toTopOf="@id/feedUserName" n4:layout_goneMarginStart="8.0dp" n4:lottie_autoPlay="false" n4:lottie_loop="false"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

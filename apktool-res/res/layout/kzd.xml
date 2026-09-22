@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="42.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082be4" n0:scaleType="centerCrop" n0:layout_marginStart="16.0dp" n1:kd8="@color/l9"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:ellipsize="end" n0:gravity="start" n0:id="@id/word" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n0:includeFontPadding="false" n0:layout_weight="1.0" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="50.0dp" />
+    <ImageView n0:id="@id/go" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/l25" n0:scaleType="centerCrop" n0:layout_marginEnd="16.0dp" n2:kd8="@color/l_"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

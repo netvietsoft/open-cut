@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:paddingLeft="40.0dp" n0:paddingRight="40.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingHorizontal="40.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/safe_mode_repairing" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="200.0dp" n0:layout_centerHorizontal="true">
+        <ProgressBar n0:id="@id/safe_mode_repair_progress" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n0:indeterminateDrawable="@drawable/APKTOOL_RENAMED_0x7f082bba" />
+        <com.vega.theme.text.VegaTextView n0:textSize="20.0dp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604c3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/o-k" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604c4" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/o9h" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/safe_mode_repair_done" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="180.0dp" n0:layout_centerHorizontal="true">
+        <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f082bbb" />
+        <com.vega.theme.text.VegaTextView n0:textSize="20.0dp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f0604c3" n0:id="@id/safe_mode_repair_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122506" n0:layout_centerHorizontal="true" />
+        <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textColor="#ffffff" n0:id="@id/safe_mode_restart" n0:background="@drawable/APKTOOL_RENAMED_0x7f082bbc" n0:layout_width="192.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/o9f" n0:textAllCaps="false" n0:elevation="0.0dp" n0:stateListAnimator="@null" n1:elevation="0.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/preview_page_item_image" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitCenter" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:layout_gravity="end|top" n0:id="@id/low_definition_review" n0:background="@drawable/lrr" n0:paddingTop="2.0dp" n0:paddingBottom="2.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/lwt" n0:paddingStart="3.0dp" n0:paddingEnd="3.0dp" n0:layout_marginEnd="12.0dp" />
+    <include layout="@layout/lms" />
+</FrameLayout>

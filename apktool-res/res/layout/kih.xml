@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/activity_layout" n0:background="@color/APKTOOL_RENAMED_0x7f0604d9" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/fl_gallery_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/grid_root" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <include n0:id="@id/gallery_header_view" n0:layout_width="0.0dp" n0:layout_height="50.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" layout="@layout/k88"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <androidx.viewpager2.widget.ViewPager2 n0:id="@id/gallery_list_pager2" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/gallery_header_view"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/ivLoading" n0:visibility="gone" n0:layout_width="35.0dp" n0:layout_height="28.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:lottie_autoPlay="true" n3:lottie_fileName="lv_loading.json" n3:lottie_loop="true"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <FrameLayout n0:id="@id/gallery_folder_list_container" n0:background="@color/_y" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/gallery_header_view"
+              xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_crop_layout" n0:background="@color/rj" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottomRL" n0:layout_width="0.0dp" n0:layout_height="50.0dp" n0:layout_alignParentBottom="true" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:id="@id/close" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m6s" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+            <com.vega.theme.VegaButton n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/r0" n0:id="@id/confirm" n0:background="@color/rj" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:text="@string/lz6" n0:inputType="textCapWords" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.vega.feedx.information.widge.AvatarCropView n0:id="@id/avatarCropIv" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginBottom="50.0dp" n0:scaleType="center" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

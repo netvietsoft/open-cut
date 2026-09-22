@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/asr_panel_layout" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805b5" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/asr_panel_bg" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.vega.aivideoagent.model.input.WaveformView n0:id="@id/asr_wave_view" n0:layout_width="match_parent" n0:layout_height="18.0dp" n0:layout_marginLeft="56.0dp" n0:layout_marginRight="56.0dp" n0:layout_marginBottom="52.0dp" n0:layout_marginHorizontal="56.0dp" n1:layout_constraintBottom_toTopOf="@id/cancel_layout" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_goneMarginBottom="74.0dp" />
+        <FrameLayout n0:id="@id/cancel_layout" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805b2" n0:focusable="true" n0:clickable="true" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="46.0dp" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="6.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/send_layout" n1:layout_constraintHorizontal_chainStyle="spread_inside" n1:layout_constraintStart_toStartOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ml" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n2m" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/m4b" n1:k1i="medium" n1:k1j="sub_title" />
+        </FrameLayout>
+        <FrameLayout n0:id="@id/send_layout" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805b2" n0:focusable="true" n0:clickable="true" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="46.0dp" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/cancel_layout">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ml" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n2p" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/m4c" n1:k1i="medium" n1:k1j="sub_title" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

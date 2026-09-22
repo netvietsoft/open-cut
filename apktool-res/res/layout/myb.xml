@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/xt_manual_select_erase_bottom_panel" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/xt_manual_select_erase_btn_container" n0:background="#000000" n0:layout_width="match_parent" n0:layout_height="89.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="58.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent">
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/xt_manual_select_erase_return" n0:layout_width="@dimen/in" n0:layout_height="@dimen/in" n0:src="@drawable/rew" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/xt_rv_manual_select_erase_btn" n0:layout_width="0.0dp" n0:layout_height="58.0dp" n0:layout_marginStart="20.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/xt_manual_select_erase_return" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/xt_manual_select_erase_pen_size_slider_container" n0:background="#99000000" n0:layout_width="match_parent" n0:layout_height="@dimen/jp" n2:layout_constraintBottom_toTopOf="@id/xt_manual_select_erase_btn_container" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0sp" n0:textColor="@color/ks4" n0:gravity="center" n0:id="@id/xt_manual_select_erase_pen_size" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/s7-" n0:layout_marginStart="21.0dp" n0:layout_marginEnd="21.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/xt_manual_select_erase_pen_size_slider" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/xt_manual_select_erase_pen_size_slider" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="80.0dp" n0:layout_marginEnd="35.0dp" n2:APKTOOL_RENAMED_0x7f04043d="0" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kko="@color/ks4" n2:APKTOOL_RENAMED_0x7f0406dd="100" n2:kn4="1" n2:kte="" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

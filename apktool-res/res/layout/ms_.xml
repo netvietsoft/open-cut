@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_item_graffiti_function_0" n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:layout_gravity="center_vertical" n0:orientation="vertical" n0:id="@id/functionItem" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f0704a4" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f0704a4" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <com.xt.retouch.baseui.view.BaseImageView n0:gravity="center" n0:id="@id/iv_icon" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f0704ad" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704ad" n0:layout_marginTop="30.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+            <TextView n0:textSize="@dimen/APKTOOL_RENAMED_0x7f0704b0" n0:textColor="@color/ks4" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/tv_title" n0:layout_width="50.0dp" n0:layout_height="wrap_content" n0:inputType="textMultiLine" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+        <View n0:id="@id/ic_new" n0:background="@drawable/rbd" n0:layout_width="30.0dp" n0:layout_height="16.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="30.0dp" n1:layout_constraintStart_toStartOf="@id/functionItem" n1:layout_constraintTop_toTopOf="@id/functionItem" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

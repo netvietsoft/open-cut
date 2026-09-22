@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kdf" n0:paddingLeft="16.0dp" n0:paddingTop="32.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/upload_type_list" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/auto_layout" n0:background="@drawable/k_-" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="20.0dp" n0:paddingHorizontal="12.0dp" n2:layout_constraintTop_toBottomOf="@id/upload_type_list"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center_vertical" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/l6y" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nhn" n0:layout_marginStart="24.0dp" />
+        <ImageView n0:layout_gravity="right|center" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082ba3" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

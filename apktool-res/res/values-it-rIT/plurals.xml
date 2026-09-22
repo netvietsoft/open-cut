@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">Impossibile caricare %d elemento. AutoCut continua.</item>
+        <item quantity="other">Impossibile caricare %d elementi. AutoCut continua.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">Allegato: %d file</item>
+        <item quantity="other">Allegato: %d file</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">%1$d credito necessario.</item>
+        <item quantity="other">%1$d crediti necessari.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">Hai ancora %1$d credito.</item>
+        <item quantity="other">Hai ancora %1$d crediti.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">I tuoi crediti gratuiti verranno detratti. È necessario %d altro credito.</item>
+        <item quantity="other">I tuoi crediti gratuiti verranno detratti. Sono necessari altri %d crediti.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">%1$d credito necessario.</item>
+        <item quantity="other">%1$d crediti necessari.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">Hai ancora %1$d credito. Acquista crediti per continuare.</item>
+        <item quantity="other">Hai ancora %1$d crediti. Acquista crediti per continuare.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">%1$d credito necessario.</item>
+        <item quantity="other">%1$d crediti necessari.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">Hai ancora %1$d credito. Passa a una versione superiore per ottenere crediti.</item>
+        <item quantity="other">Hai ancora %1$d crediti. Passa a una versione superiore per ottenere crediti.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">Verrà consumato %d credito</item>
+        <item quantity="other">Verranno consumati %d crediti</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">I tuoi crediti gratuiti verranno detratti. È necessario %d altro credito.</item>
+        <item quantity="other">I tuoi crediti gratuiti verranno detratti. Sono necessari altri %d crediti.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">%d modello consigliato</item>
+        <item quantity="other">%d modelli consigliati</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">%d video generato</item>
+        <item quantity="other">%d video generati</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">"Puoi utilizzare i sottotitoli e i testi automatici gratuitamente per %d volta al mese, una volta effettuato l'accesso. Gli utilizzi gratuiti si rinnovano all'inizio di ogni mese. Ogni volta verrà detratto 1 utilizzo."</item>
+        <item quantity="other">"Puoi utilizzare i sottotitoli e i testi automatici gratuitamente per %d volte al mese, una volta effettuato l'accesso. Gli utilizzi gratuiti si rinnovano all'inizio di ogni mese. Ogni volta verrà detratto 1 utilizzo."</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%d utilizzo/mese</item>
+        <item quantity="other">%d utilizzi/mese</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">Elimina %d parola</item>
+        <item quantity="other">Elimina %d parole</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%d evidenziata</item>
+        <item quantity="other">%d evidenziate</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">%d intercalare trovato</item>
+        <item quantity="other">%d intercalari trovati</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">Seleziona fino a %d elemento</item>
+        <item quantity="other">Seleziona fino a %d elementi</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">Tempo di attesa stimato in coda: %d s</item>
+        <item quantity="other">Estimated wait time in queue: %ds</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">Circa %d ora rimanente</item>
+        <item quantity="other">Circa %d ore rimanenti</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">Circa %d min rimanente</item>
+        <item quantity="other">Circa %d min rimanenti</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">Circa %d s rimanente</item>
+        <item quantity="other">Circa %d s rimanenti</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">"Risultato dell'audio (%d)"</item>
+        <item quantity="other">"Risultati dell'audio (%d)"</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">Risultato del file (%d)</item>
+        <item quantity="other">Risultati del file (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">Risultato della generazione (%d)</item>
+        <item quantity="other">Risultati della generazione (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">Allegato: %d immagine</item>
+        <item quantity="other">Allegato: %d immagini</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">Allegato: %d video</item>
+        <item quantity="other">Allegato: %d video</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">"Risultato dell'immagine (%d)"</item>
+        <item quantity="other">"Risultati dell'immagine (%d)"</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">Risultato video (%d)</item>
+        <item quantity="other">Risultati video (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">Applicazione di %1$d effetto di testo IA... %2$d%%</item>
+        <item quantity="other">Applicazione di %1$d effetti di testo IA... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">Applica %d asset a tutte le clip</item>
+        <item quantity="other">Applica %d asset a tutte le clip</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">%d asset selezionato</item>
+        <item quantity="other">%d asset selezionati</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">%d giorno di Ultra</item>
+        <item quantity="other">%d giorni di Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d personaggio</item>
+        <item quantity="other">%d personaggi</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">Seleziona non più di %d personaggio</item>
+        <item quantity="other">Seleziona non più di %d personaggi</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">"%d clip non autorizzata all'uso commerciale"</item>
+        <item quantity="other">"%d clip non autorizzate all'uso commerciale"</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">"%d carattere non autorizzato all'uso commerciale"</item>
+        <item quantity="other">"%d caratteri non autorizzati all'uso commerciale"</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">"%d suono non autorizzato all'uso commerciale"</item>
+        <item quantity="other">"%d suoni non autorizzati all'uso commerciale"</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">"%d clip non autorizzata all'uso commerciale e non può essere sostituita"</item>
+        <item quantity="other">"%d clip non autorizzate all'uso commerciale e non possono essere sostituite"</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">"%d carattere non autorizzato all'uso commerciale e non può essere sostituito"</item>
+        <item quantity="other">"%d caratteri non autorizzati all'uso commerciale e non possono essere sostituiti"</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">"%d suono non autorizzato all'uso commerciale e non può essere sostituito"</item>
+        <item quantity="other">"%d suoni non autorizzati all'uso commerciale e non possono essere sostituiti"</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">"%d sticker non autorizzato all'uso commerciale e non può essere sostituito"</item>
+        <item quantity="other">"%d sticker non autorizzati all'uso commerciale e non possono essere sostituiti"</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">"%d sticker non autorizzato all'uso commerciale"</item>
+        <item quantity="other">"%d sticker non autorizzati all'uso commerciale"</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">Eliminare %d commento?</item>
+        <item quantity="other">Eliminare %d commenti?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">Hai selezionato %d account. Solo tu e la persona che hai limitato potrete vedere i loro commenti.</item>
+        <item quantity="other">Hai selezionato %d account. Solo tu e le persone che hai limitato potrete vedere i loro commenti.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">Limitare %d account?</item>
+        <item quantity="other">Limitare %d account?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">%d giorno</item>
+        <item quantity="other">%d giorni</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">Hai %s nuovo messaggio creator</item>
+        <item quantity="other">Hai %s nuovi messaggi creator</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">Scaduto da %d giorno</item>
+        <item quantity="other">Scaduto da %d giorni</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">Stai utilizzando una funzionalità Pro. Rimane %d utilizzo gratuito. Unisciti a Pro per un utilizzo illimitato.</item>
+        <item quantity="other">Stai utilizzando una funzionalità Pro. Rimangono %d utilizzi gratuiti. Unisciti a Pro per un utilizzo illimitato.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">Stai utilizzando una funzionalità Standard. Rimane %d utilizzo gratuito. Unisciti a Standard per un utilizzo illimitato.</item>
+        <item quantity="other">Stai utilizzando una funzionalità Standard. Rimangono %d utilizzi gratuiti. Unisciti a Standard per un utilizzo illimitato.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">Stai utilizzando una funzionalità Pro. Questo mese rimane %d utilizzo gratuito. Unisciti a Pro per un utilizzo illimitato.</item>
+        <item quantity="other">Stai utilizzando una funzionalità Pro. Questo mese rimangono %d utilizzi gratuiti. Unisciti a Pro per un utilizzo illimitato.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">Stai utilizzando una funzionalità Standard. Questo mese rimane %d utilizzo gratuito. Unisciti a Standard per un utilizzo illimitato.</item>
+        <item quantity="other">Stai utilizzando una funzionalità Standard. Questo mese rimangono %d utilizzi gratuiti. Unisciti a Standard per un utilizzo illimitato.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d giorno gratis</item>
+        <item quantity="other">%d giorni gratis</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">%1$s dopo %2$d settimana</item>
+        <item quantity="other">%1$s dopo %2$d settimane</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">Hai %d utilizzo gratuito per i modelli Pro al mese.</item>
+        <item quantity="other">Hai %d utilizzi gratuiti per i modelli Pro al mese.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">%d utilizzo gratuito</item>
+        <item quantity="other">%d utilizzi gratuiti</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">Prova %d giorno gratis</item>
+        <item quantity="other">Prova %d giorni gratis</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">%d problema di copyright della musica</item>
+        <item quantity="other">%d problemi di copyright della musica</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">%d testo selezionato</item>
+        <item quantity="other">%d testi selezionati</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">%d clip selezionata</item>
+        <item quantity="other">%d clip selezionate</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">"Approfitta di %1$d giorno di esportazione gratuita illimitata oppure esegui l'aggiornamento per un'esportazione completa e illimitata ad alta risoluzione."</item>
+        <item quantity="other">"Approfitta di %1$d giorni di esportazione gratuita illimitata oppure esegui l'aggiornamento per un'esportazione completa e illimitata ad alta risoluzione."</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">Esporta gratuitamente in 1080p %d volta</item>
+        <item quantity="other">Esporta gratuitamente in 1080p %d volte</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">"%d esportazione gratuita in 1080p rimasta. Effettua l'aggiornamento per usufruire di esportazioni illimitate ad alta risoluzione."</item>
+        <item quantity="other">"%d esportazioni gratuite in 1080p rimaste. Effettua l'aggiornamento per usufruire di esportazioni illimitate ad alta risoluzione."</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">"%d esportazione gratuita in 1080p rimasta questo mese. Effettua l'aggiornamento per usufruire di esportazioni illimitate ad alta risoluzione."</item>
+        <item quantity="other">"%d esportazioni gratuite in 1080p rimaste questo mese. Effettua l'aggiornamento per usufruire di esportazioni illimitate ad alta risoluzione."</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">%d credito necessario.</item>
+        <item quantity="other">%d crediti necessari.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">Hai ancora %d credito.</item>
+        <item quantity="other">Hai ancora %d crediti.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">%1$d generazione in corso. Passa a Pro per generare fino a %2$d contemporaneamente.</item>
+        <item quantity="other">%1$d generazioni in corso. Passa a Pro per generare fino a %2$d contemporaneamente.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">Esporta senza filigrana (%d utilizzo rimanente)</item>
+        <item quantity="other">Esporta senza filigrana (%d utilizzi rimanenti)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">%d uso libero rimasto. Nessun credito necessario.</item>
+        <item quantity="other">%d usi gratuiti rimasti. Nessun credito necessario.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">"L'elemento selezionato verrà eliminato e rimarrà nel Cestino per %d giorni."</item>
+        <item quantity="other">Gli elementi selezionati verranno eliminati e rimarranno nel Cestino per%d giorni.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">Uno degli elementi selezionati è stato caricato nello spazio. Eliminare comunque?</item>
+        <item quantity="other">Alcuni elementi selezionati sono stati caricati nello spazio. Eliminare comunque?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">"L'elemento selezionato verrà eliminato e spostato nel Cestino."</item>
+        <item quantity="other">Gli elementi selezionati verranno eliminati e spostati nel Cestino.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">%d utilizzo</item>
+        <item quantity="other">%d utilizzi</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">"L'età calcolata in base alla data di nascita inserita è di %d anno e sembra non essere corretta. Inserisci la tua vera data di nascita."</item>
+        <item quantity="other">"L'età calcolata in base alla data di nascita inserita è di %d anni e sembra non essere corretta. Inserisci la tua vera data di nascita."</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">Include 1 utilizzo gratuito derivante da acquisti precedenti e %d utilizzo extra gratuito per Pro</item>
+        <item quantity="other">Include 1 utilizzo gratuito derivante da acquisti precedenti e %d utilizzi extra gratuiti per Pro</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">Pro ottiene %d utilizzo gratuito</item>
+        <item quantity="other">Pro ottiene %d utilizzi gratuiti</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">Gli avatar che hai creato con i video sono ora validi in modo permanente. Iscriviti a Pro e ottieni %d personalizzazione gratuita.</item>
+        <item quantity="other">Gli avatar che hai creato con i video sono ora validi in modo permanente. Iscriviti a Pro e ottieni %d personalizzazioni gratuite.</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">"L'applicazione di questo effetto comporterà l'utilizzo di %d credito."</item>
+        <item quantity="other">"L'applicazione di questo effetto comporterà l'utilizzo di %d crediti."</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">Ora hai %d credito a disposizione.</item>
+        <item quantity="other">Ora hai %d crediti a disposizione.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">%d evidenziata</item>
+        <item quantity="other">%d evidenziate</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">Applicazione effetto IA in corso… %s ora rimanente</item>
+        <item quantity="other">Applicazione effetto IA in corso… %s ore rimanenti</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">Applicazione effetto IA in corso… %s minuto rimanente</item>
+        <item quantity="other">Applicazione effetto IA in corso… %s minuti rimanenti</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">"L'effetto Pro, %1$s, è stato applicato all'elemento attuale. Applicarlo nuovamente al nuovo elemento consumerà %2$d credito."</item>
+        <item quantity="other">"L'effetto Pro, %1$s, è stato applicato all'elemento attuale. Applicarlo nuovamente al nuovo elemento consumerà %2$d crediti."</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">Verrà detratto %1$d utilizzo gratuito. Ora hai %2$d utilizzo gratuito.</item>
+        <item quantity="other">Verrà detratto %1$d utilizzo gratuito. Ora hai %2$d utilizzi gratuiti.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">Verrà detratto %1$d utilizzo Pro. Ora hai %2$d utilizzo Pro.</item>
+        <item quantity="other">Verrà detratto %1$d utilizzo Pro. Ora hai %2$d utilizzi Pro.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">Questo modello supporta solo %d immagine di riferimento</item>
+        <item quantity="other">Questo modello supporta solo %d immagini di riferimento</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">Aggiungi almeno %d immagine di riferimento per utilizzare questo modello</item>
+        <item quantity="other">Aggiungi almeno %d immagini di riferimento per utilizzare questo modello</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">Questo modello supporta solo %d video di riferimento</item>
+        <item quantity="other">Questo modello supporta solo %d video di riferimento</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">Aggiungi almeno %d video di riferimento per utilizzare questo modello</item>
+        <item quantity="other">Aggiungi almeno %d video di riferimento per utilizzare questo modello</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">Seleziona %d foto</item>
+        <item quantity="other">Seleziona %d foto</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">%d materiale aggiunto</item>
+        <item quantity="other">%d materiali aggiunti</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">%d creazione rimasta</item>
+        <item quantity="other">%d creazioni rimaste</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">%d sblocco rimasto</item>
+        <item quantity="other">%d sblocchi rimasti</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">%d parola chiave evidenziata. Puoi anche selezionare manualmente.</item>
+        <item quantity="other">%d parole chiave evidenziate. Puoi anche selezionare manualmente.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">Elimina %d clip</item>
+        <item quantity="other">Elimina %d clip</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">%d intercalare identificato. Puoi anche selezionare manualmente.</item>
+        <item quantity="other">%d intercalari identificati. Puoi anche selezionare manualmente.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">%d parola chiave evidenziata</item>
+        <item quantity="other">%d parole chiave evidenziate</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">Esportazione di %d foto…</item>
+        <item quantity="other">Esportazione di %d foto…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">Scegli fino a %d posa</item>
+        <item quantity="other">Scegli fino a %d pose</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">Il tuo file multimediale è in fase di caricamento</item>
+        <item quantity="other">I tuoi file multimediali sono in fase di caricamento</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">%d membro</item>
+        <item quantity="other">%d membri</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">"Carica %d progetto nello spazio per liberare spazio di archiviazione del tuo dispositivo. Puoi modificare questi progetti sull'app mobile, sull'app desktop o sull'editor online."</item>
+        <item quantity="other">"Carica %d progetti nello spazio per liberare spazio di archiviazione del tuo dispositivo. Puoi modificare questi progetti sull'app mobile, sull'app desktop o sull'editor online."</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">Carica %d file multimediale nei tuoi progetti nello spazio. Potrai utilizzare questo file su qualsiasi dispositivo senza doverlo caricare nuovamente.</item>
+        <item quantity="other">Carica %d file multimediali nei tuoi progetti nello spazio. Potrai utilizzare questi file su qualsiasi dispositivo senza doverli caricare nuovamente.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">Hai un progetto da recuperare</item>
+        <item quantity="other">Hai dei progetti da recuperare</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">Progetto recuperato</item>
+        <item quantity="other">Progetti recuperati</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">Impossibile applicare %d funzionalità</item>
+        <item quantity="other">Impossibile applicare %d funzionalità</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">Applicazione di %d funzionalità in corso</item>
+        <item quantity="other">Applicazione di %d funzionalità in corso</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">"Applicare l'effetto Pro?"</item>
+        <item quantity="other">Applicare gli effetti Pro?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">"È stato applicato %1$d effetto Pro all'elemento attuale. Applicarlo nuovamente al nuovo elemento consumerà %2$d crediti."</item>
+        <item quantity="other">"Sono stati applicati %1$d effetti Pro all'elemento attuale. Applicarli nuovamente al nuovo elemento consumerà %2$d crediti."</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">"È stato applicato %1$d effetto Pro all'elemento attuale. Verrà detratto %2$d utilizzo gratuito per applicarlo nuovamente al nuovo elemento. Non verrà consumato alcun credito."</item>
+        <item quantity="other">"Sono stati applicati %1$d effetti Pro all'elemento attuale. Verranno detratti %2$d utilizzi gratuiti per applicarli nuovamente al nuovo elemento. Non verrà consumato alcun credito."</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">"È stato applicato %1$d effetto Pro all'elemento attuale. Hai bisogno di %2$d crediti per applicarlo nuovamente al nuovo elemento."</item>
+        <item quantity="other">"Sono stati applicati %1$d effetti Pro all'elemento attuale. Hai bisogno di %2$d crediti per applicarli nuovamente al nuovo elemento."</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">"Sono stati applicati %1$d effetti Pro all'elemento attuale. Applicarli nuovamente al nuovo elemento consumerà %2$d utilizzo gratuito e %3$d crediti."</item>
+        <item quantity="other">"Sono stati applicati %1$d effetti Pro all'elemento attuale. Applicarli nuovamente al nuovo elemento consumerà %2$d utilizzi gratuiti e %3$d crediti."</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">Manca %d clip. Ripristinala sul tuo telefono o sostituiscila.</item>
+        <item quantity="other">Mancano %d clip. Ripristinale sul tuo telefono o sostituiscile.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">Inserisci non più di %d carattere</item>
+        <item quantity="other">Inserisci non più di %d caratteri</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">%d giorno</item>
+        <item quantity="other">%d giorni</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">"Eliminare l'elemento?"</item>
+        <item quantity="other">Eliminare gli elementi?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">Gli elementi spostati nel Cestino appariranno qui e verranno eliminati dopo %d giorno.</item>
+        <item quantity="other">Gli elementi spostati nel Cestino appariranno qui e verranno eliminati dopo %d giorni.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">Download di %d elemento in corso...</item>
+        <item quantity="other">Download di %d elementi in corso...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">Caricamento di %d elemento in corso...</item>
+        <item quantity="other">Caricamento di %d elementi in corso...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">Questo elemento verrà eliminato in modo permanente e non potrà essere ripristinato.</item>
+        <item quantity="other">Questi elementi verranno eliminati in modo permanente e non potranno essere ripristinati.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">Elemento spostato</item>
+        <item quantity="other">Elementi spostati</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">Hai ancora a disposizione %d giorno di esportazione gratuita.</item>
+        <item quantity="other">Hai ancora a disposizione %d giorni di esportazione gratuita.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">Congratulazioni! Hai ottenuto %d utilizzo gratuito mensile per esportare senza filigrana.</item>
+        <item quantity="other">Congratulazioni! Hai ottenuto %d utilizzi gratuiti mensili per esportare senza filigrana.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">Hai ancora %d utilizzo gratuito per esportare senza filigrana.</item>
+        <item quantity="other">Hai ancora %d utilizzi gratuiti per esportare senza filigrana.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">Congratulazioni! Hai ottenuto %d utilizzo gratuito per esportare senza filigrana.</item>
+        <item quantity="other">Congratulazioni! Hai ottenuto %d utilizzi gratuiti per esportare senza filigrana.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">%d utilizzo</item>
+        <item quantity="other">%d utilizzi</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">%d credito di sconto per il primo utilizzo. In caso di superamento, vengono consumati altri crediti.</item>
+        <item quantity="other">%d crediti di sconto per il primo utilizzo. In caso di superamento, vengono consumati altri crediti.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">È necessario %d altro credito per applicare questa funzionalità</item>
+        <item quantity="other">Sono necessari altri %d crediti per applicare questa funzionalità</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">La durata della clip non deve essere superiore a %d secondo</item>
+        <item quantity="other">La durata della clip non deve essere superiore a %d secondi</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">Hai ancora %d credito.</item>
+        <item quantity="other">Hai ancora %d crediti.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">"L'applicazione di {$benefit_name$} consumerà {$credit_amount$} credito."</item>
+        <item quantity="other">"L'applicazione di {$benefit_name$} consumerà {$credit_amount$} crediti."</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">"L'applicazione di questa funzionalità consumerà %d credito."</item>
+        <item quantity="other">"L'applicazione di questa funzionalità consumerà %d crediti."</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">Utilizzando questo modello consumerai %d credito.</item>
+        <item quantity="other">Utilizzando questo modello consumerai %d crediti.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">Verrà eliminato in modo permanente e non potrà essere recuperato.</item>
+        <item quantity="other">Verranno eliminati in modo permanente e non potranno essere recuperati.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">Eliminare questo elemento?</item>
+        <item quantity="other">Eliminare questi elementi?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">%1$d progetto “%1$s”</item>
+        <item quantity="other">%1$d progetti “%1$s”</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">%d elemento spostato nel Cestino</item>
+        <item quantity="other">%d elementi spostati nel Cestino</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">%d elemento aggiunto ai Preferiti</item>
+        <item quantity="other">%d elementi aggiunti ai Preferiti</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">%d elemento rimosso dai Preferiti</item>
+        <item quantity="other">%d elementi rimossi dai Preferiti</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">Questo è uno spazio gratuito e può avere fino a %1$d membri. È possibile invitare %2$s altro membro.</item>
+        <item quantity="other">Questo è uno spazio gratuito e può avere fino a %1$d membri. È possibile invitare altri %2$s membri.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">%d utilizzo/mese</item>
+        <item quantity="other">%d utilizzi/mese</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d utilizzo/giorno</item>
+        <item quantity="other">%d utilizzi/giorni</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d utilizzo/settimana</item>
+        <item quantity="other">%d utilizzi/settimana</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">{price} dopo {number} mese</item>
+        <item quantity="other">{price} dopo {number} mesi</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">%1$s dopo %2$d mese</item>
+        <item quantity="other">%1$s dopo %2$d mesi</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">{price} dopo {number} anno</item>
+        <item quantity="other">{price} dopo {number} anni</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">%1$s dopo %2$d anno</item>
+        <item quantity="other">%1$s dopo %2$d anni</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">"C'è %d membro in questo spazio."</item>
+        <item quantity="other">Ci sono %d membri in questo spazio.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">Puoi ancora invitare %1$d membro.</item>
+        <item quantity="other">Puoi ancora invitare %1$d membri.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">%1$d posto è occupato.</item>
+        <item quantity="other">%1$d posti sono occupati.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">Inizia una prova gratuita di %d giorno</item>
+        <item quantity="other">Inizia una prova gratuita di %d giorni</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">%d credito necessario.</item>
+        <item quantity="other">%d crediti necessari.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">Hai ancora %d credito.</item>
+        <item quantity="other">Hai ancora %d crediti.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">Caricamento di %1$s/%2$s progetto in corso</item>
+        <item quantity="other">Caricamento di %1$s/%2$s progetti in corso</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"A questo file multimediale è collegata %d altra clip. Vuoi sostituire anche lei? 
+Il file verrà automaticamente tagliato per adattarsi alla durata originale."</item>
+        <item quantity="other">"A questo file multimediale sono collegate altre %d clip. Vuoi sostituire anche loro?
+Il file verrà automaticamente tagliato per adattarsi alla durata originale."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">Puoi caricare ancora %d immagine</item>
+        <item quantity="other">Puoi caricare ancora %d immagini</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">%d segmento da aggiornare</item>
+        <item quantity="other">%d segmenti da aggiornare</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">Puoi selezionare ancora %1$d immagine e %2$s</item>
+        <item quantity="other">Puoi selezionare ancora %1$d immagini e %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(max %d s)</item>
+        <item quantity="other">(max %d s)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d video</item>
+        <item quantity="other">%d video</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">Puoi selezionare ancora %d immagine</item>
+        <item quantity="other">Puoi selezionare ancora %d immagini</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">Puoi selezionare ancora %d video</item>
+        <item quantity="other">Puoi selezionare ancora %d video</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(max %d s)</item>
+        <item quantity="other">(max %d s)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">In coda... Circa %d min rimanente.</item>
+        <item quantity="other">In coda... Circa %d min rimanenti.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">Riduci il tempo di attesa · %d utilizzo rimasto</item>
+        <item quantity="other">Riduci il tempo di attesa · %d utilizzi rimasti</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">In coda... Circa %d s rimanente.</item>
+        <item quantity="other">In coda... Circa %d s rimanenti.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">In coda veloce con Pro... Circa %d min rimanente.</item>
+        <item quantity="other">In coda veloce con Pro... Circa %d min rimanenti.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">%d elemento</item>
+        <item quantity="other">%d elementi</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">%d elemento selezionato</item>
+        <item quantity="other">%d elementi selezionati</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">%d progetto</item>
+        <item quantity="other">%d progetti</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">%d progetto selezionato</item>
+        <item quantity="other">%d progetti selezionati</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">Molte persone stanno utilizzando questa funzionalità in questo momento. Il tempo di attesa stimato è di %d minuto.</item>
+        <item quantity="other">Molte persone stanno utilizzando questa funzionalità in questo momento. Il tempo di attesa stimato è di %d minuti.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">Generare di nuovo consumerà %d credito.</item>
+        <item quantity="other">Generare di nuovo consumerà %d crediti.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">Generare nuovamente con il nuovo elemento consumerà %d credito.</item>
+        <item quantity="other">Generare nuovamente con il nuovo elemento consumerà %d crediti.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">%d clip aggiunta</item>
+        <item quantity="other">%d clip aggiunte</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">Seleziona %d elemento</item>
+        <item quantity="other">Seleziona %d elementi</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">Generato %d video per te</item>
+        <item quantity="other">Generati %d video per te</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">Puoi separare solo audio di durata inferiore a %d minuto</item>
+        <item quantity="other">Puoi separare solo audio di durata inferiore a %d minuti</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">Puoi ripristinare lo spazio entro %d giorno.</item>
+        <item quantity="other">Puoi ripristinare lo spazio entro %d giorni.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">È in corso la generazione di %d video. Riprova più tardi.</item>
+        <item quantity="other">È in corso la generazione di %d video. Riprova più tardi.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">Passa a una versione superiore per utilizzare questa funzionalità con %d credito</item>
+        <item quantity="other">Passa a una versione superiore per utilizzare questa funzionalità con %d crediti</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">Hai solo %d posto rimasto in questo spazio.</item>
+        <item quantity="other">Hai solo %d posti rimasti in questo spazio.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">%d elemento utilizzato</item>
+        <item quantity="other">%d elementi utilizzati</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">%d elemento selezionato</item>
+        <item quantity="other">%d elementi selezionati</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">Seleziona %d elemento</item>
+        <item quantity="other">Seleziona %d elementi</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">%d sottotitolo</item>
+        <item quantity="other">%d sottotitoli</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">%d elemento</item>
+        <item quantity="other">%d elementi</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">"È in corso l'applicazione di %d funzionalità. Riprova più tardi."</item>
+        <item quantity="other">"È in corso l'applicazione di %d funzionalità. Riprova più tardi."</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">%d utilizzo gratuito rimasto. Unisciti a Standard per utilizzarlo con i crediti.</item>
+        <item quantity="other">%d utilizzi gratuiti rimasti. Unisciti a Standard per utilizzarlo con i crediti.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">%d utilizzo gratuito rimasto. Unisciti a Pro per utilizzarlo con i crediti.</item>
+        <item quantity="other">%d utilizzi gratuiti rimasti. Unisciti a Pro per utilizzarlo con i crediti.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">Ti resta %d utilizzo gratuito. Passa a Ultra per utilizzare i crediti.</item>
+        <item quantity="other">Ti restano %d utilizzi gratuiti. Passa a Ultra per utilizzare i crediti.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">"L'operazione consumerà %1$d credito. %2$s"</item>
+        <item quantity="other">"L'operazione consumerà %1$d crediti. %2$s"</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">Hai ancora %d credito.</item>
+        <item quantity="other">Hai ancora %d crediti.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">Passa a Ultra per utilizzare con %d credito</item>
+        <item quantity="other">Passa a Ultra per utilizzare con %d crediti</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">Unisciti a Pro per utilizzare questa funzionalità con %d credito.</item>
+        <item quantity="other">Unisciti a Pro per utilizzare questa funzionalità con %d crediti.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">Unisciti a Standard per utilizzare questa funzionalità con %d credito.</item>
+        <item quantity="other">Unisciti a Standard per utilizzare questa funzionalità con %d crediti.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">Non puoi salvare più di %1$d voce.</item>
+        <item quantity="other">Puoi salvare non più di %1$d voci.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">Non è possibile migliorare la voce in una clip più lunga di %1$d minuto</item>
+        <item quantity="other">Non è possibile migliorare la voce in una clip più lunga di %1$d minuti</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">Seleziona %d elemento per avere risultati ottimali</item>
+        <item quantity="other">Seleziona %d elementi per avere risultati ottimali</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">Si rinnova a %1$s per il primo %2$d mese, successivamente a %3$s.</item>
+        <item quantity="other">Si rinnova a %1$s per i primi %2$d mesi, successivamente a %3$s.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">Si rinnova a %1$s per il primo %2$d anno, successivamente a %3$s.</item>
+        <item quantity="other">Si rinnova a %1$s per i primi %2$d anni, successivamente a %3$s.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">Hai fatto %d aggiornamento. Generare il discorso e sincronizzare i movimenti delle labbra?</item>
+        <item quantity="other">Hai fatto %d aggiornamenti. Generare il discorso e sincronizzare i movimenti delle labbra?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">%d volta rimanente</item>
+        <item quantity="other">%d volte rimanenti</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">"C'è %d clip muta."</item>
+        <item quantity="other">Ci sono %d clip mute.</item>
+    </plurals>
+</resources>

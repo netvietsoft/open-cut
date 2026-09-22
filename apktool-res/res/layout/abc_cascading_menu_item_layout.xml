@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.view.menu.ListMenuItemView n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minWidth="196.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/group_divider" n0:background="@drawable/qh" n0:layout_width="match_parent" n0:layout_height="1.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="4.0dp" />
+    <LinearLayout n0:id="@id/content" n0:duplicateParentState="true" n0:layout_width="match_parent" n0:layout_height="?APKTOOL_RENAMED_0x7f040480" style="@style/APKTOOL_RENAMED_0x7f13022e">
+        <TextView n0:textAppearance="?kcu" n0:layout_gravity="center_vertical" n0:id="@id/title" n0:duplicateParentState="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" style="@style/xn" />
+        <Space n0:layout_width="0.0dp" n0:layout_height="1.0dp" n0:layout_weight="1.0" />
+        <TextView n0:textAppearance="?kcd" n0:layout_gravity="center_vertical" n0:id="@id/shortcut" n0:duplicateParentState="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" style="@style/xk" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/submenuarrow" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:scaleType="center" style="@style/xl" />
+    </LinearLayout>
+</androidx.appcompat.view.menu.ListMenuItemView>

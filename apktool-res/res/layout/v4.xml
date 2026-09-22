@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="168.0dp" n0:layout_margin="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ai_moment_home2_item_bg" n0:layout_width="match_parent" n0:layout_height="155.0dp" n0:src="@drawable/ju" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintHorizontal_bias="0.0" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/ai_moment_home2_item_cover_layour3" n0:background="@drawable/jw" n0:layout_width="110.0dp" n0:layout_height="145.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginStart="18.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ai_moment_home2_item_cover3" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <ImageView n0:id="@id/ai_moment_home2_item_mask3" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/ai_moment_home2_item_cover_layour2" n0:background="@drawable/jw" n0:layout_width="110.0dp" n0:layout_height="145.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginStart="18.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ai_moment_home2_item_cover2" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <ImageView n0:id="@id/ai_moment_home2_item_mask2" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </FrameLayout>
+    <com.vega.ui.widget.RoundFrameLayout n0:id="@id/ai_moment_home2_item_cover_layour1" n0:background="@drawable/jw" n0:layout_width="110.0dp" n0:layout_height="145.0dp" n0:layout_marginBottom="16.0dp" n0:foreground="@drawable/jv" n0:layout_marginStart="20.0dp" n4:i1="12.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.gallery.preview.cloud.videoplayer.TTVideoView n0:id="@id/ai_moment_home2_item_cover1" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ai_moment_home2_item_mask1" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.ui.widget.RoundFrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:ellipsize="end" n0:id="@id/ai_moment_home2_item_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:maxLines="1" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="16.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintHorizontal_bias="0.0" n5:layout_constraintStart_toEndOf="@id/ai_moment_home2_item_cover_layour1" n5:layout_constraintTop_toTopOf="@id/ai_moment_home2_item_bg"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mm" n0:ellipsize="end" n0:id="@id/ai_moment_home2_item_subtitle" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:maxLines="3" n0:layout_marginEnd="16.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintHorizontal_bias="0.0" n6:layout_constraintStart_toStartOf="@id/ai_moment_home2_item_title" n6:layout_constraintTop_toBottomOf="@id/ai_moment_home2_item_title"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ai_moment_home2_item_go" n0:background="@drawable/jx" n0:layout_width="105.0dp" n0:layout_height="45.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginEnd="16.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="@id/ai_moment_home2_item_bg"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/o1g" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rc" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

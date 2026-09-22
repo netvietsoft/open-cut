@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/content_container" n0:background="@color/s3" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="horizontal" n0:id="@id/sbContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/tvAdvanceEdit" n0:background="@drawable/khn" n0:paddingLeft="20.0dp" n0:paddingRight="20.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="50.0dp" n0:text="@string/ldg" n0:layout_marginHorizontal="16.0dp" n0:paddingHorizontal="20.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View n0:id="@id/vDividerCover" n0:background="@color/a3" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginBottom="16.0dp" n2:layout_constraintBottom_toTopOf="@id/sbContainer" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0dp" n0:textColor="@color/_z" n0:id="@id/ttvCoverTips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:text="@string/q3u" n3:layout_constraintBottom_toTopOf="@id/vDividerCover" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.track.HorizontalScrollContainer n0:id="@id/hscCoverFrameContainer" n0:layout_width="0.0dp" n0:layout_height="60.0dp" n0:layout_marginBottom="28.0dp" n4:layout_constraintBottom_toTopOf="@id/vDividerCover" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.edit.cover.view.CoverFrameView n0:id="@id/cfvCoverFrames" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.ui.track.HorizontalScrollContainer>
+    <ImageView n0:id="@id/ivPlayHead" n0:background="@drawable/p6v" n0:layout_width="6.0dp" n0:layout_height="70.0dp" n0:layout_marginBottom="23.0dp" n0:scaleType="centerCrop" n5:layout_constraintBottom_toTopOf="@id/vDividerCover" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/glCenterGuideline" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:layout_constraintGuide_percent="0.5"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="16.0dp" n7:layout_constraintBottom_toTopOf="@id/hscCoverFrameContainer" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <SurfaceView n0:id="@id/svPlayer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f080c61" n0:layout_width="180.0dp" n0:layout_height="110.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="end" n0:id="@id/close_btn" n0:paddingTop="10.0dp" n0:paddingBottom="16.0dp" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/m40" n0:paddingStart="16.0dp" n0:paddingEnd="10.0dp" />
+    <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center_horizontal" n0:id="@id/lottile_animation_view" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="24.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="lv_loading_white.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:layout_gravity="center_horizontal" n0:id="@id/tv_loading_progress" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="68.0dp" n2:k1g="display" n2:k1i="regular"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

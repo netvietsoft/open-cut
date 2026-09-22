@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/APKTOOL_RENAMED_0x7f06001c" n0:paddingLeft="@dimen/rr" n0:paddingTop="@dimen/rr" n0:paddingRight="@dimen/rr" n0:paddingBottom="@dimen/rr" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="@dimen/rr" n0:paddingVertical="@dimen/rr"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_pro_section" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <TextView n0:textColor="@color/mn" n0:id="@id/tv_pro_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/kjn" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/rv_pro_filters" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/re" n0:overScrollMode="never" n2:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tv_pro_title"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/rp">
+        <TextView n0:textColor="@color/mn" n0:id="@id/tv_duration_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n0:text="@string/kjm" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:k1i="medium"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/rv_duration_filters" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/re" n4:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tv_duration_title"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/rw">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/ml" n0:gravity="center" n0:id="@id/reset_btn" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c58" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/kjo" n0:layout_weight="1.0" n0:fontFamily="CapCut Sans Text" n0:layout_marginEnd="@dimen/re" n5:k1i="bold"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f060074" n0:gravity="center" n0:id="@id/apply_btn" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c57" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/kjk" n0:layout_weight="1.0" n0:fontFamily="CapCut Sans Text" n6:k1i="bold"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

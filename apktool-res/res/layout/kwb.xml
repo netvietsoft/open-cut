@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/sl_select_layout" n0:layout_width="62.0dp" n0:layout_height="62.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/uj"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/flRecognizeAnimIcon" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <com.vega.lvui.widget.MaterialDraweeView n0:layout_gravity="center" n0:id="@id/mdv_item" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:i1="8.0dp" />
+            <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="end|top" n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="@dimen/n9" n1:kml="small" />
+        </FrameLayout>
+        <com.vega.ui.widget.ItemLoadingView n0:id="@id/ilv_loading" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n1:layout_constraintBottom_toBottomOf="@id/flRecognizeAnimIcon" n1:layout_constraintEnd_toEndOf="@id/flRecognizeAnimIcon" n1:layout_constraintStart_toStartOf="@id/flRecognizeAnimIcon" n1:layout_constraintTop_toTopOf="@id/flRecognizeAnimIcon" />
+        <ImageView n0:id="@id/iv_load_failed" n0:background="@drawable/APKTOOL_RENAMED_0x7f0804c9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="@id/flRecognizeAnimIcon" n1:layout_constraintEnd_toEndOf="@id/flRecognizeAnimIcon" n1:layout_constraintStart_toStartOf="@id/flRecognizeAnimIcon" n1:layout_constraintTop_toTopOf="@id/flRecognizeAnimIcon" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_preview" n0:background="#e6262626" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/APKTOOL_RENAMED_0x7f081f3b" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.vega.lvui.view.MaterialSelectableLayout>
+    <com.vega.edit.base.widget.MarqueeVegaTextView n0:textSize="11.0dp" n0:textColor="#80edf0fd" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/vtv_title" n0:fadingEdge="none" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:maxWidth="62.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122cd5" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n2:layout_constraintEnd_toEndOf="@id/sl_select_layout" n2:layout_constraintStart_toStartOf="@id/sl_select_layout" n2:layout_constraintTop_toBottomOf="@id/sl_select_layout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

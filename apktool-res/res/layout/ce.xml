@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/km" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/cloud_material_more_rl_share_review" n0:paddingTop="5.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/cloud_material_more_iv_share_review" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0819ed" n0:tint="@color/knt" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:id="@id/cloud_material_more_tv_share_review" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q1a" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_toEndOf="@id/cloud_material_more_iv_share_review" n0:textFontWeight="500" n1:kr3="none"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n0:id="@id/cloud_material_share_review_vip_tag" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginStart="4.0dp" n0:layout_toEndOf="@id/cloud_material_more_tv_share_review" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/cloud_material_more_rl_rename" n0:paddingTop="5.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/cloud_material_more_iv_rename" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/p7m" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:id="@id/cloud_material_more_tv_rename" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qdc" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_toEndOf="@id/cloud_material_more_iv_rename" n0:textFontWeight="500" n2:kr3="none"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/cloud_material_more_rl_move" n0:paddingTop="5.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/cloud_material_more_iv_move" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/p6_" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:id="@id/cloud_material_more_tv_move" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qkw" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_toEndOf="@id/cloud_material_more_iv_move" n0:textFontWeight="500" n3:kr3="none"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/cloud_material_more_rl_copy" n0:paddingTop="5.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/cloud_material_more_iv_copy" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/p69" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:id="@id/cloud_material_more_tv_copy" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lbd" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_toEndOf="@id/cloud_material_more_iv_copy" n0:textFontWeight="500" n4:kr3="none"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/cloud_material_more_rl_copyToGroup" n0:paddingTop="5.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <ImageView n0:id="@id/cloud_material_more_iv_copyToGroup" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/p6-" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:id="@id/cloud_material_more_tv_copyToGroup" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lcz" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_toEndOf="@id/cloud_material_more_iv_copyToGroup" n0:textFontWeight="500" n5:kr3="none"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/cloud_material_more_rl_report" n0:paddingTop="5.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <ImageView n0:id="@id/cloud_material_more_iv_report" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/l6l" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:id="@id/cloud_material_more_tv_report" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qeo" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_toEndOf="@id/cloud_material_more_iv_report" n0:textFontWeight="500" n6:kr3="none"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/cloud_material_more_rl_favorite" n0:paddingTop="5.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/cloud_material_more_iv_favorite" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/nm1" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:id="@id/cloud_material_more_tv_favorite" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n8a" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_toEndOf="@id/cloud_material_more_iv_favorite" n0:textFontWeight="500" n7:kr3="none"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <RelativeLayout n0:id="@id/cloud_material_more_rl_delete" n0:paddingTop="5.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/cloud_material_more_iv_delete" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/ovq" n0:layout_centerVertical="true" n0:layout_marginStart="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/_4" n0:id="@id/cloud_material_more_tv_delete" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lg-" n0:layout_centerVertical="true" n0:layout_marginStart="16.0dp" n0:layout_toEndOf="@id/cloud_material_more_iv_delete" n0:textFontWeight="500" n8:kr3="none"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <View n0:layout_width="match_parent" n0:layout_height="34.0dp" />
+</LinearLayout>

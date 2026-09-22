@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mbridge.msdk.video.dynview.widget.MBridgeRelativeLayout n0:layout_gravity="center" n0:id="@id/mbridge_reward_end_card_more_offer_rl" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="60.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.mbridge.msdk.video.dynview.widget.ObservableScrollView n0:id="@id/mbridge_moreoffer_hls" n0:scrollbars="none" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_toRightOf="@id/mbridge_reward_end_card_like_tv" n0:layout_alignParentRight="true" n0:layout_centerVertical="true" />
+    <TextView n0:textStyle="bold" n0:gravity="center" n0:id="@id/mbridge_reward_end_card_like_tv" n0:background="@drawable/mbridge_reward_shape_mf_selector" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:visibility="invisible" n0:layout_width="20.0dp" n0:layout_height="match_parent" />
+</com.mbridge.msdk.video.dynview.widget.MBridgeRelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/brandRefreshLayout" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.ui.refresh.RefreshHeaderView n0:layout_width="match_parent" n0:layout_height="60.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/teamBannerTipLayout" n0:background="@drawable/ksv" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" n1:layout_constraintTop_toTopOf="parent">
+                <ImageView n0:layout_gravity="center_vertical" n0:id="@id/teamBannerTipIcon" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/m8j" />
+                <TextView n0:textSize="14.0sp" n0:textColor="#b3141d2d" n0:id="@id/teamTipsText" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:lineSpacingExtra="2.0sp" n0:fontFamily="sans-serif-medium" n0:layout_marginStart="12.0dp" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/rvBrandResources" n0:paddingBottom="50.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" />
+        </LinearLayout>
+        <com.vega.property.optional.ui.common.view.PropertyBrandKitLoadingView n0:id="@id/plv_loading_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="8.0dp" />
+        <com.vega.property.optional.ui.common.view.PropertyListEmptyView n0:id="@id/plev_brand_empty_view" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

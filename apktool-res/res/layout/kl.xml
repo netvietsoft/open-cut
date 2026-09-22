@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.tux.adaptive.TuxAdaptiveContainer n0:id="@id/adaptive_container" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.tux.widget.RadiusLayout android:id="@id/radius_layout" android:layout_width="540.0dp" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bytedance.tux.sheet.TuxSheetNavBarContainer android:id="@id/sheet_nav_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/sheet_content_stub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/sheet_nav_bar_container" />
+        </RelativeLayout>
+    </com.bytedance.tux.widget.RadiusLayout>
+</com.bytedance.tux.adaptive.TuxAdaptiveContainer>

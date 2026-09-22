@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">%d ögesi yüklenemedi. AutoCut devam ediyor.</item>
+        <item quantity="other">%d ögesi yüklenemedi. AutoCut devam ediyor.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">Ek:%d dosya</item>
+        <item quantity="other">Ek: %d dosya</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">%1$d kredi gerekiyor.</item>
+        <item quantity="other">%1$d kredi gerekiyor.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">%1$d krediniz kaldı.</item>
+        <item quantity="other">%1$d krediniz kaldı.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">Ücretsiz kredileriniz düşülecek. %d daha kredi gerekli.</item>
+        <item quantity="other">Ücretsiz kredileriniz düşülecek. %d daha kredi gerekli.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">%1$d kredi gerekiyor.</item>
+        <item quantity="other">%1$d kredi gerekiyor.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">%1$d krediniz kaldı. Devam etmek için kredi satın alın.</item>
+        <item quantity="other">%1$d krediniz kaldı. Devam etmek için kredi satın alın.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">%1$d kredi gerekiyor.</item>
+        <item quantity="other">%1$d kredi gerekiyor.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">%1$d krediniz kaldı. Kredi almak için yükseltin.</item>
+        <item quantity="other">%1$d krediniz kaldı. Kredi almak için yükseltin.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">%d kredi kullanılacak</item>
+        <item quantity="other">%d kredi kullanılacak</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">Ücretsiz kredileriniz düşülecek. %d daha kredi gerekli.</item>
+        <item quantity="other">Ücretsiz kredileriniz düşülecek. %d daha kredi gerekli.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">%d şablon önerildi</item>
+        <item quantity="other">%d şablon önerildi</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">%d video oluşturuldu</item>
+        <item quantity="other">%d video oluşturuldu</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">Oturum açtığınızda otomatik alt yazıları ve otomatik şarkı sözlerini ayda %d kez ücretsiz olarak kullanabilirsiniz. Ücretsiz kullanımlar her ayın başında yenilenir. Her seferinde 1 kullanım düşülecektir.</item>
+        <item quantity="other">Oturum açtığınızda otomatik alt yazıları ve otomatik şarkı sözlerini ayda %d kez ücretsiz olarak kullanabilirsiniz. Ücretsiz kullanımlar her ayın başında yenilenir. Her seferinde 1 kullanım düşülecektir.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%d kullanım/ay</item>
+        <item quantity="other">%d kullanım/ay</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">%d sözcük sil</item>
+        <item quantity="other">%d sözcük sil</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%d vurgu</item>
+        <item quantity="other">%d vurgu</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">%d tamamlayıcı sözcük bulundu</item>
+        <item quantity="other">%d tamamlayıcı sözcük bulundu</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">En fazla %d öge seçin</item>
+        <item quantity="other">En fazla %d öge seçin</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">Sıradaki tahmini bekleme süresi: %d sn.</item>
+        <item quantity="other">Sıradaki tahmini bekleme süresi: %d sn.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">Yaklaşık %d saat kaldı</item>
+        <item quantity="other">Yaklaşık %d saat kaldı</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">Yaklaşık %d dakika kaldı</item>
+        <item quantity="other">Yaklaşık %d dakika kaldı</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">Yaklaşık %d sn. kaldı</item>
+        <item quantity="other">Yaklaşık %d sn. kaldı</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">Ses sonucu (%d)</item>
+        <item quantity="other">Ses sonuçları (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">Dosya sonucu (%d)</item>
+        <item quantity="other">Dosya sonuçları (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">Oluşturma sonucu (%d)</item>
+        <item quantity="other">Oluşturma sonuçları (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">Ek: %d resim</item>
+        <item quantity="other">Ek: %d resim</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">Ek: %d video</item>
+        <item quantity="other">Ek: %d video</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">Resim sonucu (%d)</item>
+        <item quantity="other">Resim sonuçları (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">Video sonucu (%d)</item>
+        <item quantity="other">Video sonuçları (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">%1$d yapay zekâ metin efekti uygulanıyor... %%%2$d</item>
+        <item quantity="other">%1$d yapay zekâ metin efekti uygulanıyor... %%%2$d</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">%d varlığı tüm kliplere uygula</item>
+        <item quantity="other">%d varlığı tüm kliplere uygula</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">%d varlık seçildi</item>
+        <item quantity="other">%d varlık seçildi</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">%d günlük Ultra</item>
+        <item quantity="other">%d günlük Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d karakter</item>
+        <item quantity="other">%d karakter</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">%d karakterden fazlasını seçmeyin</item>
+        <item quantity="other">%d karakterden fazlasını seçmeyin</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">%d klip ticari kullanım için lisanslı değil</item>
+        <item quantity="other">%d klip ticari kullanım için lisanslı değil</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">%d yazı tipi ticari kullanım için lisanslı değil</item>
+        <item quantity="other">%d yazı tipi ticari kullanım için lisanslı değil</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">%d ses ticari kullanım için lisanslı değil</item>
+        <item quantity="other">%d ses ticari kullanım için lisanslı değil</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">%d klip ticari kullanım için lisanslı değil ve değiştirilemez</item>
+        <item quantity="other">%d klip ticari kullanım için lisanslı değil ve değiştirilemez</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">%d yazı tipi ticari kullanım için lisanslı değil ve değiştirilemez</item>
+        <item quantity="other">%d yazı tipi ticari kullanım için lisanslı değil ve değiştirilemez</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">%d ses ticari kullanım için lisanslı değil ve değiştirilemez</item>
+        <item quantity="other">%d ses ticari kullanım için lisanslı değil ve değiştirilemez</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">%d çıkartma ticari kullanım için lisanslı değil ve değiştirilemez</item>
+        <item quantity="other">%d çıkartma ticari kullanım için lisanslı değil ve değiştirilemez</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">%d çıkartma ticari kullanım için lisanslı değil</item>
+        <item quantity="other">%d çıkartma ticari kullanım için lisanslı değil</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">%d yorum silinsin mi?</item>
+        <item quantity="other">%d yorum silinsin mi?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">%d hesap seçtiniz. Yalnızca siz ve kısıtladığınız kişi yorumunu görebilecek.</item>
+        <item quantity="other">%d hesap seçtiniz. Yalnızca siz ve kısıtladığınız kişiler yorumlarını görebilecek.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">%d hesap kısıtlansın mı?</item>
+        <item quantity="other">%d hesap kısıtlansın mı?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">%s yeni içerik üreticisi mesajınız var</item>
+        <item quantity="other">%s yeni içerik üreticisi mesajınız var</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">%d gündür süresi doldu</item>
+        <item quantity="other">%d gündür süresi doldu</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">"Bir Pro özelliği kullanıyorsunuz. %d ücretsiz kullanım hakkınız kaldı. Sınırsız kullanım için Pro'ya katılın!"</item>
+        <item quantity="other">"Bir Pro özelliği kullanıyorsunuz. %d ücretsiz kullanım hakkınız kaldı. Sınırsız kullanım için Pro'ya katılın!"</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">"Standart sürüm özelliği kullanıyorsunuz. %d ücretsiz kullanım hakkınız kaldı. Sınırsız kullanım için Standart'a katılın."</item>
+        <item quantity="other">"Standart sürüm özelliği kullanıyorsunuz. %d ücretsiz kullanım hakkınız kaldı. Sınırsız kullanım için Standart'a katılın."</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">"Bir Pro özelliği kullanıyorsunuz. Bu ay için %d ücretsiz kullanma hakkı kaldı. Sınırsız kullanım için Pro'ya katılın."</item>
+        <item quantity="other">"Bir Pro özelliği kullanıyorsunuz. Bu ay için %d ücretsiz kullanma hakkı kaldı. Sınırsız kullanım için Pro'ya katılın."</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">"Standart sürüm özelliği kullanıyorsunuz. Bu ay %d ücretsiz kullanım hakkınız kaldı. Sınırsız kullanım için Standart'a katılın."</item>
+        <item quantity="other">"Standart sürüm özelliği kullanıyorsunuz. Bu ay %d ücretsiz kullanım hakkınız kaldı. Sınırsız kullanım için Standart'a katılın."</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d gün ücretsiz</item>
+        <item quantity="other">%d gün ücretsiz</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">%2$d hafta sonra %1$s</item>
+        <item quantity="other">%2$d hafta sonra %1$s</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">Pro şablonlarını ayda %d kez ücretsiz kullanma hakkınız var.</item>
+        <item quantity="other">Pro şablonlarını ayda %d kez ücretsiz kullanma hakkınız var.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">%d ücretsiz kullanma hakkı</item>
+        <item quantity="other">%d ücretsiz kullanma hakkı</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">%d gün ücretsiz deneyin</item>
+        <item quantity="other">%d gün ücretsiz deneyin</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">%d müzik telif hakkı sorunu</item>
+        <item quantity="other">%d müzik telif hakkı sorunu</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">%d metin seçildi</item>
+        <item quantity="other">%d metin seçildi</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">%d klip seçildi</item>
+        <item quantity="other">%d klip seçildi</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">%1$d günlük sınırsız ücretsiz dışa aktarımın keyfini çıkarın veya tam sınırsız yüksek çözünürlüklü dışa aktarım için yükseltme yapın.</item>
+        <item quantity="other">%1$d günlük sınırsız ücretsiz dışa aktarımın keyfini çıkarın veya tam sınırsız yüksek çözünürlüklü dışa aktarım için yükseltme yapın.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">%d kez 1080p olarak ücretsiz dışa aktarın</item>
+        <item quantity="other">%d kez 1080p olarak ücretsiz dışa aktarın</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">1080p olarak %d ücretsiz dışa aktarma hakkı kaldı. Sınırsız yüksek çözünürlüklü dışa aktarmanın keyfini çıkarmak için yükseltin.</item>
+        <item quantity="other">1080p olarak %d ücretsiz dışa aktarma hakkı kaldı. Sınırsız yüksek çözünürlüklü dışa aktarmanın keyfini çıkarmak için yükseltin.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">Bu ay 1080p olarak %d ücretsiz dışa aktarma hakkınız kaldı. Sınırsız yüksek çözünürlüklü dışa aktarımın keyfini çıkarmak için yükseltin.</item>
+        <item quantity="other">Bu ay 1080p olarak %d ücretsiz dışa aktarma hakkınız kaldı. Sınırsız yüksek çözünürlüklü dışa aktarımın keyfini çıkarmak için yükseltin.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">%d kredi gerekiyor.</item>
+        <item quantity="other">%d kredi gerekiyor.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">%d krediniz kaldı.</item>
+        <item quantity="other">%d krediniz kaldı.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">"%1$d oluşturma işlemi devam ediyor. %2$d işleme kadar aynı anda oluşturmak için Pro'ya yükseltin."</item>
+        <item quantity="other">"%1$d oluşturma işlemi devam ediyor. %2$d işleme kadar aynı anda oluşturmak için Pro'ya yükseltin."</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">Filigran olmadan dışa aktar (%d kullanım hakkı kaldı)</item>
+        <item quantity="other">Filigran olmadan dışa aktar (%d kullanım hakkı kaldı)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">%d ücretsiz kullanım hakkınız kaldı. Kredi gerekli değil.</item>
+        <item quantity="other">%d ücretsiz kullanım hakkınız kaldı. Kredi gerekli değil.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">Seçtiğiniz öge silinecek ve %d gün boyunca Çöp Kutusunda kalacak.</item>
+        <item quantity="other">Seçtiğiniz ögeler silinecek ve %d gün boyunca Çöp Kutusunda kalacak.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">Seçilen ögelerden biri alana yüklendi. Yine de silinsin mi?</item>
+        <item quantity="other">Seçilen bazı ögeler alana yüklendi. Yine de silinsin mi?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">Seçtiğiniz öge silinecek ve Çöp Kutusuna taşınacak.</item>
+        <item quantity="other">Seçtiğiniz ögeler silinecek ve Çöp Kutusuna taşınacak.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">%d kullanım</item>
+        <item quantity="other">%d kullanım</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">Girdiğiniz doğum tarihinden hesaplanan yaş %d ve hatalı görünüyor. Gerçek doğum tarihinizi girin.</item>
+        <item quantity="other">Girdiğiniz doğum tarihinden hesaplanan yaş %d ve hatalı görünüyor. Gerçek doğum tarihinizi girin.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">Geçmiş satın alımlardan 1 ücretsiz kullanım ve Pro için %d ekstra ücretsiz kullanım içerir</item>
+        <item quantity="other">Geçmiş satın alımlardan 1 ücretsiz kullanım ve Pro için %d ekstra ücretsiz kullanım içerir</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">Pro %d ücretsiz kullanım hakkı alır</item>
+        <item quantity="other">Pro %d ücretsiz kullanım hakkı alır</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">"Videolar ile oluşturduğunuz avatarlar artık kalıcı olarak geçerlidir. Pro'ya katılın ve %d ücretsiz özelleştirme hakkı kazanın."</item>
+        <item quantity="other">"Videolar ile oluşturduğunuz avatarlar artık kalıcı olarak geçerlidir. Pro'ya katılın ve %d ücretsiz özelleştirme hakkı kazanın."</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">Bu efekti uygulamak için %d kredi kullanılacak.</item>
+        <item quantity="other">Bu efekti uygulamak için %d kredi kullanılacak.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">Şu anda %d krediniz var.</item>
+        <item quantity="other">Şu anda %d krediniz var.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">%d vurgu</item>
+        <item quantity="other">%d vurgu</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">Yapay zeka efekti uygulanıyor... %s saat kaldı</item>
+        <item quantity="other">Yapay zeka efekti uygulanıyor... %s saat kaldı</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">Yapay zeka efekti uygulanıyor... %s dakika kaldı</item>
+        <item quantity="other">Yapay zeka efekti uygulanıyor... %s dakika kaldı</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">Mevcut ögeye %1$s Pro efekti uygulandı. Bu efekti yeni ögeye tekrar uygulamak için %2$d kredi kullanılacaktır.</item>
+        <item quantity="other">Mevcut ögeye %1$s Pro efekti uygulandı. Bu efekti yeni ögeye tekrar uygulamak için %2$d kredi kullanılacaktır.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">%1$d ücretsiz kullanım hakkı düşülecek. Şu anda %2$d ücretsiz kullanım hakkınız var.</item>
+        <item quantity="other">%1$d ücretsiz kullanım hakkı düşülecek. Şu anda %2$d ücretsiz kullanım hakkınız var.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">%1$d Pro kullanım hakkı düşülecek. Şu anda %2$d Pro kullanım hakkınız var.</item>
+        <item quantity="other">%1$d Pro kullanım hakkı düşülecek. Şu anda %2$d Pro kullanım hakkınız var.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">Bu model sadece %d referans resmi destekler</item>
+        <item quantity="other">Bu model %d adede kadar referans resmi destekler</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">Bu modeli kullanmak için en az %d referans resim ekleyin</item>
+        <item quantity="other">Bu modeli kullanmak için en az %d referans resim ekleyin</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">Bu model sadece %d referans videoyu destekler</item>
+        <item quantity="other">Bu model %d adede kadar referans videoyu destekler</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">Bu modeli kullanmak için en az %d referans video ekleyin</item>
+        <item quantity="other">Bu modeli kullanmak için en az %d referans video ekleyin</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">%d fotoğraf seçin</item>
+        <item quantity="other">%d fotoğraf seçin</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">%d materyal eklendi</item>
+        <item quantity="other">%d materyal eklendi</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">%d oluşturma hakkı kaldı</item>
+        <item quantity="other">%d oluşturma hakkı kaldı</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">%d kilit açma hakkı kaldı</item>
+        <item quantity="other">%d kilit açma hakkı kaldı</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">%d anahtar sözcük vurgulandı. Manuel olarak da seçebilirsiniz.</item>
+        <item quantity="other">%d anahtar sözcük vurgulandı. Manuel olarak da seçebilirsiniz.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">%d klibi sil</item>
+        <item quantity="other">%d klibi sil</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">%d tamamlayıcı sözcük belirlendi. Manuel olarak da seçebilirsiniz.</item>
+        <item quantity="other">%d tamamlayıcı sözcük belirlendi. Manuel olarak da seçebilirsiniz.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">%d anahtar sözcük vurgulandı</item>
+        <item quantity="other">%d anahtar sözcük vurgulandı</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">%d fotoğraf dışa aktarılıyor...</item>
+        <item quantity="other">%d fotoğraf dışa aktarılıyor...</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">%d poza kadar seçin</item>
+        <item quantity="other">%d poza kadar seçin</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">Medya dosyanız yükleniyor</item>
+        <item quantity="other">Medya dosyalarınız yükleniyor</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">%d üye</item>
+        <item quantity="other">%d üye</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">Cihazınızın depolama alanını boşaltmak için %d projeyi alana yükleyin. Bu projeleri mobil uygulamada, masaüstü uygulamasında veya çevrim içi düzenleyicide düzenleyebilirsiniz.</item>
+        <item quantity="other">Cihazınızın depolama alanını boşaltmak için %d projeyi alana yükleyin. Bu projeleri mobil uygulamada, masaüstü uygulamasında veya çevrim içi düzenleyicide düzenleyebilirsiniz.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">Projelerinizdeki %d medya dosyasını alana yükleyin. Bu dosyayı tekrar yüklemeden istediğiniz cihazda kullanabilirsiniz.</item>
+        <item quantity="other">Projelerinizdeki %d medya dosyasını alana yükleyin. Bu dosyaları tekrar yüklemeden istediğiniz cihazda kullanabilirsiniz.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">Kurtarılacak bir projeniz var</item>
+        <item quantity="other">Kurtarılacak projeleriniz var</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">Proje kurtarıldı</item>
+        <item quantity="other">Projeler kurtarıldı</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">%d özellik uygulanamadı</item>
+        <item quantity="other">%d özellik uygulanamadı</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">%d özellik uygulanıyor</item>
+        <item quantity="other">%d özellik uygulanıyor</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">Pro efekti uygulansın mı?</item>
+        <item quantity="other">Pro efektleri uygulansın mı?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">Mevcut ögeye %1$d Pro efekti uygulandı. Bu efekti yeni ögeye tekrar uygulamak için %2$d kredi kullanılacaktır.</item>
+        <item quantity="other">Mevcut ögeye %1$d Pro efekti uygulandı. Bu efektleri yeni ögeye tekrar uygulamak için %2$d kredi kullanılacaktır.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">Mevcut ögeye %1$d Pro efekti uygulandı. Efektin yeni ögeye tekrar uygulanması için %2$d ücretsiz kullanım hakkı düşülecektir. Kredi kullanılmayacaktır.</item>
+        <item quantity="other">Mevcut ögeye %1$d Pro efekti uygulandı. Efektlerin yeni ögeye tekrar uygulanması için %2$d ücretsiz kullanım hakkı düşülecektir. Kredi kullanılmayacaktır.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">Mevcut ögeye %1$d Pro efekti uygulandı. Bu efekti yeni ögeye tekrar uygulamak için %2$d krediye ihtiyacınız var.</item>
+        <item quantity="other">Mevcut ögeye %1$d Pro efekti uygulandı. Bu efektleri yeni ögeye tekrar uygulamak için %2$d krediye ihtiyacınız var.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">Mevcut ögeye %1$d Pro efekti uygulandı. Bu efektleri yeni ögeye tekrar uygulamak için %2$d ücretsiz kullanım hakkı ve %3$d kredi kullanılacaktır.</item>
+        <item quantity="other">Mevcut ögeye %1$d Pro efekti uygulandı. Bu efektleri yeni ögeye tekrar uygulamak için %2$d ücretsiz kullanım hakkı ve %3$d kredi kullanılacaktır.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">%d klip eksik. Klibi telefonunuza geri yükleyin veya değiştirin.</item>
+        <item quantity="other">%d klip eksik. Klipleri telefonunuza geri yükleyin veya değiştirin.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">En fazla %d karakter girin</item>
+        <item quantity="other">En fazla %d karakter girin</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">Öge silinsin mi?</item>
+        <item quantity="other">Ögeler silinsin mi?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">Çöp Kutusuna taşınan ögeler burada gösterilecek ve %d gün sonra silinecek.</item>
+        <item quantity="other">Çöp Kutusuna taşınan ögeler burada gösterilecek ve %d gün sonra silinecek.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">%d öge indiriliyor...</item>
+        <item quantity="other">%d öge indiriliyor...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">%d öge yükleniyor...</item>
+        <item quantity="other">%d öge yükleniyor...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">Bu öge kalıcı olarak silinecek ve geri yüklenemeyecek.</item>
+        <item quantity="other">Bu ögeler kalıcı olarak silinecek ve geri yüklenmeyecek.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">Öge kaldırıldı</item>
+        <item quantity="other">Ögeler kaldırıldı</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">Hâlâ %d günlük ücretsiz dışa aktarma hakkınız var.</item>
+        <item quantity="other">Hâlâ %d günlük ücretsiz dışa aktarma hakkınız var.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">Tebrikler! Filigran olmadan dışa aktarmak için aylık %d ücretsiz kullanım hakkına sahipsiniz.</item>
+        <item quantity="other">Tebrikler! Filigran olmadan dışa aktarmak için aylık %d ücretsiz kullanım hakkına sahipsiniz.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">Filigran olmadan dışa aktarmak için hâlâ %d ücretsiz kullanım hakkınız var.</item>
+        <item quantity="other">Filigran olmadan dışa aktarmak için hâlâ %d ücretsiz kullanım hakkınız var.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">Tebrikler! Filigran olmadan dışa aktarmak için %d ücretsiz kullanım hakkına sahipsiniz.</item>
+        <item quantity="other">Tebrikler! Filigran olmadan dışa aktarmak için %d ücretsiz kullanım hakkına sahipsiniz.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">%d kullanım</item>
+        <item quantity="other">%d kullanım</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">İlk kez kullananlara özel %d kredi indirim. Aşılırsa daha fazla kredi kullanılır.</item>
+        <item quantity="other">İlk kez kullananlara özel %d kredi indirim. Aşılırsa daha fazla kredi kullanılır.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">Bu özelliği uygulamak için %d kredi daha gerekir</item>
+        <item quantity="other">Bu özelliği uygulamak için %d kredi daha gerekir</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">Klip %d saniyeyi geçmemelidir</item>
+        <item quantity="other">Klip %d saniyeyi geçmemelidir</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">%d krediniz kaldı.</item>
+        <item quantity="other">%d krediniz kaldı.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">{$benefit_name$} özelliğini uygulamak için {$credit_amount$} kredi kullanılacak.</item>
+        <item quantity="other">{$benefit_name$} özelliğini uygulamak için {$credit_amount$} kredi kullanılacak.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">Bu özelliğin uygulanması için %d kredi kullanılacak.</item>
+        <item quantity="other">Bu özelliğin uygulanması için %d kredi kullanılacak.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">Bu şablon için %d kredi kullanılacak.</item>
+        <item quantity="other">Bu şablon için %d kredi kullanılacak.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">Kalıcı olarak silinecek ve geri yüklenemeyecek.</item>
+        <item quantity="other">Kalıcı olarak silinecekler ve geri yüklenemeyecekler.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">Bu öge silinsin mi?</item>
+        <item quantity="other">Bu ögeler silinsin mi?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">%1$d “%1$s” projesi</item>
+        <item quantity="other">%1$d \"%1$s\" projesi</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">%d öge Çöp Kutusuna taşındı</item>
+        <item quantity="other">%d öge Çöp Kutusuna taşındı</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">%d öge Favorilere eklendi</item>
+        <item quantity="other">%d öge Favorilere eklendi</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">%d öge Favorilerden kaldırıldı</item>
+        <item quantity="other">%d öge Favorilerden kaldırıldı</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">Bu ücretsiz bir alan ve en fazla %1$d üyesi olabilir. %2$s üye daha davet edilebilir.</item>
+        <item quantity="other">Bu ücretsiz bir alan ve en fazla %1$d üyesi olabilir. %2$s üye daha davet edilebilir.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">%d kullanım/ay</item>
+        <item quantity="other">%d kullanım/ay</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d kullanım/gün</item>
+        <item quantity="other">%d kullanım/gün</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d kullanım/hafta</item>
+        <item quantity="other">%d kullanım/hafta</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">{number} ay sonra {price}</item>
+        <item quantity="other">{number} ay sonra {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">%2$d ay sonra %1$s</item>
+        <item quantity="other">%2$d ay sonra %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">{number} yıl sonra {price}</item>
+        <item quantity="other">{number} yıl sonra {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">%2$d yıl sonra %1$s</item>
+        <item quantity="other">%2$d yıl sonra %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">Bu alanda %d üye var.</item>
+        <item quantity="other">Bu alanda %d üye var.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">Hâlâ %1$d üye davet edebilirsiniz.</item>
+        <item quantity="other">Hâlâ %1$d üye davet edebilirsiniz.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">%1$d koltuk dolu.</item>
+        <item quantity="other">%1$d koltuk dolu.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">%d günlük ücretsiz deneme sürümünü başlat</item>
+        <item quantity="other">%d günlük ücretsiz deneme sürümünü başlat</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">%d kredi gerekiyor.</item>
+        <item quantity="other">%d kredi gerekiyor.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">%d krediniz kaldı.</item>
+        <item quantity="other">%d krediniz kaldı.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">%1$s/%2$s proje yükleniyor</item>
+        <item quantity="other">%1$s/%2$s proje yükleniyor</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"Bu medya dosyasına %d başka klip bağlı. O da değiştirilsin mi?
+Dosya orijinal süreye uyacak şekilde otomatik olarak kırpılacak."</item>
+        <item quantity="other">"Bu medya dosyasına %d başka klip bağlı. Onlar da değiştirilsin mi?
+Dosya orijinal süreye uyacak şekilde otomatik olarak kırpılacak."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">%d resim daha yükleyebilirsiniz</item>
+        <item quantity="other">%d resim daha yükleyebilirsiniz</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">%d segment güncellenecek</item>
+        <item quantity="other">%d segment güncellenecek</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">Hâlâ %1$d resim ve %2$s seçebilirsiniz</item>
+        <item quantity="other">Hâlâ %1$d resim ve %2$s seçebilirsiniz</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(en fazla %d sn.)</item>
+        <item quantity="other">(en fazla %d sn.)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d video</item>
+        <item quantity="other">%d video</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">Hâlâ %d resim seçebilirsiniz</item>
+        <item quantity="other">Hâlâ %d resim seçebilirsiniz</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">Hâlâ %d video seçebilirsiniz</item>
+        <item quantity="other">Hâlâ %d video seçebilirsiniz</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(en fazla %d sn.)</item>
+        <item quantity="other">(en fazla %d sn.)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">Kuyrukta... Yaklaşık %d dk. kaldı.</item>
+        <item quantity="other">Kuyrukta... Yaklaşık %d dk. kaldı.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">Bekleme süresini kısaltın · %d kullanım kaldı</item>
+        <item quantity="other">Bekleme süresini azaltın · %d kullanım kaldı</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">Sıradasınız... Yaklaşık %d sn. kaldı.</item>
+        <item quantity="other">Sıradasınız... Yaklaşık %d sn. kaldı.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">Pro ile hızlı kuyrukta... Yaklaşık %d dk. kaldı.</item>
+        <item quantity="other">Pro ile hızlı kuyrukta... Yaklaşık %d dk. kaldı.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">%d öge</item>
+        <item quantity="other">%d öge</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">%d öge seçildi</item>
+        <item quantity="other">%d öge seçildi</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">%d proje</item>
+        <item quantity="other">%d proje</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">%d proje seçildi</item>
+        <item quantity="other">%d proje seçildi</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">Şu anda çok fazla kişi bu özelliği kullanıyor. Tahmini bekleme süreniz %d dakika.</item>
+        <item quantity="other">Şu anda çok fazla kişi bu özelliği kullanıyor. Tahmini bekleme süreniz %d dakika.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">Tekrar oluşturmak için %d kredi kullanılacak.</item>
+        <item quantity="other">Tekrar oluşturmak için %d kredi kullanılacak.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">Yeni öge ile tekrar oluşturma işlemi için %d kredi kullanılacak.</item>
+        <item quantity="other">Yeni öge ile tekrar oluşturma işlemi için %d kredi kullanılacak.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">%d klip eklendi</item>
+        <item quantity="other">%d klip eklendi</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">%d öge seçin</item>
+        <item quantity="other">%d öge seçin</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">Sizin için %d video oluşturuldu</item>
+        <item quantity="other">Sizin için %d video oluşturuldu</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">Yalnızca %d dakikadan kısa sesleri ayırabilirsiniz</item>
+        <item quantity="other">Yalnızca %d dakikadan kısa sesleri ayırabilirsiniz</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">Alanı %d gün içinde geri yükleyebilirsiniz.</item>
+        <item quantity="other">Alanı %d gün içinde geri yükleyebilirsiniz.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">%d video oluşturuluyor. Daha sonra tekrar deneyin.</item>
+        <item quantity="other">%d video oluşturuluyor. Daha sonra tekrar deneyin.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">Bu özelliği %d kredi karşılığında kullanmak için yükseltin</item>
+        <item quantity="other">Bu özelliği %d kredi karşılığında kullanmak için yükseltin</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">Bu alanda sadece %d koltuğunuz kaldı.</item>
+        <item quantity="other">Bu alanda sadece %d koltuğunuz kaldı.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">%d öge kullanıldı</item>
+        <item quantity="other">%d öge kullanıldı</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">%d öge seçildi</item>
+        <item quantity="other">%d öge seçildi</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">%d öge seçin</item>
+        <item quantity="other">%d öge seçin</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">%d alt yazı</item>
+        <item quantity="other">%d alt yazı</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">%d öge</item>
+        <item quantity="other">%d öge</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">%d özellik uygulanıyor. Daha sonra tekrar deneyin.</item>
+        <item quantity="other">%d özellik uygulanıyor. Daha sonra tekrar deneyin.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">"%d ücretsiz kullanım kaldı. Kredi ile kullanmak için Standart'a katılın."</item>
+        <item quantity="other">"%d ücretsiz kullanım kaldı. Kredi ile kullanmak için Standart'a katılın."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">"%d ücretsiz kullanım kaldı. Kredi ile kullanmak için Pro'ya katılın."</item>
+        <item quantity="other">"%d ücretsiz kullanım kaldı. Kredi ile kullanmak için Pro'ya katılın."</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">%d ücretsiz kullanım kaldı. Kredi karşılığında kullanmak için Ultra abonesi olun.</item>
+        <item quantity="other">%d ücretsiz kullanım kaldı. Kredi ile kullanmak için Ultra abonesi olun.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">Bu işlem için %1$d kredi kullanılır.%2$s</item>
+        <item quantity="other">Bu işlem için %1$d kredi kullanılır.%2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">%d krediniz kaldı.</item>
+        <item quantity="other">%d krediniz kaldı.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">%d kredi karşılığında kullanmak için Ultra abonesi olun</item>
+        <item quantity="other">%d kredi karşılığında kullanmak için Ultra abonesi olun</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">"Bu özelliği %d kredi karşılığında kullanmak için Pro'ya katılın."</item>
+        <item quantity="other">"Bu özelliği %d kredi karşılığında kullanmak için Pro'ya katılın."</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">"Bu özelliği %d kredi karşılığında kullanmak için Standart'a katılın."</item>
+        <item quantity="other">"Bu özelliği %d kredi karşılığında kullanmak için Standart'a katılın."</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">En fazla %1$d ses kaydedebilirsiniz.</item>
+        <item quantity="other">En fazla %1$d ses kaydedebilirsiniz.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">%1$d dakikadan uzun bir klipteki ses geliştirilemez</item>
+        <item quantity="other">%1$d dakikadan uzun bir klipteki ses geliştirilemez</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">En iyi sonuçlar için %d öge seçin</item>
+        <item quantity="other">En iyi sonuçlar için %d öge seçin</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">İlk %2$d ay için %1$s, ardından %3$s olarak yenilenir.</item>
+        <item quantity="other">İlk %2$d ay için %1$s, ardından %3$s olarak yenilenir.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">İlk %2$d yıl için %1$s, ardından %3$s olarak yenilenir.</item>
+        <item quantity="other">İlk %2$d yıl için %1$s, ardından %3$s olarak yenilenir.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">%d güncelleme yaptınız. Konuşma oluşturulsun ve dudak senkronizasyonu yapılsın mı?</item>
+        <item quantity="other">%d güncelleme yaptınız. Konuşma oluşturulsun ve dudak senkronizasyonu yapılsın mı?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">%d kez daha kullanılabilir</item>
+        <item quantity="other">%d kez daha kullanılabilir</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">%d sessiz klip var.</item>
+        <item quantity="other">%d sessiz klip var.</item>
+    </plurals>
+</resources>

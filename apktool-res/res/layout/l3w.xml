@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:background="@drawable/kcn" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:background="@drawable/lai" n0:layout_width="32.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/k10" n0:layout_marginVertical="8.0dp" />
+    <View n0:background="#14000000" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rvTemplateFilter" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginHorizontal="12.0dp" />
+</LinearLayout>

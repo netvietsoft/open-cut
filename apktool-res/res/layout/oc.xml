@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/media_root" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/guideFragment" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/iv_header_back_root" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="44.0dp" n0:src="@drawable/p2h" n0:scaleType="centerInside" n0:layout_marginStart="6.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/rootView_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toTopOf="@id/dividerLine" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/k_t" />
+    </FrameLayout>
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/textAudioFragmentContainerView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n4:layout_constraintBottom_toTopOf="@id/dividerLine" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/dividerLine" n0:background="@color/ky" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="1.0dp" n5:layout_constraintBottom_toTopOf="@id/textAudioTabLayout"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.google.android.material.tabs.TabLayout n0:id="@id/textAudioTabLayout" n0:background="@color/si" n0:paddingBottom="34.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:tabIndicatorHeight="0.0dp" n6:tabMinWidth="100.0dp" n6:tabRippleColor="@null"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/longTextFragmentContainerView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n7:layout_constraintBottom_toTopOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

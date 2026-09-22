@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/edit_more_container" n0:tag="layout/xt_fragment_export_edit_more_0" n0:background="@drawable/q8y" n0:layout_width="213.0dp" n0:layout_height="48.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <TextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/kxw" n0:id="@id/edit_more" n0:tag="binding_1" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="30.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/rju" n0:layout_marginEnd="4.0dp" n1:layout_constraintBottom_toBottomOf="@id/edit_more" n1:layout_constraintEnd_toStartOf="@id/edit_more" n1:layout_constraintTop_toTopOf="@id/edit_more" />
+</androidx.constraintlayout.widget.ConstraintLayout>

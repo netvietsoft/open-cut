@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundCornerImageView n0:id="@id/iv_pic" n0:background="@color/APKTOOL_RENAMED_0x7f06063a" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginLeft="2.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginRight="2.0dp" n0:layout_marginBottom="2.0dp" n0:scaleType="centerCrop" n0:layout_marginHorizontal="2.0dp" n0:layout_marginVertical="2.0dp" n1:layout_constraintBottom_toBottomOf="@id/select_mask" n1:layout_constraintEnd_toEndOf="@id/select_mask" n1:layout_constraintStart_toStartOf="@id/select_mask" n1:layout_constraintTop_toTopOf="@id/select_mask" n1:layout_goneMarginStart="4.0dp" n1:_5="8.0dp" n1:klh="8.0dp" n1:ktn="8.0dp" n1:kuf="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/select_mask" n0:background="@drawable/pd0" n0:visibility="invisible" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintBottom_toTopOf="@id/tv_num" n2:layout_constraintDimensionRatio="68:84" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_chainStyle="packed"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_select" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:src="@drawable/mgn" n0:layout_marginEnd="4.0dp" n3:layout_constraintBottom_toBottomOf="@id/iv_pic" n3:layout_constraintEnd_toEndOf="@id/iv_pic"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/ve" n0:gravity="center" n0:id="@id/tv_num" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="@id/select_mask" n4:layout_constraintStart_toStartOf="@id/select_mask" n4:layout_constraintTop_toBottomOf="@id/select_mask"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="@dimen/wg"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:layout_gravity="center|top" n0:orientation="horizontal" n0:paddingLeft="@dimen/wd" n0:paddingTop="@dimen/wd" n0:paddingRight="@dimen/wd" n0:layout_width="match_parent" n0:layout_height="@dimen/wg" n0:paddingStart="@dimen/wd" n0:paddingEnd="@dimen/wd" style="?kmg">
+        <com.google.android.material.button.MaterialButton n0:gravity="center" n0:layout_gravity="top" n0:id="@id/cancel_button" n0:padding="12.0dp" n0:layout_width="@dimen/yt" n0:layout_height="@dimen/yt" n0:insetTop="0.0dp" n0:insetBottom="0.0dp" n0:contentDescription="@string/qki" n1:APKTOOL_RENAMED_0x7f040574="@drawable/pek" n1:kt-="@color/APKTOOL_RENAMED_0x7f06040d" style="?kmd"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n0:id="@id/mtrl_picker_header_title_and_selection" n0:paddingLeft="@dimen/wi" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_weight="1.0" n0:paddingStart="@dimen/wi">
+            <TextView n0:gravity="start|bottom" n0:layout_gravity="start|top" n0:id="@id/mtrl_picker_title_text" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:APKTOOL_RENAMED_0x7f0404f6="@dimen/xl" style="?kmi"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <TextView n0:gravity="start|bottom" n0:layout_gravity="start|top" n0:id="@id/mtrl_picker_header_selection_text" n0:paddingBottom="@dimen/w8" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:APKTOOL_RENAMED_0x7f0404f6="@dimen/w9" n3:kks="@dimen/wh" style="?kmh"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <LinearLayout n0:orientation="@integer/k_" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton n0:layout_gravity="end|top" n0:id="@id/confirm_button" n0:layout_width="wrap_content" n0:layout_height="@dimen/yt" n0:text="@string/qll" n0:contentDescription="@string/qll" style="?kme" />
+            <include layout="@layout/lal" />
+        </LinearLayout>
+    </LinearLayout>
+    <View n0:layout_gravity="bottom" n0:layout_width="match_parent" n0:layout_height="@dimen/we" style="?kmf" />
+</merge>

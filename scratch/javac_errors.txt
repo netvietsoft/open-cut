@@ -1,0 +1,13 @@
+﻿javac.exe : warning: [options] source value 8 is obsolete and will be removed in a future release
+At D:\Decompiler\App\Video\Capcut\scratch\test_compile.ps1:7 char:1
++ & javac --release 8 -g -cp "$PLATFORM_JAR" -d "$OUT_DIR\classes" $jav ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: [optio... future release:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: D:\Decompiler\App\Video\Capcut\apps\android\app\src\main\java\com\nextai\opencut\presentation\MainActivity.java 
+uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/previewControlBar" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/tvStartTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="@id/ivStartButton" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/ivStartButton"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/tvTimeDivider" n0:background="@drawable/APKTOOL_RENAMED_0x7f08090e" n0:layout_width="1.0dp" n0:layout_height="4.0dp" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp" n2:layout_constraintBottom_toBottomOf="@id/tvStartTime" n2:layout_constraintStart_toEndOf="@id/tvStartTime" n2:layout_constraintTop_toTopOf="@id/tvStartTime"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="#66e5e9fa" n0:id="@id/tvEndTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uqg" n0:layout_marginStart="6.0dp" n3:layout_constraintBottom_toBottomOf="@id/ivStartButton" n3:layout_constraintStart_toEndOf="@id/tvTimeDivider" n3:layout_constraintTop_toTopOf="@id/ivStartButton"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivStartButton" n0:background="@drawable/APKTOOL_RENAMED_0x7f081f12" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginVertical="12.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <include n0:visibility="gone" n0:layout_width="86.0dp" n0:layout_height="32.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginEnd="16.0dp" n0:layout_marginVertical="12.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent" layout="@layout/APKTOOL_RENAMED_0x7f0c0c45"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <include n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="32.0dp" n0:layout_marginEnd="12.0dp" n6:layout_constrainedWidth="true" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintHorizontal_bias="1.0" n6:layout_constraintStart_toEndOf="@id/btCopyright" n6:layout_constraintTop_toTopOf="parent" n6:layout_goneMarginStart="24.0dp" layout="@layout/APKTOOL_RENAMED_0x7f0c0c44"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/free_unlock_template_badge" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:layout_marginEnd="14.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintTop_toTopOf="parent" n7:kml="small" n7:kmm="button" n7:kr0="limitFree"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.libcutsame.view.CutSameUndoRedoView n0:id="@id/layout_undo_redo_bar_control" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="48.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/btCopyright" n0:background="@drawable/kbe" n0:padding="8.0dp" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/qzj" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="8.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toStartOf="@id/freeUnlockGoToEdit" n9:layout_constraintHorizontal_bias="1.0" n9:layout_constraintStart_toEndOf="@id/ivStartButton" n9:layout_constraintTop_toTopOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_graffiti_pen_text_fragment_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/text_fragment_container" n0:background="@drawable/q7k" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <LinearLayout n0:orientation="horizontal" n0:id="@id/edit_text_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toTopOf="@id/tab_layout" n1:layout_constraintStart_toStartOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <EditText n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:textColorHint="@color/kuh" n0:gravity="center_vertical" n0:id="@id/graffiti_pen_edit_text" n0:background="@drawable/q45" n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:focusable="true" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="2.0dp" n0:minHeight="36.0dp" n0:hint="@string/ss5" n0:maxLines="4" n0:singleLine="true" n0:maxLength="500" n0:layout_weight="1.0" n0:inputType="textMultiLine" n0:textCursorDrawable="@drawable/q49" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n0:importantForAutofill="no" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <ImageView n0:layout_gravity="bottom" n0:id="@id/iv_confirm" n0:padding="12.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="2.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08338b" n0:scaleType="fitCenter" n0:contentDescription="@string/ss5" n0:layout_marginEnd="8.0dp" n1:kd8="@color/kxw" />
+        </LinearLayout>
+        <com.google.android.material.tabs.TabLayout n0:id="@id/tab_layout" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:paddingStart="4.0dp" n2:layout_constraintBottom_toTopOf="@id/line" n2:layout_constraintStart_toStartOf="parent" n2:tabBackground="@null" n2:tabGravity="fill" n2:tabIndicator="@drawable/r-o" n2:tabIndicatorColor="?k2i" n2:tabIndicatorHeight="2.0dp" n2:tabMinWidth="0.0dp" n2:tabMode="fixed" n2:tabRippleColor="@null" n2:tabSelectedTextColor="@color/ks3" n2:tabTextAppearance="@style/APKTOOL_RENAMED_0x7f13047e" n2:tabTextColor="@color/kxw"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.google.android.material.tabs.TabLayout n0:id="@id/tab_layout_mask" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:paddingStart="4.0dp" n3:layout_constraintBottom_toTopOf="@id/line" n3:layout_constraintStart_toStartOf="parent" n3:tabBackground="@null" n3:tabGravity="fill" n3:tabIndicatorHeight="0.0dp" n3:tabMinWidth="0.0dp" n3:tabMode="fixed" n3:tabRippleColor="@null" n3:tabTextAppearance="@style/APKTOOL_RENAMED_0x7f13047e" n3:tabTextColor="@color/kxw"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/line" n0:background="@color/kw1" n0:layout_width="match_parent" n0:layout_height="0.5dp" n4:layout_constraintBottom_toTopOf="@id/fl_container"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n0:id="@id/fl_container" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070438" n5:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <androidx.fragment.app.FragmentContainerView n0:id="@id/palette_panel" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="384.0dp" n6:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

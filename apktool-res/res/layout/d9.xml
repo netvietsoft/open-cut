@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:background="@drawable/kcj" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="250.0dp" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:text="@string/ms8" />
+        <ImageView n0:layout_gravity="end|center" n0:id="@id/invite_cancel" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/l51" />
+    </FrameLayout>
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#757580" n0:gravity="start" n0:id="@id/invite_link_detail" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="32.0dp" />
+        <View n0:layout_gravity="center" n0:id="@id/link_loading_icon" n0:background="@drawable/odr" n0:visibility="invisible" n0:layout_width="20.0dp" n0:layout_height="20.0dp" />
+    </FrameLayout>
+    <com.vega.main.cloud.group.view.GroupInviteSharePlatformView n0:id="@id/dialog_group_invite_share_platforms" n0:visibility="gone" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/dialog_group_invite_ll_invite_cc" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp">
+        <LinearLayout n0:orientation="vertical" n0:id="@id/dialog_group_invite_ll_copy_link" n0:paddingTop="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" n0:paddingVertical="16.0dp">
+            <ImageView n0:layout_gravity="center_horizontal" n0:background="@drawable/oha" n0:layout_width="40.0dp" n0:layout_height="40.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1218d3" />
+        </LinearLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/dialog_group_invite_ll_instagram" n0:paddingTop="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" n0:paddingVertical="16.0dp">
+            <ImageView n0:layout_gravity="center_horizontal" n0:background="@drawable/pr6" n0:layout_width="40.0dp" n0:layout_height="40.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/msx" />
+        </LinearLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/dialog_group_invite_ll_whatsapp" n0:paddingTop="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" n0:paddingVertical="16.0dp">
+            <ImageView n0:layout_gravity="center_horizontal" n0:background="@drawable/pu3" n0:layout_width="40.0dp" n0:layout_height="40.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/rck" />
+        </LinearLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/dialog_group_invite_ll_facebook" n0:paddingTop="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" n0:paddingVertical="16.0dp">
+            <ImageView n0:layout_gravity="center_horizontal" n0:background="@drawable/prm" n0:layout_width="40.0dp" n0:layout_height="40.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f121273" />
+        </LinearLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/dialog_group_invite_ll_others" n0:paddingTop="16.0dp" n0:paddingBottom="16.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" n0:paddingVertical="16.0dp">
+            <ImageView n0:layout_gravity="center_horizontal" n0:background="@drawable/ps7" n0:layout_width="40.0dp" n0:layout_height="40.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_3" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/qtq" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

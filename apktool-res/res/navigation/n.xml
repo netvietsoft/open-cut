@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/email_password_nav_graph" app:kz0="@id/startFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.lemon.account.email.PasswordStartFragment" android:id="@id/startFragment">
+        <action android:id="@id/verifyCurrent" app:APKTOOL_RENAMED_0x7f040444="@id/verifyCurrentFragment" />
+        <action android:id="@id/inputMail" app:APKTOOL_RENAMED_0x7f040444="@id/inputMailFragment" />
+        <action android:id="@id/addPassword" app:APKTOOL_RENAMED_0x7f040444="@id/addPasswordFragment" />
+    </fragment>
+    <fragment android:name="com.lemon.account.email.VerifyCurrentMailFragment" android:id="@id/verifyCurrentFragment">
+        <action android:id="@id/addPassword" app:APKTOOL_RENAMED_0x7f040444="@id/addPasswordFragment" />
+    </fragment>
+    <fragment android:name="com.lemon.account.email.EmailCreatePasswordFragment" android:id="@id/addPasswordFragment" />
+    <fragment android:name="com.lemon.account.email.InputMailFragment" android:id="@id/inputMailFragment">
+        <action android:id="@id/verifyMail" app:APKTOOL_RENAMED_0x7f040444="@id/verifyMailFragment" />
+    </fragment>
+    <fragment android:name="com.lemon.account.email.VerifyMailFragment" android:id="@id/verifyMailFragment">
+        <action android:id="@id/addPassword" app:APKTOOL_RENAMED_0x7f040444="@id/addPasswordFragment" />
+    </fragment>
+</navigation>

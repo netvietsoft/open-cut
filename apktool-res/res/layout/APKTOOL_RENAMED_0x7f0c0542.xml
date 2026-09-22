@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/feed_control_layout" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/gestureContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <View n0:id="@id/preview_bbg_title_bar_video_pre" n0:background="@drawable/lcq" n0:layout_width="match_parent" n0:layout_height="60.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/preview_bbg_video_pre_info" n0:background="@drawable/le-" n0:layout_width="match_parent" n0:layout_height="150.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.feedx.main.ui.preview.FeedVideoCtrlLayout n0:id="@id/feed_video_ctrl_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <include layout="@layout/k6_" />
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/blackHover" n0:background="@color/fh" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:text="@string/rxh" />
+    <FrameLayout n0:id="@id/fragment_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

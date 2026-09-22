@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lar" n0:paddingTop="@dimen/rr" n0:paddingBottom="@dimen/rr" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="@dimen/c5" n0:textStyle="bold" n0:textColor="@color/ww" n0:ellipsize="end" n0:gravity="center_vertical" n0:id="@id/chapter_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:maxLines="2" n0:lineSpacingExtra="3.0sp" n0:layout_marginStart="@dimen/rr" n0:layout_marginEnd="@dimen/rr" n0:letterSpacing="0.02" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.publish.template.publish.widget.ScrollableEditText n0:textSize="@dimen/c4" n0:textColor="@color/ww" n0:textColorHint="#66e5e9fa" n0:gravity="start|top" n0:id="@id/chapter_description" n0:background="@null" n0:scrollbars="vertical" n0:layout_width="match_parent" n0:layout_height="120.0dp" n0:layout_marginTop="@dimen/rp" n0:hint="@string/ki2" n0:lineSpacingExtra="6.0sp" n0:textIsSelectable="true" n0:layout_marginStart="@dimen/rr" n0:layout_marginEnd="@dimen/rr" n0:lineHeight="24.0sp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/chapter_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/top_overlay" n0:background="@drawable/llc" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/rr" n0:layout_marginStart="@dimen/rr" n0:layout_marginEnd="@dimen/rr" n3:layout_constraintTop_toTopOf="@id/chapter_description"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:layout_gravity="bottom" n0:id="@id/bottom_overlay" n0:background="@drawable/llb" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/rr" n0:layout_marginStart="@dimen/rr" n0:layout_marginEnd="@dimen/rr" n4:layout_constraintBottom_toBottomOf="@id/chapter_description"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.scroll.HorizontalRecyclerView n0:id="@id/chapter_recyclerview" n0:fadingEdgeLength="@dimen/rw" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/rv" n0:requiresFadingEdge="horizontal" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/chapter_description"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

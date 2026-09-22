@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="#fff" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:background="@drawable/tt_mediation_card_bg" n0:padding="15.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp">
+        <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:gravity="center" n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="30.0dp" n0:text="@string/rmo" />
+        <RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <TextView n0:textSize="16.0sp" n0:textColor="#333" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qka" />
+            <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_666" n0:id="@id/msdk_version" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View n0:id="@id/view_line1" n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+        <RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp">
+            <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lfq" />
+            <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_666" n0:id="@id/test_app_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+        <RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp">
+            <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l7z" />
+            <TextView n0:textSize="14.0sp" n0:textColor="#666" n0:id="@id/tv_slarder_enable" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lz3" n0:includeFontPadding="false" n0:drawableLeft="@drawable/tt_alert_selector" n0:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+        <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:gravity="center" n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="30.0dp" n0:text="Functional Area" />
+        <RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp">
+            <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:id="@id/tv_personalad" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l7y" />
+            <TextView n0:textSize="14.0sp" n0:textColor="#666" n0:id="@id/tv_personalad_limit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lz3" n0:includeFontPadding="false" n0:layout_below="@id/tv_personalad" />
+        </RelativeLayout>
+        <View n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+        <RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp">
+            <TextView n0:textSize="16.0sp" n0:textColor="#333" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rws" />
+            <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_4081" n0:id="@id/tv_alog" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:layout_marginBottom="5.0dp" n0:text="@string/lu6" n0:drawableLeft="@drawable/tt_alert_selector" n0:layout_alignParentRight="true" n0:layout_marginVertical="5.0dp" />
+            <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_4081" n0:id="@id/tv_alog_updesc" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_below="@id/tv_alog" />
+        </RelativeLayout>
+        <View n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+        <RelativeLayout n0:id="@id/rl_ppe_env" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp">
+            <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:id="@id/tv_ppe" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="PPE ENV" />
+            <EditText n0:textColor="#666" n0:id="@id/et_ppe" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="ppe_ndpeenv60_1751440865303" n0:layout_below="@id/tv_ppe" />
+            <TextView n0:textColor="@color/tt_color_4081" n0:id="@id/tvppe_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_below="@id/et_ppe" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/clear_ppe_btn" n0:background="@drawable/tt_btn_bg_grey" n0:layout_width="60.0dp" n0:layout_height="30.0dp" n0:layout_marginTop="2.0dp" n0:text="clear" n0:layout_alignParentTop="true" n0:layout_alignParentEnd="true" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/switch_btn" n0:background="@drawable/tt_btn_select_bg" n0:layout_width="80.0dp" n0:layout_height="30.0dp" n0:layout_marginTop="5.0dp" n0:text="ppe on" n0:layout_below="@id/clear_ppe_btn" n0:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+        <RelativeLayout n0:gravity="center_vertical" n0:orientation="vertical" n0:id="@id/ll_configcontainer" n0:padding="5.0dp" n0:layout_width="match_parent" n0:layout_height="60.0dp" n0:layout_marginTop="5.0dp">
+            <TextView n0:textSize="16.0sp" n0:textColor="@color/tt_color_333" n0:id="@id/tv_config_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/lz4" />
+            <TextView n0:textSize="14.0sp" n0:textColor="#666" n0:id="@id/config_is_load" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/lz3" n0:includeFontPadding="false" n0:drawableLeft="@drawable/tt_alert_selector" n0:drawablePadding="8.0dp" n0:layout_below="@id/tv_config_title" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_clear_config" n0:background="@drawable/tt_btn_bg_grey" n0:layout_width="120.0dp" n0:layout_height="30.0dp" n0:layout_marginTop="10.0dp" n0:text="@string/lt5" n0:layout_alignParentTop="true" n0:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" />
+        <View n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+        <RelativeLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="5.0dp">
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_log" n0:background="@drawable/tt_btn_select_bg" n0:padding="5.0dp" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:text="@string/mnw" n0:textAllCaps="false" n0:layout_alignParentStart="true" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_go_byteio" n0:background="@drawable/tt_btn_select_bg" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_marginLeft="5.0dp" n0:text="@string/mnt" n0:layout_toRightOf="@id/btn_log" n0:textAllCaps="false" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_preview_splash" n0:background="@drawable/tt_btn_select_bg" n0:padding="5.0dp" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:text="@string/l7a" n0:textAllCaps="false" n0:layout_alignParentEnd="true" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_settings" n0:background="@drawable/tt_btn_bg_grey" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_marginTop="5.0dp" n0:text="@string/rmq" n0:layout_below="@id/btn_preview_splash" n0:textAllCaps="false" />
+        </RelativeLayout>
+        <View n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+        <RelativeLayout n0:gravity="center" n0:id="@id/rl_select_adn" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp">
+            <TextView n0:textSize="20.0dp" n0:textStyle="bold" n0:textColor="@color/tt_color_333" n0:id="@id/tv_select_adn_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Select ADN" />
+            <CheckBox n0:id="@id/cb_need_cold" n0:background="@drawable/tt_btn_select_bg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_below="@id/tv_select_adn_desc" />
+            <CheckedTextView n0:textColor="@color/tt_color_title" n0:id="@id/cb_need_cold_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n0:text="need cold start" n0:layout_toRightOf="@id/cb_need_cold" n0:layout_below="@id/tv_select_adn_desc" />
+            <ImageView n0:id="@id/iv_arrow" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@mipmap/tt_arrow_right" n0:layout_alignParentEnd="true" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_select_clear" n0:background="@drawable/tt_btn_select_bg" n0:visibility="invisible" n0:layout_width="60.0dp" n0:layout_height="30.0dp" n0:text="clear" n0:layout_toLeftOf="@id/iv_arrow" n0:textAllCaps="false" />
+            <TextView n0:textSize="20.0dp" n0:textStyle="bold" n0:textColor="@color/tt_blue_c93" n0:id="@id/tv_select_adn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginRight="10.0dp" n0:layout_toLeftOf="@id/btn_select_clear" />
+        </RelativeLayout>
+        <View n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+        <TextView n0:textSize="20.0dp" n0:textStyle="bold" n0:textColor="@color/tt_color_4081" n0:id="@id/tv_forbidden_adn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="10.0dp" />
+        <RelativeLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="5.0dp">
+            <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:gravity="center" n0:id="@id/tv_mediation" n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="30.0dp" n0:text="Mediation Debugger" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_go_max" n0:background="@drawable/tt_btn_bg_grey" n0:padding="5.0dp" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_margin="5.0dp" n0:text="@string/mnx" n0:layout_below="@id/tv_mediation" n0:textAllCaps="false" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_go_topon" n0:background="@drawable/tt_btn_bg_grey" n0:padding="5.0dp" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_marginTop="5.0dp" n0:text="@string/mnj" n0:layout_below="@id/tv_mediation" n0:textAllCaps="false" n0:layout_alignParentEnd="true" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_go_admob" n0:background="@drawable/tt_btn_bg_grey" n0:padding="5.0dp" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_marginTop="5.0dp" n0:text="@string/mnq" n0:layout_below="@id/tv_mediation" n0:layout_centerInParent="true" n0:textAllCaps="false" />
+            <Button n0:textColor="@color/tt_color_title" n0:id="@id/btn_go_pagm" n0:background="@drawable/tt_btn_bg_grey" n0:padding="5.0dp" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_margin="5.0dp" n0:text="@string/mnz" n0:layout_below="@id/btn_go_max" n0:textAllCaps="false" />
+        </RelativeLayout>
+        <View n0:background="@color/tt_color_d7" n0:layout_width="match_parent" n0:layout_height="2.0dp" />
+    </LinearLayout>
+    <RelativeLayout n0:id="@id/adn_layout" n0:background="@drawable/tt_mediation_card_bg" n0:padding="5.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="8.0dp">
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_999" n0:id="@id/adns_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/n3" />
+        <TextView n0:textSize="24.0sp" n0:textStyle="bold" n0:textColor="@color/tt_color_333" n0:id="@id/adn_num" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_below="@id/adns_info" />
+        <TextView n0:textColor="@color/tt_load_status_color_selector" n0:gravity="center" n0:id="@id/adapter_status" n0:background="@drawable/tt_ad_load_bg_selector" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:text="Adapter" n0:drawableLeft="@drawable/tt_alert_selector" n0:drawablePadding="4.0dp" n0:layout_below="@id/adn_num" />
+        <TextView n0:textColor="@color/tt_load_status_color_selector" n0:gravity="center" n0:id="@id/sdk_status" n0:background="@drawable/tt_ad_load_bg_selector" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:text="SDK" n0:drawableLeft="@drawable/tt_alert_selector" n0:drawablePadding="4.0dp" n0:layout_toRightOf="@id/adapter_status" n0:layout_below="@id/adn_num" />
+    </RelativeLayout>
+</LinearLayout>

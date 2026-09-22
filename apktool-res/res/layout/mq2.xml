@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/root_container" n0:tag="layout/xt_gallery_recommend_scene_size_item_0" n0:layout_width="match_parent" n0:layout_height="48.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/recommend_scene_size_icon" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kot" n0:id="@id/recommend_scene_name" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginStart="12.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/recommend_scene_size_icon" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/recommend_scene_size" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kot" n0:id="@id/recommend_size_width" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:alpha="0.4" n3:layout_constraintEnd_toStartOf="@id/recommend_size_x_icon" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kot" n0:id="@id/recommend_size_x_icon" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/tdi" n0:alpha="0.4" n3:layout_constraintEnd_toStartOf="@id/recommend_size_height" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kot" n0:id="@id/recommend_size_height" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:alpha="0.4" n3:layout_constraintEnd_toStartOf="@id/recommend_size_unit" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kot" n0:id="@id/recommend_size_unit" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:alpha="0.4" n3:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

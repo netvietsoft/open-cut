@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/exportView" n0:background="@drawable/kht" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/topHeaderContainer" n0:layout_width="match_parent" n0:layout_height="64.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/resolution" n0:background="@drawable/khh" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="25.0dp" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ml" n0:id="@id/resolutionText" n0:paddingLeft="7.0dp" n0:paddingRight="7.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:drawablePadding="4.0dp" n0:paddingHorizontal="7.0dp" n1:APKTOOL_RENAMED_0x7f040472="@drawable/otu" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="@color/ml" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/exportTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/l-f" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/ivClose" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/ndx" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kr3="none" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/share_to_section" n0:layout_width="match_parent" n0:layout_height="52.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="4.0dp" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintTop_toBottomOf="@id/topHeaderContainer"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/oik" n0:contentDescription="@string/kxg" n0:layout_marginEnd="8.0dp" />
+        <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#fffafbff" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kxg" />
+        <View n0:layout_width="0.0dp" n0:layout_height="1.0dp" n0:layout_weight="1.0" />
+        <com.vega.libcutsame.view.PlatformSelectorView n0:id="@id/platform_selector" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </LinearLayout>
+    <include n0:id="@id/remove_watermark_check_include" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/share_to_section" layout="@layout/l7b"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/replicate_check_include" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/remove_watermark_check_include" layout="@layout/l7c"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/promote_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/replicate_check_include" layout="@layout/l7a"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/export_section_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/promote_layout"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <com.vega.publishapi.template.ttpost.view.PostTTWinRewardsTip n0:id="@id/ttWinRewardsTip" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="38.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginStart="16.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout n0:id="@id/confirm_export_button" n0:background="@drawable/qnn" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/ttWinRewardsTip">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_centerInParent="true">
+                <ImageView n0:id="@id/confirm_button_icon" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081a8d" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="12.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toEndOf="@id/confirm_button_icon" n6:layout_constraintTop_toTopOf="parent">
+                    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="start" n0:id="@id/confirm_button_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Save and share to TikTok" n6:k1i="medium" />
+                    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mo" n0:id="@id/confirm_button_subtitle" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Without CapCut watermark" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include n0:id="@id/copyright_tip_container" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/export_section_container" layout="@layout/APKTOOL_RENAMED_0x7f0c0b66"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

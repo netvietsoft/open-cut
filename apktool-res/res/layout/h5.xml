@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/qpz" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:layout_width="match_parent" n0:layout_height="16.0dp" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/share_layout" n0:background="@drawable/kzr" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginEnd="16.0dp" n1:srcCompat="@drawable/oxn"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/q1a" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/setting_layout" n0:background="@drawable/kzr" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginEnd="16.0dp" n2:srcCompat="@drawable/oh3"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/q1r" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/delete_layout" n0:background="@drawable/kzr" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginEnd="16.0dp" n3:srcCompat="@drawable/ow-"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/lg-" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/download_layout" n0:background="@drawable/kzr" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginEnd="16.0dp" n4:srcCompat="@drawable/APKTOOL_RENAMED_0x7f08216d"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/l0d" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/report_layout" n0:background="@drawable/kzr" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginEnd="16.0dp" n5:srcCompat="@drawable/oh2"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/qeo" n0:layout_weight="1.0" />
+    </LinearLayout>
+    <View n0:layout_width="match_parent" n0:layout_height="10.0dp" />
+</LinearLayout>

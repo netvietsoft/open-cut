@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:id="@id/recommend_grid_view_layout" n0:layout_width="match_parent" n0:layout_height="80.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_gravity="center_vertical" n0:id="@id/song_item_image_layout" n0:layout_width="55.0dp" n0:layout_height="55.0dp" n0:layout_marginLeft="20.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/song_item_image" n0:background="#242424" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:placeholderImage="@drawable/p0h" n1:placeholderImageScaleType="centerCrop" />
+        <View n0:id="@id/song_item_image_mask" n0:background="#242424" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/lottie_audio_play" n0:layout_width="18.0dp" n0:layout_height="12.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="audio_play.json" n1:lottie_loop="true" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="center_vertical" n0:id="@id/song_item_text_layout" n0:layout_width="0.0dp" n0:layout_height="55.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_weight="1.0">
+        <com.vega.ui.widget.MarqueeTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/song_item_text_title" n0:focusable="true" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:maxWidth="160.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:elevation="10.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/_e" n0:ellipsize="end" n0:id="@id/song_item_text_duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:maxWidth="160.0dp" n0:singleLine="true" n3:layout_constraintBottom_toTopOf="@id/song_item_violate" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/song_item_text_title"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/_e" n0:ellipsize="end" n0:id="@id/song_item_violate" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:maxWidth="160.0dp" n0:text="@string/rcg" n0:singleLine="true" n0:drawablePadding="4.0dp" n4:APKTOOL_RENAMED_0x7f040477="@drawable/nt_" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/song_item_text_duration"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:layout_gravity="center_vertical" n0:id="@id/song_item_cut" n0:background="@drawable/p0o" n0:visibility="gone" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_marginEnd="12.0dp" />
+    <ImageView n0:layout_gravity="center_vertical" n0:id="@id/song_item_use_button" n0:background="@drawable/qlx" n0:paddingTop="9.0dp" n0:paddingBottom="9.0dp" n0:layout_width="50.0dp" n0:layout_height="30.0dp" n0:src="@drawable/qn5" n0:paddingStart="19.0dp" n0:paddingEnd="19.0dp" n0:layout_marginEnd="15.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n0:tag="layout/xt_adv_fragment_spacing_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:paddingTop="12.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+        <ImageView n0:id="@id/iv_bold" n0:background="@drawable/q42" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:src="@drawable/q48" n1:layout_constraintEnd_toStartOf="@id/iv_italic" n1:layout_constraintHorizontal_weight="1.0" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_italic" n0:background="@drawable/q42" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:src="@drawable/q4-" n0:layout_marginStart="20.599976dp" n0:layout_marginEnd="20.599976dp" n2:layout_constraintEnd_toStartOf="@id/iv_underline" n2:layout_constraintHorizontal_weight="1.0" n2:layout_constraintStart_toEndOf="@id/iv_bold" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_underline" n0:background="@drawable/q42" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0830bb" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintHorizontal_weight="1.0" n3:layout_constraintStart_toEndOf="@id/iv_italic" n3:layout_constraintTop_toTopOf="parent"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_align_left" n0:background="@drawable/q42" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="16.0dp" n0:src="@drawable/q4h" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/iv_bold"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_align_h_center" n0:background="@drawable/q42" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="16.0dp" n0:src="@drawable/q4g" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n5:layout_constraintEnd_toStartOf="@id/iv_align_right" n5:layout_constraintStart_toEndOf="@id/iv_align_left" n5:layout_constraintTop_toBottomOf="@id/iv_bold"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_align_right" n0:background="@drawable/q42" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="16.0dp" n0:src="@drawable/q4i" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n6:layout_constraintEnd_toStartOf="@id/iv_align_top" n6:layout_constraintStart_toEndOf="@id/iv_align_h_center" n6:layout_constraintTop_toBottomOf="@id/iv_bold"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_align_top" n0:background="@drawable/q42" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="16.0dp" n0:src="@drawable/q4j" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n7:layout_constraintEnd_toStartOf="@id/iv_align_v_center" n7:layout_constraintStart_toEndOf="@id/iv_align_right" n7:layout_constraintTop_toBottomOf="@id/iv_bold"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_align_v_center" n0:background="@drawable/q42" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="16.0dp" n0:src="@drawable/q40" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n8:layout_constraintEnd_toStartOf="@id/iv_align_bottom" n8:layout_constraintStart_toEndOf="@id/iv_align_top" n8:layout_constraintTop_toBottomOf="@id/iv_bold"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/iv_align_bottom" n0:background="@drawable/q42" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="16.0dp" n0:src="@drawable/q4f" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintTop_toBottomOf="@id/iv_bold"
+          xmlns:n9="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/slider_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n10:layout_constraintTop_toBottomOf="@id/iv_align_bottom"
+          xmlns:n10="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n0:orientation="vertical" n0:id="@id/scale_layout_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n10:layout_constraintStart_toStartOf="parent" n10:layout_constraintTop_toTopOf="parent">
+                <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/kxq" n0:ellipsize="end" n0:gravity="left|center" n0:id="@id/tv_scale" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1239ce" n0:maxLines="1" n10:nf="true" n10:layout_constraintStart_toStartOf="parent" />
+                <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/slider_scale" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="14.0dp" n10:APKTOOL_RENAMED_0x7f040545="8.0dp" n10:kko="?k2i" n10:kkt="@color/kw4" n10:APKTOOL_RENAMED_0x7f0406dd="200" n10:kn4="1" n10:kn-="16" n10:kar="2" />
+            </LinearLayout>
+            <LinearLayout n0:orientation="vertical" n0:id="@id/char_layout_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n10:layout_constraintStart_toStartOf="parent" n10:layout_constraintTop_toBottomOf="@id/scale_layout_container">
+                <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/kxq" n0:ellipsize="end" n0:gravity="left|center" n0:id="@id/tv_char" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sto" n0:maxLines="1" n10:nf="true" n10:layout_constraintStart_toStartOf="parent" />
+                <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/slider_char" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="14.0dp" n10:APKTOOL_RENAMED_0x7f040545="8.0dp" n10:kko="?k2i" n10:kkt="@color/kw4" n10:APKTOOL_RENAMED_0x7f0406dd="100" n10:kn4="0" n10:kn-="16" n10:kar="2" />
+            </LinearLayout>
+            <LinearLayout n0:orientation="vertical" n0:id="@id/line_layout_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n10:layout_constraintStart_toStartOf="parent" n10:layout_constraintTop_toBottomOf="@id/char_layout_container">
+                <com.xt.retouch.baseui.view.XTTextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/kxq" n0:ellipsize="end" n0:gravity="left|center" n0:id="@id/tv_line" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ss9" n0:maxLines="1" n10:nf="true" n10:layout_constraintStart_toStartOf="parent" />
+                <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/slider_line" n0:layout_width="match_parent" n0:layout_height="16.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="14.0dp" n10:APKTOOL_RENAMED_0x7f040545="8.0dp" n10:kko="?k2i" n10:kkt="@color/kw4" n10:APKTOOL_RENAMED_0x7f0406dd="100" n10:kn4="0" n10:kn-="16" n10:kar="2" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View n0:layout_width="match_parent" n0:layout_height="44.0dp" n11:layout_constraintTop_toBottomOf="@id/slider_layout"
+          xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

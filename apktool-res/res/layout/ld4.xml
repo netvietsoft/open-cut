@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="#0e0e11" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/host_mask_view" n0:background="#b30e0e11" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.nested.NestedScrollingRelativeLayout n0:id="@id/host_panel_shell" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/host_panel_content_root" n0:background="@drawable/APKTOOL_RENAMED_0x7f08060d" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="52.0dp">
+            <androidx.fragment.app.FragmentContainerView n0:name="androidx.navigation.fragment.NavHostFragment" n0:id="@id/ai_painting_nav_host_fragment" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:APKTOOL_RENAMED_0x7f040435="false" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:ko5="@navigation/k" />
+            <View n0:id="@id/host_drag_touch_delegate" n0:background="@android:color/transparent" n0:layout_width="0.0dp" n0:layout_height="84.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.vega.ui.nested.NestedScrollingRelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

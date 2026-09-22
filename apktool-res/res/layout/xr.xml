@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f080537" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/grabber_handle" n0:background="@drawable/kq8" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="6.0dp" />
+        <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/material_recycler_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layoutManager="androidx.recyclerview.widget.GridLayoutManager" n1:spanCount="3"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <com.vega.airecommend.smartselect.view.RvTransitionPlaceholder n0:id="@id/transition_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="@color/ui" n0:gravity="center_horizontal" n0:id="@id/tv_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/kua" />
+        <TextView n0:textSize="14.0dp" n0:textColor="@color/mm" n0:gravity="center_horizontal" n0:id="@id/tv_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:minHeight="36.0dp" n0:text="@string/kus" n0:letterSpacing="0.0067" />
+        <FrameLayout n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginBottom="8.0dp">
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/smart_select_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+                <TextView n0:textSize="16.0dp" n0:textColor="@color/ui" n0:gravity="center" n0:id="@id/smart_select_left_button" n0:background="@drawable/APKTOOL_RENAMED_0x7f080536" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:text="@string/kur" n0:layout_weight="1.0" n0:textAllCaps="false" n0:layout_marginEnd="12.0dp" />
+                <TextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/smart_select_right_button" n0:background="@drawable/APKTOOL_RENAMED_0x7f080535" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:text="@string/kuq" n0:layout_weight="1.0" n0:textAllCaps="false" />
+            </LinearLayout>
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/preview_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+                <FrameLayout n0:id="@id/refresh_layout" n0:background="@drawable/APKTOOL_RENAMED_0x7f080536" n0:layout_width="68.0dp" n0:layout_height="match_parent" n0:layout_marginEnd="12.0dp">
+                    <ImageView n0:layout_gravity="center" n0:id="@id/refresh_button" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/oj4" />
+                </FrameLayout>
+                <TextView n0:textSize="16.0dp" n0:textColor="@android:color/white" n0:ellipsize="end" n0:gravity="center" n0:id="@id/preview_button" n0:background="@drawable/APKTOOL_RENAMED_0x7f080535" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/kux" n0:maxLines="1" n0:singleLine="true" n0:layout_weight="1.0" n0:textAllCaps="false" />
+            </LinearLayout>
+            <FrameLayout n0:orientation="horizontal" n0:id="@id/loading_retry_layout" n0:background="@drawable/APKTOOL_RENAMED_0x7f080536" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent">
+                <ImageView n0:layout_gravity="center" n0:id="@id/refresh_loading_view" n0:background="@drawable/m6p" n0:visibility="visible" n0:layout_width="20.0dp" n0:layout_height="20.0dp" />
+                <TextView n0:textSize="16.0dp" n0:textColor="@color/ui" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/fail_retry_button" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kuu" n0:drawablePadding="8.0dp" n0:textAllCaps="false" n0:drawableStart="@drawable/m6q" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

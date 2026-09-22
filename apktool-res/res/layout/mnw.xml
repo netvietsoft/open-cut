@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xt.retouch.draftbox.ui.DraftItemConstraintLayout n0:id="@id/draft_item_view" n0:tag="layout/xt_draft_item_0" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="@dimen/h1" n0:layout_marginEnd="@dimen/h1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/draftImg" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/ic_draft_select" n0:tag="binding_1" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="4.0dp" n0:contentDescription="@string/saa" n0:layout_marginEnd="4.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:background="@drawable/rup" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:contentDescription="@string/sav" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+        <TextView n0:textAppearance="@style/APKTOOL_RENAMED_0x7f13048b" n0:gravity="center_vertical" n0:id="@id/ic_draft_ram" n0:layout_width="wrap_content" n0:layout_height="14.0dp" n0:layout_marginBottom="9.0dp" n0:alpha="0.9" n0:layout_marginStart="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+        <ImageView n0:id="@id/ic_middle_page" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/re9" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/ic_ai_tag" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/rle" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout n0:id="@id/aigc_generate_state_container" n0:background="@color/kxk" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <ImageView n0:layout_gravity="center" n0:id="@id/generate_fail_img" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/rmo" />
+            <TextView n0:textSize="12.0sp" n0:textColor="@color/kxw" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/generating_text" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tcs" />
+        </FrameLayout>
+        <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/aigc_generate_success_anim" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.xt.retouch.draftbox.ui.DraftItemConstraintLayout>

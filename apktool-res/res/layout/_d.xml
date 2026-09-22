@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.tux.icon.TuxIconView n0:id="@id/gmt_reward_photo_mode_ad_hint_icon" n0:layout_width="22.0dp" n0:layout_height="22.0dp" n0:layout_centerVertical="true" n0:layout_marginStart="17.0dp" n1:k0b="?kw"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.bytedance.tux.input.TuxTextView n0:textColor="?kw" n0:id="@id/gmt_reward_photo_mode_ad_hint_text" n0:layout_width="60.0dp" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginStart="9.0dp" n0:layout_toEndOf="@id/gmt_reward_photo_mode_ad_hint_icon" style="@style/t8" />
+</RelativeLayout>

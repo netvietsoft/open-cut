@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lwq" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.tabs.TabLayout n0:id="@id/tab_layout" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:tabContentStart="16.0dp" n1:tabGravity="start" n1:tabIndicator="@null" n1:tabIndicatorHeight="0.0dp" n1:tabMinWidth="0.0dp" n1:tabMode="scrollable" n1:tabRippleColor="@null" n1:tabTextColor="@color/v2"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/divide_line" n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:layout_width="match_parent" n0:layout_height="0.5dp" n2:layout_constraintTop_toBottomOf="@id/tab_layout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.viewpager.widget.ViewPager n0:id="@id/panel_view_pager" n0:layout_width="match_parent" n0:layout_height="210.0dp" n3:layout_constraintBottom_toTopOf="@id/bottom_bar" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintHeight_default="wrap" n3:layout_constraintHorizontal_bias="0.0" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/divide_line" n3:layout_constraintVertical_bias="0.0"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/divide_line_bottom" n0:background="@color/APKTOOL_RENAMED_0x7f060637" n0:layout_width="match_parent" n0:layout_height="0.5dp" n4:layout_constraintTop_toBottomOf="@id/panel_view_pager"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottom_bar" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:paddingBottom="22.0dp" n0:layout_width="match_parent" n0:layout_height="66.0dp" n0:layout_marginLeft="8.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginHorizontal="8.0dp" n5:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/close_btn" n0:padding="9.0dp" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/nkx" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/confirm_btn" n0:padding="9.0dp" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0818dc" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

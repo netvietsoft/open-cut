@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/tip_root" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/llContainer" n0:background="@drawable/kc6" n0:layout_width="185.0dp" n0:layout_height="wrap_content" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/tvGuideTips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginBottom="10.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1205c5" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" />
+    </LinearLayout>
+    <View n0:id="@id/vArrow" n0:background="@drawable/kc7" n0:layout_width="20.0dp" n0:layout_height="7.0dp" n0:layout_marginStart="12.0dp" n2:layout_constraintStart_toStartOf="@id/llContainer" n2:layout_constraintTop_toBottomOf="@id/llContainer"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

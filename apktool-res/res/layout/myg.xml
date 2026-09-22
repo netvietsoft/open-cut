@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView n0:tag="layout/xt_layout_middle_page_main_aigc_refactor_0" n0:background="@color/kor" n0:layout_width="match_parent" n0:layout_height="128.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_aigc_item_list" n0:layout_width="wrap_content" n0:layout_height="82.0dp" n0:overScrollMode="never" />
+        <LinearLayout n0:orientation="horizontal" n0:tag="binding_1" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <View n0:layout_gravity="center_vertical" n0:background="#38ffffff" n0:layout_width="0.5dp" n0:layout_height="58.0dp" />
+            <include n0:id="@id/image_enhance" n0:background="@color/kxw" n0:layout_width="72.0dp" n0:layout_height="82.0dp" n0:layout_marginStart="16.0dp" layout="@layout/mt4" />
+            <View n0:layout_width="16.0dp" n0:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

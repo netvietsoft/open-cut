@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/rootLayout" n0:tag="layout/xt_fragment_layer_common_pic_editor_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/layout_container" n0:background="@color/kuf" n0:paddingTop="16.0dp" n0:paddingBottom="16.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704b5" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/layout_layer_cancel" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/panel_cancel" n0:layout_width="32.0dp" n0:layout_height="54.0dp" n0:src="@drawable/r78" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/plugin_recycler_view" n0:scrollbars="none" n0:fadingEdgeLength="12.0dp" n0:layout_width="0.0dp" n0:layout_height="70.0dp" n0:overScrollMode="never" n0:requiresFadingEdge="horizontal" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/layout_layer_cancel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:id="@id/top_container" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toTopOf="@id/layout_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/bottom_container" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="@id/layout_container"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/child_fragment_container" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/bottom_fragment_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

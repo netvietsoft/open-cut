@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_item_portrait_template_0" n0:layout_width="48.0dp" n0:layout_height="56.0dp" n0:layout_marginEnd="6.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.SimpleRoundImageView n0:id="@id/portrait_template_cover" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:ks8="3.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/select_bg" n0:tag="binding_1" n0:background="@drawable/rku" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center" n0:id="@id/loading" n0:tag="binding_2" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n2:lottie_fileName="loading_white.json" n2:lottie_loop="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:layout_gravity="right" n0:id="@id/iv_delete" n0:tag="binding_3" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/rk5" />
+</FrameLayout>

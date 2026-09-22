@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_text_edit_panel_item_layout2_0" n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/container" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <View n0:id="@id/ic_new" n0:background="@drawable/rbd" n0:layout_width="30.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="10.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:layout_gravity="center_vertical" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="3.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <com.xt.retouch.baseui.view.BaseImageView n0:gravity="center" n0:id="@id/image" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:layout_marginTop="10.0dp" n0:scaleType="center" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" />
+            <TextView n0:textSize="10.0sp" n0:textColor="@color/ktx" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/title" n0:layout_width="50.0dp" n0:layout_height="wrap_content" n0:inputType="textMultiLine" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

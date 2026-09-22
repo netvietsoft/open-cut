@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center_vertical" n0:id="@id/clRoot" n0:background="@drawable/ld0" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="42.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mp" n0:gravity="center" n0:id="@id/tvCheckTitle" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:text="@string/lci" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/vPreCheckLine1" n0:background="@color/ky" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tvCheckTitle"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ml" n0:gravity="center" n0:id="@id/tvCheck" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:text="@string/ls7" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/vPreCheckLine1" n3:k1i="medium"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/vPreCheckLine2" n0:background="@color/h" n0:layout_width="match_parent" n0:layout_height="8.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tvCheck"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ml" n0:gravity="center" n0:id="@id/tvPreCheckCancel" n0:paddingTop="13.5dp" n0:paddingBottom="47.5dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/vPreCheckLine2" n5:k1i="medium"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/preCheckGroup" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" n6:constraint_referenced_ids="tvCheck,tvCheckTitle,tvPreCheckCancel,vPreCheckLine1,vPreCheckLine2"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mu" n0:ellipsize="end" n0:id="@id/tvContent2" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/ls7" n0:maxLines="2" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="12.0dp" n0:paddingVertical="8.0dp" n0:lineHeight="18.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toStartOf="@id/tvCheckProgress" n7:layout_constraintStart_toEndOf="@id/pvCheckProgress" n7:layout_constraintTop_toTopOf="parent" n7:k1i="medium"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.dialog.RoundProgressView n0:id="@id/pvCheckProgress" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginStart="16.0dp" n8:nd="18.0dp" n8:layout_constraintBottom_toBottomOf="@id/tvCheckProgress" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="@id/tvCheckProgress" n8:kpk="false"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mu" n0:gravity="center" n0:id="@id/tvCheckProgress" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginEnd="16.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintTop_toTopOf="parent" n9:k1i="medium"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/checkProgressGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n10:constraint_referenced_ids="tvContent2,pvCheckProgress,tvCheckProgress"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivCheckPassed" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/nti" n0:layout_marginStart="16.0dp" n11:layout_constraintBottom_toBottomOf="@id/tvContent3" n11:layout_constraintStart_toStartOf="parent" n11:layout_constraintTop_toTopOf="@id/tvContent3"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mu" n0:ellipsize="end" n0:id="@id/tvContent3" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:text="@string/mn4" n0:maxLines="2" n0:layout_marginStart="8.0dp" n0:paddingVertical="12.0dp" n0:lineHeight="18.0dp" n12:layout_constraintBottom_toBottomOf="parent" n12:layout_constraintEnd_toStartOf="@id/ivClose1" n12:layout_constraintStart_toEndOf="@id/ivCheckPassed" n12:layout_constraintTop_toTopOf="parent"
+      xmlns:n12="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivClose1" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/nld" n0:layout_marginEnd="16.0dp" n13:layout_constraintBottom_toBottomOf="parent" n13:layout_constraintEnd_toEndOf="parent" n13:layout_constraintTop_toTopOf="parent"
+      xmlns:n13="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/checkSucceededGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n14:constraint_referenced_ids="ivCheckPassed,tvContent3,ivClose1"
+      xmlns:n14="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clFailedGroup" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:paddingEnd="50.0dp" n15:layout_constraintBottom_toBottomOf="parent" n15:layout_constraintEnd_toStartOf="@id/ivClose2" n15:layout_constraintStart_toStartOf="parent" n15:layout_constraintTop_toTopOf="parent"
+      xmlns:n15="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mu" n0:ellipsize="end" n0:id="@id/tvContent4" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lgh" n0:maxLines="2" n0:drawablePadding="8.0dp" n0:drawableStart="@drawable/pos" n0:layout_marginStart="16.0dp" n0:paddingVertical="8.0dp" n0:lineHeight="18.0dp" n15:layout_constraintBottom_toBottomOf="parent" n15:layout_constraintStart_toStartOf="parent" n15:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/ivGoToCheckPanel" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/l25" n0:layout_marginStart="8.0dp" n15:layout_constraintBottom_toBottomOf="parent" n15:layout_constraintStart_toEndOf="@id/tvContent4" n15:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:id="@id/ivClose2" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/nld" n0:layout_marginEnd="16.0dp" n16:layout_constraintBottom_toBottomOf="parent" n16:layout_constraintEnd_toEndOf="parent" n16:layout_constraintTop_toTopOf="parent"
+      xmlns:n16="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/checkFailedGroup" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n17:constraint_referenced_ids="clFailedGroup,ivClose2"
+      xmlns:n17="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

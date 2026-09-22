@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/creatives_preview_root" n0:background="#ff000000" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0">
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/creatives_preview_pager" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="44.0dp" n0:layout_marginBottom="48.0dp" />
+        <com.vega.ui.AlphaButton n0:layout_gravity="start|top" n0:id="@id/creatives_preview_back" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08180e" />
+        <com.vega.ui.AlphaButton n0:layout_gravity="end|top" n0:id="@id/creatives_preview_favorite" n0:padding="6.0dp" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nu2" n0:contentDescription="@null" n0:layout_marginEnd="50.0dp" />
+        <FrameLayout n0:enabled="false" n0:layout_gravity="end|top" n0:id="@id/creatives_preview_select_container" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginEnd="6.0dp">
+            <ImageView n0:enabled="false" n0:id="@id/creatives_preview_select" n0:padding="12.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/ogp" n0:contentDescription="@null" />
+            <com.vega.theme.text.VegaTextView n0:enabled="false" n0:textSize="12.0sp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/creatives_preview_select_index" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:includeFontPadding="false" />
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/creatives_preview_bottom_bar" n0:background="#ff141414" n0:layout_width="match_parent" n0:layout_height="48.0dp">
+            <com.vega.ui.StrongButton n0:enabled="false" n0:textColor="#090c14" n0:id="@id/creatives_preview_add" n0:paddingLeft="3.0dp" n0:paddingRight="3.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:minWidth="72.0dp" n0:text="@string/mr" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="3.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.vega.ui.FloatSliderView n0:layout_gravity="bottom" n0:id="@id/creatives_preview_progress" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="14.0dp" n0:layout_marginBottom="41.0dp" n0:layerType="software" n2:APKTOOL_RENAMED_0x7f0404f1="true" n2:APKTOOL_RENAMED_0x7f040544="@color/knt" n2:APKTOOL_RENAMED_0x7f040549="7.0dp" n2:APKTOOL_RENAMED_0x7f04054a="0.0dp" n2:kko="@color/knt" n2:kkt="#666666" n2:kkx="2.0dp" n2:ksr="4.0dp"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <View n0:id="@id/preview_navigation_bar_view" n0:background="#ff141414" n0:layout_width="match_parent" n0:layout_height="0.0dp" />
+</LinearLayout>

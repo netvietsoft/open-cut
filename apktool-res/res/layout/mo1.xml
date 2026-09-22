@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xt.retouch.size.impl.businessedit.CustomResizeBackgroundPanelLayout n0:id="@id/root" n0:background="@color/ku0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/space_stub" n0:background="@color/kot" n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/layout_custom_size" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="20.0dp" n0:paddingEnd="20.0dp" n2:layout_constraintTop_toBottomOf="@id/space_stub"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/ll_top_bar" n0:layout_width="match_parent" n0:layout_height="52.0dp" n2:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_gravity="end|center" n0:id="@id/iv_close" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/rsv" />
+        </FrameLayout>
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/kxw" n0:id="@id/text_custom_size" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/spb" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ll_top_bar" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/area_custom_size" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:layout_marginTop="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/text_custom_size">
+            <LinearLayout n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginEnd="8.0dp" n2:layout_constraintEnd_toStartOf="@id/area_spinner_unit" n2:layout_constraintStart_toStartOf="parent">
+                <EditText n0:id="@id/input_background_width" n0:background="@drawable/q7b" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:hint="@string/syh" n0:layout_weight="1.0" n0:inputType="numberDecimal" style="@style/APKTOOL_RENAMED_0x7f130467" />
+                <FrameLayout n0:layout_gravity="center" n0:id="@id/icon_lock_custom_background_size" n0:layout_width="32.0dp" n0:layout_height="match_parent">
+                    <ImageView n0:layout_gravity="center" n0:id="@id/image_lock_custom_background_size" n0:layout_width="24.0dp" n0:layout_height="24.0dp" />
+                </FrameLayout>
+                <EditText n0:id="@id/input_background_height" n0:background="@drawable/q7b" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:hint="@string/syg" n0:layout_weight="1.0" n0:inputType="numberDecimal" style="@style/APKTOOL_RENAMED_0x7f130467" />
+            </LinearLayout>
+            <FrameLayout n0:id="@id/area_spinner_unit" n0:background="@drawable/q7b" n0:layout_width="60.0dp" n0:layout_height="match_parent" n0:layout_marginEnd="8.0dp" n2:layout_constraintEnd_toStartOf="@id/radio_btn_custom">
+                <androidx.appcompat.widget.AppCompatSpinner n0:id="@id/spinner_size_unit" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:spinnerMode="dropdown" style="@style/APKTOOL_RENAMED_0x7f130493" />
+            </FrameLayout>
+            <ImageView n0:id="@id/radio_btn_custom" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/r83" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0sp" n0:textColor="@color/kqw" n0:id="@id/tip_bg_size_error_limit" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxLines="1" n2:autoSizeMinTextSize="6.0sp" n2:bp="1.0sp" n2:autoSizeTextType="uniform" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/area_custom_size" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ll_recommend_size_list" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="32.0dp" n3:layout_constraintBottom_toTopOf="@id/ll_bottom" n3:layout_constraintTop_toBottomOf="@id/layout_custom_size"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="@color/kxw" n0:id="@id/text_recommend_scene_name" n0:layout_width="wrap_content" n0:layout_height="17.0dp" n0:text="@string/sp5" n0:paddingStart="20.0dp" n0:paddingEnd="20.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_recommend_scene_size" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="8.0dp" n0:nestedScrollingEnabled="false" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toBottomOf="@id/text_recommend_scene_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ll_bottom" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="40.0dp" n4:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <View n0:id="@id/line_sp" n0:background="@color/kps" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="16.0dp" n4:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout n0:id="@id/rl_auto_layout_switch" n0:layout_width="match_parent" n0:layout_height="88.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="20.0dp" n0:layout_marginEnd="20.0dp" n4:layout_constraintTop_toBottomOf="@id/line_sp">
+            <ImageView n0:id="@id/iv_icon_auto_layout" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="10.0dp" n0:src="@drawable/r50" n0:layout_alignParentStart="true" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0sp" n0:textColor="@color/kxw" n0:id="@id/tv_auto_layout_name" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginTop="2.0dp" n0:layout_alignTop="@id/iv_icon_auto_layout" n0:layout_marginStart="12.0dp" n0:layout_toEndOf="@id/iv_icon_auto_layout" />
+            <ImageView n0:id="@id/switch_btn_auto_layout" n0:layout_width="40.0dp" n0:layout_height="30.0dp" n0:src="@drawable/r98" n0:layout_alignTop="@id/iv_icon_auto_layout" n0:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kot" n0:gravity="center" n0:id="@id/bt_confirm_custom_background_size" n0:background="@drawable/APKTOOL_RENAMED_0x7f0831e7" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginLeft="20.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="20.0dp" n0:text="@string/sp0" n0:fontFamily="sans-serif-medium" n0:layout_marginHorizontal="20.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/rl_auto_layout_switch" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.xt.retouch.size.impl.businessedit.CustomResizeBackgroundPanelLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="4.0dp" n0:paddingEnd="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_gravity="center_horizontal" n0:id="@id/qa_item_icon_view" n0:layout_width="match_parent" n0:layout_height="60.0dp" n0:layout_marginTop="6.0dp">
+        <ImageView n0:layout_gravity="center" n0:id="@id/iv_qa_icon" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/ox9" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#b2f6f7fe" n0:ellipsize="marquee" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/tv_qa_item_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:maxLines="2" n0:marqueeRepeatLimit="marquee_forever" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

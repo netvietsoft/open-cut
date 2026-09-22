@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/text_group" n0:background="@drawable/k2g" n0:paddingLeft="12.0dp" n0:paddingTop="12.0dp" n0:paddingRight="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingHorizontal="12.0dp" n0:paddingVertical="12.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="@dimen/c3" n0:textColor="#fafbff" n0:id="@id/switch_tip_text" n0:layout_width="168.0dp" n0:layout_height="wrap_content" n0:text="@string/pvr" n0:includeFontPadding="false" n0:lineHeight="18.199982dp" />
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/guide_dialog_switch_preview_lottie_view" n0:layout_width="36.0dp" n0:layout_height="48.0dp" n0:layout_marginStart="12.0dp" n1:layout_constraintStart_toStartOf="@id/triangle" n1:layout_constraintTop_toBottomOf="@id/text_group" n1:lottie_autoPlay="true" n1:lottie_fileName="immersvie/guide_dialog_switch_preview.json" n1:lottie_imageAssetsFolder="immersvie/images" n1:lottie_loop="true" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ImageView n0:id="@id/triangle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/mtj" n2:layout_constraintBottom_toTopOf="@id/guide_dialog_lottie_view" n2:layout_constraintEnd_toEndOf="@id/text_group" n2:layout_constraintStart_toStartOf="@id/text_group" n2:layout_constraintTop_toBottomOf="@id/text_group"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/guide_dialog_lottie_view" n0:layout_width="56.0dp" n0:layout_height="56.0dp" n0:layout_marginTop="0.0dp" n3:layout_constraintStart_toStartOf="@id/triangle" n3:layout_constraintTop_toBottomOf="@id/triangle" n3:lottie_autoPlay="true" n3:lottie_fileName="guide_immersive_switch_long_press.json" n3:lottie_imageAssetsFolder="images" n3:lottie_loop="true"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/aggregation_setting_container" n0:background="@drawable/lar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/materialSelectView"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/view_template_purchase_switch_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="-15.0dp" n0:layout_marginEnd="-16.0dp" />
+        <FrameLayout n0:id="@id/view_template_purchase_use_switch_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="-15.0dp" n0:layout_marginEnd="-16.0dp" />
+        <FrameLayout n0:id="@id/view_template_selector_pay_desire_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <FrameLayout n0:id="@id/view_template_advance_entrance_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="-15.0dp" n0:layout_marginEnd="-16.0dp" />
+        <FrameLayout n0:id="@id/view_template_change_region_switch_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="-15.0dp" n0:layout_marginEnd="-16.0dp" />
+    </LinearLayout>
+</FrameLayout>

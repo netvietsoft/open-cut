@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/reward_ad_fragment_root_container" n0:background="?e" n0:fitsSystemWindows="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_gravity="center" n0:id="@id/reward_ad_player_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:layout_gravity="center" n0:id="@id/reward_ad_photo_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:layout_gravity="center" n0:id="@id/reward_ad_watermark_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.ss.android.ugc.aweme.rich.reward.ui.GradientOverlayView n0:id="@id/reward_ad_overlay_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.ss.android.ugc.aweme.rich.reward.view.InterceptFrameLayout n0:layout_gravity="center" n0:id="@id/reward_ad_landing_page_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/reward_ad_slide_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <View n0:id="@id/reward_ad_full_screen_tap_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <LinearLayout n0:gravity="bottom" n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/reward_ad_bottom_interact_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <include n0:id="@id/reward_ad_bottom_carousel_area" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" layout="@layout/_v" />
+        <include n0:id="@id/reward_ad_base_info_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" layout="@layout/_w" />
+        <com.ss.android.ugc.aweme.rich.reward.view.CustomScrollChildFrameLayout n0:id="@id/reward_ad_anole_root" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout n0:id="@id/reward_ad_anole_top_full_screen" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/reward_ad_top_view_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <FrameLayout n0:id="@id/reward_ad_count_down_root" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="@dimen/r2" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="end" n0:paddingTop="@dimen/r4" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingEnd="@dimen/r4">
+            <FrameLayout n0:id="@id/reward_ad_endcard_force_count_down_root" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="@dimen/r-" n0:layout_marginStart="@dimen/r3" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <com.bytedance.tux.icon.TuxIconView n0:id="@id/reward_ad_close" n0:visibility="gone" n0:layout_width="@dimen/r-" n0:layout_height="@dimen/r-" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kh3="true" n2:k0b="?nc"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <TextView n0:textSize="12.0sp" n0:textColor="?n0" n0:id="@id/reward_ad_skip" n0:paddingTop="@dimen/so" n0:paddingBottom="@dimen/so" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="@dimen/r-" n0:paddingStart="@dimen/sq" n0:paddingEnd="@dimen/sq" n0:layout_marginEnd="@dimen/sq" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/reward_ad_close" n3:layout_constraintTop_toTopOf="parent" n3:layout_goneMarginEnd="@dimen/rj"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <com.bytedance.tux.icon.TuxIconView n0:id="@id/reward_ad_report" n0:visibility="gone" n0:layout_width="@dimen/r-" n0:layout_height="@dimen/r-" n0:layout_marginEnd="@dimen/r3" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/reward_ad_skip" n4:layout_constraintTop_toTopOf="parent" n4:kh3="true" n4:k0b="?nc"
+              xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <FrameLayout n0:id="@id/reward_ad_anole_top_full_screen_above_all" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/reward_ad_loading_anim" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.bytedance.tux.status.loading.TuxDualBallView n0:layout_gravity="center" n0:id="@id/reward_ad_dual_ball_loading_view" n0:layout_width="@dimen/sk" n0:layout_height="@dimen/sk" />
+    </FrameLayout>
+</FrameLayout>

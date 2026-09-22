@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="36.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageButton n0:id="@id/btnApplyStyleToAll" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/qpl" n1:layout_constraintBottom_toBottomOf="@id/tvApplyStyleToAll" n1:layout_constraintHorizontal_chainStyle="packed" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/tvApplyStyleToAll"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/nl" n0:id="@id/tvApplyStyleToAll" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:text="@string/q80" n0:layout_marginStart="4.0dp" n2:layout_constrainedWidth="true" n2:layout_constraintStart_toEndOf="@id/btnApplyStyleToAll" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="68.0dp" n0:layout_height="68.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.localdraft.view.DraftCoverImageView n0:id="@id/draft_cover_card" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:roundedCornerRadius="12.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="start" n0:id="@id/tutorial_icon" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="6.0dp" n0:maxWidth="56.0dp" n0:text="@string/kwx" n0:maxLines="1" n2:layout_constraintStart_toStartOf="@id/draft_cover_card" n2:layout_constraintTop_toTopOf="@id/draft_cover_card"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/tutorial_content" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:layout_marginEnd="6.0dp" n3:layout_constraintEnd_toEndOf="@id/draft_cover_card" n3:layout_constraintTop_toTopOf="@id/draft_cover_card"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/tutorial_icon_right" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/oro" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:id="@id/tutorial_text_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="82.0dp" n0:layout_marginStart="2.0dp" n3:k1j="small_text" />
+    </LinearLayout>
+    <ImageView n0:id="@id/draft_type_icon" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:layout_marginBottom="6.0dp" n0:src="@drawable/oro" n0:scaleType="centerCrop" n0:layout_marginStart="6.0dp" n4:layout_constraintBottom_toBottomOf="@id/draft_cover_card" n4:layout_constraintStart_toStartOf="@id/draft_cover_card" n4:layout_constraintTop_toTopOf="@id/draft_item_name"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:id="@id/draft_item_name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="6.0dp" n0:lines="1" n0:shadowColor="#80000000" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="4.0" n0:layout_marginEnd="6.0dp" n5:layout_constraintBottom_toBottomOf="@id/draft_cover_card" n5:layout_constraintEnd_toEndOf="@id/draft_cover_card" n5:layout_constraintStart_toEndOf="@id/draft_type_icon" n5:k1i="medium"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivCloudAlreadyBackUpIcon" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/nl_" n0:scaleType="fitCenter" n0:layout_marginStart="6.0dp" n6:layout_constraintStart_toStartOf="@id/draft_cover_card" n6:layout_constraintTop_toTopOf="@id/draft_cover_card"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.main.widget.DraftAsyncTaskStatusViewV5 n0:id="@id/async_task_status_view" n0:visibility="gone" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n7:layout_constraintBottom_toBottomOf="@id/draft_cover_card" n7:layout_constraintEnd_toEndOf="@id/draft_cover_card" n7:layout_constraintStart_toStartOf="@id/draft_cover_card" n7:layout_constraintTop_toTopOf="@id/draft_cover_card"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:ellipsize="marquee" n0:gravity="center_vertical" n0:id="@id/async_task_status_tips" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="6.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginRight="6.0dp" n0:layout_marginBottom="4.0dp" n0:singleLine="true" n0:includeFontPadding="false" n0:shadowColor="@color/_i" n0:shadowDx="0.0" n0:shadowDy="0.0" n0:shadowRadius="4.0" n0:layout_marginHorizontal="6.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:k1i="medium"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

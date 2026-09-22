@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/containerLeft" n0:clipChildren="false" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintEnd_toStartOf="@id/containerRight" n1:layout_constraintHorizontal_weight="1.0" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <include n0:layout_gravity="center" n0:id="@id/layoutLeft" n0:layout_width="260.0dp" n0:layout_height="260.0dp" layout="@layout/kqw" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/containerRight" n0:clipChildren="false" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginStart="20.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintDimensionRatio="1:1" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHorizontal_weight="1.0" n2:layout_constraintStart_toEndOf="@id/containerLeft" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <include n0:layout_gravity="center" n0:id="@id/layoutRight" n0:layout_width="260.0dp" n0:layout_height="260.0dp" layout="@layout/kqw" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_gravity="bottom" n0:background="@drawable/llx" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="74.0dp" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <SeekBar n0:id="@id/seek_bar" n0:layout_width="match_parent" n0:layout_height="34.0dp" n0:thumb="@android:color/transparent" n0:thumbOffset="0.0dp" n0:layout_alignParentBottom="true" n0:progressTint="@android:color/white" n0:progressBackgroundTint="#66ffffff" />
+    <ImageView n0:id="@id/pause" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/puj" n0:layout_above="@id/seek_bar" n0:layout_marginStart="16.0dp" n0:layout_alignParentStart="true" />
+    <TextView n0:textColor="@android:color/white" n0:gravity="center_vertical" n0:id="@id/current_time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="00:00" n0:layout_alignTop="@id/pause" n0:layout_alignBottom="@id/pause" n0:layout_marginStart="8.0dp" n0:layout_toStartOf="@id/seprator" />
+    <TextView n0:id="@id/seprator" n0:background="@drawable/le9" n0:layout_width="1.0dp" n0:layout_height="6.0dp" n0:layout_marginLeft="5.0dp" n0:layout_marginTop="9.0dp" n0:layout_marginRight="5.0dp" n0:layout_marginBottom="9.0dp" n0:layout_alignTop="@id/pause" n0:layout_alignBottom="@id/pause" n0:layout_toStartOf="@id/total_time" n0:layout_marginHorizontal="5.0dp" n0:layout_marginVertical="9.0dp" />
+    <TextView n0:textColor="#66ffffff" n0:gravity="center_vertical" n0:id="@id/total_time" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="00:00" n0:layout_alignTop="@id/pause" n0:layout_alignBottom="@id/pause" n0:layout_marginEnd="16.0dp" n0:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:tag="layout/xt_fragment_category_edit_0" n0:padding="10.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/s2o" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="50.0dp" n0:layout_marginTop="8.0dp">
+        <TextView n0:layout_width="90.0dp" n0:layout_height="wrap_content" n0:text="@string/tn9" />
+        <EditText n0:id="@id/category_name" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:hint="@string/s2u" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="50.0dp">
+        <TextView n0:layout_width="90.0dp" n0:layout_height="wrap_content" n0:text="@string/tn-" />
+        <EditText n0:id="@id/category_report_name" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:hint="@string/s2v" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="80.0dp">
+        <TextView n0:id="@id/label_category_value" n0:layout_width="90.0dp" n0:layout_height="wrap_content" />
+        <SeekBar n0:id="@id/category_value" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:max="100" />
+    </LinearLayout>
+    <LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <Button n0:textSize="25.0dp" n0:id="@id/btn_cancel" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sne" />
+        <Button n0:textSize="25.0dp" n0:id="@id/btn_confirm" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/swe" n0:layout_marginStart="100.0dp" />
+    </LinearLayout>
+</LinearLayout>

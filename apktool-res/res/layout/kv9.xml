@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/la9" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="12.0sp" n0:textStyle="bold" n0:textColor="#b2f6f7fe" n0:gravity="center" n0:id="@id/tv_diagnosis_item_number" n0:background="@drawable/APKTOOL_RENAMED_0x7f08129d" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/tv_diagnosis_item_title"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="12.0sp" n0:textStyle="bold" n0:textColor="@android:color/white" n0:id="@id/tv_diagnosis_item_title" n0:paddingTop="2.5dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/tv_diagnosis_item_number" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="13.0sp" n0:textColor="#ccc2cfd6" n0:id="@id/tv_diagnosis_message" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="@id/tv_diagnosis_item_title" n3:layout_constraintTop_toBottomOf="@id/tv_diagnosis_item_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

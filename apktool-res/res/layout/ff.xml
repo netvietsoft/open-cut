@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f0812a7" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/tvTitle" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/pvp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:textSize="17.0sp" n0:id="@id/ivClose" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_margin="10.0dp" n0:src="@drawable/pwb" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center_horizontal" n0:orientation="horizontal" n0:id="@id/switch_group_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tvTitle"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/llSingleColumnMode" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="160.0dp">
+            <ImageView n0:layout_width="60.0dp" n0:layout_height="80.0dp" n0:layout_marginTop="24.0dp" n0:src="@drawable/mkr" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/ac" n0:gravity="center" n0:layout_width="140.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/pvn" n3:k1i="medium" />
+            <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:src="@drawable/mkq" />
+        </LinearLayout>
+        <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/llTwoColumnMode" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="160.0dp" n0:layout_marginStart="16.0dp">
+            <ImageView n0:layout_width="60.0dp" n0:layout_height="80.0dp" n0:layout_marginTop="24.0dp" n0:src="@drawable/mku" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/ac" n0:gravity="center" n0:layout_width="140.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/pvo" n3:k1i="medium" />
+            <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:src="@drawable/mkq" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View n0:layout_width="match_parent" n0:layout_height="40.0dp" n4:layout_constraintTop_toBottomOf="@id/switch_group_view"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

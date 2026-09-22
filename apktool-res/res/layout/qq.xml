@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/nt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/fl_share_review_title" n0:layout_width="match_parent" n0:layout_height="50.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:layout_gravity="center_vertical" n0:id="@id/btn_space_setting_back" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/pc" n0:layout_marginStart="16.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/nu" n0:layout_gravity="center" n0:id="@id/tv_space_setting_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nhn" />
+    </FrameLayout>
+    <View n0:background="#1f073247" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+    <RelativeLayout n0:id="@id/auto_backup_layout" n0:layout_width="match_parent" n0:layout_height="52.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/nu" n0:id="@id/tv_auto_backup" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nhk" n0:singleLine="true" n0:layout_centerVertical="true" />
+        <ImageView n0:id="@id/iv_auto_backup_check_state" n0:layout_width="44.0dp" n0:layout_height="24.0dp" n0:src="@drawable/ph" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/space_setting_content_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <RelativeLayout n0:id="@id/backup_device_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/nu" n0:id="@id/tv_auto_backup_device" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/h_" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" />
+            <LinearLayout n0:gravity="end|center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_toEndOf="@id/tv_auto_backup_device">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/nv" n0:ellipsize="end" n0:id="@id/tv_auto_backup_device_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="195.0dp" n0:singleLine="true" />
+                <ImageView n0:id="@id/iv_auto_backup_device_arrow" n0:visibility="visible" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pa" n0:layout_centerVertical="true" n0:layout_marginStart="4.0dp" n0:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/select_space_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/nu" n0:id="@id/tv_auto_backup_space" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f121cbd" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" />
+            <LinearLayout n0:gravity="end|center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_toEndOf="@id/tv_auto_backup_space">
+                <ImageView n0:id="@id/iv_auto_backup_space_lost_warning" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/m5z" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/nv" n0:ellipsize="end" n0:id="@id/tv_auto_backup_space_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" />
+                <ImageView n0:id="@id/iv_auto_backup_space_arrow" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pa" n0:layout_centerVertical="true" n0:layout_marginStart="4.0dp" n0:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/select_network_type_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/nu" n0:id="@id/tv_auto_backup_network_type" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ng_" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" />
+            <ImageView n0:id="@id/iv_auto_backup_network_type_arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pa" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/nv" n0:ellipsize="end" n0:gravity="end" n0:id="@id/tv_auto_backup_network_type_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginEnd="4.0dp" n0:layout_toStartOf="@id/iv_auto_backup_network_type_arrow" n0:layout_toEndOf="@id/tv_auto_backup_network_type" />
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/select_size_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" n0:layout_toStartOf="@id/tv_auto_backup_limit_size">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/nu" n0:id="@id/tv_auto_backup_limit" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f121cbe" />
+            </LinearLayout>
+            <ImageView n0:id="@id/iv_auto_backup_limit_arrow" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pa" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/nv" n0:ellipsize="end" n0:id="@id/tv_auto_backup_limit_size" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerVertical="true" n0:layout_marginEnd="4.0dp" n0:layout_toStartOf="@id/iv_auto_backup_limit_arrow" />
+        </RelativeLayout>
+        <RelativeLayout n0:id="@id/file_range_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="52.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/nu" n0:id="@id/tv_file_range" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/iu" n0:layout_centerVertical="true" n0:layout_marginEnd="16.0dp" />
+            <LinearLayout n0:gravity="end|center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n0:layout_toEndOf="@id/tv_file_range">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/nv" n0:ellipsize="end" n0:id="@id/tv_file_range_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="195.0dp" n0:singleLine="true" />
+                <ImageView n0:id="@id/iv_file_range_arrow" n0:visibility="visible" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pa" n0:layout_centerVertical="true" n0:layout_marginStart="4.0dp" n0:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

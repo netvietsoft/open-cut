@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.colorstyle.impl.local.LCSPanelScrollView n0:id="@id/panelScrollView" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/root_panel_content_view" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/panel_content_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingStart="16.0dp" n1:layout_constraintEnd_toEndOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto">
+                <LinearLayout n0:orientation="horizontal" n0:id="@id/area_template_materials_colors" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070457" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                    <ImageView n0:layout_gravity="start|center" n0:id="@id/icon_clean" n0:visibility="gone" n0:layout_width="@dimen/hl" n0:layout_height="@dimen/hl" n0:src="@drawable/r52" n0:layout_marginEnd="12.0dp" />
+                    <ImageView n0:layout_gravity="start|center" n0:id="@id/icon_color_picker" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/rsj" n0:scaleType="fitXY" n0:layout_marginEnd="12.0dp" />
+                    <ImageView n0:layout_gravity="start|center" n0:id="@id/icon_color_palette" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/r54" n0:scaleType="fitXY" />
+                    <com.xt.retouch.colorstyle.impl.local.CommonCircleColorView n0:layout_gravity="center_vertical" n0:id="@id/lcs_color_from_palette" n0:visibility="gone" n0:layout_width="@dimen/hl" n0:layout_height="@dimen/hl" n0:layout_marginStart="12.0dp" />
+                    <View n0:layout_gravity="center_vertical" n0:background="@color/kqu" n0:layout_width="1.5dp" n0:layout_height="16.0dp" n0:layout_marginStart="12.0dp" />
+                    <com.xt.retouch.colorstyle.impl.local.LCSColosCommonRecycleView n0:id="@id/rv_template_materials_colors" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingHorizontal="12.0dp" />
+                </LinearLayout>
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kqp" n0:id="@id/text_recommend_photo_color" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/smj" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/area_template_materials_colors" />
+                <com.xt.retouch.colorstyle.impl.local.LCSColosCommonRecycleView n0:id="@id/rv_recommend_photo_colors" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="14.0dp" n0:minHeight="@dimen/APKTOOL_RENAMED_0x7f070457" n0:nestedScrollingEnabled="false" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/text_recommend_photo_color" />
+                <com.xt.retouch.colorstyle.impl.global.view.RequestRecColorLayout n0:id="@id/lcs_request_list_layout" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070457" n0:layout_marginTop="14.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/text_recommend_photo_color" />
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kqp" n0:id="@id/text_default_color" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/smi" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/rv_recommend_photo_colors" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.xt.retouch.colorstyle.impl.local.LCSColosCommonRecycleView n0:id="@id/rv_default_colors" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="16.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070457" n0:layout_marginTop="6.0dp" n0:paddingHorizontal="16.0dp" n2:layout_constraintTop_toBottomOf="@id/panel_content_view"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.xt.retouch.colorstyle.impl.local.LCSPanelScrollView>
+</FrameLayout>

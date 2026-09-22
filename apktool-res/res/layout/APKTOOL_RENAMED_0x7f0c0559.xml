@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/container" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="4.0dp" n1:layout_constraintBottom_toTopOf="@id/tv_history_tips" n1:layout_constraintTop_toTopOf="parent" n1:kr3="none"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.UpdateParentHeightRecycleView n0:id="@id/recyclerView" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.ui.state.pressed.PressedStateStateViewGroupLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/l_" n0:gravity="center" n0:id="@id/tv_history_tips" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f121e76" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

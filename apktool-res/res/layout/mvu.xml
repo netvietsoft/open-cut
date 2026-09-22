@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_layout_batch_edit_bubble_0" n0:background="#00000000" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:layout_gravity="bottom" n0:orientation="horizontal" n0:id="@id/rootLayout" n0:background="@drawable/q6w" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <FrameLayout n0:tag="binding_1" n0:layout_width="60.0dp" n0:layout_height="77.0dp">
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center|top" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="10.0dp" n0:src="@drawable/rm6" />
+            <TextView n0:textSize="10.0dp" n0:textColor="@color/kot" n0:layout_gravity="center|bottom" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="13.0dp" n0:text="@string/slm" />
+        </FrameLayout>
+        <FrameLayout n0:tag="binding_2" n0:layout_width="60.0dp" n0:layout_height="77.0dp">
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center|top" n0:tag="binding_3" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="10.0dp" />
+            <TextView n0:textSize="10.0dp" n0:layout_gravity="center|bottom" n0:tag="binding_4" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="13.0dp" n0:text="@string/sll" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

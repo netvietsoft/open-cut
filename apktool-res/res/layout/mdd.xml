@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/permission_container" n0:background="@drawable/APKTOOL_RENAMED_0x7f0837f0" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="15.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/kxc" n0:id="@id/tv_permission_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="10.0dp" n0:layout_marginTop="10.0dp" n0:layout_marginStart="10.0dp" />
+    <TextView n0:textSize="14.0sp" n0:textColor="@color/kxb" n0:id="@id/tv_permission_msg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="10.0dp" n0:layout_marginTop="5.0dp" n0:layout_marginRight="10.0dp" n0:layout_marginBottom="10.0dp" />
+</LinearLayout>

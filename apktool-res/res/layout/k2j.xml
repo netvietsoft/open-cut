@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="@drawable/kog" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/video_show_area" n0:background="@drawable/kot" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.cutsameedit.biz.edit.text.aiwriter.view.AiWriterGuideRoundCornerLayout n0:layout_gravity="center_horizontal" n0:id="@id/video_view_bg" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="20.0dp" n0:layout_marginTop="48.0dp" n0:layout_marginRight="20.0dp" n0:layout_marginHorizontal="20.0dp">
+            <VideoView n0:id="@id/video_view" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="188.0dp" />
+        </com.vega.cutsameedit.biz.edit.text.aiwriter.view.AiWriterGuideRoundCornerLayout>
+        <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/video_fallback_view" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="20.0dp" n0:layout_marginTop="48.0dp" n0:layout_marginRight="20.0dp" n0:src="@drawable/q2b" n0:scaleType="centerInside" n0:elevation="10.0dp" n0:layout_marginHorizontal="20.0dp" />
+    </FrameLayout>
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/ic_close" n0:padding="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m08" n0:layout_alignParentEnd="true"
+      xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_below="@id/video_show_area">
+        <com.vega.theme.text.VegaTextView n0:textSize="22.0dp" n0:textStyle="bold" n0:textColor="@color/x3" n0:gravity="center" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/kr-" n0:fontFamily="sans-serif-black" />
+        <LinearLayout n0:layout_gravity="start" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp">
+            <com.vega.theme.text.VegaTextView n0:id="@id/ai_writer_guide_tip_first" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="6.0dp" n0:text="@string/kre" style="@style/APKTOOL_RENAMED_0x7f1304f2" />
+            <com.vega.theme.text.VegaTextView n0:id="@id/ai_writer_guide_tip_second" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/krf" style="@style/APKTOOL_RENAMED_0x7f1304f2" />
+        </LinearLayout>
+        <com.vega.ui.StrongButton n0:textSize="16.0dp" n0:textStyle="bold" n0:id="@id/try_it_now" n0:background="@drawable/kop" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="20.0dp" n0:layout_marginTop="36.0dp" n0:layout_marginRight="20.0dp" n0:layout_marginBottom="42.0dp" n0:text="@string/kr_" n0:layout_marginHorizontal="20.0dp" n0:paddingVertical="10.0dp" n1:k1i="medium"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</RelativeLayout>

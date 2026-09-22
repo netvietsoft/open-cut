@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/pc5" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_tab" n0:layout_width="match_parent" n0:layout_height="48.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.lvui.widget.TabIndicator n0:id="@id/tabIndicator" n2:layout_constraintEnd_toEndOf="@id/rv_tab" n2:layout_constraintStart_toStartOf="@id/rv_tab" n2:layout_constraintTop_toBottomOf="@id/rv_tab" style="@style/u_"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/divider_line" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="@dimen/rm" n3:layout_constraintTop_toBottomOf="@id/tabIndicator"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/btn_confirm" n0:padding="14.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/ntp" n0:layout_marginEnd="2.0dp" n4:layout_constraintEnd_toEndOf="@id/rv_tab" n4:layout_constraintTop_toTopOf="@id/rv_tab"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.HorizontalViewPager n0:id="@id/vp_hair_page" n0:layout_width="match_parent" n0:layout_height="0.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintTop_toBottomOf="@id/divider_line"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

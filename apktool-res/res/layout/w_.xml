@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/anole_feed_cta_container" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/anole_feed_cta_view" n0:layout_width="match_parent" n0:layout_height="40.0dp">
+        <com.bytedance.tux.input.TuxTextView n0:textColor="?kw" n0:id="@id/anole_feed_cta_text_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/anole_feed_cta_arrow_view" n1:layout_constraintHorizontal_bias="0.5" n1:layout_constraintHorizontal_chainStyle="packed" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/t7"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.bytedance.tux.icon.TuxIconView n0:id="@id/anole_feed_cta_arrow_view" n0:paddingTop="0.5dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:scaleType="fitCenter" n0:contentDescription="reward page's cta arrow view." n0:layout_marginStart="2.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHorizontal_bias="0.5" n2:layout_constraintStart_toEndOf="@id/anole_feed_cta_text_view" n2:layout_constraintTop_toTopOf="parent" n2:khe="@raw/icon_chevron_right_offset_fill_ltr" n2:khh="10.0dp" n2:kh-="10.0dp" n2:k0b="?kw"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

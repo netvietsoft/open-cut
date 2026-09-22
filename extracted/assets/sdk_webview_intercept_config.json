@@ -1,0 +1,101 @@
+{
+  "web_view_hook_config_android": {
+    "allow_html_domain": [],
+    "allow_api_domain": [
+      "/upload/v1",
+      "Action=ApplyUploadInner",
+      "Action=CommitUploadInner",
+      "capcutcdn-us.com",
+      "tos-alisg-v-fb2c04-sg",
+      "tos-alisg-v-178310c700-sg",
+      "tos-alisg-v-178310-sg",
+      "tos-alisg-p-178310-sg"
+    ],
+    "block_html_domain": [],
+    "block_api_domain": [],
+    "block_class": [],
+    "hookJsSwitch": {
+      "cookie": true,
+      "websocket": true,
+      "web_worker": true,
+      "service_worker": true,
+      "iframe": true,
+      "shared_worker": true,
+      "webrtc": true,
+      "request_constructor": true,
+      "fixResponseInstanceOf": true,
+      "local_test": false
+    },
+    "notBinaryContentTypes": [
+      "text/plain",
+      "text/html",
+      "text/css",
+      "text/csv",
+      "text/xml",
+      "text/javascript",
+      "application/json",
+      "application/javascript",
+      "application/x-www-form-urlencoded",
+      "application/xml",
+      "application/pdf",
+      "multipart/form-data",
+      "image/svg+xml"
+    ],
+    "csp_enable": {
+      "csp_nonce_enable": true,
+      "csp_hash_enable": false
+    }
+  },
+  "web_view_hook_config_ios": {
+    "allow_html_domain": [
+      "www.capcut.net/imlv",
+      "bytedance14.web.apac-1.jumio.ai",
+      "web-sdk.apac-1.jumio.ai",
+      "pay16-normal-alisg.pipopay.com",
+      "bytedance14.web.apac-1.jumio.ai",
+      "browser-intake-datadoghq.com",
+      "mediation-gab-normal-sg.capcutapi.com",
+      "f-p.sgsnssdk.com",
+      "www.paypal.com"
+    ],
+    "allow_api_domain": [
+      "bytevcloudapi.com",
+      "browser-intake-datadoghq.com",
+      "web-sdk.apac-1.jumio.ai"
+    ],
+    "block_html_domain": [],
+    "block_api_domain": [],
+    "block_class": [],
+    "hookJsSwitch": {
+      "cookie": true,
+      "websocket": true,
+      "web_worker": true,
+      "service_worker": true,
+      "iframe": true,
+      "shared_worker": true,
+      "webrtc": true,
+      "request_constructor": true,
+      "fixResponseInstanceOf": true,
+      "local_test": false
+    },
+    "notBinaryContentTypes": [
+      "text/plain",
+      "text/html",
+      "text/css",
+      "text/csv",
+      "text/xml",
+      "text/javascript",
+      "application/json",
+      "application/javascript",
+      "application/x-www-form-urlencoded",
+      "application/xml",
+      "application/pdf",
+      "multipart/form-data",
+      "image/svg+xml"
+    ],
+    "csp_enable": {
+      "csp_nonce_enable": false,
+      "csp_hash_enable": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@android:color/black" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/coverImage" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:scaleType="fitCenter" n1:layout_constraintBottom_toTopOf="@id/useButton" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/topGradientView" n0:background="@drawable/k4f" n0:layout_width="0.0dp" n0:layout_height="235.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/bottomGradientView" n0:background="@drawable/k4e" n0:layout_width="0.0dp" n0:layout_height="235.0dp" n3:layout_constraintBottom_toTopOf="@id/useButton" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/originImage" n0:background="@drawable/k_z" n0:padding="1.0dp" n0:visibility="gone" n0:layout_width="100.0dp" n0:layout_height="100.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginStart="12.0dp" n4:actualImageScaleType="centerCrop" n4:layout_constraintBottom_toTopOf="@id/titleText" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/originImageGradient" n0:background="@drawable/k_a" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="30.0dp" n5:layout_constraintBottom_toBottomOf="@id/originImage" n5:layout_constraintEnd_toEndOf="@id/originImage" n5:layout_constraintStart_toStartOf="@id/originImage"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/l-" n0:id="@id/originLabel" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="6.0dp" n0:text="@string/k_e" n0:textAlignment="center" n0:layout_marginStart="2.0dp" n0:layout_marginEnd="2.0dp" n6:layout_constraintBottom_toBottomOf="@id/originImage" n6:layout_constraintEnd_toEndOf="@id/originImage" n6:layout_constraintStart_toStartOf="@id/originImage" n6:k1i="medium" n6:k1j="body_2"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/ml" n0:ellipsize="end" n0:id="@id/titleText" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="16.0dp" n0:maxLines="1" n0:layout_marginHorizontal="12.0dp" n7:layout_constraintBottom_toTopOf="@id/useButton" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:k1i="bold" n7:k1j="body_1"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:id="@id/useButton" n0:background="@drawable/kt5" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120c79" n0:maxLines="1" n0:textAllCaps="false" n0:paddingStart="20.0dp" n0:paddingEnd="20.0dp" n0:layout_marginHorizontal="12.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:k1i="bold"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

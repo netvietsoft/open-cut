@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingBottom="10.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:ellipsize="end" n0:id="@id/tvMusicTitle" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="0.0dp" n0:layout_height="20.0dp" n0:maxLines="1" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="4.0dp" n1:layout_constraintEnd_toStartOf="@id/expandMusicContent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_v" n0:ellipsize="end" n0:id="@id/tvMusicDuration" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="0.0dp" n0:layout_height="20.0dp" n0:maxLines="1" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n2:layout_constraintEnd_toEndOf="@id/tvMusicTitle" n2:layout_constraintStart_toStartOf="@id/tvMusicTitle" n2:layout_constraintTop_toBottomOf="@id/tvMusicTitle"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Barrier n0:orientation="horizontal" n0:id="@id/barrierTop" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:barrierDirection="bottom" n3:constraint_referenced_ids="tvMusicDuration"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/expandMusicContent" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:paddingStart="12.0dp" n0:paddingEnd="5.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="@id/tvMusicDuration" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="@id/tvMusicTitle"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/expandMusic" n0:padding="2.0dp" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08050e" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clContent" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:alpha="0.0" n5:layout_constraintTop_toBottomOf="@id/barrierTop"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rvInnerMusicList" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n5:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/emptyContentTips" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_width="70.0dp" n0:layout_height="42.0dp" n0:layout_marginBottom="15.0dp" n0:src="@drawable/mo1" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_r" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rty" />
+        </LinearLayout>
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tvRetry" n0:padding="5.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="180.0dp" n0:text="@string/qnt" n0:drawablePadding="5.0dp" n0:drawableStart="@drawable/odn" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.widget.ItemLoadingView n0:id="@id/songLoadingView" n0:visibility="gone" n0:layout_width="16.0dp" n0:layout_height="180.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

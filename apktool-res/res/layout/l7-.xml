@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/aiWriterContainer" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.ExpandEditText n0:textSize="16.0dp" n0:textColor="@color/knt" n0:textColorHighlight="#33fccf15" n0:textColorHint="#66ffffff" n0:gravity="center_vertical" n0:id="@id/aiScriptTextContent" n0:background="@drawable/koh" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:maxHeight="95.0dp" n0:minHeight="36.0dp" n0:hint="@string/l8m" n0:maxLength="300" n0:shadowRadius="10.0" n0:inputType="textMultiLine" n0:imeOptions="flagNoExtractUi" n0:textCursorDrawable="@drawable/APKTOOL_RENAMED_0x7f08289b" n0:paddingStart="12.0dp" n0:paddingEnd="40.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n0:paddingVertical="8.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivClear" n0:padding="6.0dp" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/nbg" n0:layout_marginEnd="4.0dp" n2:layout_constraintBottom_toBottomOf="@id/aiScriptTextContent" n2:layout_constraintEnd_toEndOf="@id/aiScriptTextContent" n2:layout_constraintTop_toTopOf="@id/aiScriptTextContent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

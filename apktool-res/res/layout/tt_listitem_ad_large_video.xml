@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.msdk.api.format.TTNativeAdView n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <include n0:id="@id/icon_source_layout" layout="@layout/tt_listitem_ad_icon_source_layout" />
+        <TextView n0:textSize="18.0sp" n0:textColor="@android:color/black" n0:ellipsize="end" n0:id="@id/tv_listitem_ad_desc" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="10.0dp" n0:layout_marginTop="3.0dp" n0:layout_marginRight="10.0dp" n0:layout_marginBottom="3.0dp" n0:text="Car Service Center, cleaning and maintenance, replacement of accessories, 9-second cost inquiry" n0:maxLines="2" n0:singleLine="false" n0:layout_below="@id/icon_source_layout" n0:lineSpacingMultiplier="1.0" />
+        <com.bytedance.msdk.api.format.TTMediaView n0:id="@id/iv_listitem_video" n0:background="@android:color/background_dark" n0:layout_width="match_parent" n0:layout_height="200.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:scaleType="centerCrop" n0:layout_below="@id/tv_listitem_ad_desc" />
+        <include n0:id="@id/ad_title_creative_btn_layout" n0:layout_width="match_parent" n0:layout_height="45.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginRight="10.0dp" n0:layout_below="@id/iv_listitem_video" layout="@layout/tt_listitem_ad_title_creative_btn_layout" />
+    </RelativeLayout>
+</com.bytedance.msdk.api.format.TTNativeAdView>

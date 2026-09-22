@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:paddingTop="6.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#66000000" n0:ellipsize="end" n0:id="@id/tv_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/pwm" n0:maxLines="1" n0:singleLine="true" n0:layout_marginStart="16.0dp" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/rv_templates" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n0:nestedScrollingEnabled="false" n2:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="#1f073247" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="6.0dp" />
+</LinearLayout>

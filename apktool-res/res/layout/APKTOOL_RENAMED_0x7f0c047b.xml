@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateConstraintLayout n0:id="@id/userCommentGroup" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:kr3="button"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <ImageView n0:id="@id/userComment" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/o4-" n0:scaleType="center" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+    <com.airbnb.lottie.LottieAnimationView n0:gravity="center" n0:id="@id/commentEmojiAnim" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:lottie_fileName="comment_emoji.json" n1:lottie_imageAssetsFolder="images" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center|top" n0:id="@id/uerCommentText" n0:layout_width="50.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:includeFontPadding="false" n0:shadowColor="@color/_q" n0:shadowDx="0.0" n0:shadowDy="1.0" n0:shadowRadius="2.0" n0:layout_below="@id/userComment" n1:layout_constraintTop_toBottomOf="@id/userComment" n1:k1i="medium" />
+</com.vega.ui.state.pressed.PressedStateConstraintLayout>

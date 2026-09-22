@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:background="@drawable/ksn" n0:paddingBottom="20.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textColor="@color/ml" n0:ellipsize="end" n0:id="@id/mode_title_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:layout_marginBottom="15.0dp" n0:maxWidth="263.0dp" n0:text="@string/o-s" n0:maxLines="2" n0:layout_marginVertical="15.0dp" n1:layout_constrainedWidth="true" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1g="text" n1:k1i="medium" n1:k1j="body_1"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/mode_close_iv" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/l5s" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toBottomOf="@id/mode_title_tv" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/mode_title_tv"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/line" n0:background="@color/kw" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="15.0dp" n3:layout_constraintTop_toBottomOf="@id/mode_title_tv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/settings_rv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="16.0dp" n0:overScrollMode="never" n0:layout_marginHorizontal="12.0dp" n4:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/line"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaCheckBox n0:textSize="12.0dp" n0:textColor="@color/ml" n0:gravity="center_vertical" n0:id="@id/mode_intelligent_split_text" n0:paddingLeft="4.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="16.0dp" n0:checked="true" n0:button="@drawable/ql7" n0:text="@string/APKTOOL_RENAMED_0x7f122540" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/settings_rv"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/mode_help" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/ok7" n0:layout_marginStart="4.0dp" n6:layout_constraintBottom_toBottomOf="@id/mode_intelligent_split_text" n6:layout_constraintStart_toEndOf="@id/mode_intelligent_split_text" n6:layout_constraintTop_toTopOf="@id/mode_intelligent_split_text"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.StrongButton n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f060074" n0:id="@id/finish_edit" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="12.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122533" n0:layout_marginHorizontal="12.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/mode_intelligent_split_text" n7:k1i="bold"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

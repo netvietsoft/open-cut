@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/llayout_root" n0:background="@color/APKTOOL_RENAMED_0x7f06059e" n0:paddingTop="5.0dp" n0:paddingBottom="5.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingVertical="5.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/guide_view" n0:background="#e4e5e7" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="5.0dp" n0:layout_marginBottom="10.0dp" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="12.0dp" n0:textColor="#99ffffff" n0:gravity="center_vertical" n0:id="@id/tvUpdateTime" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:includeFontPadding="false" n0:paddingStart="16.0dp" n1:kr3="button"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="@color/APKTOOL_RENAMED_0x7f060459" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+    <com.vega.ui.state.pressed.PressedStateLinearLayout n0:orientation="horizontal" n0:id="@id/backupLayout" n0:background="@drawable/kzr" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/backupIcon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/l_h" n0:layout_marginStart="20.0dp" />
+        <LinearLayout n0:layout_gravity="center_vertical" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp">
+            <LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/x3" n0:id="@id/backupTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/obm" style="@style/bu" />
+                <com.vega.ui.business.VipBadgeImageView n0:layout_gravity="center_vertical" n0:id="@id/backupTitleFlag" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/qq0" n0:minHeight="12.0dp" n0:layout_marginStart="4.0dp" />
+            </LinearLayout>
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#801c283d" n0:id="@id/backupDesc" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/l1i" />
+        </LinearLayout>
+    </com.vega.ui.state.pressed.PressedStateLinearLayout>
+    <com.vega.ui.state.pressed.PressedStateLinearLayout n0:orientation="horizontal" n0:id="@id/shareProjectLayout" n0:background="@drawable/kzr" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="56.0dp">
+        <ImageView n0:layout_gravity="center_vertical" n0:id="@id/shareProjectIcon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/oxn" n0:layout_marginStart="20.0dp" />
+        <LinearLayout n0:layout_gravity="center_vertical" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp">
+            <LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/x3" n0:id="@id/shareProjectTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l1h" style="@style/bu" />
+                <com.vega.ui.business.VipBadgeImageView n0:layout_gravity="center_vertical" n0:id="@id/shareProjectTitleFlag" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/qq0" n0:minHeight="12.0dp" n0:layout_marginStart="4.0dp" />
+            </LinearLayout>
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#801c283d" n0:id="@id/shareProjectDesc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/l1g" />
+        </LinearLayout>
+    </com.vega.ui.state.pressed.PressedStateLinearLayout>
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06059f" n0:gravity="start|center" n0:id="@id/tvRename" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:text="@string/qdc" n0:drawablePadding="16.0dp" n0:drawableStart="@drawable/l_6" n0:paddingStart="20.0dp" n2:kr3="button" style="@style/bu"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06059f" n0:gravity="start|center" n0:id="@id/tvCopy" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:text="@string/lbh" n0:drawablePadding="16.0dp" n0:drawableStart="@drawable/l_5" n0:paddingStart="20.0dp" n3:kr3="button" style="@style/bu"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06059f" n0:gravity="start|center" n0:id="@id/tvDelete" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:text="@string/lg-" n0:drawablePadding="16.0dp" n0:drawableStart="@drawable/mvh" n0:paddingStart="20.0dp" n4:kr3="button" style="@style/bu"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

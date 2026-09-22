@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/rootLayout" n0:tag="layout/xt_fragment_business_panel_jigsaw_0" n0:background="@color/kw0" n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.SlidingConstraintLayout n0:layout_gravity="bottom" n0:id="@id/bottom_panel_container" n0:background="@drawable/q65" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:id="@id/iv_slid" n0:layout_width="32.0dp" n0:layout_height="5.0dp" n0:layout_marginTop="5.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0831be" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/jigsaw_tab_layout" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:layout_marginLeft="4.0dp" n0:layout_marginTop="5.0dp" n0:layout_marginRight="4.0dp" n0:overScrollMode="never" n0:layout_marginHorizontal="4.0dp" n1:layout_constrainedWidth="true" n1:layout_constraintEnd_toStartOf="@id/confirm" n1:layout_constraintHorizontal_bias="1.0" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/iv_slid" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/confirm" n0:paddingTop="14.0dp" n0:paddingBottom="14.0dp" n0:layout_width="@dimen/ge" n0:layout_height="@dimen/ge" n0:src="@drawable/rrq" n0:scaleType="centerCrop" n0:paddingStart="12.0dp" n0:paddingEnd="16.0dp" n0:layout_marginStart="8.0dp" n0:layout_alignParentStart="true" n0:paddingVertical="14.0dp" n1:layout_constraintBottom_toBottomOf="@id/jigsaw_tab_layout" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/jigsaw_tab_layout" />
+        <View n0:id="@id/divider_line" n0:background="@color/ktk" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/jigsaw_tab_layout" />
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/vp_group" n0:layout_width="match_parent" n0:layout_height="@dimen/gi" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toBottomOf="@id/divider_line" />
+    </com.xt.retouch.baseui.view.SlidingConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/undoRedoBar" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toTopOf="@id/bottom_panel_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/undo" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/r44" n0:layout_marginStart="12.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/redo" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/ri4" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/undo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.xt.retouch.baseui.AutoLottieAnimationView n0:id="@id/animLoading" n0:layout_width="38.0dp" n0:layout_height="38.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:lottie_fileName="loading_white.json" n3:lottie_loop="true"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

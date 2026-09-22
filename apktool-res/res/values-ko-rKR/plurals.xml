@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="other">%d개 항목을 업로드하지 못했습니다. 자동컷이 계속 진행됩니다.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="other">첨부 파일: 파일 %d개</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="other">%1$d크레딧이 필요합니다.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="other">남은 크레딧은 %1$d입니다.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="other">무료 크레딧이 차감됩니다. %d크레딧이 더 필요합니다.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="other">%1$d크레딧이 필요합니다.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="other">남은 크레딧은 %1$d입니다. 계속하려면 크레딧을 구매하세요.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="other">%1$d크레딧이 필요합니다.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="other">남은 크레딧은 %1$d입니다. 크레딧을 받으려면 업그레이드하세요.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="other">%d크레딧이 사용됩니다</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="other">무료 크레딧이 차감됩니다. %d크레딧이 더 필요합니다.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="other">%d개 템플릿 추천</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="other">동영상 %d개 생성됨</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="other">로그인하면 월 %d회 무료로 자동 캡션 및 자동 가사를 사용할 수 있습니다. 무료 사용 횟수는 매달 초에 갱신되며, 사용할 때마다 1회씩 차감됩니다.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="other">%d회 사용/월</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="other">단어 %d개 삭제</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="other">하이라이트 %d개</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="other">추임새 단어 %d개 발견</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="other">최대 %d개 항목 선택</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="other">대기열 예상 대기 시간: %d초</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="other">약 %d시간 남음</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="other">약 %d분 남음</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="other">약 %d초 남음</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="other">오디오 결과(%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="other">파일 결과(%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="other">생성 결과(%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="other">첨부 파일: 이미지 %d개</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="other">첨부 파일: 동영상 %d개</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="other">이미지 결과(%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="other">동영상 결과(%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="other">%1$d개 AI 텍스트 효과 적용 중... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="other">모든 클립에 %d개 애셋 적용</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="other">%d개 애셋 선택됨</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="other">%d일 Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="other">캐릭터 %d개</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="other">%d개 이하의 캐릭터를 선택하세요</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="other">%d개 클립은 상업적 사용이 허가되지 않았습니다</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="other">%d개 글꼴은 상업적 사용이 허가되지 않았습니다</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="other">%d개 사운드는 상업적 사용이 허가되지 않았습니다</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="other">%d개 클립은 상업적 사용이 허가되지 않았으며 교체할 수 없습니다</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="other">%d개 글꼴은 상업적 사용이 허가되지 않았으며 교체할 수 없습니다</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="other">%d개 사운드는 상업적 사용이 허가되지 않았으며 교체할 수 없습니다</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="other">%d개 스티커는 상업적 사용이 허가되지 않았으며 교체할 수 없습니다</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="other">%d개 스티커는 상업적 사용이 허가되지 않았습니다</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="other">%d개 댓글을 삭제할까요?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="other">%d개의 계정을 선택했습니다. 회원님과 회원님이 제한한 사람들만 해당 계정의 댓글을 볼 수 있습니다.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="other">%d개의 계정을 제한하시나요?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="other">%d일</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="other">새 크리에이터 메시지가 %s개 있습니다</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="other">%d일 전에 만료됨</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="other">Pro 기능을 사용 중입니다. 무료 사용이 %d회 남았습니다. Pro에 가입하고 무제한으로 사용하세요.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="other">Standard 기능을 사용 중입니다. 무료 사용이 %d회 남았습니다. Standard에 가입하고 무제한으로 사용하세요.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="other">Pro 기능을 사용 중입니다. 이달 무료 사용이 %d회 남았습니다. Pro에 가입하고 무제한으로 사용하세요.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="other">Standard 기능을 사용 중입니다. 이달 무료 사용이 %d회 남았습니다. Standard에 가입하고 무제한으로 사용하세요.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="other">%d일 무료</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="other">%2$d주 후 %1$s</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="other">Pro 템플릿을 월 %d회 무료로 사용할 수 있습니다.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="other">%d회 무료 사용</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="other">%d일간 무료로 사용해 보기</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="other">%d 음악 저작권 문제</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="other">%d개 텍스트 선택됨</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="other">%d개의 클립 선택됨</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="other">%1$d일간 무제한 무료 내보내기 혜택을 받거나 업그레이드하여 완전 무제한 고해상도 내보내기를 이용하세요.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="other">1080p %d회 무료 내보내기</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="other">1080p 무료 내보내기가 %d회 남았습니다. 고해상도 내보내기를 무제한으로 이용하려면 업그레이드하세요.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="other">이달 1080p 무료 내보내기가 %d회 남았습니다. 고해상도 내보내기를 무제한으로 이용하려면 업그레이드하세요.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="other">%d크레딧이 필요합니다.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="other">남은 크레딧은 %d입니다.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="other">%1$d개 생성이 진행 중입니다. Pro로 업그레이드하여 최대 %2$d개 항목을 한 번에 생성하세요.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="other">워터마크 없이 내보내기(%d회 남음)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="other">남은 무료 크레딧은 %d입니다. 크레딧이 필요하지 않습니다.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="other">선택한 항목이 삭제되고 %d일간 휴지통에 보관됩니다.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="other">선택한 항목 일부가 공간에 업로드되었습니다. 그래도 삭제할까요?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="other">선택한 항목이 삭제되고 휴지통으로 이동합니다.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="other">%d회 사용</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="other">입력한 생년월일로 계산한 나이는 만 %d세이며 정확하지 않은 것 같습니다. 실제 생년월일을 입력하세요.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="other">이전 구매에서 제공된 무료 사용 1회와 Pro 무료 사용 추가 %d회가 포함됩니다.</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="other">Pro는 %d회 무료 사용을 제공합니다</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="other">동영상으로 만든 아바타는 이제 영구적으로 유효합니다. Pro에 가입하여 %d회 무료로 사용자 지정하세요.</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="other">이 효과를 적용하는 데 %d크레딧이 사용됩니다.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="other">현재 남은 크레딧은 %d입니다.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="other">%d개의 하이라이트</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="other">AI 편집효과 적용 중... %s시간 남음</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="other">AI 편집효과 적용 중... %s분 남음</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="other">현재 항목에 %1$s Pro 효과가 적용되었습니다. 새 항목에 다시 적용하면 %2$d크레딧이 사용됩니다.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="other">무료 사용 횟수 %1$d회가 차감됩니다. 현재 무료 사용 횟수는 %2$d회입니다.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="other">Pro 사용 횟수 %1$d회가 차감됩니다. 현재 Pro 사용 횟수는 %2$d회입니다.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="other">이 모델은 참조 이미지를 최대 %d개 지원합니다</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="other">이 모델을 사용하려면 참조 이미지를 %d개 이상 추가하세요</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="other">이 모델은 참조 동영상을 최대 %d개 지원합니다</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="other">이 모델을 사용하려면 참조 동영상을 %d개 이상 추가하세요</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="other">사진 %d개 선택</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="other">%d개의 자료 추가됨</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="other">%d회 생성 남음</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="other">잠금 해제 %d회 남음</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="other">%d개 키워드가 강조 표시되었습니다. 수동으로 선택할 수도 있습니다.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="other">클립 %d개 삭제</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="other">%d 추임새 단어가 인식되었습니다. 수동으로 선택할 수도 있습니다.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="other">키워드 %d개 강조 표시됨</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="other">%d개 사진 내보내는 중...</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="other">최대 %d개 포즈 선택</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="other">미디어 파일이 업로드 중입니다</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="other">%d명의 구성원</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="other">공간에 %d개의 프로젝트를 업로드하여 장치 저장 공간을 확보하세요. 이 프로젝트는 모바일 앱, 데스크톱 앱 또는 온라인 에디터에서 편집할 수 있습니다.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="other">프로젝트에 있는 %d개의 미디어 파일을 공간에 업로드하세요. 이 파일은 다시 업로드하지 않고도 모든 디바이스에서 사용할 수 있습니다.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="other">복구할 프로젝트가 있습니다</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="other">프로젝트 복구됨</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="other">%d개 기능을 적용할 수 없음</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="other">%d가지 기능 적용 중</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="other">Pro 효과를 적용할까요?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="other">현재 항목에 %1$d Pro 효과가 적용되었습니다. 새 항목에 다시 적용하면 %2$d크레딧이 사용됩니다.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="other">현재 항목에 Pro 효과 %1$d개가 적용되었습니다. 새 항목에 다시 적용하면 무료 사용 횟수 %2$d회가 차감됩니다. 크레딧은 사용되지 않습니다.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="other">현재 항목에 %1$d Pro 효과가 적용되었습니다. 새 항목에 다시 적용하려면 %2$d크레딧이 필요합니다.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="other">현재 항목에 %1$d Pro 효과가 적용되었습니다. 새 항목에 다시 적용하면 무료 사용 횟수 %2$d회와 %3$d크레딧이 사용됩니다.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="other">%d개 클립이 누락되었습니다. 휴대폰에서 복원하거나 교체하세요.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="other">%d자 이내로 입력하세요</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="other">%d일</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="other">항목을 삭제할까요?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="other">휴지통으로 이동한 항목은 여기에 표시되며 %d일 후에 삭제됩니다.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="other">항목 %d개 다운로드 중...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="other">항목 %d개 업로드 중...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="other">이 항목은 영구적으로 삭제되며 복원할 수 없습니다.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="other">항목 이동함</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="other">무료 내보내기가 %d일 남았습니다.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="other">축하합니다! 워터마크 없이 내보내기를 월 %d회 무료로 이용할 수 있습니다.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="other">워터마크 없이 내보내기 무료 이용이 %d회 남았습니다.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="other">축하합니다! 워터마크 없이 내보내기를 %d회 무료로 이용할 수 있습니다.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="other">%d회 사용</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="other">첫 이용 시 %d크레딧이 할인됩니다. 초과하면 추가 크레딧이 사용됩니다.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="other">이 기능을 적용하려면 %d크레딧이 더 필요합니다</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="other">클립은 %d초 이내여야 합니다</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="other">남은 크레딧은 %d입니다.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="other">{$benefit_name$} 기능을 적용하면 {$credit_amount$}크레딧이 사용됩니다.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="other">이 기능을 적용하면 %d크레딧이 사용됩니다.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="other">이 템플릿을 사용하는 데 %d크레딧이 사용됩니다.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="other">영구적으로 삭제되며 복구할 수 없습니다.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="other">이 항목을 삭제할까요?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="other">\"%1$s\" 프로젝트 %1$d개</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="other">%d개 항목을 휴지통으로 이동했습니다</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="other">%d개 항목을 즐겨찾기에 추가했습니다</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="other">즐겨찾기에서 %d개 항목 삭제됨</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="other">무료 공간이므로 최대 %1$d명의 구성원을 보유할 수 있습니다. 구성원 %2$s명을 더 초대할 수 있습니다.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="other">%d회 사용/월</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="other">%d회 사용/일</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="other">%d회 사용/주</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="other">{number}개월 후 {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="other">%2$d개월 후 %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="other">{number}년 후 {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="other">%2$d년 후 %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="other">이 공간에 %d명의 구성원이 있습니다.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="other">구성원 %1$d명을 더 초대할 수 있습니다.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="other">%1$d개 시트가 사용 중입니다.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="other">%d일 무료 체험판 시작</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="other">%d크레딧이 필요합니다.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="other">남은 크레딧은 %d입니다.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="other">%1$s/%2$s개 프로젝트 업로드 중</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="other">"다른 클립 %d개가 이 미디어 파일에 연결되어 있습니다. 모두 교체할까요?
+원래 지속 시간에 맞게 파일 길이를 자동으로 다듬습니다."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="other">이미지를 %d개 더 업로드할 수 있습니다</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="other">업데이트할 세그먼트 %d개</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="other">%1$d개 이미지와 %2$s을 더 선택할 수 있습니다</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="other">(최대 %d초)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="other">%d개 동영상</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="other">%d개 이미지를 더 선택할 수 있습니다</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="other">%d개 동영상을 더 선택할 수 있습니다</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="other">(최대 %d초)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="other">대기 중... 약 %d분 남았습니다.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="other">대기 시간 단축 · %d회 남음</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="other">대기 중... 약 %d초 남았습니다.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="other">Pro의 빠른 대기열에서 기다리는 중... 약 %d분 남았습니다.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="other">%d개 항목</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="other">%d개 항목 선택됨</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="other">%d개 프로젝트</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="other">%d개 프로젝트 선택됨</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="other">지금 많은 사람들이 이 기능을 사용하고 있습니다. 예상 대기 시간은 %d분입니다.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="other">다시 생성하는 데 %d크레딧이 사용됩니다.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="other">새 항목으로 다시 생성하는 데 %d크레딧을 사용합니다.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="other">%d개 클립 추가됨</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="other">%d개 항목 선택</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="other">%d개 동영상 생성됨</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="other">%d분 미만의 오디오만 분리할 수 있습니다</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="other">%d일 이내에 공간을 복원할 수 있습니다.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="other">%d개 동영상이 생성되는 중입니다. 나중에 다시 시도하세요.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="other">업그레이드하여 %d크레딧으로 이 기능을 사용하세요</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="other">이 공간에 남은 시트는 %d개뿐입니다.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="other">%d개 요소 사용됨</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="other">%d개 항목 선택됨</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="other">%d개 항목 선택</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="other">%d 캡션</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="other">%d개 항목</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="other">%d개 기능이 적용되는 중입니다. 나중에 다시 시도하세요.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="other">무료 사용이 %d회 남았습니다. 기능을 크레딧으로 이용하려면 Standard에 가입하세요.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="other">무료 사용이 %d회 남았습니다. 기능을 크레딧으로 이용하려면 Pro에 가입하세요.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="other">무료 사용이 %d회 남았습니다. 크레딧으로 사용하려면 Ultra를 이용하세요.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="other">%1$d크레딧이 사용됩니다. %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="other">남은 크레딧은 %d입니다.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="other">%d크레딧으로 사용하려면 Ultra를 이용하세요</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="other">이 기능을 %d크레딧으로 이용하려면 Pro에 가입하세요.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="other">이 기능을 %d크레딧으로 이용하려면 Standard에 가입하세요.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="other">음성은 %1$d개까지만 저장할 수 있습니다.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="other">%1$d분보다 긴 클립은 음성을 보정할 수 없습니다</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="other">최적의 결과를 위해 %d개 항목을 선택하세요</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="other">첫 %2$d개월간 %1$s에 갱신, 이후 %3$s</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="other">첫 %2$d년간 %1$s에 갱신, 이후 %3$s</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="other">%d개 업데이트했습니다. 음성을 생성하고 입 모양을 일치시킬까요?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="other">%d회 남음</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="other">%d개의 무음 클립이 있습니다.</item>
+    </plurals>
+</resources>

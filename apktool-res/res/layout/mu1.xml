@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_item_sticker_search_result_title_0" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_search_result_title" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/krx" n0:layout_width="wrap_content" n0:layout_height="17.0dp" n0:layout_marginTop="20.0dp" n0:text="@string/t6k" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_search_no_result" n0:layout_width="0.0dp" n0:layout_height="60.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0dp" n0:textColor="@color/kra" n0:gravity="center" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1243a5" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_search_recommend_title" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent">
+            <View n0:layout_gravity="center_vertical" n0:background="@color/krw" n0:layout_width="0.0dp" n0:layout_height="0.5dp" n0:layout_weight="1.0" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="14.0dp" />
+            <TextView n0:textSize="14.0dp" n0:textColor="@color/kra" n0:layout_gravity="center_vertical" n0:id="@id/tv_recommend_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t5_" />
+            <View n0:layout_gravity="center_vertical" n0:background="@color/krw" n0:layout_width="0.0dp" n0:layout_height="0.5dp" n0:layout_weight="1.0" n0:layout_marginStart="14.0dp" n0:layout_marginEnd="16.0dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_search_bottom" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0dp" n0:textColor="@color/kra" n0:gravity="center" n0:id="@id/tv_search_end" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1243a6" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="horizontal" n0:id="@id/csl_search_loading" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent">
+            <com.xt.retouch.baseui.AutoLottieAnimationView n0:visibility="visible" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:lottie_fileName="loading_white.json" n4:lottie_loop="true" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout n0:orientation="horizontal" n0:id="@id/ll_search_fail" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_network_error_loading" n0:background="@drawable/rja" n0:layout_width="12.0dp" n0:layout_height="12.0dp" />
+            <TextView n0:textSize="12.0dp" n0:textColor="@color/kra" n0:layout_gravity="center_vertical" n0:id="@id/tv_network_error" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t5-" n0:layout_marginStart="6.0dp" />
+        </LinearLayout>
+        <FrameLayout n0:orientation="horizontal" n0:id="@id/fl_search_empty" n0:layout_width="0.0dp" n0:layout_height="34.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

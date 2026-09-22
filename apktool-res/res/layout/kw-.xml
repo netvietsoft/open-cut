@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_weight="1.0"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/xs" n0:ellipsize="end" n0:id="@id/tv_float_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_centerInParent="true" />
+    <ImageView n0:id="@id/iv_float_arrow" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/pxh" n0:layout_alignTop="@id/tv_float_title" n0:layout_alignBottom="@id/tv_float_title" n0:layout_toEndOf="@id/tv_float_title" />
+</RelativeLayout>

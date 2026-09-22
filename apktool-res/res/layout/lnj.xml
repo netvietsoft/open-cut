@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/k_8" n0:layout_width="match_parent" n0:layout_height="104.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="start" n0:id="@id/property_create_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintBottom_toTopOf="@id/property_create_tv_desc" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/pto" />
+        <com.vega.ui.widget.MarqueeTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:ellipsize="marquee" n0:id="@id/property_create_tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:includeFontPadding="false" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="4.0dp" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="#b2141d2d" n0:id="@id/property_create_tv_desc" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:paddingHorizontal="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/property_create_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

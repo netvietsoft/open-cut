@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kqt" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/btn_close_cut" n0:background="@drawable/m40" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="21.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/btn_finish_cut" n0:background="@drawable/ntp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginEnd="21.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="center" n0:id="@id/tv_volume_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/rax" n0:singleLine="true" n0:layout_marginStart="20.0dp" n0:layout_marginEnd="20.0dp" n3:layout_constraintBottom_toBottomOf="@id/btn_close_cut" n3:layout_constraintEnd_toStartOf="@id/btn_finish_cut" n3:layout_constraintStart_toEndOf="@id/btn_close_cut" n3:layout_constraintTop_toTopOf="@id/btn_close_cut"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="173.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/tv_volume_title"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvVolumeMin" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="0" n0:layout_marginStart="32.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvVolumeMax" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="200" n0:layout_marginEnd="29.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.SliderView n0:id="@id/volume_adjust" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" n4:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/tvVolumeMax" n4:layout_constraintStart_toEndOf="@id/tvVolumeMin" n4:layout_constraintTop_toTopOf="parent" n4:kkt="@color/APKTOOL_RENAMED_0x7f060639" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

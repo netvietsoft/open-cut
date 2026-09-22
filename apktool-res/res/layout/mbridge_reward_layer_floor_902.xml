@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="@color/mbridge_reward_black" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/mbridge_videoview_bg" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+    <FrameLayout n0:id="@id/mbridge_vfpv_fl" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerInParent="true">
+        <com.mbridge.msdk.playercommon.PlayerView n0:gravity="center" n0:id="@id/mbridge_vfpv" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </FrameLayout>
+    <com.mbridge.msdk.dycreator.baseview.cusview.MBridgeBaitClickView n0:id="@id/mbridge_animation_click_view" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.mbridge.msdk.dycreator.baseview.rewardpopview.MBAcquireRewardPopView n0:id="@id/mbridge_reward_popview" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <RelativeLayout n0:id="@id/mbridge_top_control" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:layout_alignParentTop="true">
+        <ImageView n0:gravity="center" n0:id="@id/mbridge_iv_link" n0:visibility="gone" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_marginLeft="10.0dp" n0:src="@drawable/mbridge_reward_notice" n0:layout_alignParentLeft="true" n0:layout_marginStart="10.0dp" n0:layout_alignParentStart="true" />
+        <com.mbridge.msdk.widget.FeedBackButton n0:textSize="11.0sp" n0:gravity="center" n0:id="@id/mbridge_native_endcard_feed_btn" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="25.0dp" n0:layout_marginLeft="10.0dp" n0:text="@string/mbridge_cm_feedback_btn_text" n0:layout_alignTop="@id/mbridge_iv_link" n0:layout_alignParentLeft="true" n0:layout_marginStart="10.0dp" n0:layout_toEndOf="@id/mbridge_iv_link" n0:layout_alignParentStart="true" />
+        <TextView n0:textSize="11.0sp" n0:textColor="@color/mbridge_white" n0:gravity="center" n0:id="@id/mbridge_tv_count" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginStart="10.0dp" n0:layout_toEndOf="@id/mbridge_native_endcard_feed_btn" />
+        <ImageView n0:layout_gravity="end" n0:id="@id/mbridge_rl_playing_close" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_marginRight="10.0dp" n0:src="@drawable/mbridge_reward_close" n0:layout_alignParentRight="true" n0:contentDescription="closeButton" n0:layout_marginEnd="10.0dp" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/mbridge_reward_bottom_widget" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true">
+        <com.mbridge.msdk.dycreator.baseview.cusview.SoundImageView n0:id="@id/mbridge_sound_switch" n0:background="@drawable/mbridge_reward_end_close_shape_oval" n0:padding="6.0dp" n0:visibility="visible" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_marginLeft="10.0dp" n0:layout_marginBottom="10.0dp" n0:src="@drawable/mbridge_reward_sound_open" n0:layout_marginStart="10.0dp" />
+        <com.mbridge.msdk.dycreator.baseview.cusview.MBridgeSegmentsProgressBar n0:id="@id/mbridge_reward_segment_progressbar" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true" />
+        <FrameLayout n0:id="@id/mbridge_reward_cta_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="5.0dp" />
+    </LinearLayout>
+</RelativeLayout>

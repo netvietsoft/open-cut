@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/ai_moment_home2_body" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/ai_moment_home2_title" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:paddingHorizontal="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/ai_moment_home2_topline" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <ImageView n0:id="@id/ai_moment_home2_back" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/l21" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/ai_moment_home2_topline" />
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:layout_gravity="center" n0:id="@id/ai_moment_home2_title_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/s1" n2:layout_constraintBottom_toBottomOf="@id/ai_moment_home2_back" n2:layout_constraintStart_toEndOf="@id/ai_moment_home2_back" n2:layout_constraintTop_toTopOf="@id/ai_moment_home2_back" />
+        <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/ai_moment_home2_banner" n0:background="@drawable/jq" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginEnd="10.0dp" n0:paddingHorizontal="12.0dp" n2:layout_constraintBottom_toBottomOf="@id/ai_moment_home2_back" n2:layout_constraintEnd_toStartOf="@id/ai_moment_home2_feedback" n2:layout_constraintTop_toTopOf="@id/ai_moment_home2_back">
+            <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/nio" />
+            <androidx.viewpager2.widget.ViewPager2 n0:layout_gravity="center" n0:id="@id/ai_moment_home2_banner_viewpager" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginStart="4.0dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <ImageView n0:id="@id/ai_moment_home2_feedback" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/i2" n2:layout_constraintBottom_toBottomOf="@id/ai_moment_home2_back" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/ai_moment_home2_back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

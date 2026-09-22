@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="85.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/main_ic" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/pr6" n0:scaleType="fitXY" n0:layout_centerHorizontal="true" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#cc000000" n0:ellipsize="end" n0:gravity="center" n0:id="@id/text" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:includeFontPadding="false" n0:layout_below="@id/main_ic" n0:layout_centerHorizontal="true" />
+</merge>

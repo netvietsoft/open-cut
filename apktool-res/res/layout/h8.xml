@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@drawable/pc5" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/l0t" n1:k1g="display" n1:k1i="regular"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="end" n0:id="@id/iv_close" n0:paddingLeft="19.0dp" n0:paddingTop="11.0dp" n0:paddingRight="19.0dp" n0:paddingBottom="11.0dp" n0:layout_width="56.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m40" n0:paddingHorizontal="19.0dp" n0:paddingVertical="11.0dp" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/recycler_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="44.0dp" />
+    <com.vega.audio.widget.FailStatusView n0:layout_gravity="center" n0:id="@id/fail_status_view" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+</FrameLayout>

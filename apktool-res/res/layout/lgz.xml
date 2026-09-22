@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="30.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView n0:id="@id/ttMusicCheckFragment" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="@id/shareToTikTok" n1:layout_constraintStart_toStartOf="@id/shareToTikTok" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/shareToTikTok" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp" n2:layout_constraintBottom_toTopOf="@id/shareToSocialSub" n2:layout_constraintTop_toBottomOf="@id/ttMusicCheckFragment" n2:layout_goneMarginTop="0.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/l_5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/shareToSocialSub" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="15.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp" n3:layout_constraintBottom_toTopOf="@id/btnPublishTemplate" n3:layout_constraintTop_toBottomOf="@id/shareToTikTok"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/l_6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@android:color/white" n0:id="@id/btnPublishTemplate" n0:background="@drawable/qla" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f122e3d" n0:textAllCaps="false" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginHorizontal="30.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/shareToSocialSub" n4:k1i="medium"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/publishTemplateTip" n0:background="@drawable/kqe" n0:paddingTop="2.0dp" n0:paddingBottom="2.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="30.0dp" n0:minWidth="88.0dp" n0:text="@string/kfz" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" n0:elevation="52.0dp" n5:layout_constraintBottom_toBottomOf="@id/btnPublishTemplate" n5:layout_constraintEnd_toEndOf="@id/btnPublishTemplate"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/uploadSuccessPanel" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="60.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/ttMusicCheckFragment"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#ffffff" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/uploadDone" n0:background="@drawable/li7" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/l_e" n0:layout_marginHorizontal="16.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

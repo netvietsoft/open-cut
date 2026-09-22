@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:paddingLeft="@dimen/ua" n0:paddingTop="@dimen/ub" n0:paddingRight="@dimen/ua" n0:paddingBottom="@dimen/ub" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingHorizontal="@dimen/ua" n0:paddingVertical="@dimen/ub"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.view.MaterialSelectableImageView n0:id="@id/resetTextCurve" n0:padding="5.0dp" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:src="@drawable/mra" n0:scaleType="center" n0:layout_marginStart="@dimen/uy" n0:layout_marginEnd="@dimen/uy" n1:layout_constraintEnd_toStartOf="@id/textCurve" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/uj"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.lvui.view.MaterialSelectableImageView n0:id="@id/textCurve" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:src="@drawable/qbd" n0:scaleType="fitCenter" n0:layout_marginStart="@dimen/uy" n0:layout_marginEnd="@dimen/uy" n2:layout_constraintEnd_toStartOf="@id/textCurveSpace1" n2:layout_constraintStart_toEndOf="@id/resetTextCurve" n2:layout_constraintTop_toTopOf="parent" n2:layout_goneMarginStart="12.0dp" style="@style/uj"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/textCurveSpace1" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginStart="12.0dp" n3:layout_constraintEnd_toStartOf="@id/textCurveSpace2" n3:layout_constraintStart_toEndOf="@id/textCurve" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/textCurveSpace2" n0:layout_width="0.0dp" n0:layout_height="36.0dp" n0:layout_marginStart="12.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/textCurveSpace1" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:id="@id/curve_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="22.0dp" n0:text="@string/pyk" n5:layout_constraintStart_toStartOf="@id/resetTextCurve" n5:layout_constraintTop_toBottomOf="@id/textCurve"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:layout_gravity="bottom" n0:id="@id/svStrength" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:layout_width="0.0dp" n0:layout_height="61.0dp" n0:layout_marginTop="-14.0dp" n0:layout_marginBottom="6.0dp" n6:APKTOOL_RENAMED_0x7f04046d="false" n6:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n6:APKTOOL_RENAMED_0x7f040549="8.0dp" n6:APKTOOL_RENAMED_0x7f0405b7="true" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toEndOf="@id/curve_title" n6:layout_constraintTop_toBottomOf="@id/textCurve" n6:kkt="@color/APKTOOL_RENAMED_0x7f060639" n6:kp6="true"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Group n0:id="@id/adjustViews" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n7:constraint_referenced_ids="curve_title,svStrength"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

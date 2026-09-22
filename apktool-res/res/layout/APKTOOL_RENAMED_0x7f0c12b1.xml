@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/tag_name_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="AspectRatio:" n0:layout_marginEnd="8.0dp" />
+    <LinearLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <TextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/tv_tag_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

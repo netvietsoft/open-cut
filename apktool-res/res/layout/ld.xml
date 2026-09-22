@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@drawable/_8" n0:paddingTop="16.0dp" n0:paddingBottom="20.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingStart="20.0dp" n0:paddingEnd="20.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/feedback_content_container" n0:paddingBottom="76.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+                <ImageView n0:id="@id/feedback_back" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0818f3" n0:scaleType="centerInside" n0:contentDescription="@string/w6" n1:kd8="#111827"
+                  xmlns:n1="http://schemas.android.com/apk/res-auto" />
+                <TextView n0:textSize="17.0sp" n0:textStyle="bold" n0:textColor="#111827" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/yp" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="8.0dp" />
+            </LinearLayout>
+            <Button n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#007aff" n0:id="@id/feedback_history" n0:background="@drawable/APKTOOL_RENAMED_0x7f080665" n0:layout_width="wrap_content" n0:layout_height="34.0dp" n0:minWidth="74.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12022d" n0:textAllCaps="false" n0:paddingStart="14.0dp" n0:paddingEnd="14.0dp" n0:elevation="0.0dp" n0:stateListAnimator="@null" />
+        </LinearLayout>
+        <ScrollView n0:id="@id/feedback_scroll" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:fillViewport="true" n0:layout_weight="1.0" n0:overScrollMode="never">
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <LinearLayout n0:orientation="vertical" n0:background="@drawable/kkm" n0:paddingTop="16.0dp" n0:paddingBottom="14.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+                    <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="#111827" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/w9" />
+                    <EditText n0:textSize="15.0sp" n0:textColor="#111827" n0:textColorHint="#98a2b3" n0:gravity="start|top" n0:id="@id/feedback_description" n0:background="@drawable/_6" n0:padding="16.0dp" n0:layout_width="match_parent" n0:layout_height="148.0dp" n0:layout_marginTop="12.0dp" n0:hint="@string/w7" n0:inputType="textCapSentences|textMultiLine" n0:textCursorDrawable="@null" n0:fontFamily="CapCut Sans Text" />
+                </LinearLayout>
+                <LinearLayout n0:orientation="vertical" n0:background="@drawable/kkm" n0:paddingTop="16.0dp" n0:paddingBottom="14.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+                    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                        <LinearLayout n0:orientation="vertical" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+                            <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="#111827" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/w4" />
+                        </LinearLayout>
+                        <Button n0:textSize="13.0sp" n0:textStyle="normal" n0:textColor="#007aff" n0:id="@id/feedback_add_attachment" n0:background="@drawable/APKTOOL_RENAMED_0x7f080665" n0:layout_width="wrap_content" n0:layout_height="34.0dp" n0:minWidth="120.0dp" n0:text="@string/w2" n0:textAllCaps="false" n0:paddingStart="14.0dp" n0:paddingEnd="14.0dp" n0:elevation="0.0dp" n0:stateListAnimator="@null" />
+                    </LinearLayout>
+                    <LinearLayout n0:orientation="vertical" n0:id="@id/feedback_attachment_group" n0:background="@drawable/_6" n0:padding="14.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp">
+                        <androidx.recyclerview.widget.RecyclerView n0:id="@id/feedback_attachment_preview_list" n0:scrollbars="none" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="80.0dp" n0:overScrollMode="never" n0:nestedScrollingEnabled="false" />
+                        <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="#111827" n0:id="@id/feedback_attachment_name" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" />
+                        <TextView n0:textSize="12.0sp" n0:textColor="#667085" n0:id="@id/feedback_attachment_meta" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:lineSpacingExtra="2.0dp" />
+                        <ProgressBar n0:id="@id/feedback_attachment_progress" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="6.0dp" n0:layout_marginTop="10.0dp" n0:max="100" n0:progressDrawable="@drawable/_-" style="?android:progressBarStyleHorizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n0:orientation="vertical" n0:id="@id/feedback_meego_group" n0:background="@drawable/kkm" n0:paddingTop="16.0dp" n0:paddingBottom="14.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+                    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                        <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="#111827" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f120256" n0:layout_weight="1.0" />
+                        <androidx.appcompat.widget.SwitchCompat n0:id="@id/feedback_meego_switch" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout n0:orientation="vertical" n0:id="@id/feedback_meego_fields" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp">
+                        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="48.0dp">
+                            <TextView n0:textSize="15.0sp" n0:textColor="#344054" n0:layout_width="62.0dp" n0:layout_height="wrap_content" n0:text="@string/xf" />
+                            <EditText n0:textSize="15.0sp" n0:textColor="#111827" n0:textColorHint="#98a2b3" n0:id="@id/feedback_meego_title" n0:background="@drawable/_6" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:hint="@string/x_" n0:singleLine="true" n0:layout_weight="1.0" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="2.0dp" />
+                        </LinearLayout>
+                        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="48.0dp">
+                            <TextView n0:textSize="15.0sp" n0:textColor="#344054" n0:layout_width="62.0dp" n0:layout_height="wrap_content" n0:text="@string/xc" />
+                            <TextView n0:textSize="15.0sp" n0:textColor="#344054" n0:gravity="center_vertical" n0:id="@id/feedback_meego_priority" n0:background="@drawable/_6" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/xi" n0:layout_weight="1.0" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="2.0dp" />
+                        </LinearLayout>
+                        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="48.0dp">
+                            <TextView n0:textSize="15.0sp" n0:textColor="#344054" n0:layout_width="62.0dp" n0:layout_height="wrap_content" n0:text="@string/xb" />
+                            <TextView n0:textSize="15.0sp" n0:textColor="#344054" n0:gravity="center_vertical" n0:id="@id/feedback_meego_issue_stage" n0:background="@drawable/_6" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/xg" n0:layout_weight="1.0" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="2.0dp" />
+                        </LinearLayout>
+                        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="48.0dp">
+                            <TextView n0:textSize="15.0sp" n0:textColor="#344054" n0:layout_width="62.0dp" n0:layout_height="wrap_content" n0:text="@string/xd" />
+                            <EditText n0:textSize="15.0sp" n0:textColor="#111827" n0:textColorHint="#98a2b3" n0:id="@id/feedback_meego_reporter" n0:background="@drawable/_6" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:hint="@string/xz" n0:singleLine="true" n0:layout_weight="1.0" n0:inputType="textEmailAddress" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="2.0dp" />
+                        </LinearLayout>
+                        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="48.0dp">
+                            <TextView n0:textSize="15.0sp" n0:textColor="#344054" n0:layout_width="62.0dp" n0:layout_height="wrap_content" n0:text="@string/xa" />
+                            <EditText n0:textSize="15.0sp" n0:textColor="#111827" n0:textColorHint="#98a2b3" n0:id="@id/feedback_meego_assignee" n0:background="@drawable/_6" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:hint="@string/xz" n0:singleLine="true" n0:layout_weight="1.0" n0:inputType="textEmailAddress" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="2.0dp" />
+                        </LinearLayout>
+                        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="48.0dp">
+                            <TextView n0:textSize="15.0sp" n0:textColor="#344054" n0:layout_width="62.0dp" n0:layout_height="wrap_content" n0:text="@string/xe" />
+                            <TextView n0:textSize="15.0sp" n0:textColor="#344054" n0:gravity="center_vertical" n0:id="@id/feedback_meego_story" n0:background="@drawable/_6" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/x5" n0:layout_weight="1.0" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="2.0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n0:orientation="vertical" n0:id="@id/feedback_runtime_group" n0:background="@drawable/kkm" n0:paddingTop="16.0dp" n0:paddingBottom="14.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:minHeight="0.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp">
+                    <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="#111827" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/yk" />
+                    <FrameLayout n0:background="@drawable/_7" n0:paddingTop="0.0dp" n0:paddingBottom="14.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:minHeight="0.0dp">
+                        <TextView n0:textSize="13.0sp" n0:textColor="#667085" n0:id="@id/feedback_runtime_info" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:lineSpacingExtra="2.0dp" n0:paddingStart="14.0dp" n0:paddingEnd="14.0dp" />
+                        <androidx.recyclerview.widget.RecyclerView n0:id="@id/feedback_runtime_list" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:minHeight="0.0dp" n0:overScrollMode="never" n0:nestedScrollingEnabled="false" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <Button n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="#ffffff" n0:layout_gravity="bottom" n0:id="@id/feedback_submit" n0:background="@drawable/_9" n0:layout_width="match_parent" n0:layout_height="46.0dp" n0:text="@string/ym" n0:textAllCaps="false" n0:paddingStart="14.0dp" n0:paddingEnd="14.0dp" n0:elevation="8.0dp" />
+</FrameLayout>

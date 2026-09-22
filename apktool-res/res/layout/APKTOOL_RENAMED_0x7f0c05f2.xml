@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/fl_preview_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/ll_preview_bottom" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <SurfaceView n0:layout_gravity="center" n0:id="@id/smartAdPreviewSurface" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <View n0:layout_gravity="top" n0:background="@drawable/lu5" n0:layout_width="match_parent" n0:layout_height="120.0dp" />
+        <View n0:layout_gravity="bottom" n0:background="@drawable/lu1" n0:layout_width="match_parent" n0:layout_height="220.0dp" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/smartAdPreviewCover" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <LinearLayout n0:layout_gravity="start|bottom" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="30.0dp" n0:layout_marginStart="16.0dp">
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/previewDraftSubType" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q3_" />
+            <com.vega.theme.text.VegaTextView n0:textSize="22.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/previewDraftName" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginBottom="8.0dp" />
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/aiPresenterLoading" n0:background="@drawable/luj" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:minHeight="20.0dp">
+                <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center_vertical" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="6.0dp" n1:lottie_autoPlay="true" n1:lottie_fileName="ad_script_loading/ai_loop_whiteBackground_b.json" n1:lottie_imageAssetsFolder="ad_script_loading/images" n1:lottie_loop="true" />
+                <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="start|center" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q3i" n0:layout_marginEnd="8.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="start|center" n0:layout_gravity="center_vertical" n0:id="@id/loading_progress" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="" n0:layout_marginStart="2.0dp" n0:layout_marginEnd="8.0dp" />
+            </LinearLayout>
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/aiPresenterFailed" n0:background="@drawable/luj" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="20.0dp">
+                <ImageView n0:layout_gravity="start|center" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08046f" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="6.0dp" />
+                <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="start|center" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ljo" n0:layout_marginEnd="4.0dp" />
+                <View n0:layout_gravity="center_vertical" n0:background="@color/APKTOOL_RENAMED_0x7f06063a" n0:layout_width="1.0dp" n0:layout_height="10.0dp" />
+                <ImageView n0:layout_gravity="center_vertical" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f080470" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="8.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView n0:layout_gravity="center" n0:id="@id/smartAdPreviewPlayBtn" n0:background="@drawable/lls" n0:visibility="gone" n0:layout_width="65.0dp" n0:layout_height="65.0dp" n0:src="@drawable/otf" n0:scaleType="centerInside" />
+    </FrameLayout>
+    <com.vega.ui.widget.SegmentProgressBar n0:id="@id/smartAdProgress" n0:layout_width="match_parent" n0:layout_height="26.0dp" n0:layout_marginBottom="4.0dp" n2:layout_constraintBottom_toBottomOf="@id/fl_preview_container" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:id="@id/ll_preview_bottom" n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="23.0dp" n0:paddingVertical="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.TintTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center_vertical" n0:id="@id/preview_edit" n0:background="@drawable/lu2" n0:layout_width="103.0dp" n0:layout_height="44.0dp" n0:text="@string/l3b" n0:maxLines="1" n0:drawablePadding="5.0dp" n0:drawableStart="@drawable/qrs" n0:paddingStart="22.0dp" n0:layout_marginStart="16.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/preview_export" n0:background="@drawable/lu3" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:text="@string/l8_" n0:layout_weight="1.0" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/smartAdPreviewLoading" n0:background="@color/_d" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/smartAdLoadingLottie" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n4:lottie_autoPlay="true" n4:lottie_fileName="cc_loading_w.json" n4:lottie_loop="true"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/mzj" />
+    </LinearLayout>
+    <FrameLayout n0:orientation="horizontal" n0:id="@id/flSmartAdLoadingFail" n0:background="@drawable/lu4" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n5:layout_constraintBottom_toTopOf="@id/smartAdProgress"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q37" n0:paddingStart="16.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#00cae0" n0:gravity="center" n0:layout_gravity="end|center" n0:id="@id/smartAdLoadingRetry" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/qfa" n0:paddingEnd="16.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

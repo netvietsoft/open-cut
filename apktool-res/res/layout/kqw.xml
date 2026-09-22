@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:id="@id/cardContainer" n0:layout_width="248.0dp" n0:layout_height="248.0dp" n1:cardBackgroundColor="@android:color/transparent" n1:cardCornerRadius="1000.0dp" n1:cardElevation="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/coverView" n0:background="@color/knt" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <TextureView n0:id="@id/videoContent" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/failed_container" n0:background="@color/knt" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#801c283d" n0:gravity="center" n0:id="@id/fail_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nyd" n1:layout_constraintBottom_toTopOf="@id/btnRetry" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed" n1:k1g="text" n1:k1i="regular" n1:k1j="sub_title" />
+            <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/btnRetry" n0:background="@drawable/lq5" n0:paddingLeft="16.0dp" n0:paddingTop="8.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="8.0dp" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/fail_tv">
+                <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/m-u" />
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#090c14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nyi" n0:layout_marginStart="6.0dp" n1:k1g="text" n1:k1i="medium" n1:k1j="body_1" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <com.vega.theme.text.VegaTextView n0:textSize="36.0dp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/progress_view" n0:layout_width="wrap_content" n0:layout_height="43.0dp" n0:includeFontPadding="false" n0:elevation="10.0dp" n2:layout_constraintBottom_toTopOf="@id/manage_generating_text" n2:layout_constraintEnd_toEndOf="@id/cardContainer" n2:layout_constraintStart_toStartOf="@id/cardContainer" n2:layout_constraintTop_toTopOf="@id/cardContainer" n2:layout_constraintVertical_chainStyle="packed" n2:k1g="display" n2:k1i="bold"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#801c283d" n0:gravity="center" n0:id="@id/manage_generating_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/nyb" n0:includeFontPadding="false" n0:elevation="10.0dp" n3:layout_constraintBottom_toBottomOf="@id/cardContainer" n3:layout_constraintEnd_toEndOf="@id/cardContainer" n3:layout_constraintStart_toStartOf="@id/cardContainer" n3:layout_constraintTop_toBottomOf="@id/progress_view" n3:k1g="text" n3:k1i="medium" n3:k1j="sub_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/card_selected_view" n0:background="@drawable/kuj" n0:layout_width="260.0dp" n0:layout_height="260.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/btnSettings" n0:background="@drawable/kvg" n0:padding="13.0dp" n0:visibility="visible" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m-q" n0:translationX="-17.0dp" n0:translationY="-1.0dp" n5:layout_constraintBottom_toBottomOf="@id/cardContainer" n5:layout_constraintEnd_toEndOf="@id/cardContainer" n5:kd8="#5c5f68"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

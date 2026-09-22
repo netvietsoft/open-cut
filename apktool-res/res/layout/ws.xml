@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/contentLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <View n0:layout_gravity="center" n0:id="@id/top_indicator" n0:background="@drawable/mhz" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="12.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="17.0sp" n0:textColor="@color/knt" n0:id="@id/titleTv" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/fd" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/top_indicator"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <EditText n0:textSize="16.0sp" n0:textColor="@color/knt" n0:textColorHint="#80ffffff" n0:gravity="top" n0:id="@id/themeInputEt" n0:background="@drawable/kly" n0:padding="16.0dp" n0:scrollbars="vertical" n0:layout_width="match_parent" n0:layout_height="144.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:maxLength="300" n0:layout_marginHorizontal="16.0dp" n3:layout_constraintTop_toBottomOf="@id/titleTv"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/applyButton" n0:background="@drawable/APKTOOL_RENAMED_0x7f080445" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginHorizontal="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toBottomOf="@id/themeInputEt"
+          xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/knt" n0:layout_gravity="center" n0:id="@id/applyButton_text_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/fc" n0:layout_marginStart="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+            <ImageView n0:gravity="center" n0:layout_gravity="center" n0:id="@id/applyButton_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/mh5" n0:layout_marginEnd="6.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/applyButton_text_tv" n4:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/mark_view_general" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:layout_constraintBottom_toTopOf="@id/applyButton" n5:layout_constraintEnd_toEndOf="@id/applyButton" n5:layout_constraintTop_toTopOf="@id/applyButton" n5:kml="medium" n5:kmm="mix"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

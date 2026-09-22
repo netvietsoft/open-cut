@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:padding="3.5dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="66.0dp" n0:layout_height="66.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/select_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" style="@style/uj">
+        <com.vega.ui.AlphaSimpleDraweeView n0:id="@id/local_image" n0:clickable="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/l07" n0:scaleType="centerCrop" n0:layout_centerInParent="true" n1:roundedCornerRadius="@dimen/APKTOOL_RENAMED_0x7f0700c5"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </com.vega.lvui.view.MaterialSelectableLayout>
+    <ImageView n0:id="@id/delete_local_image" n0:padding="1.5dp" n0:visibility="gone" n0:layout_width="23.0dp" n0:layout_height="23.0dp" n0:src="@drawable/l08" n0:layout_alignParentTop="true" n0:layout_alignParentEnd="true" n0:elevation="10.0dp" />
+</RelativeLayout>

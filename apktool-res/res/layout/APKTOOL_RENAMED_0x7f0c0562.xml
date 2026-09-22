@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/emptyDraft" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <ImageView n0:id="@id/emptyDraftIv" n0:layout_width="96.0dp" n0:layout_height="96.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginBottom="4.0dp" n0:src="@drawable/n4s" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mm" n0:gravity="center" n0:id="@id/emptyDraftTipsOne" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="60.0dp" n0:layout_marginRight="60.0dp" n0:text="@string/l4y" n0:textDirection="locale" n0:layout_marginHorizontal="60.0dp" />
+            <ViewStub n0:id="@id/viewStubTiktokEmptyView" n0:layout="@layout/APKTOOL_RENAMED_0x7f0c121e" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="40.0dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout n0:orientation="vertical" n0:id="@id/nonEmptyDraft" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.localdraft.widget.DraftRecyclerView n0:id="@id/draftGridView" n0:fadingEdgeLength="4.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never" n0:requiresFadingEdge="vertical" n2:ev="true" n2:ka6="true"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <include n0:id="@id/emptyDraftProperty" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" layout="@layout/k5n"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

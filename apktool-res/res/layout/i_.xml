@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lmm" n0:paddingLeft="24.0dp" n0:paddingRight="24.0dp" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/privacy_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="30.0dp" n0:text="@string/qx0" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n0:id="@id/privacy_content_scroll_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n2:layout_constraintBottom_toTopOf="@id/privacy_link" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHeight_max="300.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/privacy_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:orientation="vertical" n0:id="@id/privacy_content_root" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </ScrollView>
+    <com.vega.ui.TintTextView n0:textSize="14.0dp" n0:textColor="@color/_f" n0:id="@id/privacy_link" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:alpha="0.86" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/privacy_content_scroll_view" n3:kpu="0.86" n3:kr2="0.5"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/privacy_ok" n0:background="@drawable/qoo" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginBottom="24.0dp" n0:text="@string/mpe" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/privacy_link"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

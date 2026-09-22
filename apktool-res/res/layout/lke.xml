@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView n0:orientation="vertical" n0:id="@id/musicImportNestScroll" n0:background="@color/APKTOOL_RENAMED_0x7f06001b" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:paddingTop="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/knt" n0:id="@id/tab_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/pe_" n0:layout_marginStart="20.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/vgMusicImportTab" n0:layout_width="match_parent" n0:layout_height="75.0dp" n0:layout_marginTop="12.0dp" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/tab_title"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <com.vega.audio.widget.TableView n0:gravity="center" n0:id="@id/table_pick_music" n0:background="#1f1f1f" n0:layout_width="160.0dp" n0:layout_height="match_parent" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/table_local_music" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kbh="@drawable/lz3" n2:kbi="@string/l-9" />
+            <com.vega.audio.widget.LocalMusicTabView n0:gravity="center" n0:id="@id/table_local_music" n0:background="#1f1f1f" n0:layout_width="160.0dp" n0:layout_height="match_parent" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/table_pick_music" n2:layout_constraintTop_toTopOf="parent" n2:kbh="@drawable/lz2" n2:kbi="@string/pcs" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="25.0dp" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/vgMusicImportTab" layout="@layout/k6s"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ViewStub n0:id="@id/vsMusicLocal" n0:layout="@layout/k-s" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="25.0dp" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toBottomOf="@id/vgMusicImportTab"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

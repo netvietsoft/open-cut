@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kp6" n0:focusable="true" n0:clickable="true" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/_3" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="32.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/close_iv" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/m26" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kr3="button"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.viewpager.widget.ViewPager n0:id="@id/vp_effect_list" n0:layout_width="206.0dp" n0:layout_height="206.0dp" n0:layout_marginTop="10.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_d" n0:gravity="center" n0:id="@id/name_tv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/vp_effect_list"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.CircleIndicatorView n0:id="@id/indicator_view" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n5:f5="2.0dp" n5:f6="4.0dp" n5:APKTOOL_RENAMED_0x7f04055a="@color/_u" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/name_tv" n5:kvu="@color/sg"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/try_tv" n0:background="@drawable/kgm" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12121d" n0:shadowColor="@color/s1" n0:layout_marginHorizontal="30.0dp" n6:layout_constraintTop_toBottomOf="@id/indicator_view" n6:kr3="button"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/collect_view" n0:background="@drawable/kp5" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginHorizontal="30.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/try_tv" n7:layout_goneMarginTop="8.0dp"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/collect_iv" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/m25" n0:layout_marginEnd="7.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toStartOf="@id/collect_tv" n7:layout_constraintHorizontal_chainStyle="packed" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.state.pressed.PressedStateTextView n0:textSize="14.0dp" n0:textColor="#2e2e2e" n0:ellipsize="end" n0:gravity="center" n0:id="@id/collect_tv" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:maxWidth="170.0dp" n0:text="@string/mtl" n0:maxLines="1" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toEndOf="@id/collect_iv" n7:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.legacy.widget.Space n0:layout_width="match_parent" n0:layout_height="32.0dp" n8:layout_constraintTop_toBottomOf="@id/collect_view"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

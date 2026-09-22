@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.nested.NestedScrollingRelativeLayout n0:id="@id/nested_scroll_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.ui.nested.NestedScrollContainerConstraintLayout n0:background="@drawable/ka6" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/panel_music_recomm_top_bar" n0:layout_width="match_parent" n0:layout_height="24.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <View n0:background="@drawable/ka7" n0:layout_width="24.0dp" n0:layout_height="4.0dp" />
+            </LinearLayout>
+            <com.airbnb.lottie.LottieAnimationView n0:id="@id/panel_music_recomm_loading_view" n0:visibility="invisible" n0:layout_width="40.0dp" n0:layout_height="40.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/panel_music_recomm_top_bar" app:lottie_autoPlay="true" app:lottie_fileName="cc_loading_w.json" app:lottie_loop="true" />
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panel_music_recomm_content" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:nestedScrollingEnabled="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/panel_music_recomm_top_bar">
+                <LinearLayout n0:orientation="horizontal" n0:id="@id/panel_music_recomm_add" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginTop="8.0dp" n0:baselineAligned="false" app:layout_constraintTop_toTopOf="parent">
+                    <com.vega.ui.state.pressed.PressedStateLinearLayout n0:gravity="center_horizontal" n0:id="@id/panel_music_recomm_extract_audio" n0:background="@drawable/ka4" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_weight="1.0" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="6.0dp">
+                        <ImageView n0:layout_gravity="center_vertical" n0:background="@drawable/oof" n0:layout_width="16.0dp" n0:layout_height="16.0dp" />
+                        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f060480" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/tv_extract_audio" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pxl" n0:lines="1" n0:layout_marginStart="4.0dp" app:k1i="medium" />
+                    </com.vega.ui.state.pressed.PressedStateLinearLayout>
+                    <com.vega.ui.state.pressed.PressedStateLinearLayout n0:gravity="center_horizontal" n0:id="@id/panel_music_recomm_song_library" n0:background="@drawable/ka4" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_weight="1.0" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="16.0dp">
+                        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center_vertical" n0:background="@drawable/oo6" n0:layout_width="16.0dp" n0:layout_height="16.0dp" />
+                        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f060480" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/tv_add_sound" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pw_" n0:lines="1" n0:layout_marginStart="4.0dp" app:k1i="medium" />
+                    </com.vega.ui.state.pressed.PressedStateLinearLayout>
+                </LinearLayout>
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f060480" n0:id="@id/panel_music_recomm_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/kep" n0:layout_marginStart="16.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/panel_music_recomm_add" app:layout_goneMarginTop="0.0dp" />
+                <com.vege.genai.preview.view.FadingTopEdgeRecyclerView n0:theme="@style/s8" n0:id="@id/panel_music_recomm_list" n0:fadingEdge="vertical" n0:fadingEdgeLength="24.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="8.0dp" n0:requiresFadingEdge="vertical" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/panel_music_recomm_tv" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/panel_music_recomm_error_view" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/panel_music_recomm_top_bar">
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#cacace" n0:gravity="center" n0:id="@id/panel_music_recomm_loading_error_tips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" n0:text="@string/qli" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" app:layout_constraintVertical_chainStyle="packed" />
+                <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/panel_music_recomm_retry" n0:background="#1affffff" n0:layout_width="104.0dp" n0:layout_height="40.0dp">
+                    <ImageView n0:layout_gravity="center" n0:background="@drawable/oow" n0:layout_width="24.0dp" n0:layout_height="24.0dp" />
+                </com.vega.ui.state.pressed.PressedStateFrameLayout>
+            </LinearLayout>
+        </com.vega.ui.nested.NestedScrollContainerConstraintLayout>
+    </com.vega.ui.nested.NestedScrollingRelativeLayout>
+</LinearLayout>

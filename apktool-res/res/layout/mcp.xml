@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_sticker_cover_layout_0" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/rootLinear" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp">
+        <com.xt.retouch.baseui.view.RoundLayout n0:id="@id/coverContainer" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:APKTOOL_RENAMED_0x7f0407f5="3.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/cover" n0:tag="binding_1" n0:layout_width="100.0dp" n0:layout_height="100.0dp" n0:scaleType="centerCrop" />
+            <FrameLayout n0:layout_gravity="end|top" n0:tag="binding_2" n0:background="@drawable/r-j" n0:layout_width="32.0dp" n0:layout_height="32.0dp">
+                <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|top" n0:layout_width="15.0dp" n0:layout_height="6.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/r6-" n0:layout_marginEnd="3.0dp" />
+            </FrameLayout>
+        </com.xt.retouch.baseui.view.RoundLayout>
+        <TextView n0:textSize="11.0dp" n0:textColor="@color/kv3" n0:id="@id/title" n0:tag="binding_3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="7.5dp" />
+        <TextView n0:textSize="10.0dp" n0:textColor="@color/kv4" n0:id="@id/subTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="3.0dp" />
+    </LinearLayout>
+</FrameLayout>

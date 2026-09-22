@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.outpainting.fragment.VideoFrameRotateNewFragment" n0:id="@id/fragment_rotate" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="20.0dp" n1:layout_constraintBottom_toTopOf="@id/fragment_ratio" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.fragment.app.FragmentContainerView n0:name="com.vega.edit.outpainting.fragment.VideoFrameRatioNewFragment" n0:id="@id/fragment_ratio" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp" n2:layout_constraintBottom_toTopOf="@id/tvReset"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@drawable/l62" n0:id="@id/tvReset" n0:background="@drawable/k_e" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginBottom="4.0dp" n0:text="@string/qex" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/mkz" n0:layout_marginStart="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

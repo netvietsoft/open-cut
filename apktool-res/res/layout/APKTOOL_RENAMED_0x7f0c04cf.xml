@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/fragment_ai_painting_v3_home_edit_mask" n0:background="@color/s7" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" n0:alpha="0.5" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/mask_and_content_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <View n0:id="@id/bottom_button_mask" n0:background="@drawable/ksk" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="64.0dp" n0:layout_marginStart="-8.0dp" n1:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:orientation="vertical" n0:id="@id/prompt_float_container" n0:background="@drawable/kpv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintTop_toTopOf="parent">
+                <com.vega.ui.AlphaButton n0:id="@id/fragment_ai_painting_v3_home_edit_back" n0:padding="15.0dp" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/l5n" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="@color/knt" n0:id="@id/fragment_ai_painting_v3_home_edit_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qwv" n0:fontFamily="sans-serif-medium" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/edit_container" n0:background="@drawable/kpr" n0:layout_width="match_parent" n0:layout_height="110.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginHorizontal="16.0dp">
+                <TextView n0:gravity="center" n0:id="@id/fragment_ai_painting_v3_home_edit_disable" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:text="@string/o7n" n0:layout_marginHorizontal="16.0dp" />
+                <com.vega.theme.VegaEditText n0:textSize="16.0sp" n0:textColor="#fafbff" n0:gravity="start|top" n0:id="@id/fragment_ai_painting_v3_home_edit_content" n0:background="@null" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:focusable="true" n0:visibility="gone" n0:saveEnabled="false" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="12.0dp" n0:hint="@string/APKTOOL_RENAMED_0x7f1231fb" n0:cursorVisible="true" n0:lineSpacingMultiplier="1.2" n0:textCursorDrawable="@drawable/k5l" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toTopOf="@id/layout_reference_image" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <include n0:id="@id/layout_reference_image" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="12.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" layout="@layout/k5b" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.vega.edit.aigenerator.v3.page.view.AIPaintingV3CommonSlider n0:id="@id/fragment_ai_painting_v3_home_edit_slider" n0:paddingTop="12.0dp" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="0.0dp" />
+            <com.vega.edit.aigenerator.v3.page.view.AIPaintingV3CommonBottomView n0:id="@id/fragment_ai_painting_v3_home_edit_bottom" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

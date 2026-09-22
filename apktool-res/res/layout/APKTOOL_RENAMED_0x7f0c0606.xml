@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/listTopContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/refresh_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/listTopContainer">
+        <com.vega.feedx.nativefeed.feedlist.view.FeedRefreshHeaderView n0:layout_width="match_parent" n0:layout_height="40.0dp" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/list_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:background="@color/APKTOOL_RENAMED_0x7f06027d" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/listTopContainer" n1:kr3="none"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

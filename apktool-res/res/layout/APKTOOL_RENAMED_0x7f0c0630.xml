@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/border_view" n0:background="@drawable/k1k" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:padding="2.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.vega.lvui.widget.MaterialDraweeView n0:id="@id/frame_image_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:i1="8.0dp" n1:placeholderImage="@drawable/APKTOOL_RENAMED_0x7f080480"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <View n0:id="@id/overlay_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f08047f" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </FrameLayout>
+</FrameLayout>

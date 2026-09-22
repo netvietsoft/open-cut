@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_wrinkle_remove_manual_0" n0:background="@color/kor" n0:layout_width="match_parent" n0:layout_height="120.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/pen" n0:tag="binding_1" n0:layout_width="44.0dp" n0:layout_height="58.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/erase" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center|top" n0:tag="binding_2" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <TextView n0:textSize="10.0dp" n0:layout_gravity="center|bottom" n0:id="@id/wrinkle_remove_manual_tv" n0:tag="binding_3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/erase" n0:tag="binding_4" n0:layout_width="44.0dp" n0:layout_height="58.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/pen" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center|top" n0:tag="binding_5" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <TextView n0:textSize="10.0dp" n0:layout_gravity="center|bottom" n0:tag="binding_6" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tqa" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

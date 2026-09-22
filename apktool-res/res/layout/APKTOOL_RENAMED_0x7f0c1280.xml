@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="160.0dp" n0:minHeight="40.0dp" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_menu_icon" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/ocw" />
+    <LinearLayout n0:layout_gravity="center_vertical" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp">
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0sp" n0:textColor="#fafbff" n0:id="@id/tv_menu_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="10.0sp" n0:textColor="#80f0f5ff" n0:id="@id/tv_menu_subtitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:kr3="none"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.vega.ui.UpdateParentHeightRecycleView n0:id="@id/rv_tone_select" n0:tag="content" n0:paddingLeft="10.0dp" n0:paddingTop="4.0dp" n0:paddingRight="10.0dp" n0:paddingBottom="4.0dp" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingHorizontal="10.0dp" n0:paddingVertical="4.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" />
+    <include n0:id="@id/llBusinessDataNull" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_centerVertical="true" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" layout="@layout/x3" />
+    <include n0:id="@id/tone_clone_empty_root" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" layout="@layout/ltt" />
+</com.vega.ui.state.pressed.PressedStateStateViewGroupLayout>

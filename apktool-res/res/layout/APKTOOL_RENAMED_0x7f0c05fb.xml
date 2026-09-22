@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.tabs.TabLayout n0:id="@id/tablayout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layoutDirection="ltr" n1:tabIndicator="@drawable/qyg" n1:tabIndicatorColor="@color/APKTOOL_RENAMED_0x7f0605eb" n1:tabIndicatorFullWidth="false" n1:tabMode="fixed" n1:tabRippleColor="@null" n1:tabSelectedTextColor="@color/APKTOOL_RENAMED_0x7f060580" n1:tabTextAppearance="@style/APKTOOL_RENAMED_0x7f130532" n1:tabTextColor="@color/APKTOOL_RENAMED_0x7f06057f"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/tabline" n0:background="@color/APKTOOL_RENAMED_0x7f06045a" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_alignBottom="@id/tablayout" />
+    <com.vega.ui.widget.HorizontalViewPager n0:id="@id/viewpager" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/tablayout" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:background="#1a2a435e" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toBottomOf="@id/atl_favorite_tabs" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.cloud.widget.tablayout.AnchorTabLayout n0:id="@id/atl_favorite_tabs" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="4.0dp" n0:layout_marginRight="4.0dp" n0:layout_marginHorizontal="4.0dp" n2:layout_constraintTop_toTopOf="parent" n2:kn9="44.0dp" n2:tabIndicatorColor="#090c14" n2:tabMode="scrollable" n2:tabPaddingEnd="12.0dp" n2:tabPaddingStart="12.0dp" n2:tabSelectedTextColor="#090c14" n2:tabTextAppearance="@style/APKTOOL_RENAMED_0x7f130512" n2:tabTextColor="#b2141d2d"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.viewpager2.widget.ViewPager2 n0:id="@id/vp_favorite_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/atl_favorite_tabs"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.property.optional.ui.common.view.PropertyLoadingView n0:id="@id/vp_loading_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.property.optional.ui.common.view.PropertyListEmptyView n0:id="@id/vp_empty_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/floating_icon" n0:visibility="gone" n0:layout_width="68.0dp" n0:layout_height="68.0dp" n0:layout_marginBottom="22.0dp" n0:layout_marginEnd="10.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintRight_toRightOf="parent" n6:srcCompat="@drawable/npt"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

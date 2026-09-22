@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/template_publish" app:kz0="@id/routerFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.vega.publish.template.publish.view.RouterFragment" android:id="@id/routerFragment">
+        <action android:id="@id/action_tutorial" app:APKTOOL_RENAMED_0x7f040444="@id/publishInfo" />
+        <action android:id="@id/action_template_config" app:APKTOOL_RENAMED_0x7f040444="@id/publish_config" />
+        <action android:id="@id/action_ad_template" app:APKTOOL_RENAMED_0x7f040444="@id/publishInfo" />
+        <action android:id="@id/action_config_aggregation" app:APKTOOL_RENAMED_0x7f040444="@id/publish_config_aggregation" app:kra="@id/routerFragment" app:krb="true" />
+        <action android:id="@id/action_popular_script" app:APKTOOL_RENAMED_0x7f040444="@id/popularScriptChapterSplitFragment" />
+        <action android:id="@id/action_popular_script_description" app:APKTOOL_RENAMED_0x7f040444="@id/popularScriptChapterDescriptionFragment" />
+    </fragment>
+    <fragment android:name="com.vega.publish.template.publish.view.PublishTemplateConfigFragment" android:id="@id/publish_config">
+        <argument android:name="from_simplified_publish" android:defaultValue="false" app:a7="boolean" />
+        <action android:id="@id/action_publish_info" app:APKTOOL_RENAMED_0x7f040444="@id/publishInfo" />
+        <action android:id="@id/action_advance_fragment" app:APKTOOL_RENAMED_0x7f040444="@id/advancedFragment" />
+    </fragment>
+    <fragment android:name="com.vega.templatepublish.view.PublishTemplateConfigAggregationFragment" android:id="@id/publish_config_aggregation">
+        <action android:id="@id/action_cover_select" app:APKTOOL_RENAMED_0x7f040444="@id/coverSelect" />
+        <action android:id="@id/action_image_cover_preview" app:APKTOOL_RENAMED_0x7f040444="@id/imageCoverPreview" />
+        <action android:id="@id/action_publish_export" app:APKTOOL_RENAMED_0x7f040444="@id/exportPublish" />
+        <action android:id="@id/action_template_config" app:APKTOOL_RENAMED_0x7f040444="@id/publish_config" />
+        <action android:id="@id/action_purchase_to_edit" app:APKTOOL_RENAMED_0x7f040444="@id/purchaseToEditSwitchFragment" />
+        <action android:id="@id/action_purchase_to_use" app:APKTOOL_RENAMED_0x7f040444="@id/purchaseToUseSwitchFragment" />
+        <action android:id="@id/action_advance_fragment" app:APKTOOL_RENAMED_0x7f040444="@id/advancedFragment" />
+        <action android:id="@id/action_pay_desire_fragment" app:APKTOOL_RENAMED_0x7f040444="@id/payDesireFragment" />
+        <action android:id="@id/action_bind_task_fragment" app:APKTOOL_RENAMED_0x7f040444="@id/bindTaskFragment" />
+    </fragment>
+    <fragment android:label="@string/qyf" android:name="com.vega.publish.template.publish.view.PublishTemplateFragment" android:id="@id/publishInfo">
+        <action android:id="@id/action_cover_select" app:APKTOOL_RENAMED_0x7f040444="@id/coverSelect" />
+        <action android:id="@id/action_advance_fragment" app:APKTOOL_RENAMED_0x7f040444="@id/advancedFragment" />
+        <action android:id="@id/action_link_draft" app:APKTOOL_RENAMED_0x7f040444="@id/linkDraftFragment" />
+        <action android:id="@id/action_publish_export" app:APKTOOL_RENAMED_0x7f040444="@id/exportPublish" />
+        <action android:id="@id/action_link_fragment" app:APKTOOL_RENAMED_0x7f040444="@id/linkFragment" app:APKTOOL_RENAMED_0x7f0404b0="@anim/lw" app:krz="@anim/lx" />
+        <action android:id="@id/action_purchase_to_edit" app:APKTOOL_RENAMED_0x7f040444="@id/purchaseToEditSwitchFragment" />
+        <action android:id="@id/action_purchase_to_use" app:APKTOOL_RENAMED_0x7f040444="@id/purchaseToUseSwitchFragment" />
+        <action android:id="@id/action_bind_task_fragment" app:APKTOOL_RENAMED_0x7f040444="@id/bindTaskFragment" />
+    </fragment>
+    <fragment android:label="" android:name="com.vega.publish.template.publish.view.PublishExportFragment" android:id="@id/exportPublish">
+        <argument android:name="from_simplified_publish" android:defaultValue="false" app:a7="boolean" />
+    </fragment>
+    <fragment android:label="@string/q1o" android:name="com.vega.publish.template.publish.view.TemplateCoverFragment" android:id="@id/coverSelect" />
+    <fragment android:label="" android:name="com.vega.publish.template.publish.view.ImageTemplateCoverPreviewFragment" android:id="@id/imageCoverPreview" />
+    <fragment android:label="@string/n-" android:name="com.vega.publish.template.publish.view.TemplateAdvancedFragment" android:id="@id/advancedFragment">
+        <argument android:name="from_simplified_publish" android:defaultValue="false" app:a7="boolean" />
+    </fragment>
+    <fragment android:label="@string/leq" android:name="com.vega.publish.template.publish.view.TemplateBindTaskFragment" android:id="@id/bindTaskFragment" />
+    <fragment android:label="@string/lxb" android:name="com.vega.publish.template.publish.view.SelectLinkDraftFragment" android:id="@id/linkDraftFragment" />
+    <fragment android:label="@string/qj3" android:name="com.vega.publish.template.publish.view.TemplateLinkFragment" android:id="@id/linkFragment" />
+    <fragment android:label="@string/q0_" android:name="com.vega.publish.template.publish.view.TemplatePurchaseSwitchFragment" android:id="@id/purchaseToEditSwitchFragment">
+        <argument android:name="purchase_page_type" android:defaultValue="" app:a7="string" />
+    </fragment>
+    <fragment android:label="@string/lny" android:name="com.vega.publish.template.publish.view.TemplatePurchaseSwitchFragment" android:id="@id/purchaseToUseSwitchFragment">
+        <argument android:name="purchase_page_type" android:defaultValue="" app:a7="string" />
+    </fragment>
+    <fragment android:label="@string/pwq" android:name="com.vega.publish.template.publish.view.TemplatePayDesireFragment" android:id="@id/payDesireFragment" />
+    <fragment android:label="@string/ki5" android:name="com.vega.publish.template.publish.view.popularscript.PopularScriptChapterSplitFragment" android:id="@id/popularScriptChapterSplitFragment">
+        <argument android:name="popular_script_split_chapter" android:defaultValue="" app:a7="string" />
+        <action android:id="@id/action_popular_script_description" app:APKTOOL_RENAMED_0x7f040444="@id/popularScriptChapterDescriptionFragment" />
+    </fragment>
+    <fragment android:label="@string/ki4" android:name="com.vega.publish.template.publish.view.popularscript.PopularScriptChapterDescriptionFragment" android:id="@id/popularScriptChapterDescriptionFragment">
+        <action android:id="@id/action_popular_script_config" app:APKTOOL_RENAMED_0x7f040444="@id/publish_config_aggregation" />
+    </fragment>
+</navigation>

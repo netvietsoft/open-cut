@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="48.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/bg" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:src="@drawable/pbw" n0:scaleType="centerCrop" n0:alpha="0.9" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.business.VipBadgeImageView n0:id="@id/icon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginStart="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="13.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:layout_gravity="center_vertical" n0:id="@id/desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qdo" n0:layout_marginStart="4.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toEndOf="@id/icon" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="11.0sp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/unlock" n0:background="@drawable/q21" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:text="@string/rz-" n0:paddingHorizontal="10.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/iv_close" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_close" n0:padding="8.0dp" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/q22" n0:tint="#66000000" n0:layout_marginEnd="4.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

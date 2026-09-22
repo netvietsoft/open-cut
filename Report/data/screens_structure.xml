@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application package="com.lemon.lvoverseas" name="CapCut" version="19.4.0">
+  <navigation_flow>
+    <main_tab id="tab_edit" name="Chỉnh sửa (Edit / Projects)" host="com.vega.main.MainActivity">
+      <description>Quản lý dự án, tạo dự án mới, Import media, Cloud sync, công cụ chỉnh sửa nhanh</description>
+    </main_tab>
+    <main_tab id="tab_template" name="Mẫu (Templates / Feed)" host="com.vega.feedx.main.ui.LynxTemplateMainTabFragment">
+      <description>Khám phá video mẫu cộng đồng, một chạm tạo video (CutSame/AutoCut)</description>
+    </main_tab>
+    <main_tab id="tab_ailab" name="AI Lab (Sáng tạo AI)" host="com.vega.ailabagent.unifyagent.AiLabAgentChatActivity">
+      <description>Trò chuyện với AI Agent, tạo kịch bản, Prompt-to-video, AI avatar, Voice clone</description>
+    </main_tab>
+    <main_tab id="tab_toolbox" name="Hộp công cụ (Toolbox / Property)" host="com.vega.main.home.ui.HomeTabRefreshViewContent">
+      <description>Xóa phông (Cutout), Làm mịn da (Retouch), Chỉnh sửa hàng loạt, Mẫu thông minh</description>
+    </main_tab>
+    <main_tab id="tab_message" name="Hộp thư (Messages)" host="com.vega.feedx.message.ui.MessageActivity">
+      <description>Thông báo hệ thống, bình luận mẫu, thông báo creator, cập nhật tính năng</description>
+    </main_tab>
+    <main_tab id="tab_me" name="Tôi (Profile / Account)" host="com.vega.feedx.information.ui.FeedUserEditActivity">
+      <description>Thông tin cá nhân, cài đặt tài khoản, quản lý gói CapCut Pro, tác phẩm đã lưu</description>
+    </main_tab>
+  </navigation_flow>
+  <screen_categories>
+    <category name="AI Agent &amp; Generative AI" total_screens="19">
+      <screen name="com.vega.gallery.activity.AutoCutAgentGenMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.digitalportraitimpl.DigitalPortraitActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.digitalportraitimpl.property.PropertyPortraitActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.unifyagent.AiLabAgentChatActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.ailabagent.trendsagent.AiLabTrendsAgentChatActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.ailabagent.trendsagent.AiTrendsTemplateUserInputActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.common.utils.ExportDialogActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.demo.TemplateListDemoActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.demo.DocumentFilePickerDemoActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.feedback.AiLabFeedbackActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.feedback.AiLabFeedbackHistoryActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.feedback.MeegoStoryPickerActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.unifyagent.preview.AiLabAgentUniversalPreviewActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.unifyagent.preview.userasset.UserAssetPreviewActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.unifyagent.share.AiLabAgentShareActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ailabagent.common.history.HistoryActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.aigc.ImageTemplatePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edward.agent.videoplayer.VideoPlayerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.export.impl.aigc.AiImageExportActivity" exported="false" launch_mode="singleTask">
+      </screen>
+    </category>
+    <category name="Camera &amp; Video Recording" total_screens="9">
+      <screen name="com.vega.recorder.LvRecordActivity" exported="true" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.LVSinglePlayActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.scan.ScanActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.media.player.LocalVideoPlayerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.effect.props.view.GreenScreenMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.view.selector.SelectorPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.view.digitalhuman.DigitalPicturePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.WrapperActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.audio.textstart.recorder.AudioRecorderActivity" exported="false" launch_mode="singleTop">
+      </screen>
+    </category>
+    <category name="Cloud Storage &amp; Cloud Draft" total_screens="15">
+      <screen name="com.vega.cloud.upload.view.UploadListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.upload.view.SelectDraftToLoadActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.group.view.GroupManagerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.autobackup.setting.SpaceSettingActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.cloud.brand.preview.CloudBrandEffectPreviewActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.cloud.enterprise.view.EnterpriseCreateGroupActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.enterprise.view.EnterpriseManageGroupActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.enterprise.view.EnterpriseGroupMemberManageActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.enterprise.view.EnterpriseGroupMemberAddActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.property.optional.ui.cloud.PropertyCloudListActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.cloud.upload.SelectMaterialToUploadActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.group.view.GroupMemberListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.brand.CloudBrandKitActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.activity.CloudFolderActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.property.optional.ui.home.CloudSpaceActivity" exported="false" launch_mode="standard">
+      </screen>
+    </category>
+    <category name="Export &amp; Publishing" total_screens="7">
+      <screen name="com.vega.export.business.BusinessExportActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.publish.aipost.preview.view.AIPostPreviewActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.share.bdopen.BdEntryActivity" exported="true" launch_mode="singleInstance">
+      </screen>
+      <screen name="com.vega.share.lemon8.BackFromLemon8Activity" exported="true" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.share.bdopen.ProxyActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cloud.review.ShareReviewActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.cloud.sharedraft.activity.ResumeSharedDraftActivity" exported="false" launch_mode="singleTask">
+      </screen>
+    </category>
+    <category name="Main Navigation &amp; Bootstrap" total_screens="63">
+      <screen name="com.vega.launcher.precondition.DeeplinkActivity" exported="true" launch_mode="singleTop">
+        <deep_links>capcut://; capcut1380://; capcut1760://</deep_links>
+      </screen>
+      <screen name="com.vega.launcher.precondition.ApplinksHandlerActivity" exported="true" launch_mode="singleTop">
+        <deep_links>https://, ://www.capcut.com</deep_links>
+      </screen>
+      <screen name="com.vega.launcher.init.core.NotifyActivity" exported="true" launch_mode="singleTask">
+        <deep_links>snssdk3006://</deep_links>
+      </screen>
+      <screen name="com.vega.main.MainActivity" exported="true" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.launcher.precondition.LoadingDialogActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.launcher.safemode.SafeModeWebActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.launcher.precondition.ImportFontsShareActivity" exported="true" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.launcher.precondition.ShareFromOutsideActivity" exported="true" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.launcher.precondition.EditShareActivity" exported="true" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.launcher.precondition.UploadShareActivity" exported="true" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.launcher.precondition.RemoveBackgroundShareActivity" exported="true" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.launcher.precondition.RetouchShareActivity" exported="true" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.main.home.toolpage.capture.VideoCaptureMiddleWareActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.feedx.main.ui.preview.SingleFeedPreviewBridgeActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.main.ui.preview.TransparentSingleFeedPreviewBridgeActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.main.ui.preview.SingleFeedPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.main.ui.preview.MultiFeedPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.main.ui.preview.VideoPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.main.team.TeamTemplateActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.home.ui.RetouchDeeplinkActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.home.ui.AIModelDeeplinkActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.tutorial.FunctionTutorialActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.xigua.TrainWorkSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.home.SelectPhotoActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.LynxActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.TransLynxActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.FullScreenLynxActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.RetouchLynxActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.home.ui.AIPaintingDeeplinkActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.appwidget.response.WRetouchResponseActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.main.appwidget.response.WRemoveBgResponseActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.main.appwidget.response.WNewProjectResponseActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.main.appwidget.response.WCameraResponseActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.main.appwidget.response.WClickDraft1ResponseActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.main.appwidget.response.WClickDraft2ResponseActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.main.appwidget.response.WClickDraft3ResponseActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.main.appwidget.response.WidgetResponseActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.main.pop.test.TestPopCenterActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.appwidget.response.BaseTemplateWidgetResponseActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vege.genai.main.activity.GenAiMainActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vege.genai.main.activity.GenAiTemplateActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.image.edit.main.view.ImageEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.faceuassist.FaceuAssistMainActivity" exported="true" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.MainCameraSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.commonedit.commoneditor.CommonEditorMainActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.commonedit.commoneditor.nativeimpl.CommonEditorMainActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.aitranslator.activity.AITranslatorMainActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.main.cloud.preview.CloudFilePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.cloud.view.CloudGroupMaterialsActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.main.aimoment.AiMomentDraftUpActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.cloud.mainpage.CloudDraftManagerActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.business.ad.view.HotStartSplashAdActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.texttovideo.main.ui.TextToVideoHomeV2Activity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.texttovideo.main.ui.TextToVideoHomeV3Activity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.texttovideo.main.ui.ToneCloneArticleEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.main.MainMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.applauncher.core.NotifyActivity" exported="false" launch_mode="singleInstance">
+        <deep_links>snssdk2515://</deep_links>
+      </screen>
+      <screen name="com.facebook.CustomTabMainActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bd_hub_splash_sdk.SplashPrivacyPolicyActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bd_hub_splash_sdk.SplashAboutThisAdActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.mtesttools.act.TestToolMainActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.bytedance.mtesttools.act.AdnMainActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.launcher.precondition.PreInstallConfirmActivity" exported="false" launch_mode="standard">
+      </screen>
+    </category>
+    <category name="Media Picker &amp; Gallery" total_screens="38">
+      <screen name="com.vega.gallery.activity.MediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.ScriptVideoMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.VoiceoverAlbumActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.CC4BAlbumActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.RetouchAIModelGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.RetouchMultiSelectPhotoActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.MultimodalSearchAlbumActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.CollageSelectMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.QualityEnhanceMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.BgRemoveMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.AiImageInterpretationMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.NewDigitalHumansMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.NewVideoTranslateMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.NewLipSyncMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.VideoCaptureMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.ModelDressUpMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.AIClipperMediaSelectToolActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.GalleryMediaProjectSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.SmartAdsMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.TextExtractionMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.GenAIMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.AiCommonSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.MaterialPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.property.optional.ui.album.PropertyLocalAlbumActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.audio.lipsync.view.DigitalHumanLipPictureGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.audio.musicimport.extract.ExtractGalleryMusicActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aimoment.gallery.AiMomentGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aimoment.gallery.highlight.AiMomentHighlightCutActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aimoment.gallery.AiMomentGuideVideoPreViewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.GalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.ui.SingleImageGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.ui.SingleVideoGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.ui.SelectMediaGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.ui.BottomSheetAlbumActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.ui.SimpleMediaPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.ui.MultiImageSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.gallery.refactor.GalleryActivity2" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.gallery.refactor.PermissionActivity" exported="false" launch_mode="standard">
+      </screen>
+    </category>
+    <category name="Other Utilities" total_screens="143">
+      <screen name="com.vega.core.popmanager.PopMockSwitchActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.web.WebActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.web.TransWebActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.web.ResearchActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.web.OuterWebActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.web.photo.PreviewPhotoActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.localdraft.SelectDraftForTopicActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.localdraft.SelectDraftForTeamActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.localdraft.IMSelectDraftActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.localdraft.SelectDraftActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vege.genai.history.GenAiHistoryActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vege.genai.preview.PreviewActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vege.genai.preview.AiCommonPreviewActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.ad.view.FullScreenNativeAdActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.ad.view.AdToolActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.vega.ug.ui.DiversionPCActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.vega.ug.ui.ExternalDiversionConfirmActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.tencent.connect.common.AssistActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aicreator.ui.activity.AiStoryVoiceOverSelectActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.facebook.FacebookActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libsticker.view.text.font.FontManageActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libsticker.view.text.font.myfont.view.AiFontGenerateActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.property.optional.ui.preview.PropertyFilePreviewActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.property.creatives.preview.CreativesPreviewActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.property.optional.ui.mydrafts.MyAllDraftActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.property.optional.ui.search.activity.PropertySearchActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.property.optional.ui.media.activity.PropertyMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.property.optional.ui.favorites.activity.PropertyFavoriteActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.property.optional.ui.trash.activity.PropertyTrashActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.property.optional.ui.transfer.activity.PropertyTransferActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.near.CaptainTransferDraftActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.business.ad.view.AdInterceptActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.audio.tone.clonetone.CloneToneActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.audio.lipsync.RealHumanPicturePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.audio.dubbing.page.AIDubbingActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.splitscreen.SplitScreenActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.audio.library.AddAudioActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.audio.library.CheckAudioActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.aicreator.debug.AiCreatorDebugActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aicreator.loading.AiCreatorLoadingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aicreator.preview.AiCreatorResultListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aicreator.tasklist.AiCreatorTaskListActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.aicreator.style.AiCreatorStylePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aicreator.tasklist.AiStoryCreatorTaskListActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.aimoment.home.AiMomentHomeActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.aimoment.home2.AiMomentHome2Activity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.aimoment.tasklist2.AiMomentTaskListNewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aimoment.multipreview.AiMomentMultiplePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aimoment.loading.AiMomentLoadingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aimoment.style.AiMomentStyleVideoPreViewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.modeldressup.picturedressing.choosemodel.ChooseModelActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.modeldressup.picturedressing.result.ModelDressingResultActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.modeldressup.picturedressing.history.ModelDressingHistoryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.smartads.ui.preview.SmartAdsV2PreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.smartads.ui.loading.SmartAdsLoadingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.smartads.ui.history.SmartAdsHistoryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.audio.tone.tts.debug.ToneDebugActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.safemode.ui.SafeModeActivity" exported="true" launch_mode="singleTask">
+      </screen>
+      <screen name="com.lemon.safemode.mock.SafeModeMockActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.xt.retouch.aimodel.impl.AiModelActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.web.WebActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.debug.DevModelActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.aiposter.impl.retouch.AIPosterActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.draftbox.ui.DraftBoxActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lm.components.announce.view.AnnounceActivity" exported="true" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.lynx.impl.LynxActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.lynx.impl.common.container.LynxCommonActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.lynx.impl.common.container.LynxCommonTransparentActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.beautyAllProducer.ProducerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.lynx.api.LynxActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.vega.ug.push.notification.activity.PushNotificationActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.lm.components.lynx.debug.DebugToolActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lm.components.lynx.debug.JSONViewerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lm.components.permission.PermissionProxyActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lm.components.permission.PermissionGuideActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.pipo.common.ability.wallet.PIPOWalletDispatcherActivity" exported="true" launch_mode="singleTask">
+        <deep_links>pipohybridsdk3006://pipopay/ewallet/webview</deep_links>
+      </screen>
+      <screen name="com.bytedance.hybrid.spark.page.SparkActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.ttadn.activity.TTLandingPageActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.ttadn.activity.TTIABHostActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.ttadn.activity.TTWebsiteActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.ttadn.activity.TikTokPrivacyPolicyActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.ttadn.activity.TikTokReportActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.ss.android.ugc.aweme.rich.reward.ui.RewardAdActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.ss.android.ShowDialogActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.bdturing.twiceverify.TwiceVerifyWebActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="net.openid.appauth.AuthorizationManagementActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="net.openid.appauth.RedirectUriReceiverActivity" exported="true" launch_mode="standard">
+        <deep_links>com.lemon.lvoverseas://</deep_links>
+      </screen>
+      <screen name="com.bytedance.pipo.iapsolution.iap.TransparentActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.ss.android.deviceregister.AActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.facebook.CustomTabActivity" exported="true" launch_mode="standard">
+        <deep_links>fbconnect://cct.com.lemon.lvoverseas</deep_links>
+      </screen>
+      <screen name="com.bytedance.push.notification.PushActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.bytedance.bdinstall.migrate.MigrateDetectorActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.adview.AppLovinFullscreenActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.applovin.adview.AppLovinFullscreenImmersiveActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.applovin.sdk.AppLovinWebViewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerDetailActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerMultiAdActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerTcfStringActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerUnifiedFlowActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.mediation.MaxDebuggerWaterfallSegmentsActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.creative.MaxCreativeDebuggerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.google.android.gms.common.api.GoogleApiActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="androidx.compose.ui.tooling.PreviewActivity" exported="true" launch_mode="standard">
+      </screen>
+      <screen name="com.google.android.gms.ads.AdActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.google.android.gms.ads.OutOfContextTestingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.google.android.gms.ads.NotificationHandlerActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.facebook.ads.AudienceNetworkActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vungle.ads.internal.ui.VungleActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTCeilingLandingPageActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.openadsdk.activity.TTAdActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.mtesttools.act.SelectTestModeAdnActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.mtesttools.act.AdnDetailActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.mtesttools.act.AdRitDetailActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.mtesttools.act.AdSlotDetailActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.mtesttools.act.ShowConfigDataActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.praisedialoglib.ui.PraiseDialogActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.mbridge.msdk.activity.MBCommonActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.mbridge.msdk.out.LoadingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" exported="false" launch_mode="standard">
+      </screen>
+    </category>
+    <category name="Payment Wall, VIP &amp; Commerce" total_screens="7">
+      <screen name="com.vega.subscription.widget.ComposeSubscribeActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.subscription.deeplink.SubscribeOutsideStubActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.subscribe.impl.ui.SubscribeDetailActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.gmtcommerce.iab.impl.ui.AdWebSparkActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.gmtcommerce.iab.impl.history.AdWebHistoryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.android.billingclient.api.ProxyBillingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.android.billingclient.api.ProxyBillingActivityV2" exported="false" launch_mode="standard">
+      </screen>
+    </category>
+    <category name="Settings &amp; Feedback" total_screens="14">
+      <screen name="com.vega.nativesettings.SettingCloneActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.nativesettings.personal.PersonalSettingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.nativesettings.BaseNewDeveloperActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.nativesettings.language.AppLanguageChooseActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.nativesettings.region.AppRegionChooseActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.nativesettings.SettingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.nativesettings.privacy.TermsPoliciesActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libdeveloper.nativesettings.DeveloperActivity" exported="true" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.settings.SettingsActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.settings.dev.DevModelActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.settings.clipboard.ClipboardSettingsActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.settings.bcswitch.BCSwitchActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.sdk.ttadn.activity.AboutThisAdActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.bytedance.mtesttools.act.SettingsDetailActivity" exported="false" launch_mode="standard">
+      </screen>
+    </category>
+    <category name="Templates &amp; Social Feed" total_screens="64">
+      <screen name="com.vega.feedx.homepage.UserActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.follow.ui.FollowActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.information.ui.FeedAvatarActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.information.ui.FeedAvatarCropActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.information.ui.InstagramAuthActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.information.ui.ThirdPartyProfileActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.recommend.FeedRecommendActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.feedx.homepage.black.BlackListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.material.FeedInspirationInterActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.homepage.account.AccountManagerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.message.ui.MessageDetailActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.feedx.message.ui.MessageActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.feedx.nativefeed.FeedContainerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.TemplateGenMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.TemplateGenGuideMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.exort.template.TemplateExportActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.export.template.view.TemplateExportActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.adproduce.TemplateCreationActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.export.retouch.view.RetouchTemplateExportActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.publish.template.publish.view.TemplatePublishActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.publish.template.publish.view.PublishSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.publish.template.publish.view.SelectTutorialMaterialActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.publish.template.publish.view.ManageTutorialMaterialActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.templatepublish.musicreplace.ReplaceMusicActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.multicutsame.smartvlog.view.activity.SmartVlogPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.multicutsame.view.MultiCutSamePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.multitemplate.view.MultiTemplateSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.activity.AiGenerateResultReportActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.select.view.CutSameSelectMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.select.view.CutSameSelectMediaWithoutSelectMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.select.view.CutSameQuickShootActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.activity.CutSameReplaceMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.activity.CutSameLoadDraftActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.activity.RecordSamePreviewActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.retouch.template.RetouchReplacePhotoActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.retouch.RetouchTemplateImageGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.template.mediaselect.ScriptTemplateMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.marketingscript.mediaselect.addselect.MarketingScriptAddSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.marketingscript.mediaselect.metainfo.MetaInfoInputActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.libcutsame.smarttemplate.mediaselect.SmartTemplateSelectMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.smarttemplate.mediaselect.addselect.SmartTemplateAddSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.home.HomeAiEffectMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.activity.DraftMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.aiworkflow.view.FlexActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.libcutsame.aiworkflow.view.ImagePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedback.myfeedback.MyFeedbackActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedback.FeedbackTagActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedback.FeedbackActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aimoment.feedback.AiMomentFeedbackSelectActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.avatar.AvatarCropActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.TemplateChooseTopicActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.TemplateTopicActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.TemplateSearchActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.TemplateDetailActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.SharePanelActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.UserHomeActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.MessageCenterActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.TemplateFeedActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.FollowActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.ProfileActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.CreatorCourseActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.DataCenterActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.debug.TemplateDebugActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.settings.haptic.HapticFeedbackPreferenceActivity" exported="false" launch_mode="standard">
+      </screen>
+    </category>
+    <category name="User Account, Login &amp; Profile" total_screens="17">
+      <screen name="com.lemon.vega.ug.ui.NoLoginDiversionPCActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.account.view.LoginActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.lemon.account.LoginWithAtmosphereActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.lemon.neoaccount.impl.step.auth.NeoAccountAuthActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.neoaccount.impl.process.firstlogin.FirstLoginActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.neoaccount.impl.test.NeoLoginTestActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.neoaccount.impl.step.birthday.ThirdBirthdayProxyActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.account.BirthdayActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.account.LaunchBirthdayActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.account.TiktokEntryActivity" exported="true" launch_mode="singleTask">
+        <deep_links>capcutlogintt://oauthresponse; https://www.capcut.com/tt-login/oauthresponse; https://www.capcut.net/imlv/thirdparty-auth-redirect; https://www.capcut.net/imlv/inhouse/thirdparty-auth-redirect; awfobz8zx3rodolu://response.bridge.tiktok.com; aw889s25wozf8s7e://response.bridge.tiktok.com</deep_links>
+      </screen>
+      <screen name="com.lemon.account.ToolCountryLoginActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.lemon.account.email.AccountLoginActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.account.DialogContainerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.account.email.EmailBindActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.lemon.account.email.PasswordActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.web.UserAgreementWebActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.retouch.settings.account.AccountAndSafeActivity" exported="false" launch_mode="standard">
+      </screen>
+    </category>
+    <category name="Video &amp; Photo Editor" total_screens="89">
+      <screen name="com.vega.edit.videocapture.VideoCaptureEditActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.feedx.util.GotoDraftEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.information.ui.FeedUserEditDescriptionActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.information.ui.FeedUserEditUniqueIDActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.feedx.information.ui.FeedUserEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.ImageEditPhotoSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.EditPilotMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.ImageEditMediaSelectToolActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.CoverEditToolMediaSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.gallery.activity.ImageEditMediaSelectHomeActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.digitalportraitimpl.view.AiEffectEditPortraitActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.export.edit.view.ExportActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.export.edit.view.ImageExportActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.export.edit.view.share.join.JoinTemplateAndTutorialActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.ailabagent.common.edit.DraftPreviewActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.edit.EditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.editpage.activity.EditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.livephoto.activity.LiveEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.video.view.VideoFrameAdjustActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.edit.outpainting.activity.VideoFrameAdjustNewActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.edit.image.view.edits.crop.ImageCropActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.edit.video.view.ReplaceVideoSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.TextToVideoEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.TextToVideoReplaceActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.ttv.edit.TextToVideoAddActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.TextToVideoRecordActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.digitalhuman.digital.template.intelligent.detail.DigitalHumanTemplateFeedActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.image.edit.canvasedit.partialadjust.ImageEditPartialAdjustActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.aiclipper.panel.aiedit.AiEditActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.edit.aiclipper.panel.aiedit.AiEditActivityV2" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.gallery.activity.AiChatEditSelectMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.materialgeneration.preview.MaterialGenerationReferencePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.materialgeneration.preview.MaterialGenerationAudioTrimActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.image.edit.component.debug.viewer.ImageDraftViewerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.publish.template.publish.view.TeamTemplatePublishEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.libcutsame.activity.LiteEditorActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.retouch.RetouchEditorImageGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.view.prompt.edit.RecorderPromptDraftActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recorder.view.prompt.edit.RecorderPromptEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.part.AdPartEditMySceneActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.part.AdPartPromptActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.part.AdPartMyScenePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.maker.crop.AdCropActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.voiceover.VoiceoverEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.component.view.AdComponentEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.debug.SmartAdDebugActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.maker.AdMakerActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.smartad.preview.SmartAdPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.smartad.preview.MultiSmartAdPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.adscript.view.AdScriptLoadingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.scripttovideo.ScriptToVideoLoadingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.scriptvideo.CapcutScriptVideoEditorActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.scriptvideo.gallery.ScriptVideoMediaSelectActivityV2" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.cutsameedit.biz.smartvlog.compose.SmartVlogLoadingActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.cutsameedit.biz.template.compose.loading.LoadingActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.cutsameedit.biz.marketingscript.business.BusinessVideoLoadingActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.cutsameedit.biz.textstart.TextStartLoadingActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.cutsameedit.biz.digitalhuman.loading.DigitalHumanTemplateLoadingActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.recordedit.ui.AdCubeVideoPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.recordedit.ui.CameraPreviewEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.activity.CutSameEditActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.edit.activity.ScriptVideoCutActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.vega.edit.alive.ExportNotificationDispatchActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.aigenerator.activity.AIPaintingActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.aigenerator.activity.AIPaintingIntroActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.aitranslator.activity.AITranslatorTaskListActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.aitranslator.activity.AITranslatorAuthRecordActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.aitranslator.activity.AITranslatorResultPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.outpainting.activity.AIExpandActivity" exported="false" launch_mode="singleTop">
+      </screen>
+      <screen name="com.vega.edit.aivideodriver.view.AiVideoDriverSelectMediaActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.aivideodriver.view.DigitalHumanFamilyPictureGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edit.cover.view.activity.CoverSelectActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.aicreator.editor.AiCreatorAIGCImagePreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.adeditor.scriptvideo.OverdubToneRecordActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.commonedit.digitalhuman.preview.DigitalPreviewActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.commonedit.digitalhuman.customize.upload.CustomizedProgressActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.commonedit.digitalhuman.customize.gallery.DigitalHumanCustomizeGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.commonedit.digitalhuman.picture.gallery.DigitalHumanPictureGalleryActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.vega.edward.templatecore.editor.edit.MinimalEditorActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.edit.EditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.edit.design.stickercenter.MaterialCenterActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.edit.design.stickercenter.albumdetail.AlbumDetailActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.edit.design.cutout.CutoutActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.edit.design.cutout.CutoutPicEditActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.edit.design.cutout.piceditor.PicCutoutActivity" exported="false" launch_mode="standard">
+      </screen>
+      <screen name="com.xt.edit.design.cutout.common.CommonCutoutActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.xt.edit.design.cutout.aipadding.AiPaddingActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.xt.edit.aigc.loading.AIGCLoadingActivity" exported="false" launch_mode="singleTask">
+      </screen>
+      <screen name="com.xt.retouch.feed.impl.ProfileEditActivity" exported="false" launch_mode="standard">
+      </screen>
+    </category>
+  </screen_categories>
+</application>

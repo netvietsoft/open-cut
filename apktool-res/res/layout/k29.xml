@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:gravity="center" n0:layout_gravity="center" n0:id="@id/llayout_root" n0:background="@color/knt" n0:layout_width="266.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="15.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/dialog_tips" n0:background="@null" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/l0v" n0:layout_centerHorizontal="true" n0:textCursorDrawable="@drawable/qba" />
+    <com.vega.ui.StrongButton n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tvConfirm" n0:background="@drawable/kwq" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/msy" n0:layout_below="@id/dialog_tips" n0:layout_marginHorizontal="30.0dp" />
+    <com.vega.ui.state.pressed.PressedStateTextView n0:textColor="@color/knv" n0:gravity="center" n0:id="@id/close" n0:background="@drawable/qps" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="30.0dp" n0:layout_marginBottom="10.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:layout_below="@id/tvConfirm" n0:layout_marginHorizontal="30.0dp" n1:kr3="button"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

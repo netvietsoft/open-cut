@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/coin_up_slide_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:background="?na" n0:layout_width="0.0dp" n0:layout_height="1.0dp" n0:layout_weight="1.0" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/up_slide_lottie" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginEnd="6.0dp" />
+    <com.bytedance.tux.input.TuxTextView n0:textColor="?kw" n0:id="@id/up_slide_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginEnd="12.0dp" style="@style/t5" />
+    <View n0:background="?na" n0:layout_width="0.0dp" n0:layout_height="1.0dp" n0:layout_weight="1.0" n0:layout_marginEnd="12.0dp" />
+</LinearLayout>

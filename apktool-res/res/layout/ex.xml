@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/tip_root" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/tip_view_root" n0:background="@drawable/k2x" n0:paddingLeft="15.0dp" n0:paddingTop="12.0dp" n0:paddingRight="15.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="44.0dp" n0:paddingHorizontal="15.0dp" n0:paddingVertical="12.0dp">
+        <com.vega.ui.ContentTextView n0:textSize="14.0dp" n0:textColor="@color/s3" n0:id="@id/tvGuideTips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="296.0dp" />
+        <ViewStub n0:id="@id/vsGuideImTip" n0:layout="@layout/l_r" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_horizontal" n0:layout_gravity="end" n0:orientation="vertical" n0:id="@id/indicator" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="-0.5dp" n0:layout_marginEnd="22.0dp">
+        <View n0:id="@id/indicatorLine" n0:background="@color/c3" n0:layout_width="1.0dp" n0:layout_height="55.0dp" />
+        <View n0:background="@drawable/k2h" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginTop="-9.0dp" />
+    </LinearLayout>
+</LinearLayout>

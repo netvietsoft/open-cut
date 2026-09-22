@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="188.0dp" n1:kr3="none"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView n0:id="@id/bgScrollView" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:fillViewport="true">
+        <LinearLayout n0:orientation="vertical" n0:id="@id/container" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.vega.ui.MaterialRecycleView n0:id="@id/itemRv" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="92.0dp" n0:layout_marginTop="16.0dp" />
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/sliderRv" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" n0:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.vega.ui.state.pressed.PressedStateStateViewGroupLayout>

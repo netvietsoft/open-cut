@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/varHeightView" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <SurfaceView n0:id="@id/mPreview" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.gesture.PreviewOperationLayout n0:id="@id/operation_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_constraintStart_toStartOf="@id/mPreview" n2:layout_constraintTop_toTopOf="@id/mPreview"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/fakePreview" n0:background="@color/r5" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/retouchCoverPreview" n0:background="@color/r5" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitCenter" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:textSize="14.0dp" n0:textColor="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_gravity="center" n0:id="@id/ivEditTail" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:src="@drawable/kf2" n5:layout_constraintBottom_toBottomOf="@id/mPreview" n5:layout_constraintEnd_toEndOf="@id/mPreview" n5:layout_constraintStart_toStartOf="@id/mPreview" n5:layout_constraintTop_toTopOf="@id/mPreview"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/other_preview_bottom_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:layout_constraintBottom_toTopOf="@id/preview_bottom_layout" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <com.vega.edit.digitalhuman.view.RenderStatusListView n0:id="@id/renderStatusListView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="15.0dp" n6:layout_constraintBottom_toTopOf="@id/reward_ad_entrance" n6:layout_constraintStart_toStartOf="parent" />
+        <include n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="15.0dp" n6:layout_constraintBottom_toTopOf="@id/algoTaskProgress" n6:layout_constraintStart_toStartOf="parent" layout="@layout/l4f" />
+        <com.vega.edit.algorithm.view.AlgoTaskProgressView n0:id="@id/algoTaskProgress" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="15.0dp" n6:layout_constraintBottom_toTopOf="@id/optionProgressAITextTemplate" n6:layout_constraintStart_toStartOf="parent" />
+        <com.vega.ui.widget.ProgressWithCloseBtnView n0:id="@id/optionProgressAITextTemplate" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="15.0dp" n6:layout_constraintBottom_toTopOf="@id/optionProgress" n6:layout_constraintStart_toStartOf="parent" />
+        <com.vega.ui.widget.ProgressWithCloseBtnView n0:id="@id/optionProgress" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="15.0dp" n6:layout_constraintBottom_toTopOf="@id/optionTimeWait" n6:layout_constraintStart_toStartOf="parent" />
+        <com.vega.ui.widget.WaitTimeWithCloseBtnView n0:id="@id/optionTimeWait" n0:focusable="true" n0:focusableInTouchMode="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="15.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.edit.view.TseAddMediaView n0:id="@id/addMediaView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.view.PreviewBottomLayout n0:id="@id/preview_bottom_layout" n0:focusable="true" n0:focusableInTouchMode="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintStart_toStartOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.watermark.view.WaterMarkEditorGuideView n0:id="@id/waterMarkEditorGuideView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toEndOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:id="@id/dev_mode_layout" n0:focusable="true" n0:focusableInTouchMode="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="45.0dp" n0:layout_marginTop="5.0dp" n10:layout_constraintEnd_toEndOf="parent" n10:layout_constraintTop_toTopOf="parent"
+      xmlns:n10="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaTextButton n0:id="@id/tvExportDraftZip" n0:visibility="gone" n0:layout_width="80.0dp" n0:text="@string/l9p" n0:layout_marginEnd="10.0dp" style="@style/u7" />
+        <com.vega.ui.AlphaTextButton n0:id="@id/tvExportVeData" n0:visibility="gone" n0:text="@string/l8_" n0:layout_marginEnd="10.0dp" style="@style/u7" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/preview_ui_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

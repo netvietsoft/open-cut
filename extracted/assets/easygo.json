@@ -1,0 +1,86 @@
+{
+  "easyGoVersion": "1.0",
+  "client": "com.lemon.lv",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode": "1",
+        "activityPairs": [
+          {
+            "from": "com.vega.main.MainActivity",
+            "to": "*"
+          }
+        ],
+        "transActivities": [
+          "com.lm.components.permission.PermissionProxyActivity"
+        ],
+        "Activities": [
+          {
+            "name": "com.vega.gallery.activity.MediaSelectActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.edit.editpage.activity.EditActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.export.edit.view.ExportActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.audio.library.AddAudioActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.edit.video.view.activity.VideoFrameAdjustActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.multicutsame.view.MultiCutSamePreviewActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.publish.template.publish.PublishChooseActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.publish.template.publish.view.TemplatePublishActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.ttv.edit.TextToVideoEditActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.texttovideo.main.ui.TextToVideoHomeActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.texttovideo.main.ui.UrlToArticleActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.texttovideo.main.ui.EditArticleActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.screenrecord.ScreenRecordActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.vega.screenrecord.RecordProxyActivity",
+            "defaultFullScreen": "true"
+          }
+        ],
+        "UX": {
+          "supportRotationUxCompat": "true",
+          "isDraggable": "false"
+        }
+      }
+    }
+  ]
+}

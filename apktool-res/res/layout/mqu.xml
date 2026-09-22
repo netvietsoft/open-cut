@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:tag="layout/xt_fragment_setting_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/title_bar" layout="@layout/APKTOOL_RENAMED_0x7f0c1566" />
+    <ScrollView n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <FrameLayout n0:id="@id/subscribe_entrance_container" n0:paddingTop="30.0dp" n0:paddingBottom="6.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="20.0dp" n0:layout_marginEnd="20.0dp">
+                <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/login_layout" n0:tag="binding_1" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                    <TextView n0:textColor="@color/koz" n0:gravity="center_vertical" n0:id="@id/login_text_1" n0:tag="binding_2" n0:layout_width="wrap_content" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3" n0:text="@string/t2v" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f130490"
+                      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+                    <TextView n0:textColor="@color/koz" n0:id="@id/login_text" n0:tag="binding_3" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="28.0dp" n0:text="@string/t2v" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" style="@style/APKTOOL_RENAMED_0x7f130490"
+                      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/ic_point_to_login_text" n0:tag="binding_4" n0:layout_width="20.0dp" n0:layout_height="12.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/rhu" n3:layout_constraintEnd_toEndOf="@id/login_text" n3:layout_constraintStart_toStartOf="@id/login_text" n3:layout_constraintTop_toBottomOf="@id/login_text"
+                      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                    <androidx.constraintlayout.widget.ConstraintLayout n0:tag="binding_5" n0:background="@drawable/q93" n0:layout_width="match_parent" n0:layout_height="73.0dp" n0:layout_marginTop="16.0dp" n4:layout_constraintTop_toBottomOf="@id/login_text"
+                      xmlns:n4="http://schemas.android.com/apk/res-auto">
+                        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/kot" n0:id="@id/text_login_bind_user" n0:layout_width="match_parent" n0:layout_height="20.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1244bb" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" n4:layout_constraintTop_toTopOf="parent" />
+                        <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0dp" n0:textColor="@color/kot" n0:layout_width="match_parent" n0:layout_height="17.0dp" n0:layout_marginTop="4.0dp" n0:text="@string/szr" n0:alpha="0.6" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" n4:layout_constraintTop_toBottomOf="@id/text_login_bind_user" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/high_image_quality_switch_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:id="@id/high_image_quality_divider" n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" n5:layout_constraintTop_toTopOf="parent"
+                      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                    <LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintLeft_toLeftOf="parent" n6:layout_constraintTop_toTopOf="parent"
+                      xmlns:n6="http://schemas.android.com/apk/res-auto">
+                        <TextView n0:id="@id/high_image_quality" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f123cc5" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                        <TextView n0:layout_width="250.0dp" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f123cc6" n0:maxLines="2" n6:layout_constraintTop_toBottomOf="@id/high_image_quality" style="@style/APKTOOL_RENAMED_0x7f130491" />
+                    </LinearLayout>
+                    <Switch n0:id="@id/switch_image_quality" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="false" n0:thumb="@drawable/r-z" n0:track="@drawable/r-b" n0:switchMinWidth="40.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintRight_toRightOf="parent" n7:layout_constraintTop_toTopOf="parent"
+                      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <FrameLayout n0:id="@id/haptic_feedback_layout" n0:tag="binding_6" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:id="@id/haptic_feedback_divider" n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/s1c" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <LinearLayout n0:gravity="center" n0:layout_gravity="end|center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                        <TextView n0:textSize="12.0dp" n0:tag="binding_7" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                        <com.xt.retouch.baseui.view.BaseImageView n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout n0:id="@id/feedback_layout" n0:tag="binding_8" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:id="@id/feedback_divider" n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/s8y" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/layout_recommendation" n0:tag="binding_9" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tx2" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/layout_ads" n0:tag="binding_10" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/txj" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/personal_info" n0:tag="binding_11" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tx1" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/layout_personal_info_list" n0:tag="binding_12" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tx0" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/layout_third_party_info_share_list" n0:tag="binding_13" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1244a5" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/layout_download" n0:tag="binding_14" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/uly" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:tag="binding_15" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tok" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:tag="binding_16" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ulu" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/dsa_compliance" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sag" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/community_guidelines" n0:tag="binding_17" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t2m" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/label_open_source_licence" n0:tag="binding_18" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f123f46" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/read_clipboard_setting" n0:tag="binding_19" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tdd" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/permission" n0:tag="binding_20" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t1q" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/check_grey_update" n0:tag="binding_21" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sut" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/layout_version" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tna" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <TextView n0:textSize="12.0dp" n0:textColor="#66000000" n0:layout_gravity="end|center" n0:id="@id/app_version" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/app_license" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t18" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/app_open_source" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rgf" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:tag="binding_22" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t2x" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <LinearLayout n0:gravity="center" n0:layout_gravity="end|center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                        <TextView n0:textSize="12.0dp" n0:tag="binding_23" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                        <com.xt.retouch.baseui.view.BaseImageView n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout n0:id="@id/written_off_account" n0:tag="binding_24" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t2l" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/account_and_safe" n0:tag="binding_25" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <TextView n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tx6" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:background="@drawable/rf9" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout n0:id="@id/logout_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                    <View n0:background="#e5e5e5" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+                    <FrameLayout n0:tag="binding_26" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f0704d3">
+                        <TextView n0:textColor="@color/koz" n0:layout_gravity="start|center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t2w" style="@style/APKTOOL_RENAMED_0x7f130490" />
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/recommend_back_content_layout" n0:background="@drawable/p-p" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0dp" n0:textColor="#ccffffff" n0:id="@id/recommend_back_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/m_5" n0:maxLines="1" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:id="@id/triangle_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintEnd_toEndOf="@id/recommend_back_content_layout" n2:layout_constraintStart_toStartOf="@id/recommend_back_content_layout" n2:layout_constraintTop_toBottomOf="@id/recommend_back_content_layout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.edit.base.view.TriangleView n0:id="@id/triangle_view" n0:layout_width="12.0dp" n0:layout_height="6.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

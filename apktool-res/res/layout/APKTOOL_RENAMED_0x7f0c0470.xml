@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_gravity="center_horizontal" n0:layout_width="36.0dp" n0:layout_height="40.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center_horizontal" n0:id="@id/iv_inspiration_1" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n0:layout_marginTop="1.0dp" n0:scaleType="centerCrop" n1:actualImageResource="@drawable/nfc" n1:roundedCornerRadius="6.0dp" n1:roundingBorderColor="#80fafbff" n1:roundingBorderWidth="1.5dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center_horizontal" n0:id="@id/iv_inspiration_2" n0:layout_width="30.0dp" n0:layout_height="30.0dp" n0:layout_marginTop="4.0dp" n0:scaleType="centerCrop" n2:actualImageResource="@drawable/nfd" n2:roundedCornerRadius="6.0dp" n2:roundingBorderColor="#fafbff" n2:roundingBorderWidth="1.5dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center_horizontal" n0:id="@id/iv_inspiration_3" n0:background="@drawable/k5s" n0:layout_width="34.0dp" n0:layout_height="34.0dp" n0:layout_marginTop="6.0dp" n0:scaleType="centerCrop" n3:actualImageResource="@drawable/nfe" n3:failureImage="@drawable/nfe" n3:placeholderImage="@drawable/nfe" n3:roundedCornerRadius="8.0dp" n3:roundingBorderColor="#fafbff" n3:roundingBorderWidth="1.5dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

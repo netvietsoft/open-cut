@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_fragment_animation_0" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/linearLayout" n0:background="@color/kor" n0:layout_width="0.0dp" n0:layout_height="90.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="90.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/page_list" n0:layout_width="0.0dp" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/clear" n1:layout_constraintTop_toTopOf="parent" />
+            <TextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/clear" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:text="Clear" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n2:layout_constraintBottom_toTopOf="@id/linearLayout" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n0:textColor="#ffffff" n0:id="@id/debug_save_video" n0:layout_width="80.0dp" n0:layout_height="50.0dp" n0:text="Save as video" />
+        <Button n0:textColor="#ffffff" n0:id="@id/debug_save_gif" n0:layout_width="80.0dp" n0:layout_height="50.0dp" n0:text="Save as GIF" />
+        <Button n0:textColor="#ffffff" n0:id="@id/debug_add_video" n0:layout_width="80.0dp" n0:layout_height="50.0dp" n0:text="Add video" />
+        <Button n0:textColor="#ffffff" n0:id="@id/debug_add_gif" n0:layout_width="80.0dp" n0:layout_height="50.0dp" n0:text="Add GIF" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

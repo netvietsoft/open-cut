@@ -1,0 +1,28 @@
+task_id: "TASK-040-NAV-AND-PAYWALL"
+phase: "P1 - Navigation Parity, Billing Integrity & Anti-Fake VIP"
+title: "Đồng Bộ Thanh Điều Hướng Đáy 5 Tab, Loại Bỏ Trạng Thái VIP Giả Mạo và Xử Lý Luồng Thanh Toán Google Play Billing"
+assigned_to:
+  - "Agent 3 (Frontend / Android)"
+  - "Agent 5 (Payment)"
+  - "Agent 7 (Fixer)"
+status: "DONE"
+started_at: "2026-09-22T11:20:00+07:00"
+completed_at: "2026-09-22T11:36:00+07:00"
+priority: "HIGH"
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/navigation/BottomNavComponent.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/home/HomeHubComponent.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/profile/ProfileComponent.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/MainActivity.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/billing/SubscriptionManager.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/subscribe/SubscribeActivity.java"
+  - "apps/android/app/src/main/kotlin/com/nextai/opencut/presentation/compose/subscribe/ComposeSubscribeActivity.kt"
+  - "apps/android/app/src/main/AndroidManifest.xml"
+acceptance_criteria:
+  - "Khắc phục lỗi D1: Chuẩn hóa 5 Tab đồng bộ trên toàn bộ UI (0: Chỉnh sửa, 1: Mẫu, 2: Không gian, 3: AI Lab, 4: Tôi). Sửa lỗi ấn tab Tôi bị văng về Home do lệch index 5 - HOÀN THÀNH"
+  - "Khắc phục lỗi D6: Sửa ProfileComponent đọc trạng thái thực tế từ SubscriptionManager / SharedPreferences, không hiển thị fake VIP trọn đời mặc định, có nút Nâng cấp VIP mở Paywall - HOÀN THÀNH"
+  - "Khắc phục lỗi K4: Bổ sung xử lý callback mua hàng và các Detain Modal trong ComposeSubscribeActivity và SubscribeActivity native, kích hoạt VIP thực tế và lưu SharedPreferences - HOÀN THÀNH"
+  - "Tuân thủ nghiêm ngặt Luật 12 AGENTS.md (chú thích song ngữ EN + VN) - HOÀN THÀNH"
+verification_results:
+  - "Manual Build APK pass 100%: build\\manual_build\\nextai_opencut_signed.apk"
+  - "D8 DEX compilation pass with named static inner classes"

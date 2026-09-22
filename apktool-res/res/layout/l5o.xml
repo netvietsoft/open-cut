@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/more_function_layout" n0:background="@drawable/ljd" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="88.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="59.0dp" n0:layout_marginRight="12.0dp" n1:layout_constraintBottom_toBottomOf="@id/surface_ratio_9_16" n1:layout_constraintTop_toBottomOf="@id/surface_ratio_9_16"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/common_count_down" n0:visibility="visible" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/l9n" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/common_surface_ratio" n1:layout_constraintHorizontal_bias="0.5" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/common_surface_ratio" n0:visibility="visible" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/p92" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/common_camera_flash" n1:layout_constraintHorizontal_bias="0.5" n1:layout_constraintStart_toEndOf="@id/common_count_down" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/common_camera_flash" n0:visibility="visible" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/p-z" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/resolution_switch" n1:layout_constraintHorizontal_bias="0.5" n1:layout_constraintStart_toEndOf="@id/common_surface_ratio" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/resolution_switch" n0:visibility="visible" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/ljw" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintHorizontal_bias="0.5" n1:layout_constraintStart_toEndOf="@id/common_camera_flash" n1:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.Group n0:id="@id/more_function_group" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:constraint_referenced_ids="common_count_down,common_surface_ratio,common_camera_flash,resolution_switch" />
+        <LinearLayout n0:gravity="center" n0:id="@id/ratio_ll_layout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="8.0dp" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp">
+            <ImageView n0:id="@id/surface_ratio_origin" n0:visibility="gone" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/p95" n0:layout_weight="1.0" />
+            <ImageView n0:id="@id/surface_ratio_9_16" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/p91" n0:layout_weight="1.0" />
+            <ImageView n0:id="@id/surface_ratio_16_9" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/p9v" n0:layout_weight="1.0" />
+            <ImageView n0:id="@id/surface_ratio_1_1" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/p9y" n0:layout_weight="1.0" />
+            <ImageView n0:id="@id/surface_ratio_3_4" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/p9e" n0:layout_weight="1.0" />
+            <ImageView n0:id="@id/surface_ratio_4_3" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/p9h" n0:layout_weight="1.0" />
+            <ImageView n0:id="@id/surface_ratio_235_1" n0:layout_width="45.0dp" n0:layout_height="45.0dp" n0:src="@drawable/p9c" n0:layout_weight="1.0" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/container" n0:background="@color/APKTOOL_RENAMED_0x7f06047a" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="247.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/guideline_options" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_begin="106.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/guideline_bottom_divider" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:layout_constraintGuide_end="44.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <GridLayout n0:id="@id/gl_pen" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginStart="4.0dp" n0:layout_marginEnd="4.0dp" n3:layout_constraintBottom_toTopOf="@id/guideline_options" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:id="@id/group_quickstrokes" n0:paddingLeft="@dimen/u0" n0:paddingRight="@dimen/u0" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_columnWeight="1.0" n0:paddingHorizontal="@dimen/u0">
+            <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@drawable/qmh" n0:gravity="center_horizontal" n0:layout_gravity="center_horizontal" n0:id="@id/tv_quickstrokes" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/l4r" n0:drawableTop="@drawable/olj" n3:APKTOOL_RENAMED_0x7f040448="0.2" />
+            <FrameLayout n0:layout_gravity="center_horizontal" n0:layout_width="48.0dp" n0:layout_height="match_parent">
+                <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="end|top" n0:id="@id/iv_quickstrokes_vip_icon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:c2="quick_brush" n3:APKTOOL_RENAMED_0x7f0404ef="quick_brush" n3:kml="small" n3:kmo="edit" n3:ktj="normal_func" />
+            </FrameLayout>
+        </FrameLayout>
+        <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@drawable/qmh" n0:gravity="center_horizontal" n0:id="@id/btn_strokes" n0:paddingLeft="@dimen/u0" n0:paddingRight="@dimen/u0" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12053f" n0:drawableTop="@drawable/olf" n0:layout_columnWeight="1.0" n0:paddingHorizontal="@dimen/u0" n3:APKTOOL_RENAMED_0x7f040448="0.2" />
+        <FrameLayout n0:id="@id/group_fast_erase" n0:paddingLeft="@dimen/u0" n0:paddingRight="@dimen/u0" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_columnWeight="1.0" n0:paddingHorizontal="@dimen/u0">
+            <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@drawable/qmh" n0:gravity="center_horizontal" n0:layout_gravity="center_horizontal" n0:id="@id/btn_fast_erase" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/o66" n0:drawableTop="@drawable/oy7" n3:APKTOOL_RENAMED_0x7f040448="0.2" />
+            <FrameLayout n0:layout_gravity="center_horizontal" n0:layout_width="48.0dp" n0:layout_height="wrap_content">
+                <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="end" n0:id="@id/iv_fast_erase_vip_icon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:c2="video_custom_matting_quick_eraser" n3:APKTOOL_RENAMED_0x7f0404ef="video_custom_matting_quick_eraser" n3:kml="small" n3:kmo="edit" n3:ktj="normal_func" />
+            </FrameLayout>
+        </FrameLayout>
+        <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@drawable/qmh" n0:gravity="center_horizontal" n0:id="@id/btn_erase" n0:paddingLeft="@dimen/u0" n0:paddingRight="@dimen/u0" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/rce" n0:drawableTop="@drawable/olh" n0:layout_columnWeight="1.0" n0:paddingHorizontal="@dimen/u0" n3:APKTOOL_RENAMED_0x7f040448="0.2" />
+        <FrameLayout n0:layout_width="16.0dp" n0:layout_height="wrap_content">
+            <View n0:layout_gravity="center_horizontal" n0:id="@id/divider" n0:background="@color/APKTOOL_RENAMED_0x7f060639" n0:layout_width="1.0dp" n0:layout_height="30.0dp" n0:layout_marginTop="8.5dp" />
+        </FrameLayout>
+        <com.vega.ui.TextWordAdaptLayout n0:id="@id/layout_btn_matting_stroke" n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginEnd="4.0dp" n0:layout_columnWeight="1.0" n0:paddingHorizontal="8.0dp" n3:k2b="100.0dp" n3:k2c="true">
+            <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@drawable/qmh" n0:gravity="center_horizontal" n0:id="@id/btn_matting_stroke" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="50.0dp" n0:text="@string/l4k" n0:drawableTop="@drawable/ol5" />
+        </com.vega.ui.TextWordAdaptLayout>
+    </GridLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_sliders" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:requiresFadingEdge="vertical" n4:layout_constraintBottom_toTopOf="@id/guideline_bottom_divider" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/guideline_options"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tv_reset" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/qex" n0:drawablePadding="@dimen/ai" n0:drawableStart="@drawable/och" n0:layout_marginStart="16.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="@id/guideline_bottom_divider"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tv_invert" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ms6" n0:drawablePadding="@dimen/ai" n0:drawableStart="@drawable/odf" n0:layout_marginStart="16.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toEndOf="@id/tv_reset" n6:layout_constraintTop_toTopOf="@id/guideline_bottom_divider"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

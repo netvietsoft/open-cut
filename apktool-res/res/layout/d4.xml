@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/mRlRoot" n0:background="@drawable/kdw" n0:layout_width="279.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/u8" n0:gravity="center_horizontal" n0:id="@id/tvTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12001b" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:id="@id/llContent" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="24.0dp" n0:layout_marginBottom="24.0dp" n0:layout_marginHorizontal="24.0dp" n2:layout_constraintBottom_toTopOf="@id/buttonView" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/tvTitle"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#46464c" n0:id="@id/tvContent" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12001a" n0:lineSpacingExtra="@dimen/pa" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/buttonView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="24.0dp" n0:layout_marginRight="24.0dp" n0:layout_marginBottom="24.0dp" n0:layout_marginHorizontal="24.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.VegaButton n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/reLogin" n0:background="@drawable/qla" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12001c" n0:maxLines="1" />
+        <com.vega.theme.VegaButton n0:textSize="14.0dp" n0:textColor="@color/sg" n0:id="@id/know" n0:background="@drawable/qps" n0:layout_width="match_parent" n0:layout_height="36.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/i" n0:maxLines="1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

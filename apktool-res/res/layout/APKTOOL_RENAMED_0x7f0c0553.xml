@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:orientation="vertical" n0:id="@id/clickView" n0:background="@color/_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/guideRoot" n0:layout_width="300.0dp" n0:layout_height="wrap_content">
+        <com.vega.theme.text.VegaTextView n0:textSize="28.0dp" n0:textColor="@color/knt" n0:gravity="center_horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/l25" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/knt" n0:gravity="center_horizontal" n0:layout_gravity="center_horizontal" n0:id="@id/tvGuideTips" n0:layout_width="180.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" />
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center_horizontal" n0:id="@id/lavGuideAnimation" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:lottie_autoPlay="true" n1:lottie_loop="true"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="2.0dp" n0:layout_marginRight="2.0dp" n0:layout_marginHorizontal="2.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/presenter_picture_view" n0:background="@drawable/APKTOOL_RENAMED_0x7f0812b8" n0:padding="4.0dp" n0:layout_width="81.0dp" n0:layout_height="108.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:layout_width="81.0dp" n0:layout_height="108.0dp" n2:layout_constraintBottom_toBottomOf="@id/presenter_picture_view" n2:layout_constraintEnd_toEndOf="@id/presenter_picture_view" n2:layout_constraintStart_toStartOf="@id/presenter_picture_view" n2:layout_constraintTop_toTopOf="@id/presenter_picture_view"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.widget.ItemLoadingView n0:layout_gravity="center" n0:id="@id/presenter_loading_view" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n2:lottie_autoPlay="true" n2:lottie_loop="true" />
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:id="@id/presenter_retry_view" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_presenter_preview_play" n0:background="@drawable/ll4" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="18.0dp" n0:layout_marginBottom="7.0dp" n0:layout_marginEnd="7.0dp" n3:layout_constraintBottom_toBottomOf="@id/presenter_picture_view" n3:layout_constraintEnd_toEndOf="@id/presenter_picture_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_preview_play" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="3.0dp" n0:src="@drawable/oui" n0:layout_marginStart="4.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:id="@id/tv_preview_play" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pxf" n0:layout_marginStart="3.0dp" n0:layout_marginEnd="6.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/iv_preview_play" n3:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView n0:textSize="10.0dp" n0:textColor="@color/wz" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/presenter_name_tv" n0:paddingLeft="2.0dp" n0:paddingRight="2.0dp" n0:layout_width="81.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:singleLine="true" n0:paddingHorizontal="2.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/presenter_picture_view"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

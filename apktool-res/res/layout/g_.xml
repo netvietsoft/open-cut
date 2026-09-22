@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lmm" n0:layout_width="279.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:gravity="center" n0:id="@id/privacy_title" n0:paddingLeft="24.5dp" n0:paddingRight="24.5dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/qx0" n0:paddingHorizontal="24.5dp" n1:layout_constraintBottom_toTopOf="@id/content_view" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n0:id="@id/content_view" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toTopOf="@id/privacy_age_text" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHeight_max="300.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/privacy_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_f" n0:gravity="start" n0:id="@id/privacy_content" n0:paddingLeft="24.0dp" n0:paddingTop="8.0dp" n0:paddingRight="24.0dp" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/kfn" n0:paddingHorizontal="24.0dp" n0:paddingVertical="8.0dp" n0:lineHeight="21.0dp" />
+    </ScrollView>
+    <com.vega.theme.VegaCheckBox n0:gravity="center_vertical" n0:id="@id/age_checkbox" n0:background="@drawable/qml" n0:visibility="visible" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:layout_marginTop="2.0dp" n0:checked="true" n0:button="@null" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="4.0dp" n3:layout_constraintEnd_toStartOf="@id/privacy_age_text" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="@id/privacy_age_text"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_f" n0:gravity="start" n0:id="@id/privacy_age_text" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/kfk" n0:includeFontPadding="false" n0:layout_marginEnd="24.0dp" n0:lineHeight="21.0dp" n4:layout_constraintBottom_toTopOf="@id/privacy_ok" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/age_checkbox" n4:layout_constraintTop_toBottomOf="@id/content_view" n4:layout_goneMarginStart="24.0dp"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/privacy_ok" n0:background="@drawable/qoo" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_margin="24.0dp" n0:text="@string/ke_" n0:textAllCaps="false" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/privacy_age_text"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <SurfaceView n0:id="@id/mPreview" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="2.0dp" n0:layout_marginRight="2.0dp" n0:layout_marginHorizontal="2.0dp" />
+    <com.vega.edit.base.widget.VideoGestureLayout n0:id="@id/rlPreview" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="2.0dp" n0:layout_marginRight="2.0dp" n0:layout_marginHorizontal="2.0dp">
+        <com.vega.edit.widget.CropAdjustRect n0:id="@id/viewCropAdjustRect" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.vega.edit.widget.OutPaintingRect n0:id="@id/out_painting_rect" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.edit.base.widget.VideoGestureLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/image_crop_reset_layout" n0:background="@drawable/pvv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:minWidth="75.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#fafbff" n0:gravity="center_vertical" n0:id="@id/image_crop_reset_tv" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12239e" n0:drawablePadding="@dimen/ra" n0:drawableStart="@drawable/APKTOOL_RENAMED_0x7f0803e6" n0:paddingHorizontal="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

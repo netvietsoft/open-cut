@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/draft_viewer_root" n0:background="@color/c" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:background="@color/c" n0:layout_width="match_parent" n0:layout_height="48.0dp">
+        <ImageView n0:id="@id/draft_viewer_back" n0:background="?kvb" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/n6u" n0:scaleType="center" n0:paddingStart="4.0dp" n1:kd8="@color/mk"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/mk" n0:ellipsize="end" n0:id="@id/draft_viewer_folder" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_weight="1.0" n2:k1i="bold"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/draft_viewer_actions" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:paddingEnd="4.0dp" />
+    </LinearLayout>
+    <View n0:background="@color/kx" n0:layout_width="match_parent" n0:layout_height="1.0dp" />
+    <FrameLayout n0:id="@id/draft_viewer_container" n0:background="@color/c" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+    <View n0:background="@color/kx" n0:layout_width="match_parent" n0:layout_height="1.0dp" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/draft_viewer_tabs" n0:background="@color/c" n0:layout_width="match_parent" n0:layout_height="60.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/mo" n0:gravity="center" n0:id="@id/draft_viewer_tab_draft" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:text="Draft" n0:drawableTop="@drawable/n6x" n0:drawablePadding="2.0dp" n0:layout_weight="1.0" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/mo" n0:gravity="center" n0:id="@id/draft_viewer_tab_files" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:text="Files" n0:drawableTop="@drawable/n6y" n0:drawablePadding="2.0dp" n0:layout_weight="1.0" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/mo" n0:gravity="center" n0:id="@id/draft_viewer_tab_clipflow" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:text="Clipflow" n0:drawableTop="@drawable/n6w" n0:drawablePadding="2.0dp" n0:layout_weight="1.0" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp" />
+    </LinearLayout>
+</LinearLayout>

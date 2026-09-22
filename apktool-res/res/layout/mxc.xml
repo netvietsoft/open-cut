@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.InterceptConstraintLayout n0:id="@id/root_view" n0:background="@color/kuf" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.tabs.TabLayout n0:id="@id/tab_layout" n0:layout_width="wrap_content" n0:layout_height="48.0dp" n0:paddingStart="4.0dp" n1:layout_constraintBottom_toTopOf="@id/line" n1:layout_constraintStart_toStartOf="parent" n1:tabBackground="@color/kw0" n1:tabIndicatorHeight="0.0dp" n1:tabMinWidth="0.0dp" n1:tabMode="scrollable" n1:tabRippleColor="@color/kw0" n1:tabSelectedTextColor="@color/kqx" n1:tabTextAppearance="@style/APKTOOL_RENAMED_0x7f130485" n1:tabTextColor="@color/kpf" />
+        <ImageView n0:id="@id/iv_confirm" n0:padding="16.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08338b" n1:layout_constraintBottom_toBottomOf="@id/tab_layout" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="@id/tab_layout" n1:kd8="@color/kxw" />
+        <View n0:id="@id/line" n0:background="@color/kw1" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintBottom_toTopOf="@id/fl_container" />
+        <FrameLayout n0:id="@id/fl_container" n0:layout_width="match_parent" n0:layout_height="320.0dp" n1:layout_constraintBottom_toBottomOf="parent" />
+    </com.xt.retouch.baseui.view.InterceptConstraintLayout>
+    <FrameLayout n0:id="@id/xt_watermark_fragment_color_picker_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n2:layout_constraintBottom_toTopOf="@id/root_view" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.colorpick.ColorPreviewViewV2 n0:id="@id/xt_watermark_fragment_color_picker" n0:visibility="invisible" n0:layout_width="44.0dp" n0:layout_height="78.0dp" />
+    </FrameLayout>
+    <include n0:id="@id/xt_watermark_fragment_editor" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintBottom_toTopOf="@id/root_view" layout="@layout/mdv"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/u8" n0:id="@id/text_cancel" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.cardview.widget.CardView n0:textSize="16.0dp" n0:id="@id/ly_edit_content" n0:background="#f6f6f6" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="28.0dp" n0:layout_marginBottom="40.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:cardCornerRadius="8.0dp" n2:cardElevation="0.0dp" n2:layout_constraintBottom_toTopOf="@id/recordPanelContainer" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/text_cancel"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ScrollView n0:id="@id/edittext_scroll_view" n0:background="@color/APKTOOL_RENAMED_0x7f06022c" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never">
+            <LinearLayout n0:orientation="vertical" n0:id="@id/edittext_ly" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/u9" n0:gravity="start|top" n0:id="@id/contentTv" n0:background="@null" n0:paddingTop="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+                <ImageView n0:id="@id/ic_edit_overflow_new" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/z8" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+    <include n0:id="@id/recordPanelContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent" layout="@layout/sh"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginStart="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_loading_star" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/m10" n0:contentDescription="@null" />
+    <TextView n0:textSize="16.0dp" n0:textStyle="normal" n0:textColor="#801c283d" n0:id="@id/tv_loading_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/kkw" n0:includeFontPadding="false" n0:lineSpacingMultiplier="1.5" n0:fontFamily="CapCut Sans Text" n0:layout_marginStart="8.0dp" n0:letterSpacing="0.01" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_ai_model_compose_fragment_0" n0:background="@color/kng" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:ellipsize="end" n0:gravity="center" n0:id="@id/top_title" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="@dimen/e5" n0:lines="1" n0:layout_weight="1.0" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/help_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/ie" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toTopOf="@id/compose_image_list" n2:layout_constraintStart_toEndOf="@id/top_title" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/back_btn" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="52.0dp" n0:layout_height="@dimen/e5" n0:src="@drawable/rma" n0:scaleType="centerCrop" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="16.0dp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/cancel_btn" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="@dimen/e5" n0:text="@string/re5" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/compose_image_list" n0:paddingBottom="200.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="@dimen/e5" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/bottom_panel" n0:background="@color/kng" n0:paddingBottom="34.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n6:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.aimodel.impl.widget.AiModelHelpTextView n0:textSize="10.0dp" n0:textColor="#66e5e9fa" n0:gravity="start" n0:id="@id/tips_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/rea" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintLeft_toLeftOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="16.0dp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/export_btn" n0:background="@drawable/q-f" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/re6" n0:layout_marginHorizontal="16.0dp" n6:layout_constraintTop_toBottomOf="@id/tips_text" />
+        <TextView n0:textSize="16.0dp" n0:textColor="#f6f7fe" n0:gravity="center" n0:id="@id/retry_btn" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/re7" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintTop_toBottomOf="@id/export_btn" />
+        <FrameLayout n0:id="@id/icon_limit_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:layout_constraintBottom_toTopOf="@id/export_btn" n6:layout_constraintEnd_toEndOf="@id/export_btn" n6:layout_constraintTop_toTopOf="@id/export_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ViewStub n0:id="@id/user_guide_vs" n0:layout="@layout/mmn" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/sub_fragment_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

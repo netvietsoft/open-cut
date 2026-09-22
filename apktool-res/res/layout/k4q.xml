@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundConstraintLayout n0:background="@android:color/white" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:i9="16.0dp" n1:i-="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <ImageView n0:id="@id/iv_guide_add_widget_pic_head" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="281.0dp" n0:scaleType="centerCrop" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/iv_guide_add_widget_pic_head">
+        <com.vega.theme.text.VegaTextView n0:textSize="22.0sp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/tv_guide_add_widget_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="20.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="20.0dp" n0:layout_marginBottom="16.0dp" n0:maxLines="2" n0:layout_marginHorizontal="20.0dp" n1:fontFamily="Albert Sans" n1:k1i="bold" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#b2141d2d" n0:gravity="center" n0:id="@id/tv_guide_add_widget_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="20.0dp" n0:layout_marginRight="20.0dp" n0:layout_marginHorizontal="20.0dp" n1:kks="20.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tv_guide_add_widget_button" n0:background="@drawable/kcr" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginHorizontal="16.0dp" n1:k1i="medium" />
+    </LinearLayout>
+    <ImageView n0:id="@id/iv_guide_add_widget_close" n0:padding="10.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m74" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+</com.vega.ui.widget.RoundConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/storage_tip_container" n0:tag="layout/xt_layout_storage_tip_0" n0:background="@drawable/APKTOOL_RENAMED_0x7f0831ce" n0:padding="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="19.0dp" n0:layout_marginTop="44.0dp" n0:layout_marginRight="19.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@android:color/black" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/t6s" />
+    <include n0:layout_width="wrap_content" n0:layout_height="wrap_content" layout="@layout/mcu" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@drawable/kdw" n0:padding="24.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#46464c" n0:gravity="center" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="24.0dp" n0:text="@string/lon" n0:lineSpacingExtra="4.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/btnConfirm" n0:background="@drawable/kdy" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/ln_" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#46464c" n0:gravity="center" n0:id="@id/btnCancel" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120d45" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="44.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/ivBack" n0:layout_width="52.0dp" n0:layout_height="match_parent" n0:src="@drawable/m6-" n0:scaleType="centerInside" n0:layout_centerVertical="true" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/ww" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/k8_" n0:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/k9k" n0:layout_marginStart="16.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#80edf0fd" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/k9l" n0:layout_marginStart="16.0dp" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/resultRv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="14.0dp" n0:layout_marginTop="11.0dp" n0:layout_marginRight="14.0dp" n0:layout_weight="1.0" n0:layout_marginHorizontal="14.0dp" n2:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager" n2:spanCount="4"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.StrongButton n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/ui" n0:id="@id/btnNext" n0:background="@drawable/qly" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="20.0dp" n0:text="@string/qj_" n0:layout_marginHorizontal="16.0dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

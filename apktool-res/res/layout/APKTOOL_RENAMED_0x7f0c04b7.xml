@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:layout_width="match_parent" n0:layout_height="44.0dp">
+        <ImageView n0:id="@id/ivClearEffects" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="14.0dp" n0:src="@drawable/nwv" n0:layout_marginStart="16.0dp" />
+        <com.google.android.material.tabs.TabLayout n0:id="@id/styleTabLayout" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginStart="8.0dp" n0:layout_toEndOf="@id/ivClearEffects" n1:tabIndicator="@null" n1:tabMinWidth="0.0dp" n1:tabMode="scrollable" n1:tabPaddingEnd="8.0dp" n1:tabPaddingStart="8.0dp" n1:tabSelectedTextColor="@color/ww" n1:tabTextAppearance="@style/APKTOOL_RENAMED_0x7f1304f4" n1:tabTextColor="@color/APKTOOL_RENAMED_0x7f060204"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panelMessageLayout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ww" n0:id="@id/tvPanelMessage" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="22.0dp" n2:layout_constraintEnd_toStartOf="@id/ivReportEntrance" n2:layout_constraintHorizontal_chainStyle="packed" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <ImageView n0:id="@id/ivReportEntrance" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="26.0dp" n0:src="@drawable/nw0" n0:layout_marginStart="4.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/tvPanelMessage" n3:layout_constraintTop_toTopOf="parent"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/aiResultRecyclerView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="64.0dp" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/inspirationRecyclerView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="64.0dp" />
+</FrameLayout>

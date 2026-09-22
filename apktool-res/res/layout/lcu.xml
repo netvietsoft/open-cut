@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.StateViewGroupLayoutV3 n0:id="@id/stateView" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_top_music" n0:visibility="gone" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginEnd="16.0dp" n1:layout_constraintBottom_toBottomOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <CheckBox n0:id="@id/cb_clear_music" n0:background="@android:color/transparent" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:checked="true" n0:button="@drawable/ql7" n0:layout_marginStart="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <com.vega.edit.base.widget.MarqueeVegaTextView n0:textSize="12.0sp" n0:textColor="@color/ww" n0:ellipsize="marquee" n0:id="@id/mvtv_clear_music" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toEndOf="@id/cb_clear_music" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout n0:id="@id/refreshLayout" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="48.0dp" n2:kx1="true" n2:kyo="false" n2:kyp="true"
+          xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <com.vega.ui.MaterialRecycleView n0:id="@id/recyclerView" n0:tag="content" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+            <com.scwang.smartrefresh.layout.footer.FalsifyFooter n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </com.vega.ui.widget.StateViewGroupLayoutV3>
+</androidx.core.widget.NestedScrollView>

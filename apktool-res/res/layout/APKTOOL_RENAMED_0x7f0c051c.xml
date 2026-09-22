@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundConstraintLayout n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_portrait_list" n0:paddingBottom="8.0dp" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/close_layout" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginEnd="12.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/ny8" n0:scaleType="fitXY" />
+    </FrameLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/progress_loading_layout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/progress_loading" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n3:lottie_autoPlay="true" n3:lottie_fileName="lv_loading_b.json" n3:lottie_loop="true"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <TextView n0:textSize="14.0dp" n0:textColor="#661f2f45" n0:id="@id/tv_loading_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12360e" />
+    </LinearLayout>
+</com.vega.ui.widget.RoundConstraintLayout>

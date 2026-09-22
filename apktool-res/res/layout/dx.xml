@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/exportView" n0:background="@drawable/k72" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.StrongButton n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/back_to_recording" n0:background="@drawable/qm8" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1204cc" />
+    <View n0:id="@id/back_to_recording_divider" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" />
+    <com.vega.ui.StrongButton n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/save" n0:background="@drawable/qm8" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:text="@string/qgc" />
+    <View n0:id="@id/divider" n0:background="@color/a3" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" />
+    <com.vega.ui.StrongButton n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#ff303d" n0:gravity="center" n0:id="@id/discard" n0:background="@drawable/qm8" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f12001f" />
+    <View n0:background="#25262b" n0:layout_width="match_parent" n0:layout_height="8.0dp" />
+    <com.vega.ui.StrongButton n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#b2f6f7fe" n0:gravity="center" n0:id="@id/cancel" n0:background="@drawable/qm9" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" />
+</LinearLayout>

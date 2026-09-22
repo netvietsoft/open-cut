@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/f" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/closePreviewIcon" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nk2" n0:scaleType="center" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textColor="#090c14" n0:gravity="center" n0:id="@id/replaceButton" n0:background="@drawable/lp9" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:text="@string/opq" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="10.0dp" n2:layout_constraintBottom_toBottomOf="@id/closePreviewIcon" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/closePreviewIcon"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/imagePreviewView" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:roundBottomEnd="true" n3:kur="true" n3:roundTopEnd="true" n3:roundTopStart="true" n3:roundedCornerRadius="8.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/ll_create_or_join_group" n0:background="@drawable/qpa" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/mo" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="12.0dp" n0:text="@string/nrv" />
+    <View n0:background="@color/kx" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/tv_retry" n0:layout_width="match_parent" n0:layout_height="48.0dp" />
+    <View n0:id="@id/retry_line" n0:background="@color/kx" n0:layout_width="match_parent" n0:layout_height="0.5dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/lc" n0:gravity="center" n0:id="@id/tv_delete" n0:layout_width="match_parent" n0:layout_height="48.0dp" />
+    <View n0:background="@color/g" n0:layout_width="match_parent" n0:layout_height="8.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/tv_cancel" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" />
+</LinearLayout>

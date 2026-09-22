@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="center" n0:layout_width="82.0dp" n0:layout_height="79.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundCornerImageView n0:id="@id/iv_frame" n0:layout_width="72.0dp" n0:layout_height="72.0dp" n0:scaleType="centerCrop" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:_5="8.0dp" n1:klh="8.0dp" n1:ktn="8.0dp" n1:kuf="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ProgressBar n0:id="@id/loading_view" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:indeterminateDrawable="@drawable/mk4" n2:layout_constraintBottom_toBottomOf="@id/iv_frame" n2:layout_constraintEnd_toEndOf="@id/iv_frame" n2:layout_constraintStart_toStartOf="@id/iv_frame" n2:layout_constraintTop_toTopOf="@id/iv_frame"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_remove" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/pl-" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tv_index" n0:background="@drawable/le2" n0:layout_width="13.0dp" n0:layout_height="13.0dp" n0:layout_marginTop="4.0dp" n0:shadowColor="@color/ff" n0:shadowRadius="2.0" n0:layout_marginStart="4.0dp" n4:layout_constraintStart_toStartOf="@id/iv_frame" n4:layout_constraintTop_toTopOf="@id/iv_frame"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

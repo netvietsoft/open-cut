@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="#fff" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/adn_layout" n0:background="@drawable/tt_mediation_card_bg" n0:padding="15.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="4.0dp">
+        <ImageView n0:id="@id/adn_icon" n0:layout_width="30.0dp" n0:layout_height="30.0dp" />
+        <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/tt_color_333" n0:gravity="center" n0:id="@id/adn_name" n0:layout_width="wrap_content" n0:layout_height="30.0dp" n0:layout_marginLeft="8.0dp" n0:includeFontPadding="false" n0:layout_toRightOf="@id/adn_icon" />
+        <TextView n0:textColor="@color/tt_load_status_color_selector" n0:gravity="center" n0:id="@id/adapter_status" n0:background="@drawable/tt_ad_load_bg_selector" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginTop="8.0dp" n0:text="Adapter" n0:drawableLeft="@drawable/tt_alert_selector" n0:drawablePadding="4.0dp" n0:layout_below="@id/adn_name" />
+        <TextView n0:textColor="@color/tt_load_status_color_selector" n0:gravity="center" n0:id="@id/sdk_status" n0:background="@drawable/tt_ad_load_bg_selector" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="8.0dp" n0:text="SDK" n0:drawableLeft="@drawable/tt_alert_selector" n0:drawablePadding="4.0dp" n0:layout_toRightOf="@id/adapter_status" n0:layout_below="@id/adn_name" />
+        <ImageView n0:id="@id/iv_selected" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_alignParentRight="true" n0:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

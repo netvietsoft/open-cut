@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileProvider Paths Configuration / Cấu hình đường dẫn chia sẻ file an toàn (Fixes CWE-939 & FileUriExposedException) -->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="external_movies" path="Movies/NextAI_OpenCut" />
+    <external-path name="external_pictures" path="Pictures/NextAI_OpenCut" />
+    <external-files-path name="app_external_movies" path="Movies" />
+    <external-files-path name="app_external_pictures" path="Pictures" />
+    <cache-path name="cache" path="." />
+</paths>

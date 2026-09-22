@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/recordingRl" n0:layout_width="75.0dp" n0:layout_height="75.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/recordInIv" n0:background="@drawable/lpx" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" />
+    <ImageView n0:id="@id/recordInIvPlay" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" n1:srcCompat="@drawable/oao"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/recordOutIv" n0:background="@drawable/lpz" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" />
+    <ImageView n0:id="@id/recordIconIv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" n2:srcCompat="@drawable/oay"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

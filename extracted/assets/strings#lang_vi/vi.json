@@ -1,0 +1,3128 @@
+{
+    "name": "vi",
+    "currency": {
+        "Standard": "{0}¤",
+        "StandardNoCurrency": "#.##0,00",
+		"StandardNoSymbol": "{0} ¤",
+        "compact": {
+            "short": "{0} ¤",
+            "long": "{0} {1}"
+        },
+		"range": {
+			"between": {
+				"short": "{0}-{1} ¤"
+			},
+			"approximately": {
+				"short": "~{0} ¤"
+			},
+			"atLeast": {
+				"short": "{0} ¤+"
+			},
+			"atMost": {
+				"short": "≤{0} ¤"
+			}
+		},
+        "currencyList": {
+            "ADP": {
+                "symbol": {
+                    "value": "ADP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peseta của Andora"
+                },
+                "digits": 0
+            },
+            "AED": {
+                "symbol": {
+                    "value": "AED",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dirham UAE"
+                }
+            },
+            "AFA": {
+                "symbol": {
+                    "value": "AFA",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Afghani của Afghanistan (1927–2002)"
+                }
+            },
+            "AFN": {
+                "symbol": {
+                    "value": "AFN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "afghani Afghanistan"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "؋"
+                }
+            },
+            "ALL": {
+                "symbol": {
+                    "value": "ALL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lek Albania"
+                },
+                "digits": 0
+            },
+            "AMD": {
+                "symbol": {
+                    "value": "AMD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dram Armenia"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "֏"
+                }
+            },
+            "ANG": {
+                "symbol": {
+                    "value": "ANG",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "guilder Antille Hà Lan"
+                }
+            },
+            "AOA": {
+                "symbol": {
+                    "value": "AOA",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kwanza Angola"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Kz",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "AOK": {
+                "symbol": {
+                    "value": "AOK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Kwanza của Angola (1977–1991)"
+                }
+            },
+            "AON": {
+                "symbol": {
+                    "value": "AON",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Kwanza Mới của Angola (1990–2000)"
+                }
+            },
+            "AOR": {
+                "symbol": {
+                    "value": "AOR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Kwanza Điều chỉnh lại của Angola (1995–1999)"
+                }
+            },
+            "ARA": {
+                "symbol": {
+                    "value": "ARA",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Austral của Argentina"
+                }
+            },
+            "ARL": {
+                "symbol": {
+                    "value": "ARL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peso Ley của Argentina (1970–1983)"
+                }
+            },
+            "ARM": {
+                "symbol": {
+                    "value": "ARM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peso Argentina (1881–1970)"
+                }
+            },
+            "ARP": {
+                "symbol": {
+                    "value": "ARP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peso Argentina (1983–1985)"
+                }
+            },
+            "ARS": {
+                "symbol": {
+                    "value": "ARS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Argentina"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "ATS": {
+                "symbol": {
+                    "value": "ATS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Schiling Áo"
+                }
+            },
+            "AUD": {
+                "symbol": {
+                    "value": "AU$",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đô la Australia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "AU$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "AWG": {
+                "symbol": {
+                    "value": "AWG",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Florin Aruba"
+                }
+            },
+            "AZM": {
+                "symbol": {
+                    "value": "AZM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Manat của Azerbaijan (1993–2006)"
+                }
+            },
+            "AZN": {
+                "symbol": {
+                    "value": "AZN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "manat Azerbaijan"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₼"
+                }
+            },
+            "BAD": {
+                "symbol": {
+                    "value": "BAD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar của Bosnia-Herzegovina (1992–1994)"
+                }
+            },
+            "BAM": {
+                "symbol": {
+                    "value": "BAM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "mark Bosnia-Herzegovina có thể chuyển đổi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "KM",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BAN": {
+                "symbol": {
+                    "value": "BAN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar Mới của Bosnia-Herzegovina (1994–1997)"
+                }
+            },
+            "BBD": {
+                "symbol": {
+                    "value": "BBD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Barbados"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BDT": {
+                "symbol": {
+                    "value": "BDT",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "taka Bangladesh"
+                },
+                "symbol-alt-narrow": {
+                    "value": "৳"
+                }
+            },
+            "BEC": {
+                "symbol": {
+                    "value": "BEC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Bỉ (có thể chuyển đổi)"
+                }
+            },
+            "BEF": {
+                "symbol": {
+                    "value": "BEF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Bỉ"
+                }
+            },
+            "BEL": {
+                "symbol": {
+                    "value": "BEL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Bỉ (tài chính)"
+                }
+            },
+            "BGL": {
+                "symbol": {
+                    "value": "BGL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Lev Xu của Bun-ga-ri"
+                }
+            },
+            "BGM": {
+                "symbol": {
+                    "value": "BGM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Lev Xã hội chủ nghĩa của Bun-ga-ri"
+                }
+            },
+            "BGN": {
+                "symbol": {
+                    "value": "BGN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lev Bulgaria"
+                }
+            },
+            "BGO": {
+                "symbol": {
+                    "value": "BGO",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Lev của Bun-ga-ri (1879–1952)"
+                }
+            },
+            "BHD": {
+                "symbol": {
+                    "value": "BHD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Bahrain"
+                },
+                "digits": 3
+            },
+            "BIF": {
+                "symbol": {
+                    "value": "BIF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Burundi"
+                },
+                "digits": 0
+            },
+            "BMD": {
+                "symbol": {
+                    "value": "BMD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Bermuda"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BND": {
+                "symbol": {
+                    "value": "BND",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Brunei"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BOB": {
+                "symbol": {
+                    "value": "BOB",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "boliviano Bolivia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BOL": {
+                "symbol": {
+                    "value": "BOL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Boliviano của Bolivia (1863–1963)"
+                }
+            },
+            "BOP": {
+                "symbol": {
+                    "value": "BOP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peso Bolivia"
+                }
+            },
+            "BOV": {
+                "symbol": {
+                    "value": "BOV",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Mvdol Bolivia"
+                }
+            },
+            "BRB": {
+                "symbol": {
+                    "value": "BRB",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Cruzerio Mới của Braxin (1967–1986)"
+                }
+            },
+            "BRC": {
+                "symbol": {
+                    "value": "BRC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Cruzado của Braxin (1986–1989)"
+                }
+            },
+            "BRE": {
+                "symbol": {
+                    "value": "BRE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Cruzerio của Braxin (1990–1993)"
+                }
+            },
+            "BRL": {
+                "symbol": {
+                    "value": "R$",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "real Braxin"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BRN": {
+                "symbol": {
+                    "value": "BRN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Cruzado Mới của Braxin (1989–1990)"
+                }
+            },
+            "BRR": {
+                "symbol": {
+                    "value": "BRR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Cruzeiro của Braxin (1993–1994)"
+                }
+            },
+            "BRZ": {
+                "symbol": {
+                    "value": "BRZ",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Cruzeiro của Braxin (1942–1967)"
+                }
+            },
+            "BSD": {
+                "symbol": {
+                    "value": "BSD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Bahamas"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "BTN": {
+                "symbol": {
+                    "value": "BTN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ngultrum Bhutan"
+                }
+            },
+            "BUK": {
+                "symbol": {
+                    "value": "BUK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Kyat Miến Điện"
+                }
+            },
+            "BWP": {
+                "symbol": {
+                    "value": "BWP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "pula Botswana"
+                },
+                "symbol-alt-narrow": {
+                    "value": "P",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BYB": {
+                "symbol": {
+                    "value": "BYB",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Rúp Mới của Belarus (1994–1999)"
+                }
+            },
+            "BYN": {
+                "symbol": {
+                    "value": "BYN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúp Belarus"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "р.",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "BYR": {
+                "symbol": {
+                    "value": "BYR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Rúp Belarus (2000–2016)"
+                },
+                "digits": 0
+            },
+            "BZD": {
+                "symbol": {
+                    "value": "BZD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Belize"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CAD": {
+                "symbol": {
+                    "value": "CA$",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Canada"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "CA$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "CDF": {
+                "symbol": {
+                    "value": "CDF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Congo"
+                }
+            },
+            "CHE": {
+                "symbol": {
+                    "value": "CHE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Euro WIR"
+                }
+            },
+            "CHF": {
+                "symbol": {
+                    "value": "CHF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Thụy sĩ"
+                },
+                "digits": 2
+            },
+            "CHW": {
+                "symbol": {
+                    "value": "CHW",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng France WIR"
+                }
+            },
+            "CLE": {
+                "symbol": {
+                    "value": "CLE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Escudo của Chile"
+                }
+            },
+            "CLF": {
+                "symbol": {
+                    "value": "CLF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đơn vị Kế toán của Chile (UF)"
+                },
+                "digits": 4
+            },
+            "CLP": {
+                "symbol": {
+                    "value": "CLP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Chile"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CNH": {
+                "symbol": {
+                    "value": "CNH",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "nhân dân tệ (hải ngoại)"
+                }
+            },
+            "CNY": {
+                "symbol": {
+                    "value": "CN¥",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "nhân dân tệ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "COP": {
+                "symbol": {
+                    "value": "COP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Colombia"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "COU": {
+                "symbol": {
+                    "value": "COU",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đơn vị Giá trị Thực của Colombia"
+                }
+            },
+            "CRC": {
+                "symbol": {
+                    "value": "CRC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "colón Costa Rica"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₡"
+                }
+            },
+            "CSD": {
+                "symbol": {
+                    "value": "CSD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar của Serbia (2002–2006)"
+                }
+            },
+            "CSK": {
+                "symbol": {
+                    "value": "CSK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Koruna Xu của Czechoslovakia"
+                }
+            },
+            "CUC": {
+                "symbol": {
+                    "value": "CUC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Cuba có thể chuyển đổi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CUP": {
+                "symbol": {
+                    "value": "CUP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Cuba"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "CVE": {
+                "symbol": {
+                    "value": "CVE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "escudo Cape Verde"
+                }
+            },
+            "CYP": {
+                "symbol": {
+                    "value": "CYP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Bảng Síp"
+                }
+            },
+            "CZK": {
+                "symbol": {
+                    "value": "CZK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "koruna Cộng hòa Séc"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Kč",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "DDM": {
+                "symbol": {
+                    "value": "DDM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Mark Đông Đức"
+                }
+            },
+            "DEM": {
+                "symbol": {
+                    "value": "DEM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Mark Đức"
+                }
+            },
+            "DJF": {
+                "symbol": {
+                    "value": "DJF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Djibouti"
+                },
+                "digits": 0
+            },
+            "DKK": {
+                "symbol": {
+                    "value": "DKK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "krone Đan Mạch"
+                },
+                "digits": 2,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "DOP": {
+                "symbol": {
+                    "value": "DOP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Dominica"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "DZD": {
+                "symbol": {
+                    "value": "DZD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Algeria"
+                }
+            },
+            "ECS": {
+                "symbol": {
+                    "value": "ECS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Scure Ecuador"
+                }
+            },
+            "ECV": {
+                "symbol": {
+                    "value": "ECV",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đơn vị Giá trị Không đổi của Ecuador"
+                }
+            },
+            "EEK": {
+                "symbol": {
+                    "value": "EEK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Crun Extônia"
+                }
+            },
+            "EGP": {
+                "symbol": {
+                    "value": "EGP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bảng Ai Cập"
+                },
+                "symbol-alt-narrow": {
+                    "value": "E£",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "ERN": {
+                "symbol": {
+                    "value": "ERN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "nakfa Eritrea"
+                }
+            },
+            "ESA": {
+                "symbol": {
+                    "value": "ESA",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peseta Tây Ban Nha (Tài khoản)"
+                }
+            },
+            "ESB": {
+                "symbol": {
+                    "value": "ESB",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peseta Tây Ban Nha (tài khoản có thể chuyển đổi)"
+                }
+            },
+            "ESP": {
+                "symbol": {
+                    "value": "ESP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peseta Tây Ban Nha"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₧"
+                }
+            },
+            "ETB": {
+                "symbol": {
+                    "value": "ETB",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "birr Ethiopia"
+                }
+            },
+            "EUR": {
+                "symbol": {
+                    "value": "€"
+                },
+                "displayName": {
+                    "other": "euro"
+                },
+                "symbol-alt-narrow": {
+                    "value": "€"
+                }
+            },
+            "FIM": {
+                "symbol": {
+                    "value": "FIM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Markka Phần Lan"
+                }
+            },
+            "FJD": {
+                "symbol": {
+                    "value": "FJD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Fiji"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "FKP": {
+                "symbol": {
+                    "value": "FKP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bảng Quần đảo Falkland"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "FRF": {
+                "symbol": {
+                    "value": "FRF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Franc Pháp"
+                }
+            },
+            "GBP": {
+                "symbol": {
+                    "value": "£"
+                },
+                "displayName": {
+                    "other": "bảng Anh"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GEK": {
+                "symbol": {
+                    "value": "GEK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Kupon Larit của Georgia"
+                }
+            },
+            "GEL": {
+                "symbol": {
+                    "value": "GEL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lari Georgia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₾"
+                }
+            },
+            "GHC": {
+                "symbol": {
+                    "value": "GHC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Cedi Ghana (1979–2007)"
+                }
+            },
+            "GHS": {
+                "symbol": {
+                    "value": "GHS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "cedi Ghana"
+                },
+                "symbol-alt-narrow": {
+                    "value": "GH₵",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "GIP": {
+                "symbol": {
+                    "value": "GIP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bảng Gibraltar"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "GMD": {
+                "symbol": {
+                    "value": "GMD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dalasi Gambia"
+                }
+            },
+            "GNF": {
+                "symbol": {
+                    "value": "GNF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Guinea"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "FG",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "GNS": {
+                "symbol": {
+                    "value": "GNS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Syli Guinea"
+                }
+            },
+            "GQE": {
+                "symbol": {
+                    "value": "GQE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Ekwele của Guinea Xích Đạo"
+                }
+            },
+            "GRD": {
+                "symbol": {
+                    "value": "GRD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Drachma Hy Lạp"
+                }
+            },
+            "GTQ": {
+                "symbol": {
+                    "value": "GTQ",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "quetzal Guatemala"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Q",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "GWE": {
+                "symbol": {
+                    "value": "GWE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Guinea Escudo Bồ Đào Nha"
+                }
+            },
+            "GWP": {
+                "symbol": {
+                    "value": "GWP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Peso Guinea-Bissau"
+                }
+            },
+            "GYD": {
+                "symbol": {
+                    "value": "GYD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Guyana"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "HKD": {
+                "symbol": {
+                    "value": "HK$",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Hồng Kông"
+                },
+                "symbol-alt-narrow": {
+                    "value": "HK$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "HNL": {
+                "symbol": {
+                    "value": "HNL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lempira Honduras"
+                },
+                "symbol-alt-narrow": {
+                    "value": "L",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "HRD": {
+                "symbol": {
+                    "value": "HRD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar Croatia"
+                }
+            },
+            "HRK": {
+                "symbol": {
+                    "value": "HRK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kuna Croatia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "kn",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "HTG": {
+                "symbol": {
+                    "value": "HTG",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "gourde Haiti"
+                }
+            },
+            "HUF": {
+                "symbol": {
+                    "value": "HUF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "forint Hungary"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ft",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "IDR": {
+                "symbol": {
+                    "value": "IDR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rupiah Indonesia"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rp",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "IEP": {
+                "symbol": {
+                    "value": "IEP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Pao Ai-len"
+                }
+            },
+            "ILP": {
+                "symbol": {
+                    "value": "ILP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Pao Ixraen"
+                }
+            },
+            "ILS": {
+                "symbol": {
+                    "value": "₪"
+                },
+                "displayName": {
+                    "other": "sheqel Israel mới"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₪"
+                }
+            },
+            "INR": {
+                "symbol": {
+                    "value": "₹"
+                },
+                "displayName": {
+                    "other": "rupee Ấn Độ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₹"
+                }
+            },
+            "IQD": {
+                "symbol": {
+                    "value": "IQD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Iraq"
+                },
+                "digits": 0
+            },
+            "IRR": {
+                "symbol": {
+                    "value": "IRR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rial Iran"
+                },
+                "digits": 0
+            },
+            "ISK": {
+                "symbol": {
+                    "value": "ISK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "króna Iceland"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "ITL": {
+                "symbol": {
+                    "value": "ITL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Lia Ý"
+                },
+                "digits": 0
+            },
+            "JMD": {
+                "symbol": {
+                    "value": "JMD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Jamaica"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "JOD": {
+                "symbol": {
+                    "value": "JOD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Jordan"
+                },
+                "digits": 3
+            },
+            "JPY": {
+                "symbol": {
+                    "value": "¥"
+                },
+                "displayName": {
+                    "other": "yên Nhật"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "¥"
+                }
+            },
+            "KES": {
+                "symbol": {
+                    "value": "KES",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "shilling Kenya"
+                }
+            },
+            "KGS": {
+                "symbol": {
+                    "value": "KGS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "som Kyrgyzstan"
+                },
+                "symbol-alt-narrow": {
+                    "value": "⃀"
+                }
+            },
+            "KHR": {
+                "symbol": {
+                    "value": "KHR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "riel Campuchia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "៛"
+                }
+            },
+            "KMF": {
+                "symbol": {
+                    "value": "KMF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Comoros"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "CF",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "KPW": {
+                "symbol": {
+                    "value": "KPW",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "won Triều Tiên"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KRH": {
+                "symbol": {
+                    "value": "KRH",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Hwan Hàn Quốc (1953–1962)"
+                }
+            },
+            "KRO": {
+                "symbol": {
+                    "value": "KRO",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Won Hàn Quốc (1945–1953)"
+                }
+            },
+            "KRW": {
+                "symbol": {
+                    "value": "₩"
+                },
+                "displayName": {
+                    "other": "won Hàn Quốc"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₩"
+                }
+            },
+            "KWD": {
+                "symbol": {
+                    "value": "KWD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Kuwait"
+                },
+                "digits": 3
+            },
+            "KYD": {
+                "symbol": {
+                    "value": "KYD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Quần đảo Cayman"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "KZT": {
+                "symbol": {
+                    "value": "KZT",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "tenge Kazakhstan"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₸"
+                }
+            },
+            "LAK": {
+                "symbol": {
+                    "value": "LAK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kip Lào"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₭"
+                }
+            },
+            "LBP": {
+                "symbol": {
+                    "value": "LBP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bảng Li-băng"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "L£",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "LKR": {
+                "symbol": {
+                    "value": "LKR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rupee Sri Lanka"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "LRD": {
+                "symbol": {
+                    "value": "LRD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Liberia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "LSL": {
+                "symbol": {
+                    "value": "LSL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Loti Lesotho"
+                }
+            },
+            "LTL": {
+                "symbol": {
+                    "value": "LTL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "litas Lít-va"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Lt",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "LTT": {
+                "symbol": {
+                    "value": "LTT",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Talonas Litva"
+                }
+            },
+            "LUC": {
+                "symbol": {
+                    "value": "LUC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Luxembourg có thể chuyển đổi"
+                }
+            },
+            "LUF": {
+                "symbol": {
+                    "value": "LUF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Luxembourg"
+                },
+                "digits": 0
+            },
+            "LUL": {
+                "symbol": {
+                    "value": "LUL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Luxembourg tài chính"
+                }
+            },
+            "LVL": {
+                "symbol": {
+                    "value": "LVL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lats Lativia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Ls",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "LVR": {
+                "symbol": {
+                    "value": "LVR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Rúp Latvia"
+                }
+            },
+            "LYD": {
+                "symbol": {
+                    "value": "LYD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Libi"
+                },
+                "digits": 3
+            },
+            "MAD": {
+                "symbol": {
+                    "value": "MAD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dirham Ma-rốc"
+                }
+            },
+            "MAF": {
+                "symbol": {
+                    "value": "MAF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Ma-rốc"
+                }
+            },
+            "MCF": {
+                "symbol": {
+                    "value": "MCF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Monegasque"
+                }
+            },
+            "MDC": {
+                "symbol": {
+                    "value": "MDC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Cupon Moldova"
+                }
+            },
+            "MDL": {
+                "symbol": {
+                    "value": "MDL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "leu Moldova"
+                }
+            },
+            "MGA": {
+                "symbol": {
+                    "value": "MGA",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ariary Madagascar"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Ar",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "MGF": {
+                "symbol": {
+                    "value": "MGF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Magalasy"
+                },
+                "digits": 0
+            },
+            "MKD": {
+                "symbol": {
+                    "value": "MKD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "denar Macedonia"
+                }
+            },
+            "MKN": {
+                "symbol": {
+                    "value": "MKN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Denar Macedonia (1992–1993)"
+                }
+            },
+            "MLF": {
+                "symbol": {
+                    "value": "MLF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Franc Mali"
+                }
+            },
+            "MMK": {
+                "symbol": {
+                    "value": "MMK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kyat Myanma"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "K",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "MNT": {
+                "symbol": {
+                    "value": "MNT",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "tugrik Mông Cổ"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₮"
+                }
+            },
+            "MOP": {
+                "symbol": {
+                    "value": "MOP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "pataca Ma Cao"
+                }
+            },
+            "MRO": {
+                "symbol": {
+                    "value": "MRO",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Ouguiya Mauritania (1973–2017)"
+                },
+                "digits": 0
+            },
+            "MRU": {
+                "symbol": {
+                    "value": "MRU",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ouguiya Mauritania"
+                }
+            },
+            "MTL": {
+                "symbol": {
+                    "value": "MTL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Lia xứ Man-tơ"
+                }
+            },
+            "MTP": {
+                "symbol": {
+                    "value": "MTP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Bảng Malta"
+                }
+            },
+            "MUR": {
+                "symbol": {
+                    "value": "MUR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rupee Mauritius"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "MVR": {
+                "symbol": {
+                    "value": "MVR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rufiyaa Maldives"
+                }
+            },
+            "MWK": {
+                "symbol": {
+                    "value": "MWK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kwacha Malawi"
+                }
+            },
+            "MXN": {
+                "symbol": {
+                    "value": "MX$",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Mexico"
+                },
+                "symbol-alt-narrow": {
+                    "value": "MX$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "MXP": {
+                "symbol": {
+                    "value": "MXP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peso Bạc Mê-hi-cô (1861–1992)"
+                }
+            },
+            "MXV": {
+                "symbol": {
+                    "value": "MXV",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đơn vị Đầu tư Mê-hi-cô"
+                }
+            },
+            "MYR": {
+                "symbol": {
+                    "value": "MYR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "ringgit Malaysia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "RM",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "MZE": {
+                "symbol": {
+                    "value": "MZE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Escudo Mozambique"
+                }
+            },
+            "MZM": {
+                "symbol": {
+                    "value": "MZM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Metical Mozambique (1980–2006)"
+                }
+            },
+            "MZN": {
+                "symbol": {
+                    "value": "MZN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "metical Mozambique"
+                }
+            },
+            "NAD": {
+                "symbol": {
+                    "value": "NAD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Namibia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "NGN": {
+                "symbol": {
+                    "value": "NGN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "naira Nigeria"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₦"
+                }
+            },
+            "NIC": {
+                "symbol": {
+                    "value": "NIC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Córdoba Nicaragua (1988–1991)"
+                }
+            },
+            "NIO": {
+                "symbol": {
+                    "value": "NIO",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "córdoba Nicaragua"
+                },
+                "symbol-alt-narrow": {
+                    "value": "C$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "NLG": {
+                "symbol": {
+                    "value": "NLG",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Guilder Hà Lan"
+                }
+            },
+            "NOK": {
+                "symbol": {
+                    "value": "NOK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "krone Na Uy"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "NPR": {
+                "symbol": {
+                    "value": "NPR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rupee Nepal"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "NZD": {
+                "symbol": {
+                    "value": "NZ$",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la New Zealand"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "OMR": {
+                "symbol": {
+                    "value": "OMR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rial Oman"
+                },
+                "digits": 3
+            },
+            "PAB": {
+                "symbol": {
+                    "value": "PAB",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "balboa Panama"
+                }
+            },
+            "PEI": {
+                "symbol": {
+                    "value": "PEI",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Inti Peru"
+                }
+            },
+            "PEN": {
+                "symbol": {
+                    "value": "PEN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "sol Peru"
+                }
+            },
+            "PES": {
+                "symbol": {
+                    "value": "PES",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Sol Peru (1863–1965)"
+                }
+            },
+            "PGK": {
+                "symbol": {
+                    "value": "PGK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kina Papua New Guinea"
+                }
+            },
+            "PHP": {
+                "symbol": {
+                    "value": "PHP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Philipin"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₱"
+                }
+            },
+            "PKR": {
+                "symbol": {
+                    "value": "PKR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rupee Pakistan"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Rs",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "PLN": {
+                "symbol": {
+                    "value": "PLN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "zloty Ba Lan"
+                },
+                "symbol-alt-narrow": {
+                    "value": "zł",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "PLZ": {
+                "symbol": {
+                    "value": "PLZ",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Zloty Ba Lan (1950–1995)"
+                }
+            },
+            "PTE": {
+                "symbol": {
+                    "value": "PTE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Escudo Bồ Đào Nha"
+                }
+            },
+            "PYG": {
+                "symbol": {
+                    "value": "PYG",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "guarani Paraguay"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₲"
+                }
+            },
+            "QAR": {
+                "symbol": {
+                    "value": "QAR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rial Qatar"
+                }
+            },
+            "RHD": {
+                "symbol": {
+                    "value": "RHD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Đô la Rhode"
+                }
+            },
+            "ROL": {
+                "symbol": {
+                    "value": "ROL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Leu Rumani (1952–2006)"
+                }
+            },
+            "RON": {
+                "symbol": {
+                    "value": "RON",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "leu Romania"
+                },
+                "symbol-alt-narrow": {
+                    "value": "lei",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "RSD": {
+                "symbol": {
+                    "value": "RSD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Serbia"
+                },
+                "digits": 0
+            },
+            "RUB": {
+                "symbol": {
+                    "value": "RUB",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rúp Nga"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₽"
+                }
+            },
+            "RUR": {
+                "symbol": {
+                    "value": "RUR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Rúp Nga (1991–1998)"
+                }
+            },
+            "RWF": {
+                "symbol": {
+                    "value": "RWF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc Rwanda"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "RF",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "SAR": {
+                "symbol": {
+                    "value": "SAR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "riyal Ả Rập Xê-út"
+                }
+            },
+            "SBD": {
+                "symbol": {
+                    "value": "SBD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Quần đảo Solomon"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SCR": {
+                "symbol": {
+                    "value": "SCR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rupee Seychelles"
+                }
+            },
+            "SDD": {
+                "symbol": {
+                    "value": "SDD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar Sudan (1992–2007)"
+                }
+            },
+            "SDG": {
+                "symbol": {
+                    "value": "SDG",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bảng Sudan"
+                }
+            },
+            "SDP": {
+                "symbol": {
+                    "value": "SDP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Bảng Sudan (1957–1998)"
+                }
+            },
+            "SEK": {
+                "symbol": {
+                    "value": "SEK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "krona Thụy Điển"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "kr",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "SGD": {
+                "symbol": {
+                    "value": "SGD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Singapore"
+                },
+                "symbol-alt-narrow": {
+                    "value": "S$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "SHP": {
+                "symbol": {
+                    "value": "SHP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bảng St. Helena"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SIT": {
+                "symbol": {
+                    "value": "SIT",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Tôla Xlôvênia"
+                }
+            },
+            "SKK": {
+                "symbol": {
+                    "value": "SKK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Cuaron Xlôvác"
+                }
+            },
+            "SLE": {
+                "symbol": {
+                    "value": "SLE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "leone Sierra Leone"
+                },
+                "digits": 2
+            },
+            "SLL": {
+                "symbol": {
+                    "value": "SLL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "leone Sierra Leone (1964—2022)"
+                },
+                "digits": 0
+            },
+            "SOS": {
+                "symbol": {
+                    "value": "SOS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "shilling Somali"
+                },
+                "digits": 0
+            },
+            "SRD": {
+                "symbol": {
+                    "value": "SRD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Suriname"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "SRG": {
+                "symbol": {
+                    "value": "SRG",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Guilder Surinam"
+                }
+            },
+            "SSP": {
+                "symbol": {
+                    "value": "SSP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bảng Nam Sudan"
+                },
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "STD": {
+                "symbol": {
+                    "value": "STD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Dobra São Tomé và Príncipe (1977–2017)"
+                },
+                "digits": 0
+            },
+            "STN": {
+                "symbol": {
+                    "value": "STN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dobra São Tomé và Príncipe"
+                },
+                "symbol-alt-narrow": {
+                    "value": "Db",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "SUR": {
+                "symbol": {
+                    "value": "SUR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Rúp Sô viết"
+                }
+            },
+            "SVC": {
+                "symbol": {
+                    "value": "SVC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Colón El Salvador"
+                }
+            },
+            "SYP": {
+                "symbol": {
+                    "value": "SYP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bảng Syria"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "£"
+                }
+            },
+            "SZL": {
+                "symbol": {
+                    "value": "SZL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lilangeni Swaziland"
+                }
+            },
+            "THB": {
+                "symbol": {
+                    "value": "฿"
+                },
+                "displayName": {
+                    "other": "bạt Thái Lan"
+                },
+                "symbol-alt-narrow": {
+                    "value": "฿"
+                }
+            },
+            "TJR": {
+                "symbol": {
+                    "value": "TJR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Rúp Tajikistan"
+                }
+            },
+            "TJS": {
+                "symbol": {
+                    "value": "TJS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "somoni Tajikistan"
+                }
+            },
+            "TMM": {
+                "symbol": {
+                    "value": "TMM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Manat Turkmenistan (1993–2009)"
+                },
+                "digits": 0
+            },
+            "TMT": {
+                "symbol": {
+                    "value": "TMT",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "manat Turkmenistan"
+                }
+            },
+            "TND": {
+                "symbol": {
+                    "value": "TND",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "dinar Tunisia"
+                },
+                "digits": 3
+            },
+            "TOP": {
+                "symbol": {
+                    "value": "TOP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "paʻanga Tonga"
+                },
+                "symbol-alt-narrow": {
+                    "value": "T$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "TPE": {
+                "symbol": {
+                    "value": "TPE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Escudo Timor"
+                }
+            },
+            "TRL": {
+                "symbol": {
+                    "value": "TRL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "lia Thổ Nhĩ Kỳ (1922–2005)"
+                },
+                "digits": 0
+            },
+            "TRY": {
+                "symbol": {
+                    "value": "TRY",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Lia Thổ Nhĩ Kỳ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₺"
+                }
+            },
+            "TTD": {
+                "symbol": {
+                    "value": "TTD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Trinidad và Tobago"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "TWD": {
+                "symbol": {
+                    "value": "NT$",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Đài Loan mới"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "NT$",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "TZS": {
+                "symbol": {
+                    "value": "TZS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "shilling Tanzania"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "UAH": {
+                "symbol": {
+                    "value": "UAH",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "hryvnia Ukraina"
+                },
+                "symbol-alt-narrow": {
+                    "value": "₴"
+                }
+            },
+            "UAK": {
+                "symbol": {
+                    "value": "UAK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Karbovanets Ucraina"
+                }
+            },
+            "UGS": {
+                "symbol": {
+                    "value": "UGS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Shilling Uganda (1966–1987)"
+                }
+            },
+            "UGX": {
+                "symbol": {
+                    "value": "UGX",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "shilling Uganda"
+                },
+                "digits": 0
+            },
+            "USD": {
+                "symbol": {
+                    "value": "US$",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Mỹ"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "USN": {
+                "symbol": {
+                    "value": "USN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đô la Mỹ (Ngày tiếp theo)"
+                }
+            },
+            "USS": {
+                "symbol": {
+                    "value": "USS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đô la Mỹ (Cùng ngày)"
+                }
+            },
+            "UYI": {
+                "symbol": {
+                    "value": "UYI",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peso Uruguay (Đơn vị Theo chỉ số)"
+                },
+                "digits": 0
+            },
+            "UYP": {
+                "symbol": {
+                    "value": "UYP",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Peso Uruguay (1975–1993)"
+                }
+            },
+            "UYU": {
+                "symbol": {
+                    "value": "UYU",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "peso Uruguay"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "UZS": {
+                "symbol": {
+                    "value": "UZS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "som Uzbekistan"
+                },
+                "digits": 2,
+                "cashDigits": 0
+            },
+            "VEB": {
+                "symbol": {
+                    "value": "VEB",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng bolívar của Venezuela (1871–2008)"
+                }
+            },
+            "VEF": {
+                "symbol": {
+                    "value": "VEF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bolívar Venezuela (2008–2018)"
+                },
+                "digits": 2,
+                "cashDigits": 0,
+                "symbol-alt-narrow": {
+                    "value": "Bs",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "VES": {
+                "symbol": {
+                    "value": "VES",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "bolívar Venezuela"
+                }
+            },
+            "VND": {
+                "symbol": {
+                    "value": "₫"
+                },
+                "displayName": {
+                    "other": "đồng Việt Nam"
+                },
+                "digits": 0,
+                "symbol-alt-narrow": {
+                    "value": "₫"
+                }
+            },
+            "VNN": {
+                "symbol": {
+                    "value": "VNN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Việt Nam (1978–1985)"
+                }
+            },
+            "VUV": {
+                "symbol": {
+                    "value": "VUV",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "vatu Vanuatu"
+                },
+                "digits": 0
+            },
+            "WST": {
+                "symbol": {
+                    "value": "WST",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "tala Samoa"
+                }
+            },
+            "XAF": {
+                "symbol": {
+                    "value": "FCFA",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc CFA Trung Phi"
+                },
+                "digits": 0
+            },
+            "XAG": {
+                "symbol": {
+                    "value": "XAG",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bạc"
+                }
+            },
+            "XAU": {
+                "symbol": {
+                    "value": "XAU",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Vàng"
+                }
+            },
+            "XBA": {
+                "symbol": {
+                    "value": "XBA",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đơn vị Tổng hợp Châu Âu"
+                }
+            },
+            "XBB": {
+                "symbol": {
+                    "value": "XBB",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đơn vị Tiền tệ Châu Âu"
+                }
+            },
+            "XBC": {
+                "symbol": {
+                    "value": "XBC",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đơn vị Kế toán Châu Âu (XBC)"
+                }
+            },
+            "XBD": {
+                "symbol": {
+                    "value": "XBD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đơn vị Kế toán Châu Âu (XBD)"
+                }
+            },
+            "XCD": {
+                "symbol": {
+                    "value": "EC$",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "đô la Đông Caribê"
+                },
+                "symbol-alt-narrow": {
+                    "value": "$"
+                }
+            },
+            "XCG": {
+                "symbol": {
+                    "value": "Cg.",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "XDR": {
+                "symbol": {
+                    "value": "XDR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Quyền Rút vốn Đặc biệt"
+                }
+            },
+            "XEU": {
+                "symbol": {
+                    "value": "XEU",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đơn vị Tiền Châu Âu"
+                }
+            },
+            "XFO": {
+                "symbol": {
+                    "value": "XFO",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng France Pháp Vàng"
+                }
+            },
+            "XFU": {
+                "symbol": {
+                    "value": "XFU",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng UIC-Franc Pháp"
+                }
+            },
+            "XOF": {
+                "symbol": {
+                    "value": "F CFA",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc CFA Tây Phi"
+                },
+                "digits": 0
+            },
+            "XPD": {
+                "symbol": {
+                    "value": "XPD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Paladi"
+                }
+            },
+            "XPF": {
+                "symbol": {
+                    "value": "CFPF",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "franc CFP"
+                },
+                "digits": 0
+            },
+            "XPT": {
+                "symbol": {
+                    "value": "XPT",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Bạch kim"
+                }
+            },
+            "XRE": {
+                "symbol": {
+                    "value": "XRE",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Quỹ RINET"
+                }
+            },
+            "XTS": {
+                "symbol": {
+                    "value": "XTS",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Mã Tiền tệ Kiểm tra"
+                }
+            },
+            "XXX": {
+                "symbol": {
+                    "value": "XXX",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "(tiền tệ chưa biết)"
+                }
+            },
+            "YDD": {
+                "symbol": {
+                    "value": "YDD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar Yemen"
+                }
+            },
+            "YER": {
+                "symbol": {
+                    "value": "YER",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rial Yemen"
+                },
+                "digits": 0
+            },
+            "YUD": {
+                "symbol": {
+                    "value": "YUD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar Nam Tư Xu (1966–1990)"
+                }
+            },
+            "YUM": {
+                "symbol": {
+                    "value": "YUM",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar Nam Tư Mới (1994–2002)"
+                }
+            },
+            "YUN": {
+                "symbol": {
+                    "value": "YUN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar Nam Tư Có thể chuyển đổi (1990–1992)"
+                }
+            },
+            "YUR": {
+                "symbol": {
+                    "value": "YUR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Dinar Nam Tư Tái cơ cấu (1992–1993)"
+                }
+            },
+            "ZAL": {
+                "symbol": {
+                    "value": "ZAL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Rand Nam Phi (tài chính)"
+                }
+            },
+            "ZAR": {
+                "symbol": {
+                    "value": "ZAR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "rand Nam Phi"
+                },
+                "symbol-alt-narrow": {
+                    "value": "R",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "ZMK": {
+                "symbol": {
+                    "value": "ZMK",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng kwacha của Zambia (1968–2012)"
+                },
+                "digits": 0
+            },
+            "ZMW": {
+                "symbol": {
+                    "value": "ZMW",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "kwacha Zambia"
+                },
+                "symbol-alt-narrow": {
+                    "value": "ZK",
+                    "standardUseNoSymbol": 1
+                }
+            },
+            "ZRN": {
+                "symbol": {
+                    "value": "ZRN",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Zaire Mới (1993–1998)"
+                }
+            },
+            "ZRZ": {
+                "symbol": {
+                    "value": "ZRZ",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Zaire (1971–1993)"
+                }
+            },
+            "ZWD": {
+                "symbol": {
+                    "value": "ZWD",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Đô la Zimbabwe (1980–2008)"
+                },
+                "digits": 0
+            },
+            "ZWL": {
+                "symbol": {
+                    "value": "ZWL",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Đô la Zimbabwe (2009)"
+                }
+            },
+            "ZWR": {
+                "symbol": {
+                    "value": "ZWR",
+                    "standardUseNoSymbol": 1
+                },
+                "displayName": {
+                    "other": "Đồng Đô la Zimbabwe (2008)"
+                }
+            }
+        }
+    }
+}

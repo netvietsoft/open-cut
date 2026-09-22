@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xt.retouch.curve.impl.view.InterceptConstraintLayout n0:layout_gravity="bottom" n0:id="@id/parent_container" n0:tag="layout/xt_fragment_color_curve_0" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_horizontal" n0:id="@id/csl_edit_panel_container" n0:tag="binding_1" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="215.0dp" n1:layout_constraintBottom_toTopOf="@id/effect_item"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/color_group_ll" n0:tag="binding_2" n0:layout_width="50.0dp" n0:layout_height="match_parent" n0:layout_marginTop="24.0dp" n0:paddingStart="8.0dp">
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/luma_view" n0:tag="binding_3" n0:layout_width="25.0dp" n0:layout_height="25.0dp" />
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/red_view" n0:tag="binding_4" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_marginTop="10.0dp" />
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/green_view" n0:tag="binding_5" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_marginTop="10.0dp" />
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/blue_view" n0:tag="binding_6" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_marginTop="10.0dp" />
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_oval" n0:tag="binding_7" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_marginTop="10.0dp" />
+        </LinearLayout>
+        <FrameLayout n0:tag="binding_8" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp">
+            <com.xt.retouch.curve.impl.ColorCurvesView n0:layout_gravity="center" n0:id="@id/color_curves_view" n0:layout_width="285.0dp" n0:layout_height="180.0dp" n0:layout_margin="8.0dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/effect_item" n0:tag="binding_9" n0:background="@color/kor" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="120.0dp" n2:layout_constraintBottom_toTopOf="@id/bottom_bar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/effect_item_list" n0:layout_width="wrap_content" n0:layout_height="78.0dp" n0:layout_marginBottom="19.0dp" n2:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bottom_bar" n0:tag="binding_10" n0:background="@color/kor" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070513" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_cancel" n0:padding="4.0dp" n0:layout_width="@dimen/gu" n0:layout_height="@dimen/gu" n0:src="@drawable/r2a" n0:layout_marginStart="4.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_confirm" n0:padding="4.0dp" n0:layout_width="@dimen/gu" n0:layout_height="@dimen/gu" n0:src="@drawable/r2b" n0:layout_marginEnd="4.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="13.0dp" n0:textColor="@color/ktx" n0:gravity="center" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="@dimen/gu" n0:text="@string/rh9" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/csl_tool_bar_container" n0:tag="binding_11" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintBottom_toTopOf="@id/csl_edit_panel_container"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_undo" n0:tag="binding_12" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/r44" n0:layout_marginStart="12.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_redo" n0:tag="binding_13" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/ri4" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toEndOf="@id/iv_undo" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/eyes_up_init" n0:tag="binding_14" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/rsy" n0:layout_marginStart="12.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/eyes_down_init" n0:tag="binding_15" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/rsz" n0:layout_marginStart="12.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/eyes_up" n0:tag="binding_16" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/rsy" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toEndOf="@id/iv_redo" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/eyes_down" n0:tag="binding_17" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/rsz" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toEndOf="@id/iv_redo" />
+        <com.xt.retouch.baseui.view.CompareView n0:id="@id/iv_compare" n0:tag="binding_18" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:src="@drawable/rs9" n0:layout_marginEnd="12.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/test_layout" n0:tag="binding_19" n0:layout_width="match_parent" n0:layout_height="wrap_content" n5:layout_constraintBottom_toTopOf="@id/effect_item"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <Button n0:id="@id/save_click" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:text="Save Preset" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <EditText n0:id="@id/preset_edit" n0:layout_width="0.0dp" n0:layout_height="50.0dp" n5:layout_constraintEnd_toStartOf="@id/use_preset" n5:layout_constraintHorizontal_weight="1.0" n5:layout_constraintStart_toEndOf="@id/save_click" n5:layout_constraintTop_toTopOf="parent" />
+        <Button n0:id="@id/use_preset" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="Apply Preset" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button n0:id="@id/get_curve_template" n0:tag="binding_20" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:text="Fetch Vimo" n6:layout_constraintBottom_toTopOf="@id/test_layout" n6:layout_constraintStart_toStartOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <Button n0:id="@id/get_thumb" n0:tag="binding_21" n0:layout_width="wrap_content" n0:layout_height="50.0dp" n0:text="Thumbnail" n7:layout_constraintBottom_toTopOf="@id/get_curve_template" n7:layout_constraintStart_toStartOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:id="@id/hand_container" n0:layout_width="match_parent" n0:layout_height="110.0dp" n8:layout_constraintBottom_toBottomOf="@id/csl_edit_panel_container"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/guide_hand" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/rnh" n0:layout_marginStart="178.0dp" />
+    </LinearLayout>
+    <TextView n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/toast_container" n0:background="@drawable/rcy" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:layout_marginLeft="107.0dp" n0:layout_marginBottom="9.0dp" n0:text="@string/rhw" n9:layout_constraintBottom_toTopOf="@id/hand_container" n9:layout_constraintStart_toStartOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</com.xt.retouch.curve.impl.view.InterceptConstraintLayout>

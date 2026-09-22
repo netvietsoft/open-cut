@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/push_notification_style_root_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_centerVertical="true"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/notification_background_img" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="fitXY" />
+    <LinearLayout n0:layout_gravity="center_vertical" n0:id="@id/push_inner_layout" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <ImageView n0:id="@id/push_notification_small_icon" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="6.0dp" n0:layout_marginTop="15.0dp" n0:scaleType="centerCrop" />
+        <RelativeLayout n0:layout_gravity="center_vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_toLeftOf="@id/push_notification_small_picture" n0:layout_centerVertical="true" n0:layout_marginStart="8.0dp">
+                <TextView n0:textSize="13.5sp" n0:textStyle="bold" n0:textColor="#131313" n0:ellipsize="end" n0:id="@id/push_notification_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:maxLines="1" />
+                <TextView n0:textSize="13.0sp" n0:textColor="#4e4e4e" n0:ellipsize="end" n0:id="@id/push_notification_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="3.0dp" n0:maxLines="1" />
+            </LinearLayout>
+            <ImageView n0:id="@id/push_notification_small_picture" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_margin="10.0dp" n0:scaleType="centerCrop" n0:layout_centerVertical="true" n0:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

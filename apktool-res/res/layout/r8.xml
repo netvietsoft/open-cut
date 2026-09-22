@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="84.0dp" n0:layout_height="98.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/vSelectBg" n0:background="@drawable/tb" n0:layout_width="80.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ivCover" n0:layout_width="72.0dp" n0:layout_height="72.0dp" n0:layout_marginLeft="4.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="4.0dp" n0:layout_marginHorizontal="4.0dp" n2:actualImageScaleType="fitXY" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:placeholderImage="@drawable/p0h" n2:placeholderImageScaleType="fitXY" n2:roundedCornerRadius="8.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:layout_gravity="center" n0:id="@id/ivPlayIcon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n3:layout_constraintBottom_toBottomOf="@id/ivCover" n3:layout_constraintEnd_toEndOf="@id/ivCover" n3:layout_constraintStart_toStartOf="@id/ivCover" n3:layout_constraintTop_toTopOf="@id/ivCover"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.MarqueeTextView n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tvTitle" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:text="original original original" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n4:layout_constraintEnd_toEndOf="@id/ivCover" n4:layout_constraintStart_toStartOf="@id/ivCover" n4:layout_constraintTop_toBottomOf="@id/ivCover"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/item_downloading" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n5:layout_constraintBottom_toBottomOf="@id/ivCover" n5:layout_constraintEnd_toEndOf="@id/ivCover" n5:layout_constraintStart_toStartOf="@id/ivCover" n5:layout_constraintTop_toTopOf="@id/ivCover" n5:lottie_autoPlay="true" n5:lottie_fileName="lv_loading_s.json" n5:lottie_loop="true"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/item_download_error_retry" n0:background="@drawable/lhb" n0:visibility="gone" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n6:layout_constraintBottom_toBottomOf="@id/ivCover" n6:layout_constraintEnd_toEndOf="@id/ivCover" n6:layout_constraintStart_toStartOf="@id/ivCover" n6:layout_constraintTop_toTopOf="@id/ivCover"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:background="@drawable/lhb" n0:layout_width="24.0dp" n0:layout_height="24.0dp" />
+    </com.vega.ui.state.pressed.PressedStateFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

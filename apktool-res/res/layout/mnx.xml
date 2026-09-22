@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_draft_manager_popwindow_0" n0:background="@drawable/APKTOOL_RENAMED_0x7f083134" n0:layout_width="match_parent" n0:layout_height="90.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/select_all_draft" n0:layout_width="171.5dp" n0:layout_height="wrap_content" n0:layout_marginStart="@dimen/h2" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+        <ImageView n0:gravity="start" n0:id="@id/select_all" n0:tag="binding_1" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:contentDescription="@string/t1w" n0:layout_marginStart="64.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="10.0sp" n0:textColor="#171816" n0:id="@id/cancel_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="@id/select_all" n1:layout_constraintStart_toStartOf="@id/select_all" n1:layout_constraintTop_toBottomOf="@id/select_all" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/delete_select_draft" n0:tag="binding_2" n0:layout_width="171.5dp" n0:layout_height="wrap_content" n0:layout_marginEnd="@dimen/h2" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toEndOf="@id/select_all_draft" n1:layout_constraintTop_toTopOf="parent">
+        <ImageView n0:id="@id/delete_draft" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/reu" n0:contentDescription="@string/szp" n0:layout_marginStart="64.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="10.0sp" n0:textColor="#171816" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tb7" n1:layout_constraintEnd_toEndOf="@id/delete_draft" n1:layout_constraintStart_toStartOf="@id/delete_draft" n1:layout_constraintTop_toBottomOf="@id/delete_draft" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

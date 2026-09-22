@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/titlebar_root_view" n0:layout_width="match_parent" n0:layout_height="@dimen/bf" n0:minHeight="@dimen/bf"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:layout_gravity="start|center" n0:orientation="horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="6.0dp" n0:layout_marginStart="6.0dp">
+        <com.bytedance.hybrid.spark.view.AutoRTLImageView n0:id="@id/iv_back" n0:padding="10.0dp" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/qss" />
+        <com.bytedance.hybrid.spark.view.AutoRTLImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_close_all" n0:padding="10.0dp" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/qsu" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:layout_gravity="center" n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <TextView n0:textSize="17.0sp" n0:textStyle="bold" n0:ellipsize="end" n0:id="@id/tv_title" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:lines="1" n0:maxEms="9" />
+        <TextView n0:textSize="10.0sp" n0:textStyle="normal" n0:ellipsize="end" n0:id="@id/tv_sub_title" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:lines="1" n0:maxEms="15" />
+    </LinearLayout>
+    <FrameLayout n0:layout_gravity="end|center" n0:id="@id/title_bar_right_layout" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginStart="6.0dp" n0:layout_marginEnd="6.0dp">
+        <TextView n0:textColor="@color/de" n0:gravity="center" n0:id="@id/btn_nav" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:textAllCaps="false" />
+    </FrameLayout>
+</FrameLayout>

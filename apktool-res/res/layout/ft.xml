@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/tips_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="end" n0:id="@id/tips_image" n0:layout_width="200.0dp" n0:layout_height="200.0dp" n0:src="@drawable/my3" />
+    <com.vega.theme.text.VegaTextView n0:id="@id/tvGuideTips" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+</LinearLayout>

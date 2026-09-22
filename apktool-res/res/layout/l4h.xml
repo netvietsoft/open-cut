@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/rich_tag" n0:background="@drawable/APKTOOL_RENAMED_0x7f082ba2" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:paddingStart="5.0dp" n0:paddingEnd="5.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.bytedance.tux.input.TuxTextView n0:textSize="10.0sp" n0:textColor="#ffffffff" n0:id="@id/rich_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_toRightOf="@id/rich_iv" n0:layout_centerVertical="true" n0:fontFamily="Proxima Nova" n1:kg9="@integer/APKTOOL_RENAMED_0x7f0a001e"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/rich_iv" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:orientation="vertical" n0:id="@id/itemRoot" n0:layout_width="56.0dp" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.cutsameedit.view.MaterialSortImgContainer n0:layout_width="56.0dp" n0:layout_height="72.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="16.0dp" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f060634" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cardView" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" n1:placeholderImage="@drawable/peu" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:layout_gravity="center|bottom" n0:id="@id/tvTime" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:maxLines="2" n1:k1i="bold" />
+        <TextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tvIndexLabel" n0:background="@drawable/k74" n0:layout_width="15.0dp" n0:layout_height="15.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginStart="4.0dp" />
+    </com.vega.cutsameedit.view.MaterialSortImgContainer>
+</FrameLayout>

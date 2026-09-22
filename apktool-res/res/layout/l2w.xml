@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/platform_container" n0:background="@drawable/llr" n0:padding="6.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/platform_tiktok" n0:background="@drawable/llp" n0:focusable="true" n0:clickable="true" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginEnd="16.0dp">
+        <ImageView n0:layout_gravity="center" n0:id="@id/icon_tiktok" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/o9a" n0:scaleType="centerInside" n1:kd8="@color/APKTOOL_RENAMED_0x7f060487"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/platform_instagram" n0:background="@drawable/llp" n0:focusable="true" n0:clickable="true" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:layout_marginEnd="16.0dp">
+        <ImageView n0:layout_gravity="center" n0:id="@id/icon_instagram" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/n93" n0:scaleType="centerInside" n2:kd8="@color/APKTOOL_RENAMED_0x7f060487"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout n0:id="@id/platform_local" n0:background="@drawable/llp" n0:focusable="true" n0:clickable="true" n0:layout_width="32.0dp" n0:layout_height="32.0dp">
+        <ImageView n0:layout_gravity="center" n0:id="@id/icon_local" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/nay" n0:scaleType="centerInside" n3:kd8="@color/APKTOOL_RENAMED_0x7f060487"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.Group n0:id="@id/share_ins_group" n0:visibility="visible" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n4:constraint_referenced_ids="platform_instagram"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

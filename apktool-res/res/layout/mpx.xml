@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_fragment_illuminate_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.illuminate.IlluminateCircleView n0:id="@id/circle_view" n0:tag="binding_1" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/layout_illuminate_slide" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toTopOf="@id/effect_list_container" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" layout="@layout/mx3"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:tag="binding_2" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n0:layout_marginEnd="8.0dp" n3:layout_constraintBottom_toTopOf="@id/layout_illuminate_slide" n3:layout_constraintEnd_toEndOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.CompareView n0:id="@id/compare" n0:tag="binding_3" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/rs9" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/effect_list_container" n0:tag="binding_4" n0:background="@color/kor" n0:layout_width="match_parent" n0:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/item_list" n0:tag="binding_5" n0:layout_width="match_parent" n0:layout_height="76.0dp" n4:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n4:layout_constraintBottom_toBottomOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/group_list" n0:tag="binding_6" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginStart="16.0dp" n4:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" n4:layout_constraintBottom_toTopOf="@id/item_list" />
+        <View n0:tag="binding_7" n0:layout_width="match_parent" n0:layout_height="24.0dp" n4:layout_constraintBottom_toTopOf="@id/item_list" />
+        <include n0:layout_width="72.0dp" n0:layout_height="72.0dp" n0:layout_marginBottom="2.0dp" n0:layout_marginStart="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintStart_toStartOf="parent" layout="@layout/msh" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

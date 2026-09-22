@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ScrollView n0:id="@id/contentLayout" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never">
+        <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/opo" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="500" n1:k1i="medium"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/modelDescLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp">
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mn" n0:ellipsize="end" n0:id="@id/modelDescText" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="1" n0:layout_weight="1.0" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="400" n2:k1i="regular"
+                  xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/knt" n0:id="@id/modelDescMoreText" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ooa" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="400" n3:k1i="regular"
+                  xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/modelListView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:overScrollMode="never" n0:requiresFadingEdge="horizontal" />
+            <LinearLayout n0:orientation="vertical" n0:id="@id/generationModeLayout" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:text="@string/vf" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="500" n4:k1i="medium"
+                  xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mn" n0:id="@id/generationModeDescText" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="400" n5:k1i="regular"
+                  xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                <LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp">
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/btnReference" n0:background="@drawable/k1j" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n0:text="@string/vj" n0:layout_weight="1.0" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="500" n6:k1i="medium"
+                      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+                    <View n0:layout_width="8.0dp" n0:layout_height="1.0dp" />
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/btnKeyframe" n0:background="@drawable/k1j" n0:layout_width="0.0dp" n0:layout_height="40.0dp" n0:text="@string/vh" n0:layout_weight="1.0" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="500" n7:k1i="medium"
+                      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n0:orientation="vertical" n0:id="@id/durationLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp">
+                    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:id="@id/durationTitleTv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/opk" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="500" n8:k1i="medium"
+                      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+                    <ImageView n0:id="@id/durationDescribeIv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/na4" n0:layout_marginStart="2.0dp" />
+                    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/durationBusinessMark" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="4.0dp" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/durationListView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:overScrollMode="never" n0:requiresFadingEdge="horizontal|vertical" />
+                <FrameLayout n0:id="@id/durationSliderContainer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp">
+                    <com.vege.genai.genneatevideo.view.DurationSliderView n0:id="@id/durationSliderView" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:paddingStart="5.0dp" n0:paddingEnd="5.0dp" n9:APKTOOL_RENAMED_0x7f04046d="false" n9:APKTOOL_RENAMED_0x7f04049f="false" n9:APKTOOL_RENAMED_0x7f0404f1="true" n9:APKTOOL_RENAMED_0x7f040544="#ffffff" n9:APKTOOL_RENAMED_0x7f040549="6.0dp" n9:APKTOOL_RENAMED_0x7f04054a="0.0dp" n9:APKTOOL_RENAMED_0x7f0405b7="true" n9:kko="#00cae0" n9:kkt="#1ae5ecff" n9:kkx="4.0dp" n9:ksr="4.0dp"
+                      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+                    <FrameLayout n0:id="@id/durationTickContainer" n0:layout_width="match_parent" n0:layout_height="20.0dp" n0:layout_marginTop="21.0dp" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout n0:orientation="vertical" n0:id="@id/ratioLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:text="@string/opr" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="500" n10:k1i="medium"
+                  xmlns:n10="http://schemas.android.com/apk/res-auto" />
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/ratioListView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:overScrollMode="never" n0:requiresFadingEdge="horizontal|vertical" />
+            </LinearLayout>
+            <LinearLayout n0:orientation="vertical" n0:id="@id/resolutionLayout" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#fafbff" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/odq" n0:fontFamily="CapCut Sans Text" n0:textFontWeight="500" n11:k1i="medium"
+                  xmlns:n11="http://schemas.android.com/apk/res-auto" />
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/resolutionListView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:overScrollMode="never" n0:requiresFadingEdge="horizontal|vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/loadingLayout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/progressLoading" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:scaleType="centerCrop" n12:lottie_autoPlay="true" n12:lottie_fileName="cc_loading_w.json" n12:lottie_loop="true"
+          xmlns:n12="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/mu" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/mz0" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/failLayout" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <ImageView n0:layout_width="57.0dp" n0:layout_height="57.0dp" n0:src="@drawable/mht" n13:layout_constraintHorizontal_chainStyle="packed"
+          xmlns:n13="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/mu" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/oc2" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="@color/mw" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="@string/oc0" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/mu" n0:id="@id/retryText" n0:background="@drawable/k_e" n0:paddingLeft="12.0dp" n0:paddingTop="8.0dp" n0:paddingRight="12.0dp" n0:paddingBottom="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/oc1" n0:paddingHorizontal="12.0dp" n0:paddingVertical="8.0dp" />
+    </LinearLayout>
+</FrameLayout>

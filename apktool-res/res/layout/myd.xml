@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_middle_aigc_task_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/main_layout" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" layout="@layout/mrp" />
+    <include n0:id="@id/tip_layout" n0:layout_width="match_parent" n0:layout_height="match_parent" layout="@layout/mrq" />
+</androidx.constraintlayout.widget.ConstraintLayout>

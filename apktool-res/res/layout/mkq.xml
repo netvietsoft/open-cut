@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/groupLinkMaterial" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/mko" />
+    <com.vega.theme.text.VegaTextView n0:id="@id/uploadMaterialTitle" n0:layout_marginTop="18.0dp" n0:text="@string/mf" n0:layout_marginStart="15.0dp" n1:layout_constraintBottom_toTopOf="@id/uploadMaterialSubtitle" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed" n1:layout_goneMarginBottom="18.0dp" style="@style/APKTOOL_RENAMED_0x7f130534"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_e" n0:id="@id/uploadMaterialSubtitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="18.0dp" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="50.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toBottomOf="@id/uploadMaterialTitle"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="end|center" n0:id="@id/materialUploadedTv" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/lxf" n0:maxLines="1" n0:layout_marginStart="12.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/uploadMaterialArrow" n3:layout_constraintStart_toEndOf="@id/uploadMaterialTitle" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/uploadMaterialArrow" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/qz7" n0:layout_marginEnd="6.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

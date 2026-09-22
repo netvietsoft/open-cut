@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_gravity="bottom" n0:id="@id/template_preview_panel" n0:background="#ff151517" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/line_bottom" n0:background="@color/a3" n0:layout_width="0.0dp" n0:layout_height="0.5dp" n0:layout_marginBottom="66.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/re_preview_list" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:overScrollMode="never" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintBottom_toTopOf="@id/bn_regenerate" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/bn_regenerate" n0:background="@drawable/knr" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginBottom="16.0dp" n0:paddingStart="8.0dp" n0:paddingEnd="10.0dp" n0:layout_marginStart="16.0dp" n3:layout_constraintBottom_toTopOf="@id/line_bottom" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/n57" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ml" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o27" n0:layout_marginStart="4.0dp" n3:k1i="medium" />
+    </LinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/bn_edit_prompt" n0:background="@drawable/knr" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:layout_marginBottom="16.0dp" n0:paddingStart="8.0dp" n0:paddingEnd="10.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toTopOf="@id/line_bottom" n4:layout_constraintEnd_toEndOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/n56" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ml" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o2f" n0:layout_marginStart="4.0dp" n4:k1i="medium" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panel_detail_container" n0:background="@color/er" n0:layout_width="match_parent" n0:layout_height="66.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.AlphaButton n0:id="@id/bn_cancel" n0:padding="12.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/n7c" n0:layout_marginStart="12.0dp" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/ww" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="18.0dp" n0:text="@string/o25" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.AlphaButton n0:id="@id/bn_apply" n0:padding="12.0dp" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/n7d" n0:layout_marginEnd="12.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

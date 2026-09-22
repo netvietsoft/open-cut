@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xt.retouch.baseui.view.InterceptConstraintLayout n0:orientation="vertical" n0:id="@id/template_container" n0:tag="layout/xt_layout_template_component_v0_0" n0:background="@color/kor" n0:layout_width="match_parent" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f07045e"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/ban_icon" n0:tag="binding_1" n0:layout_width="@dimen/APKTOOL_RENAMED_0x7f070518" n0:layout_height="@dimen/APKTOOL_RENAMED_0x7f070518" n0:layout_marginLeft="8.0dp" n0:src="@drawable/raa" n1:layout_constraintBottom_toBottomOf="@id/group_list" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="@id/group_list"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/group_list" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:overScrollMode="never" n0:layout_marginEnd="10.0dp" n2:layout_constraintBottom_toTopOf="@id/item_list" n2:layout_constraintLeft_toRightOf="@id/ban_icon" n2:layout_constraintRight_toRightOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="@drawable/r7e" n0:layout_width="12.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="@id/group_list" n3:layout_constraintStart_toStartOf="@id/group_list" n3:layout_constraintTop_toTopOf="@id/group_list"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/feedImageContainer" n0:tag="binding_2" n0:background="#00000000" n0:layout_width="wrap_content" n0:layout_height="0.0dp" n0:translationZ="2.0dp" n4:layout_constraintBottom_toBottomOf="@id/item_list" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintTop_toBottomOf="@id/group_list"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <View n0:background="@color/kor" n0:layout_width="44.0dp" n0:layout_height="match_parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/entryImageFloat" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginTop="8.0dp" n0:src="@drawable/r3z" n0:scaleType="centerCrop" n0:layout_marginStart="2.0dp" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="10.0dp" n0:textColor="@color/ktx" n0:gravity="center" n0:layout_width="44.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:text="@string/ts6" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" />
+        <View n0:id="@id/mask" n0:background="@drawable/q6g" n0:layout_width="12.0dp" n0:layout_height="match_parent" n0:layout_marginStart="44.0dp" n0:translationZ="2.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/item_list" n0:layout_width="wrap_content" n0:layout_height="71.0dp" n0:layout_marginBottom="3.0dp" n0:overScrollMode="never" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintLeft_toLeftOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/template_network_error" n0:tag="binding_3" n0:background="#000000" n0:layout_width="62.0dp" n0:layout_height="0.0dp" n6:layout_constraintBottom_toBottomOf="@id/item_list" n6:layout_constraintLeft_toRightOf="@id/item_list" n6:layout_constraintTop_toTopOf="@id/item_list"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.LottieAnimationView n0:id="@id/loadingAnimation" n0:tag="binding_4" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintLeft_toLeftOf="parent" n6:layout_constraintRight_toRightOf="parent" n6:layout_constraintTop_toTopOf="parent" n6:lottie_fileName="loading_white.json" n6:lottie_loop="true" />
+        <ImageView n0:tag="binding_5" n0:layout_width="45.0dp" n0:layout_height="wrap_content" n0:src="@drawable/rae" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintLeft_toLeftOf="parent" n6:layout_constraintRight_toRightOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.xt.retouch.baseui.view.InterceptConstraintLayout>

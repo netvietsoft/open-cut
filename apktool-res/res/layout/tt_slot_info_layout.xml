@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="#fff" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:background="@drawable/tt_mediation_card_bg" n0:padding="15.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="4.0dp">
+        <TextView n0:textSize="13.0sp" n0:textColor="@color/tt_color_999" n0:id="@id/detail" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q3v" />
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_333" n0:id="@id/slot_id_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp" n0:text="@string/q3w" n0:layout_below="@id/detail" />
+        <TextView n0:textSize="13.0sp" n0:textColor="@color/tt_color_666" n0:gravity="center" n0:id="@id/slot_id" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginTop="2.0dp" n0:layout_below="@id/slot_id_info" />
+        <TextView n0:textSize="11.0sp" n0:textColor="#fff" n0:gravity="center" n0:id="@id/bidding_ad" n0:background="@drawable/tt_rit_bidding_bg_shape" n0:visibility="gone" n0:layout_width="40.0dp" n0:layout_height="20.0dp" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginBottom="12.0dp" n0:text="Bidding" n0:layout_toRightOf="@id/slot_id" n0:layout_below="@id/slot_id_info" />
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_333" n0:id="@id/type_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp" n0:text="Ad Type" n0:layout_below="@id/slot_id" />
+        <TextView n0:textSize="13.0sp" n0:textColor="@color/tt_color_666" n0:id="@id/ad_type" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_below="@id/type_info" />
+        <TextView n0:textSize="13.0sp" n0:textColor="@color/tt_color_666" n0:id="@id/ad_subtype" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_below="@id/type_info" n0:layout_alignParentEnd="true" />
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_333" n0:id="@id/adn_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp" n0:text="adn" n0:layout_below="@id/ad_type" />
+        <ImageView n0:id="@id/adn_icon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="4.0dp" n0:src="@mipmap/tt_icon_pangle" n0:layout_below="@id/adn_info" />
+        <TextView n0:textSize="13.0sp" n0:textColor="@color/tt_color_666" n0:id="@id/adn_type" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="4.0dp" n0:layout_toRightOf="@id/adn_icon" n0:layout_below="@id/adn_info" />
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_333" n0:id="@id/render_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="18.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1231f4" n0:layout_below="@id/adn_type" />
+        <TextView n0:textSize="13.0sp" n0:textColor="@color/tt_color_666" n0:id="@id/render_type" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginTop="4.0dp" n0:layout_below="@id/render_info" />
+        <TextView n0:textSize="13.0sp" n0:textColor="#338aff" n0:id="@id/render_type_edit" n0:padding="4.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="14.0dp" n0:layout_marginRight="8.0dp" n0:text="Edit" n0:layout_below="@id/adn_type" n0:layout_alignParentRight="true" />
+        <RelativeLayout n0:id="@id/orientation_layout" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="14.0dp" n0:layout_below="@id/render_type">
+            <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_333" n0:id="@id/orientation_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="ad oritation" />
+            <TextView n0:textSize="13.0sp" n0:textColor="@color/tt_color_666" n0:id="@id/orientation_type" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginTop="4.0dp" n0:layout_below="@id/orientation_info" />
+            <TextView n0:textSize="13.0sp" n0:textColor="#338aff" n0:id="@id/orientation_type_edit" n0:padding="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginRight="8.0dp" n0:text="edit" n0:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_999" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="8.0dp" n0:text="Ad Test" />
+    <RelativeLayout n0:background="@drawable/tt_mediation_card_bg" n0:padding="15.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="8.0dp">
+        <View n0:id="@id/space_top" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="12.0sp" />
+        <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/tt_color_333" n0:id="@id/ad_load_title" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:text="You have not loaded any ads" n0:layout_below="@id/space_top" n0:layout_centerHorizontal="true" />
+        <TextView n0:textSize="13.0sp" n0:textColor="@color/tt_color_999" n0:id="@id/ad_load_desc" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="Please Confirm access right sdk and check slot id" n0:layout_below="@id/ad_load_title" n0:layout_centerHorizontal="true" />
+        <TextView n0:textSize="14.0sp" n0:textColor="#fff" n0:gravity="center" n0:id="@id/ad_load_btn" n0:background="@drawable/tt_ad_load_btn_bg_shape" n0:visibility="gone" n0:layout_width="120.0dp" n0:layout_height="38.0dp" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="2.0dp" n0:text="loading ad" n0:layout_below="@id/ad_load_desc" n0:layout_centerHorizontal="true" />
+        <View n0:id="@id/space_bottom" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="12.0sp" n0:layout_below="@id/ad_load_btn" />
+        <LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true">
+            <ProgressBar n0:layout_gravity="center_horizontal" n0:id="@id/progress_bar" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_centerHorizontal="true" />
+            <TextView n0:textSize="18.0sp" n0:textColor="#338aff" n0:layout_gravity="center_horizontal" n0:id="@id/progress_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="loading..." n0:layout_below="@id/progress_bar" n0:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout n0:layout_gravity="center" n0:id="@id/banner_container" n0:background="#fff" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" />
+    <FrameLayout n0:layout_gravity="center" n0:id="@id/feed_container" n0:background="#fff" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" />
+    <FrameLayout n0:layout_gravity="center" n0:id="@id/draw_container" n0:background="#fff" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" />
+    <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_999" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginTop="6.0dp" n0:text="realtime callback" />
+</LinearLayout>

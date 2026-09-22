@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="70.0dp" n0:minWidth="60.0dp" n0:paddingStart="4.0dp" n0:paddingEnd="4.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/mask" n0:background="@drawable/pxq" n0:visibility="gone" n0:layout_width="@dimen/pj" n0:layout_height="@dimen/ph" n0:layout_marginTop="@dimen/pi" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/ivIcon" n0:layout_width="@dimen/pj" n0:layout_height="@dimen/ph" n0:layout_marginTop="@dimen/pi" n2:APKTOOL_RENAMED_0x7f040448="0.2" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginBottom="3.0dp" n0:layout_marginStart="3.0dp" n3:layout_constraintBottom_toBottomOf="@id/ivIcon" n3:layout_constraintStart_toStartOf="@id/ivIcon"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/vip_group" n0:layout_width="48.0dp" n0:layout_height="14.0dp" n0:layout_marginBottom="18.0dp" n0:layout_marginStart="12.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent">
+            <View n0:id="@id/divider" n0:layout_width="12.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" />
+            <androidx.appcompat.widget.AppCompatImageView n0:id="@id/badgeIcon" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="@id/divider" n3:layout_constraintStart_toEndOf="@id/divider" />
+            <com.vega.ui.business.VipBadgeImageView n0:id="@id/iv_vip_flag" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="12.0dp" n0:adjustViewBounds="true" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="@id/divider" n3:layout_constraintStart_toEndOf="@id/divider" n3:k14="edit" />
+            <com.vega.ui.business.BusinessMarkViewWrapper n0:id="@id/vip_mark_container" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="5.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="9.0sp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/multi_choice_count" n0:background="@drawable/ml7" n0:visibility="gone" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:textAlignment="center" n0:layout_marginEnd="5.0dp" n4:layout_constraintBottom_toBottomOf="@id/ivIcon" n4:layout_constraintEnd_toEndOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/ivIcon" n5:k2c="true"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:gravity="center|top" n0:id="@id/ttvTitle" n0:paddingTop="@dimen/p0" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="72.0dp" n0:minWidth="50.0dp" n0:maxLines="2" n0:textDirection="locale" n0:breakStrategy="balanced" n5:APKTOOL_RENAMED_0x7f040448="0.2" n5:k1i="medium" />
+    </com.vega.ui.TextWordAdaptLayout>
+    <View n0:id="@id/dock_red_dot" n0:background="@drawable/ke7" n0:layout_width="4.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginRight="2.0dp" n6:layout_constraintRight_toRightOf="@id/ivIcon" n6:layout_constraintTop_toTopOf="@id/ivIcon"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/dock_yellow_dot" n0:background="@drawable/ke8" n0:visibility="gone" n0:layout_width="4.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginRight="2.0dp" n7:layout_constraintRight_toRightOf="@id/ivIcon" n7:layout_constraintTop_toTopOf="@id/ivIcon"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/space_stub" n0:layout_width="5.0dp" n0:layout_height="1.0dp" n0:layout_marginBottom="4.5dp" n8:layout_constraintBottom_toTopOf="@id/ivIcon" n8:layout_constraintStart_toEndOf="@id/ivIcon"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/dock_music_copyright_risk" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/oot" n9:layout_constraintRight_toRightOf="@id/space_stub" n9:layout_constraintTop_toTopOf="@id/space_stub"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TipsViewRoot n0:id="@id/titleTips" n0:clipChildren="false" n0:layout_width="44.0dp" n0:layout_height="30.0dp" n10:layout_constraintBottom_toBottomOf="@id/ivIcon" n10:layout_constraintEnd_toEndOf="parent" n10:layout_constraintStart_toStartOf="parent" n10:APKTOOL_RENAMED_0x7f040986="true" n10:kd_="true" n10:kel="12.0dp" n10:kem="@layout/jj" n10:kep="-8.0dp" n10:keq="-2.0dp" n10:kev="20.0dp"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

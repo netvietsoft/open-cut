@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/root_view" n0:background="#0a0a0a" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/loading_animation" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n1:lottie_autoPlay="true" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/loading_msg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:maxLines="1" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#66e5e9fa" n0:ellipsize="end" n0:gravity="center_horizontal" n0:id="@id/loading_tip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:maxLines="2" n0:minLines="2" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/btn_minimize" n0:background="@drawable/ksg" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/nnr" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/btn_cancel" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:minWidth="116.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" />
+    <ImageView n0:id="@id/error_icon" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n0:src="@drawable/qzo" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#66ffffff" n0:gravity="center" n0:id="@id/error_msg" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/nnw" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/btn_retry" n0:background="@drawable/ksg" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/nnx" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" />
+</LinearLayout>

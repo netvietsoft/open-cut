@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/transfer_container" n0:layout_width="40.0dp" n0:layout_height="44.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.state.pressed.PressedStateImageView n0:layout_gravity="start|center" n0:id="@id/iv_transfer" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082567" n0:scaleType="centerInside" />
+    <com.vega.property.optional.ui.common.view.PropertyBadgeView n0:id="@id/cbv_badge" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginStart="14.0dp" n1:b1="#ff303d"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

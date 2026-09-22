@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_graffiti_pen_text_style_text_fragment_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ScrollView n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panel_container" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <LinearLayout n0:orientation="horizontal" n0:id="@id/textPenColorSelectLayout" n0:background="@color/kot" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f070533" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto">
+                <com.xt.retouch.edit.base.view.ColorSelectViewForPanel n0:id="@id/textPenPickColorView" n0:layout_width="wrap_content" n0:layout_height="match_parent" />
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/textPenColorList" n0:fadingEdgeLength="10.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:overScrollMode="never" n0:requiresFadingEdge="horizontal" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center_vertical" n0:id="@id/font_size_container" n0:layout_width="match_parent" n0:layout_height="45.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/textPenColorSelectLayout"
+              xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kwt" n0:state_selected="true" n0:gravity="start" n0:id="@id/font_size_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="@dimen/APKTOOL_RENAMED_0x7f070546" n0:text="@string/t39" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f070533" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" />
+                <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/font_size_slider" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" n2:APKTOOL_RENAMED_0x7f04043d="1" n2:kko="@color/kta" n2:kkt="@color/ktz" n2:APKTOOL_RENAMED_0x7f0406dd="100" n2:kn4="1" n2:kte="@string/APKTOOL_RENAMED_0x7f12447c" n2:kar="2" />
+            </LinearLayout>
+            <LinearLayout n0:gravity="center_vertical" n0:id="@id/transparency_container" n0:layout_width="match_parent" n0:layout_height="45.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/font_size_container"
+              xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kwt" n0:state_selected="true" n0:gravity="start" n0:id="@id/transparency_label" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="@dimen/APKTOOL_RENAMED_0x7f070546" n0:text="@string/txy" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f070533" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" />
+                <com.xt.retouch.edit.base.view.EditSliderView n0:id="@id/transparency_slider" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" n3:APKTOOL_RENAMED_0x7f04043d="100" n3:kko="@color/kta" n3:kkt="@color/ktz" n3:APKTOOL_RENAMED_0x7f0406dd="100" n3:kn4="0" n3:kte="@string/APKTOOL_RENAMED_0x7f12447c" n3:kar="2" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/bold_container" n0:layout_width="match_parent" n0:layout_height="45.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/transparency_container"
+              xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <TextView n0:textSize="12.0dp" n0:textColor="@color/kwt" n0:state_selected="true" n0:gravity="center_vertical" n0:id="@id/bold_label" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:minWidth="@dimen/APKTOOL_RENAMED_0x7f070546" n0:text="@string/APKTOOL_RENAMED_0x7f12449c" n0:layout_marginStart="@dimen/APKTOOL_RENAMED_0x7f070533" n0:layout_marginEnd="@dimen/APKTOOL_RENAMED_0x7f070533" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+                <Switch n0:layout_gravity="center_vertical" n0:id="@id/bold_switch" n0:layout_width="44.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="10.5dp" n0:checked="false" n0:thumb="@drawable/r-z" n0:track="@drawable/r-b" n0:layout_marginEnd="23.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

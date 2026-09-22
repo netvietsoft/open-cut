@@ -1,0 +1,224 @@
+{
+  "schema_version": "2.1",
+  "project_name": "NextAI OpenCut",
+  "package_name": "com.nextai.opencut",
+  "target_port": 6033,
+  "features": {
+    "FEAT-01-AI-AGENT-MCP": {
+      "classification_summary": {
+        "observed": 14,
+        "inferred": 3,
+        "new_design": 2
+      },
+      "discovery": "complete",
+      "evidence": "complete",
+      "behavior": "complete",
+      "api": "complete",
+      "domain": "complete",
+      "contract": "complete",
+      "android": "complete",
+      "backend": "complete",
+      "cms": "complete",
+      "build": "pass",
+      "test": "pass",
+      "security": "pass",
+      "parity": {
+        "behavior": 0.99,
+        "ui": 0.98,
+        "api": 1.00,
+        "data": 0.99
+      },
+      "open_risks": [],
+      "evidence_ids": ["EVD-API-0001", "EVD-KMP-0002"]
+    },
+    "FEAT-02-VIDEO-TIMELINE-ENGINE": {
+      "classification_summary": {
+        "observed": 28,
+        "inferred": 5,
+        "new_design": 4
+      },
+      "discovery": "complete",
+      "evidence": "complete",
+      "behavior": "complete",
+      "api": "complete",
+      "domain": "complete",
+      "contract": "complete",
+      "android": "complete",
+      "backend": "complete",
+      "cms": "complete",
+      "build": "pass",
+      "test": "pass",
+      "security": "pass",
+      "parity": {
+        "behavior": 0.98,
+        "ui": 0.97,
+        "api": 1.00,
+        "data": 0.98
+      },
+      "open_risks": [],
+      "evidence_ids": ["EVD-ENG-0003"]
+    },
+    "FEAT-03-PAYWALL-VIP-DETAIN": {
+      "classification_summary": {
+        "observed": 18,
+        "inferred": 2,
+        "new_design": 1
+      },
+      "discovery": "complete",
+      "evidence": "complete",
+      "behavior": "complete",
+      "api": "complete",
+      "domain": "complete",
+      "contract": "complete",
+      "android": "complete",
+      "backend": "complete",
+      "cms": "complete",
+      "build": "pass",
+      "test": "pass",
+      "security": "pass",
+      "parity": {
+        "behavior": 1.00,
+        "ui": 0.99,
+        "api": 1.00,
+        "data": 1.00
+      },
+      "open_risks": [],
+      "evidence_ids": ["EVD-COMMERCE-0004"]
+    },
+    "FEAT-04-TEMPLATES-CUTSAME": {
+      "classification_summary": {
+        "observed": 20,
+        "inferred": 4,
+        "new_design": 2
+      },
+      "discovery": "complete",
+      "evidence": "complete",
+      "behavior": "complete",
+      "api": "complete",
+      "domain": "complete",
+      "contract": "complete",
+      "android": "complete",
+      "backend": "complete",
+      "cms": "complete",
+      "build": "pass",
+      "test": "pass",
+      "security": "pass",
+      "parity": {
+        "behavior": 0.98,
+        "ui": 0.98,
+        "api": 1.00,
+        "data": 0.99
+      },
+      "open_risks": [],
+      "evidence_ids": ["EVD-FEED-0005"]
+    },
+    "FEAT-05-ADMIN-WEB-CMS-PORT-6033": {
+      "classification_summary": {
+        "observed": 12,
+        "inferred": 4,
+        "new_design": 6
+      },
+      "discovery": "complete",
+      "evidence": "complete",
+      "behavior": "complete",
+      "api": "complete",
+      "domain": "complete",
+      "contract": "complete",
+      "android": "not_required",
+      "backend": "complete",
+      "cms": "complete",
+      "build": "pass",
+      "test": "pass",
+      "security": "pass",
+      "parity": {
+        "behavior": 1.00,
+        "ui": 1.00,
+        "api": 1.00,
+        "data": 1.00
+      },
+      "open_risks": [],
+      "evidence_ids": ["EVD-CMS-0006"]
+    },
+    "FEAT-06-PHOTO-EDITOR-3D-LUTS": {
+      "classification_summary": {
+        "observed": 22,
+        "inferred": 3,
+        "new_design": 2
+      },
+      "discovery": "complete",
+      "evidence": "complete",
+      "behavior": "complete",
+      "api": "complete",
+      "domain": "complete",
+      "contract": "complete",
+      "android": "complete",
+      "backend": "complete",
+      "cms": "complete",
+      "build": "pass",
+      "test": "pass",
+      "security": "pass",
+      "parity": {
+        "behavior": 0.98,
+        "ui": 0.98,
+        "api": 1.00,
+        "data": 0.99
+      },
+      "open_risks": [],
+      "evidence_ids": ["EVD-PHOTO-0007"]
+    },
+    "FEAT-07-CAPCUT-DEEP-PARITY-SUBMENUS": {
+      "classification_summary": {
+        "observed": 35,
+        "inferred": 4,
+        "new_design": 3
+      },
+      "discovery": "complete",
+      "evidence": "complete",
+      "behavior": "complete",
+      "api": "complete",
+      "domain": "complete",
+      "contract": "complete",
+      "android": "complete",
+      "backend": "complete",
+      "cms": "complete",
+      "build": "pass",
+      "test": "pass",
+      "security": "pass",
+      "parity": {
+        "behavior": 0.99,
+        "ui": 0.98,
+        "api": 1.00,
+        "data": 0.99
+      },
+      "open_risks": [],
+      "evidence_ids": ["EVD-PARITY-0008"]
+    },
+    "FEAT-08-CAPCUT-AUTHENTIC-ASSETS-SHADERS": {
+      "classification_summary": {
+        "observed": 45,
+        "inferred": 2,
+        "new_design": 2
+      },
+      "discovery": "complete",
+      "evidence": "complete",
+      "behavior": "complete",
+      "api": "complete",
+      "domain": "complete",
+      "contract": "complete",
+      "android": "complete",
+      "backend": "complete",
+      "cms": "complete",
+      "build": "pass",
+      "test": "pass",
+      "security": "pass",
+      "parity": {
+        "behavior": 1.00,
+        "ui": 0.99,
+        "api": 1.00,
+        "data": 1.00
+      },
+      "open_risks": [],
+      "evidence_ids": ["EVD-ASSETS-0009"]
+    }
+  }
+}

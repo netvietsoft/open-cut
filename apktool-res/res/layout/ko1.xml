@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/resultActionPanel" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="-16.0dp" n0:layout_marginEnd="-16.0dp">
+        <com.vega.ui.AlphaTextButton n0:textSize="16.0dp" n0:textColor="@color/qa" n0:gravity="center" n0:layout_gravity="start" n0:id="@id/result_cancel" n0:focusable="true" n0:focusableInTouchMode="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+        <com.vega.ui.GradientTextView n0:textSize="16.0dp" n0:textColor="@color/qa" n0:gravity="center" n0:layout_gravity="end" n0:id="@id/result_save" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:focusable="true" n0:focusableInTouchMode="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:text="@string/qgc" n0:textAllCaps="false" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#2a8388" n0:gravity="center" n0:id="@id/use_cases" n0:background="@drawable/qlc" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="26.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="20.0dp" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" />
+    <com.vega.theme.VegaEditText n0:textSize="16.0dp" n0:textColor="#e6e6e6" n0:gravity="start|top" n0:id="@id/item_content" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:scrollbars="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</LinearLayout>

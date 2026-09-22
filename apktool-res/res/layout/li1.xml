@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/item_root" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/background_selected_view" n0:background="@drawable/ka4" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:scaleX="0.0" n0:scaleY="0.0" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/audioCover" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginStart="8.0dp" n2:actualImageScaleType="fitXY" n2:layout_constraintBottom_toTopOf="@id/panel_music_copyright_tip" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_chainStyle="packed" n2:placeholderImage="@drawable/ooj" n2:placeholderImageScaleType="fitXY" n2:roundedCornerRadius="6.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:layout_marginEnd="2.0dp" n3:layout_constraintEnd_toEndOf="@id/audioCover" n3:layout_constraintTop_toTopOf="@id/audioCover" n3:kml="small"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/placeholder" n0:layout_width="match_parent" n0:layout_height="8.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/audioCover"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/music_label_hot" n0:visibility="gone" n0:layout_width="30.0dp" n0:layout_height="12.0dp" n0:layout_marginTop="-2.0dp" n5:layout_constraintStart_toStartOf="@id/audioCover" n5:layout_constraintTop_toTopOf="@id/audioCover"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/anchor_music_logo" n0:background="@drawable/oob" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginStart="2.0dp" n6:layout_constraintStart_toStartOf="@id/audioCover" n6:layout_constraintTop_toTopOf="@id/audioCover"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/item_play_pause_icon_layout" n0:background="@drawable/ka9" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n7:layout_constraintBottom_toBottomOf="@id/audioCover" n7:layout_constraintEnd_toEndOf="@id/audioCover" n7:layout_constraintStart_toStartOf="@id/audioCover" n7:layout_constraintTop_toTopOf="@id/audioCover"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:id="@id/item_play_pause_icon" n0:background="@drawable/oo2" n0:layout_width="16.0dp" n0:layout_height="16.0dp" />
+    </com.vega.ui.state.pressed.PressedStateFrameLayout>
+    <FrameLayout n0:id="@id/panel_music_copyright_tip" n0:paddingTop="4.0dp" n0:paddingBottom="8.0dp" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingStart="8.0dp" n0:paddingEnd="8.0dp" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/placeholder"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c54" n0:padding="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/ooy" n0:layout_marginEnd="8.0dp" />
+            <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0sp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06047e" n0:ellipsize="end" n0:id="@id/panel_music_copyright_tip_tv" n0:focusable="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxLines="2" n0:layout_weight="1.0" n0:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/APKTOOL_RENAMED_0x7f060481" n0:ellipsize="marquee" n0:id="@id/audioTitle" n0:focusable="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="2.0dp" n0:maxHeight="20.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:textAlignment="textStart" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="24.0dp" n9:layout_constraintBottom_toTopOf="@id/guideline" n9:layout_constraintEnd_toStartOf="@id/panel_music_recomm_audio_cut" n9:layout_constraintStart_toEndOf="@id/audioCover" n9:layout_goneMarginEnd="16.0dp"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/guideline" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n10:layout_constraintGuide_begin="32.0dp"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="12.0sp" n0:textColor="@color/APKTOOL_RENAMED_0x7f06047f" n0:ellipsize="marquee" n0:id="@id/audio_duration_singer_tv" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:maxHeight="14.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="24.0dp" n11:layout_constraintEnd_toStartOf="@id/panel_music_recomm_audio_cut" n11:layout_constraintStart_toEndOf="@id/audioCover" n11:layout_constraintTop_toBottomOf="@id/guideline" n11:layout_goneMarginEnd="16.0dp"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="clip_horizontal" n0:id="@id/audio_from_tiktok" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" n0:maxHeight="14.0dp" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="24.0dp" n12:layout_constraintEnd_toStartOf="@id/panel_music_recomm_audio_cut" n12:layout_constraintStart_toEndOf="@id/audioCover" n12:layout_constraintTop_toBottomOf="@id/guideline" n12:layout_goneMarginEnd="16.0dp"
+      xmlns:n12="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f080c59" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <ImageView n0:layout_gravity="center_vertical" n0:id="@id/audio_from_tiktok_iv" n0:background="@drawable/oo4" n0:layout_width="10.0dp" n0:layout_height="10.0dp" n0:layout_margin="2.0dp" />
+            <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0sp" n0:typeface="sans" n0:textColor="@color/x3" n0:ellipsize="marquee" n0:id="@id/audio_from_tiktok_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="1.0dp" n0:layout_marginBottom="1.0dp" n0:maxHeight="12.0dp" n0:text="@string/keq" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:paddingEnd="2.0dp" n0:textFontWeight="600" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/item_downloading" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n13:layout_constraintBottom_toBottomOf="@id/audioCover" n13:layout_constraintEnd_toEndOf="@id/audioCover" n13:layout_constraintStart_toStartOf="@id/audioCover" n13:layout_constraintTop_toTopOf="@id/audioCover" n13:lottie_autoPlay="true" n13:lottie_fileName="lv_loading_s.json" n13:lottie_loop="true"
+      xmlns:n13="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.state.pressed.PressedStateFrameLayout n0:id="@id/item_download_error_retry" n0:background="@drawable/ka8" n0:visibility="gone" n0:clickable="false" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n14:layout_constraintBottom_toBottomOf="@id/audioCover" n14:layout_constraintEnd_toEndOf="@id/audioCover" n14:layout_constraintStart_toStartOf="@id/audioCover" n14:layout_constraintTop_toTopOf="@id/audioCover"
+      xmlns:n14="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:background="@drawable/oow" n0:layout_width="24.0dp" n0:layout_height="24.0dp" />
+    </com.vega.ui.state.pressed.PressedStateFrameLayout>
+    <ImageView n0:orientation="horizontal" n0:id="@id/panel_music_recomm_audio_cut" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="22.0dp" n0:src="@drawable/ooe" n0:layout_marginEnd="16.0dp" n15:layout_constraintEnd_toStartOf="@id/panel_music_recomm_audio_volume" n15:layout_constraintTop_toTopOf="parent"
+      xmlns:n15="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:orientation="horizontal" n0:id="@id/panel_music_recomm_audio_volume" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="22.0dp" n0:src="@drawable/oo-" n0:layout_marginEnd="16.0dp" n16:layout_constraintEnd_toEndOf="parent" n16:layout_constraintTop_toTopOf="parent"
+      xmlns:n16="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

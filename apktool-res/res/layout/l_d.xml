@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:layout_gravity="start|bottom" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/progressOptionContainer" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="16.0dp" n0:layout_alignParentStart="true">
+        <com.vega.ui.widget.ProgressWithCloseBtnView n0:id="@id/optionProgress" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <com.vega.ui.widget.ProgressWithCloseBtnView n0:id="@id/prepareProgress" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n1:gt="false"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <com.vega.cutsameedit.view.CutSameMultiTaskLoadingView n0:id="@id/taskLoadingView" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n2:kb5="@drawable/k6a" n2:kb6="36.0dp" n2:kb7="4.0dp" n2:kb8="12.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

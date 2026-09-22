@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/lac" n0:clickable="true" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_editable_text" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:paddingStart="4.0dp" n0:paddingEnd="4.0dp" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.cardview.widget.CardView n0:id="@id/cutsame_frame_view_container" n0:clipChildren="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginStart="40.0dp" n0:layout_marginEnd="40.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/rv_editable_text"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.edit.cover.view.CoverFrameView n0:id="@id/cutsame_frame_view" n0:layout_width="match_parent" n0:layout_height="40.0dp" n2:layout_constraintTop_toBottomOf="@id/rv_editable_text" />
+    </androidx.cardview.widget.CardView>
+    <com.vega.cutsameedit.biz.edit.text.CutSameLiteTextDurationCuttingView n0:id="@id/text_duration_cutting_view" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" n0:elevation="10.0dp" n3:layout_constraintBottom_toBottomOf="@id/cutsame_frame_view_container" n3:layout_constraintTop_toTopOf="@id/cutsame_frame_view_container"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/btn_done" n0:background="@drawable/nws" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toBottomOf="@id/cutsame_frame_view_container"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/tv_text_duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q06" n5:layout_constraintBottom_toBottomOf="@id/btn_done" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="@id/btn_done"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

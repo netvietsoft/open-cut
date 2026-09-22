@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_product_move_panel_0" n0:background="@drawable/q5w" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/tilte" n0:layout_width="0.0dp" n0:layout_height="50.0dp" n0:layout_marginLeft="44.0dp" n0:layout_marginRight="44.0dp" n0:layout_marginHorizontal="44.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:layout_gravity="center" n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <TextView n0:textSize="16.0dp" n0:textColor="@color/kqx" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/move_name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f123545" />
+            <TextView n0:textSize="10.0dp" n0:textColor="@color/kpf" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/tip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rd-" n0:maxLines="2" />
+        </LinearLayout>
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/top_category" n0:layout_width="match_parent" n0:layout_height="52.0dp" n2:layout_constraintTop_toBottomOf="@id/tilte"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textColor="@color/ktw" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/rd_" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/top_btn" n0:tag="binding_1" n0:layout_width="wrap_content" n0:layout_height="match_parent" n2:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/dress_category" n0:layout_width="match_parent" n0:layout_height="52.0dp" n3:layout_constraintTop_toBottomOf="@id/top_category"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textColor="@color/ktw" n0:gravity="center" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:text="@string/rd9" n0:layout_marginStart="16.0dp" n3:layout_constraintStart_toStartOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/dress_btn" n0:tag="binding_2" n0:layout_width="wrap_content" n0:layout_height="match_parent" n3:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="60.0dp" n4:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.RoundImageView n0:layout_gravity="center" n0:id="@id/confirm_btn" n0:background="@drawable/q5t" n0:layout_width="343.0dp" n0:layout_height="44.0dp" n4:jk="8.0dp" n4:jl="8.0dp" />
+        <TextView n0:textColor="@color/kvl" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/rd7" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

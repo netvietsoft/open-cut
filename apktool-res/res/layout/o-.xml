@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n0:id="@id/root_view" n0:background="@color/APKTOOL_RENAMED_0x7f060534" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:background="@color/APKTOOL_RENAMED_0x7f060534" n0:paddingBottom="54.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/mCloseSetting" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:layout_marginTop="10.0dp" n0:src="@drawable/nka" n0:layout_marginStart="10.0dp" n1:kr3="button"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <com.vega.theme.text.VegaTextView n0:textColor="@color/APKTOOL_RENAMED_0x7f0605c0" n0:id="@id/personal_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:text="@string/qvp" n0:layout_marginStart="25.0dp" n2:layout_constraintBottom_toTopOf="@id/tv_close_advertisement" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_chainStyle="packed"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.vega.theme.text.VegaTextView n0:textColor="@color/APKTOOL_RENAMED_0x7f060530" n0:id="@id/tv_close_advertisement" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:text="@string/lvp" n0:layout_marginStart="25.0dp" n0:layout_marginEnd="20.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/personal_switch" n3:layout_constraintHorizontal_bias="0.0" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/personal_title" n3:layout_constraintVertical_chainStyle="packed"
+              xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <com.vega.theme.VegaCheckBox n0:layout_gravity="end|center" n0:id="@id/personal_switch" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="true" n0:button="@drawable/l1z" n0:track="@drawable/qlp" n0:layout_marginEnd="18.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+              xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

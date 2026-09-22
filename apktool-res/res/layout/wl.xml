@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ai_moment_quick_experience_bg" n0:background="@drawable/APKTOOL_RENAMED_0x7f08043c" n0:layout_width="match_parent" n0:layout_height="97.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/ai_moment_quick_experience_covers" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="12.0dp" n2:layout_constraintBottom_toBottomOf="@id/ai_moment_quick_experience_bg" n2:layout_constraintStart_toStartOf="@id/ai_moment_quick_experience_bg" n2:layout_constraintTop_toTopOf="@id/ai_moment_quick_experience_bg"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ai_moment_quick_experience_play" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/pud" n0:layout_marginStart="20.0dp" n3:layout_constraintBottom_toBottomOf="@id/ai_moment_quick_experience_covers" n3:layout_constraintStart_toStartOf="@id/ai_moment_quick_experience_covers" n3:layout_constraintTop_toTopOf="@id/ai_moment_quick_experience_covers"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="start" n0:orientation="vertical" n0:id="@id/ai_moment_tips_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n4:layout_constraintBottom_toBottomOf="@id/ai_moment_quick_experience_covers" n4:layout_constraintEnd_toStartOf="@id/ai_moment_tips_see" n4:layout_constraintHorizontal_bias="0.0" n4:layout_constraintStart_toEndOf="@id/ai_moment_quick_experience_covers" n4:layout_constraintTop_toTopOf="@id/ai_moment_quick_experience_covers"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="16.0sp" n0:textColor="@color/ml" n0:id="@id/ai_moment_quick_experience_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/sy" />
+        <TextView n0:textSize="12.0sp" n0:textColor="@color/mn" n0:id="@id/ai_moment_quick_experience_context" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/r1" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ImageView n0:id="@id/ai_moment_quick_experience_close" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/j7" n0:translationX="4.0dp" n0:translationY="-8.0dp" n5:layout_constraintEnd_toEndOf="@id/ai_moment_quick_experience_bg" n5:layout_constraintTop_toTopOf="@id/ai_moment_quick_experience_bg"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ai_moment_tips_see" n0:layout_width="80.0dp" n0:layout_height="50.0dp" n6:layout_constraintBottom_toBottomOf="@id/ai_moment_quick_experience_bg" n6:layout_constraintEnd_toEndOf="@id/ai_moment_quick_experience_bg" n6:layout_constraintTop_toTopOf="@id/ai_moment_quick_experience_bg"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textSize="14.0sp" n0:textColor="@color/kc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/s9" />
+        <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0818f8" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

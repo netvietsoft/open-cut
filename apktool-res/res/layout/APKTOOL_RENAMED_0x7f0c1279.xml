@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@android:color/transparent" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="44.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/empty_view_for_bubble" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/bottomBg" n0:background="@color/APKTOOL_RENAMED_0x7f060021" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/empty_view_for_bubble"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/guideline_start" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n3:layout_constraintGuide_begin="72.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/guideline_end" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n4:layout_constraintGuide_end="72.0dp"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.commonedit.videoanim.ui.VerticalVideoAnimSliderBar n0:id="@id/animSliderBar" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="33.0dp" n0:paddingStart="72.0dp" n0:paddingEnd="72.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="@id/left_duration_tv"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/left_duration_tv" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:layout_marginTop="8.0dp" n0:minWidth="40.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintEnd_toStartOf="@id/guideline_start" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="end|center" n0:id="@id/right_duration_tv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:minWidth="40.0dp" n0:layout_marginStart="16.0dp" n7:layout_constraintStart_toEndOf="@id/guideline_end" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/bottom_layout_mask" n0:layout_width="match_parent" n0:layout_height="0.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

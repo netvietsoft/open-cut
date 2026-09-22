@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_panel_model_item_0" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginTop="2.0dp" n0:layout_marginStart="2.0dp" n0:layout_marginEnd="2.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.RoundImageView n0:layout_gravity="center" n0:id="@id/model_image" n0:background="@drawable/q5v" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="4.0dp" n0:scaleType="fitCenter" n1:i_="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/select_circle" n0:tag="binding_1" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/rfq" />
+</FrameLayout>

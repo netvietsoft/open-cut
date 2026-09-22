@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/album_banner_ad_rootview" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/album_banner_ad_content" n0:background="@color/s0" n0:layout_width="match_parent" n0:layout_height="80.0dp">
+        <androidx.cardview.widget.CardView n0:id="@id/album_carview_banner_an_content" n0:layout_width="105.0dp" n0:layout_height="67.0dp" n0:layout_marginTop="7.0dp" n0:layout_marginBottom="6.0dp" n0:layout_marginStart="22.0dp" n1:cardCornerRadius="4.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <FrameLayout n0:layout_gravity="fill" n0:id="@id/album_media_view_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+        <View n0:id="@id/album_ad_background_mock_view" n0:visibility="gone" n0:layout_width="105.0dp" n0:layout_height="67.0dp" n2:layout_constraintBottom_toBottomOf="@id/album_carview_banner_an_content" n2:layout_constraintEnd_toEndOf="@id/album_carview_banner_an_content" n2:layout_constraintStart_toStartOf="@id/album_carview_banner_an_content" n2:layout_constraintTop_toTopOf="@id/album_carview_banner_an_content"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:ellipsize="end" n0:id="@id/album_tv_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:includeFontPadding="false" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="28.0dp" n3:layout_constraintBottom_toTopOf="@id/album_tv_description" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toEndOf="@id/album_carview_banner_an_content" n3:layout_constraintTop_toTopOf="@id/album_carview_banner_an_content" n3:layout_constraintVertical_chainStyle="spread"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:ellipsize="end" n0:id="@id/album_tv_description" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:includeFontPadding="false" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="28.0dp" n4:layout_constraintBottom_toTopOf="@id/album_tv_more" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/album_carview_banner_an_content" n4:layout_constraintTop_toBottomOf="@id/album_tv_title" n4:layout_constraintVertical_chainStyle="spread"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.VegaButton n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center_vertical" n0:id="@id/album_tv_more" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="0.0dp" n0:text="@string/qal" n0:includeFontPadding="false" n0:drawablePadding="4.0dp" n0:textAllCaps="false" n0:drawableEnd="@drawable/r2" n0:layout_marginStart="15.0dp" n0:layout_marginEnd="7.0dp" n5:layout_constraintBottom_toBottomOf="@id/album_carview_banner_an_content" n5:layout_constraintLeft_toRightOf="@id/album_carview_banner_an_content" n5:layout_constraintTop_toBottomOf="@id/album_tv_description" n5:layout_constraintVertical_chainStyle="spread"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/album_ad_close_btn" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/l49" n0:layout_marginEnd="4.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="parent"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="8.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/album_tv_banner_ad_tag" n0:background="@drawable/kpw" n0:layout_width="18.0dp" n0:layout_height="16.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120075" n0:layout_marginEnd="2.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toStartOf="@id/album_ad_option_view"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n0:orientation="horizontal" n0:id="@id/album_ad_option_view" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:layout_marginBottom="8.0dp" n0:layout_marginEnd="8.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

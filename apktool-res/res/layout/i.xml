@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.tux.widget.FlexLayout n0:id="@id/nav_layout" n0:layout_width="match_parent" n0:layout_height="52.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/nav_start" n0:layout_width="wrap_content" n0:layout_height="match_parent" n1:_t="8dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/nav_center" n2:APKTOOL_RENAMED_0x7f04060b="(nav_start.right>parent.width/2)?             (nav_end.left + nav_start.right)/2:             ((parent.width - max(nav_start.right, parent.width - nav_end.left)*2)>wrap_content?             50%: (nav_end.left + nav_start.right)/2)" n2:APKTOOL_RENAMED_0x7f04060c="50%" n2:_q="wrap_content" n2:_3="                 max(min(nav_start.right>parent.width/2 ? (nav_end.left - nav_start.right):             (min(parent.width - max(nav_start.right, parent.width - nav_end.left)*2, wrap_content)>wrap_content?             (parent.width - max(nav_start.right, parent.width - nav_end.left)*2)             :(nav_end.left - nav_start.right)),wrap_content),0)"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/nav_center_align_start" n0:visibility="gone" n3:APKTOOL_RENAMED_0x7f04060b="(nav_end.left - ((nav_end.width>0)? 0dp : 8dp) - nav_start.right - ((nav_start.width>0)? 0dp : 8dp)>wrap_content)?             nav_start.right + ((nav_start.width>0)? 0dp : 8dp) + wrap_content/2:             (nav_end.left - ((nav_end.width>0)? 0dp : 8dp) + nav_start.right + ((nav_start.width>0)? 0dp : 8dp) )/2" n3:APKTOOL_RENAMED_0x7f04060c="50%" n3:_q="wrap_content" n3:_3="max(min(nav_end.left - ((nav_end.width>0)? 0dp : 8dp) - nav_start.right - ((nav_start.width>0)? 0dp : 8dp), wrap_content),0)"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/nav_end" n0:layout_width="wrap_content" n0:layout_height="match_parent" n4:_c="100%-8dp"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/nav_separator" n0:layout_width="match_parent" n0:layout_height="0.5dp" n5:APKTOOL_RENAMED_0x7f040607="100%"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</com.bytedance.tux.widget.FlexLayout>

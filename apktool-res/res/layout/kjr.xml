@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/mark_group" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/mark_icon" n0:visibility="gone" n0:layout_width="8.0dp" n0:layout_height="8.0dp" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/a" n0:ellipsize="marquee" n0:id="@id/mark_text" n0:focusable="true" n0:focusableInTouchMode="true" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/mark_icon2" n0:visibility="gone" n0:layout_width="10.0dp" n0:layout_height="10.0dp" n0:layout_marginStart="6.0dp" />
+</LinearLayout>

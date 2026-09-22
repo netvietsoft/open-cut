@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_bg_preset_item_0" n0:layout_width="80.0dp" n0:layout_height="80.0dp" n0:layout_marginLeft="2.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="2.0dp" n0:layout_marginHorizontal="2.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.edit.portrait.orgcutout.BgPresetView n0:id="@id/preset_image" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="4.0dp" />
+    <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/select_circle" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/rh6" />
+</FrameLayout>

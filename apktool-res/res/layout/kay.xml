@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:orientation="vertical" n0:background="@color/APKTOOL_RENAMED_0x7f06047a" n0:layout_width="match_parent" n0:layout_height="90.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="70.0dp">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/banner_item_image_background" n0:focusable="false" n0:layout_width="match_parent" n0:layout_height="70.0dp" n1:actualImageScaleType="centerCrop" n1:failureImageScaleType="centerCrop" n1:placeholderImageScaleType="centerCrop" n1:roundedCornerRadius="8.0dp" n1:roundingBorderColor="#00cae0" n1:roundingBorderWidth="1.5dp" />
+        <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/banner_item_image_view" n0:focusable="false" n0:layout_width="130.0dp" n0:layout_height="40.0dp" n1:actualImageScaleType="centerCrop" n1:failureImageScaleType="centerCrop" n1:placeholderImageScaleType="centerCrop" n1:roundedCornerRadius="8.0dp" />
+    </FrameLayout>
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/_4" n0:ellipsize="end" n0:gravity="center" n0:id="@id/smart_pack_type_text" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="match_parent" n0:layout_height="15.0dp" n0:layout_marginTop="5.0dp" n0:maxLines="1" n0:scrollHorizontally="true" n0:marqueeRepeatLimit="marquee_forever" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/select_bottom_float_layout" n0:background="@color/f" n0:paddingTop="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:layout_gravity="center_vertical" n0:id="@id/selectedMediaRv" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" />
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:layout_gravity="start|center" n0:id="@id/tv_media_select_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:fontFamily="SF Pro Text" n0:layout_marginStart="16.0dp" n0:textFontWeight="500" n1:k1i="medium"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.StrongButton n0:enabled="false" n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="#090c14" n0:layout_gravity="end|center" n0:id="@id/sb_media_select_done" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805df" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:minWidth="55.0dp" n0:text="@string/l3b" n0:paddingStart="33.0dp" n0:paddingEnd="33.0dp" n0:layout_marginEnd="16.0dp" />
+    </FrameLayout>
+</LinearLayout>

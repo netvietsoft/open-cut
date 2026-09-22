@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/templateSubTabRoot" n0:paddingTop="12.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/subTab_closeButton" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/lia" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="8.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TabLayoutX n0:id="@id/subTabLayout" n0:layout_width="0.0dp" n0:layout_height="32.0dp" n0:layout_marginStart="8.0dp" n2:layout_constraintEnd_toStartOf="@id/mainTab_HistoryButton" n2:layout_constraintStart_toEndOf="@id/subTab_closeButton" n2:layout_constraintTop_toTopOf="parent" n2:tabBackground="@drawable/kjp" n2:tabGravity="fill" n2:tabIndicator="@null" n2:tabIndicatorColor="@color/APKTOOL_RENAMED_0x7f060634" n2:tabIndicatorFullWidth="false" n2:tabIndicatorHeight="0.0dp" n2:tabMaxWidth="0.0dp" n2:tabMinWidth="0.0dp" n2:tabPaddingEnd="17.0dp" n2:tabPaddingStart="17.0dp" n2:tabRippleColor="@null" n2:tabSelectedTextColor="@color/APKTOOL_RENAMED_0x7f060470" n2:tabTextColor="@color/_e"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/mainTab_HistoryButton" n0:visibility="gone" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:layout_marginEnd="8.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/view_expand_mask" n0:background="@drawable/kiy" n0:layout_width="56.0dp" n0:layout_height="32.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/expandIcon" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/nfp" n0:scaleType="centerInside" n0:layout_marginEnd="12.0dp" n5:layout_constraintBottom_toBottomOf="@id/subTabLayout" n5:layout_constraintEnd_toStartOf="@id/ivFilterIcon" n5:layout_constraintTop_toTopOf="@id/subTabLayout"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/ivFilterIcon" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:src="@drawable/k0r" n0:scaleType="centerInside" n0:layout_marginEnd="6.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintTop_toTopOf="parent" n6:layout_goneMarginEnd="6.0dp"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/filterList" n0:layout_width="match_parent" n0:layout_height="@dimen/qa" n0:layout_marginTop="12.0dp" n0:layout_marginStart="8.0dp" n7:layout_constraintTop_toBottomOf="@id/subTabLayout"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.HorizontalViewPager n0:id="@id/subViewPager" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginTop="12.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/filterList"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/expandFilterPanel" n0:layout_width="match_parent" n0:layout_height="0.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintTop_toBottomOf="@id/filterList"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <ViewStub n0:id="@id/expandCategoryContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.ui.state.pressed.PressedStateStateViewGroupLayout n0:id="@id/stateView" n0:background="@color/APKTOOL_RENAMED_0x7f06027d" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n10:kr3="none"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

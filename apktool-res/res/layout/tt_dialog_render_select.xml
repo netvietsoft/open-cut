@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="@drawable/tt_dialog_bg_shape" n0:layout_width="250.0dp" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="14.0sp" n0:textStyle="bold" n0:textColor="@color/tt_color_title" n0:id="@id/title_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="16.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f1231f4" />
+    <RadioGroup n0:orientation="vertical" n0:id="@id/radio_group" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_below="@id/title_desc">
+        <RadioButton n0:textColor="@color/tt_color_333" n0:id="@id/radio_native" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:checked="true" n0:text="@string/qme" />
+        <RadioButton n0:textColor="@color/tt_color_333" n0:id="@id/radio_express1" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f1231ae" />
+        <RadioButton n0:textColor="@color/tt_color_333" n0:id="@id/radio_express2" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/q-_" />
+    </RadioGroup>
+    <TextView n0:textSize="14.0sp" n0:textColor="#338aff" n0:id="@id/confirm_btn" n0:padding="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginBottom="12.0dp" n0:text="confirm" n0:layout_below="@id/radio_group" n0:layout_alignParentRight="true" />
+    <TextView n0:textSize="14.0sp" n0:textColor="@color/tt_color_999" n0:id="@id/cancel_btn" n0:padding="4.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="12.0dp" n0:text="cancel" n0:layout_toLeftOf="@id/confirm_btn" n0:layout_below="@id/radio_group" />
+</RelativeLayout>

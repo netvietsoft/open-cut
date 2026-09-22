@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.widget.CutSamePreviewContainer n0:orientation="vertical" n0:id="@id/content" n0:background="@color/sg" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layoutDirection="locale"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/adjustBaseLineView" n0:background="@color/APKTOOL_RENAMED_0x7f06048e" n0:focusableInTouchMode="true" n0:layout_width="match_parent" n0:layout_height="0.00999999dp" />
+    <FrameLayout n0:id="@id/header_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_below="@id/adjustBaseLineView" />
+    <FrameLayout n0:id="@id/preview_container" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="10.0dp" n0:layout_above="@id/play_control_container" n0:layout_below="@id/header_container" />
+    <FrameLayout n0:id="@id/play_control_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_above="@id/edit_panel_container" />
+    <FrameLayout n0:id="@id/preview_overlay_container" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginBottom="10.0dp" n0:layout_above="@id/play_control_container" n0:layout_below="@id/header_container" />
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/pro_user_prompt_container" n0:background="@drawable/lms" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="10.0dp" n0:layout_above="@id/play_control_container" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+        <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0803e5" />
+        <TextView n0:textSize="12.0sp" n0:textColor="@color/knt" n0:id="@id/pro_user_prompt_container_text" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" n0:layout_marginStart="4.0dp" />
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/join_vip_button" n0:background="@drawable/lms" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:paddingStart="12.0dp" n0:paddingEnd="12.0dp" n0:layout_marginStart="12.0dp">
+            <TextView n0:textSize="12.0sp" n0:textStyle="normal" n0:textColor="#fafbff" n0:id="@id/join_vip_button_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:letterSpacing="0.0134" />
+            <ImageView n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/l25" n0:layout_marginStart="4.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n0:id="@id/fullScreenEditorContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_below="@id/header_container" />
+    <FrameLayout n0:id="@id/statement_fragment_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true" />
+    <FrameLayout n0:id="@id/edit_panel_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_above="@id/bottomAdContainer" />
+    <FrameLayout n0:id="@id/bottomAdContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true" />
+    <FrameLayout n0:id="@id/promptEditGuideContainer" n0:tag="promptEditGuideContainer" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_below="@id/preview_container" />
+    <FrameLayout n0:gravity="bottom" n0:id="@id/textEditContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true" n0:layout_alignParentStart="true" n0:layout_alignParentEnd="true" />
+    <FrameLayout n0:id="@id/exportBottomPanelContainer" n0:visibility="invisible" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_alignParentBottom="true" n0:animateLayoutChanges="true">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <View n0:id="@id/export_adjustBaseLineView" n0:background="@color/APKTOOL_RENAMED_0x7f06048e" n0:focusableInTouchMode="true" n0:layout_width="match_parent" n0:layout_height="0.00999999dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+              xmlns:n1="http://schemas.android.com/apk/res-auto" />
+            <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:ellipsize="none" n0:gravity="center" n0:id="@id/ivExport_close" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="14.0dp" n0:minHeight="0.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n0:singleLine="true" n0:layout_below="@id/export_adjustBaseLineView" n0:layout_marginEnd="16.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toBottomOf="@id/export_adjustBaseLineView"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <FrameLayout n0:id="@id/liteEditorPanelContainerMask" n0:background="@color/fz" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/panelContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true" n0:animateLayoutChanges="true" n0:layout_alignParentStart="true" n0:layout_alignParentEnd="true" />
+    <FrameLayout n0:id="@id/extraContainer" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_above="@id/panelContainer" n0:layout_alignParentBottom="true" n0:animateLayoutChanges="true" />
+    <View n0:id="@id/popupWindowMask" n0:background="@color/_u" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <include n0:id="@id/sortPanel" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="226.0dp" n0:layout_alignParentBottom="true" layout="@layout/lfz" />
+    <FrameLayout n0:id="@id/fragment_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/panelContainerMask" n0:background="@color/fz" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/musicPanelContainer" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_alignParentBottom="true" n0:layout_alignParentStart="true" n0:layout_alignParentEnd="true" />
+</com.vega.widget.CutSamePreviewContainer>

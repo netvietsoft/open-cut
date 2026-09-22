@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ivCurrentSelectAiResult" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:scaleType="fitCenter" n0:layout_marginHorizontal="16.0dp" />
+    <ImageView n0:id="@id/ivOriginalAiResult" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:scaleType="fitCenter" n0:layout_marginHorizontal="16.0dp" />
+    <ImageView n0:id="@id/ivCompare" n0:background="@drawable/_g" n0:visibility="gone" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginBottom="12.0dp" n0:src="@drawable/mgv" n0:scaleType="centerInside" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/loadingFloatLayout" n0:background="@color/_3" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/lottieLoading" n0:layout_width="64.0dp" n0:layout_height="64.0dp" n0:scaleType="centerCrop" n2:layout_constraintBottom_toTopOf="@id/loadingTitleSwitcher" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_chainStyle="packed" n2:lottie_autoPlay="true" n2:lottie_fileName="ad_script_loading/ai_loop_whiteBackground_b.json" n2:lottie_imageAssetsFolder="ad_script_loading/images" n2:lottie_loop="true"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/tvLoadingProgress" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="@id/lottieLoading" n3:layout_constraintEnd_toStartOf="@id/tvPercent" n3:layout_constraintHorizontal_chainStyle="packed" n3:layout_constraintStart_toStartOf="@id/lottieLoading" n3:layout_constraintTop_toTopOf="@id/lottieLoading"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/tvPercent" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="%" n4:layout_constraintBaseline_toBaselineOf="@id/tvLoadingProgress" n4:layout_constraintEnd_toEndOf="@id/lottieLoading" n4:layout_constraintStart_toEndOf="@id/tvLoadingProgress"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <TextSwitcher n0:id="@id/loadingTitleSwitcher" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="32.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="32.0dp" n0:inAnimation="@anim/kh" n0:outAnimation="@anim/ki" n0:animateFirstView="false" n0:layout_marginHorizontal="32.0dp" n5:layout_constraintBottom_toTopOf="@id/tvLoadingDesc" n5:layout_constraintTop_toBottomOf="@id/lottieLoading" n5:layout_goneMarginTop="245.0dp"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#80bdd1db" n0:gravity="center" n0:id="@id/tvLoadingDesc" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="32.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="32.0dp" n0:text="@string/k7f" n0:layout_marginHorizontal="32.0dp" n6:layout_constraintBottom_toTopOf="@id/tvLoadingRetry" n6:layout_constraintTop_toBottomOf="@id/loadingTitleSwitcher"
+          xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/ui" n0:gravity="center" n0:id="@id/tvLoadingRetry" n0:background="@drawable/_y" n0:visibility="invisible" n0:layout_width="83.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/qfa" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/tvLoadingDesc"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.Group n0:id="@id/loadingProgressGroup" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n8:constraint_referenced_ids="lottieLoading,tvLoadingProgress,tvPercent"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.Group n0:id="@id/loadingTipsGroup" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n9:constraint_referenced_ids="loadingTitleSwitcher,tvLoadingDesc"
+          xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

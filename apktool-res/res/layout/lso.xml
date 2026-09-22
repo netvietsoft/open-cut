@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="@color/_d" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/filterPanelList" n0:background="@drawable/krf" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="12.0dp" />
+    <View n0:id="@id/maskView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</LinearLayout>

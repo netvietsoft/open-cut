@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#00cae0" />
+            <size android:height="16.0dp" android:width="16.0dp" />
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <vector android:height="10.0dp" android:width="10.0dp" android:viewportWidth="10.0" android:viewportHeight="10.0">
+            <path android:fillColor="#ffffff" android:pathData="M3.8,7.4L1.4,5l-0.8,0.8L3.8,9l5.6,-5.6l-0.8,-0.8z" />
+        </vector>
+    </item>
+</layer-list>

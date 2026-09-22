@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n0:orientation="vertical" n0:id="@id/pager_custom_from_audio_root" n0:paddingBottom="21.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/ml" n0:id="@id/replace_audio_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="@string/ovj" n0:layout_marginStart="16.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/audio_time_limit_hint" n0:padding="3.0dp" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f0817bd" n0:layout_marginStart="5.0dp" n2:layout_constraintBottom_toBottomOf="@id/replace_audio_text" n2:layout_constraintStart_toEndOf="@id/replace_audio_text" n2:layout_constraintTop_toTopOf="@id/replace_audio_text"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/audio_select_rv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/replace_audio_text"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/mp" n0:ellipsize="marquee" n0:id="@id/audio_name_text" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:layout_marginEnd="10.0dp" n4:layout_constraintEnd_toStartOf="@id/audio_duration_text" n4:layout_constraintStart_toStartOf="@id/replace_audio_text" n4:layout_constraintTop_toBottomOf="@id/audio_select_rv" n4:k1i="medium"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/mp" n0:id="@id/audio_duration_text" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/owp" n0:layout_marginEnd="16.0dp" n5:layout_constraintBottom_toBottomOf="@id/audio_name_text" n5:layout_constraintEnd_toEndOf="parent" n5:k1i="medium"
+          xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="horizontal" n0:id="@id/cutting_layout" n0:background="@drawable/ls-" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="10.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginHorizontal="16.0dp" n6:layout_constraintEnd_toEndOf="@id/audio_duration_text" n6:layout_constraintStart_toStartOf="@id/audio_name_text" n6:layout_constraintTop_toBottomOf="@id/audio_name_text"
+          xmlns:n6="http://schemas.android.com/apk/res-auto">
+            <ImageView n0:layout_gravity="center_vertical" n0:id="@id/audio_play_btn" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/otj" n0:layout_marginStart="10.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+            <com.vega.audio.view.AudioRangeCuttingView n0:id="@id/audio_range_cutting_view" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="11.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toEndOf="@id/audio_play_btn" n6:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/knt" n0:gravity="center_vertical" n0:id="@id/model_type" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="24.0dp" n0:text="@string/ovc" n0:drawablePadding="4.0dp" n0:lineSpacingExtra="4.0sp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/cutting_layout"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_lip_model" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n8:layout_constraintTop_toBottomOf="@id/model_type"
+          xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.VegaCheckBox n0:textSize="14.0sp" n0:textColor="@color/ww" n0:id="@id/cb_keep_bgm" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:maxWidth="206.0dp" n0:text="@string/ov1" n0:paddingStart="6.0dp" n0:paddingEnd="0.0dp" n0:layout_marginStart="16.0dp" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toBottomOf="@id/rv_lip_model" style="@style/APKTOOL_RENAMED_0x7f1304aa"
+          xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

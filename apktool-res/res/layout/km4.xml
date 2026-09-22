@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_status" n0:background="@drawable/APKTOOL_RENAMED_0x7f0805fd" n0:padding="4.0dp" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/med" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.LinearGradientTextView n0:textSize="16.0dp" n0:id="@id/tv_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:fontFamily="sans-serif" n0:layout_marginStart="6.0dp" n0:textFontWeight="700" n2:APKTOOL_RENAMED_0x7f04053a="@array/m" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/iv_status" n2:layout_constraintTop_toTopOf="parent" n2:k1i="bold" n2:k1j="sub_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/mp" n0:id="@id/tv_status" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:fontFamily="sans-serif" n0:textFontWeight="400" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="@id/tv_title" n3:layout_constraintTop_toBottomOf="@id/tv_title" n3:k1i="regular" n3:k1j="body_1"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

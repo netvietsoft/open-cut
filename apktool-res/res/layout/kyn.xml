@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:background="@android:color/white" n0:padding="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0">
+        <TextView n0:textSize="16.0sp" n0:textColor="@android:color/black" n0:id="@id/tv_pop_name" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" />
+        <TextView n0:textSize="12.0sp" n0:textColor="@android:color/darker_gray" n0:id="@id/tv_pop_key" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    </LinearLayout>
+    <Switch n0:id="@id/switch_mock" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" />
+</LinearLayout>

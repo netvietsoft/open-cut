@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="center_vertical" n0:id="@id/iv_volume_off" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/mzr" n0:layout_marginStart="20.0dp" n1:layout_constraintBottom_toBottomOf="@id/volume_bar" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/volume_bar"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatSeekBar n0:layout_gravity="center" n0:id="@id/volume_bar" n0:layout_width="0.0dp" n0:layout_height="32.0dp" n0:maxHeight="32.0dp" n0:max="1000" n0:progress="10" n0:indeterminateOnly="false" n0:progressDrawable="@drawable/qkk" n0:thumb="@null" n0:paddingStart="0.0dp" n0:paddingEnd="0.0dp" n0:layout_marginStart="54.0dp" n0:layout_marginEnd="54.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_bias="1.0"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/ll_volume_num" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="12.0dp" n3:layout_constraintBottom_toTopOf="@id/volume_bar" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#80edf0fd" n0:id="@id/tv_volume_prefix" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintEnd_toStartOf="@id/tv_volume_num" n3:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textStyle="bold" n0:textColor="#fafbff" n0:id="@id/tv_volume_num" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView n0:layout_gravity="end|center" n0:id="@id/iv_volume_on" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/mzs" n0:layout_marginEnd="20.0dp" n4:layout_constraintBottom_toBottomOf="@id/volume_bar" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="@id/volume_bar"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

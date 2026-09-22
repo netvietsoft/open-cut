@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kdx" n0:paddingBottom="6.0dp" n0:layout_width="176.0dp" n0:layout_height="176.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/dialog_close" n0:layout_width="32.0dp" n0:layout_height="32.0dp" n0:src="@drawable/nkf" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/loadingView" n0:layout_width="78.0dp" n0:layout_height="78.0dp" n0:layout_marginTop="35.0dp" n0:scaleType="centerCrop" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:layout_constraintVertical_chainStyle="packed" n2:layout_goneMarginStart="6.0dp" n2:lottie_autoPlay="true" n2:lottie_fileName="ad_script_loading/ai_loop_whiteBackground_b.json" n2:lottie_imageAssetsFolder="ad_script_loading/images" n2:lottie_loop="true"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="26.0sp" n0:textStyle="bold|italic" n0:textColor="@color/knt" n0:id="@id/tv_progress_count" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="@id/loadingView" n3:layout_constraintEnd_toStartOf="@id/tv_progress_percent_symbol" n3:layout_constraintHorizontal_chainStyle="packed" n3:layout_constraintStart_toStartOf="@id/loadingView" n3:layout_constraintTop_toTopOf="@id/loadingView"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/knt" n0:id="@id/tv_progress_percent_symbol" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="%" n0:layout_marginStart="2.0dp" n4:layout_constraintBottom_toBottomOf="@id/tv_progress_count" n4:layout_constraintEnd_toEndOf="@id/loadingView" n4:layout_constraintStart_toEndOf="@id/tv_progress_count"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tv_dialog_cancel" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="Saving your video..." n0:layout_marginStart="2.0dp" n0:layout_marginEnd="2.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/loadingView"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

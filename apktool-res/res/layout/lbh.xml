@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/pager_custom_root" n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/paidCreditsTips" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/tv_upload_photo_layout" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:paddingHorizontal="16.0dp" n1:layout_constraintTop_toTopOf="parent">
+                <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/tv_upload_photo_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/no9" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="medium" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <include n0:id="@id/reference_photo_layout" n0:layout_width="match_parent" n0:layout_height="107.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/tv_upload_photo_layout" layout="@layout/lde" />
+            <RelativeLayout n0:orientation="horizontal" n0:id="@id/pageRadioGroup" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="@dimen/cu" n0:layout_marginRight="@dimen/cu" n0:layout_marginHorizontal="@dimen/cu" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/reference_photo_layout">
+                <LinearLayout n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                    <RelativeLayout n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_weight="1.0">
+                        <HorizontalScrollView n0:id="@id/scroll_view_panel_custom" n0:scrollbars="none" n0:layout_width="match_parent" n0:layout_height="match_parent">
+                            <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                                <LinearLayout n0:orientation="horizontal" n0:id="@id/tabLayout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                                    <com.vega.theme.text.VegaTextView n0:gravity="center" n0:id="@id/generateFromTextTab" n0:paddingLeft="@dimen/cu" n0:paddingRight="@dimen/cu" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:button="@null" n0:text="@string/ov6" n0:paddingHorizontal="@dimen/cu" n1:k1i="medium" style="@style/vk" />
+                                    <com.vega.theme.text.VegaTextView n0:gravity="center" n0:id="@id/generateFromMusicTab" n0:paddingLeft="@dimen/cu" n0:paddingRight="@dimen/cu" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:button="@null" n0:text="@string/ovi" n0:paddingHorizontal="@dimen/cu" n1:k1i="medium" style="@style/vk" />
+                                </LinearLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </HorizontalScrollView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <androidx.viewpager.widget.ViewPager n0:id="@id/vpPanels" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/pageRadioGroup" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.vega.subscriptionapi.swidget.BusinessCreditsBar n0:id="@id/paidCreditsTips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintBottom_toTopOf="@id/lipSyncGenerate" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/lipSyncClear" n0:background="@drawable/kl4" n0:padding="12.0dp" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintHorizontal_weight="3.3" n3:layout_constraintStart_toStartOf="parent" n3:layout_goneMarginBottom="12.0dp" n3:layout_goneMarginLeft="4.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:gravity="center_vertical" n0:id="@id/clearIcon" n0:layout_width="22.0dp" n0:layout_height="22.0dp" n0:src="@drawable/qf8" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/clearText" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textColor="#fafbff" n0:gravity="center_vertical" n0:id="@id/clearText" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f12211d" n0:includeFontPadding="false" n3:layout_constraintBottom_toBottomOf="@id/clearIcon" n3:layout_constraintStart_toEndOf="@id/clearIcon" n3:layout_constraintTop_toTopOf="@id/clearIcon" n3:k1i="medium" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/lipSyncGenerate" n0:background="@drawable/k7d" n0:clipChildren="false" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/lipSyncClear"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/generateIcon" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/m0i" n0:layout_marginEnd="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/generateText" n4:layout_constraintHorizontal_chainStyle="packed" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/sg" n0:id="@id/generateText" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ou_" n0:singleLine="true" n0:includeFontPadding="false" n0:layout_marginStart="6.0dp" n0:textFontWeight="500" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toEndOf="@id/generateIcon" n4:layout_constraintTop_toTopOf="parent" n4:k1g="text" n4:k1i="medium" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

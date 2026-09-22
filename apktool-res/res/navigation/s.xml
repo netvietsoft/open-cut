@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_edit" app:kz0="@id/fragment_portrait"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_portrait" android:name="com.xt.edit.portrait.PortraitFragment" android:id="@id/fragment_portrait">
+        <argument android:name="@string/APKTOOL_RENAMED_0x7f123ef6" android:defaultValue="false" app:a7="boolean" app:kpe="false" />
+        <action android:id="@id/go_beauty" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_beauty" />
+        <action android:id="@id/go_manual_beauty" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_beauty" />
+        <action android:id="@id/go_skin_age" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_skin_age" />
+        <action android:id="@id/go_beauty_all" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_beauty_all" />
+        <action android:id="@id/go_beauty_face" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_beauty_face" />
+        <action android:id="@id/go_face_lift" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_face_lift" />
+        <action android:id="@id/go_face_retake" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_face_retake" />
+        <action android:id="@id/go_beauty_body" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_beauty_body" />
+        <action android:id="@id/go_manual_body" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_manual_body" />
+        <action android:id="@id/go_liquefaction" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_liquefaction" />
+        <action android:id="@id/go_wrinkle_remove" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_wrinkle_remove" />
+        <action android:id="@id/go_clone" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_clone" />
+        <action android:id="@id/go_erasure_pen" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_erasure_pen" />
+        <action android:id="@id/go_portrait_suit" />
+        <action android:id="@id/go_illuminate" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_illuminate" />
+        <action android:id="@id/go_makeup_pen" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_makeup_pen" />
+        <action android:id="@id/go_stereoscopic" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_stereoscopic" />
+        <action android:id="@id/go_makeup" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_makeup_beauty" />
+        <action android:id="@id/go_ai_makeup" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_ai_makeup_beauty" />
+        <action android:id="@id/go_expression" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_Expression" />
+        <action android:id="@id/go_org_cutout" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_org_cutout" />
+        <action android:id="@id/go_hair" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_hair" />
+        <action android:id="@id/go_skin_color" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_skin" />
+        <action android:id="@id/go_export" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_new_export" />
+    </fragment>
+    <fragment android:label="fragment_edit" android:name="com.xt.edit.edit.EditFragment" android:id="@id/fragment_edit">
+        <action android:id="@id/go_local_adjustment" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_local_adjustment" />
+        <action android:id="@id/go_composition" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_composition" />
+        <action android:id="@id/go_hsl" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_hsl" />
+    </fragment>
+    <fragment android:label="fragment_template" android:name="com.xt.edit.template.TemplateFragment" android:id="@id/fragment_template" />
+    <fragment android:label="fragment_beauty" android:name="com.xt.retouch.beauty.BeautyFragment" android:id="@id/fragment_beauty" />
+    <fragment android:label="fragment_skin_age" android:id="@id/fragment_skin_age" />
+    <fragment android:label="fragment_face_lift" android:name="com.xt.retouch.facelift.FaceLiftFragment" android:id="@id/fragment_face_lift" />
+    <fragment android:label="fragment_face_retake" android:name="com.xt.retouch.faceretake.FaceRetakeFragment" android:id="@id/fragment_face_retake" />
+    <fragment android:label="fragment_beauty" android:name="com.xt.edit.function.router.RouterFragment" android:id="@id/fragment_beauty_all" />
+    <fragment android:label="fragment_beauty" android:id="@id/fragment_beauty_face" />
+    <fragment android:label="fragment_beauty" android:name="com.xt.edit.function.router.RouterFragment" android:id="@id/fragment_beauty_body" />
+    <fragment android:label="fragment_manual_body" android:name="com.xt.edit.function.router.RouterFragment" android:id="@id/fragment_manual_body" />
+    <fragment android:label="fragment_beauty" android:id="@id/fragment_liquefaction" />
+    <fragment android:label="fragment_wrinkle_remove" android:name="com.xt.edit.function.router.RouterFragment" android:id="@id/fragment_wrinkle_remove" />
+    <fragment android:label="fragment_clone" android:name="com.xt.retouch.clone.ui.CloneFragment" android:id="@id/fragment_clone" />
+    <fragment android:label="fragment_makeup_pen" android:name="com.xt.edit.function.router.RouterFragment" android:id="@id/fragment_makeup_pen" />
+    <fragment android:label="fragment_stereoscopic" android:name="com.xt.retouch.stereoscopic.StereoscopicFragment" android:id="@id/fragment_stereoscopic" />
+    <fragment android:label="fragment_makeup_beauty" android:id="@id/fragment_makeup_beauty" />
+    <fragment android:label="fragment_ai_makeup_beauty" android:id="@id/fragment_ai_makeup_beauty" />
+    <fragment android:label="fragment_org_cutout" android:name="com.xt.edit.portrait.orgcutout.OrgCutoutFragment" android:id="@id/fragment_org_cutout" />
+    <fragment android:label="fragment_hair" android:name="com.xt.edit.function.router.RouterFragment" android:id="@id/fragment_hair" />
+    <fragment android:label="fragment_composition" android:name="com.xt.edit.edit.composition.CompositionFragment" android:id="@id/fragment_composition" />
+    <fragment android:label="fragment_tab_composition" android:name="com.xt.retouch.composition.impl.composition.tab.CompositionTabFragment" android:id="@id/fragment_tab_composition" />
+    <fragment android:label="fragment_local_adjustment" android:name="com.xt.edit.edit.localadjustment.LocalAdjustmentFragment" android:id="@id/fragment_local_adjustment" />
+    <fragment android:label="fragment_hsl" android:name="com.xt.edit.edit.hsl.HslFragment" android:id="@id/fragment_hsl" />
+    <fragment android:label="fragment_new_export" android:id="@id/fragment_new_export" />
+    <fragment android:label="fragment_image_effect" android:name="com.xt.edit.design.imageeffect.ImageEffectFragment" android:id="@id/fragment_image_effect">
+        <action android:id="@id/go_filter_mask" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_filter_mask" />
+    </fragment>
+    <fragment android:label="fragment_play_function" android:name="com.xt.edit.design.playfunction.PlayFunctionFragment" android:id="@id/fragment_play_function" />
+    <fragment android:label="fragment_mosaic" android:name="com.xt.edit.design.mosaic.MosaicFragment" android:id="@id/fragment_mosaic" />
+    <fragment android:label="fragment_replace" android:name="com.xt.retouch.aireplace.impl.replace.AIReplaceImageFragment" android:id="@id/fragment_replace" />
+    <fragment android:label="fragment_animation" android:name="com.xt.edit.design.animation.AnimationFragment" android:id="@id/fragment_animation" />
+    <fragment android:label="fragment_expression" android:name="com.xt.edit.function.router.RouterFragment" android:id="@id/fragment_Expression" />
+    <fragment android:label="fragment_material" android:name="com.xt.edit.design.stickercenter.StickerCenterFragment" android:id="@id/fragment_material" />
+    <fragment android:label="fragment_GraffitiPen" android:name="com.xt.edit.design.graffitipen.GraffitiPenFragment" android:id="@id/fragment_graffitiPen" />
+    <fragment android:label="fragment_sticker" android:name="com.xt.edit.design.sticker.StickerFragment" android:id="@id/fragment_sticker" />
+    <fragment android:label="fragment_text" android:name="com.xt.edit.design.text.TextFragment" android:id="@id/fragment_text" />
+    <fragment android:label="fragment_middle_page_container" android:name="com.xt.edit.middlepage.MiddlePageContainerFragment" android:id="@id/fragment_middle_page_container" />
+    <fragment android:label="fragment_middle_page_add_filter" android:name="com.xt.retouch.filter.impl.filter.middle.page.MiddlePageFilterAddFragment" android:id="@id/middle_page_add_filter_fragment" />
+    <fragment android:label="fragment_middle_page_edit" android:name="com.xt.edit.middlepage.MiddlePageFragment" android:id="@id/fragment_middle_page_edit" />
+    <fragment android:name="com.xt.edit.filter.FilterFragment" android:id="@id/fragment_filter">
+        <action android:id="@id/go_filter_mask" app:APKTOOL_RENAMED_0x7f040444="@id/fragment_filter_mask" />
+    </fragment>
+    <fragment android:label="fragment_batch_background" android:name="com.xt.edit.background.BackGroundFragment" android:id="@id/fragment_background" />
+    <fragment android:label="fragment_shape" android:name="com.xt.edit.shape.SVGShapeFragment" android:id="@id/fragment_shape" />
+    <fragment android:label="fragment_stretch" android:name="com.xt.retouch.stretch.impl.stretch.StretchFragment" android:id="@id/fragment_stretch" />
+    <fragment android:label="fragment_batch_background" android:name="com.xt.edit.background.BackGroundFragment" android:id="@id/fragment_batch_background" />
+    <fragment android:label="fragment_cutout" android:name="com.xt.edit.cutoutimage.CutoutFragment" android:id="@id/fragment_cutout" />
+    <fragment android:label="fragment_erasure_pen" android:name="com.xt.edit.portrait.erasure.ErasurePenFragment" android:id="@id/fragment_erasure_pen" />
+    <fragment android:label="fragment_magic_eliminate" android:name="com.xt.edit.portrait.erasure.magicpen.MagicEliminateFragment" android:id="@id/fragment_magic_eliminate" />
+    <fragment android:label="fragment_smart_eraser" android:name="com.xt.edit.portrait.erasure.smarteraser.SmartEraserFragment" android:id="@id/fragment_smart_eraser" />
+    <fragment android:label="fragment_illuminate" android:id="@id/fragment_illuminate" />
+    <fragment android:label="fragment_router" android:name="com.xt.edit.function.router.RouterFragment" android:id="@id/fragment_router" />
+    <fragment android:label="fragment_skin_color" android:name="com.xt.retouch.skin.SkinColorFragment" android:id="@id/fragment_skin" />
+    <fragment android:label="fragment_filter_mask" android:name="com.xt.retouch.filtermask.impl.FilterMaskFragment" android:id="@id/fragment_filter_mask" />
+    <fragment android:label="fragment_shape_stroke" android:name="com.xt.edit.shape.edit.stroke.SVGShapeStrokeFragment" android:id="@id/fragment_shape_stroke" />
+    <fragment android:label="fragment_shape_full" android:name="com.xt.edit.shape.edit.full.SVGShapeFullFragment" android:id="@id/fragment_shape_full" />
+    <fragment android:label="fragment_eliminate" android:name="com.xt.edit.eliminate.EliminateFragment" android:id="@id/fragment_eliminate" />
+</navigation>

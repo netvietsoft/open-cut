@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_fragment_ai_background_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/adjustContainer" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <View n0:id="@id/adjustRoomTouchView" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" />
+    </FrameLayout>
+    <View n0:id="@id/applyCutoutMask" n0:background="@color/ku-" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/panel" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/bottom" n0:background="@color/ku-" n0:layout_width="match_parent" n0:layout_height="18.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/goCutoutBtn" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:layout_marginBottom="18.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintBottom_toTopOf="@id/panel" n3:layout_constraintEnd_toEndOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/rly" n0:layout_marginEnd="8.0dp" />
+        <TextView n0:textSize="12.0dp" n0:textColor="@color/kxw" n0:layout_gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tw_" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:orientation="vertical" n0:id="@id/panel" n0:tag="binding_1" n0:background="@color/ku-" n0:layout_width="match_parent" n0:layout_height="168.0dp" n4:layout_constraintBottom_toTopOf="@id/bottom" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:id="@id/dataPanel" n0:layout_width="match_parent" n0:layout_height="80.0dp" n0:layout_marginTop="30.0dp" n4:layout_constraintTop_toTopOf="parent">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/ai_background_list_view" n0:layout_width="match_parent" n0:layout_height="80.0dp" />
+        </LinearLayout>
+        <LinearLayout n0:orientation="vertical" n0:id="@id/typePanel" n0:layout_width="match_parent" n0:layout_height="match_parent" n4:layout_constraintTop_toTopOf="parent">
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/ai_background_group_list" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:overScrollMode="never" n4:layout_constraintBottom_toTopOf="@id/ai_background_item_list" n4:layout_constraintRight_toRightOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView n0:id="@id/ai_background_item_list" n0:paddingLeft="16.0dp" n0:layout_width="match_parent" n0:layout_height="120.0dp" n0:overScrollMode="never" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" />
+        </LinearLayout>
+        <com.xt.retouch.baseui.view.LottieAnimationView n0:layout_gravity="center" n0:id="@id/download_effect_loading" n0:layout_width="@dimen/eu" n0:layout_height="@dimen/et" n4:layout_constraintBottom_toBottomOf="@id/panel" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/panel" n4:lottie_loop="true" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:id="@id/retry_layout" n0:tag="binding_2" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tw5" n0:drawablePadding="10.0dp" n0:drawableStart="@drawable/ri9" n4:layout_constraintBottom_toBottomOf="@id/panel" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="@id/panel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="48.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/bottom_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tyo" n0:fontFamily="sans-serif-medium" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintLeft_toLeftOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout n0:id="@id/icon_limit_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="2.0dp" n5:layout_constraintBottom_toBottomOf="@id/bottom_title" n5:layout_constraintStart_toEndOf="@id/bottom_title" n5:layout_constraintTop_toTopOf="@id/bottom_title" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_cancel" n0:tag="binding_3" n0:padding="@dimen/ju" n0:layout_width="@dimen/js" n0:layout_height="@dimen/js" n0:src="@drawable/rpu" n0:layout_marginStart="@dimen/jt" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_confirm" n0:tag="binding_4" n0:padding="@dimen/ju" n0:layout_width="@dimen/js" n0:layout_height="@dimen/js" n0:src="@drawable/APKTOOL_RENAMED_0x7f0831f0" n0:layout_marginEnd="@dimen/jt" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/adjustPanelLayout" n0:background="@color/koh" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="202.0dp" n6:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <TextView n0:textColor="@color/APKTOOL_RENAMED_0x7f0607cc" n0:gravity="center" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="@string/r0s" n0:layout_marginStart="50.0dp" n0:layout_marginEnd="50.0dp" n6:layout_constraintBottom_toTopOf="@id/adjust_fl" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout n0:id="@id/adjust_fl" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_marginBottom="18.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent">
+            <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:gravity="center" n0:layout_gravity="center" n0:id="@id/adjust_bottom_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/r0t" n0:fontFamily="sans-serif-medium" />
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="start|center" n0:id="@id/iv_cancel_adjust" n0:padding="@dimen/ju" n0:layout_width="@dimen/gu" n0:layout_height="@dimen/gu" n0:src="@drawable/rpu" n0:layout_marginStart="4.0dp" />
+            <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="end|center" n0:id="@id/iv_confirm_adjust" n0:padding="@dimen/ju" n0:layout_width="@dimen/gu" n0:layout_height="@dimen/gu" n0:src="@drawable/APKTOOL_RENAMED_0x7f0831f0" n0:layout_marginEnd="4.0dp" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:id="@id/cutout_fragment_container" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <View n0:id="@id/closeGuideView" n0:background="#99000000" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/lavGuideAnimation" n0:visibility="invisible" n0:layout_width="160.0dp" n0:layout_height="160.0dp" n7:lottie_autoPlay="true" n7:lottie_loop="true"
+          xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="14.0dp" n0:textColor="@color/kpf" n0:id="@id/guideTextView" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/r0u" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

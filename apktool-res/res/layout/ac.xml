@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view n0:theme="@style/d9" n0:layout_gravity="bottom" n0:layout_width="match_parent" n0:layout_height="wrap_content" class="com.google.android.material.snackbar.SnackbarContentLayout"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textAppearance="@style/ai" n0:ellipsize="end" n0:layout_gravity="start|center" n0:id="@id/snackbar_text" n0:paddingLeft="@dimen/pp" n0:paddingTop="@dimen/pq" n0:paddingRight="@dimen/pp" n0:paddingBottom="@dimen/pq" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="@integer/kw" n0:layout_weight="1.0" n0:textAlignment="viewStart" />
+    <Button n0:textColor="?colorAccent" n0:layout_gravity="end|center" n0:id="@id/snackbar_action" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="@dimen/pm" n0:minWidth="48.0dp" n0:layout_marginStart="@dimen/pm" style="?c_" />
+</view>

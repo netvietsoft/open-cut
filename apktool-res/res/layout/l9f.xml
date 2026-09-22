@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/audition_view_background" n0:background="@drawable/qgd" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/audition_cl_status" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:layout_marginStart="6.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="@id/audition_view_background" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:id="@id/audition_iv_play" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/p27" n0:scaleType="centerInside" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/audition_lv_loading" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:lottie_autoPlay="true" n2:lottie_fileName="circle_loading_w.json" n2:lottie_loop="true" />
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/audition_lv_playing" n0:visibility="gone" n0:layout_width="18.0dp" n0:layout_height="12.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:lottie_autoPlay="true" n2:lottie_fileName="audio_play.json" n2:lottie_loop="true" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout n0:id="@id/audition_fl_title" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:layout_marginStart="52.0dp" n0:layout_marginEnd="8.0dp" n0:layout_marginVertical="12.0dp" n3:layout_constraintBottom_toBottomOf="@id/audition_view_background" n3:layout_constraintEnd_toEndOf="@id/audition_view_background" n3:layout_constraintStart_toStartOf="@id/audition_view_background" n3:layout_constraintTop_toTopOf="@id/audition_view_background"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/nn" n0:ellipsize="end" n0:gravity="start|center" n0:id="@id/audition_tv_title" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:maxLines="4" n3:k1i="regular" n3:k1j="body_1" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

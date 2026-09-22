@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/promptImage" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginTop="25.0dp" n0:layout_marginBottom="10.0dp" n0:src="@drawable/pwq" n1:layout_constraintBottom_toTopOf="@id/rgAlignGroup" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <RadioGroup n0:orientation="horizontal" n0:id="@id/rgAlignGroup" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="21.0dp" n0:checkedButton="@id/rbAlignCanvas" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="@id/promptImage" n2:layout_constraintStart_toStartOf="@id/promptImage"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Space n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" />
+        <RadioButton n0:id="@id/rbAlignCanvas" n0:layout_width="160.0dp" n0:layout_height="wrap_content" n0:text="@string/q2b" style="@style/APKTOOL_RENAMED_0x7f1304a6" />
+        <Space n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="2.0" />
+        <RadioButton n0:id="@id/rbAlignVideo" n0:layout_width="160.0dp" n0:layout_height="wrap_content" n0:text="@string/lfo" style="@style/APKTOOL_RENAMED_0x7f1304a6" />
+        <Space n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

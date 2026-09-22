@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xt.retouch.baseui.view.InterceptConstraintLayout2 n0:id="@id/root" n0:tag="layout/xt_fragment_portrait_clone_0" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include n0:id="@id/bar" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n1:layout_constraintBottom_toTopOf="@id/panel" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintHorizontal_bias="0.0" n1:layout_constraintStart_toStartOf="parent" layout="@layout/mvg"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/panel" n0:layout_width="0.0dp" n0:layout_height="@dimen/g-" n2:layout_constraintBottom_toTopOf="@id/bottom_bar_layout" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHorizontal_bias="0.0" n2:layout_constraintStart_toStartOf="parent" layout="@layout/mvj"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/bottom_bar_layout" n0:tag="binding_1" n0:background="@color/kw0" n0:layout_width="match_parent" n0:layout_height="@dimen/gu" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <include n0:id="@id/bottom_bar" n0:layout_width="match_parent" n0:layout_height="match_parent" layout="@layout/mvh" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:tag="binding_2" n0:layout_width="wrap_content" n0:layout_height="@dimen/g-" n0:layout_marginBottom="200.0dp" n4:layout_constraintBottom_toTopOf="@id/panel" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/rso" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textColor="@color/kxw" n0:gravity="center" n0:background="@drawable/APKTOOL_RENAMED_0x7f08310c" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:text="@string/sve" n0:maxLines="1" n0:paddingStart="10.0dp" n0:paddingEnd="10.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.xt.retouch.edit.base.view.DisplayPenView n0:id="@id/displayPenView" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.xt.retouch.clone.ui.CloneDottedView n0:id="@id/clone_dotted_view" n0:tag="binding_3" n0:focusable="false" n0:clickable="false" n0:layout_width="match_parent" n0:layout_height="0.0dp" n5:layout_constraintBottom_toTopOf="@id/panel" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</com.xt.retouch.baseui.view.InterceptConstraintLayout2>

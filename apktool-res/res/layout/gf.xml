@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/APKTOOL_RENAMED_0x7f080553" n0:paddingBottom="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:text="@string/p0c" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1g="display" n1:k1i="regular"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_close" n0:padding="14.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/nkl" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.VegaEditText n0:textSize="16.0dp" n0:textColor="#fafbff" n0:textColorHint="#66e5e9fa" n0:gravity="top" n0:id="@id/et_input_link" n0:background="@drawable/APKTOOL_RENAMED_0x7f080c60" n0:paddingTop="12.0dp" n0:focusableInTouchMode="true" n0:layout_width="0.0dp" n0:layout_height="116.0dp" n0:layout_marginTop="48.0dp" n0:hint="@string/p0d" n0:maxLines="3" n0:lineSpacingExtra="3.0dp" n0:textCursorDrawable="@drawable/APKTOOL_RENAMED_0x7f08289b" n0:paddingStart="16.0dp" n0:paddingEnd="24.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_clear_input" n0:visibility="gone" n0:layout_width="17.0dp" n0:layout_height="17.0dp" n0:layout_margin="12.0dp" n0:src="@drawable/ofb" n4:layout_constraintBottom_toBottomOf="@id/et_input_link" n4:layout_constraintEnd_toEndOf="@id/et_input_link"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/btn_confirm" n0:background="@drawable/k7b" n0:layout_width="0.0dp" n0:layout_height="44.0dp" n0:layout_margin="16.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/et_input_link"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_search" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082be4" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:id="@id/tv_search" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p0f" n0:layout_marginStart="8.0dp" n5:k1g="text" n5:k1i="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="bottom" n0:orientation="vertical" n0:id="@id/task_item_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center_vertical" n0:layout_gravity="start|bottom" n0:id="@id/tasks_status_control_bar_layout" n0:background="@drawable/APKTOOL_RENAMED_0x7f080b65" n0:paddingLeft="6.0dp" n0:paddingRight="6.0dp" n0:visibility="invisible" n0:layout_width="wrap_content" n0:layout_height="36.0dp" n0:paddingHorizontal="6.0dp">
+        <FrameLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:id="@id/tv_show_less" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lnq" n0:includeFontPadding="false" />
+            <androidx.appcompat.widget.LinearLayoutCompat n0:gravity="center_vertical" n0:id="@id/tasks_info_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+                <FrameLayout n0:layout_width="14.0dp" n0:layout_height="14.0dp">
+                    <com.vega.ui.widget.CircleProgressView n0:id="@id/cp_tasks_progress" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:cs="@color/knt" n1:cw="#1fffffff" n1:kat="1.75dp"
+                      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+                    <ImageView n0:id="@id/iv_task_success" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/o4b" />
+                </FrameLayout>
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/knt" n0:ellipsize="middle" n0:id="@id/tv_tasks_progress" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="220.0dp" n0:singleLine="true" n0:includeFontPadding="false" n0:layout_marginStart="6.0dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </FrameLayout>
+        <ImageView n0:id="@id/iv_task_panel_switch" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/o4a" n0:scaleType="center" n0:layout_marginStart="6.0dp" n0:layout_toEndOf="@id/tv_show_less" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

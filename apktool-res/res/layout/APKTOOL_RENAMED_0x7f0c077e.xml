@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cl_group_material_root" n0:background="@color/knt" n0:paddingTop="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_material_avatar" n0:layout_width="64.0dp" n0:layout_height="64.0dp" n0:src="@drawable/m6v" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/fi" n0:ellipsize="end" n0:id="@id/tv_material_name" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_marginStart="12.0dp" n2:layout_constraintEnd_toStartOf="@id/fl_group_material_select" n2:layout_constraintStart_toEndOf="@id/iv_material_avatar" n2:layout_constraintTop_toTopOf="@id/iv_material_avatar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ff" n0:id="@id/tv_material_time" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:layout_marginStart="12.0dp" n3:layout_constraintStart_toEndOf="@id/iv_material_avatar" n3:layout_constraintTop_toBottomOf="@id/tv_material_name"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/ff" n0:id="@id/tv_material_duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:layout_marginStart="12.0dp" n4:layout_constraintStart_toEndOf="@id/iv_material_avatar" n4:layout_constraintTop_toBottomOf="@id/tv_material_time"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/fl_group_material_select" n0:layout_width="50.0dp" n0:layout_height="64.0dp" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="end|center" n0:id="@id/iv_group_material_select" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/pk6" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

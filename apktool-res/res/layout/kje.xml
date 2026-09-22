@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/iv_header_bg" n0:background="@drawable/APKTOOL_RENAMED_0x7f0818c1" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cc4b_gallery_header_view" n0:layout_width="match_parent" n0:layout_height="50.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="#16161d" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/cc4b_tv_header_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:singleLine="true" n0:layout_marginStart="48.0dp" n0:layout_marginEnd="48.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/iv_header_back" n0:padding="4.0dp" n0:layout_width="16.0dp" n0:layout_height="24.0dp" n0:src="@drawable/ya" n0:layout_marginStart="14.0dp" n0:layout_marginEnd="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" n2:kr3="button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout n0:orientation="vertical" n0:id="@id/cc4b_content_container" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/cc4b_gallery_header_view"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.appbar.AppBarLayout n0:theme="@style/ke" n0:orientation="vertical" n0:id="@id/cc4bAlbumAppBarLayout" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cc4b_gallery_scroll_header_container" n0:layout_width="match_parent" n0:layout_height="wrap_content" n3:layout_scrollFlags="scroll|exitUntilCollapsed" />
+            <com.vega.ui.state.pressed.PressedStateConstraintLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/cc4b_ll_gallery_local_media_header_container" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:layout_marginStart="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:kr3="button">
+                <androidx.recyclerview.widget.RecyclerView n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/ll_header_container" n0:background="@drawable/k1t" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:scrollbars="none" n0:clipToPadding="false" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:paddingHorizontal="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+            </com.vega.ui.state.pressed.PressedStateConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cc4b_child_container" n0:layout_width="match_parent" n0:layout_height="match_parent" n3:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.viewpager2.widget.ViewPager2 n0:id="@id/cc4b_gallery_list_pager" n0:background="@color/knt" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

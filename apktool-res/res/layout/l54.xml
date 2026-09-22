@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/subtitle_empty_view" n0:paddingLeft="39.0dp" n0:paddingRight="39.0dp" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:paddingHorizontal="39.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="45.0dp" n0:src="@drawable/oj6" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:text="@string/pl0" n1:k1i="medium"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#b1f6f7fe" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="39.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="39.0dp" n0:text="@string/plj" n0:layout_marginHorizontal="39.0dp" />
+</LinearLayout>

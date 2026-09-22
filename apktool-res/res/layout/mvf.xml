@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/imageEnhanceContainer" n0:background="@color/ktb" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/main_content" n0:background="@color/kxw" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/title" n0:layout_width="match_parent" n0:layout_height="54.0dp" n1:layout_constraintTop_toTopOf="parent">
+            <FrameLayout n0:id="@id/cancel_btn" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_marginStart="4.0dp" n1:layout_constraintStart_toStartOf="parent">
+                <com.xt.retouch.baseui.view.BaseImageView n0:layout_gravity="center" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m6j" />
+            </FrameLayout>
+            <FrameLayout n0:id="@id/confirm_btn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minHeight="32.0dp" n0:layout_marginEnd="12.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.AppCompatTextView n0:textSize="12.0sp" n0:textColor="@color/kot" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:minWidth="72.0dp" n0:text="@string/tjw" n1:autoSizeMaxTextSize="14.0dp" n1:autoSizeMinTextSize="10.0dp" n1:bp="1.0px" n1:autoSizeTextType="uniform" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView n0:textSize="16.0sp" n0:textColor="@color/kot" n0:gravity="center" n0:id="@id/content_text" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/sgj" n0:paddingStart="50.0dp" n0:paddingEnd="50.0dp" n1:autoSizeMaxTextSize="18.0dp" n1:autoSizeMinTextSize="14.0dp" n1:bp="1.0px" n1:autoSizeTextType="uniform" n1:layout_constraintTop_toBottomOf="@id/title" />
+        <HorizontalScrollView n0:id="@id/face_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:layout_marginBottom="50.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toBottomOf="@id/content_text">
+            <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/face_list" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

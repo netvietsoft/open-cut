@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f06001f" n0:layout_width="58.0dp" n0:layout_height="58.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/fl_actor_avatar" n0:background="@drawable/APKTOOL_RENAMED_0x7f08055b" n0:layout_width="58.0dp" n0:layout_height="58.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n0:layout_gravity="center" n0:id="@id/fl_actor_default" n0:background="@drawable/APKTOOL_RENAMED_0x7f08055a" n0:layout_width="51.0dp" n0:layout_height="51.0dp">
+            <ImageView n0:layout_gravity="center" n0:id="@id/actor_default" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/my2" />
+        </FrameLayout>
+        <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/actor_avatar" n0:layout_width="51.0dp" n0:layout_height="51.0dp" n1:roundAsCircle="true" />
+        <FrameLayout n0:layout_gravity="center" n0:id="@id/actor_all" n0:background="@drawable/APKTOOL_RENAMED_0x7f08055a" n0:visibility="gone" n0:layout_width="51.0dp" n0:layout_height="51.0dp">
+            <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m2f" />
+        </FrameLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+agents:
+  orchestrator:
+    title: "Thư ký — Agent 0 (Orchestrator)"
+    reports_to: "Chủ tịch"
+    standard: "Development_Workspace_Standard_V2.1_Design_Gated.txt"
+    role: coordinator
+    can_code: false
+
+  architect:
+    role: architecture
+    can_code: false
+
+  backend:
+    role: backend
+    writable:
+      - Backend/**
+      - services/**
+      - tests/integration/**
+
+  frontend:
+    role: frontend
+    writable:
+      - apps/android/**
+      - Backend/public/**
+      - packages/**
+      - design/approved/**
+
+  designer:
+    role: design
+    can_code: false
+    can_create_prototype: true
+    writable:
+      - design/**
+      - .ai/design/**
+      - Docs/Design/**
+    forbidden:
+      - apps/android/app/src/**
+      - Backend/src/**
+    requires_human_approval_before_handoff: true
+
+  tester:
+    role: testing
+    writable:
+      - tests/**
+      - .ai/bugs/**
+    forbidden:
+      - apps/android/app/src/**
+      - Backend/src/**
+
+  fixer:
+    role: bugfix
+    writable:
+      - apps/android/app/src/**
+      - Backend/src/**
+
+  reviewer:
+    role: review
+    can_code: false
+
+  security:
+    role: security
+    can_code: false
+
+  devops:
+    role: devops
+    writable:
+      - infra/**
+      - scripts/**
+
+  documentation:
+    role: docs
+    writable:
+      - Docs/**
+      - .ai/**
+      - README.md
+      - UPDATETODOS.md
+      - Tasksrequiring.md
+      - TASK_LOG.md
+      - PROJECT_MEMORY.md

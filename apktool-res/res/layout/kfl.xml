@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/v_diversion_top" n0:background="@color/u" n0:layout_width="match_parent" n0:layout_height="0.0dp" />
+    <FrameLayout n0:id="@id/fl_diversion_root" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <View n0:id="@id/bg_view" n0:background="@color/u" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_marginBottom="30.0dp" />
+        <com.vega.ui.widget.RoundFrameLayout n0:layout_gravity="bottom" n0:id="@id/fl_diversion_content_root" n0:background="@android:color/white" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:i1="12.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                <ScrollView n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0">
+                    <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+                        <ImageView n0:id="@id/iv_diversion_header_img" n0:layout_width="match_parent" n0:layout_height="210.0dp" n0:scaleType="centerCrop" />
+                        <ImageView n0:layout_width="49.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="16.0dp" n0:src="@drawable/nza" n0:layout_marginStart="24.0dp" />
+                        <com.vega.theme.text.VegaTextView n0:textSize="22.0sp" n0:textColor="#090c14" n0:id="@id/tv_diversion_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:lineSpacingExtra="4.0dp" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" n1:k1i="bold" />
+                        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#b2141d2d" n0:id="@id/tv_diversion_content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="4.0dp" n0:lineSpacingExtra="6.0dp" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" n1:k1i="regular" />
+                    </LinearLayout>
+                </ScrollView>
+                <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#b3141d2d" n0:id="@id/tv_diversion_tips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:lineSpacingExtra="5.0dp" n0:layout_marginStart="24.0dp" n0:layout_marginEnd="24.0dp" n1:k1i="regular" />
+                <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ll_diversion_copy_link" n0:background="@drawable/ke3" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="10.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp">
+                    <View n0:background="@drawable/nzy" n0:layout_width="20.0dp" n0:layout_height="20.0dp" />
+                    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#090c14" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/lp5" n0:layout_marginStart="4.0dp" n1:k1i="medium" />
+                </LinearLayout>
+                <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#090c14" n0:gravity="center" n0:id="@id/iv_diversion_send_email" n0:background="@drawable/ke4" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="8.0dp" n0:text="@string/lp6" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n1:k1i="medium" />
+                <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginTop="24.0dp" n0:layout_marginBottom="34.0dp">
+                    <ImageView n0:id="@id/iv_diversion_whatapps" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nzb" />
+                    <ImageView n0:id="@id/iv_diversion_facebook" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nzw" n0:layout_marginStart="24.0dp" />
+                    <ImageView n0:id="@id/iv_diversion_ins" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nzx" n0:layout_marginStart="24.0dp" />
+                    <ImageView n0:id="@id/iv_diversion_other" n0:layout_width="44.0dp" n0:layout_height="44.0dp" n0:src="@drawable/nzz" n0:layout_marginStart="24.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView n0:layout_gravity="end|top" n0:id="@id/iv_diversion_close" n0:padding="8.0dp" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n0:src="@drawable/m74" />
+        </com.vega.ui.widget.RoundFrameLayout>
+    </FrameLayout>
+</LinearLayout>

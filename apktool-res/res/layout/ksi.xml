@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.edit.base.favorite.FavoriteView n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/image_root" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintDimensionRatio="1:1" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/uj"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.lvui.widget.MaterialDraweeView n0:id="@id/image" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:src="@drawable/mol" n1:i1="@dimen/APKTOOL_RENAMED_0x7f0700c5" />
+    </com.vega.lvui.view.MaterialSelectableLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/tvEffectSet" n0:background="@drawable/kgl" n0:paddingLeft="4.0dp" n0:paddingTop="1.5dp" n0:paddingRight="4.0dp" n0:paddingBottom="1.5dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/lf7" n0:layout_marginStart="4.0dp" n2:layout_constraintStart_toStartOf="@id/image_root" n2:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/llCloseEffectSet" n0:background="@drawable/kgl" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_marginStart="1.0dp" n0:layout_marginEnd="1.0dp" n3:layout_constraintBottom_toBottomOf="@id/image_root" n3:layout_constraintLeft_toLeftOf="@id/image_root" n3:layout_constraintRight_toRightOf="@id/image_root" n3:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/nkj" />
+    </LinearLayout>
+    <ImageView n0:id="@id/icDownload" n0:background="@drawable/pcc" n0:padding="2.0dp" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:layout_margin="3.0dp" n0:src="@drawable/pce" n4:layout_constraintStart_toStartOf="@id/image_root" n4:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.edit.base.vipmaterial.VipBadgeBackgroundView n0:id="@id/vip_badge_background" n0:layout_width="26.0dp" n0:layout_height="26.0dp" n5:layout_constraintEnd_toEndOf="@id/image_root" n5:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:id="@id/vip_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="3.0dp" n6:layout_constraintEnd_toEndOf="@id/image_root" n6:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n6:kml="small" n6:kmm="mix" />
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/knt" n0:layout_gravity="center_vertical" n0:id="@id/vip_material_label" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="1.0dp" n6:k1i="bold" />
+    </LinearLayout>
+    <com.vega.ui.widget.RoundFrameLayout n0:id="@id/loading" n0:background="#e5222222" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n7:i1="@dimen/APKTOOL_RENAMED_0x7f0700c5" n7:layout_constraintBottom_toBottomOf="@id/image_root" n7:layout_constraintLeft_toLeftOf="@id/image_root" n7:layout_constraintRight_toRightOf="@id/image_root" n7:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n7:lottie_autoPlay="true" n7:lottie_fileName="lv_loading_s.json" n7:lottie_loop="true" />
+    </com.vega.ui.widget.RoundFrameLayout>
+    <FrameLayout n0:id="@id/error" n0:background="#e5222222" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n8:layout_constraintBottom_toBottomOf="@id/image_root" n8:layout_constraintLeft_toLeftOf="@id/image_root" n8:layout_constraintRight_toRightOf="@id/image_root" n8:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/odn" n0:scaleType="centerInside" />
+    </FrameLayout>
+    <ImageView n0:id="@id/is_support_web_effect" n0:background="@drawable/q38" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n9:layout_constraintBottom_toBottomOf="@id/image_root" n9:layout_constraintRight_toRightOf="@id/image_root"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.RoundLinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/llAdjustParams" n0:background="#cc242424" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="0.0dp" n10:i1="@dimen/APKTOOL_RENAMED_0x7f0700c5" n10:layout_constraintBottom_toBottomOf="@id/image_root" n10:layout_constraintLeft_toLeftOf="@id/image_root" n10:layout_constraintRight_toRightOf="@id/image_root" n10:layout_constraintTop_toTopOf="@id/image_root"
+      xmlns:n10="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_adjust_effect" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/m_r" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0dp" n0:textStyle="bold" n0:textColor="@color/gn" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tv_adjust_effect" n0:paddingLeft="2.0dp" n0:paddingRight="2.0dp" n0:visibility="visible" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="3.0dp" n0:text="@string/l6d" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:paddingHorizontal="2.0dp" />
+    </com.vega.ui.widget.RoundLinearLayout>
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="@color/gn" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/text" n0:focusable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" n0:paddingStart="3.0dp" n0:paddingEnd="3.0dp" n0:elevation="10.0dp" n11:layout_constraintTop_toBottomOf="@id/image_root"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+</com.vega.edit.base.favorite.FavoriteView>

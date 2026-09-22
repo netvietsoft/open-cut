@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/exportView" n0:background="@drawable/kix" n0:padding="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_margin="12.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/ivIcon" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n1:actualImageScaleType="fitCenter"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_weight="1.0" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="8.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="#fafbff" n0:ellipsize="marquee" n0:id="@id/tvTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#80edf0fd" n0:ellipsize="marquee" n0:id="@id/tvDescription" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="2.0dp" />
+    </LinearLayout>
+    <ImageView n0:id="@id/ivArrow" n0:padding="4.0dp" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/pru" n2:kd8="#80edf0fd"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

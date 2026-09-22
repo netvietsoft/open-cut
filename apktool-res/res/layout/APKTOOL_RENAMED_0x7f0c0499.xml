@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/sg" n0:fitsSystemWindows="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.VerticalViewPager n0:id="@id/vgPreview" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <FrameLayout n0:id="@id/fl_preview_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.state.pressed.PressedStateImageView n0:id="@id/ivClose" n0:layout_width="50.0dp" n0:layout_height="50.0dp" n0:src="@drawable/m65" n1:kr3="button" />
+    </FrameLayout>
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="vertical" n0:id="@id/guideLayout" n0:background="@color/_d" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center_horizontal" n0:id="@id/lavGuideAnimation" n0:layout_width="160.0dp" n0:layout_height="160.0dp" n2:lottie_autoPlay="true" n2:lottie_fileName="ai_creator_swipe_up.json" n2:lottie_loop="true"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="18.0dp" n0:textColor="@color/knt" n0:gravity="center_horizontal" n0:layout_gravity="center_horizontal" n0:id="@id/tvGuideTips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:text="@string/b4" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

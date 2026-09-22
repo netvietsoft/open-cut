@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.ColorSelectView n0:id="@id/csvTextColor" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="0.0dp" n0:layout_marginTop="8.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" style="@style/uf"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="#b2f6f7fe" n0:id="@id/tvTextAlphaDesc" n0:layout_marginTop="16.0dp" n0:text="@string/rob" n0:layout_marginStart="24.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/csvTextColor" style="@style/yo"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svTextAlpha" n0:layout_width="0.0dp" n0:layout_height="48.0dp" n0:layout_marginStart="14.0dp" n0:layout_marginEnd="14.0dp" n3:APKTOOL_RENAMED_0x7f04046d="false" n3:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n3:APKTOOL_RENAMED_0x7f040549="10.0dp" n3:APKTOOL_RENAMED_0x7f0405b7="true" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/tvTextAlphaDesc" n3:kkt="@color/APKTOOL_RENAMED_0x7f060639" n3:kkx="4.0dp" n3:kp6="true" n3:ksr="4.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

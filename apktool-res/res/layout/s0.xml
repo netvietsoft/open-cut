@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:paddingHorizontal="16.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/u9" n0:layout_gravity="center_vertical" n0:id="@id/scriptContent" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginVertical="16.0dp" />
+    <View n0:id="@id/devider_line" n0:background="@color/w7" n0:layout_width="match_parent" n0:layout_height="1.0dp" />
+</LinearLayout>

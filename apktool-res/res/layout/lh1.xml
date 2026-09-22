@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/f" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.track.HorizontalScrollContainer n0:id="@id/hscCoverFrameContainer" n0:layout_width="0.0dp" n0:layout_height="70.0dp" n0:layout_marginTop="28.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintHorizontal_bias="1.0" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.image.edit.main.view.CoverFrameView n0:id="@id/cfvCoverFrames" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" />
+    </com.vega.ui.track.HorizontalScrollContainer>
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/clEmptyTrackPlaceholder" n0:background="@color/ks" n0:focusable="true" n0:visibility="gone" n0:clickable="true" n0:layout_width="0.0dp" n0:layout_height="70.0dp" n2:layout_constraintBottom_toBottomOf="@id/hscCoverFrameContainer" n2:layout_constraintLeft_toRightOf="@id/ivPlayHead" n2:layout_constraintRight_toRightOf="@id/hscCoverFrameContainer" n2:layout_constraintTop_toTopOf="@id/hscCoverFrameContainer"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/ivEmptyTrackIcon" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:src="@drawable/on6" n0:layout_marginStart="20.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="10.0dp" n0:textColor="@color/mn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/ldn" n0:layout_marginStart="8.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/ivEmptyTrackIcon" n2:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/upload_alblum_photo" n0:background="@drawable/APKTOOL_RENAMED_0x7f082bb0" n0:layout_width="70.0dp" n0:layout_height="70.0dp" n0:layout_marginTop="28.0dp" n0:layout_marginRight="20.0dp" n0:scaleType="centerCrop" n3:layout_constraintRight_toLeftOf="@id/ivPlayHead" n3:layout_constraintTop_toTopOf="parent" n3:roundedCornerRadius="8.0dp"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center" n0:id="@id/btn_upload_container" n0:background="@drawable/APKTOOL_RENAMED_0x7f082baf" n0:layout_width="70.0dp" n0:layout_height="70.0dp" n0:layout_marginTop="28.0dp" n0:layout_marginRight="20.0dp" n4:layout_constraintRight_toLeftOf="@id/ivPlayHead" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_upload_icon" n0:layout_width="18.0dp" n0:layout_height="18.0dp" n0:layout_marginTop="16.0dp" n0:src="@drawable/pmu" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" />
+        <TextView n0:textSize="10.0sp" n0:textColor="#b3f6f7fe" n0:id="@id/tv_upload" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="@string/APKTOOL_RENAMED_0x7f120ca6" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/iv_upload_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:id="@id/removeImageIcon" n0:focusable="false" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:src="@drawable/obw" n0:scaleType="centerCrop" n0:translationX="6.0dp" n0:translationY="-6.0dp" n5:layout_constraintRight_toRightOf="@id/upload_alblum_photo" n5:layout_constraintTop_toTopOf="@id/upload_alblum_photo"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivPlayHead" n0:layout_width="2.0dp" n0:layout_height="90.0dp" n0:layout_marginTop="21.0dp" n0:src="@drawable/p6v" n0:scaleType="centerCrop" n6:layout_constraintLeft_toLeftOf="parent" n6:layout_constraintRight_toRightOf="parent" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#80edf0fd" n0:gravity="center" n0:id="@id/tv_hint" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/lkk" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/hscCoverFrameContainer"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0sp" n0:textColor="#00e1ec" n0:gravity="center" n0:id="@id/btn_smart_cover" n0:background="@drawable/lvu" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:minWidth="108.0dp" n0:text="@string/ldq" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/ojr" n0:paddingHorizontal="12.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toBottomOf="@id/hscCoverFrameContainer" n8:k1i="medium"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

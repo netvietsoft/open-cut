@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">%d آئٹم اپ لوڈ نہیں کر سکے۔ AutoCut جاری ہے۔</item>
+        <item quantity="other">%d آئٹمز اپ لوڈ نہیں کر سکے۔ AutoCut جاری ہے۔</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">منسلکہ: %d فائل</item>
+        <item quantity="other">منسلکہ: %d فائلز</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">%1$d کریڈٹ درکار ہے۔</item>
+        <item quantity="other">%1$d کریڈٹس درکار ہیں۔</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">آپ کے پاس %1$d کریڈٹ باقی ہے۔</item>
+        <item quantity="other">آپ کے پاس %1$d کریڈٹس باقی ہیں۔</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">آپ کے مفت کریڈٹس کی کٹوتی ہو جائے گی۔ %d مزید کریڈٹ درکار ہے۔</item>
+        <item quantity="other">آپ کے مفت کریڈٹس کی کٹوتی ہو جائے گی۔ %d مزید کریڈٹس درکار ہیں۔</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">%1$d کریڈٹ درکار ہے۔</item>
+        <item quantity="other">%1$d کریڈٹس درکار ہیں۔</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">آپ کے پاس %1$d کریڈٹ باقی ہے۔ جاری رکھنے کے لیے کریڈٹس خریدیں۔</item>
+        <item quantity="other">آپ کے پاس %1$d کریڈٹس باقی ہیں۔ جاری رکھنے کے لیے کریڈٹس خریدیں۔</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">%1$d کریڈٹ درکار ہے۔</item>
+        <item quantity="other">%1$d کریڈٹس درکار ہیں۔</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">آپ کے پاس %1$d کریڈٹ باقی ہے۔ کریڈٹس حاصل کرنے کے لیے اپ گریڈ کریں۔</item>
+        <item quantity="other">آپ کے پاس %1$d کریڈٹس باقی ہیں۔ کریڈٹس حاصل کرنے کے لیے اپ گریڈ کریں۔</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">%d کریڈٹ استعمال ہو گا</item>
+        <item quantity="other">%d کریڈٹس استعمال ہوں گے</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">آپ کے مفت کریڈٹس کی کٹوتی ہو جائے گی۔ %d مزید کریڈٹ درکار ہے۔</item>
+        <item quantity="other">آپ کے مفت کریڈٹس کی کٹوتی ہو جائے گی۔ %d مزید کریڈٹس درکار ہیں۔</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">‏%d ٹیمپلیٹ کی تجویز دی گئی ہے</item>
+        <item quantity="other">‏%d ٹیمپلیٹس کی تجویز دی گئی ہے</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">‏%d ویڈیو تیار ہو گئی</item>
+        <item quantity="other">‏%d ویڈیوز تیار ہو گئیں</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">سائن ان ہونے پر، آپ فی ماہ %d بار مفت خودکار کیپشنز اور خودکار لیرکس استعمال کر سکتے ہیں۔ مفت استعمال کی ہر مہینے کے شروع میں تجدید ہوتی ہے۔ ہر مرتبہ 1 استعمال کی کٹوتی کی جائے گی۔</item>
+        <item quantity="other">سائن ان ہونے پر، آپ فی ماہ %d مرتبہ مفت خودکار کیپشنز اور خودکار لیرکس استعمال کر سکتے ہیں۔ مفت استعمال کی ہر مہینے کے شروع میں تجدید ہوتی ہے۔ ہر مرتبہ 1 استعمال کی کٹوتی کی جائے گی۔</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">‏%d استعمال/ماہانہ</item>
+        <item quantity="other">‏%d استعمالات/ماہانہ</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">‏%d لفظ حذف کریں</item>
+        <item quantity="other">‏%d الفاظ حذف کریں</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">‏%d شہ سرخی</item>
+        <item quantity="other">‏%d شہ سرخیاں</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">‏%d پُر کرنے والا لفظ ملا ہے</item>
+        <item quantity="other">‏%d پُر کرنے والے الفاظ ملے ہیں</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">%d آئٹم تک منتخب کریں</item>
+        <item quantity="other">%d آئٹمز تک منتخب کریں</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">قطار میں تخمینی انتظار کا وقت: %d سیکنڈ</item>
+        <item quantity="other">قطار میں تخمینی انتظار کا وقت: %d سیکنڈز</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">تقریباً %d گھنٹہ باقی ہے</item>
+        <item quantity="other">تقریباً %d گھنٹے باقی ہیں</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">تقریباً %d منٹ باقی ہے</item>
+        <item quantity="other">تقریباً %d منٹ باقی ہیں</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">تقریباً %d سیکنڈ باقی ہے</item>
+        <item quantity="other">تقریباً %d سیکنڈ باقی ہیں</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">آڈیو کا نتیجہ (%d)</item>
+        <item quantity="other">آڈیو کے نتائج (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">فائل کا نتیجہ (%d)</item>
+        <item quantity="other">فائل کے نتائج (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">تیاری کا نتیجہ (%d)</item>
+        <item quantity="other">تیاری کے نتائج (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">منسلکہ: %d تصویر</item>
+        <item quantity="other">منسلکہ: %d تصاویر</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">منسلکہ: %d ویڈیو</item>
+        <item quantity="other">منسلکہ: %d ویڈیوز</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">تصویر کا نتیجہ (%d)</item>
+        <item quantity="other">تصویر کے نتائج (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">ویڈیو کا نتیجہ (%d)</item>
+        <item quantity="other">ویڈیو کے نتائج (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">%1$d AI متنی اثر کا اطلاق کر رہے ہیں... %2$d%%</item>
+        <item quantity="other">%1$d AI متنی اثرات کا اطلاق کر رہے ہیں... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">تمام کلپس پر %d اثاثے کا اطلاق کریں</item>
+        <item quantity="other">تمام کلپس پر %d اثاثہ جات کا اطلاق کریں</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">%d اثاثہ منتخب ہو گیا</item>
+        <item quantity="other">%d اثاثہ جات منتخب ہو گئے</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">%d دن کا Ultra</item>
+        <item quantity="other">%d دن کا Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d کردار</item>
+        <item quantity="other">%d کردار</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">‏%d سے زیادہ کردار منتخب نہ کریں</item>
+        <item quantity="other">%d سے زیادہ کردار منتخب نہ کریں</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">‏%d کلپ کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہے</item>
+        <item quantity="other">‏%d کلپس کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہیں</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">‏%d فونٹ کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہے</item>
+        <item quantity="other">‏%d فونٹس کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہیں</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">‏%d آواز کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہے</item>
+        <item quantity="other">‏%d آوازیں کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہیں</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">‏%d کلپ کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہے اور اسے تبدیل نہیں کیا جا سکتا</item>
+        <item quantity="other">‏%d کلپس کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہیں اور انہیں تبدیل نہیں کیا جا سکتا</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">‏%d فونٹ کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہے اور اسے تبدیل نہیں کیا جا سکتا</item>
+        <item quantity="other">‏%d فونٹس کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہیں اور انہیں تبدیل نہیں کیا جا سکتا</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">‏%d آواز کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہے اور اسے تبدیل نہیں کیا جا سکتا</item>
+        <item quantity="other">‏%d آوازیں کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہیں اور انہیں تبدیل نہیں کیا جا سکتا</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">‏%d اسٹیکر کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہے اور اسے تبدیل نہیں کیا جا سکتا</item>
+        <item quantity="other">‏%d اسٹیکرز کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہیں اور انہیں تبدیل نہیں کیا جا سکتا</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">‏%d اسٹیکر کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہے</item>
+        <item quantity="other">‏%d اسٹیکرز کمرشل استعمال کے لئے لائسنس یافتہ نہیں ہیں</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">‏%d تبصرہ حذف کریں؟</item>
+        <item quantity="other">‏%d تبصرے حذف کریں؟</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">آپ نے %d اکاؤنٹ منتخب کیا۔ صرف آپ اور آپ کی جانب سے پابند کردہ فرد ان کے تبصرے دیکھے گا۔</item>
+        <item quantity="other">آپ نے %d اکاؤنٹس منتخب کیے۔ صرف آپ اور آپ کی جانب سے پابند کردہ افراد ان کے تبصرے دیکھیں گے۔</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">‏%d اکاؤنٹ کو محدود کریں؟</item>
+        <item quantity="other">‏%d اکاؤنٹس کو محدود کریں؟</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">‏%d دن</item>
+        <item quantity="other">‏%d دنوں</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">آپ کو %s نئے تخلیق کار کا پیغام ملا ہے</item>
+        <item quantity="other">آپ کو %s نئے تخلیق کار کے پیغامات ملے ہیں</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">%d دن تک زائد المیعاد ہو گیا</item>
+        <item quantity="other">%d دنوں تک زائد المیعاد ہو گیا</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">آپ Pro خصوصیت استعمال کر رہے ہیں۔ %d مفت استعمال باقی ہے۔ لامحدود استعمال کے لیے Pro میں شامل ہوں۔</item>
+        <item quantity="other">آپ Pro خصوصیت استعمال کر رہے ہیں۔ %d مفت استعمالات باقی ہیں۔ لامحدود استعمال کے لیے Pro میں شامل ہوں۔</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">آپ اسٹینڈرڈ خصوصیت استعمال کر رہے ہیں۔ %d مفت استعمال باقی ہے۔ لامحدود استعمال کے لیے اسٹینڈرڈ میں شامل ہوں۔</item>
+        <item quantity="other">آپ اسٹینڈرڈ خصوصیت استعمال کر رہے ہیں۔ %d مفت استعمالات باقی ہیں۔ لامحدود استعمال کے لیے اسٹینڈرڈ میں شامل ہوں۔</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">آپ Pro خصوصیت استعمال کر رہے ہیں۔ اس ماہ کا %d مفت استعمال باقی ہے۔ لامحدود استعمال کے لیے Pro میں شامل ہوں۔</item>
+        <item quantity="other">آپ Pro خصوصیت استعمال کر رہے ہیں۔ اس ماہ کے %d مفت استعمالات باقی ہیں۔ لامحدود استعمال کے لیے Pro میں شامل ہوں۔</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">آپ اسٹینڈرڈ خصوصیت استعمال کر رہے ہیں۔ اس ماہ کا %d مفت استعمال باقی ہے۔ لامحدود استعمال کے لیے اسٹینڈرڈ میں شامل ہوں۔</item>
+        <item quantity="other">آپ اسٹینڈرڈ خصوصیت استعمال کر رہے ہیں۔ اس ماہ کے %d مفت استعمالات باقی ہیں۔ لامحدود استعمال کے لیے اسٹینڈرڈ میں شامل ہوں۔</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d دن مفت</item>
+        <item quantity="other">%d دن مفت</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">‏%2$d ہفتے کے بعد %1$s</item>
+        <item quantity="other">‏%2$d ہفتوں کے بعد %1$s</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">آپ کو فی ماہ Pro ٹیمپلیٹس کا %d مفت استعمال ملا ہے۔</item>
+        <item quantity="other">آپ کو فی ماہ Pro ٹیمپلیٹس کے %d مفت استعمالات ملے ہیں۔</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">‏%d مفت استعمال</item>
+        <item quantity="other">‏%d مفت استعمالات</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">%d دن مفت آزمائیں</item>
+        <item quantity="other">%d دن مفت آزمائیں</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">‏%d موسیقی کے کاپی رائٹ کا مسئلہ</item>
+        <item quantity="other">‏%d موسیقی کے کاپی رائٹ کے مسائل</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">‏%d متن منتخب کیا گیا</item>
+        <item quantity="other">‏%d متن منتخب کیے گئے</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">‏%d کلپ منتخب ہو گیا</item>
+        <item quantity="other">‏%d کلپس منتخب ہو گئے</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">لامحدود مفت برآمد سے %1$d دن تک لطف اندوز ہوں، یا لامحدود اعلیٰ ریزولیوشن کی مکمل برآمد کے لیے محض اپ گریڈ کریں۔</item>
+        <item quantity="other">لامحدود مفت برآمد سے %1$d دنوں تک لطف اندوز ہوں، یا لامحدود اعلیٰ ریزولیوشن کی مکمل برآمد کے لیے محض اپ گریڈ کریں۔</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">مفت %d مرتبہ 1080p میں برآمد کریں</item>
+        <item quantity="other">مفت %d مرتبہ 1080p میں برآمد کریں</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">‏1080p میں %d مفت برآمد باقی ہے۔ لامحدود اعلیٰ ریزولیوشن کی برآمد سے لطف اندوز ہونے کے لیے اپ گریڈ کریں۔</item>
+        <item quantity="other">‏1080p میں %d مفت برآمدات باقی ہیں۔ لامحدود اعلیٰ ریزولیوشن کی برآمد سے لطف اندوز ہونے کے لیے اپ گریڈ کریں۔</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">اس ماہ میں 1080p میں %d مفت برآمد باقی ہے۔ لامحدود اعلیٰ ریزولیوشن کی برآمد سے لطف اندوز ہونے کے لیے اپ گریڈ کریں۔</item>
+        <item quantity="other">اس ماہ میں 1080p میں %d مفت برآمدات باقی ہیں۔ لامحدود اعلیٰ ریزولیوشن کی برآمد سے لطف اندوز ہونے کے لیے اپ گریڈ کریں۔</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">%d کریڈٹ درکار ہے۔</item>
+        <item quantity="other">%d کریڈٹس درکار ہیں۔</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">آپ کے پاس %d کریڈٹ باقی ہے۔</item>
+        <item quantity="other">آپ کے پاس %d کریڈٹس باقی ہیں۔</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">%1$d تیاری میں پیش رفت جاری ہے۔ ایک مرتبہ میں %2$d تک تیار کرنے کے لیے Pro پر اپ گریڈ کریں۔</item>
+        <item quantity="other">%1$d تیاریوں میں پیش رفت جاری ہے۔ ایک مرتبہ میں %2$d تک تیار کرنے کے لیے Pro پر اپ گریڈ کریں۔</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">واٹر مارک کے بغیر برآمد کریں (%d استعمال باقی ہے)</item>
+        <item quantity="other">واٹر مارک کے بغیر برآمد کریں (%d استعمالات باقی ہیں)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">%d مفت استعمال باقی ہے۔ کوئی کریڈٹس درکار نہیں۔</item>
+        <item quantity="other">%d مفت استعمالات باقی ہیں۔ کوئی کریڈٹس درکار نہیں۔</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">آپ کا منتخب کردہ آئٹم حذف ہو جائے گا اور %d دن تک ٹریش میں رہے گا۔</item>
+        <item quantity="other">آپ کے منتخب کردہ آئٹمز حذف ہو جائیں گے اور %d دن تک ٹریش میں رہیں گے۔</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">منتخب کردہ آئٹمز میں سے ایک اسپیس میں اپ لوڈ کر دیا گیا ہے۔ بہرحال حذف کریں؟</item>
+        <item quantity="other">منتخب کردہ آئٹمز میں سے کچھ اسپیس میں اپ لوڈ کر دیے گئے ہیں۔ بہرحال حذف کریں؟</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">آپ کا منتخب کردہ آئٹم حذف کر دیا اور ٹریش میں منتقل کر دیا جائے گا۔</item>
+        <item quantity="other">آپ کے منتخب کردہ آئٹمز حذف کر دیئے اور ٹریش میں منتقل کر دیے جائیں گے۔</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">‏%d استعمال</item>
+        <item quantity="other">‏%d استعمالات</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">آپ کی درج کردہ تاریخ پیدائش سے گنتی کی گئی عمر %d سال ہے اور غلط معلوم ہوتی ہے۔ اپنی اصل تاریخ پیدائش درج کریں۔</item>
+        <item quantity="other">آپ کی درج کردہ تاریخ پیدائش سے گنتی کی گئی عمر %d سال ہے اور غلط معلوم ہوتی ہے۔ اپنی اصل تاریخ پیدائش درج کریں۔</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">ماضی کی خریداریوں سے 1 مفت استعمال اور Pro کے لیے %d اضافی مفت استعمال شامل ہوتا ہے</item>
+        <item quantity="other">ماضی کی خریداریوں سے 1 مفت استعمال اور Pro کے لیے %d اضافی مفت استعمالات شامل ہوتے ہیں</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">‏Pro کو %d مفت استعمال ملتا ہے</item>
+        <item quantity="other">‏Pro کو %d مفت استعمالات ملتے ہیں</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">آپ کے ویڈیوز سے تخلیق کردہ اوتارز اب مستقل طور پر موزوں ہیں۔ Pro میں شامل ہوں اور %d مفت حسب ضرورت کاری حاصل کریں۔</item>
+        <item quantity="other">آپ کے ویڈیوز سے تخلیق کردہ اوتارز اب مستقل طور پر موزوں ہیں۔ Pro میں شامل ہوں اور %d مفت حسب ضرورت کاریاں حاصل کریں۔</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">اس اثر کا اطلاق کرنے سے %d کریڈٹ استعمال ہو گا۔</item>
+        <item quantity="other">اس اثر کا اطلاق کرنے سے %d کریڈٹس استعمال ہوں گے۔</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">اب آپ کے پاس %d کریڈٹ دستیاب ہے۔</item>
+        <item quantity="other">اب آپ کے پاس %d کریڈٹس دستیاب ہیں۔</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">‏%d شہ سرخی</item>
+        <item quantity="other">‏%d شہ سرخیاں</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">‏AI اثر کا اطلاق کیا جا رہا ہے… %s گھنٹہ باقی ہے</item>
+        <item quantity="other">‏AI اثر کا اطلاق کیا جا رہا ہے… %s گھنٹے باقی ہیں</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">‏AI اثر کا اطلاق کیا جا رہا ہے… %s منٹ باقی ہے</item>
+        <item quantity="other">‏AI اثر کا اطلاق کیا جا رہا ہے… %s منٹس باقی ہیں</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">‏Pro اثر، %1$s، کا موجودہ آئٹم پر اطلاق ہو گیا ہے۔ اس کا دوبارہ نئے آئٹم پر اطلاق کرنے سے %2$d کریڈٹ خرچ ہو جائے گا۔</item>
+        <item quantity="other">موجودہ آئٹم پر %1$s Pro اثر کا اطلاق کر دیا گیا ہے۔ نئے آئٹم پر دوبارہ اس کا اطلاق کرنے سے %2$d کریڈٹس خرچ ہوں گے۔</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">‏%1$d مفت استعمال کی کٹوتی ہو گی۔ آپ کے پاس ابھی %2$d مفت استعمال ہے۔</item>
+        <item quantity="other">‏%1$d مفت استعمال کی کٹوتی ہو گی۔ آپ کے پاس ابھی %2$d مفت استعمالات ہیں۔</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">‏%1$d Pro استعمال کی کٹوتی ہو گی۔ آپ کے پاس ابھی %2$d Pro استعمال ہے۔</item>
+        <item quantity="other">‏%1$d Pro استعمال کی کٹوتی ہو گی۔ آپ کے پاس ابھی %2$d Pro استعمالات ہیں۔</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">یہ ماڈل صرف %d ریفرنس تصویر کی معاونت کرتا ہے</item>
+        <item quantity="other">یہ ماڈل صرف %d ریفرنس تصاویر کی معاونت کرتا ہے</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">اس ماڈل کو استعمال کرنے کے لیے کم از کم %d ریفرنس تصویر شامل کریں</item>
+        <item quantity="other">اس ماڈل کو استعمال کرنے کے لیے کم از کم %d ریفرنس تصاویر شامل کریں</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">یہ ماڈل صرف %d ریفرنس ویڈیو کی معاونت کرتا ہے</item>
+        <item quantity="other">یہ ماڈل صرف %d ریفرنس ویڈیوز کی معاونت کرتا ہے</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">اس ماڈل کو استعمال کرنے کے لیے کم از کم %d ریفرنس ویڈیو شامل کریں</item>
+        <item quantity="other">اس ماڈل کو استعمال کرنے کے لیے کم از کم %d ریفرنس ویڈیوز شامل کریں</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">%d تصویر منتخب کریں</item>
+        <item quantity="other">%d تصاویر منتخب کریں</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">‏%d مواد شامل ہو گیا</item>
+        <item quantity="other">‏%d امواد شامل ہو گئے</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">‏%d باقی تخلیق</item>
+        <item quantity="other">‏%d باقی تخلیقات</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">‏%d ان لاک باقی ہے</item>
+        <item quantity="other">‏%d ان لاکس باقی ہیں</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">‏%d کلیدی لفظ نمایاں کیا گیا۔ آپ دستی طور پر بھی منتخب کر سکتے ہیں۔</item>
+        <item quantity="other">‏%d کلیدی الفاظ نمایاں کیے گئے۔ آپ دستی طور پر بھی منتخب کر سکتے ہیں۔</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">‏%d کلپ حذف کریں</item>
+        <item quantity="other">‏%d کلپس حذف کریں</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">‏%d خانہ پُری لفظ کی نشاندہی کی گئی۔ آپ دستی طور پر بھی منتخب کر سکتے ہیں۔</item>
+        <item quantity="other">‏%d خانہ پُری الفاظ کی نشاندہی کی گئی۔ آپ دستی طور پر بھی منتخب کر سکتے ہیں۔</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">‏%d کلیدی لفظ نمایاں کیا گیا</item>
+        <item quantity="other">‏%d کلیدی الفاظ نمایاں کیے گئے</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">‏%d تصویر برآمد کر رہے ہیں…</item>
+        <item quantity="other">‏%d تصاویر برآمد کر رہے ہیں…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">%d پوز تک کا انتخاب کریں</item>
+        <item quantity="other">%d پوزز تک کا انتخاب کریں</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">آپ کی میڈیا فائل اپ لوڈ کی جا رہی ہے</item>
+        <item quantity="other">آپ کی میڈیا فائلز اپ لوڈ کی جا رہی ہیں</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">‏%d ممبر</item>
+        <item quantity="other">‏%d ممبرز</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">اپنی ڈیوائس کی اسٹوریج خالی کرنے کے لئے %d پروجیکٹ اسپیس پر اپ لوڈ کریں۔ آپ موبائل ایپ، ڈیسک ٹاپ ایپ، یا آن لائن ترمیم کار پر ان پروجیکٹس میں ترمیم کر سکتے ہیں۔</item>
+        <item quantity="other">اپنی ڈیوائس کی اسٹوریج خالی کرنے کے لئے %d پروجیکٹس اسپیس پر اپ لوڈ کریں۔ آپ موبائل ایپ، ڈیسک ٹاپ ایپ، یا آن لائن ترمیم کار پر ان پروجیکٹس میں ترمیم کر سکتے ہیں۔</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">اپنے پروجیکٹس میں موجود %d میڈیا فائل کو اسپیس پر اپ لوڈ کریں۔ آپ اس فائل کو دوبارہ اپ لوڈ کئے بغیر کسی بھی ڈیوائس پر استعمال کر سکتے ہیں۔</item>
+        <item quantity="other">اپنے پروجیکٹس میں موجود %d میڈیا فائلز کو اسپیس پر اپ لوڈ کریں۔ آپ ان فائلز کو دوبارہ اپ لوڈ کئے بغیر کسی بھی ڈیوائس پر استعمال کر سکتے ہیں۔</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">آپ کے پاس بحال کرنے کے لیے پروجیکٹ موجود ہے</item>
+        <item quantity="other">آپ کے پاس بحال کرنے کے لیے پروجیکٹس موجود ہیں</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">پروجیکٹ بحال ہو گیا</item>
+        <item quantity="other">پروجیکٹس بحال ہو گئے</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">‏%d خصوصیت کا اطلاق نہیں کیا جا سکا</item>
+        <item quantity="other">‏%d خصوصیات کا اطلاق نہیں کیا جا سکا</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">‏%d خصوصیت کا اطلاق کر رہے ہیں</item>
+        <item quantity="other">‏%d خصوصیات کا اطلاق کر رہے ہیں</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">‏Pro اثر کا اطلاق کریں؟</item>
+        <item quantity="other">‏Pro اثرات کا اطلاق کریں؟</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">موجودہ آئٹم پر %1$d Pro اثر کا اطلاق کر دیا گیا ہے۔ نئے آئٹم پر دوبارہ اس کا اطلاق کرنے سے %2$d کریڈٹس خرچ ہوں گے۔</item>
+        <item quantity="other">موجودہ آئٹم پر %1$d Pro اثر کا اطلاق کر دیا گیا ہے۔ نئے آئٹم پر دوبارہ اس کا اطلاق کرنے سے %2$d کریڈٹس خرچ ہوں گے۔</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">موجودہ آئٹم پر %1$d Pro اثر کا اطلاق کر دیا گیا ہے۔ نئے آئٹم پر دوبارہ اس کا اطلاق کرنے کے لیے %2$d مفت استعمال کی کٹوتی کی جائے گی۔ کوئی کریڈٹس خرچ نہیں ہوں گے۔</item>
+        <item quantity="other">موجودہ آئٹم پر %1$d Pro اثر کا اطلاق کر دیا گیا ہے۔ نئے آئٹم پر دوبارہ اس کا اطلاق کرنے کے لیے %2$d مفت استعمال کی کٹوتی کی جائے گی۔ کوئی کریڈٹس خرچ نہیں ہوں گے۔</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">موجودہ آئٹم پر %1$d Pro اثر کا اطلاق کر دیا گیا ہے۔ آپ کو نئے آئٹم پر دوبارہ اس کا اطلاق کرنے کے لیے %2$d کریڈٹس کی ضرورت ہے۔</item>
+        <item quantity="other">موجودہ آئٹم پر %1$d Pro اثر کا اطلاق کر دیا گیا ہے۔ آپ کو نئے آئٹم پر دوبارہ اس کا اطلاق کرنے کے لیے %2$d کریڈٹس کی ضرورت ہے۔</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">موجودہ آئٹم پر %1$d Pro اثرات کا اطلاق کر دیا گیا ہے۔ نئے آئٹم پر دوبارہ ان کا اطلاق کرنے سے %2$d مفت استعمال اور %3$d کریڈٹس خرچ ہوں گے۔</item>
+        <item quantity="other">موجودہ آئٹم پر %1$d Pro اثرات کا اطلاق کر دیا گیا ہے۔ نئے آئٹم پر دوبارہ ان کا اطلاق کرنے سے %2$d مفت استعمال اور %3$d کریڈٹس خرچ ہوں گے۔</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">‏%d کلپ غائب ہے۔ اسے اپنے فون پر بحال کریں یا اسے تبدیل کریں۔</item>
+        <item quantity="other">‏%d کلپس غائب ہیں۔ انہیں اپنے فون پر بحال کریں یا انہیں تبدیل کریں۔</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">‏%d حرف سے زیادہ درج نہ کریں</item>
+        <item quantity="other">‏%d حروف سے زیادہ درج نہ کریں</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">‏%d دن</item>
+        <item quantity="other">‏%d دن</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">آئٹم حذف کریں؟</item>
+        <item quantity="other">آئٹمز حذف کریں؟</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">ٹریش میں منتقل کردہ آئٹمز یہاں ظاہر ہوں گے اور %d دن کے بعد حذف کر دیے جائیں گے۔</item>
+        <item quantity="other">ٹریش میں منتقل کردہ آئٹمز یہاں ظاہر ہوں گے اور %d دنوں کے بعد حذف کر دیے جائیں گے۔</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">‏%d آئٹم ڈاؤن لوڈ ہو رہا ہے…</item>
+        <item quantity="other">‏%d آئٹمز ڈاؤن لوڈ ہو رہے ہیں…</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">‏%d آئٹم اپ لوڈ ہو رہا ہے…</item>
+        <item quantity="other">‏%d آئٹمز اپ لوڈ ہو رہے ہیں…</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">اس آئٹم کو مستقل طور پر حذف کر دیا جائے گا اور اسے بحال نہیں کیا جا سکتا۔</item>
+        <item quantity="other">ان آئٹمز کو مستقل طور پر حذف کر دیا جائے گا اور انہیں بحال نہیں کیا جا سکتا۔</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">آئٹم منتقل ہو گیا</item>
+        <item quantity="other">آئٹمز منتقل ہو گئے</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">آپ کے پاس ابھی بھی دستیاب مفت برآمد کے %d دن موجود ہے۔</item>
+        <item quantity="other">آپ کے پاس ابھی بھی دستیاب مفت برآمد کے %d دن موجود ہیں۔</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">مبارک ہو! آپ کو واٹر مارک کے بغیر برآمد کرنے کے لیے ماہانہ %d مفت استعمال ملا ہے۔</item>
+        <item quantity="other">مبارک ہو! آپ کو واٹر مارک کے بغیر برآمد کرنے کے لیے ماہانہ %d مفت استعمالات ملے ہیں۔</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">آپ کے پاس ابھی بھی واٹر مارک کے بغیر برآمد کرنے کے لیے %d مفت استعمال موجود ہے۔</item>
+        <item quantity="other">آپ کے پاس ابھی بھی واٹر مارک کے بغیر برآمد کرنے کے لیے %d مفت استعمالات موجود ہیں۔</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">مبارک ہو! آپ کو واٹر مارک کے بغیر برآمد کرنے کے لیے %d مفت استعمال ملا ہے۔</item>
+        <item quantity="other">مبارک ہو! آپ کو واٹر مارک کے بغیر برآمد کرنے کے لیے %d مفت استعمالات ملے ہیں۔</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">‏%d استعمال</item>
+        <item quantity="other">‏%d استعمالات</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">پہلی بار والوں کے لیے %d کریڈٹ کی بچت۔ اگر تجاوز کر گئے تو مزید کریڈٹس استعمال ہوں گے۔</item>
+        <item quantity="other">پہلی بار والوں کے لیے %d کریڈٹس کی بچت۔ اگر تجاوز کر گئے تو مزید کریڈٹس استعمال ہوں گے۔</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">اس خصوصیت کا اطلاق کرنے کے لیے %d مزید کریڈٹ درکار ہے</item>
+        <item quantity="other">اس خصوصیت کا اطلاق کرنے کے لیے %d مزید کریڈٹس درکار ہیں</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">کلپ %d سیکنڈ سے تجاوز نہیں کرنا چاہیئے</item>
+        <item quantity="other">کلپ %d سیکنڈز سے تجاوز نہیں کرنا چاہیئے</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">آپ کے پاس %d کریڈٹ باقی ہے۔</item>
+        <item quantity="other">آپ کے پاس %d کریڈٹس باقی ہیں۔</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">{$benefit_name$} کا اطلاق کرنے سے {$credit_amount$} کریڈٹ خرچ ہو گا۔</item>
+        <item quantity="other">{$benefit_name$} کا اطلاق کرنے سے {$credit_amount$} کریڈٹس خرچ ہوں گے۔</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">اس خصوصیت کا اطلاق کرنے پر %d کریڈٹ خرچ ہو گا۔</item>
+        <item quantity="other">اس خصوصیت کا اطلاق کرنے پر %d کریڈٹس خرچ ہوں گے۔</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">اس ٹیمپلیٹ کو استعمال کرنے سے %d کریڈٹ استعمال ہو گا۔</item>
+        <item quantity="other">اس ٹیمپلیٹ کو استعمال کرنے سے %d کریڈٹس استعمال ہوں گے۔</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">یہ مستقل طور پر حذف کر دیا جائے گا اور بحال نہیں کیا جا سکتا۔</item>
+        <item quantity="other">یہ مستقل طور پر حذف کر دیے جائیں گے اور بحال نہیں کیے جا سکتے۔</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">یہ آئٹم حذف کریں؟</item>
+        <item quantity="other">یہ آئٹمز حذف کریں؟</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">‏%1$d \"%1$s\" پروجیکٹ</item>
+        <item quantity="other">‏%1$d \"%1$s\" پروجیکٹس</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">‏%d آئٹم ٹریش میں منتقل کر دیا گیا</item>
+        <item quantity="other">‏%d آئٹمز ٹریش میں منتقل کر دیے گئے</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">‏%d آئٹم پسندیدگان میں شامل کردیا گیا</item>
+        <item quantity="other">‏%d آئٹمز پسندیدگان میں شامل کر دیے گئے</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">‏%d آئٹم پسندیدگان سے ہٹا دیا گیا</item>
+        <item quantity="other">‏%d آٹمز پسندیدگان سے ہٹا دیئے گئے</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">یہ ایک خالی اسپیس ہے اور اس میں %1$d ممبرز ہو سکتے ہیں۔ اس میں %2$s مزید ممبر کو دعوت دی جا سکتی ہے۔</item>
+        <item quantity="other">یہ ایک خالی اسپیس ہے اور اس میں %1$d ممبرز ہو سکتے ہیں۔ اس میں %2$s مزید ممبرز کو دعوت دی جا سکتی ہے۔</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">‏%d استعمال/ماہانہ</item>
+        <item quantity="other">‏%d استعمالات/ماہانہ</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d استعمال/دن</item>
+        <item quantity="other">%d استعمالات/دن</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d استعمال/ہفتہ</item>
+        <item quantity="other">%d استعمالات/ہفتہ</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">‏{number} ماہ کے بعد {price}</item>
+        <item quantity="other">‏{number} مہینوں کے بعد {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">‏%2$d ماہ کے بعد %1$s</item>
+        <item quantity="other">‏%2$d مہینوں کے بعد %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">‏{number} سال کے بعد {price}</item>
+        <item quantity="other">‏{number} سالوں کے بعد {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">‏%2$d سال کے بعد %1$s</item>
+        <item quantity="other">‏%2$d سالوں کے بعد %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">اس اسپیس میں %d ممبر موجود ہے۔</item>
+        <item quantity="other">اس اسپیس میں %d ممبرز موجود ہیں۔</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">آپ اب بھی %1$d ممبر کو دعوت دے سکتے ہیں۔</item>
+        <item quantity="other">آپ اب بھی %1$d ممبرز کو دعوت دے سکتے ہیں۔</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">‏%1$d سیٹ لی گئی ہے۔</item>
+        <item quantity="other">‏%1$d سیٹس لی گئیں ہیں۔</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">‏%d دن کے مفت ٹرائل کا آغاز کریں</item>
+        <item quantity="other">‏%d دن کے مفت ٹرائل کا آغاز کریں</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">%d کریڈٹ درکار ہے۔</item>
+        <item quantity="other">%d کریڈٹس درکار ہیں۔</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">آپ کے پاس %d کریڈٹ باقی ہے۔</item>
+        <item quantity="other">آپ کے پاس %d کریڈٹس باقی ہیں۔</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">‏%1$s/%2$s پروجیکٹ اپ لوڈ کر رہے ہیں</item>
+        <item quantity="other">‏%1$s/%2$s پروجیکٹس اپ لوڈ کر رہے ہیں</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"اس میڈیا فائل سے %d دیگر کلپ لنک ہو گیا۔ اسے بھی تبدیل کریں؟
+اصل دورانیے میں فٹ ہونے کے لیے فائل کو خودکار طور پر کاٹا جائے گا۔"</item>
+        <item quantity="other">"اس میڈیا فائل سے %d دیگر کلپس لنک ہو گئے۔ ان تمام کو تبدیل کریں؟
+اصل دورانیے میں فٹ ہونے کے لیے فائل کو خودکار طور پر کاٹا جائے گا۔"</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">آپ %d مزید تصویر اپ لوڈ کر سکتے ہیں</item>
+        <item quantity="other">آپ %d مزید تصاویر اپ لوڈ کر سکتے ہیں</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">اپ ڈیٹ ہونے کے لیے %d سیگمنٹ</item>
+        <item quantity="other">اپ ڈیٹ ہونے کے لیے %d سیگمنٹس</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">آپ اب بھی %1$d تصویر اور %2$s منتخب کر سکتے ہیں</item>
+        <item quantity="other">آپ اب بھی %1$d تصاویر اور %2$s منتخب کر سکتے ہیں</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(زیادہ سے زیادہ %d سیکنڈ)</item>
+        <item quantity="other">(زیادہ سے زیادہ %d سیکنڈز)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d ویڈیو</item>
+        <item quantity="other">%d ویڈیوز</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">آپ اب بھی %d تصویر منتخب کر سکتے ہیں</item>
+        <item quantity="other">آپ اب بھی %d تصاویر منتخب کر سکتے ہیں</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">آپ اب بھی %d ویڈیو منتخب کر سکتے ہیں</item>
+        <item quantity="other">آپ اب بھی %d ویڈیوز منتخب کر سکتے ہیں</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(زیادہ سے زیادہ %d سیکنڈ)</item>
+        <item quantity="other">(زیادہ سے زیادہ %d سیکنڈز)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">قطار میں... تقریباً %d منٹ باقی ہیں۔</item>
+        <item quantity="other">قطار میں... تقریباً %d منٹ باقی ہیں۔</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">انتظار کا وقت کم کریں</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">قطار میں... تقریباً %d سیکنڈ باقی ہے۔</item>
+        <item quantity="other">قطار میں... تقریباً %d سیکنڈز باقی ہیں۔</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">Pro کے ساتھ فوری قطار میں ہے... تقریباً %d منٹ باقی ہے۔</item>
+        <item quantity="other">Pro کے ساتھ فوری قطار میں ہے... تقریباً %d منٹس باقی ہیں۔</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">‏%d آئٹم</item>
+        <item quantity="other">‏%d آئٹمز</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">‏%d آئٹم منتخب ہو گیا</item>
+        <item quantity="other">‏%d آئٹمز منتخب ہو گئے</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">‏%d پروجیکٹ</item>
+        <item quantity="other">‏%d پروجیکٹس</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">‏%d پروجیکٹ منتخب ہو گیا</item>
+        <item quantity="other">‏%d پروجیکٹس منتخب ہو گئے</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">ابھی بہت سے لوگ اس خصوصیت کو استعمال کر رہے ہیں۔ آپ کا متوقع انتظار کا وقت %d منٹ ہے۔</item>
+        <item quantity="other">ابھی بہت سے لوگ اس خصوصیت کو استعمال کر رہے ہیں۔ آپ کا متوقع انتظار کا وقت %d منٹس ہے۔</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">دوبارہ تیار کرنے پر %d کریڈٹ خرچ ہو جائے گا۔</item>
+        <item quantity="other">دوبارہ تیار کرنے پر %d کریڈٹس خرچ ہو جائیں گے۔</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">نئے آئٹم کے ساتھ دوبارہ تیار کرنے سے %d کریڈٹ استعمال ہو گا۔</item>
+        <item quantity="other">نئے آئٹم کے ساتھ دوبارہ تیار کرنے سے %d کریڈٹس استعمال ہوں گے۔</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">‏%d کلپ شامل ہو گیا</item>
+        <item quantity="other">‏%d کلپس شامل ہو گئے</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">‏%d آئٹم منتخب کریں</item>
+        <item quantity="other">‏%d آئٹمز منتخب کریں</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">آپ کے لیے %d ویڈیو تیار کی</item>
+        <item quantity="other">آپ کے لیے %d ویڈیوز تیار کی ہیں</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">آپ صرف %d منٹ سے کم کی آڈیو علیحدہ کر سکتے ہیں</item>
+        <item quantity="other">آپ صرف %d منٹس سے کم کی آڈیو علیحدہ کر سکتے ہیں</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">آپ %d دن کے اندر اسپیس کو بحال کر سکتے ہیں۔</item>
+        <item quantity="other">آپ %d دنوں کے اندر اسپیس کو ری اسٹور کر سکتے ہیں۔</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">‏%d ویڈیو تیار کی جا رہی ہے۔ بعد میں دوبارہ کوشش کریں۔</item>
+        <item quantity="other">‏%d ویڈیوز تیار کی جا رہی ہیں۔ بعد میں دوبارہ کوشش کریں۔</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">اس خصوصیت کو %d کریڈٹ کے ساتھ استعمال کرنے کے لیے اپ گریڈ کریں</item>
+        <item quantity="other">اس خصوصیت کو %d کریڈٹس کے ساتھ استعمال کرنے کے لیے اپ گریڈ کریں</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">آپ کے پاس اس اسپیس میں صرف %d سیٹ باقی ہے۔</item>
+        <item quantity="other">آپ کے پاس اس اسپیس میں صرف %d سیٹس باقی ہیں۔</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">‏%d عنصر استعمال ہو گیا</item>
+        <item quantity="other">‏%d عناصر استعمال ہو گئے</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">‏%d آئٹم منتخب ہو گیا</item>
+        <item quantity="other">‏%d آئٹمز منتخب ہو گئے</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">‏%d آئٹم منتخب کریں</item>
+        <item quantity="other">‏%d آئٹمز منتخب کریں</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">‏%d کیپشن</item>
+        <item quantity="other">‏%d کیپشنز</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">‏%d آئٹم</item>
+        <item quantity="other">‏%d آئٹمز</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">‏%d خصوصیت کا اطلاق ہو رہا ہے۔ بعد میں دوبارہ کوشش کریں۔</item>
+        <item quantity="other">‏%d خصوصیات کا اطلاق ہو رہا ہے۔ بعد میں دوبارہ کوشش کریں۔</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">‏%d مفت استعمال باقی ہے۔ اسے کریڈٹس کے ساتھ استعمال کرنے کے لیے اسٹینڈرڈ میں شامل ہوں۔</item>
+        <item quantity="other">‏%d مفت استعمالات باقی ہیں۔ اسے کریڈٹس کے ساتھ استعمال کرنے کے لیے اسٹینڈرڈ میں شامل ہوں۔</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">‏%d مفت استعمال باقی ہے۔ اسے کریڈٹس کے ساتھ استعمال کرنے کے لیے Pro میں شامل ہوں۔</item>
+        <item quantity="other">‏%d مفت استعمالات باقی ہیں۔ اسے کریڈٹس کے ساتھ استعمال کرنے کے لیے Pro میں شامل ہوں۔</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">%d مفت استعمال باقی ہے۔ کریڈٹس کے ساتھ استعمال کرنے کے لیے Ultra حاصل کریں۔</item>
+        <item quantity="other">%d مفت استعمالات باقی ہیں۔ کریڈٹس کے ساتھ استعمال کرنے کے لیے Ultra حاصل کریں۔</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">اس سے %1$d کریڈٹ استعمال ہو گا۔ %2$s</item>
+        <item quantity="other">اس سے %1$d کریڈٹس استعمال ہوں گے۔ %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">آپ کے پاس %d کریڈٹ باقی ہے۔</item>
+        <item quantity="other">آپ کے پاس %d کریڈٹس باقی ہیں۔</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">%d کریڈٹ کے ساتھ استعمال کرنے کے لیے Ultra حاصل کریں</item>
+        <item quantity="other">%d کریڈٹس کے ساتھ استعمال کرنے کے لیے Ultra حاصل کریں</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">اس خصوصیت کو %d کریڈٹ کے ساتھ استعمال کرنے کے لیے Pro میں شامل ہوں۔</item>
+        <item quantity="other">اس خصوصیت کو %d کریڈٹس کے ساتھ استعمال کرنے کے لیے Pro میں شامل ہوں۔</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">اس خصوصیت کو %d کریڈٹ کے ساتھ استعمال کرنے کے لیے اسٹینڈرڈ میں شامل ہوں۔</item>
+        <item quantity="other">اس خصوصیت کو %d کریڈٹس کے ساتھ استعمال کرنے کے لیے اسٹینڈرڈ میں شامل ہوں۔</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">آپ %1$d سے زائد آواز محفوظ نہیں کر سکتے۔</item>
+        <item quantity="other">آپ %1$d سے زیادہ آوازیں محفوظ نہیں کر سکتے۔</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">‏%1$d منٹ سے طویل کلپ میں آواز بہتر نہیں بنا سکتے</item>
+        <item quantity="other">‏%1$d منٹس سے طویل کلپ میں آواز بہتر نہیں بنا سکتے</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">بہترین نتائج کے لیے %d آئٹم منتخب کریں</item>
+        <item quantity="other">بہترین نتائج کے لیے %d آئٹمز منتخب کریں</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">پہلے %2$d ماہ کے لیے %1$s میں تجدید ہوتی ہے، پھر %3$s میں۔</item>
+        <item quantity="other">پہلے %2$d مہینوں کے لیے %1$s میں تجدید ہوتی ہے، پھر %3$s میں۔</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">پہلے %2$d سال کے لیے %1$s میں تجدید ہوتی ہے، پھر %3$s میں۔</item>
+        <item quantity="other">پہلے %2$d سالوں کے لیے %1$s میں تجدید ہوتی ہے، پھر %3$s میں۔</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">آپ نے %d اپ ڈیٹ کی ہے۔ اسپیچ تیار کریں اور ہونٹ کی حرکات کو سنک کریں؟</item>
+        <item quantity="other">آپ نے %d اپ ڈیٹس کی ہیں۔ اسپیچ اور لپ سنک کی حرکات تیار کریں؟</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">‏%d مرتبہ باقی ہے</item>
+        <item quantity="other">‏%d مرتبہ باقی ہیں</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">‏%d خاموش کلپ موجود ہے۔</item>
+        <item quantity="other">‏%d خاموش کلپس موجود ہیں۔</item>
+    </plurals>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="#ff000000" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/mbridge_video_templete_webview_parent" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.mbridge.msdk.video.module.MBridgeVideoView n0:id="@id/mbridge_video_templete_videoview" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <com.mbridge.msdk.video.module.MBridgeContainerView n0:id="@id/mbridge_video_templete_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <RelativeLayout n0:id="@id/mbridge_video_templete_progressbar" n0:background="#ff000000" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <ProgressBar n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+    </RelativeLayout>
+</RelativeLayout>

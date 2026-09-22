@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:id="@id/fl_italic_container" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <RadioGroup n0:orientation="horizontal" n0:id="@id/rgTextAlignMode" n0:paddingLeft="@dimen/ua" n0:paddingTop="@dimen/ub" n0:paddingRight="@dimen/ua" n0:paddingBottom="@dimen/ub" n0:clipChildren="false" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:paddingHorizontal="@dimen/ua" n0:paddingVertical="@dimen/ub" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/fl_italic_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.vega.lvui.view.MaterialSelectableRadioButton n0:id="@id/text_align_start" n0:drawableTop="@drawable/qc-" n0:layout_marginStart="@dimen/uy" n0:layout_marginEnd="@dimen/uy" style="@style/vl" />
+        <com.vega.lvui.view.MaterialSelectableRadioButton n0:id="@id/text_align_center" n0:drawableTop="@drawable/qb6" n0:layout_marginStart="@dimen/uy" n0:layout_marginEnd="@dimen/uy" style="@style/vl" />
+        <com.vega.lvui.view.MaterialSelectableRadioButton n0:id="@id/text_align_end" n0:drawableTop="@drawable/qdk" n0:layout_marginStart="@dimen/uy" n0:layout_marginEnd="@dimen/uy" style="@style/vl" />
+        <com.vega.lvui.view.MaterialSelectableRadioButton n0:id="@id/text_align_top" n0:drawableTop="@drawable/qc7" n0:layout_marginStart="@dimen/uy" n0:layout_marginEnd="@dimen/uy" style="@style/vl" />
+        <com.vega.lvui.view.MaterialSelectableRadioButton n0:id="@id/text_align_v_center" n0:drawableTop="@drawable/qcd" n0:layout_marginStart="@dimen/uy" n0:layout_marginEnd="@dimen/uy" style="@style/vl" />
+        <com.vega.lvui.view.MaterialSelectableRadioButton n0:id="@id/text_align_bottom" n0:drawableTop="@drawable/qco" n0:layout_marginStart="@dimen/uy" n0:layout_marginEnd="@dimen/uy" style="@style/vl" />
+    </RadioGroup>
+    <Space n0:id="@id/sliderTextStartSpace" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginStart="16.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <Space n0:id="@id/sliderEndSpace" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginEnd="14.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Barrier n0:id="@id/bTextBarrier" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n5:barrierDirection="end" n5:barrierMargin="14.0dp" n5:constraint_referenced_ids="text_style_align_tv_text_size, tvLetterSpacingDesc, tvLineSpacingDesc"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/text_style_align_tv_text_size" n0:text="@string/qhw" n6:layout_constraintBottom_toBottomOf="@id/text_style_align_sv_text_size" n6:layout_constraintStart_toEndOf="@id/sliderTextStartSpace" n6:layout_constraintTop_toTopOf="@id/text_style_align_sv_text_size" style="@style/yo"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/text_style_align_sv_text_size" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n7:APKTOOL_RENAMED_0x7f04046d="false" n7:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n7:APKTOOL_RENAMED_0x7f040549="8.0dp" n7:APKTOOL_RENAMED_0x7f0405b7="true" n7:layout_constraintEnd_toStartOf="@id/sliderEndSpace" n7:layout_constraintStart_toEndOf="@id/bTextBarrier" n7:layout_constraintTop_toBottomOf="@id/rgTextAlignMode" n7:kkt="@color/_m" n7:kp6="true"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvLetterSpacingDesc" n0:text="@string/q_p" n8:layout_constraintBottom_toBottomOf="@id/svLetterSpacing" n8:layout_constraintStart_toEndOf="@id/sliderTextStartSpace" n8:layout_constraintTop_toTopOf="@id/svLetterSpacing" style="@style/yo"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svLetterSpacing" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n9:APKTOOL_RENAMED_0x7f04046d="false" n9:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n9:APKTOOL_RENAMED_0x7f040549="8.0dp" n9:APKTOOL_RENAMED_0x7f0405b7="true" n9:layout_constraintEnd_toStartOf="@id/sliderEndSpace" n9:layout_constraintStart_toEndOf="@id/bTextBarrier" n9:layout_constraintTop_toBottomOf="@id/text_style_align_sv_text_size" n9:kkt="@color/_m" n9:kp6="true"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:id="@id/tvLineSpacingDesc" n0:text="@string/myx" n10:layout_constraintBottom_toBottomOf="@id/svLineSpacing" n10:layout_constraintStart_toEndOf="@id/sliderTextStartSpace" n10:layout_constraintTop_toTopOf="@id/svLineSpacing" style="@style/yo"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/svLineSpacing" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="7.0dp" n11:APKTOOL_RENAMED_0x7f04046d="false" n11:APKTOOL_RENAMED_0x7f040544="@android:color/transparent" n11:APKTOOL_RENAMED_0x7f040549="8.0dp" n11:APKTOOL_RENAMED_0x7f0405b7="true" n11:layout_constraintEnd_toStartOf="@id/sliderEndSpace" n11:layout_constraintStart_toEndOf="@id/bTextBarrier" n11:layout_constraintTop_toBottomOf="@id/svLetterSpacing" n11:kkt="@color/_m" n11:kp6="true"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

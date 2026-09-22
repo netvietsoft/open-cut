@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="other">有 %d 個項目無法上傳，自動剪片繼續執行。</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="other">附件：%d 個檔案</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="other">需要 %1$d 點。</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="other">您剩下 %1$d 點。</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="other">將扣除您的免費點數。還需要 %d 點。</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">%1$d credit needed.</item>
+        <item quantity="other">需要 %1$d 點。</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="other">您剩下 %1$d 點。請購買點數以繼續操作。</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">%1$d credit needed.</item>
+        <item quantity="other">需要 %1$d 點。</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="other">您剩下 %1$d 點。升級即可獲得更多點數。</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="other">將消耗 %d 點</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="other">將扣除您的免費點數。還需要 %d 點。</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="other">已推薦 %d 個範本</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="other">已產生 %d 個影片</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="other">當您登入後，每月可免費使用 %d 次的自動字幕和自動歌詞功能。每月月初會更新免費使用次數，每使用一次，次數就會扣除 1 次。</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="other">%d 次使用/月</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="other">刪除 %d 個字</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="other">%d 個亮顯</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="other">找到 %d 個填充詞</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="other">選取最多 %d 個項目</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="other">預估佇列等待時間：%d 秒</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="other">約剩 %d 小時</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="other">約剩 %d 分鐘</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="other">約剩 %d 秒</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="other">音訊結果 (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="other">檔案結果 (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="other">生成結果 (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="other">附件：%d 張影像</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="other">附件：%d 部影片</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="other">影像結果 (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="other">影片結果 (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="other">正在套用 %1$d 個 AI 文字特效... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="other">將 %d 個素材套用到所有片段</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="other">已選取 %d 個素材</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="other">%d 天 Ultra</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="other">%d 個角色</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="other">選取的角色不得超過 %d 個</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="other">%d 個片段未獲授權用於商業用途</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="other">%d 個字型未獲授權用於商業用途</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="other">%d 個聲音未獲授權用於商業用途</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="other">%d 個片段未獲授權用於商業用途，所以無法取代</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="other">%d 個字型未獲授權用於商業用途，所以無法取代</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="other">%d 個聲音未獲授權用於商業用途，所以無法取代</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="other">%d 個貼圖未獲授權用於商業用途，所以無法取代</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="other">%d 個貼圖未獲授權用於商業用途</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="other">要刪除 %d 則評論嗎？</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="other">您選取了 %d 個帳號。只有您和您限制的人才能看到這些帳號的評論。</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="other">要限制這 %d 個帳號嗎？</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="other">您有 %s 則新的創作者訊息</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="other">已過期 %d 天</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="other">您正在使用 Pro 功能，尚可免費使用 %d 次。加入 Pro 即可暢享無限使用。</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="other">您正在使用 Standard 功能，尚可免費使用 %d 次。加入 Standard 即可暢享無限使用。</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="other">您正在使用 Pro 功能。本月尚可免費使用 %d 次。加入 Pro 即可暢享無限使用。</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="other">您正在使用 Standard 功能。本月尚可免費使用 %d 次。加入 Standard 即可暢享無限使用。</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="other">%d 天免費</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="other">%2$d 週後價格為 %1$s</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="other">每月您都可以免費使用 %d 次 Pro 範本。</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="other">可免費使用 %d 次</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="other">免費試用 %d 天</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="other">%d 個音樂版權問題</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="other">已選取 %d 個文字</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="other">已選取 %d 個片段</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="other">暢享 %1$d 天不限次數的免費匯出，或是直接升級，暢享完全不受限制的高解析度匯出。</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="other">免費以 1080p 格式匯出 %d 次</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="other">還剩 %d 次免費以 1080p 匯出的機會。升級即可暢享不受限制的高解析度匯出。</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="other">本月還剩 %d 次免費以 1080p 匯出的機會。升級即可暢享不受限制的高解析度匯出。</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="other">需要 %d 點。</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="other">您剩下 %d 點。</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="other">有 %1$d 個生成作業正在進行中。升級至 Pro 方案可一次產生最多 %2$d 個。</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="other">無浮水印匯出 (剩餘使用次數 %d)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="other">剩餘 %d 次免費使用，無需點數。</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="other">您選取的項目將被刪除，然後會在垃圾桶中保留 %d 天。</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="other">有部分選取的項目已上傳到空間。仍要刪除嗎？</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="other">您選取的項目將被刪除並移至垃圾桶。</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="other">%d 次使用</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="other">從您輸入的出生日期計算出的年齡為 %d 歲，時間似乎有誤。請輸入您的真實出生日期。</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="other">包括過去購買提供的 1 次免費使用和 Pro 會籍額外提供的 %d 次免費使用</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="other">Pro 提供 %d 次免費使用</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="other">用影片製作的虛擬替身現在永久有效。加入 Pro 即可獲得 %d 次免費自訂機會。</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="other">套用此特效將使用 %d 點。</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="other">您目前有 %d 點可用。</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="other">%d 個亮顯</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="other">正在套用 AI 特效... 還剩 %s 小時</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="other">正在套用 AI 特效... 還剩 %s 分鐘</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="other">Pro 特效 %1$s 已套用至目前項目。若再次將它套用至新項目，將消耗 %2$d 點。</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="other">將扣除 %1$d 次免費使用機會。您目前可免費使用 %2$d 次。</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="other">將扣除 %1$d 次 Pro 使用機會。您目前可使用 Pro %2$d 次。</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="other">此模型最多支援 %d 張參考影像</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="other">至少新增 %d 張參考影像才能使用此模型</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="other">此模型最多支援 %d 部參考影片</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="other">至少新增 %d 部參考影片才能使用此模型</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="other">選取 %d 張照片</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="other">已新增 %d 個材料</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="other">還可製作 %d 次</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="other">還可解鎖 %d 次</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="other">已醒目顯示 %d 個關鍵字。您也可以手動選取。</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="other">刪除 %d 個片段</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="other">已識別出 %d 個填充詞。您也可以手動選取。</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="other">已亮顯 %d 個關鍵字</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="other">正在匯出 %d 張照片…</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="other">最多選擇 %d 種姿勢</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="other">正在上傳您的媒體檔案</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="other">%d 位成員</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="other">將 %d 個專案上傳到空間以釋放您的裝置儲存空間。您可以在行動應用程式、桌面應用程式或線上編輯器中編輯這些專案。</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="other">將專案中的 %d 個媒體檔案上傳到空間。然後，您就可以在任何裝置上使用這些檔案，無需再次上傳。</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="other">您有需要復原的專案</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="other">已復原專案</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="other">無法套用 %d 項功能</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="other">正在套用 %d 個功能</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="other">要套用 Pro 特效嗎？</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="other">%1$d 個 Pro 特效已套用至目前項目。若再次將它們套用至新項目，將消耗 %2$d 點。</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="other">%1$d 個 Pro 特效已套用至目前項目。將扣除 %2$d 次免費使用機會，以再次將它們套用至新項目。不會消耗任何點數。</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="other">%1$d 個 Pro 特效已套用至目前項目。您需要 %2$d 點，才能將這些特效再次套用至新項目。</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="other">%1$d 個 Pro 特效已套用至目前項目。若再次將它們套用至新項目，將消耗 %2$d 次免費使用機會和 %3$d 點。</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="other">%d 個片段遺失。請在手機上還原這些片段或取代它們。</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="other">輸入的字元數不得超過 %d 個</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="other">刪除項目？</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="other">移至垃圾桶的項目將會顯示在這裡，並在 %d 天後刪除。</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="other">正在下載 %d 個項目…</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="other">正在上傳 %d 個項目…</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="other">這些項目將被永久刪除且無法還原。</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="other">項目已移動</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="other">您還有 %d 天可以免費匯出。</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="other">恭喜！您每月可以免費使用無浮水印匯出 %d 次。</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="other">您還有 %d 次免費使用無浮水印匯出的機會。</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="other">恭喜！您有 %d 次免費使用無浮水印匯出的機會。</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="other">%d 次使用</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="other">首次使用可折抵 %d 點。若超過限額，將消耗更多點數。</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="other">套用此功能還需要 %d 點</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="other">片段不得超過 %d 秒</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="other">您目前剩下 %d 點。</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="other">套用 {$benefit_name$} 將消耗 {$credit_amount$} 點。</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="other">套用此功能將消耗 %d 點。</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="other">使用此範本將消耗 %d 點。</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="other">將永久刪除，且無法復原。</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="other">要刪除此項目嗎？</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="other">%1$d 個「%1$s」專案</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="other">%d 個項目已移至垃圾桶</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="other">%d 個項目已新增至「珍藏」</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="other">從「珍藏」中移除了 %d 個項目</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="other">這是免費空間，最多可邀請 %1$d 個成員加入。目前還可邀請 %2$s 個成員。</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="other">%d 次使用/月</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="other">%d 次使用/天</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="other">%d 次使用/週</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="other">{number} 個月後 {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="other">%2$d 個月後價格為 %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="other">{number} 年後 {price}</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="other">%2$d 年後價格為 %1$s</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="other">這個空間中有 %d 位成員。</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="other">您還可以邀請 %1$d 名成員。</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="other">%1$d 組使用者授權已被取用。</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="other">開始 %d 天免費試用</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="other">需要 %d 點。</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="other">您剩下 %d 點。</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="other">正在上傳 %1$s/%2$s 個專案</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="other">"這個媒體檔案連結了 %d 個其他的片段。要全部取代嗎？
+檔案將自動修剪以符合原時長。"</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="other">只能再上傳 %d 張影像</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="other">%d 個區段待更新</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="other">您還可以選取 %1$d 張影像和 %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="other">(上限 %d 秒)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="other">%d 部影片</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="other">您還可以選取 %d 張影像</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="other">您還可以選取 %d 部影片</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="other">(上限 %d 秒)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="other">排入佇列中... 約剩下 %d 分鐘。</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="other">縮短等候時間 · 剩 %d 次使用</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="other">排入佇列中... 約剩下 %d 秒。</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="other">正使用 Pro 排入快速佇列中... 約剩下 %d 分鐘。</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="other">%d 個項目</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="other">已選取 %d 個項目</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="other">%d 個專案</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="other">已選取 %d 個專案</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="other">目前，有很多人在使用這項功能。您估計要等待 %d 分鐘的時間。</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="other">再次產生將會消耗 %d 點。</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="other">使用新項目再次產生將消耗 %d 點。</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="other">已新增 %d 個片段</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="other">選取 %d 個項目</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="other">為您產生了 %d 部影片</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="other">您只能分離 %d 分鐘以內的音訊</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="other">您可以在 %d 天內還原該空間。</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="other">正在產生 %d 個影片，請稍後再試。</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="other">升級即可消耗 %d 點使用此功能</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="other">此空間只剩下 %d 組使用者授權。</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="other">%d 個元素已使用</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="other">已選取 %d 個項目</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="other">選取 %d 個項目</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="other">%d 個字幕</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="other">%d 個項目</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="other">正在套用 %d 項功能。請稍後再試。</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="other">剩餘 %d 次免費使用。加入 Standard 即可消耗點數使用。</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="other">剩餘 %d 次免費使用。加入 Pro 即可消耗點數使用。</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="other">剩餘 %d 次免費使用。升級至 Ultra 即可透過點數使用。</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="other">這將消耗 %1$d 點。%2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="other">您剩下 %d 點。</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="other">升級至 Ultra 即可獲得 %d 點並透過點數使用</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="other">加入 Pro 即可消耗 %d 點使用此功能。</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="other">加入 Standard 即可消耗 %d 點使用此功能。</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="other">您最多可以儲存 %1$d 個語音。</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="other">無法增強超過 %1$d 分鐘的片段中的語音</item>
+    </plurals>
+    <plurals name="pq">
+        <item quantity="one">%d 則新通知</item>
+        <item quantity="other">%d 則新通知</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="other">為獲得最佳結果，請選取 %d 個項目</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="other">前 %2$d 個月續訂價格為 %1$s，之後價格為 %3$s。</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="other">前 %2$d 年續訂價格為 %1$s，之後價格為 %3$s。</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="other">您已更新了 %d 處。是否要產生語音並執行對嘴？</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="other">剩下 %d 次</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="other">有 %d 個無聲片段。</item>
+    </plurals>
+</resources>

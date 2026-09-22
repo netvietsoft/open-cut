@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="180.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:orientation="vertical" n0:id="@id/xt_prompt_container" n0:background="@color/kr_" n0:paddingTop="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="@dimen/hm">
+            <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/xt_iv_prompt_cancel" n0:padding="4.0dp" n0:layout_width="@dimen/hm" n0:layout_height="@dimen/hm" n0:src="@drawable/rmd" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/xt_center_layout" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:paddingHorizontal="16.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent">
+                <com.xt.retouch.baseui.view.MarqueeTextView n0:textSize="16.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/xt_tv_prompt_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tek" n0:maxLines="1" />
+                <com.xt.retouch.baseui.view.MarqueeTextView n0:textSize="12.0dp" n0:textColor="#757580" n0:gravity="center" n0:id="@id/xt_tv_prompt_desc" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/tel" n0:maxLines="1" />
+            </LinearLayout>
+            <TextView n0:typeface="sans" n0:textStyle="bold" n0:textColor="#090c14" n0:gravity="center" n0:layout_gravity="end|top" n0:id="@id/xt_tv_prompt_confirm" n0:background="@drawable/q6k" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:text="@string/swe" n0:includeFontPadding="false" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout n0:orientation="horizontal" n0:background="@drawable/q6l" n0:paddingTop="10.0dp" n0:paddingBottom="10.0dp" n0:layout_width="match_parent" n0:layout_height="100.0dp" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="16.0dp" n0:paddingStart="16.0dp" n0:paddingEnd="10.0dp" n0:layout_marginHorizontal="16.0dp" n0:paddingVertical="10.0dp">
+            <EditText n0:textSize="14.0dp" n0:textColor="#fafbff" n0:textColorHint="#66e5e9fa" n0:gravity="top" n0:id="@id/xt_et_input_prompt" n0:background="@null" n0:layout_width="0.0dp" n0:layout_height="match_parent" n0:hint="@string/ukr" n0:layout_weight="1.0" n0:lineSpacingExtra="6.0dp" />
+            <ImageView n0:layout_gravity="bottom" n0:id="@id/xt_iv_input_prompt_clear" n0:background="@drawable/rmq" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

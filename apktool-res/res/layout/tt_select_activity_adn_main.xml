@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:background="#fff" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tt_activity_base_header" />
+    <TextView n0:textSize="15.0dp" n0:textStyle="bold" n0:background="@color/tt_color_d7" n0:padding="15.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:text="Select a network to load test ads. Dont Kill App" />
+    <ListView n0:id="@id/adn_list" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:divider="@android:color/transparent" />
+</LinearLayout>

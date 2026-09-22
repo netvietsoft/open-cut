@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="#181818" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/inedit_feed_page_loading" n0:visibility="visible" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n0:layout_marginBottom="16.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:lottie_autoPlay="true" n1:lottie_fileName="lv_loading_s.json" n1:lottie_loop="true"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.OverScrollViewPager2Layout n0:id="@id/inedit_template_scroll_container" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <androidx.viewpager2.widget.ViewPager2 n0:id="@id/in_edit_template_preview_vg" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.vega.ui.widget.OverScrollViewPager2Layout>
+    <RelativeLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/inedit_guide_clickView" n0:background="@color/_0" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/inedit_guide_root" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView n0:id="@id/inedit_template_lavGuideAnimation" n0:layout_width="160.0dp" n0:layout_height="160.0dp" n2:lottie_loop="true" n2:kld="2" />
+            <TextView n0:textSize="18.0dp" n0:textColor="@color/knt" n0:gravity="center_horizontal" n0:id="@id/tvGuideTips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="20.0dp" n0:text="@string/ksm" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.vega.ui.AlphaButton n0:id="@id/inedit_template_ivCloseDialog" n0:padding="5.0dp" n0:layout_width="34.0dp" n0:layout_height="34.0dp" n0:layout_marginTop="45.0dp" n0:src="@drawable/opf" n0:layout_marginStart="20.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

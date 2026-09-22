@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.ui.widget.RoundFrameLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="16.0dp" n0:layout_marginEnd="4.0dp" n1:i1="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cover" n0:layout_width="72.0dp" n0:layout_height="72.0dp" n0:scaleType="centerCrop" />
+        <com.vega.ui.widget.RoundCornerTextView2 n0:layout_width="72.0dp" n0:layout_height="72.0dp" n1:c7="@color/kz" n1:c-="0.5dp" n1:i1="8.0dp" />
+        <ImageView n0:layout_gravity="center" n0:id="@id/iv_play" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/n9l" />
+        <com.airbnb.lottie.LottieAnimationView n0:layout_gravity="center" n0:id="@id/loading_anim" n0:visibility="gone" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n1:lottie_loop="true" n1:klc="@raw/line_loading_lottie" />
+    </com.vega.ui.widget.RoundFrameLayout>
+    <FrameLayout n0:id="@id/btn_remove" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n0:layout_marginTop="12.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="end|top" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f081273" n0:scaleType="fitXY" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

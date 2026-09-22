@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:background="@drawable/kii" n0:layout_width="match_parent" n0:layout_height="60.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.lvui.widget.MaterialDraweeView n0:id="@id/iv_cover" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginStart="12.0dp" n1:i1="4.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="16.0sp" n0:textColor="#ffffff" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pvs" n0:layout_marginStart="12.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toEndOf="@id/iv_cover" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textSize="14.0sp" n0:textColor="#00cae0" n0:id="@id/tv_use" n0:padding="8.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pvl" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="8.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/iv_close" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_close" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:src="@drawable/nfq" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

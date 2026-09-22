@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundConstraintLayout n0:background="#141414" n0:layout_width="176.0dp" n0:layout_height="wrap_content" n1:i1="8.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/iv_diversion_pc_popup_gif" n0:layout_width="176.0dp" n0:layout_height="99.0dp" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <com.vega.ui.widget.RoundLinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/ll_diversion_pc_popup_timer" n0:background="#1f000000" n0:layout_width="wrap_content" n0:layout_height="20.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="4.0dp" n1:i1="6.0dp" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent">
+        <TextView n0:textSize="10.0dp" n0:textColor="#ccffffff" n0:id="@id/tv_diversion_pc_popup_timer" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:layout_marginLeft="4.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginRight="4.0dp" n0:layout_marginBottom="2.0dp" />
+        <View n0:background="#33ffffff" n0:layout_width="1.0dp" n0:layout_height="5.0dp" />
+        <ImageView n0:id="@id/iv_diversion_pc_popup_close" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:layout_marginLeft="4.0dp" n0:layout_marginRight="4.0dp" n0:src="@drawable/p9-" />
+    </com.vega.ui.widget.RoundLinearLayout>
+    <LinearLayout n0:gravity="center" n0:orientation="horizontal" n0:id="@id/ll_diversion_pc_popup_content" n0:layout_width="176.0dp" n0:layout_height="wrap_content" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toBottomOf="@id/iv_diversion_pc_popup_gif">
+        <TextView n0:textSize="14.0dp" n0:textColor="#ccffffff" n0:ellipsize="end" n0:id="@id/tv_diversion_pc_popup_content" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="8.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="8.0dp" n0:maxLines="4" n0:layout_weight="1.0" />
+        <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:layout_marginRight="8.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f082b43" />
+    </LinearLayout>
+</com.vega.ui.widget.RoundConstraintLayout>

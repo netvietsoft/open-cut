@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="m">
+        <item quantity="one">Nu s-a putut încărca %d element. AutoCut va continua să ruleze.</item>
+        <item quantity="few">Nu s-au putut încărca %d elemente. AutoCut va continua să ruleze.</item>
+        <item quantity="other">Nu s-au putut încărca %d de elemente. AutoCut va continua să ruleze.</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">Fișiere atașate: %d fișier</item>
+        <item quantity="few">Fișiere atașate: %d fișiere</item>
+        <item quantity="other">Fișiere atașate: %d de fișiere</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">Ai nevoie de %1$d punct.</item>
+        <item quantity="few">Ai nevoie de %1$d puncte.</item>
+        <item quantity="other">Ai nevoie de %1$d de puncte.</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">Mai ai %1$d punct rămas.</item>
+        <item quantity="few">Mai ai %1$d puncte rămase.</item>
+        <item quantity="other">Mai ai %1$d de puncte rămase.</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">Punctele tale gratuite vor fi deduse. Mai ai nevoie de %d punct.</item>
+        <item quantity="few">Punctele tale gratuite vor fi deduse. Mai ai nevoie de %d puncte.</item>
+        <item quantity="other">Punctele tale gratuite vor fi deduse. Mai ai nevoie de %d de puncte.</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">Ai nevoie de %1$d punct.</item>
+        <item quantity="few">Ai nevoie de %1$d puncte.</item>
+        <item quantity="other">Ai nevoie de %1$d de puncte.</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">Mai ai %1$d punct rămas. Cumpără puncte pentru a continua.</item>
+        <item quantity="few">Mai ai %1$d puncte rămase. Cumpără puncte pentru a continua.</item>
+        <item quantity="other">Mai ai %1$d de puncte rămase. Cumpără puncte pentru a continua.</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">Ai nevoie de %1$d punct.</item>
+        <item quantity="few">Ai nevoie de %1$d puncte.</item>
+        <item quantity="other">Ai nevoie de %1$d de puncte.</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">Mai ai %1$d punct rămas. Fă upgrade pentru a primi puncte.</item>
+        <item quantity="few">Mai ai %1$d puncte rămase. Fă upgrade pentru a primi puncte.</item>
+        <item quantity="other">Mai ai %1$d de puncte rămase. Fă upgrade pentru a primi puncte.</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">Vei consuma %d punct</item>
+        <item quantity="few">Vei consuma %d puncte</item>
+        <item quantity="other">Vei consuma %d de puncte</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">Punctele tale gratuite vor fi deduse. Mai ai nevoie de %d punct.</item>
+        <item quantity="few">Punctele tale gratuite vor fi deduse. Mai ai nevoie de %d puncte.</item>
+        <item quantity="other">Punctele tale gratuite vor fi deduse. Mai ai nevoie de %d de puncte.</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">%d șablon recomandat</item>
+        <item quantity="few">%d șabloane recomandate</item>
+        <item quantity="other">%d de șabloane recomandate</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">%d videoclip generat</item>
+        <item quantity="few">%d videoclipuri generate</item>
+        <item quantity="other">%d de videoclipuri generate</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">Poți să folosești subtitrările și versurile automate gratuit %d dată pe lună. Numărul de utilizări gratuite este reînnoit la începutul fiecărei luni. Ți se va deduce 1 utilizare de fiecare dată.</item>
+        <item quantity="few">Poți să folosești subtitrările și versurile automate gratuit de %d ori pe lună. Numărul de utilizări gratuite este reînnoit la începutul fiecărei luni. Ți se va deduce 1 utilizare de fiecare dată.</item>
+        <item quantity="other">Poți să folosești subtitrările și versurile automate gratuit de %d de ori pe lună. Numărul utilizărilor gratuite este reînnoit la începutul fiecărei luni. Ți se va deduce 1 utilizare de fiecare dată.</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%d utilizare/lună</item>
+        <item quantity="few">%d utilizări/lună</item>
+        <item quantity="other">%d de utilizări/lună</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">Șterge %d cuvânt</item>
+        <item quantity="few">Șterge %d cuvinte</item>
+        <item quantity="other">Șterge %d de cuvinte</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%d cuvânt evidențiat</item>
+        <item quantity="few">%d cuvinte evidențiate</item>
+        <item quantity="other">%d de cuvinte evidențiate</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">%d cuvânt de umplutură găsit</item>
+        <item quantity="few">%d cuvinte de umplutură găsite</item>
+        <item quantity="other">%d de cuvinte de umplutură găsite</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001a">
+        <item quantity="one">Selectează până la %d element</item>
+        <item quantity="few">Selectează până la %d element</item>
+        <item quantity="other">Selectează până la %d de elemente</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001c">
+        <item quantity="one">Timp estimat de așteptare în coadă: %d s</item>
+        <item quantity="few">Timp estimat de așteptare în coadă: %d s</item>
+        <item quantity="other">Timp estimat de așteptare în coadă: %d s</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001d">
+        <item quantity="one">Aproximativ %d oră rămasă</item>
+        <item quantity="few">Aproximativ %d ore rămase</item>
+        <item quantity="other">Aproximativ %d de ore rămase</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001e">
+        <item quantity="one">Aproximativ %d minut rămas</item>
+        <item quantity="few">Aproximativ %d minute rămase</item>
+        <item quantity="other">Aproximativ %d de minute rămase</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10001f">
+        <item quantity="one">Aproximativ %d s rămasă</item>
+        <item quantity="few">Aproximativ %d s rămase</item>
+        <item quantity="other">Aproximativ %d s rămase</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100020">
+        <item quantity="one">Rezultat audio (%d)</item>
+        <item quantity="few">Rezultate audio (%d)</item>
+        <item quantity="other">Rezultate audio (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100021">
+        <item quantity="one">Rezultat fișier (%d)</item>
+        <item quantity="few">Rezultate fișier (%d)</item>
+        <item quantity="other">Rezultate fișier (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100022">
+        <item quantity="one">Rezultat generare (%d)</item>
+        <item quantity="few">Rezultate generare (%d)</item>
+        <item quantity="other">Rezultate generare (%d)</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100023">
+        <item quantity="one">Fișiere atașate: %d imagine</item>
+        <item quantity="few">Fișiere atașate: %d imagini</item>
+        <item quantity="other">Fișiere atașate: %d de imagini</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100024">
+        <item quantity="one">Fișiere atașate: %d videoclip</item>
+        <item quantity="few">Fișiere atașate: %d videoclipuri</item>
+        <item quantity="other">Fișiere atașate: %d de videoclipuri</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100025">
+        <item quantity="one">Rezultat imagine (%d)</item>
+        <item quantity="few">Rezultate imagine (%d)</item>
+        <item quantity="other">Rezultate imagine (%d)</item>
+    </plurals>
+    <plurals name="kl">
+        <item quantity="one">Rezultat video (%d)</item>
+        <item quantity="few">Rezultate video (%d)</item>
+        <item quantity="other">Rezultate video (%d)</item>
+    </plurals>
+    <plurals name="km">
+        <item quantity="one">Se aplică %1$d efect IA de text... %2$d%%</item>
+        <item quantity="few">Se aplică %1$d efecte IA de text... %2$d%%</item>
+        <item quantity="other">Se aplică %1$d de efecte IA de text... %2$d%%</item>
+    </plurals>
+    <plurals name="kn">
+        <item quantity="one">Aplică %d activ la toate clipurile</item>
+        <item quantity="few">Aplică %d active la toate clipurile</item>
+        <item quantity="other">Aplică %d de active la toate clipurile</item>
+    </plurals>
+    <plurals name="ko">
+        <item quantity="one">%d activ selectat</item>
+        <item quantity="few">%d active selectate</item>
+        <item quantity="other">%d de active selectate</item>
+    </plurals>
+    <plurals name="cc_billing_sku_ultra_days">
+        <item quantity="one">Ultra pentru %d zi</item>
+        <item quantity="few">Ultra pentru %d zile</item>
+        <item quantity="other">Ultra pentru %d de zile</item>
+    </plurals>
+    <plurals name="ks">
+        <item quantity="one">%d personaj</item>
+        <item quantity="few">%d personaje</item>
+        <item quantity="other">%d de personaje</item>
+    </plurals>
+    <plurals name="kt">
+        <item quantity="one">Selectează maximum %d personaj</item>
+        <item quantity="few">Selectează maximum %d personaje</item>
+        <item quantity="other">Selectează maximum %d de personaje</item>
+    </plurals>
+    <plurals name="ku">
+        <item quantity="one">%d clip nelicențiat pentru utilizare comercială</item>
+        <item quantity="few">%d clipuri nelicențiate pentru utilizare comercială</item>
+        <item quantity="other">%d de clipuri nelicențiate pentru utilizare comercială</item>
+    </plurals>
+    <plurals name="kv">
+        <item quantity="one">%d font nelicențiat pentru utilizare comercială</item>
+        <item quantity="few">%d fonturi nelicențiate pentru utilizare comercială</item>
+        <item quantity="other">%d de fonturi nelicențiate pentru utilizare comercială</item>
+    </plurals>
+    <plurals name="kw">
+        <item quantity="one">%d sunet nelicențiat pentru utilizare comercială</item>
+        <item quantity="few">%d sunete nelicențiate pentru utilizare comercială</item>
+        <item quantity="other">%d de sunete nelicențiate pentru utilizare comercială</item>
+    </plurals>
+    <plurals name="kx">
+        <item quantity="one">%d clip nelicențiat pentru utilizare comercială și care nu poate fi înlocuit</item>
+        <item quantity="few">%d clipuri nelicențiate pentru utilizare comercială și care nu pot fi înlocuite</item>
+        <item quantity="other">%d de clipuri nelicențiate pentru utilizare comercială și care nu pot fi înlocuite</item>
+    </plurals>
+    <plurals name="ky">
+        <item quantity="one">%d font nelicențiat pentru utilizare comercială și care nu poate fi înlocuit</item>
+        <item quantity="few">%d fonturi nelicențiate pentru utilizare comercială și care nu pot fi înlocuite</item>
+        <item quantity="other">%d de fonturi nelicențiate pentru utilizare comercială și care nu pot fi înlocuite</item>
+    </plurals>
+    <plurals name="kz">
+        <item quantity="one">%d sunet nelicențiat pentru utilizare comercială și care nu poate fi înlocuit</item>
+        <item quantity="few">%d sunete nelicențiate pentru utilizare comercială și care nu pot fi înlocuite</item>
+        <item quantity="other">%d de sunete nelicențiate pentru utilizare comercială și care nu pot fi înlocuite</item>
+    </plurals>
+    <plurals name="ka">
+        <item quantity="one">%d sticker nelicențiat pentru utilizare comercială și care nu poate fi înlocuit</item>
+        <item quantity="few">%d stickere nelicențiate pentru utilizare comercială și care nu pot fi înlocuite</item>
+        <item quantity="other">%d de stickere nelicențiate pentru utilizare comercială și care nu pot fi înlocuite</item>
+    </plurals>
+    <plurals name="kb">
+        <item quantity="one">%d sticker nelicențiat pentru utilizare comercială</item>
+        <item quantity="few">%d stickere nelicențiate pentru utilizare comercială</item>
+        <item quantity="other">%d de stickere nelicențiate pentru utilizare comercială</item>
+    </plurals>
+    <plurals name="kc">
+        <item quantity="one">Ștergi %d comentariu?</item>
+        <item quantity="few">Ștergi %d comentarii?</item>
+        <item quantity="other">Ștergi %d de comentarii?</item>
+    </plurals>
+    <plurals name="kd">
+        <item quantity="one">Ai selectat %d cont. Doar tu și persoana căreia i-ai aplicat restricția îi veți putea vedea comentariile acestora.</item>
+        <item quantity="few">Ai selectat %d conturi. Doar tu și persoanele cărora le-ai aplicat restricția veți putea vedea comentariile acestora.</item>
+        <item quantity="other">Ai selectat %d de conturi. Doar tu și persoanele cărora le-ai aplicat restricția veți putea vedea comentariile acestora.</item>
+    </plurals>
+    <plurals name="ke">
+        <item quantity="one">Restricționează %d cont?</item>
+        <item quantity="few">Restricționează %d conturi?</item>
+        <item quantity="other">Restricționează %d de conturi?</item>
+    </plurals>
+    <plurals name="kf">
+        <item quantity="one">%d zi</item>
+        <item quantity="few">%d zile</item>
+        <item quantity="other">%d de zile</item>
+    </plurals>
+    <plurals name="kh">
+        <item quantity="one">Ai %s mesaj nou adresat creatorilor</item>
+        <item quantity="few">Ai %s mesaje noi adresate creatorilor</item>
+        <item quantity="other">Ai %s de mesaje noi adresate creatorilor</item>
+    </plurals>
+    <plurals name="cc_m10n_profile_card_ultra_expired_days">
+        <item quantity="one">Expirat de %d zi</item>
+        <item quantity="few">Expirat de %d zile</item>
+        <item quantity="other">Expirat de %d de zile</item>
+    </plurals>
+    <plurals name="k0">
+        <item quantity="one">Folosești o funcție Pro. Ți-a mai rămas %d utilizare gratuită. Pentru utilizări nelimitate, abonează-te la Pro.</item>
+        <item quantity="few">Folosești o funcție Pro. Ți-au mai rămas %d utilizări gratuite. Pentru utilizări nelimitate, abonează-te la Pro.</item>
+        <item quantity="other">Folosești o funcție Pro. Ți-au mai rămas %d de utilizări gratuite. Pentru utilizări nelimitate, abonează-te la Pro.</item>
+    </plurals>
+    <plurals name="k1">
+        <item quantity="one">Folosești o funcție Standard. Ți-a mai rămas %d utilizare gratuită. Pentru utilizări nelimitate, abonează-te la Standard.</item>
+        <item quantity="few">Folosești o funcție Standard. Ți-au mai rămas %d utilizări gratuite. Pentru utilizări nelimitate, abonează-te la Standard.</item>
+        <item quantity="other">Folosești o funcție Standard. Ți-au mai rămas %d de utilizări gratuite. Pentru utilizări nelimitate, abonează-te la Standard.</item>
+    </plurals>
+    <plurals name="k2">
+        <item quantity="one">Folosești o funcție Pro. Ți-a mai rămas %d utilizare gratuită luna aceasta. Pentru utilizări nelimitate, abonează-te la Pro.</item>
+        <item quantity="few">Folosești o funcție Pro. Ți-au mai rămas %d utilizări gratuite luna aceasta. Pentru utilizări nelimitate, abonează-te la Pro.</item>
+        <item quantity="other">Folosești o funcție Pro. Ți-au mai rămas %d de utilizări gratuite luna aceasta. Pentru utilizări nelimitate, abonează-te la Pro.</item>
+    </plurals>
+    <plurals name="k3">
+        <item quantity="one">Folosești o funcție Standard. Ți-a mai rămas %d utilizare gratuită luna aceasta. Pentru utilizări nelimitate, abonează-te la Standard.</item>
+        <item quantity="few">Folosești o funcție Standard. Ți-au mai rămas %d utilizări gratuite luna aceasta. Pentru utilizări nelimitate, abonează-te la Standard.</item>
+        <item quantity="other">Folosești o funcție Standard. Ți-au mai rămas %d de utilizări gratuite luna aceasta. Pentru utilizări nelimitate, abonează-te la Standard.</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_tag_free_days">
+        <item quantity="one">%d zi gratuită</item>
+        <item quantity="few">%d zile gratuite</item>
+        <item quantity="other">%d de zile gratuite</item>
+    </plurals>
+    <plurals name="cc_mob_m10n_sku_weekly_btn_tag_renew_client">
+        <item quantity="one">%1$s după %2$d săptămână</item>
+        <item quantity="few">%1$s după %2$d săptămâni</item>
+        <item quantity="other">%1$s după %2$d de săptămâni</item>
+    </plurals>
+    <plurals name="k6">
+        <item quantity="one">Ai %d utilizare gratuită a șabloanelor Pro pe lună.</item>
+        <item quantity="few">Ai %d utilizări gratuite a șabloanelor Pro pe lună.</item>
+        <item quantity="other">Ai %d de utilizări gratuite a șabloanelor Pro pe lună.</item>
+    </plurals>
+    <plurals name="k7">
+        <item quantity="one">%d utilizare gratuită</item>
+        <item quantity="few">%d utilizări gratuite</item>
+        <item quantity="other">%d de utilizări gratuite</item>
+    </plurals>
+    <plurals name="k8">
+        <item quantity="one">Încearcă gratuit timp de %d zi</item>
+        <item quantity="few">Încearcă gratuit timp de %d zile</item>
+        <item quantity="other">Încearcă gratuit timp de %d de zile</item>
+    </plurals>
+    <plurals name="k9">
+        <item quantity="one">%d problemă privind drepturile de autor pentru muzică</item>
+        <item quantity="few">%d probleme privind drepturile de autor pentru muzică</item>
+        <item quantity="other">%d de probleme privind drepturile de autor pentru muzică</item>
+    </plurals>
+    <plurals name="lo">
+        <item quantity="one">%d text selectat</item>
+        <item quantity="few">%d texte selectate</item>
+        <item quantity="other">%d de texte selectate</item>
+    </plurals>
+    <plurals name="lv">
+        <item quantity="one">%d clip selectat</item>
+        <item quantity="few">%d clipuri selectate</item>
+        <item quantity="other">%d de clipuri selectate</item>
+    </plurals>
+    <plurals name="lw">
+        <item quantity="one">Bucură-te de %1$d zi de exportări gratuite nelimitate sau abonează-te pentru exportări nelimitate la rezoluție înaltă.</item>
+        <item quantity="few">Bucură-te de %1$d zile de exportări gratuite nelimitate sau abonează-te pentru exportări nelimitate la rezoluție înaltă.</item>
+        <item quantity="other">Bucură-te de %1$d de zile de exportări gratuite nelimitate sau abonează-te pentru exportări nelimitate la rezoluție înaltă.</item>
+    </plurals>
+    <plurals name="lx">
+        <item quantity="one">Exportă gratuit în 1080p %d dată</item>
+        <item quantity="few">Exportă gratuit în 1080p de %d ori</item>
+        <item quantity="other">Exportă gratuit în 1080p de %d de ori</item>
+    </plurals>
+    <plurals name="ly">
+        <item quantity="one">Ți-a mai rămas %d exportare gratuită în 1080p. Abonează-te pentru a te bucura de exportări nelimitate la rezoluție mare.</item>
+        <item quantity="few">Ți-au mai rămas %d exportări gratuite în 1080p. Abonează-te pentru a te bucura de exportări nelimitate la rezoluție mare.</item>
+        <item quantity="other">Ți-au mai rămas %d de exportări gratuite în 1080p. Abonează-te pentru a te bucura de exportări nelimitate la rezoluție mare.</item>
+    </plurals>
+    <plurals name="lz">
+        <item quantity="one">Ți-a mai rămas %d exportare gratuită în 1080p luna aceasta. Abonează-te pentru a te bucura de exportări nelimitate la rezoluție mare.</item>
+        <item quantity="few">Ți-au mai rămas %d exportări gratuite în 1080p luna aceasta. Abonează-te pentru a te bucura de exportări nelimitate la rezoluție mare.</item>
+        <item quantity="other">Ți-au mai rămas %d de exportări gratuite în 1080p luna aceasta. Abonează-te pentru a te bucura de exportări nelimitate la rezoluție mare.</item>
+    </plurals>
+    <plurals name="la">
+        <item quantity="one">Ai nevoie de %d punct.</item>
+        <item quantity="few">Ai nevoie de %d puncte.</item>
+        <item quantity="other">Ai nevoie de %d de puncte.</item>
+    </plurals>
+    <plurals name="lb">
+        <item quantity="one">Mai ai %d punct rămas.</item>
+        <item quantity="few">Mai ai %d puncte rămase.</item>
+        <item quantity="other">Mai ai %d de puncte rămase.</item>
+    </plurals>
+    <plurals name="lc">
+        <item quantity="one">%1$d generare în curs. Abonează-te la Pro pentru a genera până la %2$d simultan.</item>
+        <item quantity="few">%1$d generări în curs. Abonează-te la Pro pentru a genera până la %2$d simultan.</item>
+        <item quantity="other">%1$d de generări în curs. Abonează-te la Pro pentru a genera până la %2$d simultan.</item>
+    </plurals>
+    <plurals name="ld">
+        <item quantity="one">Exportă fără inscripție (%d utilizare rămasă)</item>
+        <item quantity="few">Exportă fără inscripție (%d utilizări rămase)</item>
+        <item quantity="other">Exportă fără inscripție (%d de utilizări rămase)</item>
+    </plurals>
+    <plurals name="le">
+        <item quantity="one">%d utilizare gratuită rămasă. Nu ai nevoie de puncte.</item>
+        <item quantity="few">%d utilizări gratuite rămase. Nu ai nevoie de puncte.</item>
+        <item quantity="other">%d de utilizări gratuite rămase. Nu ai nevoie de puncte.</item>
+    </plurals>
+    <plurals name="lf">
+        <item quantity="one">Elementul selectat va fi șters și va rămâne în Coșul de gunoi %d zile.</item>
+        <item quantity="few">Elementele selectate vor fi șterse și vor rămâne în Coșul de gunoi %d zile.</item>
+        <item quantity="other">Elementele selectate vor fi șterse și vor rămâne în Coșul de gunoi %d zile.</item>
+    </plurals>
+    <plurals name="lg">
+        <item quantity="one">Unul dintre elementele selectate a fost încărcat în spațiu. Ștergi oricum?</item>
+        <item quantity="few">Unele dintre elementele selectate au fost încărcate în spațiu. Ștergi oricum?</item>
+        <item quantity="other">Unele dintre elementele selectate au fost încărcate în spațiu. Ștergi oricum?</item>
+    </plurals>
+    <plurals name="lh">
+        <item quantity="one">Elementul selectat va fi șters și mutat în Coșul de gunoi.</item>
+        <item quantity="few">Elementele selectate vor fi șterse și mutate în Coșul de gunoi.</item>
+        <item quantity="other">Elementele selectate vor fi șterse și mutate în Coșul de gunoi.</item>
+    </plurals>
+    <plurals name="li">
+        <item quantity="one">%d utilizare</item>
+        <item quantity="few">%d utilizări</item>
+        <item quantity="other">%d de utilizări</item>
+    </plurals>
+    <plurals name="lj">
+        <item quantity="one">Vârsta calculată pe baza datei de naștere introduse de tine este %d an și pare greșită. Introdu-ți data de naștere adevărată.</item>
+        <item quantity="few">Vârsta calculată pe baza datei de naștere introduse de tine este %d ani și pare greșită. Introdu-ți data de naștere adevărată.</item>
+        <item quantity="other">Vârsta calculată pe baza datei de naștere introduse de tine este %d de ani și pare greșită. Introdu-ți data de naștere adevărată.</item>
+    </plurals>
+    <plurals name="l0">
+        <item quantity="one">Include 1 utilizare gratuită de la achiziții anterioare și %d utilizare gratuită suplimentară pentru Pro</item>
+        <item quantity="few">Include 1 utilizare gratuită de la achiziții anterioare și %d utilizări gratuite suplimentare pentru Pro</item>
+        <item quantity="other">Include 1 utilizare gratuită de la achiziții anterioare și %d de utilizări gratuite suplimentare pentru Pro</item>
+    </plurals>
+    <plurals name="l1">
+        <item quantity="one">Membrii Pro beneficiază de %d utilizare gratuită</item>
+        <item quantity="few">Membrii Pro beneficiază de %d utilizări gratuite</item>
+        <item quantity="other">Membrii Pro beneficiază de %d de utilizări gratuite</item>
+    </plurals>
+    <plurals name="l2">
+        <item quantity="one">Acum avatarurile pe care le-ai creat folosind videoclipuri sunt valide pe termen nelimitat. Abonează-te la Pro și beneficiază de %d personalizare gratuită.</item>
+        <item quantity="few">Acum avatarurile pe care le-ai creat folosind videoclipuri sunt valide pe termen nelimitat. Abonează-te la Pro și beneficiază de %d personalizări gratuite.</item>
+        <item quantity="other">Acum avatarurile pe care le-ai creat folosind videoclipuri sunt valide pe termen nelimitat. Abonează-te la Pro și beneficiază de %d de personalizări gratuite.</item>
+    </plurals>
+    <plurals name="l4">
+        <item quantity="one">Aplicarea acestui efecte va consuma %d punct.</item>
+        <item quantity="few">Aplicarea acestui efecte va consuma %d puncte.</item>
+        <item quantity="other">Aplicarea acestui efecte va consuma %d de puncte.</item>
+    </plurals>
+    <plurals name="l5">
+        <item quantity="one">Acum ai %d punct disponibil.</item>
+        <item quantity="few">Acum ai %d puncte disponibile.</item>
+        <item quantity="other">Acum ai %d de puncte disponibile.</item>
+    </plurals>
+    <plurals name="l6">
+        <item quantity="one">%d evidențiat</item>
+        <item quantity="few">%d evidențiate</item>
+        <item quantity="other">%d evidențiate</item>
+    </plurals>
+    <plurals name="l7">
+        <item quantity="one">Se aplică efectul IA… %s oră rămasă</item>
+        <item quantity="few">Se aplică efectul IA… %s ore rămase</item>
+        <item quantity="other">Se aplică efectul IA… %s de ore rămase</item>
+    </plurals>
+    <plurals name="l8">
+        <item quantity="one">Se aplică efectul IA… %s minut rămas</item>
+        <item quantity="few">Se aplică efectul IA… %s minute rămase</item>
+        <item quantity="other">Se aplică efectul IA… %s de minute rămase</item>
+    </plurals>
+    <plurals name="l9">
+        <item quantity="one">Efectul Pro, %1$s, a fost aplicat la elementul actual. Dacă îl vei aplica din nou la noul element, vei consuma %2$d punct.</item>
+        <item quantity="few">Efectul Pro, %1$s, a fost aplicat la elementul actual. Dacă îl vei aplica din nou la noul element, vei consuma %2$d puncte.</item>
+        <item quantity="other">Efectul Pro, %1$s, a fost aplicat la elementul actual. Dacă îl vei aplica din nou la noul element, vei consuma %2$d puncte.</item>
+    </plurals>
+    <plurals name="l-">
+        <item quantity="one">Se va deduce %1$d utilizare gratuită. Acum ai %2$d utilizare gratuită.</item>
+        <item quantity="few">Se va deduce %1$d utilizare gratuită. Acum ai %2$d utilizări gratuite.</item>
+        <item quantity="other">Se va deduce %1$d utilizare gratuită. Acum ai %2$d de utilizări gratuite.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100075">
+        <item quantity="one">Se va deduce %1$d utilizare Pro. Acum ai %2$d utilizare Pro.</item>
+        <item quantity="few">Se va deduce %1$d utilizare Pro. Acum ai %2$d utilizări Pro.</item>
+        <item quantity="other">Se va deduce %1$d utilizare Pro. Acum ai %2$d de utilizări Pro.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f100076">
+        <item quantity="one">Acest model acceptă doar %d imagine de referință</item>
+        <item quantity="few">Acest model acceptă până la %d imagini de referință</item>
+        <item quantity="other">Acest model acceptă până la %d de imagini de referință</item>
+    </plurals>
+    <plurals name="l_">
+        <item quantity="one">Adaugă cel puțin %d imagine de referință pentru a utiliza acest model</item>
+        <item quantity="few">Adaugă cel puțin %d imagini de referință pentru a utiliza acest model</item>
+        <item quantity="other">Adaugă cel puțin %d de imagini de referință pentru a utiliza acest model</item>
+    </plurals>
+    <plurals name="mk">
+        <item quantity="one">Acest model acceptă doar %d videoclip de referință</item>
+        <item quantity="few">Acest model acceptă până la %d videoclipuri de referință</item>
+        <item quantity="other">Acest model acceptă până la %d de videoclipuri de referință</item>
+    </plurals>
+    <plurals name="ml">
+        <item quantity="one">Adaugă cel puțin %d videoclip de referință pentru a utiliza acest model</item>
+        <item quantity="few">Adaugă cel puțin %d videoclipuri de referință pentru a utiliza acest model</item>
+        <item quantity="other">Adaugă cel puțin %d de videoclipuri de referință pentru a utiliza acest model</item>
+    </plurals>
+    <plurals name="mm">
+        <item quantity="one">Selectează %d fotografie</item>
+        <item quantity="few">Selectează %d fotografii</item>
+        <item quantity="other">Selectează %d de fotografii</item>
+    </plurals>
+    <plurals name="mn">
+        <item quantity="one">%d material adăugat</item>
+        <item quantity="few">%d materiale adăugate</item>
+        <item quantity="other">%d de materiale adăugate</item>
+    </plurals>
+    <plurals name="mo">
+        <item quantity="one">%d posibilitate de creare rămasă</item>
+        <item quantity="few">%d posibilități de creare rămase</item>
+        <item quantity="other">%d de posibilități de creare rămase</item>
+    </plurals>
+    <plurals name="mp">
+        <item quantity="one">A mai rămas %d deblocare</item>
+        <item quantity="few">Au mai rămas %d deblocări</item>
+        <item quantity="other">Au mai rămas %d de deblocări</item>
+    </plurals>
+    <plurals name="mq">
+        <item quantity="one">%d cuvânt cheie evidențiat. Poți să le selectezi și manual.</item>
+        <item quantity="few">%d cuvinte cheie evidențiate. Poți să le selectezi și manual.</item>
+        <item quantity="other">%d de cuvinte cheie evidențiate. Poți să le selectezi și manual.</item>
+    </plurals>
+    <plurals name="mr">
+        <item quantity="one">Șterge %d clip</item>
+        <item quantity="few">Șterge %d clipuri</item>
+        <item quantity="other">Șterge %d de clipuri</item>
+    </plurals>
+    <plurals name="ms">
+        <item quantity="one">%d cuvânt de umplutură identificat. Poți să le selectezi și manual.</item>
+        <item quantity="few">%d cuvinte de umplutură identificate. Poți să le selectezi și manual.</item>
+        <item quantity="other">%d de cuvinte de umplutură identificate. Poți să le selectezi și manual.</item>
+    </plurals>
+    <plurals name="mt">
+        <item quantity="one">%d cuvânt cheie evidențiat</item>
+        <item quantity="few">%d cuvinte cheie evidențiate</item>
+        <item quantity="other">%d de cuvinte cheie evidențiate</item>
+    </plurals>
+    <plurals name="mu">
+        <item quantity="one">Se exportă %d fotografie...</item>
+        <item quantity="few">Se exportă %d fotografii...</item>
+        <item quantity="other">Se exportă %d de fotografii</item>
+    </plurals>
+    <plurals name="my">
+        <item quantity="one">Alege până la %d poziție</item>
+        <item quantity="few">Alege până la %d poziții</item>
+        <item quantity="other">Alege până la %d de poziții</item>
+    </plurals>
+    <plurals name="mz">
+        <item quantity="one">Se încarcă fișierul tău media</item>
+        <item quantity="few">Se încarcă fișierele tale media</item>
+        <item quantity="other">Se încarcă fișierele tale media</item>
+    </plurals>
+    <plurals name="ma">
+        <item quantity="one">%d membru</item>
+        <item quantity="few">%d membri</item>
+        <item quantity="other">%d de membri</item>
+    </plurals>
+    <plurals name="mb">
+        <item quantity="one">Încarcă %d proiect în spațiu pentru a elibera spațiul de stocare al dispozitivului tău. Poți edita acest proiect în aplicația mobilă, aplicația pentru desktop sau în editorul online.</item>
+        <item quantity="few">Încarcă %d proiecte în spațiu pentru a elibera spațiul de stocare al dispozitivului tău. Poți edita aceste proiecte în aplicația mobilă, aplicația pentru desktop sau în editorul online.</item>
+        <item quantity="other">Încarcă %d de proiecte în spațiu pentru a elibera spațiul de stocare al dispozitivului tău. Poți edita aceste proiecte în aplicația mobilă, aplicația pentru desktop sau în editorul online.</item>
+    </plurals>
+    <plurals name="mc">
+        <item quantity="one">Încarcă %d fișier media pentru proiectele tale în spațiu. Poți utiliza acest fișier de pe orice dispozitiv fără a-l încărca din nou.</item>
+        <item quantity="few">Încarcă %d fișiere media pentru proiectele tale în spațiu. Poți utiliza aceste fișiere de pe orice dispozitiv fără a le încărca din nou.</item>
+        <item quantity="other">Încarcă %d de fișiere media pentru proiectele tale în spațiu. Poți utiliza aceste fișiere de pe orice dispozitiv fără a le încărca din nou.</item>
+    </plurals>
+    <plurals name="md">
+        <item quantity="one">Ai un proiect de recuperat</item>
+        <item quantity="few">Ai proiecte de recuperat</item>
+        <item quantity="other">Ai proiecte de recuperat</item>
+    </plurals>
+    <plurals name="me">
+        <item quantity="one">Proiect recuperat</item>
+        <item quantity="few">Proiecte recuperate</item>
+        <item quantity="other">Proiecte recuperate</item>
+    </plurals>
+    <plurals name="mg">
+        <item quantity="one">Nu s-a putut aplica %d funcție</item>
+        <item quantity="few">Nu s-au putut aplica %d funcții</item>
+        <item quantity="other">Nu s-au putut aplica %d de funcții</item>
+    </plurals>
+    <plurals name="mh">
+        <item quantity="one">Se aplică %d funcție</item>
+        <item quantity="few">Se aplică %d funcții</item>
+        <item quantity="other">Se aplică %d de funcții</item>
+    </plurals>
+    <plurals name="mi">
+        <item quantity="one">Vrei să aplici efectul Pro?</item>
+        <item quantity="few">Vrei să aplici efectele Pro?</item>
+        <item quantity="other">Vrei să aplici efectele Pro?</item>
+    </plurals>
+    <plurals name="mj">
+        <item quantity="one">A fost aplicat %1$d efect Pro la elementul actual. Dacă îl vei aplica din nou la noul element, vei consuma %2$d puncte.</item>
+        <item quantity="few">Au fost aplicate %1$d efecte Pro la elementul actual. Dacă le vei aplica din nou la noul element, vei consuma %2$d puncte.</item>
+        <item quantity="other">Au fost aplicate %1$d de efecte Pro la elementul actual. Dacă le vei aplica din nou la noul element, vei consuma %2$d de puncte.</item>
+    </plurals>
+    <plurals name="m0">
+        <item quantity="one">A fost aplicat %1$d efect Pro la elementul actual. Pentru a-l aplica din nou la noul element, se va deduce %2$d utilizare gratuită. Nu vei consuma niciun punct.</item>
+        <item quantity="few">Au fost aplicate %1$d efecte Pro la elementul actual. Pentru a le aplica din nou la noul element, se vor deduce %2$d utilizări gratuite. Nu vei consuma niciun punct.</item>
+        <item quantity="other">Au fost aplicate %1$d de efecte Pro la elementul actual. Pentru a le aplica din nou la noul element, se vor deduce %2$d de utilizări gratuite. Nu vei consuma niciun punct.</item>
+    </plurals>
+    <plurals name="m1">
+        <item quantity="one">A fost aplicat %1$d efect Pro la elementul actual. Ai nevoie de %2$d puncte pentru a aplica din nou efectul la noul element.</item>
+        <item quantity="few">Au fost aplicate %1$d efecte Pro la elementul actual. Ai nevoie de %2$d pruncte pentru a aplica din nou efectele la noul element.</item>
+        <item quantity="other">Au fost aplicate %1$d de efecte Pro la elementul actual. Ai nevoie de %2$d de puncte pentru a aplica din nou efectele la noul element.</item>
+    </plurals>
+    <plurals name="m2">
+        <item quantity="one">Au fost aplicate %1$d efecte Pro la elementul actual. Dacă le vei aplica din nou la noul element, vei consuma %2$d utilizare gratuită și %3$d puncte.</item>
+        <item quantity="few">Au fost aplicate %1$d efecte Pro la elementul actual. Dacă le vei aplica din nou la noul element, vei consuma %2$d utilizări gratuite și %3$d puncte.</item>
+        <item quantity="other">Au fost aplicate %1$d de efecte Pro la elementul actual. Dacă le vei aplica din nou la noul element, vei consuma %2$d de utilizări gratuite și %3$d de puncte.</item>
+    </plurals>
+    <plurals name="m3">
+        <item quantity="one">Lipsește %d clip. Restaurează-l pe telefon sau înlocuiește-l.</item>
+        <item quantity="few">Lipsesc %d clipuri. Restaurează-le pe telefon sau înlocuiește-le.</item>
+        <item quantity="other">Lipsesc %d de clipuri. Restaurează-le pe telefon sau înlocuiește-le.</item>
+    </plurals>
+    <plurals name="m4">
+        <item quantity="one">Introdu până la %d personaj</item>
+        <item quantity="few">Introdu până la %d personaje</item>
+        <item quantity="other">Introdu până la %d de personaje</item>
+    </plurals>
+    <plurals name="m5">
+        <item quantity="one">%d zi</item>
+        <item quantity="few">%d zile</item>
+        <item quantity="other">%d de zile</item>
+    </plurals>
+    <plurals name="m6">
+        <item quantity="one">Ștergi elementul?</item>
+        <item quantity="few">Ștergi elementele?</item>
+        <item quantity="other">Ștergi elementele?</item>
+    </plurals>
+    <plurals name="m7">
+        <item quantity="one">Elementele mutate în Coșul de gunoi vor fi afișate aici, iar după %d zi vor fi șterse.</item>
+        <item quantity="few">Elementele mutate în Coșul de gunoi vor fi afișate aici, iar după %d zile vor fi șterse.</item>
+        <item quantity="other">Elementele mutate în Coșul de gunoi vor fi afișate aici, iar după %d de zile vor fi șterse.</item>
+    </plurals>
+    <plurals name="m8">
+        <item quantity="one">Se descarcă %d element...</item>
+        <item quantity="few">Se descarcă %d elemente...</item>
+        <item quantity="other">Se descarcă %d de elemente...</item>
+    </plurals>
+    <plurals name="m9">
+        <item quantity="one">Se încarcă %d element...</item>
+        <item quantity="few">Se încarcă %d elemente...</item>
+        <item quantity="other">Se încarcă %d de elemente...</item>
+    </plurals>
+    <plurals name="m-">
+        <item quantity="one">Elementul acesta va fi șters definitiv și nu va putea fi recuperat.</item>
+        <item quantity="few">Elementele acestea vor fi șterse definitiv și nu vor putea fi recuperate.</item>
+        <item quantity="other">Elementele acestea vor fi șterse definitiv și nu vor putea fi recuperate.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009d">
+        <item quantity="one">Articol mutat</item>
+        <item quantity="few">Articole mutate</item>
+        <item quantity="other">Articole mutate</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f10009e">
+        <item quantity="one">Mai ai %d zi în care poți beneficia de exportare gratuită.</item>
+        <item quantity="few">Mai ai %d zile în care poți beneficia de exportare gratuită.</item>
+        <item quantity="other">Mai ai %d de zile în care poți beneficia de exportare gratuită.</item>
+    </plurals>
+    <plurals name="m_">
+        <item quantity="one">Felicitări! Ai primit %d utilizare gratuită pe lună pentru a exporta fără inscripție.</item>
+        <item quantity="few">Felicitări! Ai primit %d utilizări gratuite pe lună pentru a exporta fără inscripție.</item>
+        <item quantity="other">Felicitări! Ai primit %d de utilizări gratuite pe lună pentru a exporta fără inscripție.</item>
+    </plurals>
+    <plurals name="nk">
+        <item quantity="one">Mai ai %d utilizare gratuită pentru a exporta fără inscripție.</item>
+        <item quantity="few">Mai ai %d utilizări gratuite pentru a exporta fără inscripție.</item>
+        <item quantity="other">Mai ai %d de utilizări gratuite pentru a exporta fără inscripție.</item>
+    </plurals>
+    <plurals name="nl">
+        <item quantity="one">Felicitări! Ai primit %d utilizare gratuită pentru a exporta fără inscripție.</item>
+        <item quantity="few">Felicitări! Ai primit %d utilizări gratuite pentru a exporta fără inscripție.</item>
+        <item quantity="other">Felicitări! Ai primit %d de utilizări gratuite pentru a exporta fără inscripție.</item>
+    </plurals>
+    <plurals name="nm">
+        <item quantity="one">%d utilizare</item>
+        <item quantity="few">%d utilizări</item>
+        <item quantity="other">%d de utilizări</item>
+    </plurals>
+    <plurals name="nn">
+        <item quantity="one">Reducere de %d punct pentru noi utilizatori. Vei consuma mai multe puncte dacă depășești limita.</item>
+        <item quantity="few">Reducere de %d puncte pentru noi utilizatori. Vei consuma mai multe puncte dacă depășești limita.</item>
+        <item quantity="other">Reducere de %d de puncte pentru noi utilizatori. Vei consuma mai multe puncte dacă depășești limita.</item>
+    </plurals>
+    <plurals name="no">
+        <item quantity="one">Mai ai nevoie de %d punct pentru a aplica această funcție</item>
+        <item quantity="few">Mai ai nevoie de %d puncte pentru a aplica această funcție</item>
+        <item quantity="other">Mai ai nevoie de %d de puncte pentru a aplica această funcție</item>
+    </plurals>
+    <plurals name="np">
+        <item quantity="one">Clipul nu poate depăși %d secundă</item>
+        <item quantity="few">Clipul nu poate depăși %d secunde</item>
+        <item quantity="other">Clipul nu poate depăși %d de secunde</item>
+    </plurals>
+    <plurals name="nq">
+        <item quantity="one">Mai ai %d punct.</item>
+        <item quantity="few">Mai ai %d puncte.</item>
+        <item quantity="other">Mai ai %d de puncte.</item>
+    </plurals>
+    <plurals name="nr">
+        <item quantity="one">Dacă aplici funcția {$benefit_name$}, vei consuma {$credit_amount$} punct.</item>
+        <item quantity="few">Dacă aplici funcția {$benefit_name$}, vei consuma {$credit_amount$} puncte.</item>
+        <item quantity="other">Dacă aplici funcția {$benefit_name$}, vei consuma {$credit_amount$} de puncte.</item>
+    </plurals>
+    <plurals name="ns">
+        <item quantity="one">Aplicarea acestei funcții va consuma %d punct.</item>
+        <item quantity="few">Aplicarea acestei funcții va consuma %d puncte.</item>
+        <item quantity="other">Aplicarea acestei funcții va consuma %d de puncte.</item>
+    </plurals>
+    <plurals name="nt">
+        <item quantity="one">Folosirea acestui șablon va consuma %d punct.</item>
+        <item quantity="few">Folosirea acestui șablon va consuma %d puncte.</item>
+        <item quantity="other">Folosirea acestui șablon va consuma %d de puncte.</item>
+    </plurals>
+    <plurals name="nw">
+        <item quantity="one">Va fi șters definitiv și nu va putea fi recuperat.</item>
+        <item quantity="few">Vor fi șterse definitiv și nu vor putea fi recuperate.</item>
+        <item quantity="other">Vor fi șterse definitiv și nu vor putea fi recuperate.</item>
+    </plurals>
+    <plurals name="nx">
+        <item quantity="one">Ștergi acest articol?</item>
+        <item quantity="few">Ștergi aceste articole?</item>
+        <item quantity="other">Ștergi aceste elemente?</item>
+    </plurals>
+    <plurals name="nz">
+        <item quantity="one">%1$d proiect de tip „%1$s”</item>
+        <item quantity="few">%1$d proiecte de tip „%1$s”</item>
+        <item quantity="other">%1$d de proiecte de tip „%1$s”</item>
+    </plurals>
+    <plurals name="na">
+        <item quantity="one">%d element mutat în Coșul de gunoi</item>
+        <item quantity="few">%d elemente mutate în Coșul de gunoi</item>
+        <item quantity="other">%d de elemente mutate în Coșul de gunoi</item>
+    </plurals>
+    <plurals name="nb">
+        <item quantity="one">%d element adăugat la Favorite</item>
+        <item quantity="few">%d elemente adăugate la Favorite</item>
+        <item quantity="other">%d de elemente adăugate la Favorite</item>
+    </plurals>
+    <plurals name="nc">
+        <item quantity="one">%d element eliminat din Favorite</item>
+        <item quantity="few">%d elemente eliminate din Favorite</item>
+        <item quantity="other">%d de elemente eliminate din Favorite</item>
+    </plurals>
+    <plurals name="ne">
+        <item quantity="one">Acesta este un spațiu gratuit și poate avea maximum %1$d membri. Mai poți invita %2$s membru.</item>
+        <item quantity="few">Acesta este un spațiu gratuit și poate avea maximum %1$d membri. Mai poți invita încă %2$s membri.</item>
+        <item quantity="other">Acesta este un spațiu gratuit și poate avea maximum %1$d membri. Mai poți invita încă %2$s de membri.</item>
+    </plurals>
+    <plurals name="nf">
+        <item quantity="one">%d utilizare/lună</item>
+        <item quantity="few">%d utilizări/lună</item>
+        <item quantity="other">%d de utilizări/lună</item>
+    </plurals>
+    <plurals name="ng">
+        <item quantity="one">%d utilizare/zi</item>
+        <item quantity="few">%d utilizări/zi</item>
+        <item quantity="other">%d de utilizări/zi</item>
+    </plurals>
+    <plurals name="nh">
+        <item quantity="one">%d utilizare/săptămână</item>
+        <item quantity="few">%d utilizări/săptămână</item>
+        <item quantity="other">%d de utilizări/săptămână</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month">
+        <item quantity="one">{price} după {number} lună</item>
+        <item quantity="few">{price} după {number} luni</item>
+        <item quantity="other">{price} după {number} de luni</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_month_client">
+        <item quantity="one">%1$s după %2$d lună</item>
+        <item quantity="few">%1$s după %2$d luni</item>
+        <item quantity="other">%1$s după %2$d de luni</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year">
+        <item quantity="one">{price} după {number} an</item>
+        <item quantity="few">{price} după {number} ani</item>
+        <item quantity="other">{price} după {number} de ani</item>
+    </plurals>
+    <plurals name="mob_m10n_price_desc_year_client">
+        <item quantity="one">%1$s după %2$d an</item>
+        <item quantity="few">%1$s după %2$d ani</item>
+        <item quantity="other">%1$s după %2$d de ani</item>
+    </plurals>
+    <plurals name="mob_m10n_space_current_member_client">
+        <item quantity="one">Există %d membru în acest spațiu.</item>
+        <item quantity="few">Există %d membri în acest spațiu.</item>
+        <item quantity="other">Există %d de membri în acest spațiu.</item>
+    </plurals>
+    <plurals name="n4">
+        <item quantity="one">Mai poți invita %1$d membru.</item>
+        <item quantity="few">Mai poți invita %1$d membri.</item>
+        <item quantity="other">Mai poți invita %1$d de membri.</item>
+    </plurals>
+    <plurals name="n5">
+        <item quantity="one">%1$d loc ocupat.</item>
+        <item quantity="few">%1$d locuri ocupate.</item>
+        <item quantity="other">%1$d de locuri ocupate.</item>
+    </plurals>
+    <plurals name="mob_m10n_subcribe_btn_ft_start_client">
+        <item quantity="one">Începe perioada de probă gratuită de %d zi</item>
+        <item quantity="few">Începe perioada de probă gratuită de %d zile</item>
+        <item quantity="other">Începe perioada de probă gratuită de %d de zile</item>
+    </plurals>
+    <plurals name="n7">
+        <item quantity="one">Ai nevoie de %d punct.</item>
+        <item quantity="few">Ai nevoie de %d puncte.</item>
+        <item quantity="other">Ai nevoie de %d de puncte.</item>
+    </plurals>
+    <plurals name="n8">
+        <item quantity="one">Mai ai %d punct rămas.</item>
+        <item quantity="few">Mai ai %d puncte rămase.</item>
+        <item quantity="other">Mai ai %d de puncte rămase.</item>
+    </plurals>
+    <plurals name="n-">
+        <item quantity="one">Se încarcă %1$s/%2$s proiect</item>
+        <item quantity="few">Se încarcă %1$s/%2$s proiecte</item>
+        <item quantity="other">Se încarcă %1$s/%2$s de proiecte</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c5">
+        <item quantity="one">"Încă %d clip este asociat cu acest fișier media. Vrei să îl înlocuiești?
+Fișierul va fi scurtat automat pentru a se încadra în durata originală."</item>
+        <item quantity="few">"%d alte clipuri sunt asociate cu acest fișier media. Vrei să le înlocuiești pe toate?
+Fișierul va fi scurtat automat pentru a se încadra în durata originală."</item>
+        <item quantity="other">"%d de alte clipuri sunt asociate cu acest fișier media. Vrei să le înlocuiești pe toate?
+Fișierul va fi scurtat automat pentru a se încadra în durata originală."</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000c6">
+        <item quantity="one">Mai poți încărca doar %d imagine</item>
+        <item quantity="few">Mai poți încărca doar %d imagini</item>
+        <item quantity="other">Mai poți încărca doar %d de imagini</item>
+    </plurals>
+    <plurals name="n_">
+        <item quantity="one">%d segment de actualizat</item>
+        <item quantity="few">%d segmente de actualizat</item>
+        <item quantity="other">%d segmente de actualizat</item>
+    </plurals>
+    <plurals name="ok">
+        <item quantity="one">Mai poți selecta %1$d imagine și %2$s</item>
+        <item quantity="few">Mai poți selecta %1$d imagini și %2$s</item>
+        <item quantity="other">Mai poți selecta %1$d de imagini și %2$s</item>
+    </plurals>
+    <plurals name="ol">
+        <item quantity="one">(max. %d s)</item>
+        <item quantity="few">(max. %d s)</item>
+        <item quantity="other">(max. %d s)</item>
+    </plurals>
+    <plurals name="om">
+        <item quantity="one">%d videoclip</item>
+        <item quantity="few">%d videoclipuri</item>
+        <item quantity="other">%d de videoclipuri</item>
+    </plurals>
+    <plurals name="on">
+        <item quantity="one">Mai poți selecta %d imagine</item>
+        <item quantity="few">Mai poți selecta %d imagini</item>
+        <item quantity="other">Mai poți selecta %d de imagini</item>
+    </plurals>
+    <plurals name="oo">
+        <item quantity="one">Mai poți selecta %d videoclip</item>
+        <item quantity="few">Mai poți selecta %d videoclipuri</item>
+        <item quantity="other">Mai poți selecta %d de videoclipuri</item>
+    </plurals>
+    <plurals name="op">
+        <item quantity="one">(max. %d s)</item>
+        <item quantity="few">(max. %d s)</item>
+        <item quantity="other">(max. %d s)</item>
+    </plurals>
+    <plurals name="oq">
+        <item quantity="one">În coadă... Aproximativ %d minut rămas.</item>
+        <item quantity="few">În coadă... Aproximativ %d minute rămase.</item>
+        <item quantity="other">În coadă... Aproximativ %d de minute rămase.</item>
+    </plurals>
+    <plurals name="or">
+        <item quantity="one">Redu timpul de așteptare · %d utilizare rămasă</item>
+        <item quantity="few">Redu timpul de așteptare · %d utilizări rămase</item>
+        <item quantity="other">Redu timpul de așteptare · %d de utilizări rămase</item>
+    </plurals>
+    <plurals name="ou">
+        <item quantity="one">În coadă... Aproximativ %d s rămasă.</item>
+        <item quantity="few">În coadă... Aproximativ %d s rămase.</item>
+        <item quantity="other">În coadă... Aproximativ %d s rămase.</item>
+    </plurals>
+    <plurals name="ox">
+        <item quantity="one">În coada rapidă cu Pro... Aproximativ %d minut rămas.</item>
+        <item quantity="few">În coada rapidă cu Pro... Aproximativ %d minute rămase.</item>
+        <item quantity="other">În coada rapidă cu Pro... Aproximativ %d de minute rămase.</item>
+    </plurals>
+    <plurals name="oz">
+        <item quantity="one">%d element</item>
+        <item quantity="few">%d elemente</item>
+        <item quantity="other">%d de elemente</item>
+    </plurals>
+    <plurals name="oa">
+        <item quantity="one">%d element selectat</item>
+        <item quantity="few">%d elemente selectate</item>
+        <item quantity="other">%d de elemente selectate</item>
+    </plurals>
+    <plurals name="ob">
+        <item quantity="one">%d proiect</item>
+        <item quantity="few">%d proiecte</item>
+        <item quantity="other">%d de proiecte</item>
+    </plurals>
+    <plurals name="oc">
+        <item quantity="one">%d proiect selectat</item>
+        <item quantity="few">%d proiecte selectate</item>
+        <item quantity="other">%d de proiecte selectate</item>
+    </plurals>
+    <plurals name="od">
+        <item quantity="one">Momentan, sunt multe persoane care folosesc această funcție. Timp de așteptare estimat: %d minut.</item>
+        <item quantity="few">Momentan, sunt multe persoane care folosesc această funcție. Timp de așteptare estimat: %d minute.</item>
+        <item quantity="other">Momentan, sunt multe persoane care folosesc această funcție. Timp de așteptare estimat: %d de minute.</item>
+    </plurals>
+    <plurals name="oe">
+        <item quantity="one">Dacă generezi din nou, vei consuma %d punct.</item>
+        <item quantity="few">Dacă generezi din nou, vei consuma %d puncte.</item>
+        <item quantity="other">Dacă generezi din nou, vei consuma %d de puncte.</item>
+    </plurals>
+    <plurals name="of">
+        <item quantity="one">Dacă generezi din nou folosind elementul nou, vei consuma %d punct.</item>
+        <item quantity="few">Dacă generezi din nou folosind elementul nou, vei consuma %d puncte.</item>
+        <item quantity="other">Dacă generezi din nou folosind elementul nou, vei consuma %d de puncte.</item>
+    </plurals>
+    <plurals name="og">
+        <item quantity="one">%d clip adăugat</item>
+        <item quantity="few">%d clipuri adăugate</item>
+        <item quantity="other">%d de clipuri adăugate</item>
+    </plurals>
+    <plurals name="oh">
+        <item quantity="one">Selectează %d element</item>
+        <item quantity="few">Selectează %d elemente</item>
+        <item quantity="other">Selectează %d de elemente</item>
+    </plurals>
+    <plurals name="oi">
+        <item quantity="one">S-a generat %d videoclip pentru tine</item>
+        <item quantity="few">S-au generat %d videoclipuri pentru tine</item>
+        <item quantity="other">S-au generat %d de videoclipuri pentru tine</item>
+    </plurals>
+    <plurals name="oj">
+        <item quantity="one">Poți separa numai conținutul audio sub %d minut</item>
+        <item quantity="few">Poți separa numai conținutul audio sub %d minute</item>
+        <item quantity="other">Poți separa numai conținutul audio sub %d de minute</item>
+    </plurals>
+    <plurals name="o0">
+        <item quantity="one">Poți restaura spațiul în termen de %d zi.</item>
+        <item quantity="few">Poți restaura spațiul în termen de %d zile.</item>
+        <item quantity="other">Poți restaura spațiul în termen de %d de zile.</item>
+    </plurals>
+    <plurals name="o1">
+        <item quantity="one">%d videoclip este în curs de generare. Încearcă mai târziu.</item>
+        <item quantity="few">%d videoclipuri sunt în curs de generare. Încearcă mai târziu.</item>
+        <item quantity="other">%d de videoclipuri sunt în curs de generare. Încearcă mai târziu.</item>
+    </plurals>
+    <plurals name="o2">
+        <item quantity="one">Fă upgrade pentru a folosi această funcție cu %d punct</item>
+        <item quantity="few">Fă upgrade pentru a folosi această funcție cu %d puncte</item>
+        <item quantity="other">Fă upgrade pentru a folosi această funcție cu %d de puncte</item>
+    </plurals>
+    <plurals name="o3">
+        <item quantity="one">Mai ai %d loc rămas în acest spațiu.</item>
+        <item quantity="few">Mai ai %d locuri rămase în acest spațiu.</item>
+        <item quantity="other">Mai ai %d de locuri rămase în acest spațiu.</item>
+    </plurals>
+    <plurals name="o4">
+        <item quantity="one">%d element folosit</item>
+        <item quantity="few">%d elemente folosite</item>
+        <item quantity="other">%d de elemente folosite</item>
+    </plurals>
+    <plurals name="o5">
+        <item quantity="one">%d element selectat</item>
+        <item quantity="few">%d elemente selectate</item>
+        <item quantity="other">%d de elemente selectate</item>
+    </plurals>
+    <plurals name="o6">
+        <item quantity="one">Selectează %d element</item>
+        <item quantity="few">Selectează %d elemente</item>
+        <item quantity="other">Selectează %d de elemente</item>
+    </plurals>
+    <plurals name="o7">
+        <item quantity="one">%d subtitrare</item>
+        <item quantity="few">%d subtitrări</item>
+        <item quantity="other">%d de subtitrări</item>
+    </plurals>
+    <plurals name="o8">
+        <item quantity="one">%d element</item>
+        <item quantity="few">%d elemente</item>
+        <item quantity="other">%d de elemente</item>
+    </plurals>
+    <plurals name="o9">
+        <item quantity="one">Se aplică %d funcție. Încearcă din nou mai târziu.</item>
+        <item quantity="few">Se aplică %d funcții. Încearcă din nou mai târziu.</item>
+        <item quantity="other">Se aplică %d de funcții. Încearcă din nou mai târziu.</item>
+    </plurals>
+    <plurals name="o-">
+        <item quantity="one">%d utilizare gratuită rămasă. Alătură-te Standard pentru a o folosi cu puncte.</item>
+        <item quantity="few">%d utilizări gratuite rămase. Alătură-te Standard pentru a le folosi cu puncte.</item>
+        <item quantity="other">%d de utilizări gratuite rămase. Alătură-te Standard pentru a le folosi cu puncte.</item>
+    </plurals>
+    <plurals name="APKTOOL_RENAMED_0x7f1000ed">
+        <item quantity="one">%d utilizare gratuită rămasă. Alătură-te Pro pentru a o folosi cu puncte.</item>
+        <item quantity="few">%d utilizări gratuite rămase. Alătură-te Pro pentru a le folosi cu puncte.</item>
+        <item quantity="other">%d de utilizări gratuite rămase. Alătură-te Pro pentru a le folosi cu puncte.</item>
+    </plurals>
+    <plurals name="mob_try_credits_ultra">
+        <item quantity="one">%d utilizare gratuită rămasă. Abonează-te la Ultra pentru a o folosi cu puncte.</item>
+        <item quantity="few">%d utilizări gratuite rămase. Abonează-te la Ultra pentru a le folosi cu puncte.</item>
+        <item quantity="other">%d de utilizări gratuite rămase. Abonează-te la Ultra pentru a le folosi cu puncte.</item>
+    </plurals>
+    <plurals name="o_">
+        <item quantity="one">Acest lucru va consuma %1$d punct. %2$s</item>
+        <item quantity="few">Acest lucru va consuma %1$d puncte. %2$s</item>
+        <item quantity="other">Acest lucru va consuma %1$d de puncte. %2$s</item>
+    </plurals>
+    <plurals name="pk">
+        <item quantity="one">Mai ai %d punct rămas.</item>
+        <item quantity="few">Mai ai %d puncte rămase.</item>
+        <item quantity="other">Mai ai %d de puncte rămase.</item>
+    </plurals>
+    <plurals name="mob_ultra_credits_enter">
+        <item quantity="one">Abonează-te la Ultra pentru a folosi cu %d puncte</item>
+        <item quantity="few">Abonează-te la Ultra pentru a folosi cu %d puncte</item>
+        <item quantity="other">Abonează-te la Ultra pentru a folosi cu %d de puncte</item>
+    </plurals>
+    <plurals name="pm">
+        <item quantity="one">Abonează-te la Pro pentru a folosi această funcție în schimbul a %d punct.</item>
+        <item quantity="few">Abonează-te la Pro pentru a folosi această funcție în schimbul a %d puncte.</item>
+        <item quantity="other">Abonează-te la Pro pentru a folosi această funcție în schimbul a %d de puncte.</item>
+    </plurals>
+    <plurals name="pn">
+        <item quantity="one">Abonează-te la Standard pentru a folosi această funcție în schimbul a %d punct.</item>
+        <item quantity="few">Abonează-te la Standard pentru a folosi această funcție în schimbul a %d puncte.</item>
+        <item quantity="other">Abonează-te la Standard pentru a folosi această funcție în schimbul a %d de puncte.</item>
+    </plurals>
+    <plurals name="po">
+        <item quantity="one">Poți salva maximum %1$d voce.</item>
+        <item quantity="few">Poți salva maximum %1$d voci.</item>
+        <item quantity="other">Poți salva maximum %1$d voci.</item>
+    </plurals>
+    <plurals name="pp">
+        <item quantity="one">Nu se poate îmbunătăți vocea dintr-un clip mai lung de %1$d minut</item>
+        <item quantity="few">Nu se poate îmbunătăți vocea dintr-un clip mai lung de %1$d minute</item>
+        <item quantity="other">Nu se poate îmbunătăți vocea dintr-un clip mai lung de %1$d de minute</item>
+    </plurals>
+    <plurals name="pr">
+        <item quantity="one">Selectează %d element pentru rezultate optime</item>
+        <item quantity="few">Selectează %d elemente pentru rezultate optime</item>
+        <item quantity="other">Selectează %d de elemente pentru rezultate optime</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_client">
+        <item quantity="one">Se reînnoiește la prețul de %1$s în luna %2$d, apoi la %3$s.</item>
+        <item quantity="few">Se reînnoiește la prețul de %1$s în primele %2$d luni, apoi la %3$s.</item>
+        <item quantity="other">Se reînnoiește la prețul de %1$s în primele %2$d de luni, apoi la %3$s.</item>
+    </plurals>
+    <plurals name="open_page_desc_free_trial_renew_price_year_client">
+        <item quantity="one">Se reînnoiește la prețul de %1$s în anul %2$d, apoi la %3$s.</item>
+        <item quantity="few">Se reînnoiește la prețul de %1$s în primele %2$d ani, apoi la %3$s.</item>
+        <item quantity="other">Se reînnoiește la prețul de %1$s în primele %2$d de ani, apoi la %3$s.</item>
+    </plurals>
+    <plurals name="pu">
+        <item quantity="one">Ai realizat %d actualizare. Generezi voce și sincronizare a buzelor?</item>
+        <item quantity="few">Ai realizat %d actualizări. Generezi voce și sincronizare a buzelor?</item>
+        <item quantity="other">Ai realizat %d de actualizări. Generezi voce și sincronizare a buzelor?</item>
+    </plurals>
+    <plurals name="pv">
+        <item quantity="one">%d încercare rămasă</item>
+        <item quantity="few">%d încercări rămase</item>
+        <item quantity="other">%d de încercări rămase</item>
+    </plurals>
+    <plurals name="pw">
+        <item quantity="one">Există %d clip fără sunet.</item>
+        <item quantity="few">Există %d clipuri fără sunet.</item>
+        <item quantity="other">Există %d de clipuri fără sunet.</item>
+    </plurals>
+</resources>

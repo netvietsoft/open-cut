@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/recommend_grid_view_layout" n0:layout_width="match_parent" n0:layout_height="72.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/view_content_top_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="20.0dp" n1:layout_constraintBottom_toTopOf="@id/view_content_bottom" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView n0:id="@id/la_loading" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n1:layout_constraintBottom_toBottomOf="@id/view_content_top" n1:layout_constraintEnd_toEndOf="@id/view_icon_placeholder" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="@id/view_content_top" n1:lottie_autoPlay="true" n1:lottie_fileName="circle_loading_w.json" n1:lottie_loop="true" />
+        <ImageView n0:id="@id/iv_retry" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/kk7" n1:layout_constraintBottom_toBottomOf="@id/view_icon_placeholder" n1:layout_constraintEnd_toEndOf="@id/view_icon_placeholder" n1:layout_constraintStart_toStartOf="@id/view_icon_placeholder" n1:layout_constraintTop_toTopOf="@id/view_icon_placeholder" />
+        <View n0:id="@id/view_content_top" n0:background="@drawable/klq" n0:layout_width="200.0dp" n0:layout_height="16.0dp" n1:layout_constraintBottom_toTopOf="@id/view_content_bottom" n1:layout_constraintStart_toEndOf="@id/view_icon_placeholder" n1:layout_constraintTop_toTopOf="parent" n1:layout_constraintVertical_chainStyle="packed" />
+    </LinearLayout>
+    <View n0:id="@id/view_content_bottom" n0:background="@drawable/klq" n0:layout_width="100.0dp" n0:layout_height="14.0dp" n0:layout_marginTop="4.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintStart_toStartOf="@id/view_content_top_layout" n2:layout_constraintTop_toBottomOf="@id/view_content_top_layout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:id="@id/tv_loading_error_content" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/e_" n0:layout_marginStart="20.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

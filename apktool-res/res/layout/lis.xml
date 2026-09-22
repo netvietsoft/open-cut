@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/panel_manual_beauty_root" n0:background="#242424" n0:layout_width="match_parent" n0:layout_height="280.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/panel_title" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_close_panel" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="12.0dp" n0:src="@drawable/nlt" n0:layout_marginEnd="12.0dp" n2:layout_constraintBottom_toBottomOf="@id/panel_title" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/panel_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaSimpleDraweeView n0:id="@id/iv_brush" n0:background="@drawable/olf" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="24.0dp" n0:scaleType="centerInside" n3:layout_constraintEnd_toStartOf="@id/guideline_center" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/panel_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/vip_icon_brush" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n4:layout_constraintEnd_toEndOf="@id/iv_brush" n4:layout_constraintTop_toTopOf="@id/iv_brush" n4:kml="small"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptLayout n0:id="@id/text_layout_brush" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n5:layout_constraintEnd_toEndOf="@id/iv_brush" n5:layout_constraintStart_toStartOf="@id/iv_brush" n5:layout_constraintTop_toBottomOf="@id/iv_brush" n5:k2c="true"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@drawable/qmh" n0:gravity="center|top" n0:id="@id/text_brush" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="60.0dp" n0:minWidth="60.0dp" n0:text="@string/o8a" n0:maxLines="2" />
+    </com.vega.ui.TextWordAdaptLayout>
+    <com.vega.ui.AlphaSimpleDraweeView n0:id="@id/iv_eraser" n0:background="@drawable/olh" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:layout_marginTop="24.0dp" n0:scaleType="centerInside" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toEndOf="@id/guideline_center" n6:layout_constraintTop_toBottomOf="@id/panel_title"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/vip_icon_eraser" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n7:layout_constraintEnd_toEndOf="@id/iv_eraser" n7:layout_constraintTop_toTopOf="@id/iv_eraser" n7:kml="small"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TextWordAdaptLayout n0:id="@id/text_layout_eraser" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="6.0dp" n8:layout_constraintEnd_toEndOf="@id/iv_eraser" n8:layout_constraintStart_toStartOf="@id/iv_eraser" n8:layout_constraintTop_toBottomOf="@id/iv_eraser" n8:k2c="true"
+      xmlns:n8="http://schemas.android.com/apk/res-auto">
+        <com.vega.ui.TintTextView n0:textSize="10.0dp" n0:textColor="@drawable/qmh" n0:gravity="center|top" n0:id="@id/text_eraser" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxWidth="60.0dp" n0:minWidth="60.0dp" n0:text="@string/o8c" n0:maxLines="2" />
+    </com.vega.ui.TextWordAdaptLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tv_size" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:layout_marginTop="9.0dp" n0:text="@string/o8e" n0:paddingHorizontal="16.0dp" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toBottomOf="@id/text_layout_brush"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/slide_view_size" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginEnd="16.0dp" n10:APKTOOL_RENAMED_0x7f040438="#454545" n10:APKTOOL_RENAMED_0x7f04049f="false" n10:APKTOOL_RENAMED_0x7f040549="9.0dp" n10:APKTOOL_RENAMED_0x7f0405b7="true" n10:APKTOOL_RENAMED_0x7f0405b8="true" n10:layout_constraintBottom_toBottomOf="@id/tv_size" n10:layout_constraintEnd_toEndOf="parent" n10:layout_constraintStart_toEndOf="@id/tv_size" n10:layout_constraintTop_toTopOf="@id/tv_size" n10:kkt="@color/APKTOOL_RENAMED_0x7f060639"
+      xmlns:n10="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tv_intensity" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:text="@string/o8d" n0:paddingHorizontal="16.0dp" n11:layout_constraintStart_toStartOf="parent" n11:layout_constraintTop_toBottomOf="@id/tv_size"
+      xmlns:n11="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SliderView n0:id="@id/slide_view_intensity" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginEnd="16.0dp" n12:APKTOOL_RENAMED_0x7f040438="#454545" n12:APKTOOL_RENAMED_0x7f04049f="false" n12:APKTOOL_RENAMED_0x7f040549="9.0dp" n12:APKTOOL_RENAMED_0x7f0405b7="true" n12:APKTOOL_RENAMED_0x7f0405b8="true" n12:layout_constraintBottom_toBottomOf="@id/tv_intensity" n12:layout_constraintEnd_toEndOf="parent" n12:layout_constraintStart_toEndOf="@id/tv_intensity" n12:layout_constraintTop_toTopOf="@id/tv_intensity" n12:kkt="@color/APKTOOL_RENAMED_0x7f060639"
+      xmlns:n12="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.TintTextView n0:textSize="12.0dp" n0:textColor="@color/_4" n0:gravity="center" n0:id="@id/tv_manual_beauty_reset" n0:layout_width="wrap_content" n0:layout_height="44.0dp" n0:text="@string/qex" n0:drawablePadding="@dimen/ai" n0:drawableStart="@drawable/och" n0:layout_marginStart="16.0dp" n13:layout_constraintBottom_toBottomOf="parent" n13:layout_constraintStart_toStartOf="parent"
+      xmlns:n13="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.Guideline n0:orientation="vertical" n0:id="@id/guideline_center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n14:layout_constraintGuide_percent="0.5"
+      xmlns:n14="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

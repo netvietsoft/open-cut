@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.lvui.view.MaterialSelectableLayout n0:id="@id/parent" n0:background="@drawable/pba" n0:clipChildren="false" n0:layout_width="match_parent" n0:layout_height="36.0dp" style="@style/uj"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n0:textColor="@color/cf" n0:id="@id/image" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/vip_icon" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_margin="3.0dp" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="@id/parent" n2:kml="small"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/ivFontConner" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:scaleType="fitCenter" n0:alpha="0.0" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivTTFont" n0:visibility="gone" n0:layout_width="8.0dp" n0:layout_height="8.0dp" n0:layout_marginTop="4.0dp" n0:src="@drawable/o_g" n0:scaleType="fitCenter" n0:layout_marginStart="4.0dp" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivSelectConner" n0:visibility="gone" n0:layout_width="12.0dp" n0:layout_height="12.0dp" n0:src="@drawable/qnf" n0:scaleType="fitCenter" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/knt" n0:ellipsize="end" n0:gravity="center" n0:id="@id/text" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:singleLine="true" n0:includeFontPadding="false" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:id="@id/error" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.ItemLoadingView n0:id="@id/loading" n0:layout_width="20.0dp" n0:layout_height="11.0dp" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintEnd_toEndOf="parent" n8:layout_constraintStart_toStartOf="parent" n8:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="8.0dp" n0:textColor="@color/knt" n0:id="@id/royalty_free_label" n0:background="@drawable/lrh" n0:paddingLeft="2.0dp" n0:paddingTop="1.0dp" n0:paddingRight="2.0dp" n0:paddingBottom="1.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/APKTOOL_RENAMED_0x7f122f54" n0:paddingHorizontal="2.0dp" n0:paddingVertical="1.0dp" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toTopOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</com.vega.lvui.view.MaterialSelectableLayout>

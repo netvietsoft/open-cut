@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="80.0dp" n0:layout_height="106.0dp" n0:layout_marginStart="2.0dp" n0:layout_marginEnd="2.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/multi_cutsame_bg_selected" n0:background="@drawable/k-6" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/cover_container" n0:layout_width="72.0dp" n0:layout_height="98.0dp" n0:layout_marginTop="4.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.cardview.widget.CardView n0:id="@id/cover_container_inner" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:cardBackgroundColor="#25262b" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp">
+            <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/multi_cutsame_cover" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+            <com.airbnb.lottie.LottieAnimationView n0:id="@id/placeholder_lottie_view" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:lottie_autoPlay="true" n1:lottie_fileName="swipe_loading/data.json" n1:lottie_imageAssetsFolder="swipe_loading/images" n1:lottie_loop="true" />
+        </androidx.cardview.widget.CardView>
+        <View n0:id="@id/retry_maskView" n0:background="@color/_d" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/retry_container" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent">
+            <ImageView n0:background="@drawable/pje" n0:layout_width="32.0dp" n0:layout_height="32.0dp" />
+        </LinearLayout>
+        <com.vega.multicutsame.view.MultiCutSameLoadingView n0:id="@id/loading_view" n0:layout_width="match_parent" n0:layout_height="match_parent" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <ImageView n0:id="@id/collect_label" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="3.0dp" n0:src="@drawable/npa" n0:layout_marginStart="3.0dp" n0:layout_marginEnd="3.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:layout_goneMarginStart="3.0dp" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginEnd="4.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:kml="small" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout n0:orientation="horizontal" n0:id="@id/multi_cutsame_ll_heat" n0:background="@drawable/k-5" n0:paddingTop="2.0dp" n0:paddingBottom="2.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:paddingStart="4.0dp" n0:paddingEnd="4.0dp" n0:layout_marginStart="4.0dp" n2:layout_constraintBottom_toBottomOf="@id/cover_container" n2:layout_constraintStart_toStartOf="@id/cover_container"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center_vertical" n0:background="@drawable/pja" n0:layout_width="10.0dp" n0:layout_height="10.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="8.0dp" n0:textColor="@color/knt" n0:id="@id/multi_cutsame_tv_heat" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="2.0dp" />
+    </LinearLayout>
+    <View n0:id="@id/multi_cutsame_cover_mask" n0:background="@drawable/k-2" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="@id/cover_container" n3:layout_constraintEnd_toEndOf="@id/cover_container" n3:layout_constraintStart_toStartOf="@id/cover_container" n3:layout_constraintTop_toTopOf="@id/cover_container" n3:roundAsCircle="true"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/fake_select_round_view" n0:background="@drawable/ltw" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:layout_marginBottom="20.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/multi_cutsame_cl_edit" n0:background="@drawable/k-8" n0:layout_width="match_parent" n0:layout_height="24.0dp" n5:layout_constraintBottom_toBottomOf="@id/multi_cutsame_bg_selected" n5:layout_constraintEnd_toEndOf="@id/multi_cutsame_bg_selected" n5:layout_constraintStart_toStartOf="@id/multi_cutsame_bg_selected"
+      xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#16161d" n0:gravity="center_vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="4.0dp" n0:text="@string/l3b" n0:includeFontPadding="false" n0:drawablePadding="4.0dp" n5:APKTOOL_RENAMED_0x7f040477="@drawable/pjc" n5:layout_constraintBottom_toBottomOf="parent" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:k1i="medium" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.airbnb.lottie.LottieAnimationView n0:id="@id/multi_cutsame_cover_playing" n0:layout_width="28.0dp" n0:layout_height="28.0dp" n6:layout_constraintBottom_toBottomOf="@id/cover_container" n6:layout_constraintEnd_toEndOf="@id/cover_container" n6:layout_constraintStart_toStartOf="@id/cover_container" n6:layout_constraintTop_toTopOf="@id/cover_container" n6:lottie_fileName="multi_cutsame_playing.json" n6:lottie_loop="true"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#ffffff" n0:gravity="center" n0:id="@id/item_edit_layout" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pmb" n0:includeFontPadding="false" n0:drawablePadding="4.0dp" n0:textFontWeight="500" n7:APKTOOL_RENAMED_0x7f04047b="@drawable/o0m" n7:layout_constraintBottom_toBottomOf="@id/cover_container" n7:layout_constraintEnd_toEndOf="@id/cover_container" n7:layout_constraintStart_toStartOf="@id/cover_container" n7:layout_constraintTop_toTopOf="@id/cover_container" n7:k1i="medium"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

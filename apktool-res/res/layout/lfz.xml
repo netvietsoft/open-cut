@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:orientation="vertical" n0:background="@drawable/k9x" n0:layout_width="match_parent" n0:layout_height="182.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.cutsameedit.view.SimpleMaterialSortView n0:id="@id/materialSortView" n0:scrollbars="none" n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:layout_above="@id/line" n0:layout_centerInParent="true" n0:overScrollMode="never" n1:k13="material"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="104.0dp">
+        <TextView n0:textSize="12.0dp" n0:textColor="#99ffffff" n0:layout_gravity="center_horizontal" n0:id="@id/tvSortHint" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pli" />
+        <View n0:id="@id/line" n0:background="#1affffff" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="24.0dp" n0:layout_above="@id/sortConfirmMenu" />
+        <FrameLayout n0:id="@id/sortConfirmMenu" n0:layout_width="match_parent" n0:layout_height="48.0dp" n0:layout_alignParentBottom="true">
+            <ImageView n0:layout_gravity="center_vertical" n0:id="@id/closeSort" n0:padding="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/nwy" n0:layout_marginStart="4.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:gravity="center" n0:layout_gravity="center" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/pk1" n2:k1i="bold"
+              xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <ImageView n0:layout_gravity="end|center" n0:id="@id/confirmSort" n0:padding="12.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/nts" n0:layout_marginEnd="4.0dp" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

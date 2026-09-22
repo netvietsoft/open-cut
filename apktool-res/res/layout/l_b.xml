@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:orientation="vertical" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:id="@id/headerLayout" n0:layout_width="match_parent" n0:layout_height="44.0dp">
+        <ImageView n0:id="@id/btnClose" n0:padding="12.0dp" n0:layout_width="52.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m__" n0:layout_centerVertical="true" n0:contentDescription="@string/lvo" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" />
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0dp" n0:textColor="@color/ml" n0:id="@id/tvTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/o29" n0:layout_centerInParent="true" n1:k1g="text" n1:k1i="bold" n1:k1j="headline"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <ImageView n0:id="@id/btnHistory" n0:padding="12.0dp" n0:layout_width="52.0dp" n0:layout_height="44.0dp" n0:src="@drawable/m_h" n0:layout_centerVertical="true" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n0:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.bytedance.cux.skeleton.CuxShimmerLayout n0:id="@id/shimmerLayout" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0">
+        <LinearLayout n0:orientation="vertical" n0:id="@id/contentContainer" n0:visibility="visible" n0:layout_width="match_parent" n0:layout_height="match_parent">
+            <FrameLayout n0:layout_width="match_parent" n0:layout_height="50.0dp">
+                <com.google.android.material.tabs.TabLayout n0:id="@id/tabLayout" n0:background="@android:color/transparent" n0:layout_width="match_parent" n0:layout_height="50.0dp" n2:tabBackground="@android:color/transparent" n2:tabGravity="start" n2:tabIndicator="@drawable/lzx" n2:tabIndicatorColor="@color/kb" n2:tabIndicatorFullWidth="false" n2:tabIndicatorGravity="bottom" n2:tabIndicatorHeight="2.0dp" n2:tabMode="scrollable" n2:tabRippleColor="@null" n2:tabSelectedTextColor="@color/ml" n2:tabTextColor="@color/mp"
+                  xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <androidx.recyclerview.widget.RecyclerView n0:id="@id/categorySkeleton" n0:layout_width="match_parent" n0:layout_height="50.0dp" />
+            </FrameLayout>
+            <View n0:id="@id/categoryDivider" n0:background="@color/kw" n0:layout_width="match_parent" n0:layout_height="1.0px" />
+            <androidx.viewpager2.widget.ViewPager2 n0:id="@id/viewPager" n0:clipToPadding="false" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+        </LinearLayout>
+        <com.vega.image.edit.template.view.panel.ImageTemplateListStatusView n0:id="@id/statusView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    </com.bytedance.cux.skeleton.CuxShimmerLayout>
+</merge>

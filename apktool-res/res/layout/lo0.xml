@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/top_bar" n0:paddingLeft="16.0dp" n0:paddingTop="12.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="52.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="12.0dp" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="#fafbff" n0:id="@id/captureTitle" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nvs" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="#66e5e9fa" n0:id="@id/capture_photo_nums" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="(0/9)" n0:layout_marginStart="4.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toEndOf="@id/captureTitle" n1:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:enabled="true" n0:textSize="12.0dp" n0:textColor="@color/knk" n0:gravity="center" n0:id="@id/add_filter_bt" n0:background="@drawable/APKTOOL_RENAMED_0x7f080583" n0:paddingLeft="10.0dp" n0:paddingRight="10.0dp" n0:focusable="true" n0:clickable="true" n0:layout_width="wrap_content" n0:layout_height="28.0dp" n0:text="@string/nvr" n0:drawablePadding="4.0dp" n0:drawableStart="@drawable/qkf" n0:paddingHorizontal="10.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:id="@id/place_holder" n0:background="@drawable/llo" n0:layout_width="72.0dp" n0:layout_height="72.0dp" n0:src="@drawable/q2z" n0:scaleType="center" n0:layout_marginStart="16.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/top_bar"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/captured_photos_rv" n0:visibility="gone" n0:fadingEdgeLength="40.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:requiresFadingEdge="horizontal" n0:paddingEnd="16.0dp" n3:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <FrameLayout n0:id="@id/template_video_container" n0:visibility="gone" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintDimensionRatio="W,9:16" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.SeekBarSliderView n2:id="@id/seek_bar_slide_view" n2:paddingTop="32.0dp" n2:visibility="gone" n2:layout_width="0.0dp" n2:layout_height="55.0dp" n2:layout_marginBottom="-1.0dp" n3:APKTOOL_RENAMED_0x7f0404f1="true" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:kko="@color/APKTOOL_RENAMED_0x7f0605c8" n3:kkt="#444444" n3:kkx="1.0dp" n3:ksr="1.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res/android" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n4:id="@id/drag_time_layout" n4:visibility="gone" n4:layout_width="match_parent" n4:layout_height="wrap_content" n4:layout_marginBottom="64.0dp" n5:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res/android" xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <TextView n4:textSize="14.0dp" n4:textStyle="bold" n4:textColor="#fafbff" n4:id="@id/tv_drag_start_time" n4:layout_width="wrap_content" n4:layout_height="wrap_content" n4:text="@string/uqg" n5:layout_constraintEnd_toStartOf="@id/tv_drag_time_divider" n5:layout_constraintHorizontal_chainStyle="packed" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toTopOf="parent" />
+        <View n4:id="@id/tv_drag_time_divider" n4:background="@color/kqz" n4:layout_width="1.0dp" n4:layout_height="4.0dp" n4:layout_marginStart="6.0dp" n4:layout_marginEnd="6.0dp" n5:layout_constraintBottom_toBottomOf="@id/tv_drag_start_time" n5:layout_constraintEnd_toStartOf="@id/tv_drag_end_time" n5:layout_constraintStart_toEndOf="@id/tv_drag_start_time" n5:layout_constraintTop_toTopOf="@id/tv_drag_start_time" />
+        <TextView n4:textSize="14.0dp" n4:textStyle="bold" n4:textColor="#66e5e9fa" n4:id="@id/tv_drag_end_time" n4:layout_width="wrap_content" n4:layout_height="wrap_content" n4:text="@string/uqg" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toEndOf="@id/tv_drag_time_divider" n5:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n6:id="@id/template_blank_placeholder" n6:background="@color/APKTOOL_RENAMED_0x7f060637" n6:visibility="visible" n6:layout_width="0.0dp" n6:layout_height="0.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintDimensionRatio="W,9:16" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n6="http://schemas.android.com/apk/res/android" xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <com.vega.theme.text.VegaTextView n6:gravity="center" n6:id="@id/template_blank_tips" n6:layout_width="wrap_content" n6:layout_height="wrap_content" n6:text="@string/kjh" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout n8:id="@id/template_preview_retry_load" n8:background="@color/APKTOOL_RENAMED_0x7f060637" n8:visibility="gone" n8:layout_width="0.0dp" n8:layout_height="0.0dp" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintDimensionRatio="W,9:16" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toTopOf="parent"
+      xmlns:n8="http://schemas.android.com/apk/res/android" xmlns:n9="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n8:orientation="horizontal" n8:id="@id/preview_retry" n8:layout_width="wrap_content" n8:layout_height="wrap_content" n9:layout_constraintBottom_toBottomOf="parent" n9:layout_constraintEnd_toEndOf="parent" n9:layout_constraintStart_toStartOf="parent" n9:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView n8:layout_gravity="top" n8:background="@drawable/oda" n8:layout_width="wrap_content" n8:layout_height="wrap_content" />
+            <com.vega.theme.text.VegaTextView n8:gravity="top" n8:layout_width="wrap_content" n8:layout_height="wrap_content" n8:text="@string/kw5" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

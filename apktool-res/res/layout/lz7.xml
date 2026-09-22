@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageView n0:id="@id/navigation_bar_item_icon_view" n0:duplicateParentState="true" n0:layout_width="@dimen/yh" n0:layout_height="@dimen/yh" n0:layout_marginBottom="@dimen/yg" n0:contentDescription="@null"
+      xmlns:n0="http://schemas.android.com/apk/res/android" />
+    <com.google.android.material.internal.BaselineLayout n1:layout_gravity="center|bottom" n1:id="@id/navigation_bar_item_labels_group" n1:paddingBottom="@dimen/yj" n1:duplicateParentState="true" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <TextView n1:textSize="@dimen/y0" n1:ellipsize="end" n1:id="@id/navigation_bar_item_small_label_view" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+        <TextView n1:textSize="@dimen/yc" n1:ellipsize="end" n1:id="@id/navigation_bar_item_large_label_view" n1:visibility="invisible" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+    </com.google.android.material.internal.BaselineLayout>
+</merge>

@@ -1,0 +1,24 @@
+task_id: "TASK-044-BRANDING-PURGE-K9"
+phase: "P2 - Branding Compliance & Clean State"
+title: "Làm Sạch Chuỗi Rò Rỉ Thương Hiệu CapCut Trong Giao Diện Người Dùng và Danh Mục Hiệu Ứng (Khắc Phục Lỗi K9)"
+assigned_to:
+  - "Agent 3 (Frontend / Android)"
+  - "Agent 11 (Designer)"
+  - "Agent 7 (Fixer)"
+status: "DONE"
+started_at: "2026-09-22T12:15:00+07:00"
+completed_at: "2026-09-22T12:19:30+07:00"
+priority: "MEDIUM"
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/templates/TemplateComponent.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/engine/EffectRegistry.java"
+acceptance_criteria:
+  - "Khắc phục lỗi K9: Thay thế chuỗi tìm kiếm mẫu video hiển thị cho người dùng thành thương hiệu chuẩn OpenCut [PASSED]"
+  - "Đồng bộ tên và danh mục hiệu ứng trong EffectRegistry sang OpenCutNative theo đúng quy chuẩn thương hiệu Docs/rules.md §2.5 [PASSED]"
+  - "Biên dịch build_apk.ps1 và chạy run_unit_tests.ps1 thành công 100% [PASSED]"
+  - "Tuân thủ nghiêm ngặt Luật 12 AGENTS.md (chú thích song ngữ EN + VN) [PASSED]"
+results:
+  - "Replaced user search placeholder in TemplateComponent.java with OpenCut branding"
+  - "Rebranded category CapCutNative to OpenCutNative and effect names in EffectRegistry.java"
+  - "Full unit tests passed (3 suites, 12 test cases)"
+  - "Production APK build signed successfully: nextai_opencut_signed.apk"

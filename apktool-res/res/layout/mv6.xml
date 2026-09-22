@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:tag="layout/xt_layout_common_effect_default_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.RoundImageView n0:id="@id/effect_cover" n0:background="@drawable/q_f" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="4.0dp" n0:scaleType="fitCenter" n1:i_="8.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:paddingLeft="8.0dp" n0:paddingRight="8.0dp" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:layout_margin="4.0dp" n0:paddingHorizontal="8.0dp">
+        <TextView n0:textSize="14.0dp" n0:textColor="@color/kxw" n0:ellipsize="marquee" n0:gravity="center" n0:id="@id/tv_default" n0:focusable="true" n0:focusableInTouchMode="true" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:singleLine="true" n0:marqueeRepeatLimit="marquee_forever" />
+    </FrameLayout>
+    <View n0:id="@id/view_selected" n0:background="@drawable/q_i" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

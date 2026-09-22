@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/mask_view" n0:background="@color/_d" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.edit.aigenerator.v3.page.view.AIPaintingIntroducePanel n0:id="@id/ai_painting_introduce_panel" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="12.0dp" n0:elevation="8.0dp" n0:layout_marginHorizontal="16.0dp" n1:layout_constraintBottom_toTopOf="@id/select_clip_and_gen_panel"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.RoundConstraintLayout n0:id="@id/select_clip_and_gen_panel" n0:background="@color/h" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:i9="12.0dp" n2:i-="12.0dp" n2:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/indicator" n0:layout_width="36.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/mst" n2:layout_constraintBottom_toTopOf="@id/draft_name" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0dp" n0:textColor="@color/ww" n0:ellipsize="end" n0:id="@id/draft_name" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="14.0dp" n0:layout_marginRight="16.0dp" n0:maxLines="1" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintTop_toBottomOf="@id/indicator" n2:k1i="medium" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/v2" n0:ellipsize="end" n0:id="@id/infoTips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginTop="4.0dp" n0:layout_marginRight="16.0dp" n0:text="@string/lev" n0:maxLines="1" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintTop_toBottomOf="@id/draft_name" n2:k1i="regular" />
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/select_clip_recycler_view" n0:layout_width="match_parent" n0:layout_height="104.0dp" n0:layout_marginTop="4.0dp" n2:layout_constraintTop_toBottomOf="@id/infoTips" />
+        <com.vega.subscriptionapi.swidget.BusinessCreditsBar n0:id="@id/creditsBar" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n2:layout_constraintTop_toBottomOf="@id/select_clip_recycler_view" />
+        <include n0:id="@id/generate_btn_layout" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="16.0dp" n0:layout_marginRight="16.0dp" n0:layout_marginBottom="46.0dp" n0:layout_marginHorizontal="16.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toBottomOf="@id/creditsBar" layout="@layout/kga" />
+        <LinearLayout n0:id="@id/vip_layout" n0:paddingBottom="36.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:elevation="3.0dp" n2:layout_constraintBottom_toBottomOf="@id/generate_btn_layout" n2:layout_constraintRight_toRightOf="@id/generate_btn_layout">
+            <com.vega.subscriptionapi.swidget.BusinessMarkView n0:id="@id/iv_vip" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:kml="large" n2:kmm="button" />
+        </LinearLayout>
+    </com.vega.ui.widget.RoundConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

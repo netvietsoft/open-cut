@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nextai.opencut">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+
+    <!-- Permissions / Quyền Truy Cập -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".NextAiApplication"
+        android:allowBackup="false"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="NextAI OpenCut"
+        android:roundIcon="@android:drawable/sym_def_app_icon"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@android:style/Theme.Material.NoActionBar">
+
+        <!-- 1. Launcher Main Activity (Exported for App Launch) -->
+        <activity
+            android:name=".presentation.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Hardened Deep Link Filter (Fixes CWE-939) -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="opencut" android:host="app" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. Paywall VIP Compose Subscribe (Hardened: exported="false") -->
+        <activity
+            android:name=".presentation.compose.subscribe.ComposeSubscribeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 2b. Paywall VIP Native Subscribe (Hardened: exported="false") -->
+        <activity
+            android:name=".presentation.subscribe.SubscribeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 3. Video Timeline Editor (Hardened: exported="false") -->
+        <activity
+            android:name=".presentation.editor.VideoEditActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 4. AI Copilot Chat (Hardened: exported="false") -->
+        <activity
+            android:name=".presentation.ailab.AiLabAgentChatActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 5. Template Feed & CutSame (Hardened: exported="false") -->
+        <activity
+            android:name=".presentation.templates.TemplateFeedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 6. 4K Video Export (Hardened: exported="false") -->
+        <activity
+            android:name=".presentation.export.ExportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 7. Safe FileProvider for Video/Photo View & Sharing / Cung cấp URI an toàn cho Xem và Chia sẻ -->
+        <provider
+            android:name="com.nextai.opencut.provider.OpenCutFileProvider"
+            android:authorities="com.nextai.opencut.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+</manifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/kqx" n0:layout_width="match_parent" n0:layout_height="384.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <TextView n0:textSize="14.0dp" n0:textColor="@color/ww" n0:id="@id/tv_image_interpretation_audio_panel_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="15.0dp" n0:text="@string/o35" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/iv_image_interpretation_audio_panel_close_icon" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="6.0dp" n0:src="@drawable/m44" n0:layout_marginEnd="6.0dp" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/view_image_interpretation_audio_panel_divider" n0:background="@color/APKTOOL_RENAMED_0x7f06063e" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="48.0dp" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/cl_audio_extract_entrance_icon_video" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/view_image_interpretation_audio_panel_divider" layout="@layout/kp5"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/cl_audio_extract_entrance_icon_favorite" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:layout_constraintTop_toBottomOf="@id/cl_audio_extract_entrance_icon_video" layout="@layout/kp5"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/cl_audio_extract_entrance_icon_library" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/cl_audio_extract_entrance_icon_favorite" layout="@layout/kp5"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/cl_audio_extract_entrance_icon_recording" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n0:layout_marginStart="16.0dp" n0:layout_marginEnd="16.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toBottomOf="@id/cl_audio_extract_entrance_icon_library" layout="@layout/kp5"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

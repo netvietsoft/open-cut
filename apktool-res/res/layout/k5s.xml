@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/knt" n0:layout_width="266.0dp" n0:layout_height="wrap_content">
+        <ImageView n0:id="@id/upgrade_icon" n0:layout_width="70.0dp" n0:layout_height="70.0dp" n0:layout_marginTop="30.0dp" n0:src="@drawable/mwy" n0:scaleType="centerCrop" n0:tint="@color/sg" n1:layout_constraintDimensionRatio="H,1:1" n1:layout_constraintLeft_toLeftOf="parent" n1:layout_constraintRight_toRightOf="parent" n1:layout_constraintTop_toTopOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/_3" n0:gravity="center" n0:id="@id/draft_upgrade_tips" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="15.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/l2e" n0:includeFontPadding="false" n0:textAlignment="center" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toBottomOf="@id/upgrade_icon"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.vega.ui.StrongButton n0:textColor="@color/knt" n0:id="@id/btnUpgradeDraftImmediately" n0:background="@drawable/qpm" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="20.0dp" n0:layout_marginRight="30.0dp" n0:text="@string/rv_" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/draft_upgrade_tips"
+          xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textColor="@color/knv" n0:gravity="center" n0:id="@id/tvCloseUpgradeDialog" n0:background="@drawable/qps" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="30.0dp" n0:layout_marginTop="@dimen/pz" n0:layout_marginRight="30.0dp" n0:layout_marginBottom="@dimen/py" n0:text="@string/APKTOOL_RENAMED_0x7f120576" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toBottomOf="@id/btnUpgradeDraftImmediately"
+          xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

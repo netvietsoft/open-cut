@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="horizontal" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="20.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/cover_img" n0:layout_width="40.0dp" n0:layout_height="40.0dp" n1:roundedCornerRadius="8.0dp"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+        <com.vega.theme.text.VegaTextView n0:textSize="10.0sp" n0:textColor="@color/ml" n0:layout_gravity="center|bottom" n0:id="@id/video_duration" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n2:k1i="medium"
+          xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/mm" n0:ellipsize="end" n0:layout_gravity="center_vertical" n0:id="@id/name" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:maxLines="1" n0:layout_marginStart="8.0dp" n3:k1i="regular"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

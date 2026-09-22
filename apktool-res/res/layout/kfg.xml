@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:minWidth="160.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_menu" n0:background="@drawable/yi" n0:paddingTop="4.0dp" n0:paddingBottom="4.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" />
+    <View n0:id="@id/indicator" n0:background="@drawable/x-" n0:layout_width="20.0dp" n0:layout_height="7.0dp" n0:layout_marginStart="12.0dp" />
+</LinearLayout>

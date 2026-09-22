@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/text_template_panel" n0:tag="layout/xt_text_library_panel2_0" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/text_library_group_list" n0:paddingTop="12.0dp" n0:layout_width="80.0dp" n0:layout_height="0.0dp" n0:overScrollMode="never" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:orientation="horizontal" n0:id="@id/text_library_list" n0:background="@color/kwx" n0:layout_width="0.0dp" n0:layout_height="0.0dp" n0:overScrollMode="never" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toEndOf="@id/text_library_group_list" n2:layout_constraintTop_toTopOf="@id/text_library_group_list"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <include n0:id="@id/text_library_retry_layout" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toTopOf="parent" layout="@layout/mdl"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

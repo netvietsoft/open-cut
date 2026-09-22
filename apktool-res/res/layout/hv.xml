@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@drawable/ln8" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/ml" n0:id="@id/tv_title" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="14.0dp" n0:layout_marginBottom="14.0dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" n1:k1i="bold"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <androidx.appcompat.widget.AppCompatImageView n0:id="@id/iv_confirm" n0:padding="14.0dp" n0:layout_width="48.0dp" n0:layout_height="48.0dp" n0:src="@drawable/mdr" n2:layout_constraintBottom_toBottomOf="@id/tv_title" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintTop_toTopOf="@id/tv_title"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:id="@id/divider" n0:background="@color/kw" n0:layout_width="match_parent" n0:layout_height="0.5dp" n0:layout_marginTop="14.0dp" n3:layout_constraintTop_toBottomOf="@id/tv_title"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/rv_options" n0:paddingTop="20.0dp" n0:paddingBottom="20.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:overScrollMode="never" n0:paddingStart="16.0dp" n0:paddingEnd="16.0dp" n4:layout_constraintTop_toBottomOf="@id/divider"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

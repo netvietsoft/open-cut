@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:id="@id/ivBg" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <com.vega.libmedia.videoview.TextureVideoView n0:id="@id/videoView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView n0:id="@id/imageView" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:id="@id/ivWarning" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="36.0dp" n0:src="@drawable/poq" n3:layout_constraintBottom_toTopOf="@id/guideTitle" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintStart_toStartOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.PlayerMediaSelectTitle n0:textSize="25.0dp" n0:ellipsize="end" n0:gravity="center" n0:id="@id/guideTitle" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n0:maxWidth="300.0dp" n0:maxLines="2" n0:paddingStart="20.0dp" n0:paddingEnd="20.0dp" n4:layout_constraintBottom_toTopOf="@id/guideDesc" n4:k1i="bold"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.widget.GradientIconButton n0:ellipsize="end" n0:gravity="center" n0:id="@id/guideTitleButton" n0:paddingLeft="16.0dp" n0:paddingTop="13.0dp" n0:paddingRight="16.0dp" n0:paddingBottom="13.0dp" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="32.0dp" n0:layout_marginRight="32.0dp" n0:layout_marginBottom="8.0dp" n0:maxWidth="300.0dp" n0:maxLines="2" n0:layout_marginHorizontal="32.0dp" n0:paddingHorizontal="16.0dp" n0:paddingVertical="13.0dp" n5:APKTOOL_RENAMED_0x7f040537="@drawable/mgo" n5:layout_constraintBottom_toTopOf="@id/guideDesc" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" n5:k1i="bold"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:gravity="center" n0:id="@id/guideDesc" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="32.0dp" n0:layout_marginRight="32.0dp" n0:layout_marginBottom="32.0dp" n0:text="@string/q5p" n0:lineSpacingExtra="1.1999817dp" n0:layout_marginHorizontal="32.0dp" n6:layout_constraintBottom_toBottomOf="parent" n6:k1i="medium"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/autoCutChatBtn" n0:background="@drawable/lz8" n0:paddingLeft="16.0dp" n0:paddingRight="16.0dp" n0:layout_width="wrap_content" n0:layout_height="40.0dp" n0:layout_marginTop="56.0dp" n0:layout_marginEnd="16.0dp" n0:paddingHorizontal="16.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintTop_toTopOf="parent"
+      xmlns:n7="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/chatIC" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:src="@drawable/o4q" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toStartOf="@id/chatTipTV" n7:layout_constraintStart_toStartOf="parent" n7:layout_constraintTop_toTopOf="parent" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/chatTipTV" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/w" n0:layout_marginStart="4.0dp" n7:layout_constraintBottom_toBottomOf="parent" n7:layout_constraintEnd_toStartOf="@id/chatTipTV" n7:layout_constraintStart_toEndOf="@id/chatIC" n7:layout_constraintTop_toTopOf="parent" n7:k1i="bold" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView n0:id="@id/betaTag" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="32.0dp" n0:src="@drawable/n-f" n8:layout_constraintBottom_toBottomOf="@id/autoCutChatBtn" n8:layout_constraintEnd_toEndOf="@id/autoCutChatBtn"
+      xmlns:n8="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

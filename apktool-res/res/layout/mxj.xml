@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n0:gravity="center" n0:layout_gravity="bottom" n0:orientation="horizontal" n0:id="@id/composition_tab_panel" n0:background="@color/kot" n0:padding="16.0dp" n0:layout_width="match_parent" n0:layout_height="90.0dp" n0:layout_marginBottom="@dimen/APKTOOL_RENAMED_0x7f070513">
+        <RelativeLayout n0:layout_width="wrap_content" n0:layout_height="48.0dp">
+            <TextView n0:textSize="12.0sp" n0:textColor="#fff6f6fe" n0:gravity="center" n0:id="@id/guide_text" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:text="Mosaic feature has been merged into eraser ✨" n0:includeFontPadding="true" />
+            <TextView n0:textSize="12.0sp" n0:textColor="#fff6f6fe" n0:gravity="center" n0:id="@id/guide_button" n0:background="@drawable/rll" n0:layout_width="wrap_content" n0:layout_height="24.0dp" n0:layout_marginLeft="8.0dp" n0:text="Jump to eraser" n0:includeFontPadding="true" n0:layout_toEndOf="@id/guide_text" />
+            <TextView n0:textSize="10.0sp" n0:textColor="#99f6f6fe" n0:gravity="center" n0:id="@id/guide_tip" n0:layout_width="wrap_content" n0:layout_height="14.0dp" n0:text="Auto jump in 1s" n0:includeFontPadding="true" n0:layout_alignParentBottom="true" n0:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

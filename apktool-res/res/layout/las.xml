@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/multi_search_prompt_edit_layout" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/multi_search_prompt_edit_mask" n0:background="#cc000000" n0:layout_width="match_parent" n0:layout_height="0.0dp" n1:layout_constraintBottom_toTopOf="@id/multi_search_prompt_edit_bottom_layout" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="16.0dp" n2:layout_constraintBottom_toTopOf="@id/multi_search_prompt_edit_bottom_layout"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n0:background="@color/sg" n0:layout_width="match_parent" n0:layout_height="0.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintTop_toTopOf="@id/multi_search_prompt_edit_bottom_layout"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/multi_search_prompt_edit_bottom_layout" n0:background="@drawable/p73" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="16.0dp" n0:layout_marginStart="12.0dp" n0:layout_marginEnd="12.0dp" n4:layout_constraintBottom_toBottomOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.AppCompatEditText n0:textSize="14.0dp" n0:textColorHint="#66e5e9fa" n0:gravity="start|top" n0:id="@id/multi_search_prompt_edit_text" n0:background="@null" n0:paddingTop="13.0dp" n0:paddingBottom="12.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:maxHeight="104.0dp" n0:minHeight="48.0dp" n0:inputType="textMultiLine" n0:paddingStart="12.0dp" n0:paddingEnd="8.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toStartOf="@id/multi_search_confirm_prompt_input_btn" n4:layout_constraintStart_toStartOf="parent" />
+        <ImageView n0:id="@id/multi_search_confirm_prompt_input_btn" n0:layout_width="25.0dp" n0:layout_height="25.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" n0:src="@drawable/oww" n0:layout_marginEnd="12.0dp" n4:layout_constraintBottom_toBottomOf="@id/multi_search_prompt_edit_text" n4:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:background="#0e0e11" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView n0:id="@id/description_chapter_recyclerview" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_above="@id/next_button" n0:layout_alignParentTop="true" n0:layout_marginStart="@dimen/rr" n0:layout_marginEnd="@dimen/rr" />
+    <View n0:background="@drawable/llz" n0:layout_width="match_parent" n0:layout_height="32.0dp" n0:layout_above="@id/next_button" />
+    <TextView n0:textSize="16.0sp" n0:textStyle="bold" n0:textColor="@color/x3" n0:gravity="center" n0:id="@id/next_button" n0:background="@drawable/lla" n0:layout_width="match_parent" n0:layout_height="@dimen/rb" n0:layout_marginBottom="@dimen/re" n0:text="@string/kvl" n0:layout_alignParentBottom="true" n0:layout_marginStart="@dimen/rr" n0:layout_marginEnd="@dimen/rr" />
+</RelativeLayout>

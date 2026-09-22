@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n0:id="@id/clickView" n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.vega.libsticker.videotrack.hollow.HollowView n0:id="@id/hv_mask" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <ImageView n0:id="@id/ivBg" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    <com.vega.theme.text.VegaTextView n0:textSize="14.0dp" n0:textColor="@color/knt" n0:id="@id/tvGuideTips" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_centerInParent="true" />
+</RelativeLayout>

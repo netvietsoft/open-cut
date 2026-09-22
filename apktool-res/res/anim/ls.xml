@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate android:duration="90" android:fromDegrees="0.0" android:toDegrees="-15.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillBefore="false" android:fillAfter="true" />
+    <rotate android:duration="180" android:fromDegrees="-15.0" android:toDegrees="15.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillBefore="false" android:fillAfter="true" android:startOffset="90" />
+    <rotate android:duration="90" android:fromDegrees="15.0" android:toDegrees="0.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillBefore="false" android:fillAfter="true" android:startOffset="270" />
+    <rotate android:duration="90" android:fromDegrees="0.0" android:toDegrees="-15.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillBefore="false" android:fillAfter="true" android:startOffset="360" />
+    <rotate android:duration="180" android:fromDegrees="-15.0" android:toDegrees="15.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillBefore="false" android:fillAfter="true" android:startOffset="450" />
+    <rotate android:duration="90" android:fromDegrees="15.0" android:toDegrees="0.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillBefore="false" android:fillAfter="true" android:startOffset="630" />
+    <rotate android:duration="90" android:fromDegrees="0.0" android:toDegrees="-15.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillBefore="false" android:fillAfter="true" android:startOffset="720" />
+    <rotate android:duration="180" android:fromDegrees="-15.0" android:toDegrees="15.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillBefore="false" android:fillAfter="true" android:startOffset="810" />
+    <rotate android:duration="90" android:fromDegrees="15.0" android:toDegrees="0.0" android:pivotX="50.0%" android:pivotY="50.0%" android:fillBefore="false" android:fillAfter="true" android:startOffset="990" />
+</set>

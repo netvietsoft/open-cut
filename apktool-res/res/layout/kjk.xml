@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/select_container" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="82.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <ImageView n0:layout_width="14.0dp" n0:layout_height="7.0dp" n0:src="@drawable/m81" n0:layout_marginStart="7.5dp" />
+    <androidx.cardview.widget.CardView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:cardCornerRadius="8.0dp" n1:cardElevation="0.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView n0:id="@id/groupNameRv" n0:layout_width="wrap_content" n0:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/item_root" n0:tag="layout/xt_layout_expand_image_result_item_0" n0:layout_width="@dimen/iw" n0:layout_height="@dimen/iw"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <com.xt.retouch.baseui.view.RoundLayout n0:layout_width="match_parent" n0:layout_height="match_parent" n1:APKTOOL_RENAMED_0x7f0407f5="2.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <com.xt.retouch.baseui.view.BaseImageView n0:id="@id/iv_item" n0:layout_width="match_parent" n0:layout_height="match_parent" n0:scaleType="centerCrop" />
+    </com.xt.retouch.baseui.view.RoundLayout>
+    <View n0:id="@id/v_selected" n0:background="@drawable/q8t" n0:visibility="gone" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:id="@id/content_view" n0:background="@color/u" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_horizontal" n0:layout_gravity="center" n0:orientation="vertical" n0:background="@drawable/kzm" n0:paddingLeft="24.0dp" n0:paddingTop="24.0dp" n0:paddingRight="24.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginLeft="48.0dp" n0:layout_marginRight="48.0dp" n0:layout_marginHorizontal="48.0dp" n0:paddingHorizontal="24.0dp">
+        <com.vega.theme.text.VegaTextView n0:textSize="17.0sp" n0:textStyle="bold" n0:textColor="@color/mk" n0:gravity="center" n0:id="@id/title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="8.0dp" n0:text="@string/p4f" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/mm" n0:gravity="center" n0:id="@id/content" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginBottom="16.0dp" n0:text="@string/p56" />
+        <LinearLayout n0:gravity="center_vertical" n0:orientation="horizontal" n0:id="@id/btn_not_show" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginBottom="20.0dp">
+            <androidx.appcompat.widget.AppCompatCheckBox n0:id="@id/cb_not_show" n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:checked="false" n0:button="@drawable/kcw" n0:layout_marginEnd="8.0dp" />
+            <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="@color/mk" n0:id="@id/cb_info" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/p50" />
+        </LinearLayout>
+        <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textStyle="bold" n0:textColor="@color/knt" n0:gravity="center" n0:id="@id/btn_confirm" n0:background="@drawable/kzl" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:layout_marginBottom="8.0dp" n0:text="@string/m1-" n0:textAllCaps="false" />
+        <com.vega.theme.VegaButton n0:textSize="16.0dp" n0:textColor="@color/u" n0:gravity="center" n0:id="@id/btn_cancel" n0:background="@null" n0:paddingTop="12.0dp" n0:paddingBottom="12.0dp" n0:layout_width="match_parent" n0:layout_height="44.0dp" n0:text="@string/m9g" n0:textAllCaps="false" n0:paddingVertical="12.0dp" />
+    </LinearLayout>
+</FrameLayout>

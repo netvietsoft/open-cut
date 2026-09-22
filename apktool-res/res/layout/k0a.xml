@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/splash_ad_logo_loading_view" n0:background="@color/knt" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.Guideline n0:orientation="horizontal" n0:id="@id/guideline" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n1:layout_constraintGuide_percent="0.35"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <ImageView n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:src="@drawable/o1o" n2:layout_constraintBottom_toBottomOf="@id/guideline" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="@id/guideline"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n0:id="@id/adContent" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

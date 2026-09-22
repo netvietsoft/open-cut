@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:tag="layout/xt_sticker_edit_blend_item_0" n0:layout_width="wrap_content" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout n0:id="@id/container" n0:layout_width="wrap_content" n0:layout_height="match_parent">
+        <TextView n0:textSize="12.0sp" n0:textColor="@color/kwm" n0:gravity="center" n0:id="@id/title" n0:background="@drawable/APKTOOL_RENAMED_0x7f0831e4" n0:layout_width="wrap_content" n0:layout_height="32.0dp" n0:paddingStart="15.0dp" n0:paddingEnd="15.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintLeft_toLeftOf="parent"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

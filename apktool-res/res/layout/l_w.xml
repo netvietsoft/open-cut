@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:id="@id/template_sheet_scrim" n0:background="@color/s7" n0:layout_width="match_parent" n0:layout_height="match_parent" />
+    <LinearLayout n0:layout_gravity="bottom" n0:orientation="vertical" n0:id="@id/template_sheet_container" n0:background="@drawable/pvb" n0:focusable="true" n0:clickable="true" n0:layout_width="match_parent" n0:layout_height="match_parent">
+        <FrameLayout n0:id="@id/template_sheet_drag_handle_container" n0:layout_width="match_parent" n0:layout_height="wrap_content">
+            <View n0:layout_gravity="center_horizontal" n0:id="@id/template_sheet_drag_handle" n0:background="@drawable/pvc" n0:layout_width="40.0dp" n0:layout_height="4.0dp" n0:layout_marginTop="12.0dp" n0:layout_marginBottom="12.0dp" />
+        </FrameLayout>
+        <FrameLayout n0:id="@id/template_sheet_content_container" n0:layout_width="match_parent" n0:layout_height="0.0dp" n0:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

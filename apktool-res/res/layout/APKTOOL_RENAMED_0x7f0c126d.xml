@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:gravity="center" n0:layout_gravity="center" n0:orientation="vertical" n0:paddingTop="16.0dp" n0:layout_width="wrap_content" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_not_show" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_not_show" android:layout_width="16.0dp" android:layout_height="16.0dp" android:checked="false" android:button="@drawable/k_p" android:layout_marginEnd="8.0dp" />
+        <com.vega.theme.text.VegaTextView android:textSize="14.0sp" android:textColor="@color/mm" android:id="@id/cb_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p8q" />
+    </LinearLayout>
+</LinearLayout>

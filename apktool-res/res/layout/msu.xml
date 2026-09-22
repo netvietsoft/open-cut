@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:layout_width="wrap_content" n0:layout_height="match_parent" n0:paddingStart="5.0dp" n0:paddingEnd="5.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <Button n0:id="@id/move_up_btn" n0:background="@drawable/rfa" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textColor="@color/kot" n0:gravity="center" n0:id="@id/category_name" n0:layout_width="wrap_content" n0:layout_height="0.0dp" n0:layout_marginStart="5.0dp" n0:layout_marginEnd="5.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/move_down_btn" n2:layout_constraintStart_toEndOf="@id/move_up_btn" n2:layout_constraintTop_toTopOf="parent" n2:layout_goneMarginEnd="5.0dp" n2:layout_goneMarginStart="5.0dp"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <Button n0:id="@id/move_down_btn" n0:background="@drawable/rfb" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginEnd="20.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toEndOf="parent" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

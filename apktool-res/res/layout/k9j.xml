@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n0:orientation="vertical" n0:id="@id/home_tool_container" n0:paddingTop="8.0dp" n0:paddingBottom="8.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layoutDirection="locale"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <FrameLayout n0:background="@drawable/k37" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:layout_marginStart="2.0dp" n0:layout_marginEnd="2.0dp">
+        <com.facebook.drawee.view.SimpleDraweeView n0:layout_gravity="center" n0:id="@id/home_tool_iv" n0:layout_width="match_parent" n0:layout_height="56.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08254a" n0:scaleType="center" />
+        <com.vega.subscriptionapi.swidget.BusinessMarkView n0:layout_gravity="end" n0:id="@id/businessMarkView" n0:visibility="gone" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:layout_marginEnd="4.0dp" n1:kml="small" n1:kmn="light"
+          xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <com.vega.ui.widget.MarqueeTextView n0:textSize="10.0dp" n0:textColor="#222222" n0:ellipsize="end" n0:gravity="center_horizontal" n0:id="@id/home_tool_tv" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="8.0dp" n2:k1i="regular"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

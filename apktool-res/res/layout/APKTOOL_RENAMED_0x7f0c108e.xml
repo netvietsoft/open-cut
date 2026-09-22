@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f06001c" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView n0:id="@id/sv_edit_button" n0:scrollbars="none" n0:fadingEdgeLength="20.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:requiresFadingEdge="horizontal" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toStartOf="@id/styleBtn" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n0:layout_width="wrap_content" n0:layout_height="wrap_content">
+            <com.vega.ui.state.pressed.PressedStateLinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/splitBtn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp">
+                <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f08135d" />
+                <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/ml" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="4.0dp" n0:text="@string/nut" n0:layout_marginHorizontal="8.0dp" n1:k1i="medium" />
+            </com.vega.ui.state.pressed.PressedStateLinearLayout>
+            <com.vega.ui.state.pressed.PressedStateLinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/mergeUpBtn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp">
+                <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/mmd" />
+                <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/ml" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="4.0dp" n0:text="@string/nup" n0:layout_marginHorizontal="8.0dp" n1:k1i="medium" />
+            </com.vega.ui.state.pressed.PressedStateLinearLayout>
+            <com.vega.ui.state.pressed.PressedStateLinearLayout n0:gravity="center" n0:orientation="vertical" n0:id="@id/mergeDownBtn" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginStart="8.0dp">
+                <ImageView n0:layout_width="16.0dp" n0:layout_height="16.0dp" n0:src="@drawable/mmc" />
+                <com.vega.theme.text.VegaTextView n0:textSize="11.0dp" n0:textColor="@color/ml" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:layout_marginLeft="8.0dp" n0:layout_marginTop="2.0dp" n0:layout_marginRight="8.0dp" n0:layout_marginBottom="4.0dp" n0:text="@string/nuo" n0:layout_marginHorizontal="8.0dp" n1:k1i="medium" />
+            </com.vega.ui.state.pressed.PressedStateLinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <com.vega.ui.AlphaButton n0:id="@id/styleBtn" n0:padding="8.0dp" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:src="@drawable/mno" n0:layout_marginStart="8.0dp" n0:layout_marginEnd="8.0dp" n0:layout_marginVertical="6.0dp" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintEnd_toStartOf="@id/deleteBtn" n2:layout_constraintStart_toEndOf="@id/sv_edit_button" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/deleteBtn" n0:padding="8.0dp" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:src="@drawable/mnl" n0:layout_marginEnd="8.0dp" n0:layout_marginVertical="6.0dp" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintEnd_toStartOf="@id/hideKeyBoardBtn" n3:layout_constraintStart_toEndOf="@id/styleBtn" n3:layout_constraintTop_toTopOf="parent"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.vega.ui.AlphaButton n0:id="@id/hideKeyBoardBtn" n0:padding="8.0dp" n0:layout_width="36.0dp" n0:layout_height="36.0dp" n0:layout_marginTop="6.0dp" n0:layout_marginBottom="6.0dp" n0:src="@drawable/mnn" n0:layout_marginEnd="8.0dp" n0:layout_marginVertical="6.0dp" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

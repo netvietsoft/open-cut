@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:padding="5.0dp" n0:layout_width="match_parent" n0:layout_height="wrap_content"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <View n0:background="@color/kro" n0:layout_width="match_parent" n0:layout_height="0.5dp" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <Button n0:id="@id/move_up_btn" n0:background="@drawable/rfc" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="10.0dp" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <Button n0:id="@id/move_down_btn" n0:background="@drawable/rfz" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="20.0dp" n3:layout_constraintStart_toStartOf="parent" n3:layout_constraintTop_toBottomOf="@id/move_up_btn"
+      xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <Button n0:id="@id/edit_category_btn" n0:background="@drawable/ru2" n0:layout_width="20.0dp" n0:layout_height="20.0dp" n0:layout_marginTop="10.0dp" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintTop_toTopOf="parent"
+      xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textColor="@color/kot" n0:id="@id/category_info" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="10.0dp" n0:layout_marginStart="10.0dp" n0:layout_marginEnd="10.0dp" n5:layout_constraintEnd_toStartOf="@id/edit_category_btn" n5:layout_constraintStart_toEndOf="@id/move_up_btn" n5:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <TextView n0:textColor="@color/APKTOOL_RENAMED_0x7f0607cd" n0:id="@id/item_title" n0:paddingTop="8.0dp" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:text="@string/t_h" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="@id/category_info" n6:layout_constraintTop_toBottomOf="@id/category_info"
+      xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n0:orientation="vertical" n0:id="@id/item_list" n0:layout_width="0.0dp" n0:layout_height="wrap_content" n0:layout_marginTop="5.0dp" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="@id/category_info" n7:layout_constraintTop_toBottomOf="@id/item_title"
+      xmlns:n7="http://schemas.android.com/apk/res-auto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

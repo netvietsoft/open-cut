@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="80.0dp" n0:layout_height="86.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView n0:layout_width="match_parent" n0:layout_height="80.0dp" n0:layout_marginTop="6.0dp" n1:cardBackgroundColor="@color/APKTOOL_RENAMED_0x7f06022c" n1:cardCornerRadius="@dimen/n9" n1:cardElevation="0.0dp"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:layout_gravity="center_horizontal" n0:id="@id/ic_upload" n0:layout_width="24.0dp" n0:layout_height="24.0dp" n0:layout_marginTop="20.0dp" n0:src="@drawable/z_" />
+        <com.vega.theme.text.VegaTextView n0:textSize="12.0dp" n0:textColor="@color/wj" n0:gravity="center" n0:layout_gravity="center_horizontal" n0:id="@id/tv_upload" n0:layout_width="wrap_content" n0:layout_height="16.0dp" n0:layout_marginTop="45.0dp" n0:text="@string/mrm" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

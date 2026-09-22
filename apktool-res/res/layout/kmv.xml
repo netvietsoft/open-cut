@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vega.ui.widget.RoundConstraintLayout n0:id="@id/create_portrait_layout" n0:background="@color/kr" n0:paddingLeft="12.0dp" n0:paddingRight="12.0dp" n0:layout_width="match_parent" n0:layout_height="40.0dp" n0:layout_marginLeft="12.0dp" n0:layout_marginRight="12.0dp" n0:layout_marginHorizontal="12.0dp" n0:paddingHorizontal="12.0dp" n1:i1="24.0dp"
+  xmlns:n0="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <ImageView n0:id="@id/iv_add" n0:layout_width="14.0dp" n0:layout_height="14.0dp" n0:src="@drawable/mbl" n0:scaleType="centerInside" n0:importantForAccessibility="no" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent" />
+    <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="@color/mm" n0:layout_width="wrap_content" n0:layout_height="wrap_content" n0:text="@string/nwu" n0:layout_marginStart="8.0dp" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintStart_toEndOf="@id/iv_add" n1:layout_constraintTop_toTopOf="parent" n1:k1i="regular" />
+</com.vega.ui.widget.RoundConstraintLayout>

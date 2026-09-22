@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout n0:background="@color/APKTOOL_RENAMED_0x7f060634" n0:layout_width="match_parent" n0:layout_height="match_parent"
+  xmlns:n0="http://schemas.android.com/apk/res/android">
+    <LinearLayout n0:gravity="center_horizontal" n0:orientation="vertical" n0:id="@id/generate_failed_content" n0:paddingBottom="16.0dp" n0:layout_width="320.0dp" n0:layout_height="wrap_content" n1:layout_constraintBottom_toBottomOf="parent" n1:layout_constraintEnd_toEndOf="parent" n1:layout_constraintStart_toStartOf="parent" n1:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res-auto">
+        <ImageView n0:id="@id/iv_generate_failed_warning" n0:layout_width="60.0dp" n0:layout_height="60.0dp" n0:src="@drawable/APKTOOL_RENAMED_0x7f080498" n0:importantForAccessibility="no" />
+        <com.vega.theme.text.VegaTextView n0:textSize="16.0sp" n0:textColor="#fafbff" n0:gravity="center" n0:id="@id/tv_generate_failed_title" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="12.0dp" n0:text="Generate failed" n0:includeFontPadding="false" n0:letterSpacing="0.001875" n0:lineHeight="21.0dp" n1:k1g="text" n1:k1i="medium" />
+        <com.vega.theme.text.VegaTextView n0:textSize="14.0sp" n0:textColor="#b3f6f7fe" n0:gravity="center" n0:id="@id/tv_generate_failed_desc" n0:layout_width="match_parent" n0:layout_height="wrap_content" n0:layout_marginTop="4.0dp" n0:text="Please check the network and try loading again." n0:includeFontPadding="false" n0:letterSpacing="0.0064" n0:lineHeight="18.0dp" n1:k1g="text" n1:k1i="regular" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
