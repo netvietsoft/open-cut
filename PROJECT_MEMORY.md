@@ -805,3 +805,42 @@
 2. **Android Framework Stubs on JVM**: Khi viết Unit Test chạy trực tiếp bằng `java.exe` trên máy tính (không có Android Emulator/Robolectric), không bao giờ gọi các phương thức tĩnh của Android SDK như `Color.parseColor()` vì file `android.jar` chỉ chứa stub ném `RuntimeException("Stub!")`. Sử dụng các hằng số hex compile-time như `0xFF00FF00`.
 3. **D8 Compiler NPE trên Anonymous Inner Classes**: Trình biên dịch Android D8 trên JDK 21 sẽ crash `NullPointerException` nếu có anonymous inner class truy cập biến cục bộ của phương thức bao quanh. Giải pháp bắt buộc là sử dụng `private static class ... implements Runnable` với constructor dependency injection rõ ràng.
 4. **Nguyên Tắc Zero Invented State (Luật 14 AGENTS.md)**: Mọi báo cáo test hay trạng thái hệ thống phải dựa trên command output thực tế có thể tái hiện được (`run_unit_tests.ps1` exit code 0, `build_apk.ps1` exit code 0).
+
+---
+
+## 25. TRIỂN KHAI VÀ NGHIỆM THU TRỰC TIẾP TRÊN THIẾT BỊ VẬT LÝ SAMSUNG GALAXY A50S (192.168.1.3:43905)
+
+> **Mục tiêu**: Thực hiện triển khai APK ký số `nextai_opencut_signed.apk` qua ADB không dây lên thiết bị Samsung Galaxy A50s (`SM-A507FN`), đánh thức màn hình, khởi chạy ứng dụng và kiểm thử 7 luồng giao diện người dùng thực tế.
+
+### 1. Thông Số Thiết Bị & Kết Nối (Hardware & Connection Specs)
+- **Thiết bị**: Samsung Galaxy A50s (`SM-A507FN`, `product:a50sxx`, `device:a50s`).
+- **Địa chỉ IP / Port**: `192.168.1.3:43905`.
+- **Độ phân giải màn hình**: 1080 x 2340 px.
+- **Kết nối ADB**: `adb connect 192.168.1.3:43905` thành công.
+- **Đánh thức màn hình**: `adb shell input keyevent KEYCODE_WAKEUP` và `adb shell wm dismiss-keyguard` (giải quyết trạng thái màn hình tắt ban đầu `Display Power: state=OFF`).
+
+### 2. Kết Quả Triển Khai & Kiểm Thử 7 Luồng Người Dùng (7 Verified Flows)
+1. **Cài Đặt APK**: `adb install -r nextai_opencut_signed.apk` thành công (`Success`, 1,159,374 bytes).
+2. **Khởi Chạy Ứng Dụng**: `com.nextai.opencut/.presentation.MainActivity` chạy trơn tru, 0 crash (`logcat -s AndroidRuntime`).
+3. **Màn Hình Home Hub**:
+   - Logo NextAI OpenCut, thẻ "Dự án mới" phát sáng, lưới 8 Quick Action Tiles, Recent Drafts thumbnail & duration, thanh 5 Bottom Tabs.
+   - Minh chứng: `design/screenshots/physical_a50s_home.png` & `physical_a50s_home_restored.png`.
+4. **Tab Mẫu / Template ("MẪU HOT TRENDING")**:
+   - Thanh tìm kiếm OpenCut thương hiệu chuẩn, làm sạch toàn bộ từ khóa rác K9.
+   - Minh chứng: `design/screenshots/physical_a50s_template.png`.
+5. **Tab Hồ Sơ / Profile ("HỒ SƠ CỦA TÔI")**:
+   - Hiển thị trung thực Free Tier, không cấp VIP ảo ban đầu (sửa lỗi D1 & D6).
+   - Minh chứng: `design/screenshots/physical_a50s_profile.png`.
+6. **Màn Hình Paywall Gói Cước (`SubscribeActivity`)**:
+   - Paywall gốc 3 gói cước, CTA "NÂNG CẤP NGAY (GOOGLE PLAY)", huy hiệu VIP Pro.
+   - Minh chứng: `design/screenshots/physical_a50s_subscribe.png`.
+7. **Hộp Thoại Giữ Chân 2 Cấp (2-Tier Detain Modal)**:
+   - Bắt sự kiện phím Back cứng trên Paywall -> Hiển thị hộp thoại giữ chân cấp 1 ("🎁 KHOAN ĐÃ! ƯU ĐÃI ĐẶC BIỆT", giảm giá 20%).
+   - Minh chứng: `design/screenshots/physical_a50s_detain.png` & `physical_a50s_detain_tier2.png`.
+8. **Media Picker & Import Tệp Thật**:
+   - Quét và nạp tệp video/ảnh thực tế trong máy thật, badge đánh số `①` Cyan, nút "Thêm (1)".
+   - Minh chứng: `design/screenshots/physical_a50s_picker.png` & `physical_a50s_selected.png`.
+9. **Video Editor Timeline & Phát Video**:
+   - Canvas phát video 1080P thực tế, timeline 5 dải C++20, thước đo tua, playhead đồng bộ thời gian thực (`00:00 / 00:05`).
+   - Minh chứng: `design/screenshots/physical_a50s_editor_loaded.png` & `physical_a50s_editor_playing.png`.
+
