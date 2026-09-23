@@ -1,0 +1,19 @@
+task_id: "TASK-048-PAYWALL-BILLING-INTEGRITY"
+phase: "P0 - Security & Monetization Hardening (Review R2)"
+title: "Gỡ Bỏ Kích Hoạt VIP Cục Bộ Trực Tiếp, Tích Hợp Google Play Billing Client 8.2.1 Thật"
+assigned_to:
+  - "Agent 5 (Payment)"
+  - "Agent 3 (Android)"
+  - "Agent 9 (Security)"
+status: "READY"
+created_at: "2026-09-23T08:20:00+07:00"
+priority: "CRITICAL"
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/billing/SubscriptionManager.java"
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/subscribe/SubscribeActivity.java"
+  - "apps/android/app/src/main/kotlin/com/nextai/opencut/compose/subscribe/ComposeSubscribeActivity.kt"
+acceptance_criteria:
+  - "Gỡ bỏ hoàn toàn các lời gọi trực tiếp SubscriptionManager.setVipActive() từ nút NÂNG CẤP NGAY và 2 hộp thoại giữ chân"
+  - "Tích hợp BillingClient thật với launchBillingFlow() và PurchasesUpdatedListener"
+  - "Thêm cờ trial_consumed trong SharedPreferences chống lặp lại dùng thử vô hạn lần"
+  - "Xác thực purchase token qua Backend (Port 6033) trước khi cấp quyền VIP"

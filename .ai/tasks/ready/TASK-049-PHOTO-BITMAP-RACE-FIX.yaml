@@ -1,0 +1,16 @@
+task_id: "TASK-049-PHOTO-BITMAP-RACE-FIX"
+phase: "P0 - Memory Safety & Concurrency Hardening (Review R2)"
+title: "Khắc Phục Race Condition Bitmap Trong SavePhotoTask & Khóa Giao Diện Khi Lưu Ảnh"
+assigned_to:
+  - "Agent 3 (Android)"
+  - "Agent 7 (Fixer)"
+  - "Agent 8 (Reviewer)"
+status: "READY"
+created_at: "2026-09-23T08:20:00+07:00"
+priority: "CRITICAL"
+files_allowed:
+  - "apps/android/app/src/main/java/com/nextai/opencut/presentation/photo/PhotoEditorComponent.java"
+acceptance_criteria:
+  - "Tạo bản sao độc lập (copy/clone) của activeBitmap trước khi dispatch sang backgroundExecutor"
+  - "Khóa nút lưu và thao tác biên tập trong lúc tác vụ SavePhotoTask đang thực thi"
+  - "Bảo đảm không xảy ra ngoại lệ RuntimeException: Canvas: trying to use a recycled bitmap"

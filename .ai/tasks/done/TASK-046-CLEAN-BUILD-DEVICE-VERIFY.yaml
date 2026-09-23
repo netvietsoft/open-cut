@@ -1,0 +1,27 @@
+task_id: "TASK-046-CLEAN-BUILD-DEVICE-VERIFY"
+phase: "P0 - Clean Build, Verification & Device QA"
+title: "Biên Dịch Sạch, Chạy Test Đơn Vị JVM, Đóng Gói Signed APK Và Nghiệm Thu Thiết Bị Test"
+assigned_to:
+  - "Agent 0 (Orchestrator)"
+  - "Agent 6 (Tester)"
+  - "Agent 10 (DevOps)"
+status: "DONE"
+started_at: "2026-09-22T14:00:00+07:00"
+completed_at: "2026-09-22T14:35:00+07:00"
+priority: "HIGH"
+files_allowed:
+  - "apps/android/app/build/manual_build/**"
+  - "design/screenshots/screen_*.png"
+  - "TASK_LOG.md"
+  - "UPDATETODOS.md"
+acceptance_criteria:
+  - "Dọn sạch thư mục build cũ, biên dịch sạch từ đầu qua javac, aapt2, d8, zipalign, apksigner [PASSED]"
+  - "Chạy toàn bộ 3 test suites JVM (ContrastFormulaTest, EffectRegistryTest, MediaItemTest) đạt 100% PASSED (12/12) [PASSED]"
+  - "Đóng gói APK ký số hợp lệ nextai_opencut_signed.apk (1,159,374 bytes) [PASSED]"
+  - "Cài đặt thành công lên thiết bị test qua ADB và khởi chạy MainActivity không crash [PASSED]"
+  - "Kiểm thử Visual QA đối chiếu 5 màn hình: Home Hub, Template Tab, Profile Tab, SubscribeActivity, 2-Tier Detain Modal [PASSED]"
+results:
+  - "Built clean release-signed APK nextai_opencut_signed.apk"
+  - "12/12 JVM unit tests passed with exit code 0 in 0.78s"
+  - "Streamed install to emulator-5554 succeeded"
+  - "Visual QA confirmed 100% parity across 5 key screens"

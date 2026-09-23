@@ -2,6 +2,54 @@
 
 Mọi thay đổi có ý nghĩa trong dự án NextAI OpenCut đều được ghi nhận tại đây theo chuẩn `Keep a Changelog` và `Development Workspace Standard V2.1`.
 
+## [v2.3.2] - 2026-09-22 (TASK-046 & TASK-047)
+### Triển Khai Thực Tế & Nghiệm Thu Thiết Bị Vật Lý (Clean Build & Real Device Deployment)
+- **Triển Khai & Kiểm Thử Trên Điện Thoại Thật Samsung Galaxy A50s (TASK-047)**:
+  - Ghép nối Wireless ADB tới `192.168.1.3:43905` (`SM-A507FN`, màn hình 1080x2340).
+  - Đánh thức màn hình `KEYCODE_WAKEUP` và giải phóng khóa phím `wm dismiss-keyguard`.
+  - Cài đặt thành công APK ký số `nextai_opencut_signed.apk` (1.15MB) với 0 crash (`logcat -s AndroidRuntime`).
+  - Kiểm thử thị giác và nghiệm thu thực tế 7 luồng người dùng: Trang chủ Home Hub, Mẫu Hot Trending, Hồ sơ Free Tier, Paywall Native SubscribeActivity, Hộp thoại giữ chân 2 cấp (giảm giá 20%), Media Picker quét ảnh/video máy thật, Video Editor 5 tracks C++20 phát mượt mà 1080P.
+  - Lưu trữ 15 ảnh chụp màn hình minh chứng tại `design/screenshots/physical_a50s_*.png`.
+- **Clean Build & Kiểm Thử Đơn Vị Độc Lập (TASK-046)**:
+  - Dọn sạch cache build, biên dịch sạch javac, aapt2, d8, zipalign, apksigner.
+  - Chạy 3 test suites JVM (`ContrastFormulaTest`, `EffectRegistryTest`, `MediaItemTest`) đạt 100% Passed (12/12 test cases).
+  - Triển khai và xác thực Visual QA trên máy test `emulator-5554`.
+
+---
+
+## [v2.3.1] - 2026-09-22 (TASK-036 đến TASK-045)
+### Khắc Phục Toàn Diện 77 Lỗi Code Review `apps/android` (Audit Defect Remediation Sprint)
+- **Xây Dựng & Đóng Gói (TASK-036 & TASK-043)**:
+  - Thống nhất cây mã nguồn, loại bỏ xung đột FQN giữa Java và Kotlin.
+  - Bổ sung 5 file C++ còn thiếu vào `CMakeLists.txt` (`shader_pack.cpp`, `face_mesh_engine.cpp`, `body_segmentation_engine.cpp`, `sticker_text_engine.cpp`, `ffmpeg_render_pipeline.cpp`).
+  - Tạo `app_classes.jar` khắc phục giới hạn 8191 ký tự của dòng lệnh Windows PowerShell.
+  - Chuẩn hóa `minSdkVersion="24"`, loại bỏ quyền thừa `CAMERA` và `RECORD_AUDIO`.
+  - Thiết lập bộ kiểm thử đơn vị độc lập JVM tại `src/test/java/com/nextai/opencut/` với script `run_unit_tests.ps1`.
+- **Tính Toàn Vẹn Của Engine & JNI (TASK-037)**:
+  - Export đầy đủ 7 symbol JNI còn thiếu trong `native-lib.cpp`.
+  - Chuẩn hóa `MiddleBridgeJni.java` trả về `false` trung thực khi lỗi xảy ra, xóa bỏ hoàn toàn hành vi nuốt ngoại lệ và báo `true` giả (tuân thủ Luật 20 AGENTS.md).
+- **An Toàn Xuất Tệp & Lưu Trữ (TASK-038 & TASK-042)**:
+  - Chấm dứt hoàn toàn cơ chế fallback tự động quét video lạ từ MediaStore/Camera khi export.
+  - Kiểm tra kích thước file xuất > 0 bytes trước khi báo thành công.
+  - Tạo và tích hợp `OpenCutFileProvider.java` kèm cờ `FLAG_GRANT_READ_URI_PERMISSION`, bảo vệ chống `FileUriExposedException`.
+  - Bổ sung khối `finally` đóng `MediaMuxer` và `MediaExtractor`.
+  - Thay thế việc nhân bản 3 tệp bằng di chuyển 1 tệp duy nhất.
+  - Chuyển toàn bộ tác vụ nạp/lưu ảnh sang `backgroundExecutor`, bổ sung `recycle()` bitmap trung gian chống OOM.
+  - Chuẩn hóa công thức độ tương phản ColorMatrix với điểm tựa xám 127.5f.
+  - Tự động nhận diện lại landmarks khuôn mặt sau khi xoay 90° hoặc lật ảnh.
+- **Trạng Thái Dự Án, Điều Hướng & Paywall (TASK-039, TASK-040, TASK-041, TASK-044)**:
+  - Bỏ lệnh ghi đè `activeProjectClips` trong `onResume()`, bảo toàn dữ liệu timeline.
+  - Nút "Dự án mới" luôn khởi tạo dự án rỗng 100%.
+  - Quản lý `currentScreen` và hộp thoại xác nhận khi bấm phím Back cứng (`onBackPressed`).
+  - Đồng bộ hệ thống 5 tab thống nhất (`BottomNavComponent`, `HomeHubComponent`, `ProfileComponent`, `MainActivity`).
+  - Tạo `SubscriptionManager.java` theo dõi VIP qua SharedPreferences và `SubscribeActivity.java` với máy trạng thái giữ chân 2 cấp.
+  - Khắc phục race condition phát video và tua thước với `scrubResetRunnable` và cờ `isScrubbing`.
+  - Chuẩn hóa tọa độ PIP overlay `0.0f - 1.0f` kèm giới hạn biên an toàn.
+  - Cắt tách clip (Split) chính xác tại `virtualPlayheadMs` với `trimInSec` / `trimOutSec`.
+  - Làm sạch toàn bộ chuỗi tìm kiếm và danh mục rác K9 sang thương hiệu chuẩn `OpenCut`.
+
+---
+
 ## [v2.3.0] - 2026-09-21 (TASK-035)
 ### Tái Cấu Trúc Kiến Trúc & Mô-Đun Hóa (Architectural Modularization & Zero-Regression Componentization)
 - **Trích Xuất Data Models (`com.nextai.opencut.presentation.model.*`)**:

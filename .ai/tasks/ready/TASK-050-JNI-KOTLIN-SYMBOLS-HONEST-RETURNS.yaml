@@ -1,0 +1,17 @@
+task_id: "TASK-050-JNI-KOTLIN-SYMBOLS-HONEST-RETURNS"
+phase: "P0 - JNI Engine Integrity & Symbol Alignment (Review R2)"
+title: "Bổ Sung Symbol JNI Khớp Cho MiddleBridgeJniKt & Chuẩn Hóa Giá Trị Trả Về C++ Native"
+assigned_to:
+  - "Agent 1 (Architect)"
+  - "Agent 3 (Android)"
+  - "Agent 7 (Fixer)"
+status: "READY"
+created_at: "2026-09-23T08:20:00+07:00"
+priority: "HIGH"
+files_allowed:
+  - "apps/android/app/src/main/cpp/native-lib.cpp"
+  - "apps/android/app/src/main/kotlin/com/nextai/opencut/engine/MiddleBridgeJniKt.kt"
+acceptance_criteria:
+  - "Export đầy đủ các symbol JNI tương ứng với MiddleBridgeJniKt trong native-lib.cpp chống UnsatisfiedLinkError"
+  - "Bọc try-catch hoặc xử lý trung thực trong MiddleBridgeJniKt tương đương bản Java"
+  - "Thay thế các lệnh return JNI_TRUE rỗng trong 6 hàm JNI mới bằng mã thực thi hoặc cờ fallback trung thực"
