@@ -7,7 +7,7 @@ $PLATFORM_JAR = "$SDK_DIR\platforms\android-34\android.jar"
 $ADB = "$SDK_DIR\platform-tools\adb.exe"
 
 $PROJECT_ROOT = "D:\Decompiler\App\Video\Capcut"
-$APP_DIR = "$PROJECT_ROOT\apps\android\app"
+$APP_DIR = "$PROJECT_ROOT\CONVERT\apps\android\app"
 $OUT_DIR = "$APP_DIR\build\manual_build"
 $BRAIN_DIR = "C:\Users\boluc\.gemini\antigravity-ide\brain\3fc1c617-da25-4ece-bbd0-eb9bb3669d3e"
 

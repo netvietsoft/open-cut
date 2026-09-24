@@ -6,7 +6,7 @@ $BUILD_TOOLS = "$SDK_DIR\build-tools\34.0.0"
 $PLATFORM_JAR = "$SDK_DIR\platforms\android-34\android.jar"
 
 $PROJECT_ROOT = "D:\Decompiler\App\Video\Capcut"
-$APP_DIR = "$PROJECT_ROOT\apps\android\app"
+$APP_DIR = "$PROJECT_ROOT\CONVERT\apps\android\app"
 $OUT_DIR = "$APP_DIR\build\manual_build"
 
 Write-Host ">>> [1/6] Cleaning and preparing build folders..." -ForegroundColor Cyan

@@ -8,7 +8,7 @@ $PLATFORM_JAR = "$SDK_DIR\platforms\android-34\android.jar"
 $ADB = "$SDK_DIR\platform-tools\adb.exe"
 
 $PROJECT_ROOT = "D:\Decompiler\App\Video\Capcut"
-$APP_DIR = "$PROJECT_ROOT\apps\android\app"
+$APP_DIR = "$PROJECT_ROOT\CONVERT\apps\android\app"
 $OUT_DIR = "$APP_DIR\build\manual_build"
 
 Write-Host "====================================================================" -ForegroundColor Cyan
