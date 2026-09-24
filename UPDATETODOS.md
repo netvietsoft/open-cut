@@ -2,8 +2,8 @@
 
 > **Chỉ đạo tối cao**: **Chủ tịch**  
 > **Người điều phối dự án**: **Thư ký — Agent 0 (Orchestrator)** (`Development_Workspace_Standard_V2.1_Design_Gated.txt`)  
-> **Cập nhật lần cuối**: 2026-09-21 15:45:00  
-> **Trạng thái tổng thể**: `COMPLETED` (Đã hoàn tất TASK-034: Đa Nhận Diện Khuôn Mặt Đa Tỷ Lệ Multi-Face Multi-Scale Passes, Khắc phục triệt để lỗi không nhận diện được môi và mắt trên ảnh chụp đời thực nhiều người FB_IMG_1789812444308.jpg, Làm sáng mắt tự nhiên không còn đốm trắng giả tạo trên mi mắt/lông mày, Bổ sung cơ chế chạm mặt chuyển đổi người làm đẹp tức thì và chạm trực tiếp vào môi/mắt để vi chỉnh tọa độ Touch-to-Target, Sửa lỗi gốc Touch Event Dispatching trên Photo Canvas, Đã kiểm thử và nghiệm thu trực tiếp 100% trên Samsung Galaxy A50s SM-A507FN)
+> **Cập nhật lần cuối**: 2026-09-24 10:00:00
+> **Trạng thái tổng thể**: `COMPLETED` (Đã hoàn tất TASK-051: Tái cấu trúc toàn diện không gian làm việc theo chỉ đạo của Chủ tịch — Phân tách 100% mã nguồn NextAI OpenCut vào `CONVERT/` và toàn bộ tài sản decompile CapCut vào `SOURCE/`. Xác thực toàn bộ Unit Tests JVM 12/12 pass, Jest Backend 7/7 pass, và biên dịch sạch APK `nextai_opencut_signed.apk` thành công 100%).
 
 ---
 
@@ -113,3 +113,5 @@
   - [ ] **P1**: Chuyển sang clip ảnh phải `stopPlayback()` video ẩn phía sau (X8); `OpenCutFileProvider` cần kiểm tra traversal path + sửa `authority` bị bỏ qua.
   - [ ] **P2**: 8 item mẫu giả không được nối vào sau danh sách media thật (lỗi Luật 14 kiểu mới do sửa D2/X4 gây ra); giữ lại item SAF-imported khi quét lại MediaStore.
   - [ ] **P2**: Cập nhật `.ai/state.json` về trạng thái thật; giữ `TASK-035` ở `REVIEW` cho tới khi các mục P0 trên được xử lý.
+
+- [x] `TASK-051-WORKSPACE-RESTRUCTURING`: Tái cấu trúc phân tách sạch sẽ toàn bộ thư mục dự án theo chỉ đạo của Chủ tịch: toàn bộ mã nguồn phát triển và chuyển đổi của NextAI OpenCut tại `CONVERT/` (`apps/`, `Backend/`, `design/`, `Docs/`, `scripts/`, `tests/`, `package.json`, `Convertme.txt`), toàn bộ tài sản decompile CapCut tại `SOURCE/` (`extracted/`, `Report/`, `apktool-res/`, `jadx_test/`, APK gốc, `class_index.db`, dumps, screenshots, scripts phân tích). Cập nhật script build, xác thực 100% unit tests và build APK thành công.

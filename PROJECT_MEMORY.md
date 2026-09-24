@@ -844,3 +844,38 @@
    - Canvas phát video 1080P thực tế, timeline 5 dải C++20, thước đo tua, playhead đồng bộ thời gian thực (`00:00 / 00:05`).
    - Minh chứng: `design/screenshots/physical_a50s_editor_loaded.png` & `physical_a50s_editor_playing.png`.
 
+
+---
+
+## 26. TÁI CẤU TRÚC TOÀN DIỆN KHÔNG GIAN LÀM VIỆC (WORKSPACE RESTRUCTURING: CONVERT & SOURCE)
+
+> **Mục tiêu**: Thực hiện chỉ đạo tối cao của Chủ tịch về việc dọn dẹp không gian làm việc, phân chia rạch ròi 100% mã nguồn dự án NextAI OpenCut vào `CONVERT/` và toàn bộ tài nguyên decompile CapCut vào `SOURCE/`.
+
+### 1. Phân Bổ Cấu Trúc Thư Mục Chuẩn (Directory Architecture)
+- **Thư Mục Gốc (D:\Decompiler\App\Video\Capcut\)**:
+  - Giữ lại hệ thống quản trị cốt lõi: Git (`.git/`), Quản trị Agent (`.ai/`), Agent Skills (`.agents/`), Cấu hình Editor (`.vscode/`), Ignore rules (`.gitignore`, `.env.example`).
+  - Các tài liệu Hiến pháp & Bộ nhớ: `AGENTS.md`, `GEMINI.md`, `CLAUDE.md`, `.clinerules`, `PROJECT_MEMORY.md`, `TASK_LOG.md`, `UPDATETODOS.md`, `Tasksrequiring.md`, `LIBRARY.md`, `README.md`, `Development_Workspace_Standard_V2.1_Design_Gated.txt`.
+- **Thư Mục CONVERT/ (NextAI OpenCut Codebase & Pipelines)**:
+  - `apps/`: Ứng dụng Android Jetpack Compose (`apps/android/app/` gồm mã nguồn Java/Kotlin, C++ Engine, Resources, Tests, Gradle scripts, build scripts).
+  - `Backend/`: Microservices Node.js/TypeScript Express Gateway, Web CMS, SSE Streamer, Database schema chạy cổng 6033.
+  - `design/`: Hệ thống UI/UX Design System, wireframes, prototypes, screenshots minh chứng Visual QA.
+  - `Docs/`: Toàn bộ tài liệu kiến trúc, ADRs, Contracts, Specs, Security, Testing, Rules.
+  - `scripts/`: Toàn bộ công cụ tự động hóa build, test, deploy (`build_and_install_apk.ps1`, `build_and_deploy.ps1`, `build_apk_only.ps1`).
+  - `tests/`: Bộ kiểm thử E2E Playwright và Parity tests.
+  - `package.json`, `package-lock.json`, `playwright.config.ts`, `Convertme.txt`.
+- **Thư Mục SOURCE/ (Decompiled CapCut Source Assets)**:
+  - `extracted/`: 1,550+ tệp trích xuất smali, thư viện native C/C++ `.so`, assets gốc.
+  - `Report/`: 12 báo cáo giải phẫu kiến trúc decompile CapCut.
+  - `apktool-res/`, `jadx_test/`: Kết quả dịch ngược tài nguyên và mã Java bằng JADX/Apktool.
+  - `CapCut+-+Video+Editor_19.4.0_APKPure.apk`, `class_index.db`, `readme.txt`.
+  - `dumps/`: Toàn bộ XML hierarchy dumps thu thập từ thiết bị.
+  - `screenshots/`: Toàn bộ ảnh test, capture từ thiết bị.
+  - `scripts/`: Toàn bộ scripts cào, bóc tách và phân tích dữ liệu decompile.
+
+### 2. Xác Thực Sau Tái Cấu Trúc (Verification After Restructuring)
+1. **Kiểm thử đơn vị JVM (CONVERT/apps/android/app/run_unit_tests.ps1)**:
+   - 12/12 Test cases (3 test suites) **PASSED 100%** trong 0.22 giây.
+2. **Kiểm thử Backend (CONVERT/Backend)**:
+   - 7/7 Jest test cases **PASSED 100%**.
+3. **Biên dịch APK (CONVERT/apps/android/app/build_apk.ps1)**:
+   - `nextai_opencut_signed.apk` (1,159,374 bytes) biên dịch sạch, zipalign và apksigner ký số thành công.
