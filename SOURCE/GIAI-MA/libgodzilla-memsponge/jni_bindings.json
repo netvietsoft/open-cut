@@ -1,0 +1,210 @@
+[
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_startWhenOOM",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_startWhenOOM",
+    "value": "0x77950",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_artHookInit",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_artHookInit",
+    "value": "0x78f7c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_doNoclassDef",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_doNoclassDef",
+    "value": "0x7a20c",
+    "size": 612,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_StringOptHelper_startStringFromString",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_StringOptHelper_startStringFromString",
+    "value": "0x7888c",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doDamageFreeList",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doDamageFreeList",
+    "value": "0x7aab8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doScudoVmaLeak",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doScudoVmaLeak",
+    "value": "0x7d2fc",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_testVirtualMemOOM",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_testVirtualMemOOM",
+    "value": "0x79a08",
+    "size": 640,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_testScudoVmaLeak",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_testScudoVmaLeak",
+    "value": "0x7d380",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_clampGrowthLimit",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_clampGrowthLimit",
+    "value": "0x78e94",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_printProcessMaps",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_printProcessMaps",
+    "value": "0x7900c",
+    "size": 1324,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_debug",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_debug",
+    "value": "0x77894",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_shouldClampNative",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_shouldClampNative",
+    "value": "0x79c88",
+    "size": 1012,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_stop",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_stop",
+    "value": "0x77870",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_debug",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_debug",
+    "value": "0x78ff8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_testSuspendhung",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_testSuspendhung",
+    "value": "0x7a470",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_StringOptHelper_debug",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_StringOptHelper_debug",
+    "value": "0x78940",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doFixFreeList",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doFixFreeList",
+    "value": "0x7a49c",
+    "size": 1564,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_setLargeObjThreshold",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_setLargeObjThreshold",
+    "value": "0x77c38",
+    "size": 1188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_setHideLargeObjectMaxBytes",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_setHideLargeObjectMaxBytes",
+    "value": "0x778a8",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_adjustSoftReference",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_adjustSoftReference",
+    "value": "0x78420",
+    "size": 568,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_is64BitRuntime",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_is64BitRuntime",
+    "value": "0x78ff0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_setCurrentHeapSize",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_setCurrentHeapSize",
+    "value": "0x78658",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doIgnoreClampGrowLimit",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doIgnoreClampGrowLimit",
+    "value": "0x7d438",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_optGCHeapTargetPrint",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_optGCHeapTargetPrint",
+    "value": "0x787bc",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_start",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_start",
+    "value": "0x778f8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_clearGrowthLimit",
+    "demangled": "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_clearGrowthLimit",
+    "value": "0x78f8c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

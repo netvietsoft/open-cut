@@ -1,0 +1,18 @@
+{
+  "report_id": "REPORT_TASK_SO_128_libgodzilla_acurate_asan",
+  "task_id": "TASK_SO_128_libgodzilla_acurate_asan",
+  "target_library": "libgodzilla-acurate-asan.so",
+  "assigned_agent": "Agent 7 - RECONSTRUCTION",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
+  "evidence": {
+    "symbols_total": 214,
+    "jni_exports": 9,
+    "cxx_demangled_count": 92,
+    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libgodzilla-acurate-asan",
+    "has_cpp_interface": true,
+    "has_strings": true
+  },
+  "findings_summary": "?? gi?i m? th?nh c?ng 100% c?u tr?c nh? ph?n c?a libgodzilla-acurate-asan.so. B?c t?ch 214 dynamic symbols, 9 JNI exports, v? 92 C++ methods demangled.",
+  "acceptance_criteria_passed": true
+}

@@ -1,0 +1,834 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity10MaskFilter8MakeBlurENS_9BlurStyleEf",
+    "demangled": "skity::MaskFilter::MakeBlur(skity::BlurStyle, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax5ColorC1Ei",
+    "demangled": "lynx::animax::Color::{ctor}(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint8SetColorEj",
+    "demangled": "skity::Paint::SetColor(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas4SaveEv",
+    "demangled": "skity::Canvas::Save()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas9TranslateEff",
+    "demangled": "skity::Canvas::Translate(float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas7RestoreEv",
+    "demangled": "skity::Canvas::Restore()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5PaintD1Ev",
+    "demangled": "skity::Paint::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas8DrawRectERKNS_4RectERKNS_5PaintE",
+    "demangled": "skity::Canvas::DrawRect(skity::Rect const&, skity::Paint const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas8ClipRectERKNS_4RectENS0_6ClipOpE",
+    "demangled": "skity::Canvas::ClipRect(skity::Rect const&, skity::Canvas::ClipOp)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas5ScaleEff",
+    "demangled": "skity::Canvas::Scale(float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas12DrawTextBlobEPKNS_8TextBlobEffRKNS_5PaintE",
+    "demangled": "skity::Canvas::DrawTextBlob(skity::TextBlob const*, float, float, skity::Paint const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10LogMessageD2Ev",
+    "demangled": "lynx::animax::LogMessage::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10LogMessageC2EPKciNS0_14AnimaXLogLevelE",
+    "demangled": "lynx::animax::LogMessage::{base ctor}(char const*, int, lynx::animax::AnimaXLogLevel)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk18ios_base6getlocEv",
+    "demangled": "std::__ndk1::ios_base::getloc const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeD1Ev",
+    "demangled": "std::__ndk1::locale::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9use_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::use_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base5clearEj",
+    "demangled": "std::__ndk1::ios_base::clear(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt18uncaught_exceptionv",
+    "demangled": "std::uncaught_exception()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15ctypeIcE2idE",
+    "demangled": "std::__ndk1::ctype<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11FontManager10RefDefaultEv",
+    "demangled": "skity::FontManager::RefDefault()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11FontManager16MatchFamilyStyleEPKcRKNS_9FontStyleE",
+    "demangled": "skity::FontManager::MatchFamilyStyle(char const*, skity::FontStyle const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5PaintC1Ev",
+    "demangled": "skity::Paint::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11FontManager25MatchFamilyStyleCharacterEPKcRKNS_9FontStyleEPS2_ij",
+    "demangled": "skity::FontManager::MatchFamilyStyleCharacter(char const*, skity::FontStyle const&, char const**, int, unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity9FontStyleC1EiiNS0_5SlantE",
+    "demangled": "skity::FontStyle::{ctor}(int, int, skity::FontStyle::Slant)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12ThreadAssert6AssertENS1_4TypeE",
+    "demangled": "lynx::animax::ThreadAssert::Assert(lynx::animax::ThreadAssert::Type)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint12SetAntiAliasEb",
+    "demangled": "skity::Paint::SetAntiAlias(bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint8SetStyleENS0_5StyleE",
+    "demangled": "skity::Paint::SetStyle(skity::Paint::Style)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint12SetFillColorEj",
+    "demangled": "skity::Paint::SetFillColor(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint14SetStrokeColorEj",
+    "demangled": "skity::Paint::SetStrokeColor(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint14SetStrokeWidthEf",
+    "demangled": "skity::Paint::SetStrokeWidth(float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEi",
+    "demangled": "std::__ndk1::to_string(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext17FontmgrCollectionC1ENSt6__ndk110shared_ptrINS0_12IFontManagerEEE",
+    "demangled": "ttoffice::tttext::FontmgrCollection::{ctor}(std::__ndk1::shared_ptr<ttoffice::tttext::IFontManager>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_pure_virtual",
+    "demangled": "__cxa_pure_virtual",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutexD1Ev",
+    "demangled": "std::__ndk1::mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4FontC1ENSt6__ndk110shared_ptrINS_8TypefaceEEEf",
+    "demangled": "skity::Font::{ctor}(std::__ndk1::shared_ptr<skity::Typeface>, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity4Font15GetWidthsBoundsEPKtiPfPNS_4RectERKNS_5PaintE",
+    "demangled": "skity::Font::GetWidthsBounds const(unsigned short const*, int, float*, skity::Rect*, skity::Paint const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity8Typeface14UnicharToGlyphEj",
+    "demangled": "skity::Typeface::UnicharToGlyph const(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity8Typeface16UnicharsToGlyphsEPKjiPt",
+    "demangled": "skity::Typeface::UnicharsToGlyphs const(unsigned int const*, int, unsigned short*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity8Typeface13GetUnitsPerEmEv",
+    "demangled": "skity::Typeface::GetUnitsPerEm const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity4Font10GetMetricsEPNS_11FontMetricsE",
+    "demangled": "skity::Font::GetMetrics const(skity::FontMetrics*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11FontManager12MakeFromFileEPKci",
+    "demangled": "skity::FontManager::MakeFromFile(char const*, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strncmp",
+    "demangled": "strncmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity11FontManager18GetDefaultTypefaceENS_9FontStyleE",
+    "demangled": "skity::FontManager::GetDefaultTypeface const(skity::FontStyle)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strlen_chk",
+    "demangled": "__strlen_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count4lockEv",
+    "demangled": "std::__ndk1::__shared_weak_count::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax9FontAsset7GetFontEv",
+    "demangled": "lynx::animax::FontAsset::GetFont()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource15GetDocumentDataEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetDocumentData const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext14ParagraphStyleC1Ev",
+    "demangled": "ttoffice::tttext::ParagraphStyle::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext9Paragraph6CreateEv",
+    "demangled": "ttoffice::tttext::Paragraph::Create()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext14ParagraphStyle17SetLineHeightInPxEfNS0_9RulerTypeE",
+    "demangled": "ttoffice::tttext::ParagraphStyle::SetLineHeightInPx(float, ttoffice::tttext::RulerType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource11GetTextSizeEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetTextSize const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource11GetTrackingEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetTracking const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext5StyleC1Ev",
+    "demangled": "ttoffice::tttext::Style::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource11GetFontNameEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetFontName const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext13TTTextContextC1Ev",
+    "demangled": "ttoffice::tttext::TTTextContext::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource20GetFontMgrCollectionEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetFontMgrCollection const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext10TextLayoutC1EPNS0_17FontmgrCollectionENS0_10ShaperTypeE",
+    "demangled": "ttoffice::tttext::TextLayout::{ctor}(ttoffice::tttext::FontmgrCollection*, ttoffice::tttext::ShaperType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext10TextLayoutD1Ev",
+    "demangled": "ttoffice::tttext::TextLayout::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext13TTTextContextD1Ev",
+    "demangled": "ttoffice::tttext::TTTextContext::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext5StyleD1Ev",
+    "demangled": "ttoffice::tttext::Style::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext14ParagraphStyleD1Ev",
+    "demangled": "ttoffice::tttext::ParagraphStyle::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK8ttoffice6tttext5Style15ClearShapeStyleEv",
+    "demangled": "ttoffice::tttext::Style::ClearShapeStyle const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK8ttoffice6tttext10TextLayout8LayoutExEPNS0_9ParagraphEPNS0_12LayoutRegionERNS0_13TTTextContextE",
+    "demangled": "ttoffice::tttext::TextLayout::LayoutEx const(ttoffice::tttext::Paragraph*, ttoffice::tttext::LayoutRegion*, ttoffice::tttext::TTTextContext&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext12LayoutRegionC1EffNS0_10LayoutModeES2_PNS0_18LayoutPageListenerE",
+    "demangled": "ttoffice::tttext::LayoutRegion::{ctor}(float, float, ttoffice::tttext::LayoutMode, ttoffice::tttext::LayoutMode, ttoffice::tttext::LayoutPageListener*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource17GetLayoutOnlyOnceEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetLayoutOnlyOnce const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext12LayoutDrawerC1EPNS0_13ICanvasHelperE",
+    "demangled": "ttoffice::tttext::LayoutDrawer::{ctor}(ttoffice::tttext::ICanvasHelper*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext12LayoutDrawer14DrawLayoutPageEPNS0_12LayoutRegionE",
+    "demangled": "ttoffice::tttext::LayoutDrawer::DrawLayoutPage(ttoffice::tttext::LayoutRegion*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN8ttoffice6tttext12LayoutDrawerD1Ev",
+    "demangled": "ttoffice::tttext::LayoutDrawer::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource8GetColorEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetColor const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource14GetStrokeWidthEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetStrokeWidth const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource14GetStrokeColorEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetStrokeColor const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax9TextLayer12ApplyEffectsERNS0_5PaintE",
+    "demangled": "lynx::animax::TextLayer::ApplyEffects(lynx::animax::Paint&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas6RotateEf",
+    "demangled": "skity::Canvas::Rotate(float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas4SkewEff",
+    "demangled": "skity::Canvas::Skew(float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas9DrawColorEjNS_9BlendModeE",
+    "demangled": "skity::Canvas::DrawColor(unsigned int, skity::BlendMode)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas8DrawLineEffffRKNS_5PaintE",
+    "demangled": "skity::Canvas::DrawLine(float, float, float, float, skity::Paint const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint5ResetEv",
+    "demangled": "skity::Paint::Reset()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Font11SetEmboldenEb",
+    "demangled": "skity::Font::SetEmbolden(bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity7TextRunC1ERKNS_4FontENSt6__ndk16vectorItNS4_9allocatorItEEEENS5_IfNS6_IfEEEESA_",
+    "demangled": "skity::TextRun::{ctor}(skity::Font const&, std::__ndk1::vector<unsigned short, std::__ndk1::allocator<unsigned short>>, std::__ndk1::vector<float, std::__ndk1::allocator<float>>, std::__ndk1::vector<float, std::__ndk1::allocator<float>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity7TextRunD1Ev",
+    "demangled": "skity::TextRun::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10TextHelperC2Ev",
+    "demangled": "lynx::animax::TextHelper::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10TextHelper12RegisterImplEPS1_",
+    "demangled": "lynx::animax::TextHelper::RegisterImpl(lynx::animax::TextHelper*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0xb7cc",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x14000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x10988",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x14038",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  }
+]

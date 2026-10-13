@@ -1,0 +1,3554 @@
+[
+  {
+    "name": "__bss_start__",
+    "demangled": "__bss_start__",
+    "value": "0x698f8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_bss_end__",
+    "demangled": "_bss_end__",
+    "value": "0x69a30",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x698f8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_end__",
+    "demangled": "__bss_end__",
+    "value": "0x69a30",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x69a30",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__end__",
+    "demangled": "__end__",
+    "value": "0x69a30",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x698f8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyUnicode_FromFormat",
+    "demangled": "PyUnicode_FromFormat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7PTYList3GetEj",
+    "demangled": "pitaya::PTYList::Get(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager16SetBusinessCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_10shared_ptrINS_7PTYDictEEEb",
+    "demangled": "pitaya::FeatureEngineeringManager::SetBusinessCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager20RegisterFeatureGroupERKNSt6__ndk110shared_ptrINS_7PTYDictEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::RegisterFeatureGroup(std::__ndk1::shared_ptr<pitaya::PTYDict> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fopen",
+    "demangled": "fopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16MemoryViewBufferC1Ev",
+    "demangled": "pitaya::MemoryViewBuffer::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyList_New",
+    "demangled": "PyList_New",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya13DebugInstanceEv",
+    "demangled": "pitaya::DebugInstance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7PTYDict6GetStrERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::PTYDict::GetStr(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memchr",
+    "demangled": "memchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya6TensorD1Ev",
+    "demangled": "pitaya::Tensor::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15ResourceManager17validPyFoundationEv",
+    "demangled": "pitaya::ResourceManager::validPyFoundation()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9WriteFileERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPKcmb",
+    "demangled": "pitaya::WriteFile(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, char const*, unsigned long, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyDict_SetItemString",
+    "demangled": "PyDict_SetItemString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15AnonymizedEventERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_10shared_ptrINS_7PTYDictEEE",
+    "demangled": "pitaya::AnonymizedEvent(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17ByteNNEngineStone6CreateEPNS_4TaskERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEbRNS_5ErrorE",
+    "demangled": "pitaya::ByteNNEngineStone::Create(pitaya::Task*, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool, pitaya::Error&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15ctypeIcE2idE",
+    "demangled": "std::__ndk1::ctype<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyByteArray_Size",
+    "demangled": "PyByteArray_Size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya5SplitERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_",
+    "demangled": "pitaya::Split(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Py_Initialize",
+    "demangled": "Py_Initialize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15PTYClassConvert17RegisterTransformENS_12PTYClassTypeERKNSt6__ndk18functionIFNS2_10shared_ptrINS_8PTYClassEEEP7_JNIEnvP8_jobjectRKNS4_INS_5ErrorEEEEEERKNS3_IFSA_S8_RKS6_SE_EEE",
+    "demangled": "pitaya::PTYClassConvert::RegisterTransform(pitaya::PTYClassType, std::__ndk1::function<std::__ndk1::shared_ptr<pitaya::PTYClass> (_JNIEnv*, _jobject*, std::__ndk1::shared_ptr<pitaya::Error> const&)> const&, std::__ndk1::function<_jobject* (_JNIEnv*, std::__ndk1::shared_ptr<pitaya::PTYClass> const&, std::__ndk1::shared_ptr<pitaya::Error> const&)> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya14GetStringValueERKNSt6__ndk110shared_ptrINS_9PTYObjectEEE",
+    "demangled": "pitaya::GetStringValue(std::__ndk1::shared_ptr<pitaya::PTYObject> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17JEErrorToPTYErrorERKNS_7JEErrorERNS_5ErrorE",
+    "demangled": "pitaya::JEErrorToPTYError(pitaya::JEError const&, pitaya::Error&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15PTYClassConvert11GetInstanceEv",
+    "demangled": "pitaya::PTYClassConvert::GetInstance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9AppStatus11IsColdStartEv",
+    "demangled": "pitaya::AppStatus::IsColdStart()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyModule_Type",
+    "demangled": "PyModule_Type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyArg_ParseTupleAndKeywords",
+    "demangled": "PyArg_ParseTupleAndKeywords",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9SetupInfo3didEv",
+    "demangled": "pitaya::SetupInfo::did()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10JobManager8InstanceEv",
+    "demangled": "pitaya::JobManager::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVM_PyThreadStateSetPitayaPackage",
+    "demangled": "BDPythonVM_PyThreadStateSetPitayaPackage",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager24GetEnterSeesionTimestampEv",
+    "demangled": "pitaya::FeatureEngineeringManager::GetEnterSeesionTimestamp()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya19BFDefaultVerManager16GetBridgeSubPackERKNSt6__ndk110shared_ptrINS_16AlgorithmPackageEEERKNS1_10unique_ptrINS_5ErrorENS1_14default_deleteIS8_EEEEbRKNS1_8functionIFvbRKNS2_IS8_EEEEE",
+    "demangled": "pitaya::BFDefaultVerManager::GetBridgeSubPack(std::__ndk1::shared_ptr<pitaya::AlgorithmPackage> const&, std::__ndk1::unique_ptr<pitaya::Error, std::__ndk1::default_delete<pitaya::Error>> const&, bool, std::__ndk1::function<void (bool, std::__ndk1::shared_ptr<pitaya::Error> const&)> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyGILState_Release",
+    "demangled": "PyGILState_Release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyFloat_Type",
+    "demangled": "PyFloat_Type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVM_disable_fatal_error_dump_tracebacks_and_modules",
+    "demangled": "BDPythonVM_disable_fatal_error_dump_tracebacks_and_modules",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya19isHandlerSubPackageENSt6__ndk110shared_ptrINS_18SubResourcePackageEEE",
+    "demangled": "pitaya::isHandlerSubPackage(std::__ndk1::shared_ptr<pitaya::SubResourcePackage>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyErr_Restore",
+    "demangled": "PyErr_Restore",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "longjmp",
+    "demangled": "longjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager20GetAppLogParamsByRidERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_10unique_ptrINS_7FEErrorENS1_14default_deleteISB_EEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::GetAppLogParamsByRid(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::unique_ptr<pitaya::FEError, std::__ndk1::default_delete<pitaya::FEError>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager20SetCacheValueForPathERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_RKNS1_10shared_ptrINS_9PTYObjectEEEb",
+    "demangled": "pitaya::FeatureEngineeringManager::SetCacheValueForPath(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYObject> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya8MakeListEv",
+    "demangled": "pitaya::MakeList()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env12GetPTYObjectEPvNS_8TaskTypeERNSt6__ndk110shared_ptrINS_5ErrorEEES1_",
+    "demangled": "pitaya::Env::GetPTYObject(void*, pitaya::TaskType, std::__ndk1::shared_ptr<pitaya::Error>&, void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17PitayaTaskMonitor11OnTaskStartERKNSt6__ndk110shared_ptrINS_4TaskEEEPvRKNS2_INS_7PTYDictEEE",
+    "demangled": "pitaya::PitayaTaskMonitor::OnTaskStart(std::__ndk1::shared_ptr<pitaya::Task> const&, void*, std::__ndk1::shared_ptr<pitaya::PTYDict> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10MakeObjectEi",
+    "demangled": "pitaya::MakeObject(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyFrame_GetLineNumber",
+    "demangled": "PyFrame_GetLineNumber",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyLong_FromUnsignedLongLong",
+    "demangled": "PyLong_FromUnsignedLongLong",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10MakeObjectEm",
+    "demangled": "pitaya::MakeObject(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env12PyBinderInitEv",
+    "demangled": "pitaya::Env::PyBinderInit()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyObject_GetAttrString",
+    "demangled": "PyObject_GetAttrString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya15ModelSubPackage15modelParamsPathEv",
+    "demangled": "pitaya::ModelSubPackage::modelParamsPath const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9MakeErrorENS_9ErrorCodeERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::MakeError(pitaya::ErrorCode, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyByteArray_Type",
+    "demangled": "PyByteArray_Type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject6IsListEv",
+    "demangled": "pitaya::PTYObject::IsList()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya18PitayaTmpDirectoryEv",
+    "demangled": "pitaya::PitayaTmpDirectory()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya15ModelSubPackage19privateEvoModelPathEv",
+    "demangled": "pitaya::ModelSubPackage::privateEvoModelPath const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyBytes_FromStringAndSize",
+    "demangled": "PyBytes_FromStringAndSize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyStatus_Exception",
+    "demangled": "PyStatus_Exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyObject_SetAttrString",
+    "demangled": "PyObject_SetAttrString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya8MakeDictEv",
+    "demangled": "pitaya::MakeDict()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyGILState_EnsureWithInterpreterState",
+    "demangled": "PyGILState_EnsureWithInterpreterState",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVM_enable_module_dict_max_ref_count",
+    "demangled": "BDPythonVM_enable_module_dict_max_ref_count",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya18SubResourcePackage10modelFlopsEv",
+    "demangled": "pitaya::SubResourcePackage::modelFlops const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Py_Dealloc",
+    "demangled": "_Py_Dealloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyInterpreterState_Next",
+    "demangled": "PyInterpreterState_Next",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyObject_HasAttrString",
+    "demangled": "PyObject_HasAttrString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya8TaskDataD1Ev",
+    "demangled": "pitaya::TaskData::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager16GetDatabaseCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_S9_RKNS1_10unique_ptrINS_7FEErrorENS1_14default_deleteISB_EEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::GetDatabaseCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::unique_ptr<pitaya::FEError, std::__ndk1::default_delete<pitaya::FEError>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyErr_NormalizeException",
+    "demangled": "PyErr_NormalizeException",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17PitayaTaskMonitor19UpdateBridgeVersionERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_",
+    "demangled": "pitaya::PitayaTaskMonitor::UpdateBridgeVersion(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager14GetUserProfileERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKNS1_10shared_ptrINS_7PTYDictEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::GetUserProfile(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya6LoggerERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_S8_b",
+    "demangled": "pitaya::Logger(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject2IsENS_13PTYObjectTypeE",
+    "demangled": "pitaya::PTYObject::Is(pitaya::PTYObjectType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12GlobalStable7GetBoolERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEb",
+    "demangled": "pitaya::GlobalStable::GetBool(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_PyType_Name",
+    "demangled": "_PyType_Name",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyObject_Str",
+    "demangled": "PyObject_Str",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya19BFDefaultVerManager20GetFoundationSubPackERKNSt6__ndk110shared_ptrINS_16AlgorithmPackageEEERKNS1_10unique_ptrINS_5ErrorENS1_14default_deleteIS8_EEEEbRKNS1_8functionIFvbRKNS2_IS8_EEEEE",
+    "demangled": "pitaya::BFDefaultVerManager::GetFoundationSubPack(std::__ndk1::shared_ptr<pitaya::AlgorithmPackage> const&, std::__ndk1::unique_ptr<pitaya::Error, std::__ndk1::default_delete<pitaya::Error>> const&, bool, std::__ndk1::function<void (bool, std::__ndk1::shared_ptr<pitaya::Error> const&)> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya4Task9IsExpiredEv",
+    "demangled": "pitaya::Task::IsExpired()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager29GetDatabaseCacheCustomColumnsERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_10unique_ptrINS_7FEErrorENS1_14default_deleteISB_EEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::GetDatabaseCacheCustomColumns(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::unique_ptr<pitaya::FEError, std::__ndk1::default_delete<pitaya::FEError>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16AlgorithmPackage10deploymentEv",
+    "demangled": "pitaya::AlgorithmPackage::deployment()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyImport_GetModuleDict",
+    "demangled": "PyImport_GetModuleDict",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12ErrorWrapper11GetInstanceEP7_JNIEnv",
+    "demangled": "pitaya::ErrorWrapper::GetInstance(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk123__match_any_but_newlineIcE6__execERNS_7__stateIcEE",
+    "demangled": "std::__ndk1::__match_any_but_newline<char>::__exec const(std::__ndk1::__state<char>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_PyRuntime_Initialize",
+    "demangled": "_PyRuntime_Initialize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya6RWLock9LockWriteEv",
+    "demangled": "pitaya::RWLock::LockWrite const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyExc_RuntimeError",
+    "demangled": "PyExc_RuntimeError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya5Error8HasErrorEv",
+    "demangled": "pitaya::Error::HasError const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager18MergeBusinessCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_10shared_ptrINS_7PTYDictEEEb",
+    "demangled": "pitaya::FeatureEngineeringManager::MergeBusinessCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env19RegisterDataWrapperENSt6__ndk18functionIFiPvEEENS_8TaskTypeENS_12PTYClassTypeE",
+    "demangled": "pitaya::Env::RegisterDataWrapper(std::__ndk1::function<int (void*)>, pitaya::TaskType, pitaya::PTYClassType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16HasBridgeFeatureERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEENS_20CompatibilityFeatureE",
+    "demangled": "pitaya::HasBridgeFeature(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, pitaya::CompatibilityFeature)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex6unlockEv",
+    "demangled": "std::__ndk1::mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16MemoryViewBufferD1Ev",
+    "demangled": "pitaya::MemoryViewBuffer::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setspecific",
+    "demangled": "pthread_setspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyErr_SetString",
+    "demangled": "PyErr_SetString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya11takeSubPackENSt6__ndk110shared_ptrINS_16AlgorithmPackageEEERNS1_INS_17HandlerSubPackageEEERNS0_6vectorINS1_INS_13LibSubPackageEEENS0_9allocatorIS9_EEEE",
+    "demangled": "pitaya::takeSubPack(std::__ndk1::shared_ptr<pitaya::AlgorithmPackage>, std::__ndk1::shared_ptr<pitaya::HandlerSubPackage>&, std::__ndk1::vector<std::__ndk1::shared_ptr<pitaya::LibSubPackage>, std::__ndk1::allocator<std::__ndk1::shared_ptr<pitaya::LibSubPackage>>>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Py_InitializeFromConfig",
+    "demangled": "Py_InitializeFromConfig",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10RemoveFileERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_",
+    "demangled": "pitaya::RemoveFile(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya15ModelSubPackage14modelGraphPathEv",
+    "demangled": "pitaya::ModelSubPackage::modelGraphPath const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVMDispatchCreateSubInterpreters",
+    "demangled": "BDPythonVMDispatchCreateSubInterpreters",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15SettingsManager15GetGlobalStableEv",
+    "demangled": "pitaya::SettingsManager::GetGlobalStable()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya4Task6AddLogERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_",
+    "demangled": "pitaya::Task::AddLog(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject7IsClassEv",
+    "demangled": "pitaya::PTYObject::IsClass()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager12GetUEFeatureERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::GetUEFeature(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Py_SetPath",
+    "demangled": "Py_SetPath",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyExc_TypeError",
+    "demangled": "PyExc_TypeError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya5ErrorC1ERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::Error::{ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10PathAppendERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_",
+    "demangled": "pitaya::PathAppend(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya11ALogWrapper9ALogWriteEjPKcS2_S2_iS2_bS2_z",
+    "demangled": "pitaya::ALogWrapper::ALogWrite(unsigned int, char const*, char const*, char const*, int, char const*, bool, char const*, ...)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya16AlgorithmPackage9isReleaseEv",
+    "demangled": "pitaya::AlgorithmPackage::isRelease const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyGILState_GetThisThreadState",
+    "demangled": "PyGILState_GetThisThreadState",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya7FEError11descriptionEv",
+    "demangled": "pitaya::FEError::description const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyTuple_GetItem",
+    "demangled": "PyTuple_GetItem",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyErr_Print",
+    "demangled": "PyErr_Print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10GetTypeStrENS_13PTYObjectTypeE",
+    "demangled": "pitaya::GetTypeStr(pitaya::PTYObjectType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fclose",
+    "demangled": "fclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya6RWLock11UnlockWriteEv",
+    "demangled": "pitaya::RWLock::UnlockWrite const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya9TaskTrace8DurationEv",
+    "demangled": "pitaya::TaskTrace::Duration const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env17GetPTYClassFormatERKNSt6__ndk110shared_ptrINS_8PTYClassEEENS_8TaskTypeERNS2_INS_5ErrorEEEb",
+    "demangled": "pitaya::Env::GetPTYClassFormat(std::__ndk1::shared_ptr<pitaya::PTYClass> const&, pitaya::TaskType, std::__ndk1::shared_ptr<pitaya::Error>&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyMemoryView_Type",
+    "demangled": "PyMemoryView_Type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyExceptionClass_Name",
+    "demangled": "PyExceptionClass_Name",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyByteArray_AsString",
+    "demangled": "PyByteArray_AsString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya16DowngradeManager16IsBridgeDisabledERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::DowngradeManager::IsBridgeDisabled const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager13GetLastNCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_ib",
+    "demangled": "pitaya::FeatureEngineeringManager::GetLastNCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya6RWLock10UnlockReadEv",
+    "demangled": "pitaya::RWLock::UnlockRead const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17kLoggerLevelErrorE",
+    "demangled": "pitaya::kLoggerLevelError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15ThreadExceptionERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_10shared_ptrINS_7PTYDictEEESD_jb",
+    "demangled": "pitaya::ThreadException(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, unsigned int, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya6TensorC1ERKS0_",
+    "demangled": "pitaya::Tensor::{ctor}(pitaya::Tensor const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya16AlgorithmPackage7isDebugEv",
+    "demangled": "pitaya::AlgorithmPackage::isDebug const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variableD1Ev",
+    "demangled": "std::__ndk1::condition_variable::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager18ExecuteUpdateAsyncERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_10shared_ptrINS_7PTYListEEERKNS1_8functionIFvbRKNS1_10unique_ptrINS_7FEErrorENS1_14default_deleteISH_EEEEEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::ExecuteUpdateAsync(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYList> const&, std::__ndk1::function<void (bool, std::__ndk1::unique_ptr<pitaya::FEError, std::__ndk1::default_delete<pitaya::FEError>> const&)> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject6IsNullEv",
+    "demangled": "pitaya::PTYObject::IsNull()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9SetupInfo3uidEv",
+    "demangled": "pitaya::SetupInfo::uid()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya7PTYList4SizeEv",
+    "demangled": "pitaya::PTYList::Size const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya19GetStringFieldValueEP7_JNIEnvP8_jobjectP9_jfieldID",
+    "demangled": "pitaya::GetStringFieldValue(_JNIEnv*, _jobject*, _jfieldID*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10JobManager14ScheduleTimingERKNSt6__ndk110shared_ptrINS_13PitayaContextEEERKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKNS2_INS_16AlgorithmPackageEEERKNS2_INS_8TaskDataEEERKNS2_INS_10TaskConfigEEERKNS2_INS_12TimingConfigEEENS_12TriggerStageERKNS1_8functionIFvbRKNS2_INS_5ErrorEEESM_SI_EEE",
+    "demangled": "pitaya::JobManager::ScheduleTiming(std::__ndk1::shared_ptr<pitaya::PitayaContext> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::AlgorithmPackage> const&, std::__ndk1::shared_ptr<pitaya::TaskData> const&, std::__ndk1::shared_ptr<pitaya::TaskConfig> const&, std::__ndk1::shared_ptr<pitaya::TimingConfig> const&, pitaya::TriggerStage, std::__ndk1::function<void (bool, std::__ndk1::shared_ptr<pitaya::Error> const&, std::__ndk1::shared_ptr<pitaya::TaskData> const&, std::__ndk1::shared_ptr<pitaya::AlgorithmPackage> const&)> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9TaskTrace14CreateSubTraceERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::TaskTrace::CreateSubTrace(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115__get_classnameEPKcb",
+    "demangled": "std::__ndk1::__get_classname(char const*, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager15CollectFeaturesERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_10shared_ptrINS_7PTYDictEEERNSA_INS_5ErrorEEERKNSA_INS_7PTYListEEEb",
+    "demangled": "pitaya::FeatureEngineeringManager::CollectFeatures(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, std::__ndk1::shared_ptr<pitaya::Error>&, std::__ndk1::shared_ptr<pitaya::PTYList> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager12ExecuteQueryERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_10unique_ptrINS1_6vectorIS7_NS5_IS7_EEEENS1_14default_deleteISD_EEEERKNSA_INS_7FEErrorENSE_ISJ_EEEEb",
+    "demangled": "pitaya::FeatureEngineeringManager::ExecuteQuery(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::unique_ptr<std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>>, std::__ndk1::default_delete<std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>>>> const&, std::__ndk1::unique_ptr<pitaya::FEError, std::__ndk1::default_delete<pitaya::FEError>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16DecompressStringERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERNS0_10shared_ptrINS_5ErrorEEE",
+    "demangled": "pitaya::DecompressString(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::Error>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyFloat_FromDouble",
+    "demangled": "PyFloat_FromDouble",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyType_Ready",
+    "demangled": "PyType_Ready",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyLong_FromLong",
+    "demangled": "PyLong_FromLong",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya22ReportDeviceStatusFuncE",
+    "demangled": "pitaya::ReportDeviceStatusFunc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya11ALogWrapper8InstanceEv",
+    "demangled": "pitaya::ALogWrapper::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager14ContainsObjectERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_b",
+    "demangled": "pitaya::FeatureEngineeringManager::ContainsObject(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya11ApplogEventERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_10shared_ptrINS_7PTYDictEEE",
+    "demangled": "pitaya::ApplogEvent(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyBytes_Size",
+    "demangled": "PyBytes_Size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_PyArg_BadArgument",
+    "demangled": "_PyArg_BadArgument",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager10AddFeatureERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKNS1_10shared_ptrINS_9PTYObjectEEES9_",
+    "demangled": "pitaya::FeatureEngineeringManager::AddFeature(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYObject> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya18takeHandlerSubPackENSt6__ndk110shared_ptrINS_16AlgorithmPackageEEERNS1_INS_17HandlerSubPackageEEE",
+    "demangled": "pitaya::takeHandlerSubPack(std::__ndk1::shared_ptr<pitaya::AlgorithmPackage>, std::__ndk1::shared_ptr<pitaya::HandlerSubPackage>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya18IsBridgeSubPackageENSt6__ndk110shared_ptrINS_18SubResourcePackageEEE",
+    "demangled": "pitaya::IsBridgeSubPackage(std::__ndk1::shared_ptr<pitaya::SubResourcePackage>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyBool_FromLong",
+    "demangled": "PyBool_FromLong",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17TaskTraceReporter10ReportTaskERKNSt6__ndk110shared_ptrINS_13PitayaContextEEERKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEESE_RKNS2_INS_10TaskConfigEEERKNS2_INS_5ErrorEEE",
+    "demangled": "pitaya::TaskTraceReporter::ReportTask(std::__ndk1::shared_ptr<pitaya::PitayaContext> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::TaskConfig> const&, std::__ndk1::shared_ptr<pitaya::Error> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9SetupInfo9SessionIdEv",
+    "demangled": "pitaya::SetupInfo::SessionId()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyList_Append",
+    "demangled": "PyList_Append",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9TimestampEv",
+    "demangled": "pitaya::Timestamp()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9TaskTrace21CreateSubTraceWithDurERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEd",
+    "demangled": "pitaya::TaskTrace::CreateSubTraceWithDur(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager19DeleteDatabaseCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_S9_RKNS1_10unique_ptrINS_7FEErrorENS1_14default_deleteISB_EEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::DeleteDatabaseCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::unique_ptr<pitaya::FEError, std::__ndk1::default_delete<pitaya::FEError>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager19InsertDatabaseCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_S9_RKNS1_10unique_ptrINS_7FEErrorENS1_14default_deleteISB_EEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::InsertDatabaseCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::unique_ptr<pitaya::FEError, std::__ndk1::default_delete<pitaya::FEError>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env26RegisterPTYObjectConverterENSt6__ndk18functionIFPvRKNS1_10shared_ptrINS_9PTYObjectEEERNS4_INS_5ErrorEEES3_bEEENS2_IFS6_S3_SB_S3_EEENS_8TaskTypeE",
+    "demangled": "pitaya::Env::RegisterPTYObjectConverter(std::__ndk1::function<void* (std::__ndk1::shared_ptr<pitaya::PTYObject> const&, std::__ndk1::shared_ptr<pitaya::Error>&, void*, bool)>, std::__ndk1::function<std::__ndk1::shared_ptr<pitaya::PTYObject> (void*, std::__ndk1::shared_ptr<pitaya::Error>&, void*)>, pitaya::TaskType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyExc_KeyError",
+    "demangled": "PyExc_KeyError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager13DeviceFeatureERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::DeviceFeature(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7PTYDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEd",
+    "demangled": "pitaya::PTYDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya16DowngradeManager16IsModuleDisabledERKNS_12DgModuleTypeE",
+    "demangled": "pitaya::DowngradeManager::IsModuleDisabled const(pitaya::DgModuleType const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12MonitorAsyncERKNSt6__ndk110shared_ptrINS_13PitayaContextEEERKNS0_12basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS1_INS_7PTYDictEEESH_SH_",
+    "demangled": "pitaya::MonitorAsync(std::__ndk1::shared_ptr<pitaya::PitayaContext> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya14CompressStringERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERNS0_10shared_ptrINS_5ErrorEEE",
+    "demangled": "pitaya::CompressString(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::Error>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager24GetStartProcessTimestampEv",
+    "demangled": "pitaya::FeatureEngineeringManager::GetStartProcessTimestamp()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVMSetExitLogFile",
+    "demangled": "BDPythonVMSetExitLogFile",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyFrame_GetCode",
+    "demangled": "PyFrame_GetCode",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env11GetPTYClassEPvNS_12PTYClassTypeENS_8TaskTypeERNSt6__ndk110shared_ptrINS_5ErrorEEEb",
+    "demangled": "pitaya::Env::GetPTYClass(void*, pitaya::PTYClassType, pitaya::TaskType, std::__ndk1::shared_ptr<pitaya::Error>&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager18PruneBusinessCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_13unordered_setIS7_NS1_4hashIS7_EENS1_8equal_toIS7_EENS5_IS7_EEEEb",
+    "demangled": "pitaya::FeatureEngineeringManager::PruneBusinessCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::unordered_set<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::hash<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::equal_to<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15ResourceManager16getDebugBusinessEv",
+    "demangled": "pitaya::ResourceManager::getDebugBusiness()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9SetupInfo9ATTStatusEv",
+    "demangled": "pitaya::SetupInfo::ATTStatus()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya4TaskC2ERKNSt6__ndk110shared_ptrINS_16AlgorithmPackageEEERKNS2_INS_8TaskDataEEERKNS2_INS_10TaskConfigEEERKNS2_INS_9TaskTraceEEERKNS1_8functionIFvRKNS2_IS0_EEEEE",
+    "demangled": "pitaya::Task::{base ctor}(std::__ndk1::shared_ptr<pitaya::AlgorithmPackage> const&, std::__ndk1::shared_ptr<pitaya::TaskData> const&, std::__ndk1::shared_ptr<pitaya::TaskConfig> const&, std::__ndk1::shared_ptr<pitaya::TaskTrace> const&, std::__ndk1::function<void (std::__ndk1::shared_ptr<pitaya::Task> const&)> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env13GetEngineInfoENS_10EngineTypeE",
+    "demangled": "pitaya::Env::GetEngineInfo(pitaya::EngineType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyTuple_New",
+    "demangled": "PyTuple_New",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1ERKS0_",
+    "demangled": "std::__ndk1::locale::{ctor}(std::__ndk1::locale const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyThreadState_Get",
+    "demangled": "PyThreadState_Get",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16HasBridgeFeatureERKNSt6__ndk110shared_ptrINS_4TaskEEENS_20CompatibilityFeatureE",
+    "demangled": "pitaya::HasBridgeFeature(std::__ndk1::shared_ptr<pitaya::Task> const&, pitaya::CompatibilityFeature)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager16GetBusinessCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_b",
+    "demangled": "pitaya::FeatureEngineeringManager::GetBusinessCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyType_Type",
+    "demangled": "PyType_Type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager20GetEnterAppTimestampEv",
+    "demangled": "pitaya::FeatureEngineeringManager::GetEnterAppTimestamp()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10FileBinaryERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERm",
+    "demangled": "pitaya::FileBinary(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned long&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyErr_Occurred",
+    "demangled": "PyErr_Occurred",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyModule_Create2",
+    "demangled": "PyModule_Create2",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "setjmp",
+    "demangled": "setjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya13PitayaContext20GetCustomTaskHandlerERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::PitayaContext::GetCustomTaskHandler(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya4Task6FinishENSt6__ndk110shared_ptrIS0_EE",
+    "demangled": "pitaya::Task::Finish(std::__ndk1::shared_ptr<pitaya::Task>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya16AlgorithmPackage8taskTypeEv",
+    "demangled": "pitaya::AlgorithmPackage::taskType const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya11ALogWrapper10ALogWriteEEPKcS2_",
+    "demangled": "pitaya::ALogWrapper::ALogWriteE(char const*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyLong_AsLong",
+    "demangled": "PyLong_AsLong",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager10GetFeatureERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS_16QueryFeatureTypeENS_17ReturnFeatureTypeEiS9_NS1_10shared_ptrINS_7PTYDictEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::GetFeature(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, pitaya::QueryFeatureType, pitaya::ReturnFeatureType, int, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyImport_ImportModule",
+    "demangled": "PyImport_ImportModule",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env15DataWrapperInitENS_8TaskTypeEPv",
+    "demangled": "pitaya::Env::DataWrapperInit(pitaya::TaskType, void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager14GetUserFeatureERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::GetUserFeature(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya5Error9SetStacksENSt6__ndk16vectorINS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS6_IS8_EEEE",
+    "demangled": "pitaya::Error::SetStacks(std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10JobManager14SetMemoryCacheENS_8TaskTypeERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_Pv",
+    "demangled": "pitaya::JobManager::SetMemoryCache(pitaya::TaskType, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17collateIcE2idE",
+    "demangled": "std::__ndk1::collate<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15PTYClassConvert9JavaToCPPEP7_JNIEnvP8_jobjectRKNSt6__ndk110shared_ptrINS_5ErrorEEE",
+    "demangled": "pitaya::PTYClassConvert::JavaToCPP(_JNIEnv*, _jobject*, std::__ndk1::shared_ptr<pitaya::Error> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyObject_CallObject",
+    "demangled": "PyObject_CallObject",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyList_SetItem",
+    "demangled": "PyList_SetItem",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12TimingConfigC1ERKNSt6__ndk110shared_ptrINS_7PTYDictEEE",
+    "demangled": "pitaya::TimingConfig::{ctor}(std::__ndk1::shared_ptr<pitaya::PTYDict> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager13CacheFeaturesERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_10shared_ptrINS_7PTYDictEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::CacheFeatures(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17PitayaTaskMonitor11GetInstanceEv",
+    "demangled": "pitaya::PitayaTaskMonitor::GetInstance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyConfig_Clear",
+    "demangled": "PyConfig_Clear",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager19GetObjectInfoForKeyERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_b",
+    "demangled": "pitaya::FeatureEngineeringManager::GetObjectInfoForKey(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyTuple_SetItem",
+    "demangled": "PyTuple_SetItem",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya21PackPyBridgeDirectoryEv",
+    "demangled": "pitaya::PackPyBridgeDirectory()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyDict_GetItemString",
+    "demangled": "PyDict_GetItemString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyMem_RawFree",
+    "demangled": "PyMem_RawFree",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya8TaskDataC1Ev",
+    "demangled": "pitaya::TaskData::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fileno",
+    "demangled": "fileno",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEi",
+    "demangled": "std::__ndk1::to_string(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVM_disable_dump_path_config",
+    "demangled": "BDPythonVM_disable_dump_path_config",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7PTYDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKNS1_10shared_ptrINS_9PTYObjectEEE",
+    "demangled": "pitaya::PTYDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYObject> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject6IsDictEv",
+    "demangled": "pitaya::PTYObject::IsDict()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Py_CheckFunctionResult",
+    "demangled": "_Py_CheckFunctionResult",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10LLMManager8InstanceEv",
+    "demangled": "pitaya::LLMManager::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7PTYDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPKc",
+    "demangled": "pitaya::PTYDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya16AlgorithmPackage14getPackageInfoEv",
+    "demangled": "pitaya::AlgorithmPackage::getPackageInfo const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Py_NoneStruct",
+    "demangled": "_Py_NoneStruct",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10LLMManager19ExecuteLLMAsyncTaskERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_S9_bS9_RKNS1_10shared_ptrINS_7PTYDictEEES9_RKNSA_INS_4TaskEEE",
+    "demangled": "pitaya::LLMManager::ExecuteLLMAsyncTask(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::Task> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118shared_timed_mutexC1Ev",
+    "demangled": "std::__ndk1::shared_timed_mutex::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVM_fatal_error_msg",
+    "demangled": "BDPythonVM_fatal_error_msg",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager8InstanceEv",
+    "demangled": "pitaya::FeatureEngineeringManager::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyFloat_AsDouble",
+    "demangled": "PyFloat_AsDouble",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya8ClearDirERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIS6_NS4_IS6_EEEE",
+    "demangled": "pitaya::ClearDir(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyArg_ParseTuple",
+    "demangled": "PyArg_ParseTuple",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17interrupt_jmp_keyE",
+    "demangled": "pitaya::interrupt_jmp_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10MakeObjectEd",
+    "demangled": "pitaya::MakeObject(double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya4Task10IsCanceledEv",
+    "demangled": "pitaya::Task::IsCanceled()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10MakeObjectEb",
+    "demangled": "pitaya::MakeObject(bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya13FormatVersiongtERKS0_",
+    "demangled": "pitaya::FormatVersion::operator> const(pitaya::FormatVersion const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya13FormatVersionC1ERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::FormatVersion::{ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Py_IncRef",
+    "demangled": "Py_IncRef",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15AssertAndReportERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_",
+    "demangled": "pitaya::AssertAndReport(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10MakeObjectEPKc",
+    "demangled": "pitaya::MakeObject(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_getspecific",
+    "demangled": "pthread_getspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya5Error12AppendStacksENSt6__ndk16vectorINS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS6_IS8_EEEE",
+    "demangled": "pitaya::Error::AppendStacks(std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager18DeviceFeatureAlignERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::DeviceFeatureAlign(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVMSafeExitCallback",
+    "demangled": "BDPythonVMSafeExitCallback",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9StrFormatEPKcz",
+    "demangled": "pitaya::StrFormat(char const*, ...)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyList_Size",
+    "demangled": "PyList_Size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya6Tensor4sizeEv",
+    "demangled": "pitaya::Tensor::size const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya16AlgorithmPackage12isPreReleaseEv",
+    "demangled": "pitaya::AlgorithmPackage::isPreRelease const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya5Error12ExceptionKeyEv",
+    "demangled": "pitaya::Error::ExceptionKey const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env10GetContextERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::Env::GetContext(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager24GetBackgroudAppTimestampEv",
+    "demangled": "pitaya::FeatureEngineeringManager::GetBackgroudAppTimestamp()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10FileStringERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEj",
+    "demangled": "pitaya::FileString(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Py_TrueStruct",
+    "demangled": "_Py_TrueStruct",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Py_DecRef",
+    "demangled": "Py_DecRef",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env18GetPTYObjectFormatERKNSt6__ndk110shared_ptrINS_9PTYObjectEEENS_8TaskTypeERNS2_INS_5ErrorEEEPvb",
+    "demangled": "pitaya::Env::GetPTYObjectFormat(std::__ndk1::shared_ptr<pitaya::PTYObject> const&, pitaya::TaskType, std::__ndk1::shared_ptr<pitaya::Error>&, void*, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya8MakeNullEv",
+    "demangled": "pitaya::MakeNull()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject4JSONEv",
+    "demangled": "pitaya::PTYObject::JSON()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9HasPrefixERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_",
+    "demangled": "pitaya::HasPrefix(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya6RWLock8LockReadEv",
+    "demangled": "pitaya::RWLock::LockRead const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager20UnregisterPyCallbackERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_",
+    "demangled": "pitaya::FeatureEngineeringManager::UnregisterPyCallback(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15ResourceManager8InstanceEv",
+    "demangled": "pitaya::ResourceManager::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10TaskConfigC1Ev",
+    "demangled": "pitaya::TaskConfig::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyDict_New",
+    "demangled": "PyDict_New",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk120__get_collation_nameEPKc",
+    "demangled": "std::__ndk1::__get_collation_name(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyBool_Type",
+    "demangled": "PyBool_Type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVMSetupSizeOptimizeFiles",
+    "demangled": "BDPythonVMSetupSizeOptimizeFiles",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyCallable_Check",
+    "demangled": "PyCallable_Check",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyDict_Next",
+    "demangled": "PyDict_Next",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager19SetCacheValueForKeyERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_RKNS1_10shared_ptrINS_9PTYObjectEEEb",
+    "demangled": "pitaya::FeatureEngineeringManager::SetCacheValueForKey(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYObject> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyObject_VectorcallMethod",
+    "demangled": "PyObject_VectorcallMethod",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyUnicode_AsUTF8",
+    "demangled": "PyUnicode_AsUTF8",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17ByteDTEngineStone6CreateEPNS_4TaskERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEbRNS_5ErrorE",
+    "demangled": "pitaya::ByteDTEngineStone::Create(pitaya::Task*, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool, pitaya::Error&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya5ErrorC1Ev",
+    "demangled": "pitaya::Error::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9AppStatus12InBackgroundEv",
+    "demangled": "pitaya::AppStatus::InBackground()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya5Error12FormatStringEv",
+    "demangled": "pitaya::Error::FormatString const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9CreateDirERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "demangled": "pitaya::CreateDir(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya22PackPyHandlerDirectoryEv",
+    "demangled": "pitaya::PackPyHandlerDirectory()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya11TaskManager8RegisterENS_8TaskTypeEPNS_12TaskExecutorE",
+    "demangled": "pitaya::TaskManager::Register(pitaya::TaskType, pitaya::TaskExecutor*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Py_SetPythonHome",
+    "demangled": "Py_SetPythonHome",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager21GetCacheValuesForKeysERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_13unordered_setIS7_NS1_4hashIS7_EENS1_8equal_toIS7_EENS5_IS7_EEEEb",
+    "demangled": "pitaya::FeatureEngineeringManager::GetCacheValuesForKeys(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::unordered_set<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::hash<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::equal_to<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVM_InternalErrorCallBack",
+    "demangled": "BDPythonVM_InternalErrorCallBack",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVM_disable_gc",
+    "demangled": "BDPythonVM_disable_gc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyErr_Fetch",
+    "demangled": "PyErr_Fetch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9TaskTrace14CreateSubTraceERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEd",
+    "demangled": "pitaya::TaskTrace::CreateSubTrace(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9TaskTrace22CreateSubTraceWithFlagERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEb",
+    "demangled": "pitaya::TaskTrace::CreateSubTraceWithFlag(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyUnicode_FromString",
+    "demangled": "PyUnicode_FromString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15ResourceManager16setDebugBusinessENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "pitaya::ResourceManager::setDebugBusiness(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16ClearCacheEngineERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "demangled": "pitaya::ClearCacheEngine(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyModule_AddObject",
+    "demangled": "PyModule_AddObject",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12DataTypeSizeENS_8DataTypeE",
+    "demangled": "pitaya::DataTypeSize(pitaya::DataType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVMSetNormalLogFile",
+    "demangled": "BDPythonVMSetNormalLogFile",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17TaskTraceReporter8InstanceEv",
+    "demangled": "pitaya::TaskTraceReporter::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyDict_SetItem",
+    "demangled": "PyDict_SetItem",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject5IsIntEv",
+    "demangled": "pitaya::PTYObject::IsInt()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16AlgorithmPackage19universalEmbeddingsEv",
+    "demangled": "pitaya::AlgorithmPackage::universalEmbeddings()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15SettingsManager11GetSettingsERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEbS9_NS_13PTYObjectTypeE",
+    "demangled": "pitaya::SettingsManager::GetSettings(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, pitaya::PTYObjectType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15ResourceManager20queryPackageBusinessERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RNS1_10shared_ptrINS_5ErrorEEEbNS_9QueryFromE",
+    "demangled": "pitaya::ResourceManager::queryPackageBusiness(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::Error>&, bool, pitaya::QueryFrom)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya11JSONPTYDictERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "demangled": "pitaya::JSONPTYDict(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya13PitayaContext15DispatchMessageERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKNS1_10shared_ptrINS_7PTYDictEEERNSA_INS_5ErrorEEE",
+    "demangled": "pitaya::PitayaContext::DispatchMessage(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, std::__ndk1::shared_ptr<pitaya::Error>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyBytes_AsString",
+    "demangled": "PyBytes_AsString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9TaskTrace4OverEv",
+    "demangled": "pitaya::TaskTrace::Over()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager19GetCacheValueForKeyERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_b",
+    "demangled": "pitaya::FeatureEngineeringManager::GetCacheValueForKey(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env25RegisterPTYClassConverterENSt6__ndk18functionIFPvRKNS1_10shared_ptrINS_8PTYClassEEERNS4_INS_5ErrorEEEbEEENS2_IFS6_S3_SB_bEEENS_8TaskTypeENS_12PTYClassTypeE",
+    "demangled": "pitaya::Env::RegisterPTYClassConverter(std::__ndk1::function<void* (std::__ndk1::shared_ptr<pitaya::PTYClass> const&, std::__ndk1::shared_ptr<pitaya::Error>&, bool)>, std::__ndk1::function<std::__ndk1::shared_ptr<pitaya::PTYClass> (void*, std::__ndk1::shared_ptr<pitaya::Error>&, bool)>, pitaya::TaskType, pitaya::PTYClassType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10JobManager14GetMemoryCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_",
+    "demangled": "pitaya::JobManager::GetMemoryCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10TaskConfigD1Ev",
+    "demangled": "pitaya::TaskConfig::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7PTYList6AppendEi",
+    "demangled": "pitaya::PTYList::Append(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject6IsBoolEv",
+    "demangled": "pitaya::PTYObject::IsBool()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyUnicode_Type",
+    "demangled": "PyUnicode_Type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyLong_AsLongLong",
+    "demangled": "PyLong_AsLongLong",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyImport_AppendInittab",
+    "demangled": "PyImport_AppendInittab",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager21GetDatabaseCacheCountERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_S9_RKNS1_10unique_ptrINS_7FEErrorENS1_14default_deleteISB_EEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::GetDatabaseCacheCount(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::unique_ptr<pitaya::FEError, std::__ndk1::default_delete<pitaya::FEError>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager21FeatureInfoForPackageERKNSt6__ndk110shared_ptrINS_16AlgorithmPackageEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::FeatureInfoForPackage(std::__ndk1::shared_ptr<pitaya::AlgorithmPackage> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyType_IsSubtype",
+    "demangled": "PyType_IsSubtype",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_key_create",
+    "demangled": "pthread_key_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya8kInfoKeyE",
+    "demangled": "pitaya::kInfoKey",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya22PackModelRootDirectoryEv",
+    "demangled": "pitaya::PackModelRootDirectory()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1Ev",
+    "demangled": "std::__ndk1::locale::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyTuple_Size",
+    "demangled": "PyTuple_Size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager19UpdateDatabaseCacheERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_S9_RKNS1_10shared_ptrINS_7PTYDictEEERKNS1_10unique_ptrINS_7FEErrorENS1_14default_deleteISG_EEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::UpdateDatabaseCache(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYDict> const&, std::__ndk1::unique_ptr<pitaya::FEError, std::__ndk1::default_delete<pitaya::FEError>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16DowngradeManager8InstanceEv",
+    "demangled": "pitaya::DowngradeManager::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyErr_Format",
+    "demangled": "PyErr_Format",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15SettingsManager8InstanceEv",
+    "demangled": "pitaya::SettingsManager::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager14GetAddonConfigERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RNS1_10shared_ptrINS_5ErrorEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::GetAddonConfig(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::Error>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7PTYList6AppendERKNSt6__ndk110shared_ptrINS_9PTYObjectEEE",
+    "demangled": "pitaya::PTYList::Append(std::__ndk1::shared_ptr<pitaya::PTYObject> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17PitayaTaskMonitor10OnTaskOverERKNSt6__ndk110shared_ptrINS_4TaskEEE",
+    "demangled": "pitaya::PitayaTaskMonitor::OnTaskOver(std::__ndk1::shared_ptr<pitaya::Task> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager18GetLaunchTimestampEv",
+    "demangled": "pitaya::FeatureEngineeringManager::GetLaunchTimestamp()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyUnicode_FromStringAndSize",
+    "demangled": "PyUnicode_FromStringAndSize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10MakeObjectEx",
+    "demangled": "pitaya::MakeObject(long long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Py_DumpTracebackThreads",
+    "demangled": "_Py_DumpTracebackThreads",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya15ModelSubPackage21privateTrainModelPathEv",
+    "demangled": "pitaya::ModelSubPackage::privateTrainModelPath const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyDict_DelItemString",
+    "demangled": "PyDict_DelItemString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya3Env8InstanceEv",
+    "demangled": "pitaya::Env::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya6TensorC1Ev",
+    "demangled": "pitaya::Tensor::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12TaskExecutorC2Ev",
+    "demangled": "pitaya::TaskExecutor::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya15ModelSubPackage15originModelPathEv",
+    "demangled": "pitaya::ModelSubPackage::originModelPath const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyLong_FromLongLong",
+    "demangled": "PyLong_FromLongLong",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager16BatchGetFeaturesERKNSt6__ndk110shared_ptrINS_7PTYDictEEE",
+    "demangled": "pitaya::FeatureEngineeringManager::BatchGetFeatures(std::__ndk1::shared_ptr<pitaya::PTYDict> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutexD1Ev",
+    "demangled": "std::__ndk1::mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_PyObject_MakeTpCall",
+    "demangled": "_PyObject_MakeTpCall",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya11TaskManager8InstanceEv",
+    "demangled": "pitaya::TaskManager::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale4nameEv",
+    "demangled": "std::__ndk1::locale::name const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya19BFDefaultVerManager11GetInstanceEv",
+    "demangled": "pitaya::BFDefaultVerManager::GetInstance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVMSetErrorLogFile",
+    "demangled": "BDPythonVMSetErrorLogFile",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEx",
+    "demangled": "std::__ndk1::to_string(long long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyInterpreterState_Head",
+    "demangled": "PyInterpreterState_Head",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7PTYDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_",
+    "demangled": "pitaya::PTYDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager18RegisterPyCallbackERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_S9_",
+    "demangled": "pitaya::FeatureEngineeringManager::RegisterPyCallback(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9AppStatus8InstanceEv",
+    "demangled": "pitaya::AppStatus::Instance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyList_GetItem",
+    "demangled": "PyList_GetItem",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya16ClearCacheEngineERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEERKNS0_6vectorIS6_NS4_IS6_EEEE",
+    "demangled": "pitaya::ClearCacheEngine(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyMemoryView_FromMemory",
+    "demangled": "PyMemoryView_FromMemory",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeD1Ev",
+    "demangled": "std::__ndk1::locale::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9use_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::use_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya20GetStringFromJStringEP7_JNIEnvP8_jstring",
+    "demangled": "pitaya::GetStringFromJString(_JNIEnv*, _jstring*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7PTYDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEi",
+    "demangled": "pitaya::PTYDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10MakeObjectERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "demangled": "pitaya::MakeObject(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex4lockEv",
+    "demangled": "std::__ndk1::mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya18SubResourcePackage15formatDirectoryEv",
+    "demangled": "pitaya::SubResourcePackage::formatDirectory const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject7IsFloatEv",
+    "demangled": "pitaya::PTYObject::IsFloat()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya25FeatureEngineeringManager12CachedEventsERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKNS1_10shared_ptrINS_7PTYListEEES9_",
+    "demangled": "pitaya::FeatureEngineeringManager::CachedEvents(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::PTYList> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9PTYObject8IsStringEv",
+    "demangled": "pitaya::PTYObject::IsString()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Py_DecodeLocale",
+    "demangled": "Py_DecodeLocale",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya4Task25IsCanceledByAlgoOnOfflineEv",
+    "demangled": "pitaya::Task::IsCanceledByAlgoOnOffline()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BD_PyInterpreterState_SetStuckCallback",
+    "demangled": "BD_PyInterpreterState_SetStuckCallback",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_PyConfig_InitCompatConfig",
+    "demangled": "_PyConfig_InitCompatConfig",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK6pitaya12ErrorWrapper18CreateJavaInstanceEP7_JNIEnvRKNSt6__ndk110shared_ptrINS_5ErrorEEE",
+    "demangled": "pitaya::ErrorWrapper::CreateJavaInstance const(_JNIEnv*, std::__ndk1::shared_ptr<pitaya::Error> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BDPythonVM_cprofile_dump_path",
+    "demangled": "BDPythonVM_cprofile_dump_path",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk111__call_onceERVmPvPFvS2_E",
+    "demangled": "std::__ndk1::__call_once(unsigned long volatile&, void*, void (*)(void*))",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendFloat",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendFloat",
+    "value": "0x560f4",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetDict",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetDict",
+    "value": "0x56658",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKci",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, int)",
+    "value": "0x4ea80",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcj",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, unsigned int)",
+    "value": "0x4ebf4",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendNull",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendNull",
+    "value": "0x56524",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya8Java2CPyEP8_jobjectPvb",
+    "demangled": "pitaya::Java2CPy(_jobject*, void*, bool)",
+    "value": "0x56da8",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcl",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, long)",
+    "value": "0x4eb78",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeCreateArray",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeCreateArray",
+    "value": "0x5603c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya14BDPyTensorTypeE",
+    "demangled": "pitaya::BDPyTensorType",
+    "value": "0x69720",
+    "size": 408,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetFloat",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetFloat",
+    "value": "0x56860",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcm",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, unsigned long)",
+    "value": "0x4ecec",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya13BDPyCVMatTypeE",
+    "demangled": "pitaya::BDPyCVMatType",
+    "value": "0x68c08",
+    "size": 408,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya15BDPyNDArrayTypeE",
+    "demangled": "pitaya::BDPyNDArrayType",
+    "value": "0x69358",
+    "size": 408,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetStr",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetStr",
+    "value": "0x56990",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetLong",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetLong",
+    "value": "0x568fc",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcS3_",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, char const*)",
+    "value": "0x4ee70",
+    "size": 360,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeCreateDict",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeCreateDict",
+    "value": "0x56570",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya11GetPyObjectERKNSt6__ndk110shared_ptrINS_9PTYObjectEEERNS1_INS_5ErrorEEEb",
+    "demangled": "pitaya::GetPyObject(std::__ndk1::shared_ptr<pitaya::PTYObject> const&, std::__ndk1::shared_ptr<pitaya::Error>&, bool)",
+    "value": "0x4d6d8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyInit_ByteDTModule",
+    "demangled": "PyInit_ByteDTModule",
+    "value": "0x4be28",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendDouble",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendDouble",
+    "value": "0x560bc",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17BDPyTVMDeviceTypeE",
+    "demangled": "pitaya::BDPyTVMDeviceType",
+    "value": "0x68e38",
+    "size": 408,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetClass",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetClass",
+    "value": "0x56a50",
+    "size": 696,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya19BDPyTVMDataInfoTypeE",
+    "demangled": "pitaya::BDPyTVMDataInfoType",
+    "value": "0x69070",
+    "size": 408,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya17PTYPyObjectStringEP7_object",
+    "demangled": "pitaya::PTYPyObjectString(_object*)",
+    "value": "0x4e918",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendDict",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendDict",
+    "value": "0x561d8",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7ToCVMatE",
+    "demangled": "pitaya::ToCVMat",
+    "value": "0x69908",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcx",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, long long)",
+    "value": "0x4eafc",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyInit_ByteNNModule",
+    "demangled": "PyInit_ByteNNModule",
+    "value": "0x2451c",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendArray",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendArray",
+    "value": "0x5624c",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcS1_",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, _object*)",
+    "value": "0x4e998",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcy",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, unsigned long long)",
+    "value": "0x4ec70",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PyInit_DataWrapperModule",
+    "demangled": "PyInit_DataWrapperModule",
+    "value": "0x4f9ac",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetBool",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetBool",
+    "value": "0x5672c",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya10GetPTYDictEP7_objectRNSt6__ndk110shared_ptrINS_5ErrorEEE",
+    "demangled": "pitaya::GetPTYDict(_object*, std::__ndk1::shared_ptr<pitaya::Error>&)",
+    "value": "0x4e788",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetArray",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetArray",
+    "value": "0x56574",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendLong",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendLong",
+    "value": "0x56080",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya18BDPyMemoryViewTypeE",
+    "demangled": "pitaya::BDPyMemoryViewType",
+    "value": "0x68950",
+    "size": 408,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetDouble",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetDouble",
+    "value": "0x567c4",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya14EnvGetPyObjectERKNSt6__ndk110shared_ptrINS_9PTYObjectEEERNS1_INS_5ErrorEEEPvb",
+    "demangled": "pitaya::EnvGetPyObject(std::__ndk1::shared_ptr<pitaya::PTYObject> const&, std::__ndk1::shared_ptr<pitaya::Error>&, void*, bool)",
+    "value": "0x4db38",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetNull",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetNull",
+    "value": "0x56d08",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcRKNSt6__ndk112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x4ede0",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya7ToPyMatE",
+    "demangled": "pitaya::ToPyMat",
+    "value": "0x69910",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya9CVMat_NewEv",
+    "demangled": "pitaya::CVMat_New()",
+    "value": "0x50e8c",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcb",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, bool)",
+    "value": "0x4ea04",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_modules_PyVMLoader_nativeInit",
+    "demangled": "Java_com_bytedance_pitaya_modules_PyVMLoader_nativeInit",
+    "value": "0x56ff4",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6pitaya4TaskD2Ev",
+    "demangled": "pitaya::Task::{base dtor}()",
+    "value": "0x4ca3c",
+    "size": 1136,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN6pitaya12PTYPyDictSetEP7_objectPKcd",
+    "demangled": "pitaya::PTYPyDictSet(_object*, char const*, double)",
+    "value": "0x4ed68",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendStr",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendStr",
+    "value": "0x56130",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendBool",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendBool",
+    "value": "0x56044",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendPTYClass",
+    "demangled": "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendPTYClass",
+    "value": "0x562c0",
+    "size": 612,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

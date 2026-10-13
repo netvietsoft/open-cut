@@ -1,0 +1,1498 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811HandleScopeC1EPNS_7IsolateE",
+    "demangled": "v8::HandleScope::{ctor}(v8::Isolate*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v88TryCatchC1EPNS_7IsolateE",
+    "demangled": "v8::TryCatch::{ctor}(v8::Isolate*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86String11NewFromUtf8EPNS_7IsolateEPKcNS_13NewStringTypeEi",
+    "demangled": "v8::String::NewFromUtf8(v8::Isolate*, char const*, v8::NewStringType, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ScriptCompiler20CompileUnboundScriptEPNS_7IsolateEPNS0_6SourceENS0_14CompileOptionsENS0_13NoCacheReasonE",
+    "demangled": "v8::ScriptCompiler::CompileUnboundScript(v8::Isolate*, v8::ScriptCompiler::Source*, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ScriptCompiler15CreateCodeCacheENS_5LocalINS_13UnboundScriptEEE",
+    "demangled": "v8::ScriptCompiler::CreateCodeCache(v8::Local<v8::UnboundScript>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v88TryCatchD1Ev",
+    "demangled": "v8::TryCatch::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811HandleScopeD1Ev",
+    "demangled": "v8::HandleScope::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_pure_virtual",
+    "demangled": "__cxa_pure_virtual",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate5EnterEv",
+    "demangled": "v8::Isolate::Enter()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Context5EnterEv",
+    "demangled": "v8::Context::Enter()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ScriptCompiler20ConsumeCodeCacheTaskD1Ev",
+    "demangled": "v8::ScriptCompiler::ConsumeCodeCacheTask::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Context4ExitEv",
+    "demangled": "v8::Context::Exit()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate4ExitEv",
+    "demangled": "v8::Isolate::Exit()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ScriptCompiler10CachedDataD1Ev",
+    "demangled": "v8::ScriptCompiler::CachedData::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v812ScriptOrigin24VerifyHostDefinedOptionsEv",
+    "demangled": "v8::ScriptOrigin::VerifyHostDefinedOptions const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_thread_atexit",
+    "demangled": "__cxa_thread_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811CpuProfiler7DisposeEv",
+    "demangled": "v8::CpuProfiler::Dispose()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811CpuProfiler3NewEPNS_7IsolateENS_22CpuProfilingNamingModeENS_23CpuProfilingLoggingModeE",
+    "demangled": "v8::CpuProfiler::New(v8::Isolate*, v8::CpuProfilingNamingMode, v8::CpuProfilingLoggingMode)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811CpuProfiler14StartProfilingENS_5LocalINS_6StringEEEb",
+    "demangled": "v8::CpuProfiler::StartProfiling(v8::Local<v8::String>, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811CpuProfiler13StopProfilingENS_5LocalINS_6StringEEE",
+    "demangled": "v8::CpuProfiler::StopProfiling(v8::Local<v8::String>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v810CpuProfile12GetStartTimeEv",
+    "demangled": "v8::CpuProfile::GetStartTime const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v810CpuProfile10GetEndTimeEv",
+    "demangled": "v8::CpuProfile::GetEndTime const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v810CpuProfile15GetSamplesCountEv",
+    "demangled": "v8::CpuProfile::GetSamplesCount const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v810CpuProfile9GetSampleEi",
+    "demangled": "v8::CpuProfile::GetSample const(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v814CpuProfileNode9GetNodeIdEv",
+    "demangled": "v8::CpuProfileNode::GetNodeId const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v810CpuProfile18GetSampleTimestampEi",
+    "demangled": "v8::CpuProfile::GetSampleTimestamp const(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v810CpuProfile14GetTopDownRootEv",
+    "demangled": "v8::CpuProfile::GetTopDownRoot const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v810CpuProfile6DeleteEv",
+    "demangled": "v8::CpuProfile::Delete()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811CpuProfiler19SetSamplingIntervalEi",
+    "demangled": "v8::CpuProfiler::SetSamplingInterval(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v814CpuProfileNode18GetFunctionNameStrEv",
+    "demangled": "v8::CpuProfileNode::GetFunctionNameStr const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v814CpuProfileNode24GetScriptResourceNameStrEv",
+    "demangled": "v8::CpuProfileNode::GetScriptResourceNameStr const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v814CpuProfileNode13GetLineNumberEv",
+    "demangled": "v8::CpuProfileNode::GetLineNumber const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v814CpuProfileNode15GetColumnNumberEv",
+    "demangled": "v8::CpuProfileNode::GetColumnNumber const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEi",
+    "demangled": "std::__ndk1::to_string(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v814CpuProfileNode11GetScriptIdEv",
+    "demangled": "v8::CpuProfileNode::GetScriptId const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v814CpuProfileNode16GetChildrenCountEv",
+    "demangled": "v8::CpuProfileNode::GetChildrenCount const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v814CpuProfileNode8GetChildEi",
+    "demangled": "v8::CpuProfileNode::GetChild const(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate7DisposeEv",
+    "demangled": "v8::Isolate::Dispose()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7logging14GetMinLogLevelEv",
+    "demangled": "lynx::base::logging::GetMinLogLevel()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7logging9LogStreamlsEPKc",
+    "demangled": "lynx::base::logging::LogStream::operator<<(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7logging10LogMessageD2Ev",
+    "demangled": "lynx::base::logging::LogMessage::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v88platform18NewDefaultPlatformEiNS0_15IdleTaskSupportENS0_21InProcessStackDumpingENSt6__ndk110unique_ptrINS_17TracingControllerENS3_14default_deleteIS5_EEEE",
+    "demangled": "v8::platform::NewDefaultPlatform(int, v8::platform::IdleTaskSupport, v8::platform::InProcessStackDumping, std::__ndk1::unique_ptr<v8::TracingController, std::__ndk1::default_delete<v8::TracingController>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate12CreateParamsC1EPNS_8PlatformE",
+    "demangled": "v8::Isolate::CreateParams::{ctor}(v8::Platform*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811ArrayBuffer9Allocator19NewDefaultAllocatorEv",
+    "demangled": "v8::ArrayBuffer::Allocator::NewDefaultAllocator()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate3NewERKNS0_12CreateParamsE",
+    "demangled": "v8::Isolate::New(v8::Isolate::CreateParams const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4tasm7LynxEnv11GetInstanceEv",
+    "demangled": "lynx::tasm::LynxEnv::GetInstance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4tasm7LynxEnv13GetV8HeapSizeEv",
+    "demangled": "lynx::tasm::LynxEnv::GetV8HeapSize()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7logging9LogStreamlsEl",
+    "demangled": "lynx::base::logging::LogStream::operator<<(long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate17UpdateMaxHeapSizeEm",
+    "demangled": "v8::Isolate::UpdateMaxHeapSize(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate12CreateParamsD1Ev",
+    "demangled": "v8::Isolate::CreateParams::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7logging10LogMessageC2EPKcii",
+    "demangled": "lynx::base::logging::LogMessage::{base ctor}(char const*, int, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk111__call_onceERVmPvPFvS2_E",
+    "demangled": "std::__ndk1::__call_once(unsigned long volatile&, void*, void (*)(void*))",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v82V813InitializeICUEPKc",
+    "demangled": "v8::V8::InitializeICU(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v82V818InitializePlatformEPNS_8PlatformE",
+    "demangled": "v8::V8::InitializePlatform(v8::Platform*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v82V810InitializeEi",
+    "demangled": "v8::V8::Initialize(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate41SetCaptureStackTraceForUncaughtExceptionsEbiNS_10StackTrace17StackTraceOptionsE",
+    "demangled": "v8::Isolate::SetCaptureStackTraceForUncaughtExceptions(bool, int, v8::StackTrace::StackTraceOptions)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Context3NewEPNS_7IsolateEPNS_22ExtensionConfigurationENS_10MaybeLocalINS_14ObjectTemplateEEENS5_INS_5ValueEEENS_33DeserializeInternalFieldsCallbackEPNS_14MicrotaskQueueE",
+    "demangled": "v8::Context::New(v8::Isolate*, v8::ExtensionConfiguration*, v8::MaybeLocal<v8::ObjectTemplate>, v8::MaybeLocal<v8::Value>, v8::DeserializeInternalFieldsCallback, v8::MicrotaskQueue*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v812api_internal18GlobalizeReferenceEPNS_8internal7IsolateEPm",
+    "demangled": "v8::api_internal::GlobalizeReference(v8::internal::Isolate*, unsigned long*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v812api_internal13DisposeGlobalEPm",
+    "demangled": "v8::api_internal::DisposeGlobal(unsigned long*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811HandleScope12CreateHandleEPNS_8internal7IsolateEm",
+    "demangled": "v8::HandleScope::CreateHandle(v8::internal::Isolate*, unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper7Runtime18reportJSIExceptionERKNS0_12JSIExceptionE",
+    "demangled": "lynx::piper::Runtime::reportJSIException(lynx::piper::JSIException const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v88TryCatch9HasCaughtEv",
+    "demangled": "v8::TryCatch::HasCaught const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v88TryCatch9ExceptionEv",
+    "demangled": "v8::TryCatch::Exception const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper7JSErrorC2ERNS0_7RuntimeEONS0_5ValueE",
+    "demangled": "lynx::piper::JSError::{base ctor}(lynx::piper::Runtime&, lynx::piper::Value&&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper5ValueD1Ev",
+    "demangled": "lynx::piper::Value::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Context10GetIsolateEv",
+    "demangled": "v8::Context::GetIsolate()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value14IsStringObjectEv",
+    "demangled": "v8::Value::IsStringObject const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86String9Utf8ValueC1EPNS_7IsolateENS_5LocalINS_5ValueEEE",
+    "demangled": "v8::String::Utf8Value::{ctor}(v8::Isolate*, v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86String9Utf8ValueD1Ev",
+    "demangled": "v8::String::Utf8Value::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value8IsNumberEv",
+    "demangled": "v8::Value::IsNumber const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value11NumberValueENS_5LocalINS_7ContextEEE",
+    "demangled": "v8::Value::NumberValue const(v8::Local<v8::Context>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value9IsBooleanEv",
+    "demangled": "v8::Value::IsBoolean const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value12BooleanValueEPNS_7IsolateE",
+    "demangled": "v8::Value::BooleanValue const(v8::Isolate*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value8ToStringENS_5LocalINS_7ContextEEE",
+    "demangled": "v8::Value::ToString const(v8::Local<v8::Context>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value8IsObjectEv",
+    "demangled": "v8::Value::IsObject const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value8ToObjectENS_5LocalINS_7ContextEEE",
+    "demangled": "v8::Value::ToObject const(v8::Local<v8::Context>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value8IsSymbolEv",
+    "demangled": "v8::Value::IsSymbol const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate17GetCurrentContextEv",
+    "demangled": "v8::Isolate::GetCurrentContext()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object3NewEPNS_7IsolateE",
+    "demangled": "v8::Object::New(v8::Isolate*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v820EscapableHandleScopeC1EPNS_7IsolateE",
+    "demangled": "v8::EscapableHandleScope::{ctor}(v8::Isolate*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Context6GlobalEv",
+    "demangled": "v8::Context::Global()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object14CallAsFunctionENS_5LocalINS_7ContextEEENS1_INS_5ValueEEEiPS5_",
+    "demangled": "v8::Object::CallAsFunction(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811HandleScopeD2Ev",
+    "demangled": "v8::HandleScope::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object17CallAsConstructorENS_5LocalINS_7ContextEEEiPNS1_INS_5ValueEEE",
+    "demangled": "v8::Object::CallAsConstructor(v8::Local<v8::Context>, int, v8::Local<v8::Value>*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v89Exception5ErrorENS_5LocalINS_6StringEEE",
+    "demangled": "v8::Exception::Error(v8::Local<v8::String>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object3SetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEES5_",
+    "demangled": "v8::Object::Set(v8::Local<v8::Context>, v8::Local<v8::Value>, v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate14ThrowExceptionENS_5LocalINS_5ValueEEE",
+    "demangled": "v8::Isolate::ThrowException(v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper5ValueC1EOS1_",
+    "demangled": "lynx::piper::Value::{ctor}(lynx::piper::Value&&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v812api_internal12ToLocalEmptyEv",
+    "demangled": "v8::api_internal::ToLocalEmpty()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v812api_internal9ClearWeakEPm",
+    "demangled": "v8::api_internal::ClearWeak(unsigned long*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v812api_internal17FromJustIsNothingEv",
+    "demangled": "v8::api_internal::FromJustIsNothing()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v820EscapableHandleScope6EscapeEPm",
+    "demangled": "v8::EscapableHandleScope::Escape(unsigned long*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ObjectTemplate3NewEPNS_7IsolateENS_5LocalINS_16FunctionTemplateEEE",
+    "demangled": "v8::ObjectTemplate::New(v8::Isolate*, v8::Local<v8::FunctionTemplate>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ObjectTemplate21SetInternalFieldCountEi",
+    "demangled": "v8::ObjectTemplate::SetInternalFieldCount(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ObjectTemplate24SetCallAsFunctionHandlerEPFvRKNS_20FunctionCallbackInfoINS_5ValueEEEENS_5LocalIS2_EE",
+    "demangled": "v8::ObjectTemplate::SetCallAsFunctionHandler(void (*)(v8::FunctionCallbackInfo<v8::Value> const&), v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ObjectTemplate11NewInstanceENS_5LocalINS_7ContextEEE",
+    "demangled": "v8::ObjectTemplate::NewInstance(v8::Local<v8::Context>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object32SetAlignedPointerInInternalFieldEiPv",
+    "demangled": "v8::Object::SetAlignedPointerInInternalField(int, void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Private3NewEPNS_7IsolateENS_5LocalINS_6StringEEE",
+    "demangled": "v8::Private::New(v8::Isolate*, v8::Local<v8::String>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object10SetPrivateENS_5LocalINS_7ContextEEENS1_INS_7PrivateEEENS1_INS_5ValueEEE",
+    "demangled": "v8::Object::SetPrivate(v8::Local<v8::Context>, v8::Local<v8::Private>, v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object3GetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEE",
+    "demangled": "v8::Object::Get(v8::Local<v8::Context>, v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object12SetPrototypeENS_5LocalINS_7ContextEEENS1_INS_5ValueEEE",
+    "demangled": "v8::Object::SetPrototype(v8::Local<v8::Context>, v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object12GetPrototypeEv",
+    "demangled": "v8::Object::GetPrototype()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object38SlowGetAlignedPointerFromInternalFieldEi",
+    "demangled": "v8::Object::SlowGetAlignedPointerFromInternalField(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count4lockEv",
+    "demangled": "std::__ndk1::__shared_weak_count::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v812api_internal8MakeWeakEPmPvPFvRKNS_16WeakCallbackInfoIvEEENS_16WeakCallbackTypeE",
+    "demangled": "v8::api_internal::MakeWeak(unsigned long*, void*, void (*)(v8::WeakCallbackInfo<void> const&), v8::WeakCallbackType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ObjectTemplate10SetHandlerERKNS_33NamedPropertyHandlerConfigurationE",
+    "demangled": "v8::ObjectTemplate::SetHandler(v8::NamedPropertyHandlerConfiguration const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper7Runtime19ClearHostContainersEv",
+    "demangled": "lynx::piper::Runtime::ClearHostContainers()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7logging9LogStreamlsERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEE",
+    "demangled": "lynx::base::logging::LogStream::operator<<(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper5cache13TryGetCacheV8ERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_lNS2_10unique_ptrINS1_14CacheGeneratorENS2_14default_deleteISC_EEEE",
+    "demangled": "lynx::piper::cache::TryGetCacheV8(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, long, std::__ndk1::unique_ptr<lynx::piper::cache::CacheGenerator, std::__ndk1::default_delete<lynx::piper::cache::CacheGenerator>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ScriptCompiler10CachedDataC1EPKhiNS1_12BufferPolicyE",
+    "demangled": "v8::ScriptCompiler::CachedData::{ctor}(unsigned char const*, int, v8::ScriptCompiler::CachedData::BufferPolicy)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v814ScriptCompiler7CompileENS_5LocalINS_7ContextEEEPNS0_6SourceENS0_14CompileOptionsENS0_13NoCacheReasonE",
+    "demangled": "v8::ScriptCompiler::Compile(v8::Local<v8::Context>, v8::ScriptCompiler::Source*, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper5cache24RequestCacheGenerationV8ERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_RKNS2_10shared_ptrIKNS0_6BufferEEENS2_10unique_ptrINS1_14CacheGeneratorENS2_14default_deleteISI_EEEEb",
+    "demangled": "lynx::piper::cache::RequestCacheGenerationV8(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<lynx::piper::Buffer const> const&, std::__ndk1::unique_ptr<lynx::piper::cache::CacheGenerator, std::__ndk1::default_delete<lynx::piper::cache::CacheGenerator>>, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Script7CompileENS_5LocalINS_7ContextEEENS1_INS_6StringEEEPNS_12ScriptOriginE",
+    "demangled": "v8::Script::Compile(v8::Local<v8::Context>, v8::Local<v8::String>, v8::ScriptOrigin*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Script3RunENS_5LocalINS_7ContextEEE",
+    "demangled": "v8::Script::Run(v8::Local<v8::Context>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value6EqualsENS_5LocalINS_7ContextEEENS1_IS0_EE",
+    "demangled": "v8::Value::Equals const(v8::Local<v8::Context>, v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx5piper5Value8toStringERNS0_7RuntimeE",
+    "demangled": "lynx::piper::Value::toString const(lynx::piper::Runtime&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object3HasENS_5LocalINS_7ContextEEENS1_INS_5ValueEEE",
+    "demangled": "v8::Object::Has(v8::Local<v8::Context>, v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value7IsArrayEv",
+    "demangled": "v8::Value::IsArray const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value7IsProxyEv",
+    "demangled": "v8::Value::IsProxy const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v85Proxy9GetTargetEv",
+    "demangled": "v8::Proxy::GetTarget()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value8IsUint32Ev",
+    "demangled": "v8::Value::IsUint32 const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value13IsArrayBufferEv",
+    "demangled": "v8::Value::IsArrayBuffer const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811ArrayBuffer15GetBackingStoreEv",
+    "demangled": "v8::ArrayBuffer::GetBackingStore()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v812BackingStore4DataEv",
+    "demangled": "v8::BackingStore::Data const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v811ArrayBuffer10ByteLengthEv",
+    "demangled": "v8::ArrayBuffer::ByteLength const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value10IsFunctionEv",
+    "demangled": "v8::Value::IsFunction const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object18InternalFieldCountEv",
+    "demangled": "v8::Object::InternalFieldCount()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object16GetPropertyNamesENS_5LocalINS_7ContextEEE",
+    "demangled": "v8::Object::GetPropertyNames(v8::Local<v8::Context>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Array6LengthEv",
+    "demangled": "v8::Array::Length const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object3GetENS_5LocalINS_7ContextEEEj",
+    "demangled": "v8::Object::Get(v8::Local<v8::Context>, unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v85Array3NewEPNS_7IsolateEi",
+    "demangled": "v8::Array::New(v8::Isolate*, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811ArrayBuffer3NewEPNS_7IsolateEm",
+    "demangled": "v8::ArrayBuffer::New(v8::Isolate*, unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811ArrayBuffer15NewBackingStoreEPvmPFvS1_mS1_ES1_",
+    "demangled": "v8::ArrayBuffer::NewBackingStore(void*, unsigned long, void (*)(void*, unsigned long, void*), void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v811ArrayBuffer3NewEPNS_7IsolateENSt6__ndk110shared_ptrINS_12BackingStoreEEE",
+    "demangled": "v8::ArrayBuffer::New(v8::Isolate*, std::__ndk1::shared_ptr<v8::BackingStore>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v812BackingStore12EmptyDeleterEPvmS1_",
+    "demangled": "v8::BackingStore::EmptyDeleter(void*, unsigned long, void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value11Uint32ValueENS_5LocalINS_7ContextEEE",
+    "demangled": "v8::Value::Uint32Value const(v8::Local<v8::Context>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object3SetENS_5LocalINS_7ContextEEEjNS1_INS_5ValueEEE",
+    "demangled": "v8::Object::Set(v8::Local<v8::Context>, unsigned int, v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Object10HasPrivateENS_5LocalINS_7ContextEEENS1_INS_7PrivateEEE",
+    "demangled": "v8::Object::HasPrivate(v8::Local<v8::Context>, v8::Local<v8::Private>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK2v85Value12StrictEqualsENS_5LocalIS0_EE",
+    "demangled": "v8::Value::StrictEquals const(v8::Local<v8::Value>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v86Number3NewEPNS_7IsolateEd",
+    "demangled": "v8::Number::New(v8::Isolate*, double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v87Isolate21LowMemoryNotificationEv",
+    "demangled": "v8::Isolate::LowMemoryNotification()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper7Runtime15instrumentationEv",
+    "demangled": "lynx::piper::Runtime::instrumentation()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memchr",
+    "demangled": "memchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper18PreparedJavaScriptD2Ev",
+    "demangled": "lynx::piper::PreparedJavaScript::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN2v812BackingStoreD1Ev",
+    "demangled": "v8::BackingStore::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4lynx5piper7RuntimeE",
+    "demangled": "vtable for lynx::piper::Runtime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx7runtime29RegisterExternalRuntimeHelperEPNS0_17LynxRuntimeHelperE",
+    "demangled": "lynx::runtime::RegisterExternalRuntimeHelper(lynx::runtime::LynxRuntimeHelper*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Z29RegisterV8RuntimeProxyFactoryPN4lynx5piper25NapiRuntimeProxyV8FactoryE",
+    "demangled": "RegisterV8RuntimeProxyFactory(lynx::piper::NapiRuntimeProxyV8Factory*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper16NapiRuntimeProxyC2EPNS_7runtime16TemplateDelegateE",
+    "demangled": "lynx::piper::NapiRuntimeProxy::{base ctor}(lynx::runtime::TemplateDelegate*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Z14napi_attach_v8P10napi_env__N2v85LocalINS1_7ContextEEE",
+    "demangled": "napi_attach_v8(napi_env__*, v8::Local<v8::Context>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper16NapiRuntimeProxy6DetachEv",
+    "demangled": "lynx::piper::NapiRuntimeProxy::Detach()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Z14napi_detach_v8P10napi_env__",
+    "demangled": "napi_detach_v8(napi_env__*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper16NapiRuntimeProxy11SetupLoaderEv",
+    "demangled": "lynx::piper::NapiRuntimeProxy::SetupLoader()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper16NapiRuntimeProxy12RemoveLoaderEv",
+    "demangled": "lynx::piper::NapiRuntimeProxy::RemoveLoader()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper16NapiRuntimeProxy27SetUncaughtExceptionHandlerEv",
+    "demangled": "lynx::piper::NapiRuntimeProxy::SetUncaughtExceptionHandler()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5piper16NapiRuntimeProxyD2Ev",
+    "demangled": "lynx::piper::NapiRuntimeProxy::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__emutls_get_address",
+    "demangled": "__emutls_get_address",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZZN4lynx5piper7Runtime22AddPrefixToUrlIfNeededERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEE12kUrlLynxCore",
+    "demangled": "_ZZN4lynx5piper7Runtime22AddPrefixToUrlIfNeededERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEE12kUrlLynxCore",
+    "value": "0x6820",
+    "size": 10,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4lynx4base12ObserverList11AddObserverEPNS0_8ObserverE",
+    "demangled": "lynx::base::ObserverList::AddObserver(lynx::base::Observer*)",
+    "value": "0x133a0",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base12ObserverList14RemoveObserverEPNS0_8ObserverE",
+    "demangled": "lynx::base::ObserverList::RemoveObserver(lynx::base::Observer*)",
+    "value": "0x133e0",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base12ObserverList15ForEachObserverEv",
+    "demangled": "lynx::base::ObserverList::ForEachObserver()",
+    "value": "0x13538",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x13590",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x1c090",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZZN4lynx5piper7Runtime22AddPrefixToUrlIfNeededERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEE8kUrlHost",
+    "demangled": "_ZZN4lynx5piper7Runtime22AddPrefixToUrlIfNeededERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEE8kUrlHost",
+    "value": "0x682a",
+    "size": 12,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x1c090",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x1c0d0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  }
+]

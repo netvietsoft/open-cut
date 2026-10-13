@@ -1,0 +1,514 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlopen",
+    "demangled": "dlopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlsym",
+    "demangled": "dlsym",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10LogMessageD2Ev",
+    "demangled": "lynx::animax::LogMessage::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo8SetWidthEj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetWidth(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo9SetHeightEj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetHeight(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo11SetBitDepthEj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetBitDepth(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo12SetYUVPixFmtENS0_9YUVPixFmtE",
+    "demangled": "lynx::animax::YUVFrameInfo::SetYUVPixFmt(lynx::animax::YUVPixFmt)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo11SetLineSizeEjj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetLineSize(unsigned int, unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo12SetLineWidthEjj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetLineWidth(unsigned int, unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo17UpdateChannelDataEjPKh",
+    "demangled": "lynx::animax::YUVFrameInfo::UpdateChannelData(unsigned int, unsigned char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10LogMessageC2EPKciNS0_14AnimaXLogLevelE",
+    "demangled": "lynx::animax::LogMessage::{base ctor}(char const*, int, lynx::animax::AnimaXLogLevel)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk18ios_base6getlocEv",
+    "demangled": "std::__ndk1::ios_base::getloc const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeD1Ev",
+    "demangled": "std::__ndk1::locale::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9use_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::use_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base5clearEj",
+    "demangled": "std::__ndk1::ios_base::clear(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt18uncaught_exceptionv",
+    "demangled": "std::uncaught_exception()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15ctypeIcE2idE",
+    "demangled": "std::__ndk1::ctype<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDeleteTextures",
+    "demangled": "glDeleteTextures",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20ScopedGLResetRestoreC1Ej",
+    "demangled": "lynx::animax::ScopedGLResetRestore::{ctor}(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo8GetWidthEv",
+    "demangled": "lynx::animax::YUVFrameInfo::GetWidth const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo9GetHeightEv",
+    "demangled": "lynx::animax::YUVFrameInfo::GetHeight const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGenTextures",
+    "demangled": "glGenTextures",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGetError",
+    "demangled": "glGetError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo19GetChannelDataWidthEj",
+    "demangled": "lynx::animax::YUVFrameInfo::GetChannelDataWidth const(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo20GetChannelDataHeightEj",
+    "demangled": "lynx::animax::YUVFrameInfo::GetChannelDataHeight const(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo14GetChannelDataEj",
+    "demangled": "lynx::animax::YUVFrameInfo::GetChannelData const(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glBindTexture",
+    "demangled": "glBindTexture",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glTexParameteri",
+    "demangled": "glTexParameteri",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glTexImage2D",
+    "demangled": "glTexImage2D",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glTexSubImage2D",
+    "demangled": "glTexSubImage2D",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20ScopedGLResetRestoreD1Ev",
+    "demangled": "lynx::animax::ScopedGLResetRestore::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_baseC1Ev",
+    "demangled": "std::__ndk1::__shared_mutex_base::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variableD1Ev",
+    "demangled": "std::__ndk1::condition_variable::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutexD1Ev",
+    "demangled": "std::__ndk1::mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base4lockEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base6unlockEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base11lock_sharedEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::lock_shared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base13unlock_sharedEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::unlock_shared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax20AnimaXAbilityAndroid21DisableByteVC1DecoderEv",
+    "demangled": "lynx::animax::AnimaXAbilityAndroid::DisableByteVC1Decoder const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax17VideoAssetAndroid12IsHEVCFormatEv",
+    "demangled": "lynx::animax::VideoAssetAndroid::IsHEVCFormat const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax17VideoAssetAndroid23IsSupportDecodeBySystemEb",
+    "demangled": "lynx::animax::VideoAssetAndroid::IsSupportDecodeBySystem const(bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustomC1ENSt6__ndk110unique_ptrINS0_18VideoDecoderCustomENS2_14default_deleteIS4_EEEE",
+    "demangled": "lynx::animax::VideoPlayerCustom::{ctor}(std::__ndk1::unique_ptr<lynx::animax::VideoDecoderCustom, std::__ndk1::default_delete<lynx::animax::VideoDecoderCustom>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4lynx6animax21VideoShaderYUVAndroidE",
+    "demangled": "vtable for lynx::animax::VideoShaderYUVAndroid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax27RegisterVideoPlayerProviderEPKcNSt6__ndk110shared_ptrINS0_19VideoPlayerProviderEEE",
+    "demangled": "lynx::animax::RegisterVideoPlayerProvider(char const*, std::__ndk1::shared_ptr<lynx::animax::VideoPlayerProvider>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x59cc",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0xc000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x84d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0xc200",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  }
+]

@@ -1,0 +1,866 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6primjs7general7logging17GetMinAllLogLevelEv",
+    "demangled": "primjs::general::logging::GetMinAllLogLevel()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6primjs7general7logging10LogMessageC1EPKcii",
+    "demangled": "primjs::general::logging::LogMessage::{ctor}(char const*, int, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6primjs7general7logging10LogMessage6streamEv",
+    "demangled": "primjs::general::logging::LogMessage::stream()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6primjs7general7logging10LogMessageD1Ev",
+    "demangled": "primjs::general::logging::LogMessage::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__vsnprintf_chk",
+    "demangled": "__vsnprintf_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk18ios_base6getlocEv",
+    "demangled": "std::__ndk1::ios_base::getloc const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeD1Ev",
+    "demangled": "std::__ndk1::locale::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9use_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::use_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base5clearEj",
+    "demangled": "std::__ndk1::ios_base::clear(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt18uncaught_exceptionv",
+    "demangled": "std::uncaught_exception()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15ctypeIcE2idE",
+    "demangled": "std::__ndk1::ctype<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Z18GetSettingsWithKeyPKc",
+    "demangled": "GetSettingsWithKey(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN11HandleScopeC1EP12LEPUSContextPv10HandleType",
+    "demangled": "HandleScope::{ctor}(LEPUSContext*, void*, HandleType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SetOpaque",
+    "demangled": "LEPUS_SetOpaque",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN11HandleScope10PushHandleEPv10HandleType",
+    "demangled": "HandleScope::PushHandle(void*, HandleType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetGlobalObject",
+    "demangled": "LEPUS_GetGlobalObject",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_DefinePropertyValueStr",
+    "demangled": "LEPUS_DefinePropertyValueStr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsGCMode",
+    "demangled": "LEPUS_IsGCMode",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_FreeValue",
+    "demangled": "LEPUS_FreeValue",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN11HandleScopeD1Ev",
+    "demangled": "HandleScope::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetRuntime",
+    "demangled": "LEPUS_GetRuntime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsRegisteredClass",
+    "demangled": "LEPUS_IsRegisteredClass",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewClass",
+    "demangled": "LEPUS_NewClass",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewCFunction2",
+    "demangled": "LEPUS_NewCFunction2",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetClassID",
+    "demangled": "LEPUS_GetClassID",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetOpaque",
+    "demangled": "LEPUS_GetOpaque",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetPropertyStr",
+    "demangled": "LEPUS_GetPropertyStr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToFloat64",
+    "demangled": "LEPUS_ToFloat64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CheckObjectCtx",
+    "demangled": "CheckObjectCtx",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HEAP_TAG_INNER",
+    "demangled": "HEAP_TAG_INNER",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewObject",
+    "demangled": "LEPUS_NewObject",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SetPropertyFunctionList",
+    "demangled": "LEPUS_SetPropertyFunctionList",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SetClassProto",
+    "demangled": "LEPUS_SetClassProto",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewObjectClass",
+    "demangled": "LEPUS_NewObjectClass",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewString",
+    "demangled": "LEPUS_NewString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_DefinePropertyValueUint32",
+    "demangled": "LEPUS_DefinePropertyValueUint32",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToObject",
+    "demangled": "LEPUS_ToObject",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsFunction",
+    "demangled": "LEPUS_IsFunction",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToInt32",
+    "demangled": "LEPUS_ToInt32",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToBigInt64",
+    "demangled": "LEPUS_ToBigInt64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsNumber",
+    "demangled": "LEPUS_IsNumber",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ThrowTypeError",
+    "demangled": "LEPUS_ThrowTypeError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToInt64",
+    "demangled": "LEPUS_ToInt64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_Call",
+    "demangled": "LEPUS_Call",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsGCModeRT",
+    "demangled": "LEPUS_IsGCModeRT",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_FreeValueRT",
+    "demangled": "LEPUS_FreeValueRT",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_FreeCString",
+    "demangled": "LEPUS_FreeCString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_MarkValue",
+    "demangled": "LEPUS_MarkValue",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "GlobalizeReference",
+    "demangled": "GlobalizeReference",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DisposeGlobal",
+    "demangled": "DisposeGlobal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ThrowRangeError",
+    "demangled": "LEPUS_ThrowRangeError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_Throw",
+    "demangled": "LEPUS_Throw",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewClassID",
+    "demangled": "LEPUS_NewClassID",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CheckObjectRt",
+    "demangled": "CheckObjectRt",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToCStringLen2",
+    "demangled": "LEPUS_ToCStringLen2",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv121__vmi_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__vmi_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv117__class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fwrite",
+    "demangled": "fwrite",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__sF",
+    "demangled": "__sF",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__si_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetPrototype",
+    "demangled": "LEPUS_GetPrototype",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToBool",
+    "demangled": "LEPUS_ToBool",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ThrowInternalError",
+    "demangled": "LEPUS_ThrowInternalError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcmp",
+    "demangled": "strcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SetPropertyStr",
+    "demangled": "LEPUS_SetPropertyStr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewArrayBuffer",
+    "demangled": "LEPUS_NewArrayBuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_DetachArrayBuffer",
+    "demangled": "LEPUS_DetachArrayBuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsArrayBuffer",
+    "demangled": "LEPUS_IsArrayBuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsTypedArray",
+    "demangled": "LEPUS_IsTypedArray",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsDataView",
+    "demangled": "LEPUS_IsDataView",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewArrayBufferCopy",
+    "demangled": "LEPUS_NewArrayBufferCopy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ThrowSyntaxError",
+    "demangled": "LEPUS_ThrowSyntaxError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewArray",
+    "demangled": "LEPUS_NewArray",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetTypedArrayBuffer",
+    "demangled": "LEPUS_GetTypedArrayBuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetArrayBuffer",
+    "demangled": "LEPUS_GetArrayBuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Z12MonitorEventPKcS0_S0_S0_",
+    "demangled": "MonitorEvent(char const*, char const*, char const*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fflush",
+    "demangled": "fflush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strnlen",
+    "demangled": "strnlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "putc",
+    "demangled": "putc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fputc",
+    "demangled": "fputc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fputs",
+    "demangled": "fputs",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "clock",
+    "demangled": "clock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strlen_chk",
+    "demangled": "__strlen_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "calloc",
+    "demangled": "calloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "realloc",
+    "demangled": "realloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RegisterWebAssembly",
+    "demangled": "RegisterWebAssembly",
+    "value": "0x1003c",
+    "size": 4872,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_vmsdk_wasm_RegisterWebAssembly_loadWasmFactory",
+    "demangled": "Java_com_bytedance_vmsdk_wasm_RegisterWebAssembly_loadWasmFactory",
+    "value": "0x117d8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x3be10",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x3c058",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x3c000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  }
+]

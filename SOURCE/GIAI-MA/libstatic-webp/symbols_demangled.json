@@ -1,0 +1,658 @@
+[
+  {
+    "name": "__bss_start__",
+    "demangled": "__bss_start__",
+    "value": "0x64328",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_bss_end__",
+    "demangled": "_bss_end__",
+    "value": "0x64d10",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x64328",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_end__",
+    "demangled": "__bss_end__",
+    "value": "0x64d10",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x64d10",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__end__",
+    "demangled": "__end__",
+    "value": "0x64d10",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x64328",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_destroy",
+    "demangled": "pthread_mutex_destroy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "longjmp",
+    "demangled": "longjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt11logic_errorC2EPKc",
+    "demangled": "std::logic_error::{base ctor}(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getenv",
+    "demangled": "getenv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_join",
+    "demangled": "pthread_join",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_end_catch",
+    "demangled": "__cxa_end_catch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__vsprintf_chk",
+    "demangled": "__vsprintf_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_allocate_exception",
+    "demangled": "__cxa_allocate_exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "crc32",
+    "demangled": "crc32",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt9bad_allocD1Ev",
+    "demangled": "std::bad_alloc::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_get_exception_ptr",
+    "demangled": "__cxa_get_exception_ptr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sscanf",
+    "demangled": "sscanf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "calloc",
+    "demangled": "calloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AndroidBitmap_lockPixels",
+    "demangled": "AndroidBitmap_lockPixels",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_destroy",
+    "demangled": "pthread_cond_destroy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__sF",
+    "demangled": "__sF",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt12length_errorD1Ev",
+    "demangled": "std::length_error::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflateReset",
+    "demangled": "deflateReset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_once",
+    "demangled": "pthread_once",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflate",
+    "demangled": "deflate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fprintf",
+    "demangled": "fprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflateInit2_",
+    "demangled": "deflateInit2_",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fputc",
+    "demangled": "fputc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_unlock",
+    "demangled": "pthread_mutex_unlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_wait",
+    "demangled": "pthread_cond_wait",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "setjmp",
+    "demangled": "setjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVSt12length_error",
+    "demangled": "vtable for std::length_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_create",
+    "demangled": "pthread_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fwrite",
+    "demangled": "fwrite",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_init",
+    "demangled": "pthread_mutex_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_signal",
+    "demangled": "pthread_cond_signal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__gxx_personality_v0",
+    "demangled": "__gxx_personality_v0",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflateEnd",
+    "demangled": "deflateEnd",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVSt9bad_alloc",
+    "demangled": "vtable for std::bad_alloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_begin_catch",
+    "demangled": "__cxa_begin_catch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_throw",
+    "demangled": "__cxa_throw",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "exit",
+    "demangled": "exit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AndroidBitmap_unlockPixels",
+    "demangled": "AndroidBitmap_unlockPixels",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__memcpy_chk",
+    "demangled": "__memcpy_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "lseek64",
+    "demangled": "lseek64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__si_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_lock",
+    "demangled": "pthread_mutex_lock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fflush",
+    "demangled": "fflush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_init",
+    "demangled": "pthread_cond_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv117__class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt9terminatev",
+    "demangled": "std::terminate()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AndroidBitmap_getInfo",
+    "demangled": "AndroidBitmap_getInfo",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dl_iterate_phdr",
+    "demangled": "dl_iterate_phdr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_free_exception",
+    "demangled": "__cxa_free_exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSSt9exception",
+    "demangled": "typeinfo name for std::exception",
+    "value": "0x4ff57",
+    "size": 13,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTISt9exception",
+    "demangled": "typeinfo for std::exception",
+    "value": "0x63260",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTISt11logic_error",
+    "demangled": "typeinfo for std::logic_error",
+    "value": "0x63270",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTISt12length_error",
+    "demangled": "typeinfo for std::length_error",
+    "value": "0x63288",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTISt9bad_alloc",
+    "demangled": "typeinfo for std::bad_alloc",
+    "value": "0x632a0",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSSt12length_error",
+    "demangled": "typeinfo name for std::length_error",
+    "value": "0x4ff36",
+    "size": 17,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x4ac0",
+    "size": 1804,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSSt9bad_alloc",
+    "demangled": "typeinfo name for std::bad_alloc",
+    "value": "0x50418",
+    "size": 13,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSSt11logic_error",
+    "demangled": "typeinfo name for std::logic_error",
+    "value": "0x4ff47",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  }
+]

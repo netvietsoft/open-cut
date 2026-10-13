@@ -1,0 +1,1002 @@
+[
+  {
+    "name": "Java_com_bytedance_common_jato_memory_NonMovingSpaceOpt_optimizeNonMovingSpace",
+    "demangled": "Java_com_bytedance_common_jato_memory_NonMovingSpaceOpt_optimizeNonMovingSpace",
+    "value": "0x38820",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeResumeThread",
+    "demangled": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeResumeThread",
+    "value": "0x14784",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_ProfileInfo_getMethod",
+    "demangled": "Java_com_bytedance_common_jato_jit_ProfileInfo_getMethod",
+    "value": "0x38454",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_fastnative_FastNative_nativeModifyFastNativeInner",
+    "demangled": "Java_com_bytedance_common_jato_fastnative_FastNative_nativeModifyFastNativeInner",
+    "value": "0x383e8",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_HwuiBoost_nativeBoost",
+    "demangled": "Java_com_bytedance_common_jato_gfx_HwuiBoost_nativeBoost",
+    "value": "0x208d8",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitOptions_compilerOptionsSupport14",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitOptions_compilerOptionsSupport14",
+    "value": "0x38700",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_shrinker_MemTrim_trimVdex",
+    "demangled": "Java_com_bytedance_common_jato_shrinker_MemTrim_trimVdex",
+    "value": "0x2a2f8",
+    "size": 564,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeResumeThreadByName",
+    "demangled": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeResumeThreadByName",
+    "value": "0x14820",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_DvmGcBlocker_nativeInit",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_DvmGcBlocker_nativeInit",
+    "value": "0x38214",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_DexCacheExpandOpt_checkHitExpand",
+    "demangled": "Java_com_bytedance_common_jato_boost_DexCacheExpandOpt_checkHitExpand",
+    "value": "0x38804",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_PrePageFaultOpt_prePageFaultInner",
+    "demangled": "Java_com_bytedance_common_jato_boost_PrePageFaultOpt_prePageFaultInner",
+    "value": "0x3877c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeCreateToken",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeCreateToken",
+    "value": "0x38220",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_PosionDeadObjectOpt_nBypassPoisonDeadObjects",
+    "demangled": "Java_com_bytedance_common_jato_boost_PosionDeadObjectOpt_nBypassPoisonDeadObjects",
+    "value": "0x1bf98",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_needGcBlock",
+    "demangled": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_needGcBlock",
+    "value": "0x11f68",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitOptions_setCompilerOptions",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitOptions_setCompilerOptions",
+    "value": "0x385d8",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_MinFreeHeapOpt_nativeSetMinFreeHeapPecent",
+    "demangled": "Java_com_bytedance_common_jato_memory_MinFreeHeapOpt_nativeSetMinFreeHeapPecent",
+    "value": "0x11aa0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeSetMaxGcBlockTime",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeSetMaxGcBlockTime",
+    "value": "0x38288",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeSetIsSupportApex",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeSetIsSupportApex",
+    "value": "0x382e8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCodeCacheExpand_testSmallPattern",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCodeCacheExpand_testSmallPattern",
+    "value": "0x38894",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_RemoveWaitingForGCOpt_nEnable",
+    "demangled": "Java_com_bytedance_common_jato_boost_RemoveWaitingForGCOpt_nEnable",
+    "value": "0x1bfbc",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_verifyNoneNative",
+    "demangled": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_verifyNoneNative",
+    "value": "0x38340",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_MalloptOptimizer_nMalloptOptimize",
+    "demangled": "Java_com_bytedance_common_jato_boost_MalloptOptimizer_nMalloptOptimize",
+    "value": "0x1bf9c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_GraphicsUtil_nativeEnableResourceCleanup",
+    "demangled": "Java_com_bytedance_common_jato_gfx_GraphicsUtil_nativeEnableResourceCleanup",
+    "value": "0x20384",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitSuspend_nativeEnableJitDump",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitSuspend_nativeEnableJitDump",
+    "value": "0x38380",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_shrinker_ShrinkerNativeHolder_shrinkRegionNative",
+    "demangled": "Java_com_bytedance_common_jato_shrinker_ShrinkerNativeHolder_shrinkRegionNative",
+    "value": "0x3833c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeGetThreadStats",
+    "demangled": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeGetThreadStats",
+    "value": "0x1488c",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeReleaseToken",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeReleaseToken",
+    "value": "0x38244",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_threads_ThreadSuspendTimeout_setSuspendTimeoutInSeconds",
+    "demangled": "Java_com_bytedance_common_jato_threads_ThreadSuspendTimeout_setSuspendTimeoutInSeconds",
+    "value": "0x3871c",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_ThrowableUnwindOpt_optimizeFileExistUnwind",
+    "demangled": "Java_com_bytedance_common_jato_boost_ThrowableUnwindOpt_optimizeFileExistUnwind",
+    "value": "0x38874",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_logcut_LogCut_initLogCutInternal",
+    "demangled": "Java_com_bytedance_common_jato_logcut_LogCut_initLogCutInternal",
+    "value": "0x11868",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_util_ViewMethodInvokeHelper_invokeViewConstruct",
+    "demangled": "Java_com_bytedance_common_jato_util_ViewMethodInvokeHelper_invokeViewConstruct",
+    "value": "0x388f8",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_TextureOpt_nativeUnblockJNISurfaceTexture",
+    "demangled": "Java_com_bytedance_common_jato_boost_TextureOpt_nativeUnblockJNISurfaceTexture",
+    "value": "0x2db30",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_verifyEnableAbove15Native",
+    "demangled": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_verifyEnableAbove15Native",
+    "value": "0x38350",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_RenderThreadOpt_nativeChangeRenderPipelineType",
+    "demangled": "Java_com_bytedance_common_jato_gfx_RenderThreadOpt_nativeChangeRenderPipelineType",
+    "value": "0x22de4",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeStartBlockGc",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeStartBlockGc",
+    "value": "0x382f4",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_debug_DebugOptimizer_closeInstrumentationCrashFix",
+    "demangled": "Java_com_bytedance_common_jato_debug_DebugOptimizer_closeInstrumentationCrashFix",
+    "value": "0x16c18",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_MadviseFreeOpt_replaceDontNeedToFree",
+    "demangled": "Java_com_bytedance_common_jato_memory_MadviseFreeOpt_replaceDontNeedToFree",
+    "value": "0x38808",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_WeakRefUnblockOpt_init",
+    "demangled": "Java_com_bytedance_common_jato_memory_WeakRefUnblockOpt_init",
+    "value": "0x3885c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_ProfileInfo_forceSaveProfile",
+    "demangled": "Java_com_bytedance_common_jato_jit_ProfileInfo_forceSaveProfile",
+    "value": "0x384bc",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_PrePageFaultOpt_munlockInBackground",
+    "demangled": "Java_com_bytedance_common_jato_boost_PrePageFaultOpt_munlockInBackground",
+    "value": "0x387d4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_logcut_LogCut_logCutStopInternal",
+    "demangled": "Java_com_bytedance_common_jato_logcut_LogCut_logCutStopInternal",
+    "value": "0x118b8",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_DvmGcBlocker_nativeDalvikStartBlockGc",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_DvmGcBlocker_nativeDalvikStartBlockGc",
+    "value": "0x38218",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_HiddenApiOpt_nOptimize",
+    "demangled": "Java_com_bytedance_common_jato_boost_HiddenApiOpt_nOptimize",
+    "value": "0x38704",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_util_ViewMethodInvokeHelper_getViewConstructMethod",
+    "demangled": "Java_com_bytedance_common_jato_util_ViewMethodInvokeHelper_getViewConstructMethod",
+    "value": "0x389f8",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_interpreter_InterpreterBridge_initInterpreterBridgeInternal",
+    "demangled": "Java_com_bytedance_common_jato_interpreter_InterpreterBridge_initInterpreterBridgeInternal",
+    "value": "0x162c8",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_classlinker_AnnotationResolvingOpt_nativeOptimize",
+    "demangled": "Java_com_bytedance_common_jato_classlinker_AnnotationResolvingOpt_nativeOptimize",
+    "value": "0x1bfdc",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCompiler_nativeCompile",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCompiler_nativeCompile",
+    "value": "0xc658",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCodeCacheGc_isEnable",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCodeCacheGc_isEnable",
+    "value": "0x3856c",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_ProcTidFetcher_nativeGetRenderThreadTid",
+    "demangled": "Java_com_bytedance_common_jato_boost_ProcTidFetcher_nativeGetRenderThreadTid",
+    "value": "0x3838c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_nativeInit",
+    "demangled": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_nativeInit",
+    "value": "0x28508",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitSuspend_nativeEnd",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitSuspend_nativeEnd",
+    "value": "0x3837c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitOptions_setCompileThreshold",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitOptions_setCompileThreshold",
+    "value": "0x38594",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_RenderThreadOpt_nativeResourceCacheOpt",
+    "demangled": "Java_com_bytedance_common_jato_gfx_RenderThreadOpt_nativeResourceCacheOpt",
+    "value": "0x2331c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_DvmGcBlocker_nativeDalvikStopBlockGc",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_DvmGcBlocker_nativeDalvikStopBlockGc",
+    "value": "0x3821c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_GLESInitBoost_nativeBoost",
+    "demangled": "Java_com_bytedance_common_jato_gfx_GLESInitBoost_nativeBoost",
+    "value": "0x2007c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_ProfileInfo_jitMethod",
+    "demangled": "Java_com_bytedance_common_jato_jit_ProfileInfo_jitMethod",
+    "value": "0x384f0",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCodeCacheGc_enable",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCodeCacheGc_enable",
+    "value": "0x3852c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitSuspend_nativeBegin",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitSuspend_nativeBegin",
+    "value": "0x38378",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_util_JNIHook_nativePlaceHolder",
+    "demangled": "Java_com_bytedance_common_jato_util_JNIHook_nativePlaceHolder",
+    "value": "0x38a1c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_dvmVerifyNoneNative",
+    "demangled": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_dvmVerifyNoneNative",
+    "value": "0x38354",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_verifyEnableNative",
+    "demangled": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_verifyEnableNative",
+    "value": "0x38348",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeGetThreadTid",
+    "demangled": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeGetThreadTid",
+    "value": "0x14760",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_logcut_LogCut_logCutStartInternal",
+    "demangled": "Java_com_bytedance_common_jato_logcut_LogCut_logCutStartInternal",
+    "value": "0x11894",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_sched_ThreadPrioProtector_addThreadPrioProtect",
+    "demangled": "Java_com_bytedance_common_jato_boost_sched_ThreadPrioProtector_addThreadPrioProtect",
+    "value": "0x29388",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCodeCacheExpand_keepAlive",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCodeCacheExpand_keepAlive",
+    "value": "0x3888c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCodeCacheMProtectOpt_nStartPharse1",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCodeCacheMProtectOpt_nStartPharse1",
+    "value": "0x30860",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCodeCacheMProtectOpt_nStartPharse2",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCodeCacheMProtectOpt_nStartPharse2",
+    "value": "0x308f8",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_BufferBarrier_nativeInit",
+    "demangled": "Java_com_bytedance_common_jato_gfx_BufferBarrier_nativeInit",
+    "value": "0x2c598",
+    "size": 636,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_scheduler_SchedulerNativeHolder_nativeInit",
+    "demangled": "Java_com_bytedance_common_jato_scheduler_SchedulerNativeHolder_nativeInit",
+    "value": "0x25864",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_debug_DebugOptimizer_openInstrumentationCrashFix",
+    "demangled": "Java_com_bytedance_common_jato_debug_DebugOptimizer_openInstrumentationCrashFix",
+    "value": "0x16b50",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_verifyNoneAbove15Native",
+    "demangled": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_verifyNoneAbove15Native",
+    "value": "0x3834c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_shrinker_ShrinkerNativeHolder_shrinkWebviewNative",
+    "demangled": "Java_com_bytedance_common_jato_shrinker_ShrinkerNativeHolder_shrinkWebviewNative",
+    "value": "0x2a028",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_PrePageFaultOpt_mlockCodeItem",
+    "demangled": "Java_com_bytedance_common_jato_boost_PrePageFaultOpt_mlockCodeItem",
+    "value": "0x387b8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_dvmVerifyEnableNative",
+    "demangled": "Java_com_bytedance_common_jato_dex_DexTricksNativeHolder_dvmVerifyEnableNative",
+    "value": "0x38358",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitSuspend_nativeInit",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitSuspend_nativeInit",
+    "value": "0x38360",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_sched_ThreadPrioProtector_setPrioProtectEnabled",
+    "demangled": "Java_com_bytedance_common_jato_boost_sched_ThreadPrioProtector_setPrioProtectEnabled",
+    "value": "0x29398",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_DecodeJObjectOpt_nOptimizeDecodeJObject",
+    "demangled": "Java_com_bytedance_common_jato_boost_DecodeJObjectOpt_nOptimizeDecodeJObject",
+    "value": "0x38898",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeStopBlockGc",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeStopBlockGc",
+    "value": "0x38314",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_RenderThreadOpt_nativePinImagesOpt",
+    "demangled": "Java_com_bytedance_common_jato_gfx_RenderThreadOpt_nativePinImagesOpt",
+    "value": "0x23338",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_nativeUseNewFree",
+    "demangled": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_nativeUseNewFree",
+    "value": "0x11f20",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_soload_StaticJNIOpt_nativeLoadMethodProfile",
+    "demangled": "Java_com_bytedance_common_jato_soload_StaticJNIOpt_nativeLoadMethodProfile",
+    "value": "0x388b4",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_CpusetManager_setCpuSetTid",
+    "demangled": "Java_com_bytedance_common_jato_boost_CpusetManager_setCpuSetTid",
+    "value": "0x2ab44",
+    "size": 384,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_RenderThreadUnblockOpt_nativeUnblockRenderThreadTask",
+    "demangled": "Java_com_bytedance_common_jato_gfx_RenderThreadUnblockOpt_nativeUnblockRenderThreadTask",
+    "value": "0x388f0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_scheduler_ClassVisiblyInitializedOpt_enable",
+    "demangled": "Java_com_bytedance_common_jato_scheduler_ClassVisiblyInitializedOpt_enable",
+    "value": "0x388d8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_fetchRenderThreadTid",
+    "demangled": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_fetchRenderThreadTid",
+    "value": "0x28edc",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_PrePageFaultOpt_reclaimCodeItem",
+    "demangled": "Java_com_bytedance_common_jato_boost_PrePageFaultOpt_reclaimCodeItem",
+    "value": "0x3879c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_getLargeObjectAllocatedBytes",
+    "demangled": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_getLargeObjectAllocatedBytes",
+    "value": "0x11f30",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_scheduler_ClassVisiblyInitializedOpt_setUseMembarrier",
+    "demangled": "Java_com_bytedance_common_jato_scheduler_ClassVisiblyInitializedOpt_setUseMembarrier",
+    "value": "0x388e4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_shrinker_ShrinkerNativeHolder_shrinkMallocNative",
+    "demangled": "Java_com_bytedance_common_jato_shrinker_ShrinkerNativeHolder_shrinkMallocNative",
+    "value": "0x38334",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_NonMovingSpaceOpt_printHeapStatus",
+    "demangled": "Java_com_bytedance_common_jato_memory_NonMovingSpaceOpt_printHeapStatus",
+    "value": "0x38840",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCompiler_nativeHookProfileSaverBug",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCompiler_nativeHookProfileSaverBug",
+    "value": "0xc6f0",
+    "size": 460,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_util_JNIHook_nativeInit",
+    "demangled": "Java_com_bytedance_common_jato_util_JNIHook_nativeInit",
+    "value": "0x38a20",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_GLBoost_nativePromote",
+    "demangled": "Java_com_bytedance_common_jato_gfx_GLBoost_nativePromote",
+    "value": "0x3835c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_shrinker_ShrinkerNativeHolder_shrinkHeapNative",
+    "demangled": "Java_com_bytedance_common_jato_shrinker_ShrinkerNativeHolder_shrinkHeapNative",
+    "value": "0x38338",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_DexCacheExpandOpt_expandInner",
+    "demangled": "Java_com_bytedance_common_jato_boost_DexCacheExpandOpt_expandInner",
+    "value": "0x387d8",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeRequestBlockGc",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeRequestBlockGc",
+    "value": "0x38264",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_RSpaceLiveRatioOpt_nRegionSpaceLiveRatioOpt",
+    "demangled": "Java_com_bytedance_common_jato_boost_RSpaceLiveRatioOpt_nRegionSpaceLiveRatioOpt",
+    "value": "0x1bff4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_CpusetManager_resetCpuSetTid",
+    "demangled": "Java_com_bytedance_common_jato_boost_CpusetManager_resetCpuSetTid",
+    "value": "0x2acc4",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_BufferBarrier_nativeHookLogs",
+    "demangled": "Java_com_bytedance_common_jato_gfx_BufferBarrier_nativeHookLogs",
+    "value": "0x2caa8",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_nativeSetPriority",
+    "demangled": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_nativeSetPriority",
+    "value": "0x28234",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_fastnative_FastNative_getMethodsNative",
+    "demangled": "Java_com_bytedance_common_jato_fastnative_FastNative_getMethodsNative",
+    "value": "0x38394",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_ProfileInfo_createProfileForMethod",
+    "demangled": "Java_com_bytedance_common_jato_jit_ProfileInfo_createProfileForMethod",
+    "value": "0x38464",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCompiler_nativeForceSaveProfile",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCompiler_nativeForceSaveProfile",
+    "value": "0xc8bc",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitSuspend_getJitDumpNativeMethod",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitSuspend_getJitDumpNativeMethod",
+    "value": "0x38388",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_soload_StaticJNIOpt_nativeInitStaticJNIOpt",
+    "demangled": "Java_com_bytedance_common_jato_soload_StaticJNIOpt_nativeInitStaticJNIOpt",
+    "value": "0x388b0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeSuspendThreadByName",
+    "demangled": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeSuspendThreadByName",
+    "value": "0x147a0",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_nativeSetLargeObjectThreshold",
+    "demangled": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_nativeSetLargeObjectThreshold",
+    "value": "0x11ec4",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_scheduler_ClassVisiblyInitializedOpt_setMax",
+    "demangled": "Java_com_bytedance_common_jato_scheduler_ClassVisiblyInitializedOpt_setMax",
+    "value": "0x388dc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeSuspendThread",
+    "demangled": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeSuspendThread",
+    "value": "0x14768",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_lock_LockMaxSpinsOpt_nativeSetMaxSpins",
+    "demangled": "Java_com_bytedance_common_jato_lock_LockMaxSpinsOpt_nativeSetMaxSpins",
+    "value": "0x1be50",
+    "size": 328,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCodeCacheExpand_enableSmallPattern",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCodeCacheExpand_enableSmallPattern",
+    "value": "0x38890",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_BufferBarrier_nativeBegin",
+    "demangled": "Java_com_bytedance_common_jato_gfx_BufferBarrier_nativeBegin",
+    "value": "0x2c914",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_ProfileInfo_init",
+    "demangled": "Java_com_bytedance_common_jato_jit_ProfileInfo_init",
+    "value": "0x3843c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_util_DeviceInfoUtils_nGetArtApexVersion",
+    "demangled": "Java_com_bytedance_common_jato_util_DeviceInfoUtils_nGetArtApexVersion",
+    "value": "0x177ec",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_BufferBarrier_nativeEnd",
+    "demangled": "Java_com_bytedance_common_jato_gfx_BufferBarrier_nativeEnd",
+    "value": "0x2c954",
+    "size": 340,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_HandleGetEnvOpt_nativeInit",
+    "demangled": "Java_com_bytedance_common_jato_boost_HandleGetEnvOpt_nativeInit",
+    "value": "0x20ba0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_getRenderThreadTid",
+    "demangled": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_getRenderThreadTid",
+    "value": "0x28fd4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_jit_JitCodeCacheGc_disable",
+    "demangled": "Java_com_bytedance_common_jato_jit_JitCodeCacheGc_disable",
+    "value": "0x3854c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_sched_ThreadPrioProtector_nativeInit",
+    "demangled": "Java_com_bytedance_common_jato_boost_sched_ThreadPrioProtector_nativeInit",
+    "value": "0x29368",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_nativeExcludeLOS",
+    "demangled": "Java_com_bytedance_common_jato_memory_los_HeapLargeObjectExclusion_nativeExcludeLOS",
+    "value": "0x11aa4",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_gfx_BlastBufferQueueOpt_nativeHookPreload",
+    "demangled": "Java_com_bytedance_common_jato_gfx_BlastBufferQueueOpt_nativeHookPreload",
+    "value": "0x38a30",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_nativeResetPriority",
+    "demangled": "Java_com_bytedance_common_jato_boost_sched_PriorityManagerV2_nativeResetPriority",
+    "value": "0x283d8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeGetAllThreadInfo",
+    "demangled": "Java_com_bytedance_common_jato_threads_ThreadNative_nativeGetAllThreadInfo",
+    "value": "0x14880",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_YoungGcOpt_doYoungGcOpt",
+    "demangled": "Java_com_bytedance_common_jato_memory_YoungGcOpt_doYoungGcOpt",
+    "value": "0x38844",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeSetHeapLimit",
+    "demangled": "Java_com_bytedance_common_jato_memory_gcblocker_GcBlocker_nativeSetHeapLimit",
+    "value": "0x382a8",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

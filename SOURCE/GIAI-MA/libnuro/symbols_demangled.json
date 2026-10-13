@@ -1,0 +1,2802 @@
+[
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fopen",
+    "demangled": "fopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable15__do_timed_waitERNS_11unique_lockINS_5mutexEEENS_6chrono10time_pointINS5_12system_clockENS5_8durationIxNS_5ratioILl1ELl1000000000EEEEEEE",
+    "demangled": "std::__ndk1::condition_variable::__do_timed_wait(std::__ndk1::unique_lock<std::__ndk1::mutex>&, std::__ndk1::chrono::time_point<std::__ndk1::chrono::system_clock, std::__ndk1::chrono::duration<long long, std::__ndk1::ratio<(long)1, (long)1000000000>>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memchr",
+    "demangled": "memchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opendir",
+    "demangled": "opendir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15ctypeIcE2idE",
+    "demangled": "std::__ndk1::ctype<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk14coutE",
+    "demangled": "std::__ndk1::cout",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk110error_code7messageEv",
+    "demangled": "std::__ndk1::error_code::message const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt12out_of_rangeD1Ev",
+    "demangled": "std::out_of_range::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEl",
+    "demangled": "std::__ndk1::to_string(long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fseeko",
+    "demangled": "fseeko",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "inflate",
+    "demangled": "inflate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt11logic_errorC2EPKc",
+    "demangled": "std::logic_error::{base ctor}(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_baseD2Ev",
+    "demangled": "std::__ndk1::ios_base::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTISt12out_of_range",
+    "demangled": "typeinfo for std::out_of_range",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt13runtime_errorC1ERKS_",
+    "demangled": "std::runtime_error::{ctor}(std::runtime_error const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base5clearEj",
+    "demangled": "std::__ndk1::ios_base::clear(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_end_catch",
+    "demangled": "__cxa_end_catch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk113random_deviceC1ERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "std::__ndk1::random_device::{ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_allocate_exception",
+    "demangled": "__cxa_allocate_exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "lstat",
+    "demangled": "lstat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk112bad_weak_ptrE",
+    "demangled": "typeinfo for std::__ndk1::bad_weak_ptr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112future_errorC1ENS_10error_codeE",
+    "demangled": "std::__ndk1::future_error::{ctor}(std::__ndk1::error_code)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt9exception4whatEv",
+    "demangled": "std::exception::what const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fread",
+    "demangled": "fread",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16thread6detachEv",
+    "demangled": "std::__ndk1::thread::detach()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutex6unlockEv",
+    "demangled": "std::__ndk1::recursive_mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "calloc",
+    "demangled": "calloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVSt19bad_optional_access",
+    "demangled": "vtable for std::bad_optional_access",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_key_delete",
+    "demangled": "pthread_key_delete",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "mkdir",
+    "demangled": "mkdir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcmp",
+    "demangled": "strcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base33__set_badbit_and_consider_rethrowEv",
+    "demangled": "std::__ndk1::ios_base::__set_badbit_and_consider_rethrow()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17codecvtIcc9mbstate_tE2idE",
+    "demangled": "std::__ndk1::codecvt<char, char, mbstate_t>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex6unlockEv",
+    "demangled": "std::__ndk1::mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt12length_errorD1Ev",
+    "demangled": "std::length_error::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setspecific",
+    "demangled": "pthread_setspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ftello",
+    "demangled": "ftello",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVNSt6__ndk117__assoc_sub_stateE",
+    "demangled": "vtable for std::__ndk1::__assoc_sub_state",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_once",
+    "demangled": "pthread_once",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZNSt6__ndk117__assoc_sub_state10__sub_waitERNS_11unique_lockINS_5mutexEEE",
+    "demangled": "std::__ndk1::__assoc_sub_state::__sub_wait(std::__ndk1::unique_lock<std::__ndk1::mutex>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk114__shared_countD2Ev",
+    "demangled": "std::__ndk1::__shared_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk117__assoc_sub_state13set_exceptionESt13exception_ptr",
+    "demangled": "std::__ndk1::__assoc_sub_state::set_exception(std::exception_ptr)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base4initEPv",
+    "demangled": "std::__ndk1::ios_base::init(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "access",
+    "demangled": "access",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_self",
+    "demangled": "pthread_self",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflate",
+    "demangled": "deflate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTISt9exception",
+    "demangled": "typeinfo for std::exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115__thread_structC1Ev",
+    "demangled": "std::__ndk1::__thread_struct::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fclose",
+    "demangled": "fclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt8bad_castD1Ev",
+    "demangled": "std::bad_cast::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "realloc",
+    "demangled": "realloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt11logic_errorC2ERKS_",
+    "demangled": "std::logic_error::{base ctor}(std::logic_error const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16thread4joinEv",
+    "demangled": "std::__ndk1::thread::join()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtod",
+    "demangled": "strtod",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variableD1Ev",
+    "demangled": "std::__ndk1::condition_variable::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "isalnum",
+    "demangled": "isalnum",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16stoullERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "demangled": "std::__ndk1::stoull(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned long*, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112future_errorD1Ev",
+    "demangled": "std::__ndk1::future_error::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt19bad_optional_accessD1Ev",
+    "demangled": "std::bad_optional_access::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflateInit2_",
+    "demangled": "deflateInit2_",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutexC1Ev",
+    "demangled": "std::__ndk1::recursive_mutex::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "wmemcpy",
+    "demangled": "wmemcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_pure_virtual",
+    "demangled": "__cxa_pure_virtual",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_equal",
+    "demangled": "pthread_equal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVNSt6__ndk112future_errorE",
+    "demangled": "vtable for std::__ndk1::future_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE",
+    "demangled": "std::__ndk1::num_put<char, std::__ndk1::ostreambuf_iterator<char, std::__ndk1::char_traits<char>>>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflateSetHeader",
+    "demangled": "deflateSetHeader",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115system_categoryEv",
+    "demangled": "std::__ndk1::system_category()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVNSt6__ndk112bad_weak_ptrE",
+    "demangled": "vtable for std::__ndk1::bad_weak_ptr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "remove",
+    "demangled": "remove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_unlock",
+    "demangled": "pthread_mutex_unlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "__dynamic_cast",
+    "demangled": "__dynamic_cast",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv119__pointer_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__pointer_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1ERKS0_",
+    "demangled": "std::__ndk1::locale::{ctor}(std::__ndk1::locale const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable10notify_allEv",
+    "demangled": "std::__ndk1::condition_variable::notify_all()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTISt12length_error",
+    "demangled": "typeinfo for std::length_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "inflateEnd",
+    "demangled": "inflateEnd",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVSt12length_error",
+    "demangled": "vtable for std::length_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt13exception_ptrD1Ev",
+    "demangled": "std::exception_ptr::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk113random_deviceD1Ev",
+    "demangled": "std::__ndk1::random_device::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt8bad_castC1Ev",
+    "demangled": "std::bad_cast::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_create",
+    "demangled": "pthread_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflateBound",
+    "demangled": "deflateBound",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fwrite",
+    "demangled": "fwrite",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVSt12out_of_range",
+    "demangled": "vtable for std::out_of_range",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115future_categoryEv",
+    "demangled": "std::__ndk1::future_category()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEm",
+    "demangled": "std::__ndk1::to_string(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEi",
+    "demangled": "std::__ndk1::to_string(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt13runtime_errorD1Ev",
+    "demangled": "std::runtime_error::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt13runtime_errorC1EPKc",
+    "demangled": "std::runtime_error::{ctor}(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt13runtime_error4whatEv",
+    "demangled": "std::runtime_error::what const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutexD1Ev",
+    "demangled": "std::__ndk1::recursive_mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTISt8bad_cast",
+    "demangled": "typeinfo for std::bad_cast",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__gxx_personality_v0",
+    "demangled": "__gxx_personality_v0",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt13exception_ptrC1ERKS_",
+    "demangled": "std::exception_ptr::{ctor}(std::exception_ptr const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflateEnd",
+    "demangled": "deflateEnd",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "stat",
+    "demangled": "stat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_getspecific",
+    "demangled": "pthread_getspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt17current_exceptionv",
+    "demangled": "std::current_exception()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk112future_errorE",
+    "demangled": "typeinfo for std::__ndk1::future_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_begin_catch",
+    "demangled": "__cxa_begin_catch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_rethrow",
+    "demangled": "__cxa_rethrow",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_throw",
+    "demangled": "__cxa_throw",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "isprint",
+    "demangled": "isprint",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk117__assoc_sub_state9__executeEv",
+    "demangled": "std::__ndk1::__assoc_sub_state::__execute()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt17rethrow_exceptionSt13exception_ptr",
+    "demangled": "std::rethrow_exception(std::exception_ptr)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__function_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__function_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTISt19bad_optional_access",
+    "demangled": "typeinfo for std::bad_optional_access",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__si_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__errno",
+    "demangled": "__errno",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt9exceptionD2Ev",
+    "demangled": "std::exception::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable10notify_oneEv",
+    "demangled": "std::__ndk1::condition_variable::notify_one()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16chrono12steady_clock3nowEv",
+    "demangled": "std::__ndk1::chrono::steady_clock::now()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "inflateInit2_",
+    "demangled": "inflateInit2_",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk18ios_baseE",
+    "demangled": "typeinfo for std::__ndk1::ios_base",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16threadD1Ev",
+    "demangled": "std::__ndk1::thread::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_lock",
+    "demangled": "pthread_mutex_lock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16chrono12system_clock3nowEv",
+    "demangled": "std::__ndk1::chrono::system_clock::now()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtoll",
+    "demangled": "strtoll",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "readdir",
+    "demangled": "readdir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "localeconv",
+    "demangled": "localeconv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base34__set_failbit_and_consider_rethrowEv",
+    "demangled": "std::__ndk1::ios_base::__set_failbit_and_consider_rethrow()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fflush",
+    "demangled": "fflush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk112system_errorE",
+    "demangled": "typeinfo for std::__ndk1::system_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115__thread_structD1Ev",
+    "demangled": "std::__ndk1::__thread_struct::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk113random_deviceclEv",
+    "demangled": "std::__ndk1::random_device::operator()()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112bad_weak_ptrD1Ev",
+    "demangled": "std::__ndk1::bad_weak_ptr::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_abort",
+    "demangled": "__cxa_guard_abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk119__shared_weak_countE",
+    "demangled": "typeinfo for std::__ndk1::__shared_weak_count",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_key_create",
+    "demangled": "pthread_key_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1Ev",
+    "demangled": "std::__ndk1::locale::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__vsnprintf_chk",
+    "demangled": "__vsnprintf_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk18ios_base6getlocEv",
+    "demangled": "std::__ndk1::ios_base::getloc const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutex4lockEv",
+    "demangled": "std::__ndk1::recursive_mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutexD1Ev",
+    "demangled": "std::__ndk1::mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__thread_local_dataEv",
+    "demangled": "std::__ndk1::__thread_local_data()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv117__class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable4waitERNS_11unique_lockINS_5mutexEEE",
+    "demangled": "std::__ndk1::condition_variable::wait(std::__ndk1::unique_lock<std::__ndk1::mutex>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt9terminatev",
+    "demangled": "std::terminate()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeD1Ev",
+    "demangled": "std::__ndk1::locale::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9use_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::use_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dl_iterate_phdr",
+    "demangled": "dl_iterate_phdr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt18uncaught_exceptionv",
+    "demangled": "std::uncaught_exception()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk117__assoc_sub_stateE",
+    "demangled": "typeinfo for std::__ndk1::__assoc_sub_state",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex4lockEv",
+    "demangled": "std::__ndk1::mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk120__throw_system_errorEiPKc",
+    "demangled": "std::__ndk1::__throw_system_error(int, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9has_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::has_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count4lockEv",
+    "demangled": "std::__ndk1::__shared_weak_count::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv121__vmi_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__vmi_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_free_exception",
+    "demangled": "__cxa_free_exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strrchr",
+    "demangled": "strrchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "closedir",
+    "demangled": "closedir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_thread_atexit",
+    "demangled": "__cxa_thread_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtoull",
+    "demangled": "strtoull",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN4nuro20ConversationListenerE",
+    "demangled": "typeinfo for nuro::ConversationListener",
+    "value": "0xeb1d0",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ios<char, std::__ndk1::char_traits<char>>",
+    "value": "0xaf3dc",
+    "size": 45,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZNSt6__ndk117bad_function_callD0Ev",
+    "demangled": "std::__ndk1::bad_function_call::{deleting dtor}()",
+    "value": "0x23c50",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onQuery",
+    "demangled": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onQuery",
+    "value": "0x9c3a8",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1remove",
+    "demangled": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1remove",
+    "value": "0x90c18",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ifstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xaf594",
+    "size": 51,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIN4nuro16ITransportSenderE",
+    "demangled": "typeinfo for nuro::ITransportSender",
+    "value": "0xeb3f8",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1reply",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1reply",
+    "value": "0x8e720",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_native_1onUploadProgress",
+    "demangled": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_native_1onUploadProgress",
+    "value": "0x946b4",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1connect",
+    "demangled": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1connect",
+    "value": "0x9aaac",
+    "size": 444,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_nativeDestroy",
+    "value": "0x8e0c4",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ofstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe88b0",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_stringbuf<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0xe8bb0",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIN4nuro19SyncChannelListenerE",
+    "demangled": "typeinfo for nuro::SyncChannelListener",
+    "value": "0xeb568",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro12ConversationEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::Conversation>",
+    "value": "0xb63f0",
+    "size": 47,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro7ContextD2Ev",
+    "demangled": "nuro::Context::{base dtor}()",
+    "value": "0x2279c",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ILogHandler_00024CppProxy_native_1onLog",
+    "demangled": "Java_com_lemon_nuro_ILogHandler_00024CppProxy_native_1onLog",
+    "value": "0x96414",
+    "size": 260,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro11SyncChannelEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::SyncChannel>",
+    "value": "0xeb460",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro8FileInfoC2ERKS0_",
+    "demangled": "nuro::FileInfo::{base ctor}(nuro::FileInfo const&)",
+    "value": "0x22610",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIN4nuro24FileUploadStatusCallbackE",
+    "demangled": "typeinfo for nuro::FileUploadStatusCallback",
+    "value": "0xeab00",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro15ConversationHubEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::ConversationHub>",
+    "value": "0xb666c",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro19SyncChannelListenerEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::SyncChannelListener>",
+    "value": "0xeb5b0",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_stringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0xaf507",
+    "size": 72,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_native_1onUploadCanceled",
+    "demangled": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_native_1onUploadCanceled",
+    "value": "0x94918",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4nuro11UserMessageC2ENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES7_NS1_8optionalINS_11SectionInfoEEENS8_INS_14MessageContentEEENS8_INS_7ContextEEENS8_INS_10ToolResultEEENS_13MessageStatusENS8_IS7_EESI_lNS_13MessageSourceE",
+    "demangled": "nuro::UserMessage::{base ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::optional<nuro::SectionInfo>, std::__ndk1::optional<nuro::MessageContent>, std::__ndk1::optional<nuro::Context>, std::__ndk1::optional<nuro::ToolResult>, nuro::MessageStatus, std::__ndk1::optional<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::optional<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, long, nuro::MessageSource)",
+    "value": "0xa0a0c",
+    "size": 744,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro12MessageUtilsEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::MessageUtils>",
+    "value": "0xeb450",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_iostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xaf4a2",
+    "size": 51,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro7ILoggerEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::ILogger>",
+    "value": "0xb7643",
+    "size": 41,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro7ContextC2ERKS0_",
+    "demangled": "nuro::Context::{base ctor}(nuro::Context const&)",
+    "value": "0x2218c",
+    "size": 624,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_istream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe8a68",
+    "size": 40,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSN4nuro10ITransportE",
+    "demangled": "typeinfo name for nuro::ITransport",
+    "value": "0xaf221",
+    "size": 20,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1setFileUploader",
+    "demangled": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1setFileUploader",
+    "value": "0x9ae20",
+    "size": 312,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSN4nuro15ConversationHubE",
+    "demangled": "typeinfo name for nuro::ConversationHub",
+    "value": "0xad0d1",
+    "size": 25,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro12InputMessageD2Ev",
+    "demangled": "nuro::InputMessage::{base dtor}()",
+    "value": "0x8e610",
+    "size": 272,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe8958",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk117bad_function_callE",
+    "demangled": "typeinfo name for std::__ndk1::bad_function_call",
+    "value": "0xaeb6f",
+    "size": 31,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTCNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE",
+    "demangled": "_ZTCNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE",
+    "value": "0xe8ac8",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro16ITransportSenderEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::ITransportSender>",
+    "value": "0xb78d0",
+    "size": 51,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_stringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0xe89f0",
+    "size": 120,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIN4nuro13IFileUploaderE",
+    "demangled": "typeinfo for nuro::IFileUploader",
+    "value": "0xeb280",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTCNSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE0_NS_13basic_ostreamIcS2_EE",
+    "demangled": "_ZTCNSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE0_NS_13basic_ostreamIcS2_EE",
+    "value": "0xe8820",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_nativeDestroy",
+    "value": "0x923b8",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN4nuro11ILogHandlerE",
+    "demangled": "typeinfo for nuro::ILogHandler",
+    "value": "0xeb300",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1sync",
+    "demangled": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1sync",
+    "value": "0x9ac68",
+    "size": 348,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ILogger_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_ILogger_00024CppProxy_nativeDestroy",
+    "value": "0x96768",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4nuro16ConversationInfoaSEOS0_",
+    "demangled": "nuro::ConversationInfo::operator=(nuro::ConversationInfo&&)",
+    "value": "0x73ee0",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onSentResult",
+    "demangled": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onSentResult",
+    "value": "0x9c594",
+    "size": 388,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSN4nuro16ITransportSenderE",
+    "demangled": "typeinfo name for nuro::ITransportSender",
+    "value": "0xb78b6",
+    "size": 26,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIPFvvE",
+    "demangled": "typeinfo for void (*)()",
+    "value": "0xeb078",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_ofstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe87d0",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xaf3aa",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1open",
+    "demangled": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1open",
+    "value": "0x9069c",
+    "size": 468,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1listen",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1listen",
+    "value": "0x8e1f0",
+    "size": 312,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onAck",
+    "demangled": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onAck",
+    "value": "0x9c1f8",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4nuro12MessageUtils20toolCalls2JsonStringERKNSt6__ndk16vectorINS_8ToolCallENS1_9allocatorIS3_EEEE",
+    "demangled": "nuro::MessageUtils::toolCalls2JsonString(std::__ndk1::vector<nuro::ToolCall, std::__ndk1::allocator<nuro::ToolCall>> const&)",
+    "value": "0x2e38c",
+    "size": 1552,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro10ITransportEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::ITransport>",
+    "value": "0xeb138",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro24FileUploadStatusCallbackEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::FileUploadStatusCallback>",
+    "value": "0xeb228",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSN4nuro11ILogHandlerE",
+    "demangled": "typeinfo name for nuro::ILogHandler",
+    "value": "0xb750e",
+    "size": 21,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_native_1onUploadSuccess",
+    "demangled": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_native_1onUploadSuccess",
+    "value": "0x94714",
+    "size": 300,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ifstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe8c68",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1listen",
+    "demangled": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1listen",
+    "value": "0x9a974",
+    "size": 312,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ITransport_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_ITransport_00024CppProxy_nativeDestroy",
+    "value": "0x96ddc",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_native_1onUploadFailed",
+    "demangled": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_native_1onUploadFailed",
+    "value": "0x94840",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4nuro16AssistantMessageD2Ev",
+    "demangled": "nuro::AssistantMessage::{base dtor}()",
+    "value": "0x65bd8",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro11ILogHandlerEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::ILogHandler>",
+    "value": "0xb7523",
+    "size": 46,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro11UserMessageD2Ev",
+    "demangled": "nuro::UserMessage::{base dtor}()",
+    "value": "0x1c1d0",
+    "size": 352,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSN4nuro13IFileUploaderE",
+    "demangled": "typeinfo name for nuro::IFileUploader",
+    "value": "0xb7389",
+    "size": 23,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSN4nuro24FileUploadStatusCallbackE",
+    "demangled": "typeinfo name for nuro::FileUploadStatusCallback",
+    "value": "0xb4aaf",
+    "size": 34,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "JNI_OnUnload",
+    "demangled": "JNI_OnUnload",
+    "value": "0x93dec",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro15ConversationHubEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::ConversationHub>",
+    "value": "0xeb158",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ILogHandler_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_ILogHandler_00024CppProxy_nativeDestroy",
+    "value": "0x962e8",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4nuro7ILogger11setLogLevelENS_8LogLevelE",
+    "demangled": "nuro::ILogger::setLogLevel(nuro::LogLevel)",
+    "value": "0x2d658",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro12MessageUtilsEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::MessageUtils>",
+    "value": "0xb7a7f",
+    "size": 47,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIFvvE",
+    "demangled": "typeinfo for void ()",
+    "value": "0xeb068",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTCNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE0_NS_13basic_istreamIcS2_EE",
+    "demangled": "_ZTCNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE0_NS_13basic_istreamIcS2_EE",
+    "value": "0xe8c18",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro10ToolResultC2ERKS0_",
+    "demangled": "nuro::ToolResult::{base ctor}(nuro::ToolResult const&)",
+    "value": "0x228c0",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe8948",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIN4nuro15ConversationHubE",
+    "demangled": "typeinfo for nuro::ConversationHub",
+    "value": "0xe80b8",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0xec278",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ios<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe8870",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk117bad_function_callE",
+    "demangled": "typeinfo for std::__ndk1::bad_function_call",
+    "value": "0xe84b8",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_iostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe8a90",
+    "size": 56,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1flush",
+    "demangled": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_native_1flush",
+    "value": "0x9adc4",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ITransport_00024CppProxy_native_1onMessageReceived",
+    "demangled": "Java_com_lemon_nuro_ITransport_00024CppProxy_native_1onMessageReceived",
+    "value": "0x96e0c",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN4nuro10ITransportE",
+    "demangled": "typeinfo for nuro::ITransport",
+    "value": "0xe8788",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "__bss_start__",
+    "demangled": "__bss_start__",
+    "value": "0xec278",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro24FileUploadStatusCallbackEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::FileUploadStatusCallback>",
+    "value": "0xb7065",
+    "size": 59,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZNSt6__ndk117__assoc_sub_stateD2Ev",
+    "demangled": "std::__ndk1::__assoc_sub_state::{base dtor}()",
+    "value": "0x6ef2c",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro11UserMessageC2ERKS0_",
+    "demangled": "nuro::UserMessage::{base ctor}(nuro::UserMessage const&)",
+    "value": "0x63be0",
+    "size": 868,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIN4nuro11SyncChannelE",
+    "demangled": "typeinfo for nuro::SyncChannel",
+    "value": "0xeac40",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onAssistantMessage",
+    "demangled": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onAssistantMessage",
+    "value": "0x925d0",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_nativeDestroy",
+    "value": "0x9031c",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro16ITransportSenderEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::ITransportSender>",
+    "value": "0xeb440",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1setRunMode",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1setRunMode",
+    "value": "0x8eac4",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe8888",
+    "size": 40,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1cancel",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1cancel",
+    "value": "0x8e8c8",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro19SyncChannelListenerEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::SyncChannelListener>",
+    "value": "0xb8124",
+    "size": 54,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe88c8",
+    "size": 128,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_create",
+    "demangled": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_create",
+    "value": "0x9a7a4",
+    "size": 376,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4nuro7ILogger15registerHandlerERKNSt6__ndk110shared_ptrINS_11ILogHandlerEEE",
+    "demangled": "nuro::ILogger::registerHandler(std::__ndk1::shared_ptr<nuro::ILogHandler> const&)",
+    "value": "0x2d43c",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4nuro8ToolCallD2Ev",
+    "demangled": "nuro::ToolCall::{base dtor}()",
+    "value": "0x64ea8",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSN4nuro11SyncChannelE",
+    "demangled": "typeinfo name for nuro::SyncChannel",
+    "value": "0xb4e64",
+    "size": 21,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onRecoverStatus",
+    "demangled": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onRecoverStatus",
+    "value": "0x92a0c",
+    "size": 324,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onNack",
+    "demangled": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onNack",
+    "value": "0x9c2d0",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onCollect",
+    "demangled": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_native_1onCollect",
+    "value": "0x9c4c4",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro11SyncChannelEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::SyncChannel>",
+    "value": "0xb7d66",
+    "size": 46,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onAck",
+    "demangled": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onAck",
+    "value": "0x924e4",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1connect",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1connect",
+    "value": "0x8e328",
+    "size": 444,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe8970",
+    "size": 128,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1close",
+    "demangled": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1close",
+    "value": "0x90870",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1send",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1send",
+    "value": "0x8e53c",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_MessageUtils_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_MessageUtils_00024CppProxy_nativeDestroy",
+    "value": "0x98968",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ILogger_00024CppProxy_setLogLevel",
+    "demangled": "Java_com_lemon_nuro_ILogger_00024CppProxy_setLogLevel",
+    "value": "0x969b8",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onSectionStatus",
+    "demangled": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onSectionStatus",
+    "value": "0x92880",
+    "size": 396,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSN4nuro12HttpCallbackE",
+    "demangled": "typeinfo name for nuro::HttpCallback",
+    "value": "0xb3ea0",
+    "size": 22,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro12HttpCallbackEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::HttpCallback>",
+    "value": "0xeb238",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro7ILoggerEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::ILogger>",
+    "value": "0xeb3a8",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onUserMessage",
+    "demangled": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onUserMessage",
+    "value": "0x92698",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_ifstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xe8bc8",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSN4nuro12ConversationE",
+    "demangled": "typeinfo name for nuro::Conversation",
+    "value": "0xae779",
+    "size": 22,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0xed0d0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_stringbuf<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0xaf54f",
+    "size": 69,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_instance",
+    "demangled": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_instance",
+    "value": "0x90448",
+    "size": 300,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1list",
+    "demangled": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1list",
+    "value": "0x90940",
+    "size": 420,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x93dd0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__end__",
+    "demangled": "__end__",
+    "value": "0xed0d0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4nuro8ToolCallC2ERKS0_",
+    "demangled": "nuro::ToolCall::{base ctor}(nuro::ToolCall const&)",
+    "value": "0x659f0",
+    "size": 488,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0xaf46e",
+    "size": 52,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro14ToolCallResultC2ERKS0_",
+    "demangled": "nuro::ToolCallResult::{base ctor}(nuro::ToolCallResult const&)",
+    "value": "0x22ab8",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1recoverRemoteSection",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1recoverRemoteSection",
+    "value": "0x8ec0c",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1config",
+    "demangled": "Java_com_lemon_nuro_ConversationHub_00024CppProxy_native_1config",
+    "value": "0x905cc",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_MessageUtils_00024CppProxy_toolCalls2JsonString",
+    "demangled": "Java_com_lemon_nuro_MessageUtils_00024CppProxy_toolCalls2JsonString",
+    "value": "0x98a94",
+    "size": 372,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_bss_end__",
+    "demangled": "_bss_end__",
+    "value": "0xed0d0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro10ITransportEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::ITransport>",
+    "value": "0xb63c3",
+    "size": 45,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro12ConversationEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::Conversation>",
+    "value": "0xeb148",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0xec278",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ITransportSender_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_ITransportSender_00024CppProxy_nativeDestroy",
+    "value": "0x973fc",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ofstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xaf409",
+    "size": 51,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1cancelRecoverRemoteSections",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1cancelRecoverRemoteSections",
+    "value": "0x8edac",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro20ConversationListenerEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::ConversationListener>",
+    "value": "0xb6bf2",
+    "size": 55,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSFvvE",
+    "demangled": "typeinfo name for void ()",
+    "value": "0xb5dfd",
+    "size": 5,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_FileUploadStatusCallback_00024CppProxy_nativeDestroy",
+    "value": "0x94588",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_stringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0xe8b18",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1recoverRemoteSections",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1recoverRemoteSections",
+    "value": "0x8ecc8",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onSystemMessage",
+    "demangled": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onSystemMessage",
+    "value": "0x92760",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_HttpCallback_00024CppProxy_native_1onResponse",
+    "demangled": "Java_com_lemon_nuro_HttpCallback_00024CppProxy_native_1onResponse",
+    "value": "0x94bb0",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_HttpCallback_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_HttpCallback_00024CppProxy_nativeDestroy",
+    "value": "0x94a84",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ITransportSender_00024CppProxy_native_1sendMessage",
+    "demangled": "Java_com_lemon_nuro_ITransportSender_00024CppProxy_native_1sendMessage",
+    "value": "0x97528",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSN4nuro19SyncChannelListenerE",
+    "demangled": "typeinfo name for nuro::SyncChannelListener",
+    "value": "0xb8107",
+    "size": 29,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro12InputMessageC2ENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8optionalINS_14MessageContentEEENS8_INS_7ContextEEENS8_INS_10ToolResultEEENS8_IS7_EE",
+    "demangled": "nuro::InputMessage::{base ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::optional<nuro::MessageContent>, std::__ndk1::optional<nuro::Context>, std::__ndk1::optional<nuro::ToolResult>, std::__ndk1::optional<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>)",
+    "value": "0x9830c",
+    "size": 568,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1retry",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1retry",
+    "value": "0x8e7f4",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1cancelRecoverRemoteSection",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1cancelRecoverRemoteSection",
+    "value": "0x8ec6c",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_end__",
+    "demangled": "__bss_end__",
+    "value": "0xed0d0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN4nuro12HttpCallbackE",
+    "demangled": "typeinfo for nuro::HttpCallback",
+    "value": "0xea7c8",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_stringbuf<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0xe8b30",
+    "size": 128,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSPFvvE",
+    "demangled": "typeinfo name for void (*)()",
+    "value": "0xb5df7",
+    "size": 6,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1popupHistoryMessages",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1popupHistoryMessages",
+    "value": "0x8e99c",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN4nuro12ConversationE",
+    "demangled": "typeinfo for nuro::Conversation",
+    "value": "0xe81f0",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro11ILogHandlerEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::ILogHandler>",
+    "value": "0xeb348",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk117bad_function_callE",
+    "demangled": "vtable for std::__ndk1::bad_function_call",
+    "value": "0xe84d0",
+    "size": 40,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1takeXray",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1takeXray",
+    "value": "0x8ee08",
+    "size": 376,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onTracingEvent",
+    "demangled": "Java_com_lemon_nuro_ConversationListener_00024CppProxy_native_1onTracingEvent",
+    "value": "0x92b50",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ITransportSender_00024CppProxy_native_1httpRequest",
+    "demangled": "Java_com_lemon_nuro_ITransportSender_00024CppProxy_native_1httpRequest",
+    "value": "0x97604",
+    "size": 528,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk110shared_ptrIN4nuro12HttpCallbackEEE",
+    "demangled": "typeinfo name for std::__ndk1::shared_ptr<nuro::HttpCallback>",
+    "value": "0xb7107",
+    "size": 47,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro11SyncChannel6createERKNS_18SyncChannelOptionsE",
+    "demangled": "nuro::SyncChannel::create(nuro::SyncChannelOptions const&)",
+    "value": "0x7c7b4",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_istream<char, std::__ndk1::char_traits<char>>",
+    "value": "0xaf4d5",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk110shared_ptrIN4nuro20ConversationListenerEEE",
+    "demangled": "typeinfo for std::__ndk1::shared_ptr<nuro::ConversationListener>",
+    "value": "0xeb218",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_SyncChannelListener_00024CppProxy_nativeDestroy",
+    "value": "0x9c0cc",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_ILogger_00024CppProxy_registerHandler",
+    "demangled": "Java_com_lemon_nuro_ILogger_00024CppProxy_registerHandler",
+    "value": "0x96894",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSN4nuro20ConversationListenerE",
+    "demangled": "typeinfo name for nuro::ConversationListener",
+    "value": "0xb6bd4",
+    "size": 30,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0xaf43c",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4nuro15ConversationHub8instanceEv",
+    "demangled": "nuro::ConversationHub::instance()",
+    "value": "0x17a64",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1setBabiParams",
+    "demangled": "Java_com_lemon_nuro_Conversation_00024CppProxy_native_1setBabiParams",
+    "value": "0x8eb3c",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_nativeDestroy",
+    "demangled": "Java_com_lemon_nuro_SyncChannel_00024CppProxy_nativeDestroy",
+    "value": "0x9a678",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

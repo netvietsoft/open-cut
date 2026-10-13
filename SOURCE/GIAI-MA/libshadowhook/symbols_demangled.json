@@ -1,0 +1,906 @@
+[
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "calloc",
+    "demangled": "calloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getauxval",
+    "demangled": "getauxval",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_lock",
+    "demangled": "pthread_mutex_lock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_unlock",
+    "demangled": "pthread_mutex_unlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "gettid",
+    "demangled": "gettid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_key_create",
+    "demangled": "pthread_key_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigsetjmp",
+    "demangled": "sigsetjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "syscall",
+    "demangled": "syscall",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlclose",
+    "demangled": "dlclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlopen",
+    "demangled": "dlopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_rwlock_rdlock",
+    "demangled": "pthread_rwlock_rdlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_rwlock_unlock",
+    "demangled": "pthread_rwlock_unlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_rwlock_wrlock",
+    "demangled": "pthread_rwlock_wrlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strdup",
+    "demangled": "strdup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "gettimeofday",
+    "demangled": "gettimeofday",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "realloc",
+    "demangled": "realloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlcpy",
+    "demangled": "strlcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strrchr",
+    "demangled": "strrchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__errno",
+    "demangled": "__errno",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlsym",
+    "demangled": "dlsym",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigaddset",
+    "demangled": "sigaddset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigaddset64",
+    "demangled": "sigaddset64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "sigemptyset",
+    "demangled": "sigemptyset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigemptyset64",
+    "demangled": "sigemptyset64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "sigfillset",
+    "demangled": "sigfillset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigfillset64",
+    "demangled": "sigfillset64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "sigismember",
+    "demangled": "sigismember",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigismember64",
+    "demangled": "sigismember64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "siglongjmp",
+    "demangled": "siglongjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_getspecific",
+    "demangled": "pthread_getspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setspecific",
+    "demangled": "pthread_setspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_destroy",
+    "demangled": "pthread_mutex_destroy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_init",
+    "demangled": "pthread_mutex_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mmap",
+    "demangled": "mmap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "munmap",
+    "demangled": "munmap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "prctl",
+    "demangled": "prctl",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__system_property_get",
+    "demangled": "__system_property_get",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atoi",
+    "demangled": "atoi",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fclose",
+    "demangled": "fclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fgets",
+    "demangled": "fgets",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fopen",
+    "demangled": "fopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getpagesize",
+    "demangled": "getpagesize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mprotect",
+    "demangled": "mprotect",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcmp",
+    "demangled": "strcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "write",
+    "demangled": "write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__open_2",
+    "demangled": "__open_2",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__read_chk",
+    "demangled": "__read_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "close",
+    "demangled": "close",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fstat",
+    "demangled": "fstat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "lseek",
+    "demangled": "lseek",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strchr_chk",
+    "demangled": "__strchr_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dl_iterate_phdr",
+    "demangled": "dl_iterate_phdr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "rewind",
+    "demangled": "rewind",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sscanf",
+    "demangled": "sscanf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x9394",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_debuggable",
+    "demangled": "shadowhook_get_debuggable",
+    "value": "0xeb18",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_set_recordable",
+    "demangled": "shadowhook_set_recordable",
+    "value": "0xeb28",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_dlsym_dynsym",
+    "demangled": "shadowhook_dlsym_dynsym",
+    "value": "0xfe80",
+    "size": 332,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_dlsym_symtab",
+    "demangled": "shadowhook_dlsym_symtab",
+    "value": "0xffcc",
+    "size": 332,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_sym_addr",
+    "demangled": "shadowhook_hook_sym_addr",
+    "value": "0xef24",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_sym_addr_2",
+    "demangled": "shadowhook_hook_sym_addr_2",
+    "value": "0xef6c",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_sym_name_2",
+    "demangled": "shadowhook_hook_sym_name_2",
+    "value": "0xf2b0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_func_addr",
+    "demangled": "shadowhook_hook_func_addr",
+    "value": "0xeb94",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_sym_name_callback_2",
+    "demangled": "shadowhook_hook_sym_name_callback_2",
+    "value": "0xf2ec",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_intercept_sym_name",
+    "demangled": "shadowhook_intercept_sym_name",
+    "value": "0xf9c0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_intercept_sym_name_callback",
+    "demangled": "shadowhook_intercept_sym_name_callback",
+    "value": "0xfbb4",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_unhook",
+    "demangled": "shadowhook_unhook",
+    "value": "0xf300",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_set_debuggable",
+    "demangled": "shadowhook_set_debuggable",
+    "value": "0xeb1c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_dlclose",
+    "demangled": "shadowhook_dlclose",
+    "value": "0xfe40",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_errno",
+    "demangled": "shadowhook_get_errno",
+    "value": "0xeb8c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_intercept_sym_addr",
+    "demangled": "shadowhook_intercept_sym_addr",
+    "value": "0xf894",
+    "size": 300,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_register_dl_init_callback",
+    "demangled": "shadowhook_register_dl_init_callback",
+    "value": "0x10118",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_init",
+    "demangled": "shadowhook_init",
+    "value": "0xe920",
+    "size": 480,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_interceptor_caller",
+    "demangled": "shadowhook_interceptor_caller",
+    "value": "0xbfd8",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_disallow_reentrant",
+    "demangled": "shadowhook_disallow_reentrant",
+    "value": "0x102f4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_return_address",
+    "demangled": "shadowhook_get_return_address",
+    "value": "0x102f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_register_dl_fini_callback",
+    "demangled": "shadowhook_register_dl_fini_callback",
+    "value": "0x10200",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_proxy_android_linker_soinfo_call_destructors",
+    "demangled": "shadowhook_proxy_android_linker_soinfo_call_destructors",
+    "value": "0x9d7c",
+    "size": 472,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_dlopen",
+    "demangled": "shadowhook_dlopen",
+    "value": "0xfcf8",
+    "size": 328,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_dump_records",
+    "demangled": "shadowhook_dump_records",
+    "value": "0xfcf4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_sym_name_callback",
+    "demangled": "shadowhook_hook_sym_name_callback",
+    "value": "0xf2cc",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_unintercept",
+    "demangled": "shadowhook_unintercept",
+    "value": "0xfbc8",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_interceptor_glue",
+    "demangled": "shadowhook_interceptor_glue",
+    "value": "0x11458",
+    "size": 396,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_dlsym",
+    "demangled": "shadowhook_dlsym",
+    "value": "0xfe44",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_prev_func",
+    "demangled": "shadowhook_get_prev_func",
+    "value": "0x102e8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_proxy_android_linker_soinfo_call_constructors",
+    "demangled": "shadowhook_proxy_android_linker_soinfo_call_constructors",
+    "value": "0x9604",
+    "size": 628,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_func_addr_2",
+    "demangled": "shadowhook_hook_func_addr_2",
+    "value": "0xedfc",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_intercept_func_addr",
+    "demangled": "shadowhook_intercept_func_addr",
+    "value": "0xf768",
+    "size": 300,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_pop_stack",
+    "demangled": "shadowhook_pop_stack",
+    "value": "0x102ec",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_unregister_dl_init_callback",
+    "demangled": "shadowhook_unregister_dl_init_callback",
+    "value": "0x1018c",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_recordable",
+    "demangled": "shadowhook_get_recordable",
+    "value": "0xeb24",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_records",
+    "demangled": "shadowhook_get_records",
+    "value": "0xfcf0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_set_disable",
+    "demangled": "shadowhook_set_disable",
+    "value": "0xeb3c",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_to_errmsg",
+    "demangled": "shadowhook_to_errmsg",
+    "value": "0xeb90",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_intercept_instr_addr",
+    "demangled": "shadowhook_intercept_instr_addr",
+    "value": "0xf428",
+    "size": 300,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_unregister_dl_fini_callback",
+    "demangled": "shadowhook_unregister_dl_fini_callback",
+    "value": "0x10274",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_mode",
+    "demangled": "shadowhook_get_mode",
+    "value": "0xeb0c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_sym_name",
+    "demangled": "shadowhook_hook_sym_name",
+    "value": "0xf094",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_disable",
+    "demangled": "shadowhook_get_disable",
+    "value": "0xeb30",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_version",
+    "demangled": "shadowhook_get_version",
+    "value": "0xe914",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_allow_reentrant",
+    "demangled": "shadowhook_allow_reentrant",
+    "value": "0x102f0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

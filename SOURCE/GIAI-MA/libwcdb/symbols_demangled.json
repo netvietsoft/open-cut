@@ -1,0 +1,3882 @@
+[
+  {
+    "name": "sqliterk_close",
+    "demangled": "sqliterk_close",
+    "value": "0x31a0c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strerror",
+    "demangled": "strerror",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "siglongjmp",
+    "demangled": "siglongjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fopen",
+    "demangled": "fopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_system_errno",
+    "demangled": "sqlite3_system_errno",
+    "value": "0x4440c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "gettimeofday",
+    "demangled": "gettimeofday",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_unset_flag",
+    "demangled": "sqlcipher_codec_ctx_unset_flag",
+    "value": "0x67ba0",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_vfs_register",
+    "demangled": "sqlite3_vfs_register",
+    "value": "0x6952c",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_limit",
+    "demangled": "sqlite3_limit",
+    "value": "0x44420",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_backup_remaining",
+    "demangled": "sqlite3_backup_remaining",
+    "value": "0x418dc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "gzclose",
+    "demangled": "gzclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_int64",
+    "demangled": "sqlite3_bind_int64",
+    "value": "0x86f0c",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_add_random",
+    "demangled": "sqlcipher_codec_add_random",
+    "value": "0x68058",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_free",
+    "demangled": "sqlcipher_codec_ctx_free",
+    "value": "0x67dc0",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_get_kdf_salt",
+    "demangled": "sqlcipher_codec_ctx_get_kdf_salt",
+    "value": "0x67cac",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_total_changes",
+    "demangled": "sqlite3_total_changes",
+    "value": "0x44064",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "asprintf",
+    "demangled": "asprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opendir",
+    "demangled": "opendir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_initialize",
+    "demangled": "sqlite3_initialize",
+    "value": "0x68f90",
+    "size": 1172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_sql",
+    "demangled": "sqlite3_sql",
+    "value": "0x41c84",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_busy_timeout",
+    "demangled": "sqlite3_busy_timeout",
+    "value": "0x4d74c",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_register",
+    "demangled": "sqliterk_register",
+    "value": "0x31b04",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_libversion",
+    "demangled": "sqlite3_libversion",
+    "value": "0x43fdc",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_prepare16_v2",
+    "demangled": "sqlite3_prepare16_v2",
+    "value": "0x102884",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strncpy",
+    "demangled": "strncpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_trace",
+    "demangled": "sqlite3_trace",
+    "value": "0x441c4",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "usleep",
+    "demangled": "usleep",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_detach",
+    "demangled": "pthread_detach",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigfillset",
+    "demangled": "sigfillset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_get_hmac_salt_mask",
+    "demangled": "sqlcipher_get_hmac_salt_mask",
+    "value": "0x67b4c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_blob",
+    "demangled": "sqlite3_column_blob",
+    "value": "0x7d1a4",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_fips_status",
+    "demangled": "sqlcipher_codec_fips_status",
+    "value": "0x68134",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_destroy",
+    "demangled": "pthread_mutex_destroy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_create_module",
+    "demangled": "sqlite3_create_module",
+    "value": "0x872a4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "close",
+    "demangled": "close",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_strlike",
+    "demangled": "sqlite3_strlike",
+    "value": "0x5b1e0",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "inflate",
+    "demangled": "inflate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_create_collation16",
+    "demangled": "sqlite3_create_collation16",
+    "value": "0x95824",
+    "size": 348,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_reset",
+    "demangled": "sqlite3_reset",
+    "value": "0xc3fac",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_recover_cancel",
+    "demangled": "mm_recover_cancel",
+    "value": "0x3a008",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_user_data",
+    "demangled": "sqlite3_user_data",
+    "value": "0x41ac8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_get_default_kdf_iter",
+    "demangled": "sqlcipher_get_default_kdf_iter",
+    "value": "0x67a4c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_uri_boolean",
+    "demangled": "sqlite3_uri_boolean",
+    "value": "0x4f270",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_unregister_custom_provider",
+    "demangled": "sqlcipher_unregister_custom_provider",
+    "value": "0x4b720",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_free",
+    "demangled": "sqlcipher_free",
+    "value": "0x67538",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutexattr_settype",
+    "demangled": "pthread_mutexattr_settype",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__system_property_get",
+    "demangled": "__system_property_get",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_get_fallback_provider",
+    "demangled": "sqlcipher_get_fallback_provider",
+    "value": "0x3f390",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_config",
+    "demangled": "sqlite3_config",
+    "value": "0x68828",
+    "size": 1896,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_column_rowid",
+    "demangled": "sqliterk_column_rowid",
+    "value": "0x31af0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_blob64",
+    "demangled": "sqlite3_result_blob64",
+    "value": "0x77e00",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getenv",
+    "demangled": "getenv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_register_notify",
+    "demangled": "sqliterk_register_notify",
+    "value": "0x319cc",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_name",
+    "demangled": "sqlite3_column_name",
+    "value": "0x4b8e8",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_join",
+    "demangled": "pthread_join",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_set_kdf_iter",
+    "demangled": "sqlcipher_codec_ctx_set_kdf_iter",
+    "value": "0x67a58",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_create_function",
+    "demangled": "sqlite3_create_function",
+    "value": "0x950d4",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_exec",
+    "demangled": "sqlite3_exec",
+    "value": "0xdf720",
+    "size": 1108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_fts5_may_be_corrupt",
+    "demangled": "sqlite3_fts5_may_be_corrupt",
+    "value": "0x1bdec8",
+    "size": 4,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mm_set_last_error",
+    "demangled": "sqlite3_mm_set_last_error",
+    "value": "0x3e4ec",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fcntl",
+    "demangled": "fcntl",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_int",
+    "demangled": "sqlite3_value_int",
+    "value": "0x59598",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_text",
+    "demangled": "sqlite3_result_text",
+    "value": "0x77548",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mm_clear_error",
+    "demangled": "sqlite3_mm_clear_error",
+    "value": "0x3e5c0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "lstat",
+    "demangled": "lstat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_set_hmac_salt_mask",
+    "demangled": "sqlcipher_set_hmac_salt_mask",
+    "value": "0x67b40",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_trylock",
+    "demangled": "pthread_mutex_trylock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_vtab_config",
+    "demangled": "sqlite3_vtab_config",
+    "value": "0x83474",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_memcmp",
+    "demangled": "sqlcipher_memcmp",
+    "value": "0x67530",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_trace_v2",
+    "demangled": "sqlite3_trace_v2",
+    "value": "0x44220",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_page_count",
+    "demangled": "sqliterk_page_count",
+    "value": "0x31b28",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_backup_statistics",
+    "demangled": "mm_backup_statistics",
+    "value": "0x39fe8",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_blob_open",
+    "demangled": "sqlite3_blob_open",
+    "value": "0xea358",
+    "size": 2008,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_write",
+    "demangled": "__android_log_write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_wal_autocheckpoint",
+    "demangled": "sqlite3_wal_autocheckpoint",
+    "value": "0x4d7a8",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_get_autocommit",
+    "demangled": "sqlite3_get_autocommit",
+    "value": "0x444f0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_set_user_info",
+    "demangled": "sqliterk_set_user_info",
+    "value": "0x31a14",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_key_copy",
+    "demangled": "sqlcipher_codec_key_copy",
+    "value": "0x68014",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_parse_master",
+    "demangled": "sqliterk_parse_master",
+    "value": "0x31a08",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_parameter_name",
+    "demangled": "sqlite3_bind_parameter_name",
+    "value": "0x41b78",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "WX_BUILD_INFO",
+    "demangled": "WX_BUILD_INFO",
+    "value": "0x27",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_open",
+    "demangled": "sqlite3_open",
+    "value": "0xcaba0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fchmod",
+    "demangled": "fchmod",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_get_pagesize",
+    "demangled": "sqlcipher_codec_ctx_get_pagesize",
+    "value": "0x67d18",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_key_derive",
+    "demangled": "sqlcipher_codec_key_derive",
+    "value": "0x80d0c",
+    "size": 400,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pwrite64",
+    "demangled": "pwrite64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_libversion_number",
+    "demangled": "sqlite3_libversion_number",
+    "value": "0x43ff4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "readlink",
+    "demangled": "readlink",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sscanf",
+    "demangled": "sscanf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_int",
+    "demangled": "sqlite3_bind_int",
+    "value": "0x87004",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fread",
+    "demangled": "fread",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sysconf",
+    "demangled": "sysconf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strchr",
+    "demangled": "strchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_prepare16",
+    "demangled": "sqlite3_prepare16",
+    "value": "0x102870",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "calloc",
+    "demangled": "calloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_auto_extension",
+    "demangled": "sqlite3_auto_extension",
+    "value": "0xc99d4",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_key_delete",
+    "demangled": "pthread_key_delete",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "mkdir",
+    "demangled": "mkdir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcmp",
+    "demangled": "strcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_stmt_readonly",
+    "demangled": "sqlite3_stmt_readonly",
+    "value": "0x41bc0",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_extended_result_codes",
+    "demangled": "sqlite3_extended_result_codes",
+    "value": "0x444fc",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_table_type",
+    "demangled": "sqliterk_table_type",
+    "value": "0x31b00",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_create_module_v2",
+    "demangled": "sqlite3_create_module_v2",
+    "value": "0x872ac",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_parsed_page_count",
+    "demangled": "sqliterk_parsed_page_count",
+    "value": "0x31b20",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atol",
+    "demangled": "atol",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_parse_page",
+    "demangled": "sqliterk_parse_page",
+    "value": "0x31a04",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mutex_alloc",
+    "demangled": "sqlite3_mutex_alloc",
+    "value": "0x69664",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_name16",
+    "demangled": "sqlite3_column_name16",
+    "value": "0x4b8f8",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_table_get_user_info",
+    "demangled": "sqliterk_table_get_user_info",
+    "value": "0x31afc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_output",
+    "demangled": "sqliterk_output",
+    "value": "0x361b8",
+    "size": 1544,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ftruncate",
+    "demangled": "ftruncate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_get_use_hmac",
+    "demangled": "sqlcipher_codec_ctx_get_use_hmac",
+    "value": "0x67b58",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getcwd",
+    "demangled": "getcwd",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_destroy",
+    "demangled": "pthread_cond_destroy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_bytes16",
+    "demangled": "sqlite3_column_bytes16",
+    "value": "0x7c88c",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sprintf",
+    "demangled": "sprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_db_handle",
+    "demangled": "sqlite3_db_handle",
+    "value": "0x41bac",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getpid",
+    "demangled": "getpid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_key",
+    "demangled": "sqlite3_key",
+    "value": "0x69948",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__sF",
+    "demangled": "__sF",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_text16be",
+    "demangled": "sqlite3_result_text16be",
+    "value": "0x774c0",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "chmod",
+    "demangled": "chmod",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_table_name",
+    "demangled": "sqliterk_table_name",
+    "value": "0x31af4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_blob64",
+    "demangled": "sqlite3_bind_blob64",
+    "value": "0x864ac",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_interrupt",
+    "demangled": "sqlite3_interrupt",
+    "value": "0x441b8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_register_mm_utils",
+    "demangled": "sqlite3_register_mm_utils",
+    "value": "0x3e5cc",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setspecific",
+    "demangled": "pthread_setspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "sqlite3_stmt_busy",
+    "demangled": "sqlite3_stmt_busy",
+    "value": "0x41bd8",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "read",
+    "demangled": "read",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_enable_shared_cache",
+    "demangled": "sqlite3_enable_shared_cache",
+    "value": "0x414a4",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_text16le",
+    "demangled": "sqlite3_value_text16le",
+    "value": "0x7cb20",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_set_fast_kdf_iter",
+    "demangled": "sqlcipher_codec_ctx_set_fast_kdf_iter",
+    "value": "0x67ab0",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_once",
+    "demangled": "pthread_once",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "sqlite3_result_error",
+    "demangled": "sqlite3_result_error",
+    "value": "0x76748",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__google_potentially_blocking_region_end",
+    "demangled": "__google_potentially_blocking_region_end",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "sqlite3_preupdate_hook",
+    "demangled": "sqlite3_preupdate_hook",
+    "value": "0x108a24",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_create_collation_v2",
+    "demangled": "sqlite3_create_collation_v2",
+    "value": "0x95780",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_set_recursive",
+    "demangled": "sqliterk_set_recursive",
+    "value": "0x32c60",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_test_control",
+    "demangled": "sqlite3_test_control",
+    "value": "0xc8fec",
+    "size": 2536,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "feof",
+    "demangled": "feof",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_errmsg16",
+    "demangled": "sqlite3_errmsg16",
+    "value": "0x95980",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_get_flag",
+    "demangled": "sqlcipher_codec_ctx_get_flag",
+    "value": "0x67c78",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "access",
+    "demangled": "access",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_set_error",
+    "demangled": "sqlcipher_codec_ctx_set_error",
+    "value": "0x684ec",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_ismemset",
+    "demangled": "sqlcipher_ismemset",
+    "value": "0x67428",
+    "size": 264,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_malloc64",
+    "demangled": "sqlite3_malloc64",
+    "value": "0x6d294",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflate",
+    "demangled": "deflate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_malloc",
+    "demangled": "sqlcipher_malloc",
+    "value": "0x67668",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_parse",
+    "demangled": "sqliterk_parse",
+    "value": "0x31a00",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mm_set_cipher_key",
+    "demangled": "sqlite3_mm_set_cipher_key",
+    "value": "0x3ecdc",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_column_integer64",
+    "demangled": "sqliterk_column_integer64",
+    "value": "0x31a64",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_rollback_hook",
+    "demangled": "sqlite3_rollback_hook",
+    "value": "0x44374",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutexattr_destroy",
+    "demangled": "pthread_mutexattr_destroy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_busy_handler",
+    "demangled": "sqlite3_busy_handler",
+    "value": "0x440f8",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_vfs_find",
+    "demangled": "sqlite3_vfs_find",
+    "value": "0x69424",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fclose",
+    "demangled": "fclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_shutdown",
+    "demangled": "sqlite3_shutdown",
+    "value": "0xc9b3c",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_backup_init",
+    "demangled": "mm_backup_init",
+    "value": "0x396ec",
+    "size": 880,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_int",
+    "demangled": "sqlite3_result_int",
+    "value": "0x612b8",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_db_filename",
+    "demangled": "sqlite3_db_filename",
+    "value": "0x445dc",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "realloc",
+    "demangled": "realloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_pragma",
+    "demangled": "sqlcipher_codec_pragma",
+    "value": "0xcb1d0",
+    "size": 3028,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_set_flag",
+    "demangled": "sqlcipher_codec_ctx_set_flag",
+    "value": "0x67b74",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_collation_needed",
+    "demangled": "sqlite3_collation_needed",
+    "value": "0x44458",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_parameter_count",
+    "demangled": "sqlite3_bind_parameter_count",
+    "value": "0x41b64",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtod",
+    "demangled": "strtod",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_sourceid",
+    "demangled": "sqlite3_sourceid",
+    "value": "0x43fe8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_load_master",
+    "demangled": "sqliterk_load_master",
+    "value": "0x37104",
+    "size": 2664,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mutex_free",
+    "demangled": "sqlite3_mutex_free",
+    "value": "0x3f5dc",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_register_custom_provider",
+    "demangled": "sqlcipher_register_custom_provider",
+    "value": "0x6d318",
+    "size": 480,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_null",
+    "demangled": "sqlite3_result_null",
+    "value": "0x61390",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_backup_cancel",
+    "demangled": "mm_backup_cancel",
+    "value": "0x39f30",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "munmap",
+    "demangled": "munmap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fprintf",
+    "demangled": "fprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_parameter_index",
+    "demangled": "sqlite3_bind_parameter_index",
+    "value": "0x4a4a4",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_profile",
+    "demangled": "sqlite3_profile",
+    "value": "0x44290",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_type",
+    "demangled": "sqlite3_value_type",
+    "value": "0x41a98",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_vfs_unregister",
+    "demangled": "sqlite3_vfs_unregister",
+    "value": "0x511c8",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_double",
+    "demangled": "sqlite3_column_double",
+    "value": "0x60cc8",
+    "size": 264,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_expired",
+    "demangled": "sqlite3_expired",
+    "value": "0x41a64",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_status64",
+    "demangled": "sqlite3_status64",
+    "value": "0x8300c",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_activate",
+    "demangled": "sqlcipher_activate",
+    "value": "0x696b8",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_exportFunc",
+    "demangled": "sqlcipher_exportFunc",
+    "value": "0xe0468",
+    "size": 816,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strncmp",
+    "demangled": "strncmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_recover_statistics",
+    "demangled": "mm_recover_statistics",
+    "value": "0x3a048",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_errcode",
+    "demangled": "sqlite3_errcode",
+    "value": "0x84e20",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_register_mm_tokenizer",
+    "demangled": "sqlite3_register_mm_tokenizer",
+    "value": "0x3e428",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fputc",
+    "demangled": "fputc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_compileoption_used",
+    "demangled": "sqlite3_compileoption_used",
+    "value": "0x48bd0",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_get_reservesize",
+    "demangled": "sqlcipher_codec_ctx_get_reservesize",
+    "value": "0x67c98",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "log",
+    "demangled": "log",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_description",
+    "demangled": "sqliterk_description",
+    "value": "0x31b1c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_integrity",
+    "demangled": "sqliterk_integrity",
+    "value": "0x31b2c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_aggregate_count",
+    "demangled": "sqlite3_aggregate_count",
+    "value": "0x41b28",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_complete",
+    "demangled": "sqlite3_complete",
+    "value": "0x43c94",
+    "size": 840,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_sleep",
+    "demangled": "sqlite3_sleep",
+    "value": "0x694cc",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "snprintf",
+    "demangled": "snprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_int",
+    "demangled": "sqlite3_column_int",
+    "value": "0x60fbc",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_errmsg",
+    "demangled": "sqlite3_errmsg",
+    "value": "0x86744",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_key_v2",
+    "demangled": "sqlite3_key_v2",
+    "value": "0x6987c",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x28988",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_soft_heap_limit",
+    "demangled": "sqlite3_soft_heap_limit",
+    "value": "0x99a8c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_text16le",
+    "demangled": "sqlite3_result_text16le",
+    "value": "0x77504",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_preupdate_depth",
+    "demangled": "sqlite3_preupdate_depth",
+    "value": "0x687a0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_update_hook",
+    "demangled": "sqlite3_update_hook",
+    "value": "0x44328",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_custom_setup",
+    "demangled": "sqlcipher_custom_setup",
+    "value": "0x68278",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "gzflush",
+    "demangled": "gzflush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "deflateInit_",
+    "demangled": "deflateInit_",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_get_table",
+    "demangled": "sqlite3_get_table",
+    "value": "0xdfb74",
+    "size": 476,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_type",
+    "demangled": "sqlite3_column_type",
+    "value": "0x60ebc",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_create_collation",
+    "demangled": "sqlite3_create_collation",
+    "value": "0x9581c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_step",
+    "demangled": "sqlite3_step",
+    "value": "0xde6e0",
+    "size": 4160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ftell",
+    "demangled": "ftell",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "remove",
+    "demangled": "remove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ferror",
+    "demangled": "ferror",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_db_cacheflush",
+    "demangled": "sqlite3_db_cacheflush",
+    "value": "0xad82c",
+    "size": 360,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_unlock",
+    "demangled": "pthread_mutex_unlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_db_mutex",
+    "demangled": "sqlite3_db_mutex",
+    "value": "0x44008",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_column_number",
+    "demangled": "sqliterk_column_number",
+    "value": "0x31a80",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_get_default_pagesize",
+    "demangled": "sqlcipher_get_default_pagesize",
+    "value": "0x67db4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_backup_finish",
+    "demangled": "sqlite3_backup_finish",
+    "value": "0xaf324",
+    "size": 328,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_vtab_on_conflict",
+    "demangled": "sqlite3_vtab_on_conflict",
+    "value": "0x42f14",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_aggregate_context",
+    "demangled": "sqlite3_aggregate_context",
+    "value": "0x78a4c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "connect",
+    "demangled": "connect",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigdelset",
+    "demangled": "sigdelset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_int64",
+    "demangled": "sqlite3_column_int64",
+    "value": "0x610bc",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_open",
+    "demangled": "sqliterk_open",
+    "value": "0x319f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_status",
+    "demangled": "sqlite3_status",
+    "value": "0x830d0",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlsym",
+    "demangled": "dlsym",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_data_count",
+    "demangled": "sqlite3_data_count",
+    "value": "0x41b48",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_enable_load_extension",
+    "demangled": "sqlite3_enable_load_extension",
+    "value": "0x687bc",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_uri_parameter",
+    "demangled": "sqlite3_uri_parameter",
+    "value": "0x4907c",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_db_status",
+    "demangled": "sqlite3_db_status",
+    "value": "0x65664",
+    "size": 1364,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mremap",
+    "demangled": "mremap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_error16",
+    "demangled": "sqlite3_result_error16",
+    "value": "0x76cfc",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_get_provider",
+    "demangled": "sqlcipher_get_provider",
+    "value": "0x3f280",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_overload_function",
+    "demangled": "sqlite3_overload_function",
+    "value": "0x952f8",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_wait",
+    "demangled": "pthread_cond_wait",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_close",
+    "demangled": "sqlite3_close",
+    "value": "0xaf5f8",
+    "size": 384,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlclose",
+    "demangled": "dlclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_set_use_hmac",
+    "demangled": "sqlcipher_codec_ctx_set_use_hmac",
+    "value": "0x67bd0",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_error_toobig",
+    "demangled": "sqlite3_result_error_toobig",
+    "value": "0x77188",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_blob_reopen",
+    "demangled": "sqlite3_blob_reopen",
+    "value": "0xeab30",
+    "size": 272,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_memory_alarm",
+    "demangled": "sqlite3_memory_alarm",
+    "value": "0x68374",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "inflateEnd",
+    "demangled": "inflateEnd",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_backup_run",
+    "demangled": "mm_backup_run",
+    "value": "0x39a5c",
+    "size": 1236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_free_table",
+    "demangled": "sqlite3_free_table",
+    "value": "0x4af90",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_release_memory",
+    "demangled": "sqlite3_release_memory",
+    "value": "0x5341c",
+    "size": 388,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_register_mm_cipher",
+    "demangled": "sqlite3_register_mm_cipher",
+    "value": "0x3eb60",
+    "size": 380,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_snprintf",
+    "demangled": "sqlite3_snprintf",
+    "value": "0x7c4dc",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlerror",
+    "demangled": "dlerror",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_get_provider_version",
+    "demangled": "sqlcipher_codec_get_provider_version",
+    "value": "0x68158",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_register_provider",
+    "demangled": "sqlcipher_register_provider",
+    "value": "0x6757c",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_open16",
+    "demangled": "sqlite3_open16",
+    "value": "0x108850",
+    "size": 468,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_free_master",
+    "demangled": "sqliterk_free_master",
+    "value": "0x35f30",
+    "size": 356,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_blob_write",
+    "demangled": "sqlite3_blob_write",
+    "value": "0xc3fa0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "poll",
+    "demangled": "poll",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_bytes",
+    "demangled": "sqlite3_column_bytes",
+    "value": "0x7c9e0",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_text16be",
+    "demangled": "sqlite3_value_text16be",
+    "value": "0x7cae0",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_count",
+    "demangled": "sqlite3_column_count",
+    "value": "0x41b34",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_randomness",
+    "demangled": "sqlite3_randomness",
+    "value": "0x9f1c0",
+    "size": 700,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigprocmask",
+    "demangled": "sigprocmask",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_create",
+    "demangled": "pthread_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_broadcast",
+    "demangled": "pthread_cond_broadcast",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_create_function16",
+    "demangled": "sqlite3_create_function16",
+    "value": "0x950f8",
+    "size": 512,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_uri_int64",
+    "demangled": "sqlite3_uri_int64",
+    "value": "0x4f40c",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_set_auxdata",
+    "demangled": "sqlite3_set_auxdata",
+    "value": "0x5d074",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fwrite",
+    "demangled": "fwrite",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_double",
+    "demangled": "sqlite3_bind_double",
+    "value": "0x86624",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_db_readonly",
+    "demangled": "sqlite3_db_readonly",
+    "value": "0x44620",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_text",
+    "demangled": "sqlite3_column_text",
+    "value": "0x7d4ac",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mutex_leave",
+    "demangled": "sqlite3_mutex_leave",
+    "value": "0x3f648",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_text64",
+    "demangled": "sqlite3_bind_text64",
+    "value": "0x864f4",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mmap",
+    "demangled": "mmap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_get_auxdata",
+    "demangled": "sqlite3_get_auxdata",
+    "value": "0x41ae0",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_wal_hook",
+    "demangled": "sqlite3_wal_hook",
+    "value": "0x443c0",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_memory_highwater",
+    "demangled": "sqlite3_memory_highwater",
+    "value": "0x8319c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fileno",
+    "demangled": "fileno",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_vsnprintf",
+    "demangled": "sqlite3_vsnprintf",
+    "value": "0x7c438",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_compileoption_get",
+    "demangled": "sqlite3_compileoption_get",
+    "value": "0x3f59c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_column_integer",
+    "demangled": "sqliterk_column_integer",
+    "value": "0x31a48",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_text16",
+    "demangled": "sqlite3_value_text16",
+    "value": "0x7cb60",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_column_type",
+    "demangled": "sqliterk_column_type",
+    "value": "0x31a2c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "utimes",
+    "demangled": "utimes",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_guard",
+    "demangled": "__stack_chk_guard",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "chown",
+    "demangled": "chown",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_transfer_bindings",
+    "demangled": "sqlite3_transfer_bindings",
+    "value": "0x6213c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_null",
+    "demangled": "sqlite3_bind_null",
+    "value": "0x86580",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_extended_errcode",
+    "demangled": "sqlite3_extended_errcode",
+    "value": "0x84d6c",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mutex_enter",
+    "demangled": "sqlite3_mutex_enter",
+    "value": "0x3f5fc",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_memory_used",
+    "demangled": "sqlite3_memory_used",
+    "value": "0x83148",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_os_end",
+    "demangled": "sqlite3_os_end",
+    "value": "0x6837c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_set_default_use_hmac",
+    "demangled": "sqlcipher_set_default_use_hmac",
+    "value": "0x67b08",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_blob_read",
+    "demangled": "sqlite3_blob_read",
+    "value": "0xc3f94",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_preupdate_new",
+    "demangled": "sqlite3_preupdate_new",
+    "value": "0x831f0",
+    "size": 644,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_next_stmt",
+    "demangled": "sqlite3_next_stmt",
+    "value": "0x41c14",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_temp_directory",
+    "demangled": "sqlite3_temp_directory",
+    "value": "0x1bf668",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "syscall",
+    "demangled": "syscall",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_backup_last_error",
+    "demangled": "mm_backup_last_error",
+    "value": "0x39ff8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_init",
+    "demangled": "pthread_mutex_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_errstr",
+    "demangled": "sqlite3_errstr",
+    "value": "0x50f10",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_set_default_kdf_iter",
+    "demangled": "sqlcipher_set_default_kdf_iter",
+    "value": "0x67a40",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlopen",
+    "demangled": "dlopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_signal",
+    "demangled": "pthread_cond_signal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_context_db_handle",
+    "demangled": "sqlite3_context_db_handle",
+    "value": "0x41ad4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_page_cipher",
+    "demangled": "sqlcipher_page_cipher",
+    "value": "0x67e18",
+    "size": 508,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_free",
+    "demangled": "sqlite3_value_free",
+    "value": "0x61d88",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__google_potentially_blocking_region_begin",
+    "demangled": "__google_potentially_blocking_region_begin",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "deflateEnd",
+    "demangled": "deflateEnd",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mmftsext_init",
+    "demangled": "sqlite3_mmftsext_init",
+    "value": "0x3d910",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_value",
+    "demangled": "sqlite3_result_value",
+    "value": "0x78898",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_global_recover",
+    "demangled": "sqlite3_global_recover",
+    "value": "0x108a70",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "stat",
+    "demangled": "stat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_getspecific",
+    "demangled": "pthread_getspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "gzwrite",
+    "demangled": "gzwrite",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_set_pass",
+    "demangled": "sqlcipher_codec_ctx_set_pass",
+    "value": "0x67934",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_value",
+    "demangled": "sqlite3_bind_value",
+    "value": "0x8700c",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_cancel_auto_extension",
+    "demangled": "sqlite3_cancel_auto_extension",
+    "value": "0x42c74",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_db_config",
+    "demangled": "sqlite3_db_config",
+    "value": "0x543d4",
+    "size": 600,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_register_vfslog",
+    "demangled": "sqlite3_register_vfslog",
+    "value": "0x3d81c",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_get_fast_kdf_iter",
+    "demangled": "sqlcipher_codec_ctx_get_fast_kdf_iter",
+    "value": "0x67af0",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_blob_bytes",
+    "demangled": "sqlite3_blob_bytes",
+    "value": "0x41db8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getuid",
+    "demangled": "getuid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_column_count",
+    "demangled": "sqliterk_column_count",
+    "value": "0x31a18",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_set_pagesize",
+    "demangled": "sqlcipher_codec_ctx_set_pagesize",
+    "value": "0x67cd0",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_blob_close",
+    "demangled": "sqlite3_blob_close",
+    "value": "0xc41e4",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_error_code",
+    "demangled": "sqlite3_result_error_code",
+    "value": "0x76d30",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pread64",
+    "demangled": "pread64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_preupdate_old",
+    "demangled": "sqlite3_preupdate_old",
+    "value": "0xab43c",
+    "size": 612,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_stricmp",
+    "demangled": "sqlite3_stricmp",
+    "value": "0x3f88c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_vmprintf",
+    "demangled": "sqlite3_vmprintf",
+    "value": "0x99a9c",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_data_directory",
+    "demangled": "sqlite3_data_directory",
+    "value": "0x1bf688",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_valid_page_count",
+    "demangled": "sqliterk_valid_page_count",
+    "value": "0x31b24",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_get_cipher_provider",
+    "demangled": "sqlcipher_codec_get_cipher_provider",
+    "value": "0x68034",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_decltype",
+    "demangled": "sqlite3_column_decltype",
+    "value": "0x4b908",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_changes",
+    "demangled": "sqlite3_changes",
+    "value": "0x4405c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atoi",
+    "demangled": "atoi",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_text16",
+    "demangled": "sqlite3_bind_text16",
+    "value": "0x86560",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "inflateInit_",
+    "demangled": "inflateInit_",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_subtype",
+    "demangled": "sqlite3_value_subtype",
+    "value": "0x41a7c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_recover_last_error",
+    "demangled": "mm_recover_last_error",
+    "value": "0x3a064",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_activate_see",
+    "demangled": "sqlite3_activate_see",
+    "value": "0x67418",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vfprintf",
+    "demangled": "vfprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fseek",
+    "demangled": "fseek",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_wal_checkpoint_v2",
+    "demangled": "sqlite3_wal_checkpoint_v2",
+    "value": "0xc2e10",
+    "size": 312,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_bytes16",
+    "demangled": "sqlite3_value_bytes16",
+    "value": "0x7c820",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_save_master",
+    "demangled": "sqliterk_save_master",
+    "value": "0x3577c",
+    "size": 1628,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_zeroblob",
+    "demangled": "sqlite3_result_zeroblob",
+    "value": "0x61bb8",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "rmdir",
+    "demangled": "rmdir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_double",
+    "demangled": "sqlite3_result_double",
+    "value": "0x61584",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_zeroblob64",
+    "demangled": "sqlite3_result_zeroblob64",
+    "value": "0x62318",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_subtype",
+    "demangled": "sqlite3_result_subtype",
+    "value": "0x41ab0",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_db_release_memory",
+    "demangled": "sqlite3_db_release_memory",
+    "value": "0x58b94",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_text",
+    "demangled": "sqlite3_bind_text",
+    "value": "0x864ec",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_decltype16",
+    "demangled": "sqlite3_column_decltype16",
+    "value": "0x4b918",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "gzopen",
+    "demangled": "gzopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_text64",
+    "demangled": "sqlite3_result_text64",
+    "value": "0x77228",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_recover_init",
+    "demangled": "mm_recover_init",
+    "value": "0x3a24c",
+    "size": 544,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_table_root",
+    "demangled": "sqliterk_table_root",
+    "value": "0x31b08",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_msize",
+    "demangled": "sqlite3_msize",
+    "value": "0x3f6c0",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigaction",
+    "demangled": "sigaction",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_declare_vtab",
+    "demangled": "sqlite3_declare_vtab",
+    "value": "0x10656c",
+    "size": 540,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "write",
+    "demangled": "write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_progress_handler",
+    "demangled": "sqlite3_progress_handler",
+    "value": "0x44148",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_table_column_metadata",
+    "demangled": "sqlite3_table_column_metadata",
+    "value": "0xe21c8",
+    "size": 848,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_memset",
+    "demangled": "sqlcipher_memset",
+    "value": "0x6741c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_blob",
+    "demangled": "sqlite3_bind_blob",
+    "value": "0x864a4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__errno",
+    "demangled": "__errno",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_rekey_v2",
+    "demangled": "sqlite3_rekey_v2",
+    "value": "0xacd28",
+    "size": 520,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_deactivate",
+    "demangled": "sqlcipher_deactivate",
+    "value": "0x6995c",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_os_init",
+    "demangled": "sqlite3_os_init",
+    "value": "0x69610",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getauxval",
+    "demangled": "getauxval",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "sqlite3_value_dup",
+    "demangled": "sqlite3_value_dup",
+    "value": "0x78770",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutexattr_init",
+    "demangled": "pthread_mutexattr_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atof",
+    "demangled": "atof",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_lock",
+    "demangled": "pthread_mutex_lock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_get_kdf_iter",
+    "demangled": "sqlcipher_codec_ctx_get_kdf_iter",
+    "value": "0x67a98",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_prepare",
+    "demangled": "sqlite3_prepare",
+    "value": "0xd59ec",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_column_binary",
+    "demangled": "sqliterk_column_binary",
+    "value": "0x31ab8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_backup_step",
+    "demangled": "sqlite3_backup_step",
+    "value": "0xacf44",
+    "size": 1984,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_clear_bindings",
+    "demangled": "sqlite3_clear_bindings",
+    "value": "0x61c20",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_bytes",
+    "demangled": "sqlite3_value_bytes",
+    "value": "0x7c98c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_wal_checkpoint",
+    "demangled": "sqlite3_wal_checkpoint",
+    "value": "0xc2f48",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtoll",
+    "demangled": "strtoll",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "readdir",
+    "demangled": "readdir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_threadsafe",
+    "demangled": "sqlite3_threadsafe",
+    "value": "0x44000",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_set_authorizer",
+    "demangled": "sqlite3_set_authorizer",
+    "value": "0x426c0",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "qsort",
+    "demangled": "qsort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_thread_cleanup",
+    "demangled": "sqlite3_thread_cleanup",
+    "value": "0x444f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_log",
+    "demangled": "sqlite3_log",
+    "value": "0x81170",
+    "size": 356,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_finalize",
+    "demangled": "sqlite3_finalize",
+    "value": "0xc4078",
+    "size": 364,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_get_data",
+    "demangled": "sqlcipher_codec_ctx_get_data",
+    "value": "0x67ca4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_text16",
+    "demangled": "sqlite3_result_text16",
+    "value": "0x77da4",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_prepare_v2",
+    "demangled": "sqlite3_prepare_v2",
+    "value": "0xd5c20",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_strglob",
+    "demangled": "sqlite3_strglob",
+    "value": "0x5ae38",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mutex_try",
+    "demangled": "sqlite3_mutex_try",
+    "value": "0x3f61c",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_rekey",
+    "demangled": "sqlite3_rekey",
+    "value": "0xacf30",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_last_insert_rowid",
+    "demangled": "sqlite3_last_insert_rowid",
+    "value": "0x44054",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "localtime",
+    "demangled": "localtime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_complete16",
+    "demangled": "sqlite3_complete16",
+    "value": "0xc9c10",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fflush",
+    "demangled": "fflush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlcpy",
+    "demangled": "strlcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtoul",
+    "demangled": "strtoul",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_make_master",
+    "demangled": "sqliterk_make_master",
+    "value": "0x36bac",
+    "size": 1368,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_version",
+    "demangled": "sqlite3_version",
+    "value": "0x1575b0",
+    "size": 7,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_key_create",
+    "demangled": "pthread_key_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "sqlite3_result_blob",
+    "demangled": "sqlite3_result_blob",
+    "value": "0x77958",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_double",
+    "demangled": "sqlite3_value_double",
+    "value": "0x56294",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_file_control",
+    "demangled": "sqlite3_file_control",
+    "value": "0x59ab8",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_free",
+    "demangled": "sqlite3_free",
+    "value": "0x4ad2c",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_text",
+    "demangled": "sqlite3_value_text",
+    "value": "0x7ccb8",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_open_v2",
+    "demangled": "sqlite3_open_v2",
+    "value": "0x10884c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_zeroblob64",
+    "demangled": "sqlite3_bind_zeroblob64",
+    "value": "0x86e60",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_close_v2",
+    "demangled": "sqlite3_close_v2",
+    "value": "0xaf778",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_realloc",
+    "demangled": "sqlite3_realloc",
+    "value": "0x6d2cc",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_reset_auto_extension",
+    "demangled": "sqlite3_reset_auto_extension",
+    "value": "0xc9ab8",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_column_text",
+    "demangled": "sqliterk_column_text",
+    "value": "0x31a9c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_mprintf",
+    "demangled": "sqlite3_mprintf",
+    "value": "0x9ad24",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "lseek",
+    "demangled": "lseek",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_preupdate_count",
+    "demangled": "sqlite3_preupdate_count",
+    "value": "0x68788",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_value",
+    "demangled": "sqlite3_column_value",
+    "value": "0x60dd0",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_blob",
+    "demangled": "sqlite3_value_blob",
+    "value": "0x7cd24",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_backup_init",
+    "demangled": "sqlite3_backup_init",
+    "value": "0xb0970",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_numeric_type",
+    "demangled": "sqlite3_value_numeric_type",
+    "value": "0x4cb60",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "socket",
+    "demangled": "socket",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "time",
+    "demangled": "time",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_table_set_user_info",
+    "demangled": "sqliterk_table_set_user_info",
+    "value": "0x31af8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_set_cipher",
+    "demangled": "sqlcipher_codec_ctx_set_cipher",
+    "value": "0x6852c",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_openssl_setup",
+    "demangled": "sqlcipher_openssl_setup",
+    "value": "0x6817c",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnUnload",
+    "demangled": "JNI_OnUnload",
+    "value": "0x28a88",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_error_nomem",
+    "demangled": "sqlite3_result_error_nomem",
+    "value": "0x613b4",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "unlink",
+    "demangled": "unlink",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_value_int64",
+    "demangled": "sqlite3_value_int64",
+    "value": "0x59460",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fputs",
+    "demangled": "fputs",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fdatasync",
+    "demangled": "fdatasync",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_init",
+    "demangled": "sqlcipher_codec_ctx_init",
+    "value": "0x68618",
+    "size": 368,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_get_keyspec",
+    "demangled": "sqlcipher_codec_get_keyspec",
+    "value": "0x67cb4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fchown",
+    "demangled": "fchown",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_recover_run",
+    "demangled": "mm_recover_run",
+    "value": "0x3b390",
+    "size": 680,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fgets",
+    "demangled": "fgets",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_expanded_sql",
+    "demangled": "sqlite3_expanded_sql",
+    "value": "0x87e44",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_strnicmp",
+    "demangled": "sqlite3_strnicmp",
+    "value": "0x3f8f0",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_create_function_v2",
+    "demangled": "sqlite3_create_function_v2",
+    "value": "0x94efc",
+    "size": 472,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_init",
+    "demangled": "pthread_cond_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_migrate",
+    "demangled": "sqlcipher_codec_ctx_migrate",
+    "value": "0xcacc8",
+    "size": 1288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_codec_ctx_get_cipher",
+    "demangled": "sqlcipher_codec_ctx_get_cipher",
+    "value": "0x67a10",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigsetjmp",
+    "demangled": "sigsetjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_column_bytes",
+    "demangled": "sqliterk_column_bytes",
+    "value": "0x31ad4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_get_user_info",
+    "demangled": "sqliterk_get_user_info",
+    "value": "0x31a10",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_commit_hook",
+    "demangled": "sqlite3_commit_hook",
+    "value": "0x442dc",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_malloc",
+    "demangled": "sqlite3_malloc",
+    "value": "0x69d64",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "bsearch",
+    "demangled": "bsearch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_get_default_use_hmac",
+    "demangled": "sqlcipher_get_default_use_hmac",
+    "value": "0x67b30",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_result_int64",
+    "demangled": "sqlite3_result_int64",
+    "value": "0x6133c",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqliterk_user_info",
+    "demangled": "sqliterk_user_info",
+    "value": "0x319fc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dl_iterate_phdr",
+    "demangled": "dl_iterate_phdr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_stmt_status",
+    "demangled": "sqlite3_stmt_status",
+    "value": "0x41c70",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "geteuid",
+    "demangled": "geteuid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_collation_needed16",
+    "demangled": "sqlite3_collation_needed16",
+    "value": "0x444a4",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_load_extension",
+    "demangled": "sqlite3_load_extension",
+    "value": "0x9b678",
+    "size": 1284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_realloc64",
+    "demangled": "sqlite3_realloc64",
+    "value": "0x73abc",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_backup_pagecount",
+    "demangled": "sqlite3_backup_pagecount",
+    "value": "0x418e4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ftruncate64",
+    "demangled": "ftruncate64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_soft_heap_limit64",
+    "demangled": "sqlite3_soft_heap_limit64",
+    "value": "0x999dc",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "open",
+    "demangled": "open",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlcipher_set_default_pagesize",
+    "demangled": "sqlcipher_set_default_pagesize",
+    "value": "0x67da8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_bind_zeroblob",
+    "demangled": "sqlite3_bind_zeroblob",
+    "value": "0x86d38",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_recover_finish",
+    "demangled": "mm_recover_finish",
+    "value": "0x3a014",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strdup",
+    "demangled": "strdup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "closedir",
+    "demangled": "closedir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fstat",
+    "demangled": "fstat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sqlite3_column_text16",
+    "demangled": "sqlite3_column_text16",
+    "value": "0x7cbb8",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mm_backup_finish",
+    "demangled": "mm_backup_finish",
+    "value": "0x39f70",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

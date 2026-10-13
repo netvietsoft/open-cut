@@ -1,0 +1,7482 @@
+[
+  {
+    "name": "__bss_start__",
+    "demangled": "__bss_start__",
+    "value": "0x640d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_bss_end__",
+    "demangled": "_bss_end__",
+    "value": "0x640d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x640d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_end__",
+    "demangled": "__bss_end__",
+    "value": "0x640d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x640d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__end__",
+    "demangled": "__end__",
+    "value": "0x640d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x640d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "OPENSSL_lh_free",
+    "demangled": "OPENSSL_lh_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DecryptFinal_ex",
+    "demangled": "EVP_DecryptFinal_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_shift",
+    "demangled": "sk_shift",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_CTX_init",
+    "demangled": "X509_STORE_CTX_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_u16_length_prefixed",
+    "demangled": "CBB_add_u16_length_prefixed",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_hpke_aes_256_gcm",
+    "demangled": "EVP_hpke_aes_256_gcm",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SHA256",
+    "demangled": "SHA256",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_CTX_zero",
+    "demangled": "EVP_HPKE_CTX_zero",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "gettimeofday",
+    "demangled": "gettimeofday",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_add_error_dataf",
+    "demangled": "ERR_add_error_dataf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HRSS_encap",
+    "demangled": "HRSS_encap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_lh_num_items",
+    "demangled": "OPENSSL_lh_num_items",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_CTX_get_iv",
+    "demangled": "EVP_AEAD_CTX_get_iv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memchr",
+    "demangled": "memchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_bytes",
+    "demangled": "CBB_add_bytes",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_256_cbc_sha1_tls_implicit_iv",
+    "demangled": "EVP_aead_aes_256_cbc_sha1_tls_implicit_iv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_u8_length_prefixed",
+    "demangled": "CBS_get_u8_length_prefixed",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_AEAD_aead",
+    "demangled": "EVP_HPKE_AEAD_aead",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_should_write",
+    "demangled": "BIO_should_write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_set_purpose",
+    "demangled": "X509_VERIFY_PARAM_set_purpose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_tls1_prf",
+    "demangled": "CRYPTO_tls1_prf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_asn1",
+    "demangled": "CBB_add_asn1",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_set_public_key",
+    "demangled": "EC_KEY_set_public_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_dup",
+    "demangled": "sk_dup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_CTX_get",
+    "demangled": "BN_CTX_get",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_MD_size",
+    "demangled": "EVP_MD_size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_CTX_setup_recipient",
+    "demangled": "EVP_HPKE_CTX_setup_recipient",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_bytes",
+    "demangled": "CBS_get_bytes",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "i2d_X509_NAME",
+    "demangled": "i2d_X509_NAME",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_space",
+    "demangled": "CBB_add_space",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "d2i_PrivateKey_bio",
+    "demangled": "d2i_PrivateKey_bio",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_free",
+    "demangled": "sk_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_peek_last_error",
+    "demangled": "ERR_peek_last_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_lh_doall_arg",
+    "demangled": "OPENSSL_lh_doall_arg",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_optional_asn1_bool",
+    "demangled": "CBS_get_optional_asn1_bool",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_strnlen",
+    "demangled": "OPENSSL_strnlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_write_all",
+    "demangled": "BIO_write_all",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_up_ref",
+    "demangled": "BIO_up_ref",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BUF_MEM_reserve",
+    "demangled": "BUF_MEM_reserve",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_free_ex_data",
+    "demangled": "CRYPTO_free_ex_data",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_library_init",
+    "demangled": "CRYPTO_library_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_GROUP_free",
+    "demangled": "EC_GROUP_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_memdup",
+    "demangled": "OPENSSL_memdup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "i2d_X509",
+    "demangled": "i2d_X509",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_is_valid_asn1_bitstring",
+    "demangled": "CBS_is_valid_asn1_bitstring",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_set_hostflags",
+    "demangled": "X509_VERIFY_PARAM_set_hostflags",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_u24",
+    "demangled": "CBS_get_u24",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_u16_length_prefixed",
+    "demangled": "CBS_get_u16_length_prefixed",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_256_gcm_tls13",
+    "demangled": "EVP_aead_aes_256_gcm_tls13",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_peek_error",
+    "demangled": "ERR_peek_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ECDSA_do_verify",
+    "demangled": "ECDSA_do_verify",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_value",
+    "demangled": "sk_value",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_chain_up_ref",
+    "demangled": "X509_chain_up_ref",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_GROUP_get0_order",
+    "demangled": "EC_GROUP_get0_order",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_asn1_int64",
+    "demangled": "CBS_get_asn1_int64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_new",
+    "demangled": "X509_VERIFY_PARAM_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_load_locations",
+    "demangled": "X509_STORE_load_locations",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DigestFinal_ex",
+    "demangled": "EVP_DigestFinal_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_restore_state",
+    "demangled": "ERR_restore_state",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_CTX_get0_param",
+    "demangled": "X509_STORE_CTX_get0_param",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_should_io_special",
+    "demangled": "BIO_should_io_special",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_new",
+    "demangled": "BN_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RSA_size",
+    "demangled": "RSA_size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_set1",
+    "demangled": "X509_VERIFY_PARAM_set1",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_u24_length_prefixed",
+    "demangled": "CBS_get_u24_length_prefixed",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_optional_asn1_octet_string",
+    "demangled": "CBS_get_optional_asn1_octet_string",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_nonce_length",
+    "demangled": "EVP_AEAD_nonce_length",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_bn2bin_padded",
+    "demangled": "BN_bn2bin_padded",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DigestVerify",
+    "demangled": "EVP_DigestVerify",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_callback_ctrl",
+    "demangled": "BIO_callback_ctrl",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_BUFFER_init_CBS",
+    "demangled": "CRYPTO_BUFFER_init_CBS",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_sha512",
+    "demangled": "EVP_sha512",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_mul",
+    "demangled": "EC_POINT_mul",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_KEY_zero",
+    "demangled": "EVP_HPKE_KEY_zero",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_CTX_open",
+    "demangled": "EVP_AEAD_CTX_open",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_hpke_aes_128_gcm",
+    "demangled": "EVP_hpke_aes_128_gcm",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RSA_private_key_from_bytes",
+    "demangled": "RSA_private_key_from_bytes",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_hpke_chacha20_poly1305",
+    "demangled": "EVP_hpke_chacha20_poly1305",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_ASN1_write_bio",
+    "demangled": "PEM_ASN1_write_bio",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strchr",
+    "demangled": "strchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_get0_public_key",
+    "demangled": "EC_KEY_get0_public_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "d2i_X509_bio",
+    "demangled": "d2i_X509_bio",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcmp",
+    "demangled": "strcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_strdup",
+    "demangled": "CBS_strdup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_optional_asn1_uint64",
+    "demangled": "CBS_get_optional_asn1_uint64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_read",
+    "demangled": "BIO_read",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BUF_MEM_new",
+    "demangled": "BUF_MEM_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_MUTEX_lock_write",
+    "demangled": "CRYPTO_MUTEX_lock_write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_CTX_seal_scatter",
+    "demangled": "EVP_AEAD_CTX_seal_scatter",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_sha1",
+    "demangled": "EVP_sha1",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_set1_host",
+    "demangled": "X509_VERIFY_PARAM_set1_host",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_128_cbc_sha1_tls",
+    "demangled": "EVP_aead_aes_128_cbc_sha1_tls",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_s_socket",
+    "demangled": "BIO_s_socket",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HMAC_size",
+    "demangled": "HMAC_size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_read_asn1",
+    "demangled": "BIO_read_asn1",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DigestSign",
+    "demangled": "EVP_DigestSign",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_bin2bn",
+    "demangled": "BN_bin2bn",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAND_bytes",
+    "demangled": "RAND_bytes",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RSA_free",
+    "demangled": "RSA_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_init",
+    "demangled": "CBS_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_CTX_new",
+    "demangled": "X509_STORE_CTX_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HKDF_expand",
+    "demangled": "HKDF_expand",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_clear_system_error",
+    "demangled": "ERR_clear_system_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_get_subject_name",
+    "demangled": "X509_get_subject_name",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_null_sha1_tls",
+    "demangled": "EVP_aead_null_sha1_tls",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_get_affine_coordinates_GFp",
+    "demangled": "EC_POINT_get_affine_coordinates_GFp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X25519",
+    "demangled": "X25519",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_free",
+    "demangled": "EVP_PKEY_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_oct2point",
+    "demangled": "EC_POINT_oct2point",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_des_ede3_cbc_sha1_tls_implicit_iv",
+    "demangled": "EVP_aead_des_ede3_cbc_sha1_tls_implicit_iv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_init",
+    "demangled": "CBB_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_ASN1_write",
+    "demangled": "PEM_ASN1_write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_BUFFER_new",
+    "demangled": "CRYPTO_BUFFER_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_pop_free_ex",
+    "demangled": "sk_pop_free_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_KEY_cleanup",
+    "demangled": "EVP_HPKE_KEY_cleanup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_CTX_zero",
+    "demangled": "EVP_AEAD_CTX_zero",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HMAC_CTX_init",
+    "demangled": "HMAC_CTX_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HMAC_CTX_cleanup",
+    "demangled": "HMAC_CTX_cleanup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_set_retry_write",
+    "demangled": "BIO_set_retry_write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_push",
+    "demangled": "sk_push",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_KEY_public_key",
+    "demangled": "EVP_HPKE_KEY_public_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_CTX_set_verify_cb",
+    "demangled": "X509_STORE_CTX_set_verify_cb",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_KEY_copy",
+    "demangled": "EVP_HPKE_KEY_copy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_CTX_seal",
+    "demangled": "EVP_HPKE_CTX_seal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_new_null",
+    "demangled": "sk_new_null",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_CTX_free",
+    "demangled": "BN_CTX_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_md5_sha1",
+    "demangled": "EVP_md5_sha1",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_read_bio_RSAPrivateKey",
+    "demangled": "PEM_read_bio_RSAPrivateKey",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_CTX_free",
+    "demangled": "X509_STORE_CTX_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_asn1",
+    "demangled": "CBS_get_asn1",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RSA_encrypt",
+    "demangled": "RSA_encrypt",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SHA256_Init",
+    "demangled": "SHA256_Init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ECDSA_SIG_free",
+    "demangled": "ECDSA_SIG_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_lh_new",
+    "demangled": "OPENSSL_lh_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_asn1_bool",
+    "demangled": "CBS_get_asn1_bool",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_CTX_cleanup",
+    "demangled": "EVP_HPKE_CTX_cleanup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_CTX_end",
+    "demangled": "BN_CTX_end",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_get_retry_flags",
+    "demangled": "BIO_get_retry_flags",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_CIPHER_CTX_init",
+    "demangled": "EVP_CIPHER_CTX_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_CTX_start",
+    "demangled": "BN_CTX_start",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DigestVerifyInit",
+    "demangled": "EVP_DigestVerifyInit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DigestSignInit",
+    "demangled": "EVP_DigestSignInit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_hpke_x25519_hkdf_sha256",
+    "demangled": "EVP_hpke_x25519_hkdf_sha256",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_method_type",
+    "demangled": "BIO_method_type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_data",
+    "demangled": "CBB_data",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_set_depth",
+    "demangled": "X509_VERIFY_PARAM_set_depth",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_set_ex_data",
+    "demangled": "CRYPTO_set_ex_data",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strncmp",
+    "demangled": "strncmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_get0_EC_KEY",
+    "demangled": "EVP_PKEY_get0_EC_KEY",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DigestInit_ex",
+    "demangled": "EVP_DigestInit_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_point2cbb",
+    "demangled": "EC_POINT_point2cbb",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HMAC_Update",
+    "demangled": "HMAC_Update",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_get_depth",
+    "demangled": "X509_VERIFY_PARAM_get_depth",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_strdup",
+    "demangled": "OPENSSL_strdup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_rand_range_ex",
+    "demangled": "BN_rand_range_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_CIPHER_iv_length",
+    "demangled": "EVP_CIPHER_iv_length",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_256_gcm_tls12",
+    "demangled": "EVP_aead_aes_256_gcm_tls12",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_copy_bytes",
+    "demangled": "CBS_copy_bytes",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_CTX_kdf",
+    "demangled": "EVP_HPKE_CTX_kdf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_free",
+    "demangled": "BN_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_KEM_id",
+    "demangled": "EVP_HPKE_KEM_id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_clear_retry_flags",
+    "demangled": "BIO_clear_retry_flags",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ECDSA_SIG_new",
+    "demangled": "ECDSA_SIG_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_256_gcm",
+    "demangled": "EVP_aead_aes_256_gcm",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_CTX_get_error",
+    "demangled": "X509_STORE_CTX_get_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_set_flags",
+    "demangled": "BIO_set_flags",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_128_gcm_tls13",
+    "demangled": "EVP_aead_aes_128_gcm_tls13",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_u24",
+    "demangled": "CBB_add_u24",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_MUTEX_unlock_write",
+    "demangled": "CRYPTO_MUTEX_unlock_write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_GROUP_new_by_curve_name",
+    "demangled": "EC_GROUP_new_by_curve_name",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_len",
+    "demangled": "CBB_len",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_EncryptUpdate",
+    "demangled": "EVP_EncryptUpdate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ECDSA_do_sign",
+    "demangled": "ECDSA_do_sign",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_set_retry_read",
+    "demangled": "BIO_set_retry_read",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_KEY_kem",
+    "demangled": "EVP_HPKE_KEY_kem",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_clear_error",
+    "demangled": "ERR_clear_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_u32",
+    "demangled": "CBS_get_u32",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_zeros",
+    "demangled": "CBB_add_zeros",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_up_ref",
+    "demangled": "X509_STORE_up_ref",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_verify_cert",
+    "demangled": "X509_verify_cert",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_zero",
+    "demangled": "CBB_zero",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HRSS_generate_key",
+    "demangled": "HRSS_generate_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_MUTEX_init",
+    "demangled": "CRYPTO_MUTEX_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_MUTEX_unlock_read",
+    "demangled": "CRYPTO_MUTEX_unlock_read",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_MD_CTX_copy_ex",
+    "demangled": "EVP_MD_CTX_copy_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_CIPHER_CTX_iv_length",
+    "demangled": "EVP_CIPHER_CTX_iv_length",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_mem_equal",
+    "demangled": "CBS_mem_equal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_CTX_new",
+    "demangled": "BN_CTX_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_reserve",
+    "demangled": "CBB_reserve",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_contains_zero_byte",
+    "demangled": "CBS_contains_zero_byte",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_CTX_init_with_direction",
+    "demangled": "EVP_AEAD_CTX_init_with_direction",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_set_default_paths",
+    "demangled": "X509_STORE_set_default_paths",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_free",
+    "demangled": "X509_STORE_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DigestUpdate",
+    "demangled": "EVP_DigestUpdate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_sort",
+    "demangled": "sk_sort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_BUFFER_new_from_CBS",
+    "demangled": "CRYPTO_BUFFER_new_from_CBS",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_get0_group",
+    "demangled": "EC_KEY_get0_group",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_new_ex_data",
+    "demangled": "CRYPTO_new_ex_data",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_read_bio_X509_AUX",
+    "demangled": "PEM_read_bio_X509_AUX",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HMAC",
+    "demangled": "HMAC",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_CTX_tag_len",
+    "demangled": "EVP_AEAD_CTX_tag_len",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HRSS_marshal_public_key",
+    "demangled": "HRSS_marshal_public_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_lh_delete",
+    "demangled": "OPENSSL_lh_delete",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_set_retry_reason",
+    "demangled": "BIO_set_retry_reason",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_u8",
+    "demangled": "CBB_add_u8",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_u8_length_prefixed",
+    "demangled": "CBB_add_u8_length_prefixed",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_MD_type",
+    "demangled": "EVP_MD_type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_cmp",
+    "demangled": "EVP_PKEY_cmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "d2i_X509_NAME",
+    "demangled": "d2i_X509_NAME",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_inherit",
+    "demangled": "X509_VERIFY_PARAM_inherit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_asn1_octet_string",
+    "demangled": "CBB_add_asn1_octet_string",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_find_type",
+    "demangled": "BIO_find_type",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_get_retry_reason",
+    "demangled": "BIO_get_retry_reason",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_init_fixed",
+    "demangled": "CBB_init_fixed",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BUF_MEM_free",
+    "demangled": "BUF_MEM_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_new",
+    "demangled": "BIO_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_ctrl",
+    "demangled": "BIO_ctrl",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_free",
+    "demangled": "BIO_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_cleanup",
+    "demangled": "CBB_cleanup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_optional_asn1",
+    "demangled": "CBS_get_optional_asn1",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_discard_child",
+    "demangled": "CBB_discard_child",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "d2i_PrivateKey",
+    "demangled": "d2i_PrivateKey",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DecryptInit_ex",
+    "demangled": "EVP_DecryptInit_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_CTX_open",
+    "demangled": "EVP_HPKE_CTX_open",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_u16",
+    "demangled": "CBB_add_u16",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_flush",
+    "demangled": "CBB_flush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_EncryptFinal_ex",
+    "demangled": "EVP_EncryptFinal_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_NAME_dup",
+    "demangled": "X509_NAME_dup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_should_read",
+    "demangled": "BIO_should_read",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_MD_CTX_init",
+    "demangled": "EVP_MD_CTX_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_BUFFER_up_ref",
+    "demangled": "CRYPTO_BUFFER_up_ref",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_free",
+    "demangled": "X509_VERIFY_PARAM_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_malloc",
+    "demangled": "OPENSSL_malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_u8",
+    "demangled": "CBS_get_u8",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_up_ref",
+    "demangled": "EVP_PKEY_up_ref",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_num_bytes",
+    "demangled": "BN_num_bytes",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_size",
+    "demangled": "EVP_PKEY_size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_set",
+    "demangled": "sk_set",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_lh_retrieve_key",
+    "demangled": "OPENSSL_lh_retrieve_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_set_affine_coordinates_GFp",
+    "demangled": "EC_POINT_set_affine_coordinates_GFp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_chacha20_poly1305",
+    "demangled": "EVP_aead_chacha20_poly1305",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_Digest",
+    "demangled": "EVP_Digest",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_EncryptInit_ex",
+    "demangled": "EVP_EncryptInit_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_BUFFER_data",
+    "demangled": "CRYPTO_BUFFER_data",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_new",
+    "demangled": "EVP_PKEY_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_bn2cbb_padded",
+    "demangled": "BN_bn2cbb_padded",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_deep_copy",
+    "demangled": "sk_deep_copy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_up_ref",
+    "demangled": "X509_up_ref",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_ASN1_read",
+    "demangled": "PEM_ASN1_read",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_memcmp",
+    "demangled": "CRYPTO_memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_CTX_cleanup",
+    "demangled": "EVP_AEAD_CTX_cleanup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_lh_retrieve",
+    "demangled": "OPENSSL_lh_retrieve",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_parse_public_key",
+    "demangled": "EVP_parse_public_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_GROUP_get_curve_name",
+    "demangled": "EC_GROUP_get_curve_name",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_read_filename",
+    "demangled": "BIO_read_filename",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_get_conv_form",
+    "demangled": "EC_KEY_get_conv_form",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_set_fd",
+    "demangled": "BIO_set_fd",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_parse_from_buffer",
+    "demangled": "X509_parse_from_buffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_BUFFER_free",
+    "demangled": "CRYPTO_BUFFER_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_new",
+    "demangled": "X509_STORE_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_any_asn1_element",
+    "demangled": "CBS_get_any_asn1_element",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_asn1_bool",
+    "demangled": "CBB_add_asn1_bool",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_BUFFER_len",
+    "demangled": "CRYPTO_BUFFER_len",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aes_128_cbc",
+    "demangled": "EVP_aes_128_cbc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SHA256_Final",
+    "demangled": "SHA256_Final",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_u24_length_prefixed",
+    "demangled": "CBB_add_u24_length_prefixed",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_peek_asn1_tag",
+    "demangled": "CBS_peek_asn1_tag",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_snprintf",
+    "demangled": "BIO_snprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_free",
+    "demangled": "EC_KEY_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_free",
+    "demangled": "X509_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_u16",
+    "demangled": "CBS_get_u16",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_MUTEX_lock_read",
+    "demangled": "CRYPTO_MUTEX_lock_read",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_len",
+    "demangled": "CBS_len",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_CTX_aead",
+    "demangled": "EVP_AEAD_CTX_aead",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_256_cbc_sha1_tls",
+    "demangled": "EVP_aead_aes_256_cbc_sha1_tls",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HMAC_Final",
+    "demangled": "HMAC_Final",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_num",
+    "demangled": "sk_num",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_KDF_id",
+    "demangled": "EVP_HPKE_KDF_id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_key_length",
+    "demangled": "EVP_AEAD_key_length",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_hpke_hkdf_sha256",
+    "demangled": "EVP_hpke_hkdf_sha256",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_is_opaque",
+    "demangled": "EVP_PKEY_is_opaque",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_did_write",
+    "demangled": "CBB_did_write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_CTX_set_ex_data",
+    "demangled": "X509_STORE_CTX_set_ex_data",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_sha384",
+    "demangled": "EVP_sha384",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_CTX_aead",
+    "demangled": "EVP_HPKE_CTX_aead",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_get0_RSA",
+    "demangled": "EVP_PKEY_get0_RSA",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_AEAD_id",
+    "demangled": "EVP_HPKE_AEAD_id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_has_aes_hardware",
+    "demangled": "EVP_has_aes_hardware",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_CTX_get1_chain",
+    "demangled": "X509_STORE_CTX_get1_chain",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HMAC_Init_ex",
+    "demangled": "HMAC_Init_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_MD_CTX_md",
+    "demangled": "EVP_MD_CTX_md",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HKDF_extract",
+    "demangled": "HKDF_extract",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_new",
+    "demangled": "EC_KEY_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_MD_CTX_move",
+    "demangled": "EVP_MD_CTX_move",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_VERIFY_PARAM_set_trust",
+    "demangled": "X509_VERIFY_PARAM_set_trust",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SHA256_Update",
+    "demangled": "SHA256_Update",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_CTX_set_rsa_padding",
+    "demangled": "EVP_PKEY_CTX_set_rsa_padding",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_get_asn1_uint64",
+    "demangled": "CBS_get_asn1_uint64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_get_ex_data",
+    "demangled": "CRYPTO_get_ex_data",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "qsort",
+    "demangled": "qsort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_skip",
+    "demangled": "CBS_skip",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_u32",
+    "demangled": "CBB_add_u32",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_GROUP_get_degree",
+    "demangled": "EC_GROUP_get_degree",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_128_gcm",
+    "demangled": "EVP_aead_aes_128_gcm",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_set_cmp_func",
+    "demangled": "sk_set_cmp_func",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_free",
+    "demangled": "OPENSSL_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HRSS_decap",
+    "demangled": "HRSS_decap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_lh_insert",
+    "demangled": "OPENSSL_lh_insert",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DecryptUpdate",
+    "demangled": "EVP_DecryptUpdate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_refcount_inc",
+    "demangled": "CRYPTO_refcount_inc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_asn1_bitstring_has_bit",
+    "demangled": "CBS_asn1_bitstring_has_bit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_get_ex_new_index",
+    "demangled": "CRYPTO_get_ex_new_index",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_asn1_int64",
+    "demangled": "CBB_add_asn1_int64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_get_fd",
+    "demangled": "BIO_get_fd",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_read_bio_PrivateKey",
+    "demangled": "PEM_read_bio_PrivateKey",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_read_bio_X509",
+    "demangled": "PEM_read_bio_X509",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_set_group",
+    "demangled": "EC_KEY_set_group",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_marshal_public_key",
+    "demangled": "EVP_marshal_public_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_SAVE_STATE_free",
+    "demangled": "ERR_SAVE_STATE_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_MUTEX_cleanup",
+    "demangled": "CRYPTO_MUTEX_cleanup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "time",
+    "demangled": "time",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_des_ede3_cbc_sha1_tls",
+    "demangled": "EVP_aead_des_ede3_cbc_sha1_tls",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_finish",
+    "demangled": "CBB_finish",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_NAME_cmp",
+    "demangled": "X509_NAME_cmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RSA_decrypt",
+    "demangled": "RSA_decrypt",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_new",
+    "demangled": "sk_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_ASN1_read_bio",
+    "demangled": "PEM_ASN1_read_bio",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_set_retry_special",
+    "demangled": "BIO_set_retry_special",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_CTX_set_rsa_pss_saltlen",
+    "demangled": "EVP_PKEY_CTX_set_rsa_pss_saltlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X25519_keypair",
+    "demangled": "X25519_keypair",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_128_gcm_tls12",
+    "demangled": "EVP_aead_aes_128_gcm_tls12",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_write",
+    "demangled": "BIO_write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "d2i_RSAPrivateKey_bio",
+    "demangled": "d2i_RSAPrivateKey_bio",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_save_state",
+    "demangled": "ERR_save_state",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_s_file",
+    "demangled": "BIO_s_file",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_id",
+    "demangled": "EVP_PKEY_id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_sha256",
+    "demangled": "EVP_sha256",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_find",
+    "demangled": "sk_find",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_free",
+    "demangled": "EC_POINT_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_new",
+    "demangled": "EC_POINT_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBS_data",
+    "demangled": "CBS_data",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sk_delete",
+    "demangled": "sk_delete",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "bsearch",
+    "demangled": "bsearch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CBB_add_asn1_uint64",
+    "demangled": "CBB_add_asn1_uint64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_HPKE_CTX_setup_sender",
+    "demangled": "EVP_HPKE_CTX_setup_sender",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_MD_CTX_cleanup",
+    "demangled": "EVP_MD_CTX_cleanup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_new_file",
+    "demangled": "BIO_new_file",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_AEAD_max_overhead",
+    "demangled": "EVP_AEAD_max_overhead",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_NAME_free",
+    "demangled": "X509_NAME_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CRYPTO_refcount_dec_and_test_zero",
+    "demangled": "CRYPTO_refcount_dec_and_test_zero",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HRSS_parse_public_key",
+    "demangled": "HRSS_parse_public_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_put_error",
+    "demangled": "ERR_put_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BUF_MEM_append",
+    "demangled": "BUF_MEM_append",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strlen_chk",
+    "demangled": "__strlen_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aead_aes_128_cbc_sha1_tls_implicit_iv",
+    "demangled": "EVP_aead_aes_128_cbc_sha1_tls_implicit_iv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_CIPHER_CTX_cleanup",
+    "demangled": "EVP_CIPHER_CTX_cleanup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_PKEY_set1_RSA",
+    "demangled": "EVP_PKEY_set1_RSA",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_flush",
+    "demangled": "BIO_flush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "X509_STORE_CTX_set_default",
+    "demangled": "X509_STORE_CTX_set_default",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get0_certificate",
+    "demangled": "SSL_CTX_get0_certificate",
+    "value": "0x3b824",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_session",
+    "demangled": "SSL_set_session",
+    "value": "0x39870",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_tls_channel_id",
+    "demangled": "SSL_set1_tls_channel_id",
+    "value": "0x34d4c",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_wfd",
+    "demangled": "SSL_set_wfd",
+    "value": "0x33be8",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_is_server",
+    "demangled": "SSL_is_server",
+    "value": "0x35394",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_peer_quic_transport_params",
+    "demangled": "SSL_get_peer_quic_transport_params",
+    "value": "0x336c0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get_id",
+    "demangled": "SSL_SESSION_get_id",
+    "value": "0x392d0",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_msg_callback_arg",
+    "demangled": "SSL_set_msg_callback_arg",
+    "value": "0x352ec",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_default_passwd_cb_userdata",
+    "demangled": "SSL_CTX_get_default_passwd_cb_userdata",
+    "value": "0x30c10",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_timeouts",
+    "demangled": "SSL_CTX_sess_timeouts",
+    "value": "0x357cc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_value",
+    "demangled": "SSL_CIPHER_get_value",
+    "value": "0x2fb6c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_mtu",
+    "demangled": "SSL_set_mtu",
+    "value": "0x340e0",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_error",
+    "demangled": "SSL_get_error",
+    "value": "0x337e4",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_get_remove_cb",
+    "demangled": "SSL_CTX_sess_get_remove_cb",
+    "value": "0x399c8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_number",
+    "demangled": "SSL_CTX_sess_number",
+    "value": "0x3416c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_copy_without_early_data",
+    "demangled": "SSL_SESSION_copy_without_early_data",
+    "value": "0x3957c",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_RSAPrivateKey_ASN1",
+    "demangled": "SSL_use_RSAPrivateKey_ASN1",
+    "value": "0x3702c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_srtp_profiles",
+    "demangled": "SSL_CTX_set_srtp_profiles",
+    "value": "0x16a28",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_keylog_callback",
+    "demangled": "SSL_CTX_get_keylog_callback",
+    "value": "0x352fc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_ex_new_index",
+    "demangled": "SSL_CTX_get_ex_new_index",
+    "value": "0x35158",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_current_time_cb",
+    "demangled": "SSL_CTX_set_current_time_cb",
+    "value": "0x35304",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tlsext_status_ocsp_resp",
+    "demangled": "SSL_set_tlsext_status_ocsp_resp",
+    "value": "0x35a50",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_delegated_credential",
+    "demangled": "SSL_set1_delegated_credential",
+    "value": "0x2e3d0",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLSv1_client_method",
+    "demangled": "TLSv1_client_method",
+    "value": "0x3d4c0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_RSAPrivateKey",
+    "demangled": "SSL_CTX_use_RSAPrivateKey",
+    "value": "0x37174",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_read_ahead",
+    "demangled": "SSL_set_read_ahead",
+    "value": "0x33e50",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLSv1_1_client_method",
+    "demangled": "TLSv1_1_client_method",
+    "value": "0x3d4bc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_verify_cert_store",
+    "demangled": "SSL_set1_verify_cert_store",
+    "value": "0x3c4ec",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_psk_identity_hint",
+    "demangled": "SSL_use_psk_identity_hint",
+    "value": "0x35258",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_free",
+    "demangled": "SSL_CTX_free",
+    "value": "0x32658",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get0_peer_certificates",
+    "demangled": "SSL_SESSION_get0_peer_certificates",
+    "value": "0x39358",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_accept_state",
+    "demangled": "SSL_set_accept_state",
+    "value": "0x32bd0",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_alert_desc_string_long",
+    "demangled": "SSL_alert_desc_string_long",
+    "value": "0x39d34",
+    "size": 560,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get0_privatekey",
+    "demangled": "SSL_CTX_get0_privatekey",
+    "value": "0x34ea0",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set0_client_CAs",
+    "demangled": "SSL_CTX_set0_client_CAs",
+    "value": "0x2e34c",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLSv1_method",
+    "demangled": "DTLSv1_method",
+    "value": "0x16c6c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_accept_good",
+    "demangled": "SSL_CTX_sess_accept_good",
+    "value": "0x357bc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_max_send_fragment",
+    "demangled": "SSL_set_max_send_fragment",
+    "value": "0x340cc",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_min_proto_version",
+    "demangled": "SSL_get_min_proto_version",
+    "value": "0x3a988",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_auth_nid",
+    "demangled": "SSL_CIPHER_get_auth_nid",
+    "value": "0x2fc24",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLS_server_method",
+    "demangled": "DTLS_server_method",
+    "value": "0x16c80",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_false_start_allowed_without_alpn",
+    "demangled": "SSL_CTX_set_false_start_allowed_without_alpn",
+    "value": "0x3560c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tls_channel_id_enabled",
+    "demangled": "SSL_CTX_set_tls_channel_id_enabled",
+    "value": "0x34c38",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get_timeout",
+    "demangled": "SSL_SESSION_get_timeout",
+    "value": "0x3933c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_chain_and_key",
+    "demangled": "SSL_set_chain_and_key",
+    "value": "0x2df5c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_bits",
+    "demangled": "SSL_CIPHER_get_bits",
+    "value": "0x2fd98",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl21ssl_client_hello_initEPK6ssl_stP22ssl_early_callback_ctxNS_4SpanIKhEE",
+    "demangled": "bssl::ssl_client_hello_init(ssl_st const*, ssl_early_callback_ctx*, bssl::Span<unsigned char const>)",
+    "value": "0x19aa8",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get1_session",
+    "demangled": "SSL_get1_session",
+    "value": "0x39678",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_free",
+    "demangled": "SSL_SESSION_free",
+    "value": "0x39290",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_certs_clear",
+    "demangled": "SSL_certs_clear",
+    "value": "0x33ae8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_is_block_cipher",
+    "demangled": "SSL_CIPHER_is_block_cipher",
+    "value": "0x2fc64",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_tlsext_status_ocsp_resp",
+    "demangled": "SSL_get_tlsext_status_ocsp_resp",
+    "value": "0x35a7c",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_ciphers",
+    "demangled": "SSL_get_ciphers",
+    "value": "0x34480",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_pending",
+    "demangled": "SSL_pending",
+    "value": "0x33e54",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_clear_chain_certs",
+    "demangled": "SSL_clear_chain_certs",
+    "value": "0x3b9a0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tmp_ecdh",
+    "demangled": "SSL_CTX_set_tmp_ecdh",
+    "value": "0x357f4",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl14CBBFinishArrayEP6cbb_stPNS_5ArrayIhEE",
+    "demangled": "bssl::CBBFinishArray(cbb_st*, bssl::Array<unsigned char>*)",
+    "value": "0x31c6c",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_add_session",
+    "demangled": "SSL_CTX_add_session",
+    "value": "0x3970c",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_read",
+    "demangled": "SSL_read",
+    "value": "0x330ac",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_state_string_long",
+    "demangled": "SSL_state_string_long",
+    "value": "0x39cb4",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tlsext_status_cb",
+    "demangled": "SSL_CTX_set_tlsext_status_cb",
+    "value": "0x35aa0",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_client_CA_list",
+    "demangled": "SSL_CTX_set_client_CA_list",
+    "value": "0x3bf94",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_max_cert_list",
+    "demangled": "SSL_set_max_cert_list",
+    "value": "0x340a4",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_reverify_on_resume",
+    "demangled": "SSL_CTX_set_reverify_on_resume",
+    "value": "0x353b0",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_PrivateKey_file",
+    "demangled": "SSL_use_PrivateKey_file",
+    "value": "0x30804",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_verify_mode",
+    "demangled": "SSL_get_verify_mode",
+    "value": "0x33dcc",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_default_passwd_cb",
+    "demangled": "SSL_CTX_set_default_passwd_cb",
+    "value": "0x30bf8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_verify_algorithm_prefs",
+    "demangled": "SSL_CTX_set_verify_algorithm_prefs",
+    "value": "0x37b58",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_PrivateKey_ASN1",
+    "demangled": "SSL_CTX_use_PrivateKey_ASN1",
+    "value": "0x372ac",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_shared_sigalgs",
+    "demangled": "SSL_get_shared_sigalgs",
+    "value": "0x350d4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_cipher_in_group",
+    "demangled": "SSL_CTX_cipher_in_group",
+    "value": "0x3443c",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_rfc_name",
+    "demangled": "SSL_CIPHER_get_rfc_name",
+    "value": "0x2fd88",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_COMP_get0_name",
+    "demangled": "SSL_COMP_get0_name",
+    "value": "0x2ffcc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_client_CA_list",
+    "demangled": "SSL_get_client_CA_list",
+    "value": "0x3bfdc",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_rfd",
+    "demangled": "SSL_get_rfd",
+    "value": "0x33b00",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_selected_srtp_profile",
+    "demangled": "SSL_get_selected_srtp_profile",
+    "value": "0x16be8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_permute_extensions",
+    "demangled": "SSL_CTX_set_permute_extensions",
+    "value": "0x355c4",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_permute_extensions",
+    "demangled": "SSL_set_permute_extensions",
+    "value": "0x355dc",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_next_protos_advertised_cb",
+    "demangled": "SSL_CTX_set_next_protos_advertised_cb",
+    "value": "0x34870",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_renegotiate_pending",
+    "demangled": "SSL_renegotiate_pending",
+    "value": "0x34054",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_add_bio_cert_subjects_to_stack",
+    "demangled": "SSL_add_bio_cert_subjects_to_stack",
+    "value": "0x30690",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_srtp_profiles",
+    "demangled": "SSL_get_srtp_profiles",
+    "value": "0x16bb8",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_add1_chain_cert",
+    "demangled": "SSL_add1_chain_cert",
+    "value": "0x3b980",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_SSL_CTX",
+    "demangled": "SSL_get_SSL_CTX",
+    "value": "0x34fa0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_chain_and_key",
+    "demangled": "SSL_CTX_set_chain_and_key",
+    "value": "0x2e0c0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_set_remove_cb",
+    "demangled": "SSL_CTX_sess_set_remove_cb",
+    "value": "0x399c0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_client_cert_cb",
+    "demangled": "SSL_CTX_set_client_cert_cb",
+    "value": "0x3c320",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_certificate_ASN1",
+    "demangled": "SSL_use_certificate_ASN1",
+    "value": "0x2e140",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_RSAPrivateKey_file",
+    "demangled": "SSL_use_RSAPrivateKey_file",
+    "value": "0x30758",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_options",
+    "demangled": "SSL_set_options",
+    "value": "0x3393c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set0_chain",
+    "demangled": "SSL_set0_chain",
+    "value": "0x3b8cc",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_up_ref",
+    "demangled": "SSL_CTX_up_ref",
+    "value": "0x3263c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_max_proto_version",
+    "demangled": "SSL_get_max_proto_version",
+    "value": "0x3a99c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_min_proto_version",
+    "demangled": "SSL_CTX_get_min_proto_version",
+    "value": "0x3a910",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tmp_rsa",
+    "demangled": "SSL_set_tmp_rsa",
+    "value": "0x357e4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_clear_chain_certs",
+    "demangled": "SSL_CTX_clear_chain_certs",
+    "value": "0x3b994",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_need_tmp_RSA",
+    "demangled": "SSL_CTX_need_tmp_RSA",
+    "value": "0x357d8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_alert_from_verify_result",
+    "demangled": "SSL_alert_from_verify_result",
+    "value": "0x3c580",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "i2d_SSL_SESSION_bio",
+    "demangled": "i2d_SSL_SESSION_bio",
+    "value": "0x3bcb4",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLSv1_2_server_method",
+    "demangled": "TLSv1_2_server_method",
+    "value": "0x3d4ac",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_psk_identity",
+    "demangled": "SSL_get_psk_identity",
+    "value": "0x35284",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_extra_chain_certs",
+    "demangled": "SSL_CTX_get_extra_chain_certs",
+    "value": "0x3bb00",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_psk_client_callback",
+    "demangled": "SSL_set_psk_client_callback",
+    "value": "0x352a4",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_read_ahead",
+    "demangled": "SSL_CTX_set_read_ahead",
+    "value": "0x33e4c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_mode",
+    "demangled": "SSL_CTX_get_mode",
+    "value": "0x33984",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl17SSL_apply_handoffEP6ssl_stNS_4SpanIKhEE",
+    "demangled": "bssl::SSL_apply_handoff(ssl_st*, bssl::Span<unsigned char const>)",
+    "value": "0x20094",
+    "size": 344,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_clear_extra_chain_certs",
+    "demangled": "SSL_CTX_clear_extra_chain_certs",
+    "value": "0x3b99c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_COMP_add_compression_method",
+    "demangled": "SSL_COMP_add_compression_method",
+    "value": "0x2ffc0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_msg_callback",
+    "demangled": "SSL_set_msg_callback",
+    "value": "0x352e4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_session_id_context",
+    "demangled": "SSL_get0_session_id_context",
+    "value": "0x33ac0",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_verify_result",
+    "demangled": "SSL_get_verify_result",
+    "value": "0x3b6c4",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_enable_tls_channel_id",
+    "demangled": "SSL_enable_tls_channel_id",
+    "value": "0x34c8c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_max_cert_list",
+    "demangled": "SSL_CTX_set_max_cert_list",
+    "value": "0x34088",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_get_cache_size",
+    "demangled": "SSL_CTX_sess_get_cache_size",
+    "value": "0x341bc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_cert_store",
+    "demangled": "SSL_CTX_get_cert_store",
+    "value": "0x3b6e8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_servername",
+    "demangled": "SSL_get_servername",
+    "value": "0x34588",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_accept",
+    "demangled": "SSL_CTX_sess_accept",
+    "value": "0x357b4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set1_curves_list",
+    "demangled": "SSL_CTX_set1_curves_list",
+    "value": "0x343c8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_serialize_handshake_hints",
+    "demangled": "SSL_serialize_handshake_hints",
+    "value": "0x215d0",
+    "size": 668,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set1_chain",
+    "demangled": "SSL_CTX_set1_chain",
+    "value": "0x3b894",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_is_resumable",
+    "demangled": "SSL_SESSION_is_resumable",
+    "value": "0x38f28",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_min_version",
+    "demangled": "SSL_CIPHER_get_min_version",
+    "value": "0x2fc80",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_cipher_list",
+    "demangled": "SSL_set_cipher_list",
+    "value": "0x34528",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_certificate",
+    "demangled": "SSL_use_certificate",
+    "value": "0x3b718",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get0_cipher",
+    "demangled": "SSL_SESSION_get0_cipher",
+    "value": "0x39504",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_tls_channel_id",
+    "demangled": "SSL_get_tls_channel_id",
+    "value": "0x34dd0",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_set_protocol_version",
+    "demangled": "SSL_SESSION_set_protocol_version",
+    "value": "0x3aac4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_secure_renegotiation_support",
+    "demangled": "SSL_get_secure_renegotiation_support",
+    "value": "0x34128",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tlsext_status_type",
+    "demangled": "SSL_set_tlsext_status_type",
+    "value": "0x359e4",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_compliance_policy",
+    "demangled": "SSL_CTX_set_compliance_policy",
+    "value": "0x35ac0",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_set1_id",
+    "demangled": "SSL_SESSION_set1_id",
+    "value": "0x392e4",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_default_timeout",
+    "demangled": "SSL_get_default_timeout",
+    "value": "0x33ed0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get0_param",
+    "demangled": "SSL_CTX_get0_param",
+    "value": "0x3b610",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get0_ocsp_response",
+    "demangled": "SSL_SESSION_get0_ocsp_response",
+    "value": "0x393a8",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_set_get_cb",
+    "demangled": "SSL_CTX_sess_set_get_cb",
+    "value": "0x399d0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_get_get_cb",
+    "demangled": "SSL_CTX_sess_get_get_cb",
+    "value": "0x399d8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_description",
+    "demangled": "SSL_CIPHER_description",
+    "value": "0x2fe18",
+    "size": 408,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_has_pending",
+    "demangled": "SSL_has_pending",
+    "value": "0x33e60",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_early_data_reason_string",
+    "demangled": "SSL_early_data_reason_string",
+    "value": "0x337c8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_PrivateKey_file",
+    "demangled": "SSL_CTX_use_PrivateKey_file",
+    "value": "0x30a1c",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_marshal_ech_config",
+    "demangled": "SSL_marshal_ech_config",
+    "value": "0x18db8",
+    "size": 504,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_session_psk_dhe_timeout",
+    "demangled": "SSL_CTX_set_session_psk_dhe_timeout",
+    "value": "0x398dc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_server_tmp_key",
+    "demangled": "SSL_get_server_tmp_key",
+    "value": "0x34ef4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_custom_verify",
+    "demangled": "SSL_set_custom_verify",
+    "value": "0x345d4",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_strict_cipher_list",
+    "demangled": "SSL_CTX_set_strict_cipher_list",
+    "value": "0x32614",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_strict_cipher_list",
+    "demangled": "SSL_set_strict_cipher_list",
+    "value": "0x34558",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_clear_mode",
+    "demangled": "SSL_CTX_clear_mode",
+    "value": "0x33974",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_set_ticket",
+    "demangled": "SSL_SESSION_set_ticket",
+    "value": "0x394e0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_process_tls13_new_session_ticket",
+    "demangled": "SSL_process_tls13_new_session_ticket",
+    "value": "0x358c4",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_enable_ocsp_stapling",
+    "demangled": "SSL_enable_ocsp_stapling",
+    "value": "0x34618",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_verify_callback",
+    "demangled": "SSL_get_verify_callback",
+    "value": "0x3b640",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_max_proto_version",
+    "demangled": "SSL_CTX_get_max_proto_version",
+    "value": "0x3a918",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set0_client_CAs",
+    "demangled": "SSL_set0_client_CAs",
+    "value": "0x2e380",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLSv1_2_client_method",
+    "demangled": "DTLSv1_2_client_method",
+    "value": "0x16c78",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set1_curves",
+    "demangled": "SSL_CTX_set1_curves",
+    "value": "0x34380",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_to_bytes_for_ticket",
+    "demangled": "SSL_SESSION_to_bytes_for_ticket",
+    "value": "0x2c290",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get0_chain_certs",
+    "demangled": "SSL_CTX_get0_chain_certs",
+    "value": "0x3b9a8",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl29ssl_decode_client_hello_innerEP6ssl_stPhPNS_5ArrayIhEENS_4SpanIKhEEPK22ssl_early_callback_ctx",
+    "demangled": "bssl::ssl_decode_client_hello_inner(ssl_st*, unsigned char*, bssl::Array<unsigned char>*, bssl::Span<unsigned char const>, ssl_early_callback_ctx const*)",
+    "value": "0x1743c",
+    "size": 1224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_tls_unique",
+    "demangled": "SSL_get_tls_unique",
+    "value": "0x339bc",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_certificate_file",
+    "demangled": "SSL_use_certificate_file",
+    "value": "0x30698",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_timeout",
+    "demangled": "SSL_CTX_get_timeout",
+    "value": "0x398d0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_add_extra_chain_cert",
+    "demangled": "SSL_CTX_add_extra_chain_cert",
+    "value": "0x3b968",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_max_cert_list",
+    "demangled": "SSL_get_max_cert_list",
+    "value": "0x3409c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_write_sequence",
+    "demangled": "SSL_get_write_sequence",
+    "value": "0x354a4",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_clear",
+    "demangled": "SSL_clear",
+    "value": "0x356a0",
+    "size": 264,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_connect",
+    "demangled": "SSL_connect",
+    "value": "0x32ee0",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_in_init",
+    "demangled": "SSL_in_init",
+    "value": "0x31d60",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ERR_load_SSL_strings",
+    "demangled": "ERR_load_SSL_strings",
+    "value": "0x357e8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_min_proto_version",
+    "demangled": "SSL_set_min_proto_version",
+    "value": "0x3a920",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_bio",
+    "demangled": "SSL_set_bio",
+    "value": "0x32bf4",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_trust",
+    "demangled": "SSL_CTX_set_trust",
+    "value": "0x3b5d8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl19SealRecordSuffixLenEPK6ssl_stm",
+    "demangled": "bssl::SealRecordSuffixLen(ssl_st const*, unsigned long)",
+    "value": "0x3e2e4",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_psk_server_callback",
+    "demangled": "SSL_CTX_set_psk_server_callback",
+    "value": "0x352cc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_kx_name",
+    "demangled": "SSL_CIPHER_get_kx_name",
+    "value": "0x2fd00",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_library_init",
+    "demangled": "SSL_library_init",
+    "value": "0x322c8",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_load_verify_locations",
+    "demangled": "SSL_CTX_load_verify_locations",
+    "value": "0x3b6bc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_PrivateKey",
+    "demangled": "SSL_use_PrivateKey",
+    "value": "0x37098",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_session_reused",
+    "demangled": "SSL_session_reused",
+    "value": "0x34ecc",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_ex_data",
+    "demangled": "SSL_CTX_get_ex_data",
+    "value": "0x351a0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_enable_signed_cert_timestamps",
+    "demangled": "SSL_CTX_enable_signed_cert_timestamps",
+    "value": "0x345e8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_grease_enabled",
+    "demangled": "SSL_CTX_set_grease_enabled",
+    "value": "0x355ac",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_read_SSL_SESSION",
+    "demangled": "PEM_read_SSL_SESSION",
+    "value": "0x3bd5c",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_COMP_get_id",
+    "demangled": "SSL_COMP_get_id",
+    "value": "0x2ffd4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_num_renegotiations",
+    "demangled": "SSL_num_renegotiations",
+    "value": "0x357d4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_custom_verify",
+    "demangled": "SSL_CTX_set_custom_verify",
+    "value": "0x345c8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_hostflags",
+    "demangled": "SSL_set_hostflags",
+    "value": "0x3c56c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_session",
+    "demangled": "SSL_get_session",
+    "value": "0x39630",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_peer_signature_algorithm",
+    "demangled": "SSL_get_peer_signature_algorithm",
+    "value": "0x354e4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_finished",
+    "demangled": "SSL_get_finished",
+    "value": "0x33ce8",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tlsext_status_arg",
+    "demangled": "SSL_CTX_set_tlsext_status_arg",
+    "value": "0x35ab0",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_tlsext_status_type",
+    "demangled": "SSL_get_tlsext_status_type",
+    "value": "0x35a10",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_ticket_age_skew",
+    "demangled": "SSL_get_ticket_age_skew",
+    "value": "0x35600",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_next_proto_negotiated",
+    "demangled": "SSL_get0_next_proto_negotiated",
+    "value": "0x34854",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_cipher_list",
+    "demangled": "SSL_get_cipher_list",
+    "value": "0x344a8",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_quic_use_legacy_codepoint",
+    "demangled": "SSL_set_quic_use_legacy_codepoint",
+    "value": "0x3567c",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_cache_hit",
+    "demangled": "SSL_cache_hit",
+    "value": "0x357f0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_ivs",
+    "demangled": "SSL_get_ivs",
+    "value": "0x353ec",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_quiet_shutdown",
+    "demangled": "SSL_CTX_set_quiet_shutdown",
+    "value": "0x34ef8",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLS_method",
+    "demangled": "DTLS_method",
+    "value": "0x16c58",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set1_tls_channel_id",
+    "demangled": "SSL_CTX_set1_tls_channel_id",
+    "value": "0x34ca4",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_provide_quic_data",
+    "demangled": "SSL_provide_quic_data",
+    "value": "0x32d18",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_write_SSL_SESSION",
+    "demangled": "PEM_write_SSL_SESSION",
+    "value": "0x3bdc0",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_quic_early_data_context",
+    "demangled": "SSL_set_quic_early_data_context",
+    "value": "0x336dc",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_cipher_nid",
+    "demangled": "SSL_CIPHER_get_cipher_nid",
+    "value": "0x2fb7c",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_psk_identity_hint",
+    "demangled": "SSL_CTX_use_psk_identity_hint",
+    "value": "0x351cc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_ech_name_override",
+    "demangled": "SSL_get0_ech_name_override",
+    "value": "0x18d34",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_has_peer_sha256",
+    "demangled": "SSL_SESSION_has_peer_sha256",
+    "value": "0x3950c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_quiet_shutdown",
+    "demangled": "SSL_get_quiet_shutdown",
+    "value": "0x34f38",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_process_quic_post_handshake",
+    "demangled": "SSL_process_quic_post_handshake",
+    "value": "0x32f20",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_default_verify_paths",
+    "demangled": "SSL_CTX_set_default_verify_paths",
+    "value": "0x3b6b4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_ex_new_index",
+    "demangled": "SSL_get_ex_new_index",
+    "value": "0x35108",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_max_cert_list",
+    "demangled": "SSL_CTX_get_max_cert_list",
+    "value": "0x34080",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_has_ticket",
+    "demangled": "SSL_SESSION_has_ticket",
+    "value": "0x394c4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_renegotiate",
+    "demangled": "SSL_renegotiate",
+    "value": "0x33ed8",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get0_ticket",
+    "demangled": "SSL_SESSION_get0_ticket",
+    "value": "0x394c8",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl10SealRecordEP6ssl_stNS_4SpanIhEES3_S3_NS2_IKhEE",
+    "demangled": "bssl::SealRecord(ssl_st*, bssl::Span<unsigned char>, bssl::Span<unsigned char>, bssl::Span<unsigned char>, bssl::Span<unsigned char const>)",
+    "value": "0x3e350",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set1_ech_keys",
+    "demangled": "SSL_CTX_set1_ech_keys",
+    "value": "0x19318",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_read_ahead",
+    "demangled": "SSL_get_read_ahead",
+    "value": "0x33e48",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_clear_options",
+    "demangled": "SSL_clear_options",
+    "value": "0x3394c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_max_send_fragment",
+    "demangled": "SSL_CTX_set_max_send_fragment",
+    "value": "0x340b8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_enable_signed_cert_timestamps",
+    "demangled": "SSL_enable_signed_cert_timestamps",
+    "value": "0x345f4",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_alert_type_string",
+    "demangled": "SSL_alert_type_string",
+    "value": "0x39d1c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tlsext_ticket_keys",
+    "demangled": "SSL_CTX_set_tlsext_ticket_keys",
+    "value": "0x34278",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_jdk11_workaround",
+    "demangled": "SSL_set_jdk11_workaround",
+    "value": "0x35658",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_client_CA_list",
+    "demangled": "SSL_set_client_CA_list",
+    "value": "0x3be28",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_dos_protection_cb",
+    "demangled": "SSL_CTX_set_dos_protection_cb",
+    "value": "0x353a8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_peek",
+    "demangled": "SSL_peek",
+    "value": "0x33108",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tls_channel_id_enabled",
+    "demangled": "SSL_set_tls_channel_id_enabled",
+    "value": "0x34c68",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSLv23_client_method",
+    "demangled": "SSLv23_client_method",
+    "value": "0x3d4c8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set1_sigalgs",
+    "demangled": "SSL_CTX_set1_sigalgs",
+    "value": "0x3749c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_max_proto_version",
+    "demangled": "SSL_set_max_proto_version",
+    "value": "0x3a954",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_state",
+    "demangled": "SSL_set_state",
+    "value": "0x350b8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_ECH_KEYS_add",
+    "demangled": "SSL_ECH_KEYS_add",
+    "value": "0x19050",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl17SSL_SESSION_parseEP6cbs_stPKNS_15SSL_X509_METHODEP21crypto_buffer_pool_st",
+    "demangled": "bssl::SSL_SESSION_parse(cbs_st*, bssl::SSL_X509_METHOD const*, crypto_buffer_pool_st*)",
+    "value": "0x2afb8",
+    "size": 2272,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_generate_key_block",
+    "demangled": "SSL_generate_key_block",
+    "value": "0x3d190",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_privatekey",
+    "demangled": "SSL_get_privatekey",
+    "value": "0x34e88",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_connect_state",
+    "demangled": "SSL_set_connect_state",
+    "value": "0x32bbc",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_send_fatal_alert",
+    "demangled": "SSL_send_fatal_alert",
+    "value": "0x3362c",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_up_ref",
+    "demangled": "SSL_SESSION_up_ref",
+    "value": "0x39278",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_keylog_callback",
+    "demangled": "SSL_CTX_set_keylog_callback",
+    "value": "0x352f4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_certificate_types",
+    "demangled": "SSL_get0_certificate_types",
+    "value": "0x34e14",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_chain",
+    "demangled": "SSL_set1_chain",
+    "value": "0x3b8e0",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_is_init_finished",
+    "demangled": "SSL_is_init_finished",
+    "value": "0x35350",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_to_bytes",
+    "demangled": "SSL_SESSION_to_bytes",
+    "value": "0x2c1c8",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_default_passwd_cb_userdata",
+    "demangled": "SSL_CTX_set_default_passwd_cb_userdata",
+    "value": "0x30c08",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl10OpenRecordEP6ssl_stPNS_4SpanIhEEPmPhS3_",
+    "demangled": "bssl::OpenRecord(ssl_st*, bssl::Span<unsigned char>*, unsigned long*, unsigned char*, bssl::Span<unsigned char>)",
+    "value": "0x3e1d8",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_purpose",
+    "demangled": "SSL_set_purpose",
+    "value": "0x3b5c4",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set0_buffer_pool",
+    "demangled": "SSL_CTX_set0_buffer_pool",
+    "value": "0x339b4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_verify_algorithm_prefs",
+    "demangled": "SSL_set_verify_algorithm_prefs",
+    "value": "0x37bfc",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_reset_early_data_reject",
+    "demangled": "SSL_reset_early_data_reject",
+    "value": "0x33760",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_verify_depth",
+    "demangled": "SSL_CTX_set_verify_depth",
+    "value": "0x3b6ac",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_quic_transport_params",
+    "demangled": "SSL_set_quic_transport_params",
+    "value": "0x33694",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tmp_dh_callback",
+    "demangled": "SSL_set_tmp_dh_callback",
+    "value": "0x351c8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_quic_max_handshake_flight_len",
+    "demangled": "SSL_quic_max_handshake_flight_len",
+    "value": "0x32c98",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tmp_ecdh",
+    "demangled": "SSL_set_tmp_ecdh",
+    "value": "0x35858",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_want",
+    "demangled": "SSL_want",
+    "value": "0x351a8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLSv1_2_method",
+    "demangled": "TLSv1_2_method",
+    "value": "0x3d4a0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_shed_handshake_config",
+    "demangled": "SSL_set_shed_handshake_config",
+    "value": "0x35634",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_trust",
+    "demangled": "SSL_set_trust",
+    "value": "0x3b5e0",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_PrivateKey",
+    "demangled": "SSL_CTX_use_PrivateKey",
+    "value": "0x37278",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_COMP_get_name",
+    "demangled": "SSL_COMP_get_name",
+    "value": "0x2ffc8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_accept",
+    "demangled": "SSL_accept",
+    "value": "0x32f00",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_psk_identity_hint",
+    "demangled": "SSL_get_psk_identity_hint",
+    "value": "0x3526c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_check_private_key",
+    "demangled": "SSL_check_private_key",
+    "value": "0x33ea0",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl19SSL_decline_handoffEP6ssl_st",
+    "demangled": "bssl::SSL_decline_handoff(ssl_st*)",
+    "value": "0x20054",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_shutdown",
+    "demangled": "SSL_shutdown",
+    "value": "0x3350c",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_dup_CA_list",
+    "demangled": "SSL_dup_CA_list",
+    "value": "0x3bdf8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLSv1_get_timeout",
+    "demangled": "DTLSv1_get_timeout",
+    "value": "0x162d4",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_clear_mode",
+    "demangled": "SSL_clear_mode",
+    "value": "0x3399c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_signature_algorithm_key_type",
+    "demangled": "SSL_get_signature_algorithm_key_type",
+    "value": "0x373e8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_mode",
+    "demangled": "SSL_set_mode",
+    "value": "0x3398c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_ciphers",
+    "demangled": "SSL_CTX_get_ciphers",
+    "value": "0x34434",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_certificate_ASN1",
+    "demangled": "SSL_CTX_use_certificate_ASN1",
+    "value": "0x2e0d4",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_ECH_KEYS_free",
+    "demangled": "SSL_ECH_KEYS_free",
+    "value": "0x1900c",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_set_timeout",
+    "demangled": "SSL_SESSION_set_timeout",
+    "value": "0x39440",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_read_sequence",
+    "demangled": "SSL_get_read_sequence",
+    "value": "0x35478",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_write",
+    "demangled": "SSL_write",
+    "value": "0x3335c",
+    "size": 264,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_current_cipher",
+    "demangled": "SSL_get_current_cipher",
+    "value": "0x34eb0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl21SSL_serialize_handoffEPK6ssl_stP6cbb_stP22ssl_early_callback_ctx",
+    "demangled": "bssl::SSL_serialize_handoff(ssl_st const*, cbb_st*, ssl_early_callback_ctx*)",
+    "value": "0x1fe40",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_id",
+    "demangled": "SSL_CIPHER_get_id",
+    "value": "0x2fb64",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLS_client_method",
+    "demangled": "DTLS_client_method",
+    "value": "0x16c84",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLSv1_server_method",
+    "demangled": "DTLSv1_server_method",
+    "value": "0x16c74",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl15SSL_SESSION_dupEP14ssl_session_sti",
+    "demangled": "bssl::SSL_SESSION_dup(ssl_session_st*, int)",
+    "value": "0x37ed4",
+    "size": 744,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set1_param",
+    "demangled": "SSL_CTX_set1_param",
+    "value": "0x3b5f4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_options",
+    "demangled": "SSL_get_options",
+    "value": "0x3395c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_add0_chain_cert",
+    "demangled": "SSL_CTX_add0_chain_cert",
+    "value": "0x3b8f4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_server_random",
+    "demangled": "SSL_get_server_random",
+    "value": "0x3552c",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLS_server_method",
+    "demangled": "TLS_server_method",
+    "value": "0x3d4cc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "d2i_SSL_SESSION",
+    "demangled": "d2i_SSL_SESSION",
+    "value": "0x3bbdc",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_read_bio_SSL_SESSION",
+    "demangled": "PEM_read_bio_SSL_SESSION",
+    "value": "0x3bd30",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_enable_tls_channel_id",
+    "demangled": "SSL_CTX_enable_tls_channel_id",
+    "value": "0x34c50",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_cert_cb",
+    "demangled": "SSL_set_cert_cb",
+    "value": "0x2e1c4",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_add_cert_compression_alg",
+    "demangled": "SSL_CTX_add_cert_compression_alg",
+    "value": "0x34b64",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_early_data_capable",
+    "demangled": "SSL_SESSION_early_data_capable",
+    "value": "0x3953c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_session_id_context",
+    "demangled": "SSL_set_session_id_context",
+    "value": "0x33aac",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_session_id_context",
+    "demangled": "SSL_CTX_set_session_id_context",
+    "value": "0x33a64",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tlsext_use_srtp",
+    "demangled": "SSL_set_tlsext_use_srtp",
+    "value": "0x16c1c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_kx_nid",
+    "demangled": "SSL_CIPHER_get_kx_nid",
+    "value": "0x2fc04",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_ex_data_X509_STORE_CTX_idx",
+    "demangled": "SSL_get_ex_data_X509_STORE_CTX_idx",
+    "value": "0x3c424",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_ECH_KEYS_up_ref",
+    "demangled": "SSL_ECH_KEYS_up_ref",
+    "value": "0x19004",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_read_ahead",
+    "demangled": "SSL_CTX_get_read_ahead",
+    "value": "0x33e44",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_allow_unknown_alpn_protos",
+    "demangled": "SSL_CTX_set_allow_unknown_alpn_protos",
+    "value": "0x34994",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_set_ex_data",
+    "demangled": "SSL_SESSION_set_ex_data",
+    "value": "0x396fc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_ECH_KEYS_has_duplicate_config_id",
+    "demangled": "SSL_ECH_KEYS_has_duplicate_config_id",
+    "value": "0x19190",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_rfd",
+    "demangled": "SSL_set_rfd",
+    "value": "0x33c68",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_curves_list",
+    "demangled": "SSL_set1_curves_list",
+    "value": "0x343e4",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_private_key_method",
+    "demangled": "SSL_CTX_set_private_key_method",
+    "value": "0x37360",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_need_tmp_RSA",
+    "demangled": "SSL_need_tmp_RSA",
+    "value": "0x357dc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_ech_config_list",
+    "demangled": "SSL_set1_ech_config_list",
+    "value": "0x18cc0",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl22SSL_serialize_handbackEPK6ssl_stP6cbb_st",
+    "demangled": "bssl::SSL_serialize_handback(ssl_st const*, cbb_st*)",
+    "value": "0x205f8",
+    "size": 1216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_hits",
+    "demangled": "SSL_CTX_sess_hits",
+    "value": "0x357c0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_check_private_key",
+    "demangled": "SSL_CTX_check_private_key",
+    "value": "0x33e80",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_peer_full_cert_chain",
+    "demangled": "SSL_get_peer_full_cert_chain",
+    "value": "0x3b5a0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_has_application_settings",
+    "demangled": "SSL_has_application_settings",
+    "value": "0x34b44",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_early_callback_ctx_extension_get",
+    "demangled": "SSL_early_callback_ctx_extension_get",
+    "value": "0x1cbd8",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get_master_key",
+    "demangled": "SSL_SESSION_get_master_key",
+    "value": "0x393f0",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_version",
+    "demangled": "SSL_CIPHER_get_version",
+    "value": "0x2ffb0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_ex_data",
+    "demangled": "SSL_set_ex_data",
+    "value": "0x35148",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_msg_callback_arg",
+    "demangled": "SSL_CTX_set_msg_callback_arg",
+    "value": "0x352dc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_options",
+    "demangled": "SSL_CTX_set_options",
+    "value": "0x33914",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_wfd",
+    "demangled": "SSL_get_wfd",
+    "value": "0x33b48",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_next_proto_select_cb",
+    "demangled": "SSL_CTX_set_next_proto_select_cb",
+    "value": "0x34878",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_SSL_CTX",
+    "demangled": "SSL_set_SSL_CTX",
+    "value": "0x34fa8",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tmp_rsa",
+    "demangled": "SSL_CTX_set_tmp_rsa",
+    "value": "0x357e0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_verify_depth",
+    "demangled": "SSL_CTX_get_verify_depth",
+    "value": "0x3b65c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_psk_client_callback",
+    "demangled": "SSL_CTX_set_psk_client_callback",
+    "value": "0x352b4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_serialize_capabilities",
+    "demangled": "SSL_serialize_capabilities",
+    "value": "0x213bc",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLSv1_server_method",
+    "demangled": "TLSv1_server_method",
+    "value": "0x3d4b4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl24SSL_CTX_set_handoff_modeEP10ssl_ctx_stb",
+    "demangled": "bssl::SSL_CTX_set_handoff_mode(ssl_ctx_st*, bool)",
+    "value": "0x32218",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_set_new_cb",
+    "demangled": "SSL_CTX_sess_set_new_cb",
+    "value": "0x399b0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLSv1_1_server_method",
+    "demangled": "TLSv1_1_server_method",
+    "value": "0x3d4b0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_get_new_cb",
+    "demangled": "SSL_CTX_sess_get_new_cb",
+    "value": "0x399b8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLSv1_1_method",
+    "demangled": "TLSv1_1_method",
+    "value": "0x3d4a4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_enable_ocsp_stapling",
+    "demangled": "SSL_CTX_enable_ocsp_stapling",
+    "value": "0x3460c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set0_verify_cert_store",
+    "demangled": "SSL_CTX_set0_verify_cert_store",
+    "value": "0x3c428",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_client_CA_list",
+    "demangled": "SSL_CTX_get_client_CA_list",
+    "value": "0x3c194",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_can_release_private_key",
+    "demangled": "SSL_can_release_private_key",
+    "value": "0x3530c",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_name",
+    "demangled": "SSL_CIPHER_get_name",
+    "value": "0x2fce0",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_total_renegotiations",
+    "demangled": "SSL_total_renegotiations",
+    "value": "0x3407c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_shutdown",
+    "demangled": "SSL_set_shutdown",
+    "value": "0x34f44",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_key_block_len",
+    "demangled": "SSL_get_key_block_len",
+    "value": "0x3d100",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_add_client_CA",
+    "demangled": "SSL_add_client_CA",
+    "value": "0x3c1bc",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_early_data_reason",
+    "demangled": "SSL_get_early_data_reason",
+    "value": "0x337bc",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLSv1_2_client_method",
+    "demangled": "TLSv1_2_client_method",
+    "value": "0x3d4b8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl18SSL_apply_handbackEP6ssl_stNS_4SpanIKhEE",
+    "demangled": "bssl::SSL_apply_handback(ssl_st*, bssl::Span<unsigned char const>)",
+    "value": "0x20ab8",
+    "size": 2180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_certificate_chain_file",
+    "demangled": "SSL_CTX_use_certificate_chain_file",
+    "value": "0x30ac8",
+    "size": 304,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_flush_sessions",
+    "demangled": "SSL_CTX_flush_sessions",
+    "value": "0x39064",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_signature_algorithm_name",
+    "demangled": "SSL_get_signature_algorithm_name",
+    "value": "0x3736c",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_misses",
+    "demangled": "SSL_CTX_sess_misses",
+    "value": "0x357c8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl20SSL_set_handoff_modeEP6ssl_stb",
+    "demangled": "bssl::SSL_set_handoff_mode(ssl_st*, bool)",
+    "value": "0x3222c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_early_data_enabled",
+    "demangled": "SSL_CTX_set_early_data_enabled",
+    "value": "0x33708",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_new",
+    "demangled": "SSL_SESSION_new",
+    "value": "0x39220",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_certificate_file",
+    "demangled": "SSL_CTX_use_certificate_file",
+    "value": "0x308b0",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_set_time",
+    "demangled": "SSL_SESSION_set_time",
+    "value": "0x39428",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_cipher_by_value",
+    "demangled": "SSL_get_cipher_by_value",
+    "value": "0x2fae0",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_peer_certificate",
+    "demangled": "SSL_get_peer_certificate",
+    "value": "0x3b530",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_chain_certs",
+    "demangled": "SSL_get0_chain_certs",
+    "value": "0x3bb04",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_verify_callback",
+    "demangled": "SSL_CTX_get_verify_callback",
+    "value": "0x3b664",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_alpn_protos",
+    "demangled": "SSL_CTX_set_alpn_protos",
+    "value": "0x34880",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_min_proto_version",
+    "demangled": "SSL_CTX_set_min_proto_version",
+    "value": "0x3a888",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLS_with_buffers_method",
+    "demangled": "TLS_with_buffers_method",
+    "value": "0x3d494",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tmp_rsa_callback",
+    "demangled": "SSL_set_tmp_rsa_callback",
+    "value": "0x351c0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_fd",
+    "demangled": "SSL_set_fd",
+    "value": "0x33b90",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_extms_support",
+    "demangled": "SSL_get_extms_support",
+    "value": "0x33de4",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLS_method",
+    "demangled": "TLS_method",
+    "value": "0x3d48c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_delegated_credential_used",
+    "demangled": "SSL_delegated_credential_used",
+    "value": "0x2e4f8",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSLv23_method",
+    "demangled": "SSLv23_method",
+    "value": "0x3d490",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_shared_ciphers",
+    "demangled": "SSL_get_shared_ciphers",
+    "value": "0x350bc",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_verify_mode",
+    "demangled": "SSL_CTX_get_verify_mode",
+    "value": "0x3b654",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_COMP_get_compression_methods",
+    "demangled": "SSL_COMP_get_compression_methods",
+    "value": "0x2ffbc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_peer_delegation_algorithms",
+    "demangled": "SSL_get0_peer_delegation_algorithms",
+    "value": "0x34e64",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_load_client_CA_file",
+    "demangled": "SSL_load_client_CA_file",
+    "value": "0x30344",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_signed_cert_timestamp_list",
+    "demangled": "SSL_CTX_set_signed_cert_timestamp_list",
+    "value": "0x2e210",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_quic_method",
+    "demangled": "SSL_CTX_set_quic_method",
+    "value": "0x350d8",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get_version",
+    "demangled": "SSL_SESSION_get_version",
+    "value": "0x3aab4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_verify",
+    "demangled": "SSL_CTX_set_verify",
+    "value": "0x3b6a0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_ocsp_response",
+    "demangled": "SSL_set_ocsp_response",
+    "value": "0x2e308",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_state_string",
+    "demangled": "SSL_state_string",
+    "value": "0x39ce0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_num_tickets",
+    "demangled": "SSL_CTX_get_num_tickets",
+    "value": "0x359dc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_retain_only_sha256_of_client_certs",
+    "demangled": "SSL_CTX_set_retain_only_sha256_of_client_certs",
+    "value": "0x35594",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_key_update",
+    "demangled": "SSL_key_update",
+    "value": "0x33464",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_curve_id",
+    "demangled": "SSL_get_curve_id",
+    "value": "0x34410",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get0_id_context",
+    "demangled": "SSL_SESSION_get0_id_context",
+    "value": "0x39450",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tlsext_servername_arg",
+    "demangled": "SSL_CTX_set_tlsext_servername_arg",
+    "value": "0x34768",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_ECH_KEYS_new",
+    "demangled": "SSL_ECH_KEYS_new",
+    "value": "0x18fb0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_param",
+    "demangled": "SSL_get0_param",
+    "value": "0x3b618",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_add1_chain_cert",
+    "demangled": "SSL_CTX_add1_chain_cert",
+    "value": "0x3b938",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_peer_verify_algorithms",
+    "demangled": "SSL_get0_peer_verify_algorithms",
+    "value": "0x34e40",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_wbio",
+    "demangled": "SSL_get_wbio",
+    "value": "0x32c90",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_request_handshake_hints",
+    "demangled": "SSL_request_handshake_hints",
+    "value": "0x21438",
+    "size": 400,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl23SSL_get_traffic_secretsEPK6ssl_stPNS_4SpanIKhEES6_",
+    "demangled": "bssl::SSL_get_traffic_secrets(ssl_st const*, bssl::Span<unsigned char const>*, bssl::Span<unsigned char const>*)",
+    "value": "0x3224c",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_version",
+    "demangled": "SSL_get_version",
+    "value": "0x3aa10",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_signed_cert_timestamp_list",
+    "demangled": "SSL_get0_signed_cert_timestamp_list",
+    "value": "0x34630",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "OPENSSL_init_ssl",
+    "demangled": "OPENSSL_init_ssl",
+    "value": "0x322e0",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_ech_accepted",
+    "demangled": "SSL_ech_accepted",
+    "value": "0x19424",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get0_peer",
+    "demangled": "SSL_SESSION_get0_peer",
+    "value": "0x39350",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_alpn_select_cb",
+    "demangled": "SSL_CTX_set_alpn_select_cb",
+    "value": "0x34934",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_handshake_hints",
+    "demangled": "SSL_set_handshake_hints",
+    "value": "0x2186c",
+    "size": 1224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_set1_id_context",
+    "demangled": "SSL_SESSION_set1_id_context",
+    "value": "0x39464",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLSv1_method",
+    "demangled": "TLSv1_method",
+    "value": "0x3d4a8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_session_cache_mode",
+    "demangled": "SSL_CTX_set_session_cache_mode",
+    "value": "0x341c4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_quic_write_level",
+    "demangled": "SSL_quic_write_level",
+    "value": "0x32d0c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_is_dtls",
+    "demangled": "SSL_is_dtls",
+    "value": "0x33620",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_enable_ech_grease",
+    "demangled": "SSL_set_enable_ech_grease",
+    "value": "0x18c9c",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_current_expansion",
+    "demangled": "SSL_get_current_expansion",
+    "value": "0x34ef0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_alpn_selected",
+    "demangled": "SSL_get0_alpn_selected",
+    "value": "0x3493c",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_param",
+    "demangled": "SSL_set1_param",
+    "value": "0x3b5fc",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tmp_dh",
+    "demangled": "SSL_CTX_set_tmp_dh",
+    "value": "0x3442c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_info_callback",
+    "demangled": "SSL_set_info_callback",
+    "value": "0x35084",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_max_proto_version",
+    "demangled": "SSL_CTX_set_max_proto_version",
+    "value": "0x3a8cc",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_tlsext_ticket_keys",
+    "demangled": "SSL_CTX_get_tlsext_ticket_keys",
+    "value": "0x341d8",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_select_next_proto",
+    "demangled": "SSL_select_next_proto",
+    "value": "0x34778",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_magic_pending_session_ptr",
+    "demangled": "SSL_magic_pending_session_ptr",
+    "value": "0x39624",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_add_application_settings",
+    "demangled": "SSL_add_application_settings",
+    "value": "0x349ac",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tlsext_servername_callback",
+    "demangled": "SSL_CTX_set_tlsext_servername_callback",
+    "value": "0x34758",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_certificate",
+    "demangled": "SSL_get_certificate",
+    "value": "0x3b7c8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tlsext_ticket_key_cb",
+    "demangled": "SSL_CTX_set_tlsext_ticket_key_cb",
+    "value": "0x34370",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_num_tickets",
+    "demangled": "SSL_CTX_set_num_tickets",
+    "value": "0x359c0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_ocsp_response",
+    "demangled": "SSL_CTX_set_ocsp_response",
+    "value": "0x2e2d8",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_clear_options",
+    "demangled": "SSL_CTX_clear_options",
+    "value": "0x33924",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_accept_renegotiate",
+    "demangled": "SSL_CTX_sess_accept_renegotiate",
+    "value": "0x357b8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_mode",
+    "demangled": "SSL_get_mode",
+    "value": "0x339ac",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl19SealRecordPrefixLenEPK6ssl_stm",
+    "demangled": "bssl::SealRecordPrefixLen(ssl_st const*, unsigned long)",
+    "value": "0x3e2d8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_max_seal_overhead",
+    "demangled": "SSL_max_seal_overhead",
+    "value": "0x3e450",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_renegotiate_mode",
+    "demangled": "SSL_set_renegotiate_mode",
+    "value": "0x353e4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_private_key_method",
+    "demangled": "SSL_set_private_key_method",
+    "value": "0x3734c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_state",
+    "demangled": "SSL_state",
+    "value": "0x35094",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_in_early_data",
+    "demangled": "SSL_in_early_data",
+    "value": "0x3373c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_signed_cert_timestamp_list",
+    "demangled": "SSL_set_signed_cert_timestamp_list",
+    "value": "0x2e2c0",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_standard_name",
+    "demangled": "SSL_CIPHER_standard_name",
+    "value": "0x2fcf8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl28ssl_is_valid_ech_public_nameENS_4SpanIKhEE",
+    "demangled": "bssl::ssl_is_valid_ech_public_name(bssl::Span<unsigned char const>)",
+    "value": "0x17b20",
+    "size": 520,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLSv1_2_method",
+    "demangled": "DTLSv1_2_method",
+    "value": "0x16c68",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_is_signature_algorithm_rsa_pss",
+    "demangled": "SSL_is_signature_algorithm_rsa_pss",
+    "value": "0x37430",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_ech_retry_configs",
+    "demangled": "SSL_get0_ech_retry_configs",
+    "value": "0x18d7c",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_cache_full",
+    "demangled": "SSL_CTX_sess_cache_full",
+    "value": "0x357d0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_do_handshake",
+    "demangled": "SSL_do_handshake",
+    "value": "0x32dc0",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_free",
+    "demangled": "SSL_free",
+    "value": "0x32b8c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_sigalgs",
+    "demangled": "SSL_set1_sigalgs",
+    "value": "0x37694",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_info_callback",
+    "demangled": "SSL_CTX_get_info_callback",
+    "value": "0x399e8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_current_compression",
+    "demangled": "SSL_get_current_compression",
+    "value": "0x34eec",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_RSAPrivateKey_ASN1",
+    "demangled": "SSL_CTX_use_RSAPrivateKey_ASN1",
+    "value": "0x37214",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_remove_session",
+    "demangled": "SSL_CTX_remove_session",
+    "value": "0x39794",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_load_error_strings",
+    "demangled": "SSL_load_error_strings",
+    "value": "0x357ec",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set1_verify_cert_store",
+    "demangled": "SSL_CTX_set1_verify_cert_store",
+    "value": "0x3c49c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_verify_depth",
+    "demangled": "SSL_set_verify_depth",
+    "value": "0x3b684",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_connect_good",
+    "demangled": "SSL_CTX_sess_connect_good",
+    "value": "0x357ac",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_rbio",
+    "demangled": "SSL_get_rbio",
+    "value": "0x32c88",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_enforce_rsa_key_usage",
+    "demangled": "SSL_set_enforce_rsa_key_usage",
+    "value": "0x353c0",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_server_requested_CAs",
+    "demangled": "SSL_get0_server_requested_CAs",
+    "value": "0x2e1f4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_info_callback",
+    "demangled": "SSL_CTX_set_info_callback",
+    "value": "0x399e0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set0_verify_cert_store",
+    "demangled": "SSL_set0_verify_cert_store",
+    "value": "0x3c4bc",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLSv1_set_initial_timeout_duration",
+    "demangled": "DTLSv1_set_initial_timeout_duration",
+    "value": "0x164fc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tmp_dh_callback",
+    "demangled": "SSL_CTX_set_tmp_dh_callback",
+    "value": "0x351c4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_should_be_single_use",
+    "demangled": "SSL_SESSION_should_be_single_use",
+    "value": "0x394a4",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_cert_store",
+    "demangled": "SSL_CTX_set_cert_store",
+    "value": "0x3b6f0",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_set_cache_size",
+    "demangled": "SSL_CTX_sess_set_cache_size",
+    "value": "0x341ac",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_msg_callback",
+    "demangled": "SSL_CTX_set_msg_callback",
+    "value": "0x352d4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_ocsp_response",
+    "demangled": "SSL_get0_ocsp_response",
+    "value": "0x34684",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLSv1_2_server_method",
+    "demangled": "DTLSv1_2_server_method",
+    "value": "0x16c70",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set0_wbio",
+    "demangled": "SSL_set0_wbio",
+    "value": "0x32bec",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_peer_finished",
+    "demangled": "SSL_get_peer_finished",
+    "value": "0x33d70",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_select_certificate_cb",
+    "demangled": "SSL_CTX_set_select_certificate_cb",
+    "value": "0x353a0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_add_file_cert_subjects_to_stack",
+    "demangled": "SSL_add_file_cert_subjects_to_stack",
+    "value": "0x3060c",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLSv1_handle_timeout",
+    "demangled": "DTLSv1_handle_timeout",
+    "value": "0x16504",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_retain_only_sha256_of_client_certs",
+    "demangled": "SSL_set_retain_only_sha256_of_client_certs",
+    "value": "0x35570",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_early_data_enabled",
+    "demangled": "SSL_set_early_data_enabled",
+    "value": "0x33720",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "PEM_write_bio_SSL_SESSION",
+    "demangled": "PEM_write_bio_SSL_SESSION",
+    "value": "0x3bd88",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_is_aead",
+    "demangled": "SSL_CIPHER_is_aead",
+    "value": "0x2fb70",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_quiet_shutdown",
+    "demangled": "SSL_CTX_get_quiet_shutdown",
+    "value": "0x34f10",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_cert_verify_callback",
+    "demangled": "SSL_CTX_set_cert_verify_callback",
+    "value": "0x3b698",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_default_passwd_cb",
+    "demangled": "SSL_CTX_get_default_passwd_cb",
+    "value": "0x30c00",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_session_cache_mode",
+    "demangled": "SSL_CTX_get_session_cache_mode",
+    "value": "0x341d0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_fd",
+    "demangled": "SSL_get_fd",
+    "value": "0x33afc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_purpose",
+    "demangled": "SSL_CTX_set_purpose",
+    "value": "0x3b5bc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_alpn_protos",
+    "demangled": "SSL_set_alpn_protos",
+    "value": "0x348d4",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_shutdown",
+    "demangled": "SSL_get_shutdown",
+    "value": "0x34f80",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_signing_algorithm_prefs",
+    "demangled": "SSL_CTX_set_signing_algorithm_prefs",
+    "value": "0x3744c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_curves",
+    "demangled": "SSL_set1_curves",
+    "value": "0x3439c",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_max_version",
+    "demangled": "SSL_CIPHER_get_max_version",
+    "value": "0x2fcb8",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_from_bytes",
+    "demangled": "SSL_SESSION_from_bytes",
+    "value": "0x2c3c0",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_pending_cipher",
+    "demangled": "SSL_get_pending_cipher",
+    "value": "0x35558",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4bssl21ssl_session_serializeEPK14ssl_session_stP6cbb_st",
+    "demangled": "bssl::ssl_session_serialize(ssl_session_st const*, cbb_st*)",
+    "value": "0x2bbb4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_quiet_shutdown",
+    "demangled": "SSL_set_quiet_shutdown",
+    "value": "0x34f1c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_quic_read_level",
+    "demangled": "SSL_quic_read_level",
+    "value": "0x32d00",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get_ticket_lifetime_hint",
+    "demangled": "SSL_SESSION_get_ticket_lifetime_hint",
+    "value": "0x394fc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_compliance_policy",
+    "demangled": "SSL_set_compliance_policy",
+    "value": "0x35b54",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_alert_desc_string",
+    "demangled": "SSL_alert_desc_string",
+    "value": "0x39d28",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get_ex_data",
+    "demangled": "SSL_SESSION_get_ex_data",
+    "value": "0x39704",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_used_hello_retry_request",
+    "demangled": "SSL_used_hello_retry_request",
+    "value": "0x35624",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tlsext_host_name",
+    "demangled": "SSL_set_tlsext_host_name",
+    "value": "0x346d8",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_connect",
+    "demangled": "SSL_CTX_sess_connect",
+    "value": "0x357a8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_peer_application_settings",
+    "demangled": "SSL_get0_peer_application_settings",
+    "value": "0x34b04",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_quic_method",
+    "demangled": "SSL_set_quic_method",
+    "value": "0x350f0",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tlsext_use_srtp",
+    "demangled": "SSL_CTX_set_tlsext_use_srtp",
+    "value": "0x16bf4",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_f_ssl",
+    "demangled": "BIO_f_ssl",
+    "value": "0x14a5c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_sigalgs_list",
+    "demangled": "SSL_set1_sigalgs_list",
+    "value": "0x37b74",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_in_false_start",
+    "demangled": "SSL_in_false_start",
+    "value": "0x3536c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get_ex_new_index",
+    "demangled": "SSL_SESSION_get_ex_new_index",
+    "value": "0x396a0",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_connect_renegotiate",
+    "demangled": "SSL_CTX_sess_connect_renegotiate",
+    "value": "0x357b0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get_time",
+    "demangled": "SSL_SESSION_get_time",
+    "value": "0x39344",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get0_peer_certificates",
+    "demangled": "SSL_get0_peer_certificates",
+    "value": "0x2e1d8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_ECH_KEYS_marshal_retry_configs",
+    "demangled": "SSL_ECH_KEYS_marshal_retry_configs",
+    "value": "0x1922c",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get0_signed_cert_timestamp_list",
+    "demangled": "SSL_SESSION_get0_signed_cert_timestamp_list",
+    "value": "0x39360",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_mode",
+    "demangled": "SSL_CTX_set_mode",
+    "value": "0x33964",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_early_data_accepted",
+    "demangled": "SSL_early_data_accepted",
+    "value": "0x33750",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_psk_server_callback",
+    "demangled": "SSL_set_psk_server_callback",
+    "value": "0x352bc",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_cutthrough_complete",
+    "demangled": "SSL_cutthrough_complete",
+    "value": "0x35380",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_verify",
+    "demangled": "SSL_set_verify",
+    "value": "0x3b66c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_prf_nid",
+    "demangled": "SSL_CIPHER_get_prf_nid",
+    "value": "0x2fc44",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_ex_data",
+    "demangled": "SSL_get_ex_data",
+    "value": "0x35150",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set1_host",
+    "demangled": "SSL_set1_host",
+    "value": "0x3c524",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_signing_algorithm_prefs",
+    "demangled": "SSL_set_signing_algorithm_prefs",
+    "value": "0x3746c",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get_options",
+    "demangled": "SSL_CTX_get_options",
+    "value": "0x33934",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_alert_type_string_long",
+    "demangled": "SSL_alert_type_string_long",
+    "value": "0x39cec",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_servername_type",
+    "demangled": "SSL_get_servername_type",
+    "value": "0x345ac",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_get0_chain",
+    "demangled": "SSL_CTX_get0_chain",
+    "value": "0x2e0c8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_new",
+    "demangled": "SSL_new",
+    "value": "0x32828",
+    "size": 704,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set0_chain",
+    "demangled": "SSL_CTX_set0_chain",
+    "value": "0x3b848",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_verify_depth",
+    "demangled": "SSL_get_verify_depth",
+    "value": "0x3b62c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_error_description",
+    "demangled": "SSL_error_description",
+    "value": "0x338f8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_RSAPrivateKey_file",
+    "demangled": "SSL_CTX_use_RSAPrivateKey_file",
+    "value": "0x30970",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_cert_cb",
+    "demangled": "SSL_CTX_set_cert_cb",
+    "value": "0x2e1b8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_export_keying_material",
+    "demangled": "SSL_export_keying_material",
+    "value": "0x3d1fc",
+    "size": 484,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_peer_cert_chain",
+    "demangled": "SSL_get_peer_cert_chain",
+    "value": "0x3b564",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_COMP_free_compression_methods",
+    "demangled": "SSL_COMP_free_compression_methods",
+    "value": "0x2ffdc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_info_callback",
+    "demangled": "SSL_get_info_callback",
+    "value": "0x3508c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BIO_set_ssl",
+    "demangled": "BIO_set_ssl",
+    "value": "0x14a68",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_sess_cb_hits",
+    "demangled": "SSL_CTX_sess_cb_hits",
+    "value": "0x357c4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_srtp_profiles",
+    "demangled": "SSL_set_srtp_profiles",
+    "value": "0x16b80",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_new",
+    "demangled": "SSL_CTX_new",
+    "value": "0x3249c",
+    "size": 332,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_timeout",
+    "demangled": "SSL_CTX_set_timeout",
+    "value": "0x398a8",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLSv1_client_method",
+    "demangled": "DTLSv1_client_method",
+    "value": "0x16c7c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_RSAPrivateKey",
+    "demangled": "SSL_use_RSAPrivateKey",
+    "value": "0x36ebc",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set0_rbio",
+    "demangled": "SSL_set0_rbio",
+    "value": "0x32be4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_client_random",
+    "demangled": "SSL_get_client_random",
+    "value": "0x35500",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TLS_client_method",
+    "demangled": "TLS_client_method",
+    "value": "0x3d4d0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_add0_chain_cert",
+    "demangled": "SSL_add0_chain_cert",
+    "value": "0x3b96c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_protocol_id",
+    "demangled": "SSL_CIPHER_get_protocol_id",
+    "value": "0x2fb68",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "i2d_SSL_SESSION",
+    "demangled": "i2d_SSL_SESSION",
+    "value": "0x2c31c",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get_protocol_version",
+    "demangled": "SSL_SESSION_get_protocol_version",
+    "value": "0x3aabc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_curve_name",
+    "demangled": "SSL_get_curve_name",
+    "value": "0x31290",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "d2i_SSL_SESSION_bio",
+    "demangled": "d2i_SSL_SESSION_bio",
+    "value": "0x3bb58",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSLv23_server_method",
+    "demangled": "SSLv23_server_method",
+    "value": "0x3d4c4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_use_PrivateKey_ASN1",
+    "demangled": "SSL_use_PrivateKey_ASN1",
+    "value": "0x370d4",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DTLS_with_buffers_method",
+    "demangled": "DTLS_with_buffers_method",
+    "value": "0x16c5c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_ticket_aead_method",
+    "demangled": "SSL_CTX_set_ticket_aead_method",
+    "value": "0x358bc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_SESSION_get0_peer_sha256",
+    "demangled": "SSL_SESSION_get0_peer_sha256",
+    "value": "0x39518",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_set_tmp_dh",
+    "demangled": "SSL_set_tmp_dh",
+    "value": "0x34430",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set1_sigalgs_list",
+    "demangled": "SSL_CTX_set1_sigalgs_list",
+    "value": "0x3771c",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CIPHER_get_digest_nid",
+    "demangled": "SSL_CIPHER_get_digest_nid",
+    "value": "0x2fbe8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_cipher_list",
+    "demangled": "SSL_CTX_set_cipher_list",
+    "value": "0x34508",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_ex_data",
+    "demangled": "SSL_CTX_set_ex_data",
+    "value": "0x35198",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_add_client_CA",
+    "demangled": "SSL_CTX_add_client_CA",
+    "value": "0x3c2ec",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_tmp_rsa_callback",
+    "demangled": "SSL_CTX_set_tmp_rsa_callback",
+    "value": "0x351bc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_version",
+    "demangled": "SSL_version",
+    "value": "0x3a9b0",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_set_record_protocol_version",
+    "demangled": "SSL_CTX_set_record_protocol_version",
+    "value": "0x3ab1c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_CTX_use_certificate",
+    "demangled": "SSL_CTX_use_certificate",
+    "value": "0x3b7c0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SSL_get_signature_algorithm_digest",
+    "demangled": "SSL_get_signature_algorithm_digest",
+    "value": "0x37404",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

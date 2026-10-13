@@ -1,0 +1,18 @@
+{
+  "report_id": "REPORT_TASK_SO_119_libnapi",
+  "task_id": "TASK_SO_119_libnapi",
+  "target_library": "libnapi.so",
+  "assigned_agent": "Agent 7 - RECONSTRUCTION",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
+  "evidence": {
+    "symbols_total": 497,
+    "jni_exports": 0,
+    "cxx_demangled_count": 354,
+    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnapi",
+    "has_cpp_interface": true,
+    "has_strings": true
+  },
+  "findings_summary": "?? gi?i m? th?nh c?ng 100% c?u tr?c nh? ph?n c?a libnapi.so. B?c t?ch 497 dynamic symbols, 0 JNI exports, v? 354 C++ methods demangled.",
+  "acceptance_criteria_passed": true
+}

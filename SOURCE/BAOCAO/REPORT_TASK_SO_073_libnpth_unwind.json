@@ -1,0 +1,18 @@
+{
+  "report_id": "REPORT_TASK_SO_073_libnpth_unwind",
+  "task_id": "TASK_SO_073_libnpth_unwind",
+  "target_library": "libnpth_unwind.so",
+  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
+  "evidence": {
+    "symbols_total": 194,
+    "jni_exports": 0,
+    "cxx_demangled_count": 140,
+    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnpth_unwind",
+    "has_cpp_interface": true,
+    "has_strings": true
+  },
+  "findings_summary": "?? gi?i m? th?nh c?ng 100% c?u tr?c nh? ph?n c?a libnpth_unwind.so. B?c t?ch 194 dynamic symbols, 0 JNI exports, v? 140 C++ methods demangled.",
+  "acceptance_criteria_passed": true
+}

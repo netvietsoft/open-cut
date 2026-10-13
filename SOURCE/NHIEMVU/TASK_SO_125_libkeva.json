@@ -1,0 +1,24 @@
+{
+  "task_id": "TASK_SO_125_libkeva",
+  "target_library": "libkeva.so",
+  "cluster_id": "CORE_OTHER",
+  "cluster_name": "L\u00f5i B\u1ed5 tr\u1ee3 / Ti\u1ec7n \u00edch kh\u00e1c",
+  "size_mb": 0.21,
+  "dyn_symbols": 570,
+  "jni_symbols": 0,
+  "assigned_agent": "Agent 7 - RECONSTRUCTION",
+  "status": "READY",
+  "created_at": "2026-10-13T17:37:04.262343",
+  "instructions": [
+    "1. Kh\u1ea3o s\u00e1t c\u1ea5u tr\u00fac nh\u1ecb ph\u00e2n libkeva.so (0.21 MB).",
+    "2. B\u00f3c t\u00e1ch c\u00e1c h\u00e0m JNI v\u00e0 C++ demangled vtable.",
+    "3. Tr\u00edch xu\u1ea5t thu\u1eadt to\u00e1n c\u1ed1t l\u00f5i, pipeline d\u1eef li\u1ec7u v\u00e0 \u00e1nh x\u1ea1 sang ki\u1ebfn tr\u00fac NextAI OpenCut.",
+    "4. L\u01b0u to\u00e0n b\u1ed9 k\u1ebft qu\u1ea3 gi\u1ea3i m\u00e3 v\u00e0o: D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libkeva\\",
+    "5. G\u1eedi b\u00e1o c\u00e1o ho\u00e0n th\u00e0nh \u0111\u1ecbnh d\u1ea1ng JSON v\u1ec1: D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\BAOCAO\\REPORT_TASK_SO_125_libkeva.json"
+  ],
+  "acceptance_criteria": [
+    "B\u00f3c t\u00e1ch 100% symbols \u0111\u1ed9ng kh\u1ea3 d\u1ee5ng",
+    "Sinh C++ Interface header t\u01b0\u01a1ng \u1ee9ng",
+    "Kh\u00f4ng \u0111\u01b0\u1ee3c b\u1ecba \u0111\u1eb7t c\u1ea5u tr\u00fac h\u00e0m, trung th\u1ef1c 100%"
+  ]
+}

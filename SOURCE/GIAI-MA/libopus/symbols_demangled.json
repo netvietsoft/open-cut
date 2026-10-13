@@ -1,0 +1,706 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "log10",
+    "demangled": "log10",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__sF",
+    "demangled": "__sF",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "log",
+    "demangled": "log",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fprintf",
+    "demangled": "fprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_repacketizer_get_size",
+    "demangled": "opus_repacketizer_get_size",
+    "value": "0x4fc34",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_packet_unpad",
+    "demangled": "opus_multistream_packet_unpad",
+    "value": "0x504c8",
+    "size": 440,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_encoder_create",
+    "demangled": "opus_encoder_create",
+    "value": "0x45414",
+    "size": 328,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_decoder_destroy",
+    "demangled": "opus_decoder_destroy",
+    "value": "0x4500c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_encoder_ctl",
+    "demangled": "opus_projection_encoder_ctl",
+    "value": "0x50c24",
+    "size": 624,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_decoder_create",
+    "demangled": "opus_projection_decoder_create",
+    "value": "0x510fc",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_encode_float",
+    "demangled": "opus_encode_float",
+    "value": "0x4a500",
+    "size": 600,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_surround_encoder_get_size",
+    "demangled": "opus_multistream_surround_encoder_get_size",
+    "value": "0x4d0b8",
+    "size": 328,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_asm_opt_enable",
+    "demangled": "opus_asm_opt_enable",
+    "value": "0x42a30",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_packet_get_nb_frames",
+    "demangled": "opus_packet_get_nb_frames",
+    "value": "0x45010",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_packet_get_bandwidth",
+    "demangled": "opus_packet_get_bandwidth",
+    "value": "0x44828",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_encoder_ctl",
+    "demangled": "opus_encoder_ctl",
+    "value": "0x4a8b4",
+    "size": 4708,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_encode",
+    "demangled": "opus_encode",
+    "value": "0x4a758",
+    "size": 348,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_get_version_string",
+    "demangled": "opus_get_version_string",
+    "value": "0x7f5c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_encoder_get_size",
+    "demangled": "opus_encoder_get_size",
+    "value": "0x450f8",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_decoder_get_nb_samples",
+    "demangled": "opus_decoder_get_nb_samples",
+    "value": "0x44b04",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_decoder_ctl",
+    "demangled": "opus_multistream_decoder_ctl",
+    "value": "0x4f640",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_surround_encoder_create",
+    "demangled": "opus_multistream_surround_encoder_create",
+    "value": "0x4d968",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_encoder_create",
+    "demangled": "opus_multistream_encoder_create",
+    "value": "0x4d84c",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_packet_parse",
+    "demangled": "opus_packet_parse",
+    "value": "0x42a14",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_ambisonics_encoder_get_size",
+    "demangled": "opus_projection_ambisonics_encoder_get_size",
+    "value": "0x50680",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_repacketizer_get_nb_frames",
+    "demangled": "opus_repacketizer_get_nb_frames",
+    "value": "0x4fd54",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_packet_unpad",
+    "demangled": "opus_packet_unpad",
+    "value": "0x5030c",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_packet_pad",
+    "demangled": "opus_multistream_packet_pad",
+    "value": "0x503ac",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__end__",
+    "demangled": "__end__",
+    "value": "0x68000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_decoder_init",
+    "demangled": "opus_multistream_decoder_init",
+    "value": "0x4eea8",
+    "size": 424,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_ambisonics_encoder_create",
+    "demangled": "opus_projection_ambisonics_encoder_create",
+    "value": "0x50a5c",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_decoder_get_size",
+    "demangled": "opus_multistream_decoder_get_size",
+    "value": "0x4ee38",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_decoder_create",
+    "demangled": "opus_decoder_create",
+    "value": "0x42c44",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_packet_get_samples_per_frame",
+    "demangled": "opus_packet_get_samples_per_frame",
+    "value": "0x42494",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_repacketizer_create",
+    "demangled": "opus_repacketizer_create",
+    "value": "0x4fc44",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_end__",
+    "demangled": "__bss_end__",
+    "value": "0x68000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_encoder_destroy",
+    "demangled": "opus_projection_encoder_destroy",
+    "value": "0x50c20",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_decode_float",
+    "demangled": "opus_multistream_decode_float",
+    "value": "0x4f780",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_decode",
+    "demangled": "opus_multistream_decode",
+    "value": "0x4f6a4",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_decoder_get_size",
+    "demangled": "opus_projection_decoder_get_size",
+    "value": "0x50e94",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_repacketizer_out_range",
+    "demangled": "opus_repacketizer_out_range",
+    "value": "0x5023c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_decode",
+    "demangled": "opus_projection_decode",
+    "value": "0x511d8",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_packet_get_nb_samples",
+    "demangled": "opus_packet_get_nb_samples",
+    "value": "0x45060",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_repacketizer_init",
+    "demangled": "opus_repacketizer_init",
+    "value": "0x4fc3c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start__",
+    "demangled": "__bss_start__",
+    "value": "0x68000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_decoder_create",
+    "demangled": "opus_multistream_decoder_create",
+    "value": "0x4f050",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_encoder_destroy",
+    "demangled": "opus_multistream_encoder_destroy",
+    "value": "0x4ee34",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_encode_float",
+    "demangled": "opus_projection_encode_float",
+    "value": "0x50b9c",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_decoder_init",
+    "demangled": "opus_decoder_init",
+    "value": "0x42aac",
+    "size": 408,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_repacketizer_out",
+    "demangled": "opus_repacketizer_out",
+    "value": "0x50248",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_encode",
+    "demangled": "opus_multistream_encode",
+    "value": "0x4e614",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_encoder_init",
+    "demangled": "opus_multistream_encoder_init",
+    "value": "0x4d200",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_ambisonics_encoder_init",
+    "demangled": "opus_projection_ambisonics_encoder_init",
+    "value": "0x5077c",
+    "size": 736,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_encoder_get_size",
+    "demangled": "opus_multistream_encoder_get_size",
+    "value": "0x4d048",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_encoder_destroy",
+    "demangled": "opus_encoder_destroy",
+    "value": "0x4bb18",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_decoder_destroy",
+    "demangled": "opus_projection_decoder_destroy",
+    "value": "0x513f4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_decoder_init",
+    "demangled": "opus_projection_decoder_init",
+    "value": "0x50edc",
+    "size": 544,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_encode",
+    "demangled": "opus_projection_encode",
+    "value": "0x50b1c",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x68000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_decode_float",
+    "demangled": "opus_decode_float",
+    "value": "0x448bc",
+    "size": 584,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_packet_get_nb_channels",
+    "demangled": "opus_packet_get_nb_channels",
+    "value": "0x44874",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_repacketizer_cat",
+    "demangled": "opus_repacketizer_cat",
+    "value": "0x4fc64",
+    "size": 240,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_encode_float",
+    "demangled": "opus_multistream_encode_float",
+    "value": "0x4e72c",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_decoder_ctl",
+    "demangled": "opus_projection_decoder_ctl",
+    "value": "0x51380",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x68000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_projection_decode_float",
+    "demangled": "opus_projection_decode_float",
+    "value": "0x512ac",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_pcm_soft_clip",
+    "demangled": "opus_pcm_soft_clip",
+    "value": "0x4210c",
+    "size": 856,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_decoder_get_size",
+    "demangled": "opus_decoder_get_size",
+    "value": "0x42a38",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_decoder_ctl",
+    "demangled": "opus_decoder_ctl",
+    "value": "0x44ba0",
+    "size": 1132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_bss_end__",
+    "demangled": "_bss_end__",
+    "value": "0x68000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_packet_pad",
+    "demangled": "opus_packet_pad",
+    "value": "0x50264",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_strerror",
+    "demangled": "opus_strerror",
+    "value": "0x7f30",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_encoder_ctl",
+    "demangled": "opus_multistream_encoder_ctl",
+    "value": "0x4edd0",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_surround_encoder_init",
+    "demangled": "opus_multistream_surround_encoder_init",
+    "value": "0x4d5d4",
+    "size": 632,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_multistream_decoder_destroy",
+    "demangled": "opus_multistream_decoder_destroy",
+    "value": "0x4fc30",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_encoder_init",
+    "demangled": "opus_encoder_init",
+    "value": "0x45170",
+    "size": 676,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x68000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_repacketizer_destroy",
+    "demangled": "opus_repacketizer_destroy",
+    "value": "0x4fc60",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opus_decode",
+    "demangled": "opus_decode",
+    "value": "0x44888",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

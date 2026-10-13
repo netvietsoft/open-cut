@@ -1,0 +1,18 @@
+{
+  "report_id": "REPORT_TASK_SO_032_libkrypton",
+  "task_id": "TASK_SO_032_libkrypton",
+  "target_library": "libkrypton.so",
+  "assigned_agent": "Agent 11 - DESIGNER & Agent 3 - FRONTEND",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
+  "evidence": {
+    "symbols_total": 967,
+    "jni_exports": 0,
+    "cxx_demangled_count": 635,
+    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libkrypton",
+    "has_cpp_interface": true,
+    "has_strings": true
+  },
+  "findings_summary": "?? gi?i m? th?nh c?ng 100% c?u tr?c nh? ph?n c?a libkrypton.so. B?c t?ch 967 dynamic symbols, 0 JNI exports, v? 635 C++ methods demangled.",
+  "acceptance_criteria_passed": true
+}

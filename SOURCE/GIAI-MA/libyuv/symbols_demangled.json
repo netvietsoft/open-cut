@@ -1,0 +1,4634 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "log10",
+    "demangled": "log10",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__memcpy_chk",
+    "demangled": "__memcpy_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getenv",
+    "demangled": "getenv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fclose",
+    "demangled": "fclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fgets",
+    "demangled": "fgets",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcmp",
+    "demangled": "strcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strstr",
+    "demangled": "strstr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fopen",
+    "demangled": "fopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV21ToI420",
+    "demangled": "NV21ToI420",
+    "value": "0xdc04",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB565Dither",
+    "demangled": "ARGBToRGB565Dither",
+    "value": "0x11ca8",
+    "size": 260,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV21ToARGBRow_C",
+    "demangled": "NV21ToARGBRow_C",
+    "value": "0x1d1d4",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBAToARGB",
+    "demangled": "RGBAToARGB",
+    "value": "0xf4e8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBGrayRow_NEON",
+    "demangled": "ARGBGrayRow_NEON",
+    "value": "0x20590",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRAWRow_Any_NEON",
+    "demangled": "ARGBToRAWRow_Any_NEON",
+    "value": "0x18fb0",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2_NEON",
+    "demangled": "ScaleRowDown2_NEON",
+    "value": "0x25d90",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleCols_16_C",
+    "demangled": "ScaleCols_16_C",
+    "value": "0x249cc",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "J400ToARGBRow_NEON",
+    "demangled": "J400ToARGBRow_NEON",
+    "value": "0x1f10c",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBColorMatrixRow_C",
+    "demangled": "ARGBColorMatrixRow_C",
+    "value": "0x1c4fc",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToUVRow_Any_NEON",
+    "demangled": "RGB24ToUVRow_Any_NEON",
+    "value": "0x1a320",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB565DitherRow_Any_NEON",
+    "demangled": "ARGBToRGB565DitherRow_Any_NEON",
+    "value": "0x19968",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_Any_NEON",
+    "demangled": "ScaleRowDown38_Any_NEON",
+    "value": "0x22d7c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_Any_NEON",
+    "demangled": "ScaleRowDown34_Any_NEON",
+    "value": "0x22cbc",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I444ToI420",
+    "demangled": "I444ToI420",
+    "value": "0xd880",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBAToYRow_C",
+    "demangled": "RGBAToYRow_C",
+    "value": "0x1ba54",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGBRow_NEON",
+    "demangled": "I422ToARGBRow_NEON",
+    "value": "0x1eb60",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToYUY2",
+    "demangled": "I422ToYUY2",
+    "value": "0x1016c",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToARGBRow_C",
+    "demangled": "YUY2ToARGBRow_C",
+    "value": "0x1d2f8",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBCopyYToAlphaRow_C",
+    "demangled": "ARGBCopyYToAlphaRow_C",
+    "value": "0x1e384",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToARGBRow_Any_NEON",
+    "demangled": "NV12ToARGBRow_Any_NEON",
+    "value": "0x18db8",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToARGB",
+    "demangled": "ARGB1555ToARGB",
+    "value": "0xf6b4",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CopyRow_16_C",
+    "demangled": "CopyRow_16_C",
+    "value": "0x1d700",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MergeUVRow_C",
+    "demangled": "MergeUVRow_C",
+    "value": "0x1d690",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBColorMatrix",
+    "demangled": "RGBColorMatrix",
+    "value": "0x15610",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBCopyAlphaRow_C",
+    "demangled": "ARGBCopyAlphaRow_C",
+    "value": "0x1e2f8",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBAttenuateRow_C",
+    "demangled": "ARGBAttenuateRow_C",
+    "value": "0x1da90",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUYVY",
+    "demangled": "ARGBToUYVY",
+    "value": "0x11a14",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposeUVWx8_Any_NEON",
+    "demangled": "TransposeUVWx8_Any_NEON",
+    "value": "0x17b24",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToUV422Row_Any_NEON",
+    "demangled": "UYVYToUV422Row_Any_NEON",
+    "value": "0x1a0ac",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CumulativeSumToAverageRow_C",
+    "demangled": "CumulativeSumToAverageRow_C",
+    "value": "0x1dc7c",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUVRow_C",
+    "demangled": "ARGBToUVRow_C",
+    "value": "0x1b758",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToYRow_C",
+    "demangled": "RGB24ToYRow_C",
+    "value": "0x1bb20",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToYRow_NEON",
+    "demangled": "YUY2ToYRow_NEON",
+    "value": "0x1f6f8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToARGBRow_C",
+    "demangled": "RAWToARGBRow_C",
+    "value": "0x1b1c4",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CanonicalFourCC",
+    "demangled": "CanonicalFourCC",
+    "value": "0x26600",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBAToUVRow_Any_NEON",
+    "demangled": "RGBAToUVRow_Any_NEON",
+    "value": "0x1a2b4",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Interpolate",
+    "demangled": "I420Interpolate",
+    "value": "0x15e8c",
+    "size": 264,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUVToARGBScaleClip",
+    "demangled": "YUVToARGBScaleClip",
+    "value": "0x23b90",
+    "size": 300,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToARGB1555",
+    "demangled": "ARGBToARGB1555",
+    "value": "0x11e44",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleFilterRows_NEON",
+    "demangled": "ScaleFilterRows_NEON",
+    "value": "0x26234",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGB1555Row_NEON",
+    "demangled": "I422ToARGB1555Row_NEON",
+    "value": "0x1eec8",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSobelXY",
+    "demangled": "ARGBSobelXY",
+    "value": "0x163cc",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToUVRow_NEON",
+    "demangled": "UYVYToUVRow_NEON",
+    "value": "0x1f778",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToARGB4444Row_C",
+    "demangled": "ARGBToARGB4444Row_C",
+    "value": "0x1b630",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HalfFloat1Row_NEON",
+    "demangled": "HalfFloat1Row_NEON",
+    "value": "0x2086c",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBInterpolate",
+    "demangled": "ARGBInterpolate",
+    "value": "0x15e7c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToARGBRow_Any_NEON",
+    "demangled": "RGB24ToARGBRow_Any_NEON",
+    "value": "0x19694",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToARGBRow_C",
+    "demangled": "ARGB4444ToARGBRow_C",
+    "value": "0x1b2f8",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToYUY2Row_C",
+    "demangled": "I422ToYUY2Row_C",
+    "value": "0x1dfd8",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScalePlaneBilinearDown",
+    "demangled": "ScalePlaneBilinearDown",
+    "value": "0x208d8",
+    "size": 480,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_2_Box_16_C",
+    "demangled": "ScaleRowDown38_2_Box_16_C",
+    "value": "0x25060",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToARGBRow_Any_NEON",
+    "demangled": "RGB565ToARGBRow_Any_NEON",
+    "value": "0x19764",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_3_Box_16_C",
+    "demangled": "ScaleRowDown38_3_Box_16_C",
+    "value": "0x24e8c",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToI420",
+    "demangled": "RGB565ToI420",
+    "value": "0xe3e0",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SplitUVRow_Any_NEON",
+    "demangled": "SplitUVRow_Any_NEON",
+    "value": "0x19f38",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Box_16_C",
+    "demangled": "ScaleRowDown2Box_16_C",
+    "value": "0x2400c",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGB24Row_NEON",
+    "demangled": "I422ToRGB24Row_NEON",
+    "value": "0x1ed64",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToUV422Row_C",
+    "demangled": "UYVYToUV422Row_C",
+    "value": "0x1d854",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUVJRow_Any_NEON",
+    "demangled": "ARGBToUVJRow_Any_NEON",
+    "value": "0x1a170",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGBARow_Any_NEON",
+    "demangled": "I422ToRGBARow_Any_NEON",
+    "value": "0x18918",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fixed_invtbl8",
+    "demangled": "fixed_invtbl8",
+    "value": "0x26910",
+    "size": 1024,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToYRow_Any_NEON",
+    "demangled": "YUY2ToYRow_Any_NEON",
+    "value": "0x195dc",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGB4444Row_C",
+    "demangled": "I422ToARGB4444Row_C",
+    "value": "0x1ceb0",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_NEON",
+    "demangled": "ScaleRowDown38_NEON",
+    "value": "0x25f28",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422Copy",
+    "demangled": "I422Copy",
+    "value": "0x13dc0",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSepiaRow_C",
+    "demangled": "ARGBSepiaRow_C",
+    "value": "0x1c464",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToUVRow_C",
+    "demangled": "UYVYToUVRow_C",
+    "value": "0x1d800",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGBARow_C",
+    "demangled": "I422ToRGBARow_C",
+    "value": "0x1d3e0",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BlendPlaneRow_C",
+    "demangled": "BlendPlaneRow_C",
+    "value": "0x1d9e8",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposeUVWxH_C",
+    "demangled": "TransposeUVWxH_C",
+    "value": "0x180c0",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBMirrorRow_C",
+    "demangled": "ARGBMirrorRow_C",
+    "value": "0x1d5e4",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RotatePlane90",
+    "demangled": "RotatePlane90",
+    "value": "0x172d8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MirrorUVRow_NEON",
+    "demangled": "MirrorUVRow_NEON",
+    "value": "0x1f550",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBRotate",
+    "demangled": "ARGBRotate",
+    "value": "0x17e30",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToUVRow_Any_NEON",
+    "demangled": "UYVYToUVRow_Any_NEON",
+    "value": "0x1a5a0",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBComputeCumulativeSum",
+    "demangled": "ARGBComputeCumulativeSum",
+    "value": "0x158e4",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDown2_C",
+    "demangled": "ScaleARGBRowDown2_C",
+    "value": "0x251c8",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelYRow_NEON",
+    "demangled": "SobelYRow_NEON",
+    "value": "0x2081c",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRAWRow_NEON",
+    "demangled": "ARGBToRAWRow_NEON",
+    "value": "0x1f6dc",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToUYVYRow_Any_NEON",
+    "demangled": "I422ToUYVYRow_Any_NEON",
+    "value": "0x18730",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BGRAToUVRow_NEON",
+    "demangled": "BGRAToUVRow_NEON",
+    "value": "0x1fa9c",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown4_16_C",
+    "demangled": "ScaleRowDown4_16_C",
+    "value": "0x240f8",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_3_Box_Any_NEON",
+    "demangled": "ScaleRowDown38_3_Box_Any_NEON",
+    "value": "0x22dbc",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBMultiplyRow_NEON",
+    "demangled": "ARGBMultiplyRow_NEON",
+    "value": "0x206e0",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToUVRow_NEON",
+    "demangled": "ARGB1555ToUVRow_NEON",
+    "value": "0x1fe90",
+    "size": 352,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Mirror",
+    "demangled": "I420Mirror",
+    "value": "0x144a8",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToUVRow_C",
+    "demangled": "RGB565ToUVRow_C",
+    "value": "0x1bffc",
+    "size": 324,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGB565Row_C",
+    "demangled": "I422ToRGB565Row_C",
+    "value": "0x1d0cc",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToARGBRow_Any_NEON",
+    "demangled": "ARGB4444ToARGBRow_Any_NEON",
+    "value": "0x19824",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Ssim",
+    "demangled": "I420Ssim",
+    "value": "0xd3f4",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBExtractAlphaRow_Any_NEON",
+    "demangled": "ARGBExtractAlphaRow_Any_NEON",
+    "value": "0x19914",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBAttenuate",
+    "demangled": "ARGBAttenuate",
+    "value": "0x15250",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposeWx8_C",
+    "demangled": "TransposeWx8_C",
+    "value": "0x17eb8",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422AlphaToARGBRow_C",
+    "demangled": "I422AlphaToARGBRow_C",
+    "value": "0x1cd30",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGBA",
+    "demangled": "ARGBToRGBA",
+    "value": "0x11b84",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MergeUVRow_NEON",
+    "demangled": "MergeUVRow_NEON",
+    "value": "0x1f4d4",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToUVRow_NEON",
+    "demangled": "RGB565ToUVRow_NEON",
+    "value": "0x1fd30",
+    "size": 352,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToUVRow_C",
+    "demangled": "RAWToUVRow_C",
+    "value": "0x1bc78",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBRect",
+    "demangled": "ARGBRect",
+    "value": "0x1518c",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBMultiplyRow_C",
+    "demangled": "ARGBMultiplyRow_C",
+    "value": "0x1c7b4",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToYRow_NEON",
+    "demangled": "RGB24ToYRow_NEON",
+    "value": "0x2031c",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGB",
+    "demangled": "I422ToARGB",
+    "value": "0xee64",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "H422ToARGB",
+    "demangled": "H422ToARGB",
+    "value": "0xef8c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleOffset",
+    "demangled": "ScaleOffset",
+    "value": "0x2239c",
+    "size": 332,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BGRAToI420",
+    "demangled": "BGRAToI420",
+    "value": "0xdf4c",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB565",
+    "demangled": "ARGBToRGB565",
+    "value": "0x11dac",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToI420",
+    "demangled": "RAWToI420",
+    "value": "0xe304",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422AlphaToARGBRow_Any_NEON",
+    "demangled": "I422AlphaToARGBRow_Any_NEON",
+    "value": "0x1853c",
+    "size": 372,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRAW",
+    "demangled": "ARGBToRAW",
+    "value": "0x11c20",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBDetect",
+    "demangled": "ARGBDetect",
+    "value": "0xcf18",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToYRow_C",
+    "demangled": "UYVYToYRow_C",
+    "value": "0x1d880",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBQuantizeRow_NEON",
+    "demangled": "ARGBQuantizeRow_NEON",
+    "value": "0x204e0",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Box_Any_NEON",
+    "demangled": "ScaleRowDown2Box_Any_NEON",
+    "value": "0x22b84",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToARGBRow_C",
+    "demangled": "UYVYToARGBRow_C",
+    "value": "0x1d36c",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleFilterCols_16_C",
+    "demangled": "ScaleFilterCols_16_C",
+    "value": "0x24bc4",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "H420ToABGR",
+    "demangled": "H420ToABGR",
+    "value": "0xee48",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToABGR",
+    "demangled": "I420ToABGR",
+    "value": "0xedd8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "J420ToABGR",
+    "demangled": "J420ToABGR",
+    "value": "0xee10",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MergeUVRow_Any_NEON",
+    "demangled": "MergeUVRow_Any_NEON",
+    "value": "0x18b0c",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HalfFloatRow_Any_NEON",
+    "demangled": "HalfFloatRow_Any_NEON",
+    "value": "0x19abc",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBPolynomial",
+    "demangled": "ARGBPolynomial",
+    "value": "0x16418",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ABGRToUVRow_NEON",
+    "demangled": "ABGRToUVRow_NEON",
+    "value": "0x1fb20",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGBARow_NEON",
+    "demangled": "I422ToRGBARow_NEON",
+    "value": "0x1ecb8",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToARGB",
+    "demangled": "UYVYToARGB",
+    "value": "0xfadc",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBFilterCols64_C",
+    "demangled": "ScaleARGBFilterCols64_C",
+    "value": "0x256b4",
+    "size": 392,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBRotate90",
+    "demangled": "ARGBRotate90",
+    "value": "0x17bb8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToARGBRow_NEON",
+    "demangled": "RGB565ToARGBRow_NEON",
+    "value": "0x1f5f8",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBAToUVRow_NEON",
+    "demangled": "RGBAToUVRow_NEON",
+    "value": "0x1fba4",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSubtractRow_C",
+    "demangled": "ARGBSubtractRow_C",
+    "value": "0x1c898",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_0_Box_C",
+    "demangled": "ScaleRowDown34_0_Box_C",
+    "value": "0x245f0",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToARGB1555Row_Any_NEON",
+    "demangled": "ARGBToARGB1555Row_Any_NEON",
+    "value": "0x19074",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBShuffleRow_NEON",
+    "demangled": "ARGBShuffleRow_NEON",
+    "value": "0x1f7a0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelRow_C",
+    "demangled": "SobelRow_C",
+    "value": "0x1c9cc",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422AlphaToARGBRow_NEON",
+    "demangled": "I422AlphaToARGBRow_NEON",
+    "value": "0x1ec0c",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToUVRow_Any_NEON",
+    "demangled": "ARGB1555ToUVRow_Any_NEON",
+    "value": "0x1a464",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV21ToARGB",
+    "demangled": "NV21ToARGB",
+    "value": "0xf868",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToYRow_NEON",
+    "demangled": "UYVYToYRow_NEON",
+    "value": "0x1f70c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToYRow_C",
+    "demangled": "ARGB4444ToYRow_C",
+    "value": "0x1bfb0",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420AlphaToARGB",
+    "demangled": "I420AlphaToARGB",
+    "value": "0xf0dc",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToI400",
+    "demangled": "I420ToI400",
+    "value": "0x13fa8",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUVRow_NEON",
+    "demangled": "ARGBToUVRow_NEON",
+    "value": "0x1f994",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToYRow_C",
+    "demangled": "ARGB1555ToYRow_C",
+    "value": "0x1bf5c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBQuantizeRow_C",
+    "demangled": "ARGBQuantizeRow_C",
+    "value": "0x1c6cc",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToUVRow_Any_NEON",
+    "demangled": "RAWToUVRow_Any_NEON",
+    "value": "0x1a38c",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDownEvenBox_C",
+    "demangled": "ScaleARGBRowDownEvenBox_C",
+    "value": "0x25398",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "InterpolateRow_C",
+    "demangled": "InterpolateRow_C",
+    "value": "0x1dddc",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBCopy",
+    "demangled": "ARGBCopy",
+    "value": "0xec48",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_1_Box_NEON",
+    "demangled": "ScaleRowDown34_1_Box_NEON",
+    "value": "0x25edc",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "kYuvH709Constants",
+    "demangled": "kYuvH709Constants",
+    "value": "0x26850",
+    "size": 96,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_0_Box_NEON",
+    "demangled": "ScaleRowDown34_0_Box_NEON",
+    "value": "0x25e70",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "J444ToARGB",
+    "demangled": "J444ToARGB",
+    "value": "0xf0c0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I444ToARGB",
+    "demangled": "I444ToARGB",
+    "value": "0xefc4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB24Row_NEON",
+    "demangled": "ARGBToRGB24Row_NEON",
+    "value": "0x1f6c8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBCols_NEON",
+    "demangled": "ScaleARGBCols_NEON",
+    "value": "0x26444",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "GetARGBBlend",
+    "demangled": "GetARGBBlend",
+    "value": "0x14648",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToNV12",
+    "demangled": "I420ToNV12",
+    "value": "0x1041c",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MirrorUVRow_C",
+    "demangled": "MirrorUVRow_C",
+    "value": "0x1d57c",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x380b0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToARGBRow_Any_NEON",
+    "demangled": "RAWToARGBRow_Any_NEON",
+    "value": "0x196fc",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_C",
+    "demangled": "ScaleRowDown34_C",
+    "value": "0x24580",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGB4444Row_NEON",
+    "demangled": "I422ToARGB4444Row_NEON",
+    "value": "0x1ef90",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToARGBRow_NEON",
+    "demangled": "NV12ToARGBRow_NEON",
+    "value": "0x1f12c",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I444ToARGBRow_Any_NEON",
+    "demangled": "I444ToARGBRow_Any_NEON",
+    "value": "0x187b0",
+    "size": 264,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToI420",
+    "demangled": "ARGB4444ToI420",
+    "value": "0xe598",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToARGBRow_Any_NEON",
+    "demangled": "UYVYToARGBRow_Any_NEON",
+    "value": "0x19bf4",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Linear_NEON",
+    "demangled": "ScaleRowDown2Linear_NEON",
+    "value": "0x25da4",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToYRow_NEON",
+    "demangled": "ARGBToYRow_NEON",
+    "value": "0x1f8c0",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "kYvuJPEGConstants",
+    "demangled": "kYvuJPEGConstants",
+    "value": "0x267f0",
+    "size": 96,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Scale",
+    "demangled": "Scale",
+    "value": "0x22334",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB565Row_Any_NEON",
+    "demangled": "ARGBToRGB565Row_Any_NEON",
+    "value": "0x19014",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleFilterCols_Any_NEON",
+    "demangled": "ScaleFilterCols_Any_NEON",
+    "value": "0x22a1c",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToARGBRow_NEON",
+    "demangled": "YUY2ToARGBRow_NEON",
+    "value": "0x1f358",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSobelToPlane",
+    "demangled": "ARGBSobelToPlane",
+    "value": "0x16380",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBCols64_C",
+    "demangled": "ScaleARGBCols64_C",
+    "value": "0x254b0",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV21ToARGBRow_NEON",
+    "demangled": "NV21ToARGBRow_NEON",
+    "value": "0x1f1e0",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToYRow_NEON",
+    "demangled": "RAWToYRow_NEON",
+    "value": "0x20354",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToRAW",
+    "demangled": "I420ToRAW",
+    "value": "0x106bc",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBBlendRow_NEON",
+    "demangled": "ARGBBlendRow_NEON",
+    "value": "0x20410",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToRGB24Row_NEON",
+    "demangled": "RAWToRGB24Row_NEON",
+    "value": "0x1f5dc",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBGrayRow_C",
+    "demangled": "ARGBGrayRow_C",
+    "value": "0x1c404",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBUnattenuate",
+    "demangled": "ARGBUnattenuate",
+    "value": "0x152ec",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2_16_C",
+    "demangled": "ScaleRowDown2_16_C",
+    "value": "0x23d68",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToBGRA",
+    "demangled": "I420ToBGRA",
+    "value": "0x105e4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRAWRow_C",
+    "demangled": "ARGBToRAWRow_C",
+    "value": "0x1b378",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToRGB565Row_NEON",
+    "demangled": "NV12ToRGB565Row_NEON",
+    "value": "0x1f294",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBBlur",
+    "demangled": "ARGBBlur",
+    "value": "0x15980",
+    "size": 796,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBLumaColorTableRow_C",
+    "demangled": "ARGBLumaColorTableRow_C",
+    "value": "0x1e1e0",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToYRow_NEON",
+    "demangled": "ARGB4444ToYRow_NEON",
+    "value": "0x20214",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ABGRToUVRow_Any_NEON",
+    "demangled": "ABGRToUVRow_Any_NEON",
+    "value": "0x1a248",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDown2Linear_Any_NEON",
+    "demangled": "ScaleARGBRowDown2Linear_Any_NEON",
+    "value": "0x22e7c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDown2Linear_C",
+    "demangled": "ScaleARGBRowDown2Linear_C",
+    "value": "0x25208",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToUV422Row_NEON",
+    "demangled": "YUY2ToUV422Row_NEON",
+    "value": "0x1f720",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToRGB565",
+    "demangled": "NV12ToRGB565",
+    "value": "0x14e60",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToARGB",
+    "demangled": "RGB565ToARGB",
+    "value": "0xf624",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGBRow_Any_NEON",
+    "demangled": "I422ToARGBRow_Any_NEON",
+    "value": "0x188b8",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToNV21",
+    "demangled": "I420ToNV21",
+    "value": "0x104ec",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown4Box_Any_NEON",
+    "demangled": "ScaleRowDown4Box_Any_NEON",
+    "value": "0x22c78",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBScale",
+    "demangled": "ARGBScale",
+    "value": "0x23b20",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SumSquareError_C",
+    "demangled": "SumSquareError_C",
+    "value": "0xd504",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Box_Odd_NEON",
+    "demangled": "ScaleRowDown2Box_Odd_NEON",
+    "value": "0x22bc8",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_2_Box_C",
+    "demangled": "ScaleRowDown38_2_Box_C",
+    "value": "0x24fa4",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelRow_Any_NEON",
+    "demangled": "SobelRow_Any_NEON",
+    "value": "0x18c98",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToYRow_Any_NEON",
+    "demangled": "RGB565ToYRow_Any_NEON",
+    "value": "0x194ec",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "kYuvJPEGConstants",
+    "demangled": "kYuvJPEGConstants",
+    "value": "0x26790",
+    "size": 96,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToY",
+    "demangled": "YUY2ToY",
+    "value": "0x143d0",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToUYVY",
+    "demangled": "I422ToUYVY",
+    "value": "0x102d8",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBGrayTo",
+    "demangled": "ARGBGrayTo",
+    "value": "0x1534c",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CopyPlane",
+    "demangled": "CopyPlane",
+    "value": "0x13c70",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBRotate180",
+    "demangled": "ARGBRotate180",
+    "value": "0x17c84",
+    "size": 388,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HalfFloatRow_NEON",
+    "demangled": "HalfFloatRow_NEON",
+    "value": "0x20898",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBColsUp2_C",
+    "demangled": "ScaleARGBColsUp2_C",
+    "value": "0x25504",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_1_Box_Any_NEON",
+    "demangled": "ScaleRowDown34_1_Box_Any_NEON",
+    "value": "0x22d3c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelXYRow_C",
+    "demangled": "SobelXYRow_C",
+    "value": "0x1ca4c",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBExtractAlphaRow_C",
+    "demangled": "ARGBExtractAlphaRow_C",
+    "value": "0x1e340",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BGRAToYRow_NEON",
+    "demangled": "BGRAToYRow_NEON",
+    "value": "0x20274",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HalfFloatPlane",
+    "demangled": "HalfFloatPlane",
+    "value": "0x16484",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "M420ToI420",
+    "demangled": "M420ToI420",
+    "value": "0xdc50",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToRGB24",
+    "demangled": "I420ToRGB24",
+    "value": "0x10600",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDownEven_NEON",
+    "demangled": "ScaleARGBRowDownEven_NEON",
+    "value": "0x263a8",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToYRow_C",
+    "demangled": "RGB565ToYRow_C",
+    "value": "0x1bf08",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBColorMatrix",
+    "demangled": "ARGBColorMatrix",
+    "value": "0x15538",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToI422",
+    "demangled": "I420ToI422",
+    "value": "0xff84",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToUVRow_NEON",
+    "demangled": "RAWToUVRow_NEON",
+    "value": "0x1fcac",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBRotate270",
+    "demangled": "ARGBRotate270",
+    "value": "0x17c70",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGBRow_C",
+    "demangled": "I422ToARGBRow_C",
+    "value": "0x1ccb8",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToI420",
+    "demangled": "NV12ToI420",
+    "value": "0xd990",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I400ToARGBRow_Any_NEON",
+    "demangled": "I400ToARGBRow_Any_NEON",
+    "value": "0x19198",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBMirror",
+    "demangled": "ARGBMirror",
+    "value": "0x145a0",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBBlendRow_C",
+    "demangled": "ARGBBlendRow_C",
+    "value": "0x1d8c8",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBAToYRow_NEON",
+    "demangled": "RGBAToYRow_NEON",
+    "value": "0x202e4",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HashDjb2",
+    "demangled": "HashDjb2",
+    "value": "0xce8c",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "FixedDiv_C",
+    "demangled": "FixedDiv_C",
+    "value": "0x25ae4",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToYRow_Any_NEON",
+    "demangled": "UYVYToYRow_Any_NEON",
+    "value": "0x19638",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I400Mirror",
+    "demangled": "I400Mirror",
+    "value": "0x14468",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToNV12",
+    "demangled": "YUY2ToNV12",
+    "value": "0x167c8",
+    "size": 260,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SplitUVPlane",
+    "demangled": "SplitUVPlane",
+    "value": "0x13ff0",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RotateUV90",
+    "demangled": "RotateUV90",
+    "value": "0x1755c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBColorMatrixRow_NEON",
+    "demangled": "ARGBColorMatrixRow_NEON",
+    "value": "0x20630",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_16_C",
+    "demangled": "ScaleRowDown38_16_C",
+    "value": "0x24d40",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToRGB565Row_C",
+    "demangled": "NV12ToRGB565Row_C",
+    "value": "0x1d23c",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SetPlane",
+    "demangled": "SetPlane",
+    "value": "0x14ff0",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CopyRow_Any_NEON",
+    "demangled": "CopyRow_Any_NEON",
+    "value": "0x18eb4",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_bss_end__",
+    "demangled": "_bss_end__",
+    "value": "0x380b8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB24Row_Any_NEON",
+    "demangled": "ARGBToRGB24Row_Any_NEON",
+    "value": "0x18f4c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToUYVYRow_NEON",
+    "demangled": "I422ToUYVYRow_NEON",
+    "value": "0x1f7dc",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CopyPlane_16",
+    "demangled": "CopyPlane_16",
+    "value": "0x13d50",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Linear_C",
+    "demangled": "ScaleRowDown2Linear_C",
+    "value": "0x23da8",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScalePlaneBilinearUp",
+    "demangled": "ScalePlaneBilinearUp",
+    "value": "0x20c8c",
+    "size": 728,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBAToUVRow_C",
+    "demangled": "RGBAToUVRow_C",
+    "value": "0x1ba90",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUV444Row_Any_NEON",
+    "demangled": "ARGBToUV444Row_Any_NEON",
+    "value": "0x19fbc",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I444Copy",
+    "demangled": "I444Copy",
+    "value": "0x13e90",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBMirrorRow_NEON",
+    "demangled": "ARGBMirrorRow_NEON",
+    "value": "0x1f57c",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToRGB565Row_Any_NEON",
+    "demangled": "NV12ToRGB565Row_Any_NEON",
+    "value": "0x18e60",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGB24Row_Any_NEON",
+    "demangled": "I422ToRGB24Row_Any_NEON",
+    "value": "0x18978",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CalcFrameSsim",
+    "demangled": "CalcFrameSsim",
+    "value": "0xd2a8",
+    "size": 332,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "cpu_info_",
+    "demangled": "cpu_info_",
+    "value": "0x380b0",
+    "size": 4,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start__",
+    "demangled": "__bss_start__",
+    "value": "0x380b0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDown2_Any_NEON",
+    "demangled": "ScaleARGBRowDown2_Any_NEON",
+    "value": "0x22e3c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUV444Row_C",
+    "demangled": "ARGBToUV444Row_C",
+    "value": "0x1c37c",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_NEON",
+    "demangled": "ScaleRowDown34_NEON",
+    "value": "0x25e58",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Box_Odd_C",
+    "demangled": "ScaleRowDown2Box_Odd_C",
+    "value": "0x23f3c",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Scale",
+    "demangled": "I420Scale",
+    "value": "0x22114",
+    "size": 272,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBMirrorRow_Any_NEON",
+    "demangled": "ARGBMirrorRow_Any_NEON",
+    "value": "0x19dac",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BGRAToARGB",
+    "demangled": "BGRAToARGB",
+    "value": "0xf4d8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ABGRToYRow_NEON",
+    "demangled": "ABGRToYRow_NEON",
+    "value": "0x202ac",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSepia",
+    "demangled": "ARGBSepia",
+    "value": "0x154b4",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGB4444Row_Any_NEON",
+    "demangled": "I422ToARGB4444Row_Any_NEON",
+    "value": "0x189ec",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToARGB",
+    "demangled": "RAWToARGB",
+    "value": "0xf590",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToABGR",
+    "demangled": "ARGBToABGR",
+    "value": "0xf4e4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelXYRow_Any_NEON",
+    "demangled": "SobelXYRow_Any_NEON",
+    "value": "0x18d58",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBAdd",
+    "demangled": "ARGBAdd",
+    "value": "0x14ba4",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToYUY2",
+    "demangled": "I420ToYUY2",
+    "value": "0x10234",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBExtractAlphaRow_NEON",
+    "demangled": "ARGBExtractAlphaRow_NEON",
+    "value": "0x1f8f8",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToJ400",
+    "demangled": "ARGBToJ400",
+    "value": "0x121d4",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUVJRow_C",
+    "demangled": "ARGBToUVJRow_C",
+    "value": "0x1bd70",
+    "size": 324,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "kYvuI601Constants",
+    "demangled": "kYvuI601Constants",
+    "value": "0x26730",
+    "size": 96,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToARGBRow_NEON",
+    "demangled": "RAWToARGBRow_NEON",
+    "value": "0x1f5bc",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposePlane",
+    "demangled": "TransposePlane",
+    "value": "0x171f0",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToARGBRow_Any_NEON",
+    "demangled": "ARGB1555ToARGBRow_Any_NEON",
+    "value": "0x197c4",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGBA",
+    "demangled": "I422ToRGBA",
+    "value": "0x14ccc",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToARGB4444Row_NEON",
+    "demangled": "ARGBToARGB4444Row_NEON",
+    "value": "0x1f88c",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MirrorPlane",
+    "demangled": "MirrorPlane",
+    "value": "0x141a8",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "J400ToARGBRow_C",
+    "demangled": "J400ToARGBRow_C",
+    "value": "0x1ca94",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToI400",
+    "demangled": "ARGBToI400",
+    "value": "0x11aec",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScalePlane",
+    "demangled": "ScalePlane",
+    "value": "0x211ec",
+    "size": 2108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBGray",
+    "demangled": "ARGBGray",
+    "value": "0x1542c",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposeUV",
+    "demangled": "TransposeUV",
+    "value": "0x1747c",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToYRow_C",
+    "demangled": "YUY2ToYRow_C",
+    "value": "0x1d7bc",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ComputeSumSquareError",
+    "demangled": "ComputeSumSquareError",
+    "value": "0xcffc",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBFilterCols_C",
+    "demangled": "ScaleARGBFilterCols_C",
+    "value": "0x25538",
+    "size": 380,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToARGB1555Row_NEON",
+    "demangled": "ARGBToARGB1555Row_NEON",
+    "value": "0x1f85c",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToARGBRow_Any_NEON",
+    "demangled": "YUY2ToARGBRow_Any_NEON",
+    "value": "0x19b84",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "InterpolateRow_NEON",
+    "demangled": "InterpolateRow_NEON",
+    "value": "0x2038c",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToARGB4444",
+    "demangled": "I420ToARGB4444",
+    "value": "0x1077c",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToARGBRow_C",
+    "demangled": "NV12ToARGBRow_C",
+    "value": "0x1d16c",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I400ToI400",
+    "demangled": "I400ToI400",
+    "value": "0x13f68",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_0_Box_Any_NEON",
+    "demangled": "ScaleRowDown34_0_Box_Any_NEON",
+    "value": "0x22cfc",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SumSquareError_NEON",
+    "demangled": "SumSquareError_NEON",
+    "value": "0xd564",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToNV12",
+    "demangled": "ARGBToNV12",
+    "value": "0x1159c",
+    "size": 468,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ConvertToI420",
+    "demangled": "ConvertToI420",
+    "value": "0x12f34",
+    "size": 2576,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScalePlaneVertical_16",
+    "demangled": "ScalePlaneVertical_16",
+    "value": "0x25970",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToI444",
+    "demangled": "I420ToI444",
+    "value": "0x100fc",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_1_Box_C",
+    "demangled": "ScaleRowDown34_1_Box_C",
+    "value": "0x247dc",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToI420",
+    "demangled": "YUY2ToI420",
+    "value": "0xdca8",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB565Row_NEON",
+    "demangled": "ARGBToRGB565Row_NEON",
+    "value": "0x1f7fc",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToUVRow_NEON",
+    "demangled": "ARGB4444ToUVRow_NEON",
+    "value": "0x1fff0",
+    "size": 336,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_2_Box_Any_NEON",
+    "demangled": "ScaleRowDown38_2_Box_Any_NEON",
+    "value": "0x22dfc",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToI422",
+    "demangled": "YUY2ToI422",
+    "value": "0x14238",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToARGBRow_NEON",
+    "demangled": "RGB24ToARGBRow_NEON",
+    "value": "0x1f5a4",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToYRow_Any_NEON",
+    "demangled": "ARGB1555ToYRow_Any_NEON",
+    "value": "0x1953c",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "FixedDiv1_C",
+    "demangled": "FixedDiv1_C",
+    "value": "0x25af4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2_C",
+    "demangled": "ScaleRowDown2_C",
+    "value": "0x23d24",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBExtractAlpha",
+    "demangled": "ARGBExtractAlpha",
+    "value": "0x166a0",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToUV422Row_C",
+    "demangled": "YUY2ToUV422Row_C",
+    "value": "0x1d790",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBAddRow_NEON",
+    "demangled": "ARGBAddRow_NEON",
+    "value": "0x20718",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBShuffleRow_C",
+    "demangled": "ARGBShuffleRow_C",
+    "value": "0x1df7c",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBBlend",
+    "demangled": "ARGBBlend",
+    "value": "0x14674",
+    "size": 240,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToARGB",
+    "demangled": "ARGB4444ToARGB",
+    "value": "0xf744",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "J422ToABGR",
+    "demangled": "J422ToABGR",
+    "value": "0xef70",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToBGRA",
+    "demangled": "ARGBToBGRA",
+    "value": "0xf4dc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Rect",
+    "demangled": "I420Rect",
+    "value": "0x1508c",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelToPlaneRow_C",
+    "demangled": "SobelToPlaneRow_C",
+    "value": "0x1ca14",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Psnr",
+    "demangled": "I420Psnr",
+    "value": "0xd1e0",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BGRAToYRow_Any_NEON",
+    "demangled": "BGRAToYRow_Any_NEON",
+    "value": "0x1934c",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToARGBRow_C",
+    "demangled": "RGB565ToARGBRow_C",
+    "value": "0x1b23c",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToNV21",
+    "demangled": "ARGBToNV21",
+    "value": "0x11770",
+    "size": 460,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_1_Box_16_C",
+    "demangled": "ScaleRowDown34_1_Box_16_C",
+    "value": "0x248ac",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_0_Box_16_C",
+    "demangled": "ScaleRowDown34_0_Box_16_C",
+    "value": "0x246e4",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToYRow_Any_NEON",
+    "demangled": "ARGBToYRow_Any_NEON",
+    "value": "0x192ac",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BGRAToUVRow_Any_NEON",
+    "demangled": "BGRAToUVRow_Any_NEON",
+    "value": "0x1a1dc",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToYRow_Any_NEON",
+    "demangled": "ARGB4444ToYRow_Any_NEON",
+    "value": "0x1958c",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ABGRToI420",
+    "demangled": "ABGRToI420",
+    "value": "0xe040",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Scale_16",
+    "demangled": "I420Scale_16",
+    "value": "0x22224",
+    "size": 272,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SetRow_NEON",
+    "demangled": "SetRow_NEON",
+    "value": "0x1f500",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToYRow_NEON",
+    "demangled": "RGB565ToYRow_NEON",
+    "value": "0x20140",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToJ420",
+    "demangled": "ARGBToJ420",
+    "value": "0x11f74",
+    "size": 416,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Linear_16_C",
+    "demangled": "ScaleRowDown2Linear_16_C",
+    "value": "0x23e1c",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MipsCpuCaps",
+    "demangled": "MipsCpuCaps",
+    "value": "0x13a60",
+    "size": 344,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBCols_Any_NEON",
+    "demangled": "ScaleARGBCols_Any_NEON",
+    "value": "0x22a64",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToYUY2Row_Any_NEON",
+    "demangled": "I422ToYUY2Row_Any_NEON",
+    "value": "0x186b0",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToARGBRow_C",
+    "demangled": "ARGB1555ToARGBRow_C",
+    "value": "0x1b29c",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToJ422",
+    "demangled": "ARGBToJ422",
+    "value": "0x12114",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToARGB4444Row_Any_NEON",
+    "demangled": "ARGBToARGB4444Row_Any_NEON",
+    "value": "0x190d4",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleSlope",
+    "demangled": "ScaleSlope",
+    "value": "0x25b10",
+    "size": 560,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToUVRow_C",
+    "demangled": "ARGB4444ToUVRow_C",
+    "value": "0x1c27c",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ConvertFromI420",
+    "demangled": "ConvertFromI420",
+    "value": "0x10aa8",
+    "size": 1088,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSubtractRow_NEON",
+    "demangled": "ARGBSubtractRow_NEON",
+    "value": "0x20740",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSetRow_C",
+    "demangled": "ARGBSetRow_C",
+    "value": "0x1d718",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSubtractRow_Any_NEON",
+    "demangled": "ARGBSubtractRow_Any_NEON",
+    "value": "0x18c34",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposeWxH_C",
+    "demangled": "TransposeWxH_C",
+    "value": "0x1806c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDownEven_Any_NEON",
+    "demangled": "ScaleARGBRowDownEven_Any_NEON",
+    "value": "0x22efc",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Android420ToI420",
+    "demangled": "Android420ToI420",
+    "value": "0xe674",
+    "size": 524,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToYRow_Any_NEON",
+    "demangled": "RAWToYRow_Any_NEON",
+    "value": "0x19494",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToI420",
+    "demangled": "RGB24ToI420",
+    "value": "0xe228",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToI420",
+    "demangled": "ARGBToI420",
+    "value": "0xde58",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_3_Box_C",
+    "demangled": "ScaleRowDown38_3_Box_C",
+    "value": "0x24d78",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToI422",
+    "demangled": "ARGBToI422",
+    "value": "0x114e0",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBColorTableRow_C",
+    "demangled": "RGBColorTableRow_C",
+    "value": "0x1c678",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToYRow_Any_NEON",
+    "demangled": "RGB24ToYRow_Any_NEON",
+    "value": "0x1943c",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleAddRow_16_C",
+    "demangled": "ScaleAddRow_16_C",
+    "value": "0x25178",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSetRow_NEON",
+    "demangled": "ARGBSetRow_NEON",
+    "value": "0x1f514",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDown2Box_C",
+    "demangled": "ScaleARGBRowDown2Box_C",
+    "value": "0x25288",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToUV422Row_NEON",
+    "demangled": "UYVYToUV422Row_NEON",
+    "value": "0x1f738",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I400ToI420",
+    "demangled": "I400ToI420",
+    "value": "0xd8d4",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleAddRow_C",
+    "demangled": "ScaleAddRow_C",
+    "value": "0x25120",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Copy",
+    "demangled": "I420Copy",
+    "value": "0xd5f0",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBColorTableRow_C",
+    "demangled": "ARGBColorTableRow_C",
+    "value": "0x1c610",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToARGB",
+    "demangled": "I420ToARGB",
+    "value": "0xec98",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "H420ToARGB",
+    "demangled": "H420ToARGB",
+    "value": "0xee2c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "M420ToARGB",
+    "demangled": "M420ToARGB",
+    "value": "0xf90c",
+    "size": 312,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "J420ToARGB",
+    "demangled": "J420ToARGB",
+    "value": "0xedf4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_C",
+    "demangled": "ScaleRowDown38_C",
+    "value": "0x24d08",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDownEvenBox_Any_NEON",
+    "demangled": "ScaleARGBRowDownEvenBox_Any_NEON",
+    "value": "0x22f40",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Blend",
+    "demangled": "I420Blend",
+    "value": "0x14864",
+    "size": 684,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToARGB",
+    "demangled": "NV12ToARGB",
+    "value": "0xf7d4",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBAttenuateRow_Any_NEON",
+    "demangled": "ARGBAttenuateRow_Any_NEON",
+    "value": "0x19884",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MergeUVPlane",
+    "demangled": "MergeUVPlane",
+    "value": "0x140d4",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelRow_NEON",
+    "demangled": "SobelRow_NEON",
+    "value": "0x20768",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ComputeSumSquareErrorPlane",
+    "demangled": "ComputeSumSquareErrorPlane",
+    "value": "0xd0d8",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ArmCpuCaps",
+    "demangled": "ArmCpuCaps",
+    "value": "0x1394c",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBColorTable",
+    "demangled": "ARGBColorTable",
+    "value": "0x15734",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToUVRow_C",
+    "demangled": "RGB24ToUVRow_C",
+    "value": "0x1bb5c",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposeWx8_NEON",
+    "demangled": "TransposeWx8_NEON",
+    "value": "0x1812c",
+    "size": 456,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown4Box_NEON",
+    "demangled": "ScaleRowDown4Box_NEON",
+    "value": "0x25e10",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToYRow_C",
+    "demangled": "RAWToYRow_C",
+    "value": "0x1bc38",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBAddRow_C",
+    "demangled": "ARGBAddRow_C",
+    "value": "0x1c810",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBAddRow_Any_NEON",
+    "demangled": "ARGBAddRow_Any_NEON",
+    "value": "0x18bd0",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelToPlaneRow_Any_NEON",
+    "demangled": "SobelToPlaneRow_Any_NEON",
+    "value": "0x18cf8",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__end__",
+    "demangled": "__end__",
+    "value": "0x380b8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBCopyYToAlpha",
+    "demangled": "ARGBCopyYToAlpha",
+    "value": "0x16738",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposeUVWx8_NEON",
+    "demangled": "TransposeUVWx8_NEON",
+    "value": "0x182f4",
+    "size": 584,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RotateUV180",
+    "demangled": "RotateUV180",
+    "value": "0x17598",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposeUVWx8_C",
+    "demangled": "TransposeUVWx8_C",
+    "value": "0x17f54",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDown2Box_NEON",
+    "demangled": "ScaleARGBRowDown2Box_NEON",
+    "value": "0x2635c",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUV444Row_NEON",
+    "demangled": "ARGBToUV444Row_NEON",
+    "value": "0x1f93c",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBCols_C",
+    "demangled": "ScaleARGBCols_C",
+    "value": "0x25464",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToARGB1555Row_C",
+    "demangled": "ARGBToARGB1555Row_C",
+    "value": "0x1b570",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToYJRow_NEON",
+    "demangled": "ARGBToYJRow_NEON",
+    "value": "0x1f90c",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToYUY2",
+    "demangled": "ARGBToYUY2",
+    "value": "0x1193c",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToRGB565Dither",
+    "demangled": "I420ToRGB565Dither",
+    "value": "0x108c4",
+    "size": 484,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TransposeWx8_Any_NEON",
+    "demangled": "TransposeWx8_Any_NEON",
+    "value": "0x17aac",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToARGBRow_NEON",
+    "demangled": "ARGB4444ToARGBRow_NEON",
+    "value": "0x1f68c",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown4_C",
+    "demangled": "ScaleRowDown4_C",
+    "value": "0x240b8",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RotateUV270",
+    "demangled": "RotateUV270",
+    "value": "0x17570",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToYUY2Row_NEON",
+    "demangled": "I422ToYUY2Row_NEON",
+    "value": "0x1f7bc",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelYRow_C",
+    "demangled": "SobelYRow_C",
+    "value": "0x1c95c",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown4Box_C",
+    "demangled": "ScaleRowDown4Box_C",
+    "value": "0x24138",
+    "size": 544,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBShadeRow_C",
+    "demangled": "ARGBShadeRow_C",
+    "value": "0x1c724",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBShade",
+    "demangled": "ARGBShade",
+    "value": "0x15c9c",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CopyRow_NEON",
+    "demangled": "CopyRow_NEON",
+    "value": "0x1f4ec",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToYJRow_Any_NEON",
+    "demangled": "ARGBToYJRow_Any_NEON",
+    "value": "0x192fc",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSobel",
+    "demangled": "ARGBSobel",
+    "value": "0x16090",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleFilterCols64_16_C",
+    "demangled": "ScaleFilterCols64_16_C",
+    "value": "0x24c60",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToARGB1555",
+    "demangled": "I420ToARGB1555",
+    "value": "0x106d8",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleCols_C",
+    "demangled": "ScaleCols_C",
+    "value": "0x24980",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGB1555Row_C",
+    "demangled": "I422ToARGB1555Row_C",
+    "value": "0x1cfd0",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "InterpolateRow_Any_NEON",
+    "demangled": "InterpolateRow_Any_NEON",
+    "value": "0x19c64",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SetRow_Any_NEON",
+    "demangled": "SetRow_Any_NEON",
+    "value": "0x19e40",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MaskCpuFlags",
+    "demangled": "MaskCpuFlags",
+    "value": "0x13c40",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV21ToARGBRow_Any_NEON",
+    "demangled": "NV21ToARGBRow_Any_NEON",
+    "value": "0x18e0c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB4444ToUVRow_Any_NEON",
+    "demangled": "ARGB4444ToUVRow_Any_NEON",
+    "value": "0x1a4d0",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CpuId",
+    "demangled": "CpuId",
+    "value": "0x13944",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CopyRow_C",
+    "demangled": "CopyRow_C",
+    "value": "0x1d6f4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBAToI420",
+    "demangled": "RGBAToI420",
+    "value": "0xe134",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BlendPlane",
+    "demangled": "BlendPlane",
+    "value": "0x14764",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToUVRow_NEON",
+    "demangled": "YUY2ToUVRow_NEON",
+    "value": "0x1f750",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown34_16_C",
+    "demangled": "ScaleRowDown34_16_C",
+    "value": "0x245b8",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToUYVYRow_C",
+    "demangled": "I422ToUYVYRow_C",
+    "value": "0x1e040",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBUnattenuateRow_C",
+    "demangled": "ARGBUnattenuateRow_C",
+    "value": "0x1db68",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToI444",
+    "demangled": "ARGBToI444",
+    "value": "0x113a0",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MirrorRow_NEON",
+    "demangled": "MirrorRow_NEON",
+    "value": "0x1f528",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDown2_NEON",
+    "demangled": "ScaleARGBRowDown2_NEON",
+    "value": "0x2630c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "kYuvI601Constants",
+    "demangled": "kYuvI601Constants",
+    "value": "0x266d0",
+    "size": 96,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGB565Row_Any_NEON",
+    "demangled": "I422ToRGB565Row_Any_NEON",
+    "value": "0x18aac",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB565DitherRow_C",
+    "demangled": "ARGBToRGB565DitherRow_C",
+    "value": "0x1b444",
+    "size": 300,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBMultiplyRow_Any_NEON",
+    "demangled": "ARGBMultiplyRow_Any_NEON",
+    "value": "0x18b6c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_end__",
+    "demangled": "__bss_end__",
+    "value": "0x380b8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HalfFloatRow_C",
+    "demangled": "HalfFloatRow_C",
+    "value": "0x1e1a0",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToARGBRow_NEON",
+    "demangled": "ARGB1555ToARGBRow_NEON",
+    "value": "0x1f63c",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ConvertToARGB",
+    "demangled": "ConvertToARGB",
+    "value": "0x126ec",
+    "size": 2120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BGRAToYRow_C",
+    "demangled": "BGRAToYRow_C",
+    "value": "0x1b88c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SumSquareErrorToPsnr",
+    "demangled": "SumSquareErrorToPsnr",
+    "value": "0xd168",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_2_Box_NEON",
+    "demangled": "ScaleRowDown38_2_Box_NEON",
+    "value": "0x26038",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "InitCpuFlags",
+    "demangled": "InitCpuFlags",
+    "value": "0x13bb8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToI420",
+    "demangled": "ARGB1555ToI420",
+    "value": "0xe4bc",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown38_3_Box_NEON",
+    "demangled": "ScaleRowDown38_3_Box_NEON",
+    "value": "0x25f50",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToARGB",
+    "demangled": "YUY2ToARGB",
+    "value": "0xfa44",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToUVRow_C",
+    "demangled": "ARGB1555ToUVRow_C",
+    "value": "0x1c140",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Box_NEON",
+    "demangled": "ScaleRowDown2Box_NEON",
+    "value": "0x25dc8",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "H422ToABGR",
+    "demangled": "H422ToABGR",
+    "value": "0xefa8",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToABGR",
+    "demangled": "I422ToABGR",
+    "value": "0xef38",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB565Row_C",
+    "demangled": "ARGBToRGB565Row_C",
+    "value": "0x1b3b0",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGB565Row_NEON",
+    "demangled": "I422ToRGB565Row_NEON",
+    "value": "0x1ee0c",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBColorTable",
+    "demangled": "RGBColorTable",
+    "value": "0x1579c",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToRGB24Row_C",
+    "demangled": "I422ToRGB24Row_C",
+    "value": "0x1cdf4",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBAttenuateRow_NEON",
+    "demangled": "ARGBAttenuateRow_NEON",
+    "value": "0x204b4",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBFilterCols_NEON",
+    "demangled": "ScaleARGBFilterCols_NEON",
+    "value": "0x264e4",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SplitUVRow_C",
+    "demangled": "SplitUVRow_C",
+    "value": "0x1d62c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBShuffleRow_Any_NEON",
+    "demangled": "ARGBShuffleRow_Any_NEON",
+    "value": "0x19a0c",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleColsUp2_C",
+    "demangled": "ScaleColsUp2_C",
+    "value": "0x24a18",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToYRow_C",
+    "demangled": "ARGBToYRow_C",
+    "value": "0x1b6e8",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelXRow_C",
+    "demangled": "SobelXRow_C",
+    "value": "0x1c8f4",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelToPlaneRow_NEON",
+    "demangled": "SobelToPlaneRow_NEON",
+    "value": "0x20790",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I400Copy",
+    "demangled": "I400Copy",
+    "value": "0x10120",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ABGRToUVRow_C",
+    "demangled": "ABGRToUVRow_C",
+    "value": "0x1b9a0",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SetRow_C",
+    "demangled": "SetRow_C",
+    "value": "0x1d710",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToRGB565",
+    "demangled": "I420ToRGB565",
+    "value": "0x10820",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToUYVY",
+    "demangled": "I420ToUYVY",
+    "value": "0x10378",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUVJRow_NEON",
+    "demangled": "ARGBToUVJRow_NEON",
+    "value": "0x1fa18",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDown2Linear_NEON",
+    "demangled": "ScaleARGBRowDown2Linear_NEON",
+    "value": "0x26328",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelXRow_NEON",
+    "demangled": "SobelXRow_NEON",
+    "value": "0x207cc",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "InterpolateRow_16_C",
+    "demangled": "InterpolateRow_16_C",
+    "value": "0x1deb0",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BGRAToUVRow_C",
+    "demangled": "BGRAToUVRow_C",
+    "value": "0x1b8cc",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB24Row_C",
+    "demangled": "ARGBToRGB24Row_C",
+    "value": "0x1b348",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScalePlaneVertical",
+    "demangled": "ScalePlaneVertical",
+    "value": "0x2583c",
+    "size": 308,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBFilterCols_Any_NEON",
+    "demangled": "ScaleARGBFilterCols_Any_NEON",
+    "value": "0x22ab0",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I444ToARGBRow_NEON",
+    "demangled": "I444ToARGBRow_NEON",
+    "value": "0x1eaac",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB565DitherRow_NEON",
+    "demangled": "ARGBToRGB565DitherRow_NEON",
+    "value": "0x1f824",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown4_Any_NEON",
+    "demangled": "ScaleRowDown4_Any_NEON",
+    "value": "0x22c34",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2_Any_NEON",
+    "demangled": "ScaleRowDown2_Any_NEON",
+    "value": "0x22afc",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDownEvenBox_NEON",
+    "demangled": "ScaleARGBRowDownEvenBox_NEON",
+    "value": "0x263d0",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToARGBRow_NEON",
+    "demangled": "UYVYToARGBRow_NEON",
+    "value": "0x1f408",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RotatePlane",
+    "demangled": "RotatePlane",
+    "value": "0x17674",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScalePlaneBilinearDown_16",
+    "demangled": "ScalePlaneBilinearDown_16",
+    "value": "0x20ae0",
+    "size": 428,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CalcFramePsnr",
+    "demangled": "CalcFramePsnr",
+    "value": "0xd1b8",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToARGB4444",
+    "demangled": "ARGBToARGB4444",
+    "value": "0x11edc",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "J400ToARGBRow_Any_NEON",
+    "demangled": "J400ToARGBRow_Any_NEON",
+    "value": "0x19134",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToUVRow_NEON",
+    "demangled": "RGB24ToUVRow_NEON",
+    "value": "0x1fc28",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBQuantize",
+    "demangled": "ARGBQuantize",
+    "value": "0x15804",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ABGRToARGB",
+    "demangled": "ABGRToARGB",
+    "value": "0xf4e0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBAffineRow_C",
+    "demangled": "ARGBAffineRow_C",
+    "value": "0x1dd9c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSubtract",
+    "demangled": "ARGBSubtract",
+    "value": "0x14c38",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown4_NEON",
+    "demangled": "ScaleRowDown4_NEON",
+    "value": "0x25dfc",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SobelXYRow_NEON",
+    "demangled": "SobelXYRow_NEON",
+    "value": "0x207ac",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScalePlane_16",
+    "demangled": "ScalePlane_16",
+    "value": "0x21a28",
+    "size": 1772,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420AlphaToABGR",
+    "demangled": "I420AlphaToABGR",
+    "value": "0xf2f0",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBShadeRow_NEON",
+    "demangled": "ARGBShadeRow_NEON",
+    "value": "0x20540",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToUVRow_C",
+    "demangled": "YUY2ToUVRow_C",
+    "value": "0x1d738",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGB1555ToYRow_NEON",
+    "demangled": "ARGB1555ToYRow_NEON",
+    "value": "0x201a4",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MirrorRow_Any_NEON",
+    "demangled": "MirrorRow_Any_NEON",
+    "value": "0x19d24",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleFilterCols_C",
+    "demangled": "ScaleFilterCols_C",
+    "value": "0x24a88",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBPolynomialRow_C",
+    "demangled": "ARGBPolynomialRow_C",
+    "value": "0x1e0a8",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I444ToABGR",
+    "demangled": "I444ToABGR",
+    "value": "0xf0a4",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBLumaColorTable",
+    "demangled": "ARGBLumaColorTable",
+    "value": "0x165c0",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HashDjb2_C",
+    "demangled": "HashDjb2_C",
+    "value": "0xd538",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDownEven_C",
+    "demangled": "ScaleARGBRowDownEven_C",
+    "value": "0x2534c",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToARGB1555Row_Any_NEON",
+    "demangled": "I422ToARGB1555Row_Any_NEON",
+    "value": "0x18a4c",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I444ToARGBRow_C",
+    "demangled": "I444ToARGBRow_C",
+    "value": "0x1cac8",
+    "size": 300,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "MirrorRow_C",
+    "demangled": "MirrorRow_C",
+    "value": "0x1d534",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToBGRA",
+    "demangled": "I422ToBGRA",
+    "value": "0x14e10",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToARGB",
+    "demangled": "RGB24ToARGB",
+    "value": "0xf4fc",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToNV12",
+    "demangled": "UYVYToNV12",
+    "value": "0x168cc",
+    "size": 260,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToUVRow_Any_NEON",
+    "demangled": "ARGBToUVRow_Any_NEON",
+    "value": "0x1a104",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleARGBRowDown2Box_Any_NEON",
+    "demangled": "ScaleARGBRowDown2Box_Any_NEON",
+    "value": "0x22ebc",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x380b8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Box_C",
+    "demangled": "ScaleRowDown2Box_C",
+    "value": "0x23e90",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RotatePlane180",
+    "demangled": "RotatePlane180",
+    "value": "0x17300",
+    "size": 380,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "InterpolatePlane",
+    "demangled": "InterpolatePlane",
+    "value": "0x15d84",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGBAToYRow_Any_NEON",
+    "demangled": "RGBAToYRow_Any_NEON",
+    "value": "0x193ec",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBScaleClip",
+    "demangled": "ARGBScaleClip",
+    "value": "0x23100",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "J400ToARGB",
+    "demangled": "J400ToARGB",
+    "value": "0xf448",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "NV12ToI420Rotate",
+    "demangled": "NV12ToI420Rotate",
+    "value": "0x178ac",
+    "size": 348,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I400ToARGB",
+    "demangled": "I400ToARGB",
+    "value": "0xf358",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SplitUVRow_NEON",
+    "demangled": "SplitUVRow_NEON",
+    "value": "0x1f4bc",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown2Linear_Any_NEON",
+    "demangled": "ScaleRowDown2Linear_Any_NEON",
+    "value": "0x22b40",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420Rotate",
+    "demangled": "I420Rotate",
+    "value": "0x176fc",
+    "size": 432,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleFilterReduce",
+    "demangled": "ScaleFilterReduce",
+    "value": "0x25a4c",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBMultiply",
+    "demangled": "ARGBMultiply",
+    "value": "0x14b10",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RotatePlane270",
+    "demangled": "RotatePlane270",
+    "value": "0x172ec",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I400ToARGBRow_C",
+    "demangled": "I400ToARGBRow_C",
+    "value": "0x1d468",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSetRow_Any_NEON",
+    "demangled": "ARGBSetRow_Any_NEON",
+    "value": "0x19eb8",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB565ToUVRow_Any_NEON",
+    "demangled": "RGB565ToUVRow_Any_NEON",
+    "value": "0x1a3f8",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToYJRow_C",
+    "demangled": "ARGBToYJRow_C",
+    "value": "0x1bd00",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleFilterCols_NEON",
+    "demangled": "ScaleFilterCols_NEON",
+    "value": "0x26114",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleFilterCols64_C",
+    "demangled": "ScaleFilterCols64_C",
+    "value": "0x24b24",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBCopyAlpha",
+    "demangled": "ARGBCopyAlpha",
+    "value": "0x16640",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HalfFloat1Row_Any_NEON",
+    "demangled": "HalfFloat1Row_Any_NEON",
+    "value": "0x19b20",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ComputeCumulativeSumRow_C",
+    "demangled": "ComputeCumulativeSumRow_C",
+    "value": "0x1dbec",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToUVRow_Any_NEON",
+    "demangled": "YUY2ToUVRow_Any_NEON",
+    "value": "0x1a53c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBShuffle",
+    "demangled": "ARGBShuffle",
+    "value": "0x15f94",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBToRGB24",
+    "demangled": "ARGBToRGB24",
+    "value": "0x11b98",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ABGRToYRow_C",
+    "demangled": "ABGRToYRow_C",
+    "value": "0x1b960",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ABGRToYRow_Any_NEON",
+    "demangled": "ABGRToYRow_Any_NEON",
+    "value": "0x1939c",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I422ToI420",
+    "demangled": "I422ToI420",
+    "value": "0xd70c",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I420ToRGBA",
+    "demangled": "I420ToRGBA",
+    "value": "0x10528",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RGB24ToARGBRow_C",
+    "demangled": "RGB24ToARGBRow_C",
+    "value": "0x1b18c",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToRGB24",
+    "demangled": "RAWToRGB24",
+    "value": "0x14f54",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleColsUp2_16_C",
+    "demangled": "ScaleColsUp2_16_C",
+    "value": "0x24a50",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleAddRows_NEON",
+    "demangled": "ScaleAddRows_NEON",
+    "value": "0x260dc",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToRGB24Row_C",
+    "demangled": "RAWToRGB24Row_C",
+    "value": "0x1b204",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "YUY2ToUV422Row_Any_NEON",
+    "demangled": "YUY2ToUV422Row_Any_NEON",
+    "value": "0x1a054",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ARGBSepiaRow_NEON",
+    "demangled": "ARGBSepiaRow_NEON",
+    "value": "0x205c8",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x380b0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAWToRGB24Row_Any_NEON",
+    "demangled": "RAWToRGB24Row_Any_NEON",
+    "value": "0x191fc",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "J422ToARGB",
+    "demangled": "J422ToARGB",
+    "value": "0xef54",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScalePlaneBilinearUp_16",
+    "demangled": "ScalePlaneBilinearUp_16",
+    "value": "0x20f64",
+    "size": 648,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ScaleRowDown4Box_16_C",
+    "demangled": "ScaleRowDown4Box_16_C",
+    "value": "0x24358",
+    "size": 552,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToI420",
+    "demangled": "UYVYToI420",
+    "value": "0xdd94",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "UYVYToI422",
+    "demangled": "UYVYToI422",
+    "value": "0x14304",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "I400ToARGBRow_NEON",
+    "demangled": "I400ToARGBRow_NEON",
+    "value": "0x1f05c",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "kYvuH709Constants",
+    "demangled": "kYvuH709Constants",
+    "value": "0x268b0",
+    "size": 96,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  }
+]

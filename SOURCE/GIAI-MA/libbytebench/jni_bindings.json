@@ -1,0 +1,586 @@
+[
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStrStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStrStrategy",
+    "value": "0x6208c",
+    "size": 424,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_runtime_nativePort_ByteBenchContextPort_native_1init",
+    "demangled": "Java_com_benchmark_runtime_nativePort_ByteBenchContextPort_native_1init",
+    "value": "0x61264",
+    "size": 1048,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeCreate",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeCreate",
+    "value": "0x6b64c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1release",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1release",
+    "value": "0x6124c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1registerFeaturePool",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1registerFeaturePool",
+    "value": "0x65d84",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_port_nativePort_LogcatInvoker_nativeSetLogLevel",
+    "demangled": "Java_com_benchmark_port_nativePort_LogcatInvoker_nativeSetLogLevel",
+    "value": "0x70444",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetIntOrigin",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetIntOrigin",
+    "value": "0x6b7dc",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerFloatStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerFloatStrategy",
+    "value": "0x633b8",
+    "size": 536,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1unregisterFeaturePool",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1unregisterFeaturePool",
+    "value": "0x65e50",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetStringArray",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetStringArray",
+    "value": "0x6bf2c",
+    "size": 308,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xJava_com_benchmark_device_BXDeviceInfo_nativeGetGLVersion",
+    "demangled": "xJava_com_benchmark_device_BXDeviceInfo_nativeGetGLVersion",
+    "value": "0x68b7c",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticIntStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticIntStrategy",
+    "value": "0x62234",
+    "size": 260,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1init",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1init",
+    "value": "0x61770",
+    "size": 616,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetIntArray",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetIntArray",
+    "value": "0x6b86c",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_device_BXDeviceInfo_nativeGetGLVersion",
+    "demangled": "Java_com_benchmark_device_BXDeviceInfo_nativeGetGLVersion",
+    "value": "0x68d2c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_device_BXDeviceInfo_nativeGetGLVendor",
+    "demangled": "Java_com_benchmark_device_BXDeviceInfo_nativeGetGLVendor",
+    "value": "0x68cd8",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_port_nativePort_ApplogUtilsInvoker_nativeInit",
+    "demangled": "Java_com_benchmark_port_nativePort_ApplogUtilsInvoker_nativeInit",
+    "value": "0x704a8",
+    "size": 532,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeGetBool",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeGetBool",
+    "value": "0x6c160",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainIntStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainIntStrategy",
+    "value": "0x61b58",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1openRepo",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1openRepo",
+    "value": "0x61a0c",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerBXStrategyInfoCallback",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerBXStrategyInfoCallback",
+    "value": "0x65098",
+    "size": 444,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_device_BXDeviceInfo_nativeGetGLExtensions",
+    "demangled": "Java_com_benchmark_device_BXDeviceInfo_nativeGetGLExtensions",
+    "value": "0x68b7c",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_port_nativePort_BSModuleInvoker_nativeSetJsWorker",
+    "demangled": "Java_com_benchmark_port_nativePort_BSModuleInvoker_nativeSetJsWorker",
+    "value": "0x65350",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainBoolStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainBoolStrategy",
+    "value": "0x61f48",
+    "size": 324,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainLongStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainLongStrategy",
+    "value": "0x61e04",
+    "size": 324,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeGetString",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeGetString",
+    "value": "0x6c0fc",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetFloat",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetFloat",
+    "value": "0x6bb10",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_runtime_nativePort_BXStrategyManagePort_native_1releaseByteBenchStrategy",
+    "demangled": "Java_com_benchmark_runtime_nativePort_BXStrategyManagePort_native_1releaseByteBenchStrategy",
+    "value": "0x6124c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetLong",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetLong",
+    "value": "0x6b788",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_runtime_nativePort_BXStrategyManagePort_native_1createBenchStrategy",
+    "demangled": "Java_com_benchmark_runtime_nativePort_BXStrategyManagePort_native_1createBenchStrategy",
+    "value": "0x6121c",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_db_BXDBHelper_nativeInit",
+    "demangled": "Java_com_benchmark_db_BXDBHelper_nativeInit",
+    "value": "0x77e44",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_device_BXDeviceInfo_nativeGPUInfoInit",
+    "demangled": "Java_com_benchmark_device_BXDeviceInfo_nativeGPUInfoInit",
+    "value": "0x68d80",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetByteArray",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetByteArray",
+    "value": "0x6b9dc",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_device_BXDeviceInfo_nativeGetCpuModelName",
+    "demangled": "Java_com_benchmark_device_BXDeviceInfo_nativeGetCpuModelName",
+    "value": "0x68ac4",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticFloatStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticFloatStrategy",
+    "value": "0x62338",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeGetIntArray",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeGetIntArray",
+    "value": "0x6c1d0",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetHandle",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetHandle",
+    "value": "0x6b6d0",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainFloatStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainFloatStrategy",
+    "value": "0x61c80",
+    "size": 388,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerStrStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerStrStrategy",
+    "value": "0x63d04",
+    "size": 636,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerIntStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerIntStrategy",
+    "value": "0x63068",
+    "size": 412,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1setEventSource",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1setEventSource",
+    "value": "0x653c0",
+    "size": 364,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeGetFloat",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeGetFloat",
+    "value": "0x6c0b8",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1unregisterStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1unregisterStrategy",
+    "value": "0x64140",
+    "size": 620,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetDoubleArray",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetDoubleArray",
+    "value": "0x6bd50",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_BXDataProviderPort_native_1getDeviceFeature",
+    "demangled": "Java_com_benchmark_strategy_nativePort_BXDataProviderPort_native_1getDeviceFeature",
+    "value": "0x61068",
+    "size": 392,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_db_BXDBHelper_nativeGetCreateTableQuery",
+    "demangled": "Java_com_benchmark_db_BXDBHelper_nativeGetCreateTableQuery",
+    "value": "0x77cd0",
+    "size": 320,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetBool",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetBool",
+    "value": "0x6b668",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetString",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetString",
+    "value": "0x6be84",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_device_BXDeviceInfo_nativeGPUInfoRelease",
+    "demangled": "Java_com_benchmark_device_BXDeviceInfo_nativeGPUInfoRelease",
+    "value": "0x68e18",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1updateStrFeatureValue",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1updateStrFeatureValue",
+    "value": "0x6552c",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerBoolStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerBoolStrategy",
+    "value": "0x63a20",
+    "size": 424,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1registerComponent",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1registerComponent",
+    "value": "0x6568c",
+    "size": 460,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1getOneSpaceKeyList",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1getOneSpaceKeyList",
+    "value": "0x64cbc",
+    "size": 988,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeGetInt",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeGetInt",
+    "value": "0x6c198",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetInt",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetInt",
+    "value": "0x6b724",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_device_BXDeviceInfo_nativeGetGLRenderer",
+    "demangled": "Java_com_benchmark_device_BXDeviceInfo_nativeGetGLRenderer",
+    "value": "0x68c84",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1unregisterFeaturePoolAll",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1unregisterFeaturePoolAll",
+    "value": "0x65f44",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetBundle",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetBundle",
+    "value": "0x6c380",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticBoolStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticBoolStrategy",
+    "value": "0x62584",
+    "size": 336,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_runtime_nativePort_ByteBenchContextPort_native_1initAsync",
+    "demangled": "Java_com_benchmark_runtime_nativePort_ByteBenchContextPort_native_1initAsync",
+    "value": "0x61748",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1getAllChildrenSpaceID",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1getAllChildrenSpaceID",
+    "value": "0x64708",
+    "size": 436,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1contains",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1contains",
+    "value": "0x61aa4",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1getOneSpaceStrategyList",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1getOneSpaceStrategyList",
+    "value": "0x648bc",
+    "size": 1024,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeRelease",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeRelease",
+    "value": "0x6c2c4",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1updateNumberFeatureValue",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchFeatureCenterPort_native_1updateNumberFeatureValue",
+    "value": "0x655f8",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticLongStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticLongStrategy",
+    "value": "0x6244c",
+    "size": 312,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetDouble",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetDouble",
+    "value": "0x6bce8",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeSetFloatArray",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeSetFloatArray",
+    "value": "0x6bb78",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticStrStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1obtainStaticStrStrategy",
+    "value": "0x626d4",
+    "size": 516,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1getDeviceAllFeatureForServer",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1getDeviceAllFeatureForServer",
+    "value": "0x644b8",
+    "size": 592,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_ByteBenchBundle_nativeReleaseAll",
+    "demangled": "Java_com_benchmark_ByteBenchBundle_nativeReleaseAll",
+    "value": "0x6c2ec",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerLongStrategy",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1registerLongStrategy",
+    "value": "0x63730",
+    "size": 412,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1clearStrategyCache",
+    "demangled": "Java_com_benchmark_strategy_nativePort_ByteBenchStrategyPort_native_1clearStrategyCache",
+    "value": "0x643ac",
+    "size": 268,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

@@ -1,0 +1,898 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AndroidBitmap_getInfo",
+    "demangled": "AndroidBitmap_getInfo",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AndroidBitmap_lockPixels",
+    "demangled": "AndroidBitmap_lockPixels",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AndroidBitmap_unlockPixels",
+    "demangled": "AndroidBitmap_unlockPixels",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7RefBaseD2Ev",
+    "demangled": "AmazingEngine::RefBase::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8g_aeLogTEPKciiS1_S1_z",
+    "demangled": "AmazingEngine::g_aeLogT(char const*, int, int, char const*, char const*, ...)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Bach10BachBufferC1ERKNS_19AlgorithmResultTypeE",
+    "demangled": "Bach::BachBuffer::{ctor}(Bach::AlgorithmResultType const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Bach10BachObject5resetEv",
+    "demangled": "Bach::BachObject::reset()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Bach10BachObject8copyFromERKS0_",
+    "demangled": "Bach::BachObject::copyFrom(Bach::BachObject const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Bach15ToGeneralBufferEPKNS_10BachBufferEPS0_",
+    "demangled": "Bach::ToGeneralBuffer(Bach::BachBuffer const*, Bach::BachBuffer*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Bach20BachAlgorithmFactory21CreateAlgorithmSystemEv",
+    "demangled": "Bach::BachAlgorithmFactory::CreateAlgorithmSystem()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Bach20BachAlgorithmFactory22DestroyAlgorithmSystemEPNS_19BachAlgorithmSystemE",
+    "demangled": "Bach::BachAlgorithmFactory::DestroyAlgorithmSystem(Bach::BachAlgorithmSystem*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK13AmazingEngine7RefBase11getRefCountEv",
+    "demangled": "AmazingEngine::RefBase::getRefCount const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK13AmazingEngine7RefBase6reduceEv",
+    "demangled": "AmazingEngine::RefBase::reduce const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK13AmazingEngine7RefBase6retainEv",
+    "demangled": "AmazingEngine::RefBase::retain const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK13AmazingEngine7RefBase7releaseEv",
+    "demangled": "AmazingEngine::RefBase::release const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachBuffer12_ableToCloneEv",
+    "demangled": "Bach::BachBuffer::_ableToClone const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachBuffer7getTypeEv",
+    "demangled": "Bach::BachBuffer::getType const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObject5cloneEv",
+    "demangled": "Bach::BachObject::clone const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine10Matrix3x3fEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::Matrix3x3f const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine10Matrix4x4fEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::Matrix4x4f const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine11QuaternionfEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::Quaternionf const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorINS1_10Matrix3x3fEEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<AmazingEngine::Matrix3x3f> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorINS1_10Matrix4x4fEEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<AmazingEngine::Matrix4x4f> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorINS1_11QuaternionfEEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<AmazingEngine::Quaternionf> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorINS1_8Vector2fEEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<AmazingEngine::Vector2f> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorINS1_8Vector3fEEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<AmazingEngine::Vector3f> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorINS1_8Vector4fEEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<AmazingEngine::Vector4f> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorINSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorIaEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<signed char> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorIdEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<double> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorIfEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<float> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorIhEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<unsigned char> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorIiEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<int> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorIjEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<unsigned int> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorIlEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<long> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorIsEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<short> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine15PrimitiveVectorItEEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::PrimitiveVector<unsigned short> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine4RectEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::Rect const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine5ColorEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::Color const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine8Vector2fEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::Vector2f const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine8Vector3fEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::Vector3f const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvN13AmazingEngine8Vector4fEEv",
+    "demangled": "Bach::BachObject::operator AmazingEngine::Vector4f const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEv",
+    "demangled": "Bach::BachObject::operator std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvPNS_10BachVectorEEv",
+    "demangled": "Bach::BachObject::operator Bach::BachVector* const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvPNS_7BachMapEEv",
+    "demangled": "Bach::BachObject::operator Bach::BachMap* const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvdEv",
+    "demangled": "Bach::BachObject::operator double const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Bach10BachObjectcvlEv",
+    "demangled": "Bach::BachObject::operator long const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt11logic_errorC2EPKc",
+    "demangled": "std::logic_error::{base ctor}(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt12length_errorD1Ev",
+    "demangled": "std::length_error::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt9terminatev",
+    "demangled": "std::terminate()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN13AmazingEngine7RefBaseE",
+    "demangled": "typeinfo for AmazingEngine::RefBase",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTISt12length_error",
+    "demangled": "typeinfo for std::length_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv117__class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__si_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVSt12length_error",
+    "demangled": "vtable for std::length_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_allocate_exception",
+    "demangled": "__cxa_allocate_exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_begin_catch",
+    "demangled": "__cxa_begin_catch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_free_exception",
+    "demangled": "__cxa_free_exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_throw",
+    "demangled": "__cxa_throw",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__gxx_personality_v0",
+    "demangled": "__gxx_personality_v0",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AAssetManager_fromJava",
+    "demangled": "AAssetManager_fromJava",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Bach25BachResourceFinderFactory20CreateResourceFinderERKNS0_8EPConfigE",
+    "demangled": "Bach::BachResourceFinderFactory::CreateResourceFinder(Bach::BachResourceFinderFactory::EPConfig const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Bach25BachResourceFinderFactory21DestroyResourceFinderEPNS_18BachResourceFinderE",
+    "demangled": "Bach::BachResourceFinderFactory::DestroyResourceFinder(Bach::BachResourceFinder*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Bach25BachResourceFinderFactory32CreateDownloadableResourceFinderERKNS_30BachDownloadableResourceFinder6ConfigE",
+    "demangled": "Bach::BachResourceFinderFactory::CreateDownloadableResourceFinder(Bach::BachDownloadableResourceFinder::Config const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dl_iterate_phdr",
+    "demangled": "dl_iterate_phdr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setspecific",
+    "demangled": "pthread_setspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_create",
+    "demangled": "pthread_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "calloc",
+    "demangled": "calloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_once",
+    "demangled": "pthread_once",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_getspecific",
+    "demangled": "pthread_getspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_key_create",
+    "demangled": "pthread_key_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_key_delete",
+    "demangled": "pthread_key_delete",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_mutex_lock",
+    "demangled": "pthread_mutex_lock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_mutex_unlock",
+    "demangled": "pthread_mutex_unlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "realloc",
+    "demangled": "realloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetEnable",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetEnable",
+    "value": "0x3c8c",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_finder_EPResourceFinder_nativeCreate",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_finder_EPResourceFinder_nativeCreate",
+    "value": "0xf61c",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeCreate",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeCreate",
+    "value": "0x39c4",
+    "size": 568,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeGetResult",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeGetResult",
+    "value": "0x5c14",
+    "size": 1528,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetStringParams",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetStringParams",
+    "value": "0x4b1c",
+    "size": 1600,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x20010",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeExec",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeExec",
+    "value": "0x519c",
+    "size": 2552,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_finder_DownloadableResourceFinder_nativeDestroy",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_finder_DownloadableResourceFinder_nativeDestroy",
+    "value": "0xf224",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x202c0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_finder_EPResourceFinder_nativeDestroy",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_finder_EPResourceFinder_nativeDestroy",
+    "value": "0xf224",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x102b0",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeDestroy",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeDestroy",
+    "value": "0x515c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetFloatParams",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetFloatParams",
+    "value": "0x44e4",
+    "size": 1436,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetIntParams",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetIntParams",
+    "value": "0x3d78",
+    "size": 1432,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x20010",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_finder_DownloadableResourceFinder_nativeCreate",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_finder_DownloadableResourceFinder_nativeCreate",
+    "value": "0xedd0",
+    "size": 956,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeInitGraph",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeInitGraph",
+    "value": "0x3bfc",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_buffer_BachBitmapHandle_nativeGet",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_buffer_BachBitmapHandle_nativeGet",
+    "value": "0xeb38",
+    "size": 508,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_finder_DownloadableResourceFinder_nativeDownloadModels",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_finder_DownloadableResourceFinder_nativeDownloadModels",
+    "value": "0xf22c",
+    "size": 660,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_byted_1bach_1sdk_finder_ModelDownloadListener_deleteNativeObject",
+    "demangled": "Java_com_bytedance_byted_1bach_1sdk_finder_ModelDownloadListener_deleteNativeObject",
+    "value": "0xf55c",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

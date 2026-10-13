@@ -1,0 +1,2906 @@
+[
+  {
+    "name": "__bss_start__",
+    "demangled": "__bss_start__",
+    "value": "0x380708",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__end__",
+    "demangled": "__end__",
+    "value": "0x381088",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_end__",
+    "demangled": "__bss_end__",
+    "value": "0x381088",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x380708",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_bss_end__",
+    "demangled": "_bss_end__",
+    "value": "0x381088",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x381088",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x380708",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_ZNK10datacenter9MediaMeta11getStrValueENS0_12MediaMetaKeyERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "datacenter::MediaMeta::getStrValue const(datacenter::MediaMeta::MediaMetaKey, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueC1ERKNSt6__ndk112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE",
+    "demangled": "com::ss::ttm::player::Value::{ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter8clientai14AlgTaskManager13postSmartTaskERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS2_10shared_ptrINS_6DCDictEEENSB_INS0_13AlgTaskConfigEEENS2_8functionIFvbllRKSD_EEE",
+    "demangled": "datacenter::clientai::AlgTaskManager::postSmartTask(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<datacenter::DCDict>, std::__ndk1::shared_ptr<datacenter::clientai::AlgTaskConfig>, std::__ndk1::function<void (bool, long, long, std::__ndk1::shared_ptr<datacenter::DCDict> const&)>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json18ValueConstIteratorC1ERKNS_13ValueIteratorE",
+    "demangled": "Json::ValueConstIterator::{ctor}(Json::ValueIterator const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit5MutexC1Ev",
+    "demangled": "com::ss::vcbkit::Mutex::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ldexp",
+    "demangled": "ldexp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit12ScopedJniEnvC1EP7_JNIEnv",
+    "demangled": "com::ss::vcbkit::ScopedJniEnv::{ctor}(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter10getContextEv",
+    "demangled": "datacenter::getContext()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueixERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "Json::Value::operator[](std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json17ValueIteratorBase4nameEv",
+    "demangled": "Json::ValueIteratorBase::name const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player15AVStrategyUtils20convertTTCodecIDToFFEii",
+    "demangled": "com::ss::ttm::player::AVStrategyUtils::convertTTCodecIDToFF(int, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk111this_thread9sleep_forERKNS_6chrono8durationIxNS_5ratioILl1ELl1000000000EEEEE",
+    "demangled": "std::__ndk1::this_thread::sleep_for(std::__ndk1::chrono::duration<long long, std::__ndk1::ratio<(long)1, (long)1000000000>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1ERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "Json::Value::{ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCList6AppendEl",
+    "demangled": "datacenter::DCList::Append(long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player15AVStrategyUtils22registerStrategyCenterEPNS2_24AVStrategyCenterProtocolE",
+    "demangled": "com::ss::ttm::player::AVStrategyUtils::registerStrategyCenter(com::ss::ttm::player::AVStrategyCenterProtocol*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter9MediaMeta11setStrValueENS0_12MediaMetaKeyERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "datacenter::MediaMeta::setStrValue(datacenter::MediaMeta::MediaMetaKey, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5ValueixEj",
+    "demangled": "Json::Value::operator[] const(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1Ei",
+    "demangled": "Json::Value::{ctor}(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtod",
+    "demangled": "strtod",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueaSEOS3_",
+    "demangled": "com::ss::ttm::player::Value::operator=(com::ss::ttm::player::Value&&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mdlInfoCallback",
+    "demangled": "mdlInfoCallback",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json13ValueIteratorC1ERKS0_",
+    "demangled": "Json::ValueIterator::{ctor}(Json::ValueIterator const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1Em",
+    "demangled": "Json::Value::{ctor}(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17collateIcE2idE",
+    "demangled": "std::__ndk1::collate<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value12isValidIndexEj",
+    "demangled": "Json::Value::isValidIndex const(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCList6AppendERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "datacenter::DCList::Append(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter13featurecenter23GetFeatureCenterHandlerEv",
+    "demangled": "datacenter::featurecenter::GetFeatureCenterHandler()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_create",
+    "demangled": "pthread_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueC1ERKi",
+    "demangled": "com::ss::ttm::player::Value::{ctor}(int const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE",
+    "demangled": "std::__ndk1::time_put<char, std::__ndk1::ostreambuf_iterator<char, std::__ndk1::char_traits<char>>>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com2ss3ttm6player5Value8getFloatEv",
+    "demangled": "com::ss::ttm::player::Value::getFloat const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9has_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::has_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCList6AppendEd",
+    "demangled": "datacenter::DCList::Append(double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter13featurecenter20FeatureCenterManager16getBatchFeaturesERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS_5DCKeyE",
+    "demangled": "datacenter::featurecenter::FeatureCenterManager::getBatchFeatures(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, datacenter::DCKey)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com2ss6vcbkit7BaseRef6decRefEv",
+    "demangled": "com::ss::vcbkit::BaseRef::decRef const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit11SharedMutex10lockSharedEv",
+    "demangled": "com::ss::vcbkit::SharedMutex::lockShared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueaSES0_",
+    "demangled": "Json::Value::operator=(Json::Value)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "erf",
+    "demangled": "erf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base15try_lock_sharedEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::try_lock_shared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player19AVDropFrameOperatorC2Ev",
+    "demangled": "com::ss::ttm::player::AVDropFrameOperator::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fread",
+    "demangled": "fread",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN19ttm_strategy_center22ttm_sc_strategy_center12run_cep_ruleERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_NS1_10shared_ptrINS_11ttm_sc_dictEEE",
+    "demangled": "ttm_strategy_center::ttm_sc_strategy_center::run_cep_rule(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<ttm_strategy_center::ttm_sc_dict>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter13featurecenter20FeatureCenterManager15getFloatFeatureERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "datacenter::featurecenter::FeatureCenterManager::getFloatFeature(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm11medialoader19AVMDLIOTaskListenerD2Ev",
+    "demangled": "com::ss::ttm::medialoader::AVMDLIOTaskListener::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEb",
+    "demangled": "datacenter::DCDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value9isNumericEv",
+    "demangled": "Json::Value::isNumeric const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable15__do_timed_waitERNS_11unique_lockINS_5mutexEEENS_6chrono10time_pointINS5_12system_clockENS5_8durationIxNS_5ratioILl1ELl1000000000EEEEEEE",
+    "demangled": "std::__ndk1::condition_variable::__do_timed_wait(std::__ndk1::unique_lock<std::__ndk1::mutex>&, std::__ndk1::chrono::time_point<std::__ndk1::chrono::system_clock, std::__ndk1::chrono::duration<long long, std::__ndk1::ratio<(long)1, (long)1000000000>>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN19ttm_strategy_center11ttm_sc_dict8putFloatERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEf",
+    "demangled": "ttm_strategy_center::ttm_sc_dict::putFloat(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutexD1Ev",
+    "demangled": "std::__ndk1::mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKNS1_10shared_ptrINS_8DCObjectEEE",
+    "demangled": "datacenter::DCDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<datacenter::DCObject> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN19ttm_strategy_center22ttm_sc_strategy_center17register_cep_ruleERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_PKcb",
+    "demangled": "ttm_strategy_center::ttm_sc_strategy_center::register_cep_rule(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, char const*, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fwrite",
+    "demangled": "fwrite",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com2ss3ttm6player5Value6getPtrEv",
+    "demangled": "com::ss::ttm::player::Value::getPtr const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json17ValueIteratorBase5derefEv",
+    "demangled": "Json::ValueIteratorBase::deref const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN19ttm_strategy_center11ttm_sc_dict6putIntERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEl",
+    "demangled": "ttm_strategy_center::ttm_sc_dict::putInt(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEi",
+    "demangled": "datacenter::DCDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm11medialoader27AVMDLStrategyCenterListenerD2Ev",
+    "demangled": "com::ss::ttm::medialoader::AVMDLStrategyCenterListener::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable4waitERNS_11unique_lockINS_5mutexEEE",
+    "demangled": "std::__ndk1::condition_variable::wait(std::__ndk1::unique_lock<std::__ndk1::mutex>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter13featurecenter20FeatureCenterManager11getInstanceEv",
+    "demangled": "datacenter::featurecenter::FeatureCenterManager::getInstance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit7MsgLoop8postTaskERKNS1_8FunctionIFvvEEENS2_15MessageTaskTypeENS1_9TimeDeltaE",
+    "demangled": "com::ss::vcbkit::MsgLoop::postTask(com::ss::vcbkit::Function<void ()> const&, com::ss::vcbkit::MsgLoop::MessageTaskType, com::ss::vcbkit::TimeDelta)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit11SharedMutex4lockEv",
+    "demangled": "com::ss::vcbkit::SharedMutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk14stolERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "demangled": "std::__ndk1::stol(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned long*, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk14stofERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPm",
+    "demangled": "std::__ndk1::stof(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned long*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit10ScopedLockD1Ev",
+    "demangled": "com::ss::vcbkit::ScopedLock::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value8isUInt64Ev",
+    "demangled": "Json::Value::isUInt64 const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk120__throw_system_errorEiPKc",
+    "demangled": "std::__ndk1::__throw_system_error(int, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "erfc",
+    "demangled": "erfc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getaddrinfo",
+    "demangled": "getaddrinfo",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value4typeEv",
+    "demangled": "Json::Value::type const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9use_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::use_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEl",
+    "demangled": "std::__ndk1::to_string(long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN3com2ss3ttm6player19AVDropFrameOperatorE",
+    "demangled": "typeinfo for com::ss::ttm::player::AVDropFrameOperator",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value8isDoubleEv",
+    "demangled": "Json::Value::isDouble const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN19ttm_strategy_center11ttm_sc_dict9putStringERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_",
+    "demangled": "ttm_strategy_center::ttm_sc_dict::putString(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEd",
+    "demangled": "std::__ndk1::to_string(double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter10StreamMeta11setStrValueENS0_13StreamMetaKeyERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "datacenter::StreamMeta::setStrValue(datacenter::StreamMeta::StreamMetaKey, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pow",
+    "demangled": "pow",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value15isConvertibleToENS_9ValueTypeE",
+    "demangled": "Json::Value::isConvertibleTo const(Json::ValueType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutexD1Ev",
+    "demangled": "std::__ndk1::recursive_mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value7isInt64Ev",
+    "demangled": "Json::Value::isInt64 const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueC1EPv",
+    "demangled": "com::ss::ttm::player::Value::{ctor}(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json10FastWriter5writeERKNS_5ValueE",
+    "demangled": "Json::FastWriter::write(Json::Value const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE3putES4_RNS_8ios_baseEcPK2tmPKcSC_",
+    "demangled": "std::__ndk1::time_put<char, std::__ndk1::ostreambuf_iterator<char, std::__ndk1::char_traits<char>>>::put const(std::__ndk1::ostreambuf_iterator<char, std::__ndk1::char_traits<char>>, std::__ndk1::ios_base&, char, tm const*, char const*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm11medialoader15AVMDLIOTaskInfoD1Ev",
+    "demangled": "com::ss::ttm::medialoader::AVMDLIOTaskInfo::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value7isArrayEv",
+    "demangled": "Json::Value::isArray const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com2ss3ttm6player5Value8getInt32Ev",
+    "demangled": "com::ss::ttm::player::Value::getInt32 const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit12ScopedJniEnvD1Ev",
+    "demangled": "com::ss::vcbkit::ScopedJniEnv::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5Value12removeMemberEPKc",
+    "demangled": "Json::Value::removeMember(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com2ss3ttm6player5Value9getStringEv",
+    "demangled": "com::ss::ttm::player::Value::getString const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt18uncaught_exceptionv",
+    "demangled": "std::uncaught_exception()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1Ed",
+    "demangled": "Json::Value::{ctor}(double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_bad_cast",
+    "demangled": "__cxa_bad_cast",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1EOS0_",
+    "demangled": "Json::Value::{ctor}(Json::Value&&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_pure_virtual",
+    "demangled": "__cxa_pure_virtual",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5Value5beginEv",
+    "demangled": "Json::Value::begin()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5Value5clearEv",
+    "demangled": "Json::Value::clear()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17codecvtIcc9mbstate_tE2idE",
+    "demangled": "std::__ndk1::codecvt<char, char, mbstate_t>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable10notify_allEv",
+    "demangled": "std::__ndk1::condition_variable::notify_all()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value7asFloatEv",
+    "demangled": "Json::Value::asFloat const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_",
+    "demangled": "datacenter::DCDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1El",
+    "demangled": "Json::Value::{ctor}(long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCListC1Ev",
+    "demangled": "datacenter::DCList::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter9MediaMeta13addStreamMetaENSt6__ndk110shared_ptrIKNS_10StreamMetaEEE",
+    "demangled": "datacenter::MediaMeta::addStreamMeta(std::__ndk1::shared_ptr<datacenter::StreamMeta const>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk18ios_base6getlocEv",
+    "demangled": "std::__ndk1::ios_base::getloc const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueC1ERKf",
+    "demangled": "com::ss::ttm::player::Value::{ctor}(float const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value5emptyEv",
+    "demangled": "Json::Value::empty const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15stoulERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "demangled": "std::__ndk1::stoul(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned long*, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueixEPKc",
+    "demangled": "Json::Value::operator[](char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter9MediaMetaC1Ev",
+    "demangled": "datacenter::MediaMeta::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value8isStringEv",
+    "demangled": "Json::Value::isString const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__errno",
+    "demangled": "__errno",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value8toStringEv",
+    "demangled": "Json::Value::toString const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fflush",
+    "demangled": "fflush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "expm1",
+    "demangled": "expm1",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter13DCObjectUtils14getStringValueENSt6__ndk110shared_ptrINS_8DCObjectEEENS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "datacenter::DCObjectUtils::getStringValue(std::__ndk1::shared_ptr<datacenter::DCObject>, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json18ValueConstIteratorC1Ev",
+    "demangled": "Json::ValueConstIterator::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "expf",
+    "demangled": "expf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueaSERKd",
+    "demangled": "com::ss::ttm::player::Value::operator=(double const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player15AVStrategyUtils29setPlayerGlobalConfigIntValueEii",
+    "demangled": "com::ss::ttm::player::AVStrategyUtils::setPlayerGlobalConfigIntValue(int, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value4findEPKcS2_",
+    "demangled": "Json::Value::find const(char const*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEl",
+    "demangled": "datacenter::DCDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115__thread_structC1Ev",
+    "demangled": "std::__ndk1::__thread_struct::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "inet_ntop",
+    "demangled": "inet_ntop",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1ERKS0_",
+    "demangled": "std::__ndk1::locale::{ctor}(std::__ndk1::locale const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16thread4joinEv",
+    "demangled": "std::__ndk1::thread::join()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115__get_classnameEPKcb",
+    "demangled": "std::__ndk1::__get_classname(char const*, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCDict3SetERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEd",
+    "demangled": "datacenter::DCDict::Set(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player6ParcelD1Ev",
+    "demangled": "com::ss::ttm::player::Parcel::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "exp",
+    "demangled": "exp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit11SharedMutex12unlockSharedEv",
+    "demangled": "com::ss::vcbkit::SharedMutex::unlockShared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com6tiktok8ttkmedia12configcenter12ConfigCenter9SingletonEv",
+    "demangled": "com::tiktok::ttkmedia::configcenter::ConfigCenter::Singleton()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atof",
+    "demangled": "atof",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit16ThreadPoolHelper6runBlkERKNS1_8FunctionIFvvEEE",
+    "demangled": "com::ss::vcbkit::ThreadPoolHelper::runBlk(com::ss::vcbkit::Function<void ()> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setspecific",
+    "demangled": "pthread_setspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "inet_pton",
+    "demangled": "inet_pton",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value8asUInt64Ev",
+    "demangled": "Json::Value::asUInt64 const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueD1Ev",
+    "demangled": "Json::Value::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN3com2ss3ttm11medialoader19AVMDLIOTaskListenerE",
+    "demangled": "typeinfo for com::ss::ttm::medialoader::AVMDLIOTaskListener",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com6tiktok8ttkmedia12configcenter12ConfigCenter11setListenerEPNS2_21IConfigCenterListenerENS2_12ConfigModuleE",
+    "demangled": "com::tiktok::ttkmedia::configcenter::ConfigCenter::setListener(com::tiktok::ttkmedia::configcenter::IConfigCenterListener*, com::tiktok::ttkmedia::configcenter::ConfigModule)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_baseC1Ev",
+    "demangled": "std::__ndk1::__shared_mutex_base::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCList6AppendERKNSt6__ndk110shared_ptrINS_8DCObjectEEE",
+    "demangled": "datacenter::DCList::Append(std::__ndk1::shared_ptr<datacenter::DCObject> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value4sizeEv",
+    "demangled": "Json::Value::size const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "tgamma",
+    "demangled": "tgamma",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk14stoiERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "demangled": "std::__ndk1::stoi(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned long*, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fseeko",
+    "demangled": "fseeko",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5Value3endEv",
+    "demangled": "Json::Value::end()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1ERKS0_",
+    "demangled": "Json::Value::{ctor}(Json::Value const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16chrono12system_clock9to_time_tERKNS0_10time_pointIS1_NS0_8durationIxNS_5ratioILl1ELl1000000EEEEEEE",
+    "demangled": "std::__ndk1::chrono::system_clock::to_time_t(std::__ndk1::chrono::time_point<std::__ndk1::chrono::system_clock, std::__ndk1::chrono::duration<long long, std::__ndk1::ratio<(long)1, (long)1000000>>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN19ttm_strategy_center22ttm_sc_strategy_center28strategy_center_init_successEv",
+    "demangled": "ttm_strategy_center::ttm_sc_strategy_center::strategy_center_init_success()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit16ThreadPoolHelperD1Ev",
+    "demangled": "com::ss::vcbkit::ThreadPoolHelper::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter8clientai14AlgTaskManager11getInstanceEv",
+    "demangled": "datacenter::clientai::AlgTaskManager::getInstance()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json17ValueIteratorBase7isEqualERKS0_",
+    "demangled": "Json::ValueIteratorBase::isEqual const(Json::ValueIteratorBase const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit11SharedMutexC1Ev",
+    "demangled": "com::ss::vcbkit::SharedMutex::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutex4lockEv",
+    "demangled": "std::__ndk1::recursive_mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "time",
+    "demangled": "time",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count4lockEv",
+    "demangled": "std::__ndk1::__shared_weak_count::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player15AVStrategyUtils29getPlayerGlobalConfigIntValueEii",
+    "demangled": "com::ss::ttm::player::AVStrategyUtils::getPlayerGlobalConfigIntValue(int, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json6Reader5parseERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERNS_5ValueEb",
+    "demangled": "Json::Reader::parse(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, Json::Value&, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1Ev",
+    "demangled": "std::__ndk1::locale::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16threadD1Ev",
+    "demangled": "std::__ndk1::thread::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm11medialoader27AVMDLStrategyCenterListenerC2Ev",
+    "demangled": "com::ss::ttm::medialoader::AVMDLStrategyCenterListener::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex6unlockEv",
+    "demangled": "std::__ndk1::mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit11SharedMutex6unlockEv",
+    "demangled": "com::ss::vcbkit::SharedMutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value5asIntEv",
+    "demangled": "Json::Value::asInt const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player21AVLoadControlOperatorC2Ev",
+    "demangled": "com::ss::ttm::player::AVLoadControlOperator::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com2ss3ttm6player5Value8getInt64Ev",
+    "demangled": "com::ss::ttm::player::Value::getInt64 const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ftello",
+    "demangled": "ftello",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit11SharedMutexD1Ev",
+    "demangled": "com::ss::vcbkit::SharedMutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale4nameEv",
+    "demangled": "std::__ndk1::locale::name const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk123__match_any_but_newlineIcE6__execERNS_7__stateIcEE",
+    "demangled": "std::__ndk1::__match_any_but_newline<char>::__exec const(std::__ndk1::__state<char>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "freeaddrinfo",
+    "demangled": "freeaddrinfo",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCList6AppendEb",
+    "demangled": "datacenter::DCList::Append(bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value5isIntEv",
+    "demangled": "Json::Value::isInt const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm11medialoader22AVMDLStrategyInterfaceD2Ev",
+    "demangled": "com::ss::ttm::medialoader::AVMDLStrategyInterface::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fclose",
+    "demangled": "fclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE",
+    "demangled": "std::__ndk1::num_put<char, std::__ndk1::ostreambuf_iterator<char, std::__ndk1::char_traits<char>>>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutexC1Ev",
+    "demangled": "std::__ndk1::recursive_mutex::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value6asUIntEv",
+    "demangled": "Json::Value::asUInt const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player19AVDropFrameOperatorD2Ev",
+    "demangled": "com::ss::ttm::player::AVDropFrameOperator::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "cos",
+    "demangled": "cos",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN3com2ss3ttm11medialoader22AVMDLStrategyInterfaceE",
+    "demangled": "typeinfo for com::ss::ttm::medialoader::AVMDLStrategyInterface",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv121__vmi_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__vmi_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit10ScopedLockC1ERNS1_5MutexE",
+    "demangled": "com::ss::vcbkit::ScopedLock::{ctor}(com::ss::vcbkit::Mutex&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm11medialoader15AVMDLIOTaskInfoC1Ev",
+    "demangled": "com::ss::ttm::medialoader::AVMDLIOTaskInfo::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv117__class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueC1Ev",
+    "demangled": "com::ss::ttm::player::Value::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK19ttm_strategy_center17ttm_sc_cep_result9isSuccessEv",
+    "demangled": "ttm_strategy_center::ttm_sc_cep_result::isSuccess const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sched_yield",
+    "demangled": "sched_yield",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115__thread_structD1Ev",
+    "demangled": "std::__ndk1::__thread_struct::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtoll",
+    "demangled": "strtoll",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutex6unlockEv",
+    "demangled": "std::__ndk1::recursive_mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueaSERKi",
+    "demangled": "com::ss::ttm::player::Value::operator=(int const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeD1Ev",
+    "demangled": "std::__ndk1::locale::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value7asInt64Ev",
+    "demangled": "Json::Value::asInt64 const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json6Reader25getFormattedErrorMessagesEv",
+    "demangled": "Json::Reader::getFormattedErrorMessages const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter8clientai14AlgTaskManager7isReadyEv",
+    "demangled": "datacenter::clientai::AlgTaskManager::isReady()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variableD1Ev",
+    "demangled": "std::__ndk1::condition_variable::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueC1EOS3_",
+    "demangled": "com::ss::ttm::player::Value::{ctor}(com::ss::ttm::player::Value&&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1EPKc",
+    "demangled": "Json::Value::{ctor}(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com6tiktok8ttkmedia12configcenter12ConfigCenter15getPlayerConfigEv",
+    "demangled": "com::tiktok::ttkmedia::configcenter::ConfigCenter::getPlayerConfig const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueD1Ev",
+    "demangled": "com::ss::ttm::player::Value::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base4initEPv",
+    "demangled": "std::__ndk1::ios_base::init(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex4lockEv",
+    "demangled": "std::__ndk1::mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json13ValueIteratorC1Ev",
+    "demangled": "Json::ValueIterator::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15ctypeIcE2idE",
+    "demangled": "std::__ndk1::ctype<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN3com2ss3ttm11medialoader27AVMDLStrategyCenterListenerE",
+    "demangled": "typeinfo for com::ss::ttm::medialoader::AVMDLStrategyCenterListener",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtol",
+    "demangled": "strtol",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__dynamic_cast",
+    "demangled": "__dynamic_cast",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base11lock_sharedEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::lock_shared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16chrono12steady_clock3nowEv",
+    "demangled": "std::__ndk1::chrono::steady_clock::now()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value8isMemberERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "Json::Value::isMember const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueixEj",
+    "demangled": "Json::Value::operator[](unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueaSERKS3_",
+    "demangled": "com::ss::ttm::player::Value::operator=(com::ss::ttm::player::Value const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value6isBoolEv",
+    "demangled": "Json::Value::isBool const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "localtime_r",
+    "demangled": "localtime_r",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEj",
+    "demangled": "std::__ndk1::to_string(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "log",
+    "demangled": "log",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json10FastWriterC1Ev",
+    "demangled": "Json::FastWriter::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEf",
+    "demangled": "std::__ndk1::to_string(float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com2ss3ttm6player5Value4typeEv",
+    "demangled": "com::ss::ttm::player::Value::type const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base5clearEj",
+    "demangled": "std::__ndk1::ios_base::clear(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com2ss6vcbkit7BaseRef6incRefEv",
+    "demangled": "com::ss::vcbkit::BaseRef::incRef const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk18ios_baseE",
+    "demangled": "typeinfo for std::__ndk1::ios_base",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "prctl",
+    "demangled": "prctl",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player6Parcel4initEv",
+    "demangled": "com::ss::ttm::player::Parcel::init()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4Json10FastWriterE",
+    "demangled": "vtable for Json::FastWriter",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter8DCObject4JSONEv",
+    "demangled": "datacenter::DCObject::JSON()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value8asDoubleEv",
+    "demangled": "Json::Value::asDouble const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value8asStringEv",
+    "demangled": "Json::Value::asString const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter13featurecenter20FeatureCenterManager25getBatchFeaturesByBizNameERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_SA_",
+    "demangled": "datacenter::featurecenter::FeatureCenterManager::getBatchFeaturesByBizName(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter9MediaMeta11setIntValueENS0_12MediaMetaKeyEi",
+    "demangled": "datacenter::MediaMeta::setIntValue(datacenter::MediaMeta::MediaMetaKey, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base4lockEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueC1EPKc",
+    "demangled": "com::ss::ttm::player::Value::{ctor}(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtof",
+    "demangled": "strtof",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk119__shared_weak_countE",
+    "demangled": "typeinfo for std::__ndk1::__shared_weak_count",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "localtime",
+    "demangled": "localtime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter13DCObjectUtils14getDCDictValueENSt6__ndk110shared_ptrINS_8DCObjectEEE",
+    "demangled": "datacenter::DCObjectUtils::getDCDictValue(std::__ndk1::shared_ptr<datacenter::DCObject>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN19ttm_strategy_center11ttm_sc_dictC1Ev",
+    "demangled": "ttm_strategy_center::ttm_sc_dict::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player21AVLoadControlOperatorD2Ev",
+    "demangled": "com::ss::ttm::player::AVLoadControlOperator::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk111__call_onceERVmPvPFvS2_E",
+    "demangled": "std::__ndk1::__call_once(unsigned long volatile&, void*, void (*)(void*))",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value3getEPKcRKS0_",
+    "demangled": "Json::Value::get const(char const*, Json::Value const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10datacenter6DCDictE",
+    "demangled": "vtable for datacenter::DCDict",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__thread_local_dataEv",
+    "demangled": "std::__ndk1::__thread_local_data()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1Eb",
+    "demangled": "Json::Value::{ctor}(bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter19getDataMediaContextEv",
+    "demangled": "datacenter::getDataMediaContext()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fopen",
+    "demangled": "fopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1Ej",
+    "demangled": "Json::Value::{ctor}(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value8isObjectEv",
+    "demangled": "Json::Value::isObject const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value3getERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKS0_",
+    "demangled": "Json::Value::get const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, Json::Value const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit16ThreadPoolHelperC1EiiPKc",
+    "demangled": "com::ss::vcbkit::ThreadPoolHelper::{ctor}(int, int, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16chrono12system_clock3nowEv",
+    "demangled": "std::__ndk1::chrono::system_clock::now()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueC1ERKl",
+    "demangled": "com::ss::ttm::player::Value::{ctor}(long const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit7MsgLoop5spawnEPKc",
+    "demangled": "com::ss::vcbkit::MsgLoop::spawn(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player5ValueC1ERKd",
+    "demangled": "com::ss::ttm::player::Value::{ctor}(double const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json6WriterD2Ev",
+    "demangled": "Json::Writer::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base6unlockEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_baseD2Ev",
+    "demangled": "std::__ndk1::ios_base::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter6DCDictC1Ev",
+    "demangled": "datacenter::DCDict::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "log1p",
+    "demangled": "log1p",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueC1ENS_9ValueTypeE",
+    "demangled": "Json::Value::{ctor}(Json::ValueType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit7MsgLoop8postTaskERKNS1_8FunctionIFvvEEENS1_9TimeDeltaE",
+    "demangled": "com::ss::vcbkit::MsgLoop::postTask(com::ss::vcbkit::Function<void ()> const&, com::ss::vcbkit::TimeDelta)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json17ValueIteratorBase15computeDistanceERKS0_",
+    "demangled": "Json::ValueIteratorBase::computeDistance const(Json::ValueIteratorBase const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN3com2ss3ttm6player21AVLoadControlOperatorE",
+    "demangled": "typeinfo for com::ss::ttm::player::AVLoadControlOperator",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK3com2ss3ttm6player6Parcel3getEm",
+    "demangled": "com::ss::ttm::player::Parcel::get const(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "rand",
+    "demangled": "rand",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm11medialoader19AVMDLIOTaskListenerC2Ev",
+    "demangled": "com::ss::ttm::medialoader::AVMDLIOTaskListener::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss3ttm11medialoader22AVMDLStrategyInterfaceC2Ev",
+    "demangled": "com::ss::ttm::medialoader::AVMDLStrategyInterface::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk120__get_collation_nameEPKc",
+    "demangled": "std::__ndk1::__get_collation_name(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memchr",
+    "demangled": "memchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value6asBoolEv",
+    "demangled": "Json::Value::asBool const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10datacenter6DCListE",
+    "demangled": "vtable for datacenter::DCList",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json10FastWriter18omitEndingLineFeedEv",
+    "demangled": "Json::FastWriter::omitEndingLineFeed()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5Value6appendERKS0_",
+    "demangled": "Json::Value::append(Json::Value const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atoi",
+    "demangled": "atoi",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN19ttm_strategy_center11ttm_sc_dict6putIntERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEi",
+    "demangled": "ttm_strategy_center::ttm_sc_dict::putInt(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK10datacenter9MediaMeta11getIntValueENS0_12MediaMetaKeyEi",
+    "demangled": "datacenter::MediaMeta::getIntValue const(datacenter::MediaMeta::MediaMetaKey, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter8clientai14AlgTaskManager16syncRunSmartTaskERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS2_10shared_ptrINS_6DCDictEEENSB_INS0_13AlgTaskConfigEEENS2_8functionIFvbllRKSD_EEE",
+    "demangled": "datacenter::clientai::AlgTaskManager::syncRunSmartTask(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<datacenter::DCDict>, std::__ndk1::shared_ptr<datacenter::clientai::AlgTaskConfig>, std::__ndk1::function<void (bool, long, long, std::__ndk1::shared_ptr<datacenter::DCDict> const&)>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__si_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value6isUIntEv",
+    "demangled": "Json::Value::isUInt const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base13unlock_sharedEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::unlock_shared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json6ReaderC1Ev",
+    "demangled": "Json::Reader::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter13featurecenter20FeatureCenterManager10getFeatureERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_RKNS_6DCDictE",
+    "demangled": "datacenter::featurecenter::FeatureCenterManager::getFeature(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, datacenter::DCDict const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN10datacenter10StreamMetaC1Ev",
+    "demangled": "datacenter::StreamMeta::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json5ValueixEi",
+    "demangled": "Json::Value::operator[](int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit12ScopedJniEnvC1Ev",
+    "demangled": "com::ss::vcbkit::ScopedJniEnv::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable10notify_oneEv",
+    "demangled": "std::__ndk1::condition_variable::notify_one()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEm",
+    "demangled": "std::__ndk1::to_string(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json17ValueIteratorBase9incrementEv",
+    "demangled": "Json::ValueIteratorBase::increment()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Json5Value6isNullEv",
+    "demangled": "Json::Value::isNull const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEi",
+    "demangled": "std::__ndk1::to_string(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x2ba625",
+    "size": 52,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ofstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x2ba659",
+    "size": 51,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x368a00",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSN3com6tiktok8ttkmedia12configcenter21IConfigCenterListenerE",
+    "demangled": "typeinfo name for com::tiktok::ttkmedia::configcenter::IConfigCenterListener",
+    "value": "0x301df4",
+    "size": 60,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIN3com6tiktok8ttkmedia12configcenter21IConfigCenterListenerE",
+    "demangled": "typeinfo for com::tiktok::ttkmedia::configcenter::IConfigCenterListener",
+    "value": "0x37b760",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ostringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x2ba597",
+    "size": 73,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x368760",
+    "size": 40,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_istringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x2e10fc",
+    "size": 73,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ostringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x368788",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_ostringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x3686a8",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN3com6tiktok8ttkmedia12configcenter21IConfigCenterListenerD2Ev",
+    "demangled": "com::tiktok::ttkmedia::configcenter::IConfigCenterListener::{base dtor}()",
+    "value": "0x29f898",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x368980",
+    "size": 128,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_istringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x370e58",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_stringbuf<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x368830",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_iostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x369020",
+    "size": 56,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player6Parcel4initIlJRPvRPKcEEEvOT_DpOT0_",
+    "demangled": "void com::ss::ttm::player::Parcel::init<long, void*&, char const*&>(long&&, void*&, char const*&)",
+    "value": "0x291b2c",
+    "size": 328,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_istream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x2baf5f",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x27b3d0",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_stringbuf<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x2ba5e0",
+    "size": 69,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player6Parcel4initIRPvJRPKcEEEvOT_DpOT0_",
+    "demangled": "void com::ss::ttm::player::Parcel::init<void*&, char const*&>(void*&&&, char const*&)",
+    "value": "0x291c74",
+    "size": 524,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_istringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x370ef8",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_stringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x368f80",
+    "size": 120,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x368820",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_istream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x368ff8",
+    "size": 40,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ofstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x368968",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_stringbuf<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x3687a0",
+    "size": 128,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ios<char, std::__ndk1::char_traits<char>>",
+    "value": "0x368748",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTCNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE",
+    "demangled": "_ZTCNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE",
+    "value": "0x369058",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "JNI_OnUnload",
+    "demangled": "JNI_OnUnload",
+    "value": "0x27b4b4",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Json10FastWriterD2Ev",
+    "demangled": "Json::FastWriter::{base dtor}()",
+    "value": "0x4aac8",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_ofstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x3688c8",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTVNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x368848",
+    "size": 128,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSN3com2ss6vcbkit7BaseRefE",
+    "demangled": "typeinfo name for com::ss::vcbkit::BaseRef",
+    "value": "0x2ba7a3",
+    "size": 25,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_stringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x3690a8",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTCNSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE0_NS_13basic_ostreamIcS2_EE",
+    "demangled": "_ZTCNSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE0_NS_13basic_ostreamIcS2_EE",
+    "value": "0x368918",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_iostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x2baf2c",
+    "size": 51,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTCNSt6__ndk119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE",
+    "demangled": "_ZTCNSt6__ndk119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE",
+    "value": "0x370ea8",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIN3com2ss6vcbkit7BaseRefE",
+    "demangled": "typeinfo for com::ss::vcbkit::BaseRef",
+    "value": "0x368ad0",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTCNSt6__ndk119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_ostreamIcS2_EE",
+    "demangled": "_ZTCNSt6__ndk119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_ostreamIcS2_EE",
+    "value": "0x3686f8",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x2ba68c",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN3com2ss3ttm6player6Parcel4initIlJlRPvRPKcEEEvOT_DpOT0_",
+    "demangled": "void com::ss::ttm::player::Parcel::init<long, long, void*&, char const*&>(long&&, long, void*&, char const*&)",
+    "value": "0x2919d4",
+    "size": 344,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ios<char, std::__ndk1::char_traits<char>>",
+    "value": "0x2ba56a",
+    "size": 45,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_stringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x2baf91",
+    "size": 72,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN3com2ss6vcbkit7BaseRefD2Ev",
+    "demangled": "com::ss::vcbkit::BaseRef::{base dtor}()",
+    "value": "0x29b8d8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x2ba538",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  }
+]

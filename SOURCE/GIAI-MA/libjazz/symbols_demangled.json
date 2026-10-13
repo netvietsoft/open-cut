@@ -1,0 +1,2690 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8g_aeLogTEPKciiS1_S1_z",
+    "demangled": "AmazingEngine::g_aeLogT(char const*, int, int, char const*, char const*, ...)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable10notify_allEv",
+    "demangled": "std::__ndk1::condition_variable::notify_all()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable10notify_oneEv",
+    "demangled": "std::__ndk1::condition_variable::notify_one()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable15__do_timed_waitERNS_11unique_lockINS_5mutexEEENS_6chrono10time_pointINS5_12system_clockENS5_8durationIxNS_5ratioILl1ELl1000000000EEEEEEE",
+    "demangled": "std::__ndk1::condition_variable::__do_timed_wait(std::__ndk1::unique_lock<std::__ndk1::mutex>&, std::__ndk1::chrono::time_point<std::__ndk1::chrono::system_clock, std::__ndk1::chrono::duration<long long, std::__ndk1::ratio<(long)1, (long)1000000000>>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable4waitERNS_11unique_lockINS_5mutexEEE",
+    "demangled": "std::__ndk1::condition_variable::wait(std::__ndk1::unique_lock<std::__ndk1::mutex>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variableD1Ev",
+    "demangled": "std::__ndk1::condition_variable::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex4lockEv",
+    "demangled": "std::__ndk1::mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex6unlockEv",
+    "demangled": "std::__ndk1::mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutexD1Ev",
+    "demangled": "std::__ndk1::mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16chrono12steady_clock3nowEv",
+    "demangled": "std::__ndk1::chrono::steady_clock::now()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16chrono12system_clock3nowEv",
+    "demangled": "std::__ndk1::chrono::system_clock::now()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_pure_virtual",
+    "demangled": "__cxa_pure_virtual",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine29_threadWrapper_create_PThreadEiPNSt6__ndk18functionIFvvEEE",
+    "demangled": "AmazingEngine::_threadWrapper_create_PThread(int, std::__ndk1::function<void ()>*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEj",
+    "demangled": "std::__ndk1::to_string(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env15GetInstanceDataEm",
+    "demangled": "Napi::Env::GetInstanceData(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env27GetAndClearPendingExceptionEv",
+    "demangled": "Napi::Env::GetAndClearPendingException()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env9RunScriptEPKcmS2_",
+    "demangled": "Napi::Env::RunScript(char const*, unsigned long, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI17FromJustIsNothingEv",
+    "demangled": "Napi::NAPI::FromJustIsNothing()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6String3NewEP10napi_env__PKc",
+    "demangled": "Napi::String::New(napi_env__*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env18IsExceptionPendingEv",
+    "demangled": "Napi::Env::IsExceptionPending const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env9UndefinedEv",
+    "demangled": "Napi::Env::Undefined const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8IsStringEv",
+    "demangled": "Napi::Value::IsString const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8ToStringEv",
+    "demangled": "Napi::Value::ToString const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object3GetEPKc",
+    "demangled": "Napi::Object::Get const(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object3HasEPKc",
+    "demangled": "Napi::Object::Has const(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6String9Utf8ValueEv",
+    "demangled": "Napi::String::Utf8Value const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi8Function4CallEmPKP12napi_value__",
+    "demangled": "Napi::Function::Call const(unsigned long, napi_value__* const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_attach_runtime",
+    "demangled": "napi_attach_runtime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_detach_runtime",
+    "demangled": "napi_detach_runtime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_free_env",
+    "demangled": "napi_free_env",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_new_env",
+    "demangled": "napi_new_env",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11HandleScopeC1ENS_3EnvE",
+    "demangled": "Napi::HandleScope::{ctor}(Napi::Env)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11HandleScopeD1Ev",
+    "demangled": "Napi::HandleScope::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt13exception_ptrC1ERKS_",
+    "demangled": "std::exception_ptr::{ctor}(std::exception_ptr const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt13exception_ptrD1Ev",
+    "demangled": "std::exception_ptr::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112future_errorC1ENS_10error_codeE",
+    "demangled": "std::__ndk1::future_error::{ctor}(std::__ndk1::error_code)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk114__shared_countD2Ev",
+    "demangled": "std::__ndk1::__shared_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115future_categoryEv",
+    "demangled": "std::__ndk1::future_category()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk117__assoc_sub_state10__sub_waitERNS_11unique_lockINS_5mutexEEE",
+    "demangled": "std::__ndk1::__assoc_sub_state::__sub_wait(std::__ndk1::unique_lock<std::__ndk1::mutex>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk117__assoc_sub_state9__executeEv",
+    "demangled": "std::__ndk1::__assoc_sub_state::__execute()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt17rethrow_exceptionSt13exception_ptr",
+    "demangled": "std::rethrow_exception(std::exception_ptr)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVNSt6__ndk117__assoc_sub_stateE",
+    "demangled": "vtable for std::__ndk1::__assoc_sub_state",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env15SetInstanceDataEmPvPFvP10napi_env__S1_S1_ES1_",
+    "demangled": "Napi::Env::SetInstanceData(unsigned long, void*, void (*)(napi_env__*, void*, void*), void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Number3NewEP10napi_env__d",
+    "demangled": "Napi::Number::New(napi_env__*, double)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object3SetEPKcP12napi_value__",
+    "demangled": "Napi::Object::Set(char const*, napi_value__*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env6GlobalEv",
+    "demangled": "Napi::Env::Global const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env6LoaderEv",
+    "demangled": "Napi::Env::Loader const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value10IsFunctionEv",
+    "demangled": "Napi::Value::IsFunction const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk111__call_onceERVmPvPFvS2_E",
+    "demangled": "std::__ndk1::__call_once(unsigned long volatile&, void*, void (*)(void*))",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object3NewEP10napi_env__",
+    "demangled": "Napi::Object::New(napi_env__*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi7Boolean3NewEP10napi_env__b",
+    "demangled": "Napi::Boolean::New(napi_env__*, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi8Function3NewEP10napi_env__PFNS_5ValueERKNS_12CallbackInfoEEPKcPv",
+    "demangled": "Napi::Function::New(napi_env__*, Napi::Value (*)(Napi::CallbackInfo const&), char const*, void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value11IsUndefinedEv",
+    "demangled": "Napi::Value::IsUndefined const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8IsNumberEv",
+    "demangled": "Napi::Value::IsNumber const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8IsObjectEv",
+    "demangled": "Napi::Value::IsObject const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8ToNumberEv",
+    "demangled": "Napi::Value::ToNumber const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Number10Int32ValueEv",
+    "demangled": "Napi::Number::Int32Value const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "access",
+    "demangled": "access",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fopen",
+    "demangled": "fopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mkdir",
+    "demangled": "mkdir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "rmdir",
+    "demangled": "rmdir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "stat",
+    "demangled": "stat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "unlink",
+    "demangled": "unlink",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine9FileUtils11writeToFileEPKcPhj",
+    "demangled": "AmazingEngine::FileUtils::writeToFile(char const*, unsigned char*, unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine9FileUtils8readFileEPKc",
+    "demangled": "AmazingEngine::FileUtils::readFile(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11ArrayBuffer10ByteLengthEv",
+    "demangled": "Napi::ArrayBuffer::ByteLength()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11ArrayBuffer3NewEP10napi_env__PvmPFvS2_S3_S3_ES3_",
+    "demangled": "Napi::ArrayBuffer::New(napi_env__*, void*, unsigned long, void (*)(napi_env__*, void*, void*), void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11ArrayBuffer4DataEv",
+    "demangled": "Napi::ArrayBuffer::Data()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12CallbackInfoC1EP10napi_env__P20napi_callback_info__",
+    "demangled": "Napi::CallbackInfo::{ctor}(napi_env__*, napi_callback_info__*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12CallbackInfoD1Ev",
+    "demangled": "Napi::CallbackInfo::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi15ScriptWrappableC2Ev",
+    "demangled": "Napi::ScriptWrappable::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi15ScriptWrappableD2Ev",
+    "demangled": "Napi::ScriptWrappable::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI11DefineClassEP10napi_env__PKcPFP12napi_value__S2_P20napi_callback_info__EmPK24napi_property_descriptorPvP12napi_class__",
+    "demangled": "Napi::NAPI::DefineClass(napi_env__*, char const*, napi_value__* (*)(napi_env__*, napi_callback_info__*), unsigned long, napi_property_descriptor const*, void*, napi_class__*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI15CreateReferenceEP10napi_env__P12napi_value__j",
+    "demangled": "Napi::NAPI::CreateReference(napi_env__*, napi_value__*, unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI15DeleteReferenceEP10napi_env__P10napi_ref__",
+    "demangled": "Napi::NAPI::DeleteReference(napi_env__*, napi_ref__*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI17GetReferenceValueEP10napi_env__P10napi_ref__",
+    "demangled": "Napi::NAPI::GetReferenceValue(napi_env__*, napi_ref__*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI4WrapEP10napi_env__P12napi_value__PvPFvS2_S5_S5_ES5_",
+    "demangled": "Napi::NAPI::Wrap(napi_env__*, napi_value__*, void*, void (*)(napi_env__*, void*, void*), void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI6UnwrapEP10napi_env__P12napi_value__",
+    "demangled": "Napi::NAPI::Unwrap(napi_env__*, napi_value__*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5Class3GetEP10napi_env__",
+    "demangled": "Napi::Class::Get(napi_env__*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5ClassD1Ev",
+    "demangled": "Napi::Class::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object12AddFinalizerEPvPFvP10napi_env__S1_S1_ES1_",
+    "demangled": "Napi::Object::AddFinalizer(void*, void (*)(napi_env__*, void*, void*), void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi9TypeError3NewEP10napi_env__PKc",
+    "demangled": "Napi::TypeError::New(napi_env__*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK13AmazingEngine9AllowList9isAllowedERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "AmazingEngine::AllowList::isAllowed const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi12CallbackInfo15IsConstructCallEv",
+    "demangled": "Napi::CallbackInfo::IsConstructCall const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Error26ThrowAsJavaScriptExceptionEv",
+    "demangled": "Napi::Error::ThrowAsJavaScriptException const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value13IsArrayBufferEv",
+    "demangled": "Napi::Value::IsArrayBuffer const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8ToObjectEv",
+    "demangled": "Napi::Value::ToObject const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value9IsBooleanEv",
+    "demangled": "Napi::Value::IsBoolean const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value9ToBooleanEv",
+    "demangled": "Napi::Value::ToBoolean const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi7Boolean5ValueEv",
+    "demangled": "Napi::Boolean::Value const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi8Function3NewEmPKP12napi_value__",
+    "demangled": "Napi::Function::New const(unsigned long, napi_value__* const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count4lockEv",
+    "demangled": "std::__ndk1::__shared_weak_count::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEi",
+    "demangled": "std::__ndk1::to_string(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN4Napi15ScriptWrappableE",
+    "demangled": "typeinfo for Napi::ScriptWrappable",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk119__shared_weak_countE",
+    "demangled": "typeinfo for std::__ndk1::__shared_weak_count",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv117__class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__si_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv121__vmi_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__vmi_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__dynamic_cast",
+    "demangled": "__dynamic_cast",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi8Function4CallEP12napi_value__mPKS2_",
+    "demangled": "Napi::Function::Call const(napi_value__*, unsigned long, napi_value__* const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_module_register_xx",
+    "demangled": "napi_module_register_xx",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine9FileUtils16CreateFileReaderEPKc",
+    "demangled": "AmazingEngine::FileUtils::CreateFileReader(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env4NullEv",
+    "demangled": "Napi::Env::Null const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env14AddCleanupHookEPFvPvES1_",
+    "demangled": "Napi::Env::AddCleanupHook(void (*)(void*), void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Number11DoubleValueEv",
+    "demangled": "Napi::Number::DoubleValue const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Number11Uint32ValueEv",
+    "demangled": "Napi::Number::Uint32Value const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_FreeContext",
+    "demangled": "LEPUS_FreeContext",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetRuntime",
+    "demangled": "LEPUS_GetRuntime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewContext",
+    "demangled": "LEPUS_NewContext",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_RunGC",
+    "demangled": "LEPUS_RunGC",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_attach_quickjs",
+    "demangled": "napi_attach_quickjs",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_detach_quickjs",
+    "demangled": "napi_detach_quickjs",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_FreeRuntime",
+    "demangled": "LEPUS_FreeRuntime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewRuntime",
+    "demangled": "LEPUS_NewRuntime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SetRuntimeInfo",
+    "demangled": "LEPUS_SetRuntimeInfo",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk117__assoc_sub_stateD2Ev",
+    "demangled": "std::__ndk1::__assoc_sub_state::{base dtor}()",
+    "value": "0x13868",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule6getKeyEv",
+    "demangled": "AmazingEngine::TimerModule::getKey()",
+    "value": "0x2338c",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModuleD2Ev",
+    "demangled": "AmazingEngine::TimerModule::{base dtor}()",
+    "value": "0x22d44",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule10unlinkSyncERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::unlinkSync(Napi::CallbackInfo const&)",
+    "value": "0x1ccf0",
+    "size": 272,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform14ReleaseRuntimeEm",
+    "demangled": "AmazingEngine::Platform::ReleaseRuntime(unsigned long)",
+    "value": "0x14bcc",
+    "size": 896,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context12CallFunctionERKN4Napi8FunctionERKNSt6__ndk16vectorIP12napi_value__NS5_9allocatorIS8_EEEE",
+    "demangled": "AmazingEngine::Context::CallFunction(Napi::Function const&, std::__ndk1::vector<napi_value__*, std::__ndk1::allocator<napi_value__*>> const&)",
+    "value": "0x10bac",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine11TimerModuleE",
+    "demangled": "vtable for AmazingEngine::TimerModule",
+    "value": "0x3b378",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime18AddContextExecutorENSt6__ndk110shared_ptrINS_15ContextExecutorEEEb",
+    "demangled": "AmazingEngine::Runtime::AddContextExecutor(std::__ndk1::shared_ptr<AmazingEngine::ContextExecutor>, bool)",
+    "value": "0x191b4",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule9TimerTaskC2ERKS1_",
+    "demangled": "AmazingEngine::TimerModule::TimerTask::{base ctor}(AmazingEngine::TimerModule::TimerTask const&)",
+    "value": "0x23688",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine7BEFTaskC2Ev",
+    "demangled": "AmazingEngine::BEFTask::{base ctor}()",
+    "value": "0xe8e4",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform11FindRuntimeEm",
+    "demangled": "AmazingEngine::Platform::FindRuntime(unsigned long)",
+    "value": "0x1587c",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8PlatformD0Ev",
+    "demangled": "AmazingEngine::Platform::{deleting dtor}()",
+    "value": "0x14f4c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7BEFTask3RunEv",
+    "demangled": "AmazingEngine::BEFTask::Run()",
+    "value": "0xcdac",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context14getContextHashEv",
+    "demangled": "AmazingEngine::Context::getContextHash()",
+    "value": "0x106a4",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context9RunScriptEPKcmS2_",
+    "demangled": "AmazingEngine::Context::RunScript(char const*, unsigned long, char const*)",
+    "value": "0x107a8",
+    "size": 684,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime9GetEngineEv",
+    "demangled": "AmazingEngine::Runtime::GetEngine()",
+    "value": "0x192e0",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine7RuntimeE",
+    "demangled": "vtable for AmazingEngine::Runtime",
+    "value": "0x3ac38",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner10CancelTaskENSt6__ndk110shared_ptrINS_7BEFTaskEEE",
+    "demangled": "AmazingEngine::BEFBaseRunner::CancelTask(std::__ndk1::shared_ptr<AmazingEngine::BEFTask>)",
+    "value": "0xcf98",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor12_SetupRunnerEv",
+    "demangled": "AmazingEngine::ContextExecutor::_SetupRunner()",
+    "value": "0x118e8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor13ExecuteBundleD2Ev",
+    "demangled": "AmazingEngine::ContextExecutor::ExecuteBundle::{base dtor}()",
+    "value": "0x11eb4",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime9SetEngineENSt6__ndk110shared_ptrINS_6EngineEEE",
+    "demangled": "AmazingEngine::Runtime::SetEngine(std::__ndk1::shared_ptr<AmazingEngine::Engine>)",
+    "value": "0x19094",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine14ModuleRegistry14addConstructorERN4Napi3EnvERKNSt6__ndk112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEENS1_8FunctionE",
+    "demangled": "AmazingEngine::ModuleRegistry::addConstructor(Napi::Env&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, Napi::Function)",
+    "value": "0x20e78",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner9TerminateEv",
+    "demangled": "AmazingEngine::BEFBaseRunner::Terminate()",
+    "value": "0xd308",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VMC2Ev",
+    "demangled": "AmazingEngine::VM::{base ctor}()",
+    "value": "0x1a53c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine15ContextExecutorE",
+    "demangled": "vtable for AmazingEngine::ContextExecutor",
+    "value": "0x3a558",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform12EraseRuntimeENSt6__ndk110shared_ptrINS_7RuntimeEEE",
+    "demangled": "AmazingEngine::Platform::EraseRuntime(std::__ndk1::shared_ptr<AmazingEngine::Runtime>)",
+    "value": "0x15bc0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime20isEnableMultiContextEv",
+    "demangled": "AmazingEngine::Runtime::isEnableMultiContext()",
+    "value": "0x195b0",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context4ExitEv",
+    "demangled": "AmazingEngine::Context::Exit()",
+    "value": "0xd308",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8PlatformD2Ev",
+    "demangled": "AmazingEngine::Platform::{base dtor}()",
+    "value": "0x14a48",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform12EraseRuntimeEm",
+    "demangled": "AmazingEngine::Platform::EraseRuntime(unsigned long)",
+    "value": "0x158e8",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModuleC1EN4Napi3EnvE",
+    "demangled": "AmazingEngine::TimerModule::{ctor}(Napi::Env)",
+    "value": "0x22bb4",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context5EnterEv",
+    "demangled": "AmazingEngine::Context::Enter()",
+    "value": "0xd308",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZGVZN13AmazingEngine11TimerModule20getInternalRunnerKeyEvE3KEY",
+    "demangled": "_ZGVZN13AmazingEngine11TimerModule20getInternalRunnerKeyEvE3KEY",
+    "value": "0x3c158",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner24ResumeThreadForInspectorEv",
+    "demangled": "AmazingEngine::BEFBaseRunner::ResumeThreadForInspector()",
+    "value": "0xd360",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime18GetContextExecutorEj",
+    "demangled": "AmazingEngine::Runtime::GetContextExecutor(unsigned int)",
+    "value": "0x1930c",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform25CreateNewContextInRuntimeENSt6__ndk110shared_ptrINS_7RuntimeEEE",
+    "demangled": "AmazingEngine::Platform::CreateNewContextInRuntime(std::__ndk1::shared_ptr<AmazingEngine::Runtime>)",
+    "value": "0x155b0",
+    "size": 668,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner15IsCurrentThreadEv",
+    "demangled": "AmazingEngine::BEFBaseRunner::IsCurrentThread()",
+    "value": "0xd314",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModuleD0Ev",
+    "demangled": "AmazingEngine::FileSystemModule::{deleting dtor}()",
+    "value": "0x1ad6c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule6CancelERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::TimerModule::Cancel(Napi::CallbackInfo const&)",
+    "value": "0x23208",
+    "size": 376,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8PlatformC1Ev",
+    "demangled": "AmazingEngine::Platform::{ctor}()",
+    "value": "0x14a30",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor6getKeyEv",
+    "demangled": "AmazingEngine::ContextExecutor::getKey()",
+    "value": "0x1109c",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule6accessERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::access(Napi::CallbackInfo const&)",
+    "value": "0x1aff4",
+    "size": 964,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VM7VMScopeD2Ev",
+    "demangled": "AmazingEngine::VM::VMScope::{base dtor}()",
+    "value": "0x12768",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine14ModuleRegistry6getKeyEv",
+    "demangled": "AmazingEngine::ModuleRegistry::getKey()",
+    "value": "0x20d00",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime28GetNonGlobalContextExecutorsEv",
+    "demangled": "AmazingEngine::Runtime::GetNonGlobalContextExecutors()",
+    "value": "0x19420",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule5Stats7getSizeERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::Stats::getSize(Napi::CallbackInfo const&)",
+    "value": "0x1d074",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform15GetWorkerRunnerEv",
+    "demangled": "AmazingEngine::Platform::GetWorkerRunner()",
+    "value": "0x15504",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule13writeFileSyncERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::writeFileSync(Napi::CallbackInfo const&)",
+    "value": "0x1bdc8",
+    "size": 564,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7BEFTaskC1ENSt6__ndk18functionIFvvEEE",
+    "demangled": "AmazingEngine::BEFTask::{ctor}(std::__ndk1::function<void ()>)",
+    "value": "0xe7a4",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModuleD2Ev",
+    "demangled": "AmazingEngine::FileSystemModule::{base dtor}()",
+    "value": "0x1ad34",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine14ModuleRegistry11getInstanceERN4Napi3EnvE",
+    "demangled": "AmazingEngine::ModuleRegistry::getInstance(Napi::Env&)",
+    "value": "0x20dac",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner15PostDelayedTaskENSt6__ndk110shared_ptrINS_7BEFTaskEEEd",
+    "demangled": "AmazingEngine::BEFBaseRunner::PostDelayedTask(std::__ndk1::shared_ptr<AmazingEngine::BEFTask>, double)",
+    "value": "0xce74",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7RuntimeC1ENS_11RuntimeModeE",
+    "demangled": "AmazingEngine::Runtime::{ctor}(AmazingEngine::RuntimeMode)",
+    "value": "0x18fd8",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModuleD2Ev",
+    "demangled": "AmazingEngine::RequireModule::{base dtor}()",
+    "value": "0x21898",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModuleC2EN4Napi3EnvE",
+    "demangled": "AmazingEngine::TimerModule::{base ctor}(Napi::Env)",
+    "value": "0x22bb4",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZZN13AmazingEngine11TimerModule20getInternalRunnerKeyEvE3KEY",
+    "demangled": "_ZZN13AmazingEngine11TimerModule20getInternalRunnerKeyEvE3KEY",
+    "value": "0x3c150",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule9writeFileERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::writeFile(Napi::CallbackInfo const&)",
+    "value": "0x1c1e4",
+    "size": 992,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine16FileSystemModule5StatsE",
+    "demangled": "vtable for AmazingEngine::FileSystemModule::Stats",
+    "value": "0x3acf0",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule12readFileSyncERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::readFileSync(Napi::CallbackInfo const&)",
+    "value": "0x1b458",
+    "size": 596,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModule10loadScriptERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::RequireModule::loadScript(Napi::CallbackInfo const&)",
+    "value": "0x219d0",
+    "size": 844,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner7GetNextEb",
+    "demangled": "AmazingEngine::BEFBaseRunner::GetNext(bool)",
+    "value": "0xcbc4",
+    "size": 488,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform12FindPlatformENS_12JSEngineTypeE",
+    "demangled": "AmazingEngine::Platform::FindPlatform(AmazingEngine::JSEngineType)",
+    "value": "0x159bc",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine8PlatformE",
+    "demangled": "vtable for AmazingEngine::Platform",
+    "value": "0x3a958",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModule16getGlobalModulesEv",
+    "demangled": "AmazingEngine::RequireModule::getGlobalModules()",
+    "value": "0x218f8",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime18SetContextExecutorENSt6__ndk110shared_ptrINS_15ContextExecutorEEE",
+    "demangled": "AmazingEngine::Runtime::SetContextExecutor(std::__ndk1::shared_ptr<AmazingEngine::ContextExecutor>)",
+    "value": "0x19124",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor6deinitEv",
+    "demangled": "AmazingEngine::ContextExecutor::deinit()",
+    "value": "0x111d4",
+    "size": 744,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime28CheckAndClearContextExecutorEj",
+    "demangled": "AmazingEngine::Runtime::CheckAndClearContextExecutor(unsigned int)",
+    "value": "0x194ec",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VM4ExitEv",
+    "demangled": "AmazingEngine::VM::Exit()",
+    "value": "0xd308",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor9SetGlobalEb",
+    "demangled": "AmazingEngine::ContextExecutor::SetGlobal(bool)",
+    "value": "0x119a4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine14ModuleRegistry14getConstructorERN4Napi3EnvERKNSt6__ndk112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE",
+    "demangled": "AmazingEngine::ModuleRegistry::getConstructor(Napi::Env&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x20e20",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7RuntimeD1Ev",
+    "demangled": "AmazingEngine::Runtime::{dtor}()",
+    "value": "0x19024",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule12FileFinalizeEP10napi_env__PvS3_",
+    "demangled": "AmazingEngine::FileSystemModule::FileFinalize(napi_env__*, void*, void*)",
+    "value": "0x1b41c",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule14readFileSyncV2ERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::readFileSyncV2(Napi::CallbackInfo const&)",
+    "value": "0x1b6ac",
+    "size": 1096,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule4statERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::stat(Napi::CallbackInfo const&)",
+    "value": "0x1c7f4",
+    "size": 560,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine14ModuleRegistry18registerJazzModuleENSt6__ndk18functionIFvP11napi_moduleEEE",
+    "demangled": "AmazingEngine::ModuleRegistry::registerJazzModule(std::__ndk1::function<void (napi_module*)>)",
+    "value": "0x20f3c",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModule17addEmbeddedScriptERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_",
+    "demangled": "AmazingEngine::RequireModule::addEmbeddedScript(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x21e24",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunnerD0Ev",
+    "demangled": "AmazingEngine::BEFBaseRunner::{deleting dtor}()",
+    "value": "0xd3b4",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutorD0Ev",
+    "demangled": "AmazingEngine::ContextExecutor::{deleting dtor}()",
+    "value": "0x11518",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule5StatsD0Ev",
+    "demangled": "AmazingEngine::FileSystemModule::Stats::{deleting dtor}()",
+    "value": "0x1d058",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor10GetContextEv",
+    "demangled": "AmazingEngine::ContextExecutor::GetContext()",
+    "value": "0x1263c",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context18GenScriptCodeCacheEN4Napi3EnvERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEERS9_",
+    "demangled": "AmazingEngine::Context::GenScriptCodeCache(Napi::Env, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>&)",
+    "value": "0x10ae0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor9RunScriptERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_8functionIFvN4Napi3EnvENSB_5ValueEEEE",
+    "demangled": "AmazingEngine::ContextExecutor::RunScript(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::function<void (Napi::Env, Napi::Value)> const&)",
+    "value": "0x11eec",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner8PostTaskENSt6__ndk110shared_ptrINS_7BEFTaskEEEb",
+    "demangled": "AmazingEngine::BEFBaseRunner::PostTask(std::__ndk1::shared_ptr<AmazingEngine::BEFTask>, bool)",
+    "value": "0xcde0",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7ContextD1Ev",
+    "demangled": "AmazingEngine::Context::{dtor}()",
+    "value": "0x106f0",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context6deinitEv",
+    "demangled": "AmazingEngine::Context::deinit()",
+    "value": "0x1069c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule13isAllowedPathERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "AmazingEngine::FileSystemModule::isAllowedPath(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x1ad8c",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunnerD2Ev",
+    "demangled": "AmazingEngine::BEFBaseRunner::{base dtor}()",
+    "value": "0xd368",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutorD2Ev",
+    "demangled": "AmazingEngine::ContextExecutor::{base dtor}()",
+    "value": "0x1118c",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule5StatsD2Ev",
+    "demangled": "AmazingEngine::FileSystemModule::Stats::{base dtor}()",
+    "value": "0x1d054",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine13BEFBaseRunnerE",
+    "demangled": "vtable for AmazingEngine::BEFBaseRunner",
+    "value": "0x3a280",
+    "size": 64,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor21RequestGarbageCollectEv",
+    "demangled": "AmazingEngine::ContextExecutor::RequestGarbageCollect()",
+    "value": "0x12024",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform8instanceEv",
+    "demangled": "AmazingEngine::Platform::instance()",
+    "value": "0x14f68",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine21CreateQuickJSPlatformEv",
+    "demangled": "AmazingEngine::CreateQuickJSPlatform()",
+    "value": "0x2450c",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunnerC1Ev",
+    "demangled": "AmazingEngine::BEFBaseRunner::{ctor}()",
+    "value": "0xcaf4",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine7ContextE",
+    "demangled": "vtable for AmazingEngine::Context",
+    "value": "0x3a520",
+    "size": 56,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutorC1Ev",
+    "demangled": "AmazingEngine::ContextExecutor::{ctor}()",
+    "value": "0x11164",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule11SetIntervalERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::TimerModule::SetInterval(Napi::CallbackInfo const&)",
+    "value": "0x23380",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7BEFTaskD0Ev",
+    "demangled": "AmazingEngine::BEFTask::{deleting dtor}()",
+    "value": "0xe924",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner29popTaskFromDelayedQueueNoLockEd",
+    "demangled": "AmazingEngine::BEFBaseRunner::popTaskFromDelayedQueueNoLock(double)",
+    "value": "0xd00c",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7ContextC2Ev",
+    "demangled": "AmazingEngine::Context::{base ctor}()",
+    "value": "0x10624",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule5Stats11isDirectoryERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::Stats::isDirectory(Napi::CallbackInfo const&)",
+    "value": "0x1d084",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor8IsGlobalEv",
+    "demangled": "AmazingEngine::ContextExecutor::IsGlobal()",
+    "value": "0x118e0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context17EvaluateCodeCacheEN4Napi3EnvERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEESB_",
+    "demangled": "AmazingEngine::Context::EvaluateCodeCache(Napi::Env, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x10ae4",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VMD0Ev",
+    "demangled": "AmazingEngine::VM::{deleting dtor}()",
+    "value": "0xeccc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime5GetIdEv",
+    "demangled": "AmazingEngine::Runtime::GetId()",
+    "value": "0x194e4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule5Stats6CreateEN4Napi3EnvE",
+    "demangled": "AmazingEngine::FileSystemModule::Stats::Create(Napi::Env)",
+    "value": "0x1d0b4",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModuleD1Ev",
+    "demangled": "AmazingEngine::TimerModule::{dtor}()",
+    "value": "0x22d44",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7BEFTaskD2Ev",
+    "demangled": "AmazingEngine::BEFTask::{base dtor}()",
+    "value": "0xe8ac",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTIN13AmazingEngine16FileSystemModuleE",
+    "demangled": "typeinfo for AmazingEngine::FileSystemModule",
+    "value": "0x3ad10",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule15writeFileSyncV2ERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::writeFileSyncV2(Napi::CallbackInfo const&)",
+    "value": "0x1bffc",
+    "size": 488,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime7IsDebugEv",
+    "demangled": "AmazingEngine::Runtime::IsDebug()",
+    "value": "0x194d4",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor8PumpLoopEv",
+    "demangled": "AmazingEngine::ContextExecutor::PumpLoop()",
+    "value": "0x12388",
+    "size": 544,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform11GetPlatformENS_12JSEngineTypeE",
+    "demangled": "AmazingEngine::Platform::GetPlatform(AmazingEngine::JSEngineType)",
+    "value": "0x153b0",
+    "size": 240,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN13AmazingEngine16FileSystemModule5StatsE",
+    "demangled": "typeinfo for AmazingEngine::FileSystemModule::Stats",
+    "value": "0x3ad20",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor11GetJSRunnerEv",
+    "demangled": "AmazingEngine::ContextExecutor::GetJSRunner()",
+    "value": "0x1163c",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor16_TerminateRunnerEv",
+    "demangled": "AmazingEngine::ContextExecutor::_TerminateRunner()",
+    "value": "0x114bc",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN13AmazingEngine7BEFTaskE",
+    "demangled": "typeinfo for AmazingEngine::BEFTask",
+    "value": "0x3ae98",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule4PostERKN4Napi12CallbackInfoEb",
+    "demangled": "AmazingEngine::TimerModule::Post(Napi::CallbackInfo const&, bool)",
+    "value": "0x22ebc",
+    "size": 840,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x3c0d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VM8CreateVMENS_12JSEngineTypeE",
+    "demangled": "AmazingEngine::VM::CreateVM(AmazingEngine::JSEngineType)",
+    "value": "0x1a46c",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform10GetRuntimeEm",
+    "demangled": "AmazingEngine::Platform::GetRuntime(unsigned long)",
+    "value": "0x154a0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VMD2Ev",
+    "demangled": "AmazingEngine::VM::{base dtor}()",
+    "value": "0xd308",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule24checkifPathAccessAllowedERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+    "demangled": "AmazingEngine::FileSystemModule::checkifPathAccessAllowed(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x1ad88",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context19AnalyzeErrorMessageERKN4Napi5ErrorE",
+    "demangled": "AmazingEngine::Context::AnalyzeErrorMessage(Napi::Error const&)",
+    "value": "0x1047c",
+    "size": 424,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7BEFTaskC1Ev",
+    "demangled": "AmazingEngine::BEFTask::{ctor}()",
+    "value": "0xe8e4",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7RuntimeC2ENS_11RuntimeModeE",
+    "demangled": "AmazingEngine::Runtime::{base ctor}(AmazingEngine::RuntimeMode)",
+    "value": "0x18fd8",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine7BEFTaskE",
+    "demangled": "vtable for AmazingEngine::BEFTask",
+    "value": "0x3a300",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSN13AmazingEngine16FileSystemModule5StatsE",
+    "demangled": "typeinfo name for AmazingEngine::FileSystemModule::Stats",
+    "value": "0x28d1d",
+    "size": 42,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule5StatsC1ERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::Stats::{ctor}(Napi::CallbackInfo const&)",
+    "value": "0x1d024",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule8statSyncERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::statSync(Napi::CallbackInfo const&)",
+    "value": "0x1c5ec",
+    "size": 488,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context17EvaluateCodeCacheEN4Napi3EnvEPKhiPP12napi_value__",
+    "demangled": "AmazingEngine::Context::EvaluateCodeCache(Napi::Env, unsigned char const*, int, napi_value__**)",
+    "value": "0x10ae0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule9TimerTaskC2EOS1_",
+    "demangled": "AmazingEngine::TimerModule::TimerTask::{base ctor}(AmazingEngine::TimerModule::TimerTask&&)",
+    "value": "0x23f0c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine8PlatformD1Ev",
+    "demangled": "AmazingEngine::Platform::{dtor}()",
+    "value": "0x14a48",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule4InitEN4Napi3EnvE",
+    "demangled": "AmazingEngine::TimerModule::Init(Napi::Env)",
+    "value": "0x2353c",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor4initEPNS_6EngineE",
+    "demangled": "AmazingEngine::ContextExecutor::init(AmazingEngine::Engine*)",
+    "value": "0x116a8",
+    "size": 568,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime21SetEnableMultiContextEb",
+    "demangled": "AmazingEngine::Runtime::SetEnableMultiContext(bool)",
+    "value": "0x1959c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule12ClearTimeoutERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::TimerModule::ClearTimeout(Napi::CallbackInfo const&)",
+    "value": "0x23204",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner10IsJsThreadEv",
+    "demangled": "AmazingEngine::BEFBaseRunner::IsJsThread()",
+    "value": "0xd30c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner23PauseThreadForInspectorEv",
+    "demangled": "AmazingEngine::BEFBaseRunner::PauseThreadForInspector()",
+    "value": "0xd31c",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule13ClearIntervalERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::TimerModule::ClearInterval(Napi::CallbackInfo const&)",
+    "value": "0x23388",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule9TimerTaskD2Ev",
+    "demangled": "AmazingEngine::TimerModule::TimerTask::{base dtor}()",
+    "value": "0x11a14",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VM5EnterEv",
+    "demangled": "AmazingEngine::VM::Enter()",
+    "value": "0xd308",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule4InitEN4Napi3EnvE",
+    "demangled": "AmazingEngine::FileSystemModule::Init(Napi::Env)",
+    "value": "0x1ce00",
+    "size": 548,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context18GenScriptCodeCacheEN4Napi3EnvEPKcPPKhPi",
+    "demangled": "AmazingEngine::Context::GenScriptCodeCache(Napi::Env, char const*, unsigned char const**, int*)",
+    "value": "0x10ae0",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform14InsertPlatformENSt6__ndk110shared_ptrINS_16PlatformInternalEEE",
+    "demangled": "AmazingEngine::Platform::InsertPlatform(std::__ndk1::shared_ptr<AmazingEngine::PlatformInternal>)",
+    "value": "0x15aa4",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor13_ExecuteBlockERNS0_13ExecuteBundleEb",
+    "demangled": "AmazingEngine::ContextExecutor::_ExecuteBlock(AmazingEngine::ContextExecutor::ExecuteBundle&, bool)",
+    "value": "0x11bf4",
+    "size": 704,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor9PostBlockERKNSt6__ndk18functionIFvPNS_7ContextEEEE",
+    "demangled": "AmazingEngine::ContextExecutor::PostBlock(std::__ndk1::function<void (AmazingEngine::Context*)> const&)",
+    "value": "0x11f9c",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModule19makeRequireFunctionEN4Napi3EnvEPKc",
+    "demangled": "AmazingEngine::RequireModule::makeRequireFunction(Napi::Env, char const*)",
+    "value": "0x21924",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModuleD1Ev",
+    "demangled": "AmazingEngine::FileSystemModule::{dtor}()",
+    "value": "0x1ad34",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8PlatformC2Ev",
+    "demangled": "AmazingEngine::Platform::{base ctor}()",
+    "value": "0x14a30",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule10accessSyncERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::accessSync(Napi::CallbackInfo const&)",
+    "value": "0x1adc8",
+    "size": 548,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModuleD1Ev",
+    "demangled": "AmazingEngine::RequireModule::{dtor}()",
+    "value": "0x21898",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSN13AmazingEngine7BEFTaskE",
+    "demangled": "typeinfo name for AmazingEngine::BEFTask",
+    "value": "0x28f6c",
+    "size": 26,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context12CallFunctionERKN4Napi8FunctionERKSt16initializer_listIP12napi_value__E",
+    "demangled": "AmazingEngine::Context::CallFunction(Napi::Function const&, std::initializer_list<napi_value__*> const&)",
+    "value": "0x10b30",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor8RunBlockERKNSt6__ndk18functionIFvPNS_7ContextEEEE",
+    "demangled": "AmazingEngine::ContextExecutor::RunBlock(std::__ndk1::function<void (AmazingEngine::Context*)> const&)",
+    "value": "0x11fe0",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner11StartRunnerEv",
+    "demangled": "AmazingEngine::BEFBaseRunner::StartRunner()",
+    "value": "0xd308",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule9rmdirSyncERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::rmdirSync(Napi::CallbackInfo const&)",
+    "value": "0x1cbe0",
+    "size": 272,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule5StatsC2ERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::Stats::{base ctor}(Napi::CallbackInfo const&)",
+    "value": "0x1d024",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModule4InitEN4Napi3EnvE",
+    "demangled": "AmazingEngine::RequireModule::Init(Napi::Env)",
+    "value": "0x21ec4",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context9RunScriptERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPKc",
+    "demangled": "AmazingEngine::Context::RunScript(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, char const*)",
+    "value": "0x10a54",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule5Stats6isFileERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::Stats::isFile(Napi::CallbackInfo const&)",
+    "value": "0x1d09c",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSN13AmazingEngine16FileSystemModuleE",
+    "demangled": "typeinfo name for AmazingEngine::FileSystemModule",
+    "value": "0x28cf9",
+    "size": 36,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7RuntimeD0Ev",
+    "demangled": "AmazingEngine::Runtime::{deleting dtor}()",
+    "value": "0x19070",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner10_TerminateEv",
+    "demangled": "AmazingEngine::BEFBaseRunner::_Terminate()",
+    "value": "0xd200",
+    "size": 264,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15CreateQuickJSVMEv",
+    "demangled": "AmazingEngine::CreateQuickJSVM()",
+    "value": "0x24638",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7BEFTaskC2ENSt6__ndk18functionIFvvEEE",
+    "demangled": "AmazingEngine::BEFTask::{base ctor}(std::__ndk1::function<void ()>)",
+    "value": "0xe7a4",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor13ExecuteBundleC2ERKS1_",
+    "demangled": "AmazingEngine::ContextExecutor::ExecuteBundle::{base ctor}(AmazingEngine::ContextExecutor::ExecuteBundle const&)",
+    "value": "0x13b04",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine7RuntimeD2Ev",
+    "demangled": "AmazingEngine::Runtime::{base dtor}()",
+    "value": "0x19024",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModuleC1EN4Napi3EnvENS1_6ObjectE",
+    "demangled": "AmazingEngine::RequireModule::{ctor}(Napi::Env, Napi::Object)",
+    "value": "0x21618",
+    "size": 640,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModule6getKeyEv",
+    "demangled": "AmazingEngine::RequireModule::getKey()",
+    "value": "0x21d1c",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7ContextD0Ev",
+    "demangled": "AmazingEngine::Context::{deleting dtor}()",
+    "value": "0xeccc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine2VME",
+    "demangled": "vtable for AmazingEngine::VM",
+    "value": "0x3ac58",
+    "size": 64,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x3c0d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutorD1Ev",
+    "demangled": "AmazingEngine::ContextExecutor::{dtor}()",
+    "value": "0x1118c",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule5StatsD1Ev",
+    "demangled": "AmazingEngine::FileSystemModule::Stats::{dtor}()",
+    "value": "0x1d054",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16PlatformInternal13_AddStageTaskENSt6__ndk110shared_ptrINS_7RuntimeEEERKNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS2_INS_7BEFTaskEEE",
+    "demangled": "AmazingEngine::PlatformInternal::_AddStageTask(std::__ndk1::shared_ptr<AmazingEngine::Runtime>, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<AmazingEngine::BEFTask>)",
+    "value": "0x14a04",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x3c170",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context17CallFrameworkFuncERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKN4Napi5ArrayE",
+    "demangled": "AmazingEngine::Context::CallFrameworkFunc(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, Napi::Array const&)",
+    "value": "0x10d48",
+    "size": 308,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7ContextD2Ev",
+    "demangled": "AmazingEngine::Context::{base dtor}()",
+    "value": "0x106f0",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunner9_PumpLoopEb",
+    "demangled": "AmazingEngine::BEFBaseRunner::_PumpLoop(bool)",
+    "value": "0xcb34",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor10PostScriptERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_RKNS1_8functionIFvN4Napi3EnvENSB_5ValueEEEE",
+    "demangled": "AmazingEngine::ContextExecutor::PostScript(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::function<void (Napi::Env, Napi::Value)> const&)",
+    "value": "0x11b00",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule6getKeyEv",
+    "demangled": "AmazingEngine::FileSystemModule::getKey()",
+    "value": "0x1ac8c",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule8PumpLoopEN4Napi3EnvE",
+    "demangled": "AmazingEngine::TimerModule::PumpLoop(Napi::Env)",
+    "value": "0x22e44",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context9SendEventERKN4Napi6ObjectE",
+    "demangled": "AmazingEngine::Context::SendEvent(Napi::Object const&)",
+    "value": "0x10c30",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VM7VMScopeC2EPS0_",
+    "demangled": "AmazingEngine::VM::VMScope::{base ctor}(AmazingEngine::VM*)",
+    "value": "0x126f4",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule10SetTimeoutERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::TimerModule::SetTimeout(Napi::CallbackInfo const&)",
+    "value": "0x22eb4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context9RunScriptEPKcS2_",
+    "demangled": "AmazingEngine::Context::RunScript(char const*, char const*)",
+    "value": "0x10764",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule8readFileERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::readFile(Napi::CallbackInfo const&)",
+    "value": "0x1bb98",
+    "size": 560,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Runtime30ClearNonGlobalContextExecutorsEv",
+    "demangled": "AmazingEngine::Runtime::ClearNonGlobalContextExecutors()",
+    "value": "0x1949c",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN13AmazingEngine16FileSystemModuleE",
+    "demangled": "vtable for AmazingEngine::FileSystemModule",
+    "value": "0x3acd0",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context4initENS_10CtxHandlerE",
+    "demangled": "AmazingEngine::Context::init(AmazingEngine::CtxHandler)",
+    "value": "0x10688",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform13InsertRuntimeENSt6__ndk110shared_ptrINS_7RuntimeEEE",
+    "demangled": "AmazingEngine::Platform::InsertRuntime(std::__ndk1::shared_ptr<AmazingEngine::Runtime>)",
+    "value": "0x154a4",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine8Platform13CreateRuntimeENS_12JSEngineTypeENS_11RuntimeModeENS_14TaskRunnerModeERKNSt6__ndk112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEERmb",
+    "demangled": "AmazingEngine::Platform::CreateRuntime(AmazingEngine::JSEngineType, AmazingEngine::RuntimeMode, AmazingEngine::TaskRunnerMode, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned long&, bool)",
+    "value": "0x14fcc",
+    "size": 996,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13BEFBaseRunnerC2Ev",
+    "demangled": "AmazingEngine::BEFBaseRunner::{base ctor}()",
+    "value": "0xcaf4",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutorC2Ev",
+    "demangled": "AmazingEngine::ContextExecutor::{base ctor}()",
+    "value": "0x11164",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModuleD0Ev",
+    "demangled": "AmazingEngine::TimerModule::{deleting dtor}()",
+    "value": "0x22e28",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine16FileSystemModule9mkdirSyncERKN4Napi12CallbackInfoE",
+    "demangled": "AmazingEngine::FileSystemModule::mkdirSync(Napi::CallbackInfo const&)",
+    "value": "0x1ca24",
+    "size": 444,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine7Context7isValidEv",
+    "demangled": "AmazingEngine::Context::isValid()",
+    "value": "0x10750",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine13RequireModuleC2EN4Napi3EnvENS1_6ObjectE",
+    "demangled": "AmazingEngine::RequireModule::{base ctor}(Napi::Env, Napi::Object)",
+    "value": "0x21618",
+    "size": 640,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VMD1Ev",
+    "demangled": "AmazingEngine::VM::{dtor}()",
+    "value": "0xd308",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine11TimerModule20getInternalRunnerKeyEv",
+    "demangled": "AmazingEngine::TimerModule::getInternalRunnerKey()",
+    "value": "0x22c94",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN13AmazingEngine15ContextExecutor9GetWorkerEv",
+    "demangled": "AmazingEngine::ContextExecutor::GetWorker()",
+    "value": "0x12668",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13AmazingEngine2VM7getLockEv",
+    "demangled": "AmazingEngine::VM::getLock()",
+    "value": "0x1a550",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  }
+]

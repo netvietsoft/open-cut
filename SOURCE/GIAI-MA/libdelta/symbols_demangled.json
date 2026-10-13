@@ -1,0 +1,570 @@
+[
+  {
+    "name": "__bss_start__",
+    "demangled": "__bss_start__",
+    "value": "0x8000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_bss_end__",
+    "demangled": "_bss_end__",
+    "value": "0x8008",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x8000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_end__",
+    "demangled": "__bss_end__",
+    "value": "0x8008",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x8008",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__end__",
+    "demangled": "__end__",
+    "value": "0x8008",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "putchar",
+    "demangled": "putchar",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x8000",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "printf",
+    "demangled": "printf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__memcpy_chk",
+    "demangled": "__memcpy_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "EVP_DecryptFinal_ex",
+    "demangled": "EVP_DecryptFinal_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ECDSA_sign",
+    "demangled": "ECDSA_sign",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_set_public_key",
+    "demangled": "EC_KEY_set_public_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HKDF",
+    "demangled": "HKDF",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_bn2bin_padded",
+    "demangled": "BN_bn2bin_padded",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_mul",
+    "demangled": "EC_POINT_mul",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_get0_public_key",
+    "demangled": "EC_KEY_get0_public_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_bin2bn",
+    "demangled": "BN_bin2bn",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RAND_bytes",
+    "demangled": "RAND_bytes",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_get0_private_key",
+    "demangled": "EC_KEY_get0_private_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_oct2point",
+    "demangled": "EC_POINT_oct2point",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SHA256_Init",
+    "demangled": "SHA256_Init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "BN_free",
+    "demangled": "BN_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_generate_key",
+    "demangled": "EC_KEY_generate_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_CIPHER_CTX_free",
+    "demangled": "EVP_CIPHER_CTX_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_set_private_key",
+    "demangled": "EC_KEY_set_private_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_GROUP_new_by_curve_name",
+    "demangled": "EC_GROUP_new_by_curve_name",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_EncryptUpdate",
+    "demangled": "EVP_EncryptUpdate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_get0_group",
+    "demangled": "EC_KEY_get0_group",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DecryptInit_ex",
+    "demangled": "EVP_DecryptInit_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_EncryptFinal_ex",
+    "demangled": "EVP_EncryptFinal_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_EncryptInit_ex",
+    "demangled": "EVP_EncryptInit_ex",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_point2oct",
+    "demangled": "EC_POINT_point2oct",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_CIPHER_CTX_ctrl",
+    "demangled": "EVP_CIPHER_CTX_ctrl",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_aes_256_gcm",
+    "demangled": "EVP_aes_256_gcm",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SHA256_Final",
+    "demangled": "SHA256_Final",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_CIPHER_CTX_new",
+    "demangled": "EVP_CIPHER_CTX_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_assert",
+    "demangled": "__android_log_assert",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_free",
+    "demangled": "EC_KEY_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SHA256_Update",
+    "demangled": "SHA256_Update",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_DecryptUpdate",
+    "demangled": "EVP_DecryptUpdate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ECDSA_verify",
+    "demangled": "ECDSA_verify",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_set_conv_form",
+    "demangled": "EC_KEY_set_conv_form",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EVP_sha256",
+    "demangled": "EVP_sha256",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_free",
+    "demangled": "EC_POINT_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_POINT_new",
+    "demangled": "EC_POINT_new",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ECDH_compute_key",
+    "demangled": "ECDH_compute_key",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "EC_KEY_new_by_curve_name",
+    "demangled": "EC_KEY_new_by_curve_name",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_initPubKey",
+    "demangled": "Java_net_bytedance_zdplib_Delta_initPubKey",
+    "value": "0x1fb0",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_getPublicKey",
+    "demangled": "Java_net_bytedance_zdplib_Delta_getPublicKey",
+    "value": "0x2438",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_DeltaSignerVerifier_generatePrivateKey",
+    "demangled": "Java_net_bytedance_zdplib_DeltaSignerVerifier_generatePrivateKey",
+    "value": "0x2b84",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_encrypt",
+    "demangled": "Java_net_bytedance_zdplib_Delta_encrypt",
+    "value": "0x1c98",
+    "size": 708,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_DeltaSignerVerifier_getPublicKey",
+    "demangled": "Java_net_bytedance_zdplib_DeltaSignerVerifier_getPublicKey",
+    "value": "0x2918",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_getDecryptedLen",
+    "demangled": "Java_net_bytedance_zdplib_Delta_getDecryptedLen",
+    "value": "0x2430",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_DeltaSignerVerifier_verify",
+    "demangled": "Java_net_bytedance_zdplib_DeltaSignerVerifier_verify",
+    "value": "0x2b34",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_DeltaSignerVerifier_getPublicKeyUncompressed",
+    "demangled": "Java_net_bytedance_zdplib_DeltaSignerVerifier_getPublicKeyUncompressed",
+    "value": "0x2be8",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_DeltaSignerVerifier_free",
+    "demangled": "Java_net_bytedance_zdplib_DeltaSignerVerifier_free",
+    "value": "0x2b38",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_initPrivateKey",
+    "demangled": "Java_net_bytedance_zdplib_Delta_initPrivateKey",
+    "value": "0x208c",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_generateAesKey",
+    "demangled": "Java_net_bytedance_zdplib_Delta_generateAesKey",
+    "value": "0x1b3c",
+    "size": 348,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_generatePrivateKey",
+    "demangled": "Java_net_bytedance_zdplib_Delta_generatePrivateKey",
+    "value": "0x2118",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_DeltaSignerVerifier_sign",
+    "demangled": "Java_net_bytedance_zdplib_DeltaSignerVerifier_sign",
+    "value": "0x2a3c",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_getEncryptedLen",
+    "demangled": "Java_net_bytedance_zdplib_Delta_getEncryptedLen",
+    "value": "0x1f5c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_free",
+    "demangled": "Java_net_bytedance_zdplib_Delta_free",
+    "value": "0x1f64",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_decrypt",
+    "demangled": "Java_net_bytedance_zdplib_Delta_decrypt",
+    "value": "0x217c",
+    "size": 692,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_sign",
+    "demangled": "Java_net_bytedance_zdplib_Delta_sign",
+    "value": "0x255c",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_Delta_verify",
+    "demangled": "Java_net_bytedance_zdplib_Delta_verify",
+    "value": "0x2654",
+    "size": 568,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_net_bytedance_zdplib_DeltaSignerVerifier_initPrivateKey",
+    "demangled": "Java_net_bytedance_zdplib_DeltaSignerVerifier_initPrivateKey",
+    "value": "0x288c",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

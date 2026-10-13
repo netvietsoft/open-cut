@@ -1,0 +1,3978 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17promiseIvE10get_futureEv",
+    "demangled": "std::__ndk1::promise<void>::get_future()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16futureIvED1Ev",
+    "demangled": "std::__ndk1::future<void>::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutex4lockEv",
+    "demangled": "std::__ndk1::recursive_mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17promiseIvEC1Ev",
+    "demangled": "std::__ndk1::promise<void>::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17promiseIvED1Ev",
+    "demangled": "std::__ndk1::promise<void>::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17promiseIvE9set_valueEv",
+    "demangled": "std::__ndk1::promise<void>::set_value()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutex6unlockEv",
+    "demangled": "std::__ndk1::recursive_mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk117__assoc_sub_state4waitEv",
+    "demangled": "std::__ndk1::__assoc_sub_state::wait()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_attr_init",
+    "demangled": "pthread_attr_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_attr_setstacksize",
+    "demangled": "pthread_attr_setstacksize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_create",
+    "demangled": "pthread_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setname_np",
+    "demangled": "pthread_setname_np",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_attr_destroy",
+    "demangled": "pthread_attr_destroy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex4lockEv",
+    "demangled": "std::__ndk1::mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable4waitERNS_11unique_lockINS_5mutexEEE",
+    "demangled": "std::__ndk1::condition_variable::wait(std::__ndk1::unique_lock<std::__ndk1::mutex>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex6unlockEv",
+    "demangled": "std::__ndk1::mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variableD1Ev",
+    "demangled": "std::__ndk1::condition_variable::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutexD1Ev",
+    "demangled": "std::__ndk1::mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variable10notify_oneEv",
+    "demangled": "std::__ndk1::condition_variable::notify_one()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_join",
+    "demangled": "pthread_join",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutexC1Ev",
+    "demangled": "std::__ndk1::recursive_mutex::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115recursive_mutexD1Ev",
+    "demangled": "std::__ndk1::recursive_mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv121__vmi_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__vmi_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv117__class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__si_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk119__shared_weak_countE",
+    "demangled": "typeinfo for std::__ndk1::__shared_weak_count",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsGCMode",
+    "demangled": "LEPUS_IsGCMode",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SetGlobalWeak",
+    "demangled": "SetGlobalWeak",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetRuntime",
+    "demangled": "LEPUS_GetRuntime",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ClearGlobalWeak",
+    "demangled": "ClearGlobalWeak",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_DefinePropertyValue",
+    "demangled": "LEPUS_DefinePropertyValue",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN11HandleScopeC1EP12LEPUSContextPv10HandleType",
+    "demangled": "HandleScope::{ctor}(LEPUSContext*, void*, HandleType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetOwnPropertyNames",
+    "demangled": "LEPUS_GetOwnPropertyNames",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetException",
+    "demangled": "LEPUS_GetException",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_AtomToValue",
+    "demangled": "LEPUS_AtomToValue",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN11HandleScope10PushHandleEPv10HandleType",
+    "demangled": "HandleScope::PushHandle(void*, HandleType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewArrayWithValue",
+    "demangled": "LEPUS_NewArrayWithValue",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN11HandleScopeD1Ev",
+    "demangled": "HandleScope::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsError",
+    "demangled": "LEPUS_IsError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetPropertyStr",
+    "demangled": "LEPUS_GetPropertyStr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "InitNapiScope",
+    "demangled": "InitNapiScope",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "FreeNapiScope",
+    "demangled": "FreeNapiScope",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "DisposeGlobal",
+    "demangled": "DisposeGlobal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_FreeValue",
+    "demangled": "LEPUS_FreeValue",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "GlobalizeReference",
+    "demangled": "GlobalizeReference",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "CheckObjectCtx",
+    "demangled": "CheckObjectCtx",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetPropertyInternal",
+    "demangled": "LEPUS_GetPropertyInternal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ThrowInternalError",
+    "demangled": "LEPUS_ThrowInternalError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewObjectClass",
+    "demangled": "LEPUS_NewObjectClass",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SetOpaque",
+    "demangled": "LEPUS_SetOpaque",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsRegisteredClass",
+    "demangled": "LEPUS_IsRegisteredClass",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewClass",
+    "demangled": "LEPUS_NewClass",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk111__call_onceERVmPvPFvS2_E",
+    "demangled": "std::__ndk1::__call_once(unsigned long volatile&, void*, void (*)(void*))",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewClassID",
+    "demangled": "LEPUS_NewClassID",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetOpaque",
+    "demangled": "LEPUS_GetOpaque",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "GetNapiScope",
+    "demangled": "GetNapiScope",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToCStringLen2",
+    "demangled": "LEPUS_ToCStringLen2",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_FreeCString",
+    "demangled": "LEPUS_FreeCString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetGlobalObject",
+    "demangled": "LEPUS_GetGlobalObject",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewObject",
+    "demangled": "LEPUS_NewObject",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewArray",
+    "demangled": "LEPUS_NewArray",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewInt64",
+    "demangled": "LEPUS_NewInt64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SetPropertyInternal",
+    "demangled": "LEPUS_SetPropertyInternal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewString",
+    "demangled": "LEPUS_NewString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewStringLen",
+    "demangled": "LEPUS_NewStringLen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewWString",
+    "demangled": "LEPUS_NewWString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "SetNapiScope",
+    "demangled": "SetNapiScope",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewCFunctionData",
+    "demangled": "LEPUS_NewCFunctionData",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_Throw",
+    "demangled": "LEPUS_Throw",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewError",
+    "demangled": "LEPUS_NewError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsFunction",
+    "demangled": "LEPUS_IsFunction",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToFloat64",
+    "demangled": "LEPUS_ToFloat64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToInt32",
+    "demangled": "LEPUS_ToInt32",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToInt64",
+    "demangled": "LEPUS_ToInt64",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToBool",
+    "demangled": "LEPUS_ToBool",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToWString",
+    "demangled": "LEPUS_ToWString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetStringLength",
+    "demangled": "LEPUS_GetStringLength",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetStringChars",
+    "demangled": "LEPUS_GetStringChars",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ToString",
+    "demangled": "LEPUS_ToString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetPrototype",
+    "demangled": "LEPUS_GetPrototype",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_FreeAtom",
+    "demangled": "LEPUS_FreeAtom",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "lepus_free",
+    "demangled": "lepus_free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ValueToAtom",
+    "demangled": "LEPUS_ValueToAtom",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_HasProperty",
+    "demangled": "LEPUS_HasProperty",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_DeleteProperty",
+    "demangled": "LEPUS_DeleteProperty",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetOwnProperty",
+    "demangled": "LEPUS_GetOwnProperty",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewAtom",
+    "demangled": "LEPUS_NewAtom",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SetPropertyUint32",
+    "demangled": "LEPUS_SetPropertyUint32",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetPropertyUint32",
+    "demangled": "LEPUS_GetPropertyUint32",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewAtomUInt32",
+    "demangled": "LEPUS_NewAtomUInt32",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_DefinePropertyGetSet",
+    "demangled": "LEPUS_DefinePropertyGetSet",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsArray",
+    "demangled": "LEPUS_IsArray",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_StrictEq",
+    "demangled": "LEPUS_StrictEq",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SameValue",
+    "demangled": "LEPUS_SameValue",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_Call",
+    "demangled": "LEPUS_Call",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_ExecutePendingJob",
+    "demangled": "LEPUS_ExecutePendingJob",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_CallConstructor",
+    "demangled": "LEPUS_CallConstructor",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsInstanceOf",
+    "demangled": "LEPUS_IsInstanceOf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewObjectProto",
+    "demangled": "LEPUS_NewObjectProto",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6primjs7general7logging17GetMinAllLogLevelEv",
+    "demangled": "primjs::general::logging::GetMinAllLogLevel()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6primjs7general7logging10LogMessageC1EPKcii",
+    "demangled": "primjs::general::logging::LogMessage::{ctor}(char const*, int, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6primjs7general7logging10LogMessage6streamEv",
+    "demangled": "primjs::general::logging::LogMessage::stream()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN6primjs7general7logging10LogMessageD1Ev",
+    "demangled": "primjs::general::logging::LogMessage::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_SetPrototype",
+    "demangled": "LEPUS_SetPrototype",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewCFunction2",
+    "demangled": "LEPUS_NewCFunction2",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk18ios_base6getlocEv",
+    "demangled": "std::__ndk1::ios_base::getloc const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeD1Ev",
+    "demangled": "std::__ndk1::locale::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9use_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::use_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base5clearEj",
+    "demangled": "std::__ndk1::ios_base::clear(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt18uncaught_exceptionv",
+    "demangled": "std::uncaught_exception()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewObjectProtoClass",
+    "demangled": "LEPUS_NewObjectProtoClass",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_MoveUnhandledRejectionToException",
+    "demangled": "LEPUS_MoveUnhandledRejectionToException",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetClassID",
+    "demangled": "LEPUS_GetClassID",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewArrayBuffer",
+    "demangled": "LEPUS_NewArrayBuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_GetArrayBuffer",
+    "demangled": "LEPUS_GetArrayBuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_NewTypedArrayWithBuffer",
+    "demangled": "LEPUS_NewTypedArrayWithBuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_Eval",
+    "demangled": "LEPUS_Eval",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strlen_chk",
+    "demangled": "__strlen_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Z24NapiAdjustExternalMemoryP12LEPUSRuntimel",
+    "demangled": "NapiAdjustExternalMemory(LEPUSRuntime*, long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "lepus_object_getOwnPropertyDescriptor",
+    "demangled": "lepus_object_getOwnPropertyDescriptor",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_EvalBinary",
+    "demangled": "LEPUS_EvalBinary",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_EvalFunction",
+    "demangled": "LEPUS_EvalFunction",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_WriteObject",
+    "demangled": "LEPUS_WriteObject",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "LEPUS_IsGCModeRT",
+    "demangled": "LEPUS_IsGCModeRT",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HEAP_TAG_INNER",
+    "demangled": "HEAP_TAG_INNER",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "HEAP_TAG_OUTER",
+    "demangled": "HEAP_TAG_OUTER",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15ctypeIcE2idE",
+    "demangled": "std::__ndk1::ctype<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE",
+    "demangled": "std::__ndk1::num_put<char, std::__ndk1::ostreambuf_iterator<char, std::__ndk1::char_traits<char>>>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv119__pointer_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__pointer_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__function_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__function_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcmp",
+    "demangled": "strcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_pure_virtual",
+    "demangled": "__cxa_pure_virtual",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEi",
+    "demangled": "std::__ndk1::to_string(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIv",
+    "demangled": "typeinfo for void",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex8try_lockEv",
+    "demangled": "std::__ndk1::mutex::try_lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fopen",
+    "demangled": "fopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fclose",
+    "demangled": "fclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fgetc",
+    "demangled": "fgetc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ungetc",
+    "demangled": "ungetc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fwrite",
+    "demangled": "fwrite",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fread",
+    "demangled": "fread",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android19AttachCurrentThreadEv",
+    "demangled": "vmsdk::general::android::AttachCurrentThread()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android8GetClassEP7_JNIEnvPKc",
+    "demangled": "vmsdk::general::android::GetClass(_JNIEnv*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android7JavaRefIP8_jobjectE15ReleaseLocalRefEP7_JNIEnv",
+    "demangled": "vmsdk::general::android::JavaRef<_jobject*>::ReleaseLocalRef(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android7JavaRefIP8_jobjectE16ResetNewLocalRefEP7_JNIEnvS4_",
+    "demangled": "vmsdk::general::android::JavaRef<_jobject*>::ResetNewLocalRef(_JNIEnv*, _jobject*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android7JavaRefIP8_jobjectE17ResetNewGlobalRefEP7_JNIEnvS4_",
+    "demangled": "vmsdk::general::android::JavaRef<_jobject*>::ResetNewGlobalRef(_JNIEnv*, _jobject*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android7JavaRefIP8_jobjectE16ReleaseGlobalRefEP7_JNIEnv",
+    "demangled": "vmsdk::general::android::JavaRef<_jobject*>::ReleaseGlobalRef(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android7JavaRefIP8_jobjectE21ResetNewWeakGlobalRefEP7_JNIEnvS4_",
+    "demangled": "vmsdk::general::android::JavaRef<_jobject*>::ResetNewWeakGlobalRef(_JNIEnv*, _jobject*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android7JavaRefIP8_jobjectE20ReleaseWeakGlobalRefEP7_JNIEnv",
+    "demangled": "vmsdk::general::android::JavaRef<_jobject*>::ReleaseWeakGlobalRef(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android9GetMethodEP7_JNIEnvP7_jclassNS1_10MethodTypeEPKcS8_Pl",
+    "demangled": "vmsdk::general::android::GetMethod(_JNIEnv*, _jclass*, vmsdk::general::android::MethodType, char const*, char const*, long*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android14CheckExceptionEP7_JNIEnv",
+    "demangled": "vmsdk::general::android::CheckException(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android7JavaRefIP8_jobjectEC2EP7_JNIEnvS4_",
+    "demangled": "vmsdk::general::android::JavaRef<_jobject*>::{base ctor}(_JNIEnv*, _jobject*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__system_property_get",
+    "demangled": "__system_property_get",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atoi",
+    "demangled": "atoi",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android7JavaRefIP8_jobjectEC2Ev",
+    "demangled": "vmsdk::general::android::JavaRef<_jobject*>::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN5vmsdk7general7android7JavaRefIP8_jobjectEE",
+    "demangled": "typeinfo for vmsdk::general::android::JavaRef<_jobject*>",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN5vmsdk7general7android7JavaRefIP8_jobjectEE",
+    "demangled": "vtable for vmsdk::general::android::JavaRef<_jobject*>",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17codecvtIDsc9mbstate_tED2Ev",
+    "demangled": "std::__ndk1::codecvt<char16_t, char, mbstate_t>::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16locale5facet16__on_zero_sharedEv",
+    "demangled": "std::__ndk1::locale::facet::__on_zero_shared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk120__codecvt_utf8_utf16IDsE6do_outER9mbstate_tPKDsS5_RS5_PcS7_RS7_",
+    "demangled": "std::__ndk1::__codecvt_utf8_utf16<char16_t>::do_out const(mbstate_t&, char16_t const*, char16_t const*, char16_t const*&, char*, char*, char*&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk120__codecvt_utf8_utf16IDsE5do_inER9mbstate_tPKcS5_RS5_PDsS7_RS7_",
+    "demangled": "std::__ndk1::__codecvt_utf8_utf16<char16_t>::do_in const(mbstate_t&, char const*, char const*, char const*&, char16_t*, char16_t*, char16_t*&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk120__codecvt_utf8_utf16IDsE10do_unshiftER9mbstate_tPcS4_RS4_",
+    "demangled": "std::__ndk1::__codecvt_utf8_utf16<char16_t>::do_unshift const(mbstate_t&, char*, char*, char*&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk120__codecvt_utf8_utf16IDsE11do_encodingEv",
+    "demangled": "std::__ndk1::__codecvt_utf8_utf16<char16_t>::do_encoding const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk120__codecvt_utf8_utf16IDsE16do_always_noconvEv",
+    "demangled": "std::__ndk1::__codecvt_utf8_utf16<char16_t>::do_always_noconv const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk120__codecvt_utf8_utf16IDsE9do_lengthER9mbstate_tPKcS5_m",
+    "demangled": "std::__ndk1::__codecvt_utf8_utf16<char16_t>::do_length const(mbstate_t&, char const*, char const*, unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk120__codecvt_utf8_utf16IDsE13do_max_lengthEv",
+    "demangled": "std::__ndk1::__codecvt_utf8_utf16<char16_t>::do_max_length const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk120__codecvt_utf8_utf16IDsEE",
+    "demangled": "typeinfo for std::__ndk1::__codecvt_utf8_utf16<char16_t>",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android6InitVMEP7_JavaVM",
+    "demangled": "vmsdk::general::android::InitVM(_JavaVM*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6String3NewEP10napi_env__PKc",
+    "demangled": "Napi::String::New(napi_env__*, char const*)",
+    "value": "0x2935c",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object6DeleteEP12napi_value__",
+    "demangled": "Napi::Object::Delete(napi_value__*)",
+    "value": "0x2a400",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11Uint32ArrayC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Uint32Array::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2c1a0",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN4Napi11AsyncWorkerE",
+    "demangled": "typeinfo for Napi::AsyncWorker",
+    "value": "0x38590",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray8PushNullEv",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::PushNull()",
+    "value": "0x2f794",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk3icu28createPartsFromJavaOnlyArrayEP7_JNIEnvP8_jobjectRNSt6__ndk16vectorINS5_13unordered_mapINS5_12basic_stringIDsNS5_11char_traitsIDsEENS5_9allocatorIDsEEEESD_NS5_4hashISD_EENS5_8equal_toISD_EENSB_INS5_4pairIKSD_SD_EEEEEENSB_ISM_EEEE",
+    "demangled": "vmsdk::icu::createPartsFromJavaOnlyArray(_JNIEnv*, _jobject*, std::__ndk1::vector<std::__ndk1::unordered_map<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>, std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>, std::__ndk1::hash<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>, std::__ndk1::equal_to<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>> const, std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>>>, std::__ndk1::allocator<std::__ndk1::unordered_map<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>, std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>, std::__ndk1::hash<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>, std::__ndk1::equal_to<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>> const, std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>>>>>&)",
+    "value": "0x30ed8",
+    "size": 3268,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI12ToValueEmptyEv",
+    "demangled": "Napi::NAPI::ToValueEmpty()",
+    "value": "0x27604",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env4NullEv",
+    "demangled": "Napi::Env::Null const()",
+    "value": "0x27c54",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env15SetInstanceDataEmPvPFvP10napi_env__S1_S1_ES1_",
+    "demangled": "Napi::Env::SetInstanceData(unsigned long, void*, void (*)(napi_env__*, void*, void*), void*)",
+    "value": "0x28090",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env27GetAndClearPendingExceptionEv",
+    "demangled": "Napi::Env::GetAndClearPendingException()",
+    "value": "0x27d94",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi7Boolean3NewEP10napi_env__b",
+    "demangled": "Napi::Boolean::New(napi_env__*, bool)",
+    "value": "0x28fdc",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap7PushIntERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEi",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushInt(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x32980",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap13PushByteArrayERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEERN4Napi11ArrayBufferE",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushByteArray(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, Napi::ArrayBuffer&)",
+    "value": "0x32f34",
+    "size": 372,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object16DefinePropertiesERKSt16initializer_listINS_18PropertyDescriptorEE",
+    "demangled": "Napi::Object::DefineProperties(std::initializer_list<Napi::PropertyDescriptor> const&)",
+    "value": "0x2a724",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi8DataView10ByteOffsetEv",
+    "demangled": "Napi::DataView::ByteOffset const()",
+    "value": "0x2aef4",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object3SetEPKcP12napi_value__",
+    "demangled": "Napi::Object::Set(char const*, napi_value__*)",
+    "value": "0x2a3a0",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_runtime_config_uncaught_handler",
+    "demangled": "napi_runtime_config_uncaught_handler",
+    "value": "0x183a0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_js_value_to_quickjs_value",
+    "demangled": "napi_js_value_to_quickjs_value",
+    "value": "0x27468",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value12StrictEqualsERKS0_",
+    "demangled": "Napi::Value::StrictEquals const(Napi::Value const&)",
+    "value": "0x28120",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value12IsInt16ArrayEv",
+    "demangled": "Napi::Value::IsInt16Array const()",
+    "value": "0x28878",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6String3NewEP10napi_env__PKDs",
+    "demangled": "Napi::String::New(napi_env__*, char16_t const*)",
+    "value": "0x293d8",
+    "size": 528,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi10TypedArray14TypedArrayTypeEv",
+    "demangled": "Napi::TypedArray::TypedArrayType const()",
+    "value": "0x2af70",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Int16ArrayC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Int16Array::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2b6b8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi16MemoryManagement20AdjustExternalMemoryENS_3EnvEl",
+    "demangled": "Napi::MemoryManagement::AdjustExternalMemory(Napi::Env, long)",
+    "value": "0x2db08",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMapC1EP8_jobject",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::{ctor}(_jobject*)",
+    "value": "0x324e8",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_module_register_xx",
+    "demangled": "napi_module_register_xx",
+    "value": "0x27568",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Number11Uint32ValueEv",
+    "demangled": "Napi::Number::Uint32Value const()",
+    "value": "0x29198",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value4TypeEv",
+    "demangled": "Napi::Value::Type const()",
+    "value": "0x28208",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object16DefinePropertiesERKNSt6__ndk16vectorINS_18PropertyDescriptorENS1_9allocatorIS3_EEEE",
+    "demangled": "Napi::Object::DefineProperties(std::__ndk1::vector<Napi::PropertyDescriptor, std::__ndk1::allocator<Napi::PropertyDescriptor>> const&)",
+    "value": "0x2a750",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11Uint16ArrayC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Uint16Array::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2bf70",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env18IsExceptionPendingEv",
+    "demangled": "Napi::Env::IsExceptionPending const()",
+    "value": "0x27d34",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi18PropertyDescriptor8FunctionENS_3EnvENS_6ObjectENS_4NameEPFNS_5ValueERKNS_12CallbackInfoEE24napi_property_attributesPv",
+    "demangled": "Napi::PropertyDescriptor::Function(Napi::Env, Napi::Object, Napi::Name, Napi::Value (*)(Napi::CallbackInfo const&), napi_property_attributes, void*)",
+    "value": "0x2d4c8",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi20EscapableHandleScopeC2ENS_3EnvE",
+    "demangled": "Napi::EscapableHandleScope::{base ctor}(Napi::Env)",
+    "value": "0x2d7b8",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12Float64ArrayC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Float64Array::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2c600",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap10PushDoubleERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEd",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushDouble(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, double)",
+    "value": "0x32bbc",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6String9Utf8ValueEv",
+    "demangled": "Napi::String::Utf8Value const()",
+    "value": "0x296a0",
+    "size": 420,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11ArrayBuffer4DataEv",
+    "demangled": "Napi::ArrayBuffer::Data()",
+    "value": "0x2aab4",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi7Promise8Deferred6RejectEP12napi_value__",
+    "demangled": "Napi::Promise::Deferred::Reject(napi_value__*)",
+    "value": "0x2caf4",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi12CallbackInfo9NewTargetEv",
+    "demangled": "Napi::CallbackInfo::NewTarget const()",
+    "value": "0x2cfcc",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi15ScriptWrappableD0Ev",
+    "demangled": "Napi::ScriptWrappable::{deleting dtor}()",
+    "value": "0x2d6a8",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env15OutputCodeCacheEv",
+    "demangled": "Napi::Env::OutputCodeCache()",
+    "value": "0x27f40",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4Napi11AsyncWorkerE",
+    "demangled": "vtable for Napi::AsyncWorker",
+    "value": "0x38558",
+    "size": 56,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi9Int8Array3NewEP10napi_env__mNS_11ArrayBufferEm",
+    "demangled": "Napi::Int8Array::New(napi_env__*, unsigned long, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2b3b4",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android23jsObjectFromJavaOnlyMapEP7_JNIEnvP8_jobjectN4Napi3EnvE",
+    "demangled": "vmsdk::general::android::jsObjectFromJavaOnlyMap(_JNIEnv*, _jobject*, Napi::Env)",
+    "value": "0x33220",
+    "size": 376,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8IsStringEv",
+    "demangled": "Napi::Value::IsString const()",
+    "value": "0x28494",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI15DeleteReferenceEP10napi_env__P10napi_ref__",
+    "demangled": "Napi::NAPI::DeleteReference(napi_env__*, napi_ref__*)",
+    "value": "0x278d4",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI17GetReferenceValueEP10napi_env__P10napi_ref__",
+    "demangled": "Napi::NAPI::GetReferenceValue(napi_env__*, napi_ref__*)",
+    "value": "0x278fc",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Symbol3NewEP10napi_env__NS_6StringE",
+    "demangled": "Napi::Symbol::New(napi_env__*, Napi::String)",
+    "value": "0x29ee4",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi8DataViewC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::DataView::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2ae28",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11AsyncWorker5QueueEv",
+    "demangled": "Napi::AsyncWorker::Queue()",
+    "value": "0x2daa0",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi9TypeError3NewEP10napi_env__PKc",
+    "demangled": "Napi::TypeError::New(napi_env__*, char const*)",
+    "value": "0x2ce7c",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object3SetEjP12napi_value__",
+    "demangled": "Napi::Object::Set(unsigned int, napi_value__*)",
+    "value": "0x2a5f0",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env13InitCodeCacheEiRKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS1_8functionIFvbEEE",
+    "demangled": "Napi::Env::InitCodeCache(int, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::function<void (bool)>)",
+    "value": "0x27e68",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object3HasEP12napi_value__",
+    "demangled": "Napi::Object::Has const(napi_value__*)",
+    "value": "0x2a154",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12ContextScopeC2ENS_3EnvE",
+    "demangled": "Napi::ContextScope::{base ctor}(Napi::Env)",
+    "value": "0x2d748",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi20EscapableHandleScopeD2Ev",
+    "demangled": "Napi::EscapableHandleScope::{base dtor}()",
+    "value": "0x2d7f4",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env15DumpCacheStatusEPNSt6__ndk16vectorINS1_4pairINS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEiEENS7_ISA_EEEE",
+    "demangled": "Napi::Env::DumpCacheStatus(std::__ndk1::vector<std::__ndk1::pair<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, int>, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, int>>>*)",
+    "value": "0x1b26c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5Array3NewEP10napi_env__m",
+    "demangled": "Napi::Array::New(napi_env__*, unsigned long)",
+    "value": "0x2a898",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11Uint16Array3NewEP10napi_env__m",
+    "demangled": "Napi::Uint16Array::New(napi_env__*, unsigned long)",
+    "value": "0x2bd98",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env6LoaderEv",
+    "demangled": "Napi::Env::Loader const()",
+    "value": "0x27cc4",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env9RunScriptEPKcmS2_",
+    "demangled": "Napi::Env::RunScript(char const*, unsigned long, char const*)",
+    "value": "0x27fb8",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Number11DoubleValueEv",
+    "demangled": "Napi::Number::DoubleValue const()",
+    "value": "0x292ec",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi17Uint8ClampedArray3NewEP10napi_env__m",
+    "demangled": "Napi::Uint8ClampedArray::New(napi_env__*, unsigned long)",
+    "value": "0x2b940",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Symbol9WellKnownEP10napi_env__PKc",
+    "demangled": "Napi::Symbol::WellKnown(napi_env__*, char const*)",
+    "value": "0x29f50",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi10TypedArray10ByteOffsetEv",
+    "demangled": "Napi::TypedArray::ByteOffset const()",
+    "value": "0x2b0d4",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi7Promise8Deferred3NewEP10napi_env__",
+    "demangled": "Napi::Promise::Deferred::New(napi_env__*)",
+    "value": "0x2ca44",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi7Promise8Deferred7ResolveEP12napi_value__",
+    "demangled": "Napi::Promise::Deferred::Resolve(napi_value__*)",
+    "value": "0x2cabc",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android30createJavaOnlyArrayFromJsArrayEN4Napi5ArrayENS2_3EnvE",
+    "demangled": "vmsdk::general::android::createJavaOnlyArrayFromJsArray(Napi::Array, Napi::Env)",
+    "value": "0x30808",
+    "size": 1444,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android28setPropertiesFormJavaOnlyMapEP7_JNIEnvP8_jobjectN4Napi3EnvENS6_6ObjectE",
+    "demangled": "vmsdk::general::android::setPropertiesFormJavaOnlyMap(_JNIEnv*, _jobject*, Napi::Env, Napi::Object)",
+    "value": "0x33398",
+    "size": 3320,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value9IsBooleanEv",
+    "demangled": "Napi::Value::IsBoolean const()",
+    "value": "0x2838c",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object6DeleteEj",
+    "demangled": "Napi::Object::Delete(unsigned int)",
+    "value": "0x2a620",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android9JNIHelper21ConvertToJNIByteArrayEP7_JNIEnvRN4Napi11ArrayBufferE",
+    "demangled": "vmsdk::general::android::JNIHelper::ConvertToJNIByteArray(_JNIEnv*, Napi::ArrayBuffer&)",
+    "value": "0x36c74",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object3NewEP10napi_env__",
+    "demangled": "Napi::Object::New(napi_env__*)",
+    "value": "0x2a078",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12ContextScopeD1Ev",
+    "demangled": "Napi::ContextScope::{dtor}()",
+    "value": "0x2d784",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5Class3GetEP10napi_env__",
+    "demangled": "Napi::Class::Get(napi_env__*)",
+    "value": "0x2d5d4",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Int16ArrayC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Int16Array::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2b6b8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi7Promise8DeferredC1EP10napi_env__",
+    "demangled": "Napi::Promise::Deferred::{ctor}(napi_env__*)",
+    "value": "0x2ca58",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8ToNumberEv",
+    "demangled": "Napi::Value::ToNumber const()",
+    "value": "0x28e98",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11Uint32Array3NewEP10napi_env__m",
+    "demangled": "Napi::Uint32Array::New(napi_env__*, unsigned long)",
+    "value": "0x2bfc8",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12Float64Array3NewEP10napi_env__m",
+    "demangled": "Napi::Float64Array::New(napi_env__*, unsigned long)",
+    "value": "0x2c428",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android29createJavaOnlyMapFromJsObjectEN4Napi6ObjectENS2_3EnvE",
+    "demangled": "vmsdk::general::android::createJavaOnlyMapFromJsObject(Napi::Object, Napi::Env)",
+    "value": "0x34090",
+    "size": 1368,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_runtime_delete_threadsafe_function",
+    "demangled": "napi_runtime_delete_threadsafe_function",
+    "value": "0x18050",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi18PropertyDescriptor8AccessorENS_3EnvENS_6ObjectENS_4NameEPFNS_5ValueERKNS_12CallbackInfoEEPFvS7_RKS4_E24napi_property_attributesPv",
+    "demangled": "Napi::PropertyDescriptor::Accessor(Napi::Env, Napi::Object, Napi::Name, Napi::Value (*)(Napi::CallbackInfo const&), void (*)(Napi::CallbackInfo const&, Napi::Value const&), napi_property_attributes, void*)",
+    "value": "0x2d350",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11Uint16ArrayC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Uint16Array::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2bf70",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap8PushNullEPKc",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushNull(char const*)",
+    "value": "0x3275c",
+    "size": 260,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_find_module",
+    "demangled": "napi_find_module",
+    "value": "0x275a0",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object3HasEj",
+    "demangled": "Napi::Object::Has const(unsigned int)",
+    "value": "0x2a514",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object14DefinePropertyERKNS_18PropertyDescriptorE",
+    "demangled": "Napi::Object::DefineProperty(Napi::PropertyDescriptor const&)",
+    "value": "0x2a6f4",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Array6LengthEv",
+    "demangled": "Napi::Array::Length const()",
+    "value": "0x2a900",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSN4Napi11AsyncWorkerE",
+    "demangled": "typeinfo name for Napi::AsyncWorker",
+    "value": "0xe2e3",
+    "size": 21,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI14ReferenceUnRefEP10napi_env__P10napi_ref__",
+    "demangled": "Napi::NAPI::ReferenceUnRef(napi_env__*, napi_ref__*)",
+    "value": "0x279c4",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8IsObjectEv",
+    "demangled": "Napi::Value::IsObject const()",
+    "value": "0x28b60",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Symbol3NewEP10napi_env__PKc",
+    "demangled": "Napi::Symbol::New(napi_env__*, char const*)",
+    "value": "0x29dd4",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12Float32Array3NewEP10napi_env__m",
+    "demangled": "Napi::Float32Array::New(napi_env__*, unsigned long)",
+    "value": "0x2c1f8",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi18PropertyDescriptor5ValueEPKcP12napi_value__24napi_property_attributes",
+    "demangled": "Napi::PropertyDescriptor::Value(char const*, napi_value__*, napi_property_attributes)",
+    "value": "0x2d574",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap10PushStringERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEESB_",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushString(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x3256c",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x3c028",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_attach_runtime",
+    "demangled": "napi_attach_runtime",
+    "value": "0x1b48c",
+    "size": 308,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_quickjs_value_to_js_value",
+    "demangled": "napi_quickjs_value_to_js_value",
+    "value": "0x27514",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value12IsTypedArrayEv",
+    "demangled": "Napi::Value::IsTypedArray const()",
+    "value": "0x2868c",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Int16Array3NewEP10napi_env__m",
+    "demangled": "Napi::Int16Array::New(napi_env__*, unsigned long)",
+    "value": "0x2b4e0",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4Napi15ScriptWrappableE",
+    "demangled": "vtable for Napi::ScriptWrappable",
+    "value": "0x38528",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12CallbackInfoD1Ev",
+    "demangled": "Napi::CallbackInfo::{dtor}()",
+    "value": "0x2cfbc",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value6IsNullEv",
+    "demangled": "Napi::Value::IsNull const()",
+    "value": "0x28308",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value13IsArrayBufferEv",
+    "demangled": "Napi::Value::IsArrayBuffer const()",
+    "value": "0x28614",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11AsyncWorkerD0Ev",
+    "demangled": "Napi::AsyncWorker::{deleting dtor}()",
+    "value": "0x2d9d8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env15GetInstanceDataEm",
+    "demangled": "Napi::Env::GetInstanceData(unsigned long)",
+    "value": "0x28020",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value14IsFloat32ArrayEv",
+    "demangled": "Napi::Value::IsFloat32Array const()",
+    "value": "0x28a68",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value10IsFunctionEv",
+    "demangled": "Napi::Value::IsFunction const()",
+    "value": "0x28c28",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Number10Int32ValueEv",
+    "demangled": "Napi::Number::Int32Value const()",
+    "value": "0x29128",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi8Function4CallEmPKP12napi_value__",
+    "demangled": "Napi::Function::Call const(unsigned long, napi_value__* const*)",
+    "value": "0x2c8ac",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi18PropertyDescriptor8AccessorENS_3EnvENS_6ObjectEPKcPFNS_5ValueERKNS_12CallbackInfoEEPFvS8_RKS5_E24napi_property_attributesPv",
+    "demangled": "Napi::PropertyDescriptor::Accessor(Napi::Env, Napi::Object, char const*, Napi::Value (*)(Napi::CallbackInfo const&), void (*)(Napi::CallbackInfo const&, Napi::Value const&), napi_property_attributes, void*)",
+    "value": "0x2d150",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIN4Napi15ScriptWrappableE",
+    "demangled": "typeinfo for Napi::ScriptWrappable",
+    "value": "0x38548",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray9PushArrayEPS2_",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::PushArray(vmsdk::general::android::JavaOnlyArray*)",
+    "value": "0x2f6bc",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk3icu13optionsToJavaERKNSt6__ndk113unordered_mapINS1_12basic_stringIDsNS1_11char_traitsIDsEENS1_9allocatorIDsEEEENS0_6OptionENS1_4hashIS8_EENS1_8equal_toIS8_EENS6_INS1_4pairIKS8_S9_EEEEEE",
+    "demangled": "vmsdk::icu::optionsToJava(std::__ndk1::unordered_map<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>, vmsdk::icu::Option, std::__ndk1::hash<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>, std::__ndk1::equal_to<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>> const, vmsdk::icu::Option>>> const&)",
+    "value": "0x35df8",
+    "size": 640,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSFvPvE",
+    "demangled": "typeinfo name for void (void*)",
+    "value": "0xe20d",
+    "size": 6,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4Napi8DataView3NewEP10napi_env__NS_11ArrayBufferEmm",
+    "demangled": "Napi::DataView::New(napi_env__*, Napi::ArrayBuffer, unsigned long, unsigned long)",
+    "value": "0x2ac88",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray15throwIfConsumedEv",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::throwIfConsumed()",
+    "value": "0x1b26c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12Float64Array3NewEP10napi_env__mNS_11ArrayBufferEm",
+    "demangled": "Napi::Float64Array::New(napi_env__*, unsigned long, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2c524",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray5ResetEv",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::Reset()",
+    "value": "0x2f950",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray7PushMapEPNS1_11JavaOnlyMapE",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::PushMap(vmsdk::general::android::JavaOnlyMap*)",
+    "value": "0x2f728",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArrayD1Ev",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::{dtor}()",
+    "value": "0x2f1dc",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi8Function3NewEP10napi_env__PFNS_5ValueERKNS_12CallbackInfoEEPKcPv",
+    "demangled": "Napi::Function::New(napi_env__*, Napi::Value (*)(Napi::CallbackInfo const&), char const*, void*)",
+    "value": "0x2c658",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10ErrorScopeC1ENS_3EnvE",
+    "demangled": "Napi::ErrorScope::{ctor}(Napi::Env)",
+    "value": "0x2d8a4",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object24GetOwnPropertyDescriptorEP10napi_env__NS_5ValueES3_",
+    "demangled": "Napi::Object::GetOwnPropertyDescriptor(napi_env__*, Napi::Value, Napi::Value)",
+    "value": "0x2a0e0",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11Uint16Array3NewEP10napi_env__mNS_11ArrayBufferEm",
+    "demangled": "Napi::Uint16Array::New(napi_env__*, unsigned long, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2be94",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi7Promise8DeferredD1Ev",
+    "demangled": "Napi::Promise::Deferred::{dtor}()",
+    "value": "0x2ca74",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android9JNIHelper23ConvertToJSIArrayBufferEP7_JNIEnvP11_jbyteArrayN4Napi3EnvE",
+    "demangled": "vmsdk::general::android::JNIHelper::ConvertToJSIArrayBuffer(_JNIEnv*, _jbyteArray*, Napi::Env)",
+    "value": "0x36b58",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap11PushBooleanERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEb",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushBoolean(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
+    "value": "0x32860",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap9PushArrayEPKcPNS1_13JavaOnlyArrayE",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushArray(char const*, vmsdk::general::android::JavaOnlyArray*)",
+    "value": "0x32e1c",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11HandleScopeD1Ev",
+    "demangled": "Napi::HandleScope::{dtor}()",
+    "value": "0x2d714",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env9UndefinedEv",
+    "demangled": "Napi::Env::Undefined const()",
+    "value": "0x27be4",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6String3NewEP10napi_env__PKcm",
+    "demangled": "Napi::String::New(napi_env__*, char const*, unsigned long)",
+    "value": "0x295e8",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object14HasOwnPropertyEPKc",
+    "demangled": "Napi::Object::HasOwnProperty const(char const*)",
+    "value": "0x2a28c",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object3GetEP12napi_value__",
+    "demangled": "Napi::Object::Get const(napi_value__*)",
+    "value": "0x2a32c",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11Uint32Array3NewEP10napi_env__mNS_11ArrayBufferEm",
+    "demangled": "Napi::Uint32Array::New(napi_env__*, unsigned long, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2c0c4",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi18PropertyDescriptor5ValueEP12napi_value__S2_24napi_property_attributes",
+    "demangled": "Napi::PropertyDescriptor::Value(napi_value__*, napi_value__*, napi_property_attributes)",
+    "value": "0x2d594",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSN4Napi15ScriptWrappableE",
+    "demangled": "typeinfo name for Napi::ScriptWrappable",
+    "value": "0xe2ca",
+    "size": 25,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi15ScriptWrappableD1Ev",
+    "demangled": "Napi::ScriptWrappable::{dtor}()",
+    "value": "0x2d684",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value12IsInt32ArrayEv",
+    "demangled": "Napi::Value::IsInt32Array const()",
+    "value": "0x28970",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object3GetEPKc",
+    "demangled": "Napi::Object::Get const(char const*)",
+    "value": "0x2a004",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Uint8ArrayC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Uint8Array::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2bd40",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap5ResetEv",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::Reset()",
+    "value": "0x33114",
+    "size": 268,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi8Function4CallEP12napi_value__mPKS2_",
+    "demangled": "Napi::Function::Call const(napi_value__*, unsigned long, napi_value__* const*)",
+    "value": "0x2c958",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMapD1Ev",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::{dtor}()",
+    "value": "0x32524",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Number3NewEP10napi_env__d",
+    "demangled": "Napi::Number::New(napi_env__*, double)",
+    "value": "0x290c0",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi9Int8ArrayC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Int8Array::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2b48c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5Array3NewEP10napi_env__",
+    "demangled": "Napi::Array::New(napi_env__*)",
+    "value": "0x2a830",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi20EscapableHandleScope6EscapeEP12napi_value__",
+    "demangled": "Napi::EscapableHandleScope::Escape(napi_value__*)",
+    "value": "0x2d828",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env17RemoveCleanupHookEPFvPvES1_",
+    "demangled": "Napi::Env::RemoveCleanupHook(void (*)(void*), void*)",
+    "value": "0x280f0",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value6EqualsERKS0_",
+    "demangled": "Napi::Value::Equals const(Napi::Value const&)",
+    "value": "0x281a0",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value13IsUint16ArrayEv",
+    "demangled": "Napi::Value::IsUint16Array const()",
+    "value": "0x288f4",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x36ef0",
+    "size": 384,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6String10Utf16ValueEv",
+    "demangled": "Napi::String::Utf16Value const()",
+    "value": "0x299e4",
+    "size": 516,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Uint8Array3NewEP10napi_env__mNS_11ArrayBufferEm",
+    "demangled": "Napi::Uint8Array::New(napi_env__*, unsigned long, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2bc64",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12Float32ArrayC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Float32Array::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2c3d0",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray11RegisterJniEP7_JNIEnv",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::RegisterJni(_JNIEnv*)",
+    "value": "0x2ef60",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI15CreateReferenceEP10napi_env__P12napi_value__j",
+    "demangled": "Napi::NAPI::CreateReference(napi_env__*, napi_value__*, unsigned int)",
+    "value": "0x2760c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value9IsPromiseEv",
+    "demangled": "Napi::Value::IsPromise const()",
+    "value": "0x28cac",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi17Uint8ClampedArray3NewEP10napi_env__mNS_11ArrayBufferEm",
+    "demangled": "Napi::Uint8ClampedArray::New(napi_env__*, unsigned long, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2ba38",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12Float32Array3NewEP10napi_env__mNS_11ArrayBufferEm",
+    "demangled": "Napi::Float32Array::New(napi_env__*, unsigned long, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2c2f4",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5Error3NewEP10napi_env__",
+    "demangled": "Napi::Error::New(napi_env__*)",
+    "value": "0x2cc04",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap7PushMapERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPS2_",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushMap(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, vmsdk::general::android::JavaOnlyMap*)",
+    "value": "0x32ce4",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10ErrorScopeD1Ev",
+    "demangled": "Napi::ErrorScope::{dtor}()",
+    "value": "0x2d8e0",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11ArrayBuffer10ByteLengthEv",
+    "demangled": "Napi::ArrayBuffer::ByteLength()",
+    "value": "0x2ab28",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11AsyncWorkerC2ENS_3EnvE",
+    "demangled": "Napi::AsyncWorker::{base ctor}(Napi::Env)",
+    "value": "0x2d914",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArrayC1Ev",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::{ctor}()",
+    "value": "0x2f038",
+    "size": 268,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_runtime_call_threadsafe_function",
+    "demangled": "napi_runtime_call_threadsafe_function",
+    "value": "0x17364",
+    "size": 1460,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIFvPvE",
+    "demangled": "typeinfo for void (void*)",
+    "value": "0x38420",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZNK4Napi5Value8IsSymbolEv",
+    "demangled": "Napi::Value::IsSymbol const()",
+    "value": "0x28518",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8ToStringEv",
+    "demangled": "Napi::Value::ToString const()",
+    "value": "0x28f04",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object3SetEP12napi_value__S2_",
+    "demangled": "Napi::Object::Set(napi_value__*, napi_value__*)",
+    "value": "0x2a3d0",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray10PushStringERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEE",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::PushString(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x2f238",
+    "size": 580,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_setup_loader",
+    "demangled": "napi_setup_loader",
+    "value": "0x17250",
+    "size": 260,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env14RunScriptCacheEPKcmS2_",
+    "demangled": "Napi::Env::RunScriptCache(char const*, unsigned long, char const*)",
+    "value": "0x27f50",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object16GetPropertyNamesEv",
+    "demangled": "Napi::Object::GetPropertyNames const()",
+    "value": "0x2a688",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi10TypedArray11ArrayBufferEv",
+    "demangled": "Napi::TypedArray::ArrayBuffer const()",
+    "value": "0x2b23c",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12ContextScopeD2Ev",
+    "demangled": "Napi::ContextScope::{base dtor}()",
+    "value": "0x2d784",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5ClassD1Ev",
+    "demangled": "Napi::Class::{dtor}()",
+    "value": "0x2d5ac",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_detach_runtime",
+    "demangled": "napi_detach_runtime",
+    "value": "0x1b5c0",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi15ScriptWrappableC1Ev",
+    "demangled": "Napi::ScriptWrappable::{ctor}()",
+    "value": "0x2d64c",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap11RegisterJniEP7_JNIEnv",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::RegisterJni(_JNIEnv*)",
+    "value": "0x32324",
+    "size": 168,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap9PushArrayERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEPNS1_13JavaOnlyArrayE",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushArray(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, vmsdk::general::android::JavaOnlyArray*)",
+    "value": "0x32e08",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6String3NewEP10napi_env__PKDsm",
+    "demangled": "Napi::String::New(napi_env__*, char16_t const*, unsigned long)",
+    "value": "0x29644",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi9Int8Array3NewEP10napi_env__m",
+    "demangled": "Napi::Int8Array::New(napi_env__*, unsigned long)",
+    "value": "0x2b2c0",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi12CallbackInfo15IsConstructCallEv",
+    "demangled": "Napi::CallbackInfo::IsConstructCall const()",
+    "value": "0x2d070",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11AsyncWorker6CancelEv",
+    "demangled": "Napi::AsyncWorker::Cancel()",
+    "value": "0x2dad4",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap7PushIntEPKci",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushInt(char const*, int)",
+    "value": "0x32994",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_free_env",
+    "demangled": "napi_free_env",
+    "value": "0x15ecc",
+    "size": 516,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_attach_quickjs",
+    "demangled": "napi_attach_quickjs",
+    "value": "0x1c1a0",
+    "size": 1812,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTIPFvPvE",
+    "demangled": "typeinfo for void (*)(void*)",
+    "value": "0x38400",
+    "size": 32,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4Napi10Uint8Array3NewEP10napi_env__m",
+    "demangled": "Napi::Uint8Array::New(napi_env__*, unsigned long)",
+    "value": "0x2bb6c",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMapC1Ev",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::{ctor}()",
+    "value": "0x323cc",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi10TypedArray10ByteLengthEv",
+    "demangled": "Napi::TypedArray::ByteLength const()",
+    "value": "0x2b154",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x3c1d8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi8Function3NewEmPKP12napi_value__",
+    "demangled": "Napi::Function::New const(unsigned long, napi_value__* const*)",
+    "value": "0x2c9cc",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi7Promise8DeferredC2EP10napi_env__",
+    "demangled": "Napi::Promise::Deferred::{base ctor}(napi_env__*)",
+    "value": "0x2ca58",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Int16Array3NewEP10napi_env__mNS_11ArrayBufferEm",
+    "demangled": "Napi::Int16Array::New(napi_env__*, unsigned long, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2b5dc",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12CallbackInfoD2Ev",
+    "demangled": "Napi::CallbackInfo::{base dtor}()",
+    "value": "0x2cfbc",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Uint8ArrayC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Uint8Array::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2bd40",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11AsyncWorkerD1Ev",
+    "demangled": "Napi::AsyncWorker::{dtor}()",
+    "value": "0x2d9a0",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap10PushDoubleEPKcd",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushDouble(char const*, double)",
+    "value": "0x32bd0",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk3icu15optionsFromJavaEP7_JNIEnvP8_jobjectRNSt6__ndk113unordered_mapINS5_12basic_stringIDsNS5_11char_traitsIDsEENS5_9allocatorIDsEEEENS0_6OptionENS5_4hashISC_EENS5_8equal_toISC_EENSA_INS5_4pairIKSC_SD_EEEEEE",
+    "demangled": "vmsdk::icu::optionsFromJava(_JNIEnv*, _jobject*, std::__ndk1::unordered_map<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>, vmsdk::icu::Option, std::__ndk1::hash<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>, std::__ndk1::equal_to<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>>>, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char16_t, std::__ndk1::char_traits<char16_t>, std::__ndk1::allocator<char16_t>> const, vmsdk::icu::Option>>>&)",
+    "value": "0x35068",
+    "size": 2356,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_runtime_config_worker_handler",
+    "demangled": "napi_runtime_config_worker_handler",
+    "value": "0x183a8",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env31GetUnhandledRecjectionExceptionEv",
+    "demangled": "Napi::Env::GetUnhandledRecjectionException()",
+    "value": "0x27dfc",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11ArrayBuffer3NewEP10napi_env__Pvm",
+    "demangled": "Napi::ArrayBuffer::New(napi_env__*, void*, unsigned long)",
+    "value": "0x2a9dc",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Int32Array3NewEP10napi_env__mNS_11ArrayBufferEm",
+    "demangled": "Napi::Int32Array::New(napi_env__*, unsigned long, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2b80c",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value10IsExternalEv",
+    "demangled": "Napi::Value::IsExternal const()",
+    "value": "0x28d9c",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android24jsArrayFromJavaOnlyArrayEP7_JNIEnvP8_jobjectN4Napi3EnvE",
+    "demangled": "vmsdk::general::android::jsArrayFromJavaOnlyArray(_JNIEnv*, _jobject*, Napi::Env)",
+    "value": "0x2fa44",
+    "size": 2576,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_delete_runtime_configuration",
+    "demangled": "napi_delete_runtime_configuration",
+    "value": "0x1838c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_get_env_context_quickjs",
+    "demangled": "napi_get_env_context_quickjs",
+    "value": "0x2745c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object12AddFinalizerEPvPFvP10napi_env__S1_S1_ES1_",
+    "demangled": "Napi::Object::AddFinalizer(void*, void (*)(napi_env__*, void*, void*), void*)",
+    "value": "0x2a7e8",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi9Int8ArrayC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Int8Array::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2b48c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8ToObjectEv",
+    "demangled": "Napi::Value::ToObject const()",
+    "value": "0x28f70",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object3HasEPKc",
+    "demangled": "Napi::Object::Has const(char const*)",
+    "value": "0x2a1bc",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12Float32ArrayC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Float32Array::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2c3d0",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi20EscapableHandleScopeC1ENS_3EnvE",
+    "demangled": "Napi::EscapableHandleScope::{ctor}(Napi::Env)",
+    "value": "0x2d7b8",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArrayD2Ev",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::{base dtor}()",
+    "value": "0x2f1dc",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI17FromJustIsNothingEv",
+    "demangled": "Napi::NAPI::FromJustIsNothing()",
+    "value": "0x27604",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI6UnwrapEP10napi_env__P12napi_value__",
+    "demangled": "Napi::NAPI::Unwrap(napi_env__*, napi_value__*)",
+    "value": "0x27a28",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value11IsInt8ArrayEv",
+    "demangled": "Napi::Value::IsInt8Array const()",
+    "value": "0x28704",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value14IsFloat64ArrayEv",
+    "demangled": "Napi::Value::IsFloat64Array const()",
+    "value": "0x28ae4",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value9ToBooleanEv",
+    "demangled": "Napi::Value::ToBoolean const()",
+    "value": "0x28e20",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Number10Int64ValueEv",
+    "demangled": "Napi::Number::Int64Value const()",
+    "value": "0x29208",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object10InstanceOfERKNS_8FunctionE",
+    "demangled": "Napi::Object::InstanceOf const(Napi::Function const&)",
+    "value": "0x2a780",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi7Promise8DeferredD2Ev",
+    "demangled": "Napi::Promise::Deferred::{base dtor}()",
+    "value": "0x2ca74",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi3Env6GlobalEv",
+    "demangled": "Napi::Env::Global const()",
+    "value": "0x27b74",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_runtime_config_worker_stack_size",
+    "demangled": "napi_runtime_config_worker_stack_size",
+    "value": "0x183b4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Object6DeleteEPKc",
+    "demangled": "Napi::Object::Delete(char const*)",
+    "value": "0x2a468",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11ArrayBuffer3NewEP10napi_env__m",
+    "demangled": "Napi::ArrayBuffer::New(napi_env__*, unsigned long)",
+    "value": "0x2a970",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11HandleScopeD2Ev",
+    "demangled": "Napi::HandleScope::{base dtor}()",
+    "value": "0x2d714",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Int32ArrayC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Int32Array::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2b8e8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMapC2EP8_jobject",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::{base ctor}(_jobject*)",
+    "value": "0x324e8",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android9JNIHelper20ConvertToStringArrayEP7_JNIEnvP13_jobjectArrayRNSt6__ndk16vectorINS7_12basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEENSC_ISE_EEEE",
+    "demangled": "vmsdk::general::android::JNIHelper::ConvertToStringArray(_JNIEnv*, _jobjectArray*, std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>>&)",
+    "value": "0x3689c",
+    "size": 700,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi8DataView3NewEP10napi_env__NS_11ArrayBufferE",
+    "demangled": "Napi::DataView::New(napi_env__*, Napi::ArrayBuffer)",
+    "value": "0x2ab9c",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi8External3NewEP10napi_env__PvPFvS2_S3_S3_ES3_",
+    "demangled": "Napi::External::New(napi_env__*, void*, void (*)(napi_env__*, void*, void*), void*)",
+    "value": "0x2cb2c",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi15ScriptWrappableD2Ev",
+    "demangled": "Napi::ScriptWrappable::{base dtor}()",
+    "value": "0x2d684",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi17Uint8ClampedArrayC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Uint8ClampedArray::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2bb14",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi10TypedArray11ElementSizeEv",
+    "demangled": "Napi::TypedArray::ElementSize const()",
+    "value": "0x2afd0",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11HandleScopeC2ENS_3EnvE",
+    "demangled": "Napi::HandleScope::{base ctor}(Napi::Env)",
+    "value": "0x2d6d8",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11AsyncWorker14OnWorkCompleteENS_3EnvE11napi_status",
+    "demangled": "Napi::AsyncWorker::OnWorkComplete(Napi::Env, napi_status)",
+    "value": "0x2d9dc",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11Uint32ArrayC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Uint32Array::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2c1a0",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12CallbackInfoC1EP10napi_env__P20napi_callback_info__",
+    "demangled": "Napi::CallbackInfo::{ctor}(napi_env__*, napi_callback_info__*)",
+    "value": "0x2c7bc",
+    "size": 240,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android9JNIHelper26JavaLongArrayToInt64VectorEP7_JNIEnvP11_jlongArrayPNSt6__ndk16vectorIlNS7_9allocatorIlEEEE",
+    "demangled": "vmsdk::general::android::JNIHelper::JavaLongArrayToInt64Vector(_JNIEnv*, _jlongArray*, std::__ndk1::vector<long, std::__ndk1::allocator<long>>*)",
+    "value": "0x36d6c",
+    "size": 388,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12ContextScopeC1ENS_3EnvE",
+    "demangled": "Napi::ContextScope::{ctor}(Napi::Env)",
+    "value": "0x2d748",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSPFvPvE",
+    "demangled": "typeinfo name for void (*)(void*)",
+    "value": "0xe206",
+    "size": 7,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4Napi4NAPI11DefineClassEP10napi_env__PKcPFP12napi_value__S2_P20napi_callback_info__EmPK24napi_property_descriptorPvP12napi_class__",
+    "demangled": "Napi::NAPI::DefineClass(napi_env__*, char const*, napi_value__* (*)(napi_env__*, napi_callback_info__*), unsigned long, napi_property_descriptor const*, void*, napi_class__*)",
+    "value": "0x27af0",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object14HasOwnPropertyEP12napi_value__",
+    "demangled": "Napi::Object::HasOwnProperty const(napi_value__*)",
+    "value": "0x2a224",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10ErrorScopeC2ENS_3EnvE",
+    "demangled": "Napi::ErrorScope::{base ctor}(Napi::Env)",
+    "value": "0x2d8a4",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMapD2Ev",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::{base dtor}()",
+    "value": "0x32524",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap10PushStringEPKcS4_",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushString(char const*, char const*)",
+    "value": "0x32590",
+    "size": 460,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray9PushInt64El",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::PushInt64(long)",
+    "value": "0x2f57c",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value7IsArrayEv",
+    "demangled": "Napi::Value::IsArray const()",
+    "value": "0x2859c",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Object3GetEj",
+    "demangled": "Napi::Object::Get const(unsigned int)",
+    "value": "0x2a57c",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi8DataView11ArrayBufferEv",
+    "demangled": "Napi::DataView::ArrayBuffer const()",
+    "value": "0x2ae74",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Int32Array3NewEP10napi_env__m",
+    "demangled": "Napi::Int32Array::New(napi_env__*, unsigned long)",
+    "value": "0x2b710",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray13PushByteArrayERN4Napi11ArrayBufferE",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::PushByteArray(Napi::ArrayBuffer&)",
+    "value": "0x2f7f4",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi7Boolean5ValueEv",
+    "demangled": "Napi::Boolean::Value const()",
+    "value": "0x29048",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11ArrayBuffer3NewEP10napi_env__PvmPFvS2_S3_S3_ES3_",
+    "demangled": "Napi::ArrayBuffer::New(napi_env__*, void*, unsigned long, void (*)(napi_env__*, void*, void*), void*)",
+    "value": "0x2aa4c",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10RangeError3NewEP10napi_env__PKc",
+    "demangled": "Napi::RangeError::New(napi_env__*, char const*)",
+    "value": "0x2cf1c",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android9JNIHelper15ConvertToStringEP7_JNIEnvP8_jstring",
+    "demangled": "vmsdk::general::android::JNIHelper::ConvertToString(_JNIEnv*, _jstring*)",
+    "value": "0x367a4",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_runtime_config_foreground_handler",
+    "demangled": "napi_runtime_config_foreground_handler",
+    "value": "0x18398",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value11IsUndefinedEv",
+    "demangled": "Napi::Value::IsUndefined const()",
+    "value": "0x28284",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi20EscapableHandleScopeD1Ev",
+    "demangled": "Napi::EscapableHandleScope::{dtor}()",
+    "value": "0x2d7f4",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x3c028",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value8IsNumberEv",
+    "demangled": "Napi::Value::IsNumber const()",
+    "value": "0x28410",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray5ClearEv",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::Clear()",
+    "value": "0x2f8f0",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_new_env",
+    "demangled": "napi_new_env",
+    "value": "0x15e28",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_create_runtime_configuration",
+    "demangled": "napi_create_runtime_configuration",
+    "value": "0x18368",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_detach_quickjs",
+    "demangled": "napi_detach_quickjs",
+    "value": "0x27420",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI12ReferenceRefEP10napi_env__P10napi_ref__",
+    "demangled": "Napi::NAPI::ReferenceRef(napi_env__*, napi_ref__*)",
+    "value": "0x27960",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi3Env14AddCleanupHookEPFvPvES1_",
+    "demangled": "Napi::Env::AddCleanupHook(void (*)(void*), void*)",
+    "value": "0x280c0",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10ErrorScopeD2Ev",
+    "demangled": "Napi::ErrorScope::{base dtor}()",
+    "value": "0x2d8e0",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArrayC2Ev",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::{base ctor}()",
+    "value": "0x2f038",
+    "size": 268,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray15registerNativesEv",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::registerNatives()",
+    "value": "0x1b26c",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Error26ThrowAsJavaScriptExceptionEv",
+    "demangled": "Napi::Error::ThrowAsJavaScriptException const()",
+    "value": "0x2cdc8",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi4NAPI4WrapEP10napi_env__P12napi_value__PvPFvS2_S5_S5_ES5_",
+    "demangled": "Napi::NAPI::Wrap(napi_env__*, napi_value__*, void*, void (*)(napi_env__*, void*, void*), void*)",
+    "value": "0x27a8c",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi8External4DataEv",
+    "demangled": "Napi::External::Data const()",
+    "value": "0x2cb94",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray10PushDoubleEd",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::PushDouble(double)",
+    "value": "0x2f64c",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value13IsUint32ArrayEv",
+    "demangled": "Napi::Value::IsUint32Array const()",
+    "value": "0x289ec",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi10TypedArray13ElementLengthEv",
+    "demangled": "Napi::TypedArray::ElementLength const()",
+    "value": "0x2b07c",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12Float64ArrayC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Float64Array::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2c600",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi12CallbackInfoC2EP10napi_env__P20napi_callback_info__",
+    "demangled": "Napi::CallbackInfo::{base ctor}(napi_env__*, napi_callback_info__*)",
+    "value": "0x2c7bc",
+    "size": 240,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5ClassD2Ev",
+    "demangled": "Napi::Class::{base dtor}()",
+    "value": "0x2d5ac",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap9PushInt64EPKcl",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::PushInt64(char const*, long)",
+    "value": "0x32aa8",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi15ScriptWrappableC2Ev",
+    "demangled": "Napi::ScriptWrappable::{base ctor}()",
+    "value": "0x2d64c",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_attach_runtime_with_configuration",
+    "demangled": "napi_attach_runtime_with_configuration",
+    "value": "0x183bc",
+    "size": 300,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value12IsUint8ArrayEv",
+    "demangled": "Napi::Value::IsUint8Array const()",
+    "value": "0x28780",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value10IsDataViewEv",
+    "demangled": "Napi::Value::IsDataView const()",
+    "value": "0x28d24",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi8DataViewC1EP10napi_env__P12napi_value__",
+    "demangled": "Napi::DataView::{ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2ae28",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray7PushIntEi",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::PushInt(int)",
+    "value": "0x2f5e4",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi5Value19IsUint8ClampedArrayEv",
+    "demangled": "Napi::Value::IsUint8ClampedArray const()",
+    "value": "0x287fc",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi8DataView3NewEP10napi_env__NS_11ArrayBufferEm",
+    "demangled": "Napi::DataView::New(napi_env__*, Napi::ArrayBuffer, unsigned long)",
+    "value": "0x2ad2c",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi18PropertyDescriptor8FunctionENS_3EnvENS_6ObjectEPKcPFNS_5ValueERKNS_12CallbackInfoEE24napi_property_attributesPv",
+    "demangled": "Napi::PropertyDescriptor::Function(Napi::Env, Napi::Object, char const*, Napi::Value (*)(Napi::CallbackInfo const&), napi_property_attributes, void*)",
+    "value": "0x2d41c",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMapC2Ev",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::{base ctor}()",
+    "value": "0x323cc",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4Napi6Number10FloatValueEv",
+    "demangled": "Napi::Number::FloatValue const()",
+    "value": "0x29278",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android11JavaOnlyMap4SizeEv",
+    "demangled": "vmsdk::general::android::JavaOnlyMap::Size()",
+    "value": "0x330a8",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11HandleScopeC1ENS_3EnvE",
+    "demangled": "Napi::HandleScope::{ctor}(Napi::Env)",
+    "value": "0x2d6d8",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5Error3NewEP10napi_env__PKc",
+    "demangled": "Napi::Error::New(napi_env__*, char const*)",
+    "value": "0x2ccac",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "napi_runtime_get_threadsafe_function_context",
+    "demangled": "napi_runtime_get_threadsafe_function_context",
+    "value": "0x17354",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi6Symbol3NewEP10napi_env__P12napi_value__",
+    "demangled": "Napi::Symbol::New(napi_env__*, napi_value__*)",
+    "value": "0x29e7c",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi10Int32ArrayC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Int32Array::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2b8e8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi17Uint8ClampedArrayC2EP10napi_env__P12napi_value__",
+    "demangled": "Napi::Uint8ClampedArray::{base ctor}(napi_env__*, napi_value__*)",
+    "value": "0x2bb14",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi5Error6CreateEP10napi_env__PKcmPF11napi_statusS2_P12napi_value__S7_PS7_E",
+    "demangled": "Napi::Error::Create(napi_env__*, char const*, unsigned long, napi_status (*)(napi_env__*, napi_value__*, napi_value__*, napi_value__**))",
+    "value": "0x2cd4c",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4Napi11AsyncWorkerD2Ev",
+    "demangled": "Napi::AsyncWorker::{base dtor}()",
+    "value": "0x2d9a0",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5vmsdk7general7android13JavaOnlyArray11PushBooleanEb",
+    "demangled": "vmsdk::general::android::JavaOnlyArray::PushBoolean(bool)",
+    "value": "0x2f514",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

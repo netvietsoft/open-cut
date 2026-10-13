@@ -1,0 +1,3330 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__system_property_get",
+    "demangled": "__system_property_get",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atoi",
+    "demangled": "atoi",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "bytehook_hook_single",
+    "demangled": "bytehook_hook_single",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__gxx_personality_v0",
+    "demangled": "__gxx_personality_v0",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "bytehook_get_mode",
+    "demangled": "bytehook_get_mode",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_begin_catch",
+    "demangled": "__cxa_begin_catch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt9terminatev",
+    "demangled": "std::terminate()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "bytehook_pop_stack",
+    "demangled": "bytehook_pop_stack",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "usleep",
+    "demangled": "usleep",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "npth_dlopen",
+    "demangled": "npth_dlopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "npth_dlclose",
+    "demangled": "npth_dlclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "npth_dlsym_size",
+    "demangled": "npth_dlsym_size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getpagesize",
+    "demangled": "getpagesize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mprotect",
+    "demangled": "mprotect",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strerror",
+    "demangled": "strerror",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__errno",
+    "demangled": "__errno",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "close",
+    "demangled": "close",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__open_2",
+    "demangled": "__open_2",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "write",
+    "demangled": "write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strstr",
+    "demangled": "strstr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigsetjmp",
+    "demangled": "sigsetjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setspecific",
+    "demangled": "pthread_setspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_key_create",
+    "demangled": "pthread_key_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigemptyset",
+    "demangled": "sigemptyset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigaction",
+    "demangled": "sigaction",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex4lockEv",
+    "demangled": "std::__ndk1::mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_getspecific",
+    "demangled": "pthread_getspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "siglongjmp",
+    "demangled": "siglongjmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "syscall",
+    "demangled": "syscall",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getpid",
+    "demangled": "getpid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "gettid",
+    "demangled": "gettid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex6unlockEv",
+    "demangled": "std::__ndk1::mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "bytehook_get_prev_func",
+    "demangled": "bytehook_get_prev_func",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlopen",
+    "demangled": "dlopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlsym",
+    "demangled": "dlsym",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlclose",
+    "demangled": "dlclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtoull",
+    "demangled": "strtoull",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fopen",
+    "demangled": "fopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fclose",
+    "demangled": "fclose",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strlen_chk",
+    "demangled": "__strlen_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strcpy_chk",
+    "demangled": "__strcpy_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcpy",
+    "demangled": "strcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__vsprintf_chk",
+    "demangled": "__vsprintf_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fgets",
+    "demangled": "fgets",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mmap",
+    "demangled": "mmap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "munmap",
+    "demangled": "munmap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_lock",
+    "demangled": "pthread_mutex_lock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_unlock",
+    "demangled": "pthread_mutex_unlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_sym_name",
+    "demangled": "shadowhook_hook_sym_name",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_prev_func",
+    "demangled": "shadowhook_get_prev_func",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_mode",
+    "demangled": "shadowhook_get_mode",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_pop_stack",
+    "demangled": "shadowhook_pop_stack",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "npth_dlsym_symtab",
+    "demangled": "npth_dlsym_symtab",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getuid",
+    "demangled": "getuid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "bytehook_hook_all",
+    "demangled": "bytehook_hook_all",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "npth_dlsym",
+    "demangled": "npth_dlsym",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_join",
+    "demangled": "pthread_join",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sscanf",
+    "demangled": "sscanf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtoll",
+    "demangled": "strtoll",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strdup",
+    "demangled": "strdup",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sigaltstack",
+    "demangled": "sigaltstack",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_self",
+    "demangled": "pthread_self",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "npth_dlbuildid",
+    "demangled": "npth_dlbuildid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_rwlock_unlock",
+    "demangled": "pthread_rwlock_unlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_rwlock_rdlock",
+    "demangled": "pthread_rwlock_rdlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_attr_init",
+    "demangled": "pthread_attr_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_attr_setdetachstate",
+    "demangled": "pthread_attr_setdetachstate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_create",
+    "demangled": "pthread_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strchr_chk",
+    "demangled": "__strchr_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strrchr",
+    "demangled": "strrchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutexD1Ev",
+    "demangled": "std::__ndk1::mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "readlink",
+    "demangled": "readlink",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_detach",
+    "demangled": "pthread_detach",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "bytehook_init",
+    "demangled": "bytehook_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_hook_sym_addr",
+    "demangled": "shadowhook_hook_sym_addr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ioctl",
+    "demangled": "ioctl",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglGetError",
+    "demangled": "eglGetError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "calloc",
+    "demangled": "calloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_fromSurface",
+    "demangled": "ANativeWindow_fromSurface",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_getFormat",
+    "demangled": "ANativeWindow_getFormat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_setBuffersGeometry",
+    "demangled": "ANativeWindow_setBuffersGeometry",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcmp",
+    "demangled": "strcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sleep",
+    "demangled": "sleep",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcasecmp",
+    "demangled": "strcasecmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15stoulERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "demangled": "std::__ndk1::stoul(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned long*, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "mremap",
+    "demangled": "mremap",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memchr",
+    "demangled": "memchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_allocate_exception",
+    "demangled": "__cxa_allocate_exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_free_exception",
+    "demangled": "__cxa_free_exception",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt12out_of_rangeD1Ev",
+    "demangled": "std::out_of_range::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_throw",
+    "demangled": "__cxa_throw",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt11logic_errorC2EPKc",
+    "demangled": "std::logic_error::{base ctor}(char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt12length_errorD1Ev",
+    "demangled": "std::length_error::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTISt12out_of_range",
+    "demangled": "typeinfo for std::out_of_range",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVSt12out_of_range",
+    "demangled": "vtable for std::out_of_range",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTISt12length_error",
+    "demangled": "typeinfo for std::length_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVSt12length_error",
+    "demangled": "vtable for std::length_error",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "npth_dlopen_force",
+    "demangled": "npth_dlopen_force",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "bytehook_hook_partial",
+    "demangled": "bytehook_hook_partial",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16thread6detachEv",
+    "demangled": "std::__ndk1::thread::detach()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16threadD1Ev",
+    "demangled": "std::__ndk1::thread::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_get_errno",
+    "demangled": "shadowhook_get_errno",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_to_errmsg",
+    "demangled": "shadowhook_to_errmsg",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115__thread_structC1Ev",
+    "demangled": "std::__ndk1::__thread_struct::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk120__throw_system_errorEiPKc",
+    "demangled": "std::__ndk1::__throw_system_error(int, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__thread_local_dataEv",
+    "demangled": "std::__ndk1::__thread_local_data()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk115__thread_structD1Ev",
+    "demangled": "std::__ndk1::__thread_struct::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_abort",
+    "demangled": "__cxa_guard_abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dladdr",
+    "demangled": "dladdr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "npth_dlsym_symtab_size",
+    "demangled": "npth_dlsym_symtab_size",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "time",
+    "demangled": "time",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fprintf",
+    "demangled": "fprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_unhook",
+    "demangled": "shadowhook_unhook",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strchr",
+    "demangled": "strchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__si_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv117__class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fputs",
+    "demangled": "fputs",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "shadowhook_init",
+    "demangled": "shadowhook_init",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "rand",
+    "demangled": "rand",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base33__set_badbit_and_consider_rethrowEv",
+    "demangled": "std::__ndk1::ios_base::__set_badbit_and_consider_rethrow()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_end_catch",
+    "demangled": "__cxa_end_catch",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk18ios_base6getlocEv",
+    "demangled": "std::__ndk1::ios_base::getloc const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeD1Ev",
+    "demangled": "std::__ndk1::locale::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9use_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::use_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base5clearEj",
+    "demangled": "std::__ndk1::ios_base::clear(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt18uncaught_exceptionv",
+    "demangled": "std::uncaught_exception()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_baseD2Ev",
+    "demangled": "std::__ndk1::ios_base::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base4initEPv",
+    "demangled": "std::__ndk1::ios_base::init(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1Ev",
+    "demangled": "std::__ndk1::locale::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fseeko",
+    "demangled": "fseeko",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ftello",
+    "demangled": "ftello",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt8bad_castC1Ev",
+    "demangled": "std::bad_cast::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt8bad_castD1Ev",
+    "demangled": "std::bad_cast::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fflush",
+    "demangled": "fflush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fwrite",
+    "demangled": "fwrite",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fread",
+    "demangled": "fread",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9has_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::has_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1ERKS0_",
+    "demangled": "std::__ndk1::locale::{ctor}(std::__ndk1::locale const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15ctypeIcE2idE",
+    "demangled": "std::__ndk1::ctype<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv121__vmi_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__vmi_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk18ios_baseE",
+    "demangled": "typeinfo for std::__ndk1::ios_base",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17codecvtIcc9mbstate_tE2idE",
+    "demangled": "std::__ndk1::codecvt<char, char, mbstate_t>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTISt8bad_cast",
+    "demangled": "typeinfo for std::bad_cast",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "setpriority",
+    "demangled": "setpriority",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sched_setaffinity",
+    "demangled": "sched_setaffinity",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "npth_dlsym_force",
+    "demangled": "npth_dlsym_force",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getsockopt",
+    "demangled": "getsockopt",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "epoll_create1",
+    "demangled": "epoll_create1",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "epoll_ctl",
+    "demangled": "epoll_ctl",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "epoll_wait",
+    "demangled": "epoll_wait",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fcntl",
+    "demangled": "fcntl",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sendto",
+    "demangled": "sendto",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "recvfrom",
+    "demangled": "recvfrom",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "socketpair",
+    "demangled": "socketpair",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "setsockopt",
+    "demangled": "setsockopt",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_pure_virtual",
+    "demangled": "__cxa_pure_virtual",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "lseek",
+    "demangled": "lseek",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "isspace",
+    "demangled": "isspace",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_signal",
+    "demangled": "pthread_cond_signal",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_cond_wait",
+    "demangled": "pthread_cond_wait",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setname_np",
+    "demangled": "pthread_setname_np",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "regcomp",
+    "demangled": "regcomp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "regexec",
+    "demangled": "regexec",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "regfree",
+    "demangled": "regfree",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dl_iterate_phdr",
+    "demangled": "dl_iterate_phdr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "realloc",
+    "demangled": "realloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_key_delete",
+    "demangled": "pthread_key_delete",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_once",
+    "demangled": "pthread_once",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JitCodeCacheShrinker_native_1shrink",
+    "demangled": "Java_com_bytedance_sysoptimizer_JitCodeCacheShrinker_native_1shrink",
+    "value": "0x3e6e0",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_boost_1mtk_1dev_1with_1params",
+    "demangled": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_boost_1mtk_1dev_1with_1params",
+    "value": "0x5429c",
+    "size": 392,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_GetIP",
+    "demangled": "_Unwind_GetIP",
+    "value": "0x27920",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_AcodecHandler_fixAcodecMessage",
+    "demangled": "Java_com_bytedance_sysoptimizer_AcodecHandler_fixAcodecMessage",
+    "value": "0x2af6c",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1shrink_1native_1thread",
+    "demangled": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1shrink_1native_1thread",
+    "value": "0x3b340",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_boost_1dev_1with_1params",
+    "demangled": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_boost_1dev_1with_1params",
+    "value": "0x53b88",
+    "size": 616,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_FindEnclosingFunction",
+    "demangled": "_Unwind_FindEnclosingFunction",
+    "value": "0x27954",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_Find_FDE",
+    "demangled": "_Unwind_Find_FDE",
+    "value": "0x2aa9c",
+    "size": 452,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NougatJitCompileOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_NougatJitCompileOptimizer_optimize",
+    "value": "0x3237c",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_java_ReflectionUtils_changeTargetSuperClassToSpecificClassOnDalvik",
+    "demangled": "Java_com_bytedance_sysoptimizer_java_ReflectionUtils_changeTargetSuperClassToSpecificClassOnDalvik",
+    "value": "0x3511c",
+    "size": 800,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JitGetMethodHashOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_JitGetMethodHashOptimizer_optimize",
+    "value": "0x36354",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_GetLanguageSpecificData",
+    "demangled": "_Unwind_GetLanguageSpecificData",
+    "value": "0x27944",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_log_priority",
+    "demangled": "xh_log_priority",
+    "value": "0x64024",
+    "size": 4,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RELOCATION_GROUPED_BY_OFFSET_DELTA_FLAG",
+    "demangled": "RELOCATION_GROUPED_BY_OFFSET_DELTA_FLAG",
+    "value": "0x15798",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1purge",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1purge",
+    "value": "0x3c668",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1reset",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1reset",
+    "value": "0x3c8c4",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JNIEnvExceptionOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_JNIEnvExceptionOpt_nStart",
+    "value": "0x40458",
+    "size": 368,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_extend_1multi_1arena_1to_1auto",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_extend_1multi_1arena_1to_1auto",
+    "value": "0x52d10",
+    "size": 576,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x640b0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_KGetCookieOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_KGetCookieOptimizer_optimize",
+    "value": "0x32350",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_VivoPerfFrameInfoManagerImplOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_VivoPerfFrameInfoManagerImplOptimizer_optimize",
+    "value": "0x35dc4",
+    "size": 268,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JitCodeCacheShrinker_native_1shrinkJitAndZygote",
+    "demangled": "Java_com_bytedance_sysoptimizer_JitCodeCacheShrinker_native_1shrinkJitAndZygote",
+    "value": "0x3e74c",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_LogVerbosityUtil_nOpen",
+    "demangled": "Java_com_bytedance_sysoptimizer_LogVerbosityUtil_nOpen",
+    "value": "0x484d8",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_extend_1arena_1specific",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_extend_1arena_1specific",
+    "value": "0x52bd8",
+    "size": 312,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_InputAnrOpt_getInputMsgCount",
+    "demangled": "Java_com_bytedance_sysoptimizer_InputAnrOpt_getInputMsgCount",
+    "value": "0x56750",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ArtOptimizer_disableDumpOatFile",
+    "demangled": "Java_com_bytedance_sysoptimizer_ArtOptimizer_disableDumpOatFile",
+    "value": "0x2e494",
+    "size": 272,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_GetUidOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_GetUidOpt_nStart",
+    "value": "0x2e6a4",
+    "size": 500,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_DvmGlesOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_DvmGlesOptimizer_optimize",
+    "value": "0x311fc",
+    "size": 476,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1tcache_1flush",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1tcache_1flush",
+    "value": "0x3b89c",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x696e8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ZipInflateOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_ZipInflateOpt_nStart",
+    "value": "0x2d998",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x15a8e",
+    "size": 52,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_HeapGCOptimizerV2_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_HeapGCOptimizerV2_optimize",
+    "value": "0x53540",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_GetTextRelBase",
+    "demangled": "_Unwind_GetTextRelBase",
+    "value": "0x27984",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__frame_state_for",
+    "demangled": "__frame_state_for",
+    "value": "0x28db4",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__register_frame_table",
+    "demangled": "__register_frame_table",
+    "value": "0x2a948",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_GraphicsEnvOpt_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_GraphicsEnvOpt_optimize",
+    "value": "0x3dd00",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_iostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x15c45",
+    "size": 51,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_Unwind_GetDataRelBase",
+    "demangled": "_Unwind_GetDataRelBase",
+    "value": "0x2797c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_Resume_or_Rethrow",
+    "demangled": "_Unwind_Resume_or_Rethrow",
+    "value": "0x29214",
+    "size": 248,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MaliGpuExtIsSupportOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_MaliGpuExtIsSupportOptimizer_optimize",
+    "value": "0x331a0",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1dirty_1decay_1ms",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1dirty_1decay_1ms",
+    "value": "0x3bce4",
+    "size": 352,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1purge",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1purge",
+    "value": "0x3c7d8",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ofstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x15af4",
+    "size": 51,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_InputAnrOpt_getFDValue",
+    "demangled": "Java_com_bytedance_sysoptimizer_InputAnrOpt_getFDValue",
+    "value": "0x56714",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_core_register",
+    "demangled": "xh_core_register",
+    "value": "0x243dc",
+    "size": 332,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_init_14shrink_1region_1space",
+    "demangled": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_init_14shrink_1region_1space",
+    "value": "0x397f4",
+    "size": 1296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_InputAnrOpt_getSocketFd",
+    "demangled": "Java_com_bytedance_sysoptimizer_InputAnrOpt_getSocketFd",
+    "value": "0x56694",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_UmengSignalHandlerOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_UmengSignalHandlerOpt_nStart",
+    "value": "0x2d5f4",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ArtMProtectOpt_nStartPharse1",
+    "demangled": "Java_com_bytedance_sysoptimizer_ArtMProtectOpt_nStartPharse1",
+    "value": "0x2d790",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_optimize",
+    "value": "0x390cc",
+    "size": 508,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ArtMProtectOpt_nStartPharse2",
+    "demangled": "Java_com_bytedance_sysoptimizer_ArtMProtectOpt_nStartPharse2",
+    "value": "0x2d868",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_optimize",
+    "value": "0x3ad20",
+    "size": 860,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_getReferenceCount",
+    "demangled": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_getReferenceCount",
+    "value": "0x51b60",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_HeapGCOptimizerV2_set_1values",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_HeapGCOptimizerV2_set_1values",
+    "value": "0x535d8",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1thread_1arena",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1thread_1arena",
+    "value": "0x3b67c",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_is_1mtk_1perfd_1valid",
+    "demangled": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_is_1mtk_1perfd_1valid",
+    "value": "0x53f1c",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_BitmapFinalizeOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_BitmapFinalizeOpt_nStart",
+    "value": "0x3f9b0",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_InputAnrOpt_startOpt",
+    "demangled": "Java_com_bytedance_sysoptimizer_InputAnrOpt_startOpt",
+    "value": "0x56264",
+    "size": 1072,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ZipCrcOpt_nOptArtBase",
+    "demangled": "Java_com_bytedance_sysoptimizer_ZipCrcOpt_nOptArtBase",
+    "value": "0x2db78",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE",
+    "demangled": "vtable for std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x601d0",
+    "size": 128,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1lg_1dirty_1mult",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1lg_1dirty_1mult",
+    "value": "0x3ca9c",
+    "size": 348,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1get_1boolean_1option_1value",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1get_1boolean_1option_1value",
+    "value": "0x3cde8",
+    "size": 240,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_Backtrace",
+    "demangled": "_Unwind_Backtrace",
+    "value": "0x29330",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ACodecGetPortFormatOptimizer_aCodecGetPortFormatOptimizerByByteCode",
+    "demangled": "Java_com_bytedance_sysoptimizer_ACodecGetPortFormatOptimizer_aCodecGetPortFormatOptimizerByByteCode",
+    "value": "0x2b174",
+    "size": 1652,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1decay",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1decay",
+    "value": "0x3c6ec",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_startMonitor",
+    "demangled": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_startMonitor",
+    "value": "0x51b20",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_istream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x15bcb",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_stringbuf<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x60418",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_renderthread_1extend_1arena",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_renderthread_1extend_1arena",
+    "value": "0x52918",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1jemalloc_1decay_1opt",
+    "demangled": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1jemalloc_1decay_1opt",
+    "value": "0x3b1a0",
+    "size": 416,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1set_1extra_1graphic_1buffer",
+    "demangled": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1set_1extra_1graphic_1buffer",
+    "value": "0x3b3a8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1thread_1tcache_1flush",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1thread_1tcache_1flush",
+    "value": "0x3b818",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Z13DumpInfo2FileP7_JNIEnvPKc",
+    "demangled": "DumpInfo2File(_JNIEnv*, char const*)",
+    "value": "0x4a7d4",
+    "size": 1060,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_player_1lib_1extend_1arena",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_player_1lib_1extend_1arena",
+    "value": "0x52b14",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_SysOptimizer_reservedForJniOffset",
+    "demangled": "Java_com_bytedance_sysoptimizer_SysOptimizer_reservedForJniOffset",
+    "value": "0x5c9a8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_CfiCheckOptimizer_disableCfiCheck",
+    "demangled": "Java_com_bytedance_sysoptimizer_CfiCheckOptimizer_disableCfiCheck",
+    "value": "0x35640",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_heap_1expand",
+    "demangled": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_heap_1expand",
+    "value": "0x39654",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1muzzy_1decay_1ms",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1muzzy_1decay_1ms",
+    "value": "0x3be44",
+    "size": 376,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_BypassDexFileVerify_bypassVerifyNative",
+    "demangled": "Java_com_bytedance_sysoptimizer_BypassDexFileVerify_bypassVerifyNative",
+    "value": "0x3e31c",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_mockLeak",
+    "demangled": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_mockLeak",
+    "value": "0x48cec",
+    "size": 448,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_is_1mtk_1perfservice_1valid",
+    "demangled": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_is_1mtk_1perfservice_1valid",
+    "value": "0x53fe8",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_boos_1mtk_1with_1params_1by_1perfservice",
+    "demangled": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_boos_1mtk_1with_1params_1by_1perfservice",
+    "value": "0x54134",
+    "size": 360,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_GcTimeCollect_startCollect",
+    "demangled": "Java_com_bytedance_sysoptimizer_GcTimeCollect_startCollect",
+    "value": "0x5678c",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_elf_hook",
+    "demangled": "xh_elf_hook",
+    "value": "0x25df4",
+    "size": 2428,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_GetCFA",
+    "demangled": "_Unwind_GetCFA",
+    "value": "0x278c0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__register_frame_info_table_bases",
+    "demangled": "__register_frame_info_table_bases",
+    "value": "0x2a8a8",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1chunk_1hooks",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1chunk_1hooks",
+    "value": "0x3c2d8",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MediaCodecReleaseOpt_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_MediaCodecReleaseOpt_optimize",
+    "value": "0x3d7b4",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_init_1shrink_1region_1space_1step_1size",
+    "demangled": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_init_1shrink_1region_1space_1step_1size",
+    "value": "0x39478",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1tcache_1create",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1tcache_1create",
+    "value": "0x3b920",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NativeBitmap_start",
+    "demangled": "Java_com_bytedance_sysoptimizer_NativeBitmap_start",
+    "value": "0x332c0",
+    "size": 2568,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1destroy",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1destroy",
+    "value": "0x3c9b0",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x15ac2",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_other_1core_1libs_1extend_1arena",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_other_1core_1libs_1extend_1arena",
+    "value": "0x5299c",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_do_1cpu_1schedule_1opt",
+    "demangled": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_do_1cpu_1schedule_1opt",
+    "value": "0x5487c",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_elf_init",
+    "demangled": "xh_elf_init",
+    "value": "0x258a0",
+    "size": 1364,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_DecStrongOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_DecStrongOpt_nStart",
+    "value": "0x3f8f4",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_BitmapRecycleOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_BitmapRecycleOpt_nStart",
+    "value": "0x40298",
+    "size": 448,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ios<char, std::__ndk1::char_traits<char>>",
+    "value": "0x602b8",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_stringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x15bfd",
+    "size": 72,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_Unwind_SetGR",
+    "demangled": "_Unwind_SetGR",
+    "value": "0x278c8",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ACodecGetPortFormatOptimizer_aCodecGetPortFormatOptimizer",
+    "demangled": "Java_com_bytedance_sysoptimizer_ACodecGetPortFormatOptimizer_aCodecGetPortFormatOptimizer",
+    "value": "0x2c344",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_java_ReflectionUtils_setModifiersForDalvik",
+    "demangled": "Java_com_bytedance_sysoptimizer_java_ReflectionUtils_setModifiersForDalvik",
+    "value": "0x3543c",
+    "size": 516,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x15b27",
+    "size": 50,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_is_1qti_1perfd_1valid",
+    "demangled": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_is_1qti_1perfd_1valid",
+    "value": "0x53df0",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__emutls_register_common",
+    "demangled": "__emutls_register_common",
+    "value": "0x2af30",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MTK_1PVR_1Optimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_MTK_1PVR_1Optimizer_optimize",
+    "value": "0x30c70",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_enable_1gl_1error_1skip",
+    "demangled": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_enable_1gl_1error_1skip",
+    "value": "0x31e88",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1jemalloc_1purge",
+    "demangled": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1jemalloc_1purge",
+    "value": "0x3b07c",
+    "size": 292,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_FindCatchBlockOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_FindCatchBlockOpt_nStart",
+    "value": "0x43c24",
+    "size": 6640,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_GetRegionStart",
+    "demangled": "_Unwind_GetRegionStart",
+    "value": "0x2794c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__register_frame_info_bases",
+    "demangled": "__register_frame_info_bases",
+    "value": "0x2a7c0",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_StageFrightAndroid4Optimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_StageFrightAndroid4Optimizer_optimize",
+    "value": "0x303e0",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_hwui_1purge_1control",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_hwui_1purge_1control",
+    "value": "0x530a0",
+    "size": 132,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_set_1time_1mills_1delayed",
+    "demangled": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_set_1time_1mills_1delayed",
+    "value": "0x31ccc",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1tcache_1destroy",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1tcache_1destroy",
+    "value": "0x3ba00",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1get_1arena_1dss",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1get_1arena_1dss",
+    "value": "0x3cd58",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_extend_1arena",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_extend_1arena",
+    "value": "0x52850",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_enable_1egl_1set_1damage_1region_1khr_1error_1skip",
+    "demangled": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_enable_1egl_1set_1damage_1region_1khr_1error_1skip",
+    "value": "0x3214c",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1dss",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1dss",
+    "value": "0x3bac8",
+    "size": 540,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_LocalRefEnlarger_test",
+    "demangled": "Java_com_bytedance_sysoptimizer_LocalRefEnlarger_test",
+    "value": "0x3d8a0",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Z17GetReferenceCounti",
+    "demangled": "GetReferenceCount(int)",
+    "value": "0x518d0",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_core_enable_sigsegv_protection",
+    "demangled": "xh_core_enable_sigsegv_protection",
+    "value": "0x24e90",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_DvmDeadLockOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_DvmDeadLockOptimizer_optimize",
+    "value": "0x31054",
+    "size": 424,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "getNameFromDex",
+    "demangled": "getNameFromDex",
+    "value": "0x2403c",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_istream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x60430",
+    "size": 40,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTSNSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_stringbuf<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x15b86",
+    "size": 69,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "RELOCATION_GROUPED_BY_ADDEND_FLAG",
+    "demangled": "RELOCATION_GROUPED_BY_ADDEND_FLAG",
+    "value": "0x157a0",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MTKArcDispatcherOptimizer_banMTKArcDispatcher",
+    "demangled": "Java_com_bytedance_sysoptimizer_MTKArcDispatcherOptimizer_banMTKArcDispatcher",
+    "value": "0x3a660",
+    "size": 524,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_SetIP",
+    "demangled": "_Unwind_SetIP",
+    "value": "0x2793c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1thread_1tcache_1enabled",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1thread_1tcache_1enabled",
+    "value": "0x3b744",
+    "size": 212,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1decay_1time",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1decay_1time",
+    "value": "0x3c3d4",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Z7MonitorP7_JNIEnviiPKcPv",
+    "demangled": "Monitor(_JNIEnv*, int, int, char const*, void*)",
+    "value": "0x51924",
+    "size": 484,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_dump2file",
+    "demangled": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_dump2file",
+    "value": "0x51b54",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_core_clear",
+    "demangled": "xh_core_clear",
+    "value": "0x2481c",
+    "size": 536,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_RegexMatcherOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_RegexMatcherOptimizer_optimize",
+    "value": "0x34ab0",
+    "size": 328,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_shrink_1regionspace_1vss",
+    "demangled": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_shrink_1regionspace_1vss",
+    "value": "0x39488",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_SuspendByPeerOptV0_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_SuspendByPeerOptV0_nStart",
+    "value": "0x3f390",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_TextureViewOptimizer_pushLayerNative",
+    "demangled": "Java_com_bytedance_sysoptimizer_TextureViewOptimizer_pushLayerNative",
+    "value": "0x54b20",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_DeleteException",
+    "demangled": "_Unwind_DeleteException",
+    "value": "0x2930c",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1decay_1time",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1decay_1time",
+    "value": "0x3cbf8",
+    "size": 352,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_LocalRefEnlarger_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_LocalRefEnlarger_optimize",
+    "value": "0x3dae4",
+    "size": 228,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__deregister_frame_info",
+    "demangled": "__deregister_frame_info",
+    "value": "0x2aa74",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x2cd24",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JavaFrameInfoOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_JavaFrameInfoOpt_nStart",
+    "value": "0x409ac",
+    "size": 1568,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_FindCatchBlockOpt_reservedForJniOffset",
+    "demangled": "Java_com_bytedance_sysoptimizer_FindCatchBlockOpt_reservedForJniOffset",
+    "value": "0x43c20",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_get_1jemalloc_1stats",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_get_1jemalloc_1stats",
+    "value": "0x5263c",
+    "size": 200,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_HeapGCOptimizerV2_reuse_1partial_1tlab",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_HeapGCOptimizerV2_reuse_1partial_1tlab",
+    "value": "0x535f0",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_InputAnrOpt_init",
+    "demangled": "Java_com_bytedance_sysoptimizer_InputAnrOpt_init",
+    "value": "0x55288",
+    "size": 2252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_InputAnrOpt_stopOpt",
+    "demangled": "Java_com_bytedance_sysoptimizer_InputAnrOpt_stopOpt",
+    "value": "0x566ac",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_Resume",
+    "demangled": "_Unwind_Resume",
+    "value": "0x29118",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__deregister_frame_info_bases",
+    "demangled": "__deregister_frame_info_bases",
+    "value": "0x2a974",
+    "size": 256,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1opt_1retain",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1opt_1retain",
+    "value": "0x3bfbc",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x60260",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MTK_1PVR_1Optimizer_setCatchOption",
+    "demangled": "Java_com_bytedance_sysoptimizer_MTK_1PVR_1Optimizer_setCatchOption",
+    "value": "0x30e18",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_RenderNodeLeakFixer_fixRenderNodeLeak",
+    "demangled": "Java_com_bytedance_sysoptimizer_RenderNodeLeakFixer_fixRenderNodeLeak",
+    "value": "0x360e4",
+    "size": 552,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_getCurrentRegionSpaceSize",
+    "demangled": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_getCurrentRegionSpaceSize",
+    "value": "0x390b0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_OppoAndroidSOptimizer_optimizeInitAudioSchedBoost",
+    "demangled": "Java_com_bytedance_sysoptimizer_OppoAndroidSOptimizer_optimizeInitAudioSchedBoost",
+    "value": "0x39d04",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_HuaweiWebViewIncludeJavaStack_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_HuaweiWebViewIncludeJavaStack_nStart",
+    "value": "0x3fad8",
+    "size": 240,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RELOCATION_GROUP_HAS_ADDEND_FLAG",
+    "demangled": "RELOCATION_GROUP_HAS_ADDEND_FLAG",
+    "value": "0x157a8",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_ForcedUnwind",
+    "demangled": "_Unwind_ForcedUnwind",
+    "value": "0x29024",
+    "size": 244,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_RedmiTypeFaceOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_RedmiTypeFaceOptimizer_optimize",
+    "value": "0x306b0",
+    "size": 624,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_set_1adreno_1gl_1error_1skip",
+    "demangled": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_set_1adreno_1gl_1error_1skip",
+    "value": "0x32344",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_VMDebugDumpHprofOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_VMDebugDumpHprofOptimizer_optimize",
+    "value": "0x35764",
+    "size": 324,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1extent_1hooks",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1extent_1hooks",
+    "value": "0x3c2ac",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_PthreadKeyOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_PthreadKeyOpt_nStart",
+    "value": "0x3f11c",
+    "size": 440,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x60290",
+    "size": 40,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZTINSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_iostream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x60470",
+    "size": 56,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_TextureViewOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_TextureViewOptimizer_optimize",
+    "value": "0x548a0",
+    "size": 392,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "RELOCATION_GROUPED_BY_INFO_FLAG",
+    "demangled": "RELOCATION_GROUPED_BY_INFO_FLAG",
+    "value": "0x15790",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_OppoAndroidSOptimizer_optimizeConfigOplusVppType",
+    "demangled": "Java_com_bytedance_sysoptimizer_OppoAndroidSOptimizer_optimizeConfigOplusVppType",
+    "value": "0x3a36c",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1dirty_1decay_1ms",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1dirty_1decay_1ms",
+    "value": "0x3c4b0",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_DetachCurrentThreadOpt_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_DetachCurrentThreadOpt_optimize",
+    "value": "0x3dd08",
+    "size": 340,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_ofstream<char, std::__ndk1::char_traits<char>>",
+    "value": "0x60278",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x640a8",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__deregister_frame",
+    "demangled": "__deregister_frame",
+    "value": "0x2aa78",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__emutls_get_address",
+    "demangled": "__emutls_get_address",
+    "value": "0x2add8",
+    "size": 344,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_FdSanFatalSwitch_openAndroidQFdsan",
+    "demangled": "Java_com_bytedance_sysoptimizer_FdSanFatalSwitch_openAndroidQFdsan",
+    "value": "0x2c614",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__register_frame",
+    "demangled": "__register_frame",
+    "value": "0x2a868",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ZipCrcOpt_nOptArt",
+    "demangled": "Java_com_bytedance_sysoptimizer_ZipCrcOpt_nOptArt",
+    "value": "0x2dbf4",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_HighLevelTrimMemory_disable",
+    "demangled": "Java_com_bytedance_sysoptimizer_HighLevelTrimMemory_disable",
+    "value": "0x3032c",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTSNSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo name for std::__ndk1::basic_ios<char, std::__ndk1::char_traits<char>>",
+    "value": "0x15b59",
+    "size": 45,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_do_1task_1schedule_1optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_do_1task_1schedule_1optimize",
+    "value": "0x54424",
+    "size": 1112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_core_ignore",
+    "demangled": "xh_core_ignore",
+    "value": "0x24528",
+    "size": 312,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_elf_check_elfheader",
+    "demangled": "xh_elf_check_elfheader",
+    "value": "0x2582c",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ONativeCryptoCRLOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_ONativeCryptoCRLOptimizer_optimize",
+    "value": "0x32ac4",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char>>",
+    "value": "0x60250",
+    "size": 16,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_StackLeakChecker_setEnable",
+    "demangled": "Java_com_bytedance_sysoptimizer_StackLeakChecker_setEnable",
+    "value": "0x30010",
+    "size": 796,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1lg_1dirty_1mult",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1lg_1dirty_1mult",
+    "value": "0x3c304",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ZipCrcOpt_nOptZipArchive",
+    "demangled": "Java_com_bytedance_sysoptimizer_ZipCrcOpt_nOptZipArchive",
+    "value": "0x2dc70",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1retain_1grow_1limit",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arena_1retain_1grow_1limit",
+    "value": "0x3c088",
+    "size": 548,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_changeConfig0",
+    "demangled": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_changeConfig0",
+    "value": "0x48fa0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_extend_1arena_1specific_12",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_extend_1arena_1specific_12",
+    "value": "0x52f50",
+    "size": 336,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_EglCreateSurfaceFixer_fix",
+    "demangled": "Java_com_bytedance_sysoptimizer_EglCreateSurfaceFixer_fix",
+    "value": "0x35ed8",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1set_1gui_1extra_1graphic_1buffer",
+    "demangled": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_do_1set_1gui_1extra_1graphic_1buffer",
+    "value": "0x3b400",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "demangled": "typeinfo for std::__ndk1::basic_stringstream<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>",
+    "value": "0x60458",
+    "size": 24,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_art_1extend_1arena",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_JemallocExtend_art_1extend_1arena",
+    "value": "0x52a50",
+    "size": 196,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_core_enable_debug",
+    "demangled": "xh_core_enable_debug",
+    "value": "0x24e70",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__register_frame_info",
+    "demangled": "__register_frame_info",
+    "value": "0x2a85c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_enable_1gl_1error_1region_1space_1skip",
+    "demangled": "Java_com_bytedance_sysoptimizer_MaliMemOptimizer_enable_1gl_1error_1region_1space_1skip",
+    "value": "0x32014",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_SystemSensorManagerOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_SystemSensorManagerOptimizer_optimize",
+    "value": "0x368d8",
+    "size": 324,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_init",
+    "demangled": "Java_com_bytedance_sysoptimizer_HeapGCOptimizer_init",
+    "value": "0x392c8",
+    "size": 432,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_is_1jemalloc_1allocator",
+    "demangled": "Java_com_bytedance_sysoptimizer_NativeAllocatorOptimizer_is_1jemalloc_1allocator",
+    "value": "0x3b458",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_monitor",
+    "demangled": "Java_com_bytedance_sysoptimizer_tools_IndirectReferenceTableMonitor_monitor",
+    "value": "0x493c8",
+    "size": 372,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_GetIPInfo",
+    "demangled": "_Unwind_GetIPInfo",
+    "value": "0x27928",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_SysOptimizer_refreshHook",
+    "demangled": "Java_com_bytedance_sysoptimizer_SysOptimizer_refreshHook",
+    "value": "0x313dc",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_core_refresh",
+    "demangled": "xh_core_refresh",
+    "value": "0x24660",
+    "size": 444,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_util_set_addr_protect",
+    "demangled": "xh_util_set_addr_protect",
+    "value": "0x26bd8",
+    "size": 140,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_fake_name_SmFakeNameHandler_replace",
+    "demangled": "Java_com_bytedance_sysoptimizer_fake_name_SmFakeNameHandler_replace",
+    "value": "0x240fc",
+    "size": 736,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JitDebugInfoOptimizer_doOptimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_JitDebugInfoOptimizer_doOptimize",
+    "value": "0x3e464",
+    "size": 484,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_GetGR",
+    "demangled": "_Unwind_GetGR",
+    "value": "0x2775c",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__register_frame_info_table",
+    "demangled": "__register_frame_info_table",
+    "value": "0x2a93c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ArtOptimizer_increaseSuspendTime",
+    "demangled": "Java_com_bytedance_sysoptimizer_ArtOptimizer_increaseSuspendTime",
+    "value": "0x2dcec",
+    "size": 1960,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_SurfaceUtils_nativeSetSurfaceGeometry",
+    "demangled": "Java_com_bytedance_sysoptimizer_SurfaceUtils_nativeSetSurfaceGeometry",
+    "value": "0x34730",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1muzzy_1decay_1ms",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1arenas_1muzzy_1decay_1ms",
+    "value": "0x3c58c",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_release_1perflock_1handle",
+    "demangled": "Java_com_bytedance_sysoptimizer_perflock_PerfLockBooster_release_1perflock_1handle",
+    "value": "0x53e70",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JitCompileMethodCrash_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_JitCompileMethodCrash_optimize",
+    "value": "0x31530",
+    "size": 584,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_SuspendByPeerOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_SuspendByPeerOpt_nStart",
+    "value": "0x3f59c",
+    "size": 552,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_allocatorx_HeapGCOptimizerV2_set_1max_1heap_1usage_1add_1gcdiff",
+    "demangled": "Java_com_bytedance_sysoptimizer_allocatorx_HeapGCOptimizerV2_set_1max_1heap_1usage_1add_1gcdiff",
+    "value": "0x5367c",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_util_get_addr_protect",
+    "demangled": "xh_util_get_addr_protect",
+    "value": "0x26bc8",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Unwind_RaiseException",
+    "demangled": "_Unwind_RaiseException",
+    "value": "0x28eac",
+    "size": 376,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_NpthDlBugReverseOpt_nStart",
+    "demangled": "Java_com_bytedance_sysoptimizer_NpthDlBugReverseOpt_nStart",
+    "value": "0x32aac",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_ClearCacheOpt_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_ClearCacheOpt_optimize",
+    "value": "0x37078",
+    "size": 1072,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_util_get_mem_protect",
+    "demangled": "xh_util_get_mem_protect",
+    "value": "0x269e4",
+    "size": 484,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_WmOverFlowOptimizer_optimize",
+    "demangled": "Java_com_bytedance_sysoptimizer_WmOverFlowOptimizer_optimize",
+    "value": "0x34840",
+    "size": 268,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1get_1integer_1option_1value",
+    "demangled": "Java_com_bytedance_sysoptimizer_JemallocAllocatorOptimizer_do_1get_1integer_1option_1value",
+    "value": "0x3ced8",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "xh_util_flush_instruction_cache",
+    "demangled": "xh_util_flush_instruction_cache",
+    "value": "0x26c64",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

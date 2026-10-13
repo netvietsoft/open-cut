@@ -1,0 +1,346 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android6InitVMEP7_JavaVM",
+    "demangled": "lynx::base::android::InitVM(_JavaVM*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android19AttachCurrentThreadEv",
+    "demangled": "lynx::base::android::AttachCurrentThread()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android8GetClassEP7_JNIEnvPKc",
+    "demangled": "lynx::base::android::GetClass(_JNIEnv*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android7JavaRefIP8_jobjectE15ReleaseLocalRefEP7_JNIEnv",
+    "demangled": "lynx::base::android::JavaRef<_jobject*>::ReleaseLocalRef(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TraceEventBeginEx",
+    "demangled": "TraceEventBeginEx",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5trace15TraceController8InstanceEv",
+    "demangled": "lynx::trace::TraceController::Instance()",
+    "value": "0x40fc",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5trace9GetFlowIdEv",
+    "demangled": "lynx::trace::GetFlowId()",
+    "value": "0x41ac",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto11ThreadTrack7CurrentEv",
+    "demangled": "lynx::perfetto::ThreadTrack::Current()",
+    "value": "0x41ac",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto19LynxDebugAnnotation16set_string_valueEPKcm",
+    "demangled": "lynx::perfetto::LynxDebugAnnotation::set_string_value(char const*, unsigned long)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto22TrackEvent_LegacyEvent9set_phaseEi",
+    "demangled": "lynx::perfetto::TrackEvent_LegacyEvent::set_phase(int)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto22TrackEvent_LegacyEvent18set_flow_directionENS0_13FlowDirectionE",
+    "demangled": "lynx::perfetto::TrackEvent_LegacyEvent::set_flow_direction(lynx::perfetto::FlowDirection)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto10TrackEvent12add_flow_idsEm",
+    "demangled": "lynx::perfetto::TrackEvent::add_flow_ids(unsigned long)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto10TrackEvent21add_debug_annotationsERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_",
+    "demangled": "lynx::perfetto::TrackEvent::add_debug_annotations(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto10TrackEvent25set_timestamp_absolute_usEl",
+    "demangled": "lynx::perfetto::TrackEvent::set_timestamp_absolute_us(long)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TraceCounterEx",
+    "demangled": "TraceCounterEx",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto19LynxDebugAnnotation8set_nameERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::perfetto::LynxDebugAnnotation::set_name(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto19LynxDebugAnnotation14set_uint_valueEm",
+    "demangled": "lynx::perfetto::LynxDebugAnnotation::set_uint_value(unsigned long)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto10TrackEvent14set_track_uuidEm",
+    "demangled": "lynx::perfetto::TrackEvent::set_track_uuid(unsigned long)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x403c",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "TraceEventEndEx",
+    "demangled": "TraceEventEndEx",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto19LynxDebugAnnotation14set_bool_valueEb",
+    "demangled": "lynx::perfetto::LynxDebugAnnotation::set_bool_value(bool)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto19LynxDebugAnnotation13set_int_valueEl",
+    "demangled": "lynx::perfetto::LynxDebugAnnotation::set_int_value(long)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto19LynxDebugAnnotation16set_string_valueERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::perfetto::LynxDebugAnnotation::set_string_value(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto10TrackEvent8set_nameERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::perfetto::TrackEvent::set_name(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto10TrackEvent21add_debug_annotationsEONSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEES9_",
+    "demangled": "lynx::perfetto::TrackEvent::add_debug_annotations(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>&&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>&&)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5trace25TraceEventCategoryEnabledEPKc",
+    "demangled": "lynx::trace::TraceEventCategoryEnabled(char const*)",
+    "value": "0x41a4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5trace19TraceRuntimeProfileERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEmi",
+    "demangled": "lynx::trace::TraceRuntimeProfile(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, unsigned long, int)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5trace24TraceEventImplementationEPKcRKNS_8perfetto12CounterTrackENS0_14TraceEventTypeERKmS9_RKNSt6__ndk18functionIFvNS3_12EventContextEEEE",
+    "demangled": "lynx::trace::TraceEventImplementation(char const*, lynx::perfetto::CounterTrack const&, lynx::trace::TraceEventType, unsigned long const&, unsigned long const&, std::__ndk1::function<void (lynx::perfetto::EventContext)> const&)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto10TrackEvent24add_terminating_flow_idsEm",
+    "demangled": "lynx::perfetto::TrackEvent::add_terminating_flow_ids(unsigned long)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5trace24TraceEventImplementationEPKcRKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEENS0_14TraceEventTypeEPKNS_8perfetto5TrackERKmRKNS3_8functionIFvNSD_12EventContextEEEE",
+    "demangled": "lynx::trace::TraceEventImplementation(char const*, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, lynx::trace::TraceEventType, lynx::perfetto::Track const*, unsigned long const&, std::__ndk1::function<void (lynx::perfetto::EventContext)> const&)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto19LynxDebugAnnotation16set_double_valueEd",
+    "demangled": "lynx::perfetto::LynxDebugAnnotation::set_double_value(double)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto19LynxDebugAnnotation21set_legacy_json_valueERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::perfetto::LynxDebugAnnotation::set_legacy_json_value(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto22TrackEvent_LegacyEvent15set_unscoped_idEm",
+    "demangled": "lynx::perfetto::TrackEvent_LegacyEvent::set_unscoped_id(unsigned long)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto22TrackEvent_LegacyEvent11set_bind_idEm",
+    "demangled": "lynx::perfetto::TrackEvent_LegacyEvent::set_bind_id(unsigned long)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5trace14GetTraceTimeNsEv",
+    "demangled": "lynx::trace::GetTraceTimeNs()",
+    "value": "0x41ac",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx5trace24TraceEventImplementationEPKcS2_NS0_14TraceEventTypeEPKNS_8perfetto5TrackERKmRKNSt6__ndk18functionIFvNS4_12EventContextEEEE",
+    "demangled": "lynx::trace::TraceEventImplementation(char const*, char const*, lynx::trace::TraceEventType, lynx::perfetto::Track const*, unsigned long const&, std::__ndk1::function<void (lynx::perfetto::EventContext)> const&)",
+    "value": "0x40f8",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto10TrackEvent21add_debug_annotationsEv",
+    "demangled": "lynx::perfetto::TrackEvent::add_debug_annotations()",
+    "value": "0x41ac",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx8perfetto10TrackEvent16set_legacy_eventEv",
+    "demangled": "lynx::perfetto::TrackEvent::set_legacy_event()",
+    "value": "0x41ac",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

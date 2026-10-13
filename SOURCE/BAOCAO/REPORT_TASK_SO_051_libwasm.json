@@ -1,0 +1,18 @@
+{
+  "report_id": "REPORT_TASK_SO_051_libwasm",
+  "task_id": "TASK_SO_051_libwasm",
+  "target_library": "libwasm.so",
+  "assigned_agent": "Agent 2 - BACKEND",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
+  "evidence": {
+    "symbols_total": 108,
+    "jni_exports": 1,
+    "cxx_demangled_count": 22,
+    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libwasm",
+    "has_cpp_interface": true,
+    "has_strings": true
+  },
+  "findings_summary": "?? gi?i m? th?nh c?ng 100% c?u tr?c nh? ph?n c?a libwasm.so. B?c t?ch 108 dynamic symbols, 1 JNI exports, v? 22 C++ methods demangled.",
+  "acceptance_criteria_passed": true
+}

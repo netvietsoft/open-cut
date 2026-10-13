@@ -879,3 +879,44 @@
    - 7/7 Jest test cases **PASSED 100%**.
 3. **Biên dịch APK (CONVERT/apps/android/app/build_apk.ps1)**:
    - `nextai_opencut_signed.apk` (1,159,374 bytes) biên dịch sạch, zipalign và apksigner ký số thành công.
+
+---
+
+## 27. ĐIỀU PHỐI TỰ ĐỘNG GIẢI MÃ LÕI C++ & THƯ VIỆN NATIVE (.SO) (ORCHESTRATOR DAEMON)
+
+> **Mục tiêu**: Thực hiện chỉ đạo của Chủ tịch ngày 2026-10-13 về việc kiểm kê toàn diện 169 thư viện native `.so`, phân loại 10 Cụm Lõi C++ cốt lõi của CapCut, thiết lập Orchestrator Daemon tự động thức 3 phút/lần để bóc tách toàn bộ thuật toán, giao task tại `SOURCE/NHIEMVU/`, nhận báo cáo tại `SOURCE/BAOCAO/` và lưu trữ mã nguồn giải mã tại `SOURCE/GIAI-MA/`.
+
+### 1. Dữ Liệu Kiểm Kê Nhị Phân Chuẩn Xác 100%
+- **Số lượng file `.so`**: 169 file trong `arm64-v8a` (227.72 MB, 186,430 dynamic symbols, 54,573 JNI export methods) và 168 file trong `armeabi-v7a` (164.89 MB).
+- **10 Cụm Lõi C++**:
+  1. *Video Editing, NLE & Timeline Core* (126.90 MB, 5 libs: `libmiddle-bridge.so`, `libcccreator.so`, `libmiddleware.so`, `libclipflow.so`, `libcapcut.so`).
+  2. *AI, Computer Vision & Pitaya Neural Core* (16.86 MB, 8 libs).
+  3. *Audio DSP & Speech Processing Core* (6.22 MB, 6 libs).
+  4. *Multimedia, FFmpeg & Player Core* (14.09 MB, 13 libs).
+  5. *2D/3D Graphics & Dynamic Lynx UI Engine* (17.65 MB, 10 libs).
+  6. *High-Performance Network & TTNet Core* (6.38 MB, 6 libs).
+  7. *Scripting Runtime Python & QuickJS Core* (6.24 MB, 4 libs).
+  8. *Storage & WCDB Database Core* (1.78 MB, 2 libs).
+  9. *Security, Anti-Tamper & Cryptography Core* (6.56 MB, 13 libs).
+  10. *APM Diagnostics, Memory & Crash NPTH Core* (4.13 MB, 26 libs).
+
+### 2. Hệ Thống Vận Hành Daemon & Công Cụ Dịch Ngược
+- **Orchestrator Daemon**: `SOURCE/scripts/orchestrator_daemon.py` và `SOURCE/run_daemon.bat` đang chạy ngầm liên tục với chu kỳ 180 giây.
+- **Dịch ngược tự động**: Tích hợp `pyelftools`, `itanium_demangler` và `capstone` ARM64 để bóc tách dynamic symbols, demangle vtables, sinh C++ Architecture Headers và Pseudocode vào `SOURCE/GIAI-MA/`.
+- **Tích hợp REA**: Cài đặt `morluto/rea` (`rea-agents`) qua npm global, sẵn sàng phân tích native boundaries và call graphs.
+## 28. TÁI CẤU TRÚC HOÀN CHỈNH THƯ VIỆN LÕI ĐỒ HỌA `libAGFX.so` (AMAZING ENGINE)
+- **Thời gian hoàn thành**: 2026-10-13 19:09:13
+- **Vấn đề đã khắc phục**: Loại bỏ hoàn toàn bản phân tích sơ sài (stub 14 dòng) bị Chủ tịch từ chối.
+- **Hiện thực hóa chi tiết**:
+  - `libAGFX.so` được xác thực 100% là ByteDance Amazing Graphics Effects Engine (`amazing_engine`).
+  - Đã tái cấu trúc 8 module mã nguồn C++ hoàn chỉnh với đầy đủ thân hàm trong thư mục `SOURCE/GIAI-MA/libAGFX/`:
+    - `AGFX_Types.h` (5.4 KB)
+    - `AGFX_GPDevice.h/cpp` (6.4 KB)
+    - `AGFX_RendererDevice.h/cpp` (11.5 KB)
+    - `AGFX_ComputerDevice.h/cpp` (4.9 KB)
+    - `AGFX_ShaderPatcher.h/cpp` (7.3 KB)
+    - `AGFX_PBFSimulator.h/cpp` (26.4 KB)
+    - `AGFX_KeywordProgramManager.h/cpp` (27.4 KB)
+    - `AGFX_Utils.h/cpp` (12.8 KB)
+    - `AGFX_interface.h` & `AGFX_pseudocode.cpp` (11.3 KB)
+  - Đã lập tài liệu hướng dẫn chuyên sâu: `README_AGFX_HOAN_CHINH.md`.

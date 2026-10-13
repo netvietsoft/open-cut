@@ -1,0 +1,418 @@
+[
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_defaultCompressionLevel",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_defaultCompressionLevel",
+    "value": "0x303d0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_flushStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_flushStream",
+    "value": "0x30e7c",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_free",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_free",
+    "value": "0x304c0",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_Zstd_getFunAddressesBySymbols",
+    "demangled": "Java_com_bytedance_compression_zstd_Zstd_getFunAddressesBySymbols",
+    "value": "0x2fc70",
+    "size": 356,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDecompress_loadFastDictDecompress",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDecompress_loadFastDictDecompress",
+    "value": "0x311a4",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_initDStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_initDStream",
+    "value": "0x31928",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_createDStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_createDStream",
+    "value": "0x31880",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_loadCDictFast0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_loadCDictFast0",
+    "value": "0x306dc",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_endStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_endStream",
+    "value": "0x30dac",
+    "size": 208,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_loadDDictFast0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_loadDDictFast0",
+    "value": "0x31448",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setDictID0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setDictID0",
+    "value": "0x30684",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_freeCStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_freeCStream",
+    "value": "0x30af4",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_setCompressionLevel",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_setCompressionLevel",
+    "value": "0x301a0",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDictCompress_free",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDictCompress_free",
+    "value": "0x2ffb4",
+    "size": 252,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_init",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_init",
+    "value": "0x303e8",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_compressByteArray0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_compressByteArray0",
+    "value": "0x308d8",
+    "size": 456,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_loadDDict0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_loadDDict0",
+    "value": "0x314d0",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_reset0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_reset0",
+    "value": "0x30844",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_loadDictCompress",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_loadDictCompress",
+    "value": "0x300b0",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_free",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_free",
+    "value": "0x31414",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDictDecompress_free",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDictDecompress_free",
+    "value": "0x31064",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_reset0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_reset0",
+    "value": "0x3160c",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setPledgedSrcSize0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setPledgedSrcSize0",
+    "value": "0x3086c",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDecompress_decompressedSize0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDecompress_decompressedSize0",
+    "value": "0x31250",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_recommendedDInSize",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_recommendedDInSize",
+    "value": "0x3186c",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_freeDStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_freeDStream",
+    "value": "0x31910",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_decompressStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_decompressStream",
+    "value": "0x319b8",
+    "size": 428,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_createCStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_createCStream",
+    "value": "0x30aac",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_resetCStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_resetCStream",
+    "value": "0x30b90",
+    "size": 164,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setChecksum0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setChecksum0",
+    "value": "0x305d4",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_compressBound",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_compressBound",
+    "value": "0x303b0",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDictCompress_init",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDictCompress_init",
+    "value": "0x2fddc",
+    "size": 472,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDecompress_loadDictDecompress",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDecompress_loadDictDecompress",
+    "value": "0x31104",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_setCompressionLong",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_setCompressionLong",
+    "value": "0x30210",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_Zstd_errGeneric",
+    "demangled": "Java_com_bytedance_compression_zstd_Zstd_errGeneric",
+    "value": "0x2fdd4",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_loadCDict0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_loadCDict0",
+    "value": "0x30764",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_recommendedCOutSize",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_recommendedCOutSize",
+    "value": "0x30aa0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_setCompressionChecksums",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_setCompressionChecksums",
+    "value": "0x30150",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_Zstd_isError",
+    "demangled": "Java_com_bytedance_compression_zstd_Zstd_isError",
+    "value": "0x2fc40",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_init",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_init",
+    "value": "0x31308",
+    "size": 268,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_decompressByteArray0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDecompressCtx_decompressByteArray0",
+    "value": "0x31634",
+    "size": 568,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_maxCompressionLevel",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_maxCompressionLevel",
+    "value": "0x303e0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setContentSize0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setContentSize0",
+    "value": "0x3062c",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_compressStream",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdOutputStreamNoFinalizer_compressStream",
+    "value": "0x30c34",
+    "size": 376,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdDictDecompress_init",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdDictDecompress_init",
+    "value": "0x30f4c",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_minCompressionLevel",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_minCompressionLevel",
+    "value": "0x303d8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_Zstd_getErrorName",
+    "demangled": "Java_com_bytedance_compression_zstd_Zstd_getErrorName",
+    "value": "0x2fc4c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_setCompressionWorkers",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_setCompressionWorkers",
+    "value": "0x30284",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_Zstd_getErrorCode",
+    "demangled": "Java_com_bytedance_compression_zstd_Zstd_getErrorCode",
+    "value": "0x2fc60",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompress_loadFastDictCompress",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompress_loadFastDictCompress",
+    "value": "0x30304",
+    "size": 172,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_recommendedDOutSize",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdInputStreamNoFinalizer_recommendedDOutSize",
+    "value": "0x31878",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setLevel0",
+    "demangled": "Java_com_bytedance_compression_zstd_ZstdCompressCtx_setLevel0",
+    "value": "0x30560",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

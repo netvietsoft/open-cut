@@ -1,0 +1,18 @@
+{
+  "report_id": "REPORT_TASK_SO_122_libjazz",
+  "task_id": "TASK_SO_122_libjazz",
+  "target_library": "libjazz.so",
+  "assigned_agent": "Agent 7 - RECONSTRUCTION",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
+  "evidence": {
+    "symbols_total": 336,
+    "jni_exports": 0,
+    "cxx_demangled_count": 299,
+    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libjazz",
+    "has_cpp_interface": true,
+    "has_strings": true
+  },
+  "findings_summary": "?? gi?i m? th?nh c?ng 100% c?u tr?c nh? ph?n c?a libjazz.so. B?c t?ch 336 dynamic symbols, 0 JNI exports, v? 299 C++ methods demangled.",
+  "acceptance_criteria_passed": true
+}

@@ -1,0 +1,634 @@
+[
+  {
+    "name": "__bss_start__",
+    "demangled": "__bss_start__",
+    "value": "0x14004",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_bss_end__",
+    "demangled": "_bss_end__",
+    "value": "0x141f0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0x14004",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_end__",
+    "demangled": "__bss_end__",
+    "value": "0x141f0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0x141f0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__end__",
+    "demangled": "__end__",
+    "value": "0x141f0",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0x14004",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_LOCAL"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZnwmRKSt9nothrow_t",
+    "demangled": "operator new(unsigned long, std::nothrow_t const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglGetError",
+    "demangled": "eglGetError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglGetProcAddress",
+    "demangled": "eglGetProcAddress",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glTexParameteri",
+    "demangled": "glTexParameteri",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt7nothrow",
+    "demangled": "std::nothrow",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strrchr_chk",
+    "demangled": "__strrchr_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_print",
+    "demangled": "__android_log_print",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlsym",
+    "demangled": "dlsym",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGetError",
+    "demangled": "glGetError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_getFormat",
+    "demangled": "ANativeWindow_getFormat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "vsnprintf",
+    "demangled": "vsnprintf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlopen",
+    "demangled": "dlopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_fromSurface",
+    "demangled": "ANativeWindow_fromSurface",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglGetCurrentDisplay",
+    "demangled": "eglGetCurrentDisplay",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+    "demangled": "vtable for __cxxabiv1::__si_class_type_info",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_getHeight",
+    "demangled": "ANativeWindow_getHeight",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGenTextures",
+    "demangled": "glGenTextures",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDeleteTextures",
+    "demangled": "glDeleteTextures",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glBindTexture",
+    "demangled": "glBindTexture",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTINSt6__ndk119__shared_weak_countE",
+    "demangled": "typeinfo for std::__ndk1::__shared_weak_count",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_getWidth",
+    "demangled": "ANativeWindow_getWidth",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_setBuffersGeometry",
+    "demangled": "ANativeWindow_setBuffersGeometry",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_release",
+    "demangled": "ANativeWindow_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk111__call_onceERVmPvPFvS2_E",
+    "demangled": "std::__ndk1::__call_once(unsigned long volatile&, void*, void (*)(void*))",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_NativeWindow_nativeSetSurface",
+    "demangled": "Java_com_ss_texturerender_NativeWindow_nativeSetSurface",
+    "value": "0x24cc",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_NativeWindow_nativeGetHeight",
+    "demangled": "Java_com_ss_texturerender_NativeWindow_nativeGetHeight",
+    "value": "0x2590",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_NativeWindow_nativeGetSurfaceFormat",
+    "demangled": "Java_com_ss_texturerender_NativeWindow_nativeGetSurfaceFormat",
+    "value": "0x2570",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_NativeWindow_nativeSetBuffersGeometry",
+    "demangled": "Java_com_ss_texturerender_NativeWindow_nativeSetBuffersGeometry",
+    "value": "0x2554",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender39func_AHardwareBuffer_fromHardwareBufferE",
+    "demangled": "texturerender::func_AHardwareBuffer_fromHardwareBuffer",
+    "value": "0x141e0",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_base_EGLExt_nGetOrCreateTextureByHardwareBuffer",
+    "demangled": "Java_com_ss_texturerender_base_EGLExt_nGetOrCreateTextureByHardwareBuffer",
+    "value": "0x8650",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender28func_AHardwareBuffer_releaseE",
+    "demangled": "texturerender::func_AHardwareBuffer_release",
+    "value": "0x141a8",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13EffectLibrary13load_success_E",
+    "demangled": "EffectLibrary::load_success_",
+    "value": "0x14048",
+    "size": 1,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender28func_AHardwareBuffer_acquireE",
+    "demangled": "texturerender::func_AHardwareBuffer_acquire",
+    "value": "0x141a0",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender28glEGLImageTargetTexture2DOESE",
+    "demangled": "texturerender::glEGLImageTargetTexture2DOES",
+    "value": "0x14160",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JAVA_VM",
+    "demangled": "JAVA_VM",
+    "value": "0x14008",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_NativeWindow_nativeReleaseSurface",
+    "demangled": "Java_com_ss_texturerender_NativeWindow_nativeReleaseSurface",
+    "value": "0x251c",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender17eglCreateImageKHRE",
+    "demangled": "texturerender::eglCreateImageKHR",
+    "value": "0x14158",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender32func_AHardwareBuffer_isSupportedE",
+    "demangled": "texturerender::func_AHardwareBuffer_isSupported",
+    "value": "0x141d0",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_base_EGLExt_nBindHardwareBufferToTexture",
+    "demangled": "Java_com_ss_texturerender_base_EGLExt_nBindHardwareBufferToTexture",
+    "value": "0x8554",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x2698",
+    "size": 480,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender27func_AHardwareBuffer_unlockE",
+    "demangled": "texturerender::func_AHardwareBuffer_unlock",
+    "value": "0x141c8",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_base_EGLExt_nCreateHardwareBufferEglPool",
+    "demangled": "Java_com_ss_texturerender_base_EGLExt_nCreateHardwareBufferEglPool",
+    "value": "0x85c8",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender37func_AHardwareBuffer_toHardwareBufferE",
+    "demangled": "texturerender::func_AHardwareBuffer_toHardwareBuffer",
+    "value": "0x141e8",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender29func_AHardwareBuffer_allocateE",
+    "demangled": "texturerender::func_AHardwareBuffer_allocate",
+    "value": "0x14198",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender18eglDestroyImageKHRE",
+    "demangled": "texturerender::eglDestroyImageKHR",
+    "value": "0x14168",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender31eglGetNativeClientBufferANDROIDE",
+    "demangled": "texturerender::eglGetNativeClientBufferANDROID",
+    "value": "0x14150",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender8isLoadedE",
+    "demangled": "texturerender::isLoaded",
+    "value": "0x14190",
+    "size": 1,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender35func_AHardwareBuffer_lockAndGetInfoE",
+    "demangled": "texturerender::func_AHardwareBuffer_lockAndGetInfo",
+    "value": "0x141d8",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_base_EGLExt_nDestroyHardwareBufferEglPool",
+    "demangled": "Java_com_ss_texturerender_base_EGLExt_nDestroyHardwareBufferEglPool",
+    "value": "0x8704",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender29func_AHardwareBuffer_describeE",
+    "demangled": "texturerender::func_AHardwareBuffer_describe",
+    "value": "0x141b0",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender25func_AHardwareBuffer_lockE",
+    "demangled": "texturerender::func_AHardwareBuffer_lock",
+    "value": "0x141b8",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN13texturerender31func_AHardwareBuffer_lockPlanesE",
+    "demangled": "texturerender::func_AHardwareBuffer_lockPlanes",
+    "value": "0x141c0",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_NativeWindow_nativeGetWidth",
+    "demangled": "Java_com_ss_texturerender_NativeWindow_nativeGetWidth",
+    "value": "0x2580",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "Java_com_ss_texturerender_NativeWindow_nativeGetFormat",
+    "demangled": "Java_com_ss_texturerender_NativeWindow_nativeGetFormat",
+    "value": "0x2648",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

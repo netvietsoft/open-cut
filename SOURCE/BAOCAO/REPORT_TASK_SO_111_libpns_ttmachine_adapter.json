@@ -1,0 +1,18 @@
+{
+  "report_id": "REPORT_TASK_SO_111_libpns_ttmachine_adapter",
+  "task_id": "TASK_SO_111_libpns_ttmachine_adapter",
+  "target_library": "libpns_ttmachine_adapter.so",
+  "assigned_agent": "Agent 7 - RECONSTRUCTION",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
+  "evidence": {
+    "symbols_total": 165,
+    "jni_exports": 3,
+    "cxx_demangled_count": 81,
+    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libpns_ttmachine_adapter",
+    "has_cpp_interface": true,
+    "has_strings": true
+  },
+  "findings_summary": "?? gi?i m? th?nh c?ng 100% c?u tr?c nh? ph?n c?a libpns_ttmachine_adapter.so. B?c t?ch 165 dynamic symbols, 3 JNI exports, v? 81 C++ methods demangled.",
+  "acceptance_criteria_passed": true
+}

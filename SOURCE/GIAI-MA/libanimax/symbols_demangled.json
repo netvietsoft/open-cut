@@ -1,0 +1,4586 @@
+[
+  {
+    "name": "__cxa_finalize",
+    "demangled": "__cxa_finalize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_atexit",
+    "demangled": "__cxa_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlopen",
+    "demangled": "dlopen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "dlsym",
+    "demangled": "dlsym",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android6InitVMEP7_JavaVM",
+    "demangled": "lynx::base::android::InitVM(_JavaVM*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android19AttachCurrentThreadEv",
+    "demangled": "lynx::base::android::AttachCurrentThread()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdlPv",
+    "demangled": "operator delete(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znwm",
+    "demangled": "operator new(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
+    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_acquire",
+    "demangled": "__cxa_guard_acquire",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_guard_release",
+    "demangled": "__cxa_guard_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZdaPv",
+    "demangled": "operator delete[](void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "abort",
+    "demangled": "abort",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
+    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
+    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_Znam",
+    "demangled": "operator new[](unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk18ios_base6getlocEv",
+    "demangled": "std::__ndk1::ios_base::getloc const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeD1Ev",
+    "demangled": "std::__ndk1::locale::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNKSt6__ndk16locale9use_facetERNS0_2idE",
+    "demangled": "std::__ndk1::locale::use_facet const(std::__ndk1::locale::id&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base5clearEj",
+    "demangled": "std::__ndk1::ios_base::clear(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZSt18uncaught_exceptionv",
+    "demangled": "std::uncaught_exception()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strlen",
+    "demangled": "strlen",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__memcpy_chk",
+    "demangled": "__memcpy_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15ctypeIcE2idE",
+    "demangled": "std::__ndk1::ctype<char>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atan2f",
+    "demangled": "atan2f",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "tanf",
+    "demangled": "tanf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_weak_count4lockEv",
+    "demangled": "std::__ndk1::__shared_weak_count::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE",
+    "demangled": "std::__ndk1::num_put<char, std::__ndk1::ostreambuf_iterator<char, std::__ndk1::char_traits<char>>>::id",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glBindRenderbuffer",
+    "demangled": "glBindRenderbuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGenFramebuffers",
+    "demangled": "glGenFramebuffers",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glBindFramebuffer",
+    "demangled": "glBindFramebuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglGetProcAddress",
+    "demangled": "eglGetProcAddress",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glCreateShader",
+    "demangled": "glCreateShader",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glShaderSource",
+    "demangled": "glShaderSource",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glCompileShader",
+    "demangled": "glCompileShader",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGetShaderiv",
+    "demangled": "glGetShaderiv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGetShaderInfoLog",
+    "demangled": "glGetShaderInfoLog",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDeleteShader",
+    "demangled": "glDeleteShader",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glCreateProgram",
+    "demangled": "glCreateProgram",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glAttachShader",
+    "demangled": "glAttachShader",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glLinkProgram",
+    "demangled": "glLinkProgram",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGetProgramiv",
+    "demangled": "glGetProgramiv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGetProgramInfoLog",
+    "demangled": "glGetProgramInfoLog",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDeleteProgram",
+    "demangled": "glDeleteProgram",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGenTextures",
+    "demangled": "glGenTextures",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glBindTexture",
+    "demangled": "glBindTexture",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glTexParameteri",
+    "demangled": "glTexParameteri",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glTexImage2D",
+    "demangled": "glTexImage2D",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glFramebufferTexture2D",
+    "demangled": "glFramebufferTexture2D",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glBindVertexArray",
+    "demangled": "glBindVertexArray",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glBindBuffer",
+    "demangled": "glBindBuffer",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memchr",
+    "demangled": "memchr",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memcmp",
+    "demangled": "memcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDeleteFramebuffers",
+    "demangled": "glDeleteFramebuffers",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDeleteRenderbuffers",
+    "demangled": "glDeleteRenderbuffers",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDeleteTextures",
+    "demangled": "glDeleteTextures",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDeleteVertexArrays",
+    "demangled": "glDeleteVertexArrays",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDeleteBuffers",
+    "demangled": "glDeleteBuffers",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGetIntegerv",
+    "demangled": "glGetIntegerv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGetFloatv",
+    "demangled": "glGetFloatv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glUseProgram",
+    "demangled": "glUseProgram",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glIsProgram",
+    "demangled": "glIsProgram",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glActiveTexture",
+    "demangled": "glActiveTexture",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glViewport",
+    "demangled": "glViewport",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glClearColor",
+    "demangled": "glClearColor",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glColorMask",
+    "demangled": "glColorMask",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glClearDepthf",
+    "demangled": "glClearDepthf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDepthMask",
+    "demangled": "glDepthMask",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glClearStencil",
+    "demangled": "glClearStencil",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glStencilMask",
+    "demangled": "glStencilMask",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glEnable",
+    "demangled": "glEnable",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDisable",
+    "demangled": "glDisable",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glBlendFuncSeparate",
+    "demangled": "glBlendFuncSeparate",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "gettid",
+    "demangled": "gettid",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_baseD2Ev",
+    "demangled": "std::__ndk1::ios_base::{base dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base4initEPv",
+    "demangled": "std::__ndk1::ios_base::init(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1Ev",
+    "demangled": "std::__ndk1::locale::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk112__next_primeEm",
+    "demangled": "std::__ndk1::__next_prime(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16chrono12system_clock3nowEv",
+    "demangled": "std::__ndk1::chrono::system_clock::now()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16thread20hardware_concurrencyEv",
+    "demangled": "std::__ndk1::thread::hardware_concurrency()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEm",
+    "demangled": "std::__ndk1::to_string(unsigned long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx3fml6Thread13GetTaskRunnerEv",
+    "demangled": "lynx::fml::Thread::GetTaskRunner const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex4lockEv",
+    "demangled": "std::__ndk1::mutex::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutex6unlockEv",
+    "demangled": "std::__ndk1::mutex::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx3fml6ThreadC1ERKNS1_12ThreadConfigE",
+    "demangled": "lynx::fml::Thread::{ctor}(lynx::fml::Thread::ThreadConfig const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx3fml6ThreadD1Ev",
+    "demangled": "lynx::fml::Thread::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk111__call_onceERVmPvPFvS2_E",
+    "demangled": "std::__ndk1::__call_once(unsigned long volatile&, void*, void (*)(void*))",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strtol",
+    "demangled": "strtol",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEl",
+    "demangled": "std::__ndk1::to_string(long)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk19to_stringEi",
+    "demangled": "std::__ndk1::to_string(int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx3fml10TaskRunner12PostSyncTaskENS_4base15MoveOnlyClosureIvJEEE",
+    "demangled": "lynx::fml::TaskRunner::PostSyncTask(lynx::base::MoveOnlyClosure<void>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk18ios_base4moveERS0_",
+    "demangled": "std::__ndk1::ios_base::move(std::__ndk1::ios_base&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeC1ERKS0_",
+    "demangled": "std::__ndk1::locale::{ctor}(std::__ndk1::locale const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16localeaSERKS0_",
+    "demangled": "std::__ndk1::locale::operator=(std::__ndk1::locale const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_pure_virtual",
+    "demangled": "__cxa_pure_virtual",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "hypotf",
+    "demangled": "hypotf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_baseC1Ev",
+    "demangled": "std::__ndk1::__shared_mutex_base::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "strcmp",
+    "demangled": "strcmp",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base11SplitStringENSt6__ndk117basic_string_viewIcNS1_11char_traitsIcEEEEcRNS1_6vectorINS1_12basic_stringIcS4_NS1_9allocatorIcEEEENS8_ISA_EEEE",
+    "demangled": "lynx::base::SplitString(std::__ndk1::basic_string_view<char, std::__ndk1::char_traits<char>>, char, std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>>&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base13U8StringToU32ENSt6__ndk117basic_string_viewIcNS1_11char_traitsIcEEEE",
+    "demangled": "lynx::base::U8StringToU32(std::__ndk1::basic_string_view<char, std::__ndk1::char_traits<char>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base13U32StringToU8ENSt6__ndk117basic_string_viewIDiNS1_11char_traitsIDiEEEE",
+    "demangled": "lynx::base::U32StringToU8(std::__ndk1::basic_string_view<char32_t, std::__ndk1::char_traits<char32_t>>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "iswspace",
+    "demangled": "iswspace",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "free",
+    "demangled": "free",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "realloc",
+    "demangled": "realloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "malloc",
+    "demangled": "malloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__strlen_chk",
+    "demangled": "__strlen_chk",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk118condition_variableD1Ev",
+    "demangled": "std::__ndk1::condition_variable::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk15mutexD1Ev",
+    "demangled": "std::__ndk1::mutex::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base11lock_sharedEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::lock_shared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base13unlock_sharedEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::unlock_shared()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base4lockEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::lock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk119__shared_mutex_base6unlockEv",
+    "demangled": "std::__ndk1::__shared_mutex_base::unlock()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx3fml10TaskRunner16RunNowOrPostTaskERKNS0_6RefPtrIS1_EENS_4base15MoveOnlyClosureIvJEEE",
+    "demangled": "lynx::fml::TaskRunner::RunNowOrPostTask(lynx::fml::RefPtr<lynx::fml::TaskRunner> const&, lynx::base::MoveOnlyClosure<void>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "stat",
+    "demangled": "stat",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "opendir",
+    "demangled": "opendir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "readdir",
+    "demangled": "readdir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "closedir",
+    "demangled": "closedir",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base4JoinERKNSt6__ndk16vectorINS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS6_IS8_EEEEPKc",
+    "demangled": "lynx::base::Join(std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>> const&, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglGetDisplay",
+    "demangled": "eglGetDisplay",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglInitialize",
+    "demangled": "eglInitialize",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglQueryString",
+    "demangled": "eglQueryString",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglChooseConfig",
+    "demangled": "eglChooseConfig",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglCreateWindowSurface",
+    "demangled": "eglCreateWindowSurface",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglGetError",
+    "demangled": "eglGetError",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglDestroySurface",
+    "demangled": "eglDestroySurface",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__android_log_write",
+    "demangled": "__android_log_write",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android8GetClassEP7_JNIEnvPKc",
+    "demangled": "lynx::base::android::GetClass(_JNIEnv*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android7JavaRefIP8_jobjectE15ReleaseLocalRefEP7_JNIEnv",
+    "demangled": "lynx::base::android::JavaRef<_jobject*>::ReleaseLocalRef(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__system_property_get",
+    "demangled": "__system_property_get",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "atoi",
+    "demangled": "atoi",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android16JNIConvertHelper21ConvertToJNIByteArrayEP7_JNIEnvRKNSt6__ndk112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEE",
+    "demangled": "lynx::base::android::JNIConvertHelper::ConvertToJNIByteArray(_JNIEnv*, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android16JNIConvertHelper21ConvertToJNIStringUTFEP7_JNIEnvRKNSt6__ndk112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEE",
+    "demangled": "lynx::base::android::JNIConvertHelper::ConvertToJNIStringUTF(_JNIEnv*, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android16JNIConvertHelper15ConvertToStringEP7_JNIEnvP8_jstring",
+    "demangled": "lynx::base::android::JNIConvertHelper::ConvertToString(_JNIEnv*, _jstring*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android9GetMethodEP7_JNIEnvP7_jclassNS1_10MethodTypeEPKcS8_Pl",
+    "demangled": "lynx::base::android::GetMethod(_JNIEnv*, _jclass*, lynx::base::android::MethodType, char const*, char const*, long*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android22CheckAndPrintExceptionEP7_JNIEnv",
+    "demangled": "lynx::base::android::CheckAndPrintException(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android7JavaRefIP8_jobjectEC2EP7_JNIEnvS4_",
+    "demangled": "lynx::base::android::JavaRef<_jobject*>::{base ctor}(_JNIEnv*, _jobject*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android7JavaRefIP8_jobjectEC2Ev",
+    "demangled": "lynx::base::android::JavaRef<_jobject*>::{base ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android7JavaRefIP8_jobjectE17ResetNewGlobalRefEP7_JNIEnvS4_",
+    "demangled": "lynx::base::android::JavaRef<_jobject*>::ResetNewGlobalRef(_JNIEnv*, _jobject*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android16JNIConvertHelper21ConvertToJNIStringUTFEP7_JNIEnvPKc",
+    "demangled": "lynx::base::android::JNIConvertHelper::ConvertToJNIStringUTF(_JNIEnv*, char const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_release",
+    "demangled": "ANativeWindow_release",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_setBuffersGeometry",
+    "demangled": "ANativeWindow_setBuffersGeometry",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_fromSurface",
+    "demangled": "ANativeWindow_fromSurface",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android7JavaRefIP8_jobjectE16ReleaseGlobalRefEP7_JNIEnv",
+    "demangled": "lynx::base::android::JavaRef<_jobject*>::ReleaseGlobalRef(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glFlush",
+    "demangled": "glFlush",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglSwapBuffers",
+    "demangled": "eglSwapBuffers",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android7JavaRefIP8_jobjectE21ResetNewWeakGlobalRefEP7_JNIEnvS4_",
+    "demangled": "lynx::base::android::JavaRef<_jobject*>::ResetNewWeakGlobalRef(_JNIEnv*, _jobject*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android7JavaRefIP8_jobjectE16ResetNewLocalRefEP7_JNIEnvS4_",
+    "demangled": "lynx::base::android::JavaRef<_jobject*>::ResetNewLocalRef(_JNIEnv*, _jobject*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android7JavaRefIP8_jobjectE20ReleaseWeakGlobalRefEP7_JNIEnv",
+    "demangled": "lynx::base::android::JavaRef<_jobject*>::ReleaseWeakGlobalRef(_JNIEnv*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_lock",
+    "demangled": "ANativeWindow_lock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "ANativeWindow_unlockAndPost",
+    "demangled": "ANativeWindow_unlockAndPost",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AndroidBitmap_getInfo",
+    "demangled": "AndroidBitmap_getInfo",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AndroidBitmap_lockPixels",
+    "demangled": "AndroidBitmap_lockPixels",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "AndroidBitmap_unlockPixels",
+    "demangled": "AndroidBitmap_unlockPixels",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglCreateContext",
+    "demangled": "eglCreateContext",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglCreatePbufferSurface",
+    "demangled": "eglCreatePbufferSurface",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglMakeCurrent",
+    "demangled": "eglMakeCurrent",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "eglDestroyContext",
+    "demangled": "eglDestroyContext",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glGetUniformLocation",
+    "demangled": "glGetUniformLocation",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glUniform1i",
+    "demangled": "glUniform1i",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glClear",
+    "demangled": "glClear",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glDrawArrays",
+    "demangled": "glDrawArrays",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glUniform4fv",
+    "demangled": "glUniform4fv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "glUniformMatrix4fv",
+    "demangled": "glUniformMatrix4fv",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNSt6__ndk16chrono12steady_clock3nowEv",
+    "demangled": "std::__ndk1::chrono::steady_clock::now()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx4base7android16JNIConvertHelper17ConvertJavaBinaryEP7_JNIEnvP11_jbyteArray",
+    "demangled": "lynx::base::android::JNIConvertHelper::ConvertJavaBinary(_JNIEnv*, _jbyteArray*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Camera11SetPositionERKNS_4Vec4E",
+    "demangled": "skity::Camera::SetPosition(skity::Vec4 const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Camera6LookAtERKNS_4Vec4E",
+    "demangled": "skity::Camera::LookAt(skity::Vec4 const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Camera13SetCameraDistEf",
+    "demangled": "skity::Camera::SetCameraDist(float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Camera11SetRotationERKNS_6MatrixE",
+    "demangled": "skity::Camera::SetRotation(skity::Matrix const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Camera14GetFixedCameraEv",
+    "demangled": "skity::Camera::GetFixedCamera()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Camera9GetCameraEv",
+    "demangled": "skity::Camera::GetCamera()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6CameraC1Eff",
+    "demangled": "skity::Camera::{ctor}(float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas9SaveLayerERKNS_4RectERKNS_5PaintE",
+    "demangled": "skity::Canvas::SaveLayer(skity::Rect const&, skity::Paint const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity10MaskFilter8MakeBlurENS_9BlurStyleEf",
+    "demangled": "skity::MaskFilter::MakeBlur(skity::BlurStyle, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint8SetColorEj",
+    "demangled": "skity::Paint::SetColor(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas4SaveEv",
+    "demangled": "skity::Canvas::Save()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas9TranslateEff",
+    "demangled": "skity::Canvas::Translate(float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas8DrawPathERKNS_4PathERKNS_5PaintE",
+    "demangled": "skity::Canvas::DrawPath(skity::Path const&, skity::Paint const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas7RestoreEv",
+    "demangled": "skity::Canvas::Restore()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5PaintD1Ev",
+    "demangled": "skity::Paint::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas9DrawImageERKNSt6__ndk110shared_ptrINS_5ImageEEERKNS_4RectERKNS_15SamplingOptionsEPKNS_5PaintE",
+    "demangled": "skity::Canvas::DrawImage(std::__ndk1::shared_ptr<skity::Image> const&, skity::Rect const&, skity::SamplingOptions const&, skity::Paint const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas8DrawRectERKNS_4RectERKNS_5PaintE",
+    "demangled": "skity::Canvas::DrawRect(skity::Rect const&, skity::Paint const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity15TextBlobBuilder13BuildTextBlobEPKcRKNS_5PaintEPNS_16TypefaceDelegateE",
+    "demangled": "skity::TextBlobBuilder::BuildTextBlob(char const*, skity::Paint const&, skity::TypefaceDelegate*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas11ResetMatrixEv",
+    "demangled": "skity::Canvas::ResetMatrix()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas6ConcatERKNS_6MatrixE",
+    "demangled": "skity::Canvas::Concat(skity::Matrix const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas8ClipRectERKNS_4RectENS0_6ClipOpE",
+    "demangled": "skity::Canvas::ClipRect(skity::Rect const&, skity::Canvas::ClipOp)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas5ScaleEff",
+    "demangled": "skity::Canvas::Scale(float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity6Canvas14GetTotalMatrixEv",
+    "demangled": "skity::Canvas::GetTotalMatrix const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas12DrawTextBlobEPKNS_8TextBlobEffRKNS_5PaintE",
+    "demangled": "skity::Canvas::DrawTextBlob(skity::TextBlob const*, float, float, skity::Paint const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Data12MakeWithProcEPKvmPFvS2_PvES3_",
+    "demangled": "skity::Data::MakeWithProc(void const*, unsigned long, void (*)(void const*, void*), void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity8Typeface12MakeFromDataERKNSt6__ndk110shared_ptrINS_4DataEEE",
+    "demangled": "skity::Typeface::MakeFromData(std::__ndk1::shared_ptr<skity::Data> const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity8Typeface18GetDefaultTypefaceENS_9FontStyleE",
+    "demangled": "skity::Typeface::GetDefaultTypeface(skity::FontStyle)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11FontManager10RefDefaultEv",
+    "demangled": "skity::FontManager::RefDefault()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11FontManager16MatchFamilyStyleEPKcRKNS_9FontStyleE",
+    "demangled": "skity::FontManager::MatchFamilyStyle(char const*, skity::FontStyle const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Font7SetSizeEf",
+    "demangled": "skity::Font::SetSize(float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5PaintC1Ev",
+    "demangled": "skity::Paint::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity8TextBlob12GetBoundSizeEv",
+    "demangled": "skity::TextBlob::GetBoundSize const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11FontManager25MatchFamilyStyleCharacterEPKcRKNS_9FontStyleEPS2_ij",
+    "demangled": "skity::FontManager::MatchFamilyStyleCharacter(char const*, skity::FontStyle const&, char const**, int, unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity9FontStyleC1Ev",
+    "demangled": "skity::FontStyle::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity9FontStyleC1EiiNS0_5SlantE",
+    "demangled": "skity::FontStyle::{ctor}(int, int, skity::FontStyle::Slant)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "tolower",
+    "demangled": "tolower",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4FontC1ENSt6__ndk110shared_ptrINS_8TypefaceEEE",
+    "demangled": "skity::Font::{ctor}(std::__ndk1::shared_ptr<skity::Typeface>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Image9MakeImageENSt6__ndk110shared_ptrINS_6PixmapEEEPNS_10GPUContextE",
+    "demangled": "skity::Image::MakeImage(std::__ndk1::shared_ptr<skity::Pixmap>, skity::GPUContext*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Image11MakeHWImageENSt6__ndk110shared_ptrINS_7TextureEEE",
+    "demangled": "skity::Image::MakeHWImage(std::__ndk1::shared_ptr<skity::Texture>)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6PixmapC1ENSt6__ndk110shared_ptrINS_4DataEEEmjjNS_9AlphaTypeENS_9ColorTypeE",
+    "demangled": "skity::Pixmap::{ctor}(std::__ndk1::shared_ptr<skity::Data>, unsigned long, unsigned int, unsigned int, skity::AlphaType, skity::ColorType)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6PixmapD1Ev",
+    "demangled": "skity::Pixmap::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity6Matrix10IsIdentityEv",
+    "demangled": "skity::Matrix::IsIdentity const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity6Matrix6InvertEPS0_",
+    "demangled": "skity::Matrix::Invert const(skity::Matrix*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity6Matrix7MapRectEPNS_4RectERKS1_",
+    "demangled": "skity::Matrix::MapRect const(skity::Rect*, skity::Rect const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity6Matrix9MapPointsEPNS_4Vec2EPKS1_i",
+    "demangled": "skity::Matrix::MapPoints const(skity::Vec2*, skity::Vec2 const*, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Matrix4Set9EPKf",
+    "demangled": "skity::Matrix::Set9(float const*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Matrix9PreConcatERKS0_",
+    "demangled": "skity::Matrix::PreConcat(skity::Matrix const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Matrix9PreRotateEf",
+    "demangled": "skity::Matrix::PreRotate(float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Matrix9PreRotateEfff",
+    "demangled": "skity::Matrix::PreRotate(float, float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity10Quaternion13EulerToMatrixEfff",
+    "demangled": "skity::Quaternion::EulerToMatrix(float, float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint12SetAntiAliasEb",
+    "demangled": "skity::Paint::SetAntiAlias(bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint8SetAlphaEh",
+    "demangled": "skity::Paint::SetAlpha(unsigned char)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity12ColorFilters5BlendEjNS_9BlendModeE",
+    "demangled": "skity::ColorFilters::Blend(unsigned int, skity::BlendMode)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint8SetStyleENS0_5StyleE",
+    "demangled": "skity::Paint::SetStyle(skity::Paint::Style)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint14SetStrokeColorEj",
+    "demangled": "skity::Paint::SetStrokeColor(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint12SetStrokeCapENS0_3CapE",
+    "demangled": "skity::Paint::SetStrokeCap(skity::Paint::Cap)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint13SetStrokeJoinENS0_4JoinE",
+    "demangled": "skity::Paint::SetStrokeJoin(skity::Paint::Join)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint14SetStrokeMiterEf",
+    "demangled": "skity::Paint::SetStrokeMiter(float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity5Paint14SetStrokeWidthEf",
+    "demangled": "skity::Paint::SetStrokeWidth(float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity5Paint14GetStrokeWidthEv",
+    "demangled": "skity::Paint::GetStrokeWidth const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Path5ResetEv",
+    "demangled": "skity::Path::Reset()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Path7AddPathERKS0_NS0_7AddModeE",
+    "demangled": "skity::Path::AddPath(skity::Path const&, skity::Path::AddMode)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Path6MoveToEff",
+    "demangled": "skity::Path::MoveTo(float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Path7CubicToEffffff",
+    "demangled": "skity::Path::CubicTo(float, float, float, float, float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Path6LineToEff",
+    "demangled": "skity::Path::LineTo(float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Path7AddPathERKS0_RKNS_6MatrixENS0_7AddModeE",
+    "demangled": "skity::Path::AddPath(skity::Path const&, skity::Matrix const&, skity::Path::AddMode)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity4Path14CopyWithMatrixERKNS_6MatrixE",
+    "demangled": "skity::Path::CopyWithMatrix const(skity::Matrix const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Path5ArcToERKNS_4RectEffb",
+    "demangled": "skity::Path::ArcTo(skity::Rect const&, float, float, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6PathOp7ExecuteERKNS_4PathES3_NS0_2OpEPS1_",
+    "demangled": "skity::PathOp::Execute(skity::Path const&, skity::Path const&, skity::PathOp::Op, skity::Path*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity4Path5CloseEv",
+    "demangled": "skity::Path::Close()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity4Path13ComputeBoundsEv",
+    "demangled": "skity::Path::ComputeBounds const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity10PathEffect18MakeDashPathEffectEPKfif",
+    "demangled": "skity::PathEffect::MakeDashPathEffect(float const*, int, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11PathMeasure7SetPathEPKNS_4PathEb",
+    "demangled": "skity::PathMeasure::SetPath(skity::Path const*, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11PathMeasure11NextContourEv",
+    "demangled": "skity::PathMeasure::NextContour()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11PathMeasure9GetLengthEv",
+    "demangled": "skity::PathMeasure::GetLength()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11PathMeasure9GetPosTanEfPNS_4Vec4ES2_",
+    "demangled": "skity::PathMeasure::GetPosTan(float, skity::Vec4*, skity::Vec4*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11PathMeasure10GetSegmentEffPNS_4PathEb",
+    "demangled": "skity::PathMeasure::GetSegment(float, float, skity::Path*, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11PathMeasureC1Ev",
+    "demangled": "skity::PathMeasure::{ctor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity11PathMeasureD1Ev",
+    "demangled": "skity::PathMeasure::{dtor}()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity10Quaternion8FromXYZWEffff",
+    "demangled": "skity::Quaternion::FromXYZW(float, float, float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity10Quaternion9FromEulerEfff",
+    "demangled": "skity::Quaternion::FromEuler(float, float, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity10Quaternion5SlerpERKS0_f",
+    "demangled": "skity::Quaternion::Slerp const(skity::Quaternion const&, float)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity10QuaternionmlERKS0_",
+    "demangled": "skity::Quaternion::operator* const(skity::Quaternion const&)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity10Quaternion10ReciprocalEv",
+    "demangled": "skity::Quaternion::Reciprocal const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity10Quaternion8NegativeEv",
+    "demangled": "skity::Quaternion::Negative const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK5skity10Quaternion8ToMatrixEv",
+    "demangled": "skity::Quaternion::ToMatrix const()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity16Color4fFromColorEj",
+    "demangled": "skity::Color4fFromColor(unsigned int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Shader10MakeLinearEPKNS_4Vec4ES3_PKfiNS_8TileModeEi",
+    "demangled": "skity::Shader::MakeLinear(skity::Vec4 const*, skity::Vec4 const*, float const*, int, skity::TileMode, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Shader10MakeRadialERKNS_4Vec4EfPS2_PKfiNS_8TileModeEi",
+    "demangled": "skity::Shader::MakeRadial(skity::Vec4 const&, float, skity::Vec4 const*, float const*, int, skity::TileMode, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Shader19MakeTwoPointConicalERKNS_4Vec4EfS3_fPS2_PKfiNS_8TileModeEi",
+    "demangled": "skity::Shader::MakeTwoPointConical(skity::Vec4 const&, float, skity::Vec4 const&, float, skity::Vec4 const*, float const*, int, skity::TileMode, int)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas5FlushEv",
+    "demangled": "skity::Canvas::Flush()",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__cxa_thread_atexit",
+    "demangled": "__cxa_thread_atexit",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity15GLContextCreateEPv",
+    "demangled": "skity::GLContextCreate(void*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6Canvas18MakeSoftwareCanvasEPNS_6BitmapE",
+    "demangled": "skity::Canvas::MakeSoftwareCanvas(skity::Bitmap*)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN5skity6BitmapC1ENSt6__ndk110shared_ptrINS_6PixmapEEEb",
+    "demangled": "skity::Bitmap::{ctor}(std::__ndk1::shared_ptr<skity::Pixmap>, bool)",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_mutex_unlock",
+    "demangled": "pthread_mutex_unlock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_getspecific",
+    "demangled": "pthread_getspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "memcpy",
+    "demangled": "memcpy",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_create",
+    "demangled": "pthread_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "__stack_chk_fail",
+    "demangled": "__stack_chk_fail",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_once",
+    "demangled": "pthread_once",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "memmove",
+    "demangled": "memmove",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_setspecific",
+    "demangled": "pthread_setspecific",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_key_delete",
+    "demangled": "pthread_key_delete",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "calloc",
+    "demangled": "calloc",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "memset",
+    "demangled": "memset",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "pthread_key_create",
+    "demangled": "pthread_key_create",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "pthread_mutex_lock",
+    "demangled": "pthread_mutex_lock",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "powf",
+    "demangled": "powf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sinf",
+    "demangled": "sinf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "cosf",
+    "demangled": "cosf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fmodf",
+    "demangled": "fmodf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "sincosf",
+    "demangled": "sincosf",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "fmod",
+    "demangled": "fmod",
+    "value": "0x0",
+    "size": 0,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20ScopedGLResetRestoreC2Ej",
+    "demangled": "lynx::animax::ScopedGLResetRestore::{base ctor}(unsigned int)",
+    "value": "0x4a3dc",
+    "size": 488,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer5PauseEv",
+    "demangled": "lynx::animax::AnimaXPlayer::Pause()",
+    "value": "0x574b0",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax9TextLayer12ApplyEffectsERNS0_5PaintE",
+    "demangled": "lynx::animax::TextLayer::ApplyEffects(lynx::animax::Paint&)",
+    "value": "0x668cc",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21VideoShaderYUVAndroidD0Ev",
+    "demangled": "lynx::animax::VideoShaderYUVAndroid::{deleting dtor}()",
+    "value": "0x82140",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC1Ev",
+    "demangled": "lynx::animax::AnimaXValueParam::{ctor}()",
+    "value": "0x87b5c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax20LayerCallbackRequest10GetKeyPathEv",
+    "demangled": "lynx::animax::LayerCallbackRequest::GetKeyPath const()",
+    "value": "0x467e4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20LayerCallbackRequestC2ENS0_17LayerPropertyTypeENSt6__ndk110unique_ptrINS0_13AnimaXKeyPathENS3_14default_deleteIS5_EEEENS3_10shared_ptrINS0_19AnimaXValueCallbackEEENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::LayerCallbackRequest::{base ctor}(lynx::animax::LayerPropertyType, std::__ndk1::unique_ptr<lynx::animax::AnimaXKeyPath, std::__ndk1::default_delete<lynx::animax::AnimaXKeyPath>>, std::__ndk1::shared_ptr<lynx::animax::AnimaXValueCallback>, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x88abc",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18PlayerEventTrackerC2Ev",
+    "demangled": "lynx::animax::PlayerEventTracker::{base ctor}()",
+    "value": "0x4c844",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer16SetKeepLastFrameEb",
+    "demangled": "lynx::animax::AnimaXPlayer::SetKeepLastFrame(bool)",
+    "value": "0x56db0",
+    "size": 136,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer6ResumeEv",
+    "demangled": "lynx::animax::AnimaXPlayer::Resume()",
+    "value": "0x57590",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer5OnTapEff",
+    "demangled": "lynx::animax::AnimaXPlayer::OnTap(float, float)",
+    "value": "0x581d0",
+    "size": 176,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource11GetTrackingEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetTracking const()",
+    "value": "0x64ef4",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax17VideoPlayerCustom14GetCachedFrameEi",
+    "demangled": "lynx::animax::VideoPlayerCustom::GetCachedFrame const(int)",
+    "value": "0x73658",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax17VideoAssetAndroid23IsSupportDecodeBySystemEb",
+    "demangled": "lynx::animax::VideoAssetAndroid::IsSupportDecodeBySystem const(bool)",
+    "value": "0x81c8c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC1ERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi",
+    "demangled": "lynx::animax::AnimaXValueParam::{ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x878e8",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer12SetLoopCountEi",
+    "demangled": "lynx::animax::AnimaXPlayer::SetLoopCount(int)",
+    "value": "0x56330",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo11SetBitDepthEj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetBitDepth(unsigned int)",
+    "value": "0x73f4c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam14GetNumberValueEv",
+    "demangled": "lynx::animax::AnimaXValueParam::GetNumberValue const()",
+    "value": "0x87d3c",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax18LayerStaticRequest12GetLayerTypeEv",
+    "demangled": "lynx::animax::LayerStaticRequest::GetLayerType const()",
+    "value": "0x88a04",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21PropertyUpdateRequestC2ENS1_4TypeENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::PropertyUpdateRequest::{base ctor}(lynx::animax::PropertyUpdateRequest::Type, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x888a8",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__emutls_get_address",
+    "demangled": "__emutls_get_address",
+    "value": "0x441b4",
+    "size": 344,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10LogMessageD2Ev",
+    "demangled": "lynx::animax::LogMessage::{base dtor}()",
+    "value": "0x4b2e8",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer15SetMaxFrameRateEd",
+    "demangled": "lynx::animax::AnimaXPlayer::SetMaxFrameRate(double)",
+    "value": "0x56ff8",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource14GetStrokeWidthEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetStrokeWidth const()",
+    "value": "0x64eb8",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayerD2Ev",
+    "demangled": "lynx::animax::AnimaXPlayer::{base dtor}()",
+    "value": "0x53ae8",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer14SetImageFolderENSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::SetImageFolder(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>)",
+    "value": "0x55584",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer21LoadCompositionAssetsENSt6__ndk110shared_ptrINS0_16CompositionModelEEENS_4base15MoveOnlyClosureIvJEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::LoadCompositionAssets(std::__ndk1::shared_ptr<lynx::animax::CompositionModel>, lynx::base::MoveOnlyClosure<void>)",
+    "value": "0x55e60",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer13SetStartFrameEd",
+    "demangled": "lynx::animax::AnimaXPlayer::SetStartFrame(double)",
+    "value": "0x56be0",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax6BitmapC1EjjPKvPFvS3_ES3_NS0_12BitmapFormatENS0_15BitmapAlphaTypeE",
+    "demangled": "lynx::animax::Bitmap::{ctor}(unsigned int, unsigned int, void const*, void (*)(void const*), void const*, lynx::animax::BitmapFormat, lynx::animax::BitmapAlphaType)",
+    "value": "0x74968",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL4DrawENSt6__ndk110unique_ptrINS0_11TextureInfoENS2_14default_deleteIS4_EEEERKNS2_5arrayIfLm16EEE",
+    "demangled": "lynx::animax::VideoShaderGL::Draw(std::__ndk1::unique_ptr<lynx::animax::TextureInfo, std::__ndk1::default_delete<lynx::animax::TextureInfo>>, std::__ndk1::array<float, (unsigned long)16> const&)",
+    "value": "0x82488",
+    "size": 332,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer15GetCurrentFrameEv",
+    "demangled": "lynx::animax::AnimaXPlayer::GetCurrentFrame()",
+    "value": "0x57d4c",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10TextHelper12RegisterImplEPS1_",
+    "demangled": "lynx::animax::TextHelper::RegisterImpl(lynx::animax::TextHelper*)",
+    "value": "0x65f8c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax6Bitmap4MakeEjjPKvPFvS3_ES3_NS0_12BitmapFormatENS0_15BitmapAlphaTypeE",
+    "demangled": "lynx::animax::Bitmap::Make(unsigned int, unsigned int, void const*, void (*)(void const*), void const*, lynx::animax::BitmapFormat, lynx::animax::BitmapAlphaType)",
+    "value": "0x749e4",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax6Bitmap6HeightEv",
+    "demangled": "lynx::animax::Bitmap::Height const()",
+    "value": "0x74a50",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20ScopedGLResetRestoreC1Ej",
+    "demangled": "lynx::animax::ScopedGLResetRestore::{ctor}(unsigned int)",
+    "value": "0x4a3dc",
+    "size": 488,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21PropertyUpdateRequest14GetRequestTypeEv",
+    "demangled": "lynx::animax::PropertyUpdateRequest::GetRequestType const()",
+    "value": "0x88918",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__bss_start",
+    "demangled": "__bss_start",
+    "value": "0xa0090",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18PlayerEventTrackerC1Ev",
+    "demangled": "lynx::animax::PlayerEventTracker::{ctor}()",
+    "value": "0x4c844",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax19AnimaXPlayerBuilder10SetAbilityENSt6__ndk110shared_ptrINS0_13AnimaXAbilityEEE",
+    "demangled": "lynx::animax::AnimaXPlayerBuilder::SetAbility(std::__ndk1::shared_ptr<lynx::animax::AnimaXAbility>)",
+    "value": "0x58914",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource11GetTextSizeEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetTextSize const()",
+    "value": "0x64f74",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12DocumentData12GetValueTypeEv",
+    "demangled": "lynx::animax::DocumentData::GetValueType const()",
+    "value": "0x5cd9c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustomC1ENSt6__ndk110unique_ptrINS0_18VideoDecoderCustomENS2_14default_deleteIS4_EEEE",
+    "demangled": "lynx::animax::VideoPlayerCustom::{ctor}(std::__ndk1::unique_ptr<lynx::animax::VideoDecoderCustom, std::__ndk1::default_delete<lynx::animax::VideoDecoderCustom>>)",
+    "value": "0x72ff4",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21PropertyUpdateRequest14InvokeCallbackERKNS0_22PropertyUpdateResponseE",
+    "demangled": "lynx::animax::PropertyUpdateRequest::InvokeCallback const(lynx::animax::PropertyUpdateResponse const&)",
+    "value": "0x88900",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource15GetDocumentDataEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetDocumentData const()",
+    "value": "0x64de0",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL17GetAFrameLocationEv",
+    "demangled": "lynx::animax::VideoShaderGL::GetAFrameLocation()",
+    "value": "0x82a84",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10LogMessageD1Ev",
+    "demangled": "lynx::animax::LogMessage::{dtor}()",
+    "value": "0x4b2e8",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustom16GetReusableFrameEv",
+    "demangled": "lynx::animax::VideoPlayerCustom::GetReusableFrame()",
+    "value": "0x73778",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax22PropertyUpdateResponse17GetUpdateMessagesEv",
+    "demangled": "lynx::animax::PropertyUpdateResponse::GetUpdateMessages const()",
+    "value": "0x88f0c",
+    "size": 352,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax13AnimaXKeyPath11IsContainerERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::AnimaXKeyPath::IsContainer const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x86500",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax13AnimaXKeyPath19PropagateToChildrenERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi",
+    "demangled": "lynx::animax::AnimaXKeyPath::PropagateToChildren const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x8674c",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer4InitERNS0_19AnimaXPlayerBuilderE",
+    "demangled": "lynx::animax::AnimaXPlayer::Init(lynx::animax::AnimaXPlayerBuilder&)",
+    "value": "0x531f4",
+    "size": 1664,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayerD1Ev",
+    "demangled": "lynx::animax::AnimaXPlayer::{dtor}()",
+    "value": "0x53ae8",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax13AnimaXKeyPath15FullyResolvesToERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi",
+    "demangled": "lynx::animax::AnimaXKeyPath::FullyResolvesTo const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x865c8",
+    "size": 340,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer19UpdateLayerPropertyENSt6__ndk110unique_ptrINS0_18LayerStaticRequestENS2_14default_deleteIS4_EEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::UpdateLayerProperty(std::__ndk1::unique_ptr<lynx::animax::LayerStaticRequest, std::__ndk1::default_delete<lynx::animax::LayerStaticRequest>>)",
+    "value": "0x5856c",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL5ValidEv",
+    "demangled": "lynx::animax::VideoShaderGL::Valid()",
+    "value": "0x823a0",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource14GetStrokeColorEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetStrokeColor const()",
+    "value": "0x64e7c",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21ResourceUpdateRequest8GetValueEv",
+    "demangled": "lynx::animax::ResourceUpdateRequest::GetValue const()",
+    "value": "0x88c70",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax17VideoAssetAndroid15GetFrameRawDataEi",
+    "demangled": "lynx::animax::VideoAssetAndroid::GetFrameRawData const(int)",
+    "value": "0x81b70",
+    "size": 152,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18PlayerEventTracker5ResetEv",
+    "demangled": "lynx::animax::PlayerEventTracker::Reset()",
+    "value": "0x4c84c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer6ReloadEv",
+    "demangled": "lynx::animax::AnimaXPlayer::Reload()",
+    "value": "0x53dc8",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer19SetFpsEventIntervalEl",
+    "demangled": "lynx::animax::AnimaXPlayer::SetFpsEventInterval(long)",
+    "value": "0x565f8",
+    "size": 364,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer19SetResourcePropertyENSt6__ndk110unique_ptrINS0_21ResourceUpdateRequestENS2_14default_deleteIS4_EEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::SetResourceProperty(std::__ndk1::unique_ptr<lynx::animax::ResourceUpdateRequest, std::__ndk1::default_delete<lynx::animax::ResourceUpdateRequest>>)",
+    "value": "0x586a0",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustomD2Ev",
+    "demangled": "lynx::animax::VideoPlayerCustom::{base dtor}()",
+    "value": "0x730d4",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax6BitmapD2Ev",
+    "demangled": "lynx::animax::Bitmap::{base dtor}()",
+    "value": "0x7497c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax18LayerStaticRequest10GetKeyPathEv",
+    "demangled": "lynx::animax::LayerStaticRequest::GetKeyPath const()",
+    "value": "0x467e4",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer12SetObjectFitENS0_9ObjectFitE",
+    "demangled": "lynx::animax::AnimaXPlayer::SetObjectFit(lynx::animax::ObjectFit)",
+    "value": "0x56e78",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax5ColorC2Ei",
+    "demangled": "lynx::animax::Color::{base ctor}(int)",
+    "value": "0x683d8",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustom13UpdateTextureEi",
+    "demangled": "lynx::animax::VideoPlayerCustom::UpdateTexture(int)",
+    "value": "0x73180",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo9GetHeightEv",
+    "demangled": "lynx::animax::YUVFrameInfo::GetHeight const()",
+    "value": "0x73f10",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10TextHelper17CreateTextContentERKNS0_21TextContentDataSourceE",
+    "demangled": "lynx::animax::TextHelper::CreateTextContent(lynx::animax::TextContentDataSource const&)",
+    "value": "0x65e6c",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL4InitEiiRKNSt6__ndk15arrayIfLm4EEES6_",
+    "demangled": "lynx::animax::VideoShaderGL::Init(int, int, std::__ndk1::array<float, (unsigned long)4> const&, std::__ndk1::array<float, (unsigned long)4> const&)",
+    "value": "0x823bc",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax13AnimaXKeyPath14GetDescriptionEv",
+    "demangled": "lynx::animax::AnimaXKeyPath::GetDescription const()",
+    "value": "0x867cc",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer11SetAutoplayEb",
+    "demangled": "lynx::animax::AnimaXPlayer::SetAutoplay(bool)",
+    "value": "0x568a8",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12DocumentDataC1ENSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEES8_fNS0_21DocumentJustificationEjffiifbNS2_10unique_ptrINS0_6PointFENS2_14default_deleteISB_EEEESE_",
+    "demangled": "lynx::animax::DocumentData::{ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, float, lynx::animax::DocumentJustification, unsigned int, float, float, int, int, float, bool, std::__ndk1::unique_ptr<lynx::animax::PointF, std::__ndk1::default_delete<lynx::animax::PointF>>, std::__ndk1::unique_ptr<lynx::animax::PointF, std::__ndk1::default_delete<lynx::animax::PointF>>)",
+    "value": "0x68638",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo12SetYUVPixFmtENS0_9YUVPixFmtE",
+    "demangled": "lynx::animax::YUVFrameInfo::SetYUVPixFmt(lynx::animax::YUVPixFmt)",
+    "value": "0x73f54",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax27RegisterVideoPlayerProviderEPKcNSt6__ndk110shared_ptrINS0_19VideoPlayerProviderEEE",
+    "demangled": "lynx::animax::RegisterVideoPlayerProvider(char const*, std::__ndk1::shared_ptr<lynx::animax::VideoPlayerProvider>)",
+    "value": "0x74294",
+    "size": 1060,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax17VideoAssetAndroid15GetPrevKeyFrameEi",
+    "demangled": "lynx::animax::VideoAssetAndroid::GetPrevKeyFrame const(int)",
+    "value": "0x81a90",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10TextHelper4ImplEv",
+    "demangled": "lynx::animax::TextHelper::Impl()",
+    "value": "0x65da0",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12DocumentDataC2Ev",
+    "demangled": "lynx::animax::DocumentData::{base ctor}()",
+    "value": "0x68454",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x44348",
+    "size": 1056,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL13OnInitTextureEv",
+    "demangled": "lynx::animax::VideoShaderGL::OnInitTexture()",
+    "value": "0x82940",
+    "size": 276,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13AnimaXKeyPathC2Ev",
+    "demangled": "lynx::animax::AnimaXKeyPath::{base ctor}()",
+    "value": "0x86308",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_edata",
+    "demangled": "_edata",
+    "value": "0xa0090",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13AnimaXSurface18CreateAnimaXCanvasEPN5skity6CanvasEiiPNS2_10GPUContextE",
+    "demangled": "lynx::animax::AnimaXSurface::CreateAnimaXCanvas(skity::Canvas*, int, int, skity::GPUContext*)",
+    "value": "0x5a520",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustomD1Ev",
+    "demangled": "lynx::animax::VideoPlayerCustom::{dtor}()",
+    "value": "0x730d4",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo20GetChannelDataHeightEj",
+    "demangled": "lynx::animax::YUVFrameInfo::GetChannelDataHeight const(unsigned int)",
+    "value": "0x73f90",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax6BitmapD1Ev",
+    "demangled": "lynx::animax::Bitmap::{dtor}()",
+    "value": "0x7497c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13AnimaXKeyPathC1ERKS1_",
+    "demangled": "lynx::animax::AnimaXKeyPath::{ctor}(lynx::animax::AnimaXKeyPath const&)",
+    "value": "0x86400",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax5ColorC1Ei",
+    "demangled": "lynx::animax::Color::{ctor}(int)",
+    "value": "0x683d8",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18PlayerEventTracker9GetEventsEv",
+    "demangled": "lynx::animax::PlayerEventTracker::GetEvents()",
+    "value": "0x449fc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12ThreadAssert6AssertENS1_4TypeE",
+    "demangled": "lynx::animax::ThreadAssert::Assert(lynx::animax::ThreadAssert::Type)",
+    "value": "0x449fc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer20SubscribeUpdateEventEi",
+    "demangled": "lynx::animax::AnimaXPlayer::SubscribeUpdateEvent(int)",
+    "value": "0x578d4",
+    "size": 284,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax19AnimaXPlayerBuilder17SetResourceLoaderENSt6__ndk110shared_ptrINS0_6LoaderINS0_15ResourceRequestENS0_16ResourceResponseEEEEE",
+    "demangled": "lynx::animax::AnimaXPlayerBuilder::SetResourceLoader(std::__ndk1::shared_ptr<lynx::animax::Loader<lynx::animax::ResourceRequest, lynx::animax::ResourceResponse>>)",
+    "value": "0x58938",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax19AnimaXPlayerBuilder14SetUnzipLoaderENSt6__ndk110shared_ptrINS0_6LoaderINS0_12UnzipRequestENS0_13UnzipResponseEEEEE",
+    "demangled": "lynx::animax::AnimaXPlayerBuilder::SetUnzipLoader(std::__ndk1::shared_ptr<lynx::animax::Loader<lynx::animax::UnzipRequest, lynx::animax::UnzipResponse>>)",
+    "value": "0x58954",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoAssetAndroid16PrepareFrameDataERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::VideoAssetAndroid::PrepareFrameData(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x81838",
+    "size": 592,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20LayerCallbackRequestC1ENS0_17LayerPropertyTypeENSt6__ndk110unique_ptrINS0_13AnimaXKeyPathENS3_14default_deleteIS5_EEEENS3_10shared_ptrINS0_19AnimaXValueCallbackEEENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::LayerCallbackRequest::{ctor}(lynx::animax::LayerPropertyType, std::__ndk1::unique_ptr<lynx::animax::AnimaXKeyPath, std::__ndk1::default_delete<lynx::animax::AnimaXKeyPath>>, std::__ndk1::shared_ptr<lynx::animax::AnimaXValueCallback>, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x88abc",
+    "size": 68,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam7GetTypeEv",
+    "demangled": "lynx::animax::AnimaXValueParam::GetType const()",
+    "value": "0x882cc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC1Edddi",
+    "demangled": "lynx::animax::AnimaXValueParam::{ctor}(double, double, double, int)",
+    "value": "0x87a28",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13AnimaXKeyPathC2ERKS1_",
+    "demangled": "lynx::animax::AnimaXKeyPath::{base ctor}(lynx::animax::AnimaXKeyPath const&)",
+    "value": "0x86400",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_end",
+    "demangled": "_end",
+    "value": "0xa0990",
+    "size": 0,
+    "type": "STT_NOTYPE",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12DocumentDataC1Ev",
+    "demangled": "lynx::animax::DocumentData::{ctor}()",
+    "value": "0x68454",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10LogMessage4InitEPKci",
+    "demangled": "lynx::animax::LogMessage::Init(char const*, int)",
+    "value": "0x4a950",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer17SetObjectPositionENS0_14ObjectPositionE",
+    "demangled": "lynx::animax::AnimaXPlayer::SetObjectPosition(lynx::animax::ObjectPosition)",
+    "value": "0x56f18",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayerC1ERNS0_19AnimaXPlayerBuilderE",
+    "demangled": "lynx::animax::AnimaXPlayer::{ctor}(lynx::animax::AnimaXPlayerBuilder&)",
+    "value": "0x52ed4",
+    "size": 792,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax20AnimaXAbilityAndroid17CreateVideoPlayerEl",
+    "demangled": "lynx::animax::AnimaXAbilityAndroid::CreateVideoPlayer const(long)",
+    "value": "0x7d710",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam7ToValueENS0_17LayerPropertyTypeE",
+    "demangled": "lynx::animax::AnimaXValueParam::ToValue const(lynx::animax::LayerPropertyType)",
+    "value": "0x8807c",
+    "size": 592,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18LayerStaticRequestC2ENS0_17LayerPropertyTypeENSt6__ndk110unique_ptrINS0_13AnimaXKeyPathENS3_14default_deleteIS5_EEEENS4_INS0_16AnimaXValueParamENS6_IS9_EEEENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::LayerStaticRequest::{base ctor}(lynx::animax::LayerPropertyType, std::__ndk1::unique_ptr<lynx::animax::AnimaXKeyPath, std::__ndk1::default_delete<lynx::animax::AnimaXKeyPath>>, std::__ndk1::unique_ptr<lynx::animax::AnimaXValueParam, std::__ndk1::default_delete<lynx::animax::AnimaXValueParam>>, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x889cc",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18PlayerEventTracker9MarkEventENS1_18AnimationEventTypeE",
+    "demangled": "lynx::animax::PlayerEventTracker::MarkEvent(lynx::animax::PlayerEventTracker::AnimationEventType)",
+    "value": "0x4c868",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10TextHelper22CreateFontAssetManagerEv",
+    "demangled": "lynx::animax::TextHelper::CreateFontAssetManager()",
+    "value": "0x65ed8",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo12SetLineWidthEjj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetLineWidth(unsigned int, unsigned int)",
+    "value": "0x73f28",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC1Edi",
+    "demangled": "lynx::animax::AnimaXValueParam::{ctor}(double, int)",
+    "value": "0x87938",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13AnimaXKeyPathC1Ev",
+    "demangled": "lynx::animax::AnimaXKeyPath::{ctor}()",
+    "value": "0x86308",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer14SetAutoReverseEb",
+    "demangled": "lynx::animax::AnimaXPlayer::SetAutoReverse(bool)",
+    "value": "0x56418",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax19AnimaXPlayerBuilder16AddEventListenerENS_4base15MoveOnlyClosureIvJPNS0_12AnimaXPlayerEKNS0_5EventERKNSt6__ndk13mapINS8_12basic_stringIcNS8_11char_traitsIcEENS8_9allocatorIcEEEENS0_15EventParamValueENS8_4lessISF_EENSD_INS8_4pairIKSF_SG_EEEEEEEEE",
+    "demangled": "lynx::animax::AnimaXPlayerBuilder::AddEventListener(lynx::base::MoveOnlyClosure<void, lynx::animax::AnimaXPlayer*, lynx::animax::Event const, std::__ndk1::map<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, lynx::animax::EventParamValue, std::__ndk1::less<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const, lynx::animax::EventParamValue>>> const&>)",
+    "value": "0x58970",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustomD0Ev",
+    "demangled": "lynx::animax::VideoPlayerCustom::{deleting dtor}()",
+    "value": "0x73168",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax6Bitmap6PixelsEv",
+    "demangled": "lynx::animax::Bitmap::Pixels const()",
+    "value": "0x74a58",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL15InitFramebufferEv",
+    "demangled": "lynx::animax::VideoShaderGL::InitFramebuffer()",
+    "value": "0x828cc",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax20LayerCallbackRequest12GetLayerTypeEv",
+    "demangled": "lynx::animax::LayerCallbackRequest::GetLayerType const()",
+    "value": "0x88a04",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18LayerStaticRequestC1ENS0_17LayerPropertyTypeENSt6__ndk110unique_ptrINS0_13AnimaXKeyPathENS3_14default_deleteIS5_EEEENS4_INS0_16AnimaXValueParamENS6_IS9_EEEENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::LayerStaticRequest::{ctor}(lynx::animax::LayerPropertyType, std::__ndk1::unique_ptr<lynx::animax::AnimaXKeyPath, std::__ndk1::default_delete<lynx::animax::AnimaXKeyPath>>, std::__ndk1::unique_ptr<lynx::animax::AnimaXValueParam, std::__ndk1::default_delete<lynx::animax::AnimaXValueParam>>, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x889cc",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer4SeekEd",
+    "demangled": "lynx::animax::AnimaXPlayer::Seek(double)",
+    "value": "0x57750",
+    "size": 192,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4lynx6animax10TextHelperE",
+    "demangled": "vtable for lynx::animax::TextHelper",
+    "value": "0x9b3f0",
+    "size": 48,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax13AnimaXKeyPath16IncrementDepthByERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi",
+    "demangled": "lynx::animax::AnimaXKeyPath::IncrementDepthBy const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x86514",
+    "size": 180,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustom12GetTransformEv",
+    "demangled": "lynx::animax::VideoPlayerCustom::GetTransform()",
+    "value": "0x732bc",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax7RawDataC1EPKvmPFvS3_ES3_",
+    "demangled": "lynx::animax::RawData::{ctor}(void const*, unsigned long, void (*)(void const*), void const*)",
+    "value": "0x7bda4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21PropertyUpdateRequestC1ENS1_4TypeENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::PropertyUpdateRequest::{ctor}(lynx::animax::PropertyUpdateRequest::Type, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x888a8",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10LogMessageC1EPKciNS0_14AnimaXLogLevelE",
+    "demangled": "lynx::animax::LogMessage::{ctor}(char const*, int, lynx::animax::AnimaXLogLevel)",
+    "value": "0x4a8a0",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18AnimaXPlayerGlobal10UnregisterERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::AnimaXPlayerGlobal::Unregister(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x86dcc",
+    "size": 392,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer13UpdateSurfaceENS_4base15MoveOnlyClosureINSt6__ndk110unique_ptrINS0_13AnimaXSurfaceENS4_14default_deleteIS6_EEEEJS9_EEE",
+    "demangled": "lynx::animax::AnimaXPlayer::UpdateSurface(lynx::base::MoveOnlyClosure<std::__ndk1::unique_ptr<lynx::animax::AnimaXSurface, std::__ndk1::default_delete<lynx::animax::AnimaXSurface>>, std::__ndk1::unique_ptr<lynx::animax::AnimaXSurface, std::__ndk1::default_delete<lynx::animax::AnimaXSurface>>>)",
+    "value": "0x54098",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21TextContentDataSourceC2ERKNS0_19TextLayerAnimationsERNS0_16FontAssetManagerE",
+    "demangled": "lynx::animax::TextContentDataSource::{base ctor}(lynx::animax::TextLayerAnimations const&, lynx::animax::FontAssetManager&)",
+    "value": "0x64dd8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustom11AttachAssetENSt6__ndk110shared_ptrINS0_10VideoAssetEEE",
+    "demangled": "lynx::animax::VideoPlayerCustom::AttachAsset(std::__ndk1::shared_ptr<lynx::animax::VideoAsset>)",
+    "value": "0x732c4",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax6Bitmap5WidthEv",
+    "demangled": "lynx::animax::Bitmap::Width const()",
+    "value": "0x74a48",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource11GetFontNameEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetFontName const()",
+    "value": "0x64fd0",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoAssetAndroidC2ENS0_15VideoAssetModelE",
+    "demangled": "lynx::animax::VideoAssetAndroid::{base ctor}(lynx::animax::VideoAssetModel)",
+    "value": "0x816dc",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18AnimaXPlayerGlobal4FindERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::AnimaXPlayerGlobal::Find(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x867dc",
+    "size": 96,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC2Eddi",
+    "demangled": "lynx::animax::AnimaXValueParam::{base ctor}(double, double, int)",
+    "value": "0x879bc",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax20LayerCallbackRequest16GetValueCallbackEv",
+    "demangled": "lynx::animax::LayerCallbackRequest::GetValueCallback const()",
+    "value": "0x88b00",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21ResourceUpdateRequest15GetResourceTypeEv",
+    "demangled": "lynx::animax::ResourceUpdateRequest::GetResourceType const()",
+    "value": "0x88a04",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer11IsAnimatingEv",
+    "demangled": "lynx::animax::AnimaXPlayer::IsAnimating()",
+    "value": "0x57858",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20ScopedGLResetRestoreD2Ev",
+    "demangled": "lynx::animax::ScopedGLResetRestore::{base dtor}()",
+    "value": "0x4a5c4",
+    "size": 732,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer11SetEndFrameEd",
+    "demangled": "lynx::animax::AnimaXPlayer::SetEndFrame(double)",
+    "value": "0x56cc8",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource8GetColorEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetColor const()",
+    "value": "0x64df4",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZZN4lynx6animax10TextHelper7ImplRefEvE8impl_ref",
+    "demangled": "_ZZN4lynx6animax10TextHelper7ImplRefEvE8impl_ref",
+    "value": "0xa00e0",
+    "size": 8,
+    "type": "STT_OBJECT",
+    "bind": "STB_WEAK"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC1Ebi",
+    "demangled": "lynx::animax::AnimaXValueParam::{ctor}(bool, int)",
+    "value": "0x87970",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer13GetDurationMsEv",
+    "demangled": "lynx::animax::AnimaXPlayer::GetDurationMs()",
+    "value": "0x57358",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4lynx6animax12VSyncMonitorE",
+    "demangled": "vtable for lynx::animax::VSyncMonitor",
+    "value": "0x99ba0",
+    "size": 48,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4lynx6animax17VideoPlayerCustomE",
+    "demangled": "vtable for lynx::animax::VideoPlayerCustom",
+    "value": "0x9bc18",
+    "size": 56,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20AnimaXAbilityAndroid9SendEventEhP8_jobject",
+    "demangled": "lynx::animax::AnimaXAbilityAndroid::SendEvent(unsigned char, _jobject*)",
+    "value": "0x7d624",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource20GetFontMgrCollectionEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetFontMgrCollection const()",
+    "value": "0x64dec",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12DocumentDataC2ENSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEES8_fNS0_21DocumentJustificationEjffiifbNS2_10unique_ptrINS0_6PointFENS2_14default_deleteISB_EEEESE_",
+    "demangled": "lynx::animax::DocumentData::{base ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, float, lynx::animax::DocumentJustification, unsigned int, float, float, int, int, float, bool, std::__ndk1::unique_ptr<lynx::animax::PointF, std::__ndk1::default_delete<lynx::animax::PointF>>, std::__ndk1::unique_ptr<lynx::animax::PointF, std::__ndk1::default_delete<lynx::animax::PointF>>)",
+    "value": "0x68638",
+    "size": 232,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustom16PrepareNextFrameEv",
+    "demangled": "lynx::animax::VideoPlayerCustom::PrepareNextFrame()",
+    "value": "0x73400",
+    "size": 120,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21ResourceUpdateRequest13GetResourceIdEv",
+    "demangled": "lynx::animax::ResourceUpdateRequest::GetResourceId const()",
+    "value": "0x88c68",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer14SetCompositionENSt6__ndk110shared_ptrINS0_16CompositionModelEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::SetComposition(std::__ndk1::shared_ptr<lynx::animax::CompositionModel>)",
+    "value": "0x54de8",
+    "size": 364,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer4StopEv",
+    "demangled": "lynx::animax::AnimaXPlayer::Stop()",
+    "value": "0x57670",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource12GetFontAssetEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetFontAsset const()",
+    "value": "0x65048",
+    "size": 268,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustom19DecodeAndCacheFrameEi",
+    "demangled": "lynx::animax::VideoPlayerCustom::DecodeAndCacheFrame(int)",
+    "value": "0x73478",
+    "size": 480,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo28GetVerticalSubsamplingFactorEj",
+    "demangled": "lynx::animax::YUVFrameInfo::GetVerticalSubsamplingFactor const(unsigned int)",
+    "value": "0x73fd0",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam6CopyToEPb",
+    "demangled": "lynx::animax::AnimaXValueParam::CopyTo const(bool*)",
+    "value": "0x8839c",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer13GetEventNamesEv",
+    "demangled": "lynx::animax::AnimaXPlayer::GetEventNames()",
+    "value": "0x53c18",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer18SetDynamicResourceEb",
+    "demangled": "lynx::animax::AnimaXPlayer::SetDynamicResource(bool)",
+    "value": "0x56978",
+    "size": 352,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21ResourceUpdateRequest4MakeENS0_20ResourcePropertyTypeENSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEENS3_10unique_ptrINS0_16AnimaXValueParamENS3_14default_deleteISB_EEEENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::ResourceUpdateRequest::Make(lynx::animax::ResourcePropertyType, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::unique_ptr<lynx::animax::AnimaXValueParam, std::__ndk1::default_delete<lynx::animax::AnimaXValueParam>>, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x88b2c",
+    "size": 148,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12VSyncMonitor17AsyncRequestVSyncENS_4base15MoveOnlyClosureIvJlEEE",
+    "demangled": "lynx::animax::VSyncMonitor::AsyncRequestVSync(lynx::base::MoveOnlyClosure<void, long>)",
+    "value": "0x5a570",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21VideoShaderYUVAndroid27GetVideoTextureBindingPointEv",
+    "demangled": "lynx::animax::VideoShaderYUVAndroid::GetVideoTextureBindingPoint()",
+    "value": "0x82358",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam6CopyToEPd",
+    "demangled": "lynx::animax::AnimaXValueParam::CopyTo const(double*)",
+    "value": "0x88370",
+    "size": 44,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax22PropertyUpdateResponse12SetErrorTypeENS0_20PropertyUpdateResultE",
+    "demangled": "lynx::animax::PropertyUpdateResponse::SetErrorType(lynx::animax::PropertyUpdateResult)",
+    "value": "0x8907c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20ScopedGLResetRestoreD1Ev",
+    "demangled": "lynx::animax::ScopedGLResetRestore::{dtor}()",
+    "value": "0x4a5c4",
+    "size": 732,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam11GetValuePtrEv",
+    "demangled": "lynx::animax::AnimaXValueParam::GetValuePtr const()",
+    "value": "0x87e00",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer21GetEventTrackingArrayEv",
+    "demangled": "lynx::animax::AnimaXPlayer::GetEventTrackingArray()",
+    "value": "0x53b9c",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21TextContentDataSourceD2Ev",
+    "demangled": "lynx::animax::TextContentDataSource::{base dtor}()",
+    "value": "0x449fc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax20AnimaXAbilityAndroid21DisableByteVC1DecoderEv",
+    "demangled": "lynx::animax::AnimaXAbilityAndroid::DisableByteVC1Decoder const()",
+    "value": "0x7d698",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam6CopyToEPf",
+    "demangled": "lynx::animax::AnimaXValueParam::CopyTo const(float*)",
+    "value": "0x88310",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo14GetChannelDataEj",
+    "demangled": "lynx::animax::YUVFrameInfo::GetChannelData const(unsigned int)",
+    "value": "0x73f5c",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax17VideoAssetAndroid12IsHEVCFormatEv",
+    "demangled": "lynx::animax::VideoAssetAndroid::IsHEVCFormat const()",
+    "value": "0x81c40",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer7DestroyEv",
+    "demangled": "lynx::animax::AnimaXPlayer::Destroy()",
+    "value": "0x53c30",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer13CreateSurfaceENS_4base15MoveOnlyClosureINSt6__ndk110unique_ptrINS0_13AnimaXSurfaceENS4_14default_deleteIS6_EEEEJEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::CreateSurface(lynx::base::MoveOnlyClosure<std::__ndk1::unique_ptr<lynx::animax::AnimaXSurface, std::__ndk1::default_delete<lynx::animax::AnimaXSurface>>>)",
+    "value": "0x53f5c",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam15GetBooleanValueEv",
+    "demangled": "lynx::animax::AnimaXValueParam::GetBooleanValue const()",
+    "value": "0x87d60",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo11SetLineSizeEjj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetLineSize(unsigned int, unsigned int)",
+    "value": "0x73f18",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20LayerCallbackRequest4MakeENS0_17LayerPropertyTypeENSt6__ndk110unique_ptrINS0_13AnimaXKeyPathENS3_14default_deleteIS5_EEEENS3_10shared_ptrINS0_19AnimaXValueCallbackEEENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::LayerCallbackRequest::Make(lynx::animax::LayerPropertyType, std::__ndk1::unique_ptr<lynx::animax::AnimaXKeyPath, std::__ndk1::default_delete<lynx::animax::AnimaXKeyPath>>, std::__ndk1::shared_ptr<lynx::animax::AnimaXValueCallback>, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x88a10",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam6CopyToEPi",
+    "demangled": "lynx::animax::AnimaXValueParam::CopyTo const(int*)",
+    "value": "0x88340",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer22UnsubscribeUpdateEventEi",
+    "demangled": "lynx::animax::AnimaXPlayer::UnsubscribeUpdateEvent(int)",
+    "value": "0x57a78",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC2Edddi",
+    "demangled": "lynx::animax::AnimaXValueParam::{base ctor}(double, double, double, int)",
+    "value": "0x87a28",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer21SubscribeUpdateEventsENSt6__ndk113unordered_setIiNS2_4hashIiEENS2_8equal_toIiEENS2_9allocatorIiEEEEb",
+    "demangled": "lynx::animax::AnimaXPlayer::SubscribeUpdateEvents(std::__ndk1::unordered_set<int, std::__ndk1::hash<int>, std::__ndk1::equal_to<int>, std::__ndk1::allocator<int>>, bool)",
+    "value": "0x57b5c",
+    "size": 368,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax19AnimaXPlayerBuilder8SetScaleEf",
+    "demangled": "lynx::animax::AnimaXPlayerBuilder::SetScale(float)",
+    "value": "0x588d0",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax19AnimaXPlayerBuilder15SetVSyncMonitorENSt6__ndk110shared_ptrINS0_12VSyncMonitorEEE",
+    "demangled": "lynx::animax::AnimaXPlayerBuilder::SetVSyncMonitor(std::__ndk1::shared_ptr<lynx::animax::VSyncMonitor>)",
+    "value": "0x588d8",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC1Eii",
+    "demangled": "lynx::animax::AnimaXValueParam::{ctor}(int, int)",
+    "value": "0x87a98",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18PlayerEventTracker13GetEventValueENS1_18AnimationEventTypeE",
+    "demangled": "lynx::animax::PlayerEventTracker::GetEventValue(lynx::animax::PlayerEventTracker::AnimationEventType)",
+    "value": "0x4c874",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer7SetJsonEPKc",
+    "demangled": "lynx::animax::AnimaXPlayer::SetJson(char const*)",
+    "value": "0x541b8",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer28MarkPlatformSurfaceAsInvalidEb",
+    "demangled": "lynx::animax::AnimaXPlayer::MarkPlatformSurfaceAsInvalid(bool)",
+    "value": "0x582c8",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21TextContentDataSourceD1Ev",
+    "demangled": "lynx::animax::TextContentDataSource::{dtor}()",
+    "value": "0x449fc",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax9FontAsset7GetFontEv",
+    "demangled": "lynx::animax::FontAsset::GetFont()",
+    "value": "0x747f4",
+    "size": 112,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10TextHelperC2Ev",
+    "demangled": "lynx::animax::TextHelper::{base ctor}()",
+    "value": "0x65e00",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4lynx6animax12DocumentDataE",
+    "demangled": "vtable for lynx::animax::DocumentData",
+    "value": "0x9b920",
+    "size": 56,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax6Bitmap6FormatEv",
+    "demangled": "lynx::animax::Bitmap::Format const()",
+    "value": "0x73f08",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGLD2Ev",
+    "demangled": "lynx::animax::VideoShaderGL::{base dtor}()",
+    "value": "0x82360",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParam9FromValueEPKNS0_5ValueE",
+    "demangled": "lynx::animax::AnimaXValueParam::FromValue(lynx::animax::Value const*)",
+    "value": "0x87e68",
+    "size": 420,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax13AnimaXKeyPath7MatchesERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi",
+    "demangled": "lynx::animax::AnimaXKeyPath::Matches const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x86464",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax6BitmapC2EjjPKvPFvS3_ES3_NS0_12BitmapFormatENS0_15BitmapAlphaTypeE",
+    "demangled": "lynx::animax::Bitmap::{base ctor}(unsigned int, unsigned int, void const*, void (*)(void const*), void const*, lynx::animax::BitmapFormat, lynx::animax::BitmapAlphaType)",
+    "value": "0x74968",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax7RawData11MakeRawDataEPKvmPFvS3_ES3_",
+    "demangled": "lynx::animax::RawData::MakeRawData(void const*, unsigned long, void (*)(void const*), void const*)",
+    "value": "0x7bd74",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL14GetOutputImageEPNS0_11RealContextE",
+    "demangled": "lynx::animax::VideoShaderGL::GetOutputImage(lynx::animax::RealContext*)",
+    "value": "0x825d4",
+    "size": 296,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC2Edi",
+    "demangled": "lynx::animax::AnimaXValueParam::{base ctor}(double, int)",
+    "value": "0x87938",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18AnimaXPlayerGlobal8RegisterERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS2_8weak_ptrINS0_12AnimaXPlayerEEE",
+    "demangled": "lynx::animax::AnimaXPlayerGlobal::Register(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::weak_ptr<lynx::animax::AnimaXPlayer>)",
+    "value": "0x869ac",
+    "size": 704,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer8GetWidthEv",
+    "demangled": "lynx::animax::AnimaXPlayer::GetWidth()",
+    "value": "0x57270",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer6OnHideENS0_15VisibilityStateE",
+    "demangled": "lynx::animax::AnimaXPlayer::OnHide(lynx::animax::VisibilityState)",
+    "value": "0x57ee4",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13AnimaXKeyPathC2ERKNSt6__ndk16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEE",
+    "demangled": "lynx::animax::AnimaXKeyPath::{base ctor}(std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>> const&)",
+    "value": "0x8631c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamaSEOS1_",
+    "demangled": "lynx::animax::AnimaXValueParam::operator=(lynx::animax::AnimaXValueParam&&)",
+    "value": "0x87b9c",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax7RawDataC2EPKvmPFvS3_ES3_",
+    "demangled": "lynx::animax::RawData::{base ctor}(void const*, unsigned long, void (*)(void const*), void const*)",
+    "value": "0x7bda4",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL23GetVideoTextureLocationEv",
+    "demangled": "lynx::animax::VideoShaderGL::GetVideoTextureLocation()",
+    "value": "0x826fc",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21TextContentDataSource17GetLayoutOnlyOnceEv",
+    "demangled": "lynx::animax::TextContentDataSource::GetLayoutOnlyOnce const()",
+    "value": "0x65154",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo9SetHeightEj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetHeight(unsigned int)",
+    "value": "0x73f44",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo19GetChannelDataWidthEj",
+    "demangled": "lynx::animax::YUVFrameInfo::GetChannelDataWidth const(unsigned int)",
+    "value": "0x73f78",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax6Bitmap11BytesPerRowEv",
+    "demangled": "lynx::animax::Bitmap::BytesPerRow const()",
+    "value": "0x74a94",
+    "size": 28,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21VideoShaderYUVAndroid15GetVertexShaderEv",
+    "demangled": "lynx::animax::VideoShaderYUVAndroid::GetVertexShader const()",
+    "value": "0x82338",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21VideoShaderYUVAndroid4DrawENSt6__ndk110unique_ptrINS0_11TextureInfoENS2_14default_deleteIS4_EEEERKNS2_5arrayIfLm16EEE",
+    "demangled": "lynx::animax::VideoShaderYUVAndroid::Draw(std::__ndk1::unique_ptr<lynx::animax::TextureInfo, std::__ndk1::default_delete<lynx::animax::TextureInfo>>, std::__ndk1::array<float, (unsigned long)16> const&)",
+    "value": "0x82158",
+    "size": 480,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax18LayerStaticRequest8GetValueEv",
+    "demangled": "lynx::animax::LayerStaticRequest::GetValue const()",
+    "value": "0x88a08",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10TextHelperC1Ev",
+    "demangled": "lynx::animax::TextHelper::{ctor}()",
+    "value": "0x65e00",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustomC2ENSt6__ndk110unique_ptrINS0_18VideoDecoderCustomENS2_14default_deleteIS4_EEEE",
+    "demangled": "lynx::animax::VideoPlayerCustom::{base ctor}(std::__ndk1::unique_ptr<lynx::animax::VideoDecoderCustom, std::__ndk1::default_delete<lynx::animax::VideoDecoderCustom>>)",
+    "value": "0x72ff4",
+    "size": 116,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL11InitProgramEv",
+    "demangled": "lynx::animax::VideoShaderGL::InitProgram()",
+    "value": "0x8272c",
+    "size": 416,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGLD1Ev",
+    "demangled": "lynx::animax::VideoShaderGL::{dtor}()",
+    "value": "0x82360",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax22PropertyUpdateResponse9IsSuccessEv",
+    "demangled": "lynx::animax::PropertyUpdateResponse::IsSuccess const()",
+    "value": "0x88c9c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer11SetProgressEd",
+    "demangled": "lynx::animax::AnimaXPlayer::SetProgress(double)",
+    "value": "0x567a4",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax19AnimaXPlayerBuilder21SetSkipCountDownEventEb",
+    "demangled": "lynx::animax::AnimaXPlayerBuilder::SetSkipCountDownEvent(bool)",
+    "value": "0x58908",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo8SetWidthEj",
+    "demangled": "lynx::animax::YUVFrameInfo::SetWidth(unsigned int)",
+    "value": "0x73f3c",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax7RawDataD2Ev",
+    "demangled": "lynx::animax::RawData::{base dtor}()",
+    "value": "0x7497c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21VideoShaderYUVAndroid21GetVideoTextureTargetEv",
+    "demangled": "lynx::animax::VideoShaderYUVAndroid::GetVideoTextureTarget()",
+    "value": "0x82350",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4lynx6animax21VideoShaderYUVAndroidE",
+    "demangled": "vtable for lynx::animax::VideoShaderYUVAndroid",
+    "value": "0x9d010",
+    "size": 104,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam4GetZEv",
+    "demangled": "lynx::animax::AnimaXValueParam::GetZ const()",
+    "value": "0x87dc4",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer10OnProgressEddb",
+    "demangled": "lynx::animax::AnimaXPlayer::OnProgress(double, double, bool)",
+    "value": "0x5800c",
+    "size": 316,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayerC2ERNS0_19AnimaXPlayerBuilderE",
+    "demangled": "lynx::animax::AnimaXPlayer::{base ctor}(lynx::animax::AnimaXPlayerBuilder&)",
+    "value": "0x52ed4",
+    "size": 792,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer7SetLoopEb",
+    "demangled": "lynx::animax::AnimaXPlayer::SetLoop(bool)",
+    "value": "0x56264",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer9GetHeightEv",
+    "demangled": "lynx::animax::AnimaXPlayer::GetHeight()",
+    "value": "0x572e4",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20AnimaXAbilityAndroidC1EP7_JNIEnvP8_jobject",
+    "demangled": "lynx::animax::AnimaXAbilityAndroid::{ctor}(_JNIEnv*, _jobject*)",
+    "value": "0x7d5b8",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax21VideoShaderYUVAndroid17GetFragmentShaderEv",
+    "demangled": "lynx::animax::VideoShaderYUVAndroid::GetFragmentShader const()",
+    "value": "0x82344",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC2Ebi",
+    "demangled": "lynx::animax::AnimaXValueParam::{base ctor}(bool, int)",
+    "value": "0x87970",
+    "size": 76,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustom10CacheFrameEiNSt6__ndk110shared_ptrINS0_12YUVFrameInfoEEE",
+    "demangled": "lynx::animax::VideoPlayerCustom::CacheFrame(int, std::__ndk1::shared_ptr<lynx::animax::YUVFrameInfo>)",
+    "value": "0x737f8",
+    "size": 1348,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21ResourceUpdateRequestC1ENS0_20ResourcePropertyTypeENSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEENS3_10unique_ptrINS0_16AnimaXValueParamENS3_14default_deleteISB_EEEENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::ResourceUpdateRequest::{ctor}(lynx::animax::ResourcePropertyType, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::unique_ptr<lynx::animax::AnimaXValueParam, std::__ndk1::default_delete<lynx::animax::AnimaXValueParam>>, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x88bc0",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer11PlaySegmentEdd",
+    "demangled": "lynx::animax::AnimaXPlayer::PlaySegment(double, double)",
+    "value": "0x57110",
+    "size": 280,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC2ERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi",
+    "demangled": "lynx::animax::AnimaXValueParam::{base ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, int)",
+    "value": "0x878e8",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax10LogMessageC2EPKciNS0_14AnimaXLogLevelE",
+    "demangled": "lynx::animax::LogMessage::{base ctor}(char const*, int, lynx::animax::AnimaXLogLevel)",
+    "value": "0x4a8a0",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12DocumentData4CopyEv",
+    "demangled": "lynx::animax::DocumentData::Copy const()",
+    "value": "0x68508",
+    "size": 224,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax17VideoPlayerCustom13IsFrameCachedEi",
+    "demangled": "lynx::animax::VideoPlayerCustom::IsFrameCached const(int)",
+    "value": "0x73730",
+    "size": 72,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12DocumentData7IsEmptyEv",
+    "demangled": "lynx::animax::DocumentData::IsEmpty const()",
+    "value": "0x68500",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax6Bitmap12PixelsLengthEv",
+    "demangled": "lynx::animax::Bitmap::PixelsLength const()",
+    "value": "0x74a60",
+    "size": 32,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGLD0Ev",
+    "demangled": "lynx::animax::VideoShaderGL::{deleting dtor}()",
+    "value": "0x5a784",
+    "size": 4,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax9ColorUtil13ParseHexColorERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::ColorUtil::ParseHexColor(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x4dc78",
+    "size": 520,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax7RawDataD1Ev",
+    "demangled": "lynx::animax::RawData::{dtor}()",
+    "value": "0x7497c",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam4GetYEv",
+    "demangled": "lynx::animax::AnimaXValueParam::GetY const()",
+    "value": "0x87dac",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21ResourceUpdateRequestC2ENS0_20ResourcePropertyTypeENSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEENS3_10unique_ptrINS0_16AnimaXValueParamENS3_14default_deleteISB_EEEENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::ResourceUpdateRequest::{base ctor}(lynx::animax::ResourcePropertyType, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::unique_ptr<lynx::animax::AnimaXValueParam, std::__ndk1::default_delete<lynx::animax::AnimaXValueParam>>, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x88bc0",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax22PropertyUpdateResponseC2ENS0_20PropertyUpdateResultE",
+    "demangled": "lynx::animax::PropertyUpdateResponse::{base ctor}(lynx::animax::PropertyUpdateResult)",
+    "value": "0x88c78",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "__emutls_register_common",
+    "demangled": "__emutls_register_common",
+    "value": "0x4430c",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax6Bitmap13BytesPerPixelEv",
+    "demangled": "lynx::animax::Bitmap::BytesPerPixel const()",
+    "value": "0x74a80",
+    "size": 20,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoAssetAndroidC1ENS0_15VideoAssetModelE",
+    "demangled": "lynx::animax::VideoAssetAndroid::{ctor}(lynx::animax::VideoAssetModel)",
+    "value": "0x816dc",
+    "size": 288,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax13AnimaXKeyPath6AddKeyERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::AnimaXKeyPath::AddKey const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x86414",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer28EnableDynamicResourceFeatureEv",
+    "demangled": "lynx::animax::AnimaXPlayer::EnableDynamicResourceFeature()",
+    "value": "0x56b64",
+    "size": 80,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax20AnimaXAbilityAndroidC2EP7_JNIEnvP8_jobject",
+    "demangled": "lynx::animax::AnimaXAbilityAndroid::{base ctor}(_JNIEnv*, _jobject*)",
+    "value": "0x7d5b8",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21VideoShaderYUVAndroidD2Ev",
+    "demangled": "lynx::animax::VideoShaderYUVAndroid::{base dtor}()",
+    "value": "0x8210c",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC2ERKNS1_16ColorFilterParamEi",
+    "demangled": "lynx::animax::AnimaXValueParam::{base ctor}(lynx::animax::AnimaXValueParam::ColorFilterParam const&, int)",
+    "value": "0x87af4",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam6CopyToEPNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::AnimaXValueParam::CopyTo const(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>*)",
+    "value": "0x882d4",
+    "size": 60,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer17UpdateCompositionEiNSt6__ndk110shared_ptrINS0_16CompositionModelEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::UpdateComposition(int, std::__ndk1::shared_ptr<lynx::animax::CompositionModel>)",
+    "value": "0x54a5c",
+    "size": 472,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax17VideoAssetAndroid21GetVideoParameterSetsEv",
+    "demangled": "lynx::animax::VideoAssetAndroid::GetVideoParameterSets const()",
+    "value": "0x81ae0",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13VideoShaderGL19GetRGBFrameLocationEv",
+    "demangled": "lynx::animax::VideoShaderGL::GetRGBFrameLocation()",
+    "value": "0x82a54",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax13AnimaXKeyPathC1ERKNSt6__ndk16vectorINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS7_IS9_EEEE",
+    "demangled": "lynx::animax::AnimaXKeyPath::{ctor}(std::__ndk1::vector<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::allocator<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>> const&)",
+    "value": "0x8631c",
+    "size": 16,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax6Bitmap8MakeRGBAEjjPKvPFvS3_ES3_",
+    "demangled": "lynx::animax::Bitmap::MakeRGBA(unsigned int, unsigned int, void const*, void (*)(void const*), void const*)",
+    "value": "0x74990",
+    "size": 84,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax13AnimaXKeyPath16EndsWithGlobstarEv",
+    "demangled": "lynx::animax::AnimaXKeyPath::EndsWithGlobstar const()",
+    "value": "0x8671c",
+    "size": 48,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax22PropertyUpdateResponse12GetErrorTypeEv",
+    "demangled": "lynx::animax::PropertyUpdateResponse::GetErrorType const()",
+    "value": "0x89084",
+    "size": 40,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax19AnimaXPlayerBuilder27EnableMultiThreadAccelerateEb",
+    "demangled": "lynx::animax::AnimaXPlayerBuilder::EnableMultiThreadAccelerate(bool)",
+    "value": "0x588fc",
+    "size": 12,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam4GetXEv",
+    "demangled": "lynx::animax::AnimaXValueParam::GetX const()",
+    "value": "0x87d94",
+    "size": 24,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax17VideoPlayerCustom20ClearAllCachedFramesEv",
+    "demangled": "lynx::animax::VideoPlayerCustom::ClearAllCachedFrames()",
+    "value": "0x736cc",
+    "size": 100,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC2Eii",
+    "demangled": "lynx::animax::AnimaXValueParam::{base ctor}(int, int)",
+    "value": "0x87a98",
+    "size": 92,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax22PropertyUpdateResponse12AddErrorTypeENSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEENS0_20PropertyUpdateResultE",
+    "demangled": "lynx::animax::PropertyUpdateResponse::AddErrorType(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, lynx::animax::PropertyUpdateResult)",
+    "value": "0x88cb0",
+    "size": 604,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax12YUVFrameInfo8GetWidthEv",
+    "demangled": "lynx::animax::YUVFrameInfo::GetWidth const()",
+    "value": "0x73f08",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21VideoShaderYUVAndroidD1Ev",
+    "demangled": "lynx::animax::VideoShaderYUVAndroid::{dtor}()",
+    "value": "0x8210c",
+    "size": 52,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam14GetStringValueEv",
+    "demangled": "lynx::animax::AnimaXValueParam::GetStringValue const()",
+    "value": "0x87cbc",
+    "size": 128,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC2Ev",
+    "demangled": "lynx::animax::AnimaXValueParam::{base ctor}()",
+    "value": "0x87b5c",
+    "size": 64,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer14SetSrcPolyfillENSt6__ndk113unordered_mapINS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEES9_NS2_4hashIS9_EENS2_8equal_toIS9_EENS7_INS2_4pairIKS9_S9_EEEEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::SetSrcPolyfill(std::__ndk1::unordered_map<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, std::__ndk1::hash<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::equal_to<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>>>)",
+    "value": "0x55718",
+    "size": 204,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer6OnShowENS0_15VisibilityStateE",
+    "demangled": "lynx::animax::AnimaXPlayer::OnShow(lynx::animax::VisibilityState)",
+    "value": "0x57dbc",
+    "size": 220,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer28ExportDataFromMetricsManagerENS_4base15MoveOnlyClosureIvJNSt6__ndk113unordered_mapINS4_12basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEEdNS4_4hashISB_EENS4_8equal_toISB_EENS9_INS4_4pairIKSB_dEEEEEEEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::ExportDataFromMetricsManager(lynx::base::MoveOnlyClosure<void, std::__ndk1::unordered_map<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, double, std::__ndk1::hash<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::equal_to<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>>, std::__ndk1::allocator<std::__ndk1::pair<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const, double>>>>)",
+    "value": "0x58398",
+    "size": 56,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax19AnimaXPlayerBuilder5BuildEv",
+    "demangled": "lynx::animax::AnimaXPlayerBuilder::Build()",
+    "value": "0x5898c",
+    "size": 156,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4lynx6animax13VideoShaderGLE",
+    "demangled": "vtable for lynx::animax::VideoShaderGL",
+    "value": "0x9d090",
+    "size": 104,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC1Eddi",
+    "demangled": "lynx::animax::AnimaXValueParam::{ctor}(double, double, int)",
+    "value": "0x879bc",
+    "size": 108,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer22LoadAssetsWithCallbackENS_4base15MoveOnlyClosureIvJEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::LoadAssetsWithCallback(lynx::base::MoveOnlyClosure<void>)",
+    "value": "0x55bac",
+    "size": 236,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer8SetSpeedEd",
+    "demangled": "lynx::animax::AnimaXPlayer::SetSpeed(double)",
+    "value": "0x564f0",
+    "size": 184,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZTVN4lynx6animax17VideoAssetAndroidE",
+    "demangled": "vtable for lynx::animax::VideoAssetAndroid",
+    "value": "0x9cf20",
+    "size": 80,
+    "type": "STT_OBJECT",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax16AnimaXValueParamC1ERKNS1_16ColorFilterParamEi",
+    "demangled": "lynx::animax::AnimaXValueParam::{ctor}(lynx::animax::AnimaXValueParam::ColorFilterParam const&, int)",
+    "value": "0x87af4",
+    "size": 104,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer7SetJsonENSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::SetJson(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>)",
+    "value": "0x54220",
+    "size": 536,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer4PlayEv",
+    "demangled": "lynx::animax::AnimaXPlayer::Play()",
+    "value": "0x573d0",
+    "size": 160,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer17GetKeysForKeyPathENSt6__ndk110unique_ptrINS0_13AnimaXKeyPathENS2_14default_deleteIS4_EEEENS_4base15MoveOnlyClosureIvJNS2_6vectorIS4_NS2_9allocatorIS4_EEEEEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::GetKeysForKeyPath(std::__ndk1::unique_ptr<lynx::animax::AnimaXKeyPath, std::__ndk1::default_delete<lynx::animax::AnimaXKeyPath>>, lynx::base::MoveOnlyClosure<void, std::__ndk1::vector<lynx::animax::AnimaXKeyPath, std::__ndk1::allocator<lynx::animax::AnimaXKeyPath>>>)",
+    "value": "0x583d0",
+    "size": 216,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12YUVFrameInfo17UpdateChannelDataEjPKh",
+    "demangled": "lynx::animax::YUVFrameInfo::UpdateChannelData(unsigned int, unsigned char const*)",
+    "value": "0x74000",
+    "size": 560,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18PlayerEventTracker13GetEventNamesEv",
+    "demangled": "lynx::animax::PlayerEventTracker::GetEventNames()",
+    "value": "0x4c87c",
+    "size": 332,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer6SetSrcERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::SetSrc(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
+    "value": "0x54f54",
+    "size": 644,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax12AnimaXPlayer24AddLayerPropertyCallbackENSt6__ndk110unique_ptrINS0_20LayerCallbackRequestENS2_14default_deleteIS4_EEEE",
+    "demangled": "lynx::animax::AnimaXPlayer::AddLayerPropertyCallback(std::__ndk1::unique_ptr<lynx::animax::LayerCallbackRequest, std::__ndk1::default_delete<lynx::animax::LayerCallbackRequest>>)",
+    "value": "0x587b8",
+    "size": 188,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax21TextContentDataSourceC1ERKNS0_19TextLayerAnimationsERNS0_16FontAssetManagerE",
+    "demangled": "lynx::animax::TextContentDataSource::{ctor}(lynx::animax::TextLayerAnimations const&, lynx::animax::FontAssetManager&)",
+    "value": "0x64dd8",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax18LayerStaticRequest4MakeENS0_17LayerPropertyTypeENSt6__ndk110unique_ptrINS0_13AnimaXKeyPathENS3_14default_deleteIS5_EEEENS4_INS0_16AnimaXValueParamENS6_IS9_EEEENS_4base15MoveOnlyClosureIvJRKNS0_22PropertyUpdateResponseEEEE",
+    "demangled": "lynx::animax::LayerStaticRequest::Make(lynx::animax::LayerPropertyType, std::__ndk1::unique_ptr<lynx::animax::AnimaXKeyPath, std::__ndk1::default_delete<lynx::animax::AnimaXKeyPath>>, std::__ndk1::unique_ptr<lynx::animax::AnimaXValueParam, std::__ndk1::default_delete<lynx::animax::AnimaXValueParam>>, lynx::base::MoveOnlyClosure<void, lynx::animax::PropertyUpdateResponse const&>)",
+    "value": "0x88920",
+    "size": 88,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZN4lynx6animax22PropertyUpdateResponseC1ENS0_20PropertyUpdateResultE",
+    "demangled": "lynx::animax::PropertyUpdateResponse::{ctor}(lynx::animax::PropertyUpdateResult)",
+    "value": "0x88c78",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax6Bitmap9AlphaTypeEv",
+    "demangled": "lynx::animax::Bitmap::AlphaType const()",
+    "value": "0x73f10",
+    "size": 8,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_ZNK4lynx6animax16AnimaXValueParam13GetColorValueEv",
+    "demangled": "lynx::animax::AnimaXValueParam::GetColorValue const()",
+    "value": "0x87ddc",
+    "size": 36,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  }
+]

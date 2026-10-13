@@ -20,6 +20,10 @@ local.properties
 .DS_Store
 worktrees/
 *_dump.xml
+__pycache__/
+*.pyc
+SOURCE/tools/
+
 
 # Root temporary scratch, test captures and databases
 /*.png
