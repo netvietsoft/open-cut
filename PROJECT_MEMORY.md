@@ -933,3 +933,8 @@
   - Tỷ lệ giải mã thân hàm thực chất: **1/169 thư viện (0.6%)** (`libAGFX.so`).
   - 168 thư viện còn lại mới ở mức độ metadata / bảng biểu tượng, chưa có thân hàm.
   - Kế hoạch giải mã thực chất chuyển trọng tâm sang `libmiddle-bridge.so` (Lõi NLE Vega Timeline, 48.991 hàm).
+
+## 31. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN `libnative-filters.so` (AUDIT RESOLUTION)
+- **Thời gian**: 2026-10-13 23:01:14
+- **Chi tiết**: Tái cấu trúc thuật toán Box Blur tổng trượt O(1) và Circular Subpixel Rounding Mask.
+- **Tiến độ thực chất**: Đạt 3/169 thư viện COMPLETED 100% thân hàm.
