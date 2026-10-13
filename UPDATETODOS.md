@@ -135,10 +135,10 @@
      - *Lõi 10: APM Diagnostics, Memory & Crash NPTH Core* (3.34 MB + 15 libs npth: `libgodzilla-memsponge.so`, `libsysoptimizer.so`, `libprofiler.so`).
   3. **Xây Dựng & Kích Hoạt Orchestrator Daemon Tự Động Thức 3 Phút / Lần**:
      - Script vận hành: `SOURCE/scripts/orchestrator_daemon.py` và launcher `SOURCE/run_daemon.bat`.
-     - **Trạng thái**: ĐÃ HOÀN TẤT 100% GIẢI MÃ TOÀN BỘ 169 THƯ VIỆN NATIVE (.SO).
-     - **Tiến độ giải mã hiện tại**: **169 / 169 thư viện (100.0%)** đã hoàn tất bóc tách symbols, JNI và sinh mã nguồn C++ headers/pseudocode vào `SOURCE/GIAI-MA/`.
-     - **Giao việc & Báo cáo**: Đã giao **166 tasks** tại `SOURCE/NHIEMVU/` và nghiệm thu **166 reports** tại `SOURCE/BAOCAO/`.
-     - **Thời gian xử lý**: 92 phút (31 chu kỳ tự động 180s), tốc độ đạt ~1.84 thư viện/phút (~2.47 MB nhị phân/phút, ~2,026 symbols/phút).
+     - **Trạng thái Khảo sát Metadata (Giai đoạn 1)**: ĐÃ HOÀN TẤT 100% bóc tách biểu tượng và JNI cho toàn bộ 169 thư viện native (.so).
+     - **Tiến độ Giải mã Thân hàm Thực tế (Giai đoạn 2 - Zero Stub)**: **3 / 169 thư viện (1.78%)** hoàn tất 100% thân hàm C++ có kiểm chứng toán học/ABI (libAGFX.so, libtexturerender_native.so, libnative-filters.so); **1 / 169 thư viện (0.59%)** bị khóa giải mã tĩnh (libcapcut.so do đóng gói packer tùy biến \x7fKOM); **165 / 169 thư viện (97.63%)** ở mức kiến trúc sườn (SCAFFOLD/Metadata).
+     - **Hệ Thống Tự Kiểm Chứng Khép Kín (Closed-Loop)**: Bộ test erify_reconstruction_suite.py đạt **15/15 tests PASS (100.0%)** kiểm tra tính toàn vẹn mã nguồn, chữ ký ABI AArch64 và tính toán hạch toán toán học (Poly6, Spiky, Box Blur moving sum, Subpixel coverage).
+     - **Giao việc & Báo cáo Sổ cái**: Đã giao **166 tasks** tại SOURCE/NHIEMVU/ và cập nhật **166 reports trung thực** tại SOURCE/BAOCAO/.
      - Chu kỳ: 180 giây (3 phút) tự động thức dậy thực hiện 5 bước:
        - (1) Đọc báo cáo từ Agent tại `SOURCE/BAOCAO/`.
        - (2) So code, check code, kiểm tra tính toàn vẹn và mức độ hoàn thành trong `SOURCE/GIAI-MA/`.
