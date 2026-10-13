@@ -605,7 +605,16 @@ class OrchestratorEngine:
         # 1. Đọc báo cáo từ Agent
         reports = self.scan_reports()
         
-        # 2. So code & Check code trong GIAI-MA/
+        # 2. So code & Chạy Test Suite Tự Kiểm Chứng Khép Kín (Closed-Loop Testing)
+        try:
+            import subprocess
+            py_exe = sys.executable
+            suite_script = Path(__file__).parent / "verify_reconstruction_suite.py"
+            if suite_script.exists():
+                subprocess.run([py_exe, str(suite_script)], check=False)
+        except Exception as e:
+            print(f"[!] Lỗi chạy verification suite: {e}")
+
         verif_results = self.verify_decompiled_code()
         
         # 3. Phân tích tự động 3 thư viện ưu tiên nhất nếu chưa có
