@@ -920,3 +920,9 @@
     - `AGFX_Utils.h/cpp` (12.8 KB)
     - `AGFX_interface.h` & `AGFX_pseudocode.cpp` (11.3 KB)
   - Đã lập tài liệu hướng dẫn chuyên sâu: `README_AGFX_HOAN_CHINH.md`.
+
+## 29. ĐỒNG BỘ TOÀN BỘ KHO DỮ LIỆU LÊN GITHUB (NETVIETSOFT/OPEN-CUT)
+- **Thời gian hoàn thành**: 2026-10-13 19:53:46
+- **Kho lưu trữ GitHub**: https://github.com/netvietsoft/open-cut
+- **Các nhánh khả dụng**: `develop`, `main`.
+- **Cấu hình SSH**: Đã lưu khóa Deploy Key ED25519 tại `~/.ssh/id_ed25519_opencut`.
