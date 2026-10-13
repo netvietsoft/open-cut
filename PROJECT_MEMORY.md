@@ -926,3 +926,10 @@
 - **Kho lưu trữ GitHub**: https://github.com/netvietsoft/open-cut
 - **Các nhánh khả dụng**: `develop`, `main`.
 - **Cấu hình SSH**: Đã lưu khóa Deploy Key ED25519 tại `~/.ssh/id_ed25519_opencut`.
+
+## 30. KIỂM ĐIỂM TIẾN ĐỘ THỰC TẾ & BÁO CÁO TRUNG THỰC VỀ TỶ LỆ GIẢI MÃ
+- **Thời gian**: 2026-10-13 22:43:37
+- **Thực tế nghiệm thu**:
+  - Tỷ lệ giải mã thân hàm thực chất: **1/169 thư viện (0.6%)** (`libAGFX.so`).
+  - 168 thư viện còn lại mới ở mức độ metadata / bảng biểu tượng, chưa có thân hàm.
+  - Kế hoạch giải mã thực chất chuyển trọng tâm sang `libmiddle-bridge.so` (Lõi NLE Vega Timeline, 48.991 hàm).
