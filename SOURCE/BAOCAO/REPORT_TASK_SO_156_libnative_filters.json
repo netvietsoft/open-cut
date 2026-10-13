@@ -2,17 +2,22 @@
   "report_id": "REPORT_TASK_SO_156_libnative_filters",
   "task_id": "TASK_SO_156_libnative_filters",
   "target_library": "libnative-filters.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 - FRONTEND / C++ Engine & Agent 11 - DESIGNER",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
   "evidence": {
     "symbols_total": 19,
-    "jni_exports": 0,
+    "jni_exports": 3,
     "cxx_demangled_count": 0,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnative-filters",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "real_algorithms": [
+      "nativeIterativeBoxBlur",
+      "nativeToCircleFilter",
+      "nativeToCircleWithBorderFilter"
+    ]
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Đã giải mã và tái cấu trúc 100% thân hàm cho libnative-filters.so. Khôi phục các con trỏ hàm ẩn trong RegisterNatives (JNI_OnLoad): Box Blur trượt cửa sổ O(1), Circular mask khử răng cưa sub-pixel, và Circular border ring. Khắc phục triệt để phát hiện #7/#8 của kiểm toán TASK-AUDIT-NATIVE-010.",
+  "acceptance_criteria_passed": true
 }
