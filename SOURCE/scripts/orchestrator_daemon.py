@@ -260,7 +260,7 @@ class OrchestratorEngine:
     # BƯỚC 2: SO CODE & CHECK CODE TRONG GIAI-MA/
     # -------------------------------------------------------------------------------
     def verify_decompiled_code(self):
-        """Kiểm tra đối soát mã nguồn trong GIAI-MA/"""
+        """Kiểm tra đối soát mã nguồn trong GIAI-MA/ - Đo lường độ hoàn thiện thực chất"""
         results = {}
         for lib_dir in DIR_GIAIMA.iterdir():
             if not lib_dir.is_dir():
@@ -270,28 +270,49 @@ class OrchestratorEngine:
             has_symbols = any(f.name == "symbols_demangled.json" for f in files)
             has_jni = any(f.name == "jni_bindings.json" for f in files)
             has_strings = any(f.name == "strings_extracted.txt" for f in files)
-            has_interface = any(f.suffix in [".h", ".hpp"] for f in files)
-            has_pseudocode = any(f.suffix in [".cpp", ".cc"] for f in files)
+            cpp_files = [f for f in files if f.suffix in [".cpp", ".cc"]]
 
-            # Tính điểm hoàn thiện
-            score = 0
-            if has_symbols: score += 20
-            if has_jni: score += 20
-            if has_strings: score += 15
-            if has_interface: score += 25
-            if has_pseudocode: score += 20
+            is_packed = (lib_name == "libcapcut")
+            total_cpp_size = sum(f.stat().st_size for f in cpp_files)
+
+            has_real_implementation = False
+            for cpp_f in cpp_files:
+                try:
+                    with open(cpp_f, "r", encoding="utf-8", errors="ignore") as f:
+                        lines = [l.strip() for l in f if l.strip()]
+                        if len(lines) > 30 and total_cpp_size > 2048:
+                            # Phải có code thực tế ngoài constructor/destructor rỗng
+                            if any("gl" in l or "ANative" in l or "malloc" in l or "return" in l or "PBF" in l for l in lines):
+                                has_real_implementation = True
+                                break
+                except Exception:
+                    pass
+
+            if is_packed:
+                status = "BLOCKED_CUSTOM_PACKED"
+                score = 0
+            elif has_real_implementation:
+                status = "COMPLETED"
+                score = 100
+            elif has_symbols or has_jni:
+                status = "SCAFFOLD_METADATA_ONLY"
+                score = 15
+            else:
+                status = "UNPROCESSED"
+                score = 0
 
             results[lib_name] = {
                 "file_count": len(files),
                 "has_symbols": has_symbols,
                 "has_jni": has_jni,
                 "has_strings": has_strings,
-                "has_interface": has_interface,
-                "has_pseudocode": has_pseudocode,
+                "total_cpp_size": total_cpp_size,
+                "has_real_implementation": has_real_implementation,
                 "completion_score": score,
-                "status": "COMPLETED" if score >= 80 else "PARTIAL"
+                "status": status
             }
         return results
+
 
     # -------------------------------------------------------------------------------
     # BƯỚC 3: PHÂN TÍCH TỰ ĐỘNG & GIẢI MÃ C++ NATIVE VÀO GIAI-MA/
@@ -538,9 +559,10 @@ class OrchestratorEngine:
     # -------------------------------------------------------------------------------
     def sync_project_state(self, reports, verif_results, new_tasks_count):
         total_so = len(self.inventory)
-        total_decomp = len(verif_results)
-        complete_decomp = sum(1 for v in verif_results.values() if v["status"] == "COMPLETED")
-        percent = round((complete_decomp / total_so * 100), 2) if total_so > 0 else 0
+        complete_decomp = sum(1 for v in verif_results.values() if v.get("status") == "COMPLETED")
+        scaffold_decomp = sum(1 for v in verif_results.values() if v.get("status") == "SCAFFOLD_METADATA_ONLY")
+        blocked_decomp = sum(1 for v in verif_results.values() if v.get("status") == "BLOCKED_CUSTOM_PACKED")
+        real_percent = round((complete_decomp / total_so * 100), 2) if total_so > 0 else 0
 
         now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -548,10 +570,12 @@ class OrchestratorEngine:
         log_entry = (
             f"\n### [{now_str}] CHU KỲ QUÉT TỰ ĐỘNG CỦA ORCHESTRATOR DAEMON\n"
             f"- **Tổng số thư viện .so**: {total_so} (arm64-v8a: 169, armeabi-v7a: 168)\n"
-            f"- **Đang bóc tách / Đã xử lý trong GIAI-MA**: {total_decomp} / {total_so} ({percent}%)\n"
+            f"- **Đã giải mã đầy đủ thân hàm C++ (Real Decompilation)**: {complete_decomp} / {total_so} ({real_percent}%)\n"
+            f"- **Mới bóc tách metadata / scaffold (Chưa có thân hàm)**: {scaffold_decomp} / {total_so}\n"
+            f"- **Bị đóng gói Custom Packed (KOM)**: {blocked_decomp} / {total_so}\n"
             f"- **Báo cáo nhận từ Agent**: {len(reports)} báo cáo\n"
             f"- **Nhiệm vụ mới vừa giao**: {new_tasks_count} tasks\n"
-            f"- **Trạng thái**: Vận hành ổn định, sẵn sàng chu kỳ tiếp theo.\n"
+            f"- **Trạng thái**: Vận hành thực chất, tập trung giải mã chuyên sâu từng lõi.\n"
         )
         try:
             with open(FILE_TASK_LOG, "a", encoding="utf-8") as f:
@@ -561,13 +585,15 @@ class OrchestratorEngine:
 
         # In tóm tắt ra màn hình
         print("\n" + "="*80)
-        print(f"[{now_str}] BÁO CÁO TIẾN ĐỘ CHO CHỦ TỊCH - CEO ORCHESTRATOR")
+        print(f"[{now_str}] BÁO CÁO TIẾN ĐỘ THỰC TẾ CHO CHỦ TỊCH - CEO ORCHESTRATOR")
         print("="*80)
         print(f"1. Tổng số file .so: {total_so} files (227.72 MB arm64-v8a)")
         print(f"2. Số lõi C++ bóc tách: 10 cụm Lõi chức năng chính (Editing, AI, Audio DSP, Codec...)")
-        print(f"3. Thư viện đã giải mã vào GIAI-MA/: {complete_decomp} / {total_so} ({percent}%)")
-        print(f"4. Thư mục NHIEMVU: Đã giao {len(list(DIR_NHIEMVU.glob('TASK_*.json')))} tasks")
-        print(f"5. Thư mục BAOCAO: Nhận {len(reports)} reports")
+        print(f"3. Thư viện ĐÃ GIẢI MÃ ĐẦY ĐỦ THÂN HÀM THỰC CHẤT: {complete_decomp} / {total_so} ({real_percent}%)")
+        print(f"4. Thư viện ở mức BÓC TÁCH METADATA / SCAFFOLD: {scaffold_decomp} / {total_so}")
+        print(f"5. Thư viện BỊ ĐÓNG GÓI CUSTOM PACKED (KOM): {blocked_decomp} / {total_so}")
+        print(f"6. Thư mục NHIEMVU: Đã giao {len(list(DIR_NHIEMVU.glob('TASK_*.json')))} tasks")
+        print(f"7. Thư mục BAOCAO: Nhận {len(reports)} reports")
         print("="*80 + "\n")
 
     # -------------------------------------------------------------------------------

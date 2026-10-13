@@ -3,8 +3,8 @@
   "task_id": "TASK_SO_004_liblens",
   "target_library": "liblens.so",
   "assigned_agent": "Agent 1 - ARCHITECT & Agent 7 - RECONSTRUCTION",
-  "status": "COMPLETED",
-  "completion_percentage": 100,
+  "status": "SCAFFOLD_METADATA_ONLY",
+  "completion_percentage": 15,
   "evidence": {
     "symbols_total": 423,
     "jni_exports": 0,
@@ -13,6 +13,6 @@
     "has_cpp_interface": true,
     "has_strings": true
   },
-  "findings_summary": "?? gi?i m? v? tr?ch xu?t th?nh c?ng 100% c?u tr?c nh? ph?n c?a liblens.so. B?c t?ch ???c 423 dynamic symbols, 0 h?m JNI k?t n?i xu?ng Android, v? 143 ph??ng th?c C++ mangled. S?n s?ng ph?c v? t?i c?u tr?c trong NextAI OpenCut.",
-  "acceptance_criteria_passed": true
+  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
+  "acceptance_criteria_passed": false
 }
