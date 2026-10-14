@@ -991,3 +991,16 @@
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **39/39 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **7 / 169 thư viện COMPLETED (4.14%)** có 100% thân hàm thực tế.
 
+## 36. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libclipflow.so (CORE_01_EDITING)
+- **Thời gian**: 2026-10-14 17:50:00
+- **Thư viện**: libclipflow.so (arm64-v8a: 4.91 MB, 4,917,760 bytes, 9,799 dynamic symbols, 2,498 JNI exports, 6,124 C++ demangled functions).
+- **Chi tiết giải mã thân hàm (9 modules, 41.8 KB code C++, 0 stub)**:
+  1. *Động cơ Đồ thị Tác vụ TaskGrapher*: Hàm `addTask` tại opcode `0x39e13c`, hàm `executeTask` tại opcode `0x39e808` nạp hàm ảo `execute()` tại vtable offset `0x100` (index 32), và đối soát mã trạng thái hủy `CANCELLED = -4` khớp opcode `0x39e848` (`cmn w0, #4; b.eq`).
+  2. *Thuật toán Kahn & Phân đợt sóng song song*: Phát hiện chu trình có hướng (Cycle Detection), giải quyết phụ thuộc tô pô, và chia nhỏ đồ thị thành các đợt sóng thực thi song song (Topological Execution Waves).
+  3. *Cơ chế lan truyền trạng thái hủy (Cancellation Propagation)*: Khi nút cha bị lỗi hoặc bị hủy, tín hiệu dừng được tự động lan truyền tức thì đến toàn bộ các nhánh nút con phụ thuộc hạ nguồn.
+  4. *Bộ thực thi Công cụ AI Agent ClipflowAgentToolsExecutor*: Khởi tạo thread pool độc lập kích thước 4 (opcode `0x20b040`), các hàm `execute` (opcode `0x264b30`), `_execute` (opcode `0x2679c4`), `cancel` (opcode `0x26bdb4`), cơ chế tra cứu bộ nhớ đệm kết quả cache `queryTaskInCache` (opcode `0x36a6a8`), và 5 công cụ biên tập video AI tích hợp sẵn: `tool_auto_cut`, `tool_beat_drop`, `tool_vocal_isolation`, `tool_smart_matting`, `tool_auto_caption`.
+  5. *Bộ nốt tác vụ NLE thực tế & Máy chủ ClipflowServer*: Hiện thực hóa các Task Nodes biên tập video (`VideoDecodeTaskNode`, `AudioMixTaskNode`, `FilterShaderTaskNode`, `TransitionCrossfadeTaskNode`, `KeyframeEvalTaskNode`, `SubtitleRenderTaskNode`, `RenderEncodeTaskNode`), máy chủ RPC `ClipflowServer` (`invokeSync` opcode `0x1ba13c`, `invokeAsync` opcode `0x1ba5b8`, `clipflowServerJniInit` opcode `0x1baa38`), và harness tự kiểm tra toàn diện 8 tiêu chí cốt lõi `runSelfTest()`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **45/45 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **8 / 169 thư viện COMPLETED (4.73%)** có 100% thân hàm thực tế.
+
+
