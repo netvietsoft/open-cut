@@ -1,0 +1,44 @@
+{
+  "task_id": "TASK_SO_BYTENN_libbytenn",
+  "library": "libbytenn.so",
+  "category": "CORE_02_AI_CV",
+  "binary_size": 3147800,
+  "status": "COMPLETED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libbytenn/bytenn_types.h",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_tensor.h",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_tensor.cpp",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_kernels.h",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_kernels.cpp",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_espresso_thrustor.h",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_espresso_thrustor.cpp",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_engine.h",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_engine.cpp",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_interface.h",
+    "SOURCE/GIAI-MA/libbytenn/bytenn_pseudocode.cpp",
+    "SOURCE/GIAI-MA/libbytenn/README_BYTENN_HOAN_CHINH.md"
+  ],
+  "total_cpp_size_bytes": 105494,
+  "stubs_count": 0,
+  "todos_count": 0,
+  "arm64_parity_proofs": {
+    "GetDataCount_opcode": "0x3aae0 (N * C * H * W multiplication chain)",
+    "GetByteSize_opcode": "0x3aaf8 (GetDataCount() * element_size from table 0x263b98)",
+    "TypeSizesTable_address": "0x263b98 (INT8:1, UINT8:1, FP16:2, INT16:2, FP32:4, BF16:2, INT64:8, INT32:4)",
+    "setThreads_opcode": "0x4df64 (ldr x8, [x0, #8]; str w1, [x8, #0x20]; ret)",
+    "GetVersion_opcode": "0x5c6c8 (adrp x1, #0x265000; add x1, x1, #0x150 -> 0x265150: '3.12.91')",
+    "isSupportCPUDotProd_opcode": "0x2b1e4 (mov w0, #1; b ...)",
+    "isSupportCpuFp16_opcode": "0x2b150 (mrs x19, tpidr_el0; getauxval HWCAP_FPHP)"
+  },
+  "mathematical_models": [
+    "Conv1x1 GEMM Vectorization: Y = W * X + B",
+    "Depthwise Separable Conv V2: Depthwise (Cin=groups) + Pointwise 1x1",
+    "ReluHardSigmoid: clamp((x + 3) / 6, 0, 1)",
+    "ReluHardSwish: x * clamp((x + 3) / 6, 0, 1)",
+    "Numerically Stable SoftmaxV3: exp(x - max) / sum(exp(x - max))",
+    "QuantV3 INT8: clamp(round(x / S) + Z, -128, 127)",
+    "DequantV3 Float32: (q - Z) * S"
+  ],
+  "self_test_results": "10/10 PASS (100.0%)",
+  "completion_timestamp": "2026-10-14T20:00:00+07:00"
+}

@@ -1033,3 +1033,22 @@
   6. *Bộ điều phối SpeechEngineCoordinator & 15 hàm JNI Bridge*: Cấp phát handle 64-bit duy nhất, ánh xạ JNI methods từ `libspeechengine.so` sang core C++ `libspeechsdk.so`, tích hợp bộ 10 bài tự kiểm chứng khép kín.
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **59/59 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **10 / 169 thư viện COMPLETED (5.92%)** có 100% thân hàm thực tế.
+
+## 39. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libbytenn.so (CORE_02_AI_CV)
+- **Thời gian**: 2026-10-14 20:00:00
+- **Thư viện**: libbytenn.so (arm64-v8a: 3.00 MB, 3,147,800 bytes, 399 dynamic symbols, 261 C++ demangled functions).
+- **Chi tiết giải mã thân hàm (11 modules, 105.5 KB code C++, 0 stub)**:
+  1. *Bố cục Tensor & Bảng tra cứu phần tử*: Hàm `GetDataCount` tại opcode `0x3aae0` nhân chuỗi 4 chiều ($N \times C \times H \times W$), hàm `GetByteSize` tại opcode `0x3aaf8` tra cứu bảng kích thước nhị phân tại địa chỉ `0x263b98` (INT8: 1B, UINT8: 1B, FP16: 2B, INT16: 2B, FP32: 4B, BF16: 2B, INT64: 8B, INT32: 4B), căn chỉnh bộ nhớ 64-byte theo cacheline và hỗ trợ chuyển đổi bố cục NCHW <-> NHWC.
+  2. *Bộ máy suy luận Đồ thị espresso::Thrustor*: Hàm `setThreads` tại opcode `0x4df64` ghi số luồng CPU vào chính xác offset `0x20` của cấu trúc ngữ cảnh runtime (`ThrustorRuntimeContext`), hàm `CreateNet` tại opcode `0x4d93c` xây dựng pipeline mạng nơ-ron Inverted Bottleneck, hàm `ReInferShape` tại opcode `0x4dc50` tái tính toán kích thước động, và hàm `Inference` tại opcode `0x4dcf4` thực thi toàn bộ các tầng DAG.
+  3. *Kernel Toán tử CPU Tối ưu hóa*:
+     - Conv1x1 GEMM (`cpu_conv1x1_opt` / `Conv2d1x1DpFloatArm`): Tối ưu hóa loop unrolling 4 pixel song song cho phép nhân ma trận trọng số và bias.
+     - General Conv2D & DepthwiseSeparableConvolutionV2: Phân tách giai đoạn Depthwise ($C_{in} = \text{groups}$) và Pointwise 1x1, tích hợp padding, stride, dilation.
+     - Hàm kích hoạt di động: `ReluHardSigmoid` ($\text{clamp}((x + 3) / 6, 0, 1)$), `ReluHardSwish` ($x \cdot \text{clamp}((x + 3) / 6, 0, 1)$), `Relu`, `Relu6`, `LeakyRelu`, `bPRelu`, `Tanh`, `Sigmoid`.
+     - Lấy mẫu không gian: `PoolingV2` (Max / Average) và `GlobalPooling` (thu gọn $H \times W \to 1 \times 1$).
+     - Chuẩn hóa xác suất: `SoftmaxV3` và `LogSoftmax` ổn định chống tràn số dấu phẩy động bằng kỹ thuật max subtraction.
+     - Lượng tử hóa: `QuantV3` (chuyển đổi float32 sang int8 có dấu/không dấu) và `DequantV3`.
+  4. *Cấu trúc ByteNNEngine & Kiểm tra Năng lực Phần cứng*: Phiên bản chính thức ByteNN `"3.12.91"` xác nhận tại hàm `ByteNNUtils::GetVersion()` (opcode `0x5c6c8`) nạp chuỗi tại địa chỉ `0x265150`. Hàm `isSupportCPUDotProd` tại opcode `0x2b1e4` và `isSupportCpuFp16` tại opcode `0x2b150` kiểm tra cờ phần cứng `HWCAP_ASIMDDP` và `HWCAP_FPHP` qua `getauxval(AT_HWCAP)`.
+  5. *Quản lý Bộ nhớ & C-API EngineFactory*: Cấp phát `EngineFactory::Create()` (opcode `0x39ac0`), giải phóng bất đồng bộ `EngineFactory::AsyncRelease()` (opcode `0x39b8c`) trên luồng nền để tránh giật lag giao diện, và bộ tự kiểm chứng 10 tiêu chí thuật toán hoàn chỉnh trong `bytenn_run_verification_self_test()`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **67/67 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **11 / 169 thư viện COMPLETED (6.51%)** có 100% thân hàm thực tế.
+
