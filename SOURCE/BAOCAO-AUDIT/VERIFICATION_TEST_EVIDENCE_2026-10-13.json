@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-14T07:13:32.102993",
-  "total_tests": 27,
-  "passed": 27,
+  "timestamp": "2026-10-14T07:23:53.999942",
+  "total_tests": 33,
+  "passed": 33,
   "failed": 0,
   "pass_rate": "100.0%",
   "results": [
@@ -9,163 +9,199 @@
       "test_name": "AGFX_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 71875 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-14T07:13:32.100478"
+      "timestamp": "2026-10-14T07:23:53.997349"
     },
     {
       "test_name": "AGFX_Poly6KernelMath",
       "status": "PASS",
       "details": "Poly6 const = 1.9878e+13, Kernel(r=0.02) = 1.1162e+04 (Khớp ARM64 0x600f0)",
-      "timestamp": "2026-10-14T07:13:32.100526"
+      "timestamp": "2026-10-14T07:23:53.997391"
     },
     {
       "test_name": "AGFX_SpikyKernelMath",
       "status": "PASS",
       "details": "Spiky const = -7.7921e+09, GradMag(r=0.02) = -1.7532e+06 (Khớp ARM64 0x60144)",
-      "timestamp": "2026-10-14T07:13:32.100533"
+      "timestamp": "2026-10-14T07:23:53.997398"
     },
     {
       "test_name": "AGFX_SpatialGridHashMath",
       "status": "PASS",
       "details": "Spatial hash cho cell (12, 34, 56) = 135498 (Khớp prime hash của ByteDance)",
-      "timestamp": "2026-10-14T07:13:32.100539"
+      "timestamp": "2026-10-14T07:23:53.997404"
     },
     {
       "test_name": "AGFX_ASTCFormatRange",
       "status": "PASS",
       "details": "Kiểm tra cận ASTC [0xA4, 0xBF] khớp 100% mã máy sub w8, #0xa4; cmp w8, #0x1c",
-      "timestamp": "2026-10-14T07:13:32.100544"
+      "timestamp": "2026-10-14T07:23:53.997408"
     },
     {
       "test_name": "AGFX_AUSLBitsetMath",
       "status": "PASS",
       "details": "Keyword ID 135 -> Word Index = 2, Bit Index = 7 (Khớp lsr #6)",
-      "timestamp": "2026-10-14T07:13:32.100548"
+      "timestamp": "2026-10-14T07:23:53.997412"
     },
     {
       "test_name": "TextureRender_FileIntegrity",
       "status": "PASS",
       "details": "Code C++ đạt 9436 bytes (Đầy đủ thân hàm, loại bỏ stub 13 dòng)",
-      "timestamp": "2026-10-14T07:13:32.100655"
+      "timestamp": "2026-10-14T07:23:53.997495"
     },
     {
       "test_name": "TextureRender_ABISurfaceParam",
       "status": "PASS",
       "details": "Chữ ký nativeSetSurface đã phục hồi đầy đủ tham số x2 (jobject surface) khớp mã máy 0x24dc",
-      "timestamp": "2026-10-14T07:13:32.100876"
+      "timestamp": "2026-10-14T07:23:53.997627"
     },
     {
       "test_name": "TextureRender_ABIReturnTypes",
       "status": "PASS",
       "details": "Chữ ký trả về đã sửa thành jlong (handle) và jint (width/height/format), không còn gán cứng void",
-      "timestamp": "2026-10-14T07:13:32.100883"
+      "timestamp": "2026-10-14T07:23:53.997632"
     },
     {
       "test_name": "TextureRender_ImplementationBodies",
       "status": "PASS",
       "details": "Thân hàm C++ chứa đầy đủ lệnh gọi ANativeWindow và HardwareBufferEglPool (Khớp opcode 0x25a8, 0x85e8)",
-      "timestamp": "2026-10-14T07:13:32.101045"
+      "timestamp": "2026-10-14T07:23:53.997756"
     },
     {
       "test_name": "NativeFilters_FileIntegrity",
       "status": "PASS",
       "details": "Code C++ đạt 11962 bytes (Tái cấu trúc 100% thân hàm)",
-      "timestamp": "2026-10-14T07:13:32.101117"
+      "timestamp": "2026-10-14T07:23:53.997829"
     },
     {
       "test_name": "NativeFilters_BoxBlurMovingSum",
       "status": "PASS",
       "details": "Sliding-window Box Blur moving sum cho kết quả chính xác: [13, 20, 30, 40, 50, 60, 70, 76]",
-      "timestamp": "2026-10-14T07:13:32.101138"
+      "timestamp": "2026-10-14T07:23:53.997847"
     },
     {
       "test_name": "NativeFilters_SubpixelCoverageMath",
       "status": "PASS",
       "details": "Sub-pixel alpha coverage: Trong=1.0, Biên=0.30, Ngoài=0.0 (Khớp ARM64 0x1400)",
-      "timestamp": "2026-10-14T07:13:32.101149"
+      "timestamp": "2026-10-14T07:23:53.997855"
     },
     {
       "test_name": "TTFFmpeg_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 64343 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-14T07:13:32.101632"
+      "timestamp": "2026-10-14T07:23:53.998249"
     },
     {
       "test_name": "TTFFmpeg_SPSJumpTableOffsets",
       "status": "PASS",
       "details": "Bảng nhảy SPS get_int_field khớp 100% mã máy: [0x14, 0x40, 0x18, 0x1c, 0x20, 0x298]",
-      "timestamp": "2026-10-14T07:13:32.101639"
+      "timestamp": "2026-10-14T07:23:53.998256"
     },
     {
       "test_name": "TTFFmpeg_POCContextLayout",
       "status": "PASS",
       "details": "Cấu trúc H264POCContext đạt kích thước 44 bytes (0x2c), delta_poc tại offset 0x0c",
-      "timestamp": "2026-10-14T07:13:32.101645"
+      "timestamp": "2026-10-14T07:23:53.998261"
     },
     {
       "test_name": "TTFFmpeg_ProtocolABISize",
       "status": "PASS",
       "details": "Kích thước hợp đồng ABI URLProtocol đạt chuẩn xác 192 bytes (0xc0) khớp opcode 0x343c1c",
-      "timestamp": "2026-10-14T07:13:32.101648"
+      "timestamp": "2026-10-14T07:23:53.998264"
     },
     {
       "test_name": "TTFFmpeg_GF28PolynomialMath",
       "status": "PASS",
       "details": "Trường hữu hạn GF(2^8) đa thức 0x11b: 0x53 * 0xca = 0x01 (Khớp ARM64 0x36373c)",
-      "timestamp": "2026-10-14T07:13:32.101661"
+      "timestamp": "2026-10-14T07:23:53.998275"
     },
     {
       "test_name": "TTFFmpeg_TTMAppCallbackVersion",
       "status": "PASS",
       "details": "Hằng số phiên bản TTMApp callback đạt 0x01343f0f (20201231 khớp ARM64 0x3775e4)",
-      "timestamp": "2026-10-14T07:13:32.101664"
+      "timestamp": "2026-10-14T07:23:53.998279"
     },
     {
       "test_name": "MiddleBridge_SourceSizeGate",
       "status": "PASS",
-      "details": "Tổng dung lượng C++ đạt 46152 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-14T07:13:32.102095"
+      "details": "Tổng dung lượng C++ đạt 47242 bytes (> 40 KB, 0 stub)",
+      "timestamp": "2026-10-14T07:23:53.998549"
     },
     {
       "test_name": "MiddleBridge_ReqStructABILayout",
       "status": "PASS",
       "details": "Cấu trúc RunVelocityAlgorithmReqStruct khớp 100% layout ABI ARM64: path=0x48, range=0x60, mode=0xa0, phase=0xa4, audio=0xd8, speed=0xe8",
-      "timestamp": "2026-10-14T07:13:32.102396"
+      "timestamp": "2026-10-14T07:23:53.998802"
     },
     {
       "test_name": "MiddleBridge_CubicBezierMath",
       "status": "PASS",
       "details": "Đường cong Bezier vận tốc: B(0)=1.0, B(0.5)=2.5, B(1)=4.0 (Khớp giải thuật đường cong CapCut)",
-      "timestamp": "2026-10-14T07:13:32.102426"
+      "timestamp": "2026-10-14T07:23:53.998836"
     },
     {
       "test_name": "MiddleBridge_VelocityIntegralTimeMapping",
       "status": "PASS",
       "details": "Tích phân vận tốc Simpson mapping timeline [0, 4s] -> source media time = 10.0s",
-      "timestamp": "2026-10-14T07:13:32.102435"
+      "timestamp": "2026-10-14T07:23:53.998915"
     },
     {
       "test_name": "MiddleBridge_MaterialMaskPositionInfoOffset",
       "status": "PASS",
       "details": "Offset trường PositionInfo trong MaterialMask là 0x90 (144 bytes, khớp opcode 0x024ed08c)",
-      "timestamp": "2026-10-14T07:13:32.102441"
+      "timestamp": "2026-10-14T07:23:53.998933"
     },
     {
       "test_name": "MiddleBridge_CompositionReplaceSegmentMapping",
       "status": "PASS",
       "details": "Remap keyframe khi thay thế phân đoạn: 5.0s / 10.0s -> 8.0s / 16.0s",
-      "timestamp": "2026-10-14T07:13:32.102448"
+      "timestamp": "2026-10-14T07:23:53.998960"
+    },
+    {
+      "test_name": "CCCreator_SourceSizeGate",
+      "status": "PASS",
+      "details": "Tổng dung lượng C++ đạt 48069 bytes (> 40 KB, 0 stub)",
+      "timestamp": "2026-10-14T07:23:53.999307"
+    },
+    {
+      "test_name": "CCCreator_CCClipOffsets",
+      "status": "PASS",
+      "details": "Cấu trúc CCClip khớp 100% layout thanh ghi ARM64: startTime=0x30 (0x79fc0c), endTime=0x38 (0x158f54c), trimIn=0x40 (0x10485d0), trimOut=0x48 (0x1690ff0)",
+      "timestamp": "2026-10-14T07:23:53.999516"
+    },
+    {
+      "test_name": "CCCreator_CurveSpeedConversionMath",
+      "status": "PASS",
+      "details": "Vòng lặp chuyển đổi mảng điểm vận tốc fcvt s0, d0 đạt độ chính xác float: speeds=[1.0, 2.5, 4.0] (Khớp opcode 0x618130)",
+      "timestamp": "2026-10-14T07:23:53.999533"
+    },
+    {
+      "test_name": "CCCreator_TransformRotationModuloMath",
+      "status": "PASS",
+      "details": "Chuẩn hóa góc quay xoay vòng modulo 360: R(90)=90, R(-90)=270, R(-450)=270, R(360)=0 (Khớp opcode 0x158c994)",
+      "timestamp": "2026-10-14T07:23:53.999541"
+    },
+    {
+      "test_name": "CCCreator_FilterAllocSizesAndTypes",
+      "status": "PASS",
+      "details": "Kích thước cấp phát và mã type bộ lọc: AudioFade=192B/T4, LensVFI=264B/T0x24, MotionBlur=224B/T0x25",
+      "timestamp": "2026-10-14T07:23:53.999547"
+    },
+    {
+      "test_name": "CCCreator_ILACosineSimilarityMath",
+      "status": "PASS",
+      "details": "Độ tương đồng Cosine vector đặc trưng AI: Trực giao=0.0, Đồng nhất=1.0, 45 độ=0.7071 (Khớp ILASDK Jianying)",
+      "timestamp": "2026-10-14T07:23:53.999573"
     },
     {
       "test_name": "Governance_LibCapcutHonesty",
       "status": "PASS",
       "details": "Báo cáo libcapcut đã cập nhật trung thực: BLOCKED_CUSTOM_PACKED (0%), không báo cáo láo",
-      "timestamp": "2026-10-14T07:13:32.102712"
+      "timestamp": "2026-10-14T07:23:53.999754"
     },
     {
       "test_name": "Governance_RealParityCount",
       "status": "PASS",
-      "details": "Hiện có đúng 5/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế",
-      "timestamp": "2026-10-14T07:13:32.102721"
+      "details": "Hiện có đúng 6/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế",
+      "timestamp": "2026-10-14T07:23:53.999761"
     }
   ]
 }

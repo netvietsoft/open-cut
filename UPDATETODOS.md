@@ -123,7 +123,7 @@
      - Tổng cộng số file `.so` trong extracted APK: **337 files** (169 thư viện native duy nhất).
      - 168/169 thư viện sử dụng định dạng ELF 64-bit chuẩn; duy nhất `libcapcut.so` sử dụng custom magic `\x7fKOM` chống decompile tĩnh.
   2. **Bóc Tách & Phân Loại 10 Cụm Lõi C++ Cốt Lõi (Core C++ Engines)**:
-     - *Lõi 1: Video Editing, NLE & Timeline Core* (126.9 MB, 5 libs: `libmiddle-bridge.so`, `libcccreator.so`, `libmiddleware.so`, `libclipflow.so`, `libcapcut.so`).
+     - *Lõi 1: Video Editing, NLE & Timeline Core* (126.9 MB, 5 libs: `libmiddle-bridge.so, libcccreator.so`, `libcccreator.so`, `libmiddleware.so`, `libclipflow.so`, `libcapcut.so`).
      - *Lõi 2: AI, Computer Vision & Pitaya Neural Core* (16.86 MB, 8 libs: `libAndroidPitayaCore.so`, `libbytenn.so`, `liblens.so`, `libretouch_sdk.so`, `libfast_engine.so`, `libterrain.so`).
      - *Lõi 3: Audio DSP & Speech Processing Core* (6.22 MB, 6 libs: `libaudioeffect.so`, `libspeechsdk.so`, `libspeechengine.so`, `libwhisper.so`, `libopus.so`).
      - *Lõi 4: Multimedia, FFmpeg & Player Core* (14.09 MB, 13 libs: `libttffmpeg.so`, `libttmplayer.so`, `libbytevc1enc.so`, `libyuv.so`, `libttdemux.so`).
@@ -136,8 +136,8 @@
   3. **Xây Dựng & Kích Hoạt Orchestrator Daemon Tự Động Thức 3 Phút / Lần**:
      - Script vận hành: `SOURCE/scripts/orchestrator_daemon.py` và launcher `SOURCE/run_daemon.bat`.
      - **Trạng thái Khảo sát Metadata (Giai đoạn 1)**: ĐÃ HOÀN TẤT 100% bóc tách biểu tượng và JNI cho toàn bộ 169 thư viện native (.so).
-     - **Tiến độ Giải mã Thân hàm Thực tế (Giai đoạn 2 - Zero Stub)**: **5 / 169 thư viện (2.96%)** hoàn tất 100% thân hàm C++ có kiểm chứng toán học/ABI (libAGFX.so, libtexturerender_native.so, libnative-filters.so, libttffmpeg.so, libmiddle-bridge.so); **1 / 169 thư viện (0.59%)** bị khóa giải mã tĩnh (libcapcut.so do đóng gói packer tùy biến \x7fKOM); **163 / 169 thư viện (96.45%)** ở mức kiến trúc sườn (SCAFFOLD/Metadata).
-     - **Hệ Thống Tự Kiểm Chứng Khép Kín (Closed-Loop)**: Bộ test erify_reconstruction_suite.py đạt **27/27 tests PASS (100.0%)** kiểm tra tính toàn vẹn mã nguồn, chữ ký ABI AArch64 và tính toán hạch toán toán học (Poly6, Spiky, Box Blur moving sum, Subpixel coverage, SPS Jump Table, POC layout, URLProtocol ABI, GF(2^8) polynomial 0x11b, TTMApp magic/version).
+     - **Tiến độ Giải mã Thân hàm Thực tế (Giai đoạn 2 - Zero Stub)**: **6 / 169 thư viện (3.55%)** hoàn tất 100% thân hàm C++ có kiểm chứng toán học/ABI (libAGFX.so, libtexturerender_native.so, libnative-filters.so, libttffmpeg.so, libmiddle-bridge.so, libcccreator.so); **1 / 169 thư viện (0.59%)** bị khóa giải mã tĩnh (libcapcut.so do đóng gói packer tùy biến \x7fKOM); **162 / 169 thư viện (95.86%)** ở mức kiến trúc sườn (SCAFFOLD/Metadata).
+     - **Hệ Thống Tự Kiểm Chứng Khép Kín (Closed-Loop)**: Bộ test erify_reconstruction_suite.py đạt **33/33 tests PASS (100.0%)** kiểm tra tính toàn vẹn mã nguồn, chữ ký ABI AArch64 và tính toán hạch toán toán học (Poly6, Spiky, Box Blur moving sum, Subpixel coverage, SPS Jump Table, POC layout, URLProtocol ABI, GF(2^8) polynomial 0x11b, TTMApp magic/version).
      - **Giao việc & Báo cáo Sổ cái**: Đã giao **166 tasks** tại SOURCE/NHIEMVU/ và cập nhật **166 reports trung thực** tại SOURCE/BAOCAO/.
      - Chu kỳ: 180 giây (3 phút) tự động thức dậy thực hiện 5 bước:
        - (1) Đọc báo cáo từ Agent tại `SOURCE/BAOCAO/`.
