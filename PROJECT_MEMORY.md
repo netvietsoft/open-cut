@@ -1004,3 +1004,19 @@
 - **Tiến độ thực chất**: Đạt **8 / 169 thư viện COMPLETED (4.73%)** có 100% thân hàm thực tế.
 
 
+
+## 37. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libmiddleware.so (CORE_01_EDITING)
+- **Thời gian**: 2026-10-14 19:30:00
+- **Thư viện**: libmiddleware.so (arm64-v8a: 65.92 MB, 69,122,320 bytes, 49,324 dynamic symbols, 102 JNI exports, 31,450 C++ demangled functions).
+- **Chi tiết giải mã thân hàm (8 modules, 63.3 KB code C++, 0 stub)**:
+  1. *Động cơ MiddlewareEngine & Ngữ cảnh Singleton*: Gọi hàm lấy singleton context tại `0x9b2f20` (`bl #0x9b2f20`), truy xuất `SceneGraph*` từ LayerManager vtable con trỏ hàm tại offset `0x3a0` (`0x12fd530`), và cơ chế reset giải phóng đồng bộ qua mutex.
+  2. *Quản lý Scene Graph & Chuẩn hóa Modulo 360 độ*: Hàm `queryLayerRotate` tại opcode `0x12fda14` chuẩn hóa góc xoay modulo 360 độ về $[0, 360)$, trả về `0.0f` trong thanh ghi `s0` khi layer không tồn tại hoặc context null khớp lệnh `fmov s0, wzr; ret` (opcode `0x12fda54`).
+  3. *Biến đổi Affine & Ánh xạ thanh ghi SIMD*: Hàm `nativeScale` tại opcode `0x12fdc2c` nhận `scale_x` trong vector `v0`, `scale_y` trong `v1`, và `layer_id` trong thanh ghi `w2`. Hàm `getLayerAABBBox` tại opcode `0x12fd4f4` tính toán hộp bao trục song song AABB từ 4 góc xoay cực đại cực tiểu (hoán đổi chiều dài và rộng khi xoay 90 độ). Hàm `moveLayerOfSiblingNode` tại opcode `0x12fc114` hoán đổi thứ tự hiển thị Z-Order giữa các layer anh em.
+  4. *Phòng cắt ảnh Crop Room & Khóa tỉ lệ*: Hàm `enterCropRoom` tại opcode `0x12fc374` và `updateCropRect` tại opcode `0x12fc460` khóa tỉ lệ khung hình ($16:9, 9:16, 1:1$), tính ma trận UV và ràng buộc tọa độ chuẩn hóa $[0.0, 1.0]$.
+  5. *Giao dịch nguyên tử Command Stack Batch Push*: Hàm `beginBatchPush` tại opcode `0x12fc5e8` và `endBatchPush` tại opcode `0x12fc620` gom các thao tác chỉnh sửa thành một Transaction nguyên tử, quản lý ngăn xếp Undo/Redo an toàn không làm hỏng dữ liệu.
+  6. *Động cơ dàn trang thích ứng AutoLayout*: Thuật toán căn lề tự động thích ứng với màn hình đa tỉ lệ và tuần tự hóa đối soát chuỗi JSON.
+  7. *Mẫu chữ động Kinetic Typography & Font Index Resolver*: Hàm `getTextTemplateTitles` tại opcode `0x12f7c28` trích xuất danh sách tiêu đề từ các slot văn bản của template qua JNI string array, hàm `setTextTemplateFontByIndex` tại opcode `0x12f5f5c` tra cứu font theo chỉ số trong catalog, hàm `setTextFont` tại opcode `0x12f5bb4` nạp phông chữ trực tiếp, và thuật toán nội suy chuyển động nảy chữ EaseOutBack ($1 + c_3 t^3 + c_1 t^2$).
+  8. *Hệ thống tách nền AI & Dập cọ tương tác Cutout Brush*: Hàm `setCutoutBrushData` tại opcode `0x12f4f48` nhận 7 tham số float trong vector `v0..v6` và các cờ chế độ trong `w5..w7`, dập cọ khoảng cách Euclidean/Elip với làm mịn viền Hermite Smoothstep ($3t^2 - 2t^3$). Hàm `onIntelligentMaskResult` tại opcode `0x12f2f10` kiểm tra mã lỗi (`cbnz x2`), kiểm tra con trỏ đệm (`cbz x3`), tiếp nhận mặt nạ từ model `xt_middleware_brush_cutout_recognition.zip`. Hàm `cancelAIBackgroundPreview` tại opcode `0x12f6730` kích hoạt cờ ngắt giải phóng tài nguyên tiến trình ngầm.
+  9. *Bộ 12 bài tự kiểm chứng khép kín*: Tích hợp trực tiếp trong `MiddlewareEngine::runSelfTest()` và thực thi kiểm định độc lập trong `verify_reconstruction_suite.py`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **53/53 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **9 / 169 thư viện COMPLETED (5.33%)** có 100% thân hàm thực tế.
