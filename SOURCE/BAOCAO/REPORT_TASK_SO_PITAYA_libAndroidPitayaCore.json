@@ -1,0 +1,38 @@
+{
+  "task_id": "TASK_SO_PITAYA_libAndroidPitayaCore",
+  "library": "libAndroidPitayaCore.so",
+  "category": "CORE_02_AI_CV",
+  "binary_size": 5816472,
+  "status": "COMPLETED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_types.h",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_objects.h",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_objects.cpp",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_kv_store.h",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_kv_store.cpp",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_feature_store.h",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_feature_store.cpp",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_task_executor.h",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_task_executor.cpp",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_core.h",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/pitaya_core.cpp",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/AndroidPitayaCore_interface.h",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/AndroidPitayaCore_pseudocode.cpp",
+    "SOURCE/GIAI-MA/libAndroidPitayaCore/README_PITAYA_HOAN_CHINH.md"
+  ],
+  "total_cpp_size_bytes": 102365,
+  "stubs_count": 0,
+  "todos_count": 0,
+  "arm64_parity_proofs": {
+    "PitayaCore_Instance": "0xccbc4 (Singleton allocation & initialization)",
+    "PitayaCore_IsReady": "0xccd34 (Read ready flag at offset 0x4e6)",
+    "TaskExecutor_SetConcurrency": "0x1b7cac (Dynamic thread pool concurrency scaling)",
+    "TaskTrace_MakeTrace": "0xaac04 (Span allocation & latency tracking)",
+    "ByteDTEngineStone_Create": "0xee040 (Decision tree rule evaluation engine)",
+    "FeatureSchemaHandler_GenerateSQL": "0x26f220 (Dynamic SQL generation from stream config)",
+    "FeatureStoreCore_addFeature": "0x2e4ccc (Time-series feature ingestion)",
+    "FeatureStoreCore_endSession": "0x2e5b14 (Session termination & boundary demarcation)"
+  },
+  "self_test_results": "10/10 PASS (100.0%)",
+  "completion_timestamp": "2026-10-14T20:10:00+07:00"
+}

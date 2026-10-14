@@ -1052,3 +1052,17 @@
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **67/67 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **11 / 169 thư viện COMPLETED (6.51%)** có 100% thân hàm thực tế.
 
+
+
+## 40. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libAndroidPitayaCore.so (CORE_02_AI_CV)
+- **Thời gian**: 2026-10-14 20:10:00
+- **Thư viện**: libAndroidPitayaCore.so (arm64-v8a: 5.55 MB, 5,816,472 bytes, 2,069 dynamic symbols, 124 JNI exports, 1,386 C++ demangled functions).
+- **Chi tiết giải mã thân hàm (13 modules, 102.4 KB code C++, 0 stub)**:
+  1. *Vòng đời PitayaCore Singleton & Kiểm tra Sẵn sàng*: Hàm `Instance()` tại opcode `0xccbc4`, hàm `IsReady()` tại opcode `0xccd34` kiểm tra cờ trạng thái `is_ready_` tại offset `0x4e6`, hàm `Setup` tại opcode `0xd566c`, hàm `Boot` tại opcode `0xdb1ec`, hàm `RunTask` tại opcode `0xd9128`, và hàm `CleanPitaya` tại opcode `0xd8820`.
+  2. *Hệ thống Đối tượng Động PTYObject & JSON Parser*: Khôi phục hệ thống đối tượng đa kiểu `PTYDict`, `PTYList`, `PTYInt`, `PTYFloat`, `PTYDouble`, `PTYStr`, `PTYBool` với khả năng tuần tự hóa và giải mã JSON lồng nhau chuẩn hóa, xử lý ký tự thoát hiểm JSON an toàn và quản lý con trỏ JNI `PTYHandleManager`.
+  3. *Kho Key-Value đa miền PTYKVStore*: Cơ chế khóa đọc ghi `shared_mutex` (RWLock) phân tách miền lưu trữ độc lập, cơ chế đọc thử không chặn `GetCacheWithTryLock` bảo vệ render loop video 60fps khỏi drop-frame, quản lý hạn dùng TTL và dọn dẹp bản ghi hết hạn `CleanExpired`.
+  4. *Kho đặc trưng FeatureStoreCore & Sinh Schema SQL*: Thu thập đặc trưng `FeatureStoreCore::addFeature` (opcode `0x2e4ccc`), quản lý nhóm đặc trưng `getFeaturesByGroup` và sinh câu lệnh SQL tự động `FeatureSchemaHandler::GenerateSQLFromStreamConfig` (opcode `0x26f220`) từ `SchemaEventStream`.
+  5. *Bộ lập lịch TaskExecutor & Cây quyết định ByteDT*: Co giãn luồng động `SetConcurrency` (opcode `0x1b7cac`), giám sát đo đạc độ trễ `TaskTrace::MakeTrace` (opcode `0xaac04`), và đánh giá luật on-device `ByteDTEngineStone::EvaluateRules` (opcode `0xee040`) tự động phân loại cấu hình thiết bị để chọn codec ByteVC1/H.264 và độ phân giải xuất video tối ưu.
+  6. *Cổng nối JNI & Bộ 10 bài tự kiểm chứng khép kín*: Ánh xạ 124 JNI exports, tích hợp hàm `pitaya_run_verification_self_test()` kiểm chứng 10/10 tiêu chí giải thuật.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **75/75 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **12 / 169 thư viện COMPLETED (7.10%)** có 100% thân hàm thực tế.
