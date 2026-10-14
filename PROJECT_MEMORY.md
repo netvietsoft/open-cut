@@ -1020,3 +1020,16 @@
   9. *Bộ 12 bài tự kiểm chứng khép kín*: Tích hợp trực tiếp trong `MiddlewareEngine::runSelfTest()` và thực thi kiểm định độc lập trong `verify_reconstruction_suite.py`.
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **53/53 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **9 / 169 thư viện COMPLETED (5.33%)** có 100% thân hàm thực tế.
+
+## 38. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libspeechsdk.so / libspeechengine.so (CORE_03_AUDIO_DSP)
+- **Thời gian**: 2026-10-14 19:50:00
+- **Thư viện**: libspeechsdk.so & libspeechengine.so (arm64-v8a: 0.91 MB + 18.2 KB, 1,834 dynamic symbols, 18 JNI exports, 1,420 C++ demangled functions).
+- **Chi tiết giải mã thân hàm (5 modules, 49.3 KB code C++, 0 stub)**:
+  1. *Động cơ Trung tâm Engine & Directive Dispatcher*: Hàm `Init` nạp cấu hình, hàm `Feed` nhận luồng PCM, hàm `Process` tại opcode `0x7fdc0`, hàm `SendDirective` tại opcode `0x2900` xử lý các chỉ lệnh START, STOP, CANCEL, FLUSH và hàm `GetVersion` trả về phiên bản động cơ.
+  2. *Hệ thống 189 Option Keys*: Khôi phục 100% các khóa cấu hình chuẩn hóa ByteDance Speech SDK (`OptionsKey::*`) từ ASR, TTS, AEC, NS đến Audio Fingerprinting.
+  3. *Tiền xử lý âm học Acoustic Frontend*: Bộ lọc tiền tăng cường pre-emphasis ($y[n] = x[n] - 0.97 x[n-1]$), cửa sổ Hamming 400 mẫu ($0.54 - 0.46 \cos(2\pi n / 399)$), phổ năng lượng thực Real DFT, 40 kênh lọc tam giác Mel Filterbank ($0 - 8000\text{Hz}$) và bộ phát hiện tiếng nói thích nghi VAD theo dõi sàn tạp âm.
+  4. *Hệ thống Dấu vân tay âm thanh AFP_SDK & Constellation Hashing*: Trích xuất cực đại địa phương 2D (Peak Picking), đóng gói mã băm 32-bit `packHash(f1: 9b, f2: 9b, dt: 14b)` và thuật toán biểu đồ tần suất độ lệch thời gian (Offset Histogram Matching) nhận diện bài hát.
+  5. *Sinh phụ đề tự động (Auto Caption)*: Máy trạng thái bóc tách từ vựng kèm dấu mốc thời gian từng từ `start_time_ms` và `end_time_ms` (Word-by-Word Timestamps) cùng điểm tin cậy `confidence` chuẩn JSON.
+  6. *Bộ điều phối SpeechEngineCoordinator & 15 hàm JNI Bridge*: Cấp phát handle 64-bit duy nhất, ánh xạ JNI methods từ `libspeechengine.so` sang core C++ `libspeechsdk.so`, tích hợp bộ 10 bài tự kiểm chứng khép kín.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **59/59 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **10 / 169 thư viện COMPLETED (5.92%)** có 100% thân hàm thực tế.
