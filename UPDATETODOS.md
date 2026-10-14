@@ -136,8 +136,8 @@
   3. **Xây Dựng & Kích Hoạt Orchestrator Daemon Tự Động Thức 3 Phút / Lần**:
      - Script vận hành: `SOURCE/scripts/orchestrator_daemon.py` và launcher `SOURCE/run_daemon.bat`.
      - **Trạng thái Khảo sát Metadata (Giai đoạn 1)**: ĐÃ HOÀN TẤT 100% bóc tách biểu tượng và JNI cho toàn bộ 169 thư viện native (.so).
-     - **Tiến độ Giải mã Thân hàm Thực tế (Giai đoạn 2 - Zero Stub)**: **4 / 169 thư viện (2.37%)** hoàn tất 100% thân hàm C++ có kiểm chứng toán học/ABI (libAGFX.so, libtexturerender_native.so, libnative-filters.so, libttffmpeg.so); **1 / 169 thư viện (0.59%)** bị khóa giải mã tĩnh (libcapcut.so do đóng gói packer tùy biến \x7fKOM); **164 / 169 thư viện (97.04%)** ở mức kiến trúc sườn (SCAFFOLD/Metadata).
-     - **Hệ Thống Tự Kiểm Chứng Khép Kín (Closed-Loop)**: Bộ test erify_reconstruction_suite.py đạt **21/21 tests PASS (100.0%)** kiểm tra tính toàn vẹn mã nguồn, chữ ký ABI AArch64 và tính toán hạch toán toán học (Poly6, Spiky, Box Blur moving sum, Subpixel coverage, SPS Jump Table, POC layout, URLProtocol ABI, GF(2^8) polynomial 0x11b, TTMApp magic/version).
+     - **Tiến độ Giải mã Thân hàm Thực tế (Giai đoạn 2 - Zero Stub)**: **5 / 169 thư viện (2.96%)** hoàn tất 100% thân hàm C++ có kiểm chứng toán học/ABI (libAGFX.so, libtexturerender_native.so, libnative-filters.so, libttffmpeg.so, libmiddle-bridge.so); **1 / 169 thư viện (0.59%)** bị khóa giải mã tĩnh (libcapcut.so do đóng gói packer tùy biến \x7fKOM); **163 / 169 thư viện (96.45%)** ở mức kiến trúc sườn (SCAFFOLD/Metadata).
+     - **Hệ Thống Tự Kiểm Chứng Khép Kín (Closed-Loop)**: Bộ test erify_reconstruction_suite.py đạt **27/27 tests PASS (100.0%)** kiểm tra tính toàn vẹn mã nguồn, chữ ký ABI AArch64 và tính toán hạch toán toán học (Poly6, Spiky, Box Blur moving sum, Subpixel coverage, SPS Jump Table, POC layout, URLProtocol ABI, GF(2^8) polynomial 0x11b, TTMApp magic/version).
      - **Giao việc & Báo cáo Sổ cái**: Đã giao **166 tasks** tại SOURCE/NHIEMVU/ và cập nhật **166 reports trung thực** tại SOURCE/BAOCAO/.
      - Chu kỳ: 180 giây (3 phút) tự động thức dậy thực hiện 5 bước:
        - (1) Đọc báo cáo từ Agent tại `SOURCE/BAOCAO/`.

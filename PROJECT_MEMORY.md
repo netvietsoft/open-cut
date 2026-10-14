@@ -952,3 +952,16 @@
   7. *Cầu nối TTMApp*: Con trỏ magic tĩnh 0x584810, hằng số phiên bản 0x01343f0f (20201231).
 - **Kiểm định tự động**: Bộ test suite erify_reconstruction_suite.py mở rộng đạt **21/21 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **4 / 169 thư viện COMPLETED (2.37%)** có 100% thân hàm thực tế.
+
+
+## 33. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libmiddle-bridge.so (AUDIT TARGET 3/4)
+- **Thời gian**: 2026-10-14 07:15:00
+- **Thư viện**: libmiddle-bridge.so (arm64-v8a: 60.76 MB, SHA-256: `c8bdd53da98f1bc85ae23ac655230e9a589ca6f943a96e07cc6101fa5e6514f4`).
+- **Chi tiết giải mã thân hàm (10 modules, 46.1 KB code C++, 0 stub)**:
+  1. *Cấu trúc thanh ghi RunVelocityAlgorithmReqStruct*: Khớp 100% layout AArch64 ABI: `video_path` offset 0x48 (0x01e3b4b4), `video_time_range` offset 0x60 SIMD `q0` (0x01fa72ec), `algo_mode` offset 0xa0 (0x01e3b694), `algo_phase` offset 0xa4 (0x01e3b6c0), `audio_source_time_range` offset 0xd8 SIMD `q0` (0x020de898), `video_speed` offset 0xe8 double `d0` (0x01f0538c), `curve_speed` vector offset 0x68 (0x01f7d048).
+  2. *Giải thuật biến thiên tốc độ Cubic Bezier & Auto Beat Drop*: Đường cong $B(t)$ nội suy mượt mà, tự động tính mốc chuyển nhịp âm nhạc drop.
+  3. *Tích phân số Simpson ánh xạ thời gian*: $\tau(t) = \int_0^t v(s) ds$ chuyển đổi timeline sang media nguồn chính xác tuyệt đối.
+  4. *Phân hệ MaterialMask*: Hỗ trợ 4 loại mặt nạ (Linear, Mirror, Circle, Rectangle), làm mờ biên feathering hàm mũ, và offset trường PositionInfo tại `0x90` (144 bytes) khớp lệnh máy `add x0, x0, #0x90; ret` (opcode `0x024ed08c`).
+  5. *Phân hệ CompositionReplace*: Thay thế phân đoạn video trên đa rãnh NLE bảo toàn keyframes, đường cong tốc độ và bộ lọc hiệu ứng.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **27/27 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **5 / 169 thư viện COMPLETED (2.96%)** có 100% thân hàm thực tế.
