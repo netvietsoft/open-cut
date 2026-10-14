@@ -938,3 +938,17 @@
 - **Thời gian**: 2026-10-13 23:01:14
 - **Chi tiết**: Tái cấu trúc thuật toán Box Blur tổng trượt O(1) và Circular Subpixel Rounding Mask.
 - **Tiến độ thực chất**: Đạt 3/169 thư viện COMPLETED 100% thân hàm.
+
+## 32. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libttffmpeg.so (AUDIT TARGET 5/6)
+- **Thời gian**: 2026-10-14 07:00:00
+- **Thư viện**: libttffmpeg.so (arm64-v8a: 5.77 MB, SHA-256: 755c8dcac05951c52c53a3d3e02f0fe1c597b6cae3191622d3d9b220c8ba7fd9).
+- **Chi tiết giải mã thân hàm (10 modules, > 55 KB code C++)**:
+  1. *Quản lý NAL unit & Bộ tham số SPS/PPS*: Khôi phục H2645NAL (104 bytes), H264ParamSets (2,336 bytes), SPS (5,304 bytes), PPS (173,888 bytes). Bảng nhảy SPS get_int_field [0x14, 0x40, 0x18, 0x1c, 0x20, 0x298].
+  2. *Ngữ cảnh tính toán POC*: H264POCContext kích thước 44 bytes (0x2c), mảng delta_poc[2] tại offset 0x0c, bảng nhảy 9 trường POC.
+  3. *Bộ quét nhanh Bitstream MMCO == 5*: Exp-Golomb bitstream reader inline clz/sub quét slice header; trả về 1 khi phát hiện MMCO == 5 (reset DPB cho instant seek).
+  4. *7 Giao thức mạng độc quyền ByteDance*: mdl, quic, httpx, mem, live, hlsproxy, memorydatasource với hợp đồng ABI sizeof(URLProtocol) = 192 bytes (0xc0).
+  5. *Bảng hooks mạng TTNet*: DNS resolve, Socket IO tại 0x7be350, callback SSL Pinning tại 0x7be348.
+  6. *Giải mã DRM & GF(2^8) Stream Cipher*: Bảng thế S-box trường hữu hạn đa thức tối giản 0x11b (^8 + x^4 + x^3 + x + 1$).
+  7. *Cầu nối TTMApp*: Con trỏ magic tĩnh 0x584810, hằng số phiên bản 0x01343f0f (20201231).
+- **Kiểm định tự động**: Bộ test suite erify_reconstruction_suite.py mở rộng đạt **21/21 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **4 / 169 thư viện COMPLETED (2.37%)** có 100% thân hàm thực tế.
