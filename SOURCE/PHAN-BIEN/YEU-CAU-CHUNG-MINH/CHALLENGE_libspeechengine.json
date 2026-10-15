@@ -1,0 +1,18 @@
+{
+  "lib_name": "libspeechengine",
+  "inspected_at": "2026-10-15 16:15:54",
+  "gate1_size_bytes": 7635,
+  "gate1_passed": false,
+  "gate2_opcode_count": 0,
+  "gate2_passed": false,
+  "gate3_math_verified": false,
+  "gate4_abi_offsets_verified": false,
+  "gate5_symbols_count": 52,
+  "gate5_passed": true,
+  "gate6_test_passed": true,
+  "status": "CHALLENGED_NEEDS_PROOF",
+  "criticisms": [
+    "Dung lượng mã nguồn (7635 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể."
+  ]
+}

@@ -1066,3 +1066,25 @@
   6. *Cổng nối JNI & Bộ 10 bài tự kiểm chứng khép kín*: Ánh xạ 124 JNI exports, tích hợp hàm `pitaya_run_verification_self_test()` kiểm chứng 10/10 tiêu chí giải thuật.
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **75/75 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **12 / 169 thư viện COMPLETED (7.10%)** có 100% thân hàm thực tế.
+
+## 41. THIẾT LẬP HỆ THỐNG LUÔN LUÔN THỨC (ALWAYS-ON WATCHDOG) & AGENT 13 (ADVERSARY AUDITOR / AGENT ĐỐI KHÁNG)
+- **Thời gian**: 2026-10-15 16:15:00
+- **Chỉ đạo**: Chủ tịch yêu cầu: (1) Viết lệnh để luôn luôn thức không bị off, chỉ huy Agent đào bới liên tục 167 file `.so`; (2) Tạo thư mục phản biện; (3) Tạo Agent Đối Kháng kiểm tra báo cáo, đòi chứng minh; (4) Agent 0 kiểm tra các phản biện để thêm bằng chứng xác minh.
+- **Triển khai kỹ thuật**:
+  1. *Cơ chế Luôn Luôn Thức (Always-On Watchdog)*:
+     - Kịch bản giám sát: `SOURCE/scripts/always_on_watchdog.py` và bộ launcher `SOURCE/run_always_on_orchestrator.bat` / `.ps1`.
+     - Vận hành vòng lặp vô tận, tự động hồi sinh khi gặp exception/crash, ghi nhịp tim heartbeat vào `SOURCE/logs/orchestrator_always_on.log`.
+     - Chạy nền dưới dạng daemon task `task-1950`, liên tục điều phối 3 bước: (1) Agent 0 Orchestrator giải mã và giao việc; (2) Agent 13 Adversary Critic đối soát; (3) Closed-loop verification test suite.
+  2. *Thư mục Phản Biện Đối Kháng*:
+     - Thiết lập cấu trúc `SOURCE/PHAN-BIEN/`:
+       - `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/`: Nơi Agent 13 ban hành trát thách thức kỹ thuật (`CHALLENGE_<lib>.md` và `.json`).
+       - `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/`: Nơi Agent 0 & Đội ngũ nộp bằng chứng chứng minh (`PROOF_<lib>.md` và `.json`).
+       - `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/`: Sổ cái độc lập `LEDGER_DOI_KHANG.json` và báo cáo `AUDIT_SUMMARY.md`.
+       - `SOURCE/PHAN-BIEN/README_QUY_TRINH_PHAN_BIEN.md`: Hiến định 6 cổng thẩm định khắc nghiệt (Dung lượng > 40KB, Opcode thật, Math pass, ABI offsets, Demangled symbols, Test suite).
+  3. *Chính thức hóa Agent 13 trong Hiến pháp AGENTS.md & GEMINI.md*:
+     - Agent 13: **ADVERSARY AUDITOR (AGENT ĐỐI KHÁNG - RED TEAM CRITIC)**.
+     - Vai trò: Công tố viên kỹ thuật độc lập, nghi ngờ mọi báo cáo, đòi hỏi bằng chứng opcode và công thức toán học thực tế.
+  4. *Động cơ Đối Kháng Tự Động `adversary_critic_agent.py`*:
+     - Quét toàn bộ 169 thư viện native, phát hiện 12 thư viện hoàn chỉnh hợp lệ, 96 thư viện đang bị thách thức đòi bằng chứng, 1 thư viện bị khóa do custom packer (`libcapcut.so`), và 60 thư viện ở mức scaffold.
+     - Phát hiện thiếu sót opcode trong `libspeechsdk.so` và đã được Agent 0 xử lý triệt để, bổ sung các địa chỉ `0x7e690`, `0x7fbb4`, `0x803f0`, `0x81a7c`, `0x892dc` từ binary thật vào mã nguồn C++.
+

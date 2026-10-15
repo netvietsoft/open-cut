@@ -615,6 +615,16 @@ class OrchestratorEngine:
         except Exception as e:
             print(f"[!] Lỗi chạy verification suite: {e}")
 
+        # 2.1. KÍCH HOẠT AGENT 13 (ADVERSARY AUDITOR) ĐỐI KHÁNG ĐỘC LẬP
+        try:
+            import subprocess
+            py_exe = sys.executable
+            adversary_script = Path(__file__).parent / "adversary_critic_agent.py"
+            if adversary_script.exists():
+                subprocess.run([py_exe, str(adversary_script)], check=False)
+        except Exception as e:
+            print(f"[!] Lỗi chạy adversary critic agent: {e}")
+
         verif_results = self.verify_decompiled_code()
         
         # 3. Phân tích tự động 3 thư viện ưu tiên nhất nếu chưa có

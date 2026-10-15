@@ -75,6 +75,7 @@ Mọi AI Agent (Claude, Codex, DeepSeek, Antigravity, Gemini, Aider, Cline...) k
 | **Agent 10** | **DEVOPS** | Docker, Port 6033 config, Nginx, CI/CD, Cloudflare R2, Backup, Observability | **CÓ** (`infra/**`, `scripts/**`) |
 | **Agent 11** | **DESIGNER** | UI/UX Design System, Wireframes, Interactive Prototypes, Visual QA | **CÓ** (`design/**`, `Docs/Design/**`) |
 | **Agent 12** | **DOCUMENTATION** | Cập nhật Docs, README, API Specs, Changelog, Handoffs, Ledger | **CÓ** (`Docs/**`, `.ai/**`) |
+| **Agent 13** | **ADVERSARY AUDITOR (AGENT ĐỐI KHÁNG)** | Đóng vai Red Team phản biện, soi mói từng dòng code/báo cáo, bác bỏ mọi tuyên bố khi chưa có bằng chứng nhị phân/toán học, tạo thách thức đòi chứng minh | **CHỈ TẠO THÁCH THỨC & AUDIT** (`SOURCE/PHAN-BIEN/**`) |
 
 ---
 
@@ -87,3 +88,15 @@ REQUIREMENT -> UX ANALYSIS -> PROTOTYPE -> VISUAL QA -> HUMAN APPROVAL -> DESIGN
 - Designer tạo nguyên mẫu tại `design/prototypes/`.
 - Khi có Human Approval, đóng băng thiết kế tại `design/approved/`.
 - Frontend Agent triển khai theo đúng mẫu đã duyệt.
+
+---
+
+## 5. QUY TRÌNH PHẢN BIỆN ĐỐI KHÁNG & XÁC MINH KHÉP KÍN (ADVERSARIAL VERIFICATION PROTOCOL)
+
+Nhằm đảm bảo tuyệt đối không có báo cáo láo trong quá trình tái dựng 169 file `.so`:
+1. **Agent 13 (Đối Kháng)** hoạt động độc lập, coi mọi báo cáo và mã nguồn là giả mạo cho đến khi có bằng chứng.
+2. Với mỗi báo cáo hoặc thư viện được gắn cờ hoàn thành, Agent 13 quét 6 tiêu chuẩn (Dung lượng > 40KB, Khớp opcode AArch64, Tính chính xác toán học, Bố cục struct ABI, Demangled symbols, và Kịch bản kiểm thử độc lập).
+3. Nếu thiếu bằng chứng, Agent 13 phát hành trát thách thức tại `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/`.
+4. **Agent 0 (Thư ký Orchestrator)** điều phối Worker Agents nộp bằng chứng nhị phân & toán học tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/`.
+5. Sau khi đối soát thành công 100%, thư viện mới được cấp chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`.
+

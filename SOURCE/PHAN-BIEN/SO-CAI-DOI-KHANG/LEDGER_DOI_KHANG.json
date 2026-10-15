@@ -1,0 +1,3179 @@
+{
+  "meta": {
+    "created_at": "2026-10-15 16:12:35",
+    "auditor": "Agent 13 (Adversary Auditor / Red Team Critic)",
+    "total_targets": 169,
+    "last_audit": "2026-10-15 16:15:54"
+  },
+  "status_summary": {
+    "VERIFIED_AND_ACCEPTED": 12,
+    "CHALLENGED_NEEDS_PROOF": 96,
+    "BLOCKED_CUSTOM_PACKED": 1,
+    "SCAFFOLD_METADATA_ONLY": 60
+  },
+  "libraries": {
+    "libAGFX": {
+      "lib_name": "libAGFX",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 113544,
+      "gate1_passed": true,
+      "gate2_opcode_count": 23,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 735,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libAndroidPitayaCore": {
+      "lib_name": "libAndroidPitayaCore",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 102365,
+      "gate1_passed": true,
+      "gate2_opcode_count": 29,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 2069,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libBDMicroPythonVM": {
+      "lib_name": "libBDMicroPythonVM",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 10543,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 396,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (10543 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libBDPythonVM": {
+      "lib_name": "libBDPythonVM",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 11250,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 444,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (11250 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libByteAIDT": {
+      "lib_name": "libByteAIDT",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4408,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 34,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4408 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libByteAINN": {
+      "lib_name": "libByteAINN",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5803,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 57,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5803 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libByteVC1_dec": {
+      "lib_name": "libByteVC1_dec",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1012,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 130,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1012 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libCepEngine": {
+      "lib_name": "libCepEngine",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 8112,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 318,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (8112 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libEncryptor": {
+      "lib_name": "libEncryptor",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 986,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 18,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (986 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libPitayaBdComponent": {
+      "lib_name": "libPitayaBdComponent",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4835,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 60,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4835 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libTTMStrategyCenter": {
+      "lib_name": "libTTMStrategyCenter",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6859,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 899,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6859 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libTTMachineCore": {
+      "lib_name": "libTTMachineCore",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5054,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 830,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5054 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libalog": {
+      "lib_name": "libalog",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 921,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 104,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (921 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libanimax": {
+      "lib_name": "libanimax",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4692,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 573,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4692 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libanimax_bytevc1": {
+      "lib_name": "libanimax_bytevc1",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5211,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 64,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5211 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libanimax_napi": {
+      "lib_name": "libanimax_napi",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7232,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 93,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7232 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libanimax_textra": {
+      "lib_name": "libanimax_textra",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5084,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 104,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5084 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libapplovin-native-crash-reporter": {
+      "lib_name": "libapplovin-native-crash-reporter",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6062,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 2137,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6062 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libart_sym": {
+      "lib_name": "libart_sym",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5610,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 399,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5610 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libaudio_fingerprint_sdk": {
+      "lib_name": "libaudio_fingerprint_sdk",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7459,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 99,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7459 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libaudioeffect": {
+      "lib_name": "libaudioeffect",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 74531,
+      "gate1_passed": true,
+      "gate2_opcode_count": 39,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 4197,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libavmdlbase": {
+      "lib_name": "libavmdlbase",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5119,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 1020,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5119 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libavmdlv2": {
+      "lib_name": "libavmdlv2",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5762,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 738,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5762 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbach-sdk-jni": {
+      "lib_name": "libbach-sdk-jni",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 8332,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 112,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (8332 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbdhm_native": {
+      "lib_name": "libbdhm_native",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4725,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 78,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4725 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbdsword": {
+      "lib_name": "libbdsword",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 960,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 21,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (960 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbdvideouploader": {
+      "lib_name": "libbdvideouploader",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6043,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 358,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6043 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbdzstd": {
+      "lib_name": "libbdzstd",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7196,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 91,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7196 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbuffer": {
+      "lib_name": "libbuffer",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 2297,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 37,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (2297 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbuffer_pgl": {
+      "lib_name": "libbuffer_pgl",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 2492,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 29,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (2492 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbvcparser": {
+      "lib_name": "libbvcparser",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 986,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 43,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (986 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbyteVC2dec": {
+      "lib_name": "libbyteVC2dec",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 999,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 72,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (999 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbytebench": {
+      "lib_name": "libbytebench",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 10774,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 789,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (10774 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbytedt": {
+      "lib_name": "libbytedt",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4607,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 162,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4607 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbytehook": {
+      "lib_name": "libbytehook",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 973,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 95,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (973 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbytemonitor": {
+      "lib_name": "libbytemonitor",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4946,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 99,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4946 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbytenn": {
+      "lib_name": "libbytenn",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 105494,
+      "gate1_passed": true,
+      "gate2_opcode_count": 35,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 399,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libbytevc0": {
+      "lib_name": "libbytevc0",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1526,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 92,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1526 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libbytevc1enc": {
+      "lib_name": "libbytevc1enc",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 999,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 116,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (999 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libc++_shared": {
+      "lib_name": "libc++_shared",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6394,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 2327,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6394 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libcapcut": {
+      "lib_name": "libcapcut",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 947,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 0,
+      "gate5_passed": false,
+      "gate6_test_passed": true,
+      "status": "BLOCKED_CUSTOM_PACKED",
+      "criticisms": [
+        "Dung lượng mã nguồn (947 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Thiếu hoặc rỗng file symbols_demangled.json."
+      ]
+    },
+    "libcccreator": {
+      "lib_name": "libcccreator",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 49300,
+      "gate1_passed": true,
+      "gate2_opcode_count": 57,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 9161,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libclipflow": {
+      "lib_name": "libclipflow",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 66367,
+      "gate1_passed": true,
+      "gate2_opcode_count": 15,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 9799,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libconfigcenter": {
+      "lib_name": "libconfigcenter",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4543,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 65,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4543 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libcybertron_base": {
+      "lib_name": "libcybertron_base",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 8006,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 1574,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (8006 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libdelta": {
+      "lib_name": "libdelta",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 2932,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 71,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (2932 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libenvguard": {
+      "lib_name": "libenvguard",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 973,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 31,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (973 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libfast_engine": {
+      "lib_name": "libfast_engine",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5314,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 1833,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5314 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libfast_engine_RelWithDebInfo": {
+      "lib_name": "libfast_engine_RelWithDebInfo",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5509,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 1833,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5509 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libfastcv": {
+      "lib_name": "libfastcv",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4347,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 427,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4347 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libfdk-aac": {
+      "lib_name": "libfdk-aac",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5765,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 1047,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5765 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libfile_lock": {
+      "lib_name": "libfile_lock",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1632,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 22,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1632 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libfile_lock_pgl": {
+      "lib_name": "libfile_lock_pgl",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1762,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 15,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1762 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libfile_recorder": {
+      "lib_name": "libfile_recorder",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 3337,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 65,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (3337 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libflipped": {
+      "lib_name": "libflipped",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1719,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 14,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1719 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libfly-main-color-lib": {
+      "lib_name": "libfly-main-color-lib",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1668,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 106,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1668 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libgaia_lib": {
+      "lib_name": "libgaia_lib",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4707,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 511,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4707 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libgeckox_bspatch": {
+      "lib_name": "libgeckox_bspatch",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1279,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 123,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1279 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libgifimage": {
+      "lib_name": "libgifimage",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1930,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 46,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1930 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libgodzilla-acurate-asan": {
+      "lib_name": "libgodzilla-acurate-asan",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7206,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 214,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7206 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libgodzilla-memsponge": {
+      "lib_name": "libgodzilla-memsponge",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 10733,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 2277,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (10733 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libgodzilla-sysopt": {
+      "lib_name": "libgodzilla-sysopt",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7336,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 143,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7336 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libgodzilla-touphic": {
+      "lib_name": "libgodzilla-touphic",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5882,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 111,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5882 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libhelios_bm": {
+      "lib_name": "libhelios_bm",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1081,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 24,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1081 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libiesapplogger": {
+      "lib_name": "libiesapplogger",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6191,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 120,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6191 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libimagepipeline": {
+      "lib_name": "libimagepipeline",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1202,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 30,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1202 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libjato": {
+      "lib_name": "libjato",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 11486,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 334,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (11486 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libjazz": {
+      "lib_name": "libjazz",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5154,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 336,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5154 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libjnidispatch": {
+      "lib_name": "libjnidispatch",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5962,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 195,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5962 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libkeva": {
+      "lib_name": "libkeva",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5581,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 567,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5581 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libkomprese-decompressor": {
+      "lib_name": "libkomprese-decompressor",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1142,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 11,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1142 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libkrypton": {
+      "lib_name": "libkrypton",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4644,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 967,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4644 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liblens": {
+      "lib_name": "liblens",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4914,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 423,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4914 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libluster": {
+      "lib_name": "libluster",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 947,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 25,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (947 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liblynx": {
+      "lib_name": "liblynx",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4996,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 1045,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4996 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liblynx-imageloader": {
+      "lib_name": "liblynx-imageloader",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1199,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 9,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1199 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liblynx_krypton": {
+      "lib_name": "liblynx_krypton",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6371,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 43,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6371 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liblynx_markdown": {
+      "lib_name": "liblynx_markdown",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 11101,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 131,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (11101 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liblynx_v8_bridge": {
+      "lib_name": "liblynx_v8_bridge",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5186,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 187,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5186 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liblynxbase": {
+      "lib_name": "liblynxbase",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4824,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 448,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4824 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liblynxsecurity": {
+      "lib_name": "liblynxsecurity",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1914,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 34,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1914 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liblynxtrace": {
+      "lib_name": "liblynxtrace",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7689,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 43,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7689 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libmdlttkmedianetloader": {
+      "lib_name": "libmdlttkmedianetloader",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5892,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 122,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5892 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libmetasec_ov": {
+      "lib_name": "libmetasec_ov",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5203,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 463,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5203 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libmiddle-bridge": {
+      "lib_name": "libmiddle-bridge",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 47242,
+      "gate1_passed": true,
+      "gate2_opcode_count": 13,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 49930,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libmiddleware": {
+      "lib_name": "libmiddleware",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 102922,
+      "gate1_passed": true,
+      "gate2_opcode_count": 30,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 49324,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libmonitorcollector-lib": {
+      "lib_name": "libmonitorcollector-lib",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6457,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 461,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6457 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnapi": {
+      "lib_name": "libnapi",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4690,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 497,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4690 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnative-filters": {
+      "lib_name": "libnative-filters",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 16014,
+      "gate1_passed": true,
+      "gate2_opcode_count": 5,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 19,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libnativeaudio": {
+      "lib_name": "libnativeaudio",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 2801,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 71,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (2801 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnewep": {
+      "lib_name": "libnewep",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6223,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 72,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6223 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnms": {
+      "lib_name": "libnms",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 908,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 41,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (908 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth": {
+      "lib_name": "libnpth",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 921,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 151,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (921 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_bt": {
+      "lib_name": "libnpth_bt",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 960,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 17,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (960 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_dl": {
+      "lib_name": "libnpth_dl",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 960,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 60,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (960 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_dumper": {
+      "lib_name": "libnpth_dumper",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5604,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 159,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5604 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_fd_tracker": {
+      "lib_name": "libnpth_fd_tracker",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1064,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 93,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1064 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_fp_unw": {
+      "lib_name": "libnpth_fp_unw",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1012,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 14,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1012 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_heap_tracker": {
+      "lib_name": "libnpth_heap_tracker",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1090,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 71,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1090 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_logcat": {
+      "lib_name": "libnpth_logcat",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1012,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 42,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1012 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_ref_monitor": {
+      "lib_name": "libnpth_ref_monitor",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1077,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 82,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1077 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_repair": {
+      "lib_name": "libnpth_repair",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1012,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 77,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1012 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_tls_monitor": {
+      "lib_name": "libnpth_tls_monitor",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1077,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 39,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1077 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_unw": {
+      "lib_name": "libnpth_unw",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6415,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 96,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6415 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_unwind": {
+      "lib_name": "libnpth_unwind",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7483,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 194,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7483 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_vm_monitor": {
+      "lib_name": "libnpth_vm_monitor",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1064,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 115,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1064 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnpth_xasan": {
+      "lib_name": "libnpth_xasan",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1175,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 84,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1175 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libnuro": {
+      "lib_name": "libnuro",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 11437,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 350,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (11437 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libopus": {
+      "lib_name": "libopus",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 921,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 88,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (921 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liborbuculum": {
+      "lib_name": "liborbuculum",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6740,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 743,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6740 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liborbuculumadapter": {
+      "lib_name": "liborbuculumadapter",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4951,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 144,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4951 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libosfix": {
+      "lib_name": "libosfix",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6190,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 162,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6190 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libpglarmor": {
+      "lib_name": "libpglarmor",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1088,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 14,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1088 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libpl_droidsonroids_gif": {
+      "lib_name": "libpl_droidsonroids_gif",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5932,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 96,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5932 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libpns_ttmachine_adapter": {
+      "lib_name": "libpns_ttmachine_adapter",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7328,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 165,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7328 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libppsec": {
+      "lib_name": "libppsec",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 2686,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 66,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (2686 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libpreload": {
+      "lib_name": "libpreload",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6786,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 363,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6786 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libprofiler": {
+      "lib_name": "libprofiler",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 973,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 110,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (973 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libpumbaa-network": {
+      "lib_name": "libpumbaa-network",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 11861,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 65,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (11861 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libpush_ka": {
+      "lib_name": "libpush_ka",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1088,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 14,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1088 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libpythonA": {
+      "lib_name": "libpythonA",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6309,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 2218,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6309 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libpythonA_RelWithDebInfo": {
+      "lib_name": "libpythonA_RelWithDebInfo",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6504,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 2218,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6504 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libquick": {
+      "lib_name": "libquick",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4603,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 1646,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4603 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libraphael": {
+      "lib_name": "libraphael",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1576,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 79,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1576 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libres_pool": {
+      "lib_name": "libres_pool",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 973,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 190,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (973 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libretouch_sdk": {
+      "lib_name": "libretouch_sdk",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 13802,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 2132,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (13802 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "librex": {
+      "lib_name": "librex",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 2448,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 35,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (2448 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libropaencrypt": {
+      "lib_name": "libropaencrypt",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1176,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 40,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1176 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libserval_svg": {
+      "lib_name": "libserval_svg",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 999,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 96,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (999 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libshadowhook": {
+      "lib_name": "libshadowhook",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 999,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 113,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (999 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libshadowhook_nothing": {
+      "lib_name": "libshadowhook_nothing",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1103,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 0,
+      "gate5_passed": false,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1103 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Thiếu hoặc rỗng file symbols_demangled.json.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libskity": {
+      "lib_name": "libskity",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4628,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 656,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4628 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libsliver": {
+      "lib_name": "libsliver",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1899,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 104,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1899 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libspeechengine": {
+      "lib_name": "libspeechengine",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7635,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 52,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7635 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể."
+      ]
+    },
+    "libspeechepg": {
+      "lib_name": "libspeechepg",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7596,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 52,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7596 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libspeechsdk": {
+      "lib_name": "libspeechsdk",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 79890,
+      "gate1_passed": true,
+      "gate2_opcode_count": 7,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 1959,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libsscronet": {
+      "lib_name": "libsscronet",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6918,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 1839,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6918 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libstatic-webp": {
+      "lib_name": "libstatic-webp",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 3316,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 82,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (3316 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libsys-platform": {
+      "lib_name": "libsys-platform",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1423,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 29,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1423 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libsysoptimizer": {
+      "lib_name": "libsysoptimizer",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 11020,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 416,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (11020 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libtailor": {
+      "lib_name": "libtailor",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6110,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 174,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6110 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libterrain": {
+      "lib_name": "libterrain",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4362,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 347,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4362 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libtexturerender_native": {
+      "lib_name": "libtexturerender_native",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 15123,
+      "gate1_passed": true,
+      "gate2_opcode_count": 34,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 79,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libtobEmbedPagEncrypt": {
+      "lib_name": "libtobEmbedPagEncrypt",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1363,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 17,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1363 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libtt_c2pa_sdk": {
+      "lib_name": "libtt_c2pa_sdk",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1012,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 148,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1012 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libtt_ugen_layout": {
+      "lib_name": "libtt_ugen_layout",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4971,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 734,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4971 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libttboringssl": {
+      "lib_name": "libttboringssl",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4483,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 935,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4483 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libttcrypto": {
+      "lib_name": "libttcrypto",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 973,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 2514,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (973 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libttdemux": {
+      "lib_name": "libttdemux",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5102,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 186,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5102 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libttffmpeg": {
+      "lib_name": "libttffmpeg",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 64343,
+      "gate1_passed": true,
+      "gate2_opcode_count": 116,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
+      "gate5_symbols_count": 1516,
+      "gate5_passed": true,
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
+    },
+    "libttheif_dec": {
+      "lib_name": "libttheif_dec",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 999,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 115,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (999 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libttkmedianet": {
+      "lib_name": "libttkmedianet",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 7825,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 417,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (7825 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libttmplayer": {
+      "lib_name": "libttmplayer",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5879,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 866,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5879 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libttmverify": {
+      "lib_name": "libttmverify",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 986,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 40,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (986 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libttmverifylite": {
+      "lib_name": "libttmverifylite",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1038,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 47,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1038 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libttr": {
+      "lib_name": "libttr",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4598,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 651,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4598 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libtttext_lite": {
+      "lib_name": "libtttext_lite",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 6129,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 493,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (6129 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libundead_native_ability_q": {
+      "lib_name": "libundead_native_ability_q",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4467,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 674,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4467 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "liburiparser": {
+      "lib_name": "liburiparser",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 986,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 154,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (986 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libvcbasekit": {
+      "lib_name": "libvcbasekit",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 4923,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 559,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (4923 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libvcn": {
+      "lib_name": "libvcn",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5265,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 305,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5265 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libvcnverify": {
+      "lib_name": "libvcnverify",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 986,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 41,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (986 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libvcnverifylite": {
+      "lib_name": "libvcnverifylite",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 1038,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 39,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (1038 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libwasm": {
+      "lib_name": "libwasm",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 3713,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 108,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (3713 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libwcdb": {
+      "lib_name": "libwcdb",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 921,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 485,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (921 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libwhisper": {
+      "lib_name": "libwhisper",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 960,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 18,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (960 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libworker": {
+      "lib_name": "libworker",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 5538,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 256,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "CHALLENGED_NEEDS_PROOF",
+      "criticisms": [
+        "Dung lượng mã nguồn (5538 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libyuv": {
+      "lib_name": "libyuv",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 908,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 579,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (908 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    },
+    "libzoin": {
+      "lib_name": "libzoin",
+      "inspected_at": "2026-10-15 16:15:54",
+      "gate1_size_bytes": 921,
+      "gate1_passed": false,
+      "gate2_opcode_count": 0,
+      "gate2_passed": false,
+      "gate3_math_verified": false,
+      "gate4_abi_offsets_verified": false,
+      "gate5_symbols_count": 43,
+      "gate5_passed": true,
+      "gate6_test_passed": false,
+      "status": "SCAFFOLD_METADATA_ONLY",
+      "criticisms": [
+        "Dung lượng mã nguồn (921 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+      ]
+    }
+  }
+}

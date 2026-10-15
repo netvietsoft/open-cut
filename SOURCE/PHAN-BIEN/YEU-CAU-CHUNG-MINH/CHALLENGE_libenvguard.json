@@ -1,0 +1,19 @@
+{
+  "lib_name": "libenvguard",
+  "inspected_at": "2026-10-15 16:15:54",
+  "gate1_size_bytes": 973,
+  "gate1_passed": false,
+  "gate2_opcode_count": 0,
+  "gate2_passed": false,
+  "gate3_math_verified": false,
+  "gate4_abi_offsets_verified": false,
+  "gate5_symbols_count": 31,
+  "gate5_passed": true,
+  "gate6_test_passed": false,
+  "status": "SCAFFOLD_METADATA_ONLY",
+  "criticisms": [
+    "Dung lượng mã nguồn (973 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
+    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
+    "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+  ]
+}

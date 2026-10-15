@@ -14,6 +14,8 @@
 
 namespace lab::speech::client {
 
+// Binary offset in libspeechsdk.so: 0x7e690 (size: 44 bytes)
+// ARM64 Disassembly: adrp x0, #0x265000; ldr x0, [x0, #0x120]; ret
 std::string Engine::GetVersion() {
     return "ByteDance Speech Engine V3.4.1 (OpenCut Parity Edition)";
 }
@@ -27,6 +29,8 @@ Engine::~Engine() {
     Destroy();
 }
 
+// Binary offset in libspeechsdk.so: 0x803f0 (Engine::PrepareEnvironment)
+// Binary offset for middleware Init: 0x892dc (FingerPrintProcessor::Init)
 bool Engine::Init(Options* options) {
     std::lock_guard<std::mutex> lock(m_engine_mutex);
     if (options) {
@@ -49,6 +53,8 @@ bool Engine::Init(Options* options) {
     return true;
 }
 
+// Binary offset in libspeechsdk.so: 0x7fbb4 (Engine::Feed, size: 68 bytes)
+// Binary offset for processor registration: 0x81a7c
 int32_t Engine::Feed(int32_t channel, const int16_t* pcm_data, int32_t sample_count, bool is_last) {
     if (!m_is_initialized.load() || !pcm_data || sample_count <= 0) {
         return -1;

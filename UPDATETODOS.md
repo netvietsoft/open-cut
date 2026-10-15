@@ -149,3 +149,20 @@
      - Cài đặt toàn diện `rea-agents` (`morluto/rea`) trên máy qua npm global (`rea` CLI và MCP server).
      - Kho mã nguồn REA tại: `SOURCE/tools/rea/`.
      - Sẵn sàng kích hoạt REA MCP native inspector và Ghidra Headless decompilation.
+
+- [x] `TASK-053-ALWAYS-ON-WATCHDOG-AND-ADVERSARY-CRITIC` (2026-10-15, CEO Orchestrator & Agent 13): **Thiết Lập Hệ Thống Luôn Luôn Thức (Always-On Watchdog) & Động Cơ Phản Biện Đối Kháng (Agent 13 Adversary Auditor)**:
+  1. **Khởi chạy Hệ Thống Luôn Luôn Thức (Always-On Watchdog Engine)**:
+     - Xây dựng `SOURCE/scripts/always_on_watchdog.py`, `SOURCE/run_always_on_orchestrator.bat` và `.ps1`.
+     - Chạy vòng lặp vô tận, tự động hồi sinh khi gặp lỗi, ghi nhịp tim heartbeat vào `SOURCE/logs/orchestrator_always_on.log`.
+     - Đang vận hành liên tục dưới dạng daemon task trong nền, chỉ huy Agent đào bới và tái dựng 167 file `.so` còn lại.
+  2. **Thiết Lập Thư Mục Phản Biện `SOURCE/PHAN-BIEN/`**:
+     - `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/`: Agent 13 ban hành trát thách thức kỹ thuật (`CHALLENGE_<lib>.md` và `.json`).
+     - `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/`: Agent 0 & Đội ngũ nộp bằng chứng chứng minh (`PROOF_<lib>.md` và `.json`).
+     - `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/`: Sổ cái độc lập `LEDGER_DOI_KHANG.json` và `AUDIT_SUMMARY.md`.
+     - `SOURCE/PHAN-BIEN/README_QUY_TRINH_PHAN_BIEN.md`: Hiến định 6 cổng thẩm định khắc nghiệt.
+  3. **Chính thức hóa Agent 13 trong Hiến pháp AGENTS.md & GEMINI.md**:
+     - Agent 13 (Adversary Auditor - Red Team Critic) đóng vai công tố viên kỹ thuật độc lập, nghi ngờ mọi báo cáo, đòi chứng minh bằng nhị phân và toán học.
+  4. **Động cơ Phản Biện Tự Động `adversary_critic_agent.py`**:
+     - Quét toàn bộ 169 thư viện native, phê chuẩn 12 thư viện hoàn chỉnh đạt chuẩn `VERIFIED_AND_ACCEPTED`, phát hành 96 trát thách thức kỹ thuật `CHALLENGED_NEEDS_PROOF`, xác nhận 1 thư viện đóng gói packer `BLOCKED_CUSTOM_PACKED`, và 60 thư viện sườn `SCAFFOLD_METADATA_ONLY`.
+     - Phát hiện và giải quyết triệt để thiếu sót opcode trong `libspeechsdk.so` bằng các địa chỉ `0x7e690`, `0x7fbb4`, `0x803f0`, `0x81a7c`, `0x892dc` từ binary thật.
+
