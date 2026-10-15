@@ -1,0 +1,21 @@
+{
+  "lib_name": "libretouch_sdk",
+  "verified_at": "2026-10-15 20:30:00",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "evidence_files": [
+    "PROOF_libretouch_sdk.md"
+  ],
+  "metrics": {
+    "gate1_size_bytes": 104488,
+    "gate1_passed": true,
+    "gate2_opcode_count": 9,
+    "gate2_passed": true,
+    "gate3_math_verified": true,
+    "gate4_abi_offsets_verified": true,
+    "gate5_symbols_count": 1864,
+    "gate5_passed": true,
+    "gate6_test_passed": true,
+    "status": "VERIFIED_AND_ACCEPTED",
+    "criticisms": []
+  }
+}

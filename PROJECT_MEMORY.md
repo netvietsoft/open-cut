@@ -1107,5 +1107,25 @@
      - JNI exports `JNI_OnLoad` (`0x2d1254`), `JNI_OnUnload` (`0x2d12fc`)
   6. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_liblens.md`.
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **82/82 tests PASS (100.0%)**.
-- **Tiến độ thực chất**: Đạt **13 / 169 thư viện COMPLETED (7.69%)** có 100% thân hàm thực tế.
-
+## 43. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libretouch_sdk.so (CORE_02_AI_CV)
+- **Thời gian**: 2026-10-15 20:35:00
+- **Thư viện**: libretouch_sdk.so (arm64-v8a: 2.06 MB, 2,162,688 bytes, 1,864 dynamic symbols, 795 JNI function bindings).
+- **Chi tiết giải mã thân hàm (13 files, 104.5 KB code C++, 0 stub)**:
+  1. *Căn chuẩn Điểm mốc Face106 & Ước lượng Tư thế Đầu (retouch_face_align)*: Phân tích 106 điểm mốc 2D chuẩn Face106 ByteDance, tính khoảng cách giữa hai đồng tử mắt ($p_{74}, p_{77}$), góc nghiêng Roll ($\arctan2$), góc quay ngang Yaw thông qua tính đối xứng gò má ($\frac{d_R - d_L}{d_R + d_L} \cdot 75^\circ$), và góc cúi Pitch. Tính ma trận biến đổi Affine $2 \times 3$ căn chuẩn khuôn mặt về khung tọa độ chuẩn hóa và ma trận nghịch đảo $A^{-1}$ với sai số kiểm thử $\epsilon < 10^{-4}$ (khớp opcodes `0x847c0` và `0x153168`).
+  2. *Động cơ Làm đẹp Chân dung Đa tầng (retouch_beauty_engine)*:
+     - Tạo mặt nạ xác suất màu da Gauss trong không gian màu YCrCb với tâm $Cr_0 = 150, Cb_0 = 105, \sigma = 18$.
+     - Lọc song phương làm mịn da bảo toàn chi tiết cạnh kết hợp ma trận Gauss không gian $5 \times 5$ và khoảng cách màu trắc quang $G_r(\Delta I)$ (khớp opcode `0xcbc80`: `nativeSetIntensities`).
+     - Làm trắng da nâng tông sáng đường cong phi tuyến và tẩy trắng men răng trong chu vi đa giác khoang miệng.
+     - Phóng to mắt tự nhiên bằng biến dạng lưới bán kính $r' = r \cdot [1 - \alpha (1 - r/R)^2]$ đạt tính liên tục $C^1$ tại biên bán kính $R$.
+     - Gọt cằm thon gọn mặt bằng trường vector dịch chuyển các điểm mốc xương hàm hướng về tâm khuôn mặt.
+     - Đánh son môi mịn tự nhiên giữ nguyên vân môi và phản quang đặc trưng.
+  3. *Định hình Vóc dáng & Kéo dài Chân Hermite (retouch_body_reshape)*:
+     - Thuật toán kéo dài chân in-frame áp dụng đường cong chữ S Hermite $S(t) = 3t^2 - 2t^3$ với $S'(0) = 0$ và $S'(1) = 0$, bảo toàn $100\%$ phần thân trên ($y \le y_{hip}$) và cấu trúc bàn chân ($y \ge y_{ankle}$) không bị méo mó.
+     - Thu hẹp vòng eo theo phân phối suy giảm Gauss dọc trục đứng $y_{waist}$ hướng vào đường trung tâm.
+  4. *Runtime Trung tâm PainterSDK & Cầu nối JNI (retouch_painter_sdk)*:
+     - Singleton quản lý các bộ lọc Composer (tag descriptor), bộ hòa trộn bảng màu chân dung đề xuất `ApplyRecommendPalette` (khớp opcode `0x133e40`).
+     - Bảng tra cứu cấp độ VIP của layer khớp biểu tượng ABI `_ZNK11retouch_sdk13LayerPropInfo19GetAvailableVipInfoEv` tại opcode `0x8d2e0`.
+     - Cầu nối JNI xuất bản đầy đủ: `nativeApplyRecommendPalette` (`0x133e40`), `nativeRemoveMakeupComposer` (`0xcb9b8`), `nativeSetIntensities` (`0xcbc80`), `nativeTransformNormalizedCoordinates` (`0x153168`), `nativeSetManualBodyIntensity` (`0x153190`).
+  5. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libretouch_sdk.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **89/89 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **14 / 169 thư viện COMPLETED (8.28%)** có 100% thân hàm thực tế.
