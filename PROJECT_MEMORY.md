@@ -1088,3 +1088,24 @@
      - Quét toàn bộ 169 thư viện native, phát hiện 12 thư viện hoàn chỉnh hợp lệ, 96 thư viện đang bị thách thức đòi bằng chứng, 1 thư viện bị khóa do custom packer (`libcapcut.so`), và 60 thư viện ở mức scaffold.
      - Phát hiện thiếu sót opcode trong `libspeechsdk.so` và đã được Agent 0 xử lý triệt để, bổ sung các địa chỉ `0x7e690`, `0x7fbb4`, `0x803f0`, `0x81a7c`, `0x892dc` từ binary thật vào mã nguồn C++.
 
+## 42. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN liblens.so (CORE_02_AI_CV)
+- **Thời gian**: 2026-10-15 19:40:00
+- **Thư viện**: liblens.so (arm64-v8a: 3.43 MB, 3,591,872 bytes, 423 dynamic symbols, 49 JNI exports).
+- **Chi tiết giải mã thân hàm (16 files, 59.96 KB code C++, 0 stub)**:
+  1. *Lọc song phương phân tầng HierarchicalBilateralFilter & BilateralWeightPass*: Ma trận trọng số không gian Gaussian $7 \times 7$ tính trước ($r=3, \sigma_s=2.5$), trọng số khoảng cách màu sắc $G_r(\Delta I)$, bộ lọc da bảo toàn độ sắc nét của mắt và chân mày.
+  2. *Siêu phân giải Video Super Resolution (VSM)*: Thuật toán phóng đại $2\times / 4\times$ với nhân nội suy Lanczos-3 $L(x) = \text{sinc}(x) \cdot \text{sinc}(x/3)$ và Bicubic Hermite kernel, bộ lọc làm nét chi tiết biên tần số cao Laplacian ($4c - \text{top} - \text{bottom} - \text{left} - \text{right}$).
+  3. *Khử nhiễu video nơ-ron VideoDenoiseNNProcess*: Ước lượng sàn tạp âm nhanh Immerkaer ($\sigma = \sqrt{\pi/2} \frac{1}{6(W-2)(H-2)} \sum |\text{Lap}|$), bộ lọc đệ quy thời gian EMA thích ứng chuyển động.
+  4. *Mở rộng dải động Video HDR (LensAlgorithmVHDR)*: Ánh xạ sắc độ mở rộng Extended Reinhard $L_{out} = L_{in}(1 + L_{in}/L_{white}^2) / (1 + L_{in})$, đường cong nâng sáng vùng tối $L^{0.75}$ và bù trừ độ bão hòa màu sắc.
+  5. *Vòng đời Engine & Cổng nối JNI (Disassembly Opcode Parity)*:
+     - `LensEngineFactory::CreateLensEngine` tại opcode `0x2c6550`
+     - `LensEngineFactory::ReleaseLensEngine` tại opcode `0x2c6574`
+     - `LensAlgorithmFactory::CreateLensAlgorithm` tại opcode `0x2c6588`
+     - `LensAlgorithmFactory::ReleaseLensAlgorithm` tại opcode `0x2c65dc`
+     - `LensAlgorithmUtils::GetInfoFromJson` tại opcode `0x2c68c0`
+     - `LensUtils::LoadEGLLibrary` (`0x2c68a8`), `UnLoadEGLLibrary` (`0x2c68ac`), `LoadEGL` (`0x2c68b8`)
+     - C-API `Create` (`0x2c8a0c`), `Destory` (`0x2c8a10`)
+     - JNI exports `JNI_OnLoad` (`0x2d1254`), `JNI_OnUnload` (`0x2d12fc`)
+  6. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_liblens.md`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **82/82 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **13 / 169 thư viện COMPLETED (7.69%)** có 100% thân hàm thực tế.
+
