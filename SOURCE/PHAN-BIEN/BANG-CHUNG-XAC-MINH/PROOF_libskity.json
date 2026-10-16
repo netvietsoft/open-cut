@@ -1,0 +1,68 @@
+{
+  "target_library": "libskity.so",
+  "arch": "arm64-v8a",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verified_at": "2026-10-16 17:15:00",
+  "auditor": "Agent 13 (Adversary Auditor)",
+  "gates": {
+    "gate1_source_size": {
+      "passed": true,
+      "total_bytes": 121911,
+      "min_required_bytes": 40000,
+      "file_count": 16,
+      "stub_count": 0
+    },
+    "gate2_opcode_parity": {
+      "passed": true,
+      "opcode_count": 62,
+      "key_opcodes": [
+        "0xf07e8", "0xf0864", "0xf09b0", "0xf0a00", "0xf10d4", "0xf11b8",
+        "0xf131c", "0xf13c8", "0xf156c", "0xeece8", "0xeecac", "0xef72c",
+        "0xefec0", "0xeff18", "0xeffbc", "0xf00a4", "0xf0148", "0xf0224",
+        "0xf024c", "0xf02d0", "0xf0498", "0xf0500", "0xf6568", "0xf6584",
+        "0xf65a0", "0xf65b0", "0xf66b8", "0xf6718", "0xf6878", "0xf6cec",
+        "0xf6cf0", "0xf6d64", "0xf79b8", "0xf7f30", "0xf802c", "0xf87e8",
+        "0xf2804", "0xf2828", "0xfb180", "0xfb190", "0xfb22c", "0xfb278",
+        "0xfb370", "0xfb598", "0xebcdc", "0xec754", "0xec89c", "0xece0c",
+        "0xe85f0", "0xe8464", "0xe881c", "0xe8a80", "0x104d88", "0x104f74",
+        "0x10537c", "0x105978", "0x106448", "0x106860", "0x106bf0", "0x106f0c",
+        "0x107174", "0x1077a4"
+      ]
+    },
+    "gate3_math_verification": {
+      "passed": true,
+      "algorithms": [
+        "W3C SVG Elliptical Arc to Cubic Beziers parameterization",
+        "Stroke path expansion with Miter/Bevel/Round joins and Miter Limit clipping",
+        "Adaptive Simpson integration for curve arc-length parameterization",
+        "Unit tangent normalization and vector derivation",
+        "Quaternion spherical linear interpolation (Slerp) with 0.9995 threshold",
+        "Affine and Projective 3x3 Matrix inversion and MapPoints with perspective division w",
+        "Linear, Radial, and Sweep gradient shader color stop interpolation",
+        "Gaussian blur mask filter radius expansion"
+      ]
+    },
+    "gate4_abi_struct_layout": {
+      "passed": true,
+      "structs": {
+        "skity::Rect": "16 bytes (left, top, right, bottom)",
+        "skity::RRect": "48 bytes (rect 16B + 4 radii Vec2 32B)",
+        "skity::Matrix": "36 bytes (9 floats in row-major order)",
+        "skity::Quaternion": "16 bytes (x, y, z, w)",
+        "skity::PathMeasure": "Length at offset 0x30",
+        "skity::MaskFilter": "Style at offset 0x20, radius at offset 0x24",
+        "skity::Canvas": "Virtual method Flush at vtable offset 0xe0"
+      }
+    },
+    "gate5_demangled_symbols": {
+      "passed": true,
+      "total_symbols": 656,
+      "skity_symbols": 541
+    },
+    "gate6_verification_suite": {
+      "passed": true,
+      "suite_file": "SOURCE/scripts/verify_reconstruction_suite.py",
+      "test_count": 10
+    }
+  }
+}

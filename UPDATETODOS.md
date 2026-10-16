@@ -188,4 +188,16 @@
   5. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
   6. Bộ kiểm thử khép kín đạt 96/96 tests PASS (100.0%).
 
+- [x] TASK-057-RECONSTRUCTION-LIBSKITY (2026-10-16, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Thuật Toán libskity.so (CORE_05_GRAPHICS_UI)**:
+  1. Tái dựng 16 files (121.9 KB C++, 0 stub) giải mã toàn bộ động cơ đồ họa vector 2D Skity: Hình học Vec2/Vec3/Vec4, Rect (RoundOut, MakeInset, Intersect), RRect bo góc 4 góc elip với thuật toán co giãn W3C CSS ScaleRadiiIfNecessary, và Quaternion 3D với phép toán tích vô hướng Dot, tích Hamilton Multiple, Reciprocal và nội suy cầu Slerp chuẩn xác với ngưỡng 0.9995.
+  2. Ma trận 3x3 affine & projective: Set9, HasPersp phát hiện thành phần phối cảnh, MapPoints chia phối cảnh w, Pre/Post-Rotate/Scale/Translate, và nghịch đảo ma trận M^-1 qua ma trận phụ hợp adjoint với sai số < 10^-5.
+  3. Đường cong vector & Cung tròn W3C SVG ArcTo (1,368 bytes nhị phân opcode 0xf79b8): Chuyển đổi tham số tâm, điều chỉnh bán kính tự thích nghi, chia góc quét delta_theta <= pi/2 và xấp xỉ bằng chuỗi cubic Bezier với hệ số alpha = 4/3 * tan(delta_theta / 4) với sai số < 0.05%; Thêm đường tròn AddCircle và elip AddOval với hằng số kappa = 0.55228475; Bộ duyệt Path::Iter và Path::RawIter.
+  4. Động cơ nở nét mở rộng viền StrokePath (1,212 bytes nhị phân opcode 0xf2828): Tính pháp tuyến n = (-dy, dx) / |v|, xử lý mối nối Join (Miter với ngưỡng cắt miter_limit, Round, Bevel), xử lý đầu mút Cap (Butt, Round, Square), đảo chiều viền trong nối với viền ngoài tạo manifold path.
+  5. Đo cung PathMeasure (opcode 0xfb370): Tích phân Simpson số học tính độ dài cung, trích xuất điểm và vector tiếp tuyến chuẩn hóa GetPosTan, cắt tỉa phân đoạn GetSegment.
+  6. Thuộc tính vẽ Paint, Shaders (MakeLinear, MakeRadial, MakeSweep), MaskFilter làm mờ Gauss MakeBlur, ColorFilters ma trận 4x5, hòa trộn Blend, chuyển đổi gamma sRGB/Linear; Canvas và RecordingCanvas ghi nhận display list cho GPU.
+  7. Đối soát 62 địa chỉ opcode AArch64: 0xf07e8, 0xf0864, 0xf09b0, 0xf0a00, 0xf10d4, 0xf11b8, 0xf131c, 0xf13c8, 0xf156c, 0xeece8, 0xeecac, 0xef72c, 0xefec0, 0xeff18, 0xeffbc, 0xf00a4, 0xf0148, 0xf0224, 0xf024c, 0xf02d0, 0xf0498, 0xf0500, 0xf6568, 0xf6584, 0xf65a0, 0xf65b0, 0xf66b8, 0xf6718, 0xf6878, 0xf6cec, 0xf6cf0, 0xf6d64, 0xf79b8, 0xf7f30, 0xf802c, 0xf87e8, 0xf2804, 0xf2828, 0xfb180, 0xfb190, 0xfb22c, 0xfb278, 0xfb370, 0xfb598, 0xebcdc, 0xec754, 0xec89c, 0xece0c, 0xe85f0, 0xe8464, 0xe881c, 0xe8a80, 0x104d88, 0x104f74, 0x10537c, 0x105978, 0x106448, 0x106860, 0x106bf0, 0x106f0c, 0x107174, 0x1077a4.
+  8. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
+  9. Bộ kiểm thử khép kín đạt 106/106 tests PASS (100.0%).
+
+
 

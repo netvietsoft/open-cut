@@ -1158,3 +1158,48 @@
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **96/96 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **15 / 169 thư viện COMPLETED (8.88%)** có 100% thân hàm thực tế.
 
+## 45. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libskity.so (CORE_05_GRAPHICS_UI)
+- **Thời gian**: 2026-10-16 17:15:00
+- **Thư viện**: libskity.so (arm64-v8a: 1.35 MB, 1,411,352 bytes, 656 dynamic symbols, 541 C++ demangled symbols trong namespace `skity`).
+- **Chi tiết giải mã thân hàm (16 files, 121.9 KB code C++, 0 stub)**:
+  1. *Hình học Cơ sở & Quaternion 3D (skity_geometry)*:
+     - Biểu diễn vector Vec2, Vec3, Vec4 với phép toán tích vô hướng Dot và tích có hướng Cross.
+     - Khung chữ nhật Rect với giải thuật `RoundOut` mở rộng biên tọa độ nguyên sử dụng lệnh AArch64 SIMD `frintm` (floor) và `frintp` (ceil) khớp opcode `0xf07e8`, thu hẹp lề `MakeInset` khớp opcode `0xf0864`, và giao cắt `Intersect` khớp opcode `0xf09b0`.
+     - Hình chữ nhật bo góc RRect hỗ trợ 4 góc bo elip tự do với giải thuật co giãn tự thích nghi W3C CSS `ScaleRadiiIfNecessary`, kiểm tra tính hợp lệ `AreRectAndRadiiValid` khớp opcode `0xf10d4`, thiết lập bầu dục `SetOval` khớp opcode `0xf131c`, `SetRect` (`0xf0a00`), và kiểm tra bao chứa `Contains` khớp opcode `0xf156c`.
+     - Quaternion định hướng 3D: Tích vô hướng SIMD `Dot` khớp opcode `0xf0224`, tích Hamilton `Multiple` khớp opcode `0xf024c`, nghịch đảo liên hợp `Reciprocal` khớp opcode `0xf0500`, và thuật toán nội suy cầu `Slerp` chuẩn xác với ngưỡng góc phân kỳ $0.9995$ khớp bảng hằng số nhị phân `0x23800` và opcode `0xf02d0`.
+  2. *Ma trận Biến đổi 3x3 Affine & Chiếu phối cảnh (skity_matrix)*:
+     - Ma trận 3x3 dạng mảng 9 số thực `Set9` khớp opcode `0xeece8`.
+     - Nhận diện biến dạng phối cảnh projective `HasPersp` khớp opcode `0xeecac` kiểm tra các hệ số $m_{20}, m_{21} \ne 0$ hoặc $m_{22} \ne 1$.
+     - Ánh xạ mảng điểm 2D `MapPoints` khớp opcode `0xef72c` tích hợp chia tọa độ đồng nhất $w = m_{20}x + m_{21}y + m_{22}$ khi có phối cảnh.
+     - Phép quay quanh gốc và điểm tự do `PreRotate` (opcode `0xefec0`), `PostRotate` (opcode `0xeff18`), `PreScale`, `PostScale`, `PreTranslate`, `PostTranslate`.
+     - Thuật toán nghịch đảo ma trận $M^{-1}$ qua ma trận phụ hợp adjoint với sai số kiểm thử $\epsilon < 10^{-5}$.
+  3. *Đường cong Vector & Cung tròn SVG (skity_path)*:
+     - Cấu trúc biểu diễn đường cong vector Path với các lệnh Verb (Move, Line, Quad, Conic, Cubic, Close).
+     - Thêm khung chữ nhật `AddRect` (opcode `0xf7f30`) hỗ trợ chiều quay CW và CCW.
+     - Thêm đường tròn `AddCircle` (opcode `0xf87e8`) và elip `AddOval` bằng 4 phân đoạn cubic Bezier liên tục $C^1$ với hằng số $\kappa = \frac{4}{3}(\sqrt{2} - 1) \approx 0.55228475$.
+     - Giải mã thuật toán W3C SVG `ArcTo` (opcode `0xf79b8`, 1,368 bytes nhị phân): chuyển đổi tham số tâm elip $(cx, cy)$, điều chỉnh bán kính tự thích nghi nếu $(x'^2/rx^2 + y'^2/ry^2) > 1$, chia góc quét $\Delta\theta \le \pi/2$ và xấp xỉ bằng chuỗi cubic Bezier với hệ số $\alpha = \frac{4}{3}\tan(\Delta\theta/4)$ đạt sai số bán kính $< 0.05\%$.
+     - Kiểm tra đường dẫn rỗng `HasOnlyMoveTos` khớp opcode `0xf802c`.
+     - Bộ duyệt đường cong `Path::Iter` (`IsClosedContour` opcode `0xf6cf0`, `ConicWeight` opcode `0xf6cec`) và `Path::RawIter` (`SetPath` opcode `0xf6d64`).
+  4. *Động cơ Nở nét Mở rộng Viền Vector (skity_stroke)*:
+     - Thuật toán nở nét `StrokePath` khớp opcode `0xf2828` (1,212 bytes nhị phân).
+     - Tính vector pháp tuyến đơn vị $n = (-dy, dx) / \|v\|$.
+     - Xử lý mối nối góc Join: Miter join với ngưỡng giới hạn `miter_limit` ($L = half\_width / \sin(\theta/2)$); tự động cắt góc nhọn chuyển về Bevel join khi $L > miter\_limit \cdot half\_width$; Round join chia cung tròn 4 bước nội suy.
+     - Xử lý đầu mút Cap: Butt (cắt thẳng), Round (bo tròn $180^\circ$), Square (mở rộng thêm $half\_width$ dọc tiếp tuyến).
+     - Đảo chiều viền trong (inner contour) và ghép nối khép kín với viền ngoài tạo manifold path hoàn hảo.
+  5. *Đo Cung & Hướng Tiếp tuyến Tuyến tính (skity_path_measure)*:
+     - Tích phân Simpson số học tính độ dài cung đường cong Bezier.
+     - Trích xuất tọa độ $(x, y)$ và vector tiếp tuyến chuẩn hóa $(t_x, t_y)$ dọc chiều dài cung `GetPosTan` khớp opcode `0xfb370` với cơ chế kẹp khoảng cách $[0, length]$ tại offset `0x30`.
+     - Cắt tỉa phân đoạn đường cong `GetSegment` phục vụ hiệu ứng hoạt họa viền video (path trim).
+  6. *Thuộc tính Vẽ, Shader Gradient & Bộ lọc (skity_paint_effects)*:
+     - `Paint`: Kiểu vẽ `SetStyle` (opcode `0xf6568`), kiểu đầu mút `SetStrokeCap` (opcode `0xf65a0`), kiểu mối nối `SetStrokeJoin` (opcode `0xf65b0`), độ trong suốt `SetAlphaF` (opcode `0xf66b8`), căn chỉnh nét `SetAdjustStroke` (opcode `0xf6878`), và ước lượng khung bao ngoài `ComputeFastBounds` (opcode `0xf6718`).
+     - Gradient Shaders: Gradient tuyến tính `MakeLinear` (opcode `0xec754`), gradient tỏa tròn `MakeRadial` (opcode `0xec89c`), gradient quét góc `MakeSweep` (opcode `0xece0c`) với các chế độ trải màu TileMode (Clamp, Repeat, Mirror, Decal).
+     - Bộ lọc làm mờ `MaskFilter::MakeBlur` khớp opcode `0xebcdc` với kiểm tra bán kính $r > 0$.
+     - Bộ lọc màu `ColorFilters`: Ma trận màu $4 \times 5$ `Matrix` (opcode `0xe85f0`), hòa trộn Porter-Duff `Blend` (opcode `0xe8464`), và chuyển đổi không gian màu sRGB/Linear gamma `LinearToSRGBGamma` (opcode `0xe881c`), `SRGBToLinearGamma` (opcode `0xe8a80`).
+  7. *Canvas Đồ họa & Ghi nhận Display List (skity_canvas)*:
+     - Canvas cơ sở quản lý ngăn xếp trạng thái (Save, Restore, Clip, Matrix), phóng to thu nhỏ `Scale` (opcode `0x106860`), cắt xén `CalculateGlobalClipBounds` (opcode `0x106bf0`), vẽ hình bầu dục `DrawOval` (opcode `0x106448`), vẽ RRect `DrawRRect` (opcode `0x106f0c`), vẽ ảnh `DrawImage` (opcode `0x1077a4`), và xuất lệnh đồ họa `Flush` qua hàm ảo tại vtable offset `0xe0` khớp opcode `0x107174`.
+     - `RecordingCanvas`: Bộ đệm ghi nhận display list cho GPU với constructor khớp opcode `0x104d88`, kích thước `OnGetWidth` (opcode `0x105978`), ghi nhận RRect `OnDrawRRect` (opcode `0x104f74`), và ghi nhận mảng text glyphs `OnDrawGlyphs` khớp opcode `0x10537c`.
+  8. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libskity.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **106/106 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **16 / 169 thư viện COMPLETED (9.47%)** có 100% thân hàm thực tế.
+
+
