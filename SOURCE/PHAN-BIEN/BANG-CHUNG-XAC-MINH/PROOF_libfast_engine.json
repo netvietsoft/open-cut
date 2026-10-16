@@ -1,0 +1,21 @@
+{
+  "lib_name": "libfast_engine",
+  "verified_at": "2026-10-16 16:50:00",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "evidence_files": [
+    "PROOF_libfast_engine.md"
+  ],
+  "metrics": {
+    "gate1_size_bytes": 105172,
+    "gate1_passed": true,
+    "gate2_opcode_count": 28,
+    "gate2_passed": true,
+    "gate3_math_verified": true,
+    "gate4_abi_offsets_verified": true,
+    "gate5_symbols_count": 1689,
+    "gate5_passed": true,
+    "gate6_test_passed": true,
+    "status": "VERIFIED_AND_ACCEPTED",
+    "criticisms": []
+  }
+}
