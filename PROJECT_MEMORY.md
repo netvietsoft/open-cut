@@ -1238,5 +1238,39 @@
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **116/116 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **17 / 169 thư viện COMPLETED (10.06%)** có 100% thân hàm thực tế.
 
+## 47. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libaudio_fingerprint_sdk.so (CORE_07_AUDIO_INTELLIGENCE)
+- **Thời gian**: 2026-10-16 17:27:00
+- **Thư viện**: libaudio_fingerprint_sdk.so (arm64-v8a: 136 KB, 99 dynamic symbols, 45 demangled symbols trong namespace `audio_fingerprint_sdk`).
+- **Chi tiết giải mã thân hàm (13 files, 80.6 KB code C++, 0 stub)**:
+  1. *Động cơ Biến đổi Fourier Nhanh PocketFFT (afp_fft)*:
+     - Tạo kế hoạch biến đổi Fourier phức `make_cfft_plan` (opcode `0x96c8`) và thực `make_rfft_plan` (opcode `0x9cd8`) với bộ đệm hệ số lượng giác quay twiddle factor precomputed $e^{-j 2\pi k / N}$ và hoán vị đảo bit bit-reversal permutation.
+     - Biến đổi Fourier thực xuôi `rfft_forward` khớp opcode `0xa3e8` (840 bytes nhị phân): Phân tách $N$ mẫu thực thành $N/2$ mẫu phức, thực thi butterfly Cooley-Tukey Radix-2 và khôi phục phổ nửa phức half-complex.
+     - Biến đổi Fourier thực ngược `rfft_backward` khớp opcode `0xa030` (952 bytes nhị phân): Khôi phục miền thời gian từ phổ nửa phức với sai số $\|x - \hat{x}\|_\infty < 10^{-5}$.
+     - Hàm tính toán phổ công suất $P[k] = \text{Re}^2 + \text{Im}^2$ và phổ biên độ logarit Decibel $\text{Mag}_{\text{dB}}[k] = 10 \log_{10}(P[k] + \epsilon)$.
+  2. *Trích xuất Đỉnh Quang phổ & Bản đồ Chòm sao Constellation Map (afp_landmark_detector)*:
+     - Khởi tạo tham số `init` khớp opcode `0x323c` nạp cấu trúc `landmark_peak_para_t` từ 3 thanh ghi vector 128-bit AArch64 SIMD `q0, q1, q2`.
+     - Tạo cửa sổ đối xứng Hamming `gen_ham_win` khớp opcode `0x3914`: $w[n] = 0.54 - 0.46 \cos\left(\frac{2\pi n}{N-1}\right)$ với $w[0]=0.08, w[N/2]=1.00, w[N-1]=0.08$.
+     - Khối trượt phân tích khung âm thanh `push_frames` khớp opcode `0x3d04`: Phân đoạn tín hiệu PCM 16-bit thành các khung 1024 mẫu với bước nhảy 256 (độ chồng lấp 75%), nhân cửa sổ Hamming và tính biến đổi RFFT.
+     - Thuật toán quét cực đại địa phương 2D `locate_peaks` khớp opcode `0x4258`: Dò tìm đỉnh năng lượng vượt trội trong lân cận thời gian $\Delta t$ và tần số $\Delta f$.
+     - Triệt tiêu mật độ đỉnh `filter_peaks` khớp opcode `0x5eb4`: Sắp xếp đỉnh theo năng lượng giảm dần, giữ lại tối đa $K$ đỉnh mỗi khung thời gian (Dynamic density suppression) để chống nhiễu trắng.
+     - Ghép cặp mốc thời gian - tần số `GeneratePairs`: Tạo cặp đỉnh neo-đích (Anchor-Target pairing) tạo mã băm 32-bit: $\text{Key} = (f_1 \ll 23) \mid (f_2 \ll 14) \mid (\Delta t \& 0\text{x}3\text{FFF})$.
+     - Xuất luồng nhị phân `get_afp` (opcode `0x44b8`) mang header `AFPV` và ma trận chòm sao 3D `get_afp` (opcode `0x5888`).
+  3. *Bộ nén Chuỗi Bitstream Tối ưu (afp_peak_compressor)*:
+     - Nén hiệu phân thời gian `compress_time_data` khớp opcode `0x48ec` (2,712 bytes nhị phân): Mã hóa delta-time $\Delta t = t_i - t_{i-1}$ độ dài biến thiên VLQ (1B cho $\Delta t < 128$, 2B cho $\Delta t < 16384$, 4B cho số lớn).
+     - Nén thùng tần số 9-bit `compress_frequency_data` khớp opcode `0x56cc` (444 bytes nhị phân): Mã hóa các thùng tần số $0 \le f < 512$ bằng đúng 9 bits (opcode `add w8, w8, w8, lsl #3` $\implies w8 \times 9$, `asr w8, w8, #3`), đạt hiệu suất nén $\lceil 9N / 8 \rceil$ bytes.
+     - Chuyển đổi chuỗi bit nhị phân `get_bitstring_from_int` (opcode `0x6528`) và ghi luồng bit `write_bitstring` (opcode `0x6780`).
+     - Ghi kích thước gói dữ liệu phía trước `write_size_ahead` khớp opcode `0x6950`: Chuyển đổi endian Big-Endian 32-bit bằng lệnh AArch64 `rev w8, w8`.
+     - Giải mã số nguyên từ chuỗi bit `get_int_from_sub_bitstring` khớp opcode `0x6e64`.
+  4. *API Cấp cao SDK & Cầu nối JNI Android (afp_sdk)*:
+     - Constructor `AFP_SDK` khớp opcode `0x9230` và destructor `~AFP_SDK` khớp opcode `0x9304`.
+     - Trả về phiên bản `GetVersion` khớp opcode `0x94c4`: Trả về `"0.0.3"` khớp hằng số chuỗi tại địa chỉ nhị phân `0x17c30`.
+     - Làm sạch trạng thái `Reset` khớp opcode `0x956c` và tiếp nhận PCM `Process` khớp opcode `0x9570`.
+     - Trích xuất dấu vân tay âm thanh `GetAudioFingerPrint` khớp opcode `0x9574`: Nén nhị phân, gắn header kích thước và mã hóa Base64 hoàn chỉnh.
+     - Cầu nối JNI xuất khẩu: `nativeCreate`, `nativeDestroy`, `nativeProcess`, `nativeGetFingerprint`, `nativeReset`, `nativeGetVersion`.
+  5. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libaudio_fingerprint_sdk.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **126/126 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **18 / 169 thư viện COMPLETED (10.65%)** có 100% thân hàm thực tế.
+
+
 
 

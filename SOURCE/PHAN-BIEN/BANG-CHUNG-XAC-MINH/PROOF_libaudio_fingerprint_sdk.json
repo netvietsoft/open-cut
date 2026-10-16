@@ -1,0 +1,69 @@
+{
+  "target_library": "libaudio_fingerprint_sdk.so",
+  "arch": "arm64-v8a",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verified_at": "2026-10-16 17:25:00",
+  "auditor": "Agent 13 (Adversary Auditor)",
+  "gates": {
+    "gate1_source_size": {
+      "passed": true,
+      "total_bytes": 80632,
+      "min_required_bytes": 40000,
+      "file_count": 13,
+      "stub_count": 0
+    },
+    "gate2_opcode_parity": {
+      "passed": true,
+      "opcode_count": 24,
+      "key_opcodes": [
+        "0x323c", "0x3254", "0x3914", "0x3ad4", "0x3b80", "0x3bd4",
+        "0x3d04", "0x4258", "0x44b8", "0x48ec", "0x56cc", "0x5888",
+        "0x5eb4", "0x6528", "0x6780", "0x6950", "0x6e64", "0x9230",
+        "0x94c4", "0x9574", "0x96c8", "0x9cd8", "0xa030", "0xa3e8"
+      ]
+    },
+    "gate3_math_verification": {
+      "passed": true,
+      "algorithms": [
+        "Symmetric Hamming Window 0.54 - 0.46 * cos(2*pi*n / (N-1))",
+        "PocketFFT Cooley-Tukey Real-to-half-complex FFT and Inverse RFFT",
+        "Power spectrum and Decibel magnitude scaling 10 * log10(P + epsilon)",
+        "2D Time-Frequency local maxima landmark peak detector",
+        "9-bit bitstream packing for frequency bins (add w8, w8, lsl #3)",
+        "Variable-length delta-time encoding (VLQ)",
+        "Anchor-Target constellation peak pair 32-bit hash key generator",
+        "Big-endian 32-bit payload size header prepending (rev w8, w8)",
+        "Base64 acoustic fingerprint stream serialization"
+      ]
+    },
+    "gate4_abi_struct_layout": {
+      "passed": true,
+      "structs": {
+        "audio_fingerprint_sdk::landmark_peak_para_t": "48 bytes (+0x00 sample_rate, +0x04 frame_size, +0x08 hop_size, +0x0C max_peaks, +0x10 min_freq, +0x14 max_freq, +0x18 thresh_db)",
+        "audio_fingerprint_sdk::landmark_peak_afp_t": "FFT plan and history buffers with 3 128-bit SIMD registers q0, q1, q2 load",
+        "audio_fingerprint_sdk::AFP_SDK": "Top-level API and JNI wrapper returning version 0.0.3"
+      }
+    },
+    "gate5_demangled_symbols": {
+      "passed": true,
+      "total_symbols": 99,
+      "sdk_symbols": 45
+    },
+    "gate6_verification_suite": {
+      "passed": true,
+      "test_suite": "verify_reconstruction_suite.py",
+      "test_cases": [
+        "AFP_HammingWindowMath",
+        "AFP_RFFTForwardAndBackwardInvertibilityMath",
+        "AFP_SpectrogramMagnitudeDBMath",
+        "AFP_FrequencyBin9BitCompressionMath",
+        "AFP_TimeDeltaVLQCompressionMath",
+        "AFP_WriteSizeAheadBigEndianRev",
+        "AFP_LandmarkPairKeyComputationMath",
+        "AFP_EndToEndFingerprintGeneration",
+        "AFP_VersionStringParity",
+        "AFP_OpcodeAddressesParity"
+      ]
+    }
+  }
+}

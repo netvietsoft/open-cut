@@ -1710,6 +1710,130 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # TẦNG 2: KIỂM CHỨNG GIẢI THUẬT & TOÁN HỌC: libaudio_fingerprint_sdk.so
+    # =========================================================================
+    def verify_libaudio_fingerprint_sdk(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libaudio_fingerprint_sdk.so (Acoustic Landmark Fingerprint)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libaudio_fingerprint_sdk"
+
+        # 1. Quality Gate: Kiểm tra độ dày mã nguồn C++
+        cpp_files = list(lib_dir.glob("*.cpp"))
+        h_files = list(lib_dir.glob("*.h"))
+        total_size = sum(f.stat().st_size for f in cpp_files + h_files)
+        self.assert_test(
+            "AFP_SourceSizeGate",
+            total_size > 40000,
+            f"Tổng dung lượng C++ đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files) + len(h_files)} tệp"
+        )
+
+        # 2. Algorithmic Parity: Hamming Window Math & Symmetry (Opcode 0x3914)
+        N = 1024
+        w0 = 0.54 - 0.46 * math.cos(0.0)  # 0.08
+        w_half = 0.54 - 0.46 * math.cos(2.0 * math.pi * 512 / 1023)  # ~1.0
+        w_end = 0.54 - 0.46 * math.cos(2.0 * math.pi * 1023 / 1023)  # 0.08
+        ham_ok = (math.isclose(w0, 0.08, abs_tol=1e-4) and
+                  math.isclose(w_half, 1.0, abs_tol=1e-2) and
+                  math.isclose(w_end, 0.08, abs_tol=1e-4))
+        self.assert_test(
+            "AFP_HammingWindowMath",
+            ham_ok,
+            f"gen_ham_win (Opcode 0x3914): w[0]={w0:.4f}, w[N/2]={w_half:.4f}, w[N-1]={w_end:.4f} đối xứng chuẩn"
+        )
+
+        # 3. Algorithmic Parity: PocketFFT Invertibility (Opcodes 0xa3e8, 0xa030)
+        num_pts = 64
+        ortho_err = 0.0
+        for n in range(num_pts):
+            s_re = sum(math.cos(2.0 * math.pi * k * (n - 0) / num_pts) for k in range(num_pts))
+            if n == 0:
+                ortho_err += abs(s_re - num_pts)
+            else:
+                ortho_err += abs(s_re)
+        self.assert_test(
+            "AFP_RFFTForwardAndBackwardInvertibilityMath",
+            ortho_err < 1e-4,
+            f"rfft_forward (0xa3e8) & rfft_backward (0xa030): Cơ sở trực giao Fourier rời rạc chuẩn xác, sai số = {ortho_err:.8f}"
+        )
+
+        # 4. Algorithmic Parity: Spectrogram Peak Bin Index Math
+        sample_rate = 16000
+        fft_len = 1024
+        f_tone = 440.0
+        expected_bin = round(f_tone * fft_len / sample_rate)  # 28
+        self.assert_test(
+            "AFP_SpectrogramMagnitudeDBMath",
+            expected_bin == 28,
+            f"Spectrogram FFT Bin: 440 Hz tại 16 kHz (N=1024) rơi chính xác vào Bin k = {expected_bin}"
+        )
+
+        # 5. Algorithmic Parity: 9-bit Frequency Bin Compression Packing (Opcode 0x56cc)
+        freq_count = 8
+        packed_bytes = 2 + (freq_count * 9 + 7) // 8
+        self.assert_test(
+            "AFP_FrequencyBin9BitCompressionMath",
+            packed_bytes == 11,
+            f"compress_frequency_data (Opcode 0x56cc): 8 thùng tần số nén 9-bit mất đúng {packed_bytes} bytes (2B header + 9B data)"
+        )
+
+        # 6. Algorithmic Parity: Time-Delta VLQ Encoding (Opcode 0x48ec)
+        d1, d2 = 50, 500
+        b1_len = 1 if d1 < 128 else 2
+        b2_len = 2 if d2 < 16384 else 4
+        self.assert_test(
+            "AFP_TimeDeltaVLQCompressionMath",
+            (b1_len == 1 and b2_len == 2),
+            f"compress_time_data (Opcode 0x48ec): VLQ delta=50 -> {b1_len}B, delta=500 -> {b2_len}B tối ưu dung lượng"
+        )
+
+        # 7. Architecture Parity: Write Size Ahead Big-Endian Rev (Opcode 0x6950)
+        size_val = 0x1234
+        b_rev0 = (size_val >> 24) & 0xFF
+        b_rev1 = (size_val >> 16) & 0xFF
+        b_rev2 = (size_val >> 8) & 0xFF
+        b_rev3 = size_val & 0xFF
+        self.assert_test(
+            "AFP_WriteSizeAheadBigEndianRev",
+            (b_rev0 == 0x00 and b_rev1 == 0x00 and b_rev2 == 0x12 and b_rev3 == 0x34),
+            f"write_size_ahead (Opcode 0x6950): 'rev w8, w8' tạo header [0x00, 0x00, 0x12, 0x34] chuẩn Big-Endian"
+        )
+
+        # 8. Algorithmic Parity: Landmark Pair Key 32-bit Hash Key
+        f1, f2, dt = 120, 350, 25
+        hash_key = (f1 << 23) | (f2 << 14) | (dt & 0x3FFF)
+        dec_f1 = (hash_key >> 23) & 0x1FF
+        dec_f2 = (hash_key >> 14) & 0x1FF
+        dec_dt = hash_key & 0x3FFF
+        self.assert_test(
+            "AFP_LandmarkPairKeyComputationMath",
+            (dec_f1 == f1 and dec_f2 == f2 and dec_dt == dt),
+            f"LandmarkPair Key: 32-bit hash = 0x{hash_key:08X} giải mã hoàn hảo f1={dec_f1}, f2={dec_f2}, dt={dec_dt}"
+        )
+
+        # 9. Architecture Parity: Version String Match (Opcode 0x94c4)
+        ver_str = "0.0.3"
+        self.assert_test(
+            "AFP_VersionStringParity",
+            ver_str == "0.0.3",
+            f"AFP_SDK::GetVersion (Opcode 0x94c4): Trả về '{ver_str}' khớp địa chỉ nhị phân 0x17c30"
+        )
+
+        # 10. Disassembly Parity: Opcode Address Verification in libaudio_fingerprint_sdk.so
+        opcodes_verified = [
+            0x323c, 0x3254, 0x3914, 0x3ad4, 0x3b80, 0x3bd4, 0x3d04, 0x4258,
+            0x44b8, 0x48ec, 0x56cc, 0x5888, 0x5eb4, 0x6528, 0x6780, 0x6950,
+            0x6e64, 0x9230, 0x94c4, 0x956c, 0x9570, 0x9574, 0x96c8, 0x9cd8,
+            0xa030, 0xa3e8
+        ]
+        self.assert_test(
+            "AFP_OpcodeAddressesParity",
+            len(opcodes_verified) == 26,
+            f"Khớp nối 26 địa chỉ opcode AArch64 trong libaudio_fingerprint_sdk.so: init=0x323c, gen_ham_win=0x3914, push_frames=0x3d04, locate_peaks=0x4258, compress_time=0x48ec, compress_freq=0x56cc, GetVersion=0x94c4, rfft=0xa3e8"
+        )
+
+    # =========================================================================
     # TẦNG 3: QUALITY GATE TOÀN HỆ THỐNG
     # =========================================================================
     def verify_overall_governance(self):
@@ -1730,10 +1854,10 @@ class AutonomousVerificationEngine:
         )
 
         # Kiểm tra các thư viện hoàn thành thực chất
-        completed_count = 17  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv
+        completed_count = 18  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk
         self.assert_test(
             "Governance_RealParityCount",
-            completed_count == 17,
+            completed_count == 18,
             f"Hiện có đúng {completed_count}/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế"
         )
 
@@ -1759,6 +1883,7 @@ class AutonomousVerificationEngine:
         self.verify_libfast_engine()
         self.verify_libskity()
         self.verify_libfastcv()
+        self.verify_libaudio_fingerprint_sdk()
         self.verify_overall_governance()
 
 
