@@ -199,5 +199,17 @@
   8. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
   9. Bộ kiểm thử khép kín đạt 106/106 tests PASS (100.0%).
 
+- [x] TASK-058-RECONSTRUCTION-LIBFASTCV (2026-10-16, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Thuật Toán libfastcv.so (CORE_06_COMPUTER_VISION)**:
+  1. Tái dựng 12 files (77.1 KB C++, 0 stub) giải mã toàn bộ Qualcomm FastCV Computer Vision SDK & GPU Image Processing Engine.
+  2. Cấu trúc ma trận hình ảnh FASTCV::EXPORTS::Mat và bộ nhớ thống nhất GPU UMat: Khớp offset AArch64 ABI (flags 0x0, rows 0x4, cols 0x8, type 0xc, step 0x10, data 0x28, u 0x50), hàm channels() opcode 0x64c50 ((type >> 3) + 1), empty() opcode 0x64c74, elemSize1() opcode 0x64cac, AllocateLike opcode 0x662bc, getMat opcode 0x674e8, syncToTexID opcode 0x67a4c, syncFromSharedMem opcode 0x67668.
+  3. Xử lý ảnh số & chuyển đổi không gian màu: cvtColor opcode 0x5e468 (RGB2GRAY, BGR2GRAY, RGB2NV12, RGB2RGBA với giải thuật số học số nguyên ITU-R BT.601), alphaBlend opcode 0x5f598 ((src1*a + src2*(255-a) + 128)/255), combineAndConvertTo opcode 0x5f76c, downScale opcode 0x60880 (Bilinear Decimation), copyMakeBorder opcode 0x5f18c (BORDER_CONSTANT, BORDER_REPLICATE, BORDER_REFLECT), copyROI opcode 0x5fa48.
+  4. Toán học xử lý ảnh & biến đổi không gian: threshold opcode 0x607d4, absdiff opcode 0x5dd60, normalize opcode 0x6052c, bitwise_and opcode 0x5dfe0, calcHist opcode 0x603f4, giải ma trận Affine 2D bằng định thức Cramer getAffineTransform opcode 0x5c3f0 từ 3 cặp điểm mốc với sai số < 10^-4, cặp biến đổi Cosine rời rạc 2 chiều khả nghịch trực giao 2D DCT-II dct opcode 0x60acc và idct opcode 0x61220 với sai số khôi phục < 10^-4.
+  5. Quản trị ngữ cảnh GPU: getGPUContextStatus opcode 0x62730 (null trả về 5 INVALID_HANDLE, active trả về 0 SUCCESS), loadGLES opcode 0x627b4, loadGLESLibrary opcode 0x627a8, verifyGLMemShareAvailable opcode 0x5c040, verifyPixelBufferShareAvailable opcode 0x627c4, createGpuMarkerEvent opcode 0x60164, loadAotModule opcode 0x6280c, launchAotComputeGraph opcode 0x627c8, setLogCallBack opcode 0x60f74.
+  6. Đối soát 30 địa chỉ opcode AArch64: 0x64c50, 0x64c74, 0x64cac, 0x674e8, 0x662bc, 0x67a4c, 0x67668, 0x5e468, 0x5f598, 0x5f76c, 0x60880, 0x5f18c, 0x5fa48, 0x607d4, 0x5dd60, 0x6052c, 0x5dfe0, 0x603f4, 0x5c3f0, 0x60acc, 0x61220, 0x62730, 0x627b4, 0x627a8, 0x5c040, 0x627c4, 0x60164, 0x6280c, 0x627c8, 0x60f74.
+  7. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
+  8. Bộ kiểm thử khép kín đạt 116/116 tests PASS (100.0%).
+
+
+
 
 

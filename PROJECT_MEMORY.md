@@ -1202,4 +1202,41 @@
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **106/106 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **16 / 169 thư viện COMPLETED (9.47%)** có 100% thân hàm thực tế.
 
+## 46. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libfastcv.so (CORE_06_COMPUTER_VISION)
+- **Thời gian**: 2026-10-16 17:18:00
+- **Thư viện**: libfastcv.so (arm64-v8a: 756 KB, 427 dynamic symbols, 180 demangled symbols trong namespace `FASTCV::EXPORTS`).
+- **Chi tiết giải mã thân hàm (12 files, 77.1 KB code C++, 0 stub)**:
+  1. *Cấu trúc Ma trận Hình ảnh & Bộ nhớ Đồ họa UMat (fastcv_mat)*:
+     - Khớp cấu trúc ABI của `FASTCV::EXPORTS::Mat`: Offset `0x0` flags, `0x4` rows, `0x8` cols, `0xc` type, `0x10` step, `0x28` data, `0x30` datastart, `0x38` dataend, `0x40` datalimit, `0x50` UMatData.
+     - Hàm trích xuất số kênh màu `channels()` khớp opcode AArch64 `0x64c50` với giải thuật dịch bit: `(type >> 3) + 1`.
+     - Kiểm tra ma trận rỗng `empty()` khớp opcode `0x64c74` đối soát đồng thời `data == nullptr`, `rows * cols == 0` và `flags == 0`.
+     - Trích xuất kích thước đơn vị kênh `elemSize1()` khớp opcode `0x64cac` theo bảng độ sâu bit `type & 7`.
+     - Bộ nhớ thống nhất GPU `FASTCV::EXPORTS::UMat`: Cấp phát bộ nhớ chia sẻ `AllocateLike` (opcode `0x662bc`), trích xuất Mat CPU truy cập `getMat` (opcode `0x674e8`), đồng bộ vào OpenGL ES Texture ID qua EGL `syncToTexID` (opcode `0x67a4c`), và đồng bộ từ bộ nhớ CPU `syncFromSharedMem` (opcode `0x67668`).
+  2. *Xử lý Ảnh Số & Chuyển đổi Không gian Màu (fastcv_imgproc)*:
+     - Chuyển đổi không gian màu `cvtColor` khớp opcode AArch64 `0x5e468`: Hỗ trợ RGB2GRAY, BGR2GRAY, RGB2NV12, RGB2RGBA với giải thuật số học số nguyên cố định điểm ITU-R BT.601: $Y = (77 \cdot R + 150 \cdot G + 29 \cdot B + 128) \gg 8$, $U = ((-43 \cdot R - 85 \cdot G + 128 \cdot B + 128) \gg 8) + 128$, $V = ((128 \cdot R - 107 \cdot G - 21 \cdot B + 128) \gg 8) + 128$.
+     - Hòa trộn lớp ảnh số nguyên `alphaBlend` khớp opcode `0x5f598` với công thức: $dst = (src1 \cdot \alpha + src2 \cdot (255 - \alpha) + 128) / 255$.
+     - Tổ hợp và chuyển đổi tuyến tính `combineAndConvertTo` khớp opcode `0x5f76c`: $dst = src1 \cdot \alpha + src2 \cdot \beta + \gamma$.
+     - Thu nhỏ kích thước ảnh song tuyến tính `downScale` khớp opcode `0x60880`: Nội suy Bilinear Decimation chống răng cưa.
+     - Đệm viền biên ảnh `copyMakeBorder` khớp opcode `0x5f18c`: Hỗ trợ viền hằng số BORDER_CONSTANT, nhân bản BORDER_REPLICATE và phản xạ BORDER_REFLECT.
+     - Sao chép vùng quan tâm `copyROI` khớp opcode `0x5fa48`.
+  3. *Toán học Xử lý Ảnh & Biến đổi Không gian (fastcv_math_transforms)*:
+     - Phân ngưỡng nhị phân `threshold` khớp opcode `0x607d4`: THRESH_BINARY, THRESH_BINARY_INV, THRESH_TRUNC, THRESH_TOZERO.
+     - Trừ tuyệt đối từng pixel `absdiff` khớp opcode `0x5dd60`: $|src1(x, y) - src2(x, y)|$.
+     - Chuẩn hóa vector ma trận `normalize` khớp opcode `0x6052c`: NORM_MINMAX, NORM_L1, NORM_L2.
+     - Phép toán logic nhị phân `bitwise_and` khớp opcode `0x5dfe0`.
+     - Tính toán biểu đồ tần số `calcHist` khớp opcode `0x603f4` cho 1D và 2D channels.
+     - Giải hệ phương trình ma trận Affine 2D bằng định thức Cramer `getAffineTransform` khớp opcode `0x5c3f0`: Xác định 6 hệ số biến đổi affine từ 3 cặp điểm mốc với sai số tuyệt đối $< 10^{-4}$.
+     - Cặp biến đổi Cosine rời rạc 2 chiều khả nghịch 2D DCT-II `dct` khớp opcode `0x60acc` và IDCT `idct` khớp opcode `0x61220`: Hệ cơ sở trực giao chuẩn với sai số khôi phục $\|IDCT(DCT(x)) - x\| < 10^{-4}$.
+  4. *Quản trị Ngữ cảnh Tăng tốc GPU Hardware Context (fastcv_gpu_context)*:
+     - Kiểm tra trạng thái ngữ cảnh `getGPUContextStatus` khớp opcode `0x62730`: Con trỏ null trả về mã lỗi 5 (`FASTCV_STATUS_INVALID_HANDLE`), ngữ cảnh hợp lệ trả về 0 (`FASTCV_STATUS_SUCCESS`).
+     - Trình nạp động thư viện OpenGL ES `loadGLES` khớp opcode `0x627b4` và `loadGLESLibrary` khớp opcode `0x627a8`.
+     - Xác thực tính năng chia sẻ bộ nhớ đồ họa EGL `verifyGLMemShareAvailable` khớp opcode `0x5c040` và AHardwareBuffer `verifyPixelBufferShareAvailable` khớp opcode `0x627c4`.
+     - Đồng bộ mốc thời gian GPU `createGpuMarkerEvent` khớp opcode `0x60164`.
+     - Nạp module tính toán AOT `loadAotModule` khớp opcode `0x6280c` và kích hoạt đồ thị xử lý GPU `launchAotComputeGraph` khớp opcode `0x627c8`.
+     - Đăng ký hàm callback nhật ký `setLogCallBack` khớp opcode `0x60f74`.
+  5. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libfastcv.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **116/116 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **17 / 169 thư viện COMPLETED (10.06%)** có 100% thân hàm thực tế.
+
+
 

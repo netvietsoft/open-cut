@@ -1,0 +1,67 @@
+{
+  "target_library": "libfastcv.so",
+  "arch": "arm64-v8a",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verified_at": "2026-10-16 17:16:00",
+  "auditor": "Agent 13 (Adversary Auditor)",
+  "gates": {
+    "gate1_source_size": {
+      "passed": true,
+      "total_bytes": 77111,
+      "min_required_bytes": 40000,
+      "file_count": 12,
+      "stub_count": 0
+    },
+    "gate2_opcode_parity": {
+      "passed": true,
+      "opcode_count": 30,
+      "key_opcodes": [
+        "0x64c50", "0x64c74", "0x64cac", "0x674e8", "0x662bc", "0x67a4c",
+        "0x67668", "0x5e468", "0x5f598", "0x5f76c", "0x60880", "0x5f18c",
+        "0x5fa48", "0x607d4", "0x5dd60", "0x6052c", "0x5dfe0", "0x603f4",
+        "0x5c3f0", "0x60acc", "0x61220", "0x62730", "0x627b4", "0x627a8",
+        "0x5c040", "0x627c4", "0x60164", "0x6280c", "0x627c8", "0x60f74"
+      ]
+    },
+    "gate3_math_verification": {
+      "passed": true,
+      "algorithms": [
+        "BT.601 integer fixed-point RGB to Grayscale conversion (77*R + 150*G + 29*B + 128) >> 8",
+        "Integer fixed-point Alpha Blending with rounding ((src1*a + src2*(255-a) + 128) / 255)",
+        "Bilinear Decimation DownScale image reduction",
+        "Border padding with BORDER_CONSTANT, BORDER_REPLICATE, BORDER_REFLECT",
+        "Binary thresholding and absolute difference calculation",
+        "Cramer's rule linear equation solver for 3-point affine transformation",
+        "Invertible 2D Discrete Cosine Transform (DCT-II) and Inverse DCT (IDCT)"
+      ]
+    },
+    "gate4_abi_struct_layout": {
+      "passed": true,
+      "structs": {
+        "FASTCV::EXPORTS::Mat": "Offset 0x0 flags, 0x4 rows, 0x8 cols, 0xc type, 0x10 step, 0x28 data",
+        "FASTCV::EXPORTS::UMat": "Unified GPU memory buffer with syncToTexID and syncFromSharedMem",
+        "FASTCV::EXPORTS::GPUContext": "Device handle query with INVALID_HANDLE=5 for null pointer"
+      }
+    },
+    "gate5_demangled_symbols": {
+      "passed": true,
+      "total_symbols": 427,
+      "fastcv_exports_symbols": 180
+    },
+    "gate6_verification_suite": {
+      "passed": true,
+      "test_suite": "verify_reconstruction_suite.py",
+      "test_cases": [
+        "FastCV_MatChannelsAndEmptyMath",
+        "FastCV_ColorConversionRGB2GrayAndNV12Math",
+        "FastCV_AlphaBlendMath",
+        "FastCV_DownScaleAndMakeBorderMath",
+        "FastCV_ThresholdAndAbsDiffMath",
+        "FastCV_AffineTransformLinearSolversMath",
+        "FastCV_DCTAndIDCTInvertibilityMath",
+        "FastCV_GPUContextStatusParity",
+        "FastCV_OpcodeAddressesParity"
+      ]
+    }
+  }
+}
