@@ -1274,3 +1274,45 @@
 
 
 
+
+## 48. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libByteAINN.so (CORE_02_AI_CV)
+- **Thời gian**: 2026-10-16 17:42:00
+- **Thư viện**: libByteAINN.so (arm64-v8a: 51,096 bytes, 57 dynamic symbols, liên kết ByteNN với Pitaya AI Core).
+- **Chi tiết giải mã thân hàm (6 files, 66.5 KB code C++, 0 stub)**:
+  1. *Động cơ Cầu nối Thần kinh ByteNNEngine (pitaya_engine_bytenn)*:
+     - Đăng ký động cơ tĩnh `RegisterByteNNEngineStone` khớp opcode `0x39c4` (gọi từ `.init_array[1]` tại `0x1d14` qua `b #0x39c4`): Cấp phát 104 bytes cho `pitaya::EngineInfo`, thiết lập chuỗi `"ByteNN"` (`0x7942`, `0x6574`, `0x4e4e`), lấy phiên bản qua `ByteNNUtils::GetVersion()` (`0x3a14`), gán loại động cơ `EngineType = 1` (`0x3a28`), và đăng ký qua `pitaya::RegisterEngine` (`0x3a58`).
+     - Hàm tạo Factory `CreateByteNNEngine` khớp opcode `0x395c`: Cấp phát 112 bytes `_Znwm(0x70)` cho control block `std::shared_ptr<ByteNNEngine>`, khởi tạo `pitaya::ByteNNEngineStone` tại `+0x18`, và gán bảng hàm ảo Vtable tại địa chỉ `.data.rel.ro` `0xfb08`.
+     - Kiểm tra chiều hợp lệ tensor `CheckTensorDims` khớp opcode `0x3780`: Ghi log cảnh báo tại dòng 139 (`0x37e8`) khi tensor đầu vào sai lệch $(B, C, H, W)$ so với mô hình yêu cầu.
+     - Cấu hình mô hình `SetConfig` khớp opcode `0x3a84` (Vtable[1], ghi log dòng 168), kiểm tra cấu hình trùng lặp và loại tăng tốc phần cứng (`forward_type`: CPU/GPU/NPU).
+     - Nạp mô hình `load_model` khớp opcode `0x4878` (Vtable[2], ghi log dòng 273 và 330): Nạp trọng số từ đĩa, cấu hình thuộc tính `Preinit_Trainable_Bool`, và thiết lập cấu hình tensor đầu vào/đầu ra.
+     - Suy luận thần kinh `predict` / `Inference` khớp opcode `0x57dc` (Vtable[5], ghi log dòng 413 và 462).
+     - Tính toán lại hình dạng động `ReInferShape` khớp opcode `0x5c6c` (Vtable[6]) và `ReinferShapeWithTensors` khớp opcode `0x5f5c` (Vtable[7]).
+     - Giao diện huấn luyện/tinh chỉnh tại chỗ: `SetOptimizer` (opcode `0x65f8`), `Step` (opcode `0x65fc`), `GetWeight` (opcode `0x6664`), `SetWeight` (opcode `0x66cc`), `GetGradient` (opcode `0x67e0`), `SetLossLayer` (opcode `0x69e4`), `SetLabel` (opcode `0x6ab4`), `Train` (opcode `0x6b84`).
+     - Cơ chế tuần tự hóa mô hình an toàn nguyên tử `SaveModelToFile` khớp opcode `0x2b00` (Vtable[15] tại `0x6b1c`): Sử dụng `open` (tệp `.tmp`), `lseek` (phân bổ trước dung lượng), `write` (xác nhận phân bổ 1 byte), `mmap` (bộ nhớ ánh xạ chia sẻ), ghi dữ liệu nhị phân, `munmap`, `close`, và `rename` nguyên tử sang tên tệp đích `model.bytenn`.
+     - Hoán vị định dạng bộ nhớ SIMD vector NEON NCHW <-> NHWC khớp opcode `0x6c94` (`ext v1.16b, v0.16b, v0.16b, #4; ext v0.16b, v0.16b, v1.16b, #0xc`).
+  2. *Cầu nối Ứng dụng Biên tập Video OpenCut (bytenn_adapter_bridge)*:
+     - Tách nền video thông minh không cần phông xanh `SegmentHumanMatting`: Tiền xử lý khung hình RGBA sang tensor NCHW FP32 normalized, suy luận qua ByteNN, và tạo mặt nạ alpha 8-bit mềm mại.
+     - Theo dõi 106 điểm mốc khuôn mặt `DetectFaceLandmarks`.
+     - Cắt khung hình động thông minh `CalculateSmartCrop` (tự động chuyển đổi tỷ lệ 16:9 và 9:16 bám theo chủ thể).
+  3. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libByteAINN.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **133/133 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **19 / 169 thư viện COMPLETED (11.24%)** có 100% thân hàm thực tế.
+
+## 49. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libByteAIDT.so (CORE_02_AI_CV)
+- **Thời gian**: 2026-10-16 17:48:00
+- **Thư viện**: libByteAIDT.so (arm64-v8a: 18,264 bytes, 34 dynamic symbols, liên kết ByteDT với Pitaya AI Core).
+- **Chi tiết giải mã thân hàm (6 files, 43.4 KB code C++, 0 stub)**:
+  1. *Động cơ Cây Quyết định ByteDTEngine (pitaya_engine_bytedt)*:
+     - Đăng ký động cơ tĩnh `RegisterByteDTEngineStone` khớp opcode `0x1200` (gọi từ `.init_array[0]` tại `0x11c0` qua `b #0x1200`): Cấp phát 104 bytes cho `pitaya::EngineInfo`, thiết lập chuỗi `"ByteDT"` (`0x7942`, `0x6574`, `0x5444`), lấy phiên bản qua `bytedt::get_version()` (`0x1250`), gán loại động cơ `EngineType = 2` (`0x1264`), và đăng ký qua `pitaya::RegisterEngine` (`0x1294`).
+     - Hàm tạo Factory `CreateByteDTEngine` khớp opcode `0x12bc`: Cấp phát 216 bytes `_Znwm(0xd8)` cho đối tượng `ByteDTEngine`, khởi tạo `pitaya::ByteDTEngineStone` tại `+0x18`, và gán bảng hàm ảo Vtable tại địa chỉ `.data.rel.ro` `0x7c70`.
+     - Nạp mô hình cây quyết định `load_model` khớp opcode `0x1468` (Vtable[1]): Kiểm tra và ngăn chặn tải lặp lại (`"Duplicated load model"` tại `0x36bd`), nạp mô hình qua `bytedt::ByteDT::load_model_from_path`, đọc và lưu trữ các thuộc tính cấu trúc: `model_type_`, `tree_relation_`, `tree_size_`, `max_depth_`, `n_feature_`.
+     - Suy luận cây quyết định `predict` khớp opcode `0x18bc` (Vtable[2]): Tạo nhánh đo đạc hiệu năng vi mô qua `TaskTrace::CreateSubTrace("predict")` (`0x1940`), kiểm tra mô hình đã nạp, thực thi duyệt cây GBDT/Random Forest, tính toán xác suất qua hàm kích hoạt Sigmoid, và đóng gói đầu ra chuẩn vào `PitayaDTOut` với các khóa `"probability"`, `"class"`, `"score"`. Kết thúc đo đạc qua `TaskTrace::Over()` (`0x1950`).
+     - Suy luận chỉ số nút lá `predict_leaf` khớp opcode `0x2140` (Vtable[3]): Duyệt các nút lá để tạo mã hóa đặc trưng không gian cho các mô hình downstream.
+     - Tiện ích mở rộng cụm cây: Tính toán phương sai mẫu `ComputeTreeEnsembleVariance`, tính toán mức tăng thông tin của các đặc trưng `ComputeFeatureImportance`, và xuất luật cây dạng chuỗi `ExportTreeRulesToString`.
+  2. *Cầu nối Ứng dụng Biên tập Video OpenCut (bytedt_adapter_bridge)*:
+     - Gợi ý bitrate xuất video thông minh `RecommendExportBitrateKbps`: Dự đoán bitrate tối ưu dựa trên độ phân giải pixel, tốc độ khung hình fps, thời lượng, điểm chuyển động và độ phức tạp kết cấu.
+     - Đề xuất mẫu dựng video thông minh `RecommendTemplates`: Xếp hạng các mẫu phù hợp nhất với đặc trưng đa phương thức.
+     - Đánh giá điểm thẩm mỹ video `EvaluateAestheticScore`: Chấm điểm chất lượng hình ảnh và âm thanh từ 0 đến 100.
+  3. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libByteAIDT.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **139/139 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **20 / 169 thư viện COMPLETED (11.83%)** có 100% thân hàm thực tế.

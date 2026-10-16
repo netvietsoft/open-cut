@@ -224,3 +224,29 @@
 
 
 
+
+- [x] TASK-060-RECONSTRUCTION-LIBBYTEAINN (2026-10-16, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Thuật Toán libByteAINN.so (CORE_02_AI_CV)**:
+  1. Tái dựng 6 files (66.5 KB C++, 0 stub) giải mã toàn bộ cầu nối động cơ suy luận thần kinh ByteNN nền tảng Pitaya AI Core.
+  2. Đăng ký động cơ tĩnh RegisterByteNNEngineStone khớp opcode 0x39c4 (gọi từ .init_array[1] tại 0x1d14): Cấp phát 104 bytes EngineInfo, thiết lập chuỗi "ByteNN", gọi ByteNNUtils::GetVersion() (opcode 0x3a14), gán EngineType = 1 (BYTENN) (opcode 0x3a28), đăng ký vào Pitaya Core qua RegisterEngine (opcode 0x3a58).
+  3. Hàm tạo Factory CreateByteNNEngine khớp opcode 0x395c: Cấp phát 112 bytes _Znwm(0x70) cho control block shared_ptr, gán bảng hàm ảo Vtable 18 phương thức tại địa chỉ .data.rel.ro 0xfb08.
+  4. Kiểm tra hợp lệ chiều tensor CheckTensorDims khớp opcode 0x3780 (ghi log dòng 139 tại 0x37e8).
+  5. Triển khai 18 phương thức ảo Vtable: ReleaseUse (0x3a80), SetConfig (0x3a84, log dòng 168), load_model (0x4878, log dòng 273 và 330), release_model (0x4de0), GetInputConfig (0x4e24), predict/Inference (0x57dc, log dòng 413 và 462), ReInferShape (0x5c6c), ReinferShapeWithTensors (0x5f5c), SetOptimizer (0x65f8), Step (0x65fc), GetWeight (0x6664), SetWeight (0x66cc), GetGradient (0x67e0), SetLossLayer (0x69e4), SetLabel (0x6ab4), SaveModel (0x6b1c), Train (0x6b84).
+  6. Tuần tự hóa tệp mô hình an toàn nguyên tử SaveModelToFile khớp opcode 0x2b00: open (tệp .tmp), lseek (phân bổ dung lượng đĩa), write (1 byte xác nhận), mmap (bộ nhớ chia sẻ), munmap, close, và rename nguyên tử sang model.bytenn.
+  7. Hoán vị bố cục bộ nhớ SIMD vector NEON NCHW <-> NHWC khớp opcode 0x6c94 (ext v1.16b, v0.16b, v0.16b, #4).
+  8. Cầu nối ứng dụng OpenCut: Tách nền video SegmentHumanMatting, nhận diện 106 điểm mốc khuôn mặt DetectFaceLandmarks, cắt khung hình thông minh CalculateSmartCrop. Cầu nối Android JNI đầy đủ.
+  9. Đối soát 25 địa chỉ opcode AArch64: 0x1d14, 0x3780, 0x37e8, 0x395c, 0x3998, 0x39c4, 0x3a80, 0x3a84, 0x4878, 0x4de0, 0x4e24, 0x57dc, 0x5c6c, 0x5f5c, 0x65f8, 0x65fc, 0x6664, 0x66cc, 0x67e0, 0x69e4, 0x6ab4, 0x6b1c, 0x6b84, 0x2b00, 0x6c94.
+  10. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
+  11. Bộ kiểm thử khép kín đạt 133/133 tests PASS (100.0%).
+
+- [x] TASK-061-RECONSTRUCTION-LIBBYTEAIDT (2026-10-16, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Thuật Toán libByteAIDT.so (CORE_02_AI_CV)**:
+  1. Tái dựng 6 files (43.4 KB C++, 0 stub) giải mã toàn bộ cầu nối động cơ cây quyết định ByteDT nền tảng Pitaya AI Core.
+  2. Đăng ký động cơ tĩnh RegisterByteDTEngineStone khớp opcode 0x1200 (gọi từ .init_array[0] tại 0x11c0): Cấp phát 104 bytes EngineInfo, thiết lập chuỗi "ByteDT", gọi bytedt::get_version() (opcode 0x1250), gán EngineType = 2 (BYTEDT) (opcode 0x1264), đăng ký qua RegisterEngine (opcode 0x1294).
+  3. Hàm tạo Factory CreateByteDTEngine khớp opcode 0x12bc: Cấp phát 216 bytes _Znwm(0xd8), gán bảng hàm ảo Vtable 9 phương thức tại địa chỉ .data.rel.ro 0x7c70.
+  4. Nạp mô hình load_model khớp opcode 0x1468: Kiểm tra trùng lặp "Duplicated load model" (0x36bd), nạp mô hình từ đĩa, truy xuất thuộc tính cấu trúc model_type_, tree_relation_, tree_size_, max_depth_, n_feature_.
+  5. Suy luận cây quyết định predict khớp opcode 0x18bc: Tích hợp đo đạc TaskTrace::CreateSubTrace("predict") (opcode 0x1940) và TaskTrace::Over (opcode 0x1950), duyệt cụm cây GBDT/Random Forest, tính xác suất Sigmoid, đóng gói cấu trúc PitayaDTOut với các khóa "probability", "class", "score".
+  6. Suy luận nút lá predict_leaf khớp opcode 0x2140 phục vụ Feature Encoding.
+  7. Tiện ích cụm cây: Tính toán phương sai mẫu ComputeTreeEnsembleVariance, tính mức tăng thông tin đặc trưng ComputeFeatureImportance, xuất luật cây ExportTreeRulesToString.
+  8. Cầu nối ứng dụng OpenCut: Gợi ý bitrate xuất video tối ưu RecommendExportBitrateKbps, gợi ý mẫu dựng video thông minh RecommendTemplates, chấm điểm thẩm mỹ video EvaluateAestheticScore. Cầu nối Android JNI đầy đủ.
+  9. Đối soát 16 địa chỉ opcode AArch64: 0x11c0, 0x1200, 0x1250, 0x1254, 0x1264, 0x126c, 0x1294, 0x12bc, 0x12f8, 0x1468, 0x14a0, 0x18bc, 0x190c, 0x1940, 0x1950, 0x2140.
+  10. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
+  11. Bộ kiểm thử khép kín đạt 139/139 tests PASS (100.0%).
