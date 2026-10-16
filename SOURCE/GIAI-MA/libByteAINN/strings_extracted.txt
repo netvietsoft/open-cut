@@ -1,8 +1,386 @@
+ELF
+GNU
+__cxa_finalize
+__cxa_atexit
+_ZN6pitaya10PathAppendERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_
+_ZN6pitaya17kDownloadFileNameE
+_ZN6pitaya20kModelOriginFileNameE
+_ZN6pitaya9StrFormatEPKcz
+_ZdlPv
+_Znwm
+__stack_chk_fail
+abort
+close
+lseek
+memcpy
+memmove
+mmap
+munmap
+open
+rename
+strlen
+write
+_ZN6BYTENN11ByteNNUtils10GetVersionEv
+_ZN6BYTENN13EngineFactory6CreateEv
+_ZN6BYTENN9ConfigExtD1Ev
+_ZN6pitaya10EngineInfoC1ENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS_10EngineTypeERKS7_PFNS1_10shared_ptrINS_6EngineEEEvE
+_ZN6pitaya11ALogWrapper8InstanceEv
+_ZN6pitaya11ALogWrapper9ALogWriteEjPKcS2_S2_iS2_bS2_z
+_ZN6pitaya14RegisterEngineEPNS_10EngineInfoE
+_ZN6pitaya15SettingsManager15GetGlobalStableEv
+_ZN6pitaya15SettingsManager8InstanceEv
+_ZN6pitaya17ByteNNEngineStoneC2Ev
+_ZN6pitaya17ByteNNEngineStoneD2Ev
+_ZN6pitaya6Engine10ReleaseUseEv
+_ZN6pitaya6TensorC1ERKS0_
+_ZN6pitaya6TensorC1Ev
+_ZN6pitaya6TensorD1Ev
+_ZN6pitaya9ModelMetaC1ENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS_11ForwardTypeE
+_ZN6pitaya9ModelMetaD1Ev
+_ZN6pitaya9TaskTrace14CreateSubTraceERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN6pitaya9TaskTrace22CreateSubTraceWithFlagERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEb
+_ZN6pitaya9TaskTrace4OverEv
+_ZNK6BYTENN6Tensor11GetByteSizeEv
+_ZNK6pitaya6Tensor4sizeEv
+_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info
+_ZNSt6__ndk112__next_primeEm
+_ZNSt6__ndk119__shared_weak_count14__release_weakEv
+_ZNSt6__ndk119__shared_weak_countD2Ev
+_ZTVN6BYTENN9ConfigExtE
+__memmove_chk
+malloc
+memcmp
 liblog.so
 libbytenn.so
+libc++_shared.so
 libAndroidPitayaCore.so
 libm.so
 libdl.so
 libc.so
+_edata
+__bss_start
+__bss_start__
+__bss_end__
+__end__
+_end
 libByteAINN.so
-https://android.googlesource.com/toolchain/llvm-project
+LIBC
+)Q5
+B@+
+?k78
+?k78
+!T1
+!p1
+B8h
+!T1
+<(`A9)4@
+?k78
+!T1
+bA9
+B8h
+!T1
+A9h
+!T1
+!,3
+@9h
+!T1
+@9h
+($@
+!T1
+B8h
+($@
+?}?
+!T1
+!d4
+?k88
+c@9h
+!T1
+B8h
+!p7
+j58
+@9h
+c@9
+c@9H
+j48h
+k)8
+@9*
+@9,
+j48h
+@9h
+@A9i
+@9h
+`2@
+6`&@
+=Zc
+j48Zc
+j48Zc
+={c
+k58{c
+k58{c
+CA9
+Ri*C)k2B)"
+)5<
+CA9h
+@9h
+6`&@
+@9(
+RI(
+#@9h
+@9h
+@9h
+@9h
+@8H
+_k88
+P8h
+G8(
+*)!8
++ih8J
+9iA
+rHa
+CA9
+rHa
+#A9
+!T1
+CA9
+#A9H
+*)U8
++ih8J
+K}_
+!T1
+($@
+@9h
+@9h
+j58h
+B9h
+6`J@
+t6@
+h:@
+T`6@
+t*@
+h.@
+T`*@
+@9(
+`&@
+@9(
+R%"
+)1@
++ih8J
+n `
+h#@
+!T1
+RE)
+) @
+)1@
++yhxJ
+_8h
+[ky
+j<8H
+[ky
+j<8
+@9h
+k)9
+jih8)
+!T1
+Aky
+@9h
+k<8
+A9h
++ih8J
+!T1
+!T1
+hBA9t
+7hB@9
+`2@
+hB@9h
+@9h
+*)):
++ih8J
+n `
+h#@
+!T1
+R!T1
+_k98
+*)]:
++ih8J
+!T1
+5P@
+R{W1
+@9h
+@9h
+TH{
+j:8:
+@9H
++ih8J
+!T1
+ia8)
+Ovb
+bA9
+j48
+@9h
+*}_
+@9)
+j58
+_8c
+#@9
+@9H
+n `
+Ti6@
+j48
+@9h
+Ti2@
+RzS
+j58h.@
+Tt"@
+=?!
+tZ@
+TvR@
+@9*
+80.
+)y{
+A8+
+JE@9
+ki8_
+A8+
+JE@9
+ki8_
+)y{
+`"@
+@ !
+(y{
+(y{
+(y{
+(y;
+(y{
+`"@
+80.
+R !
+T_@
+T_$
+,4@
+($A
+O)~
+)(@
+L5}
+NE|
+OA~
+@9)hi8J
+j48(
+?y(
+80.
+(y8
+(y8
+B@9
+A8,
+A@9
+@9*
+80.
+)yx
+A8+
+JE@9
+ji8_
+A8+
+JE@9
+ji8_
+)yx
+@9*
+80.
+)y{
+A8+
+JE@9
+ki8_
+A8+
+JE@9
+ki8_
+)y{
+`"@
+@ !
+(y{
+(y{
+(y{
+(y;
+(y{
+B8I
+j78x^@
+Tt^@
+@9)
+j58
+ByteNN unsupported optimize type: %d
+ByteNN
+ByteNN SetOptimizer error
+No Config
+ByteNN Step error
+ByteNN GetWeight error, name = %s
+ByteNN SetWeight error
+ByteNN GetWeight error
+ByteNN GetGradient error
+ByteNN SetLossLayer error: %d
+ByteNN SetLabel error
+Open save model file with error %d
+Failed to lseek save model with size %d
+Failed to write save model with size %d
+Failed to malloc save model buffer
+ByteNN SaveModel error
+Failed to ummap save model buffer
+6%'!)+-/13#5
+ydfhrtjvlxbn
+(2:::::::4*,:::::::.68:::::::&:::::::::0:::::::::;
+M8:<>@BDFHJL
+aLVNX\Z^P`JR
+pitaya_engine_bytenn.cpp
+CheckTensorDims
+Warning... Tensor[%s] require (batch:%d, channel:%d, height:%d, width:%d), but input (%d, %d, %d, %d)
+[%d]
+SetConfig
+Duplicated config
+ByteNN doesn't support forward_type: %d
+load_model
+ByteNN SetProperty Preinit_Trainable_Bool error
+ByteNN init error
+GetInputConfig
+GetInputConfig start
+Empty tensor[%d].name
+GetInputConfig failed
+Unsupported ByteNN data_type: %d
+Unsupported ByteNN data_format: %d
+GetInputConfig over
+ByteNN setInput error: Cannot find input '%s' in model
+ByteNN setInput error
+Inference
+Inference start
+predict
+ByteNN Inference error
+Inference over
+ByteNN ReInferShape error [%s]: num %d, height %d, width %d
+ByteNN ReInferShape error
+ByteNN ReinferShapeWithTensors error
+No ByteNN Train
+ByteNN unsupported DataFormat: %d
+ByteNN unsupported DataType: %d
+Unknown ByteNN DataFormat: %d
+Unknown ByteNN DataType: %d
+PTY-ByteNNEngine
+Android
+r21b
+6352462
+Android (6317467 based on r365631c1) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project e0caee08e5f09b374a27a676d04978c81fcb1928) (based on LLVM 9.0.8svn)
+.init_array
+.fini_array
+.text
+.got
+.comment
+.note.android.ident
+.rela.plt
+.bss
+.dynstr
+.eh_frame_hdr
+.gnu.version_r
+.data.rel.ro
+.rela.dyn
+.gnu.version
+.dynsym
+.gnu.hash
+.eh_frame
+.note.gnu.build-id
+.dynamic
+.shstrtab
+.rodata

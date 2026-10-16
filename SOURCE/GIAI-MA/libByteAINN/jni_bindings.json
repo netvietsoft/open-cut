@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "java_class": "com.nextai.opencut.ai.bytenn.ByteAINNNative",
+    "native_method": "nativeInit",
+    "signature": "(Ljava/lang/String;I)Z",
+    "c_symbol": "Java_com_nextai_opencut_ai_bytenn_ByteAINNNative_nativeInit",
+    "description": "Initializes Pitaya ByteNN engine bridge with model directory and accelerator type"
+  },
+  {
+    "java_class": "com.nextai.opencut.ai.bytenn.ByteAINNNative",
+    "native_method": "nativeSegmentMatting",
+    "signature": "([BII[B)Z",
+    "c_symbol": "Java_com_nextai_opencut_ai_bytenn_ByteAINNNative_nativeSegmentMatting",
+    "description": "Performs neural video background segmentation generating 8-bit alpha matte"
+  },
+  {
+    "java_class": "com.nextai.opencut.ai.bytenn.ByteAINNNative",
+    "native_method": "nativeRelease",
+    "signature": "()V",
+    "c_symbol": "Java_com_nextai_opencut_ai_bytenn_ByteAINNNative_nativeRelease",
+    "description": "Releases all ByteNN and Pitaya engine instances and cached memory buffers"
+  }
+]

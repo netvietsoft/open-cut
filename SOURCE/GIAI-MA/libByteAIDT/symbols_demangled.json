@@ -1,274 +1,274 @@
 [
   {
     "name": "__bss_start__",
-    "demangled": "__bss_start__",
-    "value": "0x8000",
+    "address": "0x00008000",
     "size": 0,
-    "type": "STT_NOTYPE",
-    "bind": "STB_LOCAL"
+    "type": 0,
+    "bind": 0,
+    "shndx": 65521
   },
   {
     "name": "_bss_end__",
-    "demangled": "_bss_end__",
-    "value": "0x8000",
+    "address": "0x00008000",
     "size": 0,
-    "type": "STT_NOTYPE",
-    "bind": "STB_LOCAL"
+    "type": 0,
+    "bind": 0,
+    "shndx": 65521
   },
   {
     "name": "_edata",
-    "demangled": "_edata",
-    "value": "0x8000",
+    "address": "0x00008000",
     "size": 0,
-    "type": "STT_NOTYPE",
-    "bind": "STB_LOCAL"
+    "type": 0,
+    "bind": 0,
+    "shndx": 65521
   },
   {
     "name": "__bss_end__",
-    "demangled": "__bss_end__",
-    "value": "0x8000",
+    "address": "0x00008000",
     "size": 0,
-    "type": "STT_NOTYPE",
-    "bind": "STB_LOCAL"
+    "type": 0,
+    "bind": 0,
+    "shndx": 65521
   },
   {
     "name": "_end",
-    "demangled": "_end",
-    "value": "0x8000",
+    "address": "0x00008000",
     "size": 0,
-    "type": "STT_NOTYPE",
-    "bind": "STB_LOCAL"
+    "type": 0,
+    "bind": 0,
+    "shndx": 65521
   },
   {
     "name": "__end__",
-    "demangled": "__end__",
-    "value": "0x8000",
+    "address": "0x00008000",
     "size": 0,
-    "type": "STT_NOTYPE",
-    "bind": "STB_LOCAL"
+    "type": 0,
+    "bind": 0,
+    "shndx": 65521
   },
   {
     "name": "__bss_start",
-    "demangled": "__bss_start",
-    "value": "0x8000",
+    "address": "0x00008000",
     "size": 0,
-    "type": "STT_NOTYPE",
-    "bind": "STB_LOCAL"
+    "type": 0,
+    "bind": 0,
+    "shndx": 65521
   },
   {
     "name": "memcpy",
-    "demangled": "memcpy",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info",
-    "demangled": "std::__ndk1::__shared_weak_count::__get_deleter const(std::type_info const&)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZdlPv",
-    "demangled": "operator delete(void*)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6pitaya11PitayaDTOutC1EPvmNS_8DataTypeERKNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEE",
-    "demangled": "pitaya::PitayaDTOut::{ctor}(void*, unsigned long, pitaya::DataType, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6pitaya10EngineInfoC1ENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS_10EngineTypeERKS7_PFNS1_10shared_ptrINS_6EngineEEEvE",
-    "demangled": "pitaya::EngineInfo::{ctor}(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>>, pitaya::EngineType, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, std::__ndk1::shared_ptr<pitaya::Engine> (*)())",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZNSt6__ndk119__shared_weak_countD2Ev",
-    "demangled": "std::__ndk1::__shared_weak_count::{base dtor}()",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "memmove",
-    "demangled": "memmove",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "strlen",
-    "demangled": "strlen",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6pitaya9TaskTrace14CreateSubTraceERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
-    "demangled": "pitaya::TaskTrace::CreateSubTrace(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6bytedt6ByteDT12predict_leafENS_5InputERNS_15ByteDTErrorCodeEPNS_7RunInfoE",
-    "demangled": "bytedt::ByteDT::predict_leaf(bytedt::Input, bytedt::ByteDTErrorCode&, bytedt::RunInfo*)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZNSt6__ndk112__next_primeEm",
-    "demangled": "std::__ndk1::__next_prime(unsigned long)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6pitaya17ByteDTEngineStoneC2Ev",
-    "demangled": "pitaya::ByteDTEngineStone::{base ctor}()",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZNSt6__ndk119__shared_weak_count14__release_weakEv",
-    "demangled": "std::__ndk1::__shared_weak_count::__release_weak()",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "abort",
-    "demangled": "abort",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "__cxa_atexit",
-    "demangled": "__cxa_atexit",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "memcmp",
-    "demangled": "memcmp",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6pitaya14RegisterEngineEPNS_10EngineInfoE",
-    "demangled": "pitaya::RegisterEngine(pitaya::EngineInfo*)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6pitaya9TaskTrace22CreateSubTraceWithFlagERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEb",
-    "demangled": "pitaya::TaskTrace::CreateSubTraceWithFlag(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char>> const&, bool)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6bytedt6ByteDT13create_engineEv",
-    "demangled": "bytedt::ByteDT::create_engine()",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_Znwm",
-    "demangled": "operator new(unsigned long)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6pitaya9TaskTrace4OverEv",
-    "demangled": "pitaya::TaskTrace::Over()",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "__cxa_finalize",
-    "demangled": "__cxa_finalize",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6pitaya6Engine10ReleaseUseEv",
-    "demangled": "pitaya::Engine::ReleaseUse()",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6bytedt11get_versionEv",
-    "demangled": "bytedt::get_version()",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "__stack_chk_fail",
-    "demangled": "__stack_chk_fail",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6bytedt6ByteDT7predictENS_5InputERNS_15ByteDTErrorCodeEPNS_7RunInfoE",
-    "demangled": "bytedt::ByteDT::predict(bytedt::Input, bytedt::ByteDTErrorCode&, bytedt::RunInfo*)",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   },
   {
     "name": "_ZN6pitaya17ByteDTEngineStoneD2Ev",
-    "demangled": "pitaya::ByteDTEngineStone::{base dtor}()",
-    "value": "0x0",
+    "address": "0x00000000",
     "size": 0,
-    "type": "STT_FUNC",
-    "bind": "STB_GLOBAL"
+    "type": 2,
+    "bind": 1,
+    "shndx": 0
   }
 ]

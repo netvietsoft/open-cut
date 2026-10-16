@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "java_class": "com.nextai.opencut.ai.bytedt.ByteAIDTNative",
+    "native_method": "nativeInit",
+    "signature": "(Ljava/lang/String;)Z",
+    "c_symbol": "Java_com_nextai_opencut_ai_bytedt_ByteAIDTNative_nativeInit",
+    "description": "Initializes Pitaya ByteDT engine bridge with decision tree model path"
+  },
+  {
+    "java_class": "com.nextai.opencut.ai.bytedt.ByteAIDTNative",
+    "native_method": "nativeRecommendBitrate",
+    "signature": "(IIFFFFI)I",
+    "c_symbol": "Java_com_nextai_opencut_ai_bytedt_ByteAIDTNative_nativeRecommendBitrate",
+    "description": "Evaluates GBDT decision trees to recommend optimal video export bitrate"
+  },
+  {
+    "java_class": "com.nextai.opencut.ai.bytedt.ByteAIDTNative",
+    "native_method": "nativeEvaluateAesthetic",
+    "signature": "([F)F",
+    "c_symbol": "Java_com_nextai_opencut_ai_bytedt_ByteAIDTNative_nativeEvaluateAesthetic",
+    "description": "Computes video aesthetic quality score based on multi-modal feature vector"
+  },
+  {
+    "java_class": "com.nextai.opencut.ai.bytedt.ByteAIDTNative",
+    "native_method": "nativeRelease",
+    "signature": "()V",
+    "c_symbol": "Java_com_nextai_opencut_ai_bytedt_ByteAIDTNative_nativeRelease",
+    "description": "Releases all ByteDT and Pitaya decision tree engine resources"
+  }
+]
