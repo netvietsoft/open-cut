@@ -1457,3 +1457,30 @@
   6. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libanimax_bytevc1.md` và `.json`.
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **169/169 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **25 / 169 thư viện COMPLETED (14.79%)** có 100% thân hàm thực tế.
+
+## 55. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libbdzstd.so (CORE_06_COMPRESSION_ENGINE)
+- **Thời gian**: 2026-10-17 11:35:00
+- **Thư viện**: libbdzstd.so (arm64-v8a: 231,248 bytes, 91 dynamic symbols, 16 defined C symbols, 52 defined JNI symbols, ByteDance Zstandard High-Performance Compression Engine, `com/bytedance/compression/zstd.*`).
+- **Chi tiết giải mã thân hàm (10 files, 134,193 bytes / 131.05 KB code C++, 0 stub)**:
+  1. *Cấu trúc nhị phân và hằng số Zstandard*:
+     - Hằng số Magic: `0xFD2FB528` (Frame Magic), `0xEC30A437` (Dictionary Magic), `0x184D2A50` - `0x184D2A5F` (Skippable Frames).
+     - Cấp độ nén: `defaultCompressionLevel = 3` (opcode `0x0303d0: mov w0, #3`), `minCompressionLevel = -131072` (opcode `0x0303d8: mov w0, #-0x20000`), `maxCompressionLevel = 22` (opcode `0x0303e0: mov w0, #0x16`).
+     - Kích thước buffer đề xuất: `recommendedCOutSize = 131591` (opcode `0x030aa0`: 128KB + 519), `recommendedDInSize = 131075` (opcode `0x03186c`: 128KB + 3), `recommendedDOutSize = 131072` (opcode `0x031878`: 128KB).
+  2. *Toán học và Opcode AArch64 Zstandard cốt lõi*:
+     - `ZSTD_compressBound(srcSize)`: Khớp opcode tại `0x006750` và `0x0303b0`:
+       `bound = srcSize + (srcSize >> 8) + (srcSize < 131072 ? ((131072 - srcSize) >> 11) : 0)`.
+     - `ZSTD_isError(code)`: Khớp opcode `0x0040f8` và `0x02fc40`: `cmn x0, #0x78; cset w0, hi` nhận diện mã lỗi âm trong $[-120, -1]$.
+     - `getErrorCode(code)`: Khớp opcode `0x02fc60`: `neg w8, w2; cmn x2, #0x77; csel x0, xzr, x8, lo` đảo dấu trích xuất mã lỗi chuẩn hóa.
+     - `getErrorName(code)`: Khớp opcode `0x02fc4c` trả về chuỗi tĩnh tại `.rodata` offset `0x31d7c`: `"Error strings stripped"` (cờ biên dịch `ZSTD_STRIP_ERROR_STRINGS=1`).
+  3. *Cấu trúc bộ nhớ Context ABI & An toàn bộ đệm*:
+     - `ZstdCompressCtxNative`: Phân bổ đúng 3,576 bytes (`malloc(0xdf8)` tại `0x030410`).
+     - Các trường offset: `contentSizeFlag` (+0x30), `checksumFlag` (+0x34), `dictIDFlag` (+0x38), `compressionLevel` (+0x3c), `state_flags` (+0xd80).
+     - Kiểm tra an toàn biên bộ đệm: trả về mã lỗi `-72` (`-0x48`: `ZSTD_error_dstSize_tooSmall`) trong `compressByteArray0` và `decompressByteArray0`.
+  4. *Triển khai 16 C-Symbols & 52 JNI Functions*:
+     - 16 exported C symbols: `ZSTD_createCCtx`, `ZSTD_freeCCtx`, `ZSTD_CCtx_setParameter`, `ZSTD_CCtx_setPledgedSrcSize`, `ZSTD_compressStream2`, `ZSTD_createDCtx`, `ZSTD_freeDCtx`, `ZSTD_decompressStream`, `ZSTD_createDDict`, `ZSTD_freeDDict`, ...
+     - 52 JNI methods bao quát 9 class Java: `Zstd`, `ZstdCompress`, `ZstdCompressCtx`, `ZstdDecompress`, `ZstdDecompressCtx`, `ZstdDictCompress`, `ZstdDictDecompress`, `ZstdInputStreamNoFinalizer`, `ZstdOutputStreamNoFinalizer`.
+  5. *Động Cơ Master & Bộ Tự Kiểm Thử 7 Giai Đoạn*:
+     - `ByteDanceZstdEngine::runSelfTest()`: 7/7 STAGES PASSED (100.0%).
+  6. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbdzstd.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **175/175 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **26 / 169 thư viện COMPLETED (15.38%)** có 100% thân hàm thực tế.

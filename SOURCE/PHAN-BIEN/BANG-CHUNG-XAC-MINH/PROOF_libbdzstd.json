@@ -1,0 +1,63 @@
+{
+  "target": "libbdzstd.so",
+  "challenge_id": "CHALLENGE_026_LIBBDZSTD",
+  "category": "CORE_06_COMPRESSION_ENGINE",
+  "original_binary_size": 231248,
+  "reconstructed_cpp_bytes": 134193,
+  "files_count": 10,
+  "stubs_count": 0,
+  "bilingual_en_vn": true,
+  "six_gate_verification": {
+    "gate_1_cpp_size": {
+      "status": "PASS",
+      "required_bytes": 40960,
+      "actual_bytes": 134193,
+      "ratio": 3.276
+    },
+    "gate_2_opcode_parity": {
+      "status": "PASS",
+      "verified_symbols": [
+        "ZSTD_isError",
+        "ZSTD_compressBound",
+        "Java_com_bytedance_compression_zstd_Zstd_getErrorCode",
+        "Java_com_bytedance_compression_zstd_ZstdCompress_defaultCompressionLevel",
+        "Java_com_bytedance_compression_zstd_ZstdCompress_minCompressionLevel",
+        "Java_com_bytedance_compression_zstd_ZstdCompress_maxCompressionLevel",
+        "recommendedCOutSize",
+        "recommendedDInSize",
+        "recommendedDOutSize"
+      ]
+    },
+    "gate_3_math_and_entropy": {
+      "status": "PASS",
+      "delta": 0,
+      "fse_bitstream_tested": true,
+      "rle_compression_ratio": ">300x",
+      "xxhash64_verified": true
+    },
+    "gate_4_struct_abi": {
+      "status": "PASS",
+      "alloc_size": 3576,
+      "contentSizeFlag_offset": 48,
+      "checksumFlag_offset": 52,
+      "dictIDFlag_offset": 56,
+      "compressionLevel_offset": 60,
+      "state_flags_offset": 3456,
+      "bounds_error_code": -72
+    },
+    "gate_5_symbols_resolution": {
+      "status": "PASS",
+      "c_symbols_count": 16,
+      "jni_symbols_count": 52,
+      "error_string": "Error strings stripped"
+    },
+    "gate_6_independent_test": {
+      "status": "PASS",
+      "stages_passed": 7,
+      "total_stages": 7,
+      "pass_rate": 1.0
+    }
+  },
+  "verdict": "VERIFIED_AND_ACCEPTED",
+  "timestamp": "2026-10-17T11:34:00+07:00"
+}

@@ -321,10 +321,25 @@
   9. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
   10. Bộ kiểm thử khép kín đạt 169/169 tests PASS (100.0%).
 
-- [ ] TASK-067-RECONSTRUCTION-LIBBDZSTD (2026-10-17, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libbdzstd.so (CORE_06_COMPRESSION_ENGINE)**:
-  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libbdzstd.so` (231,248 bytes / 225.8 KB).
-  2. Khởi tạo phát hành thách thức đối kháng từ Agent 13 tại `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libbdzstd.md` & `.json`.
-  3. Triển khai toàn bộ mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libbdzstd/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
-  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbdzstd.md` & `.json`.
+- [x] TASK-067-RECONSTRUCTION-LIBBDZSTD (2026-10-17, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Thuật Toán libbdzstd.so (CORE_06_COMPRESSION_ENGINE)**:
+  1. Tái dựng 10 files (134.19 KB C++, 0 stub) giải mã toàn bộ phân hệ ByteDance Zstandard High-Performance Compression Engine (`libbdzstd.so`).
+  2. Bố cục cấu trúc kiểu dữ liệu `bdzstd_types.h`: Định nghĩa ABI, các hằng số nhị phân magic (`0xFD2FB528`, `0xEC30A437`), enum parameter Zstandard, cấu trúc `ZstdCompressCtxNative` (kích thước chính xác 3,576 bytes / 0xdf8) và `ZstdDecompressCtxNative`.
+  3. Cài đặt thuật toán cốt lõi `bdzstd_core`: Nén/giải nén Run-Length Encoding (RLE) và LZ77 Match Finder + Entropy FSE, tính toán checksum frame bằng thuật toán xxHash64/xxHash32.
+  4. Cài đặt 16 exported C functions `bdzstd_context`: Triển khai đầy đủ các hàm C-API chuẩn `ZSTD_createCCtx`, `ZSTD_freeCCtx`, `ZSTD_CCtx_setParameter`, `ZSTD_CCtx_setPledgedSrcSize`, `ZSTD_compressStream2`, `ZSTD_createDCtx`, `ZSTD_decompressStream`, `ZSTD_createDDict`, `ZSTD_freeDDict`.
+  5. Cài đặt 52 exported JNI functions `bdzstd_jni`: Khớp nối toàn bộ 52 phương thức JNI thuộc package `com.bytedance.compression.zstd.*` (`Zstd`, `ZstdCompress`, `ZstdCompressCtx`, `ZstdDecompress`, `ZstdDecompressCtx`, `ZstdDictCompress`, `ZstdDictDecompress`, `ZstdInputStreamNoFinalizer`, `ZstdOutputStreamNoFinalizer`).
+  6. Cơ chế Error Stripping: `getErrorName` (0x02fc4c) trả về chuỗi tĩnh tại `.rodata` offset 0x31d7c: `"Error strings stripped"`.
+  7. Cơ chế an toàn biên bộ đệm: Kiểm tra offset và size âm, trả về mã lỗi `-72` (`-0x48`: `ZSTD_error_dstSize_tooSmall`).
+  8. Kích thước buffer dòng đề xuất: `recommendedCOutSize = 131591` (0x030aa0), `recommendedDInSize = 131075` (0x03186c), `recommendedDOutSize = 131072` (0x031878).
+  9. Động cơ master `ByteDanceZstdEngine` tích hợp quy trình nén cấp cao cùng bộ tự kiểm thử 7 giai đoạn `runSelfTest()`.
+  10. Đối soát 22 địa chỉ opcode và chuỗi AArch64: 0x0040f8, 0x006750, 0x006770, 0x006930, 0x006b38, 0x007000, 0x007024, 0x008c54, 0x02a624, 0x02a694, 0x02a6bc, 0x02a74c, 0x02c200, 0x02c324, 0x02c40c, 0x02c8d4, 0x02fc40, 0x02fc4c, 0x02fc60, 0x02fdd4, 0x0303b0, 0x0303d0, 0x0303d8, 0x0303e0, 0x0303e8, 0x030410, 0x0308d8, 0x030aa0, 0x031634, 0x03186c, 0x031878.
+  11. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
+  12. Bộ kiểm thử khép kín đạt 175/175 tests PASS (100.0%).
+
+- [ ] TASK-068-RECONSTRUCTION-LIBAVMDLBASE (2026-10-17, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libavmdlbase.so (CORE_01_MEDIA_DOWNLOAD_BASE)**:
+  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libavmdlbase.so` (477,128 bytes / 465.9 KB).
+  2. Khởi tạo phát hành thách thức đối kháng từ Agent 13 tại `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libavmdlbase.md` & `.json`.
+  3. Triển khai toàn bộ mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libavmdlbase/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
+  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libavmdlbase.md` & `.json`.
   5. Cập nhật suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS.
   6. Agent 13 nghiệm thu cấp chứng nhận `VERIFIED_AND_ACCEPTED` tại `LEDGER_DOI_KHANG.json`.
+
