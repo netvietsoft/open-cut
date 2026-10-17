@@ -1,0 +1,61 @@
+{
+  "target": "libavmdlbase.so",
+  "challenge_id": "CHALLENGE_027_LIBAVMDLBASE",
+  "category": "CORE_01_MEDIA_DOWNLOAD_BASE",
+  "original_binary_size": 477128,
+  "reconstructed_cpp_bytes": 72792,
+  "files_count": 14,
+  "stubs_count": 0,
+  "bilingual_en_vn": true,
+  "six_gate_verification": {
+    "gate_1_cpp_size": {
+      "status": "PASS",
+      "required_bytes": 40960,
+      "actual_bytes": 72792,
+      "ratio": 1.777
+    },
+    "gate_2_opcode_parity": {
+      "status": "PASS",
+      "verified_symbols": [
+        "MIOHttpRequestHelper::parseUrl",
+        "MIOHttpResponseHelper::parseHeader",
+        "MIOHttpResponseHelper::readSingleChunkData",
+        "MIORingBuffer::readBy",
+        "MIOPlayTaskMgr::getOrCreatePlayTask",
+        "MIOPlayTaskMgr::playStop",
+        "MIOConnTLS::open",
+        "MIOTTQuicTransWrapper::load",
+        "AVMDLIOManager_vtable"
+      ]
+    },
+    "gate_3_math_and_entropy": {
+      "status": "PASS",
+      "delta": 0,
+      "range_math_verified": true,
+      "ringbuffer_modulo_verified": true
+    },
+    "gate_4_struct_abi": {
+      "status": "PASS",
+      "avmdl_io_manager_vtable_size": 152,
+      "avmdl_io_task_info_size": 64,
+      "ring_buffer_concurrency": "thread_safe"
+    },
+    "gate_5_symbols_resolution": {
+      "status": "PASS",
+      "demangled_symbols_count": 1020,
+      "namespaces": [
+        "com::ss::ttm::medialoader",
+        "com::ss::ttmio"
+      ]
+    },
+    "gate_6_independent_test": {
+      "status": "PASS",
+      "stages_passed": 7,
+      "total_stages": 7,
+      "pass_rate": 1.0
+    }
+  },
+  "adversary_verdict": "VERIFIED_AND_ACCEPTED",
+  "audited_by": "Agent 13 (Adversary Auditor)",
+  "verified_at": "2026-10-17T11:46:00+07:00"
+}

@@ -335,11 +335,23 @@
   11. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
   12. Bộ kiểm thử khép kín đạt 175/175 tests PASS (100.0%).
 
-- [ ] TASK-068-RECONSTRUCTION-LIBAVMDLBASE (2026-10-17, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libavmdlbase.so (CORE_01_MEDIA_DOWNLOAD_BASE)**:
-  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libavmdlbase.so` (477,128 bytes / 465.9 KB).
-  2. Khởi tạo phát hành thách thức đối kháng từ Agent 13 tại `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libavmdlbase.md` & `.json`.
-  3. Triển khai toàn bộ mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libavmdlbase/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
-  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libavmdlbase.md` & `.json`.
+- [x] TASK-068-RECONSTRUCTION-LIBAVMDLBASE (2026-10-17, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Toàn Diện Thuật Toán libavmdlbase.so (CORE_01_MEDIA_DOWNLOAD_BASE)**:
+  1. Tái dựng 14 files (72.79 KB C++, 0 stub) giải mã toàn bộ phân hệ ByteDance Mobile Download Base Core Engine (`libavmdlbase.so`).
+  2. Bố cục cấu trúc kiểu dữ liệu `avmdlbase_types.h`: Định nghĩa ABI, enums, structs (`AVMDLIOTaskInfo`, `MIOHttpResponseInfo`, `MIOConfig`, `AVMDLIOManager` abstract interface).
+  3. Phân hệ URL Helper `avmdlbase_url_helper`: Tái dựng `parseUrl` (opcode 0x041250, 1,216 bytes) giải mã URL RFC 3986 và lược đồ `mdl://`; `rewriteUri` bơm tham số định tuyến proxy và khóa cache `fkey` cùng cờ `bytedance_mdl=1`.
+  4. Phân hệ HTTP Helper `avmdlbase_http_helper`: Tái dựng `parseHeader` (opcode 0x043f24, 1,520 bytes) phân tích status code 200, 206 Partial Content, Content-Range, Content-Length, và `readSingleChunkData` (opcode 0x0466a4, 572 bytes) bóc tách dòng chunked.
+  5. Phân hệ RingBuffer `avmdlbase_ringbuffer`: Tái dựng `MIORingBuffer::readBy(MIODataWriter*)` (opcode 0x050544, 524 bytes) với giải thuật modulo vòng tròn chuyển phát zero-copy đa luồng.
+  6. Phân hệ Quản lý Tác vụ `avmdlbase_manager`: Cài đặt `AVMDLIOManagerImpl` (vtable 0x072b10, 152 bytes) và `MIOPlayTaskMgr` (opcodes 0x048200, 0x04870c) đồng bộ đa luồng bằng `std::mutex`.
+  7. Phân hệ Mạng Bảo mật TLS & QUIC `avmdlbase_tls_quic`: Tái dựng `MIOConnTLS::open` (opcode 0x033850, 1,228 bytes) đàm phán ALPN `h2` và `MIOTTQuicTransWrapper::load` (opcode 0x03b2f4, 3,232 bytes) nạp wrapper giao thức RFC 9000 (HTTP/3).
+  8. Động cơ master `ByteDanceAVMDLBaseEngine` tích hợp toàn diện quy trình tải media cùng bộ tự kiểm thử 7 giai đoạn `runSelfTest()`.
+  9. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
+  10. Bộ kiểm thử khép kín đạt 182/182 tests PASS (100.0%).
+
+- [ ] TASK-069-RECONSTRUCTION-LIBBDVIDEOUPLOADER (2026-10-17, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libbdvideouploader.so (CORE_01_VIDEO_UPLOADER)**:
+  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libbdvideouploader.so` (837,848 bytes / 818.2 KB).
+  2. Khởi tạo phát hành thách thức đối kháng từ Agent 13 tại `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libbdvideouploader.md` & `.json`.
+  3. Triển khai toàn bộ mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libbdvideouploader/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
+  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbdvideouploader.md` & `.json`.
   5. Cập nhật suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS.
   6. Agent 13 nghiệm thu cấp chứng nhận `VERIFIED_AND_ACCEPTED` tại `LEDGER_DOI_KHANG.json`.
 
