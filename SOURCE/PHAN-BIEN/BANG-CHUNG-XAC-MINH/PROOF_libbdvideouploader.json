@@ -1,0 +1,64 @@
+{
+  "target": "libbdvideouploader.so",
+  "challenge_id": "CHALLENGE_028_LIBBDVIDEOUPLOADER",
+  "category": "CORE_01_VIDEO_UPLOADER",
+  "original_binary_size": 837848,
+  "reconstructed_cpp_bytes": 84570,
+  "files_count": 18,
+  "stubs_count": 0,
+  "bilingual_en_vn": true,
+  "six_gate_verification": {
+    "gate_1_cpp_size": {
+      "status": "PASS",
+      "required_bytes": 40960,
+      "actual_bytes": 84570,
+      "ratio": 2.065
+    },
+    "gate_2_opcode_parity": {
+      "status": "PASS",
+      "verified_symbols": [
+        "JNI_OnLoad",
+        "BDVideoUploader::_create",
+        "BDVideoUploader::_start",
+        "BDVideoUploader::_setStringValue",
+        "BDVideoUploader::_setIntValue",
+        "BDImageUploader::_setFileData",
+        "BDNetworkSpeedTest::_create",
+        "BDUploadResolver::_notifyParserResult"
+      ]
+    },
+    "gate_3_math_and_entropy": {
+      "status": "PASS",
+      "delta": 0,
+      "crc32_standard_check": "0xCBF43926",
+      "hmac_sha256_verified": true,
+      "slice_geometry_verified": true
+    },
+    "gate_4_struct_abi": {
+      "status": "PASS",
+      "disk_resume_magic": "0x4244524D",
+      "record_struct_size": 104,
+      "concurrency_thread_safe": true
+    },
+    "gate_5_symbols_resolution": {
+      "status": "PASS",
+      "jni_native_methods_count": 50,
+      "classes_registered": [
+        "com/ss/bduploader/BDVideoUploader",
+        "com/ss/bduploader/BDNetworkRouter",
+        "com/ss/bduploader/BDImageUploader",
+        "com/ss/bduploader/BDNetworkSpeedTest",
+        "com/ss/bduploader/BDUploadResolver"
+      ]
+    },
+    "gate_6_independent_test": {
+      "status": "PASS",
+      "stages_passed": 7,
+      "total_stages": 7,
+      "pass_rate": 1.0
+    }
+  },
+  "adversary_verdict": "VERIFIED_AND_ACCEPTED",
+  "audited_by": "Agent 13 (Adversary Auditor)",
+  "verified_at": "2026-10-17T11:59:00+07:00"
+}

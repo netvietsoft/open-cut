@@ -347,11 +347,25 @@
   9. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
   10. Bộ kiểm thử khép kín đạt 182/182 tests PASS (100.0%).
 
-- [ ] TASK-069-RECONSTRUCTION-LIBBDVIDEOUPLOADER (2026-10-17, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libbdvideouploader.so (CORE_01_VIDEO_UPLOADER)**:
-  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libbdvideouploader.so` (837,848 bytes / 818.2 KB).
-  2. Khởi tạo phát hành thách thức đối kháng từ Agent 13 tại `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libbdvideouploader.md` & `.json`.
-  3. Triển khai toàn bộ mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libbdvideouploader/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
-  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbdvideouploader.md` & `.json`.
+- [x] TASK-069-RECONSTRUCTION-LIBBDVIDEOUPLOADER (2026-10-17, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Toàn Diện Thuật Toán libbdvideouploader.so (CORE_01_VIDEO_UPLOADER)**:
+  1. Tái dựng 18 files (84.57 KB C++, 0 stub) giải mã toàn bộ phân hệ ByteDance Video & Media Uploader Core Engine (`libbdvideouploader.so`).
+  2. Bố cục cấu trúc kiểu dữ liệu `bdvideouploader_types.h`: Định nghĩa ABI, Header Magic `0x4244524D` ("BDRM"), hằng số lát cắt, cấu trúc phân mảnh và chứng thực.
+  3. Phân hệ Phân mảnh Lát cắt & Đọc Tệp `bdvideouploader_slice_reader`: Tái dựng `readSliceByOffsetAdv`, `BDFileReaderMemory`, `BDFileReaderExtern`, giải thuật IEEE 802.3 CRC32 độc lập.
+  4. Phân hệ Phân giải DNS & Điều phối IP `bdvideouploader_dns_resolver`: Quản lý bộ đệm DNS TTL và phân bổ IP dự phòng `BDDNSResolver`.
+  5. Phân hệ Chứng thực Đám mây AWS & TOS `bdvideouploader_auth_tos`: Động cơ ký chữ ký số chuẩn AWS SigV4 / ByteDance TOS, HMAC-SHA256, và giải mã dẫn xuất khóa AES-256 (`_prepareEncInfo`).
+  6. Phân hệ Máy Trạng thái Thử lại `bdvideouploader_retry_state`: Máy trạng thái lùi lũy thừa `BDRetryStateMachine`, phân loại mã lỗi HTTP và chuyển mạch sang `xquic` khi gặp lỗi 1001.
+  7. Phân hệ Phục hồi Gián đoạn trên Đĩa `bdvideouploader_disk_resume`: Tuần tự hóa và phục hồi bản ghi `BDDiskResumeRecord` (104 bytes) với Header Magic `0x4244524D`.
+  8. Phân hệ Thăm dò Tốc độ Mạng `bdvideouploader_speed_test`: Đo kiểm thông lượng mạng `BDNetworkSpeedTest` và xếp hạng máy chủ tối ưu `ClientBestHosts`.
+  9. Động cơ master `BDVideoUploader`, `BDImageUploader`, `BDNetworkRouter`: Triển khai đầy đủ 50 JNINativeMethods trên 5 bảng tĩnh trong `.data.rel.ro`.
+  10. Động cơ master `ByteDanceVideoUploaderEngine` tích hợp quy trình tải lên cùng bộ tự kiểm thử 7 giai đoạn `runSelfTest()`.
+  11. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
+  12. Bộ kiểm thử khép kín đạt 189/189 tests PASS (100.0%).
+
+- [ ] TASK-070-RECONSTRUCTION-LIBBUFFER (2026-10-17, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libbuffer.so / libbuffer_pgl.so (CORE_07_SECURITY_BUFFER)**:
+  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libbuffer.so` và `libbuffer_pgl.so`.
+  2. Khởi tạo phát hành thách thức đối kháng từ Agent 13 tại `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libbuffer.md` & `.json`.
+  3. Triển khai toàn bộ mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libbuffer/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
+  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbuffer.md` & `.json`.
   5. Cập nhật suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS.
   6. Agent 13 nghiệm thu cấp chứng nhận `VERIFIED_AND_ACCEPTED` tại `LEDGER_DOI_KHANG.json`.
 
