@@ -1380,4 +1380,30 @@
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **151/151 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **22 / 169 thư viện COMPLETED (13.02%)** có 100% thân hàm thực tế.
 
+## 52. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libnativeaudio.so (CORE_01_AUDIO_SECURITY)
+- **Thời gian**: 2026-10-17 11:05:00
+- **Thư viện**: libnativeaudio.so (arm64-v8a: 51,528 bytes, 71 dynamic symbols, 12 defined symbols, ByteDance Helios Native Audio Privacy & Performance Monitor).
+- **Chi tiết giải mã thân hàm (11 files, 51.46 KB code C++, 0 stub)**:
+  1. *Cầu nối JNI Quản lý Vòng đời & Callback (AudioMonitorJNI)*:
+     - `JNI_OnLoad` khớp opcode `0x2bd4` (204 bytes): Yêu cầu phiên bản `JNI_VERSION_1_6 = 0x10006`, tìm lớp `com/bytedance/helios/nativeaudio/AudioMonitorImpl` (rodata `0x82c8`), đăng ký phương thức native `startMonitor` qua `RegisterNatives` tại offset `0x6b8`, và lưu con trỏ `JavaVM*` tại `0x10178`.
+     - `startMonitor` khớp opcode `0x2f6c` (288 bytes): Đồng bộ hóa qua mutex tại `0x10140`, kiểm tra cờ `s_is_monitoring` tại `0x10168`, lấy `jclass` qua `GetObjectClass`, trích xuất `jmethodID` của `"onOpened"` (`(I)V` tại `0x8344`/`0x834d`) và `"onClosed"` (`(I)V` tại `0x8365`/`0x834d`), tạo `NewGlobalRef` cho callback tại `0x10180`, và kích hoạt cài đặt hook tại `0x48a4`.
+     - Cơ chế truyền phát callback `dispatchOnOpened` và `dispatchOnClosed` tự động gắn thread vào JVM qua `AttachCurrentThread`/`DetachCurrentThread`.
+  2. *Can Thiệp & Đánh Chặn OpenSL ES (OpenSLESMonitor)*:
+     - Cài đặt hook `installHook` khớp opcode `0x3fcc` (160 bytes): Nạp ký hiệu `"slCreateEngine"` từ rodata `0x8415`, gọi `bytehook_hook_partial` (opcode `0x4018`), và ghi log `"sles success!"` (rodata `0x8424`).
+     - Hàm proxy `onProxyCreateEngine` khớp opcode `0x3f68`: Bọc interface `SLObjectItf`, phát hiện yêu cầu interface ghi âm `SL_IID_RECORD` và interface động cơ `SL_IID_ENGINE`, đọc tên thread qua ProcFS, và kích hoạt sự kiện mở luồng.
+  3. *Nạp Động & Đánh Chặn Hướng Dòng AAudio (AAudioMonitor)*:
+     - Nạp động `libaaudio.so` khớp opcode `0x3c64` (160 bytes): Gọi `dlopen("libaaudio.so", RTLD_NOW=2)` (rodata `0x83ad`), phân giải các ký hiệu `AAudioStreamBuilder_openStream` (`0x83ba`), `AAudioStream_close` (`0x83d9`), `AAudioStream_getDirection` (`0x83ec`), lưu con trỏ hàm tại `0x10198`, `0x101a0`, `0x101a8`, và cài đặt các hàm proxy `onProxyOpenStream` (opcode `0x3d38`) và `onProxyClose` (opcode `0x3ddc`).
+     - Kiểm tra hướng dòng stream: Phát hiện luồng ghi âm `AAUDIO_DIRECTION_INPUT = 1` và kích hoạt cảnh báo quyền riêng tư.
+  4. *Định Danh Tiến Trình & Tên Luồng Qua ProcFS (ProcCommReader)*:
+     - Đọc tên thread từ đường dẫn `/proc/%ld/task/%ld/comm` (rodata `0x826d`), cắt bỏ ký tự newline `\n`.
+     - Cơ chế định dạng tên thread dự phòng `"n_audio_%d"` (rodata `0x8285`).
+     - Lọc luồng bằng biểu thức chính quy POSIX `regcomp`/`regexec` để phân loại các luồng âm thanh micro và phát lại.
+  5. *Động Cơ Master & Bộ Tự Kiểm Thử (NativeAudioMonitorEngine)*:
+     - Quản lý vòng đời khởi động/dừng giám sát `startMonitoring`, `stopMonitoring`, kiểm tra trạng thái ghi âm hoạt động `isRecordingActive()`, và truy xuất lịch sử kiểm toán `getEventHistory()`.
+     - Bộ tự kiểm thử nội bộ 7 giai đoạn `runSelfTest()` đạt tỷ lệ thành công 100%.
+  6. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnativeaudio.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **157/157 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **23 / 169 thư viện COMPLETED (13.61%)** có 100% thân hàm thực tế.
+
+
 

@@ -44,14 +44,14 @@ DIR_SOCAI = DIR_PHANBIEN / "SO-CAI-DOI-KHANG"
 FILE_LEDGER = DIR_SOCAI / "LEDGER_DOI_KHANG.json"
 FILE_AUDIT_SUMMARY = DIR_SOCAI / "AUDIT_SUMMARY.md"
 
-# 22 thư viện đã hoàn thành cần audit đối kháng
+# 23 thư viện đã hoàn thành cần audit đối kháng
 INITIAL_COMPLETED_LIBS = [
     "libAGFX", "libtexturerender_native", "libnative-filters", "libttffmpeg",
     "libmiddle-bridge", "libcccreator", "libaudioeffect", "libclipflow",
     "libmiddleware", "libspeechsdk", "libbytenn", "libAndroidPitayaCore",
     "liblens", "libretouch_sdk", "libfast_engine", "libskity", "libfastcv",
     "libaudio_fingerprint_sdk", "libByteAINN", "libByteAIDT", "libbytedt",
-    "libttdemux"
+    "libttdemux", "libnativeaudio"
 ]
 
 
