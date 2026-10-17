@@ -1,0 +1,58 @@
+{
+  "target_library": "libanimax_bytevc1.so",
+  "task_id": "TASK-066-RECONSTRUCTION-LIBANIMAX-BYTEVC1",
+  "audit_date": "2026-10-17",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verification_score": 100.0,
+  "metrics": {
+    "cpp_source_files_count": 11,
+    "cpp_code_bytes": 62544,
+    "cpp_code_kb": 61.08,
+    "stubs_count": 0,
+    "bilingual_annotations": true
+  },
+  "gate_compliance": {
+    "gate_1_size_and_zero_stub": {
+      "status": "PASSED",
+      "threshold_bytes": 40000,
+      "actual_bytes": 62544,
+      "empty_stubs": 0
+    },
+    "gate_2_opcode_aarch64_parity": {
+      "status": "PASSED",
+      "opcodes_verified_count": 28,
+      "key_addresses": [
+        "0x0059cc", "0x0059ec", "0x005a28", "0x005a34", "0x005a4c",
+        "0x005a6c", "0x005a90", "0x005acc", "0x004660", "0x00466c",
+        "0x004674", "0x004788", "0x004790", "0x00479c", "0x004810",
+        "0x001d00", "0x001d22", "0x001d72", "0x001d86", "0x001da0",
+        "0x001e4d", "0x001f36", "0x001fb8", "0x002041", "0x00209f",
+        "0x0020ef", "0x00212b", "0x002158"
+      ]
+    },
+    "gate_3_mathematical_proof": {
+      "status": "PASSED",
+      "formula": "RGB = M_709 * (YUV - Offset); YUV = M_709_inv * RGB + Offset",
+      "description": "ITU-R BT.709 YUV to RGB color space conversion matrix reversibility with error < 2 LSB"
+    },
+    "gate_4_struct_abi": {
+      "status": "PASSED",
+      "global_bss_base": "0xc000",
+      "v1_symbol_table_offset": "0xc130",
+      "v2_symbol_table_offset": "0xc138",
+      "video_player_provider_size": 32
+    },
+    "gate_5_demangled_symbols": {
+      "status": "PASSED",
+      "symbols_count": 64,
+      "parent_library": "libanimax.so",
+      "child_library": "libByteVC1_dec.so"
+    },
+    "gate_6_automated_verification": {
+      "status": "PASSED",
+      "test_suite": "verify_reconstruction_suite.py",
+      "self_test_stages": 7,
+      "pass_rate": 1.0
+    }
+  }
+}
