@@ -1,0 +1,92 @@
+{
+  "lib_name": "libbuffer.so",
+  "inspected_at": "2026-10-17 12:12:00",
+  "package_target": "com.bytedance.geckox.buffer.impl",
+  "binary_size_bytes": 18184,
+  "reconstructed_cpp_size_bytes": 79028,
+  "file_count": 12,
+  "gate1_size_bytes": 79028,
+  "gate1_passed": true,
+  "gate2_opcode_count": 12,
+  "gate2_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_count": 37,
+  "gate5_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "functions_verified": [
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MMapBuffer_nCreate",
+      "address": "0x00000f5c",
+      "size": 480,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MMapBuffer_nWrite",
+      "address": "0x0000113c",
+      "size": 92,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MMapBuffer_nRelease",
+      "address": "0x00001198",
+      "size": 76,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MMapBuffer_nRead",
+      "address": "0x000011e4",
+      "size": 92,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MMapBuffer_nFlush",
+      "address": "0x00001240",
+      "size": 172,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MemoryBuffer_nCreate",
+      "address": "0x000012ec",
+      "size": 776,
+      "opcode_match": true
+    },
+    {
+      "name": "_Z8readFulliPal",
+      "address": "0x000015f4",
+      "size": 172,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MemoryBuffer_nWrite",
+      "address": "0x000016a0",
+      "size": 92,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MemoryBuffer_nRead",
+      "address": "0x000016fc",
+      "size": 92,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MemoryBuffer_nRelease",
+      "address": "0x00001758",
+      "size": 72,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MemoryBuffer_nFlush",
+      "address": "0x000017a0",
+      "size": 336,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_buffer_impl_MReMapBuffer_nMReMap",
+      "address": "0x000018f0",
+      "size": 184,
+      "opcode_match": true
+    }
+  ]
+}

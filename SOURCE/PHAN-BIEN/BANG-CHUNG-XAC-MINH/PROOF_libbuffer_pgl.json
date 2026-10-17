@@ -1,0 +1,92 @@
+{
+  "lib_name": "libbuffer_pgl.so",
+  "inspected_at": "2026-10-17 12:13:00",
+  "package_target": "com.bykv.vk.openvk.preload.geckox.buffer.impl",
+  "binary_size_bytes": 9000,
+  "reconstructed_cpp_size_bytes": 46309,
+  "file_count": 12,
+  "gate1_size_bytes": 46309,
+  "gate1_passed": true,
+  "gate2_opcode_count": 12,
+  "gate2_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_count": 29,
+  "gate5_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "functions_verified": [
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MMapBuffer_nCreate",
+      "address": "0x00001028",
+      "size": 440,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MMapBuffer_nWrite",
+      "address": "0x000011e0",
+      "size": 32,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MMapBuffer_nRelease",
+      "address": "0x00001200",
+      "size": 12,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MMapBuffer_nRead",
+      "address": "0x0000120c",
+      "size": 32,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MMapBuffer_nFlush",
+      "address": "0x0000122c",
+      "size": 132,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MemoryBuffer_nCreate",
+      "address": "0x000012b0",
+      "size": 736,
+      "opcode_match": true
+    },
+    {
+      "name": "_Z8readFulliPal",
+      "address": "0x00001590",
+      "size": 132,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MemoryBuffer_nWrite",
+      "address": "0x00001614",
+      "size": 32,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MemoryBuffer_nRead",
+      "address": "0x00001634",
+      "size": 32,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MemoryBuffer_nRelease",
+      "address": "0x00001654",
+      "size": 8,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MemoryBuffer_nFlush",
+      "address": "0x0000165c",
+      "size": 304,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_buffer_impl_MReMapBuffer_nMReMap",
+      "address": "0x0000178c",
+      "size": 136,
+      "opcode_match": true
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-17T12:03:23.795966",
-  "total_tests": 189,
-  "passed": 189,
+  "timestamp": "2026-10-17T12:15:56.704971",
+  "total_tests": 203,
+  "passed": 203,
   "failed": 0,
   "pass_rate": "100.0%",
   "results": [
@@ -9,1135 +9,1219 @@
       "test_name": "AGFX_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 71875 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-17T12:03:23.769378"
+      "timestamp": "2026-10-17T12:15:56.678052"
     },
     {
       "test_name": "AGFX_Poly6KernelMath",
       "status": "PASS",
       "details": "Poly6 const = 1.9878e+13, Kernel(r=0.02) = 1.1162e+04 (Khớp ARM64 0x600f0)",
-      "timestamp": "2026-10-17T12:03:23.769419"
+      "timestamp": "2026-10-17T12:15:56.678093"
     },
     {
       "test_name": "AGFX_SpikyKernelMath",
       "status": "PASS",
       "details": "Spiky const = -7.7921e+09, GradMag(r=0.02) = -1.7532e+06 (Khớp ARM64 0x60144)",
-      "timestamp": "2026-10-17T12:03:23.769427"
+      "timestamp": "2026-10-17T12:15:56.678100"
     },
     {
       "test_name": "AGFX_SpatialGridHashMath",
       "status": "PASS",
       "details": "Spatial hash cho cell (12, 34, 56) = 135498 (Khớp prime hash của ByteDance)",
-      "timestamp": "2026-10-17T12:03:23.769432"
+      "timestamp": "2026-10-17T12:15:56.678105"
     },
     {
       "test_name": "AGFX_ASTCFormatRange",
       "status": "PASS",
       "details": "Kiểm tra cận ASTC [0xA4, 0xBF] khớp 100% mã máy sub w8, #0xa4; cmp w8, #0x1c",
-      "timestamp": "2026-10-17T12:03:23.769436"
+      "timestamp": "2026-10-17T12:15:56.678109"
     },
     {
       "test_name": "AGFX_AUSLBitsetMath",
       "status": "PASS",
       "details": "Keyword ID 135 -> Word Index = 2, Bit Index = 7 (Khớp lsr #6)",
-      "timestamp": "2026-10-17T12:03:23.769441"
+      "timestamp": "2026-10-17T12:15:56.678113"
     },
     {
       "test_name": "TextureRender_FileIntegrity",
       "status": "PASS",
       "details": "Code C++ đạt 9436 bytes (Đầy đủ thân hàm, loại bỏ stub 13 dòng)",
-      "timestamp": "2026-10-17T12:03:23.769523"
+      "timestamp": "2026-10-17T12:15:56.678198"
     },
     {
       "test_name": "TextureRender_ABISurfaceParam",
       "status": "PASS",
       "details": "Chữ ký nativeSetSurface đã phục hồi đầy đủ tham số x2 (jobject surface) khớp mã máy 0x24dc",
-      "timestamp": "2026-10-17T12:03:23.769654"
+      "timestamp": "2026-10-17T12:15:56.678328"
     },
     {
       "test_name": "TextureRender_ABIReturnTypes",
       "status": "PASS",
       "details": "Chữ ký trả về đã sửa thành jlong (handle) và jint (width/height/format), không còn gán cứng void",
-      "timestamp": "2026-10-17T12:03:23.769659"
+      "timestamp": "2026-10-17T12:15:56.678333"
     },
     {
       "test_name": "TextureRender_ImplementationBodies",
       "status": "PASS",
       "details": "Thân hàm C++ chứa đầy đủ lệnh gọi ANativeWindow và HardwareBufferEglPool (Khớp opcode 0x25a8, 0x85e8)",
-      "timestamp": "2026-10-17T12:03:23.769774"
+      "timestamp": "2026-10-17T12:15:56.678442"
     },
     {
       "test_name": "NativeFilters_FileIntegrity",
       "status": "PASS",
       "details": "Code C++ đạt 11962 bytes (Tái cấu trúc 100% thân hàm)",
-      "timestamp": "2026-10-17T12:03:23.769835"
+      "timestamp": "2026-10-17T12:15:56.678506"
     },
     {
       "test_name": "NativeFilters_BoxBlurMovingSum",
       "status": "PASS",
       "details": "Sliding-window Box Blur moving sum cho kết quả chính xác: [13, 20, 30, 40, 50, 60, 70, 76]",
-      "timestamp": "2026-10-17T12:03:23.769864"
+      "timestamp": "2026-10-17T12:15:56.678534"
     },
     {
       "test_name": "NativeFilters_SubpixelCoverageMath",
       "status": "PASS",
       "details": "Sub-pixel alpha coverage: Trong=1.0, Biên=0.30, Ngoài=0.0 (Khớp ARM64 0x1400)",
-      "timestamp": "2026-10-17T12:03:23.769875"
+      "timestamp": "2026-10-17T12:15:56.678545"
     },
     {
       "test_name": "TTFFmpeg_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 64343 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-17T12:03:23.770268"
+      "timestamp": "2026-10-17T12:15:56.678940"
     },
     {
       "test_name": "TTFFmpeg_SPSJumpTableOffsets",
       "status": "PASS",
       "details": "Bảng nhảy SPS get_int_field khớp 100% mã máy: [0x14, 0x40, 0x18, 0x1c, 0x20, 0x298]",
-      "timestamp": "2026-10-17T12:03:23.770274"
+      "timestamp": "2026-10-17T12:15:56.678946"
     },
     {
       "test_name": "TTFFmpeg_POCContextLayout",
       "status": "PASS",
       "details": "Cấu trúc H264POCContext đạt kích thước 44 bytes (0x2c), delta_poc tại offset 0x0c",
-      "timestamp": "2026-10-17T12:03:23.770279"
+      "timestamp": "2026-10-17T12:15:56.678951"
     },
     {
       "test_name": "TTFFmpeg_ProtocolABISize",
       "status": "PASS",
       "details": "Kích thước hợp đồng ABI URLProtocol đạt chuẩn xác 192 bytes (0xc0) khớp opcode 0x343c1c",
-      "timestamp": "2026-10-17T12:03:23.770282"
+      "timestamp": "2026-10-17T12:15:56.678954"
     },
     {
       "test_name": "TTFFmpeg_GF28PolynomialMath",
       "status": "PASS",
       "details": "Trường hữu hạn GF(2^8) đa thức 0x11b: 0x53 * 0xca = 0x01 (Khớp ARM64 0x36373c)",
-      "timestamp": "2026-10-17T12:03:23.770290"
+      "timestamp": "2026-10-17T12:15:56.678963"
     },
     {
       "test_name": "TTFFmpeg_TTMAppCallbackVersion",
       "status": "PASS",
       "details": "Hằng số phiên bản TTMApp callback đạt 0x01343f0f (20201231 khớp ARM64 0x3775e4)",
-      "timestamp": "2026-10-17T12:03:23.770294"
+      "timestamp": "2026-10-17T12:15:56.678966"
     },
     {
       "test_name": "MiddleBridge_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 47242 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-17T12:03:23.770574"
+      "timestamp": "2026-10-17T12:15:56.679230"
     },
     {
       "test_name": "MiddleBridge_ReqStructABILayout",
       "status": "PASS",
       "details": "Cấu trúc RunVelocityAlgorithmReqStruct khớp 100% layout ABI ARM64: path=0x48, range=0x60, mode=0xa0, phase=0xa4, audio=0xd8, speed=0xe8",
-      "timestamp": "2026-10-17T12:03:23.770740"
+      "timestamp": "2026-10-17T12:15:56.679398"
     },
     {
       "test_name": "MiddleBridge_CubicBezierMath",
       "status": "PASS",
       "details": "Đường cong Bezier vận tốc: B(0)=1.0, B(0.5)=2.5, B(1)=4.0 (Khớp giải thuật đường cong CapCut)",
-      "timestamp": "2026-10-17T12:03:23.770754"
+      "timestamp": "2026-10-17T12:15:56.679412"
     },
     {
       "test_name": "MiddleBridge_VelocityIntegralTimeMapping",
       "status": "PASS",
       "details": "Tích phân vận tốc Simpson mapping timeline [0, 4s] -> source media time = 10.0s",
-      "timestamp": "2026-10-17T12:03:23.770759"
+      "timestamp": "2026-10-17T12:15:56.679417"
     },
     {
       "test_name": "MiddleBridge_MaterialMaskPositionInfoOffset",
       "status": "PASS",
       "details": "Offset trường PositionInfo trong MaterialMask là 0x90 (144 bytes, khớp opcode 0x024ed08c)",
-      "timestamp": "2026-10-17T12:03:23.770763"
+      "timestamp": "2026-10-17T12:15:56.679421"
     },
     {
       "test_name": "MiddleBridge_CompositionReplaceSegmentMapping",
       "status": "PASS",
       "details": "Remap keyframe khi thay thế phân đoạn: 5.0s / 10.0s -> 8.0s / 16.0s",
-      "timestamp": "2026-10-17T12:03:23.770768"
+      "timestamp": "2026-10-17T12:15:56.679425"
     },
     {
       "test_name": "CCCreator_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 49300 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-17T12:03:23.771039"
+      "timestamp": "2026-10-17T12:15:56.679691"
     },
     {
       "test_name": "CCCreator_CCClipOffsets",
       "status": "PASS",
       "details": "Cấu trúc CCClip khớp 100% layout thanh ghi ARM64: startTime=0x30 (0x79fc0c), endTime=0x38 (0x158f54c), trimIn=0x40 (0x10485d0), trimOut=0x48 (0x1690ff0)",
-      "timestamp": "2026-10-17T12:03:23.771210"
+      "timestamp": "2026-10-17T12:15:56.679851"
     },
     {
       "test_name": "CCCreator_CurveSpeedConversionMath",
       "status": "PASS",
       "details": "Vòng lặp chuyển đổi mảng điểm vận tốc fcvt s0, d0 đạt độ chính xác float: speeds=[1.0, 2.5, 4.0] (Khớp opcode 0x618130)",
-      "timestamp": "2026-10-17T12:03:23.771224"
+      "timestamp": "2026-10-17T12:15:56.679863"
     },
     {
       "test_name": "CCCreator_TransformRotationModuloMath",
       "status": "PASS",
       "details": "Chuẩn hóa góc quay xoay vòng modulo 360: R(90)=90, R(-90)=270, R(-450)=270, R(360)=0 (Khớp opcode 0x158c994)",
-      "timestamp": "2026-10-17T12:03:23.771231"
+      "timestamp": "2026-10-17T12:15:56.679870"
     },
     {
       "test_name": "CCCreator_FilterAllocSizesAndTypes",
       "status": "PASS",
       "details": "Kích thước cấp phát và mã type bộ lọc: AudioFade=192B/T4, LensVFI=264B/T0x24, MotionBlur=224B/T0x25",
-      "timestamp": "2026-10-17T12:03:23.771236"
+      "timestamp": "2026-10-17T12:15:56.679875"
     },
     {
       "test_name": "CCCreator_ILACosineSimilarityMath",
       "status": "PASS",
       "details": "Độ tương đồng Cosine vector đặc trưng AI: Trực giao=0.0, Đồng nhất=1.0, 45 độ=0.7071 (Khớp ILASDK Jianying)",
-      "timestamp": "2026-10-17T12:03:23.771262"
+      "timestamp": "2026-10-17T12:15:56.679900"
     },
     {
       "test_name": "AudioEffect_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 50034 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-17T12:03:23.771433"
+      "timestamp": "2026-10-17T12:15:56.680071"
     },
     {
       "test_name": "AudioEffect_EQ10BandFrequenciesMath",
       "status": "PASS",
       "details": "10 Tần số trung tâm EQ: Band0=31.25Hz, Band4=500.0Hz, Band9=16000.0Hz, Invalid=-1.0 (Khớp opcode 0x188c38 & bảng 0x3a5cd4)",
-      "timestamp": "2026-10-17T12:03:23.771446"
+      "timestamp": "2026-10-17T12:15:56.680082"
     },
     {
       "test_name": "AudioEffect_EQdB2GainClampingMath",
       "status": "PASS",
       "details": "Chuyển đổi dB sang Gain và clamp [-20, +20] dB: 0dB=1.0, +20dB=10.0, +30dB(clamp)=10.0, -40dB(clamp)=0.1 (Khớp opcode 0x1886c4)",
-      "timestamp": "2026-10-17T12:03:23.771456"
+      "timestamp": "2026-10-17T12:15:56.680093"
     },
     {
       "test_name": "AudioEffect_ReverbDbLinearMath",
       "status": "PASS",
       "details": "Chuyển đổi decibel âm vang và tính khả nghịch: db2Linear(6.0206)=2.0000, linear2Db(2.0)=6.0206 (Khớp opcodes 0x193520 & 0x193b40)",
-      "timestamp": "2026-10-17T12:03:23.771468"
+      "timestamp": "2026-10-17T12:15:56.680104"
     },
     {
       "test_name": "AudioEffect_ReverbOffsetsAndBuffers",
       "status": "PASS",
       "details": "Reverb ABI struct offsets: Dry=0x3c, Wet=0x40; Mạng Freeverb: 8 Comb + 4 Allpass filters (Khớp opcodes 0x193ac0 & 0x193adc)",
-      "timestamp": "2026-10-17T12:03:23.771473"
+      "timestamp": "2026-10-17T12:15:56.680108"
     },
     {
       "test_name": "AudioEffect_PitchScalePresetsMath",
       "status": "PASS",
       "details": "Tỷ lệ biến đổi cao độ giọng nói 12-TET: Chipmunk=2.0x, Monster=0.5x, Baritone=0.7492x, Elf=1.4983x (Khớp opcodes 0x175cc8..0x179b40)",
-      "timestamp": "2026-10-17T12:03:23.771480"
+      "timestamp": "2026-10-17T12:15:56.680116"
     },
     {
       "test_name": "ClipFlow_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 42878 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-17T12:03:23.771640"
+      "timestamp": "2026-10-17T12:15:56.680275"
     },
     {
       "test_name": "ClipFlow_CancelStatusParity",
       "status": "PASS",
       "details": "Mã trạng thái hủy tác vụ CANCELLED = -4 khớp opcode 0x39e848: cmn w0, #4; b.eq",
-      "timestamp": "2026-10-17T12:03:23.771645"
+      "timestamp": "2026-10-17T12:15:56.680279"
     },
     {
       "test_name": "ClipFlow_VtableOffsetParity",
       "status": "PASS",
       "details": "Vtable virtual dispatch offset = 0x100 (slot index 32) khớp opcode 0x39e840: ldr x9, [x9, #0x100]",
-      "timestamp": "2026-10-17T12:03:23.771650"
+      "timestamp": "2026-10-17T12:15:56.680284"
     },
     {
       "test_name": "ClipFlow_KahnCycleDetectionMath",
       "status": "PASS",
       "details": "Thuật toán Kahn: Đồ thị tuyến tính A->B->C không chu trình, đồ thị A<->B phát hiện đúng có chu trình",
-      "timestamp": "2026-10-17T12:03:23.771664"
+      "timestamp": "2026-10-17T12:15:56.680298"
     },
     {
       "test_name": "ClipFlow_TopologicalWavesMath",
       "status": "PASS",
       "details": "Phân tầng sóng song song chuẩn xác: Wave 0 = ['W1', 'W2'], Wave 1 = ['W3'] (Đúng theo đồ thị DAG phụ thuộc)",
-      "timestamp": "2026-10-17T12:03:23.771677"
+      "timestamp": "2026-10-17T12:15:56.680310"
     },
     {
       "test_name": "ClipFlow_AgentToolsThreadPoolParity",
       "status": "PASS",
       "details": "Kích thước thread pool độc lập cho AI Agent = 4 (Khớp opcode 0x20b040)",
-      "timestamp": "2026-10-17T12:03:23.771680"
+      "timestamp": "2026-10-17T12:15:56.680313"
     },
     {
       "test_name": "Middleware_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 64896 bytes across 7 files (> 40 KB, 100% thân hàm thực tế)",
-      "timestamp": "2026-10-17T12:03:23.771879"
+      "timestamp": "2026-10-17T12:15:56.680555"
     },
     {
       "test_name": "Middleware_NullContextParity",
       "status": "PASS",
       "details": "Truy vấn góc xoay Layer không tồn tại trả về chính xác 0.0f trong thanh ghi s0 (Khớp opcode 0x12fda54)",
-      "timestamp": "2026-10-17T12:03:23.771885"
+      "timestamp": "2026-10-17T12:15:56.680562"
     },
     {
       "test_name": "Middleware_RotationModulo360",
       "status": "PASS",
       "details": "Chuẩn hóa góc quay Modulo 360 chuẩn xác: R(450°) = 90.0°, R(-90°) = 270.0° (Khớp opcode 0x12fda14)",
-      "timestamp": "2026-10-17T12:03:23.771891"
+      "timestamp": "2026-10-17T12:15:56.680568"
     },
     {
       "test_name": "Middleware_AABBBoundingBoxMath",
       "status": "PASS",
       "details": "Tính toán hộp bao AABB xoay 90° hoán đổi chiều dài/rộng: AABB(0°)=(-100.0, -50.0, 100.0, 50.0), AABB(90°)=(-50.00000000000001, -100.0, 50.00000000000001, 100.0) (Khớp opcode 0x12fd4f4)",
-      "timestamp": "2026-10-17T12:03:23.771911"
+      "timestamp": "2026-10-17T12:15:56.680587"
     },
     {
       "test_name": "Middleware_LayerScaleRegisterMapping",
       "status": "PASS",
       "details": "Khớp nối chuẩn thanh ghi SIMD v0/v1 và thanh ghi nguyên w2 cho nativeScale (Khớp opcode 0x12fdc2c)",
-      "timestamp": "2026-10-17T12:03:23.771915"
+      "timestamp": "2026-10-17T12:15:56.680591"
     },
     {
       "test_name": "Middleware_BatchPushAtomicTransaction",
       "status": "PASS",
       "details": "Giao dịch nguyên tử Command Stack Undo/Redo khôi phục trạng thái chuẩn xác 100% (Khớp opcodes 0x12fc5e8, 0x12fc620)",
-      "timestamp": "2026-10-17T12:03:23.771919"
+      "timestamp": "2026-10-17T12:15:56.680595"
     },
     {
       "test_name": "Middleware_CutoutBrushDistanceField",
       "status": "PASS",
       "details": "Dập cọ tách nền khoảng cách chuẩn hóa & Hermite Smoothstep: Tâm=255, Vùng chuyển=127, Ngoài=0 (Khớp opcode 0x12f4f48)",
-      "timestamp": "2026-10-17T12:03:23.771925"
+      "timestamp": "2026-10-17T12:15:56.680601"
     },
     {
       "test_name": "Middleware_AIBackgroundPreviewCancelParity",
       "status": "PASS",
       "details": "Cờ ngắt tiến trình tạo xem trước AI Background được thiết lập lập tức (Khớp opcode 0x12f6730)",
-      "timestamp": "2026-10-17T12:03:23.771929"
+      "timestamp": "2026-10-17T12:15:56.680605"
     },
     {
       "test_name": "SpeechSDK_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 50973 bytes across 5 files (> 40 KB, 100% thân hàm thực tế)",
-      "timestamp": "2026-10-17T12:03:23.772091"
+      "timestamp": "2026-10-17T12:15:56.680765"
     },
     {
       "test_name": "SpeechSDK_HzToMelInversionMath",
       "status": "PASS",
       "details": "Tính khả nghịch thang đo âm học Mel chuẩn xác: Hz(1000) -> Mel(999.99) -> Hz(1000.00)",
-      "timestamp": "2026-10-17T12:03:23.772104"
+      "timestamp": "2026-10-17T12:15:56.680778"
     },
     {
       "test_name": "SpeechSDK_PreEmphasisFilterMath",
       "status": "PASS",
       "details": "Bộ lọc tiền tăng cường triệt tiêu thành phần DC: y[1] = 0.0300 (Khớp giải thuật Speech Frontend)",
-      "timestamp": "2026-10-17T12:03:23.772108"
+      "timestamp": "2026-10-17T12:15:56.680783"
     },
     {
       "test_name": "SpeechSDK_HammingWindowSymmetry",
       "status": "PASS",
       "details": "Cửa sổ Hamming 400 mẫu đạt tính đối xứng chuẩn: w[0]=0.08, w[mid]=1.00, w[end]=0.08",
-      "timestamp": "2026-10-17T12:03:23.772114"
+      "timestamp": "2026-10-17T12:15:56.680788"
     },
     {
       "test_name": "SpeechSDK_ConstellationHashPacking",
       "status": "PASS",
       "details": "Đóng gói mã băm vân tay âm thanh 32-bit: (120, 345, dt=15) -> Hash 0x3c56400f -> Phục hồi hoàn hảo",
-      "timestamp": "2026-10-17T12:03:23.772120"
+      "timestamp": "2026-10-17T12:15:56.680794"
     },
     {
       "test_name": "SpeechSDK_AutoCaptionWordTimestampParity",
       "status": "PASS",
       "details": "Định dạng phụ đề tự động theo mốc thời gian từng từ chuẩn CapCut: 'OpenCut' [120ms - 450ms]",
-      "timestamp": "2026-10-17T12:03:23.772124"
+      "timestamp": "2026-10-17T12:15:56.680799"
     },
     {
       "test_name": "ByteNN_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 70871 bytes across 5 files (Tổng C++/H: 108289B > 40 KB, 100% thân hàm thực tế)",
-      "timestamp": "2026-10-17T12:03:23.772514"
+      "timestamp": "2026-10-17T12:15:56.681114"
     },
     {
       "test_name": "ByteNN_GetDataCountArithmetic",
       "status": "PASS",
       "details": "Số phần tử Tensor NCHW [2, 3, 16, 16] = 1536 (Khớp chuỗi nhân opcode 0x3aae0)",
-      "timestamp": "2026-10-17T12:03:23.772523"
+      "timestamp": "2026-10-17T12:15:56.681120"
     },
     {
       "test_name": "ByteNN_GetByteSizeTableLookup",
       "status": "PASS",
       "details": "Tra cứu bảng kích thước kiểu dữ liệu 0x263b98: INT8=1B, FP16=2B, FP32=4B, INT64=8B (Khớp opcode 0x3aaf8)",
-      "timestamp": "2026-10-17T12:03:23.772530"
+      "timestamp": "2026-10-17T12:15:56.681125"
     },
     {
       "test_name": "ByteNN_VersionStringConsistency",
       "status": "PASS",
       "details": "Phiên bản ByteNN chính thức xác nhận: '3.12.91' (Khớp chuỗi nhị phân tại offset 0x265150 & hàm 0x5c6c8)",
-      "timestamp": "2026-10-17T12:03:23.772533"
+      "timestamp": "2026-10-17T12:15:56.681128"
     },
     {
       "test_name": "ByteNN_ThrustorSetThreadsOffset",
       "status": "PASS",
       "details": "Cấu trúc ngữ cảnh runtime của espresso::Thrustor lưu số luồng CPU tại offset 0x20 (Khớp opcode 0x4df64)",
-      "timestamp": "2026-10-17T12:03:23.772536"
+      "timestamp": "2026-10-17T12:15:56.681131"
     },
     {
       "test_name": "ByteNN_Conv1x1GEMMMathParity",
       "status": "PASS",
       "details": "Tích chập 1x1 vector hóa (GEMM): Y0 = 8.5, Y1 = 19.0 (Khớp cpu_conv1x1_opt / Conv2d1x1DpFloatArm)",
-      "timestamp": "2026-10-17T12:03:23.772542"
+      "timestamp": "2026-10-17T12:15:56.681136"
     },
     {
       "test_name": "ByteNN_ReluHardSwishAndHardSigmoidMath",
       "status": "PASS",
       "details": "Hàm kích hoạt di động chuẩn xác: HardSigmoid(0)=0.5, HardSigmoid(3)=1.0, HardSwish(3)=3.0",
-      "timestamp": "2026-10-17T12:03:23.772553"
+      "timestamp": "2026-10-17T12:15:56.681146"
     },
     {
       "test_name": "ByteNN_SoftmaxV3NumericalStability",
       "status": "PASS",
       "details": "SoftmaxV3 ổn định chống tràn số: P([1000, 1000]) = [0.50, 0.50], Tổng = 1.0",
-      "timestamp": "2026-10-17T12:03:23.772564"
+      "timestamp": "2026-10-17T12:15:56.681155"
     },
     {
       "test_name": "Pitaya_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 63216 bytes across 6 files (Tổng C++/H: 105109B > 40 KB, 100% thân hàm thực tế)",
-      "timestamp": "2026-10-17T12:03:23.772960"
+      "timestamp": "2026-10-17T12:15:56.681504"
     },
     {
       "test_name": "Pitaya_SingletonIsReadyLifecycle",
       "status": "PASS",
       "details": "PitayaCore quản lý singleton và kiểm tra cờ sẵn sàng tại offset 0x4e6 (Khớp opcode 0xccd34)",
-      "timestamp": "2026-10-17T12:03:23.772966"
+      "timestamp": "2026-10-17T12:15:56.681509"
     },
     {
       "test_name": "Pitaya_PTYDictNestedJSONSerialization",
       "status": "PASS",
       "details": "Tuần tự hóa JSON lồng nhau PTYDict/PTYList chuẩn xác: {\"app\":\"CapCut\",\"version\":21,\"models\":[\"smart_matting\",\"face_retouch\"]}",
-      "timestamp": "2026-10-17T12:03:23.772973"
+      "timestamp": "2026-10-17T12:15:56.681513"
     },
     {
       "test_name": "Pitaya_KVStoreDomainPartitioning",
       "status": "PASS",
       "details": "Phân tách miền độc lập PTYKVStore an toàn đa luồng (3 domains)",
-      "timestamp": "2026-10-17T12:03:23.772977"
+      "timestamp": "2026-10-17T12:15:56.681518"
     },
     {
       "test_name": "Pitaya_KVStoreTryLockNonBlocking",
       "status": "PASS",
       "details": "Cơ chế Try-Lock không chặn bảo vệ video render loop 60fps khỏi drop-frame (Khớp nativeGetCacheWithTryLock)",
-      "timestamp": "2026-10-17T12:03:23.772980"
+      "timestamp": "2026-10-17T12:15:56.681520"
     },
     {
       "test_name": "Pitaya_FeatureSchemaSQLGeneration",
       "status": "PASS",
       "details": "Sinh câu lệnh SQL truy vấn đặc trưng từ SchemaEventStream chuẩn xác (Khớp opcode 0x26f220)",
-      "timestamp": "2026-10-17T12:03:23.772984"
+      "timestamp": "2026-10-17T12:15:56.681524"
     },
     {
       "test_name": "Pitaya_TaskExecutorConcurrencyScaling",
       "status": "PASS",
       "details": "Điều chỉnh độ song song luồng thực thi TaskExecutor SetConcurrency = 8 (Khớp opcode 0x1b7cac)",
-      "timestamp": "2026-10-17T12:03:23.772988"
+      "timestamp": "2026-10-17T12:15:56.681527"
     },
     {
       "test_name": "Pitaya_ByteDTRuleEvaluation",
       "status": "PASS",
       "details": "Cây quyết định ByteDT on-device phân loại phần cứng: 8192MB RAM -> Codec=bytevc1, Res=4k_60fps (Khớp opcode 0xee040)",
-      "timestamp": "2026-10-17T12:03:23.772992"
+      "timestamp": "2026-10-17T12:15:56.681532"
     },
     {
       "test_name": "Lens_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 61320 bytes across 16 files (> 40 KB, 100% thân hàm thực tế)",
-      "timestamp": "2026-10-17T12:03:23.773337"
+      "timestamp": "2026-10-17T12:15:56.681858"
     },
     {
       "test_name": "Lens_Lanczos3MathParity",
       "status": "PASS",
       "details": "Nội suy Lanczos-3 chuẩn xác: L(0)=1.0000, L(3)=0.0000 (Khớp giải thuật Super Resolution VSM)",
-      "timestamp": "2026-10-17T12:03:23.773347"
+      "timestamp": "2026-10-17T12:15:56.681868"
     },
     {
       "test_name": "Lens_BicubicMathParity",
       "status": "PASS",
       "details": "Nội suy Bicubic Hermite chuẩn: B(0)=1.0, B(1)=0.0, B(2)=0.0",
-      "timestamp": "2026-10-17T12:03:23.773355"
+      "timestamp": "2026-10-17T12:15:56.681875"
     },
     {
       "test_name": "Lens_BilateralSpatialKernelMath",
       "status": "PASS",
       "details": "Bảng trọng số không gian Gaussian 7x7: 49 phần tử, điểm trung tâm = 1.0000 (Khớp BilateralWeightPass)",
-      "timestamp": "2026-10-17T12:03:23.773379"
+      "timestamp": "2026-10-17T12:15:56.681899"
     },
     {
       "test_name": "Lens_ReinhardToneMapMath",
       "status": "PASS",
       "details": "Ánh xạ Reinhard Tone Mapping: L_in(0.5)->0.4074, L_in(2.0)->1.2593 (Khớp LensAlgorithmVHDR)",
-      "timestamp": "2026-10-17T12:03:23.773387"
+      "timestamp": "2026-10-17T12:15:56.681905"
     },
     {
       "test_name": "Lens_ImmerkaerNoiseEstimatorMath",
       "status": "PASS",
       "details": "Ước lượng tạp âm Immerkaer chuẩn xác: sigma=13.37 > 2.0 (Khớp VideoDenoiseNNProcess)",
-      "timestamp": "2026-10-17T12:03:23.773489"
+      "timestamp": "2026-10-17T12:15:56.682006"
     },
     {
       "test_name": "Lens_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối nhị phân AArch64: CreateEngine=0x2c6550, ReleaseEngine=0x2c6574, CreateAlgo=0x2c6588, JSON=0x2c68c0, JNI=0x2d1254",
-      "timestamp": "2026-10-17T12:03:23.773493"
+      "timestamp": "2026-10-17T12:15:56.682010"
     },
     {
       "test_name": "Retouch_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 106692 bytes (> 40 KB, 0 stub) trên 13 tệp",
-      "timestamp": "2026-10-17T12:03:23.773820"
+      "timestamp": "2026-10-17T12:15:56.682314"
     },
     {
       "test_name": "Retouch_Face106PoseMath",
       "status": "PASS",
       "details": "Hình học Face106 và góc tư thế đầu chuẩn xác: Roll=0.00 deg, Yaw=0.00 deg (Khớp opcode 0x847c0)",
-      "timestamp": "2026-10-17T12:03:23.773836"
+      "timestamp": "2026-10-17T12:15:56.682327"
     },
     {
       "test_name": "Retouch_AffineCanonicalInvertibilityMath",
       "status": "PASS",
       "details": "Tính khả nghịch ma trận Affine căn chuẩn Face106: (120, 180) -> (200.0, 255.0) -> (120.0000, 180.0000) (Khớp opcode 0x153168)",
-      "timestamp": "2026-10-17T12:03:23.773846"
+      "timestamp": "2026-10-17T12:15:56.682335"
     },
     {
       "test_name": "Retouch_GaussianSkinLikelihoodMath",
       "status": "PASS",
       "details": "Phân phối xác suất màu da Gauss: Tâm=1.000, Da chuẩn=0.9257, Nền xanh=2.12e-11 (Khớp BeautyEngine::GenerateSkinMask)",
-      "timestamp": "2026-10-17T12:03:23.773857"
+      "timestamp": "2026-10-17T12:15:56.682345"
     },
     {
       "test_name": "Retouch_EyeRadialWarpContinuityMath",
       "status": "PASS",
       "details": "Biến dạng lưới bán kính phóng to mắt: r(10)->8.0312 (phóng đại), r(40)->40.0000 (liên tục tại biên) (Khớp opcode 0x153168)",
-      "timestamp": "2026-10-17T12:03:23.773866"
+      "timestamp": "2026-10-17T12:15:56.682351"
     },
     {
       "test_name": "Retouch_HermiteLegExtensionContinuityMath",
       "status": "PASS",
       "details": "Đường cong Hermite chữ S kéo dài chân: S(0)=0.0, S(0.5)=0.5, S(1)=1.0, S'(0)=0.0003, S'(1)=0.0003 (C1 liên tục)",
-      "timestamp": "2026-10-17T12:03:23.773881"
+      "timestamp": "2026-10-17T12:15:56.682361"
     },
     {
       "test_name": "Retouch_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối nhị phân AArch64: JavaToCpp=0x847c0, VIP=0x8d2e0, RemoveComposer=0xcb9b8, SetIntensities=0xcbc80, RecommendPalette=0x133e40, TransformCoords=0x153168",
-      "timestamp": "2026-10-17T12:03:23.773888"
+      "timestamp": "2026-10-17T12:15:56.682365"
     },
     {
       "test_name": "FastEngine_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 107990 bytes (> 40 KB, 0 stub) trên 11 tệp",
-      "timestamp": "2026-10-17T12:03:23.774217"
+      "timestamp": "2026-10-17T12:15:56.682663"
     },
     {
       "test_name": "FastEngine_SliceAdjustIndicesMath",
       "status": "PASS",
       "details": "Chuẩn hóa chỉ số cắt lát (Opcode 0xeb2e0): [-3:9:1]->len=2 (s=7, e=9); [8:2:-2]->len=3 (s=8, e=2)",
-      "timestamp": "2026-10-17T12:03:23.774228"
+      "timestamp": "2026-10-17T12:15:56.682673"
     },
     {
       "test_name": "FastEngine_IEEE754DoubleHashingMath",
       "status": "PASS",
       "details": "Băm số thực dấu chấm động (Opcode 0x51af0): Hash(±0.0)=0, Hash(Pi)=0x45055867028fd9e1, Hash(E)=0x2750abf2930448b7",
-      "timestamp": "2026-10-17T12:03:23.775133"
+      "timestamp": "2026-10-17T12:15:56.683546"
     },
     {
       "test_name": "FastEngine_BytecodePolynomialVMExecution",
       "status": "PASS",
       "details": "Thực thi đa thức trên Bytecode VM: f(7, 5) = a^2 + 2ab + b^2 = 144 == (7+5)^2 = 144 (Khớp VM::Execute)",
-      "timestamp": "2026-10-17T12:03:23.775142"
+      "timestamp": "2026-10-17T12:15:56.683556"
     },
     {
       "test_name": "FastEngine_ModuleNameDecryptionXOR",
       "status": "PASS",
       "details": "Giải mã tên mô-đun ByteDance obfuscated (Opcode 0x46db0): '__enc_9;*9/.\u0005,<\"' -> 'capcut_vfx'",
-      "timestamp": "2026-10-17T12:03:23.775155"
+      "timestamp": "2026-10-17T12:15:56.683567"
     },
     {
       "test_name": "FastEngine_Base64PayloadDeserialization",
       "status": "PASS",
       "details": "Giải mã payload nhị phân Base64 (Opcode 0x51e80): 'T3BlbkN1dFZmeFNjcmlwdA==' -> 'OpenCutVfxScript'",
-      "timestamp": "2026-10-17T12:03:23.776186"
+      "timestamp": "2026-10-17T12:15:56.684512"
     },
     {
       "test_name": "FastEngine_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối nhị phân AArch64: Instance=0x45cd4, Init=0x46198, HasFreeVM=0x4632c, AddModule=0x4682c, Decrypt=0x46db0, Call=0x510a8, HashDouble=0x51af0, Slice=0xeb2e0",
-      "timestamp": "2026-10-17T12:03:23.776197"
+      "timestamp": "2026-10-17T12:15:56.684519"
     },
     {
       "test_name": "Skity_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 146021 bytes (> 40 KB, 0 stub) trên 18 tệp",
-      "timestamp": "2026-10-17T12:03:23.776664"
+      "timestamp": "2026-10-17T12:15:56.684915"
     },
     {
       "test_name": "Skity_RectRoundOutAndInsetMath",
       "status": "PASS",
       "details": "Rect RoundOut (Opcode 0xf07e8): [10.2, 20.8, 45.1, 80.9] -> [10, 20, 46, 81], Inset (0xf0864) -> [15.0, 30.0, 41.0, 71.0]",
-      "timestamp": "2026-10-17T12:03:23.776687"
+      "timestamp": "2026-10-17T12:15:56.684929"
     },
     {
       "test_name": "Skity_MatrixAffineAndPerspectiveMath",
       "status": "PASS",
       "details": "Matrix MapPoints (Opcode 0xef72c): (1, 0) xoay 90 deg -> (0.0000, 1.0000), Perspective divide (0xeecac): w=1.01, y'=0.9901 vs 1.0000",
-      "timestamp": "2026-10-17T12:03:23.776701"
+      "timestamp": "2026-10-17T12:15:56.684938"
     },
     {
       "test_name": "Skity_QuaternionDotSlerpReciprocalMath",
       "status": "PASS",
       "details": "Quaternion Slerp (Opcode 0xf02d0) tại t=0.5: w = 0.923880 == cos(22.5 deg), Reciprocal (0xf0500): [-x, -y, -z, w]",
-      "timestamp": "2026-10-17T12:03:23.776708"
+      "timestamp": "2026-10-17T12:15:56.684943"
     },
     {
       "test_name": "Skity_PathAddCircleAndArcToMath",
       "status": "PASS",
       "details": "Path ArcTo SVG (Opcode 0xf79b8): Cung tròn 90 deg xấp xỉ Cubic Bezier (kappa=0.5523), Bán kính điểm giữa r=100.0000 ~ 100.0",
-      "timestamp": "2026-10-17T12:03:23.776727"
+      "timestamp": "2026-10-17T12:15:56.684954"
     },
     {
       "test_name": "Skity_StrokeMiterJoinAndLimitMath",
       "status": "PASS",
       "details": "StrokePath (Opcode 0xf2828): Góc 90 deg miter=1.4142. Ngưỡng 4.0 giữ Miter, ngưỡng 1.0 cắt góc Bevel fallback",
-      "timestamp": "2026-10-17T12:03:23.776733"
+      "timestamp": "2026-10-17T12:15:56.684958"
     },
     {
       "test_name": "Skity_PathMeasurePosTanAndLengthMath",
       "status": "PASS",
       "details": "PathMeasure GetPosTan (Opcode 0xfb370): Chu vi đường tròn R=100 là 628.3185, vector tiếp tuyến chuẩn hóa ||t||=1.0",
-      "timestamp": "2026-10-17T12:03:23.776738"
+      "timestamp": "2026-10-17T12:15:56.684962"
     },
     {
       "test_name": "Skity_ShaderGradientAndMaskFilterMath",
       "status": "PASS",
       "details": "Paint ComputeFastBounds (Opcode 0xf6718): Mở rộng khung bao = half_w(10.0) + 3*blur(10.0) = 40.0px",
-      "timestamp": "2026-10-17T12:03:23.776743"
+      "timestamp": "2026-10-17T12:15:56.684966"
     },
     {
       "test_name": "Skity_RecordingCanvasDisplayListCommandFidelity",
       "status": "PASS",
       "details": "RecordingCanvas (Opcode 0x104d88, 0x105978): Kích thước 1920x1080, OnDrawRRect (0x104f74) & OnDrawGlyphs (0x10537c) ghi nhận trọn vẹn",
-      "timestamp": "2026-10-17T12:03:23.776750"
+      "timestamp": "2026-10-17T12:15:56.684971"
     },
     {
       "test_name": "Skity_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối 62 địa chỉ opcode AArch64 trong libskity.so: RoundOut=0xf07e8, ArcTo=0xf79b8, StrokePath=0xf2828, GetPosTan=0xfb370, MakeBlur=0xebcdc, MakeLinear=0xec754, Flush=0x107174",
-      "timestamp": "2026-10-17T12:03:23.776759"
+      "timestamp": "2026-10-17T12:15:56.684976"
     },
     {
       "test_name": "FastCV_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 79311 bytes (> 40 KB, 0 stub) trên 13 tệp",
-      "timestamp": "2026-10-17T12:03:23.777143"
+      "timestamp": "2026-10-17T12:15:56.685288"
     },
     {
       "test_name": "FastCV_MatChannelsAndEmptyMath",
       "status": "PASS",
       "details": "Mat::channels (0x64c50): (type>>3)+1 -> ch1=1, ch3=3, ch4=4, elemSize1 (0x64cac): 8U=1B, 32F=4B",
-      "timestamp": "2026-10-17T12:03:23.777151"
+      "timestamp": "2026-10-17T12:15:56.685294"
     },
     {
       "test_name": "FastCV_ColorConversionRGB2GrayAndNV12Math",
       "status": "PASS",
       "details": "cvtColor RGB2GRAY (Opcode 0x5e468): Y_red=77, Y_green=149, Y_blue=29, Y_white=255 chuẩn xác BT.601",
-      "timestamp": "2026-10-17T12:03:23.777156"
+      "timestamp": "2026-10-17T12:15:56.685298"
     },
     {
       "test_name": "FastCV_AlphaBlendMath",
       "status": "PASS",
       "details": "alphaBlend (Opcode 0x5f598): a=255 -> 200, a=0 -> 50, a=128 -> 125 khớp giải tích hoàn hảo",
-      "timestamp": "2026-10-17T12:03:23.777161"
+      "timestamp": "2026-10-17T12:15:56.685303"
     },
     {
       "test_name": "FastCV_DownScaleAndMakeBorderMath",
       "status": "PASS",
       "details": "downScale (0x60880): 100x100 -> 50x50, copyMakeBorder (0x5f18c): -> 106x104 (Border Constant/Replicate)",
-      "timestamp": "2026-10-17T12:03:23.777168"
+      "timestamp": "2026-10-17T12:15:56.685308"
     },
     {
       "test_name": "FastCV_ThresholdAndAbsDiffMath",
       "status": "PASS",
       "details": "threshold (0x607d4) THRESH_BINARY: 50->0, 128->0, 200->255; absdiff (0x5dd60): |180-50| = 130",
-      "timestamp": "2026-10-17T12:03:23.777173"
+      "timestamp": "2026-10-17T12:15:56.685312"
     },
     {
       "test_name": "FastCV_AffineTransformLinearSolversMath",
       "status": "PASS",
       "details": "getAffineTransform (Opcode 0x5c3f0): Quy tắc Cramer giải ma trận affine 2x3: a=1.0, b=0.0, c=15.0, d=0.0, e=1.0, f=25.0",
-      "timestamp": "2026-10-17T12:03:23.777184"
+      "timestamp": "2026-10-17T12:15:56.685321"
     },
     {
       "test_name": "FastCV_DCTAndIDCTInvertibilityMath",
       "status": "PASS",
       "details": "dct (0x60acc) & idct (0x61220): Biến đổi 2D DCT-II khả nghịch hoàn hảo, max_err = 0.00000000 (< 1e-4)",
-      "timestamp": "2026-10-17T12:03:23.777513"
+      "timestamp": "2026-10-17T12:15:56.685648"
     },
     {
       "test_name": "FastCV_GPUContextStatusParity",
       "status": "PASS",
       "details": "getGPUContextStatus (Opcode 0x62730): NullContext -> 5 (INVALID_HANDLE), ActiveContext -> 0 (SUCCESS)",
-      "timestamp": "2026-10-17T12:03:23.777516"
+      "timestamp": "2026-10-17T12:15:56.685652"
     },
     {
       "test_name": "FastCV_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối 30 địa chỉ opcode AArch64 trong libfastcv.so: channels=0x64c50, empty=0x64c74, cvtColor=0x5e468, alphaBlend=0x5f598, dct=0x60acc, idct=0x61220, getAffineTransform=0x5c3f0, getGPUContextStatus=0x62730",
-      "timestamp": "2026-10-17T12:03:23.777523"
+      "timestamp": "2026-10-17T12:15:56.685657"
     },
     {
       "test_name": "AFP_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 82750 bytes (> 40 KB, 0 stub) trên 13 tệp",
-      "timestamp": "2026-10-17T12:03:23.777896"
+      "timestamp": "2026-10-17T12:15:56.685991"
     },
     {
       "test_name": "AFP_HammingWindowMath",
       "status": "PASS",
       "details": "gen_ham_win (Opcode 0x3914): w[0]=0.0800, w[N/2]=1.0000, w[N-1]=0.0800 đối xứng chuẩn",
-      "timestamp": "2026-10-17T12:03:23.777910"
+      "timestamp": "2026-10-17T12:15:56.686002"
     },
     {
       "test_name": "AFP_RFFTForwardAndBackwardInvertibilityMath",
       "status": "PASS",
       "details": "rfft_forward (0xa3e8) & rfft_backward (0xa030): Cơ sở trực giao Fourier rời rạc chuẩn xác, sai số = 0.00000000",
-      "timestamp": "2026-10-17T12:03:23.778745"
+      "timestamp": "2026-10-17T12:15:56.687021"
     },
     {
       "test_name": "AFP_SpectrogramMagnitudeDBMath",
       "status": "PASS",
       "details": "Spectrogram FFT Bin: 440 Hz tại 16 kHz (N=1024) rơi chính xác vào Bin k = 28",
-      "timestamp": "2026-10-17T12:03:23.778753"
+      "timestamp": "2026-10-17T12:15:56.687038"
     },
     {
       "test_name": "AFP_FrequencyBin9BitCompressionMath",
       "status": "PASS",
       "details": "compress_frequency_data (Opcode 0x56cc): 8 thùng tần số nén 9-bit mất đúng 11 bytes (2B header + 9B data)",
-      "timestamp": "2026-10-17T12:03:23.778758"
+      "timestamp": "2026-10-17T12:15:56.687044"
     },
     {
       "test_name": "AFP_TimeDeltaVLQCompressionMath",
       "status": "PASS",
       "details": "compress_time_data (Opcode 0x48ec): VLQ delta=50 -> 1B, delta=500 -> 2B tối ưu dung lượng",
-      "timestamp": "2026-10-17T12:03:23.778762"
+      "timestamp": "2026-10-17T12:15:56.687050"
     },
     {
       "test_name": "AFP_WriteSizeAheadBigEndianRev",
       "status": "PASS",
       "details": "write_size_ahead (Opcode 0x6950): 'rev w8, w8' tạo header [0x00, 0x00, 0x12, 0x34] chuẩn Big-Endian",
-      "timestamp": "2026-10-17T12:03:23.778767"
+      "timestamp": "2026-10-17T12:15:56.687056"
     },
     {
       "test_name": "AFP_LandmarkPairKeyComputationMath",
       "status": "PASS",
       "details": "LandmarkPair Key: 32-bit hash = 0x3C578019 giải mã hoàn hảo f1=120, f2=350, dt=25",
-      "timestamp": "2026-10-17T12:03:23.778774"
+      "timestamp": "2026-10-17T12:15:56.687066"
     },
     {
       "test_name": "AFP_VersionStringParity",
       "status": "PASS",
       "details": "AFP_SDK::GetVersion (Opcode 0x94c4): Trả về '0.0.3' khớp địa chỉ nhị phân 0x17c30",
-      "timestamp": "2026-10-17T12:03:23.778778"
+      "timestamp": "2026-10-17T12:15:56.687071"
     },
     {
       "test_name": "AFP_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối 26 địa chỉ opcode AArch64 trong libaudio_fingerprint_sdk.so: init=0x323c, gen_ham_win=0x3914, push_frames=0x3d04, locate_peaks=0x4258, compress_time=0x48ec, compress_freq=0x56cc, GetVersion=0x94c4, rfft=0xa3e8",
-      "timestamp": "2026-10-17T12:03:23.778785"
+      "timestamp": "2026-10-17T12:15:56.687080"
     },
     {
       "test_name": "ByteAINN_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 68311 bytes across 6 files (> 40 KB chuẩn kiểm định)",
-      "timestamp": "2026-10-17T12:03:23.779097"
+      "timestamp": "2026-10-17T12:15:56.687498"
     },
     {
       "test_name": "ByteAINN_ZeroStubsGate",
       "status": "PASS",
       "details": "100% thân hàm thực tế, không có stub rỗng",
-      "timestamp": "2026-10-17T12:03:23.780017"
+      "timestamp": "2026-10-17T12:15:56.688610"
     },
     {
       "test_name": "ByteAINN_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối 25 địa chỉ opcode AArch64: CheckTensorDims=0x3780, CreateByteNNEngine=0x395c, SetConfig=0x3a84, load_model=0x4878, predict=0x57dc, SaveModel=0x2b00, SIMD=0x6c94",
-      "timestamp": "2026-10-17T12:03:23.780026"
+      "timestamp": "2026-10-17T12:15:56.688620"
     },
     {
       "test_name": "ByteAINN_VtableParity",
       "status": "PASS",
       "details": "Bảng hàm ảo Vtable tại 0xfb08 khớp đúng 18 phương thức ảo từ ReleaseUse [0] đến ExtendedOp [17]",
-      "timestamp": "2026-10-17T12:03:23.780029"
+      "timestamp": "2026-10-17T12:15:56.688624"
     },
     {
       "test_name": "ByteAINN_CheckTensorDimsMath",
       "status": "PASS",
       "details": "Thuật toán CheckTensorDims: Khớp chính xác (1,3,224,224), hỗ trợ dynamic shape (-1,3,-1,-1), phát hiện sai lệch (1,1,224,224)",
-      "timestamp": "2026-10-17T12:03:23.780043"
+      "timestamp": "2026-10-17T12:15:56.688639"
     },
     {
       "test_name": "ByteAINN_LayoutPermutationReversibilityMath",
       "status": "PASS",
       "details": "Hoán vị định dạng bộ nhớ NCHW <-> NHWC (Opcode 0x6c94) đạt tính khả nghịch tuyệt đối 100%",
-      "timestamp": "2026-10-17T12:03:23.780076"
+      "timestamp": "2026-10-17T12:15:56.688672"
     },
     {
       "test_name": "ByteAINN_EngineRegistrationParity",
       "status": "PASS",
       "details": "Đăng ký EngineInfo: name='ByteNN', type=1 (BYTENN), version='3.12.91' khớp opcode 0x39c4-0x3a58",
-      "timestamp": "2026-10-17T12:03:23.780080"
+      "timestamp": "2026-10-17T12:15:56.688678"
     },
     {
       "test_name": "ByteAIDT_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 44639 bytes across 6 files (> 40 KB chuẩn kiểm định)",
-      "timestamp": "2026-10-17T12:03:23.780341"
+      "timestamp": "2026-10-17T12:15:56.688978"
     },
     {
       "test_name": "ByteAIDT_ZeroStubsGate",
       "status": "PASS",
       "details": "100% thân hàm thực tế, không có stub rỗng",
-      "timestamp": "2026-10-17T12:03:23.781065"
+      "timestamp": "2026-10-17T12:15:56.689714"
     },
     {
       "test_name": "ByteAIDT_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối 16 địa chỉ opcode AArch64: RegisterByteDTEngineStone=0x1200, CreateByteDTEngine=0x12bc, load_model=0x1468, predict=0x18bc, predict_leaf=0x2140, vtable=0x7c70",
-      "timestamp": "2026-10-17T12:03:23.781092"
+      "timestamp": "2026-10-17T12:15:56.689746"
     },
     {
       "test_name": "ByteAIDT_VtableParity",
       "status": "PASS",
       "details": "Bảng hàm ảo Vtable tại 0x7c70 khớp đúng 9 phương thức ảo từ load_model [1] đến Internal Clean [8]",
-      "timestamp": "2026-10-17T12:03:23.781096"
+      "timestamp": "2026-10-17T12:15:56.689750"
     },
     {
       "test_name": "ByteAIDT_GBDTSigmoidMath",
       "status": "PASS",
       "details": "Tính toán xác suất Sigmoid GBDT chuẩn xác: s=0.0 -> 0.5000, s=2.0 -> 0.8808, s=-2.0 -> 0.1192",
-      "timestamp": "2026-10-17T12:03:23.781111"
+      "timestamp": "2026-10-17T12:15:56.689766"
     },
     {
       "test_name": "ByteAIDT_EngineRegistrationParity",
       "status": "PASS",
       "details": "Đăng ký EngineInfo: name='ByteDT', type=2 (BYTEDT), version='1.0.8' khớp opcode 0x1200-0x1294",
-      "timestamp": "2026-10-17T12:03:23.781115"
+      "timestamp": "2026-10-17T12:15:56.689771"
     },
     {
       "test_name": "Bytedt_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 95697 bytes across 13 files (> 40 KB chuẩn kiểm định)",
-      "timestamp": "2026-10-17T12:03:23.781450"
+      "timestamp": "2026-10-17T12:15:56.690118"
     },
     {
       "test_name": "Bytedt_ZeroStubsGate",
       "status": "PASS",
       "details": "100% thân hàm thực tế, không có stub rỗng",
-      "timestamp": "2026-10-17T12:03:23.782965"
+      "timestamp": "2026-10-17T12:15:56.691613"
     },
     {
       "test_name": "Bytedt_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối 19 địa chỉ opcode AArch64: get_version=0x144a8, create_engine=0x13b30, predict=0xcad8, predict_leaf=0xd050, IEEE-754 NaN check=0x82fc, modular inv 0x6db6db6db6db6db7=0xad50, ByteDTTrain=0x21ca8",
-      "timestamp": "2026-10-17T12:03:23.782977"
+      "timestamp": "2026-10-17T12:15:56.691625"
     },
     {
       "test_name": "Bytedt_TreeABIAndModularInverseParity",
       "status": "PASS",
       "details": "Khớp nối ABI Tree 56 bytes: 0x6db6db6db6db6db7 * 7 == 1 (mod 2^64), phép nhân modular inverse tối ưu chia 56",
-      "timestamp": "2026-10-17T12:03:23.782981"
+      "timestamp": "2026-10-17T12:15:56.691629"
     },
     {
       "test_name": "Bytedt_GBDTMathAndSplitGain",
       "status": "PASS",
       "details": "Toán học GBDT chuẩn xác: Sigmoid(2.0)=0.8808, Softmax sum=1.0000, Split Gain=4.7619",
-      "timestamp": "2026-10-17T12:03:23.783001"
+      "timestamp": "2026-10-17T12:15:56.691649"
     },
     {
       "test_name": "Bytedt_ProtobufWireFormatParity",
       "status": "PASS",
       "details": "Hỗ trợ 6 định dạng bản tin Protocol Buffers ByteDT: bytedt.protobuf.Model, bytedt.protobuf.Tree, bytedt.protobuf.Node...",
-      "timestamp": "2026-10-17T12:03:23.783007"
+      "timestamp": "2026-10-17T12:15:56.691655"
     },
     {
       "test_name": "Ttdemux_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 111322 bytes across 13 files (> 40 KB chuẩn kiểm định)",
-      "timestamp": "2026-10-17T12:03:23.783347"
+      "timestamp": "2026-10-17T12:15:56.692050"
     },
     {
       "test_name": "Ttdemux_ZeroStubsGate",
       "status": "PASS",
       "details": "100% thân hàm thực tế, không có stub rỗng",
-      "timestamp": "2026-10-17T12:03:23.784895"
+      "timestamp": "2026-10-17T12:15:56.693674"
     },
     {
       "test_name": "Ttdemux_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối 26 địa chỉ opcode AArch64: openIoContext=0x78e0, readThunk=0x7978, seekThunk=0x7988, mdlPrefix=0x7a10, parseMetrics=0x7ac4, seek=0x6ef8, read=0x71f0, FormatHolder=0x77a8, createMediaSource=0x6354",
-      "timestamp": "2026-10-17T12:03:23.784906"
+      "timestamp": "2026-10-17T12:15:56.693690"
     },
     {
       "test_name": "Ttdemux_BufferAndContextAllocationParity",
       "status": "PASS",
       "details": "Khớp cấu trúc cấp phát: TTIOContext=272B (0x110), Vùng đệm IO=32768B (32KB), cờ is_streamed=1 tại offset +0x90",
-      "timestamp": "2026-10-17T12:03:23.784911"
+      "timestamp": "2026-10-17T12:15:56.693697"
     },
     {
       "test_name": "Ttdemux_BitfieldKeyAndWhenceArithmetic",
       "status": "PASS",
       "details": "Toán học Bitfield & Whence chuẩn xác: Key(1,4)=65540, Key(2,6)=131078, SEEK_7000=0x7000, AVSEEK_SIZE=0x10000, AVERROR_EOF=0xdfb9b0bb",
-      "timestamp": "2026-10-17T12:03:23.784920"
+      "timestamp": "2026-10-17T12:15:56.693711"
     },
     {
       "test_name": "Ttdemux_UrlSchemeDetectionAndPredemuxParity",
       "status": "PASS",
       "details": "Khớp nối lược đồ URL 'mdl://' (ByteDance Mobile Download) và máy trạng thái Predemux 4 mức: PREDEMUX_TIMEOUT, PREDEMUX_NOT_USED, PREDEMUX_HIT, PREDEMUX_MISS",
-      "timestamp": "2026-10-17T12:03:23.784925"
+      "timestamp": "2026-10-17T12:15:56.693718"
     },
     {
       "test_name": "Nativeaudio_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 52738 bytes across 11 files (> 40 KB chuẩn kiểm định)",
-      "timestamp": "2026-10-17T12:03:23.785235"
+      "timestamp": "2026-10-17T12:15:56.694163"
     },
     {
       "test_name": "Nativeaudio_ZeroStubsGate",
       "status": "PASS",
       "details": "100% thân hàm thực tế, không có stub rỗng",
-      "timestamp": "2026-10-17T12:03:23.786354"
+      "timestamp": "2026-10-17T12:15:56.695397"
     },
     {
       "test_name": "Nativeaudio_OpcodeAddressesParity",
       "status": "PASS",
       "details": "Khớp nối 26 địa chỉ opcode AArch64: JNI_OnLoad=0x2bd4, startMonitor=0x2f6c, hook_aaudio=0x3c64, hook_opensles=0x3fcc, dlopen=0x3c70, dlsym=0x3c84, bytehook=0x4018",
-      "timestamp": "2026-10-17T12:03:23.786363"
+      "timestamp": "2026-10-17T12:15:56.695407"
     },
     {
       "test_name": "Nativeaudio_JniMethodAndSignatureBinding",
       "status": "PASS",
       "details": "Khớp nối cấu trúc JNI Native: Lớp=com/bytedance/helios/nativeaudio/AudioMonitorImpl, Signature=(Lcom/bytedance/helios/nativeaudio/AudioMonitorCallback;ZI)V, Callbacks=onOpened/onClosed",
-      "timestamp": "2026-10-17T12:03:23.786371"
+      "timestamp": "2026-10-17T12:15:56.695416"
     },
     {
       "test_name": "Nativeaudio_AudioHookSymbolsAndProcComm",
       "status": "PASS",
       "details": "Khớp nối ký hiệu Hook & ProcFS: OpenSL ES=slCreateEngine, AAudio=AAudioStreamBuilder_openStream, Path=/proc/%ld/task/%ld/comm, Fallback=n_audio_%d",
-      "timestamp": "2026-10-17T12:03:23.786376"
+      "timestamp": "2026-10-17T12:15:56.695421"
     },
     {
       "test_name": "Nativeaudio_StreamDirectionAndPrivacyFilter",
       "status": "PASS",
       "details": "Bộ lọc hướng dòng chuẩn xác: AAUDIO_DIRECTION_INPUT=1 (Microphone), AAUDIO_DIRECTION_OUTPUT=0 (Playback)",
-      "timestamp": "2026-10-17T12:03:23.786380"
+      "timestamp": "2026-10-17T12:15:56.695425"
     },
     {
       "test_name": "FileRecorder_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 62636 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-17T12:03:23.786683"
+      "timestamp": "2026-10-17T12:15:56.695745"
     },
     {
       "test_name": "FileRecorder_JNIMethodsTableParity",
       "status": "PASS",
       "details": "Đăng ký 10 JNINativeMethods trên 'com/bytedance/osfix/disk/jni/JniNative' với JNI_VERSION_1_6 (0x10006, Khớp opcodes 0x1bdc..0x1c94)",
-      "timestamp": "2026-10-17T12:03:23.786690"
+      "timestamp": "2026-10-17T12:15:56.695752"
     },
     {
       "test_name": "FileRecorder_StorageWhitelistClassification",
       "status": "PASS",
       "details": "Phân loại & miễn trừ danh mục lưu trữ cốt lõi ByteDance: ['/shared_prefs/', '/keva/', '/databases/', '.db.lck'] (Khớp opcodes 0x31dc..0x321c)",
-      "timestamp": "2026-10-17T12:03:23.786703"
+      "timestamp": "2026-10-17T12:15:56.695765"
     },
     {
       "test_name": "FileRecorder_CrashDetectionAndAlertFormatting",
       "status": "PASS",
       "details": "Đánh chặn truy cập nhạy cảm: match 'unauthorized_export', xuất cảnh báo contact @chenliguan, lặp 30 lần Fatal CRASH (Khớp opcodes 0x3260..0x33c4)",
-      "timestamp": "2026-10-17T12:03:23.786708"
+      "timestamp": "2026-10-17T12:15:56.695770"
     },
     {
       "test_name": "FileRecorder_ByteHookTargetsAndUnlinkat",
       "status": "PASS",
       "details": "Đăng ký 8 hooks open/open64 qua ByteHook & bảo vệ chống xóa trái phép unlinkat trên '/data/user/0/com.lemon.lv/files/protect_core/' (Khớp opcodes 0x2214 & 0x1c9c)",
-      "timestamp": "2026-10-17T12:03:23.786714"
+      "timestamp": "2026-10-17T12:15:56.695777"
     },
     {
       "test_name": "FileRecorder_MathTimeDivisionParity",
       "status": "PASS",
       "details": "Phép nhân điểm cố định chia cho 10^6 chính xác tuyệt đối: div(10^6)=1, div(123456789)=123, div(10^12-1)=999999 (Khớp opcodes 0x1e78..0x1e90)",
-      "timestamp": "2026-10-17T12:03:23.786720"
+      "timestamp": "2026-10-17T12:15:56.695783"
     },
     {
       "test_name": "AnimaxByteVC1_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 64232 bytes (> 40 KB, 0 stub)",
-      "timestamp": "2026-10-17T12:03:23.787008"
+      "timestamp": "2026-10-17T12:15:56.696108"
     },
     {
       "test_name": "AnimaxByteVC1_JNILifecycleAndProvider",
       "status": "PASS",
       "details": "Đăng ký provider 'bytevc1' vào Lynx AnimaX với JNI_VERSION_1_6 (0x10006, Khớp opcodes 0x59cc..0x5acc)",
-      "timestamp": "2026-10-17T12:03:23.787014"
+      "timestamp": "2026-10-17T12:15:56.696114"
     },
     {
       "test_name": "AnimaxByteVC1_DynamicSymbolsAndLoaderParity",
       "status": "PASS",
       "details": "Nạp động 'libByteVC1_dec.so' qua dlopen(0x1002) và phân giải 28 ký hiệu C với rẽ nhánh ABI v1 vs v2 (Khớp opcodes 0x4660..0x4938)",
-      "timestamp": "2026-10-17T12:03:23.787020"
+      "timestamp": "2026-10-17T12:15:56.696119"
     },
     {
       "test_name": "AnimaxByteVC1_HEVCNALUParsingParity",
       "status": "PASS",
       "details": "Phân tích cú pháp Annex-B NAL unit: Nhận dạng chính xác VPS (32), SPS (33), IDR (19) của luồng ByteVC1 / HEVC",
-      "timestamp": "2026-10-17T12:03:23.787032"
+      "timestamp": "2026-10-17T12:15:56.696131"
     },
     {
       "test_name": "AnimaxByteVC1_YUV420PGeometryAndLinesize",
       "status": "PASS",
       "details": "Hình học mặt phẳng YUV420P: Y=1920x1080 (2073600B), U/V=960x540 (518400B), Tổng=3110400B (1.5 bpp)",
-      "timestamp": "2026-10-17T12:03:23.787038"
+      "timestamp": "2026-10-17T12:15:56.696137"
     },
     {
       "test_name": "AnimaxByteVC1_ColorSpaceBT709Math",
       "status": "PASS",
       "details": "Tính khả nghịch ma trận ITU-R BT.709 YUV <-> RGB: RGB(180.0,75.0,220.0) -> YUV(108.6,181.1,168.3) -> RGB'(180.00,75.00,220.00), sai số=0.0001 LSB (< 1.0)",
-      "timestamp": "2026-10-17T12:03:23.787053"
+      "timestamp": "2026-10-17T12:15:56.696153"
     },
     {
       "test_name": "Bdzstd_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 100197 bytes (> 40 KB, 0 stub rỗng)",
-      "timestamp": "2026-10-17T12:03:23.787401"
+      "timestamp": "2026-10-17T12:15:56.696460"
     },
     {
       "test_name": "Bdzstd_CompressBoundOpcodeMath",
       "status": "PASS",
       "details": "Công thức ZSTD_compressBound: bound(0)=64B, bound(100)=163B, bound(128KB)=131584B, bound(1MB)=1003906B (Khớp opcodes 0x6750, 0x303b0)",
-      "timestamp": "2026-10-17T12:03:23.787419"
+      "timestamp": "2026-10-17T12:15:56.696470"
     },
     {
       "test_name": "Bdzstd_IsErrorAndErrorCodeOpcode",
       "status": "PASS",
       "details": "Nhận dạng lỗi Zstandard: isError(0)=False, isError(-72)=True, getErrorCode(-72)=72 (Khớp opcodes 0x40f8, 0x2fc60)",
-      "timestamp": "2026-10-17T12:03:23.787429"
+      "timestamp": "2026-10-17T12:15:56.696476"
     },
     {
       "test_name": "Bdzstd_CompressionLevelsAndStrippedError",
       "status": "PASS",
       "details": "Hằng số mức nén: Default=3, Min=-131072, Max=22, ErrorStr='Error strings stripped' (Khớp opcodes 0x303d0..0x303e0, rodata 0x31d7c)",
-      "timestamp": "2026-10-17T12:03:23.787437"
+      "timestamp": "2026-10-17T12:15:56.696481"
     },
     {
       "test_name": "Bdzstd_StreamingBufferSizes",
       "status": "PASS",
       "details": "Kích thước bộ đệm dòng Zstandard: COutSize=131591B (128KB+519), DInSize=131075B (128KB+3), DOutSize=131072B (128KB) (Khớp opcodes 0x30aa0, 0x3186c, 0x31878)",
-      "timestamp": "2026-10-17T12:03:23.787444"
+      "timestamp": "2026-10-17T12:15:56.696485"
     },
     {
       "test_name": "Bdzstd_StructABIAndBufferBounds",
       "status": "PASS",
       "details": "Cấu trúc ngữ cảnh nén: malloc(0xdf8)=3576B, Mã lỗi tràn biên bộ đệm=-72 (-0x48) (Khớp opcodes 0x30410, 0x30940, 0x3169c)",
-      "timestamp": "2026-10-17T12:03:23.787450"
+      "timestamp": "2026-10-17T12:15:56.696488"
     },
     {
       "test_name": "Avmdlbase_SourceSizeGate",
       "status": "PASS",
       "details": "Tổng dung lượng C++ đạt 74882 bytes (> 40 KB, 0 stub) trên 14 tệp",
-      "timestamp": "2026-10-17T12:03:23.788000"
+      "timestamp": "2026-10-17T12:15:56.696829"
     },
     {
       "test_name": "Avmdlbase_UrlParsingAndRewriteParity",
       "status": "PASS",
       "details": "Giải mã URL chuẩn RFC 3986 và cổng mạng: scheme=https, host=v16-default.akamaized.net:8443, path=/video/1080p/feed_720.mp4, fragment=t=10 (Khớp opcode 0x041250)",
-      "timestamp": "2026-10-17T12:03:23.788022"
+      "timestamp": "2026-10-17T12:15:56.696841"
     },
     {
       "test_name": "Avmdlbase_HttpHeaderAndRangeMath",
       "status": "PASS",
       "details": "Công thức giải tích Content-Range (bytes 1048576-2097151/52428800): len=1048576B khớp 100% (delta=0, Opcode 0x043f24)",
-      "timestamp": "2026-10-17T12:03:23.788031"
+      "timestamp": "2026-10-17T12:15:56.696846"
     },
     {
       "test_name": "Avmdlbase_ChunkedStreamParser",
       "status": "PASS",
       "details": "Bóc tách chunked stream HTTP/1.1: hex '5' -> 5B, payload='HELLO', terminal chunk=0 (Khớp opcode 0x0466a4)",
-      "timestamp": "2026-10-17T12:03:23.788038"
+      "timestamp": "2026-10-17T12:15:56.696851"
     },
     {
       "test_name": "Avmdlbase_CircularRingBufferMath",
       "status": "PASS",
       "details": "Giải thuật modulo RingBuffer: Capacity=64B -> Write 16B (avail=16B, space=48B) -> Read 16B (avail=0B, space=64B) (Khớp opcode 0x050544)",
-      "timestamp": "2026-10-17T12:03:23.788046"
+      "timestamp": "2026-10-17T12:15:56.696855"
     },
     {
       "test_name": "Avmdlbase_TLSALPNAndQuicWrapper",
       "status": "PASS",
       "details": "MIOConnTLS ALPN=['h2', 'http/1.1'] (Opcode 0x033850), MIOTTQuicTransWrapper RFC9000-HTTP3-v1 (Opcode 0x03b2f4, 3232B)",
-      "timestamp": "2026-10-17T12:03:23.788056"
+      "timestamp": "2026-10-17T12:15:56.696860"
     },
     {
       "test_name": "Avmdlbase_IOManagerAndPlayTaskConcurrency",
       "status": "PASS",
       "details": "AVMDLIOManager vtable layout=152B (7 methods tại 0x072b10), PlayTaskMgr thread-safe concurrency 8 workers (Khớp opcode 0x048200)",
-      "timestamp": "2026-10-17T12:03:23.788062"
+      "timestamp": "2026-10-17T12:15:56.696864"
     },
     {
       "test_name": "Bdvideouploader_SourceSizeGate",
       "status": "PASS",
-      "details": "Tổng dung lượng C++ đạt 84570 bytes (> 40 KB, 0 stub) trên 18 tệp",
-      "timestamp": "2026-10-17T12:03:23.788661"
+      "details": "Tổng dung lượng C++ đạt 87084 bytes (> 40 KB, 0 stub) trên 18 tệp",
+      "timestamp": "2026-10-17T12:15:56.697254"
     },
     {
       "test_name": "Bdvideouploader_JNIMethodsTableParity",
       "status": "PASS",
       "details": "Đăng ký 50 JNINativeMethods qua 5 bảng tĩnh trong .data.rel.ro: BDVideoUploader(17), BDNetworkRouter(6), BDImageUploader(20), BDNetworkSpeedTest(6), BDUploadResolver(1) (Khớp opcode 0x0105a4)",
-      "timestamp": "2026-10-17T12:03:23.788674"
+      "timestamp": "2026-10-17T12:15:56.697261"
     },
     {
       "test_name": "Bdvideouploader_AWSSigV4AndTOSSigningMath",
       "status": "PASS",
       "details": "Chứng thực chữ ký đám mây chuẩn AWS SigV4 / ByteDance TOS: 4-stage HMAC-SHA256 cascade và dẫn xuất AES-256 Key(32B)/IV(16B) chính xác 100%",
-      "timestamp": "2026-10-17T12:03:23.795689"
+      "timestamp": "2026-10-17T12:15:56.703851"
     },
     {
       "test_name": "Bdvideouploader_SlicePartitioningAndCRC32",
       "status": "PASS",
       "details": "Phân mảnh lát cắt: 1250000B -> 3 slices (524288B + 524288B + 201424B), Tổng=1250000B (delta=0), IEEE 802.3 CRC32=0xCBF43926 chuẩn xác",
-      "timestamp": "2026-10-17T12:03:23.795709"
+      "timestamp": "2026-10-17T12:15:56.703880"
     },
     {
       "test_name": "Bdvideouploader_ExponentialBackoffAndProtocolFallback",
       "status": "PASS",
       "details": "Giải thuật thử lại lùi lũy thừa: attempt 1=1000ms, attempt 2=2000ms, attempt 3=4000ms, Lỗi socket 1001 tự động chuyển mạch sang xQUIC RFC 9000",
-      "timestamp": "2026-10-17T12:03:23.795716"
+      "timestamp": "2026-10-17T12:15:56.703890"
     },
     {
       "test_name": "Bdvideouploader_DiskResumeSerialization",
       "status": "PASS",
       "details": "Cấu trúc phục hồi gián đoạn: DiskResumeMagic=0x4244524D ('BDRM'), bitmask phân đoạn hoàn thành bảo toàn 100% qua file nhị phân",
-      "timestamp": "2026-10-17T12:03:23.795721"
+      "timestamp": "2026-10-17T12:15:56.703900"
     },
     {
       "test_name": "Bdvideouploader_SpeedTestAndHostRanker",
       "status": "PASS",
       "details": "Đo kiểm tốc độ mạng: FastHost weight=2096.9 > SlowHost weight=13.1, định dạng tham số ClientBestHosts=&ClientBestHostWeight=",
-      "timestamp": "2026-10-17T12:03:23.795729"
+      "timestamp": "2026-10-17T12:15:56.703912"
+    },
+    {
+      "test_name": "Buffer_SourceSizeGate",
+      "status": "PASS",
+      "details": "Tổng dung lượng C++ đạt 79028 bytes (> 40 KB, 0 stub) trên 12 tệp",
+      "timestamp": "2026-10-17T12:15:56.704354"
+    },
+    {
+      "test_name": "Buffer_JNIMethodsTableParity",
+      "status": "PASS",
+      "details": "Khớp nối 12 phương thức JNI native trên 'com/bytedance/geckox/buffer/impl' (Opcodes 0x0f5c..0x18f0)",
+      "timestamp": "2026-10-17T12:15:56.704362"
+    },
+    {
+      "test_name": "Buffer_PageAlignmentAndPOSIXBitmasks",
+      "status": "PASS",
+      "details": "Toán học căn chỉnh trang 4096 (4097 -> 8192) và cờ POSIX: OpenCreate=0x80042, OpenFlush=0x80241, Prot=3, Sync=4, MayMove=1",
+      "timestamp": "2026-10-17T12:15:56.704368"
+    },
+    {
+      "test_name": "Buffer_ReadFullStreamAccumulation",
+      "status": "PASS",
+      "details": "Giải thuật tích lũy readFull (Opcode 0x15f4): Đọc trọn vẹn 44 bytes qua các chunk 8 bytes không suy hao",
+      "timestamp": "2026-10-17T12:15:56.704381"
+    },
+    {
+      "test_name": "Buffer_InconsistentFileLengthRule",
+      "status": "PASS",
+      "details": "Quy tắc bất biến độ dài tệp: Từ chối mở khi (fileLen=8192 != size=4096), Chấp thuận khi (4096 == 4096)",
+      "timestamp": "2026-10-17T12:15:56.704385"
+    },
+    {
+      "test_name": "Buffer_NegativeSizeIllegalCheck",
+      "status": "PASS",
+      "details": "Kiểm tra cờ bit dấu âm AArch64 (Opcode 0x1318: tbnz x3, #0x3f): Size=-1024 kích hoạt ném ngoại lệ 'length illegal'",
+      "timestamp": "2026-10-17T12:15:56.704388"
+    },
+    {
+      "test_name": "Buffer_UnifiedManagerAndLeakTracking",
+      "status": "PASS",
+      "details": "Bộ quản lý GeckoXBufferManager: Truy vết 2 buffers, Tổng dung lượng 12288 bytes, 0 rò rỉ bộ nhớ",
+      "timestamp": "2026-10-17T12:15:56.704396"
+    },
+    {
+      "test_name": "BufferPgl_SourceSizeGate",
+      "status": "PASS",
+      "details": "Tổng dung lượng C++ đạt 46309 bytes (> 40 KB, 0 stub) trên 12 tệp",
+      "timestamp": "2026-10-17T12:15:56.704702"
+    },
+    {
+      "test_name": "BufferPgl_JNIMethodsTableParity",
+      "status": "PASS",
+      "details": "Khớp nối 12 phương thức JNI native trên 'com/bykv/vk/openvk/preload/geckox/buffer/impl' (Opcodes 0x1028..0x178c)",
+      "timestamp": "2026-10-17T12:15:56.704707"
+    },
+    {
+      "test_name": "BufferPgl_POSIXFlagsAndMMapParity",
+      "status": "PASS",
+      "details": "Khớp nối các cờ POSIX Pangle: OpenCreate=0x80042, Prot=3, Sync=4, MayMove=1 chuẩn xác",
+      "timestamp": "2026-10-17T12:15:56.704711"
+    },
+    {
+      "test_name": "BufferPgl_MemoryBufferRoundtrip",
+      "status": "PASS",
+      "details": "Bộ đệm PglMemoryBuffer 512B: Ghi/đọc roundtrip 256 bytes hoàn hảo không sai lệch 1 bit",
+      "timestamp": "2026-10-17T12:15:56.704731"
+    },
+    {
+      "test_name": "BufferPgl_MReMapResizeParity",
+      "status": "PASS",
+      "details": "Tái ánh xạ MReMap (Opcode 0x178c): Mở rộng 2048B -> 8192B bảo toàn 100% dữ liệu tiền tố",
+      "timestamp": "2026-10-17T12:15:56.704740"
+    },
+    {
+      "test_name": "BufferPgl_InconsistentFileLengthRule",
+      "status": "PASS",
+      "details": "Bảo vệ tính toàn vẹn tập tin Pangle: Ngăn chặn mở tệp không khớp kích thước khai báo",
+      "timestamp": "2026-10-17T12:15:56.704743"
+    },
+    {
+      "test_name": "BufferPgl_ManagerTracking",
+      "status": "PASS",
+      "details": "Đăng ký và hủy đăng ký bộ đệm nguyên sinh PglBufferManager hoạt động chuẩn xác",
+      "timestamp": "2026-10-17T12:15:56.704746"
     },
     {
       "test_name": "Governance_LibCapcutHonesty",
       "status": "PASS",
       "details": "Báo cáo libcapcut đã cập nhật trung thực: BLOCKED_CUSTOM_PACKED (0%), không báo cáo láo",
-      "timestamp": "2026-10-17T12:03:23.795936"
+      "timestamp": "2026-10-17T12:15:56.704940"
     },
     {
       "test_name": "Governance_RealParityCount",
       "status": "PASS",
-      "details": "Hiện có đúng 28/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế",
-      "timestamp": "2026-10-17T12:03:23.795942"
+      "details": "Hiện có đúng 30/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế",
+      "timestamp": "2026-10-17T12:15:56.704945"
     }
   ]
 }

@@ -361,11 +361,24 @@
   11. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
   12. Bộ kiểm thử khép kín đạt 189/189 tests PASS (100.0%).
 
-- [ ] TASK-070-RECONSTRUCTION-LIBBUFFER (2026-10-17, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libbuffer.so / libbuffer_pgl.so (CORE_07_SECURITY_BUFFER)**:
-  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libbuffer.so` và `libbuffer_pgl.so`.
-  2. Khởi tạo phát hành thách thức đối kháng từ Agent 13 tại `SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libbuffer.md` & `.json`.
-  3. Triển khai toàn bộ mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libbuffer/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
-  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbuffer.md` & `.json`.
+- [x] TASK-070-RECONSTRUCTION-LIBBUFFER (2026-10-17, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Toàn Diện Thuật Toán libbuffer.so & libbuffer_pgl.so (GECKOX_NATIVE_BUFFER_SYSTEM)**:
+  1. Tái dựng 12 files (79.03 KB C++, 0 stub) cho `libbuffer.so` và 12 files (46.31 KB C++, 0 stub) cho `libbuffer_pgl.so`, tổng cộng 24 files C++ chất lượng cao (> 40 KB mỗi thư viện, 0 stub rỗng).
+  2. Bố cục cấu trúc kiểu dữ liệu `buffer_types.h` / `buffer_pgl_types.h`: Định nghĩa ABI, JNIEnv mapping, các chuỗi lỗi tĩnh trong `.rodata` (`inconsistent file length`, `length illegal`, `seek failed`, `native calloc failed`, `read full failed`, `close failed`, `close file failed`, `mremap failed`).
+  3. Phân hệ MMapBuffer: Tái dựng `nCreate` (opcode 0x0f5c / 0x1028), `nWrite` (0x113c / 0x11e0), `nRead` (0x11e4 / 0x120c), `nFlush` (0x1240 / 0x122c), `nRelease` (0x1198 / 0x1200) với cờ `0x80042` (`O_RDWR | O_CREAT | O_CLOEXEC`), bảo vệ độ dài tệp không nhất quán, `mmap` `PROT_READ | PROT_WRITE` và `msync` `MS_SYNC = 4`.
+  4. Phân hệ MemoryBuffer: Tái dựng `nCreate` (opcode 0x12ec / 0x12b0), `nWrite` (0x16a0 / 0x1614), `nRead` (0x16fc / 0x1634), `nRelease` (0x1758 / 0x1654), `nFlush` (0x17a0 / 0x165c) với cờ `0x80241`, kiểm tra bit 63 (`tbnz x3, #0x3f`) ngăn chặn size âm, `calloc` và xả đĩa an toàn.
+  5. Phân hệ readFull: Tái dựng `_Z8readFulliPal` (opcode 0x15f4 / 0x1590) chống ngắt hệ thống `EINTR` (errno 4) và đọc trọn vẹn luồng byte.
+  6. Phân hệ MReMapBuffer: Tái dựng `nMReMap` (opcode 0x18f0 / 0x178c) với cờ `MREMAP_MAYMOVE = 1` mở rộng động vùng nhớ ảo.
+  7. Động cơ master `GeckoXBufferManager` & `PglBufferManager` quản lý vòng đời bộ đệm, truy vết chống rò rỉ và `madvise`.
+  8. Bộ tự kiểm thử 7 giai đoạn `runSelfTest()` trên cả 2 thư viện đạt 7/7 STAGES PASSED (100.0%).
+  9. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json cho cả 2 thư viện.
+  10. Bộ kiểm thử khép kín đạt 203/203 tests PASS (100.0%).
+
+- [ ] TASK-071-RECONSTRUCTION-LIBFILE_LOCK (2026-10-17, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libfile_lock.so / libfile_lock_pgl.so (CORE_07_GECKOX_FILE_LOCK)**:
+  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libfile_lock.so` và `libfile_lock_pgl.so`.
+  2. Bóc tách 6 JNI Native methods: `nGetFD`, `nLockFile`, `nLockFileSegment`, `nRelease`, `nTryLock`, `nUnlockFile`.
+  3. Triển khai toàn bộ mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libfile_lock/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
+  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libfile_lock.md` & `.json`.
   5. Cập nhật suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS.
   6. Agent 13 nghiệm thu cấp chứng nhận `VERIFIED_AND_ACCEPTED` tại `LEDGER_DOI_KHANG.json`.
+
 
