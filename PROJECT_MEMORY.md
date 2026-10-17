@@ -1316,3 +1316,34 @@
   3. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libByteAIDT.md` và `.json`.
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **139/139 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **20 / 169 thư viện COMPLETED (11.83%)** có 100% thân hàm thực tế.
+
+## 50. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libbytedt.so (CORE_02_AI_CV)
+- **Thời gian**: 2026-10-17 10:20:00
+- **Thư viện**: libbytedt.so (arm64-v8a: 313,800 bytes, 165 dynamic symbols, ByteDance Decision Tree Core & On-Device Training Engine).
+- **Chi tiết giải mã thân hàm (13 files, 93.05 KB code C++, 0 stub)**:
+  1. *Cấu trúc Nút & Cây Quyết định AST (bytedt_node, bytedt_tree)*:
+     - Toàn bộ cây nhị phân AST: `Node`, `LeafNode`, `NonLeafNode`, `NumericalNode`, `CategoricalNode`.
+     - 5 toán tử chia nhánh số học: `OP_EQUAL` (`cset w0, eq`), `OP_LESS_THAN` (`cset w0, gt`), `OP_LESS_EQUAL` (`cset w0, ge`), `OP_GREATER_THAN` (`cset w0, mi`), `OP_GREATER_EQUAL` (`cset w0, ls`).
+     - Kiểm tra ngoại lệ thiếu dữ liệu / NaN theo chuẩn IEEE-754 (`fcmp s0, s0; b.vs #0x8314`) tự động chuyển hướng theo `default_direction_` (offset `0x30`).
+     - Khớp nối chính xác bố cục ABI 56 bytes của `Tree` (`root_`, `num_leaves_`, `max_depth_`, `tree_id_`, `num_nodes_`, `leaf_indices_`) và hằng số nghịch đảo modulo ma thuật $0x6db6db6db6db6db7 \times 7 \equiv 1 \pmod{2^{64}}$ trong duyệt mảng `std::vector<Tree>`.
+  2. *6 Họ Mô Hình Ensemble Đầy Đủ (bytedt_models)*:
+     - `BoostingClassifier`: GBDT phân loại nhị phân (Logistic Sigmoid $\sigma(z) = \frac{1}{1 + e^{-z}}$) và đa lớp (Softmax ổn định số học $p_g = \frac{e^{z_g - \max z}}{\sum e^{z_j - \max z}}$).
+     - `BoostingRegressor`: GBDT hồi quy cộng dồn $\hat{y} = \text{base\_score} + \sum f_m(x)$.
+     - `BoostingMultiLabelClassifier`: GBDT phân loại đa nhãn độc lập từng lớp.
+     - `VotingClassifier`: Random Forest phân loại biểu quyết đa số $\frac{1}{M} \sum f_m(x)$.
+     - `VotingRegressor`: Random Forest hồi quy trung bình.
+     - `VotingMultiLabelClassifier`: Random Forest đa nhãn.
+  3. *Bộ Tuần Tự Hóa & Giải Mã Protocol Buffers (bytedt_protobuf)*:
+     - Triển khai độc lập zero-dependency `CodedInputStream` và `CodedOutputStream` giải mã các thông điệp: `bytedt.protobuf.Model`, `Tree`, `Node`, `BoostingClassificationConfig`, `VotingClassificationConfig`, `MultiLabelClassificationConfig`.
+     - Tự động liên kết các con trỏ cây AST từ mảng nút nhị phân.
+  4. *Động Cơ Suy Luận & Huấn Luyện Tại Chỗ (bytedt_interpreter, bytedt_train)*:
+     - Khởi tạo engine `ByteDT::create_engine` khớp opcode `0x13b30` (cấp phát 48B `_Znwm(0x30)` và thiết lập Vtable tại `0x4eea0`).
+     - Đánh giá suy diễn `predict` khớp opcode `0xcad8`: Kiểm tra kiểu dữ liệu `Input::data_type == 1` (`cmp w9, #1` tại `0x00cbf4`), kiểm tra số chiều `total_floats % n_feature == 0` (`0x00cc20`), và trả về mã lỗi 5 (`DIMENSION_MISMATCH`) nếu không khớp.
+     - Đo lường thời gian suy diễn và đếm số cây `predict_leaf` khớp opcode `0xd050` ghi vào `RunInfo` tại `+0x1c` và `+0x24`.
+     - Động cơ huấn luyện `ByteDTTrain::train`: Thuật toán tìm điểm cắt đặc trưng tối ưu `split_numerical_feature` dựa trên hàm độ lợi mất mát Gradient / Hessian Split Gain, và xuất mô hình Protobuf nhị phân qua `get_pb_model` khớp opcode `0x22834`.
+     - Tiện ích mở rộng bộ nhớ `SmallVectorBase::grow_pod` khớp opcode `0x2cc34`.
+     - Bộ xử lý cảnh báo `Warning::warn`, `set_warning_handler`, `get_warning_handler` khớp opcode `0x2d870` - `0x2d954`.
+  5. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbytedt.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **145/145 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **21 / 169 thư viện COMPLETED (12.43%)** có 100% thân hàm thực tế.
+

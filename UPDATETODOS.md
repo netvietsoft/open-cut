@@ -250,3 +250,18 @@
   9. Đối soát 16 địa chỉ opcode AArch64: 0x11c0, 0x1200, 0x1250, 0x1254, 0x1264, 0x126c, 0x1294, 0x12bc, 0x12f8, 0x1468, 0x14a0, 0x18bc, 0x190c, 0x1940, 0x1950, 0x2140.
   10. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
   11. Bộ kiểm thử khép kín đạt 139/139 tests PASS (100.0%).
+
+- [x] TASK-062-RECONSTRUCTION-LIBBYTEDT (2026-10-17, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Thuật Toán libbytedt.so (CORE_02_AI_CV)**:
+  1. Tái dựng 13 files (93.05 KB C++, 0 stub) giải mã toàn bộ lõi suy diễn và huấn luyện cây quyết định ByteDance Decision Tree Core & On-Device Training Engine.
+  2. Bố cục cây nhị phân AST: Node, LeafNode, NonLeafNode, NumericalNode (5 toán tử phân nhánh so sánh số học: OP_EQUAL, OP_LESS_THAN, OP_LESS_EQUAL, OP_GREATER_THAN, OP_GREATER_EQUAL khớp cờ AArch64 eq, gt, ge, mi, ls), CategoricalNode (tập danh mục bitset).
+  3. Xử lý giá trị thiếu / NaN theo chuẩn IEEE-754: fcmp s0, s0; b.vs #0x8314 rẽ nhánh an toàn sang default_direction tại offset 0x30.
+  4. Cấu trúc Tree 56 bytes ABI: root_ (16B), num_leaves_ (4B), max_depth_ (4B), tree_id_ (4B), num_nodes_ (4B), leaf_indices_ (24B). Chứng minh số học modular inverse 0x6db6db6db6db6db7 * 7 == 1 (mod 2^64) cho phép chia tối ưu kích thước 56 bytes.
+  5. 6 họ mô hình Ensemble: BoostingClassifier (Sigmoid nhị phân & Softmax đa lớp ổn định số học), BoostingRegressor, BoostingMultiLabelClassifier, VotingClassifier (Random Forest), VotingRegressor, VotingMultiLabelClassifier.
+  6. Bộ tuần tự hóa và giải mã Protocol Buffers nhị phân độc lập: CodedInputStream và CodedOutputStream đọc/ghi các bản tin bytedt.protobuf.Model, Tree, Node, BoostingClassificationConfig, VotingClassificationConfig.
+  7. Động cơ suy luận ByteDT: create_engine opcode 0x13b30 (cấp phát 48B, vtable 0x4eea0), get_version opcode 0x144a8 ("2.1.6"), predict opcode 0xcad8 (kiểm tra kiểu dữ liệu FP32, kiểm tra chia hết n_feature, trả về mã lỗi 5 DIMENSION_MISMATCH nếu sai lệch), predict_leaf opcode 0xd050 (đo thời gian suy diễn và đếm số cây ghi vào RunInfo), predict_raw opcode 0xcf04.
+  8. Động cơ huấn luyện trực tiếp On-Device ByteDTTrain: create_engine opcode 0x21ca8, get_pb_model opcode 0x22834, train opcode 0x22840 (vòng lặp GBDT xây cây tăng cường), thuật toán tìm điểm cắt đặc trưng tối ưu split_numerical_feature dựa trên độ lợi mất mát Gradient / Hessian Split Gain.
+  9. Tiện ích bộ nhớ SmallVectorBase::grow_pod opcode 0x2cc34 (mở rộng 2x hình học), bộ xử lý cảnh báo Warning opcode 0x2d870 - 0x2d954.
+  10. Đối soát 19 địa chỉ opcode AArch64: 0x144a8, 0x13b30, 0x13b54, 0x00cbf4, 0x00cc18, 0x00cc20, 0x00cc28, 0x00cbb4, 0x00d0e4, 0x00d0f0, 0x00ad50, 0x00b0f4, 0x0082fc, 0x00830c, 0x008508, 0x021ca8, 0x022834, 0x022840, 0x02cc34.
+  11. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
+  12. Bộ kiểm thử khép kín đạt 145/145 tests PASS (100.0%).
+
