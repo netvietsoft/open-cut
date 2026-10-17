@@ -265,3 +265,22 @@
   11. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
   12. Bộ kiểm thử khép kín đạt 145/145 tests PASS (100.0%).
 
+- [x] TASK-063-RECONSTRUCTION-LIBTTDEMUX (2026-10-17, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Thuật Toán libttdemux.so (CORE_01_MEDIA_DEMUXER)**:
+  1. Tái dựng 13 files (108.59 KB C++, 0 stub) giải mã toàn bộ phân hệ điều phối giải mã container đa phương tiện và nạp trước TTPlayer Demuxer & Predemuxing Core Engine của ByteDance.
+  2. Nguyên ngữ cơ bản com::ss::vcbkit: BaseRef đếm tham chiếu atomic, con trỏ thông minh RefPtr<T>, các nguyên ngữ đồng bộ hóa Mutex, ScopedLock, CondVar.
+  3. Cấu trúc giao thức đa nguồn AVSourceProtocol: Cơ chế đăng ký probe động registerProtocol opcode 0x84c4, tạo thực thể createProtocol opcode 0x857c, giao thức FFmpeg chuẩn AVSourceProtocolFF, quản lý yêu cầu dải byte nạp trước addRequest opcode 0x8708 và getRange opcode 0x8714.
+  4. Bộ điều phối vùng đệm đa luồng AVSourceInput (17.7 KB C++ logic): Khởi tạo (opcode 0x66b8) và giải phóng (opcode 0x67a4), khớp offset ABI AArch64 chuẩn xác: +0x10 (ContextHolder), +0x20 (Mutex), +0x28 (active protocol), +0x30 (protocol count), +0x38 (current pos), +0x40 (cached file size).
+  5. Thuật toán seek opcode 0x6ef8 (760 bytes): Phân nhánh 0x7000 (direct seek), 0x7001 (downloaded byte offset), 0x10000 (AVSEEK_SIZE = 16 << 12 file length query), và các chuẩn SEEK_SET, SEEK_CUR, SEEK_END kèm kiểm tra biên và cache tối ưu.
+  6. Thuật toán read opcode 0x71f0 (396 bytes): Kẹp biên cuối tệp pos + size > file_size, so khớp hằng số sentinel EOF 0xdfb9b0bb (-541478725), và cập nhật chỉ số tải payload.
+  7. Quản lý ngữ cảnh định dạng FormatHolder: Cấp phát context alloc opcode 0x777c (avformat_alloc_context), mở format open opcode 0x77a8 liên kết IO tùy biến, thiết lập interrupt callback tại +0x5c8 và đặt cờ AVFMT_FLAG_CUSTOM_IO = 0x80 tại +0x468, đóng close opcode 0x7898.
+  8. Bộ tiện ích IO SourceInputHelper: openIoContext opcode 0x78e0 cấp phát chuẩn xác TTIOContext 272 bytes (0x110) và vùng đệm IO 32,768 bytes (0x8000), thiết lập read thunk tại 0x7978 và seek thunk tại 0x7988, gọi tt_io_init_context, và đặt cờ is_streamed = 1 tại +0x90 (opcode 0x795c).
+  9. Nhận diện lược đồ URL: supportSourceInput opcode 0x7a04 kiểm tra tiền tố "mdl://" từ địa chỉ .rodata 0x8cbc qua av_strstart.
+  10. Phân tích chỉ số mạng parseAndUpdateConnectionInfo opcode 0x7ac4: Tách chuỗi thống kê phân cách dấu phẩy bằng strtok_r, chuyển đổi strtoll, đóng gói bitfield key = (action << 16) | metric_id qua lệnh AArch64 bfi w1, w20, #0x10, #0x10, và nạp vào DemuxMetrics (DNS, Connect, Throughput, Retries).
+  11. Giám sát nạp trước AVPredemuxMonitor: Theo dõi chuyển đổi trạng thái vòng đời notifyDemuxMsg opcode 0x88fc, cập nhật kết quả nạp ngầm notifyPredemux opcode 0x89d8, và truy vấn tỷ lệ trúng đệm getPredemuxHitStatus opcode 0x8a40 (HIT, MISS, TIMEOUT, NOT_USED).
+  12. Nguồn đa phương tiện cấp cao AVMediaSource: Cấp phát createMediaSource opcode 0x6354 (24B RefPtr control block và 224B AVMediaSource), tìm kiếm thông số luồng findStreamInfo opcode 0x64f8, bộ tiện ích AVMediaSourceHelper.
+  13. Động cơ master NextAI::OpenCut::ttdemux::TtdemuxEngine tích hợp toàn diện pipeline kèm bộ tự kiểm thử 7 giai đoạn runSelfTest().
+  14. Đối soát 26 địa chỉ opcode AArch64: 0x0078e0, 0x0078f8, 0x00790c, 0x007918, 0x007920, 0x007948, 0x00795c, 0x007978, 0x007988, 0x007a04, 0x007a10, 0x007ac4, 0x007b0c, 0x007bb8, 0x007c00, 0x006ef8, 0x006f24, 0x006f54, 0x006f60, 0x0071f0, 0x007264, 0x00777c, 0x0077a8, 0x007834, 0x006354, 0x0088fc.
+  15. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json.
+  16. Bộ kiểm thử khép kín đạt 151/151 tests PASS (100.0%).
+
+

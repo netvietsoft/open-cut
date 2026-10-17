@@ -1347,3 +1347,37 @@
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **145/145 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **21 / 169 thư viện COMPLETED (12.43%)** có 100% thân hàm thực tế.
 
+## 51. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libttdemux.so (CORE_01_MEDIA_DEMUXER)
+- **Thời gian**: 2026-10-17 10:55:00
+- **Thư viện**: libttdemux.so (arm64-v8a: 51,096 bytes, 186 dynamic symbols, 129 defined symbols, ByteDance TTPlayer Demuxer & Predemuxing Core Engine).
+- **Chi tiết giải mã thân hàm (13 files, 108.59 KB code C++, 0 stub)**:
+  1. *Nguyên ngữ Cơ bản & Bộ đếm Tham chiếu (com::ss::vcbkit)*:
+     - `BaseRef` và con trỏ thông minh `RefPtr<T>` thread-safe với các thao tác atomic `incRef`, `decRef`, `getRefCount`.
+     - Đồng bộ hóa đa luồng qua `Mutex`, `ScopedLock`, `CondVar`.
+  2. *Cấu trúc Giao thức Đa Nguồn (com::ss::ttm::demuxer::AVSourceProtocol)*:
+     - Cơ chế đăng ký giao thức động `registerProtocol` khớp opcode `0x84c4` và nhà máy tạo thực thể `createProtocol` khớp opcode `0x857c`.
+     - Giao thức chuẩn FFmpeg `AVSourceProtocolFF` kết nối `AVIOContext`.
+     - Quản lý dải byte yêu cầu nạp trước `addRequest` (opcode `0x8708`) và `getRange` (opcode `0x8714`).
+  3. *Bộ Điều Phối Vùng Đệm & Quản Lý Luồng AVSourceInput*:
+     - Khởi tạo `AVSourceInput` (opcode `0x66b8`) và hủy giải phóng `clearInputs` (opcode `0x67a4`).
+     - Khớp cấu trúc bộ nhớ AArch64 chính xác: `+0x10` (DemuxContextHolder), `+0x20` (Mutex), `+0x28` (AVSourceProtocol), `+0x30` (protocol count), `+0x38` (current pos), `+0x40` (cached file size).
+     - Thuật toán `seek` khớp opcode `0x6ef8` (760 bytes): Phân nhánh `0x7000` (direct seek), `0x7001` (downloaded offset), `0x10000` (`AVSEEK_SIZE` file size query), và các chuẩn `SEEK_SET`, `SEEK_CUR`, `SEEK_END` kèm kiểm tra biên và cache tối ưu.
+     - Thuật toán `read` khớp opcode `0x71f0` (396 bytes): Kẹp biên cuối tệp `pos + size > file_size`, so khớp mã lỗi sentinel EOF `0xdfb9b0bb` (`-541478725`), và cập nhật chỉ số tải payload.
+  4. *Quản Lý Định Dạng & Tiện Ích IO (FormatHolder & SourceInputHelper)*:
+     - `FormatHolder::alloc` (opcode `0x777c`) cấp phát `AVFormatContext` (`avformat_alloc_context`).
+     - `FormatHolder::open` (opcode `0x77a8`) liên kết IO tùy biến, thiết lập interrupt callback tại `+0x5c8` và gắn cờ `AVFMT_FLAG_CUSTOM_IO = 0x80` tại `+0x468`.
+     - `SourceInputHelper::openIoContext` (opcode `0x78e0`): Cấp phát `TTIOContext` 272 bytes (`0x110`) và vùng đệm IO 32,768 bytes (`0x8000`), gán thunk `readThunk (0x7978)` và `seekThunk (0x7988)`, gọi `tt_io_init_context`, và đặt cờ `is_streamed = 1` tại `+0x90` (opcode `0x795c`).
+     - `SourceInputHelper::supportSourceInput` (opcode `0x7a04`): Kiểm tra tiền tố URL `"mdl://"` từ địa chỉ `.rodata` `0x8cbc`.
+     - `SourceInputHelper::parseAndUpdateConnectionInfo` (opcode `0x7ac4`): Tách chuỗi thống kê phân cách dấu phẩy bằng `strtok_r`, chuyển đổi `strtoll` cơ số 10, đóng gói bitfield `key = (action << 16) | metric_id` qua lệnh `bfi w1, w20, #0x10, #0x10`, và nạp vào `DemuxMetrics`.
+  5. *Giám Sát Nạp Trước & Tỷ Lệ Trúng Cache (AVPredemuxMonitor)*:
+     - Xử lý chuyển đổi trạng thái `notifyDemuxMsg` khớp opcode `0x88fc`: Theo dõi vòng đời OPENING -> DEMUXING -> COMPLETED.
+     - Xác định tỷ lệ trúng đệm `notifyPredemux` (opcode `0x89d8`) và truy vấn trạng thái `getPredemuxHitStatus` (opcode `0x8a40`) với các mức `PREDEMUX_HIT`, `PREDEMUX_MISS`, `PREDEMUX_TIMEOUT`, `PREDEMUX_NOT_USED`.
+  6. *Nguồn Đa Phương Tiện & Động Cơ Tích Hợp (AVMediaSource & TtdemuxEngine)*:
+     - Nhà máy tạo nguồn `AVMediaSource::createMediaSource` khớp opcode `0x6354`: Cấp phát 24B control block và 224B (`0xe0`) cho đối tượng `AVMediaSource`.
+     - Tìm kiếm thông số luồng `findStreamInfo` khớp opcode `0x64f8` (`avformat_find_stream_info`).
+     - Động cơ master `NextAI::OpenCut::ttdemux::TtdemuxEngine` tích hợp toàn diện pipeline và bộ tự kiểm thử 7 giai đoạn `runSelfTest()`.
+  7. *Thẩm định đối kháng độc lập từ Agent 13*: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttdemux.md` và `.json`.
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **151/151 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **22 / 169 thư viện COMPLETED (13.02%)** có 100% thân hàm thực tế.
+
+
