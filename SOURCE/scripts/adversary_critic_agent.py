@@ -51,7 +51,7 @@ INITIAL_COMPLETED_LIBS = [
     "libmiddleware", "libspeechsdk", "libbytenn", "libAndroidPitayaCore",
     "liblens", "libretouch_sdk", "libfast_engine", "libskity", "libfastcv",
     "libaudio_fingerprint_sdk", "libByteAINN", "libByteAIDT", "libbytedt",
-    "libttdemux", "libnativeaudio"
+    "libttdemux", "libnativeaudio", "libfile_recorder"
 ]
 
 

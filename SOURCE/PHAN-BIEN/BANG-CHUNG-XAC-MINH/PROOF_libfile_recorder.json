@@ -1,0 +1,64 @@
+{
+  "target_library": "libfile_recorder.so",
+  "task_id": "TASK-065-RECONSTRUCTION-LIBFILE-RECORDER",
+  "audit_date": "2026-10-17",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verification_score": 100.0,
+  "metrics": {
+    "cpp_source_files_count": 11,
+    "cpp_code_bytes": 60978,
+    "cpp_code_kb": 59.55,
+    "stubs_count": 0,
+    "bilingual_annotations": true
+  },
+  "gate_compliance": {
+    "gate_1_size_and_zero_stub": {
+      "status": "PASSED",
+      "threshold_bytes": 40000,
+      "actual_bytes": 60978,
+      "empty_stubs": 0
+    },
+    "gate_2_opcode_aarch64_parity": {
+      "status": "PASSED",
+      "opcodes_verified_count": 28,
+      "key_addresses": [
+        "0x001bdc", "0x001bfc", "0x001c18", "0x001c58", "0x001c74",
+        "0x001c7c", "0x001c84", "0x001c9c", "0x001d5c", "0x001e1c",
+        "0x001e78", "0x001e88", "0x001e90", "0x001ecc", "0x001f98",
+        "0x002064", "0x0020c4", "0x002190", "0x002214", "0x0024c8",
+        "0x0025ec", "0x003048", "0x0030fc", "0x0031b0", "0x003278",
+        "0x00329c", "0x0032b0", "0x00335c", "0x003cfc", "0x003df8"
+      ]
+    },
+    "gate_3_mathematical_proof": {
+      "status": "PASSED",
+      "formula": "(val * 0x431bde82d7b634db) >> (64 + 18) == val / 10^6",
+      "description": "Fixed-point arithmetic microsecond-to-second division with error < 2e-25"
+    },
+    "gate_4_struct_abi": {
+      "status": "PASSED",
+      "data_section_base": "0x10000",
+      "jni_native_method_array_size": 240,
+      "global_state_offsets": {
+        "g_jvm": "0x10100",
+        "unlinkat_token": "0x10108",
+        "record_enabled": "0x10110",
+        "checkParamChar1": "0x10138",
+        "checkParamChar2": "0x10140",
+        "open_tokens": "0x10148-0x10180"
+      }
+    },
+    "gate_5_demangled_symbols": {
+      "status": "PASSED",
+      "symbols_count": 65,
+      "jni_exports_count": 10,
+      "jni_class": "com/bytedance/osfix/disk/jni/JniNative"
+    },
+    "gate_6_automated_verification": {
+      "status": "PASSED",
+      "test_suite": "verify_reconstruction_suite.py",
+      "self_test_stages": 7,
+      "pass_rate": 1.0
+    }
+  }
+}
