@@ -1,0 +1,56 @@
+{
+  "lib_name": "libfile_lock_pgl.so",
+  "inspected_at": "2026-10-22 09:41:00",
+  "package_target": "com.bykv.vk.openvk.preload.geckox.utils.FileLock",
+  "binary_size_bytes": 6580,
+  "reconstructed_cpp_size_bytes": 44654,
+  "file_count": 14,
+  "gate1_size_bytes": 44654,
+  "gate1_passed": true,
+  "gate2_opcode_count": 6,
+  "gate2_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_count": 6,
+  "gate5_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "functions_verified": [
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nGetFD",
+      "address": "0x00000d34",
+      "size": 184,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nLockFile",
+      "address": "0x00000a48",
+      "size": 212,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nUnlockFile",
+      "address": "0x00000b1c",
+      "size": 212,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nTryLock",
+      "address": "0x00000bf0",
+      "size": 108,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nLockFileSegment",
+      "address": "0x00000c5c",
+      "size": 216,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nRelease",
+      "address": "0x00000dec",
+      "size": 116,
+      "opcode_match": true
+    }
+  ]
+}

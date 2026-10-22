@@ -1,0 +1,56 @@
+{
+  "lib_name": "libfile_lock.so",
+  "inspected_at": "2026-10-22 09:40:00",
+  "package_target": "com.bytedance.geckox.utils.FileLock",
+  "binary_size_bytes": 14080,
+  "reconstructed_cpp_size_bytes": 43455,
+  "file_count": 14,
+  "gate1_size_bytes": 43455,
+  "gate1_passed": true,
+  "gate2_opcode_count": 6,
+  "gate2_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_count": 6,
+  "gate5_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "functions_verified": [
+    {
+      "name": "Java_com_bytedance_geckox_utils_FileLock_nGetFD",
+      "address": "0x00000ce8",
+      "size": 232,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_utils_FileLock_nLockFile",
+      "address": "0x000009fc",
+      "size": 212,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_utils_FileLock_nUnlockFile",
+      "address": "0x00000ad0",
+      "size": 212,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_utils_FileLock_nTryLock",
+      "address": "0x00000ba4",
+      "size": 108,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_utils_FileLock_nLockFileSegment",
+      "address": "0x00000c10",
+      "size": 216,
+      "opcode_match": true
+    },
+    {
+      "name": "Java_com_bytedance_geckox_utils_FileLock_nRelease",
+      "address": "0x00000dd0",
+      "size": 156,
+      "opcode_match": true
+    }
+  ]
+}

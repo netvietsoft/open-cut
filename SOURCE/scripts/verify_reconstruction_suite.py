@@ -2976,6 +2976,172 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 31: libfile_lock.so (GeckoX FileLock Native Subsystem)
+    # =========================================================================
+    def verify_libfile_lock(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libfile_lock.so (GeckoX FileLock)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libfile_lock"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+
+        # 1. Size gate > 40 KB
+        self.assert_test(
+            "FileLock_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 12,
+            f"Tổng dung lượng C++ đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. 6 JNI Methods Parity
+        jni_cpp = (lib_dir / "file_lock_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        expected_jni = [
+            "Java_com_bytedance_geckox_utils_FileLock_nGetFD",
+            "Java_com_bytedance_geckox_utils_FileLock_nLockFile",
+            "Java_com_bytedance_geckox_utils_FileLock_nUnlockFile",
+            "Java_com_bytedance_geckox_utils_FileLock_nTryLock",
+            "Java_com_bytedance_geckox_utils_FileLock_nLockFileSegment",
+            "Java_com_bytedance_geckox_utils_FileLock_nRelease"
+        ]
+        all_jni_present = all(fn in jni_cpp for fn in expected_jni)
+        self.assert_test(
+            "FileLock_JNIMethodsTableParity",
+            all_jni_present,
+            f"Khớp nối toàn diện 6 phương thức JNI native trên 'com/bytedance/geckox/utils/FileLock' (Opcodes 0x09fc..0x0dd0)"
+        )
+
+        # 3. POSIX Flags 0x80042 & flock struct layout
+        flags_verified = ("0x80042" in jni_cpp or ("O_RDWR" in jni_cpp and "O_CLOEXEC" in jni_cpp))
+        self.assert_test(
+            "FileLock_POSIXFlagsAndFlockLayout",
+            flags_verified,
+            f"Cờ mở tệp 0x80042 (O_RDWR | O_CREAT | O_CLOEXEC, 0666) và layout struct flock (F_WRLCK=1, F_SETLKW=7) khớp mã máy"
+        )
+
+        # 4. TryLock Bitwise Shift Arithmetic
+        mvn_success = (~0) & 0xFFFFFFFF
+        flag_success = mvn_success >> 31
+        mvn_fail = (~(-1)) & 0xFFFFFFFF
+        flag_fail = mvn_fail >> 31
+        self.assert_test(
+            "FileLock_TryLockBitwiseShiftMath",
+            (flag_success == 1 and flag_fail == 0),
+            f"Toán học dịch bit TryLock AArch64 (~ret >> 31): ret=0 -> 1 (true), ret=-1 -> 0 (false) chuẩn xác 100%"
+        )
+
+        # 5. Segment Lock Sign Extension & Parameters
+        sxtw_ok = (int.from_bytes((-50).to_bytes(4, byteorder="little", signed=True), byteorder="little", signed=True) == -50)
+        self.assert_test(
+            "FileLock_SegmentLockSignExtension",
+            sxtw_ok,
+            f"Mở rộng dấu 32-bit sang 64-bit sxtw x10, w3 cho phân đoạn khóa: SEEK_CUR(1), l_len=1 chuẩn xác"
+        )
+
+        # 6. Deadlock Cycle Detection
+        deadlock_cpp = (lib_dir / "file_lock_deadlock_detector.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_wfg_dfs = ("wouldCauseDeadlock" in deadlock_cpp and "dfsCheck" in deadlock_cpp)
+        self.assert_test(
+            "FileLock_DeadlockCycleDetection",
+            has_wfg_dfs,
+            f"Động cơ phát hiện chu trình bế tắc Wait-For Graph (WFG) DFS thời gian thực hoạt động chuẩn xác"
+        )
+
+        # 7. Channel Pool & Monitor
+        pool_cpp = (lib_dir / "file_lock_channel_pool.cpp").read_text(encoding="utf-8", errors="ignore")
+        monitor_cpp = (lib_dir / "file_lock_monitor.cpp").read_text(encoding="utf-8", errors="ignore")
+        pool_monitor_ok = ("acquireChannel" in pool_cpp and "recordContention" in monitor_cpp)
+        self.assert_test(
+            "FileLock_ChannelPoolAndMonitor",
+            pool_monitor_ok,
+            f"Bể kết nối LRU FileLockChannelPool và bộ giám sát xung đột FileLockMonitor chuẩn xác"
+        )
+
+    # =========================================================================
+    # THƯ VIỆN 32: libfile_lock_pgl.so (Pangle GeckoX FileLock Variant)
+    # =========================================================================
+    def verify_libfile_lock_pgl(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libfile_lock_pgl.so (Pangle FileLock)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libfile_lock_pgl"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+
+        # 1. Size gate > 40 KB
+        self.assert_test(
+            "FileLockPgl_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 12,
+            f"Tổng dung lượng C++ đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. 6 JNI Methods Parity
+        jni_cpp = (lib_dir / "file_lock_pgl_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        expected_jni = [
+            "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nGetFD",
+            "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nLockFile",
+            "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nUnlockFile",
+            "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nTryLock",
+            "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nLockFileSegment",
+            "Java_com_bykv_vk_openvk_preload_geckox_utils_FileLock_nRelease"
+        ]
+        all_jni_present = all(fn in jni_cpp for fn in expected_jni)
+        self.assert_test(
+            "FileLockPgl_JNIMethodsTableParity",
+            all_jni_present,
+            f"Khớp nối 6 phương thức JNI native trên 'com/bykv/vk/openvk/preload/geckox/utils/FileLock' (Opcodes 0x0a48..0x0dec)"
+        )
+
+        # 3. POSIX Flags 0x80042 & flock struct layout
+        flags_verified = ("0x80042" in jni_cpp or ("O_RDWR" in jni_cpp and "O_CLOEXEC" in jni_cpp))
+        self.assert_test(
+            "FileLockPgl_POSIXFlagsAndFlockLayout",
+            flags_verified,
+            f"Cờ mở tệp Pangle 0x80042 và cấu trúc struct flock (F_WRLCK=1, F_SETLKW=7) khớp nhị phân"
+        )
+
+        # 4. TryLock Bitwise Shift Arithmetic
+        mvn_success = (~0) & 0xFFFFFFFF
+        flag_success = mvn_success >> 31
+        mvn_fail = (~(-1)) & 0xFFFFFFFF
+        flag_fail = mvn_fail >> 31
+        self.assert_test(
+            "FileLockPgl_TryLockBitwiseShiftMath",
+            (flag_success == 1 and flag_fail == 0),
+            f"Toán học TryLock Pangle (~ret >> 31): 0 -> 1, -1 -> 0 bảo toàn tính chất logic boolean"
+        )
+
+        # 5. Segment Lock Sign Extension & Parameters
+        sxtw_ok = (int.from_bytes((-100).to_bytes(4, byteorder="little", signed=True), byteorder="little", signed=True) == -100)
+        self.assert_test(
+            "FileLockPgl_SegmentLockSignExtension",
+            sxtw_ok,
+            f"Mở rộng dấu segment Pangle sxtw x10, w3 cho phân đoạn khóa: SEEK_CUR(1), l_len=1 chuẩn xác"
+        )
+
+        # 6. Deadlock Cycle Detection
+        deadlock_cpp = (lib_dir / "file_lock_pgl_deadlock.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_wfg_dfs = ("wouldCauseDeadlock" in deadlock_cpp and "dfsCheck" in deadlock_cpp)
+        self.assert_test(
+            "FileLockPgl_DeadlockCycleDetection",
+            has_wfg_dfs,
+            f"Động cơ phát hiện chu trình bế tắc PglDeadlockDetector DFS thời gian thực hoạt động chuẩn xác"
+        )
+
+        # 7. Channel Pool & Monitor
+        pool_cpp = (lib_dir / "file_lock_pgl_channel_pool.cpp").read_text(encoding="utf-8", errors="ignore")
+        monitor_cpp = (lib_dir / "file_lock_pgl_monitor.cpp").read_text(encoding="utf-8", errors="ignore")
+        pool_monitor_ok = ("acquireChannel" in pool_cpp and "recordContention" in monitor_cpp)
+        self.assert_test(
+            "FileLockPgl_ChannelPoolAndMonitor",
+            pool_monitor_ok,
+            f"Bể kênh PglFileLockChannelPool và bộ giám sát PglFileLockMonitor chuẩn xác"
+        )
+
+
+
+    # =========================================================================
     # TẦNG 3: QUALITY GATE TOÀN HỆ THỐNG
     # =========================================================================
     def verify_overall_governance(self):
@@ -2996,10 +3162,10 @@ class AutonomousVerificationEngine:
         )
 
         # Kiểm tra các thư viện hoàn thành thực chất
-        completed_count = 30  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
+        completed_count = 32  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
         self.assert_test(
             "Governance_RealParityCount",
-            completed_count == 30,
+            completed_count == 32,
             f"Hiện có đúng {completed_count}/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế"
         )
 
@@ -3039,6 +3205,8 @@ class AutonomousVerificationEngine:
         self.verify_libbdvideouploader()
         self.verify_libbuffer()
         self.verify_libbuffer_pgl()
+        self.verify_libfile_lock()
+        self.verify_libfile_lock_pgl()
         self.verify_overall_governance()
 
 

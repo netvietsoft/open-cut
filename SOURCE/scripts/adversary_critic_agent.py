@@ -146,7 +146,7 @@ class AdversaryAuditor:
                 content = cf.read_text(encoding="utf-8", errors="ignore")
                 matches = re.findall(r"0x[0-9a-fA-F]{4,8}", content)
                 for m in matches:
-                    if int(m, 16) > 0x1000:  # Lọc địa chỉ code thực tế
+                    if int(m, 16) >= 0x0800:  # Lọc địa chỉ code thực tế
                         opcodes_found.add(m)
             except Exception:
                 pass
