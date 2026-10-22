@@ -1838,3 +1838,45 @@
   - `SOURCE/GIAI-MA/libshadowhook/jni_bindings.json`
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **259/259 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **38 / 169 thư viện COMPLETED (22.49%)** có 100% thân hàm thực tế.
+
+
+---
+
+## 66. HOÀN THÀNH TÁI DỰNG & ĐỐI KIỂM 100%: libttheif_dec.so (AArch64) — THƯ VIỆN THỨ 39/169
+- **Thời điểm hoàn thành**: 2026-10-22.
+- **Thư viện mục tiêu**: `libttheif_dec.so` (ByteDance HEIF/VVIF Image & Animation Decoder Engine).
+- **Kích thước nhị phân gốc**: 214,864 bytes (AArch64).
+- **Tổng dung lượng mã nguồn C++ tái cấu trúc**: 101,419 bytes (20 tệp mã nguồn sạch, 0 stub, 100% chú thích song ngữ EN + VN).
+- **Kiến trúc và các thành phần cốt lõi được khôi phục**:
+  1. *Cấu trúc & Định nghĩa Kiểu Dữ liệu lõi (`ttheif_types.h`)*:
+     - Hằng số phiên bản ("ttheif_dec version 1.2.0-rc.3").
+     - Hộp FourCC chuẩn ISOBMFF (`ftyp`, `meta`, `hdlr`, `pitm`, `iloc`, `iinf`, `infe`, `iprp`, `ipco`, `ispe`, `colr`, `thmb`, `mdat`).
+     - Định danh Brand (`heic`, `heix`, `hevc`, `mif1`, `msf1`, `vvif`, `vvs1`).
+     - Cấu trúc `heif_image_meta_t`, `heif_output_stream_t`, `heif_anim_context_t`.
+  2. *Bộ Phân Tích Container Chuẩn ISOBMFF (`ttheif_isobmff.h`, `ttheif_isobmff.cpp`)*:
+     - Phân tích phân cấp cây Box đệ quy, lập danh mục các phần tử ảnh `isobmff_item_t`.
+     - Ánh xạ offset dữ liệu thô và kích thước payload từ `iloc`.
+     - Trích xuất kích thước chiều rộng/cao từ `ispe`.
+     - Nhận diện phần tử ảnh chính (`pitm`), thumbnail (`thmb`) và siêu dữ liệu EXIF (`infe`).
+  3. *Động Cơ Chuyển Đổi Không Gian Màu YUV sang RGB (`ttheif_color.h`, `ttheif_color.cpp`)*:
+     - Ma trận màu ITU-R BT.601 số nguyên: chuyển đổi phẳng YUV420P sang đóng gói RGBA8888, RGB888, và RGB565.
+     - Hàm nén kẹp giá trị `clamp_u8` [0, 255] và đóng gói 16-bit RGB565: `((r >> 3) << 11) | ((g >> 2) << 5) | (b >> 3)`.
+  4. *Bộ Bóc Tách Hướng Xoay EXIF (`ttheif_exif.h`, `ttheif_exif.cpp`)*:
+     - Triển khai `heif_get_orientation_from_exif`: duyệt header TIFF Little Endian ("II") và Big Endian ("MM"), kiểm tra magic 42, quét thẻ IFD0 Tag `0x0112` (Orientation 1..8).
+  5. *Động Cơ Cốt Lõi Giải Mã Ảnh Tĩnh HEIF (`ttheif_core.h`, `ttheif_core.cpp`)*:
+     - 27 hàm API xuất khẩu: `heif_get_version`, `heif_judge_file_type`, `heif_parse_meta`, `heif_parse_simple_meta`, `heif_parse_thumb`.
+     - Giải mã sang RGBA, RGB, RGB565, YUV420P và thumbnail (hỗ trợ cả bộ đệm nội bộ và bên ngoài).
+     - Cầu nối vòng đời bộ giải mã `create_bytevc1_decoder` và `destroy_bytevc1_decoder`.
+  6. *Bộ Giải Mã Chuỗi Hoạt Ảnh Đa Khung Hình (`ttheif_anim.h`, `ttheif_anim.cpp`)*:
+     - Quản lý ngữ cảnh hoạt ảnh `heif_anim_heif_ctx_init`, `heif_anim_parse_heif_box`, `heif_anim_get_current_frame_index`.
+     - Giải mã tuần tự đa khung hình sang RGBA, RGB, YUV420P và đồng bộ dấu thời gian PTS.
+  7. *Phân Hệ Định Dạng Ảnh Thế Hệ Mới VVIF (`ttheif_vvif.h`, `ttheif_vvif.cpp`)*:
+     - Xử lý container ảnh VVC / H.266 / ByteVC2: `vvif_judge_file_type`, `vvif_parse_meta`, `vvif_decode_to_rgba`, `vvif_decode_to_rgb565`, `vvif_decode_to_yuv420p`.
+     - Tiện ích đóng gói luồng bitstream VVC thô thành file container VVIF hoàn chỉnh: `mux_vvc_to_vvif`.
+  8. *Bộ Tự Kiểm Thử Khép Kín 7 Giai Đoạn (`ttheif_dec_interface.h`, `ttheif_dec_interface.cpp`)*:
+     - 7/7 giai đoạn kiểm thử tự động nội bộ đạt kết quả 100% PASS.
+- **Thẩm định đối kháng độc lập từ Agent 13**: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại:
+  - `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttheif_dec.md` và `.json`
+  - `SOURCE/GIAI-MA/libttheif_dec/jni_bindings.json`
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **266/266 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **39 / 169 thư viện COMPLETED (23.08%)** có 100% thân hàm thực tế.

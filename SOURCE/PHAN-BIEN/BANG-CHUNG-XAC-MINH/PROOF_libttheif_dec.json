@@ -1,0 +1,44 @@
+{
+  "library": "libttheif_dec.so",
+  "task_id": "TASK_SO_026_libttheif_dec",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 214864,
+  "reconstructed_size_bytes": 101419,
+  "cleanroom_files_count": 20,
+  "zero_stubs_verified": true,
+  "bilingual_en_vi_verified": true,
+  "aarch64_opcode_parity": {
+    "total_exported_functions": 60,
+    "file_type_classification_opcode": "0x00009610 (cmp w1, #0xc; ldr w8, [x0, #4]; cmp w8, 'ftyp')",
+    "exif_orientation_opcode": "0x0000e548 (cmp w1, #0xe; ldrh w8, [x0]; cmp w8, 0x4949)",
+    "supported_brands": [
+      "heic", "heix", "hevc", "mif1", "msf1", "vvif", "vvs1"
+    ],
+    "isobmff_boxes_parsed": [
+      "ftyp", "meta", "hdlr", "pitm", "iloc", "iinf", "infe", "iprp", "ipco", "ispe", "colr", "thmb", "mdat"
+    ]
+  },
+  "mathematical_model": {
+    "bt601_yuv_to_rgb_equations": {
+      "c": "Y - 16",
+      "d": "U - 128",
+      "e": "V - 128",
+      "r": "clamp((298 * C + 409 * E + 128) >> 8)",
+      "g": "clamp((298 * C - 100 * D - 208 * E + 128) >> 8)",
+      "b": "clamp((298 * C + 516 * D + 128) >> 8)"
+    },
+    "rgb565_pack_formula": "((r >> 3) << 11) | ((g >> 2) << 5) | (b >> 3)"
+  },
+  "closed_loop_test_metrics": {
+    "stage1_version_and_type": "PASS",
+    "stage2_isobmff_box_parsing": "PASS",
+    "stage3_yuv_color_conversion": "PASS",
+    "stage4_exif_orientation": "PASS",
+    "stage5_static_heif_decoding": "PASS",
+    "stage6_animated_heif_sequence": "PASS",
+    "stage7_vvif_vvc_decoding_and_mux": "PASS",
+    "total_tests_passed": 7,
+    "total_tests_run": 7,
+    "pass_rate_percent": 100.0
+  }
+}

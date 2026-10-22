@@ -460,10 +460,22 @@
   8. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json (Thư viện số 38/169).
   9. Bộ kiểm thử khép kín đạt 259/259 tests PASS (100.0%).
 
-- [ ] TASK-078-RECONSTRUCTION-LIBTTHEIF_DEC (2026-10-22, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libttheif_dec.so (IMAGE_01_BYTEDANCE_HEIF_DECODER_ENGINE)**:
-  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libttheif_dec.so` (ByteDance HEIF/HEIC Image Decoding Subsystem).
-  2. Bóc tách toàn bộ bảng biểu tượng, JNI exports, cấu trúc giải mã HEIC/AVIF ISO/IEC 23008-12 container, NAL unit parser, color space converter (YUV420 to RGBA8888), and thumbnail extraction.
-  3. Triển khai mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libttheif_dec/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
-  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttheif_dec.md` & `.json`.
-  5. Mở rộng suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS (266 tests).
+- [x] TASK-078-RECONSTRUCTION-LIBTTHEIF_DEC (2026-10-22, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Toàn Diện Thuật Toán libttheif_dec.so (IMAGE_01_BYTEDANCE_HEIF_DECODER_ENGINE)**:
+  1. Tái dựng 20 files (101.42 KB C++, 0 stub) cho `libttheif_dec.so`, vượt chuẩn dung lượng (> 40 KB, 0 stub rỗng) với song ngữ EN + VN.
+  2. Khôi phục toàn diện 60 hàm C API xuất khẩu của thư viện (static HEIF, animated HEIF sequence, và VVIF engine).
+  3. Bộ phân tích container ISOBMFF duyệt cây Box chuẩn ISO/IEC 23008-12: ftyp, meta, pitm, iloc, infe, ispe, colr, thmb, mdat.
+  4. Ma trận chuyển đổi màu ITU-R BT.601 số nguyên: YUV420P sang RGBA8888, RGB888 và đóng gói 16-bit RGB565 chuẩn xác.
+  5. Phân tích siêu dữ liệu TIFF IFD0 EXIF phân giải endianness, magic 42 và thẻ hướng xoay Tag 0x0112 (Orientation 1..8).
+  6. Động cơ giải mã chuỗi ảnh động Animated HEIF đa khung hình hỗ trợ lập lịch PTS, lặp frame và bóc tách access unit.
+  7. Phân hệ định dạng ảnh thế hệ mới VVIF và công cụ Muxing VVC đóng gói luồng bitstream vào container hoàn chỉnh.
+  8. Bộ tự kiểm thử nội bộ 7 giai đoạn `ttheif_run_self_test()` đạt 7/7 STAGES PASSED (100.0%).
+  9. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json (Thư viện số 39/169).
+  10. Bộ kiểm thử khép kín đạt 266/266 tests PASS (100.0%).
+
+- [ ] TASK-079-RECONSTRUCTION-LIBTTCRYPTO (2026-10-22, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libttcrypto.so (SECURITY_01_BYTEDANCE_CRYPTO_ENGINE)**:
+  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libttcrypto.so` (ByteDance Crypto & Security Engine).
+  2. Bóc tách toàn bộ bảng biểu tượng, JNI exports, thuật toán mã hóa đối xứng AES-GCM/CBC, băm mật mã SHA256/MD5/SM3, đường cong elliptic ECDSA/SM2, và cơ chế bảo vệ token bản quyền.
+  3. Triển khai mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libttcrypto/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
+  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttcrypto.md` & `.json`.
+  5. Mở rộng suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS (273 tests).
   6. Agent 13 nghiệm thu cấp chứng nhận `VERIFIED_AND_ACCEPTED` tại `LEDGER_DOI_KHANG.json`.

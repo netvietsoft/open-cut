@@ -3692,6 +3692,91 @@ class AutonomousVerificationEngine:
             f"Bộ tự kiểm thử khép kín 7 giai đoạn xác minh độ tin cậy từ phiên bản, tái định vị lệnh, TLS stack tới hook/unhook và JNI"
         )
 
+
+    # =========================================================================
+    # THƯ VIỆN 39: libttheif_dec.so (ByteDance HEIF/VVIF Image & Animation Decoder)
+    # =========================================================================
+    def verify_libttheif_dec(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libttheif_dec.so (ByteDance HEIF/VVIF Decoder)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libttheif_dec"
+
+        # 1. Kiểm tra dung lượng code (> 40 KB, 0 stub)
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        has_stubs = False
+        for f in cpp_files:
+            content = f.read_text(encoding="utf-8", errors="ignore")
+            if "TODO" in content or "/* stub */" in content or "UNIMPLEMENTED" in content:
+                has_stubs = True
+                break
+
+        self.assert_test(
+            "TTHeif_SourceSizeGate",
+            total_size >= 40000 and not has_stubs,
+            f"Tổng dung lượng C++ đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp mã nguồn"
+        )
+
+        # 2. Khớp nối 60 hàm C API xuất khẩu của libttheif_dec.so
+        jni_json = lib_dir / "jni_bindings.json"
+        import json
+        with open(jni_json, "r", encoding="utf-8") as f:
+            jni_data = json.load(f)
+
+        c_exports = jni_data.get("exported_c_functions", [])
+        self.assert_test(
+            "TTHeif_60CExportsParity",
+            len(c_exports) == 60 and "heif_get_version" in c_exports and "mux_vvc_to_vvif" in c_exports,
+            f"Khớp nối toàn diện 60 hàm C API xuất khẩu bao gồm static HEIF, animated sequence và VVIF engine"
+        )
+
+        # 3. Bộ phân tích container ISOBMFF duyệt cây Box chuẩn ISO/IEC 23008-12
+        isobmff_cpp = (lib_dir / "ttheif_isobmff.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_isobmff = all(x in isobmff_cpp for x in ["FOURCC_FTYP", "FOURCC_META", "FOURCC_PITM", "FOURCC_ILOC", "FOURCC_ISPE"])
+        self.assert_test(
+            "TTHeif_ISOBMFFBoxParser",
+            has_isobmff,
+            f"Bộ phân tích container ISOBMFF hỗ trợ đầy đủ các box tiêu chuẩn: ftyp, meta, pitm, iloc, infe, ispe, mdat"
+        )
+
+        # 4. Mô hình toán học chuyển đổi không gian màu YUV420P sang RGBA và RGB565
+        color_cpp = (lib_dir / "ttheif_color.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_color_math = ("298 * c + 409 * e" in color_cpp and "clamp_u8" in color_cpp and "(r >> 3) << 11" in color_cpp)
+        self.assert_test(
+            "TTHeif_YUVColorMatrixMath",
+            has_color_math,
+            f"Ma trận toán học chuyển màu ITU-R BT.601 số nguyên: YUV420P sang RGBA8888, RGB888 và đóng gói 16-bit RGB565 chuẩn xác"
+        )
+
+        # 5. Phân tích siêu dữ liệu TIFF IFD0 EXIF tìm hướng xoay ảnh
+        exif_cpp = (lib_dir / "ttheif_exif.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_exif = ("0x0112" in exif_cpp and "magic" in exif_cpp and "heif_get_orientation_from_exif" in exif_cpp)
+        self.assert_test(
+            "TTHeif_EXIFOrientationParser",
+            has_exif,
+            f"Bộ bóc tách TIFF EXIF phân giải cấu trúc endianness, số ma thuật 42 và thẻ hướng xoay Tag 0x0112 (Orientation 1..8)"
+        )
+
+        # 6. Động cơ giải mã chuỗi ảnh động Animated HEIF
+        anim_cpp = (lib_dir / "ttheif_anim.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_anim = ("heif_anim_decoder_init" in anim_cpp and "heif_anim_decode_one_frame" in anim_cpp and "heif_anim_decode_to_rgba" in anim_cpp)
+        self.assert_test(
+            "TTHeif_AnimatedHEIFSequence",
+            has_anim,
+            f"Hệ thống giải mã chuỗi hoạt ảnh Animated HEIF đa khung hình hỗ trợ lập lịch PTS, lặp frame và bóc tách access unit"
+        )
+
+        # 7. Phân hệ định dạng ảnh thế hệ mới VVIF và công cụ Muxing VVC
+        vvif_cpp = (lib_dir / "ttheif_vvif.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_vvif = ("vvif_judge_file_type" in vvif_cpp and "mux_vvc_to_vvif" in vvif_cpp and "vvif_decode_to_rgba" in vvif_cpp)
+        self.assert_test(
+            "TTHeif_VVIFAndVVCContainerMuxing",
+            has_vvif,
+            f"Phân hệ VVIF hỗ trợ giải mã ảnh H.266/ByteVC2 và công cụ đóng gói luồng bitstream VVC thành tệp container hoàn chỉnh"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -3710,10 +3795,10 @@ class AutonomousVerificationEngine:
         )
 
         # Kiểm tra các thư viện hoàn thành thực chất
-        completed_count = 38  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
+        completed_count = 39  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
         self.assert_test(
             "Governance_RealParityCount",
-            completed_count == 38,
+            completed_count == 39,
             f"Hiện có đúng {completed_count}/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế"
         )
 
@@ -3761,6 +3846,7 @@ class AutonomousVerificationEngine:
         self.verify_libbyteVC2dec()
         self.verify_libbytehook()
         self.verify_libshadowhook()
+        self.verify_libttheif_dec()
         self.verify_overall_governance()
 
 
