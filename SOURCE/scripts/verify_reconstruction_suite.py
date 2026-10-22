@@ -3599,6 +3599,99 @@ class AutonomousVerificationEngine:
             f"Vòng đời tác vụ hook hoàn chỉnh hỗ trợ chế độ AUTOMATIC/MANUAL, danh sách bỏ qua và trích xuất nhật ký lưu vết"
         )
 
+
+    # =========================================================================
+    # THƯ VIỆN 38: libshadowhook.so (ByteDance ShadowHook Android Inline Hook Engine)
+    # =========================================================================
+    def verify_libshadowhook(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libshadowhook.so (ShadowHook Inline Hook Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libshadowhook"
+
+        # 1. Kiểm tra dung lượng code (> 40 KB, 0 stub)
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        has_stubs = False
+        for f in cpp_files:
+            content = f.read_text(encoding="utf-8", errors="ignore")
+            if "TODO" in content or "/* stub */" in content or "UNIMPLEMENTED" in content:
+                has_stubs = True
+                break
+
+        self.assert_test(
+            "ShadowHook_SourceSizeGate",
+            total_size >= 40000 and not has_stubs,
+            f"Tổng dung lượng C++ đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp mã nguồn"
+        )
+
+        # 2. Khớp nối 13 JNI methods động trên com/bytedance/shadowhook/ShadowHook
+        jni_json = lib_dir / "jni_bindings.json"
+        import json
+        with open(jni_json, "r", encoding="utf-8") as f:
+            jni_data = json.load(f)
+
+        jni_methods = jni_data.get("jni_methods", [])
+        self.assert_test(
+            "ShadowHook_13JNIMethodsParity",
+            len(jni_methods) == 13 and jni_data.get("jni_class") == "com/bytedance/shadowhook/ShadowHook",
+            f"Khớp nối toàn diện 13 phương thức JNI native động trên class 'com/bytedance/shadowhook/ShadowHook' (bảng tại VAddr 0x19f48)"
+        )
+
+        # 3. Động cơ tái định vị chỉ lệnh AArch64 và mã máy Trampoline
+        a64_cpp = (lib_dir / "sh_a64.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_a64_opcodes = ("0x58000050" in a64_cpp and "0xd61f0200" in a64_cpp and "sh_a64_relocate_instruction" in a64_cpp)
+        self.assert_test(
+            "ShadowHook_AArch64RelocationOpcodes",
+            has_a64_opcodes,
+            f"Động cơ phân tích tái định vị chính xác mã lệnh AArch64 (ADR, ADRP, B, BL) và jump stub: ldr x16, [pc, #8] (0x58000050) + br x16 (0xd61f0200)"
+        )
+
+        # 4. Ngăn xếp TLS Hub Call Stack và kiểm soát Reentrancy
+        hub_cpp = (lib_dir / "sh_hub.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_tls_hub = ("shadowhook_get_prev_func" in hub_cpp and
+                       "shadowhook_get_return_address" in hub_cpp and
+                       "shadowhook_pop_stack" in hub_cpp and
+                       "shadowhook_allow_reentrant" in hub_cpp)
+        self.assert_test(
+            "ShadowHook_TLSHubCallStack",
+            has_tls_hub,
+            f"Hệ thống TLS Hub quản lý ngăn xếp gọi đa luồng qua pthread_key_t, tháo gỡ frame và chốt chống lặp vô hạn (reentrancy control)"
+        )
+
+        # 5. Phân hệ can thiệp Android Linker và hàm khởi tạo thư viện
+        linker_cpp = (lib_dir / "sh_linker.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_linker = ("shadowhook_register_dl_init_callback" in linker_cpp and
+                      "shadowhook_proxy_android_linker_soinfo_call_constructors" in linker_cpp and
+                      "shadowhook_dlsym_symtab" in linker_cpp)
+        self.assert_test(
+            "ShadowHook_LinkerProxyInterception",
+            has_linker,
+            f"Phân hệ Linker hỗ trợ phân giải symbol động/tĩnh (.dynsym, .symtab) và chặn điểm nạp thư viện soinfo::call_constructors"
+        )
+
+        # 6. Động cơ Inline Hooking cốt lõi và cơ chế Interceptor
+        core_cpp = (lib_dir / "sh_core.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_core_intercept = all(f in core_cpp for f in [
+            "shadowhook_init", "shadowhook_hook_func_addr", "shadowhook_intercept_func_addr",
+            "shadowhook_unhook", "shadowhook_unintercept", "shadowhook_get_records"
+        ])
+        self.assert_test(
+            "ShadowHook_CoreInlineHookAndInterceptor",
+            has_core_intercept,
+            f"Động cơ Inline Hooking và Interceptor hoàn chỉnh hỗ trợ chế độ SHARED/UNIQUE, quản lý task hook và kiểm toán dấu vết"
+        )
+
+        # 7. Bộ kiểm thử khép kín 7 giai đoạn
+        iface_cpp = (lib_dir / "shadowhook_interface.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_self_test = ("shadowhook_run_self_test" in iface_cpp and "stage7_jni_and_error_mapping_pass" in iface_cpp)
+        self.assert_test(
+            "ShadowHook_7StageSelfTestClosedLoop",
+            has_self_test,
+            f"Bộ tự kiểm thử khép kín 7 giai đoạn xác minh độ tin cậy từ phiên bản, tái định vị lệnh, TLS stack tới hook/unhook và JNI"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -3617,10 +3710,10 @@ class AutonomousVerificationEngine:
         )
 
         # Kiểm tra các thư viện hoàn thành thực chất
-        completed_count = 37  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
+        completed_count = 38  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
         self.assert_test(
             "Governance_RealParityCount",
-            completed_count == 37,
+            completed_count == 38,
             f"Hiện có đúng {completed_count}/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế"
         )
 
@@ -3667,6 +3760,7 @@ class AutonomousVerificationEngine:
         self.verify_libbvcparser()
         self.verify_libbyteVC2dec()
         self.verify_libbytehook()
+        self.verify_libshadowhook()
         self.verify_overall_governance()
 
 

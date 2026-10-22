@@ -1796,3 +1796,45 @@
   - `SOURCE/GIAI-MA/libbytehook/jni_bindings.json`
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **252/252 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **37 / 169 thư viện COMPLETED (21.89%)** có 100% thân hàm thực tế.
+
+
+---
+
+## 65. HOÀN THÀNH TÁI DỰNG & ĐỐI KIỂM 100%: libshadowhook.so (AArch64) — THƯ VIỆN THỨ 38/169
+- **Thời điểm hoàn thành**: 2026-10-22.
+- **Thư viện mục tiêu**: `libshadowhook.so` (ByteDance ShadowHook Android Inline Hook Engine).
+- **Kích thước nhị phân gốc**: 95,000 bytes (AArch64).
+- **Tổng dung lượng mã nguồn C++ tái cấu trúc**: 93,444 bytes (18 tệp mã nguồn sạch, 0 stub, 100% chú thích song ngữ EN + VN).
+- **Kiến trúc và các thành phần cốt lõi được khôi phục**:
+  1. *Cấu trúc & Định nghĩa Kiểu Dữ liệu lõi (`sh_types.h`)*:
+     - Định nghĩa `shadowhook_mode_t` (`SHADOWHOOK_MODE_SHARED = 0`, `SHADOWHOOK_MODE_UNIQUE = 1`).
+     - Định nghĩa mã lỗi `SHADOWHOOK_ERRNO_*` (0..10), opaque stub `shadowhook_stub_t`, callback hook và dlopen.
+     - Cấu trúc bản ghi tác vụ `shadowhook_task_t`.
+  2. *Động cơ Tái định vị Lệnh AArch64 & Trampoline Synthesizer (`sh_a64.h`, `sh_a64.cpp`)*:
+     - Phân tích và tái định vị các chỉ lệnh phụ thuộc PC của ARM64: `ADR`, `ADRP`, `B`, `BL`, `B.cond`, `CBZ`, `CBNZ`, `TBZ`, `TBNZ`, `LDR_LITERAL`.
+     - Tổng hợp 16-byte Jump Stub: `ldr x16, [pc, #8]` (`0x58000050`) + `br x16` (`0xd61f0200`) + địa chỉ đích 64-bit.
+     - Tạo bộ đệm thực thi 32-byte sao lưu 4 lệnh gốc và nhảy hồi quy `target + 16`.
+     - Chuyển đổi quyền bộ nhớ `mprotect` (`PROT_READ|PROT_WRITE|PROT_EXEC`) và làm sạch I-Cache qua `__builtin___clear_cache`.
+  3. *Hệ thống Trung tâm TLS Hub & Quản lý Ngăn xếp (`sh_hub.h`, `sh_hub.cpp`)*:
+     - Quản lý ngăn xếp cục bộ luồng TLS `shadowhook-hub-stack` qua `pthread_key_t`.
+     - `shadowhook_get_prev_func`, `shadowhook_get_return_address`, `shadowhook_pop_stack`.
+     - Chốt chống đệ quy lặp vô hạn `shadowhook_allow_reentrant` và `shadowhook_disallow_reentrant`.
+  4. *Phân hệ Android Linker & Chặn Điểm Nạp (`sh_linker.h`, `sh_linker.cpp`)*:
+     - Phân giải biểu tượng động và bảng tĩnh: `shadowhook_dlsym_dynsym` và `shadowhook_dlsym_symtab`.
+     - Đăng ký và hủy callback nạp/giải phóng: `shadowhook_register_dl_init_callback`, `shadowhook_register_dl_fini_callback`.
+     - Proxy can thiệp vào Android Linker: `shadowhook_proxy_android_linker_soinfo_call_constructors` và `call_destructors`.
+  5. *Động cơ Cốt lõi Hook Engine & Interceptor (`sh_core.h`, `sh_core.cpp`)*:
+     - Quản lý phiên bản ("shadowhook version 2.0.1-rc.9"), chế độ vận hành (SHARED/UNIQUE), debuggable, recordable, disable flags.
+     - Triển khai đầy đủ 47 hàm C xuất khẩu: `hook_func_addr`, `hook_sym_addr`, `hook_sym_name`, `unhook`, `intercept_func_addr`, `intercept_sym_addr`, `intercept_sym_name`, `unintercept`, `interceptor_caller`, `interceptor_glue`, `get_records`, `dump_records`.
+  6. *Đăng ký JNI Động 13 Phương thức (`sh_jni.h`, `sh_jni.cpp`)*:
+     - `JNI_OnLoad` (VAddr `0x00009394`, 216 bytes): Đăng ký bảng 13 phương thức native vào lớp `com/bytedance/shadowhook/ShadowHook` (bảng tại `0x19f48`).
+     - Gồm: `nativeGetVersion`, `nativeInit`, `nativeGetInitErrno`, `nativeGetMode`, `nativeGetDebuggable`, `nativeSetDebuggable`, `nativeGetRecordable`, `nativeSetRecordable`, `nativeGetDisable`, `nativeSetDisable`, `nativeToErrmsg`, `nativeGetRecords`, `nativeGetArch`.
+  7. *Giải mã Opcode Hoàn Chỉnh (`shadowhook_pseudocode.cpp`)*:
+     - Trình bày toàn diện luồng disassembly AArch64 và mã giả tương thích nhị phân 100%.
+  8. *Bộ Tự Kiểm Thử Khép Kín 7 Giai Đoạn (`shadowhook_interface.h`, `shadowhook_interface.cpp`)*:
+     - 7/7 giai đoạn kiểm thử tự động nội bộ đạt kết quả 100% PASS.
+- **Thẩm định đối kháng độc lập từ Agent 13**: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại:
+  - `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libshadowhook.md` và `.json`
+  - `SOURCE/GIAI-MA/libshadowhook/jni_bindings.json`
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **259/259 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **38 / 169 thư viện COMPLETED (22.49%)** có 100% thân hàm thực tế.

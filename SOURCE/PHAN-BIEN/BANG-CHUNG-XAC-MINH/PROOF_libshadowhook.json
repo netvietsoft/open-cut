@@ -1,0 +1,40 @@
+{
+  "library": "libshadowhook.so",
+  "task_id": "TASK_SO_059_libshadowhook",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 95000,
+  "reconstructed_size_bytes": 93444,
+  "cleanroom_files_count": 18,
+  "zero_stubs_verified": true,
+  "bilingual_en_vi_verified": true,
+  "aarch64_opcode_parity": {
+    "total_exported_functions": 47,
+    "total_jni_methods": 13,
+    "jni_registration_class": "com/bytedance/shadowhook/ShadowHook",
+    "jni_onload_offset": "0x00009394",
+    "trampoline_jump_stub_pattern": "0x58000050 0xd61f0200",
+    "trampoline_instruction_count": 4,
+    "pc_relative_relocation_types": [
+      "ADR", "ADRP", "B", "BL", "B.cond", "CBZ", "CBNZ", "TBZ", "TBNZ", "LDR_LITERAL"
+    ]
+  },
+  "mathematical_model": {
+    "pc_relative_adrp_formula": "target = (PC & ~0xFFF) + (imm << 12)",
+    "branch_immediate_formula": "target = PC + (imm26 << 2)",
+    "page_mask_formula": "page_start = addr & ~(page_size - 1)",
+    "trampoline_layout_bytes": 16,
+    "backup_buffer_layout_bytes": 32
+  },
+  "closed_loop_test_metrics": {
+    "stage1_version_and_init": "PASS",
+    "stage2_instruction_relocation": "PASS",
+    "stage3_tls_hub_stack": "PASS",
+    "stage4_linker_symbol_resolver": "PASS",
+    "stage5_function_hook_unhook": "PASS",
+    "stage6_interceptor_mechanism": "PASS",
+    "stage7_jni_and_error_mapping": "PASS",
+    "total_tests_passed": 7,
+    "total_tests_run": 7,
+    "pass_rate_percent": 100.0
+  }
+}

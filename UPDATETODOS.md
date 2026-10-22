@@ -449,10 +449,21 @@
   9. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json (Thư viện số 37/169).
   10. Bộ kiểm thử khép kín đạt 252/252 tests PASS (100.0%).
 
-- [ ] TASK-077-RECONSTRUCTION-LIBSHADOWHOOK (2026-10-22, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libshadowhook.so (CORE_12_BYTEDANCE_INLINE_HOOKING_ENGINE)**:
-  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libshadowhook.so` (ByteDance ShadowHook Android Inline Hook Engine).
-  2. Bóc tách toàn bộ bảng biểu tượng, JNI exports, cơ chế ghi đè mã lệnh AArch64 inline trampoline, relocation instruction rewrite (PC-relative ldr/adr/b/cbz/tbz), và thread safety.
-  3. Triển khai mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libshadowhook/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
-  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libshadowhook.md` & `.json`.
-  5. Mở rộng suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS (259 tests).
+- [x] TASK-077-RECONSTRUCTION-LIBSHADOWHOOK (2026-10-22, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Toàn Diện Thuật Toán libshadowhook.so (CORE_12_BYTEDANCE_INLINE_HOOKING_ENGINE)**:
+  1. Tái dựng 18 files (93.44 KB C++, 0 stub) cho `libshadowhook.so`, vượt chuẩn dung lượng (> 40 KB, 0 stub rỗng) với song ngữ EN + VN.
+  2. Đăng ký JNI động qua `JNI_OnLoad` (VAddr 0x00009394) cho 13 phương thức native trên class `com/bytedance/shadowhook/ShadowHook` (bảng tại VAddr 0x19f48).
+  3. Động cơ phân tích tái định vị chính xác mã lệnh AArch64 (ADR, ADRP, B, BL, B.cond, CBZ, CBNZ, TBZ, TBNZ, LDR literal) và jump stub: `ldr x16, [pc, #8]` (`0x58000050`) + `br x16` (`0xd61f0200`).
+  4. Quản lý ngăn xếp cuộc gọi luồng TLS (`shadowhook-hub-stack`) qua `pthread_key_t`, tháo gỡ frame và chống đệ quy lặp vô hạn.
+  5. Phân hệ Linker hỗ trợ phân giải symbol (.dynsym, .symtab) và can thiệp nạp thư viện `soinfo::call_constructors/call_destructors`.
+  6. Động cơ Inline Hooking và Interceptor hoàn chỉnh: 47 hàm C xuất khẩu, quản lý bản ghi tác vụ và kiểm toán dấu vết.
+  7. Bộ tự kiểm thử nội bộ 7 giai đoạn `shadowhook_run_self_test()` đạt 7/7 STAGES PASSED (100.0%).
+  8. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json (Thư viện số 38/169).
+  9. Bộ kiểm thử khép kín đạt 259/259 tests PASS (100.0%).
+
+- [ ] TASK-078-RECONSTRUCTION-LIBTTHEIF_DEC (2026-10-22, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libttheif_dec.so (IMAGE_01_BYTEDANCE_HEIF_DECODER_ENGINE)**:
+  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libttheif_dec.so` (ByteDance HEIF/HEIC Image Decoding Subsystem).
+  2. Bóc tách toàn bộ bảng biểu tượng, JNI exports, cấu trúc giải mã HEIC/AVIF ISO/IEC 23008-12 container, NAL unit parser, color space converter (YUV420 to RGBA8888), and thumbnail extraction.
+  3. Triển khai mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libttheif_dec/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
+  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttheif_dec.md` & `.json`.
+  5. Mở rộng suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS (266 tests).
   6. Agent 13 nghiệm thu cấp chứng nhận `VERIFIED_AND_ACCEPTED` tại `LEDGER_DOI_KHANG.json`.

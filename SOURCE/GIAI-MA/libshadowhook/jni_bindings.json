@@ -1,1 +1,122 @@
-[]
+{
+  "library": "libshadowhook.so",
+  "version": "2.0.1-rc.9",
+  "arch": "arm64-v8a",
+  "jni_class": "com/bytedance/shadowhook/ShadowHook",
+  "jni_methods": [
+    {
+      "name": "nativeGetVersion",
+      "signature": "()Ljava/lang/String;",
+      "offset": "0x0000946c"
+    },
+    {
+      "name": "nativeInit",
+      "signature": "(IZ)I",
+      "offset": "0x000094a4"
+    },
+    {
+      "name": "nativeGetInitErrno",
+      "signature": "()I",
+      "offset": "0x000094c4"
+    },
+    {
+      "name": "nativeGetMode",
+      "signature": "()I",
+      "offset": "0x000094c8"
+    },
+    {
+      "name": "nativeGetDebuggable",
+      "signature": "()Z",
+      "offset": "0x000094f8"
+    },
+    {
+      "name": "nativeSetDebuggable",
+      "signature": "(Z)V",
+      "offset": "0x00009510"
+    },
+    {
+      "name": "nativeGetRecordable",
+      "signature": "()Z",
+      "offset": "0x0000951c"
+    },
+    {
+      "name": "nativeSetRecordable",
+      "signature": "(Z)V",
+      "offset": "0x00009534"
+    },
+    {
+      "name": "nativeGetDisable",
+      "signature": "()Z",
+      "offset": "0x00009540"
+    },
+    {
+      "name": "nativeSetDisable",
+      "signature": "(Z)V",
+      "offset": "0x00009558"
+    },
+    {
+      "name": "nativeToErrmsg",
+      "signature": "(I)Ljava/lang/String;",
+      "offset": "0x00009564"
+    },
+    {
+      "name": "nativeGetRecords",
+      "signature": "(I)Ljava/lang/String;",
+      "offset": "0x000095a0"
+    },
+    {
+      "name": "nativeGetArch",
+      "signature": "()Ljava/lang/String;",
+      "offset": "0x000095f0"
+    }
+  ],
+  "exported_c_functions": [
+    "JNI_OnLoad",
+    "shadowhook_init",
+    "shadowhook_get_version",
+    "shadowhook_get_mode",
+    "shadowhook_get_debuggable",
+    "shadowhook_set_debuggable",
+    "shadowhook_get_recordable",
+    "shadowhook_set_recordable",
+    "shadowhook_get_disable",
+    "shadowhook_set_disable",
+    "shadowhook_get_errno",
+    "shadowhook_to_errmsg",
+    "shadowhook_get_records",
+    "shadowhook_dump_records",
+    "shadowhook_hook_func_addr",
+    "shadowhook_hook_func_addr_2",
+    "shadowhook_hook_sym_addr",
+    "shadowhook_hook_sym_addr_2",
+    "shadowhook_hook_sym_name",
+    "shadowhook_hook_sym_name_2",
+    "shadowhook_hook_sym_name_callback",
+    "shadowhook_hook_sym_name_callback_2",
+    "shadowhook_unhook",
+    "shadowhook_intercept_func_addr",
+    "shadowhook_intercept_sym_addr",
+    "shadowhook_intercept_sym_name",
+    "shadowhook_intercept_sym_name_callback",
+    "shadowhook_intercept_instr_addr",
+    "shadowhook_unintercept",
+    "shadowhook_interceptor_caller",
+    "shadowhook_interceptor_glue",
+    "shadowhook_dlopen",
+    "shadowhook_dlclose",
+    "shadowhook_dlsym",
+    "shadowhook_dlsym_dynsym",
+    "shadowhook_dlsym_symtab",
+    "shadowhook_register_dl_init_callback",
+    "shadowhook_unregister_dl_init_callback",
+    "shadowhook_register_dl_fini_callback",
+    "shadowhook_unregister_dl_fini_callback",
+    "shadowhook_get_prev_func",
+    "shadowhook_pop_stack",
+    "shadowhook_allow_reentrant",
+    "shadowhook_disallow_reentrant",
+    "shadowhook_get_return_address",
+    "shadowhook_proxy_android_linker_soinfo_call_constructors",
+    "shadowhook_proxy_android_linker_soinfo_call_destructors"
+  ]
+}
