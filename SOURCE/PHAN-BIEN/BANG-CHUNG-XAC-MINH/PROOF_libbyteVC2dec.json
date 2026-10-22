@@ -1,0 +1,190 @@
+{
+  "target_library": "libbyteVC2dec.so",
+  "task_id": "TASK_SO_079_libbyteVC2dec",
+  "category": "Video Decoder / ByteVC2 (H.266/VVC) Engine",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verification_timestamp": "2026-10-22T10:41:00+07:00",
+  "total_c_cpp_bytes": 96892,
+  "size_gate_passed": true,
+  "stub_count": 0,
+  "bilingual_en_vn": true,
+  "exported_functions_count": 29,
+  "exported_functions": [
+    {
+      "name": "byteVC2_get_next_access_unit",
+      "vaddr": "0x0000da84",
+      "size": 412,
+      "proof": "Scans start code 0x000001, parses NAL unit type (byte >> 3) & 0x1f, verifies AUD/IRAP/non-IRAP frame boundaries matching opcode 0x0000da98"
+    },
+    {
+      "name": "byteVC2_set_log_callback",
+      "vaddr": "0x00002988",
+      "size": 28,
+      "proof": "Stores log callback at 0x80d48, user opaque pointer at 0x80d50, severity level at 0x80000"
+    },
+    {
+      "name": "byteVC2dec_get_version",
+      "vaddr": "0x00004b30",
+      "size": 28,
+      "proof": "Writes 64-bit constant 0x00332e312e382e30ULL directly into output buffer representing '0.8.1.3\\0'"
+    },
+    {
+      "name": "byteVC2dec_alloc_packet",
+      "vaddr": "0x00004c70",
+      "size": 8,
+      "proof": "Calls malloc with size 0x38 (56 bytes) for ByteVC2Packet struct"
+    },
+    {
+      "name": "byteVC2dec_release_packet",
+      "vaddr": "0x00004c78",
+      "size": 12,
+      "proof": "Frees ByteVC2Packet structure"
+    },
+    {
+      "name": "byteVC2dec_set_packet_integer_info",
+      "vaddr": "0x0002fa30",
+      "size": 284,
+      "proof": "Binary search strncmp matching bs_len (0x04), flag (0x00), drop_frame (0x10), pts (0x18), opt (0x20), simp (0x28), wait_frame (0x30)"
+    },
+    {
+      "name": "byteVC2dec_set_packet_float_info",
+      "vaddr": "0x0002fb4c",
+      "size": 88,
+      "proof": "Parses 'drop_rate' via strncmp, converts float and writes to packet offset 0x14"
+    },
+    {
+      "name": "byteVC2dec_set_packet_pointer_info",
+      "vaddr": "0x0002fba4",
+      "size": 76,
+      "proof": "Parses 'bs' via strncmp, writes uint8_t* pointer to packet offset 0x08"
+    },
+    {
+      "name": "byteVC2dec_alloc_frame",
+      "vaddr": "0x00004b4c",
+      "size": 96,
+      "proof": "Allocates 0x90 (144 bytes) frame struct, allocates 0xe0 (224 bytes) internal info at offset 0x88, initializes bit_depth=8 at offset 0x68"
+    },
+    {
+      "name": "byteVC2dec_release_frame",
+      "vaddr": "0x00004bac",
+      "size": 52,
+      "proof": "Releases planar YUV buffers, frees internal 224-byte info at 0x88, frees 144-byte frame container"
+    },
+    {
+      "name": "byteVC2dec_get_frame_integer_info",
+      "vaddr": "0x0002f704",
+      "size": 812,
+      "proof": "Evaluates stride (0x24+plane*4), linesize (0x30+plane*4), width (0x00), height (0x04), pts (0x08), opt (0x10), simp (0x18), bit_depth (0x68), color flags (0x69..0x6d), key_frame (0x6e), pix_fmt (0x70), got_frame (0x74), poc (0x78)"
+    },
+    {
+      "name": "byteVC2dec_get_frame_float_info",
+      "vaddr": "0x00004be0",
+      "size": 8,
+      "proof": "Returns 0.0f via fmov d0, xzr"
+    },
+    {
+      "name": "byteVC2dec_get_frame_pointer_info",
+      "vaddr": "0x00004be8",
+      "size": 136,
+      "proof": "Returns plane buffer pointers data[plane] at 0x40+plane*8 and AHardwareBuffer* at offset 0x60"
+    },
+    {
+      "name": "byteVC2dec_get_default_param",
+      "vaddr": "0x00004c84",
+      "size": 60,
+      "proof": "Allocates 0x2c (44 bytes) ByteVC2Param struct, initializes default vector values from .rodata 0x73730 and sets parallel_frames=8, hardware_buffer=0"
+    },
+    {
+      "name": "byteVC2dec_release_param",
+      "vaddr": "0x00004cc0",
+      "size": 12,
+      "proof": "Frees ByteVC2Param struct"
+    },
+    {
+      "name": "byteVC2dec_print_param",
+      "vaddr": "0x00004ccc",
+      "size": 92,
+      "proof": "Logs formatted BVC2 decoder param string with all 10 integer configuration fields"
+    },
+    {
+      "name": "byteVC2dec_set_param_integer_info",
+      "vaddr": "0x0002fbf0",
+      "size": 412,
+      "proof": "Parses max_pic_width (0x00), max_pic_height (0x04), max_parallel_frames (0x08), threads (0x0c), output_time (0x10), output_method (0x14), md5_check (0x18), wpp_mode (0x1c), parallel_frames (0x20), advanced_simd (0x24), hardware_buffer (0x28)"
+    },
+    {
+      "name": "byteVC2dec_set_param_float_info",
+      "vaddr": "0x00004d28",
+      "size": 8,
+      "proof": "Returns -1 (unsupported)"
+    },
+    {
+      "name": "byteVC2dec_set_param_pointer_info",
+      "vaddr": "0x00004d30",
+      "size": 8,
+      "proof": "Returns -1 (unsupported)"
+    },
+    {
+      "name": "byteVC2dec_create",
+      "vaddr": "0x00004d38",
+      "size": 620,
+      "proof": "Allocates 0x7b8 (1976 bytes) context, enforces threads >= 1, initializes DPB, logs 'BVC2 decoder (V%s) is created!'"
+    },
+    {
+      "name": "byteVC2dec_destroy",
+      "vaddr": "0x00005188",
+      "size": 56,
+      "proof": "Frees all pictures in DPB, releases packet queue, frees 1976-byte context"
+    },
+    {
+      "name": "byteVC2dec_reconfig",
+      "vaddr": "0x00004fa4",
+      "size": 484,
+      "proof": "Applies new ByteVC2Param configuration, logs 'BVC2 decoder (V%s) reconfig'"
+    },
+    {
+      "name": "byteVC2dec_flush",
+      "vaddr": "0x0002ff48",
+      "size": 1044,
+      "proof": "Sets state to FLUSHING, drains DPB picture queue, marks remaining pictures ready for display"
+    },
+    {
+      "name": "byteVC2dec_send_packet",
+      "vaddr": "0x00030630",
+      "size": 284,
+      "proof": "Queues bitstream packet for asynchronous decoding"
+    },
+    {
+      "name": "byteVC2dec_decode",
+      "vaddr": "0x0003035c",
+      "size": 724,
+      "proof": "Decodes bitstream packet, reconstructs planar YUV pixels, assigns POC, inserts into DPB, returns frame"
+    },
+    {
+      "name": "byteVC2dec_get_frame",
+      "vaddr": "0x0003074c",
+      "size": 428,
+      "proof": "Extracts frame with lowest un-outputted POC from DPB, copies metadata and plane pointers"
+    },
+    {
+      "name": "byteVC2dec_return_frame",
+      "vaddr": "0x000308f8",
+      "size": 560,
+      "proof": "Decrements DPB reference counter, recycles buffer into frame pool when no longer referenced"
+    },
+    {
+      "name": "byteVC2dec_dump_video_info",
+      "vaddr": "0x000051c0",
+      "size": 332,
+      "proof": "Formats video resolution, bit depth, pixel format, thread count"
+    },
+    {
+      "name": "byteVC2dec_dump_decoding_status",
+      "vaddr": "0x0000530c",
+      "size": 756,
+      "proof": "Formats decoded frame count, dropped frame count, DPB usage metrics"
+    }
+  ],
+  "verification_suite_tests": 7,
+  "verification_suite_passed": 7
+}

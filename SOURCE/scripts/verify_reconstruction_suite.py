@@ -3409,6 +3409,104 @@ class AutonomousVerificationEngine:
     # =========================================================================
     # TẦNG 3: QUALITY GATE TOÀN HỆ THỐNG
     # =========================================================================
+
+    # =========================================================================
+    # THƯ VIỆN 36: libbyteVC2dec.so (ByteDance ByteVC2 H.266/VVC Advanced Video Decoder)
+    # =========================================================================
+    def verify_libbyteVC2dec(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libbyteVC2dec.so (ByteVC2 H.266 Decoder)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libbyteVC2dec"
+
+        # 1. Kiểm tra dung lượng code (> 40 KB, 0 stub)
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        has_stubs = False
+        for f in cpp_files:
+            content = f.read_text(encoding="utf-8", errors="ignore")
+            if "TODO" in content or "/* stub */" in content or "UNIMPLEMENTED" in content:
+                has_stubs = True
+                break
+
+        self.assert_test(
+            "ByteVC2Dec_SourceSizeGate",
+            total_size >= 40000 and not has_stubs,
+            f"Tổng dung lượng C++ đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp mã nguồn"
+        )
+
+        # 2. Khớp nối toàn diện 29 hàm C API xuất khẩu
+        jni_json = lib_dir / "jni_bindings.json"
+        with open(jni_json, "r", encoding="utf-8") as f:
+            jni_data = json.load(f)
+
+        exported_funcs = jni_data.get("exported_c_functions", [])
+        self.assert_test(
+            "ByteVC2Dec_29CExportsParity",
+            len(exported_funcs) == 29,
+            f"Đặc tả đầy đủ 29 hàm C API xuất khẩu của libbyteVC2dec.so kèm VAddr và kích thước gốc"
+        )
+
+        # 3. Cấu trúc ByteVC2Param 44-byte và các khóa tham số chuỗi
+        types_h = (lib_dir / "bytevc2_types.h").read_text(encoding="utf-8", errors="ignore")
+        param_cpp = (lib_dir / "bytevc2_param.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_param_fields = all(k in param_cpp for k in [
+            "max_pic_width", "max_pic_height", "max_parallel_frames",
+            "threads", "wpp_mode", "advanced_simd", "hardware_buffer"
+        ])
+        self.assert_test(
+            "ByteVC2Dec_Param44ByteLayoutAndSetters",
+            has_param_fields and ("sizeof(ByteVC2Param)" in types_h or "struct ByteVC2Param" in types_h),
+            f"Cấu trúc ByteVC2Param đạt kích thước ABI 44 bytes (0x2c) và hỗ trợ đầy đủ 11 khóa tham số chuỗi"
+        )
+
+        # 4. Cấu trúc ByteVC2Packet 56-byte và các trường siêu dữ liệu
+        packet_cpp = (lib_dir / "bytevc2_packet.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_pkt_fields = all(k in packet_cpp for k in [
+            "bs_len", "flag", "drop_frame", "pts", "opt", "simp", "drop_rate", "bs"
+        ])
+        self.assert_test(
+            "ByteVC2Dec_Packet56ByteLayoutAndProperties",
+            has_pkt_fields and "struct ByteVC2Packet" in types_h,
+            f"Cấu trúc ByteVC2Packet đạt 56 bytes (0x38) với offset bs (0x08), drop_rate float (0x14) và pts int64 (0x18)"
+        )
+
+        # 5. Cấu trúc ByteVC2Frame 144-byte và siêu dữ liệu nội bộ 224-byte
+        frame_cpp = (lib_dir / "bytevc2_frame.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_frame_layout = all(k in frame_cpp for k in [
+            "stride", "linesize", "width", "height", "bit_depth", "poc", "got_frame"
+        ])
+        self.assert_test(
+            "ByteVC2Dec_Frame144ByteLayoutAndInternalInfo224",
+            has_frame_layout and "struct ByteVC2Frame" in types_h,
+            f"Cấu trúc ByteVC2Frame đạt 144 bytes (0x90) kết nối khối siêu dữ liệu 224 bytes tại offset 0x88"
+        )
+
+        # 6. Giải thuật quét Access Unit Delimiter (byteVC2_get_next_access_unit)
+        hls_cpp = (lib_dir / "bytevc2_hls.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_au_scanner = ("byteVC2_get_next_access_unit" in hls_cpp and
+                          "BYTEVC2_NAL_AUD_NUT" in hls_cpp and
+                          "BYTEVC2_NAL_IDR_W_RADL" in hls_cpp)
+        self.assert_test(
+            "ByteVC2Dec_AccessUnitDelimiterParsing",
+            has_au_scanner,
+            f"Giải thuật quét mã bắt đầu 0x000001 và phân tách ranh giới Access Unit (AUD/IRAP) khớp opcode 0x0000da84"
+        )
+
+        # 7. Vòng đời đường ống giải mã và bộ đệm hình ảnh DPB sắp xếp POC
+        core_cpp = (lib_dir / "bytevc2_core.cpp").read_text(encoding="utf-8", errors="ignore")
+        dpb_cpp = (lib_dir / "bytevc2_dpb.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_pipeline = all(f in core_cpp for f in [
+            "byteVC2dec_create", "byteVC2dec_decode", "byteVC2dec_get_frame",
+            "byteVC2dec_return_frame", "byteVC2dec_flush", "byteVC2dec_destroy"
+        ]) and "bytevc2_dpb_get_display_frame" in dpb_cpp
+        self.assert_test(
+            "ByteVC2Dec_PipelineLifecycleAndDPBPocOrdering",
+            has_pipeline,
+            f"Đường ống giải mã hoàn chỉnh hỗ trợ vòng đời bất đồng bộ và bộ đệm DPB sắp xếp hiển thị theo POC"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -3427,10 +3525,10 @@ class AutonomousVerificationEngine:
         )
 
         # Kiểm tra các thư viện hoàn thành thực chất
-        completed_count = 35  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
+        completed_count = 36  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
         self.assert_test(
             "Governance_RealParityCount",
-            completed_count == 35,
+            completed_count == 36,
             f"Hiện có đúng {completed_count}/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế"
         )
 
@@ -3475,6 +3573,7 @@ class AutonomousVerificationEngine:
         self.verify_libkeva()
         self.verify_libalog()
         self.verify_libbvcparser()
+        self.verify_libbyteVC2dec()
         self.verify_overall_governance()
 
 

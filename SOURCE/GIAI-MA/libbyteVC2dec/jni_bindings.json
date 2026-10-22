@@ -1,1 +1,181 @@
-[]
+{
+  "library": "libbyteVC2dec.so",
+  "total_exports": 29,
+  "description": "ByteDance ByteVC2 (H.266/VVC) Advanced Video Decoding Subsystem C Exports",
+  "exported_c_functions": [
+    {
+      "name": "byteVC2_get_next_access_unit",
+      "vaddr": "0x0000da84",
+      "size": 412,
+      "signature": "int32_t byteVC2_get_next_access_unit(const uint8_t* buf, int32_t buf_len, int32_t* next_au_offset, int32_t* next_au_len)"
+    },
+    {
+      "name": "byteVC2_set_log_callback",
+      "vaddr": "0x00002988",
+      "size": 28,
+      "signature": "void byteVC2_set_log_callback(ByteVC2LogCallback cb, void* opaque, int32_t level)"
+    },
+    {
+      "name": "byteVC2dec_get_version",
+      "vaddr": "0x00004b30",
+      "size": 28,
+      "signature": "void byteVC2dec_get_version(char* version_out)"
+    },
+    {
+      "name": "byteVC2dec_alloc_packet",
+      "vaddr": "0x00004c70",
+      "size": 8,
+      "signature": "ByteVC2Packet* byteVC2dec_alloc_packet(void)"
+    },
+    {
+      "name": "byteVC2dec_release_packet",
+      "vaddr": "0x00004c78",
+      "size": 12,
+      "signature": "void byteVC2dec_release_packet(ByteVC2Packet* packet)"
+    },
+    {
+      "name": "byteVC2dec_set_packet_integer_info",
+      "vaddr": "0x0002fa30",
+      "size": 284,
+      "signature": "int32_t byteVC2dec_set_packet_integer_info(ByteVC2Packet* packet, const char* key, int64_t value)"
+    },
+    {
+      "name": "byteVC2dec_set_packet_float_info",
+      "vaddr": "0x0002fb4c",
+      "size": 88,
+      "signature": "int32_t byteVC2dec_set_packet_float_info(ByteVC2Packet* packet, const char* key, float value)"
+    },
+    {
+      "name": "byteVC2dec_set_packet_pointer_info",
+      "vaddr": "0x0002fba4",
+      "size": 76,
+      "signature": "int32_t byteVC2dec_set_packet_pointer_info(ByteVC2Packet* packet, const char* key, void* ptr)"
+    },
+    {
+      "name": "byteVC2dec_alloc_frame",
+      "vaddr": "0x00004b4c",
+      "size": 96,
+      "signature": "ByteVC2Frame* byteVC2dec_alloc_frame(void)"
+    },
+    {
+      "name": "byteVC2dec_release_frame",
+      "vaddr": "0x00004bac",
+      "size": 52,
+      "signature": "void byteVC2dec_release_frame(ByteVC2Frame* frame)"
+    },
+    {
+      "name": "byteVC2dec_get_frame_integer_info",
+      "vaddr": "0x0002f704",
+      "size": 812,
+      "signature": "int64_t byteVC2dec_get_frame_integer_info(const ByteVC2Frame* frame, const char* key, int32_t plane_index)"
+    },
+    {
+      "name": "byteVC2dec_get_frame_float_info",
+      "vaddr": "0x00004be0",
+      "size": 8,
+      "signature": "float byteVC2dec_get_frame_float_info(const ByteVC2Frame* frame, const char* key)"
+    },
+    {
+      "name": "byteVC2dec_get_frame_pointer_info",
+      "vaddr": "0x00004be8",
+      "size": 136,
+      "signature": "void* byteVC2dec_get_frame_pointer_info(const ByteVC2Frame* frame, const char* key, int32_t plane_index)"
+    },
+    {
+      "name": "byteVC2dec_get_default_param",
+      "vaddr": "0x00004c84",
+      "size": 60,
+      "signature": "ByteVC2Param* byteVC2dec_get_default_param(void)"
+    },
+    {
+      "name": "byteVC2dec_release_param",
+      "vaddr": "0x00004cc0",
+      "size": 12,
+      "signature": "void byteVC2dec_release_param(ByteVC2Param* param)"
+    },
+    {
+      "name": "byteVC2dec_print_param",
+      "vaddr": "0x00004ccc",
+      "size": 92,
+      "signature": "void byteVC2dec_print_param(const ByteVC2Param* param)"
+    },
+    {
+      "name": "byteVC2dec_set_param_integer_info",
+      "vaddr": "0x0002fbf0",
+      "size": 412,
+      "signature": "int32_t byteVC2dec_set_param_integer_info(ByteVC2Param* param, const char* key, int32_t value)"
+    },
+    {
+      "name": "byteVC2dec_set_param_float_info",
+      "vaddr": "0x00004d28",
+      "size": 8,
+      "signature": "int32_t byteVC2dec_set_param_float_info(ByteVC2Param* param, const char* key, float value)"
+    },
+    {
+      "name": "byteVC2dec_set_param_pointer_info",
+      "vaddr": "0x00004d30",
+      "size": 8,
+      "signature": "int32_t byteVC2dec_set_param_pointer_info(ByteVC2Param* param, const char* key, void* ptr)"
+    },
+    {
+      "name": "byteVC2dec_create",
+      "vaddr": "0x00004d38",
+      "size": 620,
+      "signature": "ByteVC2Context* byteVC2dec_create(ByteVC2Param* param)"
+    },
+    {
+      "name": "byteVC2dec_destroy",
+      "vaddr": "0x00005188",
+      "size": 56,
+      "signature": "void byteVC2dec_destroy(ByteVC2Context* ctx)"
+    },
+    {
+      "name": "byteVC2dec_reconfig",
+      "vaddr": "0x00004fa4",
+      "size": 484,
+      "signature": "int32_t byteVC2dec_reconfig(ByteVC2Context* ctx, const ByteVC2Param* param)"
+    },
+    {
+      "name": "byteVC2dec_flush",
+      "vaddr": "0x0002ff48",
+      "size": 1044,
+      "signature": "int32_t byteVC2dec_flush(ByteVC2Context* ctx, int32_t flush_mode)"
+    },
+    {
+      "name": "byteVC2dec_send_packet",
+      "vaddr": "0x00030630",
+      "size": 284,
+      "signature": "int32_t byteVC2dec_send_packet(ByteVC2Context* ctx, ByteVC2Packet* pkt)"
+    },
+    {
+      "name": "byteVC2dec_decode",
+      "vaddr": "0x0003035c",
+      "size": 724,
+      "signature": "int32_t byteVC2dec_decode(ByteVC2Context* ctx, ByteVC2Packet* pkt, ByteVC2Frame* out_frame)"
+    },
+    {
+      "name": "byteVC2dec_get_frame",
+      "vaddr": "0x0003074c",
+      "size": 428,
+      "signature": "int32_t byteVC2dec_get_frame(ByteVC2Context* ctx, ByteVC2Frame* out_frame)"
+    },
+    {
+      "name": "byteVC2dec_return_frame",
+      "vaddr": "0x000308f8",
+      "size": 560,
+      "signature": "int32_t byteVC2dec_return_frame(ByteVC2Context* ctx, ByteVC2Frame* frame)"
+    },
+    {
+      "name": "byteVC2dec_dump_video_info",
+      "vaddr": "0x000051c0",
+      "size": 332,
+      "signature": "int32_t byteVC2dec_dump_video_info(const ByteVC2Context* ctx, char* buf, int32_t buf_len)"
+    },
+    {
+      "name": "byteVC2dec_dump_decoding_status",
+      "vaddr": "0x0000530c",
+      "size": 756,
+      "signature": "int32_t byteVC2dec_dump_decoding_status(const ByteVC2Context* ctx, char* buf, int32_t buf_len)"
+    }
+  ]
+}
