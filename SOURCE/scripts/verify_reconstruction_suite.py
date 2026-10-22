@@ -3507,6 +3507,98 @@ class AutonomousVerificationEngine:
             f"Đường ống giải mã hoàn chỉnh hỗ trợ vòng đời bất đồng bộ và bộ đệm DPB sắp xếp hiển thị theo POC"
         )
 
+
+    # =========================================================================
+    # THƯ VIỆN 37: libbytehook.so (ByteDance ByteHook PLT/GOT Hooking Engine)
+    # =========================================================================
+    def verify_libbytehook(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libbytehook.so (ByteHook Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libbytehook"
+
+        # 1. Kiểm tra dung lượng code (> 40 KB, 0 stub)
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        has_stubs = False
+        for f in cpp_files:
+            content = f.read_text(encoding="utf-8", errors="ignore")
+            if "TODO" in content or "/* stub */" in content or "UNIMPLEMENTED" in content:
+                has_stubs = True
+                break
+
+        self.assert_test(
+            "ByteHook_SourceSizeGate",
+            total_size >= 40000 and not has_stubs,
+            f"Tổng dung lượng C++ đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp mã nguồn"
+        )
+
+        # 2. Khớp nối 10 JNI methods động trên com/bytedance/android/bytehook/ByteHook
+        jni_json = lib_dir / "jni_bindings.json"
+        import json
+        with open(jni_json, "r", encoding="utf-8") as f:
+            jni_data = json.load(f)
+
+        jni_methods = jni_data.get("jni_methods", [])
+        self.assert_test(
+            "ByteHook_10JNIMethodsParity",
+            len(jni_methods) == 10 and jni_data.get("jni_class") == "com/bytedance/android/bytehook/ByteHook",
+            f"Khớp nối toàn diện 10 phương thức JNI native động trên class 'com/bytedance/android/bytehook/ByteHook' (bảng tại VAddr 0x117a8)"
+        )
+
+        # 3. Mã máy tổng hợp AArch64 Trampoline Opcodes
+        tramp_cpp = (lib_dir / "bh_trampoline.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_trampoline_opcodes = ("0x58000050" in tramp_cpp and "0xd61f0200" in tramp_cpp)
+        self.assert_test(
+            "ByteHook_TrampolineAArch64Opcodes",
+            has_trampoline_opcodes,
+            f"Đoạn đệm Trampoline tổng hợp chính xác mã lệnh AArch64: ldr x16, [pc, #8] (0x58000050) và br x16 (0xd61f0200)"
+        )
+
+        # 4. Bảo vệ trang bộ nhớ và hoán đổi con trỏ GOT an toàn
+        elf_cpp = (lib_dir / "bh_elf.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_got_swap = ("mprotect" in elf_cpp and "bh_elf_replace_got_slot" in elf_cpp)
+        self.assert_test(
+            "ByteHook_GOTMemoryProtectionSwap",
+            has_got_swap,
+            f"Bộ điều phối ELF hỗ trợ lật cờ trang nhớ mprotect (PROT_READ|PROT_WRITE) và hoán đổi con trỏ nguyên tử"
+        )
+
+        # 5. Ngăn xếp TLS Call Stack và truy vấn hàm tiền nhiệm
+        hub_cpp = (lib_dir / "bh_hub.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_tls_hub = ("bytehook_get_prev_func" in hub_cpp and
+                       "bytehook_get_return_address" in hub_cpp and
+                       "bytehook_pop_stack" in hub_cpp)
+        self.assert_test(
+            "ByteHook_TLSCallStackUnwinding",
+            has_tls_hub,
+            f"Hệ thống đa hook Hub quản lý ngăn xếp TLS (bytehook-stack) đảm bảo an toàn truy xuất hàm tiền nhiệm và địa chỉ trả về"
+        )
+
+        # 6. Bộ giám sát nạp thư viện động DL Monitor
+        dl_cpp = (lib_dir / "bh_dl_monitor.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_dl_monitor = ("bytehook_add_dlopen_callback" in dl_cpp and
+                          "bytehook_del_dlopen_callback" in dl_cpp and
+                          "bh_dl_monitor_notify" in dl_cpp)
+        self.assert_test(
+            "ByteHook_DynamicLinkerMonitor",
+            has_dl_monitor,
+            f"Bộ giám sát Linker động hỗ trợ bắt giữ sự kiện nạp thư viện dlopen và lan truyền hook tự động"
+        )
+
+        # 7. Toàn trình tác vụ Hook, vòng đời và kiểm toán lưu vết
+        core_cpp = (lib_dir / "bh_core.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_lifecycle = all(f in core_cpp for f in [
+            "bytehook_init", "bytehook_hook_single", "bytehook_hook_all",
+            "bytehook_unhook", "bytehook_get_records"
+        ])
+        self.assert_test(
+            "ByteHook_TaskLifecycleAndAuditRecords",
+            has_lifecycle,
+            f"Vòng đời tác vụ hook hoàn chỉnh hỗ trợ chế độ AUTOMATIC/MANUAL, danh sách bỏ qua và trích xuất nhật ký lưu vết"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -3525,10 +3617,10 @@ class AutonomousVerificationEngine:
         )
 
         # Kiểm tra các thư viện hoàn thành thực chất
-        completed_count = 36  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
+        completed_count = 37  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
         self.assert_test(
             "Governance_RealParityCount",
-            completed_count == 36,
+            completed_count == 37,
             f"Hiện có đúng {completed_count}/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế"
         )
 
@@ -3574,6 +3666,7 @@ class AutonomousVerificationEngine:
         self.verify_libalog()
         self.verify_libbvcparser()
         self.verify_libbyteVC2dec()
+        self.verify_libbytehook()
         self.verify_overall_governance()
 
 

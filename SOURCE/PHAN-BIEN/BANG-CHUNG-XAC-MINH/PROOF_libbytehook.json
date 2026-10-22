@@ -1,0 +1,23 @@
+{
+  "target_library": "libbytehook.so",
+  "task_id": "TASK_SO_142_libbytehook",
+  "category": "PLT/GOT Dynamic Hooking Subsystem",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verification_timestamp": "2026-10-22T11:28:00+07:00",
+  "total_c_cpp_bytes": 55833,
+  "size_gate_passed": true,
+  "stub_count": 0,
+  "bilingual_en_vn": true,
+  "exported_functions_count": 20,
+  "jni_methods_count": 10,
+  "jni_class": "com/bytedance/android/bytehook/ByteHook",
+  "jni_table_vaddr": "0x000117a8",
+  "jni_onload_vaddr": "0x00009144",
+  "version_string": "bytehook version 1.1.2-alpha.0",
+  "trampoline_opcodes": {
+    "ldr_x16_pc_8": "0x58000050",
+    "br_x16": "0xd61f0200"
+  },
+  "verification_suite_tests": 7,
+  "verification_suite_passed": 7
+}

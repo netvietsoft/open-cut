@@ -1,1 +1,182 @@
-[]
+{
+  "library": "libbytehook.so",
+  "jni_class": "com/bytedance/android/bytehook/ByteHook",
+  "jni_registration_method": "JNI_OnLoad (Dynamic at VAddr 0x00009144)",
+  "total_jni_methods": 10,
+  "total_c_exports": 20,
+  "description": "ByteDance ByteHook PLT/GOT Dynamic Hooking Subsystem",
+  "jni_methods": [
+    {
+      "name": "nativeGetVersion",
+      "signature": "()Ljava/lang/String;",
+      "vaddr": "0x0000921c"
+    },
+    {
+      "name": "nativeInit",
+      "signature": "(IZ)I",
+      "vaddr": "0x00009254"
+    },
+    {
+      "name": "nativeAddIgnore",
+      "signature": "(Ljava/lang/String;)I",
+      "vaddr": "0x00009264"
+    },
+    {
+      "name": "nativeGetMode",
+      "signature": "()I",
+      "vaddr": "0x000092d8"
+    },
+    {
+      "name": "nativeGetDebug",
+      "signature": "()Z",
+      "vaddr": "0x000092f4"
+    },
+    {
+      "name": "nativeSetDebug",
+      "signature": "(Z)V",
+      "vaddr": "0x0000930c"
+    },
+    {
+      "name": "nativeGetRecordable",
+      "signature": "()Z",
+      "vaddr": "0x00009318"
+    },
+    {
+      "name": "nativeSetRecordable",
+      "signature": "(Z)V",
+      "vaddr": "0x00009330"
+    },
+    {
+      "name": "nativeGetRecords",
+      "signature": "(I)Ljava/lang/String;",
+      "vaddr": "0x0000933c"
+    },
+    {
+      "name": "nativeGetArch",
+      "signature": "()Ljava/lang/String;",
+      "vaddr": "0x0000938c"
+    }
+  ],
+  "exported_c_functions": [
+    {
+      "name": "JNI_OnLoad",
+      "vaddr": "0x00009144",
+      "size": 216,
+      "signature": "jint JNI_OnLoad(JavaVM* vm, void* reserved)"
+    },
+    {
+      "name": "bytehook_get_version",
+      "vaddr": "0x0000c6cc",
+      "size": 12,
+      "signature": "const char* bytehook_get_version(void)"
+    },
+    {
+      "name": "bytehook_init",
+      "vaddr": "0x0000c6d8",
+      "size": 360,
+      "signature": "int bytehook_init(int mode, bool debug)"
+    },
+    {
+      "name": "bytehook_get_mode",
+      "vaddr": "0x0000c840",
+      "size": 12,
+      "signature": "int bytehook_get_mode(void)"
+    },
+    {
+      "name": "bytehook_hook_single",
+      "vaddr": "0x0000c84c",
+      "size": 148,
+      "signature": "bytehook_stub_t bytehook_hook_single(const char* caller, const char* callee, const char* sym, void* new_fn, bytehook_hooked_t hooked, void* arg)"
+    },
+    {
+      "name": "bytehook_hook_partial",
+      "vaddr": "0x0000c8e0",
+      "size": 152,
+      "signature": "bytehook_stub_t bytehook_hook_partial(bytehook_caller_allow_filter_t filter, void* f_arg, const char* callee, const char* sym, void* new_fn, bytehook_hooked_t hooked, void* arg)"
+    },
+    {
+      "name": "bytehook_hook_all",
+      "vaddr": "0x0000c978",
+      "size": 128,
+      "signature": "bytehook_stub_t bytehook_hook_all(const char* callee, const char* sym, void* new_fn, bytehook_hooked_t hooked, void* arg)"
+    },
+    {
+      "name": "bytehook_unhook",
+      "vaddr": "0x0000c9f8",
+      "size": 152,
+      "signature": "int bytehook_unhook(bytehook_stub_t stub)"
+    },
+    {
+      "name": "bytehook_add_ignore",
+      "vaddr": "0x0000ca90",
+      "size": 32,
+      "signature": "int bytehook_add_ignore(const char* caller_path)"
+    },
+    {
+      "name": "bytehook_get_debug",
+      "vaddr": "0x0000cab0",
+      "size": 4,
+      "signature": "bool bytehook_get_debug(void)"
+    },
+    {
+      "name": "bytehook_set_debug",
+      "vaddr": "0x0000cab4",
+      "size": 8,
+      "signature": "void bytehook_set_debug(bool debug)"
+    },
+    {
+      "name": "bytehook_get_recordable",
+      "vaddr": "0x0000cabc",
+      "size": 4,
+      "signature": "bool bytehook_get_recordable(void)"
+    },
+    {
+      "name": "bytehook_set_recordable",
+      "vaddr": "0x0000cac0",
+      "size": 8,
+      "signature": "void bytehook_set_recordable(bool recordable)"
+    },
+    {
+      "name": "bytehook_get_records",
+      "vaddr": "0x0000cac8",
+      "size": 4,
+      "signature": "char* bytehook_get_records(uint32_t item_flags)"
+    },
+    {
+      "name": "bytehook_dump_records",
+      "vaddr": "0x0000cacc",
+      "size": 4,
+      "signature": "void bytehook_dump_records(int fd)"
+    },
+    {
+      "name": "bytehook_get_prev_func",
+      "vaddr": "0x0000cad0",
+      "size": 28,
+      "signature": "void* bytehook_get_prev_func(void* func)"
+    },
+    {
+      "name": "bytehook_get_return_address",
+      "vaddr": "0x0000caec",
+      "size": 28,
+      "signature": "void* bytehook_get_return_address(void)"
+    },
+    {
+      "name": "bytehook_pop_stack",
+      "vaddr": "0x0000cb08",
+      "size": 28,
+      "signature": "void bytehook_pop_stack(void* func)"
+    },
+    {
+      "name": "bytehook_add_dlopen_callback",
+      "vaddr": "0x0000cb24",
+      "size": 4,
+      "signature": "int bytehook_add_dlopen_callback(bytehook_dlopen_cb_t cb, void* data)"
+    },
+    {
+      "name": "bytehook_del_dlopen_callback",
+      "vaddr": "0x0000cb28",
+      "size": 4,
+      "signature": "int bytehook_del_dlopen_callback(bytehook_dlopen_cb_t cb, void* data)"
+    }
+  ]
+}

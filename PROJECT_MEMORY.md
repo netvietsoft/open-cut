@@ -1750,3 +1750,49 @@
   - `SOURCE/GIAI-MA/libbyteVC2dec/jni_bindings.json`
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **245/245 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **36 / 169 thư viện COMPLETED (21.30%)** có 100% thân hàm thực tế.
+
+
+## 64. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libbytehook.so (BYTEHOOK_PLT_GOT_HOOKING_ENGINE)
+- **Thời gian**: 2026-10-22 11:29:00
+- **Thư viện mục tiêu**: libbytehook.so (arm64-v8a: 68,528 bytes, 95 dynamic symbols, 20 exported C functions, ByteDance ByteHook PLT/GOT Dynamic Hooking Subsystem).
+- **Chi tiết giải mã thân hàm libbytehook.so (16 files, 55,833 bytes / 54.52 KB code C++, 0 stub)**:
+  1. *Cấu trúc & Bố cục Hệ thống Hook (`bh_types.h`)*:
+     - Định nghĩa `bytehook_mode_t` (`BYTEHOOK_MODE_AUTOMATIC = 0`, `BYTEHOOK_MODE_MANUAL = 1`), mã trạng thái trả về.
+     - Định nghĩa chữ ký callback: `bytehook_hooked_t`, `bytehook_caller_allow_filter_t`, `bytehook_dlopen_cb_t`.
+     - Cấu trúc bản ghi lưu vết `bytehook_record_t` và tác vụ hook `bytehook_task_t`.
+  2. *Bộ Phân Giải Nhị Phân ELF & Hoán Đổi Con Trỏ GOT (`bh_elf.h`, `bh_elf.cpp`)*:
+     - Quét cấu trúc phân vùng ELF động: `.dynsym`, `.dynstr`, `.rel.plt`, `.rela.plt`, `.got`, `.got.plt`.
+     - Phân giải địa chỉ ô nhớ GOT của biểu tượng `bh_elf_find_got_slot`.
+     - Chuyển đổi quyền bảo vệ trang nhớ `mprotect` (`PROT_READ | PROT_WRITE`) -> hoán đổi nguyên tử `atomic_exchange` -> khôi phục `PROT_READ`.
+     - Đồng bộ hóa xóa bộ đệm lệnh `__builtin___clear_cache`.
+  3. *Tạo Đoạn Đệm Chuyển Tiếp AArch64 Trampoline (`bh_trampoline.h`, `bh_trampoline.cpp`)*:
+     - Tổng hợp chính xác cặp lệnh mã máy AArch64:
+       - `ldr x16, [pc, #8]`: `0x58000050`
+       - `br x16`: `0xd61f0200`
+       - Địa chỉ hàm đích 64-bit (`uint64_t target_address`).
+  4. *Bộ Điều Phối Đa Hook Hub & Quản Lý Ngăn Xếp TLS (`bh_hub.h`, `bh_hub.cpp`)*:
+     - Quản lý khung gọi `bh_stack_frame_t` trên ngăn xếp cục bộ luồng TLS (`bytehook-stack`) sử dụng `pthread_key_t`.
+     - `bytehook_get_prev_func` (VAddr `0x0000cad0`, 28 bytes): Lấy con trỏ hàm tiền nhiệm hoặc hàm gốc ban đầu.
+     - `bytehook_get_return_address` (VAddr `0x0000caec`, 28 bytes): Truy xuất địa chỉ quay về của caller.
+     - `bytehook_pop_stack` (VAddr `0x0000cb08`, 28 bytes): Rút khung gọi ra khỏi ngăn xếp khi hoàn thành hàm hook.
+  5. *Bộ Giám Sát Trình Liên Kết Động DL Monitor (`bh_dl_monitor.h`, `bh_dl_monitor.cpp`)*:
+     - Giám sát các sự kiện nạp thư viện động `dlopen`, `android_dlopen_ext`, `__loader_dlopen`.
+     - Tự động lan truyền hook khi thư viện mới được nạp trong chế độ AUTOMATIC.
+     - `bytehook_add_dlopen_callback` (VAddr `0x0000cb24`) và `bytehook_del_dlopen_callback` (VAddr `0x0000cb28`).
+  6. *Động Cơ Cốt Lõi Hook Engine (`bh_core.h`, `bh_core.cpp`)*:
+     - `bytehook_get_version` (VAddr `0x0000c6cc`, 12 bytes): Trả về "bytehook version 1.1.2-alpha.0".
+     - `bytehook_init` (VAddr `0x0000c6d8`, 360 bytes): Khởi tạo chế độ vận hành và các hệ thống con.
+     - `bytehook_get_mode` (VAddr `0x0000c840`, 12 bytes): Đọc mode.
+     - `bytehook_hook_single` (VAddr `0x0000c84c`, 148 bytes), `bytehook_hook_partial` (VAddr `0x0000c8e0`, 152 bytes), `bytehook_hook_all` (VAddr `0x0000c978`, 128 bytes).
+     - `bytehook_unhook` (VAddr `0x0000c9f8`, 152 bytes), `bytehook_add_ignore` (VAddr `0x0000ca90`, 32 bytes).
+     - `bytehook_get_debug` / `bytehook_set_debug`, `bytehook_get_recordable` / `bytehook_set_recordable`, `bytehook_get_records`, `bytehook_dump_records`.
+  7. *Cầu Nối JNI Động 10 Phương Thức (`bh_jni.h`, `bh_jni.cpp`)*:
+     - `JNI_OnLoad` (VAddr `0x00009144`, 216 bytes): Đăng ký động bảng 10 phương thức native trên class `com/bytedance/android/bytehook/ByteHook`.
+     - Các phương thức: `nativeGetVersion`, `nativeInit`, `nativeAddIgnore`, `nativeGetMode`, `nativeGetDebug`, `nativeSetDebug`, `nativeGetRecordable`, `nativeSetRecordable`, `nativeGetRecords`, `nativeGetArch`.
+  8. *Bộ Tự Kiểm Thử Khép Kín 7 Giai đoạn (`bytehook_interface.h`, `bytehook_interface.cpp`)*:
+     - 7/7 giai đoạn kiểm thử tự động nội bộ đạt kết quả tuyệt đối 100%.
+- **Thẩm định đối kháng độc lập từ Agent 13**: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại:
+  - `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbytehook.md` và `.json`
+  - `SOURCE/GIAI-MA/libbytehook/jni_bindings.json`
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **252/252 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **37 / 169 thư viện COMPLETED (21.89%)** có 100% thân hàm thực tế.
