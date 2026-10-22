@@ -1600,3 +1600,31 @@
   - `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libfile_lock_pgl.md` và `.json`
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **217/217 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **32 / 169 thư viện COMPLETED (18.93%)** có 100% thân hàm thực tế.
+
+
+## 60. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libkeva.so (BYTEDANCE_KEVA_KV_STORAGE)
+- **Thời gian**: 2026-10-22 09:58:30
+- **Thư viện mục tiêu**: libkeva.so (arm64-v8a: 215,680 bytes, 567 symbols, 499 C++ demangled symbols, ByteDance Keva High Performance MMAP-backed Key-Value Storage Subsystem, `com.bytedance.keva.KevaImpl`).
+- **Chi tiết giải mã thân hàm libkeva.so (14 files, 64,252 bytes / 62.75 KB code C++, 0 stub)**:
+  1. *Cấu trúc Tệp & Bộ Định Dạng Trang Bộ Nhớ (`keva_types.h`)*:
+     - Header ma thuật `KevaFileHeader`: magic `0x4B455641` ("KEVA"), version 1, CRC32 offset.
+     - Cấu trúc Value Header và phân loại kiểu dữ liệu `KevaType`: Boolean, Int, Long, Float, Double, String, StringArray, Bytes.
+  2. *Bộ Quản Lý Cấp Phát MarkBitmap 64-bit (`keva_bitmap.h`, `keva_bitmap.cpp`)*:
+     - Cấu trúc `MarkBitmap` thao tác bitwise trên từ 64-bit, sử dụng `__builtin_popcountll` tối ưu phần cứng ARM64.
+     - Thuật toán quét và cấp phát dải bit rảnh liên tục `findFreeRange`, giải phóng trang mmap an toàn.
+  3. *Bộ Quản Lý Bộ Nhớ Đệm Phân Trang MMAP & Kiểm Tra Toàn Vẹn (`keva_chunk.h`, `keva_chunk.cpp`)*:
+     - `KevaChunkManager`: ánh xạ mmap vùng nhớ ảo, cấp phát chunk động, tính toán CRC32 IEEE 802.3 kiểm tra tính toàn vẹn của dữ liệu lưu trữ.
+  4. *Cơ Chế Khóa Đa Tiến Trình POSIX fcntl (`keva_process_mutex.h`, `keva_process_mutex.cpp`)*:
+     - `ProcessMutex`: Quản lý tranh chấp truy cập đồng thời giữa các tiến trình qua cơ chế `fcntl` (`F_SETLK`, `F_SETLKW`, `F_UNLCK`).
+  5. *Lõi Lưu Trữ KevaRepo & Bảng Băm Chỉ Mục (`keva_repo.h`, `keva_repo.cpp`)*:
+     - `KevaRepo`: Hỗ trợ đầy đủ các thao tác CRUD: `storeInt`, `storeBoolean`, `storeString`, `storeFloat`, `storeLong`, `storeDouble`, `storeBytes`, `storeStringArray`, các hàm `fetch*`, `erase`, `rebuildValueMap`, và thu gom rác bộ đệm `eraseUnusedChunk`.
+  6. *Cầu Nối JNI Đăng Ký Động (`keva_jni.h`, `keva_jni.cpp`)*:
+     - `JNI_OnLoad` khớp opcode tại địa chỉ ảo `0x013c50` (460 bytes): Đăng ký động 28 hàm native vào `com/bytedance/keva/KevaImpl` thông qua bảng `gKevaMethods` tại `0x38000` (file offset `0x34000`).
+     - Hiện thực đầy đủ 28 hàm JNI tương ứng với định dạng JNIEnv.
+  7. *Bộ Tự Kiểm Thử 7 Giai Đoạn & Phân Tích Mã Giả (`keva_interface.h`, `keva_interface.cpp`, `keva_pseudocode.cpp`)*:
+     - 7/7 giai đoạn kiểm thử nội bộ đạt kết quả tuyệt đối 100%.
+- **Thẩm định đối kháng độc lập từ Agent 13**: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại:
+  - `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libkeva.md` và `.json`
+  - `SOURCE/GIAI-MA/libkeva/jni_bindings.json`
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **224/224 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **33 / 169 thư viện COMPLETED (19.53%)** có 100% thân hàm thực tế.
