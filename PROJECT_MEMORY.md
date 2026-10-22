@@ -1663,3 +1663,41 @@
   - `SOURCE/GIAI-MA/libalog/jni_bindings.json`
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **231/231 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **34 / 169 thư viện COMPLETED (20.12%)** có 100% thân hàm thực tế.
+
+
+## 62. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libbvcparser.so (BYTE_VC1_BITSTREAM_PARSER)
+- **Thời gian**: 2026-10-22 10:24:30
+- **Thư viện mục tiêu**: libbvcparser.so (arm64-v8a: 51,416 bytes, 43 dynamic symbols, ByteDance ByteVC1 / ByteVC2 / VVC Video Container Demuxer & Bitstream Parser).
+- **Chi tiết giải mã thân hàm libbvcparser.so (20 files, 63,599 bytes / 62.11 KB code C++, 0 stub)**:
+  1. *Cấu trúc Định Nghĩa Luồng & Khối NAL (`bvc_types.h`)*:
+     - Định nghĩa `GetBitContext` khớp các thanh ghi AArch64 (buffer: `0x00`, index: `0x10`, size_in_bits: `0x18`).
+     - Enum `BVC1NalType`: TRAIL_N, TRAIL_R, IDR_W_RADL, CRA_NUT, VPS_NUT (32), SPS_NUT (33), PPS_NUT (34), PREFIX_SEI (39), SUFFIX_SEI (40).
+     - Định nghĩa `BVC1SliceType` (B=0, P=1, I=2), `BVC1Profile`, cấu trúc NAL envelope `BVC1Nal`, và Parameter Sets.
+  2. *Bộ Giải Mã Exp-Golomb Tối Ưu Hóa Bảng Tra Cứu (`bvc_golomb.h`, `bvc_golomb.cpp`)*:
+     - `bvc_get_ue_golomb`: Khớp mã máy AArch64 tại `0x0075f4`, sử dụng bảng LUT 5-bit `ff_ue_golomb_vlc_code` tại `0x8f4c` và nhánh CLZ tính $val = 2^M - 1 + \text{INFO}$.
+     - `bvc_get_se_golomb`: Khớp mã máy AArch64 tại `0x007538`, sử dụng bảng LUT `ff_se_golomb_vlc_code` tại `0x8d4c` và công thức toán học có dấu $(-1)^{k+1} \cdot \lceil k / 2 \rceil$.
+  3. *Đọc Luồng Bit & Loại Bỏ Emulation Prevention Bytes (`bvc_bitstream.h`, `bvc_bitstream.cpp`)*:
+     - Các thao tác `bvc_get_bits`, `bvc_show_bits`, `bvc_skip_bits`.
+     - `bvc_remove_emulation_bytes`: Quét và loại bỏ chuỗi ba byte `0x00 0x00 0x03`, bảo đảm assertion `nal->Bvc1SkippedBytesPosSize >= nal->Bvc1SkippedBytes`.
+  4. *Quét Mã Bắt Đầu & Tách Khối NAL (`bvc_nal.h`, `bvc_nal.cpp`)*:
+     - `bvc_find_start_code`: Quét nhanh chuỗi 3-byte (`0x000001`) hoặc 4-byte (`0x00000001`).
+     - `bvc_parse_nal_header`: Bóc tách 2-byte NAL header: `forbidden_zero_bit`, `nal_unit_type`, `nuh_layer_id`, `nuh_temporal_id_plus1`.
+     - `bvc_extract_packet_nals`: Tách toàn bộ NAL units trong một packet vào bộ đệm RBSP.
+  5. *Giải Mã Video Parameter Set VPS (`bvc_vps.h`, `bvc_vps.cpp`)*:
+     - `bvc1_decode_vps`: Bóc tách VPS ID, Profile Tier Level (PTL), các cờ reserved, và thông tin buffering sublayer.
+  6. *Giải Mã Sequence Parameter Set SPS (`bvc_sps.h`, `bvc_sps.cpp`)*:
+     - `bvc1_decode_sps`: Bóc tách coded & cropped dimensions (width, height, left, right, top, bottom), độ sâu màu luma/chroma bit depth, CTB size $2^{\text{log2\_ctb\_size}}$, SAR aspect ratio, và framerate.
+  7. *Giải Mã Picture Parameter Set PPS (`bvc_pps.h`, `bvc_pps.cpp`)*:
+     - `bvc1_decode_pps`: Bóc tách QP offsets, tile columns/rows, uniform spacing flag, deblocking control (`pps_beta_offset_div2`, `pps_tc_offset_div2`), CABAC bypass alignment.
+  8. *Bộ Lọc Dòng Bit Container MP4 sang Annex B (`bvc_bsf.h`, `bvc_bsf.cpp`)*:
+     - Hiện thực `bytevc2_mp4toannexb_filter` và `vvc_mp4toannexb_filter`: Chuyển đổi độ dài tiền tố 4-byte thành mã bắt đầu `0x00000001`.
+  9. *Động Cơ Phân Tích Cú Pháp BVC Parser & Hàm Xuất Khẩu C (`bvc_parser.h`, `bvc_parser.cpp`)*:
+     - `bvc_parser_parse_slice_header`: Tính toán Picture Order Count (POC) liên tục giữa các khung hình I/P/B.
+     - Hàm xuất khẩu C `register_bvcparser` khớp VAddr `0x0076d4` nạp parser vào lõi TTFFmpeg.
+  10. *Bộ Tự Kiểm Thử 7 Giai Đoạn & Phân Tích Mã Giả (`bvcparser_interface.h`, `bvcparser_interface.cpp`, `bvcparser_pseudocode.cpp`)*:
+      - 7/7 giai đoạn kiểm thử nội bộ đạt kết quả tuyệt đối 100%.
+- **Thẩm định đối kháng độc lập từ Agent 13**: Đạt chứng nhận `VERIFIED_AND_ACCEPTED` tại `SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json`. Bằng chứng lưu tại:
+  - `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbvcparser.md` và `.json`
+  - `SOURCE/GIAI-MA/libbvcparser/jni_bindings.json`
+- **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **238/238 tests PASS (100.0%)**.
+- **Tiến độ thực chất**: Đạt **35 / 169 thư viện COMPLETED (20.71%)** có 100% thân hàm thực tế.

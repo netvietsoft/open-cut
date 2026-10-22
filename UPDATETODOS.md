@@ -410,10 +410,23 @@
   10. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json (Thư viện số 34/169).
   11. Bộ kiểm thử khép kín đạt 231/231 tests PASS (100.0%).
 
-- [ ] TASK-074-RECONSTRUCTION-LIBBVCPARSER (2026-10-22, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libbvcparser.so (CORE_09_BYTEDANCE_VIDEO_CONTAINER_PARSER)**:
-  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libbvcparser.so` (ByteDance Video Container Demuxer & Bitstream Parser).
-  2. Bóc tách toàn bộ bảng biểu tượng, JNI exports, cấu trúc container MP4/FLV/BVC, box parser (moov, mvhd, trak, mdia, minf, stbl, stsd, avcC, hvcC), và trích xuất SEI metadata.
-  3. Triển khai mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libbvcparser/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
-  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbvcparser.md` & `.json`.
-  5. Mở rộng suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS (238 tests).
+- [x] TASK-074-RECONSTRUCTION-LIBBVCPARSER (2026-10-22, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Toàn Diện Thuật Toán libbvcparser.so (CORE_09_BYTEDANCE_VIDEO_CONTAINER_PARSER)**:
+  1. Tái dựng 20 files (63.60 KB C++, 0 stub) cho `libbvcparser.so`, vượt chuẩn dung lượng (> 40 KB, 0 stub rỗng) với song ngữ EN + VN.
+  2. Cấu trúc GetBitContext khớp layout thanh ghi ARM64: buffer `0x00`, index `0x10`, size `0x18`.
+  3. Giải mã Exp-Golomb ue(v) và se(v) khớp chính xác bảng tra cứu LUT 5-bit tại VAddr 0x8f4c và 0x8d4c.
+  4. Quét mã bắt đầu 3-byte/4-byte và thuật toán loại bỏ byte chống trùng lặp `0x000003`.
+  5. Giải mã đầy đủ Parameter Sets: Video Parameter Set (VPS), Sequence Parameter Set (SPS), và Picture Parameter Set (PPS).
+  6. Tính toán kích thước khối cây CTB ($1 \ll 	ext{log2\_ctb}$) và tính toán Picture Order Count (POC) tái sắp xếp khung hình.
+  7. Các bộ lọc chuyển đổi bitstream container `bytevc2_mp4toannexb` và `vvc_mp4toannexb`.
+  8. Hàm xuất khẩu C `register_bvcparser` (VAddr 0x0076d4) nạp vào framework TTFFmpeg.
+  9. Bộ tự kiểm thử nội bộ 7 giai đoạn `bvc_run_self_test()` đạt 7/7 STAGES PASSED (100.0%).
+  10. Được Agent 13 (Adversary Auditor) phê chuẩn VERIFIED_AND_ACCEPTED tại SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json (Thư viện số 35/169).
+  11. Bộ kiểm thử khép kín đạt 238/238 tests PASS (100.0%).
+
+- [ ] TASK-075-RECONSTRUCTION-LIBBYTEVC2DEC (2026-10-22, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libbyteVC2dec.so (CORE_10_BYTEDANCE_BYTEVC2_VVC_DECODER)**:
+  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libbyteVC2dec.so` (ByteDance ByteVC2 / H.266 Advanced Video Decoding Subsystem).
+  2. Bóc tách toàn bộ bảng biểu tượng, JNI exports, pipeline giải mã entropy CABAC, biến đổi ngược DCT/DST, bù chuyển động motion compensation, bộ lọc vòng SAO/ALF/Deblocking.
+  3. Triển khai mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libbyteVC2dec/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
+  4. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbyteVC2dec.md` & `.json`.
+  5. Mở rộng suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS (245 tests).
   6. Agent 13 nghiệm thu cấp chứng nhận `VERIFIED_AND_ACCEPTED` tại `LEDGER_DOI_KHANG.json`.

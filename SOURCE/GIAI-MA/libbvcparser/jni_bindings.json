@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "function_name": "register_bvcparser",
+    "signature": "void register_bvcparser(void)",
+    "vaddr": "0x000076d4",
+    "type": "C_EXPORT",
+    "description": "Register BVC1 / ByteVC2 codec parser and bitstream filters into TTFFmpeg core framework"
+  },
+  {
+    "function_name": "bvc_get_ue_golomb",
+    "signature": "uint32_t bvc_get_ue_golomb(GetBitContext* gb)",
+    "vaddr": "0x000075f4",
+    "type": "C_EXPORT",
+    "description": "Decode Unsigned Exp-Golomb bitstream code ue(v) with 5-bit LUT acceleration at 0x8f4c"
+  },
+  {
+    "function_name": "bvc_get_se_golomb",
+    "signature": "int32_t bvc_get_se_golomb(GetBitContext* gb)",
+    "vaddr": "0x00007538",
+    "type": "C_EXPORT",
+    "description": "Decode Signed Exp-Golomb bitstream code se(v) with 5-bit LUT acceleration at 0x8d4c"
+  },
+  {
+    "filter_name": "bytevc2_mp4toannexb",
+    "signature": "int bytevc2_mp4toannexb_filter(BvcMp4ToAnnexbContext* ctx, const uint8_t* in, size_t in_len, uint8_t* out, size_t out_cap, size_t* out_len)",
+    "vaddr": "0x000089cb",
+    "type": "BITSTREAM_FILTER",
+    "description": "Convert ByteVC2 MP4 4-byte length prefix container to Annex B start code bitstream"
+  },
+  {
+    "filter_name": "vvc_mp4toannexb",
+    "signature": "int vvc_mp4toannexb_filter(BvcMp4ToAnnexbContext* ctx, const uint8_t* in, size_t in_len, uint8_t* out, size_t out_cap, size_t* out_len)",
+    "vaddr": "0x00008b1c",
+    "type": "BITSTREAM_FILTER",
+    "description": "Convert VVC MP4 container bitstream to Annex B start code bitstream"
+  }
+]

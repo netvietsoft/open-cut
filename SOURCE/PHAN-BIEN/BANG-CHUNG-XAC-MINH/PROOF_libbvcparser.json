@@ -1,0 +1,68 @@
+{
+  "library": "libbvcparser.so",
+  "sha256": "4fd41ce10185e7a9da870fc38e5538eec031fe9f33bce30bfe7ecaece9809930",
+  "elf_size": 51416,
+  "reconstructed_files_count": 20,
+  "reconstructed_bytes": 63599,
+  "size_gate_passed": true,
+  "stubs_count": 0,
+  "symbols_count": 43,
+  "c_exports": [
+    "register_bvcparser",
+    "bvc_get_ue_golomb",
+    "bvc_get_se_golomb"
+  ],
+  "bitstream_filters": [
+    "bytevc2_mp4toannexb",
+    "vvc_mp4toannexb"
+  ],
+  "opcode_verification": [
+    {
+      "function": "register_bvcparser",
+      "vaddr": "0x0076d4",
+      "size": 20,
+      "opcodes": [
+        "adrp x0, #0x10000; add x0, x0, #0x140 (AVCodecParser bvc1_parser)",
+        "adrp x1, #0x7000; add x1, x1, #0x6e8 ('bvc1')",
+        "b tt_register_codec_parser (PLT 0x11b0)"
+      ]
+    },
+    {
+      "function": "bvc_get_ue_golomb",
+      "vaddr": "0x0075f4",
+      "size": 192,
+      "opcodes": [
+        "ldr w21, [x0, #0x10] (gb->index)",
+        "ldr x8, [x0] (gb->buffer)",
+        "lsr x9, x21, #3 (byte offset = index >> 3)",
+        "ldr w8, [x8, x9]; rev w8, w8 (big-endian 32-bit load)",
+        "lsl w20, w8, w9; lsr w8, w20, #0x1b (top 5 bits)",
+        "adrp x10, #0x8000; add x10, x10, #0xf4c (LUT at 0x8f4c)",
+        "ldrb w0, [x10, x8] (lookup ue value)",
+        "str w8, [x19, #0x10] (update gb->index)"
+      ]
+    },
+    {
+      "function": "bvc_get_se_golomb",
+      "vaddr": "0x007538",
+      "size": 188,
+      "opcodes": [
+        "ldr w21, [x0, #0x10]; ldr x22, [x0]",
+        "lsr x8, x21, #3; ldr w8, [x22, x8]; rev w8, w8",
+        "lsr w8, w0, #0x1b",
+        "adrp x10, #0x8000; add x10, x10, #0xd4c (LUT at 0x8d4c)",
+        "ldrsb w0, [x10, x8] (lookup se signed value)",
+        "str w8, [x19, #0x10]"
+      ]
+    }
+  ],
+  "mathematical_proofs": {
+    "ue_golomb_decoding_formula": "val = (1 << leading_zeros) - 1 + info",
+    "se_golomb_mapping_formula": "val = (ue & 1) ? ((ue + 1) >> 1) : -((ue + 1) >> 1)",
+    "ctb_dimensions_formula": "ctb_size = 1 << (log2_min_cb_size + log2_diff); ctb_w = (w + ctb_size - 1) / ctb_size",
+    "poc_reordering_formula": "poc = (lsb < prev_lsb && prev_lsb - lsb >= max_lsb / 2) ? (prev_msb + max_lsb + lsb) : ((lsb > prev_lsb && lsb - prev_lsb > max_lsb / 2) ? (prev_msb - max_lsb + lsb) : (prev_msb + lsb))"
+  },
+  "self_test_stages_passed": 7,
+  "self_test_stages_total": 7,
+  "audit_passed": true
+}
