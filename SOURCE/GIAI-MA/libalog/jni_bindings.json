@@ -1,1 +1,128 @@
-[]
+[
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeCreate",
+    "signature": "(IZLjava/lang/String;Ljava/lang/String;IIILjava/lang/String;IILjava/lang/String;IIIIIILjava/lang/String;JZI)J",
+    "fnPtr": "0x000094a4",
+    "description": "Initialize and create native Alog instance"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeWrite",
+    "signature": "(JILjava/lang/String;Ljava/lang/String;)V",
+    "fnPtr": "0x00009700",
+    "description": "Synchronously write log record with level and tag"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeWriteAsyncMsg",
+    "signature": "(JILjava/lang/String;Ljava/lang/String;JJ)V",
+    "fnPtr": "0x000097c4",
+    "description": "Enqueue asynchronous log record with custom 64-bit arguments"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeAsyncFlush",
+    "signature": "(J)V",
+    "fnPtr": "0x0000988c",
+    "description": "Trigger non-blocking asynchronous queue drain"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeSyncFlush",
+    "signature": "(J)V",
+    "fnPtr": "0x00009894",
+    "description": "Block until all queued logs are flushed and synced to disk"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeTimedSyncFlush",
+    "signature": "(JI)V",
+    "fnPtr": "0x0000989c",
+    "description": "Timed synchronous flush with millisecond timeout"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeSetLevel",
+    "signature": "(JI)V",
+    "fnPtr": "0x000098b4",
+    "description": "Dynamically update minimum log filtering level"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeSetSyslog",
+    "signature": "(JZ)V",
+    "fnPtr": "0x000098bc",
+    "description": "Enable or disable mirroring to Android Logcat"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeDestroy",
+    "signature": "(J)V",
+    "fnPtr": "0x000098cc",
+    "description": "Safely destroy logger instance and release native resources"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeGetLegacyWriteFuncAddr",
+    "signature": "()J",
+    "fnPtr": "0x0000992c",
+    "description": "Return function pointer to legacy write function"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeGetLegacyFlushFuncAddr",
+    "signature": "()J",
+    "fnPtr": "0x00009938",
+    "description": "Return function pointer to legacy flush function"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeGetLegacyGetLogFileDirFuncAddr",
+    "signature": "()J",
+    "fnPtr": "0x00009944",
+    "description": "Return function pointer to legacy log directory query"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeSetDefaultInstance",
+    "signature": "(J)V",
+    "fnPtr": "0x00009950",
+    "description": "Register instance as global default logger"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeUpdateAlogCacheSize",
+    "signature": "(I)V",
+    "fnPtr": "0x00009998",
+    "description": "Adjust memory ring buffer cache capacity"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeGetNativeWriteFuncAddr",
+    "signature": "()J",
+    "fnPtr": "0x000099f0",
+    "description": "Return function pointer to alog_write for C/C++ cross-engine bridge"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeGetNativeWriteAsyncFuncAddr",
+    "signature": "()J",
+    "fnPtr": "0x000099fc",
+    "description": "Return function pointer to alog_write_default_instance_async"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeGetNativeInitFuncAddr",
+    "signature": "()J",
+    "fnPtr": "0x00009a08",
+    "description": "Return function pointer to init_async_logging"
+  },
+  {
+    "class_name": "com/bytedance/android/alog/Alog",
+    "method_name": "nativeSetEnableWrite",
+    "signature": "(I)V",
+    "fnPtr": "0x00009a14",
+    "description": "Master switch to enable or pause log writes"
+  }
+]

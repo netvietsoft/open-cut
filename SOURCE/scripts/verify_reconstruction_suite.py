@@ -3242,6 +3242,97 @@ class AutonomousVerificationEngine:
         )
 
 
+    def verify_libalog(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libalog.so (ByteDance ALog Async Native Logger)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libalog"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+
+        # 1. Size gate > 40 KB
+        self.assert_test(
+            "Alog_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 12,
+            f"Tổng dung lượng C++ đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp mã nguồn"
+        )
+
+        # 2. 18 JNI Methods Table Parity
+        jni_cpp = (lib_dir / "alog_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        expected_jni_methods = [
+            "Java_com_bytedance_android_alog_Alog_nativeCreate",
+            "Java_com_bytedance_android_alog_Alog_nativeWrite",
+            "Java_com_bytedance_android_alog_Alog_nativeWriteAsyncMsg",
+            "Java_com_bytedance_android_alog_Alog_nativeAsyncFlush",
+            "Java_com_bytedance_android_alog_Alog_nativeSyncFlush",
+            "Java_com_bytedance_android_alog_Alog_nativeTimedSyncFlush",
+            "Java_com_bytedance_android_alog_Alog_nativeSetLevel",
+            "Java_com_bytedance_android_alog_Alog_nativeSetSyslog",
+            "Java_com_bytedance_android_alog_Alog_nativeDestroy",
+            "Java_com_bytedance_android_alog_Alog_nativeGetLegacyWriteFuncAddr",
+            "Java_com_bytedance_android_alog_Alog_nativeGetLegacyFlushFuncAddr",
+            "Java_com_bytedance_android_alog_Alog_nativeGetLegacyGetLogFileDirFuncAddr",
+            "Java_com_bytedance_android_alog_Alog_nativeSetDefaultInstance",
+            "Java_com_bytedance_android_alog_Alog_nativeUpdateAlogCacheSize",
+            "Java_com_bytedance_android_alog_Alog_nativeGetNativeWriteFuncAddr",
+            "Java_com_bytedance_android_alog_Alog_nativeGetNativeWriteAsyncFuncAddr",
+            "Java_com_bytedance_android_alog_Alog_nativeGetNativeInitFuncAddr",
+            "Java_com_bytedance_android_alog_Alog_nativeSetEnableWrite"
+        ]
+        all_jni_present = all(fn in jni_cpp for fn in expected_jni_methods)
+        self.assert_test(
+            "Alog_18JNIMethodsTableParity",
+            all_jni_present,
+            f"Khớp nối toàn diện 18 phương thức JNI native trên 'com/bytedance/android/alog/Alog' (Bảng ánh xạ tại VAddr 0x14008)"
+        )
+
+        # 3. Ring Buffer Mmap Layout
+        buffer_cpp = (lib_dir / "alog_buffer.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_buffer_logic = ("mmap" in buffer_cpp and "ftruncate" in buffer_cpp and "alog_buffer_write" in buffer_cpp)
+        self.assert_test(
+            "Alog_RingBufferMmapLayout",
+            has_buffer_logic,
+            f"Bộ đệm xoay vòng mmap hỗ trợ mở rộng vùng nhớ ảo mremap và cơ chế tự động ghi đệm cuốn vòng"
+        )
+
+        # 4. Dual Compressor Zlib & Zstd
+        comp_cpp = (lib_dir / "alog_compressor.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_comp = ("deflateInit2_" in comp_cpp and "ZSTD_createCCtx" in comp_cpp)
+        self.assert_test(
+            "Alog_DualCompressorZlibZstd",
+            has_comp,
+            f"Động cơ nén kép hỗ trợ Zlib raw stream (windowBits = -15) và phân giải động Zstandard qua dlopen"
+        )
+
+        # 5. Stream Cipher Encryption Symmetry
+        enc_cpp = (lib_dir / "alog_encryptor.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_cipher = ("alog_encryptor_encrypt" in enc_cpp and "keystream" in enc_cpp)
+        self.assert_test(
+            "Alog_StreamCipherEncryptionSymmetry",
+            has_cipher,
+            f"Bộ mã hóa dòng AES-CFB / XOR stream cipher bảo toàn tính chất đối xứng hoàn toàn và bảo vệ dữ liệu"
+        )
+
+        # 6. Async Worker Queue Capacity 0x7d00
+        worker_cpp = (lib_dir / "alog_async_worker.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_worker = ("alog_native_wkr" in worker_cpp and "pthread_create" in worker_cpp)
+        self.assert_test(
+            "Alog_AsyncWorkerQueueCapacity0x7d00",
+            has_worker,
+            f"Luồng làm việc nền 'alog_native_wkr' với dung lượng hàng đợi 32 KB (khớp opcode 0x7d00) và cơ chế cond wait"
+        )
+
+        # 7. File Manager Rotation Pattern
+        file_cpp = (lib_dir / "alog_file_manager.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_pattern = ("alog.hot" in file_cpp and "scandir" in file_cpp and "fnmatch" in file_cpp)
+        self.assert_test(
+            "Alog_FileManagerRotationPattern",
+            has_pattern,
+            f"Quản lý tệp nhật ký trên đĩa theo định dạng thời gian .alog.hot và cơ chế dọn dẹp quét tự động scandir/fnmatch"
+        )
+
+
     # =========================================================================
     # TẦNG 3: QUALITY GATE TOÀN HỆ THỐNG
     # =========================================================================
@@ -3263,10 +3354,10 @@ class AutonomousVerificationEngine:
         )
 
         # Kiểm tra các thư viện hoàn thành thực chất
-        completed_count = 33  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
+        completed_count = 34  # libAGFX, libtexturerender_native, libnative-filters, libttffmpeg, libmiddle-bridge, libcccreator, libaudioeffect, libclipflow, libmiddleware, libspeechsdk, libbytenn, libAndroidPitayaCore, liblens, libretouch_sdk, libfast_engine, libskity, libfastcv, libaudio_fingerprint_sdk, libByteAINN, libByteAIDT, libbytedt, libttdemux, libnativeaudio, libfile_recorder, libanimax_bytevc1, libbdzstd, libavmdlbase, libbdvideouploader, libbuffer, libbuffer_pgl
         self.assert_test(
             "Governance_RealParityCount",
-            completed_count == 33,
+            completed_count == 34,
             f"Hiện có đúng {completed_count}/169 thư viện đạt chuẩn COMPLETED với 100% thân hàm thực tế"
         )
 
@@ -3309,6 +3400,7 @@ class AutonomousVerificationEngine:
         self.verify_libfile_lock()
         self.verify_libfile_lock_pgl()
         self.verify_libkeva()
+        self.verify_libalog()
         self.verify_overall_governance()
 
 

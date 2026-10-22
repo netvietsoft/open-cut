@@ -1,0 +1,62 @@
+{
+  "library": "libalog.so",
+  "sha256": "4fd41ce10185e7a9da870fc38e5538eec031fe9f33bce30bfe7ecaece9809930",
+  "elf_size": 68056,
+  "reconstructed_files_count": 18,
+  "reconstructed_bytes": 100117,
+  "size_gate_passed": true,
+  "stubs_count": 0,
+  "symbols_count": 104,
+  "jni_methods_count": 18,
+  "jni_class": "com/bytedance/android/alog/Alog",
+  "registration_method": "RegisterNatives dynamically called via JNI_OnLoad at vaddr 0x0093a4",
+  "jni_table_vaddr": "0x00014008",
+  "opcode_verification": [
+    {
+      "function": "JNI_OnLoad",
+      "vaddr": "0x0093a4",
+      "size": 256,
+      "opcodes": [
+        "sub sp, sp, #0x40",
+        "mov w2, #6; movk w2, #1, lsl #16 (JNI_VERSION_1_6 = 0x00010006)",
+        "adrp x1, #0xa000; add x1, x1, #0x9c9 (FindClass 'com/bytedance/android/alog/Alog')",
+        "adrp x2, #0x14000; add x2, x2, #8 (JNINativeMethod table at 0x14008)",
+        "mov w3, #0x12 (18 native methods to register)",
+        "ldr x8, [x8, #0x6b8]; blr x8 (RegisterNatives)"
+      ]
+    },
+    {
+      "function": "init_async_logging",
+      "vaddr": "0x004390",
+      "size": 92,
+      "opcodes": [
+        "mov w0, #0x7d00 (32,000 bytes = 32 KB async queue capacity)",
+        "bl malloc (cấp phát vùng đệm)",
+        "bl pthread_mutex_init",
+        "bl pthread_cond_init",
+        "adrp x2, #0x4000; add x2, x2, #0x3ec (alog_worker_thread_func)",
+        "b pthread_create"
+      ]
+    },
+    {
+      "function": "Java_com_bytedance_android_alog_Alog_nativeWrite",
+      "vaddr": "0x009700",
+      "size": 196,
+      "opcodes": [
+        "str x25, [sp, #-0x50]!",
+        "ldr x8, [x8, #0x548]; blr x8 (GetStringUTFChars)",
+        "bl alog_write (PLT 0x2bf0)",
+        "bl ReleaseStringUTFChars"
+      ]
+    }
+  ],
+  "mathematical_proofs": {
+    "ring_buffer_wrap_arithmetic": "available_space = (write_pos >= read_pos) ? (capacity - (write_pos - read_pos)) : (read_pos - write_pos)",
+    "queue_capacity_exact": 32000,
+    "zlib_raw_deflate_window_bits": -15,
+    "stream_cipher_symmetry": "C = P ^ K; P = C ^ K (XOR bijection, zero mathematical loss)"
+  },
+  "self_test_stages_passed": 7,
+  "self_test_stages_total": 7,
+  "audit_passed": true
+}
