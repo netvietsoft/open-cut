@@ -2317,3 +2317,17 @@
   - `adversary_critic_agent.py`: **73 / 169 `VERIFIED_AND_ACCEPTED` (43.20%)** (`629 opcodes`, `100% REAL`).
   - `verify_reconstruction_suite.py`: **473 / 473 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 101. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% liborbuculumadapter.so (TASK-113-RECONSTRUCTION-LIBORBUCULUMADAPTER / TASK_SO_129_liborbuculumadapter)
+- **Thời gian**: 2026-10-27 05:42:00
+- **Thư viện**: `liborbuculumadapter.so` (`149,936 bytes`, SHA-256 `c79326a4419e98be93ce70b6b08f70a82852980d7322dadb3d5edac7ea179785`, `.text` `0x004460..0x01a6ec` = `90,764 bytes`, `22,691` instructions).
+- **Chi tiết giải mã thân hàm (7 files C++17, `213,457 bytes`, `orbuculumadapter_pseudocode.cpp` = `96,283 bytes`, 0 stub)**:
+  1. **`JNI_OnLoad` (`0x004540..0x0049fc`) & `JNI_OnUnload` (`0x004a00..0x004b84`)**: Đăng ký 8 phương thức native (`.data 0x028000..0x0280b8`: `activesdk`, `initcall`, `initnetconfig`, `unhook`, `doNativeNetworkValidate`, `setNativeHardBlockConfigInner`, `isNativeNetworkResultNeedBlock`, `setNativeDebug`) trên `com/orbu/core/init/TTKNativeNetworkManager`, phân giải 10 `jmethodID` tĩnh (`0x0281d0..0x028218`), và quản lý bộ đếm lời gọi JNI nguyên tử (`0x028358`) với `std::condition_variable` (`0x028188`).
+  2. **Bảng Xuất 5 Hàm Qua ShadowHook `setenv` / `getenv` (`0x011db4..0x012354`)**: Hook `setenv` và `getenv` của `libc.so` bảo vệ bởi `std::shared_timed_mutex` (`0x0287b8`), xuất 5 con trỏ hàm dưới dạng chuỗi `"%p"` trong 5 mục `EnvExportEntry` (mỗi mục `128 bytes`) tại `.bss 0x028930..0x028d2f`.
+  3. **Bộ Phân Tích HTTP Header, URL Rule Matcher & Dataflow ID (`0x00b99c..0x00e550`)**: Phân tích header chuẩn RFC (`0x00ba34`) và KV (`0x00bda8`), kiểm tra 7 giao thức tuân thủ (`0x00c13c`), tách host/path (`0x00d660`), khớp hậu tố đại diện `-.`/`*.` (`0x00da64`), bổ sung DFID 1P/3P (`0x00dc60`, `0x00e1d8`) và chuyển đổi DFID hex/dec (`0x00ca60`).
+  4. **Đánh Giá Chặn Cứng `BlockSnapshot`, Hồ Luồng `SandboxTP-%zu` & `SignalCrashGuard` (`0x00cfc0..0x014928`)**: Quản lý nguyên tử `std::shared_ptr<BlockSnapshot>` (`0x028340`), hồ 2 luồng `SandboxTP-%zu` (`0x0124d0`), cầu nối `dlopen`/`dlsym` tới `liborbuculum.so` & `libpumbaa-network.so`, và bảo vệ chống sập tín hiệu `SIGSEGV`/`SIGBUS`/`SIGABRT` bằng `sigsetjmp`/`siglongjmp` (`0x014400`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **74 / 169 `VERIFIED_AND_ACCEPTED` (43.79%)** (`297 opcodes`, `100% REAL`).
+  - `verify_reconstruction_suite.py`: **479 / 479 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

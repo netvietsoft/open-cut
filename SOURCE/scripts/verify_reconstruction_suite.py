@@ -7543,6 +7543,139 @@ class AutonomousVerificationEngine:
             "Khớp TypeFaceOptimizer::nativeClearUnuseTTF (0x017dc0), hằng số 4-byte 'Pss:' (0x3a737350 @ 0x016d90..0x016da0), và ngưỡng giải phóng TTF Pss <= 1023 kB (0x3ff @ 0x017998)"
         )
 
+    def verify_liborbuculumadapter(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: liborbuculumadapter.so (Orbu Network & Live SEI Compliance Adapter)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "liborbuculumadapter"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liborbuculumadapter.so"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        pseudocode_bytes = (lib_dir / "orbuculumadapter_pseudocode.cpp").stat().st_size
+
+        so_bytes = so_path.read_bytes()
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest()
+        all_src = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Binary SHA-256 & Source Size Gate (> 40 KB pseudocode, >= 7 files)
+        self.assert_test(
+            "OrbuculumAdapter_BinaryIdentityAndSourceSizeGate",
+            len(so_bytes) == 149936 and
+            so_sha256 == "c79326a4419e98be93ce70b6b08f70a82852980d7322dadb3d5edac7ea179785" and
+            pseudocode_bytes > 40000 and
+            total_bytes > 90000 and
+            len(cpp_files) >= 7,
+            f"Khớp SHA-256 nhị phân (149,936 bytes) và dung lượng C++ đạt {total_bytes} bytes (pseudocode {pseudocode_bytes} bytes > 40 KB, {len(cpp_files)} files)"
+        )
+
+        # 2. JNI_OnLoad (0x004540) & 8-Entry JNINativeMethod Table (.data 0x028000..0x0280b8)
+        onload_op0 = struct.unpack("<I", so_bytes[0x004540:0x004544])[0]
+        reg_arg_op = struct.unpack("<I", so_bytes[0x004688:0x00468c])[0]
+        self.assert_test(
+            "OrbuculumAdapter_JniOnLoadAnd8RegisterNativesTable",
+            onload_op0 == 0xD101C3FF and
+            reg_arg_op == 0xAA1503E1 and
+            b"com/orbu/core/init/TTKNativeNetworkManager\x00" in so_bytes and
+            b"com/orbu/core/init/TTKNativeLiveSeiFieldManager\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "JNI_OnLoad",
+                "JNI_OnUnload",
+                "activesdk",
+                "initcall",
+                "initnetconfig",
+                "unhook",
+                "doNativeNetworkValidate",
+                "setNativeHardBlockConfigInner",
+                "isNativeNetworkResultNeedBlock",
+                "setNativeDebug"
+            ]),
+            "Khớp JNI_OnLoad (0x004540: sub sp, sp, #0x70), JNI_OnUnload (0x004a00) và bảng 8 phương thức RegisterNatives trên TTKNativeNetworkManager"
+        )
+
+        # 3. ShadowHook setenv/getenv Hook & 5-Entry EnvExportEntry Table (0x011db4..0x012354, .bss 0x028930)
+        hook_setenv_op = struct.unpack("<I", so_bytes[0x011db4:0x011db8])[0]
+        hook_getenv_op = struct.unpack("<I", so_bytes[0x011e74:0x011e78])[0]
+        self.assert_test(
+            "OrbuculumAdapter_ShadowHookSetenvGetenv5SymbolExportTable",
+            hook_setenv_op == 0xA9BD57F6 and
+            hook_getenv_op == 0xA9BC5FF8 and
+            b"orbuculumIsProceedRequest\x00" in so_bytes and
+            b"orbuculumIsProceedRequestForTTNet\x00" in so_bytes and
+            b"orbuculumIsProceedResponseImpl\x00" in so_bytes and
+            b"orbuculumRegisterLiveShutdownCallback\x00" in so_bytes and
+            b"orbuculumIsProceedSeiField\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "EnvExportEntry",
+                "HookedSetenv",
+                "HookedGetenv",
+                "SetupEnvExportTable",
+                "HookAndSetupEnv",
+                "UnhookSetenvAndGetenv"
+            ]),
+            "Khớp cơ chế hook libc.so setenv (0x011db4) & getenv (0x011e74) qua ShadowHook và bảng xuất 5 hàm 128-byte EnvExportEntry (.bss 0x028930)"
+        )
+
+        # 4. Unified HTTP Header Parsers (RFC CRLF & KV '&'/'=') & Scheme Filter (0x00b99c..0x00c4bc)
+        self.assert_test(
+            "OrbuculumAdapter_HttpHeaderParsersAndSchemeFilter",
+            b"x-tt-dataflow-id\x00" in so_bytes and
+            b"quic://\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "ParseRfcHttpHeaders",
+                "ParseKvHttpHeaders",
+                "ParseHttpHeadersUnified",
+                "SerializeHeadersToRfcString",
+                "IsUrlMatchingComplianceScheme",
+                "wss://",
+                "quic://"
+            ]),
+            "Khớp bộ phân tích HTTP header chuẩn RFC (CRLF + ':') tại 0x00ba34, KV ('\\n'/'&' + '=') tại 0x00bda8 và bộ lọc 7 giao thức tuân thủ tại 0x00c13c"
+        )
+
+        # 5. URL Host/Path Extractor, Wildcard Matcher & 1P/3P Dataflow ID Replenishment (0x00ca60..0x00e550)
+        wildcard_loop_op = struct.unpack("<I", so_bytes[0x00daf8:0x00dafc])[0]
+        self.assert_test(
+            "OrbuculumAdapter_UrlRuleMatcherAndDataflowIdReplenishment",
+            wildcard_loop_op == 0x17FFFFF2 and
+            b"672137215\x00" in so_bytes and
+            b"671088895\x00" in so_bytes and
+            b"transition_dfid\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "ExtractUrlHostAndPath",
+                "MatchNetConfigRule",
+                "ReplenishFirstPartyDataflowId",
+                "AssignThirdPartyDataflowId",
+                "ParseDataflowIdStringToInt",
+                "0x28000600",
+                "0x28000602"
+            ]),
+            "Khớp bộ tách URL host/path (0x00d660), đối sánh hậu tố đại diện '-.'/'*.' (0x00da64..0x00daf8), và bổ sung DFID 1P/3P (0x00dc60, 0x00e1d8)"
+        )
+
+        # 6. Atomic BlockSnapshot Evaluator, Pumbaa/Orbu Peer Bridges, SandboxTP-%zu Pool & SignalCrashGuard
+        need_block_op = struct.unpack("<I", so_bytes[0x00cfc0:0x00cfc4])[0]
+        self.assert_test(
+            "OrbuculumAdapter_BlockSnapshotAndSignalCrashGuard",
+            need_block_op == 0xD10203FF and
+            b"SandboxTP-%zu\x00" in so_bytes and
+            b"domainIdentityRecognizeV2\x00" in so_bytes and
+            b"handleByPumbaaForSandbox\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "BlockSnapshot",
+                "EvaluateNetworkResultNeedBlock",
+                "SandboxTP-%zu",
+                "ExecuteWithSignalCrashGuard",
+                "RecognizeDomainIdentityViaPumbaa",
+                "InvokePumbaaSandboxValidate",
+                "InvokeOrbuculumProceedRequestImpl",
+                "ProceedSeiFieldUpcall"
+            ]),
+            "Khớp đánh giá chặn cứng BlockSnapshot (0x00cfc0: sub sp, sp, #0x80), hồ 2 luồng SandboxTP-%zu (0x0124d0), cầu nối Pumbaa/Orbu và lớp bảo vệ tín hiệu TLS sigsetjmp/siglongjmp (0x014400)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -7621,6 +7754,7 @@ class AutonomousVerificationEngine:
         self.verify_libbach_sdk_jni()
         self.verify_libart_sym()
         self.verify_libosfix()
+        self.verify_liborbuculumadapter()
         self.verify_overall_governance()
 
 

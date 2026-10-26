@@ -1,0 +1,26 @@
+{
+  "task_id": "TASK-113-RECONSTRUCTION-LIBORBUCULUMADAPTER",
+  "so_task_id": "TASK_SO_129_liborbuculumadapter",
+  "title": "Clean-Room C++17 Reconstruction of liborbuculumadapter.so (Orbu Network & Live SEI Compliance Adapter)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "verified_by": "Agent 13 (Adversary Auditor)",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/liborbuculumadapter.so",
+  "binary_size_bytes": 149936,
+  "binary_sha256": "c79326a4419e98be93ce70b6b08f70a82852980d7322dadb3d5edac7ea179785",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/liborbuculumadapter/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_liborbuculumadapter.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_129_liborbuculumadapter.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "completed_at": "2026-10-27T05:42:00+07:00",
+  "verification_summary": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (74/169, 213457 B, 297 opcodes, 100% REAL)",
+    "reconstruction_suite": "479/479 PASS (100.0%)",
+    "native_audit_watchdog": "169 binaries, 0 high findings"
+  }
+}
