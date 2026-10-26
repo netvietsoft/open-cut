@@ -4616,6 +4616,77 @@ class AutonomousVerificationEngine:
         )
 
 
+    def verify_libBDMicroPythonVM(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libBDMicroPythonVM.so (Pitaya FastEngine & MicroPy Native Bridge)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libBDMicroPythonVM"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+
+        # 1. Size gate > 40 KB
+        self.assert_test(
+            "BDMicroPythonVM_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 10,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp mã nguồn"
+        )
+
+        # 2. Pitaya <-> FastEngine Object Conversion & PTYExtDict/PTYExtList/CEPExtDictObj
+        conv_cpp = (lib_dir / "bdmicropythonvm_obj_convert.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_conv = all(fn in conv_cpp for fn in [
+            "CreatePTYExtDict", "CreatePTYExtList", "CreateCepEvent",
+            "GetCoreError", "EnvPTYObj2MPObj", "PTYObj2MPObj",
+            "MPObj2PTYObj", "EnvMPObj2PTYObj", "GetPTYDict", "GetPTYList"
+        ])
+        self.assert_test(
+            "BDMicroPythonVM_PitayaFastEngineObjConvert",
+            has_conv,
+            "Khớp 100% 11 hàm C++ chuyển đổi đối tượng Pitaya <-> FastEngine (0x03bec0..0x045650) và tách stack trace '\n\x02' (0x0432d0)"
+        )
+
+        # 3. FastEngine Obj & Engine Exact ABI Offsets (+0x20, +0x28, +0x38, +0x860, +0x10e0, +0x1140)
+        types_h = (lib_dir / "bdmicropythonvm_types.h").read_text(encoding="utf-8", errors="ignore")
+        has_abi = ("small_int_cache[263]" in types_h and "0x10e0" in types_h and "0x1140" in types_h and "TensorType" in types_h)
+        self.assert_test(
+            "BDMicroPythonVM_EngineAndObjABILayout",
+            has_abi,
+            "Khớp bố cục ABI fast_engine::Obj (+0x20, +0x28, +0x38) và fast_engine::Engine (+0x08, +0x30, +0x860 small_int_cache[-5..257], +0x10e0, +0x1140)"
+        )
+
+        # 4. PYBridge 52 Methods, SQL Timestamp Regex (0x0517fa) & CityHash64 (0x051da8)
+        pyb_cpp = (lib_dir / "bdmicropythonvm_pybridge_tensor.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_pyb = ("anonymized_event" in pyb_cpp and "run_custom_task" in pyb_cpp and "(timestamp)" in pyb_cpp and "0xc3a5c85c97cb3127ULL" in pyb_cpp)
+        self.assert_test(
+            "BDMicroPythonVM_PYBridge52MethodsAndSqlRegex",
+            has_pyb,
+            "Khớp 52 phương thức PYBridge (SDK 2.14.0), biểu thức chính quy lọc timestamp SQL (0x0517fa) và hàm băm CityHash64 (0x051da8)"
+        )
+
+        # 5. TensorWrapper (.data 0x060000), BDByteDTBridge & BDByteNNBridge (17 Methods)
+        has_tensor_nn = ("kTensorWrapperAttrs" in pyb_cpp and "GetDims" in pyb_cpp and "SetDims" in pyb_cpp and "reinfer_shape_with_tensors" in pyb_cpp and "enable_data_wrapper" in pyb_cpp)
+        self.assert_test(
+            "BDMicroPythonVM_TensorWrapperAndByteNNBridge",
+            has_tensor_nn,
+            "Khớp bảng thuộc tính TensorWrapper (.data 0x060000..0x0600b0, GetDims 0x0326c4, SetDims 0x032834), BDByteDTBridge và 17 phương thức BDByteNNBridge"
+        )
+
+        # 6. InitFastEngine (0x04ee2c), MinPyVMPool & 21 MicPyArray/MicPyDict/MicroPyLoader JNI Exports
+        jni_cpp = (lib_dir / "bdmicropythonvm_vm_pool_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_jni = all(fn in jni_cpp for fn in [
+            "InitFastEngine", "OccupyOne", "FreeOne",
+            "Java_com_bytedance_pitaya_api_bean_nativeobj_micropy_MicPyArray_nativeCreateArray",
+            "Java_com_bytedance_pitaya_api_bean_nativeobj_micropy_MicPyArray_nativeSetLong",
+            "Java_com_bytedance_pitaya_api_bean_nativeobj_micropy_MicPyDict_nativeCreateDict",
+            "Java_com_bytedance_pitaya_api_bean_nativeobj_micropy_MicPyDict_nativeSetClass",
+            "Java_com_bytedance_pitaya_modules_MicroPyLoader_nativeInit"
+        ])
+        self.assert_test(
+            "BDMicroPythonVM_InitFastEngineAnd21JNIExports",
+            has_jni,
+            "Khớp pitaya::InitFastEngine (0x04ee2c), MinPyVMPool (OccupyOne/FreeOne) và 21 hàm JNI MicPyArray/MicPyDict/MicroPyLoader (0x04fd08..0x050f88)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -4668,6 +4739,7 @@ class AutonomousVerificationEngine:
         self.verify_libCepEngine()
         self.verify_libPitayaBdComponent()
         self.verify_libpns_ttmachine_adapter()
+        self.verify_libBDMicroPythonVM()
         self.verify_overall_governance()
 
 

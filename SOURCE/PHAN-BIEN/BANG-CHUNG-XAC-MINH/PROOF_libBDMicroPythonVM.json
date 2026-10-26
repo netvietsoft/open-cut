@@ -1,0 +1,58 @@
+{
+  "lib_name": "libBDMicroPythonVM",
+  "binary_path": "apktool-res/lib/arm64-v8a/libBDMicroPythonVM.so",
+  "binary_size_bytes": 379248,
+  "reconstructed_size_bytes": 166402,
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/bdmicropythonvm_types.h",
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/bdmicropythonvm_obj_convert.h",
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/bdmicropythonvm_obj_convert.cpp",
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/bdmicropythonvm_pybridge_tensor.h",
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/bdmicropythonvm_pybridge_tensor.cpp",
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/bdmicropythonvm_vm_pool_jni.h",
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/bdmicropythonvm_vm_pool_jni.cpp",
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/BDMicroPythonVM_interface.h",
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/bdmicropythonvm_interface.cpp",
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/BDMicroPythonVM_pseudocode.cpp"
+  ],
+  "gate1_size_passed": true,
+  "gate2_opcode_verified": true,
+  "gate2_opcode_addresses": [
+    "0x00f0a0", "0x032274", "0x032350", "0x03242c", "0x032508", "0x0325e8",
+    "0x0326c4", "0x0326f0", "0x0326f8", "0x032700", "0x032718", "0x032724", "0x03272c", "0x032748",
+    "0x032834", "0x032854", "0x032858", "0x03285c", "0x032860", "0x032864", "0x0328a0", "0x032a2c", "0x032b08", "0x032cd0",
+    "0x03b374", "0x03b394", "0x03b3a0", "0x03b3e8", "0x03b3f0", "0x03b3fc",
+    "0x03bec0", "0x03bed0", "0x03bedc", "0x03bee0", "0x03beec", "0x03bef0", "0x03bef4", "0x03bf00", "0x03bf20",
+    "0x03bf74", "0x03bf84", "0x03bf90", "0x03bf94", "0x03bfa0", "0x03bfa4", "0x03bfa8", "0x03bfb4", "0x03bfd4",
+    "0x03c028", "0x03c02c", "0x03c03c", "0x03c050", "0x03c07c", "0x03c0b4", "0x03c0b8",
+    "0x03c4e4", "0x03c538", "0x03c58c", "0x03c5e4", "0x03c634", "0x03c660", "0x03cb90", "0x03ceb4", "0x03d004", "0x03d224",
+    "0x03d3cc", "0x03d420", "0x03d474", "0x03d4cc", "0x03d4fc", "0x03d718", "0x03da38", "0x03dcc8",
+    "0x041378", "0x0430ac", "0x0430d4", "0x0430dc", "0x0430fc", "0x043188", "0x0431c8", "0x043214", "0x0432d0", "0x0432e8",
+    "0x043574", "0x0435a4", "0x0435b0", "0x043604", "0x043610", "0x043648",
+    "0x043c84", "0x043cac", "0x043cb0", "0x043ccc", "0x043cd4", "0x043d08", "0x043d14", "0x043d64",
+    "0x043d70", "0x043d9c", "0x043da0", "0x043db8", "0x043dd0", "0x0453d4", "0x0453e0", "0x04540c", "0x045478", "0x0454a8", "0x045530", "0x045650",
+    "0x04ee2c", "0x04ee58", "0x04ee5c", "0x04ee64", "0x04eea4", "0x04ef20",
+    "0x04fd08", "0x04fd14", "0x04fd1c", "0x04fd20", "0x04fd30", "0x04fd40", "0x04fd50", "0x04fd54",
+    "0x04fd8c", "0x04fe74", "0x04fe78", "0x04fe84", "0x04fe88", "0x04fe90", "0x04feb8", "0x04fed8",
+    "0x04ff18", "0x04ff24", "0x04ff2c", "0x04ff4c", "0x04ff54", "0x04ffc0", "0x04ffc8", "0x050040", "0x0502e0", "0x05033c", "0x050398",
+    "0x0503e0", "0x050434", "0x050574", "0x050648", "0x050720", "0x050798", "0x05082c", "0x0508c0", "0x050954", "0x050c28", "0x050f88"
+  ],
+  "gate3_math_verified": true,
+  "gate3_math_proofs": [
+    "Small-Integer Cache Indexing in MicPyArray_nativeSetLong (0x04fe74..0x04fe88): idx = uint64_t(val + 5) <= 0x106 (262, covering [-5, 257]), address = engine + 0x860 + (val + 5) * 8.",
+    "CityHash64 string hashing in PYBridge::cityhash64 (0x051da8 -> PLT 0x00ded0 _ZN6pitaya10CityHash64EPKcm) with exact constants k0=0xc3a5c85c97cb3127, k1=0xb492b66fbe98f273, k2=0x9ae16a3b2f90404f.",
+    "SQL WHERE Timestamp Regex Parser in PYBridge::query_sql (.rodata 0x0517fa): (timestamp)[\\s]*(>|>=|=|!=|<=|<)[\\s]*(\\d*[.]*\\d*).",
+    "Traceback stack splitting in fast_engine::GetCoreError (0x0430ac..0x0432e8): checks engine->has_exception at +0x10e0, calls FetchException, and splits traceback string by 2-byte delimiter \"\\n\\x02\" (0x020a @ 0x0432d0)."
+  ],
+  "gate4_abi_offsets_verified": true,
+  "gate4_abi_structures": [
+    "fast_engine::Obj header: +0x20 gc_generation (int32), +0x28 type_obj (TypeObj*), +0x30 engine (Engine*), +0x38 ref_count (int32). LongObj = 0x50 B (val at +0x40), FloatObj = 0x48 B (double at +0x40), ListObj = 0x58 B (vector at +0x40).",
+    "pitaya::PTYExtDict (0x50 = 80 B, vtable 0x05ee30) & pitaya::PTYExtList (0x50 = 80 B, vtable 0x05eeb0) & pitaya::CEPExtDictObj (0x50 = 80 B, vtable 0x05ee70): shared_ptr<PTYDict/PTYList> stored at +0x40..+0x48.",
+    "fast_engine::Engine layout: +0x0008 EnginePoolTable* (+0x00 long_pool, +0x08 float_pool, +0x28 list_pool), +0x0030 cep_event_pool (ObjCachePool*), +0x0860 small_int_cache[263], +0x10e0 has_exception (uint8), +0x1140 gc_generation (int32).",
+    "fast_engine::TensorWrapperObj (0x78 = 120 B, TypeObj* = TensorType @ 0x060210) with 5-entry AttrDef table in .data at 0x060000..0x0600b0 (dims, data_type, data_format, fraction, num_list) and JNI globals in .bss at 0x060928..0x060940."
+  ],
+  "gate5_symbols_count": 396,
+  "gate5_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED"
+}

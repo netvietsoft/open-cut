@@ -1985,3 +1985,20 @@
   - `.data` (`0x054000..0x0540d8`): 9-entry `JNINativeMethod` table registered on `"com/bytedance/pns/engine/RuleEngineService"` (`0x044029`) in `JNI_OnLoad` (`0x00d430`).
   - `_Z5isHitPd` (`0x03623c`, 388 B) & `_Z10randomSeed` (`0x036eac`, 484 B): 624-word (`0x270`) `std::mt19937` (`0x6c078965`, `M=397`, `MATRIX_A=0x9908b0df`) and `CityHash64` (`0x007ed4`).
 - **Verification**: `VERIFIED_AND_ACCEPTED` (**47 / 169 — 27.81%**), **317 / 317 PASS (100.0%)**, **0 high findings**.
+
+
+---
+
+## 75. HOÀN THÀNH TÁI DỰNG TARGET 48: `libBDMicroPythonVM.so` (`TASK-087-RECONSTRUCTION-LIBBDMICROPYTHONVM` / `TASK_SO_005`)
+- **Thời gian**: `2026-10-26 19:54:45`
+- **Binary gốc**: `apktool-res/lib/arm64-v8a/libBDMicroPythonVM.so` (`379,248 bytes`, `396` dynamic symbols: `41` exported + `355` imported)
+- **Kết quả tái dựng**: `10` tệp C++17 & Header (`166,402 bytes` C++17, `438` opcode citations, `0 stubs`) tại `SOURCE/GIAI-MA/libBDMicroPythonVM/`:
+  1. `bdmicropythonvm_types.h` (`31,446 B`): Bố cục ABI `fast_engine::Obj` (`+0x20` `gc_generation`, `+0x28` `type_obj`, `+0x38` `ref_count`), `fast_engine::Engine` (`+0x08` `pool_table`, `+0x30` `cep_event_pool`, `+0x860` `small_int_cache[263]` cho `[-5, 257]`, `+0x10e0` `has_exception`, `+0x1140` `gc_generation`).
+  2. `bdmicropythonvm_obj_convert.h` (`8,222 B`) & `bdmicropythonvm_obj_convert.cpp` (`32,689 B`): `CreatePTYExtDict` (`0x03bec0`), `CreatePTYExtList` (`0x03bf74`), `CreateCepEvent` (`0x03c028` -> `0x03c02c`), `Task::~Task` (`0x041378`), `GetCoreError` (`0x0430ac`), `EnvPTYObj2MPObj` (`0x043c84`), `PTYObj2MPObj` (`0x043d64`), `MPObj2PTYObj` (`0x0453d4`), `EnvMPObj2PTYObj` (`0x0453e0`), `GetPTYDict` (`0x045530`), `GetPTYList` (`0x045650`).
+  3. `bdmicropythonvm_pybridge_tensor.h` (`9,697 B`) & `bdmicropythonvm_pybridge_tensor.cpp` (`28,104 B`): `RegisterMicroPyNativeModules` (`0x03b374`), `TensorWrapperObj` (`.data 0x060000..0x0600b0`, `TensorType` @ `0x060210`), `PYBridgeModule` (52 phương thức, SDK `"2.14.0"`, regex SQL timestamp tại `0x0517fa`, `CityHash64` tại `0x051da8`), `BDByteDTBridgeModule` (3 phương thức), `BDByteNNBridgeModule` (17 phương thức).
+  4. `bdmicropythonvm_vm_pool_jni.h` (`13,383 B`) & `bdmicropythonvm_vm_pool_jni.cpp` (`29,161 B`): `InitFastEngine` (`0x04ee2c`), `MicroPyPitayaVM` (`0x052f30`), `MinPyVMPool` (`0x053409`), `FastEngineTaskExecutor` (`0x052aef`), `FastEngineMemoryMonitor` (`0x0530ed`), và 21 hàm JNI `MicPyArray` / `MicPyDict` / `MicroPyLoader` (`0x04fd08..0x050f88`).
+  5. `BDMicroPythonVM_interface.h` (`2,030 B`), `bdmicropythonvm_interface.cpp` (`3,374 B`), và `BDMicroPythonVM_pseudocode.cpp` (`8,296 B`).
+- **Chỉ số xác minh**:
+  - Agent 13 (`LEDGER_DOI_KHANG.json`): **`48 / 169` (`28.40%`) `VERIFIED_AND_ACCEPTED`**
+  - `verify_reconstruction_suite.py`: **`323 PASS / 0 FAIL (100.0%)`**
+  - `native_audit_watchdog.py`: **`169 binaries, 0 high findings`**

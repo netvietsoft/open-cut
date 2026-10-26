@@ -1,0 +1,23 @@
+{
+  "task_id": "TASK-087-RECONSTRUCTION-LIBBDMICROPYTHONVM",
+  "title": "100% C++17 Native Reconstruction of libBDMicroPythonVM.so (Target 48 / TASK_SO_005)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/C++ Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "target_binary": "apktool-res/lib/arm64-v8a/libBDMicroPythonVM.so",
+  "binary_size_bytes": 379248,
+  "reconstructed_size_bytes": 166402,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libBDMicroPythonVM/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libBDMicroPythonVM.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_005_libBDMicroPythonVM.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_048_libBDMicroPythonVM.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "verification_metrics": {
+    "verified_and_accepted_count": "48 / 169 (28.40%)",
+    "test_suite_result": "323 PASS / 0 FAIL (100.0%)",
+    "native_audit_watchdog": "169 binaries, 0 high findings"
+  },
+  "completed_at": "2026-10-26T19:54:30+07:00"
+}
