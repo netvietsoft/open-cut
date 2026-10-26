@@ -2020,3 +2020,19 @@
   - Agent 13 (`LEDGER_DOI_KHANG.json`): **`49 / 169` (`28.99%`) `VERIFIED_AND_ACCEPTED`**
   - `verify_reconstruction_suite.py`: **`329 PASS / 0 FAIL (100.0%)`**
   - `native_audit_watchdog.py`: **`169 binaries, 0 high findings`**
+
+
+---
+
+## 77. HOÀN THÀNH TÁI DỰNG TARGET 50: `libconfigcenter.so` (`TASK-089-RECONSTRUCTION-LIBCONFIGCENTER` / `TASK_SO_150`)
+- **Thời gian**: `2026-10-26 20:40:25`
+- **Binary gốc**: `apktool-res/lib/arm64-v8a/libconfigcenter.so` (`51,144 bytes`, `65` dynamic symbols: `15` exported `STT_FUNC` + `50` imported)
+- **Kết quả tái dựng**: `8` tệp C++17 & Header (`77,955 bytes` C++17/H, `121,932 bytes` tổng thư mục, `498` opcode citations, `0 stubs`) tại `SOURCE/GIAI-MA/libconfigcenter/`:
+  1. `configcenter_types.h` (`18,162 B`): Bố cục ABI `com::ss::vcbkit::BaseRef` (`16 B`), `Json::Value` (`32 B`), `ConfigItem` (`40 B = 0x28`), `IConfig` (`16 B`), `BaseConfig` (`72 B = 0x48`, vtable 22 khe tại `.data.rel.ro 0x0f8e8..0x0f990`, `options_map_` tại `+0x10..+0x37`, `module_` tại `+0x38`, `priority_` tại `+0x3c`, `permission_` tại `+0x40`), `ConfigCenter` (`128 B = 0x80` tại `.bss 0x10030..0x100b0`), và toán học băm `aarch64_popcount64` (`cnt v0.8b` + `uaddlv h0, v0.8b`).
+  2. `configcenter_base_config.h` (`6,158 B`) & `configcenter_base_config.cpp` (`17,472 B`): `BaseConfig::BaseConfig` (`0x0266c`, `0x026a0`, `0x02734`), `operator=` (`0x027d0`, `0x0281c`), `setIntOption` (`0x0285c`), `setLongOption` (`0x02aac`), `setFloatOption` (`0x02cfc`), `setStringOption` (`0x02f54`), `setJsonOption` (`0x03b1c`), `getIntOption` (`0x03380`), `getLongOption` (`0x0344c`), `getFloatOption` (`0x03518`, `0x035e0`), `getStringOption` (`0x036e0`), `getJsonOption` (`0x03a48`), `isKeySet` (`0x032c0`), `remove` (`0x03828`), `reset` (`0x0398c`), `mergeFrom` (`0x03d6c`), `copyFrom` (`0x03e88`), `setPermission` (`0x03f20: stlr w1, [x8]`), `getModule` (`0x03f2c`), `getPriority` (`0x03f34`), và `next_hash_bucket_count` (`0x04084`).
+  3. `configcenter_manager_jni.h` (`6,418 B`) & `configcenter_manager_jni.cpp` (`19,544 B`): `ConfigCenter::Singleton` (`0x04e48`), `ConfigCenter::ConfigCenter` (`0x04fa8`), `createConfig` (`0x05124`, `0x0542c`), `getPlayerConfig` (`0x05168`), `getMdlConfig` (`0x051c8`), `getStrategyCenterConfig` (`0x05228`), `updateConfig` (`0x05288`), `setListener` (`0x0548c`), `FormatLogHeader` (`0x05640`, `<%p,%s,%s,%d>`), `ConvertJavaJSONObjectToJsonCpp` (`0x05d14`), `ConvertJavaObjectToJsonCpp` (`0x06214`), `JNI_OnLoad` (`0x05a84`, `JNI_VERSION_1_4 = 0x00010004`), và 16 hàm `JNINativeMethod` (`0x0fac8..0x0fc48`).
+  4. `configcenter_interface.h` (`1,515 B`), `configcenter_interface.cpp` (`3,389 B`), và `configcenter_pseudocode.cpp` (`5,297 B`).
+- **Chỉ số xác minh**:
+  - Agent 13 (`LEDGER_DOI_KHANG.json`): **`50 / 169` (`29.59%`) `VERIFIED_AND_ACCEPTED`**
+  - `verify_reconstruction_suite.py`: **`335 PASS / 0 FAIL (100.0%)`**
+  - `native_audit_watchdog.py`: **`169 binaries, 0 high findings`**

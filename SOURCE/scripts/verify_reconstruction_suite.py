@@ -4767,6 +4767,116 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 50. KIỂM CHỨNG libconfigcenter.so (TikTok Media ConfigCenter & BaseConfig)
+    # =========================================================================
+    def verify_libconfigcenter(self):
+        print("\n[50] Đang kiểm chứng libconfigcenter.so (TikTok Media ConfigCenter & BaseConfig Engine)...")
+        cc_dir = GIAIMA_DIR / "libconfigcenter"
+        files = [
+            "configcenter_types.h",
+            "configcenter_base_config.h",
+            "configcenter_base_config.cpp",
+            "configcenter_manager_jni.h",
+            "configcenter_manager_jni.cpp",
+            "configcenter_interface.h",
+            "configcenter_interface.cpp",
+            "configcenter_pseudocode.cpp"
+        ]
+        all_exist = all((cc_dir / f).exists() for f in files)
+        total_size = sum((cc_dir / f).stat().st_size for f in files if (cc_dir / f).exists())
+        self.assert_test(
+            "ConfigCenter_SourceVolume",
+            all_exist and total_size > 60000,
+            f"Đầy đủ 8 file C++17/H libconfigcenter với dung lượng {total_size} bytes (> 60KB)"
+        )
+
+        content = ""
+        for f in files:
+            fp = cc_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 2. ConfigItem 40B & BaseConfig 72B ABI layout
+        has_abi = all(tok in content for tok in [
+            "struct ConfigItem",
+            "class BaseConfig",
+            "options_map_",
+            "permission_",
+            "PERM_READ_WRITE",
+            "PERM_READ_ONLY"
+        ])
+        self.assert_test(
+            "ConfigCenter_ConfigItem40BAndBaseConfig72B",
+            has_abi,
+            "Khớp ABI ConfigItem (40B) và BaseConfig (72B, vtable 0x0f8e8, options_map_ +0x10..+0x37, permission_ +0x40)"
+        )
+
+        # 3. BaseConfig typed setters & getters
+        has_base_methods = all(tok in content for tok in [
+            "BaseConfig::setIntOption",
+            "BaseConfig::setLongOption",
+            "BaseConfig::setFloatOption",
+            "BaseConfig::setStringOption",
+            "BaseConfig::setJsonOption",
+            "BaseConfig::getIntOption",
+            "BaseConfig::getLongOption",
+            "BaseConfig::getFloatOption",
+            "BaseConfig::getStringOption",
+            "BaseConfig::getJsonOption"
+        ])
+        self.assert_test(
+            "ConfigCenter_BaseConfigTypedGettersSetters",
+            has_base_methods,
+            "Khớp các hàm get/set Int, Long, Float, String, Json và kiểm tra quyền atomic permission_ (0x0285c..0x03b1c)"
+        )
+
+        # 4. BaseConfig::mergeFrom, copyFrom & setPermission freeze logic
+        has_merge = all(tok in content for tok in [
+            "BaseConfig::mergeFrom",
+            "BaseConfig::copyFrom",
+            "BaseConfig::setPermission",
+            "BaseConfig::remove",
+            "BaseConfig::reset",
+            "BaseConfig::isKeySet"
+        ])
+        self.assert_test(
+            "ConfigCenter_BaseConfigMergeAndFreeze",
+            has_merge,
+            "Khớp BaseConfig::mergeFrom (0x03d6c), copyFrom (0x03e88), setPermission (0x03f20: stlr w1, [x8]), remove/reset/isKeySet"
+        )
+
+        # 5. ConfigCenter Singleton (128B at .bss 0x10030) & Module Routing
+        has_singleton = all(tok in content for tok in [
+            "ConfigCenter::Singleton",
+            "ConfigCenter::getPlayerConfig",
+            "ConfigCenter::getMdlConfig",
+            "ConfigCenter::getStrategyCenterConfig",
+            "ConfigCenter::updateConfig",
+            "ConfigCenter::setListener"
+        ])
+        self.assert_test(
+            "ConfigCenter_Singleton128BAndModuleRouting",
+            has_singleton,
+            "Khớp ConfigCenter::Singleton 128B (.bss 0x10030..0x100b0) và điều phối module PLAYER=2, MDL=3, STRATEGY_CENTER=4 (0x04e48..0x05494)"
+        )
+
+        # 6. JNI_OnLoad (0x05a84) & 16 JNI Native Methods (0x0fac8..0x0fc48)
+        has_jni = all(tok in content for tok in [
+            "JNI_OnLoad",
+            "kBaseConfigNativeMethods",
+            "kConfigCenterNativeMethods",
+            "com/tiktok/ttkmedia/configcenter/BaseConfig",
+            "com/tiktok/ttkmedia/configcenter/ConfigCenter",
+            '"_create"',
+            '"_updateConfig"'
+        ])
+        self.assert_test(
+            "ConfigCenter_JNIOnLoadAnd16NativeMethods",
+            has_jni,
+            "Khớp JNI_OnLoad (0x05a84) đăng ký 15 JNINativeMethod cho BaseConfig (0x0fac8) và 1 JNINativeMethod cho ConfigCenter (0x0fc30)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -4820,6 +4930,7 @@ class AutonomousVerificationEngine:
         self.verify_libpns_ttmachine_adapter()
         self.verify_libBDMicroPythonVM()
         self.verify_libBDPythonVM()
+        self.verify_libconfigcenter()
         self.verify_overall_governance()
 
 

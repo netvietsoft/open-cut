@@ -1,18 +1,24 @@
 {
-  "report_id": "REPORT_TASK_SO_150_libconfigcenter",
-  "task_id": "TASK_SO_150_libconfigcenter",
-  "target_library": "libconfigcenter.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 65,
-    "jni_exports": 0,
-    "cxx_demangled_count": 45,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libconfigcenter",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "task_id": "TASK_SO_150",
+  "governance_task_id": "TASK-089-RECONSTRUCTION-LIBCONFIGCENTER",
+  "library": "libconfigcenter.so",
+  "target_index": 50,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 51144,
+  "dynamic_symbols": 65,
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libconfigcenter/configcenter_types.h",
+    "SOURCE/GIAI-MA/libconfigcenter/configcenter_base_config.h",
+    "SOURCE/GIAI-MA/libconfigcenter/configcenter_base_config.cpp",
+    "SOURCE/GIAI-MA/libconfigcenter/configcenter_manager_jni.h",
+    "SOURCE/GIAI-MA/libconfigcenter/configcenter_manager_jni.cpp",
+    "SOURCE/GIAI-MA/libconfigcenter/configcenter_interface.h",
+    "SOURCE/GIAI-MA/libconfigcenter/configcenter_interface.cpp",
+    "SOURCE/GIAI-MA/libconfigcenter/configcenter_pseudocode.cpp"
+  ],
+  "verification": {
+    "adversary_status": "VERIFIED_AND_ACCEPTED",
+    "unit_test": "verify_libconfigcenter (6/6 PASS)",
+    "zero_stubs": true
+  }
 }

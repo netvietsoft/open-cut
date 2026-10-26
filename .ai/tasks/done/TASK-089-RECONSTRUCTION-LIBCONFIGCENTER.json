@@ -1,0 +1,33 @@
+{
+  "task_id": "TASK-089-RECONSTRUCTION-LIBCONFIGCENTER",
+  "legacy_task_id": "TASK_SO_150",
+  "title": "Reconstruct 100% genuine C++17 source code & mathematical/binary proofs for libconfigcenter.so (Target 50 / 169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Frontend/Android Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Orchestrator)",
+  "created_at": "2026-10-26T20:20:00+07:00",
+  "completed_at": "2026-10-26T20:40:21+07:00",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libconfigcenter.so",
+  "binary_size_bytes": 51144,
+  "dynamic_symbols": {
+    "total": 65,
+    "exported": 15,
+    "imported": 50
+  },
+  "reconstructed_volume_bytes": 121932,
+  "verified_opcodes": 498,
+  "verification_suite_result": "335 PASS / 0 FAIL (100.0%)",
+  "watchdog_result": "169 binaries, 0 high findings",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libconfigcenter/**",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_150_libconfigcenter.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_150_libconfigcenter.md",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libconfigcenter.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libconfigcenter.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ]
+}

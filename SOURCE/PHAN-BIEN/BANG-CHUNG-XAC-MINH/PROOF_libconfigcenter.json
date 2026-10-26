@@ -1,0 +1,86 @@
+{
+  "lib_name": "libconfigcenter.so",
+  "task_id": "TASK-089-RECONSTRUCTION-LIBCONFIGCENTER",
+  "target_index": 50,
+  "binary_path": "apktool-res/lib/arm64-v8a/libconfigcenter.so",
+  "binary_size_bytes": 51144,
+  "reconstructed_dir": "SOURCE/GIAI-MA/libconfigcenter",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "gates": {
+    "gate1_size_and_zero_stub": {
+      "passed": true,
+      "cpp_header_files": 8,
+      "stub_count": 0
+    },
+    "gate2_opcode_parity": {
+      "passed": true,
+      "verified_entrypoints": {
+        "BaseConfig::BaseConfig(ConfigModule, Priority)": "0x0266c",
+        "BaseConfig::BaseConfig(const BaseConfig&)": "0x026a0",
+        "BaseConfig::BaseConfig(BaseConfig&&)": "0x02734",
+        "BaseConfig::operator=(const BaseConfig&)": "0x027d0",
+        "BaseConfig::operator=(BaseConfig&&)": "0x0281c",
+        "BaseConfig::setIntOption(int, int)": "0x0285c",
+        "BaseConfig::setLongOption(int, int64_t)": "0x02aac",
+        "BaseConfig::setFloatOption(int, float)": "0x02cfc",
+        "BaseConfig::setStringOption(int, const char*)": "0x02f54",
+        "BaseConfig::size() const": "0x032b8",
+        "BaseConfig::isKeySet(int) const": "0x032c0",
+        "BaseConfig::getIntOption(int, int) const": "0x03380",
+        "BaseConfig::getLongOption(int, int64_t) const": "0x0344c",
+        "BaseConfig::getFloatOption(int, float) const": "0x03518",
+        "BaseConfig::getFloatOption(int, float*) const": "0x035e0",
+        "BaseConfig::getStringOption(int) const": "0x036e0",
+        "BaseConfig::remove(int)": "0x03828",
+        "BaseConfig::reset()": "0x0398c",
+        "BaseConfig::getJsonOption(int) const": "0x03a48",
+        "BaseConfig::setJsonOption(int, const Json::Value&)": "0x03b1c",
+        "BaseConfig::mergeFrom(IConfig*)": "0x03d6c",
+        "BaseConfig::copyFrom(IConfig*, bool)": "0x03e88",
+        "BaseConfig::setPermission(int)": "0x03f20",
+        "BaseConfig::getModule() const": "0x03f2c",
+        "BaseConfig::getPriority() const": "0x03f34",
+        "BaseConfig::~BaseConfig()": "0x03f3c",
+        "ConfigCenter::Singleton()": "0x04e48",
+        "ConfigCenter::~ConfigCenter()": "0x04ec0",
+        "ConfigCenter::ConfigCenter()": "0x04fa8",
+        "ConfigCenter::createConfig(ConfigModule, Priority)": "0x05124",
+        "ConfigCenter::getPlayerConfig() const": "0x05168",
+        "ConfigCenter::getMdlConfig() const": "0x051c8",
+        "ConfigCenter::getStrategyCenterConfig() const": "0x05228",
+        "ConfigCenter::updateConfig(IConfig*)": "0x05288",
+        "ConfigCenter::createConfig(ConfigModule, Priority, IConfig*)": "0x0542c",
+        "ConfigCenter::setListener(IConfigCenterListener*, ConfigModule)": "0x0548c",
+        "JNI_OnLoad": "0x05a84",
+        "ConvertJavaJSONObjectToJsonCpp": "0x05d14",
+        "ConvertJavaObjectToJsonCpp": "0x06214"
+      }
+    },
+    "gate3_math_and_algorithms": {
+      "passed": true,
+      "algorithms": [
+        "AArch64 SIMD byte-wise popcount64 (`fmov d0, x8; cnt v0.8b, v0.8b; uaddlv h0, v0.8b`) for power-of-two vs prime modulo bucket indexing (0x028a4..0x028dc)",
+        "Next power-of-two rounding via leading zero count (`sub x8, x0, #1; clz x8, x8; neg w8, w8; lsl x0, x9, x8`) in std::__hash_table::rehash (0x04118..0x04128)",
+        "Priority-gated configuration upsert (`cmp w_this_priority, w_item_priority; b.lt skip` at 0x02a30, 0x02c80, 0x02ed8, 0x031b0, 0x03cf0)",
+        "Atomic permission bitmask transition (`PERM_READ_WRITE = 3` -> `PERM_READ_ONLY = 1`) via acquire-load (`ldar w8, [x0, #0x40]`) and release-store (`stlr w1, [x0, #0x40]`)"
+      ]
+    },
+    "gate4_abi_struct_layout": {
+      "passed": true,
+      "structs": {
+        "BaseRef": "16 bytes (+0x00 vtable, +0x08 ref_count_=1)",
+        "ConfigItem_SharedEmplace": "72 bytes (0x48: +0x00 vtable 0x0f9e8, +0x18 Json::Value 40B, +0x40 Priority)",
+        "BaseConfig": "72 bytes (0x48: +0x00 vtable 0x0f8e8, +0x08 ref_count_, +0x10..+0x37 unordered_map 40B, +0x38 module_, +0x3c priority_, +0x40 permission_)",
+        "ConfigCenter": "128 bytes (0x80 at .bss 0x10030: +0x00 player_config_, +0x10 mdl_config_, +0x20 strategy_center_config_, +0x30 mutex_ 40B, +0x58 listeners_[5])"
+      }
+    },
+    "gate5_demangled_symbols": {
+      "passed": true,
+      "symbol_count": 65
+    },
+    "gate6_closed_loop_test": {
+      "passed": true,
+      "test_method": "verify_libconfigcenter"
+    }
+  }
+}
