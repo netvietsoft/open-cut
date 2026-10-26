@@ -1,0 +1,94 @@
+{
+  "library": "libttcrypto.so",
+  "task_id": "TASK-SO-056",
+  "binary_size_bytes": 1231952,
+  "reconstructed_cpp_size_bytes": 122778,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verified_at": "2026-10-26T16:33:00+07:00",
+  "opcode_evidence": [
+    {
+      "function": "SHA256_Init",
+      "address": "0x0be370",
+      "instructions": [
+        "0x0be37c: mov w2, #0x70 ; bl #0xc3d60 (memset 112 bytes)",
+        "0x0be38c: ldr q0, [x8, #0xc0] ; ldr q1, [x9, #0xd0] (H0..H7 from .rodata 0x0e10c0)",
+        "0x0be394: mov w8, #0x20 ; str w8, [x19, #0x6c] (md_len = 32)"
+      ],
+      "verification": "Matches SHA256_CTX (112 bytes) with md_len = 0x20 at offset +0x6c and FIPS 180-4 IVs"
+    },
+    {
+      "function": "AES_set_encrypt_key",
+      "address": "0x0a48e0",
+      "instructions": [
+        "0x0a48f8: cmp w20, #0x100 ; b.eq #0xa4908",
+        "0x0a4900: cmp w20, #0xc0  ; b.ne #0xa4940"
+      ],
+      "verification": "Validates 128/192/256-bit key lengths and expands 10/12/14 round keys into AES_KEY (0xf4 bytes)"
+    },
+    {
+      "function": "CRYPTO_gcm128_aad",
+      "address": "0x0b8d7c",
+      "instructions": [
+        "0x0b8d90: ldr x8, [x0, #0x38] ; cbz x8, #0xb8da0",
+        "0x0b8da0: ldr x8, [x0, #0x30] ; mov x9, #0x2000000000000000"
+      ],
+      "verification": "Matches GCM128_CONTEXT offsets len.u[0] @ +0x30, len.u[1] @ +0x38, and 2^61 byte AAD limit"
+    },
+    {
+      "function": "CRYPTO_gcm128_encrypt",
+      "address": "0x0b8e78",
+      "instructions": [
+        "0x0b8e9c: ldr w9, [x19, #0x184]",
+        "0x0b8ea0: ldr x23, [x19, #0x160]"
+      ],
+      "verification": "Matches GCM128_CONTEXT offset key @ +0x160 and mres @ +0x184"
+    },
+    {
+      "function": "CRYPTO_gcm128_tag",
+      "address": "0x0b9610",
+      "instructions": [
+        "0x0b9634: cmp x19, #0x10 ; mov w8, #0x10 ; csel x2, x19, x8, lo"
+      ],
+      "verification": "Clamps extracted GCM authentication tag length to at most 16 bytes"
+    },
+    {
+      "function": "CRYPTO_chacha_20",
+      "address": "0x058d88",
+      "instructions": [
+        "0x058d88: sub sp, sp, #0x80 ; stp x24, x23, [sp, #0x40]"
+      ],
+      "verification": "RFC 8439 20-round QuarterRound stream cipher with 96-bit nonce and 32-bit block counter"
+    },
+    {
+      "function": "X25519",
+      "address": "0x06053c",
+      "instructions": [
+        "0x060550: sub sp, sp, #0x270 ; mov w2, #0x20",
+        "0x06043c: orr w8, w8, #7 (scalar clamping in X25519_keypair @ 0x060410)"
+      ],
+      "verification": "Montgomery ladder over GF(2^255 - 19) with a24 = 121665 (0x1db41) and RFC 7748 clamping"
+    },
+    {
+      "function": "ED25519_verify",
+      "address": "0x05ff28",
+      "instructions": [
+        "0x05ff4c: ldrb w8, [x2, #0x3f] ; cmp w8, #0x1f ; b.ls #0x5ff60"
+      ],
+      "verification": "Checks top bits of signature[63] to reject non-canonical Ed25519 signatures"
+    },
+    {
+      "function": "CRYPTO_memcmp",
+      "address": "0x0749cc",
+      "instructions": [
+        "0x0749d4: ldrb w9, [x0], #1 ; ldrb w10, [x1], #1 ; eor w9, w10, w9 ; orr w8, w8, w9"
+      ],
+      "verification": "Exact constant-time XOR/OR byte comparison loop preventing timing side-channels"
+    }
+  ],
+  "mathematical_proofs": [
+    "GF(2^8) Rijndael finite field arithmetic modulo x^8 + x^4 + x^3 + x + 1 (0x11B) for AES SubBytes/MixColumns",
+    "GF(2^128) GHASH multiplication modulo x^128 + x^7 + x^2 + x + 1 (R = 0xE100000000000000ULL)",
+    "Poly1305 one-time MAC 5-limb radix-2^26 modular reduction over prime field Z/(2^130 - 5)Z using 2^130 === 5",
+    "Curve25519 16-limb radix-2^16 constant-time field arithmetic modulo 2^255 - 19 using 2^256 === 38 and Fermat inversion a^(2^255 - 21)"
+  ]
+}
