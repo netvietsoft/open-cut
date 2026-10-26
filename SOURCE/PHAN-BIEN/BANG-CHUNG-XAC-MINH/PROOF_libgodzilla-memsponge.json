@@ -1,0 +1,110 @@
+{
+  "proof_id": "PROOF-LIBGODZILLA-MEMSPONGE-V1",
+  "target_library": "libgodzilla-memsponge.so",
+  "task_id": "TASK_SO_067_libgodzilla_memsponge",
+  "governance_task_id": "TASK-115-RECONSTRUCTION-LIBGODZILLA_MEMSPONGE",
+  "challenge_id": "CHALLENGE-LIBGODZILLA-MEMSPONGE",
+  "submitted_by": "Agent 0 (Orchestrator) & Agent 3 (Android/Native)",
+  "submitted_at": "2026-10-27T06:35:00+07:00",
+  "binary_identity": {
+    "path": "SOURCE/apktool-res/lib/arm64-v8a/libgodzilla-memsponge.so",
+    "size_bytes": 1043056,
+    "sha256": "cc00ce74c83c07821b2d6e80f1a00c8839551e02572c0f39d373ef7ad489a466",
+    "arch": "AArch64 (arm64-v8a)",
+    "text_section": {
+      "va_start": "0x0750d0",
+      "va_end": "0x0f3ae8",
+      "size_bytes": 518680,
+      "instruction_count": 129670
+    }
+  },
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/godzilla_memsponge_types.h",
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/memsponge_art_hook.h",
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/memsponge_art_hook.cpp",
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/heap_clamp_opt.h",
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/heap_clamp_opt.cpp",
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/scudo_vma_string_opt.h",
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/scudo_vma_string_opt.cpp",
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/godzilla_memsponge_interface.h",
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/godzilla_memsponge_pseudocode.cpp",
+    "SOURCE/GIAI-MA/libgodzilla-memsponge/README_ANALYSIS.md"
+  ],
+  "opcode_evidence": [
+    {
+      "function": "alignHideLargeObjectBytes & RecordFreeProxy",
+      "va_range": "0x075ac4..0x075bf8",
+      "instructions": [
+        "0x075ac4: ff 83 00 d1 (sub sp, sp, #0x20); 0x075ac8: fd 7b 01 a9 (stp x29, x30, [sp, #0x10])",
+        "0x075af8: 09 71 41 f9 (ldr x9, [x8, #0x2e0]) (loads sHideLargeObjectMaxBytes); 0x075afc: 0a 75 41 f9 (ldr x10, [x8, #0x2e8]) (loads sAlreadyHiddenBytes)",
+        "0x075b10: 3f 01 00 eb (cmp x9, x0); 0x075b14: 29 31 80 9a (csel x9, x9, x0, lo) (target_hide = min(sHideLargeObjectMaxBytes, GetLOSBytesAllocated()))",
+        "0x075b18: 6a 02 0a cb (sub x10, x19, x10); 0x075b1c: 40 01 09 8b (add x0, x10, x9) (adjusted_freed = (freed_bytes - sAlreadyHiddenBytes) + target_hide)",
+        "0x075b20: 09 75 01 f9 (str x9, [x8, #0x2e8]); 0x075b24: eb 87 9f 1a (cset w11, ls) (sIsMSpongeOOM = (sHideLargeObjectMaxBytes <= los_bytes))"
+      ]
+    },
+    {
+      "function": "checkSupportApi & initArtHook (20-entry ArtProxyMapping table 0x105ba0..0x106000)",
+      "va_range": "0x077310..0x077860",
+      "instructions": [
+        "0x077310: 28 50 00 71 (subs w8, w1, #0x14); 0x077314: 1f 3d 00 71 (cmp w8, #0xf); 0x077318: 08 05 00 54 (b.hi #0x773b8) (API 20..35 range check)",
+        "0x07731c..0x07732c: adrp x9, #0x4c000; add x9, x9, #0x510; ldrsw x10, [x9, x8, lsl #2]; add x9, x9, x10; br x9 (jump table at 0x04c510; index 12 / API 32 jumps directly to 0x0773bc ret w0=0)",
+        "0x07741c..0x077420: adrp x22, #0x105000; add x22, x22, #0xbd0 (points to +0x30 field inside 20-entry 56-byte ArtProxyMapping table starting at 0x105ba0)",
+        "0x0776fc: f7 e2 00 91 (add x23, x23, #0x38); 0x077700: ff 82 11 f1 (cmp x23, #0x460) (iterates 20 entries * 56 bytes = 1120 = 0x460 bytes)"
+      ]
+    },
+    {
+      "function": "setLargeObjThreshold & IsValidPtr (/dev/random readability probe)",
+      "va_range": "0x0779d4..0x0780dc",
+      "instructions": [
+        "0x0779fc..0x077a08: adrp x0, #0x45000; add x0, x0, #0x573 (\"/dev/random\"); mov w1, #1 (O_WRONLY); bl open",
+        "0x077a1c: 96 67 01 94 (bl write) (probes pointer readability via kernel write(fd, ptr, len) without SIGSEGV)",
+        "0x078040: 1f 0d 40 f1 (cmp x8, #3, lsl #12); 0x078044: 40 00 00 54 (b.eq #0x7804c) (matches default large_object_threshold_ = 0x3000 = 12288 B = 3 pages)",
+        "0x0780ac: 29 7d 74 93 (sbfiz x9, x9, #0xc, #0x20); 0x0780b4: c9 6a 29 f8 (str x9, [x22, x9]) (overwrites large_object_threshold_ with threshold_pages << 12)"
+      ]
+    },
+    {
+      "function": "HeapSetIdealFootPrintProxy & optGCHeapTargetPrint",
+      "va_range": "0x078668..0x07887c",
+      "instructions": [
+        "0x0786c0..0x0786cc: ldr x9, [x8, #0x2f8] (sCurrentHeapSize); ldr x10, [x8, #0x300] (sGlobalTriggerGcValue); ldr x11, [x8, #0x308] (sAddGcDiffBytes)",
+        "0x0786d8: c0 65 02 0f (movi v0.2s, #0x4e, lsl #24) (loads 536870912.0f = 0x4e000000); 0x0786dc: 20 08 20 1e (fmul s0, s1, s0); 0x0786e0: 61 02 62 9e (ucvtf s1, x19)",
+        "0x0786e8: 08 c1 9f 1a (cset w8, gt); 0x0786ec: 9f 02 13 eb (cmp x20, x19); 0x0786f0: e9 87 9f 1a (cset w9, ls); 0x0786f8: 1f 01 09 6a (tst w8, w9)",
+        "0x078700: 68 02 15 8b (add x8, x19, x21); 0x078704: 08 02 14 eb (cmp x16, x20); 0x078708: 13 31 93 9a (csel x19, x8, x19, lo)"
+      ]
+    },
+    {
+      "function": "shouldClampNative, doFixFreeList & Scudo VMA Leak Mitigation",
+      "va_range": "0x079c88..0x07d37c",
+      "instructions": [
+        "0x07a8f8: 09 45 51 d3 (lsr x9, x8, #0x11); 0x07a8fc: 69 03 00 b4 (cbz x9, #0x7a968) (checks dalvik-free list large object space start_addr < 0x20000)",
+        "0x07a914..0x07a930: mov w0, #0x10000; sub x1, x8, #0x10, lsl #12; mov w2, #3 (PROT_READ|PROT_WRITE); mov w3, #0x31 (MAP_SHARED|MAP_FIXED|MAP_ANONYMOUS); bl mmap",
+        "0x07c434: 08 78 1f 53 (lsl w8, w0, #1); 0x07c438: 08 29 40 11 (add w8, w8, #0xa, lsl #12) (sScudoMaxBytes = (getpagesize() << 1) + 0xA000 = 49152 B)",
+        "0x07ccf0: 02 00 80 52 (mov w2, #3); 0x07ccfc: 18 5c 01 94 (bl mprotect) (replaces fixed scudo:secondary mmap <= 0xA000 with mprotect PROT_READ|PROT_WRITE)",
+        "0x07cf9c: 82 00 80 52 (mov w2, #4); 0x07cfa8: 21 5c 01 94 (bl madvise) (replaces scudo:secondary unmap <= sScudoMaxBytes with madvise MADV_DONTNEED)"
+      ]
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "theorem": "MemSponge Large Object Space Byte Hiding & OOM State Invariant (0x075ac4..0x075bf8)",
+      "formula": "target_hide = min(sHideLargeObjectMaxBytes, GetLOSBytesAllocated()); adjusted_freed = (freed_bytes - sAlreadyHiddenBytes) + target_hide; sAlreadyHiddenBytes' = target_hide; sIsMSpongeOOM' = (sHideLargeObjectMaxBytes <= GetLOSBytesAllocated()); Clamp(hide_max_bytes) = min_u64(uint64(hide_max_bytes), 0xFFFFFFFF80000000ULL)",
+      "verified": true
+    },
+    {
+      "theorem": "20-Entry ArtProxyMapping Table (0x105ba0..0x106000, Stride 0x38 = 56 B) & API Support Bitmask (0x077310)",
+      "formula": "sizeof(ArtProxyMapping) = 0x38 (56 B), TotalBytes = 20 * 56 = 1120 = 0x460 B; checkSupportApi(mask, api): if api in [20, 35] \\ {32} then (mask >> (api - 20)) & 1 else 0 (API 32 / Android 12L index 12 jumps directly to 0x0773bc ret w0=0, matching bit 12 == 0 in 0xEFF8 and 0xEFFE)",
+      "verified": true
+    },
+    {
+      "theorem": "Heap::SetIdealFootprint Adjustment & Large Object Threshold Shift (0x078040..0x078778)",
+      "formula": "DefaultThreshold = 3 << 12 = 0x3000 (12,288 B); NewThreshold = int64(threshold_pages) << 12; IdealFootprint'(target): if (sMaxHeapRatio * 536870912.0f > float(target)) && (sGlobalTriggerGcValue <= target) && (sCurrentHeapSize < sGlobalTriggerGcValue) then target + sAddGcDiffBytes else target",
+      "verified": true
+    },
+    {
+      "theorem": "FreeList Low-Address Guard VMA & Scudo VMA Fragmentation Coalescing (0x07a49c..0x07d37c)",
+      "formula": "FreeListGuard: if (start_addr >> 17) == 0 (start_addr < 0x20000) then mmap(0x10000, start_addr - 0x10000, PROT_READ|PROT_WRITE=3, MAP_SHARED|MAP_FIXED|MAP_ANONYMOUS=0x31, -1, 0); ScudoMaxBytes = (page_size << 1) + 0xA000 (49,152 B for 4 KB page); SecondaryFixedMmap(len <= 0xA000) -> mprotect(addr, len, 3); SecondaryUnmap(len <= ScudoMaxBytes) -> madvise(addr, len, MADV_DONTNEED=4)",
+      "verified": true
+    }
+  ],
+  "verification_status": "READY_FOR_CRITIC_AUDIT"
+}

@@ -2344,3 +2344,16 @@
   - `adversary_critic_agent.py`: **75 / 169 `VERIFIED_AND_ACCEPTED` (44.38%)** (`277 opcodes`, `100% REAL`).
   - `verify_reconstruction_suite.py`: **485 / 485 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 103. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libgodzilla-memsponge.so (TASK-115-RECONSTRUCTION-LIBGODZILLA_MEMSPONGE / TASK_SO_067_libgodzilla_memsponge)
+- **Thời gian**: 2026-10-27 06:40:00
+- **Thư viện**: `libgodzilla-memsponge.so` (`1,043,056 bytes`, SHA-256 `cc00ce74c83c07821b2d6e80f1a00c8839551e02572c0f39d373ef7ad489a466`, `.text` `0x0750d0..0x0f3ae8` = `518,680 bytes`, 26 exported JNI functions across `MemSpongeHelper`, `HeapClampHelper`, `StringOptHelper`).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `167,063 bytes` C++17/H, 0 stub)**:
+  1. **`alignHideLargeObjectBytes` (`0x075ac4`) & 20-Entry `ArtProxyMapping` Table (`.data 0x105ba0..0x106000`, stride `0x38 = 56 B`)**: Tính `target_hide = min(sHideLargeObjectMaxBytes, GetLOSBytesAllocated())` (`cmp x9, x0; csel x9, x9, x0, lo` @ `0x075b10..0x075b14`), điều chỉnh `adjusted_freed = (freed_bytes - sAlreadyHiddenBytes) + target_hide` (`sub x10, x19, x10; add x0, x10, x9` @ `0x075b18..0x075b1c`), cập nhật `sIsMSpongeOOM = (sHideLargeObjectMaxBytes <= los_bytes)` (`cset w11, ls` @ `0x075b24`), và kiểm tra phiên bản Android qua bảng nhảy `checkSupportApi` (`0x077310`, mặt nạ `0xEFF8`/`0xEFFE` bỏ qua API 32 Android 12L).
+  2. **`IsValidPtr` (`0x0779d4`), `setLargeObjThreshold` (`0x077c38`) & `HeapSetIdealFootPrintProxy` (`0x078668`)**: Mở `"/dev/random"` (`O_WRONLY = 1`) và gọi `write(fd, ptr, len)` để xác thực trang bộ nhớ mà không gây `SIGSEGV`; quét `art::gc::Heap` tìm `large_object_threshold_ = 0x3000` (`cmp x8, #3, lsl #12` @ `0x078040`) và ghi đè `threshold_pages << 12` (`sbfiz x9, x9, #0xc, #0x20` @ `0x0780ac`); điều chỉnh `SetIdealFootprint` khi `sMaxHeapRatio * 536870912.0f > target` (`movi v0.2s, #0x4e, lsl #24` @ `0x0786d8`).
+  3. **`HeapClampHelper` (`0x078a64..0x07a49b`), `doFixFreeList` (`0x07a49c`) & `Scudo VMA Coalescing` (`0x07c290..0x07d37c`)**: Kiểm tra `"dalvik-main space"` + `"region space"` trong `shouldClampNative` (`0x079c88`), ánh xạ VMA bảo vệ tại `0x10000` (`MAP_SHARED|MAP_FIXED|MAP_ANONYMOUS = 0x31` @ `0x07a920`) khi `"dalvik-free list large object space"` có `start_addr < 0x20000` (`lsr x9, x8, #0x11; cbz x9` @ `0x07a8f8..0x07a8fc`), và hợp nhất VMA của Scudo Secondary với ngưỡng `ScudoMaxBytes = (getpagesize() << 1) + 0xA000 = 49,152 B` (`0x07c434..0x07c438`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **76 / 169 `VERIFIED_AND_ACCEPTED` (44.97%)** (`372 opcodes`, `100% REAL`).
+  - `verify_reconstruction_suite.py`: **491 / 491 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

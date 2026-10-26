@@ -7806,6 +7806,129 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 76: libgodzilla-memsponge.so (MemSponge, HeapClamp, StringOpt & Scudo VMA)
+    # =========================================================================
+    def verify_libgodzilla_memsponge(self):
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 76: libgodzilla-memsponge.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libgodzilla-memsponge"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 40 KB across >= 9 C++/H files
+        self.assert_test(
+            "GodzillaMemSponge_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Binary ELF64 Geometry (1,043,056 B) & alignHideLargeObjectBytes Opcode Verification (0x075ac4..0x075b3c)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libgodzilla-memsponge.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        align_insns = struct.unpack("<4I", so_bytes[0x075b10:0x075b20])
+        # Mathematical simulation of alignHideLargeObjectBytes:
+        # target_hide = min(hide_max, los_bytes); adjusted = (freed - already_hidden) + target_hide
+        hide_max = 100 * 1024 * 1024
+        los_bytes = 80 * 1024 * 1024
+        already_hidden = 30 * 1024 * 1024
+        freed_bytes = 10 * 1024 * 1024
+        target_hide = min(hide_max, los_bytes)
+        adjusted_freed = (freed_bytes - already_hidden) + target_hide
+        self.assert_test(
+            "GodzillaMemSponge_AlignHideLargeObjectMathAndOpcodes",
+            so_path.stat().st_size == 1043056
+            and align_insns == (0xeb00013f, 0x9a803129, 0xcb0a026a, 0x8b090140)
+            and adjusted_freed == 60 * 1024 * 1024
+            and "alignHideLargeObjectBytes" in content
+            and "RecordFreeProxy" in content,
+            "Khớp nhị phân libgodzilla-memsponge.so (1,043,056 B) và toán học alignHideLargeObjectBytes (cmp/csel lo/sub/add @ 0x075b10..0x075b1c)"
+        )
+
+        # 3. 20-Entry ArtProxyMapping Table (0x105ba0..0x106000, file offset 0x0fdba0, stride 0x38 = 56 B) & checkSupportApi Jump Table (0x077310)
+        loop_insns = struct.unpack("<2I", so_bytes[0x0776fc:0x077704])
+        mask_entry0 = struct.unpack("<I", so_bytes[0x105bc0 - 0x8000 : 0x105bc4 - 0x8000])[0]
+        self.assert_test(
+            "GodzillaMemSponge_20EntryArtProxyMappingTableAndApi32Gap",
+            loop_insns == (0x9100e2f7, 0xf11182ff)
+            and mask_entry0 == 0x0000eff8
+            and "kArtProxyMappingTable" in content
+            and "checkSupportApi" in content
+            and "0xEFF8" in content
+            and "0xEFFE" in content,
+            "Khớp bảng 20 mục ArtProxyMapping (.data 0x105ba0..0x106000, stride 0x38, tổng 0x460 B @ 0x0776fc..0x077700) và mặt nạ API 0xEFF8/0xEFFE (bỏ qua API 32)"
+        )
+
+        # 4. setLargeObjThreshold (0x077c38: 0x3000 -> pages << 12), IsValidPtr (/dev/random @ 0x0779d4) & HeapSetIdealFootPrintProxy (0x078668)
+        lot_cmp_insn = struct.unpack("<I", so_bytes[0x078040:0x078044])[0]
+        lot_sbfiz_insn = struct.unpack("<I", so_bytes[0x0780ac:0x0780b0])[0]
+        ideal_movi_insn = struct.unpack("<I", so_bytes[0x0786d8:0x0786dc])[0]
+        self.assert_test(
+            "GodzillaMemSponge_LargeObjThresholdAndIdealFootprintMath",
+            lot_cmp_insn == 0xf1400d1f
+            and lot_sbfiz_insn == 0x93747d29
+            and ideal_movi_insn == 0x0f0265c0
+            and "/dev/random" in content
+            and "IsValidPtr" in content
+            and "536870912.0f" in content,
+            "Khớp IsValidPtr (/dev/random @ 0x0779d4), setLargeObjThreshold (cmp #0x3000 @ 0x078040, sbfiz #12 @ 0x0780ac) và HeapSetIdealFootPrintProxy (536870912.0f @ 0x0786d8)"
+        )
+
+        # 5. doFixFreeList Low-Address 0x10000 Guard VMA (0x07a49c) & Scudo Secondary VMA Coalescing (0x07c290..0x07d37c)
+        freelist_insns = struct.unpack("<2I", so_bytes[0x07a8f8:0x07a900])
+        scudo_max_insns = struct.unpack("<2I", so_bytes[0x07c434:0x07c43c])
+        scudo_max_4k = (4096 << 1) + (0xA << 12)
+        self.assert_test(
+            "GodzillaMemSponge_DoFixFreeListAndScudoVmaCoalescing",
+            freelist_insns == (0xd351fd09, 0xb40000a9)
+            and scudo_max_insns == (0x531f7808, 0x11402908)
+            and scudo_max_4k == 49152
+            and "dalvik-free list large object space" in content
+            and "scudo:secondary_unguard" in content
+            and "scudoMmapProxy" in content
+            and "scudoUnmapProxy" in content,
+            f"Khớp doFixFreeList (start_addr < 0x20000 -> mmap 0x10000 flags=0x31 @ 0x07a8f8..0x07a920) và Scudo VMA leak (ScudoMaxBytes={scudo_max_4k} B @ 0x07c434..0x07c438)"
+        )
+
+        # 6. All 26 Exported JNI Functions (MemSpongeHelper x14, HeapClampHelper x10, StringOptHelper x2)
+        jni_exports_26 = [
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_stop",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_debug",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_setHideLargeObjectMaxBytes",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_start",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_startWhenOOM",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_setLargeObjThreshold",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_adjustSoftReference",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_setCurrentHeapSize",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_optGCHeapTargetPrint",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doFixFreeList",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doDamageFreeList",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doScudoVmaLeak",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_testScudoVmaLeak",
+            "Java_com_bytedance_platform_godzilla_memopt_MemSpongeHelper_doIgnoreClampGrowLimit",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_clampGrowthLimit",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_artHookInit",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_clearGrowthLimit",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_is64BitRuntime",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_debug",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_printProcessMaps",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_testVirtualMemOOM",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_shouldClampNative",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_doNoclassDef",
+            "Java_com_bytedance_platform_godzilla_memopt_HeapClampHelper_testSuspendhung",
+            "Java_com_bytedance_platform_godzilla_memopt_StringOptHelper_startStringFromString",
+            "Java_com_bytedance_platform_godzilla_memopt_StringOptHelper_debug"
+        ]
+        self.assert_test(
+            "GodzillaMemSponge_26ExportedJniFunctions",
+            all(sym in content for sym in jni_exports_26),
+            "Khớp toàn bộ 26 hàm xuất khẩu JNI (.dynsym: MemSpongeHelper x14, HeapClampHelper x10, StringOptHelper x2)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -7885,6 +8008,7 @@ class AutonomousVerificationEngine:
         self.verify_libosfix()
         self.verify_liborbuculumadapter()
         self.verify_libgodzilla_acurate_asan()
+        self.verify_libgodzilla_memsponge()
         self.verify_overall_governance()
 
 

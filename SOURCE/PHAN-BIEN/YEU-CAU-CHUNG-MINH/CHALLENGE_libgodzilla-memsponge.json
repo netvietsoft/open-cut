@@ -1,19 +1,15 @@
 {
   "lib_name": "libgodzilla-memsponge",
-  "inspected_at": "2026-10-27 06:04:46",
-  "gate1_size_bytes": 10733,
-  "gate1_passed": false,
-  "gate2_opcode_count": 0,
-  "gate2_passed": false,
-  "gate3_math_verified": false,
-  "gate4_abi_offsets_verified": false,
+  "inspected_at": "2026-10-27 06:39:28",
+  "gate1_size_bytes": 167063,
+  "gate1_passed": true,
+  "gate2_opcode_count": 372,
+  "gate2_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
   "gate5_symbols_count": 2277,
   "gate5_passed": true,
-  "gate6_test_passed": false,
-  "status": "CHALLENGED_NEEDS_PROOF",
-  "criticisms": [
-    "Dung lượng mã nguồn (10733 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
-    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
-    "Chưa tích hợp test case trong verify_reconstruction_suite.py."
-  ]
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "criticisms": []
 }
