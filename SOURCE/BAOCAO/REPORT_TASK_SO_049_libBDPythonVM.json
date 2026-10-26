@@ -1,18 +1,15 @@
 {
-  "report_id": "REPORT_TASK_SO_049_libBDPythonVM",
   "task_id": "TASK_SO_049_libBDPythonVM",
-  "target_library": "libBDPythonVM.so",
-  "assigned_agent": "Agent 2 - BACKEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 444,
-    "jni_exports": 21,
-    "cxx_demangled_count": 280,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libBDPythonVM",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "target_index": 49,
+  "lib_name": "libBDPythonVM.so",
+  "binary_path": "apktool-res/lib/arm64-v8a/libBDPythonVM.so",
+  "binary_size_bytes": 418008,
+  "reconstructed_size_bytes": 111704,
+  "reconstructed_files_count": 10,
+  "dynamic_symbols_total": 447,
+  "exported_symbols_count": 50,
+  "imported_symbols_count": 387,
+  "stubs_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completed_at": "2026-10-26T20:11:30+07:00"
 }

@@ -1,0 +1,54 @@
+{
+  "lib_name": "libBDPythonVM",
+  "binary_path": "apktool-res/lib/arm64-v8a/libBDPythonVM.so",
+  "binary_size_bytes": 418008,
+  "reconstructed_size_bytes": 111704,
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libBDPythonVM/bdpythonvm_types.h",
+    "SOURCE/GIAI-MA/libBDPythonVM/bdpythonvm_cpy_convert.h",
+    "SOURCE/GIAI-MA/libBDPythonVM/bdpythonvm_cpy_convert.cpp",
+    "SOURCE/GIAI-MA/libBDPythonVM/bdpythonvm_datawrapper_modules.h",
+    "SOURCE/GIAI-MA/libBDPythonVM/bdpythonvm_datawrapper_modules.cpp",
+    "SOURCE/GIAI-MA/libBDPythonVM/bdpythonvm_executor_pool_jni.h",
+    "SOURCE/GIAI-MA/libBDPythonVM/bdpythonvm_executor_pool_jni.cpp",
+    "SOURCE/GIAI-MA/libBDPythonVM/BDPythonVM_interface.h",
+    "SOURCE/GIAI-MA/libBDPythonVM/bdpythonvm_interface.cpp",
+    "SOURCE/GIAI-MA/libBDPythonVM/BDPythonVM_pseudocode.cpp"
+  ],
+  "gate1_size_passed": true,
+  "gate2_opcode_verified": true,
+  "gate2_opcode_addresses": [
+    "0x010410", "0x010414", "0x010430", "0x010464", "0x010478",
+    "0x02451c", "0x024528", "0x024534", "0x024538", "0x02453c", "0x024544", "0x024548", "0x024558", "0x024564", "0x024570",
+    "0x028e3c", "0x028e5c", "0x028e68", "0x028eb8", "0x028ec4",
+    "0x04be28", "0x04be34", "0x04be40", "0x04be48", "0x04be50", "0x04be54", "0x04be64", "0x04be7c",
+    "0x04ca3c", "0x04d6d8", "0x04d6dc", "0x04d6e0", "0x04d6e8",
+    "0x04d6ec", "0x04d71c", "0x04d720", "0x04d72c", "0x04d738", "0x04d744", "0x04d748", "0x04d760", "0x04d77c", "0x04d788",
+    "0x04db38", "0x04db48", "0x04db78", "0x04db7c", "0x04db94", "0x04db98", "0x04dba4", "0x04dba8", "0x04dbb0", "0x04dbd0", "0x04dc0c",
+    "0x04e788", "0x04e7b0", "0x04e7b8", "0x04e7c4", "0x04e918", "0x04e930", "0x04e934", "0x04e940", "0x04e950", "0x04e96c",
+    "0x04e998", "0x04e9bc", "0x04ea04", "0x04ea20", "0x04ea80", "0x04ea94", "0x04ea9c",
+    "0x04eafc", "0x04eb78", "0x04ebf4", "0x04ec08", "0x04ec10", "0x04ec70", "0x04ecec", "0x04ed68", "0x04ede0", "0x04ee70",
+    "0x04f9ac", "0x04f9b8", "0x04f9c0", "0x04f9c4", "0x04f9d0", "0x04f9dc",
+    "0x050e8c", "0x050e98", "0x050ea4", "0x050eb0", "0x050ec0", "0x050ec4", "0x050ec8", "0x050ed0", "0x050ee4", "0x050ef0", "0x050ef4",
+    "0x05603c", "0x056044", "0x056080", "0x0560bc", "0x0560f4", "0x056130", "0x0561d8", "0x05624c", "0x0562c0", "0x056524",
+    "0x056570", "0x056574", "0x056658", "0x05672c", "0x0567c4", "0x056860", "0x0568fc", "0x056990", "0x056a50", "0x056d08", "0x056da8", "0x056ff4"
+  ],
+  "gate3_math_verified": true,
+  "gate3_math_proofs": [
+    "CPython 3.8 PyTypeObjecttp_flags Py_TPFLAGS_LONG_SUBCLASS check at 0x04dba4..0x04dba8: reads byte at [ob_type + 0xab] (bit 24 of uint32 tp_flags at +0xa8) via ldrb w8, [x0, #0xab]; tbnz w8, #0, #0x4dc28.",
+    "Task duration percentage telemetry calculation in PyTaskExecutor (.rodata 0x0574a6..0x0574c8): bridge_pct = (bridge_dur_ms / call_dur_ms) * 100.0, vm_pct = 100.0 - bridge_pct.",
+    "SIMD reference count batch increment in pitaya::CVMat_New (0x050ec0..0x050ed8): dup v0.2d, x8; str x8, [x0, #0x20]; str q0, [x0, #0x10]; add x9, x9, #3; str x9, [x8] (initializes 3 PyObject* fields to Py_None and adds +3 to Py_None->ob_refcnt in a single operation).",
+    "SSO vs Heap string branch in PTYPyDictSet(PyObject*, const char*, const char*) (0x04eec4..0x04ef34): compares strlen(val) against 23 bytes (cmp x0, #0x17; b.hs #0x4eee4), aligns heap allocation size to 16 bytes via add x8, x22, #0x10; and x24, x8, #-16."
+  ],
+  "gate4_abi_offsets_verified": true,
+  "gate4_abi_structures": [
+    "6 Exported PyTypeObject globals in .data (408 bytes = 0x198 bytes each, tp_name at +0x18, tp_basicsize at +0x20, tp_flags at +0xa8, tp_alloc at +0x130): BDPyMemoryViewType (0x068950, 48 B), BDPyCVMatType (0x068c08, 48 B), BDPyTVMDeviceType (0x068e38, 24 B), BDPyTVMDataInfoType (0x069070, 32 B), BDPyNDArrayType (0x069358, 64 B), BDPyTensorType (0x069720, 80 B).",
+    "2 Exported function pointers in .bss: pitaya::ToCVMat (0x069908, 8 B) and pitaya::ToPyMat (0x069910, 8 B).",
+    "3 CPython PyModuleDef & PyTypeObject pairs in .data initialized with PYTHON_ABI_VERSION = 1013 (0x3f5): ByteNNModuleDef (0x068280) + ByteNN_Engine_Type (0x0682e8), ByteDTModuleDef (0x0685e8) + ByteDT_Engine_Type (0x068650), DataWrapperModuleDef (0x0687e8).",
+    "JNI globals in .bss at 0x069a10..0x069a28 populated by PyVMLoader_nativeInit (0x056ff4) and read by pitaya::Java2CPy (0x056da8)."
+  ],
+  "gate5_symbols_count": 447,
+  "gate5_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED"
+}

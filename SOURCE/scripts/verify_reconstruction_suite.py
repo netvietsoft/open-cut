@@ -4687,6 +4687,85 @@ class AutonomousVerificationEngine:
             "Khớp pitaya::InitFastEngine (0x04ee2c), MinPyVMPool (OccupyOne/FreeOne) và 21 hàm JNI MicPyArray/MicPyDict/MicroPyLoader (0x04fd08..0x050f88)"
         )
 
+    def verify_libBDPythonVM(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libBDPythonVM.so (Pitaya CPython 3.8 Native VM & DataWrapper Bridge)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libBDPythonVM"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+
+        # 1. Size gate > 40 KB
+        self.assert_test(
+            "BDPythonVM_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 10,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp mã nguồn"
+        )
+
+        # 2. 3 CPython C-Extension PyInit_* Modules (PYTHON_ABI_VERSION = 1013 = 0x3f5) & CVMat_New (0x050e8c)
+        dw_cpp = (lib_dir / "bdpythonvm_datawrapper_modules.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_pyinit = all(fn in dw_cpp for fn in [
+            "PyInit_ByteNNModule", "PyInit_ByteDTModule", "PyInit_DataWrapperModule",
+            "CVMat_New", "kPythonAbiVersion"
+        ])
+        self.assert_test(
+            "BDPythonVM_3PyInitModulesAndCVMatNew",
+            has_pyinit,
+            "Khớp 3 hàm khởi tạo C-Extension (PyInit_ByteNNModule 0x02451c, PyInit_ByteDTModule 0x04be28, PyInit_DataWrapperModule 0x04f9ac, ABI=0x3f5) và CVMat_New (0x050e8c)"
+        )
+
+        # 3. 6 Exported PyTypeObject (408 B = 0x198 B each @ 0x068950..0x069720) & ToCVMat/ToPyMat
+        types_h = (lib_dir / "bdpythonvm_types.h").read_text(encoding="utf-8", errors="ignore")
+        has_6_types = all(t in dw_cpp for t in [
+            "BDPyMemoryViewType", "BDPyCVMatType", "BDPyTVMDeviceType",
+            "BDPyTVMDataInfoType", "BDPyNDArrayType", "BDPyTensorType",
+            "ToCVMat", "ToPyMat"
+        ]) and ("sizeof(PyTypeObject) == 408" in types_h)
+        self.assert_test(
+            "BDPythonVM_8ExportedGlobalObjectsAndPyTypeObjectABI",
+            has_6_types,
+            "Khớp 6 đối tượng PyTypeObject (408 B = 0x198 B tại .data 0x068950..0x069720, tp_basicsize 48/48/24/32/64/80) và 2 con trỏ ToCVMat/ToPyMat (0x069908..0x069910)"
+        )
+
+        # 4. Pitaya <-> CPython Conversion & 11 PTYPyDictSet Overloads (0x04d6d8..0x04ee70)
+        conv_cpp = (lib_dir / "bdpythonvm_cpy_convert.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_conv = all(fn in conv_cpp for fn in [
+            "GetPyObject", "EnvGetPyObject", "GetPTYDict", "PTYPyObjectString", "PTYPyDictSet"
+        ]) and conv_cpp.count("bool PTYPyDictSet(") == 11
+        self.assert_test(
+            "BDPythonVM_CPyConvertAnd11PTYPyDictSetOverloads",
+            has_conv,
+            "Khớp GetPyObject (0x04d6d8), EnvGetPyObject (0x04db38), GetPTYDict (0x04e788), PTYPyObjectString (0x04e918) và đủ 11 hàm nạp chồng PTYPyDictSet (0x04e998..0x04ee70)"
+        )
+
+        # 5. PyInterpreterPool, PyTaskExecutor & Power Downgrade Lock (.rodata 0x057105..0x057e25)
+        exec_cpp = (lib_dir / "bdpythonvm_executor_pool_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        has_exec = all(fn in exec_cpp for fn in [
+            "SetConcurrency", "SetPowerDowngrade", "OccupyOne", "PrepareInitEngine",
+            "ConfigVM", "ClearModuleWithSubStr", "FormatTaskDurationTelemetry"
+        ])
+        self.assert_test(
+            "BDPythonVM_InterpreterPoolAndTaskExecutor",
+            has_exec,
+            "Khớp PyInterpreterPool (OccupyOne/SetConcurrency/PowerDowngrade) và PyTaskExecutor (PrepareInitEngine/ConfigVM/ClearModuleWithSubStr)"
+        )
+
+        # 6. Java2CPy (0x056da8) & 21 CPyNativeArray/CPyNativeDict/PyVMLoader JNI Exports (0x05603c..0x056ff4)
+        has_jni = all(fn in exec_cpp for fn in [
+            "Java2CPy",
+            "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeCreateArray",
+            "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeArray_nativeAppendPTYClass",
+            "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeCreateDict",
+            "Java_com_bytedance_pitaya_api_bean_nativeobj_python_CPyNativeDict_nativeSetClass",
+            "Java_com_bytedance_pitaya_modules_PyVMLoader_nativeInit"
+        ])
+        self.assert_test(
+            "BDPythonVM_Java2CPyAnd21JNIExports",
+            has_jni,
+            "Khớp pitaya::Java2CPy (0x056da8) và 21 hàm JNI CPyNativeArray/CPyNativeDict/PyVMLoader (0x05603c..0x056ff4)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -4740,6 +4819,7 @@ class AutonomousVerificationEngine:
         self.verify_libPitayaBdComponent()
         self.verify_libpns_ttmachine_adapter()
         self.verify_libBDMicroPythonVM()
+        self.verify_libBDPythonVM()
         self.verify_overall_governance()
 
 

@@ -2002,3 +2002,21 @@
   - Agent 13 (`LEDGER_DOI_KHANG.json`): **`48 / 169` (`28.40%`) `VERIFIED_AND_ACCEPTED`**
   - `verify_reconstruction_suite.py`: **`323 PASS / 0 FAIL (100.0%)`**
   - `native_audit_watchdog.py`: **`169 binaries, 0 high findings`**
+
+
+
+---
+
+## 76. HOÀN THÀNH TÁI DỰNG TARGET 49: `libBDPythonVM.so` (`TASK-088-RECONSTRUCTION-LIBBDPYTHONVM` / `TASK_SO_006`)
+- **Thời gian**: `2026-10-26 20:16:30`
+- **Binary gốc**: `apktool-res/lib/arm64-v8a/libBDPythonVM.so` (`418,008 bytes`, `447` dynamic symbols: `50` exported = `42 STT_FUNC + 8 STT_OBJECT`, `387` imported)
+- **Kết quả tái dựng**: `10` tệp C++17 & Header (`111,704 bytes` C++17, `335` opcode citations, `0 stubs`) tại `SOURCE/GIAI-MA/libBDPythonVM/`:
+  1. `bdpythonvm_types.h` (`18,130 B`): Bố cục ABI `PyObject` (`16 B`), `PyVarObject` (`24 B`), `PyTypeObject` (`408 B = 0x198 B`), `PyModuleDef` (`104 B = 0x68 B`), `PYTHON_ABI_VERSION = 1013 (0x3f5)`, và 6 cấu trúc wrapper (`BDPyMemoryViewObject` `48 B`, `BDPyCVMatObject` `48 B`, `BDPyTVMDeviceObject` `24 B`, `BDPyTVMDataInfoObject` `32 B`, `BDPyNDArrayObject` `64 B`, `BDPyTensorObject` `80 B`).
+  2. `bdpythonvm_cpy_convert.h` (`5,057 B`) & `bdpythonvm_cpy_convert.cpp` (`23,079 B`): `pitaya::ToCVMat` (`.bss 0x069908`), `pitaya::ToPyMat` (`.bss 0x069910`), `pitaya::Task::~Task` (`0x04ca3c`), `GetPyObject` (`0x04d6d8`), `EnvGetPyObject` (`0x04db38`), `GetPTYDict` (`0x04e788`), `PTYPyObjectString` (`0x04e918`), và 11 nạp chồng `PTYPyDictSet` (`0x04e998..0x04ee70`).
+  3. `bdpythonvm_datawrapper_modules.h` (`2,771 B`) & `bdpythonvm_datawrapper_modules.cpp` (`13,695 B`): 6 `PyTypeObject` xuất toàn cục (`.data 0x068950..0x069720`), `PyInit_ByteNNModule` (`0x02451c`), `PyInit_ByteDTModule` (`0x04be28`), `PyInit_DataWrapperModule` (`0x04f9ac`), và `pitaya::CVMat_New` (`0x050e8c`).
+  4. `bdpythonvm_executor_pool_jni.h` (`11,780 B`) & `bdpythonvm_executor_pool_jni.cpp` (`26,025 B`): `pitaya::Java2CPy` (`0x056da8`), 10 hàm JNI `CPyNativeArray_native*` (`0x05603c..0x056524`), 10 hàm JNI `CPyNativeDict_native*` (`0x056570..0x056d08`), và `PyVMLoader_nativeInit` (`0x056ff4`, tải `libpython3.8m.so` + đăng ký `CPyPitayaVM` và `CPyVMPool`).
+  5. `BDPythonVM_interface.h` (`1,597 B`), `bdpythonvm_interface.cpp` (`1,908 B`), và `BDPythonVM_pseudocode.cpp` (`7,662 B`).
+- **Chỉ số xác minh**:
+  - Agent 13 (`LEDGER_DOI_KHANG.json`): **`49 / 169` (`28.99%`) `VERIFIED_AND_ACCEPTED`**
+  - `verify_reconstruction_suite.py`: **`329 PASS / 0 FAIL (100.0%)`**
+  - `native_audit_watchdog.py`: **`169 binaries, 0 high findings`**
