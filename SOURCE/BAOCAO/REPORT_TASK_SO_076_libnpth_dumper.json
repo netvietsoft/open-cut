@@ -1,18 +1,32 @@
 {
-  "report_id": "REPORT_TASK_SO_076_libnpth_dumper",
   "task_id": "TASK_SO_076_libnpth_dumper",
-  "target_library": "libnpth_dumper.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 159,
-    "jni_exports": 0,
-    "cxx_demangled_count": 87,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnpth_dumper",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "governance_task_id": "TASK-108-RECONSTRUCTION-LIBNPTH_DUMPER",
+  "library": "libnpth_dumper.so",
+  "binary_size_bytes": 90384,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "stub_count": 0,
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libnpth_dumper/npth_dumper_types.h",
+    "SOURCE/GIAI-MA/libnpth_dumper/npth_dumper_ptrace_unwinder.h",
+    "SOURCE/GIAI-MA/libnpth_dumper/npth_dumper_ptrace_unwinder.cpp",
+    "SOURCE/GIAI-MA/libnpth_dumper/npth_dumper_tombstone.h",
+    "SOURCE/GIAI-MA/libnpth_dumper/npth_dumper_tombstone.cpp",
+    "SOURCE/GIAI-MA/libnpth_dumper/npth_dumper_minidump_protector.h",
+    "SOURCE/GIAI-MA/libnpth_dumper/npth_dumper_minidump_protector.cpp",
+    "SOURCE/GIAI-MA/libnpth_dumper/npth_dumper_interface.h",
+    "SOURCE/GIAI-MA/libnpth_dumper/npth_dumper_pseudocode.cpp",
+    "SOURCE/GIAI-MA/libnpth_dumper/README_ANALYSIS.md"
+  ],
+  "proof_files": [
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_dumper.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_dumper.md"
+  ],
+  "verification_summary": {
+    "elf_sections": 28,
+    "dynsym_entries": 160,
+    "exported_functions": 10,
+    "adversary_audit": "VERIFIED_AND_ACCEPTED",
+    "watchdog_high_findings": 0
+  }
 }

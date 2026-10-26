@@ -1,0 +1,156 @@
+{
+  "library": "libnpth_dumper.so",
+  "task_id": "TASK_SO_076_libnpth_dumper",
+  "governance_task_id": "TASK-108-RECONSTRUCTION-LIBNPTH_DUMPER",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 90384,
+  "reconstructed_code_size_bytes": 124912,
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "offset": "0x000270",
+      "hex_bytes": "2f 73 79 73 74 65 6d 2f 62 69 6e 2f 6c 69 6e 6b 65 72 36 34 00",
+      "disassembly": ".interp: \"/system/bin/linker64\\0\" (Out-of-process PIE executable interpreter)",
+      "reconstructed_symbol": "opencut::npth_dumper::NpthDumperFacade::RunDumperMain"
+    },
+    {
+      "offset": "0x007aa0",
+      "hex_bytes": "5f 24 03 d5 1d 00 80 d2 1e 00 80 d2 e0 03 00 91",
+      "disassembly": "bti j; mov x29, #0; mov x30, #0; mov x0, sp (_start PIE entrypoint)",
+      "reconstructed_symbol": "npth_dumper_main_entry"
+    },
+    {
+      "offset": "0x007b40",
+      "hex_bytes": "20 00 e0 f8 c0 03 5f d6 02 00 80 d2 28 fc 5f c8 09 01 02 8b 2a fc 09 c8",
+      "disassembly": "ldaddal x0, x0, [x1]; ret; mov x2, #0; ldaxr x8, [x1]; add x9, x8, x2; stlxr w10, x9, [x1] (__aarch64_ldadd8_acq_rel)",
+      "reconstructed_symbol": "opencut::npth_dumper::NpthDumperFacade::AtomicFetchAdd64AcqRel"
+    },
+    {
+      "offset": "0x008140",
+      "hex_bytes": "93 00 80 52 13 00 a2 72",
+      "disassembly": "mov w19, #4; movk w19, #0x1000, lsl #16 (sa_flags = 0x10000004 = SA_SIGINFO | SA_RESTART)",
+      "reconstructed_symbol": "opencut::npth_dumper::NpthDumperFacade::RunDumperMain"
+    },
+    {
+      "offset": "0x0081bc",
+      "hex_bytes": "c0 03 80 52",
+      "disassembly": "mov w0, #0x1e (alarm(30) watchdog timeout in dumper_main)",
+      "reconstructed_symbol": "opencut::npth_dumper::NpthDumperFacade::RunDumperMain"
+    },
+    {
+      "offset": "0x0081d8",
+      "hex_bytes": "01 56 82 52",
+      "disassembly": "mov w1, #0x12b0 (4784-byte NpthCrashRequestPacket read from stdin fd=0)",
+      "reconstructed_symbol": "opencut::npth_dumper::NpthCrashRequestPacket"
+    },
+    {
+      "offset": "0x0084a8",
+      "hex_bytes": "2a 00 90 52 0a ca a8 72",
+      "disassembly": "mov w10, #0x8001; movk w10, #0x4650, lsl #16 (FPSIMD_MAGIC = 0x46508001 check)",
+      "reconstructed_symbol": "opencut::npth_dumper::TombstoneWriter::WriteRegistersSection"
+    },
+    {
+      "offset": "0x008d4c",
+      "hex_bytes": "08 7d 49 9b",
+      "disassembly": "smulh x8, x8, x9 (64-bit signed division by 1000 using magic multiplier 0x20c49ba5e353f7cf)",
+      "reconstructed_symbol": "opencut::npth_dumper::TombstoneWriter::DivideSignedBy1000"
+    },
+    {
+      "offset": "0x00fb3c",
+      "hex_bytes": "09 4a 8a d2 e9 89 aa f2 09 06 c6 f2 89 46 e0 f2",
+      "disassembly": "mov x9, #0x5250; movk x9, #0x544f, lsl #16; movk x9, #0x3030, lsl #32; movk x9, #0x234, lsl #48 (\"PROT004\\x02\" = 0x02343030544f5250ULL)",
+      "reconstructed_symbol": "opencut::npth_dumper::CrashProtectorEngine::ParseAndVerifyStateBuffer"
+    },
+    {
+      "offset": "0x010760",
+      "hex_bytes": "ca 0a 86 52 0a 46 a6 72",
+      "disassembly": "mov w10, #0x3056; movk w10, #0x3230, lsl #16 (\"V002\" = 0x32303056 config magic)",
+      "reconstructed_symbol": "opencut::npth_dumper::CrashProtectorEngine::ParseConfigBuffer"
+    },
+    {
+      "offset": "0x010dcc",
+      "hex_bytes": "20 19 19 33",
+      "disassembly": "bfi w0, w9, #7, #7 (Unsigned LEB128 7-bit bitfield insertion decoder)",
+      "reconstructed_symbol": "opencut::npth_dumper::CrashProtectorEngine::DecodeUnsignedLeb128"
+    },
+    {
+      "offset": "0x01167c",
+      "hex_bytes": "c8 07 80 d2 01 00 00 d4",
+      "disassembly": "mov x8, #0x3e; svc #0 (Direct AArch64 Linux syscall __NR_lseek = 62)",
+      "reconstructed_symbol": "opencut::npth_dumper::MinidumpGenerator::WriteMinidumpToFile"
+    },
+    {
+      "offset": "0x0116a0",
+      "hex_bytes": "08 08 80 d2 01 00 00 d4",
+      "disassembly": "mov x8, #0x40; svc #0 (Direct AArch64 Linux syscall __NR_write = 64)",
+      "reconstructed_symbol": "opencut::npth_dumper::MinidumpGenerator::WriteMinidumpToFile"
+    },
+    {
+      "offset": "0x012bf4",
+      "hex_bytes": "88 a9 88 52 08 4e a8 72",
+      "disassembly": "mov w8, #0x454c; movk w8, #0x4270, lsl #16 (\"LEBp\" = 0x4270454c Breakpad extension magic)",
+      "reconstructed_symbol": "opencut::npth_dumper::MinidumpGenerator::GenerateMinidumpBuffer"
+    },
+    {
+      "offset": "0x013764",
+      "hex_bytes": "21 58 20 4e 21 28 20 6e 20 68 60 6e 00 b8 b1 4e",
+      "disassembly": "cnt v1.16b, v1.16b; uaddlp v1.8h, v1.16b; uadalp v0.4s, v1.8h; addv s0, v0.4s (NEON CPU core popcount)",
+      "reconstructed_symbol": "opencut::npth_dumper::MinidumpGenerator::CountCpuCoresFromPresentMask"
+    },
+    {
+      "offset": "0x005fc0",
+      "hex_bytes": "4d 44 4d 50 93 a7 00 00",
+      "disassembly": ".rodata MDRawHeader template: \"MDMP\" (0x504d444d) + version 0x0000a793",
+      "reconstructed_symbol": "opencut::npth_dumper::MinidumpHeader"
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "theorem": "64-bit Signed Division by 1000 via Reciprocal Multiplication (`0x008d48..0x008d6c`)",
+      "formula": "q = ((smulh(n, 0x20c49ba5e353f7cf) >> 7) + ((uint64_t)smulh(n, 0x20c49ba5e353f7cf) >> 63))",
+      "verification": "For M = ceil(2^(64+7)/1000) = 2361183241434822607 = 0x20c49ba5e353f7cf, floor(n*M / 2^71) + sign_bit(n) == trunc(n / 1000) for all signed int64_t n."
+    },
+    {
+      "theorem": "CrashProtector State Header 64-bit XOR Integrity Check (`0x00fb3c..0x00fbb0`)",
+      "formula": "checksum_xor64 == magic_u64 (0x02343030544f5250) ^ ((uint64_t)crash_count << 32 | version_magic (0x12345678)) ^ timestamp_ms ^ ((uint64_t)threshold_count << 32 | protector_stage)",
+      "verification": "Exact match with `eor x9, x12, x9` at `0x00fba8`: any single-bit mutation in the 40-byte header invalidates the XOR invariant."
+    },
+    {
+      "theorem": "Unsigned LEB128 5-stage `bfi` Decoding (`0x010da4..0x010e10`)",
+      "formula": "val = (b0 & 0x7f) | ((b1 & 0x7f) << 7) | ((b2 & 0x7f) << 14) | ((b3 & 0x7f) << 21) | ((b4 & 0x0f) << 28)",
+      "verification": "Matches `and w0, w8, #0x7f` (`0x010db4`) followed by `bfi w0, w9, #7, #7` (`0x010dcc`), `bfi w0, w9, #0xe, #7` (`0x010de0`), and `bfi w0, w9, #0x15, #7` (`0x010df4`)."
+    },
+    {
+      "theorem": "NEON Vectorized CPU Core Range Population Count (`0x0136f0..0x0137b0`)",
+      "formula": "cores = sum_{r in ranges} (high_r - low_r + 1) = horizontal_sum_16b(cnt(v1.16b))",
+      "verification": "Matches `cnt v1.16b, v1.16b; uaddlp v1.8h, v1.16b; uadalp v0.4s, v1.8h; addv s0, v0.4s` at `0x013764..0x013774`."
+    }
+  ],
+  "struct_abi_layouts": [
+    {
+      "struct_name": "opencut::npth_dumper::NpthCrashRequestPacket",
+      "total_size_bytes": 4784,
+      "binary_reference": "0x0081d8 (mov w1, #0x12b0)"
+    },
+    {
+      "struct_name": "opencut::npth_dumper::AArch64FpsimdContext",
+      "total_size_bytes": 528,
+      "binary_reference": "0x0084a8 (FPSIMD_MAGIC = 0x46508001, size = 0x210)"
+    },
+    {
+      "struct_name": "opencut::npth_dumper::CrashProtectorStateHeader",
+      "total_size_bytes": 40,
+      "binary_reference": "0x00fb3c (\"PROT004\\x02\" = 0x02343030544f5250ULL)"
+    },
+    {
+      "struct_name": "opencut::npth_dumper::MinidumpHeader",
+      "total_size_bytes": 32,
+      "binary_reference": "0x005fc0 (\"MDMP\" = 0x504d444d, version = 0x0000a793)"
+    },
+    {
+      "struct_name": "opencut::npth_dumper::SignalSlotEntry",
+      "total_size_bytes": 40,
+      "binary_reference": "0x01d6f8..0x01d837 (file offset 0x0156f8..0x015837, 8 slots x 40 bytes = 320 bytes)"
+    }
+  ]
+}

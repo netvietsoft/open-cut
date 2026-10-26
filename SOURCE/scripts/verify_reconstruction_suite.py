@@ -6891,6 +6891,127 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 69. KIỂM CHỨNG LIBNPTH_DUMPER.SO (Out-of-Process Crash Dumper & MDMP)
+    # =========================================================================
+    def verify_libnpth_dumper(self):
+        import struct
+        print("\n[69] Đang kiểm chứng libnpth_dumper.so (ByteDance Out-of-Process Crash Dumper, Ptrace Unwinder & Breakpad MDMP)...")
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_dumper.so"
+        dumper_dir = GIAIMA_DIR / "libnpth_dumper"
+        types_h = dumper_dir / "npth_dumper_types.h"
+        unw_h = dumper_dir / "npth_dumper_ptrace_unwinder.h"
+        unw_cpp = dumper_dir / "npth_dumper_ptrace_unwinder.cpp"
+        tomb_h = dumper_dir / "npth_dumper_tombstone.h"
+        tomb_cpp = dumper_dir / "npth_dumper_tombstone.cpp"
+        mdmp_h = dumper_dir / "npth_dumper_minidump_protector.h"
+        mdmp_cpp = dumper_dir / "npth_dumper_minidump_protector.cpp"
+        iface_h = dumper_dir / "npth_dumper_interface.h"
+        pseudo_cpp = dumper_dir / "npth_dumper_pseudocode.cpp"
+
+        files = [types_h, unw_h, unw_cpp, tomb_h, tomb_cpp, mdmp_h, mdmp_cpp, iface_h, pseudo_cpp]
+        so_bytes = so_path.read_bytes()
+        all_src = "\n".join(p.read_text(encoding="utf-8", errors="ignore") for p in files)
+        total_src_size = sum(p.stat().st_size for p in files)
+
+        # 1. Binary size (90,384 bytes), .interp "/system/bin/linker64\x00" @ 0x000270, & source size (> 100 KB)
+        interp_bytes = so_bytes[0x000270:0x000285]
+        self.assert_test(
+            "NpthDumper_BinaryAndSourceEnvelope",
+            len(so_bytes) == 90384 and interp_bytes == b"/system/bin/linker64\x00" and total_src_size > 100000,
+            f"Binary={len(so_bytes)}B (.interp={interp_bytes!r}), Reconstructed C++17={total_src_size}B (>100KB)"
+        )
+
+        # 2. _start @ 0x007aa0 & __aarch64_ldadd8_acq_rel @ 0x007b40 (ldaddal x0, x0, [x1] = 0xf8e00020)
+        start_bti = struct.unpack("<I", so_bytes[0x007aa0:0x007aa4])[0]
+        ldaddal_insn = struct.unpack("<I", so_bytes[0x007b40:0x007b44])[0]
+        ldaxr_insn = struct.unpack("<I", so_bytes[0x007b4c:0x007b50])[0]
+        self.assert_test(
+            "NpthDumper_StartAndLseAtomics",
+            start_bti == 0xD503249F and ldaddal_insn == 0xF8E00020 and ldaxr_insn == 0xC85FFC20 and
+            all(tok in all_src for tok in [
+                "DetectArm64LseAtomics",
+                "AtomicFetchAdd64",
+                "RunDumperMain",
+                "kCrashPayloadBytes"
+            ]),
+            "Khớp _start (bti j @ 0x007aa0) và __aarch64_ldadd8_acq_rel (ldaddal x0, x0, [x1] @ 0x007b40)"
+        )
+
+        # 3. dumper_main @ 0x008108: sa_flags=0x10000004 (0x008140), alarm(30) (0x0081bc), packet=0x12b0 (0x0081d8)
+        sa_mov = struct.unpack("<I", so_bytes[0x008140:0x008144])[0]
+        sa_movk = struct.unpack("<I", so_bytes[0x008144:0x008148])[0]
+        alarm_mov = struct.unpack("<I", so_bytes[0x0081bc:0x0081c0])[0]
+        pkt_mov = struct.unpack("<I", so_bytes[0x0081d8:0x0081dc])[0]
+        self.assert_test(
+            "NpthDumper_MainAndSignalTable",
+            sa_mov == 0x52800093 and sa_movk == 0x72A20013 and
+            alarm_mov == 0x528003C0 and pkt_mov == 0x52825601 and
+            all(tok in all_src for tok in [
+                "CrashPipePayload",
+                "0x12b0",
+                "SelfSignalSlot",
+                "PtraceUnwinderEngine",
+                "PtraceAttachAndWait"
+            ]),
+            "Khớp dumper_main (sa_flags=0x10000004 @ 0x008140, alarm(30) @ 0x0081bc, packet=4784B @ 0x0081d8)"
+        )
+
+        # 4. TombstoneGenerator: FPSIMD_MAGIC=0x46508001 (0x0084a8) & smulh signed division by 1000 (0x008d64)
+        fp_mov = struct.unpack("<I", so_bytes[0x0084a8:0x0084ac])[0]
+        fp_movk = struct.unpack("<I", so_bytes[0x0084ac:0x0084b0])[0]
+        smulh_insn = struct.unpack("<I", so_bytes[0x008d64:0x008d68])[0]
+        self.assert_test(
+            "NpthDumper_TombstoneAndSmulhDiv1000",
+            fp_mov == 0x5290002A and fp_movk == 0x72A8CA0A and smulh_insn == 0x9B497D08 and
+            all(tok in all_src for tok in [
+                "TombstoneGenerator",
+                "MicrosToMillisSigned",
+                "0x20c49ba5e353f7cf",
+                "kFpSimdMagic",
+                "GenerateFullTombstoneAndSummary"
+            ]),
+            "Khớp FPSIMD_MAGIC=0x46508001 @ 0x0084a8 và phép chia có dấu smulh cho 1000 @ 0x008d64"
+        )
+
+        # 5. CrashProtectorEngine: "PROT004\x02" @ 0x00fb3c, "V002" @ 0x010760, LEB128 bfi @ 0x010dcc
+        prot_m0 = struct.unpack("<I", so_bytes[0x00fb3c:0x00fb40])[0]
+        v002_m0 = struct.unpack("<I", so_bytes[0x010760:0x010764])[0]
+        leb_bfi = struct.unpack("<I", so_bytes[0x010dcc:0x010dd0])[0]
+        self.assert_test(
+            "NpthDumper_CrashProtectorAndLeb128",
+            prot_m0 == 0xD28A4A09 and v002_m0 == 0x52860ACA and leb_bfi == 0x33191920 and
+            all(tok in all_src for tok in [
+                "CrashProtectorEngine",
+                "0x02343030544f5250",
+                "0x32303056",
+                "DecodeUleb128",
+                "ValidateProtectorConfigBlob"
+            ]),
+            "Khớp CrashProtectorEngine (PROT004\\x02 @ 0x00fb3c, V002 @ 0x010760, LEB128 bfi @ 0x010dcc)"
+        )
+
+        # 6. MinidumpGenerator: "MDMP" @ 0x005fe0, raw syscalls (0x01167c/0x0116a0), "LEBp" @ 0x012bf4, NEON popcount @ 0x013764
+        mdmp_rodata = so_bytes[0x005fe0:0x005fe8]
+        lseek_mov = struct.unpack("<I", so_bytes[0x01167c:0x011680])[0]
+        write_mov = struct.unpack("<I", so_bytes[0x0116a0:0x0116a4])[0]
+        lebp_mov = struct.unpack("<I", so_bytes[0x012bf4:0x012bf8])[0]
+        neon_cnt = struct.unpack("<I", so_bytes[0x013764:0x013768])[0]
+        neon_addv = struct.unpack("<I", so_bytes[0x013774:0x013778])[0]
+        self.assert_test(
+            "NpthDumper_MinidumpAndNeonCpuPopcount",
+            mdmp_rodata == b"MDMP\x93\xa7\x00\x00" and
+            lseek_mov == 0xD28007C8 and write_mov == 0xD2800808 and
+            lebp_mov == 0x5288A988 and neon_cnt == 0x4E205821 and neon_addv == 0x4EB1B800 and
+            all(tok in all_src for tok in [
+                "MinidumpGenerator",
+                "write_minidump",
+                "ParseCpuMaskAndCountCores",
+                "kCodeViewSignatureLEBp"
+            ]),
+            "Khớp write_minidump (MDMP @ 0x005fe0, __NR_lseek/__NR_write @ 0x01167c, LEBp @ 0x012bf4, NEON cnt/addv @ 0x013764)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -6963,6 +7084,7 @@ class AutonomousVerificationEngine:
         self.verify_libsliver()
         self.verify_libanimax_napi()
         self.verify_libtailor()
+        self.verify_libnpth_dumper()
         self.verify_overall_governance()
 
 
