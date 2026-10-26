@@ -1,1 +1,145 @@
-[]
+[
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x4f538",
+    "size": 3488,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "note": "Registers 10 methods on com/tiktok/ttm/TTMCore$JNIHelper (0x6a8f0) and 9 methods on com/tiktok/ttm/storage/TTMCoreKVManager (0x6a9e0); caches TTMOutput, TTMParamData, TTMAppLog, and TTMLogUtils"
+  },
+  {
+    "name": "init",
+    "signature": "([JILjava/lang/String;)V",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a8f0",
+    "value": "0x502d8"
+  },
+  {
+    "name": "prepareAsNeeded",
+    "signature": "()V",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a908",
+    "value": "0x50460"
+  },
+  {
+    "name": "execute",
+    "signature": "(Lcom/tiktok/ttm/TTMParamData;IJ[BIJLcom/tiktok/ttm/TTMOutput;Lcom/tiktok/ttm/TTMContext;)V",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a920",
+    "value": "0x50548"
+  },
+  {
+    "name": "execute",
+    "signature": "(Lcom/tiktok/ttm/TTMParamData;IJLjava/lang/String;JLcom/tiktok/ttm/TTMOutput;Lcom/tiktok/ttm/TTMContext;)V",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a938",
+    "value": "0x50590"
+  },
+  {
+    "name": "execute",
+    "signature": "(Lcom/tiktok/ttm/TTMParamData;IJJJLcom/tiktok/ttm/TTMOutput;Lcom/tiktok/ttm/TTMContext;)V",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a950",
+    "value": "0x505d4"
+  },
+  {
+    "name": "dumpInfo",
+    "signature": "(J)Ljava/lang/String;",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a968",
+    "value": "0x50614"
+  },
+  {
+    "name": "processTTMRuleByteCode",
+    "signature": "(Ljava/lang/String;J)[B",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a980",
+    "value": "0x50648"
+  },
+  {
+    "name": "parseTTMRuleByteCode",
+    "signature": "([BJJ)J",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a998",
+    "value": "0x4f440"
+  },
+  {
+    "name": "parseTTMRuleByteCode",
+    "signature": "(Ljava/lang/String;J)J",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a9b0",
+    "value": "0x4f33c"
+  },
+  {
+    "name": "releaseTTMRuleByteCode",
+    "signature": "(J)V",
+    "java_class": "com/tiktok/ttm/TTMCore$JNIHelper",
+    "table_vaddr": "0x6a9c8",
+    "value": "0x4f530"
+  },
+  {
+    "name": "nativeGetBoolValue",
+    "signature": "(Ljava/lang/String;)Z",
+    "java_class": "com/tiktok/ttm/storage/TTMCoreKVManager",
+    "table_vaddr": "0x6a9e0",
+    "value": "0x51a78"
+  },
+  {
+    "name": "nativeGetDoubleValue",
+    "signature": "(Ljava/lang/String;)D",
+    "java_class": "com/tiktok/ttm/storage/TTMCoreKVManager",
+    "table_vaddr": "0x6a9f8",
+    "value": "0x51b78"
+  },
+  {
+    "name": "nativeGetLongValue",
+    "signature": "(Ljava/lang/String;)J",
+    "java_class": "com/tiktok/ttm/storage/TTMCoreKVManager",
+    "table_vaddr": "0x6aa10",
+    "value": "0x51c78"
+  },
+  {
+    "name": "nativeGetStringValue",
+    "signature": "(Ljava/lang/String;)Ljava/lang/String;",
+    "java_class": "com/tiktok/ttm/storage/TTMCoreKVManager",
+    "table_vaddr": "0x6aa28",
+    "value": "0x51d70"
+  },
+  {
+    "name": "nativeStoreLongValue",
+    "signature": "(Ljava/lang/String;J)V",
+    "java_class": "com/tiktok/ttm/storage/TTMCoreKVManager",
+    "table_vaddr": "0x6aa40",
+    "value": "0x51f68"
+  },
+  {
+    "name": "nativeStoreDoubleValue",
+    "signature": "(Ljava/lang/String;D)V",
+    "java_class": "com/tiktok/ttm/storage/TTMCoreKVManager",
+    "table_vaddr": "0x6aa58",
+    "value": "0x52058"
+  },
+  {
+    "name": "nativeStoreStringValue",
+    "signature": "(Ljava/lang/String;Ljava/lang/String;)V",
+    "java_class": "com/tiktok/ttm/storage/TTMCoreKVManager",
+    "table_vaddr": "0x6aa70",
+    "value": "0x52150"
+  },
+  {
+    "name": "nativeContainKey",
+    "signature": "(Ljava/lang/String;)Z",
+    "java_class": "com/tiktok/ttm/storage/TTMCoreKVManager",
+    "table_vaddr": "0x6aa88",
+    "value": "0x522d4"
+  },
+  {
+    "name": "nativeRemoveKey",
+    "signature": "(Ljava/lang/String;)V",
+    "java_class": "com/tiktok/ttm/storage/TTMCoreKVManager",
+    "table_vaddr": "0x6aaa0",
+    "value": "0x52394"
+  }
+]

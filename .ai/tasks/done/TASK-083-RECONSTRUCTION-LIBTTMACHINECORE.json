@@ -1,0 +1,25 @@
+{
+  "task_id": "TASK-083-RECONSTRUCTION-LIBTTMACHINECORE",
+  "title": "Deep Reconstruction & Adversarial Verification of libTTMachineCore.so (Target 44)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (FRONTEND / Native Engine) & Agent 13 (Adversary Auditor)",
+  "target_library": "libTTMachineCore.so",
+  "binary_size_bytes": 429872,
+  "reconstructed_cpp_bytes": 151517,
+  "total_directory_bytes": 369362,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libTTMachineCore/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libTTMachineCore.*",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_044_libTTMachineCore.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_023_libTTMachineCore.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "12 C++17 & Header files totaling 151,517 bytes (> 40 KB, 0 stubs) in SOURCE/GIAI-MA/libTTMachineCore/",
+    "Exact AArch64 opcode and .rodata/.data verification for pre_process_byte_code (0x1a700), ttm_state_error_code_for_business (0x1758c), state_code_names (0x6a268), 8 TTMTypeObject (0x6c048..0x6c588), and JNI_OnLoad (0x4f538)",
+    "Agent 13 LEDGER_DOI_KHANG.json status VERIFIED_AND_ACCEPTED (44 / 169)",
+    "verify_reconstruction_suite.py passes 299 / 299 tests (100.0%) and native_audit_watchdog.py reports 0 high findings"
+  ],
+  "completed_at": "2026-10-26T18:09:00+07:00"
+}

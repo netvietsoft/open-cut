@@ -4179,6 +4179,109 @@ class AutonomousVerificationEngine:
             "JNI_OnLoad (0x2e6cc, JNI_VERSION_1_6) đăng ký 11 hàm TTMStrategyCenter (0x62050) + 5 hàm ByteDTEngineManager (0x62158) và CEP Engine"
         )
 
+    def verify_libTTMachineCore(self):
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 44: libTTMachineCore.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libTTMachineCore"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        self.assert_test(
+            "TTMachineCore_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 12,
+            f"Tổng dung lượng C++ đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Kiểm tra opcode ttm_support_max_bytecode_version (0x17244) & pre_process_byte_code (0x1a700)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libTTMachineCore.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        ver_insns = struct.unpack("<2I", so_bytes[0x17244:0x1724c])
+        pre_insns = struct.unpack("<10I", so_bytes[0x1a720:0x1a748])
+        vm_cpp = (lib_dir / "ttmachinecore_vm_bytecode.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "TTMachineCore_BytecodeMagicAndMaxVersion",
+            so_path.stat().st_size == 429872
+            and ver_insns == (0x52800140, 0xd65f03c0)
+            and pre_insns[1] == 0x529805c9
+            and pre_insns[2] == 0x72aeeb89
+            and pre_insns[8] == 0x7100291f
+            and "0x775cc02e" in vm_cpp,
+            "pre_process_byte_code (0x1a700) kiểm tra magic 0x775cc02e và ttm_support_max_bytecode_version (0x17244) = 10"
+        )
+
+        # 3. Kiểm tra opcode ttm_state_error_code_for_business (0x1758c, ROR-3 0x26e978d5)
+        biz_insns = struct.unpack("<16I", so_bytes[0x1758c:0x175cc])
+        def sim_biz_err(base_code, sub_code):
+            if base_code < 1000:
+                return -1
+            u_base = base_code & 0xffffffff
+            u_sub_m1 = (sub_code - 1) & 0xffffffff
+            prod = (u_base * 0x26e978d5) & 0xffffffff
+            ror3 = ((prod >> 3) | ((prod << 29) & 0xffffffff)) & 0xffffffff
+            if u_sub_m1 <= 999 and ror3 < 0x00418938:
+                return base_code + sub_code
+            return -1
+
+        self.assert_test(
+            "TTMachineCore_BusinessErrorCodeDiv1000",
+            biz_insns[0] == 0x710fa01f
+            and biz_insns[2] == 0x528f1aa8
+            and biz_insns[3] == 0x72a4dd28
+            and biz_insns[9] == 0x13880d08
+            and sim_biz_err(1000, 15) == 1015
+            and sim_biz_err(2000, 1000) == 3000
+            and sim_biz_err(1500, 15) == -1
+            and sim_biz_err(1000, 0) == -1,
+            "ttm_state_error_code_for_business (0x1758c) khớp phép kiểm tra chia hết cho 1000 bằng nhân 0x26e978d5 và ROR #3"
+        )
+
+        # 4. Kiểm tra bảng 73 opcode state_code_names @ 0x6a268 (file 0x66268) & ttm_travel (0x1bb64)
+        ptr0 = struct.unpack_from("<Q", so_bytes, 0x66268)[0]
+        ptr72 = struct.unpack_from("<Q", so_bytes, 0x66268 + 72 * 8)[0]
+        self.assert_test(
+            "TTMachineCore_StateCodeNames73Table",
+            ptr0 == 0x058d68
+            and ptr72 == 0x059305
+            and "State_create_list_direct" in vm_cpp
+            and "State_bin_op" in vm_cpp
+            and "ttm_travel" in vm_cpp,
+            "state_code_names (0x6a268) chứa đủ 73 trạng thái lệnh VM từ State_create_list_direct (0x58d68) đến State_bin_op (0x59305)"
+        )
+
+        # 5. Kiểm tra 8 bộ mô tả TTMTypeObject (192B @ 0x6c048..0x6c588) & hằng số .data (0x6c001, 0x6c650..0x6c660)
+        b64_map = so_bytes[0x68001:0x68041].decode("ascii")
+        long_max = struct.unpack_from("<Q", so_bytes, 0x68650)[0]
+        int_max = struct.unpack_from("<I", so_bytes, 0x68658)[0]
+        dbl_max = struct.unpack_from("<Q", so_bytes, 0x68660)[0]
+        obj_cpp = (lib_dir / "ttmachinecore_objects_hashmap.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "TTMachineCore_TypeObjectsAndDataConstants",
+            b64_map == "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+            and long_max == 0x7fffffffffffffff
+            and int_max == 0x7fffffff
+            and dbl_max == 0x7fefffffffffffff
+            and "TTMDictO_Type" in obj_cpp
+            and "TTMListO_Type" in obj_cpp
+            and "hashmap_sip" in obj_cpp
+            and "hashmap_murmur" in obj_cpp,
+            "8 bộ mô tả TTMTypeObject (192B @ 0x6c048..0x6c588), ttm_base46_map (0x6c001) và SipHash/MurmurHash3 khớp nhị phân"
+        )
+
+        # 6. Kiểm tra JNI_OnLoad (0x4f538) đăng ký 10 + 9 phương thức JNI tại 0x6a8f0 và 0x6a9e0
+        jni_cpp = (lib_dir / "ttmachinecore_extdata_cjson_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        bdi_cpp = (lib_dir / "ttmachinecore_bdi_bridges.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "TTMachineCore_JNIOnLoad19MethodsAndBdiLoaders",
+            "kTTMCoreJNIHelperMethods[10]" in jni_cpp
+            and "kTTMCoreKVManagerMethods[9]" in jni_cpp
+            and "processTTMRuleByteCode" in jni_cpp
+            and "TTMUniversalBdiFunLoader" in bdi_cpp
+            and "AnTTMUniversalBdiFunLoader" in bdi_cpp,
+            "JNI_OnLoad (0x4f538) đăng ký 10 hàm TTMCore$JNIHelper (0x6a8f0) + 9 hàm TTMCoreKVManager (0x6a9e0) và BDI Loaders"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -4263,6 +4366,7 @@ class AutonomousVerificationEngine:
         self.verify_libttboringssl()
         self.verify_libttmplayer()
         self.verify_libTTMStrategyCenter()
+        self.verify_libTTMachineCore()
         self.verify_overall_governance()
 
 

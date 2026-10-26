@@ -1939,3 +1939,14 @@
   4. *CEP & TTM Rule Evaluator (`ttmstrategycenter_cep_engine.h/.cpp`)*: `TTMCepDataWrapper` (`0x30950`), `ttm_decode_register_cep_rule` (`0x301e0`), `ttm_sc_cep_result` (`0x33bc0`), và `ttm_sc_strategy_center::run_ttm_rule` (`0x46dc4`).
   5. *ByteDT GBDT Engine & 16 Cầu nối JNI (`ttmstrategycenter_bytedt_jni.h/.cpp`)*: `bytedt::ByteDT` (`0x4c370..0x4ea30`), `transformByteDtErrorToTTMErrorCode` (`0x4d21c` tra bảng `.rodata` `0x523d8`: `[0, 401..406]`, mặc định `407`), và `JNI_OnLoad` (`0x2e6cc`, `JNI_VERSION_1_6`).
 - **Kiểm định tự động**: `verify_reconstruction_suite.py` đạt **293 / 293 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**, Agent 13 chứng nhận **43 / 169 `VERIFIED_AND_ACCEPTED` (25.44%)**.
+
+
+## 71. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libTTMachineCore.so (TARGET 44 — `TASK-083-RECONSTRUCTION-LIBTTMACHINECORE`)
+- **Thời gian**: 2026-10-26 18:09:00
+- **Thư viện mục tiêu**: `libTTMachineCore.so` (`429,872 bytes`, 830 dynamic symbols: 734 exported + 96 imported, 19 JNI methods via `RegisterNatives` + `JNI_OnLoad`).
+- **Chi tiết giải mã thân hàm (12 files, 151,517 bytes C++17, 369,362 bytes tổng thư mục, 0 stub)**:
+  1. *73-State Bytecode VM & Preprocessor (`ttmachinecore_vm_bytecode.h/.cpp`)*: `pre_process_byte_code` (`0x1a700`, kiểm tra magic `0x775cc02e` và version `<= 10`), `ttm_state_error_code_for_business` (`0x1758c`, kiểm tra chia hết cho 1000 bằng nhân `0x26e978d5` và `extr #3`), `state_code_names` (`0x6a268`, 73 trạng thái lệnh VM), và `ttm_travel` (`0x1bb64`, 12,544 B).
+  2. *8 Kiểu `TTMTypeObject` & Bảng Băm Địa Chỉ Mở (`ttmachinecore_objects_hashmap.h/.cpp`)*: 8 bộ mô tả 192 byte tại `0x6c048..0x6c588` (`TTMDictO_Type`, `TTMFloatO_Type`, `TTMIntO_Type`, `TTMSeqIterO_Type`, `TTMListO_Type`, `TTMNoneO_Type`, `TTMSliceO_Type`, `TTMStrO_Type`), `ttm_base46_map` (`0x6c001`), `hashmap_sip` (`0x1b5e8`), và `hashmap_murmur` (`0x1b81c`).
+  3. *Universal BDI & Keva KV Bridges (`ttmachinecore_bdi_bridges.h/.cpp`)*: `TTMUniversalBdiFunLoader` (`0x2869c`), `AnTTMUniversalBdiFunLoader` (`0x44208`), và cầu nối lưu trữ `ttm_core_repo` (`0x4934c..0x4a2fc`).
+  4. *Giao diện Dữ liệu Mở rộng, `cJSON` & 19 Cầu nối JNI (`ttmachinecore_extdata_cjson_jni.h/.cpp`)*: `ITTMExtDataBdi`, `TTMExtJsonDataBdi`, `TTMExtDataDelegate`, `cJSON`, và `JNI_OnLoad` (`0x4f538`, 10 hàm `TTMCore$JNIHelper` @ `0x6a8f0` + 9 hàm `TTMCoreKVManager` @ `0x6a9e0`).
+- **Kiểm định tự động**: `verify_reconstruction_suite.py` đạt **299 / 299 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**, Agent 13 chứng nhận **44 / 169 `VERIFIED_AND_ACCEPTED` (26.04%)**.

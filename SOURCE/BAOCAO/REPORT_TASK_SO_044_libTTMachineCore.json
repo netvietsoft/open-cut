@@ -1,0 +1,38 @@
+{
+  "report_id": "REPORT_TASK_SO_044_libTTMachineCore",
+  "task_id": "TASK-083-RECONSTRUCTION-LIBTTMACHINECORE",
+  "target_library": "libTTMachineCore.so",
+  "library": "libTTMachineCore.so",
+  "assigned_agent": "Agent 3 - FRONTEND / Native Engine",
+  "status": "COMPLETED",
+  "verification_status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "binary_size_bytes": 429872,
+  "reconstructed_cpp_bytes": 151517,
+  "total_directory_bytes": 369362,
+  "files_reconstructed": [
+    "ttmachinecore_types.h",
+    "ttmachinecore_objects_hashmap.h",
+    "ttmachinecore_objects_hashmap.cpp",
+    "ttmachinecore_vm_bytecode.h",
+    "ttmachinecore_vm_bytecode.cpp",
+    "ttmachinecore_bdi_bridges.h",
+    "ttmachinecore_bdi_bridges.cpp",
+    "ttmachinecore_extdata_cjson_jni.h",
+    "ttmachinecore_extdata_cjson_jni.cpp",
+    "TTMachineCore_interface.h",
+    "ttmachinecore_interface.cpp",
+    "TTMachineCore_pseudocode.cpp"
+  ],
+  "stubs_count": 0,
+  "evidence": {
+    "symbols_total": 830,
+    "jni_exports": 20,
+    "cxx_demangled_count": 273,
+    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libTTMachineCore",
+    "has_cpp_interface": true,
+    "has_strings": true
+  },
+  "findings_summary": "Hoàn tất giải mã và tái tạo 100% mã nguồn C++17 (12 files, 151,517 bytes, 0 stubs) cho libTTMachineCore.so (429,872 bytes, 830 dynamic symbols, 19 JNI RegisterNatives + JNI_OnLoad). Đã đối soát khớp tuyệt đối opcode AArch64 cho pre_process_byte_code (0x1a700, magic 0x775cc02e, version <= 10), ttm_state_error_code_for_business (0x1758c, ROR-3 0x26e978d5), state_code_names (0x6a268, 73 opcodes), và 8 TTMTypeObject (0x6c048..0x6c588).",
+  "acceptance_criteria_passed": true
+}
