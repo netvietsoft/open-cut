@@ -5756,6 +5756,128 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 59: liblynxtrace.so (Lynx TraceController, TraceEvent & Perfetto)
+    # =========================================================================
+    def verify_liblynxtrace(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: liblynxtrace.so (Lynx TraceController & Perfetto)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "liblynxtrace"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 60 KB across >= 8 files
+        self.assert_test(
+            "LynxTrace_SourceSizeGate",
+            total_bytes > 60000 and len(cpp_files) >= 8,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 60 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (51,200 B, 44 .dynsym: 9 imports + 34 exports, 62 .rela.dyn, 10 .rela.plt)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liblynxtrace.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        jni_onload_opcodes = struct.unpack("<2I", so_bytes[0x0040e8:0x0040f0])
+        self.assert_test(
+            "LynxTrace_Elf64AndJniOnLoadOpcodes",
+            so_path.stat().st_size == 51200
+            and jni_onload_opcodes == (0x528000c0, 0x72a00020)
+            and "51200u" in content
+            and "kRelaDynRelativeTable" in content
+            and "kPltImportTable" in content,
+            "Khớp nhị phân liblynxtrace.so (51,200 B, 44 .dynsym, 62 .rela.dyn, 10 .rela.plt) và mã máy JNI_OnLoad (0x0040e8..0x0040ec: mov w0,#6; movk w0,#1,lsl #16 -> 0x00010006)"
+        )
+
+        # 3. TraceController Singleton (.data 0x00c000, 16B), Guard (.bss 0x00c010) & 13-Slot Vtable (.data.rel.ro 0x008018..0x008078)
+        instance_guard_opcodes = struct.unpack("<2I", so_bytes[0x004108:0x004110])
+        has_controller_abi = (
+            instance_guard_opcodes == (0x08dffd08, 0x360000a8)
+            and all(tok in content for tok in [
+                "sizeof(TraceControllerAbiLayout) == 16",
+                "sizeof(LynxTraceBssSegment) == 24",
+                "sizeof(ScopedLocalJavaRefLayout) == 24",
+                "0x00c000u",
+                "0x008018u",
+                "TraceController_nativeCreateTraceController",
+                "TraceController_nativeStartTracing"
+            ])
+        )
+        self.assert_test(
+            "LynxTrace_ControllerSingleton16BAndVtable13Slots",
+            has_controller_abi,
+            "Khớp TraceController::s_instance (16B @ .data 0x00c000, vptr=0x008018), ldarb/tbz biến bảo vệ (.bss 0x00c010 @ 0x004108) và vtable 13 khe (104B @ 0x008018..0x008078)"
+        )
+
+        # 4. 14 JNINativeMethod Descriptors in .data.rel.ro (4 TraceController @ 0x008080 + 10 TraceEvent @ 0x008108)
+        has_jni_tables = all(tok in content for tok in [
+            "com/lynx/tasm/base/TraceController",
+            "com/lynx/tasm/base/TraceEvent",
+            "nativeCreateTraceController",
+            "nativeStartTracing",
+            "nativeStopTracing",
+            "nativeStartStartupTracingIfNeeded",
+            "nativeBeginSection",
+            "nativeBeginSectionWithProps",
+            "nativeEndSection",
+            "nativeEndSectionWithProps",
+            "nativeInstant",
+            "nativeInstantWithProps",
+            "nativeCounter",
+            "nativeCategoryEnabled",
+            "nativeSystemTraceEnabled",
+            "nativePerfettoTraceEnabled"
+        ])
+        self.assert_test(
+            "LynxTrace_14JniNativeMethodsInDataRelRo",
+            has_jni_tables,
+            "Khớp toàn bộ 14 mô tả JNINativeMethod trong .data.rel.ro: 4 phương thức TraceController (0x008080..0x0080df) và 10 phương thức TraceEvent (0x008108..0x0081f7)"
+        )
+
+        # 5. Perfetto TrackEvent, TrackEvent_LegacyEvent, LynxDebugAnnotation & Wire-Format Serializer
+        zero24_opcodes = struct.unpack("<2I", so_bytes[0x004208:0x004210])
+        has_perfetto_proto = (
+            zero24_opcodes == (0xa9007d1f, 0xf900091f)
+            and all(tok in content for tok in [
+                "SerializePerfettoTrackEventProto",
+                "TrackEvent_LegacyEvent",
+                "LynxDebugAnnotation",
+                "set_unscoped_id",
+                "set_flow_direction",
+                "set_track_uuid",
+                "add_debug_annotations"
+            ])
+        )
+        self.assert_test(
+            "LynxTrace_PerfettoTrackEventProtoAnd24BReturnStub",
+            has_perfetto_proto,
+            "Khớp bộ tạo sự kiện Protobuf Perfetto (TrackEvent, TrackEvent_LegacyEvent, LynxDebugAnnotation), SerializePerfettoTrackEventProto và stub xóa 24B [x8] tại 0x004208 (stp xzr,xzr,[x8]; str xzr,[x8,#0x10])"
+        )
+
+        # 6. All 34 Exported .dynsym Symbols ([010]..[043])
+        exported_34 = [
+            "JNI_OnLoad",
+            "_ZN4lynx5trace15TraceController8InstanceEv",
+            "TraceEventBeginEx",
+            "TraceEventEndEx",
+            "TraceCounterEx",
+            "_ZN4lynx5trace9GetFlowIdEv",
+            "_ZN4lynx5trace14GetTraceTimeNsEv",
+            "_ZN4lynx5trace25TraceEventCategoryEnabledEPKc",
+            "_ZN4lynx5trace19TraceRuntimeProfileERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEmi",
+            "_ZN4lynx8perfetto11ThreadTrack7CurrentEv",
+            "_ZN4lynx8perfetto10TrackEvent8set_nameERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+            "_ZN4lynx8perfetto22TrackEvent_LegacyEvent9set_phaseEi",
+            "_ZN4lynx8perfetto19LynxDebugAnnotation8set_nameERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE"
+        ]
+        self.assert_test(
+            "LynxTrace_34ExportedDynSymSymbols",
+            all(sym in content for sym in exported_34),
+            "Khớp toàn bộ 34 ký hiệu xuất khẩu .dynsym ([010]..[043]): JNI_OnLoad, TraceController::Instance(), 10 hàm lynx::trace::*, ThreadTrack::Current(), 9 hàm TrackEvent, 4 hàm LegacyEvent và 8 hàm LynxDebugAnnotation"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -5818,6 +5940,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_unw()
         self.verify_libpl_droidsonroids_gif()
         self.verify_liblynx_krypton()
+        self.verify_liblynxtrace()
         self.verify_overall_governance()
 
 

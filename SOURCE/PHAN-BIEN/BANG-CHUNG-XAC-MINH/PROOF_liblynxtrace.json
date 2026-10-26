@@ -1,0 +1,208 @@
+{
+  "library": "liblynxtrace.so",
+  "task_id": "TASK_SO_149",
+  "internal_task_id": "TASK-098-RECONSTRUCTION-LIBLYNXTRACE",
+  "status": "VERIFIED_BY_WORKER",
+  "binary_metadata": {
+    "file_path": "extracted/lib/arm64-v8a/liblynxtrace.so",
+    "architecture": "AArch64 (ELF64 Little-Endian Shared Object)",
+    "exact_size_bytes": 51200,
+    "soname": "liblynxtrace.so",
+    "dt_needed": [
+      "liblynxbase.so",
+      "liblog.so",
+      "libm.so",
+      "libc.so"
+    ],
+    "dynsym_total_entries": 44,
+    "dynsym_imported_entries": 9,
+    "dynsym_exported_entries": 34,
+    "rela_dyn_entries": 62,
+    "rela_plt_entries": 10,
+    "text_vaddr": "0x004000",
+    "text_size_bytes": 532,
+    "data_rel_ro_vaddr": "0x008000",
+    "data_vaddr": "0x00c000",
+    "bss_vaddr": "0x00c010"
+  },
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_types.h",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_perfetto_event.h",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_perfetto_event.cpp",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_controller_jni.h",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_controller_jni.cpp",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_interface.h",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_interface.cpp",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_pseudocode.cpp",
+    "SOURCE/GIAI-MA/liblynxtrace/README_ANALYSIS.md"
+  ],
+  "opcode_evidence": [
+    {
+      "function": "JNI_OnLoad",
+      "vaddr_range": "0x00403c..0x0040f4",
+      "size_bytes": 188,
+      "verified_opcodes": [
+        {
+          "vaddr": "0x00403c",
+          "bytes_hex": "ff0301d1",
+          "u32_le": "0xd10103ff",
+          "instruction": "sub sp, sp, #0x40"
+        },
+        {
+          "vaddr": "0x004048",
+          "bytes_hex": "86000094",
+          "u32_le": "0x94000086",
+          "instruction": "bl #0x4260 (_ZN4lynx4base7android6InitVMEP7_JavaVM)"
+        },
+        {
+          "vaddr": "0x004054",
+          "bytes_hex": "21002f91",
+          "u32_le": "0x912f0021",
+          "instruction": "add x1, x1, #0xbc0 (\"com/lynx/tasm/base/TraceController\")"
+        },
+        {
+          "vaddr": "0x00408c",
+          "bytes_hex": "085d43f9",
+          "u32_le": "0xf9435d08",
+          "instruction": "ldr x8, [x8, #0x6b8] (JNIEnv::RegisterNatives)"
+        },
+        {
+          "vaddr": "0x004090",
+          "bytes_hex": "83008052",
+          "u32_le": "0x52800083",
+          "instruction": "mov w3, #4 (4 methods for TraceController)"
+        },
+        {
+          "vaddr": "0x0040d4",
+          "bytes_hex": "43018052",
+          "u32_le": "0x52800143",
+          "instruction": "mov w3, #0xa (10 methods for TraceEvent)"
+        },
+        {
+          "vaddr": "0x0040e8",
+          "bytes_hex": "c0008052",
+          "u32_le": "0x528000c0",
+          "instruction": "mov w0, #6"
+        },
+        {
+          "vaddr": "0x0040ec",
+          "bytes_hex": "2000a072",
+          "u32_le": "0x72a00020",
+          "instruction": "movk w0, #1, lsl #16 (0x00010006 = JNI_VERSION_1_6)"
+        }
+      ]
+    },
+    {
+      "function": "lynx::trace::TraceController::Instance()",
+      "vaddr_range": "0x0040fc..0x004158",
+      "size_bytes": 96,
+      "verified_opcodes": [
+        {
+          "vaddr": "0x004108",
+          "bytes_hex": "08fddff08",
+          "u32_le": "0x08dffd08",
+          "instruction": "ldarb w8, [x8] (.bss 0x00c010 guard byte)"
+        },
+        {
+          "vaddr": "0x00410c",
+          "bytes_hex": "a8000036",
+          "u32_le": "0x360000a8",
+          "instruction": "tbz w8, #0, #0x4120"
+        },
+        {
+          "vaddr": "0x004128",
+          "bytes_hex": "5a000094",
+          "u32_le": "0x9400005a",
+          "instruction": "bl #0x4290 (__cxa_guard_acquire)"
+        },
+        {
+          "vaddr": "0x00413c",
+          "bytes_hex": "00700591",
+          "u32_le": "0x91057000",
+          "instruction": "add x0, x0, #0x15c (~TraceController D1 @ 0x00415c)"
+        },
+        {
+          "vaddr": "0x004148",
+          "bytes_hex": "42000094",
+          "u32_le": "0x94000042",
+          "instruction": "bl #0x4250 (__cxa_atexit)"
+        },
+        {
+          "vaddr": "0x004154",
+          "bytes_hex": "53000094",
+          "u32_le": "0x94000053",
+          "instruction": "bl #0x42a0 (__cxa_guard_release)"
+        }
+      ]
+    },
+    {
+      "function": "lynx::trace::TraceController::~TraceController() & Return Stubs",
+      "vaddr_range": "0x00415c..0x004210",
+      "size_bytes": 184,
+      "verified_opcodes": [
+        {
+          "vaddr": "0x00416c",
+          "bytes_hex": "097d00a9",
+          "u32_le": "0xa9007d09",
+          "instruction": "stp x9, xzr, [x8] (reset vptr = 0x008018, delegate_ = nullptr)"
+        },
+        {
+          "vaddr": "0x00419c",
+          "bytes_hex": "00008012",
+          "u32_le": "0x12800000",
+          "instruction": "mov w0, #-1 (StartTracing & nativeStartTracing return -1)"
+        },
+        {
+          "vaddr": "0x0041c4",
+          "bytes_hex": "fe0f1ff8",
+          "u32_le": "0xf81f0ffe",
+          "instruction": "str x30, [sp, #-0x10]! (nativeCreateTraceController prologue)"
+        },
+        {
+          "vaddr": "0x004208",
+          "bytes_hex": "1f7d00a9",
+          "u32_le": "0xa9007d1f",
+          "instruction": "stp xzr, xzr, [x8] (zero bytes [0..15] of indirect return std::string)"
+        },
+        {
+          "vaddr": "0x00420c",
+          "bytes_hex": "1f0900f9",
+          "u32_le": "0xf900091f",
+          "instruction": "str xzr, [x8, #0x10] (zero bytes [16..23] of indirect return std::string)"
+        }
+      ]
+    }
+  ],
+  "struct_and_table_layouts": {
+    "TraceController_16B": {
+      "size_bytes": 16,
+      "data_vaddr": "0x00c000",
+      "fields": [
+        {"offset": "0x00", "size": 8, "name": "vptr", "initial_value": "0x008018 (.data.rel.ro + 0x18)"},
+        {"offset": "0x08", "size": 8, "name": "delegate_", "initial_value": "0x0000000000000000"}
+      ]
+    },
+    "TraceController_Vtable_13Slots": {
+      "vaddr": "0x008018",
+      "slots": [
+        "0x00415c (~TraceController D1)",
+        "0x004184 (~TraceController D0)",
+        "0x00419c (StartTracing -> -1)",
+        "0x0041a4 (StopTracing -> false)",
+        "0x0040f8 (AddTracePlugin -> void)",
+        "0x0041a4 (DeleteTracePlugin -> false)",
+        "0x0040f8 (StartStartupTracingIfNeeded -> void)",
+        "0x0040f8 (SetStartupTracingConfig -> void)",
+        "0x0040f8 (SetTraceBufferSize -> void)",
+        "0x0040f8 (AddCompleteCallback -> void)",
+        "0x0041a8 (GetStartupTracingConfig -> 24B empty string)",
+        "0x0041a8 (GetTraceFilePath -> 24B empty string)",
+        "0x0041a4 (IsTracingStarted -> false)"
+      ]
+    },
+    "JNINativeMethod_Tables": {
+      "TraceController_kMethods_0x008080": 4,
+      "TraceEvent_kMethods_0x008108": 10
+    }
+  }
+}

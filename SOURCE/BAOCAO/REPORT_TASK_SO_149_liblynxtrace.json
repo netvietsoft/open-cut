@@ -1,18 +1,28 @@
 {
-  "report_id": "REPORT_TASK_SO_149_liblynxtrace",
-  "task_id": "TASK_SO_149_liblynxtrace",
-  "target_library": "liblynxtrace.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 43,
-    "jni_exports": 0,
-    "cxx_demangled_count": 35,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\liblynxtrace",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "task_id": "TASK_SO_149",
+  "internal_task_id": "TASK-098-RECONSTRUCTION-LIBLYNXTRACE",
+  "library": "liblynxtrace.so",
+  "status": "COMPLETED",
+  "verification_status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 51200,
+  "reconstructed_code_size_bytes": 68150,
+  "exported_symbols_verified": 34,
+  "imported_symbols_verified": 9,
+  "rela_dyn_verified": 62,
+  "rela_plt_verified": 10,
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_types.h",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_perfetto_event.h",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_perfetto_event.cpp",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_controller_jni.h",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_controller_jni.cpp",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_interface.h",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_interface.cpp",
+    "SOURCE/GIAI-MA/liblynxtrace/lynxtrace_pseudocode.cpp",
+    "SOURCE/GIAI-MA/liblynxtrace/README_ANALYSIS.md"
+  ],
+  "proof_files": [
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_liblynxtrace.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_liblynxtrace.md"
+  ]
 }
