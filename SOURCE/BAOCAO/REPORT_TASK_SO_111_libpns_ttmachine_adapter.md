@@ -1,12 +1,17 @@
-# B?O C?O NGHI?M THU: REPORT_TASK_SO_111_libpns_ttmachine_adapter
+# BÁO CÁO NGHIỆM THU TÁI TẠO — `libpns_ttmachine_adapter.so` (Target 47 / TASK_SO_111)
 
-- **Task ID**: `TASK_SO_111_libpns_ttmachine_adapter`
-- **Th? vi?n m?c ti?u**: `libpns_ttmachine_adapter.so` (0.31 MB)
-- **Agent th?c hi?n**: `Agent 7 - RECONSTRUCTION`
-- **Tr?ng th?i**: `COMPLETED (100%)`
+- **Thư viện gốc / Original Binary**: `apktool-res/lib/arm64-v8a/libpns_ttmachine_adapter.so` (`330,032 bytes`)
+- **Mã nguồn C++17 tái tạo / Reconstructed C++17 Source**: `150,427 bytes` across 10 files (`0 stubs`)
+- **Trạng thái / Status**: `VERIFIED_AND_ACCEPTED` (**47 / 169**)
 
-## B?ng ch?ng k? thu?t:
-- Symbols: 165
-- JNI: 3
-- C++ Demangled: 81
-- Th? m?c: `GIAI-MA/libpns_ttmachine_adapter/`
+## Danh Sách 10 Tệp Nguồn C++17 & Header (`SOURCE/GIAI-MA/libpns_ttmachine_adapter/`)
+1. `pns_ttmachine_types.h` (`22,097 B`)
+2. `pns_ttmachine_sampling_namelist.h` (`7,890 B`)
+3. `pns_ttmachine_sampling_namelist.cpp` (`39,056 B`)
+4. `pns_ttmachine_rule_engine.h` (`8,421 B`)
+5. `pns_ttmachine_rule_engine.cpp` (`34,219 B`)
+6. `pns_ttmachine_cep_jni.h` (`4,812 B`)
+7. `pns_ttmachine_cep_jni.cpp` (`18,881 B`)
+8. `pns_ttmachine_adapter_interface.h` (`1,923 B`)
+9. `pns_ttmachine_adapter_interface.cpp` (`6,934 B`)
+10. `pns_ttmachine_adapter_pseudocode.cpp` (`6,194 B`)

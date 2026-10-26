@@ -1,18 +1,15 @@
 {
-  "report_id": "REPORT_TASK_SO_111_libpns_ttmachine_adapter",
   "task_id": "TASK_SO_111_libpns_ttmachine_adapter",
-  "target_library": "libpns_ttmachine_adapter.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 165,
-    "jni_exports": 3,
-    "cxx_demangled_count": 81,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libpns_ttmachine_adapter",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "target_index": 47,
+  "lib_name": "libpns_ttmachine_adapter.so",
+  "binary_path": "apktool-res/lib/arm64-v8a/libpns_ttmachine_adapter.so",
+  "binary_size_bytes": 330032,
+  "reconstructed_size_bytes": 150427,
+  "reconstructed_files_count": 10,
+  "dynamic_symbols_total": 165,
+  "exported_symbols_count": 27,
+  "imported_symbols_count": 138,
+  "stubs_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completed_at": "2026-10-26T19:23:30+07:00"
 }

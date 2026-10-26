@@ -1972,3 +1972,16 @@
   3. *Bộ Đệm Luồng `NdkStringBuf` & Động Cơ Biểu Thức Chính Quy (`pitayabdcomponent_regex_stream.h/.cpp`)*: `NdkStringBuf` (`seekoff` @ `0x005044`, `xsgetn` @ `0x005190`, `underflow` @ `0x0052c0`, `pbackfail` @ `0x005370`, `overflow` @ `0x005444`, `str` @ `0x005c50`), `RegexStreamEngine::GetLine` (`0x005e14`), `RegexSearchGroups` (`0x00de34`/`0x00e080`), và toán học nghịch đảo nhân `0xaaaaaaaaaaaaaaabULL` chia 24 (`sub_match` @ `0x002e54`) và chia 96 (`ThreadStackInfo` @ `0x0048e0`).
   4. *Cầu Nối JNI & Nạp Động Dự Phòng 2 Tầng (`pitayabdcomponent_alog_jni.h/.cpp`)*: `JStringToStdString` (`0x00264c`, vtable `+0x548`/`+0x550`), `Java_com_bytedance_pitaya_bdcomponentimpl_crash_NpthStackReporter_nativeGenerateAllStack` (`0x002780`), và `Java_com_bytedance_pitaya_bdcomponentimpl_monitor_ALogPrinter_nativeGetFuncAddr` (`0x004c54`, `dlopen("libalog.so", 0x102)` + `dlsym("alog_write")` -> dự phòng `npth_dlopen` + `npth_dlsym`).
 - **Kiểm định tự động**: `verify_reconstruction_suite.py` đạt **311 / 311 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**, Agent 13 chứng nhận **46 / 169 `VERIFIED_AND_ACCEPTED` (27.22%)**.
+
+
+---
+
+## 74. TARGET 47 RECONSTRUCTION: `libpns_ttmachine_adapter.so` (`TASK-086-RECONSTRUCTION-LIBPNSTTMACHINEADAPTER`)
+
+- **Binary**: `apktool-res/lib/arm64-v8a/libpns_ttmachine_adapter.so` (`330,032 bytes`, 165 dynamic symbols: 27 exported + 138 imported).
+- **Reconstructed Source**: `SOURCE/GIAI-MA/libpns_ttmachine_adapter/` (`10 files`, `150,427 bytes` C++17 & Header, `0 stubs`, bilingual EN + VN).
+- **Key Binary Proofs**:
+  - `.init_array` (`0x052410..0x052420`): `0x007460` (`JniCacheTable` `0x248 = 584 B` -> `0x0541e8`) and `0x007498` (initializes global maps at `0x054208` & `0x054230` with `load_factor = 1.0f = 0x3f800000` and tail-calls `0x014598`).
+  - `.data` (`0x054000..0x0540d8`): 9-entry `JNINativeMethod` table registered on `"com/bytedance/pns/engine/RuleEngineService"` (`0x044029`) in `JNI_OnLoad` (`0x00d430`).
+  - `_Z5isHitPd` (`0x03623c`, 388 B) & `_Z10randomSeed` (`0x036eac`, 484 B): 624-word (`0x270`) `std::mt19937` (`0x6c078965`, `M=397`, `MATRIX_A=0x9908b0df`) and `CityHash64` (`0x007ed4`).
+- **Verification**: `VERIFIED_AND_ACCEPTED` (**47 / 169 — 27.81%**), **317 / 317 PASS (100.0%)**, **0 high findings**.

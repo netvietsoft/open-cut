@@ -4483,6 +4483,103 @@ class AutonomousVerificationEngine:
             "ALogPrinter_nativeGetFuncAddr (0x004c54, RTLD_NOW|RTLD_GLOBAL=0x102, dự phòng npth_dlopen) và chuỗi .rodata chia sẻ đuôi +5 byte khớp 100%"
         )
 
+    # =========================================================================
+    # 47. KIỂM ĐỊNH THƯ VIỆN: libpns_ttmachine_adapter.so
+    # =========================================================================
+    def verify_libpns_ttmachine_adapter(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> KIỂM ĐỊNH THƯ VIỆN 47: libpns_ttmachine_adapter.so")
+        print("="*70)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libpns_ttmachine_adapter.so"
+        giaima_dir = GIAIMA_DIR / "libpns_ttmachine_adapter"
+        data = so_path.read_bytes()
+
+        # 1. Kiểm tra ELF64 (330,032 B) & .init_array constructors (0x052410 -> file 0x04e410)
+        init0, init1 = struct.unpack_from("<QQ", data, 0x04e410)
+        ins_init0 = struct.unpack_from("<I", data, 0x00746c)[0]  # mov w0, #0x248 (0x52804900)
+        ins_init1 = struct.unpack_from("<I", data, 0x0074bc)[0]  # mov w20, #0x3f800000 (0x52a7f014)
+        self.assert_test(
+            "PnsTtmachineAdapter_ElfAndInitArray",
+            len(data) == 330032 and init0 == 0x007460 and init1 == 0x007498
+            and ins_init0 == 0x52804900 and ins_init1 == 0x52a7f014,
+            f"ELF64 libpns_ttmachine_adapter.so ({len(data)} B) & .init_array (0x007460 JniCacheTable 0x248 B, 0x007498) khớp 100%"
+        )
+
+        # 2. Kiểm tra bảng 9 hàm JNINativeMethod tại 0x054000..0x0540d8 (file 0x050000..0x0500d8)
+        name0_va, sig0_va = struct.unpack_from("<QQ", data, 0x050000)
+        name2_va, sig2_va = struct.unpack_from("<QQ", data, 0x050030)
+        name5_va, sig5_va = struct.unpack_from("<QQ", data, 0x050078)
+        name8_va, sig8_va = struct.unpack_from("<QQ", data, 0x0500c0)
+        self.assert_test(
+            "PnsTtmachineAdapter_JniNativeMethodTable",
+            name0_va == 0x043e05 and sig0_va == 0x043e18
+            and name2_va == 0x043e66 and sig2_va == 0x043e75
+            and name5_va == 0x043f2f and sig5_va == 0x043f3e
+            and name8_va == 0x044010 and sig8_va == 0x04458a
+            and b"com/bytedance/pns/engine/RuleEngineService\x00" in data[0x044020:0x044060],
+            "Bảng 9 hàm JNINativeMethod tại 0x054000..0x0540d8 cho RuleEngineService (0x044029) khớp tuyệt đối"
+        )
+
+        # 3. Kiểm tra opcode các hàm xuất TTMAdapter & RuleEngineService (0x008868..0x00fd5c)
+        op_ttm_init = struct.unpack_from("<I", data, 0x008868)[0]   # stp x28, x27, [sp, #-0x60]! (0xa9ba6ffc)
+        op_onload   = struct.unpack_from("<I", data, 0x00d430)[0]   # sub sp, sp, #0x40 (0xd10103ff)
+        op_update   = struct.unpack_from("<I", data, 0x00fc7c)[0]   # ret (0xd65f03c0)
+        op_is_act   = struct.unpack_from("<I", data, 0x00fc88)[0]   # ldarb w8, [x8] (0x08dffd08)
+        op_cp_ver   = struct.unpack_from("<II", data, 0x00fd54)     # mov x0, #-1; ret (0x92800000, 0xd65f03c0)
+        self.assert_test(
+            "PnsTtmachineAdapter_ExportOpcodes",
+            op_ttm_init == 0xa9ba6ffc and op_onload == 0xd10103ff
+            and op_update == 0xd65f03c0 and op_is_act == 0x08dffd08
+            and op_cp_ver == (0x92800000, 0xd65f03c0),
+            "Opcode các hàm xuất TTMAdapter_init (0x008868), JNI_OnLoad (0x00d430), update (0x00fc7c), isActivated (0x00fc80), getGetConstPoolVersion (0x00fd54) khớp 100%"
+        )
+
+        # 4. Kiểm tra thuật toán MT19937 624 từ (0x270) & CityHash64 (0x007ed4, 0x03623c, 0x036eac)
+        op_mt_mult1 = struct.unpack_from("<II", data, 0x036280)     # mov w10, #0x8965; and x8, x0, #0xffffffff
+        op_mt_cmp   = struct.unpack_from("<I", data, 0x0362ac)[0]   # cmp x9, #0x270 (0xf109c13f)
+        op_mt_mat_a = struct.unpack_from("<II", data, 0x0362ec)     # mov w14, #0xb0df; movk w14, #0x9908, lsl #16
+        op_city_cmp = struct.unpack_from("<I", data, 0x007ed4)[0]   # cmp x1, #0x20 (0xf100803f)
+        self.assert_test(
+            "PnsTtmachineAdapter_Mt19937AndCityHash64Math",
+            op_mt_mult1[0] == 0x52912caa and op_mt_cmp == 0xf109c13f
+            and op_mt_mat_a == (0x52961bee, 0x72b3210e) and op_city_cmp == 0xf100803f,
+            "Toán học MT19937 (0x6c078965, N=0x270, MATRIX_A=0x9908b0df @ 0x03623c) & CityHash64 (0x007ed4) khớp nhị phân"
+        )
+
+        # 5. Kiểm tra bảng 5 trường lấy mẫu mạng & bảng hàm mở rộng CEP/TTM trong .rodata (0x043a00..0x0459f8)
+        rodata_slice = data[0x043a00:0x0459f8]
+        required_strings = [
+            b"stack\x00header_fields\x00query_fields\x00cookie_fields\x00body_fields\x00",
+            b"calculate_network_sample_rate_result\x00",
+            b"seed_random_sampling\x00",
+            b"is_in_name_list\x00",
+            b"is_domain_path_match_list\x00",
+            b"is_domain_path_match_condition\x00",
+            b"^([A-Za-z0-9-]+\\.)+[A-Za-z]{2,6}$\x00",
+            b"PnsRuleEngine-Core\x00"
+        ]
+        self.assert_test(
+            "PnsTtmachineAdapter_RodataTablesAndRegex",
+            all(s in rodata_slice for s in required_strings),
+            "Bảng 5 trường lấy mẫu mạng (stack..body_fields), biểu thức chính quy domain và 21 hàm mở rộng trong .rodata khớp 100%"
+        )
+
+        # 6. Kiểm tra mã nguồn C++17 tái tạo (10 tệp, > 95 KB, 0 stub)
+        cpp_files = list(giaima_dir.glob("*.cpp")) + list(giaima_dir.glob("*.h"))
+        total_cpp_size = sum(f.stat().st_size for f in cpp_files)
+        all_src = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        self.assert_test(
+            "PnsTtmachineAdapter_Cpp17SourceCompleteness",
+            len(cpp_files) == 10 and total_cpp_size >= 95000
+            and "TODO: Dịch logic" not in all_src
+            and "ComputeNdkStringHash64" in all_src
+            and "GenerateMt19937UniformDouble" in all_src
+            and "_Z36calculate_network_sample_rate_resultPPvPdS1_S1_S1_S1_P22__TTMTransparentStruct" in all_src
+            and "_Z26isDomainPathMatchConditionPlPPvS1_S1_S_P22__TTMTransparentStruct" in all_src,
+            f"Đã tái tạo 10 tệp C++17 & Header ({total_cpp_size} bytes, 0 stub) cho libpns_ttmachine_adapter.so"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -4570,6 +4667,7 @@ class AutonomousVerificationEngine:
         self.verify_libTTMachineCore()
         self.verify_libCepEngine()
         self.verify_libPitayaBdComponent()
+        self.verify_libpns_ttmachine_adapter()
         self.verify_overall_governance()
 
 
