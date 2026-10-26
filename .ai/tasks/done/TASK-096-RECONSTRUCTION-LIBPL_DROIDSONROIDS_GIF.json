@@ -1,0 +1,18 @@
+{
+  "task_id": "TASK-096-RECONSTRUCTION-LIBPL_DROIDSONROIDS_GIF",
+  "legacy_task_id": "TASK_SO_039_libpl_droidsonroids_gif",
+  "title": "Deep Native Reconstruction & Adversarial Proof for libpl_droidsonroids_gif.so (android-gif-drawable Engine)",
+  "status": "DONE",
+  "assigned_to": "Agent 0 (Orchestrator) -> Agent 11 (Designer), Agent 3 (Frontend/Android), Agent 6 (Tester), Agent 13 (Adversary Auditor)",
+  "created_at": "2026-10-26T22:47:30+07:00",
+  "completed_at": "2026-10-26T23:01:30+07:00",
+  "target_library": "libpl_droidsonroids_gif.so",
+  "binary_size_bytes": 42464,
+  "reconstructed_bytes": 172115,
+  "verification": {
+    "adversary_verdict": "VERIFIED_AND_ACCEPTED",
+    "verified_count": "57/169 (33.73%)",
+    "test_suite_result": "377/377 PASS (100.0%)",
+    "watchdog_high_findings": 0
+  }
+}

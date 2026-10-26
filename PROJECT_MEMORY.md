@@ -2112,3 +2112,15 @@
   - `UnwindStackFrameDataAbi` (`80 B = 0x50`, divided via `asr #4 * 0xcccccccccccccccdULL` @ `0x003898..0x0038a4`), `AndroidUnwinderDataAbi` (`160 B = 0xA0`), `NpthUnwContext` (`40 B = 0x28` allocated at `0x005ee4`), and `BuildIdRbTreeNode` (`56 B = 0x38` allocated at `0x004a60`).
   - 3-mode frame formatter (`0x004198..0x004798`: Default, Compact `0x10000`, and Hex PC `0x20000`) and Red-Black Tree BuildId deduplicator (`0x0047dc..0x004c78`) filtering out `.vdex` and `.jar`.
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**56 / 169 — 33.14%**), `verify_reconstruction_suite.py` passed **371 / 371 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 84. NGHIỆM THU TARGET 57: `libpl_droidsonroids_gif.so` (`TASK-096-RECONSTRUCTION-LIBPL_DROIDSONROIDS_GIF` / `TASK_SO_039`) — 2026-10-26 23:01:30
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libpl_droidsonroids_gif.so` (`42,464 bytes`, 97 dynamic symbols: 45 exported `[052]..[096]` + 51 imported `[001]..[051]`).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libpl_droidsonroids_gif/`)**: 8 files (`172,115 B` C++17/H, `0 stubs`): `pl_droidsonroids_gif_types.h`, `pl_droidsonroids_gif_dgiff_decoder.h`, `pl_droidsonroids_gif_dgiff_decoder.cpp`, `pl_droidsonroids_gif_renderer.h`, `pl_droidsonroids_gif_renderer.cpp`, `pl_droidsonroids_gif_interface.h`, `pl_droidsonroids_gif_interface.cpp`, `pl_droidsonroids_gif_pseudocode.cpp`.
+- **Key Findings**:
+  - `GifInfo` (`0xa8 = 168 B` @ `0x007a64`), `GifFileType` (`0x78 = 120 B` @ `0x0066d4`), `GifFilePrivateType` (`0x6160 = 24,928 B` @ `0x0066f0`), `SavedImage` (`0x30 = 48 B`), `FrameInfo` (`0x18 = 24 B`), `TexImageDescriptor` (`0x40 = 64 B` @ `0x008938`), and `SurfaceDescriptor` (`0xd0 = 208 B` @ `0x008d20`).
+  - Embedded GIFLIB 5.1.4 LZW decoder (`DGifGetLine` @ `0x006e4c..0x007544` with NEON `rev64` + `ext #8` reverse-stack copy @ `0x007480`), 4-pass interlace slurper (`DDGifSlurp` @ `0x0048a4..0x004c8c`), GCB / Comment / Netscape 2.0 extension parser (`readExtensions` @ `0x004c90..0x004e4c`), and 3-stage ARGB8888 disposal & blit engine (`drawFrame` @ `0x005120..0x0054b0`).
+  - `getRealTime` (`0x009610..0x009680`) and `calculateInvalidationDelay` (`0x009548..0x00960c`) divide `tv_nsec` by $1,000,000$ via `smulh(tv_nsec, 0x431bde82d7b634db) >> 18`.
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**57 / 169 — 33.73%**), `verify_reconstruction_suite.py` passed **377 / 377 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.

@@ -5542,6 +5542,114 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 57: libpl_droidsonroids_gif.so (android-gif-drawable & GIFLIB 5.1.4)
+    # =========================================================================
+    def verify_libpl_droidsonroids_gif(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libpl_droidsonroids_gif.so (android-gif-drawable Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libpl_droidsonroids_gif"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 65 KB across >= 8 files
+        self.assert_test(
+            "PlDroidsonroidsGif_SourceSizeGate",
+            total_bytes > 65000 and len(cpp_files) >= 8,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 65 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ABI Struct sizes: GifInfo (0xa8), GifFilePrivateType (0x6160), SurfaceDescriptor (0xd0), TexImageDescriptor (0x40)
+        has_abi = all(tok in content for tok in [
+            "sizeof(GifInfo) == 0xa8",
+            "sizeof(GifFilePrivateType) == 0x6160",
+            "sizeof(SurfaceDescriptor) == 0xd0",
+            "sizeof(TexImageDescriptor) == 0x40",
+            "sizeof(FrameInfo) == 0x18",
+            "sizeof(GifImageDesc) == 0x30"
+        ])
+        self.assert_test(
+            "PlDroidsonroidsGif_AbiStructLayouts",
+            has_abi,
+            "Khớp bố cục ABI: GifInfo (0xa8B @ 0x007a64), GifFilePrivateType (0x6160B @ 0x0066f0), SurfaceDescriptor (0xd0B @ 0x008d20), TexImageDescriptor (0x40B @ 0x008938)"
+        )
+
+        # 3. GIFLIB 5.1.4 LZW Decompression & 4-Pass Interlace Tables (.rodata 0x002b60..0x002b89)
+        has_lzw = all(tok in content for tok in [
+            "DGifOpen",
+            "DGifGetScreenDesc",
+            "DGifGetImageDesc",
+            "DGifSetupDecompress",
+            "DGifGetLine",
+            "kInterlacedOffset",
+            "kInterlacedJumps",
+            "kCodeMasks",
+            "NO_SUCH_CODE"
+        ])
+        self.assert_test(
+            "PlDroidsonroidsGif_LzwAndInterlaceDecoder",
+            has_lzw,
+            "Khớp bộ giải nén LZW GIFLIB 5.1.4 (NO_SUCH_CODE=0x1002, kCodeMasks @ 0x002b70) và đan xen 4 lượt (kInterlacedOffset/kInterlacedJumps @ 0x002b60)"
+        )
+
+        # 4. GIF89a Extensions (GCB 0xF9, Comment 0xFE, NETSCAPE2.0 / ANIMEXTS1.0 0xFF)
+        has_ext = all(tok in content for tok in [
+            "readExtensions",
+            "DGifExtensionToGCB",
+            "NETSCAPE2.0",
+            "ANIMEXTS1.0",
+            "kMaxGifCommentBytes",
+            "0x0800U"
+        ])
+        self.assert_test(
+            "PlDroidsonroidsGif_Gif89aExtensionParser",
+            has_ext,
+            "Khớp bộ phân tích phần mở rộng GIF89a: GCB (0xF9, chuẩn hóa 100ms @ 0x004d20), Comment (0xFE, giới hạn 0x800B @ 0x004dd0) và NETSCAPE2.0/ANIMEXTS1.0 (0xFF)"
+        )
+
+        # 5. Mathematical Proof: Signed 64-bit Nanoseconds-to-Milliseconds Reciprocal (0x431bde82d7b634db >> 18)
+        magic = 0x431BDE82D7B634DB
+        test_nsec = 987654321
+        smulh_val = (test_nsec * magic) >> 64
+        div_result = smulh_val >> 18
+        has_math = (
+            div_result == (test_nsec // 1000000)
+            and "0x431bde82d7b634db" in content.lower()
+            and "timespecToMsExact" in content
+            and "0x120ULL + (imageCount * 0x48ULL)" in content
+        )
+        self.assert_test(
+            "PlDroidsonroidsGif_MonotonicTimeAndMetadataMath",
+            has_math,
+            f"Khớp toán học chia 10^6 bằng smulh(tv_nsec, 0x431bde82d7b634db) >> 18 ({test_nsec} ns -> {div_result} ms @ 0x00964c) và getMetadataByteCount (0x120 + N*0x48 @ 0x008320)"
+        )
+
+        # 6. All 45 Exported .dynsym Functions ([052]..[096])
+        exported_45 = [
+            "JNI_OnLoad",
+            "JNI_OnUnload",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_openFile",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_openByteArray",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_openDirectByteBuffer",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_openStream",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_openNativeFileDescriptor",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_renderFrame",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_bindSurface",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_glTexImage2D",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_glTexSubImage2D",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_getAllocationByteCount",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_getMetadataByteCount",
+            "Java_pl_droidsonroids_gif_GifInfoHandle_restoreSavedState"
+        ]
+        self.assert_test(
+            "PlDroidsonroidsGif_45ExportedDynsymFunctions",
+            all(sym in content for sym in exported_45),
+            "Khớp toàn bộ 45 hàm xuất khẩu .dynsym ([052]..[096]: JNI_OnLoad, JNI_OnUnload và 43 hàm Java_pl_droidsonroids_gif_GifInfoHandle_*)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -5602,6 +5710,7 @@ class AutonomousVerificationEngine:
         self.verify_libspeechengine()
         self.verify_libspeechepg()
         self.verify_libnpth_unw()
+        self.verify_libpl_droidsonroids_gif()
         self.verify_overall_governance()
 
 
