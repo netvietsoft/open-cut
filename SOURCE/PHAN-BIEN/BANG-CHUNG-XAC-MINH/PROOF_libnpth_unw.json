@@ -1,0 +1,26 @@
+{
+  "lib_name": "libnpth_unw",
+  "task_id": "TASK-095-RECONSTRUCTION-LIBNPTH_UNW",
+  "legacy_task_id": "TASK_SO_083",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libnpth_unw.so",
+  "binary_size_bytes": 29336,
+  "dynamic_symbols": {
+    "total": 97,
+    "exported": 23,
+    "imported": 73
+  },
+  "gate1_size_passed": true,
+  "gate2_opcode_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "key_proofs": [
+    "ELF64 Geometry & .data.rel.ro / .bss Layout (29,336 bytes, 97 .dynsym entries: 73 imported [001]..[073] + 23 exported [074]..[096]): .rodata at 0x002588..0x0027af (552 B, log tag 'npth_unw'), .text at 0x0031b0..0x0060bf (12,048 B), .data.rel.ro at 0x00a5c0..0x00a5ff (__shared_ptr_emplace<std::string> vtable at 0x00a5d8: 0x005de0, 0x005df0, 0x005e14, sym[055], 0x005e28), .init_array at 0x00a610 (0x003230 __init_lse_atomics, 0x003700 __init_cpu_features), .bss at 0x00eaa0..0x00eae7 (72 B)",
+    "Exynos 9810 LSE Atomics Erratum Workaround & CPU Feature Resolver (0x003230..0x0032c4 & 0x0032c8..0x003794): queries getauxval(AT_HWCAP=0x10) bit 8 (HWCAP_ATOMICS=0x100) @ 0x003248, reads __system_property_get('ro.arch', buf) @ 0x003270, and disables LSE atomics when strncmp(buf, 'exynos9810', 10) == 0 (`csel w8, wzr, w19, eq` @ 0x00329c)",
+    "Exact Magic-Multiplier Division by 80 (sizeof(FrameData) = 0x50) & 24 (sizeof(std::string) = 0x18): at 0x003894..0x0038a4 & 0x004104..0x00410c, `sub x8, x9, x8; asr x8, x8, #4; mov x9, #-0x3333333333333333 (0xcccccccccccccccdULL); mul x20, x8, x9` divides byte difference by 80 (`16 * 5`, where `0xcccccccccccccccd * 5 == 1 mod 2^64`); at 0x00395c..0x003968, `asr x10, x9, #3; mov x9, #-0x5555555555555555 (0xaaaaaaaaaaaaaaabULL); mul x10, x10, x9` divides by 24 (`8 * 3`)",
+    "3-Mode Frame Formatter & 56-Byte Red-Black Tree BuildId Deduplicator (0x004198..0x004798 & 0x0047dc..0x004c78): decodes `option & 0xF0000` into Default (`AndroidUnwinder::FormatFrame`), Compact `0x10000` (`'    #%02zu %s%s%s\\n'`), and Hex PC `0x20000` (`'0x%016lx %s%s%s%s\\n'`), and deduplicates ELF BuildIds in a 56-byte (`0x38`) Red-Black Tree filtering out `.vdex` and `.jar` suffixes",
+    "Offline Unwind Context ABI (40 bytes = 0x28 allocated via operator new(0x28) @ 0x005ee4 in npth_unw_context_create 0x005e34): stores `int32_t tid` at `+0x00`, `unwindstack::Registers` (`16 B`) at `+0x08`, and `std::shared_ptr<unwindstack::Memory>` (`16 B`) at `+0x18..+0x27`"
+  ]
+}

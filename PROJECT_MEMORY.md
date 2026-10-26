@@ -2100,3 +2100,15 @@
   - `createEngineToNative` (`0x0024e0`) calls `DefaultOptions(Options*)` (`0x002550`) and `Options::IsValid()` (`0x002558`) during creation, while `initEngineToNative` (`0x002cb4`) registers `JNI_SetAssetManager(jvm, assetMgr)` (`0x002cfc`), `Engine::Init(Options*)` (`0x002d08`), and `Engine::AddListener(Listener*)` (`0x002d4c`).
   - `feedAudioToNative` (`0x002ed0`) & `processAudioToNative` (`0x002fbc`) perform signed division by 2 (`cmp w22, #0; cinc w8, w22, lt; asr w2, w8, #1`), `fetchResultToNative` (`0x003070`) returns `-1801` (`mov w21, #-0x709` @ `0x003130`) on insufficient buffer capacity, and `OnMessage` (`0x002248`) auto-detaches callback thread when `type == 0x3ea` (`1002` at `0x00230c`).
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**55 / 169 — 32.54%**), `verify_reconstruction_suite.py` passed **365 / 365 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 83. NGHIỆM THU TARGET 56: `libnpth_unw.so` (`TASK-095-RECONSTRUCTION-LIBNPTH_UNW` / `TASK_SO_083`) — 2026-10-26 22:43:00
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libnpth_unw.so` (`29,336 bytes`, 97 dynamic symbols: 23 exported `[074]..[096]` + 73 imported `[001]..[073]`).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libnpth_unw/`)**: 8 files (`137,991 B` C++17/H, `159,152 B` total directory size, `0 stubs`): `npth_unw_types.h`, `npth_unw_elf_tree.h`, `npth_unw_elf_tree.cpp`, `npth_unw_engine.h`, `npth_unw_engine.cpp`, `npth_unw_interface.h`, `npth_unw_interface.cpp`, `npth_unw_pseudocode.cpp`.
+- **Key Findings**:
+  - `.init_array` (`0x00a610`): `0x003230` (`__init_lse_atomics` checking `AT_HWCAP=0x10` bit 8 and disabling LSE atomics when `ro.arch == "exynos9810"`) and `0x003700` (`__init_cpu_features` calling `0x0032c8` to populate `.bss 0x00eaa8`).
+  - `UnwindStackFrameDataAbi` (`80 B = 0x50`, divided via `asr #4 * 0xcccccccccccccccdULL` @ `0x003898..0x0038a4`), `AndroidUnwinderDataAbi` (`160 B = 0xA0`), `NpthUnwContext` (`40 B = 0x28` allocated at `0x005ee4`), and `BuildIdRbTreeNode` (`56 B = 0x38` allocated at `0x004a60`).
+  - 3-mode frame formatter (`0x004198..0x004798`: Default, Compact `0x10000`, and Hex PC `0x20000`) and Red-Black Tree BuildId deduplicator (`0x0047dc..0x004c78`) filtering out `.vdex` and `.jar`.
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**56 / 169 — 33.14%**), `verify_reconstruction_suite.py` passed **371 / 371 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.

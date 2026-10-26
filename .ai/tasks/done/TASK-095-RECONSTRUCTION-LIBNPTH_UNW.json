@@ -1,0 +1,23 @@
+{
+  "task_id": "TASK-095-RECONSTRUCTION-LIBNPTH_UNW",
+  "legacy_task_id": "TASK_SO_083",
+  "title": "Clean-Room C++17 Reconstruction of libnpth_unw.so (ByteDance NPTH Native Stack Unwinder & ELF BuildId Formatter)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 / Agent 7 - RECONSTRUCTION",
+  "verified_by": "Agent 13 - ADVERSARY AUDITOR",
+  "completed_at": "2026-10-26T22:43:00+07:00",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libnpth_unw/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_unw.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_083_libnpth_unw.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "verification_metrics": {
+    "cpp_total_bytes": 137991,
+    "reconstructed_files_count": 8,
+    "verified_libraries_count": 56,
+    "test_suite_passed": 371,
+    "test_suite_failed": 0,
+    "watchdog_high_findings": 0
+  }
+}

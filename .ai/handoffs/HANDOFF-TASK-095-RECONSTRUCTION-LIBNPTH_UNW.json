@@ -1,0 +1,24 @@
+{
+  "handoff_id": "HANDOFF-TASK-095-RECONSTRUCTION-LIBNPTH_UNW",
+  "task_id": "TASK-095-RECONSTRUCTION-LIBNPTH_UNW",
+  "legacy_task_id": "TASK_SO_083",
+  "from_agent": "Agent 3 / Agent 7 - RECONSTRUCTION",
+  "to_agent": "Agent 0 - ORCHESTRATOR & Agent 13 - ADVERSARY AUDITOR",
+  "created_at": "2026-10-26T22:43:00+07:00",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "summary": "Completed 100% C++17 reconstruction of libnpth_unw.so (137,991 B across 8 C++17/H files, 0 stubs), verified by Agent 13 (56/169 — 33.14%) and 371/371 closed-loop tests.",
+  "artifacts": [
+    "SOURCE/GIAI-MA/libnpth_unw/npth_unw_types.h",
+    "SOURCE/GIAI-MA/libnpth_unw/npth_unw_elf_tree.h",
+    "SOURCE/GIAI-MA/libnpth_unw/npth_unw_elf_tree.cpp",
+    "SOURCE/GIAI-MA/libnpth_unw/npth_unw_engine.h",
+    "SOURCE/GIAI-MA/libnpth_unw/npth_unw_engine.cpp",
+    "SOURCE/GIAI-MA/libnpth_unw/npth_unw_interface.h",
+    "SOURCE/GIAI-MA/libnpth_unw/npth_unw_interface.cpp",
+    "SOURCE/GIAI-MA/libnpth_unw/npth_unw_pseudocode.cpp",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_unw.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_unw.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_083_libnpth_unw.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_083_libnpth_unw.md"
+  ]
+}

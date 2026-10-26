@@ -5420,6 +5420,127 @@ class AutonomousVerificationEngine:
             "Khớp toàn bộ 18 điểm nhập JNI xuất xưởng (.dynsym [037]..[054]): JNI_OnLoad (0x001f00), 15 hàm SpeechPluginBridge_*ToNative và 2 hàm SpeechLogTracker_*ToNative (0x0023dc, 0x0023e4)"
         )
 
+    def verify_libnpth_unw(self):
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 56: libnpth_unw.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libnpth_unw"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        self.assert_test(
+            "NpthUnw_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 8,
+            f"Tổng dung lượng C++ đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Kiểm tra hình học nhị phân ELF64 (29,336 bytes) & Exynos 9810 LSE Atomics Erratum Workaround (0x003230..0x0032c4)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_unw.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        lse_insns = struct.unpack("<4I", so_bytes[0x00323c:0x00324c])
+        exynos_str = so_bytes[0x00274c:0x002756]
+        ro_arch_str = so_bytes[0x0025d1:0x0025d8]
+        engine_cpp = (lib_dir / "npth_unw_engine.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "NpthUnw_ElfGeometryAndExynos9810LseWorkaround",
+            so_path.stat().st_size == 29336
+            and lse_insns[0] == 0x52800200
+            and lse_insns[3] == 0x374000f3
+            and exynos_str == b"exynos9810"
+            and ro_arch_str == b"ro.arch"
+            and "InitLseAtomics" in engine_cpp
+            and "kArchExynos9810" in engine_cpp,
+            "Khớp nhị phân libnpth_unw.so (29,336 bytes), getauxval(AT_HWCAP=0x10) bit 8 (0x00323c..0x003248) và tắt LSE Atomics khi 'ro.arch' == 'exynos9810' (0x003268..0x00329c)"
+        )
+
+        # 3. Kiểm tra phép chia toán học cho 80 (sizeof(FrameData)=0x50 @ 0x003894..0x0038a4) & 24 (sizeof(std::string)=0x18 @ 0x003958..0x003968)
+        div80_insns = struct.unpack("<5I", so_bytes[0x003894:0x0038a8])
+        div24_insns = struct.unpack("<5I", so_bytes[0x003958:0x00396c])
+        tree_h = (lib_dir / "npth_unw_elf_tree.h").read_text(encoding="utf-8", errors="ignore")
+        inv5_mod64 = 0xcccccccccccccccd
+        inv3_mod64 = 0xaaaaaaaaaaaaaaab
+        sim_div80 = (((80 * 17) >> 4) * inv5_mod64) & 0xffffffffffffffff
+        sim_div24 = (((24 * 9) >> 3) * inv3_mod64) & 0xffffffffffffffff
+        self.assert_test(
+            "NpthUnw_MagicMultiplierDiv80AndDiv24",
+            div80_insns[0] == 0xcb080128
+            and div80_insns[2] == 0x9344fd08
+            and div80_insns[4] == 0x9b097d14
+            and div24_insns[1] == 0x9343fd2a
+            and div24_insns[4] == 0x9b097d4a
+            and sim_div80 == 17
+            and sim_div24 == 9
+            and "0xCCCCCCCCCCCCCCCDULL" in tree_h
+            and "0xAAAAAAAAAAAAAAABULL" in tree_h,
+            "Khớp tuyệt đối phép chia 80 (asr #4 * 0xcccccccccccccccd @ 0x003898..0x0038a4) và chia 24 (asr #3 * 0xaaaaaaaaaaaaaaab @ 0x00395c..0x003968)"
+        )
+
+        # 4. Kiểm tra Cây Đỏ-Đen 56-byte (0x38 @ 0x004a60) & Bộ định dạng khung 3 chế độ (0x004198..0x004798)
+        fmt_insns = struct.unpack("<5I", so_bytes[0x0041c0:0x0041d4])
+        rb_alloc_insn = struct.unpack("<I", so_bytes[0x004a60:0x004a64])[0]
+        tree_cpp = (lib_dir / "npth_unw_elf_tree.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "NpthUnw_RbTree56ByteAndThreeModeFormatter",
+            fmt_insns[0] == 0x12100c68
+            and fmt_insns[1] == 0x7140811f
+            and fmt_insns[3] == 0x7140411f
+            and rb_alloc_insn == 0x52800700
+            and "InsertAndFormatBuildIdSummary" in tree_cpp
+            and "RebalanceAfterInsert" in tree_cpp
+            and "FormatSingleFrame" in tree_cpp,
+            "Khớp bộ định dạng 3 chế độ (Default / 0x10000 Compact / 0x20000 Hex PC @ 0x0041c0..0x0041d0) và Cây Đỏ-Đen 56-byte (mov w0, #0x38 @ 0x004a60) lọc .vdex/.jar"
+        )
+
+        # 5. Kiểm tra NpthUnwContext (40 bytes = 0x28 @ 0x005ee4) & PtraceAttachAndWait (PTRACE_ATTACH=0x10, __WALL=0x40000000 @ 0x0050e0)
+        ctx_alloc_insn = struct.unpack("<I", so_bytes[0x005ee4:0x005ee8])[0]
+        ptrace_Attach_insn = struct.unpack("<I", so_bytes[0x0050ec:0x0050f0])[0]
+        wait_wall_insn = struct.unpack("<I", so_bytes[0x005114:0x005118])[0]
+        types_h = (lib_dir / "npth_unw_types.h").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "NpthUnw_Context40ByteAbiAndPtraceWait",
+            ctx_alloc_insn == 0x52800500
+            and ptrace_Attach_insn == 0x52800200
+            and wait_wall_insn == 0x52a80002
+            and "sizeof(NpthUnwContext) == 0x28" in types_h
+            and "sizeof(UnwindStackFrameDataAbi) == 0x50" in types_h
+            and "sizeof(AndroidUnwinderDataAbi) == 0xA0" in types_h,
+            "Khớp NpthUnwContext (40B = 0x28 @ 0x005ee4), FrameData (80B = 0x50), AndroidUnwinderData (160B = 0xA0) và PtraceAttachAndWait (0x0050e0)"
+        )
+
+        # 6. Kiểm tra toàn bộ 23 hàm C API xuất khẩu (.dynsym [074]..[096])
+        iface_cpp = (lib_dir / "npth_unw_interface.cpp").read_text(encoding="utf-8", errors="ignore")
+        exported_23 = [
+            "npth_unw_any_thread_option",
+            "npth_unw_fast",
+            "npth_unw_frames",
+            "npth_unw_format_option",
+            "npth_unw_format",
+            "npth_unw_current_option",
+            "npth_unw_fast_option",
+            "npth_unw_frames_option",
+            "npth_unw_ucontext_frames_option",
+            "npth_unw_context_regs",
+            "npth_unw_current",
+            "npth_unw_thread",
+            "npth_unw_any_thread",
+            "npth_unw_process_option",
+            "npth_unw_ucontext_option",
+            "npth_unw_context_frames_option",
+            "npth_unw_all_option",
+            "npth_unw_process",
+            "npth_unw_thread_option",
+            "npth_unw_all",
+            "npth_unw_context_create",
+            "npth_unw_context_destroy",
+            "npth_unw_context_option"
+        ]
+        self.assert_test(
+            "NpthUnw_23ExportedCFunctions",
+            all(sym in iface_cpp for sym in exported_23),
+            "Khớp toàn bộ 23 hàm C API xuất khẩu (.dynsym [074]..[096] tại 0x003e20..0x0060bc)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -5480,6 +5601,7 @@ class AutonomousVerificationEngine:
         self.verify_libbytemonitor()
         self.verify_libspeechengine()
         self.verify_libspeechepg()
+        self.verify_libnpth_unw()
         self.verify_overall_governance()
 
 
