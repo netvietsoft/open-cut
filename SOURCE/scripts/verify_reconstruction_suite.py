@@ -7012,6 +7012,135 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 70. KIỂM CHỨNG LIBLYNX_V8_BRIDGE.SO (Lynx V8 Runtime, CPU Profiler & NAPI)
+    # =========================================================================
+    def verify_liblynx_v8_bridge(self):
+        import struct
+        print("\n[70] Đang kiểm chứng liblynx_v8_bridge.so (Lynx V8 Runtime, V8CpuProfiler, V8BytecodeCache & NAPI Bridge)...")
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liblynx_v8_bridge.so"
+        v8_dir = GIAIMA_DIR / "liblynx_v8_bridge"
+        files = [
+            v8_dir / "lynx_v8_bridge_types.h",
+            v8_dir / "lynx_v8_profiler_cache.h",
+            v8_dir / "lynx_v8_profiler_cache.cpp",
+            v8_dir / "lynx_v8_runtime.h",
+            v8_dir / "lynx_v8_runtime.cpp",
+            v8_dir / "lynx_v8_napi_observer_jni.h",
+            v8_dir / "lynx_v8_napi_observer_jni.cpp",
+            v8_dir / "lynx_v8_bridge_interface.h",
+            v8_dir / "lynx_v8_bridge_pseudocode.cpp",
+        ]
+        so_bytes = so_path.read_bytes()
+        all_src = "\n".join(p.read_text(encoding="utf-8", errors="ignore") for p in files)
+        total_src_size = sum(p.stat().st_size for p in files)
+
+        # 1. Binary size (117,008 bytes), .rodata jump table @ 0x006300 & URLs @ 0x006820/0x00682a, source size (> 130 KB)
+        jtable_7 = so_bytes[0x006300:0x006307]
+        url_core = so_bytes[0x006820:0x00682a]
+        url_host = so_bytes[0x00682a:0x006836]
+        self.assert_test(
+            "LynxV8Bridge_BinaryAndRodataEnvelope",
+            len(so_bytes) == 117008 and
+            jtable_7 == b"\x00\x04\x08\x11\x17\x20\x26" and
+            url_core == b"lynx_core\x00" and
+            url_host == b"file://lynx\x00" and
+            total_src_size > 130000,
+            f"Binary={len(so_bytes)}B (.rodata jump_table={jtable_7.hex()}, url_core={url_core!r}), C++17={total_src_size}B (>130KB)"
+        )
+
+        # 2. V8CpuProfiler 120-byte (0x78) node stride sdiv @ 0x00cc20..0x00cc48 & V8BytecodeCache ("V8", 0x5c=92B)
+        sdiv_120_a = so_bytes[0x00cc20:0x00cc34]
+        sdiv_120_b = so_bytes[0x00cc40:0x00cc4c]
+        self.assert_test(
+            "LynxV8Bridge_CpuProfiler120ByteNodeAndBytecodeCache",
+            sdiv_120_a == b"\x0b\x0f\x80\x52\xf5\xe3\x03\xb2\x55\x44\xe0\xf2\x88\x02\x0a\xcb\x14\x0d\xcb\x9a" and
+            sdiv_120_b == b"\x29\x01\x0a\xcb\x0a\x0f\x80\x52\x29\x0d\xca\x9a" and
+            all(tok in all_src for tok in [
+                "V8CpuProfilerBridge",
+                "SerializeProfileNodeRecursive",
+                "sizeof(V8CpuProfileNodeRecord) == 120",
+                "V8BytecodeCacheGenerator",
+                "GenerateCache"
+            ]),
+            "Khớp V8CpuProfiler (mov w11, #0x78; sdiv x20, x8, x11 @ 0x00cc20..0x00cc48) và V8BytecodeCache"
+        )
+
+        # 3. MurmurHash64A Pointer Hash (kMul = 0x9ddfea08eb382d69ULL @ 0x00e9b8..0x00e9f0)
+        murmur_ldp_movs = struct.unpack("<4I", so_bytes[0x00e9b8:0x00e9c8])
+        murmur_movk48 = struct.unpack("<I", so_bytes[0x00e9d4:0x00e9d8])[0]
+        def sim_murmur_ptr(ptr_val: int) -> int:
+            mask = 0xFFFFFFFFFFFFFFFF
+            kmul = 0x9DDFEA08EB382D69
+            lo = (((ptr_val & 0xFFFFFFFF) << 3) + 8) & mask
+            hi = (ptr_val >> 32) & mask
+            h1 = ((lo ^ hi) * kmul) & mask
+            h2 = (((hi ^ (h1 >> 47)) ^ h1) * kmul) & mask
+            return ((h2 ^ (h2 >> 47)) * kmul) & mask
+        test_hash = sim_murmur_ptr(0x7400007B89ABCDEF)
+        self.assert_test(
+            "LynxV8Bridge_MurmurHash64APointerHasher",
+            murmur_ldp_movs == (0x29402408, 0xD285AD2A, 0xF2BD670A, 0xF2DD410A) and
+            murmur_movk48 == 0xF2F3BBEA and
+            test_hash == 0xA9930FF24B722708 and
+            all(tok in all_src for tok in [
+                "0x9ddfea08eb382d69ULL",
+                "HashPointerWords",
+                "HashPointer"
+            ]),
+            f"Khớp toán học MurmurHash64A (kMul=0x9ddfea08eb382d69 @ 0x00e9b8..0x00e9f0, hash=0x{test_hash:016x})"
+        )
+
+        # 4. NEON Popcount & NextPowerOfTwo Prime Table Policy (@ 0x013f08 & 0x01400c)
+        neon_pop = so_bytes[0x013f08:0x013f10]
+        next_pow2 = so_bytes[0x01400c:0x014020]
+        self.assert_test(
+            "LynxV8Bridge_NeonPopcountAndNextPowerOfTwo",
+            neon_pop == b"\x00\x58\x20\x0e\x00\x38\x30\x2e" and
+            next_pow2 == b"\x08\x04\x00\xd1\x08\x11\xc0\xda\xe8\x03\x08\x4b\x29\x00\x80\x52\x20\x21\xc8\x9a" and
+            all(tok in all_src for tok in [
+                "NeonPopcount64",
+                "NextPowerOfTwo",
+                "ComputeBucketIndex"
+            ]),
+            "Khớp NEON cnt v0.8b, v0.8b; uaddlv h0, v0.8b (@ 0x013f08) và NextPowerOfTwo clz+neg+lsl (@ 0x01400c)"
+        )
+
+        # 5. V8Runtime (352B = 0x160 @ 0x013624), V8HostCallErrorFrame (104B = 0x68 @ 0x00ed88) & V8JavaScriptPreparation (80B = 0x50 @ 0x013230)
+        rt_alloc = struct.unpack("<I", so_bytes[0x013624:0x013628])[0]
+        err_frame_mov = struct.unpack("<I", so_bytes[0x00ed88:0x00ed8c])[0]
+        prep_alloc = struct.unpack("<I", so_bytes[0x013230:0x013234])[0]
+        self.assert_test(
+            "LynxV8Bridge_RuntimeNapiAndInspectorAllocSizes",
+            rt_alloc == 0x52802C00 and err_frame_mov == 0x52800D1A and prep_alloc == 0x52800A00 and
+            all(tok in all_src for tok in [
+                "sizeof(V8HostCallErrorFrame) == 104",
+                "V8JavaScriptPreparation",
+                "NapiRuntimeProxyV8",
+                "NapiRuntimeProxyV8FactoryImpl",
+                "LynxRuntimeHelperV8"
+            ]),
+            "Khớp cấp phát V8Runtime (0x160=352B @ 0x013624), V8HostCallErrorFrame (0x68=104B @ 0x00ed88) và V8JavaScriptPreparation (0x50=80B @ 0x013230)"
+        )
+
+        # 6. ObserverList (@ 0x0133a0..0x013570) & JNI_OnLoad (@ 0x013590..0x01361c -> 0x00010006)
+        jni_ret = struct.unpack("<2I", so_bytes[0x013608:0x013610])
+        self.assert_test(
+            "LynxV8Bridge_ObserverListAndJniOnLoad",
+            jni_ret == (0x528000C0, 0x72A00020) and
+            b"RegisterExternalRuntimeHelper" in so_bytes and
+            b"RegisterV8RuntimeProxyFactory" in so_bytes and
+            all(tok in all_src for tok in [
+                "ObserverList",
+                "AddObserver",
+                "RemoveObserver",
+                "ForEachObserver",
+                "ExecuteJniOnLoad",
+                "MakeRuntime"
+            ]),
+            "Khớp ObserverList (0x0133a0..0x013570), JNI_OnLoad (0x00010006 @ 0x013608), RegisterExternalRuntimeHelper & RegisterV8RuntimeProxyFactory"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -7085,6 +7214,7 @@ class AutonomousVerificationEngine:
         self.verify_libanimax_napi()
         self.verify_libtailor()
         self.verify_libnpth_dumper()
+        self.verify_liblynx_v8_bridge()
         self.verify_overall_governance()
 
 

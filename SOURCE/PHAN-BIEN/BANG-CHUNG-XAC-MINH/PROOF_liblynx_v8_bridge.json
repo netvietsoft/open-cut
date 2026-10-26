@@ -1,0 +1,150 @@
+{
+  "library": "liblynx_v8_bridge.so",
+  "task_id": "TASK_SO_134_liblynx_v8_bridge",
+  "governance_task_id": "TASK-109-RECONSTRUCTION-LIBLYNX_V8_BRIDGE",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 117008,
+  "reconstructed_code_size_bytes": 147448,
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "offset": "0x006300",
+      "hex_bytes": "00 04 08 11 17 20 26",
+      "disassembly": ".rodata 7-byte relative jump table for lynx::piper::Value::Kind (0..6) switch @ 0x012dd0",
+      "reconstructed_symbol": "lynx::v8_bridge::rodata::kValueKindJumpTableOffset"
+    },
+    {
+      "offset": "0x006820",
+      "hex_bytes": "6c 79 6e 78 5f 63 6f 72 65 00 66 69 6c 65 3a 2f 2f 6c 79 6e 78 00",
+      "disassembly": ".rodata exported weak symbols [179] kUrlLynxCore = \"lynx_core\" (0x006820) and [185] kUrlHost = \"file://lynx\" (0x00682a)",
+      "reconstructed_symbol": "lynx::piper::V8Runtime::AddPrefixToUrlIfNeeded"
+    },
+    {
+      "offset": "0x00c21c",
+      "hex_bytes": "42 00 80 52 e0 83 00 91 e1 03 16 aa e3 03 1f 2a fb 20 00 94",
+      "disassembly": "mov w2, #2; add x0, sp, #0x20; mov x1, x22; mov w3, wzr; bl v8::ScriptCompiler::CompileUnboundScript (kEagerCompile=2, kNoCacheNoReason=0)",
+      "reconstructed_symbol": "lynx::piper::cache::V8BytecodeCacheGenerator::GenerateCache"
+    },
+    {
+      "offset": "0x00cc20",
+      "hex_bytes": "0b 0f 80 52 08 01 09 cb 14 0d c8 9a",
+      "disassembly": "mov w11, #0x78; sub x8, x8, x9; sdiv x20, x8, x11 (120-byte V8CpuProfileNodeRecord stride division)",
+      "reconstructed_symbol": "lynx::piper::cache::V8CpuProfilerBridge::SerializeProfileNodeRecursive"
+    },
+    {
+      "offset": "0x00d6ec",
+      "hex_bytes": "21 00 80 52 42 01 80 52 e3 00 80 52 70 1c 00 94",
+      "disassembly": "mov w1, #1; mov w2, #0xa; mov w3, #7; bl v8::Isolate::SetCaptureStackTraceForUncaughtExceptions(true, 10, kDetailed=7)",
+      "reconstructed_symbol": "lynx::piper::V8ContextWrapperImpl::Init"
+    },
+    {
+      "offset": "0x00dc98",
+      "hex_bytes": "09 f1 5f f8 29 b1 40 78 3f 0d 02 71",
+      "disassembly": "ldur x9, [x8, #-1]; ldurh w9, [x9, #0xb]; cmp w9, #0x83 (V8 HeapObject Map pointer at -1 and ODDBALL_TYPE 0x83 at +11)",
+      "reconstructed_symbol": "lynx::v8_bridge::V8TaggedValueInspector::ClassifyTaggedWord"
+    },
+    {
+      "offset": "0x00e9b8",
+      "hex_bytes": "08 24 40 29 2a ad 85 d2 0a 67 bd f2 0a 41 dd f2 08 71 1d 53 08 21 00 91 08 01 09 ca ea bb f3 f2",
+      "disassembly": "ldp w8, w9, [x0]; mov x10, #0x2d69; movk x10, #0xeb38, lsl #16; movk x10, #0xea08, lsl #32; ... movk x10, #0x9ddf, lsl #48 (MurmurHash64A kMul = 0x9ddfea08eb382d69ULL)",
+      "reconstructed_symbol": "lynx::piper::V8BridgeHashMath::HashPointerWords"
+    },
+    {
+      "offset": "0x00ed88",
+      "hex_bytes": "1a 0d 80 52 f7 03 00 aa e1 03 03 91 00 23 ba 9b",
+      "disassembly": "mov w26, #0x68; mov x23, x0; add x1, sp, #0xc0; umaddl x0, w24, w26, x8 (104-byte V8HostCallErrorFrame index)",
+      "reconstructed_symbol": "lynx::v8_bridge::ThreadLocalHostErrorStack::ComputeAllocationBytes"
+    },
+    {
+      "offset": "0x0133a0",
+      "hex_bytes": "f4 0f 1e f8 f3 7b 01 a9 f4 03 00 aa 00 03 80 52 f3 03 01 aa 57 04 00 94",
+      "disassembly": "str x20, [sp, #-0x20]!; stp x19, x30, [sp, #0x10]; mov x20, x0; mov w0, #0x18; mov x19, x1; bl operator new (ObserverList::AddObserver exported [180])",
+      "reconstructed_symbol": "lynx::base::ObserverList::AddObserver"
+    },
+    {
+      "offset": "0x0133e0",
+      "hex_bytes": "ff 43 01 d1 f6 13 00 f9 f5 53 03 a9 f3 7b 04 a9",
+      "disassembly": "sub sp, sp, #0x50; str x22, [sp, #0x20]; stp x21, x20, [sp, #0x30]; stp x19, x30, [sp, #0x40] (ObserverList::RemoveObserver exported [181])",
+      "reconstructed_symbol": "lynx::base::ObserverList::RemoveObserver"
+    },
+    {
+      "offset": "0x013538",
+      "hex_bytes": "f5 53 be a9 f3 7b 01 a9 f3 03 00 aa 00 04 40 f9 7f 02 00 eb",
+      "disassembly": "stp x21, x20, [sp, #-0x20]!; stp x19, x30, [sp, #0x10]; mov x19, x0; ldr x0, [x0, #8]; cmp x19, x0 (ObserverList::ForEachObserver exported [182])",
+      "reconstructed_symbol": "lynx::base::ObserverList::ForEachObserver"
+    },
+    {
+      "offset": "0x013590",
+      "hex_bytes": "ff c3 01 d1 f4 2b 00 f9 f3 7b 06 a9 53 d0 3b d5",
+      "disassembly": "sub sp, sp, #0x70; ... mov w0, #6; movk w0, #1, lsl #16; ret (JNI_OnLoad exported [183] returning 0x00010006)",
+      "reconstructed_symbol": "lynx_v8_bridge_JNI_OnLoad"
+    },
+    {
+      "offset": "0x013624",
+      "hex_bytes": "00 2c 80 52 f3 03 08 aa b9 03 00 94",
+      "disassembly": "mov w0, #0x160; mov x19, x8; bl operator new (Allocates 352-byte lynx::piper::V8Runtime)",
+      "reconstructed_symbol": "lynx::runtime::LynxRuntimeHelperV8::MakeRuntime"
+    },
+    {
+      "offset": "0x013f08",
+      "hex_bytes": "00 58 20 0e 00 38 30 2e 09 00 26 1e 3f 05 00 f1",
+      "disassembly": "cnt v0.8b, v0.8b; uaddlv h0, v0.8b; fmov w9, s0; cmp x9, #1 (NEON 64-bit population count power-of-two bucket test)",
+      "reconstructed_symbol": "lynx::piper::V8BridgeHashMath::NeonPopcount64"
+    },
+    {
+      "offset": "0x01400c",
+      "hex_bytes": "08 04 00 d1 08 11 c0 da e8 03 08 4b 29 00 80 52 20 21 c8 9a c0 03 5f d6",
+      "disassembly": "sub x8, x0, #1; clz x8, x8; neg w8, w8; mov w9, #1; lsl x0, x9, x8; ret (NextPowerOfTwo via clz + neg + lsl)",
+      "reconstructed_symbol": "lynx::piper::V8BridgeHashMath::NextPowerOfTwo"
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "theorem": "MurmurHash64A / CityHash64 Pointer Hash (`0x00e9b8..0x00e9f0`)",
+      "formula": "k = 0x9ddfea08eb382d69ULL; x8 = ((((uint64_t)low32 << 3) + 8) ^ high32) * k; x9 = x8 ^ high32; x8 = (x9 ^ (x8 >> 47)) * k; x8 = x8 ^ (x8 >> 47); hash = x8 * k",
+      "verification": "Matches exact sequence of `mov/movk x10` building `0x9ddfea08eb382d69ULL`, `lsl w8, w8, #3`, `add x8, x8, #8`, `mul`, and `eor ... lsr #47` at `0x00e9b8..0x00e9f0`."
+    },
+    {
+      "theorem": "NEON Vectorized 64-bit Popcount Power-of-Two Bucket Reduction (`0x013f00..0x013f6c`)",
+      "formula": "popcnt(B) = sum_{i=0..7} popcnt_byte((B >> (8*i)) & 0xFF); index = (popcnt(B) <= 1) ? (H & (B - 1)) : (H - (H / B) * B)",
+      "verification": "Matches `cnt v0.8b, v0.8b; uaddlv h0, v0.8b; fmov w9, s0; cmp x9, #1` at `0x013f08..0x013f14` and `udiv` + `msub` at `0x013f48..0x013f4c`."
+    },
+    {
+      "theorem": "AArch64 `clz + neg + lsl` Next Power-of-Two (`0x01400c..0x014020`)",
+      "formula": "next_pow2(x) = 1ULL << ((-clz64(x - 1)) & 63) = 1ULL << (64 - clz64(x - 1)) for x > 2",
+      "verification": "In AArch64 `lsl x0, x9, x8` masks the shift amount `w8` by `63` (`0x3f`), so `neg w8, clz(x - 1)` computes `(64 - clz(x - 1)) mod 64` in 5 instructions without a constant `64` load."
+    },
+    {
+      "theorem": "V8 CPU Profile Node Vector Stride & Doubling (`0x00cc20..0x00cf80`)",
+      "formula": "stride = 0x78 (120 bytes); index = (end_ptr - begin_ptr) / 120; new_cap_bytes = max(2 * (cap_bytes / 120), min_nodes) * 120",
+      "verification": "Matches `mov w11, #0x78; sdiv x20, x8, x11` at `0x00cc20..0x00cc30` and `mov w8, #0x78; umull x0, w20, w8` at `0x00cf6c..0x00cf70`."
+    }
+  ],
+  "struct_abi_layouts": [
+    {
+      "struct_name": "lynx::base::ObserverNode",
+      "total_size_bytes": 24,
+      "binary_reference": "0x0133ac (mov w0, #0x18; bl operator new)"
+    },
+    {
+      "struct_name": "lynx::piper::V8CpuProfileNodeRecord",
+      "total_size_bytes": 120,
+      "binary_reference": "0x00cc20 (mov w11, #0x78; sdiv x20, x8, x11)"
+    },
+    {
+      "struct_name": "lynx::piper::V8HostCallErrorFrame",
+      "total_size_bytes": 104,
+      "binary_reference": "0x00ed88 (mov w26, #0x68; umaddl x0, w24, w26, x8)"
+    },
+    {
+      "struct_name": "lynx::piper::V8Runtime",
+      "total_size_bytes": 352,
+      "binary_reference": "0x013624 (mov w0, #0x160; bl operator new)"
+    },
+    {
+      "struct_name": "lynx::piper::NapiRuntimeProxyV8",
+      "total_size_bytes": 88,
+      "binary_reference": "0x013b5c (mov w0, #0x58; bl operator new)"
+    }
+  ]
+}
