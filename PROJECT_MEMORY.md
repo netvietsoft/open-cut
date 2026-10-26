@@ -2172,3 +2172,15 @@
   - `nativeCreateResourceFinder` (`0x00209c..0x0020a7`, `12 B`) loads the function pointer of `_Z40findResourceUri_DownloadableModelSupportPvPKcS1_` (`0x0020a8`) from GOT `0x00ffb0` and returns it as a `jlong`.
   - `nativeCheckEffectChildrenFile` (`0x002570..0x00326f`, `3,328 B`) opens `<dir>/effect_platform_children.tag` (`0x007436`, `__strlen_chk` `0x1e` @ `0x0025d0`), splits by `","`, trims ASCII spaces (`0x20`), and checks each child path via `stat()`.
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**61 / 169 — 36.09%**), `verify_reconstruction_suite.py` passed **401 / 401 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 89. NGHIỆM THU TARGET 62: `libgodzilla-touphic.so` (`TASK-101-RECONSTRUCTION-LIBGODZILLA_TOUPHIC` / `TASK_SO_141`) — 2026-10-27 00:31:00
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libgodzilla-touphic.so` (`65,304 bytes`, 112 `.dynsym` entries: 84 imported `[001]..[084]` + 27 exported `[085]..[111]`, 66 `.rela.dyn` relocations, 84 `.rela.plt` jump-slot relocations).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libgodzilla-touphic/`)**: 8 files (`147,533 B` C++17/H, `0 stubs`): `godzilla_touphic_types.h`, `godzilla_touphic_core_infra.h`, `godzilla_touphic_core_infra.cpp`, `godzilla_touphic_gpu_opts.h`, `godzilla_touphic_gpu_opts.cpp`, `godzilla_touphic_interface.h`, `godzilla_touphic_interface.cpp`, `godzilla_touphic_pseudocode.cpp`.
+- **Key Findings**:
+  - `safe_execute` (`0x00db4c..0x00dc48`) & `signal_handler` (`0x00dd9c..0x00df60`): Registers `SA_SIGINFO` (`orr w8, w8, #4` @ `0x00dca8`) handlers for 4 `40-byte` (`0x28`) `SignalSlot` entries in `.data 0x017620..0x0176b8` (`SIGABRT=6`, `SIGTRAP=5`, `SIGSEGV=11`, `SIGBUS=7`), allocates a `264-byte` (`0x108` @ `0x00db8c`) thread-local `sigjmp_buf`, validates `kTryExecuteMagic = 0x1a2b3c4d` (`0x00dbf4..0x00dbfc`), checks `kSignalPassThroughReturn = 0x00112358` (`0x00de2c..0x00de30`) vs `kSignalBypassReturn = 0x00aabbcc` (`0x0072ec`), and resends unhandled signals via `syscall(__NR_tgkill = 240)` (`0x00df10..0x00df1c`).
+  - `MakeFromTextureOptS` (`0x007a94..0x008524`) hashes `AutoBackendTextureRelease*` pointers with CityHash64 (`kCityHash64Mul = 0x9ddfea08eb382d69ULL` @ `0x007c58` & `0x008090`), while `CreateLayerOpt` (`0x009538..0x0098f0`) indexes `.rodata` `0x00553c` (`{0x48, 0x48, 0x48, 0x48, 0x40}`) and `0x005550` (`{0x4c, 0x4c, 0x4c, 0x4c, 0x44}`) for Android API 31..35 `RenderNode` dimensions.
+  - `GLESAdrenoOpt` (`0x00aab8..0x00d3f0`) checks `"scudo"` and absence of `"GWP-ASan"` (`0x6e6153412d505747ULL` @ `0x00ac14..0x00ac2c`), verifies Scudo chunk header `(*(uint32_t*)(ptr - 0x10) >> 12) == target_size` (`0x00b040..0x00b04c`), quarantines freed pointers in a 56-byte (`0x38`) per-thread hash table (`max_load_factor = 0.2f = 0x3e4ccccd`), and installs instruction tracepoints managed in a 48-byte (`0x30`) Red-Black Tree (`0x00e0f0..0x00e440`).
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**62 / 169 — 36.69%**), `verify_reconstruction_suite.py` passed **407 / 407 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.

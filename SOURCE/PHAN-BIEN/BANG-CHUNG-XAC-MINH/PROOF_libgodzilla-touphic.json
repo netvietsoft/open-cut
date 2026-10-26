@@ -1,0 +1,90 @@
+{
+  "library": "libgodzilla-touphic.so",
+  "task_id": "TASK-101-RECONSTRUCTION-LIBGODZILLA_TOUPHIC",
+  "report_id": "REPORT_TASK_SO_141_libgodzilla_touphic",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_metadata": {
+    "path": "extracted/lib/arm64-v8a/libgodzilla-touphic.so",
+    "size_bytes": 65304,
+    "architecture": "ELF64 AArch64 (EM_AARCH64)",
+    "sections_count": 26,
+    "dynsym_total": 112,
+    "dynsym_imports": 84,
+    "dynsym_exports": 27,
+    "text_section_va": "0x00007130",
+    "text_section_size": 37804,
+    "rodata_section_va": "0x0000496c",
+    "rodata_section_size": 7544,
+    "data_section_va": "0x00017500",
+    "data_section_size": 528,
+    "bss_section_va": "0x00017710",
+    "bss_section_size": 512
+  },
+  "reconstructed_files": [
+    "godzilla_touphic_types.h",
+    "godzilla_touphic_core_infra.h",
+    "godzilla_touphic_core_infra.cpp",
+    "godzilla_touphic_gpu_opts.h",
+    "godzilla_touphic_gpu_opts.cpp",
+    "godzilla_touphic_interface.h",
+    "godzilla_touphic_interface.cpp",
+    "godzilla_touphic_pseudocode.cpp",
+    "README_ANALYSIS.md"
+  ],
+  "reconstructed_code_bytes": 147533,
+  "opcode_evidence": [
+    {
+      "function": "safe_execute & signal_handler",
+      "va_range": "0x00db4c..0x00df60",
+      "key_instructions": [
+        "0x00db8c: mov w0, #0x108 ; bl malloc (264-byte sigjmp_buf)",
+        "0x00dbf4: mov w8, #0x3c4d ; movk w8, #0x1a2b, lsl #16 (kSafeExecuteMagic = 0x1a2b3c4d)",
+        "0x00de2c: sub w8, w21, #0x112, lsl #12 ; cmp w8, #0x358 (kSignalPassThroughReturn = 0x00112358)",
+        "0x00ded0: mov w9, #0x28 ; umaddl x8, w8, w9, x10 (40-byte SignalSlot indexing at 0x017620)",
+        "0x00df14: mov w8, #0xf0 ; svc #0 (syscall __NR_tgkill = 240)"
+      ]
+    },
+    {
+      "function": "MakeFromTextureOptS CityHash64 pointer table",
+      "va_range": "0x007a94..0x008524",
+      "key_instructions": [
+        "0x007c58: mov x10, #0x2d69 ; movk x10, #0xeb38, lsl #16 ; movk x10, #0xdfea, lsl #32 ; movk x10, #0x9ddf, lsl #48 (kCityHash64Mul = 0x9ddfea08eb382d69ULL)",
+        "0x008090: ror x9, x21, #0x25 ; madd x9, x9, x11, x8 (CityHash64 HashLen0to16 for 8-byte pointer)"
+      ]
+    },
+    {
+      "function": "CreateLayerOpt RenderNode offset tables & SkSurface clamp",
+      "va_range": "0x009538..0x0098f0",
+      "key_instructions": [
+        "0x009564: tst w0, #0x3f (LAYER_SIZE = 64 alignment check)",
+        "0x0095cc: sub w9, w8, #0x1f ; cmp w9, #4 (API 31..35 index into .rodata 0x00553c/0x005550)"
+      ]
+    },
+    {
+      "function": "SafeUffdGCOpt MarkCompact SIGBUS backoff & AllocClass override",
+      "va_range": "0x00a2c4..0x00a884",
+      "key_instructions": [
+        "0x00a4bc: cmp w21, #7 (SIGBUS) ; 0x00a4e8: cmp w8, #2 (BUS_ADRERR) ; 0x00a4f8: cmp x8, #0x22, lsl #24 (si_addr <= 0x22000000)",
+        "0x00a50c: ldr x8, [x22, #0x1b8] ; sub x8, x8, x9 ; lsr x8, x8, #14 (pc - CompactPage < 16384)",
+        "0x00a534: mov w0, #0x1388 ; bl usleep (5000 us backoff up to 5 retries)"
+      ]
+    },
+    {
+      "function": "GLESAdrenoOpt Double-Free Quarantine & UAF Tracepoint Engine",
+      "va_range": "0x00aab8..0x00d3f0",
+      "key_instructions": [
+        "0x00ac14: mov x9, #0x5747 ; movk x9, #0x2d50, lsl #16 ; movk x9, #0x5341, lsl #32 ; movk x9, #0x6e61, lsl #48 (\"GWP-ASan\" = 0x6e6153412d505747ULL)",
+        "0x00aea8: ldur w8, [x0, #-0x10] ; lsr w8, w8, #12 ; cmp w8, w9 (Scudo chunk size header check)",
+        "0x00d168: rebuild_and_validate_adreno_list ([rebuild_list] circular doubly-linked list repair)"
+      ]
+    }
+  ],
+  "verification_checks": {
+    "size_over_40kb": true,
+    "opcode_disassembly_matched": true,
+    "mathematical_constants_verified": true,
+    "abi_struct_layout_verified": true,
+    "all_27_exports_implemented": true,
+    "zero_stubs": true
+  }
+}

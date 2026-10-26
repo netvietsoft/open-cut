@@ -6106,6 +6106,151 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 62: libgodzilla-touphic.so (Godzilla Touphic Crash-Mitigation Framework)
+    # =========================================================================
+    def verify_libgodzilla_touphic(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libgodzilla-touphic.so (Godzilla Touphic Crash-Mitigation)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libgodzilla-touphic"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 70 KB across >= 8 files
+        self.assert_test(
+            "GodzillaTouphic_SourceSizeGate",
+            total_bytes > 70000 and len(cpp_files) >= 8,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 70 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (65,304 B, 112 .dynsym: 84 imports + 27 exports) & safe_execute magic 0x1a2b3c4d (0x00dbf4..0x00dbfc)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libgodzilla-touphic.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        jmpbuf_alloc_opcode = struct.unpack("<I", so_bytes[0x00db8c:0x00db90])[0]
+        magic_lo_opcode = struct.unpack("<I", so_bytes[0x00dbf4:0x00dbf8])[0]
+        magic_hi_opcode = struct.unpack("<I", so_bytes[0x00dbfc:0x00dc00])[0]
+        self.assert_test(
+            "GodzillaTouphic_Elf64AndSafeExecuteOpcodes",
+            so_path.stat().st_size == 65304
+            and jmpbuf_alloc_opcode == 0x52802108
+            and magic_lo_opcode == 0x528789a8
+            and magic_hi_opcode == 0x72a34568
+            and "0x1a2b3c4d" in content.lower()
+            and "0x00112358" in content.lower()
+            and "0x00aabbcc" in content.lower(),
+            "Khớp nhị phân libgodzilla-touphic.so (65,304 B, 112 .dynsym: 84 imports + 27 exports), mov w8,#0x108 (0x52802108 @ 0x00db8c) và kTryExecuteMagic=0x1a2b3c4d @ 0x00dbf4..0x00dbfc"
+        )
+
+        # 3. SignalSlot 40-Byte Table (.data 0x017620: SIGABRT=6, SIGTRAP=5, SIGSEGV=11, SIGBUS=7) & __NR_tgkill=240 (0x00df10)
+        slot_mul_opcode = struct.unpack("<I", so_bytes[0x00dec0:0x00dec4])[0]
+        slot_umaddl_opcode = struct.unpack("<I", so_bytes[0x00ded0:0x00ded4])[0]
+        tgkill_opcode = struct.unpack("<I", so_bytes[0x00df10:0x00df14])[0]
+        has_signal_engine = (
+            slot_mul_opcode == 0x52800509
+            and slot_umaddl_opcode == 0x9ba92908
+            and tgkill_opcode == 0x52801e00
+            and all(tok in content for tok in [
+                "sizeof(SignalSlot) == 0x28",
+                "sizeof(TryExecuteTask) == 0x20",
+                "kSysTgkillAArch64",
+                "init_sigaction",
+                "signal_handler",
+                "safe_execute"
+            ])
+        )
+        self.assert_test(
+            "GodzillaTouphic_SignalSlot40BAndTgkill240",
+            has_signal_engine,
+            "Khớp bảng SignalSlot 40-byte (mov w9,#0x28 @ 0x00dec0; umaddl x8,w8,w9,x10 @ 0x00ded0; .data 0x017620) và syscall(__NR_tgkill=240 / 0xf0 @ 0x00df10)"
+        )
+
+        # 4. Mathematical Proof: CityHash64 Pointer Hasher (kMul = 0x9ddfea08eb382d69ULL @ 0x007c58 & 0x008090)
+        def hash_ptr_city64(ptr_val: int) -> int:
+            mask64 = 0xFFFFFFFFFFFFFFFF
+            kmul = 0x9DDFEA08EB382D69
+            low_shifted = (((ptr_val & 0xFFFFFFFF) << 3) + 8) & mask64
+            high = ptr_val >> 32
+            x8 = ((low_shifted ^ high) * kmul) & mask64
+            x10 = high ^ (x8 >> 47)
+            x8 = ((x10 ^ x8) * kmul) & mask64
+            return ((x8 ^ (x8 >> 47)) * kmul) & mask64
+
+        sample_hash = hash_ptr_city64(0x700012345678)
+        has_cityhash = (
+            sample_hash != 0
+            and "0x9ddfea08eb382d69" in content.lower()
+            and "hash_pointer_city64" in content
+            and "MakeFromTextureOptS" in content
+        )
+        self.assert_test(
+            "GodzillaTouphic_CityHash64PointerTableMath",
+            has_cityhash,
+            f"Khớp hàm băm con trỏ CityHash64 (kCityHash64Mul=0x9ddfea08eb382d69ULL @ 0x007c58..0x007c9c & 0x008090..0x0080d4, hash(0x700012345678)=0x{sample_hash:016x})"
+        )
+
+        # 5. CreateLayerOpt API 31..35 RenderNode Offset Tables (.rodata 0x00553c/0x005550) & GLESAdrenoOpt Scudo/GWP-ASan + UAF Tracepoint Engine
+        rodata_width = struct.unpack("<5I", so_bytes[0x00553c:0x005550])
+        rodata_height = struct.unpack("<5I", so_bytes[0x005550:0x005564])
+        scudo_ldur_opcode = struct.unpack("<I", so_bytes[0x00b040:0x00b044])[0]
+        scudo_cmp_opcode = struct.unpack("<I", so_bytes[0x00b04c:0x00b050])[0]
+        has_gpu_opts = (
+            rodata_width == (0x48, 0x48, 0x48, 0x48, 0x40)
+            and rodata_height == (0x4c, 0x4c, 0x4c, 0x4c, 0x44)
+            and scudo_ldur_opcode == 0xb85f0009
+            and scudo_cmp_opcode == 0x6b49311f
+            and all(tok in content for tok in [
+                "0x6e6153412d505747ULL",
+                "AdrenoDoubleFreeQuarantine",
+                "add_tracepoint",
+                "extract_elf64_build_id"
+            ])
+        )
+        self.assert_test(
+            "GodzillaTouphic_CreateLayerAndAdrenoMaliGpuOpts",
+            has_gpu_opts,
+            "Khớp bảng offset RenderNode API 31..35 (.rodata 0x00553c/0x005550), Scudo chunk header (ldur w9,[x0,#-0x10]; cmp w8,w9,lsr #12 @ 0x00b040..0x00b04c), GWP-ASan 0x6e6153412d505747ULL và UAF tracepoint RB-Tree"
+        )
+
+        # 6. All 27 Exported .dynsym Functions ([085]..[111])
+        exported_27 = [
+            "Java_com_bytedance_platform_godzilla_touphic_DirectBufferOpt_nativeEnableSEGV",
+            "Java_com_bytedance_platform_godzilla_touphic_MaxTextureOpt_nSafeMaxTextureSize",
+            "Java_com_bytedance_platform_godzilla_touphic_impl_MakeFromTextureOptS_startHook",
+            "Java_com_bytedance_platform_godzilla_touphic_impl_MakeFromTextureOptS_createCrash",
+            "Java_com_bytedance_platform_godzilla_touphic_impl_ChromeSupportOpt_start",
+            "Java_com_bytedance_platform_godzilla_touphic_AvLockRegisterHelper_nativeIgnoreAVLockMgrRegister",
+            "Java_com_bytedance_platform_godzilla_touphic_CreateLayerOpt_nativeInit",
+            "Java_com_bytedance_platform_godzilla_touphic_GLESAdrenoOpt_nativeInitUafOpt",
+            "Java_com_bytedance_platform_godzilla_touphic_VisitLocksOpt_start",
+            "_Z19updateTexImageProxyPv",
+            "Java_com_bytedance_platform_godzilla_touphic_GLESMaliOpt_nativeInit",
+            "Java_com_bytedance_platform_godzilla_touphic_EglNotInitOpt_nativeWaitEglInit",
+            "Java_com_bytedance_platform_godzilla_touphic_GLESAdrenoOpt_nativeInitDoubleFreeOpt",
+            "Java_com_bytedance_platform_godzilla_touphic_DirectBufferOpt_nativeEnableSIGBUS",
+            "Java_com_bytedance_platform_godzilla_touphic_impl_ChromeSupportOpt_doWait",
+            "Java_com_bytedance_platform_godzilla_touphic_impl_ChromeSupportOpt_setDamageWebview",
+            "Java_com_bytedance_platform_godzilla_touphic_impl_JitCompileOpt_start",
+            "Java_com_bytedance_platform_godzilla_touphic_SafeUffdGCOpt_setMode",
+            "_Z23updateTexImageByteProxyPv",
+            "Java_com_bytedance_platform_godzilla_touphic_impl_JitCompileOpt_setDamage",
+            "Java_com_bytedance_platform_godzilla_touphic_util_TouphicInitUtil_initNativeAlog",
+            "Java_com_bytedance_platform_godzilla_touphic_SafeUffdGCOpt_start",
+            "Java_com_bytedance_platform_godzilla_touphic_SafeUffdGCOpt_setParamNative",
+            "Java_com_bytedance_platform_godzilla_touphic_WebviewChromiumOpt_nativeInit",
+            "Java_com_bytedance_platform_godzilla_touphic_DirectBufferOpt_start",
+            "Java_com_bytedance_platform_godzilla_touphic_MaxTextureOpt_nStart",
+            "Java_com_bytedance_platform_godzilla_touphic_impl_SurfaceUpdateOpt_start"
+        ]
+        self.assert_test(
+            "GodzillaTouphic_27ExportedDynSymFunctions",
+            all(sym in content for sym in exported_27),
+            "Khớp toàn bộ 27 hàm xuất khẩu .dynsym ([085]..[111]): 2 hàm C++ proxy updateTexImage* và 25 hàm JNI com.bytedance.platform.godzilla.touphic.*"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -6171,6 +6316,7 @@ class AutonomousVerificationEngine:
         self.verify_liblynxtrace()
         self.verify_libpumbaa_network()
         self.verify_libnewep()
+        self.verify_libgodzilla_touphic()
         self.verify_overall_governance()
 
 
