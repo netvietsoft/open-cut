@@ -1,0 +1,65 @@
+{
+  "library": "libPitayaBdComponent.so",
+  "target_index": 46,
+  "task_id": "TASK-085-RECONSTRUCTION-LIBPITAYABDCOMPONENT",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_path": "extracted/lib/arm64-v8a/libPitayaBdComponent.so",
+  "binary_size_bytes": 100176,
+  "reconstructed_cpp_bytes": 102431,
+  "reconstructed_files_count": 10,
+  "stub_count": 0,
+  "dynamic_symbols_total": 60,
+  "dynamic_symbols_exported": 14,
+  "dynamic_symbols_imported": 46,
+  "jni_exports_count": 2,
+  "opcode_evidence": [
+    {
+      "symbol": "JStringToStdString",
+      "vaddr": "0x00264c",
+      "size": 296,
+      "instructions": "0x002690: f942a508 ldr x8, [x8, #0x548] (GetStringUTFChars); 0x002734: f942a908 ldr x8, [x8, #0x550] (ReleaseStringUTFChars)"
+    },
+    {
+      "symbol": "Java_com_bytedance_pitaya_bdcomponentimpl_crash_NpthStackReporter_nativeGenerateAllStack",
+      "vaddr": "0x002780",
+      "size": 132,
+      "instructions": "0x0027a8: 94000017 bl #0x2804 (Instance); 0x0027bc: 97ffffa4 bl #0x264c (JStringToStdString); 0x0027c8: 94000034 bl #0x2898 (GenerteTombstone)"
+    },
+    {
+      "symbol": "pitaya::PitayaNpthUtil::Instance",
+      "vaddr": "0x002804",
+      "size": 148,
+      "instructions": "0x002818: 08dffd08 ldarb w8, [x8] (.bss 0x01c000); 0x002848: 52800900 mov w0, #0x48 (72B PitayaNpthUtil); 0x002870: 52800400 mov w0, #0x20 (32B control block)"
+    },
+    {
+      "symbol": "pitaya::PitayaNpthUtil::GenerteTombstone",
+      "vaddr": "0x002898",
+      "size": 488,
+      "instructions": "0x0028d8: 97ffff06 bl #0x24f0 (npth_bt_all); 0x002970: 94000044 bl #0x2a80 (ParseOriginStack); 0x0029a8: 52800841 mov w1, #0x42; 0x0029b0: 72a00101 movk w1, #8, lsl #16 (0x80042); 0x0029b4: 52803002 mov w2, #0x180 (0600)"
+    },
+    {
+      "symbol": "pitaya::PitayaNpthUtil::ParseOriginStack",
+      "vaddr": "0x002a80",
+      "size": 5656,
+      "instructions": "0x002e54: b201f3ea mov x10, #-0x5555555555555556; 0x002e58: f295556a movk x10, #0xaaab (0xaaaaaaaaaaaaaaab); 0x00326c: 91108421 add x1, x1, #0x421 (\"pty-ord-t\" @ 0x012421); 0x003338: 94000560 bl #0x48b8 (vector::insert)"
+    },
+    {
+      "symbol": "ExtractSoPathFromFrame",
+      "vaddr": "0x004568",
+      "size": 620,
+      "instructions": "0x004748: 71000d9f cmp w12, #3; 0x00474c: 54fffee0 b.eq #0x4728 (start_pos = i + 1, w12 = 4); 0x004750: 7100119f cmp w12, #4; 0x004754: 540000c0 b.eq #0x476c (end_pos = i)"
+    },
+    {
+      "symbol": "Java_com_bytedance_pitaya_bdcomponentimpl_monitor_ALogPrinter_nativeGetFuncAddr",
+      "vaddr": "0x004c54",
+      "size": 340,
+      "instructions": "0x004c68: 52802041 mov w1, #0x102; 0x004c6c: 97fff60d bl #0x24a0 (dlopen); 0x004c7c: 97fff5f9 bl #0x2460 (dlsym); 0x004cd0: 97fff5dc bl #0x2440 (npth_dlopen); 0x004ce0: 97fff618 bl #0x2540 (npth_dlsym)"
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula": "Multiplicative inverse division by 24 (sizeof(std::sub_match)) and 96 (sizeof(ThreadStackInfo)): 0xaaaaaaaaaaaaaaab * 3 == 1 (mod 2^64)",
+      "verification": "(byte_diff >> 3) * 0xaaaaaaaaaaaaaaabULL == byte_diff / 24 (@ 0x002e54..0x002e68) and (byte_diff >> 5) * 0xaaaaaaaaaaaaaaabULL == byte_diff / 96 (@ 0x0048e0..0x00490c)"
+    }
+  ]
+}

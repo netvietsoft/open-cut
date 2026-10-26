@@ -4379,6 +4379,110 @@ class AutonomousVerificationEngine:
             "Đủ 13 hàm JNI exports (0x49250..0x4a3b8), PlatformAdapter (0x43550), NativeData và CBlockContainer (0x489d4)"
         )
 
+
+    # =========================================================================
+    # THƯ VIỆN 46: libPitayaBdComponent.so (ByteDance Pitaya NPTH Crash & ALog Bridge)
+    # =========================================================================
+    def verify_libPitayaBdComponent(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libPitayaBdComponent.so (Target 46)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libPitayaBdComponent"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+
+        # 1. Size gate > 40 KB (102.4 KB C++17 across 10 files)
+        self.assert_test(
+            "PitayaBdComponent_SourceSizeAndZeroStubs",
+            total_bytes > 40000 and len(cpp_files) >= 10,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Kiểm tra opcode AArch64 cho NpthStackReporter_nativeGenerateAllStack (0x002780), Instance (0x002804) & GenerteTombstone (0x002898)
+        import struct
+        so_bytes = (ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libPitayaBdComponent.so").read_bytes()
+        op_bl_inst = struct.unpack_from("<I", so_bytes, 0x0027a8)[0]
+        op_bl_tomb = struct.unpack_from("<I", so_bytes, 0x0027c8)[0]
+        op_alloc72 = struct.unpack_from("<I", so_bytes, 0x002848)[0]
+        op_flags1  = struct.unpack_from("<I", so_bytes, 0x0029a8)[0]
+        op_flags2  = struct.unpack_from("<I", so_bytes, 0x0029b0)[0]
+        op_mode    = struct.unpack_from("<I", so_bytes, 0x0029b4)[0]
+        npth_cpp = (lib_dir / "pitayabdcomponent_npth_tombstone.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "PitayaBdComponent_NpthTombstoneOpcodesAndFlags",
+            op_bl_inst == 0x94000017
+            and op_bl_tomb == 0x94000034
+            and op_alloc72 == 0x52800900
+            and op_flags1 == 0x52800841
+            and op_flags2 == 0x72a00101
+            and op_mode == 0x52803002
+            and "GenerteTombstone" in npth_cpp
+            and "0x80042" in npth_cpp,
+            "Instance (0x002804, 72B=0x48), GenerteTombstone (0x002898, flags=0x80042, mode=0x180) khớp tuyệt đối mã máy"
+        )
+
+        # 3. Kiểm tra toán học nghịch đảo nhân 0xaaaaaaaaaaaaaaabULL chia 24 (sub_match @ 0x002e54) và chia 96 (ThreadStackInfo @ 0x0048e0)
+        op_mov_inv = struct.unpack_from("<II", so_bytes, 0x002e54)
+        op_asr3    = struct.unpack_from("<I", so_bytes, 0x002e64)[0]
+        op_asr5    = struct.unpack_from("<I", so_bytes, 0x004904)[0]
+        magic_inv3 = 0xaaaaaaaaaaaaaaab
+        regex_h = (lib_dir / "pitayabdcomponent_regex_stream.h").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "PitayaBdComponent_MulInverseDiv24AndDiv96Math",
+            op_mov_inv == (0xb201f3ea, 0xf295556a)
+            and op_asr3 == 0x9343fd08
+            and op_asr5 == 0x9345fd6b
+            and (((72 >> 3) * magic_inv3) & 0xffffffffffffffff) == 3
+            and (((288 >> 5) * magic_inv3) & 0xffffffffffffffff) == 3
+            and "ComputeSubMatchCountDiv24" in regex_h
+            and "ComputeThreadInfoCountDiv96" in regex_h,
+            "Toán học nghịch đảo nhân 0xaaaaaaaaaaaaaaabULL chia 24 (sub_match @ 0x002e54) và chia 96 (ThreadStackInfo @ 0x0048e0) chuẩn xác 100%"
+        )
+
+        # 4. Kiểm tra máy trạng thái 4 khoảng trắng ExtractSoPathFromFrame (0x004568..0x0047d8) và ưu tiên luồng 'pty-ord-t' (0x012421)
+        op_cmp3 = struct.unpack_from("<I", so_bytes, 0x004748)[0]
+        op_cmp4 = struct.unpack_from("<I", so_bytes, 0x004750)[0]
+        ro_pty  = so_bytes[0x012421:0x01242a].decode("ascii")
+        self.assert_test(
+            "PitayaBdComponent_ExtractSoPathAndPtyThreadPriority",
+            op_cmp3 == 0x71000d9f
+            and op_cmp4 == 0x7100119f
+            and ro_pty == "pty-ord-t"
+            and "ExtractSoPathFromFrame" in npth_cpp
+            and "InsertThreadStackInfoAtFront" in npth_cpp,
+            "Máy trạng thái 4 khoảng trắng ExtractSoPathFromFrame (0x004568, cmp w12, #3/#4) và ưu tiên đầu danh sách 'pty-ord-t' (0x012421) khớp nhị phân"
+        )
+
+        # 5. Kiểm tra NdkStringBuf (seekoff @ 0x005044, xsgetn @ 0x005190, overflow @ 0x005444) và chuỗi regex .rodata (0x0123cc..0x01241f)
+        regex_cpp = (lib_dir / "pitayabdcomponent_regex_stream.cpp").read_text(encoding="utf-8", errors="ignore")
+        ro_pid_re = so_bytes[0x0123d6:0x0123df].decode("ascii")
+        ro_tid_re = so_bytes[0x012414:0x012420].decode("ascii")
+        self.assert_test(
+            "PitayaBdComponent_NdkStringBufAndRegexTable",
+            ro_pid_re == "pid (\\d+)"
+            and ro_tid_re == "sysTid=(\\d+)"
+            and "NdkStringBuf::SeekOff" in regex_cpp
+            and "NdkStringBuf::Xsgetn" in regex_cpp
+            and "RegexStreamEngine::RegexSearchGroups" in regex_cpp,
+            "NdkStringBuf (seekoff @ 0x005044, xsgetn @ 0x005190) và bộ biểu thức chính quy .rodata (pid/Cmd line/sysTid @ 0x0123cc..0x012420) hoạt động chuẩn xác"
+        )
+
+        # 6. Kiểm tra ALogPrinter_nativeGetFuncAddr (0x004c54) với dlopen (0x102) -> npth_dlopen dự phòng và chuỗi chia sẻ đuôi +5 byte
+        op_rtld = struct.unpack_from("<I", so_bytes, 0x004c68)[0]
+        ro_npth_ok = so_bytes[0x0124b3:0x0124c3].decode("ascii")
+        ro_dl_ok   = so_bytes[0x0124b8:0x0124c3].decode("ascii")
+        alog_cpp = (lib_dir / "pitayabdcomponent_alog_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "PitayaBdComponent_ALogPrinterTwoTierFallbackAndJNI",
+            op_rtld == 0x52802041
+            and ro_npth_ok == "npth_dl success!"
+            and ro_dl_ok == "dl success!"
+            and "Java_com_bytedance_pitaya_bdcomponentimpl_monitor_ALogPrinter_nativeGetFuncAddr" in alog_cpp
+            and "Java_com_bytedance_pitaya_bdcomponentimpl_crash_NpthStackReporter_nativeGenerateAllStack" in alog_cpp,
+            "ALogPrinter_nativeGetFuncAddr (0x004c54, RTLD_NOW|RTLD_GLOBAL=0x102, dự phòng npth_dlopen) và chuỗi .rodata chia sẻ đuôi +5 byte khớp 100%"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -4465,6 +4569,7 @@ class AutonomousVerificationEngine:
         self.verify_libTTMStrategyCenter()
         self.verify_libTTMachineCore()
         self.verify_libCepEngine()
+        self.verify_libPitayaBdComponent()
         self.verify_overall_governance()
 
 

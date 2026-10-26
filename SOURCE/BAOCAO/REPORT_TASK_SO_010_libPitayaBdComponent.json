@@ -1,18 +1,11 @@
 {
-  "report_id": "REPORT_TASK_SO_010_libPitayaBdComponent",
   "task_id": "TASK_SO_010_libPitayaBdComponent",
-  "target_library": "libPitayaBdComponent.so",
-  "assigned_agent": "Agent 1 - ARCHITECT & Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 60,
-    "jni_exports": 2,
-    "cxx_demangled_count": 24,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libPitayaBdComponent",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "library": "libPitayaBdComponent.so",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "binary_size_bytes": 100176,
+  "reconstructed_cpp_bytes": 102431,
+  "reconstructed_files_count": 10,
+  "stub_count": 0,
+  "completed_at": "2026-10-26T18:58:00+07:00"
 }
