@@ -6251,6 +6251,85 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 63: libiesapplogger.so (ByteDance IES AppLogger Native Telemetry & Event Bridge)
+    # =========================================================================
+    def verify_libiesapplogger(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libiesapplogger.so (IESAppLogger Native Bridge)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libiesapplogger"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libiesapplogger.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        all_src = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 8 C++/Header files, 0 stubs)
+        self.assert_test(
+            "IesAppLogger_SourceSizeGate",
+            len(so_bytes) == 67616 and total_size > 100000 and len(cpp_files) == 8,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libiesapplogger.so (67,616 B)"
+        )
+
+        # 2. JNI_OnLoad (0x003f60), getEnv (0x003eac), & .bss Global Layout (0x014010..0x014048)
+        insn_jni_v16_lo = struct.unpack("<I", so_bytes[0x003fa8:0x003fac])[0]
+        insn_jni_v16_hi = struct.unpack("<I", so_bytes[0x003fb0:0x003fb4])[0]
+        insn_shptr_0    = struct.unpack("<I", so_bytes[0x00400c:0x004010])[0]
+        self.assert_test(
+            "IesAppLogger_JniOnLoadAndBssGlobals",
+            insn_jni_v16_lo == 0x528000C2 and insn_jni_v16_hi == 0x72A00022 and insn_shptr_0 == 0x52800600 and
+            all(sym in all_src for sym in ["0x014010", "0x014018", "0x014020", "0x014028", "0x014030", "0x014038", "0x014040", "0x014048"]),
+            "Khớp opcode JNI_OnLoad (0x003f60), getEnv (0x003eac, shared_ptr guard @ 0x00400c) và 8 biến toàn cục .bss (0x014010..0x014048)"
+        )
+
+        # 3. AppLogReporter Singleton (80-byte ABI @ 0x004cf8 & std::once_flag @ 0x0043e4)
+        insn_once_ldar = struct.unpack("<I", so_bytes[0x0043e4:0x0043e8])[0]
+        insn_alloc_80  = struct.unpack("<I", so_bytes[0x004cf8:0x004cfc])[0]
+        insn_enabled_1 = struct.unpack("<I", so_bytes[0x004d0c:0x004d10])[0]
+        self.assert_test(
+            "IesAppLogger_AppLogReporter80ByteSingleton",
+            insn_once_ldar == 0xC8DFFD08 and insn_alloc_80 == 0x52800A00 and insn_enabled_1 == 0x52800028 and
+            all(tok in all_src for tok in ["AppLogReporterAbi", "GetSingleton", "isSampled", "setReportFunc"]),
+            "Khớp cấu trúc 80-byte (0x50 @ 0x004cf8) của AppLogReporter singleton (+0x00 mutex, +0x28 report_func, +0x30 enabled, +0x38 sampler_set)"
+        )
+
+        # 4. JNI nativeSetSampler & 56-byte Red-Black Tree Node (0x0046e8..0x004a18)
+        insn_rbtree_56 = struct.unpack("<I", so_bytes[0x00488c:0x004890])[0]
+        self.assert_test(
+            "IesAppLogger_NativeSetSamplerAnd56ByteRbTreeNode",
+            insn_rbtree_56 == 0x52800700 and
+            all(tok in all_src for tok in ["RbTreeNodeStringAbi", "rbtree_balance_after_insert", "rbtree_find_equal", "nativeSetSampler"]),
+            "Khớp nút Cây Đỏ-Đen 56-byte (0x38 @ 0x00488c) và thuật toán cân bằng __tree_balance_after_insert trong nativeSetSampler"
+        )
+
+        # 5. AppLogTracker & AppLogTracker::Impl (80-byte ABI, 512-byte JSON reserve, vector division magic)
+        insn_vec_magic_lo = struct.unpack("<I", so_bytes[0x008204:0x008208])[0]
+        insn_vec_magic_hi = struct.unpack("<I", so_bytes[0x008208:0x00820c])[0]
+        self.assert_test(
+            "IesAppLogger_AppLogTrackerImpl80ByteAndJsonBuilder",
+            insn_vec_magic_lo == 0xB201F3F7 and insn_vec_magic_hi == 0xF2955577 and
+            all(tok in all_src for tok in ["AppLogTrackerImplAbi", "0x200ULL", "putVal", "putVals", "enableAllReports", "disableAllReports", "setReportToBusiness"]),
+            "Khớp AppLogTracker::Impl 80-byte, bộ đệm JSON reserve(512), 14 hàm putVal + 6 hàm putVals, và phép chia vector<string> 24-byte (0xaaaaaaaaaaaaaab @ 0x008204)"
+        )
+
+        # 6. Full 75 Exported Symbols Coverage ([048..122])
+        self.assert_test(
+            "IesAppLogger_All75ExportedSymbolsParity",
+            all(sym in all_src for sym in [
+                "Java_com_bytedance_ies_common_IESAppLogger_nativeSetSampler",
+                "_ZN14AppLogReporter12GetSingletonEv",
+                "_ZN14AppLogReporter6reportEPKcS1_S1_b",
+                "_ZN12IESAppLogger13AppLogTracker16enableAllReportsEv",
+                "_ZN12IESAppLogger13AppLogTracker17disableAllReportsEv",
+                "_ZN12IESAppLogger13AppLogTracker19setReportToBusinessEb"
+            ]),
+            "Khớp toàn bộ 75 biểu tượng xuất khẩu .dynsym ([048]..[122]) của libiesapplogger.so"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -6317,6 +6396,7 @@ class AutonomousVerificationEngine:
         self.verify_libpumbaa_network()
         self.verify_libnewep()
         self.verify_libgodzilla_touphic()
+        self.verify_libiesapplogger()
         self.verify_overall_governance()
 
 

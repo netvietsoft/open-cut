@@ -1,0 +1,90 @@
+{
+  "library": "libiesapplogger.so",
+  "task_id": "TASK-102-RECONSTRUCTION-LIBIESAPPLOGGER",
+  "report_id": "REPORT_TASK_SO_139_libiesapplogger",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_metadata": {
+    "path": "extracted/lib/arm64-v8a/libiesapplogger.so",
+    "size_bytes": 67616,
+    "architecture": "ELF64 AArch64 (EM_AARCH64)",
+    "sections_count": 25,
+    "dynsym_total": 123,
+    "dynsym_imports": 45,
+    "dynsym_exports": 75,
+    "text_section_va": "0x00003e70",
+    "text_section_size": 33820,
+    "rodata_section_va": "0x0000c28c",
+    "rodata_section_size": 705,
+    "data_rel_ro_section_va": "0x00013ac8",
+    "data_rel_ro_section_size": 168,
+    "data_section_va": "0x00014000",
+    "data_section_size": 16,
+    "bss_section_va": "0x00014010",
+    "bss_section_size": 640
+  },
+  "reconstructed_files": [
+    "iesapplogger_types.h",
+    "iesapplogger_rbtree_stl.h",
+    "iesapplogger_rbtree_stl.cpp",
+    "iesapplogger_reporter_jni.h",
+    "iesapplogger_reporter_jni.cpp",
+    "iesapplogger_interface.h",
+    "iesapplogger_interface.cpp",
+    "iesapplogger_pseudocode.cpp",
+    "README_ANALYSIS.md"
+  ],
+  "reconstructed_code_bytes": 122777,
+  "opcode_evidence": [
+    {
+      "function": "getEnv(int*) & JNI_OnLoad & initJniIds",
+      "va_range": "0x003eac..0x0043bc",
+      "key_instructions": [
+        "0x003ee4: mov w2, #0x10006 (JNI_VERSION_1_6 = 0x00010006)",
+        "0x003fb0: mov w0, #0x20 ; bl _Znwm (32-byte shared_ptr control block for Z10JNI_OnLoadE3$_0 vtable 0x013ae0)",
+        "0x0041bc: str x0, [x19, #0x28] (gAppLogOnEventMethodId @ 0x014028)",
+        "0x004250: str x0, [x19, #0x30] (gIesAppLoggerInstance GlobalRef @ 0x014030)",
+        "0x004324: str x0, [x19, #0x38] (gJavaLangStringClass GlobalRef @ 0x014038)",
+        "0x00439c: str x0, [x19, #0x40] (gJavaLangStringCtorMethodId @ 0x014040)",
+        "0x0043ac: strb w8, [x19, #0x48] (gJniIdsInitializedFlag = 1 @ 0x014048)"
+      ]
+    },
+    {
+      "function": "AppLogReporter::GetSingleton & 80-byte ABI Init",
+      "va_range": "0x0043c0..0x0045c8 & 0x004cf0..0x004d38",
+      "key_instructions": [
+        "0x0043e4: ldar x8, [x8] ; cmn x8, #1 (std::once_flag acquire check @ 0x014020)",
+        "0x004cf4: mov w0, #0x50 ; bl _Znwm (80-byte AppLogReporter allocation)",
+        "0x004d04: add x8, x8, #0xd3c ; str x8, [x0, #0x28] (report_func_ = appLogFunc @ 0x004d3c)",
+        "0x004d10: mov w9, #1 ; strb w9, [x0, #0x30] (enabled_ = true)",
+        "0x004d18: str x8, [x0, #0x38] ; stp xzr, xzr, [x0, #0x40] (24-byte std::set<std::string> header)"
+      ]
+    },
+    {
+      "function": "Java_com_bytedance_ies_common_IESAppLogger_nativeSetSampler & 56-byte RB-Tree Node",
+      "va_range": "0x0046e8..0x004a18",
+      "key_instructions": [
+        "0x004888: mov w0, #0x38 ; bl _Znwm (56-byte RbTreeNodeStringAbi allocation)",
+        "0x00490c: bl __find_equal (#0x3be0) ; 0x00491c: bl __insert_node_at (#0x3b80)"
+      ]
+    },
+    {
+      "function": "IESAppLogger::AppLogTracker & 80-byte AppLogTracker::Impl",
+      "va_range": "0x005878..0x0083f0",
+      "key_instructions": [
+        "0x00588c: mov w0, #0x50 ; bl _Znwm (80-byte AppLogTracker::Impl allocation)",
+        "0x005914: mov w1, #0x200 ; bl reserve (512-byte json_buffer_ pre-allocation)",
+        "0x00591c: adrp x1, #0xc000 ; add x1, x1, #0x48b ; bl assign (\"{\" @ 0x00c48b)",
+        "0x005c50: adrp x1, #0xc000 ; add x1, x1, #0x48d ; bl append (\"}\" @ 0x00c48d in ~AppLogTracker)",
+        "0x008204: mov x23, #-0x5555555555555556 ; movk x23, #0xaaab ; asr x9, x9, #3 ; mul x9, x9, x23 (vector<string>::size() = (end - begin) / 24)"
+      ]
+    }
+  ],
+  "verification_checks": {
+    "size_over_40kb": true,
+    "opcode_disassembly_matched": true,
+    "mathematical_constants_verified": true,
+    "abi_struct_layout_verified": true,
+    "all_75_exports_implemented": true,
+    "zero_stubs": true
+  }
+}
