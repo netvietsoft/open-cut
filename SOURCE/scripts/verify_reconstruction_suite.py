@@ -3920,6 +3920,74 @@ class AutonomousVerificationEngine:
             "Đối soát độ lệch ABI chuẩn xác: SHA256_CTX (0x70 bytes, md_len @ +0x6c), GCM128_CONTEXT (len @ +0x30, key @ +0x160, mres @ +0x184)"
         )
 
+    def verify_libttboringssl(self):
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG: libttboringssl.so (BoringSSL TLS 1.2/1.3, QUIC, DTLS, ECH & ALPN)")
+        print("="*70)
+        lib_dir = GIAIMA_DIR / "libttboringssl"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        self.assert_test(
+            "TTBoringSSL_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 10,
+            f"Dung lượng mã nguồn C++17 libttboringssl đạt {total_bytes} bytes qua {len(cpp_files)} files (> 40,000 bytes)"
+        )
+
+        types_h = (lib_dir / "ttboringssl_types.h").read_text(encoding="utf-8")
+        ciphers_cpp = (lib_dir / "ttboringssl_ciphers_transcript.cpp").read_text(encoding="utf-8")
+        hs_cpp = (lib_dir / "ttboringssl_handshake_tls13.cpp").read_text(encoding="utf-8")
+        quic_cpp = (lib_dir / "ttboringssl_quic_dtls_alpn.cpp").read_text(encoding="utf-8")
+        sess_cpp = (lib_dir / "ttboringssl_session_bio_api.cpp").read_text(encoding="utf-8")
+
+        self.assert_test(
+            "TTBoringSSL_ABIStructOffsets",
+            "offsetof(SSL_CIPHER, algorithm_enc) == 0x1c" in types_h
+            and "offsetof(SSL_SESSION, flags_1b0) == 0x1b0" in types_h
+            and "offsetof(DTLS1_STATE, timeout_duration_ms) == 0x208" in types_h
+            and "offsetof(SSL3_STATE, write_traffic_secret) == 0x120" in types_h
+            and "offsetof(ssl_st, flags_a4) == 0xa4" in types_h,
+            "Đối soát độ lệch ABI chuẩn xác: SSL_CIPHER (+0x1c/+0x20), SSL_SESSION (+0x1b0), DTLS1_STATE (+0x208), SSL3_STATE (+0x120/+0x150), ssl_st (+0xa4)"
+        )
+
+        self.assert_test(
+            "TTBoringSSL_CipherNIDAndTLS13KeySchedule",
+            "SSL_CIPHER_get_cipher_nid" in ciphers_cpp
+            and "hkdf_expand_label_sha256" in ciphers_cpp
+            and "bssl_SSL_get_traffic_secrets" in ciphers_cpp
+            and "tls13 " in ciphers_cpp,
+            "Bảng 23 Cipher Suite, ánh xạ NID (0x02fb7c) và lịch sinh khóa HKDF-Expand-Label TLS 1.3 (0x03224c)"
+        )
+
+        self.assert_test(
+            "TTBoringSSL_HandshakeECHAndHandoff",
+            "ssl_client_handshake" in hs_cpp
+            and "ssl_server_handshake" in hs_cpp
+            and "bssl_ssl_is_valid_ech_public_name" in hs_cpp
+            and "SSL_marshal_ech_config" in hs_cpp
+            and "SSL_serialize_handback" in hs_cpp,
+            "Máy trạng thái bắt tay TLS 1.2/1.3 (0x032dc0), kiểm tra ECH (0x017b20..0x019424) và Handoff/Handback (0x01fe40..0x020ab8)"
+        )
+
+        self.assert_test(
+            "TTBoringSSL_QUICAndDTLSTimerBackoff",
+            "0xea60u" in quic_cpp
+            and "0x753u" in quic_cpp
+            and "SSL_quic_max_handshake_flight_len" in quic_cpp
+            and "SSL_provide_quic_data" in quic_cpp
+            and "SSL_set_tlsext_host_name" in quic_cpp,
+            "Giao vận QUIC (0x032c98..0x0350f0), nhân đôi timer DTLS trần 60000 ms (0xea60 tại 0x016504) và kiểm tra ALPN/SNI (0x0346d8)"
+        )
+
+        self.assert_test(
+            "TTBoringSSL_SessionASN1AndBIORecord",
+            "NOT RESUMABLE" in sess_cpp
+            and "SSL_SESSION_to_bytes" in sess_cpp
+            and "SSL_SESSION_from_bytes" in sess_cpp
+            and "SSL_do_handshake" in sess_cpp
+            and "SSL_shutdown" in sess_cpp,
+            "Tuần tự hóa ASN.1 SSL_SESSION kèm cờ 'NOT RESUMABLE' 14-byte (0x02c1c8..0x02c3c0) và tầng BIO/Record I/O (0x014a5c..0x0337e4)"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -4001,6 +4069,7 @@ class AutonomousVerificationEngine:
         self.verify_libshadowhook()
         self.verify_libttheif_dec()
         self.verify_libttcrypto()
+        self.verify_libttboringssl()
         self.verify_overall_governance()
 
 

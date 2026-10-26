@@ -1,1 +1,37 @@
-[]
+{
+  "library": "libttboringssl.so",
+  "jni_onload_present": false,
+  "binding_mechanism": "Direct ELF dynamic symbol linkage from libsscronet.so, libttffmpeg.so, libttkmedianet.so, and libavmdlv2.so to 558 exported BoringSSL C/C++ functions",
+  "key_exported_symbols": [
+    {"symbol": "BIO_f_ssl", "address": "0x014a5c", "size": 12},
+    {"symbol": "BIO_set_ssl", "address": "0x014a68", "size": 16},
+    {"symbol": "DTLSv1_get_timeout", "address": "0x0162d4", "size": 316},
+    {"symbol": "DTLSv1_set_initial_timeout_duration", "address": "0x0164fc", "size": 8},
+    {"symbol": "DTLSv1_handle_timeout", "address": "0x016504", "size": 164},
+    {"symbol": "_ZN4bssl28ssl_is_valid_ech_public_nameENS_4SpanIKhEE", "address": "0x017b20", "size": 520},
+    {"symbol": "SSL_set_enable_ech_grease", "address": "0x018c9c", "size": 36},
+    {"symbol": "SSL_marshal_ech_config", "address": "0x018db8", "size": 504},
+    {"symbol": "SSL_ech_accepted", "address": "0x019424", "size": 84},
+    {"symbol": "SSL_SESSION_to_bytes", "address": "0x02c1c8", "size": 200},
+    {"symbol": "SSL_SESSION_from_bytes", "address": "0x02c3c0", "size": 152},
+    {"symbol": "SSL_get_cipher_by_value", "address": "0x02fae0", "size": 108},
+    {"symbol": "SSL_CIPHER_is_aead", "address": "0x02fb70", "size": 12},
+    {"symbol": "SSL_CIPHER_get_cipher_nid", "address": "0x02fb7c", "size": 108},
+    {"symbol": "SSL_CIPHER_get_digest_nid", "address": "0x02fbe8", "size": 28},
+    {"symbol": "_ZN4bssl23SSL_get_traffic_secretsEPK6ssl_stPNS_4SpanIKhEES6_", "address": "0x03224c", "size": 124},
+    {"symbol": "SSL_CTX_new", "address": "0x03249c", "size": 332},
+    {"symbol": "SSL_new", "address": "0x032828", "size": 704},
+    {"symbol": "SSL_quic_max_handshake_flight_len", "address": "0x032c98", "size": 104},
+    {"symbol": "SSL_quic_read_level", "address": "0x032d00", "size": 12},
+    {"symbol": "SSL_quic_write_level", "address": "0x032d0c", "size": 12},
+    {"symbol": "SSL_provide_quic_data", "address": "0x032d18", "size": 168},
+    {"symbol": "SSL_do_handshake", "address": "0x032dc0", "size": 208},
+    {"symbol": "SSL_read", "address": "0x0330ac", "size": 92},
+    {"symbol": "SSL_write", "address": "0x03335c", "size": 264},
+    {"symbol": "SSL_shutdown", "address": "0x03350c", "size": 276},
+    {"symbol": "SSL_get_error", "address": "0x0337e4", "size": 276},
+    {"symbol": "SSL_set_tlsext_host_name", "address": "0x0346d8", "size": 128},
+    {"symbol": "SSL_set_alpn_protos", "address": "0x0348d4", "size": 96},
+    {"symbol": "SSL_get0_alpn_selected", "address": "0x03493c", "size": 88}
+  ]
+}

@@ -1,6 +1,6 @@
 # TRÁT THÁCH THỨC ĐỐI KHÁNG — CHALLENGE FOR: libttcrypto.so
 > **Cơ quan ban hành**: **Agent 13 (Adversary Auditor / Red Team Critic)**  
-> **Thời điểm thẩm tra**: `2026-10-26 16:34:21`  
+> **Thời điểm thẩm tra**: `2026-10-26 16:58:24`  
 > **Trạng thái đối kháng**: `VERIFIED_AND_ACCEPTED`  
 > **Nguyên tắc**: *Giả định mọi tuyên bố là gian lận/khai khống cho đến khi nộp đủ bằng chứng nhị phân.*
 
@@ -9,7 +9,7 @@
 ### 1. KẾT QUẢ RÀ SOÁT 6 CỔNG THẨM ĐỊNH KHẮC NGHIỆT
 | Cổng thẩm định (Adversarial Gate) | Tiêu chí kỹ thuật bắt buộc | Kết quả rà soát | Trạng thái |
 |---|---|:---:|:---:|
-| **Gate 1: Dung lượng & Zero-Stub** | $\ge 40	ext{ KB}$ (hoặc 10KB phụ trợ), 0 hàm rỗng | `122778 bytes` | PASSED |
+| **Gate 1: Dung lượng & Zero-Stub** | $\ge 40	ext{ KB}$ (hoặc 10KB phụ trợ), 0 hàm rỗng | `126065 bytes` | PASSED |
 | **Gate 2: Opcode AArch64 Parity** | Chỉ rõ địa chỉ hex opcode disassembly thực tế | `201 opcodes` | PASSED |
 | **Gate 3: Toán học & Thuật toán** | Công thức giải thuật tường minh, khả nghịch | Đã nộp | PASSED |
 | **Gate 4: Struct Layout ABI** | Khớp offset thanh ghi AArch64 (ldr/str) | Đã xác nhận | PASSED |

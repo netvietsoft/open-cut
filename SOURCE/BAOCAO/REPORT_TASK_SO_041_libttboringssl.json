@@ -1,18 +1,10 @@
 {
-  "report_id": "REPORT_TASK_SO_041_libttboringssl",
-  "task_id": "TASK_SO_041_libttboringssl",
-  "target_library": "libttboringssl.so",
-  "assigned_agent": "Agent 4 - INTEGRATION/API",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 935,
-    "jni_exports": 0,
-    "cxx_demangled_count": 19,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libttboringssl",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "task_id": "REPORT_TASK_SO_041_libttboringssl",
+  "governance_task_id": "TASK-080-RECONSTRUCTION-LIBTTBORINGSSL",
+  "library": "libttboringssl.so",
+  "binary_size_bytes": 395304,
+  "reconstructed_cpp_bytes": 99600,
+  "exported_functions": 558,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verification_test": "verify_libttboringssl"
 }

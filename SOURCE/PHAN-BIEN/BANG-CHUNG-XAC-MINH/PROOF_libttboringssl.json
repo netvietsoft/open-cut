@@ -1,0 +1,90 @@
+{
+  "lib_name": "libttboringssl",
+  "binary_file": "SOURCE/apktool-res/lib/arm64-v8a/libttboringssl.so",
+  "binary_size_bytes": 395304,
+  "task_id": "TASK-080-RECONSTRUCTION-LIBTTBORINGSSL",
+  "report_id": "REPORT_TASK_SO_041_libttboringssl",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_types.h",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_ciphers_transcript.h",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_ciphers_transcript.cpp",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_handshake_tls13.h",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_handshake_tls13.cpp",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_quic_dtls_alpn.h",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_quic_dtls_alpn.cpp",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_session_bio_api.h",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_session_bio_api.cpp",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_interface.h",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_interface.cpp",
+    "SOURCE/GIAI-MA/libttboringssl/ttboringssl_pseudocode.cpp"
+  ],
+  "opcode_evidence": [
+    {
+      "symbol": "BIO_f_ssl",
+      "address": "0x014a5c",
+      "disassembly": "adrp x0, #0x61000; add x0, x0, #0xab0; ret",
+      "meaning": "Returns static BIO_METHOD descriptor for SSL filter BIO"
+    },
+    {
+      "symbol": "DTLSv1_set_initial_timeout_duration",
+      "address": "0x0164fc",
+      "disassembly": "str w1, [x0, #0x50]; ret",
+      "meaning": "Stores initial DTLS retransmission timeout (ms) at ssl + 0x50"
+    },
+    {
+      "symbol": "DTLSv1_handle_timeout",
+      "address": "0x016504",
+      "disassembly": "ldr x8, [x19, #0x38]; ldr w9, [x8, #0x208]; lsl w10, w9, #1; ubfx w9, w9, #4, #0x1b; cmp w9, #0x753; mov w9, #0xea60; csel w9, w10, w9, lo; str w9, [x8, #0x208]",
+      "meaning": "Doubles d1->timeout_duration_ms (+0x208) with RFC 6347 ceiling of 60,000 ms (0xea60)"
+    },
+    {
+      "symbol": "SSL_set_enable_ech_grease",
+      "address": "0x018c9c",
+      "disassembly": "ldr x8, [x0, #8]; cbz x8, #0x18cbc; ldurh w9, [x8, #0xe9]; cmp w1, #0; cset w10, ne; and w9, w9, #0xfffe; orr w9, w9, w10; sturh w9, [x8, #0xe9]; ret",
+      "meaning": "Updates bit 0 of ssl->config (+0x08) ECH flags halfword at +0xe9"
+    },
+    {
+      "symbol": "SSL_ech_accepted",
+      "address": "0x019424",
+      "disassembly": "ldr x8, [x19, #0x30]; ldr w8, [x8, #0xd8]; cmp w8, #1; cset w0, eq",
+      "meaning": "Checks whether ssl->s3 (+0x30) ech_status (+0xd8) equals 1"
+    },
+    {
+      "symbol": "SSL_SESSION_to_bytes",
+      "address": "0x02c1c8",
+      "disassembly": "ldrb w8, [x0, #0x1b0]; tbnz w8, #2, #0x2c230; adrp x21, #0x45000; add x21, x21, #0x45e; mov w1, #0xe",
+      "meaning": "Checks bit 2 (not_resumable) at session + 0x1b0; if set, outputs 14-byte 'NOT RESUMABLE' sentinel"
+    },
+    {
+      "symbol": "SSL_CIPHER_is_aead",
+      "address": "0x02fb70",
+      "disassembly": "ldr w8, [x0, #0x20]; ubfx w0, w8, #1, #1; ret",
+      "meaning": "Extracts bit 1 (SSL_AEAD = 0x02) of cipher->algorithm_mac (+0x20)"
+    },
+    {
+      "symbol": "SSL_CIPHER_get_cipher_nid",
+      "address": "0x02fb7c",
+      "disassembly": "ldr w8, [x0, #0x1c]; ... mov w0, #0x2c; mov w0, #0x3b6; mov w0, #0x1a3; mov w0, #0x1ab; mov w0, #0x37f; mov w0, #0x385",
+      "meaning": "Maps cipher->algorithm_enc (+0x1c) to BoringSSL NIDs (3DES=44, AES128=419, AES256=427, AES128GCM=895, AES256GCM=901, ChaCha20Poly1305=950)"
+    },
+    {
+      "symbol": "_ZN4bssl23SSL_get_traffic_secretsEPK6ssl_stPNS_4SpanIKhEES6_",
+      "address": "0x03224c",
+      "disassembly": "cmp w0, #0x303; b.gt #0x32280; ldr x8, [x20, #0x30]; ldrb w9, [x8, #0xdc]; tbnz w9, #5, #0x322a0; ldrb w9, [x8, #0x1b1]; add x8, x8, #0x150; ... ldrb w9, [x8, #0x1b0]; add x8, x8, #0x120",
+      "meaning": "Requires TLS > 0x0303 and bit 5 of s3->flags_dc (+0xdc), returning read_traffic_secret (+0x150, len +0x1b1) and write_traffic_secret (+0x120, len +0x1b0)"
+    },
+    {
+      "symbol": "SSL_quic_read_level / SSL_quic_write_level",
+      "address": "0x032d00 / 0x032d0c",
+      "disassembly": "ldr x8, [x0, #0x30]; ldr w0, [x8, #0xc8]; ret / ldr x8, [x0, #0x30]; ldr w0, [x8, #0xcc]; ret",
+      "meaning": "Reads s3->quic_read_level (+0xc8) and s3->quic_write_level (+0xcc)"
+    },
+    {
+      "symbol": "SSL_set_tlsext_host_name",
+      "address": "0x0346d8",
+      "disassembly": "add x19, x0, #0x90; bl strlen; sub x8, x0, #1; cmp x8, #0xff; b.lo #0x34718",
+      "meaning": "Validates SNI hostname length is 1..255 bytes and stores at ssl + 0x90"
+    }
+  ],
+  "verification_suite_test": "verify_libttboringssl"
+}

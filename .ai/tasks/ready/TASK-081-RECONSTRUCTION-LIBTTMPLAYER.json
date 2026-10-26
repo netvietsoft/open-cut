@@ -1,0 +1,29 @@
+{
+  "task_id": "TASK-081-RECONSTRUCTION-LIBTTMPLAYER",
+  "title": "Cleanroom C++17 Reconstruction & Adversarial Verification of libttmplayer.so (Target 42)",
+  "assigned_role": "Agent 3 - Android/Native & Agent 13 - Adversary Auditor",
+  "status": "in_progress",
+  "scope": {
+    "files_allowed": [
+      "SOURCE/GIAI-MA/libttmplayer/**",
+      "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttmplayer.json",
+      "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttmplayer.md",
+      "SOURCE/BAOCAO/REPORT_TASK_SO_042_libttmplayer.json",
+      "SOURCE/BAOCAO/REPORT_TASK_SO_042_libttmplayer.md",
+      "SOURCE/scripts/verify_reconstruction_suite.py",
+      "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+      "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/AUDIT_SUMMARY.md",
+      "UPDATETODOS.md",
+      "PROJECT_MEMORY.md",
+      "TASK_LOG.md"
+    ],
+    "files_forbidden": [
+      "SOURCE/extracted/**",
+      "SOURCE/apktool-res/**"
+    ]
+  },
+  "acceptance_criteria": [
+    "Reconstruct > 40 KB of non-stub bilingual EN+VN C++17 source for libttmplayer.so matching AArch64 opcodes and ABI layouts.",
+    "Pass adversary_critic_agent.py (VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (100% PASS), and native_audit_watchdog.py (0 high findings)."
+  ]
+}

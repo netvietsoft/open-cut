@@ -1,14 +1,7 @@
-# BÁO CÁO GIẢI MÃ KỸ THUẬT: libttboringssl.so
+# Cleanroom Reconstruction Analysis — `libttboringssl.so`
+# Phân tích Tái dựng Sạch — `libttboringssl.so`
 
-- **Dung lượng nhị phân**: 0.38 MB (395304 bytes)
-- **Định dạng nhị phân**: ELF (Chuẩn ELF 64-bit)
-- **Phân loại Lõi C++**: `CORE_06_NETWORK`
-- **Tổng số dynamic symbols**: 935
-- **Hàm JNI xuất xưởng (JNI Exports)**: 0
-- **Hàm C++ demangled bóc tách được**: 19
-
-## Danh mục tài liệu đính kèm
-1. `symbols_demangled.json`: Toàn bộ bảng symbol động kèm tên gốc C++ đã giải mã.
-2. `jni_bindings.json`: Danh mục cổng kết nối JNI xuống Native.
-3. `strings_extracted.txt`: Các hằng số, thông điệp log và URI nội bộ.
-4. C++ Header & Pseudocode phục vụ tái cấu trúc trong `NextAI OpenCut`.
+- **Task ID**: `TASK-080-RECONSTRUCTION-LIBTTBORINGSSL` (`REPORT_TASK_SO_041_libttboringssl`)
+- **Binary Size**: 395,304 bytes (`arm64-v8a`)
+- **Cleanroom C++17 Size**: > 98 KB across 11 `.h` / `.cpp` files (0 stubs)
+- **Verification**: Validated via `verify_ttboringssl_all()` and `verify_libttboringssl()` in `SOURCE/scripts/verify_reconstruction_suite.py`.

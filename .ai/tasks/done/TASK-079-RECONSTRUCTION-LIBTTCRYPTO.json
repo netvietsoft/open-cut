@@ -1,0 +1,30 @@
+{
+  "task_id": "TASK-079-RECONSTRUCTION-LIBTTCRYPTO",
+  "title": "Cleanroom C++17 Reconstruction & Adversarial Verification of libttcrypto.so (Target 40)",
+  "assigned_role": "Agent 3 - Android/Native & Agent 13 - Adversary Auditor",
+  "status": "done",
+  "scope": {
+    "files_allowed": [
+      "SOURCE/GIAI-MA/libttcrypto/**",
+      "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttcrypto.json",
+      "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttcrypto.md",
+      "SOURCE/BAOCAO/REPORT_TASK_SO_056_libttcrypto.json",
+      "SOURCE/BAOCAO/REPORT_TASK_SO_056_libttcrypto.md",
+      "SOURCE/scripts/verify_reconstruction_suite.py",
+      "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+      "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/AUDIT_SUMMARY.md",
+      "UPDATETODOS.md",
+      "PROJECT_MEMORY.md",
+      "TASK_LOG.md"
+    ],
+    "files_forbidden": [
+      "SOURCE/extracted/**",
+      "SOURCE/apktool-res/**"
+    ]
+  },
+  "acceptance_criteria": [
+    "Reconstruct > 40 KB of non-stub bilingual EN+VN C++17 source for libttcrypto.so matching AArch64 opcodes and ABI layouts.",
+    "Verify SHA-256/SHA-512/MD5/HMAC/HKDF, AES-128/256-CTR/CBC/GCM, ChaCha20-Poly1305, X25519/Ed25519, and CBS/CBB ASN.1 DER.",
+    "Pass adversary_critic_agent.py (VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (100% PASS), and native_audit_watchdog.py (0 high findings)."
+  ]
+}

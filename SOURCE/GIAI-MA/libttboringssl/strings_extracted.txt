@@ -1,6 +1,56 @@
-libttcrypto.so
-libm.so
-libdl.so
-libc.so
-libttboringssl.so
-https://android.googlesource.com/toolchain/llvm-project
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/bio_ssl.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/d1_both.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/d1_pkt.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/d1_srtp.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/dtls_method.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/dtls_record.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/encrypted_client_hello.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/extensions.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/handoff.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/handshake.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/handshake_server.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/ssl_aead_ctx.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/ssl_asn1.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/ssl_buffer.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/ssl_file.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/ssl_key_share.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/ssl_session.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/ssl_transcript.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/ssl_x509.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/t1_enc.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/tls_method.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/tls_record.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/tls13_client.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/tls13_enc.cc
+/Users/PBt115_v_jrmq/38753/boringssl/src/ssl/tls13_server.cc
+SRTP_AES128_CM_SHA1_80
+SRTP_AES128_CM_SHA1_32
+SRTP_AEAD_AES_128_GCM
+SRTP_AEAD_AES_256_GCM
+TLS_AES_128_GCM_SHA256
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+NOT RESUMABLE
+extended master secret
+key expansion
+CLIENT_EARLY_TRAFFIC_SECRET
+CLIENT_HANDSHAKE_TRAFFIC_SECRET
+SERVER_HANDSHAKE_TRAFFIC_SECRET
+CLIENT_TRAFFIC_SECRET_0
+SERVER_TRAFFIC_SECRET_0
+EXPORTER_SECRET
+tls13 
+c e traffic
+c hs traffic
+s hs traffic
+c ap traffic
+s ap traffic
+exp master
+res master
+finished
