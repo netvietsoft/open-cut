@@ -2208,3 +2208,16 @@
   - `MDLTTKMediaNetDownloader` (`0x0065c8..0x00d9e0`) implements branchless non-negative byte clamping `bic x1, x9, x9, asr #63` (`0x007010..0x007014`) in `close()`, 32 KB (`0x8000`) bounce buffer read clamping (`cmp w0, #8, lsl #12; mov w9, #0x8000; csel w20, w0, w9, lt` @ `0x0072ac..0x0072b4`) in `triggerAsyncRead()`, HTTP 2xx range validation (`sub w10, w8, #0xc8; cmp w10, #0x63` @ `0x007848..0x007854`) in `parseResponseHeaders()`, and timeout event mapping (`100009..100012` @ `0x00858c..0x00859c`) in `OnTimeout()`.
   - `MDLTTKMediaNetStrategy` (`0x00ee98..0x01000b`) evaluates QUIC race window expiration using `mRaceIntervalMin * 60000` (`mov w10, #0xea60; sub x9, x19, x20; mul w8, w8, w10; cmp x9, w8, sxtw` @ `0x00fd2c..0x00fd38`).
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**64 / 169 — 37.87%**), `verify_reconstruction_suite.py` passed **419 / 419 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 92. NGHIỆM THU TARGET 65: `libanimax_textra.so` (`TASK-104-RECONSTRUCTION-LIBANIMAX_TEXTRA` / `TASK_SO_136`) — 2026-10-27 01:44:00
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libanimax_textra.so` (`83,952 bytes`, 24 ELF64 sections, 105 `.dynsym` entries: 100 imported `[001]..[100]` + 1 exported `[101] JNI_OnLoad @ 0x00b7cc`, 117 `.rela.dyn` relocations, 97 `.rela.plt` jump-slot relocations).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libanimax_textra/`)**: 8 C++/Header files (`160,666 B` C++17/H, `0 stubs`) + `README_ANALYSIS.md`: `animax_textra_types.h`, `animax_textra_font_typeface.h`, `animax_textra_font_typeface.cpp`, `animax_textra_layer_canvas.h`, `animax_textra_layer_canvas.cpp`, `animax_textra_interface.h`, `animax_textra_interface.cpp`, `animax_textra_pseudocode.cpp`.
+- **Key Findings**:
+  - `FontAssetImplTextra` (`sizeof = 0x58 = 88 B`, `0x0089ec..0x008db8`, VTable @ `0x010018`) lazily creates `FontmgrCollection` (`0x38 B` @ `0x008ba8`) and generates unique font family keys `<counter>@_@<name>` using `.bss 0x014000` and `.rodata 0x00358a` (`"@_@"`).
+  - `TypefaceTextra` (`sizeof = 0x98 = 152 B` inside `0xb0 = 176 B` control block @ `0x009560`, VTable @ `0x010110`) implements `GetWidthBound` using NEON `fsub v0.2s, v1.2s, v0.2s` (`0x009868`) and `GetWidthBounds` using `fminnm`, `fmaxnm`, and `fadd` (`0x00994c..0x00996c`).
+  - `TextLayerImplTextra::OnDraw` (`0x00a1e8..0x00ab0c`, VTable @ `0x0102c0`) maps `DocumentData::justify` via 64-bit LUT `0x0000030303030102ULL` (`0x00a52c..0x00a534`), computes tracking `(size * tracking) / 100.0f` (`0x00a598..0x00a5a8`), and translates unconstrained `LayoutRegion` (`1000000.0f` @ `0x003520`) by `-500000.0f` (`0x003518`) or `-1000000.0f` (`0x00351c`).
+  - `CanvasHelperTextra::DrawGlyphs` (`0x00acf4..0x00b458`, VTable @ `0x0102e8`) applies faux italic skew `-0.25f` (`0x00af84`), constructs `skity::TextRun` (`sizeof = 0x68 = 104 B`, capacity check `0x0276276276276277ULL` @ `0x00b348`), and renders `skity::TextBlob` with `skity::MaskFilter::MakeBlur`.
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**65 / 169 — 38.46%**), `verify_reconstruction_suite.py` passed **425 / 425 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.

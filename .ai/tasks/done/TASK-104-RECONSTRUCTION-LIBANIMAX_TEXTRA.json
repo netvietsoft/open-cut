@@ -1,0 +1,31 @@
+{
+  "task_id": "TASK-104-RECONSTRUCTION-LIBANIMAX_TEXTRA",
+  "report_task_id": "TASK_SO_136_libanimax_textra",
+  "title": "Clean-Room C++17 Reconstruction & Adversarial Verification of libanimax_textra.so (Lynx AnimaX Textra Rendering Engine)",
+  "status": "DONE",
+  "assigned_agent": "Agent 7 - RECONSTRUCTION / Agent 3 - ANDROID NATIVE",
+  "reviewer_agent": "Agent 13 - ADVERSARY AUDITOR",
+  "target_binary": "extracted/arm64-v8a/libanimax_textra.so",
+  "binary_size_bytes": 83952,
+  "reconstructed_code_bytes": 160666,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libanimax_textra/**",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_136_libanimax_textra.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_136_libanimax_textra.md",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libanimax_textra.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libanimax_textra.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    ".ai/**"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct > 80 KB of zero-stub C++17 & Header files in SOURCE/GIAI-MA/libanimax_textra/ (Achieved: 160,666 bytes across 8 .h/.cpp files)",
+    "Match all 6 core C++ classes and VTables in .data.rel.ro (0x010000..0x010480): FontAssetImplTextra, TypefaceTextra, FontManagerTextra, TextLayerImplTextra, CanvasHelperTextra, TextHelperTextra",
+    "Match .rodata float constants (-500000.0f @ 0x003518, -1000000.0f @ 0x00351c, +1000000.0f @ 0x003520), 64-bit alignment LUT 0x0000030303030102ULL, tracking math (size * tracking / 100.0f), faux italic skew -0.25f, and CityHash64",
+    "Pass Agent 13 Adversary Auditor (VERIFIED_AND_ACCEPTED: 65 / 169), verify_reconstruction_suite.py (425/425 PASS = 100.0%), and native_audit_watchdog.py (0 high findings)"
+  ],
+  "completed_at": "2026-10-27T01:43:30+07:00"
+}

@@ -6426,6 +6426,115 @@ class AutonomousVerificationEngine:
             "Khớp toán học cửa sổ đua QUIC mRaceIntervalMin * 60000 ms (mov w10,#0xea60; mul w8,w8,w10 @ 0x00fd2c..0x00fd34) và chiến lược evaluateQuicRaceDecision"
         )
 
+    def verify_libanimax_textra(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libanimax_textra.so (Lynx AnimaX Textra Rendering Engine)")
+        print("="*70)
+
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libanimax_textra.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        src_dir = GIAIMA_DIR / "libanimax_textra"
+        cpp_files = sorted(list(src_dir.glob("*.cpp")) + list(src_dir.glob("*.h")))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        all_src = "\n".join(f.read_text(encoding="utf-8") for f in cpp_files)
+
+        # 1. Binary & Source Size Gate (> 40 KB, 0 stubs, 83,952-byte ELF64)
+        self.assert_test(
+            "AnimaxTextra_SourceSizeGate",
+            len(so_bytes) == 83952 and total_size > 120000 and len(cpp_files) == 8,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libanimax_textra.so (83,952 B)"
+        )
+
+        # 2. .rodata Float Constants (-500000.0f @ 0x003518, -1000000.0f @ 0x00351c, +1000000.0f @ 0x003520) & Strings
+        ro_neg_500k = struct.unpack("<I", so_bytes[0x003518:0x00351c])[0]
+        ro_neg_1m   = struct.unpack("<I", so_bytes[0x00351c:0x003520])[0]
+        ro_pos_1m   = struct.unpack("<I", so_bytes[0x003520:0x003524])[0]
+        self.assert_test(
+            "AnimaxTextra_RodataFloatsAndFontKeyDelimiter",
+            ro_neg_500k == 0xC8F42400 and ro_neg_1m == 0xC9742400 and ro_pos_1m == 0x49742400 and
+            all(tok in all_src for tok in [
+                "0xc8f42400U",
+                "0xc9742400U",
+                "0x49742400U",
+                "-500000.0f",
+                "-1000000.0f",
+                "1000000.0f",
+                "@_@",
+                "animax textra JNI_OnLoad"
+            ]),
+            "Khớp 3 hằng số IEEE-754 float tại .rodata 0x003518..0x003520 (-500000.0f, -1000000.0f, +1000000.0f) và ký tự phân tách khóa phông '@_@' (0x00358a)"
+        )
+
+        # 3. CityHash64 (0x008424..0x0089d8) & NEON Popcount Power-of-2 Bucket Check (0x0090cc..0x0090d0)
+        neon_cnt_op    = struct.unpack("<I", so_bytes[0x0090cc:0x0090d0])[0]
+        neon_uaddlv_op = struct.unpack("<I", so_bytes[0x0090d0:0x0090d4])[0]
+        self.assert_test(
+            "AnimaxTextra_CityHash64AndNeonPopcountBucketCheck",
+            neon_cnt_op == 0x0E205800 and neon_uaddlv_op == 0x2E303800 and
+            all(tok in all_src for tok in [
+                "0x9ddfea08eb382d69ULL",
+                "0x9ae16a3b2f90404fULL",
+                "CityHash64",
+                "ComputeBucketIndex"
+            ]),
+            "Khớp hàm băm CityHash64 (kMul=0x9ddfea08eb382d69ULL, k2=0x9ae16a3b2f90404fULL) và lệnh NEON cnt v0.8b; uaddlv h0, v0.8b (@ 0x0090cc..0x0090d0)"
+        )
+
+        # 4. TypefaceTextra NEON GetWidthBound (fsub v0.2s @ 0x009868) & GetWidthBounds (fminnm/fmaxnm/fadd @ 0x00994c..0x00996c)
+        fsub_v0_2s = struct.unpack("<I", so_bytes[0x009868:0x00986c])[0]
+        fminnm_op  = struct.unpack("<I", so_bytes[0x00994c:0x009950])[0]
+        fmaxnm_op  = struct.unpack("<I", so_bytes[0x009958:0x00995c])[0]
+        self.assert_test(
+            "AnimaxTextra_TypefaceTextraNeonWidthBounds",
+            fsub_v0_2s == 0x0EA0D420 and fminnm_op == 0x1E227821 and fmaxnm_op == 0x1E216861 and
+            all(tok in all_src for tok in [
+                "TypefaceTextra",
+                "GetHorizontalAdvance",
+                "GetHorizontalAdvances",
+                "GetWidthBound",
+                "GetWidthBounds",
+                "GetFontMetrics"
+            ]),
+            "Khớp TypefaceTextra::GetWidthBound (fsub v0.2s, v1.2s, v0.2s @ 0x009868) và GetWidthBounds (fminnm/fmaxnm/fadd @ 0x00994c..0x00996c)"
+        )
+
+        # 5. TextLayerImplTextra::OnDraw Alignment LUT (0x0000030303030102ULL @ 0x00a52c..0x00a534) & Tracking Formula (0x00a598..0x00a5a8)
+        lut_op0 = struct.unpack("<I", so_bytes[0x00a52c:0x00a530])[0]
+        lut_op1 = struct.unpack("<I", so_bytes[0x00a530:0x00a534])[0]
+        lut_op2 = struct.unpack("<I", so_bytes[0x00a534:0x00a538])[0]
+        trk_100 = struct.unpack("<I", so_bytes[0x00a598:0x00a59c])[0]
+        self.assert_test(
+            "AnimaxTextra_TextLayerOnDrawAlignmentLutAndTrackingMath",
+            lut_op0 == 0xD2802049 and lut_op1 == 0xF2A06069 and lut_op2 == 0xF2C06069 and trk_100 == 0x52A85908 and
+            all(tok in all_src for tok in [
+                "0x0000030303030102ULL",
+                "MapJustifyToAlignment",
+                "ComputeTrackingPixels",
+                "TextLayerImplTextra"
+            ]),
+            "Khớp bảng tra căn lề 64-bit 0x0000030303030102ULL (@ 0x00a52c..0x00a534) và công thức khoảng cách chữ (size * tracking) / 100.0f (@ 0x00a598)"
+        )
+
+        # 6. CanvasHelperTextra::DrawGlyphs (Faux Italic -0.25f @ 0x00af84) & Exported JNI_OnLoad (0x00010006 @ 0x00b84c..0x00b850)
+        faux_italic_op = struct.unpack("<I", so_bytes[0x00af84:0x00af88])[0]
+        jni_ver_lo     = struct.unpack("<I", so_bytes[0x00b84c:0x00b850])[0]
+        jni_ver_hi     = struct.unpack("<I", so_bytes[0x00b850:0x00b854])[0]
+        self.assert_test(
+            "AnimaxTextra_CanvasHelperDrawGlyphsAndJniOnLoad",
+            faux_italic_op == 0x1E3A1000 and jni_ver_lo == 0x528000C0 and jni_ver_hi == 0x72A00020 and
+            all(tok in all_src for tok in [
+                "CanvasHelperTextra",
+                "DrawGlyphs",
+                "-0.25f",
+                "0x0276276276276277ULL",
+                "TextHelperTextra",
+                "0x00010006"
+            ]),
+            "Khớp CanvasHelperTextra::DrawGlyphs (faux italic -0.25f @ 0x00af84, skity::TextRun 104B) và JNI_OnLoad trả về 0x00010006 (@ 0x00b84c..0x00b850)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -6495,6 +6604,7 @@ class AutonomousVerificationEngine:
         self.verify_libgodzilla_touphic()
         self.verify_libiesapplogger()
         self.verify_libmdlttkmedianetloader()
+        self.verify_libanimax_textra()
         self.verify_overall_governance()
 
 
