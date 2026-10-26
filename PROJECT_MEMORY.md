@@ -2287,3 +2287,18 @@
   - Khôi phục `.init_array[0]` (`0x003820..0x0038f4`) khởi tạo `std::unordered_set<int>` tại `.bss 0x020010` với 39 mã loại kết quả từ `.rodata 0x014f98..0x015033`.
   - Khôi phục bảng nhảy 30 nhánh `convertBachObjectToJava` (`0x00702c..0x00a980`, `.rodata 0x014f5c..0x014f97`: `0x007090 + offset * 4`), `CityHash64` (`0x006be0..0x007028`), 6 vòng lặp mở rộng vector NEON SIMD (`0x00a994..0x00b80c`), và 4 bộ chuyển đổi pixel NEON sang `RGBA8888` (`0x00ff4c..0x0102ac`).
 - **Kết quả kiểm định**: Agent 13 cấp chứng nhận `VERIFIED_AND_ACCEPTED` (**71 / 169 — 42.01%**), `verify_reconstruction_suite.py` đạt **461 / 461 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**.
+
+
+## 99. Trạng Thái Nghiệm Thu Target 72 (`libart_sym.so` — `TASK-111-RECONSTRUCTION-LIBART_SYM` / `TASK_SO_131`) [2026-10-27 04:53:30]
+- **Target**: `libart_sym.so` (`124,720 bytes`, SHA-256: `cb71702453fff0d212d2b7f20aac4c905fdc3e13333538bc0c305b1ad36532e8`).
+- **Sản phẩm C++17 Clean-Room (`249,155 bytes`, `0 stubs`)**:
+  - `SOURCE/GIAI-MA/libart_sym/art_sym_types.h` (`21,428 B`)
+  - `SOURCE/GIAI-MA/libart_sym/art_method_field_modifier.h` (`13,471 B`) & `.cpp` (`32,637 B`)
+  - `SOURCE/GIAI-MA/libart_sym/art_runtime_heap_jit.h` (`19,544 B`) & `.cpp` (`32,113 B`)
+  - `SOURCE/GIAI-MA/libart_sym/art_thread_scoped_hook.h` (`9,105 B`) & `.cpp` (`23,084 B`)
+  - `SOURCE/GIAI-MA/libart_sym/art_sym_interface.h` (`1,909 B`)
+  - `SOURCE/GIAI-MA/libart_sym/art_sym_pseudocode.cpp` (`95,864 B`)
+- **Kết quả kiểm định**:
+  - `adversary_critic_agent.py`: **72 / 169 `VERIFIED_AND_ACCEPTED` (42.60%)** (`591 opcodes`, `100% REAL`).
+  - `verify_reconstruction_suite.py`: **467 / 467 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

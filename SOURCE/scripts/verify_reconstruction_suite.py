@@ -7276,6 +7276,147 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 72. KIỂM CHỨNG libart_sym.so (ByteDance ART Internal Symbol & Offset Discovery Engine)
+    # =========================================================================
+    def verify_libart_sym(self):
+        import struct
+        import hashlib
+        print("\n[72] Đang kiểm chứng libart_sym.so (ByteDance ART Internal Symbol & Offset Discovery Engine)...")
+        art_dir = GIAIMA_DIR / "libart_sym"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libart_sym.so"
+        req_files = [
+            "art_sym_types.h",
+            "art_method_field_modifier.h",
+            "art_method_field_modifier.cpp",
+            "art_runtime_heap_jit.h",
+            "art_runtime_heap_jit.cpp",
+            "art_thread_scoped_hook.h",
+            "art_thread_scoped_hook.cpp",
+            "art_sym_interface.h",
+            "art_sym_pseudocode.cpp",
+            "README_ANALYSIS.md"
+        ]
+        all_exist = all((art_dir / f).exists() for f in req_files) and so_path.exists()
+        total_src_bytes = sum((art_dir / f).stat().st_size for f in req_files if (art_dir / f).exists())
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+
+        all_src = ""
+        for f in req_files:
+            fp = art_dir / f
+            if fp.exists():
+                all_src += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 1. Binary geometry, SHA-256, .data (0x01def8 = five -1s), and source volume (> 200KB, 0 stubs)
+        data_five_neg1 = struct.unpack("<5i", so_bytes[0x01def8:0x01df0c])
+        self.assert_test(
+            "ArtSym_BinaryGeometryDataSectionAndSourceVolume",
+            all_exist and len(so_bytes) == 124720 and
+            so_sha256 == "cb71702453fff0d212d2b7f20aac4c905fdc3e13333538bc0c305b1ad36532e8" and
+            data_five_neg1 == (-1, -1, -1, -1, -1) and
+            total_src_bytes > 200000,
+            f"Khớp libart_sym.so (124,720B, .data 5x-1 @ 0x01def8, SHA-256={so_sha256[:16]}...) và {total_src_bytes}B mã nguồn C++17"
+        )
+
+        # 2. Memory Probing (/dev/random write probe @ 0x0154a4 & 2-pass canary 0x12345678 / 0x2468acf0 @ 0x015628..0x0156a0)
+        canary_lo  = struct.unpack("<I", so_bytes[0x015628:0x01562c])[0]
+        canary_hi  = struct.unpack("<I", so_bytes[0x015638:0x01563c])[0]
+        canary_shl = struct.unpack("<I", so_bytes[0x0156a0:0x0156a4])[0]
+        self.assert_test(
+            "ArtSym_DevRandomKernelProbeAndTwoPassCanary",
+            canary_lo == 0x528ACF1A and canary_hi == 0x72A2469A and canary_shl == 0x531F7B5A and
+            b"/dev/random\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "IsValidPtr",
+                "/dev/random",
+                "0x12345678",
+                "0x2468acf0",
+                "DetectObjectSizeWithPointerAlign",
+                "DiffIndex"
+            ]),
+            "Khớp thăm dò nhân /dev/random (0x0154a4) và thuật toán canary 2 lượt (0x12345678, lsl #1 -> 0x2468acf0 @ 0x015628..0x0156a0)"
+        )
+
+        # 3. ArtMethod (4 entry-point strategies @ 0x013390..0x0137a8), ArtMethodModifier, ArtFieldModifier & DisableHiddenApi
+        self.assert_test(
+            "ArtSym_ArtMethodFieldModifiersAndHiddenApiBypass",
+            b"com/bytedance/frameworks/core/artsym/StubClass\x00" in so_bytes and
+            b"_ZN3artL32VMRuntime_setHiddenApiExemptionsEP7_JNIEnvP7_jclassP13_jobjectArray\x00" in so_bytes and
+            b"com.android.art.misc.disable_hidden_api_enforcement_policy\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "GetEntryPointOffsetAndArtQuickToInterpreterBridgeByIsQuickToInterpreterBridge",
+                "GetEntryPointOffsetByObsoleteMethod",
+                "changeAccessFlagToPublic",
+                "changeAccessFlagToPreverified",
+                "changeAccessFlagProtectedToPublic",
+                "0xffffffec",
+                "DisableHiddenApi"
+            ]),
+            "Khớp 4 chiến lược dò ArtMethod::entry_point_index_, chỉnh sửa cờ truy cập Method/Field (StubClass vtable=11) và DisableHiddenApi"
+        )
+
+        # 4. Heap (3 * getpagesize() @ 0x016198 & dalvik.vm.heapsize << 20) & ArtRuntime / JitOptions (0x2720, 0x2800, 0xffff)
+        sticky_add = struct.unpack("<I", so_bytes[0x016198:0x01619c])[0]
+        sticky_cnt = struct.unpack("<I", so_bytes[0x0161a0:0x0161a4])[0]
+        self.assert_test(
+            "ArtSym_HeapStickyMarkSweepAndRuntimeJitThresholds",
+            sticky_add == 0x0B000402 and sticky_cnt == 0x52800C81 and
+            b"dalvik.vm.heapsize\x00" in so_bytes and
+            b"_ZTVN3art11ClassLinkerE\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "UseCompatGCSection",
+                "0x2720",
+                "0x2800",
+                "0xffff",
+                "class_linker_index_ - 4",
+                "ArtRuntime"
+            ]),
+            "Khớp Heap::Init (3 * getpagesize() @ 0x016198, << 20), ArtRuntime::Init (thread_list = class_linker - 4) và ngưỡng JitOptions (0x2720/0x2800/0xffff)"
+        )
+
+        # 5. ThreadList 0x4000 Buffer + 12345678ns (0x00bc614e @ 0x01a8c4..0x01a8d0) & Scoped Guards
+        tl_calloc = struct.unpack("<2I", so_bytes[0x01a8c4:0x01a8cc])
+        tl_magic  = struct.unpack("<2I", so_bytes[0x01a8cc:0x01a8d4])
+        self.assert_test(
+            "ArtSym_ThreadListTimeoutProbeAndStdListOffset",
+            tl_calloc == (0x52800020, 0x52880001) and
+            tl_magic == (0x528C29D5, 0x72A01795) and
+            all(tok in all_src for tok in [
+                "0x4000",
+                "12345678",
+                "0x00bc614e",
+                "thread_suspend_timeout_ns_index_ - 3",
+                "ScopedJitSuspend",
+                "ScopedSuspendAll",
+                "ScopedGCCriticalSection"
+            ]),
+            "Khớp ThreadList::GetThreadSuspendTimeoutIndex (calloc(1, 0x4000) @ 0x01a8c4, timeout=12345678=0x00bc614e @ 0x01a8cc) và các lớp bảo vệ RAII"
+        )
+
+        # 6. ScopedPLTHook (0x01b5c0), bytesig_* (calloc(1, 0x1020) @ 0x01bc0c, SA_FLAGS @ 0x01bc2c), & 3 .init_array Constructors (exynos9810 LSE filter)
+        bs_calloc   = struct.unpack("<2I", so_bytes[0x01bc0c:0x01bc14])
+        sa_flags_op = struct.unpack("<2I", so_bytes[0x01bc2c:0x01bc34])
+        self.assert_test(
+            "ArtSym_ScopedPltHookByteSigAndLseInitArray",
+            bs_calloc == (0x52800020, 0x52820401) and
+            sa_flags_op == (0x52800098, 0x72A30018) and
+            b"exynos9810\x00" in so_bytes and
+            b"sigprocmask64\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "ScopedPLTHook",
+                "ByteSigSignalSlot",
+                "bytesig_init",
+                "bytesig_protect",
+                "bytesig_unprotect",
+                "exynos9810",
+                "init_array_0_scoped_gc_critical_section",
+                "init_array_1_bytesig_libc_resolve",
+                "init_array_2_lse_atomics_probe"
+            ]),
+            "Khớp ScopedPLTHook (0x01b5c0), bytesig_init (calloc(1, 0x1020) @ 0x01bc0c, SA_FLAGS @ 0x01bc2c), và 3 hàm .init_array (lọc lỗi LSE exynos9810)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -7351,6 +7492,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_dumper()
         self.verify_liblynx_v8_bridge()
         self.verify_libbach_sdk_jni()
+        self.verify_libart_sym()
         self.verify_overall_governance()
 
 

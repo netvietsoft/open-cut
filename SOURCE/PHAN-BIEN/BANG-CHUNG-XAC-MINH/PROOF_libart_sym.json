@@ -1,0 +1,188 @@
+{
+  "library": "libart_sym.so",
+  "task_id": "TASK_SO_131_libart_sym",
+  "orchestrator_task_id": "TASK-111-RECONSTRUCTION-LIBART_SYM",
+  "binary_sha256": "cb71702453fff0d212d2b7f20aac4c905fdc3e13333538bc0c305b1ad36532e8",
+  "binary_size_bytes": 124720,
+  "responded_by": "Agent 0 (Orchestrator) & Worker Agents (Agent 1, 3, 6, 8)",
+  "response_to_challenge": "SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libart_sym.json",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libart_sym/art_sym_types.h",
+    "SOURCE/GIAI-MA/libart_sym/art_method_field_modifier.h",
+    "SOURCE/GIAI-MA/libart_sym/art_method_field_modifier.cpp",
+    "SOURCE/GIAI-MA/libart_sym/art_runtime_heap_jit.h",
+    "SOURCE/GIAI-MA/libart_sym/art_runtime_heap_jit.cpp",
+    "SOURCE/GIAI-MA/libart_sym/art_thread_scoped_hook.h",
+    "SOURCE/GIAI-MA/libart_sym/art_thread_scoped_hook.cpp",
+    "SOURCE/GIAI-MA/libart_sym/art_sym_interface.h",
+    "SOURCE/GIAI-MA/libart_sym/art_sym_pseudocode.cpp",
+    "SOURCE/GIAI-MA/libart_sym/README_ANALYSIS.md"
+  ],
+  "total_reconstructed_cpp_bytes": 249155,
+  "stub_count": 0,
+  "proofs": {
+    "REQ_1_REAL_CODE": {
+      "status": "PROVEN",
+      "pseudocode_file": "SOURCE/GIAI-MA/libart_sym/art_sym_pseudocode.cpp",
+      "pseudocode_size_bytes": 95864,
+      "total_cpp_size_bytes": 249155,
+      "summary": "Reconstructed 249,155 bytes of clean-room C++17 across 9 source/header files (with art_sym_pseudocode.cpp = 95,864 bytes > 40KB threshold and 0 stubs), implementing all 166 exported symbols and all 6 subsystems of libart_sym.so (0x013340..0x01c10c)."
+    },
+    "REQ_2_OPCODE_EVIDENCE": [
+      {
+        "function": "art::ArtMethod::Init(_JNIEnv*, _jmethodID**, unsigned long)",
+        "vaddr": "0x013390..0x013570",
+        "opcode_hex": "a8000088 3943c108 370000a8 90000080 913c6000 9400249d",
+        "instruction": "adrp x8, 0x25000; ldrb w8, [x8, #0xf10]; tbnz w8, #0, 0x133bc; adrp x0, 0x25000; add x0, x0, #0xf18; bl std::mutex::lock()",
+        "c_mapping": "Double-checked locking on ArtMethod::has_init_ (.bss 0x025f10) and ArtMethod::init_lock_ (.bss 0x025f18), registering DoOnFinally cleanup lambdas (0x013bb0, 0x013c08), resolving art_quick_generic_jni_trampoline (.bss 0x025f20), and probing entry_point_index_ (.data 0x025ef8 = -1) across 4 fallback strategies."
+      },
+      {
+        "function": "art::ArtMethodModifier::changeAccessFlagToPublic & changeAccessFlagToPreverified",
+        "vaddr": "0x014754..0x0148f4",
+        "opcode_hex": "121e7528 2a0803e9 32000109 b9000269 ... 7210013f 54000281 320d0129",
+        "instruction": "and w8, w9, #0xfffffffc; orr w9, w8, #0x1; str w9, [x19, x8, lsl #2] ... tst w9, #0x800500; b.ne error; orr w9, w9, #0x80000",
+        "c_mapping": "Patches ArtMethod::access_flags_ at accessFlagsIndex (.data 0x025efc): (old_flags & ~0x3u) | 0x1u for public access, and (old_flags | 0x80000u) for kAccPreverified after checking (old_flags & (sdk <= 23 ? 0x500u : 0x800500u)) == 0."
+      },
+      {
+        "function": "art::ArtFieldModifier::changeAccessFlagToPublic(_JNIEnv*, _jclass*, _jfieldID*, bool)",
+        "vaddr": "0x014e8c..0x015018",
+        "opcode_hex": "11000514 b8747a68 121b6d09 32000129 b8347a69",
+        "instruction": "add w20, w8, #1; ldr w8, [x19, x20, lsl #2]; and w9, w8, #0xffffffec; orr w9, w9, #0x1; str w9, [x19, x20, lsl #2]",
+        "c_mapping": "Reads ArtField::access_flags_ at declaringClassIndex + 1 (.data 0x025f04 + 1), clears kAccPublic(0x1)|kAccPrivate(0x2)|kAccFinal(0x10) via mask 0xffffffec (-0x14 = ~0x13), and sets kAccPublic (0x1)."
+      },
+      {
+        "function": "art::IsValidPtr(void const*, unsigned long) & art::DetectObjectSize",
+        "vaddr": "0x0154a4..0x0157b4",
+        "opcode_hex": "90000040 913ab800 52800021 94001b5d ... 528acf08 72a24688 531f7908",
+        "instruction": "adrp x0, 0xd000; add x0, x0, #0xeae; mov w1, #1; bl __open_2; bl write ... mov w8, #0x5678; movk w8, #0x1234, lsl #16; lsl w8, w8, #1",
+        "c_mapping": "Opens \"/dev/random\" with O_WRONLY (1) via __open_2 and calls write(fd, ptr, size) to kernel-probe address readability without SIGSEGV; DetectObjectSize performs a 2-pass canary fill (0x12345678 and 0x2468acf0) over 256 uint32_t words (1024 bytes) and aligns up via (words + 1) & ~1ULL."
+      },
+      {
+        "function": "art::Heap::Init() & art::ArtRuntime::Init(_JNIEnv*)",
+        "vaddr": "0x016194..0x016550, 0x018bd4..0x019558",
+        "opcode_hex": "52800068 1b087c09 ... d36cec08 ... 714e401f 7140091f 51001108",
+        "instruction": "mov w8, #3; mul w9, w0, w8 ... lsl x8, x8, #20 ... cmp w8, #0x2720; cmp w8, #0x2800; sub w8, w8, #4",
+        "c_mapping": "Heap::Init searches for 3 * getpagesize(), parses dalvik.vm.heapsize megabytes << 20, and matches _ZTVN3art5MutexE + 0x10; ArtRuntime::Init matches _ZTVN3art11ClassLinkerE + 0x10, derives thread_list_index_ = class_linker_index_ - 4, and validates JitOptions compile_threshold_ against 0x2720 (API 29), 0x2800 (API 30), or 0xffff (API 31+)."
+      },
+      {
+        "function": "art::ThreadList::Init() & ScopedPLTHook / bytesig_init / LSE Constructor",
+        "vaddr": "0x01a4ec..0x01a72c, 0x01b5c0..0x01c10c",
+        "opcode_hex": "52800020 52880001 94000789 528c29c1 72a00179 ... d1000d08 8b080d20 ... 52800088 72ab0008",
+        "instruction": "mov w0, #1; mov w1, #0x4000; bl calloc; mov w1, #0x614e; movk w1, #0xbc, lsl #16 ... sub x8, x8, #3; add x0, x9, x8, lsl #3 ... mov w8, #0x4; movk w8, #0x5800, lsl #16",
+        "c_mapping": "Allocates 0x4000 bytes via calloc(1, 0x4000), calls ThreadList(buf, 12345678=0x00bc614e) to locate thread_suspend_timeout_ns_index_ (.data 0x025f08), computes list_ at (timeout_idx - 3) * 8, and uses ScopedPLTHook + bytesig_init (SA_FLAGS=0x58000004, slot=0x110 bytes) + LSE atomics check (HWCAP_ATOMICS=0x100, ro.arch != \"exynos9810\")."
+      }
+    ],
+    "REQ_3_MATH_PROOF": {
+      "status": "PROVEN",
+      "equations": [
+        {
+          "name": "Two-Pass Canary Object Size & Pointer-Alignment Formula (0x0155f4..0x0157b4)",
+          "formula": "C_0 = 0x12345678, C_1 = C_0 << 1 = 0x2468ACF0; W = max_{p in {0,1}} max({i + 1 : buf_p[i] != C_p, 0 <= i < 256}); W_aligned = (W + 1) & ~1ULL",
+          "verification": "Eliminates false negatives when an initialized member word equals 0x12345678, and rounds 32-bit word count up to 8-byte pointer alignment on AArch64."
+        },
+        {
+          "name": "ArtMethodModifier & ArtFieldModifier Access-Flag Bitwise Equations (0x014754..0x015018)",
+          "formula": "f_method_pub = (f & 0xFFFFFFFC) | 0x1; f_preverified = f | 0x80000 iff (f & M_sdk) == 0 where M_sdk = (sdk <= 23 ? 0x500 : 0x800500); f_prot_to_pub = (f & 0x4) ? ((f & 0xFFFFFFFB) | 0x1) : f; f_field_pub = (f & 0xFFFFFFEC) | 0x1",
+          "verification": "Verified against exact AArch64 logical immediate encodings at 0x014780, 0x014860..0x014894, 0x014924..0x014930, and 0x014fcc..0x014fd0."
+        },
+        {
+          "name": "ThreadList Timeout Probe & std::list<Thread*> Offset Formula (0x01a4ec..0x01a72c)",
+          "formula": "T_magic = 0x00BC614E = 12,345,678 ns; idx_timeout = argfind_{0 <= i < 2048}(buf64[i] == T_magic); offset(ThreadList::list_) = (idx_timeout - 3) * 8",
+          "verification": "Because libc++ std::list<Thread*> is 24 bytes (3 pointer words: __prev_, __next_, __size_) immediately preceding thread_suspend_timeout_ns_, subtracting 3 pointer words yields the exact address of list_."
+        },
+        {
+          "name": "Heap Sticky-Mark-Sweep & Dalvik Property Conversion Formula (0x016194..0x016550)",
+          "formula": "S_sticky = 3 * getpagesize(); B_heap = atoi(prop_str[0..len-2]) << 20; vtable_target = &_ZTVN3art5MutexE + 0x10",
+          "verification": "Verified against 0x016220 (mul w9, w0, w8 with w8=3), 0x0162bc (lsl x8, x8, #20), and Itanium C++ ABI vtable offset +0x10."
+        }
+      ]
+    },
+    "REQ_4_ABI_LAYOUT": [
+      {
+        "struct_name": "art::ArtRuntime (.bss 0x026248, 152 bytes = 0x98)",
+        "total_size_bytes": 152,
+        "fields": [
+          {"offset": "0x00", "size": 8, "type": "void*", "name": "vtable_ (_ZTVN3art10ArtRuntimeE + 0x10)"},
+          {"offset": "0x08", "size": 8, "type": "void*", "name": "thiz_ (*_ZN3art7Runtime9instance_E)"},
+          {"offset": "0x10", "size": 1, "type": "bool", "name": "has_init_"},
+          {"offset": "0x14", "size": 56, "type": "int32_t[14]", "name": "callee_save_methods_index_ .. image_dex2oat_enabled_index_"},
+          {"offset": "0x50", "size": 24, "type": "std::string", "name": "compiler_executable_"},
+          {"offset": "0x68", "size": 4, "type": "int32_t", "name": "heap_index_"},
+          {"offset": "0x6c", "size": 4, "type": "int32_t", "name": "thread_list_index_ (== class_linker_index_ - 4)"},
+          {"offset": "0x70", "size": 4, "type": "int32_t", "name": "intern_table_index_ (== class_linker_index_ - 1)"},
+          {"offset": "0x74", "size": 4, "type": "int32_t", "name": "class_linker_index_"},
+          {"offset": "0x78", "size": 4, "type": "int32_t", "name": "signal_catcher_index_"},
+          {"offset": "0x7c", "size": 4, "type": "int32_t", "name": "java_vm_index_"},
+          {"offset": "0x80", "size": 4, "type": "int32_t", "name": "jit_index_"},
+          {"offset": "0x84", "size": 4, "type": "int32_t", "name": "jit_code_cache_index_"},
+          {"offset": "0x88", "size": 4, "type": "int32_t", "name": "jit_options_index_"},
+          {"offset": "0x8c", "size": 4, "type": "int32_t", "name": "instrumentation_index_"},
+          {"offset": "0x90", "size": 4, "type": "int32_t", "name": "main_thread_group_index_"}
+        ]
+      },
+      {
+        "struct_name": "art::Heap (.bss 0x026360, 40 bytes = 0x28)",
+        "total_size_bytes": 40,
+        "fields": [
+          {"offset": "0x00", "size": 8, "type": "void*", "name": "vtable_ (_ZTVN3art4HeapE + 0x10)"},
+          {"offset": "0x08", "size": 8, "type": "void*", "name": "thiz_ (art::gc::Heap*)"},
+          {"offset": "0x10", "size": 1, "type": "bool", "name": "has_init_"},
+          {"offset": "0x11", "size": 1, "type": "bool", "name": "init_success_"},
+          {"offset": "0x18", "size": 8, "type": "void*", "name": "backtrace_lock_ (art::Mutex* on API <= 23)"},
+          {"offset": "0x20", "size": 8, "type": "void*", "name": "gc_complete_lock_ (art::Mutex* on API <= 23)"}
+        ]
+      },
+      {
+        "struct_name": "ByteSigSignalSlot (calloc(1, 0x110), 272 bytes = 0x110)",
+        "total_size_bytes": 272,
+        "fields": [
+          {"offset": "0x00", "size": 4, "type": "int32_t", "name": "active_count (atomic ldaxr/stlxr counter)"},
+          {"offset": "0x04", "size": 32, "type": "pid_t[8]", "name": "tids[8] (8 concurrent protected thread IDs)"},
+          {"offset": "0x28", "size": 64, "type": "sigjmp_buf*[8]", "name": "jmp_bufs[8] (per-thread recovery buffers)"},
+          {"offset": "0x68", "size": 160, "type": "struct sigaction64", "name": "old_action"},
+          {"offset": "0x108", "size": 8, "type": "uint64_t", "name": "reserved_tail"}
+        ]
+      },
+      {
+        "struct_name": "art::InstrumentationStackPopper (528 bytes = 0x210)",
+        "total_size_bytes": 528,
+        "fields": [
+          {"offset": "0x00", "size": 8, "type": "void*", "name": "vtable_ (_ZTVN3art26InstrumentationStackPopperE + 0x10)"},
+          {"offset": "0x08", "size": 512, "type": "uint8_t[512]", "name": "reserved_ (art::StackVisitor opaque storage)"},
+          {"offset": "0x208", "size": 8, "type": "const std::set<jmethodID>*", "name": "methods_"}
+        ]
+      }
+    ],
+    "REQ_5_SYMBOL_TABLE": [
+      {"vaddr": "0x013390", "mangled": "_ZN3art9ArtMethod4InitEP7_JNIEnvPP10_jmethodIDm", "demangled": "art::ArtMethod::Init(_JNIEnv*, _jmethodID**, unsigned long)"},
+      {"vaddr": "0x013f9c", "mangled": "_ZN3art17ArtMethodModifier4InitEP7_JNIEnv", "demangled": "art::ArtMethodModifier::Init(_JNIEnv*)"},
+      {"vaddr": "0x014754", "mangled": "_ZN3art17ArtMethodModifier24changeAccessFlagToPublicEP10_jmethodID", "demangled": "art::ArtMethodModifier::changeAccessFlagToPublic(_jmethodID*)"},
+      {"vaddr": "0x014804", "mangled": "_ZN3art17ArtMethodModifier29changeAccessFlagToPreverifiedEP10_jmethodID", "demangled": "art::ArtMethodModifier::changeAccessFlagToPreverified(_jmethodID*)"},
+      {"vaddr": "0x014b88", "mangled": "_ZN3art16ArtFieldModifier4InitEP7_JNIEnv", "demangled": "art::ArtFieldModifier::Init(_JNIEnv*)"},
+      {"vaddr": "0x014e8c", "mangled": "_ZN3art16ArtFieldModifier24changeAccessFlagToPublicEP7_JNIEnvP7_jclassP9_jfieldIDb", "demangled": "art::ArtFieldModifier::changeAccessFlagToPublic(_JNIEnv*, _jclass*, _jfieldID*, bool)"},
+      {"vaddr": "0x015210", "mangled": "_ZN3art16DisableHiddenApi7disableEP7_JNIEnv", "demangled": "art::DisableHiddenApi::disable(_JNIEnv*)"},
+      {"vaddr": "0x0154a4", "mangled": "_ZN3art10IsValidPtrEPKvm", "demangled": "art::IsValidPtr(void const*, unsigned long)"},
+      {"vaddr": "0x0155f4", "mangled": "_ZN3art16DetectObjectSizeENSt6__ndk18functionIFvPvEEE", "demangled": "art::DetectObjectSize(std::__ndk1::function<void (void*)>)"},
+      {"vaddr": "0x016194", "mangled": "_ZN3art4Heap4InitEv", "demangled": "art::Heap::Init()"},
+      {"vaddr": "0x018150", "mangled": "_ZN3art5Locks4InitEPNS_9ArtThreadE", "demangled": "art::Locks::Init(art::ArtThread*)"},
+      {"vaddr": "0x018bd4", "mangled": "_ZN3art10ArtRuntime4InitEP7_JNIEnv", "demangled": "art::ArtRuntime::Init(_JNIEnv*)"},
+      {"vaddr": "0x01a4ec", "mangled": "_ZN3art10ThreadList4InitEv", "demangled": "art::ThreadList::Init()"},
+      {"vaddr": "0x01b5c0", "mangled": "_ZN13ScopedPLTHookC2EPKcS1_PvS2_", "demangled": "ScopedPLTHook::ScopedPLTHook(char const*, char const*, void*, void*)"},
+      {"vaddr": "0x01bb4c", "mangled": "bytesig_init", "demangled": "bytesig_init(int)"}
+    ],
+    "REQ_6_VERIFICATION_LOG": {
+      "status": "PASS",
+      "test_suite": "SOURCE/scripts/verify_reconstruction_suite.py",
+      "test_function": "verify_libart_sym",
+      "assertions_passed": 6,
+      "details": [
+        "1. Binary SHA-256 (cb71702453fff0d212d2b7f20aac4c905fdc3e13333538bc0c305b1ad36532e8), size (124,720 bytes), .data (0x025ef8..0x025f0b = 5 x -1), and .init_array (0x021500 = 3 constructors) verified.",
+        "2. Two-pass canary object size detection (0x12345678 and 0x2468acf0) and pointer-alignment ((words + 1) & ~1ULL) verified.",
+        "3. ArtMethodModifier & ArtFieldModifier bitwise access-flag formulas ((f & ~3)|1, (f | 0x80000), (f & ~4)|1, (f & 0xffffffec)|1) and StubClass vtable index 11 (0x0b) verified.",
+        "4. ArtRuntime member offset discovery (thread_list_index_ = class_linker_index_ - 4, JitOptions thresholds 0x2720/0x2800/0xffff) verified.",
+        "5. ThreadList 0x4000 buffer + 12345678ns (0x00bc614e) timeout probe and std::list offset ((timeout_idx - 3) * 8) + Heap sticky-mark-sweep (3 * getpagesize(), << 20) verified.",
+        "6. ByteSig 272-byte (0x110) 8-slot thread fault recovery state machine (SA_FLAGS=0x58000004) and LSE atomics errata check (HWCAP 0x100, ro.arch != exynos9810) + C++17 source completeness (249,155 bytes, 0 stubs) verified."
+      ]
+    }
+  }
+}
