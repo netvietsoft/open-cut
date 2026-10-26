@@ -1,0 +1,23 @@
+{
+  "task_id": "TASK-093-RECONSTRUCTION-LIBSPEECHENGINE",
+  "legacy_task_id": "TASK_SO_015",
+  "title": "Clean-Room C++17 Reconstruction of libspeechengine.so (ByteDance SpeechEngine JNI Bridge & Listener)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 / Agent 7 - RECONSTRUCTION",
+  "verified_by": "Agent 13 - ADVERSARY AUDITOR",
+  "completed_at": "2026-10-26T22:11:00+07:00",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libspeechengine/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libspeechengine.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_015_libspeechengine.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "verification_metrics": {
+    "cpp_total_bytes": 112609,
+    "reconstructed_files_count": 8,
+    "verified_libraries_count": 54,
+    "test_suite_passed": 359,
+    "test_suite_failed": 0,
+    "watchdog_high_findings": 0
+  }
+}

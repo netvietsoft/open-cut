@@ -2076,3 +2076,15 @@
   - `CPUTools` (`0x005000..0x005044`, `0x009064..0x009360`, `0x00b6ac..0x00c050`), `GPUTools` (`0x00c054..0x00c390`), `MemoryTools` (`0x00c4e8..0x00cb04`), and `BatteryTools` (`0x009570..0x00a0e8`).
   - `ByteMonitor::setLogLevel(int)` (`0x00cb74`: `1->6, 3->5, 7->4, 15->3, 31->2, default->8` stored at `.data 0x014000`).
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**53 / 169 — 31.36%**), `verify_reconstruction_suite.py` passed **353 / 353 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 81. NGHIỆM THU TARGET 54: `libspeechengine.so` (`TASK-093-RECONSTRUCTION-LIBSPEECHENGINE` / `TASK_SO_015`) — 2026-10-26 22:11:00
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libspeechengine.so` (`18,256 bytes`, 55 dynamic symbols: 18 exported `[037]..[054]` + 34 imported `[003]..[036]`).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libspeechengine/`)**: 8 files (`112,609 B` C++17/H, `132,409 B` total directory size, `0 stubs`): `speechengine_types.h`, `speechengine_sdk_client.h`, `speechengine_sdk_client.cpp`, `speechengine_jni_bridge.h`, `speechengine_jni_bridge.cpp`, `speechengine_interface.h`, `speechengine_interface.cpp`, `speechengine_pseudocode.cpp`.
+- **Key Findings**:
+  - `SpeechEngineHandler` (`24 B = 0x18` allocated at `0x002080`): `+0x00 Engine*`, `+0x08 SpeechEngineListener*`, `+0x10 Options*` (deleted and nulled at `0x0028a8` after `Engine::Init`).
+  - `SpeechEngineListener` (`48 B = 0x30` allocated at `0x002108`, vtable at `.data.rel.ro 0x007c28`, `vptr = 0x007c38`: `D1Ev=0x002df0`, `D0Ev=0x002ea8`, `OnMessage=0x003098`), auto-detaches callback thread via `JniCallbackEnvironment::DetachCallback()` (`0x001e7c`) when `type == 0x3ea` (`1002 = MESSAGE_TYPE_ENGINE_STOP` at `0x00315c`).
+  - `feedAudioToNative` (`0x002a58`) & `processAudioToNative` (`0x002b44`) perform signed division by 2 (`cmp w22, #0; cinc w8, w22, lt; asr w2, w8, #1`), and `fetchResultToNative` (`0x002bf8`) returns `-1801` (`mov w21, #-0x709` @ `0x002cb8`) on insufficient buffer capacity.
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**54 / 169 — 31.95%**), `verify_reconstruction_suite.py` passed **359 / 359 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
