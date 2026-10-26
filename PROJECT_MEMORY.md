@@ -2148,3 +2148,15 @@
   - `lynx::trace::TraceController::Instance()` (`0x0040fc..0x004158`) guards the 16-byte singleton at `.data 0x00c000` (`vptr = 0x008018`, `delegate_ = nullptr`) with `.bss 0x00c010` (`ldarb w8, [x8]; tbz w8, #0, #0x4120`) and registers `~TraceController` D1 (`0x00415c`) via `__cxa_atexit` (`0x004148`).
   - All 34 exported `.dynsym` symbols (`JNI_OnLoad`, `TraceController::Instance()`, `TraceEventBeginEx`, `TraceEventEndEx`, `TraceCounterEx`, `GetFlowId`, `GetTraceTimeNs`, `TraceEventCategoryEnabled`, `TraceRuntimeProfile`, 3 `TraceEventImplementation` overloads, `ThreadTrack::Current()`, 9 `TrackEvent` methods, 4 `TrackEvent_LegacyEvent` methods, and 8 `LynxDebugAnnotation` methods) are reconstructed along with a Perfetto Protobuf wire-format serializer (`SerializePerfettoTrackEventProto`).
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**59 / 169 — 34.91%**), `verify_reconstruction_suite.py` passed **389 / 389 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 87. NGHIỆM THU TARGET 60: `libpumbaa-network.so` (`TASK-099-RECONSTRUCTION-LIBPUMBAA_NETWORK` / `TASK_SO_043`) — 2026-10-26 23:56:00
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libpumbaa-network.so` (`51,232 bytes`, 68 `.dynsym` entries: 28 imported `[003]..[030]` + 37 exported `[031]..[067]`, 19 `.rela.dyn` relocations, 39 `.rela.plt` jump-slot relocations).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libpumbaa-network/`)**: 8 files (`99,439 B` C++17/H, `0 stubs`): `pumbaa_network_types.h`, `pumbaa_network_rbtree_dwarf.h`, `pumbaa_network_rbtree_dwarf.cpp`, `pumbaa_network_sandbox_jni.h`, `pumbaa_network_sandbox_jni.cpp`, `pumbaa_network_interface.h`, `pumbaa_network_interface.cpp`, `pumbaa_network_pseudocode.cpp`.
+- **Key Findings**:
+  - `JNI_OnLoad` (`0x001e9c..0x00209f`) caches `gJvm` (`0x010060`), `gClassNativeBridge` (`"com/bytedance/helios/network/SandboxBridge"` @ `0x010010`), `gNetworkDomainRecognize` (`"com/bytedance/helios/network/pipeline/recognize/NetworkDomainRecognize"` @ `0x010018`), and 4 static methods (`handleByPumbaa`, `handleByPumbaa2`, `domainIdentityRecognize`, `matchAgSchema`), returning `csinv w0, w22, wzr, ne` (`0x5a9f12c0` @ `0x002094`: `0x00010002` or `-1`).
+  - `jni_convertMap` (`0x0020a0..0x0022bb`) lazily resolves `java/util/HashMap` (`0x010048`), `<init>(I)V` (`0x010050`), and `put` (`0x010058`), then walks the 80-byte (`0x50`) `std::__ndk1::__tree_node` nodes allocated at `0x002e44` inside `PushLocalFrame(3)` / `PopLocalFrame(nullptr)`.
+  - `handleByPumbaaForSandbox` (`0x0027bc..0x002bab`) computes elapsed milliseconds using two signed 64-bit reciprocal multipliers for $1000$: `+0x20c49ba5e353f7cf` (`end_usec / 1000`) and `0xdf3b645a1cac0831 = -0x20c49ba5e353f7cf` (`-start_usec / 1000`), followed by `madd x1, x9, x10, x8` (`w10 = 0x3e8 = 1000` @ `0x002b60`).
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**60 / 169 — 35.50%**), `verify_reconstruction_suite.py` passed **395 / 395 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.

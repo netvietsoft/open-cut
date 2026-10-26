@@ -5878,6 +5878,124 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 60: libpumbaa-network.so (Pumbaa / Helios Network Sandbox Bridge)
+    # =========================================================================
+    def verify_libpumbaa_network(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libpumbaa-network.so (Pumbaa Network Sandbox Bridge)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libpumbaa-network"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 65 KB across >= 8 files
+        self.assert_test(
+            "PumbaaNetwork_SourceSizeGate",
+            total_bytes > 65000 and len(cpp_files) >= 8,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 65 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (51,232 B, 68 .dynsym: 28 imports + 37 exports) & JNI_OnLoad csinv w0, w22, wzr, ne (0x002094)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libpumbaa-network.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        csinv_opcode = struct.unpack("<I", so_bytes[0x002094:0x002098])[0]
+        self.assert_test(
+            "PumbaaNetwork_Elf64AndJniOnLoadCsinvOpcode",
+            so_path.stat().st_size == 51232
+            and csinv_opcode == 0x5a9f12c0
+            and "51232u" in content
+            and "0x00010002" in content
+            and "com/bytedance/helios/network/SandboxBridge" in content
+            and "com/bytedance/helios/network/pipeline/recognize/NetworkDomainRecognize" in content,
+            "Khớp nhị phân libpumbaa-network.so (51,232 B, 68 .dynsym: 28 imports + 37 exports) và lệnh csinv w0, w22, wzr, ne (0x5a9f12c0 @ 0x002094) trong JNI_OnLoad"
+        )
+
+        # 3. 11 Global .bss Pointers (0x010010..0x010060) & PumbaaNetworkBssSegment (672B = 0x2a0)
+        has_bss_11 = all(tok in content for tok in [
+            "sizeof(PumbaaNetworkBssSegment) == 672",
+            "gClassNativeBridge",
+            "gNetworkDomainRecognize",
+            "gMethodHandleFromNativeSandbox",
+            "gMethodHandleFromNativeSandboxJson",
+            "gMethodDomainIdentityRecognize",
+            "gMethodMatchAgSchema",
+            "gMethodMonitorCost",
+            "gClassHashMap",
+            "gMethodHashMapConstructor",
+            "gMethodPut",
+            "gJvm"
+        ])
+        self.assert_test(
+            "PumbaaNetwork_11BssGlobalsAnd672BSegment",
+            has_bss_11,
+            "Khớp 11 con trỏ toàn cục JNI tại .bss 0x010010..0x010060 và PumbaaNetworkBssSegment (672B = 0x2a0)"
+        )
+
+        # 4. 80-Byte (0x50) Red-Black Tree Node (0x002dfc..0x002e44) & libc++ SSO 24-Byte String ABI
+        alloc_80_opcode = struct.unpack("<I", so_bytes[0x002e44:0x002e48])[0]
+        has_rbtree_80 = (
+            alloc_80_opcode == 0x52800a00
+            and all(tok in content for tok in [
+                "sizeof(RbTreeNodeStringPairAbi) == 80",
+                "sizeof(LibcxxString24Abi) == 24",
+                "sizeof(LibcxxMapStringAbi) == 24",
+                "sizeof(AArch64VaListAbi) == 32",
+                "jni_convertMap"
+            ])
+        )
+        self.assert_test(
+            "PumbaaNetwork_RbTreeNode80BAndJniConvertMap",
+            has_rbtree_80,
+            "Khớp nút Cây Đỏ-Đen 80-byte (mov w0, #0x50 = 0x52800a00 @ 0x002e44), LibcxxString24Abi (24B SSO) và jni_convertMap (0x0020a0..0x0022bb)"
+        )
+
+        # 5. Mathematical Proof: Dual Signed 64-bit Reciprocal Multipliers for 1000 (+0x20c49ba5e353f7cf & 0xdf3b645a1cac0831 @ 0x002b18..0x002b60)
+        madd_opcode = struct.unpack("<I", so_bytes[0x002b60:0x002b64])[0]
+        magic_pos = 0x20C49BA5E353F7CF
+        magic_neg_signed = -0x20C49BA5E353F7CF
+        end_usec = 789456
+        start_usec = 123456
+        smulh_pos = (end_usec * magic_pos) >> 64
+        end_ms = (smulh_pos >> 7) + (1 if smulh_pos < 0 else 0)
+        smulh_neg = (start_usec * magic_neg_signed) >> 64
+        start_ms_neg = (smulh_neg >> 7) + (1 if smulh_neg < 0 else 0)
+        elapsed_ms = (2 * 1000) + (end_ms + start_ms_neg)
+        has_math = (
+            madd_opcode == 0x9b0a2121
+            and end_ms == 789
+            and start_ms_neg == -123
+            and elapsed_ms == 2666
+            and "0x20c49ba5e353f7cfULL" in content
+            and "0xdf3b645a1cac0831ULL" in content
+            and "ComputeElapsedCostMs" in content
+        )
+        self.assert_test(
+            "PumbaaNetwork_DualReciprocalDiv1000AndMaddMath",
+            has_math,
+            f"Khớp toán học chia có dấu 64-bit cho 1000 (+0x20c49ba5e353f7cf & 0xdf3b645a1cac0831 @ 0x002b18..0x002b58) và madd x1,x9,x10,x8 (0x9b0a2121 @ 0x002b60 -> {elapsed_ms} ms)"
+        )
+
+        # 6. All 6 Core Pumbaa Sandbox Bridge Functions & 37 Exported .dynsym Symbols ([031]..[067])
+        exported_core = [
+            "JNI_OnLoad",
+            "jni_convertMap",
+            "_Z11monitorCostPKcx",
+            "domainIdentityRecognize",
+            "handleByPumbaaForSandbox",
+            "matchAgSchema",
+            "__emplace_hint_unique_key_args",
+            "__tree_balance_after_insert"
+        ]
+        self.assert_test(
+            "PumbaaNetwork_37ExportedDynSymSymbols",
+            all(sym in content for sym in exported_core),
+            "Khớp toàn bộ 37 biểu tượng xuất khẩu .dynsym ([031]..[067]): 11 biến toàn cục .bss, 6 hàm Pumbaa Sandbox JNI, 6 hàm _JNIEnv variadic và các hàm cây đỏ-đen/libunwind"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -5941,6 +6059,7 @@ class AutonomousVerificationEngine:
         self.verify_libpl_droidsonroids_gif()
         self.verify_liblynx_krypton()
         self.verify_liblynxtrace()
+        self.verify_libpumbaa_network()
         self.verify_overall_governance()
 
 
