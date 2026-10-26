@@ -50,23 +50,19 @@ static URLProtocol s_default_memorydatasource_protocol = {
 };
 
 /**
- * @brief Default DNS resolver hook routing through TTNet.
+ * @brief Default DNS resolver hook routing through TTNet HTTPDNS cache and RFC-1123 validation.
+ * Bộ giải quyết tên miền mặc định tra cứu bảng HTTPDNS của TTNet, từ chối các tên miền sai cú pháp.
  */
 static int default_dns_resolve(const char* host, char* ip_buf, int ip_buf_len) {
-    if (!host || !ip_buf || ip_buf_len < 16) return -1;
-    // Route domain resolution to TTNet / Cronet cache
-    snprintf(ip_buf, ip_buf_len, "127.0.0.1");
-    return 0;
+    return tt_default_dns_resolve(host, ip_buf, ip_buf_len);
 }
 
 /**
- * @brief Default SSL certificate verification callback for pinning.
+ * @brief Default SSL certificate verification callback performing ASN.1 DER, validity, SAN/CN and SPKI pinning checks.
+ * Hàm xác thực chứng chỉ TLS/SSL kiểm tra cấu trúc ASN.1 DER, thời hạn, tên miền SAN/CN và khóa SPKI Pinning.
  */
 static int default_ssl_verify(void* cert_ctx, const char* hostname) {
-    (void)cert_ctx;
-    (void)hostname;
-    // Strict ByteDance SSL Pinning validation against hardcoded root CAs
-    return 1; // 1 = Valid, 0 = MITM detected
+    return tt_default_ssl_verify(cert_ctx, hostname);
 }
 
 /**
@@ -216,6 +212,59 @@ bool ttffmpeg_verify_ttm_app_cast_parity(void) {
     invalid_app.magic = (void*)0xdeadbeef;
     invalid_app.version = TTM_APP_CALLBACK_VERSION;
     if (av_ttm_app_cast(&invalid_app) != NULL) {
+        return false;
+    }
+
+    return true;
+}
+
+/**
+ * @brief Verifies TTNet DNS cache resolution and strict TLS certificate pinning callbacks.
+ * Kiểm chứng hành vi thực tế của bộ phân giải DNS và callback xác thực chứng chỉ SSL chống MITM.
+ */
+bool ttffmpeg_verify_network_security_parity(void) {
+    char ip_buf[64] = {0};
+
+    // 1. Tên miền chưa nạp vào HTTPDNS cache phải trả mã lỗi (-2), tuyệt đối không gán 127.0.0.1
+    if (default_dns_resolve("unknown.vod.capcutapi.com", ip_buf, sizeof(ip_buf)) == 0) {
+        return false;
+    }
+
+    // 2. Nạp bản ghi HTTPDNS hợp lệ qua tt_save_host_addr và kiểm tra phân giải
+    tt_save_host_addr("vod.capcutapi.com", "203.0.113.88", 443);
+    if (default_dns_resolve("vod.capcutapi.com", ip_buf, sizeof(ip_buf)) != 0 ||
+        strcmp(ip_buf, "203.0.113.88") != 0) {
+        return false;
+    }
+
+    // 3. Kiểm tra xác thực chứng chỉ X.509 DER hợp lệ với khóa SPKI đã ghim
+    uint8_t sample_der[64];
+    memset(sample_der, 0, sizeof(sample_der));
+    sample_der[0] = 0x30; // ASN.1 SEQUENCE
+    sample_der[1] = 0x82; // 2-byte length
+
+    TTCertVerifyContext valid_cert;
+    valid_cert.cert_der = sample_der;
+    valid_cert.cert_len = sizeof(sample_der);
+    valid_cert.chain_depth = 0;
+    valid_cert.not_before_epoch = 1700000000ULL;
+    valid_cert.not_after_epoch = 1800000000ULL;
+    valid_cert.verify_time_epoch = 1750000000ULL;
+    valid_cert.subject_cn = "vod.capcutapi.com";
+    valid_cert.san_dns = "*.capcutapi.com";
+    valid_cert.spki_sha256_prefix = 0x4B82E9A1u;
+
+    if (default_ssl_verify(&valid_cert, "vod.capcutapi.com") != 1) {
+        return false;
+    }
+
+    // 4. Chứng chỉ sai tên miền hoặc sai khóa SPKI Pinning phải bị từ chối (trả về 0)
+    if (default_ssl_verify(&valid_cert, "evil-mitm.example.org") != 0) {
+        return false;
+    }
+    TTCertVerifyContext untrusted_cert = valid_cert;
+    untrusted_cert.spki_sha256_prefix = 0xDEADBEEFu;
+    if (default_ssl_verify(&untrusted_cert, "vod.capcutapi.com") != 0) {
         return false;
     }
 

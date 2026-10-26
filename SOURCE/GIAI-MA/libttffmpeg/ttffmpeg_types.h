@@ -147,6 +147,34 @@ typedef struct TTNetworkIOHooks {
     int (*io_close)(void *handle);                                      // 0x7be350 + 0x30
 } TTNetworkIOHooks;
 
+/**
+ * @brief TTDnsCacheEntry structure storing resolved host-to-IP mappings via tt_save_host_addr.
+ * Bản ghi bộ nhớ đệm DNS lưu ánh xạ tên miền sang IP phục vụ TTNet/HTTPDNS.
+ */
+typedef struct TTDnsCacheEntry {
+    char host[128];               // Tên miền đầy đủ / Fully qualified domain name
+    char ip[64];                  // Địa chỉ IPv4 hoặc IPv6 đã phân giải / Resolved IP string
+    int32_t port;                 // Cổng dịch vụ / Port number
+    uint32_t hit_count;           // Số lần truy vấn trúng / Cache hit counter
+    bool valid;                   // Cờ hiệu lực của bản ghi / Entry validity flag
+} TTDnsCacheEntry;
+
+/**
+ * @brief TTCertVerifyContext structure passed into TLS certificate verification callback (0x7be348).
+ * Ngữ cảnh kiểm tra chuỗi chứng chỉ X.509 và khóa công khai SPKI Pinning chống MITM.
+ */
+typedef struct TTCertVerifyContext {
+    const uint8_t* cert_der;      // 0x00: Con trỏ dữ liệu chứng chỉ X.509 mã hóa DER (ASN.1 SEQUENCE 0x30 0x82)
+    size_t cert_len;              // 0x08: Độ dài dữ liệu DER (bytes)
+    int32_t chain_depth;          // 0x10: Độ sâu chuỗi chứng chỉ (0 = leaf, >0 = intermediate/root)
+    uint64_t not_before_epoch;    // 0x18: Thời điểm bắt đầu hiệu lực (Unix timestamp giây)
+    uint64_t not_after_epoch;     // 0x20: Thời điểm hết hạn (Unix timestamp giây)
+    uint64_t verify_time_epoch;   // 0x28: Thời điểm kiểm tra hiện tại (Unix timestamp giây)
+    const char* subject_cn;       // 0x30: Common Name (CN) trên chứng chỉ
+    const char* san_dns;          // 0x38: Subject Alternative Name (dNSName, hỗ trợ wildcard *.domain)
+    uint32_t spki_sha256_prefix;  // 0x40: 32-bit đầu của mã băm SHA-256 SubjectPublicKeyInfo (Pinning)
+} TTCertVerifyContext;
+
 
 // ===================================================================================
 // 3. DRM CRYPTOGRAPHY & DECRYPTION CONTEXT

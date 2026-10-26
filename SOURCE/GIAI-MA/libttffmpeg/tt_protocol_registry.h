@@ -37,6 +37,9 @@ void tt_register_io_callback(void* open_cb, void* read_cb, void* seek_cb, void* 
 int32_t tt_register_dnsparser(void* resolve_cb, void* cancel_cb, void* free_cb);
 void tt_set_verify_callback(void* verify_cb);
 void tt_save_host_addr(const char* host, const char* ip, int32_t port);
+int32_t tt_lookup_host_addr(const char* host, char* ip_buf, int32_t ip_buf_len);
+int32_t tt_default_dns_resolve(const char* host, char* ip_buf, int32_t ip_buf_len);
+int32_t tt_default_ssl_verify(void* cert_ctx, const char* hostname);
 void tt_network_log_callback(const char* tag, int32_t level, const char* msg);
 void tt_network_io_read_callback(const char* url, int32_t bytes_read, int32_t error_code);
 void tt_network_info_callback(const char* url, int32_t bitrate, int64_t rtt_ms, int32_t buf_fullness);

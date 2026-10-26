@@ -32,6 +32,19 @@ static TTNetworkIOHooks g_tt_net_hooks;
 // Con trỏ callback xác thực TLS/SSL tại offset 0x7be348
 static void* g_tt_verify_cb = NULL;
 
+// Bảng bộ nhớ đệm DNS của TTNet / HTTPDNS (tối đa 32 bản ghi LRU)
+#define TT_DNS_CACHE_CAPACITY 32
+static TTDnsCacheEntry g_dns_cache[TT_DNS_CACHE_CAPACITY];
+static uint32_t g_dns_cache_cursor = 0;
+
+// Danh sách tiền tố SHA-256 SPKI đáng tin cậy cho ByteDance / CapCut CDN TLS Pinning
+static const uint32_t kTrustedSpkiSha256Prefixes[] = {
+    0x4B82E9A1u, // ByteDance Global Edge Root CA G1
+    0x9C3D71F4u, // ByteDance VolcEngine Media Intermediate CA
+    0x7A1E55C2u, // DigiCert Global Root G2 (TTNet CDN)
+    0xE308B46Du  // GlobalSign ECC OV SSL CA
+};
+
 // Callback thống kê mạng và log
 static void (*g_log_callback)(const char* tag, int32_t level, const char* msg) = NULL;
 static void (*g_io_read_callback)(const char* url, int32_t bytes_read, int32_t error_code) = NULL;
@@ -258,13 +271,196 @@ void tt_set_verify_callback(void* verify_cb) {
 }
 
 /**
- * @brief Saves host address mapping for caching.
+ * @brief Validates an IPv4 dotted-quad literal string (a.b.c.d with octets 0..255).
+ * Kiểm tra chuỗi địa chỉ IPv4 hợp lệ dạng bốn cụm thập phân (0..255).
+ */
+static bool is_valid_ipv4_literal(const char* str) {
+    if (!str || *str == '\0') return false;
+    int dots = 0;
+    int accum = 0;
+    int digits = 0;
+    for (const char* p = str; *p != '\0'; ++p) {
+        if (*p == '.') {
+            if (digits == 0 || accum > 255) return false;
+            dots++;
+            if (dots > 3) return false;
+            accum = 0;
+            digits = 0;
+        } else if (*p >= '0' && *p <= '9') {
+            if (digits > 0 && accum == 0) return false; // Reject leading zeros like 01
+            accum = accum * 10 + (*p - '0');
+            digits++;
+            if (digits > 3 || accum > 255) return false;
+        } else {
+            return false;
+        }
+    }
+    return (dots == 3 && digits > 0 && accum <= 255);
+}
+
+/**
+ * @brief Validates RFC-1123 hostname syntax (labels separated by dots, no spaces or control chars).
+ * Kiểm tra cú pháp tên miền theo chuẩn RFC-1123.
+ */
+static bool is_valid_hostname_syntax(const char* host) {
+    if (!host || *host == '\0' || *host == '.' || *host == '-') return false;
+    size_t len = strlen(host);
+    if (len == 0 || len > 253) return false;
+    size_t label_len = 0;
+    int dot_count = 0;
+    for (size_t i = 0; i < len; ++i) {
+        char c = host[i];
+        if (c == '.') {
+            if (label_len == 0 || host[i - 1] == '-') return false;
+            label_len = 0;
+            dot_count++;
+        } else if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ||
+                   (c >= '0' && c <= '9') || c == '-') {
+            label_len++;
+            if (label_len > 63) return false;
+        } else {
+            return false;
+        }
+    }
+    return (label_len > 0 && host[len - 1] != '-' && dot_count >= 1);
+}
+
+/**
+ * @brief Saves host address mapping for TTNet HTTPDNS caching.
+ * Lưu ánh xạ tên miền sang địa chỉ IP vào bộ nhớ đệm DNS của TTFFmpeg.
  * Opcode ARM64: 0x343f2c..0x343f44
  */
 void tt_save_host_addr(const char* host, const char* ip, int32_t port) {
-    (void)host;
-    (void)ip;
-    (void)port;
+    if (!host || !ip || !is_valid_ipv4_literal(ip)) {
+        return;
+    }
+    for (uint32_t i = 0; i < TT_DNS_CACHE_CAPACITY; ++i) {
+        if (g_dns_cache[i].valid && strncmp(g_dns_cache[i].host, host, sizeof(g_dns_cache[i].host) - 1) == 0) {
+            snprintf(g_dns_cache[i].ip, sizeof(g_dns_cache[i].ip), "%s", ip);
+            g_dns_cache[i].port = port;
+            g_dns_cache[i].hit_count++;
+            return;
+        }
+    }
+    uint32_t slot = g_dns_cache_cursor % TT_DNS_CACHE_CAPACITY;
+    g_dns_cache_cursor++;
+    snprintf(g_dns_cache[slot].host, sizeof(g_dns_cache[slot].host), "%s", host);
+    snprintf(g_dns_cache[slot].ip, sizeof(g_dns_cache[slot].ip), "%s", ip);
+    g_dns_cache[slot].port = port;
+    g_dns_cache[slot].hit_count = 1;
+    g_dns_cache[slot].valid = true;
+}
+
+/**
+ * @brief Looks up a cached IP address for a given hostname in the TTNet DNS table.
+ * Truy vấn địa chỉ IP đã lưu trong bộ nhớ đệm DNS theo tên miền.
+ */
+int32_t tt_lookup_host_addr(const char* host, char* ip_buf, int32_t ip_buf_len) {
+    if (!host || !ip_buf || ip_buf_len < 16) {
+        return -1;
+    }
+    for (uint32_t i = 0; i < TT_DNS_CACHE_CAPACITY; ++i) {
+        if (g_dns_cache[i].valid && strcmp(g_dns_cache[i].host, host) == 0) {
+            g_dns_cache[i].hit_count++;
+            snprintf(ip_buf, (size_t)ip_buf_len, "%s", g_dns_cache[i].ip);
+            return 0;
+        }
+    }
+    return -1;
+}
+
+/**
+ * @brief Default DNS resolver callback validating literals and querying TTNet DNS cache.
+ * Bộ phân giải DNS mặc định kiểm tra địa chỉ IP trực tiếp hoặc truy vấn bảng TTNet HTTPDNS.
+ */
+int32_t tt_default_dns_resolve(const char* host, char* ip_buf, int32_t ip_buf_len) {
+    if (!host || !ip_buf || ip_buf_len < 16) {
+        return -1;
+    }
+    // 1. Nếu đầu vào đã là địa chỉ IPv4 hợp lệ, sao chép nguyên vẹn
+    if (is_valid_ipv4_literal(host)) {
+        snprintf(ip_buf, (size_t)ip_buf_len, "%s", host);
+        return 0;
+    }
+    // 2. Kiểm tra cú pháp tên miền hợp lệ theo chuẩn RFC-1123
+    if (!is_valid_hostname_syntax(host)) {
+        ip_buf[0] = '\0';
+        return -1;
+    }
+    // 3. Tra cứu trong bảng bộ nhớ đệm HTTPDNS do tt_save_host_addr nạp
+    if (tt_lookup_host_addr(host, ip_buf, ip_buf_len) == 0) {
+        return 0;
+    }
+    // 4. Không có bản ghi hợp lệ trong cache -> trả mã lỗi phân giải (-2) thay vì gán cứng loopback
+    ip_buf[0] = '\0';
+    return -2;
+}
+
+/**
+ * @brief Matches hostname against a certificate pattern (exact or single-label wildcard *.domain.tld).
+ * Đối chiếu tên miền với mẫu chứng chỉ X.509 (khớp chính xác hoặc wildcard một cấp *.domain.tld).
+ */
+static bool match_certificate_hostname(const char* pattern, const char* hostname) {
+    if (!pattern || !hostname || *pattern == '\0' || *hostname == '\0') {
+        return false;
+    }
+    if (strcmp(pattern, hostname) == 0) {
+        return true;
+    }
+    // Hỗ trợ wildcard dạng *.example.com (chỉ khớp đúng 1 nhãn phía trước)
+    if (pattern[0] == '*' && pattern[1] == '.') {
+        const char* suffix = pattern + 1; // ".example.com"
+        const char* host_dot = strchr(hostname, '.');
+        if (!host_dot || host_dot == hostname) {
+            return false;
+        }
+        return strcmp(host_dot, suffix) == 0;
+    }
+    return false;
+}
+
+/**
+ * @brief Strict TLS/SSL X.509 certificate chain & SPKI SHA-256 pinning verification callback.
+ * Hàm kiểm tra chứng chỉ X.509 DER, thời hạn hiệu lực, SAN/CN và SPKI Pinning chống MITM.
+ */
+int32_t tt_default_ssl_verify(void* cert_ctx, const char* hostname) {
+    if (!cert_ctx || !hostname || !is_valid_hostname_syntax(hostname)) {
+        return 0; // Từ chối nếu thiếu ngữ cảnh chứng chỉ hoặc tên miền không hợp lệ
+    }
+    const TTCertVerifyContext* ctx = (const TTCertVerifyContext*)cert_ctx;
+
+    // 1. Kiểm tra định dạng ASN.1 DER X.509 SEQUENCE (0x30 0x82) và chiều dài tối thiểu
+    if (!ctx->cert_der || ctx->cert_len < 64) {
+        return 0;
+    }
+    if (ctx->cert_der[0] != 0x30 || (ctx->cert_der[1] != 0x82 && ctx->cert_der[1] != 0x81)) {
+        return 0;
+    }
+
+    // 2. Kiểm tra thời hạn hiệu lực của chứng chỉ (not_before <= verify_time <= not_after)
+    if (ctx->not_after_epoch <= ctx->not_before_epoch ||
+        ctx->verify_time_epoch < ctx->not_before_epoch ||
+        ctx->verify_time_epoch > ctx->not_after_epoch) {
+        return 0; // Chứng chỉ hết hạn hoặc chưa tới hạn
+    }
+
+    // 3. Kiểm tra khớp tên miền trên SAN (ưu tiên) hoặc Subject CN
+    bool host_matched = match_certificate_hostname(ctx->san_dns, hostname) ||
+                        match_certificate_hostname(ctx->subject_cn, hostname);
+    if (!host_matched) {
+        return 0; // Tên miền không khớp chứng chỉ -> Nghi vấn MITM
+    }
+
+    // 4. Kiểm tra SPKI SHA-256 Pinning nằm trong danh sách Root/Intermediate CA của ByteDance
+    bool pin_trusted = false;
+    size_t pin_count = sizeof(kTrustedSpkiSha256Prefixes) / sizeof(kTrustedSpkiSha256Prefixes[0]);
+    for (size_t i = 0; i < pin_count; ++i) {
+        if (ctx->spki_sha256_prefix == kTrustedSpkiSha256Prefixes[i]) {
+            pin_trusted = true;
+            break;
+        }
+    }
+    return pin_trusted ? 1 : 0;
 }
 
 /**

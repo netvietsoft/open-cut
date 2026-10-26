@@ -28,18 +28,41 @@
 
 namespace NextAI::OpenCut::Filters {
 
+/**
+ * @brief Resolves row stride in bytes from AndroidBitmapInfo.stride or pixel stride.
+ * Chuẩn hóa bước nhảy hàng (row stride) tính theo byte, hỗ trợ bộ đệm có vùng đệm lề (padding).
+ */
+static inline size_t resolveRowStrideBytes(int width, int stride) {
+    size_t minRowBytes = static_cast<size_t>(width) * sizeof(uint32_t);
+    if (stride >= static_cast<int>(minRowBytes)) {
+        return static_cast<size_t>(stride);
+    }
+    if (stride >= width) {
+        return static_cast<size_t>(stride) * sizeof(uint32_t);
+    }
+    return minRowBytes;
+}
+
 // ============================================================================
 // 1. Sliding-Window Box Blur Algorithm (Thuật toán làm mờ hộp tổng trượt)
 // Tái cấu trúc từ mã máy ARM64 tại địa chỉ 0xc00 - 0x1300
 // ============================================================================
 
-void boxBlurHorizontal(uint32_t* src, uint32_t* dst, int width, int height, int radius) {
+void boxBlurHorizontal(
+    const uint8_t* srcBytes,
+    size_t srcRowBytes,
+    uint8_t* dstBytes,
+    size_t dstRowBytes,
+    int width,
+    int height,
+    int radius)
+{
     if (radius <= 0) return;
     int div = 2 * radius + 1;
 
     for (int y = 0; y < height; ++y) {
-        uint32_t* srcRow = src + y * width;
-        uint32_t* dstRow = dst + y * width;
+        const uint32_t* srcRow = reinterpret_cast<const uint32_t*>(srcBytes + static_cast<size_t>(y) * srcRowBytes);
+        uint32_t* dstRow = reinterpret_cast<uint32_t*>(dstBytes + static_cast<size_t>(y) * dstRowBytes);
 
         int sumA = 0, sumR = 0, sumG = 0, sumB = 0;
 
@@ -53,7 +76,7 @@ void boxBlurHorizontal(uint32_t* src, uint32_t* dst, int width, int height, int 
             sumB += pixel         & 0xFF;
         }
 
-        // Trượt cửa sổ ngang qua từng pixel
+        // Trượt cửa sổ ngang qua từng pixel trong hàng
         for (int x = 0; x < width; ++x) {
             dstRow[x] = ((sumA / div) << 24) |
                         ((sumR / div) << 16) |
@@ -75,7 +98,15 @@ void boxBlurHorizontal(uint32_t* src, uint32_t* dst, int width, int height, int 
     }
 }
 
-void boxBlurVertical(uint32_t* src, uint32_t* dst, int width, int height, int radius) {
+void boxBlurVertical(
+    const uint8_t* srcBytes,
+    size_t srcRowBytes,
+    uint8_t* dstBytes,
+    size_t dstRowBytes,
+    int width,
+    int height,
+    int radius)
+{
     if (radius <= 0) return;
     int div = 2 * radius + 1;
 
@@ -84,7 +115,8 @@ void boxBlurVertical(uint32_t* src, uint32_t* dst, int width, int height, int ra
 
         for (int i = -radius; i <= radius; ++i) {
             int clampedY = std::clamp(i, 0, height - 1);
-            uint32_t pixel = src[clampedY * width + x];
+            const uint32_t* srcRow = reinterpret_cast<const uint32_t*>(srcBytes + static_cast<size_t>(clampedY) * srcRowBytes);
+            uint32_t pixel = srcRow[x];
             sumA += (pixel >> 24) & 0xFF;
             sumR += (pixel >> 16) & 0xFF;
             sumG += (pixel >> 8)  & 0xFF;
@@ -92,16 +124,19 @@ void boxBlurVertical(uint32_t* src, uint32_t* dst, int width, int height, int ra
         }
 
         for (int y = 0; y < height; ++y) {
-            dst[y * width + x] = ((sumA / div) << 24) |
-                                 ((sumR / div) << 16) |
-                                 ((sumG / div) << 8)  |
-                                 (sumB / div);
+            uint32_t* dstRow = reinterpret_cast<uint32_t*>(dstBytes + static_cast<size_t>(y) * dstRowBytes);
+            dstRow[x] = ((sumA / div) << 24) |
+                        ((sumR / div) << 16) |
+                        ((sumG / div) << 8)  |
+                        (sumB / div);
 
             int yOut = std::clamp(y - radius, 0, height - 1);
             int yIn  = std::clamp(y + radius + 1, 0, height - 1);
 
-            uint32_t pOut = src[yOut * width + x];
-            uint32_t pIn  = src[yIn * width + x];
+            const uint32_t* rowOut = reinterpret_cast<const uint32_t*>(srcBytes + static_cast<size_t>(yOut) * srcRowBytes);
+            const uint32_t* rowIn  = reinterpret_cast<const uint32_t*>(srcBytes + static_cast<size_t>(yIn) * srcRowBytes);
+            uint32_t pOut = rowOut[x];
+            uint32_t pIn  = rowIn[x];
 
             sumA += ((pIn >> 24) & 0xFF) - ((pOut >> 24) & 0xFF);
             sumR += ((pIn >> 16) & 0xFF) - ((pOut >> 16) & 0xFF);
@@ -116,14 +151,16 @@ void iterativeBoxBlur(void* pixels, int width, int height, int stride, int itera
         return;
     }
 
-    uint32_t* pixelData = static_cast<uint32_t*>(pixels);
-    std::vector<uint32_t> tempBuffer(width * height);
+    size_t rowBytes = resolveRowStrideBytes(width, stride);
+    size_t tightRowBytes = static_cast<size_t>(width) * sizeof(uint32_t);
+    uint8_t* pixelBytes = static_cast<uint8_t*>(pixels);
+    std::vector<uint8_t> tempBuffer(tightRowBytes * static_cast<size_t>(height));
 
     for (int it = 0; it < iterations; ++it) {
-        // Lượt ngang: pixelData -> tempBuffer
-        boxBlurHorizontal(pixelData, tempBuffer.data(), width, height, radius);
-        // Lượt dọc: tempBuffer -> pixelData
-        boxBlurVertical(tempBuffer.data(), pixelData, width, height, radius);
+        // Lượt ngang: pixelBytes (bước nhảy rowBytes) -> tempBuffer (bước nhảy tightRowBytes)
+        boxBlurHorizontal(pixelBytes, rowBytes, tempBuffer.data(), tightRowBytes, width, height, radius);
+        // Lượt dọc: tempBuffer (bước nhảy tightRowBytes) -> pixelBytes (bước nhảy rowBytes, bảo toàn vùng đệm)
+        boxBlurVertical(tempBuffer.data(), tightRowBytes, pixelBytes, rowBytes, width, height, radius);
     }
 }
 
@@ -149,7 +186,8 @@ void toCircleWithBorderFilter(
         return;
     }
 
-    uint32_t* pixelData = static_cast<uint32_t*>(pixels);
+    size_t rowBytes = resolveRowStrideBytes(width, stride);
+    uint8_t* pixelBytes = static_cast<uint8_t*>(pixels);
     float cx = width * 0.5f;
     float cy = height * 0.5f;
     float radius = std::min(cx, cy);
@@ -161,28 +199,27 @@ void toCircleWithBorderFilter(
     uint8_t borderB = colorARGB         & 0xFF;
 
     for (int y = 0; y < height; ++y) {
+        uint32_t* rowPixels = reinterpret_cast<uint32_t*>(pixelBytes + static_cast<size_t>(y) * rowBytes);
         for (int x = 0; x < width; ++x) {
             float dx = (x + 0.5f) - cx;
             float dy = (y + 0.5f) - cy;
             float dist = std::sqrt(dx * dx + dy * dy);
 
-            int pixelIndex = y * width + x;
-
             if (dist > radius + 0.5f) {
                 // Hoàn toàn nằm ngoài hình tròn -> Đặt trong suốt
-                pixelData[pixelIndex] = 0;
+                rowPixels[x] = 0;
             } else if (antiAliased && dist > radius - 0.5f) {
                 // Vùng biên ngoài cùng khử răng cưa (Fractional coverage)
                 float alphaFrac = std::clamp(radius + 0.5f - dist, 0.0f, 1.0f);
-                uint32_t p = pixelData[pixelIndex];
+                uint32_t p = rowPixels[x];
                 uint8_t a = static_cast<uint8_t>(((p >> 24) & 0xFF) * alphaFrac);
-                pixelData[pixelIndex] = (a << 24) | (p & 0x00FFFFFF);
+                rowPixels[x] = (a << 24) | (p & 0x00FFFFFF);
             } else if (borderWidth > 0 && dist >= innerRadius) {
                 // Nằm trong vùng đường viền (Border ring)
                 if (antiAliased && dist < innerRadius + 0.5f) {
                     // Chuyển tiếp mượt giữa viền và ảnh gốc
                     float t = std::clamp(dist - (innerRadius - 0.5f), 0.0f, 1.0f);
-                    uint32_t p = pixelData[pixelIndex];
+                    uint32_t p = rowPixels[x];
                     uint8_t pr = (p >> 16) & 0xFF;
                     uint8_t pg = (p >> 8)  & 0xFF;
                     uint8_t pb = p         & 0xFF;
@@ -190,13 +227,45 @@ void toCircleWithBorderFilter(
                     uint8_t r = static_cast<uint8_t>(pr * (1.0f - t) + borderR * t);
                     uint8_t g = static_cast<uint8_t>(pg * (1.0f - t) + borderG * t);
                     uint8_t b = static_cast<uint8_t>(pb * (1.0f - t) + borderB * t);
-                    pixelData[pixelIndex] = (0xFF << 24) | (r << 16) | (g << 8) | b;
+                    rowPixels[x] = (0xFF << 24) | (r << 16) | (g << 8) | b;
                 } else {
-                    pixelData[pixelIndex] = (borderA << 24) | (borderR << 16) | (borderG << 8) | borderB;
+                    rowPixels[x] = (borderA << 24) | (borderR << 16) | (borderG << 8) | borderB;
                 }
             }
         }
     }
+}
+
+/**
+ * @brief Verifies that bitmaps with padded row stride (stride > width * 4) keep row padding intact.
+ * Kiểm chứng thực nghiệm bitmap có stride lớn hơn width * 4 không ghi đè vùng đệm cuối hàng.
+ */
+bool verifyPaddedRowStrideParity() {
+    const int width = 6;
+    const int height = 6;
+    const int stride = 40; // 6 * 4 = 24 bytes active pixels + 16 bytes row padding
+    std::vector<uint8_t> buf(static_cast<size_t>(stride * height), 0xA5);
+
+    for (int y = 0; y < height; ++y) {
+        uint32_t* row = reinterpret_cast<uint32_t*>(buf.data() + static_cast<size_t>(y) * stride);
+        for (int x = 0; x < width; ++x) {
+            row[x] = 0xFF204080u;
+        }
+    }
+
+    iterativeBoxBlur(buf.data(), width, height, stride, 2, 1);
+    toCircleWithBorderFilter(buf.data(), width, height, stride, 0xFFFFFFFFu, 1, true);
+
+    // Kiểm tra vùng đệm [width * 4 .. stride - 1] trên mọi hàng phải giữ nguyên giá trị canh gác 0xA5
+    for (int y = 0; y < height; ++y) {
+        const uint8_t* padStart = buf.data() + static_cast<size_t>(y) * stride + static_cast<size_t>(width) * 4;
+        for (int p = 0; p < stride - width * 4; ++p) {
+            if (padStart[p] != 0xA5) {
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 } // namespace NextAI::OpenCut::Filters
