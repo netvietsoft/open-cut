@@ -1,1 +1,33 @@
-[]
+{
+  "library": "libttcrypto.so",
+  "binary_size_bytes": 1231952,
+  "architecture": "arm64-v8a",
+  "total_exported_functions": 2353,
+  "jni_methods": [],
+  "core_c_exports": [
+    {"name": "SHA224_Init", "address": "0x0be328", "size": 72, "subsystem": "SHA-256/224"},
+    {"name": "SHA256_Init", "address": "0x0be370", "size": 60, "subsystem": "SHA-256/224"},
+    {"name": "SHA256_Update", "address": "0x0be3ac", "size": 88, "subsystem": "SHA-256/224"},
+    {"name": "SHA256_Final", "address": "0x0be404", "size": 4, "subsystem": "SHA-256/224"},
+    {"name": "SHA256_Transform", "address": "0x0be408", "size": 8, "subsystem": "SHA-256/224"},
+    {"name": "SHA512_Init", "address": "0x0bec20", "size": 84, "subsystem": "SHA-512/384"},
+    {"name": "HMAC", "address": "0x0b6f6c", "size": 224, "subsystem": "HMAC-RFC2104"},
+    {"name": "HMAC_Init_ex", "address": "0x0b7084", "size": 412, "subsystem": "HMAC-RFC2104"},
+    {"name": "HKDF_extract", "address": "0x070ea8", "size": 140, "subsystem": "HKDF-RFC5869"},
+    {"name": "HKDF_expand", "address": "0x070f34", "size": 448, "subsystem": "HKDF-RFC5869"},
+    {"name": "AES_set_encrypt_key", "address": "0x0a48e0", "size": 112, "subsystem": "AES-FIPS197"},
+    {"name": "AES_encrypt", "address": "0x0a4850", "size": 72, "subsystem": "AES-FIPS197"},
+    {"name": "CRYPTO_gcm128_aad", "address": "0x0b8d7c", "size": 252, "subsystem": "AES-GCM128"},
+    {"name": "CRYPTO_gcm128_encrypt", "address": "0x0b8e78", "size": 444, "subsystem": "AES-GCM128"},
+    {"name": "CRYPTO_gcm128_tag", "address": "0x0b9610", "size": 72, "subsystem": "AES-GCM128"},
+    {"name": "CRYPTO_chacha_20", "address": "0x058d88", "size": 272, "subsystem": "ChaCha20-RFC8439"},
+    {"name": "X25519_keypair", "address": "0x060410", "size": 76, "subsystem": "Curve25519-RFC7748"},
+    {"name": "X25519", "address": "0x06053c", "size": 880, "subsystem": "Curve25519-RFC7748"},
+    {"name": "ED25519_sign", "address": "0x05eec4", "size": 4116, "subsystem": "Ed25519-RFC8032"},
+    {"name": "ED25519_verify", "address": "0x05ff28", "size": 1252, "subsystem": "Ed25519-RFC8032"},
+    {"name": "EVP_AEAD_CTX_init", "address": "0x0ae3c8", "size": 76, "subsystem": "EVP-AEAD"},
+    {"name": "EVP_EncryptInit_ex", "address": "0x0aec80", "size": 8, "subsystem": "EVP-Cipher"},
+    {"name": "CRYPTO_memcmp", "address": "0x0749cc", "size": 40, "subsystem": "ConstantTime"},
+    {"name": "RAND_bytes", "address": "0x0ad674", "size": 32, "subsystem": "CSPRNG-DRBG"}
+  ]
+}

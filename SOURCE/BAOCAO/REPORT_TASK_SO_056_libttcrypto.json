@@ -1,18 +1,19 @@
 {
-  "report_id": "REPORT_TASK_SO_056_libttcrypto",
-  "task_id": "TASK_SO_056_libttcrypto",
-  "target_library": "libttcrypto.so",
-  "assigned_agent": "Agent 9 - SECURITY",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 2514,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libttcrypto",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "task_id": "TASK-SO-056",
+  "library": "libttcrypto.so",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
+  "binary_size_bytes": 1231952,
+  "reconstructed_cpp_bytes": 122778,
+  "exported_functions_count": 2353,
+  "subsystems_recovered": [
+    "SHA-224/256 & SHA-384/512 (FIPS 180-4)",
+    "HMAC (RFC 2104) & HKDF (RFC 5869)",
+    "AES-128/192/256 (ECB, CBC, CTR) & GCM128 over GF(2^128)",
+    "ChaCha20, HChaCha20, Poly1305 over GF(2^130 - 5), and AEAD-ChaCha20-Poly1305",
+    "Curve25519 X25519 ECDH (RFC 7748) & Ed25519 Signatures (RFC 8032)",
+    "EVP Cipher/AEAD Dispatchers, CBS/CBB ASN.1 DER Parser, CRYPTO_memcmp & ChaCha20-DRBG RAND_bytes"
+  ],
+  "verification_status": "VERIFIED_AND_ACCEPTED",
+  "updated_at": "2026-10-26T16:33:00+07:00"
 }

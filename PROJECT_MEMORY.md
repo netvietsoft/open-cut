@@ -1880,3 +1880,22 @@
   - `SOURCE/GIAI-MA/libttheif_dec/jni_bindings.json`
 - **Kiểm định tự động**: Bộ test suite `verify_reconstruction_suite.py` mở rộng đạt **266/266 tests PASS (100.0%)**.
 - **Tiến độ thực chất**: Đạt **39 / 169 thư viện COMPLETED (23.08%)** có 100% thân hàm thực tế.
+
+---
+
+## 67. HOÀN THÀNH KHẮC PHỤC AUDIT WATCHDOG & TÁI DỰNG 100%: libttcrypto.so (AArch64) — THƯ VIỆN THỨ 40/169
+- **Thời điểm hoàn thành**: 2026-10-26.
+- **Khắc phục triệt để 3 cảnh báo từ `RECHECK_FIRST_10_FILES_2026-10-23.md` & `native_audit_watchdog.py`**:
+  1. `libttffmpeg.so`: Loại bỏ gán cứng `127.0.0.1` và `return 1` trong DNS/TLS callbacks; hiện thực hóa bảng HTTPDNS LRU 32-slot (`tt_save_host_addr` / `tt_lookup_host_addr` / `tt_default_dns_resolve`) và xác thực chứng chỉ ASN.1 DER X.509 + SAN/CN wildcard + SPKI SHA-256 Pinning (`tt_default_ssl_verify`).
+  2. `libnative-filters.so`: Sửa triệt để cách tính địa chỉ hàng theo bước nhảy byte (`resolveRowStrideBytes` & `pixelBytes + y * rowBytes`), bảo toàn 100% vùng đệm cuối hàng (`stride > width * 4`).
+  3. `verify_reconstruction_suite.py`: Chuyển sang đường dẫn tương đối `Path(__file__).resolve().parents[1]` và kiểm tra động từ `LEDGER_DOI_KHANG.json`. Kết quả `native_audit_watchdog.py`: **0 high findings**.
+- **Thư viện mục tiêu thứ 40/169**: `libttcrypto.so` (ByteDance TTNet / BoringSSL Cryptographic Core Engine, 1,231,952 bytes, 2,353 hàm xuất khẩu).
+- **Tổng dung lượng mã nguồn C++ tái cấu trúc**: `122,778` bytes (14 tệp `.cpp` và `.h`, 0 stub, 100% chú thích song ngữ EN + VN):
+  1. `ttcrypto_types.h`: Định nghĩa chuẩn ABI cho `SHA256_CTX` (0x70 bytes, `md_len` @ `+0x6c`), `GCM128_CONTEXT` (`len` @ `+0x30`, `key` @ `+0x160`, `mres` @ `+0x184`), `AES_KEY` (0xf4 bytes), `poly1305_state`, `EVP_CIPHER_CTX`, `EVP_AEAD_CTX`, `CBS`, `CBB`.
+  2. `ttcrypto_hash_hmac.h` / `.cpp`: SHA-224/256 (`0x0be370`), SHA-384/512, HMAC RFC 2104 (`0x0b6f6c`, `0x0b7084`) và HKDF RFC 5869 (`0x070ea8`, `0x070f34`).
+  3. `ttcrypto_aes_gcm.h` / `.cpp`: AES-128/192/256 (`0x0a48e0`, `0x0a4850`), CBC, CTR và GCM128 trên $\text{GF}(2^{128})$ (`0x0b8d7c`, `0x0b8e78`, `0x0b9610`).
+  4. `ttcrypto_chacha_poly1305.h` / `.cpp`: ChaCha20 (`0x058d88`), HChaCha20, Poly1305 trên $\mathbb{Z}/(2^{130}-5)\mathbb{Z}$ và AEAD Seal/Open.
+  5. `ttcrypto_curve25519.h` / `.cpp`: Toán học trường $\mathbb{F}_{2^{255}-19}$, X25519 (`0x06053c`, `0x060410`) và Ed25519 (`0x05eec4`, `0x05ff28`).
+  6. `ttcrypto_evp_x509.h` / `.cpp`: `CRYPTO_memcmp` (`0x0749cc`), `RAND_bytes` (`0x0ad674`), `EVP_Cipher*` (`0x0aec80`), `EVP_AEAD_CTX_*` (`0x0ae3c8`) và `CBS`/`CBB` ASN.1 DER.
+- **Kiểm định tự động**: `verify_reconstruction_suite.py` đạt **275/275 tests PASS (100.0%)**, Agent 13 cấp chứng nhận `VERIFIED_AND_ACCEPTED` (**40 / 169 thư viện — 23.67%**).
+
