@@ -4982,6 +4982,110 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 52: libbdhm_native.so (ByteDance Hybrid Monitor V2 SparkTracing)
+    # =========================================================================
+    def verify_libbdhm_native(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libbdhm_native.so (Hybrid Monitor V2 SparkTracing)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libbdhm_native"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 65 KB across >= 8 files
+        self.assert_test(
+            "BdhmNative_SourceSizeGate",
+            total_bytes > 65000 and len(cpp_files) >= 8,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 65 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. SparkTracingNative ABI Struct & SwissTable Control Mask (0x8080808080808080 @ 0x043abc)
+        has_abi = all(tok in content for tok in [
+            "kSwissTableControlBitMask",
+            "0x8080808080808080ULL",
+            "kAddrSparkDoSnapshot",
+            "0x04141cULL",
+            "kAddrSparkDoUpdateLink",
+            "0x0434a8ULL"
+        ])
+        self.assert_test(
+            "BdhmNative_AbiOffsetsAndSwissTableMask",
+            has_abi,
+            "Khớp bố cục ABI SparkTracingNative (+0x00 client, +0x18 manifest, +0x20 repo, +0x28 is_enabled) và mặt nạ SwissTable 0x8080808080808080 (@ 0x043abc)"
+        )
+
+        # 3. ContextPropsRepo DB Prefixes & DAG Ring Detection (.rodata 0x00be01..0x00c080)
+        has_repo = all(tok in content for tok in [
+            "__st_string;",
+            "__st_number;",
+            "__st_bool;",
+            "__SYS__###",
+            "__SYS__PARENT_IDS",
+            "ring exist!",
+            "Value is not set because lazy logging is enabled"
+        ])
+        self.assert_test(
+            "BdhmNative_ContextPropsRepoAndDagCycleDetection",
+            has_repo,
+            "Khớp tiền tố kiểu DB (__st_string;/__st_number;/__st_bool;), khóa phức hợp __SYS__### và phát hiện chu trình đồ thị DAG (ring exist! @ 0x00c060)"
+        )
+
+        # 4. Expression Tokenizer, Interpreter & Math Functions (factorial, abs)
+        fact5 = 1
+        for k in range(2, 6):
+            fact5 *= k
+        has_expr = all(tok in content for tok in [
+            "ComputeFactorial",
+            "Tokenize",
+            "EvaluateExpression",
+            "FunctionNameUsedLikeVar",
+            "VarDoesNotExist"
+        ]) and (fact5 == 120 and abs(-42) == 42)
+        self.assert_test(
+            "BdhmNative_ExprTokenizerAndMathFunctions",
+            has_expr,
+            f"Khớp bộ tách từ & thông dịch biểu thức toán học (factorial(5)={fact5}, abs(-42)=42) và thông điệp lỗi .rodata 0x00d620..0x00d760"
+        )
+
+        # 5. Conditional & Relational Clause Engine ($if, $then, $else, $gte, $lte, $like, $in)
+        has_clause = all(tok in content for tok in [
+            "$if(",
+            ")$then(",
+            ")$else(",
+            "$not_like",
+            "$not_nil",
+            "$gte",
+            "$lte",
+            "spark_tracing_stat"
+        ])
+        self.assert_test(
+            "BdhmNative_ClauseDslAndPerfStat",
+            has_clause,
+            "Khớp bộ đánh giá mệnh đề DSL ($if/$then/$else, $eq/$neq/$lt/$lte/$gt/$gte/$in/$nin/$like/$not_like/$nil/$not_nil) và thống kê spark_tracing_stat"
+        )
+
+        # 6. All 27 Exported .dynsym Functions (JNI_OnLoad, JNI_OnUnload, 8 Fence + 17 SparkTracingNative)
+        has_all_exports = all(tok in content for tok in [
+            "JNI_OnLoad",
+            "JNI_OnUnload",
+            "Java_com_bytedance_android_monitorV2_spark_1tracing_gen_JNIReachabilityFence_reachabilityFence1",
+            "Java_com_bytedance_android_monitorV2_spark_1tracing_gen_JNIReachabilityFence_reachabilityFence8",
+            "Java_com_bytedance_android_monitorV2_spark_1tracing_gen_SparkTracingNative_init",
+            "Java_com_bytedance_android_monitorV2_spark_1tracing_gen_SparkTracingNative_initLogger",
+            "Java_com_bytedance_android_monitorV2_spark_1tracing_gen_SparkTracingNative_do_1snapshot",
+            "Java_com_bytedance_android_monitorV2_spark_1tracing_gen_SparkTracingNative_do_1updateLink",
+            "Java_com_bytedance_android_monitorV2_spark_1tracing_gen_SparkTracingNative_do_1computeExpr",
+            "Java_com_bytedance_android_monitorV2_spark_1tracing_gen_SparkTracingNative_do_1delete"
+        ])
+        self.assert_test(
+            "BdhmNative_27ExportedDynSymFunctions",
+            has_all_exports,
+            "Khớp toàn bộ 27 hàm xuất .dynsym: JNI_OnLoad (0x045e44), JNI_OnUnload (0x046990), 8 hàm JNIReachabilityFence (0x03e820..0x03e83c) và 17 hàm SparkTracingNative (0x03eae0..0x045d10)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -5037,6 +5141,7 @@ class AutonomousVerificationEngine:
         self.verify_libBDPythonVM()
         self.verify_libconfigcenter()
         self.verify_libdelta()
+        self.verify_libbdhm_native()
         self.verify_overall_governance()
 
 

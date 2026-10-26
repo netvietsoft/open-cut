@@ -1,0 +1,22 @@
+{
+  "task_id": "TASK-091-RECONSTRUCTION-LIBBDHM_NATIVE",
+  "legacy_task_id": "TASK_SO_102",
+  "title": "Reconstruct libbdhm_native.so (ByteDance Hybrid Monitor V2 SparkTracing Engine, Target 52/169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/C++ Native) & Agent 6 (Tester) & Agent 13 (Adversary Auditor)",
+  "completed_at": "2026-10-26T21:24:00+07:00",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libbdhm_native/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbdhm_native.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbdhm_native.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_102_libbdhm_native.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_102_libbdhm_native.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "verification": {
+    "adversary_status": "VERIFIED_AND_ACCEPTED",
+    "verified_count": "52/169 (30.77%)",
+    "suite_passed": "347/347 (100.0%)",
+    "watchdog_high_findings": 0
+  }
+}

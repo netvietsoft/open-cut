@@ -1,18 +1,21 @@
 {
-  "report_id": "REPORT_TASK_SO_102_libbdhm_native",
-  "task_id": "TASK_SO_102_libbdhm_native",
-  "target_library": "libbdhm_native.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 78,
-    "jni_exports": 25,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libbdhm_native",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "task_id": "TASK_SO_102",
+  "canonical_task_id": "TASK-091-RECONSTRUCTION-LIBBDHM_NATIVE",
+  "library": "libbdhm_native.so",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 599968,
+  "dynamic_symbols": 78,
+  "exported_symbols": 27,
+  "imported_symbols": 51,
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libbdhm_native/bdhm_types.h",
+    "SOURCE/GIAI-MA/libbdhm_native/bdhm_expr_clause_engine.h",
+    "SOURCE/GIAI-MA/libbdhm_native/bdhm_expr_clause_engine.cpp",
+    "SOURCE/GIAI-MA/libbdhm_native/bdhm_spark_tracing_engine.h",
+    "SOURCE/GIAI-MA/libbdhm_native/bdhm_spark_tracing_engine.cpp",
+    "SOURCE/GIAI-MA/libbdhm_native/bdhm_native_interface.h",
+    "SOURCE/GIAI-MA/libbdhm_native/bdhm_native_interface.cpp",
+    "SOURCE/GIAI-MA/libbdhm_native/bdhm_native_pseudocode.cpp"
+  ],
+  "verification_suite_tests": 6
 }

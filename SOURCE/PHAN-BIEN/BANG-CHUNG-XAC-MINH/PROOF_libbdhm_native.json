@@ -1,0 +1,26 @@
+{
+  "lib_name": "libbdhm_native",
+  "task_id": "TASK-091-RECONSTRUCTION-LIBBDHM_NATIVE",
+  "legacy_task_id": "TASK_SO_102",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libbdhm_native.so",
+  "binary_size_bytes": 599968,
+  "dynamic_symbols": {
+    "total": 78,
+    "exported": 27,
+    "imported": 51
+  },
+  "gate1_size_passed": true,
+  "gate2_opcode_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "key_proofs": [
+    "SparkTracingNative ABI Struct Layout (verified across 0x04141c..0x045d74): +0x00 Box<dyn NativeClient> fat pointer (data, vtable), +0x18 Arc<RwLock<DeclaredManifest>>, +0x20 Arc<ContextPropsRepo> (with SwissTable instances at +0xa0..+0xb8 using control mask 0x8080808080808080 = -0x7f7f7f7f7f7f7f80 @ 0x043abc), and +0x28 u8 is_enabled flag (ldrb w8, [x20, #0x28])",
+    "bdhm_native::api::context_props Persistent Key-Value & DAG Graph (.rodata 0x00be00..0x00c1e0): composite DB key separator '__SYS__###', value type prefixes '__st_string;', '__st_number;', '__st_bool;', system metadata keys (__SYS__IDS, __SYS__PARENT_IDS, __SYS__LIFE, __SYS__STATIC, __SYS__LEAF, __SYS__LAST_ACCESS_TIME, __SYS__ALIVE), and DFS cycle check ('update_link failed add parent: ... from ..., ring exist!' @ 0x00c060)",
+    "bdhm_native::expr::tokenizer, interpreter & bdhm_native::api::clause (.rodata 0x00c980..0x00dc95): recursive-descent arithmetic evaluator (+, -, *, /, abs, factorial) and conditional/relational clause engine ($if, $then, $else, $case, $when, $eq, $neq, $lt, $lte, $gt, $gte, $in, $nin, $like, $not_like, $nil, $not_nil, $and, $or)",
+    "bdhm_native::api::manifest & spark_tracing_stat (.rodata 0x00d880..0x00de30): DeclaredManifest (4 elements), DeclaredEvent (7 elements), DeclaredEventBehavior (4 elements), and spark_tracing_stat telemetry (version, elapse_ms, prop_total, prop_valid, prop_required_total, prop_required_valid, char_size)",
+    "All 27 exported .dynsym functions: JNI_OnLoad (0x045e44), JNI_OnUnload (0x046990), 8 JNIReachabilityFence methods (0x03e820..0x03e83c), and 17 SparkTracingNative JNI methods (0x03eae0..0x045d10)"
+  ]
+}

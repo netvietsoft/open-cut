@@ -2052,3 +2052,15 @@
   - Agent 13 (`LEDGER_DOI_KHANG.json`): **`51 / 169` (`30.18%`) `VERIFIED_AND_ACCEPTED`**
   - `verify_reconstruction_suite.py`: **`341 PASS / 0 FAIL (100.0%)`**
   - `native_audit_watchdog.py`: **`169 binaries, 0 high findings`**
+
+
+---
+
+## 79. NGHIỆM THU TARGET 52: `libbdhm_native.so` (`TASK-091-RECONSTRUCTION-LIBBDHM_NATIVE` / `TASK_SO_102`) — 2026-10-26 21:24:00
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libbdhm_native.so` (`599,968 bytes`, 78 dynamic symbols: 27 exported `STT_FUNC` + 51 imported).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libbdhm_native/`)**: 8 files (`159,199 B` total directory size, `0 stubs`): `bdhm_types.h`, `bdhm_expr_clause_engine.h`, `bdhm_expr_clause_engine.cpp`, `bdhm_spark_tracing_engine.h`, `bdhm_spark_tracing_engine.cpp`, `bdhm_native_interface.h`, `bdhm_native_interface.cpp`, `bdhm_native_pseudocode.cpp`.
+- **Key Findings**:
+  - `SparkTracingNative` struct ABI: `+0x00` `Box<dyn NativeClient>` fat pointer, `+0x18` `Arc<RwLock<DeclaredManifest>>`, `+0x20` `Arc<ContextPropsRepo>` (SwissTable instances at `+0xa0..+0xb8`, mask `0x8080808080808080` @ `0x043abc`), `+0x28` `u8 is_enabled`.
+  - `bdhm_native::api::context_props`: DB prefixes `__st_string;`, `__st_number;`, `__st_bool;`, separator `__SYS__###`, DAG cycle check `ring exist!` (`0x00c060`).
+  - `bdhm_native::expr` & `bdhm_native::api::clause`: recursive-descent parser (`abs`, `factorial`) and `$if/$then/$else`, `$gte/$lte/$eq/$neq/$like/$in`.
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**52 / 169 — 30.77%**), `verify_reconstruction_suite.py` passed **347 / 347 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
