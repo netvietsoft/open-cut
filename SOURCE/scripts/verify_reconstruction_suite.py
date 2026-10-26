@@ -6656,6 +6656,118 @@ class AutonomousVerificationEngine:
             "Khớp tuyệt đối chuỗi lệnh đồng bộ bộ nhớ đệm AArch64 (mrs ctr_el0, dc cvau, ic ivau, dsb ish, isb @ 0x00f800..0x00f878)"
         )
 
+    def verify_libanimax_napi(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libanimax_napi.so (Lynx AnimaX NAPI Composition Element Bridge)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libanimax_napi"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libanimax_napi.so"
+        so_bytes = so_path.read_bytes()
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        all_src = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB) & binary size (84,064 bytes)
+        self.assert_test(
+            "AnimaxNapi_SourceSizeAndBinaryGate",
+            len(so_bytes) == 84064 and total_bytes >= 100000 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp; khớp nhị phân 84.064 bytes"
+        )
+
+        # 2. NAPI Module Registration (0x00803c..0x008044, .data 0x014000..0x014027) & CompositionElement Methods
+        init_adrp = struct.unpack("<I", so_bytes[0x00803c:0x008040])[0]
+        init_add  = struct.unpack("<I", so_bytes[0x008040:0x008044])[0]
+        init_b    = struct.unpack("<I", so_bytes[0x008044:0x008048])[0]
+        nm_ver    = struct.unpack("<I", so_bytes[0x014000:0x014004])[0]
+        self.assert_test(
+            "AnimaxNapi_ModuleRegistrationAndCompositionElement",
+            init_adrp == 0x90000060 and init_add == 0x91000000 and init_b == 0x14001113 and nm_ver == 1 and
+            b"updateLayerProperty\x00UpdateLayerProperty\x00setResourceProperty\x00SetResourceProperty\x00play\x00frameIndex\x00animax\x00CompositionElement\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "NapiModuleXxDescriptor",
+                "RegisterAnimaXModule",
+                "CompositionElementNapiWrapper",
+                "UpdateLayerProperty",
+                "SetResourceProperty",
+                "Play"
+            ]),
+            "Khớp đăng ký module NAPI 'animax' (@ 0x00803c..0x008044 -> .data 0x014000) và lớp CompositionElement (updateLayerProperty, setResourceProperty, play)"
+        )
+
+        # 3. Color Property Bitmask (0x009c6c..0x009c98: 0x00040005 + 0x67) & '**' KeyPath Splitting (0x009d5c..0x009ea0)
+        and_u16  = struct.unpack("<I", so_bytes[0x009c6c:0x009c70])[0]
+        sub_c9   = struct.unpack("<I", so_bytes[0x009c70:0x009c74])[0]
+        mask_lo  = struct.unpack("<I", so_bytes[0x009c84:0x009c88])[0]
+        mask_hi  = struct.unpack("<I", so_bytes[0x009c88:0x009c8c])[0]
+        cmp_67   = struct.unpack("<I", so_bytes[0x009c94:0x009c98])[0]
+        self.assert_test(
+            "AnimaxNapi_ColorPropertyBitmaskAndKeyPathSplitter",
+            and_u16 == 0x12003E88 and sub_c9 == 0x51032509 and mask_lo == 0x528000AA and
+            mask_hi == 0x72A0008A and cmp_67 == 0x71019D1F and
+            all(tok in all_src for tok in [
+                "0x00040005",
+                "IsColorPropertyType",
+                "ParseHexColorToArgb",
+                "SplitKeyPathByDoubleAsterisk"
+            ]),
+            "Khớp mặt nạ bit thuộc tính màu 0x00040005 + 0x67 ({103, 201, 203, 219} @ 0x009c6c..0x009c98) và bộ tách đường dẫn KeyPath theo '**' (0x009d5c..0x009ea0)"
+        )
+
+        # 4. Restricted Double IEEE-754 Finite Check (0x00bef8..0x00bf0c: 0x7ff0000000000000ULL)
+        mov_inf  = struct.unpack("<I", so_bytes[0x00bef8:0x00befc])[0]
+        fabs_op  = struct.unpack("<I", so_bytes[0x00befc:0x00bf00])[0]
+        fcmp_op  = struct.unpack("<I", so_bytes[0x00bf00:0x00bf04])[0]
+        fccmp_op = struct.unpack("<I", so_bytes[0x00bf08:0x00bf0c])[0]
+        self.assert_test(
+            "AnimaxNapi_RestrictedDoubleFiniteValidation",
+            mov_inf == 0xD2EFFE08 and fabs_op == 0x1E60C001 and fcmp_op == 0x1E602000 and fccmp_op == 0x1E627424 and
+            b"Restricted Double\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "0x7ff0000000000000ULL",
+                "IsRestrictedDoubleFinite",
+                "ValidateRestrictedDoubleOrThrow",
+                "ConvertToAnimaXValueParam"
+            ]),
+            "Khớp kiểm tra số thực hữu hạn IEEE-754 (0x7ff0000000000000ULL, fabs, fcmp, fccmp @ 0x00bef8..0x00bf0c) và ConvertToAnimaXValueParam (144B = 0x90)"
+        )
+
+        # 5. CityHash64 (0x008718..0x0089fc) & NEON Popcount + NextPrime (0x00bfec..0x00c3cc)
+        clz_op    = struct.unpack("<I", so_bytes[0x00c1ec:0x00c1f0])[0]
+        cnt_op    = struct.unpack("<I", so_bytes[0x00c3c4:0x00c3c8])[0]
+        uaddlv_op = struct.unpack("<I", so_bytes[0x00c3c8:0x00c3cc])[0]
+        self.assert_test(
+            "AnimaxNapi_CityHash64AndNeonPopcountPrimeTable",
+            clz_op == 0xDAC01108 and cnt_op == 0x0E205800 and uaddlv_op == 0x2E303800 and
+            all(tok in all_src for tok in [
+                "0x9ddfea08eb382d69ULL",
+                "0xc3a5c85c97cb3127ULL",
+                "CityHash64",
+                "NeonPopcount64",
+                "RoundUpToPowerOfTwo",
+                "NextPrime"
+            ]),
+            "Khớp CityHash64 (0x008718..0x0089fc), NEON cnt v0.8b + uaddlv h0 (0x00c3c4..0x00c3c8) và thuật toán NextPrime / RoundUpToPowerOfTwo (0x00bfec..0x00c1fc)"
+        )
+
+        # 6. NapiCallbackRegistry (56B @ 0x00a9f8, max_load_factor=1.0f=0x3f800000 @ 0x00aa2c) & NapiTaskRunner (0x00af1c..0x00af44)
+        load_factor_op = struct.unpack("<I", so_bytes[0x00aa2c:0x00aa30])[0]
+        log_flag_op    = struct.unpack("<I", so_bytes[0x00af44:0x00af48])[0]
+        self.assert_test(
+            "AnimaxNapi_CallbackRegistryAndTaskRunner",
+            load_factor_op == 0x52A7F009 and log_flag_op == 0x52801609 and
+            b"Failed to PostTask on Napi JS Thread, Napi Status: \x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "NapiCallbackRegistry",
+                "TakeAndInvokeCallback",
+                "NapiTaskRunner",
+                "0x3f800000"
+            ]),
+            "Khớp NapiCallbackRegistry (max_load_factor = 1.0f = 0x3f800000 @ 0x00aa2c) và NapiTaskRunner::PostTask (0x00af1c..0x00af44)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -6727,6 +6839,7 @@ class AutonomousVerificationEngine:
         self.verify_libmdlttkmedianetloader()
         self.verify_libanimax_textra()
         self.verify_libsliver()
+        self.verify_libanimax_napi()
         self.verify_overall_governance()
 
 

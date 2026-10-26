@@ -2234,3 +2234,13 @@
   - `SliverDlOpen` / `SliverDlSym` (`0x008508..0x009310`) implements ELF64 `DT_GNU_HASH` (DJB2 seed `0x1505` @ `0x0089c8` + 64-bit bloom filter) and `DT_HASH` (SysV hash @ `0x008ab4`), plus `.gnu_debugdata` XZ/LZMA2 + CRC64 (`liblzma.so` @ `0x008f4c..0x009008`) decompression to resolve stripped `.symtab` symbols.
   - Embedded `xHook 1.2.0` (`0x0099f8..0x00bd64`) caches `/proc/self/maps` modules in a 224-byte (`0xe0`) Red-Black Tree node (`0x009c90`), decodes signed SLEB128 APS2 relocations (`0x00b528..0x00b58c`), patches `.got.plt` / `.rela.plt` entries, and flushes AArch64 caches via `mrs x3, ctr_el0; dc cvau, x4; dsb ish; ic ivau, x2; dsb ish; isb` (`0x00f800..0x00f878`).
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**66 / 169 — 39.05%**), `verify_reconstruction_suite.py` passed **431 / 431 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+## 94. [2026-10-27 02:29:00] Hoàn Thành Tái Dựng 100% Thân Hàm C++17 Cho `libanimax_napi.so` (`TASK-106` / `TASK_SO_038_libanimax_napi` — Target 67 / 169)
+- **Dung lượng tái dựng**: `9 files`, `101,654 bytes` C++17/H (`0 stubs`) tại `SOURCE/GIAI-MA/libanimax_napi/`.
+- **Đối soát hợp ngữ AArch64 (`445 opcodes`)**:
+  - `.init_array` (`0x010408` -> `0x00803c..0x008044`): `adrp x0, #0x14000; add x0, x0, #0; b napi_module_register_xx` đăng ký `NapiModuleXxDescriptor` (`40 B` tại `.data 0x014000`, `nm_modname = "animax"`, `nm_register_func = 0x008048`).
+  - `RegisterAnimaXModule` (`0x008048..0x008364`): đăng ký lớp JS `"CompositionElement"` (`len = 18 = 0x12`) với 3 phương thức (`"updateLayerProperty"` @ `0x0099c4`, `"setResourceProperty"` @ `0x009fd0`, `"play"` @ `0x00a2ac`).
+  - Mặt nạ bit thuộc tính màu (`0x009c6c..0x009c98`): `0x00040005` (`mov w10, #5; movk w10, #4, lsl #16`) + `0x67` (`103`) khớp `{103, 201, 203, 219}`, và bộ tách đường dẫn KeyPath theo `"**"` (`0x009d5c..0x009ea0`).
+  - Kiểm tra số thực hữu hạn IEEE-754 (`0x00bef8..0x00bf0c`: `0x7ff0000000000000ULL`), `CityHash64` (`0x008718..0x0089fc`), NEON `cnt v0.8b; uaddlv h0, v0.8b` (`0x00c3c4..0x00c3c8`), `NapiCallbackRegistry` (`0x3f800000` @ `0x00aa2c`), và `NapiTaskRunner::PostTask` (`0x00ae70..0x00b190`).
+- **Kết quả kiểm định**: Agent 13 cấp chứng nhận `VERIFIED_AND_ACCEPTED` (**67 / 169 — 39.64%**), `verify_reconstruction_suite.py` đạt **437 / 437 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**.

@@ -1,0 +1,25 @@
+{
+  "handoff_id": "HANDOFF-TASK-106-RECONSTRUCTION-LIBANIMAX_NAPI",
+  "task_id": "TASK-106-RECONSTRUCTION-LIBANIMAX_NAPI",
+  "so_task_id": "TASK_SO_038_libanimax_napi",
+  "from_agent": "Agent 3 (Android/Native) + Agent 6 (Tester) + Agent 13 (Adversary)",
+  "to_agent": "Agent 0 (Orchestrator)",
+  "timestamp": "2026-10-27T02:29:15+07:00",
+  "status": "COMPLETED",
+  "summary": "Completed 100% genuine C++17 reconstruction of libanimax_napi.so (9 files, 101,654 bytes, 0 stubs, 445 opcodes verified). Certified VERIFIED_AND_ACCEPTED (67/169 — 39.64%) with 437/437 PASS (100.0%) and 0 high findings.",
+  "artifacts": [
+    "SOURCE/GIAI-MA/libanimax_napi/animax_napi_types.h",
+    "SOURCE/GIAI-MA/libanimax_napi/animax_napi_hash_stl.h",
+    "SOURCE/GIAI-MA/libanimax_napi/animax_napi_hash_stl.cpp",
+    "SOURCE/GIAI-MA/libanimax_napi/animax_napi_task_value.h",
+    "SOURCE/GIAI-MA/libanimax_napi/animax_napi_task_value.cpp",
+    "SOURCE/GIAI-MA/libanimax_napi/animax_napi_composition.h",
+    "SOURCE/GIAI-MA/libanimax_napi/animax_napi_composition.cpp",
+    "SOURCE/GIAI-MA/libanimax_napi/animax_napi_interface.h",
+    "SOURCE/GIAI-MA/libanimax_napi/animax_napi_pseudocode.cpp",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libanimax_napi.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libanimax_napi.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_038_libanimax_napi.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_038_libanimax_napi.md"
+  ]
+}

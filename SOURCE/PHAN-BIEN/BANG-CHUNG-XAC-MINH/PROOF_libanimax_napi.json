@@ -1,0 +1,82 @@
+{
+  "target_so": "libanimax_napi.so",
+  "task_id": "TASK_SO_038_libanimax_napi",
+  "internal_task_id": "TASK-106-RECONSTRUCTION-LIBANIMAX_NAPI",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_path": "apktool-res/lib/arm64-v8a/libanimax_napi.so",
+  "binary_size_bytes": 84064,
+  "reconstructed_code_bytes": 101654,
+  "architecture": "AArch64 (ELF64 Little-Endian, EM_AARCH64=183)",
+  "exported_symbols_verified": 93,
+  "jni_methods_verified": 3,
+  "opcode_Select_proofs": [
+    {
+      "name": "__cxx_global_var_init_NapiModuleRegister",
+      "rva": "0x00803c",
+      "size_bytes": 12,
+      "opcodes_hex": "600000900000009113110014",
+      "description": "Loads .data 0x014000 (40-byte NapiModuleXxDescriptor for 'animax', register_func=0x008048) and tail-calls napi_module_register_xx (PLT 0x00c490)."
+    },
+    {
+      "name": "RegisterAnimaXModule",
+      "rva": "0x008048",
+      "size_bytes": 796,
+      "opcodes_hex": "ffc302d1fa6706a9f85f07a9f65708a9f44f09a9fd7b0aa9fd830291",
+      "description": "Registers JS class 'CompositionElement' (0x003207, len=18) with 3 methods ('updateLayerProperty' @ 0x0099c4, 'setResourceProperty' @ 0x009fd0, 'play' @ 0x00a2ac) and stores constructor reference at instance data key 0x10148."
+    },
+    {
+      "name": "CityHash64_Murmur2OrCityHash",
+      "rva": "0x008718",
+      "size_bytes": 740,
+      "opcodes_hex": "ff4301d1f44f02a9fd7b03a9fdC30091",
+      "description": "Full Google/LLVM libc++ CityHash64 with constants k0=0xc3a5c85c97cb3127, k1=0xb492b66fbe98f273, k2=0x9ae16a3b2f90404f, and kMul=0x9ddfea08eb382d69."
+    },
+    {
+      "name": "UpdateLayerProperty_ColorPropertyBitmask",
+      "rva": "0x009c6c",
+      "size_bytes": 48,
+      "opcodes_hex": "883e0012092503513f490071c8000054280080520821c91aaa0080528a00a0721f010a6a010100541f9d017141010054",
+      "description": "Tests (prop_type & 0xFFFF) against bitmask 0x00040005 at base 0xc9 (201, 203, 219) and explicit value 0x67 (103) to dispatch ColorUtil::ParseHexColor and AnimaXValueParam(int, int)."
+    },
+    {
+      "name": "ValidateRestrictedDouble_IEEE754FiniteCheck",
+      "rva": "0x00bef8",
+      "size_bytes": 24,
+      "opcodes_hex": "08feefd201c0601e0020601e0201679e2474621e01010054",
+      "description": "Checks !isnan(d0) && fabs(d0) != +Inf (0x7ff0000000000000ULL) via fabs d1, d0; fcmp d0, d0; fmov d2, x8; fccmp d1, d2, #4, vc; b.ne #0xbf2c."
+    },
+    {
+      "name": "NeonPopcount_PowerOfTwoCheck",
+      "rva": "0x00c3c0",
+      "size_bytes": 16,
+      "opcodes_hex": "2000679e0058200e0038302e0800271e",
+      "description": "Computes 64-bit population count via fmov d0, x1; cnt v0.8b, v0.8b; uaddlv h0, v0.8b; fmov w8, s0 to determine power-of-2 bucket count vs modulo prime bucket count."
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula": "COLOR_BITMASK: ((prop & 0xFFFF) == 103) || (((prop & 0xFFFF) - 201 <= 18) && (((1U << ((prop & 0xFFFF) - 201)) & 0x00040005U) != 0)) <=> prop_u16 in {103, 201, 203, 219}",
+      "verified_at": "0x009c6c..0x009c98"
+    },
+    {
+      "formula": "RESTRICTED_DOUBLE_FINITE(d): (bit_cast<uint64_t>(d) & 0x7FFFFFFFFFFFFFFFULL) < 0x7FF0000000000000ULL",
+      "verified_at": "0x00bef8..0x00bf0c"
+    },
+    {
+      "formula": "CITYHASH64_HASHLEN16(u, v, mul=0x9ddfea08eb382d69ULL): a = ((u ^ v) * mul); a ^= (a >> 47); b = ((v ^ a) * mul); b ^= (b >> 47); return b * mul",
+      "verified_at": "0x008718..0x0089fc & 0x0096b4..0x009714"
+    },
+    {
+      "formula": "ROUND_UP_POW2(n): 1ULL << (64 - clz(n - 1)) via sub x8, x0, #1; clz x8, x8; neg w8, w8; lsl x0, x9, x8",
+      "verified_at": "0x00c1e0..0x00c1fc"
+    }
+  ],
+  "abi_layouts_verified": [
+    "NapiModuleXxDescriptor (40 bytes = 0x28) @ .data 0x014000..0x014027",
+    "CompositionElementMethodDescriptors (3 * 0x20 = 96 bytes) @ .data.rel.ro 0x010180..0x0101df",
+    "CompositionElementNapiWrapper (80 bytes = 0x50, vtable @ 0x010160, +/-80B AdjustExternalMemory) @ 0x009b90 & 0x00a44c..0x00a558",
+    "JSValueParamDict (112 bytes = 0x70 stack frame) -> AnimaXValueParam (144 bytes = 0x90 heap object) @ 0x008430..0x008548",
+    "NapiCallbackRegistry (56 bytes = 0x38, max_load_factor = 1.0f = 0x3f800000, instance key 0x101f0) @ 0x00a9f8..0x00aa50",
+    "210-entry uint16_t Prime Table (2..1297, 420 bytes) @ .rodata 0x0031a0..0x003343"
+  ]
+}
