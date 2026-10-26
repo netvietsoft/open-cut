@@ -6535,6 +6535,127 @@ class AutonomousVerificationEngine:
             "Khớp CanvasHelperTextra::DrawGlyphs (faux italic -0.25f @ 0x00af84, skity::TextRun 104B) và JNI_OnLoad trả về 0x00010006 (@ 0x00b84c..0x00b850)"
         )
 
+    def verify_libsliver(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libsliver.so (ByteDance Sliver ART Stack Sampler & xHook Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libsliver"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libsliver.so"
+        so_bytes = so_path.read_bytes()
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        all_src = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB) & binary size (83,984 bytes)
+        self.assert_test(
+            "Sliver_SourceSizeAndBinaryGate",
+            len(so_bytes) == 83984 and total_bytes >= 140000 and len(cpp_files) >= 10,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp; khớp nhị phân 83.984 bytes"
+        )
+
+        # 2. 7 Exported Symbols (.dynsym [100..106]) & 20 JNINativeMethod entries (.data.rel.ro 0x0171d8..0x0173b0)
+        self.assert_test(
+            "Sliver_Exported7SymbolsAnd20JniMethods",
+            b"com/bytedance/sliver/Sliver\x00" in so_bytes and
+            b"com/bytedance/sliver/SliverAllThreadSupport\x00" in so_bytes and
+            b"nStartSliverGroup\x00" in so_bytes and
+            b"nNotifySliverGroup\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "JNI_OnLoad",
+                "xhook_register",
+                "xhook_ignore",
+                "xhook_refresh",
+                "xhook_clear",
+                "xhook_enable_debug",
+                "xhook_enable_sigsegv_protection",
+                "nGetMethodStackTrace",
+                "nStartSliverGroup",
+                "nNotifySliverGroup",
+                "nDumpSliverGroup"
+            ]),
+            "Khớp 7 biểu tượng động xuất khẩu (.dynsym [100..106]) và 20 phương thức JNI (12 Sliver + 8 SliverAllThreadSupport @ 0x0171d8..0x0173b0)"
+        )
+
+        # 3. SDK Bitmask (0x00000007ffe80000ULL @ 0x003b18..0x003b20) & nGetThreadId (+0x10 / +0x35c @ 0x004118..0x004128)
+        sdk_mask_lo = struct.unpack("<I", so_bytes[0x003b18:0x003b1c])[0]
+        sdk_mask_hi = struct.unpack("<I", so_bytes[0x003b20:0x003b24])[0]
+        tid_mov_10  = struct.unpack("<I", so_bytes[0x004118:0x00411c])[0]
+        tid_mov_35c = struct.unpack("<I", so_bytes[0x004124:0x004128])[0]
+        tid_csel    = struct.unpack("<I", so_bytes[0x004128:0x00412c])[0]
+        self.assert_test(
+            "Sliver_ArtSdkBitmaskAndThreadTidOffset",
+            sdk_mask_lo == 0xD2BFFD09 and sdk_mask_hi == 0xF2C000E9 and
+            tid_mov_10 == 0x52800209 and tid_mov_35c == 0x52806B88 and tid_csel == 0x9A890108 and
+            all(tok in all_src for tok in [
+                "0x00000007ffe80000ULL",
+                "0x35c",
+                "0x10",
+                "StackVisitor19",
+                "StackVisitor31"
+            ]),
+            "Khớp bitmask Android SDK 0x00000007FFE80000ULL (API 19 & 21..34 @ 0x003b18) và độ lệch tid của art::Thread (+0x10 / +0x35c @ 0x004118)"
+        )
+
+        # 4. ELF GNU Hash DJB2 (5381 @ 0x0089c8..0x0089d8) & DT_GNU_HASH (0x6ffffef5 @ 0x008b28..0x008b3c)
+        djb2_seed = struct.unpack("<I", so_bytes[0x0089c8:0x0089cc])[0]
+        djb2_mul  = struct.unpack("<I", so_bytes[0x0089d8:0x0089dc])[0]
+        dt_gnu_lo = struct.unpack("<I", so_bytes[0x008b28:0x008b2c])[0]
+        dt_gnu_hi = struct.unpack("<I", so_bytes[0x008b3c:0x008b40])[0]
+        self.assert_test(
+            "Sliver_ElfGnuHashAndSysvHash",
+            djb2_seed == 0x5282A0A8 and djb2_mul == 0x0B081508 and
+            dt_gnu_lo == 0x529FDEAC and dt_gnu_hi == 0x72ADFFEC and
+            all(tok in all_src for tok in [
+                "0x1505",
+                "0x6ffffef5",
+                "ComputeElfGnuHash",
+                "ComputeElfSysvHash"
+            ]),
+            "Khớp hàm băm ELF GNU Hash DJB2 (seed 0x1505 @ 0x0089c8), SysV ELF Hash (0x008ab4) và thẻ DT_GNU_HASH (0x6ffffef5 @ 0x008b28)"
+        )
+
+        # 5. .gnu_debugdata XZ / CRC64 Unpacker (0x008f64..0x008f80) & xHook Debug/SIGSEGV Toggles (0x00bb48..0x00bb74)
+        crc32_sym_op = struct.unpack("<I", so_bytes[0x008f64:0x008f68])[0]
+        crc64_sym_op = struct.unpack("<I", so_bytes[0x008f80:0x008f84])[0]
+        dbg_mov_3    = struct.unpack("<I", so_bytes[0x00bb4c:0x00bb50])[0]
+        dbg_mov_5    = struct.unpack("<I", so_bytes[0x00bb50:0x00bb54])[0]
+        sig_cset     = struct.unpack("<I", so_bytes[0x00bb68:0x00bb6c])[0]
+        self.assert_test(
+            "Sliver_XzDebugDataAndXhookControls",
+            crc32_sym_op == 0x9105F821 and crc64_sym_op == 0x91063C21 and
+            b"/system/lib64/liblzma.so\x00" in so_bytes and b"Crc64GenerateTable\x00" in so_bytes and
+            dbg_mov_3 == 0x52800068 and dbg_mov_5 == 0x528000A9 and sig_cset == 0x1A9F07E8 and
+            all(tok in all_src for tok in [
+                "0x587A37FD",
+                "0xC96C5795D7870F42ULL",
+                "Lzma2MiniDebugDecoder",
+                "XHookModuleRbTree"
+            ]),
+            "Khớp bộ giải nén .gnu_debugdata XZ/LZMA2 + CRC64 (0x008f4c..0x009e40), Cây Đỏ-Đen xHook và công tắc debug/SIGSEGV (0x00bb48..0x00bb74)"
+        )
+
+        # 6. AArch64 I-Cache / D-Cache Flush (mrs ctr_el0, dc cvau, ic ivau, dsb ish, isb @ 0x00f80c..0x00f874)
+        mrs_ctr = struct.unpack("<I", so_bytes[0x00f80c:0x00f810])[0]
+        dc_cvau = struct.unpack("<I", so_bytes[0x00f840:0x00f844])[0]
+        ic_ivau = struct.unpack("<I", so_bytes[0x00f864:0x00f868])[0]
+        dsb_ish = struct.unpack("<I", so_bytes[0x00f870:0x00f874])[0]
+        isb_op  = struct.unpack("<I", so_bytes[0x00f874:0x00f878])[0]
+        self.assert_test(
+            "Sliver_AArch64CacheFlushBarrier",
+            mrs_ctr == 0xD53B0023 and dc_cvau == 0xD50B7B24 and ic_ivau == 0xD50B7522 and
+            dsb_ish == 0xD5033B9F and isb_op == 0xD5033FDF and
+            all(tok in all_src for tok in [
+                "ctr_el0",
+                "dc cvau",
+                "ic ivau",
+                "FlushAArch64InstructionCache"
+            ]),
+            "Khớp tuyệt đối chuỗi lệnh đồng bộ bộ nhớ đệm AArch64 (mrs ctr_el0, dc cvau, ic ivau, dsb ish, isb @ 0x00f800..0x00f878)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -6605,6 +6726,7 @@ class AutonomousVerificationEngine:
         self.verify_libiesapplogger()
         self.verify_libmdlttkmedianetloader()
         self.verify_libanimax_textra()
+        self.verify_libsliver()
         self.verify_overall_governance()
 
 

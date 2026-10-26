@@ -1,0 +1,82 @@
+{
+  "target_so": "libsliver.so",
+  "task_id": "TASK_SO_077_libsliver",
+  "internal_task_id": "TASK-105-RECONSTRUCTION-LIBSLIVER",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_path": "apktool-res/lib/arm64-v8a/libsliver.so",
+  "binary_size_bytes": 83984,
+  "reconstructed_code_bytes": 181506,
+  "architecture": "AArch64 (ELF64 Little-Endian, EM_AARCH64=183)",
+  "exported_symbols_verified": 7,
+  "jni_methods_verified": 20,
+  "opcode_Select_proofs": [
+    {
+      "name": "JNI_OnLoad",
+      "rva": "0x0039ec",
+      "size_bytes": 232,
+      "opcodes_hex": "ff8301d1f65703a9f44f04a9fd7b05a9fd430191",
+      "description": "Stores JavaVM* at 0x18be0, calls GetEnv(JNI_VERSION_1_6 = 0x10006), registers 12 methods on com/bytedance/sliver/Sliver (0x171d8) and 8 methods on com/bytedance/sliver/SliverAllThreadSupport (0x172f8)."
+    },
+    {
+      "name": "ArtHelper_SdkSupportBitmask",
+      "rva": "0x003b18",
+      "size_bytes": 16,
+      "opcodes_hex": "0b0080920b00a0f2",
+      "exact_instructions": "0x003b18: mov x11, #0xffe80000 (929cfd0b); 0x003b20: movk x11, #0x7, lsl #32 (f2a000eb)",
+      "description": "64-bit bitmask 0x00000007ffe80000ULL encoding supported Android API levels 19 and 21..34."
+    },
+    {
+      "name": "nGetThreadId_ArtThreadTidOffset",
+      "rva": "0x004110",
+      "size_bytes": 32,
+      "opcodes_hex": "090280521f010071886b80520801899a006962b8c0035fd6",
+      "description": "Selects offset 0x35c when sdk_int==0 or 0x10 (tls32_.tid) on Android 5.0+ and loads *(uint32_t*)(thread_ptr + offset)."
+    },
+    {
+      "name": "ElfGnuHash_DJB2",
+      "rva": "0x0089c8",
+      "size_bytes": 32,
+      "opcodes_hex": "a8a082520815080b4a05009108010b0b",
+      "description": "GNU Hash DJB2 seed 5381 (0x1505) and loop h = h * 33 + c."
+    },
+    {
+      "name": "xhook_enable_debug_and_sigsegv",
+      "rva": "0x00bb48",
+      "size_bytes": 48,
+      "opcodes_hex": "1f00007168008052a90080522801881a69000090280d00b9c0035fd61f000071e8079f1a69000090280900b9c0035fd6",
+      "description": "Sets g_xhook_log_prio (0x1800c) to 3 (DEBUG) or 5 (WARN) and g_sigsegv_enabled (0x18008) to 0 or 1."
+    },
+    {
+      "name": "AArch64_ICache_DCache_Flush",
+      "rva": "0x00f800",
+      "size_bytes": 120,
+      "opcodes_hex": "23003bd5247b0bd59f3b03d522750bd59f3b03d5df3f03d5c0035fd6",
+      "description": "Reads ctr_el0, cleans data cache lines by VA to PoU (dc cvau), executes dsb ish, invalidates instruction cache lines by VA to PoU (ic ivau), and executes dsb ish + isb."
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula": "SDK_BITMASK = (1ULL << 19) | sum_{k=21}^{34} (1ULL << k) = 0x00000007FFE80000ULL",
+      "verified_at": "0x003b18..0x003b28 & 0x004d4c..0x004d5c"
+    },
+    {
+      "formula": "GNU_HASH(s) = fold(5381, (h, c) -> ((h << 5) + h + c) mod 2^32)",
+      "verified_at": "0x0089c8..0x0089e4"
+    },
+    {
+      "formula": "SYSV_ELF_HASH(s): h = (h << 4) + c; g = h & 0xF0000000; h = (h ^ (g >> 24)) & ~g",
+      "verified_at": "0x008a04..0x008a40"
+    },
+    {
+      "formula": "CRC64_ECMA_182_POLY = 0xC96C5795D7870F42ULL (for .gnu_debugdata XZ stream validation)",
+      "verified_at": "0x009080..0x0090bc"
+    }
+  ],
+  "abi_layouts_verified": [
+    "JNINativeMethod[12] for com/bytedance/sliver/Sliver @ 0x0171d8..0x0172f0",
+    "JNINativeMethod[8] for com/bytedance/sliver/SliverAllThreadSupport @ 0x0172f8..0x0173b0",
+    "StackVisitor19..StackVisitor31 vtables @ 0x0174a0..0x017700",
+    "art::Thread tls32_.tid offset (+0x10 on API 21+, +0x35c fallback) @ 0x004110",
+    "XHookRbNode & Elf64_Dynamic (.got.plt / .rela.plt) module descriptor @ 0x008930..0x00b524"
+  ]
+}

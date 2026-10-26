@@ -2221,3 +2221,16 @@
   - `TextLayerImplTextra::OnDraw` (`0x00a1e8..0x00ab0c`, VTable @ `0x0102c0`) maps `DocumentData::justify` via 64-bit LUT `0x0000030303030102ULL` (`0x00a52c..0x00a534`), computes tracking `(size * tracking) / 100.0f` (`0x00a598..0x00a5a8`), and translates unconstrained `LayoutRegion` (`1000000.0f` @ `0x003520`) by `-500000.0f` (`0x003518`) or `-1000000.0f` (`0x00351c`).
   - `CanvasHelperTextra::DrawGlyphs` (`0x00acf4..0x00b458`, VTable @ `0x0102e8`) applies faux italic skew `-0.25f` (`0x00af84`), constructs `skity::TextRun` (`sizeof = 0x68 = 104 B`, capacity check `0x0276276276276277ULL` @ `0x00b348`), and renders `skity::TextBlob` with `skity::MaskFilter::MakeBlur`.
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**65 / 169 — 38.46%**), `verify_reconstruction_suite.py` passed **425 / 425 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 93. NGHIỆM THU TARGET 66: `libsliver.so` (`TASK-105-RECONSTRUCTION-LIBSLIVER` / `TASK_SO_077`) — 2026-10-27 02:11:00
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libsliver.so` (`83,984 bytes`, 24 ELF64 sections, 107 `.dynsym` entries: 99 imported `[001]..[099]` + 7 exported `[100]..[106]`).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libsliver/`)**: 10 C++/Header files (`181,506 B` C++17/H, `0 stubs`) + `README_ANALYSIS.md`: `sliver_types.h`, `sliver_art_unwinder.h`, `sliver_art_unwinder.cpp`, `sliver_xhook_elf.h`, `sliver_xhook_elf.cpp`, `sliver_sampler_jni.h`, `sliver_sampler_jni.cpp`, `sliver_interface.h`, `sliver_interface.cpp`, `sliver_pseudocode.cpp`.
+- **Key Findings**:
+  - `JNI_OnLoad` (`0x0039ec..0x003ad4`) registers 12 methods on `com/bytedance/sliver/Sliver` (`.data.rel.ro 0x0171d8..0x0172f0`) and 8 methods on `com/bytedance/sliver/SliverAllThreadSupport` (`0x0172f8..0x0173b0`).
+  - `ArtHelper::init` (`0x003ae0..0x003d14`) checks the 64-bit SDK support bitmask `0x00000007ffe80000ULL` (`0x003b18..0x003b20`, supporting API 19 and API 21..34), resolves ART internal symbols (`_ZN3art6Thread14CurrentFromGdbEv`, `SuspendThreadByPeer`, `SuspendThreadByThreadId`, `Resume`, `WalkStack`, `PrettyMethod`) via `SliverDlOpen("libart.so")`, and dispatches across 11 `StackVisitor19..StackVisitor31` vtables (`0x0174a0..0x017700`).
+  - `SliverDlOpen` / `SliverDlSym` (`0x008508..0x009310`) implements ELF64 `DT_GNU_HASH` (DJB2 seed `0x1505` @ `0x0089c8` + 64-bit bloom filter) and `DT_HASH` (SysV hash @ `0x008ab4`), plus `.gnu_debugdata` XZ/LZMA2 + CRC64 (`liblzma.so` @ `0x008f4c..0x009008`) decompression to resolve stripped `.symtab` symbols.
+  - Embedded `xHook 1.2.0` (`0x0099f8..0x00bd64`) caches `/proc/self/maps` modules in a 224-byte (`0xe0`) Red-Black Tree node (`0x009c90`), decodes signed SLEB128 APS2 relocations (`0x00b528..0x00b58c`), patches `.got.plt` / `.rela.plt` entries, and flushes AArch64 caches via `mrs x3, ctr_el0; dc cvau, x4; dsb ish; ic ivau, x2; dsb ish; isb` (`0x00f800..0x00f878`).
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**66 / 169 — 39.05%**), `verify_reconstruction_suite.py` passed **431 / 431 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
