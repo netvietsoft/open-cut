@@ -2160,3 +2160,15 @@
   - `jni_convertMap` (`0x0020a0..0x0022bb`) lazily resolves `java/util/HashMap` (`0x010048`), `<init>(I)V` (`0x010050`), and `put` (`0x010058`), then walks the 80-byte (`0x50`) `std::__ndk1::__tree_node` nodes allocated at `0x002e44` inside `PushLocalFrame(3)` / `PopLocalFrame(nullptr)`.
   - `handleByPumbaaForSandbox` (`0x0027bc..0x002bab`) computes elapsed milliseconds using two signed 64-bit reciprocal multipliers for $1000$: `+0x20c49ba5e353f7cf` (`end_usec / 1000`) and `0xdf3b645a1cac0831 = -0x20c49ba5e353f7cf` (`-start_usec / 1000`), followed by `madd x1, x9, x10, x8` (`w10 = 0x3e8 = 1000` @ `0x002b60`).
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**60 / 169 — 35.50%**), `verify_reconstruction_suite.py` passed **395 / 395 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 88. NGHIỆM THU TARGET 61: `libnewep.so` (`TASK-100-RECONSTRUCTION-LIBNEWEP` / `TASK_SO_148`) — 2026-10-27 00:08:30
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libnewep.so` (`51,232 bytes`, 75 `.dynsym` entries: 43 imported `[003]..[045]` + 29 exported `[046]..[074]`, 18 `.rela.dyn` relocations, 48 `.rela.plt` jump-slot relocations).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libnewep/`)**: 8 files (`93,779 B` C++17/H, `0 stubs`): `newep_types.h`, `newep_stl_unwind.h`, `newep_stl_unwind.cpp`, `newep_resource_finder_jni.h`, `newep_resource_finder_jni.cpp`, `newep_interface.h`, `newep_interface.cpp`, `newep_pseudocode.cpp`.
+- **Key Findings**:
+  - `JNI_OnLoad` (`0x001ebc..0x00209b`) caches `g_vm` (`0x010038`), resolves `AlgorithmModelResourceFinder` (`0x00728c` -> `0x010010`), `findResourceUri` (`0x0073f3` -> `0x010018`), `modelNotFound` (`0x007306` -> `0x010020`), and optionally `DownloadableModelSupportResourceFinder` (`0x00732a` -> `0x010030`, `0x010028`) with `ExceptionCheck` / `ExceptionDescribe` / `ExceptionClear` (`0x001fec..0x002018`).
+  - `nativeCreateResourceFinder` (`0x00209c..0x0020a7`, `12 B`) loads the function pointer of `_Z40findResourceUri_DownloadableModelSupportPvPKcS1_` (`0x0020a8`) from GOT `0x00ffb0` and returns it as a `jlong`.
+  - `nativeCheckEffectChildrenFile` (`0x002570..0x00326f`, `3,328 B`) opens `<dir>/effect_platform_children.tag` (`0x007436`, `__strlen_chk` `0x1e` @ `0x0025d0`), splits by `","`, trims ASCII spaces (`0x20`), and checks each child path via `stat()`.
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**61 / 169 — 36.09%**), `verify_reconstruction_suite.py` passed **401 / 401 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.

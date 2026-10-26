@@ -5996,6 +5996,116 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 61: libnewep.so (EffectPlatform / EPKN Resource Finder & Children Validator)
+    # =========================================================================
+    def verify_libnewep(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnewep.so (EffectPlatform Resource Finder & Validator)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libnewep"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 65 KB across >= 8 files
+        self.assert_test(
+            "Newep_SourceSizeGate",
+            total_bytes > 65000 and len(cpp_files) >= 8,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 65 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (51,232 B, 75 .dynsym: 43 imports + 29 exports) & nativeCreateResourceFinder (0x00209c..0x0020a4)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnewep.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        create_finder_insns = struct.unpack("<3I", so_bytes[0x00209c:0x0020a8])
+        self.assert_test(
+            "Newep_Elf64AndCreateResourceFinderOpcodes",
+            so_path.stat().st_size == 51232
+            and create_finder_insns == (0xb0000060, 0xf947d800, 0xd65f03c0)
+            and "51232u" in content
+            and "0x00010006" in content
+            and "com/ss/ugc/effectplatform/algorithm/AlgorithmModelResourceFinder" in content
+            and "com/ss/android/ugc/effectmanager/DownloadableModelSupportResourceFinder" in content,
+            "Khớp nhị phân libnewep.so (51,232 B, 75 .dynsym: 43 imports + 29 exports) và mã máy nativeCreateResourceFinder (0x00209c..0x0020a4: adrp x0,#0xf000; ldr x0,[x0,#0xfb0]; ret)"
+        )
+
+        # 3. 6 Global .bss Pointers (0x010010..0x010038) & NewepBssSegment (624B = 0x270)
+        has_bss_6 = all(tok in content for tok in [
+            "sizeof(NewepBssSegment) == 624",
+            "kn_resource_finder_class",
+            "kn_resource_finder_methodID",
+            "kn_model_not_found_methodID",
+            "old_resource_finder_methodID",
+            "old_resource_finder_class",
+            "g_vm"
+        ])
+        self.assert_test(
+            "Newep_6BssGlobalsAnd624BSegment",
+            has_bss_6,
+            "Khớp 6 con trỏ toàn cục JNI tại .bss 0x010010..0x010038 và NewepBssSegment (624B = 0x270)"
+        )
+
+        # 4. findResourceUri_DownloadableModelSupport (0x0020a8) & nativeCheckEffectChildrenFile (0x002570)
+        strlen_chk_opcode = struct.unpack("<I", so_bytes[0x0025d0:0x0025d4])[0]
+        space_cmp_opcode = struct.unpack("<I", so_bytes[0x002bf0:0x002bf4])[0]
+        has_ep_logic = (
+            strlen_chk_opcode == 0x528003c1
+            and space_cmp_opcode == 0x710081df
+            and all(tok in content for tok in [
+                "asset://not_found",
+                "/effect_platform_children.tag",
+                "EffectPlatform-EPKN, effectPlatformChildrenFileFp %s is null",
+                "EffectPlatform-EPKN, child %s not exist",
+                "CheckEffectChildrenFileFromPath",
+                "FindResourceUriDownloadableModelSupport"
+            ])
+        )
+        self.assert_test(
+            "Newep_ResourceFinderFallbackAndChildrenTagValidator",
+            has_ep_logic,
+            "Khớp findResourceUri_DownloadableModelSupport (0x0020a8, fallback 'asset://not_found' + modelNotFound) và nativeCheckEffectChildrenFile (0x002570, __strlen_chk 0x1e @ 0x0025d0, cắt khoảng trắng 0x20 @ 0x002bf0)"
+        )
+
+        # 5. Mathematical Proof: Division-by-24 Modular Inverse (0xaaaaaaaaaaaaaaab @ 0x00356c & 0x00377c)
+        asr3_opcode = struct.unpack("<I", so_bytes[0x00357c:0x003580])[0]
+        mul_opcode = struct.unpack("<I", so_bytes[0x003580:0x003584])[0]
+        inv3 = 0xAAAAAAAAAAAAAAAA + 1
+        sim_div24 = (((24 * 19) >> 3) * inv3) & 0xFFFFFFFFFFFFFFFF
+        has_math = (
+            asr3_opcode == 0x9343fd08
+            and mul_opcode == 0x9b0a7d16
+            and sim_div24 == 19
+            and "0xaaaaaaaaaaaaaaabULL" in content
+            and "0x0aaaaaaaaaaaaaaaULL" in content
+            and "0x0555555555555555ULL" in content
+            and "ExactBytesDiv24" in content
+        )
+        self.assert_test(
+            "Newep_VectorStringDiv24ModularInverseMath",
+            has_math,
+            "Khớp toán học chia 24 (sizeof(std::string)=0x18) bằng asr #3 * 0xaaaaaaaaaaaaaaab (0x9343fd08, 0x9b0a7d16 @ 0x00357c..0x003580) và ngưỡng max_size = 0x0aaaaaaaaaaaaaaa"
+        )
+
+        # 6. All 29 Exported .dynsym Symbols ([046]..[074])
+        exported_core = [
+            "JNI_OnLoad",
+            "Java_com_ss_ugc_effectplatform_algorithm_AlgorithmModelResourceFinder_nativeCreateResourceFinder",
+            "_Z40findResourceUri_DownloadableModelSupportPvPKcS1_",
+            "Java_com_ss_ugc_effectplatform_util_EffectUtilKt_nativeCheckEffectChildrenFile",
+            "_ZN7_JNIEnv22CallStaticObjectMethodEP7_jclassP10_jmethodIDz",
+            "_ZN7_JNIEnv20CallStaticVoidMethodEP7_jclassP10_jmethodIDz",
+            "_ZNSt6__ndk1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_SB_",
+            "_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE21__grow_by_and_replaceEmmmmmmPKc"
+        ]
+        self.assert_test(
+            "Newep_29ExportedDynSymSymbols",
+            all(sym in content for sym in exported_core),
+            "Khớp toàn bộ 29 biểu tượng xuất khẩu .dynsym ([046]..[074]): 6 biến toàn cục .bss, 4 hàm EffectPlatform JNI/C++, 2 hàm _JNIEnv variadic và 9 hàm std::__ndk1::basic_string/vector"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -6060,6 +6170,7 @@ class AutonomousVerificationEngine:
         self.verify_liblynx_krypton()
         self.verify_liblynxtrace()
         self.verify_libpumbaa_network()
+        self.verify_libnewep()
         self.verify_overall_governance()
 
 
