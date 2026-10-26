@@ -1,0 +1,33 @@
+{
+  "task_id": "TASK-AUDIT-WATCHDOG-20261026",
+  "title": "Publish native audit and schedule a five-minute repository scan",
+  "assigned_role": "Agent 0 - Orchestrator / Agent 10 - DevOps",
+  "status": "done",
+  "result": "Local five-minute scheduled task and GitHub Actions workflow configured; scanner tested on 169 arm64 binaries; audit report ready to publish.",
+  "scope": {
+    "files_allowed": [
+      "SOURCE/scripts/native_audit_watchdog.py",
+      "SOURCE/scripts/install_native_audit_task.ps1",
+      "SOURCE/scripts/test_native_audit_watchdog.py",
+      ".github/workflows/native-audit-watchdog.yml",
+      "SOURCE/BAOCAO-AUDIT/RECHECK_FIRST_10_FILES_2026-10-23.md",
+      "SOURCE/BAOCAO-AUDIT/NATIVE_WATCHDOG.md",
+      ".gitignore",
+      ".ai/tasks/ready/TASK-AUDIT-WATCHDOG-20261026.json",
+      ".ai/state.json",
+      ".ai/handoffs/HANDOFF-TASK-AUDIT-WATCHDOG-20261026.json",
+      "PROJECT_MEMORY.md",
+      "TASK_LOG.md",
+      "UPDATETODOS.md",
+      "CONVERT/Docs/Changelog/CHANGELOG.md"
+    ],
+    "files_forbidden": ["SOURCE/extracted/**", "SOURCE/apktool-res/**", "SOURCE/GIAI-MA/**"]
+  },
+  "acceptance_criteria": [
+    "Audit report is published to origin/develop without unrelated local changes.",
+    "Every five minutes, local Task Scheduler and GitHub Actions schedule a scan of native files and reconstructed source.",
+    "The scanner reports integrity and suspicious source patterns without claiming binary parity.",
+    "The scanner and schedule are tested and the local task is enabled."
+  ],
+  "created_at": "2026-10-26"
+}

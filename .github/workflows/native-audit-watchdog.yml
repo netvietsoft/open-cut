@@ -1,0 +1,40 @@
+name: Native audit watchdog
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/native-audit-watchdog.yml'
+      - 'SOURCE/scripts/native_audit_watchdog.py'
+      - 'SOURCE/scripts/test_native_audit_watchdog.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: native-audit-watchdog
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Test watchdog
+        run: python SOURCE/scripts/test_native_audit_watchdog.py
+      - name: Scan native files
+        run: python SOURCE/scripts/native_audit_watchdog.py
+      - name: Publish scan JSON as a workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-audit-${{ github.run_id }}
+          path: SOURCE/BAOCAO-AUDIT/NATIVE_WATCHDOG_LATEST.json
+          retention-days: 1
