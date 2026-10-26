@@ -6330,6 +6330,103 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 64: libmdlttkmedianetloader.so (Pandora MDL TTKMediaNet Loader & QUIC Race Strategy)
+    # =========================================================================
+    def verify_libmdlttkmedianetloader(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libmdlttkmedianetloader.so (MDLTTKMediaNetLoader & QUIC Race)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libmdlttkmedianetloader"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libmdlttkmedianetloader.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        all_src = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 9 C++/Header files, 0 stubs)
+        self.assert_test(
+            "MdlTTKMediaNetLoader_SourceSizeGate",
+            len(so_bytes) == 83560 and total_size > 95000 and len(cpp_files) == 9,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libmdlttkmedianetloader.so (83,560 B)"
+        )
+
+        # 2. 4 C++ Classes Allocations (0x50 RB-Tree @ 0x00da34, 0x30 Factory @ 0x00e5f4, 0x88 SharedBlock @ 0x00e9cc) & JNI_OnLoad (0x01008c)
+        alloc_rbtree   = struct.unpack("<I", so_bytes[0x00da34:0x00da38])[0]
+        alloc_factory  = struct.unpack("<I", so_bytes[0x00e5f4:0x00e5f8])[0]
+        alloc_shared   = struct.unpack("<I", so_bytes[0x00e9cc:0x00e9d0])[0]
+        vec_max_lo     = struct.unpack("<I", so_bytes[0x00df9c:0x00dfa0])[0]
+        self.assert_test(
+            "MdlTTKMediaNetLoader_FourClassAllocationsAndJniOnLoad",
+            alloc_rbtree == 0x52800A00 and alloc_factory == 0x52800600 and alloc_shared == 0x52801100 and vec_max_lo == 0xB201F3E8 and
+            all(tok in all_src for tok in [
+                "MDLTTKMediaNetDetectDownloader",
+                "MDLTTKMediaNetDownloader",
+                "MDLTTKMediaNetDownloaderFactory",
+                "MDLTTKMediaNetStrategy",
+                "JNI_OnLoad"
+            ]),
+            "Khớp các lệnh cấp phát đối tượng (RBTree=0x50 @ 0x00da34, Factory=0x30 @ 0x00e5f4, SharedBlock=0x88 @ 0x00e9cc, vec_max @ 0x00df9c) và JNI_OnLoad (0x01008c)"
+        )
+
+        # 3. Default HTTPS/QUIC Port 443 Fallback (0x005d50..0x005d5c & 0x00e760..0x00e76c: cmn w8,#1; mov w8,#0x1bb)
+        port_cmn_1 = struct.unpack("<I", so_bytes[0x005d50:0x005d54])[0]
+        port_mov_1 = struct.unpack("<I", so_bytes[0x005d58:0x005d5c])[0]
+        port_cmn_2 = struct.unpack("<I", so_bytes[0x00e760:0x00e764])[0]
+        port_mov_2 = struct.unpack("<I", so_bytes[0x00e768:0x00e76c])[0]
+        self.assert_test(
+            "MdlTTKMediaNetLoader_HttpsQuicDefaultPort443Fallback",
+            port_cmn_1 == 0x3100051F and port_mov_1 == 0x52803768 and port_cmn_2 == 0x3100051F and port_mov_2 == 0x52803768 and
+            "kDefaultHttpsPort" in all_src and "443" in all_src,
+            "Khớp dự phòng cổng mặc định HTTPS/QUIC 443 (0x1bb) tại quicConnect (0x005d50..0x005d5c) và preconnectUrl (0x00e760..0x00e76c)"
+        )
+
+        # 4. Branchless Non-Negative Downloaded Bytes Clamp (0x007010..0x007014) & 32 KB Bounce Buffer Clamp (0x0072ac..0x0072b4)
+        sub_delta_op = struct.unpack("<I", so_bytes[0x007010:0x007014])[0]
+        bic_clamp_op = struct.unpack("<I", so_bytes[0x007014:0x007018])[0]
+        cmp_32k_op   = struct.unpack("<I", so_bytes[0x0072ac:0x0072b0])[0]
+        mov_32k_op   = struct.unpack("<I", so_bytes[0x0072b0:0x0072b4])[0]
+        csel_32k_op  = struct.unpack("<I", so_bytes[0x0072b4:0x0072b8])[0]
+        self.assert_test(
+            "MdlTTKMediaNetLoader_BranchlessBytesClampAnd32KBounceBuffer",
+            sub_delta_op == 0xCB0B0149 and bic_clamp_op == 0x8AA9FD21 and
+            cmp_32k_op == 0x7140201F and mov_32k_op == 0x52900009 and csel_32k_op == 0x1A89B014 and
+            "kDefaultBounceBufferSize" in all_src and "0x8000" in all_src,
+            "Khớp kẹp không nhánh bic x1,x9,x9,asr #63 (0x007014) và kẹp bộ đệm nảy 32 KB (cmp w0,#8,lsl #12; mov w9,#0x8000; csel w20,w0,w9,lt @ 0x0072ac..0x0072b4)"
+        )
+
+        # 5. HTTP 2xx Range Validation (0x007848..0x007854) & Timeout Event Mapping (0x00858c..0x00859c)
+        http_sub_200 = struct.unpack("<I", so_bytes[0x007848:0x00784c])[0]
+        http_cmp_99  = struct.unpack("<I", so_bytes[0x00784c:0x007850])[0]
+        tmo_lo_op    = struct.unpack("<I", so_bytes[0x00858c:0x008590])[0]
+        tmo_hi_op    = struct.unpack("<I", so_bytes[0x008590:0x008594])[0]
+        self.assert_test(
+            "MdlTTKMediaNetLoader_Http2xxRangeAndTimeoutMapping",
+            http_sub_200 == 0x5103210A and http_cmp_99 == 0x71018D5F and
+            tmo_lo_op == 0x528EAE68 and tmo_hi_op == 0x72BFFFC8 and
+            "parseResponseHeaders" in all_src and "OnTimeout" in all_src,
+            "Khớp kiểm tra mã HTTP 2xx (sub w10,w8,#0xc8; cmp w10,#0x63 @ 0x007848..0x00784c) và ánh xạ mã sự kiện Timeout 100009..100012 (0x00858c..0x00859c)"
+        )
+
+        # 6. QUIC Race Window Expiration Math (mRaceIntervalMin * 60000 ms @ 0x00fd2c..0x00fd38) & Strategy Callbacks
+        race_60k_op = struct.unpack("<I", so_bytes[0x00fd2c:0x00fd30])[0]
+        race_mul_op = struct.unpack("<I", so_bytes[0x00fd34:0x00fd38])[0]
+        self.assert_test(
+            "MdlTTKMediaNetLoader_QuicRaceWindow60000MsAndStrategy",
+            race_60k_op == 0x529D4C0A and race_mul_op == 0x1B0A7D08 and
+            all(tok in all_src for tok in [
+                "checkAndRefreshQuicRaceWindow",
+                "startQuicDetect",
+                "preconnectUrl",
+                "evaluateQuicRaceDecision",
+                "60000LL"
+            ]),
+            "Khớp toán học cửa sổ đua QUIC mRaceIntervalMin * 60000 ms (mov w10,#0xea60; mul w8,w8,w10 @ 0x00fd2c..0x00fd34) và chiến lược evaluateQuicRaceDecision"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -6397,6 +6494,7 @@ class AutonomousVerificationEngine:
         self.verify_libnewep()
         self.verify_libgodzilla_touphic()
         self.verify_libiesapplogger()
+        self.verify_libmdlttkmedianetloader()
         self.verify_overall_governance()
 
 

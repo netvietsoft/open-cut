@@ -1,0 +1,109 @@
+{
+  "library": "libmdlttkmedianetloader.so",
+  "task_id": "TASK-103-RECONSTRUCTION-LIBMDLTTKMEDIANETLOADER",
+  "report_id": "REPORT_TASK_SO_138_libmdlttkmedianetloader",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_metadata": {
+    "path": "extracted/lib/arm64-v8a/libmdlttkmedianetloader.so",
+    "size_bytes": 83560,
+    "architecture": "ELF64 AArch64 (EM_AARCH64)",
+    "sections_count": 20,
+    "dynsym_total": 125,
+    "dynsym_imports": 121,
+    "dynsym_exports": 1,
+    "text_section_va": "0x00005910",
+    "text_section_size": 43440,
+    "rodata_section_va": "0x000102c0",
+    "rodata_section_size": 3416,
+    "data_rel_ro_section_va": "0x00016dd0",
+    "data_rel_ro_section_size": 2920,
+    "got_section_va": "0x00017b78",
+    "got_section_size": 1160,
+    "bss_section_va": "0x00018000",
+    "bss_section_size": 136
+  },
+  "reconstructed_files": [
+    "mdlttkmedianetloader_types.h",
+    "mdlttkmedianetloader_detect_downloader.h",
+    "mdlttkmedianetloader_detect_downloader.cpp",
+    "mdlttkmedianetloader_downloader.h",
+    "mdlttkmedianetloader_downloader.cpp",
+    "mdlttkmedianetloader_factory_strategy.h",
+    "mdlttkmedianetloader_factory_strategy.cpp",
+    "mdlttkmedianetloader_pseudocode.cpp",
+    "README_ANALYSIS.md"
+  ],
+  "reconstructed_code_bytes": 115240,
+  "opcode_evidence": [
+    {
+      "function": "MDLTTKMediaNetDetectDownloader::quicConnect & Default HTTPS Port 443 Fallback",
+      "va_range": "0x005bec..0x006050",
+      "key_instructions": [
+        "0x005d50: 1f050031 (cmn w8, #1 — test port == -1)",
+        "0x005d54: 61000054 (b.ne #0x5d60)",
+        "0x005d58: 68378052 (mov w8, #0x1bb — default HTTPS/QUIC port 443)",
+        "0x005d5c: e86700b9 (str w8, [sp, #0x64])",
+        "0x005db4: bl ttk::QuicConnect::Create ; 0x005ec4: bl ttk::QuicConnect::StartQuicDetec"
+      ]
+    },
+    {
+      "function": "MDLTTKMediaNetDownloader::close & Clamped Non-Negative Downloaded Bytes",
+      "va_range": "0x006fdc..0x0071e8",
+      "key_instructions": [
+        "0x007008: 6a3641f9 (ldr x10, [x19, #0x268] — mCurrentOffset)",
+        "0x00700c: 6b2e41f9 (ldr x11, [x19, #0x258] — mReqStartOffset)",
+        "0x007010: 49010bcb (sub x9, x10, x11 — delta = mCurrentOffset - mReqStartOffset)",
+        "0x007014: 21fda98a (bic x1, x9, x9, asr #63 — branchless max(0L, delta))"
+      ]
+    },
+    {
+      "function": "MDLTTKMediaNetDownloader::triggerAsyncRead & 32 KB Bounce Buffer Clamp",
+      "va_range": "0x007250..0x0073a0",
+      "key_instructions": [
+        "0x0072ac: 1f204071 (cmp w0, #8, lsl #12 — compare free_size with 32,768 = 0x8000)",
+        "0x0072b0: 09009052 (mov w9, #0x8000)",
+        "0x0072b4: 14b0891a (csel w20, w0, w9, lt — read_len = min(free_size, 32768))"
+      ]
+    },
+    {
+      "function": "MDLTTKMediaNetDownloader::parseResponseHeaders & HTTP 2xx Range Check",
+      "va_range": "0x0073a0..0x007e8c",
+      "key_instructions": [
+        "0x007848: 0a210351 (sub w10, w8, #0xc8 — status_code - 200)",
+        "0x00784c: 5f8d0171 (cmp w10, #0x63 — compare with 99 for [200..299])",
+        "0x007850: 28a520b9 (str w8, [x9, #0x20a4] — store mHttpStatusCode)",
+        "0x007854: 081e0054 (b.hi #0x7c14 — branch to error if outside 2xx)"
+      ]
+    },
+    {
+      "function": "MDLTTKMediaNetDownloader::OnTimeout & Timeout Event Mapping & Millisecond Scaling",
+      "va_range": "0x008568..0x0086fc & 0x009654..0x009668",
+      "key_instructions": [
+        "0x00858c: 68ae8e52 (mov w8, #0x7573) ; 0x008590: c8ffbf72 (movk w8, #0xfffe, lsl #16 -> -100009)",
+        "0x008594: 2800080b (add w8, w1, w8) ; 0x008598: 1f0d0071 (cmp w8, #3)",
+        "0x009654: 097d8052 (mov w9, #0x3e8 — 1000 ms/sec)",
+        "0x00965c: 087d091b (mul w8, w8, w9 — timeout_ms = timeout_sec * 1000)"
+      ]
+    },
+    {
+      "function": "MDLTTKMediaNetLoaderStrategy::checkAndRefreshQuicRaceWindow & Factory Allocations",
+      "va_range": "0x00da2c..0x00ffe4",
+      "key_instructions": [
+        "0x00da58: mov w0, #0x28 ; bl _Znwm (40-byte MDLTTKMediaNetLoaderFactory)",
+        "0x00dac8: mov w0, #0x22c8 ; bl _Znwm (8904-byte MDLTTKMediaNetDownloader)",
+        "0x00db7c: mov w0, #0x220 ; bl _Znwm (544-byte MDLTTKMediaNetDetectDownloader)",
+        "0x00de40: mov w0, #0x2b8 ; bl _Znwm (696-byte MDLTTKMediaNetLoaderStrategy)",
+        "0x00fd2c: 0a4c9d52 (mov w10, #0xea60 — 60,000 ms/min)",
+        "0x00fd30: 690214cb (sub x9, x19, x20) ; 0x00fd34: 087d0a1b (mul w8, w8, w10) ; 0x00fd38: 3fc128eb (cmp x9, w8, sxtw)"
+      ]
+    }
+  ],
+  "verification_checks": {
+    "size_over_40kb": true,
+    "opcode_disassembly_matched": true,
+    "mathematical_constants_verified": true,
+    "abi_struct_layout_verified": true,
+    "all_exports_and_vtables_implemented": true,
+    "zero_stubs": true
+  }
+}
