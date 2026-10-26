@@ -4087,6 +4087,98 @@ class AutonomousVerificationEngine:
             "JNI_OnLoad (0x197174) kiểm tra 'debug.ttplayer.log.enable' ('file'/'true') và đăng ký 62 phương thức TTPlayer (0x351eb8)"
         )
 
+    def verify_libTTMStrategyCenter(self):
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 43: libTTMStrategyCenter.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libTTMStrategyCenter"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        self.assert_test(
+            "TTMStrategyCenter_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 12,
+            f"Tổng dung lượng C++ đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Kiểm tra hằng số sentinel trong .data (0x64008..0x64058 -> file 0x60008..0x60058)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libTTMStrategyCenter.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        long_max_1 = struct.unpack("<Q", so_bytes[0x60008:0x60010])[0]
+        int_max_1 = struct.unpack("<I", so_bytes[0x60010:0x60014])[0]
+        dbl_max_1 = struct.unpack("<Q", so_bytes[0x60018:0x60020])[0]
+        long_max_2 = struct.unpack("<Q", so_bytes[0x60048:0x60050])[0]
+        int_max_2 = struct.unpack("<I", so_bytes[0x60050:0x60054])[0]
+        dbl_max_2 = struct.unpack("<Q", so_bytes[0x60058:0x60060])[0]
+        self.assert_test(
+            "TTMStrategyCenter_DataSentinelConstants",
+            so_path.stat().st_size == 395664
+            and long_max_1 == 0x7fffffffffffffff
+            and long_max_2 == 0x7fffffffffffffff
+            and int_max_1 == 0x7fffffff
+            and int_max_2 == 0x7fffffff
+            and dbl_max_1 == 0x7fefffffffffffff
+            and dbl_max_2 == 0x7fefffffffffffff,
+            "Hằng số sentinel .data (LONG_MAX_VALUE/INT_MAX_VALUE/DOUBLE_MAX_VALUE tại 0x64008..0x64058) khớp tuyệt đối nhị phân"
+        )
+
+        # 3. Kiểm tra opcode transformByteDtErrorToTTMErrorCode (0x4d21c) & bảng .rodata (0x523d8)
+        err_insns = struct.unpack("<10I", so_bytes[0x4d21c:0x4d244])
+        err_table = struct.unpack("<7i", so_bytes[0x523d8:0x523f4])
+        bytedt_cpp = (lib_dir / "ttmstrategycenter_bytedt_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "TTMStrategyCenter_TransformByteDtErrorOpcode",
+            err_insns[0] == 0x12001c08
+            and err_insns[1] == 0x7100191f
+            and err_insns[8] == 0x528032e0
+            and err_table == (0, 401, 402, 403, 404, 405, 406)
+            and "transformByteDtErrorToTTMErrorCode" in bytedt_cpp,
+            "transformByteDtErrorToTTMErrorCode (0x4d21c) khớp opcode and/cmp #6/b.hi/ldr và bảng .rodata [0, 401..406], fallback 407 (0x197)"
+        )
+
+        # 4. Kiểm tra thuật toán chia cho 40 (sizeof(std::any)) trong ttm_sc_list::make_real_index (0x41fa0)
+        list_insns = struct.unpack("<6I", so_bytes[0x41fc8:0x41fe0])
+        wrappers_cpp = (lib_dir / "ttmstrategycenter_data_wrappers.cpp").read_text(encoding="utf-8", errors="ignore")
+        inv5_mod64 = 0xcccccccccccccccd
+        sim_count_10 = ((400 >> 3) * inv5_mod64) & 0xffffffffffffffff
+        self.assert_test(
+            "TTMStrategyCenter_MakeRealIndexDiv40",
+            list_insns[2] == 0xb202e7e9
+            and list_insns[3] == 0x9343fd08
+            and list_insns[4] == 0xf29999a9
+            and list_insns[5] == 0x9b097d08
+            and sim_count_10 == 10
+            and "0xcccccccccccccccdULL" in wrappers_cpp,
+            "ttm_sc_list::make_real_index (0x41fa0) khớp phép chia 40 (sizeof(std::any)) bằng nghịch đảo nhân 0xcccccccccccccccdULL"
+        )
+
+        # 5. Kiểm tra 17 hàm Universal BDI trong AnTTMPlatformUniversalBdiFunLoader (0x2324c)
+        bdi_cpp = (lib_dir / "ttmstrategycenter_bdi_feature.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "TTMStrategyCenter_UniversalBdi17Functions",
+            "AnTTMPlatformUniversalBdiFunLoader" in bdi_cpp
+            and "ttm_feature_center_get_int_value" in bdi_cpp
+            and "ttm_register_cep_rule" in bdi_cpp
+            and "ttm_dt_engine_predict" in bdi_cpp
+            and "ttm_dt_engine_predict_raw" in bdi_cpp
+            and "ttm_feature_center_get_extobj_by_key" in bdi_cpp
+            and "bridge_ttm_feature_center_get_value" in bdi_cpp,
+            "AnTTMPlatformUniversalBdiFunLoader (0x2324c) đăng ký đủ 17 hàm 'universal.ttm_*' và bridge_ttm_feature_center_get_value (0x26e78)"
+        )
+
+        # 6. Kiểm tra JNI_OnLoad (0x2e6cc) đăng ký 11 + 5 phương thức JNI tại 0x62050 và 0x62158
+        cep_cpp = (lib_dir / "ttmstrategycenter_cep_engine.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "TTMStrategyCenter_JNIOnLoadAndCEPBridge",
+            "com/tiktok/strategycenter/TTMStrategyCenter" in bytedt_cpp
+            and "com/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTEngineManager" in bytedt_cpp
+            and "TTMCepDataWrapper" in cep_cpp
+            and "ttm_decode_register_cep_rule" in cep_cpp
+            and "run_ttm_rule" in cep_cpp,
+            "JNI_OnLoad (0x2e6cc, JNI_VERSION_1_6) đăng ký 11 hàm TTMStrategyCenter (0x62050) + 5 hàm ByteDTEngineManager (0x62158) và CEP Engine"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -4170,6 +4262,7 @@ class AutonomousVerificationEngine:
         self.verify_libttcrypto()
         self.verify_libttboringssl()
         self.verify_libttmplayer()
+        self.verify_libTTMStrategyCenter()
         self.verify_overall_governance()
 
 

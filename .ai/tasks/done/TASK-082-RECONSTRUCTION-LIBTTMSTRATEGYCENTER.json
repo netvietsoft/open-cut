@@ -1,0 +1,25 @@
+{
+  "task_id": "TASK-082-RECONSTRUCTION-LIBTTMSTRATEGYCENTER",
+  "title": "Deep Reconstruction & Adversarial Verification of libTTMStrategyCenter.so (Target 43)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (FRONTEND / Native Engine) & Agent 13 (Adversary Auditor)",
+  "target_library": "libTTMStrategyCenter.so",
+  "binary_size_bytes": 395664,
+  "reconstructed_cpp_bytes": 191663,
+  "total_directory_bytes": 603093,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libTTMStrategyCenter/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libTTMStrategyCenter.*",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_043_libTTMStrategyCenter.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_024_libTTMStrategyCenter.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "12 C++17 & Header files totaling 191,663 bytes (> 40 KB, 0 stubs) in SOURCE/GIAI-MA/libTTMStrategyCenter/",
+    "Exact AArch64 opcode and .rodata/.data verification for JNI_OnLoad (0x2e6cc), AnTTMPlatformUniversalBdiFunLoader (0x2324c), ttm_sc_list::make_real_index (0x41fa0), and transformByteDtErrorToTTMErrorCode (0x4d21c)",
+    "Agent 13 LEDGER_DOI_KHANG.json status VERIFIED_AND_ACCEPTED (43 / 169)",
+    "verify_reconstruction_suite.py passes 293 / 293 tests (100.0%) and native_audit_watchdog.py reports 0 high findings"
+  ],
+  "completed_at": "2026-10-26T17:52:00+07:00"
+}

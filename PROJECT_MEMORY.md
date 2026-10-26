@@ -1927,3 +1927,15 @@
 
 
 
+
+
+## 70. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libTTMStrategyCenter.so (TARGET 43 — `TASK-082-RECONSTRUCTION-LIBTTMSTRATEGYCENTER`)
+- **Thời gian**: 2026-10-26 17:52:00
+- **Thư viện mục tiêu**: `libTTMStrategyCenter.so` (`395,664 bytes`, 899 dynamic symbols: 757 exported + 142 imported, 16 JNI methods via `RegisterNatives` + `JNI_OnLoad`/`JNI_OnUnload`).
+- **Chi tiết giải mã thân hàm (12 files, 191,663 bytes C++17, 603,093 bytes tổng thư mục, 0 stub)**:
+  1. *Hằng số Sentinel `.data` (`0x64008..0x64058`, file `0x60008..0x60058`)*: `LONG_MAX_VALUE = 0x7fffffffffffffff`, `INT_MAX_VALUE = 0x7fffffff`, `DOUBLE_MAX_VALUE = 0x7fefffffffffffff`.
+  2. *Universal BDI & Feature Center (`ttmstrategycenter_bdi_feature.h/.cpp`)*: `AnTTMPlatformUniversalBdiFunLoader` (`0x2324c`, 10,216 B) đăng ký 17 hàm `"universal.ttm_*"` vào `an_ttm_platform_universal_bdi_address_map` (`0x64140`), cùng `bridge_ttm_feature_center_get_value` (`0x26e78`).
+  3. *Đa hình Dữ liệu Mở rộng (`ttmstrategycenter_data_wrappers.h/.cpp`)*: `TTMExtDataInterface` (`vtable` tại `0x61b38`, 38 hàm ảo), `TTMExtJavaMap` (`0x28568`), `TTMExtJavaList` (`0x2ad90`), `TTMExtJavaBdi` (`0x29ec0`), `ttm_sc_map` (`0x36088`), `ttm_sc_list` (`0x41214`, chia nhanh 40 byte `sizeof(std::any)` bằng nghịch đảo nhân `0xcccccccccccccccdULL` tại `0x41fd0..0x41fdc`), và `TTMExtJson` (`0x44f4c`).
+  4. *CEP & TTM Rule Evaluator (`ttmstrategycenter_cep_engine.h/.cpp`)*: `TTMCepDataWrapper` (`0x30950`), `ttm_decode_register_cep_rule` (`0x301e0`), `ttm_sc_cep_result` (`0x33bc0`), và `ttm_sc_strategy_center::run_ttm_rule` (`0x46dc4`).
+  5. *ByteDT GBDT Engine & 16 Cầu nối JNI (`ttmstrategycenter_bytedt_jni.h/.cpp`)*: `bytedt::ByteDT` (`0x4c370..0x4ea30`), `transformByteDtErrorToTTMErrorCode` (`0x4d21c` tra bảng `.rodata` `0x523d8`: `[0, 401..406]`, mặc định `407`), và `JNI_OnLoad` (`0x2e6cc`, `JNI_VERSION_1_6`).
+- **Kiểm định tự động**: `verify_reconstruction_suite.py` đạt **293 / 293 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**, Agent 13 chứng nhận **43 / 169 `VERIFIED_AND_ACCEPTED` (25.44%)**.

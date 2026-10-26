@@ -1,1 +1,133 @@
-[]
+[
+  {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x2e6cc",
+    "size": 488,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "note": "Requests JNI_VERSION_1_6 (0x10006), registers 11 methods on TTMStrategyCenter (0x62050) and 5 methods on TTMStrategyCenterByteDTEngineManager (0x62158), caches TTMStrategyCenterByteDTPredictResult & TTMStrategyCenterByteDTModelInfo"
+  },
+  {
+    "name": "JNI_OnUnload",
+    "demangled": "JNI_OnUnload",
+    "value": "0x2ea0c",
+    "size": 124,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter"
+  },
+  {
+    "name": "nativeInit",
+    "signature": "(ZI)V",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x62050",
+    "value": "0x2cf28"
+  },
+  {
+    "name": "nativeRegisterRuleStateListener",
+    "signature": "(Ljava/lang/String;J)Z",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x62068",
+    "value": "0x2cfa0"
+  },
+  {
+    "name": "nativeUnRegisterRuleStateListener",
+    "signature": "(Ljava/lang/String;)Z",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x62080",
+    "value": "0x2d07c"
+  },
+  {
+    "name": "nativeUpdateRuleByteData",
+    "signature": "(Ljava/lang/String;[B)Z",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x62098",
+    "value": "0x2d174"
+  },
+  {
+    "name": "nativeProcessRuleByteData",
+    "signature": "([BLjava/util/Map;[Lcom/tiktok/strategycenter/TTMStrategyResult;Lcom/tiktok/strategycenter/TTMStrategyRunCallBack;)Lcom/tiktok/strategycenter/TTMStrategyResult;",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x620b0",
+    "value": "0x2d4ac"
+  },
+  {
+    "name": "nativeProcessBizStream",
+    "signature": "(Ljava/lang/String;Ljava/lang/String;JLjava/util/Map;)V",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x620c8",
+    "value": "0x2ddc4"
+  },
+  {
+    "name": "nativeProcessBdiFunction",
+    "signature": "(JJ)V",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x620e0",
+    "value": "0x2df3c"
+  },
+  {
+    "name": "nativeReleaseTTMCepResultCallback",
+    "signature": "(J)V",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x620f8",
+    "value": "0x2df5c"
+  },
+  {
+    "name": "nativeRegisterBizCepCallback",
+    "signature": "(Ljava/lang/String;Lcom/tiktok/strategycenter/cep/TTMCepResultCallback;)Z",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x62110",
+    "value": "0x2df6c"
+  },
+  {
+    "name": "nativeUnRegisterBizCepCallback",
+    "signature": "(Ljava/lang/String;)Z",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x62128",
+    "value": "0x2e080"
+  },
+  {
+    "name": "nativeCleanBizCepRule",
+    "signature": "(Ljava/lang/String;Ljava/lang/String;)Z",
+    "java_class": "com/tiktok/strategycenter/TTMStrategyCenter",
+    "table_vaddr": "0x62140",
+    "value": "0x2e150"
+  },
+  {
+    "name": "nativeCreateByteDTEngine",
+    "signature": "([BI)J",
+    "java_class": "com/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTEngineManager",
+    "table_vaddr": "0x62158",
+    "value": "0x2e214"
+  },
+  {
+    "name": "nativePredict",
+    "signature": "(J[FF)Lcom/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTPredictResult;",
+    "java_class": "com/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTEngineManager",
+    "table_vaddr": "0x62170",
+    "value": "0x2e2e0"
+  },
+  {
+    "name": "nativePredictWithOrder",
+    "signature": "(J[FFZ)Lcom/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTPredictResult;",
+    "java_class": "com/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTEngineManager",
+    "table_vaddr": "0x62188",
+    "value": "0x2e454"
+  },
+  {
+    "name": "nativeGetModelInfo",
+    "signature": "(J)Lcom/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTModelInfo;",
+    "java_class": "com/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTEngineManager",
+    "table_vaddr": "0x621a0",
+    "value": "0x2e5e0"
+  },
+  {
+    "name": "nativeReleaseEngine",
+    "signature": "(J)V",
+    "java_class": "com/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTEngineManager",
+    "table_vaddr": "0x621b8",
+    "value": "0x2e6b0"
+  }
+]

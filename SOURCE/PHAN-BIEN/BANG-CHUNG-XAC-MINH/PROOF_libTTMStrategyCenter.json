@@ -1,0 +1,81 @@
+{
+  "library": "libTTMStrategyCenter.so",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "auditor": "Agent 13 (Adversary Auditor) & Agent 0 (Orchestrator)",
+  "timestamp": "2026-10-26T17:51:00Z",
+  "binary_metadata": {
+    "path": "apktool-res/lib/arm64-v8a/libTTMStrategyCenter.so",
+    "size_bytes": 395664,
+    "architecture": "AArch64 (ELF64 Little-Endian)",
+    "pt_load_0": "vaddr 0x000000 .. 0x05d798 -> file 0x000000 .. 0x05d798 (R+X)",
+    "pt_load_1": "vaddr 0x061b38 .. 0x064590 -> file 0x05db38 .. 0x060138 (R+W, file_offset = vaddr - 0x4000)",
+    "total_dynamic_symbols": 899,
+    "exported_dynamic_symbols": 757,
+    "imported_dynamic_symbols": 142,
+    "total_jni_methods": 18
+  },
+  "reconstructed_source": {
+    "directory": "SOURCE/GIAI-MA/libTTMStrategyCenter",
+    "cpp_header_files_count": 12,
+    "cpp_header_bytes": 191663,
+    "total_directory_bytes": 603093,
+    "stubs_count": 0
+  },
+  "opcode_and_abi_evidence": [
+    {
+      "function": "JNI_OnLoad",
+      "vaddr": "0x2e6cc",
+      "size_bytes": 488,
+      "opcodes": [
+        "0x2e6f4..0x2e710: mov w2, #6 ; movk w2, #1, lsl #16 (JNI_VERSION_1_6 = 0x00010006)",
+        "0x2e728..0x2e750: RegisterNatives on 'com/tiktok/strategycenter/TTMStrategyCenter' (0x5196b) with 11 JNINativeMethod entries @ 0x62050 (file 0x5e050)",
+        "0x2e768..0x2e790: RegisterNatives on 'com/tiktok/strategycenter/bytedt/TTMStrategyCenterByteDTEngineManager' (0x51c87) with 5 JNINativeMethod entries @ 0x62158 (file 0x5e158)",
+        "0x2e7a8..0x2e860: FindClass & NewGlobalRef for TTMStrategyCenterByteDTPredictResult (0x51e21, <init>(II[F[F[I[I)V @ 0x51e67) and TTMStrategyCenterByteDTModelInfo (0x51e75, <init>(IFFFFF)V @ 0x51eb7)"
+      ]
+    },
+    {
+      "function": "AnTTMPlatformUniversalBdiFunLoader::{base ctor}()",
+      "vaddr": "0x2324c",
+      "size_bytes": 10216,
+      "opcodes": [
+        "0x2324c..0x25a30: Constructs 17-entry std::pair<const std::string, void*> array (17 * 32 = 0x220 bytes) with 'universal.' prefix and populates an_ttm_platform_universal_bdi_address_map @ 0x64140",
+        "Registered 17 BDI functions: universal.ttm_feature_center_get_int_value, universal.ttm_feature_center_get_bool_value, universal.ttm_feature_center_get_double_value, universal.ttm_feature_center_get_str_value, universal.ttm_feature_center_get_dict_value, universal.ttm_feature_center_get_list_value, universal.ttm_register_cep_rule, universal.ttm_get_or_create_dt_engine, universal.ttm_release_dt_engine, universal.ttm_dt_engine_load_model, universal.ttm_get_dt_engine_model_info, universal.ttm_dt_engine_predict, universal.ttm_dt_engine_predict_raw, universal.ttm_feature_center_get_ext_list, universal.ttm_feature_center_get_ext_dict, universal.ttm_feature_center_get_extobj_by_index, universal.ttm_feature_center_get_extobj_by_key"
+      ]
+    },
+    {
+      "function": "ttm_sc_list::make_real_index(long)",
+      "vaddr": "0x41fa0",
+      "size_bytes": 648,
+      "opcodes": [
+        "0x41fc8: a9412668  ldp x8, x9, [x19, #0x10] (loads std::vector<std::any> begin/end)",
+        "0x41fcc: cb080128  sub x8, x9, x8 (byte_delta = end - begin)",
+        "0x41fd0: b202e7e9  mov x9, #-0x3333333333333334",
+        "0x41fd4: 9343fd08  asr x8, x8, #3 (byte_delta >> 3)",
+        "0x41fd8: f29999a9  movk x9, #0xcccd (x9 = 0xcccccccccccccccdULL = multiplicative inverse of 5 mod 2^64)",
+        "0x41fdc: 9b097d08  mul x8, x8, x9 (element_count = byte_delta / 40, since sizeof(std::any) == 40)",
+        "0x41fe0: f100029f  cmp x20, #0x0 ; 0x41fe4: 8b080289 add x9, x20, x8 ; 0x41fe8: 9a89b289 csel x9, x20, x9, lt"
+      ]
+    },
+    {
+      "function": "transformByteDtErrorToTTMErrorCode(signed char)",
+      "vaddr": "0x4d21c",
+      "size_bytes": 40,
+      "opcodes": [
+        "0x4d21c: 12001c08  and w8, w0, #0xff",
+        "0x4d220: 7100191f  cmp w8, #0x6",
+        "0x4d224: 540000c8  b.hi #0x4d23c",
+        "0x4d228: b0000029  adrp x9, #0x52000",
+        "0x4d22c: 93401c08  sxtb x8, w0",
+        "0x4d230: 910f6129  add x9, x9, #0x3d8 (.rodata table @ 0x523d8: [0, 401, 402, 403, 404, 405, 406])",
+        "0x4d234: b8687920  ldr w0, [x9, x8, lsl #2]",
+        "0x4d238: d65f03c0  ret",
+        "0x4d23c: 528032e0  mov w0, #0x197 (default fallback = 407)"
+      ]
+    }
+  ],
+  "mathematical_proofs": [
+    "Fast Division by 40 (sizeof(std::any) == 40) via Multiplicative Inverse Modulo 2^64: Since 40 = 8 * 5 and 5 * 0xcccccccccccccccdULL === 1 (mod 2^64), ((end - begin) >> 3) * 0xcccccccccccccccdULL computes exact element count in 4 cycles without udiv.",
+    "Unsigned Range Check & Jump Table Lookup in transformByteDtErrorToTTMErrorCode (0x4d21c): Casting int8_t to uint8_t via and w8, w0, #0xff maps negative values to [128..255] > 6, branching to default 407 (0x197), while values in [0..6] index .rodata @ 0x523d8 -> [0, 401, 402, 403, 404, 405, 406].",
+    "IEEE-754 & Two's Complement Sentinel Constants in .data (0x64008..0x64058): LONG_MAX_VALUE = 0x7fffffffffffffff (2^63 - 1), INT_MAX_VALUE = 0x7fffffff (2^31 - 1), DOUBLE_MAX_VALUE = 0x7fefffffffffffff ((2 - 2^-52) * 2^1023)."
+  ]
+}
