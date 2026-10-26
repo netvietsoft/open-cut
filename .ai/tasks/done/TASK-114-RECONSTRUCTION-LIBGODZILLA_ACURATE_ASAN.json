@@ -1,0 +1,26 @@
+{
+  "task_id": "TASK-114-RECONSTRUCTION-LIBGODZILLA_ACURATE_ASAN",
+  "title": "Clean-Room C++17 Reconstruction of libgodzilla-acurate-asan.so (ByteDance Godzilla Accurate GWP-ASan & RefDebug Native Engine)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "verified_by": "Agent 13 (Adversary Auditor)",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libgodzilla-acurate-asan.so",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libgodzilla-acurate-asan.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "created_at": "2026-10-27T05:44:00+07:00",
+  "completed_at": "2026-10-27T06:08:30+07:00",
+  "verification_summary": {
+    "ledger_status": "VERIFIED_AND_ACCEPTED",
+    "verified_count": "75 / 169",
+    "suite_tests": "485 / 485 PASS (100.0%)",
+    "watchdog_high_findings": 0,
+    "reconstructed_bytes": 218388
+  }
+}

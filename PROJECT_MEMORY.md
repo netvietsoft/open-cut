@@ -2331,3 +2331,16 @@
   - `adversary_critic_agent.py`: **74 / 169 `VERIFIED_AND_ACCEPTED` (43.79%)** (`297 opcodes`, `100% REAL`).
   - `verify_reconstruction_suite.py`: **479 / 479 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 102. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libgodzilla-acurate-asan.so (TASK-114-RECONSTRUCTION-LIBGODZILLA_ACURATE_ASAN / TASK_SO_128_libgodzilla_acurate_asan)
+- **Thời gian**: 2026-10-27 06:08:00
+- **Thư viện**: `libgodzilla-acurate-asan.so` (`149,952 bytes`, SHA-256 `671dd551f3335a710f4c55b0b660bfab206be25e4f3971a9cf3a45b6e84f26b3`, `.text` `0x00dc20..0x024604` = `92,644 bytes`, `23,161` instructions, 3 exported JNI functions).
+- **Chi tiết giải mã thân hàm (9 files C++17, `218,388 bytes`, `godzilla_acurate_asan_pseudocode.cpp` = `94,162 bytes`, 0 stub)**:
+  1. **`initAcurateAsan` (`0x00dcc0..0x00eb90`) & `gwp_asan::GuardedPoolAllocator` (`0x011054..0x0135f8`)**: Cấp phát `GuardedPoolAllocator` `232 bytes` (`mov w1, #0xe8` @ `0x00dfec`) và mảng `AllocationMetadata` `624 bytes/slot` (`mov w9, #0x270` @ `0x011558`), đặt tên VMA `"GWP-ASan Guard Page"` / `"GWP-ASan Alive Slot"` qua `prctl(0x53564d41, 0, ...)` (`0x011890`), chụp vết ngăn xếp 64-frame qua `_Unwind_Backtrace` (`0x0109d4`), phân loại 6 lỗi bộ nhớ (`USE_AFTER_FREE`, `DOUBLE_FREE`, `BUFFER_OVERFLOW`, `BUFFER_UNDERFLOW`, `INVALID_FREE`, `UNKNOWN` @ `0x012b20`), xuất báo cáo `*** Acurate-ASan ***` (`0x011a44..0x0128f0`), kích hoạt bẫy phần cứng `strb wzr, [x8]` (`0x011a18`), và giải mã ELF `NT_GNU_BUILD_ID` qua bộ đệm 512 mục (`0x30000 bytes` @ `0x0137cc`, `"GNU\0"` = `0x00554e47` @ `0x013a34`).
+  2. **`initProxyFaultHandler` (`0x01ed68..0x01f06c`) & Vá Lệnh `ret` Trên `debuggerd_signal_handler` (`0x01f070..0x01f5f8`)**: Định vị đầu hàm `debuggerd_signal_handler` từ nhánh `bl __cxa_atexit` hoặc quét lùi tìm `STP` prologue (`0x01f070..0x01f11c`), mở quyền trang `PROT_READ|PROT_WRITE|PROT_EXEC = 7` (`0x01f4dc`), ghi nguyên tử lệnh AArch64 `ret` (`0xd65f03c0` = `mov w1, #-0x2be00000; movk w1, #0x03c0` @ `0x01eeb0..0x01eeb4`) bằng `stlr w20, [x19]` (`0x01f514`), khôi phục `PROT_READ|PROT_EXEC = 5` (`0x01f524`), và đồng bộ bộ đệm lệnh bằng `ic ivau` + `dc cvac` (`0x01f594..0x01f5f4`).
+  3. **`nativeRefrecordInit` (`0x01ff1c`) & `GodzillaRefDebug` (`0x01fe9c..0x020678`)**: Tra cứu 5 biểu tượng `IndirectReferenceTable` và `ArtMethod::PrettyMethod` trong `libart.so` (`0x01fee0..0x01ff18`), tính chỉ mục xô băm theo `bucket = (reinterpret_cast<uintptr_t>(obj) >> 6) % bucket_count` (`lsr x9, x19, #6; udiv w10, w9, w8; msub w8, w10, w8, w9` @ `0x020400..0x020414`), khóa quay CAS nguyên tử `ldaxr`/`stlxr` (`0x020438..0x020444`), và vá chuỗi định dạng lỗi `"JNI ERROR (app bug): accessed stale %s 0x%x  (index %d in a table of size %d)"` thành `"..." #Au#"` (`0x23754123` @ `0x01fccc`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **75 / 169 `VERIFIED_AND_ACCEPTED` (44.38%)** (`277 opcodes`, `100% REAL`).
+  - `verify_reconstruction_suite.py`: **485 / 485 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

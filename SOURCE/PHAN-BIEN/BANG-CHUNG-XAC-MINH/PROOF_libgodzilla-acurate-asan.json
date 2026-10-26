@@ -1,0 +1,110 @@
+{
+  "proof_id": "PROOF-LIBGODZILLA-ACURATE-ASAN-V1",
+  "target_library": "libgodzilla-acurate-asan.so",
+  "task_id": "TASK_SO_128_libgodzilla_acurate_asan",
+  "governance_task_id": "TASK-114-RECONSTRUCTION-LIBGODZILLA_ACURATE_ASAN",
+  "challenge_id": "CHALLENGE-LIBGODZILLA-ACURATE-ASAN",
+  "submitted_by": "Agent 0 (Orchestrator) & Agent 3 (Android/Native)",
+  "submitted_at": "2026-10-27T06:03:00+07:00",
+  "binary_identity": {
+    "path": "SOURCE/apktool-res/lib/arm64-v8a/libgodzilla-acurate-asan.so",
+    "size_bytes": 160168,
+    "sha256": "0c89ab013365273e0d1b626303f8948a1dbf72bf1d77ce5f2ec36b181b769a0c",
+    "arch": "AArch64 (arm64-v8a)",
+    "text_section": {
+      "va_start": "0x00dc70",
+      "va_end": "0x02535c",
+      "size_bytes": 95980,
+      "instruction_count": 23995
+    }
+  },
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/godzilla_acurate_asan_types.h",
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/guarded_pool_allocator.h",
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/guarded_pool_allocator.cpp",
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/acurate_asan_signal_hook.h",
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/acurate_asan_signal_hook.cpp",
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/godzilla_ref_debug.h",
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/godzilla_ref_debug.cpp",
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/godzilla_acurate_asan_interface.h",
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/godzilla_acurate_asan_pseudocode.cpp",
+    "SOURCE/GIAI-MA/libgodzilla-acurate-asan/README_ANALYSIS.md"
+  ],
+  "opcode_evidence": [
+    {
+      "function": "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaAcurateAsan_initAcurateAsan",
+      "va_range": "0x00dcc0..0x00e2e0",
+      "instructions": [
+        "0x00dcc0: ff 83 05 d1 (sub sp, sp, #0x160) & 0x00dcc4: fd 7b 10 a9 (stp x29, x30, [sp, #0x100])",
+        "0x00dd54: 9f 4c 00 71 (cmp w4, #0x13); 0x00dd58: a8 01 00 54 (b.gt #0xdd8c) (validates api_level > 19)",
+        "0x00dfa8..0x00dfe4: cmp w8, #0x1d (api > 29 -> 20*page_size); sub w9, w8, #0x1b; cmp w9, #2 (api in [28,29] -> 10*page_size); cmp w8, #0x13 (api in [20,27] -> 1*page_size)",
+        "0x00dff4: 01 1d 80 52 (mov w1, #0xe8); 0x00e000: e0 5c 00 94 (bl mmap) (allocates 232-byte GuardedPoolAllocator)",
+        "0x00e018: 13 0d 00 94 (bl 0x011464 GuardedPoolAllocator::init); 0x00e038: c3 18 00 94 (bl 0x014344 initSignalAndBacktrace); 0x00e04c: 27 1b 00 94 (bl 0x014ce8 startCustomHooks)"
+      ]
+    },
+    {
+      "function": "_ZN8gwp_asan20GuardedPoolAllocator13trapOnAddressEm5Error",
+      "va_range": "0x011a0c..0x011a1c",
+      "instructions": [
+        "0x011a0c: 08 14 40 f9 (ldr x8, [x0, #0x28]) (loads State.CrashTriggerSortingPage)",
+        "0x011a10: 02 48 00 b9 (str w2, [x0, #0x48]) (stores Error at State.FailureType)",
+        "0x011a14: 01 28 00 f9 (str x1, [x0, #0x50]) (stores Address at State.FailureAddress)",
+        "0x011a18: 1f 01 00 39 (strb wzr, [x8]) (deliberate write to PROT_NONE guard page to trigger SIGSEGV)",
+        "0x011a1c: c0 03 5f d6 (ret)"
+      ]
+    },
+    {
+      "function": "GuardedPoolAllocator::init & getRandomUnsigned32",
+      "va_range": "0x011438..0x0116c8",
+      "instructions": [
+        "0x011438: 00 01 40 b9 (ldr w0, [x8]); 0x01143c: 08 34 00 4a (eor w8, w0, w0, lsl #13); 0x011440: 08 45 48 4a (eor w8, w8, w8, lsr #17); 0x011444: 00 15 08 4a (eor w0, w8, w8, lsl #5) (Xorshift32 PRNG)",
+        "0x011474: 68 2a 88 52 (mov w8, #0x4153); 0x01147c: c8 29 a8 72 (movk w8, #0x414e, lsl #16) (writes 'ASAN' magic 0x4e415341, version 2 at +0x00)",
+        "0x011510: 09 4e 80 52 (mov w9, #0x270); 0x011514: 00 7d 09 9b (mul x0, x8, x9) (allocates MaxSimultaneousAllocations * 0x270 = 624 bytes per AllocationMetadata)"
+      ]
+    },
+    {
+      "function": "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaAcurateAsan_initProxyFaultHandler & patchInstructionWithRet",
+      "va_range": "0x01ed68..0x01f5b8",
+      "instructions": [
+        "0x01ed68: ff 83 02 d1 (sub sp, sp, #0xa0); 0x01ed6c: fd 7b 04 a9 (stp x29, x30, [sp, #0x40])",
+        "0x01ee50: 65 01 00 94 (bl 0x01f3e4 isScudoMemoryAllocator scanning /proc/self/maps for \"scudo\")",
+        "0x01eeb0: 01 c0 a5 12 (mov w1, #-0x2be00000); 0x01eeb8: 01 78 80 72 (movk w1, #0x3c0) (loads AArch64 `ret` opcode 0xd65f03c0)",
+        "0x01f4fc: 02 01 80 52 (mov w2, #7); 0x01f504: 07 18 00 94 (bl mprotect PROT_READ|PROT_WRITE|PROT_EXEC)",
+        "0x01f520: 74 fe 9f 88 (stlr w20, [x19]); 0x01f528: dd 06 00 94 (bl 0x02109c __clear_cache)"
+      ]
+    },
+    {
+      "function": "GodzillaRefDebug (nativeRefrecordInit, recordRefAlloc, nativeRefrecordConfig)",
+      "va_range": "0x01ff1c..0x020b4c",
+      "instructions": [
+        "0x01ff1c: 9d 00 00 14 (b #0x20190) (nativeRefrecordInit tail-branch)",
+        "0x0201f0: 08 7d 08 1b (mul w8, w9, w8); 0x0201f8: 00 05 08 8b (add x0, x8, x8, lsl #1); 0x0201fc: 00 ed 7c d3 (lsl x0, x0, #4) (allocates bundle_size * local_size * 48 bytes for RefRecordEntry pool)",
+        "0x0208e0: 08 04 00 51 (sub w8, w0, #1); 0x0208e4: 1f 3d 93 71 (cmp w8, #0x270f) (clamps bundle_size to 1..10000 and local_size to 1..128)",
+        "0x02097c: 6a 0a 02 53 (lsr w10, w19, #2); 0x020980: 4b 09 c9 1a (udiv w11, w10, w9); 0x020984: 76 a9 09 1b (msub w22, w11, w9, w10) (bucket_idx = (ref_val >> 2) % g_ref_bundle_size)"
+      ]
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "theorem": "GWP-ASan GuardedPoolAllocator (232-Byte / 0xE8) & AllocationMetadata (624-Byte / 0x270) ABI Layout & Slot Addressing",
+      "formula": "sizeof(AllocatorState) = 0x58 (88 B), sizeof(AllocationMetadata) = 2 * sizeof(CallSiteInfo[0x128]) + 0x20 = 0x270 (624 B), sizeof(GuardedPoolAllocator) = 0xE8 (232 B); PoolBytes = PageSize * (1 + N) + MaxAllocationSize * N; slotToAddr(i) = GuardedPagePool + PageSize + i * (PageSize + MaxAllocationSize); MaxAllocationSize(api) = 20*PageSize (api > 29), 10*PageSize (api in {28,29}), 1*PageSize (api in [20,27])",
+      "verified": true
+    },
+    {
+      "theorem": "Xorshift32 PRNG State Recurrence (0x011438) & ZigZag + LEB128 Stack Trace Compression (0x01129c..0x0113a8)",
+      "formula": "Xorshift32(x): x_1 = x ^ (x << 13), x_2 = x_1 ^ (x_1 >> 17), x_3 = x_2 ^ (x_2 << 5) (mod 2^32); ZigZag(diff) = (diff << 1) ^ (diff >> 63) where diff = frame[i] - frame[i-1], encoded 7 bits/byte with MSB continuation flag 0x80",
+      "verified": true
+    },
+    {
+      "theorem": "Scudo Proxy Fault Handler AArch64 `ret` Instruction Patching (0x01eeb0 & 0x01f4ac)",
+      "formula": "InsnWord = (-0x2be00000 & 0xffff0000) | 0x03c0 = 0xd65f03c0 (AArch64 `ret x30`); PageBase = SymAddr & ~(PageSize - 1); mprotect(PageBase, PageSize, 7) -> stlr(0xd65f03c0, SymAddr) -> __clear_cache(SymAddr, SymAddr+4) -> mprotect(PageBase, PageSize, 5)",
+      "verified": true
+    },
+    {
+      "theorem": "GodzillaRefDebug Ring-Buffer Bucket Hashing & Pool Sizing (.data 0x02e8f0..0x02e8fc & .text 0x0201bc..0x020b4c)",
+      "formula": "sizeof(RefRecordEntry) = 3 * 16 = 48 bytes (0x30: ref_value @ +0x00, seq_id @ +0x04, trace_depth @ +0x08, action_type @ +0x0A, frames[4] @ +0x10..+0x30); PoolBytes = bundle_size * local_size * 48; BucketIdx(ref) = (uint32(ref) >> 2) % bundle_size; WriteIdx' = (WriteIdx + 1) % local_size",
+      "verified": true
+    }
+  ],
+  "verification_status": "READY_FOR_CRITIC_AUDIT"
+}

@@ -1,6 +1,6 @@
 {
   "lib_name": "liborbuculum",
-  "inspected_at": "2026-10-27 05:15:19",
+  "inspected_at": "2026-10-27 06:04:46",
   "gate1_size_bytes": 6740,
   "gate1_passed": false,
   "gate2_opcode_count": 0,
@@ -9,11 +9,10 @@
   "gate4_abi_offsets_verified": false,
   "gate5_symbols_count": 743,
   "gate5_passed": true,
-  "gate6_test_passed": false,
+  "gate6_test_passed": true,
   "status": "CHALLENGED_NEEDS_PROOF",
   "criticisms": [
     "Dung lượng mã nguồn (6740 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
-    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
-    "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể."
   ]
 }

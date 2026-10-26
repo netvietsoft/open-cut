@@ -7677,6 +7677,135 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 75. KIỂM CHỨNG libgodzilla-acurate-asan.so (ByteDance Godzilla GWP-ASan, ProxyFaultHandler & RefDebug)
+    # =========================================================================
+    def verify_libgodzilla_acurate_asan(self):
+        import struct
+        print("\n[75] Đang kiểm chứng libgodzilla-acurate-asan.so (ByteDance Godzilla GWP-ASan, ProxyFaultHandler & RefDebug)...")
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libgodzilla-acurate-asan.so"
+        giaima_dir = GIAIMA_DIR / "libgodzilla-acurate-asan"
+        so_bytes = so_path.read_bytes()
+
+        cpp_files = list(giaima_dir.glob("*.cpp")) + list(giaima_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        all_src = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 80 KB, 9 C++/H files, 0 stubs) & Binary size (160,168 bytes)
+        self.assert_test(
+            "GodzillaAcurateAsan_BinaryAndSourceVolume",
+            so_path.stat().st_size == 160168 and len(cpp_files) >= 9 and total_bytes > 80000 and
+            "TODO: Dịch logic" not in all_src,
+            f"Nhị phân libgodzilla-acurate-asan.so (160,168 bytes) & {len(cpp_files)} tệp C++17/H đạt {total_bytes} bytes (> 80 KB, 0 stub)"
+        )
+
+        # 2. initAcurateAsan (0x00dcc0: sub sp, sp, #0x140; 0x00dfec: mov w1, #0xe8) & GuardedPoolAllocator (232B) + AllocationMetadata (624B @ 0x011558)
+        init_pro_op = struct.unpack("<I", so_bytes[0x00dcc0:0x00dcc4])[0]
+        mmap_e8_op  = struct.unpack("<I", so_bytes[0x00dfec:0x00dff0])[0]
+        meta_270_op = struct.unpack("<I", so_bytes[0x011558:0x01155c])[0]
+        self.assert_test(
+            "GodzillaAcurateAsan_InitAndGuardedPoolAllocatorAbi",
+            init_pro_op == 0xD10503FF and mmap_e8_op == 0x52801D01 and meta_270_op == 0x52804E09 and
+            b"GWP-ASan Guard Page\x00" in so_bytes and
+            b"GWP-ASan Alive Slot\x00" in so_bytes and
+            b"GWP-ASan Metadata\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaAcurateAsan_initAcurateAsan",
+                "GuardedPoolAllocator",
+                "AllocationMetadata",
+                "AllocatorState",
+                "0x270",
+                "0xe8"
+            ]),
+            "Khớp initAcurateAsan (0x00dcc0: sub sp, sp, #0x140), GuardedPoolAllocator (0xe8 = 232B @ 0x00dfec) và AllocationMetadata (0x270 = 624B @ 0x011558)"
+        )
+
+        # 3. Exported trapOnAddress (0x011a0c..0x011a1c), Xorshift32 PRNG (0x011438) & ZigZag+LEB128 Compression (0x01129c..0x011320)
+        trap_ldr_op  = struct.unpack("<I", so_bytes[0x011a0c:0x011a10])[0]
+        trap_strb_op = struct.unpack("<I", so_bytes[0x011a18:0x011a1c])[0]
+        self.assert_test(
+            "GodzillaAcurateAsan_TrapOnAddressAndLeb128Prng",
+            trap_ldr_op == 0xF9401408 and trap_strb_op == 0x3900011F and
+            b"_ZN8gwp_asan20GuardedPoolAllocator13trapOnAddressEm5Error\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "trapOnAddress",
+                "getRandomUnsigned32",
+                "compression",
+                "pack",
+                "unpack",
+                "getErrorType",
+                "USE_AFTER_FREE",
+                "DOUBLE_FREE",
+                "INVALID_FREE",
+                "BUFFER_OVERFLOW",
+                "BUFFER_UNDERFLOW"
+            ]),
+            "Khớp _ZN8gwp_asan20GuardedPoolAllocator13trapOnAddressEm5Error (0x011a0c: ldr x8, [x0, #0x28]; strb wzr, [x8]), Xorshift32 (0x011438) và nén vết LEB128 (0x01129c)"
+        )
+
+        # 4. SIGSEGV Crash Reporter (0x0132b8..0x013860), ELF NT_GNU_BUILD_ID 512-Slot Cache (0x0137cc, 0x013860) & FP/DWARF Unwinders (0x01d5a8, 0x01d684)
+        bid_off_op = struct.unpack("<I", so_bytes[0x0137cc:0x0137d0])[0]
+        bid_cmp_op = struct.unpack("<I", so_bytes[0x013860:0x013864])[0]
+        self.assert_test(
+            "GodzillaAcurateAsan_SignalCrashReportAndBuildIdScanner",
+            bid_off_op == 0x52A00074 and bid_cmp_op == 0x7108011F and
+            b"GWP-ASan" in so_bytes and
+            all(tok in all_src for tok in [
+                "dumpErrorReport",
+                "cacheLoadedSharedLibBuildIds",
+                "getBacktraceFastFP",
+                "getBacktraceDwarf",
+                "0xdeadbeef",
+                "tombstone.txt",
+                "glog.txt",
+                "maps.txt"
+            ]),
+            "Khớp trình xử lý SIGSEGV có phục hồi mprotect (0x0144a4), bộ đệm 512 ELF BuildId (0x0137cc: mov w20, #0x30000; 0x013860: cmp w8, #0x200) và bộ lần ngược ngăn xếp FP/DWARF (0x01d5a8, 0x01d684)"
+        )
+
+        # 5. Scudo Proxy Fault Handler (0x01ed68) & AArch64 `ret` Patching (0x01eeb0: mov w1, #-0x2be00000; 0x01f4dc: mov w2, #7; 0x01f514: stlr w20, [x19]; 0x01f524: mov w2, #5)
+        fault_pro_op = struct.unpack("<I", so_bytes[0x01ed68:0x01ed6c])[0]
+        ret_mov_op   = struct.unpack("<I", so_bytes[0x01eeb0:0x01eeb4])[0]
+        prot_rwx_op  = struct.unpack("<I", so_bytes[0x01f4dc:0x01f4e0])[0]
+        stlr_insn_op = struct.unpack("<I", so_bytes[0x01f514:0x01f518])[0]
+        prot_rx_op   = struct.unpack("<I", so_bytes[0x01f524:0x01f528])[0]
+        self.assert_test(
+            "GodzillaAcurateAsan_ScudoProxyFaultHandlerRetPatch",
+            fault_pro_op == 0xD10283FF and ret_mov_op == 0x52BA8401 and
+            prot_rwx_op == 0x528000E2 and stlr_insn_op == 0x889FFE74 and prot_rx_op == 0x528000A2 and
+            all(tok in all_src for tok in [
+                "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaAcurateAsan_initProxyFaultHandler",
+                "isScudoMemoryAllocator",
+                "patchInstructionWithRet",
+                "0xd65f03c0"
+            ]),
+            "Khớp initProxyFaultHandler (0x01ed68: sub sp, sp, #0xa0), kiểm tra Scudo trong /proc/self/maps (0x01f3e4) và vá lệnh ret (0x01eeb0: mov w1, #-0x2be00000; 0x01f4dc: mov w2, #7; 0x01f514: stlr w20, [x19]; 0x01f524: mov w2, #5)"
+        )
+
+        # 6. GodzillaRefDebug 7 JNI Exports (0x01ff1c..0x020108) & Ring-Buffer Bucket Hash (0x020400..0x020414)
+        ref_init_op = struct.unpack("<I", so_bytes[0x01ff1c:0x01ff20])[0]
+        ref_lsr_op  = struct.unpack("<I", so_bytes[0x020400:0x020404])[0]
+        ref_udiv_op = struct.unpack("<I", so_bytes[0x020410:0x020414])[0]
+        self.assert_test(
+            "GodzillaAcurateAsan_GodzillaRefDebug7JniExportsAndBucketRing",
+            ref_init_op == 0x1400009D and ref_lsr_op == 0xD346FE69 and ref_udiv_op == 0x1AC8092A and
+            b"_ZN3art3JNIILb0EE12NewGlobalRefEP7_JNIEnvP8_jobject\x00" in so_bytes and
+            b"_ZN3art9JavaVMExt12AddGlobalRefEPNS_6ThreadENS_6ObjPtrINS_6mirror6ObjectEEE\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaRefDebug_nativeRefrecordInit",
+                "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaRefDebug_nativeRefrecordDumpLatest",
+                "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaRefDebug_nativeRefrecordConfig",
+                "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaRefDebug_nativeSetRefdebugDebuglog",
+                "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaRefDebug_testcase1",
+                "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaRefDebug_testcase2_11",
+                "Java_com_bytedance_platform_godzilla_gwpasan_GodzillaRefDebug_testcase2_12",
+                "RefRecordEntry",
+                "RefBucket",
+                "RefDebugState"
+            ]),
+            "Khớp 7 hàm xuất JNI của GodzillaRefDebug (0x01ff1c..0x020108), RefRecordEntry 48-byte và hàm băm bucket (0x020400..0x020414)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -7755,6 +7884,7 @@ class AutonomousVerificationEngine:
         self.verify_libart_sym()
         self.verify_libosfix()
         self.verify_liborbuculumadapter()
+        self.verify_libgodzilla_acurate_asan()
         self.verify_overall_governance()
 
 
