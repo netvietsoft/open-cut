@@ -33,7 +33,7 @@ jobs:
       - name: Scan native files
         run: python SOURCE/scripts/native_audit_watchdog.py
       - name: Publish scan JSON as a workflow artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: native-audit-${{ github.run_id }}
           path: SOURCE/BAOCAO-AUDIT/NATIVE_WATCHDOG_LATEST.json
