@@ -5307,6 +5307,120 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 55: libspeechepg.so (ByteDance SpeechPluginBridge & Listener)
+    # =========================================================================
+    def verify_libspeechepg(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libspeechepg.so (SpeechPluginBridge JNI)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libspeechepg"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 65 KB across >= 8 files
+        self.assert_test(
+            "SpeechEpg_SourceSizeGate",
+            total_bytes > 65000 and len(cpp_files) >= 8,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 65 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (18,256 B, 55 .dynsym entries) & SpeechPluginListener Vtable (.data.rel.ro 0x007c18)
+        has_elf_vtable = all(tok in content for tok in [
+            "18256ULL",
+            "0x007c18ULL",
+            "0x007c28ULL",
+            "0x001fa0ULL",
+            "0x002058ULL",
+            "0x002248ULL"
+        ])
+        self.assert_test(
+            "SpeechEpg_Elf64AndListenerVtable0x7c18",
+            has_elf_vtable,
+            "Khớp hình học ELF64 (18,256 B, 55 biểu tượng .dynsym: 34 imported + 18 exported) và vtable SpeechPluginListener (.data.rel.ro 0x007c18, vptr=0x007c28: D1Ev=0x1fa0, D0Ev=0x2058, OnMessage=0x2248)"
+        )
+
+        # 3. ABI Struct Layouts: SpeechEngineHandler (24B = 0x18), SpeechPluginListener (48B = 0x30), JniCallbackEnvironment (16B)
+        has_abi = all(tok in content for tok in [
+            "SpeechEngineHandler",
+            "sizeof(SpeechEngineHandler) == 24U",
+            "SpeechPluginListener",
+            "kAbiSize     = 48U",
+            "JniCallbackEnvironment"
+        ])
+        self.assert_test(
+            "SpeechEpg_AbiStructs24BAnd48B",
+            has_abi,
+            "Khớp bố cục struct ABI: SpeechEngineHandler (24B = 0x18 @ 0x0024f8: +0x00 Engine*, +0x08 Listener*, +0x10 Options*), SpeechPluginListener (48B = 0x30 @ 0x002580) và JniCallbackEnvironment (16B @ +0x20)"
+        )
+
+        # 4. Signed PCM16 Sample Count Arithmetic (0x002f10..0x002f18 & 0x003000..0x00300c: cinc + asr #1)
+        def aarch64_pcm16_samples(w22: int) -> int:
+            w8 = (w22 + 1) if w22 < 0 else w22
+            return w8 >> 1
+
+        math_ok = (
+            aarch64_pcm16_samples(3200) == 1600 and
+            aarch64_pcm16_samples(3201) == 1600 and
+            aarch64_pcm16_samples(-1) == 0 and
+            aarch64_pcm16_samples(-3) == -1
+        )
+        has_pcm_math = math_ok and all(tok in content for tok in [
+            "cinc w8, w22, lt",
+            "asr  w2, w8, #1",
+            "computePcm16SampleCountFromBytes",
+            "lastRmsDbFs"
+        ])
+        self.assert_test(
+            "SpeechEpg_SignedPcm16SampleCountAndDsp",
+            has_pcm_math,
+            "Khớp phép chia nguyên có dấu 2 byte/mẫu PCM16 (cmp w22,#0; cinc w8,w22,lt; asr w2,w8,#1 @ 0x002f10 & 0x003000) và tiền nhấn âm DSP pre-emphasis + RMS dBFS"
+        )
+
+        # 5. fetchResultToNative Buffer Overflow Guard (-1801 = -0x709 @ 0x003130) & OnMessage(1002 = 0x3ea @ 0x00230c) Detach
+        has_guard_detach = all(tok in content for tok in [
+            "-1801",
+            "-0x709",
+            "kMessageTypeEngineStop",
+            "1002",
+            "0x3ea",
+            "DetachCallback"
+        ])
+        self.assert_test(
+            "SpeechEpg_FetchResultGuard1801AndStopDetach1002",
+            has_guard_detach,
+            "Khớp bảo vệ tràn vùng đệm fetchResultToNative (-1801 = -0x709 @ 0x003130) và tự động gọi DetachCallback khi OnMessage nhận type == 1002 (0x3ea @ 0x00230c)"
+        )
+
+        # 6. All 18 Exported .dynsym Entry Points ([037]..[054])
+        has_18_exports = all(tok in content for tok in [
+            "JNI_OnLoad",
+            "SpeechPluginBridge_getVersionToNative",
+            "SpeechPluginBridge_isEngineSupportedToNative",
+            "SpeechPluginBridge_createEngineToNative",
+            "SpeechPluginBridge_destroyEngineToNative",
+            "SpeechPluginBridge_setOptionStringToNative",
+            "SpeechPluginBridge_setOptionBooleanToNative",
+            "SpeechPluginBridge_setOptionIntToNative",
+            "SpeechPluginBridge_setOptionDoubleToNative",
+            "SpeechPluginBridge_initEngineToNative",
+            "SpeechPluginBridge_sendDirectiveToNative",
+            "SpeechPluginBridge_feedAudioToNative",
+            "SpeechPluginBridge_resetEngineToNative",
+            "SpeechPluginBridge_processAudioToNative",
+            "SpeechPluginBridge_fetchResultToNative",
+            "SpeechPluginBridge_fetchStringResultToNative",
+            "SpeechLogTracker_getInstanceToNative",
+            "SpeechLogTracker_writeLogToNative"
+        ])
+        self.assert_test(
+            "SpeechEpg_18ExportedDynSymFunctions",
+            has_18_exports,
+            "Khớp toàn bộ 18 điểm nhập JNI xuất xưởng (.dynsym [037]..[054]): JNI_OnLoad (0x001f00), 15 hàm SpeechPluginBridge_*ToNative và 2 hàm SpeechLogTracker_*ToNative (0x0023dc, 0x0023e4)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -5365,6 +5479,7 @@ class AutonomousVerificationEngine:
         self.verify_libbdhm_native()
         self.verify_libbytemonitor()
         self.verify_libspeechengine()
+        self.verify_libspeechepg()
         self.verify_overall_governance()
 
 

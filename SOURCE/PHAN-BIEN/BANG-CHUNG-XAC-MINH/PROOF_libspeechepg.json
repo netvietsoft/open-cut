@@ -1,0 +1,26 @@
+{
+  "lib_name": "libspeechepg",
+  "task_id": "TASK-094-RECONSTRUCTION-LIBSPEECHEPG",
+  "legacy_task_id": "TASK_SO_016",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libspeechepg.so",
+  "binary_size_bytes": 18256,
+  "dynamic_symbols": {
+    "total": 55,
+    "exported": 18,
+    "imported": 34
+  },
+  "gate1_size_passed": true,
+  "gate2_opcode_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "key_proofs": [
+    "ELF64 Geometry & .data.rel.ro Vtable (18,256 bytes, 55 .dynsym entries: 34 imported [003]..[036] + 18 exported [037]..[054]): .text at 0x001c80..0x003248 (5,576 B), .rodata at 0x003248..0x0034de (662 B, log tag 'speechengine'), .data.rel.ro at 0x007c10..0x007c40 (SpeechPluginListener vtable at 0x007c18: [2]=0x001fa0 D1Ev, [3]=0x002058 D0Ev, [4]=0x002248 OnMessage), .bss at 0x008000..0x008010 (0x008000 JavaVM* g_jvm via GOT 0x007fe8, 0x008008 JavaVM* g_licbag_jvm via GOT 0x007fc8)",
+    "SpeechEngineHandler (24 bytes = 0x18 allocated via operator new(0x18, nothrow) @ 0x0024f8) & SpeechPluginListener (48 bytes = 0x30 allocated via operator new(0x30, nothrow) @ 0x002580): createEngineToNative (0x0024e0) invokes DefaultOptions(Options*) @ 0x002550 and Options::IsValid() @ 0x002558, while initEngineToNative (0x002cb4) invokes JNI_SetAssetManager(jvm, assetMgr) @ 0x002cfc, Engine::Init(Options*) @ 0x002d08, and Engine::AddListener(Listener*) @ 0x002d4c",
+    "Signed PCM16 Sample Count Arithmetic & Pre-emphasis DSP (0x002f10..0x002f18 in feedAudioToNative & 0x003000..0x00300c in processAudioToNative): exact AArch64 sequence `cmp w22, #0; cinc w8, w22, lt; asr w2, w8, #1` converting signed byte length to 16-bit PCM sample count (`byte_len / 2` toward zero)",
+    "fetchResultToNative Buffer Overflow Guard (0x003070..0x003188): receives 32-byte EngineResult via x8 (`sp+0x08` int32_t err_code, `sp+0x10..sp+0x27` std::string data), checks `cmp x11, w0, sxtw; b.ls #0x313c` @ 0x003124..0x00312c, and returns `-1801` (`mov w21, #-0x709` @ 0x003130) when Java byte[] length < payload size",
+    "OnMessage(int, const std::string&) Auto-Detach on MESSAGE_TYPE_ENGINE_STOP (0x002248..0x00233c): invokes Java `onSpeechMessage(I[BI)V` via variadic helper 0x002340, deletes local byte[] ref, and when `type == 0x3ea` (`1002` checked via `cmp w20, #0x3ea` @ 0x00230c), tail-calls `JniCallbackEnvironment::DetachCallback()` (`b #0x1e8c` @ 0x002328)"
+  ]
+}

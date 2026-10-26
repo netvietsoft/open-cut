@@ -1,0 +1,23 @@
+{
+  "task_id": "TASK-094-RECONSTRUCTION-LIBSPEECHEPG",
+  "legacy_task_id": "TASK_SO_016",
+  "title": "Clean-Room C++17 Reconstruction of libspeechepg.so (ByteDance SpeechPluginBridge & Listener)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 / Agent 7 - RECONSTRUCTION",
+  "verified_by": "Agent 13 - ADVERSARY AUDITOR",
+  "completed_at": "2026-10-26T22:22:00+07:00",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libspeechepg/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libspeechepg.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_016_libspeechepg.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "verification_metrics": {
+    "cpp_total_bytes": 107543,
+    "reconstructed_files_count": 8,
+    "verified_libraries_count": 55,
+    "test_suite_passed": 365,
+    "test_suite_failed": 0,
+    "watchdog_high_findings": 0
+  }
+}

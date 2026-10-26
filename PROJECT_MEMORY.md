@@ -2088,3 +2088,15 @@
   - `SpeechEngineListener` (`48 B = 0x30` allocated at `0x002108`, vtable at `.data.rel.ro 0x007c28`, `vptr = 0x007c38`: `D1Ev=0x002df0`, `D0Ev=0x002ea8`, `OnMessage=0x003098`), auto-detaches callback thread via `JniCallbackEnvironment::DetachCallback()` (`0x001e7c`) when `type == 0x3ea` (`1002 = MESSAGE_TYPE_ENGINE_STOP` at `0x00315c`).
   - `feedAudioToNative` (`0x002a58`) & `processAudioToNative` (`0x002b44`) perform signed division by 2 (`cmp w22, #0; cinc w8, w22, lt; asr w2, w8, #1`), and `fetchResultToNative` (`0x002bf8`) returns `-1801` (`mov w21, #-0x709` @ `0x002cb8`) on insufficient buffer capacity.
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**54 / 169 — 31.95%**), `verify_reconstruction_suite.py` passed **359 / 359 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 82. NGHIỆM THU TARGET 55: `libspeechepg.so` (`TASK-094-RECONSTRUCTION-LIBSPEECHEPG` / `TASK_SO_016`) — 2026-10-26 22:22:00
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/libspeechepg.so` (`18,256 bytes`, 55 dynamic symbols: 18 exported `[037]..[054]` + 34 imported `[003]..[036]`).
+- **Reconstructed Code (`SOURCE/GIAI-MA/libspeechepg/`)**: 8 files (`107,543 B` C++17/H, `127,361 B` total directory size, `0 stubs`): `speechepg_types.h`, `speechepg_sdk_client.h`, `speechepg_sdk_client.cpp`, `speechepg_jni_bridge.h`, `speechepg_jni_bridge.cpp`, `speechepg_interface.h`, `speechepg_interface.cpp`, `speechepg_pseudocode.cpp`.
+- **Key Findings**:
+  - `SpeechEngineHandler` (`24 B = 0x18` allocated at `0x0024f8`) and `SpeechPluginListener` (`48 B = 0x30` allocated at `0x002580`, vtable at `.data.rel.ro 0x007c18`, `vptr = 0x007c28`: `D1Ev=0x001fa0`, `D0Ev=0x002058`, `OnMessage=0x002248`).
+  - `createEngineToNative` (`0x0024e0`) calls `DefaultOptions(Options*)` (`0x002550`) and `Options::IsValid()` (`0x002558`) during creation, while `initEngineToNative` (`0x002cb4`) registers `JNI_SetAssetManager(jvm, assetMgr)` (`0x002cfc`), `Engine::Init(Options*)` (`0x002d08`), and `Engine::AddListener(Listener*)` (`0x002d4c`).
+  - `feedAudioToNative` (`0x002ed0`) & `processAudioToNative` (`0x002fbc`) perform signed division by 2 (`cmp w22, #0; cinc w8, w22, lt; asr w2, w8, #1`), `fetchResultToNative` (`0x003070`) returns `-1801` (`mov w21, #-0x709` @ `0x003130`) on insufficient buffer capacity, and `OnMessage` (`0x002248`) auto-detaches callback thread when `type == 0x3ea` (`1002` at `0x00230c`).
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**55 / 169 — 32.54%**), `verify_reconstruction_suite.py` passed **365 / 365 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.

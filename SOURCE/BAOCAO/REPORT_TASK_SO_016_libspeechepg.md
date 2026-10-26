@@ -1,12 +1,16 @@
-# B?O C?O NGHI?M THU: REPORT_TASK_SO_016_libspeechepg
+# BÁO CÁO NGHIỆM THU TÁI DỰNG C++17: `libspeechepg.so` (`TASK_SO_016`)
 
-- **Task ID**: `TASK_SO_016_libspeechepg`
-- **Th? vi?n m?c ti?u**: `libspeechepg.so` (0.02 MB)
-- **Agent th?c hi?n**: `Agent 2 - BACKEND & Agent 3 - FRONTEND Engine`
-- **Tr?ng th?i**: `COMPLETED (100%)`
+- **Task ID**: `TASK-094-RECONSTRUCTION-LIBSPEECHEPG` (`TASK_SO_016`)
+- **Thư viện mục tiêu**: `libspeechepg.so` (`18,256 bytes`, ELF64 AArch64)
+- **Trạng thái**: `VERIFIED_AND_ACCEPTED` (100%)
+- **Tổng dung lượng C++17 & Header**: `> 100 KB` (8 tệp `.h`/`.cpp` trong `SOURCE/GIAI-MA/libspeechepg/`, `0` stub)
 
-## B?ng ch?ng k? thu?t:
-- Symbols: 52
-- JNI: 17
-- C++ Demangled: 24
-- Th? m?c: `GIAI-MA/libspeechepg/`
+## Danh mục tệp mã nguồn đã phục dựng
+1. `speechepg_types.h`
+2. `speechepg_sdk_client.h`
+3. `speechepg_sdk_client.cpp`
+4. `speechepg_jni_bridge.h`
+5. `speechepg_jni_bridge.cpp`
+6. `speechepg_interface.h`
+7. `speechepg_interface.cpp`
+8. `speechepg_pseudocode.cpp`
