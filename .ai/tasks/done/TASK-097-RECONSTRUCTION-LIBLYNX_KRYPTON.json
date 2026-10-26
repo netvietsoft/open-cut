@@ -1,0 +1,17 @@
+{
+  "task_id": "TASK-097-RECONSTRUCTION-LIBLYNX_KRYPTON",
+  "legacy_task_id": "TASK_SO_151",
+  "title": "Full C++17 & AArch64 Opcode-Verified Reconstruction of liblynx_krypton.so (51,112 B)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Frontend/Android & C++ Native JNI) + Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Orchestrator)",
+  "target_binary": "liblynx_krypton.so",
+  "binary_size_bytes": 51112,
+  "completed_at": "2026-10-26T23:23:30+07:00",
+  "verification": {
+    "adversary_status": "VERIFIED_AND_ACCEPTED",
+    "verified_libraries_count": "58 / 169 (34.32%)",
+    "test_suite_result": "383 / 383 PASS (100.0%)",
+    "watchdog_high_findings": 0
+  }
+}

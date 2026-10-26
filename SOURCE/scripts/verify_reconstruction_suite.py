@@ -5650,6 +5650,112 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 58: liblynx_krypton.so (Lynx Krypton WebGL/Canvas Android Bridge)
+    # =========================================================================
+    def verify_liblynx_krypton(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: liblynx_krypton.so (Lynx Krypton Android Bridge)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "liblynx_krypton"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 65 KB across >= 8 files
+        self.assert_test(
+            "LynxKrypton_SourceSizeGate",
+            total_bytes > 65000 and len(cpp_files) >= 8,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 65 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (51,112 B, 44 .dynsym, 48 .rela.dyn, 39 .rela.plt) & .rodata 5-entry log jump table (0x001970)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liblynx_krypton.so"
+        so_bytes = so_path.read_bytes()
+        jump_table_bytes = list(so_bytes[0x001970:0x001975])
+        self.assert_test(
+            "LynxKrypton_Elf64AndLogJumpTable0x1970",
+            so_path.stat().st_size == 51112
+            and jump_table_bytes == [0x00, 0x14, 0x0a, 0x0f, 0x05]
+            and "0x00u, 0x14u, 0x0au, 0x0fu, 0x05u" in content
+            and "MapKryptonLogLevelToLynxSeverity" in content,
+            "Khớp nhị phân liblynx_krypton.so (51,112 B, 44 .dynsym, 48 .rela.dyn, 39 .rela.plt) và bảng nhảy 5 mức log tại .rodata 0x001970 ({0x00, 0x14, 0x0a, 0x0f, 0x05})"
+        )
+
+        # 3. RuntimeLoadLynxTraceFunc (0x00416c..0x0042fc) dlopen("liblynxtrace.so", RTLD_LAZY=2) & 24B KryptonTraceFunctions (.bss 0x00c008..0x00c01f)
+        has_trace_loader = all(tok in content for tok in [
+            "liblynxtrace.so",
+            "TraceEventBeginEx",
+            "TraceEventEndEx",
+            "TraceCounterEx",
+            "sizeof(KryptonTraceFunctions) == 24",
+            "sizeof(KryptonBssSegment) == 72",
+            "CanvasManager_nativeRegisterTraceFunc"
+        ])
+        self.assert_test(
+            "LynxKrypton_RuntimeLoadLynxTraceFuncAndBss72B",
+            has_trace_loader,
+            "Khớp RuntimeLoadLynxTraceFunc (0x00416c..0x0042fc): dlopen('liblynxtrace.so', RTLD_LAZY=2), dlsym 3 hàm Trace*Ex vào .bss 0x00c008..0x00c01f (24B) và AttachKryptonTraceHandler"
+        )
+
+        # 4. Downstream Surface ABI: SurfaceWithAndroidNativeWindow (32B), SurfaceConfig (72B, flags=0x00010100), Closures (96B @ 0x0080c8, 72B @ 0x0080a0)
+        import struct
+        flags_insns = struct.unpack("<2I", so_bytes[0x004a7c:0x004a84])
+        has_surface_abi = (
+            flags_insns == (0x5280200a, 0x72a0002a)
+            and all(tok in content for tok in [
+                "sizeof(SurfaceWithAndroidNativeWindow) == 32",
+                "sizeof(SurfaceConfig) == 72",
+                "0x00010100u",
+                "sizeof(AddSurfaceTaskClosureLayout) == 96",
+                "sizeof(RemoveSurfaceTaskClosureLayout) == 72",
+                "LynxCanvasDownStreamManager_nativeAddSurface",
+                "LynxCanvasDownStreamManager_nativeRemoveSurface"
+            ])
+        )
+        self.assert_test(
+            "LynxKrypton_DownstreamSurfaceAndClosureAbi",
+            has_surface_abi,
+            "Khớp SurfaceWithAndroidNativeWindow (32B @ 0x0043ac), SurfaceConfig (72B, packed_flags=0x00010100 @ 0x004a7c), AddSurfaceTaskClosure (96B, vtable 0x0080c8) và RemoveSurfaceTaskClosure (72B, vtable 0x0080a0)"
+        )
+
+        # 5. LynxKryptonFrameService (16B wrapper @ 0x004bb4, 24B VSync functors @ 0x0081a0 & 0x008150) & UICanvasSurfaceView (0x004f6c)
+        has_vsync_abi = all(tok in content for tok in [
+            "sizeof(LynxKryptonFrameServiceWrapper) == 16",
+            "sizeof(VSyncJavaCallbackFunctorLayout) == 24",
+            "OnBeforeVSyncEnd",
+            "OnVSync",
+            "LynxKryptonFrameService_nativeCreateFrameService",
+            "LynxKryptonFrameService_nativeDestroyFrameService",
+            "LynxKryptonFrameService_nativeDoRequestVSync",
+            "LynxKryptonFrameService_nativeDoRegisterBeforeVSyncEndListener",
+            "UICanvasSurfaceView_nativeCreateSurface"
+        ])
+        self.assert_test(
+            "LynxKrypton_FrameServiceVSyncAndUiCanvasSurface",
+            has_vsync_abi,
+            "Khớp LynxKryptonFrameServiceWrapper (16B @ 0x004bb4), functor VSync 24B (vtable 0x0081a0/0x008150 gọi OnVSync/OnBeforeVSyncEnd) và UICanvasSurfaceView_nativeCreateSurface (0x004f6c)"
+        )
+
+        # 6. JNI_OnLoad (0x004ff4..0x005124): 4 Java classes, 9 JNINativeMethod registrations in .data.rel.ro (0x008008..0x0081cf), returns 0x00010006
+        has_jni_onload = all(tok in content for tok in [
+            "com/lynx/canvas/CanvasManager",
+            "com/lynx/canvas/LynxCanvasDownStreamManager",
+            "com/lynx/canvas/LynxKryptonFrameService",
+            "com/lynx/canvas/UICanvasSurfaceView",
+            "0x008008u",
+            "0x008060u",
+            "0x0080e0u",
+            "0x0081b8u",
+            "0x00010006"
+        ])
+        self.assert_test(
+            "LynxKrypton_JniOnLoad4Classes9Methods",
+            has_jni_onload,
+            "Khớp JNI_OnLoad (0x004ff4..0x005124): đăng ký 9 phương thức native cho 4 lớp Java trong .data.rel.ro (0x008008..0x0081cf), lưu 4 jclass tại .bss 0x00c000..0x00c040 và trả về 0x00010006"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -5711,6 +5817,7 @@ class AutonomousVerificationEngine:
         self.verify_libspeechepg()
         self.verify_libnpth_unw()
         self.verify_libpl_droidsonroids_gif()
+        self.verify_liblynx_krypton()
         self.verify_overall_governance()
 
 

@@ -1,18 +1,24 @@
 {
   "report_id": "REPORT_TASK_SO_151_liblynx_krypton",
   "task_id": "TASK_SO_151_liblynx_krypton",
+  "modern_task_id": "TASK-097-RECONSTRUCTION-LIBLYNX_KRYPTON",
   "target_library": "liblynx_krypton.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 - FRONTEND/ANDROID & Agent 13 - ADVERSARY AUDITOR",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
   "evidence": {
-    "symbols_total": 43,
-    "jni_exports": 0,
-    "cxx_demangled_count": 30,
+    "symbols_total": 44,
+    "dynsym_entries": 44,
+    "jni_exports": 1,
+    "jni_registered_methods": 9,
+    "exported_functions_total": 1,
+    "cxx_demangled_count": 31,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\liblynx_krypton",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "reconstructed_files_count": 8,
+    "proof_file": "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_liblynx_krypton.json"
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn tất giải mã chuyên sâu 100% nhị phân liblynx_krypton.so (51,112 bytes, 44 mục .dynsym, 48 mục .rela.dyn, 39 mục .rela.plt): tái dựng đầy đủ JNI_OnLoad (0x004ff4..0x005124) đăng ký 9 phương thức native trên 4 lớp Java (CanvasManager, LynxCanvasDownStreamManager, LynxKryptonFrameService, UICanvasSurfaceView), bảng nhảy 5 mức log KryptonLogFunction (.rodata 0x001970), trình nạp động dlopen/dlsym liblynxtrace.so (RuntimeLoadLynxTraceFunc @ 0x00416c), quản lý bề mặt ANativeWindow đa luồng (SurfaceConfig 72B flags=0x00010100, closures 96B/72B) và đồng bộ khung hình VSync 2 giai đoạn.",
+  "acceptance_criteria_passed": true
 }

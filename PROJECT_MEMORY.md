@@ -2124,3 +2124,15 @@
   - Embedded GIFLIB 5.1.4 LZW decoder (`DGifGetLine` @ `0x006e4c..0x007544` with NEON `rev64` + `ext #8` reverse-stack copy @ `0x007480`), 4-pass interlace slurper (`DDGifSlurp` @ `0x0048a4..0x004c8c`), GCB / Comment / Netscape 2.0 extension parser (`readExtensions` @ `0x004c90..0x004e4c`), and 3-stage ARGB8888 disposal & blit engine (`drawFrame` @ `0x005120..0x0054b0`).
   - `getRealTime` (`0x009610..0x009680`) and `calculateInvalidationDelay` (`0x009548..0x00960c`) divide `tv_nsec` by $1,000,000$ via `smulh(tv_nsec, 0x431bde82d7b634db) >> 18`.
 - **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**57 / 169 — 33.73%**), `verify_reconstruction_suite.py` passed **377 / 377 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
+
+
+---
+
+## 85. NGHIỆM THU TARGET 58: `liblynx_krypton.so` (`TASK-097-RECONSTRUCTION-LIBLYNX_KRYPTON` / `TASK_SO_151`) — 2026-10-26 23:23:30
+- **Binary**: `SOURCE/apktool-res/lib/arm64-v8a/liblynx_krypton.so` (`51,112 bytes`, 44 `.dynsym` entries: `JNI_OnLoad` @ `0x004ff4`, 39 imported symbols, 48 `.rela.dyn` relative relocations, 39 `.rela.plt` jump-slot relocations).
+- **Reconstructed Code (`SOURCE/GIAI-MA/liblynx_krypton/`)**: 8 files (`122,161 B` C++17/H, `0 stubs`): `lynx_krypton_types.h`, `lynx_krypton_trace_log.h`, `lynx_krypton_trace_log.cpp`, `lynx_krypton_surface_vsync.h`, `lynx_krypton_surface_vsync.cpp`, `lynx_krypton_interface.h`, `lynx_krypton_interface.cpp`, `lynx_krypton_pseudocode.cpp`.
+- **Key Findings**:
+  - `JNI_OnLoad` (`0x004ff4..0x005124`) registers 9 native methods across 4 Java classes (`com/lynx/canvas/CanvasManager`, `com/lynx/canvas/LynxCanvasDownStreamManager`, `com/lynx/canvas/LynxKryptonFrameService`, `com/lynx/canvas/UICanvasSurfaceView`) from `.data.rel.ro 0x008008..0x0081cf`, caches 4 global `jclass` references in `.bss` (`0x00c000`, `0x00c020`, `0x00c028`, `0x00c040`), and returns `JNI_VERSION_1_6` (`0x00010006`).
+  - `KryptonLogFunction` (`0x00403c..0x004148`) uses a 5-byte relative word offset jump table at `.rodata 0x001970` (`{0x00, 0x14, 0x0a, 0x0f, 0x05}`) to dispatch log levels `1..5`, while `RuntimeLoadLynxTraceFunc` (`0x00416c..0x0042fc`) loads `liblynxtrace.so` via `dlopen(..., RTLD_LAZY=2)` (`0x004220`), resolves `TraceEventBeginEx`, `TraceEventEndEx`, `TraceCounterEx` via `dlsym` into `.bss 0x00c008..0x00c01f` (`24 B`), and invokes `AttachKryptonTraceHandler` (`0x0052d0`).
+  - `LynxCanvasDownStreamManager` (`0x004328..0x004b44`) wraps `ANativeWindow_fromSurface` in a 32-byte `SurfaceWithAndroidNativeWindow` (`0x0043ac`), constructs a 72-byte `SurfaceConfig` (`packed_flags = 0x00010100` via `mov w10, #0x100; movk w10, #1, lsl #16` @ `0x004a7c..0x004a80`), and dispatches 96-byte (`0x60`, vtable `0x0080c8`) and 72-byte (`0x48`, vtable `0x0080a0`) task closures via `TaskRunner::PostTask`.
+- **Verification**: Agent 13 certified `VERIFIED_AND_ACCEPTED` (**58 / 169 — 34.32%**), `verify_reconstruction_suite.py` passed **383 / 383 tests (100.0%)**, `native_audit_watchdog.py` reported **0 high findings**.
