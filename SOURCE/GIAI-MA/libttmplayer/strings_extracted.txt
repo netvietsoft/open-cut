@@ -1,25 +1,35 @@
 libttr.so
 libttdemux.so
+libttffmpeg.so
+libByteVC1_dec.so
+libbyteVC2dec.so
+libconfigcenter.so
+libvcbasekit.so
+libwhisper.so
+libaudioeffect.so
+libttmplayer.so
 SAMICoreCreateHandleByIdentify
 SAMICoreDestroyHandle
 SAMICoreGetPropertyById
 SAMICoreProcess
 SAMICoreSetProperty
-libttffmpeg.so
-liblog.so
-libandroid.so
-libEGL.so
-libm.so
-libz.so
-libGLESv2.so
-libOpenSLES.so
-libjnigraphics.so
-libaudioeffect.so
-libwhisper.so
-libByteVC1_dec.so
-libbyteVC2dec.so
-libconfigcenter.so
-libvcbasekit.so
-libdl.so
-libc.so
-libttmplayer.so
+debug.ttplayer.log.enable
+log enabled by prop
+logfile enabled by prop
+/mnt/sdcard/ttplayer/
+/mnt/sdcard/ttplayer/ttplayer.log
+libttplayer.cpp
+tt_player_bridge.cpp
+-----compiled native library  %s %s-----
+Apr 15 2025
+04:00:05
+com/ss/ttvideoengine/utils/TTVideoEngineLog
+com/ss/ttm/player/TTPlayer
+com/ss/ttm/strategycenter/TTPlayerStrategyCenter
+com/ss/ttm/player/AJMediaCodec
+player id is zore
+native_create
+native_prepare
+native_start
+native_seek2
+FFmpegAudioDecoders

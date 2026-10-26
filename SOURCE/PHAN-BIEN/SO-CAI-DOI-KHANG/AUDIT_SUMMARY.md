@@ -2,15 +2,15 @@
 > **Cơ quan thẩm tra**: **Agent 13 (Adversary Auditor / Red Team Critic)**  
 > **Đệ trình**: **Chủ tịch**  
 > **Giám sát thi hành**: **Agent 0 (Thư ký Orchestrator)**  
-> **Cập nhật lần cuối**: `2026-10-26 16:58:24`  
+> **Cập nhật lần cuối**: `2026-10-26 17:20:53`  
 
 ---
 
 ### 1. BẢNG TỔNG HỢP TRẠNG THÁI 169 FILE NATIVE (.SO)
 | Phân loại đối kháng | Số lượng thư viện | Tỷ lệ (%) | Đánh giá của Agent 13 |
 |---|:---:|:---:|---|
-| **VERIFIED_AND_ACCEPTED** | **41** | **24.26%** | Đã xuất trình đủ 6 cổng bằng chứng (Opcode thật, Math pass, > 40KB C++, Zero-stub). Được phê chuẩn. |
-| **CHALLENGED_NEEDS_PROOF** | **76** | **44.97%** | Có mã nguồn nhưng chưa đủ bằng chứng hoặc thiếu test case. Yêu cầu Agent 0 làm rõ. |
+| **VERIFIED_AND_ACCEPTED** | **42** | **24.85%** | Đã xuất trình đủ 6 cổng bằng chứng (Opcode thật, Math pass, > 40KB C++, Zero-stub). Được phê chuẩn. |
+| **CHALLENGED_NEEDS_PROOF** | **75** | **44.38%** | Có mã nguồn nhưng chưa đủ bằng chứng hoặc thiếu test case. Yêu cầu Agent 0 làm rõ. |
 | **BLOCKED_CUSTOM_PACKED** | **1** | **0.59%** | Đóng gói mã hóa đặc thù (`\x7fKOM`). Báo cáo trung thực, không man khai. |
 | **SCAFFOLD_METADATA_ONLY** | **51** | **30.18%** | Mới dừng ở mức bóc tách biểu tượng và sườn header. Chưa giải mã thân hàm. |
 | **TỔNG CỘNG** | **169** | **100.0%** | Toàn bộ 169 thư viện đều có hồ sơ theo dõi đối kháng độc lập. |

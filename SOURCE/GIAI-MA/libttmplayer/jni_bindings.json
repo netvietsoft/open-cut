@@ -1,5 +1,23 @@
 [
   {
+    "name": "JNI_OnLoad",
+    "demangled": "JNI_OnLoad",
+    "value": "0x197174",
+    "size": 684,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "note": "Registers 62 methods on TTPlayer (0x351eb8), 4 on TTPlayerStrategyCenter (0x358f60), 6 on AJMediaCodec (0x35d3d0); returns JNI_VERSION_1_4 (0x10004)"
+  },
+  {
+    "name": "JNI_OnUnload",
+    "demangled": "JNI_OnUnload",
+    "value": "0x197420",
+    "size": 144,
+    "type": "STT_FUNC",
+    "bind": "STB_GLOBAL"
+  },
+  {
     "name": "Java_com_ss_ttm_player_NativeObject_nativeRelease",
     "demangled": "Java_com_ss_ttm_player_NativeObject_nativeRelease",
     "value": "0x188824",
@@ -22,5 +40,201 @@
     "size": 16,
     "type": "STT_FUNC",
     "bind": "STB_GLOBAL"
+  },
+  {
+    "name": "_create",
+    "signature": "(Landroid/content/Context;IIILjava/lang/String;)J",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351eb8",
+    "value": "0x19c850"
+  },
+  {
+    "name": "_release",
+    "signature": "(J)V",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351ed0",
+    "value": "0x19caa8"
+  },
+  {
+    "name": "_prepare",
+    "signature": "(J)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351ee8",
+    "value": "0x19cb6c"
+  },
+  {
+    "name": "_close",
+    "signature": "(J)V",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351f00",
+    "value": "0x19cbb8"
+  },
+  {
+    "name": "_prevClose",
+    "signature": "(J)V",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351f18",
+    "value": "0x19cbf4"
+  },
+  {
+    "name": "_start",
+    "signature": "(J)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351f30",
+    "value": "0x19cc2c"
+  },
+  {
+    "name": "_reset",
+    "signature": "(J)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351f48",
+    "value": "0x19cc7c"
+  },
+  {
+    "name": "_pause",
+    "signature": "(J)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351f60",
+    "value": "0x19ccd0"
+  },
+  {
+    "name": "_stop",
+    "signature": "(J)V",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351f78",
+    "value": "0x19cd28"
+  },
+  {
+    "name": "_seek",
+    "signature": "(JI)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351f90",
+    "value": "0x19cd60"
+  },
+  {
+    "name": "_seek2",
+    "signature": "(JII)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351fa8",
+    "value": "0x19cda0"
+  },
+  {
+    "name": "_setVideoSurface",
+    "signature": "(JLandroid/view/Surface;)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351fc0",
+    "value": "0x19cde0"
+  },
+  {
+    "name": "_setDataSource",
+    "signature": "(JLjava/lang/String;)V",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x351fd8",
+    "value": "0x19cea8"
+  },
+  {
+    "name": "_getDuration",
+    "signature": "(J)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x352020",
+    "value": "0x19d244"
+  },
+  {
+    "name": "_isPlaying",
+    "signature": "(J)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x352038",
+    "value": "0x19d290"
+  },
+  {
+    "name": "_setVolume",
+    "signature": "(JFF)V",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x352080",
+    "value": "0x19d370"
+  },
+  {
+    "name": "_getIntValue",
+    "signature": "(JII)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x352170",
+    "value": "0x19e2fc"
+  },
+  {
+    "name": "_setIntValue",
+    "signature": "(JII)I",
+    "java_class": "com/ss/ttm/player/TTPlayer",
+    "table_vaddr": "0x352188",
+    "value": "0x19f15c"
+  },
+  {
+    "name": "_init",
+    "signature": "()V",
+    "java_class": "com/ss/ttm/strategycenter/TTPlayerStrategyCenter",
+    "table_vaddr": "0x358f60",
+    "value": "0x1ee348"
+  },
+  {
+    "name": "_notifyEvent",
+    "signature": "(I)V",
+    "java_class": "com/ss/ttm/strategycenter/TTPlayerStrategyCenter",
+    "table_vaddr": "0x358f78",
+    "value": "0x1ee35c"
+  },
+  {
+    "name": "_setDataCenterHandle",
+    "signature": "(J)V",
+    "java_class": "com/ss/ttm/strategycenter/TTPlayerStrategyCenter",
+    "table_vaddr": "0x358f90",
+    "value": "0x1ee380"
+  },
+  {
+    "name": "_packStrategyLogInfo",
+    "signature": "(J)Ljava/lang/String;",
+    "java_class": "com/ss/ttm/strategycenter/TTPlayerStrategyCenter",
+    "table_vaddr": "0x358fa8",
+    "value": "0x1ee3a4"
+  },
+  {
+    "name": "_onEmptyBuffer",
+    "signature": "(JI)V",
+    "java_class": "com/ss/ttm/player/AJMediaCodec",
+    "table_vaddr": "0x35d3d0",
+    "value": "0x21a924"
+  },
+  {
+    "name": "_onFilledBuffer",
+    "signature": "(JIIIJI)V",
+    "java_class": "com/ss/ttm/player/AJMediaCodec",
+    "table_vaddr": "0x35d3e8",
+    "value": "0x21a938"
+  },
+  {
+    "name": "_onError",
+    "signature": "(J)V",
+    "java_class": "com/ss/ttm/player/AJMediaCodec",
+    "table_vaddr": "0x35d400",
+    "value": "0x21a960"
+  },
+  {
+    "name": "_onFormatChanged",
+    "signature": "(JIIIIIIIII)V",
+    "java_class": "com/ss/ttm/player/AJMediaCodec",
+    "table_vaddr": "0x35d418",
+    "value": "0x21a970"
+  },
+  {
+    "name": "_clearBufferIndex",
+    "signature": "(J)V",
+    "java_class": "com/ss/ttm/player/AJMediaCodec",
+    "table_vaddr": "0x35d430",
+    "value": "0x21a9b8"
+  },
+  {
+    "name": "_setSurfaceCompleted",
+    "signature": "(J)V",
+    "java_class": "com/ss/ttm/player/AJMediaCodec",
+    "table_vaddr": "0x35d448",
+    "value": "0x21a9c8"
   }
 ]

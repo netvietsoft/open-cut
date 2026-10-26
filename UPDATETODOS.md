@@ -491,9 +491,17 @@
 
   6. Được Agent 13 (Adversary Auditor) phê chuẩn `VERIFIED_AND_ACCEPTED` tại `SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json` (Thư viện số 41/169 — 24.26%), bộ kiểm thử đạt **281/281 tests PASS (100.0%)**, Watchdog Audit đạt **0 high findings**.
 
-- [ ] TASK-081-RECONSTRUCTION-LIBTTMPLAYER (2026-10-26, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libttmplayer.so (MEDIA_01_BYTEDANCE_TT_MEDIA_PLAYER_ENGINE)**:
-  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libttmplayer.so`.
-  2. Triển khai mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libttmplayer/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
-  3. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttmplayer.md` & `.json`.
+- [x] TASK-081-RECONSTRUCTION-LIBTTMPLAYER (2026-10-26, CEO Orchestrator & Agent 13): **Hoàn Thành Tái Cấu Trúc Toàn Diện Thuật Toán libttmplayer.so (MEDIA_01_BYTEDANCE_TT_MEDIA_PLAYER_ENGINE)**:
+  1. Tái dựng 12 tệp C++ & Header (`121,165` bytes C++ / `306,555` bytes tổng, 0 stub) cho `libttmplayer.so` (`3,594,936` bytes, 866 dynamic symbols, 75 phương thức JNI: 3 `.dynsym` exports + 62 `TTPlayer` + 4 `TTPlayerStrategyCenter` + 6 `AJMediaCodec`) với 100% chú thích song ngữ EN + VN.
+  2. Khôi phục phân hệ `VString` (24-byte SSO/Heap @ `0x16b6a8`), `Value` (32-byte variant container @ `0x16b6cc..0x16bc00`, tag `type_` @ `+0x18`) và `Parcel` (32-byte vector @ `0x16bc04..0x16c9ec`, `isFull()` @ `0x16be78` dịch `asr #5`).
+  3. Khôi phục phân hệ chiến lược phát lại & chuyển đổi Codec (`AVStrategyUtils::convertTTCodecIDToFF` @ `0x1660cc` -> `0x261f20` với bitmask `0x0003f1ffff7fffff` và bảng 50 codec `.rodata` `0x2cf040`; `setPlayerGlobalConfigIntValue` @ `0x1660d0` ánh xạ `0x519->0x3a`, `0x518->0x3d`; `mdlInfoCallback` @ `0x0c4af8` điều phối `0xfa1/0xfa2/0xfa4`).
+  4. Khôi phục phân hệ `AJMediaCodec` (`onFilledBuffer` @ `0x212b34` với bộ đệm vòng 64-khe không khóa tại `+0x824/+0x828/+0x830`, `onFormatChanged` @ `0x212bd0` tính kích thước YUV420 `(3 * slice_height * stride) >> 1`) và `JAJAudioProcessor` (`0x16c9f0..0x16cf64`).
+  5. Khôi phục phân hệ `JNI_OnLoad` (`0x197174` đọc `debug.ttplayer.log.enable` kiểm tra `'file'`/`'true'`) và đầy đủ 62 hàm `com_ss_ttm_player_TTPlayer_*`, 4 hàm `TTPlayerStrategyCenter_*` và 6 hàm `AJMediaCodec_*`.
+  6. Được Agent 13 (Adversary Auditor) phê chuẩn `VERIFIED_AND_ACCEPTED` tại `SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json` (Thư viện số 42/169 — 24.85%), bộ kiểm thử đạt **287/287 tests PASS (100.0%)**, Watchdog Audit đạt **0 high findings**.
+
+- [ ] TASK-082-RECONSTRUCTION-LIBTTMSTRATEGYCENTER (2026-10-26, CEO Orchestrator & Agent 13): **Tái Cấu Trúc Toàn Diện Thuật Toán libTTMStrategyCenter.so (MEDIA_02_BYTEDANCE_TTM_STRATEGY_CENTER_ENGINE)**:
+  1. Phân tích nhị phân và opcode AArch64 của `apktool-res/lib/arm64-v8a/libTTMStrategyCenter.so`.
+  2. Triển khai mã nguồn C++ sạch vào `SOURCE/GIAI-MA/libTTMStrategyCenter/` (> 40 KB C++, 0 stub, song ngữ EN + VN).
+  3. Trình nộp bằng chứng toán học & opcode tại `SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libTTMStrategyCenter.md` & `.json`.
   4. Mở rộng suite kiểm thử `verify_reconstruction_suite.py` và chạy kiểm thử 100% PASS.
   5. Agent 13 nghiệm thu cấp chứng nhận `VERIFIED_AND_ACCEPTED` tại `LEDGER_DOI_KHANG.json`.

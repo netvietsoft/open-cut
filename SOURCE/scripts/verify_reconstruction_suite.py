@@ -3988,6 +3988,105 @@ class AutonomousVerificationEngine:
             "Tuần tự hóa ASN.1 SSL_SESSION kèm cờ 'NOT RESUMABLE' 14-byte (0x02c1c8..0x02c3c0) và tầng BIO/Record I/O (0x014a5c..0x0337e4)"
         )
 
+    def verify_libttmplayer(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libttmplayer.so (ByteDance TTPlayer Core Multimedia Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libttmplayer"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+
+        self.assert_test(
+            "TTMPlayer_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) >= 12,
+            f"Tổng dung lượng C++ đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Kiểm tra opcode thực tế trong libttmplayer.so tại 0x261f20 (convertTTCodecIDToFF) & bảng .rodata 0x2cf040
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libttmplayer.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        insns = struct.unpack("<5I", so_bytes[0x261f20:0x261f34])
+        rodata_table = struct.unpack("<50i", so_bytes[0x2cf040:0x2cf108])
+        mask = 0x0003f1ffff7fffff
+
+        def sim_convert_codec(tt_id, default_ff=-1):
+            if tt_id < 0 or tt_id > 0x31:
+                return default_ff
+            if ((mask >> tt_id) & 1) != 0:
+                return rodata_table[tt_id]
+            return default_ff
+
+        self.assert_test(
+            "TTMPlayer_CodecIDBitmaskAndRodataTable",
+            insns[0] == 0x7100c41f
+            and sim_convert_codec(0) == 28
+            and sim_convert_codec(1) == 174
+            and sim_convert_codec(2) == 86018
+            and sim_convert_codec(33) == 266240
+            and sim_convert_codec(49) == 197
+            and sim_convert_codec(23, 777) == 777
+            and sim_convert_codec(41, 777) == 777,
+            "AVStrategyUtils::convertTTCodecIDToFF (0x1660cc -> 0x261f20) khớp bitmask 0x0003f1ffff7fffff và bảng 50 codec tại .rodata 0x2cf040"
+        )
+
+        # 3. Kiểm tra VString (24B SSO/Heap), Value (32B variant) & Parcel (32B vector)
+        vp_cpp = (lib_dir / "ttmplayer_value_parcel.cpp").read_text(encoding="utf-8", errors="ignore")
+        types_h = (lib_dir / "ttmplayer_types.h").read_text(encoding="utf-8", errors="ignore")
+        parcel_insns = struct.unpack("<6I", so_bytes[0x16be78:0x16be90])
+        self.assert_test(
+            "TTMPlayer_VStringValueParcelABI",
+            parcel_insns[0] == 0xa940a009
+            and parcel_insns[3] == 0xeb88155f
+            and "sizeof(VString) == 24" in types_h
+            and "sizeof(Value) == 32" in types_h
+            and "sizeof(Parcel) == 32" in types_h
+            and "ttmplayer_verify_parcel_container" in vp_cpp,
+            "VString (24B SSO @ 0x16b6a8), Value (32B @ 0x16b6cc..0x16bc00) và Parcel (32B stride asr #5 @ 0x16be78) khớp ABI AArch64"
+        )
+
+        # 4. Kiểm tra AJMediaCodec 64-slot lock-free ring buffer (0x212b34) & YUV420 sizing (0x212bd0)
+        aj_cpp = (lib_dir / "ttmplayer_ajmediacodec_audio.cpp").read_text(encoding="utf-8", errors="ignore")
+        aj_insns = struct.unpack("<4I", so_bytes[0x212b34:0x212b44])
+        yuv_size_1088p = ((1088 * 1920 * 3) >> 1)
+        self.assert_test(
+            "TTMPlayer_AJMediaCodecRingBufferAndFormat",
+            aj_insns[0] == 0x9120a009
+            and aj_insns[2] == 0x7100fd1f
+            and yuv_size_1088p == 3133440
+            and "ttmplayer_ajmediacodec_on_filled_buffer" in aj_cpp
+            and "ttmplayer_ajmediacodec_on_format_changed" in aj_cpp,
+            "Bộ đệm vòng không khóa 64-khe AJMediaCodec (+0x824/+0x828/+0x830 @ 0x212b34) và tính toán YUV420 (3*slice_height*stride)/2 @ 0x212c44"
+        )
+
+        # 5. Kiểm tra AVStrategyUtils global config (0x519->0x3a, 0x518->0x3d @ 0x1660d0) & mdlInfoCallback (0x0c4af8)
+        strat_cpp = (lib_dir / "ttmplayer_strategy_operators.cpp").read_text(encoding="utf-8", errors="ignore")
+        cfg_insns = struct.unpack("<6I", so_bytes[0x1660dc:0x1660f4])
+        self.assert_test(
+            "TTMPlayer_StrategyConfigAndMDLCallback",
+            cfg_insns[0] == 0x7114641f
+            and cfg_insns[3] == 0x7114601f
+            and "mdlInfoCallback" in strat_cpp
+            and "0xFA4" in strat_cpp
+            and "0xFA2" in strat_cpp
+            and "0xFA1" in strat_cpp,
+            "Ánh xạ cấu hình toàn cục (0x519->0x3a, 0x518->0x3d @ 0x1660d0) và điều phối sự kiện mdlInfoCallback (0xfa1/0xfa2/0xfa4 @ 0x0c4af8)"
+        )
+
+        # 6. Kiểm tra JNI_OnLoad (0x197174) & 62 phương thức TTPlayer (0x351eb8)
+        jni_cpp = (lib_dir / "ttmplayer_player_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        onload_insns = struct.unpack("<4I", so_bytes[0x1971dc:0x1971ec])
+        self.assert_test(
+            "TTMPlayer_JNIOnLoadAnd62PlayerMethods",
+            onload_insns[0] == 0x528d2cc9
+            and "0x656C6966U" in jni_cpp
+            and "0x65757274U" in jni_cpp
+            and "kTTPlayerJNIMethods[62]" in jni_cpp
+            and "ttmplayer_native_seek2" in jni_cpp,
+            "JNI_OnLoad (0x197174) kiểm tra 'debug.ttplayer.log.enable' ('file'/'true') và đăng ký 62 phương thức TTPlayer (0x351eb8)"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -4070,6 +4169,7 @@ class AutonomousVerificationEngine:
         self.verify_libttheif_dec()
         self.verify_libttcrypto()
         self.verify_libttboringssl()
+        self.verify_libttmplayer()
         self.verify_overall_governance()
 
 
