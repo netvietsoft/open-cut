@@ -1950,3 +1950,14 @@
   3. *Universal BDI & Keva KV Bridges (`ttmachinecore_bdi_bridges.h/.cpp`)*: `TTMUniversalBdiFunLoader` (`0x2869c`), `AnTTMUniversalBdiFunLoader` (`0x44208`), và cầu nối lưu trữ `ttm_core_repo` (`0x4934c..0x4a2fc`).
   4. *Giao diện Dữ liệu Mở rộng, `cJSON` & 19 Cầu nối JNI (`ttmachinecore_extdata_cjson_jni.h/.cpp`)*: `ITTMExtDataBdi`, `TTMExtJsonDataBdi`, `TTMExtDataDelegate`, `cJSON`, và `JNI_OnLoad` (`0x4f538`, 10 hàm `TTMCore$JNIHelper` @ `0x6a8f0` + 9 hàm `TTMCoreKVManager` @ `0x6a9e0`).
 - **Kiểm định tự động**: `verify_reconstruction_suite.py` đạt **299 / 299 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**, Agent 13 chứng nhận **44 / 169 `VERIFIED_AND_ACCEPTED` (26.04%)**.
+
+
+## 72. HOÀN THÀNH TÁI CẤU TRÚC THUẬT TOÁN libCepEngine.so (TARGET 45 — `TASK-084-RECONSTRUCTION-LIBCEPENGINE`)
+- **Thời gian**: 2026-10-26 18:38:00
+- **Thư viện mục tiêu**: `libCepEngine.so` (`362,464 bytes`, 318 dynamic symbols: 266 exported + 52 imported, 13 JNI exported methods).
+- **Chi tiết giải mã thân hàm (12 files, 271,814 bytes C++17, 384,665 bytes tổng thư mục, 0 stub)**:
+  1. *Hợp đồng Kiểu Dữ liệu, Lỗi & Toán học Thời gian (`cepengine_types.h`, `cepengine_data_error_utils.h/.cpp`)*: `ApiVersion()` (`0x0c33c -> 2`), `cep::DataInterface` (`vtable 0x5a9d8`, `InterfaceType() @ 0x0c4e8 -> 2`, enum kiểu dữ liệu `0..6` và `100` cho `EventWrapperList`), `cep::ErrorCode::GetMessageByCode` (`0x25ac8`, 22 chuỗi `.rodata 0x4c170..0x4c356`), và `cep::GetCurrentTimestamp` (`0x41e94`, chia 1000 có dấu 64-bit bằng hằng số ma thuật `0x20c49ba5e353f7cf` qua `smulh` + `asr #7`).
+  2. *Máy Trạng Thái NFA & Biểu Thức (`cepengine_nfa_evaluator.h/.cpp`)*: `cep::State` (`0x4005c..0x40eb0`), `cep::Nfa::Process` (`0x2d2c8`, 1,152 B), `cep::Nfa::AdvanceTime` (`0x2d748`, 572 B), `cep::MatchContext` (`0x27d38..0x29070`), `cep::EventWrapper` / `EventWrapperList` (`0x27730..0x27cbc`), và `cep::ExpEvaluator::CreateEvaluator` (`0x25da8`).
+  3. *Quản Lý Quy Tắc & Hàng Đợi Đa Luồng (`cepengine_manager_core.h/.cpp`)*: `cep::Env::Instance()` (`0x243a8`, `.bss 0x5c558`, version `"1.5.0"`, `300000 ms` window @ `.rodata 0x4bf80`), `cep::EngineConfig` (`104B` @ `0x13a48..0x144bc`), `cep::CepEngine` (`0x0c7f0..0x1384c`), và `cep::EngineManager` (`0x1b71c..0x1fb24`).
+  4. *Thích Ứng Nền Tảng, `NativeData` & 13 Cầu Nối JNI (`cepengine_platform_jni.h/.cpp`)*: `cep::NativeData` (`vtable 0x5adc8`, `InterfaceType() @ 0x2930c -> 1`), `cep::JsonDataWrapper` (`vtable 0x5adb0`), `CBlockContainer` (`0x489d4..0x48c40`), và 13 hàm xuất JNI (`Java_com_bytedance_pitaya_cep_1engine_inner_JniCaller_*` & `Java_com_bytedance_pitaya_cep_1engine_CepEngineManager_*` @ `0x49250..0x4a3b8`).
+- **Kiểm định tự động**: `verify_reconstruction_suite.py` đạt **305 / 305 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**, Agent 13 chứng nhận **45 / 169 `VERIFIED_AND_ACCEPTED` (26.63%)**.

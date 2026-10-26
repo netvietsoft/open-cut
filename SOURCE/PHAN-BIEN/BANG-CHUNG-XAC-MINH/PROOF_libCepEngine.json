@@ -1,0 +1,92 @@
+{
+  "lib_name": "libCepEngine",
+  "binary_path": "extracted/lib/arm64-v8a/libCepEngine.so",
+  "binary_size_bytes": 362464,
+  "reconstructed_cpp_bytes": 271814,
+  "total_directory_bytes": 384665,
+  "total_dynamic_symbols": 318,
+  "exported_symbols": 266,
+  "imported_symbols": 52,
+  "jni_exports": 13,
+  "gate1_size_verified": true,
+  "gate2_opcode_verified": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_verified": true,
+  "gate6_test_verified": true,
+  "opcode_evidence": [
+    {
+      "symbol": "_Z10ApiVersionv",
+      "vaddr": "0x0c33c",
+      "size": 8,
+      "disassembly": "0x0c33c: 52800040 mov w0, #2; 0x0c340: d65f03c0 ret",
+      "meaning": "Returns C++ CEP API Version 2"
+    },
+    {
+      "symbol": "_ZN3cep13DataInterface13InterfaceTypeEv",
+      "vaddr": "0x0c4e8",
+      "size": 8,
+      "disassembly": "0x0c4e8: 52800040 mov w0, #2; 0x0c4ec: d65f03c0 ret",
+      "meaning": "Returns DataInterface base implementation type 2 (NativeData::InterfaceType @ 0x2930c returns 1)"
+    },
+    {
+      "symbol": "_ZN3cep13DataInterface17ConvertToIntValueEv",
+      "vaddr": "0x0c4f8",
+      "size": 136,
+      "disassembly": "0x0c514: 7100081f cmp w0, #2; 0x0c51c: 7100041f cmp w0, #1; 0x0c534: f9400901 ldr x1, [x8, #0x10]; 0x0c568: 9e780000 fcvtzs x0, d0",
+      "meaning": "Dispatches Type() (0=Int via vtable +0x10, 1=Float via vtable +0x18 + fcvtzs, 2=Bool via vtable +0x20 + and #1)"
+    },
+    {
+      "symbol": "_ZN3cep12EngineConfigC2Ev",
+      "vaddr": "0x14458",
+      "size": 104,
+      "disassembly": "0x14468: 52a7f008 mov w8, #0x3f800000; 0x14484: b9001809 str w9, [x0, #0x18]; 0x14488: 79003809 strh w9, [x0, #0x1c]; 0x14490: f9405808 ldr x8, [x0, #0xb0]",
+      "meaning": "Initializes 104-byte EngineConfig from Env::Instance() (+0xa0, +0xa8, +0xb0 = 100)"
+    },
+    {
+      "symbol": "_ZN3cep3Env8InstanceEv",
+      "vaddr": "0x243a8",
+      "size": 248,
+      "disassembly": "0x243f8: 52800c89 mov w9, #0x64; 0x24404: 52927c08 mov w8, #0x93e0; 0x24428: 72a00088 movk w8, #4, lsl #16; 0x24444: 5285c628 mov w8, #0x2e31; 0x24450: 72a5c6a8 movk w8, #0x2e35, lsl #16",
+      "meaning": "Initializes Env singleton at .bss 0x5c558 with version '1.5.0', limits=100 (0x64), window=300000ms (0x493e0), fixed_queue_size=4"
+    },
+    {
+      "symbol": "_ZN3cep19GetCurrentTimestampEv",
+      "vaddr": "0x41e94",
+      "size": 48,
+      "disassembly": "0x41ea0: d29ef9e8 mov x8, #0xf7cf; 0x41ea4: f2bc6a68 movk x8, #0xe353, lsl #16; 0x41ea8: f2d374a8 movk x8, #0x9ba5, lsl #32; 0x41eac: f2e41888 movk x8, #0x20c4, lsl #48; 0x41eb0: 9b487c08 smulh x8, x0, x8; 0x41eb4: 9347fd09 asr x9, x8, #7; 0x41eb8: 8b48fd20 add x0, x9, x8, lsr #63",
+      "meaning": "Signed 64-bit division of microseconds by 1000 using magic constant 0x20c49ba5e353f7cf = ceil(2^71 / 1000)"
+    }
+  ],
+  "math_proofs": [
+    {
+      "function": "cep::GetCurrentTimestamp (@ 0x41e94)",
+      "formula": "ms = floor((us * 0x20c49ba5e353f7cf) / 2^71) + (sign_bit(us))",
+      "verification": "ceil(2^71 / 1000) = ceil(2361183241434822606848 / 1000) = 2361183241434822607 = 0x20C49BA5E353F7CF. smulh computes >> 64, asr #7 shifts by 7 more bits (64 + 7 = 71), and add lsr #63 adds 1 for negative dividends."
+    },
+    {
+      "function": "cep::CheckDSLVersion (@ 0x420dc)",
+      "formula": "accum = accum * 10 + (ch - 0x30) via madd w26, w26, w25, w8 (w25 = 10 @ 0x42130) split on '.' (0x2e @ 0x42150)",
+      "verification": "Compares parsed major.minor.patch against engine version 1.5.0 (@ 0x4bfe0)."
+    }
+  ],
+  "abi_layouts": {
+    "cep::EngineConfig (104 bytes)": {
+      "+0x00": "weak_this_ (std::weak_ptr<EngineConfig>, 16B)",
+      "+0x10": "extra_ (void*, 8B)",
+      "+0x18": "match_timeout_inference_strategy_ (int32_t = 1, 4B)",
+      "+0x1c": "overwrite_ (bool = true, 1B)",
+      "+0x1d": "debug_ (bool = false, 1B)",
+      "+0x20": "max_matched_events_length_ (int64_t = 100, 8B)",
+      "+0x28": "max_matches_count_ (int64_t = 100, 8B)",
+      "+0x30": "max_queuing_count_ (int64_t = 100, 8B)",
+      "+0x38": "process_mode_ (int32_t = 0, 4B)",
+      "+0x40": "variables_ (std::unordered_map<string, shared_ptr<DataInterface>>, 40B, load_factor 0x3f800000 at +0x60)"
+    },
+    "cep::Semaphore (96 bytes)": {
+      "+0x00": "mutex_ (std::mutex, 40B)",
+      "+0x28": "cv_ (std::condition_variable, 48B)",
+      "+0x58": "count_ (unsigned long, 8B)"
+    }
+  }
+}

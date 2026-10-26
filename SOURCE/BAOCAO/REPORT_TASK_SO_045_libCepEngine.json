@@ -1,0 +1,30 @@
+{
+  "task_id": "TASK-084-RECONSTRUCTION-LIBCEPENGINE",
+  "report_id": "REPORT_TASK_SO_045_libCepEngine",
+  "library": "libCepEngine.so",
+  "target_index": 45,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 362464,
+  "reconstructed_cpp_bytes": 271814,
+  "total_directory_bytes": 384665,
+  "total_symbols": 318,
+  "exported_symbols": 266,
+  "imported_symbols": 52,
+  "jni_exports": 13,
+  "stub_count": 0,
+  "files_created": [
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_types.h",
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_data_error_utils.h",
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_data_error_utils.cpp",
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_nfa_evaluator.h",
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_nfa_evaluator.cpp",
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_manager_core.h",
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_manager_core.cpp",
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_platform_jni.h",
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_platform_jni.cpp",
+    "SOURCE/GIAI-MA/libCepEngine/CepEngine_interface.h",
+    "SOURCE/GIAI-MA/libCepEngine/cepengine_interface.cpp",
+    "SOURCE/GIAI-MA/libCepEngine/CepEngine_pseudocode.cpp"
+  ],
+  "completed_at": "2026-10-26T18:31:00+07:00"
+}

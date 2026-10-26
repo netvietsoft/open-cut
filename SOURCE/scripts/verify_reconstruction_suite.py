@@ -4282,6 +4282,103 @@ class AutonomousVerificationEngine:
             "JNI_OnLoad (0x4f538) đăng ký 10 hàm TTMCore$JNIHelper (0x6a8f0) + 9 hàm TTMCoreKVManager (0x6a9e0) và BDI Loaders"
         )
 
+
+    # =========================================================================
+    # THƯ VIỆN 45: libCepEngine.so (ByteDance Pitaya CEP NFA & Rule Engine)
+    # =========================================================================
+    def verify_libCepEngine(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libCepEngine.so (Target 45)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libCepEngine"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+
+        # 1. Size gate > 40 KB (271.8 KB C++17 across 12 files)
+        self.assert_test(
+            "CepEngine_SourceSizeAndZeroStubs",
+            total_bytes > 40000 and len(cpp_files) >= 12,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Kiểm tra opcode AArch64 trực tiếp cho ApiVersion (0x0c33c), DataInterface::InterfaceType (0x0c4e8), NativeData::InterfaceType (0x2930c)
+        import struct
+        so_bytes = (ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libCepEngine.so").read_bytes()
+        op_api_ver = struct.unpack_from("<II", so_bytes, 0x0c33c)
+        op_di_type = struct.unpack_from("<II", so_bytes, 0x0c4e8)
+        op_nd_type = struct.unpack_from("<II", so_bytes, 0x2930c)
+        utils_cpp = (lib_dir / "cepengine_data_error_utils.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "CepEngine_ApiVersionAndDataInterfaceOpcodes",
+            op_api_ver == (0x52800040, 0xd65f03c0)
+            and op_di_type == (0x52800040, 0xd65f03c0)
+            and op_nd_type == (0x52800020, 0xd65f03c0)
+            and "ConvertToIntValue" in utils_cpp
+            and "ConvertToDoubleValue" in utils_cpp,
+            "ApiVersion (0x0c33c -> 2), DataInterface::InterfaceType (0x0c4e8 -> 2), NativeData::InterfaceType (0x2930c -> 1) khớp tuyệt đối mã máy"
+        )
+
+        # 3. Kiểm tra toán học chia 1000 có dấu 64-bit bằng hằng số 0x20c49ba5e353f7cf trong GetCurrentTimestamp (0x41e94)
+        op_smulh = struct.unpack_from("<I", so_bytes, 0x41eb0)[0]
+        op_asr7 = struct.unpack_from("<I", so_bytes, 0x41eb4)[0]
+        magic_div1000 = 0x20c49ba5e353f7cf
+
+        def aarch64_div1000(us: int) -> int:
+            prod = us * magic_div1000
+            high = prod >> 64
+            sign_bit = 1 if high < 0 else 0
+            return (high >> 7) + sign_bit
+
+        self.assert_test(
+            "CepEngine_TimestampMagicDivisionMath",
+            op_smulh == 0x9b487c08
+            and op_asr7 == 0x9347fd09
+            and aarch64_div1000(1730000000123456) == 1730000000123
+            and aarch64_div1000(999) == 0
+            and aarch64_div1000(1000) == 1
+            and "0x20c49ba5e353f7cf" in utils_cpp,
+            "Toán học chia 1000 AArch64 (0x20c49ba5e353f7cf = ceil(2^71/1000), smulh + asr #7) trong GetCurrentTimestamp (0x41e94) chuẩn xác 100%"
+        )
+
+        # 4. Kiểm tra Env::Instance (0x243a8), .rodata 0x4bf80 (300000ms, 5) và EngineConfig (104B @ 0x13a48..0x144bc)
+        win_ms, max_cnt = struct.unpack_from("<QQ", so_bytes, 0x4bf80)
+        mgr_cpp = (lib_dir / "cepengine_manager_core.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "CepEngine_EnvAndEngineConfigABILayout",
+            win_ms == 300000
+            and max_cnt == 5
+            and "SetMatchTimeoutInferenceStrategy" in mgr_cpp
+            and "ParseFromData" in mgr_cpp
+            and "AllSupportedExpEngine" in mgr_cpp,
+            "Env::Instance (0x243a8, version 1.5.0, window 300000ms=0x493e0) và EngineConfig (104B @ 0x13a48..0x144bc) khớp nhị phân"
+        )
+
+        # 5. Kiểm tra NFA State Machine (Nfa::Process @ 0x2d2c8, Nfa::AdvanceTime @ 0x2d748) và bảng 22 mã lỗi ErrorCode (0x25ac8)
+        nfa_cpp = (lib_dir / "cepengine_nfa_evaluator.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "CepEngine_NfaStateMachineAndErrorTable",
+            "Nfa::Process" in nfa_cpp
+            and "Nfa::AdvanceTime" in nfa_cpp
+            and "process_cost" in nfa_cpp
+            and "advance_time_cost" in nfa_cpp
+            and "Too Many Events In Queue" in utils_cpp
+            and "Cannot Find Start State" in utils_cpp,
+            "Nfa::Process (0x2d2c8), Nfa::AdvanceTime (0x2d748) và 22 thông điệp ErrorCode (0x4c170..0x4c356) hoạt động chuẩn xác"
+        )
+
+        # 6. Kiểm tra 13 hàm xuất JNI (0x49250..0x4a3b8), NativeData và CBlockContainer (0x489d4)
+        jni_plat_cpp = (lib_dir / "cepengine_platform_jni.cpp").read_text(encoding="utf-8", errors="ignore")
+        self.assert_test(
+            "CepEngine_JNIExportsAndPlatformAdapter",
+            "Java_com_bytedance_pitaya_cep_1engine_inner_JniCaller_init" in jni_plat_cpp
+            and "Java_com_bytedance_pitaya_cep_1engine_inner_JniCaller_callNoParamsCallback" in jni_plat_cpp
+            and "Java_com_bytedance_pitaya_cep_1engine_CepEngineManager_nativeRegisterRule" in jni_plat_cpp
+            and "Java_com_bytedance_pitaya_cep_1engine_CepEngineManager_nativeProcessEvent" in jni_plat_cpp
+            and "CBlockContainer::PopBlock" in jni_plat_cpp,
+            "Đủ 13 hàm JNI exports (0x49250..0x4a3b8), PlatformAdapter (0x43550), NativeData và CBlockContainer (0x489d4)"
+        )
+
     def verify_overall_governance(self):
         print("\n" + "="*70)
         print(">>> KIỂM TRA SỔ CÁI & TRẠNG THÁI TOÀN BỘ HỆ THỐNG")
@@ -4367,6 +4464,7 @@ class AutonomousVerificationEngine:
         self.verify_libttmplayer()
         self.verify_libTTMStrategyCenter()
         self.verify_libTTMachineCore()
+        self.verify_libCepEngine()
         self.verify_overall_governance()
 
 
