@@ -1,0 +1,26 @@
+{
+  "lib_name": "libbytemonitor",
+  "task_id": "TASK-092-RECONSTRUCTION-LIBBYTEMONITOR",
+  "legacy_task_id": "TASK_SO_140",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libbytemonitor.so",
+  "binary_size_bytes": 67408,
+  "dynamic_symbols": {
+    "total": 102,
+    "exported": 25,
+    "imported": 76
+  },
+  "gate1_size_passed": true,
+  "gate2_opcode_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "key_proofs": [
+    "AndroidMonitor Vtable & Object ABI (.data.rel.ro 0x012938, 152 bytes = 19 pointers): +0x00 vptr (0x012948), +0x08 EnvMonitor* (0x00511c: str x0, [x19, #8]), with 15 exported telemetry methods (CPU @ 0x005260, GPUUsage @ 0x0052ac, MemoryUsage @ 0x0052f8, batteryLevel @ 0x005344, Temperature @ 0x005390, AvailableMem @ 0x0053dc, monitorThreadCPUUsageBegin @ 0x005428, monitorThreadCPUUsageEnd @ 0x0054a8, monitorProcessVMBegin @ 0x0054f0, monitorProcessVMEnd @ 0x00555c, monitorProcessVMSize @ 0x0055b0, monitorProcessCPUUsage @ 0x0055fc, monitorProcessCPUUsageEnd @ 0x005670, monitorBatteryElectricCurrent @ 0x0056c4, dumpInfo @ 0x005710)",
+    "EnvMonitor 72-Byte Singleton (.bss 0x014098, allocated via operator new(0x48) @ 0x006fb8) & 11 MonitorImpl 272-Byte Handlers (operator new(0x110) @ 0x0070bc..0x0078c8) registered once via std::__call_once (.bss 0x014010) in EnvMonitor::init() @ 0x005888..0x005d5c",
+    "CPUTools Mathematical Proofs (0x005000..0x005044, 0x009064..0x009360, 0x00b6ac..0x00c050): sysconf(_SC_NPROCESSORS_CONF=0x60) @ 0x005008 -> .bss 0x014050; Cpus_allowed hex mask parser @ 0x00b6ac -> .bss 0x014070; normalized frequency usage (100.0/N_cores)*sum((cur-min)/(max-min)) @ 0x00bd1c..0x00bd6c & 0x008b10; /proc/.../stat fields 14..17 (utime+stime+cutime+cstime at +0x138, +0x150, +0x168, +0x180) @ 0x00bebc..0x00bf18; and time_in_state (sum_10ms + 5)/10.0 @ 0x009100..0x00910c",
+    "GPUTools (0x00c054..0x00c390) & MemoryTools (0x00c4e8..0x00cb04): Qualcomm KGSL (/sys/class/kgsl/kgsl-3d0/gpubusy @ 0x00d9a5) and MediaTek GED (/sys/kernel/debug/ged/hal/gpu_utilization @ 0x00d9c6) busy/total * 100.0 @ 0x00c1f4..0x00c20c; /proc/<pid>/smaps Pss accumulator @ 0x00c5e8; /proc/meminfo (MemTotal - MemAvailable)/MemTotal * 100.0 @ 0x00c784..0x00c79c; and /proc/<pid>/status VmSize @ 0x00cab4",
+    "All 25 Exported .dynsym Symbols ([077]..[101]): JNI_OnLoad (0x00977c, returns 0x00010006), JNI_OnUnload (0x009a0c), BTC_FindClass (0x0099b8), Java_com_benchmark_bytemonitor_nativePort_ByteMonitorPort_nativeInit (0x009570), ByteMonitor::getMonitor (0x00cb08), ByteMonitor::setLogLevel (0x00cb74: 1->6, 3->5, 7->4, 15->3, 31->2, default->8 into .data 0x014000), vtables (0x012938, 0x013a38), and 17 AndroidMonitor methods"
+  ]
+}

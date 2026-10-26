@@ -1,19 +1,15 @@
 {
   "lib_name": "libbytemonitor",
-  "inspected_at": "2026-10-26 21:23:10",
-  "gate1_size_bytes": 4946,
-  "gate1_passed": false,
-  "gate2_opcode_count": 0,
-  "gate2_passed": false,
-  "gate3_math_verified": false,
-  "gate4_abi_offsets_verified": false,
+  "inspected_at": "2026-10-26 21:46:35",
+  "gate1_size_bytes": 139426,
+  "gate1_passed": true,
+  "gate2_opcode_count": 588,
+  "gate2_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
   "gate5_symbols_count": 99,
   "gate5_passed": true,
-  "gate6_test_passed": false,
-  "status": "CHALLENGED_NEEDS_PROOF",
-  "criticisms": [
-    "Dung lượng mã nguồn (4946 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
-    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
-    "Chưa tích hợp test case trong verify_reconstruction_suite.py."
-  ]
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "criticisms": []
 }

@@ -1,0 +1,26 @@
+{
+  "task_id": "TASK-092-RECONSTRUCTION-LIBBYTEMONITOR",
+  "legacy_task_id": "TASK_SO_140",
+  "title": "Reconstruct 100% C++17 source & AArch64 opcode proofs for libbytemonitor.so (Target 53/169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 7 (Fixer) & Agent 13 (Adversary Auditor)",
+  "target_library": "libbytemonitor.so",
+  "binary_size_bytes": 67408,
+  "reconstructed_size_bytes": 139426,
+  "verified_opcode_citations": 588,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libbytemonitor/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbytemonitor.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_140_libbytemonitor.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": {
+    "gate1_size_over_40kb": true,
+    "gate2_aarch64_opcodes_verified": true,
+    "gate3_math_formulas_proven": true,
+    "gate4_abi_struct_vtable_offsets_verified": true,
+    "gate5_all_25_exported_symbols_reconstructed": true,
+    "gate6_closed_loop_tests_passed": true
+  },
+  "completed_at": "2026-10-26T21:47:00+07:00"
+}
