@@ -1,0 +1,24 @@
+{
+  "task_id": "TASK-GIT-WATCHDOG-20261026",
+  "title": "Pull remote develop into an isolated checkout and produce a five-minute audit handoff",
+  "assigned_role": "Agent 10 - DevOps / Agent 0 - Orchestrator",
+  "status": "done",
+  "scope": {
+    "files_allowed": [
+      "SOURCE/scripts/git_audit_watchdog.py",
+      "SOURCE/scripts/install_native_audit_task.ps1",
+      "SOURCE/scripts/test_git_audit_watchdog.py",
+      "SOURCE/BAOCAO-AUDIT/GIT_WATCHDOG_HANDOFF.md",
+      "SOURCE/BAOCAO-AUDIT/NATIVE_WATCHDOG.md",
+      ".gitignore",
+      ".ai/tasks/ready/TASK-GIT-WATCHDOG-20261026.json",
+      ".ai/handoffs/HANDOFF-TASK-GIT-WATCHDOG-20261026.json"
+    ],
+    "files_forbidden": ["SOURCE/extracted/**", "SOURCE/apktool-res/**", "SOURCE/GIAI-MA/**"]
+  },
+  "acceptance_criteria": [
+    "Every five minutes fetch and fast-forward an isolated develop checkout without changing the working checkout.",
+    "Run the existing native audit on the fetched revision and record commit, changed paths, findings and limitations.",
+    "Write a concrete handoff for the next team and verify scheduler and one-shot run."
+  ]
+}

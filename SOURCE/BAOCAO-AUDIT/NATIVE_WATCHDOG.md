@@ -26,3 +26,9 @@ To stop the local schedule / Dừng lịch quét trên máy:
 ```powershell
 Disable-ScheduledTask -TaskName NextAI_OpenCut_Native_Audit_5min
 ```
+
+## Git pull and handoff / Kéo Git và bàn giao
+
+The Windows five-minute task now runs `SOURCE/scripts/git_audit_watchdog.py`. It clones `develop` into `%LOCALAPPDATA%/NextAI/OpenCut-audit-checkout`, then fetches and fast-forwards that separate checkout on later runs. It never pulls into a developer working tree. The scheduled user needs the `github.com-open-cut` SSH alias. Each cycle scans the fetched commit and writes ignored local `GIT_WATCHDOG_LATEST.md` and `.json` reports under `SOURCE/BAOCAO-AUDIT/`. The tracked `GIT_WATCHDOG_HANDOFF.md` is the initial evidence snapshot for the next team. This is a static scan; it does not start an AI agent process.
+
+Task Windows 5 phút kéo nhánh `develop` vào checkout riêng, không sửa working tree đang làm việc. Báo cáo mới nhất được ghi tại `GIT_WATCHDOG_LATEST.md` và `.json` cục bộ; `GIT_WATCHDOG_HANDOFF.md` là bản chứng cứ ban đầu cho đội tiếp nhận. Script không tự đánh thức AI agent.

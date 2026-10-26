@@ -6,7 +6,7 @@ param([switch]$RunNow)
 
 $ErrorActionPreference = 'Stop'
 $taskName = 'NextAI_OpenCut_Native_Audit_5min'
-$scriptPath = Join-Path $PSScriptRoot 'native_audit_watchdog.py'
+$scriptPath = Join-Path $PSScriptRoot 'git_audit_watchdog.py'
 $pythonExe = (Get-Command python.exe -ErrorAction Stop).Source
 
 if (-not (Test-Path -LiteralPath $scriptPath -PathType Leaf)) {
@@ -21,7 +21,7 @@ $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(1) `
 $settings = New-ScheduledTaskSettingsSet -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Minutes 4)
 
 Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Settings $settings `
-    -Description 'Scan OpenCut native binaries and reconstructed C++ every five minutes; write a local JSON audit.' `
+    -Description 'Pull isolated OpenCut develop checkout and write Git/native audit every five minutes.' `
     -Force | Out-Null
 
 if ($RunNow) {
