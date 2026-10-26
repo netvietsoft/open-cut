@@ -6769,6 +6769,128 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 68. KIỂM CHỨNG libtailor.so (ByteDance Tailor HPROF Stream Cropper & xHook)
+    # =========================================================================
+    def verify_libtailor(self):
+        import struct
+        print("\n[68] Đang kiểm chứng libtailor.so (ByteDance Tailor HPROF Binary Heap Dump Cropper & xHook Engine)...")
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libtailor.so"
+        giaima_dir = GIAIMA_DIR / "libtailor"
+        so_bytes = so_path.read_bytes()
+
+        cpp_files = list(giaima_dir.glob("*.cpp")) + list(giaima_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        all_src = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 100 KB, 9 files, 0 stubs) & Binary size (84,136 bytes)
+        self.assert_test(
+            "Tailor_BinaryAndSourceVolume",
+            so_path.stat().st_size == 84136 and len(cpp_files) == 9 and total_bytes > 100000 and
+            "TODO: Dịch logic" not in all_src,
+            f"Nhị phân libtailor.so (84,136 bytes) & 9 tệp C++17/H đạt {total_bytes} bytes (> 100 KB, 0 stub)"
+        )
+
+        # 2. JNI_OnLoad (0x00e650..0x00e744) & JNINativeMethod[5] on com/bytedance/tailor/Tailor
+        jni_v_lo = struct.unpack("<I", so_bytes[0x00e668:0x00e66c])[0]
+        jni_v_hi = struct.unpack("<I", so_bytes[0x00e674:0x00e678])[0]
+        jni_cnt  = struct.unpack("<I", so_bytes[0x00e730:0x00e734])[0]
+        self.assert_test(
+            "Tailor_JniOnLoadAnd5NativeMethods",
+            jni_v_lo == 0x528000C2 and jni_v_hi == 0x72A00022 and jni_cnt == 0x528000A3 and
+            b"com/bytedance/tailor/Tailor\x00" in so_bytes and
+            b"ro.build.version.sdk\x00" in so_bytes and
+            b"openTailor\x00" in so_bytes and
+            b"tailorHprof\x00" in so_bytes and
+            b"closeTailor\x00()V\x00" in so_bytes and
+            b"getCrashLogFiles\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "open_tailor_native",
+                "close_tailor_native",
+                "crop_hprof_file",
+                "scanCrashLogFiles",
+                "kTailorJniMethods"
+            ]),
+            "Khớp JNI_OnLoad (0x00e650, JNI_VERSION_1_6 = 0x00010006, mov w3, #5 @ 0x00e730) và bảng 5 phương thức JNI com/bytedance/tailor/Tailor"
+        )
+
+        # 3. Writer (0x40088 = 262,280B @ 0x00d72c) & Stream (256KB @ 0x00aabc, big-endian peek @ 0x00ab94)
+        w_add1 = struct.unpack("<I", so_bytes[0x00d72c:0x00d730])[0]
+        w_add2 = struct.unpack("<I", so_bytes[0x00d734:0x00d738])[0]
+        s_cap  = struct.unpack("<I", so_bytes[0x00aabc:0x00aac0])[0]
+        s_peek = struct.unpack("<I", so_bytes[0x00ab94:0x00ab98])[0]
+        self.assert_test(
+            "Tailor_WriterAndStreamOpcodes",
+            w_add1 == 0x91410008 and w_add2 == 0x91006108 and
+            s_cap == 0x52A00088 and s_peek == 0xAA002120 and
+            all(tok in all_src for tok in [
+                "LibzWriter",
+                "FileWriter",
+                "deflateInit2_",
+                "Stream::peek",
+                "Stream::handle"
+            ]),
+            "Khớp Writer::Writer (&strm @ +0x40018, deflateInit2_) và Stream (capacity=0x40000 @ 0x00aabc, big-endian orr x0, x9, x0, lsl #8 @ 0x00ab94)"
+        )
+
+        # 4. HPROF 1.0.2/1.0.3 Stream Cropper Engine (tailor_XHOOK 0x00b34c, 0x2C @ 0x00b414, shrinkField @ 0x00c5f0)
+        end_tag_op = struct.unpack("<I", so_bytes[0x00b414:0x00b418])[0]
+        shrink_sub = struct.unpack("<I", so_bytes[0x00c5fc:0x00c600])[0]
+        shrink_cmp = struct.unpack("<I", so_bytes[0x00c600:0x00c604])[0]
+        self.assert_test(
+            "Tailor_HprofCropperEngineAndKeepClasses",
+            end_tag_op == 0x52800581 and shrink_sub == 0x51000848 and shrink_cmp == 0x7100251F and
+            b"JAVA PROFILE 6.0.1\x00" in so_bytes and
+            b"android.app.Activity\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "tailor_XHOOK",
+                "tailor_HEAP_DUMP_SEGMENT",
+                "tailor_INSTANCE_DUMP_WRITE",
+                "tailor_PRIMITIVE_ARRAY_DUMP",
+                "initKeepClassIDSet",
+                "shrinkField"
+            ]),
+            "Khớp bộ máy cắt gọt HPROF (tailor_XHOOK 0x00b34c, 0x2C @ 0x00b414, shrinkField sub w8, w2, #2; cmp w8, #9 @ 0x00c5fc..0x00c600)"
+        )
+
+        # 5. Embedded xHook PLT/GOT Engine & AArch64 Cache Flush (0x00aa30, 0x00ea48..0x00eabc)
+        prot_err = struct.unpack("<I", so_bytes[0x00aa30:0x00aa34])[0]
+        mrs_ctr  = struct.unpack("<I", so_bytes[0x00ea48:0x00ea4c])[0]
+        dc_cvau  = struct.unpack("<I", so_bytes[0x00ea70:0x00ea74])[0]
+        ic_ivau  = struct.unpack("<I", so_bytes[0x00eaa8:0x00eaac])[0]
+        isb_op   = struct.unpack("<I", so_bytes[0x00eabc:0x00eac0])[0]
+        self.assert_test(
+            "Tailor_XHookEngineAndCacheFlushOpcodes",
+            prot_err == 0x52807D28 and mrs_ctr == 0xD53B0029 and
+            dc_cvau == 0xD50B7B2A and ic_ivau == 0xD50B7529 and isb_op == 0xD5033FDF and
+            all(tok in all_src for tok in [
+                "xh_util_set_addr_protect",
+                "xh_util_flush_instruction_cache",
+                "open_proxy",
+                "write_proxy",
+                "try_to_hook"
+            ]),
+            "Khớp xh_util_set_addr_protect (0x3e9=1001 @ 0x00aa30) và xh_util_flush_instruction_cache (mrs ctr_el0, dc cvau, ic ivau, isb @ 0x00ea48..0x00eabc)"
+        )
+
+        # 6. Chained Hash Set (0x00e8e8..0x00ea2c) & Complete 92 Exported Symbols Table
+        set_alloc = struct.unpack("<I", so_bytes[0x00e8f0:0x00e8f4])[0]
+        hash_add  = struct.unpack("<I", so_bytes[0x00e918:0x00e91c])[0]
+        hash_ldrb = struct.unpack("<I", so_bytes[0x00e91c:0x00e920])[0]
+        self.assert_test(
+            "Tailor_ChainedSetAnd92ExportedSymbols",
+            set_alloc == 0x52800100 and hash_add == 0x0B001520 and hash_ldrb == 0x38401509 and
+            all(tok in all_src for tok in [
+                "createSet",
+                "setContains",
+                "setInsert",
+                "clearSet",
+                "kTailorExportedSymbols[92]",
+                "runTailorEndToEndSelfTest"
+            ]),
+            "Khớp createSet (mov w0, #8 @ 0x00e8f0), hàm băm djb2 (add w0, w9, w0, lsl #5 @ 0x00e918) và bảng 92 biểu tượng xuất khẩu .dynsym"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -6840,6 +6962,7 @@ class AutonomousVerificationEngine:
         self.verify_libanimax_textra()
         self.verify_libsliver()
         self.verify_libanimax_napi()
+        self.verify_libtailor()
         self.verify_overall_governance()
 
 

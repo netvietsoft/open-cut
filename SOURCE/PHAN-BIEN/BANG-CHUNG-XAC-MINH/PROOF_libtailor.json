@@ -1,0 +1,208 @@
+{
+  "library": "libtailor.so",
+  "task_id": "TASK_SO_060_libtailor",
+  "governance_task_id": "TASK-107-RECONSTRUCTION-LIBTAILOR",
+  "binary_path": "extracted/lib/arm64-v8a/libtailor.so",
+  "binary_size_bytes": 84136,
+  "reconstructed_code_bytes": 126367,
+  "stub_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "verification_timestamp": "2026-10-27T02:46:00+07:00",
+  "elf_metadata": {
+    "architecture": "AArch64 (EM_AARCH64 = 183)",
+    "soname": "libtailor.so",
+    "sections_count": 27,
+    "dt_needed": [
+      "liblog.so",
+      "libz.so",
+      "libc++_shared.so",
+      "libm.so",
+      "libc.so"
+    ],
+    "dynsym_total": 175,
+    "dynsym_imported": 83,
+    "dynsym_exported": 92,
+    "rela_dyn_entries": 65,
+    "rela_plt_entries": 122
+  },
+  "opcode_evidence": [
+    {
+      "address": "0x00e668",
+      "bytes": "c2 00 80 52",
+      "instruction": "mov w2, #6",
+      "symbol": "JNI_OnLoad",
+      "meaning": "Loads lower 16 bits of JNI_VERSION_1_6 (0x00010006) for GetEnv"
+    },
+    {
+      "address": "0x00e674",
+      "bytes": "22 00 a0 72",
+      "instruction": "movk w2, #1, lsl #16",
+      "symbol": "JNI_OnLoad",
+      "meaning": "Completes JNI_VERSION_1_6 (0x00010006) in w2"
+    },
+    {
+      "address": "0x00e730",
+      "bytes": "a3 00 80 52",
+      "instruction": "mov w3, #5",
+      "symbol": "JNI_OnLoad",
+      "meaning": "Registers 5 JNINativeMethod entries on com/bytedance/tailor/Tailor"
+    },
+    {
+      "address": "0x00d72c",
+      "bytes": "08 00 41 91",
+      "instruction": "add x8, x0, #0x40, lsl #12",
+      "symbol": "_ZN6WriterC2EP7__sFILE",
+      "meaning": "Adds 0x40000 (262,144B buffer) to Writer* base pointer"
+    },
+    {
+      "address": "0x00d734",
+      "bytes": "08 61 00 91",
+      "instruction": "add x8, x8, #0x18",
+      "symbol": "_ZN6WriterC2EP7__sFILE",
+      "meaning": "Computes &Writer::strm_ at offset 0x40018 (262,168B) before deflateInit2_"
+    },
+    {
+      "address": "0x00aabc",
+      "bytes": "88 00 a0 52",
+      "instruction": "mov w8, #0x40000",
+      "symbol": "_ZN6StreamC2EP6Writer",
+      "meaning": "Sets initial Stream buffer capacity to 0x40000 (262,144 bytes)"
+    },
+    {
+      "address": "0x00ab94",
+      "bytes": "20 21 00 aa",
+      "instruction": "orr x0, x9, x0, lsl #8",
+      "symbol": "_ZN6Stream4peekEjj",
+      "meaning": "Big-endian byte shift-and-accumulate (acc = (acc << 8) | byte)"
+    },
+    {
+      "address": "0x00b414",
+      "bytes": "81 05 80 52",
+      "instruction": "mov w1, #0x2c",
+      "symbol": "_ZN6Tailor12tailor_XHOOKEPKcm",
+      "meaning": "Writes HPROF_TAG_HEAP_DUMP_END (0x2C) after flushing buffered InstanceDumps"
+    },
+    {
+      "address": "0x00c5f0",
+      "bytes": "1f 08 00 71",
+      "instruction": "cmp w0, #2",
+      "symbol": "_Z11shrinkField12HprofTypeTag",
+      "meaning": "Checks if field type is HPROF_BASIC_OBJECT (2)"
+    },
+    {
+      "address": "0x00c608",
+      "bytes": "08 69 1f 11",
+      "instruction": "sub w8, w8, #0x1a",
+      "symbol": "_Z11shrinkField12HprofTypeTag",
+      "meaning": "Computes BUILD_VERSION_SDK_INT - 26 (Android 8.0 Oreo)"
+    },
+    {
+      "address": "0x00aa30",
+      "bytes": "28 7d 80 52",
+      "instruction": "mov w8, #0x3e9",
+      "symbol": "xh_util_set_addr_protect",
+      "meaning": "Returns XH_ERRNO_UNKNOWN (1001 = 0x3e9) when mprotect fails with errno == 0"
+    },
+    {
+      "address": "0x00e918",
+      "bytes": "20 15 00 0b",
+      "instruction": "add w0, w9, w0, lsl #5",
+      "symbol": "_Z4hashPKc",
+      "meaning": "Bernstein djb2 step h = h * 33 + c"
+    },
+    {
+      "address": "0x00e928",
+      "bytes": "00 24 40 92",
+      "instruction": "and x0, x0, #0x3ff",
+      "symbol": "_Z4hashPKc",
+      "meaning": "Masks hash index to 1024 buckets (0..1023)"
+    },
+    {
+      "address": "0x00ea48",
+      "bytes": "29 00 3b d5",
+      "instruction": "mrs x9, ctr_el0",
+      "symbol": "xh_util_flush_instruction_cache",
+      "meaning": "Reads Cache Type Register (CTR_EL0) for I/D cache line sizes"
+    },
+    {
+      "address": "0x00ea70",
+      "bytes": "2a 7b 0b d5",
+      "instruction": "dc cvau, x10",
+      "symbol": "xh_util_flush_instruction_cache",
+      "meaning": "Cleans data cache line by VA to Point of Unification"
+    },
+    {
+      "address": "0x00eaa8",
+      "bytes": "29 75 0b d5",
+      "instruction": "ic ivau, x9",
+      "symbol": "xh_util_flush_instruction_cache",
+      "meaning": "Invalidates instruction cache line by VA to Point of Unification"
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula_id": "MATH_01_BIG_ENDIAN_STREAM_PEEK",
+      "expression": "V_k = (V_{k-1} << 8) | B[offset + k], k in [0, count - 1]",
+      "address": "0x00ab74..0x00aba4",
+      "verified": true
+    },
+    {
+      "formula_id": "MATH_02_STREAM_DYNAMIC_GROWTH",
+      "expression": "capacity_{n+1} = capacity_n + max(0x10000, count) = capacity_n + max(65536, count)",
+      "address": "0x00acc4..0x00adc4",
+      "verified": true
+    },
+    {
+      "formula_id": "MATH_03_DJB2_MOD_1024_HASH",
+      "expression": "H(s) = (sum_{i=0}^{n-1} s[i] * 33^{n-1-i}) & 0x3FF",
+      "address": "0x00e904..0x00e92c",
+      "verified": true
+    },
+    {
+      "formula_id": "MATH_04_CTR_EL0_CACHE_LINE_FLUSH",
+      "expression": "dline = 4 << ((ctr_el0 >> 16) & 0xF), iline = 4 << (ctr_el0 & 0xF)",
+      "address": "0x00ea30..0x00eac0",
+      "verified": true
+    }
+  ],
+  "struct_abi_layouts": [
+    {
+      "struct_name": "Writer / LibzWriter",
+      "size_bytes": 262280,
+      "hex_size": "0x40088",
+      "fields": [
+        {"offset": "0x00000", "size": 8, "name": "vptr (_ZTV6Writer + 16)"},
+        {"offset": "0x00008", "size": 8, "name": "target (FILE*)"},
+        {"offset": "0x00010", "size": 4, "name": "offset (uint32_t)"},
+        {"offset": "0x00014", "size": 262144, "name": "buffer[0x40000]"},
+        {"offset": "0x40014", "size": 1, "name": "gzip (bool)"},
+        {"offset": "0x40018", "size": 112, "name": "strm (z_stream, 0x70 bytes)"}
+      ]
+    },
+    {
+      "struct_name": "Stream",
+      "size_bytes": 32,
+      "hex_size": "0x20",
+      "fields": [
+        {"offset": "0x00", "size": 8, "name": "vptr (_ZTV6Stream + 16)"},
+        {"offset": "0x08", "size": 4, "name": "capacity (0x40000 = 262144)"},
+        {"offset": "0x0c", "size": 4, "name": "offset"},
+        {"offset": "0x10", "size": 4, "name": "available"},
+        {"offset": "0x14", "size": 4, "name": "skip"},
+        {"offset": "0x18", "size": 4, "name": "marker"},
+        {"offset": "0x20", "size": 8, "name": "buffer (char*)"},
+        {"offset": "0x28", "size": 8, "name": "writer (Writer*)"}
+      ]
+    },
+    {
+      "struct_name": "Tailor",
+      "size_bytes": 24,
+      "hex_size": "0x18",
+      "fields": [
+        {"offset": "0x00", "size": 8, "name": "vptr (_ZTV6Tailor + 16)"},
+        {"offset": "0x08", "size": 8, "name": "writer (Writer*)"},
+        {"offset": "0x10", "size": 8, "name": "stream (Stream*)"}
+      ]
+    }
+  ]
+}

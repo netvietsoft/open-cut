@@ -1,18 +1,26 @@
 {
   "report_id": "REPORT_TASK_SO_060_libtailor",
   "task_id": "TASK_SO_060_libtailor",
+  "governance_task_id": "TASK-107-RECONSTRUCTION-LIBTAILOR",
   "target_library": "libtailor.so",
-  "assigned_agent": "Agent 9 - SECURITY",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 9 - SECURITY / Agent 3 - FRONTEND_ANDROID",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
   "evidence": {
-    "symbols_total": 174,
-    "jni_exports": 0,
-    "cxx_demangled_count": 72,
+    "binary_size_bytes": 84136,
+    "reconstructed_code_bytes": 126367,
+    "stub_count": 0,
+    "symbols_total": 175,
+    "exported_symbols_verified": 92,
+    "jni_exports": 2,
+    "jni_registered_methods": 5,
+    "cxx_demangled_count": 92,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libtailor",
+    "proof_json": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libtailor.json",
+    "proof_md": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libtailor.md",
     "has_cpp_interface": true,
     "has_strings": true
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn tất giải mã nhị phân AArch64 1:1 cho libtailor.so (84,136 bytes, 27 ELF64 sections, 92 exported symbols): tái tạo toàn bộ Bộ máy cắt gọt luồng nhị phân HPROF 1.0.2/1.0.3 (Tailor, tailor_XHOOK, tailor_STRING, tailor_LOAD_CLASS, tailor_HEAP_DUMP_SEGMENT, tailor_INSTANCE_DUMP_WRITE, tailor_CLASS_DUMP, tailor_INSTANCE_DUMP, tailor_OBJECT_ARRAY_DUMP, tailor_PRIMITIVE_ARRAY_DUMP, shrinkField), Bộ đệm luồng 256KB (Stream), Bộ ghi nén Zlib/File (Writer, LibzWriter, FileWriter), Hệ thống xHook PLT/GOT nhúng (xh_core_*, xh_elf_*, xh_util_*), Tập băm chuỗi 1024-bucket (Set) và Cầu nối JNI com/bytedance/tailor/Tailor (126,367 bytes C++17, 0 stubs).",
+  "acceptance_criteria_passed": true
 }

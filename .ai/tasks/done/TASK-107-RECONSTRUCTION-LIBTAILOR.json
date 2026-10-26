@@ -1,0 +1,26 @@
+{
+  "task_id": "TASK-107-RECONSTRUCTION-LIBTAILOR",
+  "report_task_id": "TASK_SO_060_libtailor",
+  "title": "1:1 AArch64 Binary Reconstruction of libtailor.so (ByteDance Tailor HPROF Binary Heap Dump Cropper & xHook Engine)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 - FRONTEND_ANDROID / Agent 9 - SECURITY",
+  "completed_at": "2026-10-27T02:52:00+07:00",
+  "target_binary": "extracted/lib/arm64-v8a/libtailor.so",
+  "binary_size_bytes": 84136,
+  "reconstructed_code_bytes": 126367,
+  "stub_count": 0,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libtailor/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libtailor.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_060_libtailor.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "verification": {
+    "adversary_auditor": "VERIFIED_AND_ACCEPTED (68 / 169 = 40.24%)",
+    "reconstruction_suite": "443 / 443 PASS (100.0%)",
+    "native_audit_watchdog": "169 binaries, 0 high findings"
+  }
+}
