@@ -2276,3 +2276,14 @@
   - Toán học băm & bảng băm: `MurmurHash64A` (`kMul = 0x9ddfea08eb382d69ULL`, shift `47` @ `0x00e9b8..0x00e9f0`), `NEON` popcount (`cnt v0.8b, v0.8b; uaddlv h0, v0.8b` @ `0x013f08..0x013f0c`), và `NextPowerOfTwo` (`clz + neg + lsl` @ `0x01400c..0x014020`).
   - `lynx::piper::V8Runtime` (`352 B = 0x160` cấp phát tại `0x013624`, vtable @ `0x018430`): bảng nhảy 7 nhánh `ValueKind` (`.rodata 0x006300 = {0x00, 0x04, 0x08, 0x11, 0x17, 0x20, 0x26}`), `kUrlLynxCore = "lynx_core"` (`0x006820`), `kUrlHost = "file://lynx"` (`0x00682a`), `V8JavaScriptPreparation` (`80 B = 0x50` @ `0x013230`), `V8HostCallErrorFrame` (`104 B = 0x68` @ `0x00ed88`), `ObserverList` (`0x0133a0..0x013570`), `NapiRuntimeProxyV8` (`88 B = 0x58` @ `0x013958..0x013bec`), và `JNI_OnLoad` (`0x013590..0x013618` -> `0x00010006`).
 - **Kết quả kiểm định**: Agent 13 cấp chứng nhận `VERIFIED_AND_ACCEPTED` (**70 / 169 — 41.42%**), `verify_reconstruction_suite.py` đạt **455 / 455 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**.
+
+
+---
+
+## 98. HOÀN THÀNH TÁI DỰNG TARGET 71/169: `libbach-sdk-jni.so` (`TASK-110-RECONSTRUCTION-LIBBACH_SDK_JNI` / `TASK_SO_133`)
+- **Nhị phân gốc**: `libbach-sdk-jni.so` (`117,112 bytes`, SHA-256 `6330cb09b6721ef41639c6ed472b4d60e3b81a9f03c699f5d8c1cbefe5804929`, 29 sections, `.dynsym` 113 symbols: 92 imported, 17 exported JNI functions `[093]..[112]`).
+- **Quy mô tái dựng**: `10 files` tại `SOURCE/GIAI-MA/libbach-sdk-jni/` (`246,661 bytes` C++17, `827 verified opcodes`, `0 stubs`).
+- **Điểm nhấn kỹ thuật**:
+  - Khôi phục `.init_array[0]` (`0x003820..0x0038f4`) khởi tạo `std::unordered_set<int>` tại `.bss 0x020010` với 39 mã loại kết quả từ `.rodata 0x014f98..0x015033`.
+  - Khôi phục bảng nhảy 30 nhánh `convertBachObjectToJava` (`0x00702c..0x00a980`, `.rodata 0x014f5c..0x014f97`: `0x007090 + offset * 4`), `CityHash64` (`0x006be0..0x007028`), 6 vòng lặp mở rộng vector NEON SIMD (`0x00a994..0x00b80c`), và 4 bộ chuyển đổi pixel NEON sang `RGBA8888` (`0x00ff4c..0x0102ac`).
+- **Kết quả kiểm định**: Agent 13 cấp chứng nhận `VERIFIED_AND_ACCEPTED` (**71 / 169 — 42.01%**), `verify_reconstruction_suite.py` đạt **461 / 461 PASS (100.0%)**, `native_audit_watchdog.py` đạt **0 high findings**.

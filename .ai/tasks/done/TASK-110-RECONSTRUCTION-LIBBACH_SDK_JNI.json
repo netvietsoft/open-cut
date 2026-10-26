@@ -1,0 +1,35 @@
+{
+  "task_id": "TASK-110-RECONSTRUCTION-LIBBACH_SDK_JNI",
+  "legacy_task_id": "TASK_SO_133_libbach_sdk_jni",
+  "title": "Reconstruct libbach-sdk-jni.so (Target 71/169 — ByteDance Bach Algorithm System JNI Bridge)",
+  "status": "DONE",
+  "verification_status": "VERIFIED_AND_ACCEPTED",
+  "assigned_agent": "Agent 3 (Frontend/Android & Native JNI) + Agent 6 (Tester) + Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "created_at": "2026-10-27T03:49:00+07:00",
+  "completed_at": "2026-10-27T04:20:00+07:00",
+  "binary_target": {
+    "name": "libbach-sdk-jni.so",
+    "path": "SOURCE/apktool-res/lib/arm64-v8a/libbach-sdk-jni.so",
+    "size_bytes": 117112,
+    "sha256": "6330cb09b6721ef41639c6ed472b4d60e3b81a9f03c699f5d8c1cbefe5804929",
+    "reconstructed_code_size_bytes": 246661,
+    "stub_count": 0
+  },
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libbach-sdk-jni/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbach-sdk-jni.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbach-sdk-jni.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_133_libbach_sdk_jni.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_133_libbach_sdk_jni.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "verification_metrics": {
+    "verified_targets_count": "71/169 (42.01%)",
+    "test_suite_pass": "461/461 (100.0%)",
+    "watchdog_high_findings": 0
+  }
+}

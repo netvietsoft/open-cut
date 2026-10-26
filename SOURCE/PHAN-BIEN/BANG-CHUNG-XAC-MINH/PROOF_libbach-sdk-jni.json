@@ -1,0 +1,126 @@
+{
+  "library": "libbach-sdk-jni.so",
+  "task_id": "TASK_SO_133_libbach_sdk_jni",
+  "governance_task_id": "TASK-110-RECONSTRUCTION-LIBBACH_SDK_JNI",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 117112,
+  "reconstructed_code_size_bytes": 246661,
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "offset": "0x003880",
+      "hex_bytes": "08 f0 a7 52 f6 03 00 91 e2 03 00 ad 00 e4 00 6f e1 0b 80 3d 60 02 00 ad 68 22 00 b9",
+      "disassembly": "mov w8, #0x3f800000; mov x22, sp; ... str w8, [x19, #0x20] (.init_array[0]: initializes .bss 0x020010 std::unordered_set<int> max_load_factor = 1.0f)",
+      "reconstructed_symbol": "com::bytedance::bach_sdk::GetGlobalDirectBufferResultTypes"
+    },
+    {
+      "offset": "0x00389c",
+      "hex_bytes": "c1 02 15 8b e0 03 13 aa e2 03 01 aa 50 22 00 94 b5 12 00 91 bf 72 02 f1 41 ff ff 54",
+      "disassembly": "add x1, x22, x21; mov x0, x19; mov x2, x1; bl 0x00c1e8; add x21, x21, #4; cmp x21, #0x9c; b.ne 0x00389c (inserts 39 int32_t result types = 156 bytes from .rodata 0x014f98)",
+      "reconstructed_symbol": "com::bytedance::bach_sdk::IsDirectBufferResultType"
+    },
+    {
+      "offset": "0x0039c4",
+      "hex_bytes": "ff 43 02 d1 fa 67 04 a9 f8 5f 05 a9 f6 57 06 a9 f4 4f 07 a9 fd 7b 08 a9",
+      "disassembly": "sub sp, sp, #0x90; stp x26, x25, [sp, #0x40]; ... (Exported [095] Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeCreate)",
+      "reconstructed_symbol": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeCreate"
+    },
+    {
+      "offset": "0x003bfc",
+      "hex_bytes": "ff 03 01 d1 f4 4f 02 a9 fd 7b 03 a9 fd c3 00 91",
+      "disassembly": "sub sp, sp, #0x40; stp x20, x19, [sp, #0x20]; stp x29, x30, [sp, #0x30] (Exported [109] Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeInitGraph)",
+      "reconstructed_symbol": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeInitGraph"
+    },
+    {
+      "offset": "0x003c8c",
+      "hex_bytes": "ff 43 01 d1 f5 13 00 f9 f4 4f 03 a9 fd 7b 04 a9",
+      "disassembly": "sub sp, sp, #0x50; str x21, [sp, #0x20]; stp x20, x19, [sp, #0x30] (Exported [093] Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetEnable)",
+      "reconstructed_symbol": "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetEnable"
+    },
+    {
+      "offset": "0x006f50",
+      "hex_bytes": "2b ad 85 d2 0b 67 bd f2 4a 01 0c aa 0b 41 dd f2 48 01 08 ca eb bb f3 f2",
+      "disassembly": "mov x11, #0x2d69; movk x11, #0xeb38, lsl #16; ... movk x11, #0xea08, lsl #32; ... movk x11, #0x9ddf, lsl #48 (CityHash64 HashLen16 multiplier kMul = 0x9ddfea08eb382d69ULL)",
+      "reconstructed_symbol": "com::bytedance::bach_sdk::BachCityHash64::HashLen16"
+    },
+    {
+      "offset": "0x006fd4",
+      "hex_bytes": "e0 09 88 d2 00 f2 a5 f2 60 47 cd f2 20 5c f3 f2 21 02 00 b4",
+      "disassembly": "mov x0, #0x404f; movk x0, #0x2f90, lsl #16; movk x0, #0x6a3b, lsl #32; movk x0, #0x9ae1, lsl #48; cbz x1, #0x7028 (CityHash64 k2 = 0x9ae16a3b2f90404fULL returned for len == 0)",
+      "reconstructed_symbol": "com::bytedance::bach_sdk::BachCityHash64::HashLen0to16"
+    },
+    {
+      "offset": "0x007060",
+      "hex_bytes": "28 80 40 b9 08 05 00 51 1f 75 00 71 88 42 01 54 69 00 00 b0 29 71 3d 91 ca 00 00 10 2b 79 68 78 4a 09 0b 8b",
+      "disassembly": "ldr w8, [x1, #0x80]; sub w8, w8, #1; cmp w8, #0x1d; b.hi #0x98bc; adrp x9, #0x14000; add x9, x9, #0xf5c; adr x10, #0x7090; ldrh w11, [x9, x8, lsl #1]; add x10, x10, x11, lsl #2 (30-way jump table in convertBachObjectToJava)",
+      "reconstructed_symbol": "com::bytedance::bach_sdk::ConvertBachObjectToJava"
+    },
+    {
+      "offset": "0x014f5c",
+      "hex_bytes": "00 00 04 06 58 04 a8 05 bd 02 8f 07 5b 08 bd 05 5d 09 f5 02 5a 09 02 02 d5 02 3b 08 38 01 e8 04",
+      "disassembly": ".rodata 30-entry uint16_t jump offset table (0x014f5c..0x014f97) for convertBachObjectToJava (target_va = 0x007090 + offset * 4)",
+      "reconstructed_symbol": "com::bytedance::bach_sdk::kConvertBachObjectJumpOffsets"
+    },
+    {
+      "offset": "0x014f98",
+      "hex_bytes": "30 00 00 00 73 00 00 00 80 00 00 00 0d 00 00 00 10 00 00 00 0b 00 00 00 22 00 00 00 08 00 00 00",
+      "disassembly": ".rodata 39-entry int32_t direct-buffer result type array (0x014f98..0x015033: 0x30, 0x73, 0x80, 0x0d, 0x10, 0x0b, 0x22, 0x08, ...)",
+      "reconstructed_symbol": "com::bytedance::bach_sdk::kBachDirectBufferResultTypes"
+    },
+    {
+      "offset": "0x015a01",
+      "hex_bytes": "23 13 1b 0b",
+      "disassembly": ".rodata pixel format jump table offsets at 0x015a01..0x015a04 used by BachBitmapHandle_nativeGet",
+      "reconstructed_symbol": "com::bytedance::bach_sdk::ExtractBachBitmapHandleToRGBA8888"
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "theorem": "30-Way BachObject Jump Table Address Formula (`0x007060..0x00708c`, `.rodata 0x014f5c..0x014f97`)",
+      "formula": "idx = (uint32_t)(type - 1); if (idx > 29) goto 0x0098bc; target_va = 0x007090 + (uint64_t)uint16_le(0x014f5c + 2 * idx) * 4",
+      "verification": "Matches `sub w8, w8, #1; cmp w8, #0x1d; b.hi #0x98bc; adr x10, #0x7090; ldrh w11, [x9, x8, lsl #1]; add x10, x10, x11, lsl #2; br x10` at `0x007064..0x00708c`."
+    },
+    {
+      "theorem": "CityHash64 Constants & HashLen16 Reduction (`0x006be0..0x007028`)",
+      "formula": "k0 = 0xc3a5c85c97cb3127ULL, k1 = 0xb492b66fbe98f273ULL, k2 = 0x9ae16a3b2f90404fULL, k3 = 0xc949d7c7509e6557ULL, kMul = 0x9ddfea08eb382d69ULL; HashLen16(u, v) = ShiftMix((v ^ ShiftMix((u ^ v) * kMul)) * kMul) * kMul",
+      "verification": "Matches exact `mov/movk` 64-bit immediates and `eor / lsr #47 / mul` instructions across `0x006be0..0x007028`."
+    },
+    {
+      "theorem": "Modular Reciprocal Multipliers for 36-Byte (`Matrix3x3f`), 12-Byte (`Vector3f`), and 136-Byte (`BachObject`) Vectors",
+      "formula": "9 * 0x38e38e38e38e38e3 == 2^65 + 1; 3 * 0xaaaaaaaaaaaaaaaab == 2^65 + 1; 17 * 0xf0f0f0f0f0f0f0f1 == 2^68 + 1",
+      "verification": "Verified for all N in 0..128 in `VerifyReciprocalDivisionMultipliers()`."
+    },
+    {
+      "theorem": "NEON SIMD Widening & Interleaved Pixel Format Conversion (`0x00a994..0x00b80c` & `0x00ff4c..0x0102ac`)",
+      "formula": "ushll/sshll/fcvtl widen 4 elements per loop iteration (`uint16/int16/uint32/int32 -> int64`, `float -> double`); ld3/ld4/st4 convert GRAY8, RGB888, BGR888, and BGRA8888 to RGBA8888",
+      "verification": "Verified in `VerifyAll30ConvertBachObjectCases()` and `VerifyAll4NeonPixelFormatConverters()`."
+    }
+  ],
+  "struct_abi_layouts": [
+    {
+      "struct_name": "Bach::BachObject",
+      "total_size_bytes": 136,
+      "binary_reference": "0x00a46c (stride 0x88 = 136 bytes in vector<BachObject>, type tag at +0x80 @ 0x007060)"
+    },
+    {
+      "struct_name": "Bach::BachBuffer",
+      "total_size_bytes": 56,
+      "binary_reference": "0x00de84 (mov w0, #0x38; bl operator new; vtable at .data.rel.ro 0x01f940)"
+    },
+    {
+      "struct_name": "Bach::BachMap",
+      "total_size_bytes": 56,
+      "binary_reference": "0x00df40 (mov w0, #0x38; bl operator new; vtable at .data.rel.ro 0x01f998)"
+    },
+    {
+      "struct_name": "Bach::BachImageBuffer (Input Header)",
+      "total_size_bytes": 56,
+      "binary_reference": "0x0053e0 (mov w0, #0x38; bl operator new; vtable at .data.rel.ro 0x01f8c0)"
+    },
+    {
+      "struct_name": "Bach::NativeListener",
+      "total_size_bytes": 32,
+      "binary_reference": "0x00f394 (mov w0, #0x20; bl operator new; vtable at .data.rel.ro 0x01f970)"
+    }
+  ]
+}

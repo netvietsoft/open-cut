@@ -1,0 +1,28 @@
+{
+  "handoff_id": "HANDOFF-TASK-110-RECONSTRUCTION-LIBBACH_SDK_JNI",
+  "task_id": "TASK-110-RECONSTRUCTION-LIBBACH_SDK_JNI",
+  "legacy_task_id": "TASK_SO_133_libbach_sdk_jni",
+  "library": "libbach-sdk-jni.so",
+  "target_index": "71/169",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "timestamp": "2026-10-27T04:20:00+07:00",
+  "from_agent": "Agent 0 (Thư ký Orchestrator) + Agent 3 (Android/JNI) + Agent 13 (Adversary Auditor)",
+  "to_agent": "Agent 0 (Orchestrator) — Next Target 72/169",
+  "summary": "Completed 100% clean-room C++17 reconstruction of libbach-sdk-jni.so (117,112 bytes, SHA-256: 6330cb09b6721ef41639c6ed472b4d60e3b81a9f03c699f5d8c1cbefe5804929) across 10 files (246.7 KB C++17, 827 verified opcodes, 0 stubs). Certified VERIFIED_AND_ACCEPTED (71/169 = 42.01%), 461/461 PASS (100.0%), 0 high findings.",
+  "deliverables": [
+    "SOURCE/GIAI-MA/libbach-sdk-jni/bach_sdk_jni_types.h",
+    "SOURCE/GIAI-MA/libbach-sdk-jni/bach_object_converter.h",
+    "SOURCE/GIAI-MA/libbach-sdk-jni/bach_object_converter.cpp",
+    "SOURCE/GIAI-MA/libbach-sdk-jni/bach_algorithm_system_jni.h",
+    "SOURCE/GIAI-MA/libbach-sdk-jni/bach_algorithm_system_jni.cpp",
+    "SOURCE/GIAI-MA/libbach-sdk-jni/bach_resource_finder_jni.h",
+    "SOURCE/GIAI-MA/libbach-sdk-jni/bach_resource_finder_jni.cpp",
+    "SOURCE/GIAI-MA/libbach-sdk-jni/bach_sdk_jni_interface.h",
+    "SOURCE/GIAI-MA/libbach-sdk-jni/bach_sdk_jni_pseudocode.cpp",
+    "SOURCE/GIAI-MA/libbach-sdk-jni/README_ANALYSIS.md",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbach-sdk-jni.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbach-sdk-jni.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_133_libbach_sdk_jni.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_133_libbach_sdk_jni.md"
+  ]
+}

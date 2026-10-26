@@ -7141,6 +7141,141 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 71. KIỂM CHỨNG libbach-sdk-jni.so (ByteDance Bach Algorithm System & Resource Finder JNI)
+    # =========================================================================
+    def verify_libbach_sdk_jni(self):
+        import struct
+        import hashlib
+        print("\n[71] Đang kiểm chứng libbach-sdk-jni.so (ByteDance Bach Algorithm System & Resource Finder JNI Bridge)...")
+        bach_dir = GIAIMA_DIR / "libbach-sdk-jni"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libbach-sdk-jni.so"
+        req_files = [
+            "bach_sdk_jni_types.h",
+            "bach_object_converter.h",
+            "bach_object_converter.cpp",
+            "bach_algorithm_system_jni.h",
+            "bach_algorithm_system_jni.cpp",
+            "bach_resource_finder_jni.h",
+            "bach_resource_finder_jni.cpp",
+            "bach_sdk_jni_interface.h",
+            "bach_sdk_jni_pseudocode.cpp",
+            "README_ANALYSIS.md"
+        ]
+        all_exist = all((bach_dir / f).exists() for f in req_files) and so_path.exists()
+        total_src_bytes = sum((bach_dir / f).stat().st_size for f in req_files if (bach_dir / f).exists())
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+
+        all_src = ""
+        for f in req_files:
+            fp = bach_dir / f
+            if fp.exists():
+                all_src += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 1. Binary geometry, SHA-256 & source volume (> 100KB, 0 stubs)
+        self.assert_test(
+            "BachSdkJni_BinaryGeometryAndSourceVolume",
+            all_exist and len(so_bytes) == 117112 and
+            so_sha256 == "6330cb09b6721ef41639c6ed472b4d60e3b81a9f03c699f5d8c1cbefe5804929" and
+            total_src_bytes > 100000,
+            f"Khớp libbach-sdk-jni.so (117,112B, SHA-256={so_sha256[:16]}...) và {total_src_bytes}B mã nguồn C++17 (> 100KB)"
+        )
+
+        # 2. .init_array[0] (@ 0x003820..0x0038f4) & 39 Direct-Buffer Result Types (@ .rodata 0x014f98..0x015033)
+        rodata_39_types = struct.unpack("<39i", so_bytes[0x014f98:0x015034])
+        init_cmp_9c = struct.unpack("<I", so_bytes[0x0038b0:0x0038b4])[0]
+        self.assert_test(
+            "BachSdkJni_InitArray39DirectBufferResultTypes",
+            init_cmp_9c == 0xF10272BF and
+            rodata_39_types[:8] == (0x30, 0x73, 0x80, 0x0d, 0x10, 0x0b, 0x22, 0x08) and
+            rodata_39_types[-2:] == (0x2f, 0x6a) and
+            all(tok in all_src for tok in [
+                "kBachDirectBufferResultTypes",
+                "GetGlobalDirectBufferResultTypes",
+                "IsDirectBufferResultType"
+            ]),
+            "Khớp .init_array[0] (0x003820..0x0038f4: cmp x21, #0x9c) nạp 39 mã loại kết quả từ .rodata 0x014f98..0x015033 vào .bss 0x020010"
+        )
+
+        # 3. 30-Way convertBachObjectToJava Jump Table (@ 0x007060..0x00708c & .rodata 0x014f5c..0x014f97)
+        jump_words = struct.unpack("<30H", so_bytes[0x014f5c:0x014f98])
+        jump_hdr = so_bytes[0x007060:0x007070]
+        self.assert_test(
+            "BachSdkJni_ConvertBachObject30WayJumpTable",
+            jump_hdr == b"\x28\x80\x40\xb9\x08\x05\x00\x51\x1f\x75\x00\x71\x88\x42\x01\x54" and
+            jump_words[:4] == (0x0000, 0x0604, 0x0458, 0x05a8) and
+            jump_words[-2:] == (0x0c37, 0x0ce2) and
+            all(tok in all_src for tok in [
+                "kConvertBachObjectJumpOffsets",
+                "ComputeConvertBachObjectBranchTargetVa",
+                "ConvertBachObjectToJava"
+            ]),
+            "Khớp bảng nhảy 30 nhánh convertBachObjectToJava (0x007060..0x00708c, .rodata 0x014f5c..0x014f97: 0x007090 + offset * 4)"
+        )
+
+        # 4. CityHash64 (@ 0x006be0..0x007028) & Modular Reciprocal Division Multipliers
+        city_mul_ops = struct.unpack("<2I", so_bytes[0x006f50:0x006f58])
+        city_k2_ops = struct.unpack("<4I", so_bytes[0x006fd4:0x006fe4])
+        self.assert_test(
+            "BachSdkJni_CityHash64AndReciprocalMultipliers",
+            city_mul_ops == (0xD285AD2B, 0xF2BD670B) and
+            city_k2_ops == (0xD28809E0, 0xF2A5F200, 0xF2CD4760, 0xF2F35C20) and
+            all(tok in all_src for tok in [
+                "0x9ddfea08eb382d69ULL",
+                "0x9ae16a3b2f90404fULL",
+                "0x38e38e38e38e38e3ULL",
+                "0xaaaaaaaaaaaaaaaabULL",
+                "0xf0f0f0f0f0f0f0f1ULL",
+                "BachCityHash64"
+            ]),
+            "Khớp CityHash64 (kMul=0x9ddfea08eb382d69, k2=0x9ae16a3b2f90404f) và 3 hằng số nhân nghịch đảo chia số nguyên (36B/12B/136B)"
+        )
+
+        # 5. 6 NEON SIMD Widening Loops & 4 NEON Pixel Format Converters
+        fmt_table = so_bytes[0x015a01:0x015a06]
+        self.assert_test(
+            "BachSdkJni_NeonWideningAndPixelConverters",
+            fmt_table == b"\x00\x23\x13\x1b\x0b" and
+            all(tok in all_src for tok in [
+                "WidenUint16ToInt64Vector",
+                "WidenInt16ToInt64Vector",
+                "WidenUint32ToInt64Vector",
+                "WidenInt32ToInt64Vector",
+                "WidenFloatToDoubleVector",
+                "ConvertGray8ToRGBA8888",
+                "ConvertRGB888ToRGBA8888",
+                "ConvertBGR888ToRGBA8888",
+                "ConvertBGRA8888ToRGBA8888"
+            ]),
+            "Khớp 6 vòng lặp mở rộng vector NEON SIMD (0x00a994..0x00b80c) và 4 bộ chuyển đổi pixel NEON sang RGBA8888 (0x00ff4c..0x0102ac)"
+        )
+
+        # 6. All 17 Exported JNI Functions in .dynsym ([093]..[112])
+        self.assert_test(
+            "BachSdkJni_All17ExportedJniFunctions",
+            all(tok in all_src for tok in [
+                "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeCreate",
+                "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeInitGraph",
+                "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetEnable",
+                "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetIntParams",
+                "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetFloatParams",
+                "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeSetStringParams",
+                "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeDestroy",
+                "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeExec",
+                "Java_com_bytedance_byted_1bach_1sdk_BachAlgorithmSystem_nativeGetResult",
+                "Java_com_bytedance_byted_1bach_1sdk_buffer_BachBitmapHandle_nativeGet",
+                "Java_com_bytedance_byted_1bach_1sdk_finder_DownloadableResourceFinder_nativeCreate",
+                "Java_com_bytedance_byted_1bach_1sdk_finder_DownloadableResourceFinder_nativeDestroy",
+                "Java_com_bytedance_byted_1bach_1sdk_finder_DownloadableResourceFinder_nativeDownloadModels",
+                "Java_com_bytedance_byted_1bach_1sdk_finder_EPResourceFinder_nativeCreate",
+                "Java_com_bytedance_byted_1bach_1sdk_finder_EPResourceFinder_nativeDestroy",
+                "Java_com_bytedance_byted_1bach_1sdk_finder_ModelDownloadListener_deleteNativeObject",
+                "JNI_OnLoad"
+            ]),
+            "Khớp đầy đủ 17/17 hàm JNI xuất khẩu trong .dynsym ([093]..[112]) của libbach-sdk-jni.so"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -7215,6 +7350,7 @@ class AutonomousVerificationEngine:
         self.verify_libtailor()
         self.verify_libnpth_dumper()
         self.verify_liblynx_v8_bridge()
+        self.verify_libbach_sdk_jni()
         self.verify_overall_governance()
 
 

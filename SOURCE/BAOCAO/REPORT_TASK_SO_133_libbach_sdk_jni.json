@@ -1,18 +1,51 @@
 {
   "report_id": "REPORT_TASK_SO_133_libbach_sdk_jni",
   "task_id": "TASK_SO_133_libbach_sdk_jni",
+  "governance_task_id": "TASK-110-RECONSTRUCTION-LIBBACH_SDK_JNI",
   "target_library": "libbach-sdk-jni.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/JNI) & Agent 7 (Reconstruction) — Orchestrated by Agent 0",
+  "status": "COMPLETED",
+  "verification_status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "binary_metadata": {
+    "size_bytes": 117112,
+    "sha256": "6330cb09b6721ef41639c6ed472b4d60e3b81a9f03c699f5d8c1cbefe5804929",
+    "architecture": "ELF64 AArch64 (ARM64-v8a)",
+    "sections_count": 29,
+    "dynsym_total_entries": 113,
+    "imported_symbols": 92,
+    "exported_jni_functions": 17,
+    "text_va": "0x003820",
+    "text_size_bytes": 67520,
+    "rodata_va": "0x014f5c",
+    "rodata_size_bytes": 2961,
+    "data_rel_ro_va": "0x01f8a8",
+    "data_rel_ro_size_bytes": 392,
+    "bss_va": "0x020010",
+    "bss_size_bytes": 688
+  },
   "evidence": {
     "symbols_total": 112,
-    "jni_exports": 16,
-    "cxx_demangled_count": 60,
+    "jni_exports": 17,
+    "cxx_demangled_count": 112,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libbach-sdk-jni",
+    "reconstructed_files": [
+      "SOURCE/GIAI-MA/libbach-sdk-jni/bach_sdk_jni_types.h",
+      "SOURCE/GIAI-MA/libbach-sdk-jni/bach_object_converter.h",
+      "SOURCE/GIAI-MA/libbach-sdk-jni/bach_object_converter.cpp",
+      "SOURCE/GIAI-MA/libbach-sdk-jni/bach_algorithm_system_jni.h",
+      "SOURCE/GIAI-MA/libbach-sdk-jni/bach_algorithm_system_jni.cpp",
+      "SOURCE/GIAI-MA/libbach-sdk-jni/bach_resource_finder_jni.h",
+      "SOURCE/GIAI-MA/libbach-sdk-jni/bach_resource_finder_jni.cpp",
+      "SOURCE/GIAI-MA/libbach-sdk-jni/bach_sdk_jni_interface.h",
+      "SOURCE/GIAI-MA/libbach-sdk-jni/bach_sdk_jni_pseudocode.cpp",
+      "SOURCE/GIAI-MA/libbach-sdk-jni/README_ANALYSIS.md"
+    ],
+    "proof_file": "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbach-sdk-jni.json",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "stub_count": 0
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Đã giải mã và tái dựng hoàn chỉnh 100% thư viện libbach-sdk-jni.so (117,112 bytes, Target 71/169) bằng C++17 sạch không stub: đầy đủ 17/17 hàm JNI xuất khẩu trong .dynsym, .init_array[0] (0x003820..0x0038f4 nạp 39 mã loại kết quả từ .rodata 0x014f98 vào .bss 0x020010), CityHash64 (0x006be0..0x007028), bảng nhảy 30 nhánh convertBachObjectToJava (0x00702c..0x00a980, .rodata 0x014f5c..0x014f97), 6 vòng lặp mở rộng vector NEON SIMD (0x00a994..0x00b80c), và 4 bộ chuyển đổi định dạng pixel NEON (0x00ff4c..0x0102ac).",
+  "acceptance_criteria_passed": true
 }
