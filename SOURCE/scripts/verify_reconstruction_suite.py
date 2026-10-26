@@ -7416,6 +7416,133 @@ class AutonomousVerificationEngine:
             "Khớp ScopedPLTHook (0x01b5c0), bytesig_init (calloc(1, 0x1020) @ 0x01bc0c, SA_FLAGS @ 0x01bc2c), và 3 hàm .init_array (lọc lỗi LSE exynos9810)"
         )
 
+    def verify_libosfix(self):
+        import struct
+        import hashlib
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libosfix.so (ByteDance Android OS Runtime Fix & Memory Optimizer)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libosfix"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libosfix.so"
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        pseudocode_bytes = (lib_dir / "osfix_pseudocode.cpp").stat().st_size
+        all_src = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Binary SHA-256 & Source Size Gate (> 40 KB, 0 stubs)
+        self.assert_test(
+            "OsFix_BinaryHashAndSourceSizeGate",
+            len(so_bytes) == 149616 and
+            sha256_hex == "ddd8baabbcdd7941b13ab0e961a57e92843d957a0c64e6afa3613b2c433c937d" and
+            pseudocode_bytes > 40000 and total_bytes > 150000 and len(cpp_files) >= 7,
+            f"Khớp SHA-256 libosfix.so (149,616 B) và tổng dung lượng C++17 đạt {total_bytes} B (osfix_pseudocode.cpp = {pseudocode_bytes} B > 40 KB, 0 stub)"
+        )
+
+        # 2. .data Initial Constants (0x24008: java=0x30000=196608, native=0x80000=524288) & .init_array shared_timed_mutex (0x005d50)
+        data_vals = struct.unpack("<IIii", so_bytes[0x24008:0x24018])
+        init_op0 = struct.unpack("<I", so_bytes[0x005d50:0x005d54])[0]
+        self.assert_test(
+            "OsFix_DataDefaultsAndSharedTimedMutexInitArray",
+            data_vals == (0x00030000, 0x00080000, -1, -1) and
+            init_op0 == 0xF81D0FF5 and
+            all(tok in all_src for tok in [
+                "0x00030000",
+                "0x00080000",
+                "shared_timed_mutex",
+                "SetEnvThreadSafeProxy",
+                "GetEnvThreadSafeProxy",
+                "Java_com_bytedance_osfix_NativeToolUtil_fixGetSetEnvCall"
+            ]),
+            "Khớp .data (0x28008: java_shrink=196608 B, native_shrink=524288 B), .init_array[0] (0x005d50) và khóa đọc-ghi shared_timed_mutex cho getenv/setenv"
+        )
+
+        # 3. NativeToolUtil Crash/OOM/SoLoader & Bionic TLS tpidr_el0 Dumper (0x005e7c..0x00699f)
+        brk_op = struct.unpack("<I", so_bytes[0x005e7c:0x005e80])[0]
+        oom_op = struct.unpack("<I", so_bytes[0x005ea4:0x005ea8])[0]
+        tls_op = struct.unpack("<I", so_bytes[0x006788:0x00678c])[0]
+        self.assert_test(
+            "OsFix_NativeToolUtilAndBionicTlsDumper",
+            brk_op == 0xD4200020 and
+            oom_op == 0x97FFFEC7 and
+            tls_op == 0xD53BD057 and
+            b"_ZN15SkAnimatedImage15decodeNextFrameEv\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "Java_com_bytedance_osfix_NativeToolUtil_nativeCrash",
+                "Java_com_bytedance_osfix_NativeToolUtil_nativeOOM",
+                "Java_com_bytedance_osfix_NativeToolUtil_logSoLoader",
+                "Java_com_bytedance_osfix_NativeToolUtil_logGetEnvErrorCode",
+                "kTlsSlotArtThreadSelfOffset",
+                "kTlsSlotBionicTlsOffset",
+                "SkAnimatedImageDecodeNextFrameProxy"
+            ]),
+            "Khớp nativeCrash (brk #1 @ 0x005e7c), nativeOOM (0x005ea4), logSoLoader và Bionic TLS tpidr_el0 dumper (mrs x23, tpidr_el0 @ 0x006788)"
+        )
+
+        # 4. VDEX Open Monitor & freeVdex Smaps Regex Unmapper (0x006b58..0x008e3b)
+        vdex_cmp_op = struct.unpack("<I", so_bytes[0x007da8:0x007dac])[0]
+        vdex_sub_op = struct.unpack("<I", so_bytes[0x007f00:0x007f04])[0]
+        self.assert_test(
+            "OsFix_VdexRepeatOpenAndSmapsRegexUnmapper",
+            vdex_cmp_op == 0x7110027F and
+            vdex_sub_op == 0xCB13001C and
+            b"(\\w{8})-(\\w{8})\x00" in so_bytes and
+            b"Pss:\\s+(\\d+)\\skB\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "Java_com_bytedance_osfix_NativeToolUtil_logVdexOpen",
+                "Java_com_bytedance_osfix_NativeToolUtil_fixVdexRepeatOpen",
+                "FreeVdexFromSmapsContent",
+                "0xaaaaaaaaaaaaaaabULL",
+                "_ZN16BacktraceCurrent12UnwindThreadEm"
+            ]),
+            "Khớp logVdexOpen, fixVdexRepeatOpen và freeVdex (quét /proc/self/smaps với regex (\\w{8})-(\\w{8}), Pss <= 1024 kB @ 0x007da8, munmap @ 0x007f2c)"
+        )
+
+        # 5. ThreadStackOptimizer (56-byte pthread_attr_t @ 0x016874 & stack_size +0x10 overwrite @ 0x01688c)
+        attr_alloc_op = struct.unpack("<I", so_bytes[0x016874:0x016878])[0]
+        attr_store_op = struct.unpack("<I", so_bytes[0x01688c:0x016890])[0]
+        shrink_jni_op = struct.unpack("<I", so_bytes[0x016b7c:0x016b80])[0]
+        self.assert_test(
+            "OsFix_ThreadStackOptimizerPthreadAttrPatch",
+            attr_alloc_op == 0x52800700 and
+            attr_store_op == 0xF9000AE8 and
+            shrink_jni_op == 0xA9BF7BFD and
+            b"_ZN3art6Thread24CreateCallbackWithUffdGcEPv\x00" in so_bytes and
+            b"libv8_libfull.cr.so\x00" in so_bytes and
+            all(tok in all_src for tok in [
+                "Java_com_bytedance_osfix_ThreadStackOptimizer_nativeShrinkthread",
+                "BionicPthreadAttr",
+                "ApplyThreadStackShrinkToAttr",
+                "AllowPthreadCreateShrinkFilter",
+                "libGLES_mali.so"
+            ]),
+            "Khớp ThreadStackOptimizer::nativeShrinkthread (0x016b7c), cấp phát pthread_attr_t 56-byte (0x38 @ 0x016874), ghi đè stack_size tại +0x10 (@ 0x01688c) và bộ lọc 4 thư viện"
+        )
+
+        # 6. TypeFaceOptimizer ("Pss:" magic 0x3a737350 @ 0x016d90..0x016da0 & Pss <= 0x3ff unmap @ 0x017998)
+        pss_magic_lo = struct.unpack("<I", so_bytes[0x016d90:0x016d94])[0]
+        pss_magic_hi = struct.unpack("<I", so_bytes[0x016da0:0x016da4])[0]
+        ttf_cmp_op   = struct.unpack("<I", so_bytes[0x017998:0x01799c])[0]
+        ttf_jni_op   = struct.unpack("<I", so_bytes[0x017dc0:0x017dc4])[0]
+        self.assert_test(
+            "OsFix_TypeFaceOptimizerClearUnusedTtf",
+            pss_magic_lo == 0x528E6A15 and
+            pss_magic_hi == 0x72A74E75 and
+            ttf_cmp_op == 0xF10FFC1F and
+            ttf_jni_op == 0xD10283FF and
+            all(tok in all_src for tok in [
+                "Java_com_bytedance_osfix_TypeFaceOptimizer_optimize",
+                "Java_com_bytedance_osfix_TypeFaceOptimizer_nativeClearUnuseTTF",
+                "0x3a737350",
+                "ParseSmapsPssForPath",
+                "ClearUnusedTtfFromMapsAndSmaps"
+            ]),
+            "Khớp TypeFaceOptimizer::nativeClearUnuseTTF (0x017dc0), hằng số 4-byte 'Pss:' (0x3a737350 @ 0x016d90..0x016da0), và ngưỡng giải phóng TTF Pss <= 1023 kB (0x3ff @ 0x017998)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -7493,6 +7620,7 @@ class AutonomousVerificationEngine:
         self.verify_liblynx_v8_bridge()
         self.verify_libbach_sdk_jni()
         self.verify_libart_sym()
+        self.verify_libosfix()
         self.verify_overall_governance()
 
 

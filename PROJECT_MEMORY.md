@@ -2302,3 +2302,18 @@
   - `adversary_critic_agent.py`: **72 / 169 `VERIFIED_AND_ACCEPTED` (42.60%)** (`591 opcodes`, `100% REAL`).
   - `verify_reconstruction_suite.py`: **467 / 467 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 100. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libosfix.so (TASK-112-RECONSTRUCTION-LIBOSFIX / TASK_SO_075_libosfix)
+- **Thời gian**: 2026-10-27 05:17:00
+- **Thư viện**: `libosfix.so` (`149,616 bytes`, SHA-256 `ddd8baabbcdd7941b13ab0e961a57e92843d957a0c64e6afa3613b2c433c937d`, 12 exported JNI functions across `NativeToolUtil`, `ThreadStackOptimizer`, `TypeFaceOptimizer`).
+- **Chi tiết giải mã thân hàm (7 files C++17, `163,822 bytes`, `osfix_pseudocode.cpp` = `83,681 bytes`, 0 stub)**:
+  1. **`.init_array[0]` (`0x005d50`) & `fixGetSetEnvCall` (`0x0064ec`)**: Khởi tạo `std::shared_timed_mutex` (`144 bytes`) tại `.bss 0x028040` và cài đặt ByteHook proxy cho `setenv` (`0x00627c`: `lock`/`unlock`) và `getenv` (`0x00633c`: `lock_shared`/`unlock_shared`).
+  2. **`logGetEnvErrorCode` (`0x006570`) & `log_assert_proxy` (`0x006678`)**: Chặn `__android_log_assert`, đọc thanh ghi hệ thống `tpidr_el0` (`0x0066ac`, `0x006788`) để trích xuất 7 khe Bionic TLS (`+0x08`, `+0x18`, `+0x20`, `+0x28`, `+0x38`, `+0x40`, `+0x48`), ghi log `pthread_self()` & `gettid()`, và ngủ 1000 giây (`0x3e8`).
+  3. **`freeVdex` (`0x006f9c`) & `fixVdexRepeatOpen` (`0x008d58`)**: Hook `art::DexFileFromMemory::Create` (`0x008bf4`) và `BacktraceCurrent::UnwindThread` (`0x008cb4`), quét `/proc/self/smaps` với regex `(\w{8})-(\w{8})` và `Pss:\s+(\d+)\skB`, gọi `munmap` nếu `Pss <= 1024 kB` (`0x400` @ `0x007da8`).
+  4. **`ThreadStackOptimizer::nativeShrinkthread` (`0x016b7c` -> `0x016908` & `0x01681c`)**: Tra cứu `_ZN3art6Thread14CreateCallbackEPv` và `_ZN3art6Thread24CreateCallbackWithUffdGcEPv` trong `libart.so`, cấp phát `pthread_attr_t` (`0x38` = 56 byte) và ghi đè `stack_size` (`+0x10`) bằng `java_shrink_thread_size` (`.data 0x028008` = `0x00030000` = 196,608 B) hoặc `native_shrink_thread_size` (`.data 0x02800c` = `0x00080000` = 524,288 B).
+  5. **`TypeFaceOptimizer::nativeClearUnuseTTF` (`0x017dc0` -> `0x017428` & `0x016ba4`)**: Quét `/proc/self/maps` và `/proc/self/smaps` tìm hằng số 4-byte `"Pss:"` (`0x3a737350` @ `0x016d90..0x016da0`) trước `"VmFlags"`, gọi `munmap` nếu `Pss <= 1023 kB` (`0x3ff` @ `0x017998`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **73 / 169 `VERIFIED_AND_ACCEPTED` (43.20%)** (`629 opcodes`, `100% REAL`).
+  - `verify_reconstruction_suite.py`: **473 / 473 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

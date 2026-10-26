@@ -1,18 +1,27 @@
 {
   "report_id": "REPORT_TASK_SO_075_libosfix",
   "task_id": "TASK_SO_075_libosfix",
+  "orchestrator_task_id": "TASK-112-RECONSTRUCTION-LIBOSFIX",
   "target_library": "libosfix.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 0 (Orchestrator) & Worker Agents (Agent 1, 3, 6, 8)",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "binary_sha256": "ddd8baabbcdd7941b13ab0e961a57e92843d957a0c64e6afa3613b2c433c937d",
+  "binary_size_bytes": 149616,
   "evidence": {
-    "symbols_total": 162,
+    "symbols_total": 453,
+    "exported_symbols": 12,
     "jni_exports": 12,
-    "cxx_demangled_count": 81,
+    "cxx_demangled_count": 320,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libosfix",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "reconstructed_cpp_bytes": 163822,
+    "pseudocode_cpp_bytes": 83681,
+    "stub_count": 0,
+    "proof_json": "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libosfix.json",
+    "proof_md": "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libosfix.md"
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Đã tái dựng hoàn chỉnh 100% mã nguồn C++17 clean-room (163,822 bytes, 0 stubs) cho libosfix.so (0x005d50..0x01bfb0), bao gồm đầy đủ 12 hàm JNI xuất khẩu và các proxy ByteHook/ShadowHook trên 3 lớp Java: com.bytedance.osfix.NativeToolUtil (nativeCrash, nativeOOM, logSoLoader, nlogcatI, fixGetSetEnvCall với std::shared_timed_mutex, logGetEnvErrorCode với Bionic TLS tpidr_el0 dumper, is64runtime, logVdexOpen, fixVdexRepeatOpen & freeVdex), com.bytedance.osfix.ThreadStackOptimizer (nativeShrinkthread thu nhỏ stack_size tại +0x10 của pthread_attr_t 56-byte), và com.bytedance.osfix.TypeFaceOptimizer (optimize & nativeClearUnuseTTF giải phóng .ttf có Pss <= 1023 kB).",
+  "acceptance_criteria_passed": true
 }

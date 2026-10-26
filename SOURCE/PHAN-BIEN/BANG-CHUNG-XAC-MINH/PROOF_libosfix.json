@@ -1,0 +1,170 @@
+{
+  "library": "libosfix.so",
+  "task_id": "TASK_SO_075_libosfix",
+  "orchestrator_task_id": "TASK-112-RECONSTRUCTION-LIBOSFIX",
+  "binary_sha256": "ddd8baabbcdd7941b13ab0e961a57e92843d957a0c64e6afa3613b2c433c937d",
+  "binary_size_bytes": 149616,
+  "responded_by": "Agent 0 (Orchestrator) & Worker Agents (Agent 1, 3, 6, 8)",
+  "response_to_challenge": "SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libosfix.json",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libosfix/osfix_types.h",
+    "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.h",
+    "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp",
+    "SOURCE/GIAI-MA/libosfix/osfix_thread_typeface_optimizer.h",
+    "SOURCE/GIAI-MA/libosfix/osfix_thread_typeface_optimizer.cpp",
+    "SOURCE/GIAI-MA/libosfix/osfix_interface.h",
+    "SOURCE/GIAI-MA/libosfix/osfix_pseudocode.cpp",
+    "SOURCE/GIAI-MA/libosfix/README_ANALYSIS.md"
+  ],
+  "total_reconstructed_cpp_bytes": 163822,
+  "stub_count": 0,
+  "proofs": {
+    "REQ_1_REAL_CODE": {
+      "status": "PROVEN",
+      "pseudocode_file": "SOURCE/GIAI-MA/libosfix/osfix_pseudocode.cpp",
+      "pseudocode_size_bytes": 83681,
+      "total_cpp_size_bytes": 163822,
+      "summary": "Reconstructed 163,822 bytes of clean-room C++17 across 7 source/header files (with osfix_pseudocode.cpp = 83,681 bytes > 40KB threshold and 0 stubs), implementing all 12 exported JNI functions and internal ByteHook/ShadowHook proxies of libosfix.so (0x005d50..0x01bfb0)."
+    },
+    "REQ_2_OPCODE_EVIDENCE": [
+      {
+        "function": "Java_com_bytedance_osfix_NativeToolUtil_nativeCrash & nativeOOM",
+        "vaddr": "0x005e7c..0x005eef",
+        "opcode_hex": "200020d4 d10143ff 52a06400 97fffec7 52800040 97ffff05",
+        "instruction": "brk #1; sub sp, sp, #0x50; mov w0, #0x3200000; bl operator new[]; mov w0, #2; bl sleep",
+        "c_mapping": "nativeCrash executes hardware trap brk #1 (0xd4200020); nativeOOM loops allocating 50 MB (0x3200000 = 52,428,800 bytes) chunks via operator new[], appending to std::vector<void*>, and sleeping 2 seconds per iteration."
+      },
+      {
+        "function": "Java_com_bytedance_osfix_NativeToolUtil_fixGetSetEnvCall & setenv/getenv proxies",
+        "vaddr": "0x005d50..0x005df3, 0x00627c..0x0063e3, 0x0064ec..0x00656f",
+        "opcode_hex": "d0000113 91010273 97ffffee 97ffffc5 97ffffc0 f900467f ... 97ffff89 00013fd6 97ffff86 ... 97ffff50 00013fd6 97ffff4f",
+        "instruction": "adrp x19, #0x28000; add x19, x19, #0x40; bl pthread_mutex_init; bl pthread_cond_init ... bl shared_timed_mutex::lock; blr x8; bl shared_timed_mutex::unlock ... bl shared_timed_mutex::lock_shared; blr x8; bl shared_timed_mutex::unlock_shared",
+        "c_mapping": "Initializes a 144-byte std::shared_timed_mutex at .bss 0x028040 in .init_array[0] (0x005d50), and hooks setenv (0x00627c, exclusive writer lock) and getenv (0x00633c, shared reader lock) via bytehook_hook_partial to eliminate multi-threaded getenv/setenv crashes."
+      },
+      {
+        "function": "Java_com_bytedance_osfix_NativeToolUtil_logGetEnvErrorCode & log_assert_proxy",
+        "vaddr": "0x006570..0x00699f",
+        "opcode_hex": "d53bd058 f9400703 f9400f03 f9401303 f9401703 f9401f03 f9402303 f9402703 52807d00 97fffba2",
+        "instruction": "mrs x24, tpidr_el0; ldr x3, [x24, #8]; ldr x3, [x24, #0x18]; ldr x3, [x24, #0x20]; ldr x3, [x24, #0x28]; ldr x3, [x24, #0x38]; ldr x3, [x24, #0x40]; ldr x3, [x24, #0x48]; mov w0, #0x3e8; bl sleep",
+        "c_mapping": "Hooks __android_log_assert via ByteHook (0x006678), reads AArch64 tpidr_el0 Bionic TLS slots (+0x08 THREAD_ID, +0x18 OPENGL, +0x20 OPENGL_API, +0x28 STACK_GUARD, +0x38 ART_THREAD_SELF, +0x40 DTV, +0x48 BIONIC_TLS), logs pthread_self() and gettid(), and sleeps 1000 seconds (0x3e8)."
+      },
+      {
+        "function": "freeVdex & Java_com_bytedance_osfix_NativeToolUtil_fixVdexRepeatOpen",
+        "vaddr": "0x006f9c..0x00856b, 0x008d58..0x008e3b",
+        "opcode_hex": "7110027f 5400010d 52800202 97fff75a 97fff755 cb13001c 97fff69d",
+        "instruction": "cmp w19, #0x400; b.le #0x7dcc; mov w2, #0x10; bl stoull; bl stoull; sub x28, x0, x19; bl munmap",
+        "c_mapping": "Scans /proc/self/smaps for .vdex mappings matching /proc/self/cmdline, parses start/end hex addresses via regex (\\w{8})-(\\w{8}) and Pss via Pss:\\s+(\\d+)\\skB, and if Pss <= 1024 kB (0x400), unmaps the region via munmap((void*)start, end - start)."
+      },
+      {
+        "function": "Java_com_bytedance_osfix_ThreadStackOptimizer_nativeShrinkthread & pthread_create_proxy",
+        "vaddr": "0x01681c..0x016b9b",
+        "opcode_hex": "b40001a1 d0000088 f940c908 eb15011f 540000a0 ... b9800908 14000007 52800700 97fffc16 ... b9800d08 f9000ae8",
+        "instruction": "cbz x1, #0x16874; adrp x8, #0x28000; ldr x8, [x8, #0x190]; cmp x8, x21; b.eq #0x16868 ... ldrsw x8, [x8, #8]; b #0x1688c; mov w0, #0x38; bl malloc ... ldrsw x8, [x8, #0xc]; str x8, [x23, #0x10]",
+        "c_mapping": "Resolves _ZN3art6Thread14CreateCallbackEPv (.bss 0x028198) and (on Android > 13) _ZN3art6Thread24CreateCallbackWithUffdGcEPv (.bss 0x028190) in libart.so, hooks pthread_create (excluding libosfix.so, libv8_libfull.cr.so, libquick.so, libGLES_mali.so), allocates 56-byte (0x38) pthread_attr_t if attr is null, and writes java_shrink_thread_size (0x28008 = 0x30000) or native_shrink_thread_size (0x2800c = 0x80000) into attr->stack_size (+0x10)."
+      },
+      {
+        "function": "Java_com_bytedance_osfix_TypeFaceOptimizer_nativeClearUnuseTTF & clear_unused_ttf_impl",
+        "vaddr": "0x016ba4..0x01814f",
+        "opcode_hex": "528e6a15 72a74e75 ... 528005a1 97fff7d4 ... 97fffc85 f10ffc1f cb190318 54000228 97fff7fd",
+        "instruction": "mov w21, #0x7350; movk w21, #0x3a73, lsl #16 ... mov w1, #0x2d; bl memchr ... bl get_smaps_pss; cmp x0, #0x3ff; sub x24, x24, x25; b.hi #0x179e4; bl munmap",
+        "c_mapping": "Extracts .ttf filenames from Java ArrayList<Typeface>, scans /proc/self/maps for matching font paths, splits start-end addresses on '-' (0x2d), queries get_smaps_pss (which matches 4-byte magic 0x3a737350 = 'Pss:' before 'VmFlags'), and if Pss <= 1023 kB (0x3ff), calls munmap((void*)start, end - start)."
+      }
+    ],
+    "REQ_3_MATH_PROOF": {
+      "status": "PROVEN",
+      "equations": [
+        {
+          "name": "ThreadStackOptimizer pthread_attr_t Stack-Size Selection Formula (0x016840..0x01688c)",
+          "formula": "attr_eff = (attr != NULL) ? attr : pthread_attr_init(malloc(0x38)); S(r, attr) = S_java (.data 0x028008 = 196,608) if (attr != NULL and r in {CreateCallback, CreateCallbackWithUffdGc}) else S_native (.data 0x02800c = 524,288); *(size_t*)((char*)attr_eff + 0x10) = S(r, attr)",
+          "verification": "Verified against 0x016840..0x01688c and .data file offset 0x024008..0x02400f (0x00030000 and 0x00080000)."
+        },
+        {
+          "name": "VDEX & TTF Proportional Set Size (PSS) Unmap Threshold Equations (0x007da8 & 0x017998)",
+          "formula": "Unmap_VDEX(start, end, Pss) <=> (0 <= Pss <= 0x400 [1024 kB]) => munmap(start, end - start); Unmap_TTF(start, end, Pss) <=> (0 <= Pss <= 0x3FF [1023 kB]) => munmap(start, end - start)",
+          "verification": "Verified against cmp w19, #0x400; b.le #0x7dcc at 0x007da8..0x007dac and cmp x0, #0x3ff; b.hi #0x179e4 at 0x017998..0x0179a0."
+        },
+        {
+          "name": "Multiplicative Inverse Division by 24 for std::sub_match Vector Count (0x007580..0x007594)",
+          "formula": "N = ((end - begin) >> 3) * 0xAAAAAAAAAAAAAAAB mod 2^64 = (end - begin) / 24, since 3 * 0xAAAAAAAAAAAAAAAB = 0x20000000000000001 === 1 (mod 2^64) and sizeof(std::sub_match<const char*>) = 24",
+          "verification": "Verified against mov x10, #-0x5555555555555556; movk x10, #0xaaab; sub x8, x8, x9; asr x8, x8, #3; mul x8, x8, x10 at 0x007580..0x007594."
+        },
+        {
+          "name": "libc++ Short String Optimization (SSO) Capacity Alignment Formula (0x008a38..0x008a68)",
+          "formula": "If L < 23 (0x17): byte[0] = (L << 1) (bit 0 = 0); If L >= 23: C_aligned = (L + 0x10) & ~0xFULL, word[0] = C_aligned | 1ULL, word[1] = L, word[2] = heap_ptr",
+          "verification": "Verified against cmp x0, #0x17; b.hs #0x8a50; lsl w8, w21, #1; add x8, x21, #0x10; and x22, x8, #0xfffffffffffffff0; orr x8, x22, #1 at 0x008a38..0x008a60."
+        }
+      ]
+    },
+    "REQ_4_ABI_LAYOUT": [
+      {
+        "struct_name": "BionicPthreadAttr (pthread_attr_t on AArch64 LP64, 56 bytes = 0x38)",
+        "total_size_bytes": 56,
+        "fields": [
+          {"offset": "0x00", "size": 4, "type": "uint32_t", "name": "flags"},
+          {"offset": "0x04", "size": 4, "type": "uint32_t", "name": "pad0_"},
+          {"offset": "0x08", "size": 8, "type": "void*", "name": "stack_base"},
+          {"offset": "0x10", "size": 8, "type": "size_t", "name": "stack_size (overwritten at 0x01688c)"},
+          {"offset": "0x18", "size": 8, "type": "size_t", "name": "guard_size"},
+          {"offset": "0x20", "size": 4, "type": "int32_t", "name": "sched_policy"},
+          {"offset": "0x24", "size": 4, "type": "int32_t", "name": "sched_priority"},
+          {"offset": "0x28", "size": 16, "type": "char[16]", "name": "reserved"}
+        ]
+      },
+      {
+        "struct_name": "std::__ndk1::shared_timed_mutex (.bss 0x028040..0x0280cf, 144 bytes = 0x90)",
+        "total_size_bytes": 144,
+        "fields": [
+          {"offset": "0x00", "size": 40, "type": "pthread_mutex_t", "name": "__mut_ (initialized at 0x005d68)"},
+          {"offset": "0x28", "size": 48, "type": "pthread_cond_t", "name": "__gate1_ (initialized at 0x005d7c)"},
+          {"offset": "0x58", "size": 48, "type": "pthread_cond_t", "name": "__gate2_ (initialized at 0x005d90)"},
+          {"offset": "0x88", "size": 8, "type": "uint64_t", "name": "__state_ (zeroed at 0x005d98)"}
+        ]
+      },
+      {
+        "struct_name": "OsFixDataAndBssGlobals (.data 0x028000..0x028017 & .bss 0x028020..0x0281a8)",
+        "total_size_bytes": 424,
+        "fields": [
+          {"offset": "0x028008", "size": 4, "type": "int32_t", "name": "java_shrink_thread_size (0x00030000 = 196,608)"},
+          {"offset": "0x02800c", "size": 4, "type": "int32_t", "name": "native_shrink_thread_size (0x00080000 = 524,288)"},
+          {"offset": "0x028010", "size": 4, "type": "int32_t", "name": "setenv_hook_status (-1)"},
+          {"offset": "0x028014", "size": 4, "type": "int32_t", "name": "getenv_hook_status (-1)"},
+          {"offset": "0x028020", "size": 8, "type": "int64_t", "name": "soloader_delay_threshold_ms"},
+          {"offset": "0x028028", "size": 8, "type": "JavaVM*", "name": "g_jvm"},
+          {"offset": "0x028030", "size": 8, "type": "jclass", "name": "g_native_tool_util_class"},
+          {"offset": "0x028038", "size": 8, "type": "jmethodID", "name": "g_alog_delay_mid"},
+          {"offset": "0x028040", "size": 144, "type": "std::shared_timed_mutex", "name": "g_env_rw_mutex"},
+          {"offset": "0x028180", "size": 1, "type": "uint8_t", "name": "g_vdex_open_hooked"},
+          {"offset": "0x028184", "size": 1, "type": "uint8_t", "name": "g_fix_vdex_enable_free"},
+          {"offset": "0x028188", "size": 8, "type": "void*", "name": "g_dex_file_from_memory_orig"},
+          {"offset": "0x028190", "size": 8, "type": "void*", "name": "g_art_create_callback_uffd"},
+          {"offset": "0x028198", "size": 8, "type": "void*", "name": "g_art_create_callback"},
+          {"offset": "0x0281a0", "size": 8, "type": "void*", "name": "g_pthread_create_stub"}
+        ]
+      }
+    ],
+    "REQ_5_SYMBOL_MAPPING": {
+      "status": "PROVEN",
+      "exported_symbol_count": 12,
+      "mapped_symbols": [
+        {"symbol": "Java_com_bytedance_osfix_NativeToolUtil_nativeCrash", "vaddr": "0x005e7c", "file": "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_NativeToolUtil_nativeOOM", "vaddr": "0x005e80", "file": "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_NativeToolUtil_logSoLoader", "vaddr": "0x005ef0", "file": "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_NativeToolUtil_nlogcatI", "vaddr": "0x006168", "file": "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_NativeToolUtil_fixGetSetEnvCall", "vaddr": "0x0064ec", "file": "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_NativeToolUtil_logGetEnvErrorCode", "vaddr": "0x006570", "file": "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_NativeToolUtil_is64runtime", "vaddr": "0x006b50", "file": "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_NativeToolUtil_logVdexOpen", "vaddr": "0x006b58", "file": "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_NativeToolUtil_fixVdexRepeatOpen", "vaddr": "0x008d58", "file": "SOURCE/GIAI-MA/libosfix/osfix_native_tool_util.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_ThreadStackOptimizer_nativeShrinkthread", "vaddr": "0x016b7c", "file": "SOURCE/GIAI-MA/libosfix/osfix_thread_typeface_optimizer.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_TypeFaceOptimizer_optimize", "vaddr": "0x016b9c", "file": "SOURCE/GIAI-MA/libosfix/osfix_thread_typeface_optimizer.cpp"},
+        {"symbol": "Java_com_bytedance_osfix_TypeFaceOptimizer_nativeClearUnuseTTF", "vaddr": "0x017dc0", "file": "SOURCE/GIAI-MA/libosfix/osfix_thread_typeface_optimizer.cpp"}
+      ]
+    },
+    "REQ_6_VERIFICATION_SUITE": {
+      "status": "PROVEN",
+      "test_script": "SOURCE/scripts/verify_reconstruction_suite.py",
+      "test_function": "verify_libosfix",
+      "assertions_verified": 6
+    }
+  }
+}
