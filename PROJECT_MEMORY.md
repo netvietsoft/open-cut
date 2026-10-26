@@ -2036,3 +2036,19 @@
   - Agent 13 (`LEDGER_DOI_KHANG.json`): **`50 / 169` (`29.59%`) `VERIFIED_AND_ACCEPTED`**
   - `verify_reconstruction_suite.py`: **`335 PASS / 0 FAIL (100.0%)`**
   - `native_audit_watchdog.py`: **`169 binaries, 0 high findings`**
+
+
+---
+
+## 78. HOÀN THÀNH TÁI DỰNG TARGET 51: `libdelta.so` (`TASK-090-RECONSTRUCTION-LIBDELTA` / `TASK_SO_159`)
+- **Thời gian**: `2026-10-26 21:01:35`
+- **Binary gốc**: `apktool-res/lib/arm64-v8a/libdelta.so` (`18,256 bytes`, `71` dynamic symbols: `19` exported `STT_FUNC` + `52` imported)
+- **Kết quả tái dựng**: `8` tệp C++17 & Header (`~75 KB` C++17/H, `128,948 bytes` tổng thư mục, `533` opcode citations, `0 stubs`) tại `SOURCE/GIAI-MA/libdelta/`:
+  1. `delta_types.h` (`11,554 B`): Bố cục ABI `SHA256_CTX` (`112 B = 0x70`), `BIGNUM`, `EC_GROUP`, `EC_POINT`, `EC_KEY`, `EVP_CIPHER_CTX`, hằng số đường cong `NID_X9_62_prime256v1 = 0x19f = 415`, định dạng gói tin đường truyền AES-256-GCM bù 34 byte (`0x22`: magic `0x01bd` = `[0xbd, 0x01]`, IV `16B`, Tag `16B`), bảng mã lỗi (`0, -2, -3, -4, -5, -7, -8, -9, -11`), và bảng chuỗi `.rodata` (`0x00322c..0x003422`).
+  2. `delta_crypto_primitives.h` (`5,693 B`) & `delta_crypto_primitives.cpp` (`23,040 B`): Hiện thực toán học cho 36 hàm BoringSSL/OpenSSL nhập qua `.plt` (`0x001850..0x001af0`), bao gồm `SHA256_Init/Update/Final`, `HKDF` (RFC 5869), `EVP_aes_256_gcm` với IV 16 byte (`J_0 = GHASH_H(IV || 0^64 || [128]_64)`), `EC_GROUP*` tại `.bss 0x008000`, `EC_POINT_point2oct` / `EC_POINT_oct2point` (SEC1 `33B` nén & `65B` không nén), `ECDH_compute_key`, và `ECDSA_sign` / `ECDSA_verify` (ASN.1 DER).
+  3. `delta_jni_engine.h` (`5,355 B`) & `delta_jni_engine.cpp` (`23,281 B`): 4 hàm nội bộ `.text` (`create_EC_KEY_from_private_key_bin` @ `0x002d0c`, `create_EC_KEY_from_public_key_bin` @ `0x002f00`, `generate_keypair` @ `0x00307c`, `sign` @ `0x003154`) và 19 hàm xuất JNI (`Java_net_bytedance_zdplib_Delta_*` và `Java_net_bytedance_zdplib_DeltaSignerVerifier_*` @ `0x001b3c..0x002d08`).
+  4. `delta_interface.h` (`1,467 B`), `delta_interface.cpp` (`5,634 B`), và `delta_pseudocode.cpp` (`6,812 B`).
+- **Chỉ số xác minh**:
+  - Agent 13 (`LEDGER_DOI_KHANG.json`): **`51 / 169` (`30.18%`) `VERIFIED_AND_ACCEPTED`**
+  - `verify_reconstruction_suite.py`: **`341 PASS / 0 FAIL (100.0%)`**
+  - `native_audit_watchdog.py`: **`169 binaries, 0 high findings`**

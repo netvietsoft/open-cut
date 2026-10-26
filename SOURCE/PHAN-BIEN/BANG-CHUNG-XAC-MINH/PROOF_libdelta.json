@@ -1,0 +1,26 @@
+{
+  "lib_name": "libdelta",
+  "task_id": "TASK-090-RECONSTRUCTION-LIBDELTA",
+  "legacy_task_id": "TASK_SO_159",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libdelta.so",
+  "binary_size_bytes": 18256,
+  "dynamic_symbols": {
+    "total": 71,
+    "exported": 19,
+    "imported": 52
+  },
+  "gate1_size_passed": true,
+  "gate2_opcode_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
+  "gate5_symbols_passed": true,
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "key_proofs": [
+    "Delta AES-256-GCM 34-byte (0x22) Wire Packet Format: 2B magic 0x01bd ([0xbd, 0x01] @ 0x001df0 & 0x002248), 16B random IV (+0x02..+0x11, EVP_CTRL_GCM_SET_IVLEN = 9 @ 0x001e34), ciphertext (+0x12..+0x12+N-1), and 16B GCM auth tag (EVP_CTRL_GCM_GET_TAG = 0x10 @ 0x001eb0, EVP_CTRL_GCM_SET_TAG = 0x11 @ 0x002394)",
+    "NIST P-256 (NID_X9_62_prime256v1 = 0x19f = 415) cached EC_GROUP* singleton at .bss 0x008000, supporting SEC1 compressed (33B = 0x21, form = 2) and uncompressed (65B = 0x41, form = 4) public keys",
+    "ECDH + RFC 5869 HKDF-SHA256 32-byte AES key derivation in Java_net_bytedance_zdplib_Delta_generateAesKey (0x001b3c..0x001c94)",
+    "4 internal .text helpers: create_EC_KEY_from_private_key_bin (0x002d0c), create_EC_KEY_from_public_key_bin (0x002f00), generate_keypair (0x00307c), and sign (0x003154)",
+    "All 19 exported JNI methods across net.bytedance.zdplib.Delta (12 methods) and net.bytedance.zdplib.DeltaSignerVerifier (7 methods, with verify @ 0x002b34 tail-calling Delta_verify @ 0x002654)"
+  ]
+}

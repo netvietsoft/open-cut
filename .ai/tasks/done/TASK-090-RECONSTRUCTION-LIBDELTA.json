@@ -1,0 +1,33 @@
+{
+  "task_id": "TASK-090-RECONSTRUCTION-LIBDELTA",
+  "legacy_task_id": "TASK_SO_159",
+  "title": "Reconstruct 100% genuine C++17 source code & mathematical/binary proofs for libdelta.so (Target 51 / 169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Frontend/Android Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Orchestrator)",
+  "created_at": "2026-10-26T20:44:45+07:00",
+  "completed_at": "2026-10-26T21:01:29+07:00",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libdelta.so",
+  "binary_size_bytes": 18256,
+  "dynamic_symbols": {
+    "total": 71,
+    "exported": 19,
+    "imported": 52
+  },
+  "reconstructed_volume_bytes": 128948,
+  "verified_opcodes": 533,
+  "verification_suite_result": "341 PASS / 0 FAIL (100.0%)",
+  "watchdog_result": "169 binaries, 0 high findings",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libdelta/**",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_159_libdelta.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_159_libdelta.md",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libdelta.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libdelta.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ]
+}

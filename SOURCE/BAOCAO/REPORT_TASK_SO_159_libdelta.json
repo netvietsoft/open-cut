@@ -1,18 +1,21 @@
 {
-  "report_id": "REPORT_TASK_SO_159_libdelta",
-  "task_id": "TASK_SO_159_libdelta",
-  "target_library": "libdelta.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 71,
-    "jni_exports": 19,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libdelta",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "task_id": "TASK_SO_159",
+  "canonical_task_id": "TASK-090-RECONSTRUCTION-LIBDELTA",
+  "library": "libdelta.so",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 18256,
+  "dynamic_symbols": 71,
+  "exported_symbols": 19,
+  "imported_symbols": 52,
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libdelta/delta_types.h",
+    "SOURCE/GIAI-MA/libdelta/delta_crypto_primitives.h",
+    "SOURCE/GIAI-MA/libdelta/delta_crypto_primitives.cpp",
+    "SOURCE/GIAI-MA/libdelta/delta_jni_engine.h",
+    "SOURCE/GIAI-MA/libdelta/delta_jni_engine.cpp",
+    "SOURCE/GIAI-MA/libdelta/delta_interface.h",
+    "SOURCE/GIAI-MA/libdelta/delta_interface.cpp",
+    "SOURCE/GIAI-MA/libdelta/delta_pseudocode.cpp"
+  ],
+  "verification_suite_tests": 6
 }

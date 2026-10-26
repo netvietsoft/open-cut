@@ -3,18 +3,18 @@
     "created_at": "2026-10-15 16:12:35",
     "auditor": "Agent 13 (Adversary Auditor / Red Team Critic)",
     "total_targets": 169,
-    "last_audit": "2026-10-26 20:37:22"
+    "last_audit": "2026-10-26 21:01:26"
   },
   "status_summary": {
-    "VERIFIED_AND_ACCEPTED": 50,
-    "CHALLENGED_NEEDS_PROOF": 67,
+    "VERIFIED_AND_ACCEPTED": 51,
+    "CHALLENGED_NEEDS_PROOF": 66,
     "BLOCKED_CUSTOM_PACKED": 1,
     "SCAFFOLD_METADATA_ONLY": 51
   },
   "libraries": {
     "libAGFX": {
       "lib_name": "libAGFX",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 113544,
       "gate1_passed": true,
       "gate2_opcode_count": 23,
@@ -29,7 +29,7 @@
     },
     "libAndroidPitayaCore": {
       "lib_name": "libAndroidPitayaCore",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 105109,
       "gate1_passed": true,
       "gate2_opcode_count": 29,
@@ -44,7 +44,7 @@
     },
     "libBDMicroPythonVM": {
       "lib_name": "libBDMicroPythonVM",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 166402,
       "gate1_passed": true,
       "gate2_opcode_count": 438,
@@ -59,7 +59,7 @@
     },
     "libBDPythonVM": {
       "lib_name": "libBDPythonVM",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 111704,
       "gate1_passed": true,
       "gate2_opcode_count": 335,
@@ -74,7 +74,7 @@
     },
     "libByteAIDT": {
       "lib_name": "libByteAIDT",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 44639,
       "gate1_passed": true,
       "gate2_opcode_count": 18,
@@ -89,7 +89,7 @@
     },
     "libByteAINN": {
       "lib_name": "libByteAINN",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 68311,
       "gate1_passed": true,
       "gate2_opcode_count": 64,
@@ -104,7 +104,7 @@
     },
     "libByteVC1_dec": {
       "lib_name": "libByteVC1_dec",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1012,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -122,7 +122,7 @@
     },
     "libCepEngine": {
       "lib_name": "libCepEngine",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 271814,
       "gate1_passed": true,
       "gate2_opcode_count": 626,
@@ -137,7 +137,7 @@
     },
     "libEncryptor": {
       "lib_name": "libEncryptor",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 986,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -156,7 +156,7 @@
     },
     "libPitayaBdComponent": {
       "lib_name": "libPitayaBdComponent",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 102914,
       "gate1_passed": true,
       "gate2_opcode_count": 333,
@@ -171,7 +171,7 @@
     },
     "libTTMStrategyCenter": {
       "lib_name": "libTTMStrategyCenter",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 191663,
       "gate1_passed": true,
       "gate2_opcode_count": 388,
@@ -186,7 +186,7 @@
     },
     "libTTMachineCore": {
       "lib_name": "libTTMachineCore",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 151517,
       "gate1_passed": true,
       "gate2_opcode_count": 228,
@@ -201,7 +201,7 @@
     },
     "libalog": {
       "lib_name": "libalog",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 102803,
       "gate1_passed": true,
       "gate2_opcode_count": 126,
@@ -216,7 +216,7 @@
     },
     "libanimax": {
       "lib_name": "libanimax",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4692,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -234,7 +234,7 @@
     },
     "libanimax_bytevc1": {
       "lib_name": "libanimax_bytevc1",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 64232,
       "gate1_passed": true,
       "gate2_opcode_count": 38,
@@ -249,7 +249,7 @@
     },
     "libanimax_napi": {
       "lib_name": "libanimax_napi",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 7232,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -268,7 +268,7 @@
     },
     "libanimax_textra": {
       "lib_name": "libanimax_textra",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5084,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -287,7 +287,7 @@
     },
     "libapplovin-native-crash-reporter": {
       "lib_name": "libapplovin-native-crash-reporter",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6062,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -306,7 +306,7 @@
     },
     "libart_sym": {
       "lib_name": "libart_sym",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5610,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -325,7 +325,7 @@
     },
     "libaudio_fingerprint_sdk": {
       "lib_name": "libaudio_fingerprint_sdk",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 82750,
       "gate1_passed": true,
       "gate2_opcode_count": 39,
@@ -340,7 +340,7 @@
     },
     "libaudioeffect": {
       "lib_name": "libaudioeffect",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 74531,
       "gate1_passed": true,
       "gate2_opcode_count": 39,
@@ -355,7 +355,7 @@
     },
     "libavmdlbase": {
       "lib_name": "libavmdlbase",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 74882,
       "gate1_passed": true,
       "gate2_opcode_count": 66,
@@ -370,7 +370,7 @@
     },
     "libavmdlv2": {
       "lib_name": "libavmdlv2",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5762,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -389,7 +389,7 @@
     },
     "libbach-sdk-jni": {
       "lib_name": "libbach-sdk-jni",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 8332,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -408,7 +408,7 @@
     },
     "libbdhm_native": {
       "lib_name": "libbdhm_native",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4725,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -427,7 +427,7 @@
     },
     "libbdsword": {
       "lib_name": "libbdsword",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 960,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -446,7 +446,7 @@
     },
     "libbdvideouploader": {
       "lib_name": "libbdvideouploader",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 87084,
       "gate1_passed": true,
       "gate2_opcode_count": 143,
@@ -461,7 +461,7 @@
     },
     "libbdzstd": {
       "lib_name": "libbdzstd",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 100197,
       "gate1_passed": true,
       "gate2_opcode_count": 60,
@@ -476,7 +476,7 @@
     },
     "libbuffer": {
       "lib_name": "libbuffer",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 81437,
       "gate1_passed": true,
       "gate2_opcode_count": 100,
@@ -491,7 +491,7 @@
     },
     "libbuffer_pgl": {
       "lib_name": "libbuffer_pgl",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 47917,
       "gate1_passed": true,
       "gate2_opcode_count": 69,
@@ -506,7 +506,7 @@
     },
     "libbvcparser": {
       "lib_name": "libbvcparser",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 65451,
       "gate1_passed": true,
       "gate2_opcode_count": 54,
@@ -521,7 +521,7 @@
     },
     "libbyteVC2dec": {
       "lib_name": "libbyteVC2dec",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 99328,
       "gate1_passed": true,
       "gate2_opcode_count": 115,
@@ -536,7 +536,7 @@
     },
     "libbytebench": {
       "lib_name": "libbytebench",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 10774,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -555,7 +555,7 @@
     },
     "libbytedt": {
       "lib_name": "libbytedt",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 95697,
       "gate1_passed": true,
       "gate2_opcode_count": 24,
@@ -570,7 +570,7 @@
     },
     "libbytehook": {
       "lib_name": "libbytehook",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 57359,
       "gate1_passed": true,
       "gate2_opcode_count": 69,
@@ -585,7 +585,7 @@
     },
     "libbytemonitor": {
       "lib_name": "libbytemonitor",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4946,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -604,7 +604,7 @@
     },
     "libbytenn": {
       "lib_name": "libbytenn",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 108289,
       "gate1_passed": true,
       "gate2_opcode_count": 36,
@@ -619,7 +619,7 @@
     },
     "libbytevc0": {
       "lib_name": "libbytevc0",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1526,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -638,7 +638,7 @@
     },
     "libbytevc1enc": {
       "lib_name": "libbytevc1enc",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 999,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -657,7 +657,7 @@
     },
     "libc++_shared": {
       "lib_name": "libc++_shared",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6394,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -676,7 +676,7 @@
     },
     "libcapcut": {
       "lib_name": "libcapcut",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 947,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -695,7 +695,7 @@
     },
     "libcccreator": {
       "lib_name": "libcccreator",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 49300,
       "gate1_passed": true,
       "gate2_opcode_count": 57,
@@ -710,7 +710,7 @@
     },
     "libclipflow": {
       "lib_name": "libclipflow",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 66367,
       "gate1_passed": true,
       "gate2_opcode_count": 15,
@@ -725,7 +725,7 @@
     },
     "libconfigcenter": {
       "lib_name": "libconfigcenter",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 121932,
       "gate1_passed": true,
       "gate2_opcode_count": 498,
@@ -740,7 +740,7 @@
     },
     "libcybertron_base": {
       "lib_name": "libcybertron_base",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 8006,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -759,26 +759,22 @@
     },
     "libdelta": {
       "lib_name": "libdelta",
-      "inspected_at": "2026-10-26 20:37:22",
-      "gate1_size_bytes": 2932,
-      "gate1_passed": false,
-      "gate2_opcode_count": 0,
-      "gate2_passed": false,
-      "gate3_math_verified": false,
-      "gate4_abi_offsets_verified": false,
+      "inspected_at": "2026-10-26 21:01:26",
+      "gate1_size_bytes": 128948,
+      "gate1_passed": true,
+      "gate2_opcode_count": 533,
+      "gate2_passed": true,
+      "gate3_math_verified": true,
+      "gate4_abi_offsets_verified": true,
       "gate5_symbols_count": 71,
       "gate5_passed": true,
-      "gate6_test_passed": false,
-      "status": "CHALLENGED_NEEDS_PROOF",
-      "criticisms": [
-        "Dung lượng mã nguồn (2932 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
-        "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
-        "Chưa tích hợp test case trong verify_reconstruction_suite.py."
-      ]
+      "gate6_test_passed": true,
+      "status": "VERIFIED_AND_ACCEPTED",
+      "criticisms": []
     },
     "libenvguard": {
       "lib_name": "libenvguard",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 973,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -797,7 +793,7 @@
     },
     "libfast_engine": {
       "lib_name": "libfast_engine",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 107990,
       "gate1_passed": true,
       "gate2_opcode_count": 48,
@@ -812,7 +808,7 @@
     },
     "libfast_engine_RelWithDebInfo": {
       "lib_name": "libfast_engine_RelWithDebInfo",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5509,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -831,7 +827,7 @@
     },
     "libfastcv": {
       "lib_name": "libfastcv",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 79311,
       "gate1_passed": true,
       "gate2_opcode_count": 47,
@@ -846,7 +842,7 @@
     },
     "libfdk-aac": {
       "lib_name": "libfdk-aac",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5765,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -865,7 +861,7 @@
     },
     "libfile_lock": {
       "lib_name": "libfile_lock",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 44930,
       "gate1_passed": true,
       "gate2_opcode_count": 43,
@@ -880,7 +876,7 @@
     },
     "libfile_lock_pgl": {
       "lib_name": "libfile_lock_pgl",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 46123,
       "gate1_passed": true,
       "gate2_opcode_count": 43,
@@ -895,7 +891,7 @@
     },
     "libfile_recorder": {
       "lib_name": "libfile_recorder",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 62636,
       "gate1_passed": true,
       "gate2_opcode_count": 101,
@@ -910,7 +906,7 @@
     },
     "libflipped": {
       "lib_name": "libflipped",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1719,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -929,7 +925,7 @@
     },
     "libfly-main-color-lib": {
       "lib_name": "libfly-main-color-lib",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1668,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -948,7 +944,7 @@
     },
     "libgaia_lib": {
       "lib_name": "libgaia_lib",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4707,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -967,7 +963,7 @@
     },
     "libgeckox_bspatch": {
       "lib_name": "libgeckox_bspatch",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1279,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -986,7 +982,7 @@
     },
     "libgifimage": {
       "lib_name": "libgifimage",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1930,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1005,7 +1001,7 @@
     },
     "libgodzilla-acurate-asan": {
       "lib_name": "libgodzilla-acurate-asan",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 7206,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1024,7 +1020,7 @@
     },
     "libgodzilla-memsponge": {
       "lib_name": "libgodzilla-memsponge",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 10733,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1043,7 +1039,7 @@
     },
     "libgodzilla-sysopt": {
       "lib_name": "libgodzilla-sysopt",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 7336,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1062,7 +1058,7 @@
     },
     "libgodzilla-touphic": {
       "lib_name": "libgodzilla-touphic",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5882,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1081,7 +1077,7 @@
     },
     "libhelios_bm": {
       "lib_name": "libhelios_bm",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1081,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1100,7 +1096,7 @@
     },
     "libiesapplogger": {
       "lib_name": "libiesapplogger",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6191,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1119,7 +1115,7 @@
     },
     "libimagepipeline": {
       "lib_name": "libimagepipeline",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1202,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1138,7 +1134,7 @@
     },
     "libjato": {
       "lib_name": "libjato",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 11486,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1157,7 +1153,7 @@
     },
     "libjazz": {
       "lib_name": "libjazz",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5154,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1176,7 +1172,7 @@
     },
     "libjnidispatch": {
       "lib_name": "libjnidispatch",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5962,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1195,7 +1191,7 @@
     },
     "libkeva": {
       "lib_name": "libkeva",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 66175,
       "gate1_passed": true,
       "gate2_opcode_count": 32,
@@ -1210,7 +1206,7 @@
     },
     "libkomprese-decompressor": {
       "lib_name": "libkomprese-decompressor",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1142,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1229,7 +1225,7 @@
     },
     "libkrypton": {
       "lib_name": "libkrypton",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4644,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1248,7 +1244,7 @@
     },
     "liblens": {
       "lib_name": "liblens",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 61320,
       "gate1_passed": true,
       "gate2_opcode_count": 14,
@@ -1263,7 +1259,7 @@
     },
     "libluster": {
       "lib_name": "libluster",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 947,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1282,7 +1278,7 @@
     },
     "liblynx": {
       "lib_name": "liblynx",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4996,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1301,7 +1297,7 @@
     },
     "liblynx-imageloader": {
       "lib_name": "liblynx-imageloader",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1199,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1320,7 +1316,7 @@
     },
     "liblynx_krypton": {
       "lib_name": "liblynx_krypton",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6371,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1339,7 +1335,7 @@
     },
     "liblynx_markdown": {
       "lib_name": "liblynx_markdown",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 11101,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1358,7 +1354,7 @@
     },
     "liblynx_v8_bridge": {
       "lib_name": "liblynx_v8_bridge",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5186,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1377,7 +1373,7 @@
     },
     "liblynxbase": {
       "lib_name": "liblynxbase",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4824,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1396,7 +1392,7 @@
     },
     "liblynxsecurity": {
       "lib_name": "liblynxsecurity",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1914,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1415,7 +1411,7 @@
     },
     "liblynxtrace": {
       "lib_name": "liblynxtrace",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 7689,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1434,7 +1430,7 @@
     },
     "libmdlttkmedianetloader": {
       "lib_name": "libmdlttkmedianetloader",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5892,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1453,7 +1449,7 @@
     },
     "libmetasec_ov": {
       "lib_name": "libmetasec_ov",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5203,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1472,7 +1468,7 @@
     },
     "libmiddle-bridge": {
       "lib_name": "libmiddle-bridge",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 47242,
       "gate1_passed": true,
       "gate2_opcode_count": 13,
@@ -1487,7 +1483,7 @@
     },
     "libmiddleware": {
       "lib_name": "libmiddleware",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 105474,
       "gate1_passed": true,
       "gate2_opcode_count": 30,
@@ -1502,7 +1498,7 @@
     },
     "libmonitorcollector-lib": {
       "lib_name": "libmonitorcollector-lib",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6457,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1521,7 +1517,7 @@
     },
     "libnapi": {
       "lib_name": "libnapi",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4690,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1540,7 +1536,7 @@
     },
     "libnative-filters": {
       "lib_name": "libnative-filters",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 19039,
       "gate1_passed": true,
       "gate2_opcode_count": 6,
@@ -1555,7 +1551,7 @@
     },
     "libnativeaudio": {
       "lib_name": "libnativeaudio",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 52738,
       "gate1_passed": true,
       "gate2_opcode_count": 57,
@@ -1570,7 +1566,7 @@
     },
     "libnewep": {
       "lib_name": "libnewep",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6223,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1589,7 +1585,7 @@
     },
     "libnms": {
       "lib_name": "libnms",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 908,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1608,7 +1604,7 @@
     },
     "libnpth": {
       "lib_name": "libnpth",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 921,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1627,7 +1623,7 @@
     },
     "libnpth_bt": {
       "lib_name": "libnpth_bt",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 960,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1646,7 +1642,7 @@
     },
     "libnpth_dl": {
       "lib_name": "libnpth_dl",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 960,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1665,7 +1661,7 @@
     },
     "libnpth_dumper": {
       "lib_name": "libnpth_dumper",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5604,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1684,7 +1680,7 @@
     },
     "libnpth_fd_tracker": {
       "lib_name": "libnpth_fd_tracker",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1064,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1703,7 +1699,7 @@
     },
     "libnpth_fp_unw": {
       "lib_name": "libnpth_fp_unw",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1012,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1722,7 +1718,7 @@
     },
     "libnpth_heap_tracker": {
       "lib_name": "libnpth_heap_tracker",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1090,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1741,7 +1737,7 @@
     },
     "libnpth_logcat": {
       "lib_name": "libnpth_logcat",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1012,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1760,7 +1756,7 @@
     },
     "libnpth_ref_monitor": {
       "lib_name": "libnpth_ref_monitor",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1077,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1779,7 +1775,7 @@
     },
     "libnpth_repair": {
       "lib_name": "libnpth_repair",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1012,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1798,7 +1794,7 @@
     },
     "libnpth_tls_monitor": {
       "lib_name": "libnpth_tls_monitor",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1077,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1817,7 +1813,7 @@
     },
     "libnpth_unw": {
       "lib_name": "libnpth_unw",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6415,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1836,7 +1832,7 @@
     },
     "libnpth_unwind": {
       "lib_name": "libnpth_unwind",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 7483,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1855,7 +1851,7 @@
     },
     "libnpth_vm_monitor": {
       "lib_name": "libnpth_vm_monitor",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1064,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1874,7 +1870,7 @@
     },
     "libnpth_xasan": {
       "lib_name": "libnpth_xasan",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1175,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1893,7 +1889,7 @@
     },
     "libnuro": {
       "lib_name": "libnuro",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 11437,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1912,7 +1908,7 @@
     },
     "libopus": {
       "lib_name": "libopus",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 921,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1931,7 +1927,7 @@
     },
     "liborbuculum": {
       "lib_name": "liborbuculum",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6740,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1950,7 +1946,7 @@
     },
     "liborbuculumadapter": {
       "lib_name": "liborbuculumadapter",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4951,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1969,7 +1965,7 @@
     },
     "libosfix": {
       "lib_name": "libosfix",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6190,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -1988,7 +1984,7 @@
     },
     "libpglarmor": {
       "lib_name": "libpglarmor",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1088,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2007,7 +2003,7 @@
     },
     "libpl_droidsonroids_gif": {
       "lib_name": "libpl_droidsonroids_gif",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5932,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2026,7 +2022,7 @@
     },
     "libpns_ttmachine_adapter": {
       "lib_name": "libpns_ttmachine_adapter",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 150427,
       "gate1_passed": true,
       "gate2_opcode_count": 504,
@@ -2041,7 +2037,7 @@
     },
     "libppsec": {
       "lib_name": "libppsec",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 2686,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2060,7 +2056,7 @@
     },
     "libpreload": {
       "lib_name": "libpreload",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6786,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2079,7 +2075,7 @@
     },
     "libprofiler": {
       "lib_name": "libprofiler",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 973,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2098,7 +2094,7 @@
     },
     "libpumbaa-network": {
       "lib_name": "libpumbaa-network",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 11861,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2117,7 +2113,7 @@
     },
     "libpush_ka": {
       "lib_name": "libpush_ka",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1088,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2136,7 +2132,7 @@
     },
     "libpythonA": {
       "lib_name": "libpythonA",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6309,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2155,7 +2151,7 @@
     },
     "libpythonA_RelWithDebInfo": {
       "lib_name": "libpythonA_RelWithDebInfo",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6504,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2174,7 +2170,7 @@
     },
     "libquick": {
       "lib_name": "libquick",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4603,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2193,7 +2189,7 @@
     },
     "libraphael": {
       "lib_name": "libraphael",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1576,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2212,7 +2208,7 @@
     },
     "libres_pool": {
       "lib_name": "libres_pool",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 973,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2231,7 +2227,7 @@
     },
     "libretouch_sdk": {
       "lib_name": "libretouch_sdk",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 106692,
       "gate1_passed": true,
       "gate2_opcode_count": 9,
@@ -2246,7 +2242,7 @@
     },
     "librex": {
       "lib_name": "librex",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 2448,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2265,7 +2261,7 @@
     },
     "libropaencrypt": {
       "lib_name": "libropaencrypt",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1176,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2284,7 +2280,7 @@
     },
     "libserval_svg": {
       "lib_name": "libserval_svg",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 999,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2303,7 +2299,7 @@
     },
     "libshadowhook": {
       "lib_name": "libshadowhook",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 71396,
       "gate1_passed": true,
       "gate2_opcode_count": 106,
@@ -2318,7 +2314,7 @@
     },
     "libshadowhook_nothing": {
       "lib_name": "libshadowhook_nothing",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1103,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2338,7 +2334,7 @@
     },
     "libskity": {
       "lib_name": "libskity",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 146021,
       "gate1_passed": true,
       "gate2_opcode_count": 60,
@@ -2353,7 +2349,7 @@
     },
     "libsliver": {
       "lib_name": "libsliver",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1899,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2372,7 +2368,7 @@
     },
     "libspeechengine": {
       "lib_name": "libspeechengine",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 7635,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2390,7 +2386,7 @@
     },
     "libspeechepg": {
       "lib_name": "libspeechepg",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 7596,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2409,7 +2405,7 @@
     },
     "libspeechsdk": {
       "lib_name": "libspeechsdk",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 81915,
       "gate1_passed": true,
       "gate2_opcode_count": 7,
@@ -2424,7 +2420,7 @@
     },
     "libsscronet": {
       "lib_name": "libsscronet",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6918,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2443,7 +2439,7 @@
     },
     "libstatic-webp": {
       "lib_name": "libstatic-webp",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 3316,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2462,7 +2458,7 @@
     },
     "libsys-platform": {
       "lib_name": "libsys-platform",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1423,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2481,7 +2477,7 @@
     },
     "libsysoptimizer": {
       "lib_name": "libsysoptimizer",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 11020,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2500,7 +2496,7 @@
     },
     "libtailor": {
       "lib_name": "libtailor",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6110,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2519,7 +2515,7 @@
     },
     "libterrain": {
       "lib_name": "libterrain",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4362,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2538,7 +2534,7 @@
     },
     "libtexturerender_native": {
       "lib_name": "libtexturerender_native",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 15123,
       "gate1_passed": true,
       "gate2_opcode_count": 34,
@@ -2553,7 +2549,7 @@
     },
     "libtobEmbedPagEncrypt": {
       "lib_name": "libtobEmbedPagEncrypt",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1363,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2572,7 +2568,7 @@
     },
     "libtt_c2pa_sdk": {
       "lib_name": "libtt_c2pa_sdk",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1012,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2591,7 +2587,7 @@
     },
     "libtt_ugen_layout": {
       "lib_name": "libtt_ugen_layout",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4971,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2610,7 +2606,7 @@
     },
     "libttboringssl": {
       "lib_name": "libttboringssl",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 193784,
       "gate1_passed": true,
       "gate2_opcode_count": 417,
@@ -2625,7 +2621,7 @@
     },
     "libttcrypto": {
       "lib_name": "libttcrypto",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 126065,
       "gate1_passed": true,
       "gate2_opcode_count": 201,
@@ -2640,7 +2636,7 @@
     },
     "libttdemux": {
       "lib_name": "libttdemux",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 111322,
       "gate1_passed": true,
       "gate2_opcode_count": 148,
@@ -2655,7 +2651,7 @@
     },
     "libttffmpeg": {
       "lib_name": "libttffmpeg",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 76705,
       "gate1_passed": true,
       "gate2_opcode_count": 121,
@@ -2670,7 +2666,7 @@
     },
     "libttheif_dec": {
       "lib_name": "libttheif_dec",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 79359,
       "gate1_passed": true,
       "gate2_opcode_count": 51,
@@ -2685,7 +2681,7 @@
     },
     "libttkmedianet": {
       "lib_name": "libttkmedianet",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 7825,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2704,7 +2700,7 @@
     },
     "libttmplayer": {
       "lib_name": "libttmplayer",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 121165,
       "gate1_passed": true,
       "gate2_opcode_count": 324,
@@ -2719,7 +2715,7 @@
     },
     "libttmverify": {
       "lib_name": "libttmverify",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 986,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2738,7 +2734,7 @@
     },
     "libttmverifylite": {
       "lib_name": "libttmverifylite",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1038,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2757,7 +2753,7 @@
     },
     "libttr": {
       "lib_name": "libttr",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4598,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2776,7 +2772,7 @@
     },
     "libtttext_lite": {
       "lib_name": "libtttext_lite",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 6129,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2795,7 +2791,7 @@
     },
     "libundead_native_ability_q": {
       "lib_name": "libundead_native_ability_q",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4467,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2814,7 +2810,7 @@
     },
     "liburiparser": {
       "lib_name": "liburiparser",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 986,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2833,7 +2829,7 @@
     },
     "libvcbasekit": {
       "lib_name": "libvcbasekit",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 4923,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2852,7 +2848,7 @@
     },
     "libvcn": {
       "lib_name": "libvcn",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5265,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2871,7 +2867,7 @@
     },
     "libvcnverify": {
       "lib_name": "libvcnverify",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 986,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2890,7 +2886,7 @@
     },
     "libvcnverifylite": {
       "lib_name": "libvcnverifylite",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 1038,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2909,7 +2905,7 @@
     },
     "libwasm": {
       "lib_name": "libwasm",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 3713,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2928,7 +2924,7 @@
     },
     "libwcdb": {
       "lib_name": "libwcdb",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 921,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2947,7 +2943,7 @@
     },
     "libwhisper": {
       "lib_name": "libwhisper",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 960,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2966,7 +2962,7 @@
     },
     "libworker": {
       "lib_name": "libworker",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 5538,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -2985,7 +2981,7 @@
     },
     "libyuv": {
       "lib_name": "libyuv",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 908,
       "gate1_passed": false,
       "gate2_opcode_count": 0,
@@ -3004,7 +3000,7 @@
     },
     "libzoin": {
       "lib_name": "libzoin",
-      "inspected_at": "2026-10-26 20:37:22",
+      "inspected_at": "2026-10-26 21:01:26",
       "gate1_size_bytes": 921,
       "gate1_passed": false,
       "gate2_opcode_count": 0,

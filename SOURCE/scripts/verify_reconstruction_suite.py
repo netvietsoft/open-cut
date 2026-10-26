@@ -4877,6 +4877,111 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 51. KIỂM CHỨNG libdelta.so (ByteDance Zero-Data-Protection / Delta Crypto)
+    # =========================================================================
+    def verify_libdelta(self):
+        print("\n[51] Đang kiểm chứng libdelta.so (ByteDance Zero-Data-Protection / Delta Crypto Engine)...")
+        delta_dir = GIAIMA_DIR / "libdelta"
+        files = [
+            "delta_types.h",
+            "delta_crypto_primitives.h",
+            "delta_crypto_primitives.cpp",
+            "delta_jni_engine.h",
+            "delta_jni_engine.cpp",
+            "delta_interface.h",
+            "delta_interface.cpp",
+            "delta_pseudocode.cpp"
+        ]
+        all_exist = all((delta_dir / f).exists() for f in files)
+        total_size = sum((delta_dir / f).stat().st_size for f in files if (delta_dir / f).exists())
+        self.assert_test(
+            "Delta_SourceVolume",
+            all_exist and total_size > 60000,
+            f"Đầy đủ 8 file C++17/H libdelta với dung lượng {total_size} bytes (> 60KB)"
+        )
+
+        content = ""
+        for f in files:
+            fp = delta_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 2. Wire packet format (34B = 0x22 overhead, 0x01bd magic, 16B IV, 16B GCM tag)
+        has_wire = all(tok in content for tok in [
+            "kDeltaPacketMagicLE",
+            "0x01bd",
+            "kDeltaPacketOverhead",
+            "0x22",
+            "kEvpCtrlGcmSetIvLen",
+            "kEvpCtrlGcmGetTag",
+            "kEvpCtrlGcmSetTag"
+        ])
+        self.assert_test(
+            "Delta_WirePacket34BAndMagic0x01bd",
+            has_wire,
+            "Khớp gói tin AES-256-GCM bù 34 byte (0x22: magic 0x01bd @ 0x001df0 & 0x002248, IV 16B, Tag 16B)"
+        )
+
+        # 3. NIST P-256 (0x19f) & SEC1 compressed (33B) / uncompressed (65B)
+        has_p256 = all(tok in content for tok in [
+            "kNidPrime256v1",
+            "0x19f",
+            "g_bss_0x008000_p256_group",
+            "EC_POINT_point2oct",
+            "EC_POINT_oct2point",
+            "kPublicKeyLength",
+            "kUncompressPublicKeyLength"
+        ])
+        self.assert_test(
+            "Delta_P256GroupAndSec1PointSerialization",
+            has_p256,
+            "Khớp đường cong NIST P-256 (NID 0x19f = 415), con trỏ đơn thể .bss 0x008000 và tuần tự hóa khóa SEC1 33B/65B"
+        )
+
+        # 4. ECDH + HKDF-SHA256 AES-256 key derivation
+        has_ecdh_hkdf = all(tok in content for tok in [
+            "ECDH_compute_key",
+            "HKDF",
+            "EVP_sha256",
+            "hmac_sha256",
+            "encapsulates_aes_key"
+        ])
+        self.assert_test(
+            "Delta_EcdhAndHkdfSha256Derivation",
+            has_ecdh_hkdf,
+            "Khớp dẫn xuất khóa đối xứng 32B qua ECDH_compute_key (0x001ae0) + HKDF-SHA256 (0x001880)"
+        )
+
+        # 5. 4 internal .text helper functions (0x002d0c..0x003228)
+        has_helpers = all(tok in content for tok in [
+            "create_EC_KEY_from_private_key_bin",
+            "create_EC_KEY_from_public_key_bin",
+            "generate_keypair",
+            "sign_ecdsa_sha256"
+        ])
+        self.assert_test(
+            "Delta_4InternalTextHelpers",
+            has_helpers,
+            "Khớp 4 hàm nội bộ .text: create_EC_KEY_from_private_key_bin (0x002d0c), create_EC_KEY_from_public_key_bin (0x002f00), generate_keypair (0x00307c), sign (0x003154)"
+        )
+
+        # 6. All 19 exported JNI methods across Delta and DeltaSignerVerifier
+        has_jni = all(tok in content for tok in [
+            "Java_net_bytedance_zdplib_Delta_generateAesKey",
+            "Java_net_bytedance_zdplib_Delta_encrypt",
+            "Java_net_bytedance_zdplib_Delta_decrypt",
+            "Java_net_bytedance_zdplib_Delta_sign",
+            "Java_net_bytedance_zdplib_Delta_verify",
+            "Java_net_bytedance_zdplib_DeltaSignerVerifier_verify",
+            "Java_net_bytedance_zdplib_DeltaSignerVerifier_getPublicKeyUncompressed"
+        ])
+        self.assert_test(
+            "Delta_19ExportedJniMethods",
+            has_jni,
+            "Khớp toàn bộ 19 hàm JNI xuất của net.bytedance.zdplib.Delta (12 hàm) và DeltaSignerVerifier (7 hàm, verify nhảy đuôi tại 0x002b34)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -4931,6 +5036,7 @@ class AutonomousVerificationEngine:
         self.verify_libBDMicroPythonVM()
         self.verify_libBDPythonVM()
         self.verify_libconfigcenter()
+        self.verify_libdelta()
         self.verify_overall_governance()
 
 
