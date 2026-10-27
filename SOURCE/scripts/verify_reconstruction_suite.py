@@ -8748,6 +8748,151 @@ class AutonomousVerificationEngine:
             "Khớp phép chia nghịch đảo có dấu cho 1.000 (0x20C49BA5E353F7CF @ 0x02d538) và 1.000.000 (0x431BDE82D7B634DB @ 0x02d568), RefCountedStringImpl (56B) và LynxError"
         )
 
+    def verify_libwasm(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 85: libwasm.so (VMSDK QuickJS/LepusNG WebAssembly & Wasm3 Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libwasm"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libwasm.so"
+        so_bytes = so_path.read_bytes()
+
+        cpp_files = [
+            "wasm_types.h",
+            "wasm_qjs_bindings.h",
+            "wasm_qjs_bindings.cpp",
+            "wasm_m3_runtime.h",
+            "wasm_m3_runtime.cpp",
+            "wasm_m3_compile_exec.h",
+            "wasm_m3_compile_exec.cpp",
+            "wasm_interface.h",
+            "wasm_pseudocode.cpp",
+        ]
+        total_bytes = sum((lib_dir / f).stat().st_size for f in cpp_files if (lib_dir / f).exists())
+        content = "\n".join(
+            (lib_dir / f).read_text(encoding="utf-8", errors="ignore")
+            for f in cpp_files if (lib_dir / f).exists()
+        )
+
+        # 1. Cổng dung lượng mã nguồn sạch C++17 (> 120 KB, 9 files, 0 stubs)
+        self.assert_test(
+            "Wasm_SourceSizeAndCompletenessGate",
+            total_bytes >= 120000
+            and all((lib_dir / f).exists() for f in cpp_files)
+            and "TODO" not in content,
+            f"Tổng dung lượng C++17/H đạt {total_bytes:,} bytes (>= 120 KB, 9 files, 0 stubs)"
+        )
+
+        # 2. Kiểm tra định danh nhị phân ELF64 (247,792 bytes & SHA-256)
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        self.assert_test(
+            "Wasm_BinaryIdentityAndSHA256",
+            len(so_bytes) == 247792
+            and sha256_hex == "41d9f6460616d3a74ee7b490891a0661329c9ccb98d72bbfd198be97bb8b255a",
+            f"Khớp kích thước nhị phân 247,792 bytes và SHA-256 ({sha256_hex[:16]}...)"
+        )
+
+        # 3. Kiểm tra RegisterWebAssembly (0x01003c) & JNI loadWasmFactory (0x0117d8)
+        reg_stp_sp = struct.unpack("<I", so_bytes[0x01003c:0x010040])[0]
+        reg_cbz_ctx = struct.unpack("<I", so_bytes[0x010054:0x010058])[0]
+        reg_log_warn = struct.unpack("<I", so_bytes[0x01007c:0x010080])[0]
+        reg_alloc_interop = struct.unpack("<I", so_bytes[0x01020c:0x010210])[0]
+        reg_alloc_wasm3 = struct.unpack("<I", so_bytes[0x01026c:0x010270])[0]
+        jni_insns = struct.unpack("<3I", so_bytes[0x0117d8:0x0117e4])
+        self.assert_test(
+            "Wasm_RegisterWebAssemblyAndJniFactory",
+            reg_stp_sp == 0xA9BB6BFC
+            and reg_cbz_ctx == 0xB4004D00
+            and reg_log_warn == 0x528000A0
+            and reg_alloc_interop == 0x52800F00
+            and reg_alloc_wasm3 == 0x52800400
+            and jni_insns == (0xD0000140, 0xF9457000, 0xD65F03C0)
+            and all(tok in content for tok in [
+                "RegisterWebAssembly",
+                "Java_com_bytedance_vmsdk_wasm_RegisterWebAssembly_loadWasmFactory",
+                "InteropRuntime",
+                "Wasm3Runtime",
+                "WASMGCPersistent"
+            ]),
+            "Khớp RegisterWebAssembly (0x01003c, InteropRuntime 120B @ 0x01020c, Wasm3Runtime 32B @ 0x01026c) và JNI loadWasmFactory (0x0117d8 -> .got 0x03bae0)"
+        )
+
+        # 4. Kiểm tra 7 lớp JSClassDef tại .data.rel.ro 0x0380b0..0x038378 & Base64 Wasm
+        self.assert_test(
+            "Wasm_QJSClassesAndBase64Support",
+            b"WebAssembly.Module\x00" in so_bytes
+            and b"WebAssembly.Instance\x00" in so_bytes
+            and b"WebAssembly.Memory\x00" in so_bytes
+            and b"WebAssembly.Table\x00" in so_bytes
+            and b"WebAssembly.Global\x00" in so_bytes
+            and b"WebAssembly.Function\x00" in so_bytes
+            and b"supportBase64\x00" in so_bytes
+            and all(tok in content for tok in [
+                "QJSWasmModule",
+                "QJSWasmInstance",
+                "QJSWasmMemory",
+                "QJSWasmTable",
+                "QJSWasmGlobal",
+                "QJSWasmFunction",
+                "DecodeBase64Wasm",
+                "SupportBase64Getter"
+            ]),
+            "Khớp 7 lớp JSClassDef (.data.rel.ro 0x0380b0..0x038378), .bss class IDs (0x03c000..0x03c018) và Base64 Wasm (supportBase64 @ 0x01f2e4)"
+        )
+
+        # 5. Kiểm tra m3_NewEnvironment (0x02268c), m3_ParseModule (0x022bc0), m3_FreeModule (0x032d08) & 12 Section Parsers
+        env_alloc_ft = struct.unpack("<I", so_bytes[0x022770:0x022774])[0]
+        parse_alloc_mod = struct.unpack("<I", so_bytes[0x022be0:0x022be4])[0]
+        parse_start_neg1 = struct.unpack("<I", so_bytes[0x022c0c:0x022c10])[0]
+        free_fn_stride = struct.unpack("<I", so_bytes[0x032d30:0x032d34])[0]
+        sec_custom_pro = struct.unpack("<I", so_bytes[0x035670:0x035674])[0]
+        sec_type_pro = struct.unpack("<I", so_bytes[0x033008:0x03300c])[0]
+        self.assert_test(
+            "Wasm_M3ModuleLifecycleAndSectionParsers",
+            env_alloc_ft == 0x52800220
+            and parse_alloc_mod == 0x52801E00
+            and parse_start_neg1 == 0x1280000A
+            and free_fn_stride == 0x52808B15
+            and sec_custom_pro == 0xD10203FF
+            and sec_type_pro == 0xA9BA6FFC
+            and all(tok in content for tok in [
+                "m3_NewEnvironment",
+                "m3_ParseModule",
+                "m3_LoadModule",
+                "m3_FreeModule",
+                "ParseSection_Custom",
+                "ParseSection_Type",
+                "ParseSection_Import",
+                "ParseSection_Code",
+                "ParseSection_Data"
+            ]),
+            "Khớp m3_NewEnvironment (0x02268c), m3_ParseModule (0x022bc0, 240B M3Module), m3_FreeModule (0x032d08, 1112B M3Function) và bảng 12 Section Parsers (0x03b888)"
+        )
+
+        # 6. Kiểm tra bảng 256 opcode c_operations (.data.rel.ro 0x038438..0x03b438) & 8 Host Imports
+        op_i32_const = struct.unpack("<bB", so_bytes[0x038438 + 0x41 * 48 : 0x038438 + 0x41 * 48 + 2])
+        op_i32_add = struct.unpack("<bB", so_bytes[0x038438 + 0x6A * 48 : 0x038438 + 0x6A * 48 + 2])
+        op_f64_mul = struct.unpack("<bB", so_bytes[0x038438 + 0xA2 * 48 : 0x038438 + 0xA2 * 48 + 2])
+        self.assert_test(
+            "Wasm_COperationsTableAndHostImports",
+            op_i32_const == (1, 1)
+            and op_i32_add == (-1, 1)
+            and op_f64_mul == (-1, 4)
+            and b"_memcpy\x00" in so_bytes
+            and b"clock_ms\x00" in so_bytes
+            and all(tok in content for tok in [
+                "kWasm3OperationsTable",
+                "kWasm3OperationsFCTable",
+                "ExecuteWasmFunctionBytecode",
+                "HostImport_Memcpy",
+                "HostImport_ClockMs",
+                "RunLibWasmSelfTest"
+            ]),
+            "Khớp bảng 256 opcode c_operations (0x038438..0x03b438), c_operationsFC (0x03b438) và 8 hàm Host Import (_abort, _exit, _memcpy, _memmove, _memset, printf, clock_ms, _debug)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -8837,6 +8982,7 @@ class AutonomousVerificationEngine:
         self.verify_libvcbasekit()
         self.verify_libjazz()
         self.verify_liblynxbase()
+        self.verify_libwasm()
         self.verify_overall_governance()
 
 

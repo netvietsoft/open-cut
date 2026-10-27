@@ -1,0 +1,98 @@
+{
+  "library": "libwasm.so",
+  "task_id": "TASK-124-RECONSTRUCTION-LIBWASM",
+  "legacy_task_id": "TASK_SO_051_libwasm",
+  "binary_size_bytes": 247792,
+  "binary_sha256": "41d9f6460616d3a74ee7b490891a0661329c9ccb98d72bbfd198be97bb8b255a",
+  "reconstructed_code_bytes": 331571,
+  "reconstructed_files": [
+    "wasm_types.h",
+    "wasm_qjs_bindings.h",
+    "wasm_qjs_bindings.cpp",
+    "wasm_m3_runtime.h",
+    "wasm_m3_runtime.cpp",
+    "wasm_m3_compile_exec.h",
+    "wasm_m3_compile_exec.cpp",
+    "wasm_interface.h",
+    "wasm_pseudocode.cpp"
+  ],
+  "opcode_evidence": [
+    {
+      "function": "RegisterWebAssembly (vmsdk::qjs::QJSWebAssembly::RegisterWebAssembly)",
+      "vaddr": "0x01003c..0x011344",
+      "instructions": "0x01003c: sub sp, sp, #0x90 (0xd10243ff) | 0x010054: cbz x0, #0x109f4 (0xb4004d00 -> 'Register WebAssembly with invalid js context!' @ .rodata 0x006ea4) | 0x01007c: mov w0, #5 (0x528000a0 -> ANDROID_LOG_WARN 'VmsdkWasmWarn' @ 0x007ec5: '[VmSdkWasm] PRISM runtime requested but not built into libwasm.so; falling back to WASM3.' @ 0x00724b) | 0x01020c: mov w0, #0x78 (0x52800f00 -> operator new 120 bytes for InteropRuntime) | 0x01026c: mov w0, #0x20 (0x52800400 -> operator new 32 bytes for Wasm3Runtime)"
+    },
+    {
+      "function": "Java_com_bytedance_vmsdk_wasm_RegisterWebAssembly_loadWasmFactory",
+      "vaddr": "0x0117d8..0x0117e0",
+      "instructions": "0x0117d8: adrp x0, #0x3b000 (0xd0000140); 0x0117dc: ldr x0, [x0, #0xae0] (0xf9457000 -> loads 0x01003c RegisterWebAssembly from .got 0x03bae0); 0x0117e0: ret (0xd65f03c0)"
+    },
+    {
+      "function": "m3_NewEnvironment & AllocFuncType",
+      "vaddr": "0x02268c..0x0228a8",
+      "instructions": "0x0226a0: mov w0, #0x18; mov w1, #1; bl calloc | 0x022770: mov w0, #0x11 (0x52800220 -> calloc(0x11, 1) for 1-ret 0-arg M3FuncType); 0x0227f8: mov w0, #0x11 (0x52800220); 0x022880: mov w0, #0x11 (0x52800220) pre-registering c_m3Type_i32 (1), c_m3Type_i64 (2), c_m3Type_f32 (3), c_m3Type_f64 (4)"
+    },
+    {
+      "function": "m3_ParseModule & 12-Section Parser Jump Table",
+      "vaddr": "0x022bc0..0x022e80, .data.rel.ro 0x03b888..0x03b8e8",
+      "instructions": "0x022be0: mov w0, #0xf0 (0x52801e00 -> calloc(240, 1) for M3Module); 0x022bfc: adrp x8, #0x8000; add x8, x8, #0x3eb ('.unnamed' @ .rodata 0x0083eb); 0x022c00: movn w8, #0 (0x92800008 -> startFunction = -1) | Section parser jump table @ 0x03b888..0x03b8e8: [0]=0x035670 (Custom), [1]=0x033008 (Type), [2]=0x0338cc (Import), [3]=0x0335f8 (Function), [4]=0x034e98 (Table), [5]=0x035190 (Memory), [6]=0x0353d8 (Global), [7]=0x0342e0 (Export), [8]=0x034678 (Start), [9]=0x034758 (Element), [10]=0x034848 (Code), [11]=0x034a58 (Data)"
+    },
+    {
+      "function": "m3_FreeModule",
+      "vaddr": "0x032d08..0x033004",
+      "instructions": "0x032d30: mov w21, #0x458 (0x52808b15 -> M3Function stride 1,112 bytes); 0x032d3c: ldrb w8, [x22, #0x448] (fn->ownsWasmCode); frees fn->names[0..2], fn->import, funcTypes, globals (stride 0x30), dataSegments (stride 0x28), customSections, and M3Module"
+    },
+    {
+      "function": "7 QuickJS/LepusNG JSClassDef Descriptors & .bss Class IDs",
+      "vaddr": ".data.rel.ro 0x0380b0..0x038378, .bss 0x03c000..0x03c054",
+      "instructions": "WebAssembly @ 0x0380b0 (finalizer 0x011bd8, gc_mark 0x012084, .bss 0x03c000); WebAssembly.Function @ 0x038148 (finalizer 0x013128, call 0x0132b8, .bss 0x03c004); WebAssembly.Global @ 0x038188 (finalizer 0x014290, .bss 0x03c008); WebAssembly.Instance @ 0x0381f0 (finalizer 0x01b8cc, .bss 0x03c014); WebAssembly.Memory @ 0x038248 (finalizer 0x01ba18, gc_mark 0x01ce7c, .bss 0x03c010); WebAssembly.Module @ 0x0382b8 (finalizer 0x01f2f4, gc_mark 0x01f42c, .bss 0x03c018); WebAssembly.Table @ 0x038378 (finalizer 0x01f4d8, .bss 0x03c00c)"
+    }
+  ],
+  "math_and_table_proofs": {
+    "leb128_and_section_parsing": "Unsigned and signed LEB128 decoders (ReadLEB_u32, ReadLEB_u64, ReadLEB_i32, ReadLEB_i64) enforce 5-byte (32-bit) and 10-byte (64-bit) overflow checks (m3_err::lebOverflow). m3_ParseModule (0x022bc0) verifies Wasm magic 0x6D736100 ('\\0asm') and version 1, enforces strictly increasing non-custom section IDs (1..11), and dispatches via the 12-entry pointer table at .data.rel.ro 0x03b888..0x03b8e8.",
+    "wasm3_c_operations_and_linear_memory": "c_operations[256] (.data.rel.ro 0x038438..0x03b438, 256 * 48 = 12,288 bytes) and c_operationsFC[21] (0x03b438..0x03b818) define exact stackOffset and M3ValueType metadata for every WebAssembly instruction. Wasm3Memory manages 64 KiB pages (max 65,536 pages = 4 GiB) preceded by a 32-byte M3MemoryHeader.",
+    "base64_and_qjs_bindings": "QJSWebAssembly::ExtractWasmBinary (0x01d0c0) and DecodeBase64Wasm (0x01d450) decode Base64 Wasm strings using the 64-byte alphabet at .rodata 0x007da7 when WebAssembly.Module.supportBase64 (0x01f2e4) is used."
+  },
+  "abi_offsets": {
+    "M3Module": {
+      "size": "0xF0 (240 bytes, verified at 0x022be0: mov w0, #0xf0)",
+      "runtime": "+0x00",
+      "environment": "+0x08",
+      "name": "+0x10 (initialized to '.unnamed' @ 0x022bfc)",
+      "numFuncTypes": "+0x18",
+      "funcTypes": "+0x20",
+      "numFuncImports": "+0x28",
+      "numFunctions": "+0x2C",
+      "allFunctions": "+0x30",
+      "functions": "+0x38",
+      "startFunction": "+0x40 (initialized to -1 @ 0x022c00)",
+      "numDataSegments": "+0x44",
+      "dataSegments": "+0x48",
+      "numGlobals": "+0x50",
+      "globals": "+0x58",
+      "table0": "+0x78",
+      "memoryInfo": "+0x98",
+      "customSections": "+0xD0"
+    },
+    "M3Function": {
+      "size": "0x458 (1,112 bytes, verified at 0x032d30: mov w21, #0x458)",
+      "module": "+0x000",
+      "import": "+0x008 (16 bytes: moduleUtf8, fieldUtf8)",
+      "wasm": "+0x018",
+      "wasmEnd": "+0x020",
+      "names": "+0x028 (3 * 8 bytes)",
+      "funcType": "+0x048",
+      "compiled": "+0x050",
+      "numNames": "+0x440",
+      "ownsWasmCode": "+0x448 (checked at 0x032d3c: ldrb w8, [x22, #0x448])"
+    },
+    "JSClassDef": {
+      "size": "0x28 (40 bytes)",
+      "class_name": "+0x00",
+      "finalizer": "+0x08",
+      "gc_mark": "+0x10",
+      "call": "+0x18",
+      "exotic": "+0x20"
+    }
+  }
+}

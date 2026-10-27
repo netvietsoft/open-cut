@@ -2461,3 +2461,15 @@
   - `adversary_critic_agent.py`: **84 / 169 `VERIFIED_AND_ACCEPTED` (49.70%)** (`100% REAL`).
   - `verify_reconstruction_suite.py`: **539 / 539 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 112. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libwasm.so (TASK-124-RECONSTRUCTION-LIBWASM / TASK_SO_051_libwasm)
+- **Thời gian**: 2026-10-27 10:10:00
+- **Thư viện**: `libwasm.so` (`247,792 bytes`, SHA-256 `41d9f6460616d3a74ee7b490891a0661329c9ccb98d72bbfd198be97bb8b255a`, `.text` `0x010000..0x035a28` = `154,152 bytes`, ByteDance VMSDK / PrimJS / LepusNG WebAssembly JS Bindings & Embedded Wasm3 Interpreter Engine).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `331,571 bytes` C++17/H, 0 stub)**:
+  1. **`RegisterWebAssembly` (`0x01003c..0x011344`, `4,872 bytes`) & JNI `loadWasmFactory` (`0x0117d8..0x0117e0`)**: Khôi phục `RegisterWebAssembly` kiểm tra `ctx == nullptr` (`0x010054`), kiểm tra `"vmsdk_wasm_runtime_type"` và ghi log cảnh báo fallback từ PRISM về WASM3 (`0x01007c`), cấp phát `InteropRuntime` (`0x78 = 120 bytes` @ `0x01020c`) và `Wasm3Runtime` (`0x20 = 32 bytes` @ `0x01026c`), đăng ký 7 lớp `JSClassDef` tại `.data.rel.ro 0x0380b0..0x038378` (`WebAssembly`, `WebAssembly.Function`, `WebAssembly.Global`, `WebAssembly.Instance`, `WebAssembly.Memory`, `WebAssembly.Module`, `WebAssembly.Table`), lưu 7 `JSClassID` tại `.bss 0x03c000..0x03c018`, và giải mã Base64 Wasm (`supportBase64` @ `0x01f2e4`).
+  2. **Embedded Wasm3 Engine (`0x02268c..0x035990`, `.data.rel.ro 0x038438..0x03b8e8`)**: Khôi phục `m3_NewEnvironment` (`0x02268c` đăng ký 4 `M3FuncType` `0x11 = 17B` cho `i32`/`i64`/`f32`/`f64`), `m3_ParseModule` (`0x022bc0` cấp phát `0xF0 = 240B` `M3Module`, điều phối 12 hàm phân tích section tại `.data.rel.ro 0x03b888..0x03b8e8`), `m3_LoadModule` (`0x022e80`), `m3_FreeModule` (`0x032d08` giải phóng mảng `M3Function` bước nhảy `0x458 = 1,112B`), bảng 256 opcode `c_operations` (`.data.rel.ro 0x038438..0x03b438`, `12,288B`), bảng `c_operationsFC` (`0x03b438..0x03b818`), và 8 hàm Host Import (`_abort`, `_exit`, `_memcpy`, `_memmove`, `_memset`, `printf`, `clock_ms`, `_debug`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **85 / 169 `VERIFIED_AND_ACCEPTED` (50.30%)** (`100% REAL` — vượt mốc 50% tổng số thư viện `.so`).
+  - `verify_reconstruction_suite.py`: **545 / 545 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

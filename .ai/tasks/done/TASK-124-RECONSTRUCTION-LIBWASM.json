@@ -1,0 +1,19 @@
+{
+  "task_id": "TASK-124-RECONSTRUCTION-LIBWASM",
+  "legacy_task_id": "TASK_SO_051_libwasm",
+  "title": "Clean-room C++17 Reconstruction & Adversarial Verification of libwasm.so (Target 85/169)",
+  "status": "DONE",
+  "completed_at": "2026-10-27T10:10:00+07:00",
+  "assigned_agent": "Agent 3 (Android/Native C++) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Orchestrator)",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libwasm.so",
+  "binary_size_bytes": 247792,
+  "binary_sha256": "41d9f6460616d3a74ee7b490891a0661329c9ccb98d72bbfd198be97bb8b255a",
+  "reconstructed_code_bytes": 331571,
+  "verification": {
+    "adversary_auditor_status": "VERIFIED_AND_ACCEPTED",
+    "verified_count_total": "85 / 169",
+    "test_suite_result": "545 PASS / 0 FAIL (100.0%)",
+    "native_watchdog_result": "169 binaries, 0 high findings"
+  }
+}

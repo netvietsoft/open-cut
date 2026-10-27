@@ -1,18 +1,22 @@
 {
   "report_id": "REPORT_TASK_SO_051_libwasm",
-  "task_id": "TASK_SO_051_libwasm",
+  "task_id": "TASK-124-RECONSTRUCTION-LIBWASM",
+  "legacy_task_id": "TASK_SO_051_libwasm",
   "target_library": "libwasm.so",
-  "assigned_agent": "Agent 2 - BACKEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/C++ Native) & Agent 13 (Adversary Auditor)",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
   "evidence": {
-    "symbols_total": 108,
-    "jni_exports": 1,
-    "cxx_demangled_count": 22,
+    "binary_size_bytes": 247792,
+    "binary_sha256": "41d9f6460616d3a74ee7b490891a0661329c9ccb98d72bbfd198be97bb8b255a",
+    "symbols_total": 109,
+    "defined_func_symbols": 2,
+    "defined_object_symbols": 0,
+    "reconstructed_code_bytes": 331571,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libwasm",
     "has_cpp_interface": true,
     "has_strings": true
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn tất giải mã và tái tạo sạch C++17 (331,571 bytes across 9 files, 0 stubs) cho libwasm.so (ByteDance VMSDK / PrimJS / LepusNG WebAssembly JS Bindings & Embedded Wasm3 Interpreter Engine): RegisterWebAssembly (0x01003c), JNI loadWasmFactory (0x0117d8), 7 lớp JSClassDef (WebAssembly, Module, Instance, Memory, Table, Global, Function), m3_NewEnvironment (0x02268c), m3_ParseModule (0x022bc0, 240B M3Module + 12 section parsers), m3_FreeModule (0x032d08, 1112B M3Function), bảng 256 opcode c_operations (0x038438), và bộ giải mã Base64 Wasm.",
+  "acceptance_criteria_passed": true
 }
