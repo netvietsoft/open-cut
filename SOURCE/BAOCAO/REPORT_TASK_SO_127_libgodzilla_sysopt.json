@@ -1,18 +1,34 @@
 {
   "report_id": "REPORT_TASK_SO_127_libgodzilla_sysopt",
   "task_id": "TASK_SO_127_libgodzilla_sysopt",
+  "governance_task_id": "TASK-116-RECONSTRUCTION-LIBGODZILLA_SYSOPT",
   "target_library": "libgodzilla-sysopt.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 - ANDROID/NATIVE & Agent 0 - ORCHESTRATOR",
+  "status": "RECONSTRUCTED_AND_VERIFIED",
+  "completion_percentage": 100,
   "evidence": {
+    "binary_size_bytes": 164440,
+    "binary_sha256": "28605f81e2c8d9d0fae96d52a70efc5192c90d93377ddadff09726874911d704",
     "symbols_total": 143,
     "jni_exports": 10,
     "cxx_demangled_count": 61,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libgodzilla-sysopt",
+    "output_directory": "SOURCE/GIAI-MA/libgodzilla-sysopt",
+    "reconstructed_files": [
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/godzilla_sysopt_types.h",
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/elf_build_id_xhook.h",
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/elf_build_id_xhook.cpp",
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/apk_cert_sha256_engine.h",
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/apk_cert_sha256_engine.cpp",
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/maps_hook_scanner.h",
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/maps_hook_scanner.cpp",
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/godzilla_sysopt_interface.h",
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/godzilla_sysopt_pseudocode.cpp",
+      "SOURCE/GIAI-MA/libgodzilla-sysopt/README_ANALYSIS.md"
+    ],
+    "proof_json": "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libgodzilla-sysopt.json",
     "has_cpp_interface": true,
     "has_strings": true
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn tất giải mã nhị phân AArch64 và tái dựng sạch C++17 (10 tệp, >97 KB mã C++/H) cho libgodzilla-sysopt.so (164,440 bytes), bao gồm toàn bộ 10 hàm xuất JNI (IvimageOpt x2, UbsanOpt x2, PthreadCreateHook x2, ThreadHook x2, ApkSha256 x2), bộ đọc .note.gnu.build-id ELF64 (0x007d30), xHook PLT/GOT engine (0x008304..0x00aa38) với kích thước stack mặc định 0x00083000 (536,576 B), trình xử lý SIGBUS BUS_ADRERR 3 lần thử lại (0x00aaf4), bộ đọc APK qua syscall trực tiếp (svc #0 @ 0x01789c) + PKCS#7 ASN.1 DER + SHA-256 (0x0188e4..0x0195ec), và bộ giải mã 12 từ khóa Hook Framework bằng đồng nhất thức MBA rolling-XOR cùng kiểm tra VMA >39-bit (0x019fb4..0x022684).",
+  "acceptance_criteria_passed": true
 }

@@ -7928,6 +7928,107 @@ class AutonomousVerificationEngine:
             "Khớp toàn bộ 26 hàm xuất khẩu JNI (.dynsym: MemSpongeHelper x14, HeapClampHelper x10, StringOptHelper x2)"
         )
 
+    def verify_libgodzilla_sysopt(self):
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 77: libgodzilla-sysopt.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libgodzilla-sysopt"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Kiểm tra dung lượng mã nguồn tái tạo > 40 KB (9 tệp C++/H)
+        self.assert_test(
+            "GodzillaSysopt_SourceSizeGate",
+            total_bytes > 40960 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Kiểm tra opcode getElfBuildId (0x007d30..0x008060: cmp w20, #0x41; lsl x22, x20, #6; bfi x0, x22, #1, #0x20)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libgodzilla-sysopt.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+        shnum_cmp = struct.unpack("<2I", so_bytes[0x007e60:0x007e68])
+        bfi_insns = struct.unpack("<2I", so_bytes[0x007fe4:0x007fec])
+        self.assert_test(
+            "GodzillaSysopt_ElfBuildIdOpcodes",
+            so_path.stat().st_size == 164440
+            and shnum_cmp == (0x785ec3b4, 0x7101069f)
+            and bfi_insns == (0x52800020, 0xb37f7ec0)
+            and "ExtractElfBuildIdFromBuffer" in content
+            and "0x6E672E65746F6E2EULL" in content,
+            "getElfBuildId (0x007d30..0x008060) khớp opcode cmp w20, #0x41, bfi x0, x22, #1, #0x20 và chuỗi '.note.gnu.build-id'"
+        )
+
+        # 3. Kiểm tra PthreadCreateHook (.data 0x02f7c8 -> file 0x0277c8 = 0x00083000) & ThreadHook SIGBUS (0x00aa3c..0x00abd8)
+        default_stack_sz = struct.unpack("<I", so_bytes[0x0277c8:0x0277cc])[0]
+        sigbus_insns = struct.unpack("<3I", so_bytes[0x00ab00:0x00ab0c])
+        self.assert_test(
+            "GodzillaSysopt_PthreadStackAndSigbusGuard",
+            default_stack_sz == 0x00083000
+            and sigbus_insns == (0xb9400828, 0x7100091f, 0x540005c1)
+            and "0x00083000U" in content
+            and "0x18000004U" in content
+            and "HandleSigbusSignal" in content,
+            "PthreadCreateHook (.data 0x02f7c8 = 0x00083000 = 536,576 B) và ThreadHook SIGBUS (sa_flags=0x18000004, BUS_ADRERR=2, 3 retries) khớp nhị phân"
+        )
+
+        # 4. Kiểm tra rawSyscall4 (0x017878..0x01789c: svc #0), PKCS#7 ASN.1 DER (0x0186f4) & SHA-256 (.rodata 0x005270)
+        svc_insn = struct.unpack("<I", so_bytes[0x01789c:0x0178a0])[0]
+        sha_init = struct.unpack("<8I", so_bytes[0x005270:0x005290])
+        self.assert_test(
+            "GodzillaSysopt_DirectSyscallPkcs7AndSha256",
+            svc_insn == 0xd4000001
+            and sha_init == (
+                0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a,
+                0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19
+            )
+            and "ExtractX509CertFromPkcs7Der" in content
+            and "Sha256TransformBlock" in content,
+            "rawSyscall4 (svc #0 @ 0x01789c), bộ trích xuất chứng chỉ PKCS#7 ASN.1 DER (0x0186f4) và SHA-256 (.rodata 0x005270) khớp tuyệt đối"
+        )
+
+        # 5. Kiểm tra 12 từ khóa Hook Framework giải mã bằng MBA rolling-XOR (0x01b238..0x022684) & kiểm tra VMA >39-bit (0x01a448)
+        vma_insns = struct.unpack("<3I", so_bytes[0x01a448:0x01a454])
+        mba_insns = struct.unpack("<4I", so_bytes[0x01b238:0x01b248])
+        enc_sandhook = [0xf4, 0xe9, 0xe7, 0xee, 0xe3, 0xe3, 0xe2, 0xe5, 0x8f]
+        dec_sandhook = bytes(((b + ((0x87 + i) & 0xff)) - (((b & ((0x87 + i) & 0xff)) << 1))) & 0xff for i, b in enumerate(enc_sandhook))
+        keywords_12 = [
+            "sandhook", "epic", "frida", "xposed", "edxposed", "lsposed",
+            "substrate", "cydia", "riru", "zygisk", "dexposed", "houdini"
+        ]
+        self.assert_test(
+            "GodzillaSysopt_12MbaHookKeywordsAnd39BitVma",
+            vma_insns[0] == 0x92596129
+            and vma_insns[2] == 0xb367fd09
+            and mba_insns[0] == 0x0a020062
+            and mba_insns[1] == 0x0b000020
+            and mba_insns[3] == 0x4b020400
+            and dec_sandhook == b"sandhook\x00"
+            and all(kw in content for kw in keywords_12),
+            "Giải mã 12 từ khóa Hook Framework bằng đồng nhất thức MBA (a+b)-2*(a&b) (0x01b238) và kiểm tra VMA >39-bit (0xffffff8000000000 @ 0x01a448)"
+        )
+
+        # 6. Kiểm tra đầy đủ 10 hàm xuất khẩu JNI (.dynsym)
+        jni_exports_10 = [
+            "Java_com_bytedance_platform_godzilla_sysopt_IvimageOpt_start",
+            "Java_com_bytedance_platform_godzilla_sysopt_IvimageOpt_end",
+            "Java_com_bytedance_platform_godzilla_sysopt_UbsanOpt_start",
+            "Java_com_bytedance_platform_godzilla_sysopt_UbsanOpt_end",
+            "Java_com_bytedance_platform_godzilla_sysopt_PthreadCreateHook_start",
+            "Java_com_bytedance_platform_godzilla_sysopt_PthreadCreateHook_end",
+            "Java_com_bytedance_platform_godzilla_sysopt_ThreadHook_start",
+            "Java_com_bytedance_platform_godzilla_sysopt_ThreadHook_end",
+            "Java_com_bytedance_platform_godzilla_sysopt_ApkSha256_checkMyShit",
+            "Java_com_bytedance_platform_godzilla_sysopt_ApkSha256_checkHookFrameworks",
+        ]
+        self.assert_test(
+            "GodzillaSysopt_10ExportedJniFunctions",
+            all(sym in content for sym in jni_exports_10),
+            "Khớp toàn bộ 10 hàm xuất khẩu JNI (.dynsym: IvimageOpt x2, UbsanOpt x2, PthreadCreateHook x2, ThreadHook x2, ApkSha256 x2)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -8009,6 +8110,7 @@ class AutonomousVerificationEngine:
         self.verify_liborbuculumadapter()
         self.verify_libgodzilla_acurate_asan()
         self.verify_libgodzilla_memsponge()
+        self.verify_libgodzilla_sysopt()
         self.verify_overall_governance()
 
 

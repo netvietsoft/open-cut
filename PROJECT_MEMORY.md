@@ -2357,3 +2357,16 @@
   - `adversary_critic_agent.py`: **76 / 169 `VERIFIED_AND_ACCEPTED` (44.97%)** (`372 opcodes`, `100% REAL`).
   - `verify_reconstruction_suite.py`: **491 / 491 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 104. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libgodzilla-sysopt.so (TASK-116-RECONSTRUCTION-LIBGODZILLA_SYSOPT / TASK_SO_127_libgodzilla_sysopt)
+- **Thời gian**: 2026-10-27 07:05:00
+- **Thư viện**: `libgodzilla-sysopt.so` (`164,440 bytes`, SHA-256 `28605f81e2c8d9d0fae96d52a70efc5192c90d93377ddadff09726874911d704`, `.text` `0x007ce0..0x026980` = `126,112 bytes`, `31,528` instructions, 10 exported JNI functions across `IvimageOpt`, `UbsanOpt`, `PthreadCreateHook`, `ThreadHook`, `ApkSha256`).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `97,912 bytes` C++17/H, 0 stub)**:
+  1. **ELF64 `.note.gnu.build-id` Inspector (`0x007d30..0x008060`), `PthreadCreateHook` (`0x008248..0x008300`) & `ThreadHook` (`0x00aa3c..0x00abd8`)**: Kiểm tra `e_shnum < 0x41` (`cmp w20, #0x41` @ `0x007e64`), quét phân đoạn `SHT_NOTE = 7` tên `".note.gnu.build-id\0"`, cấp phát `(n_descsz << 1) | 1` (`bfi x0, x22, #1, #0x20` @ `0x007fe8`) cho `/system/lib/libIVImageSR.so` và `/system/lib/libbinder.so`; cài đặt PLT hook trên `libart.so` -> `pthread_attr_setstacksize` với kích thước stack mặc định `0x00083000` (`536,576 B` tại `.data 0x02f7c8`) qua xHook engine (`0x008304..0x00aa38`); cài đặt `sigaction(SIGBUS = 7)` với `sa_flags = 0x18000004` (`SA_SIGINFO | SA_ONSTACK | SA_RESTART`) và trình xử lý `sigbus_handler` (`0x00aaf4`) đếm tối đa 3 lần thử lại lỗi `BUS_ADRERR = 2` trên mỗi luồng qua TLS.
+  2. **Direct-Syscall APK Reader (`0x01579c..0x0178b0`), PKCS#7 ASN.1 DER Parser (`0x018374..0x0188e0`) & SHA-256 Engine (`0x0188e4..0x0195ec`)**: Gọi trực tiếp `svc #0` tại `0x01789c` (`__NR_openat=56`, `__NR_close=57`, `__NR_lseek=62`, `__NR_read=63`), phân tích cấu trúc ZIP EOCD (`0x06054b50`), Central Directory (`0x02014b50`), Local File Header (`0x04034b50`) cho `META-INF/*.RSA|DSA|EC`, bóc tách chứng chỉ X.509 (`SEQUENCE 0x30`) từ PKCS#7 SignedData và băm SHA-256 (`.rodata 0x005270`, `0x005308`).
+  3. **12 MBA Rolling-XOR Hook Keywords & >39-Bit VMA Detector (`0x019fb4..0x022878`)**: Giải mã hoàn chỉnh 12 từ khóa Hook Framework bằng đồng nhất thức MBA `(c + k) - ((c & k) << 1)` tại `0x01b238..0x01b244` (`sandhook`, `epic`, `frida`, `xposed`, `edxposed`, `lsposed`, `substrate`, `cydia`, `riru`, `zygisk`, `dexposed`, `houdini`), kiểm tra 5 hậu tố (`.so`, `.jar`, `.apk`, `.odex`, `.vdex`) và phát hiện địa chỉ VMA >39-bit (`and x9, x9, #0xffffff8000000000; bfxil x9, x8, #0x27, #0x19` @ `0x01a448..0x01a450`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **77 / 169 `VERIFIED_AND_ACCEPTED` (45.56%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **497 / 497 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
