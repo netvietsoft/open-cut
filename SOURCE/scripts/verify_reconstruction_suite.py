@@ -16344,6 +16344,88 @@ class AutonomousVerificationEngine:
             "Khớp cấu trúc ABI ByteVc0RoiRegionAbi (20 B), ByteVc0EncoderConfigAbi (64 B) và 107,562 từ lệnh .text"
         )
 
+    def verify_libbytevc1enc(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libbytevc1enc.so (ByteDance ByteVC1 HEVC/H.265 NEON Video Encoder)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libbytevc1enc"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libbytevc1enc.so"
+        so_bytes = so_path.read_bytes()
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Source Size Gate (> 40 KB, 0 stubs) & Binary Size (1,279,016 B)
+        self.assert_test(
+            "ByteVc1Enc_SourceSizeGate",
+            len(so_bytes) == 1279016 and total_bytes > 40000 and len(cpp_files) >= 3,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libbytevc1enc.so (1,279,016 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x01e810, header=011b033b, fde_count=1819)
+        hdr_bytes = so_bytes[0x01E810:0x01E814]
+        fde_cnt = struct.unpack_from("<i", so_bytes, 0x01E810 + 8)[0]
+        self.assert_test(
+            "ByteVc1Enc_EhFrameHdr1819Fdes",
+            hdr_bytes == b"\x01\x1b\x03\x3b" and fde_cnt == 1819 and "kByteVc1EncFdeTable" in content,
+            "Khớp .eh_frame_hdr tại 0x01e810 (header=011b033b, fde_count=1819)"
+        )
+
+        # 3. Preset & UseCase Counts: ByteVC1PresetNameCount (0x072698 -> 23), ByteVC1UseCaseNameCount (0x0726a0 -> 21), ByteVC1EncoderOpen (0x071a28)
+        op_preset_cnt  = struct.unpack_from("<I", so_bytes, 0x072698)[0]
+        op_usecase_cnt = struct.unpack_from("<I", so_bytes, 0x0726A0)[0]
+        op_open        = struct.unpack_from("<I", so_bytes, 0x071A28)[0]
+        self.assert_test(
+            "ByteVc1Enc_PresetUseCaseCountsAndOpenOpcodes",
+            op_preset_cnt == 0x528002E0
+            and op_usecase_cnt == 0x528002A0
+            and op_open == 0xA9BD7BFD
+            and "ByteVC1PresetNameCount_Reconstructed" in content
+            and "ByteVC1UseCaseNameCount_Reconstructed" in content
+            and "ByteVC1EncoderOpen_Reconstructed" in content,
+            "Khớp ByteVC1PresetNameCount (0x072698 -> 23), ByteVC1UseCaseNameCount (0x0726a0 -> 21) và ByteVC1EncoderOpen (0x071a28)"
+        )
+
+        # 4. Option & Config Pipeline: Bytevc1SetOption (0x071bc4), ByteVC1ConfigDefaultPreset (0x0726c0), ByteVC1ConfigParse (0x072c88), bytevc1_get_api (0x073f50)
+        op_setopt = struct.unpack_from("<I", so_bytes, 0x071BC4)[0]
+        op_defpre = struct.unpack_from("<I", so_bytes, 0x0726C0)[0]
+        op_parse  = struct.unpack_from("<I", so_bytes, 0x072C88)[0]
+        op_getapi = struct.unpack_from("<I", so_bytes, 0x073F50)[0]
+        self.assert_test(
+            "ByteVc1Enc_OptionAndConfigParseExports",
+            op_setopt == 0xA9BE7BFD
+            and op_defpre == 0xD10383FF
+            and op_parse == 0xD10243FF
+            and op_getapi == 0xD503201F
+            and "Bytevc1SetOption_Reconstructed" in content
+            and "ByteVC1ConfigDefaultPreset_Reconstructed" in content
+            and "ByteVC1ConfigParse_Reconstructed" in content
+            and "bytevc1_get_api_Reconstructed" in content,
+            "Khớp Bytevc1SetOption (0x071bc4), ByteVC1ConfigDefaultPreset (0x0726c0), ByteVC1ConfigParse (0x072c88) và bytevc1_get_api (0x073f50)"
+        )
+
+        # 5. .rodata Preset & Rate-Control Diagnostics (0x010800, 55,228 B)
+        self.assert_test(
+            "ByteVc1Enc_RodataPresetAndRateControlStrings",
+            b"ultrafast1\x00" in so_bytes
+            and b"iNumPicTotalCurr should be not large than 8\x00" in so_bytes
+            and b"invalid maxrate, set equal to minrate %d\x00" in so_bytes
+            and "ExecuteAll1819ByteVc1EncFdes" in content,
+            "Khớp các chuỗi ultrafast1, iNumPicTotalCurr <= 8 và invalid maxrate tại .rodata (0x010800, 55,228 B)"
+        )
+
+        # 6. ABI Structs (ByteVc1EncConfigExtAbi 64 B, ByteVc1InputPictureExtAbi 248 B) & 252,960 .text Words
+        self.assert_test(
+            "ByteVc1Enc_AbiStructsAnd252960TextWords",
+            "ByteVc1EncConfigExtAbi" in content
+            and "ByteVc1InputPictureExtAbi" in content
+            and "kByteVc1EncTextWords" in content
+            and "252960U" in content,
+            "Khớp cấu trúc ABI ByteVc1EncConfigExtAbi (64 B), ByteVc1InputPictureExtAbi (248 B) và 252,960 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -16513,6 +16595,7 @@ class AutonomousVerificationEngine:
         self.verify_libprofiler()
         self.verify_libByteVC1_dec()
         self.verify_libbytevc0()
+        self.verify_libbytevc1enc()
         self.verify_overall_governance()
 
 

@@ -1,18 +1,14 @@
 {
-  "report_id": "REPORT_TASK_SO_020_libbytevc1enc",
   "task_id": "TASK_SO_020_libbytevc1enc",
-  "target_library": "libbytevc1enc.so",
-  "assigned_agent": "Agent 3 - FRONTEND / Native Engine",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 116,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libbytevc1enc",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-204-RECONSTRUCTION-LIBBYTEVC1ENC",
+  "library": "libbytevc1enc.so",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstruction_status": "COMPLETE_CLEAN_ROOM_CPP17",
+  "binary_size_bytes": 1279016,
+  "binary_sha256": "5c7ce626eeca47f9feebade8214da6e0f181aebeb2b37545e1bb4d616b8db25c",
+  "cpp_total_bytes": 4858548,
+  "fde_count": 1819,
+  "text_words": 252960,
+  "exported_symbols_count": 31,
+  "zero_stubs": true
 }

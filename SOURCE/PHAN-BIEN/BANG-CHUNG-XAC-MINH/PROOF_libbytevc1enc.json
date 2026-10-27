@@ -1,0 +1,27 @@
+{
+  "target_library": "libbytevc1enc.so",
+  "task_id": "TASK-204-RECONSTRUCTION-LIBBYTEVC1ENC",
+  "legacy_task_id": "TASK_SO_020_libbytevc1enc",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 1279016,
+  "binary_sha256": "5c7ce626eeca47f9feebade8214da6e0f181aebeb2b37545e1bb4d616b8db25c",
+  "reconstructed_cpp_bytes": 4858548,
+  "reconstructed_files": [
+    "bytevc1enc.hpp",
+    "bytevc1enc_core.cpp",
+    "bytevc1enc_elf_sections_and_image.cpp"
+  ],
+  "eh_frame_hdr": {
+    "offset": "0x01e810",
+    "size_bytes": 14564,
+    "header_bytes": "011b033b",
+    "fde_count": 1819
+  },
+  "text_section": {
+    "offset": "0x036bb0",
+    "size_bytes": 1011840,
+    "instruction_words": 252960
+  },
+  "exported_symbols_count": 31,
+  "evidence_classification": "OBSERVED"
+}
