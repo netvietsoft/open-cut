@@ -1,0 +1,24 @@
+{
+  "library": "libpglarmor.so",
+  "task_id": "TASK-192-RECONSTRUCTION-LIBPGLARMOR",
+  "legacy_task_id": "TASK_SO_061_libpglarmor",
+  "sha256": "69218eb7accd450feb707bfe9fa6533c390a2c0bf63b5c685c5548c18a0fe716",
+  "size_bytes": 68776,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libpglarmor/pglarmor.hpp",
+    "SOURCE/GIAI-MA/libpglarmor/pglarmor_core.cpp",
+    "SOURCE/GIAI-MA/libpglarmor/pglarmor_elf_sections_and_image.cpp"
+  ],
+  "total_reconstructed_bytes": 1422314,
+  "fde_count": 42,
+  "text_instructions": 12676,
+  "exported_functions": 1,
+  "key_anchors": {
+    "Java_com_bytedance_sdk_component_pglcrypt_PglCryptUtils_bc": "0x3564 (first_op=0xa9bf7bfd)",
+    "fde_00_32e4": "0x32e4",
+    "fde_04_35a8": "0x35a8"
+  },
+  "stub_count": 0,
+  "todo_count": 0
+}

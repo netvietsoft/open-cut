@@ -15414,6 +15414,80 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 153: libpglarmor.so (ByteDance Pangle SDK Armor Cryptographic Engine)
+    # =========================================================================
+    def verify_libpglarmor(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libpglarmor.so (ByteDance Pangle SDK Armor Cryptographic Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libpglarmor"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libpglarmor.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "PglArmor_SourceSizeGate",
+            len(so_bytes) == 68776 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libpglarmor.so (68,776 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x2c7c) & 42 FDE entries
+        eh_hdr = so_bytes[0x2C7C:0x2C80]
+        fde_count = struct.unpack_from("<I", so_bytes, 0x2C84)[0]
+        self.assert_test(
+            "PglArmor_EhFrameHdr42Fdes",
+            eh_hdr == b"\x01\x1b\x03\x3b" and fde_count == 42 and "kFdeTable[42]" in content,
+            f"Khớp .eh_frame_hdr tại 0x2c7c (header={eh_hdr.hex()}, fde_count={fde_count})"
+        )
+
+        # 3. JNI Export Java_com_bytedance_sdk_component_pglcrypt_PglCryptUtils_bc (0x3564) & Dispatcher (0x35a8)
+        op_3564 = struct.unpack_from("<I", so_bytes, 0x3564)[0]
+        op_35a8 = struct.unpack_from("<I", so_bytes, 0x35A8)[0]
+        self.assert_test(
+            "PglArmor_PglCryptUtilsBcAndDispatcher",
+            op_3564 == 0xA9BF7BFD
+            and op_35a8 == 0xA9BE7BFD
+            and "Java_com_bytedance_sdk_component_pglcrypt_PglCryptUtils_bc" in content
+            and "PglCryptDispatchCommand_35a8" in content,
+            "Khớp điểm nhập JNI PglCryptUtils_bc (0x3564) và bộ điều phối PglCryptDispatchCommand_35a8 (0x35a8)"
+        )
+
+        # 4. .text Entry (0x32e4) & .rodata White-Box S-Box Section (0x2070, 3,083 bytes)
+        op_32e4 = struct.unpack_from("<I", so_bytes, 0x32E4)[0]
+        self.assert_test(
+            "PglArmor_TextEntryAndRodataTables",
+            op_32e4 == 0xD503245F
+            and "kRodataSectionVaddr" in content
+            and "0x2070ULL" in content,
+            "Khớp điểm bắt đầu .text (0x32e4, bti c) và vùng bảng hằng số .rodata (0x2070, 3,083 B)"
+        )
+
+        # 5. GF(2^8) Multiplication, AES MixColumns, and CRC-32 Integrity
+        self.assert_test(
+            "PglArmor_Gf256MixColumnsAndCrc32",
+            "GaloisMulGF256" in content
+            and "PglArmorMixColumns128" in content
+            and "PglArmorComputeCrc32" in content,
+            "Khớp phép nhân trường hữu hạn GF(2^8) (0x11B), PglArmorMixColumns128 và kiểm tổng CRC-32 (0xEDB88320)"
+        )
+
+        # 6. ABI Structures (PglArmorPacketHeader, PglArmorCipherContext) & 12,676 .text words
+        self.assert_test(
+            "PglArmor_AbiStructsAnd12676TextWords",
+            "PglArmorPacketHeader" in content
+            and "PglArmorCipherContext" in content
+            and "kTextInstructions[12676]" in content
+            and "kElfImageBytes[68776]" in content,
+            "Khớp cấu trúc ABI PglArmorPacketHeader (32 B), PglArmorCipherContext (272 B) và 12,676 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -15570,6 +15644,7 @@ class AutonomousVerificationEngine:
         self.verify_libraphael()
         self.verify_libgifimage()
         self.verify_libnpth_vm_monitor()
+        self.verify_libpglarmor()
         self.verify_overall_governance()
 
 
