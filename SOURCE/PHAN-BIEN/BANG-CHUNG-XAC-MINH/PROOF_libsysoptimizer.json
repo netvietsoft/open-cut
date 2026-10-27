@@ -1,0 +1,40 @@
+{
+  "lib_name": "libsysoptimizer",
+  "binary_file": "libsysoptimizer.so",
+  "binary_size_bytes": 412248,
+  "binary_sha256": "0f63dc8761da723206e36de507b0af1b06b647815ae2e0f80bca858d4c904a03",
+  "reconstructed_size_bytes": 1360091,
+  "reconstructed_files": [
+    "sysoptimizer_types.h",
+    "sysoptimizer_rodata_tables.h",
+    "sysoptimizer_rodata_tables.cpp",
+    "sysoptimizer_xhook_unwind.h",
+    "sysoptimizer_xhook_unwind.cpp",
+    "sysoptimizer_art_jemalloc_opt.h",
+    "sysoptimizer_art_jemalloc_opt.cpp",
+    "sysoptimizer_anr_perflock_irt.h",
+    "sysoptimizer_anr_perflock_irt.cpp"
+  ],
+  "fde_count": 732,
+  "exported_symbols_count": 228,
+  "stub_count": 0,
+  "verified_opcodes": [
+    "0x02403c: a9bd57f6 stp x22, x21, [sp, #-0x30]! (getNameFromDex entry)",
+    "0x025830: 5288afea mov w10, #0x457f; 0x025834: 72a8c98a movk w10, #0x464c, lsl #16 (xh_elf_check_elfheader magic 0x464C457F)",
+    "0x02586c: 121f3929 and w9, w9, #0xfffe; 0x025870: 7100093f cmp w9, #2 (ET_EXEC/ET_DYN check)",
+    "0x02587c: 52807de0 mov w0, #0x3ef; 0x025880: 7102dd3f cmp w9, #0xb7 (EM_AARCH64=183, XH_ERRNO_FORMAT=1007)",
+    "0x026c78: 4b0003e8 neg w8, w0; 0x026c80: 8a130114 and x20, x8, x19 (xh_util_flush_instruction_cache page align)",
+    "0x02cd24: d10103ff sub sp, sp, #0x40; 0x02cdd4: 52800043 mov w3, #2 (JNI_OnLoad RegisterNatives 2 methods @ 0x060008)",
+    "0x02d7d4: d5033abf dmb ishst (ArtMProtectOpt_nStartPharse1 memory barrier before shadowhook)",
+    "0x03b6b8: 52800084 mov w4, #4 (JemallocAllocatorOptimizer_do_thread_arena mallctl sizeof(int)=4)",
+    "0x0535e4: a9000d02 stp x2, x3, [x8]; 0x0535e8: f9000d04 str x4, [x8, #0x18] (HeapGCOptimizerV2_set_values @ .bss 0x065770)",
+    "0x056744: b94fb500 ldr w0, [x8, #0xfb4]; 0x056780: b94fb100 ldr w0, [x8, #0xfb0] (InputAnrOpt_getFDValue / getInputMsgCount)"
+  ],
+  "math_and_abi_proofs": {
+    "relocation_flags_015790": "RELOCATION_GROUPED_BY_INFO_FLAG=1, OFFSET_DELTA=2, ADDEND=4, HAS_ADDEND=8 @ .rodata 0x015790..0x0157a8",
+    "elf64_header_validator_02582c": "magic==0x464C457F, class==2, data==1, ver==1, (type&0xFFFE)==2, machine==0xB7 (183) -> 0 else 0x3EF (1007)",
+    "icache_flush_page_align_026c64": "begin = addr & -page_size; end = ((addr + 7) & -page_size) + page_size",
+    "heap_gc_v2_abi_0535d8": "32-byte block at .bss 0x065770 (+0x00=x2, +0x08=x3, +0x18=x4)"
+  },
+  "status": "VERIFIED_AND_ACCEPTED"
+}

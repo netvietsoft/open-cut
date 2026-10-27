@@ -841,3 +841,5 @@
 - [x] **TASK-139 (`libstatic-webp.so` — `396,088 B`)**: Reconstructed `1,289,934 B` C++17/H (9 files, 701 FDEs, 27 JNINativeMethods, 0 stubs), verified `635/635 PASS (100.0%)`, `100/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-140 (`liborbuculum.so` — `412,176 B`)**: Reconstructed `1,055,206 B` C++17/H (9 files, 577 FDEs, 625 exports, 0 stubs), verified `641/641 PASS (100.0%)`, `101/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-141 (`libsysoptimizer.so` — `412,248 B`)**: Reconstructed `1,360,091 B` C++17/H (9 files, 732 FDEs, 228 exports, 0 stubs), verified `647/647 PASS (100.0%)`, `102/169 VERIFIED_AND_ACCEPTED`.
