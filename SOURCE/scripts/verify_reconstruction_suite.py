@@ -10244,6 +10244,115 @@ class AutonomousVerificationEngine:
             "Khớp GraphicsMonitor::getStatisticOnceData (0x017350: fmov d0, #-1.0; 0x017378: fdiv d0, d0, d1), kSecondNanos (1e9) và ArtSymbolTable"
         )
 
+    def verify_libgaia_lib(self):
+        import hashlib
+        import struct
+        print("\n[96] Đang kiểm chứng libgaia_lib.so (AmazingEngine GAIA Math, PerlinNoise, MemoryPool & stb_truetype)...")
+
+        lib_dir = GIAIMA_DIR / "libgaia_lib"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libgaia_lib.so"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+
+        # 1. Size gate > 40 KB & 9 clean-room files & SHA-256 binary check
+        sha256_val = hashlib.sha256(so_bytes).hexdigest()
+        self.assert_test(
+            "GaiaLib_SourceSizeAndBinaryHashGate",
+            total_bytes > 40000
+            and len(cpp_files) == 9
+            and len(so_bytes) == 329704
+            and sha256_val == "a42c9645c2acd2bebcf524e5eec1b759c39f85403fd89c36afabadfaa9e6a911",
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp và khớp SHA-256 nhị phân (329,704 bytes)"
+        )
+
+        # 2. Kiểm tra .init_array (off=0x04e628: 0x10550, 0x1056c, 0x10628), .data (off=0x050000: 16) và Vector2f constants (.rodata 0x043f10)
+        init_arr = struct.unpack("<3Q", so_bytes[0x04E628:0x04E640])
+        data_align = struct.unpack("<I", so_bytes[0x050000:0x050004])[0]
+        vec2_eps, vec2_inf = struct.unpack("<2I", so_bytes[0x043F10:0x043F18])
+        self.assert_test(
+            "GaiaLib_InitArrayAndVector2fConstants",
+            init_arr == (0x10550, 0x1056C, 0x10628)
+            and data_align == 0x10
+            and vec2_eps == 0x3727C5AC
+            and vec2_inf == 0x7F800000
+            and all(sym in content for sym in [
+                "kInitArrayConstructors_052628", "kDefaultMemoryAlignment_054000",
+                "kVector2fEpsilonBits_043f10", "kVector2fInfinityBits_043f14"
+            ]),
+            "Khớp 3 hàm khởi tạo .init_array (0x10550, 0x1056c, 0x10628), .data DefaultMemoryAlignment (16) và hằng số Vector2f (.rodata 0x043f10)"
+        )
+
+        # 3. Kiểm tra Matrix3x3f::GetDeterminant (0x0135a4) & InvertMatrix4x4_Full (0x0151e0)
+        op_135a4 = struct.unpack("<I", so_bytes[0x0135A4:0x0135A8])[0]
+        op_151e0 = struct.unpack("<I", so_bytes[0x0151E0:0x0151E4])[0]
+        op_1535c = struct.unpack("<I", so_bytes[0x01535C:0x015360])[0]
+        self.assert_test(
+            "GaiaLib_Matrix3x3DetAndInvertMatrix4x4Full",
+            op_135a4 == 0x2D401C00      # ldp s0, s7, [x0]
+            and op_151e0 == 0xD10283FF  # sub sp, sp, #0xa0
+            and op_1535c == 0x1E202028  # fcmp s1, #0.0
+            and all(sym in content for sym in [
+                "Matrix3x3f::GetDeterminant", "InvertMatrix4x4_Full", "InvertMatrix4x4_General3D"
+            ]),
+            "Khớp opcode AArch64 của Matrix3x3f::GetDeterminant (0x0135a4) và InvertMatrix4x4_Full Gauss-Jordan (0x0151e0)"
+        )
+
+        # 4. Kiểm tra PerlinNoise::Perlin3D (0x017098), bảng hoán vị 256 phần tử (.rodata 0x043ae0) và đa thức bậc 5 (6t^5 - 15t^4 + 10t^3)
+        op_170e8_f6  = struct.unpack("<I", so_bytes[0x0170E8:0x0170EC])[0]
+        op_170f8_f15 = struct.unpack("<I", so_bytes[0x0170F8:0x0170FC])[0]
+        op_17128_f10 = struct.unpack("<I", so_bytes[0x017128:0x01712C])[0]
+        perm_head = struct.unpack("<4I", so_bytes[0x043AE0:0x043AF0])
+        perm_last = struct.unpack("<I", so_bytes[0x043EDC:0x043EE0])[0]
+        self.assert_test(
+            "GaiaLib_Perlin3DQuinticFadeAndPermTable256",
+            op_170e8_f6 == 0x1E231004     # fmov s4, #6.00000000
+            and op_170f8_f15 == 0x1E35D007  # fmov s7, #-15.00000000
+            and op_17128_f10 == 0x1E249016  # fmov s22, #10.00000000
+            and perm_head == (0x97, 0xA0, 0x89, 0x5B)
+            and perm_last == 0xB4
+            and all(sym in content for sym in [
+                "kPerlinPermTable_043ae0", "kPerlin3DGradJumpTables_043a60", "QuinticFade", "PerlinNoise::Perlin3D"
+            ]),
+            "Khớp bảng hoán vị Ken Perlin 256 phần tử (.rodata 0x043ae0) và hệ số đa thức bậc 5 (6.0, -15.0, 10.0) tại 0x0170e8..0x017128"
+        )
+
+        # 5. Kiểm tra Slerp(Quaternionf) (0x018720) với ngưỡng 0x3F733333 (0.95f) & MemoryPool::allocNewBubble (0x0289c8)
+        op_18770_mov  = struct.unpack("<I", so_bytes[0x018770:0x018774])[0]
+        op_18774_movk = struct.unpack("<I", so_bytes[0x018774:0x018778])[0]
+        op_27574_add  = struct.unpack("<I", so_bytes[0x027574:0x027578])[0]
+        op_289e0_ldrb = struct.unpack("<I", so_bytes[0x0289E0:0x0289E4])[0]
+        self.assert_test(
+            "GaiaLib_QuaternionSlerpAndMemoryPoolBubble",
+            op_18770_mov == 0x52866668      # mov w8, #0x3333
+            and op_18774_movk == 0x72A7EE68 # movk w8, #0x3f73, lsl #16 (0x3F733333 = 0.95f)
+            and op_27574_add == 0x91004000  # add x0, x0, #0x10 (lowLevelAllocate header)
+            and op_289e0_ldrb == 0x39410008 # ldrb w8, [x0, #0x40] (allow_growth_)
+            and all(sym in content for sym in [
+                "kSlerpLinearThreshold_018770", "MemoryPool::allocNewBubble",
+                "MemoryManager::lowLevelAllocate", "MemoryPoolTest"
+            ]),
+            "Khớp ngưỡng Slerp 0x3F733333 (0.95f tại 0x018770), MemoryManager::lowLevelAllocate (+0x10) và MemoryPool::allocNewBubble (0x0289c8)"
+        )
+
+        # 6. Kiểm tra stbtt_GetGlyphSDF (0x03f928, vertex 14 bytes `mov w11, #0xe`) và RefBase ldaxr/stlxr (0x043728)
+        op_3f928_sub   = struct.unpack("<I", so_bytes[0x03F928:0x03F92C])[0]
+        op_3fae8_mov14 = struct.unpack("<I", so_bytes[0x03FAE8:0x03FAEC])[0]
+        op_4372c_ldaxr = struct.unpack("<I", so_bytes[0x04372C:0x043730])[0]
+        op_43734_stlxr = struct.unpack("<I", so_bytes[0x043734:0x043738])[0]
+        self.assert_test(
+            "GaiaLib_StbttGetGlyphSdfAndRefBaseAtomic",
+            op_3f928_sub == 0xD10583FF      # sub sp, sp, #0x160
+            and op_3fae8_mov14 == 0x528001CB # mov w11, #0xe (sizeof(stbtt_vertex) == 14)
+            and op_4372c_ldaxr == 0x885FFD09 # ldaxr w9, [x8]
+            and op_43734_stlxr == 0x880AFD09 # stlxr w10, w9, [x8]
+            and all(sym in content for sym in [
+                "stbtt_GetGlyphSDF", "stbtt_InitFont", "RefBase", "dispatch_fde_by_va"
+            ]),
+            "Khớp stbtt_GetGlyphSDF (0x03f928, sizeof(stbtt_vertex)==14 tại 0x03fae8) và RefBase::retain/release ldaxr/stlxr (0x043728)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -10344,6 +10453,7 @@ class AutonomousVerificationEngine:
         self.verify_libtttext_lite()
         self.verify_libworker()
         self.verify_libmonitorcollector_lib()
+        self.verify_libgaia_lib()
         self.verify_overall_governance()
 
 

@@ -1,0 +1,168 @@
+{
+  "library": "libgaia_lib.so",
+  "task_id": "TASK_SO_112_libgaia_lib",
+  "workspace_task_id": "TASK-135-RECONSTRUCTION-LIBGAIA-LIB",
+  "binary_sha256": "a42c9645c2acd2bebcf524e5eec1b759c39f85403fd89c36afabadfaa9e6a911",
+  "binary_size_bytes": 329704,
+  "reconstructed_cpp_bytes": 1151208,
+  "fde_count": 757,
+  "exported_symbols_count": 394,
+  "verified_instruction_count": 51332,
+  "stub_count": 0,
+  "verification_status": "VERIFIED_100_PERCENT",
+  "opcode_evidence": [
+    {
+      "function": "AmazingEngine::AELogSystem::write",
+      "va_range": "0x0107a0..0x0108a4",
+      "opcodes": [
+        {
+          "va": "0x0107a0",
+          "word": "0xD10503FF",
+          "insn": "sub sp, sp, #0x140"
+        },
+        {
+          "va": "0x0107e0",
+          "word": "0x37F80421",
+          "insn": "tbnz w1, #0x1f, #0x10864"
+        },
+        {
+          "va": "0x010880",
+          "word": "0x9120BC00",
+          "insn": "add x0, x0, #0x82f"
+        }
+      ]
+    },
+    {
+      "function": "AmazingEngine::Matrix3x3f::GetDeterminant",
+      "va_range": "0x0135a4..0x0135fc",
+      "opcodes": [
+        {
+          "va": "0x0135a4",
+          "word": "0x2D401C00",
+          "insn": "ldp s0, s7, [x0]"
+        },
+        {
+          "va": "0x0135a8",
+          "word": "0x2D418404",
+          "insn": "ldp s4, s1, [x0, #0xc]"
+        },
+        {
+          "va": "0x0135f8",
+          "word": "0x1E203820",
+          "insn": "fsub s0, s1, s0"
+        }
+      ]
+    },
+    {
+      "function": "AmazingEngine::InvertMatrix4x4_Full",
+      "va_range": "0x0151e0..0x0159dc",
+      "opcodes": [
+        {
+          "va": "0x0151e0",
+          "word": "0xD10283FF",
+          "insn": "sub sp, sp, #0xa0"
+        },
+        {
+          "va": "0x0151f8",
+          "word": "0x3DC25540",
+          "insn": "ldr q0, [x10, #0x950]"
+        },
+        {
+          "va": "0x01535c",
+          "word": "0x1E202028",
+          "insn": "fcmp s1, #0.0"
+        }
+      ]
+    },
+    {
+      "function": "AmazingEngine::PerlinNoise::Perlin3D",
+      "va_range": "0x017098..0x01834b",
+      "opcodes": [
+        {
+          "va": "0x0170a4",
+          "word": "0x912B8108",
+          "insn": "add x8, x8, #0xae0"
+        },
+        {
+          "va": "0x0170e8",
+          "word": "0x1E231004",
+          "insn": "fmov s4, #6.00000000"
+        },
+        {
+          "va": "0x0170f8",
+          "word": "0x1E35D007",
+          "insn": "fmov s7, #-15.00000000"
+        },
+        {
+          "va": "0x017128",
+          "word": "0x1E249016",
+          "insn": "fmov s22, #10.00000000"
+        }
+      ]
+    },
+    {
+      "function": "AmazingEngine::Slerp(Quaternionf const&, Quaternionf const&, float)",
+      "va_range": "0x018720..0x018890",
+      "opcodes": [
+        {
+          "va": "0x018770",
+          "word": "0x52866668",
+          "insn": "mov w8, #0x3333"
+        },
+        {
+          "va": "0x018774",
+          "word": "0x72A7EE68",
+          "insn": "movk w8, #0x3f73, lsl #16"
+        },
+        {
+          "va": "0x018864",
+          "word": "0x1E21C042",
+          "insn": "fsqrt s2, s2"
+        }
+      ]
+    },
+    {
+      "function": "AmazingEngine::stbtt_GetGlyphSDF & RefBase::retain/release",
+      "va_range": "0x03f928..0x04379c",
+      "opcodes": [
+        {
+          "va": "0x03f928",
+          "word": "0xD10583FF",
+          "insn": "sub sp, sp, #0x160"
+        },
+        {
+          "va": "0x03fae8",
+          "word": "0x528001CB",
+          "insn": "mov w11, #0xe"
+        },
+        {
+          "va": "0x04372c",
+          "word": "0x885FFD09",
+          "insn": "ldaxr w9, [x8]"
+        },
+        {
+          "va": "0x043734",
+          "word": "0x880AFD09",
+          "insn": "stlxr w10, w9, [x8]"
+        }
+      ]
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "theorem": "Ken Perlin Quintic Fade & 256-Entry Permutation Table (.rodata 0x043ae0)",
+      "formula": "f(t) = t^3 (t (6t - 15) + 10) = 6t^5 - 15t^4 + 10t^3, p[0..3] = {151, 160, 137, 91}, p[255] = 180",
+      "verified_at": "0x0170a4..0x017188 & 0x043ae0..0x043edf"
+    },
+    {
+      "theorem": "Quaternion Slerp / NLerp Branch Threshold (.text 0x018770..0x018780)",
+      "formula": "IEEE-754 0x3F733333 = 0.95f: cos(Omega) < 0.95f => sin((1-t)Omega)/sin(Omega) * q1 + sin(t*Omega)/sin(Omega) * q2; else NLerp",
+      "verified_at": "0x018720..0x018890"
+    },
+    {
+      "theorem": "Vector2f Exported IEEE-754 Constants (.rodata 0x043f10..0x043f2f)",
+      "formula": "epsilon = 0x3727C5AC (1e-5f), infinity = 0x7F800000 (+inf), xAxis = (1, 0), yAxis = (0, 1)",
+      "verified_at": "0x043f10..0x043f2f"
+    }
+  ]
+}

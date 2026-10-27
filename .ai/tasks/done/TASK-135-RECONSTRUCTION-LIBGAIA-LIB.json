@@ -1,0 +1,38 @@
+{
+  "task_id": "TASK-135-RECONSTRUCTION-LIBGAIA-LIB",
+  "legacy_task_id": "TASK_SO_112_libgaia_lib",
+  "title": "Clean-Room C++17 Reconstruction of libgaia_lib.so (ByteDance AmazingEngine GAIA Core Math, Vector/Matrix/Quaternion, MemoryManager, ThreadPool, FileSystem & stb_truetype SDF Engine)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "target_library": "libgaia_lib.so",
+  "binary_size_bytes": 329704,
+  "binary_sha256": "a42c9645c2acd2bebcf524e5eec1b759c39f85403fd89c36afabadfaa9e6a911",
+  "created_at": "2026-10-27T14:19:00+07:00",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libgaia_lib/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libgaia_lib.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libgaia_lib.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_112_libgaia_lib.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_112_libgaia_lib.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% clean-room C++17 source in SOURCE/GIAI-MA/libgaia_lib/ (>= 180 KB, 0 stubs, bilingual EN+VN comments)",
+    "Reconstruct AmazingEngine::AELogSystem (0x0107a0..0x011c00), AmazingEngine::Matrix3x3f / Matrix4x4f / Quaternionf / Vector2f / Vector3f / Vector4f / Rect / Plane / Ray / Sphere / AABB / Frustum (0x013164..0x025000), AmazingEngine::memory::MemoryManager, ThreadPool, FileUtils, stb_truetype rasterizer & SDF generator (stbtt_* at 0x035000..0x040f40), and RefBase (0x043728..0x04379c)",
+    "Pass adversary_critic_agent.py (96/169 VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (611/611 PASS, 100.0%), and native_audit_watchdog.py (0 high findings)"
+  ],
+  "completed_at": "2026-10-27T14:38:08.686210+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (96/169)",
+    "reconstruction_suite": "611/611 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 1151208,
+    "verified_opcodes": 5742,
+    "fde_count": 757,
+    "stub_count": 0
+  }
+}

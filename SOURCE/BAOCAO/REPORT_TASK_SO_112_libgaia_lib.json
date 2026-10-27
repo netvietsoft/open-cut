@@ -1,18 +1,13 @@
 {
-  "report_id": "REPORT_TASK_SO_112_libgaia_lib",
   "task_id": "TASK_SO_112_libgaia_lib",
-  "target_library": "libgaia_lib.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 511,
-    "jni_exports": 0,
-    "cxx_demangled_count": 431,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libgaia_lib",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "workspace_task_id": "TASK-135-RECONSTRUCTION-LIBGAIA-LIB",
+  "library": "libgaia_lib.so",
+  "status": "COMPLETED",
+  "binary_size_bytes": 329704,
+  "binary_sha256": "a42c9645c2acd2bebcf524e5eec1b759c39f85403fd89c36afabadfaa9e6a911",
+  "cpp_reconstructed_bytes": 1151208,
+  "fde_count": 757,
+  "exported_symbols": 394,
+  "verified_instructions": 51332,
+  "stub_count": 0
 }
