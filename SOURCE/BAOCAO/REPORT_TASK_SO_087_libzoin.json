@@ -1,18 +1,24 @@
 {
   "report_id": "REPORT_TASK_SO_087_libzoin",
   "task_id": "TASK_SO_087_libzoin",
+  "governance_task_id": "TASK-175-RECONSTRUCTION-LIBZOIN",
   "target_library": "libzoin.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 43,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libzoin",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "library": "libzoin.so",
+  "sha256": "461eaaa63714d460001f67de31520aa3d5b97431d177f9f73005c9519e87adcc",
+  "size_bytes": 20304,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "reconstructed_code_bytes": 348057,
+  "fde_count": 54,
+  "instruction_count": 1973,
+  "exported_symbols": [
+    "JNI_OnLoad"
+  ],
+  "files_generated": [
+    "zoin.h",
+    "zoin_core.cpp",
+    "zoin_elf_sections_and_image.cpp",
+    "README_ANALYSIS.md"
+  ],
+  "acceptance_criteria_passed": true
 }

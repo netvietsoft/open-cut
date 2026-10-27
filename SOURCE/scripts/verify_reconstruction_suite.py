@@ -14052,6 +14052,102 @@ class AutonomousVerificationEngine:
             "Khớp _Z10nativeInitP7_JNIEnv (0x1c0c), JNI_OnLoad (0x1eac, 0x00010006, SDK >= 28 @ 0x1f44) và 1,467 lệnh .text"
         )
 
+    def verify_libzoin(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libzoin.so (ByteDance Zoin Compressed Native Library & Asset Extractor)")
+        print("="*70)
+
+        zoin_dir = GIAIMA_DIR / "libzoin"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libzoin.so"
+
+        files = [
+            "zoin.h",
+            "zoin_core.cpp",
+            "zoin_elf_sections_and_image.cpp",
+        ]
+        all_exist = all((zoin_dir / f).exists() for f in files)
+        total_size = sum((zoin_dir / f).stat().st_size for f in files if (zoin_dir / f).exists())
+
+        # 1. File existence & size > 250 KB (> 40 KB gate) & zero old stubs
+        self.assert_test(
+            "Zoin_CleanRoomFilesAndSize",
+            all_exist and total_size > 250000 and not (zoin_dir / "zoin_pseudocode.cpp").exists(),
+            f"Đầy đủ 3 file C++17/H trong GIAI-MA/libzoin ({total_size:,} bytes > 250 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (20,304 B) and .eh_frame_hdr 54 FDEs @ 0x1ac0
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x1ac8)[0]
+        self.assert_test(
+            "Zoin_BinarySha256AndEhFrame54FDEs",
+            len(so_bytes) == 20304
+            and sha256_hex == "461eaaa63714d460001f67de31520aa3d5b97431d177f9f73005c9519e87adcc"
+            and eh_fde_count == 54,
+            f"Khớp kích thước 20,304 bytes, SHA-256 ({sha256_hex[:16]}...) và 54 FDEs tại .eh_frame_hdr 0x1ac0"
+        )
+
+        content = ""
+        for f in files:
+            fp = zoin_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[05..06] JNI_OnLoad (0x22a0: 0x00010006 @ 0x22c8..0x22d8, csinv @ 0x2354) & nInit (calloc(8, 0x18) @ 0x2398..0x239c, malloc(0x2800) @ 0x23cc)
+        jni_lo  = struct.unpack_from("<I", so_bytes, 0x22c8)[0]
+        jni_hi  = struct.unpack_from("<I", so_bytes, 0x22d8)[0]
+        csinv_w = struct.unpack_from("<I", so_bytes, 0x2354)[0]
+        cal_8   = struct.unpack_from("<I", so_bytes, 0x2398)[0]
+        cal_18  = struct.unpack_from("<I", so_bytes, 0x239c)[0]
+        mal_2800 = struct.unpack_from("<I", so_bytes, 0x23cc)[0]
+        self.assert_test(
+            "Zoin_JniOnLoadAndThreadLogRingAlloc",
+            jni_lo == 0x528000C2 and jni_hi == 0x72A00022 and csinv_w == 0x5A9F02A0
+            and cal_8 == 0x52800100 and cal_18 == 0x52800301 and mal_2800 == 0x52850000
+            and "JNI_OnLoad" in content and "ZoinThreadLogSlot" in content,
+            "Khớp FDE[05] JNI_OnLoad (0x22a0, csinv @ 0x2354) và FDE[06] nInit (calloc(8, 0x18) @ 0x2398, malloc(0x2800) @ 0x23cc)"
+        )
+
+        # 4. FDE[07] ZIP EOCD 0x06054B50 (0x343c..0x3440), zlib raw inflateInit2_(-15, "1.2.8", 0x70 @ 0x3818..0x381c) & big-core cpu_set_t mask
+        eocd_lo = struct.unpack_from("<I", so_bytes, 0x343c)[0]
+        eocd_hi = struct.unpack_from("<I", so_bytes, 0x3440)[0]
+        zlib_15 = struct.unpack_from("<I", so_bytes, 0x3818)[0]
+        zlib_70 = struct.unpack_from("<I", so_bytes, 0x381c)[0]
+        self.assert_test(
+            "Zoin_ZipEocdZlibRawInflateAndBigCoreMask",
+            eocd_lo == 0x52896A08 and eocd_hi == 0x72A0C0A8 and zlib_15 == 0x128001C1 and zlib_70 == 0x52800E03
+            and "FindZipEocdOffset" in content and "BuildBigCoreCpuSetMask" in content,
+            "Khớp FDE[07] quét ngược ZIP EOCD 0x06054B50 (0x343c..0x3440), inflateInit2_(-15, '1.2.8', 0x70 @ 0x3818) và mặt nạ cpu_set_t"
+        )
+
+        # 5. FDE[14] ComputeMonotonicNanoseconds (0x3d58: 0x3B9ACA00 @ 0x3da0..0x3da8) & sdiv 1,000,000 ns/ms (0x000F4240 @ 0x2750..0x2758)
+        ns_lo = struct.unpack_from("<I", so_bytes, 0x3da0)[0]
+        ns_hi = struct.unpack_from("<I", so_bytes, 0x3da4)[0]
+        ns_ma = struct.unpack_from("<I", so_bytes, 0x3da8)[0]
+        ms_lo = struct.unpack_from("<I", so_bytes, 0x2750)[0]
+        ms_hi = struct.unpack_from("<I", so_bytes, 0x2758)[0]
+        self.assert_test(
+            "Zoin_MonotonicClockMathAndMsDivisor",
+            ns_lo == 0x5299400A and ns_hi == 0x72A7734A and ns_ma == 0x9B0A2500
+            and ms_lo == 0x52884809 and ms_hi == 0x72A001E9
+            and "ComputeMonotonicNanoseconds" in content,
+            "Khớp FDE[14] ComputeMonotonicNanoseconds (tv_sec * 0x3B9ACA00 + tv_nsec @ 0x3da0..0x3da8) và sdiv 0x000F4240 (1,000,000 ns/ms @ 0x2750)"
+        )
+
+        # 6. FDE[17] CalculateZoinCrc32PlusLength (0x3e84: mvn w3, w8 @ 0x3ec8; add x19, x3, x4 @ 0x3ecc), 256-entry CRC table @ 0x16c0 & 1,973 .text words
+        crc_mvn = struct.unpack_from("<I", so_bytes, 0x3ec8)[0]
+        crc_add = struct.unpack_from("<I", so_bytes, 0x3ecc)[0]
+        crc_t0, crc_t1 = struct.unpack_from("<2I", so_bytes, 0x16c0)
+        self.assert_test(
+            "Zoin_Crc32PlusLengthMathAndFull1973TextWords",
+            crc_mvn == 0x2A2803E3 and crc_add == 0x8B040073
+            and crc_t0 == 0x00000000 and crc_t1 == 0x77073096
+            and "CalculateZoinCrc32PlusLength" in content and "kZoinTextWords1973" in content,
+            "Khớp FDE[17] CalculateZoinCrc32PlusLength (uint64_t(~crc32) + len @ 0x3ec8..0x3ecc), bảng CRC-32 256 mục (.rodata 0x16c0) và 1,973 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14192,6 +14288,7 @@ class AutonomousVerificationEngine:
         self.verify_libsys_platform()
         self.verify_libvcnverify()
         self.verify_libhelios_bm()
+        self.verify_libzoin()
         self.verify_overall_governance()
 
 

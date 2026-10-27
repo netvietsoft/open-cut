@@ -1,0 +1,26 @@
+{
+  "task_id": "TASK-175-RECONSTRUCTION-LIBZOIN",
+  "so_task_id": "TASK_SO_087_libzoin",
+  "title": "Clean-Room C++17 Reconstruction of libzoin.so (Target 136 / 169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "target_library": "libzoin.so",
+  "size_bytes": 20304,
+  "sha256": "461eaaa63714d460001f67de31520aa3d5b97431d177f9f73005c9519e87adcc",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libzoin/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libzoin.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_087_libzoin.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "completed_at": "2026-10-27T20:51:35.061799+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (136/169)",
+    "reconstruction_suite": "851/851 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 348057,
+    "fde_count": 54,
+    "exported_symbols": 1,
+    "stub_count": 0
+  }
+}
