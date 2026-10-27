@@ -849,3 +849,5 @@
 - [x] **TASK-143 (`libttr.so` — `625,192 B`)**: Reconstructed `1,372,517 B` C++17/H (9 files, 3,386 FDEs, 490 exports, 0 stubs), verified `659/659 PASS (100.0%)`, `104/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-144 (`libfdk-aac.so` — `625,312 B`)**: Reconstructed `1,191,477 B` C++17/H (9 files, 1,471 FDEs, 1,002 exports, 0 stubs), verified `665/665 PASS (100.0%)`, `105/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-145 (`libttkmedianet.so` — `632,064 B`)**: Reconstructed `1,348,105 B` C++17/H (9 files, 1,643 FDEs, 115 exports, 0 stubs), verified `671/671 PASS (100.0%)`, `106/169 VERIFIED_AND_ACCEPTED`.

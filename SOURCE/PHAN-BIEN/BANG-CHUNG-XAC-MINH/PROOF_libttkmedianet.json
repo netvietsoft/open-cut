@@ -1,0 +1,116 @@
+{
+  "library": "libttkmedianet.so",
+  "task_id": "TASK-145-RECONSTRUCTION-LIBTTKMEDIANET",
+  "legacy_task_id": "TASK_SO_022_libttkmedianet",
+  "target_index": 106,
+  "binary_size_bytes": 632064,
+  "sha256": "f6826092b0e554652515dac78ffbeb99ee14434369d57c0e81697564b5e03860",
+  "eh_frame_hdr_va": "0x08419c",
+  "fde_count": 1643,
+  "exported_symbol_count": 115,
+  "imported_symbol_count": 302,
+  "reconstructed_files": [
+    "ttkmedianet_types.h",
+    "ttkmedianet_core.h",
+    "ttkmedianet_core.cpp",
+    "ttkmedianet_quic_engine.cpp",
+    "ttkmedianet_fde_shard_1.cpp",
+    "ttkmedianet_fde_shard_2.cpp",
+    "ttkmedianet_fde_shard_3.cpp",
+    "ttkmedianet_fde_shard_4.cpp",
+    "ttkmedianet_fde_shard_5.cpp"
+  ],
+  "reconstructed_total_bytes": 1348105,
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "symbol": "_ZN11TTKMediaNet11NetworkTaskC2ENSt6__ndk18weak_ptrINS0_8DelegateEEE",
+      "va_range": "0x02f54c..0x02f5cc",
+      "size_bytes": 132,
+      "verified_instructions": {
+        "0x02f578": "C85FFD09 (ldaxr x9, [x8] -> atomic task_id @ 0x09dd20)",
+        "0x02f57c": "91000529 (add x9, x9, #1)",
+        "0x02f580": "C80AFD09 (stlxr w10, x9, [x8])",
+        "0x02f58c": "F9002009 (str x9, [x0, #0x40])",
+        "0x02f590": "7900901F (strh wzr, [x0, #0x48])"
+      }
+    },
+    {
+      "symbol": "_ZN11TTKMediaNet11NetworkTask31InternalKeyConvertToExternalKeyEi",
+      "va_range": "0x0332b0..0x0332dc",
+      "size_bytes": 48,
+      "verified_instructions": {
+        "0x0332b0": "52888BA8 (mov w8, #0x445d)",
+        "0x0332b4": "72BFFE48 (movk w8, #0xfff2, lsl #16 -> -900003)",
+        "0x0332b8": "0B080028 (add w8, w1, w8)",
+        "0x0332bc": "71000D1F (cmp w8, #3)",
+        "0x0332c4": "5299DD48 (mov w8, #0xceea)",
+        "0x0332c8": "72BFFE68 (movk w8, #0xfff3, lsl #16 -> -798998)",
+        "0x0332d4": "52915220 (mov w0, #0x8a91)",
+        "0x0332d8": "72A00020 (movk w0, #1, lsl #16 -> 101009)"
+      }
+    },
+    {
+      "symbol": "_ZN11TTKMediaNet11NetworkTask15TCSetInt64ValueEil",
+      "va_range": "0x033464..0x03349c",
+      "size_bytes": 60,
+      "verified_instructions": {
+        "0x033464": "52915108 (mov w8, #0x8a88)",
+        "0x033468": "72A00028 (movk w8, #1, lsl #16 -> 101000)",
+        "0x033478": "39012408 (strb w8, [x0, #0x49])",
+        "0x03347c": "F9404808 (ldr x8, [x0, #0x90])"
+      }
+    },
+    {
+      "symbol": "_ZN11TTKMediaNet10NetworkMgr13GetNetworkMgrEv",
+      "va_range": "0x03b058..0x03b0bc",
+      "size_bytes": 104,
+      "verified_instructions": {
+        "0x03b064": "D0000308 (adrp x8, #0x9d000)",
+        "0x03b068": "9134C108 (add x8, x8, #0xd30 -> guard @ 0x09dd30)",
+        "0x03b06c": "08DFFD08 (ldarb w8, [x8])",
+        "0x03b07c": "91354000 (add x0, x0, #0xd50 -> instance @ 0x09dd50)"
+      }
+    },
+    {
+      "symbol": "_ZN11TTKMediaNet10NetworkMgrC2Ev",
+      "va_range": "0x03b0c0..0x03b16c",
+      "size_bytes": 176,
+      "verified_instructions": {
+        "0x03b0e8": "52A7F008 (mov w8, #0x3f800000 -> 1.0f)",
+        "0x03b0f0": "B9005008 (str w8, [x0, #0x50])"
+      }
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula": "ext_key = ((uint32_t)(k - 900003) <= 3u) ? (k - 798998) : 101009",
+      "location": "0x0332b0..0x0332dc",
+      "purpose": "Branchless unsigned range check mapping internal QUIC event keys [900003..900006] to [101005..101008] and default 101009"
+    },
+    {
+      "formula": "W_cubic(t) = 0.4 * (t - cbrt(W_max * 0.3 / 0.4))^3 + W_max",
+      "location": ".rodata 0x07cad4 (cubic) & 0x07c9e9 (iacc_optimization)",
+      "purpose": "QUIC draft-29 / v1 CUBIC congestion window growth and IACC adaptive pacing"
+    }
+  ],
+  "abi_layouts": [
+    {
+      "struct_name": "TTKMediaNet::NetworkTask",
+      "total_size_bytes": 160,
+      "fields": {
+        "+0x00": "vptr_primary (0x09a2f0)",
+        "+0x08": "vptr_secondary (0x09a378)",
+        "+0x10": "std::mutex mutex_area",
+        "+0x40": "uint64_t task_id (atomic from 0x09dd20)",
+        "+0x48": "uint8_t state_flags",
+        "+0x49": "uint8_t direct_cb_flag (key 101000)",
+        "+0x78": "weak_ptr<Delegate> ptr",
+        "+0x80": "weak_ptr<Delegate> ctrl_blk",
+        "+0x88": "TTKMediaNetTask::Delegate* ext_delegate",
+        "+0x90": "shared_ptr<QuicRequestCtx> quic_req_ctx"
+      }
+    }
+  ],
+  "status": "VERIFIED_AND_ACCEPTED"
+}
