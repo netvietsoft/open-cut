@@ -1,0 +1,31 @@
+{
+  "task_id": "TASK-187-RECONSTRUCTION-LIBFLY-MAIN-COLOR-LIB",
+  "title": "Clean-Room C++17 Reconstruction & Adversarial Verification of libfly-main-color-lib.so (Target 148/169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/C++ Native) & Agent 13 (Adversary Auditor)",
+  "priority": "P0",
+  "created_at": "2026-10-27T22:47:00+07:00",
+  "completed_at": "2026-10-27T22:56:00+07:00",
+  "target_binary": "libfly-main-color-lib.so",
+  "target_size_bytes": 51024,
+  "target_sha256": "4eae061db755de08346e4cec950e9748d506af1fb140b2bfd95bc7dc49a0ba57",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libfly-main-color-lib/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libfly-main-color-lib.*",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_154_libfly_main_color_lib.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "Docs/Changelog/**",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "verification_results": {
+    "adversary_auditor": "VERIFIED_AND_ACCEPTED (148/169, 87.57%)",
+    "verification_suite": "923/923 PASS (100.0%)",
+    "native_audit_watchdog": "169 binaries, 0 high findings",
+    "reconstructed_code_bytes": 909595,
+    "stub_count": 0
+  }
+}

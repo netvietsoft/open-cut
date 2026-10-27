@@ -933,3 +933,5 @@
 - [x] **TASK-185 (`libnpth_xasan.so` — Target 146/169, `40,480 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`729,404 B`), đạt `146/169 VERIFIED_AND_ACCEPTED (86.39%)` và `911/911 PASS (100.0%)`.
 
 - [x] **TASK-186 (`libnpth_heap_tracker.so` — Target 147/169, `43,176 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`807,384 B`), đạt `147/169 VERIFIED_AND_ACCEPTED (86.98%)` và `917/917 PASS (100.0%)`.
+
+- [x] **TASK-187 (`libfly-main-color-lib.so` — Target 148/169, `51,024 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`909,595 B`), đạt `148/169 VERIFIED_AND_ACCEPTED (87.57%)` và `923/923 PASS (100.0%)`.

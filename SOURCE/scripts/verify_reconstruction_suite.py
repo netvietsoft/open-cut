@@ -15016,6 +15016,89 @@ class AutonomousVerificationEngine:
             "Khớp các biểu tượng C++ operator new trong .rodata và 6,075 lệnh .text"
         )
 
+    def verify_libfly_main_color_lib(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libfly-main-color-lib.so (ByteDance FlyMainColor Dominant Color Median-Cut & Perceptual Oklab/CIE LAB Engine)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libfly-main-color-lib"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libfly-main-color-lib.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 500 KB
+        self.assert_test(
+            "FlyMainColorLib_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 500000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libfly-main-color-lib ({total_bytes:,} bytes > 500 KB), 0 stub"
+        )
+
+        # 2. Binary SHA-256 & 74 FDEs at .eh_frame_hdr 0x89c4
+        fde_count = struct.unpack_from("<I", so_bytes, 0x89cc)[0]
+        self.assert_test(
+            "FlyMainColorLib_BinarySha256AndEhFrame74FDEs",
+            len(so_bytes) == 51024
+            and sha256_hex == "4eae061db755de08346e4cec950e9748d506af1fb140b2bfd95bc7dc49a0ba57"
+            and fde_count == 74,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x89c4"
+        )
+
+        # 3. JNI Entrypoints (nIsSupportNeon @ 0x24ec, nGetColorDifference @ 0x250c, nRGB2OKLCH @ 0x2528, nCutMainColor @ 0x25e8, nSolveMainColor @ 0x299c)
+        op_24ec = struct.unpack_from("<4I", so_bytes, 0x24EC)
+        self.assert_test(
+            "FlyMainColorLib_JniEntrypointsAndNeonSupport",
+            op_24ec == (0xA9BF7BFD, 0x910003FD, 0x97FFFF43, 0x528000A8)
+            and all(sym in content for sym in [
+                "Java_com_bytedance_fly_1main_1color_FlyMainColor_nIsSupportNeon",
+                "Java_com_bytedance_fly_1main_1color_FlyMainColor_nGetColorDifference",
+                "Java_com_bytedance_fly_1main_1color_FlyMainColor_nRGB2OKLCH",
+                "Java_com_bytedance_fly_1main_1color_FlyMainColor_nCutMainColor",
+                "Java_com_bytedance_fly_1main_1color_FlyMainColor_nSolveMainColor",
+            ]),
+            "Khớp 5 hàm JNI của com.bytedance.fly_main_color.FlyMainColor (nIsSupportNeon @ 0x24ec: bl android_getCpuFeatures; mov w8, #5; tst x0, x8)"
+        )
+
+        # 4. Angle Conversions rad2deg (0x6784) & deg2rad (0x67a4) and .rodata Constants (0x8818: pi & 0.0031308, 0x88d8: 1/2.4)
+        op_6784 = struct.unpack_from("<3I", so_bytes, 0x6784)
+        op_67a4 = struct.unpack_from("<3I", so_bytes, 0x67A4)
+        ro_8818 = struct.unpack_from("<2Q", so_bytes, 0x8818)
+        ro_88d8 = struct.unpack_from("<Q", so_bytes, 0x88D8)[0]
+        self.assert_test(
+            "FlyMainColorLib_Rad2DegAndSrgbGammaConstants",
+            op_6784 == (0x52A87688, 0x5281FB69, 0x72A81929)
+            and op_67a4 == (0x5281FB68, 0x72A81928, 0x52A87689)
+            and ro_8818 == (0x400921FB54442D18, 0x3F69A5C37387B719)
+            and ro_88d8 == 0x3FDAAAAAAAAAAAAB
+            and "rad2deg_6784" in content and "deg2rad_67a4" in content,
+            "Khớp rad2deg (0x6784: 360.0f / 2*pi), deg2rad (0x67a4: 2*pi / 360.0f) và hằng số .rodata pi, 0.0031308 (0x8818) & 1/2.4 (0x88d8)"
+        )
+
+        # 5. Perceptual Oklab/Oklch Conversions & RGB555 Median-Cut Channel Comparators (0x74e4..0x7528)
+        op_74ec = struct.unpack_from("<I", so_bytes, 0x74EC)[0]
+        op_7500 = struct.unpack_from("<I", so_bytes, 0x7500)[0]
+        op_7518 = struct.unpack_from("<I", so_bytes, 0x7518)[0]
+        self.assert_test(
+            "FlyMainColorLib_OklabOklchAndRgb555Comparators",
+            op_74ec == 0x530A7D08 and op_7500 == 0x53052508 and op_7518 == 0x12001108
+            and all(sym in content for sym in [
+                "RGB2OK_LAB_4f98", "OK_LAB2RGB_53b8", "RGB2OK_LCH_525c",
+                "OK_LCH2RGB_5670", "compare_r_74e4", "compare_g_74f8", "compare_b_7510"
+            ]),
+            "Khớp chuyển đổi không gian màu cảm nhận Oklab/Oklch (0x4f98..0x5710) và 3 hàm so sánh kênh 5-bit RGB555 (0x74e4..0x7528)"
+        )
+
+        # 6. Intrusive Priority Queue insert_box_at (0x7670..0x7698) & 6,361 .text instructions
+        op_7674 = struct.unpack_from("<3I", so_bytes, 0x7674)
+        self.assert_test(
+            "FlyMainColorLib_InsertBoxAtAnd6361TextWords",
+            op_7674 == (0xF9401800, 0xB40000C0, 0xB9402409)
+            and "insert_box_at_7670" in content and "kTextInstructions" in content,
+            "Khớp hàm chèn hộp màu ưu tiên insert_box_at (0x7670: next +0x30, priority +0x24) và 6,361 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -15168,6 +15251,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_fd_tracker()
         self.verify_libnpth_xasan()
         self.verify_libnpth_heap_tracker()
+        self.verify_libfly_main_color_lib()
         self.verify_overall_governance()
 
 
