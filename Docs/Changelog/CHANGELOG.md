@@ -34,3 +34,7 @@
 ## [2026-10-28] - `TASK-201-RECONSTRUCTION-LIBPROFILER` (`libprofiler.so` — Target 162/169)
 - Reconstructed `libprofiler.so` (`471,424 bytes`, SHA-256 `3d0bc4a14b76e405bce38d41d80d640d29094ddb53013abac8667e4ff02616f9`) into 3 clean-room C++17/H files (`1,820,433 bytes`, `993` FDEs, `75,108` `.text` words, `7` exported symbols, `0` stubs).
 - Added 6 binary/mathematical assertions in `verify_libprofiler()` (`1007/1007 PASS`, `162/169 VERIFIED_AND_ACCEPTED` = `95.86%`).
+
+## [2026-10-28] - `TASK-202-RECONSTRUCTION-LIBBYTEVC1-DEC` (`libByteVC1_dec.so` — Target 163/169)
+- Reconstructed `libByteVC1_dec.so` (`478,536 bytes`, SHA-256 `964f36948ecfa84c4886aca5aa2592f5ef65bb25dab4beeaa58d1b9f70991e07`) into 3 clean-room C++17/H files (`1,789,869 bytes`, `419` FDEs, `100,947` `.text` words, `100` exported `ByteVC1_*` functions, `0` stubs).
+- Added 6 binary/mathematical assertions in `verify_libByteVC1_dec()` (`1013/1013 PASS`, `163/169 VERIFIED_AND_ACCEPTED` = `96.45%`).

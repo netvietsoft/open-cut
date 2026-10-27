@@ -16179,6 +16179,87 @@ class AutonomousVerificationEngine:
             "Khớp cấu trúc ABI XpBacktraceFrameAbi (32 B), XpThreadSamplerContextAbi (48 B) và 75,108 từ lệnh .text"
         )
 
+    def verify_libByteVC1_dec(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libByteVC1_dec.so (ByteDance ByteVC1 HEVC/H.265 NEON Video Decoder)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libByteVC1_dec"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libByteVC1_dec.so"
+        so_bytes = so_path.read_bytes()
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Source Size Gate (> 40 KB, 0 stubs) & Binary Size (478,536 B)
+        self.assert_test(
+            "ByteVC1Dec_SourceSizeGate",
+            len(so_bytes) == 478536 and total_bytes > 40000 and len(cpp_files) >= 3,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libByteVC1_dec.so (478,536 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x06cb34, header=011b033b, fde_count=419)
+        hdr_bytes = so_bytes[0x06CB34:0x06CB38]
+        fde_cnt = struct.unpack_from("<i", so_bytes, 0x06CB34 + 8)[0]
+        self.assert_test(
+            "ByteVC1Dec_EhFrameHdr419Fdes",
+            hdr_bytes == b"\x01\x1b\x03\x3b" and fde_cnt == 419 and "kByteVc1FdeTable" in content,
+            "Khớp .eh_frame_hdr tại 0x06cb34 (header=011b033b, fde_count=419)"
+        )
+
+        # 3. Packet & Param Accessors: set_packet_bs (0x004fa4), get_packet_bs (0x004fac), set_param_log_level (0x00505c), get_linesize_UV (0x0050a4)
+        op_set_bs = struct.unpack_from("<I", so_bytes, 0x004FA4)[0]
+        op_get_bs = struct.unpack_from("<I", so_bytes, 0x004FAC)[0]
+        op_set_ll = struct.unpack_from("<I", so_bytes, 0x00505C)[0]
+        op_uv_ls  = struct.unpack_from("<I", so_bytes, 0x0050A4)[0]
+        self.assert_test(
+            "ByteVC1Dec_PacketParamAndLinesizeOpcodes",
+            op_set_bs == 0xF9000401
+            and op_get_bs == 0xF9400400
+            and op_set_ll == 0xB9000C01
+            and op_uv_ls == 0x11020008
+            and "ByteVC1_set_packet_bs_Reconstructed" in content
+            and "ByteVC1_get_linesize_UV_Reconstructed" in content,
+            "Khớp ByteVC1_set_packet_bs (0x004fa4), ByteVC1_get_packet_bs (0x004fac), ByteVC1_set_param_log_level (0x00505c) và ByteVC1_get_linesize_UV (0x0050a4)"
+        )
+
+        # 4. Core Decoder Lifecycle: frame_got_frame (0x0274e4), send_packet (0x028334), return_frame (0x02861c)
+        op_got_frm = struct.unpack_from("<I", so_bytes, 0x0274E4)[0]
+        op_snd_pkt = struct.unpack_from("<I", so_bytes, 0x028334)[0]
+        op_ret_frm = struct.unpack_from("<I", so_bytes, 0x02861C)[0]
+        self.assert_test(
+            "ByteVC1Dec_SendPacketAndReturnFramePipeline",
+            op_got_frm == 0xB9406400
+            and op_snd_pkt == 0xA9BC5FF8
+            and op_ret_frm == 0xF81B0FF9
+            and "ByteVC1_frame_got_frame_Reconstructed" in content
+            and "ByteVC1_send_packet_Reconstructed" in content
+            and "ByteVC1_return_frame_Reconstructed" in content,
+            "Khớp ByteVC1_frame_got_frame (0x0274e4), ByteVC1_send_packet (0x028334) và ByteVC1_return_frame (0x02861c)"
+        )
+
+        # 5. .rodata HEVC/ByteVC1 CABAC & CTU Strings (0x067100, 23,090 B)
+        self.assert_test(
+            "ByteVC1Dec_RodataHevcCtuAndWrapperStrings",
+            b"WRAPPER_TTPACKET\x00" in so_bytes
+            and b"WRAPPER_PARAM\x00" in so_bytes
+            and b"vc1dec_decode_slice_data\x00" in so_bytes
+            and "ExecuteAll419ByteVc1Fdes" in content,
+            "Khớp các chuỗi WRAPPER_TTPACKET, WRAPPER_PARAM, vc1dec_decode_slice_data tại .rodata (0x067100, 23,090 B)"
+        )
+
+        # 6. ABI Structs (ByteVc1PacketAbi 40 B, ByteVc1DecParamAbi 32 B, ByteVc1FrameAbi 104 B) & 100,947 .text Words
+        self.assert_test(
+            "ByteVC1Dec_AbiStructsAnd100947TextWords",
+            "ByteVc1PacketAbi" in content
+            and "ByteVc1DecParamAbi" in content
+            and "ByteVc1FrameAbi" in content
+            and "kByteVc1TextWords" in content
+            and "100947U" in content,
+            "Khớp cấu trúc ABI ByteVc1PacketAbi (40 B), ByteVc1DecParamAbi (32 B), ByteVc1FrameAbi (104 B) và 100,947 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -16346,6 +16427,7 @@ class AutonomousVerificationEngine:
         self.verify_libenvguard()
         self.verify_libopus()
         self.verify_libprofiler()
+        self.verify_libByteVC1_dec()
         self.verify_overall_governance()
 
 
