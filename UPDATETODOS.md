@@ -895,3 +895,5 @@
 - [x] **TASK-166 (`libtobEmbedPagEncrypt.so` — `8,304 B`)**: Reconstructed `279,520 B` C++17/H (5 files, 7 FDEs, 8 exports, 0 stubs), verified `797/797 PASS (100.0%)`, `127/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-167 (`libkomprese-decompressor.so` — `15,800 B`)**: Reconstructed `206,002 B` C++17/H (5 files, 9 FDEs, 1 export, 0 stubs), verified `803/803 PASS (100.0%)`, `128/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-168 (`libnpth_tls_monitor.so` — `15,904 B`)**: Reconstructed `126,829 B` C++17/H (4 files, 18 FDEs, 1 export, 0 stubs), verified `809/809 PASS (100.0%)`, `129/169 VERIFIED_AND_ACCEPTED`.

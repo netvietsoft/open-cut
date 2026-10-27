@@ -1,0 +1,14 @@
+{
+  "task_id": "TASK-168-RECONSTRUCTION-LIBNPTH-TLS-MONITOR",
+  "status": "DONE",
+  "completed_at": "2026-10-27T20:03:51.184636+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (129/169)",
+    "reconstruction_suite": "809/809 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 126829,
+    "fde_count": 18,
+    "exported_symbols": 1,
+    "stub_count": 0
+  }
+}

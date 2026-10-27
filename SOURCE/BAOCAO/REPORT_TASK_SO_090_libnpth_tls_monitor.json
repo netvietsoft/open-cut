@@ -1,18 +1,21 @@
 {
-  "report_id": "REPORT_TASK_SO_090_libnpth_tls_monitor",
   "task_id": "TASK_SO_090_libnpth_tls_monitor",
-  "target_library": "libnpth_tls_monitor.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 39,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnpth_tls_monitor",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "governance_task_id": "TASK-168-RECONSTRUCTION-LIBNPTH-TLS-MONITOR",
+  "library": "libnpth_tls_monitor.so",
+  "sha256": "7dc9ec38a56447ae99bde0d8bb89408b3583ea62097a3c0f7d55ba8c5b4e0fa7",
+  "size_bytes": 15904,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_code_bytes": 126829,
+  "fde_count": 18,
+  "instruction_count": 1599,
+  "exported_symbols": [
+    "tls_native_interface_func"
+  ],
+  "files_generated": [
+    "npth_tls_monitor.h",
+    "npth_tls_monitor_core.cpp",
+    "npth_tls_safe_printf_io.cpp",
+    "npth_tls_rodata_and_text_image.cpp",
+    "README_ANALYSIS.md"
+  ]
 }

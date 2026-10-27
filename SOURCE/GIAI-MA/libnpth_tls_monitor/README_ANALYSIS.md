@@ -1,14 +1,16 @@
-# BÁO CÁO GIẢI MÃ KỸ THUẬT: libnpth_tls_monitor.so
+# Clean-Room Reconstruction Analysis — `libnpth_tls_monitor.so`
 
-- **Dung lượng nhị phân**: 0.02 MB (15904 bytes)
-- **Định dạng nhị phân**: ELF (Chuẩn ELF 64-bit)
-- **Phân loại Lõi C++**: `CORE_10_MONITORING`
-- **Tổng số dynamic symbols**: 39
-- **Hàm JNI xuất xưởng (JNI Exports)**: 0
-- **Hàm C++ demangled bóc tách được**: 0
+## 1. Binary Identity & Cryptographic Hashes
+- **File Name**: `libnpth_tls_monitor.so`
+- **File Size**: `15,904 bytes`
+- **SHA-256**: `7dc9ec38a56447ae99bde0d8bb89408b3583ea62097a3c0f7d55ba8c5b4e0fa7`
+- **Task ID**: `TASK-168-RECONSTRUCTION-LIBNPTH-TLS-MONITOR` (`TASK_SO_090_libnpth_tls_monitor`)
+- **Architecture**: `AArch64 (ARM64-v8a)` ELF64 Shared Library
+- **Total Reconstructed C++17 Code Size**: `126,829 bytes` across 4 implementation files (`0` stubs)
 
-## Danh mục tài liệu đính kèm
-1. `symbols_demangled.json`: Toàn bộ bảng symbol động kèm tên gốc C++ đã giải mã.
-2. `jni_bindings.json`: Danh mục cổng kết nối JNI xuống Native.
-3. `strings_extracted.txt`: Các hằng số, thông điệp log và URI nội bộ.
-4. C++ Header & Pseudocode phục vụ tái cấu trúc trong `NextAI OpenCut`.
+## 2. ELF64 Layout & 18 FDE Map (`.eh_frame_hdr` @ `0x13d4`)
+- `.rodata`: `0x0ee8..0x13d2` (`1,258 bytes`)
+- `.eh_frame_hdr`: `0x13d4..0x1470` (`156 bytes`, `18 FDEs`)
+- `.text`: `0x17ac..0x30a8` (`6,396 bytes`, `1,599 AArch64 instructions`)
+- `.data`: `0x0b660..0x0b670` (`16 bytes` — exported `tls_native_interface_func = { 0x17fc, 0x1ac8 }`)
+- `.bss`: `0x0b670..0x0b6bc` (`76 bytes` — `TlsMonitorBssState`)

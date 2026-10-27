@@ -13418,6 +13418,99 @@ class AutonomousVerificationEngine:
             "Khớp bộ lọc hậu kỳ BCJ đa kiến trúc (AArch64 BL/ADRP/PLT, Thumb-2 BL/BLX, Prel31 @ 0x2b24..0x3294) và trọn vẹn 2,573 từ lệnh .text"
         )
 
+    def verify_libnpth_tls_monitor(self):
+        import hashlib
+        import struct
+        print("\n[129] Đang kiểm chứng libnpth_tls_monitor.so (ByteDance NPTH Pthread TLS Key Monitor & ByteHook Bridge)...")
+        tls_dir = GIAIMA_DIR / "libnpth_tls_monitor"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_tls_monitor.so"
+
+        files = [
+            "npth_tls_monitor.h",
+            "npth_tls_monitor_core.cpp",
+            "npth_tls_safe_printf_io.cpp",
+            "npth_tls_rodata_and_text_image.cpp",
+        ]
+        all_exist = all((tls_dir / f).exists() for f in files)
+        total_size = sum((tls_dir / f).stat().st_size for f in files if (tls_dir / f).exists())
+
+        # 1. Clean-room C++17 file completeness and size gate (> 40 KB)
+        self.assert_test(
+            "NpthTlsMonitor_CleanRoomFilesAndSize",
+            all_exist and total_size > 100000 and not (tls_dir / "npth_tls_monitor_pseudocode.cpp").exists(),
+            f"Đầy đủ 4 file C++17/H trong GIAI-MA/libnpth_tls_monitor ({total_size:,} bytes > 100 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (15,904 B) and .eh_frame_hdr 18 FDEs @ 0x13d4
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x13dc)[0]
+        self.assert_test(
+            "NpthTlsMonitor_BinarySha256AndEhFrame18FDEs",
+            len(so_bytes) == 15904
+            and sha256_hex == "7dc9ec38a56447ae99bde0d8bb89408b3583ea62097a3c0f7d55ba8c5b4e0fa7"
+            and eh_fde_count == 18,
+            f"Khớp kích thước 15,904 bytes, SHA-256 ({sha256_hex[:16]}...) và 18 FDEs tại .eh_frame_hdr 0x13d4"
+        )
+
+        content = ""
+        for f in files:
+            fp = tls_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[05] (0x17fc): API [23..34] check (0x180c..0x1810), Bionic _ZL7key_map 0x820B (130 keys @ 0x18d8) & 0x8d0B (141 keys @ 0x1900)
+        api_sub = struct.unpack_from("<I", so_bytes, 0x180c)[0]
+        api_cmn = struct.unpack_from("<I", so_bytes, 0x1810)[0]
+        sz_820  = struct.unpack_from("<I", so_bytes, 0x18d8)[0]
+        sz_8d0  = struct.unpack_from("<I", so_bytes, 0x1900)[0]
+        node_70 = struct.unpack_from("<I", so_bytes, 0x194c)[0]
+        self.assert_test(
+            "NpthTlsMonitor_ApiRangeAndBionicKeyMapAllocation",
+            api_sub == 0x51008C08 and api_cmn == 0x3100311F
+            and sz_820 == 0x52810401 and sz_8d0 == 0x52811A01 and node_70 == 0x52800E01
+            and "kBionicKeyMapCountApi26To33" in content and "kBionicKeyMapCountApi23To25" in content,
+            "Khớp kiểm tra API [23..34] (0x180c), cấp phát _ZL7key_map (0x820B @ 0x18d8, 0x8d0B @ 0x1900) và nút sentinel 0x70B (0x194c)"
+        )
+
+        # 4. FDE[06] (0x1ac8): Dump pthread_key_map.txt & pthread_key_info.txt ("create" 0x61657263 @ 0x1e34, "delete" 0x656c6564 @ 0x1f28)
+        cr_lo = struct.unpack_from("<I", so_bytes, 0x1e34)[0]
+        cr_hi = struct.unpack_from("<I", so_bytes, 0x1e40)[0]
+        dl_lo = struct.unpack_from("<I", so_bytes, 0x1f28)[0]
+        dl_hi = struct.unpack_from("<I", so_bytes, 0x1f2c)[0]
+        self.assert_test(
+            "NpthTlsMonitor_KeyMapAndInfoDumpFormatter",
+            cr_lo == 0x528E4C7C and cr_hi == 0x72AC2CBC
+            and dl_lo == 0x528CAC88 and dl_hi == 0x72ACAD88
+            and b"%s/pthread_key_map.txt\x00" in so_bytes and b"%s/pthread_key_info.txt\x00" in so_bytes
+            and "NpthPthreadKeyMonitorDump" in content,
+            "Khớp xuất báo cáo pthread_key_map.txt và pthread_key_info.txt ('create' @ 0x1e34, 'delete' @ 0x1f28)"
+        )
+
+        # 5. FDE[07..11] (0x2040..0x2370): ByteHook Caller Filter & xpaclri Pthread Key Create/Delete Proxies
+        xpac_create = struct.unpack_from("<I", so_bytes, 0x20c8)[0]
+        xpac_delete = struct.unpack_from("<I", so_bytes, 0x217c)[0]
+        alloc_node  = struct.unpack_from("<I", so_bytes, 0x2254)[0]
+        self.assert_test(
+            "NpthTlsMonitor_ByteHookProxiesAndXpaclri",
+            xpac_create == 0xD50320FF and xpac_delete == 0xD50320FF and alloc_node == 0x52800E00
+            and "NpthTlsCallerFilter" in content
+            and "NpthHookedPthreadKeyCreate" in content and "NpthHookedPthreadKeyDelete" in content,
+            "Khớp bộ lọc thư viện gọi (0x2040) và ủy nhiệm ByteHook pthread_key_create (0x20b4, xpaclri) / pthread_key_delete (0x214c, xpaclri)"
+        )
+
+        # 6. FDE[13..17] (0x2418..0x30a4): Signal-Safe Formatter, RLIMIT_NOFILE=7 Retry & Exported tls_native_interface_func (0x0b660)
+        pad_20 = struct.unpack_from("<I", so_bytes, 0x2bd0)[0]
+        pad_30 = struct.unpack_from("<I", so_bytes, 0x2bd8)[0]
+        rlim_7 = struct.unpack_from("<I", so_bytes, 0x301c)[0]
+        self.assert_test(
+            "NpthTlsMonitor_SafePrintfRlimitAndExportedInterface",
+            pad_20 == 0xB203C3E9 and pad_30 == 0xB204C7E8 and rlim_7 == 0x528000E0
+            and "tls_native_interface_func" in content
+            and "kNpthTlsMonitorTextWords1599" in content and "kNpthTlsMonitorRodata1258" in content,
+            "Khớp vsnprintf an toàn tín hiệu (0x2418), tự nâng RLIMIT_NOFILE=7 khi EMFILE (0x301c), bảng tls_native_interface_func (0x0b660) và 1,599 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -13551,6 +13644,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_bt()
         self.verify_libtobEmbedPagEncrypt()
         self.verify_libkomprese_decompressor()
+        self.verify_libnpth_tls_monitor()
         self.verify_overall_governance()
 
 
