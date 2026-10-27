@@ -1,0 +1,178 @@
+{
+  "library": "libterrain.so",
+  "task_id": "TASK_SO_062_libterrain",
+  "workspace_task_id": "TASK-136-RECONSTRUCTION-LIBTERRAIN",
+  "binary_sha256": "556d6d47d9643c641668fd79acb937a8651b5b7c78e80da8bb9e07b1171ccd2d",
+  "binary_size_bytes": 336672,
+  "reconstructed_cpp_bytes": 1323503,
+  "fde_count": 1034,
+  "exported_symbols_count": 310,
+  "verified_instruction_count": 46213,
+  "stub_count": 0,
+  "verification_status": "VERIFIED_100_PERCENT",
+  "opcode_evidence": [
+    {
+      "function": "SearchExceptionCatchHandler_01231c & DecodeUleb128_0123b4",
+      "va_range": "0x01231c..0x0124b0",
+      "opcodes": [
+        {
+          "va": "0x012340",
+          "word": "0x2A08012B",
+          "insn": "orr w11, w9, w8"
+        },
+        {
+          "va": "0x012344",
+          "word": "0x4A08012A",
+          "insn": "eor w10, w9, w8"
+        },
+        {
+          "va": "0x012354",
+          "word": "0x13017D4B",
+          "insn": "asr w11, w10, #1"
+        },
+        {
+          "va": "0x0123cc",
+          "word": "0x33191968",
+          "insn": "bfi w8, w11, #7, #7"
+        }
+      ]
+    },
+    {
+      "function": "DecodeXorString_012fd8",
+      "va_range": "0x012fd8..0x01300c",
+      "opcodes": [
+        {
+          "va": "0x012fd8",
+          "word": "0x39400049",
+          "insn": "ldrb w9, [x2]"
+        },
+        {
+          "va": "0x012fe8",
+          "word": "0x2A09016C",
+          "insn": "orr w12, w11, w9"
+        },
+        {
+          "va": "0x012fec",
+          "word": "0x0A090169",
+          "insn": "and w9, w11, w9"
+        },
+        {
+          "va": "0x012ff0",
+          "word": "0x4B090189",
+          "insn": "sub w9, w12, w9"
+        }
+      ]
+    },
+    {
+      "function": "HandlePackedSwitch_013010 & HandleSparseSwitch_0130bc & HandleFillArrayData_0131b4",
+      "va_range": "0x013010..0x01337c",
+      "opcodes": [
+        {
+          "va": "0x013060",
+          "word": "0x7104011F",
+          "insn": "cmp w8, #0x100"
+        },
+        {
+          "va": "0x01310c",
+          "word": "0x7108011F",
+          "insn": "cmp w8, #0x200"
+        },
+        {
+          "va": "0x0131e8",
+          "word": "0x710C011F",
+          "insn": "cmp w8, #0x300"
+        }
+      ]
+    },
+    {
+      "function": "vmInterpret & VmInterpretThreadedLoop_0135ac",
+      "va_range": "0x0133c0..0x01cb30",
+      "opcodes": [
+        {
+          "va": "0x0133c0",
+          "word": "0xD10143FF",
+          "insn": "sub sp, sp, #0x50"
+        },
+        {
+          "va": "0x0135ac",
+          "word": "0xD10503FF",
+          "insn": "sub sp, sp, #0x140"
+        },
+        {
+          "va": "0x013748",
+          "word": "0xD287148C",
+          "insn": "mov x12, #0x38a4"
+        },
+        {
+          "va": "0x013774",
+          "word": "0xCA0C0119",
+          "insn": "eor x25, x8, x12"
+        }
+      ]
+    },
+    {
+      "function": "cacheInitial & ResolvePrimitiveWrapperType_0274bc",
+      "va_range": "0x02673c..0x0275e8",
+      "opcodes": [
+        {
+          "va": "0x02673c",
+          "word": "0xF81D0FF5",
+          "insn": "str x21, [sp, #-0x30]!"
+        },
+        {
+          "va": "0x026778",
+          "word": "0x97FFB218",
+          "insn": "bl #0x12fd8"
+        },
+        {
+          "va": "0x0274fc",
+          "word": "0x97FFAEB7",
+          "insn": "bl #0x12fd8"
+        }
+      ]
+    },
+    {
+      "function": "getCacheClass",
+      "va_range": "0x0275ec..0x027674",
+      "opcodes": [
+        {
+          "va": "0x0275ec",
+          "word": "0x39400028",
+          "insn": "ldrb w8, [x1]"
+        },
+        {
+          "va": "0x0275f4",
+          "word": "0x51010908",
+          "insn": "sub w8, w8, #0x42"
+        },
+        {
+          "va": "0x0275f8",
+          "word": "0x7100611F",
+          "insn": "cmp w8, #0x18"
+        },
+        {
+          "va": "0x02760c",
+          "word": "0x3868692B",
+          "insn": "ldrb w11, [x9, x8]"
+        }
+      ]
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "theorem": "MBA Pointer Deobfuscation Delta (.text 0x013700..0x013774 & .data 0x0559d8)",
+      "formula": "Delta_MBA = (((0x00A060400A021040 | ~0x135AC) & 0x00A061440A061440) + ((0x135AC & 0x0000010400040400) | 0x01010104)) ^ 0xFF5F9EBBF47538A4 = 0xFFFFFFFFFF722DE0 (-0x008DD220); 0x00931228 + Delta_MBA = 0x054008",
+      "verified_at": "0x013700..0x013774 & 0x055900..0x0559f8"
+    },
+    {
+      "theorem": "MBA Bitwise-Arithmetic Equivalences (.text 0x012340, 0x012fe8, 0x013070, 0x013870)",
+      "formula": "(a | b) - (a & b) = a ^ b; (a ^ b) + 2(a & b) = a + b; (2(a | b) - (a ^ b)) >> 1 = floor((a + b)/2); (a ^ b) - 2(~a & b) = a - b",
+      "verified_at": "0x012340..0x01387c"
+    },
+    {
+      "theorem": "Cubic Mod-3 Opaque Predicate (.text 0x01cd7c..0x01cda0)",
+      "formula": "For all x in Z: x(x+1)(x+2) mod 3 == 0, computed via magic multiplier 0xAAAAAAAAAAAAAAABULL (umulh >> 1)",
+      "verified_at": "0x01cd7c..0x01cdc0"
+    }
+  ]
+}

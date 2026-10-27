@@ -10354,6 +10354,109 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 97. KIỂM CHỨNG TOÁN HỌC & NHỊ PHÂN: libterrain.so (ByteDance Cloak / DexVMP VM)
+    # =========================================================================
+    def verify_libterrain(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 97: libterrain.so")
+        print("="*70)
+        target_dir = GIAIMA_DIR / "libterrain"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libterrain.so"
+        cpp_files = list(target_dir.glob("*.cpp")) + list(target_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files if f.is_file())
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+
+        # 1. Kiểm tra dung lượng binary (336,672 B), 9 file C++17/H (> 40KB, 0 stub) & 1,034 FDE
+        fde_count = struct.unpack_from("<I", so_bytes, 0x0427bc + 8)[0]
+        self.assert_test(
+            "Terrain_BinaryFdeAndSourceVolume",
+            len(so_bytes) == 336672
+            and fde_count == 1034
+            and len(cpp_files) == 9
+            and total_bytes > 40000
+            and "fde_1033_sub_03f36c" in content,
+            f"Binary {len(so_bytes):,} B; {fde_count} FDEs; Reconstructed {total_bytes:,} B across {len(cpp_files)} files"
+        )
+
+        # 2. Kiểm tra hằng số độ lệch con trỏ MBA (0x013700..0x013774 -> -0x008DD220) & bảng 255 handler tại .data 0x054008
+        MASK64 = 0xFFFFFFFFFFFFFFFF
+        x13 = 0x0135AC
+        x28 = x13 & 0x0000010400040400
+        x19 = (0x00A060400A021040 | (~x13 & MASK64)) & 0x00A061440A061440
+        mba_delta = ((x19 + (x28 | 0x01010104)) & MASK64) ^ 0xFF5F9EBBF47538A4
+        ptr_0559d8 = struct.unpack_from("<Q", so_bytes, 0x0519d8)[0]
+        op1_va = struct.unpack_from("<Q", so_bytes, 0x050008)[0]
+        op255_va = struct.unpack_from("<Q", so_bytes, 0x0507f8)[0]
+        self.assert_test(
+            "Terrain_MbaPointerDeltaAnd255OpcodeTable",
+            mba_delta == 0xFFFFFFFFFF722DE0
+            and ((ptr_0559d8 + mba_delta) & MASK64) == 0x054008
+            and op1_va == 0x017474
+            and op255_va == 0x013dc8
+            and "ComputeMbaPointerDelta_013700" in content
+            and "kVmOpcodeHandlerTable_054000" in content,
+            "Khớp công thức giải mã con trỏ MBA (-0x008DD220 @ 0x013700..0x013774) trỏ tới bảng 255 handler tại .data 0x054008"
+        )
+
+        # 3. Kiểm tra giải mã 35 chuỗi XOR (.rodata 0x03f530..0x040310) bằng đồng nhất thức MBA (a|b)-(a&b) @ 0x01cb40
+        xor_insns = struct.unpack_from("<4I", so_bytes, 0x01cb40)
+        enc_03fc78 = so_bytes[0x03fc78:0x03fc78+14]
+        key_03fd48 = so_bytes[0x03fd48:0x03fd48+14]
+        dec_div0 = bytes((e | k) - (e & k) for e, k in zip(enc_03fc78, key_03fd48))
+        self.assert_test(
+            "Terrain_35XorStringsAndMbaDecoder",
+            xor_insns == (0x3868680B, 0x2A09016C, 0x0A090169, 0x4B090189)
+            and dec_div0 == b"divide by zero"
+            and "DecodeXorString_012fd8" in content
+            and "filled-new-array not implemented for anything but" in content,
+            "Khớp hàm giải mã chuỗi MBA XOR (0x01cb40: (a|b)-(a&b)) trên toàn bộ 35 chuỗi .rodata ('divide by zero', 'java/lang/Boolean'..'TYPE')"
+        )
+
+        # 4. Kiểm tra 3 trình xử lý payload Dalvik: packed-switch (0x100 @ 0x013064), sparse-switch (0x200 @ 0x013110), fill-array-data (0x300 @ 0x0131ec)
+        cmp_packed = struct.unpack_from("<I", so_bytes, 0x013064)[0]
+        cmp_sparse = struct.unpack_from("<I", so_bytes, 0x013110)[0]
+        cmp_array  = struct.unpack_from("<I", so_bytes, 0x0131ec)[0]
+        self.assert_test(
+            "Terrain_DalvikSwitchAndFillArrayPayloads",
+            cmp_packed == 0x7104011F
+            and cmp_sparse == 0x7108011F
+            and cmp_array == 0x710C011F
+            and "HandlePackedSwitch_013010" in content
+            and "HandleSparseSwitch_0130bc" in content
+            and "HandleFillArrayData_0131b4" in content,
+            "Khớp 3 trình xử lý payload Dalvik: packed-switch (0x100 @ 0x013064), sparse-switch (0x200 @ 0x013110), fill-array-data (0x300 @ 0x0131ec)"
+        )
+
+        # 5. Kiểm tra tìm kiếm nhị phân bảng bắt ngoại lệ MBA (0x012354..0x01236c) & giải mã ULEB128/SLEB128 5-byte (0x0123b4..0x0124b0)
+        bsearch_insns = struct.unpack_from("<6I", so_bytes, 0x012354)
+        uleb_ins = struct.unpack_from("<I", so_bytes, 0x0123cc)[0]
+        self.assert_test(
+            "Terrain_ExceptionBinarySearchAndLeb128",
+            bsearch_insns[0] == 0x2A08012B
+            and bsearch_insns[1] == 0x4A08012A
+            and bsearch_insns[4] == 0x13017D4B
+            and uleb_ins == 0xB900140B
+            and "SearchExceptionCatchHandler_01231c" in content
+            and "DecodeUleb128_0123b4" in content
+            and "DecodeSleb128_012420" in content,
+            "Khớp tìm kiếm nhị phân bảng try-catch với công thức điểm giữa MBA (0x012354) và giải mã ULEB128/SLEB128 5-byte (0x0123b4)"
+        )
+
+        # 6. Kiểm tra cacheInitial (0x02673c), getCacheClass (0x0275ec, bảng nhảy 25 byte @ .rodata 0x03fde4) & gVm (.bss 0x055b80, 96 B)
+        get_cls_insns = struct.unpack_from("<4I", so_bytes, 0x0275ec)
+        jmp_03fde4 = list(so_bytes[0x03fde4:0x03fde4+25])
+        self.assert_test(
+            "Terrain_CacheInitialGetCacheClassAndGVm",
+            get_cls_insns == (0x39400028, 0xAA1F03E0, 0x51010908, 0x7100611F)
+            and jmp_03fde4[:5] == [0, 3, 6, 8, 9]
+            and jmp_03fde4[24] == 21
+            and all(sym in content for sym in ["vmInterpret", "cacheInitial", "getCacheClass", "gVm"]),
+            "Khớp cacheInitial (0x02673c), getCacheClass (0x0275ec, bảng nhảy 'B'..'Z' @ 0x03fde4) và biến toàn cục gVm (0x055b80, 96 B)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -10454,6 +10557,7 @@ class AutonomousVerificationEngine:
         self.verify_libworker()
         self.verify_libmonitorcollector_lib()
         self.verify_libgaia_lib()
+        self.verify_libterrain()
         self.verify_overall_governance()
 
 

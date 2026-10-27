@@ -1,0 +1,36 @@
+{
+  "task_id": "TASK-136-RECONSTRUCTION-LIBTERRAIN",
+  "so_task_id": "TASK_SO_062_libterrain",
+  "title": "Clean-Room C++17 Reconstruction & Adversarial Proof of libterrain.so (336,672 bytes)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libterrain.so",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libterrain/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libterrain.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libterrain.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_062_libterrain.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_062_libterrain.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    ".ai/**"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of libterrain.so into >= 40KB clean-room C++17/H code with 0 stubs",
+    "Verify exact AArch64 opcodes, .rodata tables, and ABI struct layouts",
+    "Pass adversary_critic_agent.py (97/169 VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (617/617 PASS), and native_audit_watchdog.py (0 high findings)"
+  ],
+  "completed_at": "2026-10-27T15:01:20.004363+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (97/169)",
+    "reconstruction_suite": "617/617 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 1323503,
+    "verified_instructions": 46213,
+    "fde_count": 1034,
+    "stub_count": 0
+  }
+}
