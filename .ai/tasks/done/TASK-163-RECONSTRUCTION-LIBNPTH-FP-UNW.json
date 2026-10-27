@@ -1,0 +1,40 @@
+{
+  "task_id": "TASK-163-RECONSTRUCTION-LIBNPTH-FP-UNW",
+  "so_task_id": "TASK_SO_092_libnpth_fp_unw",
+  "title": "Clean-Room C++17 Reconstruction of libnpth_fp_unw.so (ByteDance NPTH Frame-Pointer Fast Unwinder & Backtrace Formatter — Target 124 / 169)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "binary_info": {
+    "name": "libnpth_fp_unw.so",
+    "path": "SOURCE/apktool-res/lib/arm64-v8a/libnpth_fp_unw.so",
+    "size_bytes": 6112,
+    "sha256": "30e06928f2338ea69825e5b6726f2e390e52cc84a9d96cc37ce3f7f8b75487b1",
+    "eh_frame_hdr_offset": "0x000820",
+    "fde_count": 9,
+    "exported_symbols": 3
+  },
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libnpth_fp_unw/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_fp_unw.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_fp_unw.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_092_libnpth_fp_unw.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_092_libnpth_fp_unw.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of libnpth_fp_unw.so in clean-room C++17 (> 40 KB total source volume, 0 stubs)",
+    "Exact AArch64 opcode and ABI parity for npth_fp_frames (0x09e0), npth_fp_format (0x0abc), format_line_vsnprintf (0x0c78), and npth_fp_fast (0x0d14)",
+    "Pass adversary_critic_agent.py, verify_reconstruction_suite.py (779/779 PASS), and native_audit_watchdog.py"
+  ],
+  "completed_at": "2026-10-27T19:27:20.767050+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (124/169)",
+    "reconstruction_suite": "779/779 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 137989,
+    "fde_count": 9,
+    "exported_symbols": 3,
+    "stub_count": 0
+  }
+}

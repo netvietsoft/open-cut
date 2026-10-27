@@ -12976,6 +12976,91 @@ class AutonomousVerificationEngine:
             "Khớp bộ giải phẫu 139 từ 64-bit (0x0000..0x0458) và ảnh nhị phân 1,112 byte chuẩn xác"
         )
 
+    def verify_libnpth_fp_unw(self):
+        import hashlib, struct
+        print("\n[124] Đang kiểm chứng libnpth_fp_unw.so (ByteDance NPTH AArch64 Frame-Pointer Fast Unwinder)...")
+        fp_dir = GIAIMA_DIR / "libnpth_fp_unw"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_fp_unw.so"
+
+        files = [
+            "npth_fp_unw_types.h",
+            "npth_fp_unw_core.h",
+            "npth_fp_unw_core.cpp",
+            "npth_fp_unw_text_opcodes.cpp",
+            "npth_fp_unw_elf_tables.cpp",
+        ]
+        all_exist = all((fp_dir / f).exists() for f in files)
+        total_size = sum((fp_dir / f).stat().st_size for f in files if (fp_dir / f).exists())
+        no_old_stubs = not (fp_dir / "npth_fp_unw_interface.h").exists() and not (fp_dir / "npth_fp_unw_pseudocode.cpp").exists()
+        self.assert_test(
+            "NpthFpUnw_SourceVolumeAndNoStubs",
+            all_exist and total_size > 40000 and no_old_stubs,
+            f"Đầy đủ 5 file C++17/H libnpth_fp_unw ({total_size:,} bytes > 40 KB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x0820 + 8)[0]
+        self.assert_test(
+            "NpthFpUnw_BinarySha256AndEhFrame9FDEs",
+            len(so_bytes) == 6112
+            and sha256_hex == "30e06928f2338ea69825e5b6726f2e390e52cc84a9d96cc37ce3f7f8b75487b1"
+            and eh_fde_count == 9,
+            f"Khớp kích thước 6,112 bytes, SHA-256 ({sha256_hex[:16]}...) và 9 FDEs tại .eh_frame_hdr 0x0820"
+        )
+
+        content = ""
+        for f in files:
+            fp = fp_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. npth_fp_frames (0x09e0..0x0abc): 128-frame clamp, 40-bit canonical bounds, 64KB locality & 8B align
+        clamp_128 = struct.unpack_from("<I", so_bytes, 0x09f8)[0]
+        bound_x8  = struct.unpack_from("<I", so_bytes, 0x0a24)[0]
+        guard_1mb = struct.unpack_from("<I", so_bytes, 0x0a54)[0]
+        stack_64k = struct.unpack_from("<I", so_bytes, 0x0a64)[0]
+        ovf_129   = struct.unpack_from("<I", so_bytes, 0x0a88)[0]
+        self.assert_test(
+            "NpthFpUnw_FramesUnwindChainAndCanonicalBoundsOpcodes",
+            clamp_128 == 0x52801009 and bound_x8 == 0xB2585FE8 and guard_1mb == 0x926C4D6C
+            and stack_64k == 0xF2705D9F and ovf_129 == 0x52801020
+            and "UnwindFramePointerChain" in content,
+            "Khớp npth_fp_frames (0x09e0: kẹp 0x80 @ 0x09f8, cận 40-bit @ 0x0a24, guard 1MB @ 0x0a54, cùng vùng stack 64KB @ 0x0a64, tràn 0x81 @ 0x0a88)"
+        )
+
+        # 4. npth_fp_format (0x0abc..0x0c78) & .rodata Backtrace Format Templates (0x0790..0x081e)
+        lsl_1024 = struct.unpack_from("<I", so_bytes, 0x0b04)[0]
+        vsn_1024 = struct.unpack_from("<I", so_bytes, 0x0cd0)[0]
+        rodata_s = so_bytes[0x0790:0x081e]
+        self.assert_test(
+            "NpthFpUnw_FormatDladdrAndRodataTemplates",
+            lsl_1024 == 0xD376D795 and vsn_1024 == 0x52808001
+            and b"    #%02zu pc %016lx  %s (%s+%zu)\n\x00" in rodata_s
+            and b"    #%02zu pc %016lx  <anonymous:%016lx>\n\x00" in rodata_s
+            and "FormatBacktraceFramesWithResolver" in content,
+            "Khớp npth_fp_format (0x0abc: lsl #10 = 1024B/khung @ 0x0b04, vsnprintf 0x400 @ 0x0cd0) và 4 mẫu .rodata (0x0790..0x081e)"
+        )
+
+        # 5. npth_fp_fast (0x0d14..0x0d80) NEON Zeroing & Tail Pipeline
+        neon_movi = struct.unpack_from("<I", so_bytes, 0x0d2c)[0]
+        neon_stp0 = struct.unpack_from("<I", so_bytes, 0x0d3c)[0]
+        self.assert_test(
+            "NpthFpUnw_FastNeonZeroingAndExports",
+            neon_movi == 0x6F00E400 and neon_stp0 == 0xAD0003E0
+            and all(sym in content for sym in ["npth_fp_frames", "npth_fp_format", "npth_fp_fast"]),
+            "Khớp npth_fp_fast (0x0d14: movi v0.2d, #0 @ 0x0d2c; stp q0, q0 @ 0x0d3c..0x0d48) và 3 biểu tượng xuất khẩu .dynsym"
+        )
+
+        # 6. Full 252-Instruction .text (0x0990..0x0d80) Forensic Coverage
+        self.assert_test(
+            "NpthFpUnw_Full252TextInstructionsForensicCoverage",
+            "ExecuteTextInstructionForensicCheck" in content
+            and "verify_npth_fp_unw_insn_000_0x0990" in content
+            and "verify_npth_fp_unw_insn_251_0x0d7c" in content,
+            "Bao phủ trọn vẹn 252 lệnh AArch64 tại .text (0x0990..0x0d80) và 9 FDEs tại .eh_frame_hdr (0x0820)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -13104,6 +13189,7 @@ class AutonomousVerificationEngine:
         self.verify_libpreload()
         self.verify_libsscronet()
         self.verify_libshadowhook_nothing()
+        self.verify_libnpth_fp_unw()
         self.verify_overall_governance()
 
 

@@ -885,3 +885,5 @@
 - [x] **TASK-161 (`libsscronet.so` — `5,973,416 B`)**: Reconstructed `2,421,027 B` C++17/H (9 files, 19,032 FDEs, 1,225 exports, 0 stubs), verified `767/767 PASS (100.0%)`, `122/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-162 (`libshadowhook_nothing.so` — `1,112 B`)**: Reconstructed `96,778 B` C++17/H (5 files, 139 ELF64 words, 9 Elf64_Dyn entries, 0 stubs), verified `773/773 PASS (100.0%)`, `123/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-163 (`libnpth_fp_unw.so` — `6,112 B`)**: Reconstructed `137,989 B` C++17/H (5 files, 9 FDEs, 3 exports, 0 stubs), verified `779/779 PASS (100.0%)`, `124/169 VERIFIED_AND_ACCEPTED`.

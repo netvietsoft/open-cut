@@ -2623,3 +2623,5 @@
 - **[2026-10-27T19:09:46.139223+07:00] Target 122/169 (`libsscronet.so`)**: Completed clean-room C++17 reconstruction (`TASK-161`, `2,421,027 B`, `767/767 PASS`, `122/169 VERIFIED_AND_ACCEPTED`).
 
 - **[2026-10-27T19:20:44.216043+07:00] Target 123/169 (`libshadowhook_nothing.so`)**: Completed clean-room C++17 reconstruction (`TASK-162`, `96,778 B`, `773/773 PASS`, `123/169 VERIFIED_AND_ACCEPTED`).
+
+- **[2026-10-27T19:27:20.767050+07:00] Target 124/169 (`libnpth_fp_unw.so`)**: Completed clean-room C++17 reconstruction (`TASK-163`, `137,989 B`, `779/779 PASS`, `124/169 VERIFIED_AND_ACCEPTED`).

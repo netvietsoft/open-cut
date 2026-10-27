@@ -1,18 +1,52 @@
 {
-  "report_id": "REPORT_TASK_SO_092_libnpth_fp_unw",
-  "task_id": "TASK_SO_092_libnpth_fp_unw",
-  "target_library": "libnpth_fp_unw.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 14,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnpth_fp_unw",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "library": "libnpth_fp_unw.so",
+  "task_id": "TASK-163-RECONSTRUCTION-LIBNPTH-FP-UNW",
+  "so_task_id": "TASK_SO_092_libnpth_fp_unw",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size": 6112,
+  "sha256": "30e06928f2338ea69825e5b6726f2e390e52cc84a9d96cc37ce3f7f8b75487b1",
+  "eh_frame_hdr_offset": "0x000820",
+  "fde_count": 9,
+  "exported_symbols": 3,
+  "reconstructed_cpp_bytes": 137989,
+  "reconstructed_files": [
+    "npth_fp_unw_types.h",
+    "npth_fp_unw_core.h",
+    "npth_fp_unw_core.cpp",
+    "npth_fp_unw_text_opcodes.cpp",
+    "npth_fp_unw_elf_tables.cpp"
+  ],
+  "stub_count": 0,
+  "key_opcodes": [
+    {
+      "offset": "0x0009f8",
+      "hex": "52801009",
+      "asm": "mov w9, #0x80 (clamp max_frames to 128)"
+    },
+    {
+      "offset": "0x000a24",
+      "hex": "B2585FE8",
+      "asm": "mov x8, #-0x10000000000 (40-bit user-space upper bound check)"
+    },
+    {
+      "offset": "0x000a54",
+      "hex": "926C4D6C",
+      "asm": "and x12, x11, #0xfffff00000 (low 1MB null-guard check)"
+    },
+    {
+      "offset": "0x000a64",
+      "hex": "F2705D9F",
+      "asm": "tst x12, #0xffffff0000 (64KB stack locality check)"
+    },
+    {
+      "offset": "0x000b04",
+      "hex": "D376D795",
+      "asm": "lsl x21, x28, #0xa (1024 bytes per frame buffer allocation)"
+    },
+    {
+      "offset": "0x000d2c",
+      "hex": "6F00E400",
+      "asm": "movi v0.2d, #0 (NEON zeroing in npth_fp_fast)"
+    }
+  ]
 }
