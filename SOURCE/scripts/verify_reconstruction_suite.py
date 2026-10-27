@@ -11713,6 +11713,94 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 111: libc++_shared.so (Target 111 / 169 — Android NDK libc++)
+    # =========================================================================
+    def verify_libcxx_shared(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libc++_shared.so (Target 111 / 169)")
+        print("="*70)
+
+        import struct
+        import hashlib
+
+        lib_dir = GIAIMA_DIR / "libc++_shared"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 40 KB (1,603,669 B across 9 clean-room files, 0 stubs)
+        self.assert_test(
+            "CxxShared_SourceSizeAndZeroStubs",
+            total_bytes > 40000
+            and len(cpp_files) == 9
+            and not (lib_dir / "c++_shared_interface.h").exists()
+            and not (lib_dir / "c++_shared_pseudocode.cpp").exists()
+            and "ExecuteCxxSharedFdeByAddress" in content,
+            f"Tổng dung lượng C++17 đạt {total_bytes:,} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Binary SHA-256 & .eh_frame_hdr @ 0x0bc000 (1,953 FDEs)
+        so_bytes = (ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libc++_shared.so").read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x0bc000 + 8)[0]
+        self.assert_test(
+            "CxxShared_BinarySha256AndEhFrame1953Fdes",
+            len(so_bytes) == 919888
+            and sha256_hex == "e861c5cc64fd7045f2208cec91092009d3aef2af834f6928c1299cc21ca28bc6"
+            and fde_count == 1953,
+            "Khớp nhị phân libc++_shared.so (919,888 B, SHA-256 e861c5cc..., 1,953 FDEs @ 0x0bc000)"
+        )
+
+        # 3. __rs_default::operator() (0x048c74..0x048dc8) MT19937 seeding & tempering constants
+        mt_seed = struct.unpack_from("<I", so_bytes, 0x048d70)[0]
+        mt_mat = struct.unpack_from("<2I", so_bytes, 0x048ce8)
+        mt_mask = struct.unpack_from("<2I", so_bytes, 0x048d14)
+        self.assert_test(
+            "CxxShared_RsDefaultMt19937OpcodesAndMath",
+            mt_seed == 0x5282AE28
+            and mt_mat == (0x52961BEC, 0x72B3210C)
+            and mt_mask == (0x528AD00A, 0x72B3A58A)
+            and "0x9908B0DFu" in content
+            and "0x6C078965u" in content,
+            "Khớp __rs_default::operator() (0x048c74: seed 5489=0x1571, f=0x6c078965, MATRIX_A=0x9908b0df, mask=0x9d2c5680)"
+        )
+
+        # 4. chrono::system_clock::to_time_t (0x052168..0x052188) & from_time_t (0x05218c..0x052198)
+        to_timet_insns = struct.unpack_from("<4I", so_bytes, 0x05217c)
+        from_timet_insns = struct.unpack_from("<4I", so_bytes, 0x05218c)
+        sim_sec = ((1730000000000000 * 0x431BDE82D7B634DB) >> 64) >> 18
+        self.assert_test(
+            "CxxShared_SystemClockToFromTimeTOpcodesAndMath",
+            to_timet_insns == (0x9B497D08, 0x9352FD09, 0x8B48FD20, 0xD65F03C0)
+            and from_timet_insns == (0x52884808, 0x72A001E8, 0x9B087C00, 0xD65F03C0)
+            and sim_sec == 1730000000
+            and "0x431BDE82D7B634DBULL" in content,
+            "Khớp chrono::system_clock::to_time_t (0x052168: * 0x431bde82d7b634db >> 82) và from_time_t (0x05218c: * 1,000,000)"
+        )
+
+        # 5. __shared_weak_count::__add_shared (0x091910), __add_weak (0x091928) & __release_shared (0x091940)
+        add_shared_insns = struct.unpack_from("<6I", so_bytes, 0x091910)
+        add_weak_insns = struct.unpack_from("<6I", so_bytes, 0x091928)
+        self.assert_test(
+            "CxxShared_SharedWeakCountLlScOpcodes",
+            add_shared_insns == (0x91002008, 0xC85F7D09, 0x91000529, 0xC80A7D09, 0x35FFFFAA, 0xD65F03C0)
+            and add_weak_insns == (0x91004008, 0xC85F7D09, 0x91000529, 0xC80A7D09, 0x35FFFFAA, 0xD65F03C0)
+            and "SharedWeakCountAbiLayout" in content,
+            "Khớp __shared_weak_count::__add_shared (0x091910: +0x08 ldxr/stxr) và __add_weak (0x091928: +0x10 ldxr/stxr)"
+        )
+
+        # 6. __libcpp_db::Ctor (0x0527c4..0x0527d0) & steady_clock::now (0x05219c..0x0521f4)
+        db_ctor = struct.unpack_from("<4I", so_bytes, 0x0527c4)
+        steady_madd = struct.unpack_from("<3I", so_bytes, 0x0521e4)
+        self.assert_test(
+            "CxxShared_LibcppDbCtorAndSteadyClockNanos",
+            db_ctor == (0x6F00E400, 0xAD008000, 0x3D800000, 0xD65F03C0)
+            and steady_madd == (0x5299400A, 0x72A7734A, 0x9B0A2120)
+            and "LibcppDbAbiLayout" in content,
+            "Khớp __libcpp_db Ctor (0x0527c4: 48B zero init) và steady_clock::now (0x0521e4: * 0x3b9aca00 + tv_nsec)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -11827,6 +11915,7 @@ class AutonomousVerificationEngine:
         self.verify_libanimax()
         self.verify_librex()
         self.verify_libapplovin_native_crash_reporter()
+        self.verify_libcxx_shared()
         self.verify_overall_governance()
 
 

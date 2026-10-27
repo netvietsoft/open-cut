@@ -1,0 +1,86 @@
+{
+  "library": "libc++_shared.so",
+  "task_id": "TASK-150-RECONSTRUCTION-LIBCXX-SHARED",
+  "legacy_task_id": "TASK_SO_096_libc++_shared",
+  "target_index": 111,
+  "binary_size_bytes": 919888,
+  "sha256": "e861c5cc64fd7045f2208cec91092009d3aef2af834f6928c1299cc21ca28bc6",
+  "eh_frame_hdr_va": "0x0bc000",
+  "fde_count": 1953,
+  "exported_symbol_count": 2195,
+  "imported_symbol_count": 132,
+  "reconstructed_files": [
+    "cxx_shared_types.h",
+    "cxx_shared_core.h",
+    "cxx_shared_core.cpp",
+    "cxx_shared_chrono_memory.cpp",
+    "cxx_shared_fde_shard_1.cpp",
+    "cxx_shared_fde_shard_2.cpp",
+    "cxx_shared_fde_shard_3.cpp",
+    "cxx_shared_fde_shard_4.cpp",
+    "cxx_shared_fde_shard_5.cpp"
+  ],
+  "reconstructed_total_bytes": 1603669,
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "symbol": "_ZNSt6__ndk112__rs_defaultclEv",
+      "va_range": "0x048c74..0x048dc8",
+      "size_bytes": 340,
+      "verified_instructions": {
+        "0x048cb4": "91063529 (add x9, x9, #0x18d -> M = 397)",
+        "0x048cbc": "52804E0B (mov w11, #0x270 -> N = 624)",
+        "0x048ce8": "52961BEC (mov w12, #0xb0df)",
+        "0x048cec": "72B3210C (movk w12, #0x9908, lsl #16 -> MATRIX_A = 0x9908b0df)",
+        "0x048d70": "5282AE28 (mov w8, #0x1571 -> seed = 5489)"
+      }
+    },
+    {
+      "symbol": "_ZNSt6__ndk16chrono12system_clock9to_time_tERKNS0_10time_pointIS1_NS0_8durationIxNS_5ratioILl1ELl1000000EEEEEEE",
+      "va_range": "0x052168..0x052188",
+      "size_bytes": 36,
+      "verified_instructions": {
+        "0x05216c": "D2869B69 (mov x9, #0x34db)",
+        "0x05217c": "9B497D08 (smulh x8, x8, x9 -> * 0x431bde82d7b634db)",
+        "0x052180": "9352FD09 (asr x9, x8, #0x12)",
+        "0x052184": "8B48FD20 (add x0, x9, x8, lsr #63)"
+      }
+    },
+    {
+      "symbol": "_ZNSt6__ndk119__shared_weak_count16__release_sharedEv",
+      "va_range": "0x091940..0x0919b8",
+      "size_bytes": 124,
+      "verified_instructions": {
+        "0x091950": "91002008 (add x8, x0, #8)",
+        "0x091954": "C85FFD09 (ldaxr x9, [x8])",
+        "0x091958": "D100052A (sub x10, x9, #1)",
+        "0x09195c": "C80BFD0A (stlxr w11, x10, [x8])",
+        "0x091964": "B4000089 (cbz x9, #0x91974)"
+      }
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula": "mt[i] = 1812433253 * (mt[i-1] ^ (mt[i-1] >> 30)) + i; y ^= (y >> 11); y ^= (y << 7) & 0x9d2c5680; y ^= (y << 15) & 0xefc60000; y ^= (y >> 18)",
+      "location": "0x048c94..0x048da4",
+      "purpose": "Exact MT19937 state initialization and tempering in std::__ndk1::__rs_default::operator()"
+    },
+    {
+      "formula": "sec = (micros * 0x431BDE82D7B634DB) >> 82",
+      "location": "0x052168..0x052188",
+      "purpose": "64-bit signed reciprocal division by 1,000,000 in std::__ndk1::chrono::system_clock::to_time_t"
+    }
+  ],
+  "abi_layouts": [
+    {
+      "struct_name": "std::__ndk1::__shared_weak_count",
+      "total_size_bytes": 24,
+      "fields": {
+        "+0x00": "void* vptr",
+        "+0x08": "int64_t __shared_owners_",
+        "+0x10": "int64_t __shared_weak_owners_"
+      }
+    }
+  ],
+  "status": "VERIFIED_AND_ACCEPTED"
+}

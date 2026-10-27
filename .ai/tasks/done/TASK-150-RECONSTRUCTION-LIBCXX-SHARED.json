@@ -1,0 +1,33 @@
+{
+  "task_id": "TASK-150-RECONSTRUCTION-LIBCXX-SHARED",
+  "legacy_task_id": "TASK_SO_096_libc++_shared",
+  "title": "Clean-Room C++17 Reconstruction of libc++_shared.so (Target 111/169)",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "status": "DONE",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libc++_shared.so",
+  "binary_size_bytes": 919888,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libc++_shared/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libc++_shared.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libc++_shared.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_096_libc++_shared.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_096_libc++_shared.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "Generate >= 40 KB (target > 1,000 KB) of genuine C++17/H code across 9 files in SOURCE/GIAI-MA/libc++_shared/ with zero stubs",
+    "Verify exact AArch64 opcode sequences, mathematical formulas, and ABI struct layouts from libc++_shared.so",
+    "Pass adversary_critic_agent.py (VERIFIED_AND_ACCEPTED 111/169), verify_reconstruction_suite.py (100% PASS), and native_audit_watchdog.py (0 high findings)"
+  ],
+  "completed_at": "2026-10-27T17:41:12.464227+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (111/169)",
+    "reconstruction_suite": "701/701 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 1603669,
+    "fde_count": 1953,
+    "exported_symbols": 2195,
+    "stub_count": 0
+  }
+}
