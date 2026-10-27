@@ -1,0 +1,29 @@
+{
+  "task_id": "TASK-197-RECONSTRUCTION-LIBNPTH",
+  "legacy_task_id": "TASK_SO_073_libnpth_unwind",
+  "title": "Clean-Room C++17 Reconstruction of libnpth.so (Target 158/169)",
+  "assigned_agent": "Agent 3 (Android/Native C++17)",
+  "reviewer_agent": "Agent 13 (Adversary Auditor)",
+  "status": "DONE",
+  "created_at": "2026-10-27T23:40:00+07:00",
+  "target_library": "libnpth.so",
+  "target_sha256": "ba58fcc3cf3bc7dc02214be07e7f22cd193c6e3f73a9d703bdd2f67a86dc63d5",
+  "target_size_bytes": 181952,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libnpth/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_073_libnpth_unwind.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    "Docs/Changelog/CHANGELOG.md"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of 423 FDEs (.eh_frame_hdr @ 0x0a898) and 26,272 AArch64 .text instructions (0x10110..0x29b90) in bilingual C++17.",
+    "Reconstruct ByteDance NPTH Native Crash Handler, Signal Interceptor (SIGSEGV/SIGABRT/SIGBUS/SIGFPE/SIGILL/SIGSYS), Tombstone Dumper (sighand.txt, pthreads.txt), and JNI_OnLoad @ 0x10160.",
+    "Zero stubs, total C++17 size > 40 KB, pass adversary_critic_agent.py, verify_reconstruction_suite.py, and native_audit_watchdog.py."
+  ],
+  "completed_at": "2026-10-27T23:43:00+07:00"
+}

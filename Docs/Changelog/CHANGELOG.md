@@ -18,3 +18,7 @@
 ## [2026-10-27] TASK-196 — Clean-Room C++17 Reconstruction of `libbdsword.so` (157/169)
 - Reconstructed `bdsword.hpp`, `bdsword_core.cpp`, and `bdsword_elf_sections_and_image.cpp` (`2,755,961 bytes`, `166` FDEs, `23,708` `.text` instructions, `0` stubs).
 - Added 6 verification tests (`verify_libbdsword`) achieving `977/977 PASS (100.0%)` and `157/169 VERIFIED_AND_ACCEPTED`.
+
+## [2026-10-27] TASK-197 — Clean-Room C++17 Reconstruction of `libnpth.so` (158/169)
+- Reconstructed `npth.hpp`, `npth_core.cpp`, and `npth_elf_sections_and_image.cpp` (`3,627,997 bytes`, `423` FDEs, `26,272` `.text` instructions, `0` stubs).
+- Added 6 verification tests (`verify_libnpth`) achieving `983/983 PASS (100.0%)` and `158/169 VERIFIED_AND_ACCEPTED`.

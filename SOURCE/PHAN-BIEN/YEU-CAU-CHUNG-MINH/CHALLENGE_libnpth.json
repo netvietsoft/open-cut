@@ -1,18 +1,15 @@
 {
   "lib_name": "libnpth",
-  "inspected_at": "2026-10-27 23:38:06",
-  "gate1_size_bytes": 921,
-  "gate1_passed": false,
-  "gate2_opcode_count": 0,
-  "gate2_passed": false,
-  "gate3_math_verified": false,
-  "gate4_abi_offsets_verified": false,
+  "inspected_at": "2026-10-27 23:42:32",
+  "gate1_size_bytes": 3622923,
+  "gate1_passed": true,
+  "gate2_opcode_count": 46072,
+  "gate2_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
   "gate5_symbols_count": 151,
   "gate5_passed": true,
   "gate6_test_passed": true,
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "criticisms": [
-    "Dung lượng mã nguồn (921 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
-    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể."
-  ]
+  "status": "VERIFIED_AND_ACCEPTED",
+  "criticisms": []
 }

@@ -1,0 +1,24 @@
+{
+  "library": "libnpth.so",
+  "task_id": "TASK-197-RECONSTRUCTION-LIBNPTH",
+  "legacy_task_id": "TASK_SO_073_libnpth_unwind",
+  "sha256": "ba58fcc3cf3bc7dc02214be07e7f22cd193c6e3f73a9d703bdd2f67a86dc63d5",
+  "size_bytes": 181952,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libnpth/npth.hpp",
+    "SOURCE/GIAI-MA/libnpth/npth_core.cpp",
+    "SOURCE/GIAI-MA/libnpth/npth_elf_sections_and_image.cpp"
+  ],
+  "total_reconstructed_bytes": 3627997,
+  "fde_count": 423,
+  "text_instructions": 26272,
+  "exported_functions": 1,
+  "key_anchors": {
+    "JNI_OnLoad": "0x10160 (first_op=0xa9bc7bfd)",
+    "eh_frame_hdr": "0x0a898 (423 FDEs)",
+    "rodata": "0x057f0 (20,646 bytes)"
+  },
+  "stub_count": 0,
+  "todo_count": 0
+}

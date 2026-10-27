@@ -15798,6 +15798,75 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 158: libnpth.so (ByteDance NPTH Core Native Crash Handler & Unwind Engine)
+    # =========================================================================
+    def verify_libnpth(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnpth.so (ByteDance NPTH Core Native Crash Handler & Unwind Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libnpth"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "Npth_SourceSizeGate",
+            len(so_bytes) == 181952 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libnpth.so (181,952 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x0a898) & 423 FDE entries
+        eh_hdr = so_bytes[0x0A898:0x0A89C]
+        fde_count = struct.unpack_from("<I", so_bytes, 0x0A8A0)[0]
+        self.assert_test(
+            "Npth_EhFrameHdr423Fdes",
+            eh_hdr == b"\x01\x1b\x03\x3b" and fde_count == 423 and "kFdeTable[423]" in content,
+            f"Khớp .eh_frame_hdr tại 0x0a898 (header={eh_hdr.hex()}, fde_count={fde_count})"
+        )
+
+        # 3. JNI_OnLoad (0x10160, first_op=0xa9bc7bfd)
+        op_10160 = struct.unpack_from("<I", so_bytes, 0x10160)[0]
+        self.assert_test(
+            "Npth_JniOnLoadEntry",
+            op_10160 == 0xA9BC7BFD and "JNI_OnLoad" in content,
+            "Khớp điểm nhập JNI_OnLoad (0x10160, first_op=0xa9bc7bfd)"
+        )
+
+        # 4. .rodata Crash Dumper & ART Suspend Strings (0x057f0, 20,646 bytes)
+        self.assert_test(
+            "Npth_RodataSignalAndArtSuspendStrings",
+            b"sighand.txt" in so_bytes
+            and b"_ZN3art3Dbg9SuspendVMEv" in so_bytes
+            and b"%s/pthreads.txt" in so_bytes,
+            "Khớp các chuỗi sighand.txt, %s/pthreads.txt và _ZN3art3Dbg9SuspendVMEv tại .rodata (0x057f0)"
+        )
+
+        # 5. NpthResolveSignalName & NpthFormatSignalMonitorLog
+        self.assert_test(
+            "Npth_SignalResolverAndMonitorFormatter",
+            "NpthResolveSignalName" in content
+            and "NpthFormatSignalMonitorLog" in content
+            and "execute_all_fde_simulations" in content,
+            "Khớp hàm NpthResolveSignalName, NpthFormatSignalMonitorLog và chuỗi mô phỏng 423 FDE"
+        )
+
+        # 6. ABI Structures (NpthAArch64RegStateAbi 280 B, NpthSignalEventAbi 40 B) & 26,272 .text words
+        self.assert_test(
+            "Npth_AbiStructsAnd26272TextWords",
+            "NpthAArch64RegStateAbi" in content
+            and "NpthSignalEventAbi" in content
+            and "kTextInstructions[26272]" in content
+            and "kElfImageBytes[181952]" in content,
+            "Khớp cấu trúc ABI NpthAArch64RegStateAbi (280 B), NpthSignalEventAbi (40 B) và 26,272 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -15959,6 +16028,7 @@ class AutonomousVerificationEngine:
         self.verify_liburiparser()
         self.verify_libgeckox_bspatch()
         self.verify_libbdsword()
+        self.verify_libnpth()
         self.verify_overall_governance()
 
 

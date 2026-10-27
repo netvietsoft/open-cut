@@ -1,14 +1,26 @@
-# BÁO CÁO NGHIỆM THU TÁI TẠO C++17: `libnpth_unwind.so` (`REPORT_TASK_SO_073_libnpth_unwind`)
+# Clean-Room Reconstruction Analysis: `libnpth.so`
+# Phân Tích Tái Tạo Phòng Sạch: `libnpth.so`
 
-- **Task ID**: `TASK-120-RECONSTRUCTION-LIBNPTH-UNWIND` (`TASK_SO_073_libnpth_unwind`)
-- **Trạng thái**: `VERIFIED_AND_ACCEPTED` (100%)
-- **Dung lượng nhị phân gốc**: `222,368 bytes` (`SHA-256: c83bb94dbfc0aa4b2d306a0b57ba7bd83c489dc08379cbb7f362c02fd481cad8`)
-- **Dung lượng C++17 tái tạo**: `115,208 bytes` trên 9 file `.h`/`.cpp` (`0` stub)
+## 1. Binary Identity / Định Danh Nhị Phân
+- **File**: `libnpth.so`
+- **Task ID**: `TASK-197-RECONSTRUCTION-LIBNPTH` (`TASK_SO_073_libnpth_unwind`)
+- **Size**: `181,952` bytes
+- **SHA-256**: `ba58fcc3cf3bc7dc02214be07e7f22cd193c6e3f73a9d703bdd2f67a86dc63d5`
+- **Architecture**: `AArch64 (EM_AARCH64, 64-bit LSB shared object)`
+- **SONAME**: `libnpth.so`
 
-## Kết quả Đối soát 6 Cổng Đối Kháng (Adversarial Verification Gates)
-1. **Gate 1 (Size & Zero-Stub)**: `115,208 bytes` (`>= 40,000 bytes`), `0` stub rỗng — **PASSED**.
-2. **Gate 2 (AArch64 Opcode Parity)**: Đối soát trực tiếp `.init_array[0]` (`0x00cde0`), `AndroidUnwinderData` (`0x01419c..0x014428`), `AndroidUnwinder` (`0x0155fc..0x015d14`), `DemangleNameIfNeeded` (`0x015d14`), `ElfGetRelPc`/`ElfGetVariableOffset` (`0x0272e0..0x027380`), `MapInfo` (`0x028550..0x02aa3c`), `Registers` & `RegsArm64` (`0x02f8f8..0x030750`) — **PASSED**.
-3. **Gate 3 (Math & Table Proofs)**: Chứng minh bảng 15 mã lỗi `ErrorCode` (`.data.rel.ro 0x038420`), hằng SHA-256 (`0x0077b0`, `0x0078c4`), magic XZ (`0x0079c4`), công thức `ElfGetRelPc` và mặt nạ 56-bit TBI `0x00FFFFFFFFFFFFFFULL` — **PASSED**.
-4. **Gate 4 (Struct ABI Offsets)**: Khớp tuyệt đối `AndroidUnwinderData` (`0x40 B`), `AndroidUnwinder::Impl` (`0x48 B`), `ElfFields` (`0x60 B`), `RegsArm64` (`0x58 B`, `regs_` `0x110 B`, `ucontext + 0xB8`) — **PASSED**.
-5. **Gate 5 (Demangled Symbols)**: Đầy đủ 194 dynamic symbols (`79` hàm `STT_FUNC` xuất khẩu) — **PASSED**.
-6. **Gate 6 (Closed-Loop Test Suite)**: 6 bài kiểm thử tự động trong `verify_libnpth_unwind()` đạt `100% PASS` — **PASSED**.
+## 2. Exact ELF Layout & `.eh_frame_hdr` FDE Table / Bố Cục ELF & Bảng FDE
+- `.rodata`: `0x057f0` (`20,646` bytes — `sighand.txt`, `%s/pthreads.txt`, `_ZN3art3Dbg9SuspendVMEv`, `monitor_handler callback thread receied signal %d...`)
+- `.eh_frame_hdr`: `0x0a898` (`3,396` bytes, `423` sorted FDE entries)
+- `.eh_frame`: `0x0b5e0` (`19,240` bytes)
+- `.text`: `0x10110 .. 0x29b90` (`105,088` bytes = `26,272` AArch64 instructions)
+- `.plt`: `0x29b90` (`2,400` bytes)
+- `.data.rel.ro`: `0x2e4f0` (`3,984` bytes)
+- `.data`: `0x33ba8` (`724` bytes)
+- `.bss`: `0x33e80` (`11,192` bytes)
+
+## 3. Architecture & Mathematical Formulation / Kiến Trúc & Công Thức Toán Học
+1. **JNI Registration (`JNI_OnLoad` @ `0x10160`, `first_op = 0xa9bc7bfd`)**:
+   - Registers native methods for ByteDance NPTH (`NativeCrashCollector`) and initializes alternate signal stacks (`sigaltstack`) and POSIX signal handlers.
+2. **Signal Interception & Tombstone Serialization (`sighand.txt`, `pthreads.txt`)**:
+   - Captures `ucontext_t` (`x0..x30`, `sp`, `pc`, `pstate`, `fault_address`), suspends the ART VM via `_ZN3art3Dbg9SuspendVMEv` when safe, and writes async-signal-safe crash logs.

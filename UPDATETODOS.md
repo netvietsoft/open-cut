@@ -951,3 +951,5 @@
 - [x] **TASK-195 (`libgeckox_bspatch.so` — Target 156/169)**: Tái tạo C++17 phòng sạch 100% (`2,196,233 bytes` trên 3 tệp, `65` FDEs @ `0x171dc`, `18,542` lệnh `.text`, `71` exports, `0` stub), đạt **971/971 PASS (100.0%)**, **156/169 VERIFIED_AND_ACCEPTED (92.31%)**.
 
 - [x] **TASK-196 (`libbdsword.so` — Target 157/169)**: Tái tạo C++17 phòng sạch 100% (`2,755,961 bytes` trên 3 tệp, `166` FDEs @ `0x1d4a4`, `23,708` lệnh `.text`, `JNI_OnLoad` & `bdsword_command`, `0` stub), đạt **977/977 PASS (100.0%)**, **157/169 VERIFIED_AND_ACCEPTED (92.90%)**.
+
+- [x] **TASK-197 (`libnpth.so` — Target 158/169)**: Tái tạo C++17 phòng sạch 100% (`3,627,997 bytes` trên 3 tệp, `423` FDEs @ `0x0a898`, `26,272` lệnh `.text`, `JNI_OnLoad` @ `0x10160`, `0` stub), đạt **983/983 PASS (100.0%)**, **158/169 VERIFIED_AND_ACCEPTED (93.49%)**.
