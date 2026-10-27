@@ -1,0 +1,46 @@
+{
+  "task_id": "TASK-180-RECONSTRUCTION-LIBTTMVERIFYLITE",
+  "report_task_id": "TASK_SO_063_libttmverifylite",
+  "title": "Clean-room C++17 reconstruction of libttmverifylite.so (ByteDance TTFFmpeg TLS X.509 Hostname & Certificate Chain Verifier, Target 141/169)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Frontend/Android & C++ Native Engine)",
+  "reviewer": "Agent 13 (Adversary Auditor)",
+  "created_at": "2026-10-27T21:50:15+07:00",
+  "binary_metadata": {
+    "library_name": "libttmverifylite.so",
+    "size_bytes": 34672,
+    "sha256": "672829f9be725b6867d86d6e0e2620361626c87539784cb7b300b71bedf3e5b5",
+    "architecture": "AArch64 (EM_AARCH64)",
+    "eh_frame_hdr_va": "0x4d1c",
+    "fde_count": 13,
+    "text_va": "0x11f0",
+    "text_size_bytes": 10968,
+    "text_instruction_words": 2742
+  },
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libttmverifylite/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttmverifylite.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libttmverifylite.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_063_libttmverifylite.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_063_libttmverifylite.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "Docs/Changelog/CHANGELOG-TASK-180-LIBTTMVERIFYLITE.md",
+    "TASK_LOG.md",
+    "PROJECT_MEMORY.md",
+    "UPDATETODOS.md"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct >= 220 KB of clean-room C++17 source across ttmverifylite.hpp, ttmverifylite_core.cpp, and ttmverifylite_elf_sections_and_image.cpp with bilingual EN/VN documentation and zero stubs.",
+    "Match all 13 .eh_frame_hdr FDEs @ 0x4d1c, all exported C/JNI symbols (av_cert_hostcheck, validate_hostname, convertToVerifyRet, registerNativeMethods, init_clsz, ToJavaByteArray, ToJavaArrayOfByteArray, vcn_internal_custom_verify_android, JNI_OnLoad, JNI_OnUnload, gCustomVerify, g_jvm, g_verify_cls, hasInit, g_verify_method, lock), and all 2,742 .text instructions.",
+    "Pass adversary_critic_agent.py --once (141/169 VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (881/881 PASS), and native_audit_watchdog.py (0 high findings)."
+  ],
+  "completed_at": "2026-10-27T21:59:10+07:00",
+  "verification_result": {
+    "adversary_auditor": "VERIFIED_AND_ACCEPTED (141/169)",
+    "reconstruction_suite": "881 PASS / 0 FAIL (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp_total_bytes": 508906
+  }
+}

@@ -2657,3 +2657,5 @@
 - **[2026-10-27T21:39:17.269318+07:00] Target 139/169 (`libnpth_ref_monitor.so`)**: Completed clean-room C++17 reconstruction (`TASK-178`, `273,645 B`, `869/869 PASS`, `139/169 VERIFIED_AND_ACCEPTED`).
 
 - **[2026-10-27 21:49:00] Target 140/169 (`libvcnverifylite.so` — `TASK-179`)**: `VERIFIED_AND_ACCEPTED` (`140/169`, `82.84%`, `875/875 PASS`). Tái tạo đầy đủ RFC 6125/Punycode X.509 hostname matcher (`0x104c`), cầu nối JNI `com/ss/mediakit/vcnlib/CustomVerify` (`init_clsz` @ `0x3418`), và `vcn_internal_custom_verify_android` (`0x35bc..0x3fec`).
+
+- **[2026-10-27 21:59:10] Target 141/169 (`libttmverifylite.so` — `TASK-180`)**: `VERIFIED_AND_ACCEPTED` (`141/169`, `83.43%`, `881/881 PASS`). Tái tạo đầy đủ 13 FDEs của TTFFmpeg CustomVerify (`av_cert_hostcheck` @ `0x11fc`, `validate_hostname` @ `0x2e50`, `convertToVerifyRet` @ `0x3288`, `registerNativeMethods` @ `0x3298`, `init_clsz` @ `0x337c`, `ToJavaByteArray` @ `0x3578`, `ToJavaArrayOfByteArray` @ `0x35dc`, `vcn_internal_custom_verify_android` @ `0x3794`).

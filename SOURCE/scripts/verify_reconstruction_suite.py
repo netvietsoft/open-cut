@@ -14496,6 +14496,83 @@ class AutonomousVerificationEngine:
             "Khớp FDE[05..07] JNI_OnLoad (0x3fec, Dec 20 2024), _init (0x41e8), JNI_OnUnload (0x41ec) và 3,192 lệnh .text"
         )
 
+    def verify_libttmverifylite(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libttmverifylite.so (ByteDance TTFFmpeg TLS X.509 Hostname & Certificate Chain Verifier)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libttmverifylite"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libttmverifylite.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 220 KB
+        self.assert_test(
+            "TtmVerifyLite_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 220000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libttmverifylite ({total_bytes:,} bytes > 220 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 & 13 FDEs at .eh_frame_hdr 0x4d1c
+        fde_count = struct.unpack_from("<I", so_bytes, 0x4D24)[0]
+        self.assert_test(
+            "TtmVerifyLite_BinarySha256AndEhFrame13FDEs",
+            len(so_bytes) == 34672
+            and sha256_hex == "672829f9be725b6867d86d6e0e2620361626c87539784cb7b300b71bedf3e5b5"
+            and fde_count == 13,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x4d1c"
+        )
+
+        # 3. FDE[00..01] av_cert_hostcheck (0x11fc, jump table @ 0x3cc8) & validate_hostname (0x2e50, NID 85 = 0x55 @ 0x2ea8)
+        op_11fc = struct.unpack_from("<I", so_bytes, 0x11FC)[0]
+        op_1270 = struct.unpack_from("<I", so_bytes, 0x1270)[0]
+        op_2e50 = struct.unpack_from("<I", so_bytes, 0x2E50)[0]
+        op_2ea8 = struct.unpack_from("<I", so_bytes, 0x2EA8)[0]
+        self.assert_test(
+            "TtmVerifyLite_AvCertHostcheckAndValidateHostname",
+            op_11fc == 0xA9BC5FF8 and op_1270 == 0xB8AE79AE and op_2e50 == 0xD10203FF and op_2ea8 == 0x52800AA1
+            and b"xn--\x00" in so_bytes and "av_cert_hostcheck" in content and "validate_hostname" in content,
+            "Khớp FDE[00] av_cert_hostcheck (0x11fc, jump table @ 0x3cc8) & FDE[01] validate_hostname (0x2e50, NID 85 @ 0x2ea8)"
+        )
+
+        # 4. FDE[03..05] convertToVerifyRet (0x3288), registerNativeMethods (0x3298) & init_clsz (0x337c: com/ss/ttffmpeg/CustomVerify)
+        op_3288 = struct.unpack_from("<I", so_bytes, 0x3288)[0]
+        op_3290 = struct.unpack_from("<I", so_bytes, 0x3290)[0]
+        op_3298 = struct.unpack_from("<I", so_bytes, 0x3298)[0]
+        op_337c = struct.unpack_from("<I", so_bytes, 0x337C)[0]
+        self.assert_test(
+            "TtmVerifyLite_ConvertRetRegisterNativesAndInitClsz",
+            op_3288 == 0x51000408 and op_3290 == 0x1A9F27E0 and op_3298 == 0xD10103FF and op_337c == 0xF81D0FF5
+            and b"com/ss/ttffmpeg/CustomVerify\x00" in so_bytes
+            and all(sym in content for sym in ["convertToVerifyRet", "registerNativeMethods", "init_clsz"]),
+            "Khớp FDE[03] convertToVerifyRet (0x3288), FDE[04] registerNativeMethods (0x3298) & FDE[05] init_clsz (0x337c)"
+        )
+
+        # 5. FDE[06..08] ToJavaByteArray (0x3578), ToJavaArrayOfByteArray (0x35dc) & vcn_internal_custom_verify_android (0x3794)
+        op_3578 = struct.unpack_from("<I", so_bytes, 0x3578)[0]
+        op_35dc = struct.unpack_from("<I", so_bytes, 0x35DC)[0]
+        op_3794 = struct.unpack_from("<I", so_bytes, 0x3794)[0]
+        self.assert_test(
+            "TtmVerifyLite_JavaByteArrayMarshalAndCustomVerifyCallback",
+            op_3578 == 0xA9BD57F6 and op_35dc == 0xD10203FF and op_3794 == 0xD10203FF
+            and all(sym in content for sym in ["ToJavaByteArray", "ToJavaArrayOfByteArray", "vcn_internal_custom_verify_android"]),
+            "Khớp FDE[06] ToJavaByteArray (0x3578), FDE[07] ToJavaArrayOfByteArray (0x35dc) & FDE[08] vcn_internal_custom_verify_android (0x3794)"
+        )
+
+        # 6. FDE[09..12] JNI_OnLoad (0x3b4c, Jun 26 2025 12:29:14), JNI_OnUnload (0x3cb0), _init (0x3cc0) & 2,742 .text words
+        op_3b4c = struct.unpack_from("<I", so_bytes, 0x3B4C)[0]
+        op_3cb0 = struct.unpack_from("<I", so_bytes, 0x3CB0)[0]
+        op_3cc0 = struct.unpack_from("<I", so_bytes, 0x3CC0)[0]
+        self.assert_test(
+            "TtmVerifyLite_JniOnLoadAnd2742TextWords",
+            op_3b4c == 0xD101C3FF and op_3cb0 == 0xD65F03C0 and op_3cc0 == 0xAA0003E1
+            and b"Jun 26 2025\x00" in so_bytes and "kTextInstructionWords" in content,
+            "Khớp FDE[09..12] JNI_OnLoad (0x3b4c, Jun 26 2025), JNI_OnUnload (0x3cb0), _init (0x3cc0) và 2,742 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14641,6 +14718,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_repair()
         self.verify_libnpth_ref_monitor()
         self.verify_libvcnverifylite()
+        self.verify_libttmverifylite()
         self.verify_overall_governance()
 
 

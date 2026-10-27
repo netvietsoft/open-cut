@@ -1,0 +1,113 @@
+{
+  "library": "libttmverifylite.so",
+  "task_id": "TASK-180-RECONSTRUCTION-LIBTTMVERIFYLITE",
+  "report_task_id": "TASK_SO_063_libttmverifylite",
+  "target_index": 141,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 34672,
+  "binary_sha256": "672829f9be725b6867d86d6e0e2620361626c87539784cb7b300b71bedf3e5b5",
+  "cpp_reconstruction_files": [
+    "ttmverifylite.hpp",
+    "ttmverifylite_core.cpp",
+    "ttmverifylite_elf_sections_and_image.cpp"
+  ],
+  "cpp_total_bytes": 508906,
+  "eh_frame_hdr_va": "0x4d1c",
+  "fde_count": 13,
+  "text_va_range": "0x11f0..0x3cc8",
+  "text_instruction_count": 2742,
+  "opcode_evidence": [
+    {
+      "va": "0x11fc",
+      "hex": "f85fbca9",
+      "insn": "stp x24, x23, [sp, #-0x40]!",
+      "fn": "av_cert_hostcheck"
+    },
+    {
+      "va": "0x1270",
+      "hex": "ae79aeb8",
+      "insn": "ldrsw x14, [x13, x14, lsl #2]",
+      "fn": "av_cert_hostcheck (relative jump table @ 0x3cc8)"
+    },
+    {
+      "va": "0x2e50",
+      "hex": "ff0302d1",
+      "insn": "sub sp, sp, #0x80",
+      "fn": "validate_hostname"
+    },
+    {
+      "va": "0x2ea8",
+      "hex": "a10a8052",
+      "insn": "mov w1, #0x55",
+      "fn": "validate_hostname (NID_subject_alt_name = 85)"
+    },
+    {
+      "va": "0x3288",
+      "hex": "08040051",
+      "insn": "sub w8, w0, #1",
+      "fn": "convertToVerifyRet"
+    },
+    {
+      "va": "0x3290",
+      "hex": "e0279f1a",
+      "insn": "cset w0, lo",
+      "fn": "convertToVerifyRet (1 <= status <= 4)"
+    },
+    {
+      "va": "0x3298",
+      "hex": "ff0301d1",
+      "insn": "sub sp, sp, #0x40",
+      "fn": "registerNativeMethods"
+    },
+    {
+      "va": "0x337c",
+      "hex": "f50f1df8",
+      "insn": "str x21, [sp, #-0x30]!",
+      "fn": "init_clsz"
+    },
+    {
+      "va": "0x3578",
+      "hex": "f657bda9",
+      "insn": "stp x22, x21, [sp, #-0x30]!",
+      "fn": "ToJavaByteArray"
+    },
+    {
+      "va": "0x35dc",
+      "hex": "ff0302d1",
+      "insn": "sub sp, sp, #0x80",
+      "fn": "ToJavaArrayOfByteArray"
+    },
+    {
+      "va": "0x3794",
+      "hex": "ff0302d1",
+      "insn": "sub sp, sp, #0x80",
+      "fn": "vcn_internal_custom_verify_android"
+    },
+    {
+      "va": "0x3b4c",
+      "hex": "ffc301d1",
+      "insn": "sub sp, sp, #0x70",
+      "fn": "JNI_OnLoad"
+    },
+    {
+      "va": "0x3cb0",
+      "hex": "c0035fd6",
+      "insn": "ret",
+      "fn": "JNI_OnUnload"
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "id": "MATH-01",
+      "title": "Relative 32-bit Case-Conversion Jump Table @ 0x3CC8",
+      "formula": "target_va(c) = 0x3CC8 + int32_le(.rodata[0x3CC8 + 4 * (c - 0x61)]) for c in 'a'..'z'",
+      "verified": true
+    },
+    {
+      "id": "MATH-02",
+      "title": "Unsigned Range Compression in convertToVerifyRet (0x3288..0x3294)",
+      "formula": "convertToVerifyRet(w0) = ((uint32_t)(w0 - 1) < 4U) ? 1 : 0 <=> 1 <= w0 <= 4",
+      "verified": true
+    }
+  ]
+}

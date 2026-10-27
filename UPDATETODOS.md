@@ -919,3 +919,5 @@
 - [x] **TASK-178 (`libnpth_ref_monitor.so` — `28,040 B`)**: Reconstructed `273,645 B` C++17/H (3 files, 52 FDEs, 34 exports, 0 stubs), verified `869/869 PASS (100.0%)`, `139/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-179 (`libvcnverifylite.so` — Target 140/169, `34,640 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`244,396 B`), đạt `140/169 VERIFIED_AND_ACCEPTED (82.84%)` và `875/875 PASS (100.0%)`.
+
+- [x] **TASK-180 (`libttmverifylite.so` — Target 141/169, `34,672 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`508,906 B`), đạt `141/169 VERIFIED_AND_ACCEPTED (83.43%)` và `881/881 PASS (100.0%)`.

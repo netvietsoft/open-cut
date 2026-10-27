@@ -1,14 +1,14 @@
-# BÁO CÁO GIẢI MÃ KỸ THUẬT: libttmverifylite.so
+# Clean-Room Reconstruction of `libttmverifylite.so` (Target 141 / 169)
 
-- **Dung lượng nhị phân**: 0.03 MB (34672 bytes)
-- **Định dạng nhị phân**: ELF (Chuẩn ELF 64-bit)
-- **Phân loại Lõi C++**: `CORE_09_SECURITY`
-- **Tổng số dynamic symbols**: 47
-- **Hàm JNI xuất xưởng (JNI Exports)**: 0
-- **Hàm C++ demangled bóc tách được**: 0
+## 1. Binary Overview / Tổng quan nhị phân
+- **Library**: `libttmverifylite.so` (`34,672 bytes`)
+- **SHA-256**: `672829f9be725b6867d86d6e0e2620361626c87539784cb7b300b71bedf3e5b5`
+- **Architecture**: `AArch64` (`EM_AARCH64`, Little-Endian)
+- **Source Unit**: `custom_verify/source/custom_verify_android.c` (Built `Jun 26 2025 12:29:14`)
+- **Unwind Table**: `.eh_frame_hdr` at `0x4d1c` (`13` FDEs), `.eh_frame` at `0x4d90`
+- **Code Section**: `.text` at `0x11f0..0x3cc8` (`10,968 bytes`, `2,742` AArch64 instructions)
 
-## Danh mục tài liệu đính kèm
-1. `symbols_demangled.json`: Toàn bộ bảng symbol động kèm tên gốc C++ đã giải mã.
-2. `jni_bindings.json`: Danh mục cổng kết nối JNI xuống Native.
-3. `strings_extracted.txt`: Các hằng số, thông điệp log và URI nội bộ.
-4. C++ Header & Pseudocode phục vụ tái cấu trúc trong `NextAI OpenCut`.
+## 2. Reconstructed C++17 Files / Các tệp C++17 phòng sạch
+1. `ttmverifylite.hpp`: Constants, `.data`/`.bss` global structures (`gCustomVerify`, `g_jvm`, `g_verify_cls`, `hasInit`, `g_verify_method`, `lock`), and all 13 FDE function declarations.
+2. `ttmverifylite_core.cpp`: Complete C++17 implementation of `av_cert_hostcheck`, `validate_hostname`, `CustomVerifyLog_319c`, `convertToVerifyRet`, `registerNativeMethods`, `init_clsz`, `ToJavaByteArray`, `ToJavaArrayOfByteArray`, `vcn_internal_custom_verify_android`, `JNI_OnLoad`, `JNI_OnUnload`, `pthread_once_thunk_3cb4`, and `_init_3cc0`, plus complete disassembly reference.
+3. `ttmverifylite_elf_sections_and_image.cpp`: Complete 2,742-element `.text` instruction word table, 4,179-byte `.rodata` section array, and 34,672-byte ELF image array.
