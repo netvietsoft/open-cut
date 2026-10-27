@@ -16426,6 +16426,92 @@ class AutonomousVerificationEngine:
             "Khớp cấu trúc ABI ByteVc1EncConfigExtAbi (64 B), ByteVc1InputPictureExtAbi (248 B) và 252,960 từ lệnh .text"
         )
 
+    def verify_libwcdb(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libwcdb.so (WeChat Database + SQLite3 + SQLCipher + RepairKit)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libwcdb"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libwcdb.so"
+        so_bytes = so_path.read_bytes()
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Source Size Gate (> 40 KB, 0 stubs) & Binary Size (1,763,776 B)
+        self.assert_test(
+            "Wcdb_SourceSizeGate",
+            len(so_bytes) == 1763776 and total_bytes > 40000 and len(cpp_files) >= 3,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libwcdb.so (1,763,776 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x16e988, header=011b033b, fde_count=2938)
+        hdr_bytes = so_bytes[0x16E988:0x16E98C]
+        fde_cnt = struct.unpack_from("<i", so_bytes, 0x16E988 + 8)[0]
+        self.assert_test(
+            "Wcdb_EhFrameHdr2938Fdes",
+            hdr_bytes == b"\x01\x1b\x03\x3b" and fde_cnt == 2938 and "kWcdbFdeTable" in content,
+            "Khớp .eh_frame_hdr tại 0x16e988 (header=011b033b, fde_count=2938)"
+        )
+
+        # 3. SQLite3 Core Opcodes: sqlite3_backup_remaining (0x0418dc), sqlite3_total_changes (0x044064), sqlite3_limit (0x044420), sqlite3_initialize (0x068f90)
+        op_bkp_rem = struct.unpack_from("<I", so_bytes, 0x0418DC)[0]
+        op_tot_chg = struct.unpack_from("<I", so_bytes, 0x044064)[0]
+        op_limit   = struct.unpack_from("<I", so_bytes, 0x044420)[0]
+        op_init    = struct.unpack_from("<I", so_bytes, 0x068F90)[0]
+        self.assert_test(
+            "Wcdb_Sqlite3CoreAndLimitOpcodes",
+            op_bkp_rem == 0xB9403400
+            and op_tot_chg == 0xB9406C00
+            and op_limit == 0x71002C3F
+            and op_init == 0xA9BC7BFD
+            and "sqlite3_backup_remaining_Reconstructed" in content
+            and "sqlite3_total_changes_Reconstructed" in content
+            and "sqlite3_limit_Reconstructed" in content
+            and "sqlite3_initialize_Reconstructed" in content,
+            "Khớp sqlite3_backup_remaining (0x0418dc), sqlite3_total_changes (0x044064), sqlite3_limit (0x044420) và sqlite3_initialize (0x068f90)"
+        )
+
+        # 4. SQLCipher & RepairKit Exports: sqlcipher_codec_ctx_get_kdf_salt (0x067cac), sqlcipher_codec_fips_status (0x068134), sqliterk_register (0x031b04), mm_recover_cancel (0x03a008)
+        op_kdf_salt = struct.unpack_from("<I", so_bytes, 0x067CAC)[0]
+        op_fips     = struct.unpack_from("<I", so_bytes, 0x068134)[0]
+        op_rk_reg   = struct.unpack_from("<I", so_bytes, 0x031B04)[0]
+        op_mm_can   = struct.unpack_from("<I", so_bytes, 0x03A008)[0]
+        self.assert_test(
+            "Wcdb_SqlCipherAndRepairKitExports",
+            op_kdf_salt == 0xF9400400
+            and op_fips == 0xA9BF7BFD
+            and op_rk_reg == 0x140006B0
+            and op_mm_can == 0x52800021
+            and "sqlcipher_codec_ctx_get_kdf_salt_Reconstructed" in content
+            and "sqlcipher_codec_fips_status_Reconstructed" in content
+            and "sqliterk_register_Reconstructed" in content
+            and "mm_recover_cancel_Reconstructed" in content,
+            "Khớp sqlcipher_codec_ctx_get_kdf_salt (0x067cac), sqlcipher_codec_fips_status (0x068134), sqliterk_register (0x031b04) và mm_recover_cancel (0x03a008)"
+        )
+
+        # 5. .rodata WCDB.CursorWindow & JNI Module Strings (0x146860, 164,136 B)
+        self.assert_test(
+            "Wcdb_RodataCursorWindowAndJniStrings",
+            b"WCDB.CursorWindow\x00" in so_bytes
+            and b"com/tencent/wcdb/CursorWindow\x00" in so_bytes
+            and b"Initialize SQLite connection module '%s'...\x00" in so_bytes
+            and "ExecuteAll2938WcdbFdes" in content,
+            "Khớp các chuỗi WCDB.CursorWindow, com/tencent/wcdb/CursorWindow tại .rodata (0x146860, 164,136 B)"
+        )
+
+        # 6. ABI Structs (SqlCipherCodecCtxAbi 32 B, Sqlite3BackupAbi 56 B, Sqlite3DbHandleAbi 168 B) & 296,360 .text Words
+        self.assert_test(
+            "Wcdb_AbiStructsAnd296360TextWords",
+            "SqlCipherCodecCtxAbi" in content
+            and "Sqlite3BackupAbi" in content
+            and "Sqlite3DbHandleAbi" in content
+            and "kWcdbTextWords" in content
+            and "296360U" in content,
+            "Khớp cấu trúc ABI SqlCipherCodecCtxAbi (32 B), Sqlite3BackupAbi (56 B), Sqlite3DbHandleAbi (168 B) và 296,360 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -16596,6 +16682,7 @@ class AutonomousVerificationEngine:
         self.verify_libByteVC1_dec()
         self.verify_libbytevc0()
         self.verify_libbytevc1enc()
+        self.verify_libwcdb()
         self.verify_overall_governance()
 
 

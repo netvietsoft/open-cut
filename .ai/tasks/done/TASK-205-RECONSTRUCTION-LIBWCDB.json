@@ -1,0 +1,28 @@
+{
+  "task_id": "TASK-205-RECONSTRUCTION-LIBWCDB",
+  "legacy_task_id": "TASK_SO_052_libwcdb",
+  "title": "Clean-room C++17 Reconstruction of libwcdb.so (Target 166/169)",
+  "status": "DONE",
+  "assigned_to": [
+    "Agent 3 (Android/Native)",
+    "Agent 6 (Tester)",
+    "Agent 13 (Adversary Auditor)"
+  ],
+  "target_binary": "libwcdb.so",
+  "binary_size_bytes": 1763776,
+  "binary_sha256": "7fda5f83efad3f0f0a07ad0e13ad8a203a33e69d4cb2515dee0bb56c7dccf8e8",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libwcdb/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libwcdb.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_052_libwcdb.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "completed_at": "2026-10-28T00:23:30+07:00",
+  "verification": {
+    "adversary_status": "VERIFIED_AND_ACCEPTED",
+    "verified_count": "166/169 (98.22%)",
+    "test_suite": "1031/1031 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp_total_bytes": 6802524
+  }
+}

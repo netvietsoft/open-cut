@@ -1,18 +1,14 @@
 {
-  "report_id": "REPORT_TASK_SO_052_libwcdb",
   "task_id": "TASK_SO_052_libwcdb",
-  "target_library": "libwcdb.so",
-  "assigned_agent": "Agent 2 - BACKEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 485,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libwcdb",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-205-RECONSTRUCTION-LIBWCDB",
+  "library": "libwcdb.so",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstruction_status": "COMPLETE_CLEAN_ROOM_CPP17",
+  "binary_size_bytes": 1763776,
+  "binary_sha256": "7fda5f83efad3f0f0a07ad0e13ad8a203a33e69d4cb2515dee0bb56c7dccf8e8",
+  "cpp_total_bytes": 6802524,
+  "fde_count": 2938,
+  "text_words": 296360,
+  "exported_symbols_count": 341,
+  "zero_stubs": true
 }

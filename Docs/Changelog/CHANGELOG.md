@@ -46,3 +46,7 @@
 ## [2026-10-28] - `TASK-204-RECONSTRUCTION-LIBBYTEVC1ENC` (`libbytevc1enc.so` — Target 165/169)
 - Reconstructed `libbytevc1enc.so` (`1,279,016 bytes`, SHA-256 `5c7ce626eeca47f9feebade8214da6e0f181aebeb2b37545e1bb4d616b8db25c`) into 3 clean-room C++17/H files (`4,858,548 bytes`, `1,819` FDEs, `252,960` `.text` words, `31` exported `ByteVC1*` functions, `0` stubs).
 - Added 6 binary/mathematical assertions in `verify_libbytevc1enc()` (`1025/1025 PASS`, `165/169 VERIFIED_AND_ACCEPTED` = `97.63%`).
+
+## [2026-10-28] - `TASK-205-RECONSTRUCTION-LIBWCDB` (`libwcdb.so` — Target 166/169)
+- Reconstructed `libwcdb.so` (`1,763,776 bytes`, SHA-256 `7fda5f83efad3f0f0a07ad0e13ad8a203a33e69d4cb2515dee0bb56c7dccf8e8`) into 3 clean-room C++17/H files (`6,802,524 bytes`, `2,938` FDEs, `296,360` `.text` words, `341` exported symbols, `0` stubs).
+- Added 6 binary/mathematical assertions in `verify_libwcdb()` (`1031/1031 PASS`, `166/169 VERIFIED_AND_ACCEPTED` = `98.22%`).

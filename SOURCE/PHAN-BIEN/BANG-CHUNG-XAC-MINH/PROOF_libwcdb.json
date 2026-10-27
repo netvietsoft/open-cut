@@ -1,0 +1,27 @@
+{
+  "target_library": "libwcdb.so",
+  "task_id": "TASK-205-RECONSTRUCTION-LIBWCDB",
+  "legacy_task_id": "TASK_SO_052_libwcdb",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 1763776,
+  "binary_sha256": "7fda5f83efad3f0f0a07ad0e13ad8a203a33e69d4cb2515dee0bb56c7dccf8e8",
+  "reconstructed_cpp_bytes": 6802524,
+  "reconstructed_files": [
+    "wcdb.hpp",
+    "wcdb_core.cpp",
+    "wcdb_elf_sections_and_image.cpp"
+  ],
+  "eh_frame_hdr": {
+    "offset": "0x16e988",
+    "size_bytes": 23516,
+    "header_bytes": "011b033b",
+    "fde_count": 2938
+  },
+  "text_section": {
+    "offset": "0x0251c0",
+    "size_bytes": 1185440,
+    "instruction_words": 296360
+  },
+  "exported_symbols_count": 341,
+  "evidence_classification": "OBSERVED"
+}
