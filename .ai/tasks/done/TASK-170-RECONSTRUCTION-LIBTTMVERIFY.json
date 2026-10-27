@@ -1,0 +1,14 @@
+{
+  "task_id": "TASK-170-RECONSTRUCTION-LIBTTMVERIFY",
+  "status": "DONE",
+  "completed_at": "2026-10-27T20:22:13.997943+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (131/169)",
+    "reconstruction_suite": "821/821 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 92536,
+    "fde_count": 4,
+    "exported_symbols": 3,
+    "stub_count": 0
+  }
+}

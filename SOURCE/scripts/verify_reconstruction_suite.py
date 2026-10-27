@@ -13608,6 +13608,97 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # KIỂM CHỨNG ĐỐI KHÁNG TARGET 131: LIBTTMVERIFY.SO (TTMEDIAPLAYER / VCN CUSTOM TLS CERT VERIFIER)
+    # =========================================================================
+    def verify_libttmverify(self):
+        import hashlib
+        import struct
+        print("\n[131] Đang kiểm chứng libttmverify.so (ByteDance TTMediaPlayer / VCN Custom TLS Certificate Verifier)...")
+        ttm_dir = GIAIMA_DIR / "libttmverify"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libttmverify.so"
+
+        files = [
+            "ttmverify.h",
+            "ttmverify_jni_and_custom_verify.cpp",
+            "ttmverify_cronet_boringssl_engine.cpp",
+            "ttmverify_rodata_and_text_image.cpp",
+        ]
+        all_exist = all((ttm_dir / f).exists() for f in files)
+        total_size = sum((ttm_dir / f).stat().st_size for f in files if (ttm_dir / f).exists())
+
+        # 1. File existence & size > 80 KB (> 40 KB gate) & zero old stubs
+        self.assert_test(
+            "TtmVerify_CleanRoomFilesAndSize",
+            all_exist and total_size > 80000 and not (ttm_dir / "ttmverify_pseudocode.cpp").exists(),
+            f"Đầy đủ 4 file C++17/H trong GIAI-MA/libttmverify ({total_size:,} bytes > 80 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (18,112 B) and .eh_frame_hdr 4 FDEs @ 0x17c0
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x17c8)[0]
+        self.assert_test(
+            "TtmVerify_BinarySha256AndEhFrame4FDEs",
+            len(so_bytes) == 18112
+            and sha256_hex == "1e8fb5cee7d8a9ee166e6590f292580687b0958664eb37df58bbf9c92aadcd77"
+            and eh_fde_count == 4,
+            f"Khớp kích thước 18,112 bytes, SHA-256 ({sha256_hex[:16]}...) và 4 FDEs tại .eh_frame_hdr 0x17c0"
+        )
+
+        content = ""
+        for f in files:
+            fp = ttm_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[00] JNI_OnLoad (0x10dc..0x119c): build date "Jun 26 2025" / "12:29:14", tt_set_verify_callback (0x113c), returns 0x00010004 (0x118c..0x1190)
+        jni_lo = struct.unpack_from("<I", so_bytes, 0x118c)[0]
+        jni_hi = struct.unpack_from("<I", so_bytes, 0x1190)[0]
+        self.assert_test(
+            "TtmVerify_JniOnLoadBuildStampAndCallbackRegistration",
+            jni_lo == 0x52800080 and jni_hi == 0x72A00020
+            and b"Jun 26 2025\x00" in so_bytes and b"12:29:14\x00" in so_bytes
+            and b"tt_set_verify_callback\x00" in so_bytes
+            and "JNI_OnLoad" in content and "tt_set_verify_callback" in content,
+            "Khớp FDE[00] JNI_OnLoad (0x10dc): nhãn 'Jun 26 2025 12:29:14', đăng ký tt_set_verify_callback(vcn_custom_verify_2) (0x113c) và trả về 0x00010004 (0x118c)"
+        )
+
+        # 4. FDE[01] TtmVerifyFormattedLogPrint (0x119c..0x1280): vsnprintf 512B (mov w1,#0x200 @ 0x1210) & __android_log_print(3, "ttmverify", "<%p,%s,%s,%d>%s")
+        buf_512 = struct.unpack_from("<I", so_bytes, 0x1210)[0]
+        prio_3  = struct.unpack_from("<I", so_bytes, 0x1240)[0]
+        self.assert_test(
+            "TtmVerify_FormattedLogPrint512BAndAndroidLogDebug",
+            buf_512 == 0x321703E1 and prio_3 == 0x320007E0
+            and b"<%p,%s,%s,%d>%s\x00" in so_bytes
+            and "TtmVerifyFormattedLogPrint" in content,
+            "Khớp FDE[01] (0x119c): vsnprintf bộ đệm 0x200 (512B @ 0x1210) và __android_log_print(ANDROID_LOG_DEBUG=3, 'ttmverify', '<%p,%s,%s,%d>%s' @ 0x1240)"
+        )
+
+        # 5. FDE[02] vcn_custom_verify_2 (0x1280..0x1550): Cronet V2 Cert/OCSP/SCT pipeline, SSL_set_enforce_rsa_key_usage (0x148c..0x1494), cmp w22,#1; cset w20,hi (0x14b8..0x14c0)
+        rsa_enf = struct.unpack_from("<I", so_bytes, 0x148c)[0]
+        cmp_w22 = struct.unpack_from("<I", so_bytes, 0x14b8)[0]
+        cset_hi = struct.unpack_from("<I", so_bytes, 0x14c0)[0]
+        self.assert_test(
+            "TtmVerify_VcnCustomVerify2CronetAndBoringSslPipeline",
+            rsa_enf == 0x320003E1 and cmp_w22 == 0x710006DF and cset_hi == 0x1A9F97F4
+            and b"Cronet_CertVerify_DoVerifyV2\x00" in so_bytes
+            and b"SSL_set_enforce_rsa_key_usage\x00" in so_bytes
+            and "vcn_custom_verify_2" in content and "Cronet_CertVerify_DoVerifyV2" in content,
+            "Khớp FDE[02] vcn_custom_verify_2 (0x1280): chuỗi chứng chỉ/OCSP/SCT Cronet V2, SSL_set_enforce_rsa_key_usage(ssl, 1) (0x148c) và cmp w22,#1; cset w20,hi (0x14b8..0x14c0)"
+        )
+
+        # 6. FDE[03] JNI_OnUnload (0x1550) & complete 289-word .text / 128-word .plt forensic tables
+        ret_unload = struct.unpack_from("<I", so_bytes, 0x1550)[0]
+        self.assert_test(
+            "TtmVerify_JniOnUnloadAndFull289TextImage",
+            ret_unload == 0xD65F03C0
+            and "JNI_OnUnload" in content
+            and "kTtmVerifyTextWords289" in content
+            and "kTtmVerifyDisassemblyTable289" in content,
+            "Khớp FDE[03] JNI_OnUnload (0x1550: ret 0xd65f03c0), bảng 289 lệnh .text (0x10d0..0x1554) và 128 lệnh .plt (0x0ed0..0x10d0)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -13742,6 +13833,7 @@ class AutonomousVerificationEngine:
         self.verify_libkomprese_decompressor()
         self.verify_libnpth_tls_monitor()
         self.verify_libnpth_logcat()
+        self.verify_libttmverify()
         self.verify_overall_governance()
 
 

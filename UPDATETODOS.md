@@ -899,3 +899,5 @@
 - [x] **TASK-168 (`libnpth_tls_monitor.so` — `15,904 B`)**: Reconstructed `126,829 B` C++17/H (4 files, 18 FDEs, 1 export, 0 stubs), verified `809/809 PASS (100.0%)`, `129/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-169 (`libnpth_logcat.so` — `16,856 B`)**: Reconstructed `143,949 B` C++17/H (4 files, 10 FDEs, PIE executable, 0 stubs), verified `815/815 PASS (100.0%)`, `130/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-170 (`libttmverify.so` — `18,112 B`)**: Reconstructed `92,536 B` C++17/H (4 files, 4 FDEs, 3 exports, 0 stubs), verified `821/821 PASS (100.0%)`, `131/169 VERIFIED_AND_ACCEPTED`.

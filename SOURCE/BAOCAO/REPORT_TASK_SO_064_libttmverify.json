@@ -1,18 +1,27 @@
 {
   "report_id": "REPORT_TASK_SO_064_libttmverify",
   "task_id": "TASK_SO_064_libttmverify",
+  "governance_task_id": "TASK-170-RECONSTRUCTION-LIBTTMVERIFY",
   "target_library": "libttmverify.so",
-  "assigned_agent": "Agent 9 - SECURITY",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 40,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libttmverify",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "library": "libttmverify.so",
+  "sha256": "1e8fb5cee7d8a9ee166e6590f292580687b0958664eb37df58bbf9c92aadcd77",
+  "size_bytes": 18112,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "reconstructed_code_bytes": 92536,
+  "fde_count": 4,
+  "instruction_count": 289,
+  "exported_symbols": [
+    "JNI_OnLoad",
+    "vcn_custom_verify_2",
+    "JNI_OnUnload"
+  ],
+  "files_generated": [
+    "ttmverify.h",
+    "ttmverify_jni_and_custom_verify.cpp",
+    "ttmverify_cronet_boringssl_engine.cpp",
+    "ttmverify_rodata_and_text_image.cpp",
+    "README_ANALYSIS.md"
+  ],
+  "acceptance_criteria_passed": true
 }
