@@ -1,6 +1,6 @@
 # TRÁT THÁCH THỨC ĐỐI KHÁNG — CHALLENGE FOR: libnpth_heap_tracker.so
 > **Cơ quan ban hành**: **Agent 13 (Adversary Auditor / Red Team Critic)**  
-> **Thời điểm thẩm tra**: `2026-10-27 16:33:41`  
+> **Thời điểm thẩm tra**: `2026-10-27 16:48:21`  
 > **Trạng thái đối kháng**: `SCAFFOLD_METADATA_ONLY`  
 > **Nguyên tắc**: *Giả định mọi tuyên bố là gian lận/khai khống cho đến khi nộp đủ bằng chứng nhị phân.*
 

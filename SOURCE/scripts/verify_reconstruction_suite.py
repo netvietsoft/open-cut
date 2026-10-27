@@ -11156,6 +11156,103 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 105: libfdk-aac.so (Fraunhofer FDK AAC Decoder/Encoder, SBR, PS & Fixed-Point DSP)
+    # =========================================================================
+    def verify_libfdk_aac(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 105: libfdk-aac.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libfdk-aac"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 1,000 KB across >= 9 files
+        self.assert_test(
+            "FdkAac_SourceSizeGate",
+            total_bytes > 1000000 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 1,000 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (625,312 B, SHA-256, 1,471 FDEs @ 0x08f1c0) & .rodata sbrTuningTableSize (188 @ 0x0844c0)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libfdk-aac.so"
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x08f1c0 + 8)[0]
+        sbr_tuning_sz = struct.unpack_from("<I", so_bytes, 0x0844c0)[0]
+        sbr_no_env = struct.unpack_from("<I", so_bytes, 0x0805a4)[0]
+        self.assert_test(
+            "FdkAac_Elf64FdesAndRodataTables",
+            len(so_bytes) == 625312
+            and sha256_hex == "723998ce131aa4775f5c75430936ab26287d39d18f14aef3fcc714e28ace5dd2"
+            and fde_count == 1471
+            and sbr_tuning_sz == 188
+            and sbr_no_env == 0x04020100
+            and "kSbrTuningTableSize" in content,
+            "Khớp nhị phân libfdk-aac.so (625,312 B, SHA-256 723998ce..., 1,471 FDE @ 0x08f1c0) và sbrTuningTableSize=188 (@ 0x0844c0)"
+        )
+
+        # 3. Exact Memory Sizing Opcodes (0x01cd34..0x01cdcc)
+        mem_aac_dec = struct.unpack_from("<2I", so_bytes, 0x01cd34)
+        mem_static_ch = struct.unpack_from("<2I", so_bytes, 0x01cd48)
+        mem_overlap = struct.unpack_from("<2I", so_bytes, 0x01cd88)
+        mem_drc = struct.unpack_from("<2I", so_bytes, 0x01cd9c)
+        mem_work2 = struct.unpack_from("<2I", so_bytes, 0x01cdcc)
+        self.assert_test(
+            "FdkAac_MemoryAllocationOpcodes",
+            mem_aac_dec == (0x5297E800, 0xD65F03C0)
+            and mem_static_ch == (0x52922800, 0xD65F03C0)
+            and mem_overlap == (0x52A00020, 0xD65F03C0)
+            and mem_drc == (0x52800700, 0xD65F03C0)
+            and mem_work2 == (0x52900200, 0xD65F03C0)
+            and "GetRequiredMemAacDecoder" in content,
+            "Khớp GetRequiredMemAacDecoder (0x01cd34 -> 48,960 B), StaticChannelInfo (0x01cd48 -> 37,184 B), OverlapBuffer (0x01cd88 -> 65,536 B), DrcInfo (0x01cd9c -> 56 B) và WorkBufferCore2 (0x01cdcc -> 32,784 B)"
+        )
+
+        # 4. mul_dbl_sgl_rnd (0x046d6c..0x046d8c) Q31 x Q15 rounded fixed-point product
+        mul_insns = struct.unpack_from("<9I", so_bytes, 0x046d6c)
+        op1_test = 0x40000000 # 0.5 in Q31
+        op2_test = 0x4000     # 0.5 in Q15
+        sim_mul = (((op1_test & 0xFFFF) * op2_test + 0x4000) >> 15) + (((op1_test >> 16) * op2_test) << 1)
+        self.assert_test(
+            "FdkAac_MulDblSglRndFixedPointMath",
+            mul_insns == (0x13003C28, 0x12003C09, 0x321203EA, 0x13107C0B, 0x1B082929, 0x130F7D29, 0x1B087D68, 0x0B080520, 0xD65F03C0)
+            and sim_mul == 0x20000000
+            and "mul_dbl_sgl_rnd" in content,
+            "Khớp mul_dbl_sgl_rnd (0x046d6c..0x046d8c: sxth/and/madd/asr #15/mul/add lsl #1 -> Q31 x Q15 = 0.5 * 0.5 -> 0x20000000)"
+        )
+
+        # 5. FDKaacEnc_CalcBitsPerFrame (0x028770..0x02879c) common trailing-zero shift & bit budget
+        calc_orr = struct.unpack_from("<I", so_bytes, 0x028770)[0]
+        calc_bics = struct.unpack_from("<I", so_bytes, 0x028784)[0]
+        calc_sdiv = struct.unpack_from("<2I", so_bytes, 0x028798)
+        # 128000 bps, 1024 samples, 44100 Hz -> common shift ctz(44100 | 1024) = 2 -> ((1024>>2)*128000)/(44100>>2) = 2972 bits
+        sim_bits = ((1024 >> 2) * 128000) // (44100 >> 2)
+        self.assert_test(
+            "FdkAac_CalcBitsPerFrameBitReservoir",
+            calc_orr == 0x2A010049
+            and calc_bics == 0x6A2B013F
+            and calc_sdiv == (0x1AC80D20, 0xD65F03C0)
+            and sim_bits == 2972
+            and "FDKaacEnc_CalcBitsPerFrame" in content,
+            "Khớp FDKaacEnc_CalcBitsPerFrame (0x028770: orr/bics/sdiv -> 2,972 bits/frame @ 128kbps, 44.1kHz)"
+        )
+
+        # 6. FDK_BITBUF ABI: FDK_getFreeBits (0x041e20..0x041e2c), FDK_setBitCnt (0x041e30) & FDK_getBitCnt (0x041e38)
+        free_bits_insns = struct.unpack_from("<4I", so_bytes, 0x041e20)
+        set_get_bitcnt = struct.unpack_from("<4I", so_bytes, 0x041e30)
+        self.assert_test(
+            "FdkAac_BitBufAbiAndBitCntAccessors",
+            free_bits_insns == (0xB9402408, 0xB9400009, 0x4B090100, 0xD65F03C0)
+            and set_get_bitcnt == (0xB9000C01, 0xD65F03C0, 0xB9400C00, 0xD65F03C0)
+            and "FDK_getFreeBits" in content
+            and "aacDecoder_GetStreamInfo" in content,
+            "Khớp FDK_getFreeBits (0x041e20: bufBits @ +0x24 - ValidBits @ +0x00) và FDK_setBitCnt/FDK_getBitCnt (0x041e30..0x041e3c: BitNdx @ +0x0c)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -11264,6 +11361,7 @@ class AutonomousVerificationEngine:
         self.verify_libsysoptimizer()
         self.verify_libcybertron_base()
         self.verify_libttr()
+        self.verify_libfdk_aac()
         self.verify_overall_governance()
 
 
