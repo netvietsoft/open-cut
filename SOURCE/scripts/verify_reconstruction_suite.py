@@ -12787,6 +12787,112 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 124. KIỂM CHỨNG libsscronet.so (ByteDance TTNet Chromium Cronet & TTQuicHe Engine)
+    # =========================================================================
+    def verify_libsscronet(self):
+        print("\n[124] Đang kiểm chứng libsscronet.so (ByteDance TTNet Chromium Cronet & TTQuicHe Engine)...")
+        import hashlib
+        import struct
+        cronet_dir = GIAIMA_DIR / "libsscronet"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libsscronet.so"
+        files = [
+            "sscronet_types.h",
+            "sscronet_core.h",
+            "sscronet_core.cpp",
+            "sscronet_exports_and_jni.cpp",
+            "sscronet_fde_shard_1.cpp",
+            "sscronet_fde_shard_2.cpp",
+            "sscronet_fde_shard_3.cpp",
+            "sscronet_fde_shard_4.cpp",
+            "sscronet_fde_shard_5.cpp",
+        ]
+        all_exist = all((cronet_dir / f).exists() for f in files)
+        total_size = sum((cronet_dir / f).stat().st_size for f in files if (cronet_dir / f).exists())
+        no_old_stubs = not (cronet_dir / "sscronet_interface.h").exists() and not (cronet_dir / "sscronet_pseudocode.cpp").exists()
+        self.assert_test(
+            "SsCronet_SourceVolumeAndNoStubs",
+            all_exist and total_size > 2000000 and no_old_stubs,
+            f"Đầy đủ 9 file C++17/H libsscronet ({total_size:,} bytes > 2.0 MB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x0f1dd8 + 8)[0]
+        self.assert_test(
+            "SsCronet_BinarySha256AndEhFrame19032FDEs",
+            len(so_bytes) == 5973416
+            and sha256_hex == "2005c6574bf4c56204365be7f9cca38981e6bffb8bbd2eab03f2abb1a6b052c6"
+            and eh_fde_count == 19032,
+            f"Khớp kích thước 5,973,416 bytes, SHA-256 ({sha256_hex[:16]}...) và 19,032 FDEs tại .eh_frame_hdr 0x0f1dd8"
+        )
+
+        content = ""
+        for f in files:
+            fp = cronet_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. JNI_OnLoad (0x1c74a8..0x1c7540) & ARMv8.3-A PAC/BTI Thunks (0x1c9738, 0x1ea6f4, 0x1fac70)
+        jni_pro = struct.unpack_from("<4I", so_bytes, 0x1c74a8)
+        pod_del = struct.unpack_from("<2I", so_bytes, 0x1c9738)
+        v_del = struct.unpack_from("<4I", so_bytes, 0x1ea6f4)
+        set_ctx = struct.unpack_from("<3I", so_bytes, 0x1fac70)
+        self.assert_test(
+            "SsCronet_JniOnLoadAndPacBtiThunksOpcodes",
+            jni_pro == (0xD503233F, 0xD101C3FF, 0xA9047BFD, 0xF9002BF5)
+            and pod_del == (0xD503245F, 0x14044B9E)
+            and v_del == (0xD503245F, 0xB4000040, 0x1403C7AE, 0xD65F03C0)
+            and set_ctx == (0xD503245F, 0xF9000401, 0xD65F03C0)
+            and "Cronet_Engine_SetClientContext" in content,
+            "Khớp JNI_OnLoad (0x1c74a8: paciasp), POD Destroy (0x1c9738), Virtual Destroy (0x1ea6f4) và 38 hàm SetClientContext (0x1fac70: [x0, #8])"
+        )
+
+        # 4. Cronet_Throttle_Create (0x267f10, 0x88=136B) & Q_Eng_Create (0x279dd0, 0x1c0=448B, returns x19+0x10)
+        thr_alloc = struct.unpack_from("<I", so_bytes, 0x267f20)[0]
+        qeng_alloc = struct.unpack_from("<I", so_bytes, 0x279de0)[0]
+        qeng_sub = struct.unpack_from("<I", so_bytes, 0x279e1c)[0]
+        qeng_maxs = struct.unpack_from("<I", so_bytes, 0x279e30)[0]
+        qeng_idle = struct.unpack_from("<I", so_bytes, 0x279e88)[0]
+        self.assert_test(
+            "SsCronet_Throttle136BAndQEng448BSubobjectOpcodes",
+            thr_alloc == 0x52801100
+            and qeng_alloc == 0x52803800
+            and qeng_sub == 0xF8010E89
+            and qeng_maxs == 0x52802008
+            and qeng_idle == 0x52803E88
+            and "kCronetThrottleStructSize       = 0x0088" in content
+            and "kQEngStructSize                 = 0x01C0" in content,
+            "Khớp Cronet_Throttle_Create (0x267f20: 0x88=136B) và Q_Eng_Create (0x279de0: 0x1c0=448B, x20=x19+0x10 @ 0x279e1c, max_streams=256, idle=500ms)"
+        )
+
+        # 5. Q_Conn_Create (0x27caf4, 0x168=360B), Q_Stream_Create (0x27f834, 0xb60=2,912B) & TTQuicHe Create (0x28a96c/0x28a9f8)
+        qconn_alloc = struct.unpack_from("<I", so_bytes, 0x27cb04)[0]
+        qconn_fd = struct.unpack_from("<I", so_bytes, 0x27cb40)[0]
+        qstrm_alloc = struct.unpack_from("<I", so_bytes, 0x27f844)[0]
+        tteng_alloc = struct.unpack_from("<I", so_bytes, 0x28a97c)[0]
+        ttreq_alloc = struct.unpack_from("<I", so_bytes, 0x28aa08)[0]
+        self.assert_test(
+            "SsCronet_QConn360BQStream2912BAndTTQuicHeOpcodes",
+            qconn_alloc == 0x52802D00
+            and qconn_fd == 0x12800008
+            and qstrm_alloc == 0x52816C00
+            and tteng_alloc == 0x52801300
+            and ttreq_alloc == 0x5281DD00
+            and "TTQuicHe_Engine_Create" in content
+            and "TTQuicHe_HttpRequest_Create" in content,
+            "Khớp Q_Conn_Create (0x168=360B, fd=-1), Q_Stream_Create (0xb60=2,912B), TTQuicHe_Engine_Create (0x98=152B) & TTQuicHe_HttpRequest_Create (0xee8=3,816B)"
+        )
+
+        # 6. RFC 9002 QUIC RTT & BBR Pacing Math + 5 FDE Shards
+        self.assert_test(
+            "SsCronet_QuicRfc9002RttBbrMathAnd5FdeShards",
+            "UpdateQuicRttRFC9002" in content
+            and "ComputeBbrPacingRateBytesPerSec" in content
+            and all(f"execute_fde_shard_{i}" in content for i in range(1, 6)),
+            "Khớp thuật toán ước lượng RTT RFC 9002, BBR Pacing Rate và 5 FDE shards (19,032 FDEs)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12912,6 +13018,7 @@ class AutonomousVerificationEngine:
         self.verify_libpythonA_RelWithDebInfo()
         self.verify_liblynx()
         self.verify_libpreload()
+        self.verify_libsscronet()
         self.verify_overall_governance()
 
 

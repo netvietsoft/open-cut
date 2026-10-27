@@ -1,0 +1,171 @@
+{
+  "library": "libsscronet.so",
+  "task_id": "TASK-161-RECONSTRUCTION-LIBSSCRONET",
+  "so_task_id": "TASK_SO_040_libsscronet",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size": 5973416,
+  "sha256": "2005c6574bf4c56204365be7f9cca38981e6bffb8bbd2eab03f2abb1a6b052c6",
+  "eh_frame_hdr_offset": "0x0f1dd8",
+  "fde_count": 19032,
+  "exported_symbols": 1225,
+  "reconstructed_cpp_bytes": 2421027,
+  "reconstructed_files": [
+    "sscronet_types.h",
+    "sscronet_core.h",
+    "sscronet_core.cpp",
+    "sscronet_exports_and_jni.cpp",
+    "sscronet_fde_shard_1.cpp",
+    "sscronet_fde_shard_2.cpp",
+    "sscronet_fde_shard_3.cpp",
+    "sscronet_fde_shard_4.cpp",
+    "sscronet_fde_shard_5.cpp"
+  ],
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "address": "0x1c74a8",
+      "bytes": "D503233F",
+      "insn": "paciasp (JNI_OnLoad prologue)"
+    },
+    {
+      "address": "0x1c74ac",
+      "bytes": "D101C3FF",
+      "insn": "sub sp, sp, #0x70"
+    },
+    {
+      "address": "0x1c74cc",
+      "bytes": "08DFFD08",
+      "insn": "ldarb w8, [x8] (.bss 0x5df620 static guard)"
+    },
+    {
+      "address": "0x1c74d4",
+      "bytes": "B9491A80",
+      "insn": "ldr w0, [x20, #0x918] (.data 0x5b9918 cached JNI version)"
+    },
+    {
+      "address": "0x1c74fc",
+      "bytes": "940EFE59",
+      "insn": "bl #0x586e60 (__cxa_guard_acquire)"
+    },
+    {
+      "address": "0x1c7540",
+      "bytes": "F903C913",
+      "insn": "str x19, [x8, #0x790] (.bss 0x5df790 JavaVM*)"
+    },
+    {
+      "address": "0x1c9738",
+      "bytes": "D503245F",
+      "insn": "bti c (Cronet_DateTime_Destroy / 6 POD Destroy thunks)"
+    },
+    {
+      "address": "0x1c973c",
+      "bytes": "14044B9E",
+      "insn": "b #0x2dc5b4 (operator delete)"
+    },
+    {
+      "address": "0x1ea6f4",
+      "bytes": "D503245F",
+      "insn": "bti c (Cronet_AuthDelegate_Destroy / 25 virtual Destroy thunks)"
+    },
+    {
+      "address": "0x1ea6f8",
+      "bytes": "B4000040",
+      "insn": "cbz x0, #0x1ea700"
+    },
+    {
+      "address": "0x1fac70",
+      "bytes": "D503245F",
+      "insn": "bti c (38 *_SetClientContext thunks)"
+    },
+    {
+      "address": "0x1fac74",
+      "bytes": "F9000401",
+      "insn": "str x1, [x0, #8] (store client_context at +0x08)"
+    },
+    {
+      "address": "0x267f10",
+      "bytes": "D503233F",
+      "insn": "paciasp (Cronet_Throttle_Create)"
+    },
+    {
+      "address": "0x267f20",
+      "bytes": "52801100",
+      "insn": "mov w0, #0x88 (allocate 136-byte CronetThrottleObject)"
+    },
+    {
+      "address": "0x279dd0",
+      "bytes": "D503233F",
+      "insn": "paciasp (Q_Eng_Create)"
+    },
+    {
+      "address": "0x279de0",
+      "bytes": "52803800",
+      "insn": "mov w0, #0x1c0 (allocate 448-byte QEngObject)"
+    },
+    {
+      "address": "0x279e1c",
+      "bytes": "F8010E89",
+      "insn": "str x9, [x20, #0x10]! (advance x20 to secondary subobject +0x10)"
+    },
+    {
+      "address": "0x279e30",
+      "bytes": "52802008",
+      "insn": "mov w8, #0x100 (max_streams = 256 at +0x60)"
+    },
+    {
+      "address": "0x279e88",
+      "bytes": "52803E88",
+      "insn": "mov w8, #0x1f4 (idle_timeout_ms = 500 at +0x118)"
+    },
+    {
+      "address": "0x27caf4",
+      "bytes": "D503233F",
+      "insn": "paciasp (Q_Conn_Create)"
+    },
+    {
+      "address": "0x27cb04",
+      "bytes": "52802D00",
+      "insn": "mov w0, #0x168 (allocate 360-byte QConnObject)"
+    },
+    {
+      "address": "0x27cb40",
+      "bytes": "12800008",
+      "insn": "mov w8, #-1 (socket_fd = -1 at +0x80)"
+    },
+    {
+      "address": "0x27f834",
+      "bytes": "D503233F",
+      "insn": "paciasp (Q_Stream_Create)"
+    },
+    {
+      "address": "0x27f844",
+      "bytes": "52816C00",
+      "insn": "mov w0, #0xb60 (allocate 2,912-byte QStreamObject)"
+    },
+    {
+      "address": "0x27f898",
+      "bytes": "52802028",
+      "insn": "mov w8, #0x101 (stream_flags = 0x101 at +0xe0)"
+    },
+    {
+      "address": "0x28a96c",
+      "bytes": "D503233F",
+      "insn": "paciasp (TTQuicHe_Engine_Create)"
+    },
+    {
+      "address": "0x28a97c",
+      "bytes": "52801300",
+      "insn": "mov w0, #0x98 (allocate 152-byte TTQuicHeEngineObject)"
+    },
+    {
+      "address": "0x28a9f8",
+      "bytes": "D503233F",
+      "insn": "paciasp (TTQuicHe_HttpRequest_Create)"
+    },
+    {
+      "address": "0x28aa08",
+      "bytes": "5281DD00",
+      "insn": "mov w0, #0xee8 (allocate 3,816-byte TTQuicHeHttpRequestObject)"
+    }
+  ]
+}
