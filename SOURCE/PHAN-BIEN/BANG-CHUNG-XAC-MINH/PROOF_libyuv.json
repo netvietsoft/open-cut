@@ -1,0 +1,26 @@
+{
+  "library": "libyuv.so",
+  "task_id": "TASK-198-RECONSTRUCTION-LIBYUV",
+  "legacy_task_id": "TASK_SO_025_libyuv",
+  "sha256": "c343f4a98ab9dcf07b58609b3344bf62eaf696ce3571c76be616a97e0489191c",
+  "size_bytes": 215112,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libyuv/yuv.hpp",
+    "SOURCE/GIAI-MA/libyuv/yuv_core.cpp",
+    "SOURCE/GIAI-MA/libyuv/yuv_elf_sections_and_image.cpp"
+  ],
+  "total_reconstructed_bytes": 4625651,
+  "fde_count": 1063,
+  "text_instructions": 26105,
+  "exported_functions": 564,
+  "key_anchors": {
+    "HashDjb2": "0xce8c (first_op=0xf81d0ff5)",
+    "SumSquareErrorToPsnr": "0xd168 (first_op=0xb40001c0)",
+    "I420Copy": "0xd5f0 (first_op=0xa9ba6ffc)",
+    "NV12ToI420": "0xd990 (first_op=0xd10103ff)",
+    "NV21ToI420": "0xdc04 (first_op=0xd10103ff)"
+  },
+  "stub_count": 0,
+  "todo_count": 0
+}

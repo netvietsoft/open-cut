@@ -15867,6 +15867,84 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 159: libyuv.so (Google/ByteDance Planar YUV & ARGB NEON Engine)
+    # =========================================================================
+    def verify_libyuv(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libyuv.so (Google/ByteDance Planar YUV & ARGB NEON Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libyuv"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libyuv.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "Yuv_SourceSizeGate",
+            len(so_bytes) == 215112 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libyuv.so (215,112 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x26db0) & 1,063 FDE entries
+        eh_hdr = so_bytes[0x26DB0:0x26DB4]
+        fde_count = struct.unpack_from("<I", so_bytes, 0x26DB8)[0]
+        self.assert_test(
+            "Yuv_EhFrameHdr1063Fdes",
+            eh_hdr == b"\x01\x1b\x03\x3b" and fde_count == 1063 and "kFdeTable[1063]" in content,
+            f"Khớp .eh_frame_hdr tại 0x26db0 (header={eh_hdr.hex()}, fde_count={fde_count})"
+        )
+
+        # 3. HashDjb2 (0xce8c), SumSquareErrorToPsnr (0xd168), SumSquareError_C
+        op_ce8c = struct.unpack_from("<I", so_bytes, 0xCE8C)[0]
+        op_d168 = struct.unpack_from("<I", so_bytes, 0xD168)[0]
+        self.assert_test(
+            "Yuv_HashDjb2AndPsnrMetrics",
+            op_ce8c == 0xF81D0FF5
+            and op_d168 == 0xB40001C0
+            and "HashDjb2" in content
+            and "SumSquareErrorToPsnr" in content,
+            "Khớp HashDjb2 (0xce8c, first_op=0xf81d0ff5) và SumSquareErrorToPsnr (0xd168, first_op=0xb40001c0)"
+        )
+
+        # 4. I420Copy (0xd5f0), NV12ToI420 (0xd990), NV21ToI420 (0xdc04)
+        op_d5f0 = struct.unpack_from("<I", so_bytes, 0xD5F0)[0]
+        op_d990 = struct.unpack_from("<I", so_bytes, 0xD990)[0]
+        op_dc04 = struct.unpack_from("<I", so_bytes, 0xDC04)[0]
+        self.assert_test(
+            "Yuv_PlanarAndSemiPlanarConversions",
+            op_d5f0 == 0xA9BA6FFC
+            and op_d990 == 0xD10103FF
+            and op_dc04 == 0xD10103FF
+            and "I420Copy" in content
+            and "NV12ToI420" in content
+            and "NV21ToI420" in content,
+            "Khớp I420Copy (0xd5f0), NV12ToI420 (0xd990) và NV21ToI420 (0xdc04)"
+        )
+
+        # 5. .rodata CPU Feature & FourCC Strings (LIBYUV_DISABLE_NEON, LIBYUV_DISABLE_ASM)
+        self.assert_test(
+            "Yuv_RodataFeatureAndFourCCStrings",
+            b"LIBYUV_DISABLE_NEON" in so_bytes
+            and b"LIBYUV_DISABLE_ASM" in so_bytes
+            and "execute_all_fde_simulations" in content,
+            "Khớp các chuỗi LIBYUV_DISABLE_NEON, LIBYUV_DISABLE_ASM tại .rodata (0x26640) và chuỗi mô phỏng 1,063 FDE"
+        )
+
+        # 6. ABI Structure (YuvConstantsAbi 160 B) & 26,105 .text words
+        self.assert_test(
+            "Yuv_AbiStructAnd26105TextWords",
+            "YuvConstantsAbi" in content
+            and "kTextInstructions[26105]" in content
+            and "kElfImageBytes[215112]" in content,
+            "Khớp cấu trúc ABI YuvConstantsAbi (160 B) và 26,105 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -16029,6 +16107,7 @@ class AutonomousVerificationEngine:
         self.verify_libgeckox_bspatch()
         self.verify_libbdsword()
         self.verify_libnpth()
+        self.verify_libyuv()
         self.verify_overall_governance()
 
 

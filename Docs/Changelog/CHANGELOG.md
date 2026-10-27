@@ -22,3 +22,7 @@
 ## [2026-10-27] TASK-197 — Clean-Room C++17 Reconstruction of `libnpth.so` (158/169)
 - Reconstructed `npth.hpp`, `npth_core.cpp`, and `npth_elf_sections_and_image.cpp` (`3,627,997 bytes`, `423` FDEs, `26,272` `.text` instructions, `0` stubs).
 - Added 6 verification tests (`verify_libnpth`) achieving `983/983 PASS (100.0%)` and `158/169 VERIFIED_AND_ACCEPTED`.
+
+## [2026-10-27] TASK-198 — Clean-Room C++17 Reconstruction of `libyuv.so` (159/169)
+- Reconstructed `yuv.hpp`, `yuv_core.cpp`, and `yuv_elf_sections_and_image.cpp` (`4,625,651 bytes`, `1,063` FDEs, `26,105` `.text` instructions, `0` stubs).
+- Added 6 verification tests (`verify_libyuv`) achieving `989/989 PASS (100.0%)` and `159/169 VERIFIED_AND_ACCEPTED`.

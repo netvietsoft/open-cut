@@ -1,0 +1,29 @@
+{
+  "task_id": "TASK-198-RECONSTRUCTION-LIBYUV",
+  "legacy_task_id": "TASK_SO_025_libyuv",
+  "title": "Clean-Room C++17 Reconstruction of libyuv.so (Target 159/169)",
+  "assigned_agent": "Agent 3 (Android/Native C++17)",
+  "reviewer_agent": "Agent 13 (Adversary Auditor)",
+  "status": "DONE",
+  "created_at": "2026-10-27T23:44:00+07:00",
+  "target_library": "libyuv.so",
+  "target_sha256": "c343f4a98ab9dcf07b58609b3344bf62eaf696ce3571c76be616a97e0489191c",
+  "target_size_bytes": 215112,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libyuv/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libyuv.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_025_libyuv.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    "Docs/Changelog/CHANGELOG.md"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of 1,063 FDEs (.eh_frame_hdr @ 0x26db0) and 26,105 AArch64 .text instructions (0x0ce50..0x26634) in bilingual C++17.",
+    "Reconstruct Google/ByteDance libyuv Planar YUV/ARGB NEON Conversion, Scaling, Rotation, PSNR/SSIM Metrics, and DJB2 Hashing (HashDjb2 @ 0xce8c, SumSquareErrorToPsnr @ 0xd168, I420Copy @ 0xd5f0, NV12ToI420 @ 0xd990).",
+    "Zero stubs, total C++17 size > 40 KB, pass adversary_critic_agent.py, verify_reconstruction_suite.py, and native_audit_watchdog.py."
+  ],
+  "completed_at": "2026-10-27T23:47:00+07:00"
+}
