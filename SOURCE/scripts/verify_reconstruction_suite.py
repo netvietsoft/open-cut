@@ -15325,6 +15325,95 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 152: libnpth_vm_monitor.so (NPTH Virtual Memory & MMap/MProtect Monitor)
+    # =========================================================================
+    def verify_libnpth_vm_monitor(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnpth_vm_monitor.so (NPTH Virtual Memory & MMap/MProtect Monitor)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libnpth_vm_monitor"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_vm_monitor.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "NpthVmMonitor_SourceSizeGate",
+            len(so_bytes) == 55968 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libnpth_vm_monitor.so (55,968 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x3374) & 87 FDE entries
+        eh_hdr = so_bytes[0x3374:0x3378]
+        fde_count = struct.unpack_from("<I", so_bytes, 0x337C)[0]
+        self.assert_test(
+            "NpthVmMonitor_EhFrameHdr87Fdes",
+            eh_hdr == b"\x01\x1b\x03\x3b" and fde_count == 87 and "87 FDEs" in content,
+            f"Khớp .eh_frame_hdr tại 0x3374 (header={eh_hdr.hex()}, fde_count={fde_count})"
+        )
+
+        # 3. so_initialize (0x4794) & npth_vm_monitor_execute_command (0x4be0)
+        op_4794 = struct.unpack_from("<I", so_bytes, 0x4794)[0]
+        op_4be0 = struct.unpack_from("<I", so_bytes, 0x4BE0)[0]
+        self.assert_test(
+            "NpthVmMonitor_SoInitializeAndExecuteCommand",
+            op_4794 == 0xA9BA7BFD
+            and op_4be0 == 0xA9BC7BFD
+            and "so_initialize" in content
+            and "npth_vm_monitor_execute_command" in content,
+            "Khớp điểm nhập so_initialize (0x4794) và npth_vm_monitor_execute_command (0x4be0)"
+        )
+
+        # 4. Interval Tree MMap Tracking: insert_mmap_info (0x7b0c), delete_mmap_info (0x7e10), change_mmap_info (0x7850)
+        op_7b0c = struct.unpack_from("<I", so_bytes, 0x7B0C)[0]
+        op_7e10 = struct.unpack_from("<I", so_bytes, 0x7E10)[0]
+        op_7850 = struct.unpack_from("<I", so_bytes, 0x7850)[0]
+        self.assert_test(
+            "NpthVmMonitor_MmapIntervalTracking",
+            op_7b0c == 0xD101C3FF
+            and op_7e10 == 0xA9BC7BFD
+            and op_7850 == 0xA9BB7BFD
+            and "insert_mmap_info" in content
+            and "delete_mmap_info" in content
+            and "change_mmap_info" in content,
+            "Khớp bộ quản lý đoạn bộ nhớ ảo insert_mmap_info (0x7b0c), delete_mmap_info (0x7e10), change_mmap_info (0x7850)"
+        )
+
+        # 5. tools_mmap_do_hook (0x878c), dump_mmap_info (0x93b0), vm_leak_reason (0xb8b0), mm_get_physical_memory_info (0xc350)
+        op_878c = struct.unpack_from("<I", so_bytes, 0x878C)[0]
+        op_93b0 = struct.unpack_from("<I", so_bytes, 0x93B0)[0]
+        op_b8b0 = struct.unpack_from("<I", so_bytes, 0xB8B0)[0]
+        op_c350 = struct.unpack_from("<I", so_bytes, 0xC350)[0]
+        self.assert_test(
+            "NpthVmMonitor_HookDumpAndPhysicalMemoryInfo",
+            op_878c == 0xA9BD7BFD
+            and op_93b0 == 0xD10303FF
+            and op_b8b0 == 0xA9BA7BFD
+            and op_c350 == 0xD10183FF
+            and "tools_mmap_do_hook" in content
+            and "dump_mmap_info" in content
+            and "vm_leak_reason" in content
+            and "mm_get_physical_memory_info" in content,
+            "Khớp tools_mmap_do_hook (0x878c), dump_mmap_info (0x93b0), vm_leak_reason (0xb8b0), mm_get_physical_memory_info (0xc350)"
+        )
+
+        # 6. ABI Structures (MmapVmaRbNode, VmMonitorNativeInterface) & 8,053 .text words
+        self.assert_test(
+            "NpthVmMonitor_AbiStructsAnd8053TextWords",
+            "MmapVmaRbNode" in content
+            and "VmMonitorNativeInterface" in content
+            and "StripTbiAddress_7ab4" in content
+            and "kTextInstructions" in content
+            and "kElfImageBytes" in content,
+            "Khớp cấu trúc ABI MmapVmaRbNode (64 B), VmMonitorNativeInterface (24 B @ 0x15290) và 8,053 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -15480,6 +15569,7 @@ class AutonomousVerificationEngine:
         self.verify_liblynxsecurity()
         self.verify_libraphael()
         self.verify_libgifimage()
+        self.verify_libnpth_vm_monitor()
         self.verify_overall_governance()
 
 
