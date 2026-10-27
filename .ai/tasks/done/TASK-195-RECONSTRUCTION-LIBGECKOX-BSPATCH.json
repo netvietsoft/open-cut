@@ -1,0 +1,29 @@
+{
+  "task_id": "TASK-195-RECONSTRUCTION-LIBGECKOX-BSPATCH",
+  "legacy_task_id": "TASK_SO_132_libgeckox_bspatch",
+  "title": "Clean-Room C++17 Reconstruction of libgeckox_bspatch.so (Target 156/169)",
+  "assigned_agent": "Agent 3 (Android/Native C++17)",
+  "reviewer_agent": "Agent 13 (Adversary Auditor)",
+  "status": "DONE",
+  "created_at": "2026-10-27T23:32:00+07:00",
+  "target_library": "libgeckox_bspatch.so",
+  "target_sha256": "caa28254b54a76d8eef6089da0bc101ca994f1129870a001ff3b9e2bea6045d8",
+  "target_size_bytes": 119768,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libgeckox_bspatch/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libgeckox_bspatch.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_132_libgeckox_bspatch.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    "Docs/Changelog/CHANGELOG.md"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of 65 FDEs (.eh_frame_hdr @ 0x171dc) and 18,542 AArch64 .text instructions (0x2b30..0x14ce8) in bilingual C++17.",
+    "Reconstruct ByteDance GeckoX BSDIFF40 Binary Patch Engine (main @ 0x2b6c, offtin sign-magnitude 64-bit integer decoder) and bzip2 Burrows-Wheeler Decompressor (BZ2_bzDecompress @ 0x7d70, BZ2_bzRead @ 0x9698).",
+    "Zero stubs, total C++17 size > 40 KB, pass adversary_critic_agent.py, verify_reconstruction_suite.py, and native_audit_watchdog.py."
+  ],
+  "completed_at": "2026-10-27T23:35:00+07:00"
+}

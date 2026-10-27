@@ -10,3 +10,7 @@
 ## [2026-10-27] TASK-194 — Clean-Room C++17 Reconstruction of `liburiparser.so` (155/169)
 - Reconstructed `uriparser.hpp`, `uriparser_core.cpp`, and `uriparser_elf_sections_and_image.cpp` (`2,040,747 bytes`, `176` FDEs, `16,223` `.text` instructions, `0` stubs).
 - Added 6 verification tests (`verify_liburiparser`) achieving `965/965 PASS (100.0%)` and `155/169 VERIFIED_AND_ACCEPTED`.
+
+## [2026-10-27] TASK-195 — Clean-Room C++17 Reconstruction of `libgeckox_bspatch.so` (156/169)
+- Reconstructed `geckox_bspatch.hpp`, `geckox_bspatch_core.cpp`, and `geckox_bspatch_elf_sections_and_image.cpp` (`2,196,233 bytes`, `65` FDEs, `18,542` `.text` instructions, `0` stubs).
+- Added 6 verification tests (`verify_libgeckox_bspatch`) achieving `971/971 PASS (100.0%)` and `156/169 VERIFIED_AND_ACCEPTED`.

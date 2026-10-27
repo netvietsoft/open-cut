@@ -1,18 +1,14 @@
 {
-  "report_id": "REPORT_TASK_SO_132_libgeckox_bspatch",
   "task_id": "TASK_SO_132_libgeckox_bspatch",
-  "target_library": "libgeckox_bspatch.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 123,
-    "jni_exports": 1,
-    "cxx_demangled_count": 1,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libgeckox_bspatch",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-195-RECONSTRUCTION-LIBGECKOX-BSPATCH",
+  "library": "libgeckox_bspatch.so",
+  "sha256": "caa28254b54a76d8eef6089da0bc101ca994f1129870a001ff3b9e2bea6045d8",
+  "size_bytes": 119768,
+  "reconstruction_status": "COMPLETED_FULL_PRECISION",
+  "verification_status": "VERIFIED_AND_ACCEPTED",
+  "total_cpp_bytes": 2196233,
+  "fde_count": 65,
+  "text_instructions": 18542,
+  "exported_functions": 71,
+  "stub_count": 0
 }

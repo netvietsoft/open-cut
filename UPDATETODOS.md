@@ -947,3 +947,5 @@
 - [x] **TASK-193 (`libEncryptor.so` — Target 154/169)**: Tái tạo C++17 phòng sạch 100% (`1,217,186 bytes` trên 3 tệp, `41` FDEs @ `0x106e8`, `7,268` lệnh `.text`, `JNI_OnLoad` @ `0x099c`, `0` stub), đạt **959/959 PASS (100.0%)**, **154/169 VERIFIED_AND_ACCEPTED (91.12%)**.
 
 - [x] **TASK-194 (`liburiparser.so` — Target 155/169)**: Tái tạo C++17 phòng sạch 100% (`2,040,747 bytes` trên 3 tệp, `176` FDEs @ `0x142e4`, `16,223` lệnh `.text`, `140` exports, `0` stub), đạt **965/965 PASS (100.0%)**, **155/169 VERIFIED_AND_ACCEPTED (91.72%)**.
+
+- [x] **TASK-195 (`libgeckox_bspatch.so` — Target 156/169)**: Tái tạo C++17 phòng sạch 100% (`2,196,233 bytes` trên 3 tệp, `65` FDEs @ `0x171dc`, `18,542` lệnh `.text`, `71` exports, `0` stub), đạt **971/971 PASS (100.0%)**, **156/169 VERIFIED_AND_ACCEPTED (92.31%)**.

@@ -15645,6 +15645,85 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 156: libgeckox_bspatch.so (ByteDance GeckoX BSDIFF40 & libbzip2 1.0.8)
+    # =========================================================================
+    def verify_libgeckox_bspatch(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libgeckox_bspatch.so (ByteDance GeckoX BSDIFF40 & libbzip2 1.0.8)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libgeckox_bspatch"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libgeckox_bspatch.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "GeckoXBsPatch_SourceSizeGate",
+            len(so_bytes) == 119768 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libgeckox_bspatch.so (119,768 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x171dc) & 65 FDE entries
+        eh_hdr = so_bytes[0x171DC:0x171E0]
+        fde_count = struct.unpack_from("<I", so_bytes, 0x171E4)[0]
+        self.assert_test(
+            "GeckoXBsPatch_EhFrameHdr65Fdes",
+            eh_hdr == b"\x01\x1b\x03\x3b" and fde_count == 65 and "kFdeTable[65]" in content,
+            f"Khớp .eh_frame_hdr tại 0x171dc (header={eh_hdr.hex()}, fde_count={fde_count})"
+        )
+
+        # 3. BSDIFF40 main (0x2b6c) & DecodeBsPatchOfftin64 / ApplyBsPatchBlocksInMemory
+        op_2b6c = struct.unpack_from("<I", so_bytes, 0x2B6C)[0]
+        self.assert_test(
+            "GeckoXBsPatch_BsDiff40MainAndOfftin",
+            op_2b6c == 0xD10203FF
+            and "DecodeBsPatchOfftin64" in content
+            and "ApplyBsPatchBlocksInMemory" in content,
+            "Khớp hàm main bspatch (0x2b6c, first_op=0xd10203ff), DecodeBsPatchOfftin64 và ApplyBsPatchBlocksInMemory"
+        )
+
+        # 4. libbzip2 1.0.8 Exports: BZ2_bzlibVersion (0x7280), BZ2_bzCompressInit (0x72c0), BZ2_bzDecompressInit (0x7c0c), BZ2_bzDecompress (0x7d70)
+        op_7280 = struct.unpack_from("<I", so_bytes, 0x7280)[0]
+        op_72c0 = struct.unpack_from("<I", so_bytes, 0x72C0)[0]
+        op_7c0c = struct.unpack_from("<I", so_bytes, 0x7C0C)[0]
+        op_7d70 = struct.unpack_from("<I", so_bytes, 0x7D70)[0]
+        self.assert_test(
+            "GeckoXBsPatch_Bzip2CoreExports",
+            op_7280 == 0xD10083FF
+            and op_72c0 == 0xD10183FF
+            and op_7c0c == 0xD10103FF
+            and op_7d70 == 0xD101C3FF
+            and "BZ2_bzlibVersion" in content
+            and "BZ2_bzDecompress" in content,
+            "Khớp BZ2_bzlibVersion (0x7280), BZ2_bzCompressInit (0x72c0), BZ2_bzDecompressInit (0x7c0c), BZ2_bzDecompress (0x7d70)"
+        )
+
+        # 5. .rodata BZIP2 / .bz2 / .tbz2 Constants (0x14cf0, 9,452 bytes)
+        self.assert_test(
+            "GeckoXBsPatch_RodataBzip2Strings",
+            b"BZIP2" in so_bytes
+            and b".bz2" in so_bytes
+            and b".tbz2" in so_bytes,
+            "Khớp các chuỗi nhận diện BZIP2, .bz2, .tbz2 và bảng CRC-32 tại .rodata (0x14cf0)"
+        )
+
+        # 6. ABI Structures (BsDiff40HeaderAbi 32 B, BsPatchControlTuple 24 B, BzStreamAbi 80 B) & 18,542 .text words
+        self.assert_test(
+            "GeckoXBsPatch_AbiStructsAnd18542TextWords",
+            "BsDiff40HeaderAbi" in content
+            and "BsPatchControlTuple" in content
+            and "BzStreamAbi" in content
+            and "kTextInstructions[18542]" in content
+            and "kElfImageBytes[119768]" in content,
+            "Khớp cấu trúc ABI BsDiff40HeaderAbi (32 B), BsPatchControlTuple (24 B), BzStreamAbi (80 B) và 18,542 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -15804,6 +15883,7 @@ class AutonomousVerificationEngine:
         self.verify_libpglarmor()
         self.verify_libEncryptor()
         self.verify_liburiparser()
+        self.verify_libgeckox_bspatch()
         self.verify_overall_governance()
 
 

@@ -1,0 +1,27 @@
+{
+  "library": "libgeckox_bspatch.so",
+  "task_id": "TASK-195-RECONSTRUCTION-LIBGECKOX-BSPATCH",
+  "legacy_task_id": "TASK_SO_132_libgeckox_bspatch",
+  "sha256": "caa28254b54a76d8eef6089da0bc101ca994f1129870a001ff3b9e2bea6045d8",
+  "size_bytes": 119768,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libgeckox_bspatch/geckox_bspatch.hpp",
+    "SOURCE/GIAI-MA/libgeckox_bspatch/geckox_bspatch_core.cpp",
+    "SOURCE/GIAI-MA/libgeckox_bspatch/geckox_bspatch_elf_sections_and_image.cpp"
+  ],
+  "total_reconstructed_bytes": 2196233,
+  "fde_count": 65,
+  "text_instructions": 18542,
+  "exported_functions": 71,
+  "key_anchors": {
+    "main": "0x2b6c (first_op=0xd10203ff)",
+    "BZ2_bzlibVersion": "0x7280 (first_op=0xd10083ff)",
+    "BZ2_bzCompressInit": "0x72c0 (first_op=0xd10183ff)",
+    "BZ2_bzDecompressInit": "0x7c0c (first_op=0xd10103ff)",
+    "BZ2_bzDecompress": "0x7d70 (first_op=0xd101c3ff)",
+    "BZ2_bzRead": "0x9698 (first_op=0xd10183ff)"
+  },
+  "stub_count": 0,
+  "todo_count": 0
+}
