@@ -1,18 +1,15 @@
 {
   "lib_name": "libkrypton",
-  "inspected_at": "2026-10-27 18:03:29",
-  "gate1_size_bytes": 4644,
-  "gate1_passed": false,
-  "gate2_opcode_count": 0,
-  "gate2_passed": false,
-  "gate3_math_verified": false,
-  "gate4_abi_offsets_verified": false,
+  "inspected_at": "2026-10-27 18:12:08",
+  "gate1_size_bytes": 1456028,
+  "gate1_passed": true,
+  "gate2_opcode_count": 12431,
+  "gate2_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
   "gate5_symbols_count": 967,
   "gate5_passed": true,
   "gate6_test_passed": true,
-  "status": "CHALLENGED_NEEDS_PROOF",
-  "criticisms": [
-    "Dung lượng mã nguồn (4644 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
-    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể."
-  ]
+  "status": "VERIFIED_AND_ACCEPTED",
+  "criticisms": []
 }

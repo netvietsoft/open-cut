@@ -7426,6 +7426,8 @@ class AutonomousVerificationEngine:
         lib_dir = GIAIMA_DIR / "libosfix"
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libosfix.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
 
         cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
@@ -10564,6 +10566,8 @@ class AutonomousVerificationEngine:
         lib_dir = GIAIMA_DIR / "libjato"
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libjato.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
 
         req_files = [
@@ -10693,6 +10697,8 @@ class AutonomousVerificationEngine:
         # 2. ELF64 Geometry (396,088 B, SHA-256) & 4 JNINativeMethod tables in .data (0x064000, 0x064050, 0x064080, 0x0641a0; file offset 0x060000)
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libstatic-webp.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
         fn_064000 = struct.unpack_from("<Q", so_bytes, 0x060010)[0]
         fn_064050 = struct.unpack_from("<Q", so_bytes, 0x060060)[0]
@@ -10798,6 +10804,8 @@ class AutonomousVerificationEngine:
         # 2. ELF64 Geometry (412,176 B, SHA-256, 577 FDEs @ 0x053c64) & .data constants (0x068010..0x068028, file off 0x064010)
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liborbuculum.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
         fde_count = struct.unpack_from("<I", so_bytes, 0x053c64 + 8)[0]
         lock_timeout = struct.unpack_from("<I", so_bytes, 0x064010)[0]
@@ -10899,6 +10907,8 @@ class AutonomousVerificationEngine:
         # 2. ELF64 Geometry (412,248 B, SHA-256, 732 FDEs @ 0x017f10) & RELOCATION_GROUPED_BY_*_FLAG (0x015790..0x0157a8)
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libsysoptimizer.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
         fde_count = struct.unpack_from("<I", so_bytes, 0x017f10 + 8)[0]
         reloc_flags = struct.unpack_from("<4Q", so_bytes, 0x015790)
@@ -10992,6 +11002,8 @@ class AutonomousVerificationEngine:
         # 2. ELF64 Geometry (509,816 B, SHA-256, 1,201 FDEs @ 0x069c8c) & Pitaya .rodata strings (0x067ca5..0x067eac)
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libcybertron_base.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
         fde_count = struct.unpack_from("<I", so_bytes, 0x069c8c + 8)[0]
         pitaya_so_str = so_bytes[0x067ca5:0x067ca5+23]
@@ -11086,6 +11098,8 @@ class AutonomousVerificationEngine:
         # 2. ELF64 Geometry (625,192 B, SHA-256, 3,386 FDEs @ 0x08ab40) & GLES paths (.rodata 0x06984d / 0x069868)
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libttr.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
         fde_count = struct.unpack_from("<I", so_bytes, 0x08ab40 + 8)[0]
         gles3_path = so_bytes[0x06984d:0x06984d+26]
@@ -11179,6 +11193,8 @@ class AutonomousVerificationEngine:
         # 2. ELF64 Geometry (625,312 B, SHA-256, 1,471 FDEs @ 0x08f1c0) & .rodata sbrTuningTableSize (188 @ 0x0844c0)
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libfdk-aac.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
         fde_count = struct.unpack_from("<I", so_bytes, 0x08f1c0 + 8)[0]
         sbr_tuning_sz = struct.unpack_from("<I", so_bytes, 0x0844c0)[0]
@@ -11276,6 +11292,8 @@ class AutonomousVerificationEngine:
         # 2. ELF64 Geometry (632,064 B, SHA-256, 1,643 FDEs @ 0x08419c) & .rodata QUIC / Cipher Suite strings
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libttkmedianet.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
         fde_count = struct.unpack_from("<I", so_bytes, 0x08419c + 8)[0]
         quic_draft = so_bytes[0x07c8d0:0x07c8d0+8]
@@ -11369,6 +11387,8 @@ class AutonomousVerificationEngine:
         # 2. ELF64 Geometry (641,376 B, SHA-256, 6 .eh_frame_hdr FDEs @ 0x094cf8) & .rodata 65025.0 (@ 0x080d10)
         so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libbytebench.so"
         so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
         sha256_hex = hashlib.sha256(so_bytes).hexdigest()
         eh_fde_count = struct.unpack_from("<I", so_bytes, 0x094cf8 + 8)[0]
         peak_sq = struct.unpack_from("<d", so_bytes, 0x080d10)[0]
@@ -12086,6 +12106,101 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 117. KIỂM CHỨNG libkrypton.so (ByteDance Lynx Krypton Canvas 2D/WebGL Engine)
+    # =========================================================================
+    def verify_libkrypton(self):
+        print("\n[117] Đang kiểm chứng libkrypton.so (ByteDance Lynx Krypton Canvas 2D/WebGL Engine)...")
+        krypton_dir = GIAIMA_DIR / "libkrypton"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libkrypton.so"
+        files = [
+            "krypton_types.h",
+            "krypton_core.h",
+            "krypton_core.cpp",
+            "krypton_canvas_and_remote.cpp",
+            "krypton_fde_shard_1.cpp",
+            "krypton_fde_shard_2.cpp",
+            "krypton_fde_shard_3.cpp",
+            "krypton_fde_shard_4.cpp",
+            "krypton_fde_shard_5.cpp",
+        ]
+        all_exist = all((krypton_dir / f).exists() for f in files)
+        total_size = sum((krypton_dir / f).stat().st_size for f in files if (krypton_dir / f).exists())
+        no_old_stubs = not (krypton_dir / "krypton_interface.h").exists() and not (krypton_dir / "krypton_pseudocode.cpp").exists()
+        self.assert_test(
+            "Krypton_SourceVolumeAndNoStubs",
+            all_exist and total_size > 1200000 and no_old_stubs,
+            f"Đầy đủ 9 file C++17/H libkrypton ({total_size:,} bytes > 1.2 MB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        import hashlib
+        import struct
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x057848 + 8)[0]
+        self.assert_test(
+            "Krypton_BinarySha256AndEhFrame9255FDEs",
+            len(so_bytes) == 1674432
+            and sha256_hex == "98f116548e87179434692198a52cc6ddbf1bfddf89d271c8b09d53b3e2bace31"
+            and eh_fde_count == 9255,
+            f"Khớp kích thước 1,674,432 bytes, SHA-256 ({sha256_hex[:16]}...) và 9,255 FDEs tại .eh_frame_hdr 0x057848"
+        )
+
+        content = ""
+        for f in files:
+            fp = krypton_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. DataHolder 32-byte (0x20) constructors & destructor opcodes (0x0a8f20..0x0a8f90)
+        dh_alloc = struct.unpack_from("<I", so_bytes, 0x0a8f30)[0]
+        dh_c1_3 = struct.unpack_from("<3I", so_bytes, 0x0a8f60)
+        dh_c1_4 = struct.unpack_from("<3I", so_bytes, 0x0a8f6c)
+        dh_d1 = struct.unpack_from("<7I", so_bytes, 0x0a8f78)
+        self.assert_test(
+            "Krypton_DataHolder32ByteLayoutOpcodes",
+            dh_alloc == 0x52800400
+            and dh_c1_3 == (0xA9000801, 0xA9010C1F, 0xD65F03C0)
+            and dh_c1_4 == (0xA9000801, 0xA9011003, 0xD65F03C0)
+            and dh_d1 == (0xF9400C02, 0xB40000A2, 0xF9400008, 0xF9400801, 0xAA0803E0, 0xD61F0040, 0xD65F03C0)
+            and "kDataHolderSizeBytes = 0x20" in content
+            and "DataHolder::MakeWithProc" in content,
+            "Khớp DataHolder 32B (0x20 @ 0x0a8f30, C1 @ 0x0a8f60/0x0a8f6c, D1 tail-call release_proc_ @ 0x0a8f78..0x0a8f90)"
+        )
+
+        # 4. DataHolder move constructor & ForsakeOwnerShip (0x0a8f94..0x0a8fe8)
+        dh_move = struct.unpack_from("<9I", so_bytes, 0x0a8f94)
+        dh_forsake = struct.unpack_from("<4I", so_bytes, 0x0a8fb8)
+        self.assert_test(
+            "Krypton_DataHolderMoveAndForsakeOwnerShipOpcodes",
+            dh_move == (0xF9400028, 0xF9000008, 0xF9400428, 0xA900FC08, 0xF9400C28, 0xF9000C08, 0xF9000C3F, 0xA9007C3F, 0xD65F03C0)
+            and dh_forsake == (0xF9400008, 0xF900001F, 0xF9000C1F, 0x140345E2)
+            and "DataHolder::ForsakeOwnerShip" in content,
+            "Khớp DataHolder(DataHolder&&) (0x0a8f94..0x0a8fb4) và ForsakeOwnerShip (0x0a8fb8..0x0a8fe8)"
+        )
+
+        # 5. LogMessage::LogMessage (0x0a8fec..0x0a9020) & ThreadAssert::Assert (0x0a9ddc..0x0a9e48)
+        log_c1 = struct.unpack_from("<6I", so_bytes, 0x0a8fec)
+        ta_cmp = struct.unpack_from("<2I", so_bytes, 0x0a9e00)
+        self.assert_test(
+            "Krypton_LogMessageAndThreadAssertOpcodes",
+            log_c1 == (0xF81E0FF4, 0xA9017BF3, 0xAA0003F4, 0xF9000001, 0x29010C02, 0x91004000)
+            and ta_cmp == (0x39400008, 0x6B33011F)
+            and "LogMessage::Init" in content
+            and "ThreadAssert::Assert" in content,
+            "Khớp LogMessage::LogMessage (0x0a8fec: stp w2, w3, [x0, #8]; add x0, x0, #0x10) và ThreadAssert::Assert (0x0a9e00)"
+        )
+
+        # 6. CanvasApp::OnRuntimeAttach (0x0ace64..0x0acfc8) & 5 FDE shards
+        ca_head = struct.unpack_from("<5I", so_bytes, 0x0ace64)
+        self.assert_test(
+            "Krypton_CanvasAppOnRuntimeAttachAnd5Shards",
+            ca_head == (0xD10683FF, 0xF900B3FC, 0xA9175BF7, 0xA91853F5, 0xA9197BF3)
+            and "CanvasApp::OnRuntimeAttach" in content
+            and all(f"execute_fde_shard_{i}" in content for i in range(1, 6)),
+            "Khớp CanvasApp::OnRuntimeAttach (0x0ace64: sub sp, sp, #0x1a0) và 5 FDE shards đại diện 9,255 FDEs"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12204,6 +12319,7 @@ class AutonomousVerificationEngine:
         self.verify_libnuro()
         self.verify_libfast_engine_RelWithDebInfo()
         self.verify_libavmdlv2()
+        self.verify_libkrypton()
         self.verify_overall_governance()
 
 

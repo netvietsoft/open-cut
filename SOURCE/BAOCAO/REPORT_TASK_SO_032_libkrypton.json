@@ -1,18 +1,12 @@
 {
-  "report_id": "REPORT_TASK_SO_032_libkrypton",
   "task_id": "TASK_SO_032_libkrypton",
-  "target_library": "libkrypton.so",
-  "assigned_agent": "Agent 11 - DESIGNER & Agent 3 - FRONTEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 967,
-    "jni_exports": 0,
-    "cxx_demangled_count": 635,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libkrypton",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-154-RECONSTRUCTION-LIBKRYPTON",
+  "library": "libkrypton.so",
+  "status": "COMPLETED_VERIFIED",
+  "binary_size_bytes": 1674432,
+  "binary_sha256": "98f116548e87179434692198a52cc6ddbf1bfddf89d271c8b09d53b3e2bace31",
+  "cpp17_reconstruction_bytes": 1456028,
+  "fde_count": 9255,
+  "exported_symbols": 345,
+  "stub_count": 0
 }

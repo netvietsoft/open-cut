@@ -1,0 +1,57 @@
+{
+  "task_id": "TASK_SO_032_libkrypton",
+  "Orchestrator_Task_ID": "TASK-154-RECONSTRUCTION-LIBKRYPTON",
+  "library": "libkrypton.so",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libkrypton.so",
+  "binary_size_bytes": 1674432,
+  "binary_sha256": "98f116548e87179434692198a52cc6ddbf1bfddf89d271c8b09d53b3e2bace31",
+  "reconstruction_dir": "SOURCE/GIAI-MA/libkrypton",
+  "reconstructed_files": [
+    "krypton_types.h",
+    "krypton_core.h",
+    "krypton_core.cpp",
+    "krypton_canvas_and_remote.cpp",
+    "krypton_fde_shard_1.cpp",
+    "krypton_fde_shard_2.cpp",
+    "krypton_fde_shard_3.cpp",
+    "krypton_fde_shard_4.cpp",
+    "krypton_fde_shard_5.cpp"
+  ],
+  "reconstructed_cpp_bytes": 1456028,
+  "fde_count": 9255,
+  "eh_frame_hdr_va": "0x057848",
+  "exported_symbols_count": 345,
+  "stub_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "opcode_evidence": [
+    {
+      "symbol": "lynx::canvas::DataHolder::MakeWithProc / C1 / D1",
+      "va_range": "0x0a8f20..0x0a8f90",
+      "opcodes": [
+        "0x0a8f30: 52800400 mov w0, #0x20",
+        "0x0a8f60: A9000801 stp x1, x2, [x0]",
+        "0x0a8f64: A9010C1F stp xzr, x3, [x0, #0x10]",
+        "0x0a8f70: A9011003 stp x3, x4, [x0, #0x10]",
+        "0x0a8f78: F9400C02 ldr x2, [x0, #0x18]",
+        "0x0a8f8c: D61F0040 br x2"
+      ]
+    },
+    {
+      "symbol": "lynx::canvas::LogMessage::LogMessage",
+      "va_range": "0x0a8fec..0x0a9020",
+      "opcodes": [
+        "0x0a8ff8: F9000001 str x1, [x0]",
+        "0x0a8ffc: 29010C02 stp w2, w3, [x0, #8]",
+        "0x0a9000: 91004000 add x0, x0, #0x10"
+      ]
+    },
+    {
+      "symbol": "lynx::canvas::ThreadAssert::Assert",
+      "va_range": "0x0a9ddc..0x0a9e48",
+      "opcodes": [
+        "0x0a9e00: 39400008 ldrb w8, [x0]",
+        "0x0a9e04: 6B33011F cmp w8, w19, uxtb"
+      ]
+    }
+  ]
+}
