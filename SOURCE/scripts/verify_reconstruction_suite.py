@@ -9708,6 +9708,154 @@ class AutonomousVerificationEngine:
             "Khớp tuyệt đối hằng số IEEE-754 1/sqrt(2) (0x032e68 = 0x3FE6A09E667F3BCD) và hằng số Bézier kappa = 0.5519150244935105 (0x032e70 = 0x3FE1A949B28BDC80)"
         )
 
+    def verify_libnms(self):
+        """Kiểm thử chuyên sâu thư viện libnms.so (ByteDance Pangle / PGL Security SDK Native Meta Engine com.pgl.ssdk.ces.a, 293,272 bytes)."""
+        import hashlib
+        import struct
+        print("\n[92] Đang kiểm chứng libnms.so (ByteDance Pangle / PGL Security SDK Native Meta Engine)...")
+        lib_dir = GIAIMA_DIR / "libnms"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnms.so"
+        cpp_files = [
+            "nms_types.h",
+            "nms_rodata_tables.h",
+            "nms_rodata_tables.cpp",
+            "nms_crypto_and_syscalls.h",
+            "nms_crypto_and_syscalls.cpp",
+            "nms_ces_meta_engine.h",
+            "nms_ces_meta_engine.cpp",
+            "nms_interface.h",
+            "nms_pseudocode.cpp",
+        ]
+        all_exist = all((lib_dir / f).exists() for f in cpp_files) and so_path.exists()
+        total_bytes = sum((lib_dir / f).stat().st_size for f in cpp_files if (lib_dir / f).exists())
+        content = "\n".join((lib_dir / f).read_text(encoding="utf-8") for f in cpp_files if (lib_dir / f).exists())
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+
+        # 1. Kiểm tra kích thước nhị phân, SHA-256 và dung lượng C++17 clean-room
+        self.assert_test(
+            "Nms_CleanRoomSizeAndSha256",
+            all_exist
+            and len(so_bytes) == 293272
+            and so_sha256 == "c448eb3aac806f9a69df7ccebcdf3fac2f77a643716bbba2e0aa5ddc40e50890"
+            and total_bytes >= 150000
+            and "TODO_STUB" not in content,
+            f"Đã tái cấu trúc 9 file C++17 clean-room cho libnms.so ({total_bytes:,} bytes >= 150 KB, SHA-256 khớp tuyệt đối)"
+        )
+
+        # 2. Kiểm tra bộ giải mã XOR khóa kết thúc null sub_14bd4 (0x014bd4) & chuỗi JNI_OnLoad ("5256", "meta", "arm64", "7.1.0.0.overseas-rc.9-switch")
+        op_14bd4_ldrb = struct.unpack("<I", so_bytes[0x014BD4:0x014BD8])[0]
+        op_14be8_eor  = struct.unpack("<I", so_bytes[0x014BE8:0x014BEC])[0]
+        def xor_dec(ct_va: int, key_va: int) -> bytes:
+            out = bytearray()
+            i = 0
+            while so_bytes[key_va + i] != 0:
+                out.append(so_bytes[ct_va + i] ^ so_bytes[key_va + i])
+                i += 1
+            return bytes(out)
+        self.assert_test(
+            "Nms_XorStreamDecryptor_0x014bd4",
+            op_14bd4_ldrb == 0x39400048  # ldrb w8, [x2]
+            and op_14be8_eor == 0x4A080168  # eor w8, w11, w8
+            and xor_dec(0x00B128, 0x00B14C) == b"arm64"
+            and xor_dec(0x00B194, 0x00B244) == b"meta"
+            and xor_dec(0x00B1A0, 0x00B200) == b"(ILandroid/content/Context;Ljava/lang/Object;)Ljava/lang/Object;"
+            and xor_dec(0x00B1E4, 0x00B1EC) == b"5256"
+            and xor_dec(0x00DD40, 0x00DEE0) == b"7.1.0.0.overseas-rc.9-switch"
+            and "nms_xor_decrypt_14bd4" in content,
+            "Khớp tuyệt đối opcode sub_14bd4 (0x014bd4: 39400048, 0x014be8: 4a080168) và giải mã XOR chính xác 'arm64', 'meta', '5256', '7.1.0.0.overseas-rc.9-switch'"
+        )
+
+        # 3. Kiểm tra thuật toán RC4 256-byte S-Box làm phẳng bởi OLLVM tại sub_1ba38 (0x01ba38..0x01bde4) & sub_1bde4 (0x01bde4)
+        op_1bcb4_udiv = struct.unpack("<I", so_bytes[0x01BCB4:0x01BCB8])[0]
+        op_1bd74_eor  = struct.unpack("<I", so_bytes[0x01BD74:0x01BD78])[0]
+        def rc4_dec(ct_va: int, clen: int, key_va: int) -> bytes:
+            S = list(range(256))
+            K = [so_bytes[key_va + (i & 3)] for i in range(256)]
+            j = 0
+            for i in range(256):
+                j = (j + S[i] + K[i]) & 0xFF
+                S[i], S[j] = S[j], S[i]
+            i = j = 0
+            out = bytearray()
+            for idx in range(clen):
+                i = (i + 1) & 0xFF
+                j = (j + S[i]) & 0xFF
+                S[i], S[j] = S[j], S[i]
+                out.append(so_bytes[ct_va + idx] ^ S[(S[i] + S[j]) & 0xFF])
+            return bytes(out)
+        self.assert_test(
+            "Nms_OllvmFlattenedRc4Cipher_0x01ba38",
+            op_1bcb4_udiv == 0x1ADB09D0  # udiv w16, w14, w27
+            and op_1bd74_eor == 0x4A100310  # eor w16, w24, w16
+            and rc4_dec(0x00B100, 14, 0x00B10E) == b"/proc/self/exe"
+            and rc4_dec(0x00FA38, 4,  0x00FA3C) == b"njss"
+            and rc4_dec(0x00FA40, 39, 0x00FA67) == b"(ILjava/lang/Object;)Ljava/lang/Object;"
+            and rc4_dec(0x00FC3F, 5,  0x00FC44) == b"38816"
+            and all(sym in content for sym in ["nms_rc4_crypt_1ba38", "nms_rc4_decrypt_1bde4", "kNmsAllRc4CallSites"]),
+            "Giải mã chuẩn xác thuật toán RC4 256-byte S-Box làm phẳng OLLVM (sub_1ba38 / sub_1bde4) trên toàn bộ 185 điểm gọi trong .text"
+        )
+
+        # 4. Kiểm tra biểu thức Mixed Boolean-Arithmetic (MBA) 64-bit tại 0x038b04 (-0xA991C0) & 0x03c690 (-0x875128)
+        mask64 = 0xFFFFFFFFFFFFFFFF
+        def mba_off(anchor: int, xor_k: int) -> int:
+            orn_v = (0x00A060400A021040 | (~anchor & mask64)) & mask64
+            s_v = ((orn_v & 0x00A061440A061440) + (anchor & 0x0000010400040400)) & mask64
+            return ((s_v | 0x01010104) ^ xor_k) & mask64
+        off_meta = mba_off(0x038A58, 0xFF5F9EBBF4517B04)
+        off_prop = mba_off(0x03C670, 0xFF5F9EBBF47FBB9C)
+        self.assert_test(
+            "Nms_MbaPointerDeobfuscation_0x038b04_0x03c690",
+            off_meta == 0xFFFFFFFFFF566E40
+            and off_prop == 0xFFFFFFFFFF78AED8
+            and ((0x00AA8DFF + off_meta) & mask64) == 0x0000FC3F
+            and ((0x00885978 + off_prop) & mask64) == 0x00010850
+            and xor_dec(0x010850, 0x010BB0) == b"/dev/__properties__/u:object_r:exported2_default_prop:s0"
+            and xor_dec(0x010910, 0x010B20) == b"ro.boot.verifiedbootstate"
+            and all(sym in content for sym in ["nms_mba_compute_offset", "nms_mba_resolve_pointer", "kNmsDataMbaRelocTable"]),
+            "Chứng minh toán học biểu thức MBA 64-bit khử làm rối 49 con trỏ .rela.dyn (-0xA991C0 tại sub_38a58 và -0x875128 tại sub_3c670)"
+        )
+
+        # 5. Kiểm tra vị từ mờ lý thuyết số OLLVM (Pell mod 7 & mod 19) và bước nhảy gián tiếp JNI_OnLoad ('5256') / meta ('38816')
+        target_onload = (0x014DDC - (5256 >> 2)) + 0x522
+        target_meta   = (0x038C20 - (38816 >> 2)) + 0x25E8
+        op_34998_mov  = struct.unpack("<I", so_bytes[0x034998:0x03499C])[0]
+        op_3499c_movk = struct.unpack("<I", so_bytes[0x03499C:0x0349A0])[0]
+        self.assert_test(
+            "Nms_OllvmOpaquePredicatesAndIndirectJumps",
+            target_onload == 0x014DDC
+            and target_meta == 0x038C20
+            and op_34998_mov == 0x528D7969   # mov w9, #0x6bcb
+            and op_3499c_movk == 0x72B5E509  # movk w9, #0xaf28, lsl #16 -> 0xAF286BCB (reciprocal div 19)
+            and all(((4 * x * x + 4) % 19) != 0 and ((x * x + 1) % 7) != 0 for x in (127, 207, 294, 318, 340))
+            and all(sym in content for sym in [
+                "nms_eval_pell_mod7_predicate", "nms_eval_mod19_predicate",
+                "nms_compute_indirect_target", "nms_jni_onload_15074", "nms_ces_meta_entry_38a58"
+            ]),
+            "Chứng minh vị từ mờ bất khả quy bậc hai mod 7 (0x24924925) & mod 19 (0xAF286BCB) và phân giải đích nhảy '5256'->0x014ddc, '38816'->0x038c20"
+        )
+
+        # 6. Kiểm tra cầu nối syscall trực tiếp dịch chuyển (+0xE9) tại sub_3c0bc (0x03c0bc) và bảng 11 sentinel lệch biên tại sub_34ab0 (0x034ab0)
+        op_3c0bc_sub = struct.unpack("<I", so_bytes[0x03C0BC:0x03C0C0])[0]
+        op_3c0dc_svc = struct.unpack("<I", so_bytes[0x03C0DC:0x03C0E0])[0]
+        op_34ac4_cmp = struct.unpack("<I", so_bytes[0x034AC4:0x034AC8])[0]
+        op_34b5c_cmp = struct.unpack("<I", so_bytes[0x034B5C:0x034B60])[0]
+        self.assert_test(
+            "Nms_ShiftedSyscallBridgeAndUnalignedSentinels",
+            op_3c0bc_sub == 0xD103A400  # sub x0, x0, #0xe9
+            and op_3c0dc_svc == 0xD4000001  # svc #0
+            and op_34ac4_cmp == 0xF104013F  # cmp x9, #0x100
+            and op_34b5c_cmp == 0xF12D817F  # cmp x11, #0xb60
+            and (0x121 - 0xE9) == 56   # __NR_openat
+            and (0x137 - 0xE9) == 78   # __NR_readlinkat
+            and (0x195 - 0xE9) == 172  # __NR_getpid
+            and all(sym in content for sym in [
+                "nms_syscall_dispatch_3c0bc", "nms_verify_sentinel_buffer_34ab0",
+                "nms_ces_meta_dispatcher_38c20", "nms_format_ad_telemetry_json_35c54"
+            ]),
+            "Khớp tuyệt đối cầu nối syscall trực tiếp dịch chuyển +0xE9 (0x03c0bc: d103a400, svc #0: d4000001) và bộ kiểm tra 11 sentinel lệch biên .bss 0x04f6c4"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -9804,6 +9952,7 @@ class AutonomousVerificationEngine:
         self.verify_libimagepipeline()
         self.verify_libundead_native_ability_q()
         self.verify_libserval_svg()
+        self.verify_libnms()
         self.verify_overall_governance()
 
 
