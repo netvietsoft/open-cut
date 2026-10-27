@@ -12397,6 +12397,110 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 120. KIỂM CHỨNG libpythonA.so (ByteDance Custom CPython + Drogon JIT Engine)
+    # =========================================================================
+    def verify_libpythonA(self):
+        print("\n[120] Đang kiểm chứng libpythonA.so (ByteDance Custom CPython + Drogon JIT Engine)...")
+        import hashlib
+        import struct
+        py_dir = GIAIMA_DIR / "libpythonA"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libpythonA.so"
+        files = [
+            "pythonA_types.h",
+            "pythonA_core.h",
+            "pythonA_core.cpp",
+            "pythonA_drogon_and_debugger.cpp",
+            "pythonA_fde_shard_1.cpp",
+            "pythonA_fde_shard_2.cpp",
+            "pythonA_fde_shard_3.cpp",
+            "pythonA_fde_shard_4.cpp",
+            "pythonA_fde_shard_5.cpp",
+        ]
+        all_exist = all((py_dir / f).exists() for f in files)
+        total_size = sum((py_dir / f).stat().st_size for f in files if (py_dir / f).exists())
+        no_old_stubs = not (py_dir / "pythonA_interface.h").exists() and not (py_dir / "pythonA_pseudocode.cpp").exists()
+        self.assert_test(
+            "PythonA_SourceVolumeAndNoStubs",
+            all_exist and total_size > 1200000 and no_old_stubs,
+            f"Đầy đủ 9 file C++17/H libpythonA ({total_size:,} bytes > 1.2 MB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x1c9550 + 8)[0]
+        self.assert_test(
+            "PythonA_BinarySha256AndEhFrame4320FDEs",
+            len(so_bytes) == 2229160
+            and sha256_hex == "adac15b692d2291567fdf9f43ae7d9f5e1d7cfec70c8db6c9b85109118cd92fe"
+            and eh_fde_count == 4320,
+            f"Khớp kích thước 2,229,160 bytes, SHA-256 ({sha256_hex[:16]}...) và 4,320 FDEs tại .eh_frame_hdr 0x1c9550"
+        )
+
+        content = ""
+        for f in files:
+            fp = py_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. BDPythonImportEncryptName NEON & Scalar Base-26 XOR-7 bijection (0x1192d4..0x119424)
+        enc_neon = struct.unpack_from("<5I", so_bytes, 0x11936c)
+        enc_st2 = struct.unpack_from("<I", so_bytes, 0x1193bc)[0]
+        enc_scalar = struct.unpack_from("<5I", so_bytes, 0x1193cc)
+        bijection_ok = all(
+            ((((b ^ 7) // 26) * 26 + ((b ^ 7) % 26)) ^ 7) == b
+            and ((b * 0x4F) >> 11) == (b // 26)
+            for b in range(256)
+        )
+        self.assert_test(
+            "PythonA_BDPythonImportEncryptNameNeonAndScalarBijection",
+            enc_neon == (0x4F00E4E0, 0x4F02E5E1, 0x4F00E742, 0x531F7928, 0x4F02E423)
+            and enc_st2 == 0x4C0081C6
+            and enc_scalar == (0x529D89EB, 0xCB09028A, 0x8B090269, 0x72A9D88B, 0x5280034C)
+            and bijection_ok
+            and "BDPythonImportEncryptName" in content,
+            "Khớp BDPythonImportEncryptName (0x1192d4: NEON v0=#7, v1=#0x4f, st2 @ 0x1193bc; Scalar 0x4ec4ec4f >> 35 @ 0x1193cc)"
+        )
+
+        # 4. PyToken_OneChar (0x05db1c..0x05dbfc) & PyObject_Type/Size (0x05e130..0x05e1d8)
+        tok_ops = struct.unpack_from("<4I", so_bytes, 0x05db1c)
+        type_ops = struct.unpack_from("<4I", so_bytes, 0x05e138)
+        size_ops = struct.unpack_from("<4I", so_bytes, 0x05e1a0)
+        self.assert_test(
+            "PythonA_PyTokenOneCharAndPyObjectTypeSizeOpcodes",
+            tok_ops == (0x51009408, 0x7101651F, 0x54000148, 0xB0000A29)
+            and type_ops == (0xB40000C0, 0xF9400400, 0xF9400008, 0x91000508)
+            and size_ops == (0xB4000100, 0xF9400408, 0xF9403508, 0xB4000128)
+            and "PyToken_OneChar" in content
+            and "PyObject_Type" in content,
+            "Khớp PyToken_OneChar (0x05db1c: sub #0x25, cmp #0x59), PyObject_Type (0x05e130: +0x08) và PyObject_Size (0x05e198: +0x68)"
+        )
+
+        # 5. PyNumber_* & Drogon_PyNumber_* slot dispatchers (0x05fb3c..0x05fbbc)
+        xor_slot = struct.unpack_from("<I", so_bytes, 0x05fb44)[0]
+        and_slot = struct.unpack_from("<I", so_bytes, 0x05fb54)[0]
+        drogon_or_slot = struct.unpack_from("<I", so_bytes, 0x05fba8)[0]
+        self.assert_test(
+            "PythonA_DrogonPyNumberSlotDispatchOpcodes",
+            xor_slot == 0x52800E02
+            and and_slot == 0x52800D02
+            and drogon_or_slot == 0x52800F02
+            and "Drogon_PyNumber_Or" in content
+            and "Drogon_PyNumber_Subtract" in content,
+            "Khớp PyNumber_* & Drogon_PyNumber_* (nb_xor=#0x70 @ 0x05fb44, nb_and=#0x68 @ 0x05fb54, nb_or=#0x78 @ 0x05fba8)"
+        )
+
+        # 6. BDPythonVMPreInit (0x080ba4..0x080bf0), BDPyDebugger::Event & 5 FDE Shards
+        preinit_ops = struct.unpack_from("<5I", so_bytes, 0x080ba4)
+        self.assert_test(
+            "PythonA_BDPythonVMPreInitAnd5FdeShards",
+            preinit_ops == (0xF81E0FF3, 0xA9017BFD, 0x910043FD, 0x3942A408, 0x37200128)
+            and "BDPythonVMPreInit" in content
+            and "BDPyDebugger" in content
+            and all(f"execute_fde_shard_{i}" in content for i in range(1, 6)),
+            "Khớp BDPythonVMPreInit (0x080ba4: ldrb [x0, #0xa9]; tbnz #4), BDPyDebugger::Event và 5 FDE shards (4,320 FDEs)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12518,6 +12622,7 @@ class AutonomousVerificationEngine:
         self.verify_libkrypton()
         self.verify_libquick()
         self.verify_libmetasec_ov()
+        self.verify_libpythonA()
         self.verify_overall_governance()
 
 

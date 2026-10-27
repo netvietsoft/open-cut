@@ -1,0 +1,59 @@
+{
+  "task_id": "TASK_SO_046_libpythonA",
+  "Orchestrator_Task_ID": "TASK-157-RECONSTRUCTION-LIBPYTHONA",
+  "library": "libpythonA.so",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libpythonA.so",
+  "binary_size_bytes": 2229160,
+  "binary_sha256": "adac15b692d2291567fdf9f43ae7d9f5e1d7cfec70c8db6c9b85109118cd92fe",
+  "reconstruction_dir": "SOURCE/GIAI-MA/libpythonA",
+  "reconstructed_files": [
+    "pythonA_types.h",
+    "pythonA_core.h",
+    "pythonA_core.cpp",
+    "pythonA_drogon_and_debugger.cpp",
+    "pythonA_fde_shard_1.cpp",
+    "pythonA_fde_shard_2.cpp",
+    "pythonA_fde_shard_3.cpp",
+    "pythonA_fde_shard_4.cpp",
+    "pythonA_fde_shard_5.cpp"
+  ],
+  "reconstructed_cpp_bytes": 1486461,
+  "fde_count": 4320,
+  "eh_frame_hdr_va": "0x1c9550",
+  "exported_symbols_count": 1998,
+  "stub_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "opcode_evidence": [
+    {
+      "symbol": "BDPythonImportEncryptName (NEON & Scalar Base-26 XOR-7)",
+      "va_range": "0x1192d4..0x119424",
+      "opcodes": [
+        "0x1192ec: B37FFA81 bfi x1, x20, #1, #0x3f",
+        "0x11936c: 4F00E4E0 movi v0.16b, #7",
+        "0x119370: 4F02E5E1 movi v1.16b, #0x4f",
+        "0x1193bc: 4C0081C6 st2 {v6.16b, v7.16b}, [x14]",
+        "0x1193cc: 529D89EB mov w11, #0xec4f",
+        "0x1193d8: 72A9D88B movk w11, #0x4ec4, lsl #16"
+      ]
+    },
+    {
+      "symbol": "PyToken_OneChar & PyObject_Type & PyObject_Size",
+      "va_range": "0x05db1c..0x05e1d8",
+      "opcodes": [
+        "0x05db1c: 51009408 sub w8, w0, #0x25",
+        "0x05db20: 7101651F cmp w8, #0x59",
+        "0x05e13c: F9400400 ldr x0, [x0, #8]",
+        "0x05e1a8: F9403508 ldr x8, [x8, #0x68]"
+      ]
+    },
+    {
+      "symbol": "PyNumber_* & Drogon_PyNumber_*",
+      "va_range": "0x05fb3c..0x05fbbc",
+      "opcodes": [
+        "0x05fb44: 52800E02 mov w2, #0x70",
+        "0x05fb54: 52800D02 mov w2, #0x68",
+        "0x05fba8: 52800F02 mov w2, #0x78"
+      ]
+    }
+  ]
+}

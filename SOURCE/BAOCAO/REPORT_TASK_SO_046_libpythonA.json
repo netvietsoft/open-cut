@@ -1,18 +1,12 @@
 {
-  "report_id": "REPORT_TASK_SO_046_libpythonA",
   "task_id": "TASK_SO_046_libpythonA",
-  "target_library": "libpythonA.so",
-  "assigned_agent": "Agent 2 - BACKEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 2218,
-    "jni_exports": 0,
-    "cxx_demangled_count": 38,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libpythonA",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-157-RECONSTRUCTION-LIBPYTHONA",
+  "library": "libpythonA.so",
+  "status": "COMPLETED_VERIFIED",
+  "binary_size_bytes": 2229160,
+  "binary_sha256": "adac15b692d2291567fdf9f43ae7d9f5e1d7cfec70c8db6c9b85109118cd92fe",
+  "cpp17_reconstruction_bytes": 1486461,
+  "fde_count": 4320,
+  "exported_symbols": 1998,
+  "stub_count": 0
 }
