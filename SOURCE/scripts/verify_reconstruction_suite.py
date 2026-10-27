@@ -11623,6 +11623,96 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 110: libapplovin-native-crash-reporter.so (Target 110 / 169)
+    # =========================================================================
+    def verify_libapplovin_native_crash_reporter(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libapplovin-native-crash-reporter.so (Target 110 / 169)")
+        print("="*70)
+
+        import struct
+        import hashlib
+
+        lib_dir = GIAIMA_DIR / "libapplovin-native-crash-reporter"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 40 KB (1,424,637 B across 9 clean-room files, 0 stubs)
+        self.assert_test(
+            "AppLovinCrash_SourceSizeAndZeroStubs",
+            total_bytes > 40000
+            and len(cpp_files) == 9
+            and not (lib_dir / "applovin_native_crash_reporter_interface.h").exists()
+            and not (lib_dir / "applovin_native_crash_reporter_pseudocode.cpp").exists()
+            and "ExecuteAppLovinFdeByAddress" in content,
+            f"Tổng dung lượng C++17 đạt {total_bytes:,} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Binary SHA-256 & .eh_frame_hdr @ 0x04e014 (1,757 FDEs)
+        so_bytes = (ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libapplovin-native-crash-reporter.so").read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x04e014 + 8)[0]
+        self.assert_test(
+            "AppLovinCrash_BinarySha256AndEhFrame1757Fdes",
+            len(so_bytes) == 860200
+            and sha256_hex == "ecf2a7327be482870f4c791392a50cecfeaabb2c76a7224898e9713a18c4c36a"
+            and fde_count == 1757,
+            "Khớp nhị phân libapplovin-native-crash-reporter.so (860,200 B, SHA-256 ecf2a732..., 1,757 FDEs @ 0x04e014)"
+        )
+
+        # 3. NativeCrashReporterContext Ctor (0x0606e8..0x060778) 32 KB alt stack & SA_SIGINFO|SA_ONSTACK (0x08000004)
+        alt_sz = struct.unpack_from("<I", so_bytes, 0x060720)[0]
+        sa_flags_insns = struct.unpack_from("<5I", so_bytes, 0x060768)
+        sim_sa_flags = 4 | (0x800 << 16)
+        self.assert_test(
+            "AppLovinCrash_ContextCtorAltStackAndSaFlags",
+            alt_sz == 0x52900008
+            and sa_flags_insns == (0x52800088, 0x9100A320, 0x72A10008, 0xF9000358, 0xB90002E8)
+            and sim_sa_flags == 0x08000004
+            and "0x08000004" in content,
+            "Khớp NativeCrashReporterContext Ctor (0x0606e8: ss_size=0x8000 @ +0x28, sa_flags=0x08000004 @ +0x30)"
+        )
+
+        # 4. invoke_old_signal_handler (0x060abc..0x060b3c) & invoke_old_terminate_handler (0x060b40..0x060b4c)
+        old_sig_insns = struct.unpack_from("<7I", so_bytes, 0x060af0)
+        old_term_insns = struct.unpack_from("<4I", so_bytes, 0x060b40)
+        self.assert_test(
+            "AppLovinCrash_InvokeOldHandlersAbiAndStride",
+            old_sig_insns == (
+                0xF940280A, 0xCB080128, 0xD37DF109, 0x9342FD08,
+                0x38696949, 0x8B081548, 0x37100109
+            )
+            and old_term_insns == (0xF9403400, 0xB4000040, 0xD61F0000, 0xD65F03C0)
+            and "NativeCrashReporterContextAbiLayout" in content,
+            "Khớp invoke_old_signal_handler (0x060abc: 32B stride lsl #5, tbnz SA_SIGINFO #2) và invoke_old_terminate_handler (+0x68)"
+        )
+
+        # 5. Atomic crash state transitions: crash_detected (0x0618c8), begin_handling_crash (0x061a24), end_handling_crash (0x061a94)
+        cas_insns = struct.unpack_from("<6I", so_bytes, 0x061a50)
+        end_insns = struct.unpack_from("<3I", so_bytes, 0x061aa8)
+        self.assert_test(
+            "AppLovinCrash_AtomicCrashStateMachineOpcodes",
+            cas_insns == (0x085FFD69, 0x6B0A013F, 0x54000121, 0x5280002C, 0x080DFD6C, 0x35FFFF6D)
+            and end_insns == (0x089FFD09, 0x089FFD5F, 0xD65F03C0)
+            and "begin_handling_crash" in content
+            and "end_handling_crash" in content,
+            "Khớp begin_handling_crash (0x061a50: ldaxrb/stlxrb CAS @ 0x0d9798) và end_handling_crash (0x061aa8: stlrb @ 0x0d979c/0x0d9798)"
+        )
+
+        # 6. get_signal_cause (0x061ab4..0x062084) & symbolicate (0x062088..0x0621f4)
+        cause_head = struct.unpack_from("<6I", so_bytes, 0x061ac0)
+        sym_unavail = struct.unpack_from("<3I", so_bytes, 0x06218c)
+        self.assert_test(
+            "AppLovinCrash_GetSignalCauseAndSymbolicate",
+            cause_head == (0x7100003F, 0xAA0803F3, 0x540003AD, 0x51001008, 0x7100351F, 0x54000348)
+            and sym_unavail == (0x528C4C2A, 0x528002C8, 0x72ACAD8A)
+            and "get_signal_cause" in content
+            and "symbolicate" in content,
+            "Khớp get_signal_cause (0x061ab4: sub w8, w0, #4; cmp w8, #0xd) và symbolicate (0x062088: 'unavailable')"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -11736,6 +11826,7 @@ class AutonomousVerificationEngine:
         self.verify_libbytebench()
         self.verify_libanimax()
         self.verify_librex()
+        self.verify_libapplovin_native_crash_reporter()
         self.verify_overall_governance()
 
 

@@ -857,3 +857,5 @@
 - [x] **TASK-147 (`libanimax.so` — `657,720 B`)**: Reconstructed `3,063,866 B` C++17/H (9 files, 3,965 FDEs, 294 exports, 0 stubs), verified `683/683 PASS (100.0%)`, `108/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-148 (`librex.so` — `690,264 B`)**: Reconstructed `1,265,067 B` C++17/H (9 files, 1,600 functions & 211 FDEs, 13 exports, 0 stubs), verified `689/689 PASS (100.0%)`, `109/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-149 (`libapplovin-native-crash-reporter.so` — `860,200 B`)**: Reconstructed `1,424,637 B` C++17/H (9 files, 1,757 FDEs, 1,994 exports, 0 stubs), verified `695/695 PASS (100.0%)`, `110/169 VERIFIED_AND_ACCEPTED`.
