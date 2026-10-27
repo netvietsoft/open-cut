@@ -1,12 +1,7 @@
-# B?O C?O NGHI?M THU: REPORT_TASK_SO_044_libvcnverifylite
-
-- **Task ID**: `TASK_SO_044_libvcnverifylite`
-- **Th? vi?n m?c ti?u**: `libvcnverifylite.so` (0.03 MB)
-- **Agent th?c hi?n**: `Agent 4 - INTEGRATION/API`
-- **Tr?ng th?i**: `COMPLETED (100%)`
-
-## B?ng ch?ng k? thu?t:
-- Symbols: 39
-- JNI: 0
-- C++ Demangled: 0
-- Th? m?c: `GIAI-MA/libvcnverifylite/`
+# Clean-Room Reconstruction Analysis: `libvcnverifylite.so`
+- **Target**: `140 / 169` (`TASK-179-RECONSTRUCTION-LIBVCNVERIFYLITE` / `TASK_SO_044_libvcnverifylite`)
+- **Binary Size**: `34,640 bytes` (`34,640 B`)
+- **SHA-256**: `9c1a1617357a0b640d2b159060c9d927cfdb4b430d6da55da8664004049fe93f`
+- **Clean-Room C++17 Size**: `244,396 bytes` across `3` files (`0` stubs)
+- **Unwind Table (`.eh_frame_hdr` @ `0x4a48`)**: `8` FDEs covering `0x1010..0x41f0` (`3,192` AArch64 instructions)
+- **JNI Bridge**: `com/ss/mediakit/vcnlib/CustomVerify` (`doVerify([[BLjava/lang/String;Ljava/lang/String;)I`, `_init()V`)

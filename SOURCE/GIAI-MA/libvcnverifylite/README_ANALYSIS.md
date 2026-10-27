@@ -1,14 +1,7 @@
-# BÁO CÁO GIẢI MÃ KỸ THUẬT: libvcnverifylite.so
-
-- **Dung lượng nhị phân**: 0.03 MB (34640 bytes)
-- **Định dạng nhị phân**: ELF (Chuẩn ELF 64-bit)
-- **Phân loại Lõi C++**: `CORE_06_NETWORK`
-- **Tổng số dynamic symbols**: 39
-- **Hàm JNI xuất xưởng (JNI Exports)**: 0
-- **Hàm C++ demangled bóc tách được**: 0
-
-## Danh mục tài liệu đính kèm
-1. `symbols_demangled.json`: Toàn bộ bảng symbol động kèm tên gốc C++ đã giải mã.
-2. `jni_bindings.json`: Danh mục cổng kết nối JNI xuống Native.
-3. `strings_extracted.txt`: Các hằng số, thông điệp log và URI nội bộ.
-4. C++ Header & Pseudocode phục vụ tái cấu trúc trong `NextAI OpenCut`.
+# Clean-Room Reconstruction Analysis: `libvcnverifylite.so`
+- **Target**: `140 / 169` (`TASK-179-RECONSTRUCTION-LIBVCNVERIFYLITE` / `TASK_SO_044_libvcnverifylite`)
+- **Binary Size**: `34,640 bytes` (`34,640 B`)
+- **SHA-256**: `9c1a1617357a0b640d2b159060c9d927cfdb4b430d6da55da8664004049fe93f`
+- **Clean-Room C++17 Size**: `244,396 bytes` across `3` files (`0` stubs)
+- **Unwind Table (`.eh_frame_hdr` @ `0x4a48`)**: `8` FDEs covering `0x1010..0x41f0` (`3,192` AArch64 instructions)
+- **JNI Bridge**: `com/ss/mediakit/vcnlib/CustomVerify` (`doVerify([[BLjava/lang/String;Ljava/lang/String;)I`, `_init()V`)

@@ -14422,6 +14422,80 @@ class AutonomousVerificationEngine:
             "Khớp FDE[40..45] băm PJW/ELF (0x55f0..0x5600), sort_table sentinel 0x7fffffff (0x58cc), 34 exports và 2,770 lệnh .text"
         )
 
+    def verify_libvcnverifylite(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libvcnverifylite.so (ByteDance VCN TLS X.509 Hostname & Certificate Chain Verifier)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libvcnverifylite"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libvcnverifylite.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size > 220 KB
+        self.assert_test(
+            "VcnVerifyLite_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 220000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libvcnverifylite ({total_bytes:,} bytes > 220 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 & 8 FDEs at .eh_frame_hdr 0x4a48
+        fde_count = struct.unpack_from("<I", so_bytes, 0x4A50)[0]
+        self.assert_test(
+            "VcnVerifyLite_BinarySha256AndEhFrame8FDEs",
+            len(so_bytes) == 34640
+            and sha256_hex == "9c1a1617357a0b640d2b159060c9d927cfdb4b430d6da55da8664004049fe93f"
+            and fde_count == 8,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x4a48"
+        )
+
+        # 3. FDE[00] ValidateHostname & RFC 6125 / Punycode 'xn--' (0x104c, ASCII uppercase jump table @ 0x1098..0x10b4)
+        op_104c = struct.unpack_from("<I", so_bytes, 0x104C)[0]
+        op_1098 = struct.unpack_from("<I", so_bytes, 0x1098)[0]
+        op_109c = struct.unpack_from("<I", so_bytes, 0x109C)[0]
+        self.assert_test(
+            "VcnVerifyLite_Rfc6125HostnameAndPunycodeMatcher",
+            op_104c == 0xA9BD57F6 and op_1098 == 0x510185AD and op_109c == 0x710065BF
+            and b"xn--\x00" in so_bytes and "AvCertHostcheck_104c" in content and "ValidateHostname_Inlined_104c" in content,
+            "Khớp FDE[00] ValidateHostname & AvCertHostcheck (0x104c, bảng nhảy chữ hoa ASCII @ 0x1098, Punycode 'xn--')"
+        )
+
+        # 4. FDE[03] InitCustomVerifyClass (0x3418: com/ss/mediakit/vcnlib/CustomVerify, doVerify)
+        op_3418 = struct.unpack_from("<I", so_bytes, 0x3418)[0]
+        self.assert_test(
+            "VcnVerifyLite_InitCustomVerifyJniClass",
+            op_3418 == 0xA9BD57F6
+            and b"com/ss/mediakit/vcnlib/CustomVerify\x00" in so_bytes
+            and b"([[BLjava/lang/String;Ljava/lang/String;)I\x00" in so_bytes
+            and "InitCustomVerifyClass_3418" in content,
+            "Khớp FDE[03] init_clsz (0x3418: com/ss/mediakit/vcnlib/CustomVerify.doVerify)"
+        )
+
+        # 5. FDE[04] vcn_internal_custom_verify_android (0x35bc: GetEnv 0x00010004 @ 0x35ec..0x360c, CRYPTO_BUFFER chain)
+        op_35bc = struct.unpack_from("<I", so_bytes, 0x35BC)[0]
+        op_35ec = struct.unpack_from("<I", so_bytes, 0x35EC)[0]
+        op_360c = struct.unpack_from("<I", so_bytes, 0x360C)[0]
+        self.assert_test(
+            "VcnVerifyLite_InternalCustomVerifyCallback",
+            op_35bc == 0xD10303FF and op_35ec == 0x52800082 and op_360c == 0x72A00022
+            and "VcnInternalCustomVerifyAndroid_35bc" in content,
+            "Khớp FDE[04] vcn_internal_custom_verify_android (0x35bc: JNI_VERSION_1_4 0x00010004 @ 0x35ec..0x360c)"
+        )
+
+        # 6. FDE[05..07] JNI_OnLoad (0x3fec, Dec 20 2024 04:51:21), JNI_OnUnload (0x41ec) & 3,192 .text words
+        op_3fec = struct.unpack_from("<I", so_bytes, 0x3FEC)[0]
+        op_41e8 = struct.unpack_from("<I", so_bytes, 0x41E8)[0]
+        op_41ec = struct.unpack_from("<I", so_bytes, 0x41EC)[0]
+        self.assert_test(
+            "VcnVerifyLite_JniOnLoadAnd3192TextWords",
+            op_3fec == 0xD101C3FF and op_41e8 == 0x17FFFC8C and op_41ec == 0xD65F03C0
+            and b"Dec 20 2024\x00" in so_bytes and "kTextSectionWords_1010" in content,
+            "Khớp FDE[05..07] JNI_OnLoad (0x3fec, Dec 20 2024), _init (0x41e8), JNI_OnUnload (0x41ec) và 3,192 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14566,6 +14640,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_dl()
         self.verify_libnpth_repair()
         self.verify_libnpth_ref_monitor()
+        self.verify_libvcnverifylite()
         self.verify_overall_governance()
 
 

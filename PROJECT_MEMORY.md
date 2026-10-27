@@ -2655,3 +2655,5 @@
 - **[2026-10-27T21:11:55.101803+07:00] Target 138/169 (`libnpth_repair.so`)**: Completed clean-room C++17 reconstruction (`TASK-177`, `324,842 B`, `863/863 PASS`, `138/169 VERIFIED_AND_ACCEPTED`).
 
 - **[2026-10-27T21:39:17.269318+07:00] Target 139/169 (`libnpth_ref_monitor.so`)**: Completed clean-room C++17 reconstruction (`TASK-178`, `273,645 B`, `869/869 PASS`, `139/169 VERIFIED_AND_ACCEPTED`).
+
+- **[2026-10-27 21:49:00] Target 140/169 (`libvcnverifylite.so` — `TASK-179`)**: `VERIFIED_AND_ACCEPTED` (`140/169`, `82.84%`, `875/875 PASS`). Tái tạo đầy đủ RFC 6125/Punycode X.509 hostname matcher (`0x104c`), cầu nối JNI `com/ss/mediakit/vcnlib/CustomVerify` (`init_clsz` @ `0x3418`), và `vcn_internal_custom_verify_android` (`0x35bc..0x3fec`).

@@ -1,18 +1,17 @@
 {
-  "report_id": "REPORT_TASK_SO_044_libvcnverifylite",
   "task_id": "TASK_SO_044_libvcnverifylite",
-  "target_library": "libvcnverifylite.so",
-  "assigned_agent": "Agent 4 - INTEGRATION/API",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 39,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libvcnverifylite",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "governance_task_id": "TASK-179-RECONSTRUCTION-LIBVCNVERIFYLITE",
+  "library": "libvcnverifylite.so",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 34640,
+  "binary_sha256": "9c1a1617357a0b640d2b159060c9d927cfdb4b430d6da55da8664004049fe93f",
+  "cpp17_reconstruction_bytes": 244396,
+  "cpp17_files": [
+    "vcnverifylite.hpp",
+    "vcnverifylite_core.cpp",
+    "vcnverifylite_elf_sections_and_image.cpp"
+  ],
+  "fde_count": 8,
+  "text_instructions": 3192,
+  "stub_count": 0
 }

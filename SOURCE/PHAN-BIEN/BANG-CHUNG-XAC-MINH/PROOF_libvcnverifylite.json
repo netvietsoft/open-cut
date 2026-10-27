@@ -1,0 +1,27 @@
+{
+  "library": "libvcnverifylite.so",
+  "task_id": "TASK-179-RECONSTRUCTION-LIBVCNVERIFYLITE",
+  "so_task_id": "TASK_SO_044_libvcnverifylite",
+  "binary_size_bytes": 34640,
+  "binary_sha256": "9c1a1617357a0b640d2b159060c9d927cfdb4b430d6da55da8664004049fe93f",
+  "reconstruction_files": [
+    "vcnverifylite.hpp",
+    "vcnverifylite_core.cpp",
+    "vcnverifylite_elf_sections_and_image.cpp"
+  ],
+  "reconstruction_total_bytes": 244396,
+  "fde_count": 8,
+  "text_instruction_count": 3192,
+  "stub_count": 0,
+  "opcode_evidence": {
+    "0x104c": "a9bd57f6 (stp x22, x21, [sp, #-0x30]! - validate_hostname / av_cert_hostcheck)",
+    "0x1098": "510185ad 710065bf (sub w13, w13, #0x61; cmp w13, #0x19 - ASCII lowercase to uppercase jump table)",
+    "0x3338": "aa0003e2 aa0103e0 d61f0040 (mov x2, x0; mov x0, x1; br x2 - sk_pop_free_ex trampoline)",
+    "0x3344": "a9bd57fc (stp x28, x21, [sp, #-0x30]! - vcn_verify_log_print)",
+    "0x3418": "a9bd57f6 (stp x22, x21, [sp, #-0x30]! - init_clsz CustomVerify.doVerify)",
+    "0x35bc": "d10303ff (sub sp, sp, #0xc0 - vcn_internal_custom_verify_android)",
+    "0x3fec": "d101c3ff (sub sp, sp, #0x70 - JNI_OnLoad JNI_VERSION_1_4 0x00010004)",
+    "0x41ec": "d65f03c0 (ret - JNI_OnUnload)"
+  },
+  "status": "VERIFIED_AND_ACCEPTED"
+}
