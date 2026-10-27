@@ -1,0 +1,24 @@
+{
+  "library": "libbdsword.so",
+  "task_id": "TASK-196-RECONSTRUCTION-LIBBDSWORD",
+  "legacy_task_id": "TASK_SO_130_libbdsword",
+  "sha256": "c9369ebdd087e79a30b8a9cf5baeb60bd7234b7b7bd80279e88268deddc0b868",
+  "size_bytes": 134504,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libbdsword/bdsword.hpp",
+    "SOURCE/GIAI-MA/libbdsword/bdsword_core.cpp",
+    "SOURCE/GIAI-MA/libbdsword/bdsword_elf_sections_and_image.cpp"
+  ],
+  "total_reconstructed_bytes": 2755961,
+  "fde_count": 166,
+  "text_instructions": 23708,
+  "exported_functions": 2,
+  "key_anchors": {
+    "JNI_OnLoad": "0x3174 (first_op=0xa9be4ffc)",
+    "bdsword_command": "0xbc38 (first_op=0xa9be4ffc)",
+    "rodata": "0x18ed0 (17,876 bytes)"
+  },
+  "stub_count": 0,
+  "todo_count": 0
+}

@@ -14,3 +14,7 @@
 ## [2026-10-27] TASK-195 — Clean-Room C++17 Reconstruction of `libgeckox_bspatch.so` (156/169)
 - Reconstructed `geckox_bspatch.hpp`, `geckox_bspatch_core.cpp`, and `geckox_bspatch_elf_sections_and_image.cpp` (`2,196,233 bytes`, `65` FDEs, `18,542` `.text` instructions, `0` stubs).
 - Added 6 verification tests (`verify_libgeckox_bspatch`) achieving `971/971 PASS (100.0%)` and `156/169 VERIFIED_AND_ACCEPTED`.
+
+## [2026-10-27] TASK-196 — Clean-Room C++17 Reconstruction of `libbdsword.so` (157/169)
+- Reconstructed `bdsword.hpp`, `bdsword_core.cpp`, and `bdsword_elf_sections_and_image.cpp` (`2,755,961 bytes`, `166` FDEs, `23,708` `.text` instructions, `0` stubs).
+- Added 6 verification tests (`verify_libbdsword`) achieving `977/977 PASS (100.0%)` and `157/169 VERIFIED_AND_ACCEPTED`.

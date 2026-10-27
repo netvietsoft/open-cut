@@ -1,0 +1,29 @@
+{
+  "task_id": "TASK-196-RECONSTRUCTION-LIBBDSWORD",
+  "legacy_task_id": "TASK_SO_130_libbdsword",
+  "title": "Clean-Room C++17 Reconstruction of libbdsword.so (Target 157/169)",
+  "assigned_agent": "Agent 3 (Android/Native C++17)",
+  "reviewer_agent": "Agent 13 (Adversary Auditor)",
+  "status": "DONE",
+  "created_at": "2026-10-27T23:36:00+07:00",
+  "target_library": "libbdsword.so",
+  "target_sha256": "c9369ebdd087e79a30b8a9cf5baeb60bd7234b7b7bd80279e88268deddc0b868",
+  "target_size_bytes": 134504,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libbdsword/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbdsword.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_130_libbdsword.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    "Docs/Changelog/CHANGELOG.md"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of 166 FDEs (.eh_frame_hdr @ 0x1d4a4) and 23,708 AArch64 .text instructions (0x1c60..0x18ed0) in bilingual C++17.",
+    "Reconstruct ByteDance BD-Sword Security & Anti-Tamper Command Dispatcher (JNI_OnLoad @ 0x3174, bdsword_command @ 0xbc38, and 17,876-byte .rodata table @ 0x18ed0).",
+    "Zero stubs, total C++17 size > 40 KB, pass adversary_critic_agent.py, verify_reconstruction_suite.py, and native_audit_watchdog.py."
+  ],
+  "completed_at": "2026-10-27T23:39:00+07:00"
+}

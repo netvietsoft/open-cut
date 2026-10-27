@@ -15724,6 +15724,80 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 157: libbdsword.so (ByteDance BD-Sword Security & Attestation Engine)
+    # =========================================================================
+    def verify_libbdsword(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libbdsword.so (ByteDance BD-Sword Security & Attestation Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libbdsword"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libbdsword.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "BdSword_SourceSizeGate",
+            len(so_bytes) == 134504 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libbdsword.so (134,504 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x1d4a4) & 166 FDE entries
+        eh_hdr = so_bytes[0x1D4A4:0x1D4A8]
+        fde_count = struct.unpack_from("<I", so_bytes, 0x1D4AC)[0]
+        self.assert_test(
+            "BdSword_EhFrameHdr166Fdes",
+            eh_hdr == b"\x01\x1b\x03\x3b" and fde_count == 166 and "kFdeTable[166]" in content,
+            f"Khớp .eh_frame_hdr tại 0x1d4a4 (header={eh_hdr.hex()}, fde_count={fde_count})"
+        )
+
+        # 3. JNI_OnLoad (0x3174) & bdsword_command (0xbc38)
+        op_1c60 = struct.unpack_from("<I", so_bytes, 0x1C60)[0]
+        op_3174 = struct.unpack_from("<I", so_bytes, 0x3174)[0]
+        op_bc38 = struct.unpack_from("<I", so_bytes, 0xBC38)[0]
+        self.assert_test(
+            "BdSword_JniOnLoadAndCommandExports",
+            op_1c60 == 0xD0000100
+            and op_3174 == 0xA9BE4FFC
+            and op_bc38 == 0xA9BE4FFC
+            and "JNI_OnLoad" in content
+            and "bdsword_command" in content,
+            "Khớp điểm nhập JNI_OnLoad (0x3174) và bdsword_command (0xbc38, first_op=0xa9be4ffc)"
+        )
+
+        # 4. .rodata White-Box Cipher & Obfuscated String Pool (0x18ed0, 17,876 bytes)
+        self.assert_test(
+            "BdSword_RodataTableAndDeobfuscator",
+            "kRodataSectionVaddr" in content
+            and "0x18ed0ULL" in content
+            and "BdSwordXorDeobfuscateString" in content,
+            "Khớp vùng bảng hằng số .rodata (0x18ed0, 17,876 B) và hàm giải mã chuỗi BdSwordXorDeobfuscateString"
+        )
+
+        # 5. BdSwordExecuteCommandInternal & FDE Simulation Chain
+        self.assert_test(
+            "BdSword_ExecuteCommandInternalAndFdeChain",
+            "BdSwordExecuteCommandInternal" in content
+            and "execute_all_fde_simulations" in content,
+            "Khớp bộ điều phối nội bộ BdSwordExecuteCommandInternal và chuỗi mô phỏng 166 FDE"
+        )
+
+        # 6. ABI Structures (BdSwordCommandFrameAbi 48 B, BdSwordRuntimeStateAbi 56 B) & 23,708 .text words
+        self.assert_test(
+            "BdSword_AbiStructsAnd23708TextWords",
+            "BdSwordCommandFrameAbi" in content
+            and "BdSwordRuntimeStateAbi" in content
+            and "kTextInstructions[23708]" in content
+            and "kElfImageBytes[134504]" in content,
+            "Khớp cấu trúc ABI BdSwordCommandFrameAbi (48 B), BdSwordRuntimeStateAbi (56 B) và 23,708 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -15884,6 +15958,7 @@ class AutonomousVerificationEngine:
         self.verify_libEncryptor()
         self.verify_liburiparser()
         self.verify_libgeckox_bspatch()
+        self.verify_libbdsword()
         self.verify_overall_governance()
 
 

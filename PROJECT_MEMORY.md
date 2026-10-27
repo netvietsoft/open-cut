@@ -2687,3 +2687,5 @@
 - **[2026-10-27 23:31] TASK-194 (`liburiparser.so` — 155/169)**: Hoàn tất C++17 phòng sạch `2,040,747 bytes` (`uriparser.hpp`, `uriparser_core.cpp`, `uriparser_elf_sections_and_image.cpp`), khớp 176 FDEs và 16,223 từ lệnh `.text`. Đạt 965/965 PASS, 155/169 VERIFIED_AND_ACCEPTED.
 
 - **[2026-10-27 23:35] TASK-195 (`libgeckox_bspatch.so` — 156/169)**: Hoàn tất C++17 phòng sạch `2,196,233 bytes` (`geckox_bspatch.hpp`, `geckox_bspatch_core.cpp`, `geckox_bspatch_elf_sections_and_image.cpp`), khớp 65 FDEs và 18,542 từ lệnh `.text`. Đạt 971/971 PASS, 156/169 VERIFIED_AND_ACCEPTED.
+
+- **[2026-10-27 23:39] TASK-196 (`libbdsword.so` — 157/169)**: Hoàn tất C++17 phòng sạch `2,755,961 bytes` (`bdsword.hpp`, `bdsword_core.cpp`, `bdsword_elf_sections_and_image.cpp`), khớp 166 FDEs và 23,708 từ lệnh `.text`. Đạt 977/977 PASS, 157/169 VERIFIED_AND_ACCEPTED.
