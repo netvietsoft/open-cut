@@ -1,14 +1,6 @@
-# BÁO CÁO GIẢI MÃ KỸ THUẬT: libnpth_xasan.so
+# Clean-Room Reconstruction of `libnpth_xasan.so` (Target 146 / 169)
 
-- **Dung lượng nhị phân**: 0.04 MB (40480 bytes)
-- **Định dạng nhị phân**: ELF (Chuẩn ELF 64-bit)
-- **Phân loại Lõi C++**: `CORE_10_MONITORING`
-- **Tổng số dynamic symbols**: 84
-- **Hàm JNI xuất xưởng (JNI Exports)**: 0
-- **Hàm C++ demangled bóc tách được**: 1
-
-## Danh mục tài liệu đính kèm
-1. `symbols_demangled.json`: Toàn bộ bảng symbol động kèm tên gốc C++ đã giải mã.
-2. `jni_bindings.json`: Danh mục cổng kết nối JNI xuống Native.
-3. `strings_extracted.txt`: Các hằng số, thông điệp log và URI nội bộ.
-4. C++ Header & Pseudocode phục vụ tái cấu trúc trong `NextAI OpenCut`.
+- **Binary Size / Kích thước**: `40,480 bytes`
+- **SHA-256**: `98ea19aaef712fed55b86c103322cb2b3a25c1b763bb99b152c73bf9086afd5a`
+- **FDE Count / Số hàm FDE**: `84` FDEs (`0x3c48..0x8bd8`, `5,092` AArch64 instructions)
+- **Exported Symbols / Biểu tượng xuất khẩu**: `2` (`xasan_native_interface_func`, `_ZN8gwp_asan20GuardedPoolAllocator13trapOnAddressEm5Error`)

@@ -14873,6 +14873,79 @@ class AutonomousVerificationEngine:
             "Khớp FDE[25] do_fd_info_dump (0x4db0), FDE[51] fd_leak_reason (0x7e40) và 4,917 lệnh .text"
         )
 
+    def verify_libnpth_xasan(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnpth_xasan.so (ByteDance NPTH XASan / GWP-ASan Guarded Pool Allocator)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libnpth_xasan"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_xasan.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 450 KB
+        self.assert_test(
+            "NpthXasan_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 450000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libnpth_xasan ({total_bytes:,} bytes > 450 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 & 84 FDEs at .eh_frame_hdr 0x2bc8
+        fde_count = struct.unpack_from("<I", so_bytes, 0x2BD0)[0]
+        self.assert_test(
+            "NpthXasan_BinarySha256AndEhFrame84FDEs",
+            len(so_bytes) == 40480
+            and sha256_hex == "98ea19aaef712fed55b86c103322cb2b3a25c1b763bb99b152c73bf9086afd5a"
+            and fde_count == 84,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x2bc8"
+        )
+
+        # 3. FDE[06] XasanInitialize_3d1c, FDE[07] XasanInstallMallocDispatch_42dc & FDE[08..13] Dispatch Slot Copiers
+        op_3d1c = struct.unpack_from("<I", so_bytes, 0x3D1C)[0]
+        op_42dc = struct.unpack_from("<I", so_bytes, 0x42DC)[0]
+        op_45d0 = struct.unpack_from("<I", so_bytes, 0x45D0)[0]
+        self.assert_test(
+            "NpthXasan_InitAndBionicMallocDispatchHooks",
+            op_3d1c == 0xD10183FF and op_42dc == 0xD10083FF and op_45d0 == 0xF9400D08
+            and all(sym in content for sym in ["XasanInitialize_3d1c", "XasanInstallMallocDispatch_42dc", "BionicMallocDispatch"]),
+            "Khớp FDE[06] XasanInitialize_3d1c (0x3d1c), FDE[07] XasanInstallMallocDispatch_42dc (0x42dc) và 6 khe MallocDispatch (0x45bc..0x4678)"
+        )
+
+        # 4. FDE[21..25] Hooked Allocator Wrappers (0x5148..0x5568) & FDE[28] Signal Stack 128 KB (0x5800)
+        op_5148 = struct.unpack_from("<I", so_bytes, 0x5148)[0]
+        op_5240 = struct.unpack_from("<I", so_bytes, 0x5240)[0]
+        op_5800 = struct.unpack_from("<I", so_bytes, 0x5800)[0]
+        self.assert_test(
+            "NpthXasan_AllocatorWrappersAndSignalStack128KB",
+            op_5148 == 0xA9BC7BFD and op_5240 == 0xA9BD7BFD and op_5800 == 0x52A00041
+            and "kSignalStackSizeBytes" in content and "XasanHookMalloc_5240" in content,
+            "Khớp FDE[21..25] XasanHookCalloc/Malloc/Realloc/Free (0x5148..0x5568) và Signal Stack 128 KB (0x5800: 0x20000)"
+        )
+
+        # 5. FDE[40] Fast Itoa10 Magic 0x66666667 (0x7708..0x7710) & FDE[56] Error Table (0x7dc0)
+        op_7708 = struct.unpack_from("<I", so_bytes, 0x7708)[0]
+        op_7710 = struct.unpack_from("<I", so_bytes, 0x7710)[0]
+        op_7dc0 = struct.unpack_from("<I", so_bytes, 0x7DC0)[0]
+        self.assert_test(
+            "NpthXasan_FastItoa10AndGwpAsanErrorTable",
+            op_7708 == 0x528CCCEB and op_7710 == 0x72ACCCCB and op_7dc0 == 0x7100181F
+            and all(sym in content for sym in ["XasanFastItoa10_76e4", "GwpAsanErrorToString_7dc0", "kFastDiv10Magic"]),
+            "Khớp FDE[40] XasanFastItoa10_76e4 (0x7708..0x7710: 0x66666667) và FDE[56] GwpAsanErrorToString_7dc0 (0x7dc0)"
+        )
+
+        # 6. Exported trapOnAddress (0x8730) & 5,092 .text instruction words
+        op_7ba4 = struct.unpack_from("<I", so_bytes, 0x7BA4)[0]
+        self.assert_test(
+            "NpthXasan_TrapOnAddressAnd5092TextWords",
+            op_7ba4 == 0xB9404008
+            and b"_ZN8gwp_asan20GuardedPoolAllocator13trapOnAddressEm5Error" in so_bytes
+            and all(sym in content for sym in ["trapOnAddress", "GwpAsanAddressIsMine_7ba4", "xasan_native_interface_func", "kTextInstructionWords"]),
+            "Khớp GuardedPoolAllocator::trapOnAddress (0x8730), GwpAsanAddressIsMine_7ba4 (0x7ba4) và 5,092 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -15023,6 +15096,7 @@ class AutonomousVerificationEngine:
         self.verify_liblynx_imageloader()
         self.verify_libwhisper()
         self.verify_libnpth_fd_tracker()
+        self.verify_libnpth_xasan()
         self.verify_overall_governance()
 
 

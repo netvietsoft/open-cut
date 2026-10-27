@@ -1,0 +1,29 @@
+{
+  "task_id": "TASK-185-RECONSTRUCTION-LIBNPTH-XASAN",
+  "title": "Clean-room C++17 reconstruction of libnpth_xasan.so (ByteDance NPTH XASan / GWP-ASan Guarded Pool Allocator & Bionic Malloc Dispatch Interceptor)",
+  "status": "done",
+  "assigned_agent": "Agent 3 (Frontend/Android Native JNI & C++ Engine)",
+  "reviewer_agent": "Agent 13 (Adversary Auditor)",
+  "target_library": "libnpth_xasan.so",
+  "binary_size_bytes": 40480,
+  "binary_sha256": "98ea19aaef712fed55b86c103322cb2b3a25c1b763bb99b152c73bf9086afd5a",
+  "reconstructed_cpp_bytes": 729404,
+  "verification_passed": 911,
+  "verification_failed": 0,
+  "verified_libraries_count": 146,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libnpth_xasan/**",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_081_libnpth_xasan.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_081_libnpth_xasan.md",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_xasan.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_xasan.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "Docs/Changelog/CHANGELOG-TASK-185-LIBNPTH-XASAN.md",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    ".ai/**"
+  ],
+  "completed_at": "2026-10-27T22:39:12+07:00"
+}

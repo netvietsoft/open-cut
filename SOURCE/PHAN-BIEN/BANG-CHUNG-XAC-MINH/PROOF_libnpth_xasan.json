@@ -1,0 +1,13 @@
+{
+  "library": "libnpth_xasan.so",
+  "task_id": "TASK-185-RECONSTRUCTION-LIBNPTH-XASAN",
+  "report_id": "TASK_SO_081_libnpth_xasan",
+  "binary_size_bytes": 40480,
+  "binary_sha256": "98ea19aaef712fed55b86c103322cb2b3a25c1b763bb99b152c73bf9086afd5a",
+  "eh_frame_hdr_va": "0x00002bc8",
+  "fde_count": 84,
+  "text_va_range": "0x00003c48..0x00008bd8",
+  "text_instruction_count": 5092,
+  "reconstructed_cpp_bytes": 729404,
+  "status": "VERIFIED_AND_ACCEPTED"
+}

@@ -929,3 +929,5 @@
 - [x] **TASK-183 (`libwhisper.so` — Target 144/169, `38,584 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`663,568 B`), đạt `144/169 VERIFIED_AND_ACCEPTED (85.21%)` và `899/899 PASS (100.0%)`.
 
 - [x] **TASK-184 (`libnpth_fd_tracker.so` — Target 145/169, `39,472 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`705,678 B`), đạt `145/169 VERIFIED_AND_ACCEPTED (85.80%)` và `905/905 PASS (100.0%)`.
+
+- [x] **TASK-185 (`libnpth_xasan.so` — Target 146/169, `40,480 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`729,404 B`), đạt `146/169 VERIFIED_AND_ACCEPTED (86.39%)` và `911/911 PASS (100.0%)`.
