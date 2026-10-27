@@ -897,3 +897,5 @@
 - [x] **TASK-167 (`libkomprese-decompressor.so` — `15,800 B`)**: Reconstructed `206,002 B` C++17/H (5 files, 9 FDEs, 1 export, 0 stubs), verified `803/803 PASS (100.0%)`, `128/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-168 (`libnpth_tls_monitor.so` — `15,904 B`)**: Reconstructed `126,829 B` C++17/H (4 files, 18 FDEs, 1 export, 0 stubs), verified `809/809 PASS (100.0%)`, `129/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-169 (`libnpth_logcat.so` — `16,856 B`)**: Reconstructed `143,949 B` C++17/H (4 files, 10 FDEs, PIE executable, 0 stubs), verified `815/815 PASS (100.0%)`, `130/169 VERIFIED_AND_ACCEPTED`.

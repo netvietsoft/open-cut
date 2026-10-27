@@ -1,18 +1,22 @@
 {
   "report_id": "REPORT_TASK_SO_089_libnpth_logcat",
   "task_id": "TASK_SO_089_libnpth_logcat",
+  "governance_task_id": "TASK-169-RECONSTRUCTION-LIBNPTH-LOGCAT",
   "target_library": "libnpth_logcat.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 42,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnpth_logcat",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "library": "libnpth_logcat.so",
+  "sha256": "241f75ebe9208e680c0d0e77c6f23c2f87d7ba9c2d446ca5c75a9df2ab8319e8",
+  "size_bytes": 16856,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "reconstructed_code_bytes": 143949,
+  "fde_count": 10,
+  "instruction_count": 1712,
+  "files_generated": [
+    "npth_logcat.h",
+    "npth_logcat_main_and_dumper.cpp",
+    "npth_logcat_safe_printf.cpp",
+    "npth_logcat_rodata_and_text_image.cpp",
+    "README_ANALYSIS.md"
+  ],
+  "acceptance_criteria_passed": true
 }

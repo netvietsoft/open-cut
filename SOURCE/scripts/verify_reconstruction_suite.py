@@ -13512,6 +13512,102 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # KIỂM CHỨNG ĐỐI KHÁNG TARGET 130: LIBNPTH_LOGCAT.SO (NPTH OUT-OF-PROCESS LOGCAT DUMPER)
+    # =========================================================================
+    def verify_libnpth_logcat(self):
+        import hashlib
+        import struct
+        print("\n[130] Đang kiểm chứng libnpth_logcat.so (ByteDance NPTH Out-of-Process Logcat Dumper)...")
+        logcat_dir = GIAIMA_DIR / "libnpth_logcat"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_logcat.so"
+
+        files = [
+            "npth_logcat.h",
+            "npth_logcat_main_and_dumper.cpp",
+            "npth_logcat_safe_printf.cpp",
+            "npth_logcat_rodata_and_text_image.cpp",
+        ]
+        all_exist = all((logcat_dir / f).exists() for f in files)
+        total_size = sum((logcat_dir / f).stat().st_size for f in files if (logcat_dir / f).exists())
+
+        # 1. File existence & size > 120 KB (> 40 KB gate) & zero old stubs
+        self.assert_test(
+            "NpthLogcat_CleanRoomFilesAndSize",
+            all_exist and total_size > 120000 and not (logcat_dir / "npth_logcat_pseudocode.cpp").exists(),
+            f"Đầy đủ 4 file C++17/H trong GIAI-MA/libnpth_logcat ({total_size:,} bytes > 120 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (16,856 B), .interp "/system/bin/linker64" @ 0x0270, and .eh_frame_hdr 10 FDEs @ 0x1454
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x145c)[0]
+        interp_str = so_bytes[0x0270:0x0284].decode("ascii", errors="ignore")
+        self.assert_test(
+            "NpthLogcat_BinarySha256PieInterpAnd10FDEs",
+            len(so_bytes) == 16856
+            and sha256_hex == "241f75ebe9208e680c0d0e77c6f23c2f87d7ba9c2d446ca5c75a9df2ab8319e8"
+            and interp_str == "/system/bin/linker64"
+            and eh_fde_count == 10,
+            f"Khớp kích thước 16,856 bytes, SHA-256 ({sha256_hex[:16]}...), PIE .interp '{interp_str}' và 10 FDEs tại .eh_frame_hdr 0x1454"
+        )
+
+        content = ""
+        for f in files:
+            fp = logcat_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[05] main (0x2180..0x279c): argc >= 4 check (0x21a4), SA_SIGINFO|SA_RESETHAND=0x08000004 (0x21f8..0x21fc), "/logcat.txt" (0x230c), liblog.so & execlp fallback
+        argc_cmp = struct.unpack_from("<I", so_bytes, 0x21a4)[0]
+        sa_flag1 = struct.unpack_from("<I", so_bytes, 0x21f8)[0]
+        sa_flag2 = struct.unpack_from("<I", so_bytes, 0x21fc)[0]
+        open_flg = struct.unpack_from("<I", so_bytes, 0x235c)[0]
+        self.assert_test(
+            "NpthLogcat_MainSignalSetupAndLiblogLoader",
+            argc_cmp == 0x7100101F and sa_flag1 == 0x52800088 and sa_flag2 == 0x72A10008 and open_flg == 0x52800841
+            and b"/system/bin/logcat\x00" in so_bytes and b"android_logger_list_read\x00" in so_bytes
+            and b"android_log_processBinaryLogBuffer\x00" in so_bytes
+            and "RunNpthLogcatMain" in content,
+            "Khớp FDE[05] main (0x2180): cmp argc,#4 (0x21a4), sa_flags=0x08000004 (0x21f8), open O_RDWR|O_CREAT=0x42 (0x235c), nạp liblog.so & execlp fallback"
+        )
+
+        # 4. FDE[06] dump_log_buffer (0x279c..0x2bfc): 1-in-500 fstat hash (0x26E978D5 @ 0x2a60, 0x010624DC @ 0x280c, ror #2 @ 0x2a70) & 0xAF000 (716,800 B @ 0x2a94) cap
+        m500_add_lo = struct.unpack_from("<I", so_bytes, 0x280c)[0]
+        m500_mul_lo = struct.unpack_from("<I", so_bytes, 0x2a60)[0]
+        m500_ror2   = struct.unpack_from("<I", so_bytes, 0x2a70)[0]
+        cap_af000   = struct.unpack_from("<I", so_bytes, 0x2a94)[0]
+        self.assert_test(
+            "NpthLogcat_Mod500FstatSamplingAndMaxFileSize",
+            m500_add_lo == 0x52849B99 and m500_mul_lo == 0x528F1AA8 and m500_ror2 == 0x13880908 and cap_af000 == 0xF142BD1F
+            and "ShouldCheckLogFileSizeAtLine" in content and "kMaxLogFileSizeBytes" in content
+            and "ParseRawLoggerPacket" in content,
+            "Khớp thuật toán nhân băm lấy mẫu fstat mỗi 500 dòng (0x26E978D5 @ 0x2a60, 0x010624DC @ 0x280c, ror #2 @ 0x2a70) và giới hạn tệp 0xAF000 (716,800 B @ 0x2a94)"
+        )
+
+        # 5. FDE[07] log_status_printf (0x2bfc..0x2dec) & FDE[06] ns->ms reciprocal math (0x431BDE83 @ 0x2a0c, 0x20C49BA5E353F7CF @ 0x2c88, 0x8888888888888889 @ 0x2cb0)
+        ns_lo = struct.unpack_from("<I", so_bytes, 0x2a0c)[0]
+        ns_hi = struct.unpack_from("<I", so_bytes, 0x2a10)[0]
+        hr_60 = struct.unpack_from("<I", so_bytes, 0x2cb0)[0]
+        self.assert_test(
+            "NpthLogcat_ReciprocalTimestampDivisionMath",
+            ns_lo == 0x529BD069 and ns_hi == 0x72A86369 and hr_60 == 0xB201E3E8
+            and "NanosecondsToMilliseconds" in content and "FormatStatusTimestamp" in content,
+            "Khớp phép chia nguyên nghịch đảo: ns/1e6 (0x431BDE83 >> 50 @ 0x2a0c), us/1000 (0x20C49BA5E353F7CF @ 0x2c88) và HH:MM:SS (0x8888888888888889 @ 0x2cb0)"
+        )
+
+        # 6. FDE[08] crash_signal_handler (0x2dec, SYS_rt_tgsigqueueinfo=240 @ 0x2f9c, SYS_clone=220 @ 0x3004, alarm(30) @ 0x306c) & 1,712 .text words
+        sys_240  = struct.unpack_from("<I", so_bytes, 0x2f9c)[0]
+        sys_220  = struct.unpack_from("<I", so_bytes, 0x3004)[0]
+        alarm_30 = struct.unpack_from("<I", so_bytes, 0x306c)[0]
+        self.assert_test(
+            "NpthLogcat_CrashSignalHandlerAnd1712TextImage",
+            sys_240 == 0x52801E00 and sys_220 == 0x52801B80 and alarm_30 == 0x528003C0
+            and "ResolveSiblingLibraryPath" in content
+            and "kNpthLogcatTextWords1712" in content and "kNpthLogcatRodata1267" in content,
+            "Khớp FDE[08] signal handler (syscall 240 rt_tgsigqueueinfo @ 0x2f9c, syscall 220 clone @ 0x3004, alarm(30) @ 0x306c), FDE[09] (0x30f0) và 1,712 lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -13645,6 +13741,7 @@ class AutonomousVerificationEngine:
         self.verify_libtobEmbedPagEncrypt()
         self.verify_libkomprese_decompressor()
         self.verify_libnpth_tls_monitor()
+        self.verify_libnpth_logcat()
         self.verify_overall_governance()
 
 
