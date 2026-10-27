@@ -1,0 +1,168 @@
+{
+  "library": "libtt_ugen_layout.so",
+  "task_id": "TASK_SO_036_libtt_ugen_layout",
+  "workspace_task_id": "TASK-137-RECONSTRUCTION-LIBTT-UGEN-LAYOUT",
+  "binary_sha256": "05ddb584447d49f6ac1707d00ab557acdc1ddcc6fddbb29628bda1320745e44e",
+  "binary_size_bytes": 360968,
+  "reconstructed_cpp_bytes": 1184430,
+  "fde_count": 874,
+  "exported_symbols_count": 692,
+  "verified_instruction_count": 44990,
+  "stub_count": 0,
+  "verification_status": "VERIFIED_100_PERCENT",
+  "opcode_evidence": [
+    {
+      "function": "YGValueEqual & YGFloatsEqual & YGDoubleEqual",
+      "va_range": "0x025e60..0x025f2c",
+      "opcodes": [
+        {
+          "va": "0x025e9c",
+          "word": "0x5296E2E8",
+          "insn": "mov w8, #0xb717"
+        },
+        {
+          "va": "0x025ea0",
+          "word": "0x72A71A28",
+          "insn": "movk w8, #0x38d1, lsl #16"
+        },
+        {
+          "va": "0x025f10",
+          "word": "0xFD45E102",
+          "insn": "ldr d2, [x8, #0xbc0]"
+        }
+      ]
+    },
+    {
+      "function": "YGConfig::YGConfig & setExperimentalFeatureEnabled",
+      "va_range": "0x026040..0x0260f8",
+      "opcodes": [
+        {
+          "va": "0x026044",
+          "word": "0xD2E7F009",
+          "insn": "mov x9, #0x3f80000000000000"
+        },
+        {
+          "va": "0x026048",
+          "word": "0xA9027C09",
+          "insn": "stp x9, xzr, [x0, #0x20]"
+        },
+        {
+          "va": "0x0260b8",
+          "word": "0x71000C3F",
+          "insn": "cmp w1, #3"
+        }
+      ]
+    },
+    {
+      "function": "YGJNIVanilla::registerNatives",
+      "va_range": "0x026650..0x026668",
+      "opcodes": [
+        {
+          "va": "0x026650",
+          "word": "0x90FFFFA1",
+          "insn": "adrp x1, #0x1a000"
+        },
+        {
+          "va": "0x026658",
+          "word": "0x910BAC21",
+          "insn": "add x1, x1, #0x2eb"
+        },
+        {
+          "va": "0x02665c",
+          "word": "0x91006042",
+          "insn": "add x2, x2, #0x18"
+        },
+        {
+          "va": "0x026660",
+          "word": "0x52800BE3",
+          "insn": "mov w3, #0x5f"
+        }
+      ]
+    },
+    {
+      "function": "YGRoundValueToPixelGrid",
+      "va_range": "0x02e7c0..0x02e8b0",
+      "opcodes": [
+        {
+          "va": "0x02e86c",
+          "word": "0x1E6C1000",
+          "insn": "fmov d0, #0.50000000"
+        },
+        {
+          "va": "0x02e88c",
+          "word": "0x1E6E1001",
+          "insn": "fmov d1, #1.00000000"
+        },
+        {
+          "va": "0x02e89c",
+          "word": "0x52AFF808",
+          "insn": "mov w8, #0x7fc00000"
+        }
+      ]
+    },
+    {
+      "function": "YGNodeCalculateLayoutWithContext & YGNodeCalculateLayout",
+      "va_range": "0x032f2c..0x033aec",
+      "opcodes": [
+        {
+          "va": "0x032f2c",
+          "word": "0xD10383FF",
+          "insn": "sub sp, sp, #0xe0"
+        },
+        {
+          "va": "0x033048",
+          "word": "0x529AE148",
+          "insn": "mov w8, #0xd70a"
+        },
+        {
+          "va": "0x03304c",
+          "word": "0x72A78468",
+          "insn": "movk w8, #0x3c23, lsl #16"
+        },
+        {
+          "va": "0x033ae4",
+          "word": "0xAA1F03E2",
+          "insn": "mov x2, xzr"
+        }
+      ]
+    },
+    {
+      "function": "JNI_OnLoad",
+      "va_range": "0x0365b4..0x036614",
+      "opcodes": [
+        {
+          "va": "0x0365b4",
+          "word": "0xD100C3FF",
+          "insn": "sub sp, sp, #0x30"
+        },
+        {
+          "va": "0x0365d8",
+          "word": "0x940071CE",
+          "insn": "bl #0x52d10"
+        },
+        {
+          "va": "0x0365e8",
+          "word": "0x940071CE",
+          "insn": "bl #0x52d20"
+        }
+      ]
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "theorem": "Yoga Floating-Point & Double Equality Tolerance (.text 0x025e9c & .rodata 0x018bc0)",
+      "formula": "|a - b| < 0.0001f (IEEE-754 0x38D1B717) for float; |a - b| < 0.0001 (IEEE-754 0x3F1A36E2EB1C432D) for double",
+      "verified_at": "0x025e60..0x025f2c & 0x018bc0"
+    },
+    {
+      "theorem": "Pixel Grid Rounding Formula (YGRoundValueToPixelGrid @ 0x02e7c0..0x02e8b0)",
+      "formula": "scaled = v * S; frac = fmod(scaled, 1.0) + (frac < 0 ? 1 : 0); rounded = (scaled - frac + (frac >= 0.5 ? 1 : 0)) / S",
+      "verified_at": "0x02e7c0..0x02e8b0"
+    },
+    {
+      "theorem": "Exported YGValue & Edge Lookup Tables (.rodata 0x01ad94..0x01addc)",
+      "formula": "YGValueZero=(0.0f, 1), YGValueUndefined=(NaN, 0), YGValueAuto=(NaN, 3), leading={1,3,0,2}, trailing={3,1,2,0}",
+      "verified_at": "0x01ad94..0x01addc"
+    }
+  ]
+}

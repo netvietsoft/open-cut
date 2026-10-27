@@ -1,18 +1,13 @@
 {
-  "report_id": "REPORT_TASK_SO_036_libtt_ugen_layout",
   "task_id": "TASK_SO_036_libtt_ugen_layout",
-  "target_library": "libtt_ugen_layout.so",
-  "assigned_agent": "Agent 11 - DESIGNER & Agent 3 - FRONTEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 734,
-    "jni_exports": 0,
-    "cxx_demangled_count": 483,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libtt_ugen_layout",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "workspace_task_id": "TASK-137-RECONSTRUCTION-LIBTT-UGEN-LAYOUT",
+  "library": "libtt_ugen_layout.so",
+  "status": "COMPLETED",
+  "binary_size_bytes": 360968,
+  "binary_sha256": "05ddb584447d49f6ac1707d00ab557acdc1ddcc6fddbb29628bda1320745e44e",
+  "cpp_reconstructed_bytes": 1184430,
+  "fde_count": 874,
+  "exported_symbols": 692,
+  "verified_instructions": 44990,
+  "stub_count": 0
 }

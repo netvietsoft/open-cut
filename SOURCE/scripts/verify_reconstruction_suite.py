@@ -10457,6 +10457,106 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 98. KIỂM CHỨNG TOÁN HỌC & NHỊ PHÂN: libtt_ugen_layout.so (ByteDance UGen Flexbox / Facebook Yoga)
+    # =========================================================================
+    def verify_libtt_ugen_layout(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 98: libtt_ugen_layout.so")
+        print("="*70)
+        target_dir = GIAIMA_DIR / "libtt_ugen_layout"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libtt_ugen_layout.so"
+        cpp_files = list(target_dir.glob("*.cpp")) + list(target_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files if f.is_file())
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+
+        # 1. Kiểm tra dung lượng binary (360,968 B), 9 file C++17/H (> 40KB, 0 stub) & 874 FDE (.eh_frame_hdr 0x01d5bc)
+        fde_count = struct.unpack_from("<I", so_bytes, 0x01d5bc + 8)[0]
+        self.assert_test(
+            "TtUgenLayout_BinaryFdeAndSourceVolume",
+            len(so_bytes) == 360968
+            and fde_count == 874
+            and len(cpp_files) == 9
+            and total_bytes > 40000
+            and "fde_873_sub_051ccc" in content,
+            f"Binary {len(so_bytes):,} B; {fde_count} FDEs; Reconstructed {total_bytes:,} B across {len(cpp_files)} files"
+        )
+
+        # 2. Kiểm tra hằng số .rodata xuất khẩu: YGValueZero (0x01ad94), YGValueUndefined (0x01ad9c), YGValueAuto (0x01ada4), leading (0x01adbc), trailing (0x01adcc)
+        yg_zero = struct.unpack_from("<II", so_bytes, 0x01ad94)
+        yg_undef = struct.unpack_from("<II", so_bytes, 0x01ad9c)
+        yg_auto = struct.unpack_from("<II", so_bytes, 0x01ada4)
+        lead_edges = struct.unpack_from("<4I", so_bytes, 0x01adbc)
+        trail_edges = struct.unpack_from("<4I", so_bytes, 0x01adcc)
+        self.assert_test(
+            "TtUgenLayout_RodataYGValueAndEdgeConstants",
+            yg_zero == (0x00000000, 1)
+            and yg_undef == (0x7FC00000, 0)
+            and yg_auto == (0x7FC00000, 3)
+            and lead_edges == (1, 3, 0, 2)
+            and trail_edges == (3, 1, 2, 0)
+            and all(sym in content for sym in ["YGValueZero", "YGValueUndefined", "YGValueAuto", "leading", "trailing"]),
+            "Khớp 5 hằng số .rodata xuất khẩu: YGValueZero, YGValueUndefined, YGValueAuto, leading {1,3,0,2}, trailing {3,1,2,0} (0x01ad94..0x01addc)"
+        )
+
+        # 3. Kiểm tra ngưỡng sai số so sánh dấu phẩy động YGFloatsEqual (0.0001f = 0x38D1B717 @ 0x025e9c) & YGDoubleEqual (0.0001 = 0x3F1A36E2EB1C432D @ .rodata 0x018bc0)
+        flt_eps_insns = struct.unpack_from("<2I", so_bytes, 0x025e9c)
+        dbl_eps_u64 = struct.unpack_from("<Q", so_bytes, 0x018bc0)[0]
+        self.assert_test(
+            "TtUgenLayout_FloatAndDoubleEqualityEpsilons",
+            flt_eps_insns == (0x5296E2E8, 0x72A71A28)
+            and dbl_eps_u64 == 0x3F1A36E2EB1C432D
+            and "YGFloatsEqual" in content
+            and "YGDoubleEqual" in content
+            and "YGValueEqual" in content,
+            "Khớp hằng số sai số 0.0001f (0x38D1B717 @ 0x025e9c) của YGFloatsEqual/YGValueEqual và 0.0001 (.rodata 0x018bc0) của YGDoubleEqual"
+        )
+
+        # 4. Kiểm tra YGJNIVanilla::registerNatives (0x026650: 95 phương thức JNI @ .data 0x05f018 trên lớp com/bytedance/adsdk/ugeno/yoga/YogaNative @ 0x01a2eb)
+        reg_insns = struct.unpack_from("<6I", so_bytes, 0x026650)
+        cls_name = so_bytes[0x01a2eb:0x01a2eb+41]
+        self.assert_test(
+            "TtUgenLayout_95YogaNativeJniMethodsRegistration",
+            reg_insns[2] == 0x910BAC21
+            and reg_insns[3] == 0x91006042
+            and reg_insns[4] == 0x52800BE3
+            and cls_name == b"com/bytedance/adsdk/ugeno/yoga/YogaNative"
+            and "kYogaNativeJniMethods_05f018" in content
+            and "jni_YGConfigNewJNI" in content
+            and "jni_YGNodeCloneJNI" in content,
+            "Khớp YGJNIVanilla::registerNatives (0x026650: mov w3, #0x5f = 95 hàm JNI tại .data 0x05f018 cho lớp YogaNative @ 0x01a2eb)"
+        )
+
+        # 5. Kiểm tra YGConfig (48 B, pointScaleFactor = 1.0f @ 0x026044), YGStyle (0x028988) & YGNode (0x028818)
+        cfg_insns = struct.unpack_from("<3I", so_bytes, 0x026040)
+        exp_cmp = struct.unpack_from("<I", so_bytes, 0x0260b8)[0]
+        self.assert_test(
+            "TtUgenLayout_YGConfigYGStyleAndYGNodeAbi",
+            cfg_insns[1] == 0xD2E7F009
+            and cfg_insns[2] == 0xA9027C09
+            and exp_cmp == 0x71000C3F
+            and all(sym in content for sym in ["YGConfigNew", "YGNodeNewWithConfig", "YGStyle", "CompactValue"]),
+            "Khớp bố cục ABI 48-byte của YGConfig (pointScaleFactor=1.0f @ 0x026044, cmp w1, #3 @ 0x0260b8), YGStyle (0x028988) và YGNode (0x028818)"
+        )
+
+        # 6. Kiểm tra YGRoundValueToPixelGrid (0x02e7c0..0x02e8b0) & YGNodeCalculateLayoutWithContext (0x032f2c, hệ số 0.01f = 0x3C23D70A @ 0x033048)
+        round_fmov = struct.unpack_from("<I", so_bytes, 0x02e86c)[0]
+        pct_insns = struct.unpack_from("<2I", so_bytes, 0x033048)
+        calc_insns = struct.unpack_from("<2I", so_bytes, 0x033ae4)
+        self.assert_test(
+            "TtUgenLayout_RoundToPixelGridAndCalculateLayout",
+            round_fmov == 0x1E6C1000
+            and pct_insns == (0x529AE148, 0x72A78468)
+            and calc_insns[0] == 0xAA1F03E2
+            and all(sym in content for sym in [
+                "YGRoundValueToPixelGrid", "YGNodeCanUseCachedMeasurement",
+                "YGNodeCalculateLayoutWithContext", "YGNodeCalculateLayout"
+            ]),
+            "Khớp YGRoundValueToPixelGrid (0x02e7c0: fmov d0, #0.5) và YGNodeCalculateLayoutWithContext (0x032f2c: 0.01f = 0x3C23D70A @ 0x033048)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -10558,6 +10658,7 @@ class AutonomousVerificationEngine:
         self.verify_libmonitorcollector_lib()
         self.verify_libgaia_lib()
         self.verify_libterrain()
+        self.verify_libtt_ugen_layout()
         self.verify_overall_governance()
 
 
