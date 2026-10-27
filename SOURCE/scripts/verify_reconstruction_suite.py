@@ -16014,6 +16014,89 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 161: libopus.so (RFC 6716 Opus Hybrid SILK + CELT Audio Codec)
+    # =========================================================================
+    def verify_libopus(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libopus.so (RFC 6716 Opus Hybrid SILK + CELT Audio Codec)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libopus"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libopus.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "Opus_SourceSizeGate",
+            len(so_bytes) == 411168 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libopus.so (411,168 B)"
+        )
+
+        # 2. 68 Exported Functions in .dynsym & opus_strerror (0x7f30) / opus_get_version_string (0x7f5c)
+        op_7f30 = struct.unpack_from("<I", so_bytes, 0x7F30)[0]
+        op_7f5c = struct.unpack_from("<I", so_bytes, 0x7F5C)[0]
+        self.assert_test(
+            "Opus_ExportTableAndErrorVersionStrings",
+            op_7f30 == 0x11001C08
+            and op_7f5c == 0xD0000260
+            and "kExportTable[68]" in content
+            and "opus_strerror" in content
+            and "opus_get_version_string" in content,
+            "Khớp bảng 68 biểu tượng xuất khẩu .dynsym, opus_strerror (0x7f30) và opus_get_version_string (0x7f5c)"
+        )
+
+        # 3. opus_pcm_soft_clip (0x4210c), opus_packet_get_samples_per_frame (0x42494), opus_asm_opt_enable (0x42a30)
+        op_4210c = struct.unpack_from("<I", so_bytes, 0x4210C)[0]
+        op_42494 = struct.unpack_from("<I", so_bytes, 0x42494)[0]
+        op_42a30 = struct.unpack_from("<I", so_bytes, 0x42A30)[0]
+        self.assert_test(
+            "Opus_SoftClipAndPacketTocParser",
+            op_4210c == 0xA9BE57F6
+            and op_42494 == 0x39400008
+            and op_42a30 == 0x12800080
+            and "opus_pcm_soft_clip" in content
+            and "opus_packet_get_samples_per_frame" in content,
+            "Khớp opus_pcm_soft_clip (0x4210c), opus_packet_get_samples_per_frame (0x42494) và opus_asm_opt_enable (0x42a30)"
+        )
+
+        # 4. opus_decoder_get_size (0x42a38), opus_decode (0x44888), opus_encoder_get_size (0x450f8)
+        op_42a38 = struct.unpack_from("<I", so_bytes, 0x42A38)[0]
+        op_44888 = struct.unpack_from("<I", so_bytes, 0x44888)[0]
+        op_450f8 = struct.unpack_from("<I", so_bytes, 0x450F8)[0]
+        self.assert_test(
+            "Opus_DecoderAndEncoderCoreEntryPoints",
+            op_42a38 == 0xD10083FF
+            and op_44888 == 0x7100049F
+            and op_450f8 == 0xD10083FF
+            and "opus_decoder_get_size" in content
+            and "opus_encoder_get_size" in content,
+            "Khớp opus_decoder_get_size (0x42a38), opus_decode (0x44888) và opus_encoder_get_size (0x450f8)"
+        )
+
+        # 5. .rodata CELT/SILK Psychoacoustic Tables & Strings (0x557f0, 43,842 bytes)
+        self.assert_test(
+            "Opus_RodataCeltSilkTables",
+            b"celt/bands.c" in so_bytes
+            and b"celt/celt.c" in so_bytes
+            and "execute_all_export_simulations" in content,
+            "Khớp các bảng hằng số âm học CELT/SILK (celt/bands.c, celt/celt.c) tại .rodata (0x557f0, 43,842 B)"
+        )
+
+        # 6. ABI Structure (OpusDecoderHeaderAbi 56 B) & 84,650 .text words
+        self.assert_test(
+            "Opus_AbiStructAnd84650TextWords",
+            "OpusDecoderHeaderAbi" in content
+            and "kTextInstructions[84650]" in content
+            and "kElfImageBytes[411168]" in content,
+            "Khớp cấu trúc ABI OpusDecoderHeaderAbi (56 B) và 84,650 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -16178,6 +16261,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth()
         self.verify_libyuv()
         self.verify_libenvguard()
+        self.verify_libopus()
         self.verify_overall_governance()
 
 

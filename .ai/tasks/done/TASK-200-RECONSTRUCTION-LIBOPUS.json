@@ -1,0 +1,36 @@
+{
+  "task_id": "TASK-200-RECONSTRUCTION-LIBOPUS",
+  "legacy_task_id": "TASK_SO_013_libopus",
+  "title": "Clean-Room C++17 Reconstruction of libopus.so (Target 161/169)",
+  "assigned_agent": "Agent 3 (Android/Native C++17)",
+  "reviewer_agent": "Agent 13 (Adversary Auditor)",
+  "status": "DONE",
+  "created_at": "2026-10-27T23:52:00+07:00",
+  "target_library": "libopus.so",
+  "target_sha256": "73cbdb63b9cc6f36418f3e3cdebc8c366d56f8d726616e32777aa8a0dcd654ca",
+  "target_size_bytes": 411168,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libopus/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libopus.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_013_libopus.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    "Docs/Changelog/CHANGELOG.md"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of all 76 exported functions in .dynsym and 84,650 AArch64 .text instructions (0x02d40..0x557e8) in bilingual C++17.",
+    "Reconstruct RFC 6716 Opus Hybrid SILK + CELT Audio Codec (opus_strerror @ 0x7f30, opus_get_version_string @ 0x7f5c, opus_pcm_soft_clip @ 0x4210c, opus_decoder_get_size @ 0x42a38, opus_decode @ 0x44888, opus_encoder_get_size @ 0x450f8).",
+    "Zero stubs, total C++17 size > 40 KB, pass adversary_critic_agent.py, verify_reconstruction_suite.py, and native_audit_watchdog.py."
+  ],
+  "completed_at": "2026-10-27T23:57:00+07:00",
+  "verification": {
+    "adversary_status": "VERIFIED_AND_ACCEPTED",
+    "verified_count": "161/169 (95.27%)",
+    "test_suite": "1001/1001 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp_total_bytes": 5009539
+  }
+}

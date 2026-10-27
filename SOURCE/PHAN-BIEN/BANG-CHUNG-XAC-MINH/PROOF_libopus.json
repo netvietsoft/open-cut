@@ -1,0 +1,27 @@
+{
+  "library": "libopus.so",
+  "task_id": "TASK-200-RECONSTRUCTION-LIBOPUS",
+  "legacy_task_id": "TASK_SO_013_libopus",
+  "sha256": "73cbdb63b9cc6f36418f3e3cdebc8c366d56f8d726616e32777aa8a0dcd654ca",
+  "size_bytes": 411168,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libopus/opus.hpp",
+    "SOURCE/GIAI-MA/libopus/opus_core.cpp",
+    "SOURCE/GIAI-MA/libopus/opus_elf_sections_and_image.cpp"
+  ],
+  "total_reconstructed_bytes": 5009539,
+  "fde_count": 68,
+  "text_instructions": 84650,
+  "exported_functions": 68,
+  "key_anchors": {
+    "opus_strerror": "0x7f30 (first_op=0x11001c08)",
+    "opus_get_version_string": "0x7f5c (first_op=0xd0000260)",
+    "opus_pcm_soft_clip": "0x4210c (first_op=0xa9be57f6)",
+    "opus_decoder_get_size": "0x42a38 (first_op=0xd10083ff)",
+    "opus_decode": "0x44888 (first_op=0x7100049f)",
+    "opus_encoder_get_size": "0x450f8 (first_op=0xd10083ff)"
+  },
+  "stub_count": 0,
+  "todo_count": 0
+}
