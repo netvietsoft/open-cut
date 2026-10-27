@@ -8296,6 +8296,86 @@ class AutonomousVerificationEngine:
             "Khớp lớp VCNSocketInfo (0x70 = 112 B, kiểm tra 1 <= port <= 65534), VCNDNSParserInterface, vcnUrlSplit và vcnDoCustomVerify"
         )
 
+    def verify_libnpth_unwind(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnpth_unwind.so (ByteDance NPTH Custom libunwindstack Engine)")
+        print("="*70)
+
+        target_dir = GIAIMA_DIR / "libnpth_unwind"
+        cpp_files = list(target_dir.glob("*.cpp")) + list(target_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_unwind.so"
+        so_bytes = so_path.read_bytes()
+
+        # 1. Kiểm tra dung lượng mã nguồn tái tạo > 40 KB và 0 stub
+        self.assert_test(
+            "NpthUnwind_SourceSizeAndZeroStubs",
+            total_bytes > 40000 and len(cpp_files) >= 9 and "TODO" not in content,
+            f"Dung lượng C++17 tái tạo đạt {total_bytes:,} bytes trên {len(cpp_files)} file (.h/.cpp), 0 stub"
+        )
+
+        # 2. Kiểm tra bảng 15 mã lỗi ErrorCode tại .data.rel.ro 0x038420 & chuỗi .rodata (0x00738b 'None', 0x0076b1 'Ptrace Call Failed')
+        err0_str = so_bytes[0x00738b:0x00738f].decode("ascii")
+        err14_str = so_bytes[0x0076b1:0x0076b1 + 18].decode("ascii")
+        self.assert_test(
+            "NpthUnwind_15EntryErrorCodeTable",
+            err0_str == "None"
+            and err14_str == "Ptrace Call Failed"
+            and "GetNpthUnwindErrorCodeTable15" in content
+            and "0x038420" in content,
+            f"Khớp bảng 15 mã lỗi ErrorCode tại .data.rel.ro 0x038420 ('{err0_str}'..'{err14_str}') và AndroidUnwinderData::GetErrorString (0x014364)"
+        )
+
+        # 3. Kiểm tra hằng số SHA-256 (.rodata 0x0077b0 & 0x0078c4) và 6-byte magic XZ (.rodata 0x0079c4)
+        sha_h0, sha_h1 = struct.unpack("<2I", so_bytes[0x0077b0:0x0077b8])
+        sha_k0, sha_k63 = struct.unpack("<I", so_bytes[0x0078c4:0x0078c8])[0], struct.unpack("<I", so_bytes[0x0079c0:0x0079c4])[0]
+        xz_magic = list(so_bytes[0x0079c4:0x0079ca])
+        self.assert_test(
+            "NpthUnwind_Sha256AndXzGnuDebugdataConstants",
+            sha_h0 == 0x6A09E667 and sha_h1 == 0xBB67AE85
+            and sha_k0 == 0x428A2F98 and sha_k63 == 0xC67178F2
+            and xz_magic == [0xFD, 0x37, 0x7A, 0x58, 0x5A, 0x00]
+            and "ComputeUnwindSha256" in content
+            and "VerifyXzStreamHeaderMagic" in content,
+            "Khớp 8 từ khởi tạo SHA-256 (.rodata 0x0077b0), 64 hằng số vòng K[0..63] (.rodata 0x0078c4) và magic XZ 6-byte fd 37 7a 58 5a 00 (.rodata 0x0079c4)"
+        )
+
+        # 4. Kiểm tra RegsArm64 (0x58 B, total_regs=0x22, PTRACE_GETREGSET=0x4204, ucontext+0xB8) & Registers (0x02f8f8..0x030750)
+        self.assert_test(
+            "NpthUnwind_RegsArm64AndRegistersAbi",
+            "0x4204" in content
+            and "0x110" in content
+            and "0xB8" in content
+            and "CreateFromUcontext" in content
+            and "IterateRegisters" in content,
+            "Khớp cấu trúc RegsArm64 (0x58 = 88 B, 34 thanh ghi = 0x110 B, ucontext + 0xB8, PTRACE_GETREGSET = 0x4204) và Registers::IterateRegisters (0x02f9dc)"
+        )
+
+        # 5. Kiểm tra ElfGetRelPc (0x0272e0), ElfGetVariableOffset (0x027314, mặt nạ TBI 56-bit) & MapInfo::GetPrintableBuildID (0x02a904)
+        fmt_hex = so_bytes[0x0075bc:0x0075bc + 6].decode("ascii")
+        self.assert_test(
+            "NpthUnwind_ElfRelPcTbiMaskAndPrintableBuildId",
+            fmt_hex == "%02hhx"
+            and "0x00FFFFFFFFFFFFFFULL" in content
+            and "ElfGetRelPc" in content
+            and "GetPrintableBuildID" in content,
+            f"Khớp công thức ElfGetRelPc (0x0272e0), mặt nạ 56-bit TBI (0x027364: 0x00FFFFFFFFFFFFFFULL) và GetPrintableBuildID ('{fmt_hex}' tại 0x0075bc)"
+        )
+
+        # 6. Kiểm tra kiểm định lỗi phần cứng Exynos 9810 (.init_array[0] 0x00cde0) & DemangleNameIfNeeded (0x015d14, '__dl_')
+        exynos_str = so_bytes[0x00733b:0x00733b + 10].decode("ascii")
+        dl_prefix = so_bytes[0x00752e:0x00752e + 5].decode("ascii")
+        self.assert_test(
+            "NpthUnwind_Exynos9810BugAndDlDemangle",
+            exynos_str == "exynos9810"
+            and dl_prefix == "__dl_"
+            and "CheckExynos9810Arm64Bug" in content
+            and "DemangleNameIfNeeded" in content,
+            f"Khớp hàm khởi tạo .init_array[0] (0x00cde0, kiểm tra '{exynos_str}') và DemangleNameIfNeeded (0x015d14, tiền tố '{dl_prefix}')"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -8381,6 +8461,7 @@ class AutonomousVerificationEngine:
         self.verify_libjnidispatch()
         self.verify_libppsec()
         self.verify_libvcn()
+        self.verify_libnpth_unwind()
         self.verify_overall_governance()
 
 

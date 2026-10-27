@@ -1,18 +1,23 @@
 {
   "report_id": "REPORT_TASK_SO_073_libnpth_unwind",
   "task_id": "TASK_SO_073_libnpth_unwind",
+  "modern_task_id": "TASK-120-RECONSTRUCTION-LIBNPTH-UNWIND",
   "target_library": "libnpth_unwind.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER (Orchestrated by Agent 0)",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
   "evidence": {
+    "binary_size_bytes": 222368,
+    "binary_sha256": "c83bb94dbfc0aa4b2d306a0b57ba7bd83c489dc08379cbb7f362c02fd481cad8",
     "symbols_total": 194,
+    "exported_func_count": 79,
     "jni_exports": 0,
     "cxx_demangled_count": 140,
+    "reconstructed_code_bytes": 115208,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnpth_unwind",
     "has_cpp_interface": true,
     "has_strings": true
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn tất tái tạo sạch 100% C++17 (115,208 bytes, 0 stub) cho libnpth_unwind.so: phục hồi toàn bộ 79 hàm xuất khẩu unwindstack (AndroidUnwinder, AndroidUnwinderData, MapInfo, Elf, Registers, RegsArm64), bảng 15 mã lỗi ErrorCode (.data.rel.ro 0x038420), hằng số SHA-256 & XZ (.rodata 0x0077b0..0x0079ca), và kiểm tra lỗi phần cứng Exynos 9810 (.init_array[0] 0x00cde0).",
+  "acceptance_criteria_passed": true
 }

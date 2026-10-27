@@ -1,0 +1,90 @@
+{
+  "library": "libnpth_unwind.so",
+  "task_id": "TASK-120-RECONSTRUCTION-LIBNPTH-UNWIND",
+  "legacy_task_id": "TASK_SO_073_libnpth_unwind",
+  "binary_size_bytes": 222368,
+  "binary_sha256": "c83bb94dbfc0aa4b2d306a0b57ba7bd83c489dc08379cbb7f362c02fd481cad8",
+  "reconstructed_code_bytes": 115208,
+  "reconstructed_files": [
+    "npth_unwind_types.h",
+    "npth_unwind_regs_dwarf.h",
+    "npth_unwind_regs_dwarf.cpp",
+    "npth_unwind_maps_elf.h",
+    "npth_unwind_maps_elf.cpp",
+    "npth_unwind_android_unwinder.h",
+    "npth_unwind_android_unwinder.cpp",
+    "npth_unwind_interface.h",
+    "npth_unwind_pseudocode.cpp"
+  ],
+  "opcode_evidence": [
+    {
+      "function": "init_array[0] (Exynos 9810 ARM64 HWCAP Bug Check)",
+      "vaddr": "0x00cde0..0x00ce70",
+      "instructions": "mov w0, #0x10; bl getauxval; tbnz w19, #8, #0xce18; add x0, x0, #0x652 ('ro.arch'); bl __system_property_get; add x1, x1, #0x33b ('exynos9810'); mov w2, #0xa; bl strncmp; csel w8, wzr, w19, eq"
+    },
+    {
+      "function": "unwindstack::AndroidUnwinderData::GetErrorString",
+      "vaddr": "0x014364..0x0143ec",
+      "instructions": "ldrsb x9, [x0, #0x18]; adrp x10, #0x38000; add x10, x10, #0x420; ldr x1, [x10, x9, lsl #3]; ldr x1, [x20, #0x20]; cbz x1, #0x143e0; add x0, x0, #0x278 (' at address 0x%lx'); bl StringPrintf"
+    },
+    {
+      "function": "unwindstack::AndroidUnwinder::AndroidUnwinder",
+      "vaddr": "0x0155fc..0x015688",
+      "instructions": "mov w0, #0x48; bl operator new; tbnz w22, #0x1f, #0x15650; str w22, [x21]; strb w8, [x21, #0x11]; stp x20, xzr, [x21, #0x18]; stp x24, x25, [x21, #0x28]; stp xzr, xzr, [x21, #0x38]"
+    },
+    {
+      "function": "unwindstack::DemangleNameIfNeeded",
+      "vaddr": "0x015d14..0x015de4",
+      "instructions": "subs x20, x21, #5; b.lo #0x15d64; adrp x2, #0x7000; add x2, x2, #0x52e ('__dl_'); mov w1, #5; mov w3, #5; bl compare"
+    },
+    {
+      "function": "unwindstack::ElfGetRelPc & ElfGetVariableOffset",
+      "vaddr": "0x0272e0..0x027380",
+      "instructions": "ldr x8, [x2]; ldr x9, [x0, #8]; sub x8, x1, x8; add x19, x8, x9; bl GetElfFields; ldr x8, [x0, #0x10]; add x0, x19, x8 | and x8, x8, #0xffffffffffffff"
+    },
+    {
+      "function": "unwindstack::MapInfo::GetElfFields & GetPrintableBuildID",
+      "vaddr": "0x028550..0x0285d4, 0x02a904..0x02aa3c",
+      "instructions": "add x20, x0, #0x30; ldar x19, [x20]; mov w0, #0x60; bl operator new; bl __aarch64_cas8_acq_rel | add x20, x20, #0x5bc ('%02hhx'); bl StringPrintf"
+    },
+    {
+      "function": "unwindstack::Registers & RegsArm64 (RemoteGet, CreateFromUcontext, pc, sp)",
+      "vaddr": "0x02f974..0x02f9a8, 0x030518..0x0306a0",
+      "instructions": "ldr x0, [x8, #0x100] (pc); ldr x0, [x8, #0xf8] (sp); mov w0, #0x4204 (PTRACE_GETREGSET); mov w0, #0x58; mov w8, #0x22; movk w9, #0x1e, lsl #16; add x1, x19, #0xb8; mov w2, #0x110"
+    }
+  ],
+  "math_and_table_proofs": {
+    "error_code_table_0x038420": "15 entries at .data.rel.ro 0x038420..0x038490 (file offset 0x034420..0x034490) mapping ERROR_NONE (0 -> 0x00738b 'None') through ERROR_PTRACE_CALL (14 -> 0x0076b1 'Ptrace Call Failed')",
+    "sha256_and_xz_rodata": "SHA-256 initial state H0..H7 at .rodata 0x0077b0..0x0077d0, 64 round constants K0..K63 at .rodata 0x0078c4..0x0079c4, and 6-byte XZ stream magic fd 37 7a 58 5a 00 at .rodata 0x0079c4",
+    "elf_rel_pc_and_tbi_mask": "rel_pc = (pc - map_info->start) + elf->load_bias + elf_fields.elf_offset (0x0272e0..0x027308); variable offset masked with 0x00FFFFFFFFFFFFFFULL (0x027364) for ARM64 TBI/MTE"
+  },
+  "abi_offsets": {
+    "AndroidUnwinderData": {
+      "size": "0x40 (64 bytes)",
+      "frames": "+0x00",
+      "error_code": "+0x18",
+      "error_address": "+0x20",
+      "dex_context": "+0x38"
+    },
+    "AndroidUnwinder_Impl": {
+      "size": "0x48 (72 bytes)",
+      "pid": "+0x00",
+      "max_frames": "+0x08",
+      "initialized": "+0x10",
+      "is_local_mode": "+0x11",
+      "maps": "+0x18",
+      "process_memory": "+0x28",
+      "jit_debug": "+0x38",
+      "dex_files": "+0x40"
+    },
+    "RegsArm64": {
+      "size": "0x58 (88 bytes)",
+      "total_regs": "+0x08 (0x22 = 34)",
+      "return_address_reg": "+0x0C (0x1E = 30)",
+      "vregs_enabled": "+0x0E",
+      "dex_pc": "+0x10",
+      "regs_vector": "+0x18 (0x110 = 272 bytes; sp at +0xF8, pc at +0x100, pst at +0x108)",
+      "vregs_vector": "+0x40 (0x40 = 64 bytes)"
+    }
+  }
+}

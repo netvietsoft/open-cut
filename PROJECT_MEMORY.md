@@ -2409,3 +2409,16 @@
   - `adversary_critic_agent.py`: **80 / 169 `VERIFIED_AND_ACCEPTED` (47.34%)** (`387 opcodes`, `100% REAL`).
   - `verify_reconstruction_suite.py`: **515 / 515 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 108. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libnpth_unwind.so (TASK-120-RECONSTRUCTION-LIBNPTH-UNWIND / TASK_SO_073_libnpth_unwind)
+- **Thời gian**: 2026-10-27 08:26:30
+- **Thư viện**: `libnpth_unwind.so` (`222,368 bytes`, SHA-256 `c83bb94dbfc0aa4b2d306a0b57ba7bd83c489dc08379cbb7f362c02fd481cad8`, `.text` `0x00cd60..0x033a5c` = `158,972 bytes`, ByteDance NPTH Custom `libunwindstack` Engine, 79 exported `STT_FUNC` functions in `namespace unwindstack`).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `115,208 bytes` C++17/H, 0 stub)**:
+  1. **`AndroidUnwinderData` (`0x01419c..0x014428`), 15-Entry `ErrorCode` Table (`.data.rel.ro 0x038420`) & `AndroidUnwinder` (`0x0155fc..0x015d14`)**: Khôi phục đầy đủ `DemangleFunctionNames`, `GetErrorString` (tra bảng 15 chuỗi tại `.data.rel.ro 0x038420..0x038490` và nối `" at address 0x%lx"` từ `.rodata 0x007278`), `GetPositionInfosForDex`, `FreeContext`, 22 phương thức `AndroidUnwinder` (`Impl` `0x48 = 72 B`, `FormatFrame` `0x0333a0..0x033660`), và `DemangleNameIfNeeded` (`0x015d14..0x015de4` xử lý tiền tố `"__dl_"` tại `.rodata 0x00752e`).
+  2. **`Registers` & `RegsArm64` (`0x02f8f8..0x030750`), Exynos 9810 Bug Detector (`0x00cde0`) & `.gnu_debugdata` XZ/SHA-256 Constants (`.rodata 0x0077b0..0x0079ca`)**: Khôi phục `RegsArm64` (`0x58 = 88 B`, `total_regs_ = 0x22`, `return_address_reg_ = 0x1E`, 34 thanh ghi `0x110 = 272 B`, `sp` tại `+0xF8`, `pc` tại `+0x100`, `CreateFromUcontext` sao chép từ `ucontext + 0xB8`, `RemoteGet` gọi `ptrace(PTRACE_GETREGSET = 0x4204)`), `Registers::IterateRegisters` (`0x02f9dc`, `2,060 B`), kiểm tra lỗi phần cứng `"exynos9810"` tại `.init_array[0]` (`0x00cde0`), 8 từ khởi tạo SHA-256 (`.rodata 0x0077b0`), 64 hằng số vòng SHA-256 (`.rodata 0x0078c4`), và magic XZ 6-byte `fd 37 7a 58 5a 00` (`.rodata 0x0079c4`).
+  3. **23 `Maps`/`Memory`/`Elf` Exports (`0x026ba0..0x0274ec`) & 5 `MapInfo` Exports (`0x028550..0x02aa3c`)**: Khôi phục `ElfGetRelPc` (`0x0272e0`: `(pc - start) + load_bias + elf_offset`), `ElfGetVariableOffset` (`0x027314`: mặt nạ 56-bit TBI `0x00FFFFFFFFFFFFFFULL` tại `0x027364`), `MapInfo::GetElfFields` (`0x028550`: cấp phát `0x60 = 96 B` + CAS nguyên tử), và `MapInfo::GetPrintableBuildID` (`0x02a904`: định dạng `%02hhx` tại `.rodata 0x0075bc`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **81 / 169 `VERIFIED_AND_ACCEPTED` (47.93%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **521 / 521 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

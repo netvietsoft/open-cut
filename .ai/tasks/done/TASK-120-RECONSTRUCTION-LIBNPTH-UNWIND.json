@@ -1,0 +1,16 @@
+{
+  "task_id": "TASK-120-RECONSTRUCTION-LIBNPTH-UNWIND",
+  "legacy_task_id": "TASK_SO_073_libnpth_unwind",
+  "title": "Clean-room C++17 Reconstruction & Adversarial Verification of libnpth_unwind.so (Target 81/169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER (Orchestrated by Agent 0)",
+  "target_library": "libnpth_unwind.so",
+  "binary_size_bytes": 222368,
+  "binary_sha256": "c83bb94dbfc0aa4b2d306a0b57ba7bd83c489dc08379cbb7f362c02fd481cad8",
+  "reconstructed_code_bytes": 115208,
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (81/169 = 47.93%)",
+    "reconstruction_suite": "521/521 PASS (100.0%)",
+    "native_audit_watchdog": "169 binaries, 0 high findings"
+  }
+}
