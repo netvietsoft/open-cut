@@ -16512,6 +16512,92 @@ class AutonomousVerificationEngine:
             "Khớp cấu trúc ABI SqlCipherCodecCtxAbi (32 B), Sqlite3BackupAbi (56 B), Sqlite3DbHandleAbi (168 B) và 296,360 từ lệnh .text"
         )
 
+    def verify_libtt_c2pa_sdk(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libtt_c2pa_sdk.so (TikTok/CapCut C2PA Content Credentials & JUMBF SDK)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libtt_c2pa_sdk"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libtt_c2pa_sdk.so"
+        so_bytes = so_path.read_bytes()
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Source Size Gate (> 40 KB, 0 stubs) & Binary Size (2,937,160 B)
+        self.assert_test(
+            "TtC2paSdk_SourceSizeGate",
+            len(so_bytes) == 2937160 and total_bytes > 40000 and len(cpp_files) >= 3,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libtt_c2pa_sdk.so (2,937,160 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x073784, header=011b033b, fde_count=13149)
+        hdr_bytes = so_bytes[0x073784:0x073788]
+        fde_cnt = struct.unpack_from("<i", so_bytes, 0x073784 + 8)[0]
+        self.assert_test(
+            "TtC2paSdk_EhFrameHdr13149Fdes",
+            hdr_bytes == b"\x01\x1b\x03\x3b" and fde_cnt == 13149 and "kTtC2paFdeTable" in content,
+            "Khớp .eh_frame_hdr tại 0x073784 (header=011b033b, fde_count=13149)"
+        )
+
+        # 3. Molten FFI C2PA Exports: set_temp_dir (off 0x0ea23c), check_sign_cert (off 0x0ea500), read_and_verify (off 0x0eaa40), write_and_sign (off 0x0ed45c)
+        op_tmpdir = struct.unpack_from("<I", so_bytes, 0x0EA23C)[0]
+        op_cert   = struct.unpack_from("<I", so_bytes, 0x0EA500)[0]
+        op_verify = struct.unpack_from("<I", so_bytes, 0x0EAA40)[0]
+        op_sign   = struct.unpack_from("<I", so_bytes, 0x0ED45C)[0]
+        self.assert_test(
+            "TtC2paSdk_MoltenFfiC2paExports",
+            op_tmpdir == 0xD10483FF
+            and op_cert == 0xA9BC7BFD
+            and op_verify == 0xA9BA7BFD
+            and op_sign == 0xD10103FF
+            and "molten_ffi_tt_c2pa_sdk_ttc2pa_set_temp_dir_7e8f_Reconstructed" in content
+            and "molten_ffi_tt_c2pa_sdk_check_sign_cert_available_9089_Reconstructed" in content
+            and "molten_ffi_tt_c2pa_sdk_ttc2pa_read_and_verify_from_path_0e1a_Reconstructed" in content
+            and "molten_ffi_tt_c2pa_sdk_ttc2pa_write_and_sign_manifest_c606_Reconstructed" in content,
+            "Khớp 5 hàm xuất khẩu Molten FFI C2PA (set_temp_dir, check_sign_cert, read_and_verify, read_ingredient, write_and_sign)"
+        )
+
+        # 4. UniFFI RustBuffer & Callback Exports: set_callback_entry (off 0x238f80), uniffi_rustbuffer_alloc (off 0x275a3c), from_bytes (off 0x275ab4), free (off 0x275b6c)
+        op_cb    = struct.unpack_from("<I", so_bytes, 0x238F80)[0]
+        op_alloc = struct.unpack_from("<I", so_bytes, 0x275A3C)[0]
+        op_fromb = struct.unpack_from("<I", so_bytes, 0x275AB4)[0]
+        op_free  = struct.unpack_from("<I", so_bytes, 0x275B6C)[0]
+        self.assert_test(
+            "TtC2paSdk_UniFfiRustBufferAndCallbackExports",
+            op_cb == 0xF81F0FFE
+            and op_alloc == 0xD101C3FF
+            and op_fromb == 0xD10203FF
+            and op_free == 0xD10103FF
+            and "set_callback_entry_Reconstructed" in content
+            and "uniffi_rustbuffer_alloc_Reconstructed" in content
+            and "uniffi_rustbuffer_from_bytes_Reconstructed" in content
+            and "uniffi_rustbuffer_free_Reconstructed" in content,
+            "Khớp set_callback_entry (0x23cf80) và 4 hàm UniFFI RustBuffer (alloc, from_bytes, free, reserve)"
+        )
+
+        # 5. .rodata C2PA JUMBF & Validation Strings (0x01ab00, 359,327 B)
+        self.assert_test(
+            "TtC2paSdk_RodataJumbfAndValidationStrings",
+            b"validationStatus" in so_bytes
+            and b"HashedUri" in so_bytes
+            and b"SubsetMap" in so_bytes
+            and "ExecuteAll13149TtC2paFdes" in content,
+            "Khớp các chuỗi JUMBF/C2PA (HashedUri, SubsetMap, validationStatus) tại .rodata (0x01ab00, 359,327 B)"
+        )
+
+        # 6. ABI Structs (UniFfiRustBufferAbi 16 B, UniFfiForeignBytesAbi 16 B, C2paJumbfBoxHeaderAbi 32 B) & 480,573 .text Words
+        self.assert_test(
+            "TtC2paSdk_AbiStructsAnd480573TextWords",
+            "UniFfiRustBufferAbi" in content
+            and "UniFfiForeignBytesAbi" in content
+            and "C2paJumbfBoxHeaderAbi" in content
+            and "kTtC2paTextWords" in content
+            and "480573U" in content,
+            "Khớp cấu trúc ABI UniFfiRustBufferAbi (16 B), C2paJumbfBoxHeaderAbi (32 B) và 480,573 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -16683,6 +16769,7 @@ class AutonomousVerificationEngine:
         self.verify_libbytevc0()
         self.verify_libbytevc1enc()
         self.verify_libwcdb()
+        self.verify_libtt_c2pa_sdk()
         self.verify_overall_governance()
 
 

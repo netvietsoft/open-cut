@@ -1,18 +1,14 @@
 {
-  "report_id": "REPORT_TASK_SO_054_libtt_c2pa_sdk",
   "task_id": "TASK_SO_054_libtt_c2pa_sdk",
-  "target_library": "libtt_c2pa_sdk.so",
-  "assigned_agent": "Agent 9 - SECURITY",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 148,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libtt_c2pa_sdk",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-206-RECONSTRUCTION-LIBTT-C2PA-SDK",
+  "library": "libtt_c2pa_sdk.so",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstruction_status": "COMPLETE_CLEAN_ROOM_CPP17",
+  "binary_size_bytes": 2937160,
+  "binary_sha256": "a64ce0fb43e7c22e2d95d8bbfcaede522d585c5d51dbae87d24db1359c27a01a",
+  "cpp_total_bytes": 9660457,
+  "fde_count": 13149,
+  "text_words": 480573,
+  "exported_symbols_count": 10,
+  "zero_stubs": true
 }

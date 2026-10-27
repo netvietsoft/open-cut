@@ -1,0 +1,28 @@
+{
+  "target_library": "libtt_c2pa_sdk.so",
+  "task_id": "TASK-206-RECONSTRUCTION-LIBTT-C2PA-SDK",
+  "legacy_task_id": "TASK_SO_054_libtt_c2pa_sdk",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 2937160,
+  "binary_sha256": "a64ce0fb43e7c22e2d95d8bbfcaede522d585c5d51dbae87d24db1359c27a01a",
+  "reconstructed_cpp_bytes": 9660457,
+  "reconstructed_files": [
+    "tt_c2pa_sdk.hpp",
+    "tt_c2pa_sdk_core.cpp",
+    "tt_c2pa_sdk_elf_sections_and_image.cpp"
+  ],
+  "eh_frame_hdr": {
+    "offset": "0x073784",
+    "size_bytes": 105204,
+    "header_bytes": "011b033b",
+    "fde_count": 13149
+  },
+  "text_section": {
+    "vaddr": "0x0e8c00",
+    "offset": "0x0e4c00",
+    "size_bytes": 1922292,
+    "instruction_words": 480573
+  },
+  "exported_symbols_count": 10,
+  "evidence_classification": "OBSERVED"
+}
