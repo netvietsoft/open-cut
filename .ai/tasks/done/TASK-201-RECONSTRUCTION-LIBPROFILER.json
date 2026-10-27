@@ -1,0 +1,28 @@
+{
+  "task_id": "TASK-201-RECONSTRUCTION-LIBPROFILER",
+  "legacy_task_id": "TASK_SO_069_libprofiler",
+  "title": "Clean-room C++17 Reconstruction of libprofiler.so (Target 162/169)",
+  "status": "DONE",
+  "assigned_to": [
+    "Agent 3 (Android/Native)",
+    "Agent 6 (Tester)",
+    "Agent 13 (Adversary Auditor)"
+  ],
+  "target_binary": "libprofiler.so",
+  "binary_size_bytes": 471424,
+  "binary_sha256": "3d0bc4a14b76e405bce38d41d80d640d29094ddb53013abac8667e4ff02616f9",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libprofiler/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libprofiler.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_069_libprofiler.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "completed_at": "2026-10-28T00:03:00+07:00",
+  "verification": {
+    "adversary_status": "VERIFIED_AND_ACCEPTED",
+    "verified_count": "162/169 (95.86%)",
+    "test_suite": "1007/1007 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp_total_bytes": 1820433
+  }
+}

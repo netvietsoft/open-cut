@@ -16096,6 +16096,89 @@ class AutonomousVerificationEngine:
             "Khớp cấu trúc ABI OpusDecoderHeaderAbi (56 B) và 84,650 từ lệnh .text"
         )
 
+    def verify_libprofiler(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libprofiler.so (ByteDance APM XProfiler & Hybrid Stack Unwinder)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libprofiler"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libprofiler.so"
+        so_bytes = so_path.read_bytes()
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Source Size Gate (> 40 KB, 0 stubs) & Binary Size (471,424 B)
+        self.assert_test(
+            "Profiler_SourceSizeGate",
+            len(so_bytes) == 471424 and total_bytes > 40000 and len(cpp_files) >= 3,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libprofiler.so (471,424 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x0163a8, header=011b033b, fde_count=993)
+        hdr_bytes = so_bytes[0x0163A8:0x0163AC]
+        fde_cnt = struct.unpack_from("<i", so_bytes, 0x0163A8 + 8)[0]
+        self.assert_test(
+            "Profiler_EhFrameHdr993Fdes",
+            hdr_bytes == b"\x01\x1b\x03\x3b" and fde_cnt == 993 and "kProfilerFdeTable" in content,
+            "Khớp .eh_frame_hdr tại 0x0163a8 (header=011b033b, fde_count=993)"
+        )
+
+        # 3. JNI_OnLoad (0x0668cc), xp_init_basic_env (0x0678e8), xp_attach_thread (0x068544), xp_detach_thread (0x068688)
+        op_onload = struct.unpack_from("<I", so_bytes, 0x0668CC)[0]
+        op_init   = struct.unpack_from("<I", so_bytes, 0x0678E8)[0]
+        op_attach = struct.unpack_from("<I", so_bytes, 0x068544)[0]
+        op_detach = struct.unpack_from("<I", so_bytes, 0x068688)[0]
+        self.assert_test(
+            "Profiler_JniOnLoadAndXpThreadLifecycle",
+            op_onload == 0xD10103FF
+            and op_init == 0xD10143FF
+            and op_attach == 0xA9BD7BFD
+            and op_detach == 0xA9BE7BFD
+            and "JNI_OnLoad_Reconstructed" in content
+            and "xp_init_basic_env_Reconstructed" in content
+            and "xp_attach_thread_Reconstructed" in content
+            and "xp_detach_thread_Reconstructed" in content,
+            "Khớp JNI_OnLoad (0x0668cc), xp_init_basic_env (0x0678e8), xp_attach_thread (0x068544) và xp_detach_thread (0x068688)"
+        )
+
+        # 4. xp_get_current_backtrace (0x069160), xp_get_remote_backtrace (0x0693f8), xp_pretty_method (0x06c684)
+        op_cur_bt = struct.unpack_from("<I", so_bytes, 0x069160)[0]
+        op_rem_bt = struct.unpack_from("<I", so_bytes, 0x0693F8)[0]
+        op_pretty = struct.unpack_from("<I", so_bytes, 0x06C684)[0]
+        self.assert_test(
+            "Profiler_BacktraceAndPrettyMethodExports",
+            op_cur_bt == 0xD10603FF
+            and op_rem_bt == 0xD10343FF
+            and op_pretty == 0xD10603FF
+            and "xp_get_current_backtrace_Reconstructed" in content
+            and "xp_get_remote_backtrace_Reconstructed" in content
+            and "xp_pretty_method_Reconstructed" in content,
+            "Khớp xp_get_current_backtrace (0x069160), xp_get_remote_backtrace (0x0693f8) và xp_pretty_method (0x06c684)"
+        )
+
+        # 5. .rodata APM Profiler & DWARF/Demangler Strings (0x010900, 23,208 B)
+        self.assert_test(
+            "Profiler_RodataApmAndDwarfStrings",
+            b"com/bytedance/apm/profiler/Profiler\x00" in so_bytes
+            and b"truncated uleb128 expression\x00" in so_bytes
+            and b"CIE version is not 1 or 3\x00" in so_bytes
+            and "DecodeUleb128" in content
+            and "ExecuteAll993ProfilerFdes" in content,
+            "Khớp các chuỗi com/bytedance/apm/profiler/Profiler, truncated uleb128 expression tại .rodata (0x010900, 23,208 B)"
+        )
+
+        # 6. ABI Structs (XpBacktraceFrameAbi 32 B, XpThreadSamplerContextAbi 48 B) & 75,108 .text Words
+        self.assert_test(
+            "Profiler_AbiStructsAnd75108TextWords",
+            "XpBacktraceFrameAbi" in content
+            and "XpThreadSamplerContextAbi" in content
+            and "kProfilerTextWords" in content
+            and "75108U" in content,
+            "Khớp cấu trúc ABI XpBacktraceFrameAbi (32 B), XpThreadSamplerContextAbi (48 B) và 75,108 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -16262,6 +16345,7 @@ class AutonomousVerificationEngine:
         self.verify_libyuv()
         self.verify_libenvguard()
         self.verify_libopus()
+        self.verify_libprofiler()
         self.verify_overall_governance()
 
 

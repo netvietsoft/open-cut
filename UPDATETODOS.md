@@ -957,3 +957,6 @@
 - [x] **TASK-198 (`libyuv.so` — Target 159/169)**: Tái tạo C++17 phòng sạch 100% (`4,625,651 bytes` trên 3 tệp, `1,063` FDEs @ `0x26db0`, `26,105` lệnh `.text`, `564` exports, `0` stub), đạt **989/989 PASS (100.0%)**, **159/169 VERIFIED_AND_ACCEPTED (94.08%)**.
 
 - [x] **TASK-199 (`libenvguard.so` — Target 160/169)**: Tái tạo C++17 phòng sạch 100% (`2,755,966 bytes` trên 3 tệp, `123` FDEs @ `0x27ce4`, `11,656` lệnh `.text`, `JNI_OnLoad` @ `0x28d3c`, `0` stub), đạt **995/995 PASS (100.0%)**, **160/169 VERIFIED_AND_ACCEPTED (94.67%)**.
+
+- [x] **[DONE 2026-10-27]** `TASK-200-RECONSTRUCTION-LIBOPUS` (`libopus.so` — Target 161/169, `411,168 B` -> `5,009,539 B` C++17, `1001/1001 PASS`, `161/169 VERIFIED_AND_ACCEPTED`).
+- [x] **[DONE 2026-10-28]** `TASK-201-RECONSTRUCTION-LIBPROFILER` (`libprofiler.so` — Target 162/169, `471,424 B` -> `1,820,433 B` C++17, `1007/1007 PASS`, `162/169 VERIFIED_AND_ACCEPTED`).

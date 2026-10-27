@@ -30,3 +30,7 @@
 ## [2026-10-27] TASK-199 — Clean-Room C++17 Reconstruction of `libenvguard.so` (160/169)
 - Reconstructed `envguard.hpp`, `envguard_core.cpp`, and `envguard_elf_sections_and_image.cpp` (`2,755,966 bytes`, `123` FDEs, `11,656` `.text` instructions, `0` stubs).
 - Added 6 verification tests (`verify_libenvguard`) achieving `995/995 PASS (100.0%)` and `160/169 VERIFIED_AND_ACCEPTED`.
+
+## [2026-10-28] - `TASK-201-RECONSTRUCTION-LIBPROFILER` (`libprofiler.so` — Target 162/169)
+- Reconstructed `libprofiler.so` (`471,424 bytes`, SHA-256 `3d0bc4a14b76e405bce38d41d80d640d29094ddb53013abac8667e4ff02616f9`) into 3 clean-room C++17/H files (`1,820,433 bytes`, `993` FDEs, `75,108` `.text` words, `7` exported symbols, `0` stubs).
+- Added 6 binary/mathematical assertions in `verify_libprofiler()` (`1007/1007 PASS`, `162/169 VERIFIED_AND_ACCEPTED` = `95.86%`).

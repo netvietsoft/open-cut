@@ -1,0 +1,70 @@
+{
+  "target_library": "libprofiler.so",
+  "task_id": "TASK-201-RECONSTRUCTION-LIBPROFILER",
+  "legacy_task_id": "TASK_SO_069_libprofiler",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 471424,
+  "binary_sha256": "3d0bc4a14b76e405bce38d41d80d640d29094ddb53013abac8667e4ff02616f9",
+  "reconstructed_cpp_bytes": 1820433,
+  "reconstructed_files": [
+    "profiler.hpp",
+    "profiler_core.cpp",
+    "profiler_elf_sections_and_image.cpp"
+  ],
+  "eh_frame_hdr": {
+    "offset": "0x0163a8",
+    "size_bytes": 7956,
+    "header_bytes": "011b033b",
+    "fde_count": 993
+  },
+  "text_section": {
+    "offset": "0x0240f0",
+    "size_bytes": 300432,
+    "instruction_words": 75108
+  },
+  "exported_symbols": [
+    {
+      "name": "JNI_OnLoad",
+      "vaddr": "0x0668cc",
+      "size": 152,
+      "first_op": "0xd10103ff"
+    },
+    {
+      "name": "xp_init_basic_env",
+      "vaddr": "0x0678e8",
+      "size": 128,
+      "first_op": "0xd10143ff"
+    },
+    {
+      "name": "xp_attach_thread",
+      "vaddr": "0x068544",
+      "size": 324,
+      "first_op": "0xa9bd7bfd"
+    },
+    {
+      "name": "xp_detach_thread",
+      "vaddr": "0x068688",
+      "size": 148,
+      "first_op": "0xa9be7bfd"
+    },
+    {
+      "name": "xp_get_current_backtrace",
+      "vaddr": "0x069160",
+      "size": 664,
+      "first_op": "0xd10603ff"
+    },
+    {
+      "name": "xp_get_remote_backtrace",
+      "vaddr": "0x0693f8",
+      "size": 344,
+      "first_op": "0xd10343ff"
+    },
+    {
+      "name": "xp_pretty_method",
+      "vaddr": "0x06c684",
+      "size": 384,
+      "first_op": "0xd10603ff"
+    }
+  ],
+  "evidence_classification": "OBSERVED"
+}

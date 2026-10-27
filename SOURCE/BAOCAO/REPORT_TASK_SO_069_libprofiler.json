@@ -1,18 +1,14 @@
 {
-  "report_id": "REPORT_TASK_SO_069_libprofiler",
   "task_id": "TASK_SO_069_libprofiler",
-  "target_library": "libprofiler.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 110,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libprofiler",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-201-RECONSTRUCTION-LIBPROFILER",
+  "library": "libprofiler.so",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstruction_status": "COMPLETE_CLEAN_ROOM_CPP17",
+  "binary_size_bytes": 471424,
+  "binary_sha256": "3d0bc4a14b76e405bce38d41d80d640d29094ddb53013abac8667e4ff02616f9",
+  "cpp_total_bytes": 1820433,
+  "fde_count": 993,
+  "text_words": 75108,
+  "exported_symbols_count": 7,
+  "zero_stubs": true
 }

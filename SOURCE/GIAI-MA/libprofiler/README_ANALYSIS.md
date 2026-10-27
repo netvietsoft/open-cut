@@ -1,14 +1,28 @@
-# BÁO CÁO GIẢI MÃ KỸ THUẬT: libprofiler.so
+# Clean-Room C++17 Reconstruction — `libprofiler.so` (`TASK-201-RECONSTRUCTION-LIBPROFILER`)
 
-- **Dung lượng nhị phân**: 0.45 MB (471424 bytes)
-- **Định dạng nhị phân**: ELF (Chuẩn ELF 64-bit)
-- **Phân loại Lõi C++**: `CORE_10_MONITORING`
-- **Tổng số dynamic symbols**: 110
-- **Hàm JNI xuất xưởng (JNI Exports)**: 0
-- **Hàm C++ demangled bóc tách được**: 0
+## 1. Binary Identity & ELF64 Geometry (Định danh Nhị phân & Bố cục ELF64)
+- **Target Binary**: `libprofiler.so` (`471,424 bytes`)
+- **SHA-256**: `3d0bc4a14b76e405bce38d41d80d640d29094ddb53013abac8667e4ff02616f9`
+- **Architecture**: `AArch64 (ARM64-v8a)`
+- **Role**: ByteDance APM XProfiler (`com/bytedance/apm/profiler/Profiler`) & Hybrid ART/Native Stack Unwinder (`xp_*` C API)
+- **Reconstructed C++17 Volume**: `1,820,433 bytes` across 3 files (`profiler.hpp`, `profiler_core.cpp`, `profiler_elf_sections_and_image.cpp`), `0` stubs.
 
-## Danh mục tài liệu đính kèm
-1. `symbols_demangled.json`: Toàn bộ bảng symbol động kèm tên gốc C++ đã giải mã.
-2. `jni_bindings.json`: Danh mục cổng kết nối JNI xuống Native.
-3. `strings_extracted.txt`: Các hằng số, thông điệp log và URI nội bộ.
-4. C++ Header & Pseudocode phục vụ tái cấu trúc trong `NextAI OpenCut`.
+| Section | File Offset | Size (Bytes) | Details |
+|---|---:|---:|---|
+| `.rodata` | `0x010900` | `23,208` | `com/bytedance/apm/profiler/Profiler`, `nStop`, `nDump`, `native init %d`, Itanium demangler & DWARF CFI strings |
+| `.eh_frame_hdr` | `0x0163A8` | `7,956` | Header `01 1b 03 3b`, `993` FDE entries |
+| `.eh_frame` | `0x0182C0` | `48,684` | DWARF CFI unwind records |
+| `.text` | `0x0240F0` | `300,432` | `75,108` AArch64 32-bit instruction words |
+| `.plt` | `0x06D680` | `1,744` | Procedure Linkage Table |
+| `.data.rel.ro` | `0x071D50` | `16,744` | Relocated read-only vtables & descriptors |
+| `.data` | `0x07A780` | `364` | Mutable initialized state |
+| `.bss` | `0x07A8F0` | `7,328` | Zero-initialized runtime state |
+
+## 2. Exported Symbols (`.dynsym` — 7 Functions)
+1. `JNI_OnLoad` (`0x0668cc`, `152 B`, `first_op=0xd10103ff`)
+2. `xp_init_basic_env` (`0x0678e8`, `128 B`, `first_op=0xd10143ff`)
+3. `xp_attach_thread` (`0x068544`, `324 B`, `first_op=0xa9bd7bfd`)
+4. `xp_detach_thread` (`0x068688`, `148 B`, `first_op=0xa9be7bfd`)
+5. `xp_get_current_backtrace` (`0x069160`, `664 B`, `first_op=0xd10603ff`)
+6. `xp_get_remote_backtrace` (`0x0693f8`, `344 B`, `first_op=0xd10343ff`)
+7. `xp_pretty_method` (`0x06c684`, `384 B`, `first_op=0xd10603ff`)

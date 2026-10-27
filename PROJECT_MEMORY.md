@@ -2695,3 +2695,6 @@
 - **[2026-10-27 23:47] TASK-198 (`libyuv.so` — 159/169)**: Hoàn tất C++17 phòng sạch `4,625,651 bytes` (`yuv.hpp`, `yuv_core.cpp`, `yuv_elf_sections_and_image.cpp`), khớp 1,063 FDEs và 26,105 từ lệnh `.text`. Đạt 989/989 PASS, 159/169 VERIFIED_AND_ACCEPTED.
 
 - **[2026-10-27 23:51] TASK-199 (`libenvguard.so` — 160/169)**: Hoàn tất C++17 phòng sạch `2,755,966 bytes` (`envguard.hpp`, `envguard_core.cpp`, `envguard_elf_sections_and_image.cpp`), khớp 123 FDEs và 11,656 từ lệnh `.text`. Đạt 995/995 PASS, 160/169 VERIFIED_AND_ACCEPTED.
+
+- **[2026-10-27T23:57:00+07:00] Target 161/169 (`libopus.so` — `TASK-200-RECONSTRUCTION-LIBOPUS`)**: `VERIFIED_AND_ACCEPTED` (161/169 = 95.27%), `5,009,539 bytes` C++17 across 3 files, `1001/1001 PASS (100.0%)`.
+- **[2026-10-28T00:03:00+07:00] Target 162/169 (`libprofiler.so` — `TASK-201-RECONSTRUCTION-LIBPROFILER`)**: `VERIFIED_AND_ACCEPTED` (162/169 = 95.86%), `1,820,433 bytes` C++17 across 3 files, `1007/1007 PASS (100.0%)`.
