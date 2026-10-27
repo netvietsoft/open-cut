@@ -1,0 +1,40 @@
+{
+  "library": "libgifimage.so",
+  "task_id": "TASK_SO_143_libgifimage",
+  "orchestrator_task_id": "TASK-190-RECONSTRUCTION-LIBGIFIMAGE",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "sha256": "e77193814bfa15d21d703c188ce203dbfab40f691d70d52b3101afd63b72766c",
+  "size_bytes": 51696,
+  "reconstructed_bytes": 847961,
+  "fde_count": 86,
+  "exported_symbols_count": 10,
+  "text_section": {
+    "vaddr": "0x1bf0",
+    "size": 21308,
+    "instructions": 5327
+  },
+  "rodata_section": {
+    "vaddr": "0x6f30",
+    "size": 2274
+  },
+  "opcode_evidence": {
+    "JNI_OnLoad_0x1c2c": "0xd100c3ff",
+    "initGifImage_0x1ca8": "0xd10243ff",
+    "initGifFrame_0x20e4": "0xd10243ff",
+    "createFromByteBuffer_0x2400": "0xd10303ff"
+  },
+  "mathematical_proofs": [
+    "GIF89a Graphics Control Extension (0xF9): delay_ms = ((ext[2] << 8) | ext[1]) * 10, disposal = (ext[0] >> 2) & 7, transparent_flag = ext[0] & 1.",
+    "RGBA_8888 pixel packing: (alpha << 24) | (b << 16) | (g << 8) | r for AndroidBitmap_lockPixels scanline blitting."
+  ],
+  "abi_layouts": [
+    {
+      "struct": "GifColorEntry",
+      "size_bytes": 3
+    },
+    {
+      "struct": "GifFrameDescriptor",
+      "size_bytes": 32
+    }
+  ]
+}

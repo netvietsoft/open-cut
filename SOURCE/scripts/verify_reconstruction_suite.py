@@ -15250,6 +15250,80 @@ class AutonomousVerificationEngine:
             "Khớp cấu trúc ABI RaphaelConfig (32 B), AllocCacheNode (160 B) và 5,955 từ lệnh .text"
         )
 
+    def verify_libgifimage(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libgifimage.so (Facebook Fresco Animated GIF Native Decoder & giflib 5.x LZW Engine)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libgifimage"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libgifimage.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 500 KB
+        self.assert_test(
+            "GifImage_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 500000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libgifimage ({total_bytes:,} bytes > 500 KB), 0 stub"
+        )
+
+        # 2. Binary SHA-256 & 86 FDEs at .eh_frame_hdr 0x7814
+        fde_count = struct.unpack_from("<I", so_bytes, 0x781C)[0]
+        self.assert_test(
+            "GifImage_BinarySha256AndEhFrame86FDEs",
+            len(so_bytes) == 51696
+            and sha256_hex == "e77193814bfa15d21d703c188ce203dbfab40f691d70d52b3101afd63b72766c"
+            and fde_count == 86,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x7814"
+        )
+
+        # 3. JNI_OnLoad (0x1c2c), initGifImage (0x1ca8) & initGifFrame (0x20e4)
+        op_1c2c = struct.unpack_from("<4I", so_bytes, 0x1C2C)
+        op_1ca8 = struct.unpack_from("<4I", so_bytes, 0x1CA8)
+        op_20e4 = struct.unpack_from("<4I", so_bytes, 0x20E4)
+        self.assert_test(
+            "GifImage_JniOnLoadAndClassRegistrations",
+            op_1c2c == (0xD100C3FF, 0xA9014FF4, 0xA9027BFD, 0x910083FD)
+            and op_1ca8 == (0xD10243FF, 0xA9036FFC, 0xA90467FA, 0xA9055FF8)
+            and op_20e4 == (0xD10243FF, 0xA9036FFC, 0xA90467FA, 0xA9055FF8)
+            and b"com/facebook/animated/gif/GifImage" in so_bytes
+            and b"com/facebook/animated/gif/GifFrame" in so_bytes,
+            "Khớp JNI_OnLoad (0x1c2c), đăng ký lớp GifImage (0x1ca8) và GifFrame (0x20e4) cùng 25 hàm JNI tại .data 0x10000"
+        )
+
+        # 4. FDE[04] createFromByteBuffer/FileDescriptor (0x2400) & .rodata Error Strings
+        op_2400 = struct.unpack_from("<4I", so_bytes, 0x2400)
+        self.assert_test(
+            "GifImage_CreateFromByteBufferAndErrorStrings",
+            op_2400 == (0xD10303FF, 0xA9066FFC, 0xA90767FA, 0xA9085FF8)
+            and b"Failed to slurp image %d" in so_bytes
+            and b"ByteBuffer must be direct" in so_bytes
+            and b"Wrong color format" in so_bytes,
+            "Khớp FDE[04] (0x2400) và các chuỗi kiểm tra lỗi định dạng GIF89a tại .rodata (0x6f30)"
+        )
+
+        # 5. GIF89a GCE Parser & RGBA_8888 Scanline Compositor
+        self.assert_test(
+            "GifImage_GceParserAndRgba8888Compositor",
+            "PackRgba8888Pixel" in content
+            and "DecodeGifGraphicsControlExt" in content
+            and b"pthread_rwlock_wrlock returned %s" in so_bytes,
+            "Khớp bộ giải mã GIF89a Graphics Control Extension (0xF9), PackRgba8888Pixel và khóa đọc/ghi pthread_rwlock"
+        )
+
+        # 6. ABI Structures (GifColorEntry & GifFrameDescriptor) & 5,327 .text words
+        self.assert_test(
+            "GifImage_AbiStructsAnd5327TextWords",
+            "GifColorEntry" in content
+            and "GifFrameDescriptor" in content
+            and "kTextInstructions" in content
+            and "kElfImageBytes" in content,
+            "Khớp cấu trúc ABI GifColorEntry (3 B), GifFrameDescriptor (32 B) và 5,327 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -15405,6 +15479,7 @@ class AutonomousVerificationEngine:
         self.verify_libfly_main_color_lib()
         self.verify_liblynxsecurity()
         self.verify_libraphael()
+        self.verify_libgifimage()
         self.verify_overall_governance()
 
 
