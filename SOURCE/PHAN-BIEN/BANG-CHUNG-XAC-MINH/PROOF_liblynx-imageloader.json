@@ -1,0 +1,71 @@
+{
+  "library": "liblynx-imageloader.so",
+  "task_id": "TASK-182-RECONSTRUCTION-LIBLYNX-IMAGELOADER",
+  "report_task_id": "TASK_SO_155_liblynx_imageloader",
+  "target_index": 143,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 35168,
+  "binary_sha256": "ccac078dcc95156b659eee639c7de486506043f767f6a3ab4da873c95ed5d5e0",
+  "cpp_reconstruction_files": [
+    "lynx_imageloader.hpp",
+    "lynx_imageloader_core.cpp",
+    "lynx_imageloader_elf_sections_and_image.cpp"
+  ],
+  "cpp_total_bytes": 353973,
+  "eh_frame_hdr_va": "0x06a8",
+  "fde_count": 2,
+  "text_va_range": "0x4000..0x4bf8",
+  "text_instruction_count": 766,
+  "opcode_evidence": [
+    {
+      "va": "0x403c",
+      "hex": "d10483ff",
+      "insn": "sub sp, sp, #0x120",
+      "fn": "Java_com_bytedance_lynx_tasm_ui_imageloader_BitmapBlur_nativeBlur"
+    },
+    {
+      "va": "0x40b4",
+      "hex": "7100111f",
+      "insn": "cmp w8, #4",
+      "fn": "nativeBlur (ANDROID_BITMAP_FORMAT_RGB_565 = 4)"
+    },
+    {
+      "va": "0x40b8",
+      "hex": "7a411904",
+      "insn": "ccmp w8, #1, #4, ne",
+      "fn": "nativeBlur (ANDROID_BITMAP_FORMAT_RGBA_8888 = 1)"
+    },
+    {
+      "va": "0x4114",
+      "hex": "331f7933",
+      "insn": "bfi w19, w9, #1, #0x1f",
+      "fn": "nativeBlur (div = 2 * radius + 1)"
+    },
+    {
+      "va": "0x4150",
+      "hex": "1b087d15",
+      "insn": "mul w21, w8, w8",
+      "fn": "nativeBlur (divsum = ((div + 1) >> 1)^2)"
+    },
+    {
+      "va": "0x4174",
+      "hex": "1ad50909",
+      "insn": "udiv w9, w8, w21",
+      "fn": "nativeBlur (dv[i] = i / divsum)"
+    },
+    {
+      "va": "0x4bf0",
+      "hex": "aa1903e0",
+      "insn": "mov x0, x25",
+      "fn": "OutlinedMalloc_4bf0"
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "id": "MATH-01",
+      "title": "StackBlur Pyramid Kernel Normalization Factor divsum",
+      "formula": "sum_{i=-r}^{r} (r + 1 - |i|) = (r + 1)^2 = ((div + 1) >> 1)^2 where div = 2*r + 1",
+      "verified": true
+    }
+  ]
+}

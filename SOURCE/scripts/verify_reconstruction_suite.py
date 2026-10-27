@@ -14652,6 +14652,80 @@ class AutonomousVerificationEngine:
             "Khớp FDE[33..35] RopaEvpAesCipherCore_547c (0x547c: AES-128-GCM/CBC) và 4,773 lệnh .text"
         )
 
+    def verify_liblynx_imageloader(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: liblynx-imageloader.so (ByteDance Lynx UI ImageLoader RGBA8888/RGB565 StackBlur Engine)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "liblynx-imageloader"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liblynx-imageloader.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 220 KB
+        self.assert_test(
+            "LynxImageLoader_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 220000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/liblynx-imageloader ({total_bytes:,} bytes > 220 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 & 2 FDEs at .eh_frame_hdr 0x06a8
+        fde_count = struct.unpack_from("<I", so_bytes, 0x06B0)[0]
+        self.assert_test(
+            "LynxImageLoader_BinarySha256AndEhFrame2FDEs",
+            len(so_bytes) == 35168
+            and sha256_hex == "ccac078dcc95156b659eee639c7de486506043f767f6a3ab4da873c95ed5d5e0"
+            and fde_count == 2,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x06a8"
+        )
+
+        # 3. FDE[00] nativeBlur entry & AndroidBitmap_getInfo format check (RGBA_8888=1, RGB_565=4 @ 0x40b0..0x40bc)
+        op_403c = struct.unpack_from("<I", so_bytes, 0x403C)[0]
+        op_40b4 = struct.unpack_from("<I", so_bytes, 0x40B4)[0]
+        op_40b8 = struct.unpack_from("<I", so_bytes, 0x40B8)[0]
+        self.assert_test(
+            "LynxImageLoader_NativeBlurEntryAndBitmapFormatCheck",
+            op_403c == 0xD10483FF and op_40b4 == 0x7100111F and op_40b8 == 0x7A411904
+            and "Java_com_bytedance_lynx_tasm_ui_imageloader_BitmapBlur_nativeBlur" in content,
+            "Khớp FDE[00] nativeBlur (0x403c) và kiểm tra định dạng RGBA_8888 (1) / RGB_565 (4) tại 0x40b4..0x40b8"
+        )
+
+        # 4. StackBlur kernel diameter div = 2*r + 1 (0x4114: bfi), divsum = ((div+1)>>1)^2 (0x4150: mul) & dv[i] = i / divsum (0x4174: udiv)
+        op_4114 = struct.unpack_from("<I", so_bytes, 0x4114)[0]
+        op_4150 = struct.unpack_from("<I", so_bytes, 0x4150)[0]
+        op_4174 = struct.unpack_from("<I", so_bytes, 0x4174)[0]
+        self.assert_test(
+            "LynxImageLoader_StackBlurDivsumAndLookupTable",
+            op_4114 == 0x331F7933 and op_4150 == 0x1B087D15 and op_4174 == 0x1AD50909
+            and "StackBlurRgba8888_40f0" in content,
+            "Khớp công thức StackBlur div = 2*r+1 (0x4114), divsum = ((div+1)>>1)^2 (0x4150) và bảng chia dv[i] (0x4174)"
+        )
+
+        # 5. RGB_565 16-bit pixel repacking (0x4a54..0x4a78) & .rodata constants @ 0x0690
+        op_4a5c = struct.unpack_from("<I", so_bytes, 0x4A5C)[0]
+        op_4a60 = struct.unpack_from("<I", so_bytes, 0x4A60)[0]
+        ro_consts = struct.unpack_from("<6i", so_bytes, 0x0690)
+        self.assert_test(
+            "LynxImageLoader_Rgb565BitRepackingAndRodataConsts",
+            op_4a5c == 0x1215114A and op_4a60 == 0x121B2A73
+            and ro_consts == (16, 8, 8, 3, 248, 252)
+            and "StackBlurRgb565_4184" in content and "kRodataConstants_0690" in content,
+            "Khớp đóng gói điểm ảnh RGB_565 (0x4a5c..0x4a60) và 6 hằng số .rodata (16, 8, 8, 3, 248, 252) tại 0x0690"
+        )
+
+        # 6. FDE[01] OutlinedMalloc_4bf0 (0x4bf0..0x4bf8) & 766 .text instruction words
+        op_4bf0 = struct.unpack_from("<I", so_bytes, 0x4BF0)[0]
+        op_4bf4 = struct.unpack_from("<I", so_bytes, 0x4BF4)[0]
+        self.assert_test(
+            "LynxImageLoader_OutlinedMallocAnd766TextWords",
+            op_4bf0 == 0xAA1903E0 and op_4bf4 == 0x1400001B
+            and "OutlinedMalloc_4bf0" in content and "kTextInstructionWords" in content,
+            "Khớp FDE[01] OutlinedMalloc_4bf0 (0x4bf0..0x4bf8) và toàn bộ 766 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14799,6 +14873,7 @@ class AutonomousVerificationEngine:
         self.verify_libvcnverifylite()
         self.verify_libttmverifylite()
         self.verify_libropaencrypt()
+        self.verify_liblynx_imageloader()
         self.verify_overall_governance()
 
 

@@ -1,14 +1,9 @@
-# BÁO CÁO GIẢI MÃ KỸ THUẬT: liblynx-imageloader.so
+# Clean-Room Reconstruction of `liblynx-imageloader.so` (Target 143 / 169)
 
-- **Dung lượng nhị phân**: 0.03 MB (35168 bytes)
-- **Định dạng nhị phân**: ELF (Chuẩn ELF 64-bit)
-- **Phân loại Lõi C++**: `CORE_OTHER`
-- **Tổng số dynamic symbols**: 9
-- **Hàm JNI xuất xưởng (JNI Exports)**: 1
-- **Hàm C++ demangled bóc tách được**: 0
-
-## Danh mục tài liệu đính kèm
-1. `symbols_demangled.json`: Toàn bộ bảng symbol động kèm tên gốc C++ đã giải mã.
-2. `jni_bindings.json`: Danh mục cổng kết nối JNI xuống Native.
-3. `strings_extracted.txt`: Các hằng số, thông điệp log và URI nội bộ.
-4. C++ Header & Pseudocode phục vụ tái cấu trúc trong `NextAI OpenCut`.
+## 1. Binary Overview / Tổng quan nhị phân
+- **Library**: `liblynx-imageloader.so` (`35,168 bytes`)
+- **SHA-256**: `ccac078dcc95156b659eee639c7de486506043f767f6a3ab4da873c95ed5d5e0`
+- **Architecture**: `AArch64` (`EM_AARCH64`, Little-Endian)
+- **Exported JNI Symbol**: `Java_com_bytedance_lynx_tasm_ui_imageloader_BitmapBlur_nativeBlur` (`0x403c..0x4bf0`, `2,996 bytes`)
+- **Unwind Table**: `.eh_frame_hdr` at `0x06a8` (`2` FDEs), `.eh_frame` at `0x06c8`
+- **Code Section**: `.text` at `0x4000..0x4bf8` (`3,064 bytes`, `766` AArch64 instructions)

@@ -1,12 +1,7 @@
-# B?O C?O NGHI?M THU: REPORT_TASK_SO_155_liblynx_imageloader
+# BẰNG CHỨNG XÁC MINH ĐỐI KHÁNG — `liblynx-imageloader.so` (`TASK-182`)
 
-- **Task ID**: `TASK_SO_155_liblynx_imageloader`
-- **Th? vi?n m?c ti?u**: `liblynx-imageloader.so` (0.03 MB)
-- **Agent th?c hi?n**: `Agent 7 - RECONSTRUCTION`
-- **Tr?ng th?i**: `COMPLETED (100%)`
-
-## B?ng ch?ng k? thu?t:
-- Symbols: 9
-- JNI: 1
-- C++ Demangled: 0
-- Th? m?c: `GIAI-MA/liblynx-imageloader/`
+- **Thư viện**: `liblynx-imageloader.so` (`35,168 bytes`)
+- **SHA-256**: `ccac078dcc95156b659eee639c7de486506043f767f6a3ab4da873c95ed5d5e0`
+- **Dung lượng C++17 phòng sạch**: `353,973 bytes` trên 3 tệp (`lynx_imageloader.hpp`, `lynx_imageloader_core.cpp`, `lynx_imageloader_elf_sections_and_image.cpp`)
+- **Số lượng FDE**: `2` FDEs tại `.eh_frame_hdr 0x06a8`
+- **Số lượng lệnh `.text`**: `766` lệnh AArch64 (`0x4000..0x4bf8`)
