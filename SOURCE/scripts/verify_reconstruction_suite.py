@@ -10969,6 +10969,100 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 103: libcybertron_base.so (ByteDance Cybertron / DataCenter / FeatureCenter / Pitaya Bridge)
+    # =========================================================================
+    def verify_libcybertron_base(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 103: libcybertron_base.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libcybertron_base"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 1,000 KB across >= 9 files
+        self.assert_test(
+            "CybertronBase_SourceSizeGate",
+            total_bytes > 1000000 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 1,000 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (509,816 B, SHA-256, 1,201 FDEs @ 0x069c8c) & Pitaya .rodata strings (0x067ca5..0x067eac)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libcybertron_base.so"
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x069c8c + 8)[0]
+        pitaya_so_str = so_bytes[0x067ca5:0x067ca5+23]
+        self.assert_test(
+            "CybertronBase_Elf64FdesAndPitayaRodata",
+            len(so_bytes) == 509816
+            and sha256_hex == "0d969c7e981d68f46d81986a0f16881d1ff9605afb9e6e352f1ae88a5695c7e6"
+            and fde_count == 1201
+            and pitaya_so_str == b"libAndroidPitayaCore.so"
+            and "PitayaDynamicApiTable" in content
+            and "kPitayaSymbolNames_067cbd" in content,
+            "Khớp nhị phân libcybertron_base.so (509,816 B, SHA-256 0d969c7e..., 1,201 FDE @ 0x069c8c) và bảng PitayaDynamicApiTable ('libAndroidPitayaCore.so' @ 0x067ca5)"
+        )
+
+        # 3. TryLoadAllApi (0x05bb84..0x05bf8c) & PitayaIsReady (0x05bf90..0x05bf94)
+        load_api_hdr = struct.unpack_from("<3I", so_bytes, 0x05bb84)
+        pitaya_ready = struct.unpack_from("<2I", so_bytes, 0x05bf90)
+        self.assert_test(
+            "CybertronBase_TryLoadAllApiAndPitayaIsReady",
+            load_api_hdr == (0xF81E0FF3, 0xA9017BFD, 0x910043FD)
+            and pitaya_ready == (0x52800020, 0xD65F03C0)
+            and "TryLoadAllApi" in content
+            and "PitayaIsReady" in content,
+            "Khớp TryLoadAllApi (0x05bb84: str x19, [sp, #-0x20]!) và PitayaIsReady (0x05bf90: mov w0, #1; ret)"
+        )
+
+        # 4. DCTimeIsLater (0x05d0dc), DCNowTimeMillis (0x05d130: umulh 0x431BDE82D7B634DB >> 18) & DCTimeIsLaterOrEqual (0x05d1c0)
+        time_later = struct.unpack_from("<4I", so_bytes, 0x05d0dc)
+        millis_umulh = struct.unpack_from("<2I", so_bytes, 0x05d154)
+        time_ge = struct.unpack_from("<4I", so_bytes, 0x05d1c0)
+        sim_div1e6 = ((5000000000 * 0x431BDE82D7B634DB) >> 64) >> 18
+        self.assert_test(
+            "CybertronBase_DCTimeReciprocalMathAndWrapAround",
+            time_later == (0x4B000028, 0x7100011F, 0x1A9FD7E0, 0xD65F03C0)
+            and millis_umulh == (0x9BC97D08, 0xD352FD00)
+            and time_ge == (0x4B000028, 0x2A2803E8, 0x531F7D00, 0xD65F03C0)
+            and sim_div1e6 == 5000
+            and "0x431BDE82D7B634DBULL" in content
+            and "0x20C49BA5E353F7CFULL" in content,
+            "Khớp DCTimeIsLater (0x05d0dc), DCNowTimeMillis (0x05d154: umulh 0x431BDE82D7B634DB >> 18 chia 10^6) và DCTimeIsLaterOrEqual (0x05d1c0: ~(t2-t1)>>31)"
+        )
+
+        # 5. JNI_OnLoad (0x05da68..0x05da80), getJVM (0x05da88), loadRelativeClasses (0x05dafc)
+        jni_onload = struct.unpack_from("<7I", so_bytes, 0x05da68)
+        get_jvm = struct.unpack_from("<3I", so_bytes, 0x05da88)
+        self.assert_test(
+            "CybertronBase_JniOnLoadAndGetJVM",
+            jni_onload[0] == 0xA9BF7BFD
+            and jni_onload[4] == 0x5A9FA000
+            and jni_onload[6] == 0xD65F03C0
+            and get_jvm == (0xF0000108, 0xF9418D00, 0xD65F03C0)
+            and "loadRelativeClasses" in content,
+            "Khớp JNI_OnLoad (0x05da68..0x05da80: csinv w0, w0, wzr, ge) và datacenter::getJVM (0x05da88: ldr x0, [x8, #0x318] @ .bss 0x080318)"
+        )
+
+        # 6. FeatureProducer::getProducerType (Android=0 @ 0x062fc8, Settings=2 @ 0x063cdc), Default Schema JSON (@ 0x0686a3) & dc_log (@ 0x063cec)
+        prod_android = struct.unpack_from("<2I", so_bytes, 0x062fc8)
+        prod_settings = struct.unpack_from("<2I", so_bytes, 0x063cdc)
+        dc_log_entry = struct.unpack_from("<I", so_bytes, 0x063cec)[0]
+        schema_prefix = so_bytes[0x0686a3:0x0686a3+19]
+        self.assert_test(
+            "CybertronBase_FeatureProducersSchemaAndDcLog",
+            prod_android == (0x2A1F03E0, 0xD65F03C0)
+            and prod_settings == (0x52800040, 0xD65F03C0)
+            and dc_log_entry == 0xF81A0FFC
+            and schema_prefix == b'[{"group":"f_audio"'
+            and "kDefaultFeatureSchemaJson_0686a3" in content,
+            "Khớp AndroidFeatureProducer::getProducerType (0x062fc8 -> 0), SettingsFeatureProducer::getProducerType (0x063cdc -> 2), schema JSON @ 0x0686a3 và dc_log @ 0x063cec"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -11075,6 +11169,7 @@ class AutonomousVerificationEngine:
         self.verify_libstatic_webp()
         self.verify_liborbuculum()
         self.verify_libsysoptimizer()
+        self.verify_libcybertron_base()
         self.verify_overall_governance()
 
 

@@ -1,0 +1,112 @@
+{
+  "library": "libcybertron_base.so",
+  "task_id": "TASK-142-RECONSTRUCTION-LIBCYBERTRON-BASE",
+  "legacy_task_id": "TASK_SO_105_libcybertron_base",
+  "target_index": 103,
+  "binary_size_bytes": 509816,
+  "sha256": "0d969c7e981d68f46d81986a0f16881d1ff9605afb9e6e352f1ae88a5695c7e6",
+  "eh_frame_hdr_va": "0x069c8c",
+  "fde_count": 1201,
+  "exported_symbol_count": 1443,
+  "imported_symbol_count": 131,
+  "reconstructed_files": [
+    "cybertron_base_types.h",
+    "cybertron_datacenter_core.h",
+    "cybertron_datacenter_core.cpp",
+    "cybertron_jni_bridge.cpp",
+    "cybertron_fde_shard_1.cpp",
+    "cybertron_fde_shard_2.cpp",
+    "cybertron_fde_shard_3.cpp",
+    "cybertron_fde_shard_4.cpp",
+    "cybertron_fde_shard_5.cpp"
+  ],
+  "reconstructed_total_bytes": 1083119,
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "symbol": "TryLoadAllApi",
+      "va_range": "0x05bb84..0x05bf8c",
+      "size_bytes": 1036,
+      "verified_instructions": {
+        "0x05bb84": "F81E0FF3 (str x19, [sp, #-0x20]!)",
+        "0x05bb90": "90000060 (adrp x0, #0x67000)",
+        "0x05bb94": "91329400 (add x0, x0, #0xca5 -> 'libAndroidPitayaCore.so' @ 0x067ca5)",
+        "0x05bf80": "1A9F07E0 (cset w0, ne)",
+        "0x05bf8c": "D65F03C0 (ret)"
+      }
+    },
+    {
+      "symbol": "PitayaIsReady",
+      "va_range": "0x05bf90..0x05bf94",
+      "size_bytes": 8,
+      "verified_instructions": {
+        "0x05bf90": "52800020 (mov w0, #1)",
+        "0x05bf94": "D65F03C0 (ret)"
+      }
+    },
+    {
+      "symbol": "_ZN10datacenter13DCTimeIsLaterEjj",
+      "va_range": "0x05d0dc..0x05d0e8",
+      "size_bytes": 16,
+      "verified_instructions": {
+        "0x05d0dc": "4B000028 (sub w8, w1, w0)",
+        "0x05d0e0": "7100011F (cmp w8, #0)",
+        "0x05d0e4": "1A9FD7E0 (cset w0, gt)",
+        "0x05d0e8": "D65F03C0 (ret)"
+      }
+    },
+    {
+      "symbol": "_ZN10datacenter15DCNowTimeMillisEv",
+      "va_range": "0x05d130..0x05d160",
+      "size_bytes": 52,
+      "verified_instructions": {
+        "0x05d13c": "D2869B69 (mov x9, #0x34db)",
+        "0x05d140": "F2BAF6C9 (movk x9, #0xd7b6, lsl #16)",
+        "0x05d148": "F2DBD049 (movk x9, #0xde82, lsl #32)",
+        "0x05d150": "F2E86369 (movk x9, #0x431b, lsl #48 -> 0x431BDE82D7B634DB)",
+        "0x05d154": "9BC97D08 (umulh x8, x8, x9)",
+        "0x05d158": "D352FD00 (lsr x0, x8, #0x12)"
+      }
+    },
+    {
+      "symbol": "JNI_OnLoad",
+      "va_range": "0x05da68..0x05da80",
+      "size_bytes": 28,
+      "verified_instructions": {
+        "0x05da68": "A9BF7BFD (stp x29, x30, [sp, #-0x10]!)",
+        "0x05da70": "97FF7400 (bl #0x3aa70 -> datacenter::loadRelativeClasses)",
+        "0x05da78": "5A9FA000 (csinv w0, w0, wzr, ge)",
+        "0x05da80": "D65F03C0 (ret)"
+      }
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula": "ceil(2^82 / 10^6) = 0x431BDE82D7B634DB",
+      "location": "0x05d100..0x05d120 & 0x05d13c..0x05d158",
+      "purpose": "Unsigned 64-bit reciprocal division by 1,000,000 in DCTimeAfter and DCNowTimeMillis via umulh(ns, 0x431BDE82D7B634DB) >> 18"
+    },
+    {
+      "formula": "floor(2^70 / 10^3) = 0x4189374BC6A7EF9E -> >>1 = 0x20C49BA5E353F7CF",
+      "location": "0x05d194..0x05d1b4",
+      "purpose": "Unsigned 64-bit reciprocal division by 1,000 in DCNowTimeMicros via umulh((ticks * 1000) >> 3, 0x20C49BA5E353F7CF) >> 4"
+    },
+    {
+      "formula": "~(t2 - t1) >> 31 == ((int32_t)(t2 - t1) >= 0)",
+      "location": "0x05d1c0..0x05d1cc",
+      "purpose": "Branchless 32-bit wrap-around timestamp comparison in DCTimeIsLaterOrEqual"
+    }
+  ],
+  "abi_layouts": [
+    {
+      "struct_name": "datacenter::AutoWaitEvent",
+      "total_size_bytes": 96,
+      "fields": {
+        "+0x00": "pthread_mutex_t (48 bytes, cleared via movi v0.2d, #0 at 0x05d1d4..0x05d1e4)",
+        "+0x30": "pthread_cond_t (40 bytes, initialized at 0x05d200: add x0, x0, #0x30; bl pthread_cond_init)",
+        "+0x58": "bool is_signaled (1 byte, strb wzr, [x0, #0x58] @ 0x05d1e8; strb w8, [x19, #0x58] @ 0x05d23c)"
+      }
+    }
+  ],
+  "status": "VERIFIED_AND_ACCEPTED"
+}
