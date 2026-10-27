@@ -1,0 +1,13 @@
+{
+  "library": "libnpth_heap_tracker.so",
+  "task_id": "TASK-186-RECONSTRUCTION-LIBNPTH-HEAP-TRACKER",
+  "report_id": "TASK_SO_080_libnpth_heap_tracker",
+  "binary_size_bytes": 43176,
+  "binary_sha256": "ec2e686f2d21c863ea039279b9251d87a1becac552bc860bec3a401f22b045f8",
+  "eh_frame_hdr_va": "0x00002710",
+  "fde_count": 81,
+  "text_va_range": "0x000037e0..0x000096cc",
+  "text_instruction_count": 6075,
+  "reconstructed_cpp_bytes": 807384,
+  "status": "VERIFIED_AND_ACCEPTED"
+}

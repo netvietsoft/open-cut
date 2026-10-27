@@ -14946,6 +14946,76 @@ class AutonomousVerificationEngine:
             "Khớp GuardedPoolAllocator::trapOnAddress (0x8730), GwpAsanAddressIsMine_7ba4 (0x7ba4) và 5,092 lệnh .text"
         )
 
+    def verify_libnpth_heap_tracker(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnpth_heap_tracker.so (ByteDance NPTH Native Heap Leak Tracker & Pagemap/Smaps Dumper)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libnpth_heap_tracker"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_heap_tracker.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 500 KB
+        self.assert_test(
+            "NpthHeapTracker_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 500000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libnpth_heap_tracker ({total_bytes:,} bytes > 500 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 & 81 FDEs at .eh_frame_hdr 0x2710
+        fde_count = struct.unpack_from("<I", so_bytes, 0x2718)[0]
+        self.assert_test(
+            "NpthHeapTracker_BinarySha256AndEhFrame81FDEs",
+            len(so_bytes) == 43176
+            and sha256_hex == "ec2e686f2d21c863ea039279b9251d87a1becac552bc860bec3a401f22b045f8"
+            and fde_count == 81,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x2710"
+        )
+
+        # 3. FDE[05] HeapTrackerInitialize_3830, FDE[06] ControlCmd_4010 & FDE[07..08] Mallinfo/HeapSize
+        op_3830 = struct.unpack_from("<I", so_bytes, 0x3830)[0]
+        op_4010 = struct.unpack_from("<I", so_bytes, 0x4010)[0]
+        op_40c0 = struct.unpack_from("<I", so_bytes, 0x40C0)[0]
+        self.assert_test(
+            "NpthHeapTracker_InitControlAndMallinfoCheck",
+            op_3830 == 0xA9BA7BFD and op_4010 == 0xA9BF7BFD and op_40c0 == 0x5286DD28
+            and all(sym in content for sym in ["HeapTrackerInitialize_3830", "HeapTrackerControlCmd_4010", "heap_tracker_native_interface_func"]),
+            "Khớp FDE[05] HeapTrackerInitialize_3830 (0x3830), FDE[06] ControlCmd (0x4010) và kiểm tra mallinfo (0x40c0)"
+        )
+
+        # 4. FDE[24] NEON 2x64-bit Add (0x495c..0x4970) & FDE[28] Fork/Pagemap/Smaps Dump (0x4c20)
+        op_4964 = struct.unpack_from("<I", so_bytes, 0x4964)[0]
+        op_4c20 = struct.unpack_from("<I", so_bytes, 0x4C20)[0]
+        self.assert_test(
+            "NpthHeapTracker_NeonAdd2x64AndPagemapForkDump",
+            op_4964 == 0x4EE08420 and op_4c20 == 0xA9BA7BFD
+            and b"/proc/self/pagemap" in so_bytes and b"leak_heap.txt" in so_bytes
+            and "HeapTrackerNeonAdd2x64_495c" in content,
+            "Khớp FDE[24] NEON add v0.2d, v1.2d, v0.2d (0x4964) và FDE[28] HeapTrackerForkAndDump_4c20 (0x4c20)"
+        )
+
+        # 5. FDE[29..33] ARMv8.3-A xpaclri (0xd50320ff @ 0x6290) & FDE[38] TBI 56-bit Mask (0x6a04)
+        op_6290 = struct.unpack_from("<I", so_bytes, 0x6290)[0]
+        op_6a04 = struct.unpack_from("<I", so_bytes, 0x6A04)[0]
+        self.assert_test(
+            "NpthHeapTracker_XpaclriAndTbi56BitMask",
+            op_6290 == 0xD50320FF and op_6a04 == 0x9240DE73
+            and "StripTbiAndPac_69dc" in content and "kTbiPointerMask56Bit" in content,
+            "Khớp lệnh xóa PAC xpaclri (0xd50320ff @ 0x6290) và mặt nạ TBI 56-bit (#0xffffffffffffff @ 0x6a04)"
+        )
+
+        # 6. C++ operator new symbols in .rodata & 6,075 .text instruction words
+        self.assert_test(
+            "NpthHeapTracker_OperatorNewSymbolsAnd6075TextWords",
+            b"_ZnwmRKSt9nothrow_t" in so_bytes and b"_ZnamSt11align_val_tRKSt9nothrow_t" in so_bytes
+            and "kTextInstructionWords" in content and "kFdeTable" in content,
+            "Khớp các biểu tượng C++ operator new trong .rodata và 6,075 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -15097,6 +15167,7 @@ class AutonomousVerificationEngine:
         self.verify_libwhisper()
         self.verify_libnpth_fd_tracker()
         self.verify_libnpth_xasan()
+        self.verify_libnpth_heap_tracker()
         self.verify_overall_governance()
 
 

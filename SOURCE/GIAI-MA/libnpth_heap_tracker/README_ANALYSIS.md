@@ -1,14 +1,6 @@
-# BÁO CÁO GIẢI MÃ KỸ THUẬT: libnpth_heap_tracker.so
+# Clean-Room Reconstruction of `libnpth_heap_tracker.so` (Target 147 / 169)
 
-- **Dung lượng nhị phân**: 0.04 MB (43176 bytes)
-- **Định dạng nhị phân**: ELF (Chuẩn ELF 64-bit)
-- **Phân loại Lõi C++**: `CORE_10_MONITORING`
-- **Tổng số dynamic symbols**: 71
-- **Hàm JNI xuất xưởng (JNI Exports)**: 0
-- **Hàm C++ demangled bóc tách được**: 0
-
-## Danh mục tài liệu đính kèm
-1. `symbols_demangled.json`: Toàn bộ bảng symbol động kèm tên gốc C++ đã giải mã.
-2. `jni_bindings.json`: Danh mục cổng kết nối JNI xuống Native.
-3. `strings_extracted.txt`: Các hằng số, thông điệp log và URI nội bộ.
-4. C++ Header & Pseudocode phục vụ tái cấu trúc trong `NextAI OpenCut`.
+- **Binary Size / Kích thước**: `43,176 bytes`
+- **SHA-256**: `ec2e686f2d21c863ea039279b9251d87a1becac552bc860bec3a401f22b045f8`
+- **FDE Count / Số hàm FDE**: `81` FDEs (`0x37e0..0x96cc`, `6,075` AArch64 instructions)
+- **Exported Symbols / Biểu tượng xuất khẩu**: `1` (`heap_tracker_native_interface_func`, 64-byte 8-function table @ `.data 0x12008`)

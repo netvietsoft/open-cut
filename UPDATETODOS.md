@@ -931,3 +931,5 @@
 - [x] **TASK-184 (`libnpth_fd_tracker.so` — Target 145/169, `39,472 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`705,678 B`), đạt `145/169 VERIFIED_AND_ACCEPTED (85.80%)` và `905/905 PASS (100.0%)`.
 
 - [x] **TASK-185 (`libnpth_xasan.so` — Target 146/169, `40,480 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`729,404 B`), đạt `146/169 VERIFIED_AND_ACCEPTED (86.39%)` và `911/911 PASS (100.0%)`.
+
+- [x] **TASK-186 (`libnpth_heap_tracker.so` — Target 147/169, `43,176 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`807,384 B`), đạt `147/169 VERIFIED_AND_ACCEPTED (86.98%)` và `917/917 PASS (100.0%)`.

@@ -1,0 +1,31 @@
+{
+  "task_id": "TASK-186-RECONSTRUCTION-LIBNPTH-HEAP-TRACKER",
+  "title": "Clean-Room C++17 Reconstruction & Adversarial Verification of libnpth_heap_tracker.so (Target 147/169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/C++ Native) & Agent 13 (Adversary Auditor)",
+  "priority": "P0",
+  "created_at": "2026-10-27T22:41:00+07:00",
+  "completed_at": "2026-10-27T22:45:30+07:00",
+  "target_binary": "libnpth_heap_tracker.so",
+  "target_size_bytes": 43176,
+  "target_sha256": "ec2e686f2d21c863ea039279b9251d87a1becac552bc860bec3a401f22b045f8",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libnpth_heap_tracker/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_heap_tracker.*",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_080_libnpth_heap_tracker.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "Docs/Changelog/**",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "verification_results": {
+    "adversary_auditor": "VERIFIED_AND_ACCEPTED (147/169, 86.98%)",
+    "verification_suite": "917/917 PASS (100.0%)",
+    "native_audit_watchdog": "169 binaries, 0 high findings",
+    "reconstructed_code_bytes": 807384,
+    "stub_count": 0
+  }
+}
