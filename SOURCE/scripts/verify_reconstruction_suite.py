@@ -12685,6 +12685,108 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 123. KIỂM CHỨNG libpreload.so (ByteDance Video Cloud Strategy & Preload Engine)
+    # =========================================================================
+    def verify_libpreload(self):
+        print("\n[123] Đang kiểm chứng libpreload.so (ByteDance Video Cloud Strategy & Preload Engine)...")
+        import hashlib
+        import struct
+        import math
+        preload_dir = GIAIMA_DIR / "libpreload"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libpreload.so"
+        files = [
+            "preload_types.h",
+            "preload_core.h",
+            "preload_core.cpp",
+            "preload_jni_and_parcel.cpp",
+            "preload_fde_shard_1.cpp",
+            "preload_fde_shard_2.cpp",
+            "preload_fde_shard_3.cpp",
+            "preload_fde_shard_4.cpp",
+            "preload_fde_shard_5.cpp",
+        ]
+        all_exist = all((preload_dir / f).exists() for f in files)
+        total_size = sum((preload_dir / f).stat().st_size for f in files if (preload_dir / f).exists())
+        no_old_stubs = not (preload_dir / "preload_interface.h").exists() and not (preload_dir / "preload_pseudocode.cpp").exists()
+        self.assert_test(
+            "Preload_SourceVolumeAndNoStubs",
+            all_exist and total_size > 2000000 and no_old_stubs,
+            f"Đầy đủ 9 file C++17/H libpreload ({total_size:,} bytes > 2.0 MB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x305cfc + 8)[0]
+        self.assert_test(
+            "Preload_BinarySha256AndEhFrame8944FDEs",
+            len(so_bytes) == 3657488
+            and sha256_hex == "9f88e5ffe24e072d7ba2fb5a9bfe50378664a36db5998d0524574b8a238a11b9"
+            and eh_fde_count == 8944,
+            f"Khớp kích thước 3,657,488 bytes, SHA-256 ({sha256_hex[:16]}...) và 8,944 FDEs tại .eh_frame_hdr 0x305cfc"
+        )
+
+        content = ""
+        for f in files:
+            fp = preload_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. JNI_OnLoad (0x27b3d0..0x27b4b4) & 51 JNINativeMethod Table @ 0x3800d8
+        jni_pro = struct.unpack_from("<4I", so_bytes, 0x27b3d0)
+        jni_reg = struct.unpack_from("<4I", so_bytes, 0x27b428)
+        cls_str = so_bytes[0x2fc56e:0x2fc56e + 44].decode("ascii")
+        self.assert_test(
+            "Preload_JniOnLoadAnd51NativeMethodsOpcodes",
+            jni_pro == (0xD10103FF, 0xF9000BF5, 0xA9024FF4, 0xA9037BFD)
+            and jni_reg == (0xB0000821, 0x91036021, 0x52800662, 0x9400003A)
+            and cls_str == "com/bytedance/vcloud/strategy/StrategyCenter"
+            and "jni_strategy_method_00_create" in content
+            and "jni_strategy_method_50_setLiveAppInfoBundle" in content,
+            f"Khớp JNI_OnLoad (0x27b3d0: 0x33=51 methods @ 0x3800d8) và lớp '{cls_str}'"
+        )
+
+        # 4. _create (0x27b5a4, 0x10d0 = 4,304 B StrategyCenter) & _setIntValue (0x27c18c, key=0xC3BF)
+        create_ops = struct.unpack_from("<4I", so_bytes, 0x27b5f4)
+        setint_ops = struct.unpack_from("<4I", so_bytes, 0x27c18c)
+        self.assert_test(
+            "Preload_StrategyCenterCreate4304BAndSetIntValueOpcodes",
+            create_ops == (0x52821A00, 0x97F722B6, 0xAA0003F4, 0x97F9A1E7)
+            and setint_ops == (0xB40000C2, 0x529877E8, 0x6B08007F, 0x54000081)
+            and "kStrategyCenterStructSize = 0x10D0" in content
+            and "kStrategyLogLevelKey = 0xC3BF" in content,
+            "Khớp _create (0x27b5f4: mov w0, #0x10d0 = 4,304B -> 0x0e3d9c) và _setIntValue (0x27c18c: key 0xC3BF = 50111)"
+        )
+
+        # 5. com::ss::ttm::player::Parcel::init (0x2919d4..0x291b2c) & Json::FastWriter::~FastWriter (0x04aac8)
+        parcel_pro = struct.unpack_from("<4I", so_bytes, 0x2919d4)
+        parcel_asr5 = struct.unpack_from("<I", so_bytes, 0x291a40)[0]
+        parcel_asr4 = struct.unpack_from("<I", so_bytes, 0x291a64)[0]
+        fw_ops = struct.unpack_from("<3I", so_bytes, 0x04aac8)
+        self.assert_test(
+            "Preload_TtmPlayerParcel32BAndJsonFastWriterOpcodes",
+            parcel_pro == (0xD10243FF, 0xF9001BFB, 0xA90467FA, 0xA9055FF8)
+            and parcel_asr5 == 0x9345FD39
+            and parcel_asr4 == 0x9344FD4A
+            and fw_ops == (0xF81E0FF3, 0xA9017BFD, 0x910043FD)
+            and "Parcel_InitLongLongPtrStr" in content
+            and "FastWriter::~FastWriter" in content,
+            "Khớp TTMPlayer Parcel::init (0x2919d4: 32B entry asr #5 @ 0x291a40, 2x cap asr #4 @ 0x291a64) và Json::FastWriter::~FastWriter (0x04aac8)"
+        )
+
+        # 6. EstPlayTimeByWeibullParams (.rodata 0x2bbb25) & 5 FDE Shards
+        weibull_rtti = so_bytes[0x2bbb25:0x2bbb25 + 50].decode("ascii")
+        lam, k_shape, p_thresh, t0 = 30.0, 1.25, 0.50, 15.0
+        t_est = lam * (((t0 / lam) ** k_shape - math.log(p_thresh)) ** (1.0 / k_shape))
+        self.assert_test(
+            "Preload_WeibullPlayTimeMathAnd5FdeShards",
+            weibull_rtti == "N3com2bd3vod2ST5Utils26EstPlayTimeByWeibullParamsE"
+            and 30.0 < t_est < 45.0
+            and "EstimatePlayTimeWeibull" in content
+            and all(f"execute_fde_shard_{i}" in content for i in range(1, 6)),
+            f"Khớp EstPlayTimeByWeibullParams (.rodata 0x2bbb25, t_est={t_est:.2f}s) và 5 FDE shards (8,944 FDEs)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12809,6 +12911,7 @@ class AutonomousVerificationEngine:
         self.verify_libpythonA()
         self.verify_libpythonA_RelWithDebInfo()
         self.verify_liblynx()
+        self.verify_libpreload()
         self.verify_overall_governance()
 
 

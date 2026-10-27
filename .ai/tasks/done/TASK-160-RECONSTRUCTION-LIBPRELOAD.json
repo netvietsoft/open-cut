@@ -1,0 +1,35 @@
+{
+  "task_id": "TASK-160-RECONSTRUCTION-LIBPRELOAD",
+  "so_task_id": "TASK_SO_093_libpreload",
+  "title": "Clean-Room C++17 Reconstruction & Adversarial Verification of libpreload.so (3,657,488 bytes)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Orchestrator)",
+  "created_at": "2026-10-27T18:52:00+07:00",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libpreload/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libpreload.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libpreload.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_093_libpreload.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_093_libpreload.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "9 C++17 & header files in SOURCE/GIAI-MA/libpreload/ totaling > 1,200 KB with 0 stubs and bilingual EN/VN comments",
+    "Remove legacy stub files preload_interface.h and preload_pseudocode.cpp while preserving symbols_demangled.json, jni_bindings.json, strings_extracted.txt",
+    "Direct AArch64 opcode disassembly proofs and mathematical verification in PROOF_libpreload.json/.md",
+    "6 automated tests in verify_reconstruction_suite.py passing 100.0%",
+    "Adversary Critic Agent certifies VERIFIED_AND_ACCEPTED (121/169)"
+  ],
+  "completed_at": "2026-10-27T19:02:13.388015+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (121/169)",
+    "reconstruction_suite": "761/761 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 2274029,
+    "fde_count": 8944,
+    "exported_symbols": 52,
+    "jni_native_methods": 51,
+    "stub_count": 0
+  }
+}

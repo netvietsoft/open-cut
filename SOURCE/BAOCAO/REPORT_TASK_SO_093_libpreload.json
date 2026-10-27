@@ -1,18 +1,172 @@
 {
-  "report_id": "REPORT_TASK_SO_093_libpreload",
-  "task_id": "TASK_SO_093_libpreload",
-  "target_library": "libpreload.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 363,
-    "jni_exports": 0,
-    "cxx_demangled_count": 295,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libpreload",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "library": "libpreload.so",
+  "task_id": "TASK-160-RECONSTRUCTION-LIBPRELOAD",
+  "so_task_id": "TASK_SO_093_libpreload",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size": 3657488,
+  "sha256": "9f88e5ffe24e072d7ba2fb5a9bfe50378664a36db5998d0524574b8a238a11b9",
+  "eh_frame_hdr_offset": "0x305cfc",
+  "fde_count": 8944,
+  "exported_symbols": 52,
+  "jni_native_methods_count": 51,
+  "reconstructed_cpp_bytes": 2274029,
+  "reconstructed_files": [
+    "preload_types.h",
+    "preload_core.h",
+    "preload_core.cpp",
+    "preload_jni_and_parcel.cpp",
+    "preload_fde_shard_1.cpp",
+    "preload_fde_shard_2.cpp",
+    "preload_fde_shard_3.cpp",
+    "preload_fde_shard_4.cpp",
+    "preload_fde_shard_5.cpp"
+  ],
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "address": "0x04aac8",
+      "bytes": "F81E0FF3",
+      "insn": "str x19, [sp, #-0x20]! (Json::FastWriter::~FastWriter prologue)"
+    },
+    {
+      "address": "0x04aad8",
+      "bytes": "39402008",
+      "insn": "ldrb w8, [x0, #8] (check libc++ SSO long flag bit 0)"
+    },
+    {
+      "address": "0x04aaec",
+      "bytes": "36000068",
+      "insn": "tbz w8, #0, #0x4aaf8"
+    },
+    {
+      "address": "0x04aaf0",
+      "bytes": "F9400E60",
+      "insn": "ldr x0, [x19, #0x18] (load heap string pointer)"
+    },
+    {
+      "address": "0x0e3d9c",
+      "bytes": "D10183FF",
+      "insn": "sub sp, sp, #0x60 (StrategyCenter::StrategyCenter prologue)"
+    },
+    {
+      "address": "0x0e3df4",
+      "bytes": "B900181F",
+      "insn": "str wzr, [x0, #0x18] (clear StrategyCenter::running_state_)"
+    },
+    {
+      "address": "0x0e3df8",
+      "bytes": "3C820E80",
+      "insn": "str q0, [x20, #0x20]! (store subobject vtable pointers +0x20/+0x28)"
+    },
+    {
+      "address": "0x27b3d0",
+      "bytes": "D10103FF",
+      "insn": "sub sp, sp, #0x40 (JNI_OnLoad prologue in ManagerBridge.cpp)"
+    },
+    {
+      "address": "0x27b3ec",
+      "bytes": "52800082",
+      "insn": "mov w2, #4"
+    },
+    {
+      "address": "0x27b404",
+      "bytes": "72A00022",
+      "insn": "movk w2, #1, lsl #16 (JNI_VERSION_1_4 = 0x00010004)"
+    },
+    {
+      "address": "0x27b430",
+      "bytes": "52800662",
+      "insn": "mov w2, #0x33 (51 JNINativeMethod entries @ 0x3800d8)"
+    },
+    {
+      "address": "0x27b434",
+      "bytes": "9400003A",
+      "insn": "bl #0x27b51c (RegisterNativeMethods on com/bytedance/vcloud/strategy/StrategyCenter)"
+    },
+    {
+      "address": "0x27b4b4",
+      "bytes": "D100C3FF",
+      "insn": "sub sp, sp, #0x30 (JNI_OnUnload prologue)"
+    },
+    {
+      "address": "0x27b51c",
+      "bytes": "A9BD57F6",
+      "insn": "stp x22, x21, [sp, #-0x30]! (RegisterNativeMethods helper)"
+    },
+    {
+      "address": "0x27b5f4",
+      "bytes": "52821A00",
+      "insn": "mov w0, #0x10d0 (allocate 4,304-byte StrategyCenter in _create)"
+    },
+    {
+      "address": "0x27b600",
+      "bytes": "97F9A1E7",
+      "insn": "bl #0xe3d9c (StrategyCenter::StrategyCenter constructor)"
+    },
+    {
+      "address": "0x27b60c",
+      "bytes": "F906E314",
+      "insn": "str x20, [x24, #0xdc0] (store singleton at .bss 0x380dc0)"
+    },
+    {
+      "address": "0x27c18c",
+      "bytes": "B40000C2",
+      "insn": "cbz x2, #0x27c1a4 (_setIntValue null handle check)"
+    },
+    {
+      "address": "0x27c190",
+      "bytes": "529877E8",
+      "insn": "mov w8, #0xc3bf (key == 50111 global log level)"
+    },
+    {
+      "address": "0x27c194",
+      "bytes": "6B08007F",
+      "insn": "cmp w3, w8"
+    },
+    {
+      "address": "0x27c950",
+      "bytes": "F81E0FF3",
+      "insn": "str x19, [sp, #-0x20]! (_isIOManagerVersionMatch)"
+    },
+    {
+      "address": "0x27d2f0",
+      "bytes": "B4000062",
+      "insn": "cbz x2, #0x27d2fc (_iPlayerVersion)"
+    },
+    {
+      "address": "0x2919d4",
+      "bytes": "D10243FF",
+      "insn": "sub sp, sp, #0x90 (Parcel::init<long, long, void*&, char const*&>)"
+    },
+    {
+      "address": "0x291a0c",
+      "bytes": "A9412018",
+      "insn": "ldp x24, x8, [x0, #0x10] (load Parcel end_ and cap_)"
+    },
+    {
+      "address": "0x291a2c",
+      "bytes": "91008308",
+      "insn": "add x8, x24, #0x20 (advance Parcel::end_ by 32 bytes)"
+    },
+    {
+      "address": "0x291a40",
+      "bytes": "9345FD39",
+      "insn": "asr x25, x9, #5 (old_size = byte_diff >> 5)"
+    },
+    {
+      "address": "0x291a64",
+      "bytes": "9344FD4A",
+      "insn": "asr x10, x10, #4 (2x capacity doubling = cap_bytes >> 4)"
+    },
+    {
+      "address": "0x29b8d8",
+      "bytes": "D65F03C0",
+      "insn": "ret (com::ss::vcbkit::BaseRef::~BaseRef)"
+    },
+    {
+      "address": "0x29f898",
+      "bytes": "D65F03C0",
+      "insn": "ret (IConfigCenterListener::~IConfigCenterListener)"
+    }
+  ]
 }
