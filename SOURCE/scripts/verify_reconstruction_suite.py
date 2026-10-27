@@ -15173,6 +15173,83 @@ class AutonomousVerificationEngine:
             "Khớp cấu trúc ABI LynxSignBlockView (32 B), LynxSecurityKeystoreSingleton (80 B @ .bss 0xc008) và 3,379 từ lệnh .text"
         )
 
+    def verify_libraphael(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libraphael.so (ByteDance Raphael Native Memory Leak Profiler)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libraphael"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libraphael.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 500 KB
+        self.assert_test(
+            "Raphael_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 500000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libraphael ({total_bytes:,} bytes > 500 KB), 0 stub"
+        )
+
+        # 2. Binary SHA-256 & 106 FDEs at .eh_frame_hdr 0x7fb8
+        fde_count = struct.unpack_from("<I", so_bytes, 0x7FC0)[0]
+        self.assert_test(
+            "Raphael_BinarySha256AndEhFrame106FDEs",
+            len(so_bytes) == 51336
+            and sha256_hex == "928e64ccde02fdf0a1e8d12a35148a360f0952c6dc9dbb7df328004e636b6d8a"
+            and fde_count == 106,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x7fb8"
+        )
+
+        # 3. JNI_OnLoad (0x3ecc), TestTool_mallocLeak (0x3f8c) & TestTool_print (0x3fcc)
+        op_3ecc = struct.unpack_from("<4I", so_bytes, 0x3ECC)
+        op_3f8c = struct.unpack_from("<4I", so_bytes, 0x3F8C)
+        op_3fcc = struct.unpack_from("<4I", so_bytes, 0x3FCC)
+        self.assert_test(
+            "Raphael_JniOnLoadAndTestToolExports",
+            op_3ecc == (0xD10103FF, 0xF9000BF5, 0xA9024FF4, 0xA9037BFD)
+            and op_3f8c == (0xA9BF7BFD, 0x910003FD, 0x5283E800, 0x97FFF6AA)
+            and op_3fcc == (0xA9BE4FF4, 0xA9017BFD, 0x910043FD, 0x90000020)
+            and all(sym in content for sym in [
+                "JNI_OnLoad",
+                "Java_com_bytedance_raphael_TestTool_mallocLeak",
+                "Java_com_bytedance_raphael_TestTool_print"
+            ]),
+            "Khớp JNI_OnLoad (0x3ecc), Java_com_bytedance_raphael_TestTool_mallocLeak (0x3f8c) và TestTool_print (0x3fcc)"
+        )
+
+        # 4. FDE[00] Init (0x1e00) & DiffCache / AllocCache Strings in .rodata (0x7b0c)
+        op_1e00 = struct.unpack_from("<4I", so_bytes, 0x1E00)
+        self.assert_test(
+            "Raphael_DiffCacheAndAllocCacheStrings",
+            op_1e00 == (0xA9BF7BFD, 0x910003FD, 0x52800300, 0x97FFFFB5)
+            and b"Alloc cache is full!!!!!!!!" in so_bytes
+            and b"DiffCache print space_: %s" in so_bytes
+            and b"sigsegv_buf key create failed" in so_bytes,
+            "Khớp FDE[00] (0x1e00) và các chuỗi chẩn đoán AllocCache / DiffCache / sigsegv_buf tại .rodata (0x7b0c)"
+        )
+
+        # 5. ByteHook & NPTH Unwind Integration & /proc/self/maps Dumper
+        self.assert_test(
+            "Raphael_ByteHookAndNpthUnwindIntegration",
+            b"dump maps failed, can't open /proc/self/maps" in so_bytes
+            and b"started >>> CONFIG = %x" in so_bytes
+            and "HashAllocAddress" in content and "InsertAllocCacheNode" in content,
+            "Khớp bộ chặn cấp phát ByteHook, bộ tháo gỡ ngăn xếp npth_unw và trình kết xuất /proc/self/maps"
+        )
+
+        # 6. ABI Structures (RaphaelConfig & AllocCacheNode) & 5,955 .text instruction words
+        self.assert_test(
+            "Raphael_AbiStructsAnd5955TextWords",
+            "RaphaelConfig" in content
+            and "AllocCacheNode" in content
+            and "kTextInstructions" in content
+            and "kElfImageBytes" in content,
+            "Khớp cấu trúc ABI RaphaelConfig (32 B), AllocCacheNode (160 B) và 5,955 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -15327,6 +15404,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_heap_tracker()
         self.verify_libfly_main_color_lib()
         self.verify_liblynxsecurity()
+        self.verify_libraphael()
         self.verify_overall_governance()
 
 

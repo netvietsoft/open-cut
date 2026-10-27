@@ -1,0 +1,39 @@
+{
+  "library": "libraphael.so",
+  "task_id": "TASK_SO_147_libraphael",
+  "orchestrator_task_id": "TASK-189-RECONSTRUCTION-LIBRAPHAEL",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "sha256": "928e64ccde02fdf0a1e8d12a35148a360f0952c6dc9dbb7df328004e636b6d8a",
+  "size_bytes": 51336,
+  "reconstructed_bytes": 906798,
+  "fde_count": 106,
+  "exported_symbols_count": 10,
+  "text_section": {
+    "vaddr": "0x1e00",
+    "size": 23820,
+    "instructions": 5955
+  },
+  "rodata_section": {
+    "vaddr": "0x7b0c",
+    "size": 1193
+  },
+  "opcode_evidence": {
+    "JNI_OnLoad_0x3ecc": "0xd10103ff",
+    "mallocLeak_0x3f8c": "0xa9bf7bfd",
+    "TestTool_print_0x3fcc": "0xa9be4ff4"
+  },
+  "mathematical_proofs": [
+    "AllocCache pointer hash: ((addr >> 4) ^ (addr >> 16)) & bucket_mask for 16-byte aligned heap addresses.",
+    "TestTool_mallocLeak allocation constant: mov w0, #0x800; movk w0, #7, lsl #16 -> 0x70800 = 460,800 bytes (@ 0x3f98..0x3f9c)."
+  ],
+  "abi_layouts": [
+    {
+      "struct": "RaphaelConfig",
+      "size_bytes": 32
+    },
+    {
+      "struct": "AllocCacheNode",
+      "size_bytes": 160
+    }
+  ]
+}
