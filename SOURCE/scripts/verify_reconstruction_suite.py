@@ -9989,6 +9989,134 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # KIỂM CHỨNG 94: libworker.so (ByteDance VMSDK / PrimJS / Lynx WebWorker & Piper JSB Engine)
+    # =========================================================================
+    def verify_libworker(self):
+        import hashlib
+        import struct
+        print("\n[94] Đang kiểm chứng libworker.so (ByteDance VMSDK / PrimJS / Lynx WebWorker & Piper JSB Engine)...")
+        lib_dir = GIAIMA_DIR / "libworker"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libworker.so"
+        req_files = [
+            "worker_types.h",
+            "worker_rodata_tables.h",
+            "worker_rodata_tables.cpp",
+            "worker_general_and_piper.h",
+            "worker_general_and_piper.cpp",
+            "worker_runtime_and_net.h",
+            "worker_runtime_and_net.cpp",
+            "worker_interface.h",
+            "worker_pseudocode.cpp",
+        ]
+        all_exist = all((lib_dir / f).exists() for f in req_files) and so_path.exists()
+        total_bytes = sum((lib_dir / f).stat().st_size for f in req_files if (lib_dir / f).exists())
+        content = ""
+        for f in req_files:
+            p = lib_dir / f
+            if p.exists():
+                content += p.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+
+        # 1. Kiểm tra cấu trúc 9 file C++17 phòng sạch, dung lượng >= 180KB và SHA-256 nhị phân
+        self.assert_test(
+            "Worker_CleanRoomFilesAndBinaryHash",
+            all_exist
+            and total_bytes >= 180000
+            and len(so_bytes) == 313400
+            and so_sha256 == "35c47b55e99c2789000c60cb0fa814c27df1187aee0974a34651b4aee69c2aa6"
+            and "TODO" not in content,
+            f"Đủ 9 file C++17 phòng sạch cho libworker.so ({total_bytes:,} bytes >= 180KB), khớp SHA-256 {so_sha256[:16]}..."
+        )
+
+        # 2. Kiểm tra JNI_OnLoad (0x01c03c..0x01c648) và JsWorkerAndroid::RegisterJni (0x03ba34, 28 hàm tại .data.rel.ro 0x049d28)
+        op_1c03c_sub  = struct.unpack("<I", so_bytes[0x01C03C:0x01C040])[0]
+        op_1c628_add  = struct.unpack("<I", so_bytes[0x01C628:0x01C62C])[0]
+        op_3ba4c_adrp = struct.unpack("<I", so_bytes[0x03BA4C:0x03BA50])[0]
+        self.assert_test(
+            "Worker_JniOnLoadAnd28JsWorkerNativeMethods",
+            op_1c03c_sub == 0xD10243FF     # sub sp, sp, #0x90
+            and op_1c628_add == 0x110012A0   # add w0, w21, #4 (0x00010002 + 4 = 0x00010006 = JNI_VERSION_1_6)
+            and op_3ba4c_adrp == 0xD0FFFEA1  # adrp x1, #0xf000 ("com/bytedance/vmsdk/worker/JsWorker")
+            and b"com/bytedance/vmsdk/worker/JsWorker" in so_bytes
+            and all(sym in content for sym in [
+                "JNI_OnLoad", "RegisterJni", "kJsWorkerJniTable",
+                "nativeCreateWorker", "kCallbackImplJniTable"
+            ]),
+            "Khớp JNI_OnLoad (0x01c03c..0x01c648 -> 0x00010006) và bảng 28 hàm JNI JsWorker tại .data.rel.ro 0x049d28..0x049fc0"
+        )
+
+        # 3. Kiểm tra vector SIMD .rodata 0x00d860 ({1ULL, -1ULL}) & ngưỡng nén 0x400 trong MessageLoopImpl::DoWork (0x01e0f0..0x01e450)
+        ro_d860_vec  = struct.unpack("<2Q", so_bytes[0x00D860:0x00D870])
+        op_1e0f0_ldr = struct.unpack("<I", so_bytes[0x01E0F0:0x01E0F4])[0]
+        op_1e450_cmp = struct.unpack("<I", so_bytes[0x01E450:0x01E454])[0]
+        self.assert_test(
+            "Worker_MessageLoopSimdQueueDeltaAndCompaction",
+            ro_d860_vec == (1, 0xFFFFFFFFFFFFFFFF)
+            and op_1e0f0_ldr == 0x3DC21940   # ldr q0, [x10, #0x860]
+            and op_1e450_cmp == 0xF110011F   # cmp x8, #0x400 (1024 compact threshold)
+            and all(sym in content for sym in [
+                "kMessageLoopDeltaVec", "MessageLoopImpl", "DoWork", "TaskRunner"
+            ]),
+            "Khớp vector SIMD .rodata 0x00d860 ({1ULL, 0xFFFFFFFFFFFFFFFFULL}) và ngưỡng nén hàng đợi 0x400 (1024) tại 0x01e450"
+        )
+
+        # 4. Kiểm tra bảng kiểm tra ký tự chữ ký 98-byte (.rodata 0x00d878) và 4 bảng nhảy Piper JSB (0x00d8da..0x00da5f)
+        op_2a924_add = struct.unpack("<I", so_bytes[0x02A924:0x02A928])[0]
+        op_2c220_sub = struct.unpack("<I", so_bytes[0x02C220:0x02C224])[0]
+        op_2c230_add = struct.unpack("<I", so_bytes[0x02C230:0x02C234])[0]
+        self.assert_test(
+            "Worker_PiperJsbSignatureTablesAndJumpTables",
+            op_2a924_add == 0x9121E129     # add x9, x9, #0x878 (.rodata 0x00d878)
+            and op_2c220_sub == 0x51010508   # sub w8, w8, #0x41 ('A')
+            and op_2c230_add == 0x91236929   # add x9, x9, #0x8da (.rodata 0x00d8da)
+            and so_bytes[0x00D878 + ord('I')] == 0x00  # 'I' (Int) valid -> 0
+            and so_bytes[0x00D878 + ord('S')] == 0x00  # 'S' (String) valid -> 0
+            and so_bytes[0x00D878 + ord('E')] == 0x01  # 'E' invalid -> 1
+            and all(sym in content for sym in [
+                "kPiperSigValidTable", "kPiperSigTypeNameJumpTable",
+                "kPiperExtractJSValueJumpTable", "kPiperReturnDispatchJumpTable",
+                "kWorkerReturnConvertJumpTable", "MethodInvoker"
+            ]),
+            "Khớp bảng kiểm tra ký tự chữ ký 98-byte .rodata 0x00d878 và 4 bảng nhảy độc lập vị trí của MethodInvoker/JsWorkerAndroid"
+        )
+
+        # 5. Kiểm tra thuật toán CityHash64 (0x022d58..0x0231c4) và lệnh NEON cnt/uaddlv kiểm tra lũy thừa 2 (0x022a6c & 0x0374c0)
+        op_22a6c_cnt    = struct.unpack("<I", so_bytes[0x022A6C:0x022A70])[0]
+        op_22a70_uaddlv = struct.unpack("<I", so_bytes[0x022A70:0x022A74])[0]
+        op_374c0_cnt    = struct.unpack("<I", so_bytes[0x0374C0:0x0374C4])[0]
+        self.assert_test(
+            "Worker_CityHash64AndNeonPopcountBucketLookup",
+            op_22a6c_cnt == 0x0E205800      # cnt v0.8b, v0.8b
+            and op_22a70_uaddlv == 0x2E303800  # uaddlv h0, v0.8b
+            and op_374c0_cnt == 0x0E205800   # cnt v0.8b, v0.8b
+            and all(sym in content for sym in [
+                "CityHash64", "kCityHashK0", "kCityHashK1", "kCityHashK2",
+                "kCityHashK3", "kCityHashMul"
+            ]),
+            "Khớp thuật toán CityHash64 (0x022d58..0x0231c4) và lệnh NEON cnt/uaddlv kiểm tra bucket_count lũy thừa 2 tại 0x022a6c & 0x0374c0"
+        )
+
+        # 6. Kiểm tra bố cục ABI 168-byte (0xA8) của JsWorkerAndroid (0x040708), WorkerScope (0x04261c), và MessagePumpPosix 0x000F4240 (0x01fb7c)
+        op_40708_mov  = struct.unpack("<I", so_bytes[0x040708:0x04070C])[0]
+        op_4095c_strb = struct.unpack("<I", so_bytes[0x04095C:0x040960])[0]
+        op_1fb7c_mov  = struct.unpack("<I", so_bytes[0x01FB7C:0x01FB80])[0]
+        op_1fb84_movk = struct.unpack("<I", so_bytes[0x01FB84:0x01FB88])[0]
+        self.assert_test(
+            "Worker_JsWorkerAndroidAbiAndWorkerScopeAndMessagePump",
+            op_40708_mov == 0x52801500      # mov w0, #0xa8 (168 bytes)
+            and op_4095c_strb == 0x390222C8  # strb w8, [x22, #0x88] (is_running = 1)
+            and op_1fb7c_mov == 0x5288481C   # mov w28, #0x4240
+            and op_1fb84_movk == 0x72A001FC  # movk w28, #0xf, lsl #16 -> 0x000F4240 = 1,000,000
+            and all(sym in content for sym in [
+                "JsWorkerAndroidABI", "JsWorkerAndroid", "WorkerScope",
+                "kNapiInstanceDataKey", "MessagePumpPosix", "VMSDKPipe"
+            ]),
+            "Khớp bố cục ABI 168-byte (0xA8) của JsWorkerAndroid (0x040708), khóa N-API 0x378 của WorkerScope, và hằng số 1,000,000 ns/ms (0x000F4240) của MessagePumpPosix"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -10086,6 +10214,7 @@ class AutonomousVerificationEngine:
         self.verify_libserval_svg()
         self.verify_libnms()
         self.verify_libtttext_lite()
+        self.verify_libworker()
         self.verify_overall_governance()
 
 

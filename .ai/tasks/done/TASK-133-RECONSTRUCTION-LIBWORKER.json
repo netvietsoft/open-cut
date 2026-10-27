@@ -1,0 +1,43 @@
+{
+  "task_id": "TASK-133-RECONSTRUCTION-LIBWORKER",
+  "legacy_task_id": "TASK_SO_071_libworker",
+  "title": "Clean-Room C++17 Reconstruction & Adversarial Proof of libworker.so (VMSDK / PrimJS JsWorkerAndroid & WorkerScope Engine)",
+  "status": "COMPLETED",
+  "assigned_agent": "Agent 0 (Orchestrator) & Agent 3 (Android/C++ Native) & Agent 13 (Adversary Auditor)",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libworker.so",
+  "size_bytes": 313400,
+  "sha256": "35c47b55e99c2789000c60cb0fa814c27df1187aee0974a34651b4aee69c2aa6",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libworker/*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_071_libworker.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_071_libworker.md",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libworker.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libworker.md",
+    "SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libworker.json",
+    "SOURCE/PHAN-BIEN/YEU-CAU-CHUNG-MINH/CHALLENGE_libworker.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/AUDIT_SUMMARY.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "acceptance_criteria": [
+    "Gate 1: Clean-room C++17 source >= 40 KB in SOURCE/GIAI-MA/libworker/ with 0 empty stubs and bilingual EN/VN documentation (Rule 12).",
+    "Gate 2: Exact AArch64 opcode disassembly verification across JNI_OnLoad, vmsdk::general::android::*, vmsdk::worker::JsWorkerAndroid, vmsdk::worker::WorkerScope, and .eh_frame FDE internal functions.",
+    "Gate 3 & 4: Exact mathematical and ABI struct layout proofs in PROOF_libworker.json and PROOF_libworker.md.",
+    "Gate 5: Complete exported/imported symbol and .data.rel.ro RTTI/vtable analysis.",
+    "Gate 6: Independent verification tests in verify_reconstruction_suite.py passing 100% and certified VERIFIED_AND_ACCEPTED by adversary_critic_agent.py."
+  ],
+  "completed_at": "2026-10-27T14:05:00+07:00",
+  "verification_metrics": {
+    "reconstructed_cpp_bytes": 555108,
+    "opcode_count": 3803,
+    "exported_symbols": 54,
+    "fde_count": 572,
+    "stub_count": 0,
+    "verified_libraries": "94/169 (55.62%)",
+    "test_suite_result": "599/599 PASS (100.0%)",
+    "native_watchdog_high_findings": 0
+  }
+}

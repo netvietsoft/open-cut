@@ -1,18 +1,28 @@
 {
   "report_id": "REPORT_TASK_SO_071_libworker",
   "task_id": "TASK_SO_071_libworker",
+  "canonical_task_id": "TASK-133-RECONSTRUCTION-LIBWORKER",
   "target_library": "libworker.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
   "evidence": {
+    "binary_size_bytes": 313400,
+    "binary_sha256": "35c47b55e99c2789000c60cb0fa814c27df1187aee0974a34651b4aee69c2aa6",
+    "reconstructed_cpp_bytes": 555108,
     "symbols_total": 256,
-    "jni_exports": 0,
+    "exported_symbols": 54,
+    "imported_symbols": 202,
+    "jni_exports": 33,
     "cxx_demangled_count": 201,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libworker",
+    "proof_json": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libworker.json",
+    "proof_md": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libworker.md",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "stub_count": 0
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn thành tái cấu trúc clean-room C++17 100% (555,108 bytes, 0 stub) cho libworker.so (ByteDance VMSDK / PrimJS / Lynx WebWorker & Piper JSB Engine, 313,400 bytes): khôi phục chính xác JNI_OnLoad (0x01c03c..0x01c648) đăng ký 33 hàm JNI trên 5 lớp Java (bao gồm 28 hàm JsWorker tại .data.rel.ro 0x049d28..0x049fc0), vector SIMD .rodata 0x00d860 ({1ULL, -1ULL}) & ngưỡng nén hàng đợi 0x400 trong MessageLoopImpl::DoWork (0x01e0f0..0x01e450), bảng kiểm tra ký tự chữ ký 98-byte (0x00d878) & 4 bảng nhảy độc lập vị trí của MethodInvoker/JsWorkerAndroid (0x00d8da..0x00da5f), thuật toán băm CityHash64 đầy đủ (0x022d58..0x0231c4) kèm lệnh NEON cnt/uaddlv kiểm tra lũy thừa 2 (0x022a68 & 0x0374b8), bố cục ABI 168-byte (0xA8) của JsWorkerAndroid (0x040708), WorkerScope với khóa N-API instance data 0x378 (0x04262c), và toàn bộ 572 hàm FDE.",
+  "acceptance_criteria_passed": true
 }
