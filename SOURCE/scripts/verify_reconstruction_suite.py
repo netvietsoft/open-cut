@@ -13966,6 +13966,92 @@ class AutonomousVerificationEngine:
             "Khớp FDE[03] JNI_OnUnload (ret @ 0x1700), chuỗi .rodata 'custom_verify.c' (0x171f) và 341 lệnh .text"
         )
 
+    def verify_libhelios_bm(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libhelios_bm.so (ByteDance Helios Binder Monitor & ArtMethod Hook Engine)")
+        print("="*70)
+
+        helios_dir = GIAIMA_DIR / "libhelios_bm"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libhelios_bm.so"
+
+        files = [
+            "helios_bm.h",
+            "helios_bm_core.cpp",
+            "helios_bm_elf_sections_and_image.cpp",
+        ]
+        all_exist = all((helios_dir / f).exists() for f in files)
+        total_size = sum((helios_dir / f).stat().st_size for f in files if (helios_dir / f).exists())
+
+        # 1. File existence & size > 180 KB (> 40 KB gate) & zero old stubs
+        self.assert_test(
+            "HeliosBm_CleanRoomFilesAndSize",
+            all_exist and total_size > 180000 and not (helios_dir / "helios_bm_pseudocode.cpp").exists(),
+            f"Đầy đủ 3 file C++17/H trong GIAI-MA/libhelios_bm ({total_size:,} bytes > 180 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (18,424 B) and .eh_frame_hdr 22 FDEs @ 0x2710
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x2718)[0]
+        self.assert_test(
+            "HeliosBm_BinarySha256AndEhFrame22FDEs",
+            len(so_bytes) == 18424
+            and sha256_hex == "79a0bb7b7d00a64fe4f0c0182d5416ab2515768f0262c23578d436c792a20e90"
+            and eh_fde_count == 22,
+            f"Khớp kích thước 18,424 bytes, SHA-256 ({sha256_hex[:16]}...) và 22 FDEs tại .eh_frame_hdr 0x2710"
+        )
+
+        content = ""
+        for f in files:
+            fp = helios_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[01..05] TLS Guard (ldarb @ 0x0bc4, stlrb @ 0x0c14) & HookArtMethodEntrypoint (stlr x19, [x8] @ 0x0d68)
+        ldarb_w8 = struct.unpack_from("<I", so_bytes, 0x0bc4)[0]
+        stlrb_w8 = struct.unpack_from("<I", so_bytes, 0x0c14)[0]
+        stlr_x19 = struct.unpack_from("<I", so_bytes, 0x0d68)[0]
+        self.assert_test(
+            "HeliosBm_TlsGuardAndAtomicArtMethodHook",
+            ldarb_w8 == 0x08DFFE68 and stlrb_w8 == 0x089FFE68 and stlr_x19 == 0xC89FFD13
+            and "GetOrInitThreadLocalCounter" in content and "HookArtMethodEntrypoint" in content,
+            "Khớp FDE[01..05] TLS Re-entrancy Guard (ldarb @ 0x0bc4, stlrb @ 0x0c14) và HookArtMethodEntrypoint (stlr x19, [x8] @ 0x0d68)"
+        )
+
+        # 4. Struct allocations: HeliosJniReflectionCache (0x128 = 296B @ 0x1170) & HeliosGlobalState (0x28 = 40B @ 0x1be8)
+        alloc_128 = struct.unpack_from("<I", so_bytes, 0x1170)[0]
+        alloc_28  = struct.unpack_from("<I", so_bytes, 0x1be8)[0]
+        self.assert_test(
+            "HeliosBm_StructAllocationsAndAbi",
+            alloc_128 == 0x52802500 and alloc_28 == 0x52800500
+            and "HeliosJniReflectionCache" in content and "HeliosGlobalState" in content,
+            "Khớp cấp phát HeliosJniReflectionCache (0x128 = 296B @ 0x1170) và HeliosGlobalState (0x28 = 40B @ 0x1be8)"
+        )
+
+        # 5. ArtMethod JNI offset scanner (subs x22, x24, x0 @ 0x19f0; cneg x26, x22, mi @ 0x1a0c) & SDK 30 threshold (0x0e1c)
+        subs_x22 = struct.unpack_from("<I", so_bytes, 0x19f0)[0]
+        cneg_x26 = struct.unpack_from("<I", so_bytes, 0x1a0c)[0]
+        cmp_1e   = struct.unpack_from("<I", so_bytes, 0x0e1c)[0]
+        self.assert_test(
+            "HeliosBm_ArtMethodOffsetScannerAndSdk30",
+            subs_x22 == 0xEB000316 and cneg_x26 == 0xDA9656DA and cmp_1e == 0x7100791F
+            and "DiscoverArtMethodJniCodeOffset" in content,
+            "Khớp bộ quét khoảng cách ArtMethod (subs/cneg @ 0x19f0..0x1a0c) và kiểm tra SDK >= 30 (cmp w8, #0x1e @ 0x0e1c)"
+        )
+
+        # 6. Exported symbols _Z10nativeInitP7_JNIEnv (0x1c0c) & JNI_OnLoad (0x1eac: 0x00010006 @ 0x1edc..0x1ef0, SDK >= 28 @ 0x1f44) & 1,467 .text words
+        jni_lo = struct.unpack_from("<I", so_bytes, 0x1edc)[0]
+        jni_hi = struct.unpack_from("<I", so_bytes, 0x1ef0)[0]
+        cmp_1c = struct.unpack_from("<I", so_bytes, 0x1f44)[0]
+        self.assert_test(
+            "HeliosBm_ExportsJniOnLoadAndFull1467TextWords",
+            jni_lo == 0x528000D3 and jni_hi == 0x72A00033 and cmp_1c == 0x7100701F
+            and "_Z10nativeInitP7_JNIEnv" in content and "JNI_OnLoad" in content and "kHeliosBmTextWords1467" in content,
+            "Khớp _Z10nativeInitP7_JNIEnv (0x1c0c), JNI_OnLoad (0x1eac, 0x00010006, SDK >= 28 @ 0x1f44) và 1,467 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14105,6 +14191,7 @@ class AutonomousVerificationEngine:
         self.verify_libpush_ka()
         self.verify_libsys_platform()
         self.verify_libvcnverify()
+        self.verify_libhelios_bm()
         self.verify_overall_governance()
 
 

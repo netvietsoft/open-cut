@@ -1,0 +1,26 @@
+{
+  "task_id": "TASK-174-RECONSTRUCTION-LIBHELIOS-BM",
+  "so_task_id": "TASK_SO_157_libhelios_bm",
+  "title": "Clean-Room C++17 Reconstruction of libhelios_bm.so (Target 135 / 169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "target_library": "libhelios_bm.so",
+  "size_bytes": 18424,
+  "sha256": "79a0bb7b7d00a64fe4f0c0182d5416ab2515768f0262c23578d436c792a20e90",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libhelios_bm/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libhelios_bm.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_157_libhelios_bm.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "completed_at": "2026-10-27T20:46:16.697518+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (135/169)",
+    "reconstruction_suite": "845/845 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 260227,
+    "fde_count": 22,
+    "exported_symbols": 2,
+    "stub_count": 0
+  }
+}

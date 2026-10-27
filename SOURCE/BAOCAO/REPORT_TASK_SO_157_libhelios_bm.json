@@ -1,18 +1,25 @@
 {
   "report_id": "REPORT_TASK_SO_157_libhelios_bm",
   "task_id": "TASK_SO_157_libhelios_bm",
+  "governance_task_id": "TASK-174-RECONSTRUCTION-LIBHELIOS-BM",
   "target_library": "libhelios_bm.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 24,
-    "jni_exports": 0,
-    "cxx_demangled_count": 1,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libhelios_bm",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "library": "libhelios_bm.so",
+  "sha256": "79a0bb7b7d00a64fe4f0c0182d5416ab2515768f0262c23578d436c792a20e90",
+  "size_bytes": 18424,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "reconstructed_code_bytes": 260227,
+  "fde_count": 22,
+  "instruction_count": 1467,
+  "exported_symbols": [
+    "JNI_OnLoad",
+    "_Z10nativeInitP7_JNIEnv"
+  ],
+  "files_generated": [
+    "helios_bm.h",
+    "helios_bm_core.cpp",
+    "helios_bm_elf_sections_and_image.cpp",
+    "README_ANALYSIS.md"
+  ],
+  "acceptance_criteria_passed": true
 }
