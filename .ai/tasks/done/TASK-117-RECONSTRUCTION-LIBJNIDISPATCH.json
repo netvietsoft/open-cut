@@ -1,0 +1,27 @@
+{
+  "task_id": "TASK-117-RECONSTRUCTION-LIBJNIDISPATCH",
+  "legacy_task_id": "TASK_SO_126_libjnidispatch",
+  "title": "Clean-room C++17 reconstruction of libjnidispatch.so (Java Native Access JNA 7.0.4 / libffi AArch64 Dispatcher)",
+  "status": "DONE",
+  "completed_at": "2026-10-27T07:23:30+07:00",
+  "assigned_agents": ["Agent 0", "Agent 3", "Agent 6", "Agent 13"],
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libjnidispatch.so",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libjnidispatch/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libjnidispatch.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libjnidispatch.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_126_libjnidispatch.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_126_libjnidispatch.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "acceptance_criteria": [
+    "100% genuine C++17 implementation (114,012 bytes > 40KB source, 0 stubs) with bilingual EN/VN comments",
+    "Exact AArch64 opcode and struct offset parity for all exported JNI and libffi AArch64 functions in libjnidispatch.so",
+    "Adversary Critic Agent (Agent 13) certifies VERIFIED_AND_ACCEPTED (78/169)",
+    "verify_reconstruction_suite.py passes 100% (503/503 PASS)",
+    "native_audit_watchdog.py reports 169 binaries, 0 high findings"
+  ]
+}

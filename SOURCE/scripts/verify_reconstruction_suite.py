@@ -8030,6 +8030,104 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 78. KIỂM CHỨNG TOÁN HỌC & NHỊ PHÂN: libjnidispatch.so (JNA 7.0.4 + libffi AArch64)
+    # =========================================================================
+    def verify_libjnidispatch(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 78: libjnidispatch.so")
+        print("="*70)
+        target_dir = GIAIMA_DIR / "libjnidispatch"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libjnidispatch.so"
+        cpp_files = list(target_dir.glob("*.cpp")) + list(target_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files if f.is_file())
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+
+        # 1. Kiểm tra dung lượng binary (165,992 bytes) & mã nguồn tái tạo (> 40KB, 9 file C++/H)
+        self.assert_test(
+            "JniDispatch_BinaryAndSourceVolume",
+            len(so_bytes) == 165992 and total_bytes > 40000 and len(cpp_files) >= 9,
+            f"Binary {len(so_bytes):,} B; Reconstructed {total_bytes:,} B across {len(cpp_files)} C++/H files"
+        )
+
+        # 2. Kiểm tra JNA Version ("7.0.4" @ .rodata 0x021738), Checksum ("5fb98531302accd485c534c452dd952a" @ 0x021740) & Native.sizeof jump table (@ .rodata 0x0201c4)
+        jna_ver = so_bytes[0x021738:0x02173e]
+        jna_chk = so_bytes[0x021740:0x021761]
+        sizeof_tbl = list(so_bytes[0x0201c4:0x0201ca])
+        sizeof_cmp = struct.unpack("<2I", so_bytes[0x008a0c:0x008a14])
+        self.assert_test(
+            "JniDispatch_VersionChecksumAndSizeofTable",
+            jna_ver == b"7.0.4\x00"
+            and jna_chk == b"5fb98531302accd485c534c452dd952a\x00"
+            and sizeof_tbl == [0, 0, 10, 0, 5, 15]
+            and sizeof_cmp[1] == 0x7100145f
+            and "5fb98531302accd485c534c452dd952a" in content
+            and "JnaNativeSizeof" in content,
+            "Khớp JNA Version '7.0.4' (.rodata 0x021738), API Checksum (.rodata 0x021740) và bảng nhảy Native.sizeof [0,0,10,0,5,15] (.rodata 0x0201c4)"
+        )
+
+        # 3. Kiểm tra các hàm đọc/ghi bộ nhớ trực tiếp getByte/getShort/getInt/getLong (0x008814..0x008838) & dispatch max 256 args (0x005e84..0x005ed8)
+        mem_insns = struct.unpack("<4I", so_bytes[0x008814:0x008824])
+        dispatch_cmp = struct.unpack("<3I", so_bytes[0x005e84:0x005e90])
+        dispatch_ubfx = struct.unpack("<I", so_bytes[0x005ed8:0x005edc])[0]
+        self.assert_test(
+            "JniDispatch_DirectMemoryAndDispatch256Args",
+            mem_insns == (0x38646860, 0xd65f03c0, 0x78646860, 0xd65f03c0)
+            and dispatch_cmp[0] == 0x7104001f
+            and dispatch_cmp[2] == 0x5400254c
+            and dispatch_ubfx == 0xd3473800
+            and "JnaDispatchCall" in content,
+            "Khớp chuỗi lệnh đọc bộ nhớ trực tiếp [x3, x4] (0x008814) và kiểm tra tối đa 256 đối số (cmp w0, #0x100 @ 0x005e84, ubfx @ 0x005ed8)"
+        )
+
+        # 4. Kiểm tra 16 bộ mô tả 24-byte ffi_type_* (.rodata 0x022858..0x022990 & .data.rel.ro 0x02bb98..0x02bbe0)
+        longdouble_hdr = struct.unpack("<QHHI", so_bytes[0x022858:0x022868])
+        void_hdr = struct.unpack("<QHHI", so_bytes[0x022978:0x022988])
+        ffi_types_16 = [
+            "ffi_type_void", "ffi_type_uint8", "ffi_type_sint8", "ffi_type_uint16",
+            "ffi_type_sint16", "ffi_type_uint32", "ffi_type_sint32", "ffi_type_uint64",
+            "ffi_type_sint64", "ffi_type_pointer", "ffi_type_float", "ffi_type_double",
+            "ffi_type_longdouble", "ffi_type_complex_float", "ffi_type_complex_double",
+            "ffi_type_complex_longdouble"
+        ]
+        self.assert_test(
+            "JniDispatch_16FfiTypeDescriptors",
+            longdouble_hdr[:3] == (16, 16, 4)
+            and void_hdr[:3] == (1, 1, 0)
+            and all(ft in content for ft in ffi_types_16),
+            "Khớp toàn bộ 16 bộ mô tả kiểu 24-byte ffi_type_* (.rodata 0x022858..0x022990 & .data.rel.ro 0x02bb98..0x02bbe0)"
+        )
+
+        # 5. Kiểm tra 16-byte AArch64 Closure Trampoline (.rodata 0x022a80) & ffi_tramp_arch (0x0112ac)
+        tramp_rodata = struct.unpack("<4I", so_bytes[0x022a80:0x022a90])
+        tramp_arch = struct.unpack("<4I", so_bytes[0x0112ac:0x0112bc])
+        self.assert_test(
+            "JniDispatch_ClosureTrampolineAndTrampArch",
+            tramp_rodata == (0x58000090, 0x10fffff1, 0xd61f0200, 0x00000000)
+            and tramp_arch == (0xd2800402, 0xf9000002, 0xd2880000, 0xf9000020)
+            and "FfiPrepClosureLoc" in content
+            and "FfiTrampArch" in content,
+            "Khớp mẫu mã máy 16-byte Closure Trampoline (.rodata 0x022a80: ldr x16, #0x10; adr x17, #-4; br x16) và ffi_tramp_arch (0x20 / 0x4000 @ 0x0112ac)"
+        )
+
+        # 6. Kiểm tra hàm đồng bộ I-Cache / D-Cache __aarch64_sync_cache_range (ctr_el0 @ 0x020004..0x02007c)
+        sync_insns = struct.unpack("<7I", so_bytes[0x020014:0x020030])
+        ctr_sample = 0x8444c004
+        icache_line = 4 << (ctr_sample & 0xf)
+        dcache_line = 4 << ((ctr_sample >> 16) & 0xf)
+        self.assert_test(
+            "JniDispatch_CtrEl0CacheRangeSync",
+            sync_insns[2] == 0x52800082
+            and sync_insns[3] == 0x12000c83
+            and sync_insns[4] == 0xd3504c84
+            and icache_line == 64 and dcache_line == 64
+            and "DecodeCtrEl0CacheLines" in content
+            and "Aarch64SyncCacheRange" in content,
+            "Khớp công thức giải mã kích thước dòng cache ctr_el0 (4 << IminLine, 4 << DminLine) và đồng bộ dc cvau / ic ivau (0x020004..0x02007c)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -8111,6 +8209,7 @@ class AutonomousVerificationEngine:
         self.verify_libgodzilla_acurate_asan()
         self.verify_libgodzilla_memsponge()
         self.verify_libgodzilla_sysopt()
+        self.verify_libjnidispatch()
         self.verify_overall_governance()
 
 

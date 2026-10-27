@@ -2370,3 +2370,16 @@
   - `adversary_critic_agent.py`: **77 / 169 `VERIFIED_AND_ACCEPTED` (45.56%)** (`100% REAL`).
   - `verify_reconstruction_suite.py`: **497 / 497 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 105. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libjnidispatch.so (TASK-117-RECONSTRUCTION-LIBJNIDISPATCH / TASK_SO_126_libjnidispatch)
+- **Thời gian**: 2026-10-27 07:23:30
+- **Thư viện**: `libjnidispatch.so` (`165,992 bytes`, SHA-256 `ddfc6c965bbe366615c000ec1f06552ddf0bb2b4f9d921d0bff8c75b3cb2ca4c`, `.text` `0x004000..0x020080` = `114,816 bytes`, `28,704` instructions, 153 exported `.dynsym` symbols across JNA 7.0.4 and libffi AArch64).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `114,012 bytes` C++17/H, 0 stub)**:
+  1. **JNA 7.0.4 Metadata, `Native.sizeof` Jump Table & Direct Memory Primitives (`0x008814..0x009844`)**: Khôi phục `getNativeVersion` (`"7.0.4"` @ `.rodata 0x021738`), `getAPIChecksum` (`"5fb98531302accd485c534c452dd952a"` @ `.rodata 0x021740`), bảng nhảy 6 mục của `Java_com_sun_jna_Native_sizeof` tại `.rodata 0x0201c4` (`[0, 0, 10, 0, 5, 15]` trả về `8` cho `0, 1, 3`; `4` cho `2`; `1` cho `4`; `16` cho `5`; và `-1` kèm `IllegalArgumentException` khi `type > 5`), cùng chuỗi lệnh đọc/ghi bộ nhớ trực tiếp `[x3, x4]` (`ldrb/ldrh/ldr/strb/strh/str` tại `0x008814..0x008974`).
+  2. **Dynamic Invocation `dispatch`, Type Marshaling & Callback Engine (`0x005860..0x00cd5c`)**: Kiểm tra giới hạn `nargs <= 0x100` (`256` đối số tại `0x005e84`), trích xuất số đối số cố định variadic qua `ubfx x0, x0, #7, #8` (`0x005ed8`), chuyển đổi kiểu dữ liệu 2 chiều Java <-> Native (`get_conversion_flag`, `toNative`, `fromNative`), tạo/giải phóng Closure Callback (`create_callback` `0x00c4b8`, `free_callback` `0x00c3fc`), và quản lý mã lỗi hệ thống theo luồng (`JNA_set_last_error` `0x00cc50`, `JNA_get_last_error` `0x00cc74`, `JNA_detach` `0x00cbec`).
+  3. **16 Global 24-Byte `ffi_type_*` Descriptors & libffi AArch64 AAPCS64 Engine (`0x00ce60..0x02007c`)**: Khôi phục 13 bộ mô tả `ffi_type_*` vô hướng trong `.rodata 0x022858..0x022990` và 3 bộ mô tả `ffi_type_complex_*` trong `.data.rel.ro 0x02bb98..0x02bbe0`, bộ phân loại HFA AAPCS64 (`0x010724`), khung thanh ghi `call_context` `192 bytes` (`0xc0`: `v0..v7` tại `+0x00..0x7f`, `x0..x7` tại `+0x80..0xbf`), mẫu mã máy 16-byte Closure Trampoline tại `.rodata 0x022a80` (`0x58000090`, `0x10fffff1`, `0xd61f0200`, `0x00000000`), `ffi_tramp_arch` (`0x0112ac`: `*tramp_size = 0x20`, `*map_size = 0x4000`), và `__aarch64_sync_cache_range` (`0x020004..0x02007c`: giải mã `ctr_el0` `4 << (ctr & 0xf)`, `4 << ((ctr >> 16) & 0xf)` và đồng bộ `dc cvau` / `ic ivau`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **78 / 169 `VERIFIED_AND_ACCEPTED` (46.15%)** (`286 opcodes`, `100% REAL`).
+  - `verify_reconstruction_suite.py`: **503 / 503 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
