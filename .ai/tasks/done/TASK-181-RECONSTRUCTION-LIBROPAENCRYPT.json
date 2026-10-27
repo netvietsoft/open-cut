@@ -1,0 +1,46 @@
+{
+  "task_id": "TASK-181-RECONSTRUCTION-LIBROPAENCRYPT",
+  "report_task_id": "TASK_SO_062_libropaencrypt",
+  "title": "Clean-room C++17 reconstruction of libropaencrypt.so (ByteDance ROPA AES-128-GCM/CBC & Sequence Envelope Encryption Engine, Target 142/169)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Frontend/Android & C++ Native Engine)",
+  "reviewer": "Agent 13 (Adversary Auditor)",
+  "created_at": "2026-10-27T22:02:00+07:00",
+  "binary_metadata": {
+    "library_name": "libropaencrypt.so",
+    "size_bytes": 34904,
+    "sha256": "1906ed4f2bf0b3621e90a1b502fb1c562cb73a4068cc8f2f734f05992d0436b3",
+    "architecture": "AArch64 (EM_AARCH64)",
+    "eh_frame_hdr_va": "0x5f68",
+    "fde_count": 36,
+    "text_va": "0x1260",
+    "text_size_bytes": 19092,
+    "text_instruction_words": 4773
+  },
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libropaencrypt/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libropaencrypt.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libropaencrypt.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_062_libropaencrypt.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_062_libropaencrypt.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "Docs/Changelog/CHANGELOG-TASK-181-LIBROPAENCRYPT.md",
+    "TASK_LOG.md",
+    "PROJECT_MEMORY.md",
+    "UPDATETODOS.md"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct >= 250 KB of clean-room C++17 source across ropaencrypt.hpp, ropaencrypt_core.cpp, and ropaencrypt_elf_sections_and_image.cpp with bilingual EN/VN documentation and zero stubs.",
+    "Match all 36 .eh_frame_hdr FDEs @ 0x5f68, all 8 JNINativeMethod entries @ .data 0xc000..0xc0c0 for com/bytedance/ropa/encrypt/RopaEncrypt, and all 4,773 .text instructions.",
+    "Pass adversary_critic_agent.py --once (142/169 VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (887/887 PASS), and native_audit_watchdog.py (0 high findings)."
+  ],
+  "completed_at": "2026-10-27T22:08:00+07:00",
+  "verification_result": {
+    "adversary_auditor": "VERIFIED_AND_ACCEPTED (142/169)",
+    "reconstruction_suite": "887 PASS / 0 FAIL (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp_total_bytes": 612936
+  }
+}

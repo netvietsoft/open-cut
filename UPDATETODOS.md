@@ -921,3 +921,5 @@
 - [x] **TASK-179 (`libvcnverifylite.so` — Target 140/169, `34,640 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`244,396 B`), đạt `140/169 VERIFIED_AND_ACCEPTED (82.84%)` và `875/875 PASS (100.0%)`.
 
 - [x] **TASK-180 (`libttmverifylite.so` — Target 141/169, `34,672 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`508,906 B`), đạt `141/169 VERIFIED_AND_ACCEPTED (83.43%)` và `881/881 PASS (100.0%)`.
+
+- [x] **TASK-181 (`libropaencrypt.so` — Target 142/169, `34,904 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`612,936 B`), đạt `142/169 VERIFIED_AND_ACCEPTED (84.02%)` và `887/887 PASS (100.0%)`.

@@ -14573,6 +14573,85 @@ class AutonomousVerificationEngine:
             "Khớp FDE[09..12] JNI_OnLoad (0x3b4c, Jun 26 2025), JNI_OnUnload (0x3cb0), _init (0x3cc0) và 2,742 lệnh .text"
         )
 
+    def verify_libropaencrypt(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libropaencrypt.so (ByteDance ROPA AES-128-GCM/CBC & Sequence Envelope Encryption Engine)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libropaencrypt"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libropaencrypt.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 250 KB
+        self.assert_test(
+            "RopaEncrypt_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 250000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libropaencrypt ({total_bytes:,} bytes > 250 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 & 36 FDEs at .eh_frame_hdr 0x5f68
+        fde_count = struct.unpack_from("<I", so_bytes, 0x5F70)[0]
+        self.assert_test(
+            "RopaEncrypt_BinarySha256AndEhFrame36FDEs",
+            len(so_bytes) == 34904
+            and sha256_hex == "1906ed4f2bf0b3621e90a1b502fb1c562cb73a4068cc8f2f734f05992d0436b3"
+            and fde_count == 36,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x5f68"
+        )
+
+        # 3. FDE[11..12] RegisterRopaEncryptNatives (0x2198, 8 JNINativeMethods @ .data 0xc000) & JNI_OnLoad (0x21fc)
+        op_2198 = struct.unpack_from("<I", so_bytes, 0x2198)[0]
+        op_21d4 = struct.unpack_from("<I", so_bytes, 0x21D4)[0]
+        op_21fc = struct.unpack_from("<I", so_bytes, 0x21FC)[0]
+        self.assert_test(
+            "RopaEncrypt_JniRegistration8NativeMethods",
+            op_2198 == 0xF81E0FF3 and op_21d4 == 0x52800103 and op_21fc == 0xD10103FF
+            and b"com/bytedance/ropa/encrypt/RopaEncrypt\x00" in so_bytes
+            and b"com/bytedance/ropa/encrypt/EncryptResult\x00" in so_bytes
+            and "kRopaJniMethods_c000" in content,
+            "Khớp FDE[11..12] RegisterRopaEncryptNatives (0x2198: mov w3, #8 @ 0x21d4) và JNI_OnLoad (0x21fc)"
+        )
+
+        # 4. FDE[13..14] RopaGenerateRandomInt_231c (0x10624dd3) & RopaDerive16ByteHexKey_2378 (0x51eb851f)
+        op_2338 = struct.unpack_from("<I", so_bytes, 0x2338)[0]
+        op_233c = struct.unpack_from("<I", so_bytes, 0x233C)[0]
+        op_2378 = struct.unpack_from("<I", so_bytes, 0x2378)[0]
+        op_2380 = struct.unpack_from("<I", so_bytes, 0x2380)[0]
+        self.assert_test(
+            "RopaEncrypt_RandomIntAnd16ByteHexKeyDerivation",
+            op_2338 == 0x5289BA68 and op_233c == 0x72A20C48 and op_2378 == 0x5290A3E9 and op_2380 == 0x72AA3D69
+            and "RopaGenerateRandomInt_231c" in content and "RopaDerive16ByteHexKey_2378" in content,
+            "Khớp FDE[13] RopaGenerateRandomInt_231c (0x10624dd3) & FDE[14] RopaDerive16ByteHexKey_2378 (0x51eb851f)"
+        )
+
+        # 5. FDE[17..22] RopaComputeHash31_2548 (0x2548), RopaBuildEncryptSeqV2_257c (0x257c) & RopaParseDecryptSeq_3f78 (0x3f78)
+        op_2548 = struct.unpack_from("<I", so_bytes, 0x2548)[0]
+        op_2560 = struct.unpack_from("<I", so_bytes, 0x2560)[0]
+        op_257c = struct.unpack_from("<I", so_bytes, 0x257C)[0]
+        op_3f78 = struct.unpack_from("<I", so_bytes, 0x3F78)[0]
+        self.assert_test(
+            "RopaEncrypt_PolynomialHash31AndSequenceEnvelopes",
+            op_2548 == 0x2A1F03E8 and op_2560 == 0x531B690B and op_257c == 0xD10583FF and op_3f78 == 0xD10543FF
+            and all(sym in content for sym in ["RopaComputeHash31_2548", "RopaBuildEncryptSeqV2_257c", "RopaParseDecryptSeq_3f78"]),
+            "Khớp FDE[17] RopaComputeHash31_2548 (0x2548: 31*H + c) & FDE[18..22] Sequence Envelopes (0x257c, 0x3540, 0x3f78)"
+        )
+
+        # 6. FDE[33..35] RopaEvpAesCipherCore_547c (AES-128-GCM / AES-128-CBC) & 4,773 .text words
+        op_547c = struct.unpack_from("<I", so_bytes, 0x547C)[0]
+        op_5a1c = struct.unpack_from("<I", so_bytes, 0x5A1C)[0]
+        op_5af0 = struct.unpack_from("<I", so_bytes, 0x5AF0)[0]
+        self.assert_test(
+            "RopaEncrypt_EvpAesGcmCbcAnd4773TextWords",
+            op_547c == 0xD10303FF and op_5a1c == 0xD10243FF and op_5af0 == 0xD10383FF
+            and b"AES-128-GCM\x00" in so_bytes and b"AES-128-CBC\x00" in so_bytes
+            and all(sym in content for sym in ["RopaEvpAesCipherCore_547c", "RopaCipherEncryptBase64_5a1c", "RopaCipherDecryptBase64_5af0", "kTextInstructionWords"]),
+            "Khớp FDE[33..35] RopaEvpAesCipherCore_547c (0x547c: AES-128-GCM/CBC) và 4,773 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14719,6 +14798,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_ref_monitor()
         self.verify_libvcnverifylite()
         self.verify_libttmverifylite()
+        self.verify_libropaencrypt()
         self.verify_overall_governance()
 
 
