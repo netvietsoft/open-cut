@@ -1,0 +1,40 @@
+{
+  "task_id": "TASK-164-RECONSTRUCTION-LIBFLIPPED",
+  "so_task_id": "TASK_SO_165_libflipped",
+  "title": "Clean-Room C++17 Reconstruction of libflipped.so (ByteDance Mira Plugin Hidden API Reflection Bypass FlippedV2Impl — Target 125 / 169)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "binary_info": {
+    "name": "libflipped.so",
+    "path": "SOURCE/apktool-res/lib/arm64-v8a/libflipped.so",
+    "size_bytes": 7320,
+    "sha256": "30aabc89f03ef6f8659469596f8a7e8cd65a1950b3bcc853e4caddcc92eb56b0",
+    "eh_frame_hdr_offset": "0x000a68",
+    "fde_count": 15,
+    "exported_symbols": 8
+  },
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libflipped/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libflipped.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libflipped.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_165_libflipped.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_165_libflipped.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of libflipped.so in clean-room C++17 (> 40 KB total source volume, 0 stubs)",
+    "Exact AArch64 opcode and ABI parity for all 8 exported symbols (LOGx3, AttachCurrentThread, DetachCurrentThread, GetDeclaredMethodInternal, GetDeclaredMethod, JNI_OnLoad) and 327 .text instructions",
+    "Pass adversary_critic_agent.py, verify_reconstruction_suite.py (785/785 PASS), and native_audit_watchdog.py"
+  ],
+  "completed_at": "2026-10-27T19:33:04.906539+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (125/169)",
+    "reconstruction_suite": "785/785 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 178317,
+    "fde_count": 15,
+    "exported_symbols": 8,
+    "stub_count": 0
+  }
+}

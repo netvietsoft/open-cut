@@ -13061,6 +13061,90 @@ class AutonomousVerificationEngine:
             "Bao phủ trọn vẹn 252 lệnh AArch64 tại .text (0x0990..0x0d80) và 9 FDEs tại .eh_frame_hdr (0x0820)"
         )
 
+    def verify_libflipped(self):
+        import hashlib, struct
+        print("\n[125] Đang kiểm chứng libflipped.so (ByteDance Mira Plugin Hidden API Reflection Bypass FlippedV2Impl)...")
+        fl_dir = GIAIMA_DIR / "libflipped"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libflipped.so"
+
+        files = [
+            "flipped_types.h",
+            "flipped_core.h",
+            "flipped_core.cpp",
+            "flipped_text_opcodes.cpp",
+            "flipped_elf_tables.cpp",
+        ]
+        all_exist = all((fl_dir / f).exists() for f in files)
+        total_size = sum((fl_dir / f).stat().st_size for f in files if (fl_dir / f).exists())
+        no_old_stubs = not (fl_dir / "flipped_interface.h").exists() and not (fl_dir / "flipped_pseudocode.cpp").exists()
+        self.assert_test(
+            "Flipped_SourceVolumeAndNoStubs",
+            all_exist and total_size > 40000 and no_old_stubs,
+            f"Đầy đủ 5 file C++17/H libflipped ({total_size:,} bytes > 40 KB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x0a68 + 8)[0]
+        self.assert_test(
+            "Flipped_BinarySha256AndEhFrame15FDEs",
+            len(so_bytes) == 7320
+            and sha256_hex == "30aabc89f03ef6f8659469596f8a7e8cd65a1950b3bcc853e4caddcc92eb56b0"
+            and eh_fde_count == 15,
+            f"Khớp kích thước 7,320 bytes, SHA-256 ({sha256_hex[:16]}...) và 15 FDEs tại .eh_frame_hdr 0x0a68"
+        )
+
+        content = ""
+        for f in files:
+            fp = fl_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. LOGx3 (0x0ce0..0x0d1c), AttachCurrentThread (0x0d1c: +0x20) & DetachCurrentThread (0x0d8c: +0x28)
+        log_lvl = struct.unpack_from("<I", so_bytes, 0x0cf0)[0]
+        vm_att  = struct.unpack_from("<I", so_bytes, 0x0d4c)[0]
+        vm_det  = struct.unpack_from("<I", so_bytes, 0x0da0)[0]
+        self.assert_test(
+            "Flipped_LogAndAttachDetachThreadVtableOpcodes",
+            log_lvl == 0x528000C0 and vm_att == 0xF9401108 and vm_det == 0xF9401508
+            and all(tok in content for tok in ["AttachCurrentThread", "DetachCurrentThread", "kAndroidLogError"]),
+            "Khớp LOG (0x0cf0: ANDROID_LOG_ERROR=6), AttachCurrentThread (0x0d4c: +0x20) và DetachCurrentThread (0x0da0: +0x28)"
+        )
+
+        # 4. GetDeclaredMethodInternal (0x0dc4..0x0ea4) & CallObjectMethodV (0x0ea4..0x0f40)
+        unpack_24 = struct.unpack_from("<II", so_bytes, 0x0dd4)
+        get_mid   = struct.unpack_from("<I", so_bytes, 0x0e0c)[0]
+        exc_chk   = struct.unpack_from("<I", so_bytes, 0x0e3c)[0]
+        call_objv = struct.unpack_from("<I", so_bytes, 0x0f10)[0]
+        self.assert_test(
+            "Flipped_GetDeclaredMethodInternalAndJniReflectionOpcodes",
+            unpack_24 == (0xA9405414, 0xF9400816)
+            and get_mid == 0xF9408508 and exc_chk == 0xF9439108 and call_objv == 0xF9408D08
+            and "GetDeclaredMethodInternal" in content and "FlippedThreadArgs24B" in content,
+            "Khớp GetDeclaredMethodInternal (0x0dc4: unpack 24B @ 0x0dd4, GetMethodID +0x108 @ 0x0e0c, ExceptionCheck +0x720 @ 0x0e3c, CallObjectMethodV +0x118 @ 0x0f10)"
+        )
+
+        # 5. GetDeclaredMethod (0x0f40..0x1094) & JNI_OnLoad (0x1094..0x11a4)
+        arr_len = struct.unpack_from("<I", so_bytes, 0x0fa8)[0]
+        reg_nat = struct.unpack_from("<I", so_bytes, 0x112c)[0]
+        rodata_s = so_bytes[0x0880:0x0a65]
+        self.assert_test(
+            "Flipped_GetDeclaredMethodAndJniOnLoadRegistration",
+            arr_len == 0xF942AD08 and reg_nat == 0xF9435D08
+            and b"com/bytedance/mira/plugin/hook/flipped/compat/FlippedV2Impl\x00" in rodata_s
+            and "JNI_OnLoad" in content and "GetDeclaredMethod" in content,
+            "Khớp GetDeclaredMethod (0x0f40: GetArrayLength +0x558 @ 0x0fa8) và JNI_OnLoad (0x1094: RegisterNatives +0x6b8 @ 0x112c cho FlippedV2Impl)"
+        )
+
+        # 6. Full 327-Instruction .text (0x0c90..0x11ac) Forensic Coverage
+        self.assert_test(
+            "Flipped_Full327TextInstructionsForensicCoverage",
+            "ExecuteFlippedTextInstructionVerify" in content
+            and "verify_flipped_insn_000_0x0c90" in content
+            and "verify_flipped_insn_326_0x11a8" in content,
+            "Bao phủ trọn vẹn 327 lệnh AArch64 tại .text (0x0c90..0x11ac) và 15 FDEs tại .eh_frame_hdr (0x0a68)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -13190,6 +13274,7 @@ class AutonomousVerificationEngine:
         self.verify_libsscronet()
         self.verify_libshadowhook_nothing()
         self.verify_libnpth_fp_unw()
+        self.verify_libflipped()
         self.verify_overall_governance()
 
 

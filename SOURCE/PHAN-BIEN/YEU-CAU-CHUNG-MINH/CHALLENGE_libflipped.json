@@ -1,19 +1,15 @@
 {
   "lib_name": "libflipped",
-  "inspected_at": "2026-10-27 19:26:19",
-  "gate1_size_bytes": 1719,
-  "gate1_passed": false,
-  "gate2_opcode_count": 0,
-  "gate2_passed": false,
-  "gate3_math_verified": false,
-  "gate4_abi_offsets_verified": false,
+  "inspected_at": "2026-10-27 19:32:09",
+  "gate1_size_bytes": 178317,
+  "gate1_passed": true,
+  "gate2_opcode_count": 625,
+  "gate2_passed": true,
+  "gate3_math_verified": true,
+  "gate4_abi_offsets_verified": true,
   "gate5_symbols_count": 14,
   "gate5_passed": true,
-  "gate6_test_passed": false,
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "criticisms": [
-    "Dung lượng mã nguồn (1719 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
-    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
-    "Chưa tích hợp test case trong verify_reconstruction_suite.py."
-  ]
+  "gate6_test_passed": true,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "criticisms": []
 }
