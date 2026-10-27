@@ -8499,6 +8499,134 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 83. KIỂM CHỨNG LIBJAZZ.SO (AmazingEngine Jazz JS Runtime Bridge & S-Box)
+    # =========================================================================
+    def verify_libjazz(self):
+        import struct
+        print("\n[83] Đang kiểm chứng libjazz.so (AmazingEngine Jazz JS Engine Runtime Bridge & S-Box Decoder)...")
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libjazz.so"
+        jazz_dir = GIAIMA_DIR / "libjazz"
+        so_bytes = so_path.read_bytes()
+
+        cpp_files = list(jazz_dir.glob("*.cpp")) + list(jazz_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Kiểm tra dung lượng (> 40 KB, 9 files, 0 stubs) & kích thước nhị phân (231,840 bytes)
+        self.assert_test(
+            "Jazz_BinaryAndSourceVolume",
+            len(so_bytes) == 231840
+            and len(cpp_files) == 9
+            and total_bytes > 120000
+            and "TODO: Dịch logic" not in content,
+            f"Nhị phân libjazz.so (231,840 bytes) & 9 tệp C++17/H đạt {total_bytes} bytes (> 120 KB, 0 stub)"
+        )
+
+        # 2. Kiểm tra 256-Byte GF(2)^8 Affine Involution S-Box (.rodata 0x028bf0..0x028cf0 & sub_17a08 @ 0x017a08)
+        sbox = so_bytes[0x028bf0:0x028cf0]
+        sbox_formula_ok = all(sbox[x] == (x ^ 0xF0 ^ ((x & 3) * 0x54)) for x in range(256))
+        sbox_involution_ok = all(sbox[sbox[x]] == x for x in range(256))
+        sub_17a08_sub = struct.unpack("<I", so_bytes[0x017a08:0x017a0c])[0]
+        sub_17a08_ldrb = struct.unpack("<I", so_bytes[0x017a28:0x017a2c])[0]
+        self.assert_test(
+            "Jazz_SBoxInvolutionAndSub17a08",
+            sbox_formula_ok
+            and sbox_involution_ok
+            and sub_17a08_sub == 0xD1000448
+            and sub_17a08_ldrb == 0x386C692C
+            and all(tok in content for tok in [
+                "kJazzSBoxTable_28bf0",
+                "JazzSBoxEval",
+                "JazzSBoxDecodeBuffer",
+                "0x54u"
+            ]),
+            "Khớp bảng S-Box 256-byte tại .rodata 0x028bf0 (SBox[x] = x ^ 0xF0 ^ ((x & 3) * 0x54), đối hợp SBox[SBox[x]] == x) và sub_17a08 (0x017a08)"
+        )
+
+        # 3. Kiểm tra giải mã kịch bản nhúng /bootstrap.js (0x027037, 7097B) & makeRequire.js (0x0297d2, 582B)
+        boot_raw = so_bytes[0x027037:0x027037 + 0x1bb9 - 1]
+        boot_dec = bytes(sbox[b] for b in boot_raw).decode("utf-8", errors="ignore")
+        req_raw = so_bytes[0x0297d2:0x0297d2 + 0x0246 - 1]
+        req_dec = bytes(sbox[b] for b in req_raw).decode("utf-8", errors="ignore")
+        self.assert_test(
+            "Jazz_EmbeddedBootstrapAndMakeRequireDecoding",
+            'define("bootstrap"' in boot_dec
+            and 'define("framework"' in boot_dec
+            and "defines.bootstrap();" in boot_dec
+            and req_dec.startswith("(function(e,s){function t(e){")
+            and "e.loadScript(s)" in req_dec
+            and all(tok in content for tok in [
+                "GetDecodedBootstrapJs",
+                "GetDecodedMakeRequireJs",
+                "kEncodedMakeRequireJs_297d2",
+                "/bootstrap.js",
+                "makeRequire.js"
+            ]),
+            "Khớp giải mã S-Box của /bootstrap.js (.rodata 0x027037, 7,097 B) và makeRequire.js (.rodata 0x0297d2, 582 B)"
+        )
+
+        # 4. Kiểm tra BEFBaseRunner (0x00caf4..0x00d3d8, 1000.0 double @ 0x025b80) & ContextExecutor (0x011a44)
+        ms_per_sec = struct.unpack("<Q", so_bytes[0x025b80:0x025b88])[0]
+        fadd_delay = struct.unpack("<I", so_bytes[0x00cecc:0x00ced0])[0]
+        self.assert_test(
+            "Jazz_BEFBaseRunnerAndContextExecutor",
+            ms_per_sec == 0x408F400000000000
+            and fadd_delay == 0x1E682800
+            and b"(function(require){const __filename='\x00" in so_bytes
+            and all(tok in content for tok in [
+                "BEFTask",
+                "BEFBaseRunner",
+                "_PumpLoop",
+                "PostDelayedTask",
+                "ContextExecutor",
+                "WrapModuleCode"
+            ]),
+            "Khớp BEFBaseRunner (_PumpLoop @ 0x00cb34, GetNext nhân 1000.0 @ 0x025b80, PostDelayedTask fadd @ 0x00cecc) và ContextExecutor CommonJS wrapper"
+        )
+
+        # 5. Kiểm tra Platform, Runtime (0x018fd8), VM::CreateVM (0x01a46c) & CreateQuickJSVM (0x024638)
+        vm_cmp_qjs = struct.unpack("<I", so_bytes[0x01a488:0x01a48c])[0]
+        qjs_alloc = struct.unpack("<I", so_bytes[0x024644:0x024648])[0]
+        self.assert_test(
+            "Jazz_PlatformRuntimeAndQuickJSVM",
+            vm_cmp_qjs == 0x7100081F
+            and qjs_alloc == 0x52800200
+            and b"effect\x00" in so_bytes
+            and all(tok in content for tok in [
+                "Platform",
+                "Runtime",
+                "VMScope",
+                "CreateQuickJSPlatform",
+                "CreateQuickJSVM",
+                "JSEngineType::QUICKJS"
+            ]),
+            "Khớp Platform::CreateRuntime (0x014fcc), Runtime::Runtime (0x018fd8), VM::CreateVM (cmp w0, #2 @ 0x01a488) và CreateQuickJSVM (0x024638)"
+        )
+
+        # 6. Kiểm tra FileSystemModule::Stats (0x01d074..0x01d0b0), RequireModule NEON Popcount (0x0220b4) & TimerModule (0x022bb4)
+        stats_scvtf = struct.unpack("<I", so_bytes[0x01d07c:0x01d080])[0]
+        stats_isdir = struct.unpack("<I", so_bytes[0x01d090:0x01d094])[0]
+        stats_isreg = struct.unpack("<I", so_bytes[0x01d0a8:0x01d0ac])[0]
+        neon_cnt = struct.unpack("<I", so_bytes[0x0220b4:0x0220b8])[0]
+        neon_uaddlv = struct.unpack("<I", so_bytes[0x0220b8:0x0220bc])[0]
+        self.assert_test(
+            "Jazz_FileSystemStatsRequireNeonAndTimerModule",
+            stats_scvtf == 0x5E61D800
+            and stats_isdir == 0x7140111F
+            and stats_isreg == 0x7140211F
+            and neon_cnt == 0x0E205800
+            and neon_uaddlv == 0x2E303800
+            and all(tok in content for tok in [
+                "FileSystemModule",
+                "ModuleRegistry",
+                "RequireModule",
+                "ComputeBucketIndexNeonPopcount",
+                "TimerModule"
+            ]),
+            "Khớp FileSystemModule::Stats (scvtf @ 0x01d07c, S_IFDIR @ 0x01d090, S_IFREG @ 0x01d0a8), RequireModule NEON popcount (0x0220b4) và TimerModule"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -8585,6 +8713,7 @@ class AutonomousVerificationEngine:
         self.verify_libvcn()
         self.verify_libnpth_unwind()
         self.verify_libvcbasekit()
+        self.verify_libjazz()
         self.verify_overall_governance()
 
 

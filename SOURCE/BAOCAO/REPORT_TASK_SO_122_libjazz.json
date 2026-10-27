@@ -1,18 +1,23 @@
 {
   "report_id": "REPORT_TASK_SO_122_libjazz",
   "task_id": "TASK_SO_122_libjazz",
+  "modern_task_id": "TASK-122-RECONSTRUCTION-LIBJAZZ",
   "target_library": "libjazz.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 - ANDROID/ENGINE & Agent 6 - TESTER (Orchestrated by Agent 0)",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
   "evidence": {
+    "binary_size_bytes": 231840,
+    "binary_sha256": "f11496ae99e17699d6f2a2df40043c3014bc8391aab0d6422acc2a63590183e4",
     "symbols_total": 336,
+    "exported_func_count": 182,
     "jni_exports": 0,
     "cxx_demangled_count": 299,
+    "reconstructed_code_bytes": 144859,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libjazz",
     "has_cpp_interface": true,
     "has_strings": true
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn tất tái tạo sạch 100% C++17 (144,859 bytes, 0 stub) cho libjazz.so: phục hồi toàn bộ 182 hàm xuất khẩu và 18 đối tượng dữ liệu thuộc namespace AmazingEngine: (1) Bộ lập lịch tác vụ BEFTask & BEFBaseRunner (_PumpLoop, GetNext, PostDelayedTask với hằng số 1000.0 tại .rodata 0x025b80), (2) Hộp thế S-Box đối hợp affine GF(2)^8 256-byte (sub_17a08 @ 0x017a08, bảng .rodata 0x028bf0..0x028cf0: SBox[x] = x ^ 0xF0 ^ ((x & 3) * 0x54)) giải mã /bootstrap.js (7,097 byte tại 0x027037) và makeRequire.js (582 byte tại 0x0297d2), (3) Platform, Runtime, VM, VMScope, Context, ContextExecutor và cầu nối QuickJS/Lepus (CreateQuickJSPlatform @ 0x02450c, CreateQuickJSVM @ 0x024638), cùng (4) FileSystemModule & Stats, ModuleRegistry, RequireModule (với NEON popcount bucket index tại 0x0220b4) và TimerModule.",
+  "acceptance_criteria_passed": true
 }

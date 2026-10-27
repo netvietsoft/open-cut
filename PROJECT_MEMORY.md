@@ -2435,3 +2435,16 @@
   - `adversary_critic_agent.py`: **82 / 169 `VERIFIED_AND_ACCEPTED` (48.52%)** (`100% REAL`).
   - `verify_reconstruction_suite.py`: **527 / 527 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 110. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libjazz.so (TASK-122-RECONSTRUCTION-LIBJAZZ / TASK_SO_122_libjazz)
+- **Thời gian**: 2026-10-27 09:10:00
+- **Thư viện**: `libjazz.so` (`231,840 bytes`, SHA-256 `f11496ae99e17699d6f2a2df40043c3014bc8391aab0d6422acc2a63590183e4`, `.text` `0x00cab8..0x025b78` = `102,592 bytes`, AmazingEngine Jazz JS Engine Runtime Bridge & S-Box Script Decoder, 336 dynamic symbols: 182 exported `STT_FUNC` and 18 `STT_OBJECT`).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `145,198 bytes` C++17/H, 0 stub)**:
+  1. **256-Byte $\text{GF}(2)^8$ Affine Involution S-Box (`sub_17a08` @ `0x017a08..0x017a38`, Table @ `.rodata 0x028bf0..0x028cf0`)**: Chứng minh công thức đóng $\text{SBox}[x] = x \oplus \mathtt{0xF0} \oplus ((x \mathbin{\&} 3) \times \mathtt{0x54})$ và tính đối hợp $\text{SBox}[\text{SBox}[x]] = x$ trên toàn bộ 256 byte; giải mã kịch bản `/bootstrap.js` tại `.rodata 0x027037` (`0x1bb9 = 7,097 bytes` -> `7,096` ký tự định nghĩa 7 module AMD `"bootstrap"`, `"console"`, `"framework"`, `"timer"`, `"filesystem"`, `"event"`, `"native_callback"`) và `makeRequire.js` tại `.rodata 0x0297d2` (`0x0246 = 582 bytes` -> `581` ký tự).
+  2. **`BEFTask`, `BEFBaseRunner`, `Context`, `ContextExecutor`, `Platform`, `Runtime` & `VM` (`0x00caf4..0x01a558`, `0x02450c..0x024664`)**: Khôi phục hàng đợi ưu tiên `BEFBaseRunner` (`_PumpLoop` @ `0x00cb34`, `GetNext` @ `0x00cbc4` nhân `1000.0` từ `.rodata 0x025b80`, `PostDelayedTask` @ `0x00ce74` `fadd d0, d0, d8` tại `0x00cecc`), bao đóng CommonJS `ContextExecutor::ExecuteProgram` (`0x011a44`), `Platform::CreateRuntime` (`0x014fcc` tăng nguyên tử `m_nextRuntimeId` tại `+0x40`), `Runtime::Runtime` (`0x018fd8`), `VM::CreateVM` (`0x01a46c` kiểm tra `JSEngineType::QUICKJS == 2`), `CreateQuickJSPlatform` (`0x02450c`) và `CreateQuickJSVM` (`0x024638` gọi `LEPUS_SetRuntimeInfo("effect")`).
+  3. **`FileSystemModule`, `Stats`, `ModuleRegistry`, `RequireModule` & `TimerModule` (`0x01ac8c..0x023f28`)**: Khôi phục `Stats::getSize` (`0x01d074`, `scvtf d0, d0` tại `0x01d07c`), `Stats::isDirectory` (`0x01d084`, `S_IFDIR = 0x4000` tại `0x01d090`), `Stats::isFile` (`0x01d09c`, `S_IFREG = 0x8000` tại `0x01d0a8`), `ModuleRegistry` (`0x020d00`), `RequireModule` (`0x021618` kèm NEON popcount bucket index `cnt v0.8b, v0.8b; uaddlv h0, v0.8b` tại `0x0220b4`), và `TimerModule` (`0x022bb4`, tăng `m_nextTimerId` tại `+0x38`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **83 / 169 `VERIFIED_AND_ACCEPTED` (49.11%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **533 / 533 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

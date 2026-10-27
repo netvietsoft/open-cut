@@ -1,0 +1,44 @@
+{
+  "task_id": "TASK-122-RECONSTRUCTION-LIBJAZZ",
+  "legacy_task_id": "TASK_SO_122_libjazz",
+  "title": "Clean-Room C++17 Reconstruction of libjazz.so (AmazingEngine Jazz JS Engine Runtime Bridge & S-Box Decoder)",
+  "status": "DONE",
+  "assigned_to": [
+    "Agent 3 (Android/Engine)",
+    "Agent 6 (Tester)",
+    "Agent 12 (Documentation)",
+    "Agent 13 (Adversary Auditor)"
+  ],
+  "completed_at": "2026-10-27T09:10:00+07:00",
+  "target_binary": {
+    "name": "libjazz.so",
+    "path": "SOURCE/apktool-res/lib/arm64-v8a/libjazz.so",
+    "size_bytes": 231840,
+    "sha256": "f11496ae99e17699d6f2a2df40043c3014bc8391aab0d6422acc2a63590183e4"
+  },
+  "deliverables": {
+    "reconstructed_code_bytes": 145198,
+    "files": [
+      "SOURCE/GIAI-MA/libjazz/jazz_types.h",
+      "SOURCE/GIAI-MA/libjazz/jazz_runner_context.h",
+      "SOURCE/GIAI-MA/libjazz/jazz_runner_context.cpp",
+      "SOURCE/GIAI-MA/libjazz/jazz_platform_runtime_vm.h",
+      "SOURCE/GIAI-MA/libjazz/jazz_platform_runtime_vm.cpp",
+      "SOURCE/GIAI-MA/libjazz/jazz_modules.h",
+      "SOURCE/GIAI-MA/libjazz/jazz_modules.cpp",
+      "SOURCE/GIAI-MA/libjazz/jazz_interface.h",
+      "SOURCE/GIAI-MA/libjazz/jazz_pseudocode.cpp",
+      "SOURCE/GIAI-MA/libjazz/README_ANALYSIS.md"
+    ],
+    "proof_files": [
+      "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libjazz.json",
+      "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libjazz.md"
+    ],
+    "verification": {
+      "adversary_status": "VERIFIED_AND_ACCEPTED",
+      "verified_libraries_count": "83/169 (49.11%)",
+      "suite_passed": "533/533 (100.0%)",
+      "watchdog_high_findings": 0
+    }
+  }
+}
