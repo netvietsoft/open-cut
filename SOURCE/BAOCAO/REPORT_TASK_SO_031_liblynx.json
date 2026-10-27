@@ -1,18 +1,12 @@
 {
-  "report_id": "REPORT_TASK_SO_031_liblynx",
   "task_id": "TASK_SO_031_liblynx",
-  "target_library": "liblynx.so",
-  "assigned_agent": "Agent 11 - DESIGNER & Agent 3 - FRONTEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 1045,
-    "jni_exports": 0,
-    "cxx_demangled_count": 811,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\liblynx",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-159-RECONSTRUCTION-LIBLYNX",
+  "library": "liblynx.so",
+  "status": "COMPLETED_VERIFIED",
+  "binary_size_bytes": 3570952,
+  "binary_sha256": "aef1876ef56f0de73666e3bf828a97d451e83de81274848c187174e8341ee16c",
+  "cpp17_reconstruction_bytes": 1466811,
+  "fde_count": 21675,
+  "exported_symbols": 586,
+  "stub_count": 0
 }

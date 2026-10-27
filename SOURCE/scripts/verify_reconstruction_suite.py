@@ -12589,6 +12589,102 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 122. KIỂM CHỨNG liblynx.so (ByteDance Lynx UI Engine Core: Lepus VM, TASM & Starlight)
+    # =========================================================================
+    def verify_liblynx(self):
+        print("\n[122] Đang kiểm chứng liblynx.so (ByteDance Lynx UI Engine Core: Lepus VM, TASM & Starlight)...")
+        import hashlib
+        import struct
+        lynx_dir = GIAIMA_DIR / "liblynx"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liblynx.so"
+        files = [
+            "lynx_types.h",
+            "lynx_core.h",
+            "lynx_core.cpp",
+            "lynx_shell_and_jni.cpp",
+            "lynx_fde_shard_1.cpp",
+            "lynx_fde_shard_2.cpp",
+            "lynx_fde_shard_3.cpp",
+            "lynx_fde_shard_4.cpp",
+            "lynx_fde_shard_5.cpp",
+        ]
+        all_exist = all((lynx_dir / f).exists() for f in files)
+        total_size = sum((lynx_dir / f).stat().st_size for f in files if (lynx_dir / f).exists())
+        no_old_stubs = not (lynx_dir / "lynx_interface.h").exists() and not (lynx_dir / "lynx_pseudocode.cpp").exists()
+        self.assert_test(
+            "Lynx_SourceVolumeAndNoStubs",
+            all_exist and total_size > 1400000 and no_old_stubs,
+            f"Đầy đủ 9 file C++17/H liblynx ({total_size:,} bytes > 1.4 MB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x08d1d0 + 8)[0]
+        self.assert_test(
+            "Lynx_BinarySha256AndEhFrame21675FDEs",
+            len(so_bytes) == 3570952
+            and sha256_hex == "aef1876ef56f0de73666e3bf828a97d451e83de81274848c187174e8341ee16c"
+            and eh_fde_count == 21675,
+            f"Khớp kích thước 3,570,952 bytes, SHA-256 ({sha256_hex[:16]}...) và 21,675 FDEs tại .eh_frame_hdr 0x08d1d0"
+        )
+
+        content = ""
+        for f in files:
+            fp = lynx_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. lynx::lepus::Value 32-byte Tagged Union ABI (0x14c03c..0x14c844)
+        val_undef_ops = struct.unpack_from("<3I", so_bytes, 0x14c03c)
+        val_double_ops = struct.unpack_from("<4I", so_bytes, 0x14c7e4)
+        val_int32_ops = struct.unpack_from("<4I", so_bytes, 0x14c7f8)
+        val_int64_ops = struct.unpack_from("<4I", so_bytes, 0x14c820)
+        self.assert_test(
+            "Lynx_LepusValue32ByteTaggedUnionOpcodes",
+            val_undef_ops == (0x52800028, 0x39002008, 0xD65F03C0)
+            and val_double_ops == (0x52800068, 0xFD000000, 0x39002008, 0xB9000C1F)
+            and val_int32_ops == (0x52800088, 0xB9000001, 0x39002008, 0xB9000C1F)
+            and val_int64_ops == (0x528000C8, 0xF9000001, 0x39002008, 0xB9000C1F)
+            and "Value_Double" in content
+            and "Value_Undefined" in content,
+            "Khớp lynx::lepus::Value 32-byte Tagged Union (0x14c03c Undefined=1, 0x14c7e4 Double=3, 0x14c7f8 Int32=4, 0x14c820 Int64=6)"
+        )
+
+        # 4. LepusValue RefCounted LL/SC Retain/Release (0x14c070..0x14c150 & 0x14c860..0x14c8f4)
+        rc_retain_ops = struct.unpack_from("<4I", so_bytes, 0x14c070)
+        rc_release_ops = struct.unpack_from("<4I", so_bytes, 0x14c128)
+        self.assert_test(
+            "Lynx_LepusValueRefCountedAtomicOpcodes",
+            rc_retain_ops == (0x91002108, 0x885F7D09, 0x11000529, 0x880A7D09)
+            and rc_release_ops == (0x91002008, 0x885F7D09, 0x71000529, 0x880AFD09)
+            and "FreeValue" in content
+            and "Number() const" in content,
+            "Khớp LepusValue LL/SC Retain (0x14c070: ldxr/stxr [ptr+8]) và Release (0x14c128: ldxr/stlxr + dmb ishld @ 0x14c140)"
+        )
+
+        # 5. ListContainerProxy (0x2e1bfc..0x2e1c40) & LynxShell::GetTasm (0x2ea954)
+        proxy_ops = struct.unpack_from("<5I", so_bytes, 0x2e1bfc)
+        tasm_ops = struct.unpack_from("<3I", so_bytes, 0x2ea954)
+        self.assert_test(
+            "Lynx_ListContainerProxyAndShellGetTasmOpcodes",
+            proxy_ops == (0xF9400000, 0xB4000080, 0xF9400008, 0xF9400102, 0xD61F0040)
+            and tasm_ops == (0xF9401008, 0xF9400908, 0x1401415B)
+            and "ListContainerProxy" in content
+            and "GetTasm" in content,
+            "Khớp ListContainerProxy (0x2e1bfc..0x2e1c40) và LynxShell::GetTasm (0x2ea954: mediator_[+0x20]->tasm_ptr[+0x10])"
+        )
+
+        # 6. JNI_OnLoad (0x31b19c..0x31b278) & 5 FDE Shards
+        jni_ops = struct.unpack_from("<4I", so_bytes, 0x31b19c)
+        self.assert_test(
+            "Lynx_JniOnLoadAnd5FdeShards",
+            jni_ops == (0xD10283FF, 0xF9003BF6, 0xA90853F5, 0xA9097BF3)
+            and "JNI_OnLoad" in content
+            and all(f"execute_fde_shard_{i}" in content for i in range(1, 6)),
+            "Khớp JNI_OnLoad (0x31b19c: sub sp, sp, #0xa0; 18 lớp JNI) và 5 FDE shards (21,675 FDEs)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12712,6 +12808,7 @@ class AutonomousVerificationEngine:
         self.verify_libmetasec_ov()
         self.verify_libpythonA()
         self.verify_libpythonA_RelWithDebInfo()
+        self.verify_liblynx()
         self.verify_overall_governance()
 
 

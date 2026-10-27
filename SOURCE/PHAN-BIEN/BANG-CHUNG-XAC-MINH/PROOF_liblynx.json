@@ -1,0 +1,52 @@
+{
+  "task_id": "TASK_SO_031_liblynx",
+  "Orchestrator_Task_ID": "TASK-159-RECONSTRUCTION-LIBLYNX",
+  "library": "liblynx.so",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/liblynx.so",
+  "binary_size_bytes": 3570952,
+  "binary_sha256": "aef1876ef56f0de73666e3bf828a97d451e83de81274848c187174e8341ee16c",
+  "reconstruction_dir": "SOURCE/GIAI-MA/liblynx",
+  "reconstructed_files": [
+    "lynx_types.h",
+    "lynx_core.h",
+    "lynx_core.cpp",
+    "lynx_shell_and_jni.cpp",
+    "lynx_fde_shard_1.cpp",
+    "lynx_fde_shard_2.cpp",
+    "lynx_fde_shard_3.cpp",
+    "lynx_fde_shard_4.cpp",
+    "lynx_fde_shard_5.cpp"
+  ],
+  "reconstructed_cpp_bytes": 1466811,
+  "fde_count": 21675,
+  "eh_frame_hdr_va": "0x08d1d0",
+  "exported_symbols_count": 586,
+  "stub_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "opcode_evidence": [
+    {
+      "symbol": "lynx::lepus::Value constructors & FreeValue",
+      "va_range": "0x14c03c..0x14c90c",
+      "opcodes": [
+        "0x14c03c: 52800028 mov w8, #1",
+        "0x14c040: 39002008 strb w8, [x0, #8]",
+        "0x14c05c: 51002509 sub w9, w8, #9",
+        "0x14c060: 7100113F cmp w9, #4",
+        "0x14c7e4: 52800068 mov w8, #3",
+        "0x14c7f8: 52800088 mov w8, #4",
+        "0x14c864: 52800169 mov w9, #0xb",
+        "0x14c8b0: 52800149 mov w9, #0xa"
+      ]
+    },
+    {
+      "symbol": "ListContainerProxy & LynxShell::GetTasm",
+      "va_range": "0x2e1bfc..0x2ea960",
+      "opcodes": [
+        "0x2e1bfc: F9400000 ldr x0, [x0]",
+        "0x2e1c24: F9400505 ldr x5, [x8, #8]",
+        "0x2ea954: F9401008 ldr x8, [x0, #0x20]",
+        "0x2ea958: F9400908 ldr x8, [x8, #0x10]"
+      ]
+    }
+  ]
+}

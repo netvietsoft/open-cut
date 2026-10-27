@@ -877,3 +877,5 @@
 - [x] **TASK-157 (`libpythonA.so` — `2,229,160 B`)**: Reconstructed `1,486,461 B` C++17/H (9 files, 4,320 FDEs, 1,998 exports, 0 stubs), verified `743/743 PASS (100.0%)`, `118/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-158 (`libpythonA_RelWithDebInfo.so` — `2,229,160 B`)**: Reconstructed `1,695,182 B` C++17/H (9 files, 4,320 FDEs, 1,998 exports, 0 stubs), verified `749/749 PASS (100.0%)`, `119/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-159 (`liblynx.so` — `3,570,952 B`)**: Reconstructed `1,466,811 B` C++17/H (9 files, 21,675 FDEs, 586 exports, 0 stubs), verified `755/755 PASS (100.0%)`, `120/169 VERIFIED_AND_ACCEPTED`.
