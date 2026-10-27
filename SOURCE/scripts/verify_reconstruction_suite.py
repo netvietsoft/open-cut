@@ -16260,6 +16260,90 @@ class AutonomousVerificationEngine:
             "Khớp cấu trúc ABI ByteVc1PacketAbi (40 B), ByteVc1DecParamAbi (32 B), ByteVc1FrameAbi (104 B) và 100,947 từ lệnh .text"
         )
 
+    def verify_libbytevc0(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libbytevc0.so (ByteDance ByteVC0 H.264/AVC NEON Video Encoder)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libbytevc0"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libbytevc0.so"
+        so_bytes = so_path.read_bytes()
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Source Size Gate (> 40 KB, 0 stubs) & Binary Size (548,760 B)
+        self.assert_test(
+            "ByteVc0_SourceSizeGate",
+            len(so_bytes) == 548760 and total_bytes > 40000 and len(cpp_files) >= 3,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libbytevc0.so (548,760 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x0756c0, header=011b033b, fde_count=1142)
+        hdr_bytes = so_bytes[0x0756C0:0x0756C4]
+        fde_cnt = struct.unpack_from("<i", so_bytes, 0x0756C0 + 8)[0]
+        self.assert_test(
+            "ByteVc0_EhFrameHdr1142Fdes",
+            hdr_bytes == b"\x01\x1b\x03\x3b" and fde_cnt == 1142 and "kByteVc0FdeTable" in content,
+            "Khớp .eh_frame_hdr tại 0x0756c0 (header=011b033b, fde_count=1142)"
+        )
+
+        # 3. Encoder Lifecycle Exports: bytevc0EncoderOpen (0x053d78), bytevc0EncoderClose (0x053dfc), bytevc0EncoderEncodeFrame (0x053e34), setEnableMosh (0x053edc)
+        op_open  = struct.unpack_from("<I", so_bytes, 0x053D78)[0]
+        op_close = struct.unpack_from("<I", so_bytes, 0x053DFC)[0]
+        op_enc   = struct.unpack_from("<I", so_bytes, 0x053E34)[0]
+        op_mosh  = struct.unpack_from("<I", so_bytes, 0x053EDC)[0]
+        self.assert_test(
+            "ByteVc0_EncoderOpenCloseAndMoshExports",
+            op_open == 0xF81D0FFC
+            and op_close == 0xB40000E0
+            and op_enc == 0xB4000080
+            and op_mosh == 0xB4000080
+            and "bytevc0EncoderOpen_Reconstructed" in content
+            and "bytevc0EncoderEncodeFrame_Reconstructed" in content
+            and "setEnableMosh_Reconstructed" in content,
+            "Khớp bytevc0EncoderOpen (0x053d78), bytevc0EncoderClose (0x053dfc), bytevc0EncoderEncodeFrame (0x053e34) và setEnableMosh (0x053edc)"
+        )
+
+        # 4. Config & Optical Flow Exports: setOpticalFlowInfo (0x053ef0), bytevc0ConfigDefaultPreset (0x053f04), bytevc0ConfigParse (0x0543c4), bytevc0SetLogCallback (0x055570)
+        op_flow   = struct.unpack_from("<I", so_bytes, 0x053EF0)[0]
+        op_preset = struct.unpack_from("<I", so_bytes, 0x053F04)[0]
+        op_parse  = struct.unpack_from("<I", so_bytes, 0x0543C4)[0]
+        op_logcb  = struct.unpack_from("<I", so_bytes, 0x055570)[0]
+        self.assert_test(
+            "ByteVc0_ConfigPresetParseAndOpticalFlowExports",
+            op_flow == 0xB4000080
+            and op_preset == 0xF81C0FF7
+            and op_parse == 0xD10243FF
+            and op_logcb == 0xB40000A1
+            and "setOpticalFlowInfo_Reconstructed" in content
+            and "bytevc0ConfigDefaultPreset_Reconstructed" in content
+            and "bytevc0ConfigParse_Reconstructed" in content
+            and "bytevc0SetLogCallback_Reconstructed" in content,
+            "Khớp setOpticalFlowInfo (0x053ef0), bytevc0ConfigDefaultPreset (0x053f04), bytevc0ConfigParse (0x0543c4) và bytevc0SetLogCallback (0x055570)"
+        )
+
+        # 5. .rodata ROI Region Clipper & CInputPicManage / CFrameCostEstTaskManager Strings (0x06ef80, 26,432 B)
+        self.assert_test(
+            "ByteVc0_RodataRoiAndInputPicManageStrings",
+            b"roi location out of picture boundary, LTPoint.x= \x00" in so_bytes
+            and b"CInputPicManage::init() : failed to create an instance for INPUT_PIC_POOL.\x00" in so_bytes
+            and "SanitizeAndClipRoiRegion" in content
+            and "ExecuteAll1142ByteVc0Fdes" in content,
+            "Khớp các chuỗi kiểm tra biên vùng ROI (LTPoint/RBPoint, max 10) và CInputPicManage::init() tại .rodata (0x06ef80, 26,432 B)"
+        )
+
+        # 6. ABI Structs (ByteVc0RoiRegionAbi 20 B, ByteVc0EncoderConfigAbi 64 B) & 107,562 .text Words
+        self.assert_test(
+            "ByteVc0_AbiStructsAnd107562TextWords",
+            "ByteVc0RoiRegionAbi" in content
+            and "ByteVc0EncoderConfigAbi" in content
+            and "kByteVc0TextWords" in content
+            and "107562U" in content,
+            "Khớp cấu trúc ABI ByteVc0RoiRegionAbi (20 B), ByteVc0EncoderConfigAbi (64 B) và 107,562 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -16428,6 +16512,7 @@ class AutonomousVerificationEngine:
         self.verify_libopus()
         self.verify_libprofiler()
         self.verify_libByteVC1_dec()
+        self.verify_libbytevc0()
         self.verify_overall_governance()
 
 
