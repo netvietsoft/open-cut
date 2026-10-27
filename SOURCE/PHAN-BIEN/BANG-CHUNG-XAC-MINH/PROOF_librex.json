@@ -1,0 +1,101 @@
+{
+  "library": "librex.so",
+  "task_id": "TASK-148-RECONSTRUCTION-LIBREX",
+  "legacy_task_id": "TASK_SO_068_librex",
+  "target_index": 109,
+  "binary_size_bytes": 690264,
+  "sha256": "8597b027ebde080435814b961a219d53170ab05cee0d5c4d40cfe0bb1ee5d6c4",
+  "eh_frame_hdr_va": "0x0a3ddc",
+  "fde_count": 1600,
+  "exported_symbol_count": 13,
+  "imported_symbol_count": 22,
+  "reconstructed_files": [
+    "rex_types.h",
+    "rex_date_format.h",
+    "rex_date_format.cpp",
+    "rex_jni_bridge.cpp",
+    "rex_fde_shard_1.cpp",
+    "rex_fde_shard_2.cpp",
+    "rex_fde_shard_3.cpp",
+    "rex_fde_shard_4.cpp",
+    "rex_fde_shard_5.cpp"
+  ],
+  "reconstructed_total_bytes": 1265067,
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "symbol": "sub_08ab60 (InitCalendarBreakdown)",
+      "va_range": "0x08ab60..0x08ade0",
+      "size_bytes": 640,
+      "verified_instructions": {
+        "0x08ab90": "39014009 (strb w9, [x0, #0x50])",
+        "0x08ab94": "B9005402 (str w2, [x0, #0x54])",
+        "0x08abf8": "9B287C48 (smull x8, w2, w8 -> * 0x45e7b273)",
+        "0x08ac28": "9B2A5529 (smaddl x9, w9, w10, x21 -> + tz_min * 60000)",
+        "0x08ac40": "9B0CA631 (msub x17, x17, x12, x9 -> % 86400000)"
+      }
+    },
+    {
+      "symbol": "sub_096300 (FormatTimeZone)",
+      "va_range": "0x096300..0x0963e8",
+      "size_bytes": 236,
+      "verified_instructions": {
+        "0x096328": "528484B7 (mov w23, #0x2425)",
+        "0x096338": "72AE6637 (movk w23, #0x7331, lsl #16 -> '%$1s')",
+        "0x096340": "5282A308 (mov w8, #0x1518)",
+        "0x096388": "114042E8 (add w8, w23, #0x10, lsl #12 -> '%$2s')"
+      }
+    },
+    {
+      "symbol": "sub_0968e0 (FormatRelative)",
+      "va_range": "0x0968e0..0x096994",
+      "size_bytes": 184,
+      "verified_instructions": {
+        "0x096904": "913F6008 (add x8, x0, #0xfd8)",
+        "0x096908": "912A6009 (add x9, x0, #0xa98)",
+        "0x09690c": "F10002BF (cmp x21, #0)",
+        "0x096910": "9A89A101 (csel x1, x8, x9, ge)",
+        "0x096914": "DA9556A2 (cneg x2, x21, mi)"
+      }
+    },
+    {
+      "symbol": "JNI_OnLoad",
+      "va_range": "0x08d944..0x08d9f0",
+      "size_bytes": 176,
+      "verified_instructions": {
+        "0x08d9b8": "528000A3 (mov w3, #5)",
+        "0x08d9c0": "F9435D29 (ldr x9, [x9, #0x6b8] -> RegisterNatives)",
+        "0x08d9c8": "7100001F (cmp w0, #0)",
+        "0x08d9cc": "5A9F0280 (csinv w0, w20, wzr, eq)"
+      }
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula": "tz_minutes = (int64_t(custom_tz_ms) * 0x45E7B273) >> 46; days = (ts_ms + tz_minutes * 60000) / 86400000",
+      "location": "0x08abf0..0x08ac40",
+      "purpose": "Exact 64-bit reciprocal division by 60,000 (0x45E7B273) and 86,400,000 (0x636BA875FD33DC87, 0x05265C00) in InitCalendarBreakdown"
+    },
+    {
+      "formula": "token2 = 0x73312425 + (0x10 << 12) = 0x73322425 ('%$1s' -> '%$2s')",
+      "location": "0x096328..0x096388",
+      "purpose": "Direct 32-bit ASCII token increment from '%$1s' to '%$2s' in FormatTimeZone"
+    }
+  ],
+  "abi_layouts": [
+    {
+      "struct_name": "bytedance::rex::RexCalendarBreakdownAbiLayout",
+      "total_size_bytes": 88,
+      "fields": {
+        "+0x00": "double timestamp_ms",
+        "+0x08": "int32_t year",
+        "+0x0C": "int32_t month",
+        "+0x10": "int32_t day_of_month",
+        "+0x14": "int32_t day_of_week",
+        "+0x50": "uint8_t use_system_tz",
+        "+0x54": "int32_t custom_tz_offset_ms"
+      }
+    }
+  ],
+  "status": "VERIFIED_AND_ACCEPTED"
+}

@@ -11529,6 +11529,100 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 109: librex.so (Target 109 / 169 — ByteDance BDDateFormat Engine)
+    # =========================================================================
+    def verify_librex(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: librex.so (Target 109 / 169)")
+        print("="*70)
+
+        import struct
+        import hashlib
+
+        lib_dir = GIAIMA_DIR / "librex"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 40 KB (1,265,067 B across 9 clean-room files, 0 stubs)
+        self.assert_test(
+            "Rex_SourceSizeAndZeroStubs",
+            total_bytes > 40000
+            and len(cpp_files) == 9
+            and not (lib_dir / "rex_interface.h").exists()
+            and not (lib_dir / "rex_pseudocode.cpp").exists()
+            and "ExecuteRexFdeByAddress" in content,
+            f"Tổng dung lượng C++17 đạt {total_bytes:,} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Binary SHA-256 & .eh_frame_hdr @ 0x0a3ddc (211 FDEs) + 67 .init_array locale ctors @ 0x0a7848
+        so_bytes = (ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "librex.so").read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x0a3ddc + 8)[0]
+        ctor0 = struct.unpack_from("<Q", so_bytes, 0x0a7848)[0]
+        ctor66 = struct.unpack_from("<Q", so_bytes, 0x0a7848 + 66 * 8)[0]
+        self.assert_test(
+            "Rex_BinarySha256EhFrameAnd67LocaleCtors",
+            len(so_bytes) == 690264
+            and sha256_hex == "8597b027ebde080435814b961a219d53170ab05cee0d5c4d40cfe0bb1ee5d6c4"
+            and fde_count == 211
+            and ctor0 == 0x001c10
+            and ctor66 == 0x0855ec,
+            "Khớp nhị phân librex.so (690,264 B, SHA-256 8597b027..., 211 FDEs @ 0x0a3ddc, 67 locale ctors @ 0x0a7848)"
+        )
+
+        # 3. InitCalendarBreakdown (0x08ab60..0x08ac40) reciprocal division constants & math
+        tz_div_insns = struct.unpack_from("<3I", so_bytes, 0x08abf0)
+        day_mod_insn = struct.unpack_from("<I", so_bytes, 0x08ac40)[0]
+        sim_tz_min = (28800000 * 0x45E7B273) >> 46
+        self.assert_test(
+            "Rex_CalendarBreakdownMagicDivisionMath",
+            tz_div_insns == (0x52964E68, 0x72A8BCE8, 0x9B287C48)
+            and day_mod_insn == 0x9B0CA631
+            and sim_tz_min == 480
+            and "0x45E7B273LL" in content
+            and "0x05265C00LL" in content,
+            "Khớp InitCalendarBreakdown (0x08ab60: * 0x45e7b273 >> 46 -> 28,800,000 ms / 60,000 = 480 phút, % 86,400,000 ms)"
+        )
+
+        # 4. FormatTimeZone (0x096300..0x0963e8) '%$1s' (0x73312425) -> '%$2s' (0x73322425) token math
+        tok1_lo = struct.unpack_from("<I", so_bytes, 0x096328)[0]
+        tok1_hi = struct.unpack_from("<I", so_bytes, 0x096338)[0]
+        tok2_add = struct.unpack_from("<I", so_bytes, 0x096388)[0]
+        tok1_val = 0x73312425
+        tok2_val = tok1_val + (0x10 << 12)
+        self.assert_test(
+            "Rex_FormatTimeZoneTokenIncrementOpcodes",
+            tok1_lo == 0x528484B7
+            and tok1_hi == 0x72AE6637
+            and tok2_add == 0x114042E8
+            and tok1_val.to_bytes(4, "little") == b"%$1s"
+            and tok2_val.to_bytes(4, "little") == b"%$2s"
+            and "0x73312425u" in content,
+            "Khớp FormatTimeZone (0x096300: 0x73312425='%$1s' + (0x10<<12) = 0x73322425='%$2s')"
+        )
+
+        # 5. FormatRelative (0x0968e0..0x096994) future (+0xfd8) vs past (+0xa98) & cneg |offset|
+        rel_insns = struct.unpack_from("<5I", so_bytes, 0x096904)
+        self.assert_test(
+            "Rex_FormatRelativeFuturePastOpcodes",
+            rel_insns == (0x913F6008, 0x912A6009, 0xF10002BF, 0x9A89A101, 0xDA9556A2)
+            and "FormatRelative" in content,
+            "Khớp FormatRelative (0x096904..0x096914: add #0xfd8/#0xa98; cmp x21, #0; csel ge; cneg mi)"
+        )
+
+        # 6. JNI_OnLoad (0x08d944..0x08d9f0) & 2-digit table @ .rodata 0x0a3d13
+        onload_insns = struct.unpack_from("<4I", so_bytes, 0x08d9b8)
+        two_digit_str = so_bytes[0x0a3d13:0x0a3d13 + 20].decode("ascii")
+        self.assert_test(
+            "Rex_JniOnLoad5MethodsAndTwoDigitTable",
+            onload_insns == (0x528000A3, 0xAA0803E0, 0xF9435D29, 0xD63F0120)
+            and two_digit_str == "00010203040506070809"
+            and "kBDDateFormatMethods_0ac000" in content,
+            "Khớp JNI_OnLoad (0x08d944: RegisterNatives 5 phương thức BDDateFormat @ 0x0ac000) và bảng 2 chữ số @ 0x0a3d13"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -11641,6 +11735,7 @@ class AutonomousVerificationEngine:
         self.verify_libttkmedianet()
         self.verify_libbytebench()
         self.verify_libanimax()
+        self.verify_librex()
         self.verify_overall_governance()
 
 

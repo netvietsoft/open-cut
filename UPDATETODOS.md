@@ -855,3 +855,5 @@
 - [x] **TASK-146 (`libbytebench.so` — `641,376 B`)**: Reconstructed `1,339,882 B` C++17/H (9 files, 1,600 functions, 616 exports, 0 stubs), verified `677/677 PASS (100.0%)`, `107/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-147 (`libanimax.so` — `657,720 B`)**: Reconstructed `3,063,866 B` C++17/H (9 files, 3,965 FDEs, 294 exports, 0 stubs), verified `683/683 PASS (100.0%)`, `108/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-148 (`librex.so` — `690,264 B`)**: Reconstructed `1,265,067 B` C++17/H (9 files, 1,600 functions & 211 FDEs, 13 exports, 0 stubs), verified `689/689 PASS (100.0%)`, `109/169 VERIFIED_AND_ACCEPTED`.

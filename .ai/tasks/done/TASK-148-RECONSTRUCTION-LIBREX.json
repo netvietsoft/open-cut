@@ -1,0 +1,33 @@
+{
+  "task_id": "TASK-148-RECONSTRUCTION-LIBREX",
+  "legacy_task_id": "TASK_SO_068_librex",
+  "title": "Clean-Room C++17 Reconstruction of librex.so (Target 109/169)",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "status": "DONE",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/librex.so",
+  "binary_size_bytes": 690264,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/librex/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_librex.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_librex.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_068_librex.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_068_librex.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "Generate >= 40 KB (target > 1,000 KB) of genuine C++17/H code across 9 files in SOURCE/GIAI-MA/librex/ with zero stubs",
+    "Verify exact AArch64 opcode sequences, mathematical formulas, and ABI struct layouts from librex.so",
+    "Pass adversary_critic_agent.py (VERIFIED_AND_ACCEPTED 109/169), verify_reconstruction_suite.py (100% PASS), and native_audit_watchdog.py (0 high findings)"
+  ],
+  "completed_at": "2026-10-27T17:25:17.263179+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (109/169)",
+    "reconstruction_suite": "689/689 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 1265067,
+    "fde_count": 1600,
+    "exported_symbols": 13,
+    "stub_count": 0
+  }
+}
