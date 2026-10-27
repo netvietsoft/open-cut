@@ -15561,6 +15561,90 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 155: liburiparser.so (RFC 3986 Compliant URI Parser & Normalizer)
+    # =========================================================================
+    def verify_liburiparser(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: liburiparser.so (RFC 3986 Compliant URI Parser & Normalizer)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "liburiparser"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liburiparser.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "UriParser_SourceSizeGate",
+            len(so_bytes) == 100224 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho liburiparser.so (100,224 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x142e4) & 176 FDE entries
+        eh_hdr = so_bytes[0x142E4:0x142E8]
+        fde_count = struct.unpack_from("<I", so_bytes, 0x142EC)[0]
+        self.assert_test(
+            "UriParser_EhFrameHdr176Fdes",
+            eh_hdr == b"\x01\x1b\x03\x3b" and fde_count == 176 and "kFdeTable[176]" in content,
+            f"Khớp .eh_frame_hdr tại 0x142e4 (header={eh_hdr.hex()}, fde_count={fde_count})"
+        )
+
+        # 3. uriResetUriA (0x338c), uriCompareRangeA (0x33ac), uriRemoveDotSegmentsExA (0x3458)
+        op_338c = struct.unpack_from("<I", so_bytes, 0x338C)[0]
+        op_33ac = struct.unpack_from("<I", so_bytes, 0x33AC)[0]
+        op_3458 = struct.unpack_from("<I", so_bytes, 0x3458)[0]
+        self.assert_test(
+            "UriParser_ResetCompareAndRemoveDotSegments",
+            op_338c == 0xB40000E0
+            and op_33ac == 0xA9BF7BFD
+            and op_3458 == 0xD101C3FF
+            and "uriResetUriA" in content
+            and "uriCompareRangeA" in content
+            and "uriRemoveDotSegmentsExA" in content,
+            "Khớp uriResetUriA (0x338c), uriCompareRangeA (0x33ac) và uriRemoveDotSegmentsExA (0x3458)"
+        )
+
+        # 4. uriIsHostSetA (0x3800), uriHexdigToIntA (0x3860), uriResetUriW (0x3ca4)
+        op_3800 = struct.unpack_from("<I", so_bytes, 0x3800)[0]
+        op_3860 = struct.unpack_from("<I", so_bytes, 0x3860)[0]
+        op_3ca4 = struct.unpack_from("<I", so_bytes, 0x3CA4)[0]
+        self.assert_test(
+            "UriParser_HostHexAndWideApi",
+            op_3800 == 0xB4000200
+            and op_3860 == 0x12001C09
+            and op_3ca4 == 0xB40000E0
+            and "uriIsHostSetA" in content
+            and "uriHexdigToIntA" in content
+            and "uriResetUriW" in content,
+            "Khớp uriIsHostSetA (0x3800), uriHexdigToIntA (0x3860) và uriResetUriW (0x3ca4)"
+        )
+
+        # 5. RFC 3986 .rodata Scheme Strings (file://, file:///) & Hex Conversion
+        self.assert_test(
+            "UriParser_RodataSchemesAndHexConversion",
+            b"file://" in so_bytes
+            and b"file:///" in so_bytes
+            and "uriHexToLetterExA" in content
+            and "uriHexToLetterA" in content,
+            "Khớp các chuỗi lược đồ file://, file:/// tại .rodata (0x130d0) và hàm chuyển đổi thập lục phân"
+        )
+
+        # 6. ABI Structures (UriUriA 160 B, UriTextRangeA 16 B, UriMemoryManager 48 B) & 16,223 .text words
+        self.assert_test(
+            "UriParser_AbiStructsAnd16223TextWords",
+            "UriUriA" in content
+            and "UriTextRangeA" in content
+            and "UriMemoryManager" in content
+            and "kTextInstructions[16223]" in content
+            and "kElfImageBytes[100224]" in content,
+            "Khớp cấu trúc ABI UriUriA (160 B), UriTextRangeA (16 B), UriMemoryManager (48 B) và 16,223 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -15719,6 +15803,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_vm_monitor()
         self.verify_libpglarmor()
         self.verify_libEncryptor()
+        self.verify_liburiparser()
         self.verify_overall_governance()
 
 

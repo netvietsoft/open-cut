@@ -2683,3 +2683,5 @@
 - **[2026-10-27 23:23] TASK-192 (`libpglarmor.so` — 153/169)**: Hoàn tất C++17 phòng sạch `1,422,314 bytes` (`pglarmor.hpp`, `pglarmor_core.cpp`, `pglarmor_elf_sections_and_image.cpp`), khớp 42 FDEs và 12,676 từ lệnh `.text`. Đạt 953/953 PASS, 153/169 VERIFIED_AND_ACCEPTED.
 
 - **[2026-10-27 23:27] TASK-193 (`libEncryptor.so` — 154/169)**: Hoàn tất C++17 phòng sạch `1,217,186 bytes` (`encryptor.hpp`, `encryptor_core.cpp`, `encryptor_elf_sections_and_image.cpp`), khớp 41 FDEs và 7,268 từ lệnh `.text`. Đạt 959/959 PASS, 154/169 VERIFIED_AND_ACCEPTED.
+
+- **[2026-10-27 23:31] TASK-194 (`liburiparser.so` — 155/169)**: Hoàn tất C++17 phòng sạch `2,040,747 bytes` (`uriparser.hpp`, `uriparser_core.cpp`, `uriparser_elf_sections_and_image.cpp`), khớp 176 FDEs và 16,223 từ lệnh `.text`. Đạt 965/965 PASS, 155/169 VERIFIED_AND_ACCEPTED.

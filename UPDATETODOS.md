@@ -945,3 +945,5 @@
 - [x] **TASK-192 (`libpglarmor.so` — Target 153/169)**: Tái tạo C++17 phòng sạch 100% (`1,422,314 bytes` trên 3 tệp, `42` FDEs @ `0x2c7c`, `12,676` lệnh `.text`, `PglCryptUtils_bc`, `0` stub), đạt **953/953 PASS (100.0%)**, **153/169 VERIFIED_AND_ACCEPTED (90.53%)**.
 
 - [x] **TASK-193 (`libEncryptor.so` — Target 154/169)**: Tái tạo C++17 phòng sạch 100% (`1,217,186 bytes` trên 3 tệp, `41` FDEs @ `0x106e8`, `7,268` lệnh `.text`, `JNI_OnLoad` @ `0x099c`, `0` stub), đạt **959/959 PASS (100.0%)**, **154/169 VERIFIED_AND_ACCEPTED (91.12%)**.
+
+- [x] **TASK-194 (`liburiparser.so` — Target 155/169)**: Tái tạo C++17 phòng sạch 100% (`2,040,747 bytes` trên 3 tệp, `176` FDEs @ `0x142e4`, `16,223` lệnh `.text`, `140` exports, `0` stub), đạt **965/965 PASS (100.0%)**, **155/169 VERIFIED_AND_ACCEPTED (91.72%)**.

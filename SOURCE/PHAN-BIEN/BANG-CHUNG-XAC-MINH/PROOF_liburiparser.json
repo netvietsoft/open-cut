@@ -1,0 +1,27 @@
+{
+  "library": "liburiparser.so",
+  "task_id": "TASK-194-RECONSTRUCTION-LIBURIPARSER",
+  "legacy_task_id": "TASK_SO_053_liburiparser",
+  "sha256": "e414976665fd4e5e719425bc356ee6b6c9e9cbcd640d8f4f2ed26045514976f6",
+  "size_bytes": 100224,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/liburiparser/uriparser.hpp",
+    "SOURCE/GIAI-MA/liburiparser/uriparser_core.cpp",
+    "SOURCE/GIAI-MA/liburiparser/uriparser_elf_sections_and_image.cpp"
+  ],
+  "total_reconstructed_bytes": 2040747,
+  "fde_count": 176,
+  "text_instructions": 16223,
+  "exported_functions": 140,
+  "key_anchors": {
+    "uriResetUriA": "0x338c (first_op=0xb40000e0)",
+    "uriCompareRangeA": "0x33ac (first_op=0xa9bf7bfd)",
+    "uriRemoveDotSegmentsExA": "0x3458 (first_op=0xd101c3ff)",
+    "uriIsHostSetA": "0x3800 (first_op=0xb4000200)",
+    "uriHexdigToIntA": "0x3860 (first_op=0x12001c09)",
+    "uriResetUriW": "0x3ca4 (first_op=0xb40000e0)"
+  },
+  "stub_count": 0,
+  "todo_count": 0
+}
