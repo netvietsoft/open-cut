@@ -2649,3 +2649,5 @@
 - **[2026-10-27T20:46:16.697518+07:00] Target 135/169 (`libhelios_bm.so`)**: Completed clean-room C++17 reconstruction (`TASK-174`, `260,227 B`, `845/845 PASS`, `135/169 VERIFIED_AND_ACCEPTED`).
 
 - **[2026-10-27T20:51:35.061799+07:00] Target 136/169 (`libzoin.so`)**: Completed clean-room C++17 reconstruction (`TASK-175`, `348,057 B`, `851/851 PASS`, `136/169 VERIFIED_AND_ACCEPTED`).
+
+- **[2026-10-27T21:04:17.390293+07:00] Target 137/169 (`libnpth_dl.so`)**: Completed clean-room C++17 reconstruction (`TASK-176`, `433,431 B`, `857/857 PASS`, `137/169 VERIFIED_AND_ACCEPTED`).

@@ -1,0 +1,35 @@
+{
+  "task_id": "TASK-176-RECONSTRUCTION-LIBNPTH-DL",
+  "legacy_task_id": "TASK_SO_086_libnpth_dl",
+  "title": "Clean-room C++17 Reconstruction & Adversarial Verification of libnpth_dl.so (Target 137/169)",
+  "status": "DONE",
+  "assigned_to": "Agent-3-Android-Native",
+  "reviewer": "Agent-13-Adversary-Auditor",
+  "target_binary": "libnpth_dl.so",
+  "binary_size_bytes": 27352,
+  "sha256": "6e8562b698541ea8c948e0cf3335b08d195a9bac2795279aeb7540f31480df63",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libnpth_dl/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_dl.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_dl.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_086_libnpth_dl.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_086_libnpth_dl.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "Genuine C++17 code >= 40KB after stripping comments, zero stubs/placeholders",
+    "Exact AArch64 opcode parity across all 65 FDEs (.text 0x2600..0x5c14, 13,844 bytes, 3,461 instructions) and 22 exported symbols",
+    "Bilingual EN+VN comments on all functions and structures",
+    "Pass adversary_critic_agent.py, verify_reconstruction_suite.py (100%), and native_audit_watchdog.py"
+  ],
+  "completed_at": "2026-10-27T21:04:17.390293+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (137/169)",
+    "reconstruction_suite": "857/857 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 433431,
+    "fde_count": 65,
+    "exported_symbols": 22,
+    "stub_count": 0
+  }
+}

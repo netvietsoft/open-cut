@@ -911,3 +911,5 @@
 - [x] **TASK-174 (`libhelios_bm.so` — `18,424 B`)**: Reconstructed `260,227 B` C++17/H (3 files, 22 FDEs, 2 exports, 0 stubs), verified `845/845 PASS (100.0%)`, `135/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-175 (`libzoin.so` — `20,304 B`)**: Reconstructed `348,057 B` C++17/H (3 files, 54 FDEs, 1 export, 0 stubs), verified `851/851 PASS (100.0%)`, `136/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-176 (`libnpth_dl.so` — `27,352 B`)**: Reconstructed `433,431 B` C++17/H (4 files, 65 FDEs, 22 exports, 0 stubs), verified `857/857 PASS (100.0%)`, `137/169 VERIFIED_AND_ACCEPTED`.

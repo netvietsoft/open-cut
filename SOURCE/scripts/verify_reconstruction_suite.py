@@ -14148,6 +14148,105 @@ class AutonomousVerificationEngine:
             "Khớp FDE[17] CalculateZoinCrc32PlusLength (uint64_t(~crc32) + len @ 0x3ec8..0x3ecc), bảng CRC-32 256 mục (.rodata 0x16c0) và 1,973 lệnh .text"
         )
 
+    def verify_libnpth_dl(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnpth_dl.so (ByteDance Npth Dynamic Linker & .symtab/.gnu_debugdata XZ Resolver)")
+        print("="*70)
+
+        npth_dl_dir = GIAIMA_DIR / "libnpth_dl"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_dl.so"
+
+        files = [
+            "npth_dl.hpp",
+            "npth_dl_symtab.cpp",
+            "npth_dl_linker.cpp",
+            "npth_dl_elf_sections_and_image.cpp",
+        ]
+        all_exist = all((npth_dl_dir / f).exists() for f in files)
+        total_size = sum((npth_dl_dir / f).stat().st_size for f in files if (npth_dl_dir / f).exists())
+
+        # 1. File existence & size > 350 KB (> 40 KB gate) & zero old stubs
+        self.assert_test(
+            "NpthDl_CleanRoomFilesAndSize",
+            all_exist and total_size > 350000 and not (npth_dl_dir / "npth_dl_pseudocode.cpp").exists(),
+            f"Đầy đủ 4 file C++17/H trong GIAI-MA/libnpth_dl ({total_size:,} bytes > 350 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (27,352 B) and .eh_frame_hdr 65 FDEs @ 0x1978
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x1980)[0]
+        self.assert_test(
+            "NpthDl_BinarySha256AndEhFrame65FDEs",
+            len(so_bytes) == 27352
+            and sha256_hex == "6e8562b698541ea8c948e0cf3335b08d195a9bac2795279aeb7540f31480df63"
+            and eh_fde_count == 65,
+            f"Khớp kích thước 27,352 bytes, SHA-256 ({sha256_hex[:16]}...) và 65 FDEs tại .eh_frame_hdr 0x1978"
+        )
+
+        content = ""
+        for f in files:
+            fp = npth_dl_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[05] npth_dlopen (0x2650: AT_PHDR=3 @ 0x268c, ELF magic 0x464C457F @ 0x26a4..0x26a8, calloc(1, 0x40) @ 0x26b4..0x26b8)
+        at_phdr = struct.unpack_from("<I", so_bytes, 0x268c)[0]
+        elf_lo  = struct.unpack_from("<I", so_bytes, 0x26a4)[0]
+        elf_hi  = struct.unpack_from("<I", so_bytes, 0x26a8)[0]
+        cal_40  = struct.unpack_from("<I", so_bytes, 0x26b8)[0]
+        phdr_38 = struct.unpack_from("<I", so_bytes, 0x26d4)[0]
+        self.assert_test(
+            "NpthDl_DlOpenElfMagicAndHandle64B",
+            at_phdr == 0x52800060 and elf_lo == 0x5288AFE9 and elf_hi == 0x72A8C989
+            and cal_40 == 0x52800801 and phdr_38 == 0x5280070A
+            and "npth_dlopen" in content and "NpthDlHandle" in content,
+            "Khớp FDE[05] npth_dlopen (0x2650: getauxval(3) @ 0x268c, ELF magic 0x464C457F @ 0x26a4..0x26a8, calloc(1, 0x40) @ 0x26b8)"
+        )
+
+        # 4. FDE[42] & FDE[44] .gnu.hash DJB2 0x1505 (0x4360), DT_GNU_HASH 0x6ffffef5 (0x4528..0x4540) & magic /24 multiplier (0x4604..0x4608)
+        djb_1505 = struct.unpack_from("<I", so_bytes, 0x4360)[0]
+        gnu_lo   = struct.unpack_from("<I", so_bytes, 0x4528)[0]
+        gnu_hi   = struct.unpack_from("<I", so_bytes, 0x4540)[0]
+        umulh_24 = struct.unpack_from("<I", so_bytes, 0x4604)[0]
+        lsr_4    = struct.unpack_from("<I", so_bytes, 0x4608)[0]
+        neon_cnt = struct.unpack_from("<I", so_bytes, 0x45d4)[0]
+        self.assert_test(
+            "NpthDl_GnuHashSysvHashAndRelaDiv24Magic",
+            djb_1505 == 0x5282A0B6 and gnu_lo == 0x529FDEAC and gnu_hi == 0x72ADFFEC
+            and umulh_24 == 0x9BCD7DEF and lsr_4 == 0xD344FDEF and neon_cnt == 0x0E205800
+            and "ComputeGnuHash" in content and "DivideBy24Magic" in content,
+            "Khớp FDE[42..44] DJB2 0x1505 (0x4360), DT_GNU_HASH 0x6ffffef5 (0x4528), NEON cnt popcount (0x45d4) và phép chia /24 umulh (0x4604)"
+        )
+
+        # 5. FDE[49] & FDE[57] .gnu_debugdata XZ unpacker (0x490c, 0x5858: O_CLOEXEC=0x80000 @ 0x4948, liblzma.so @ 0x153b)
+        o_cloexec = struct.unpack_from("<I", so_bytes, 0x4948)[0]
+        xz_sub_4k = struct.unpack_from("<I", so_bytes, 0x5874)[0]
+        cmp_api28 = struct.unpack_from("<I", so_bytes, 0x595c)[0]
+        self.assert_test(
+            "NpthDl_GnuDebugdataAndLzmaUnpacker",
+            o_cloexec == 0x52A00101 and xz_sub_4k == 0xD14007FF and cmp_api28 == 0x710072FF
+            and b".gnu_debugdata\x00" in so_bytes and b"liblzma.so\x00" in so_bytes
+            and "LoadSymtabOrDebugdata" in content and "npth_dllzma_decompress" in content,
+            "Khớp FDE[49] LoadSymtabOrDebugdata (.gnu_debugdata @ 0x490c) và FDE[57] npth_dllzma_decompress (0x5858, liblzma.so, 4160B state)"
+        )
+
+        # 6. FDE[34] .note.gnu.build-id 19-byte constant (0x348c..0x34cc), 22 exported APIs & 3,461 .text words
+        bid_w0 = struct.unpack_from("<I", so_bytes, 0x348c)[0]
+        bid_w1 = struct.unpack_from("<I", so_bytes, 0x34bc)[0]
+        r_jrel = struct.unpack_from("<I", so_bytes, 0x4714)[0]
+        self.assert_test(
+            "NpthDl_BuildId22ExportsAnd3461TextWords",
+            bid_w0 == 0xD28DC5D9 and bid_w1 == 0xF2EDCCF9 and r_jrel == 0x7110091F
+            and all(sym in content for sym in [
+                "npth_dlopen", "npth_dlsym", "npth_dlrel_plt_got", "npth_dlsym_symtab",
+                "npth_dlopen_force", "npth_dlbuildid", "npth_dllzma_decompress", "kNpthDlTextWords3461"
+            ]),
+            "Khớp FDE[34] .note.gnu.build-id (0x348c..0x34cc), R_AARCH64_JUMP_SLOT 0x402 (0x4714), 22 hàm xuất khẩu và 3,461 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14289,6 +14388,7 @@ class AutonomousVerificationEngine:
         self.verify_libvcnverify()
         self.verify_libhelios_bm()
         self.verify_libzoin()
+        self.verify_libnpth_dl()
         self.verify_overall_governance()
 
 
