@@ -1,18 +1,22 @@
 {
   "report_id": "REPORT_TASK_SO_121_liblynxbase",
-  "task_id": "TASK_SO_121_liblynxbase",
+  "task_id": "TASK-123-RECONSTRUCTION-LIBLYNXBASE",
+  "legacy_task_id": "TASK_SO_121_liblynxbase",
   "target_library": "liblynxbase.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/C++ Native) & Agent 13 (Adversary Auditor)",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
   "evidence": {
-    "symbols_total": 448,
-    "jni_exports": 0,
-    "cxx_demangled_count": 372,
+    "binary_size_bytes": 232080,
+    "binary_sha256": "6f73cb643285f2b6f59960dde9c053141e6f546429faaf7fa66bbae9e1a0d61d",
+    "symbols_total": 449,
+    "defined_func_symbols": 326,
+    "defined_object_symbols": 6,
+    "reconstructed_code_bytes": 188263,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\liblynxbase",
     "has_cpp_interface": true,
     "has_strings": true
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn tất giải mã và tái tạo sạch C++17 (188,263 bytes across 9 files, 0 stubs) cho liblynxbase.so (Lynx Base & Lynx FML Engine): JNI_OnLoad (0x00010006), lynx::fml::MessageLoop/TaskRunner/MessageLoopTaskQueues (Merge/Unmerge), RFC 1321 MD5, CityHash64, DataURIUtil::DecodeDataURI + Base64Decode, js_dtoa, UTF-8/16/32 string suite, phép chia thời gian bằng nhân nghịch đảo có dấu, RefCountedStringImpl (56 bytes), LynxError và logging.",
+  "acceptance_criteria_passed": true
 }

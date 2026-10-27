@@ -1,0 +1,18 @@
+{
+  "task_id": "TASK-123-RECONSTRUCTION-LIBLYNXBASE",
+  "legacy_task_id": "TASK_SO_121_liblynxbase",
+  "title": "Clean-Room C++17 Reconstruction & Adversarial Proof of liblynxbase.so (Target 84 / 169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/C++ Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Orchestrator)",
+  "completed_at": "2026-10-27T09:36:00+07:00",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/liblynxbase.so",
+  "binary_size_bytes": 232080,
+  "binary_sha256": "6f73cb643285f2b6f59960dde9c053141e6f546429faaf7fa66bbae9e1a0d61d",
+  "reconstructed_code_bytes": 188475,
+  "verification_gates": {
+    "adversary_critic_agent": "84 / 169 VERIFIED_AND_ACCEPTED (49.70%)",
+    "verify_reconstruction_suite": "539 / 539 PASS (100.0%)",
+    "native_audit_watchdog": "169 binaries, 0 high findings"
+  }
+}

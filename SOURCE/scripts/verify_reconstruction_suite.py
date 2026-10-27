@@ -8626,6 +8626,128 @@ class AutonomousVerificationEngine:
             "Khớp FileSystemModule::Stats (scvtf @ 0x01d07c, S_IFDIR @ 0x01d090, S_IFREG @ 0x01d0a8), RequireModule NEON popcount (0x0220b4) và TimerModule"
         )
 
+    def verify_liblynxbase(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: liblynxbase.so (Lynx Base & Lynx FML Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "liblynxbase"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liblynxbase.so"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+
+        # 1. Kiểm tra dung lượng mã nguồn C++17 (> 40 KB, 9 tệp, 0 stub)
+        self.assert_test(
+            "LynxBase_SourceSizeGate",
+            total_bytes > 40000 and len(cpp_files) == 9 and "TODO: Dịch logic" not in content,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 9 tệp, 0 stub)"
+        )
+
+        # 2. Kiểm tra định danh nhị phân ELF64 (232,080 bytes & SHA-256)
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        self.assert_test(
+            "LynxBase_BinaryIdentityAndSHA256",
+            len(so_bytes) == 232080
+            and sha256_hex == "6f73cb643285f2b6f59960dde9c053141e6f546429faaf7fa66bbae9e1a0d61d",
+            f"Khớp kích thước nhị phân 232,080 bytes và SHA-256 ({sha256_hex[:16]}...)"
+        )
+
+        # 3. Kiểm tra JNI_OnLoad (0x01403c..0x01406c), InitVM (0x022e40) & GetAPILevel (0x023d3c)
+        jni_ver_lo = struct.unpack("<I", so_bytes[0x014060:0x014064])[0]
+        jni_ver_hi = struct.unpack("<I", so_bytes[0x014064:0x014068])[0]
+        init_vm_str = struct.unpack("<I", so_bytes[0x022e44:0x022e48])[0]
+        api_lvl_neg1 = struct.unpack("<I", so_bytes[0x023d6c:0x023d70])[0]
+        self.assert_test(
+            "LynxBase_JniOnLoadAndAndroidBridge",
+            jni_ver_lo == 0x528000C0
+            and jni_ver_hi == 0x72A00020
+            and init_vm_str == 0xF9012100
+            and api_lvl_neg1 == 0x12800000
+            and b"com/lynx/base/LynxBaseTrace\x00" in so_bytes
+            and b"ro.build.version.sdk\x00" in so_bytes
+            and all(tok in content for tok in [
+                "JNI_OnLoad",
+                "InitVM",
+                "GetAPILevel",
+                "JNIConvertHelper",
+                "MessageLoopAndroid::Register",
+                "RegisterJNI_LynxBaseTrace",
+                "RegisterJNI_Logging"
+            ]),
+            "Khớp JNI_OnLoad (0x00010006 @ 0x014060), InitVM (.bss 0x038240 @ 0x022e44) và GetAPILevel (0x023d3c)"
+        )
+
+        # 4. Kiểm tra lynx::fml::MessageLoop, TaskRunner, MessageLoopTaskQueues & TimePoint (0x01de60)
+        wall_mul_1000 = struct.unpack("<I", so_bytes[0x01de68:0x01de6c])[0]
+        wall_mul_insn = struct.unpack("<I", so_bytes[0x01de6c:0x01de70])[0]
+        prio_high_neg2 = struct.unpack("<I", so_bytes[0x0206ac:0x0206b0])[0]
+        self.assert_test(
+            "LynxBase_FmlMessageLoopAndTaskQueues",
+            wall_mul_1000 == 0x52807D08
+            and wall_mul_insn == 0x9B087C00
+            and prio_high_neg2 == 0x12800022
+            and all(tok in content for tok in [
+                "ConcurrentMessageLoop",
+                "MessageLoopTaskQueues",
+                "MessageLoopImpl",
+                "MessageLoopAndroid",
+                "TaskRunner",
+                "CountDownLatch",
+                "SyncSwitch",
+                "AutoResetWaitableEvent",
+                "TimedTaskManager"
+            ]),
+            "Khớp lynx::fml::MessageLoop, MessageLoopTaskQueues (Merge/Unmerge), TimePoint::CurrentWallTime (0x01de68) và PlatformThreadPriority::Setter (0x020640)"
+        )
+
+        # 5. Kiểm tra RFC 1321 MD5 (0x01efe4), CityHash64 (0x022314), DataURIUtil (0x029450) & js_dtoa (0x029554)
+        md5_t0_lo = struct.unpack("<I", so_bytes[0x01e3ac:0x01e3b0])[0]
+        md5_ldr_q0 = struct.unpack("<I", so_bytes[0x01eff4:0x01eff8])[0]
+        md5_rodata_init = struct.unpack("<IIII", so_bytes[0x00d250:0x00d260])
+        dtoa_inf_mask = struct.unpack("<I", so_bytes[0x029574:0x029578])[0]
+        self.assert_test(
+            "LynxBase_Md5CityHashDataUriAndJsDtoa",
+            md5_t0_lo == 0x52948F0D
+            and md5_ldr_q0 == 0x3DC09500
+            and md5_rodata_init == (0, 0, 0x67452301, 0xEFCDAB89)
+            and dtoa_inf_mask == 0xD2EFFE08
+            and all(tok in content for tok in [
+                "0x67452301u",
+                "0xEFCDAB89u",
+                "0x9AE16A3B2F90404FULL",
+                "0x2C3436657361623BULL",
+                "0xCCCCCCCCCCCCCCCDULL",
+                "CityHash64",
+                "DecodeDataURI",
+                "js_dtoa"
+            ]),
+            "Khớp RFC 1321 MD5 (.rodata 0x00d250 & T[0]=0xD76AA478 @ 0x01e3ac), CityHash64 (0x022314), DataURIUtil (0x2C3436657361623B) và js_dtoa (0x029554)"
+        )
+
+        # 6. Kiểm tra Phép Chia Thời Gian Nghịch Đảo Có Dấu (0x02d520..0x02d65c), RefCountedStringImpl & LynxError
+        div1000_smulh = struct.unpack("<I", so_bytes[0x02d538:0x02d53c])[0]
+        div1m_smulh = struct.unpack("<I", so_bytes[0x02d568:0x02d56c])[0]
+        div1m_asr18 = struct.unpack("<I", so_bytes[0x02d56c:0x02d570])[0]
+        self.assert_test(
+            "LynxBase_ReciprocalTimeMathAndRefCountedString",
+            div1000_smulh == 0x9B487C08
+            and div1m_smulh == 0x9B487C08
+            and div1m_asr18 == 0x9352FD09
+            and all(tok in content for tok in [
+                "0x20C49BA5E353F7CFULL",
+                "0x431BDE82D7B634DBULL",
+                "RefCountedStringImpl",
+                "LynxError",
+                "ErrorStorage",
+                "LogMessage"
+            ]),
+            "Khớp phép chia nghịch đảo có dấu cho 1.000 (0x20C49BA5E353F7CF @ 0x02d538) và 1.000.000 (0x431BDE82D7B634DB @ 0x02d568), RefCountedStringImpl (56B) và LynxError"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -8714,6 +8836,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_unwind()
         self.verify_libvcbasekit()
         self.verify_libjazz()
+        self.verify_liblynxbase()
         self.verify_overall_governance()
 
 

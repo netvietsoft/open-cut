@@ -2448,3 +2448,16 @@
   - `adversary_critic_agent.py`: **83 / 169 `VERIFIED_AND_ACCEPTED` (49.11%)** (`100% REAL`).
   - `verify_reconstruction_suite.py`: **533 / 533 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 111. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% liblynxbase.so (TASK-123-RECONSTRUCTION-LIBLYNXBASE / TASK_SO_121_liblynxbase)
+- **Thời gian**: 2026-10-27 09:36:00
+- **Thư viện**: `liblynxbase.so` (`232,080 bytes`, SHA-256 `6f73cb643285f2b6f59960dde9c053141e6f546429faaf7fa66bbae9e1a0d61d`, `.text` `0x014000..0x02f4b0` = `111,792 bytes`, Lynx Base & Lynx FML Engine, 449 dynamic symbols: 326 exported `STT_FUNC` and 6 `STT_OBJECT`).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `188,475 bytes` C++17/H, 0 stub)**:
+  1. **`JNI_OnLoad` (`0x01403c..0x01406c`) & `lynx::base::android` (`0x020944..0x023fe8`)**: Khôi phục `JNI_OnLoad` trả về `0x00010006` (`mov w0, #6; movk w0, #1, lsl #16`), `InitVM` (`0x022e40` lưu `JavaVM*` tại `.bss 0x038240`), `AttachCurrentThread`, `GetAPILevel` (`0x023d3c` đọc `"ro.build.version.sdk"` hoặc trả về `-1`), `JavaRef<_jobject*>`, `ScopedJavaLocalFrame`, `JNIConvertHelper`, `MessageLoopAndroid::Register` (`0x024244`), `RegisterJNI_LynxBaseTrace` (`0x029218` `"com/lynx/base/LynxBaseTrace"`), và `RegisterJNI_Logging` (`0x028bf0` `"com/lynx/tasm/base/LLog"`).
+  2. **`lynx::fml` MessageLoop, TaskRunner, MessageLoopTaskQueues & Synchronization (`0x01499c..0x020838`)**: Khôi phục `ConcurrentMessageLoop`, `TaskRunnerChecker`, `MessageLoop`, `MessageLoopImpl`, `MessageLoopAndroid`, `MessageLoopTaskQueues` (`GetInstance` @ `0x017d24`, `Merge` @ `0x0194dc`, `Unmerge` @ `0x019718`), `CountDownLatch`, `SyncSwitch`, `AutoResetWaitableEvent`, `SharedMutex`, `TaskRunner`, `Thread`, `TimePoint::Now`/`CurrentWallTime` (`0x01de5c..0x01de74`), `PlatformThreadPriority::Setter` (`0x020640`), `Timer`, `OneshotTimer`, và `TimedTaskManager`.
+  3. **RFC 1321 `lynx::base::md5` (`0x01efe4`), `CityHash64` (`0x022314`), `DataURIUtil` (`0x029450`), `js_dtoa` (`0x029554`) & Reciprocal Time Math (`0x02d520..0x02d65c`)**: Khôi phục `md5` (`.rodata 0x00d250` `[0, 0, 0x67452301, 0xEFCDAB89]`, `T[0] = 0xD76AA478` @ `0x01e3ac`), `CityHash64`, `DataURIUtil::DecodeDataURI` (dấu 8 byte `";base64,"` = `0x2C3436657361623BULL`), `Base64Decode`, `js_dtoa` (`0x7FF0000000000000ULL` + nhánh 53-bit `0xCCCCCCCCCCCCCCCDULL`), 24 hàm chuỗi UTF-8/16/32, phép chia thời gian nghịch đảo có dấu (`0x20C49BA5E353F7CFULL` chia 1.000 và `0x431BDE82D7B634DBULL` chia 1.000.000), `RefCountedStringImpl` (`56 bytes`, `Unsafe::kEmptyString` @ `.bss 0x0382f8`), `LynxError`, `ErrorStorage`, và `logging`.
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **84 / 169 `VERIFIED_AND_ACCEPTED` (49.70%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **539 / 539 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

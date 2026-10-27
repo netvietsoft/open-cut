@@ -1,0 +1,78 @@
+{
+  "library": "liblynxbase.so",
+  "task_id": "TASK-123-RECONSTRUCTION-LIBLYNXBASE",
+  "legacy_task_id": "TASK_SO_121_liblynxbase",
+  "binary_size_bytes": 232080,
+  "binary_sha256": "6f73cb643285f2b6f59960dde9c053141e6f546429faaf7fa66bbae9e1a0d61d",
+  "reconstructed_code_bytes": 188263,
+  "reconstructed_files": [
+    "lynxbase_types.h",
+    "lynxbase_fml_loop.h",
+    "lynxbase_fml_loop.cpp",
+    "lynxbase_string_crypto.h",
+    "lynxbase_string_crypto.cpp",
+    "lynxbase_jni_log_error.h",
+    "lynxbase_jni_log_error.cpp",
+    "lynxbase_interface.h",
+    "lynxbase_pseudocode.cpp"
+  ],
+  "opcode_evidence": [
+    {
+      "function": "JNI_OnLoad & lynx::base::android::InitVM / GetAPILevel",
+      "vaddr": "0x01403c..0x01406c, 0x022e40..0x022e48, 0x023d3c..0x023d74",
+      "instructions": "bl 0x22e40 (InitVM: adrp x8, #0x38000; str x0, [x8, #0x240] = 0xf9012100); bl 0x22e88 (AttachCurrentThread); bl 0x24244 (MessageLoopAndroid::Register); bl 0x29218 (RegisterJNI_LynxBaseTrace); mov w0, #0x6 (0x528000c0); movk w0, #0x1, lsl #16 (0x72a00020 -> 0x00010006) | GetAPILevel: adrp x0, #0xc000; add x0, x0, #0xdf6 ('ro.build.version.sdk'); bl __system_property_get; mov w0, #-1 (0x12800000 @ 0x023d6c)"
+    },
+    {
+      "function": "lynx::fml::TimePoint::Now, CurrentWallTime & PlatformThreadPriority::Setter",
+      "vaddr": "0x01de5c..0x01de74, 0x020770..0x0207ec",
+      "instructions": "0x01de5c: b 0x2d5e0 (CurrentTimeNanoseconds) | 0x01de60: bl 0x2d540 (CurrentSystemTimeMicroseconds); mov w8, #0x3e8 (0x52807d08); mul x0, x0, x8 (0x9b087c00) | 0x0207ac: mov w2, #-2 (0x12800022); bl setpriority"
+    },
+    {
+      "function": "lynx::base::md5 & MD5_Transform (RFC 1321)",
+      "vaddr": "0x01efe4..0x01f0b4, 0x01e384..0x01edc0",
+      "instructions": "adrp x8, #0xd000; ldr q0, [x8, #0x250] (0x3dc09500 -> [0, 0, 0x67452301, 0xEFCDAB89] from .rodata 0x00d250); mov x8, #0xdcfe; movk x8, #0x98ba, lsl #16; movk x8, #0x5476, lsl #32; movk x8, #0x1032, lsl #48 (0x1032547698BADCFEULL) | 0x01e3ac: mov w13, #0xa478 (0x52948f0d); movk w13, #0xd76a, lsl #16 (0xD76AA478)"
+    },
+    {
+      "function": "CityHash64 & lynx::base::RefCountedStringImpl",
+      "vaddr": "0x022314..0x022628, 0x02d684..0x02da58",
+      "instructions": "CityHash64 k0=0xC3A5C85C97CB3127ULL, k1=0xB492B66FBE98F273ULL, k2=0x9AE16A3B2F90404FULL | RefCountedStringImpl (56 bytes = 0x38): stores hash at +0x28 (empty seed 0x9AE16A3B2F90404FULL @ 0x02d7b8..0x02d7c8), utf8_len at +0x30, utf16_len at +0x34, singleton Unsafe::kEmptyString at .bss 0x0382f8"
+    },
+    {
+      "function": "lynx::base::DataURIUtil::DecodeDataURI & Base64Decode",
+      "vaddr": "0x029450..0x029550, 0x02f290..0x02f6f0",
+      "instructions": "mov x9, #0x623b; movk x9, #0x7361, lsl #16; movk x9, #0x3665, lsl #32; movk x9, #0x2c34, lsl #48 (0x2C3436657361623BULL = ';base64,' @ 0x02946c..0x029480) | lsr x9, x20, #2; add x9, x9, x9, lsl #1; add x1, x9, #2 ((b64_len >> 2) * 3 + 2 @ 0x029510..0x029518)"
+    },
+    {
+      "function": "lynx::base::js_dtoa",
+      "vaddr": "0x029554..0x029674",
+      "instructions": "fmov x8, d0; and x9, x8, #0x7fffffffffffffff; mov x8, #0x7ff0000000000000 (0xd2effe08 @ 0x029574); cmp x9, x8; b.hs 0x29590 ('null' = 0x6c6c756e @ 0x029580) | 53-bit integer fast-path [-0x1fffffffffffff, +0x1fffffffffffff] using x9 = 0xCCCCCCCCCCCCCCCDULL, umulh x12, x11, x9; lsr x12, x12, #3 (@ 0x0295dc..0x0295e0)"
+    },
+    {
+      "function": "CurrentSystemTimeMilliseconds & CurrentTimeMilliseconds (Signed Reciprocal Division)",
+      "vaddr": "0x02d520..0x02d65c",
+      "instructions": "Signed div by 1,000 (0x02d528..0x02d538): x8 = 0x20C49BA5E353F7CFULL; smulh x8, x0, x8 (0x9b487c08); asr x9, x8, #7; add x0, x9, x8, lsr #63 | Signed div by 1,000,000 (0x02d558..0x02d570): x8 = 0x431BDE82D7B634DBULL; smulh x8, x0, x8 (0x9b487c08); asr x9, x8, #0x12 (0x9352fd09)"
+    }
+  ],
+  "math_and_table_proofs": {
+    "signed_reciprocal_time_division": "Dividing signed 64-bit timestamps by 1,000 uses magic M_1000 = ceil(2^70 / 1000) = 0x20C49BA5E353F7CFULL with smulh and arithmetic right shift by 7 (0x02d538). Dividing by 1,000,000 uses magic M_1000000 = ceil(2^82 / 1000000) = 0x431BDE82D7B634DBULL with smulh and arithmetic right shift by 18 = 0x12 (0x02d568..0x02d56c).",
+    "rfc1321_md5_and_cityhash64": "MD5 initializes state [0x67452301, 0xEFCDAB89, 0x98BADCFE, 0x10325476] from .rodata 0x00d250 and immediate 0x1032547698BADCFEULL, and compresses 64-byte blocks starting with T[0] = 0xD76AA478 (0x01e3ac). CityHash64 (0x022314) uses k0=0xC3A5C85C97CB3127ULL, k1=0xB492B66FBE98F273ULL, k2=0x9AE16A3B2F90404FULL.",
+    "js_dtoa_and_data_uri": "js_dtoa (0x029554) checks (bits & 0x7FFFFFFFFFFFFFFFULL) >= 0x7FF0000000000000ULL and formats 53-bit safe integers via unsigned reciprocal division by 10 (0xCCCCCCCCCCCCCCCDULL, lsr #3). DataURIUtil::DecodeDataURI (0x029450) matches 8-byte little-endian ';base64,' (0x2C3436657361623BULL)."
+  },
+  "abi_offsets": {
+    "RefCountedStringImpl": {
+      "size": "0x38 (56 bytes)",
+      "vtable": "+0x00 (vtable @ 0x034768)",
+      "ref_count": "+0x08 (int32_t)",
+      "std_string": "+0x10 (24 bytes)",
+      "cityhash64": "+0x28 (uint64_t, empty seed 0x9AE16A3B2F90404FULL)",
+      "utf8_length": "+0x30 (uint32_t)",
+      "utf16_length": "+0x34 (uint32_t, lazy cache initialized to 0xFFFFFFFF)"
+    },
+    "Md5Context": {
+      "bit_count": "+0x00 (uint64_t)",
+      "state_abcd": "+0x08..+0x14 (uint32_t[4])",
+      "block_buffer": "+0x18..+0x57 (uint8_t[64])",
+      "digest": "+0x58..+0x67 (uint8_t[16])"
+    }
+  }
+}
