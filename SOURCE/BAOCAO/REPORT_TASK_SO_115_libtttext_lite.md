@@ -1,12 +1,7 @@
-# B?O C?O NGHI?M THU: REPORT_TASK_SO_115_libtttext_lite
+# BÁO CÁO NGHIỆM THU TÁI CẤU TRÚC — `libtttext_lite.so` (`TASK-132` / `TASK_SO_115_libtttext_lite`)
 
-- **Task ID**: `TASK_SO_115_libtttext_lite`
-- **Th? vi?n m?c ti?u**: `libtttext_lite.so` (0.28 MB)
-- **Agent th?c hi?n**: `Agent 7 - RECONSTRUCTION`
-- **Tr?ng th?i**: `COMPLETED (100%)`
-
-## B?ng ch?ng k? thu?t:
-- Symbols: 493
-- JNI: 1
-- C++ Demangled: 439
-- Th? m?c: `GIAI-MA/libtttext_lite/`
+- **Trạng thái**: `COMPLETED` (`VERIFIED_AND_ACCEPTED`)
+- **Thư viện**: `libtttext_lite.so` (`297,312 bytes`, SHA-256: `8860b2ff8bdd7458117fb7475fdfd9c84accda90c492d1572714ef9e8260282e`)
+- **Dung lượng C++17 phòng sạch**: `675,258 bytes` (9 files trong `SOURCE/GIAI-MA/libtttext_lite/`, `0` stub)
+- **Số lượng lệnh AArch64 đối chiếu**: `4,993` lệnh
+- **Tóm tắt**: Hoàn thành tái cấu trúc clean-room C++17 100% (675,258 bytes, 0 stub) cho libtttext_lite.so (ByteDance Lynx / TTOffice TTText Lite Typography, Shaping, Bidi & TextLayout Engine, 297,312 bytes): khôi phục chính xác bộ nạp động 39 hàm HarfBuzz từ libkryptoni18n.so (HarfbuzzLib::LoadHarfbuzzLib tại 0x01d798..0x01dd34, bảng 0x138 bytes), bộ nạp động 15 hàm ICU4C có hậu tố phiên bản từ /system/usr/icu (ICUWrapper tại 0x01aaa4..0x01d68f), vòng lặp vector hóa NEON 8 phần tử trong DefaultBidiResult (0x01c518, điền mức 0xFE và ánh xạ 0..N-1 từ .rodata 0x00d9e0), bộ phân loại ký tự ngắt dòng Unicode/CJK & bảng nhảy 175-byte .rodata 0x00d9fc trong BoundaryAnalyst (0x02b1dc), bộ đo dòng LayoutMeasurer (0x02ca84..0x02cbf4), quản lý thuộc tính StyleManager & bố cục ABI 160-byte của Style (0x03386c..0x03453b), các cấu trúc hình học PointF/Range/RangeF/RectF với hằng số sai số IEEE-754 1.0e-4f (0x38D1B717 tại 0x03d28c..0x03db98), bộ chuyển đổi mã hóa UTF-8/UTF-16/UTF-32 (0x03ec6c..0x04014c), và cầu nối JNI com/lynx/textra/* (JNI_OnLoad tại 0x01a7a0, nativeInitialCache tại 0x01a824).

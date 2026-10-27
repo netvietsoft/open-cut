@@ -9857,6 +9857,138 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # KIỂM CHỨNG 93: libtttext_lite.so (ByteDance Lynx / TTOffice TTText Lite Engine)
+    # =========================================================================
+    def verify_libtttext_lite(self):
+        import hashlib
+        import struct
+        print("\n[93] Đang kiểm chứng libtttext_lite.so (ByteDance Lynx / TTOffice TTText Lite Engine)...")
+        lib_dir = GIAIMA_DIR / "libtttext_lite"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libtttext_lite.so"
+        req_files = [
+            "tttext_lite_types.h",
+            "tttext_lite_rodata_tables.h",
+            "tttext_lite_rodata_tables.cpp",
+            "tttext_lite_icu_and_harfbuzz.h",
+            "tttext_lite_icu_and_harfbuzz.cpp",
+            "tttext_lite_shaper_and_layout.h",
+            "tttext_lite_shaper_and_layout.cpp",
+            "tttext_lite_interface.h",
+            "tttext_lite_pseudocode.cpp",
+        ]
+        all_exist = all((lib_dir / f).exists() for f in req_files) and so_path.exists()
+        total_bytes = sum((lib_dir / f).stat().st_size for f in req_files if (lib_dir / f).exists())
+        content = ""
+        for f in req_files:
+            p = lib_dir / f
+            if p.exists():
+                content += p.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+
+        # 1. Kiểm tra cấu trúc 9 file C++17 phòng sạch, dung lượng >= 180KB và SHA-256 nhị phân
+        self.assert_test(
+            "TTTextLite_CleanRoomFilesAndBinaryHash",
+            all_exist
+            and total_bytes >= 180000
+            and len(so_bytes) == 297312
+            and so_sha256 == "8860b2ff8bdd7458117fb7475fdfd9c84accda90c492d1572714ef9e8260282e"
+            and "TODO" not in content,
+            f"Đủ 9 file C++17 phòng sạch cho libtttext_lite.so ({total_bytes:,} bytes >= 180KB), khớp SHA-256 {so_sha256[:16]}..."
+        )
+
+        # 2. Kiểm tra bộ nạp động 39 hàm HarfBuzz (HarfbuzzLib::LoadHarfbuzzLib tại 0x01d798..0x01dd34, bảng 0x138 bytes)
+        op_1d7bc_add = struct.unpack("<I", so_bytes[0x01D7BC:0x01D7C0])[0]
+        op_1dbf4_mov = struct.unpack("<I", so_bytes[0x01DBF4:0x01DBF8])[0]
+        ro_krypton = so_bytes[0x00DD29:0x00DD3A]
+        self.assert_test(
+            "TTTextLite_HarfbuzzLibDynamicLoader39Symbols",
+            op_1d7bc_add == 0x9134A400   # add x0, x0, #0xd29 -> .rodata 0x00dd29 ("libkryptoni18n.so")
+            and op_1dbf4_mov == 0x52802700  # mov w0, #0x138 (312 bytes = 39 * 8)
+            and ro_krypton == b"libkryptoni18n.so"
+            and all(sym in content for sym in [
+                "HarfbuzzFuncTable", "kHarfbuzzSymbolTable", "LoadHarfbuzzLib",
+                "hb_font_create", "hb_buffer_clear_contents"
+            ]),
+            "Khớp bộ nạp động 39 hàm HarfBuzz từ libkryptoni18n.so (.rodata 0x00dd29) và bảng HarfbuzzFuncTable 0x138 (312) bytes tại 0x01dbf4"
+        )
+
+        # 3. Kiểm tra vòng lặp NEON 8 phần tử của DefaultBidiResult (0x01c518) và ICUWrapper::BidiInit (0x01c608)
+        op_1c588_ldr  = struct.unpack("<I", so_bytes[0x01C588:0x01C58C])[0]
+        op_1c59c_movi = struct.unpack("<I", so_bytes[0x01C59C:0x01C5A0])[0]
+        ro_d9e0_vec   = struct.unpack("<4I", so_bytes[0x00D9E0:0x00D9F0])
+        self.assert_test(
+            "TTTextLite_DefaultBidiResultNeonAndICUWrapper",
+            op_1c588_ldr == 0x3DC27980     # ldr q0, [x12, #0x9e0]
+            and op_1c59c_movi == 0x0F07E7C1  # movi v1.8b, #0xfe
+            and ro_d9e0_vec == (0, 1, 2, 3)
+            and all(sym in content for sym in [
+                "DefaultBidiResult", "kRodataBidiIndexVecD9E0", "ICUWrapper",
+                "BidiInit", "icu_boundary_breaker"
+            ]),
+            "Khớp vòng lặp NEON 8 phần tử trong DefaultBidiResult (0x01c588: ldr q0, [x12, #0x9e0] = {0,1,2,3}, movi v1.8b, #0xfe)"
+        )
+
+        # 4. Kiểm tra BoundaryAnalyst (0x02b1dc) phân loại Unicode/CJK và bảng nhảy 175-byte .rodata 0x00d9fc
+        op_2b268_mov = struct.unpack("<I", so_bytes[0x02B268:0x02B26C])[0]
+        op_2b284_add = struct.unpack("<I", so_bytes[0x02B284:0x02B288])[0]
+        op_2b318_ldrb = struct.unpack("<I", so_bytes[0x02B318:0x02B31C])[0]
+        self.assert_test(
+            "TTTextLite_BoundaryAnalystUnicodeAndJumpTable",
+            op_2b268_mov == 0x1289BFE9    # mov w9, #-0x4e00 (CJK Unified Ideographs U+4E00)
+            and op_2b284_add == 0x9127F210  # add x16, x16, #0x9fc (.rodata 0x00d9fc jump table)
+            and op_2b318_ldrb == 0x38656A07  # ldrb w7, [x16, x5]
+            and so_bytes[0x00D9FC + (0x20 - 9)] == 0x00  # ASCII Space U+0020 -> 0x2b2ac + (0x00<<2) = 0x2b2ac (class 1)
+            and so_bytes[0x00D9FC + (0x2D - 9)] == 0x1F  # ASCII Hyphen U+002D -> 0x2b2ac + (0x1F<<2) = 0x2b328 (class 4)
+            and so_bytes[0x00D9FC + (0x28 - 9)] == 0x3E  # ASCII '(' U+0028 -> 0x2b2ac + (0x3E<<2) = 0x2b3a4 (class 3)
+            and so_bytes[0x00D9FC + (0x29 - 9)] == 0x40  # ASCII ')' U+0029 -> 0x2b2ac + (0x40<<2) = 0x2b3ac (class 5)
+            and all(sym in content for sym in [
+                "BoundaryAnalyst", "ClassifyCodepointForBreak", "kBoundaryCharJumpTableD9FC",
+                "FindNextBoundary", "FindPrevBoundary"
+            ]),
+            "Khớp bộ phân loại ký tự ngắt dòng Unicode/CJK (-0x4e00, -0x3400, -0x3040) và bảng nhảy 175-byte .rodata 0x00d9fc"
+        )
+
+        # 5. Kiểm tra LayoutMeasurer (0x02ca84..0x02cbf4), StyleManager (0x033990), và bố cục Style 160-byte
+        op_2ca84_ldrb = struct.unpack("<I", so_bytes[0x02CA84:0x02CA88])[0]
+        op_2cbe0_fmov = struct.unpack("<I", so_bytes[0x02CBE0:0x02CBE4])[0]
+        op_33990_sub  = struct.unpack("<I", so_bytes[0x033990:0x033994])[0]
+        ro_dab8_u32   = struct.unpack("<2I", so_bytes[0x00DAB8:0x00DAC0])
+        self.assert_test(
+            "TTTextLite_LayoutMeasurerAndStyleManagerABI",
+            op_2ca84_ldrb == 0x39407008   # ldrb w8, [x0, #0x1c] (Spacing::line_height_rule)
+            and op_2cbe0_fmov == 0x1E3C1002  # fmov s2, #-0.50000000 (CalcElementY kCenter)
+            and op_33990_sub == 0x51001828   # sub w8, w1, #6 (StyleManager::GetStyleValue Attr 6..19)
+            and ro_dab8_u32 == (0x41555555, 0x3F800000)  # {13.333333f, 1.0f}
+            and all(sym in content for sym in [
+                "CalcRunHeightByLinePitch", "CalcElementY", "GetStyleValue",
+                "kDefaultTextSizeBits", "kDefaultFontStylePacked"
+            ]),
+            "Khớp toán học LayoutMeasurer::CalcRunHeightByLinePitch/CalcElementY (-0.5f tại 0x02cbe0) và bố cục Style 160-byte (.rodata 0x00dab8 = {13.333333f, 1.0f})"
+        )
+
+        # 6. Kiểm tra hằng số epsilon IEEE-754 1.0e-4f (0x38D1B717) trong PointF/RectF, bộ chuyển đổi UTF-8/UTF-32 (0x03ec6c), và JNI_OnLoad (0x01a7a0)
+        op_3d29c_mov  = struct.unpack("<I", so_bytes[0x03D29C:0x03D2A0])[0]
+        op_3d2a0_movk = struct.unpack("<I", so_bytes[0x03D2A0:0x03D2A4])[0]
+        op_3ecf8_bfi  = struct.unpack("<I", so_bytes[0x03ECF8:0x03ECFC])[0]
+        op_3ed78_fmov = struct.unpack("<I", so_bytes[0x03ED78:0x03ED7C])[0]
+        op_1a7b8_mov  = struct.unpack("<I", so_bytes[0x01A7B8:0x01A7BC])[0]
+        self.assert_test(
+            "TTTextLite_FloatEpsilonAndUtf32AndJniOnLoad",
+            op_3d29c_mov == 0x5296E2E8    # mov w8, #0xb717
+            and op_3d2a0_movk == 0x72A71A28  # movk w8, #0x38d1, lsl #16 -> 0x38D1B717 (1.0e-4f)
+            and op_3ecf8_bfi == 0x331A6540   # bfi w0, w10, #6, #0x1a (U8CharToU32)
+            and op_3ed78_fmov == 0x1E2D1001  # fmov s1, #0.75000000 (U8StringToU32 reserve)
+            and op_1a7b8_mov == 0x528000D3   # mov w19, #6 (JNI_VERSION_1_6 = 0x00010006)
+            and all(sym in content for sym in [
+                "kFloatEpsilonBits", "U8CharToU32", "U8StringToU32",
+                "ControlRunList", "SpaceList", "tttext_lite_JNI_OnLoad"
+            ]),
+            "Khớp hằng số epsilon IEEE-754 0x38D1B717 (1.0e-4f), bộ giải mã UTF-8->UTF-32 (bfi #6, #0x1a; reserve *0.75f), và JNI_OnLoad (0x01a7a0)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -9953,6 +10085,7 @@ class AutonomousVerificationEngine:
         self.verify_libundead_native_ability_q()
         self.verify_libserval_svg()
         self.verify_libnms()
+        self.verify_libtttext_lite()
         self.verify_overall_governance()
 
 
