@@ -1,0 +1,30 @@
+{
+  "library": "libnpth_ref_monitor.so",
+  "task_id": "TASK-178-RECONSTRUCTION-LIBNPTH-REF-MONITOR",
+  "so_task_id": "TASK_SO_084_libnpth_ref_monitor",
+  "binary_size_bytes": 28040,
+  "binary_sha256": "8d4e40740d2ff59cecf0b6fd84188d47cafbb676638b263a657847747ae340aa",
+  "reconstruction_files": [
+    "npth_ref_monitor.hpp",
+    "npth_ref_monitor_core.cpp",
+    "npth_ref_monitor_elf_sections_and_image.cpp"
+  ],
+  "reconstruction_total_bytes": 273645,
+  "fde_count": 52,
+  "exported_symbol_count": 34,
+  "text_instruction_count": 2770,
+  "stub_count": 0,
+  "opcode_evidence": {
+    "0x2fd0": "a9ba7bfd (stp x29, x30, [sp, #-0x60]! - so_initialize)",
+    "0x3030": "5284e208 0e040d00 (mov w8, #0x2710; dup v0.2s, w8 - default 10,000 limitGlobal/limitWeak)",
+    "0x3228": "53017c08 121f0108 331e0408 (lsr w8, w0, #1; and w8, w8, #2; bfi w8, w0, #2, #2 - monitorType bitfield)",
+    "0x3810": "a9bc7bfd (stp x29, x30, [sp, #-0x40]! - do_ref_hook 11 ART JNI hooks)",
+    "0x40a4": "a9bb7bfd (stp x29, x30, [sp, #-0x50]! - delete_ref_info)",
+    "0x42dc": "a9402029 (ldp x9, x8, [x1] - RBTreeDeleteNode 4-case CLRS rebalance)",
+    "0x46c0": "d10243ff (sub sp, sp, #0x90 - insert_ref_info RB-tree + PrettyTypeOf + backtrace)",
+    "0x4df4": "d29ef9ea f2bc6a6a f2d374aa f2e4188a 9b4a7d29 (smulh 0x20c49ba5e353f7cf in get_time_millis)",
+    "0x55f0": "0b081148 12006d0b 531c7d08 4a081168 (PJW / ELF hash in hash_table_remove_entry & insert_entry)",
+    "0x58cc": "12b00009 (mov w9, #0x7fffffff - sort_table sentinel)"
+  },
+  "status": "VERIFIED_AND_ACCEPTED"
+}

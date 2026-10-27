@@ -915,3 +915,5 @@
 - [x] **TASK-176 (`libnpth_dl.so` — `27,352 B`)**: Reconstructed `433,431 B` C++17/H (4 files, 65 FDEs, 22 exports, 0 stubs), verified `857/857 PASS (100.0%)`, `137/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-177 (`libnpth_repair.so` — `27,896 B`)**: Reconstructed `324,842 B` C++17/H (3 files, 62 FDEs, 32 exports, 0 stubs), verified `863/863 PASS (100.0%)`, `138/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-178 (`libnpth_ref_monitor.so` — `28,040 B`)**: Reconstructed `273,645 B` C++17/H (3 files, 52 FDEs, 34 exports, 0 stubs), verified `869/869 PASS (100.0%)`, `139/169 VERIFIED_AND_ACCEPTED`.

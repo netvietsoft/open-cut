@@ -14345,6 +14345,83 @@ class AutonomousVerificationEngine:
             "Khớp FDE[42..53] SignalMonitor (NEON cmhi/xtn @ 0x430c, calloc(1, 0x28) @ 0x50e0, LSE casa @ 0x5380), 32 exports và 2,459 lệnh .text"
         )
 
+    def verify_libnpth_ref_monitor(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnpth_ref_monitor.so (ByteDance Npth JNI Reference Table Monitor)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libnpth_ref_monitor"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_ref_monitor.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size > 250 KB
+        self.assert_test(
+            "NpthRefMonitor_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 250000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libnpth_ref_monitor ({total_bytes:,} bytes > 250 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 & 52 FDEs at .eh_frame_hdr 0x2450
+        fde_count = struct.unpack_from("<I", so_bytes, 0x2458)[0]
+        self.assert_test(
+            "NpthRefMonitor_BinarySha256AndEhFrame52FDEs",
+            len(so_bytes) == 28040
+            and sha256_hex == "8d4e40740d2ff59cecf0b6fd84188d47cafbb676638b263a657847747ae340aa"
+            and fde_count == 52,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x2450"
+        )
+
+        # 3. FDE[05] so_initialize (0x2fd0: NEON dup v0.2s, #10000 @ 0x3030..0x3034, monitorType bfi @ 0x3228..0x3234)
+        op_3030 = struct.unpack_from("<I", so_bytes, 0x3030)[0]
+        op_3034 = struct.unpack_from("<I", so_bytes, 0x3034)[0]
+        op_3228 = struct.unpack_from("<I", so_bytes, 0x3228)[0]
+        op_3234 = struct.unpack_from("<I", so_bytes, 0x3234)[0]
+        self.assert_test(
+            "NpthRefMonitor_SoInitializeAndConfigBitfield",
+            op_3030 == 0x5284E208 and op_3034 == 0x0E040D00 and op_3228 == 0x53017C08 and op_3234 == 0x331E0408
+            and "so_initialize" in content and "RefMonitorConfig" in content,
+            "Khớp FDE[05] so_initialize (0x2fd0: dup v0.2s, #10000 @ 0x3030..0x3034, monitorType bfi @ 0x3228..0x3234)"
+        )
+
+        # 4. FDE[11] do_ref_hook & 11 ART JNI Hook Descriptors (.data.rel.ro 0x9f98..0xa0f8, stride 0x20B @ 0x3850..0x3858)
+        op_3850 = struct.unpack_from("<I", so_bytes, 0x3850)[0]
+        op_3858 = struct.unpack_from("<I", so_bytes, 0x3858)[0]
+        self.assert_test(
+            "NpthRefMonitor_DoRefHook11ArtJniEntries",
+            op_3850 == 0x91008294 and op_3858 == 0xF10162BF
+            and "do_ref_hook" in content and "kArtRefHookTable_9f98" in content,
+            "Khớp FDE[11] do_ref_hook (0x3810: 11 mục RefHookDescriptor stride 0x20B @ .data.rel.ro 0x9f98..0xa0f8)"
+        )
+
+        # 5. FDE[26..29] Red-Black Tree (insert_ref_info @ 0x46c0, delete_ref_info @ 0x40a4, RBTreeDeleteNode @ 0x42dc)
+        op_40a4 = struct.unpack_from("<I", so_bytes, 0x40A4)[0]
+        op_42dc = struct.unpack_from("<I", so_bytes, 0x42DC)[0]
+        op_46c0 = struct.unpack_from("<I", so_bytes, 0x46C0)[0]
+        self.assert_test(
+            "NpthRefMonitor_RedBlackTreeInsertAndDeleteRebalance",
+            op_40a4 == 0xA9BB7BFD and op_42dc == 0xA9402029 and op_46c0 == 0xD10243FF
+            and all(sym in content for sym in ["insert_ref_info", "delete_ref_info", "RBTreeDeleteNode_42dc"]),
+            "Khớp FDE[26..29] cây Đỏ-Đen (insert_ref_info @ 0x46c0, delete_ref_info @ 0x40a4, RBTreeDeleteNode_42dc @ 0x42dc)"
+        )
+
+        # 6. FDE[40..45] PJW Hash Table (0x55f0..0x5600), sort_table sentinel 0x7fffffff (0x58cc), 34 exports & 2,770 .text words
+        op_55f0 = struct.unpack_from("<I", so_bytes, 0x55F0)[0]
+        op_5600 = struct.unpack_from("<I", so_bytes, 0x5600)[0]
+        op_58cc = struct.unpack_from("<I", so_bytes, 0x58CC)[0]
+        self.assert_test(
+            "NpthRefMonitor_PjwHashSortTable34ExportsAnd2770TextWords",
+            op_55f0 == 0x0B081148 and op_5600 == 0x4A081168 and op_58cc == 0x12B00009
+            and all(sym in content for sym in [
+                "hash_table_insert_entry", "hash_table_remove_entry", "sort_table",
+                "dump_ref_file", "kTextSectionWords_2f80"
+            ]),
+            "Khớp FDE[40..45] băm PJW/ELF (0x55f0..0x5600), sort_table sentinel 0x7fffffff (0x58cc), 34 exports và 2,770 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14488,6 +14565,7 @@ class AutonomousVerificationEngine:
         self.verify_libzoin()
         self.verify_libnpth_dl()
         self.verify_libnpth_repair()
+        self.verify_libnpth_ref_monitor()
         self.verify_overall_governance()
 
 

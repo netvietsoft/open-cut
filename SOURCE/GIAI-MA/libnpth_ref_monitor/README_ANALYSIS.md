@@ -1,14 +1,7 @@
-# BÁO CÁO GIẢI MÃ KỸ THUẬT: libnpth_ref_monitor.so
-
-- **Dung lượng nhị phân**: 0.03 MB (28040 bytes)
-- **Định dạng nhị phân**: ELF (Chuẩn ELF 64-bit)
-- **Phân loại Lõi C++**: `CORE_10_MONITORING`
-- **Tổng số dynamic symbols**: 82
-- **Hàm JNI xuất xưởng (JNI Exports)**: 0
-- **Hàm C++ demangled bóc tách được**: 0
-
-## Danh mục tài liệu đính kèm
-1. `symbols_demangled.json`: Toàn bộ bảng symbol động kèm tên gốc C++ đã giải mã.
-2. `jni_bindings.json`: Danh mục cổng kết nối JNI xuống Native.
-3. `strings_extracted.txt`: Các hằng số, thông điệp log và URI nội bộ.
-4. C++ Header & Pseudocode phục vụ tái cấu trúc trong `NextAI OpenCut`.
+# Clean-Room Reconstruction Analysis: `libnpth_ref_monitor.so`
+- **Target**: `139 / 169` (`TASK-178-RECONSTRUCTION-LIBNPTH-REF-MONITOR` / `TASK_SO_084_libnpth_ref_monitor`)
+- **Binary Size**: `28,040 bytes` (`28,040 B`)
+- **SHA-256**: `8d4e40740d2ff59cecf0b6fd84188d47cafbb676638b263a657847747ae340aa`
+- **Clean-Room C++17 Size**: `273,645 bytes` across `3` files (`0` stubs)
+- **Unwind Table (`.eh_frame_hdr` @ `0x2450`)**: `52` FDEs covering `0x2f80..0x5ac8` (`2,770` AArch64 instructions)
+- **Exported Symbols (`.dynsym [49]..[82]`)**: `34` exported functions and global state pointers
