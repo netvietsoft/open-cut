@@ -2532,6 +2532,6 @@
   2. **`do_ka` (`0x015ca8..0x016138`), `modify_process_name` (`0x015bd0`), Vòng lặp `flock` (`4,000,000 us`) & Phép nhân nghịch đảo 64-bit (`0x20C49BA5E353F7CFULL`)**: Khôi phục tiến trình canh gác double-fork, chu kỳ ngủ `0x003D0900 = 4,000,000 us` (`0x015fac..0x015fb4`), công thức đổi `tv_usec` sang mili-giây `umulh(tv_usec >> 3, 0x20C49BA5E353F7CFULL) >> 4` (`0x016098..0x0160b0`), và phát giao dịch `start_instr()` (`0x016450`).
   3. **NDK Binder `ndk::ICInterface::ICInterfaceData` (`0x016538..0x016784`), `ndk::SharedRefBase::ref` (`0x016784..0x0168cc`) & `std::__ndk1` / `libc++abi`**: Khôi phục `onCreate`, `onDestroy`, `onDump`, `SharedWeakCountControlBlock`, `StdNdk1Align_0x016cd0`, và `DemangleUndeadSymbol_0x01b980`.
 - **Kiểm định tự động**:
-  - `adversary_critic_agent.py`: **90 / 169 `VERIFIED_AND_ACCEPTED` (53.25%)** (`100% REAL`).
-  - `verify_reconstruction_suite.py`: **575 / 575 PASS (100.0%)**.
+  - `adversary_critic_agent.py`: **91 / 169 `VERIFIED_AND_ACCEPTED` (53.85%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **581 / 581 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

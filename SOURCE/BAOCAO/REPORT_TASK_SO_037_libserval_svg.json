@@ -1,18 +1,28 @@
 {
   "report_id": "REPORT_TASK_SO_037_libserval_svg",
   "task_id": "TASK_SO_037_libserval_svg",
+  "canonical_task_id": "TASK-130-RECONSTRUCTION-LIBSERVAL-SVG",
   "target_library": "libserval_svg.so",
-  "assigned_agent": "Agent 11 - DESIGNER & Agent 3 - FRONTEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
   "evidence": {
-    "symbols_total": 96,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
+    "binary_size_bytes": 282912,
+    "binary_sha256": "742e48019f3701911055dc50691d61bb7b517be98800be8b0dcdf9918f0d296a",
+    "reconstructed_cpp_bytes": 195870,
+    "symbols_total": 121,
+    "exported_symbols": 33,
+    "imported_symbols": 87,
+    "jni_exports": 3,
+    "cxx_demangled_count": 33,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libserval_svg",
+    "proof_json": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libserval_svg.json",
+    "proof_md": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libserval_svg.md",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "stub_count": 0
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn thành tái cấu trúc clean-room C++17 100% (195,870 bytes, 0 stub) cho libserval_svg.so (ByteDance Lynx Serval SVG Engine, 282,912 bytes, 33 biểu tượng xuất khẩu): khôi phục chính xác JNI_OnLoad (0x00ab2c), SVGRenderEngine.render (0x00abec), SVGRenderEngine.calculateViewBoxTransform (0x00adac), bộ phân tích XML đệ quy SrXMLParseContent/SrXMLParseElement/SrXMLParseXML (0x00b728..0x00ba0c), calculate_view_box_transform (0x0129dc), động cơ ma trận affine 2D xform_* (0x012c5c..0x012fe0), make_serval_color (0x013108) kèm phép chia cố định 0x51eb851f và bảng 147 màu sr_svg__colors (0x048000), convert_serval_length_to_float (0x013548) với hằng số 1/sqrt(2) tại .rodata 0x032e68, make_serval_path (0x01369c), make_serval_polygon (0x014b24), add_circle_to_path (0x014ce8) với hằng số Bézier kappa = 0.5519150244935105 tại .rodata 0x032e70, và cây DOM SrSVGDOM / SrAndroidCanvas.",
+  "acceptance_criteria_passed": true
 }

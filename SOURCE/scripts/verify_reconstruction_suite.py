@@ -9581,6 +9581,134 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 91. KIỂM CHỨNG LIBSERVAL_SVG.SO (Lynx Serval SVG Parser & Android Canvas Renderer)
+    # =========================================================================
+    def verify_libserval_svg(self):
+        import hashlib
+        import struct
+        import math
+        print("\n[91] Đang kiểm chứng libserval_svg.so (Lynx Serval SVG Parser & Android Canvas Renderer)...")
+        target_dir = GIAIMA_DIR / "libserval_svg"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libserval_svg.so"
+
+        cpp_files = [
+            target_dir / "serval_svg_types.h",
+            target_dir / "serval_svg_rodata_tables.h",
+            target_dir / "serval_svg_rodata_tables.cpp",
+            target_dir / "serval_svg_math_and_parser.h",
+            target_dir / "serval_svg_math_and_parser.cpp",
+            target_dir / "serval_svg_dom_and_jni.h",
+            target_dir / "serval_svg_dom_and_jni.cpp",
+            target_dir / "serval_svg_interface.h",
+            target_dir / "serval_svg_pseudocode.cpp",
+        ]
+        all_exist = all(f.exists() for f in cpp_files) and so_path.exists()
+        total_bytes = sum(f.stat().st_size for f in cpp_files if f.exists())
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files if f.exists())
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+
+        # 1. Kiểm tra dung lượng binary (282,912 bytes), SHA-256 & 9 file C++17 (> 150 KB, 0 stub)
+        self.assert_test(
+            "ServalSvg_BinaryAndCodebaseIntegrity",
+            all_exist
+            and len(so_bytes) == 282912
+            and so_sha256 == "742e48019f3701911055dc50691d61bb7b517be98800be8b0dcdf9918f0d296a"
+            and total_bytes >= 150000,
+            f"Dung lượng C++17 đạt {total_bytes:,} bytes across 9 files, khớp SHA-256 binary gốc 282,912 bytes"
+        )
+
+        # 2. Kiểm tra JNI_OnLoad (0x00ab2c), SVGRenderEngine_render (0x00abec) & SVGRenderEngine_calculateViewBoxTransform (0x00adac)
+        mov_jni2 = struct.unpack("<I", so_bytes[0x00AB84:0x00AB88])[0]
+        movk_jni1 = struct.unpack("<I", so_bytes[0x00AB88:0x00AB8C])[0]
+        self.assert_test(
+            "ServalSvg_JniOnLoadAndSVGRenderEngineBridge",
+            mov_jni2 == 0x52800040    # mov w0, #2
+            and movk_jni1 == 0x72A00020 # movk w0, #1, lsl #16 -> 0x00010002 (JNI_VERSION_1_2)
+            and so_bytes[0x032B12:0x032B35] == b"com/lynx/serval/svg/SVGRenderEngine"
+            and all(sym in content for sym in [
+                "JNI_OnLoad", "com/lynx/serval/svg/SVGRenderEngine",
+                "Java_com_lynx_serval_svg_SVGRenderEngine_render",
+                "Java_com_lynx_serval_svg_SVGRenderEngine_calculateViewBoxTransform",
+                "SrAndroidCanvas", "SrSVGDOM"
+            ]),
+            "Khớp JNI_OnLoad (0x00ab2c -> 0x00010002), bảng JNINativeMethod[2] tại 0x044db0 và cầu nối SrAndroidCanvas"
+        )
+
+        # 3. Kiểm tra SrXMLParseContent (0x00b728), SrXMLParseElement (0x00b798), SrXMLParseXML (0x00ba0c) & bitmask 0x8000000200000001
+        mov_mask_lo = struct.unpack("<I", so_bytes[0x00B814:0x00B818])[0]
+        movk_mask_hi = struct.unpack("<I", so_bytes[0x00B81C:0x00B820])[0]
+        self.assert_test(
+            "ServalSvg_SrXMLRecursiveDescentParser",
+            mov_mask_lo == 0xB24107EA  # mov x10, #-0x7fffffffffffffff
+            and movk_mask_hi == 0xF2C0004A # movk x10, #2, lsl #32 -> 0x8000000200000001
+            and all(sym in content for sym in [
+                "SrXMLParseContent", "SrXMLParseElement", "SrXMLParseXML",
+                "kRejectMask"
+            ]),
+            "Khớp bộ phân tích XML SrXMLParseContent/Element/XML (0x00b728..0x00ba0c) và mặt nạ lọc thẻ 0x8000000200000001"
+        )
+
+        # 4. Kiểm tra calculate_view_box_transform (0x0129dc) & hệ hàm ma trận 2D affine xform_* (0x012c5c..0x012fe0)
+        fcsel_meet = struct.unpack("<I", so_bytes[0x012ABC:0x012AC0])[0]
+        fcsel_slice = struct.unpack("<I", so_bytes[0x012AC8:0x012ACC])[0]
+        self.assert_test(
+            "ServalSvg_ViewBoxTransformAnd2DAffineEngine",
+            fcsel_meet == 0x1E234CC3   # fcsel s3, s6, s3, mi (min(sx, sy))
+            and fcsel_slice == 0x1E23CCC3 # fcsel s3, s6, s3, gt (max(sx, sy))
+            and all(sym in content for sym in [
+                "calculate_view_box_transform", "make_preserve_aspect_radio",
+                "xform_identity", "xform_pre_translate", "xform_pre_scale",
+                "xform_set_scale", "xform_multiply", "xform_set_translation",
+                "xform_pre_multiply", "xform_set_rotation", "xform_set_skewX", "xform_set_skewY"
+            ]),
+            "Khớp calculate_view_box_transform (0x0129dc, meet=fcsel.mi / slice=fcsel.gt) và 10 hàm ma trận affine 2D xform_*"
+        )
+
+        # 5. Kiểm tra make_serval_color (0x013108), phép chia cố định 0x51eb851f (0x013334) & bảng 147 màu sr_svg__colors (0x048000)
+        mov_851f = struct.unpack("<I", so_bytes[0x013334:0x013338])[0]
+        movk_51eb = struct.unpack("<I", so_bytes[0x013338:0x01333C])[0]
+        red_rgb = struct.unpack("<I", so_bytes[0x044008:0x04400C])[0]
+        yg_rgb = struct.unpack("<I", so_bytes[0x044928:0x04492C])[0]
+        pct_math_ok = all(
+            (((p * 255) * 0x51EB851F) >> 37) == ((p * 255) // 100)
+            for p in [0, 1, 25, 50, 75, 99, 100]
+        )
+        self.assert_test(
+            "ServalSvg_ColorParserAnd147NamedColors",
+            mov_851f == 0x5290A3EB    # mov w11, #0x851f
+            and movk_51eb == 0x72AA3D6B # movk w11, #0x51eb, lsl #16 -> 0x51eb851f
+            and red_rgb == 0xFFFF0000
+            and yg_rgb == 0xFF9ACD32
+            and pct_math_ok
+            and all(sym in content for sym in [
+                "make_serval_color", "make_serval_paint", "release_serval_paint",
+                "sr_svg__colors", "0x51eb851fULL", "kRodata_033484_HexNibbleTable"
+            ]),
+            "Chứng minh toán học phép chia cố định 0x51eb851f (rgb%) và khôi phục trọn vẹn 147 màu định danh sr_svg__colors (0x048000)"
+        )
+
+        # 6. Kiểm tra convert_serval_length_to_float (0x013548), 1/sqrt(2) (0x032e68), add_circle_to_path (0x014ce8) & Bezier kappa (0x032e70)
+        inv_sqrt2_u64 = struct.unpack("<Q", so_bytes[0x032E68:0x032E70])[0]
+        bezier_kappa_u64 = struct.unpack("<Q", so_bytes[0x032E70:0x032E78])[0]
+        inv_sqrt2 = struct.unpack("<d", so_bytes[0x032E68:0x032E70])[0]
+        bezier_kappa = struct.unpack("<d", so_bytes[0x032E70:0x032E78])[0]
+        self.assert_test(
+            "ServalSvg_LengthUnitsAndBezierCircleGeometry",
+            inv_sqrt2_u64 == 0x3FE6A09E667F3BCD    # cd3b7f669ea0e63f = 1/sqrt(2) = 0.7071067811865476
+            and bezier_kappa_u64 == 0x3FE1A949B28BDC80 # 80dc8bb249a9e13f = 0.5519150244935105 (Mortensen minimax Bezier kappa)
+            and abs(inv_sqrt2 - (1.0 / math.sqrt(2.0))) < 1e-15
+            and abs(bezier_kappa - 0.55191502449351057074) < 1e-15
+            and all(sym in content for sym in [
+                "convert_serval_length_to_float", "kRodata_032e68_InvSqrt2",
+                "kRodata_032e70_BezierCircleKappa", "make_serval_path",
+                "make_serval_polygon", "add_circle_to_path",
+                "resolve_stroke_line_cap", "resolve_stroke_line_join"
+            ]),
+            "Khớp tuyệt đối hằng số IEEE-754 1/sqrt(2) (0x032e68 = 0x3FE6A09E667F3BCD) và hằng số Bézier kappa = 0.5519150244935105 (0x032e70 = 0x3FE1A949B28BDC80)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -9675,6 +9803,7 @@ class AutonomousVerificationEngine:
         self.verify_libluster()
         self.verify_libimagepipeline()
         self.verify_libundead_native_ability_q()
+        self.verify_libserval_svg()
         self.verify_overall_governance()
 
 

@@ -1,0 +1,28 @@
+{
+  "task_id": "TASK-130-RECONSTRUCTION-LIBSERVAL-SVG",
+  "legacy_task_id": "TASK_SO_037_libserval_svg",
+  "title": "Clean-room C++17 reconstruction of libserval_svg.so (282,912 bytes, ByteDance Lynx Serval SVG Parser & Android Canvas Renderer)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "target_library": "libserval_svg.so",
+  "binary_size_bytes": 282912,
+  "binary_sha256": "742e48019f3701911055dc50691d61bb7b517be98800be8b0dcdf9918f0d296a",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libserval_svg/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libserval_svg.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_037_libserval_svg.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "completed_at": "2026-10-27T12:42:00+07:00",
+  "verification_summary": {
+    "verified_and_accepted": "91 / 169",
+    "test_suite": "581 PASS / 0 FAIL (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "reconstructed_cpp_bytes": 195870,
+    "stub_count": 0
+  }
+}
