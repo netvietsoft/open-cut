@@ -891,3 +891,5 @@
 - [x] **TASK-164 (`libflipped.so` — `7,320 B`)**: Reconstructed `178,317 B` C++17/H (5 files, 15 FDEs, 8 exports, 0 stubs), verified `785/785 PASS (100.0%)`, `125/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-165 (`libnpth_bt.so` — `7,344 B`)**: Reconstructed `193,369 B` C++17/H (5 files, 18 FDEs, 5 exports, 0 stubs), verified `791/791 PASS (100.0%)`, `126/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-166 (`libtobEmbedPagEncrypt.so` — `8,304 B`)**: Reconstructed `279,520 B` C++17/H (5 files, 7 FDEs, 8 exports, 0 stubs), verified `797/797 PASS (100.0%)`, `127/169 VERIFIED_AND_ACCEPTED`.

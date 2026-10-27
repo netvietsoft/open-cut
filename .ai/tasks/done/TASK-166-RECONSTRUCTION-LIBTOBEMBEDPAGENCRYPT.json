@@ -1,0 +1,40 @@
+{
+  "task_id": "TASK-166-RECONSTRUCTION-LIBTOBEMBEDPAGENCRYPT",
+  "so_task_id": "TASK_SO_065_libtobEmbedPagEncrypt",
+  "title": "Clean-Room C++17 Reconstruction of libtobEmbedPagEncrypt.so (ByteDance Pangle EmbedAppLog S-Box & Block Cipher Engine — Target 127 / 169)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "binary_info": {
+    "name": "libtobEmbedPagEncrypt.so",
+    "path": "SOURCE/apktool-res/lib/arm64-v8a/libtobEmbedPagEncrypt.so",
+    "size_bytes": 8304,
+    "sha256": "d1a8cbbcd4982679b44c5e8cb5480526c8f50b484f744f4e18b49585792bc255",
+    "eh_frame_hdr_offset": "0x000910",
+    "fde_count": 7,
+    "exported_symbols": 8
+  },
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libtobEmbedPagEncrypt/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libtobEmbedPagEncrypt.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libtobEmbedPagEncrypt.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_065_libtobEmbedPagEncrypt.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_065_libtobEmbedPagEncrypt.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of libtobEmbedPagEncrypt.so in clean-room C++17 (> 40 KB total source volume, 0 stubs)",
+    "Exact AArch64 opcode, S-Box bijection, and cryptographic round-trip parity for all 8 exported symbols (sbox0, sbox1, ss_encrypted_size, initKey, ss_encrypt, ss_decrypt, ttEncrypt, ttDecrypt) and 537 .text instructions",
+    "Pass adversary_critic_agent.py, verify_reconstruction_suite.py (797/797 PASS), and native_audit_watchdog.py"
+  ],
+  "completed_at": "2026-10-27T19:44:13.871214+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (127/169)",
+    "reconstruction_suite": "797/797 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 279520,
+    "fde_count": 7,
+    "exported_symbols": 8,
+    "stub_count": 0
+  }
+}

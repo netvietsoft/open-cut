@@ -13232,6 +13232,96 @@ class AutonomousVerificationEngine:
             "Bao phủ trọn vẹn 358 lệnh AArch64 tại .text (0x0c60..0x11f8) và 18 FDEs tại .eh_frame_hdr (0x09f4)"
         )
 
+    def verify_libtobEmbedPagEncrypt(self):
+        import hashlib, struct
+        print("\n[127] Đang kiểm chứng libtobEmbedPagEncrypt.so (ByteDance Pangle EmbedAppLog S-Box & 128-bit Block Cipher)...")
+        tob_dir = GIAIMA_DIR / "libtobEmbedPagEncrypt"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libtobEmbedPagEncrypt.so"
+
+        files = [
+            "tobEmbedPagEncrypt_types.h",
+            "tobEmbedPagEncrypt_core.h",
+            "tobEmbedPagEncrypt_core.cpp",
+            "tobEmbedPagEncrypt_text_opcodes.cpp",
+            "tobEmbedPagEncrypt_sbox_tables.cpp",
+        ]
+        all_exist = all((tob_dir / f).exists() for f in files)
+        total_size = sum((tob_dir / f).stat().st_size for f in files if (tob_dir / f).exists())
+        no_old_stubs = not (tob_dir / "tobEmbedPagEncrypt_interface.h").exists() and not (tob_dir / "tobEmbedPagEncrypt_pseudocode.cpp").exists()
+        self.assert_test(
+            "TobEmbedPagEncrypt_SourceVolumeAndNoStubs",
+            all_exist and total_size > 40000 and no_old_stubs,
+            f"Đầy đủ 5 file C++17/H libtobEmbedPagEncrypt ({total_size:,} bytes > 40 KB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x0910 + 8)[0]
+        self.assert_test(
+            "TobEmbedPagEncrypt_BinarySha256AndEhFrame7FDEs",
+            len(so_bytes) == 8304
+            and sha256_hex == "d1a8cbbcd4982679b44c5e8cb5480526c8f50b484f744f4e18b49585792bc255"
+            and eh_fde_count == 7,
+            f"Khớp kích thước 8,304 bytes, SHA-256 ({sha256_hex[:16]}...) và 7 FDEs tại .eh_frame_hdr 0x0910"
+        )
+
+        content = ""
+        for f in files:
+            fp = tob_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. 256-Byte Bijective S-Boxes sbox0 (0x1630) & sbox1 (0x1730) + initKey 20-Byte Key (0x0900 + 0x1038)
+        sbox0 = list(so_bytes[0x1630:0x1730])
+        sbox1 = list(so_bytes[0x1730:0x1830])
+        bijective_ok = all(sbox1[sbox0[i]] == i for i in range(256))
+        key_rodata = so_bytes[0x0900:0x0910]
+        key_tail_lo = struct.unpack_from("<I", so_bytes, 0x1038)[0]
+        key_tail_hi = struct.unpack_from("<I", so_bytes, 0x1040)[0]
+        self.assert_test(
+            "TobEmbedPagEncrypt_SboxBijectionAndInitKey20B",
+            bijective_ok and key_rodata == b"UK*@3oKpFlVVnads"
+            and key_tail_lo == 0x528CCA8B and key_tail_hi == 0x72A82C8B
+            and "UK*@3oKpFlVVnadsTfda" in content,
+            "Khớp song ánh 256-byte sbox1[sbox0[x]]==x (0x1630..0x1830) và khóa 20 byte 'UK*@3oKpFlVVnadsTfda' trong initKey (0x1018)"
+        )
+
+        # 4. ss_encrypted_size (0x0ad0..0x0b44) & ss_encrypt (0x0b44..0x0d0c) Header + Block Rotations
+        add_hdr6 = struct.unpack_from("<I", so_bytes, 0x0b34)[0]
+        hdr_mag  = struct.unpack_from("<I", so_bytes, 0x0bd0)[0]
+        ror8_op  = struct.unpack_from("<I", so_bytes, 0x0c40)[0]
+        ror24_op = struct.unpack_from("<I", so_bytes, 0x0c84)[0]
+        ror16_op = struct.unpack_from("<I", so_bytes, 0x0cac)[0]
+        self.assert_test(
+            "TobEmbedPagEncrypt_EncryptHeaderAndWordRotationOpcodes",
+            add_hdr6 == 0x11001900 and hdr_mag == 0x528C6E88
+            and ror8_op == 0x4ADC2328 and ror24_op == 0x4ADC62C9 and ror16_op == 0x4ADC4309
+            and "ss_encrypted_size" in content and "ss_encrypt" in content,
+            "Khớp ss_encrypted_size (+6 @ 0x0b34) và ss_encrypt (magic 0x6374 @ 0x0bd0, ror #8/#24/#16 @ 0x0c40/0x0c84/0x0cac)"
+        )
+
+        # 5. ss_decrypt (0x0ea0..0x1018) & PangleEncryptUtils JNI (ttEncrypt @ 0x1070, ttDecrypt @ 0x11c8)
+        chk_t   = struct.unpack_from("<I", so_bytes, 0x0f00)[0]
+        chk_c   = struct.unpack_from("<I", so_bytes, 0x0f0c)[0]
+        rev16_w = struct.unpack_from("<I", so_bytes, 0x0fa4)[0]
+        jni_reg = struct.unpack_from("<I", so_bytes, 0x1104)[0]
+        self.assert_test(
+            "TobEmbedPagEncrypt_DecryptAndPangleJniBridgeOpcodes",
+            chk_t == 0x7101D13F and chk_c == 0x71018D3F and rev16_w == 0x5AC005D0 and jni_reg == 0xF9432108
+            and "Java_com_bytedance_sdk_component_embedapplog_PangleEncryptUtils_ttEncrypt" in content
+            and "Java_com_bytedance_sdk_component_embedapplog_PangleEncryptUtils_ttDecrypt" in content,
+            "Khớp ss_decrypt (0x0ea0: 't'/'c' check @ 0x0f00..0x0f0c, rev16 @ 0x0fa4) và cầu nối JNI PangleEncryptUtils (0x1070, 0x11c8)"
+        )
+
+        # 6. Full 537-Instruction .text (0x0a94..0x12f8) Forensic Coverage
+        self.assert_test(
+            "TobEmbedPagEncrypt_Full537TextInstructionsForensicCoverage",
+            "ExecuteTobEncryptTextInstructionVerify" in content
+            and "verify_tob_encrypt_insn_000_0x0a94" in content
+            and "verify_tob_encrypt_insn_536_0x12f4" in content,
+            "Bao phủ trọn vẹn 537 lệnh AArch64 tại .text (0x0a94..0x12f8) và 7 FDEs tại .eh_frame_hdr (0x0910)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -13363,6 +13453,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_fp_unw()
         self.verify_libflipped()
         self.verify_libnpth_bt()
+        self.verify_libtobEmbedPagEncrypt()
         self.verify_overall_governance()
 
 

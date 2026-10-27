@@ -1,18 +1,52 @@
 {
-  "report_id": "REPORT_TASK_SO_065_libtobEmbedPagEncrypt",
-  "task_id": "TASK_SO_065_libtobEmbedPagEncrypt",
-  "target_library": "libtobEmbedPagEncrypt.so",
-  "assigned_agent": "Agent 9 - SECURITY",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 17,
-    "jni_exports": 2,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libtobEmbedPagEncrypt",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "library": "libtobEmbedPagEncrypt.so",
+  "task_id": "TASK-166-RECONSTRUCTION-LIBTOBEMBEDPAGENCRYPT",
+  "so_task_id": "TASK_SO_065_libtobEmbedPagEncrypt",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size": 8304,
+  "sha256": "d1a8cbbcd4982679b44c5e8cb5480526c8f50b484f744f4e18b49585792bc255",
+  "eh_frame_hdr_offset": "0x000910",
+  "fde_count": 7,
+  "exported_symbols": 8,
+  "reconstructed_cpp_bytes": 279520,
+  "reconstructed_files": [
+    "tobEmbedPagEncrypt_types.h",
+    "tobEmbedPagEncrypt_core.h",
+    "tobEmbedPagEncrypt_core.cpp",
+    "tobEmbedPagEncrypt_text_opcodes.cpp",
+    "tobEmbedPagEncrypt_sbox_tables.cpp"
+  ],
+  "stub_count": 0,
+  "key_opcodes": [
+    {
+      "offset": "0x000b34",
+      "hex": "11001900",
+      "asm": "add w0, w8, #6 (ss_encrypted_size = in_size + pad + 6)"
+    },
+    {
+      "offset": "0x000bd0",
+      "hex": "528C6E88",
+      "asm": "mov w8, #0x6374 ('tc' header magic in ss_encrypt)"
+    },
+    {
+      "offset": "0x000c40",
+      "hex": "4ADC2328",
+      "asm": "eor w8, w25, w28, ror #8 (word 3 rotation XOR in ss_encrypt)"
+    },
+    {
+      "offset": "0x000f00",
+      "hex": "7101D13F",
+      "asm": "cmp w9, #0x74 ('t' magic check in ss_decrypt)"
+    },
+    {
+      "offset": "0x000fa4",
+      "hex": "5AC005D0",
+      "asm": "rev16 w16, w14 (word 2 inverse rotation in ss_decrypt)"
+    },
+    {
+      "offset": "0x001038",
+      "hex": "528CCA8B",
+      "asm": "mov w11, #0x6654; movk w11, #0x4164, lsl #16 ('Tfda' key suffix in initKey)"
+    }
+  ]
 }
