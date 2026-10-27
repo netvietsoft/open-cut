@@ -1,18 +1,12 @@
 {
-  "report_id": "REPORT_TASK_SO_048_libquick",
   "task_id": "TASK_SO_048_libquick",
-  "target_library": "libquick.so",
-  "assigned_agent": "Agent 2 - BACKEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 1646,
-    "jni_exports": 0,
-    "cxx_demangled_count": 588,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libquick",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-155-RECONSTRUCTION-LIBQUICK",
+  "library": "libquick.so",
+  "status": "COMPLETED_VERIFIED",
+  "binary_size_bytes": 1837504,
+  "binary_sha256": "605dd5a78cda21f3b7758d9a69e88a497ef9f9df55543961037664f42a88f00d",
+  "cpp17_reconstruction_bytes": 1405408,
+  "fde_count": 1893,
+  "exported_symbols": 1547,
+  "stub_count": 0
 }

@@ -1,0 +1,59 @@
+{
+  "task_id": "TASK_SO_048_libquick",
+  "Orchestrator_Task_ID": "TASK-155-RECONSTRUCTION-LIBQUICK",
+  "library": "libquick.so",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libquick.so",
+  "binary_size_bytes": 1837504,
+  "binary_sha256": "605dd5a78cda21f3b7758d9a69e88a497ef9f9df55543961037664f42a88f00d",
+  "reconstruction_dir": "SOURCE/GIAI-MA/libquick",
+  "reconstructed_files": [
+    "quick_types.h",
+    "quick_core.h",
+    "quick_core.cpp",
+    "quick_vmsdk_and_jni.cpp",
+    "quick_fde_shard_1.cpp",
+    "quick_fde_shard_2.cpp",
+    "quick_fde_shard_3.cpp",
+    "quick_fde_shard_4.cpp",
+    "quick_fde_shard_5.cpp"
+  ],
+  "reconstructed_cpp_bytes": 1405408,
+  "fde_count": 1893,
+  "eh_frame_hdr_va": "0x03768c",
+  "exported_symbols_count": 1547,
+  "stub_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "opcode_evidence": [
+    {
+      "symbol": "set_mark_multi / set_alloc_tag / set_heap_obj_len / get_heap_obj_len",
+      "va_range": "0x068a44..0x068a90",
+      "opcodes": [
+        "0x068a48: B81FC008 stur w8, [x0, #-4]",
+        "0x068a54: 121A6508 and w8, w8, #0xffffffc0",
+        "0x068a64: 52A04008 mov w8, #0x2000000",
+        "0x068a7c: 331A6428 bfi w8, w1, #6, #0x1a",
+        "0x068a8c: 13067D00 asr w0, w8, #6"
+      ]
+    },
+    {
+      "symbol": "GlobalHandles::TotalSize / UsedSize / GlobalHandles / Create",
+      "va_range": "0x06a018..0x06a0f4",
+      "opcodes": [
+        "0x06a020: 8B080908 add x8, x8, x8, lsl #2",
+        "0x06a024: D375D100 lsl x0, x8, #0xb",
+        "0x06a038: D37DF100 lsl x0, x8, #3",
+        "0x06a05c: 52800600 mov w0, #0x30",
+        "0x06a0e4: 52850600 mov w0, #0x2830"
+      ]
+    },
+    {
+      "symbol": "JNI_OnLoad",
+      "va_range": "0x1afc1c..0x1afd18",
+      "opcodes": [
+        "0x1afc34: 52800054 mov w20, #2",
+        "0x1afc38: 72A00034 movk w20, #1, lsl #16",
+        "0x1afcfc: 11001280 add w0, w20, #4"
+      ]
+    }
+  ]
+}

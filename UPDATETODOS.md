@@ -869,3 +869,5 @@
 - [x] **TASK-153 (`libavmdlv2.so` — `1,411,344 B`)**: Reconstructed `1,399,611 B` C++17/H (9 files, 1,900 .text functions, 315 exports, 0 stubs), verified `719/719 PASS (100.0%)`, `114/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-154 (`libkrypton.so` — `1,674,432 B`)**: Reconstructed `1,456,028 B` C++17/H (9 files, 9,255 FDEs, 345 exports, 0 stubs), verified `725/725 PASS (100.0%)`, `115/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-155 (`libquick.so` — `1,837,504 B`)**: Reconstructed `1,405,408 B` C++17/H (9 files, 1,893 FDEs, 1,547 exports, 0 stubs), verified `731/731 PASS (100.0%)`, `116/169 VERIFIED_AND_ACCEPTED`.

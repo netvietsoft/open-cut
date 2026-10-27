@@ -12201,6 +12201,103 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 118. KIỂM CHỨNG libquick.so (ByteDance LEPUS / PrimJS / QuickJS Engine)
+    # =========================================================================
+    def verify_libquick(self):
+        print("\n[118] Đang kiểm chứng libquick.so (ByteDance LEPUS / PrimJS / QuickJS Engine)...")
+        import hashlib
+        import struct
+        quick_dir = GIAIMA_DIR / "libquick"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libquick.so"
+        files = [
+            "quick_types.h",
+            "quick_core.h",
+            "quick_core.cpp",
+            "quick_vmsdk_and_jni.cpp",
+            "quick_fde_shard_1.cpp",
+            "quick_fde_shard_2.cpp",
+            "quick_fde_shard_3.cpp",
+            "quick_fde_shard_4.cpp",
+            "quick_fde_shard_5.cpp",
+        ]
+        all_exist = all((quick_dir / f).exists() for f in files)
+        total_size = sum((quick_dir / f).stat().st_size for f in files if (quick_dir / f).exists())
+        no_old_stubs = not (quick_dir / "quick_interface.h").exists() and not (quick_dir / "quick_pseudocode.cpp").exists()
+        self.assert_test(
+            "Quick_SourceVolumeAndNoStubs",
+            all_exist and total_size > 1200000 and no_old_stubs,
+            f"Đầy đủ 9 file C++17/H libquick ({total_size:,} bytes > 1.2 MB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x03768c + 8)[0]
+        self.assert_test(
+            "Quick_BinarySha256AndEhFrame1893FDEs",
+            len(so_bytes) == 1837504
+            and sha256_hex == "605dd5a78cda21f3b7758d9a69e88a497ef9f9df55543961037664f42a88f00d"
+            and eh_fde_count == 1893,
+            f"Khớp kích thước 1,837,504 bytes, SHA-256 ({sha256_hex[:16]}...) và 1,893 FDEs tại .eh_frame_hdr 0x03768c"
+        )
+
+        content = ""
+        for f in files:
+            fp = quick_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. Heap object negative-offset bitfields (0x068a44..0x068a90)
+        mark_ops = struct.unpack_from("<3I", so_bytes, 0x068a44)
+        tag_ops = struct.unpack_from("<5I", so_bytes, 0x068a50)
+        len_ops = struct.unpack_from("<4I", so_bytes, 0x068a78)
+        get_len_ops = struct.unpack_from("<3I", so_bytes, 0x068a88)
+        self.assert_test(
+            "Quick_HeapObjNegativeHeaderBitfieldsOpcodes",
+            mark_ops == (0x52800028, 0xB81FC008, 0xD65F03C0)
+            and tag_ops == (0xB85F8008, 0x121A6508, 0x2A010108, 0xB81F8008, 0xD65F03C0)
+            and len_ops == (0xB85F8008, 0x331A6428, 0xB81F8008, 0xD65F03C0)
+            and get_len_ops == (0xB85F8008, 0x13067D00, 0xD65F03C0)
+            and "kHeapObjMaxLen = 0x02000000U" in content
+            and "set_heap_obj_len" in content,
+            "Khớp header âm [ptr-8]/[ptr-4]: set_mark_multi (0x068a44), set_alloc_tag (0x068a50), set/get_heap_obj_len (bfi/asr #6 @ 0x068a78..0x068a90)"
+        )
+
+        # 4. GlobalHandles::TotalSize, UsedSize, handles_count & NodeBlock 0x2830 (0x06a018..0x06a0f4)
+        gh_total = struct.unpack_from("<5I", so_bytes, 0x06a018)
+        gh_used = struct.unpack_from("<5I", so_bytes, 0x06a02c)
+        gh_block_alloc = struct.unpack_from("<I", so_bytes, 0x06a0e4)[0]
+        self.assert_test(
+            "Quick_GlobalHandlesAndNodeBlockOpcodes",
+            gh_total == (0xF9400808, 0xF9401108, 0x8B080908, 0xD375D100, 0xD65F03C0)
+            and gh_used == (0xF9400808, 0xF9401508, 0x8B080908, 0xD37DF100, 0xD65F03C0)
+            and gh_block_alloc == 0x52850600
+            and "kGlobalHandlesBlockAllocSize = 0x2830" in content
+            and "GlobalHandles::Create" in content,
+            "Khớp GlobalHandles::TotalSize (*10240 @ 0x06a018), UsedSize (*40 @ 0x06a02c) và NodeBlock 0x2830B (@ 0x06a0e4)"
+        )
+
+        # 5. GarbageCollector::GarbageCollector (0x068a94..0x068ba0)
+        gc_head = struct.unpack_from("<5I", so_bytes, 0x068a94)
+        self.assert_test(
+            "Quick_GarbageCollectorConstructorOpcodes",
+            gc_head == (0xF81C0FF8, 0xA9015BF7, 0xA90253F5, 0xA9037BF3, 0x90000A77)
+            and "GarbageCollector::Init" in content,
+            "Khớp GarbageCollector::GarbageCollector (0x068a94..0x068ba0) và GarbageCollector::Init (0x068fb0)"
+        )
+
+        # 6. JNI_OnLoad (0x1afc1c..0x1afd18) & VmSdkMonitorAndroid C-wrappers (0x1b08d8..0x1b08e4)
+        jni_ret = struct.unpack_from("<I", so_bytes, 0x1afcfc)[0]
+        c_wrappers = struct.unpack_from("<3I", so_bytes, 0x1b08d8)
+        self.assert_test(
+            "Quick_JniOnLoadAndVmSdkMonitorWrappers",
+            jni_ret == 0x11001280
+            and c_wrappers == (0x17FFFD6E, 0x17FFFEBC, 0x17FFFF82)
+            and "VmSdkMonitorAndroid::GetSettingsFlag" in content
+            and all(f"execute_fde_shard_{i}" in content for i in range(1, 6)),
+            "Khớp JNI_OnLoad (0x1afc1c: trả về 0x00010006 @ 0x1afcfc), C-wrappers (0x1b08d8..0x1b08e0) và 5 FDE shards (1,893 FDEs)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12320,6 +12417,7 @@ class AutonomousVerificationEngine:
         self.verify_libfast_engine_RelWithDebInfo()
         self.verify_libavmdlv2()
         self.verify_libkrypton()
+        self.verify_libquick()
         self.verify_overall_governance()
 
 

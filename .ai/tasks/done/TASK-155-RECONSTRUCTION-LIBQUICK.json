@@ -1,0 +1,35 @@
+{
+  "task_id": "TASK-155-RECONSTRUCTION-LIBQUICK",
+  "so_task_id": "TASK_SO_048_libquick",
+  "title": "Clean-Room C++17 Reconstruction of libquick.so (Target 116 / 169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libquick.so",
+  "binary_size_bytes": 1837504,
+  "output_dir": "SOURCE/GIAI-MA/libquick",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libquick/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libquick.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libquick.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_048_libquick.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_048_libquick.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "100% clean-room C++17 reconstruction (> 40 KB, target > 1,200 KB across 9 files, 0 stubs)",
+    "Direct AArch64 opcode and struct layout verification from libquick.so",
+    "Bilingual EN/VN documentation and comments (Rule 12)",
+    "Pass adversary_critic_agent.py (116/169 VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (731/731 PASS), and native_audit_watchdog.py (0 high findings)"
+  ],
+  "completed_at": "2026-10-27T18:20:14.638977+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (116/169)",
+    "reconstruction_suite": "731/731 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 1405408,
+    "fde_count": 1893,
+    "exported_symbols": 1547,
+    "stub_count": 0
+  }
+}
