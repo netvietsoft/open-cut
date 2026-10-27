@@ -1,0 +1,51 @@
+{
+  "task_id": "TASK_SO_047_libpythonA_RelWithDebInfo",
+  "Orchestrator_Task_ID": "TASK-158-RECONSTRUCTION-LIBPYTHONA-RELWITHDEBINFO",
+  "library": "libpythonA_RelWithDebInfo.so",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libpythonA_RelWithDebInfo.so",
+  "binary_size_bytes": 2229160,
+  "binary_sha256": "adac15b692d2291567fdf9f43ae7d9f5e1d7cfec70c8db6c9b85109118cd92fe",
+  "reconstruction_dir": "SOURCE/GIAI-MA/libpythonA_RelWithDebInfo",
+  "reconstructed_files": [
+    "pythonA_rel_types.h",
+    "pythonA_rel_core.h",
+    "pythonA_rel_core.cpp",
+    "pythonA_rel_frozen_and_unicode.cpp",
+    "pythonA_rel_fde_shard_1.cpp",
+    "pythonA_rel_fde_shard_2.cpp",
+    "pythonA_rel_fde_shard_3.cpp",
+    "pythonA_rel_fde_shard_4.cpp",
+    "pythonA_rel_fde_shard_5.cpp"
+  ],
+  "reconstructed_cpp_bytes": 1695182,
+  "fde_count": 4320,
+  "eh_frame_hdr_va": "0x1c9550",
+  "exported_symbols_count": 1998,
+  "stub_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "opcode_evidence": [
+    {
+      "symbol": "BD_PyInterpreterState_SetStuckCallback & BD_Py_CheckStuckCallback",
+      "va_range": "0x1320e0..0x132154",
+      "opcodes": [
+        "0x1320e0: 5296A108 mov w8, #0xb508",
+        "0x1320e4: 72A00028 movk w8, #1, lsl #16",
+        "0x1320e8: F8286801 str x1, [x0, x8]",
+        "0x13210c: F9400800 ldr x0, [x0, #0x10]",
+        "0x13211c: F8686801 ldr x1, [x0, x8]",
+        "0x132128: D61F0020 br x1"
+      ]
+    },
+    {
+      "symbol": "BDPythonVMDispatchCreateSubInterpreters & BDPythonVMDispatchGetInterperter",
+      "va_range": "0x1042a4..0x104430",
+      "opcodes": [
+        "0x104390: 110006A8 add w8, w21, #1",
+        "0x104394: 1AC80E69 sdiv w9, w19, w8",
+        "0x104398: 1B08CD28 msub w8, w9, w8, w19",
+        "0x1043c4: 9109E008 add x8, x0, #0x278",
+        "0x1043c8: 88DFFD08 ldar w8, [x8]"
+      ]
+    }
+  ]
+}

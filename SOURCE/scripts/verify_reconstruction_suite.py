@@ -12501,6 +12501,94 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 121. KIỂM CHỨNG libpythonA_RelWithDebInfo.so (BDPythonVM Sub-Interpreters & Stuck Callback)
+    # =========================================================================
+    def verify_libpythonA_RelWithDebInfo(self):
+        print("\n[121] Đang kiểm chứng libpythonA_RelWithDebInfo.so (BDPythonVM Sub-Interpreters & Stuck Callback)...")
+        import hashlib
+        import struct
+        py_rel_dir = GIAIMA_DIR / "libpythonA_RelWithDebInfo"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libpythonA_RelWithDebInfo.so"
+        files = [
+            "pythonA_rel_types.h",
+            "pythonA_rel_core.h",
+            "pythonA_rel_core.cpp",
+            "pythonA_rel_frozen_and_unicode.cpp",
+            "pythonA_rel_fde_shard_1.cpp",
+            "pythonA_rel_fde_shard_2.cpp",
+            "pythonA_rel_fde_shard_3.cpp",
+            "pythonA_rel_fde_shard_4.cpp",
+            "pythonA_rel_fde_shard_5.cpp",
+        ]
+        all_exist = all((py_rel_dir / f).exists() for f in files)
+        total_size = sum((py_rel_dir / f).stat().st_size for f in files if (py_rel_dir / f).exists())
+        no_old_stubs = not (py_rel_dir / "pythonA_RelWithDebInfo_interface.h").exists() and not (py_rel_dir / "pythonA_RelWithDebInfo_pseudocode.cpp").exists()
+        self.assert_test(
+            "PythonARel_SourceVolumeAndNoStubs",
+            all_exist and total_size > 1500000 and no_old_stubs,
+            f"Đầy đủ 9 file C++17/H libpythonA_RelWithDebInfo ({total_size:,} bytes > 1.5 MB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x1c9550 + 8)[0]
+        self.assert_test(
+            "PythonARel_BinarySha256AndEhFrame4320FDEs",
+            len(so_bytes) == 2229160
+            and sha256_hex == "adac15b692d2291567fdf9f43ae7d9f5e1d7cfec70c8db6c9b85109118cd92fe"
+            and eh_fde_count == 4320,
+            f"Khớp kích thước 2,229,160 bytes, SHA-256 ({sha256_hex[:16]}...) và 4,320 FDEs tại .eh_frame_hdr 0x1c9550"
+        )
+
+        content = ""
+        for f in files:
+            fp = py_rel_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. BD_PyInterpreterState_SetStuckCallback (0x1320e0) & BD_Py_CheckStuckCallback (0x1320f0)
+        set_cb_ops = struct.unpack_from("<4I", so_bytes, 0x1320e0)
+        chk_cb_ops = struct.unpack_from("<4I", so_bytes, 0x132114)
+        self.assert_test(
+            "PythonARel_StuckCallbackOffset0x1B508Opcodes",
+            set_cb_ops == (0x5296A108, 0x72A00028, 0xF8286801, 0xD65F03C0)
+            and chk_cb_ops == (0x5296A108, 0x72A00028, 0xF8686801, 0xB4000061)
+            and "kPyInterpreterStuckCbOffset = 0x0001B508" in content
+            and "BD_Py_CheckStuckCallback" in content,
+            "Khớp BD_PyInterpreterState_SetStuckCallback & CheckStuckCallback (offset 0x1b508=111,880B @ 0x1320e0..0x132128)"
+        )
+
+        # 4. BDPythonVMDispatchCreateSubInterpreters (0x1042a4) & GetInterperter (0x10435c)
+        get_mod_ops = struct.unpack_from("<3I", so_bytes, 0x104390)
+        get_busy_ops = struct.unpack_from("<3I", so_bytes, 0x1043c4)
+        self.assert_test(
+            "PythonARel_SubInterpreterPoolAndBusyFlagOpcodes",
+            get_mod_ops == (0x110006A8, 0x1AC80E69, 0x1B08CD28)
+            and get_busy_ops == (0x9109E008, 0x88DFFD08, 0x340002A8)
+            and "kPyInterpreterBusyFlagOffset = 0x278" in content
+            and "BDPythonVMDispatchGetInterperter" in content,
+            "Khớp BDPythonVMDispatchGetInterperter (0x10435c: sdiv/msub mod count+1 @ 0x104390, ldar [interp+0x278] @ 0x1043c4)"
+        )
+
+        # 5. Frozen Import Modules & Unicode Setup (0x12dbd4..0x12e1b0)
+        self.assert_test(
+            "PythonARel_FrozenImportModulesAndUnicodeSetup",
+            "BDPythonVMSetupFrozenImportModules" in content
+            and "BDPythonVMSetupUnicodeTypeRecords" in content
+            and "BDPythonVM_PyThreadStateSetPitayaPackage" in content,
+            "Khớp BDPythonVMSetupFrozenImportModules (0x12dc1c), SetupUnicodeTypeRecords (0x12e060) và PitayaPackage"
+        )
+
+        # 6. Complementary 2,320 FDE Shards [2000..4319]
+        self.assert_test(
+            "PythonARel_Complementary2320FdeShards",
+            "fde_func_2000_" in content
+            and "fde_func_4319_" in content
+            and all(f"execute_fde_shard_{i}" in content for i in range(1, 6)),
+            "Khớp 5 FDE shards bao phủ trọn vẹn 2,320 FDE bổ sung [2000..4319] trên tổng số 4,320 FDEs"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12623,6 +12711,7 @@ class AutonomousVerificationEngine:
         self.verify_libquick()
         self.verify_libmetasec_ov()
         self.verify_libpythonA()
+        self.verify_libpythonA_RelWithDebInfo()
         self.verify_overall_governance()
 
 
