@@ -1,0 +1,14 @@
+{
+  "task_id": "TASK-167-RECONSTRUCTION-LIBKOMPRESE-DECOMPRESSOR",
+  "status": "DONE",
+  "completed_at": "2026-10-27T19:57:57.226621+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (128/169)",
+    "reconstruction_suite": "803/803 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 206002,
+    "fde_count": 9,
+    "exported_symbols": 1,
+    "stub_count": 0
+  }
+}

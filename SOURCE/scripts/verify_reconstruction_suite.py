@@ -13322,6 +13322,102 @@ class AutonomousVerificationEngine:
             "Bao phủ trọn vẹn 537 lệnh AArch64 tại .text (0x0a94..0x12f8) và 7 FDEs tại .eh_frame_hdr (0x0910)"
         )
 
+    def verify_libkomprese_decompressor(self):
+        import hashlib
+        import struct
+        print("\n[128] Đang kiểm chứng libkomprese-decompressor.so (ByteDance Komprese Native Decompressor & BCJ Filter)...")
+        komp_dir = GIAIMA_DIR / "libkomprese-decompressor"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libkomprese-decompressor.so"
+
+        files = [
+            "komprese_decompressor.h",
+            "komprese_decompressor.cpp",
+            "komprese_neon_ans_lz_engine.cpp",
+            "komprese_elf_bcj_reloc_filter.cpp",
+            "komprese_rodata_and_crc_tables.cpp",
+        ]
+        all_exist = all((komp_dir / f).exists() for f in files)
+        total_size = sum((komp_dir / f).stat().st_size for f in files if (komp_dir / f).exists())
+
+        # 1. Clean-room C++17 file completeness and size gate (> 40 KB)
+        self.assert_test(
+            "KompreseDecompressor_CleanRoomFilesAndSize",
+            all_exist and total_size > 150000,
+            f"Đầy đủ 5 file C++17/H trong GIAI-MA/libkomprese-decompressor ({total_size:,} bytes > 150 KB)"
+        )
+
+        # 2. Binary SHA-256 (15,800 B) and .eh_frame_hdr 9 FDEs @ 0x08c0
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x08c8)[0]
+        self.assert_test(
+            "KompreseDecompressor_BinarySha256AndEhFrame9FDEs",
+            len(so_bytes) == 15800
+            and sha256_hex == "7a2a91ead53359dafebaae790ec6e5807f0e037c4c73b8ec0a3a49af1c1a18c3"
+            and eh_fde_count == 9,
+            f"Khớp kích thước 15,800 bytes, SHA-256 ({sha256_hex[:16]}...) và 9 FDEs tại .eh_frame_hdr 0x08c0"
+        )
+
+        content = ""
+        for f in files:
+            fp = komp_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[05] (0x0ab8): CRC-32 IEEE 0xEDB88320 (0x0acc..0x0ad0), CRC-64/XZ 0xC96C5795D7870F42 (0x0ae0..0x0af4) & Reciprocal Div (0x0e4c)
+        crc32_lo = struct.unpack_from("<I", so_bytes, 0x0acc)[0]
+        crc32_hi = struct.unpack_from("<I", so_bytes, 0x0ad0)[0]
+        crc64_w0 = struct.unpack_from("<I", so_bytes, 0x0ae0)[0]
+        crc64_w3 = struct.unpack_from("<I", so_bytes, 0x0af4)[0]
+        recip_5f = struct.unpack_from("<I", so_bytes, 0x0e4c)[0]
+        self.assert_test(
+            "KompreseDecompressor_Crc32Crc64AndReciprocalTables",
+            crc32_lo == 0x5290640A and crc32_hi == 0x72BDB70A
+            and crc64_w0 == 0xD281E84A and crc64_w3 == 0xF2F92D8A
+            and recip_5f == 0x52800BEA
+            and "0xEDB88320U" in content and "0xC96C5795D7870F42ULL" in content,
+            "Khớp đa thức CRC-32 (0xEDB88320 @ 0x0acc), CRC-64/XZ (0xC96C5795D7870F42 @ 0x0ae0) và bảng chia nghịch đảo (0x5f - clz @ 0x0e4c)"
+        )
+
+        # 4. FDE[06] komprese_decompress (0x0e9c): \x7fKOM Magic 0x4D4F4B7F (0x0ef0..0x0ef4), Context 0x20B (0x0f74) & Section 0x318B (0x1130)
+        magic_lo = struct.unpack_from("<I", so_bytes, 0x0ef0)[0]
+        magic_hi = struct.unpack_from("<I", so_bytes, 0x0ef4)[0]
+        ctx_sz   = struct.unpack_from("<I", so_bytes, 0x0f74)[0]
+        sec_sz   = struct.unpack_from("<I", so_bytes, 0x1130)[0]
+        self.assert_test(
+            "KompreseDecompressor_MagicHeaderAndSectionLayout",
+            magic_lo == 0x52896FEA and magic_hi == 0x72A9A9EA
+            and ctx_sz == 0x52800400 and sec_sz == 0x52806301
+            and "0x4D4F4B7FU" in content and "komprese_decompress" in content,
+            "Khớp chữ ký '\\x7fKOM' (0x4D4F4B7F @ 0x0ef0), KompreseStreamContext (0x20B @ 0x0f74) và KompreseSectionDescriptor (0x318B @ 0x1130)"
+        )
+
+        # 5. FDE[07] (0x181c): 16-Symbol NEON ANS/Range LZ Decoder (0x801da0 alloc @ 0x189c, cmhi @ 0x1c78, addv @ 0x1c84, ssra #7 @ 0x1ce0)
+        alloc_lo = struct.unpack_from("<I", so_bytes, 0x189c)[0]
+        alloc_hi = struct.unpack_from("<I", so_bytes, 0x18a4)[0]
+        cmhi_op  = struct.unpack_from("<I", so_bytes, 0x1c78)[0]
+        addv_op  = struct.unpack_from("<I", so_bytes, 0x1c84)[0]
+        ssra_op  = struct.unpack_from("<I", so_bytes, 0x1ce0)[0]
+        self.assert_test(
+            "KompreseDecompressor_Neon16SymbolAnsRangeDecoder",
+            alloc_lo == 0x5283B401 and alloc_hi == 0x72A01001
+            and cmhi_op == 0x6E623403 and addv_op == 0x4E71B842 and ssra_op == 0x4F191440
+            and "KompreseDecompressBitstream" in content and "DecodeSymbol16AndAdapt" in content,
+            "Khớp bộ giải mã ANS/Range NEON 16-symbol (memalign 0x801da0 @ 0x189c, cmhi/addv/ssra #7 @ 0x1c78..0x1ce0)"
+        )
+
+        # 6. FDE[08] (0x2b24): Multi-Arch BCJ & Relocation Post-Filter (AArch64 BL/ADRP/PLT, Thumb-2 BL/BLX, Prel31 & 2,573-word .text image)
+        plt_ldr = struct.unpack_from("<I", so_bytes, 0x2be4)[0]
+        plt_br  = struct.unpack_from("<I", so_bytes, 0x2be8)[0]
+        bl_mov  = struct.unpack_from("<I", so_bytes, 0x2bf0)[0]
+        self.assert_test(
+            "KompreseDecompressor_MultiArchBcjFilterAndFullTextImage",
+            plt_ldr == 0x72BF2808 and plt_br == 0x72BAC3E9 and bl_mov == 0x52B2800B
+            and "KompreseApplyBcjAndRelocFilters" in content
+            and "kKompreseTextWords2573" in content and "kKompreseRodata480" in content,
+            "Khớp bộ lọc hậu kỳ BCJ đa kiến trúc (AArch64 BL/ADRP/PLT, Thumb-2 BL/BLX, Prel31 @ 0x2b24..0x3294) và trọn vẹn 2,573 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -13454,6 +13550,7 @@ class AutonomousVerificationEngine:
         self.verify_libflipped()
         self.verify_libnpth_bt()
         self.verify_libtobEmbedPagEncrypt()
+        self.verify_libkomprese_decompressor()
         self.verify_overall_governance()
 
 

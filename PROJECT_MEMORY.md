@@ -2631,3 +2631,5 @@
 - **[2026-10-27T19:38:07.598681+07:00] Target 126/169 (`libnpth_bt.so`)**: Completed clean-room C++17 reconstruction (`TASK-165`, `193,369 B`, `791/791 PASS`, `126/169 VERIFIED_AND_ACCEPTED`).
 
 - **[2026-10-27T19:44:13.871214+07:00] Target 127/169 (`libtobEmbedPagEncrypt.so`)**: Completed clean-room C++17 reconstruction (`TASK-166`, `279,520 B`, `797/797 PASS`, `127/169 VERIFIED_AND_ACCEPTED`).
+
+- **[2026-10-27T19:57:57.226621+07:00] Target 128/169 (`libkomprese-decompressor.so`)**: Completed clean-room C++17 reconstruction (`TASK-167`, `206,002 B`, `803/803 PASS`, `128/169 VERIFIED_AND_ACCEPTED`).

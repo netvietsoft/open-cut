@@ -1,18 +1,22 @@
 {
-  "report_id": "REPORT_TASK_SO_163_libkomprese_decompressor",
   "task_id": "TASK_SO_163_libkomprese_decompressor",
-  "target_library": "libkomprese-decompressor.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 11,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libkomprese-decompressor",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "governance_task_id": "TASK-167-RECONSTRUCTION-LIBKOMPRESE-DECOMPRESSOR",
+  "library": "libkomprese-decompressor.so",
+  "sha256": "7a2a91ead53359dafebaae790ec6e5807f0e037c4c73b8ec0a3a49af1c1a18c3",
+  "size_bytes": 15800,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_code_bytes": 206002,
+  "fde_count": 9,
+  "instruction_count": 2573,
+  "exported_symbols": [
+    "komprese_decompress"
+  ],
+  "files_generated": [
+    "komprese_decompressor.h",
+    "komprese_decompressor.cpp",
+    "komprese_neon_ans_lz_engine.cpp",
+    "komprese_elf_bcj_reloc_filter.cpp",
+    "komprese_rodata_and_crc_tables.cpp",
+    "README_ANALYSIS.md"
+  ]
 }
