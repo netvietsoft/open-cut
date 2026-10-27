@@ -14247,6 +14247,104 @@ class AutonomousVerificationEngine:
             "Khớp FDE[34] .note.gnu.build-id (0x348c..0x34cc), R_AARCH64_JUMP_SLOT 0x402 (0x4714), 22 hàm xuất khẩu và 3,461 lệnh .text"
         )
 
+    def verify_libnpth_repair(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnpth_repair.so (ByteDance Npth Native Crash Repair & Signal Registration Monitor)")
+        print("="*70)
+
+        npth_rep_dir = GIAIMA_DIR / "libnpth_repair"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_repair.so"
+
+        files = [
+            "npth_repair.hpp",
+            "npth_repair_core.cpp",
+            "npth_repair_elf_sections_and_image.cpp",
+        ]
+        all_exist = all((npth_rep_dir / f).exists() for f in files)
+        total_size = sum((npth_rep_dir / f).stat().st_size for f in files if (npth_rep_dir / f).exists())
+
+        # 1. File existence & size > 250 KB (> 40 KB gate) & zero old stubs
+        self.assert_test(
+            "NpthRepair_CleanRoomFilesAndSize",
+            all_exist and total_size > 250000 and not (npth_rep_dir / "npth_repair_pseudocode.cpp").exists(),
+            f"Đầy đủ 3 file C++17/H trong GIAI-MA/libnpth_repair ({total_size:,} bytes > 250 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (27,896 B) and .eh_frame_hdr 62 FDEs @ 0x26a8
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x26b0)[0]
+        self.assert_test(
+            "NpthRepair_BinarySha256AndEhFrame62FDEs",
+            len(so_bytes) == 27896
+            and sha256_hex == "ddf5f8b8929bd70444c23ac90cc8b5434d7f681755f56d7c14f8300a2393338e"
+            and eh_fde_count == 62,
+            f"Khớp kích thước 27,896 bytes, SHA-256 ({sha256_hex[:16]}...) và 62 FDEs tại .eh_frame_hdr 0x26a8"
+        )
+
+        content = ""
+        for f in files:
+            fp = npth_rep_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[18] get_time_millis (0x3700: smulh magic 0x20c49ba5e353f7cf @ 0x373c..0x375c) & FDE[08] hook_table 0x30B stride (@ 0x3488)
+        m_lo   = struct.unpack_from("<I", so_bytes, 0x373c)[0]
+        m_hi   = struct.unpack_from("<I", so_bytes, 0x3748)[0]
+        smulh  = struct.unpack_from("<I", so_bytes, 0x374c)[0]
+        madd_m = struct.unpack_from("<I", so_bytes, 0x375c)[0]
+        str_30 = struct.unpack_from("<I", so_bytes, 0x3488)[0]
+        self.assert_test(
+            "NpthRepair_GetTimeMillisMagicAndHookTable48B",
+            m_lo == 0xD29EF9EA and m_hi == 0xF2E4188A and smulh == 0x9B4A7D29
+            and madd_m == 0x9B0A2500 and str_30 == 0x9100C2F7
+            and "ComputeTimeMillisFromTimeval" in content and "RepairHookItem" in content,
+            "Khớp FDE[18] get_time_millis (smulh 0x20c49ba5e353f7cf @ 0x373c..0x375c) và FDE[08] hook_table stride 0x30B (@ 0x3488)"
+        )
+
+        # 4. FDE[26..27] fix_art_dump_native_stack (0x3a28: API 30..33 @ 0x3a58..0x3a60, ArtMethod +0x20 @ 0x3c48 / +0x18 @ 0x3c64, xpaclri @ 0x3ce4)
+        api_sub = struct.unpack_from("<I", so_bytes, 0x3a58)[0]
+        api_cmn = struct.unpack_from("<I", so_bytes, 0x3a5c)[0]
+        art_20  = struct.unpack_from("<I", so_bytes, 0x3c48)[0]
+        art_18  = struct.unpack_from("<I", so_bytes, 0x3c64)[0]
+        xpac_w  = struct.unpack_from("<I", so_bytes, 0x3ce4)[0]
+        self.assert_test(
+            "NpthRepair_ArtDumpNativeStackFixer",
+            api_sub == 0x51008808 and api_cmn == 0x3100111F and art_20 == 0x910082C8
+            and art_18 == 0x910062C8 and xpac_w == 0xD50320FF
+            and "fix_art_dump_native_stack" in content and "unfix_art_dump_native_stack" in content,
+            "Khớp FDE[26..27] fix_art_dump_native_stack (API 30..33 @ 0x3a58, ArtMethod +0x20/+0x18 @ 0x3c48..0x3c64, xpaclri @ 0x3ce4)"
+        )
+
+        # 5. FDE[38..39] fix_scudo_vma_leak (0x3e6c, 0x3f84: PR_SET_VMA 'SVMA' 0x53564d41 @ 0x3fb8..0x3fbc, size <= 0xa000 @ 0x3fcc, mmap 0x32 @ 0x3ff4)
+        svma_lo = struct.unpack_from("<I", so_bytes, 0x3fb8)[0]
+        svma_hi = struct.unpack_from("<I", so_bytes, 0x3fbc)[0]
+        cmp_a0  = struct.unpack_from("<I", so_bytes, 0x3fcc)[0]
+        mmap_32 = struct.unpack_from("<I", so_bytes, 0x3ff4)[0]
+        self.assert_test(
+            "NpthRepair_ScudoVmaLeakRemapper",
+            svma_lo == 0x5289A828 and svma_hi == 0x72AA6AC8 and cmp_a0 == 0xF1402ABF and mmap_32 == 0x52800643
+            and b"scudo:secondary_unguard\x00" in so_bytes and "fix_scudo_vma_leak" in content,
+            "Khớp FDE[38..39] fix_scudo_vma_leak (PR_SET_VMA 0x53564d41 @ 0x3fb8, size <= 0xa000 @ 0x3fcc, scudo:secondary_unguard)"
+        )
+
+        # 6. FDE[42..53] start_sig_register_monitor (NEON cmhi/xtn @ 0x430c..0x4310, calloc(1, 0x28) @ 0x50e0), 32 exports & 2,459 .text words
+        neon_cmhi = struct.unpack_from("<I", so_bytes, 0x430c)[0]
+        neon_xtn  = struct.unpack_from("<I", so_bytes, 0x4310)[0]
+        cal_28    = struct.unpack_from("<I", so_bytes, 0x50e0)[0]
+        lse_casa  = struct.unpack_from("<I", so_bytes, 0x5380)[0]
+        self.assert_test(
+            "NpthRepair_SignalMonitor32ExportsAnd2459TextWords",
+            neon_cmhi == 0x6EA23401 and neon_xtn == 0x0E612823 and cal_28 == 0x52800501 and lse_casa == 0x88E07C41
+            and all(sym in content for sym in [
+                "JNI_OnLoad", "npth_repair_init", "start_sig_register_monitor",
+                "dump_signal_monitor", "SignalMonitorRecord", "kNpthRepairTextWords2459"
+            ]),
+            "Khớp FDE[42..53] SignalMonitor (NEON cmhi/xtn @ 0x430c, calloc(1, 0x28) @ 0x50e0, LSE casa @ 0x5380), 32 exports và 2,459 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14389,6 +14487,7 @@ class AutonomousVerificationEngine:
         self.verify_libhelios_bm()
         self.verify_libzoin()
         self.verify_libnpth_dl()
+        self.verify_libnpth_repair()
         self.verify_overall_governance()
 
 
