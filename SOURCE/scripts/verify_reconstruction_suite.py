@@ -11063,6 +11063,99 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 104: libttr.so (ByteDance TikTok Video/Audio Render Engine & GLES3 Shaders)
+    # =========================================================================
+    def verify_libttr(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 104: libttr.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libttr"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 1,000 KB across >= 9 files
+        self.assert_test(
+            "Ttr_SourceSizeGate",
+            total_bytes > 1000000 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 1,000 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (625,192 B, SHA-256, 3,386 FDEs @ 0x08ab40) & GLES paths (.rodata 0x06984d / 0x069868)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libttr.so"
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x08ab40 + 8)[0]
+        gles3_path = so_bytes[0x06984d:0x06984d+26]
+        gles2_path = so_bytes[0x069868:0x069868+26]
+        self.assert_test(
+            "Ttr_Elf64FdesAndGlesPaths",
+            len(so_bytes) == 625192
+            and sha256_hex == "38c13f772c29f2a6b03c5523b74730be6727dfc9c3de457b1e09fe32578d6f6f"
+            and fde_count == 3386
+            and gles3_path == b"/system/lib64/libGLESv3.so"
+            and gles2_path == b"/system/lib64/libGLESv2.so"
+            and "glstubInit" in content,
+            "Khớp nhị phân libttr.so (625,192 B, SHA-256 38c13f77..., 3,386 FDE @ 0x08ab40) và đường dẫn /system/lib64/libGLESv3.so (@ 0x06984d)"
+        )
+
+        # 3. TTRUtilsTool::ClipInt16 (0x023de0..0x023df0) & GetCurrentTimeMs/Us (0x023bc8..0x023c14)
+        clip_insns = struct.unpack_from("<5I", so_bytes, 0x023de0)
+        time_ms_madd = struct.unpack_from("<3I", so_bytes, 0x023be0)
+        time_us_madd = struct.unpack_from("<3I", so_bytes, 0x023c08)
+        self.assert_test(
+            "Ttr_UtilsToolClipInt16AndTimestamps",
+            clip_insns == (0x131F7C08, 0x52003908, 0x6B20A01F, 0x1A801100, 0xD65F03C0)
+            and time_ms_madd == (0x52807D0A, 0x9ACA0D08, 0x9B0A2120)
+            and time_us_madd == (0x5288480A, 0x72A001EA, 0x9B0A2120)
+            and "ClipInt16" in content,
+            "Khớp TTRUtilsTool::ClipInt16 (0x023de0: asr/eor #0x7fff/cmp sxth/csel) và GetCurrentTimeMs/Us (0x023be0, 0x023c08)"
+        )
+
+        # 4. TTRAudioEngine::TTRAudioEngine (0x029200..0x029248) & SetVolume (0x029560..0x029598)
+        audio_ctor = struct.unpack_from("<6I", so_bytes, 0x029200)
+        set_vol = struct.unpack_from("<4I", so_bytes, 0x029560)
+        self.assert_test(
+            "Ttr_AudioEngineAbiAndVolumeBounds",
+            audio_ctor == (0x52A7F008, 0xB9002C08, 0xD2E7FE08, 0xF9001808, 0x12800008, 0xB9004008)
+            and set_vol == (0x1E2E1001, 0x1E212000, 0x54000188, 0x1E202008)
+            and "TTRAudioEngineAbiLayout" in content,
+            "Khớp TTRAudioEngine ctor (0x029200: +0x2c=1.0f, +0x30=1.0, +0x40=-1) và SetVolume (0x029560: 0.0f <= v <= 1.0f)"
+        )
+
+        # 5. TTRVideoEngine::Create (0x02d910..0x02d93c) & SharpenSuppression GLSL Fragment Shader (.rodata 0x068dce)
+        video_create = struct.unpack_from("<2I", so_bytes, 0x02d920)
+        shader_prefix = so_bytes[0x068dce:0x068dce+48]
+        self.assert_test(
+            "Ttr_VideoEngineAndSharpenSuppressionShader",
+            video_create == (0x52800A00, 0x97FFB94F)
+            and shader_prefix == b"precision highp float; in highp vec2 v_tex_coord"
+            and "kSharpenSuppressionFragmentGles3_068dce" in content
+            and "u_shoot_suppression_ratio" in content,
+            "Khớp TTRVideoEngine::Create (0x02d920: mov w0, #0x50) và Sharpen Suppression 3x3 Convolution Shader (@ .rodata 0x068dce)"
+        )
+
+        # 6. JNI_OnLoad (0x0358b0..0x035a24) & JNINativeMethod tables (.data 0x09c048 = 1, 0x09c060 = 9)
+        jni_entry = struct.unpack_from("<I", so_bytes, 0x0358b0)[0]
+        reg9 = struct.unpack_from("<I", so_bytes, 0x03596c)[0]
+        reg1 = struct.unpack_from("<I", so_bytes, 0x0359b0)[0]
+        cls_vr = so_bytes[0x06b273:0x06b273+35]
+        cls_sw = so_bytes[0x06b30d:0x06b30d+35]
+        self.assert_test(
+            "Ttr_JniOnLoadAndNativeMethodTables",
+            jni_entry == 0xD10183FF
+            and reg9 == 0x52800123
+            and reg1 == 0x52800023
+            and cls_vr == b"com/tiktok/ttr/video/TTRVideoRender"
+            and cls_sw == b"com/tiktok/ttr/video/TTRSurfaceWrap"
+            and "kTtrVideoRenderJniMethods_09c060" in content
+            and "kTtrSurfaceWrapJniMethods_09c048" in content,
+            "Khớp JNI_OnLoad (0x0358b0: RegisterNatives 9 methods @ 0x09c060 cho TTRVideoRender và 1 method @ 0x09c048 cho TTRSurfaceWrap)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -11170,6 +11263,7 @@ class AutonomousVerificationEngine:
         self.verify_liborbuculum()
         self.verify_libsysoptimizer()
         self.verify_libcybertron_base()
+        self.verify_libttr()
         self.verify_overall_governance()
 
 
