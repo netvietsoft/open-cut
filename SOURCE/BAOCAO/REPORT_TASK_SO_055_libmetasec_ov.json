@@ -1,18 +1,12 @@
 {
-  "report_id": "REPORT_TASK_SO_055_libmetasec_ov",
   "task_id": "TASK_SO_055_libmetasec_ov",
-  "target_library": "libmetasec_ov.so",
-  "assigned_agent": "Agent 9 - SECURITY",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 463,
-    "jni_exports": 0,
-    "cxx_demangled_count": 45,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libmetasec_ov",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-156-RECONSTRUCTION-LIBMETASEC-OV",
+  "library": "libmetasec_ov.so",
+  "status": "COMPLETED_VERIFIED",
+  "binary_size_bytes": 1932896,
+  "binary_sha256": "1b82fc11ad72e1afc99b5399ecf44c0e4dd055f715ed9c3dda9b716355e5581e",
+  "cpp17_reconstruction_bytes": 1445114,
+  "fde_count": 5296,
+  "exported_symbols": 14,
+  "stub_count": 0
 }

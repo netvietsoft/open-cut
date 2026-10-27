@@ -12298,6 +12298,105 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 119. KIỂM CHỨNG libmetasec_ov.so (ByteDance MetaSec Overseas v05.02.03-alpha.9)
+    # =========================================================================
+    def verify_libmetasec_ov(self):
+        print("\n[119] Đang kiểm chứng libmetasec_ov.so (ByteDance MetaSec Overseas v05.02.03-alpha.9)...")
+        import hashlib
+        import struct
+        ms_dir = GIAIMA_DIR / "libmetasec_ov"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libmetasec_ov.so"
+        files = [
+            "metasec_ov_types.h",
+            "metasec_ov_core.h",
+            "metasec_ov_core.cpp",
+            "metasec_ov_ollvm_and_jni.cpp",
+            "metasec_ov_fde_shard_1.cpp",
+            "metasec_ov_fde_shard_2.cpp",
+            "metasec_ov_fde_shard_3.cpp",
+            "metasec_ov_fde_shard_4.cpp",
+            "metasec_ov_fde_shard_5.cpp",
+        ]
+        all_exist = all((ms_dir / f).exists() for f in files)
+        total_size = sum((ms_dir / f).stat().st_size for f in files if (ms_dir / f).exists())
+        no_old_stubs = not (ms_dir / "metasec_ov_interface.h").exists() and not (ms_dir / "metasec_ov_pseudocode.cpp").exists()
+        self.assert_test(
+            "MetaSecOv_SourceVolumeAndNoStubs",
+            all_exist and total_size > 1200000 and no_old_stubs,
+            f"Đầy đủ 9 file C++17/H libmetasec_ov ({total_size:,} bytes > 1.2 MB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x18b288 + 8)[0]
+        self.assert_test(
+            "MetaSecOv_BinarySha256AndEhFrame5296FDEs",
+            len(so_bytes) == 1932896
+            and sha256_hex == "1b82fc11ad72e1afc99b5399ecf44c0e4dd055f715ed9c3dda9b716355e5581e"
+            and eh_fde_count == 5296,
+            f"Khớp kích thước 1,932,896 bytes, SHA-256 ({sha256_hex[:16]}...) và 5,296 FDEs tại .eh_frame_hdr 0x18b288"
+        )
+
+        content = ""
+        for f in files:
+            fp = ms_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. 13 Overseas AppID Whitelist Initializer (0x02ea00..0x02ebc0 & .rodata 0x16b790..0x16b7d5)
+        init_ops = struct.unpack_from("<4I", so_bytes, 0x02ea2c)
+        ro_appids = so_bytes[0x16b790:0x16b7db]
+        self.assert_test(
+            "MetaSecOv_AppIdWhitelist13EntriesAndGuardOpcodes",
+            init_ops == (0xB0000D68, 0x911EA108, 0x08DFFD08, 0x37000C48)
+            and b"1180\x001233\x00259\x00662155\x001340\x00" in ro_appids
+            and "kMetaSecAllowedAppIds" in content
+            and '"259"' in content,
+            "Khớp bộ khởi tạo 13 AppID quốc tế (0x02ea00: ldarb @ .bss 0x1db7a8, .rodata 0x16b790 chứa 1180, 1233, 259, 662155...)"
+        )
+
+        # 4. OLLVM Quadratic Non-Residue Modulo 19 Predicate (0x04bc40..0x04bc70 & 0x04bd18..0x04bd48)
+        mod19_ops = struct.unpack_from("<12I", so_bytes, 0x04bc40)
+        x1 = 0x19b
+        w8_1 = ((x1 * x1) << 2) + 4
+        r1 = w8_1 % 19
+        x2 = 0xea
+        w8_2 = ((x2 * x2) << 2) + 4
+        r2 = w8_2 % 19
+        self.assert_test(
+            "MetaSecOv_OllvmQuadMod19PredicateAndProof",
+            mod19_ops[:5] == (0x1B087D08, 0x528D7969, 0x531E7508, 0x72B5E509, 0x11001108)
+            and r1 == 10 and r2 == 15
+            and "RemainderQuad4Mod19" in content
+            and "0xAF286BCBU" in content,
+            f"Khớp vị từ OLLVM (4x^2+4) mod 19 != 0 (0x04bc40: reciprocal 0xAF286BCB, r(0x19b)={r1}, r(0xea)={r2})"
+        )
+
+        # 5. OLLVM Pell Modulo 7 (0x04bc94..0x04bcac) & Polynomial Modulo 81 (0x04bcd0..0x04bcf0)
+        pell_ops = struct.unpack_from("<6I", so_bytes, 0x04bc94)
+        mod81_ops = struct.unpack_from("<8I", so_bytes, 0x04bcd0)
+        r81 = (0x36 * 0x36 + 0x36 + 7) % 81
+        self.assert_test(
+            "MetaSecOv_OllvmPellMod7AndPolyMod81Predicates",
+            pell_ops == (0x320003EA, 0x1B082908, 0x1B097D29, 0x531D712A, 0x4B090149, 0x6B09011F)
+            and mod81_ops[:5] == (0x1B082108, 0x5290FCE9, 0x72B948A9, 0x11001D08, 0x9BA97D09)
+            and r81 == 61
+            and "IsPellMod7Impossible" in content
+            and "RemainderPolyMod81" in content,
+            f"Khớp vị từ Pell x^2+1 != 7y^2 (0x04bc94) và đa thức (x^2+x+7) mod 81 (0x04bcd0: reciprocal 0xCA4587E7, r(0x36)={r81})"
+        )
+
+        # 6. JNI_OnLoad (0x04aae0..0x04bd88) & 5 FDE Shards
+        jni_head = struct.unpack_from("<6I", so_bytes, 0x04aae0)
+        self.assert_test(
+            "MetaSecOv_JniOnLoadAnd5FdeShards",
+            jni_head == (0xA9BA6FFC, 0xA90167FA, 0xA9025FF8, 0xA90357F6, 0xA9044FF4, 0xA9057BFD)
+            and "v05.02.03-alpha.9" in content
+            and all(f"execute_fde_shard_{i}" in content for i in range(1, 6)),
+            "Khớp JNI_OnLoad (0x04aae0..0x04bd88, 4,776B), chuỗi v05.02.03-alpha.9 và 5 FDE shards đại diện 5,296 FDEs"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12418,6 +12517,7 @@ class AutonomousVerificationEngine:
         self.verify_libavmdlv2()
         self.verify_libkrypton()
         self.verify_libquick()
+        self.verify_libmetasec_ov()
         self.verify_overall_governance()
 
 

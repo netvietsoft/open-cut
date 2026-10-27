@@ -1,0 +1,48 @@
+{
+  "task_id": "TASK_SO_055_libmetasec_ov",
+  "Orchestrator_Task_ID": "TASK-156-RECONSTRUCTION-LIBMETASEC-OV",
+  "library": "libmetasec_ov.so",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libmetasec_ov.so",
+  "binary_size_bytes": 1932896,
+  "binary_sha256": "1b82fc11ad72e1afc99b5399ecf44c0e4dd055f715ed9c3dda9b716355e5581e",
+  "reconstruction_dir": "SOURCE/GIAI-MA/libmetasec_ov",
+  "reconstructed_files": [
+    "metasec_ov_types.h",
+    "metasec_ov_core.h",
+    "metasec_ov_core.cpp",
+    "metasec_ov_ollvm_and_jni.cpp",
+    "metasec_ov_fde_shard_1.cpp",
+    "metasec_ov_fde_shard_2.cpp",
+    "metasec_ov_fde_shard_3.cpp",
+    "metasec_ov_fde_shard_4.cpp",
+    "metasec_ov_fde_shard_5.cpp"
+  ],
+  "reconstructed_cpp_bytes": 1445114,
+  "fde_count": 5296,
+  "eh_frame_hdr_va": "0x18b288",
+  "exported_symbols_count": 14,
+  "stub_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "opcode_evidence": [
+    {
+      "symbol": "AppID Whitelist Initializer (13 AppIDs @ 0x16b790)",
+      "va_range": "0x02ea00..0x02ebc0",
+      "opcodes": [
+        "0x02ea2c: B0000D68 adrp x8, #0x1db000",
+        "0x02ea34: 08DFFD08 ldarb w8, [x8]",
+        "0x02ea50: 911E4021 add x1, x1, #0x790"
+      ]
+    },
+    {
+      "symbol": "JNI_OnLoad OLLVM Number-Theoretic Predicates (Mod 19, Mod 7, Mod 81)",
+      "va_range": "0x04aae0..0x04bd88",
+      "opcodes": [
+        "0x04bc44: 528D7969 mov w9, #0x6bcb",
+        "0x04bc4c: 72B5E509 movk w9, #0xaf28, lsl #16",
+        "0x04bc6c: 1B0AA128 msub w8, w9, w10, w8",
+        "0x04bcd4: 5290FCE9 mov w9, #0x87e7",
+        "0x04bcd8: 72B948A9 movk w9, #0xca45, lsl #16"
+      ]
+    }
+  ]
+}
