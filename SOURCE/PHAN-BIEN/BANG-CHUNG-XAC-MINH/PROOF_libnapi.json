@@ -1,0 +1,98 @@
+{
+  "proof_id": "PROOF_libnapi",
+  "target_library": "libnapi.so",
+  "task_id": "TASK-126-RECONSTRUCTION-LIBNAPI",
+  "legacy_task_id": "TASK_SO_119_libnapi",
+  "status": "VERIFIED_AND_PROVEN",
+  "verified_at": "2026-10-27T10:58:00+07:00",
+  "binary_forensics": {
+    "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libnapi.so",
+    "binary_size_bytes": 247904,
+    "binary_sha256": "fb3a870c14315fcc8976c7edd2653ad80ef3ab96ceb534f0d6354aa91e82764c",
+    "text_section": {
+      "vma_start": "0x014000",
+      "vma_end": "0x037070",
+      "size_bytes": 143472
+    },
+    "rodata_section": {
+      "vma_start": "0x00c780",
+      "vma_end": "0x00e6af",
+      "size_bytes": 7983
+    },
+    "data_rel_ro_section": {
+      "vma_start": "0x038000",
+      "vma_end": "0x0389d8",
+      "size_bytes": 2520
+    },
+    "bss_section": {
+      "vma_start": "0x03c028",
+      "vma_end": "0x03c1d8",
+      "size_bytes": 432
+    },
+    "dt_needed": [
+      "libdl.so",
+      "libquick.so",
+      "liblog.so",
+      "libm.so",
+      "libc++_shared.so",
+      "libc.so"
+    ],
+    "dynsym_total": 498,
+    "dynsym_exports": 306,
+    "dynsym_imports": 191,
+    "source_paths_observed": [
+      "/ws/228/bytebus/repositories/64f55d36a1934e8a59474a720b2d591d/b01c65cec201ce6e47a1f549784d4463/basic/android/java_only_map.cc",
+      "/ws/228/bytebus/repositories/64f55d36a1934e8a59474a720b2d591d/b01c65cec201ce6e47a1f549784d4463/oss/src/napi/quickjs/js_native_api_QuickJS.cc"
+    ]
+  },
+  "reconstructed_code_metrics": {
+    "directory": "SOURCE/GIAI-MA/libnapi",
+    "total_cpp_h_bytes": 230652,
+    "stub_count": 0,
+    "files": [
+      {"name": "napi_types.h", "bytes": 32533},
+      {"name": "napi_env_runtime.h", "bytes": 3572},
+      {"name": "napi_env_runtime.cpp", "bytes": 32924},
+      {"name": "napi_quickjs_backend.h", "bytes": 1417},
+      {"name": "napi_quickjs_backend.cpp", "bytes": 69884},
+      {"name": "napi_cpp_wrapper.h", "bytes": 16744},
+      {"name": "napi_cpp_wrapper.cpp", "bytes": 40028},
+      {"name": "napi_android_jni.h", "bytes": 7503},
+      {"name": "napi_android_jni.cpp", "bytes": 23335},
+      {"name": "napi_interface.h", "bytes": 995},
+      {"name": "napi_pseudocode.cpp", "bytes": 1717}
+    ]
+  },
+  "opcode_and_mathematical_proofs": [
+    {
+      "symbol": "napi_new_env",
+      "vma_range": "0x015e28..0x015ecc",
+      "proof_type": "ABI_STRUCT_SIZE_AND_DISPATCH_TABLE",
+      "details": "Allocates 0x430 (1,072 bytes) napi_env__ via operator new (0x015e30: mov w0, #0x430; bl #0x370b0), 0x20 (32 bytes) NapiEnvState (0x015e48), and 0x28 (40 bytes) CleanupHookTable with max_load_factor = 1.0f = 0x3f800000 at +0x20 (0x015e60..0x015e74). Binds 5 base environment functions at +0x018, +0x338, +0x340, +0x348, and +0x3a8."
+    },
+    {
+      "symbol": "napi_free_env",
+      "vma_range": "0x015ecc..0x0160d0",
+      "proof_type": "HASH_AND_NEON_POPCOUNT_LIFO_DRAIN",
+      "details": "Checks 24-byte CleanupHookEntry array allocation overflow against 0xaaaaaaaaaaaaaaaab (0x015ef4..0x015ef8: mov x24, #-0x5555555555555556; movk x24, #0xaaa, lsl #48), sorts hooks in LIFO order via sub_160d0 (0x015f74), computes hash = fn ^ (arg << 1) (0x015fcc: eor x11, x9, x0, lsl #1) and NEON popcount bucket index (0x015fbc..0x015fc0: cnt v0.8b, v0.8b; uaddlv h0, v0.8b)."
+    },
+    {
+      "symbol": "napi_attach_quickjs",
+      "vma_range": "0x01c1a0..0x01c8b4",
+      "proof_type": "QJSIMPL_CONTEXT_AND_11_ATOMS",
+      "details": "Populates 78 N-API function pointers in napi_env__ (+0x020..+0x428), allocates 0x450 (1,104 bytes) qjsimpl::Context (0x01c6a8: mov w0, #0x450; bl #0x370b0), loads {2ULL, 18ULL} from .rodata 0x00c7c0 into +0x18..+0x20, interns 11 QuickJSAtom (0x50 = 80B each) at +0x0c8..+0x3e8 via sub_25060, and allocates root HandleScopeWrapper (0x30 = 48B @ 0x01c83c)."
+    },
+    {
+      "symbol": "Napi::TypedArray::ElementSize",
+      "vma_range": "0x02afd0..0x02b07c",
+      "proof_type": "RODATA_DISPLACEMENT_JUMP_TABLE",
+      "details": "Uses 11-byte displacement table at .rodata 0x00c81b ([10, 10, 10, 6, 6, 0, 0, 0, 3, 3, 3]) with base adr x10, #0x2b04c and preloaded mov w0, #1 (0x02b044) to return 1, 2, 4, or 8 bytes for napi_typedarray_type 0..10."
+    },
+    {
+      "symbol": "JNI_OnLoad",
+      "vma_range": "0x036ef0..0x037070",
+      "proof_type": "JNI_BOOTSTRAP_AND_GLOBAL_REFS",
+      "details": "Calls vmsdk::general::android::InitVM(vm) (0x036f0c) and AttachCurrentThread() (0x036f10), caches global refs for JavaOnlyMap (.rodata 0x00e53a -> .bss 0x03c118), JavaOnlyArray (.rodata 0x00e300 -> .bss 0x03c048), and NativeHostObject (.rodata 0x00e67b -> .bss 0x03c1c8), logs __android_log_print(3, 'PRIMJS', 'load') (0x037028..0x03703c), and returns 0x00010006 (JNI_VERSION_1_6 @ 0x03705c..0x037060)."
+    }
+  ]
+}

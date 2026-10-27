@@ -1,0 +1,26 @@
+{
+  "task_id": "TASK-126-RECONSTRUCTION-LIBNAPI",
+  "legacy_task_id": "TASK_SO_119_libnapi",
+  "title": "Clean-Room C++17 Reconstruction & Adversarial Proof of libnapi.so (ByteDance Lynx / PrimJS / LepusNG / V8 / QuickJS / JavaScriptCore Node-API N-API Engine)",
+  "status": "DONE",
+  "created_at": "2026-10-27T10:41:30+07:00",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libnapi.so",
+  "binary_size_bytes": 247904,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libnapi/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnapi.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnapi.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_119_libnapi.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_119_libnapi.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "completed_at": "2026-10-27T11:07:00+07:00",
+  "verification_results": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (87/169)",
+    "verify_suite": "557/557 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings"
+  }
+}

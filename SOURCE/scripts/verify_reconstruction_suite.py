@@ -9085,6 +9085,136 @@ class AutonomousVerificationEngine:
             "Khớp toàn bộ 38/38 hàm JNI xuất khẩu của com.bytedance.xelement.markdown.MarkdownDocument (0x00d300..0x018420)"
         )
 
+    def verify_libnapi(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 87: libnapi.so (PrimJS / Lynx Node-API & QuickJS Bridge)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libnapi"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnapi.so"
+        if not so_path.exists():
+            self.assert_test("Napi_BinaryExists", False, "Không tìm thấy libnapi.so")
+            return
+
+        so_bytes = so_path.read_bytes()
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest()
+
+        cpp_files = [
+            "napi_types.h",
+            "napi_env_runtime.h",
+            "napi_env_runtime.cpp",
+            "napi_quickjs_backend.h",
+            "napi_quickjs_backend.cpp",
+            "napi_cpp_wrapper.h",
+            "napi_cpp_wrapper.cpp",
+            "napi_android_jni.h",
+            "napi_android_jni.cpp",
+            "napi_interface.h",
+            "napi_pseudocode.cpp",
+        ]
+        all_exist = all((lib_dir / f).exists() for f in cpp_files)
+        total_size = sum((lib_dir / f).stat().st_size for f in cpp_files if (lib_dir / f).exists())
+        content = "\n".join(
+            (lib_dir / f).read_text(encoding="utf-8", errors="ignore")
+            for f in cpp_files if (lib_dir / f).exists()
+        )
+
+        # 1. Kiểm tra dung lượng & SHA-256 nhị phân
+        self.assert_test(
+            "Napi_CleanRoomFilesAndBinarySHA256",
+            all_exist and total_size >= 150000 and len(so_bytes) == 247904
+            and so_sha256 == "fb3a870c14315fcc8976c7edd2653ad80ef3ab96ceb534f0d6354aa91e82764c",
+            f"Đầy đủ 11 file C++17/H ({total_size:,} bytes >= 150 KB), khớp nhị phân 247,904 B ({so_sha256[:16]}...)"
+        )
+
+        # 2. Kiểm tra napi_new_env (0x015e28) & napi_free_env (0x015ecc)
+        new_env_430 = struct.unpack("<I", so_bytes[0x015e30:0x015e34])[0]
+        new_state_20 = struct.unpack("<I", so_bytes[0x015e48:0x015e4c])[0]
+        new_hook_28 = struct.unpack("<I", so_bytes[0x015e60:0x015e64])[0]
+        new_lf_1f = struct.unpack("<I", so_bytes[0x015e68:0x015e6c])[0]
+        free_neon_cnt = struct.unpack("<I", so_bytes[0x015fbc:0x015fc0])[0]
+        free_neon_uaddlv = struct.unpack("<I", so_bytes[0x015fc0:0x015fc4])[0]
+        self.assert_test(
+            "Napi_EnvAllocationAndFreeLifoCleanup",
+            new_env_430 == 0x52808600
+            and new_state_20 == 0x52800400
+            and new_hook_28 == 0x52800500
+            and new_lf_1f == 0x52A7F008
+            and free_neon_cnt == 0x0E205800
+            and free_neon_uaddlv == 0x2E303800
+            and all(sym in content for sym in [
+                "napi_new_env", "napi_free_env", "0x430", "0x3f800000",
+                "sub_160d0", "napi_add_env_cleanup_hook",
+                "napi_remove_env_cleanup_hook"
+            ]),
+            "Khớp bố cục cấp phát napi_env__ (0x430B @ 0x015e30), NapiEnvState (0x20B), CleanupHookTable (0x28B, load_factor 1.0f) và giải phóng LIFO + NEON popcount (0x015e28..0x0160d0)"
+        )
+
+        # 3. Kiểm tra napi_attach_runtime (0x016b6c) & ThreadSafeFunction (0x016f38)
+        rt_pro = struct.unpack("<I", so_bytes[0x016b6c:0x016b70])[0]
+        tsfn_pro = struct.unpack("<I", so_bytes[0x016f38:0x016f3c])[0]
+        self.assert_test(
+            "Napi_RuntimeAndThreadSafeFunction",
+            rt_pro == 0x540007C9
+            and tsfn_pro == 0xF9400AA8
+            and all(sym in content for sym in [
+                "napi_attach_runtime", "napi_detach_runtime", "napi_create_threadsafe_function",
+                "napi_call_threadsafe_function", "napi_acquire_threadsafe_function",
+                "napi_release_threadsafe_function", "napi_unref_threadsafe_function",
+                "napi_get_threadsafe_function_context"
+            ]),
+            "Khớp hệ thống gắn kết Runtime 8-method vtable (0x38B @ 0x016b6c) và hàng đợi bất đồng bộ ThreadSafeFunction (0x60B @ 0x016f38)"
+        )
+
+        # 4. Kiểm tra napi_attach_quickjs (0x01c1a0) & qjsimpl::Context (0x450B = 1,104B)
+        qjs_ctx_450 = struct.unpack("<I", so_bytes[0x01c6a8:0x01c6ac])[0]
+        qjs_ro_pair = struct.unpack("<QQ", so_bytes[0x00c7c0:0x00c7d0])
+        self.assert_test(
+            "Napi_QuickJSBackendAndContext450B",
+            qjs_ctx_450 == 0x52808A00
+            and qjs_ro_pair == (2, 18)
+            and all(sym in content for sym in [
+                "napi_attach_quickjs", "napi_detach_quickjs", "napi_get_env_context_quickjs",
+                "napi_module_register_xx", "qjsimpl::Context", "QuickJSAtom",
+                "HandleScopeWrapper", "0x450"
+            ]),
+            "Khớp QuickJS Backend: qjsimpl::Context (0x450B = 1,104B @ 0x01c6a8), .rodata 0x00c7c0 {2,18}, 11 QuickJSAtom (80B), NaN-boxing 64-bit và atomic spinlock registry"
+        )
+
+        # 5. Kiểm tra Napi::TypedArray::ElementSize (0x02afd0) & bảng nhảy .rodata 0x00c81b
+        elem_table = list(so_bytes[0x00c81b:0x00c826])
+        elem_mov_1 = struct.unpack("<I", so_bytes[0x02b044:0x02b048])[0]
+        self.assert_test(
+            "Napi_CppWrapperAndTypedArrayElementSizeTable",
+            elem_table == [10, 10, 10, 6, 6, 0, 0, 0, 3, 3, 3]
+            and elem_mov_1 == 0x52800020
+            and all(sym in content for sym in [
+                "ElementSize", "10, 10, 10, 6, 6, 0, 0, 0, 3, 3, 3",
+                "GetAndClearPendingException", "Napi::Value", "Napi::Object",
+                "Napi::Function", "TypedArray::ElementSize"
+            ]),
+            "Khớp Napi:: C++ Wrapper ABI và bảng nhảy .rodata 0x00c81b [10,10,10,6,6,0,0,0,3,3,3] của Napi::TypedArray::ElementSize (0x02afd0)"
+        )
+
+        # 6. Kiểm tra cầu nối JNI vmsdk::general::android & JNI_OnLoad (0x036ef0 -> 0x00010006)
+        jni_ver_lo = struct.unpack("<I", so_bytes[0x03705c:0x037060])[0]
+        jni_ver_hi = struct.unpack("<I", so_bytes[0x037060:0x037064])[0]
+        self.assert_test(
+            "Napi_AndroidJniBridgeAndJniOnLoad",
+            jni_ver_lo == 0x528000C0
+            and jni_ver_hi == 0x72A00020
+            and b"com/bytedance/vmsdk/jsbridge/utils/JavaOnlyMap\x00" in so_bytes
+            and b"com/bytedance/vmsdk/jsbridge/utils/JavaOnlyArray\x00" in so_bytes
+            and b"com/bytedance/vmsdk/jsbridge/utils/NativeHostObject\x00" in so_bytes
+            and all(sym in content for sym in [
+                "JavaOnlyMap", "JavaOnlyArray", "NativeHostObject", "JNIHelper",
+                "JNI_OnLoad", "0x00010006", "PRIMJS"
+            ]),
+            "Khớp cầu nối vmsdk::general::android (JavaOnlyMap, JavaOnlyArray, NativeHostObject, JNIHelper) và JNI_OnLoad (0x036ef0 -> 0x00010006)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -9176,6 +9306,7 @@ class AutonomousVerificationEngine:
         self.verify_liblynxbase()
         self.verify_libwasm()
         self.verify_liblynx_markdown()
+        self.verify_libnapi()
         self.verify_overall_governance()
 
 

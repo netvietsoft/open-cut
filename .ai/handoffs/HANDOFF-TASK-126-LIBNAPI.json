@@ -1,0 +1,20 @@
+{
+  "handoff_id": "HANDOFF-TASK-126-LIBNAPI",
+  "task_id": "TASK-126-RECONSTRUCTION-LIBNAPI",
+  "legacy_task_id": "TASK_SO_119_libnapi",
+  "library": "libnapi.so",
+  "from_agent": "Agent 0 (Orchestrator) & Agent 3 (Android/Native)",
+  "to_agent": "Agent 13 (Adversary Auditor)",
+  "timestamp": "2026-10-27T11:07:00+07:00",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "metrics": {
+    "binary_size_bytes": 247904,
+    "binary_sha256": "fb3a870c14315fcc8976c7edd2653ad80ef3ab96ceb534f0d6354aa91e82764c",
+    "reconstructed_cpp_bytes": 230652,
+    "files_count": 12,
+    "stub_count": 0,
+    "verified_total": "87/169 (51.48%)",
+    "test_suite": "557/557 PASS (100.0%)",
+    "watchdog_findings": 0
+  }
+}

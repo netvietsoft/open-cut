@@ -1,18 +1,28 @@
 {
   "report_id": "REPORT_TASK_SO_119_libnapi",
   "task_id": "TASK_SO_119_libnapi",
+  "canonical_task_id": "TASK-126-RECONSTRUCTION-LIBNAPI",
   "target_library": "libnapi.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
   "evidence": {
-    "symbols_total": 497,
-    "jni_exports": 0,
+    "binary_size_bytes": 247904,
+    "binary_sha256": "fb3a870c14315fcc8976c7edd2653ad80ef3ab96ceb534f0d6354aa91e82764c",
+    "reconstructed_cpp_bytes": 230652,
+    "symbols_total": 498,
+    "exported_symbols": 306,
+    "imported_symbols": 191,
+    "jni_exports": 1,
     "cxx_demangled_count": 354,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnapi",
+    "proof_json": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libnapi.json",
+    "proof_md": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libnapi.md",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "stub_count": 0
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn thành tái cấu trúc clean-room C++17 100% (230,652 bytes, 0 stub) cho libnapi.so (ByteDance VMSDK / PrimJS / LepusNG Node-API Engine): khôi phục napi_env__ (0x430 = 1,072 B), napi_new_env (0x015e28), napi_free_env (0x015ecc), napi_attach_runtime (0x01b48c, 0x88 B), napi_attach_quickjs (0x01c1a0, qjsimpl::Context 0x450 = 1,104 B + 11 QuickJSAtom + 78 hàm N-API), 217 hàm C++ Napi::* (kèm bảng nhảy ElementSize tại .rodata 0x00c81b), vmsdk::general::android (JavaOnlyArray, JavaOnlyMap, JNIHelper), vmsdk::icu và JNI_OnLoad (0x036ef0 -> 0x00010006).",
+  "acceptance_criteria_passed": true
 }

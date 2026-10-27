@@ -2486,3 +2486,16 @@
   - `adversary_critic_agent.py`: **86 / 169 `VERIFIED_AND_ACCEPTED` (50.89%)** (`100% REAL`).
   - `verify_reconstruction_suite.py`: **551 / 551 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+## 114. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libnapi.so (TASK-126-RECONSTRUCTION-LIBNAPI / TASK_SO_119_libnapi)
+- **Thời gian**: 2026-10-27 11:07:00
+- **Thư viện**: `libnapi.so` (`247,904 bytes`, SHA-256 `fb3a870c14315fcc8976c7edd2653ad80ef3ab96ceb534f0d6354aa91e82764c`, `.text` `0x014000..0x037070` = `143,472 bytes`, PrimJS / Lynx Node-API Core Engine, QuickJS Backend & Android JNI Bridge, 306 exported symbols).
+- **Chi tiết giải mã thân hàm (12 files C++17 & Docs, `230,652 bytes` C++17/H, 0 stub)**:
+  1. **`napi_new_env` (`0x015e28`), `napi_free_env` (`0x015ecc..0x0160d0`), `napi_attach_runtime` (`0x016b6c`) & `ThreadSafeFunction` (`0x016f38..0x0174f8`)**: Khôi phục cấp phát `napi_env__` (`0x430 = 1,072 bytes`), `NapiEnvState` (`0x20 = 32 bytes`), `CleanupHookTable` (`0x28 = 40 bytes`, `max_load_factor = 1.0f = 0x3f800000`), giải phóng LIFO qua `sub_160d0` + NEON popcount (`cnt v0.8b, v0.8b; uaddlv h0, v0.8b`) + `fn ^ (arg << 1)`, gắn kết Runtime 8-method vtable (`0x38 = 56B`), và hàng đợi bất đồng bộ `ThreadSafeFunction` (`0x60 = 96B`).
+  2. **`napi_attach_quickjs` (`0x01c1a0..0x01c8b4`, `1,812 bytes`), `qjsimpl::Context` (`0x450 = 1,104 bytes`) & Module Registry (`0x024de8..0x024eb0`)**: Khôi phục bảng 78 con trỏ hàm N-API trên `napi_env__`, cấu trúc `qjsimpl::Context` (`0x450B`, nạp `{2ULL, 18ULL}` từ `.rodata 0x00c7c0`, intern 11 `QuickJSAtom` 80-byte tại `+0x0c8..+0x3e8`), `HandleScopeWrapper` (`0x30 = 48B`), chuyển đổi NaN-boxing 64-bit (`napi_v_to_qjs_v` / `qjs_v_to_napi_v`), và `napi_module_register_xx` với spinlock nguyên tử `ldaxrb`/`stlxrb` trên `.bss 0x03c030`.
+  3. **`Napi::*` C++ Wrapper (`0x024fb8..0x031168`) & `vmsdk::general::android` JNI Bridge (`0x0317c8..0x037070`)**: Khôi phục bảng nhảy `Napi::TypedArray::ElementSize` tại `.rodata 0x00c81b` (`[10, 10, 10, 6, 6, 0, 0, 0, 3, 3, 3]`), `JavaOnlyMap`, `JavaOnlyArray`, `NativeHostObject`, `Convertor`, `JNIHelper`, và `JNI_OnLoad` (`0x036ef0..0x037070` trả về `0x00010006 = JNI_VERSION_1_6`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **87 / 169 `VERIFIED_AND_ACCEPTED` (51.48%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **557 / 557 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
