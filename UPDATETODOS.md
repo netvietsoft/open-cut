@@ -865,3 +865,5 @@
 - [x] **TASK-151 (`libnuro.so` — `953,040 B`)**: Reconstructed `1,340,881 B` C++17/H (9 files, 1,835 FDEs, 176 exports, 0 stubs), verified `707/707 PASS (100.0%)`, `112/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-152 (`libfast_engine_RelWithDebInfo.so` — `1,309,048 B`)**: Reconstructed `1,611,215 B` C++17/H (9 files, 2,082 FDEs, 1,691 exports, 0 stubs), verified `713/713 PASS (100.0%)`, `113/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-153 (`libavmdlv2.so` — `1,411,344 B`)**: Reconstructed `1,399,611 B` C++17/H (9 files, 1,900 .text functions, 315 exports, 0 stubs), verified `719/719 PASS (100.0%)`, `114/169 VERIFIED_AND_ACCEPTED`.

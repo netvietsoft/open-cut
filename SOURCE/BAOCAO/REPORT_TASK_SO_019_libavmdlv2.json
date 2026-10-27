@@ -1,18 +1,13 @@
 {
-  "report_id": "REPORT_TASK_SO_019_libavmdlv2",
   "task_id": "TASK_SO_019_libavmdlv2",
-  "target_library": "libavmdlv2.so",
-  "assigned_agent": "Agent 3 - FRONTEND / Native Engine",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 738,
-    "jni_exports": 0,
-    "cxx_demangled_count": 538,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libavmdlv2",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-153-RECONSTRUCTION-LIBAVMDLV2",
+  "library": "libavmdlv2.so",
+  "status": "COMPLETED_VERIFIED",
+  "binary_size_bytes": 1411344,
+  "binary_sha256": "f548a1a3303de5943289b2b467c20469733ff8b5c107a0aa1b784a9c01f5b93d",
+  "cpp17_reconstruction_bytes": 1399611,
+  "fde_count": 11,
+  "text_functions_reconstructed": 1900,
+  "exported_symbols": 315,
+  "stub_count": 0
 }

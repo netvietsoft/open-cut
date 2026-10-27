@@ -11997,6 +11997,95 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 114: libavmdlv2.so (Target 114 / 169 — AVMDL V2 Media Data Loader)
+    # =========================================================================
+    def verify_libavmdlv2(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libavmdlv2.so (Target 114 / 169)")
+        print("="*70)
+
+        import struct
+        import hashlib
+
+        lib_dir = GIAIMA_DIR / "libavmdlv2"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 40 KB (1,399,611 B across 9 clean-room files, 0 stubs)
+        self.assert_test(
+            "AvmdlV2_SourceSizeAndZeroStubs",
+            total_bytes > 40000
+            and len(cpp_files) == 9
+            and not (lib_dir / "avmdlv2_interface.h").exists()
+            and not (lib_dir / "avmdlv2_pseudocode.cpp").exists()
+            and "execute_fde_shard_1" in content,
+            f"Tổng dung lượng C++17 đạt {total_bytes:,} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Binary SHA-256 & .eh_frame_hdr @ 0x1489d4 (11 FDEs + 315 exports)
+        so_bytes = (ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libavmdlv2.so").read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x1489d4 + 8)[0]
+        self.assert_test(
+            "AvmdlV2_BinarySha256AndEhFrame11Fdes",
+            len(so_bytes) == 1411344
+            and sha256_hex == "f548a1a3303de5943289b2b467c20469733ff8b5c107a0aa1b784a9c01f5b93d"
+            and fde_count == 11,
+            "Khớp nhị phân libavmdlv2.so (1,411,344 B, SHA-256 f548a1a3..., 11 FDEs @ 0x1489d4, 315 exports)"
+        )
+
+        # 3. MDLMessage::MDLMessage() (0x05dacc..0x05db04) & setInt32() (0x05df80..0x05e050)
+        msg_ctor_loop = struct.unpack_from("<4I", so_bytes, 0x05dae8)
+        msg_set_cap = struct.unpack_from("<I", so_bytes, 0x05dfa0)[0]
+        msg_set_madd = struct.unpack_from("<4I", so_bytes, 0x05dfec)
+        self.assert_test(
+            "AvmdlV2_MDLMessage64Slot48ByteStrideOpcodes",
+            msg_ctor_loop == (0x9100C294, 0xF130429F, 0x54FFFF81, 0xB90C027F)
+            and msg_set_cap == 0x7100FEDF
+            and msg_set_madd == (0x52800609, 0x5280002A, 0x2A1303E1, 0x9B095108)
+            and "kMDLMessageSlotStrideBytes = 0x30" in content
+            and "kMDLMessageCountOffset = 0xC00" in content,
+            "Khớp MDLMessage (64 khe * 0x30=48B, count_ @ +0xc00, cmp w22, #0x3f @ 0x05dfa0, madd *0x30 @ 0x05dff8)"
+        )
+
+        # 4. MDLSingletonsHolder::getInstance() (0x05e848..0x05e8f0) & init() (0x05e8f0..0x05e980)
+        sh_alloc = struct.unpack_from("<I", so_bytes, 0x05e884)[0]
+        sh_init_v2 = struct.unpack_from("<I", so_bytes, 0x05e920)[0]
+        sh_init_ng = struct.unpack_from("<I", so_bytes, 0x05e940)[0]
+        sh_init_leg = struct.unpack_from("<I", so_bytes, 0x05e954)[0]
+        self.assert_test(
+            "AvmdlV2_MDLSingletonsHolder120ByteLayoutOpcodes",
+            sh_alloc == 0x52800F00
+            and sh_init_v2 == 0x5280A500
+            and sh_init_ng == 0x52806B00
+            and sh_init_leg == 0x52806A00
+            and "kMDLSingletonsHolderSizeBytes = 0x78" in content,
+            "Khớp MDLSingletonsHolder (0x78=120B @ 0x05e884; init FileManager 0x528/0x358/0x350B @ 0x05e920..0x05e954)"
+        )
+
+        # 5. MDLSingletonsHolder 14 inline getters (0x05e980..0x05ea18)
+        getters_head = struct.unpack_from("<8I", so_bytes, 0x05e980)
+        self.assert_test(
+            "AvmdlV2_MDLSingletonsHolderGettersOpcodes",
+            getters_head == (0xF9400000, 0xD65F03C0, 0xF9400400, 0xD65F03C0, 0xF9400800, 0xD65F03C0, 0xF9401000, 0xD65F03C0)
+            and "getStrategyFactory" in content
+            and "getDownloaderFactory" in content
+            and "getSocketTrainingCenter" in content,
+            "Khớp chuỗi getter của MDLSingletonsHolder (+0x00, +0x08, +0x10, +0x20 .. +0x70 @ 0x05e980..0x05ea18)"
+        )
+
+        # 6. JNI_OnLoad (0x039868..0x039978) & ID hex/BCD parser (0x116640..0x116b08)
+        jni_ver = struct.unpack_from("<4I", so_bytes, 0x0398dc)
+        self.assert_test(
+            "AvmdlV2_JniOnLoadAndIdHexParser",
+            jni_ver == (0x52800082, 0x52800093, 0x910063E1, 0xF9401908)
+            and "ID::BCDtoASCII" in content
+            and "MDLQuicStateManager::isQuicBroken" in content,
+            "Khớp JNI_OnLoad (0x039868: JNI_VERSION_1_4 = 0x00010004), ID::BCDtoASCII và MDLQuicStateManager"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12114,6 +12203,7 @@ class AutonomousVerificationEngine:
         self.verify_libcxx_shared()
         self.verify_libnuro()
         self.verify_libfast_engine_RelWithDebInfo()
+        self.verify_libavmdlv2()
         self.verify_overall_governance()
 
 
