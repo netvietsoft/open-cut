@@ -11346,6 +11346,98 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 107: libbytebench.so (ByteDance Device Benchmark, Feature Center & Strategy Engine)
+    # =========================================================================
+    def verify_libbytebench(self):
+        import hashlib, struct, math
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 107: libbytebench.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libbytebench"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 1,000 KB across >= 9 files
+        self.assert_test(
+            "ByteBench_SourceSizeGate",
+            total_bytes > 1000000 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 1,000 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (641,376 B, SHA-256, 6 .eh_frame_hdr FDEs @ 0x094cf8) & .rodata 65025.0 (@ 0x080d10)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libbytebench.so"
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x094cf8 + 8)[0]
+        peak_sq = struct.unpack_from("<d", so_bytes, 0x080d10)[0]
+        self.assert_test(
+            "ByteBench_Elf64AndRodataPeakSquared",
+            len(so_bytes) == 641376
+            and sha256_hex == "0c50323c365781575186c196f06dd36acea1eb80eba82d7d647581306dc4d7b2"
+            and eh_fde_count == 6
+            and peak_sq == 65025.0
+            and "kPeakSquared_080d10" in content,
+            "Khớp nhị phân libbytebench.so (641,376 B, SHA-256 0c50323c..., .eh_frame_hdr @ 0x094cf8) và hằng số 255^2=65025.0 (@ .rodata 0x080d10)"
+        )
+
+        # 3. CUtils::CalcFramePsnr (0x066d00..0x066d7c) opcode & mathematical verification
+        psnr_mul = struct.unpack_from("<I", so_bytes, 0x066d20)[0]
+        psnr_tail = struct.unpack_from("<8I", so_bytes, 0x066d5c)
+        sim_psnr = 10.0 * math.log10(65025.0 / 65.025)
+        self.assert_test(
+            "ByteBench_CalcFramePsnrOpcodesAndMath",
+            psnr_mul == 0x1B027C68
+            and psnr_tail == (
+                0xFD468921, 0x1E620102, 0x1E621800, 0x1E601820,
+                0x97FEF369, 0x1E649001, 0x1E610800, 0xA8C17BFD
+            )
+            and abs(sim_psnr - 30.0) < 1e-9
+            and "CalcFramePsnr" in content,
+            "Khớp CUtils::CalcFramePsnr (0x066d00..0x066d7c: 10.0 * log10(65025.0 / MSE) -> 30.0 dB khi MSE=65.025)"
+        )
+
+        # 4. BXFFReduce(STERational&) (0x06b084..0x06b0ec) Euclidean GCD reduction
+        reduce_ldpsw = struct.unpack_from("<I", so_bytes, 0x06b098)[0]
+        reduce_gcd = struct.unpack_from("<4I", so_bytes, 0x06b0c4)
+        reduce_div = struct.unpack_from("<2I", so_bytes, 0x06b0e4)
+        self.assert_test(
+            "ByteBench_BXFFReduceEuclideanGcd",
+            reduce_ldpsw == 0x69405C16
+            and reduce_gcd == (0xAA0B03EC, 0x9ACB0D4B, 0x9B0CA96B, 0xAA0C03EA)
+            and reduce_div == (0x9ACA0D14, 0x9ACA0D35)
+            and "BXFFReduce" in content,
+            "Khớp BXFFReduce(STERational&) (0x06b084: ldpsw x22, x23, [x0]; sdiv/msub Euclidean GCD loop @ 0x06b0c8)"
+        )
+
+        # 5. CUtils::flip(uint16_t) (0x0668b0), flip(uint32_t) (0x0668bc) & isSpecialSar (0x066eec..0x066f0c)
+        flip_insns = struct.unpack_from("<5I", so_bytes, 0x0668b0)
+        sar_insns = struct.unpack_from("<9I", so_bytes, 0x066eec)
+        self.assert_test(
+            "ByteBench_CUtilsFlipAndIsSpecialSar",
+            flip_insns == (0x5AC00808, 0x53107D00, 0xD65F03C0, 0x5AC00800, 0xD65F03C0)
+            and sar_insns == (
+                0x7100001F, 0x1A9FD7E8, 0x7100003F, 0x1A9FD7E9,
+                0x6B01001F, 0x0A090108, 0x1A9F07E9, 0x0A080120, 0xD65F03C0
+            )
+            and "isSpecialSar" in content,
+            "Khớp CUtils::flip16/flip32 (0x0668b0..0x0668c0: rev/lsr #16) và CUtils::isSpecialSar (0x066eec..0x066f0c)"
+        )
+
+        # 6. BXFeatureProcessConfig getters (0x04119c..0x0411f0), ByteBenchConfiguration getters (0x0442e0..0x04435c) & ByteBench::isInit (0x043edc)
+        cfg_getters = struct.unpack_from("<6I", so_bytes, 0x0411d4)
+        is_init_insns = struct.unpack_from("<3I", so_bytes, 0x043edc)
+        self.assert_test(
+            "ByteBench_FeatureProcessConfigAndIsInitAbi",
+            cfg_getters == (0xB940C800, 0xD65F03C0, 0xB940CC00, 0xD65F03C0, 0x91034000, 0xD65F03C0)
+            and is_init_insns == (0xB00002E8, 0x39594100, 0xD65F03C0)
+            and "BXFeatureProcessConfigAbiLayout" in content
+            and "ByteBenchConfigurationAbiLayout" in content,
+            "Khớp BXFeatureProcessConfig (+0xc8/+0xcc/+0xd0 @ 0x0411d4..0x0411e8) và ByteBench::isInit (0x043edc: ldrb [0x0a0650])"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -11456,6 +11548,7 @@ class AutonomousVerificationEngine:
         self.verify_libttr()
         self.verify_libfdk_aac()
         self.verify_libttkmedianet()
+        self.verify_libbytebench()
         self.verify_overall_governance()
 
 

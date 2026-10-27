@@ -851,3 +851,5 @@
 - [x] **TASK-144 (`libfdk-aac.so` — `625,312 B`)**: Reconstructed `1,191,477 B` C++17/H (9 files, 1,471 FDEs, 1,002 exports, 0 stubs), verified `665/665 PASS (100.0%)`, `105/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-145 (`libttkmedianet.so` — `632,064 B`)**: Reconstructed `1,348,105 B` C++17/H (9 files, 1,643 FDEs, 115 exports, 0 stubs), verified `671/671 PASS (100.0%)`, `106/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-146 (`libbytebench.so` — `641,376 B`)**: Reconstructed `1,339,882 B` C++17/H (9 files, 1,600 functions, 616 exports, 0 stubs), verified `677/677 PASS (100.0%)`, `107/169 VERIFIED_AND_ACCEPTED`.

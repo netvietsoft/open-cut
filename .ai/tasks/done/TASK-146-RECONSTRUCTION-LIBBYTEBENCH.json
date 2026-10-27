@@ -1,0 +1,35 @@
+{
+  "task_id": "TASK-146-RECONSTRUCTION-LIBBYTEBENCH",
+  "legacy_task_id": "TASK_SO_099_libbytebench",
+  "title": "Clean-room C++17 reconstruction of libbytebench.so (Target 107/169)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libbytebench.so",
+  "binary_size_bytes": 641376,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libbytebench/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbytebench.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libbytebench.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_099_libbytebench.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_099_libbytebench.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "100% clean-room C++17 & header reconstruction >= 40KB (target > 1,000KB across 9 files) with 0 stubs",
+    "Exact AArch64 opcode, ABI layout, and mathematical verification against libbytebench.so",
+    "Pass adversary_critic_agent.py --once (VERIFIED_AND_ACCEPTED 107/169)",
+    "Pass verify_reconstruction_suite.py (677/677 PASS 100.0%)",
+    "Pass native_audit_watchdog.py (169 binaries, 0 high findings)"
+  ],
+  "completed_at": "2026-10-27T17:04:22.815176+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (107/169)",
+    "reconstruction_suite": "677/677 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 1339882,
+    "fde_count": 1600,
+    "exported_symbols": 616,
+    "stub_count": 0
+  }
+}

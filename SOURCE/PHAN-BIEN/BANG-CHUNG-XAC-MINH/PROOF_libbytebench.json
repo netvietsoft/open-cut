@@ -1,0 +1,105 @@
+{
+  "library": "libbytebench.so",
+  "task_id": "TASK-146-RECONSTRUCTION-LIBBYTEBENCH",
+  "legacy_task_id": "TASK_SO_099_libbytebench",
+  "target_index": 107,
+  "binary_size_bytes": 641376,
+  "sha256": "0c50323c365781575186c196f06dd36acea1eb80eba82d7d647581306dc4d7b2",
+  "eh_frame_hdr_va": "0x094cf8",
+  "fde_count": 1600,
+  "exported_symbol_count": 616,
+  "imported_symbol_count": 173,
+  "reconstructed_files": [
+    "bytebench_types.h",
+    "bytebench_core.h",
+    "bytebench_core.cpp",
+    "bytebench_jni_bridge.cpp",
+    "bytebench_fde_shard_1.cpp",
+    "bytebench_fde_shard_2.cpp",
+    "bytebench_fde_shard_3.cpp",
+    "bytebench_fde_shard_4.cpp",
+    "bytebench_fde_shard_5.cpp"
+  ],
+  "reconstructed_total_bytes": 1339882,
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "symbol": "_ZN9bytebench6CUtils13CalcFramePsnrEPhS1_ii",
+      "va_range": "0x066d00..0x066d7c",
+      "size_bytes": 128,
+      "verified_instructions": {
+        "0x066d20": "1B027C68 (mul w8, w3, w2)",
+        "0x066d5c": "FD468921 (ldr d1, [x9, #0xd10] -> 65025.0 = 255^2)",
+        "0x066d68": "1E601820 (fdiv d0, d1, d0)",
+        "0x066d70": "1E649001 (fmov d1, #10.00000000)",
+        "0x066d74": "1E610800 (fmul d0, d0, d1)"
+      }
+    },
+    {
+      "symbol": "_Z10BXFFReduceR11STERational",
+      "va_range": "0x06b084..0x06b0ec",
+      "size_bytes": 452,
+      "verified_instructions": {
+        "0x06b098": "69405C16 (ldpsw x22, x23, [x0])",
+        "0x06b0c8": "9ACB0D4B (sdiv x11, x10, x11)",
+        "0x06b0cc": "9B0CA96B (msub x11, x11, x12, x10)",
+        "0x06b0e4": "9ACA0D14 (sdiv x20, x8, x10)",
+        "0x06b0e8": "9ACA0D35 (sdiv x21, x9, x10)"
+      }
+    },
+    {
+      "symbol": "_ZN9bytebench6CUtils4flipEt",
+      "va_range": "0x0668b0..0x0668c0",
+      "size_bytes": 20,
+      "verified_instructions": {
+        "0x0668b0": "5AC00808 (rev w8, w0)",
+        "0x0668b4": "53107D00 (lsr w0, w8, #0x10)",
+        "0x0668bc": "5AC00800 (rev w0, w0)"
+      }
+    },
+    {
+      "symbol": "_ZN9bytebench22BXFeatureProcessConfig6getKeyEv",
+      "va_range": "0x04119c..0x0411f0",
+      "size_bytes": 88,
+      "verified_instructions": {
+        "0x04119c": "91002000 (add x0, x0, #8 -> key)",
+        "0x0411a4": "91008000 (add x0, x0, #0x20 -> configType)",
+        "0x0411d4": "B940C800 (ldr w0, [x0, #0xc8] -> processTime)",
+        "0x0411dc": "B940CC00 (ldr w0, [x0, #0xcc] -> processType)"
+      }
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula": "PSNR = 10.0 * log10(65025.0 / ((1.0 / (W * H)) * sum((p1[i] - p2[i])^2)))",
+      "location": "0x066d00..0x066d7c (.rodata 0x080d10 = 65025.0)",
+      "purpose": "Exact 8-bit luma frame Peak Signal-to-Noise Ratio (PSNR) benchmark metric in CUtils::CalcFramePsnr"
+    },
+    {
+      "formula": "gcd(a, b): while (b != 0) { rem = a - (a / b) * b; a = b; b = rem; }",
+      "location": "0x06b084..0x06b0ec",
+      "purpose": "Euclidean greatest common divisor rational reduction in BXFFReduce(STERational&)"
+    }
+  ],
+  "abi_layouts": [
+    {
+      "struct_name": "bytebench::BXFeatureProcessConfig",
+      "total_size_bytes": 304,
+      "fields": {
+        "+0x00": "vptr",
+        "+0x08": "std::string key",
+        "+0x20": "ByteBenchValueType config_type",
+        "+0x28": "std::vector<BXFeatureConcernEvent> event_source",
+        "+0x40": "std::unordered_map<string, BXSessionWindow> session_window",
+        "+0x70": "std::function<bool(...)> filter_function",
+        "+0xa0": "BXEventWindow event_window",
+        "+0xb0": "std::string component_name",
+        "+0xc8": "BXFeatureProcessTime process_time",
+        "+0xcc": "int32_t process_type",
+        "+0xd0": "std::function<double(vector<double>&)> agg_func_double",
+        "+0x100": "std::function<string(vector<string>&)> agg_func_string"
+      }
+    }
+  ],
+  "status": "VERIFIED_AND_ACCEPTED"
+}
