@@ -1,18 +1,12 @@
 {
-  "report_id": "REPORT_TASK_SO_109_libjato",
   "task_id": "TASK_SO_109_libjato",
-  "target_library": "libjato.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 334,
-    "jni_exports": 125,
-    "cxx_demangled_count": 62,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libjato",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "governance_task_id": "TASK-138-RECONSTRUCTION-LIBJATO",
+  "library": "libjato.so",
+  "binary_size_bytes": 362800,
+  "binary_sha256": "0333b9ad7314644975997ba1a375bec370225ee72f7adf1123c83637e09fa3fc",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_size_bytes": 2275055,
+  "fde_count": 1765,
+  "exported_symbols_count": 126,
+  "stub_count": 0
 }

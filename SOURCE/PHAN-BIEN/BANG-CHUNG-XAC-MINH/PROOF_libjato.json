@@ -1,0 +1,50 @@
+{
+  "lib_name": "libjato",
+  "binary_file": "libjato.so",
+  "binary_size_bytes": 362800,
+  "binary_sha256": "0333b9ad7314644975997ba1a375bec370225ee72f7adf1123c83637e09fa3fc",
+  "reconstructed_size_bytes": 2275055,
+  "reconstructed_files": [
+    "jato_types.h",
+    "jato_rodata_tables.h",
+    "jato_rodata_tables.cpp",
+    "jato_jit_and_dex.h",
+    "jato_jit_and_dex.cpp",
+    "jato_memory_and_gc.h",
+    "jato_memory_and_gc.cpp",
+    "jato_threads_and_gfx.h",
+    "jato_threads_and_gfx.cpp"
+  ],
+  "fde_count": 1765,
+  "exported_symbols_count": 126,
+  "stub_count": 0,
+  "verified_opcodes": [
+    "0x00b9fc: a9bf7bfd stp x29, x30, [sp, #-0x10]! (.init_array[6] page size init)",
+    "0x00ba04: 528004e0 mov w0, #0x27 (_SC_PAGESIZE = 39)",
+    "0x00ba1c: 4b0003e9 neg w9, w0 (page_mask = -page_size)",
+    "0x00c658: f81c0ff7 str x23, [sp, #-0x40]! (JitCompiler::nativeCompile)",
+    "0x00c6f0: f81d0ff5 str x21, [sp, #-0x30]! (JitCompiler::nativeHookProfileSaverBug)",
+    "0x010e0c: 51008408 sub w8, w0, #0x21 (AnnotationResolvingOpt API 33..34 check)",
+    "0x011904: 1e602008 fcmp d0, #0.0 (MinFreeHeapOpt percent > 0.0 check)",
+    "0x01195c: fd438940 ldr d0, [x10, #0x710] (.rodata 0x039710 = 0.01 double)",
+    "0x011f00: d374ce68 lsl x8, x19, #0xc (HeapLargeObjectExclusion threshold << 12)",
+    "0x016b84: d2bc0009 mov x9, #0xe0000000; 0x016b88: f2c00049 movk x9, #2, lsl #32 (DebugOptimizer API mask)",
+    "0x018d0c: 52800521 mov w1, #0x29 (ThreadNative /proc/stat ')' delimiter)",
+    "0x01be74: 37f806a2 tbnz w2, #0x1f, #0x1bf48 (LockMaxSpinsOpt negative check)",
+    "0x01c050: 52b70815 mov w21, #-0x47c00000; 0x01c060: 110f82a8 add w8, w21, #0x3e0 (DecodeJObjectOpt LDR mask)",
+    "0x0228c8: 710192df cmp w22, #0x64 (RSpaceLiveRatioOpt live_percent <= 100)",
+    "0x02824c: 11005068 add w8, w3, #0x14; 0x028254: 71009d1f cmp w8, #0x27 (PriorityManagerV2 nice range [-20, 19])",
+    "0x03086c: 92409c48 and x8, x2, #0xffffffffff (JitCodeCacheMProtectOpt 40-bit VA mask)",
+    "0x0381d8: a9bf7bfd stp x29, x30, [sp, #-0x10]! (JNI_OnLoad -> 0x00010006)",
+    "0x038744: 52994008 mov w8, #0xca00; 0x038748: 72a77348 movk w8, #0x3b9a, lsl #16 (10^9 ns/s)"
+  ],
+  "math_and_abi_proofs": {
+    "oom_min_free_heap_double_039710": "0x3F847AE147AE147B (0.01)",
+    "data_default_ratio_double_05c020": "0x3FE0000000000000 (0.5)",
+    "instrumentation_api_mask_016b84": "0x00000002E0000000 (API 29, 30, 31, 33)",
+    "decode_jobject_ldr_mask_01c060": "(insn & 0xB84003E0) == 0xB8400000",
+    "priority_manager_v2_nice_range_02824c": "(uint32_t)(prio + 20) <= 39 ([-20, 19])",
+    "suspend_timeout_nanos_038744": "timeout_seconds * 0x3B9ACA00 (1,000,000,000)"
+  },
+  "status": "VERIFIED_AND_ACCEPTED"
+}

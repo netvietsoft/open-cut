@@ -10556,6 +10556,119 @@ class AutonomousVerificationEngine:
             "Khớp YGRoundValueToPixelGrid (0x02e7c0: fmov d0, #0.5) và YGNodeCalculateLayoutWithContext (0x032f2c: 0.01f = 0x3C23D70A @ 0x033048)"
         )
 
+    def verify_libjato(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 99: libjato.so")
+        print("="*70)
+        lib_dir = GIAIMA_DIR / "libjato"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libjato.so"
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        req_files = [
+            "jato_types.h",
+            "jato_rodata_tables.h",
+            "jato_rodata_tables.cpp",
+            "jato_jit_and_dex.h",
+            "jato_jit_and_dex.cpp",
+            "jato_memory_and_gc.h",
+            "jato_memory_and_gc.cpp",
+            "jato_threads_and_gfx.h",
+            "jato_threads_and_gfx.cpp",
+        ]
+        total_size = 0
+        content = ""
+        for fn in req_files:
+            fp = lib_dir / fn
+            if fp.exists():
+                total_size += fp.stat().st_size
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        eh_off = 0x0431c8
+        fde_count = struct.unpack_from("<I", so_bytes, eh_off + 8)[0]
+        self.assert_test(
+            "Jato_BinaryFdeAndSourceVolume",
+            len(so_bytes) == 362800
+            and sha256_hex == "0333b9ad7314644975997ba1a375bec370225ee72f7adf1123c83637e09fa3fc"
+            and fde_count == 1765
+            and total_size > 1500000
+            and "fde_0000_sub_00b8e0" in content
+            and "fde_1764_sub_039038" in content,
+            f"Binary {len(so_bytes):,} B; {fde_count} FDEs; Reconstructed {total_size:,} B across 9 files"
+        )
+
+        # 2. Kiểm tra .init_array[6] (0x00b9fc: sysconf(_SC_PAGESIZE=0x27) & neg w9, w0) và JNI_OnLoad (0x0381d8 -> 0x00010006)
+        init6_insns = struct.unpack_from("<9I", so_bytes, 0x00b9fc)
+        onload_ret = struct.unpack_from("<2I", so_bytes, 0x038204)
+        self.assert_test(
+            "Jato_InitArray6PageSizeAndJniOnLoad",
+            init6_insns[2] == 0x528004E0
+            and init6_insns[8] == 0x4B0003E9
+            and onload_ret == (0x528000C0, 0x72A00020)
+            and so_bytes[0x043160:0x043160+13] == b"page size: %d"
+            and "RunInitArrayConstructors" in content
+            and "JNI_OnLoad" in content,
+            "Khớp .init_array[6] (0x00b9fc: mov w0, #0x27; neg w9, w0 @ 0x00ba1c) và JNI_OnLoad (0x0381d8 -> 0x00010006, 'page size: %d' @ 0x043160)"
+        )
+
+        # 3. Kiểm tra MinFreeHeapOpt (0x0118dc, .rodata 0x039710 = 0.01) & HeapLargeObjectExclusion (0x011ec4: lsl x8, x19, #0xc @ 0x011f00)
+        oom_double_u64 = struct.unpack_from("<Q", so_bytes, 0x039710)[0]
+        min_free_insns = struct.unpack_from("<3I", so_bytes, 0x011904)
+        los_lsl = struct.unpack_from("<I", so_bytes, 0x011f00)[0]
+        self.assert_test(
+            "Jato_MinFreeHeapOptAndLargeObjectThreshold",
+            oom_double_u64 == 0x3F847AE147AE147B
+            and min_free_insns == (0x1E602008, 0x1E6E1000, 0x1E605500)
+            and los_lsl == 0xD374CE68
+            and "SetMinFreeHeapPercentInternal" in content
+            and "SetLargeObjectThresholdInternal" in content,
+            "Khớp MinFreeHeapOpt (0x0118dc: hằng số 0.01 @ .rodata 0x039710) và nativeSetLargeObjectThreshold (0x011f00: lsl x8, x19, #0xc)"
+        )
+
+        # 4. Kiểm tra DebugOptimizer::openInstrumentationCrashFix (0x016b50: mask 0x00000002E0000000) & DecodeJObjectOpt (0x01c000: LDR mask 0xB84003E0)
+        dbg_mask_insns = struct.unpack_from("<2I", so_bytes, 0x016b84)
+        dbg_arch_cmp = struct.unpack_from("<I", so_bytes, 0x016ba0)[0]
+        dec_ldr_base = struct.unpack_from("<I", so_bytes, 0x01c050)[0]
+        dec_ldr_mask = struct.unpack_from("<I", so_bytes, 0x01c060)[0]
+        self.assert_test(
+            "Jato_DebugOptimizerAndDecodeJObjectOpt",
+            dbg_mask_insns == (0xD2BC0009, 0xF2C00049)
+            and dbg_arch_cmp == 0x7101011F
+            and dec_ldr_base == 0x52B70815
+            and dec_ldr_mask == 0x110F82A8
+            and "kInstrumentationCrashFixApiMask" in content
+            and "ScanDecodeJObjectLdrOffset" in content,
+            "Khớp DebugOptimizer (0x016b84: bitmask 0x2E0000000 cho API 29,30,31,33; cmp w8, #0x40) và DecodeJObjectOpt (0x01c050: mask LDR 0xB84003E0)"
+        )
+
+        # 5. Kiểm tra PriorityManagerV2 (0x028234: [-20, 19] nice check) & JitCodeCacheMProtectOpt (0x030860: 40-bit VA mask & PROT=7)
+        prio_insns = struct.unpack_from("<4I", so_bytes, 0x02824c)
+        mprot_mask = struct.unpack_from("<I", so_bytes, 0x03086c)[0]
+        mprot_rwx = struct.unpack_from("<I", so_bytes, 0x03091c)[0]
+        self.assert_test(
+            "Jato_PriorityManagerV2AndJitCodeCacheMProtect",
+            prio_insns[0] == 0x11005068
+            and prio_insns[2] == 0x71009D1F
+            and mprot_mask == 0x92409C48
+            and mprot_rwx == 0x528000E2
+            and "SetThreadPriorityV2Internal" in content
+            and "StartJitCodeCacheMProtectPhase1" in content,
+            "Khớp PriorityManagerV2 (0x02824c: add w8, w3, #0x14; cmp w8, #0x27) và JitCodeCacheMProtectOpt (0x03086c: and #0xffffffffff; 0x03091c: mov w2, #7)"
+        )
+
+        # 6. Kiểm tra ThreadSuspendTimeout (0x03871c: 0x3B9ACA00 = 10^9 ns/s) & ThreadNative /proc/stat parser (0x018c88: ')' = 0x29 @ 0x018d0c)
+        susp_insns = struct.unpack_from("<3I", so_bytes, 0x038744)
+        stat_rparen = struct.unpack_from("<I", so_bytes, 0x018d0c)[0]
+        self.assert_test(
+            "Jato_ThreadSuspendTimeoutAndProcStatParser",
+            susp_insns == (0x52994008, 0x72A77348, 0x9B087E61)
+            and stat_rparen == 0x52800521
+            and "ComputeSuspendTimeoutNanos" in content
+            and "ParseThreadProcStatLine" in content,
+            "Khớp ThreadSuspendTimeout (0x038744: mul x1, x19, 0x3b9aca00 = 10^9 ns) và bộ phân tích /proc/stat (0x018d0c: mov w1, #0x29 ')')"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -10659,6 +10772,7 @@ class AutonomousVerificationEngine:
         self.verify_libgaia_lib()
         self.verify_libterrain()
         self.verify_libtt_ugen_layout()
+        self.verify_libjato()
         self.verify_overall_governance()
 
 

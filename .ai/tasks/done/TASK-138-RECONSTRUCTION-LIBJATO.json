@@ -1,0 +1,32 @@
+{
+  "task_id": "TASK-138-RECONSTRUCTION-LIBJATO",
+  "so_task_id": "TASK_SO_109_libjato",
+  "title": "Clean-Room C++17 Reconstruction of libjato.so (Target 99/169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Frontend/Android Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Orchestrator)",
+  "binary_target": "SOURCE/apktool-res/lib/arm64-v8a/libjato.so",
+  "binary_size_bytes": 362800,
+  "binary_sha256": "0333b9ad7314644975997ba1a375bec370225ee72f7adf1123c83637e09fa3fc",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libjato/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libjato.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_109_libjato.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 9 clean-room C++17/H files (>= 40 KB, 0 stubs) covering all 1,765 FDEs and 126 exported symbols.",
+    "Verify all 24 .init_array constructors, 2 .fini_array destructors, JIT/ProfileInfo/JitCodeCache, GCBlocker/LargeObjectSpace/MemTrim, ThreadNative/PriorityManagerV2/CpusetManager, and HwuiBoost/RenderThreadOpt/BufferBarrier.",
+    "Pass adversary_critic_agent.py (99/169 VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (629/629 PASS, 100.0%), and native_audit_watchdog.py (0 high findings)."
+  ],
+  "completed_at": "2026-10-27T15:33:27.381677+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (99/169)",
+    "reconstruction_suite": "629/629 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 2275055,
+    "verified_instructions": 46577,
+    "fde_count": 1765,
+    "stub_count": 0
+  }
+}

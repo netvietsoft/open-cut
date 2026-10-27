@@ -835,3 +835,5 @@
 - [x] **TASK-136 (`libterrain.so` — `336,672 B`)**: Reconstructed `1,323,503 B` C++17/H (9 files, 1,034 FDEs, 0 stubs), verified `617/617 PASS (100.0%)`, `97/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-137 (`libtt_ugen_layout.so` — `360,968 B`)**: Reconstructed `1,184,430 B` C++17/H (9 files, 874 FDEs, 0 stubs), verified `623/623 PASS (100.0%)`, `98/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-138 (`libjato.so` — `362,800 B`)**: Reconstructed `2,275,055 B` C++17/H (9 files, 1,765 FDEs, 0 stubs), verified `629/629 PASS (100.0%)`, `99/169 VERIFIED_AND_ACCEPTED`.
