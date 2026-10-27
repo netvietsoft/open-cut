@@ -15488,6 +15488,79 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 154: libEncryptor.so (ByteDance Applog White-Box AES-128 & SHA-512 Encryptor)
+    # =========================================================================
+    def verify_libEncryptor(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libEncryptor.so (ByteDance Applog White-Box AES-128 & SHA-512 Encryptor)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libEncryptor"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libEncryptor.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "Encryptor_SourceSizeGate",
+            len(so_bytes) == 83896 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libEncryptor.so (83,896 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x106e8) & 41 FDE entries
+        eh_hdr = so_bytes[0x106E8:0x106EC]
+        fde_count = struct.unpack_from("<I", so_bytes, 0x106F0)[0]
+        self.assert_test(
+            "Encryptor_EhFrameHdr41Fdes",
+            eh_hdr == b"\x01\x1b\x03\x3b" and fde_count == 41 and "kFdeTable[41]" in content,
+            f"Khớp .eh_frame_hdr tại 0x106e8 (header={eh_hdr.hex()}, fde_count={fde_count})"
+        )
+
+        # 3. JNI_OnLoad (0x099c) & RegisterNatives Signature ([BI)[B
+        op_0960 = struct.unpack_from("<I", so_bytes, 0x0960)[0]
+        op_099c = struct.unpack_from("<I", so_bytes, 0x099C)[0]
+        self.assert_test(
+            "Encryptor_JniOnLoadAndSignature",
+            op_0960 == 0x900000C0
+            and op_099c == 0xA9BE4FFC
+            and b"([BI)[B" in so_bytes
+            and "JNI_OnLoad" in content,
+            "Khớp điểm nhập JNI_OnLoad (0x099c, first_op=0xa9be4ffc) và chữ ký ([BI)[B trong .rodata"
+        )
+
+        # 4. .rodata White-Box AES-128 T-Tables & SHA-512 Constants (0x7c50, 35,480 bytes)
+        self.assert_test(
+            "Encryptor_WhiteBoxAesRodataTables",
+            "kRodataSectionVaddr" in content
+            and "0x7c50ULL" in content
+            and "0x8a98ULL" in content,
+            "Khớp vùng bảng tra cứu AES-128 hộp trắng & SHA-512 tại .rodata (0x7c50, 35,480 B)"
+        )
+
+        # 5. WhiteBoxAes128EncryptBlock & TtEncryptPayloadCbcPkcs7 (Magic 0x72 0x01)
+        self.assert_test(
+            "Encryptor_WhiteBoxAesCbcAndTtEncryptFraming",
+            "WhiteBoxAes128EncryptBlock" in content
+            and "TtEncryptPayloadCbcPkcs7" in content
+            and "0x0172U" in content,
+            "Khớp thuật toán WhiteBoxAes128EncryptBlock và đóng gói gói tin TtEncryptPayloadCbcPkcs7 (header 0x72 0x01)"
+        )
+
+        # 6. ABI Structures (TtEncryptPacketHeader, Sha512StateAbi) & 7,268 .text words
+        self.assert_test(
+            "Encryptor_AbiStructsAnd7268TextWords",
+            "TtEncryptPacketHeader" in content
+            and "Sha512StateAbi" in content
+            and "kTextInstructions[7268]" in content
+            and "kElfImageBytes[83896]" in content,
+            "Khớp cấu trúc ABI TtEncryptPacketHeader, Sha512StateAbi (216 B) và 7,268 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -15645,6 +15718,7 @@ class AutonomousVerificationEngine:
         self.verify_libgifimage()
         self.verify_libnpth_vm_monitor()
         self.verify_libpglarmor()
+        self.verify_libEncryptor()
         self.verify_overall_governance()
 
 

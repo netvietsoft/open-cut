@@ -1,0 +1,24 @@
+{
+  "library": "libEncryptor.so",
+  "task_id": "TASK-193-RECONSTRUCTION-LIBENCRYPTOR",
+  "legacy_task_id": "TASK_SO_137_libEncryptor",
+  "sha256": "6ffd80242ce93782454b9e76521f81526debe01d60f27a88c68da4f114c15dcb",
+  "size_bytes": 83896,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libEncryptor/encryptor.hpp",
+    "SOURCE/GIAI-MA/libEncryptor/encryptor_core.cpp",
+    "SOURCE/GIAI-MA/libEncryptor/encryptor_elf_sections_and_image.cpp"
+  ],
+  "total_reconstructed_bytes": 1217186,
+  "fde_count": 41,
+  "text_instructions": 7268,
+  "exported_functions": 1,
+  "key_anchors": {
+    "JNI_OnLoad": "0x099c (first_op=0xa9be4ffc)",
+    "rodata_whitebox_tables": "0x7c50 (35,480 bytes)",
+    "eh_frame_hdr": "0x106e8 (41 FDEs)"
+  },
+  "stub_count": 0,
+  "todo_count": 0
+}
