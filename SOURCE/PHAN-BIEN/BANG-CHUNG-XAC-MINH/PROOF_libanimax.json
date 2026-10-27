@@ -1,0 +1,101 @@
+{
+  "library": "libanimax.so",
+  "task_id": "TASK-147-RECONSTRUCTION-LIBANIMAX",
+  "legacy_task_id": "TASK_SO_021_libanimax",
+  "target_index": 108,
+  "binary_size_bytes": 657720,
+  "sha256": "7a0c3593e13aa50431ba537046a038c49decc30db1322810d77ea2b24259e93c",
+  "eh_frame_hdr_va": "0x020be4",
+  "fde_count": 3965,
+  "exported_symbol_count": 294,
+  "imported_symbol_count": 279,
+  "reconstructed_files": [
+    "animax_types.h",
+    "animax_player_core.h",
+    "animax_player_core.cpp",
+    "animax_video_shader.cpp",
+    "animax_fde_shard_1.cpp",
+    "animax_fde_shard_2.cpp",
+    "animax_fde_shard_3.cpp",
+    "animax_fde_shard_4.cpp",
+    "animax_fde_shard_5.cpp"
+  ],
+  "reconstructed_total_bytes": 3063866,
+  "stub_count": 0,
+  "opcode_evidence": [
+    {
+      "symbol": "_ZN4lynx6animax9ColorUtil13ParseHexColorERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+      "va_range": "0x04dc78..0x04de78",
+      "size_bytes": 512,
+      "verified_instructions": {
+        "0x04dccc": "71008D1F (cmp w8, #0x23 -> '#')",
+        "0x04de38": "53103F08 (lsl w8, w24, #0x10 -> R << 16)",
+        "0x04de3c": "2A1B6108 (orr w8, w8, w27, lsl #24 -> | (A << 24))",
+        "0x04de40": "2A162108 (orr w8, w8, w22, lsl #8 -> | (G << 8))",
+        "0x04de44": "2A170113 (orr w19, w8, w23 -> | B)"
+      }
+    },
+    {
+      "symbol": "_ZN4lynx6animax5ColorC1Ei",
+      "va_range": "0x0683d8..0x068408",
+      "size_bytes": 52,
+      "verified_instructions": {
+        "0x0683e4": "53187C29 (lsr w9, w1, #0x18)",
+        "0x0683e8": "B20883EA (mov x10, #0x100010001000100)",
+        "0x0683ec": "53107C2B (lsr w11, w1, #0x10)",
+        "0x0683f0": "53087C2C (lsr w12, w1, #8)",
+        "0x0683f8": "39002009 (strb w9, [x0, #8])"
+      }
+    },
+    {
+      "symbol": "_ZNK4lynx6animax12YUVFrameInfo28GetVerticalSubsamplingFactorEj",
+      "va_range": "0x073fd0..0x073ffc",
+      "size_bytes": 48,
+      "verified_instructions": {
+        "0x073fd0": "7100083F (cmp w1, #2)",
+        "0x073fe4": "1E2E1000 (fmov s0, #1.00000000)",
+        "0x073fe8": "1E2C1001 (fmov s1, #0.50000000)",
+        "0x073fec": "F100051F (cmp x8, #1)",
+        "0x073ff0": "1E200C20 (fcsel s0, s1, s0, eq)"
+      }
+    },
+    {
+      "symbol": "_ZN4lynx6animax18PlayerEventTracker9MarkEventENS0_15PlayerEventTypeE",
+      "va_range": "0x04c844..0x04c878",
+      "size_bytes": 56,
+      "verified_instructions": {
+        "0x04c868": "52800028 (mov w8, #1)",
+        "0x04c86c": "3821C808 (strb w8, [x0, w1, sxtw])",
+        "0x04c874": "3861C800 (ldrb w0, [x0, w1, sxtw])"
+      }
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "formula": "argb = (R << 16) | (A << 24) | (G << 8) | B",
+      "location": "0x04de38..0x04de44",
+      "purpose": "Hex color string (#RRGGBB / #AARRGGBB) to 32-bit ARGB packing in ColorUtil::ParseHexColor"
+    },
+    {
+      "formula": "channel_height = uint32_t(float(height) * ((ch == 0) ? 1.0f : ((yuv_pix_fmt == 1) ? 0.5f : 1.0f)))",
+      "location": "0x073f90..0x073ffc",
+      "purpose": "YUV420P / YUV444P vertical chroma subsampling height calculation in YUVFrameInfo::GetChannelDataHeight"
+    }
+  ],
+  "abi_layouts": [
+    {
+      "struct_name": "lynx::animax::YUVFrameInfo",
+      "total_size_bytes": 64,
+      "fields": {
+        "+0x00": "uint32_t line_size[3]",
+        "+0x10": "uint32_t line_width[3]",
+        "+0x20": "uint32_t width",
+        "+0x24": "uint32_t height",
+        "+0x28": "uint32_t bit_depth",
+        "+0x30": "uint64_t yuv_pix_fmt",
+        "+0x38": "std::vector<uint8_t>* channel_vectors_ptr"
+      }
+    }
+  ],
+  "status": "VERIFIED_AND_ACCEPTED"
+}

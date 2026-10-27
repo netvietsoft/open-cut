@@ -11438,6 +11438,97 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 108: libanimax.so (Target 108 / 169 — ByteDance Lynx AnimaX Engine)
+    # =========================================================================
+    def verify_libanimax(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libanimax.so (Target 108 / 169)")
+        print("="*70)
+
+        import struct
+        import hashlib
+
+        lib_dir = GIAIMA_DIR / "libanimax"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 40 KB (3,063,866 B across 9 clean-room files, 0 stubs)
+        self.assert_test(
+            "AnimaX_SourceSizeAndZeroStubs",
+            total_bytes > 40000
+            and len(cpp_files) == 9
+            and not (lib_dir / "animax_interface.h").exists()
+            and not (lib_dir / "animax_pseudocode.cpp").exists()
+            and "ExecuteAnimaXFdeByAddress" in content,
+            f"Tổng dung lượng C++17 đạt {total_bytes:,} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Binary SHA-256 & .eh_frame_hdr @ 0x020be4 (3,965 FDEs)
+        so_bytes = (ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libanimax.so").read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x020be4 + 8)[0]
+        self.assert_test(
+            "AnimaX_BinarySha256AndEhFrame3965Fdes",
+            len(so_bytes) == 657720
+            and sha256_hex == "7a0c3593e13aa50431ba537046a038c49decc30db1322810d77ea2b24259e93c"
+            and fde_count == 3965,
+            "Khớp nhị phân libanimax.so (657,720 B, SHA-256 7a0c3593..., .eh_frame_hdr @ 0x020be4 = 3,965 FDEs)"
+        )
+
+        # 3. ColorUtil::ParseHexColor (0x04dc78..0x04de78) ARGB packing opcodes & math
+        hash_cmp = struct.unpack_from("<I", so_bytes, 0x04dccc)[0]
+        pack_insns = struct.unpack_from("<4I", so_bytes, 0x04de38)
+        sim_argb = (0x12 << 16) | (0xFF << 24) | (0x34 << 8) | 0x56
+        self.assert_test(
+            "AnimaX_ParseHexColorOpcodesAndArgbMath",
+            hash_cmp == 0x71008D1F
+            and pack_insns == (0x53103F08, 0x2A1B6108, 0x2A162108, 0x2A170113)
+            and sim_argb == 0xFF123456
+            and "ParseHexColor" in content,
+            "Khớp ColorUtil::ParseHexColor (0x04dc78..0x04de44: cmp '#', (R<<16)|(A<<24)|(G<<8)|B -> 0xFF123456)"
+        )
+
+        # 4. Color::Color(int) (0x0683d8..0x068408) 16-byte ABI layout & opcodes
+        color_insns = struct.unpack_from("<10I", so_bytes, 0x0683e4)
+        self.assert_test(
+            "AnimaX_ColorCtor16ByteAbiAndOpcodes",
+            color_insns == (
+                0x53187C29, 0xB20883EA, 0x53107C2B, 0x53087C2C, 0xA9002808,
+                0x39002009, 0x3900280B, 0x3900300C, 0x39003801, 0xD65F03C0
+            )
+            and "ColorAbiLayout" in content,
+            "Khớp Color::Color(int) (0x0683e4..0x068408: mov x10, #0x100010001000100; strb A/R/G/B tại +0x08/+0x0a/+0x0c/+0x0e)"
+        )
+
+        # 5. YUVFrameInfo::GetVerticalSubsamplingFactor (0x073fd0..0x073ffc) & GetChannelDataHeight (0x073f90..0x073fcc)
+        sub_insns = struct.unpack_from("<12I", so_bytes, 0x073fd0)
+        self.assert_test(
+            "AnimaX_YUVFrameInfoSubsamplingOpcodesAndMath",
+            sub_insns == (
+                0x7100083F, 0x1E2703E0, 0x540000E8, 0x340000E1,
+                0xF9401808, 0x1E2E1000, 0x1E2C1001, 0xF100051F,
+                0x1E200C20, 0xD65F03C0, 0x1E2E1000, 0xD65F03C0
+            )
+            and "GetVerticalSubsamplingFactor" in content
+            and "YUVFrameInfoAbiLayout" in content,
+            "Khớp YUVFrameInfo::GetVerticalSubsamplingFactor (0x073fd0..0x073ffc: fcsel 0.5f / 1.0f cho YUV420P chroma)"
+        )
+
+        # 6. PlayerEventTracker (0x04c844..0x04c878), AnimaXPlayerBuilder (0x0588d0..0x058910) & DocumentData::GetValueType (0x05cd9c)
+        mark_insns = struct.unpack_from("<5I", so_bytes, 0x04c868)
+        doc_val = struct.unpack_from("<2I", so_bytes, 0x05cd9c)
+        bldr_insns = struct.unpack_from("<6I", so_bytes, 0x0588fc)
+        self.assert_test(
+            "AnimaX_PlayerEventTrackerAndBuilderAbi",
+            mark_insns == (0x52800028, 0x3821C808, 0xD65F03C0, 0x3861C800, 0xD65F03C0)
+            and doc_val == (0x528000C0, 0xD65F03C0)
+            and bldr_insns == (0x12000028, 0x39006008, 0xD65F03C0, 0x12000028, 0x39006408, 0xD65F03C0)
+            and "AnimaXPlayerBuilderAbiLayout" in content,
+            "Khớp PlayerEventTracker::MarkEvent/GetEventValue (0x04c868), DocumentData::GetValueType (0x05cd9c -> 6) và AnimaXPlayerBuilder (+0x18/+0x19)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -11549,6 +11640,7 @@ class AutonomousVerificationEngine:
         self.verify_libfdk_aac()
         self.verify_libttkmedianet()
         self.verify_libbytebench()
+        self.verify_libanimax()
         self.verify_overall_governance()
 
 

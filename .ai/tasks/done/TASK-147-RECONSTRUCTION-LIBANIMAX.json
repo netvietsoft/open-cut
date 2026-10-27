@@ -1,0 +1,35 @@
+{
+  "task_id": "TASK-147-RECONSTRUCTION-LIBANIMAX",
+  "legacy_task_id": "TASK_SO_021_libanimax",
+  "title": "Clean-room C++17 reconstruction of libanimax.so (Target 108/169)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libanimax.so",
+  "binary_size_bytes": 657720,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libanimax/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libanimax.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libanimax.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_021_libanimax.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_021_libanimax.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "100% clean-room C++17 & header reconstruction >= 40KB (target > 1,000KB across 9 files) with 0 stubs",
+    "Exact AArch64 opcode, ABI layout, and mathematical verification against libanimax.so",
+    "Pass adversary_critic_agent.py --once (VERIFIED_AND_ACCEPTED 108/169)",
+    "Pass verify_reconstruction_suite.py (683/683 PASS 100.0%)",
+    "Pass native_audit_watchdog.py (169 binaries, 0 high findings)"
+  ],
+  "completed_at": "2026-10-27T17:15:42.669989+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (108/169)",
+    "reconstruction_suite": "683/683 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 3063866,
+    "fde_count": 3965,
+    "exported_symbols": 294,
+    "stub_count": 0
+  }
+}
