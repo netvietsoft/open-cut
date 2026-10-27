@@ -901,3 +901,5 @@
 - [x] **TASK-169 (`libnpth_logcat.so` — `16,856 B`)**: Reconstructed `143,949 B` C++17/H (4 files, 10 FDEs, PIE executable, 0 stubs), verified `815/815 PASS (100.0%)`, `130/169 VERIFIED_AND_ACCEPTED`.
 
 - [x] **TASK-170 (`libttmverify.so` — `18,112 B`)**: Reconstructed `92,536 B` C++17/H (4 files, 4 FDEs, 3 exports, 0 stubs), verified `821/821 PASS (100.0%)`, `131/169 VERIFIED_AND_ACCEPTED`.
+
+- [x] **TASK-171 (`libpush_ka.so` — `18,184 B`)**: Reconstructed `106,605 B` C++17/H (3 files, 1 FDE, 1 export, 0 stubs), verified `827/827 PASS (100.0%)`, `132/169 VERIFIED_AND_ACCEPTED`.

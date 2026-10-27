@@ -1,0 +1,14 @@
+{
+  "task_id": "TASK-171-RECONSTRUCTION-LIBPUSH-KA",
+  "status": "DONE",
+  "completed_at": "2026-10-27T20:27:13.448135+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (132/169)",
+    "reconstruction_suite": "827/827 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 106605,
+    "fde_count": 1,
+    "exported_symbols": 1,
+    "stub_count": 0
+  }
+}

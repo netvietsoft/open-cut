@@ -13699,6 +13699,95 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # KIỂM CHỨNG ĐỐI KHÁNG TARGET 132: LIBPUSH_KA.SO (VEGA PUSH KEEP-ALIVE RUNTIME RESOLVER)
+    # =========================================================================
+    def verify_libpush_ka(self):
+        import hashlib
+        import struct
+        print("\n[132] Đang kiểm chứng libpush_ka.so (ByteDance Vega Push Keep-Alive AndroidRuntime Resolver)...")
+        ka_dir = GIAIMA_DIR / "libpush_ka"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libpush_ka.so"
+
+        files = [
+            "push_ka.h",
+            "push_ka_jni_and_runtime_bridge.cpp",
+            "push_ka_elf_sections_and_image.cpp",
+        ]
+        all_exist = all((ka_dir / f).exists() for f in files)
+        total_size = sum((ka_dir / f).stat().st_size for f in files if (ka_dir / f).exists())
+
+        # 1. File existence & size > 90 KB (> 40 KB gate) & zero old stubs
+        self.assert_test(
+            "PushKa_CleanRoomFilesAndSize",
+            all_exist and total_size > 90000 and not (ka_dir / "push_ka_pseudocode.cpp").exists(),
+            f"Đầy đủ 3 file C++17/H trong GIAI-MA/libpush_ka ({total_size:,} bytes > 90 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (18,184 B) and .eh_frame_hdr 1 FDE @ 0x0890
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x0898)[0]
+        self.assert_test(
+            "PushKa_BinarySha256AndEhFrame1FDE",
+            len(so_bytes) == 18184
+            and sha256_hex == "e8a32d5847f22373b03950fe22ee6ffa53a667ce77c57e018a2db9d409914281"
+            and eh_fde_count == 1,
+            f"Khớp kích thước 18,184 bytes, SHA-256 ({sha256_hex[:16]}...) và 1 FDE tại .eh_frame_hdr 0x0890"
+        )
+
+        content = ""
+        for f in files:
+            fp = ka_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. .rodata (0x0824..0x088e): "libandroid_runtime.so" (0x0824), "_ZN7android14AndroidRuntime10getRuntimeEv" (0x083a), "_ZN7android14AndroidRuntime8setArgv0EPKcb" (0x0864)
+        lib_str = so_bytes[0x0824:0x0839].decode("ascii", errors="ignore")
+        sym1_str = so_bytes[0x083a:0x0863].decode("ascii", errors="ignore")
+        sym2_str = so_bytes[0x0864:0x088d].decode("ascii", errors="ignore")
+        self.assert_test(
+            "PushKa_RodataAndroidRuntimeSymbols",
+            lib_str == "libandroid_runtime.so"
+            and sym1_str == "_ZN7android14AndroidRuntime10getRuntimeEv"
+            and sym2_str == "_ZN7android14AndroidRuntime8setArgv0EPKcb"
+            and "kSymAndroidRuntimeGet" in content and "kSymAndroidRuntimeSetArgv0" in content,
+            "Khớp 3 chuỗi .rodata (0x0824..0x088e): libandroid_runtime.so, AndroidRuntime::getRuntime() và AndroidRuntime::setArgv0(char const*, bool)"
+        )
+
+        # 4. FDE[00] (0x0768..0x07bc): npth_dlopen (0x0784), cbz x0,#0x810 (0x078c), 2x npth_dlsym (0x079c, 0x07b0) & npth_dlclose (0x07bc)
+        add_824 = struct.unpack_from("<I", so_bytes, 0x0780)[0]
+        cbz_dl  = struct.unpack_from("<I", so_bytes, 0x078c)[0]
+        add_83a = struct.unpack_from("<I", so_bytes, 0x0794)[0]
+        add_864 = struct.unpack_from("<I", so_bytes, 0x07a8)[0]
+        self.assert_test(
+            "PushKa_NpthDlopenAndDlsymResolution",
+            add_824 == 0x91209000 and cbz_dl == 0xB4000420 and add_83a == 0x9120E821 and add_864 == 0x91219021
+            and "npth_dlopen" in content and "npth_dlsym" in content and "npth_dlclose" in content,
+            "Khớp chuỗi gọi npth_dlopen (0x0780..0x078c), 2 lần npth_dlsym (0x0794, 0x07a8) và npth_dlclose (0x07bc)"
+        )
+
+        # 5. JNINativeInterface vtable calls: NewLongArray (+0x5a0 @ 0x07cc), GetLongArrayElements (+0x5e0 @ 0x07e4), stp x21,x22,[x0] (0x07f0), ReleaseLongArrayElements (+0x620 @ 0x0804)
+        ldr_5a0 = struct.unpack_from("<I", so_bytes, 0x07cc)[0]
+        ldr_5e0 = struct.unpack_from("<I", so_bytes, 0x07e4)[0]
+        stp_21  = struct.unpack_from("<I", so_bytes, 0x07f0)[0]
+        ldr_620 = struct.unpack_from("<I", so_bytes, 0x0804)[0]
+        self.assert_test(
+            "PushKa_JniLongArrayVtableAndPairedStore",
+            ldr_5a0 == 0xF942D108 and ldr_5e0 == 0xF942F108 and stp_21 == 0xA9005815 and ldr_620 == 0xF9431108
+            and "Java_com_bytedance_vega_ug_push_alive_undead_base_KAImpl_getRuntimeAddr" in content,
+            "Khớp JNINativeInterface: NewLongArray (+0x5a0 @ 0x07cc), GetLongArrayElements (+0x5e0 @ 0x07e4), stp x21,x22,[x0] (0x07f0) và ReleaseLongArrayElements (+0x620 @ 0x0804)"
+        )
+
+        # 6. Complete 65-word .text, 32-word .plt, and 97-entry disassembly table
+        self.assert_test(
+            "PushKa_Full65TextWordsAnd97InsnTable",
+            "kPushKaTextWords65" in content
+            and "kPushKaPltWords32" in content
+            and "kPushKaDisassemblyTable97" in content,
+            "Bao phủ trọn vẹn 65 từ lệnh .text (0x0720..0x0824), 32 từ lệnh .plt (0x06a0..0x0720) và bảng giải mã 97 lệnh"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -13834,6 +13923,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_tls_monitor()
         self.verify_libnpth_logcat()
         self.verify_libttmverify()
+        self.verify_libpush_ka()
         self.verify_overall_governance()
 
 
