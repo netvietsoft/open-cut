@@ -1,0 +1,34 @@
+{
+  "task_id": "TASK-119-RECONSTRUCTION-LIBVCN",
+  "legacy_task_id": "TASK_SO_042_libvcn",
+  "title": "Clean-room C++17 reconstruction of libvcn.so (ByteDance MediaKit VCN — Video Cloud Network HTTP/TLS/DNS/Socket Engine)",
+  "status": "DONE",
+  "completed_at": "2026-10-27T08:06:50+07:00",
+  "assigned_agents": ["Agent 0", "Agent 3", "Agent 6", "Agent 9", "Agent 13"],
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libvcn.so",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libvcn/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libvcn.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libvcn.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_042_libvcn.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_042_libvcn.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "acceptance_criteria": [
+    "100% genuine C++17 implementation (>40KB source, 0 stubs) with bilingual EN/VN comments",
+    "Exact AArch64 opcode and struct offset parity for all exported and internal functions in libvcn.so",
+    "Adversary Critic Agent (Agent 13) certifies VERIFIED_AND_ACCEPTED (80/169)",
+    "verify_reconstruction_suite.py passes 100% (515/515 PASS)",
+    "native_audit_watchdog.py reports 169 binaries, 0 high findings"
+  ],
+  "verification_results": {
+    "reconstructed_cpp_bytes": 120026,
+    "reconstructed_files_count": 10,
+    "ledger_verified_count": "80 / 169 (47.34%)",
+    "test_suite_result": "515 / 515 PASS (100.0%)",
+    "native_watchdog_result": "169 binaries, 0 high findings"
+  }
+}

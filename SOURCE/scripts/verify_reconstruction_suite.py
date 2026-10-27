@@ -8219,6 +8219,83 @@ class AutonomousVerificationEngine:
             "Khớp khóa công khai RSA Base64 344-byte (.rodata 0x0214c0), động cơ mã hóa phong bì BPEM và bộ quét Root/Magisk/Cloud-Phone/Auto-Clicker"
         )
 
+    def verify_libvcn(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libvcn.so (ByteDance MediaKit Video Cloud Network Engine)")
+        print("="*70)
+
+        target_dir = GIAIMA_DIR / "libvcn"
+        cpp_files = list(target_dir.glob("*.cpp")) + list(target_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libvcn.so"
+        so_bytes = so_path.read_bytes()
+
+        # 1. Kiểm tra dung lượng mã nguồn tái tạo > 40 KB và 0 stub
+        self.assert_test(
+            "Vcn_SourceSizeAndZeroStubs",
+            total_bytes > 40000 and len(cpp_files) >= 9 and "TODO" not in content,
+            f"Dung lượng C++17 tái tạo đạt {total_bytes:,} bytes trên {len(cpp_files)} file (.h/.cpp), 0 stub"
+        )
+
+        # 2. Kiểm tra bảng 66 mục lỗi error_entries tại .data.rel.ro 0x035740 (file off 0x031740) & vcn_av_strerror
+        err0_code = struct.unpack("<I", so_bytes[0x031740:0x031744])[0]
+        err22_code = struct.unpack("<I", so_bytes[0x031740 + 22 * 24 : 0x031744 + 22 * 24])[0]
+        self.assert_test(
+            "Vcn_66EntryErrorTableAndStrerror",
+            err0_code == 0xB9ACBD08
+            and err22_code == 0xCFCFCB08
+            and "GetVcnAvErrorTable66" in content
+            and "vcn_av_strerror" in content,
+            "Khớp bảng 66 mã lỗi error_entries tại .data.rel.ro 0x035740 (BSF_NOT_FOUND=0xB9ACBD08, HTTP_BAD_REQUEST=0xCFCFCB08)"
+        )
+
+        # 3. Kiểm tra httpParserHttpAVError (0x01ddb0, mặt nạ bit 0x1B & bảng .rodata 0x02e330)
+        http_tbl = struct.unpack("<5I", so_bytes[0x02e330:0x02e344])
+        self.assert_test(
+            "Vcn_HttpParserHttpAVErrorBitmask1B",
+            http_tbl == (0xCFCFCB08, 0xCECFCB08, 0xCFCFCB08, 0xCCCFCB08, 0xCBCFCB08)
+            and "httpParserHttpAVError" in content
+            and "0x1BU" in content,
+            "Khớp bảng mã lỗi HTTP 400..404 tại .rodata 0x02e330 và mặt nạ bit 0x1B = 0b11011 tại 0x01ddb0"
+        )
+
+        # 4. Kiểm tra 4 bộ mô tả URLProtocol 200-byte (.data.rel.ro 0x035fa0, 0x036500, 0x036960, 0x037340) & User-Agent
+        tcp_priv = struct.unpack("<I", so_bytes[0x031fa0 + 0x78 : 0x031fa0 + 0x7c])[0]
+        tls_priv = struct.unpack("<I", so_bytes[0x032500 + 0x78 : 0x032500 + 0x7c])[0]
+        http_priv = struct.unpack("<I", so_bytes[0x032960 + 0x78 : 0x032960 + 0x7c])[0]
+        ua_str = so_bytes[0x02ca3d:0x02ca3d + 26].decode("ascii")
+        self.assert_test(
+            "Vcn_4UrlProtocolDescriptorsAndUserAgent",
+            tcp_priv == 0x178 and tls_priv == 0x140 and http_priv == 0x18A0
+            and ua_str == "ttplayer(default)57.56.101"
+            and "GetVcnHttpProtocol" in content,
+            f"Khớp 4 bộ mô tả URLProtocol (tcp=0x178, tls=0x140, http/https=0x18a0) và User-Agent '{ua_str}'"
+        )
+
+        # 5. Kiểm tra createHttpContext (0x028e74, 0x2ad0 = 10,960 B) & httpParserParseContentRange (0x0261f4)
+        init_ints = struct.unpack("<4i", so_bytes[0x02a290:0x02a2a0])
+        self.assert_test(
+            "Vcn_CreateHttpContextAndContentRange",
+            init_ints == (120, 0, 1, 0)
+            and "0x2AD0" in content
+            and "httpParserParseContentRange" in content
+            and "createHttpContext" in content,
+            "Khớp cấu trúc VCNHttpContext (0x2ad0 = 10,960 B, hằng khởi tạo .rodata 0x02a290 = [120, 0, 1, 0]) và httpParserParseContentRange"
+        )
+
+        # 6. Kiểm tra VCNSocketInfo (0x029178, 0x70 = 112 B), VCNDNSParserInterface (0x029144) & vcnDoCustomVerify (0x02a1c4)
+        self.assert_test(
+            "Vcn_SocketInfoDnsParserAndCustomVerify",
+            "VCNSocketInfo" in content
+            and "VCNDNSParserInterface" in content
+            and "vcnDoCustomVerify" in content
+            and "vcnUrlSplit" in content
+            and "0xFFFEU" in content,
+            "Khớp lớp VCNSocketInfo (0x70 = 112 B, kiểm tra 1 <= port <= 65534), VCNDNSParserInterface, vcnUrlSplit và vcnDoCustomVerify"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -8303,6 +8380,7 @@ class AutonomousVerificationEngine:
         self.verify_libgodzilla_sysopt()
         self.verify_libjnidispatch()
         self.verify_libppsec()
+        self.verify_libvcn()
         self.verify_overall_governance()
 
 

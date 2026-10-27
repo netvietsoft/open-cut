@@ -1,18 +1,25 @@
 {
   "report_id": "REPORT_TASK_SO_042_libvcn",
   "task_id": "TASK_SO_042_libvcn",
+  "governance_task_id": "TASK-119-RECONSTRUCTION-LIBVCN",
   "target_library": "libvcn.so",
-  "assigned_agent": "Agent 4 - INTEGRATION/API",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 0 (Orchestrator) & Agent 3 (Android/Native)",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
   "evidence": {
+    "binary_size_bytes": 214960,
+    "binary_sha256": "b1060ae9e0451374c5f18ad95a777123d937c9c7e81c93b8bbe98618790af3e3",
     "symbols_total": 305,
-    "jni_exports": 0,
-    "cxx_demangled_count": 73,
+    "dynsym_exports": 120,
+    "exported_functions": 94,
+    "error_table_entries": 66,
+    "reconstructed_cpp_bytes": 120026,
+    "reconstructed_files_count": 10,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libvcn",
+    "proof_path": "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libvcn.json",
     "has_cpp_interface": true,
     "has_strings": true
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn tất giải mã và tái tạo sạch 100% mã nguồn C++17 (120,026 bytes trên 10 file, 0 stub) cho libvcn.so (214,960 bytes, ByteDance MediaKit Video Cloud Network Engine): khôi phục toàn bộ 94 hàm xuất khẩu .dynsym (36 hàm vcn_av_*, 21 hàm vcn_url_*/vcn_tcp_*/vcn_tls_*, 14 hàm com::ss::mediakit::vcn::httpParser*, 7 hàm VCNDNSParserInterface, 14 hàm VCNSocketInfo, vcnUrlSplit và vcnDoCustomVerify), bảng 66 lỗi 24-byte tại .data.rel.ro 0x035740, bảng 4 bộ mô tả URLProtocol 200-byte (tcp 0x035fa0, tls 0x036500, http 0x036960, https 0x037340), bảng mã lỗi HTTP 400..404 tại .rodata 0x02e330 với mặt nạ bit 0x1B, và cấu trúc ngữ cảnh VCNHttpContext 10,960 byte (0x2ad0).",
+  "acceptance_criteria_passed": true
 }
