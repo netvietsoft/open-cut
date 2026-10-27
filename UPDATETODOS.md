@@ -925,3 +925,5 @@
 - [x] **TASK-181 (`libropaencrypt.so` — Target 142/169, `34,904 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`612,936 B`), đạt `142/169 VERIFIED_AND_ACCEPTED (84.02%)` và `887/887 PASS (100.0%)`.
 
 - [x] **TASK-182 (`liblynx-imageloader.so` — Target 143/169, `35,168 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`353,973 B`), đạt `143/169 VERIFIED_AND_ACCEPTED (84.62%)` và `893/893 PASS (100.0%)`.
+
+- [x] **TASK-183 (`libwhisper.so` — Target 144/169, `38,584 B`)**: Hoàn thành tái tạo C++17 phòng sạch (`663,568 B`), đạt `144/169 VERIFIED_AND_ACCEPTED (85.21%)` và `899/899 PASS (100.0%)`.

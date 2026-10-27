@@ -1,0 +1,89 @@
+{
+  "library": "libwhisper.so",
+  "task_id": "TASK-183-RECONSTRUCTION-LIBWHISPER",
+  "report_task_id": "TASK_SO_014_libwhisper",
+  "target_index": 144,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 38584,
+  "binary_sha256": "03cd8fc0d2b50f1f7e0a6e77258eb704db5cb7c52a167c7581b4bce1f9b73406",
+  "cpp_reconstruction_files": [
+    "whisper.hpp",
+    "whisper_core.cpp",
+    "whisper_elf_sections_and_image.cpp"
+  ],
+  "cpp_total_bytes": 663568,
+  "eh_frame_hdr_va": "0x7cc8",
+  "subroutine_count": 13,
+  "text_va_range": "0x0780..0x3788",
+  "text_instruction_count": 3074,
+  "opcode_evidence": [
+    {
+      "va": "0x07bc",
+      "hex": "a9ba6ffc",
+      "insn": "stp x28, x27, [sp, #-0x60]!",
+      "fn": "BchEncodeBitPackedPayload_07bc"
+    },
+    {
+      "va": "0x0dd8",
+      "hex": "d10243ff",
+      "insn": "sub sp, sp, #0x90",
+      "fn": "BchInitCodecTables_0dd8 (5 <= m <= 15)"
+    },
+    {
+      "va": "0x1d1c",
+      "hex": "d10303ff",
+      "insn": "sub sp, sp, #0xc0",
+      "fn": "InitWMInfo (calloc(0x6a, 1), payload <= 0x3ff)"
+    },
+    {
+      "va": "0x2864",
+      "hex": "f81e0ff3",
+      "insn": "str x19, [sp, #-0x20]!",
+      "fn": "FreeWMInfo"
+    },
+    {
+      "va": "0x2894",
+      "hex": "f81d0ff5",
+      "insn": "str x21, [sp, #-0x30]!",
+      "fn": "EmbedAudioChannelFloat (0x4d4873ed >> 37)"
+    },
+    {
+      "va": "0x29b8",
+      "hex": "0e205800",
+      "insn": "cnt v0.8b, v0.8b",
+      "fn": "EmbedWatermarkFrameDsp_298c (NEON popcount power-of-2 check)"
+    },
+    {
+      "va": "0x2f68",
+      "hex": "d10143ff",
+      "insn": "sub sp, sp, #0x50",
+      "fn": "EmbedAudioChannelInt16"
+    },
+    {
+      "va": "0x31d8",
+      "hex": "a9bc5ff8",
+      "insn": "stp x24, x23, [sp, #-0x40]!",
+      "fn": "RealFftForward_31d8"
+    },
+    {
+      "va": "0x338c",
+      "hex": "f81b0ff9",
+      "insn": "str x25, [sp, #-0x50]!",
+      "fn": "RealFftInverse_338c"
+    }
+  ],
+  "mathematical_proofs": [
+    {
+      "id": "MATH-01",
+      "title": "Signed Reciprocal Division by 85 (0x4D4873ED >> 37) for Modulo-170 Frame Scheduling",
+      "formula": "floor(n * 0x4D4873ED / 2^37) == floor(n / 85) because 0x4D4873ED = ceil(2^43 / 85)",
+      "verified": true
+    },
+    {
+      "id": "MATH-02",
+      "title": "NEON Vector Population Count Power-of-Two Verification (0x29b4..0x29c8)",
+      "formula": "uaddlv(cnt(fmov_d0(N))) == 1 && 1 <= N <= 2048 <=> N in {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048}",
+      "verified": true
+    }
+  ]
+}

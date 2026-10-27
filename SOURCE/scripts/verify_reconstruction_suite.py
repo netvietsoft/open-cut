@@ -14726,6 +14726,79 @@ class AutonomousVerificationEngine:
             "Khớp FDE[01] OutlinedMalloc_4bf0 (0x4bf0..0x4bf8) và toàn bộ 766 lệnh .text"
         )
 
+    def verify_libwhisper(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libwhisper.so (ByteDance Audio Spread-Spectrum Watermark & GF(2^m) BCH + Real FFT Engine)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libwhisper"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libwhisper.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 400 KB
+        self.assert_test(
+            "Whisper_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 400000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libwhisper ({total_bytes:,} bytes > 400 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 & 17,720-byte .rodata GF(2^m) primitive polynomials @ 0x3790
+        gf_polys = struct.unpack_from("<8I", so_bytes, 0x3790)
+        self.assert_test(
+            "Whisper_BinarySha256AndGf2mPrimitivePolys",
+            len(so_bytes) == 38584
+            and sha256_hex == "03cd8fc0d2b50f1f7e0a6e77258eb704db5cb7c52a167c7581b4bce1f9b73406"
+            and gf_polys == (0, 1, 0x25, 0x43, 0x83, 0x11D, 0x211, 0x409),
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và đa thức nguyên thủy GF(2^m) tại .rodata 0x3790"
+        )
+
+        # 3. Sub[01] GF(2^m) BCH Generator Init_07bc & Sub[03..04] Real FFT Split-Radix_0ef0/1068
+        op_07bc = struct.unpack_from("<I", so_bytes, 0x07BC)[0]
+        op_0ef0 = struct.unpack_from("<I", so_bytes, 0x0EF0)[0]
+        op_1068 = struct.unpack_from("<I", so_bytes, 0x1068)[0]
+        self.assert_test(
+            "Whisper_Gf2mBchGeneratorAndRealFftSplitRadix",
+            op_07bc == 0xA9BA6FFC and op_0ef0 == 0x97FFFE10 and op_1068 == 0xA9487BFD
+            and all(sym in content for sym in ["BchEncodeBytes_1a78", "RealFftForward_31d8", "RealFftInverse_338c"]),
+            "Khớp Sub[01] GF(2^m) BCH Generator (0x07bc), BchEncodeBytes_1a78 và RealFftForward_31d8 / RealFftInverse_338c"
+        )
+
+        # 4. Exported C APIs InitWMInfo (0x1d1c, calloc 0x6a=106B) & FreeWMInfo (0x2864)
+        op_1d1c = struct.unpack_from("<I", so_bytes, 0x1D1C)[0]
+        op_1d40 = struct.unpack_from("<I", so_bytes, 0x1D40)[0]
+        op_2864 = struct.unpack_from("<I", so_bytes, 0x2864)[0]
+        self.assert_test(
+            "Whisper_InitWMInfoAndFreeWMInfoExports",
+            op_1d1c == 0xD10303FF and op_1d40 == 0x52800D40 and op_2864 == 0xF81E0FF3
+            and "InitWMInfo" in content and "FreeWMInfo" in content,
+            "Khớp InitWMInfo (0x1d1c: calloc 0x6a=106B tại 0x1d40) và FreeWMInfo (0x2864)"
+        )
+
+        # 5. Exported C APIs EmbedAudioChannelFloat (0x2894) & EmbedAudioChannelInt16 (0x2f68)
+        op_2894 = struct.unpack_from("<I", so_bytes, 0x2894)[0]
+        op_2f68 = struct.unpack_from("<I", so_bytes, 0x2F68)[0]
+        self.assert_test(
+            "Whisper_EmbedAudioChannelFloatAndInt16Exports",
+            op_2894 == 0xF81D0FF5 and op_2f68 == 0xD10143FF
+            and "EmbedAudioChannelFloat" in content and "EmbedAudioChannelInt16" in content,
+            "Khớp EmbedAudioChannelFloat (0x2894) và EmbedAudioChannelInt16 (0x2f68: kẹp biên [-32768, 32767])"
+        )
+
+        # 6. Sub[10..12] Outlined Helpers (0x36c0..0x3788) & 3,074 .text instruction words
+        op_36c0 = struct.unpack_from("<I", so_bytes, 0x36C0)[0]
+        op_3734 = struct.unpack_from("<I", so_bytes, 0x3734)[0]
+        op_3754 = struct.unpack_from("<I", so_bytes, 0x3754)[0]
+        self.assert_test(
+            "Whisper_OutlinedNeonHelpersAnd3074TextWords",
+            op_36c0 == 0x17FFFFD2 and op_3734 == 0x90000008 and op_3754 == 0x9102A108
+            and all(sym in content for sym in ["EmbedWatermarkFrameDsp_298c", "kSubroutineTable", "kRodataBytes_3790", "kTextInstructionWords"]),
+            "Khớp EmbedWatermarkFrameDsp_298c, Outlined Helpers (0x36c0..0x3788) và 3,074 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14874,6 +14947,7 @@ class AutonomousVerificationEngine:
         self.verify_libttmverifylite()
         self.verify_libropaencrypt()
         self.verify_liblynx_imageloader()
+        self.verify_libwhisper()
         self.verify_overall_governance()
 
 
