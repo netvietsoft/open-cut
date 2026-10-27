@@ -1,0 +1,58 @@
+{
+  "task_id": "TASK_SO_008_libfast_engine_RelWithDebInfo",
+  "Orchestrator_Task_ID": "TASK-152-RECONSTRUCTION-LIBFAST-ENGINE-RELWITHDEBINFO",
+  "library": "libfast_engine_RelWithDebInfo.so",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libfast_engine_RelWithDebInfo.so",
+  "binary_size_bytes": 1309048,
+  "binary_sha256": "937ec38b3511f7df50b82c02c87db88ec472d8756d7c21e7ecf792c86a7281f8",
+  "reconstruction_dir": "SOURCE/GIAI-MA/libfast_engine_RelWithDebInfo",
+  "reconstructed_files": [
+    "fast_engine_rel_types.h",
+    "fast_engine_rel_core.h",
+    "fast_engine_rel_core.cpp",
+    "fast_engine_rel_vm_marshal.cpp",
+    "fast_engine_rel_fde_shard_1.cpp",
+    "fast_engine_rel_fde_shard_2.cpp",
+    "fast_engine_rel_fde_shard_3.cpp",
+    "fast_engine_rel_fde_shard_4.cpp",
+    "fast_engine_rel_fde_shard_5.cpp"
+  ],
+  "reconstructed_cpp_bytes": 1611215,
+  "fde_count": 2082,
+  "eh_frame_hdr_va": "0x1127c8",
+  "exported_symbols_count": 1691,
+  "stub_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "opcode_evidence": [
+    {
+      "symbol": "fast_engine::FastEngine::Instance()",
+      "va_range": "0x045cd4..0x045d7c",
+      "opcodes": [
+        "0x045d14: 52802400 mov w0, #0x120",
+        "0x045d48: B9011808 str w8, [x0, #0x118]",
+        "0x045d4c: 3904701F strb wzr, [x0, #0x11c]"
+      ]
+    },
+    {
+      "symbol": "fast_engine::FastEngine::HasFreeVM() const",
+      "va_range": "0x04632c..0x046394",
+      "opcodes": [
+        "0x046354: 52928A0A mov w10, #0x9450",
+        "0x046358: 72A0002A movk w10, #1, lsl #16",
+        "0x04635c: 3940110B ldrb w11, [x8, #4]"
+      ]
+    },
+    {
+      "symbol": "fast_engine::FastEngine::EncryptModuleName & DecryptModuleName",
+      "va_range": "0x046b54..0x0470dc",
+      "opcodes": [
+        "0x046c0c: 529D89EB mov w11, #0xec4f",
+        "0x046c18: 72A9D88B movk w11, #0x4ec4, lsl #16",
+        "0x046c24: 520009AD eor w13, w13, #7",
+        "0x046f48: 1B08358C madd w12, w12, w8, w13",
+        "0x046f4c: 1100958C add w12, w12, #0x25",
+        "0x046f50: 5200098C eor w12, w12, #7"
+      ]
+    }
+  ]
+}

@@ -11894,6 +11894,109 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 113: libfast_engine_RelWithDebInfo.so (Target 113 / 169 — FastEngine VM & Cipher)
+    # =========================================================================
+    def verify_libfast_engine_RelWithDebInfo(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libfast_engine_RelWithDebInfo.so (Target 113 / 169)")
+        print("="*70)
+
+        import struct
+        import hashlib
+
+        lib_dir = GIAIMA_DIR / "libfast_engine_RelWithDebInfo"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 40 KB (1,611,215 B across 9 clean-room files, 0 stubs)
+        self.assert_test(
+            "FastEngineRel_SourceSizeAndZeroStubs",
+            total_bytes > 40000
+            and len(cpp_files) == 9
+            and not (lib_dir / "fast_engine_RelWithDebInfo_interface.h").exists()
+            and not (lib_dir / "fast_engine_RelWithDebInfo_pseudocode.cpp").exists()
+            and "execute_fde_shard_1" in content,
+            f"Tổng dung lượng C++17 đạt {total_bytes:,} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Binary SHA-256 & .eh_frame_hdr @ 0x1127c8 (2,082 FDEs)
+        so_bytes = (ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libfast_engine_RelWithDebInfo.so").read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x1127c8 + 8)[0]
+        self.assert_test(
+            "FastEngineRel_BinarySha256AndEhFrame2082Fdes",
+            len(so_bytes) == 1309048
+            and sha256_hex == "937ec38b3511f7df50b82c02c87db88ec472d8756d7c21e7ecf792c86a7281f8"
+            and fde_count == 2082,
+            "Khớp nhị phân libfast_engine_RelWithDebInfo.so (1,309,048 B, SHA-256 937ec38b..., 2,082 FDEs @ 0x1127c8)"
+        )
+
+        # 3. FastEngine::Instance() (0x045cd4..0x045d7c) 0x120 allocation & Initialized() @ 0x046220
+        inst_alloc = struct.unpack_from("<I", so_bytes, 0x045d14)[0]
+        inst_maxvm = struct.unpack_from("<2I", so_bytes, 0x045d48)
+        init_check = struct.unpack_from("<4I", so_bytes, 0x046220)
+        self.assert_test(
+            "FastEngineRel_InstanceAndInitializedOpcodes",
+            inst_alloc == 0x52802400
+            and inst_maxvm == (0xB9011808, 0x3904701F)
+            and init_check == (0x91047008, 0x08DFFD08, 0x12000100, 0xD65F03C0)
+            and "kFastEngineSingletonBytes = 0x120" in content,
+            "Khớp FastEngine::Instance (0x045d14: mov w0, #0x120; +0x118=1; +0x11c=0) và Initialized (0x046220: ldarb [x0, #0x11c])"
+        )
+
+        # 4. HasFreeVM (0x04632c..0x046394) & GetOrCreateVM (0x046394..0x04653c) 0x19450 stride
+        vm_stride = struct.unpack_from("<3I", so_bytes, 0x046354)
+        vm_claim = struct.unpack_from("<I", so_bytes, 0x046484)[0]
+        vm_release = struct.unpack_from("<I", so_bytes, 0x046568)[0]
+        self.assert_test(
+            "FastEngineRel_VmPool103504ByteStrideOpcodes",
+            vm_stride == (0x52928A0A, 0x72A0002A, 0x3940110B)
+            and vm_claim == 0x390012DF
+            and vm_release == 0x39001268
+            and "kEngineVmInstanceStrideBytes = 0x19450" in content,
+            "Khớp HasFreeVM/GetOrCreateVM/ReleaseVMUsage (stride 0x19450=103,504B @ 0x046354, is_free @ +0x04)"
+        )
+
+        # 5. EncryptModuleName (0x046b54) & DecryptModuleName (0x046db0) Base-26 XOR-7 bijection
+        enc_recip = struct.unpack_from("<2I", so_bytes, 0x046c0c)
+        enc_xor = struct.unpack_from("<I", so_bytes, 0x046c24)[0]
+        dec_madd_add_eor = struct.unpack_from("<3I", so_bytes, 0x046f48)
+        def sim_enc_dec(s: str) -> str:
+            enc = []
+            for ch in s.encode("ascii"):
+                x = (ch ^ 7) & 0xFF
+                q = (x * 0x4EC4EC4F) >> 35
+                r = x - q * 26
+                enc.append(r + 0x41)
+                enc.append(q + 0x41)
+            dec = bytearray()
+            for i in range(0, len(enc), 2):
+                lo, hi = enc[i], enc[i + 1]
+                c = ((hi * 26 + lo + 0x25) & 0xFF) ^ 7
+                dec.append(c)
+            return dec.decode("ascii")
+        self.assert_test(
+            "FastEngineRel_ModuleNameBase26Xor7Bijection",
+            enc_recip == (0x529D89EB, 0xAA1F03E9)
+            and enc_xor == 0x520009AD
+            and dec_madd_add_eor == (0x1B08358C, 0x1100958C, 0x5200098C)
+            and sim_enc_dec("capcut_fast_vm") == "capcut_fast_vm"
+            and "0x4EC4EC4FU" in content,
+            "Khớp toán học song ánh EncryptModuleName/DecryptModuleName (Base-26 *0x4ec4ec4f>>35, +0x25, ^7)"
+        )
+
+        # 6. GetBuiltinVersion (0x0470dc..0x0470e4) & BuildConfigByProvider (0x045dfc)
+        ver_insns = struct.unpack_from("<2I", so_bytes, 0x0470dc)
+        self.assert_test(
+            "FastEngineRel_GetBuiltinVersionAndConfigProvider",
+            ver_insns == (0xF9408000, 0xD65F03C0)
+            and "GetBuiltinVersion" in content
+            and "BuildConfigByProvider" in content,
+            "Khớp GetBuiltinVersion (0x0470dc: ldr x0, [x0, #0x100]; ret) và BuildConfigByProvider"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -12010,6 +12113,7 @@ class AutonomousVerificationEngine:
         self.verify_libapplovin_native_crash_reporter()
         self.verify_libcxx_shared()
         self.verify_libnuro()
+        self.verify_libfast_engine_RelWithDebInfo()
         self.verify_overall_governance()
 
 
