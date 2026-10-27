@@ -12892,6 +12892,90 @@ class AutonomousVerificationEngine:
             "Khớp thuật toán ước lượng RTT RFC 9002, BBR Pacing Rate và 5 FDE shards (19,032 FDEs)"
         )
 
+    def verify_libshadowhook_nothing(self):
+        import hashlib, struct
+        print("\n[123] Đang kiểm chứng libshadowhook_nothing.so (ByteDance ShadowHook Bionic linker64 soinfo Probe Dummy ELF64)...")
+        sh_dir = GIAIMA_DIR / "libshadowhook_nothing"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libshadowhook_nothing.so"
+
+        files = [
+            "shadowhook_nothing_types.h",
+            "shadowhook_nothing_core.h",
+            "shadowhook_nothing_core.cpp",
+            "shadowhook_nothing_soinfo_probe.cpp",
+            "shadowhook_nothing_elf_image.cpp",
+        ]
+        all_exist = all((sh_dir / f).exists() for f in files)
+        total_size = sum((sh_dir / f).stat().st_size for f in files if (sh_dir / f).exists())
+        no_old_stubs = not (sh_dir / "shadowhook_nothing_interface.h").exists() and not (sh_dir / "shadowhook_nothing_pseudocode.cpp").exists()
+        self.assert_test(
+            "ShadowHookNothing_SourceVolumeAndNoStubs",
+            all_exist and total_size > 40000 and no_old_stubs,
+            f"Đầy đủ 5 file C++17/H libshadowhook_nothing ({total_size:,} bytes > 40 KB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        e_phoff, e_shoff = struct.unpack_from("<QQ", so_bytes, 0x0020)
+        e_phnum, e_shentsize, e_shnum = struct.unpack_from("<HHH", so_bytes, 0x0038)
+        self.assert_test(
+            "ShadowHookNothing_BinarySha256AndElf64Ehdr",
+            len(so_bytes) == 1112
+            and sha256_hex == "f2cc6a6f94d7361be915daafff1d25b7b3af34972e7308ac540982cfd608bd32"
+            and e_phoff == 0x40 and e_shoff == 0x298 and e_phnum == 6 and e_shnum == 7,
+            f"Khớp kích thước 1,112 bytes, SHA-256 ({sha256_hex[:16]}...) và Elf64_Ehdr (e_phoff=0x40, e_shoff=0x298, e_phnum=6, e_shnum=7)"
+        )
+
+        content = ""
+        for f in files:
+            fp = sh_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. .dynsym (0x0190..0x01a8), .hash (0x01a8..0x01b8: nbucket=1, nchain=1) & .dynstr (0x01b8..0x01d2)
+        nbucket, nchain, bucket0, chain0 = struct.unpack_from("<4I", so_bytes, 0x01a8)
+        dynstr = so_bytes[0x01b8:0x01d2]
+        self.assert_test(
+            "ShadowHookNothing_DynsymSysvHashAndDynstr",
+            nbucket == 1 and nchain == 1 and bucket0 == 0 and chain0 == 0
+            and dynstr == b"\x00libshadowhook_nothing.so\x00"
+            and "ComputeElfSysvHash" in content,
+            "Khớp bảng băm .hash SysV (0x01a8: nbucket=1, nchain=1), .dynstr (0x01b8: libshadowhook_nothing.so) và hàm ComputeElfSysvHash"
+        )
+
+        # 4. .dynamic 9 Entries (0x01d8..0x0268, vaddr 0x41d8)
+        dyn0_tag, dyn0_val = struct.unpack_from("<qQ", so_bytes, 0x01d8)
+        dyn1_tag, dyn1_val = struct.unpack_from("<qQ", so_bytes, 0x01e8)
+        dyn2_tag, dyn2_val = struct.unpack_from("<qQ", so_bytes, 0x01f8)
+        dyn3_tag, dyn3_val = struct.unpack_from("<qQ", so_bytes, 0x0208)
+        self.assert_test(
+            "ShadowHookNothing_DynamicSection9Entries",
+            dyn0_tag == 0x0e and dyn0_val == 1
+            and dyn1_tag == 0x1e and dyn1_val == 8
+            and dyn2_tag == 0x6ffffffb and dyn2_val == 1
+            and dyn3_tag == 6 and dyn3_val == 0x190
+            and "VerifyDynamicSection9Entries" in content,
+            "Khớp 9 mục Elf64_Dyn tại 0x01d8 (vaddr 0x41d8: DT_SONAME=1, DT_FLAGS=8, DT_FLAGS_1=1, DT_SYMTAB=0x190)"
+        )
+
+        # 5. Bionic linker64 `soinfo` Offset Probe Engine
+        self.assert_test(
+            "ShadowHookNothing_BionicSoinfoLayoutProbe",
+            "ProbeBionicSoinfoLayout" in content
+            and "ShadowhookSoinfoOffsets" in content
+            and "kVaddrDynamic  = 0x0041D8" in content,
+            "Khớp thuật toán dò offset cấu trúc `soinfo` của Bionic linker64 (ProbeBionicSoinfoLayout: phdr, dynamic, strtab, symtab, load_bias)"
+        )
+
+        # 6. Complete 139-Word (1,112-Byte) ELF64 Forensic Dissector & Image
+        self.assert_test(
+            "ShadowHookNothing_139WordsAndExactElfImage",
+            "ExecuteElf64WordForensicScan" in content
+            and "GetExactElf64Image" in content
+            and "verify_elf64_word_138_off_0x0450" in content,
+            "Khớp bộ giải phẫu 139 từ 64-bit (0x0000..0x0458) và ảnh nhị phân 1,112 byte chuẩn xác"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -13019,6 +13103,7 @@ class AutonomousVerificationEngine:
         self.verify_liblynx()
         self.verify_libpreload()
         self.verify_libsscronet()
+        self.verify_libshadowhook_nothing()
         self.verify_overall_governance()
 
 

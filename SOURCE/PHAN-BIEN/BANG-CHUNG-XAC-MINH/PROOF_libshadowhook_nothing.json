@@ -1,0 +1,44 @@
+{
+  "library": "libshadowhook_nothing.so",
+  "task_id": "TASK-162-RECONSTRUCTION-LIBSHADOWHOOK-NOTHING",
+  "so_task_id": "TASK_SO_066_libshadowhook_nothing",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size": 1112,
+  "sha256": "f2cc6a6f94d7361be915daafff1d25b7b3af34972e7308ac540982cfd608bd32",
+  "reconstructed_cpp_bytes": 96778,
+  "reconstructed_files": [
+    "shadowhook_nothing_types.h",
+    "shadowhook_nothing_core.h",
+    "shadowhook_nothing_core.cpp",
+    "shadowhook_nothing_soinfo_probe.cpp",
+    "shadowhook_nothing_elf_image.cpp"
+  ],
+  "stub_count": 0,
+  "elf64_forensic_evidence": [
+    {
+      "offset": "0x0000",
+      "size": 64,
+      "desc": "Elf64_Ehdr (EM_AARCH64=183, e_phoff=0x40, e_shoff=0x298, e_phnum=5, e_shnum=7)"
+    },
+    {
+      "offset": "0x0190",
+      "size": 24,
+      "desc": ".dynsym[0] STN_UNDEF (24 zero bytes)"
+    },
+    {
+      "offset": "0x01a8",
+      "size": 16,
+      "desc": ".hash SysV table (nbucket=1, nchain=1, bucket[0]=0, chain[0]=0)"
+    },
+    {
+      "offset": "0x01b8",
+      "size": 26,
+      "desc": ".dynstr ('\\x00libshadowhook_nothing.so\\x00')"
+    },
+    {
+      "offset": "0x01d8",
+      "size": 144,
+      "desc": ".dynamic (vaddr 0x41d8): 9 Elf64_Dyn entries (DT_SONAME=1, DT_FLAGS=8, DT_FLAGS_1=1, DT_SYMTAB=0x190, DT_SYMENT=24, DT_STRTAB=0x1b8, DT_STRSZ=26, DT_HASH=0x1a8, DT_NULL=0)"
+    }
+  ]
+}

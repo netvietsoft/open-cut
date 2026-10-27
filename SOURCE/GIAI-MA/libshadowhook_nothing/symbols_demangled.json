@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "name": "_ELF64_EHDR_SHADOWHOOK_NOTHING",
+    "demangled": "Elf64_Ehdr (0x000000..0x000040, e_phoff=0x40, e_shoff=0x298, e_phnum=5, e_shnum=7)",
+    "address": "0x000000",
+    "size": 64
+  },
+  {
+    "name": "_ELF64_PHDR_TABLE_SHADOWHOOK_NOTHING",
+    "demangled": "Elf64_Phdr[5] (0x000040..0x000158: PT_PHDR, PT_LOAD R, PT_LOAD RW, PT_DYNAMIC @ 0x41d8, PT_GNU_STACK)",
+    "address": "0x000040",
+    "size": 280
+  },
+  {
+    "name": "_DYNSYM_STN_UNDEF",
+    "demangled": ".dynsym[0] STN_UNDEF (0x000190..0x0001a8, 24 bytes)",
+    "address": "0x000190",
+    "size": 24
+  },
+  {
+    "name": "_SYSV_HASH_TABLE",
+    "demangled": ".hash SysV Hash Table (0x0001a8..0x0001b8: nbucket=1, nchain=1, bucket[0]=0, chain[0]=0)",
+    "address": "0x0001a8",
+    "size": 16
+  },
+  {
+    "name": "_DYNSTR_SONAME",
+    "demangled": ".dynstr String Table (0x0001b8..0x0001d2: '\\x00libshadowhook_nothing.so\\x00')",
+    "address": "0x0001b8",
+    "size": 26
+  },
+  {
+    "name": "_DYNAMIC_DT_SONAME_FLAGS",
+    "demangled": ".dynamic[0..2] (0x0041d8 / off 0x01d8: DT_SONAME=1, DT_FLAGS=0x8 DF_BIND_NOW, DT_FLAGS_1=0x1 DF_1_NOW)",
+    "address": "0x0041d8",
+    "size": 48
+  },
+  {
+    "name": "_DYNAMIC_DT_SYMTAB_STRTAB_HASH",
+    "demangled": ".dynamic[3..8] (0x004208 / off 0x0208: DT_SYMTAB=0x190, DT_SYMENT=24, DT_STRTAB=0x1b8, DT_STRSZ=26, DT_HASH=0x1a8, DT_NULL=0)",
+    "address": "0x004208",
+    "size": 96
+  },
+  {
+    "name": "_SHSTRTAB_SECTION_NAMES",
+    "demangled": ".shstrtab (0x000268..0x000298, 48 bytes)",
+    "address": "0x000268",
+    "size": 48
+  },
+  {
+    "name": "_ELF64_SHDR_TABLE_SHADOWHOOK_NOTHING",
+    "demangled": "Elf64_Shdr[7] (0x000298..0x000458, 448 bytes)",
+    "address": "0x000298",
+    "size": 448
+  }
+]
