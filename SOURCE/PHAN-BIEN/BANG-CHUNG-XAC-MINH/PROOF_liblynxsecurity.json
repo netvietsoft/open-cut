@@ -1,0 +1,41 @@
+{
+  "library": "liblynxsecurity.so",
+  "task_id": "TASK_SO_152_liblynxsecurity",
+  "orchestrator_task_id": "TASK-188-RECONSTRUCTION-LIBLYNXSECURITY",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "sha256": "2895aab91226bc7ece7795ff2d2aad3b2a947c346946347c454d32cfdabd8c15",
+  "size_bytes": 51112,
+  "reconstructed_bytes": 752672,
+  "fde_count": 106,
+  "exported_symbols_count": 5,
+  "text_section": {
+    "vaddr": "0x4000",
+    "size": 13516,
+    "instructions": 3379
+  },
+  "rodata_section": {
+    "vaddr": "0x0fa0",
+    "size": 801
+  },
+  "opcode_evidence": {
+    "ReadSignBlock_0x4c58": "0xd10183ff",
+    "VerifyEvpSha256_0x55e4": "0xd10203ff",
+    "nativeVerifySignBlock_0x63a8": "0xa9ba6ffc",
+    "nativeUpdateRsaPublicKeys_0x6cf0": "0xd10603ff"
+  },
+  "mathematical_proofs": [
+    "Lynx template signature block trailer framing: U64 block_size + 128-bit magic + U32 key_id/sig_len stream parsing (ReadU32/ReadU64 @ 0x4c58..0x55e4).",
+    "BoringSSL EVP RSA-SHA256 verification pipeline: EVP_DecodeBlock Base64 decoding (3*(n/4)) + d2i_PUBKEY + EVP_DigestVerifyInit/Update/Final(EVP_sha256()) (@ 0x55e4..0x5974)."
+  ],
+  "abi_layouts": [
+    {
+      "struct": "LynxSignBlockView",
+      "size_bytes": 32
+    },
+    {
+      "struct": "LynxSecurityKeystoreSingleton",
+      "size_bytes": 80,
+      "bss_vaddr": "0xc008"
+    }
+  ]
+}

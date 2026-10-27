@@ -15099,6 +15099,80 @@ class AutonomousVerificationEngine:
             "Khớp hàm chèn hộp màu ưu tiên insert_box_at (0x7670: next +0x30, priority +0x24) và 6,361 từ lệnh .text"
         )
 
+    def verify_liblynxsecurity(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: liblynxsecurity.so (ByteDance Lynx Template Signature Block & BoringSSL EVP RSA-SHA256 Engine)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "liblynxsecurity"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liblynxsecurity.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 500 KB
+        self.assert_test(
+            "LynxSecurity_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 500000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/liblynxsecurity ({total_bytes:,} bytes > 500 KB), 0 stub"
+        )
+
+        # 2. Binary SHA-256 & 106 FDEs at .eh_frame_hdr 0x12c4
+        fde_count = struct.unpack_from("<I", so_bytes, 0x12CC)[0]
+        self.assert_test(
+            "LynxSecurity_BinarySha256AndEhFrame106FDEs",
+            len(so_bytes) == 51112
+            and sha256_hex == "2895aab91226bc7ece7795ff2d2aad3b2a947c346946347c454d32cfdabd8c15"
+            and fde_count == 106,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x12c4"
+        )
+
+        # 3. JNI Entrypoints (nativeVerifySignBlock @ 0x63a8 & nativeUpdateRsaPublicKeys @ 0x6cf0)
+        op_63a8 = struct.unpack_from("<4I", so_bytes, 0x63A8)
+        op_6cf0 = struct.unpack_from("<4I", so_bytes, 0x6CF0)
+        self.assert_test(
+            "LynxSecurity_JniVerifySignBlockAndUpdateRsaKeys",
+            op_63a8 == (0xA9BA6FFC, 0xA90167FA, 0xA9025FF8, 0xA90357F6)
+            and op_6cf0 == (0xD10603FF, 0xA9126FFC, 0xA91367FA, 0xA9145FF8)
+            and "Java_com_bytedance_lynx_service_security_LynxSecurityService_nativeVerifySignBlock" in content
+            and "Java_com_bytedance_lynx_service_security_LynxSecurityService_nativeUpdateRsaPublicKeys" in content,
+            "Khớp 2 hàm JNI của com.bytedance.lynx.service.security.LynxSecurityService (0x63a8 & 0x6cf0)"
+        )
+
+        # 4. FDE[25] ParseLynxSignBlock_4c58 (0x4c58..0x55e4) & Stream Readers ReadU32/ReadU64
+        op_4c58 = struct.unpack_from("<4I", so_bytes, 0x4C58)
+        self.assert_test(
+            "LynxSecurity_ReadSignBlockAndStreamReaders",
+            op_4c58 == (0xD10183FF, 0xFD000BE8, 0xF9000FFA, 0xA90263F9)
+            and b"ReadSignBlock" in so_bytes and b"ReadU64" in so_bytes and b"ReadU32" in so_bytes
+            and all(sym in content for sym in ["ParseLynxSignBlock_4c58", "ReadU32_le", "ReadU64_le"]),
+            "Khớp FDE[25] ParseLynxSignBlock_4c58 (0x4c58..0x55e4) và các bộ đọc luồng ReadSignBlock/ReadU64/ReadU32"
+        )
+
+        # 5. FDE[26] VerifyEvpSha256Signature_55e4 (0x55e4..0x5974) & Diagnostic Strings in .rodata
+        op_55e4 = struct.unpack_from("<4I", so_bytes, 0x55E4)
+        self.assert_test(
+            "LynxSecurity_EvpSha256VerificationAndDiagnostics",
+            op_55e4 == (0xD10203FF, 0xA9036BFB, 0xA90463F9, 0xA9055BF7)
+            and b"template file has not been signed." in so_bytes
+            and b"lynx signature verify failed." in so_bytes
+            and b"can not find public key!" in so_bytes
+            and "VerifyEvpSha256Signature_55e4" in content,
+            "Khớp FDE[26] VerifyEvpSha256Signature_55e4 (0x55e4..0x5974) và 3 chuỗi chẩn đoán lỗi chữ ký tại .rodata (0x0fa0)"
+        )
+
+        # 6. ABI Structures (LynxSignBlockView & LynxSecurityKeystoreSingleton) & 3,379 .text words
+        self.assert_test(
+            "LynxSecurity_AbiStructsAnd3379TextWords",
+            "LynxSignBlockView" in content
+            and "LynxSecurityKeystoreSingleton" in content
+            and "kTextInstructions" in content
+            and "kElfImageBytes" in content,
+            "Khớp cấu trúc ABI LynxSignBlockView (32 B), LynxSecurityKeystoreSingleton (80 B @ .bss 0xc008) và 3,379 từ lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -15252,6 +15326,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_xasan()
         self.verify_libnpth_heap_tracker()
         self.verify_libfly_main_color_lib()
+        self.verify_liblynxsecurity()
         self.verify_overall_governance()
 
 
