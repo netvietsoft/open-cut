@@ -2693,3 +2693,5 @@
 - **[2026-10-27 23:43] TASK-197 (`libnpth.so` — 158/169)**: Hoàn tất C++17 phòng sạch `3,627,997 bytes` (`npth.hpp`, `npth_core.cpp`, `npth_elf_sections_and_image.cpp`), khớp 423 FDEs và 26,272 từ lệnh `.text`. Đạt 983/983 PASS, 158/169 VERIFIED_AND_ACCEPTED.
 
 - **[2026-10-27 23:47] TASK-198 (`libyuv.so` — 159/169)**: Hoàn tất C++17 phòng sạch `4,625,651 bytes` (`yuv.hpp`, `yuv_core.cpp`, `yuv_elf_sections_and_image.cpp`), khớp 1,063 FDEs và 26,105 từ lệnh `.text`. Đạt 989/989 PASS, 159/169 VERIFIED_AND_ACCEPTED.
+
+- **[2026-10-27 23:51] TASK-199 (`libenvguard.so` — 160/169)**: Hoàn tất C++17 phòng sạch `2,755,966 bytes` (`envguard.hpp`, `envguard_core.cpp`, `envguard_elf_sections_and_image.cpp`), khớp 123 FDEs và 11,656 từ lệnh `.text`. Đạt 995/995 PASS, 160/169 VERIFIED_AND_ACCEPTED.

@@ -1,0 +1,29 @@
+{
+  "task_id": "TASK-199-RECONSTRUCTION-LIBENVGUARD",
+  "legacy_task_id": "TASK_SO_124_libenvguard",
+  "title": "Clean-Room C++17 Reconstruction of libenvguard.so (Target 160/169)",
+  "assigned_agent": "Agent 3 (Android/Native C++17)",
+  "reviewer_agent": "Agent 13 (Adversary Auditor)",
+  "status": "DONE",
+  "created_at": "2026-10-27T23:48:00+07:00",
+  "target_library": "libenvguard.so",
+  "target_sha256": "1e54f59bf1e158d86d01c2b5ebd5938950f2cc03981b7d1286302fddcab2bce5",
+  "target_size_bytes": 224680,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libenvguard/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libenvguard.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_124_libenvguard.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    "Docs/Changelog/CHANGELOG.md"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of 123 FDEs (.eh_frame_hdr @ 0x27ce4) and 11,656 AArch64 .text instructions (0x28cec..0x3430c) in bilingual C++17.",
+    "Reconstruct ByteDance EnvGuard Runtime Environment Attestation & ELF Integrity Inspector (JNI_OnLoad @ 0x28d3c, 136,340-byte .rodata @ 0x6850).",
+    "Zero stubs, total C++17 size > 40 KB, pass adversary_critic_agent.py, verify_reconstruction_suite.py, and native_audit_watchdog.py."
+  ],
+  "completed_at": "2026-10-27T23:51:00+07:00"
+}

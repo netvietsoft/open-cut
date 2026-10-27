@@ -1,0 +1,24 @@
+{
+  "library": "libenvguard.so",
+  "task_id": "TASK-199-RECONSTRUCTION-LIBENVGUARD",
+  "legacy_task_id": "TASK_SO_124_libenvguard",
+  "sha256": "1e54f59bf1e158d86d01c2b5ebd5938950f2cc03981b7d1286302fddcab2bce5",
+  "size_bytes": 224680,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/libenvguard/envguard.hpp",
+    "SOURCE/GIAI-MA/libenvguard/envguard_core.cpp",
+    "SOURCE/GIAI-MA/libenvguard/envguard_elf_sections_and_image.cpp"
+  ],
+  "total_reconstructed_bytes": 2755966,
+  "fde_count": 123,
+  "text_instructions": 11656,
+  "exported_functions": 1,
+  "key_anchors": {
+    "JNI_OnLoad": "0x28d3c (first_op=0xa9be7bfd)",
+    "rodata": "0x06850 (136,340 bytes)",
+    "eh_frame_hdr": "0x27ce4 (123 FDEs)"
+  },
+  "stub_count": 0,
+  "todo_count": 0
+}

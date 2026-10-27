@@ -15945,6 +15945,75 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 160: libenvguard.so (ByteDance EnvGuard Runtime Attestation Engine)
+    # =========================================================================
+    def verify_libenvguard(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libenvguard.so (ByteDance EnvGuard Runtime Attestation Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libenvguard"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libenvguard.so"
+        so_bytes = so_path.read_bytes()
+        import struct
+
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp"))
+        total_size = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate (> 40 KB, 3 C++/Header files, 0 stubs)
+        self.assert_test(
+            "EnvGuard_SourceSizeGate",
+            len(so_bytes) == 224680 and total_size > 40960 and len(cpp_files) == 3,
+            f"Tổng dung lượng C++17 đạt {total_size} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libenvguard.so (224,680 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x27ce4) & 123 FDE entries
+        eh_hdr = so_bytes[0x27CE4:0x27CE8]
+        fde_count = struct.unpack_from("<I", so_bytes, 0x27CEC)[0]
+        self.assert_test(
+            "EnvGuard_EhFrameHdr123Fdes",
+            eh_hdr == b"\x01\x1b\x03\x3b" and fde_count == 123 and "kFdeTable[123]" in content,
+            f"Khớp .eh_frame_hdr tại 0x27ce4 (header={eh_hdr.hex()}, fde_count={fde_count})"
+        )
+
+        # 3. JNI_OnLoad (0x28d3c, first_op=0xa9be7bfd)
+        op_28d3c = struct.unpack_from("<I", so_bytes, 0x28D3C)[0]
+        self.assert_test(
+            "EnvGuard_JniOnLoadEntry",
+            op_28d3c == 0xA9BE7BFD and "JNI_OnLoad" in content,
+            "Khớp điểm nhập JNI_OnLoad (0x28d3c, first_op=0xa9be7bfd)"
+        )
+
+        # 4. .rodata Bytecode VM Tables & Attestation Strings (0x06850, 136,340 bytes)
+        self.assert_test(
+            "EnvGuard_RodataTablesAndStrings",
+            b"envguard" in so_bytes
+            and b"1weis" in so_bytes
+            and "0x06850ULL" in content,
+            "Khớp các chuỗi envguard, 1weis và vùng bảng .rodata (0x06850, 136,340 B)"
+        )
+
+        # 5. VerifyElf64MagicAndMachine & EvaluateEnvGuardProbes
+        self.assert_test(
+            "EnvGuard_Elf64VerifierAndProbeEvaluator",
+            "VerifyElf64MagicAndMachine" in content
+            and "EvaluateEnvGuardProbes" in content
+            and "execute_all_fde_simulations" in content,
+            "Khớp VerifyElf64MagicAndMachine, EvaluateEnvGuardProbes và chuỗi mô phỏng 123 FDE"
+        )
+
+        # 6. ABI Structures (Elf64HeaderCheckView 48 B, EnvGuardContextAbi 40 B) & 11,656 .text words
+        self.assert_test(
+            "EnvGuard_AbiStructsAnd11656TextWords",
+            "Elf64HeaderCheckView" in content
+            and "EnvGuardContextAbi" in content
+            and "kTextInstructions[11656]" in content
+            and "kElfImageBytes[224680]" in content,
+            "Khớp cấu trúc ABI Elf64HeaderCheckView (48 B), EnvGuardContextAbi (40 B) và 11,656 từ lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -16108,6 +16177,7 @@ class AutonomousVerificationEngine:
         self.verify_libbdsword()
         self.verify_libnpth()
         self.verify_libyuv()
+        self.verify_libenvguard()
         self.verify_overall_governance()
 
 

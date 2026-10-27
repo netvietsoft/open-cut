@@ -955,3 +955,5 @@
 - [x] **TASK-197 (`libnpth.so` — Target 158/169)**: Tái tạo C++17 phòng sạch 100% (`3,627,997 bytes` trên 3 tệp, `423` FDEs @ `0x0a898`, `26,272` lệnh `.text`, `JNI_OnLoad` @ `0x10160`, `0` stub), đạt **983/983 PASS (100.0%)**, **158/169 VERIFIED_AND_ACCEPTED (93.49%)**.
 
 - [x] **TASK-198 (`libyuv.so` — Target 159/169)**: Tái tạo C++17 phòng sạch 100% (`4,625,651 bytes` trên 3 tệp, `1,063` FDEs @ `0x26db0`, `26,105` lệnh `.text`, `564` exports, `0` stub), đạt **989/989 PASS (100.0%)**, **159/169 VERIFIED_AND_ACCEPTED (94.08%)**.
+
+- [x] **TASK-199 (`libenvguard.so` — Target 160/169)**: Tái tạo C++17 phòng sạch 100% (`2,755,966 bytes` trên 3 tệp, `123` FDEs @ `0x27ce4`, `11,656` lệnh `.text`, `JNI_OnLoad` @ `0x28d3c`, `0` stub), đạt **995/995 PASS (100.0%)**, **160/169 VERIFIED_AND_ACCEPTED (94.67%)**.
