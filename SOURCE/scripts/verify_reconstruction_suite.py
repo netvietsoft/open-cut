@@ -11801,6 +11801,99 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 112: libnuro.so (Target 112 / 169 — AI Agent ConversationHub & SyncChannel)
+    # =========================================================================
+    def verify_libnuro(self):
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnuro.so (Target 112 / 169)")
+        print("="*70)
+
+        import struct
+        import hashlib
+
+        lib_dir = GIAIMA_DIR / "libnuro"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 40 KB (1,340,881 B across 9 clean-room files, 0 stubs)
+        self.assert_test(
+            "Nuro_SourceSizeAndZeroStubs",
+            total_bytes > 40000
+            and len(cpp_files) == 9
+            and not (lib_dir / "nuro_interface.h").exists()
+            and not (lib_dir / "nuro_pseudocode.cpp").exists()
+            and "execute_fde_shard_1" in content,
+            f"Tổng dung lượng C++17 đạt {total_bytes:,} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. Binary SHA-256 & .eh_frame_hdr @ 0x0b8c58 (1,835 FDEs)
+        so_bytes = (ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnuro.so").read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x0b8c58 + 8)[0]
+        self.assert_test(
+            "Nuro_BinarySha256AndEhFrame1835Fdes",
+            len(so_bytes) == 953040
+            and sha256_hex == "3f62590d84f43083524aa061a54045dc541947328447a446ee253d59b2a160c3"
+            and fde_count == 1835,
+            "Khớp nhị phân libnuro.so (953,040 B, SHA-256 3f62590d..., 1,835 FDEs @ 0x0b8c58)"
+        )
+
+        # 3. ConversationHub::instance() (0x017a64..0x017b48) 0x90 __shared_ptr_emplace & max_load_factor=1.0f
+        hub_alloc = struct.unpack_from("<I", so_bytes, 0x017ac8)[0]
+        hub_mlf = struct.unpack_from("<I", so_bytes, 0x017ad4)[0]
+        hub_str_mlf = struct.unpack_from("<I", so_bytes, 0x017ae4)[0]
+        self.assert_test(
+            "Nuro_ConversationHubInstanceOpcodes",
+            hub_alloc == 0x52801200
+            and hub_mlf == 0x52A7F009
+            and hub_str_mlf == 0xF9004409
+            and "ConversationHub::instance" in content
+            and "max_load_factor(1.0f)" in content,
+            "Khớp ConversationHub::instance (0x017ac8: mov w0, #0x90; 0x017ad4: mov w9, #0x3f800000 @ +0x88)"
+        )
+
+        # 4. FileInfo (0x022610..0x0226fc) & ToolCallResult (0x022ab8..0x022bd0) copy constructors
+        fi_head = struct.unpack_from("<3I", so_bytes, 0x022628)
+        tcr_status = struct.unpack_from("<I", so_bytes, 0x022af8)[0]
+        tcr_has_err = struct.unpack_from("<I", so_bytes, 0x022b0c)[0]
+        self.assert_test(
+            "Nuro_FileInfoAndToolCallResultCopyCtors",
+            fi_head == (0xB8408428, 0x91002014, 0xAA0003F3)
+            and tcr_status == 0xB9404AA8
+            and tcr_has_err == 0x3941A2A8
+            and "FileInfo::FileInfo(const FileInfo& other)" in content
+            and "ToolCallResult::ToolCallResult(const ToolCallResult& other)" in content,
+            "Khớp FileInfo CopyCtor (0x022610: 0x70B) và ToolCallResult CopyCtor (0x022ab8: 0x78B, +0x48 status, +0x68 has_err)"
+        )
+
+        # 5. ToolCall CopyCtor (0x0659f0..0x065bd8) & ConversationInfo MoveAssign (0x073ee0..0x073ffc)
+        tc_compose = struct.unpack_from("<I", so_bytes, 0x065a34)[0]
+        tc_has_patch = struct.unpack_from("<I", so_bytes, 0x065a48)[0]
+        ci_ctime = struct.unpack_from("<2I", so_bytes, 0x073fe4)
+        self.assert_test(
+            "Nuro_ToolCallCopyAndConversationInfoMove",
+            tc_compose == 0xB9404AC8
+            and tc_has_patch == 0x3941A2C8
+            and ci_ctime == (0xF9402688, 0xF9002668)
+            and "ToolCall::ToolCall(const ToolCall& other)" in content
+            and "ConversationInfo::operator=(ConversationInfo&& other)" in content,
+            "Khớp ToolCall CopyCtor (0x0659f0: 0x90B) và ConversationInfo::operator= (0x073ee0: 0x50B, +0x48 create_time)"
+        )
+
+        # 6. SyncChannel::create (0x07c7b4..0x07c87c) & ILogger::registerHandler/setLogLevel (0x02d43c/0x02d658)
+        sync_alloc = struct.unpack_from("<I", so_bytes, 0x07c820)[0]
+        log_guard = struct.unpack_from("<3I", so_bytes, 0x02d448)
+        self.assert_test(
+            "Nuro_SyncChannelCreateAndILoggerSingleton",
+            sync_alloc == 0x52801500
+            and log_guard == (0xF00005E8, 0x910CE108, 0x08DFFD08)
+            and "SyncChannel::create" in content
+            and "ILogger::registerHandler" in content,
+            "Khớp SyncChannel::create (0x07c820: mov w0, #0xa8) và ILogger::registerHandler (0x02d448: ldarb guard @ 0x0ec338)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -11916,6 +12009,7 @@ class AutonomousVerificationEngine:
         self.verify_librex()
         self.verify_libapplovin_native_crash_reporter()
         self.verify_libcxx_shared()
+        self.verify_libnuro()
         self.verify_overall_governance()
 
 

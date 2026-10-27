@@ -1,18 +1,12 @@
 {
-  "report_id": "REPORT_TASK_SO_095_libnuro",
   "task_id": "TASK_SO_095_libnuro",
-  "target_library": "libnuro.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 350,
-    "jni_exports": 62,
-    "cxx_demangled_count": 203,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libnuro",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "orchestrator_task_id": "TASK-151-RECONSTRUCTION-LIBNURO",
+  "library": "libnuro.so",
+  "status": "COMPLETED_VERIFIED",
+  "binary_size_bytes": 953040,
+  "binary_sha256": "3f62590d84f43083524aa061a54045dc541947328447a446ee253d59b2a160c3",
+  "cpp17_reconstruction_bytes": 1340881,
+  "fde_count": 1835,
+  "exported_symbols": 176,
+  "stub_count": 0
 }

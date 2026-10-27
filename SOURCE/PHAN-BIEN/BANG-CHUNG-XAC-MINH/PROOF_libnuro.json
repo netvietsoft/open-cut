@@ -1,0 +1,69 @@
+{
+  "task_id": "TASK_SO_095_libnuro",
+  "Orchestrator_Task_ID": "TASK-151-RECONSTRUCTION-LIBNURO",
+  "library": "libnuro.so",
+  "binary_path": "SOURCE/apktool-res/lib/arm64-v8a/libnuro.so",
+  "binary_size_bytes": 953040,
+  "binary_sha256": "3f62590d84f43083524aa061a54045dc541947328447a446ee253d59b2a160c3",
+  "reconstruction_dir": "SOURCE/GIAI-MA/libnuro",
+  "reconstructed_files": [
+    "nuro_types.h",
+    "nuro_core.h",
+    "nuro_core.cpp",
+    "nuro_jni_and_sync.cpp",
+    "nuro_fde_shard_1.cpp",
+    "nuro_fde_shard_2.cpp",
+    "nuro_fde_shard_3.cpp",
+    "nuro_fde_shard_4.cpp",
+    "nuro_fde_shard_5.cpp"
+  ],
+  "reconstructed_cpp_bytes": 1340881,
+  "fde_count": 1835,
+  "eh_frame_hdr_va": "0x0b8c58",
+  "exported_symbols_count": 176,
+  "init_array_count": 117,
+  "stub_count": 0,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "opcode_evidence": [
+    {
+      "symbol": "nuro::ConversationHub::instance()",
+      "va_range": "0x017a64..0x017b48",
+      "opcodes": [
+        "0x017a7c: 08DFFD08 ldarb w8, [x8]",
+        "0x017ac8: 52801200 mov w0, #0x90",
+        "0x017ad4: 52A7F009 mov w9, #0x3f800000",
+        "0x017ae4: F9004409 str x9, [x0, #0x88]",
+        "0x017b1c: A900028A stp x10, x0, [x20]"
+      ]
+    },
+    {
+      "symbol": "nuro::FileInfo::FileInfo(const FileInfo&)",
+      "va_range": "0x022610..0x0226fc",
+      "opcodes": [
+        "0x022628: B8408428 ldr w8, [x1], #8",
+        "0x022640: B94022C8 ldr w8, [x22, #0x20]",
+        "0x022658: 91010277 add x23, x19, #0x40",
+        "0x022668: 91016260 add x0, x19, #0x58"
+      ]
+    },
+    {
+      "symbol": "nuro::ConversationInfo::operator=(ConversationInfo&&)",
+      "va_range": "0x073ee0..0x073ffc",
+      "opcodes": [
+        "0x073f2c: 3DC00280 ldr q0, [x20]",
+        "0x073f7c: 3DC002A0 ldr q0, [x21]",
+        "0x073fcc: 3DC002A0 ldr q0, [x21]",
+        "0x073fe4: F9402688 ldr x8, [x20, #0x48]"
+      ]
+    },
+    {
+      "symbol": "nuro::SyncChannel::create(const SyncChannelOptions&)",
+      "va_range": "0x07c7b4..0x07c87c",
+      "opcodes": [
+        "0x07c820: 52801500 mov w0, #0xa8",
+        "0x07c84c: F8018688 str x8, [x20], #0x18",
+        "0x07c858: 9400004B bl #0x7c984"
+      ]
+    }
+  ]
+}
