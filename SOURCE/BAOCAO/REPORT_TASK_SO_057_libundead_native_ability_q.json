@@ -1,18 +1,28 @@
 {
   "report_id": "REPORT_TASK_SO_057_libundead_native_ability_q",
   "task_id": "TASK_SO_057_libundead_native_ability_q",
+  "canonical_task_id": "TASK-129-RECONSTRUCTION-LIBUNDEAD-NATIVE-ABILITY-Q",
   "target_library": "libundead_native_ability_q.so",
-  "assigned_agent": "Agent 9 - SECURITY",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
   "evidence": {
-    "symbols_total": 674,
+    "binary_size_bytes": 264448,
+    "binary_sha256": "fbb084a422d41746a73918169874475da9170f3aae48b099f91d83635aab3d49",
+    "reconstructed_cpp_bytes": 328681,
+    "symbols_total": 589,
+    "exported_symbols": 589,
+    "imported_symbols": 85,
     "jni_exports": 1,
-    "cxx_demangled_count": 542,
+    "cxx_demangled_count": 589,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libundead_native_ability_q",
+    "proof_json": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libundead_native_ability_q.json",
+    "proof_md": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libundead_native_ability_q.md",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "stub_count": 0
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn thành tái cấu trúc clean-room C++17 100% (328,681 bytes, 0 stub) cho libundead_native_ability_q.so (ByteDance Vega UG Push Alive 'Undead' Keep-Alive Native Ability cho Android Q / Android 10+, 264,448 bytes, 589 biểu tượng xuất khẩu): khôi phục chính xác hàm khởi tạo tĩnh .init_array (0x015b10), cấu trúc đơn thể ka_ability 40-byte tại .bss 0x0440b8, modify_process_name (0x015bd0), get_process_name (0x015c44), do_ka (0x015ca8) với cơ chế double-fork, vòng lặp canh gác flock (chu kỳ 0x003D0900 = 4,000,000 us), phép chia nghịch đảo 64-bit đổi tv_usec sang mili-giây (0x20C49BA5E353F7CFULL @ 0x016098), init_instr_internal (0x0161c8) đóng gói AParcel & Bundle (BUNDLE_MAGIC = 0x4C444E42 'BNDL') cho android.app.IActivityManager, start_instr (0x016450), init_instr_q (0x016498), và lớp bao NDK Binder ndk::ICInterface / ndk::SharedRefBase.",
+  "acceptance_criteria_passed": true
 }

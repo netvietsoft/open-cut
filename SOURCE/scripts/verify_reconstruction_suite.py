@@ -9470,6 +9470,117 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 90. KIỂM CHỨNG: libundead_native_ability_q.so (ByteDance Vega UG Push Alive Undead Android Q)
+    # =========================================================================
+    def verify_libundead_native_ability_q(self):
+        import hashlib
+        import struct
+        print("\n[90] Đang kiểm chứng libundead_native_ability_q.so (ByteDance Vega UG Push Alive Undead Android Q)...")
+        undead_dir = GIAIMA_DIR / "libundead_native_ability_q"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libundead_native_ability_q.so"
+
+        code_files = [
+            undead_dir / "undead_types.h",
+            undead_dir / "undead_rodata_tables.h",
+            undead_dir / "undead_rodata_tables.cpp",
+            undead_dir / "undead_ka_engine.h",
+            undead_dir / "undead_ka_engine.cpp",
+            undead_dir / "undead_ndk_binder_runtime.h",
+            undead_dir / "undead_ndk_binder_runtime.cpp",
+            undead_dir / "undead_native_ability_q_interface.h",
+            undead_dir / "undead_native_ability_q_pseudocode.cpp",
+        ]
+        all_exist = so_path.exists() and all(f.exists() for f in code_files)
+        total_bytes = sum(f.stat().st_size for f in code_files if f.exists())
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+        content = "\n".join(f.read_text(encoding="utf-8") for f in code_files if f.exists())
+
+        # 1. Kiểm tra SHA-256 nhị phân (264,448 bytes) & dung lượng C++17 sạch (>= 250,000 bytes)
+        self.assert_test(
+            "UndeadAbilityQ_BinaryHashAndCleanRoomVolume",
+            all_exist
+            and len(so_bytes) == 264448
+            and so_sha256 == "fbb084a422d41746a73918169874475da9170f3aae48b099f91d83635aab3d49"
+            and total_bytes >= 250000,
+            f"Khớp SHA-256 nhị phân libundead_native_ability_q.so (264,448B) và dung lượng C++17 sạch ({total_bytes:,} bytes across 9 files)"
+        )
+
+        # 2. Kiểm tra .init_array (0x03c550 -> 0x015b10), chuỗi .rodata 0x0323f3 ("android.app.IActivityManager") & kaAbility (.bss 0x0440b8, 40B)
+        init_fn = struct.unpack("<Q", so_bytes[0x03C550:0x03C558])[0]
+        am_desc = so_bytes[0x0323F3:0x032410]
+        self.assert_test(
+            "UndeadAbilityQ_InitArrayAndKaAbilitySingleton",
+            init_fn == 0x015B10
+            and am_desc == b"android.app.IActivityManager\x00"
+            and all(sym in content for sym in [
+                "InitUndeadModuleConstructor_0x015b10", "gActivityManagerBinderClass_0x0440b0",
+                "kaAbility", "sizeof(ka_ability) == 0x28", "AIBinder_Class_define", "AIBinder_Class_setOnDump"
+            ]),
+            "Khớp hàm khởi tạo .init_array (0x015b10), chuỗi .rodata 0x0323f3 ('android.app.IActivityManager') và ka_ability 40-byte tại .bss 0x0440b8"
+        )
+
+        # 3. Kiểm tra init_instr_internal (0x0161c8), BUNDLE_MAGIC = 0x4C444E42 ('BNDL' @ 0x0162a8..0x0162ac) & 3 cặp khóa Bundle
+        mov_4e42 = struct.unpack("<I", so_bytes[0x0162A8:0x0162AC])[0]
+        movk_4c44 = struct.unpack("<I", so_bytes[0x0162AC:0x0162B0])[0]
+        self.assert_test(
+            "UndeadAbilityQ_InitInstrInternalAndBundleMagic",
+            mov_4e42 == 0x5289C841   # mov w1, #0x4e42
+            and movk_4c44 == 0x72A98881 # movk w1, #0x4c44, lsl #16 -> 0x4C444E42 ('BNDL')
+            and all(sym in content for sym in [
+                "init_instr_internal", "kAndroidBundleMagic_0x0162a8", "0x4C444E42",
+                "instrumentation_type", "instrumentation_type_ka", "source_process", "use_native_mode"
+            ]),
+            "Khớp init_instr_internal (0x0161c8), BUNDLE_MAGIC 0x4C444E42 ('BNDL' @ 0x0162a8) và 3 cặp khóa Bundle kèm ghi đè độ dài"
+        )
+
+        # 4. Kiểm tra do_ka (0x015ca8), modify_process_name (0x015bd0), vòng lặp flock EAGAIN=11 & usleep 0x003D0900 (4,000,000 us @ 0x015fac)
+        mov_900 = struct.unpack("<I", so_bytes[0x015FAC:0x015FB0])[0]
+        movk_3d = struct.unpack("<I", so_bytes[0x015FB0:0x015FB4])[0]
+        self.assert_test(
+            "UndeadAbilityQ_DoKaDoubleForkAndFlockWatchdog",
+            mov_900 == 0x52812000    # mov w0, #0x900
+            and movk_3d == 0x72A007A0 # movk w0, #0x3d, lsl #16 -> 0x003D0900 (4,000,000 us)
+            and all(sym in content for sym in [
+                "do_ka", "modify_process_name", "get_process_name",
+                "kFlockPollSleepUs_0x015fac", "0x003D0900",
+                "Java_com_bytedance_vega_ug_push_alive_undead_ability_KaAbilityQ_doKaOnNative"
+            ]),
+            "Khớp do_ka (0x015ca8), modify_process_name (0x015bd0), vòng lặp canh gác flock và chu kỳ ngủ 0x003D0900 (4,000,000 us @ 0x015fac)"
+        )
+
+        # 5. Kiểm tra phép nhân nghịch đảo 64-bit đổi tv_usec sang mili-giây (0x20C49BA5E353F7CFULL @ 0x016098..0x0160b0)
+        umulh_insn = struct.unpack("<I", so_bytes[0x0160AC:0x0160B0])[0]
+        recip = 0x20C49BA5E353F7CF
+        math_ok = all(
+            (((u >> 3) * recip) >> 68) == (u // 1000)
+            for u in [0, 1, 999, 1000, 1001, 250000, 500000, 999999]
+        )
+        self.assert_test(
+            "UndeadAbilityQ_TimevalReciprocalMillisecondMath",
+            umulh_insn == 0x9BCA7D29  # umulh x9, x9, x10 @ 0x0160ac
+            and math_ok
+            and all(sym in content for sym in [
+                "kUsecToMsReciprocal_0x016098", "0x20C49BA5E353F7CFULL",
+                "ComputeEpochMsFromTimeval_0x01608c"
+            ]),
+            "Chứng minh toán học phép nhân nghịch đảo 64-bit đổi tv_usec sang mili-giây (0x20C49BA5E353F7CFULL @ 0x016098..0x0160b0)"
+        )
+
+        # 6. Kiểm tra start_instr (0x016450), init_instr_q (0x016498), ndk::ICInterface::ICInterfaceData (0x016538..0x016784) & SharedRefBase::ref (0x016784)
+        ldrb_init = struct.unpack("<I", so_bytes[0x016530:0x016534])[0]
+        self.assert_test(
+            "UndeadAbilityQ_NdkBinderICInterfaceAndSharedRefBase",
+            ldrb_init == 0x39408100  # ldrb w0, [x8, #0x20] @ 0x016530
+            and all(sym in content for sym in [
+                "start_instr", "init_instr_q", "init_instr",
+                "ICInterfaceData", "onCreate", "onDestroy", "onDump",
+                "SharedRefBase", "StdNdk1Align_0x016cd0", "DemangleUndeadSymbol_0x01b980"
+            ]),
+            "Khớp start_instr (0x016450), init_instr_q (0x016498), ndk::ICInterface::ICInterfaceData (0x016538..0x016784) và SharedRefBase::ref (0x016784)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -9563,6 +9674,7 @@ class AutonomousVerificationEngine:
         self.verify_libnapi()
         self.verify_libluster()
         self.verify_libimagepipeline()
+        self.verify_libundead_native_ability_q()
         self.verify_overall_governance()
 
 

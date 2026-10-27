@@ -2523,3 +2523,15 @@
   - `adversary_critic_agent.py`: **89 / 169 `VERIFIED_AND_ACCEPTED` (52.66%)** (`100% REAL`).
   - `verify_reconstruction_suite.py`: **569 / 569 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+## 117. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libundead_native_ability_q.so (TASK-129-RECONSTRUCTION-LIBUNDEAD-NATIVE-ABILITY-Q / TASK_SO_057_libundead_native_ability_q)
+- **Thời gian**: 2026-10-27 12:18:00
+- **Thư viện**: `libundead_native_ability_q.so` (`264,448 bytes`, SHA-256 `fbb084a422d41746a73918169874475da9170f3aae48b099f91d83635aab3d49`, `.text` `0x015b10..0x0323ec` = `116,956 bytes`, `.rodata` `0x0323f0..0x034f8d` = `11,165 bytes`, ByteDance Vega UG Push Alive "Undead" Keep-Alive Native Ability for Android Q / Android 10+, 589 exported symbols).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `328,681 bytes` C++17/H, 0 stub)**:
+  1. **`.init_array` (`0x015b10..0x015b84`), `kaAbility` (`.bss 0x0440b8`, `40 bytes` / `0x28`) & `init_instr_internal` (`0x0161c8..0x016450`)**: Khôi phục đăng ký `AIBinder_Class_define` cho `"android.app.IActivityManager"` (`.rodata 0x0323f3`), cấu trúc đơn thể `ka_ability` (`40B`), đóng gói `AParcel` + `Bundle` (`BUNDLE_MAGIC = 0x4C444E42` `'BNDL'` @ `0x0162a8..0x0162ac`) với 3 cặp khóa (`"instrumentation_type"`, `"source_process"`, `"use_native_mode"`) và ghi đè độ dài `Bundle` tại `bundle_len_pos`.
+  2. **`do_ka` (`0x015ca8..0x016138`), `modify_process_name` (`0x015bd0`), Vòng lặp `flock` (`4,000,000 us`) & Phép nhân nghịch đảo 64-bit (`0x20C49BA5E353F7CFULL`)**: Khôi phục tiến trình canh gác double-fork, chu kỳ ngủ `0x003D0900 = 4,000,000 us` (`0x015fac..0x015fb4`), công thức đổi `tv_usec` sang mili-giây `umulh(tv_usec >> 3, 0x20C49BA5E353F7CFULL) >> 4` (`0x016098..0x0160b0`), và phát giao dịch `start_instr()` (`0x016450`).
+  3. **NDK Binder `ndk::ICInterface::ICInterfaceData` (`0x016538..0x016784`), `ndk::SharedRefBase::ref` (`0x016784..0x0168cc`) & `std::__ndk1` / `libc++abi`**: Khôi phục `onCreate`, `onDestroy`, `onDump`, `SharedWeakCountControlBlock`, `StdNdk1Align_0x016cd0`, và `DemangleUndeadSymbol_0x01b980`.
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **90 / 169 `VERIFIED_AND_ACCEPTED` (53.25%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **575 / 575 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

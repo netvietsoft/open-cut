@@ -1,0 +1,18 @@
+{
+  "task_id": "TASK-129-RECONSTRUCTION-LIBUNDEAD-NATIVE-ABILITY-Q",
+  "legacy_task_id": "TASK_SO_057_libundead_native_ability_q",
+  "title": "Clean-room C++17 reconstruction of libundead_native_ability_q.so (264,448 bytes)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "target_library": "libundead_native_ability_q.so",
+  "binary_size_bytes": 264448,
+  "binary_sha256": "fbb084a422d41746a73918169874475da9170f3aae48b099f91d83635aab3d49",
+  "reconstructed_cpp_bytes": 328681,
+  "completed_at": "2026-10-27T12:18:00+07:00",
+  "verification": {
+    "adversary_auditor": "VERIFIED_AND_ACCEPTED (90/169 = 53.25%)",
+    "reconstruction_suite": "575/575 PASS (100.0%)",
+    "native_audit_watchdog": "169 binaries, 0 high findings"
+  }
+}
