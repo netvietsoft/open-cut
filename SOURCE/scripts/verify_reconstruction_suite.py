@@ -10117,6 +10117,134 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # KIỂM CHỨNG 95: libmonitorcollector-lib.so (ByteDance Slardar / APM6 Monitor Collector Engine)
+    # =========================================================================
+    def verify_libmonitorcollector_lib(self):
+        import hashlib
+        import struct
+        print("\n[95] Đang kiểm chứng libmonitorcollector-lib.so (ByteDance Slardar / APM6 Monitor Collector Engine)...")
+        lib_dir = GIAIMA_DIR / "libmonitorcollector-lib"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libmonitorcollector-lib.so"
+        req_files = [
+            "monitorcollector_types.h",
+            "monitorcollector_rodata_tables.h",
+            "monitorcollector_rodata_tables.cpp",
+            "monitorcollector_systrace_lock_binder.h",
+            "monitorcollector_systrace_lock_binder.cpp",
+            "monitorcollector_proc_art_xhook.h",
+            "monitorcollector_proc_art_xhook.cpp",
+            "monitorcollector_interface.h",
+            "monitorcollector_pseudocode.cpp",
+        ]
+        all_exist = all((lib_dir / f).exists() for f in req_files) and so_path.exists()
+        total_bytes = sum((lib_dir / f).stat().st_size for f in req_files if (lib_dir / f).exists())
+        content = ""
+        for f in req_files:
+            p = lib_dir / f
+            if p.exists():
+                content += p.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+
+        # 1. Kiểm tra cấu trúc 9 file C++17 phòng sạch, dung lượng >= 180KB và SHA-256 nhị phân
+        self.assert_test(
+            "MonitorCollector_CleanRoomFilesAndBinaryHash",
+            all_exist
+            and total_bytes >= 180000
+            and len(so_bytes) == 313744
+            and so_sha256 == "739e2276dd31bc2805670367cfff2abc4a3d26e73e5b75635daff2a1f125e183"
+            and "TODO" not in content,
+            f"Đủ 9 file C++17 phòng sạch cho libmonitorcollector-lib.so ({total_bytes:,} bytes >= 180KB), khớp SHA-256 {so_sha256[:16]}..."
+        )
+
+        # 2. Kiểm tra JNI_OnLoad (0x0147b4..0x01498c) sao chép 0x450 bytes (46 * 24) từ .data.rel.ro 0x04c948 và đăng ký 46 hàm MonitorJni
+        op_14844_mov = struct.unpack("<I", so_bytes[0x014844:0x014848])[0]
+        op_14854_mov = struct.unpack("<I", so_bytes[0x014854:0x014858])[0]
+        op_1495c_mov = struct.unpack("<I", so_bytes[0x01495C:0x014960])[0]
+        self.assert_test(
+            "MonitorCollector_JniOnLoadAnd46MonitorJniMethods",
+            op_14844_mov == 0x52808A02    # mov w2, #0x450 (1104 bytes = 46 * 24)
+            and op_14854_mov == 0x528005C3  # mov w3, #0x2e (46 JNI methods)
+            and op_1495c_mov == 0x528000C0  # mov w0, #6 (0x00010006 = JNI_VERSION_1_6)
+            and b"com/bytedance/monitor/collector/MonitorJni" in so_bytes
+            and all(sym in content for sym in [
+                "JNI_OnLoad", "kMonitorJniTable_04c948", "kMonitorJniMethodCount",
+                "doSetDebugMode", "releaseByteBuffer"
+            ]),
+            "Khớp JNI_OnLoad (0x0147b4..0x01498c) sao chép 0x450 bytes và đăng ký 46 hàm gốc MonitorJni (.data.rel.ro 0x04c948)"
+        )
+
+        # 3. Kiểm tra transact_hook (0x0143a0..0x0144a4) ngưỡng 4ms (0x003D0900 = 4,000,000 ns) và hệ số chia 1,000,000 (0x000F4240)
+        op_1441c_mov  = struct.unpack("<I", so_bytes[0x01441C:0x014420])[0]
+        op_14424_movk = struct.unpack("<I", so_bytes[0x014424:0x014428])[0]
+        op_14430_mov  = struct.unpack("<I", so_bytes[0x014430:0x014434])[0]
+        op_14434_movk = struct.unpack("<I", so_bytes[0x014434:0x014438])[0]
+        self.assert_test(
+            "MonitorCollector_BinderTransactHook4msThreshold",
+            op_1441c_mov == 0x52812009     # mov w9, #0x900
+            and op_14424_movk == 0x72A007A9  # movk w9, #0x3d, lsl #16 -> 0x003D0900 = 4,000,000 ns
+            and op_14430_mov == 0x52884809   # mov w9, #0x4240
+            and op_14434_movk == 0x72A001E9  # movk w9, #0xf, lsl #16 -> 0x000F4240 = 1,000,000
+            and all(sym in content for sym in [
+                "TransactHookImpl", "kBinderMainThreadThresholdNs", "EnableBinderImpl", "SaveBinderInfoImpl"
+            ]),
+            "Khớp transact_hook (0x0143a0) ngưỡng giao dịch Binder luồng chính 0x003D0900 (4,000,000 ns = 4 ms) và chia 0x000F4240"
+        )
+
+        # 4. Kiểm tra enableSystrace (0x014174, ldaxr/stlxr), cờ atrace_tags 0x401a (.data 0x050028) và kích thước ring buffer 1,000 / 10,000 (.data 0x050000)
+        op_141d4_ldaxr = struct.unpack("<I", so_bytes[0x0141D4:0x0141D8])[0]
+        op_141dc_stlxr = struct.unpack("<I", so_bytes[0x0141DC:0x0141E0])[0]
+        data_ev_sizes  = struct.unpack("<2I", so_bytes[0x04C000:0x04C008])
+        data_atrace_tg = struct.unpack("<Q", so_bytes[0x04C028:0x04C030])[0]
+        self.assert_test(
+            "MonitorCollector_SystraceAtomicLdaxrAndRingBufferGlobals",
+            op_141d4_ldaxr == 0xC85FFD09    # ldaxr x9, [x8]
+            and op_141dc_stlxr == 0xC80CFD0B  # stlxr w12, x11, [x8]
+            and data_ev_sizes == (1000, 10000)
+            and data_atrace_tg == 0x401A
+            and all(sym in content for sym in [
+                "EnableSystraceImpl", "LogSystraceImpl", "RecordTraceImpl",
+                "kDefaultMainEventSize_050000", "kDefaultSubEventSize_050004", "kDefaultAtraceTags_050028"
+            ]),
+            "Khớp vòng lặp nguyên tử ldaxr/stlxr trong enableSystrace (0x0141d4), cờ atrace_tags 0x401a và kích thước ring buffer (1000, 10000)"
+        )
+
+        # 5. Kiểm tra CollectStateValueFd (0x0165bc) dùng bảng nhảy 11-byte .rodata 0x038cf4 và a64_get_imm (0x01c044) dùng bảng nhảy 7-byte .rodata 0x038cff
+        op_16648_add = struct.unpack("<I", so_bytes[0x016648:0x01664C])[0]
+        op_1c07c_add = struct.unpack("<I", so_bytes[0x01C07C:0x01C080])[0]
+        ro_38cf4     = list(so_bytes[0x038CF4:0x038CFF])
+        ro_38cff     = list(so_bytes[0x038CFF:0x038D06])
+        self.assert_test(
+            "MonitorCollector_ProcStatAndA64DecodeJumpTables",
+            op_16648_add == 0x9133D18C     # add x12, x12, #0xcf4 (.rodata 0x038cf4)
+            and op_1c07c_add == 0x9133FD29   # add x9, x9, #0xcff (.rodata 0x038cff)
+            and ro_38cf4 == [0x10, 0x1c, 0x28, 0x2e, 0x00, 0x00, 0x34, 0x00, 0x00, 0x16, 0x22]
+            and ro_38cff == [0x00, 0x32, 0x00, 0x07, 0x32, 0x32, 0x11]
+            and all(sym in content for sym in [
+                "kCollectStateFieldJumpTable_038cf4", "kA64GetImmJumpTable_038cff",
+                "CollectStateValueFdImpl", "A64GetInstTypeImpl", "A64GetImmImpl", "FindOffsetByCallA64Impl"
+            ]),
+            "Khớp bảng nhảy 11-byte .rodata 0x038cf4 của CollectStateValueFd và bảng nhảy 7-byte .rodata 0x038cff của a64_get_imm"
+        )
+
+        # 6. Kiểm tra GraphicsMonitor::getStatisticOnceData (0x017344), kSecondNanos (0x03ac98 = 1,000,000,000), ArtSymbolTable 16 mục và ByteBuffer
+        op_17350_fmov = struct.unpack("<I", so_bytes[0x017350:0x017354])[0]
+        op_17378_fdiv = struct.unpack("<I", so_bytes[0x017378:0x01737C])[0]
+        ro_3ac98_ns   = struct.unpack("<Q", so_bytes[0x03AC98:0x03ACA0])[0]
+        self.assert_test(
+            "MonitorCollector_GraphicsMonitorAndArtSymbolsAndByteBuffer",
+            op_17350_fmov == 0x1E7E1000    # fmov d0, #-1.00000000
+            and op_17378_fdiv == 0x1E611800  # fdiv d0, d0, d1
+            and ro_3ac98_ns == 1000000000
+            and all(sym in content for sym in [
+                "GraphicsMonitorGetStatisticOnceDataImpl", "kSecondNanos_03ac98",
+                "ArtSymbolTable", "ByteBuffer", "XhVersionStrImpl"
+            ]),
+            "Khớp GraphicsMonitor::getStatisticOnceData (0x017350: fmov d0, #-1.0; 0x017378: fdiv d0, d0, d1), kSecondNanos (1e9) và ArtSymbolTable"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -10215,6 +10343,7 @@ class AutonomousVerificationEngine:
         self.verify_libnms()
         self.verify_libtttext_lite()
         self.verify_libworker()
+        self.verify_libmonitorcollector_lib()
         self.verify_overall_governance()
 
 

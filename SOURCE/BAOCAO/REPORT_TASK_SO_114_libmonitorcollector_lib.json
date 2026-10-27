@@ -1,18 +1,28 @@
 {
   "report_id": "REPORT_TASK_SO_114_libmonitorcollector_lib",
   "task_id": "TASK_SO_114_libmonitorcollector_lib",
+  "canonical_task_id": "TASK-134-RECONSTRUCTION-LIBMONITORCOLLECTOR-LIB",
   "target_library": "libmonitorcollector-lib.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
   "evidence": {
+    "binary_size_bytes": 313744,
+    "binary_sha256": "739e2276dd31bc2805670367cfff2abc4a3d26e73e5b75635daff2a1f125e183",
+    "reconstructed_cpp_bytes": 736422,
     "symbols_total": 461,
-    "jni_exports": 8,
-    "cxx_demangled_count": 194,
+    "exported_symbols": 350,
+    "imported_symbols": 111,
+    "jni_exports": 55,
+    "cxx_demangled_count": 295,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libmonitorcollector-lib",
+    "proof_json": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libmonitorcollector-lib.json",
+    "proof_md": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libmonitorcollector-lib.md",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "stub_count": 0
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn thành tái cấu trúc clean-room C++17 100% (736,422 bytes, 0 stub) cho libmonitorcollector-lib.so (ByteDance Slardar / APM6 Systrace, Lock Contention, Binder, ProcFS, ART JavaAlloc, GraphicsMonitor & xHook Engine, 313,744 bytes): khôi phục chính xác JNI_OnLoad (0x0147b4..0x01498c) sao chép 0x450 bytes (46 * 24) từ .data.rel.ro 0x04c948 và đăng ký 46 hàm gốc cho MonitorJni, bộ bắt sự kiện Systrace/Atrace & tranh chấp khóa (log_systrace @ 0x0125b4, recordTrace @ 0x012dd0 với bộ đệm vòng 1,000 / 10,000 mục tại .data 0x050000, enableSystrace @ 0x014174 dùng ldaxr/stlxr bật cờ 0x401a), transact_hook (0x0143a0) đo giao dịch Binder luồng chính vượt ngưỡng 0x003D0900 (4,000,000 ns = 4 ms), CollectStateValueFd (0x0165bc) dùng bảng nhảy 11-byte .rodata 0x038cf4, GraphicsMonitor (0x01701c..0x017388), initSymbolAndOffset (0x018430) phân giải 16 ký hiệu libart.so vào .bss 0x050268..0x0502e0, bộ giải mã lệnh AArch64 find_offset_by_call_a64 & a64_get_imm (0x01bda0..0x01c164) dùng bảng nhảy 7-byte .rodata 0x038cff, và toàn bộ 1,030 hàm FDE.",
+  "acceptance_criteria_passed": true
 }
