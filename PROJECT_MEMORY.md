@@ -2422,3 +2422,16 @@
   - `adversary_critic_agent.py`: **81 / 169 `VERIFIED_AND_ACCEPTED` (47.93%)** (`100% REAL`).
   - `verify_reconstruction_suite.py`: **521 / 521 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 109. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libvcbasekit.so (TASK-121-RECONSTRUCTION-LIBVCBASEKIT / TASK_SO_072_libvcbasekit)
+- **Thời gian**: 2026-10-27 08:45:30
+- **Thư viện**: `libvcbasekit.so` (`231,568 bytes`, SHA-256 `d5a87dc8436f7ee8aa114f986f5c9c556b534d4dae750d4f69cbc1b38f679129`, `.text` `0x00f9b0..0x02b240` = `112,784 bytes`, ByteDance Video Cloud BaseKit `com::ss::vcbkit` & Embedded `JsonCpp`, 559 dynamic symbols: 399 exported `STT_FUNC` and 54 `STT_OBJECT`).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `136,499 bytes` C++17/H, 0 stub)**:
+  1. **Embedded `JsonCpp` Engine (`.text 0x00fb20..0x021720`, `.rodata 0x02bec8..0x02bf08`)**: Khôi phục đầy đủ `Json::Value`, `Json::Reader`, `Json::OurReader`, `Json::CharReaderBuilder`, `Json::FastWriter`, `Json::StyledWriter`, `Json::StreamWriterBuilder`, `Json::Path`, `Json::PathArgument`, `Json::Exception`, `Json::LogicError`, `Json::RuntimeError`, cùng 9 hằng số giới hạn số nguyên `STT_OBJECT` tại `.rodata 0x02bec8..0x02bf08` (`maxLargestInt = 0x7fffffffffffffff`, `maxLargestUInt = 0xffffffffffffffff`, `minLargestInt = -0x8000000000000000`, `maxInt = 0x7fffffff`, `minInt = -0x80000000`, `maxUInt = 0xffffffff`, `minInt64 = -0x8000000000000000`, `maxInt64 = 0x7fffffffffffffff`, `maxUInt64 = 0xffffffffffffffff`).
+  2. **`com::ss::vcbkit` Core Synchronization, Clock & 24-Byte 3-Tier COW/SSO `String` (`0x021728..0x029a80`)**: Khôi phục `BaseRef` (`0x021728`: `ldaxr`/`stlxr` trên `ref_count_` tại `+0x08` + `dmb ishld`), `WeakPtr<BaseRef>` & `WeakHolder<BaseRef>` (`0x0221b8`), `AutoWaitEvent` (`0x021a3c`) & `ManualWaitEvent` (`0x021afc`: `CondVar` `+0x00`, `Mutex` `+0x30`, `is_signaled_` `+0x58`), `TimePoint<Clock::Fast1>::now()` (`0x027db8`: `tv_sec * 0x3B9ACA00ULL + tv_nsec` qua `madd x0, x9, x10, x8`), `TimePoint<Clock::System>::now()` (`0x027d9c`: nhân `0x3E8 = 1,000`), và chuỗi 24-byte 3 tầng `com::ss::vcbkit::String` (`0x028ad4..0x029154`: Small SSO `<= 0x17 = 23 B`, Medium `24..63 B` với mặt nạ dung lượng `0x3FFFFFFFFFFFFFFFULL` tại `0x028f40`, Large `>= 64 B` COW với bộ đếm tham chiếu nguyên tử 8-byte tại `data_ - 8`).
+  3. **`MsgLoop`, `ThreadPoolHelper`, `Daemon`, Dynamic ALOG Wrapper & `JNI_OnLoad` (`0x023c6c..0x02b198`)**: Khôi phục `MsgLoop`, `ThreadPoolHelper`, `Daemon`, `vcbkit_init_logger_wrapper` (`0x029b10`: kiểm tra tối đa 5 lần thử tại `.bss 0x03c0e8`, nạp động `"libalog.so"` -> `"alog_write_default_instance"` vào `.bss 0x03c0e0`), `JNI_OnLoad` (`0x02a55c`: lưu `JavaVM*` tại `.bss 0x03c0f0`, tìm `"com/ss/vcbkit/UnExpected"` và `"notReachHereNative"` tại `.bss 0x03c0f8..0x03c100`, trả về `0x00010004`), và `UnExpected::reportStack` (`0x02a698`: nạp động `"libnpth_bt.so"` -> `"npth_bt_current"` / `"npth_bt_thread"` / `"npth_bt_free"`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **82 / 169 `VERIFIED_AND_ACCEPTED` (48.52%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **527 / 527 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

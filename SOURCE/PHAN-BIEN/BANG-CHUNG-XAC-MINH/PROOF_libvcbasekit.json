@@ -1,0 +1,80 @@
+{
+  "library": "libvcbasekit.so",
+  "task_id": "TASK-121-RECONSTRUCTION-LIBVCBASEKIT",
+  "legacy_task_id": "TASK_SO_072_libvcbasekit",
+  "binary_size_bytes": 231568,
+  "binary_sha256": "d5a87dc8436f7ee8aa114f986f5c9c556b534d4dae750d4f69cbc1b38f679129",
+  "reconstructed_code_bytes": 136499,
+  "reconstructed_files": [
+    "vcbasekit_types.h",
+    "vcbasekit_jsoncpp.h",
+    "vcbasekit_jsoncpp.cpp",
+    "vcbasekit_sync_string.h",
+    "vcbasekit_sync_string.cpp",
+    "vcbasekit_thread_jni.h",
+    "vcbasekit_thread_jni.cpp",
+    "vcbasekit_interface.h",
+    "vcbasekit_pseudocode.cpp"
+  ],
+  "opcode_evidence": [
+    {
+      "function": "_GLOBAL__sub_I_json_value.cpp (.init_array[0])",
+      "vaddr": "0x00f9b0..0x00fa04",
+      "instructions": "adrp x20, 0x3c000; add x20, x20, #0x88; mov x0, x20; mov w1, #0; bl Json::Value::Value(ValueType); adrp x0, 0x16000; add x0, x0, #0xbc8; mov x1, x20; b __cxa_atexit"
+    },
+    {
+      "function": "com::ss::vcbkit::BaseRef::addRef & decRef",
+      "vaddr": "0x021740..0x021794",
+      "instructions": "add x8, x0, #8; ldaxr w9, [x8]; add w10, w9, #1; stlxr w11, w10, [x8]; cbnz w11, 0x21744 | ldaxr w9, [x8]; sub w10, w9, #1; stlxr w11, w10, [x8]; cmp w9, #1; dmb ishld; ldr x8, [x0]; ldr x8, [x8, #8]; br x8"
+    },
+    {
+      "function": "com::ss::vcbkit::AutoWaitEvent & ManualWaitEvent",
+      "vaddr": "0x021a3c..0x021da8",
+      "instructions": "add x0, x19, #0x30 (Mutex at +0x30); strb w20, [x19, #0x58] (is_signaled_ at +0x58); bl CondVar::notifyOne / notifyAll"
+    },
+    {
+      "function": "com::ss::vcbkit::TimePoint<Clock::Fast1>::now & TimePoint<Clock::System>::now",
+      "vaddr": "0x027d9c..0x027e10",
+      "instructions": "mov w8, #0x3e8; mul x0, x0, x8 | mov w0, #1 (CLOCK_MONOTONIC); add x1, sp, #0x10; bl clock_gettime; ldp x9, x8, [sp, #0x10]; mov w10, #0xca00; movk w10, #0x3b9a, lsl #16 (0x3B9ACA00); madd x0, x9, x10, x8"
+    },
+    {
+      "function": "com::ss::vcbkit::String (24-byte 3-tier Small/Medium/Large COW)",
+      "vaddr": "0x028ad4..0x029154",
+      "instructions": "mov w8, #0x17; stp xzr, xzr, [x0]; str xzr, [x0, #0x10]; strb w8, [x0, #0x17] | cmp x19, #0x3f; ldrb w8, [x0, #0x17]; and w8, w8, #0xc0; cmp w8, #0x40; sub x8, x8, #8; ldar x8, [x8]; cmp x8, #2; and x0, x8, #0x3fffffffffffffff"
+    },
+    {
+      "function": "vcbkit_init_logger_wrapper",
+      "vaddr": "0x029b10..0x029c00",
+      "instructions": "ldr x8, [x19, #0xe0]; cbnz x8, 0x29bf8; ldr w8, [x19, #0xe8]; cmp w8, #5; b.gt 0x29bf8; add x0, x0, #0x506 ('libalog.so'); mov w1, #1; bl dlopen; add x1, x1, #0x511 ('alog_write_default_instance'); bl dlsym; str x0, [x19, #0xe0]"
+    },
+    {
+      "function": "JNI_OnLoad & com::ss::vcbkit::UnExpected::reportStack",
+      "vaddr": "0x02a55c..0x02a864",
+      "instructions": "str x19, [x20, #0xf0] (JavaVM*); add x1, x1, #0x5af ('com/ss/vcbkit/UnExpected'); add x2, x2, #0x5c8 ('notReachHereNative'); add x3, x3, #0x5db ('(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V'); mov w0, #0x10004 (JNI_VERSION_1_4) | add x0, x0, #0x6a0 ('libnpth_bt.so'); dlsym('npth_bt_current' / 'npth_bt_thread' / 'npth_bt_free')"
+    }
+  ],
+  "math_and_table_proofs": {
+    "json_numeric_limits_0x02bec8": "9 exported STT_OBJECT constants at .rodata 0x02bec8..0x02bf08: maxLargestInt (0x7fffffffffffffff), maxLargestUInt (0xffffffffffffffff), minLargestInt (-0x8000000000000000), maxInt (0x7fffffff), minInt (-0x80000000), maxUInt (0xffffffff), minInt64 (-0x8000000000000000), maxInt64 (0x7fffffffffffffff), maxUInt64 (0xffffffffffffffff)",
+    "timepoint_clock_math": "TimePoint<Clock::Fast1>::now (0x027db8) computes tv_sec * 0x3B9ACA00ULL (1,000,000,000) + tv_nsec via madd x0, x9, x10, x8; TimePoint<Clock::System>::now (0x027d9c) scales microseconds by 0x3E8 (1,000)",
+    "string_three_tier_cow_math": "24-byte (0x18) String: Small tier <= 0x17 (23 B) stores slack (0x17 - size) at byte +0x17 (category 0x00); Medium tier 24..63 B (0x3F) uses category bit 0x80 and masks capacity with 0x3FFFFFFFFFFFFFFFULL; Large tier >= 64 B uses category bit 0x40 and an 8-byte atomic reference count prefix at (data_ - 8)"
+  },
+  "abi_offsets": {
+    "BaseRef": {
+      "size": "0x10 (16 bytes)",
+      "vtable": "+0x00",
+      "ref_count": "+0x08 (atomic int32_t)"
+    },
+    "AutoWaitEvent_and_ManualWaitEvent": {
+      "size": "0x60 (96 bytes)",
+      "cond_var": "+0x00 (48 bytes)",
+      "mutex": "+0x30 (40 bytes)",
+      "is_signaled": "+0x58 (bool)"
+    },
+    "String": {
+      "size": "0x18 (24 bytes)",
+      "data_or_sso": "+0x00",
+      "size": "+0x08",
+      "capacity_and_category": "+0x10 (category & SSO slack at byte +0x17)"
+    }
+  }
+}

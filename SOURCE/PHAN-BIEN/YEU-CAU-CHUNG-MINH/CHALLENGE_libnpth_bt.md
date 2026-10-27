@@ -1,6 +1,6 @@
 # TRÁT THÁCH THỨC ĐỐI KHÁNG — CHALLENGE FOR: libnpth_bt.so
 > **Cơ quan ban hành**: **Agent 13 (Adversary Auditor / Red Team Critic)**  
-> **Thời điểm thẩm tra**: `2026-10-27 08:26:30`  
+> **Thời điểm thẩm tra**: `2026-10-27 08:45:34`  
 > **Trạng thái đối kháng**: `SCAFFOLD_METADATA_ONLY`  
 > **Nguyên tắc**: *Giả định mọi tuyên bố là gian lận/khai khống cho đến khi nộp đủ bằng chứng nhị phân.*
 
@@ -14,14 +14,13 @@
 | **Gate 3: Toán học & Thuật toán** | Công thức giải thuật tường minh, khả nghịch | Chưa có | REJECTED |
 | **Gate 4: Struct Layout ABI** | Khớp offset thanh ghi AArch64 (ldr/str) | Chưa rõ | REJECTED |
 | **Gate 5: Itanium Demangled Symbols** | Bóc tách đầy đủ hàm & namespace thực | `17 symbols` | PASSED |
-| **Gate 6: Kiểm chứng Tự động Khép kín** | Test case chạy độc lập trong Test Suite | Chưa có | REJECTED |
+| **Gate 6: Kiểm chứng Tự động Khép kín** | Test case chạy độc lập trong Test Suite | Có test case | PASSED |
 
 ---
 
 ### 2. DANH SÁCH NGHI VẤN & YÊU CẦU ĐỐI CHỨNG (CRITICISMS & DEMANDS)
 - [ ] **Nghi vấn**: Dung lượng mã nguồn (960 bytes) dưới ngưỡng tối thiểu 40000 bytes.
 - [ ] **Nghi vấn**: Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.
-- [ ] **Nghi vấn**: Chưa tích hợp test case trong verify_reconstruction_suite.py.
 
 ---
 

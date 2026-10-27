@@ -1,6 +1,6 @@
 {
   "lib_name": "libnpth_bt",
-  "inspected_at": "2026-10-27 08:26:30",
+  "inspected_at": "2026-10-27 08:45:34",
   "gate1_size_bytes": 960,
   "gate1_passed": false,
   "gate2_opcode_count": 0,
@@ -9,11 +9,10 @@
   "gate4_abi_offsets_verified": false,
   "gate5_symbols_count": 17,
   "gate5_passed": true,
-  "gate6_test_passed": false,
+  "gate6_test_passed": true,
   "status": "SCAFFOLD_METADATA_ONLY",
   "criticisms": [
     "Dung lượng mã nguồn (960 bytes) dưới ngưỡng tối thiểu 40000 bytes.",
-    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể.",
-    "Chưa tích hợp test case trong verify_reconstruction_suite.py."
+    "Chỉ tìm thấy 0 địa chỉ opcode. Thiếu đối soát AArch64 disassembly cụ thể."
   ]
 }

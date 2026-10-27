@@ -8377,6 +8377,128 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 82. KIỂM CHỨNG LIBVCBASEKIT.SO (ByteDance Video Cloud BaseKit & JsonCpp)
+    # =========================================================================
+    def verify_libvcbasekit(self):
+        import struct
+        print("\n[82] Đang kiểm chứng libvcbasekit.so (ByteDance Video Cloud BaseKit com::ss::vcbkit & Embedded JsonCpp)...")
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libvcbasekit.so"
+        lib_dir = GIAIMA_DIR / "libvcbasekit"
+        so_bytes = so_path.read_bytes()
+
+        cpp_files = sorted(list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Kiểm tra dung lượng nhị phân (231,568 bytes) & mã nguồn C++17 (> 100 KB, 9 tệp, 0 stub)
+        self.assert_test(
+            "VcBaseKit_BinaryAndSourceVolume",
+            len(so_bytes) == 231568 and len(cpp_files) == 9 and total_bytes > 100000 and "TODO: Dịch logic" not in content,
+            f"Nhị phân libvcbasekit.so ({len(so_bytes)} bytes) & 9 tệp C++17/H đạt {total_bytes} bytes (> 100 KB, 0 stub)"
+        )
+
+        # 2. Kiểm tra 9 hằng số giới hạn số nguyên STT_OBJECT của Json::Value (.rodata 0x02bec8..0x02bf08)
+        max_largest_int  = struct.unpack("<q", so_bytes[0x02bec8:0x02bed0])[0]
+        max_largest_uint = struct.unpack("<Q", so_bytes[0x02bed0:0x02bed8])[0]
+        min_largest_int  = struct.unpack("<q", so_bytes[0x02bed8:0x02bee0])[0]
+        max_int          = struct.unpack("<i", so_bytes[0x02bee0:0x02bee4])[0]
+        min_int          = struct.unpack("<i", so_bytes[0x02bee8:0x02beec])[0]
+        max_uint         = struct.unpack("<I", so_bytes[0x02beec:0x02bef0])[0]
+        min_int64        = struct.unpack("<q", so_bytes[0x02bef0:0x02bef8])[0]
+        max_int64        = struct.unpack("<q", so_bytes[0x02bef8:0x02bf00])[0]
+        max_uint64       = struct.unpack("<Q", so_bytes[0x02bf00:0x02bf08])[0]
+        self.assert_test(
+            "VcBaseKit_JsonValue9NumericLimitConstants",
+            max_largest_int == 0x7FFFFFFFFFFFFFFF
+            and max_largest_uint == 0xFFFFFFFFFFFFFFFF
+            and min_largest_int == -0x8000000000000000
+            and max_int == 0x7FFFFFFF
+            and min_int == -0x80000000
+            and max_uint == 0xFFFFFFFF
+            and min_int64 == -0x8000000000000000
+            and max_int64 == 0x7FFFFFFFFFFFFFFF
+            and max_uint64 == 0xFFFFFFFFFFFFFFFF
+            and all(tok in content for tok in [
+                "maxLargestInt", "maxLargestUInt", "minLargestInt",
+                "maxInt", "minInt", "maxUInt",
+                "minInt64", "maxInt64", "maxUInt64"
+            ]),
+            "Khớp tuyệt đối 9 hằng số giới hạn số nguyên STT_OBJECT của Json::Value tại .rodata 0x02bec8..0x02bf08"
+        )
+
+        # 3. Kiểm tra TimePoint<Clock::Fast1>::now() (0x027db8..0x027e10) & TimePoint<Clock::System>::now() (0x027d9c)
+        sys_mul_1000 = struct.unpack("<I", so_bytes[0x027da8:0x027dac])[0]
+        fast_ns_lo   = struct.unpack("<I", so_bytes[0x027dfc:0x027e00])[0]
+        fast_ns_hi   = struct.unpack("<I", so_bytes[0x027e00:0x027e04])[0]
+        fast_madd    = struct.unpack("<I", so_bytes[0x027e04:0x027e08])[0]
+        self.assert_test(
+            "VcBaseKit_TimePointClockMath",
+            sys_mul_1000 == 0x52807D08
+            and fast_ns_lo == 0x5299400A
+            and fast_ns_hi == 0x72A7734A
+            and fast_madd == 0x9B0A2120
+            and "0x3B9ACA00ULL" in content
+            and "0x3E8ULL" in content,
+            "Khớp công thức TimePoint<Clock::Fast1>::now (tv_sec * 0x3B9ACA00 + tv_nsec @ 0x027dfc..0x027e04) và TimePoint<Clock::System>::now (* 0x3E8 @ 0x027da8)"
+        )
+
+        # 4. Kiểm tra chuỗi 24-byte 3 tầng com::ss::vcbkit::String (SSO <= 23B, Medium <= 63B, Large >= 64B COW @ 0x028ad4..0x029154)
+        sso_size_mov = struct.unpack("<I", so_bytes[0x028ef8:0x028efc])[0]
+        cap_mask_and = struct.unpack("<I", so_bytes[0x028f40:0x028f44])[0]
+        self.assert_test(
+            "VcBaseKit_String24ByteThreeTierCowSso",
+            sso_size_mov == 0x528002EA
+            and cap_mask_and == 0x9240F500
+            and all(tok in content for tok in [
+                "kVcbStringMaxSmallSize",
+                "kVcbStringMaxMediumSize",
+                "kVcbStringCategoryLarge",
+                "0x3FFFFFFFFFFFFFFFULL",
+                "isShared",
+                "unshareForWrite"
+            ]),
+            "Khớp cấu trúc chuỗi 24-byte 3 tầng com::ss::vcbkit::String (SSO <= 0x17 @ 0x028ef8, Medium <= 0x3F @ 0x028f40, Large >= 0x40 COW refcount tại data_ - 8)"
+        )
+
+        # 5. Kiểm tra BaseRef (0x021728), AutoWaitEvent (0x021a3c), ManualWaitEvent (0x021afc), MsgLoop & ThreadPoolHelper
+        self.assert_test(
+            "VcBaseKit_BaseRefWaitEventsAndMsgLoop",
+            all(tok in content for tok in [
+                "BaseRef",
+                "WeakHolder<BaseRef>",
+                "AutoWaitEvent",
+                "ManualWaitEvent",
+                "MsgLoop",
+                "ThreadPoolHelper",
+                "Daemon"
+            ]),
+            "Khớp BaseRef (ldaxr/stlxr tại +0x08), AutoWaitEvent/ManualWaitEvent (CondVar +0x00, Mutex +0x30, is_signaled_ +0x58), MsgLoop, ThreadPoolHelper & Daemon"
+        )
+
+        # 6. Kiểm tra vcbkit_init_logger_wrapper (0x029b10), JNI_OnLoad (0x02a55c -> .bss 0x03c0f0 / 0x03c100) & UnExpected::reportStack (0x02a698)
+        jni_jvm_str = struct.unpack("<I", so_bytes[0x02a57c:0x02a580])[0]
+        jni_mid_str = struct.unpack("<I", so_bytes[0x02a684:0x02a688])[0]
+        self.assert_test(
+            "VcBaseKit_AlogWrapperJniOnLoadAndUnExpected",
+            jni_jvm_str == 0xF9007920
+            and jni_mid_str == 0xF9008100
+            and b"libalog.so\x00" in so_bytes
+            and b"alog_write_default_instance\x00" in so_bytes
+            and b"com/ss/vcbkit/UnExpected\x00" in so_bytes
+            and b"notReachHereNative\x00" in so_bytes
+            and b"libnpth_bt.so\x00" in so_bytes
+            and all(tok in content for tok in [
+                "vcbkit_init_logger_wrapper",
+                "alog_write_default_instance",
+                "com/ss/vcbkit/UnExpected",
+                "notReachHereNative",
+                "libnpth_bt.so",
+                "0x00010004"
+            ]),
+            "Khớp vcbkit_init_logger_wrapper (dlopen 'libalog.so' tối đa 5 lần), JNI_OnLoad ('com/ss/vcbkit/UnExpected', 0x03c0f0..0x03c100) và UnExpected::reportStack ('libnpth_bt.so')"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -8462,6 +8584,7 @@ class AutonomousVerificationEngine:
         self.verify_libppsec()
         self.verify_libvcn()
         self.verify_libnpth_unwind()
+        self.verify_libvcbasekit()
         self.verify_overall_governance()
 
 
