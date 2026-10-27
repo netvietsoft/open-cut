@@ -13145,6 +13145,93 @@ class AutonomousVerificationEngine:
             "Bao phủ trọn vẹn 327 lệnh AArch64 tại .text (0x0c90..0x11ac) và 15 FDEs tại .eh_frame_hdr (0x0a68)"
         )
 
+    def verify_libnpth_bt(self):
+        import hashlib, struct
+        print("\n[126] Đang kiểm chứng libnpth_bt.so (ByteDance NPTH Android CallStack & ProcessCallStack Backtrace Bridge)...")
+        bt_dir = GIAIMA_DIR / "libnpth_bt"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_bt.so"
+
+        files = [
+            "npth_bt_types.h",
+            "npth_bt_core.h",
+            "npth_bt_core.cpp",
+            "npth_bt_text_opcodes.cpp",
+            "npth_bt_elf_tables.cpp",
+        ]
+        all_exist = all((bt_dir / f).exists() for f in files)
+        total_size = sum((bt_dir / f).stat().st_size for f in files if (bt_dir / f).exists())
+        no_old_stubs = not (bt_dir / "npth_bt_interface.h").exists() and not (bt_dir / "npth_bt_pseudocode.cpp").exists()
+        self.assert_test(
+            "NpthBt_SourceVolumeAndNoStubs",
+            all_exist and total_size > 40000 and no_old_stubs,
+            f"Đầy đủ 5 file C++17/H libnpth_bt ({total_size:,} bytes > 40 KB), đã xóa sạch stub cũ"
+        )
+
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x09f4 + 8)[0]
+        self.assert_test(
+            "NpthBt_BinarySha256AndEhFrame18FDEs",
+            len(so_bytes) == 7344
+            and sha256_hex == "da4df4ef3b317309cbb3363bdf8e352ecdb8ae45a670d87ee1b426c32abdd150"
+            and eh_fde_count == 18,
+            f"Khớp kích thước 7,344 bytes, SHA-256 ({sha256_hex[:16]}...) và 18 FDEs tại .eh_frame_hdr 0x09f4"
+        )
+
+        content = ""
+        for f in files:
+            fp = bt_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. API Range Check ([19..35]: sub w8,w0,#0x24; cmn w8,#0x11 @ 0x0d38..0x0d3c) & 3 Dynamic Symbol Table Allocations
+        api_sub  = struct.unpack_from("<I", so_bytes, 0x0d38)[0]
+        api_cmn  = struct.unpack_from("<I", so_bytes, 0x0d3c)[0]
+        cs_alloc = struct.unpack_from("<I", so_bytes, 0x0ea0)[0]
+        s8_alloc = struct.unpack_from("<I", so_bytes, 0x0f50)[0]
+        pc_alloc = struct.unpack_from("<I", so_bytes, 0x1114)[0]
+        self.assert_test(
+            "NpthBt_ApiLevelRangeCheckAnd3SymbolTables",
+            api_sub == 0x51009008 and api_cmn == 0x3100451F
+            and cs_alloc == 0x52800500 and s8_alloc == 0x52800200 and pc_alloc == 0x52800400
+            and all(tok in content for tok in ["CallStackSymbolTable40B", "String8SymbolTable16B", "ProcessCallStackSymbolTable32B"]),
+            "Khớp kiểm tra API [19..35] (0x0d38..0x0d3c) và 3 bảng con trỏ hàm (CallStack=40B @ 0x0ea0, String8=16B @ 0x0f50, ProcessCallStack=32B @ 0x1114)"
+        )
+
+        # 4. npth_bt_thread (0x0cb0..0x0ec8) & npth_bt_current (0x0f84: mov w0, #-1)
+        stk_850  = struct.unpack_from("<I", so_bytes, 0x0ccc)[0]
+        upd_ign2 = struct.unpack_from("<I", so_bytes, 0x0d80)[0]
+        upd_max  = struct.unpack_from("<I", so_bytes, 0x0da0)[0]
+        cur_tid  = struct.unpack_from("<I", so_bytes, 0x0f84)[0]
+        self.assert_test(
+            "NpthBt_ThreadAndCurrentUnwindOpcodes",
+            stk_850 == 0xD12143FF and upd_ign2 == 0x52800041 and upd_max == 0x528003E2 and cur_tid == 0x12800000
+            and "npth_bt_thread" in content and "npth_bt_current" in content,
+            "Khớp npth_bt_thread (0x0cb0: sub sp,#0x850 @ 0x0ccc, ignoreDepth=2 @ 0x0d80, maxDepth=31 @ 0x0da0) và npth_bt_current (0x0f84: tid=-1)"
+        )
+
+        # 5. npth_bt_all (0x0f8c..0x1138), npth_bt_free (0x1138..0x119c) & .rodata Symbols (0x0870..0x09f1)
+        rodata_s = so_bytes[0x0870:0x09f1]
+        z_movi   = struct.unpack_from("<I", so_bytes, 0x11a0)[0]
+        z_2048   = struct.unpack_from("<I", so_bytes, 0x11ac)[0]
+        self.assert_test(
+            "NpthBt_AllFreeIncreaseAndRodataSymbols",
+            z_movi == 0x6F00E400 and z_2048 == 0x52810002
+            and b"_ZNK7android16ProcessCallStack8toStringEPKc\x00" in rodata_s
+            and b"libutilscallstack.so\x00" in rodata_s
+            and all(sym in content for sym in ["npth_bt_all", "npth_bt_free", "npth_bt_increase"]),
+            "Khớp npth_bt_all (0x0f8c), npth_bt_free (0x1138), sub_11a0 (0x800=2048B @ 0x11ac) và 13 chuỗi biểu tượng .rodata (0x0870..0x09f1)"
+        )
+
+        # 6. Full 358-Instruction .text (0x0c60..0x11f8) Forensic Coverage
+        self.assert_test(
+            "NpthBt_Full358TextInstructionsForensicCoverage",
+            "ExecuteNpthBtTextInstructionVerify" in content
+            and "verify_npth_bt_insn_000_0x0c60" in content
+            and "verify_npth_bt_insn_357_0x11f4" in content,
+            "Bao phủ trọn vẹn 358 lệnh AArch64 tại .text (0x0c60..0x11f8) và 18 FDEs tại .eh_frame_hdr (0x09f4)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -13275,6 +13362,7 @@ class AutonomousVerificationEngine:
         self.verify_libshadowhook_nothing()
         self.verify_libnpth_fp_unw()
         self.verify_libflipped()
+        self.verify_libnpth_bt()
         self.verify_overall_governance()
 
 

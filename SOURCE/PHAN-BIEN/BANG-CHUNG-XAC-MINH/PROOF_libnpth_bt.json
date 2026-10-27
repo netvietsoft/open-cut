@@ -1,0 +1,52 @@
+{
+  "library": "libnpth_bt.so",
+  "task_id": "TASK-165-RECONSTRUCTION-LIBNPTH-BT",
+  "so_task_id": "TASK_SO_091_libnpth_bt",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size": 7344,
+  "sha256": "da4df4ef3b317309cbb3363bdf8e352ecdb8ae45a670d87ee1b426c32abdd150",
+  "eh_frame_hdr_offset": "0x0009f4",
+  "fde_count": 18,
+  "exported_symbols": 5,
+  "reconstructed_cpp_bytes": 193369,
+  "reconstructed_files": [
+    "npth_bt_types.h",
+    "npth_bt_core.h",
+    "npth_bt_core.cpp",
+    "npth_bt_text_opcodes.cpp",
+    "npth_bt_elf_tables.cpp"
+  ],
+  "stub_count": 0,
+  "key_opcodes": [
+    {
+      "offset": "0x000ccc",
+      "hex": "D12143FF",
+      "asm": "sub sp, sp, #0x850 (stack frame for 2048B CallStack + String8)"
+    },
+    {
+      "offset": "0x000d38",
+      "hex": "51009008",
+      "asm": "sub w8, w0, #0x24; cmn w8, #0x11 (API level [19..35] check)"
+    },
+    {
+      "offset": "0x000ea0",
+      "hex": "52800500",
+      "asm": "mov w0, #0x28 (40-byte CallStackSymbolTable malloc)"
+    },
+    {
+      "offset": "0x000f50",
+      "hex": "52800200",
+      "asm": "mov w0, #0x10 (16-byte String8SymbolTable malloc)"
+    },
+    {
+      "offset": "0x000f84",
+      "hex": "12800000",
+      "asm": "mov w0, #-1; b npth_bt_thread (npth_bt_current)"
+    },
+    {
+      "offset": "0x001114",
+      "hex": "52800400",
+      "asm": "mov w0, #0x20 (32-byte ProcessCallStackSymbolTable malloc)"
+    }
+  ]
+}

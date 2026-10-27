@@ -1,0 +1,40 @@
+{
+  "task_id": "TASK-165-RECONSTRUCTION-LIBNPTH-BT",
+  "so_task_id": "TASK_SO_091_libnpth_bt",
+  "title": "Clean-Room C++17 Reconstruction of libnpth_bt.so (ByteDance NPTH Android CallStack & ProcessCallStack Backtrace Bridge — Target 126 / 169)",
+  "status": "DONE",
+  "assigned_to": "Agent 3 (Android/Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Thư ký Orchestrator)",
+  "binary_info": {
+    "name": "libnpth_bt.so",
+    "path": "SOURCE/apktool-res/lib/arm64-v8a/libnpth_bt.so",
+    "size_bytes": 7344,
+    "sha256": "da4df4ef3b317309cbb3363bdf8e352ecdb8ae45a670d87ee1b426c32abdd150",
+    "eh_frame_hdr_offset": "0x0009f4",
+    "fde_count": 18,
+    "exported_symbols": 5
+  },
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libnpth_bt/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_bt.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libnpth_bt.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_091_libnpth_bt.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_091_libnpth_bt.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% of libnpth_bt.so in clean-room C++17 (> 40 KB total source volume, 0 stubs)",
+    "Exact AArch64 opcode and ABI parity for all 5 exported symbols (npth_bt_thread, npth_bt_current, npth_bt_all, npth_bt_free, npth_bt_increase) and 358 .text instructions",
+    "Pass adversary_critic_agent.py, verify_reconstruction_suite.py (791/791 PASS), and native_audit_watchdog.py"
+  ],
+  "completed_at": "2026-10-27T19:38:07.598681+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (126/169)",
+    "reconstruction_suite": "791/791 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 193369,
+    "fde_count": 18,
+    "exported_symbols": 5,
+    "stub_count": 0
+  }
+}
