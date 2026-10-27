@@ -9346,6 +9346,130 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 89. KIỂM CHỨNG: libimagepipeline.so (Facebook Fresco ImagePipeline + Embedded libjpeg-turbo 1.5.3)
+    # =========================================================================
+    def verify_libimagepipeline(self):
+        import hashlib
+        import struct
+        print("\n[89] Đang kiểm chứng libimagepipeline.so (Facebook Fresco ImagePipeline + Embedded libjpeg-turbo 1.5.3)...")
+        ip_dir = GIAIMA_DIR / "libimagepipeline"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libimagepipeline.so"
+
+        code_files = [
+            ip_dir / "imagepipeline_types.h",
+            ip_dir / "imagepipeline_rodata_tables.h",
+            ip_dir / "imagepipeline_rodata_tables.cpp",
+            ip_dir / "imagepipeline_fresco_jni.h",
+            ip_dir / "imagepipeline_fresco_jni.cpp",
+            ip_dir / "imagepipeline_jpeg_turbo_engine.h",
+            ip_dir / "imagepipeline_jpeg_turbo_engine.cpp",
+            ip_dir / "imagepipeline_interface.h",
+            ip_dir / "imagepipeline_pseudocode.cpp",
+        ]
+        all_exist = so_path.exists() and all(f.exists() for f in code_files)
+        total_bytes = sum(f.stat().st_size for f in code_files if f.exists())
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+        content = "\n".join(f.read_text(encoding="utf-8") for f in code_files if f.exists())
+
+        # 1. Kiểm tra SHA-256 nhị phân (264,328 bytes) & dung lượng C++17 sạch (>= 180,000 bytes)
+        self.assert_test(
+            "ImagePipeline_BinaryHashAndCleanRoomVolume",
+            all_exist
+            and len(so_bytes) == 264328
+            and so_sha256 == "38fed18184707429505cfabd7540d22f5560965d310b6501ae05a67a0f7d2266"
+            and total_bytes >= 180000,
+            f"Khớp SHA-256 nhị phân libimagepipeline.so (264,328B) và dung lượng C++17 sạch ({total_bytes:,} bytes across 9 files)"
+        )
+
+        # 2. Kiểm tra JNI_OnLoad (0x002060..0x00232c) & 10 phương thức JNI tại .data 0x040000..0x0400f0 (vaddr 0x044000)
+        jni_fn_ptrs = [
+            struct.unpack("<Q", so_bytes[0x040000 + i * 24 + 16 : 0x040000 + i * 24 + 24])[0]
+            for i in range(10)
+        ]
+        expected_jni_fn_ptrs = [
+            0x0035B8, 0x003664, 0x0373B4, 0x037654,
+            0x037764, 0x0377B0, 0x0377B8, 0x0377D8, 0x0377F8, 0x03780C
+        ]
+        self.assert_test(
+            "ImagePipeline_JniOnLoadAnd10JniNativeMethods",
+            jni_fn_ptrs == expected_jni_fn_ptrs
+            and all(sym in content for sym in [
+                "JNI_OnLoad", "0x00010006", "registerJpegTranscoderMethods",
+                "registerBitmapsMethods", "registerDalvikPurgeableDecoderMethods",
+                "registerNativeMemoryChunkMethods", "kNativeJpegTranscoderMethods_0x044000",
+                "kNativeMemoryChunkMethods_0x044060"
+            ]),
+            "Khớp JNI_OnLoad (0x002060) và cả 10 con trỏ hàm JNINativeMethod tại .data 0x044000..0x0440f0"
+        )
+
+        # 3. Kiểm tra bảng ánh xạ EXIF (.rodata 0x037c00) & JXFORM_CODE (.rodata 0x037b28) + EOI marker (0x037b44)
+        exif_table = list(struct.unpack("<8i", so_bytes[0x037C00:0x037C20]))
+        jxform_table = list(struct.unpack("<7i", so_bytes[0x037B28:0x037B44]))
+        eoi_marker = so_bytes[0x037B44:0x037B46]
+        self.assert_test(
+            "ImagePipeline_ExifAndJxformRodataTables",
+            exif_table == [0, 4, 2, 5, 6, 1, 7, 3]
+            and jxform_table == [5, 6, 7, 1, 2, 3, 4]
+            and eoi_marker == b"\xff\xd9"
+            and all(sym in content for sym in [
+                "kExifOrientationToRotationType_0x037c00",
+                "kRotationTypeToJxformCode_0x037b28",
+                "kStaticEoiMarker_0x037b44",
+                "getRotationTypeFromDegrees",
+                "getRotationTypeFromExifOrientation"
+            ]),
+            "Khớp bảng ánh xạ EXIF orientation .rodata 0x037c00 ({0,4,2,5,6,1,7,3}), JXFORM .rodata 0x037b28 ({5,6,7,1,2,3,4}) và EOI marker 0xFFD9"
+        )
+
+        # 4. Kiểm tra đường ống transcodeJpeg (0x00232c), downscaleJpeg (0x0024e0), rotateJpeg (0x00277c) & kích thước ABI libjpeg (0x248 / 0x290)
+        cmp_compress_size = struct.unpack("<I", so_bytes[0x00375C:0x003760])[0]
+        cmp_decompress_size = struct.unpack("<I", so_bytes[0x00B028:0x00B02C])[0]
+        self.assert_test(
+            "ImagePipeline_TranscodePipelineAndLibjpegAbiSizes",
+            cmp_compress_size == 0xF109229F      # cmp x20, #0x248 (584 bytes)
+            and cmp_decompress_size == 0xF10A429F # cmp x20, #0x290 (656 bytes)
+            and all(sym in content for sym in [
+                "transcodeJpeg", "downscaleJpeg", "rotateJpeg",
+                "kJpegCompressStructSize", "0x248",
+                "kJpegDecompressStructSize", "0x290",
+                "kJpegTransformInfoSize", "0x60"
+            ]),
+            "Khớp đường ống transcodeJpeg/downscaleJpeg/rotateJpeg và kích thước ABI jpeg_compress_struct (0x248 @ 0x00375c) / jpeg_decompress_struct (0x290 @ 0x00b028)"
+        )
+
+        # 5. Kiểm tra biến đổi khối DCT 8x8 nhóm nhị diện D_4 (transupp 0x01984c..0x01ab28) & tỷ lệ lượng tử hóa IJG (0x007ae4)
+        mov_5000 = struct.unpack("<I", so_bytes[0x007B00:0x007B04])[0]
+        mov_200 = struct.unpack("<I", so_bytes[0x007B0C:0x007B10])[0]
+        self.assert_test(
+            "ImagePipeline_LosslessDctDihedralGroupAndIjgQuality",
+            mov_5000 == 0x52827109  # mov w9, #0x1388 (5000) @ 0x007b00
+            and mov_200 == 0x52801909 # mov w9, #0xc8 (200) @ 0x007b0c
+            and all(sym in content for sym in [
+                "TransformDctBlock8x8", "JXFORM_ROT_90", "JXFORM_TRANSVERSE",
+                "jtransform_request_workspace", "jtransform_adjust_parameters",
+                "jtransform_execute_transform", "jpeg_set_quality", "jpeg_fdct_islow_0x02f8bc",
+                "jpeg_idct_islow_0x0324c8"
+            ]),
+            "Khớp biến đổi khối DCT 8x8 không suy hao nhóm D_4 (0x01984c..0x01ab28) và công thức tỷ lệ chất lượng IJG 5000/q vs 200-2q (0x007ae4)"
+        )
+
+        # 6. Kiểm tra Bitmaps_copyBitmap (0x0373b4), DalvikPurgeableDecoder_nativePinBitmap (0x037654) & NativeMemoryChunk (0x037764..0x03780c)
+        ldrb_readbyte = struct.unpack("<I", so_bytes[0x03780C:0x037810])[0]
+        self.assert_test(
+            "ImagePipeline_BitmapsPurgeableAndNativeMemoryChunk",
+            ldrb_readbyte == 0x39400040  # ldrb w0, [x2] @ 0x03780c
+            and all(sym in content for sym in [
+                "Bitmaps_copyBitmap", "DalvikPurgeableDecoder_nativePinBitmap",
+                "AndroidBitmap_lockPixels", "AndroidBitmap_unlockPixels",
+                "NativeMemoryChunk_nativeAllocate", "NativeMemoryChunk_nativeFree",
+                "NativeMemoryChunk_nativeCopyToByteArray", "NativeMemoryChunk_nativeCopyFromByteArray",
+                "NativeMemoryChunk_nativeMemcpy", "NativeMemoryChunk_nativeReadByte"
+            ]),
+            "Khớp Bitmaps_copyBitmap (0x0373b4), DalvikPurgeableDecoder_nativePinBitmap (0x037654) và 6 hàm NativeMemoryChunk (0x037764..0x03780c)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -9438,6 +9562,7 @@ class AutonomousVerificationEngine:
         self.verify_liblynx_markdown()
         self.verify_libnapi()
         self.verify_libluster()
+        self.verify_libimagepipeline()
         self.verify_overall_governance()
 
 

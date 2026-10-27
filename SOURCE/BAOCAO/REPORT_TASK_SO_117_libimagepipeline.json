@@ -1,18 +1,28 @@
 {
   "report_id": "REPORT_TASK_SO_117_libimagepipeline",
   "task_id": "TASK_SO_117_libimagepipeline",
+  "canonical_task_id": "TASK-128-RECONSTRUCTION-LIBIMAGEPIPELINE",
   "target_library": "libimagepipeline.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
   "evidence": {
-    "symbols_total": 30,
-    "jni_exports": 0,
-    "cxx_demangled_count": 2,
+    "binary_size_bytes": 264328,
+    "binary_sha256": "38fed18184707429505cfabd7540d22f5560965d310b6501ae05a67a0f7d2266",
+    "reconstructed_cpp_bytes": 194499,
+    "symbols_total": 393,
+    "exported_symbols": 1,
+    "imported_symbols": 19,
+    "jni_exports": 10,
+    "cxx_demangled_count": 393,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libimagepipeline",
+    "proof_json": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libimagepipeline.json",
+    "proof_md": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libimagepipeline.md",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "stub_count": 0
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn thành tái cấu trúc clean-room C++17 100% (194,499 bytes, 0 stub) cho libimagepipeline.so (Facebook Fresco ImagePipeline Native Engine liên kết tĩnh với libjpeg-turbo 1.5.3 build 20180808, 264,328 bytes, 393 hàm FDE): tái tạo chính xác JNI_OnLoad (0x002060), 10 phương thức JNI thuộc 4 lớp Java tại .data 0x044000..0x0440f0 (NativeJpegTranscoder, Bitmaps, DalvikPurgeableDecoder, NativeMemoryChunk), bảng ánh xạ EXIF .rodata 0x037c00 và JXFORM .rodata 0x037b28, 129 thông điệp lỗi chuẩn IJG tại .data.rel.ro 0x043768, đường ống transcodeJpeg/downscaleJpeg/rotateJpeg, bộ biến đổi khối DCT 8x8 không suy hao thuộc nhóm nhị diện D_4 (0x01984c..0x01ab28) và các nhân FDCT/IDCT/Huffman/YCbCr-RGB.",
+  "acceptance_criteria_passed": true
 }

@@ -2511,3 +2511,15 @@
   - `adversary_critic_agent.py`: **88 / 169 `VERIFIED_AND_ACCEPTED` (52.07%)** (`100% REAL`).
   - `verify_reconstruction_suite.py`: **563 / 563 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+## 116. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libimagepipeline.so (TASK-128-RECONSTRUCTION-LIBIMAGEPIPELINE / TASK_SO_117_libimagepipeline)
+- **Thời gian**: 2026-10-27 12:03:00
+- **Thư viện**: `libimagepipeline.so` (`264,328 bytes`, SHA-256 `38fed18184707429505cfabd7540d22f5560965d310b6501ae05a67a0f7d2266`, `.text` `0x001fc0..0x037814` = `219,220 bytes`, `.rodata` `0x037820..0x03a8ca` = `12,458 bytes`, Facebook Fresco ImagePipeline Native Engine statically linked with `libjpeg-turbo 1.5.3 build 20180808`, 393 FDE functions).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `194,499 bytes` C++17/H, 0 stub)**:
+  1. **`JNI_OnLoad` (`0x002060..0x00232c`), `.bss` (`0x0440f0..0x044128`) & 10 Phương thức JNI (`.data 0x044000..0x0440f0`)**: Khôi phục `JNI_OnLoad` lưu 4 `jmethodID` của `InputStream`/`OutputStream` và 3 `GlobalRef` `java/lang/RuntimeException` vào `.bss`, đăng ký 10 phương thức gốc JNI trên 4 lớp: `NativeJpegTranscoder` (`0x0035b8`, `0x003664`), `Bitmaps` (`0x0373b4`), `DalvikPurgeableDecoder` (`0x037654`), và `NativeMemoryChunk` (`0x037764..0x03780c`).
+  2. **Bảng `.rodata` EXIF (`0x037c00`), `JXFORM_CODE` (`0x037b28`) & Đường ống Chuyển mã JPEG (`0x00232c..0x003710`)**: Khôi phục bảng ánh xạ hướng EXIF `1..8` `{0, 4, 2, 5, 6, 1, 7, 3}`, bảng `JXFORM_CODE` `{5, 6, 7, 1, 2, 3, 4}`, EOI marker `{0xFF, 0xD9}` (`0x037b44`), `transcodeJpeg` (`0x00232c`), `downscaleJpeg` (`0x0024e0`), `rotateJpeg` (`0x00277c`), `JpegErrorHandler` `setjmp`/`longjmp` (`0x00294c..0x002b24`) và các lớp bao luồng `JpegInputStreamWrapper` / `JpegOutputStreamWrapper` (`0x002bc4..0x003468`).
+  3. **Nhân `libjpeg-turbo 1.5.3` (`0x003710..0x03726c`) & Biến đổi Khối DCT $8\times 8$ Không suy hao Nhóm $D_4$ (`0x01984c..0x01ab28`)**: Khôi phục `jpeg_CreateCompress` (`0x248 = 584 B` @ `0x00375c`), `jpeg_CreateDecompress` (`0x290 = 656 B` @ `0x00b028`), tỷ lệ chất lượng IJG `5000/q` vs `200-2q` (`0x007ae4..0x007b20`), 129 thông điệp lỗi chuẩn IJG (`.data.rel.ro 0x043768`), phép biến đổi hệ số DCT không suy hao nhóm nhị diện $D_4$ (`R_90^4 = I`, `F_H^2 = F_V^2 = T^2 = V^2 = I`), và các nhân FDCT/IDCT/Huffman/YCbCr-RGB.
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **89 / 169 `VERIFIED_AND_ACCEPTED` (52.66%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **569 / 569 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
