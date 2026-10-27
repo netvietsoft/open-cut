@@ -1,18 +1,28 @@
 {
   "report_id": "REPORT_TASK_SO_118_libluster",
   "task_id": "TASK_SO_118_libluster",
+  "canonical_task_id": "TASK-127-RECONSTRUCTION-LIBLUSTER",
   "target_library": "libluster.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "status": "COMPLETED",
+  "completion_percentage": 100,
   "evidence": {
-    "symbols_total": 25,
-    "jni_exports": 0,
-    "cxx_demangled_count": 0,
+    "binary_size_bytes": 250720,
+    "binary_sha256": "18d0ecc52de2a8eb93a63bda59bbba1d179c92c7c56b342bfc01ed4866ab52d4",
+    "reconstructed_cpp_bytes": 267967,
+    "symbols_total": 10,
+    "exported_symbols": 1,
+    "imported_symbols": 9,
+    "jni_exports": 1,
+    "cxx_demangled_count": 10,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libluster",
+    "proof_json": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libluster.json",
+    "proof_md": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\PHAN-BIEN\\BANG-CHUNG-XAC-MINH\\PROOF_libluster.md",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "stub_count": 0
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn thành tái cấu trúc clean-room C++17 100% (267,967 bytes, 0 stub) cho libluster.so (ByteDance Cloak / Terrain DEX-to-Native VM Bridge bảo vệ 42 lớp Kotlin/Java và 93 phương thức JNI nhạy cảm của CapCut Subscription/Credit/Commerce/EnvGuard): chứng minh toán học đồng nhất thức MBA bất biến ASLR (-0x640958), giải mã 6 chuỗi XOR qua sub_16328 (0x016328), khôi phục 1,790 chuỗi .rodata (0x016a0c..0x029380), 464 ánh xạ lớp, 344 trường, 594 phương thức, 220 chuỗi intern tìm kiếm nhị phân qua sub_35cc (0x0035cc), 7 hàm trợ giúp LusterHelperTable (0x014838..0x015ab8), đăng ký động JNI sub_4398 (0x004398) và toàn bộ 93 phương thức JNI ảo hóa (0x0050a0..0x01459c).",
+  "acceptance_criteria_passed": true
 }

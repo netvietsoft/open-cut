@@ -1,0 +1,36 @@
+{
+  "task_id": "TASK-127-RECONSTRUCTION-LIBLUSTER",
+  "legacy_task_id": "TASK_SO_118_libluster",
+  "title": "Clean-Room C++17 Reconstruction of libluster.so (ByteDance Cloak/Terrain DEX-to-Native VM Bridge for CapCut Subscription, Credit Reward & Commerce)",
+  "status": "DONE",
+  "assigned_agent": "Agent 0 (Orchestrator) & Agent 3 (Android/Native)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "created_at": "2026-10-27T11:20:00+07:00",
+  "target_binary": {
+    "name": "libluster.so",
+    "path": "SOURCE/apktool-res/lib/arm64-v8a/libluster.so",
+    "size_bytes": 250720,
+    "sha256": "18d0ecc52de2a8eb93a63bda59bbba1d179c92c7c56b342bfc01ed4866ab52d4"
+  },
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libluster/**",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_118_libluster.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_118_libluster.md",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libluster.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libluster.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md",
+    ".ai/**"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 100% clean-room C++17 source code (>= 120 KB across headers & implementation files, 0 stubs) in SOURCE/GIAI-MA/libluster/ with bilingual EN/VN comments.",
+    "Mathematically prove the ASLR-invariant MBA pointer decryption identity (((0x00a060400a021040ULL | ~pc) & 0x00a061440a061440ULL) + ((pc & 0x0000010400040400ULL) | 0x01010104ULL)) ^ 0xff5f9ebbf49ce3ecULL == 0xffffffffff9bf6a8ULL (-0x640958) and OLLVM quadratic non-residue predicates mod 7 (0x24924925) and mod 19 (0xaf286bcb / 0xa1af286c).",
+    "Decrypt all 6 XOR-protected strings (com/illusion/light/EffectUtil, Ew0PFxIIElcAXVdHWFpVCEM0, (I)V, java/lang/String, intern, ()Ljava/lang/String;) via sub_16328.",
+    "Reconstruct JNI_OnLoad (0x1674c), cacheInitial(env, 0x272a), sub_3b94 (EffectUtil bootstrap), sub_4398 (42-class / 93-method dynamic JNI registration dispatcher), all 7 LusterHelperTable functions (0x14838..0x16328), sub_35cc (220-entry binary search), sub_16688 (GetMethodID/GetStaticMethodID fallback), and all 93 virtualized JNI entry methods (0x050a0..0x1459c).",
+    "Pass all 3 automated verification gates: adversary_critic_agent.py (VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (100% PASS), and native_audit_watchdog.py (0 high findings)."
+  ],
+  "completed_at": "2026-10-27T11:39:00+07:00"
+}

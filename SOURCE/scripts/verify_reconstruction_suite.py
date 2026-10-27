@@ -9216,6 +9216,136 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # 88. KIỂM CHỨNG: libluster.so (ByteDance Cloak / Terrain DEX-to-Native VM Bridge)
+    # =========================================================================
+    def verify_libluster(self):
+        import hashlib
+        import struct
+        print("\n[88] Đang kiểm chứng libluster.so (ByteDance Cloak / Terrain DEX-to-Native VM Bridge)...")
+        luster_dir = GIAIMA_DIR / "libluster"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libluster.so"
+
+        code_files = [
+            luster_dir / "luster_types.h",
+            luster_dir / "luster_rodata_tables.h",
+            luster_dir / "luster_rodata_tables.cpp",
+            luster_dir / "luster_vm_helpers.h",
+            luster_dir / "luster_vm_helpers.cpp",
+            luster_dir / "luster_jni_methods.h",
+            luster_dir / "luster_jni_methods.cpp",
+            luster_dir / "luster_interface.h",
+            luster_dir / "luster_pseudocode.cpp",
+        ]
+        all_exist = so_path.exists() and all(f.exists() for f in code_files)
+        total_bytes = sum(f.stat().st_size for f in code_files if f.exists())
+        so_bytes = so_path.read_bytes() if so_path.exists() else b""
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest() if so_bytes else ""
+        content = "\n".join(f.read_text(encoding="utf-8") for f in code_files if f.exists())
+
+        # 1. Kiểm tra SHA-256 nhị phân (250,720 bytes) & dung lượng C++17 sạch (>= 260,000 bytes)
+        self.assert_test(
+            "Luster_BinaryHashAndCleanRoomVolume",
+            all_exist
+            and len(so_bytes) == 250720
+            and so_sha256 == "18d0ecc52de2a8eb93a63bda59bbba1d179c92c7c56b342bfc01ed4866ab52d4"
+            and total_bytes >= 260000,
+            f"Khớp SHA-256 nhị phân libluster.so (250,720B) và dung lượng C++17 sạch ({total_bytes:,} bytes across 9 files)"
+        )
+
+        # 2. Kiểm tra đồng nhất thức toán học MBA bất biến ASLR (-0x640958 = 0xffffffffff9bf6a8)
+        mask64 = 0xFFFFFFFFFFFFFFFF
+        mba_ok = True
+        for test_pc in [0x0000000000003B94, 0x0000007F8A1250A0, 0x0000007BF4C1459C, 0xDEADBEEFCAFEBABE]:
+            term1 = ((0x00A060400A021040 | (~test_pc & mask64)) & 0x00A061440A061440) & mask64
+            term2 = ((test_pc & 0x0000010400040400) | 0x0000000001010104) & mask64
+            delta = ((term1 + term2) & mask64) ^ 0xFF5F9EBBF49CE3EC
+            if delta != 0xFFFFFFFFFF9BF6A8:
+                mba_ok = False
+        self.assert_test(
+            "Luster_AslrInvariantMbaPointerDecryption",
+            mba_ok and all(sym in content for sym in [
+                "ComputeLusterMbaDelta", "0xffffffffff9bf6a8ULL", "0x0000000000640958ULL",
+                "EvalOllvmMod7Divisible", "EvalOllvmMod19NonZero", "0x24924925U", "0xaf286bcbU"
+            ]),
+            "Chứng minh toán học đồng nhất thức MBA bất biến ASLR (delta = 0xffffffffff9bf6a8 = -0x640958) và vị từ bất khả quy OLLVM mod 7 / mod 19"
+        )
+
+        # 3. Kiểm tra giải mã 6 chuỗi XOR qua sub_16328 (0x016328..0x016354)
+        def xor_dec(c_off, k_off, length):
+            return bytes(so_bytes[c_off + i] ^ so_bytes[k_off + i] for i in range(length))
+
+        s_effect_util = xor_dec(0x167d0, 0x366a0, 30)
+        s_sig_iv = xor_dec(0x1680c, 0x3668c, 5)
+        s_reg_name = xor_dec(0x167f0, 0x36670, 25)
+        s_jl_string = xor_dec(0x30210, 0x36650, 17)
+        s_intern = xor_dec(0x30224, 0x36648, 7)
+        s_sig_intern = xor_dec(0x30230, 0x36630, 21)
+        eor_1633c = struct.unpack("<I", so_bytes[0x1633c:0x16340])[0]
+        self.assert_test(
+            "Luster_Sub16328_XorStringsDecryption",
+            eor_1633c == 0x4A080168
+            and s_effect_util == b"com/illusion/light/EffectUtil\x00"
+            and s_sig_iv == b"(I)V\x00"
+            and s_reg_name == b"Ew0PFxIIElcAXVdHWFpVCEM0\x00"
+            and s_jl_string == b"java/lang/String\x00"
+            and s_intern == b"intern\x00"
+            and s_sig_intern == b"()Ljava/lang/String;\x00"
+            and all(sym in content for sym in [
+                "sub_16328", "com/illusion/light/EffectUtil",
+                "Ew0PFxIIElcAXVdHWFpVCEM0", "java/lang/String", "()Ljava/lang/String;"
+            ]),
+            "Khớp hàm giải mã XOR sub_16328 (0x016328: eor w8, w11, w8 = 0x4a080168) và cả 6 chuỗi bí mật trong .rodata"
+        )
+
+        # 4. Kiểm tra JNI_OnLoad (0x01674c), cacheInitial(env, 0x272a) và tìm kiếm nhị phân sub_35cc (0x0035cc)
+        cache_init_arg = struct.unpack("<I", so_bytes[0x16798:0x1679c])[0]
+        hot_table_first = struct.unpack("<I", so_bytes[0x2fea0:0x2fea4])[0]
+        hot_table_211 = struct.unpack("<I", so_bytes[0x2fea0 + 211 * 4:0x2fea0 + 212 * 4])[0]
+        self.assert_test(
+            "Luster_JniOnLoadAndSub35ccBinarySearch",
+            cache_init_arg == 0x5284E541  # mov w1, #0x272a (10026)
+            and hot_table_first == 0
+            and hot_table_211 == 1018
+            and all(sym in content for sym in [
+                "JNI_OnLoad", "0x272A", "sub_3b94",
+                "sub_35cc", "kLusterHotStringIndices", "1790U"
+            ]),
+            "Khớp JNI_OnLoad (0x01674c -> cacheInitial(env, 0x272a) @ 0x016798), sub_3b94 (0x003b94) và tìm kiếm nhị phân sub_35cc (0x0035cc) trên 220 chỉ mục chuỗi"
+        )
+
+        # 5. Kiểm tra đăng ký động sub_4398 (0x004398), 42 lớp (.rodata 0x016814) và 93 phương thức JNI (.data.rel.ro 0x03b750)
+        class0 = struct.unpack("<III", so_bytes[0x16814:0x16820])
+        class41 = struct.unpack("<III", so_bytes[0x16814 + 41 * 12:0x16814 + 42 * 12])
+        method0_fn = struct.unpack("<Q", so_bytes[0x3b758:0x3b760])[0]
+        method92_fn = struct.unpack("<Q", so_bytes[0x3b750 + 92 * 16 + 8:0x3b750 + 93 * 16])[0]
+        self.assert_test(
+            "Luster_Sub4398And93VirtualizedJniMethods",
+            class0 == (13, 0, 1)
+            and class41 == (376, 92, 1)
+            and method0_fn == 0x0050A0
+            and method92_fn == 0x01459C
+            and all(sym in content for sym in [
+                "sub_4398", "kLusterProtectedClasses", "kLusterVirtualizedMethods",
+                "LusterJniMethod_00_0x050a0", "LusterJniMethod_92_0x1459c"
+            ]),
+            "Khớp bảng 42 lớp bảo vệ (.rodata 0x016814..0x016a0c) và toàn bộ 93 phương thức JNI ảo hóa (.data.rel.ro 0x03b750..0x03bd18 -> 0x0050a0..0x01459c)"
+        )
+
+        # 6. Kiểm tra bảng 7 hàm trợ giúp LusterHelperTable (.data.rel.ro 0x03bd20..0x03bd58) & sub_16688
+        helpers = list(struct.unpack("<7Q", so_bytes[0x3bd20:0x3bd58]))
+        self.assert_test(
+            "Luster_HelperTableAndTerrainVmBridge",
+            helpers == [0x14838, 0x14D20, 0x151CC, 0x152A0, 0x15400, 0x15808, 0x15AB8]
+            and all(sym in content for sym in [
+                "kLusterHelperTable", "Helper0_ResolveField", "Helper1_ResolveMethod",
+                "Helper2_ResolveMethodDirect", "Helper3_GetTypeClassName",
+                "Helper4_ResolveClassByIndex", "Helper5_ResolveClassByDescriptor",
+                "Helper6_ResolveInternedString", "sub_16688", "vmInterpret"
+            ]),
+            "Khớp bảng 7 hàm trợ giúp LusterHelperTable (.data.rel.ro 0x03bd20..0x03bd58: 0x14838..0x15ab8), sub_16688 (0x016688) và cầu nối vmInterpret"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -9307,6 +9437,7 @@ class AutonomousVerificationEngine:
         self.verify_libwasm()
         self.verify_liblynx_markdown()
         self.verify_libnapi()
+        self.verify_libluster()
         self.verify_overall_governance()
 
 

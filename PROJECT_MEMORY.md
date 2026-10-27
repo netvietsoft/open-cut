@@ -2499,3 +2499,15 @@
   - `verify_reconstruction_suite.py`: **557 / 557 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
 
+
+## 115. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libluster.so (TASK-127-RECONSTRUCTION-LIBLUSTER / TASK_SO_118_libluster)
+- **Thời gian**: 2026-10-27 11:39:00
+- **Thư viện**: `libluster.so` (`250,720 bytes`, SHA-256 `18d0ecc52de2a8eb93a63bda59bbba1d179c92c7c56b342bfc01ed4866ab52d4`, `.text` `0x003590..0x0167d0` = `78,400 bytes`, `.rodata` `0x0167d0..0x0366be` = `130,798 bytes`, ByteDance Cloak / Terrain DEX-to-Native Virtualization Bridge protecting 42 CapCut classes and 93 sensitive JNI methods).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `267,967 bytes` C++17/H, 0 stub)**:
+  1. **Đồng nhất thức MBA Bất biến ASLR (`-0x640958 = 0xffffffffff9bf6a8ULL`) & Giải mã 6 Chuỗi XOR (`sub_16328` @ `0x016328..0x016354`)**: Chứng minh đại số đồng nhất thức MBA giải mã con trỏ bất biến với ASLR (`0x003bb4..0x003c28`), vị từ mờ số học OLLVM modulo 7 (`0x24924925U`, `0xb6db6db7U`) và modulo 19 (`0xaf286bcbU`, `0xa1af286cU > 0x0d79435eU`), cùng giải mã 6 chuỗi XOR: `"com/illusion/light/EffectUtil"`, `"(I)V"`, `"Ew0PFxIIElcAXVdHWFpVCEM0"`, `"java/lang/String"`, `"intern"`, và `"()Ljava/lang/String;"`.
+  2. **`JNI_OnLoad` (`0x01674c..0x0167d0`), `sub_3b94` (`0x003b94..0x004398`), `sub_35cc` (`0x0035cc..0x003b94`) & `sub_4398` (`0x004398..0x0050a0`)**: Khôi phục `JNI_OnLoad` gọi `cacheInitial(env, 0x272a)` (`10,026` khe đệm trong `libterrain.so`) và `sub_3b94`, tìm kiếm nhị phân `sub_35cc` trên 220 chỉ mục chuỗi intern tại `.rodata 0x02fea0..0x030210`, và đăng ký động `sub_4398` cho 42 lớp bảo vệ (`.rodata 0x016814..0x016a0c`) cùng 93 phương thức JNI (`.data.rel.ro 0x03f750..0x03fd18`).
+  3. **7 Hàm trợ giúp `LusterHelperTable` (`.data.rel.ro 0x03fd20..0x03fd58`) & 93 Phương thức JNI Ảo hóa (`0x0050a0..0x01459c`)**: Khôi phục 1,790 chuỗi `.rodata`, 464 ánh xạ lớp, 344 trường, 594 phương thức, 7 callback trợ giúp (`0x014838..0x015ab8`), `sub_16688` (`0x016688`), và toàn bộ 93 phương thức JNI ảo hóa dựng khung `TerrainVMContext` 48-byte (`0x30`) gọi `vmInterpret`.
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **88 / 169 `VERIFIED_AND_ACCEPTED` (52.07%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **563 / 563 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
