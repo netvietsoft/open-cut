@@ -1,0 +1,43 @@
+{
+  "lib_name": "libstatic-webp",
+  "binary_file": "libstatic-webp.so",
+  "binary_size_bytes": 396088,
+  "binary_sha256": "757a3d4beac3a14fd300c3b74605f3c7e5e80cc1048e3183ec46cb2931b64415",
+  "reconstructed_size_bytes": 1289934,
+  "reconstructed_files": [
+    "static_webp_types.h",
+    "static_webp_rodata_tables.h",
+    "static_webp_rodata_tables.cpp",
+    "static_webp_fresco_jni.h",
+    "static_webp_fresco_jni.cpp",
+    "static_webp_jpeg_png_codecs.h",
+    "static_webp_jpeg_png_codecs.cpp",
+    "static_webp_vp8_engine.h",
+    "static_webp_vp8_engine.cpp"
+  ],
+  "fde_count": 701,
+  "exported_symbols_count": 16,
+  "registered_jni_methods_count": 27,
+  "stub_count": 0,
+  "verified_opcodes": [
+    "0x0049a0: 71000c1f cmp w0, #3 (Bitmap.Config.RGB_565 check)",
+    "0x0049b0: 528000c8 mov w8, #6; 0x0049bc: 531f7948 lsl w8, w10, #1 (MODE_RGB_565, stride = width << 1)",
+    "0x0049cc: 528000e8 mov w8, #7; 0x0049d4: 531e7548 lsl w8, w10, #2 (MODE_rgbA, stride = width << 2)",
+    "0x0049e0: 1b0b7d08 mul w8, w8, w11 (u.RGBA.size = stride * height)",
+    "0x004ac0: d10183ff sub sp, sp, #0x60 (JNI_OnLoad entry, 1804 bytes)",
+    "0x0050c8: 52800063 mov w3, #3 (RegisterNatives 3 methods @ .data 0x064000 for WebpBitmapFactoryImpl)",
+    "0x0057f4: 52800a01 mov w1, #0x50; 0x0057f8: 52804902 mov w2, #0x248 (jpeg_CreateCompress version=80, size=584)",
+    "0x005820: fd47b500 ldr d0, [x8, #0xf68] (.rodata 0x04ff68 = 0x0000000200000003 {3, JCS_RGB})",
+    "0x0067f4: 52800043 mov w3, #2 (RegisterNatives 2 methods @ .data 0x064050 for WebpTranscoderImpl)",
+    "0x009200: 52800183 mov w3, #0xc (RegisterNatives 12 methods @ .data 0x064080 for WebPImage)",
+    "0x028c94: d10503ff sub sp, sp, #0x140 (WebPDecode entry)",
+    "0x028d04: 71001c1f cmp w0, #7; 0x028d0c: 52800076 mov w22, #3 (VP8_STATUS_NOT_ENOUGH_DATA -> BITSTREAM_ERROR)"
+  ],
+  "math_and_abi_proofs": {
+    "rgb565_vs_rgba_stride_0049a0": "cfg==3 -> MODE_RGB_565(6), stride=w<<1; else MODE_rgbA(7), stride=w<<2; size=stride*h",
+    "jpeg_compress_struct_abi_0057f4": "JPEG_LIB_VERSION=80 (0x50), sizeof(jpeg_compress_struct)=584 (0x248), .rodata 0x04ff68={3,2}",
+    "webp_decoder_config_abi_028c94": "input=+0x00 (40 B), output=+0x28 (120 B), options=+0xa0 (76 B)",
+    "jni_native_method_tables_064000": "27 JNINativeMethod entries across 4 tables (0x064000, 0x064050, 0x064080, 0x0641a0)"
+  },
+  "status": "VERIFIED_AND_ACCEPTED"
+}

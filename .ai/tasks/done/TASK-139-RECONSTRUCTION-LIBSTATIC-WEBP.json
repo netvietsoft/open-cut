@@ -1,0 +1,32 @@
+{
+  "task_id": "TASK-139-RECONSTRUCTION-LIBSTATIC-WEBP",
+  "so_task_id": "TASK_SO_035_libstatic_webp",
+  "title": "Clean-Room C++17 Reconstruction of libstatic-webp.so (Target 100/169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Frontend/Android Native) & Agent 13 (Adversary Auditor)",
+  "orchestrator": "Agent 0 (Orchestrator)",
+  "binary_target": "SOURCE/apktool-res/lib/arm64-v8a/libstatic-webp.so",
+  "binary_size_bytes": 396088,
+  "binary_sha256": "757a3d4beac3a14fd300c3b74605f3c7e5e80cc1048e3183ec46cb2931b64415",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libstatic-webp/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libstatic-webp.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_035_libstatic_webp.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "acceptance_criteria": [
+    "Reconstruct 9 clean-room C++17/H files (>= 40 KB, 0 stubs) covering all 701 FDEs and 16 exported symbols.",
+    "Verify JNI_OnLoad (0x004ac0, 1804 bytes), Fresco StaticWebpNativeLoader / WebpTranscoderImpl JNI native method tables, libwebp VP8/VP8L decoder & encoder DSP/NEON tables, and AndroidBitmap_lockPixels integration.",
+    "Pass adversary_critic_agent.py (100/169 VERIFIED_AND_ACCEPTED), verify_reconstruction_suite.py (635/635 PASS, 100.0%), and native_audit_watchdog.py (0 high findings)."
+  ],
+  "completed_at": "2026-10-27T15:50:37.675867+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (100/169)",
+    "reconstruction_suite": "635/635 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 1289934,
+    "fde_count": 701,
+    "registered_jni_methods": 27,
+    "stub_count": 0
+  }
+}

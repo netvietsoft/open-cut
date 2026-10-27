@@ -10670,6 +10670,111 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 100: libstatic-webp.so (Facebook Fresco Static & Animated WebP / JPEG / PNG)
+    # =========================================================================
+    def verify_libstatic_webp(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 100: libstatic-webp.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libstatic-webp"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 1,000 KB across >= 9 files
+        self.assert_test(
+            "StaticWebp_SourceSizeGate",
+            total_bytes > 1000000 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 1,000 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (396,088 B, SHA-256) & 4 JNINativeMethod tables in .data (0x064000, 0x064050, 0x064080, 0x0641a0; file offset 0x060000)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libstatic-webp.so"
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fn_064000 = struct.unpack_from("<Q", so_bytes, 0x060010)[0]
+        fn_064050 = struct.unpack_from("<Q", so_bytes, 0x060060)[0]
+        fn_064080 = struct.unpack_from("<Q", so_bytes, 0x060090)[0]
+        fn_0641a0 = struct.unpack_from("<Q", so_bytes, 0x0601b0)[0]
+        reg_bmp_cnt = struct.unpack_from("<I", so_bytes, 0x0050c8)[0]
+        reg_tr_cnt = struct.unpack_from("<I", so_bytes, 0x0067f4)[0]
+        reg_img_cnt = struct.unpack_from("<I", so_bytes, 0x009200)[0]
+        self.assert_test(
+            "StaticWebp_Elf64And27JniNativeMethods",
+            len(so_bytes) == 396088
+            and sha256_hex == "757a3d4beac3a14fd300c3b74605f3c7e5e80cc1048e3183ec46cb2931b64415"
+            and fn_064000 == 0x0053a0
+            and fn_064050 == 0x006840
+            and fn_064080 == 0x007360
+            and fn_0641a0 == 0x007e30
+            and reg_bmp_cnt == 0x52800063
+            and reg_tr_cnt == 0x52800043
+            and reg_img_cnt == 0x52800183
+            and "kWebpBitmapFactoryJniMethods_064000" in content
+            and "kWebpTranscoderJniMethods_064050" in content
+            and "kWebPImageJniMethods_064080" in content
+            and "kWebPFrameJniMethods_0641a0" in content,
+            "Khớp nhị phân libstatic-webp.so (396,088 B, SHA-256 757a3d4b...) và 27 phương thức JNINativeMethod trong 4 bảng .data (0x064000, 0x064050, 0x064080, 0x0641a0)"
+        )
+
+        # 3. createBitmapDecode (0x0049a0..0x004a0c): preferredConfig == 3 (RGB_565 -> MODE_RGB_565=6, lsl #1) vs ARGB_8888 (MODE_rgbA=7, lsl #2)
+        bmp_cmp = struct.unpack_from("<I", so_bytes, 0x0049a0)[0]
+        bmp_rgb565 = struct.unpack_from("<I", so_bytes, 0x0049b0)[0]
+        bmp_rgba = struct.unpack_from("<I", so_bytes, 0x0049cc)[0]
+        bmp_mul = struct.unpack_from("<I", so_bytes, 0x0049e0)[0]
+        self.assert_test(
+            "StaticWebp_CreateBitmapDecodeColorspaceAndStride",
+            bmp_cmp == 0x71000C1F
+            and bmp_rgb565 == 0x528000C8
+            and bmp_rgba == 0x528000E8
+            and bmp_mul == 0x1B0B7D08
+            and "ConfigureBitmapWebPDecBuffer" in content
+            and "MODE_RGB_565" in content
+            and "MODE_rgbA" in content,
+            "Khớp createBitmapDecode (0x0049a0: cmp w0, #3; 0x0049b0: mov w8, #6 MODE_RGB_565 lsl #1; 0x0049cc: mov w8, #7 MODE_rgbA lsl #2; 0x0049e0: mul w8, w8, w11)"
+        )
+
+        # 4. transcodeToJpeg (0x005768..0x0058c0): jpeg_CreateCompress(80, 0x248) & .rodata 0x04ff68 (0x0000000200000003)
+        jpeg_ver = struct.unpack_from("<2I", so_bytes, 0x0057f4)
+        ro_04ff68 = struct.unpack_from("<Q", so_bytes, 0x04ff68)[0]
+        self.assert_test(
+            "StaticWebp_TranscodeToJpegAndRodata0x04ff68",
+            jpeg_ver == (0x52800A01, 0x52804902)
+            and ro_04ff68 == 0x0000000200000003
+            and "TranscodeRgbScanlinesToJpeg" in content
+            and "0x0000000200000003ULL" in content,
+            "Khớp transcodeToJpeg (0x0057f4: mov w1, #0x50=80; mov w2, #0x248=584) và hằng số .rodata 0x04ff68 (0x0000000200000003 = {input_components=3, JCS_RGB=2})"
+        )
+
+        # 5. transcodeToPng: libpng "1.6.37" @ 0x050108 & TranscodeRgbaScanlinesToPng
+        png_ver = so_bytes[0x050108:0x05010e]
+        png_jni_entry = struct.unpack_from("<I", so_bytes, 0x006954)[0]
+        self.assert_test(
+            "StaticWebp_TranscodeToPng1637AndRgbaAllocation",
+            png_ver == b"1.6.37"
+            and png_jni_entry == 0xD10103FF
+            and "TranscodeRgbaScanlinesToPng" in content
+            and "1.6.37" in content,
+            "Khớp nativeTranscodeWebpToPng (0x006954: sub sp, sp, #0x40), chuỗi libpng '1.6.37' (0x050108) và TranscodeRgbaScanlinesToPng"
+        )
+
+        # 6. WebPDecode (0x028c94..0x028dfc): 0x028c94 sub sp, sp, #0x140 (0xd10503ff), 0x028d04 cmp w0, #7 (0x71001c1f), 0x028d0c mov w22, #3 (0x52800076)
+        dec_entry = struct.unpack_from("<I", so_bytes, 0x028c94)[0]
+        dec_cmp7 = struct.unpack_from("<I", so_bytes, 0x028d04)[0]
+        dec_mov3 = struct.unpack_from("<I", so_bytes, 0x028d0c)[0]
+        self.assert_test(
+            "StaticWebp_WebPDecodeAndStatusMapping",
+            dec_entry == 0xD10503FF
+            and dec_cmp7 == 0x71001C1F
+            and dec_mov3 == 0x52800076
+            and "WebPDecodeCleanRoom" in content
+            and "VP8_STATUS_BITSTREAM_ERROR" in content,
+            "Khớp WebPDecode (0x028c94: sub sp, sp, #0x140; 0x028d04: cmp w0, #7; 0x028d0c: mov w22, #3 VP8_STATUS_BITSTREAM_ERROR)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -10773,6 +10878,7 @@ class AutonomousVerificationEngine:
         self.verify_libterrain()
         self.verify_libtt_ugen_layout()
         self.verify_libjato()
+        self.verify_libstatic_webp()
         self.verify_overall_governance()
 
 

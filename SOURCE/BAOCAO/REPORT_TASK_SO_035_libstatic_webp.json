@@ -1,18 +1,13 @@
 {
-  "report_id": "REPORT_TASK_SO_035_libstatic_webp",
   "task_id": "TASK_SO_035_libstatic_webp",
-  "target_library": "libstatic-webp.so",
-  "assigned_agent": "Agent 11 - DESIGNER & Agent 3 - FRONTEND",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 82,
-    "jni_exports": 0,
-    "cxx_demangled_count": 21,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libstatic-webp",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "governance_task_id": "TASK-139-RECONSTRUCTION-LIBSTATIC-WEBP",
+  "library": "libstatic-webp.so",
+  "binary_size_bytes": 396088,
+  "binary_sha256": "757a3d4beac3a14fd300c3b74605f3c7e5e80cc1048e3183ec46cb2931b64415",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_size_bytes": 1289934,
+  "fde_count": 701,
+  "exported_symbols_count": 16,
+  "registered_jni_methods_count": 27,
+  "stub_count": 0
 }
