@@ -1,18 +1,23 @@
 {
   "report_id": "REPORT_TASK_SO_120_liblynx_markdown",
   "task_id": "TASK_SO_120_liblynx_markdown",
+  "canonical_task_id": "TASK-125-RECONSTRUCTION-LIBLYNX-MARKDOWN",
   "target_library": "liblynx_markdown.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
+  "assigned_agent": "Agent 3 (Frontend/Android & Native JNI) + Agent 13 (Adversary Auditor)",
+  "status": "RECONSTRUCTED_AND_VERIFIED",
+  "completion_percentage": 100,
   "evidence": {
+    "binary_size_bytes": 247888,
+    "binary_sha256": "3f238dfc468cd0b314eb0b828565c3353dba165c20dab0bb76d9957760bd9a2d",
+    "reconstructed_size_bytes": 263879,
     "symbols_total": 131,
     "jni_exports": 38,
     "cxx_demangled_count": 56,
     "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\liblynx_markdown",
     "has_cpp_interface": true,
-    "has_strings": true
+    "has_strings": true,
+    "stub_count": 0
   },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "findings_summary": "Hoàn tất tái cấu trúc sạch C++17 (263,879 bytes, 9 file C++17/H + README_ANALYSIS.md, 0 stub) cho liblynx_markdown.so (247,888 bytes): Phục hồi toàn bộ 38 hàm JNI của com.bytedance.xelement.markdown.MarkdownDocument (0x00d300..0x018420), cấu trúc MarkdownDocument 3,720 bytes (0xe88), bộ phân tích Markdown Discount (MMIOT magic 0x19600731) + GFM, bộ giải mã bảng kiểu dáng nhị phân, động cơ dàn trang ttoffice::tttext & Typewriter cursor, tìm kiếm nhị phân offset (0x0142d4) và BufferCanvasHelper (0x018924).",
+  "acceptance_criteria_passed": true
 }

@@ -1,0 +1,116 @@
+{
+  "lib_name": "liblynx_markdown",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/liblynx_markdown.so",
+  "binary_size_bytes": 247888,
+  "binary_sha256": "3f238dfc468cd0b314eb0b828565c3353dba165c20dab0bb76d9957760bd9a2d",
+  "task_id": "TASK-125-RECONSTRUCTION-LIBLYNX-MARKDOWN",
+  "legacy_task_id": "TASK_SO_120_liblynx_markdown",
+  "verified_at": "2026-10-27T10:35:00+07:00",
+  "status": "PROOF_SUBMITTED",
+  "reconstructed_size_bytes": 263879,
+  "reconstructed_files": [
+    "SOURCE/GIAI-MA/liblynx_markdown/lynx_markdown_types.h",
+    "SOURCE/GIAI-MA/liblynx_markdown/lynx_markdown_parser.h",
+    "SOURCE/GIAI-MA/liblynx_markdown/lynx_markdown_parser.cpp",
+    "SOURCE/GIAI-MA/liblynx_markdown/lynx_markdown_layout_draw.h",
+    "SOURCE/GIAI-MA/liblynx_markdown/lynx_markdown_layout_draw.cpp",
+    "SOURCE/GIAI-MA/liblynx_markdown/lynx_markdown_jni.h",
+    "SOURCE/GIAI-MA/liblynx_markdown/lynx_markdown_jni.cpp",
+    "SOURCE/GIAI-MA/liblynx_markdown/lynx_markdown_interface.h",
+    "SOURCE/GIAI-MA/liblynx_markdown/lynx_markdown_pseudocode.cpp",
+    "SOURCE/GIAI-MA/liblynx_markdown/README_ANALYSIS.md"
+  ],
+  "opcode_evidence": [
+    {
+      "symbol": "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeCreateInstance",
+      "address": "0x00d300",
+      "size_bytes": 880,
+      "instructions": [
+        "0x00d300: d10243ff  sub sp, sp, #0x90",
+        "0x00d328: 5281d100  mov w0, #0xe88",
+        "0x00d334: 9400a003  bl  0x35340 (_Znwm)",
+        "0x00d568: 52a7f008  mov w8, #0x3f800000",
+        "0x00d580: b90d2268  str w8, [x19, #0xd20]",
+        "0x00d5a4: f9070275  str x21, [x19, #0xe00]",
+        "0x00d634: f9070675  str x21, [x19, #0xe08]"
+      ]
+    },
+    {
+      "symbol": "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeParse",
+      "address": "0x00e718",
+      "size_bytes": 6044,
+      "instructions": [
+        "0x00e718: fc190fe8  str d8, [sp, #-0x70]!",
+        "0x00e734: d13c03ff  sub sp, sp, #0xf00",
+        "0x00eaec: 5280e63d  mov w29, #0x731",
+        "0x00eaf0: 52801300  mov w0, #0x98",
+        "0x00eaf8: 72a32c1d  movk w29, #0x1960, lsl #16",
+        "0x00eafc: 94009a55  bl  0x35450 (calloc)",
+        "0x00eb30: b90002dd  str w29, [x22]"
+      ]
+    },
+    {
+      "symbol": "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeLayout",
+      "address": "0x0102a0",
+      "size_bytes": 2280,
+      "instructions": [
+        "0x0102a0: d10343ff  sub sp, sp, #0xd0",
+        "0x0102e8: 52801600  mov w0, #0xb0",
+        "0x010300: 94009410  bl  0x35340 (_Znwm)"
+      ]
+    },
+    {
+      "symbol": "Java_com_bytedance_xelement_markdown_MarkdownDocument_initial",
+      "address": "0x0117ec",
+      "size_bytes": 664,
+      "instructions": [
+        "0x0117ec: d10183ff  sub sp, sp, #0x60",
+        "0x011824: 94008f4b  bl  0x35550 (lynx::base::android::InitVM)",
+        "0x011860: 90ffffa1  adrp x1, #0x5000",
+        "0x011864: 91109021  add x1, x1, #0x424 (com/bytedance/xelement/markdown/MarkdownDocument)"
+      ]
+    },
+    {
+      "symbol": "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeMarkdownOffsetToChar",
+      "address": "0x0142d4",
+      "size_bytes": 132,
+      "instructions": [
+        "0x0142d4: f9472c48  ldr x8, [x2, #0xe58]",
+        "0x0142d8: f9473049  ldr x9, [x2, #0xe60]",
+        "0x0142e4: 9344fd4a  asr x10, x10, #4",
+        "0x014304: 9a8bd14a  csel x10, x10, x11, le",
+        "0x014308: 9a88d188  csel x8, x12, x8, le"
+      ]
+    },
+    {
+      "symbol": "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeAllowBreakAroundPunctuation",
+      "address": "0x01562c",
+      "size_bytes": 16,
+      "instructions": [
+        "0x01562c: 72001c7f  tst w3, #0xff",
+        "0x015630: 1a9f07e8  cset w8, ne",
+        "0x015634: 3938e048  strb w8, [x2, #0xe38]",
+        "0x015638: d65f03c0  ret"
+      ]
+    },
+    {
+      "symbol": "BufferCanvasHelper::CreatePaint",
+      "address": "0x01897c",
+      "size_bytes": 100,
+      "instructions": [
+        "0x018980: 52800b00  mov w0, #0x58",
+        "0x0189a8: d28d2e08  mov x8, #0x6970",
+        "0x0189ac: f2acedc8  movk x8, #0x676e, lsl #16",
+        "0x0189b0: f2cc2cc8  movk x8, #0x6166, lsl #32",
+        "0x0189b4: f2ecedc8  movk x8, #0x676e, lsl #48",
+        "0x0189bc: 52a82c08  mov w8, #0x41600000"
+      ]
+    }
+  ],
+  "math_and_abi_proofs": [
+    "sizeof(MarkdownDocument) == 0xe88 (3,720 bytes) verified at 0x00d328, with page_mutex_ at +0x48, current_page_ shared_ptr at +0x70, style_.root_font_scale = 1.0f (0x3f800000) at +0xd20, resource_loader_ at +0xe00, event_listener_ at +0xe08, allow_break_around_punctuation_ at +0xe38, offset_map_ at +0xe58..0xe68, and syntax_ranges_ at +0xe70..0xe80.",
+    "Discount MMIOT magic constant 0x19600731 (mov w29, #0x731; movk w29, #0x1960, lsl #16) verified at 0x00eaec..0x00eaf8 with calloc(0x98, 1) for MMIOT and calloc(0x78, 1) for root Paragraph.",
+    "16-byte MarkdownOffsetRange binary search verified at 0x0142d4..0x014354 (asr x10, x10, #4; lsl #4; csel x8, x12, x8, le).",
+    "Roman numeral tables at .data.rel.ro 0x038668..0x038750 and font-weight table at 0x0389d0..0x038a20 verified byte-for-byte."
+  ]
+}

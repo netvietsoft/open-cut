@@ -2473,3 +2473,16 @@
   - `adversary_critic_agent.py`: **85 / 169 `VERIFIED_AND_ACCEPTED` (50.30%)** (`100% REAL` — vượt mốc 50% tổng số thư viện `.so`).
   - `verify_reconstruction_suite.py`: **545 / 545 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 113. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% liblynx_markdown.so (TASK-125-RECONSTRUCTION-LIBLYNX-MARKDOWN / TASK_SO_120_liblynx_markdown)
+- **Thời gian**: 2026-10-27 10:39:00
+- **Thư viện**: `liblynx_markdown.so` (`247,888 bytes`, SHA-256 `3f238dfc468cd0b314eb0b828565c3353dba165c20dab0bb76d9957760bd9a2d`, `.text` `0x006ab0..0x01e4a0` = `96,752 bytes`, ByteDance Lynx Serval Markdown Native Engine `com.lynx.markdown.tttext.MarkdownJavaProxy`).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `263,879 bytes` C++17/H, 0 stub)**:
+  1. **`JNI_OnLoad` (`0x013ba0..0x013be8`), `JavaMarkdown` (`0x013c6c..0x013d98`) & 31 Phương thức JNI (`0x013d9c..0x0157ec`)**: Khôi phục `JNI_OnLoad` trả về `0x00010006` (`JNI_VERSION_1_6`), `JavaMarkdown` đăng ký 31 phương thức gốc JNI tại `.data.rel.ro 0x038200..0x0383b8` và tra cứu 19 `jmethodID` trên `com/lynx/markdown/tttext/MarkdownJavaProxy` lưu tại `.bss 0x03bc28..0x03bcc0`, cùng cấu trúc `MarkdownDocument` (`sizeof = 0xe88 = 3,720 bytes` @ `0x00d328..0x00d510`).
+  2. **Bộ Phân Tích Discount (`MMIOT`) + ByteDance GFM (`0x00e718..0x00feb4`) & Tìm Kiếm Nhị Phân Bù Trừ (`0x0141fc..0x014354`)**: Khôi phục hằng số ma thuật `VALID_MMIOT = 0x19600731` (`mov w29, #0x731; movk w29, #0x1960, lsl #16` @ `0x00eaec..0x00eaf8`), `calloc(0x98, 1)` `MMIOT`, `calloc(0x78, 1)` `Paragraph`, bảng chữ số La Mã tại `.data.rel.ro 0x038668..0x038750`, và thuật toán tìm kiếm nhị phân `nativeMarkdownOffsetToChar` (`0x0142d4..0x014354`) / `nativeCharOffsetToMarkdown` (`0x0141fc..0x014284`) trên mảng `MarkdownOffsetRange` 16-byte (`asr x10, x9, #4`).
+  3. **`MarkdownStyleReader` (`0x0157f0..0x018920`), `BufferCanvasHelper` & `BufferPaintHelper` (`0x018924..0x019d80`)**: Khôi phục máy đọc BytePacker 18 khối style (`0x00..0x11`) và 52 khóa thuộc tính (`0x00..0x33`), `BufferPaintHelper` (`0x58 = 88 B`, `vtable @ 0x038398`, phông mặc định `"pingfang"` = `0x676e6166676e6970` và cỡ chữ `14.0f = 0x41600000` @ `0x0189a8..0x0189bc`), và `BufferCanvasHelper` (`vtable @ 0x038148`, `malloc(0x400)` @ `0x011134`) tuần tự hóa các opcode vẽ (`Save=2`, `Restore=3`, `Translate=4`, `ClipRect=8`, `DrawLine=13`, `DrawRect=14`, `DrawCircle=16`, `DrawText=19`, `DrawGlyphs=20`, `DrawRunDelegate=21`, `DrawRoundRect=26`).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **86 / 169 `VERIFIED_AND_ACCEPTED` (50.89%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **551 / 551 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

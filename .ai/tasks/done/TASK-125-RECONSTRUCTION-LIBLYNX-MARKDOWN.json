@@ -1,0 +1,27 @@
+{
+  "task_id": "TASK-125-RECONSTRUCTION-LIBLYNX-MARKDOWN",
+  "legacy_task_id": "TASK_SO_120_liblynx_markdown",
+  "title": "Clean-Room C++17 Reconstruction & Adversarial Proof of liblynx_markdown.so (ByteDance Lynx Serval Markdown Native Engine, Discount MMIOT + GFM Parser, StyleReader, Paragraph/Table Layout & BufferCanvas Serialization)",
+  "status": "DONE",
+  "completed_at": "2026-10-27T10:39:00+07:00",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/liblynx_markdown.so",
+  "binary_size_bytes": 247888,
+  "binary_sha256": "3f238dfc468cd0b314eb0b828565c3353dba165c20dab0bb76d9957760bd9a2d",
+  "reconstructed_cpp_bytes": 263879,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/liblynx_markdown/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_liblynx_markdown.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_liblynx_markdown.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_120_liblynx_markdown.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_120_liblynx_markdown.md",
+    "SOURCE/PHAN-BIEN/SO-CAI-DOI-KHANG/LEDGER_DOI_KHANG.json",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ],
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (86/169 = 50.89%)",
+    "test_suite": "551/551 PASS (100.0%)",
+    "audit_watchdog": "169 binaries, 0 high findings"
+  }
+}

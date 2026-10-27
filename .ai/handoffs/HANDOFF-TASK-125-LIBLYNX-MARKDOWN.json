@@ -1,0 +1,12 @@
+{
+  "handoff_id": "HANDOFF-TASK-125-LIBLYNX-MARKDOWN",
+  "task_id": "TASK-125-RECONSTRUCTION-LIBLYNX-MARKDOWN",
+  "legacy_task_id": "TASK_SO_120_liblynx_markdown",
+  "timestamp": "2026-10-27T10:39:00+07:00",
+  "from_agent": "Agent 0 (Orchestrator) & Agent 3 (Android/Native)",
+  "to_agent": "Agent 13 (Adversary Auditor) & Next Reconstruction Worker",
+  "status": "COMPLETED_AND_VERIFIED",
+  "summary_en": "Completed 100% clean-room C++17 reconstruction of liblynx_markdown.so (247,888 bytes, SHA-256 3f238dfc468cd0b314eb0b828565c3353dba165c20dab0bb76d9957760bd9a2d) with 263,879 bytes of zero-stub C++17/H code across 9 source/header files plus README_ANALYSIS.md. Verified JNI_OnLoad (0x013ba0 -> JNI_VERSION_1_6 = 0x00010006), JavaMarkdown (0x013c6c, 31 JNINativeMethod entries at .data.rel.ro 0x038200..0x0383b8 and 19 jmethodID slots on com/lynx/markdown/tttext/MarkdownJavaProxy), MarkdownDocument (sizeof = 0xe88 = 3,720 bytes @ 0x00d328), Discount MMIOT + ByteDance GFM parser (VALID_MMIOT = 0x19600731 @ 0x00eaec..0x00eaf8), binary-searched offset mapping nativeMarkdownOffsetToChar (0x0142d4) / nativeCharOffsetToMarkdown (0x0141fc), MarkdownStyleReader (0x0157f0..0x018920, 18 style sections and 52 keys), and BufferCanvasHelper/BufferPaintHelper (0x018924, default font 'pingfang' 14.0f). Certified VERIFIED_AND_ACCEPTED (86/169 = 50.89%) with 551/551 tests passing (100.0%) and 0 high findings.",
+  "summary_vi": "Hoàn thành tái dựng sạch 100% C++17 cho liblynx_markdown.so (247.888 bytes, SHA-256 3f238dfc468cd0b314eb0b828565c3353dba165c20dab0bb76d9957760bd9a2d) với 263.879 bytes mã nguồn C++17/H (0 stub). Đạt chứng nhận VERIFIED_AND_ACCEPTED (86/169 = 50,89%), 551/551 bài kiểm thử PASS (100,0%) và 0 cảnh báo mức cao.",
+  "next_target": "libnapi.so (247,904 bytes, TASK-126-RECONSTRUCTION-LIBNAPI / TASK_SO_119_libnapi)"
+}

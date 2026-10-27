@@ -8894,6 +8894,198 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # KIỂM THỬ 86: LIBLYNX_MARKDOWN.SO (LYNX XELEMENT MARKDOWN & TTTEXT ENGINE)
+    # =========================================================================
+    def verify_liblynx_markdown(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 86: liblynx_markdown.so (Lynx XElement Markdown & TTText Engine)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "liblynx_markdown"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liblynx_markdown.so"
+        if not so_path.exists():
+            self.assert_test("LynxMarkdown_BinaryExists", False, "Không tìm thấy liblynx_markdown.so")
+            return
+
+        so_bytes = so_path.read_bytes()
+        so_sha256 = hashlib.sha256(so_bytes).hexdigest()
+
+        cpp_files = [
+            "lynx_markdown_types.h",
+            "lynx_markdown_parser.h",
+            "lynx_markdown_parser.cpp",
+            "lynx_markdown_layout_draw.h",
+            "lynx_markdown_layout_draw.cpp",
+            "lynx_markdown_jni.h",
+            "lynx_markdown_jni.cpp",
+            "lynx_markdown_interface.h",
+            "lynx_markdown_pseudocode.cpp",
+        ]
+        all_exist = all((lib_dir / f).exists() for f in cpp_files)
+        total_size = sum((lib_dir / f).stat().st_size for f in cpp_files if (lib_dir / f).exists())
+        content = "\n".join(
+            (lib_dir / f).read_text(encoding="utf-8", errors="ignore")
+            for f in cpp_files if (lib_dir / f).exists()
+        )
+
+        # 1. Kiểm tra dung lượng & danh mục file tái cấu trúc sạch
+        self.assert_test(
+            "LynxMarkdown_CleanRoomFilesAndVolume",
+            all_exist and total_size >= 100000 and len(so_bytes) == 247888
+            and so_sha256 == "3f238dfc468cd0b314eb0b828565c3353dba165c20dab0bb76d9957760bd9a2d",
+            f"Đầy đủ 9 file C++17/H ({total_size:,} bytes >= 100 KB), khớp nhị phân 247,888 B"
+        )
+
+        # 2. Kiểm tra nativeCreateInstance (0x00d300, 0xe88 B MarkdownDocument) & initial (0x0117ec)
+        create_pro = struct.unpack("<I", so_bytes[0x00d300:0x00d304])[0]
+        create_alloc_doc = struct.unpack("<I", so_bytes[0x00d328:0x00d32c])[0]
+        create_scale_1f = struct.unpack("<I", so_bytes[0x00d568:0x00d56c])[0]
+        create_store_rl = struct.unpack("<I", so_bytes[0x00d5a4:0x00d5a8])[0]
+        create_store_el = struct.unpack("<I", so_bytes[0x00d634:0x00d638])[0]
+        init_pro = struct.unpack("<I", so_bytes[0x0117ec:0x0117f0])[0]
+        self.assert_test(
+            "LynxMarkdown_NativeCreateInstanceAndInitialABI",
+            create_pro == 0xD10243FF
+            and create_alloc_doc == 0x5281D100
+            and create_scale_1f == 0x52A7F008
+            and create_store_rl == 0xF9070275
+            and create_store_el == 0xF9070675
+            and init_pro == 0xD10183FF
+            and b"com/bytedance/xelement/markdown/MarkdownDocument\x00" in so_bytes
+            and all(tok in content for tok in [
+                "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeCreateInstance",
+                "Java_com_bytedance_xelement_markdown_MarkdownDocument_initial",
+                "loadImage",
+                "measureInlineView",
+                "loadFont",
+                "getRunDelegateSize",
+                "onTextOverflow",
+                "loadGradient"
+            ]),
+            "Khớp nativeCreateInstance (0x00d300, mov w0,#0xe88 = 3,720B MarkdownDocument, scale=1.0f @ +0xd20, loader @ +0xe00, listener @ +0xe08) và initial (0x0117ec)"
+        )
+
+        # 3. Kiểm tra nativeParse (0x00e718) & Discount MMIOT Magic 0x19600731 (0x00eaec..0x00eaf8)
+        parse_pro = struct.unpack("<I", so_bytes[0x00e718:0x00e71c])[0]
+        mmiot_magic_lo = struct.unpack("<I", so_bytes[0x00eaec:0x00eaf0])[0]
+        mmiot_alloc_98 = struct.unpack("<I", so_bytes[0x00eaf0:0x00eaf4])[0]
+        mmiot_magic_hi = struct.unpack("<I", so_bytes[0x00eaf8:0x00eafc])[0]
+        para_alloc_78 = struct.unpack("<I", so_bytes[0x00eb0c:0x00eb10])[0]
+        self.assert_test(
+            "LynxMarkdown_DiscountMmiotAndGfmParser",
+            parse_pro == 0xFC190FE8
+            and mmiot_magic_lo == 0x5280E63D
+            and mmiot_alloc_98 == 0x52801300
+            and mmiot_magic_hi == 0x72A32C1D
+            and para_alloc_78 == 0x52800F00
+            and b"=%dx%d\x00" in so_bytes
+            and b"blockview://\x00" in so_bytes
+            and b"inlineview://\x00" in so_bytes
+            and all(tok in content for tok in [
+                "0x19600731",
+                "kDiscountValidMmiotMagic",
+                "Utf8CharCountToByteOffset",
+                "FormatRomanNumeral",
+                "ParseMarkdownDocument"
+            ]),
+            "Khớp nativeParse (0x00e718), Discount MMIOT magic 0x19600731 (0x00eaec..0x00eaf8, calloc 0x98B & 0x78B), UTF-8 codepoint slicer và GFM parser"
+        )
+
+        # 4. Kiểm tra nativeMarkdownOffsetToChar (0x0142d4) & nativeAllowBreakAroundPunctuation (0x01562c)
+        off_ldr_begin = struct.unpack("<I", so_bytes[0x0142d4:0x0142d8])[0]
+        off_ldr_end = struct.unpack("<I", so_bytes[0x0142d8:0x0142dc])[0]
+        off_asr_4 = struct.unpack("<I", so_bytes[0x0142e4:0x0142e8])[0]
+        brk_tst = struct.unpack("<I", so_bytes[0x01562c:0x015630])[0]
+        brk_strb = struct.unpack("<I", so_bytes[0x015634:0x015638])[0]
+        self.assert_test(
+            "LynxMarkdown_OffsetBinarySearchAndPunctuationBreak",
+            off_ldr_begin == 0xF9472C48
+            and off_ldr_end == 0xF9473049
+            and off_asr_4 == 0x9344FD4A
+            and brk_tst == 0x72001C7F
+            and brk_strb == 0x3938E048
+            and all(tok in content for tok in [
+                "MarkdownOffsetRange",
+                "ConvertMarkdownOffsetToChar",
+                "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeMarkdownOffsetToChar",
+                "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeAllowBreakAroundPunctuation"
+            ]),
+            "Khớp tìm kiếm nhị phân 16-byte MarkdownOffsetRange tại [doc+0xe58..0xe60] (0x0142d4, asr #4) và allow_break_around_punctuation_ tại [doc+0xe38] (0x01562c)"
+        )
+
+        # 5. Kiểm tra BufferCanvasHelper (0x018924) & BufferPaintHelper (0x01897c, 0x58B, "pingfang", 14.0f)
+        paint_alloc_58 = struct.unpack("<I", so_bytes[0x018980:0x018984])[0]
+        paint_pf_0 = struct.unpack("<I", so_bytes[0x0189a8:0x0189ac])[0]
+        paint_size_14f = struct.unpack("<I", so_bytes[0x0189bc:0x0189c0])[0]
+        draw_alloc_400 = struct.unpack("<I", so_bytes[0x011134:0x011138])[0]
+        self.assert_test(
+            "LynxMarkdown_BufferCanvasAndTTTextLayout",
+            paint_alloc_58 == 0x52800B00
+            and paint_pf_0 == 0xD28D2E08
+            and paint_size_14f == 0x52A82C08
+            and draw_alloc_400 == 0x52808000
+            and all(tok in content for tok in [
+                "BufferCanvasHelper",
+                "pingfang",
+                "LayoutMarkdownDocument",
+                "DrawMarkdownPageWithCursorToBuffer",
+                "ComputeTypewriterCursorPosition",
+                "ComputeSelectionRectsByCharRange",
+                "ComputeCharRangeByPoint"
+            ]),
+            "Khớp BufferCanvasHelper (malloc 0x400 @ 0x011134, vtable 0x038148), BufferPaintHelper (0x58B, font 'pingfang', size 14.0f @ 0x01897c) và TTText Layout/Typewriter"
+        )
+
+        # 6. Kiểm tra toàn bộ 38 hàm JNI xuất khẩu của com.bytedance.xelement.markdown.MarkdownDocument
+        jni_exports_38 = [
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeCreateInstance",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeParse",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeLayout",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeDestroyInstance",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeDraw",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeDrawWithCursor",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetCursorPosition",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_initial",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeSetStyle",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetLinkByPosition",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetInlineViewOrigin",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetContentByCharRange",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetSelectionRectByCharPos",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetCharRangeByPoint",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetPageCharCount",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeMarkdownOffsetToChar",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetLinks",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetLinkRects",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetSyntaxRange",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetImages",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetImageByTouchPosition",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeAllowBreakAroundPunctuation",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeOnTouchEvent",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeAddTextMarkAttachment",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeClearTextMarkAttachment",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetTextClickByPoint",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeDrawRegion",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeDrawTypewriterRegion",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeDrawExtraContent",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetVisibleViews",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetTypewriterChangedViews",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetRegionRect",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetExtraContentRect",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetRegionCount",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetExtraContentCount",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetShowedRegion",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeGetShowedExtraContent",
+            "Java_com_bytedance_xelement_markdown_MarkdownDocument_nativeInheritState"
+        ]
+        self.assert_test(
+            "LynxMarkdown_All38ExportedJniMethods",
+            all(sym in content for sym in jni_exports_38) and "RunLynxMarkdownSelfTest" in content,
+            "Khớp toàn bộ 38/38 hàm JNI xuất khẩu của com.bytedance.xelement.markdown.MarkdownDocument (0x00d300..0x018420)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -8983,6 +9175,7 @@ class AutonomousVerificationEngine:
         self.verify_libjazz()
         self.verify_liblynxbase()
         self.verify_libwasm()
+        self.verify_liblynx_markdown()
         self.verify_overall_governance()
 
 
