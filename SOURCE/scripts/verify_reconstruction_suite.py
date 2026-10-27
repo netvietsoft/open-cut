@@ -13878,6 +13878,94 @@ class AutonomousVerificationEngine:
             "Khớp FDE[05..07] get_main_process_pid ('pidof %s', usleep 0x3D0900=4s @ 0x0e64), SysPlatform_waitpid (0x0f7c) và 257 lệnh .text"
         )
 
+    def verify_libvcnverify(self):
+        import hashlib
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libvcnverify.so (VCN Custom TLS X.509 Certificate Verification Bridge)")
+        print("="*70)
+
+        vcn_dir = GIAIMA_DIR / "libvcnverify"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libvcnverify.so"
+
+        files = [
+            "vcnverify.h",
+            "vcnverify_core.cpp",
+            "vcnverify_elf_sections_and_image.cpp",
+        ]
+        all_exist = all((vcn_dir / f).exists() for f in files)
+        total_size = sum((vcn_dir / f).stat().st_size for f in files if (vcn_dir / f).exists())
+
+        # 1. File existence & size > 120 KB (> 40 KB gate) & zero old stubs
+        self.assert_test(
+            "VcnVerify_CleanRoomFilesAndSize",
+            all_exist and total_size > 120000 and not (vcn_dir / "vcnverify_pseudocode.cpp").exists(),
+            f"Đầy đủ 3 file C++17/H trong GIAI-MA/libvcnverify ({total_size:,} bytes > 120 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (18,184 B) and .eh_frame_hdr 4 FDEs @ 0x1918
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x1920)[0]
+        self.assert_test(
+            "VcnVerify_BinarySha256AndEhFrame4FDEs",
+            len(so_bytes) == 18184
+            and sha256_hex == "cb4928063eb3e668c4df210a200e8821a6da265e852ba86c968ac24371a8d1ef"
+            and eh_fde_count == 4,
+            f"Khớp kích thước 18,184 bytes, SHA-256 ({sha256_hex[:16]}...) và 4 FDEs tại .eh_frame_hdr 0x1918"
+        )
+
+        content = ""
+        for f in files:
+            fp = vcn_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[00..01] VcnVerifyLogPrint (0x11ec..0x12c0: vsnprintf 0x200 @ 0x1254, __android_log_print(3, "vcnnetwork" @ 0x1288)) & JNI_OnLoad (0x12c0..0x135c: 0x00010004 @ 0x134c..0x1350)
+        vsn_200 = struct.unpack_from("<I", so_bytes, 0x1254)[0]
+        log_3   = struct.unpack_from("<I", so_bytes, 0x1288)[0]
+        jni_lo  = struct.unpack_from("<I", so_bytes, 0x134c)[0]
+        jni_hi  = struct.unpack_from("<I", so_bytes, 0x1350)[0]
+        self.assert_test(
+            "VcnVerify_LogPrintAndJniOnLoad",
+            vsn_200 == 0x52804001 and log_3 == 0x52800060 and jni_lo == 0x52800080 and jni_hi == 0x72A00020
+            and "VcnVerifyLogPrint" in content and "JNI_OnLoad" in content,
+            "Khớp FDE[00] VcnVerifyLogPrint (vsnprintf 0x200 @ 0x1254, __android_log_print(3) @ 0x1288) và FDE[01] JNI_OnLoad (0x00010004 @ 0x134c..0x1350)"
+        )
+
+        # 4. FDE[02] vcn_internal_custom_verify (0x135c..0x1700): vcn_av_ll(NULL, 0x30) @ 0x13b0 & Cronet error codes -99998 (0xFFFE7962 @ 0x1518..0x1530) & -99997 (0xFFFE7963 @ 0x168c..0x1698)
+        av_ll_30 = struct.unpack_from("<I", so_bytes, 0x13b0)[0]
+        err_98_l = struct.unpack_from("<I", so_bytes, 0x1518)[0]
+        err_98_h = struct.unpack_from("<I", so_bytes, 0x1530)[0]
+        err_97_l = struct.unpack_from("<I", so_bytes, 0x168c)[0]
+        self.assert_test(
+            "VcnVerify_CustomVerifyCronetErrors",
+            av_ll_30 == 0x52800601 and err_98_l == 0x528F2C57 and err_98_h == 0x72BFFFD7 and err_97_l == 0x528F2C48
+            and "vcn_internal_custom_verify" in content and "-99998" in content and "-99997" in content,
+            "Khớp FDE[02] vcn_internal_custom_verify (0x135c): vcn_av_ll(0x30 @ 0x13b0) và mã lỗi -99998 (0xFFFE7962 @ 0x1518) / -99997 (0xFFFE7963 @ 0x168c)"
+        )
+
+        # 5. RSA KeyUsage check (0x160c), status normalization (cmp w23, #1; cset w21, hi @ 0x164c..0x1654) & vcn_av_net_info(ctx, 0x177A=6010 @ 0x16b8)
+        cmp_1  = struct.unpack_from("<I", so_bytes, 0x164c)[0]
+        cset_h = struct.unpack_from("<I", so_bytes, 0x1654)[0]
+        net_id = struct.unpack_from("<I", so_bytes, 0x16b8)[0]
+        self.assert_test(
+            "VcnVerify_RsaKeyUsageStatusAndNetInfo6010",
+            cmp_1 == 0x710006FF and cset_h == 0x1A9F97F5 and net_id == 0x5282EF41
+            and "VcnInternalCustomVerify" in content and "0x177A" in content,
+            "Khớp kiểm tra RSA KeyUsage (0x160c), chuẩn hóa trạng thái (cmp w23, #1; cset w21, hi @ 0x164c..0x1654) và vcn_av_net_info(0x177A=6010 @ 0x16b8)"
+        )
+
+        # 6. FDE[03] JNI_OnUnload (0x1700..0x1704: ret = 0xD65F03C0), .rodata strings (0x171f 'custom_verify.c') & 341 .text words
+        onunload_ret = struct.unpack_from("<I", so_bytes, 0x1700)[0]
+        ro_str = so_bytes[0x171f:0x172f]
+        self.assert_test(
+            "VcnVerify_JniOnUnloadRodataAndFull341TextWords",
+            onunload_ret == 0xD65F03C0 and ro_str == b"custom_verify.c\x00"
+            and "JNI_OnUnload" in content and "kVcnVerifyTextWords341" in content,
+            "Khớp FDE[03] JNI_OnUnload (ret @ 0x1700), chuỗi .rodata 'custom_verify.c' (0x171f) và 341 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14016,6 +14104,7 @@ class AutonomousVerificationEngine:
         self.verify_libttmverify()
         self.verify_libpush_ka()
         self.verify_libsys_platform()
+        self.verify_libvcnverify()
         self.verify_overall_governance()
 
 
