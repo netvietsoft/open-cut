@@ -1,0 +1,20 @@
+{
+  "task_id": "TASK-207-RECONSTRUCTION-LIBRES-POOL",
+  "legacy_task_id": "TASK_SO_030_libres_pool",
+  "title": "Clean-room C++17 Reconstruction of libres_pool.so (Target 168/169)",
+  "status": "IN_PROGRESS",
+  "assigned_to": [
+    "Agent 3 (Android/Native)",
+    "Agent 6 (Tester)",
+    "Agent 13 (Adversary Auditor)"
+  ],
+  "target_binary": "libres_pool.so",
+  "binary_size_bytes": 9925624,
+  "binary_sha256": "7bddb577fba16b943f3388f8d676f91f242371069976d052cb21bb589c66da25",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libres_pool/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libres_pool.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_030_libres_pool.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py"
+  ]
+}

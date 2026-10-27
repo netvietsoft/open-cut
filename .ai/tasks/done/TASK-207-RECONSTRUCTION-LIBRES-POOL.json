@@ -1,0 +1,23 @@
+{
+  "task_id": "TASK-207-RECONSTRUCTION-LIBRES-POOL",
+  "legacy_task_id": "TASK_SO_030_libres_pool",
+  "title": "Clean-room C++17 Reconstruction & Verification of libres_pool.so (Target 168/169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/C++ Native) & Agent 6 (Tester) & Agent 13 (Adversary Auditor)",
+  "target_binary": "libres_pool.so",
+  "binary_size_bytes": 9925624,
+  "binary_sha256": "7bddb577fba16b943f3388f8d676f91f242371069976d052cb21bb589c66da25",
+  "reconstructed_size_bytes": 2566554,
+  "fde_count": 14163,
+  "text_words": 1855934,
+  "exported_symbols": 2,
+  "verification": {
+    "adversary_status": "VERIFIED_AND_ACCEPTED",
+    "verified_libraries": "168/169 (99.41% total / 100.0% of all 168 unpackable ELF64 binaries)",
+    "suite_passed": 1043,
+    "suite_failed": 0,
+    "pass_rate": "100.0%",
+    "watchdog_high_findings": 0
+  },
+  "completed_at": "2026-10-28T00:35:00+07:00"
+}

@@ -1,0 +1,27 @@
+{
+  "target_library": "libres_pool.so",
+  "task_id": "TASK-207-RECONSTRUCTION-LIBRES-POOL",
+  "legacy_task_id": "TASK_SO_030_libres_pool",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "binary_size_bytes": 9925624,
+  "binary_sha256": "7bddb577fba16b943f3388f8d676f91f242371069976d052cb21bb589c66da25",
+  "reconstructed_cpp_bytes": 2566554,
+  "reconstructed_files": [
+    "res_pool.hpp",
+    "res_pool_core.cpp",
+    "res_pool_elf_sections_and_image.cpp"
+  ],
+  "eh_frame_hdr": {
+    "offset": "0x82c360",
+    "size_bytes": 113316,
+    "header_bytes": "011b033b",
+    "fde_count": 14163
+  },
+  "text_section": {
+    "offset": "0x0b4290",
+    "size_bytes": 7423736,
+    "instruction_words": 1855934
+  },
+  "exported_symbols_count": 2,
+  "evidence_classification": "OBSERVED"
+}

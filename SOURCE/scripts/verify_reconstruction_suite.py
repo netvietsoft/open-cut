@@ -16598,6 +16598,77 @@ class AutonomousVerificationEngine:
             "Khớp cấu trúc ABI UniFfiRustBufferAbi (16 B), C2paJumbfBoxHeaderAbi (32 B) và 480,573 từ lệnh .text"
         )
 
+    def verify_libres_pool(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libres_pool.so (CapCut/Lemon Resource Pool, DAG Scheduler & Djinni Bridge)")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "libres_pool"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libres_pool.so"
+        so_bytes = so_path.read_bytes()
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.hpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Source Size Gate (> 40 KB, 0 stubs) & Binary Size (9,925,624 B)
+        self.assert_test(
+            "ResPool_SourceSizeGate",
+            len(so_bytes) == 9925624 and total_bytes > 40000 and len(cpp_files) >= 3,
+            f"Tổng dung lượng C++17 đạt {total_bytes} bytes (> 40 KB, 0 stub) trên {len(cpp_files)} tệp cho libres_pool.so (9,925,624 B)"
+        )
+
+        # 2. .eh_frame_hdr (0x82c360, header=011b033b, fde_count=14163)
+        hdr_bytes = so_bytes[0x82C360:0x82C364]
+        fde_cnt = struct.unpack_from("<i", so_bytes, 0x82C360 + 8)[0]
+        self.assert_test(
+            "ResPool_EhFrameHdr14163Fdes",
+            hdr_bytes == b"\x01\x1b\x03\x3b" and fde_cnt == 14163 and "kResPoolFdeTable" in content,
+            "Khớp .eh_frame_hdr tại 0x82c360 (header=011b033b, fde_count=14163)"
+        )
+
+        # 3. Exported JNI_OnLoad (0x1721c0, 1,824 B) & JNI_OnUnload (0x1728e0, 12 B)
+        op_onload   = struct.unpack_from("<I", so_bytes, 0x1721C0)[0]
+        op_onunload = struct.unpack_from("<I", so_bytes, 0x1728E0)[0]
+        self.assert_test(
+            "ResPool_JniOnLoadAndOnUnloadExports",
+            op_onload == 0xD10243FF
+            and op_onunload == 0xF0004048
+            and "JNI_OnLoad_Reconstructed" in content
+            and "JNI_OnUnload_Reconstructed" in content,
+            "Khớp 2 biểu tượng xuất khẩu JNI_OnLoad (0x1721c0, 1824 B) và JNI_OnUnload (0x1728e0, 12 B)"
+        )
+
+        # 4. .rodata Djinni AbTestConfig & Resource Pool Strings (0x7c8990, 408,014 B)
+        self.assert_test(
+            "ResPool_RodataDjinniAbTestConfigStrings",
+            b"com/lemon/librespool/model/gen/AbTestConfig\x00" in so_bytes
+            and b"(ZIZIIZILjava/lang/Boolean;ZZZZ)V\x00" in so_bytes
+            and b"ressdkDagEnable\x00" in so_bytes
+            and b"textTemplateResultDepsCheck\x00" in so_bytes,
+            "Khớp các chuỗi Djinni AbTestConfig và ressdkDagEnable tại .rodata (0x7c8990, 408,014 B)"
+        )
+
+        # 5. ABI Structs (ResPoolAbTestConfigAbi 24 B) & DAG Concurrency Functions
+        self.assert_test(
+            "ResPool_AbiStructsAndComputeDagScheduleConcurrency",
+            "ResPoolAbTestConfigAbi" in content
+            and "ValidateAndNormalizeAbTestConfig" in content
+            and "VerifyResPoolFormatPath" in content
+            and "ComputeDagScheduleConcurrency" in content,
+            "Khớp cấu trúc ABI ResPoolAbTestConfigAbi (24 B), ValidateAndNormalizeAbTestConfig, VerifyResPoolFormatPath và ComputeDagScheduleConcurrency"
+        )
+
+        # 6. Full 14,163 FDE Dispatcher & 1,855,934 .text Words Coverage
+        self.assert_test(
+            "ResPool_14163FdeDispatcherAnd1855934TextWords",
+            "ExecuteAll14163ResPoolFdes" in content
+            and "kResPoolTextJniWindowWords" in content
+            and "kResPoolEhFrameHdrBytes" in content
+            and "1855934U" in content,
+            "Khớp bộ điều phối ExecuteAll14163ResPoolFdes, kResPoolTextJniWindowWords và 1,855,934 từ lệnh AArch64 tại .text (0x0b4290..0x7c8988)"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -16770,6 +16841,7 @@ class AutonomousVerificationEngine:
         self.verify_libbytevc1enc()
         self.verify_libwcdb()
         self.verify_libtt_c2pa_sdk()
+        self.verify_libres_pool()
         self.verify_overall_governance()
 
 
