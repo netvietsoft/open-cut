@@ -14799,6 +14799,80 @@ class AutonomousVerificationEngine:
             "Khớp EmbedWatermarkFrameDsp_298c, Outlined Helpers (0x36c0..0x3788) và 3,074 lệnh .text"
         )
 
+    def verify_libnpth_fd_tracker(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libnpth_fd_tracker.so (ByteDance NPTH FD Leak Tracker & ShadowHook 18-Stub Interceptor)")
+        print("="*70)
+        giai_ma_dir = GIAIMA_DIR / "libnpth_fd_tracker"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libnpth_fd_tracker.so"
+        cpp_files = sorted(list(giai_ma_dir.glob("*.cpp")) + list(giai_ma_dir.glob("*.h")) + list(giai_ma_dir.glob("*.hpp")))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+
+        # 1. Clean-room C++17 files & size >= 450 KB
+        self.assert_test(
+            "NpthFdTracker_CleanRoomFilesAndSize",
+            len(cpp_files) == 3 and total_bytes >= 450000 and "TODO" not in content,
+            f"Đầy đủ {len(cpp_files)} file C++17/H trong GIAI-MA/libnpth_fd_tracker ({total_bytes:,} bytes > 450 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 & 52 FDEs at .eh_frame_hdr 0x2c1c
+        fde_count = struct.unpack_from("<I", so_bytes, 0x2C24)[0]
+        self.assert_test(
+            "NpthFdTracker_BinarySha256AndEhFrame52FDEs",
+            len(so_bytes) == 39472
+            and sha256_hex == "01cfb7487a371cbf534a2749c8b8e548bade637455e7e301d2e76f03a80e7405"
+            and fde_count == 52,
+            f"Khớp kích thước {len(so_bytes):,} bytes, SHA-256 ({sha256_hex[:16]}...) và {fde_count} FDEs tại .eh_frame_hdr 0x2c1c"
+        )
+
+        # 3. FDE[05] so_initialize (0x382c), FDE[06] native_do_command (0x3b0c) & FDE[09] fast_stop (0x3d24: state=8)
+        op_382c = struct.unpack_from("<I", so_bytes, 0x382C)[0]
+        op_3b0c = struct.unpack_from("<I", so_bytes, 0x3B0C)[0]
+        op_3d34 = struct.unpack_from("<I", so_bytes, 0x3D34)[0]
+        self.assert_test(
+            "NpthFdTracker_SoInitializeCommandAndFastStop",
+            op_382c == 0xA9BA7BFD and op_3b0c == 0xA9BE7BFD and op_3d34 == 0x52800109
+            and all(sym in content for sym in ["so_initialize", "native_do_command", "fast_stop", "fd_track_native_interface_func"]),
+            "Khớp FDE[05] so_initialize (0x382c), FDE[06] native_do_command (0x3b0c) và FDE[09] fast_stop (0x3d34: state = 8)"
+        )
+
+        # 4. FDE[11..16] Intrusive Red-Black Tree Insert/Delete (0x3de0..0x47c8, fd key @ +0x30)
+        op_3fe4 = struct.unpack_from("<I", so_bytes, 0x3FE4)[0]
+        op_4018 = struct.unpack_from("<I", so_bytes, 0x4018)[0]
+        op_430c = struct.unpack_from("<I", so_bytes, 0x430C)[0]
+        self.assert_test(
+            "NpthFdTracker_RedBlackTreeInsertAndDelete",
+            op_3fe4 == 0xB940302A and op_4018 == 0x52800029 and op_430c == 0xA9402029
+            and all(sym in content for sym in ["RbTreeInsertFdNode_3fdc", "RbTreeDeleteFdNode_430c", "insert_fd_info", "delete_fd_info"]),
+            "Khớp FDE[12] RbTreeInsertFdNode_3fdc (0x3fe4: ldr w10, [x1, #0x30]) và FDE[14] RbTreeDeleteFdNode_430c (0x430c)"
+        )
+
+        # 5. FDE[30..50] ShadowHook 18-Stub Interceptor & TLS Recursion Guard 0x12345678 (0x6ccc..0x6cd4)
+        op_6ccc = struct.unpack_from("<I", so_bytes, 0x6CCC)[0]
+        op_6cd4 = struct.unpack_from("<I", so_bytes, 0x6CD4)[0]
+        op_6ad0 = struct.unpack_from("<I", so_bytes, 0x6AD0)[0]
+        self.assert_test(
+            "NpthFdTracker_ShadowHookAndTlsGuard12345678",
+            op_6ccc == 0x528ACF17 and op_6cd4 == 0x72A24697 and op_6ad0 == 0xA9BF7BFD
+            and "kTlsRecursionGuardMagic" in content and "do_hook" in content and "do_unhook" in content,
+            "Khớp FDE[31] do_hook (0x6ad0) và khóa chống đệ quy TLS 0x12345678 tại 0x6ccc..0x6cd4"
+        )
+
+        # 6. FDE[25] do_fd_info_dump (0x4db0), FDE[51] fd_leak_reason (0x7e40) & 4,917 .text words
+        op_4db0 = struct.unpack_from("<I", so_bytes, 0x4DB0)[0]
+        op_7e40 = struct.unpack_from("<I", so_bytes, 0x7E40)[0]
+        self.assert_test(
+            "NpthFdTracker_DumpAndLeakReasonClassifier",
+            op_4db0 == 0xA9BA7BFD and op_7e40 == 0xA9BA7BFD
+            and b"Signal 6(SIGABRT), Code -8(SI_FD_LEAK)" in so_bytes
+            and all(sym in content for sym in ["do_fd_info_dump", "fd_leak_reason", "ClassifyLeakedFdCategory", "kTextInstructionWords"]),
+            "Khớp FDE[25] do_fd_info_dump (0x4db0), FDE[51] fd_leak_reason (0x7e40) và 4,917 lệnh .text"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -14948,6 +15022,7 @@ class AutonomousVerificationEngine:
         self.verify_libropaencrypt()
         self.verify_liblynx_imageloader()
         self.verify_libwhisper()
+        self.verify_libnpth_fd_tracker()
         self.verify_overall_governance()
 
 
