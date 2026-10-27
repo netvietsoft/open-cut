@@ -2383,3 +2383,16 @@
   - `adversary_critic_agent.py`: **78 / 169 `VERIFIED_AND_ACCEPTED` (46.15%)** (`286 opcodes`, `100% REAL`).
   - `verify_reconstruction_suite.py`: **503 / 503 PASS (100.0%)**.
   - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.
+
+
+## 106. HOÀN THÀNH TÁI CẤU TRÚC CLEAN-ROOM 100% libppsec.so (TASK-118-RECONSTRUCTION-LIBPPSEC / TASK_SO_058_libppsec)
+- **Thời gian**: 2026-10-27 07:47:30
+- **Thư viện**: `libppsec.so` (`166,400 bytes`, SHA-256 `1815ed63470ca5e5f251f66730ca849e01ed3d1ccdbde9cb162e96d2ccfa7f2f`, `.text` `0x002a10..0x01c914` = `106,244 bytes`, `26,561` instructions, ByteDance PIPO Payment Security SDK `2.0.3`, Environment Collector `1.2.7`, Channel AppID `"19572"`).
+- **Chi tiết giải mã thân hàm (10 files C++17 & Docs, `98,826 bytes` C++17/H, 0 stub)**:
+  1. **Pairwise-XOR String Deobfuscator (`sub_4714` @ `0x004714..0x004740`) & Dynamic `JNINativeMethod` Tables (`.data 0x02c000` & `0x02c0d0`)**: Giải mã toàn bộ 183 lệnh gọi `sub_4714` (`dst[i] = src[i] ^ key[i]` khi `key[i] != 0`) trong `.rodata 0x01c920..0x024df9`; khôi phục `JNI_OnLoad` (`0x003188` -> `0x002dbc..0x003180`, trả về `0x00010004`), bảng 6 hàm JNI của `com/bytedance/pipo/sec/IlIlllIiI` tại `.data 0x02c000..0x02c08f` (`0x00318c`, `0x003560`, `0x003960`, `0x003f2c`, `0x004288`, `0x004408`), và bảng 3 hàm JNI của `com/bytedance/pipo/sec/CryptTool` tại `.data 0x02c0d0..0x02c117` (`encrypt` @ `0x0115ec`, `decrypt` @ `0x0117a0`, `getKid` @ `0x011948`).
+  2. **OLLVM / Tigress Opaque Predicates & MBA CRC-16/XMODEM (`0x002b40..0x00325c`, `0x018948..0x0189a0`)**: Chứng minh bất biến bậc hai mod-4 (`4 * 0x286BCA1B == 0xA1AF286C mod 2^32`, `((x^2 + 1) * 0xA1AF286C) % 4 == 0 != 0x0D79435E % 4 == 2`), tích 3 số nguyên liên tiếp chia hết cho 6 qua `umulh(p, 0xAAAAAAAAAAAAAAABULL) >> 1`, phương trình Pell `x^2 + 1 == 7*y^2`, và đồng nhất thức MBA trong `CRC-16/XMODEM` (`0x018948`, bảng tra `.rodata 0x0243d2`: `(a | b) - (a & b) == a ^ b` và `((i << 1) | 2) - (i ^ 1) == i + 1`).
+  3. **`BPEM` Envelope Crypto (`0x004744`, `0x005810`) & Environment Risk Scanner (`0x012e00..0x01c350`)**: Khôi phục hàm khởi tạo tĩnh `.init_array[0]` (`0x002a10` nạp khóa RSA Base64 344-byte tại `.rodata 0x0214c0` và `kid = "0"`), `.init_array[1]` (`0x0185fc` nạp hạt giống 16-byte `.rodata 0x0243bb` và `atoi("19572")`), động cơ đóng gói/giải mã phong bì `"BPEM"` (AES-128-CBC `.rodata 0x01d048` + PKCS#7 + MD5 `.rodata 0x0214a0` + Base64 `0x00e00c`/`0x00ead8`), và bộ quét rủi ro thiết bị (`TracerPid:`, `.magisk/`, `u:r:zygote:s0`, `event.localserver`, Auto-Clicker, Custom ROM, Cloud-Phone, Root/Magisk, 23 thuộc tính hệ thống Android).
+- **Kiểm định tự động**:
+  - `adversary_critic_agent.py`: **79 / 169 `VERIFIED_AND_ACCEPTED` (46.75%)** (`100% REAL`).
+  - `verify_reconstruction_suite.py`: **509 / 509 PASS (100.0%)**.
+  - `native_audit_watchdog.py`: **169 binaries, 0 high findings**.

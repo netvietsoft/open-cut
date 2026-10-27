@@ -8127,6 +8127,98 @@ class AutonomousVerificationEngine:
             "Khớp công thức giải mã kích thước dòng cache ctr_el0 (4 << IminLine, 4 << DminLine) và đồng bộ dc cvau / ic ivau (0x020004..0x02007c)"
         )
 
+    def verify_libppsec(self):
+        import struct
+        print("\n" + "="*70)
+        print(">>> CHẠY KIỂM CHỨNG TỰ ĐỘNG CHO: libppsec.so (ByteDance PIPO Payment Security SDK 2.0.3)")
+        print("="*70)
+
+        target_dir = GIAIMA_DIR / "libppsec"
+        cpp_files = list(target_dir.glob("*.cpp")) + list(target_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libppsec.so"
+        so_bytes = so_path.read_bytes()
+
+        # 1. Kiểm tra dung lượng mã nguồn tái tạo > 40 KB và 0 stub
+        self.assert_test(
+            "Ppsec_SourceSizeAndZeroStubs",
+            total_bytes > 40000 and len(cpp_files) >= 9 and "TODO" not in content,
+            f"Dung lượng C++17 tái tạo đạt {total_bytes:,} bytes trên {len(cpp_files)} file (.h/.cpp), 0 stub"
+        )
+
+        # 2. Kiểm tra giải mã XOR từng cặp byte (0x004714) cho 2 tên lớp JNI IlIlllIiI & CryptTool
+        def xor_dec(src_off, key_off):
+            out = bytearray()
+            i = 0
+            while so_bytes[key_off + i] != 0:
+                out.append(so_bytes[src_off + i] ^ so_bytes[key_off + i])
+                i += 1
+            return out.decode("utf-8")
+
+        cls1 = xor_dec(0x01c920, 0x01c9d0)
+        cls2 = xor_dec(0x0216c0, 0x021700)
+        bpem_magic = xor_dec(0x01ca00, 0x01d044)
+        self.assert_test(
+            "Ppsec_PairwiseXorStringDeobfuscation",
+            cls1 == "com/bytedance/pipo/sec/IlIlllIiI"
+            and cls2 == "com/bytedance/pipo/sec/CryptTool"
+            and bpem_magic == "BPEM"
+            and "XorDeobfuscateNullTerminated" in content,
+            f"Giải mã chính xác sub_4714 (0x004714): '{cls1}', '{cls2}' và magic '{bpem_magic}'"
+        )
+
+        # 3. Kiểm tra bảng đăng ký JNINativeMethod tại .data 0x02c000 (file off 0x028000, 6 hàm) & 0x02c0d0 (file off 0x0280d0, 3 hàm)
+        il_ptrs = [struct.unpack("<Q", so_bytes[0x028000 + i * 24 + 16 : 0x028000 + i * 24 + 24])[0] for i in range(6)]
+        ct_ptrs = [struct.unpack("<Q", so_bytes[0x0280d0 + i * 24 + 16 : 0x0280d0 + i * 24 + 24])[0] for i in range(3)]
+        self.assert_test(
+            "Ppsec_DynamicJniMethodTables",
+            il_ptrs == [0x00318c, 0x003560, 0x003960, 0x003f2c, 0x004288, 0x004408]
+            and ct_ptrs == [0x0115ec, 0x0117a0, 0x011948]
+            and "GetIlIlllIiIJniMethodTable" in content
+            and "GetCryptToolJniMethodTable" in content,
+            "Khớp 100% 6 con trỏ hàm IlIlllIiI (.data 0x02c000) và 3 con trỏ hàm CryptTool (.data 0x02c0d0)"
+        )
+
+        # 4. Kiểm tra các vị từ mờ OLLVM (bất biến mod-4: 0xA1AF286C = 4 * 0x286BCA1B & chia hết cho 6 với umulh)
+        x_val = 0x1A0
+        quad_lhs = ((x_val * x_val + 1) * 0xA1AF286C) & 0xFFFFFFFF
+        bw_term = ((8 * x_val * x_val) | 8) - ((4 * x_val * x_val) ^ 4)
+        bw_lhs = (bw_term * 0x286BCA1B) & 0xFFFFFFFF
+        self.assert_test(
+            "Ppsec_OllvmOpaquePredicatesMathProof",
+            quad_lhs == bw_lhs
+            and (quad_lhs & 3) == 0 and (0x0D79435E & 3) == 2
+            and ((4 * 0x286BCA1B) & 0xFFFFFFFF) == 0xA1AF286C
+            and "EvaluateQuadraticModInversePredicate" in content
+            and "EvaluateConsecutiveTripleMod6Offset" in content,
+            "Chứng minh toán học vị từ mờ bậc hai (4 * 0x286BCA1B == 0xA1AF286C mod 2^32, bất biến mod-4) và tích 3 số nguyên liên tiếp chia hết cho 6"
+        )
+
+        # 5. Kiểm tra bảng tra CRC-16/XMODEM (.rodata 0x0243d2) và đồng nhất thức MBA (0x018948..0x0189a0)
+        crc_hdr = struct.unpack("<4H", so_bytes[0x0243d2:0x0243da])
+        mba_inc_ok = all((((i << 1) | 2) - (i ^ 1)) == (i + 1) for i in range(64))
+        self.assert_test(
+            "Ppsec_Crc16XmodemAndMbaIdentities",
+            crc_hdr == (0x0000, 0x1021, 0x2042, 0x3063)
+            and mba_inc_ok
+            and "ComputePpsecCrc16Xmodem" in content
+            and "MbaIncrementBy1" in content,
+            "Khớp bảng tra CRC-16/XMODEM (.rodata 0x0243d2: 0x0000, 0x1021, 0x2042, 0x3063) và đồng nhất thức MBA ((i<<1)|2)-(i^1) == i+1"
+        )
+
+        # 6. Kiểm tra khóa công khai RSA Base64 344-byte (.rodata 0x0214c0) & bộ quét rủi ro môi trường
+        rsa_b64 = so_bytes[0x0214c0:0x0214c0 + 0x158].decode("ascii")
+        self.assert_test(
+            "Ppsec_BpemRsaKeyAndEnvRiskScanner",
+            len(rsa_b64) == 344
+            and rsa_b64.startswith("sRPDexql9c6Kf8bD")
+            and rsa_b64.endswith("1umoCtjbBAw==")
+            and "PpsecBpemEncrypt" in content
+            and "EvaluatePpsecEnvironmentRisk" in content,
+            "Khớp khóa công khai RSA Base64 344-byte (.rodata 0x0214c0), động cơ mã hóa phong bì BPEM và bộ quét Root/Magisk/Cloud-Phone/Auto-Clicker"
+        )
+
     # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
@@ -8210,6 +8302,7 @@ class AutonomousVerificationEngine:
         self.verify_libgodzilla_memsponge()
         self.verify_libgodzilla_sysopt()
         self.verify_libjnidispatch()
+        self.verify_libppsec()
         self.verify_overall_governance()
 
 

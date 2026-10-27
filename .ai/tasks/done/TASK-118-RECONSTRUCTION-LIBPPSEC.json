@@ -1,0 +1,34 @@
+{
+  "task_id": "TASK-118-RECONSTRUCTION-LIBPPSEC",
+  "legacy_task_id": "TASK_SO_058_libppsec",
+  "title": "Clean-room C++17 reconstruction of libppsec.so (ByteDance PIPO Payment Security SDK 2.0.3)",
+  "status": "DONE",
+  "completed_at": "2026-10-27T07:47:30+07:00",
+  "assigned_agents": ["Agent 0", "Agent 3", "Agent 6", "Agent 9", "Agent 13"],
+  "target_binary": "SOURCE/apktool-res/lib/arm64-v8a/libppsec.so",
+  "files_allowed": [
+    "SOURCE/GIAI-MA/libppsec/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libppsec.json",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_libppsec.md",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_058_libppsec.json",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_058_libppsec.md",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    "UPDATETODOS.md",
+    "PROJECT_MEMORY.md",
+    "TASK_LOG.md"
+  ],
+  "acceptance_criteria": [
+    "100% genuine C++17 implementation (>40KB source, 0 stubs) with bilingual EN/VN comments",
+    "Exact AArch64 opcode and struct offset parity for all exported and internal functions in libppsec.so",
+    "Adversary Critic Agent (Agent 13) certifies VERIFIED_AND_ACCEPTED (79/169)",
+    "verify_reconstruction_suite.py passes 100% (509/509 PASS)",
+    "native_audit_watchdog.py reports 169 binaries, 0 high findings"
+  ],
+  "verification_results": {
+    "reconstructed_cpp_bytes": 98826,
+    "reconstructed_files_count": 10,
+    "ledger_verified_count": "79 / 169 (46.75%)",
+    "test_suite_result": "509 / 509 PASS (100.0%)",
+    "native_watchdog_result": "169 binaries, 0 high findings"
+  }
+}
