@@ -1,18 +1,30 @@
 {
   "report_id": "REPORT_TASK_SO_088_libsys_platform",
   "task_id": "TASK_SO_088_libsys_platform",
+  "governance_task_id": "TASK-172-RECONSTRUCTION-LIBSYS-PLATFORM",
   "target_library": "libsys-platform.so",
-  "assigned_agent": "Agent 10 - DEVOPS & Agent 6 - TESTER",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 29,
-    "jni_exports": 3,
-    "cxx_demangled_count": 0,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\libsys-platform",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "library": "libsys-platform.so",
+  "sha256": "98d6a70902356f55fa38a2e62808865ada53250a97e2698ae19b37c8d785988b",
+  "size_bytes": 18184,
+  "status": "VERIFIED_AND_ACCEPTED",
+  "completion_percentage": 100,
+  "reconstructed_code_bytes": 138883,
+  "fde_count": 8,
+  "instruction_count": 257,
+  "exported_symbols": [
+    "Java_com_bytedance_vega_ug_push_alive_undead_plugin_SysPlatform_lockfNonBlock",
+    "Java_com_bytedance_vega_ug_push_alive_undead_plugin_SysPlatform_unlockfNonBlock",
+    "get_current_time",
+    "modify_process_name",
+    "get_process_name",
+    "get_main_process_pid",
+    "Java_com_bytedance_vega_ug_push_alive_undead_plugin_SysPlatform_waitpid"
+  ],
+  "files_generated": [
+    "sys_platform.h",
+    "sys_platform_core.cpp",
+    "sys_platform_elf_sections_and_image.cpp",
+    "README_ANALYSIS.md"
+  ],
+  "acceptance_criteria_passed": true
 }

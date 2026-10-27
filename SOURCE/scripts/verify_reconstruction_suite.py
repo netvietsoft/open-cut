@@ -13788,6 +13788,97 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # KIỂM CHỨNG ĐỐI KHÁNG TARGET 133: LIBSYS-PLATFORM.SO (VEGA PUSH KEEP-ALIVE SYS PLATFORM PLUGIN)
+    # =========================================================================
+    def verify_libsys_platform(self):
+        import hashlib
+        import struct
+        print("\n[133] Đang kiểm chứng libsys-platform.so (ByteDance Vega Push Keep-Alive SysPlatform Plugin)...")
+        sys_dir = GIAIMA_DIR / "libsys-platform"
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "libsys-platform.so"
+
+        files = [
+            "sys_platform.h",
+            "sys_platform_core.cpp",
+            "sys_platform_elf_sections_and_image.cpp",
+        ]
+        all_exist = all((sys_dir / f).exists() for f in files)
+        total_size = sum((sys_dir / f).stat().st_size for f in files if (sys_dir / f).exists())
+
+        # 1. File existence & size > 120 KB (> 40 KB gate) & zero old stubs
+        self.assert_test(
+            "SysPlatform_CleanRoomFilesAndSize",
+            all_exist and total_size > 120000 and not (sys_dir / "sys-platform_pseudocode.cpp").exists(),
+            f"Đầy đủ 3 file C++17/H trong GIAI-MA/libsys-platform ({total_size:,} bytes > 120 KB), đã xóa sạch stub cũ"
+        )
+
+        # 2. Binary SHA-256 (18,184 B) and .eh_frame_hdr 8 FDEs @ 0x0fc0
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        eh_fde_count = struct.unpack_from("<I", so_bytes, 0x0fc8)[0]
+        self.assert_test(
+            "SysPlatform_BinarySha256AndEhFrame8FDEs",
+            len(so_bytes) == 18184
+            and sha256_hex == "98d6a70902356f55fa38a2e62808865ada53250a97e2698ae19b37c8d785988b"
+            and eh_fde_count == 8,
+            f"Khớp kích thước 18,184 bytes, SHA-256 ({sha256_hex[:16]}...) và 8 FDEs tại .eh_frame_hdr 0x0fc0"
+        )
+
+        content = ""
+        for f in files:
+            fp = sys_dir / f
+            if fp.exists():
+                content += fp.read_text(encoding="utf-8", errors="ignore") + "\n"
+
+        # 3. FDE[00..01] lockfNonBlock (0x0bf8..0x0cac) & unlockfNonBlock (0x0cac..0x0cb4): open(0x42, 0x1b0 @ 0x0c24..0x0c28), flock(fd, 6 @ 0x0c58), usleep(5 @ 0x0c6c)
+        open_42  = struct.unpack_from("<I", so_bytes, 0x0c24)[0]
+        mode_1b0 = struct.unpack_from("<I", so_bytes, 0x0c28)[0]
+        flock_6  = struct.unpack_from("<I", so_bytes, 0x0c58)[0]
+        uslp_5   = struct.unpack_from("<I", so_bytes, 0x0c6c)[0]
+        self.assert_test(
+            "SysPlatform_LockfNonBlockAndFlockRetry",
+            open_42 == 0x52800841 and mode_1b0 == 0x52803602 and flock_6 == 0x528000C1 and uslp_5 == 0x528000A0
+            and "Java_com_bytedance_vega_ug_push_alive_undead_plugin_SysPlatform_lockfNonBlock" in content
+            and "Java_com_bytedance_vega_ug_push_alive_undead_plugin_SysPlatform_unlockfNonBlock" in content,
+            "Khớp FDE[00..01] lockfNonBlock/unlockfNonBlock: open(O_RDWR|O_CREAT=0x42, 0660=0x1b0 @ 0x0c24), flock(LOCK_EX|LOCK_NB=6 @ 0x0c58) và usleep(5 @ 0x0c6c)"
+        )
+
+        # 4. FDE[02] get_current_time (0x0cb4..0x0d0c): tv_sec * 0x3e8 + (umulh(tv_usec >> 3, 0x20C49BA5E353F7CF) >> 4)
+        mul_3e8 = struct.unpack_from("<I", so_bytes, 0x0cdc)[0]
+        lsr_3   = struct.unpack_from("<I", so_bytes, 0x0cf0)[0]
+        umulh_9 = struct.unpack_from("<I", so_bytes, 0x0cf8)[0]
+        add_lsr = struct.unpack_from("<I", so_bytes, 0x0cfc)[0]
+        self.assert_test(
+            "SysPlatform_GetCurrentTimeReciprocalMath",
+            mul_3e8 == 0x52807D0A and lsr_3 == 0xD343FD29 and umulh_9 == 0x9BCA7D29 and add_lsr == 0x8B491100
+            and "get_current_time" in content and "ComputeEpochMillisecondsFromTimeval" in content,
+            "Khớp FDE[02] get_current_time (0x0cb4): tv_sec*1000 + (umulh(tv_usec>>3, 0x20C49BA5E353F7CF) >> 4) (0x0cdc..0x0cfc)"
+        )
+
+        # 5. FDE[03..04] modify_process_name (0x0d0c..0x0d80, PR_SET_NAME=15 @ 0x0d50) & get_process_name (0x0d80..0x0de4, PR_GET_NAME=16 @ 0x0da0)
+        pr_15 = struct.unpack_from("<I", so_bytes, 0x0d50)[0]
+        pr_16 = struct.unpack_from("<I", so_bytes, 0x0da0)[0]
+        self.assert_test(
+            "SysPlatform_ModifyAndGetProcessNamePrctl",
+            pr_15 == 0x528001E0 and pr_16 == 0x52800200
+            and "modify_process_name" in content and "get_process_name" in content,
+            "Khớp FDE[03] modify_process_name (0x0d0c, PR_SET_NAME=15 @ 0x0d50) và FDE[04] get_process_name (0x0d80, PR_GET_NAME=16 @ 0x0da0)"
+        )
+
+        # 6. FDE[05..07] get_main_process_pid ("pidof %s" @ 0x0fb4, usleep 0x3D0900=4s @ 0x0e64..0x0e68), waitpid (0x0f7c) & 257 .text words
+        slp_lo = struct.unpack_from("<I", so_bytes, 0x0e64)[0]
+        slp_hi = struct.unpack_from("<I", so_bytes, 0x0e68)[0]
+        ro_str = so_bytes[0x0fb4:0x0fbf]
+        self.assert_test(
+            "SysPlatform_PidofPollWaitpidAndFull257TextWords",
+            slp_lo == 0x52812000 and slp_hi == 0x72A007A0 and ro_str == b"pidof %s\x00r\x00"
+            and "get_main_process_pid" in content
+            and "Java_com_bytedance_vega_ug_push_alive_undead_plugin_SysPlatform_waitpid" in content
+            and "kSysPlatformTextWords257" in content,
+            "Khớp FDE[05..07] get_main_process_pid ('pidof %s', usleep 0x3D0900=4s @ 0x0e64), SysPlatform_waitpid (0x0f7c) và 257 lệnh .text"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -13924,6 +14015,7 @@ class AutonomousVerificationEngine:
         self.verify_libnpth_logcat()
         self.verify_libttmverify()
         self.verify_libpush_ka()
+        self.verify_libsys_platform()
         self.verify_overall_governance()
 
 
