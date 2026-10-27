@@ -1,0 +1,38 @@
+{
+  "task_id": "TASK-140-RECONSTRUCTION-LIBORBUCULUM",
+  "so_task_id": "TASK_SO_108_liborbuculum",
+  "title": "Clean-Room C++17 Reconstruction of liborbuculum.so (Target 101 / 169)",
+  "status": "DONE",
+  "assigned_agent": "Agent 3 (Android/Native) & Agent 0 (Orchestrator)",
+  "auditor_agent": "Agent 13 (Adversary Auditor)",
+  "target_library": "liborbuculum.so",
+  "binary_size_bytes": 412176,
+  "files_allowed": [
+    "SOURCE/GIAI-MA/liborbuculum/**",
+    "SOURCE/PHAN-BIEN/BANG-CHUNG-XAC-MINH/PROOF_liborbuculum.*",
+    "SOURCE/BAOCAO/REPORT_TASK_SO_108_liborbuculum.*",
+    "SOURCE/scripts/verify_reconstruction_suite.py",
+    ".ai/**",
+    "Docs/Changelog/**",
+    "TASK_LOG.md",
+    "PROJECT_MEMORY.md",
+    "UPDATETODOS.md"
+  ],
+  "acceptance_criteria": [
+    ">= 40 KB clean-room C++17 source across 9 files with 0 stubs",
+    "100% AArch64 opcode and ABI verification against liborbuculum.so",
+    "Pass adversary_critic_agent.py --once (VERIFIED_AND_ACCEPTED 101/169)",
+    "Pass verify_reconstruction_suite.py (641/641 PASS 100.0%)",
+    "Pass native_audit_watchdog.py (169 binaries, 0 high findings)"
+  ],
+  "completed_at": "2026-10-27T15:59:14.235245+07:00",
+  "verification": {
+    "adversary_critic": "VERIFIED_AND_ACCEPTED (101/169)",
+    "reconstruction_suite": "641/641 PASS (100.0%)",
+    "native_watchdog": "169 binaries, 0 high findings",
+    "cpp17_bytes": 1055206,
+    "fde_count": 577,
+    "exported_symbols": 625,
+    "stub_count": 0
+  }
+}

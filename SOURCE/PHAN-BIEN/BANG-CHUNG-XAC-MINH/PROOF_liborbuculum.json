@@ -1,0 +1,39 @@
+{
+  "lib_name": "liborbuculum",
+  "binary_file": "liborbuculum.so",
+  "binary_size_bytes": 412176,
+  "binary_sha256": "5f22a1ed255a53e0420ba6b8bcb36704673230d98a7e0e0ff619dfdd5cd5794f",
+  "reconstructed_size_bytes": 1055206,
+  "reconstructed_files": [
+    "orbuculum_types.h",
+    "orbuculum_rodata_tables.h",
+    "orbuculum_rodata_tables.cpp",
+    "orbuculum_jni_validator.h",
+    "orbuculum_jni_validator.cpp",
+    "orbuculum_bytecode_engine.h",
+    "orbuculum_bytecode_engine.cpp",
+    "orbuculum_crypto_url_instructions.h",
+    "orbuculum_crypto_url_instructions.cpp"
+  ],
+  "fde_count": 577,
+  "exported_symbols_count": 625,
+  "stub_count": 0,
+  "verified_opcodes": [
+    "0x01cb9c: d10143ff sub sp, sp, #0x50 (orbuculumValidateDataFlowId entry)",
+    "0x01cc44: 52800142 mov w2, #0xa (strtol base 10 for x-tt-dataflow-id)",
+    "0x01d6b4: d10103ff sub sp, sp, #0x40 (JNI_OnLoad entry, returns 0x00010006)",
+    "0x02527c: 51004008 sub w8, w0, #0x10; 0x025280: 71005d1f cmp w8, #0x17; 0x025284: 1a9f27e0 cset w0, lo (isNetworkInstruction)",
+    "0x0256fc: d10183ff sub sp, sp, #0x60 (OrbuCodeEngine::init entry)",
+    "0x025800: 52800300 mov w0, #0x18; 0x025820: 52800b00 mov w0, #0x58; 0x025858: 52800500 mov w0, #0x28 (OrbuCodeEngine::init allocations)",
+    "0x025d28: b201f3e9 mov x9, #-0x5555555555555556; 0x025d30: f2955569 movk x9, #0xaaab; 0x025d34: 9bc97d08 umulh x8, x8, x9; 0x025d38: d344fd08 lsr x8, x8, #4 (div by 24)",
+    "0x03da20: d00000a8 adrp x8, #0x53000; 0x03da34: 3c888000 stur q0, [x0, #0x88]; 0x03da38: 3c898001 stur q1, [x0, #0x98] (SHA256::init)",
+    "0x0442e8: 9b487c08 smulh x8, x0, x8; 0x0442ec: 9347fd0a asr x10, x8, #7 (BurstTime::shouldSend signed div by 1000)"
+  ],
+  "math_and_abi_proofs": {
+    "is_network_instruction_02527c": "(op - 0x10U) < 0x17U -> op in [0x10, 0x26]",
+    "div_by_24_instruction_count_025d28": "umulh(byte_delta, 0xAAAAAAAAAAAAAAAB) >> 4 == byte_delta / 24 (sizeof(OrbuCodeInstructionStruct) == 0x18)",
+    "signed_div_by_1000_burst_time_0442d4": "(smulh(us, 0x20C49BA5E353F7CF) >> 7) + sign_bit == us / 1000",
+    "sha256_ctx_abi_03da20": "sizeof(Sha256ContextAbi) == 0xA8 (168 B), m_h[8] at +0x88 initialized from .rodata 0x0535e0..0x0535ff"
+  },
+  "status": "VERIFIED_AND_ACCEPTED"
+}

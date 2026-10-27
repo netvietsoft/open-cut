@@ -10775,6 +10775,107 @@ class AutonomousVerificationEngine:
         )
 
     # =========================================================================
+    # THƯ VIỆN 101: liborbuculum.so (TTP Orbu / Orbuculum Network Bytecode Engine)
+    # =========================================================================
+    def verify_liborbuculum(self):
+        import hashlib, struct
+        print("\n" + "="*70)
+        print(">>> KIỂM CHỨNG ĐỐI KHÁNG TARGET 101: liborbuculum.so")
+        print("="*70)
+
+        lib_dir = GIAIMA_DIR / "liborbuculum"
+        cpp_files = list(lib_dir.glob("*.cpp")) + list(lib_dir.glob("*.h"))
+        total_bytes = sum(f.stat().st_size for f in cpp_files)
+        content = "\n".join(f.read_text(encoding="utf-8", errors="ignore") for f in cpp_files)
+
+        # 1. Size gate > 1,000 KB across >= 9 files
+        self.assert_test(
+            "Orbuculum_SourceSizeGate",
+            total_bytes > 1000000 and len(cpp_files) >= 9,
+            f"Tổng dung lượng C++17/H đạt {total_bytes} bytes (> 1,000 KB, 0 stub) trên {len(cpp_files)} tệp"
+        )
+
+        # 2. ELF64 Geometry (412,176 B, SHA-256, 577 FDEs @ 0x053c64) & .data constants (0x068010..0x068028, file off 0x064010)
+        so_path = ROOT_DIR / "apktool-res" / "lib" / "arm64-v8a" / "liborbuculum.so"
+        so_bytes = so_path.read_bytes()
+        sha256_hex = hashlib.sha256(so_bytes).hexdigest()
+        fde_count = struct.unpack_from("<I", so_bytes, 0x053c64 + 8)[0]
+        lock_timeout = struct.unpack_from("<I", so_bytes, 0x064010)[0]
+        unhandled_res = struct.unpack_from("<I", so_bytes, 0x064014)[0]
+        api_level = struct.unpack_from("<I", so_bytes, 0x064028)[0]
+        self.assert_test(
+            "Orbuculum_Elf64FdesAndDataGlobals",
+            len(so_bytes) == 412176
+            and sha256_hex == "5f22a1ed255a53e0420ba6b8bcb36704673230d98a7e0e0ff619dfdd5cd5794f"
+            and fde_count == 577
+            and lock_timeout == 2
+            and unhandled_res == 1
+            and api_level == 2
+            and "kLockTimeOutSeconds" in content
+            and "kOrbuCodeApiLevel" in content,
+            "Khớp nhị phân liborbuculum.so (412,176 B, SHA-256 5f22a1ed..., 577 FDE @ 0x053c64) và hằng số .data (LOCK_TIME_OUT=2 @ 0x068010, OrbuCodeAPILevel=2 @ 0x068028)"
+        )
+
+        # 3. orbuculumValidateDataFlowId (0x01cb9c) & JNI_OnLoad (0x01d6b4)
+        val_entry = struct.unpack_from("<I", so_bytes, 0x01cb9c)[0]
+        strtol_b10 = struct.unpack_from("<I", so_bytes, 0x01cc44)[0]
+        jni_entry = struct.unpack_from("<I", so_bytes, 0x01d6b4)[0]
+        self.assert_test(
+            "Orbuculum_ValidateDataFlowIdAndJniOnLoad",
+            val_entry == 0xD10143FF
+            and strtol_b10 == 0x52800142
+            and jni_entry == 0xD10103FF
+            and "ValidateDataFlowIdHeaderValue" in content
+            and "orbuculumProceedRequest" in content,
+            "Khớp orbuculumValidateDataFlowId (0x01cb9c: sub sp, sp, #0x50; 0x01cc44: mov w2, #0xa) và JNI_OnLoad (0x01d6b4: sub sp, sp, #0x40 -> 0x00010006)"
+        )
+
+        # 4. isNetworkInstruction (0x02527c..0x025288) & OrbuCodeEngine::init (0x0256fc..0x0258bc)
+        net_insns = struct.unpack_from("<4I", so_bytes, 0x02527c)
+        alloc_dtr = struct.unpack_from("<I", so_bytes, 0x025800)[0]
+        alloc_bkt = struct.unpack_from("<I", so_bytes, 0x025820)[0]
+        alloc_map = struct.unpack_from("<I", so_bytes, 0x025858)[0]
+        self.assert_test(
+            "Orbuculum_IsNetworkInstructionAndEngineInit",
+            net_insns == (0x51004008, 0x71005D1F, 0x1A9F27E0, 0xD65F03C0)
+            and alloc_dtr == 0x52800300
+            and alloc_bkt == 0x52800B00
+            and alloc_map == 0x52800500
+            and "IsNetworkInstructionExact" in content
+            and "VerifyOrbuCodeHeaderExact" in content,
+            "Khớp isNetworkInstruction (0x02527c: sub w8, w0, #0x10; cmp w8, #0x17; cset w0, lo) và OrbuCodeEngine::init (0x025800: 0x18B, 0x025820: 0x58B, 0x025858: 0x28B)"
+        )
+
+        # 5. OrbuCodeEngine::processRequest unsigned reciprocal division by 24 (0x025d28..0x025d38: 0xAAAAAAAAAAAAAAAB >> 4)
+        div24_insns = struct.unpack_from("<5I", so_bytes, 0x025d28)
+        sim_div24 = ((24 * 19 * 0xAAAAAAAAAAAAAAAB) >> 64) >> 4
+        self.assert_test(
+            "Orbuculum_ProcessRequestReciprocalDiv24",
+            div24_insns == (0xB201F3E9, 0x93407D08, 0xF2955569, 0x9BC97D08, 0xD344FD08)
+            and sim_div24 == 19
+            and "ComputeExecutedInstructionCountDiv24" in content
+            and "0xAAAAAAAAAAAAAAABULL" in content,
+            "Khớp phép chia 24 (sizeof(OrbuCodeInstructionStruct)=0x18) bằng umulh(x8, 0xAAAAAAAAAAAAAAAB) >> 4 tại 0x025d28..0x025d38"
+        )
+
+        # 6. SHA256::init (0x03da20..0x03da3c, .rodata 0x0535e0/0x053600) & BurstTime::shouldSend signed div 1000 (0x0442c0..0x044304)
+        sha_insns = struct.unpack_from("<3I", so_bytes, 0x03da30)
+        sha_h0 = struct.unpack_from("<I", so_bytes, 0x0535e0)[0]
+        sha_k0 = struct.unpack_from("<I", so_bytes, 0x053600)[0]
+        burst_smulh = struct.unpack_from("<2I", so_bytes, 0x0442e8)
+        self.assert_test(
+            "Orbuculum_Sha256InitAndBurstTimeSignedDiv1000",
+            sha_insns == (0xF900001F, 0x3C888000, 0x3C898001)
+            and sha_h0 == 0x6A09E667
+            and sha_k0 == 0x428A2F98
+            and burst_smulh == (0x9B487C08, 0x9347FD0A)
+            and "Sha256InitExact" in content
+            and "DivideMicrosecondsToMillisecondsSigned" in content
+            and "0x20C49BA5E353F7CFULL" in content,
+            "Khớp SHA256::init (0x03da20: stur q0/q1 tại +0x88/+0x98 từ .rodata 0x0535e0, sha256_k @ 0x053600) và BurstTime::shouldSend chia 1000 (0x0442e8: smulh 0x20C49BA5E353F7CF >> 7)"
+        )
+
+    # =========================================================================
     # TỔNG HỢP & XUẤT BẰNG CHỨNG
     # =========================================================================
     def run_all(self):
@@ -10879,6 +10980,7 @@ class AutonomousVerificationEngine:
         self.verify_libtt_ugen_layout()
         self.verify_libjato()
         self.verify_libstatic_webp()
+        self.verify_liborbuculum()
         self.verify_overall_governance()
 
 

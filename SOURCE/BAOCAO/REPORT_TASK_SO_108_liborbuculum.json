@@ -1,18 +1,12 @@
 {
-  "report_id": "REPORT_TASK_SO_108_liborbuculum",
   "task_id": "TASK_SO_108_liborbuculum",
-  "target_library": "liborbuculum.so",
-  "assigned_agent": "Agent 7 - RECONSTRUCTION",
-  "status": "SCAFFOLD_METADATA_ONLY",
-  "completion_percentage": 15,
-  "evidence": {
-    "symbols_total": 743,
-    "jni_exports": 11,
-    "cxx_demangled_count": 627,
-    "output_directory": "D:\\Decompiler\\App\\Video\\Capcut\\SOURCE\\GIAI-MA\\liborbuculum",
-    "has_cpp_interface": true,
-    "has_strings": true
-  },
-  "findings_summary": "Mới trích xuất bảng biểu tượng (.dynsym) và tạo khung scaffolding. Chưa có thân hàm thuật toán phục hồi. Đang chờ giải mã chuyên sâu.",
-  "acceptance_criteria_passed": false
+  "governance_task_id": "TASK-140-RECONSTRUCTION-LIBORBUCULUM",
+  "library": "liborbuculum.so",
+  "binary_size_bytes": 412176,
+  "binary_sha256": "5f22a1ed255a53e0420ba6b8bcb36704673230d98a7e0e0ff619dfdd5cd5794f",
+  "status": "VERIFIED_AND_ACCEPTED",
+  "reconstructed_size_bytes": 1055206,
+  "fde_count": 577,
+  "exported_symbols_count": 625,
+  "stub_count": 0
 }
